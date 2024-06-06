@@ -1,0 +1,45 @@
+name: Execute
+
+on:
+    workflow_dispatch:
+        inputs:
+            manifests:
+                description: 'Manifests to use'
+                required: false
+                default: ''
+    repository_dispatch:
+
+jobs:
+    
+    execute:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        environment: Execution
+        concurrency:
+            group: ${{ github.workflow }}
+        steps:
+            # Keeping this here in case we need more than 45GB of space in the future
+            # - name: Maximize build space 
+            #   uses: easimon/maximize-build-space@master 
+            #   with: 
+            #     swap-size-mb: 1024 
+            #     remove-dotnet: 'true' 
+            #     remove-android: 'true' 
+            #     remove-haskell: 'true' 
+            #     remove-codeql: 'true' 
+            - name: More space
+              shell: bash
+              run: |
+                sudo rm -rf /usr/share/dotnet
+                sudo rm -rf /usr/local/lib/android
+                sudo rm -rf /opt/ghc
+                sudo rm -rf /opt/hostedtoolcache/CodeQL
+            - uses: actions/checkout@v3
+            - uses: docker://ghcr.io/steam-tracking/ddlck-vpk-decompiler:latest
+              env:
+                GIT_NAME: ${{ secrets.GIT_NAME }}
+                GIT_EMAIL: "${{ secrets.GIT_EMAIL }}"
+                MANIFESTS: "${{ inputs.manifests }}"
+                STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+                STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
