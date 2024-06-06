@@ -1,0 +1,20 @@
+<!-- xml reconstructed by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/gamestyles.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_ui_party_invite.vcss_c" />
+	</styles>
+	<CitadelPartyInvite>
+		<Panel id="PartyMembers" />
+		<Label id="PartyOverflow" text="+{d:overflow_members}" />
+		<Panel id="InMMAccept" onactivate="">
+			<Label text="In Match Making" />
+		</Panel>
+		<Panel id="AcceptInvite" class="PartyButton" onmouseover="UIShowTextTooltip( Accept Invite ); CitadelPlayUISound( EMainMenuHover );" onmouseout="UIHideTextTooltip()" onactivate="CitadelPartyInviteAccept()" />
+		<Panel id="AcceptInviteInGame" class="PartyButton" onmouseover="UIShowTextTooltip( Exit game and accept invite ); CitadelPlayUISound( EMainMenuHover );" onmouseout="UIHideTextTooltip()" onactivate="CitadelPartyInviteAccept()" />
+		<Panel id="DisabledInParty" class="PartyButton DisabledInvite" onmouseover="UIShowTextTooltip( Cannot accept invites while already in a party ); CitadelPlayUISound( EMainMenuHover );" onmouseout="UIHideTextTooltip()" />
+		<Panel id="DisabledInMM" class="PartyButton DisabledInvite" onmouseover="UIShowTextTooltip( Cannot accept invites while in match making ); CitadelPlayUISound( EMainMenuHover );" onmouseout="UIHideTextTooltip()" />
+		<Panel id="RejectInvite" class="PartyButton" onmouseover="UIShowTextTooltip( Decline Invite ); CitadelPlayUISound( EMainMenuHover );" onmouseout="UIHideTextTooltip()" onactivate="CitadelPartyInviteReject()" />
+	</CitadelPartyInvite>
+</root>

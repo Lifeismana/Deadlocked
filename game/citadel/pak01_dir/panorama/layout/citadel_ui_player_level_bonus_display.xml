@@ -1,0 +1,78 @@
+<!-- xml reconstructed by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_shared_colors.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_ui_player_level_bonus_display.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="LevelBonusReward">
+			<Panel class="levelBonusReward">
+				<Panel class="levelRewardImage" />
+				<Label class="levelRewardNumber" text="{s:level_num}" />
+				<Panel class="levelRewardBolt" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<CitadelPlayerLevelDisplay>
+		<Panel id="BarContainer">
+			<Panel id="PlayerLevelRewards">
+				<ProgressBar id="LevelProgressBar" vertical="true" />
+				<Panel id="LevelRewardsContainer" />
+			</Panel>
+			<Panel class="fadeOut" />
+		</Panel>
+		<Panel id="LegendContainer">
+			<Panel class="Legend">
+				<Label class="legendText" text="Legend:" />
+				<Panel id="APLegend" class="legendItem">
+					<Panel class="rewardIcon" />
+					<Label class="rewardText" text="AP" />
+				</Panel>
+				<Panel id="AbilityLegend" class="legendItem">
+					<Panel class="rewardIcon" />
+					<Label class="rewardText" text="Ability Unlock" />
+				</Panel>
+				<Panel id="PILegend" class="legendItem">
+					<Panel class="rewardIcon" />
+					<Label class="rewardText" text="Power Increase" />
+				</Panel>
+			</Panel>
+			<Panel class="BonusesContainer">
+				<Panel class="bonusContainer">
+					<Panel class="bonusImage abilityPointBoltImage" />
+					<Label class="BonusText" text="#Citadel_Player_Level_APShort" html="true" />
+				</Panel>
+				<Panel class="bonusContainer">
+					<Panel class="bonusImage abilityUnlockImage" />
+					<Label class="BonusText" text="#Citadel_Player_Level_AbilityUnlocksShort" html="true" />
+				</Panel>
+				<Panel class="bonusContainer">
+					<Panel class="bonusImage weaponPowerImage" />
+					<Label class="BonusText" text="#Citadel_Player_Level_PowerIncrease" html="true" />
+				</Panel>
+				<Panel class="HeroBonusContainer TopBottomFlow">
+					<Panel class="bonusImage weaponPowerImage" />
+					<Label class="HeroName" text="{s:hero_name}" html="true" />
+					<Label class="PowerIncreases HeroBonusText" text="Each Power Increase grants:" html="true" />
+					<Panel class="BonusRow TopBottomFlow AlignHorizontalCenter">
+						<Label class="HeroBonusValue" text="+{s:weapon_bonus}" html="true" />
+						<Label class="HeroBonusText" text="Base Bullet Damage" />
+					</Panel>
+					<Panel class="BonusRow TopBottomFlow AlignHorizontalCenter">
+						<Label class="HeroBonusValue" text="+{s:melee_bonus}" html="true" />
+						<Label class="HeroBonusText" text="Base Melee Damage" />
+					</Panel>
+					<Panel class="BonusRow TopBottomFlow AlignHorizontalCenter Hidden">
+						<Label class="HeroBonusValue" text="+{s:tech_bonus}%" html="true" />
+						<Label class="HeroBonusText" text="Spirit Damage Amp" />
+					</Panel>
+					<Panel class="BonusRow TopBottomFlow AlignHorizontalCenter">
+						<Label class="HeroBonusValue" text="+{s:health_bonus}" html="true" />
+						<Label class="HeroBonusText" text="Base Health" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</CitadelPlayerLevelDisplay>
+</root>

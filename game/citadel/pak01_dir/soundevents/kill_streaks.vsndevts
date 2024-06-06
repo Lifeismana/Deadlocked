@@ -1,0 +1,628 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Announcer.Killstreak.Three = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Multi_03"
+		soundevent_02 = "Announcer.KillStreak_CountUp_03"
+		volume = 1.000000
+		use_01 = 0.000000
+		use_02 = 1.000000
+	}
+	Crowd.KillStreak_Multi_03 = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Three_01"
+		soundevent_02 = "Crowd.KillStreak_Three_02"
+		soundevent_03 = "Crowd.KillStreak_Three_03"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Three_01 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -18.000000
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/human_2.vsnd",
+			"sounds/vo/announcer/crowd/human_3.vsnd",
+			"sounds/vo/announcer/crowd/human_4.vsnd",
+			"sounds/vo/announcer/crowd/human_5.vsnd",
+			"sounds/vo/announcer/crowd/human_1.vsnd",
+		]
+	}
+	Crowd.KillStreak_Three_02 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -21
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/big_droid_2.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_3.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_4.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_5.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_1.vsnd",
+		]
+	}
+	Crowd.KillStreak_Three_03 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -21
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/small_droid_2.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_3.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_4.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_5.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_1.vsnd",
+		]
+	}
+	Announcer.KillStreak_CountUp_03 = 
+	{
+		base = "Base.Announcer.KillStreak.CountUp.2d"
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/count_up/test_announcer_ks_03_01.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_03_02.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_03_03.vsnd",
+		]
+		vsnd_duration = 1.822396
+	}
+	Announcer.Killstreak.Four = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Multi_04"
+		soundevent_02 = "Announcer.KillStreak_CountUp_04"
+		volume = 1.000000
+		use_01 = 0.000000
+		use_02 = 1.000000
+	}
+	Crowd.KillStreak_Multi_04 = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Four_01"
+		soundevent_02 = "Crowd.KillStreak_Four_02"
+		soundevent_03 = "Crowd.KillStreak_Four_03"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Four_01 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -18
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/human_7.vsnd",
+			"sounds/vo/announcer/crowd/human_8.vsnd",
+			"sounds/vo/announcer/crowd/human_4.vsnd",
+			"sounds/vo/announcer/crowd/human_5.vsnd",
+			"sounds/vo/announcer/crowd/human_6.vsnd",
+		]
+	}
+	Crowd.KillStreak_Four_02 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -18
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/big_droid_7.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_8.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_4.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_5.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_6.vsnd",
+		]
+	}
+	Crowd.KillStreak_Four_03 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -18
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/small_droid_8.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_3.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_4.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_7.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_6.vsnd",
+		]
+	}
+	Announcer.KillStreak_CountUp_04 = 
+	{
+		base = "Base.Announcer.KillStreak.CountUp.2d"
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/count_up/test_announcer_ks_04_01.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_04_02.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_04_03.vsnd",
+		]
+		vsnd_duration = 1.769896
+	}
+	Announcer.Killstreak.Five = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Multi_05"
+		soundevent_03 = "Announcer.KillStreak_CountUp_05"
+		volume = 1.000000
+		use_01 = 0.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Multi_05 = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Five_01"
+		soundevent_02 = "Crowd.KillStreak_Five_02"
+		soundevent_03 = "Crowd.KillStreak_Five_03"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Five_01 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -18
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/human_7.vsnd",
+			"sounds/vo/announcer/crowd/human_8.vsnd",
+			"sounds/vo/announcer/crowd/human_9.vsnd",
+			"sounds/vo/announcer/crowd/human_10.vsnd",
+			"sounds/vo/announcer/crowd/human_11.vsnd",
+		]
+	}
+	Crowd.KillStreak_Five_02 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -18
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/big_droid_7.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_8.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_9.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_10.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_11.vsnd",
+		]
+	}
+	Crowd.KillStreak_Five_03 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -18
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/small_droid_8.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_9.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_10.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_7.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_11.vsnd",
+		]
+	}
+	Announcer.KillStreak_CountUp_05 = 
+	{
+		base = "Base.Announcer.KillStreak.CountUp.2d"
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/count_up/test_announcer_ks_05_01.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_05_02.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_05_03.vsnd",
+		]
+		vsnd_duration = 1.331187
+	}
+	Announcer.Killstreak.Six = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Multi_06"
+		soundevent_02 = "Announcer.KillStreak_CountUp_06"
+		volume = 1.000000
+		use_01 = 0.000000
+		use_02 = 1.000000
+	}
+	Crowd.KillStreak_Multi_06 = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Six_01"
+		soundevent_02 = "Crowd.KillStreak_Six_02"
+		soundevent_03 = "Crowd.KillStreak_Six_03"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Six_01 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -12
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/human_12.vsnd",
+			"sounds/vo/announcer/crowd/human_13.vsnd",
+			"sounds/vo/announcer/crowd/human_14.vsnd",
+			"sounds/vo/announcer/crowd/human_10.vsnd",
+			"sounds/vo/announcer/crowd/human_11.vsnd",
+			"sounds/vo/announcer/crowd/human_17.vsnd",
+			"sounds/vo/announcer/crowd/human_18.vsnd",
+			"sounds/vo/announcer/crowd/human_14.vsnd",
+			"sounds/vo/announcer/crowd/human_15.vsnd",
+			"sounds/vo/announcer/crowd/human_16.vsnd",
+		]
+	}
+	Crowd.KillStreak_Six_02 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -12
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/big_droid_12.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_13.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_14.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_10.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_11.vsnd",
+		]
+	}
+	Crowd.KillStreak_Six_03 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -12
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/small_droid_13.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_14.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_15.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_12.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_11.vsnd",
+		]
+	}
+	Announcer.KillStreak_CountUp_06 = 
+	{
+		base = "Base.Announcer.KillStreak.CountUp.2d"
+		volume = -9
+		delay = 0.500000
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/count_up/test_announcer_ks_06_01.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_06_02.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_06_03.vsnd",
+		]
+		vsnd_duration = 1.824958
+	}
+	Announcer.Killstreak.Seven = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Multi_07"
+		soundevent_03 = "Announcer.KillStreak_CountUp_07"
+		volume = 1.000000
+		use_01 = 0.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Multi_07 = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Seven_01"
+		soundevent_02 = "Crowd.KillStreak_Seven_02"
+		soundevent_03 = "Crowd.KillStreak_Seven_03"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Seven_01 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/human_17.vsnd",
+			"sounds/vo/announcer/crowd/human_18.vsnd",
+			"sounds/vo/announcer/crowd/human_14.vsnd",
+			"sounds/vo/announcer/crowd/human_15.vsnd",
+			"sounds/vo/announcer/crowd/human_16.vsnd",
+			"sounds/vo/announcer/crowd/human_19.vsnd",
+			"sounds/vo/announcer/crowd/human_20.vsnd",
+			"sounds/vo/announcer/crowd/human_21.vsnd",
+			"sounds/vo/announcer/crowd/human_22.vsnd",
+			"sounds/vo/announcer/crowd/human_23.vsnd",
+		]
+	}
+	Crowd.KillStreak_Seven_02 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/big_droid_17.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_13.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_14.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_15.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_16.vsnd",
+		]
+	}
+	Crowd.KillStreak_Seven_03 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/small_droid_19.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_14.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_18.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_17.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_16.vsnd",
+		]
+	}
+	Announcer.KillStreak_CountUp_07 = 
+	{
+		base = "Base.Announcer.KillStreak.CountUp.2d"
+		volume = -8
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/count_up/test_announcer_ks_07_01.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_07_02.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_07_03.vsnd",
+		]
+		vsnd_duration = 1.840417
+	}
+	Announcer.Killstreak.Eight = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Multi_08"
+		soundevent_03 = "Announcer.KillStreak_CountUp_08"
+		volume = 1.000000
+		use_01 = 0.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Multi_08 = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Eight_01"
+		soundevent_02 = "Crowd.KillStreak_Eight_02"
+		soundevent_03 = "Crowd.KillStreak_Eight_03"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Eight_01 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/human_24.vsnd",
+			"sounds/vo/announcer/crowd/human_25.vsnd",
+			"sounds/vo/announcer/crowd/human_26.vsnd",
+			"sounds/vo/announcer/crowd/human_15.vsnd",
+			"sounds/vo/announcer/crowd/human_16.vsnd",
+			"sounds/vo/announcer/crowd/human_19.vsnd",
+			"sounds/vo/announcer/crowd/human_20.vsnd",
+			"sounds/vo/announcer/crowd/human_21.vsnd",
+			"sounds/vo/announcer/crowd/human_22.vsnd",
+			"sounds/vo/announcer/crowd/human_23.vsnd",
+		]
+	}
+	Crowd.KillStreak_Eight_02 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/big_droid_22.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_21.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_20.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_19.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_18.vsnd",
+		]
+	}
+	Crowd.KillStreak_Eight_03 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/small_droid_19.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_20.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_18.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_17.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_21.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_23.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_24.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_25.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_22.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_26.vsnd",
+		]
+	}
+	Announcer.KillStreak_CountUp_08 = 
+	{
+		base = "Base.Announcer.KillStreak.CountUp.2d"
+		volume = -7
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/count_up/test_announcer_ks_08_01.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_08_02.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_08_03.vsnd",
+		]
+		vsnd_duration = 1.255125
+	}
+	Announcer.Killstreak.Nine = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Multi_09"
+		soundevent_03 = "Announcer.KillStreak_CountUp_09"
+		volume = 1.000000
+		use_01 = 0.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Multi_09 = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Nine_01"
+		soundevent_02 = "Crowd.KillStreak_Nine_02"
+		soundevent_03 = "Crowd.KillStreak_Nine_03"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Nine_01 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/human_24.vsnd",
+			"sounds/vo/announcer/crowd/human_25.vsnd",
+			"sounds/vo/announcer/crowd/human_26.vsnd",
+			"sounds/vo/announcer/crowd/human_28.vsnd",
+			"sounds/vo/announcer/crowd/human_16.vsnd",
+			"sounds/vo/announcer/crowd/human_19.vsnd",
+			"sounds/vo/announcer/crowd/human_20.vsnd",
+			"sounds/vo/announcer/crowd/human_21.vsnd",
+			"sounds/vo/announcer/crowd/human_22.vsnd",
+			"sounds/vo/announcer/crowd/human_23.vsnd",
+		]
+	}
+	Crowd.KillStreak_Nine_02 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/big_droid_22.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_21.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_20.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_19.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_18.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_23.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_24.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_25.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_26.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_27.vsnd",
+		]
+	}
+	Crowd.KillStreak_Nine_03 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/small_droid_19.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_20.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_18.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_28.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_21.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_23.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_24.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_25.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_27.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_26.vsnd",
+		]
+	}
+	Announcer.KillStreak_CountUp_09 = 
+	{
+		base = "Base.Announcer.KillStreak.CountUp.2d"
+		volume = -6
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/count_up/test_announcer_ks_09_01.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_09_02.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_09_03.vsnd",
+		]
+		vsnd_duration = 1.726479
+	}
+	Announcer.Killstreak.Ten = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Multi_10"
+		soundevent_03 = "Announcer.KillStreak_CountUp_10"
+		volume = 1.000000
+		use_01 = 0.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Multi_10 = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Crowd.KillStreak_Ten_01"
+		soundevent_02 = "Crowd.KillStreak_Ten_02"
+		soundevent_03 = "Crowd.KillStreak_Ten_03"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Crowd.KillStreak_Ten_01 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/human_24.vsnd",
+			"sounds/vo/announcer/crowd/human_25.vsnd",
+			"sounds/vo/announcer/crowd/human_26.vsnd",
+			"sounds/vo/announcer/crowd/human_28.vsnd",
+			"sounds/vo/announcer/crowd/human_30.vsnd",
+			"sounds/vo/announcer/crowd/human_19.vsnd",
+			"sounds/vo/announcer/crowd/human_20.vsnd",
+			"sounds/vo/announcer/crowd/human_21.vsnd",
+			"sounds/vo/announcer/crowd/human_22.vsnd",
+			"sounds/vo/announcer/crowd/human_23.vsnd",
+		]
+	}
+	Crowd.KillStreak_Ten_02 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/big_droid_22.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_21.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_20.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_29.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_28.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_23.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_24.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_25.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_26.vsnd",
+			"sounds/vo/announcer/crowd/big_droid_27.vsnd",
+		]
+	}
+	Crowd.KillStreak_Ten_03 = 
+	{
+		base = "Base.Announcer.KillStreak.Crowd.2d"
+		volume = -9
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/crowd/small_droid_29.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_20.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_18.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_28.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_21.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_23.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_24.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_25.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_27.vsnd",
+			"sounds/vo/announcer/crowd/small_droid_26.vsnd",
+		]
+	}
+	Announcer.KillStreak_CountUp_10 = 
+	{
+		base = "Base.Announcer.KillStreak.CountUp.2d"
+		volume = -5
+		delay = 0.600000
+		vsnd_files = 
+		[
+			"sounds/vo/announcer/count_up/test_announcer_ks_10_01.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_10_02.vsnd",
+			"sounds/vo/announcer/count_up/test_announcer_ks_10_03.vsnd",
+		]
+		vsnd_duration = 1.940167
+	}
+	Announcer.Killstreak.Firstblood = 
+	{
+		type = "citadel_default_3d"
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+}

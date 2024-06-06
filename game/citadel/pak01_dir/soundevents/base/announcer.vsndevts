@@ -1,0 +1,45 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Base.Announcer.VO.2d = 
+	{
+		type = "citadel_default_2d"
+		mixer_mixgroup = "Announcer"
+		send_name = "announcer"
+		volume_fade_out = 0.050000
+	}
+	Base.Announcer.Tutorial = 
+	{
+		base = "Base.Announcer.VO.2d"
+		mixer_mixgroup = "Announcer-Tutorial"
+		delay = 0.100000
+	}
+	Base.Menu.VO.2d = 
+	{
+		base = "Base.Announcer.Tutorial"
+		delay = 0.100000
+	}
+	Base.Announcer.KillStreak.Crowd.2d = 
+	{
+		base = "Base.Announcer.VO.2d"
+		volume_fade_out = 1
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.130000
+		volume = -12
+	}
+	Base.Announcer.KillStreak.CountUp.2d = 
+	{
+		base = "Base.Announcer.VO.2d"
+		volume = -6
+	}
+	Base.Announcer.Hero.KillStreak.2d = 
+	{
+		base = "Base.Announcer.VO.2d"
+		volume = -12.000000
+		volume_rand_min = -0.010000
+		position_force_from_player = true
+		delay = 0.300000
+		apply_radio_effect_for_voice = true
+		voice_radio_effect_distance_threshold = 800.000000
+		_builtins._voicegraph = "citadel.2d_basic"
+	}
+}

@@ -1,0 +1,86 @@
+<!-- xml reconstructed by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_db_page_shared.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_db_page_hero_builds.vcss_c" />
+	</styles>
+	<CitadelHeroBuildsPage class="DashboardPage" oncancel="CitadelNavigateBack();">
+		<Panel id="CreateHeroBuildsNav" class="HeroBuildNav">
+			<Panel id="NewOrEditContainer" class="NavContainer">
+				<Label class="HeroBuildsTitle" text="#Citadel_HeroBuildsPage_CreateOrEditBuildTitle" />
+				<Label class="HeroBuildsDesc" text="#Citadel_HeroBuildsPage_EditOrCreateBuildDesc" />
+				<Panel class="SelectionContainer">
+					<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_CreateBuildPreamble_EditBuild" />
+					<CitadelHeroBuildsSelector id="ExistingBuildSelector" user_builds_only="true" />
+					<Panel id="EditBuildContainer" hittest="false">
+						<Panel id="EditBuildButton" class="actionItemButton" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseactivate="CitadelShopHeroBuildsEditSelectedBuild()">
+							<Panel class="ButtonItems">
+								<Label text="#Citadel_HeroBuildsPage_EditBuildLabel" />
+							</Panel>
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="EditContainer" class="NavContainer">
+				<Label class="HeroBuildsTitle" text="#Citadel_HeroBuildsPage_CreateBuildTitle" />
+				<Label class="HeroBuildsDesc" text="#Citadel_HeroBuildsPage_CreateBuildDesc" />
+				<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_BuildNameTitle" />
+				<TextEntry id="HeroBuildName" placeholder="Enter Build Name" undohistroy="enabled" maxchars="50" />
+				<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_BuildDescriptionTitle" />
+				<TextEntry id="HeroBuildDescription" placeholder="Enter Description" undohistroy="enabled" maxchars="4096" multiline="true" />
+				<Panel class="SharePanel">
+					<Label id="PublicBuildLabel" text="#Citadel_HeroBuildsPage_PublicBuildLabel" />
+					<Panel class="Checkbox" onmouseactivate="CitadelShopHeroBuildsPublicBuildCheckbox()" />
+				</Panel>
+				<Panel id="EditButtonsContainer" hittest="false">
+					<Panel id="SaveBuildButton" class="actionItemButton" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseactivate="CitadelShopHeroBuildsSaveCustomBuild()">
+						<Panel class="ButtonItems">
+							<Label text="#Citadel_HeroBuildsPage_SaveBuildLabel" />
+						</Panel>
+					</Panel>
+					<Panel id="BuildSavedButton" class="actionItemButton disabled">
+						<Panel class="ButtonItems">
+							<Label text="#Citadel_HeroBuildsPage_BuildSavedLabel" />
+						</Panel>
+					</Panel>
+					<Panel id="DeleteBuildButton" class="actionItemButton" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseactivate="CitadelShopHeroBuildsDeleteSelectedBuildPressed()">
+						<Panel class="ButtonItems">
+							<Label text="#Citadel_HeroBuildsPage_DeleteBuildLabel" />
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="BrowseHeroBuildsNav" class="HeroBuildNav">
+			<Panel class="NavContainer">
+				<Label class="HeroBuildsTitle" text="#Citadel_HeroBuildsPage_BrowseBuildTitle" />
+				<Label class="HeroBuildsDesc" text="#Citadel_HeroBuildsPage_BrowseBuildDesc" />
+				<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_BuildNameTitle" />
+				<CitadelHeroBuildsSelector id="HeroBuildSelector" user_builds_only="false" />
+				<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_BuildDescriptionTitle" />
+				<Label class="BrowseHeroBuildDescription" id="HeroBuildDescription" />
+				<Panel id="BuildCreatorPanel" hittest="false">
+					<Label text="By:" />
+					<Label id="CustomBuild" class="HeroBuildCreator" html="true" text="{g:citadel_persona:build_creator}" />
+					<Label id="DefaultBuild" class="HeroBuildCreator" html="true" text="Valve" />
+				</Panel>
+				<Panel id="SelectBuildContainer" hittest="false">
+					<Panel id="SelectBuildButton" class="actionItemButton" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseactivate="CitadelShopHeroBuildsUseSelectedBuild()">
+						<Panel class="ButtonItems">
+							<Label id="SelectBuildButtonLabel" text="#Citadel_HeroBuildsPage_SelectBuildLabel" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel id="FavoriteBuildContainer" hittest="false">
+					<Panel id="FavoriteBuildButton" class="actionItemButton disabled">
+						<Panel class="ButtonItems">
+							<Label id="FavoriteBuildButtonLabel" text="#Citadel_HeroBuildsPage_FavoriteBuild" />
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+		<CitadelHudHeroShop id="DashboardShop" hero_building="true" />
+	</CitadelHeroBuildsPage>
+</root>

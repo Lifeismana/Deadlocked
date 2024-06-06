@@ -1,0 +1,76 @@
+/* Prettified by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io */
+
+CitadelHeroStatsDisplay
+{
+	width: 100%;
+	height: 100%;
+}
+
+Label
+{
+	color: colorCommonOffWhite;
+	font-family: "Retail Demo";
+}
+
+#HealthStatsContainer,#WeaponTechContainer
+{
+	width: fill-parent-flow(1.0);
+	background-color: #00000030;
+	height: 100%;
+}
+
+.isPostGame #HealthStatsContainer,.isPostGame #WeaponTechContainer
+{
+	width: 426px;
+}
+
+#HealthStatsContainer
+{
+	margin-right: 5px;
+}
+
+#WeaponStatsContainer,#TechStatsContainer
+{
+	width: 100%;
+}
+
+.StatsHeader
+{
+	flow-children: right;
+	background-color: #00000080;
+	padding: 10px 15px;
+	width: 100%;
+	height: 80px;
+}
+
+.StatsContainer
+{
+	flow-children: down;
+	padding: 8px 15px;
+}
+
+.isPostGame .StatsContainer
+{
+	flow-children: right-wrap;
+}
+
+#StatContainer_MaxHealth,#StatContainer_DPS,#StatContainer_TechPower,#StatContainer_BaseHealthRegen,#StatContainer_BulletDamage,#StatContainer_TechDamageScale
+{
+	width: fill-parent-flow(1.0);
+}
+
+.StatElement
+{
+	padding: 3px 0px;
+}
+
+.isPostGame .StatElement
+{
+	min-width: 49%;
+}
+
+.IsZeroValue
+{
+	opacity: 0.2;
+}
+

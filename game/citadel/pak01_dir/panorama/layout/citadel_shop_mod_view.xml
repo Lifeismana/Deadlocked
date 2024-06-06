@@ -1,0 +1,60 @@
+<!-- xml reconstructed by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/ability_icons.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_shared_colors.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_shop_mod_view.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="ComponentOfModSnippet">
+			<Panel class="componentModIconContainer">
+				<Image id="componentModIcon" />
+				<Image id="componentOwnedIcon" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<CitadelShopMod class="mod_view" hittest="true">
+		<Panel id="background" hittestchildren="false">
+			<Panel class="mod_backer" />
+			<Panel class="modIconContainer">
+				<Panel class="mod_icon" />
+				<Panel class="defensive_icon" />
+			</Panel>
+			<Panel class="active_tag">
+				<Label id="ActiveTag" text="Active" />
+				<Label id="ActiveSlotsFull" text="ACTIVES FULL" />
+			</Panel>
+			<Panel class="mod_name_area">
+				<Label class="modName" text="{s:mod_name}" />
+			</Panel>
+			<Panel class="modStatusCol">
+				<Image class="recommended_icon" src="s2r://panorama/images/upgrades/recommended_star_psd.vtex" />
+				<Image class="purchasedIcon" src="s2r://panorama/images/upgrades/checkmark_purchased_psd.vtex" />
+				<Image class="componentIcon" src="s2r://panorama/images/upgrades/lock_icon_psd.vtex" />
+			</Panel>
+			<Label id="NewLabel" class="new_tag" text="NEW" />
+			<Panel id="SellOverlay">
+				<Panel class="MessageContent">
+					<Label class="SellLabel" text="Sell" />
+					<Label class="ItemName" text="{s:mod_name}" />
+					<Panel class="SellCost">
+						<Image class="goldIcon" />
+						<Label id="SellCostAmount" text="{i:sell_cost}" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="ReturnToShop">
+				<Panel class="MessageContent">
+					<Label class="ReturnLabel" text="No Nearby Shop" />
+				</Panel>
+			</Panel>
+			<Panel id="CantAfford">
+				<Panel class="MessageContent">
+					<Label class="CantAffordLabel" text="Can&apos;t Afford" />
+				</Panel>
+			</Panel>
+			<Panel id="ComponentsContainer" />
+		</Panel>
+	</CitadelShopMod>
+</root>

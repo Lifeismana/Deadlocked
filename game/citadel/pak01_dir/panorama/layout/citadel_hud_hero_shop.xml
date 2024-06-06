@@ -1,0 +1,153 @@
+<!-- xml reconstructed by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_shared_colors.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_hud_hero_shop.vcss_c" />
+	</styles>
+	<CitadelHudHeroShop class="CitadelHudHeroShop in_item_shop" oncancel="CitadelExitUpgradeShop();" onactivate="">
+		<Panel id="NavPanel" class="TopBottomFlow">
+			<Panel id="ShopNav">
+				<Panel class="ShopHeader">
+					<Panel class="ShopName" />
+				</Panel>
+				<Panel class="ReadOnlyShop">
+					<Label class="ReadOnlyTitle" text="#BrowseItems_Title" />
+					<Label class="ReadOnlyDesc" text="#BrowseItems_Desc" />
+				</Panel>
+				<Panel class="APHeader">
+					<Panel class="SectionTitle">
+						<Label class="SectionLabel" text="Purchase Items" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="HeroPanel">
+				<Image id="HeroImage" scaling="stretch-to-fit-y-preserve-aspect" />
+				<Panel id="SoulsContainer">
+					<Panel id="SoulAmount">
+						<Panel class="SoulsImage" />
+						<Label class="AbilitiesLabel" text="{i:total_souls}" />
+					</Panel>
+					<Label class="totalSouls" text="Total Souls Collected" />
+					<Panel id="SoulRewards" onmouseout="CitadelHideLevelRewardsTooltip();">
+						<Label text="View Soul Rewards" />
+					</Panel>
+					<Panel id="HeroStatsBtn" onmouseout="CitadelHideHeroStatsTooltip();">
+						<Label text="View Hero Stats" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel class="HeroStatsContainer">
+				<CitadelHeroStats id="HeroStats" />
+			</Panel>
+			<Panel class="ModsPurchasedContainer">
+				<Panel class="ModsAndActivesContainer">
+					<Panel id="SecondaryPanel">
+						<Panel id="ModBarGraphContainer">
+							<CitadelHudModBarGraph id="ModBarGraph" />
+						</Panel>
+						<Panel id="ActivesPanel" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="MainPanel">
+			<Panel id="FiltersDropDownContainer" onmouseout="CitadelHideFiltersDropDown();" onactivate="">
+				<Panel class="FilterButton" onmouseactivate="CitadelShopFilterSelected(4)">
+					<Label class="FilterButtonLabel" text="#Citadel_ShopFilter_Durabilty" />
+				</Panel>
+				<Panel class="FilterButton" onmouseactivate="CitadelShopFilterSelected(1)">
+					<Label class="FilterButtonLabel" text="#Citadel_ShopFilter_WeaponDamage" />
+				</Panel>
+				<Panel class="FilterButton" onmouseactivate="CitadelShopFilterSelected(2)">
+					<Label class="FilterButtonLabel" text="#Citadel_ShopFilter_MagicDamage" />
+				</Panel>
+				<Panel class="FilterButton" onmouseactivate="CitadelShopFilterSelected(16)">
+					<Label class="FilterButtonLabel" text="#Citadel_ShopFilter_Ammo" />
+				</Panel>
+				<Panel class="FilterButton" onmouseactivate="CitadelShopFilterSelected(8)">
+					<Label class="FilterButtonLabel" text="#Citadel_ShopFilter_FireRate" />
+				</Panel>
+				<Panel class="FilterButton" onmouseactivate="CitadelShopFilterSelected(32)">
+					<Label class="FilterButtonLabel" text="#Citadel_ShopFilter_Melee" />
+				</Panel>
+				<Panel class="FilterButton" onmouseactivate="CitadelShopFilterSelected(128)">
+					<Label class="FilterButtonLabel" text="#Citadel_ShopFilter_Movement" />
+				</Panel>
+				<Panel class="FilterButton" onmouseactivate="CitadelShopFilterSelected(64)">
+					<Label class="FilterButtonLabel" text="#Citadel_ShopFilter_Healing" />
+				</Panel>
+				<Panel class="FilterButton" onmouseactivate="CitadelShopFilterSelected(256)">
+					<Label class="FilterButtonLabel" text="#Citadel_ShopFilter_Disruption" />
+				</Panel>
+			</Panel>
+			<Panel id="ShopModsContainer" class="TopBottomFlow" onmouseover="CitadelHideFiltersDropDown();">
+				<Panel id="ShopNavigation">
+					<Panel id="FavoritesNav" class="NavigationButton" onmouseactivate="CitadelShopModsActivate( EItemSlotType_Favorites );  CitadelPlayUISound( EShopFilterFavoritesClicked );" onmouseover="CitadelHideFiltersDropDown();">
+						<Panel class="NavHeaderColor" />
+						<Panel class="TabContent">
+							<Panel class="FavoritesIcon" />
+							<Panel class="RecommendedTextContainer">
+								<Label class="HeroNameRecommended" text="{s:hero_name}" />
+								<Label class="RecommendedLabel" text="#CitadelCategorySuggested" />
+							</Panel>
+						</Panel>
+					</Panel>
+					<Panel id="WeaponNav" class="NavigationButton" onmouseactivate="CitadelShopModsActivate( EItemSlotType_WeaponMod ); CitadelPlayUISound( EShopFilterWeaponClicked );" onmouseover="CitadelHideFiltersDropDown();">
+						<Panel class="NavHeaderColor" />
+						<Panel class="NavIconContainer LeftRightFlow">
+							<Panel class="NavCategoryIcon" />
+							<Label class="NavLabel" text="#CitadelCategoryWeapon" />
+						</Panel>
+					</Panel>
+					<Panel id="ArmorNav" class="NavigationButton" onmouseactivate="CitadelShopModsActivate( EItemSlotType_Armor ); CitadelPlayUISound( EShopFilterVitalityClicked );">
+						<Panel class="NavHeaderColor" />
+						<Panel class="NavIconContainer LeftRightFlow">
+							<Panel class="NavCategoryIcon" />
+							<Label class="NavLabel" text="#CitadelCategoryArmor" />
+						</Panel>
+					</Panel>
+					<Panel id="TechNav" class="NavigationButton" onmouseactivate="CitadelShopModsActivate( EItemSlotType_Tech ); CitadelPlayUISound( EShopFilterMagicClicked );">
+						<Panel class="NavHeaderColor" />
+						<Panel class="NavIconContainer LeftRightFlow">
+							<Panel class="NavCategoryIcon" />
+							<Label class="NavLabel" text="#CitadelCategoryTech" />
+						</Panel>
+					</Panel>
+					<Panel id="FiltersName" class="NavigationButton" onmouseover="CitadelShowFiltersDropDown();" onmouseout="CitadelHideFiltersDropDown();">
+						<Panel class="NavHeaderColor" />
+						<Panel class="FilterNameContainer">
+							<Label class="NavLabel" text="By Stat" />
+							<Panel class="DropdownIcon" />
+						</Panel>
+						<Label class="NavLabel FilterType" text="{s:filter_name}" />
+					</Panel>
+				</Panel>
+				<Panel id="ShopModListsContainer">
+					<Label class="HeroFavoritesHeaderLabel" text="{s:hero_name}&apos;s Recommended Mods" />
+					<CitadelShopModsList id="ShopModsListWeapon" category="Weapon" />
+					<CitadelShopModsList id="ShopModsListArmor" category="Armor" />
+					<CitadelShopModsList id="ShopModsListTech" category="Tech" />
+					<CitadelShopModsList id="ShopModsListFavorites" category="Favorites" />
+					<CitadelShopModsList id="ShopModsListAll" category="All" />
+				</Panel>
+			</Panel>
+			<Panel id="AbilityPanelsContainer" onactivate="" hittest="false" hittestchildren="false">
+				<CitadelAbilityDetailsPanel id="AbilityDetailsPanel1" class="abilityDetailsPanels" ability_slot="1" />
+				<CitadelAbilityDetailsPanel id="AbilityDetailsPanel2" class="abilityDetailsPanels" ability_slot="2" />
+				<CitadelAbilityDetailsPanel id="AbilityDetailsPanel3" class="abilityDetailsPanels" ability_slot="3" />
+				<CitadelAbilityDetailsPanel id="AbilityDetailsPanel4" class="abilityDetailsPanels" ability_slot="4" />
+			</Panel>
+		</Panel>
+		<Panel id="BackButton">
+			<Panel id="LeftCommandPanel" class="LeftRightFlow commandPanel" onactivate="CitadelExitUpgradeShop();">
+				<Panel class="FooterCommand DefaultESC">
+					<Panel class="controlKeyBind">
+						<Label text="ESC" html="true" />
+					</Panel>
+					<Label class="FooterCommandLabel" text="Back" />
+				</Panel>
+			</Panel>
+		</Panel>
+	</CitadelHudHeroShop>
+</root>

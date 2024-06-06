@@ -1,0 +1,34 @@
+<!-- xml reconstructed by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/hud_common.vcss_c" />
+		<include src="s2r://panorama/styles/hud_objective_health.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_shared_colors.vcss_c" />
+	</styles>
+	<Panel class="objective" hittest="false">
+		<Panel id="unit_data">
+			<Panel id="left">
+				<Image id="objective_image" class="entityImage" />
+				<Image id="shield_image" />
+			</Panel>
+			<Panel id="right">
+				<Label id="name" text="{s:objective_name}" />
+				<Panel class="HealthBars">
+					<Panel id="bulletshield_background">
+						<ProgressBarWithMiddle id="bulletshield_progress" />
+					</Panel>
+					<Panel id="healthbar_background">
+						<ProgressBarWithMiddle id="healthbar_progress" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="deadlabel">
+			<Label text="DESTROYED" />
+		</Panel>
+		<Panel id="transformingLabel">
+			<Label text="The Patron is Transforming..." />
+		</Panel>
+	</Panel>
+</root>

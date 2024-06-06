@@ -1,0 +1,103 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Base.Hero.VO.2d = 
+	{
+		type = "citadel_default_2d"
+		mixer_mixgroup = "VO-Hero-2d"
+		send_name = "hero_vo"
+		volume = -1.000000
+		position_force_from_player = true
+		apply_radio_effect_for_voice = false
+		voice_radio_effect_distance_threshold = 1000.000000
+		_builtins._voicegraph = "citadel.2d_basic"
+	}
+	Base.Hero.VO.Ping.2d = 
+	{
+		base = "Base.Hero.VO.2d"
+		mixer_mixgroup = "VO-Hero-Ping"
+		volume = -12.000000
+		volume_rand_min = -0.010000
+		position_force_from_player = true
+		delay = 0.300000
+		_builtins._voicegraph = "citadel.2d_basic"
+		apply_radio_effect_for_voice = true
+		voice_radio_effect_distance_threshold = 0.000000
+	}
+	Base.HeroPick.VO.2d = 
+	{
+		base = "Base.Hero.VO.2d"
+		volume = -9.000000
+		mixer_mixgroup = "VO-Hero-Pick"
+		_builtins._voicegraph = "citadel.2d_basic"
+		apply_radio_effect_for_voice = false
+		voice_radio_effect_distance_threshold = 800.000000
+	}
+	Base.HeroRemove.VO.2d = 
+	{
+		base = "Base.HeroPick.VO.2d"
+	}
+	Base.Hero.VO.3d = 
+	{
+		base = "Base.Hero.VO"
+	}
+	Base.Hero.VO.Ability.3d = 
+	{
+		base = "Base.Hero.VO"
+		mono_downmix_min_distance = 1.000000
+		mono_downmix_max_distance = 5.000000
+		hrtf_on_player = 1.000000
+		reverb_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.320024,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+	}
+	Base.Hero.VO.Ultimate.3d = 
+	{
+		base = "Base.Hero.VO"
+	}
+	Base.Hero.VO.Pain.3d = 
+	{
+		base = "Base.Hero.VO"
+		volume = -6.000000
+	}
+	Base.Hero.VO.Death.3d = 
+	{
+		base = "Base.Hero.VO.Death"
+	}
+	Base.Hero.VO.Effort.3d = 
+	{
+		base = "Base.Hero.VO"
+		volume = -21.000000
+	}
+	Base.Hero.VO.Dash.3d = 
+	{
+		base = "Base.Hero.VO.3d"
+		volume = -16.000000
+	}
+	Base.Hero.VO.Melee.3d = 
+	{
+		base = "Base.Hero.VO"
+		volume = -18.000000
+	}
+	Base.Hero.VO.Ping.3d = 
+	{
+		base = "Base.Hero.VO.Ping.2d"
+	}
+}

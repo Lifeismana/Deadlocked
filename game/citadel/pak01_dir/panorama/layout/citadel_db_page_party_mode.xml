@@ -1,0 +1,64 @@
+<!-- xml reconstructed by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_db_page_shared.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_db_page_party_mode.vcss_c" />
+	</styles>
+	<CitadelPlayPage class="DashboardPage" oncancel="CitadelNavigateBack();">
+		<Panel id="BotTitle">
+			<Label text="{s:page_title}" />
+		</Panel>
+		<Panel id="PlayOptions">
+			<Panel id="EnterMatchmaking" class="playOptionContainer" onactivate="CitadelSetPartyMode( 0 ); CitadelNavigateBack(); CitadelPlayUISound( EMainMenuActivate );" onmouseover="CitadelPlayUISound( EMainMenuHover )">
+				<Panel class="playOptionTop" />
+				<Panel class="playOptionBottom">
+					<Panel class="bottomOptionContainer">
+						<Label class="playLabel" text="Play Online" />
+						<Panel class="backArrow" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="CoopMatchmaking" class="playOptionContainer" onactivate="CitadelSetPartyMode( 3 ); CitadelNavigateBack(); CitadelPlayUISound( EMainMenuActivate );" onmouseover="CitadelPlayUISound( EMainMenuHover )">
+				<Panel class="playOptionTop" />
+				<Panel class="playOptionBottom">
+					<Panel class="bottomOptionContainer">
+						<Label class="playLabel" text="Coop Bot" />
+						<Panel class="backArrow" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="CoopBotMatcEasy" class="playOptionContainer" onactivate="CitadelSetPartyMode( 1 ); CitadelNavigateBack(); CitadelPlayUISound( EMainMenuActivate );" onmouseover="CitadelPlayUISound( EMainMenuHover )">
+				<Panel class="playOptionTop">
+					<Panel class="CoopBotMatchTop" />
+				</Panel>
+				<Panel class="playOptionBottom">
+					<Panel class="bottomOptionContainer">
+						<Label class="playLabel" text="Bots - Easy" />
+						<Panel class="backArrow" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="CoopBotMatchHard" class="playOptionContainer" onactivate="CitadelSetPartyMode( 2 ); CitadelNavigateBack(); CitadelPlayUISound( EMainMenuActivate );" onmouseover="CitadelPlayUISound( EMainMenuHover )">
+				<Panel class="playOptionTop">
+					<Panel class="CoopBotMatchTop" />
+				</Panel>
+				<Panel class="playOptionBottom">
+					<Panel class="bottomOptionContainer">
+						<Label class="playLabel" text="Bots - Hard" />
+						<Panel class="backArrow" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="1v1Test" class="playOptionContainer" onactivate="CitadelSetPartyMode( 4 ); CitadelNavigateBack(); CitadelPlayUISound( EMainMenuActivate );" onmouseover="CitadelPlayUISound( EMainMenuHover )">
+				<Panel class="playOptionTop" />
+				<Panel class="playOptionBottom">
+					<Panel class="bottomOptionContainer">
+						<Label class="playLabel" text="1v1 Test" />
+						<Panel class="backArrow" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</CitadelPlayPage>
+</root>

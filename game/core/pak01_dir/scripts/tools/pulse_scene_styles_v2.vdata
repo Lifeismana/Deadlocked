@@ -1,0 +1,943 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	generic_data_type = "CGraphCanvasStyleLayer"
+	_include = 
+	[
+		"scripts/tools/pulse_global_styles.vdata_inc",
+	]
+	.BaseFlow = 
+	{
+		InteractionPriority = "BASE"
+		LayoutChildren = "VBOX"
+		HAlign = "STRETCH"
+		MinSizeX = 200
+		MinSizeY = 19
+		Background_Color = "#2E3135"
+	}
+	.BaseFlow.HasMultipleOutflows = 
+	{
+		Background_Color = "#646464"
+	}
+	.BaseFlow.IsSpontaneous = 
+	{
+		Background_Color = "#316220"
+	}
+	.BaseFlow.IsYielding = 
+	{
+		Background_Color = "#625B20"
+	}
+	".BaseFlow:selected" = 
+	{
+		Border = "2px #FFFF00"
+	}
+	".BaseFlow:hover" = 
+	{
+		Border = "2px #909090"
+	}
+	.BaseFlow.IsMethod = 
+	{
+		Background_Color = "#387224"
+	}
+	.BaseFlow.Skipped = 
+	{
+		Background_Color = 
+		[
+			128,
+			128,
+			128,
+		]
+		Background_Style = "BDiagPattern"
+	}
+	.BaseFlow.Unreachable = 
+	{
+		Border_Color = 
+		[
+			128,
+			0,
+			0,
+		]
+		Border_Width = "3px"
+		BorderRadius = "2px"
+		Background_Style = "BDiagPattern"
+	}
+	.Group = 
+	{
+		LayoutChildren = "VBOX"
+		MinSizeX = 200
+		MinSizeY = 19
+	}
+	.BaseValue = 
+	{
+		InteractionPriority = "BASE"
+		LayoutChildren = "VBOX"
+		MinSizeX = 120
+		MinSizeY = 10
+		Border = "2px #000000"
+		BorderRadius = "3px"
+		Background_Color = "#3D4450"
+	}
+	".BaseValue:selected" = 
+	{
+		Border = "#FFFF00"
+	}
+	".BaseValue:hover" = 
+	{
+		Border = "#909090"
+	}
+	.BaseConnection = 
+	{
+		InteractionPriority = "BASE"
+		Background_Color = "transparent"
+		Border = "transparent"
+		Foreground_Width = "3px"
+	}
+	".BaseConnection:hover, .BaseConnection.IsSourceHovered" = 
+	{
+		Foreground_Color = "#FFFFFF"
+	}
+	".BaseConnection:selected" = 
+	{
+		Foreground_Color = "#FFFF00"
+	}
+	.BaseConnection.IsBroken = 
+	{
+		Foreground_Color = "#FF0000"
+	}
+	.Connection_Inparam = 
+	{
+		Foreground_Width = "2px"
+	}
+	.Connection_Outflow = 
+	{
+		Foreground_Width = "3px"
+	}
+	.Connection_AnchorPoint = 
+	{
+		InteractionPriority = "ANCHOR"
+		MinSizeX = 15
+		MinSizeY = 15
+	}
+	".Connection_AnchorPoint:hover" = 
+	{
+		Border = "2px #909090"
+		Background_Color = "#625B20"
+	}
+	.ValueWithoutPortLabels = 
+	{
+		MinSizeX = 80
+		LayoutChildren = "HBOX"
+	}
+	.ValueLiteral = 
+	{
+		MinSizeX = 80
+		LayoutChildren = "HBOX"
+	}
+	.ValueLiteral_Text = 
+	{
+		PaintLayer = "NODES"
+		Font = "Courier New,13,-1,5,75,0,0,0,0,0,Bold"
+		Margin_Left = 20
+	}
+	.GroupBackground = 
+	{
+		Positioning = "INSIDE_PARENT"
+		VAlign = "STRETCH"
+		HAlign = "STRETCH"
+		Margin = "-6px -2px -6px -2px"
+		PaintLayer = "GROUP_BACKGROUND"
+		BorderRadius = "4px"
+		Background_Color = "#444444"
+	}
+	.ResizeFlow_Corner_BottomRight = 
+	{
+		InteractionPriority = "RESIZE_CORNER"
+		ParticipatesInBoxSelection = false
+		Positioning = "INSIDE_PARENT"
+		VAlign = "BOTTOM"
+		HAlign = "RIGHT"
+		FixedSizeX = 8
+		FixedSizeY = 8
+		PaintLayer = "NODES"
+		BackgroundImage = "tools/images/pulse_editor/resize_block_handle.png"
+		ImageTint = "#5B686A"
+	}
+	".ResizeFlow_Corner_BottomRight:hover" = 
+	{
+		ImageTint = "#929899"
+	}
+	.NodeHeader_Base = 
+	{
+		HAlign = "STRETCH"
+		MinSizeY = 19
+		LayoutChildren = "HBOX"
+	}
+	.FlowNodeHeader = 
+	{
+		Margin_Left = 12
+	}
+	.ValueNodeHeader = 
+	{
+	}
+	".ValueWithoutPortLabels .ValueNodeHeader" = 
+	{
+		VAlign = "STRETCH"
+		HAlign = "STRETCH"
+		Positioning = "INSIDE_PARENT"
+	}
+	.HeaderIcon = 
+	{
+		FixedSizeX = 18
+		FixedSizeY = 18
+		Margin_Top = 3
+		Margin_Right = 2
+		Margin_Left = 2
+		PaintLayer = "NODES"
+		VAlign = "TOP"
+		HAlign = "RIGHT"
+	}
+	.BaseRequirement = 
+	{
+		InteractionPriority = "NONINTERACTIVE"
+	}
+	.RequirementsIconInsideHeader = 
+	{
+		FixedSizeX = 18
+		FixedSizeY = 18
+		Margin_Top = 3
+		Margin_Right = 0
+		Margin_Left = 2
+		PaintLayer = "NODES"
+		VAlign = "TOP"
+		HAlign = "RIGHT"
+	}
+	.RequirementsIconAlongsideFirstPort = 
+	{
+		FixedSizeX = 18
+		FixedSizeY = 18
+		Margin_Top = 2
+		Margin_Right = 0
+		Margin_Left = 16
+		PaintLayer = "CONNECTIONS_FOREGROUND"
+		VAlign = "TOP"
+		HAlign = "LEFT"
+		Positioning = "INSIDE_PARENT"
+	}
+	.RequirementsIconInRequirementsList = 
+	{
+		FixedSizeX = 18
+		FixedSizeY = 18
+		Margin_Top = 2
+		Margin_Right = 0
+		Margin_Left = 16
+		PaintLayer = "CONNECTIONS_FOREGROUND"
+		VAlign = "TOP"
+		HAlign = "LEFT"
+		Positioning = "INSIDE_PARENT"
+	}
+	.RequirementsNodeList = 
+	{
+		LayoutChildren = "VBOX"
+		MinSizeX = 200
+		MinSizeY = 0
+	}
+	.RequirementLayout_Separator = 
+	{
+		HAlign = "STRETCH"
+		FixedSizeY = 1
+		PaintLayer = "NODES"
+		LayoutChildren = "HBOX"
+	}
+	.RequirementLayout_Separator_Spacer = 
+	{
+		FixedSizeX = 14
+		FixedSizeY = 1
+		PaintLayer = "NODES"
+		Margin_Top = 0
+	}
+	.RequirementLayout_Separator_Line = 
+	{
+		HAlign = "STRETCH"
+		FixedSizeY = 1
+		LayoutGrowFactor = 1
+		PaintLayer = "NODES"
+		Margin_Top = 0
+		Background_Color = "#C8C8C8"
+	}
+	.HeaderTextContainer = 
+	{
+		VAlign = "STRETCH"
+		HAlign = "STRETCH"
+		LayoutChildren = "VBOX"
+	}
+	".ValueWithoutPortLabels .HeaderTextContainer" = 
+	{
+		Positioning = "INSIDE_PARENT"
+	}
+	.HeaderText = 
+	{
+		Font = "Barlow SemiBold,12,-1,5,50,0,0,0,0,0,Regular"
+		PaintLayer = "NODES"
+		HAlign = "LEFT"
+		VAlign = "STRETCH"
+		Foreground_Color = "#B8BCBF"
+	}
+	".InflowNode .HeaderText" = 
+	{
+		Foreground_Color = "#FFFFFF"
+	}
+	".OutflowNode .HeaderText" = 
+	{
+		Foreground_Color = "#000000"
+	}
+	".ValueWithoutPortLabels .HeaderIcon" = 
+	{
+		Positioning = "INSIDE_PARENT"
+		HAlign = "CENTER"
+		VAlign = "CENTER"
+	}
+	".ValueWithoutPortLabels .HeaderText" = 
+	{
+		Font = "Barlow SemiBold,20,-1,5,75,0,0,0,0,0,Regular"
+		HAlign = "CENTER"
+		VAlign = "CENTER"
+	}
+	.SubHeaderText = 
+	{
+		Font = "Dinish,10,-1,5,50,0,0,0,0,0,Italic"
+		PaintLayer = "NODES"
+		HAlign = "LEFT"
+	}
+	".ValueWithoutPortLabels .SubHeaderText" = 
+	{
+		HAlign = "CENTER"
+	}
+	.ResizeFlow_Edge_Base = 
+	{
+		InteractionPriority = "RESIZE_EDGE"
+		ParticipatesInBoxSelection = false
+		FixedSizeX = 6
+		VAlign = "STRETCH"
+		Margin_Top = 2
+		Margin_Bottom = 2
+	}
+	.ResizeFlow_Edge_Right = 
+	{
+		Positioning = "ON_PARENT_BORDER"
+		HAlign = "RIGHT"
+	}
+	.ResizeFlow_Edge_Left = 
+	{
+		Positioning = "ON_PARENT_BORDER"
+		HAlign = "LEFT"
+	}
+	.FlowPortsLayout_Base = 
+	{
+		HAlign = "STRETCH"
+		FixedSizeY = 0
+		LayoutChildren = "HBOX"
+	}
+	.InflowPortsLayout = 
+	{
+		Positioning = "ON_PARENT_BORDER"
+		VAlign = "TOP"
+	}
+	.OutflowPortsLayout = 
+	{
+		Positioning = "ON_PARENT_BORDER"
+		VAlign = "BOTTOM"
+	}
+	.OverlapParamsLayout_Base = 
+	{
+		LayoutChildren = "VBOX"
+		VAlign = "STRETCH"
+		FixedSizeX = 19
+	}
+	.OverlapInparamsLayout = 
+	{
+		HAlign = "RIGHT"
+		Positioning = "INSIDE_PARENT"
+	}
+	.OverlapOutparamsLayout = 
+	{
+		HAlign = "LEFT"
+		Positioning = "INSIDE_PARENT"
+	}
+	.DragHandle_Base = 
+	{
+		InteractionPriority = "DRAG_HANDLE"
+		DefaultHoverCursorName = "OpenHandCursor"
+		Positioning = "INSIDE_PARENT"
+		Margin = "2px"
+		PaintLayer = "NODES"
+		BorderRadius = "2px 0px 0px 2px"
+		BackgroundImage = "tools/images/pulse_editor/drag_handle.png"
+		ImageTint = "#909090"
+		Background_Color = "#FFFFFF40"
+	}
+	".DragHandle_Base:hover" = 
+	{
+		ImageTint = "#FFFFFF"
+	}
+	.FlowDragHandle = 
+	{
+		VAlign = "STRETCH"
+		HAlign = "LEFT"
+		FixedSizeX = 11
+		Margin_Top = 1
+		Margin_Bottom = 1
+	}
+	.CommentDragHandle = 
+	{
+		VAlign = "TOP"
+		HAlign = "LEFT"
+		FixedSizeX = 11
+		FixedSizeY = 20
+	}
+	.PortPlug = 
+	{
+		InteractionPriority = "PORT"
+		FixedSizeX = 19
+		FixedSizeY = 19
+		BorderRadius = "2px"
+		BackgroundSize = "Stretch"
+		PaintLayer = "NODES"
+	}
+	.PortLabel = 
+	{
+		VAlign = "STRETCH"
+		HAlign = "STRETCH"
+		LayoutGrowFactor = 1
+		Font = "Barlow,11,-1,5,50,0,0,0,0,0,Regular"
+		PaintLayer = "NODES"
+		Foreground_Color = "#FFFFFF"
+		TextHAlign = "RIGHT"
+	}
+	.PortValueLabel = 
+	{
+		Font = "Barlow,11,-1,5,50,0,0,0,0,0,Regular"
+		PaintLayer = "NODES"
+		Foreground_Color = "#FFFFFF"
+		Positioning = "OUTSIDE_PARENT"
+		HAlign = "RIGHT"
+		Margin_Left = "5px"
+	}
+	.Port = 
+	{
+		VAlign = "STRETCH"
+		HAlign = "STRETCH"
+		LayoutGrowFactor = 1
+		LayoutChildren = "HBOX"
+		"&.InflowPort .PortPlug" = 
+		{
+			Margin_Bottom = 14
+			FixedSizeX = 12
+			FixedSizeY = 12
+			BorderRadius = "12px"
+			Border_Color = 
+			[
+				14,
+				20,
+				27,
+			]
+			Border_Width = 2
+			Background_Color = 
+			[
+				144,
+				144,
+				144,
+			]
+			"&:hover" = 
+			{
+				Background_Color = 
+				[
+					255,
+					255,
+					255,
+				]
+			}
+		}
+		"&.OutflowPort" = 
+		{
+			.PortPlug = 
+			{
+				Margin_Top = 22
+				FixedSizeX = 12
+				FixedSizeY = 12
+				BorderRadius = "12px"
+				Border_Color = 
+				[
+					14,
+					20,
+					27,
+				]
+				Border_Width = 2
+				Background_Color = 
+				[
+					144,
+					144,
+					144,
+				]
+				"&:hover" = 
+				{
+					Background_Color = 
+					[
+						255,
+						255,
+						255,
+					]
+				}
+			}
+			"&.Priority_High .PortPlug:before" = 
+			{
+				PaintLayer = "CONNECTIONS_FOREGROUND"
+				Positioning = "OUTSIDE_PARENT"
+				VAlign = "TOP"
+				FixedSizeX = 15
+				FixedSizeY = 5
+				BorderRadius_BottomLeft = 15
+				BorderRadius_BottomRight = 15
+				Background_Color = 
+				[
+					100,
+					100,
+					100,
+				]
+			}
+			"&.Priority_Medium .PortPlug:before" = 
+			{
+				PaintLayer = "CONNECTIONS_FOREGROUND"
+				Positioning = "OUTSIDE_PARENT"
+				VAlign = "TOP"
+				FixedSizeX = 11
+				FixedSizeY = 5
+				BorderRadius_BottomLeft = 11
+				BorderRadius_BottomRight = 11
+				Background_Color = 
+				[
+					100,
+					100,
+					100,
+				]
+			}
+		}
+		"&.ParamsOnLeft" = 
+		{
+			LayoutChildren = "HBOX_REVERSE"
+			.PortPlug = 
+			{
+				BackgroundImage = "tools/images/pulse_editor/port_result_left.png"
+			}
+		}
+		"&.InparamPort" = 
+		{
+			.PortPlug = 
+			{
+				FixedSizeX = 9
+				FixedSizeY = 9
+				Margin = "2px"
+				Padding = "2px"
+				Background_Color = 
+				[
+					0,
+					0,
+					0,
+				]
+				BackgroundImage = "tools/images/pulse_editor/port_param.png"
+			}
+			"&.PortHasError .PortPlug" = 
+			{
+				BackgroundImage = "tools/images/pulse_editor/connection_cap_broken.png"
+			}
+		}
+		"&.OutparamPort" = 
+		{
+			.PortPlug = 
+			{
+				FixedSizeX = 9
+				FixedSizeY = 9
+				Margin = "2px"
+				Padding = "2px"
+				Background_Color = 
+				[
+					0,
+					0,
+					0,
+				]
+				BackgroundImage = "tools/images/pulse_editor/port_result.png"
+			}
+		}
+		"&.ParamsOnLeft .PortLabel" = 
+		{
+			TextHAlign = "LEFT"
+		}
+		"&.PortValue_Bool" = 
+		{
+			.PortValueLabel = 
+			{
+				Foreground_Color = 
+				[
+					142,
+					47,
+					0,
+				]
+			}
+			.PortPlug = 
+			{
+				Background_Color = 
+				[
+					142,
+					47,
+					0,
+				]
+			}
+		}
+		"&.PortValue_Number" = 
+		{
+			.PortValueLabel = 
+			{
+				Foreground_Color = 
+				[
+					62,
+					187,
+					112,
+				]
+			}
+			.PortPlug = 
+			{
+				ImageTint = 
+				[
+					62,
+					187,
+					112,
+				]
+			}
+		}
+		"&.PortValue_String" = 
+		{
+			.PortValueLabel = 
+			{
+				Foreground_Color = 
+				[
+					0,
+					109,
+					187,
+				]
+			}
+			.PortPlug = 
+			{
+				ImageTint = 
+				[
+					0,
+					109,
+					187,
+				]
+			}
+		}
+		"&.PortValue_Other" = 
+		{
+			.PortValueLabel = 
+			{
+				Foreground_Color = 
+				[
+					156,
+					115,
+					0,
+				]
+			}
+			.PortPlug = 
+			{
+				ImageTint = 
+				[
+					156,
+					115,
+					0,
+				]
+			}
+		}
+		"&.PortHasError" = 
+		{
+			.PortPlug = 
+			{
+				ImageTint = 
+				[
+					255,
+					255,
+					255,
+				]
+			}
+		}
+	}
+	".Port .PortPlug:hover" = 
+	{
+		ImageTint = 
+		[
+			255,
+			255,
+			255,
+		]
+	}
+	.AppendFlow = 
+	{
+		ParticipatesInBoxSelection = false
+		InteractionPriority = "ADD_FLOW"
+		Positioning = "OUTSIDE_PARENT"
+		VAlign = "BOTTOM"
+		FixedSizeX = 20
+		FixedSizeY = 20
+		Margin_Top = 10
+		Margin_Bottom = 10
+		PaintLayer = "NODES"
+	}
+	".AppendFlow:hover-associate" = 
+	{
+		BackgroundImage = "tools/images/pulse_editor/add_to_block.png"
+		ImageTint = "#2E3435"
+	}
+	".AppendFlow:hover" = 
+	{
+		BackgroundImage = "tools/images/pulse_editor/add_to_block.png"
+		ImageTint = "#929899"
+	}
+	.ResizeComment_Corner_Base = 
+	{
+		ParticipatesInBoxSelection = false
+		InteractionPriority = "RESIZE_CORNER"
+		Positioning = "ON_PARENT_BORDER"
+		FixedSizeX = 8
+		FixedSizeY = 8
+	}
+	.ResizeComment_Corner_TopLeft = 
+	{
+		VAlign = "TOP"
+		HAlign = "LEFT"
+	}
+	.ResizeComment_Corner_TopRight = 
+	{
+		VAlign = "TOP"
+		HAlign = "RIGHT"
+	}
+	.ResizeComment_Corner_BottomLeft = 
+	{
+		VAlign = "BOTTOM"
+		HAlign = "LEFT"
+	}
+	.ResizeComment_Corner_BottomRight = 
+	{
+		VAlign = "BOTTOM"
+		HAlign = "RIGHT"
+		PaintLayer = "COMMENTS"
+		BackgroundImage = "tools/images/pulse_editor/resize_block_handle.png"
+		ImageTint = "#5B686A"
+	}
+	".ResizeComment_Corner_BottomRight:hover" = 
+	{
+		ImageTint = "#929899"
+	}
+	.ResizeComment_Edge_Base = 
+	{
+		ParticipatesInBoxSelection = false
+		InteractionPriority = "RESIZE_EDGE"
+		Positioning = "ON_PARENT_BORDER"
+		FixedSizeX = 8
+		FixedSizeY = 8
+	}
+	.ResizeComment_Edge_Left = 
+	{
+		HAlign = "LEFT"
+		VAlign = "STRETCH"
+	}
+	.ResizeComment_Edge_Right = 
+	{
+		HAlign = "RIGHT"
+		VAlign = "STRETCH"
+	}
+	.ResizeComment_Edge_Top = 
+	{
+		HAlign = "STRETCH"
+		VAlign = "TOP"
+	}
+	.ResizeComment_Edge_Bottom = 
+	{
+		HAlign = "STRETCH"
+		VAlign = "BOTTOM"
+	}
+	.BlockComment_Base = 
+	{
+		ParticipatesInBoxSelection = false
+		LayoutChildren = "VBOX"
+		MinSizeX = 200
+		MinSizeY = 20
+		Background_Color = "transparent"
+	}
+	.BlockCommentNote = 
+	{
+		InteractionPriority = "BASE"
+	}
+	.BlockCommentRegion = 
+	{
+		InteractionPriority = "NONINTERACTIVE"
+	}
+	.BlockCommentHeader = 
+	{
+		Positioning = "INSIDE_PARENT"
+		InteractionPriority = "BASE"
+		VAlign = "TOP"
+		HAlign = "STRETCH"
+		FixedSizeY = 22
+		Margin_Top = 2
+		Margin_Left = 12
+	}
+	.BlockCommentTextBox = 
+	{
+		ParticipatesInBoxSelection = false
+		Positioning = "INSIDE_PARENT"
+		VAlign = "STRETCH"
+		HAlign = "STRETCH"
+		LayoutGrowFactor = 1
+		Margin_Left = 16
+	}
+	".PulseServerDebugNode .HeaderText" = 
+	{
+		Foreground_Color = "orange"
+	}
+	.Comment_Base = 
+	{
+		Positioning = "OUTSIDE_PARENT"
+		Font = "Barlow,11,-1,5,50,0,0,0,0,0,Regular"
+		PaintLayer = "COMMENTS"
+		Foreground_Color = "#3EBB70"
+	}
+	.FlowNodeComment = 
+	{
+		HAlign = "LEFT"
+		Margin_Right = 8.000000
+	}
+	.ValueNodeComment = 
+	{
+		VAlign = "TOP"
+		Margin_Bottom = 8.000000
+	}
+	.Cursor = 
+	{
+		InteractionPriority = "BASE"
+		FixedSizeX = 32
+		FixedSizeY = 32
+	}
+	".Cursor:hover" = 
+	{
+		PaintLayer = "NODES"
+		Border = "2px #909090"
+		Background_Color = "#625B20"
+	}
+	.CallstackCursor = 
+	{
+		FixedSizeX = 16
+		FixedSizeY = 16
+	}
+	.CursorIcon = 
+	{
+		VAlign = "STRETCH"
+		HAlign = "STRETCH"
+		PaintLayer = "NODES"
+	}
+	.ClientPaintArea = 
+	{
+		PaintLayer = "NODES"
+	}
+	".FireCursors .ClientPaintArea" = 
+	{
+		HAlign = "STRETCH"
+		LayoutGrowFactor = 1
+		FixedSizeY = 30
+	}
+	".Timeline .ClientPaintArea" = 
+	{
+		HAlign = "STRETCH"
+		LayoutGrowFactor = 1
+		FixedSizeY = 30
+	}
+	.DebuggerLive = 
+	{
+		Border = "2px #FF9090"
+	}
+	.DebuggerInStack = 
+	{
+		Border = "2px #FFFF90"
+	}
+	.HasError = 
+	{
+		Background_Color = "#FF6060"
+	}
+	"@global-variables colors" = 
+	{
+		"$GreenMid" = "#1B6037"
+		"$GreenMid_Hover" = "#1f6f40"
+		"$GreenLight" = "#7DB18A"
+		"$GreenLight_Hover" = "#83b590"
+		"$GreenBright" = "#70FF00"
+		"$GreenBright_Hover" = "#77ff0d"
+		"$TealDark" = "#0E222A"
+		"$TealDark_Hover" = "#14303b"
+		"$TealMidDark" = "#163541"
+		"$TealMidDark_Hover" = "#1b4251"
+		"$TealMid" = "#1C3D4B"
+		"$TealMid_Hover" = "#22495a"
+		"$TealLight" = "#32505D"
+		"$TealLight_Hover" = "#385a69"
+		"$TealBright" = "#98F2DC"
+		"$TealBright_Hover" = "#9df3de"
+		"$PurpleBright" = "#9747FF"
+		"$PurpleBright_Hover" = "#9c50ff"
+		"$RedMid" = "#8E2F00"
+		"$RedMid_Hover" = "#a03500"
+		"$OrangeBright" = "#FF5C00"
+		"$OrangeBright_Hover" = "#ff640d"
+		"$BrownLeather" = "#513100"
+		"$BrownLeather_Hover" = "#663e00"
+		"$Mustard" = "#856000"
+		"$Mustard_Hover" = "#986e00"
+		"$Tan" = "#947A53"
+		"$Tan_Hover" = "#9d8158"
+		"$TanLight" = "#D3B874"
+		"$TanLight_Hover" = "#d5bc7b"
+		"$YellowBright" = "#FFB800"
+		"$YellowBright_Hover" = "#ffbc0d"
+		"$YellowLight" = "#DDB85D"
+		"$YellowLight_Hover" = "#dfbc65"
+		"$Black" = "#000000"
+		"$Blackish" = "#101010"
+		"$GreyDark" = "#252525"
+		"$GreyDark_Hover" = "#303030"
+		"$GreyMid" = "#373737"
+		"$GreyMid_Hover" = "#414141"
+		"$GreyMidLight" = "#666666"
+		"$GreyMidLight_Hover" = "#6e6e6e"
+		"$GreyLight" = "#999999"
+		"$GreyLight_Hover" = "#9e9e9e"
+		"$GreyBright" = "#D9D9D9"
+		"$GreyBright_Hover" = "#dbdbdb"
+		"$White" = "#FFFFFF"
+		"$port_data_background" = "$Black"
+		"$data_type_entity" = "$TealBright"
+		"$data_type_number" = "$YellowLight"
+		"$data_type_bool" = "$RedMid"
+		"$data_type_unknown" = "$GreyLight"
+		"$text" = "#ffffff"
+		"$node_base" = "#373737"
+		"$node_base_hover" = "#474747"
+		"$node_base_accessory" = "#4f4f4f"
+		"$node_base_accessory_hover" = "#5f5f5f"
+		"$control_flow" = "#999999"
+		"$control_flow_hover" = "#ffffff"
+		"$control_flow_accessory" = "#b9b9b9"
+		"$control_flow_accessory_hover" = "#ffffff"
+		"$group" = "$GreyDark"
+		"$value_group" = "$TealMid"
+	}
+	"@global-variables fonts" = 
+	{
+		"$BaseFont" = "Barlow,18,18,20,0,0,0,0,0,Regular"
+		"$BaseFontBold" = "Barlow,-1,18,18,100,0,0,0,0,0,Bold"
+		"$AltFont" = "Courier New,18,-1,5,75,0,0,0,0,0,Bold"
+	}
+}

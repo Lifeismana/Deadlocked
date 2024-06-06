@@ -1,0 +1,3140 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Guardian.Tier1.Fire = 
+	{
+		base = "Base.Weapon"
+		volume = 6.000000
+		vsnd_files = 
+		[
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_01.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_02.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_03.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_04.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_05.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_06.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_07.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_08.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_09.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_10.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_11.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_12.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_13.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_14.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_15.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_16.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_17.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_18.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_19.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_20.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_21.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_22.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_23.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_24.vsnd",
+		]
+		vsnd_duration = 2.272086
+	}
+	Guardian.Tier1.Fire.Friendly = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Guardian.Tier1.Fire.Friendly.Lyr1"
+		soundevent_02 = "Guardian.Tier1.Fire.Friendly.Lyr2"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 0.000000
+	}
+	Guardian.Tier1.Fire.Friendly.Lyr1 = 
+	{
+		base = "Base.NPC.Guardian.3d"
+		volume = 0.000000
+		volume_falloff_min = 600.000000
+		volume_falloff_max = 2345.000000
+		volume_rand_min = -0.400000
+		volume_rand_max = 0.200000
+		pitch_rand_min = -0.002050
+		pitch_rand_max = 0.002000
+		vsnd_files = 
+		[
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_01.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_02.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_03.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_04.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_05.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_06.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_07.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_08.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_09.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_10.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_11.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_12.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_01.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_1_01.vsnd",
+		]
+		vsnd_duration = 2.272086
+	}
+	Guardian.Tier1.Fire.Friendly.Lyr2 = 
+	{
+		base = "Base.NPC.Guardian.3d"
+		volume = 0.000000
+		volume_falloff_min = 600.000000
+		volume_falloff_max = 2222.000000
+		pitch = 0.960000
+		vsnd_files = 
+		[
+			"sounds/guardian/tier1/wpn/wpn_lyr_2_01.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_2_02.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_lyr_2_03.vsnd",
+		]
+		vsnd_duration = 1.446485
+	}
+	Guardian.Tier1.Whizby = 
+	{
+		base = "Base.NPC.Guardian.Wpn.Whizby.2d"
+		pitch_rand_min = -0.005050
+		pitch_rand_max = 0.402500
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.100000
+		volume = -3.000000
+		volume_fade_out = 0.050000
+		pitch = 1.300000
+		vsnd_files = 
+		[
+			"sounds/guardian/tier1/wpn/tier1_whizby_test_01.vsnd",
+			"sounds/guardian/tier1/wpn/tier1_whizby_test_02.vsnd",
+			"sounds/guardian/tier1/wpn/tier1_whizby_test_03.vsnd",
+			"sounds/guardian/tier1/wpn/tier1_whizby_test_04.vsnd",
+			"sounds/guardian/tier1/wpn/tier1_whizby_test_05.vsnd",
+			"sounds/guardian/tier1/wpn/tier1_whizby_test_06.vsnd",
+		]
+		vsnd_duration = 1.496916
+	}
+	Guardian.Tier1.Wpn.Impact = 
+	{
+		type = "citadel_start_multi"
+		soundevent_01 = "Guardian.Tier1.Wpn.Impact.Lyr1"
+		soundevent_02 = "Guardian.Tier1.Wpn.Impact.Lyr2"
+		volume = 1.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Guardian.Tier1.Wpn.Impact.Lyr1 = 
+	{
+		base = "Base.NPC.Guardian.3d"
+		volume = -15.000000
+		pitch_rand_min = -0.102500
+		pitch_rand_max = 0.002000
+		pitch = 0.950000
+		volume_rand_min = -0.300000
+		volume_rand_max = 0.100000
+		volume_fade_out = 0.001000
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 700.000000
+		block_distance_max = 1000.000000
+		vsnd_files = 
+		[
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr1_1.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr1_2.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr1_3.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr1_4.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr1_5.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr1_7.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr1_8.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr1_6.vsnd",
+		]
+		vsnd_duration = 1.000703
+	}
+	Guardian.Tier1.Wpn.Impact.Lyr2 = 
+	{
+		base = "Base.NPC.Guardian.3d"
+		volume = -15.000000
+		pitch = 0.950000
+		pitch_rand_min = -0.102500
+		pitch_rand_max = 0.000500
+		volume_rand_min = -0.300000
+		volume_rand_max = 0.100000
+		volume_fade_out = 0.001000
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 700.000000
+		block_distance_max = 1000.000000
+		vsnd_files = 
+		[
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr2_1.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr2_2.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr2_3.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr2_4.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr2_5.vsnd",
+			"sounds/guardian/tier1/wpn/wpn_impact_lyr2_6.vsnd",
+		]
+		vsnd_duration = 1.541497
+	}
+	Guardian.Tier1.Wpn.Beam.Begin = 
+	{
+		base = "Base.Weapon.NPC.Boss"
+		volume = -3
+		vsnd_files = "sounds/npc/tier1boss/beam_weapon/t1_beam_fire_oneshot_begin.vsnd"
+		vsnd_duration = 4.366871
+	}
+	Guardian.Tier1.Wpn.Beam.End = 
+	{
+		base = "Base.Weapon.NPC.Boss"
+		volume = 0
+		vsnd_files = "sounds/npc/tier1boss/beam_weapon/t1_beam_fire_oneshot_end.vsnd"
+		vsnd_duration = 0.817097
+	}
+	Guardian.Tier1.Wpn.Point.Begin.Lp = 
+	{
+		base = "Base.Weapon.NPC.Boss"
+		volume = -9
+		delay = 0.100000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.500000
+		delay_rand_max = -10.000000
+		vsnd_files = "sounds/npc/tier1boss/beam_weapon/t1_beam_fire_point_begin_lp.vsnd"
+		vsnd_duration = 32.810680
+	}
+	Guardian.Tier1.Wpn.Point.End.Lp = 
+	{
+		base = "Base.Weapon.NPC.Boss"
+		volume = -9
+		volume_falloff_max_team = 500.000000
+		volume_falloff_max_opponent = 500.000000
+		volume_falloff_max_neutral = 500.000000
+		delay = 0.100000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.100000
+		doppler_on = 1.000000
+		doppler_factor = 5.000000
+		delay_rand_max = -10.000000
+		spread_max_value_opponent = 0.250000
+		vsnd_files = "sounds/npc/tier1boss/beam_weapon/t1_beam_fire_point_end_lp.vsnd"
+		vsnd_duration = 27.624491
+	}
+	Guardian.Tier1.Wpn.Point.Closest.Lp = 
+	{
+		base = "Base.Weapon.NPC.Boss.Beam.Close"
+		volume = -3
+		volume_falloff_max_team = 350.000000
+		volume_falloff_max_opponent = 350.000000
+		volume_falloff_max_neutral = 350.000000
+		delay = 0.100000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.100000
+		delay_rand_max = -10.000000
+		vsnd_files = "sounds/npc/tier1boss/beam_weapon/t1_beam_fire_point_closest_lp.vsnd"
+		vsnd_duration = 46.169140
+	}
+	npc_trooper_boss.Killed = 
+	{
+		base = "Base.NPC.Guardian.3d"
+		volume = -3.000000
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 4000.000000
+		vsnd_files = "sounds/npc/tier1boss/death_explode_01.vsnd"
+		vsnd_duration = 9.090930
+	}
+	npc_trooper_boss.Death.Stagger = 
+	{
+		base = "Base.NPC.Guardian.3d"
+		volume = 0.000000
+		volume_falloff_min = 3000.000000
+		volume_falloff_max = 4000.000000
+		vsnd_files = "sounds/npc/tier1boss/death_stagger_01.vsnd"
+		vsnd_duration = 4.994717
+	}
+	npc_trooper_boss.Death.Body.Impact = 
+	{
+		base = "Base.NPC.Guardian.3d"
+		volume = 0.000000
+		volume_falloff_min = 3000.000000
+		volume_falloff_max = 4000.000000
+		vsnd_files = "sounds/npc/tier1boss/death_body_impact_01.vsnd"
+		vsnd_duration = 3.959728
+	}
+	BossTier1.MeleeSwing = 
+	{
+		base = "Base.NPC.Guardian.Melee.3d"
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 2000.000000
+		vsnd_files = "sounds/npc/tier1boss/melee_swing.vsnd"
+		vsnd_duration = 0.616054
+	}
+	BossTier1.MeleeSwingImpactGround = 
+	{
+		base = "Base.NPC.Guardian.Melee.3d"
+		volume_falloff_min = 3000.000000
+		volume_falloff_max = 4000.000000
+		vsnd_files = "sounds/npc/tier1boss/melee_swing_impact_ground_01.vsnd"
+		vsnd_duration = 3.959728
+	}
+	BossTier1.MeleeHit = 
+	{
+		base = "Base.NPC.Guardian.Melee.3d"
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 2000.000000
+		vsnd_files = "sounds/npc/tier1boss/melee_hit.vsnd"
+		vsnd_duration = 0.814150
+	}
+	BossTier1.VO_PlayerRetreat = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	BossTier1.VO_MeleeWarning = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	BossTier1.VO_GunWarning = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	rr_guardian_test_01_under_attack_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_01.vsnd"
+		vsnd_duration = 1.075805
+	}
+	rr_guardian_test_01_under_attack_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_02.vsnd"
+		vsnd_duration = 1.048685
+	}
+	rr_guardian_test_01_under_attack_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_03.vsnd"
+		vsnd_duration = 1.569864
+	}
+	rr_guardian_test_01_under_attack_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_04.vsnd"
+		vsnd_duration = 2.050181
+	}
+	rr_guardian_test_01_under_attack_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_05.vsnd"
+		vsnd_duration = 1.253492
+	}
+	rr_guardian_test_01_under_attack_06 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_06.vsnd"
+		vsnd_duration = 1.214989
+	}
+	rr_guardian_test_01_under_attack_07 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_07.vsnd"
+		vsnd_duration = 1.488821
+	}
+	rr_guardian_test_01_under_attack_08 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_08.vsnd"
+		vsnd_duration = 0.995964
+	}
+	rr_guardian_test_01_under_attack_09 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_09.vsnd"
+		vsnd_duration = 2.317188
+	}
+	rr_guardian_test_01_under_attack_10 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_under_attack_10.vsnd"
+		vsnd_duration = 1.509025
+	}
+	rr_guardian_test_01_destroyed_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_destroyed_01.vsnd"
+		vsnd_duration = 1.030340
+	}
+	rr_guardian_test_01_destroyed_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_destroyed_02.vsnd"
+		vsnd_duration = 1.439048
+	}
+	rr_guardian_test_01_destroyed_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_destroyed_03.vsnd"
+		vsnd_duration = 1.074444
+	}
+	rr_guardian_test_01_destroyed_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_destroyed_04.vsnd"
+		vsnd_duration = 1.001859
+	}
+	rr_guardian_test_01_destroyed_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_destroyed_05.vsnd"
+		vsnd_duration = 1.266780
+	}
+	rr_guardian_test_01_needs_help_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_needs_help_01.vsnd"
+	}
+	rr_guardian_test_01_needs_help_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_needs_help_02.vsnd"
+	}
+	rr_guardian_test_01_needs_help_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_needs_help_03.vsnd"
+	}
+	rr_guardian_test_01_needs_help_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_needs_help_04.vsnd"
+	}
+	rr_guardian_test_01_needs_help_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_needs_help_05.vsnd"
+	}
+	rr_guardian_test_01_thanks_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thanks_01.vsnd"
+		vsnd_duration = 0.885692
+	}
+	rr_guardian_test_01_thanks_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thanks_02.vsnd"
+		vsnd_duration = 1.059252
+	}
+	rr_guardian_test_01_thanks_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thanks_03.vsnd"
+		vsnd_duration = 0.769909
+	}
+	rr_guardian_test_01_thanks_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thanks_04.vsnd"
+		vsnd_duration = 0.793673
+	}
+	rr_guardian_test_01_thanks_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thanks_05.vsnd"
+		vsnd_duration = 1.194807
+	}
+	rr_guardian_test_01_shop_reminder_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_shop_reminder_01.vsnd"
+		vsnd_duration = 1.259206
+	}
+	rr_guardian_test_01_shop_reminder_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_shop_reminder_02.vsnd"
+		vsnd_duration = 1.126440
+	}
+	rr_guardian_test_01_shop_reminder_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_shop_reminder_03.vsnd"
+		vsnd_duration = 1.501927
+	}
+	rr_guardian_test_01_shop_reminder_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_shop_reminder_04.vsnd"
+		vsnd_duration = 1.480431
+	}
+	rr_guardian_test_01_shop_reminder_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_shop_reminder_05.vsnd"
+		vsnd_duration = 1.323832
+	}
+	rr_guardian_test_01_idol_delviery_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_idol_delviery_01.vsnd"
+		vsnd_duration = 1.085737
+	}
+	rr_guardian_test_01_idol_delviery_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_idol_delviery_02.vsnd"
+		vsnd_duration = 1.125782
+	}
+	rr_guardian_test_01_idol_delviery_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_idol_delviery_03.vsnd"
+		vsnd_duration = 1.436961
+	}
+	rr_guardian_test_01_greeting_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_01.vsnd"
+		vsnd_duration = 1.265283
+	}
+	rr_guardian_test_01_greeting_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_02.vsnd"
+		vsnd_duration = 1.341791
+	}
+	rr_guardian_test_01_greeting_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_03.vsnd"
+		vsnd_duration = 0.862404
+	}
+	rr_guardian_test_01_greeting_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_04.vsnd"
+		vsnd_duration = 3.181995
+	}
+	rr_guardian_test_01_greeting_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_05.vsnd"
+		vsnd_duration = 1.032653
+	}
+	rr_guardian_test_01_greeting_06 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_06.vsnd"
+		vsnd_duration = 1.937937
+	}
+	rr_guardian_test_01_greeting_07 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_07.vsnd"
+		vsnd_duration = 2.915669
+	}
+	rr_guardian_test_01_greeting_08 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_08.vsnd"
+		vsnd_duration = 0.885261
+	}
+	rr_guardian_test_01_greeting_09 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_09.vsnd"
+		vsnd_duration = 2.056463
+	}
+	rr_guardian_test_01_greeting_10 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_greeting_10.vsnd"
+		vsnd_duration = 1.412698
+	}
+	rr_guardian_test_01_deploy_shield_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_deploy_shield_01.vsnd"
+		vsnd_duration = 0.639524
+	}
+	rr_guardian_test_01_deploy_shield_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_deploy_shield_02.vsnd"
+		vsnd_duration = 0.879569
+	}
+	rr_guardian_test_01_deploy_shield_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_deploy_shield_03.vsnd"
+		vsnd_duration = 0.526485
+	}
+	rr_guardian_test_01_deploy_shield_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_deploy_shield_04.vsnd"
+		vsnd_duration = 1.331179
+	}
+	rr_guardian_test_01_deploy_shield_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_deploy_shield_05.vsnd"
+		vsnd_duration = 2.700521
+	}
+	rr_guardian_test_01_thank_archer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_archer.vsnd"
+		vsnd_duration = 0.711633
+	}
+	rr_guardian_test_01_thank_astro = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_astro.vsnd"
+		vsnd_duration = 0.795147
+	}
+	rr_guardian_test_01_thank_bebop = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_bebop.vsnd"
+		vsnd_duration = 0.718186
+	}
+	rr_guardian_test_01_thank_bull = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_bull.vsnd"
+		vsnd_duration = 0.709274
+	}
+	rr_guardian_test_01_thank_butcher = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_butcher.vsnd"
+		vsnd_duration = 0.772404
+	}
+	rr_guardian_test_01_thank_chrono = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_chrono.vsnd"
+		vsnd_duration = 0.804354
+	}
+	rr_guardian_test_01_thank_digger = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_digger.vsnd"
+		vsnd_duration = 0.710930
+	}
+	rr_guardian_test_01_thank_engineer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_engineer.vsnd"
+		vsnd_duration = 0.804513
+	}
+	rr_guardian_test_01_thank_ghost = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_ghost.vsnd"
+		vsnd_duration = 0.815873
+	}
+	rr_guardian_test_01_thank_gigawatt = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_gigawatt.vsnd"
+		vsnd_duration = 0.843379
+	}
+	rr_guardian_test_01_thank_haze = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_haze.vsnd"
+		vsnd_duration = 0.793560
+	}
+	rr_guardian_test_01_thank_heavy = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_heavy.vsnd"
+		vsnd_duration = 0.676485
+	}
+	rr_guardian_test_01_thank_hornet = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_hornet.vsnd"
+		vsnd_duration = 0.683537
+	}
+	rr_guardian_test_01_thank_inferno = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_inferno.vsnd"
+		vsnd_duration = 0.842131
+	}
+	rr_guardian_test_01_thank_kali = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_kali.vsnd"
+		vsnd_duration = 0.827778
+	}
+	rr_guardian_test_01_thank_kelvin = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_kelvin.vsnd"
+		vsnd_duration = 0.799705
+	}
+	rr_guardian_test_01_thank_lash = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_lash.vsnd"
+		vsnd_duration = 0.837120
+	}
+	rr_guardian_test_01_thank_nano = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_nano.vsnd"
+		vsnd_duration = 0.916122
+	}
+	rr_guardian_test_01_thank_shiv = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_shiv.vsnd"
+		vsnd_duration = 0.699116
+	}
+	rr_guardian_test_01_thank_sumo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_sumo.vsnd"
+		vsnd_duration = 0.743492
+	}
+	rr_guardian_test_01_thank_tempest = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_tempest.vsnd"
+		vsnd_duration = 0.890612
+	}
+	rr_guardian_test_01_thank_wraith = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_wraith.vsnd"
+		vsnd_duration = 0.720159
+	}
+	rr_guardian_test_01_thank_yamato = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_yamato.vsnd"
+		vsnd_duration = 0.937075
+	}
+	rr_guardian_test_01_thank_zealot = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_zealot.vsnd"
+		vsnd_duration = 0.681905
+	}
+	rr_guardian_test_01_thank_akimbo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_akimbo.vsnd"
+		vsnd_duration = 0.820068
+	}
+	rr_guardian_test_01_thank_ballista = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_ballista.vsnd"
+		vsnd_duration = 0.920907
+	}
+	rr_guardian_test_01_thank_viscous = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_viscous.vsnd"
+		vsnd_duration = 1.068322
+	}
+	rr_guardian_test_01_thank_warden = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_warden.vsnd"
+		vsnd_duration = 0.789342
+	}
+	rr_guardian_test_01_thank_dynamo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_dynamo.vsnd"
+		vsnd_duration = 0.883696
+	}
+	rr_guardian_test_01_thank_atlas = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_atlas.vsnd"
+		vsnd_duration = 0.781859
+	}
+	rr_guardian_test_01_thank_krill = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_krill.vsnd"
+		vsnd_duration = 0.744581
+	}
+	rr_guardian_test_01_thank_orion = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_orion.vsnd"
+		vsnd_duration = 0.841678
+	}
+	rr_guardian_test_01_thank_forge = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_thank_forge.vsnd"
+		vsnd_duration = 0.857732
+	}
+	rr_guardian_test_01_kill_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_kill_01.vsnd"
+		vsnd_duration = 0.627891
+	}
+	rr_guardian_test_01_kill_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_kill_02.vsnd"
+		vsnd_duration = 0.842721
+	}
+	rr_guardian_test_01_kill_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_kill_03.vsnd"
+		vsnd_duration = 1.440952
+	}
+	rr_guardian_test_01_kill_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_kill_04.vsnd"
+		vsnd_duration = 2.537324
+	}
+	rr_guardian_test_01_kill_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_kill_05.vsnd"
+		vsnd_duration = 3.624649
+	}
+	rr_guardian_test_01_congrats_archer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_archer.vsnd"
+		vsnd_duration = 0.962132
+	}
+	rr_guardian_test_01_congrats_astro = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_astro.vsnd"
+		vsnd_duration = 1.035170
+	}
+	rr_guardian_test_01_congrats_bebop = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_bebop.vsnd"
+		vsnd_duration = 0.881406
+	}
+	rr_guardian_test_01_congrats_bull = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_bull.vsnd"
+		vsnd_duration = 0.950839
+	}
+	rr_guardian_test_01_congrats_butcher = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_butcher.vsnd"
+		vsnd_duration = 0.865646
+	}
+	rr_guardian_test_01_congrats_chrono = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_chrono.vsnd"
+		vsnd_duration = 0.918526
+	}
+	rr_guardian_test_01_congrats_digger = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_digger.vsnd"
+		vsnd_duration = 1.040839
+	}
+	rr_guardian_test_01_congrats_engineer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_engineer.vsnd"
+		vsnd_duration = 1.123991
+	}
+	rr_guardian_test_01_congrats_ghost = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_ghost.vsnd"
+		vsnd_duration = 0.971134
+	}
+	rr_guardian_test_01_congrats_gigawatt = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_gigawatt.vsnd"
+		vsnd_duration = 1.053878
+	}
+	rr_guardian_test_01_congrats_haze = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_haze.vsnd"
+		vsnd_duration = 1.121678
+	}
+	rr_guardian_test_01_congrats_heavy = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_heavy.vsnd"
+		vsnd_duration = 1.033832
+	}
+	rr_guardian_test_01_congrats_hornet = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_hornet.vsnd"
+		vsnd_duration = 0.903946
+	}
+	rr_guardian_test_01_congrats_inferno = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_inferno.vsnd"
+		vsnd_duration = 1.140998
+	}
+	rr_guardian_test_01_congrats_kali = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_kali.vsnd"
+		vsnd_duration = 1.165964
+	}
+	rr_guardian_test_01_congrats_kelvin = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_kelvin.vsnd"
+		vsnd_duration = 1.052812
+	}
+	rr_guardian_test_01_congrats_lash = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_lash.vsnd"
+		vsnd_duration = 0.985329
+	}
+	rr_guardian_test_01_congrats_nano = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_nano.vsnd"
+		vsnd_duration = 0.932993
+	}
+	rr_guardian_test_01_congrats_shiv = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_shiv.vsnd"
+		vsnd_duration = 0.996644
+	}
+	rr_guardian_test_01_congrats_sumo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_sumo.vsnd"
+		vsnd_duration = 1.107778
+	}
+	rr_guardian_test_01_congrats_tempest = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_tempest.vsnd"
+		vsnd_duration = 1.098367
+	}
+	rr_guardian_test_01_congrats_wraith = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_wraith.vsnd"
+		vsnd_duration = 0.864286
+	}
+	rr_guardian_test_01_congrats_yamato = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_yamato.vsnd"
+		vsnd_duration = 1.011066
+	}
+	rr_guardian_test_01_congrats_zealot = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_zealot.vsnd"
+		vsnd_duration = 0.931156
+	}
+	rr_guardian_test_01_congrats_akimbo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_akimbo.vsnd"
+		vsnd_duration = 1.019048
+	}
+	rr_guardian_test_01_congrats_ballista = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_ballista.vsnd"
+		vsnd_duration = 1.140794
+	}
+	rr_guardian_test_01_congrats_viscous = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_viscous.vsnd"
+		vsnd_duration = 1.061157
+	}
+	rr_guardian_test_01_congrats_warden = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_warden.vsnd"
+		vsnd_duration = 1.025374
+	}
+	rr_guardian_test_01_congrats_dynamo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_dynamo.vsnd"
+		vsnd_duration = 1.236893
+	}
+	rr_guardian_test_01_congrats_atlas = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_atlas.vsnd"
+		vsnd_duration = 1.078594
+	}
+	rr_guardian_test_01_congrats_krill = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_krill.vsnd"
+		vsnd_duration = 0.942971
+	}
+	rr_guardian_test_01_congrats_orion = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_orion.vsnd"
+		vsnd_duration = 1.040136
+	}
+	rr_guardian_test_01_congrats_forge = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_01/rr_guardian_test_01_congrats_forge.vsnd"
+		vsnd_duration = 1.115261
+	}
+	rr_guardian_test_02_under_attack_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_01.vsnd"
+		vsnd_duration = 1.198322
+	}
+	rr_guardian_test_02_under_attack_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_02.vsnd"
+		vsnd_duration = 1.358322
+	}
+	rr_guardian_test_02_under_attack_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_03.vsnd"
+		vsnd_duration = 1.642404
+	}
+	rr_guardian_test_02_under_attack_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_04.vsnd"
+		vsnd_duration = 2.453197
+	}
+	rr_guardian_test_02_under_attack_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_05.vsnd"
+		vsnd_duration = 1.241678
+	}
+	rr_guardian_test_02_under_attack_06 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_06.vsnd"
+		vsnd_duration = 1.335125
+	}
+	rr_guardian_test_02_under_attack_07 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_07.vsnd"
+		vsnd_duration = 1.696599
+	}
+	rr_guardian_test_02_under_attack_08 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_08.vsnd"
+		vsnd_duration = 1.055442
+	}
+	rr_guardian_test_02_under_attack_09 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_09.vsnd"
+		vsnd_duration = 1.358005
+	}
+	rr_guardian_test_02_under_attack_10 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_under_attack_10.vsnd"
+		vsnd_duration = 2.676599
+	}
+	rr_guardian_test_02_destroyed_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_destroyed_01.vsnd"
+		vsnd_duration = 1.277551
+	}
+	rr_guardian_test_02_destroyed_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_destroyed_02.vsnd"
+		vsnd_duration = 1.530794
+	}
+	rr_guardian_test_02_destroyed_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_destroyed_03.vsnd"
+		vsnd_duration = 1.105578
+	}
+	rr_guardian_test_02_destroyed_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_destroyed_04.vsnd"
+		vsnd_duration = 1.476349
+	}
+	rr_guardian_test_02_destroyed_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_destroyed_05.vsnd"
+		vsnd_duration = 1.613175
+	}
+	rr_guardian_test_02_needs_help_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_needs_help_01.vsnd"
+	}
+	rr_guardian_test_02_needs_help_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_needs_help_02.vsnd"
+	}
+	rr_guardian_test_02_needs_help_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_needs_help_03.vsnd"
+	}
+	rr_guardian_test_02_needs_help_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_needs_help_04.vsnd"
+	}
+	rr_guardian_test_02_needs_help_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_needs_help_05.vsnd"
+	}
+	rr_guardian_test_02_thanks_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thanks_01.vsnd"
+		vsnd_duration = 0.931746
+	}
+	rr_guardian_test_02_thanks_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thanks_02.vsnd"
+		vsnd_duration = 1.305760
+	}
+	rr_guardian_test_02_thanks_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thanks_03.vsnd"
+		vsnd_duration = 0.772494
+	}
+	rr_guardian_test_02_thanks_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thanks_04.vsnd"
+		vsnd_duration = 1.076667
+	}
+	rr_guardian_test_02_thanks_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thanks_05.vsnd"
+		vsnd_duration = 1.880794
+	}
+	rr_guardian_test_02_shop_reminder_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_shop_reminder_01.vsnd"
+		vsnd_duration = 1.301996
+	}
+	rr_guardian_test_02_shop_reminder_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_shop_reminder_02.vsnd"
+		vsnd_duration = 1.336168
+	}
+	rr_guardian_test_02_shop_reminder_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_shop_reminder_03.vsnd"
+		vsnd_duration = 1.644580
+	}
+	rr_guardian_test_02_shop_reminder_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_shop_reminder_04.vsnd"
+		vsnd_duration = 1.520499
+	}
+	rr_guardian_test_02_shop_reminder_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_shop_reminder_05.vsnd"
+		vsnd_duration = 1.411497
+	}
+	rr_guardian_test_02_idol_delviery_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_idol_delviery_01.vsnd"
+		vsnd_duration = 1.112131
+	}
+	rr_guardian_test_02_idol_delviery_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_idol_delviery_02.vsnd"
+		vsnd_duration = 1.221542
+	}
+	rr_guardian_test_02_idol_delviery_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_idol_delviery_03.vsnd"
+		vsnd_duration = 1.442562
+	}
+	rr_guardian_test_02_greeting_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_01.vsnd"
+		vsnd_duration = 1.352131
+	}
+	rr_guardian_test_02_greeting_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_02.vsnd"
+		vsnd_duration = 1.421020
+	}
+	rr_guardian_test_02_greeting_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_03.vsnd"
+		vsnd_duration = 1.623492
+	}
+	rr_guardian_test_02_greeting_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_04.vsnd"
+		vsnd_duration = 2.569456
+	}
+	rr_guardian_test_02_greeting_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_05.vsnd"
+		vsnd_duration = 3.315918
+	}
+	rr_guardian_test_02_greeting_06 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_06.vsnd"
+		vsnd_duration = 1.160816
+	}
+	rr_guardian_test_02_greeting_07 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_07.vsnd"
+		vsnd_duration = 3.527188
+	}
+	rr_guardian_test_02_greeting_08 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_08.vsnd"
+		vsnd_duration = 0.779093
+	}
+	rr_guardian_test_02_greeting_09 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_09.vsnd"
+		vsnd_duration = 3.089955
+	}
+	rr_guardian_test_02_greeting_10 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_greeting_10.vsnd"
+		vsnd_duration = 1.582381
+	}
+	rr_guardian_test_02_deploy_shield_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_deploy_shield_01.vsnd"
+		vsnd_duration = 0.727914
+	}
+	rr_guardian_test_02_deploy_shield_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_deploy_shield_02.vsnd"
+		vsnd_duration = 0.959751
+	}
+	rr_guardian_test_02_deploy_shield_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_deploy_shield_03.vsnd"
+		vsnd_duration = 0.672880
+	}
+	rr_guardian_test_02_deploy_shield_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_deploy_shield_04.vsnd"
+		vsnd_duration = 1.403039
+	}
+	rr_guardian_test_02_deploy_shield_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_deploy_shield_05.vsnd"
+		vsnd_duration = 0.980794
+	}
+	rr_guardian_test_02_thank_archer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_archer.vsnd"
+		vsnd_duration = 0.821565
+	}
+	rr_guardian_test_02_thank_astro = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_astro.vsnd"
+		vsnd_duration = 0.842789
+	}
+	rr_guardian_test_02_thank_bebop = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_bebop.vsnd"
+		vsnd_duration = 0.855420
+	}
+	rr_guardian_test_02_thank_bull = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_bull.vsnd"
+		vsnd_duration = 0.816395
+	}
+	rr_guardian_test_02_thank_butcher = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_butcher.vsnd"
+		vsnd_duration = 0.852744
+	}
+	rr_guardian_test_02_thank_chrono = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_chrono.vsnd"
+		vsnd_duration = 0.984490
+	}
+	rr_guardian_test_02_thank_digger = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_digger.vsnd"
+		vsnd_duration = 0.883855
+	}
+	rr_guardian_test_02_thank_engineer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_engineer.vsnd"
+		vsnd_duration = 0.941905
+	}
+	rr_guardian_test_02_thank_ghost = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_ghost.vsnd"
+		vsnd_duration = 0.997664
+	}
+	rr_guardian_test_02_thank_gigawatt = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_gigawatt.vsnd"
+		vsnd_duration = 1.126961
+	}
+	rr_guardian_test_02_thank_haze = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_haze.vsnd"
+		vsnd_duration = 1.011043
+	}
+	rr_guardian_test_02_thank_heavy = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_heavy.vsnd"
+		vsnd_duration = 0.847800
+	}
+	rr_guardian_test_02_thank_hornet = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_hornet.vsnd"
+		vsnd_duration = 0.861270
+	}
+	rr_guardian_test_02_thank_inferno = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_inferno.vsnd"
+		vsnd_duration = 1.121791
+	}
+	rr_guardian_test_02_thank_kali = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_kali.vsnd"
+		vsnd_duration = 1.010930
+	}
+	rr_guardian_test_02_thank_kelvin = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_kelvin.vsnd"
+		vsnd_duration = 1.116621
+	}
+	rr_guardian_test_02_thank_lash = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_lash.vsnd"
+		vsnd_duration = 0.900567
+	}
+	rr_guardian_test_02_thank_nano = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_nano.vsnd"
+		vsnd_duration = 0.987506
+	}
+	rr_guardian_test_02_thank_shiv = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_shiv.vsnd"
+		vsnd_duration = 0.972676
+	}
+	rr_guardian_test_02_thank_sumo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_sumo.vsnd"
+		vsnd_duration = 1.100998
+	}
+	rr_guardian_test_02_thank_tempest = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_tempest.vsnd"
+		vsnd_duration = 1.015510
+	}
+	rr_guardian_test_02_thank_wraith = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_wraith.vsnd"
+		vsnd_duration = 0.852358
+	}
+	rr_guardian_test_02_thank_yamato = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_yamato.vsnd"
+		vsnd_duration = 1.068027
+	}
+	rr_guardian_test_02_thank_zealot = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_zealot.vsnd"
+		vsnd_duration = 0.831111
+	}
+	rr_guardian_test_02_thank_akimbo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_akimbo.vsnd"
+		vsnd_duration = 0.970454
+	}
+	rr_guardian_test_02_thank_ballista = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_ballista.vsnd"
+		vsnd_duration = 0.964331
+	}
+	rr_guardian_test_02_thank_viscous = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_viscous.vsnd"
+		vsnd_duration = 1.002857
+	}
+	rr_guardian_test_02_thank_warden = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_warden.vsnd"
+		vsnd_duration = 0.838934
+	}
+	rr_guardian_test_02_thank_dynamo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_dynamo.vsnd"
+		vsnd_duration = 1.142041
+	}
+	rr_guardian_test_02_thank_atlas = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_atlas.vsnd"
+		vsnd_duration = 1.013333
+	}
+	rr_guardian_test_02_thank_krill = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_krill.vsnd"
+		vsnd_duration = 0.960748
+	}
+	rr_guardian_test_02_thank_orion = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_orion.vsnd"
+		vsnd_duration = 1.067279
+	}
+	rr_guardian_test_02_thank_forge = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_thank_forge.vsnd"
+		vsnd_duration = 1.049773
+	}
+	rr_guardian_test_02_kill_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_kill_01.vsnd"
+		vsnd_duration = 1.613787
+	}
+	rr_guardian_test_02_kill_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_kill_02.vsnd"
+		vsnd_duration = 1.369751
+	}
+	rr_guardian_test_02_kill_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_kill_03.vsnd"
+		vsnd_duration = 1.370181
+	}
+	rr_guardian_test_02_kill_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_kill_04.vsnd"
+		vsnd_duration = 1.141927
+	}
+	rr_guardian_test_02_kill_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_kill_05.vsnd"
+		vsnd_duration = 2.891655
+	}
+	rr_guardian_test_02_congrats_archer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_archer.vsnd"
+		vsnd_duration = 1.006689
+	}
+	rr_guardian_test_02_congrats_astro = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_astro.vsnd"
+		vsnd_duration = 1.261315
+	}
+	rr_guardian_test_02_congrats_bebop = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_bebop.vsnd"
+		vsnd_duration = 1.565510
+	}
+	rr_guardian_test_02_congrats_bull = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_bull.vsnd"
+		vsnd_duration = 1.163243
+	}
+	rr_guardian_test_02_congrats_butcher = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_butcher.vsnd"
+		vsnd_duration = 1.300544
+	}
+	rr_guardian_test_02_congrats_chrono = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_chrono.vsnd"
+		vsnd_duration = 1.185760
+	}
+	rr_guardian_test_02_congrats_digger = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_digger.vsnd"
+		vsnd_duration = 1.186077
+	}
+	rr_guardian_test_02_congrats_engineer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_engineer.vsnd"
+		vsnd_duration = 1.260000
+	}
+	rr_guardian_test_02_congrats_ghost = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_ghost.vsnd"
+		vsnd_duration = 1.319909
+	}
+	rr_guardian_test_02_congrats_gigawatt = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_gigawatt.vsnd"
+		vsnd_duration = 1.369025
+	}
+	rr_guardian_test_02_congrats_haze = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_haze.vsnd"
+		vsnd_duration = 1.359637
+	}
+	rr_guardian_test_02_congrats_heavy = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_heavy.vsnd"
+		vsnd_duration = 1.254036
+	}
+	rr_guardian_test_02_congrats_hornet = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_hornet.vsnd"
+		vsnd_duration = 1.114195
+	}
+	rr_guardian_test_02_congrats_inferno = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_inferno.vsnd"
+		vsnd_duration = 1.666054
+	}
+	rr_guardian_test_02_congrats_kali = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_kali.vsnd"
+		vsnd_duration = 1.123991
+	}
+	rr_guardian_test_02_congrats_kelvin = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_kelvin.vsnd"
+		vsnd_duration = 1.218413
+	}
+	rr_guardian_test_02_congrats_lash = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_lash.vsnd"
+		vsnd_duration = 1.314694
+	}
+	rr_guardian_test_02_congrats_nano = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_nano.vsnd"
+		vsnd_duration = 1.172313
+	}
+	rr_guardian_test_02_congrats_shiv = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_shiv.vsnd"
+		vsnd_duration = 1.145283
+	}
+	rr_guardian_test_02_congrats_sumo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_sumo.vsnd"
+		vsnd_duration = 1.422177
+	}
+	rr_guardian_test_02_congrats_tempest = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_tempest.vsnd"
+		vsnd_duration = 1.188617
+	}
+	rr_guardian_test_02_congrats_wraith = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_wraith.vsnd"
+		vsnd_duration = 1.044513
+	}
+	rr_guardian_test_02_congrats_yamato = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_yamato.vsnd"
+		vsnd_duration = 1.831905
+	}
+	rr_guardian_test_02_congrats_zealot = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_zealot.vsnd"
+		vsnd_duration = 1.478549
+	}
+	rr_guardian_test_02_congrats_akimbo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_akimbo.vsnd"
+		vsnd_duration = 1.271542
+	}
+	rr_guardian_test_02_congrats_ballista = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_ballista.vsnd"
+		vsnd_duration = 1.377120
+	}
+	rr_guardian_test_02_congrats_viscous = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_viscous.vsnd"
+		vsnd_duration = 1.655873
+	}
+	rr_guardian_test_02_congrats_warden = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_warden.vsnd"
+		vsnd_duration = 1.171769
+	}
+	rr_guardian_test_02_congrats_dynamo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_dynamo.vsnd"
+		vsnd_duration = 1.601361
+	}
+	rr_guardian_test_02_congrats_atlas = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_atlas.vsnd"
+		vsnd_duration = 1.404422
+	}
+	rr_guardian_test_02_congrats_krill = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_krill.vsnd"
+		vsnd_duration = 1.240680
+	}
+	rr_guardian_test_02_congrats_orion = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_orion.vsnd"
+		vsnd_duration = 1.158073
+	}
+	rr_guardian_test_02_congrats_forge = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_02/rr_guardian_test_02_congrats_forge.vsnd"
+		vsnd_duration = 1.639705
+	}
+	rr_guardian_test_03_under_attack_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_01.vsnd"
+		vsnd_duration = 0.928141
+	}
+	rr_guardian_test_03_under_attack_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_02.vsnd"
+		vsnd_duration = 0.783061
+	}
+	rr_guardian_test_03_under_attack_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_03.vsnd"
+		vsnd_duration = 1.255306
+	}
+	rr_guardian_test_03_under_attack_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_04.vsnd"
+		vsnd_duration = 1.966213
+	}
+	rr_guardian_test_03_under_attack_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_05.vsnd"
+		vsnd_duration = 1.017256
+	}
+	rr_guardian_test_03_under_attack_06 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_06.vsnd"
+		vsnd_duration = 1.071383
+	}
+	rr_guardian_test_03_under_attack_07 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_07.vsnd"
+		vsnd_duration = 1.017574
+	}
+	rr_guardian_test_03_under_attack_08 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_08.vsnd"
+		vsnd_duration = 0.869093
+	}
+	rr_guardian_test_03_under_attack_09 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_09.vsnd"
+		vsnd_duration = 0.976712
+	}
+	rr_guardian_test_03_under_attack_10 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_under_attack_10.vsnd"
+		vsnd_duration = 0.816054
+	}
+	rr_guardian_test_03_destroyed_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_destroyed_01.vsnd"
+		vsnd_duration = 1.025034
+	}
+	rr_guardian_test_03_destroyed_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_destroyed_02.vsnd"
+		vsnd_duration = 1.204059
+	}
+	rr_guardian_test_03_destroyed_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_destroyed_03.vsnd"
+		vsnd_duration = 0.768299
+	}
+	rr_guardian_test_03_destroyed_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_destroyed_04.vsnd"
+		vsnd_duration = 0.701927
+	}
+	rr_guardian_test_03_destroyed_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_destroyed_05.vsnd"
+		vsnd_duration = 1.074512
+	}
+	rr_guardian_test_03_needs_help_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_needs_help_01.vsnd"
+	}
+	rr_guardian_test_03_needs_help_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_needs_help_02.vsnd"
+	}
+	rr_guardian_test_03_needs_help_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_needs_help_03.vsnd"
+	}
+	rr_guardian_test_03_needs_help_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_needs_help_04.vsnd"
+	}
+	rr_guardian_test_03_needs_help_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_needs_help_05.vsnd"
+	}
+	rr_guardian_test_03_thanks_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thanks_01.vsnd"
+		vsnd_duration = 0.612313
+	}
+	rr_guardian_test_03_thanks_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thanks_02.vsnd"
+		vsnd_duration = 1.298413
+	}
+	rr_guardian_test_03_thanks_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thanks_03.vsnd"
+		vsnd_duration = 0.613039
+	}
+	rr_guardian_test_03_thanks_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thanks_04.vsnd"
+		vsnd_duration = 1.158821
+	}
+	rr_guardian_test_03_thanks_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thanks_05.vsnd"
+		vsnd_duration = 1.826916
+	}
+	rr_guardian_test_03_shop_reminder_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_shop_reminder_01.vsnd"
+		vsnd_duration = 1.156258
+	}
+	rr_guardian_test_03_shop_reminder_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_shop_reminder_02.vsnd"
+		vsnd_duration = 1.199025
+	}
+	rr_guardian_test_03_shop_reminder_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_shop_reminder_03.vsnd"
+		vsnd_duration = 1.476576
+	}
+	rr_guardian_test_03_shop_reminder_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_shop_reminder_04.vsnd"
+		vsnd_duration = 1.658095
+	}
+	rr_guardian_test_03_shop_reminder_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_shop_reminder_05.vsnd"
+		vsnd_duration = 1.166191
+	}
+	rr_guardian_test_03_idol_delviery_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_idol_delviery_01.vsnd"
+		vsnd_duration = 1.236463
+	}
+	rr_guardian_test_03_idol_delviery_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_idol_delviery_02.vsnd"
+		vsnd_duration = 1.196304
+	}
+	rr_guardian_test_03_idol_delviery_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_idol_delviery_03.vsnd"
+		vsnd_duration = 1.478526
+	}
+	rr_guardian_test_03_greeting_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_01.vsnd"
+		vsnd_duration = 1.029070
+	}
+	rr_guardian_test_03_greeting_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_02.vsnd"
+		vsnd_duration = 1.314807
+	}
+	rr_guardian_test_03_greeting_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_03.vsnd"
+		vsnd_duration = 1.435351
+	}
+	rr_guardian_test_03_greeting_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_04.vsnd"
+		vsnd_duration = 1.503152
+	}
+	rr_guardian_test_03_greeting_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_05.vsnd"
+		vsnd_duration = 2.768027
+	}
+	rr_guardian_test_03_greeting_06 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_06.vsnd"
+		vsnd_duration = 2.129796
+	}
+	rr_guardian_test_03_greeting_07 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_07.vsnd"
+		vsnd_duration = 1.293220
+	}
+	rr_guardian_test_03_greeting_08 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_08.vsnd"
+		vsnd_duration = 1.468005
+	}
+	rr_guardian_test_03_greeting_09 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_09.vsnd"
+		vsnd_duration = 1.259977
+	}
+	rr_guardian_test_03_greeting_10 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_greeting_10.vsnd"
+		vsnd_duration = 1.124376
+	}
+	rr_guardian_test_03_deploy_shield_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_deploy_shield_01.vsnd"
+		vsnd_duration = 0.646100
+	}
+	rr_guardian_test_03_deploy_shield_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_deploy_shield_02.vsnd"
+		vsnd_duration = 0.840567
+	}
+	rr_guardian_test_03_deploy_shield_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_deploy_shield_03.vsnd"
+		vsnd_duration = 0.502177
+	}
+	rr_guardian_test_03_deploy_shield_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_deploy_shield_04.vsnd"
+		vsnd_duration = 1.134240
+	}
+	rr_guardian_test_03_deploy_shield_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_deploy_shield_05.vsnd"
+		vsnd_duration = 1.030862
+	}
+	rr_guardian_test_03_thank_archer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_archer.vsnd"
+		vsnd_duration = 0.590249
+	}
+	rr_guardian_test_03_thank_astro = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_astro.vsnd"
+		vsnd_duration = 0.731202
+	}
+	rr_guardian_test_03_thank_bebop = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_bebop.vsnd"
+		vsnd_duration = 0.709569
+	}
+	rr_guardian_test_03_thank_bull = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_bull.vsnd"
+		vsnd_duration = 0.646077
+	}
+	rr_guardian_test_03_thank_butcher = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_butcher.vsnd"
+		vsnd_duration = 0.618730
+	}
+	rr_guardian_test_03_thank_chrono = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_chrono.vsnd"
+		vsnd_duration = 0.751406
+	}
+	rr_guardian_test_03_thank_digger = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_digger.vsnd"
+		vsnd_duration = 0.617415
+	}
+	rr_guardian_test_03_thank_engineer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_engineer.vsnd"
+		vsnd_duration = 0.812245
+	}
+	rr_guardian_test_03_thank_ghost = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_ghost.vsnd"
+		vsnd_duration = 0.713084
+	}
+	rr_guardian_test_03_thank_gigawatt = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_gigawatt.vsnd"
+		vsnd_duration = 0.752812
+	}
+	rr_guardian_test_03_thank_haze = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_haze.vsnd"
+		vsnd_duration = 0.651202
+	}
+	rr_guardian_test_03_thank_heavy = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_heavy.vsnd"
+		vsnd_duration = 0.539229
+	}
+	rr_guardian_test_03_thank_hornet = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_hornet.vsnd"
+		vsnd_duration = 0.545941
+	}
+	rr_guardian_test_03_thank_inferno = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_inferno.vsnd"
+		vsnd_duration = 0.747732
+	}
+	rr_guardian_test_03_thank_kali = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_kali.vsnd"
+		vsnd_duration = 0.672200
+	}
+	rr_guardian_test_03_thank_kelvin = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_kelvin.vsnd"
+		vsnd_duration = 0.653356
+	}
+	rr_guardian_test_03_thank_lash = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_lash.vsnd"
+		vsnd_duration = 0.684785
+	}
+	rr_guardian_test_03_thank_nano = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_nano.vsnd"
+		vsnd_duration = 0.648118
+	}
+	rr_guardian_test_03_thank_shiv = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_shiv.vsnd"
+		vsnd_duration = 0.654467
+	}
+	rr_guardian_test_03_thank_sumo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_sumo.vsnd"
+		vsnd_duration = 0.705510
+	}
+	rr_guardian_test_03_thank_tempest = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_tempest.vsnd"
+		vsnd_duration = 0.744717
+	}
+	rr_guardian_test_03_thank_wraith = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_wraith.vsnd"
+		vsnd_duration = 0.564694
+	}
+	rr_guardian_test_03_thank_yamato = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_yamato.vsnd"
+		vsnd_duration = 0.734082
+	}
+	rr_guardian_test_03_thank_zealot = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_zealot.vsnd"
+		vsnd_duration = 0.543356
+	}
+	rr_guardian_test_03_thank_akimbo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_akimbo.vsnd"
+		vsnd_duration = 0.716599
+	}
+	rr_guardian_test_03_thank_ballista = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_ballista.vsnd"
+		vsnd_duration = 0.726417
+	}
+	rr_guardian_test_03_thank_viscous = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_viscous.vsnd"
+		vsnd_duration = 0.729002
+	}
+	rr_guardian_test_03_thank_warden = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_warden.vsnd"
+		vsnd_duration = 0.675374
+	}
+	rr_guardian_test_03_thank_dynamo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_dynamo.vsnd"
+		vsnd_duration = 0.771519
+	}
+	rr_guardian_test_03_thank_atlas = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_atlas.vsnd"
+		vsnd_duration = 0.728413
+	}
+	rr_guardian_test_03_thank_krill = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_krill.vsnd"
+		vsnd_duration = 0.680612
+	}
+	rr_guardian_test_03_thank_orion = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_orion.vsnd"
+		vsnd_duration = 0.796417
+	}
+	rr_guardian_test_03_thank_forge = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_thank_forge.vsnd"
+		vsnd_duration = 0.766463
+	}
+	rr_guardian_test_03_kill_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_kill_01.vsnd"
+		vsnd_duration = 0.485510
+	}
+	rr_guardian_test_03_kill_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_kill_02.vsnd"
+		vsnd_duration = 0.665034
+	}
+	rr_guardian_test_03_kill_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_kill_03.vsnd"
+		vsnd_duration = 0.919660
+	}
+	rr_guardian_test_03_kill_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_kill_04.vsnd"
+		vsnd_duration = 0.564399
+	}
+	rr_guardian_test_03_kill_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_kill_05.vsnd"
+		vsnd_duration = 0.567868
+	}
+	rr_guardian_test_03_congrats_archer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_archer.vsnd"
+		vsnd_duration = 0.733197
+	}
+	rr_guardian_test_03_congrats_astro = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_astro.vsnd"
+		vsnd_duration = 0.934082
+	}
+	rr_guardian_test_03_congrats_bebop = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_bebop.vsnd"
+		vsnd_duration = 0.895850
+	}
+	rr_guardian_test_03_congrats_bull = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_bull.vsnd"
+		vsnd_duration = 0.898209
+	}
+	rr_guardian_test_03_congrats_butcher = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_butcher.vsnd"
+		vsnd_duration = 0.820023
+	}
+	rr_guardian_test_03_congrats_chrono = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_chrono.vsnd"
+		vsnd_duration = 0.866803
+	}
+	rr_guardian_test_03_congrats_digger = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_digger.vsnd"
+		vsnd_duration = 0.779093
+	}
+	rr_guardian_test_03_congrats_engineer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_engineer.vsnd"
+		vsnd_duration = 0.864649
+	}
+	rr_guardian_test_03_congrats_ghost = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_ghost.vsnd"
+		vsnd_duration = 0.806485
+	}
+	rr_guardian_test_03_congrats_gigawatt = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_gigawatt.vsnd"
+		vsnd_duration = 0.970295
+	}
+	rr_guardian_test_03_congrats_haze = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_haze.vsnd"
+		vsnd_duration = 0.845669
+	}
+	rr_guardian_test_03_congrats_heavy = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_heavy.vsnd"
+		vsnd_duration = 0.766871
+	}
+	rr_guardian_test_03_congrats_hornet = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_hornet.vsnd"
+		vsnd_duration = 0.727823
+	}
+	rr_guardian_test_03_congrats_inferno = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_inferno.vsnd"
+		vsnd_duration = 0.869388
+	}
+	rr_guardian_test_03_congrats_kali = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_kali.vsnd"
+		vsnd_duration = 0.769637
+	}
+	rr_guardian_test_03_congrats_kelvin = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_kelvin.vsnd"
+		vsnd_duration = 0.796100
+	}
+	rr_guardian_test_03_congrats_lash = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_lash.vsnd"
+		vsnd_duration = 0.827347
+	}
+	rr_guardian_test_03_congrats_nano = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_nano.vsnd"
+		vsnd_duration = 0.799977
+	}
+	rr_guardian_test_03_congrats_shiv = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_shiv.vsnd"
+		vsnd_duration = 0.840975
+	}
+	rr_guardian_test_03_congrats_sumo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_sumo.vsnd"
+		vsnd_duration = 0.976735
+	}
+	rr_guardian_test_03_congrats_tempest = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_tempest.vsnd"
+		vsnd_duration = 0.907755
+	}
+	rr_guardian_test_03_congrats_wraith = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_wraith.vsnd"
+		vsnd_duration = 0.806395
+	}
+	rr_guardian_test_03_congrats_yamato = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_yamato.vsnd"
+		vsnd_duration = 1.072993
+	}
+	rr_guardian_test_03_congrats_zealot = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_zealot.vsnd"
+		vsnd_duration = 0.877211
+	}
+	rr_guardian_test_03_congrats_akimbo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_akimbo.vsnd"
+		vsnd_duration = 0.902562
+	}
+	rr_guardian_test_03_congrats_ballista = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_ballista.vsnd"
+		vsnd_duration = 0.883356
+	}
+	rr_guardian_test_03_congrats_viscous = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_viscous.vsnd"
+		vsnd_duration = 0.865329
+	}
+	rr_guardian_test_03_congrats_warden = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_warden.vsnd"
+		vsnd_duration = 0.889705
+	}
+	rr_guardian_test_03_congrats_dynamo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_dynamo.vsnd"
+		vsnd_duration = 0.892766
+	}
+	rr_guardian_test_03_congrats_atlas = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_atlas.vsnd"
+		vsnd_duration = 0.829297
+	}
+	rr_guardian_test_03_congrats_krill = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_krill.vsnd"
+		vsnd_duration = 0.812381
+	}
+	rr_guardian_test_03_congrats_orion = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_orion.vsnd"
+		vsnd_duration = 0.917823
+	}
+	rr_guardian_test_03_congrats_forge = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_03/rr_guardian_test_03_congrats_forge.vsnd"
+		vsnd_duration = 0.903129
+	}
+	rr_guardian_test_04_under_attack_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_01.vsnd"
+		vsnd_duration = 1.476054
+	}
+	rr_guardian_test_04_under_attack_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_02.vsnd"
+		vsnd_duration = 1.451882
+	}
+	rr_guardian_test_04_under_attack_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_03.vsnd"
+		vsnd_duration = 1.708707
+	}
+	rr_guardian_test_04_under_attack_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_04.vsnd"
+		vsnd_duration = 2.270635
+	}
+	rr_guardian_test_04_under_attack_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		volume = -1.000000
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_05.vsnd"
+		vsnd_duration = 1.476054
+	}
+	rr_guardian_test_04_under_attack_06 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_06.vsnd"
+		vsnd_duration = 1.403288
+	}
+	rr_guardian_test_04_under_attack_07 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_07.vsnd"
+		vsnd_duration = 1.777869
+	}
+	rr_guardian_test_04_under_attack_08 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_08.vsnd"
+		vsnd_duration = 1.160431
+	}
+	rr_guardian_test_04_under_attack_09 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_09.vsnd"
+		vsnd_duration = 1.413333
+	}
+	rr_guardian_test_04_under_attack_10 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_under_attack_10.vsnd"
+		vsnd_duration = 2.154354
+	}
+	rr_guardian_test_04_destroyed_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_destroyed_01.vsnd"
+		vsnd_duration = 1.317778
+	}
+	rr_guardian_test_04_destroyed_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_destroyed_02.vsnd"
+		vsnd_duration = 2.029365
+	}
+	rr_guardian_test_04_destroyed_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_destroyed_03.vsnd"
+		vsnd_duration = 1.218503
+	}
+	rr_guardian_test_04_destroyed_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_destroyed_04.vsnd"
+		vsnd_duration = 1.374694
+	}
+	rr_guardian_test_04_destroyed_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_destroyed_05.vsnd"
+		vsnd_duration = 2.039002
+	}
+	rr_guardian_test_04_needs_help_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_needs_help_01.vsnd"
+	}
+	rr_guardian_test_04_needs_help_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_needs_help_02.vsnd"
+	}
+	rr_guardian_test_04_needs_help_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_needs_help_03.vsnd"
+	}
+	rr_guardian_test_04_needs_help_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_needs_help_04.vsnd"
+	}
+	rr_guardian_test_04_needs_help_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_needs_help_05.vsnd"
+	}
+	rr_guardian_test_04_thanks_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thanks_01.vsnd"
+		vsnd_duration = 0.977551
+	}
+	rr_guardian_test_04_thanks_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thanks_02.vsnd"
+		vsnd_duration = 2.618027
+	}
+	rr_guardian_test_04_thanks_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thanks_03.vsnd"
+		vsnd_duration = 1.191361
+	}
+	rr_guardian_test_04_thanks_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thanks_04.vsnd"
+		vsnd_duration = 1.458844
+	}
+	rr_guardian_test_04_thanks_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thanks_05.vsnd"
+		vsnd_duration = 2.146417
+	}
+	rr_guardian_test_04_shop_reminder_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_shop_reminder_01.vsnd"
+		vsnd_duration = 1.435941
+	}
+	rr_guardian_test_04_shop_reminder_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_shop_reminder_02.vsnd"
+		vsnd_duration = 1.627959
+	}
+	rr_guardian_test_04_shop_reminder_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_shop_reminder_03.vsnd"
+		vsnd_duration = 1.664785
+	}
+	rr_guardian_test_04_shop_reminder_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_shop_reminder_04.vsnd"
+		vsnd_duration = 2.002608
+	}
+	rr_guardian_test_04_shop_reminder_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_shop_reminder_05.vsnd"
+		vsnd_duration = 1.349819
+	}
+	rr_guardian_test_04_idol_delviery_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_idol_delviery_01.vsnd"
+		vsnd_duration = 1.377097
+	}
+	rr_guardian_test_04_idol_delviery_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_idol_delviery_02.vsnd"
+		vsnd_duration = 1.539138
+	}
+	rr_guardian_test_04_idol_delviery_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_idol_delviery_03.vsnd"
+		vsnd_duration = 1.769660
+	}
+	rr_guardian_test_04_greeting_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_01.vsnd"
+		vsnd_duration = 1.546236
+	}
+	rr_guardian_test_04_greeting_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_02.vsnd"
+		vsnd_duration = 4.206122
+	}
+	rr_guardian_test_04_greeting_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_03.vsnd"
+		vsnd_duration = 1.760975
+	}
+	rr_guardian_test_04_greeting_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_04.vsnd"
+		vsnd_duration = 2.726553
+	}
+	rr_guardian_test_04_greeting_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_05.vsnd"
+		vsnd_duration = 3.413764
+	}
+	rr_guardian_test_04_greeting_06 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_06.vsnd"
+		vsnd_duration = 2.216939
+	}
+	rr_guardian_test_04_greeting_07 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_07.vsnd"
+		vsnd_duration = 1.501474
+	}
+	rr_guardian_test_04_greeting_08 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_08.vsnd"
+		vsnd_duration = 1.937075
+	}
+	rr_guardian_test_04_greeting_09 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_09.vsnd"
+		vsnd_duration = 1.490317
+	}
+	rr_guardian_test_04_greeting_10 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_greeting_10.vsnd"
+		vsnd_duration = 1.524580
+	}
+	rr_guardian_test_04_deploy_shield_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_deploy_shield_01.vsnd"
+		vsnd_duration = 0.952698
+	}
+	rr_guardian_test_04_deploy_shield_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_deploy_shield_02.vsnd"
+		vsnd_duration = 1.299682
+	}
+	rr_guardian_test_04_deploy_shield_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_deploy_shield_03.vsnd"
+		vsnd_duration = 0.754286
+	}
+	rr_guardian_test_04_deploy_shield_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_deploy_shield_04.vsnd"
+		vsnd_duration = 1.619547
+	}
+	rr_guardian_test_04_deploy_shield_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_deploy_shield_05.vsnd"
+		vsnd_duration = 0.987098
+	}
+	rr_guardian_test_04_thank_archer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_archer.vsnd"
+		vsnd_duration = 0.777007
+	}
+	rr_guardian_test_04_thank_astro = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_astro.vsnd"
+		vsnd_duration = 0.936553
+	}
+	rr_guardian_test_04_thank_bebop = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_bebop.vsnd"
+		vsnd_duration = 0.873016
+	}
+	rr_guardian_test_04_thank_bull = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_bull.vsnd"
+		vsnd_duration = 0.817574
+	}
+	rr_guardian_test_04_thank_butcher = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_butcher.vsnd"
+		vsnd_duration = 0.868866
+	}
+	rr_guardian_test_04_thank_chrono = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_chrono.vsnd"
+		vsnd_duration = 0.810408
+	}
+	rr_guardian_test_04_thank_digger = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_digger.vsnd"
+		vsnd_duration = 0.851678
+	}
+	rr_guardian_test_04_thank_engineer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_engineer.vsnd"
+		vsnd_duration = 0.829705
+	}
+	rr_guardian_test_04_thank_ghost = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_ghost.vsnd"
+		vsnd_duration = 0.864467
+	}
+	rr_guardian_test_04_thank_gigawatt = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_gigawatt.vsnd"
+		vsnd_duration = 0.848980
+	}
+	rr_guardian_test_04_thank_haze = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_haze.vsnd"
+		vsnd_duration = 0.783424
+	}
+	rr_guardian_test_04_thank_heavy = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_heavy.vsnd"
+		vsnd_duration = 0.766463
+	}
+	rr_guardian_test_04_thank_hornet = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_hornet.vsnd"
+		vsnd_duration = 0.797914
+	}
+	rr_guardian_test_04_thank_inferno = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_inferno.vsnd"
+		vsnd_duration = 0.931451
+	}
+	rr_guardian_test_04_thank_kali = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_kali.vsnd"
+		vsnd_duration = 0.789524
+	}
+	rr_guardian_test_04_thank_kelvin = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_kelvin.vsnd"
+		vsnd_duration = 0.798503
+	}
+	rr_guardian_test_04_thank_lash = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_lash.vsnd"
+		vsnd_duration = 0.690454
+	}
+	rr_guardian_test_04_thank_nano = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_nano.vsnd"
+		vsnd_duration = 0.877460
+	}
+	rr_guardian_test_04_thank_shiv = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_shiv.vsnd"
+		vsnd_duration = 0.743878
+	}
+	rr_guardian_test_04_thank_sumo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_sumo.vsnd"
+		vsnd_duration = 0.882608
+	}
+	rr_guardian_test_04_thank_tempest = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_tempest.vsnd"
+		vsnd_duration = 1.020000
+	}
+	rr_guardian_test_04_thank_wraith = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_wraith.vsnd"
+		vsnd_duration = 0.808617
+	}
+	rr_guardian_test_04_thank_yamato = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_yamato.vsnd"
+		vsnd_duration = 0.842721
+	}
+	rr_guardian_test_04_thank_zealot = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_zealot.vsnd"
+		vsnd_duration = 0.892063
+	}
+	rr_guardian_test_04_thank_akimbo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_akimbo.vsnd"
+		vsnd_duration = 0.863673
+	}
+	rr_guardian_test_04_thank_ballista = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_ballista.vsnd"
+		vsnd_duration = 0.967279
+	}
+	rr_guardian_test_04_thank_viscous = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_viscous.vsnd"
+		vsnd_duration = 0.933265
+	}
+	rr_guardian_test_04_thank_warden = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_warden.vsnd"
+		vsnd_duration = 0.945283
+	}
+	rr_guardian_test_04_thank_dynamo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_dynamo.vsnd"
+		vsnd_duration = 0.969524
+	}
+	rr_guardian_test_04_thank_atlas = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_atlas.vsnd"
+		vsnd_duration = 0.951814
+	}
+	rr_guardian_test_04_thank_krill = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_krill.vsnd"
+		vsnd_duration = 0.910068
+	}
+	rr_guardian_test_04_thank_orion = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_orion.vsnd"
+		vsnd_duration = 0.860476
+	}
+	rr_guardian_test_04_thank_forge = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_thank_forge.vsnd"
+		vsnd_duration = 0.951293
+	}
+	rr_guardian_test_04_kill_01 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_kill_01.vsnd"
+		vsnd_duration = 0.761859
+	}
+	rr_guardian_test_04_kill_02 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_kill_02.vsnd"
+		vsnd_duration = 0.969456
+	}
+	rr_guardian_test_04_kill_03 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_kill_03.vsnd"
+		vsnd_duration = 1.455465
+	}
+	rr_guardian_test_04_kill_04 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_kill_04.vsnd"
+		vsnd_duration = 1.252086
+	}
+	rr_guardian_test_04_kill_05 = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_kill_05.vsnd"
+		vsnd_duration = 3.595737
+	}
+	rr_guardian_test_04_congrats_archer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_archer.vsnd"
+		vsnd_duration = 1.086576
+	}
+	rr_guardian_test_04_congrats_astro = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_astro.vsnd"
+		vsnd_duration = 1.189841
+	}
+	rr_guardian_test_04_congrats_bebop = 
+	{
+		base = "Base.Guardian.VO.3d"
+		volume = -1.000000
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_bebop.vsnd"
+		vsnd_duration = 1.287370
+	}
+	rr_guardian_test_04_congrats_bull = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_bull.vsnd"
+		vsnd_duration = 1.005669
+	}
+	rr_guardian_test_04_congrats_butcher = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_butcher.vsnd"
+		vsnd_duration = 1.215057
+	}
+	rr_guardian_test_04_congrats_chrono = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_chrono.vsnd"
+		vsnd_duration = 1.255465
+	}
+	rr_guardian_test_04_congrats_digger = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_digger.vsnd"
+		vsnd_duration = 1.311247
+	}
+	rr_guardian_test_04_congrats_engineer = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_engineer.vsnd"
+		vsnd_duration = 1.222925
+	}
+	rr_guardian_test_04_congrats_ghost = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_ghost.vsnd"
+		vsnd_duration = 1.196281
+	}
+	rr_guardian_test_04_congrats_gigawatt = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_gigawatt.vsnd"
+		vsnd_duration = 1.264535
+	}
+	rr_guardian_test_04_congrats_haze = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_haze.vsnd"
+		vsnd_duration = 0.990952
+	}
+	rr_guardian_test_04_congrats_heavy = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_heavy.vsnd"
+		vsnd_duration = 0.995669
+	}
+	rr_guardian_test_04_congrats_hornet = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_hornet.vsnd"
+		vsnd_duration = 1.183039
+	}
+	rr_guardian_test_04_congrats_inferno = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_inferno.vsnd"
+		vsnd_duration = 1.163424
+	}
+	rr_guardian_test_04_congrats_kali = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_kali.vsnd"
+		vsnd_duration = 1.114263
+	}
+	rr_guardian_test_04_congrats_kelvin = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_kelvin.vsnd"
+		vsnd_duration = 1.070590
+	}
+	rr_guardian_test_04_congrats_lash = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_lash.vsnd"
+		vsnd_duration = 1.225170
+	}
+	rr_guardian_test_04_congrats_nano = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_nano.vsnd"
+		vsnd_duration = 1.181610
+	}
+	rr_guardian_test_04_congrats_shiv = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_shiv.vsnd"
+		vsnd_duration = 1.151927
+	}
+	rr_guardian_test_04_congrats_sumo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_sumo.vsnd"
+		vsnd_duration = 1.166077
+	}
+	rr_guardian_test_04_congrats_tempest = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_tempest.vsnd"
+		vsnd_duration = 1.363583
+	}
+	rr_guardian_test_04_congrats_wraith = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_wraith.vsnd"
+		vsnd_duration = 1.082449
+	}
+	rr_guardian_test_04_congrats_yamato = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_yamato.vsnd"
+		vsnd_duration = 1.222404
+	}
+	rr_guardian_test_04_congrats_zealot = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_zealot.vsnd"
+		vsnd_duration = 1.296304
+	}
+	rr_guardian_test_04_congrats_akimbo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_akimbo.vsnd"
+		vsnd_duration = 1.226054
+	}
+	rr_guardian_test_04_congrats_ballista = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_ballista.vsnd"
+		vsnd_duration = 1.320612
+	}
+	rr_guardian_test_04_congrats_viscous = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_viscous.vsnd"
+		vsnd_duration = 1.276077
+	}
+	rr_guardian_test_04_congrats_warden = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_warden.vsnd"
+		vsnd_duration = 1.310839
+	}
+	rr_guardian_test_04_congrats_dynamo = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_dynamo.vsnd"
+		vsnd_duration = 1.217664
+	}
+	rr_guardian_test_04_congrats_atlas = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_atlas.vsnd"
+		vsnd_duration = 1.297551
+	}
+	rr_guardian_test_04_congrats_krill = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_krill.vsnd"
+		vsnd_duration = 1.227664
+	}
+	rr_guardian_test_04_congrats_orion = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_orion.vsnd"
+		vsnd_duration = 1.310091
+	}
+	rr_guardian_test_04_congrats_forge = 
+	{
+		base = "Base.Guardian.VO.3d"
+		vsnd_files = "sounds/vo/t1_guardians/guardian_test_04/rr_guardian_test_04_congrats_forge.vsnd"
+		vsnd_duration = 1.357120
+	}
+	Guardian.Tier1.Shield = 
+	{
+		base = "Base.NPC.Guardian.Melee.3d"
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 2000.000000
+		vsnd_files = "sounds/guardian/tier1/t1_shield_lp.vsnd"
+		vsnd_duration = 5.606803
+	}
+}
