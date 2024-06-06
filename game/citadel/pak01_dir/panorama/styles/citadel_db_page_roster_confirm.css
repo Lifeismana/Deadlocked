@@ -78,6 +78,61 @@ CitadelRosterConfirmPage.isHeroTesting
 	z-index: 2;
 }
 
+#HeroRowContainer .rosterCounts
+{
+	margin-right: 60px;
+	horizontal-align: right;
+	flow-children: down;
+	min-width: 260px;
+	visibility: collapse;
+}
+
+.ShowRosterCounts #HeroRowContainer .rosterCounts
+{
+	visibility: visible;
+}
+
+.rosterCountsLine
+{
+	flow-children: right;
+}
+
+.rosterCountsLine Label
+{
+	color: grey;
+}
+
+.rosterCountsLine Label.rosterCountsValue
+{
+	color: white;
+}
+
+.rosterCountsLine Label.rosterCountsValue
+{
+	color: white;
+}
+
+.MultiplePreferredHeroes .rosterCountsLine Label.singular
+{
+	visibility: collapse;
+}
+
+.rosterCountsLine Label.multiple
+{
+	visibility: collapse;
+}
+
+.MultiplePreferredHeroes .rosterCountsLine Label.multiple
+{
+	visibility: visible;
+}
+
+.HasPreferredHero Label.rosterCountsHeroValue
+{
+	color: #ffc533;
+	font-weight: semi-bold;
+}
+
 #RosterHeroes
 {
 	flow-children: right;

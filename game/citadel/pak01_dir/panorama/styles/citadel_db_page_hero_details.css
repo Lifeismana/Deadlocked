@@ -156,11 +156,6 @@ CitadelShopModsList#ShopModsListFavorites
 	padding: 40px;
 }
 
-CitadelHeroDetailsPage Label
-{
-	color: #ffffff;
-}
-
 #LowerDetails
 {
 	width: 100%;
@@ -465,7 +460,12 @@ CitadelAbilityIcon:hover
 	z-index: 12;
 	flow-children: down;
 	horizontal-align: center;
-	margin-top: 40px;
+}
+
+#ButtonRow
+{
+	flow-children: right;
+	horizontal-align: center;
 }
 
 #HeroImage
@@ -721,11 +721,67 @@ CitadelAbilityIcon:hover
 	flow-children: down;
 	background-color: #09090A;
 	width: 650px;
-	padding: 400px 60px 100px 60px;
+	padding: 120px 60px;
 	opacity: 0;
+	color: offWhite;
 	transition-property: opacity;
 	transition-duration: transition_time;
 	overflow: squish scroll;
+}
+
+#BuildsIntroArea
+{
+	flow-children: down;
+}
+
+.titleLabel
+{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.descLabel
+{
+	font-size: 20px;
+	font-weight: medium;
+	margin-bottom: 20px;
+}
+
+.devNote
+{
+	font-size: 16px;
+	opacity: 0.6;
+}
+
+.buildName
+{
+	font-size: 26px;
+	font-weight: bold;
+	margin: 5px 0px;
+}
+
+.buildAuthor
+{
+	font-size: 20px;
+	font-weight: semi-bold;
+	margin: 5px 0px;
+}
+
+#SelectedBuild
+{
+	flow-children: down;
+	border-top: 1px solid #ffffff20;
+	border-bottom: 1px solid #ffffff20;
+	width: 100%;
+	margin: 20px 0px 30px 0px;
+	padding: 20px 0px 30px 0px;
+}
+
+#SelectedBuild Button
+{
+	margin: 0px;
+	margin-top: 10px;
 }
 
 .ShowingBackstory #HeroBackstoryContainer,.ShowingBuilds #HeroFavoritesContainer

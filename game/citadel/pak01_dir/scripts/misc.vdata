@@ -64,10 +64,10 @@
 		m_flPrimaryDropChance = 25.000000
 		m_flSecondaryDropChance = 25.000000
 	}
-	citadel_breakable_prop_vase = 
+	citadel_breakable_prop_drop_powerups = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 120.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 1
 		m_bBreakOnDodgeTouch = true
 		m_bSolidAfterDeath = false
@@ -116,9 +116,181 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 40.000000
+		m_flSecondaryDropChance = 0.000000
 		_base = "citadel_breakable_prop_base"
+		_not_pickable = 2
+	}
+	citadel_breakable_prop_drop_gold = 
+	{
+		_class = "citadel_breakable_prop"
+		m_flRespawnTime = 180.000000
+		m_iHealth = 1
+		m_bBreakOnDodgeTouch = true
+		m_bSolidAfterDeath = false
+		m_bRenderAfterDeath = false
+		m_bDamagedByAbilities = true
+		m_bDamagedByMelee = true
+		m_bDamagedByBullets = true
+		m_vecPrimaryPickups = 
+		[
+			
+			{
+				m_sPickup = "cooldown_reduction_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "health_regen_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "extra_stamina_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "fire_rate_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "move_speed_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "clip_size_pickup"
+				m_flPickupWeight = 1.000000
+			},
+		]
+		m_vecSecondaryPickups = 
+		[
+			
+			{
+				m_sPickup = "small_gold_pickup"
+				m_flPickupWeight = 1.000000
+			},
+		]
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_base"
+		_not_pickable = 2
+	}
+	citadel_breakable_item_container = 
+	{
+		_class = "citadel_breakable_prop"
+		m_flRespawnTime = 180.000000
+		m_iHealth = 1
+		m_bBreakOnDodgeTouch = true
+		m_bSolidAfterDeath = false
+		m_bRenderAfterDeath = false
+		m_bDamagedByAbilities = true
+		m_bDamagedByMelee = true
+		m_bDamagedByBullets = true
+		m_vecPrimaryPickups = 
+		[
+			
+			{
+				m_sPickup = "cooldown_reduction_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "health_regen_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "extra_stamina_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "fire_rate_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "move_speed_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "clip_size_pickup"
+				m_flPickupWeight = 1.000000
+			},
+		]
+		m_vecSecondaryPickups = 
+		[
+			
+			{
+				m_sPickup = "small_gold_pickup"
+				m_flPickupWeight = 1.000000
+			},
+		]
+		m_flPrimaryDropChance = 40.000000
+		m_flSecondaryDropChance = 0.000000
+		_base = "citadel_breakable_prop_drop_powerups"
+		m_hModel = resource_name:"models/props_gameplay/item_container_breakable/item_container.vmdl"
+		m_sBreakSound = soundevent:"glass.break"
+	}
+	citadel_breakable_prop_vase = 
+	{
+		_class = "citadel_breakable_prop"
+		m_flRespawnTime = 180.000000
+		m_iHealth = 1
+		m_bBreakOnDodgeTouch = true
+		m_bSolidAfterDeath = false
+		m_bRenderAfterDeath = false
+		m_bDamagedByAbilities = true
+		m_bDamagedByMelee = true
+		m_bDamagedByBullets = true
+		m_vecPrimaryPickups = 
+		[
+			
+			{
+				m_sPickup = "cooldown_reduction_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "health_regen_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "extra_stamina_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "fire_rate_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "move_speed_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "clip_size_pickup"
+				m_flPickupWeight = 1.000000
+			},
+		]
+		m_vecSecondaryPickups = 
+		[
+			
+			{
+				m_sPickup = "small_gold_pickup"
+				m_flPickupWeight = 1.000000
+			},
+		]
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_hModel = resource_name:"models/props_gameplay/vase_large/vase_large.vmdl"
 		m_sBreakSound = soundevent:"Pottery.Large.Break"
 	}
@@ -174,15 +346,15 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
-		_base = "citadel_breakable_prop_base"
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_hModel = resource_name:"models/test/physics/break_box_multi.vmdl"
 	}
 	citadel_breakable_prop_wooden_crate = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 120
+		m_flRespawnTime = 180.000000
 		m_iHealth = 1
 		m_bBreakOnDodgeTouch = true
 		m_bSolidAfterDeath = false
@@ -231,74 +403,16 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
-		_base = "citadel_breakable_prop_base"
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_hModel = resource_name:"models/props_gameplay/wooden_crate_01.vmdl"
 		m_bIsMantleable = true
-	}
-	citadel_breakable_item_container = 
-	{
-		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 120
-		m_iHealth = 1
-		m_bBreakOnDodgeTouch = true
-		m_bSolidAfterDeath = false
-		m_bRenderAfterDeath = false
-		m_bDamagedByAbilities = true
-		m_bDamagedByMelee = true
-		m_bDamagedByBullets = true
-		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "cooldown_reduction_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "health_regen_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "extra_stamina_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "fire_rate_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "move_speed_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "clip_size_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
-		[
-			
-			{
-				m_sPickup = "small_gold_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
-		_base = "citadel_breakable_prop_base"
-		m_hModel = resource_name:"models/props_gameplay/item_container_breakable/item_container.vmdl"
-		m_sBreakSound = soundevent:"glass.break"
 	}
 	citadel_breakable_lion_statue = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 120.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 1
 		m_bBreakOnDodgeTouch = true
 		m_bSolidAfterDeath = false
@@ -347,17 +461,17 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_hModel = resource_name:"models/props_gameplay/lion_statue_02/lion_statue_02.vmdl"
 		m_sBreakSound = soundevent:"Pottery.Break"
 		m_sDamageSound = soundevent:"Concrete.BulletImpact"
-		_base = "citadel_breakable_prop_base"
 	}
 	citadel_breakable_sake_barrel = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 120.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 1
 		m_bBreakOnDodgeTouch = true
 		m_bSolidAfterDeath = false
@@ -406,17 +520,17 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_hModel = resource_name:"models/props_gameplay/sake_barrel_01/sake_barrel_01.vmdl"
 		m_sBreakSound = soundevent:"Wood.Break"
 		m_bIsMantleable = true
-		_base = "citadel_breakable_prop_base"
 	}
 	citadel_breakable_wooden_crate_02 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 120.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 1
 		m_bBreakOnDodgeTouch = true
 		m_bSolidAfterDeath = false
@@ -465,17 +579,17 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_hModel = resource_name:"models/props_gameplay/wooden_crate_02/wooden_crate_02.vmdl"
 		m_bIsMantleable = true
 		m_sBreakSound = soundevent:"Wood.Break"
-		_base = "citadel_breakable_prop_base"
 	}
 	citadel_breakable_wooden_crate_03 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 120.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 1
 		m_bBreakOnDodgeTouch = true
 		m_bSolidAfterDeath = false
@@ -524,17 +638,17 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_hModel = resource_name:"models/props_gameplay/wooden_crate_03/wooden_crate_03.vmdl"
 		m_sBreakSound = soundevent:"Wood_Crate.Break"
 		m_bIsMantleable = true
-		_base = "citadel_breakable_prop_base"
 	}
 	citadel_breakable_jar_01 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 120.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 1
 		m_bBreakOnDodgeTouch = true
 		m_bSolidAfterDeath = false
@@ -583,9 +697,9 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
-		_base = "citadel_breakable_prop_base"
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_hModel = resource_name:"models/props_gameplay/jar_01/jar_01.vmdl"
 		m_bIsMantleable = true
 		m_sBreakSound = soundevent:"Pottery.Break"
@@ -594,7 +708,7 @@
 	citadel_breakable_prop_car = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 5.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 100000000
 		m_bBreakOnDodgeTouch = false
 		m_bSolidAfterDeath = false
@@ -643,9 +757,9 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
-		_base = "citadel_breakable_prop_base"
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_hModel = resource_name:"models/props_vehicles/car_04_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -657,7 +771,7 @@
 	vehicle_car_01 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 5.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 100000000
 		m_bBreakOnDodgeTouch = false
 		m_bSolidAfterDeath = false
@@ -706,8 +820,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_vehicles/car_01_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -720,7 +834,7 @@
 	vehicle_car_04 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 5.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 100000000
 		m_bBreakOnDodgeTouch = false
 		m_bSolidAfterDeath = false
@@ -769,8 +883,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_vehicles/car_04_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -783,7 +897,7 @@
 	vehicle_car_05 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 5.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 100000000
 		m_bBreakOnDodgeTouch = false
 		m_bSolidAfterDeath = false
@@ -832,8 +946,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_vehicles/car_05_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -846,7 +960,7 @@
 	vehicle_large_truck_01 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 5.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 100000000
 		m_bBreakOnDodgeTouch = false
 		m_bSolidAfterDeath = false
@@ -895,8 +1009,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_vehicles/large_truck_01_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -909,7 +1023,7 @@
 	vehicle_large_truck_02 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 5.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 100000000
 		m_bBreakOnDodgeTouch = false
 		m_bSolidAfterDeath = false
@@ -958,8 +1072,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_vehicles/large_truck_02_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -972,7 +1086,7 @@
 	vehicle_mini_truck_03 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 5.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 100000000
 		m_bBreakOnDodgeTouch = false
 		m_bSolidAfterDeath = false
@@ -1021,8 +1135,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_vehicles/mini_truck_03_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -1035,7 +1149,7 @@
 	vehicle_bike_flying = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 5.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 100000000
 		m_bBreakOnDodgeTouch = false
 		m_bSolidAfterDeath = false
@@ -1084,8 +1198,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_vehicles/bike_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -1098,7 +1212,7 @@
 	vehicle_ground_ship_03 = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 5.000000
+		m_flRespawnTime = 180.000000
 		m_iHealth = 100000000
 		m_bBreakOnDodgeTouch = false
 		m_bSolidAfterDeath = false
@@ -1147,8 +1261,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_vehicles/ground_ship_03_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -1210,8 +1324,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_structures/caldera_base_glass_vert_01_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -1273,8 +1387,8 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
+		m_flPrimaryDropChance = 0.000000
+		m_flSecondaryDropChance = 33.000000
 		_base = "citadel_breakable_prop_car"
 		m_hModel = resource_name:"models/props_structures/caldera_base_glass_horiz_01_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
@@ -1358,9 +1472,9 @@
 		m_sModifer = subclass:
 		{
 			_class = "modifier_breakable_prop_speed_pickup"
-			m_flDuration = 12.000000
+			m_flDuration = 30.000000
 			_my_subclass_name = "small_move_speed"
-			m_flSpeedBoost = 80.000000
+			m_flSpeedBoost = 40.000000
 			m_bIsHidden = false
 			m_eDebuffType = "MODIFIER_DEBUFF_NO"
 			m_strParticleStatusEffect = resource_name:"particles/abilities/kali/kali_speed_boost_buff.vpcf"
@@ -1370,7 +1484,7 @@
 			[
 			]
 			m_strSmallIconCssClass = "move_speed_pickup"
-			m_flSprintBoost = 80.000000
+			m_flSprintBoost = 160.000000
 		}
 	}
 	fire_rate_pickup = 
@@ -1387,8 +1501,8 @@
 		m_sModifer = subclass:
 		{
 			_class = "modifier_breakable_prop_fire_rate_pickup"
-			m_flDuration = 25.000000
-			m_flFireRate = 20.000000
+			m_flDuration = 35.000000
+			m_flFireRate = 15.000000
 			_my_subclass_name = "small_fire_rate"
 			m_eDebuffType = "MODIFIER_DEBUFF_NO"
 			m_strSmallIconCssClass = "fire_rate_pickup"
@@ -1423,10 +1537,10 @@
 		{
 			_class = "modifier_breakable_prop_health_regen_pickup"
 			_my_subclass_name = "small_health_regen"
-			m_flDuration = 15.000000
+			m_flDuration = 25.000000
 			m_eDebuffType = "MODIFIER_DEBUFF_NO"
 			m_flFlatHealthRegen = 0.000000
-			m_flMaxHealthRegenPercent = 0.015000
+			m_flMaxHealthRegenPercent = 0.010000
 			m_strSmallIconCssClass = "health_regen_pickup"
 		}
 	}
@@ -1503,8 +1617,8 @@
 		{
 			_class = "modifier_breakable_prop_extra_stamina"
 			_my_subclass_name = "extra_stamina"
-			m_nExtraStamina = 2.000000
-			m_flDuration = 60.000000
+			m_nExtraStamina = 1
+			m_flDuration = 80.000000
 			m_eDebuffType = "MODIFIER_DEBUFF_NO"
 			m_strSmallIconCssClass = "extra_stamina_pickup"
 		}
@@ -1560,7 +1674,7 @@
 			_class = "modifier_breakable_prop_cooldown_reduction"
 			m_flDuration = 120.000000
 			m_eDebuffType = "MODIFIER_DEBUFF_NO"
-			m_flCooldownReduction = 25.000000
+			m_flCooldownReduction = 20.000000
 			_my_subclass_name = "cooldown_reduction"
 			m_strSmallIconCssClass = "cooldown_reduction_pickup"
 		}
@@ -1588,7 +1702,7 @@
 			_class = "modifier_breakable_prop_clip_size_pickup"
 			_my_subclass_name = "clip_size"
 			m_flClipSize = 65.000000
-			m_nClipCount = 4
+			m_nClipCount = 3
 			m_eDebuffType = "MODIFIER_DEBUFF_NO"
 			m_flDuration = 120.000000
 			m_strSmallIconCssClass = "clip_size_pickup"

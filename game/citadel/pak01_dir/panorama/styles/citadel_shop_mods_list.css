@@ -10,6 +10,36 @@ CitadelShopModsList
 	flow-children: down;
 }
 
+#HeroBuildSelector
+{
+	width: 100%;
+	visibility: collapse;
+	background-color: goldColor;
+	height: 60px;
+	border: 0px solid baseBorder;
+}
+
+.BuildName
+{
+	max-width: 90%;
+	width: fit-children;
+	color: offBlack;
+	font-size: 22px;
+	font-weight: bold;
+	vertical-align: middle;
+	tooltip-position: bottom;
+}
+
+.showingFavorites #HeroBuildSelector
+{
+	visibility: visible;
+}
+
+#CitadelHeroBuildsPage #HeroBuildSelector
+{
+	visibility: collapse;
+}
+
 .showingWeapon CitadelShopModsList
 {
 	background-color: gradient( linear, 10% 0%, 100% 0%, from( #583F21 ), to( courageDarkColor&60 ) );

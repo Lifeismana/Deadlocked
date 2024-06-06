@@ -3,9 +3,16 @@
 .objective
 {
 	width: 100%;
-	height: 50px;
+	height: 75px;
 	margin-top: 10px;
+	border-radius: 8px;
 	visibility: collapse;
+}
+
+.is_tier1.objective
+{
+	width: 70%;
+	horizontal-align: center;
 }
 
 .friend .objective.is_active
@@ -65,37 +72,10 @@
 
 #unit_data
 {
-	background-color: rgba(0, 0, 0, 0.8);
 	width: 100%;
 	height: 100%;
-	flow-children: right;
+	flow-children: down;
 	z-index: 10;
-}
-
-@keyframes 'is_being_attacked'
-{
-	0%
-	{
-		background-color: rgba(0, 0, 0, 0.8);
-	}
-	
-	50%
-	{
-		background-color: colorEnemy ;
-	}
-	
-	100%
-	{
-		background-color: rgba(0, 0, 0, 0.8);
-	}
-	
-}
-
-#player_teams_container .friend .on_damaged #unit_data
-{
-	animation-name: is_being_attacked;
-	animation-iteration-count: infinite;
-	animation-duration: 0.8s;
 }
 
 .objective.is_active
@@ -105,27 +85,29 @@
 
 #name
 {
-	margin-left: 5px;
-	width: 100%;
 	vertical-align: center;
 	text-shadow: 0px 0px 10px 1 black;
 	font-family: "Forevs Demo";
 	text-transform: uppercase;
+	vertical-align: bottom;
 	letter-spacing: 1px;
 	font-weight: bold;
-	margin-bottom: -5px;
 	font-size: 22px;
 	horizontal-align: middle;
 	text-align: center;
 }
 
-#shield_gens_container #name
+#shield_gens_container #name,.is_tier1 #name
 {
 	font-size: 18px;
-	padding: 5px 0px;
 }
 
-#right
+#top
+{
+	horizontal-align: center;
+}
+
+#bottom
 {
 	flow-children: down;
 	height: 100%;
@@ -139,8 +121,9 @@
 	background-size: 25px;
 	background-image: url("s2r://panorama/images/upgrades/mods_armor/revitalizer_psd.vtex");
 	wash-color:rgb(27, 236, 132);
-	margin-left: 3px;
-	margin-top: 3px;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-left: -20px;
 	img-shadow: 0px 0px 2px 3.0 #000000;
 	visibility: collapse;
 }
@@ -155,9 +138,9 @@
 	width: 100%;
 	height: 100%;
 	background-color: black;
-	margin: 3px;
+	margin: 0px 5px 5px 5px;
 	border-radius: 3px;
-	border: 2px solid black;
+	border: 2px solid offBlack&30;
 }
 
 .backdoor_protected #healthbar_background
@@ -240,9 +223,9 @@
 
 .entityImage
 {
-	width: 50px;
+	width: 80px;
 	height: 50px;
-	padding: 3px;
+	margin-left: -40px;
 }
 
 #deadlabel
@@ -250,10 +233,19 @@
 	visibility: collapse;
 	horizontal-align: center;
 	width: 100%;
-	height: 100%;
+	height: 80%;
+	font-family: "Forevs Demo";
+	font-weight: semi-bold;
+	font-size: 26px;
+	vertical-align: bottom;
 	opacity: 0;
-	background-color: rgb(255,26,26);
+	background-color: rgb(186, 29, 29);
 	z-index: 100;
+}
+
+.is_tier1 #deadlabel,.is_shield_generator #deadlabel
+{
+	height: 70%;
 }
 
 @keyframes 'is_dead_pulse'
@@ -447,32 +439,11 @@
 	animation-iteration-count: 1;
 }
 
-.blueLane .entityImage
-{
-	background-color: laneBlueColor;
-}
-
-.yellowLane .entityImage
-{
-	background-color: laneYellowColor;
-}
-
-.orangeLane .entityImage
-{
-	background-color: laneOrangeColor;
-}
-
-.purpleLane .entityImage
-{
-	background-color: lanePurpleColor;
-}
-
 .HealthBars
 {
 	flow-children: right;
 	height: 100%;
 	width: 100%;
-	margin-left: 5px;
 }
 
 #bulletshield_background
@@ -480,7 +451,7 @@
 	width: 100px;
 	height: 100%;
 	background-color: black;
-	margin: 3px;
+	margin: 0px 0px 5px 5px;
 	border-radius: 3px;
 	border: 2px solid black;
 	visibility: collapse;
@@ -522,5 +493,219 @@
 {
 	opacity: 0.5;
 	wash-color: gray;
+}
+
+#boss_background
+{
+	width: 100%;
+	height: 80%;
+	ignore-parent-flow: true;
+	background-color: green;
+	background-color: rgba(0, 0, 0, 0.8);
+	vertical-align: bottom;
+	border-radius: 5px;
+	border: 3px solid #00000030;
+	opacity: 0.5;
+}
+
+.is_tier1 #boss_background,.is_shield_generator #boss_background
+{
+	height: 70%;
+}
+
+.yellowLane #boss_background
+{
+	background-color: rgba(192, 192, 65, 0.8);
+}
+
+.orangeLane #boss_background
+{
+	background-color: rgba(255, 144, 53, 0.8);
+}
+
+.blueLane #boss_background
+{
+	background-color: rgba(65, 122, 192, 0.8);
+}
+
+.purpleLane #boss_background
+{
+	background-color: rgba(105, 65, 192, 0.8);
+}
+
+.is_mid #boss_background
+{
+	background-color: shardColor&50;
+}
+
+#team_1_container .is_shield_generator #boss_background,#team_1_container .is_titan #boss_background,.spec_mode #team_1_container .yellowLane #boss_background,.spec_mode #team_1_container .orangeLane #boss_background,.spec_mode #team_1_container .blueLane #boss_background,.spec_mode #team_1_container .purpleLane #boss_background
+{
+	background-color: team1Color&80;
+}
+
+#team_2_container .is_shield_generator #boss_background,#team_2_container .is_titan #boss_background,.spec_mode #team_2_container .yellowLane #boss_background,.spec_mode #team_2_container .orangeLane #boss_background,.spec_mode #team_2_container .blueLane #boss_background,.spec_mode #team_2_container .purpleLane #boss_background
+{
+	background-color: team2Color&80;
+}
+
+.cant_damage
+{
+	opacity: 0.4;
+}
+
+@keyframes 'laneYellow_is_being_attacked'
+{
+	0%
+	{
+		background-color: rgba(192, 192, 65, 0.8);
+	}
+	
+	50%
+	{
+		background-color: colorEnemy ;
+	}
+	
+	100%
+	{
+		background-color: rgba(192, 192, 65, 0.8);
+	}
+	
+}
+
+@keyframes 'laneOrange_is_being_attacked'
+{
+	0%
+	{
+		background-color: rgba(221, 120, 37, 0.8);
+	}
+	
+	50%
+	{
+		background-color: colorEnemy ;
+	}
+	
+	100%
+	{
+		background-color: rgba(221, 120, 37, 0.8);
+	}
+	
+}
+
+@keyframes 'laneBlue_is_being_attacked'
+{
+	0%
+	{
+		background-color: rgba(65, 122, 192, 0.8);
+	}
+	
+	50%
+	{
+		background-color: colorEnemy ;
+	}
+	
+	100%
+	{
+		background-color: rgba(65, 122, 192, 0.8);
+	}
+	
+}
+
+@keyframes 'lanePurple_is_being_attacked'
+{
+	0%
+	{
+		background-color: rgba(105, 65, 192, 0.8);
+	}
+	
+	50%
+	{
+		background-color: colorEnemy ;
+	}
+	
+	100%
+	{
+		background-color: rgba(105, 65, 192, 0.8);
+	}
+	
+}
+
+@keyframes 'team1_is_being_attacked'
+{
+	0%
+	{
+		background-color: team1Color&80;
+	}
+	
+	50%
+	{
+		background-color: colorEnemy;
+	}
+	
+	100%
+	{
+		background-color: team1Color&80;
+	}
+	
+}
+
+@keyframes 'team2_is_being_attacked'
+{
+	0%
+	{
+		background-color: team2Color&80;
+	}
+	
+	50%
+	{
+		background-color: colorEnemy;
+	}
+	
+	100%
+	{
+		background-color: team2Color&80;
+	}
+	
+}
+
+#player_teams_container #team_1_container.friend .on_damaged #boss_background
+{
+	animation-name: team1_is_being_attacked;
+	animation-iteration-count: infinite;
+	animation-duration: 0.8s;
+}
+
+#player_teams_container #team_2_container.friend .on_damaged #boss_background
+{
+	animation-name: team2_is_being_attacked;
+	animation-iteration-count: infinite;
+	animation-duration: 0.8s;
+}
+
+#player_teams_container #team_1_container.friend .yellowLane.on_damaged #boss_background,#player_teams_container #team_2_container.friend .yellowLane.on_damaged #boss_background
+{
+	animation-name: laneYellow_is_being_attacked;
+	animation-iteration-count: infinite;
+	animation-duration: 0.8s;
+}
+
+#player_teams_container #team_1_container.friend .orangeLane.on_damaged #boss_background,#player_teams_container #team_2_container.friend .orangeLane.on_damaged #boss_background
+{
+	animation-name: laneOrange_is_being_attacked;
+	animation-iteration-count: infinite;
+	animation-duration: 0.8s;
+}
+
+#player_teams_container #team_1_container.friend .blueLane.on_damaged #boss_background,#player_teams_container #team_2_container.friend .blueLane.on_damaged #boss_background
+{
+	animation-name: laneBlue_is_being_attacked;
+	animation-iteration-count: infinite;
+	animation-duration: 0.8s;
+}
+
+#player_teams_container #team_1_container.friend .purpleLane.on_damaged #boss_background,#player_teams_container #team_2_container.friend .purpleLane.on_damaged #boss_background
+{
+	animation-name: lanePurple_is_being_attacked;
+	animation-iteration-count: infinite;
+	animation-duration: 0.8s;
 }
 

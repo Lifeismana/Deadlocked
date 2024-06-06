@@ -215,8 +215,15 @@
 		pitch = 1.200000
 		pitch_rand_min = 0.130000
 		pitch_rand_max = -0.120000
-		vsnd_files = "sounds/abilities/synth/a1_plasma_flux/fire.vsnd"
-		vsnd_duration = 2.513688
+		vsnd_files = 
+		[
+			"sounds/abilities/pocket/pocket_a1_barrage_cast_01.vsnd",
+			"sounds/abilities/pocket/pocket_a1_barrage_cast_02.vsnd",
+			"sounds/abilities/pocket/pocket_a1_barrage_cast_03.vsnd",
+			"sounds/abilities/pocket/pocket_a1_barrage_cast_04.vsnd",
+			"sounds/abilities/pocket/pocket_a1_barrage_cast_05.vsnd",
+			"sounds/abilities/pocket/pocket_a1_barrage_cast_06.vsnd",
+		]
 	}
 	Synth.Barrage.Explosion.3d = 
 	{
@@ -232,71 +239,15 @@
 		volume_fade_out = 0.100000
 		volume_fade_in = 0.000500
 	}
-	Synth.Pulse.Cast = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "MoKrill.Scorn.Cast.Dive"
-		soundevent_02 = "MoKrill.Scorn.Cast.Flutter"
-		soundevent_03 = "MoKrill.Scorn.Cast.Liquid"
-		volume = 0.400000
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-	}
-	Synth.Pulse.Cast.Dive = 
-	{
-		base = "Base.Ability"
-		pitch_rand_min = -0.020000
-		pitch_rand_max = 0.030000
-		volume = 0.000000
-		volume_rand_min = -0.030000
-		volume_rand_max = 0.020000
-		vsnd_files = "sounds/abilities/mokrill/a1_scorn/cast_dive.vsnd"
-		vsnd_duration = 2.682125
-	}
-	Synth.Pulse.Cast.Flutter = 
-	{
-		base = "Base.Ability"
-		pitch_rand_min = -0.030000
-		pitch_rand_max = 0.040000
-		volume = -9.000000
-		pitch = 0.700000
-		volume_rand_min = -0.030000
-		volume_rand_max = 0.020000
-		vsnd_files = "sounds/abilities/dynamo/a4_singularity/impact.vsnd"
-		vsnd_duration = 3.559542
-	}
-	Synth.Pulse.Cast.Liquid = 
-	{
-		base = "Base.Ability"
-		pitch_rand_min = -0.030000
-		pitch_rand_max = 0.040000
-		volume = -9.000000
-		pitch = 1.100000
-		volume_rand_min = -0.300000
-		volume_rand_max = 0.020000
-		vsnd_files = "sounds/abilities/mokrill/a1_scorn/cast_liquid.vsnd"
-		vsnd_duration = 3.151687
-	}
 	Synth.Pulse.Lp = 
 	{
 		base = "Base.Ability"
-		volume = -6.000000
-		volume_fade_in = 1.200000
+		volume = 2.000000
+		volume_fade_in = 2.000000
 		volume_fade_out = 0.300000
-		pitch = 1.500000
-		vsnd_files = "sounds/abilities/dynamo/a4_singularity/lp.vsnd"
-		vsnd_duration = 5.040750
-	}
-	Synth.Pulse.Explode = 
-	{
-		base = "Base.Ability"
-		volume_falloff_min = 1.000000
-		volume = -5.000000
-		pitch = 1.200000
-		volume_falloff_max = 4444.000000
-		vsnd_files = "sounds/abilities/synth/a2_grasp/cast.vsnd"
-		vsnd_duration = 2.524833
+		pitch = 1.000000
+		delay = 0.500000
+		vsnd_files = "sounds/abilities/pocket/pocket_a3_pulse_delay.vsnd"
 	}
 	Synth.A2.Grasp.Cast = 
 	{
@@ -373,8 +324,7 @@
 		pitch = 1.000000
 		volume = 1.000000
 		delay = 0.100000
-		vsnd_files = "sounds/abilities/pocket/pocket_affliction_full.vsnd"
-		vsnd_duration = 4.175034
+		vsnd_files = "sounds/abilities/pocket/pocket_a4_affliction_full.vsnd"
 	}
 	Synth.Affliction.Cast.Impact = 
 	{
@@ -383,54 +333,6 @@
 		volume = 1.000000
 		vsnd_files = "sounds/abilities/synth/affliction/cast_05_impact.vsnd"
 		vsnd_duration = 1.889792
-	}
-	Synth.A4.Cosmic.Box.Escalation = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Synth.A4.Cosmic.Box.Escalation.Anvil"
-		soundevent_02 = "Synth.A4.Cosmic.Box.Escalation.Main"
-		soundevent_03 = "Synth.A4.Cosmic.Box.Cast.Steam"
-		volume = 1.000000
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-	}
-	Synth.A4.Cosmic.Box.Escalation.Anvil = 
-	{
-		base = "Base.Ability.Ult"
-		volume_falloff_min = 1.000000
-		volume_falloff_max = 1298.000000
-		block_distance_max = 2099.000000
-		volume = 0.000000
-		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/escalation_anvil.vsnd"
-		vsnd_duration = 8.439229
-	}
-	Synth.A4.Cosmic.Box.Escalation.Main = 
-	{
-		base = "Base.Ability.Ult"
-		volume_falloff_min = 1.000000
-		volume_falloff_max = 1288.000000
-		volume = -12.000000
-		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/escalation.vsnd"
-		vsnd_duration = 8.733197
-	}
-	Synth.A4.Cosmic.Box.Escalation.Alarm = 
-	{
-		base = "Base.Ability.Ult"
-		volume_falloff_min = 1.000000
-		volume_falloff_max = 1088.000000
-		volume = 0.000000
-		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/escalation_alarm_mono.vsnd"
-		vsnd_duration = 6.047415
-	}
-	Synth.A4.Cosmic.Box.Escalation.Burning.Mono = 
-	{
-		base = "Base.Ability.Ult"
-		volume_falloff_min = 1.000000
-		volume_falloff_max = 700.000000
-		volume = 0.000000
-		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/escalation_mono.vsnd"
-		vsnd_duration = 8.264167
 	}
 	Synth.A4.Cosmic.Box.Exp = 
 	{
@@ -637,6 +539,7 @@
 		spread_max = 250.000000
 		spread_min_value = 0.831492
 		vsnd_files = "sounds/abilities/pocket/pocket_affliction_cast.vsnd"
+		vsnd_duration = 4.175034
 	}
 	Synth.Affliction.Debuff_Lp = 
 	{
@@ -644,7 +547,81 @@
 		pitch = 1.000000
 		volume = -15.000000
 		delay = 0.100000
-		vsnd_files = "sounds/abilities/pocket/pocket_affliction_debuff.vsnd"
-		vsnd_duration = 11.909252
+		vsnd_files = "sounds/abilities/pocket/pocket_a4_affliction_debuff.vsnd"
+	}
+	Pocket.Footstep = 
+	{
+		base = "Base.Footsteps"
+		volume = -9.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/pocket/pocket_footstep_01.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_02.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_03.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_04.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_05.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_06.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_07.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_08.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_09.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_10.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_11.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_12.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_13.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_14.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_15.vsnd",
+		]
+	}
+	Pocket.Footstep.Multi = 
+	{
+		type = "citadel_start_multi"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		soundevent_01 = "Pocket.Footstep"
+		soundevent_02 = "Pocket.Footstep.Frog"
+	}
+	Pocket.Footstep.Frog = 
+	{
+		base = "Base.Footsteps"
+		volume = -9.000000
+		block_rand = 0.940000
+		block_match_entity = 1.000000
+		block_match_this_event = true
+		volume_offset_player = -6.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/pocket/pocket_footstep_frog_01.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_frog_02.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_frog_03.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_frog_04.vsnd",
+			"sounds/player/footsteps/pocket/pocket_footstep_frog_05.vsnd",
+		]
+	}
+	Synth.Barrage.Proj.Impact = 
+	{
+		base = "Base.Ability"
+		volume = -5.000000
+		volume_falloff_min = 10.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/pocket/pocket_a1_barrage_impact_01.vsnd",
+			"sounds/abilities/pocket/pocket_a1_barrage_impact_02.vsnd",
+			"sounds/abilities/pocket/pocket_a1_barrage_impact_03.vsnd",
+			"sounds/abilities/pocket/pocket_a1_barrage_impact_04.vsnd",
+		]
+	}
+	Pocket.Pulse.Cast = 
+	{
+		base = "Base.Ability"
+		volume_falloff_min = 1.000000
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/pocket/pocket_a3_pulse_cast_start.vsnd"
+	}
+	Pocket.Pulse.Explode = 
+	{
+		base = "Base.Ability"
+		volume_falloff_min = 1.000000
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/pocket/pocket_a3_pulse_explode.vsnd"
 	}
 }

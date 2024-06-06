@@ -16,11 +16,8 @@
 				<Label id="StatusText" class="topStatusText" text="{s:status_text}" />
 			</Panel>
 		</Panel>
-		<Panel id="MutedPanel" class="LeftRightFlow">
+		<Panel id="MutedPanel" class="LeftRightFlow" onmouseover="UIShowTextTooltip( Game Audio Muted );" onmouseout="UIHideTextTooltip()">
 			<Panel class="MutedIcon" />
-			<Panel class="LeftRightFlow">
-				<Label class="GameMutedLabel" text="#citadel_game_audio_muted" />
-			</Panel>
 		</Panel>
 	</CitadelOverlay>
 </root>

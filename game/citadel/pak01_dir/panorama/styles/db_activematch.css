@@ -322,7 +322,7 @@
 .FeaturedMatch .team_list CitadelAvatarImage
 {
 	width: 33px;
-	height: 26px;
+	height: 33px;
 	horizontal-align: right;
 	vertical-align: bottom;
 	box-shadow: 0px 0px 20px #00000090;
@@ -391,12 +391,17 @@
 	border-radius: 0px 0px 3px 3px;
 }
 
+.FeaturedMatch #FriendInMatch
+{
+	border-radius: 0px;
+}
+
 .HasFriend #FriendInMatch
 {
 	visibility: visible;
 }
 
-#SteamFriendIcon
+.SteamFriendIcon
 {
 	width: 20px;
 	height: 20px;
@@ -405,6 +410,11 @@
 	margin: 0px 5px;
 	opacity: 0.8;
 	vertical-align: middle;
+}
+
+.FeaturedMatch #FriendInMatch
+{
+	border-radius: 0px;
 }
 
 #live_now

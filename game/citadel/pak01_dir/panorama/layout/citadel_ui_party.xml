@@ -31,7 +31,10 @@
 			<Panel id="NotInPartyGroup">
 				<Panel id="NavToProfile" class="PlayerInfo" onactivate="CitadelShowProfilePage(); CitadelPlayUISound( EMainMenuActivate )" hittest="true">
 					<CitadelAvatarImage id="SelfImage" />
-					<CitadelUserName id="SelfName" />
+					<Panel id="NameAndLink">
+						<CitadelUserName id="SelfName" />
+						<Label class="viewProfile" text="View Match History" />
+					</Panel>
 				</Panel>
 				<Panel class="ButtonCol">
 					<Button id="Social" onactivate="CitadelShowSocialPage(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">

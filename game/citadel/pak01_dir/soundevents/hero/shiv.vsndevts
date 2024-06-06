@@ -4,69 +4,33 @@
 	{
 		base = "Base.Weapon"
 		preload_vsnds = true
+		volume = 2.000000
+		recency_bias_max_scale = 0.750000
 		vsnd_files = 
 		[
-			"sounds/weapons/shiv/fire/01.vsnd",
-			"sounds/weapons/shiv/fire/02.vsnd",
-			"sounds/weapons/shiv/fire/03.vsnd",
-			"sounds/weapons/shiv/fire/04.vsnd",
-			"sounds/weapons/shiv/fire/05.vsnd",
-			"sounds/weapons/shiv/fire/06.vsnd",
-			"sounds/weapons/shiv/fire/07.vsnd",
-			"sounds/weapons/shiv/fire/08.vsnd",
-			"sounds/weapons/shiv/fire/09.vsnd",
-			"sounds/weapons/shiv/fire/10.vsnd",
-			"sounds/weapons/shiv/fire/11.vsnd",
-			"sounds/weapons/shiv/fire/12.vsnd",
-			"sounds/weapons/shiv/fire/13.vsnd",
-			"sounds/weapons/shiv/fire/14.vsnd",
-			"sounds/weapons/shiv/fire/15.vsnd",
-			"sounds/weapons/shiv/fire/16.vsnd",
-			"sounds/weapons/shiv/fire/17.vsnd",
-			"sounds/weapons/shiv/fire/18.vsnd",
-			"sounds/weapons/shiv/fire/19.vsnd",
-			"sounds/weapons/shiv/fire/20.vsnd",
-			"sounds/weapons/shiv/fire/21.vsnd",
-			"sounds/weapons/shiv/fire/22.vsnd",
-			"sounds/weapons/shiv/fire/23.vsnd",
-			"sounds/weapons/shiv/fire/24.vsnd",
-			"sounds/weapons/shiv/fire/25.vsnd",
-			"sounds/weapons/shiv/fire/26.vsnd",
-			"sounds/weapons/shiv/fire/27.vsnd",
-			"sounds/weapons/shiv/fire/28.vsnd",
-			"sounds/weapons/shiv/fire/29.vsnd",
-			"sounds/weapons/shiv/fire/30.vsnd",
-			"sounds/weapons/shiv/fire/31.vsnd",
-			"sounds/weapons/shiv/fire/32.vsnd",
-			"sounds/weapons/shiv/fire/33.vsnd",
-			"sounds/weapons/shiv/fire/34.vsnd",
-			"sounds/weapons/shiv/fire/35.vsnd",
-			"sounds/weapons/shiv/fire/36.vsnd",
-			"sounds/weapons/shiv/fire/37.vsnd",
-			"sounds/weapons/shiv/fire/38.vsnd",
-			"sounds/weapons/shiv/fire/39.vsnd",
-			"sounds/weapons/shiv/fire/40.vsnd",
-			"sounds/weapons/shiv/fire/41.vsnd",
-			"sounds/weapons/shiv/fire/42.vsnd",
-			"sounds/weapons/shiv/fire/43.vsnd",
-			"sounds/weapons/shiv/fire/44.vsnd",
-			"sounds/weapons/shiv/fire/45.vsnd",
-			"sounds/weapons/shiv/fire/46.vsnd",
-			"sounds/weapons/shiv/fire/47.vsnd",
-			"sounds/weapons/shiv/fire/48.vsnd",
-			"sounds/weapons/shiv/fire/49.vsnd",
-			"sounds/weapons/shiv/fire/50.vsnd",
-			"sounds/weapons/shiv/fire/51.vsnd",
-			"sounds/weapons/shiv/fire/52.vsnd",
-			"sounds/weapons/shiv/fire/53.vsnd",
-			"sounds/weapons/shiv/fire/54.vsnd",
-			"sounds/weapons/shiv/fire/55.vsnd",
-			"sounds/weapons/shiv/fire/56.vsnd",
-			"sounds/weapons/shiv/fire/57.vsnd",
-			"sounds/weapons/shiv/fire/58.vsnd",
-			"sounds/weapons/shiv/fire/59.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_01.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_02.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_03.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_04.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_05.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_06.vsnd",
 		]
-		vsnd_duration = 5.412896
+	}
+	Shiv.Wpn.Alt.Fire = 
+	{
+		base = "Base.Weapon"
+		preload_vsnds = true
+		volume = 2.000000
+		recency_bias_max_scale = 0.750000
+		vsnd_files = 
+		[
+			"sounds/weapons/shiv/shiv_weapon_fire_alt_01.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_alt_02.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_alt_03.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_alt_04.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_alt_05.vsnd",
+			"sounds/weapons/shiv/shiv_weapon_fire_alt_06.vsnd",
+		]
 	}
 	Shiv.Wpn.Zoom.In = 
 	{
@@ -659,43 +623,26 @@
 	Shiv.Footstep = 
 	{
 		base = "Base.Footsteps"
+		volume = 0.000000
+		volume_offset_opponent = 3.000000
 		vsnd_files = 
 		[
-			"sounds/player/footsteps/hero_self/06.vsnd",
-			"sounds/player/footsteps/hero_self/07.vsnd",
-			"sounds/player/footsteps/hero_self/08.vsnd",
-			"sounds/player/footsteps/hero_self/09.vsnd",
-			"sounds/player/footsteps/hero_self/01.vsnd",
-			"sounds/player/footsteps/hero_self/02.vsnd",
-			"sounds/player/footsteps/hero_self/03.vsnd",
-			"sounds/player/footsteps/hero_self/04.vsnd",
-			"sounds/player/footsteps/hero_self/05.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_01.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_02.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_03.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_04.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_05.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_06.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_07.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_08.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_09.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_10.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_11.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_12.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_13.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_14.vsnd",
+			"sounds/player/footsteps/shiv/shiv_footstep_15.vsnd",
 		]
-		vsnd_files_override_team = 
-		[
-			"sounds/player/footsteps/hero_team/01.vsnd",
-			"sounds/player/footsteps/hero_team/02.vsnd",
-			"sounds/player/footsteps/hero_team/03.vsnd",
-			"sounds/player/footsteps/hero_team/04.vsnd",
-			"sounds/player/footsteps/hero_team/05.vsnd",
-			"sounds/player/footsteps/hero_team/06.vsnd",
-			"sounds/player/footsteps/hero_team/07.vsnd",
-			"sounds/player/footsteps/hero_team/08.vsnd",
-			"sounds/player/footsteps/hero_team/09.vsnd",
-		]
-		vsnd_files_override_opponent = 
-		[
-			"sounds/player/footsteps/hero_enemy/01.vsnd",
-			"sounds/player/footsteps/hero_enemy/02.vsnd",
-			"sounds/player/footsteps/hero_enemy/03.vsnd",
-			"sounds/player/footsteps/hero_enemy/04.vsnd",
-			"sounds/player/footsteps/hero_enemy/05.vsnd",
-			"sounds/player/footsteps/hero_enemy/06.vsnd",
-			"sounds/player/footsteps/hero_enemy/07.vsnd",
-			"sounds/player/footsteps/hero_enemy/08.vsnd",
-			"sounds/player/footsteps/hero_enemy/09.vsnd",
-		]
-		vsnd_duration = 1.141633
 	}
 	Shiv.Transform.Footstep = 
 	{

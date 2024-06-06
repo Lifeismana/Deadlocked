@@ -1434,13 +1434,17 @@ PopupManager
 	color: silvered;
 	width: 100%;
 	flow-children: down;
-	padding: 20px;
 	z-index: 5;
 }
 
 .IsShowingDashboardPage #PlaytestContainer
 {
 	visibility: visible;
+}
+
+.connectedToGame #PlaytestContainer
+{
+	visibility: collapse;
 }
 
 .matchmaker_header
@@ -1485,6 +1489,23 @@ PopupManager
 	visibility: visible;
 }
 
+#playtest_status
+{
+	flow-children: right;
+	padding: 15px;
+	background-color: black;
+}
+
+.status_label
+{
+	vertical-align: middle;
+	margin-right: 10px;
+	text-transform: uppercase;
+	font-weight: semi-bold;
+	color: silvered&90;
+	font-size: 16px;
+}
+
 #playtest_schedule
 {
 	visibility: collapse;
@@ -1494,7 +1515,7 @@ PopupManager
 	border-bottom: 2px solid white;
 }
 
-.HasPlaytestSchedule #playtest_schedule
+.HasPlaytestSchedule #new_playtest_schedule
 {
 	visibility: visible;
 }
@@ -1509,6 +1530,59 @@ PopupManager
 {
 	font-size: 18px;
 	color: #888888;
+}
+
+#new_playtest_schedule
+{
+	flow-children: down;
+	width: 100%;
+	padding: 10px 15px 20px 15px;
+	visibility: collapse;
+}
+
+#playtest_schedule_info
+{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+#playtest_schedule_info Label
+{
+	vertical-align: middle;
+	margin-right: 10px;
+	text-transform: uppercase;
+	font-weight: semi-bold;
+	color: silvered&90;
+	font-size: 16px;
+}
+
+.region_label
+{
+	horizontal-align: right;
+}
+
+#playtest_schedule_times
+{
+	flow-children: right;
+	width: 100%;
+}
+
+.playtest_days
+{
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.playtest_time
+{
+	opacity: 0.7;
+}
+
+.playtest_date_box
+{
+	width: 49%;
+	flow-children: down;
 }
 
 .match_queue_text
@@ -1660,7 +1734,13 @@ PopupManager
 {
 	width: 100%;
 	height: 100%;
+	background-image: url("s2r://panorama/images/main_menu/profile_backer.vsvg");
 	background-color: gradient( linear, 100% 0%, 0% 0%, from( #000000 ), to( #00000000 ) );
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	wash-color: offWhite;
+	opacity: 0.04;
 }
 
 #party
@@ -2296,7 +2376,6 @@ Label.playModeDesc
 {
 	flow-children: down;
 	font-weight: semi-bold;
-	visibility: collapse;
 }
 
 #playtest_active
@@ -2327,8 +2406,9 @@ Label.playModeDesc
 
 .playtest_upcoming_time
 {
-	font-size: 25px;
+	font-size: 20px;
 	color: offWhite;
+	text-align: left;
 }
 
 .playtest_message
@@ -2338,8 +2418,17 @@ Label.playModeDesc
 
 .playtest_active_time
 {
-	font-size: 22px;
+	font-size: 20px;
+	font-weight: bold;
+	color: brandGreen;
 	visibility: collapse;
+}
+
+.unranked_mm_paused
+{
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .in_scheduled_playtest .playtest_active_time
@@ -2449,9 +2538,14 @@ Label.playModeDesc
 {
 	vertical-align: top;
 	horizontal-align: right;
-	width: 470px;
-	height: 130px;
+	width: 340px;
+	height: 160px;
 	ignore-parent-flow: true;
+}
+
+.in_party #PartyContainer
+{
+	width: 470px;
 }
 
 .PartyMemberListRow

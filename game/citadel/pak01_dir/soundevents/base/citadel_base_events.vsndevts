@@ -149,6 +149,32 @@
 		pitch_envelope_scale_max = 1.500000
 		volume_offset_opponent = 0.000000
 	}
+	Base.Ability.Telegraph = 
+	{
+		base = "Base.Ability"
+		volume_enemy_targeting_boost = 4.000000
+		volume_falloff_floor_enemy_targeting = 1.000000
+		volume_falloff_floor_enemy_relevance = 1.000000
+		hpf_non_player_enabled = 0.000000
+	}
+	Base.Ability.Target = 
+	{
+		base = "Base.Ability"
+		volume_falloff_floor_enemy_targeting = 1.000000
+		volume_falloff_floor_enemy_relevance = 1.000000
+		play_from_listener_player = 1.000000
+		hpf_non_player_enabled = 0.000000
+		lpf_non_player_enabled = 0.000000
+		volume_falloff_max_player = 1200.000000
+		volume_falloff_max_team = 1200.000000
+		volume_falloff_max_opponent = 1200.000000
+		volume_falloff_max_neutral = 1200.000000
+		volume_offset_player = -99.000000
+		volume_offset_neutral = -99.000000
+		volume_offset_team = -99.000000
+		volume_offset_enemy = -16.000000
+		volume_enemy_targeting_boost = 16.000000
+	}
 	Base.Ability.Projectile = 
 	{
 		base = "Base.Ability"
@@ -222,8 +248,6 @@
 		volume_offset_opponent = 0.000000
 		volume_offset_neutral = 0.000000
 		volume_enemy_targeting_boost = 3.000000
-		distance_hpf_on = 1.000000
-		distance_lpf_on = 1.000000
 		position_offset = 
 		[
 			0.000000,
@@ -477,8 +501,6 @@
 		spread_max_value_neutral = 0.000000
 		spread_min_value = 0.000000
 		volume_enemy_targeting_boost = 0.000000
-		distance_hpf_on = 1.000000
-		distance_lpf_on = 1.000000
 		apply_radio_effect_for_voice = false
 		voice_radio_effect_distance_threshold = 800.000000
 		use_pathing_distance = 0.000000
@@ -534,8 +556,6 @@
 		spread_max_value_neutral = 0.000000
 		spread_min_value = 0.000000
 		volume_enemy_targeting_boost = 0.000000
-		distance_hpf_on = 1.000000
-		distance_lpf_on = 1.000000
 		apply_radio_effect_for_voice = false
 		voice_radio_effect_distance_threshold = 800.000000
 		use_pathing_distance = 0.000000

@@ -199,7 +199,7 @@ CitadelFriend.CurrentUser #FriendDetails
 	visibility: collapse;
 }
 
-CitadelFriend.SoloFriend #FriendAddButton
+CitadelFriend.SoloFriend #FriendAddButton,CitadelFriend.SoloFriend #FriendInviteToGameButton
 {
 	width: 80px;
 	horizontal-align: right;
@@ -211,7 +211,7 @@ CitadelFriend.SoloFriend #FriendAddButton
 	transition-duration: 0.3s;
 }
 
-.FriendsPlayingCitadel CitadelFriend.SoloFriend:hover #FriendAddButton
+CitadelSocialPage .FriendsPlayingCitadel CitadelFriend.SoloFriend:hover #FriendAddButton,PopupPlaytestUser CitadelFriend.SoloFriend:hover #FriendInviteToGameButton
 {
 	opacity: 1;
 }
@@ -300,6 +300,11 @@ CitadelFriend.SoloFriend
 	background-color: #ffffff05;
 	transition-property: background-color;
 	transition-duration: 0.0s;
+}
+
+.SelectedPlayer CitadelFriend.SoloFriend,.FriendsPlayingCitadel .SelectedPlayer CitadelFriend.SoloFriend:hover
+{
+	background-color: green;
 }
 
 .FriendsPlayingCitadel CitadelFriend.SoloFriend:hover

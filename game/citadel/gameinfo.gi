@@ -305,6 +305,7 @@
 		NonTexturedGradientFog		1
 		// Temp till I can add support in citadel shaders
 		DisableLateAllocatedTransformBuffer 1
+		MinimumLateAllocatedVertexCacheBufferSizeMB 64
 		CubemapFog 1
 		VolumetricFog 1
 		FrameBufferCopyFormat R11G11B10F
@@ -405,6 +406,7 @@
 		// Convars that control spatialization of UI audio.
 		"snd_ui_positional"			"1"
 		"snd_ui_spatialization_spread"		"2.4"
+		"snd_envelope_rate"			"10.0"
 
 		"speaker_config"
 		{

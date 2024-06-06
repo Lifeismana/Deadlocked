@@ -595,7 +595,7 @@
 	amb.Indoors.Pipe_Small = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -18.000000
+		volume = -20.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 2.000000
 		spread_min = 113.064499
@@ -606,7 +606,7 @@
 		volume_mult = 3.000000
 		cull_at_distance = 1500.000000
 		occlusion_interval = 0.000000
-		mixer_mixgroup = "Ambience-Details"
+		mixer_mixgroup = "Ambience-Bed"
 		vsnd_files = "sounds/ambient/soundscapes/city_oneshots/pipe_lp.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -664,7 +664,7 @@
 	amb.Indoors.Pipe_Large = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -18.000000
+		volume = -20.000000
 		volume_fade_in = 1.000000
 		volume_fade_out = 4.000000
 		spread_min = 113.064499
@@ -675,7 +675,7 @@
 		volume_mult = 3.000000
 		cull_at_distance = 1500.000000
 		occlusion_interval = 0.000000
-		mixer_mixgroup = "Ambience-Details"
+		mixer_mixgroup = "Ambience-Bed"
 		vsnd_files = "sounds/ambient/soundscapes/city_oneshots/vent_01.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -704,28 +704,19 @@
 			[
 				0.000000,
 				1.000000,
-				-0.001284,
-				-0.001284,
+				-0.001252,
+				-0.001252,
 				1.000000,
 				1.000000,
 			],
 			
 			[
-				497.142883,
-				0.361878,
-				-0.000959,
-				-0.000959,
-				3.000000,
-				1.000000,
-			],
-			
-			[
-				1042.285767,
+				798.448242,
 				0.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
+				-0.001252,
+				0.000000,
+				0.000000,
+				0.000000,
 			],
 		]
 		vsnd_duration = 8.050703
@@ -822,7 +813,7 @@
 	{
 		base = "Base.Ambience.3d"
 		position_force_from_player = true
-		volume = -6.000000
+		volume = -11.000000
 		_builtins._voicegraph = ""
 		spread_min = 0.000000
 		spread_max_value = 0.883459
@@ -1547,7 +1538,7 @@
 		spread_max_value = 0.945055
 		spread_max = 3000.000000
 		spread_min_value = 0.945055
-		volume = -6.000000
+		volume = -9.000000
 		pitch = 0.900000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
@@ -1644,8 +1635,8 @@
 	{
 		type = "citadel_ambient_rand"
 		random_soundevent_name = "amb.Outdoors.Traffic.Bys"
-		random_soundevent_timer_min = 5.000000
-		random_soundevent_timer_max = 10.000000
+		random_soundevent_timer_min = 9.000000
+		random_soundevent_timer_max = 15.000000
 		position_random = 1.000000
 		use_initial_random_offset = 1.000000
 		rand_radius_max = 9500.000000
@@ -2055,7 +2046,7 @@
 	amb.Indoors.Hvac = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -16.000000
+		volume = -19.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 2.000000
 		spread_min = 113.064499
@@ -2364,8 +2355,8 @@
 	{
 		type = "citadel_ambient_rand"
 		random_soundevent_name = "amb.Outdoors.Traffic.Brakes"
-		random_soundevent_timer_min = 10.000000
-		random_soundevent_timer_max = 20.000000
+		random_soundevent_timer_min = 8.000000
+		random_soundevent_timer_max = 15.000000
 		position_random = 1.000000
 		use_initial_random_offset = 1.000000
 		rand_radius_max = 9500.000000
@@ -3607,7 +3598,7 @@
 		type = "citadel_ambient_rand"
 		random_soundevent_name = "amb.Outdoors.Crow"
 		random_soundevent_timer_min = 10.000000
-		random_soundevent_timer_max = 40.000000
+		random_soundevent_timer_max = 30.000000
 		position_random = 1.000000
 		use_initial_random_offset = 1.000000
 		rand_radius_max = 4000.000000
@@ -3630,7 +3621,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		hrtf_mix = 0.500000
-		volume_rand_min = -9.000000
+		volume_rand_min = -6.000000
 		volume_rand_max = 0.000000
 		mixer_mixgroup = "Ambience-Details"
 		vsnd_files = 
@@ -4358,11 +4349,12 @@
 		spread_max_value = 0.945055
 		spread_max = 3000.000000
 		spread_min_value = 0.945055
-		volume = -9.000000
+		volume = -18.000000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
 		pitch = 0.900000
 		use_volume_fade_out_curve = true
+		mixer_mixgroup = "Ambience-Bed"
 		vsnd_files = "sounds/ambient/soundscapes/loops/outdoors_generic.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -4447,11 +4439,12 @@
 		spread_max_value = 0.945055
 		spread_max = 3000.000000
 		spread_min_value = 0.945055
-		volume = -14.000000
+		volume = -20.000000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
 		pitch = 0.850000
 		use_volume_fade_out_curve = true
+		mixer_mixgroup = "Ambience-Bed"
 		vsnd_files = "sounds/ambient/soundscapes/loops/outdoors_generic.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -5266,102 +5259,12 @@
 		]
 		vsnd_duration = 9.010975
 	}
-	amb.Lane.Purple.South.Lp_copy = 
-	{
-		base = "Base.Ambience.3d"
-		mixer_mixgroup = "Ambience-Bed"
-		position_force_from_player = true
-		volume = -14.000000
-		_builtins._voicegraph = ""
-		spread_min = 8.571428
-		spread_max_value = 0.945055
-		spread_max = 3000.000000
-		spread_min_value = 0.945055
-		pitch = 0.950000
-		volume_fade_out = 15.000000
-		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
-		vsnd_files = "sounds/ambient/soundscapes/loops/city_03.vsnd"
-		reverb_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				0.307692,
-				1.083000,
-				1.083000,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				1.000000,
-				1.000000,
-				0.227125,
-				0.227125,
-				2.000000,
-				3.000000,
-			],
-		]
-		volume_fade_over_time_curve = 
-		[
-			
-			[
-				0.000000,
-				0.000000,
-				1.428571,
-				1.428571,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.700000,
-				1.000000,
-				1.428571,
-				1.428571,
-				1.000000,
-				1.000000,
-			],
-		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
-		vsnd_duration = 62.834831
-	}
 	amb.Indoors.Air_Deep = 
 	{
 		base = "Base.Ambience.3d"
 		mixer_mixgroup = "Ambience-Bed"
 		position_force_from_player = true
-		volume = -5.000000
+		volume = -9.000000
 		_builtins._voicegraph = ""
 		spread_min = 8.571428
 		spread_max_value = 0.945055
@@ -5444,6 +5347,7 @@
 				1.000000,
 			],
 		]
+		vsnd_duration = 12.909252
 	}
 	amb.Outdoors.Wind_Vegetation = 
 	{
@@ -5531,6 +5435,7 @@
 				1.000000,
 			],
 		]
+		vsnd_duration = 24.914240
 	}
 	amb.Music.Waltz = 
 	{
@@ -5600,5 +5505,143 @@
 				0.000000,
 			],
 		]
+		vsnd_duration = 54.109455
+	}
+	amb.Outdoors.Announcement = 
+	{
+		base = "Base.Ambience.3d"
+		volume = -7.000000
+		volume_fade_in = 0.000000
+		volume_fade_out = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		hrtf_mix = 0.500000
+		volume_rand_min = 0.000000
+		volume_rand_max = 0.000000
+		mixer_mixgroup = "Ambience-Details"
+		vsnd_files = 
+		[
+			"sounds/ambient/soundscapes/city_oneshots/announcement_01.vsnd",
+			"sounds/ambient/soundscapes/city_oneshots/announcement_02.vsnd",
+			"sounds/ambient/soundscapes/city_oneshots/announcement_03.vsnd",
+		]
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				1.083000,
+				1.083000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_distance_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000075,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				5000.000000,
+				0.626959,
+				-0.000075,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+	}
+	amb.Outdoors.AnnouncementRandom_01 = 
+	{
+		type = "citadel_ambient_rand"
+		random_soundevent_name = "amb.Outdoors.Announcement"
+		random_soundevent_timer_min = 25.000000
+		random_soundevent_timer_max = 30.000000
+		position_random = 0.000000
+		use_initial_random_offset = 1.000000
+		rand_radius_max = 1000.000000
+		rand_radius_min = 400.000000
+		position = 
+		[
+			7733.562500,
+			-7395.125000,
+			1978.937500,
+		]
+		cull_at_distance = 5500.000000
+		random_position_base = "entity_position"
+	}
+	amb.Outdoors.AnnouncementRandom_02 = 
+	{
+		type = "citadel_ambient_rand"
+		random_soundevent_name = "amb.Outdoors.Announcement"
+		random_soundevent_timer_min = 25.000000
+		random_soundevent_timer_max = 30.000000
+		position_random = 0.000000
+		use_initial_random_offset = 1.000000
+		rand_radius_max = 1000.000000
+		rand_radius_min = 400.000000
+		position = 
+		[
+			-6313.062500,
+			-8423.187500,
+			2046.812500,
+		]
+		cull_at_distance = 5500.000000
+		random_position_base = "entity_position"
+	}
+	amb.Outdoors.AnnouncementRandom_03 = 
+	{
+		type = "citadel_ambient_rand"
+		random_soundevent_name = "amb.Outdoors.Announcement"
+		random_soundevent_timer_min = 25.000000
+		random_soundevent_timer_max = 30.000000
+		position_random = 0.000000
+		use_initial_random_offset = 1.000000
+		rand_radius_max = 1000.000000
+		rand_radius_min = 400.000000
+		position = 
+		[
+			-5917.062500,
+			7123.531250,
+			1937.218750,
+		]
+		cull_at_distance = 5500.000000
+		random_position_base = "entity_position"
+	}
+	amb.Outdoors.AnnouncementRandom_04 = 
+	{
+		type = "citadel_ambient_rand"
+		random_soundevent_name = "amb.Outdoors.Announcement"
+		random_soundevent_timer_min = 25.000000
+		random_soundevent_timer_max = 30.000000
+		position_random = 0.000000
+		use_initial_random_offset = 1.000000
+		rand_radius_max = 1000.000000
+		rand_radius_min = 400.000000
+		position = 
+		[
+			6612.343750,
+			7424.593750,
+			1924.343750,
+		]
+		cull_at_distance = 5500.000000
+		random_position_base = "entity_position"
 	}
 }

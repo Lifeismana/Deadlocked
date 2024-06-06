@@ -4,7 +4,6 @@ CitadelOverlay
 {
 	height: 100%;
 	width: 100%;
-	flow-children: down;
 }
 
 #MatchmakingAndGCStatusContainer
@@ -202,30 +201,15 @@ CitadelOverlay
 
 #MutedPanel
 {
-	horizontal-align: center;
+	horizontal-align: left;
 	flow-children: right;
-	background-color: #1f1e1eaa;
+	background-color: rgba(0, 0, 0, 0.7);
 	z-index: 9999;
-	width: 350px;
-	max-width: 350px;
-	min-width: 350px;
-	horizontal-align: center;
-	width: fit-children;
-	padding: 3px 110px;
-	border-radius: 0px 0px 5px 5px;
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	border-radius: 5px;
 	visibility: collapse;
-}
-
-.connectedToGame #MutedPanel
-{
-	horizontal-align: right;
-	margin-right: 20px;
-	margin-top: 140px;
-}
-
-.connectedToGame.in_matchmaking #MutedPanel
-{
-	margin-top: 0px;
 }
 
 .GameIsMuted #MutedPanel
@@ -235,12 +219,13 @@ CitadelOverlay
 
 .MutedIcon
 {
-	width: 16px;
-	height: 16px;
-	margin: 0px 5px;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
 	background-image: url("s2r://panorama/images/icons/icon_sound_off.vsvg");
 	background-size: contain;
 	vertical-align: center;
+	horizontal-align: center;
 }
 
 .GameMutedLabel

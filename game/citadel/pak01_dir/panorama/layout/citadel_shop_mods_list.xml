@@ -4,5 +4,7 @@
 		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
 		<include src="s2r://panorama/styles/citadel_shop_mods_list.vcss_c" />
 	</styles>
-	<CitadelShopModsList class="shopModsList" hittest="true" />
+	<CitadelShopModsList class="shopModsList" hittest="true">
+		<CitadelHeroBuildsSelector id="HeroBuildSelector" user_builds_only="false" />
+	</CitadelShopModsList>
 </root>

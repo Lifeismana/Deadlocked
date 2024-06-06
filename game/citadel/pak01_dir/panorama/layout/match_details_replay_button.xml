@@ -7,10 +7,10 @@
 	</styles>
 	<MatchDetailsReplayButton>
 		<Panel class="ReplayContainer">
-			<Button id="ReplayButtonBody" class="ReplayButton" onactivate="CitadelMatchDetailsReplayClicked()">
+			<Button id="ReplayButtonBody" class="ReplayButton" onactivate="CitadelMatchDetailsReplayClicked()" onmouseover="CitadelPlayUISound( EMainMenuHover );">
 				<Label class="ReplayText" text="{s:ButtonText}" />
 			</Button>
-			<Button id="DeleteReplayButton" class="ReplayButton" onactivate="CitadelMatchDetailsDeleteReplay()">
+			<Button id="DeleteReplayButton" class="ReplayButton" onactivate="CitadelMatchDetailsDeleteReplay()" onmouseover="CitadelPlayUISound( EMainMenuHover );">
 				<Label class="ReplayText" text="Delete Replay" />
 			</Button>
 		</Panel>

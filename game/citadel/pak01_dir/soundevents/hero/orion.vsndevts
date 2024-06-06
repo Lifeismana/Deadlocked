@@ -598,9 +598,9 @@
 	{
 		base = "Base.Ability.Ult"
 		volume = 0.000000
-		vsnd_files = "sounds/abilities/archer/archer_guided_arrow_explo.vsnd"
 		volume_falloff_max_player = 99999.000000
 		volume_falloff_min_player = 3500.000000
+		vsnd_files = "sounds/abilities/archer/archer_guided_arrow_explo.vsnd"
 		vsnd_duration = 4.697823
 	}
 	Archer.MovementFoley = 
@@ -824,43 +824,23 @@
 	Orion.Footstep = 
 	{
 		base = "Base.Footsteps"
+		volume = 0.000000
+		volume_offset_player = -7.000000
 		vsnd_files = 
 		[
-			"sounds/player/footsteps/hero_self/06.vsnd",
-			"sounds/player/footsteps/hero_self/07.vsnd",
-			"sounds/player/footsteps/hero_self/08.vsnd",
-			"sounds/player/footsteps/hero_self/09.vsnd",
-			"sounds/player/footsteps/hero_self/01.vsnd",
-			"sounds/player/footsteps/hero_self/02.vsnd",
-			"sounds/player/footsteps/hero_self/03.vsnd",
-			"sounds/player/footsteps/hero_self/04.vsnd",
-			"sounds/player/footsteps/hero_self/05.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_01.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_02.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_05.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_06.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_07.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_08.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_09.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_10.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_11.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_12.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_13.vsnd",
+			"sounds/player/footsteps/orion/orion_footstep_15.vsnd",
 		]
-		vsnd_files_override_team = 
-		[
-			"sounds/player/footsteps/hero_team/01.vsnd",
-			"sounds/player/footsteps/hero_team/02.vsnd",
-			"sounds/player/footsteps/hero_team/03.vsnd",
-			"sounds/player/footsteps/hero_team/04.vsnd",
-			"sounds/player/footsteps/hero_team/05.vsnd",
-			"sounds/player/footsteps/hero_team/06.vsnd",
-			"sounds/player/footsteps/hero_team/07.vsnd",
-			"sounds/player/footsteps/hero_team/08.vsnd",
-			"sounds/player/footsteps/hero_team/09.vsnd",
-		]
-		vsnd_files_override_opponent = 
-		[
-			"sounds/player/footsteps/hero_enemy/01.vsnd",
-			"sounds/player/footsteps/hero_enemy/02.vsnd",
-			"sounds/player/footsteps/hero_enemy/03.vsnd",
-			"sounds/player/footsteps/hero_enemy/04.vsnd",
-			"sounds/player/footsteps/hero_enemy/05.vsnd",
-			"sounds/player/footsteps/hero_enemy/06.vsnd",
-			"sounds/player/footsteps/hero_enemy/07.vsnd",
-			"sounds/player/footsteps/hero_enemy/08.vsnd",
-			"sounds/player/footsteps/hero_enemy/09.vsnd",
-		]
-		vsnd_duration = 1.141633
 	}
 	Orion.Effort.Dash = 
 	{

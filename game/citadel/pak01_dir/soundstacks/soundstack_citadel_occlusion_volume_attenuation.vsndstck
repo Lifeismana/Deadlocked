@@ -62,6 +62,19 @@
 				input_name = "occlusion_distance_scaled"
 				input = "@occlusion_value_distance_scale.output"
 			},
+			
+			{
+				name = "output"
+				operator = "util_null"
+				operator_variables = 
+				{
+					result = 
+					{
+						data_type = "float"
+						value = "@occlusion_value_distance_scale.output"
+					}
+				}
+			},
 		]
 	}
 }

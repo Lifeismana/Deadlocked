@@ -30,6 +30,9 @@
 			<Panel id="FriendAddButton" onmouseover="UIShowTextTooltip( Invite Friend to Party ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" hittest="false">
 				<Label class="InviteText" text="Send Invite" />
 			</Panel>
+			<Panel id="FriendInviteToGameButton" onmouseover="UIShowTextTooltip( Select Friend ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" hittest="false">
+				<Label class="InviteText" text="Select" />
+			</Panel>
 			<Panel id="AddUnvailableButton" onmouseover="UIShowTextTooltip( Unavailable while in Queue );" onmouseout="UIHideTextTooltip()" hittest="false">
 				<Label class="InviteText" text="Send Invite" />
 			</Panel>

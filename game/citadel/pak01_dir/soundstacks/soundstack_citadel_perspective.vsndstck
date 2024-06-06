@@ -118,6 +118,7 @@
 						_system_properties = 
 						{
 							display_group = "locked"
+							display_edit_type = "none"
 							property_help = "Overwritten by perspective stack and forwarded to citadel_default_3d"
 						}
 					}
@@ -227,6 +228,17 @@
 							display_group = "Normal"
 							property_group = "Relevance"
 							property_help = "Minimum linear scale volume for a sound with a relevance score > 0. Scales to its full value between relevance 0 to 1."
+						}
+					}
+					volume_falloff_floor_enemy_targeting = 
+					{
+						data_type = "float"
+						value = "0.000000"
+						_system_properties = 
+						{
+							display_group = "Normal"
+							property_group = "Relevance"
+							property_help = "Minimum linear scale volume for a sound with an owner that is targeting the local player."
 						}
 					}
 					volume_offset_player = 
@@ -756,6 +768,24 @@
 			},
 			
 			{
+				name = "math_enemy_targeting_volume_floor"
+				input_execute = "1.0"
+				operator = "math_float"
+				apply = "mult"
+				input1 = "@get_entity_relevance_value.output_is_targeting_local_player"
+				input2 = "@public.volume_falloff_floor_enemy_targeting"
+			},
+			
+			{
+				name = "max_volume_floor"
+				input_execute = "1.0"
+				operator = "math_float"
+				apply = "max"
+				input1 = "@remap_volume_falloff_floor.output"
+				input2 = "@math_enemy_targeting_volume_floor.output"
+			},
+			
+			{
 				name = "mixlayer_use_perspective"
 				operator = "math_float"
 				apply = "greater_than_or_equal"
@@ -804,7 +834,7 @@
 					volume_falloff_floor = 
 					{
 						data_type = "float"
-						value = "@remap_volume_falloff_floor.output"
+						value = "@max_volume_floor.output"
 					}
 					volume_falloff_curve_field_name = 
 					{

@@ -3,32 +3,136 @@
 #HeroBuildsDropDown
 {
 	width: 100%;
-	border: 1px solid baseBorder;
+	height: 60px;
+	background-image: url("s2r://panorama/images/shop/build_selector_carat.vsvg");
+	background-size: 15px 10px;
+	background-position: right 35px top 25px;
+	border: 0px solid baseBorder;
 	padding: 4px 7px 3px 7px;
-	background-color: #00000050;
+	background-color: #00000010;
 	font-size: 18px;
 	font-family: 'Retail Demo';
 	font-weight: normal;
 	color: offWhite;
 }
 
-DropDownMenu
+#HeroBuildsDropDown:hover
 {
-	width: 468px;
+	background-color: #00000000;
 }
 
-.DefaultHeroBuildDropDownItem
+DropDownMenu
 {
-	width: 100%;
-	height: 40px;
-	flow-children: down;
+	width: 55.2%;
+}
+
+DropDownMenu.SmallHeroBuild
+{
+	width: 470px;
 }
 
 .HeroBuildDropDownItem
 {
-	width: 100%;
+	tooltip-position: left;
+}
+
+DropDown.DropDownMenuVisible:focus Label,CitadelSettingsEnumDropDown.DropDownMenuVisible:focus Label,DropDown Label,CitadelSettingsEnumDropDown Label
+{
+	color: offBlack;
+	font-size: 22px;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-right: 0px;
+	tooltip-position: bottom;
+}
+
+DropDown:focus Label,CitadelSettingsEnumDropDown:focus Label
+{
+	color: offBlack;
+	font-size: 22px;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-top: 5px;
+	width: fit-children;
+}
+
+.HeroBuildNav DropDown.DropDownMenuVisible:focus Label,.HeroBuildNav CitadelSettingsEnumDropDown.DropDownMenuVisible:focus Label,.HeroBuildNav DropDown Label,.HeroBuildNav CitadelSettingsEnumDropDown Label,.HeroBuildNav DropDown:focus Label,.HeroBuildNav CitadelSettingsEnumDropDown:focus Label
+{
+	color: offWhite;
+	font-size: 18px;
+	font-weight: semi-bold;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-right: 0px;
+	tooltip-position: bottom;
+}
+
+DropDownMenu Label
+{
+	color: offBlack&ee;
+	font-size: 18px;
+	font-weight: semi-bold;
+	padding-bottom: 7px;
+	width: fit-children;
+	background-color: none;
+	border-top: 0px solid #00000000;
+	border-bottom: 1px solid #00000010;
+}
+
+DropDownMenu Label:hover
+{
+	background-color: none;
+}
+
+DropDownMenu .DropDownChild:hover
+{
+	background-color: goldColor;
+}
+
+#DescIcon
+{
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	background-image: url("s2r://panorama/images/shop/icon_build_desc.vsvg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	visibility: collapse;
+	margin-top: 10px;
+	wash-color: offBlack;
+	opacity: 0.5;
+}
+
+DropDownMenu #DescIcon
+{
+	width: 18px;
+	height: 18px;
+	opacity: 0.5;
+	margin-top: 2px;
+}
+
+.DropDownChild
+{
 	height: 40px;
-	flow-children: down;
+	width: 100%;
+	flow-children: right;
+	background-color: #A0964E;
+}
+
+CitadelHeroBuildsSelector .DropDownChild
+{
+	background-color: none;
+}
+
+.DropdownChild:hover
+{
+	background-color: #ffffff10;
+}
+
+DropDownMenu:focus
+{
+	color: offBlack&90;
 }
 
 .DropDownHeader
@@ -38,26 +142,16 @@ DropDownMenu
 	height: 100%;
 }
 
-.BuildName
+.ShowDescriptionIcon #DescIcon
 {
+	visibility: visible;
+}
+
+.TooltipOverride
+{
+	margin-left: 10px;
 	width: 100%;
 	height: 100%;
-}
-
-.FavoritedIcon
-{
-	vertical-align: center;
-	width: 18px;
-	height: 18px;
-}
-
-#FavoriteIconImage
-{
-	opacity: 0;
-}
-
-.IsFavoriteBuild #FavoriteIconImage
-{
-	opacity: 1;
+	z-index: 1000000;
 }
 

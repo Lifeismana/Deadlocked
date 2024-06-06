@@ -7,13 +7,14 @@
 		<include src="s2r://panorama/styles/citadel_shared_colors.vcss_c" />
 	</styles>
 	<Panel class="objective" hittest="false">
+		<Panel id="boss_background" />
 		<Panel id="unit_data">
-			<Panel id="left">
-				<Image id="objective_image" class="entityImage" />
+			<Panel id="top" class="LeftRightFlow">
+				<Image id="objective_image" class="entityImage" scaling="stretch-to-fit-preserve-aspect" />
 				<Image id="shield_image" />
-			</Panel>
-			<Panel id="right">
 				<Label id="name" text="{s:objective_name}" />
+			</Panel>
+			<Panel id="bottom" class="LeftRightFlow">
 				<Panel class="HealthBars">
 					<Panel id="bulletshield_background">
 						<ProgressBarWithMiddle id="bulletshield_progress" />

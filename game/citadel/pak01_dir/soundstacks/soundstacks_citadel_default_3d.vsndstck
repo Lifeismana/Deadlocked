@@ -153,6 +153,17 @@
 							property_group = "Mono"
 						}
 					}
+					volume_max_gain_change_per_second = 
+					{
+						data_type = "float"
+						value = "10.0"
+						_system_properties = 
+						{
+							property_group = "Volume"
+							display_group = "Normal"
+							property_help = "The maximum rate of full scale volume change per second."
+						}
+					}
 				}
 			},
 			
@@ -311,6 +322,7 @@
 				input_fade_out = "@public.volume_fade_out"
 				input_delay = "@citadel_base_3d::switch_delay.output"
 				input_memory_type = "@public.memory_type"
+				input_max_gain_change_per_second = "@public.volume_max_gain_change_per_second"
 			},
 			
 			{

@@ -1,5 +1,42 @@
 <!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
+	UI.MainMenu.Hover = 
+	{
+		base = "Base.UI"
+		volume = 0.000000
+		vsnd_pause_with_game = false
+		use_uiposition = true
+		hrtf_on = 1.000000
+		limiter_event_name = "UI.MainMenu.Hover"
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
+		vsnd_files = 
+		[
+			"sounds/ui/ui_menu_hover_02.vsnd",
+			"sounds/ui/ui_menu_hover_03.vsnd",
+			"sounds/ui/ui_menu_hover_04.vsnd",
+			"sounds/ui/ui_menu_hover_05.vsnd",
+			"sounds/ui/ui_menu_hover_06.vsnd",
+			"sounds/ui/ui_menu_hover_07.vsnd",
+			"sounds/ui/ui_menu_hover_08.vsnd",
+			"sounds/ui/ui_menu_hover_01.vsnd",
+		]
+	}
+	UI.MainMenu.Activate = 
+	{
+		base = "Base.UI"
+		volume = -14.000000
+		limiter_event_name = "UI.MainMenu.Activate"
+		limiter_max = 0.000000
+		limiter_on = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.100000
+		vsnd_files = "sounds/ui/ui_menu_activate.vsnd"
+		vsnd_duration = 2.677596
+	}
 	HudChat.Message = 
 	{
 		base = "Base.UI"
@@ -20,11 +57,6 @@
 	{
 		base = "Base.UI"
 		vsnd_files = "sounds/ui/buttonclickrelease.vsnd"
-	}
-	Menu.Scroll = 
-	{
-		base = "Base.UI"
-		vsnd_files = "sounds/ui/menu_click04.vsnd"
 	}
 	Menu.PopupScroll = 
 	{
@@ -131,17 +163,22 @@
 	}
 	UI.Shop.Ability.Hover = 
 	{
-		base = "Base.UI"
-		vsnd_files = "sounds/ui/ability_hover.vsnd"
-		vsnd_duration = 0.309833
+		base = "UI.MainMenu.Hover"
 	}
 	UI.Shop.Mod.Hover = 
 	{
-		base = "Base.UI"
-		hrtf_on = 1.000000
-		use_uiposition = true
-		vsnd_files = "sounds/ui/mod_hover.vsnd"
-		vsnd_duration = 0.469583
+		base = "UI.MainMenu.Hover"
+		vsnd_files = 
+		[
+			"sounds/ui/ui_menu_hover_02.vsnd",
+			"sounds/ui/ui_menu_hover_03.vsnd",
+			"sounds/ui/ui_menu_hover_04.vsnd",
+			"sounds/ui/ui_menu_hover_05.vsnd",
+			"sounds/ui/ui_menu_hover_06.vsnd",
+			"sounds/ui/ui_menu_hover_07.vsnd",
+			"sounds/ui/ui_menu_hover_08.vsnd",
+			"sounds/ui/ui_menu_hover_01.vsnd",
+		]
 	}
 	UI.Shop.Mod.Activate = 
 	{
@@ -187,47 +224,21 @@
 	UI.Shop.Enter = 
 	{
 		base = "Base.UI"
-		volume = 0.000000
+		volume = 2.000000
 		vsnd_files = "sounds/ui/shop_open.vsnd"
 		vsnd_duration = 1.616689
-	}
-	UI.MainMenu.Hover = 
-	{
-		base = "Base.UI"
-		pitch_modulation_namespace = "UI.Hover"
-		pitch_modulation_attack = 10.000000
-		pitch_modulation_release = 0.300000
-		pitch_modulation_max = 2.000000
-		volume = -14.000000
-		vsnd_pause_with_game = false
-		use_uiposition = true
-		hrtf_on = 1.000000
-		vsnd_files = "sounds/ui/ui_menu_hover.vsnd"
-		vsnd_duration = 0.227846
-	}
-	UI.MainMenu.Activate = 
-	{
-		base = "Base.UI"
-		volume = -12.000000
-		pitch_rand_min = -0.100000
-		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
 	}
 	UI.HeroSelection.Hover = 
 	{
 		base = "Base.UI"
-		volume = -24.000000
+		volume = -12.000000
 		pitch = 0.900000
 		vsnd_files = "sounds/ui/tech_hover.vsnd"
 		vsnd_duration = 0.309833
 	}
 	UI.HeroSelection.Selected = 
 	{
-		base = "Base.UI"
-		volume = -9.000000
-		pitch = 0.960000
-		vsnd_files = "sounds/ui/hero_select.vsnd"
-		vsnd_duration = 0.379937
+		base = "UI.MainMenu.Hover"
 	}
 	UI.HeroSelection.Unselected = 
 	{
@@ -237,10 +248,7 @@
 	}
 	UI.TeamPick.Hover = 
 	{
-		base = "Base.UI"
-		volume = -29.000000
-		vsnd_files = "sounds/ui/tech_hover.vsnd"
-		vsnd_duration = 0.309833
+		base = "UI.MainMenu.Hover"
 	}
 	UI.TeamPick.Select = 
 	{
@@ -249,13 +257,6 @@
 		pitch = 0.960000
 		vsnd_files = "sounds/ui/hero_select.vsnd"
 		vsnd_duration = 0.379937
-	}
-	UI.HeroSelection.Play = 
-	{
-		base = "Base.UI"
-		volume = -6.000000
-		vsnd_files = "sounds/ui/hero_select_play.vsnd"
-		vsnd_duration = 0.746125
 	}
 	UI.HeroSelection.Cancel = 
 	{
@@ -281,7 +282,7 @@
 	UI.MainMenu.NavigateBack = 
 	{
 		base = "Base.UI"
-		volume = -34.000000
+		volume = -18.000000
 		pitch = 1.000000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
@@ -291,8 +292,13 @@
 	UI.HeroCard.Activate = 
 	{
 		base = "Base.UI"
-		vsnd_files = "sounds/ui/tech_activate.vsnd"
-		vsnd_duration = 0.512396
+		limiter_event_name = "UI.HeroCard.Activate"
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_stop_oldest = true
+		volume = -10.000000
+		vsnd_files = "sounds/ui/ui_menu_activate.vsnd"
+		vsnd_duration = 2.677596
 	}
 	UI.HeroCard.Hover = 
 	{
@@ -303,10 +309,19 @@
 		pitch_modulation_release = 0.100000
 		use_uiposition = true
 		hrtf_on = 1.000000
-		volume = -12.000000
-		pitch = 0.950000
-		vsnd_files = "sounds/ui/ui_herocard_hover.vsnd"
-		vsnd_duration = 0.903878
+		volume = -9.000000
+		pitch = 1.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		vsnd_files = 
+		[
+			"sounds/ui/ui_herocard_hover_01.vsnd",
+			"sounds/ui/ui_herocard_hover_02.vsnd",
+			"sounds/ui/ui_herocard_hover_03.vsnd",
+			"sounds/ui/ui_herocard_hover_04.vsnd",
+			"sounds/ui/ui_herocard_hover_05.vsnd",
+			"sounds/ui/ui_herocard_hover_06.vsnd",
+		]
 	}
 	UI.HeroDetails.HeroTesting.Activate = 
 	{
@@ -328,9 +343,7 @@
 	}
 	UI.HeroCard.AddToRoster.Hover = 
 	{
-		base = "Base.UI"
-		vsnd_files = "sounds/ui/tech_activate.vsnd"
-		vsnd_duration = 0.512396
+		base = "UI.MainMenu.Hover"
 	}
 	UI.HeroCard.ClearRoster.Activate = 
 	{
@@ -340,21 +353,7 @@
 	}
 	UI.HeroCard.ClearRoster.Hover = 
 	{
-		base = "Base.UI"
-		vsnd_files = "sounds/ui/tech_activate.vsnd"
-		vsnd_duration = 0.512396
-	}
-	UI.HeroCard.DragStart = 
-	{
-		base = "Base.UI"
-		vsnd_files = "sounds/ui/tech_activate.vsnd"
-		vsnd_duration = 0.512396
-	}
-	UI.HeroCard.DragDrop = 
-	{
-		base = "Base.UI"
-		vsnd_files = "sounds/ui/tech_activate.vsnd"
-		vsnd_duration = 0.512396
+		base = "UI.MainMenu.Hover"
 	}
 	UI.HeroCard.DragCardHoveredOtherHeroCard = 
 	{
@@ -400,7 +399,7 @@
 		use_uiposition = false
 		hrtf_on = 0.000000
 		vsnd_files = "sounds/ui/ui_shop_click_magic.vsnd"
-		vsnd_duration = 2.761111
+		vsnd_duration = 3.200771
 	}
 	UI.Shop.Mod.Weapon.Click = 
 	{
@@ -409,7 +408,7 @@
 		use_uiposition = false
 		hrtf_on = 0.000000
 		vsnd_files = "sounds/ui/ui_shop_click_weapon.vsnd"
-		vsnd_duration = 2.030544
+		vsnd_duration = 1.875601
 	}
 	UI.Shop.Mod.Vitality.Click = 
 	{
@@ -418,7 +417,7 @@
 		use_uiposition = false
 		hrtf_on = 0.000000
 		vsnd_files = "sounds/ui/ui_shop_click_vitality.vsnd"
-		vsnd_duration = 1.723061
+		vsnd_duration = 2.003469
 	}
 	UI.MainMenu.StartGame = 
 	{
@@ -445,6 +444,15 @@
 	Gameplay.Pause.Lp = 
 	{
 		base = "Base.UI"
+		volume = -6.000000
+		vsnd_files = "sounds/ui/ui_pause_lp.vsnd"
+		vsnd_duration = 107.688843
+	}
+	Gameplay.GameOver.Lp = 
+	{
+		base = "Base.UI"
+		mixer_mixgroup = "Music-Duck"
+		volume_fade_out = 0.500000
 		volume = -6.000000
 		vsnd_files = "sounds/ui/ui_pause_lp.vsnd"
 		vsnd_duration = 107.688843
@@ -613,6 +621,7 @@
 		volume_fade_in = 1.000000
 		delay = 0.500000
 		mixer_mixgroup = "UI"
+		event_use_music_convar = true
 		vsnd_files = "sounds/ambient/soundscapes/menu/menu_lp.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -635,6 +644,81 @@
 				1.000000,
 			],
 		]
-		vsnd_duration = 105.402313
+		vsnd_duration = 105.405739
+	}
+	UI.PlayerDeath.Team = 
+	{
+		base = "Base.UI"
+		limiter_event_name = "UI.PlayerDeath"
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_stop_oldest = true
+		volume = -5.000000
+		volume_fade_out = 0.100000
+		vsnd_files = "sounds/ui/ui_player_death_team.vsnd"
+	}
+	UI.PlayerDeath.Opponent = 
+	{
+		base = "Base.UI"
+		limiter_event_name = "UI.PlayerDeath"
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_stop_oldest = true
+		volume = -8.000000
+		vsnd_files = "sounds/ui/ui_player_death_opponent.vsnd"
+	}
+	Menu.Party.Invited = 
+	{
+		base = "Base.UI"
+		volume = -20.000000
+		use_uiposition = true
+		hrtf_on = 1.000000
+		vsnd_files = "sounds/ui/ui_shop_click_starred.vsnd"
+		vsnd_duration = 2.901973
+	}
+	Menu.Party.Leave = 
+	{
+		base = "Base.UI"
+		volume = -34.000000
+		use_uiposition = true
+		hrtf_on = 1.000000
+		vsnd_files = "sounds/ui/ui_menu_back_minor.vsnd"
+		vsnd_duration = 1.258912
+	}
+	Menu.Party.NewMember = 
+	{
+		base = "Base.UI"
+		volume = -20.000000
+		use_uiposition = true
+		hrtf_on = 1.000000
+		vsnd_files = "sounds/gameplay/ping_map_spam.vsnd"
+		vsnd_duration = 0.786304
+	}
+	Menu.HeroSelection.Enter = 
+	{
+		base = "Base.UI"
+		pitch_modulation_namespace = "UI.Hover"
+		pitch_modulation_attack = 10.000000
+		pitch_modulation_release = 0.300000
+		pitch_modulation_max = 2.000000
+		volume = -14.000000
+		vsnd_pause_with_game = false
+		use_uiposition = true
+		hrtf_on = 1.000000
+		vsnd_files = "sounds/ui/ui_heroselection_enter.vsnd"
+	}
+	Menu.HeroSelection.Complete = 
+	{
+		base = "Base.UI"
+		pitch_modulation_namespace = "UI.Hover"
+		pitch_modulation_attack = 10.000000
+		pitch_modulation_release = 0.300000
+		pitch_modulation_max = 2.000000
+		volume = -14.000000
+		vsnd_pause_with_game = false
+		use_uiposition = true
+		hrtf_on = 1.000000
+		vsnd_files = "sounds/ui/ui_menu_activate.vsnd"
+		vsnd_duration = 2.677596
 	}
 }

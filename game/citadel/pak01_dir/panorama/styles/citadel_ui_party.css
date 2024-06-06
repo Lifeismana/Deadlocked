@@ -901,6 +901,7 @@ CitadelParty
 {
 	flow-children: right;
 	horizontal-align: right;
+	margin-top: 5px;
 }
 
 .connectedToGame #FriendListButton
@@ -1047,12 +1048,12 @@ Label.FriendsPlaying
 Label.viewProfile
 {
 	vertical-align: middle;
-	font-size: 14px;
-	ignore-parent-flow: true;
+	font-size: 16px;
+	font-weight: semi-bold;
 	horizontal-align: right;
 	margin-right: 15px;
 	text-decoration: underline;
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 #SelfImage
@@ -1082,6 +1083,12 @@ Label.viewProfile
 	text-overflow: shrink;
 	width: 100%;
 	font-size: 22px;
+}
+
+#NameAndLink
+{
+	flow-children: down;
+	vertical-align: middle;
 }
 
 #SearchingIcon

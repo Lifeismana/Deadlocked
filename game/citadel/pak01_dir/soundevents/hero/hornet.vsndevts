@@ -279,166 +279,30 @@
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/modifier_end.vsnd"
 		vsnd_duration = 3.989250
 	}
-	Hornet.Hornet.Leap.Channel = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Hornet.Hornet.Leap.Channel.Main"
-		soundevent_02 = "Hornet.Hornet.Leap.Channel.Sub"
-		volume = 1.000000
-		use_01 = 1.000000
-		use_02 = 1.000000
-	}
-	Hornet.Hornet.Leap.Channel.Main = 
-	{
-		base = "Base.Ability"
-		volume = -9.000000
-		volume_falloff_max = 2800.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/channel.vsnd"
-		vsnd_duration = 1.968500
-	}
-	Hornet.Hornet.Leap.Channel.Sub = 
-	{
-		base = "Base.Ability"
-		volume = -3.000000
-		volume_falloff_max = 1800.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/channel_sub.vsnd"
-		vsnd_duration = 0.994979
-	}
-	Hornet.Hornet.Leap.Cast = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Hornet.Hornet.Leap.Cast.Tech"
-		soundevent_02 = "Hornet.Hornet.Leap.Cast.Wings"
-		volume = 1.000000
-		use_01 = 1.000000
-		use_02 = 1.000000
-	}
-	Hornet.Hornet.Leap.Cast.Tech = 
-	{
-		base = "Base.Ability"
-		volume = -9.000000
-		volume_falloff_max = 1600.000000
-		pitch = 1.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/cast_tech.vsnd"
-		vsnd_duration = 4.632896
-	}
-	Hornet.Hornet.Leap.Cast.Wings = 
-	{
-		base = "Base.Ability"
-		volume_falloff_max = 1600.000000
-		volume = -12.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/cast_wings.vsnd"
-		vsnd_duration = 3.426625
-	}
-	Hornet.Hornet.Leap.ModStart = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Hornet.Hornet.Leap.ModStart.Main"
-		soundevent_02 = "Hornet.Hornet.Leap.ModStart.Bounce"
-		soundevent_03 = "Hornet.Hornet.Leap.ModStart.Lock"
-		soundevent_04 = "Hornet.Hornet.Leap.ModStart.Spring"
-		volume = 1.000000
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-		use_04 = 1.000000
-	}
-	Hornet.Hornet.Leap.ModStart.Main = 
-	{
-		base = "Base.Ability"
-		volume = -15.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_start.vsnd"
-		vsnd_duration = 4.408396
-	}
-	Hornet.Hornet.Leap.ModStart.Bounce = 
+	Ability.Hornet.Leap.Cast = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
-		volume_falloff_max = 3666.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_start_bounce.vsnd"
-		vsnd_duration = 3.178771
+		play_from_listener_player = 1.000000
+		vsnd_files = "sounds/abilities/hornet/vindicta_flight_cast.vsnd"
 	}
-	Hornet.Hornet.Leap.ModStart.Lock = 
+	Ability.Hornet.Leap.Lp = 
+	{
+		base = "Base.Ability.Telegraph"
+		volume = -3.000000
+		volume_fade_out = 0.250000
+		volume_fade_in = 0.100000
+		play_from_listener_player = 1.000000
+		volume_offset_player = -5.000000
+		delay_rand_max = -20.000000
+		vsnd_files = "sounds/abilities/hornet/vindicta_flight_loop.vsnd"
+	}
+	Ability.Hornet.Leap.Expire = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
-		volume_falloff_max = 1900.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_start_lock.vsnd"
-		vsnd_duration = 2.820375
-	}
-	Hornet.Hornet.Leap.ModStart.Spring = 
-	{
-		base = "Base.Ability"
-		volume_falloff_max = 1200.000000
-		volume = -6.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_start_spring.vsnd"
-		vsnd_duration = 3.829604
-	}
-	Hornet.Hornet.Leap.ModDur.Lp = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Hornet.Hornet.Leap.ModDur.Lp.Insect"
-		soundevent_02 = "Hornet.Hornet.Leap.ModDur.Lp.Sharp"
-		soundevent_03 = "Hornet.Hornet.Leap.ModDur.Lp.Urgent"
-		soundevent_04 = "Hornet.Hornet.Leap.ModDur.Lp.Sonar"
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-		use_04 = 1.000000
-	}
-	Hornet.Hornet.Leap.ModDur.Lp.Insect = 
-	{
-		base = "Base.Ability"
-		volume = -9.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_dur_lp_insect.vsnd"
-		vsnd_duration = 12.485958
-	}
-	Hornet.Hornet.Leap.ModDur.Lp.Sharp = 
-	{
-		base = "Base.Ability"
-		volume = -18.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_dur_lp_sharp.vsnd"
-		vsnd_duration = 12.202687
-	}
-	Hornet.Hornet.Leap.ModDur.Lp.Urgent = 
-	{
-		base = "Base.Ability"
-		volume = -21.000000
-		delay_rand_min = -2.000000
-		pitch = 0.600000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_dur_lp_urgent.vsnd"
-		vsnd_duration = 11.984375
-	}
-	Hornet.Hornet.Leap.ModDur.Lp.Sonar = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Hornet.Hornet.Leap.ModDur.Lp.Sonar.Click"
-		soundevent_02 = "Hornet.Hornet.Leap.ModDur.Lp.Sonar.Scan"
-		use_01 = 1.000000
-		use_02 = 1.000000
-	}
-	Hornet.Hornet.Leap.ModDur.Lp.Sonar.Click = 
-	{
-		base = "Base.Ability"
-		volume = -18.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_dur_lp_sonar_click.vsnd"
-		vsnd_duration = 1.502917
-	}
-	Hornet.Hornet.Leap.ModDur.Lp.Sonar.Scan = 
-	{
-		base = "Base.Ability"
-		volume = -18.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_dur_lp_sonar_scan.vsnd"
-		vsnd_duration = 1.502500
-	}
-	Ability.Hornet.Leap.End = 
-	{
-		base = "Base.Ability"
-		volume_falloff_min = 6.000000
-		volume_falloff_max = 2002.000000
-		block_distance_max = 3333.000000
-		vsnd_files = "sounds/abilities/hornet/a2_hornet_leap/mod_end.vsnd"
-		vsnd_duration = 2.999646
+		play_from_listener_player = 1.000000
+		vsnd_files = "sounds/abilities/hornet/vindicta_flight_expire.vsnd"
 	}
 	Hornet.Hornet.Sting.Cast = 
 	{
@@ -532,17 +396,21 @@
 	}
 	Hornet.Assassinate.Zoom.In = 
 	{
-		base = "Base.Ability.Ult"
-		volume = -12.000000
-		vsnd_files = "sounds/abilities/hornet/a4_assassinate/zoom_in.vsnd"
-		vsnd_duration = 0.756021
+		base = "Base.Ability"
+		play_from_listener_player = 1.000000
+		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_in.vsnd"
 	}
 	Hornet.Assassinate.Zoom.Out = 
 	{
 		base = "Base.Ability"
-		volume = -12.000000
-		vsnd_files = "sounds/abilities/hornet/a4_assassinate/zoom_out.vsnd"
-		vsnd_duration = 1.003021
+		volume = -3.000000
+		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_out.vsnd"
+	}
+	Hornet.Assassinate.Zoom.Lp = 
+	{
+		base = "Base.Ability.Target"
+		volume = 0.000000
+		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_lp.vsnd"
 	}
 	Hornet.Assassinate.Cast = 
 	{
@@ -721,7 +589,7 @@
 			"sounds/vo/hornet/emote/vindicta_pain_death_06.vsnd",
 			"sounds/vo/hornet/emote/vindicta_pain_death_07.vsnd",
 		]
-		vsnd_duration = 2.011247
+		vsnd_duration = 1.023333
 	}
 	Hornet.Effort = 
 	{
@@ -738,7 +606,7 @@
 			"sounds/vo/hornet/emote/vindicta_effort_melee_small_08.vsnd",
 			"sounds/vo/hornet/emote/vindicta_effort_melee_small_09.vsnd",
 		]
-		vsnd_duration = 1.830544
+		vsnd_duration = 0.761973
 	}
 	Hornet.Effort.Dash = 
 	{
@@ -751,7 +619,7 @@
 			"sounds/vo/hornet/emote/vindicta_effort_dash_04.vsnd",
 			"sounds/vo/hornet/emote/vindicta_effort_dash_05.vsnd",
 		]
-		vsnd_duration = 1.726463
+		vsnd_duration = 0.719819
 	}
 	Hornet.Effort.Melee = 
 	{
@@ -776,6 +644,6 @@
 			"sounds/vo/hornet/emote/vindicta_effort_melee_small_08.vsnd",
 			"sounds/vo/hornet/emote/vindicta_effort_melee_small_09.vsnd",
 		]
-		vsnd_duration = 2.082880
+		vsnd_duration = 0.978707
 	}
 }

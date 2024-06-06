@@ -104,6 +104,7 @@
 	Warden.LockDown.Cast.SFX = 
 	{
 		base = "Base.Ability"
+		volume = -6.000000
 		vsnd_files = "sounds/abilities/warden/lockdown_cast.vsnd"
 		vsnd_duration = 1.956000
 	}
@@ -111,12 +112,17 @@
 	{
 		base = "Base.Ability"
 		pitch = 1.000000
-		vsnd_files = "sounds/abilities/warden/lockdown_lp.vsnd"
-		vsnd_duration = 0.406125
+		volume = 4.000000
+		vsnd_files = "sounds/abilities/warden/lockdown_foley.vsnd"
 	}
 	Warden.LockDown.Explode = 
 	{
 		base = "Base.Ability"
+		volume = 0.000000
+		spread_min = 0.000000
+		spread_max_value = 0.250784
+		spread_max = 250.000000
+		spread_min_value = 0.000000
 		vsnd_files = "sounds/abilities/warden/lockdown_impact.vsnd"
 		vsnd_duration = 1.936437
 	}
@@ -465,6 +471,7 @@
 			"sounds/player/footsteps/warden/warden_footstep_14.vsnd",
 			"sounds/player/footsteps/warden/warden_footstep_15.vsnd",
 		]
+		vsnd_duration = 0.305714
 	}
 	Warden.Reload.ClipIn = 
 	{

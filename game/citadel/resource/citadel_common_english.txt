@@ -430,7 +430,7 @@
 		"upgrade_banshee_slugs_headshots_desc"	"<span class=\"highlight\">Headshots</span> reduce target's <span class=\"highlight\">bullet and spirit resist</span>."
 		BulletResistReduction_label		"Bullet Resist Reduction"
 		BulletResistReduction_postfix	"%"
-		MagicResistReduction_label		"Magic Resist Reduction"
+		MagicResistReduction_label		"Spirit Resist Reduction"
 		MagicResistReduction_postfix	"%"
 		"upgrade_berserker"				"Berserker"
 		"upgrade_berserker_desc"		"Your <span class=\"highlight\">weapon damage</span> increases as you take sustained damage."
@@ -673,6 +673,7 @@
 		ShiftingVeilDuration_label			"Invincibility Duration"
 		ShiftingVeilDuration_postfix		"s"
 		BonusSpiritDuration_label			"Bonus Spirit Duration"
+		BonusSpiritDuration_postfix			"s"
 		modifier_shifting_veil_buff			"Shifting Veil"
 		shifting_veil_bonus_spirit			"Bonus Spirit"
 
@@ -710,7 +711,7 @@
 		"upgrade_cold_front_desc"			"Release an expanding ice blast that deals <span class=\"highlight\">damage</span> and <span class=\"highlight\">slows</span> targets it hits."
 		
 		"upgrade_target_stun"				"Knockdown"
-		"upgrade_target_stun_desc"			"Target is <span class=\"highlight\">knocked down</span> and <span class=\"highlight\">stunned</span> after a <span class=\"highlight\">{s:StunDelay} second delay</span>, interrupting and temporarily preventing from taking any action."
+		"upgrade_target_stun_desc"			"Target is <span class=\"highlight\">knocked down</span> and <span class=\"highlight\">stunned</span> after a <span class=\"highlight\">{s:StunDelay} second delay</span>, interrupting and temporarily preventing them from taking any action."
 		
 		"upgrade_aoe_root"				"Vacuum Web"
 		"upgrade_aoe_root_active"		"Throw a <span class=\"highlight\">vacuum</span> grenade, pulling all enemies into a small area where they remain <span class=\"highlight\">tethered</span>."
@@ -725,8 +726,8 @@
 		"upgrade_camouflage_desc"					"Go <span class=\"highlight\">invisible</span> and maintain invisibility by <span class=\"highlight\">not moving or attacking</span>.  Taking damage will not reveal the Hero.  Bonus Regen while Invisible."
 
 		"upgrade_glitch"						"Curse"
-		"upgrade_glitch_desc"					"Curses an enemy - <span class=\"highlight\">interrupting, silencing, disarming</span> and <span class=\"highlight\">preventing stamina usage</span> for dashes and air jumps."
-		"upgrade_glitch/modifier_glitch_debuff"				"Cursed!"
+		"upgrade_glitch_desc"					"Curses an enemy - <span class=\"highlight\">interrupting, silencing, disarming</span>, and <span class=\"highlight\">preventing item usage</span>."
+		"upgrade_glitch/modifier_glitch_debuff"	"Cursed!"
 
 		"upgrade_bullet_resist_shredder"			"Bullet Resist Shredder"
 		"upgrade_bullet_resist_shredder_desc"	"Reduces <span class=\"highlight\">bullet resist</span> on enemies when you deal spirit damage."
@@ -860,7 +861,7 @@
 		"damage_reduction_postfix"						"%"
 
 		"upgrade_rupture"					"Decay"
-		"upgrade_rupture_desc"				"Reduces <span class=\"highlight\">healing</span> received of targeted enemy and inflicts <span class=\"highlight\">damage over time</span> of their max health."
+		"upgrade_rupture_desc"				"Reduces <span class=\"highlight\">healing</span> received of targeted enemy and inflicts <span class=\"highlight\">damage over time</span> of their max health.<br>Decay's damage is non-lethal."
 		"upgrade_rupture/modifier_rupture"	"Decay"
 		"HealAmpReceivePenaltyPercent_label"		"Healing Reduction"
 		"HealAmpReceivePenaltyPercent_postfix"			"%"

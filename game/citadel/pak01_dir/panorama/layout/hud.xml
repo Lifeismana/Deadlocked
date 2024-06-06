@@ -14,9 +14,13 @@
 				<Image class="damage_arrow_icon damage_arrow_left" src="s2r://panorama/images/control_icons/arrow_solid_left_png.vtex" />
 				<Image class="damage_arrow_icon damage_arrow_right" src="s2r://panorama/images/control_icons/arrow_solid_right_png.vtex" />
 				<Image class="damage_arrow_icon damage_arrow_down" src="s2r://panorama/images/control_icons/arrow_solid_down_png.vtex" />
-				<Image id="hero_icon">
-					<Panel id="health_bar" />
-				</Image>
+				<Panel id="unit_info">
+					<Image id="hero_icon" scaling="stretch-to-fit-preserve-aspect" />
+					<Panel id="health_container">
+						<Panel id="health_backer" />
+						<Panel id="health_bar" />
+					</Panel>
+				</Panel>
 			</Panel>
 		</snippet>
 		<snippet name="OffscreenPingSnippet">

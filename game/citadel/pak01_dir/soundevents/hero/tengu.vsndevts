@@ -444,44 +444,25 @@
 	Tengu.Footstep = 
 	{
 		base = "Base.Footsteps"
-		volume = -9.000000
+		volume = -5.000000
 		vsnd_files = 
 		[
-			"sounds/player/footsteps/hero_self/06.vsnd",
-			"sounds/player/footsteps/hero_self/07.vsnd",
-			"sounds/player/footsteps/hero_self/08.vsnd",
-			"sounds/player/footsteps/hero_self/09.vsnd",
-			"sounds/player/footsteps/hero_self/01.vsnd",
-			"sounds/player/footsteps/hero_self/02.vsnd",
-			"sounds/player/footsteps/hero_self/03.vsnd",
-			"sounds/player/footsteps/hero_self/04.vsnd",
-			"sounds/player/footsteps/hero_self/05.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_01.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_02.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_03.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_04.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_05.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_06.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_07.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_08.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_09.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_10.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_11.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_12.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_13.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_14.vsnd",
+			"sounds/player/footsteps/ivy/ivy_footstep_15.vsnd",
 		]
-		vsnd_files_override_team = 
-		[
-			"sounds/player/footsteps/hero_team/01.vsnd",
-			"sounds/player/footsteps/hero_team/02.vsnd",
-			"sounds/player/footsteps/hero_team/03.vsnd",
-			"sounds/player/footsteps/hero_team/04.vsnd",
-			"sounds/player/footsteps/hero_team/05.vsnd",
-			"sounds/player/footsteps/hero_team/06.vsnd",
-			"sounds/player/footsteps/hero_team/07.vsnd",
-			"sounds/player/footsteps/hero_team/08.vsnd",
-			"sounds/player/footsteps/hero_team/09.vsnd",
-		]
-		vsnd_files_override_opponent = 
-		[
-			"sounds/player/footsteps/hero_enemy/01.vsnd",
-			"sounds/player/footsteps/hero_enemy/02.vsnd",
-			"sounds/player/footsteps/hero_enemy/03.vsnd",
-			"sounds/player/footsteps/hero_enemy/04.vsnd",
-			"sounds/player/footsteps/hero_enemy/05.vsnd",
-			"sounds/player/footsteps/hero_enemy/06.vsnd",
-			"sounds/player/footsteps/hero_enemy/07.vsnd",
-			"sounds/player/footsteps/hero_enemy/08.vsnd",
-			"sounds/player/footsteps/hero_enemy/09.vsnd",
-		]
-		vsnd_duration = 1.141633
 	}
 	Ivy.Death = 
 	{
@@ -504,6 +485,7 @@
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_a4_wildfire_cast.vsnd"
+		vsnd_duration = 4.071202
 	}
 	Ivy.A4.Wildfire.Loop = 
 	{
@@ -511,11 +493,13 @@
 		volume = -5.000000
 		delay = 0.600000
 		vsnd_files = "sounds/abilities/tengu/ivy_a4_wildfire_loop.vsnd"
+		vsnd_duration = 9.458344
 	}
 	Ivy.A4.Wildfire.End = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_a4_wildfire_end.vsnd"
+		vsnd_duration = 3.087370
 	}
 }

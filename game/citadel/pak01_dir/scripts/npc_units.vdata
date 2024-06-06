@@ -321,7 +321,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -564,7 +565,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -812,7 +814,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -1055,7 +1058,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -1298,7 +1302,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -1547,7 +1552,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -1796,7 +1802,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -2041,7 +2048,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -2292,7 +2300,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 80.000000
-		m_flMeleeRange = 120
+		m_flMeleeAttemptRange = 120
+		m_flMeleeHitRange = 120
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -2538,7 +2547,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 80.000000
-		m_flMeleeRange = 120
+		m_flMeleeAttemptRange = 120
+		m_flMeleeHitRange = 120
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -2782,7 +2792,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 80.000000
-		m_flMeleeRange = 120
+		m_flMeleeAttemptRange = 120
+		m_flMeleeHitRange = 120
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -3026,7 +3037,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -3268,7 +3280,8 @@
 		m_flRunSpeed = 300
 		m_flAcceleration = 200
 		m_flMeleeDamage = 100.000000
-		m_flMeleeRange = 240
+		m_flMeleeAttemptRange = 240
+		m_flMeleeHitRange = 480
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -3508,7 +3521,7 @@
 			m_flReloadMoveSpeed = 236.220000
 			m_strLocalPlayerBulletImpactSound = soundevent:"Player.Bullet.Impact.Trooper"
 			m_NpcAimingSpread = 0.200000
-			m_flBulletDamage = 10
+			m_flBulletDamage = 8
 			m_flAutoReplenishClip = 2
 			m_flBulletRadiusVsWorld = 1
 		}
@@ -3527,7 +3540,8 @@
 		m_flRunSpeed = 300
 		m_flAcceleration = 200
 		m_flMeleeDamage = 100.000000
-		m_flMeleeRange = 240
+		m_flMeleeAttemptRange = 240
+		m_flMeleeHitRange = 480
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -3798,7 +3812,8 @@
 		m_flRunSpeed = 300
 		m_flAcceleration = 200
 		m_flMeleeDamage = 100.000000
-		m_flMeleeRange = 240
+		m_flMeleeAttemptRange = 240
+		m_flMeleeHitRange = 480
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -4843,7 +4858,7 @@
 		m_flSightRangePlayers = 2000.000000
 		m_flMaxHealthBarDrawDistance = 800
 		m_flShieldReactivateDelay = 2.000000
-		m_flGoldReward = 260
+		m_flGoldReward = 300
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
 		m_sModelName = resource_name:"models/props_gameplay/neutral_vault/neutral_vault.vmdl"
 		m_nMaxHealth = 500
@@ -5023,7 +5038,7 @@
 		m_flSightRangePlayers = 2000.000000
 		m_flMaxHealthBarDrawDistance = 800
 		m_flShieldReactivateDelay = 2.000000
-		m_flGoldReward = 260
+		m_flGoldReward = 300
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
 		m_sModelName = resource_name:"models/props_gameplay/sinners_sacrifice_vault/sinners_sacrifice.vmdl"
 		m_nMaxHealth = 500
@@ -5036,11 +5051,12 @@
 		m_sDamageSound = soundevent:"Props.Vault.Impact"
 		m_sHeavyDamageSound = soundevent:"Props.Vault.HeavyImpact"
 		m_sBreakSound = soundevent:"Props.Vault.Destruction"
+		m_DeathParticle = resource_name:"particles/environment/spirit_orb_vault_death.vpcf"
 		m_flHealthBarOffset = 101
 		m_bGiveGoldOnHit = true
 		m_bOrbDropper = true
 		m_flPhysicsImpulseMultiplier = 0
-		m_flDyingDuration = 3.000000
+		m_flDyingDuration = 2.200000
 		m_vecIntrinsicModifiers = 
 		[
 			subclass:
@@ -5414,11 +5430,11 @@
 		m_flSightRangePlayers = 2000.000000
 		m_flMaxHealthBarDrawDistance = 800
 		m_flShieldReactivateDelay = 2.000000
-		m_flGoldReward = 275
+		m_flGoldReward = 220
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
 		m_sModelName = resource_name:"models/npc/gargoyle/neutral_gargoyle.vmdl"
 		m_flModelScale = 0.525000
-		m_nMaxHealth = 2200
+		m_nMaxHealth = 1760
 		m_hFootstepSounds = "citadel"
 		m_sDefaultMaterialGroupName = ""
 		m_flHealthBarOffset = 84
@@ -5623,11 +5639,11 @@
 		m_flSightRangePlayers = 2000.000000
 		m_flMaxHealthBarDrawDistance = 800
 		m_flShieldReactivateDelay = 2.000000
-		m_flGoldReward = 275
+		m_flGoldReward = 220
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
 		m_sModelName = resource_name:"models/npc/trooper/trooper_mid_boss.vmdl"
 		m_flModelScale = 0.525000
-		m_nMaxHealth = 2200
+		m_nMaxHealth = 1760
 		m_hFootstepSounds = "citadel"
 		m_sDefaultMaterialGroupName = "Neutral_Strong"
 		m_flHealthBarOffset = 250.000000
@@ -6412,7 +6428,8 @@
 		m_hFootstepSounds = "citadel"
 		m_bMeleeOnly = false
 		m_bChargeForward = false
-		m_flMeleeRange = 100.000000
+		m_flMeleeAttemptRange = 100.000000
+		m_flMeleeHitRange = 100.000000
 		m_flAcceleration = 600
 		m_flMeleeChargeRange = 0
 		m_MeleeActivateParticle = resource_name:"particles/npc/npc_melee_activate.vpcf"
@@ -6462,7 +6479,7 @@
 		_class = "npc_yakuza_gangster"
 		m_sModelName = resource_name:"models/heroes_staging/gen_man/gen_man.vmdl"
 		m_flSightRange = 1600.000000
-		m_flMeleeRange = 0.000000
+		m_flMeleeAttemptRange = 0.000000
 	}
 	citadel_bounce_pad = 
 	{
@@ -6927,7 +6944,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -7178,7 +7196,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 80.000000
-		m_flMeleeRange = 120
+		m_flMeleeAttemptRange = 120
+		m_flMeleeHitRange = 120
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -7424,7 +7443,8 @@
 		m_flRunSpeed = 433
 		m_flAcceleration = 200
 		m_flMeleeDamage = 25.000000
-		m_flMeleeRange = 100
+		m_flMeleeAttemptRange = 100
+		m_flMeleeHitRange = 100
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700

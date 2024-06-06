@@ -70,7 +70,7 @@
 	height: 7%;
 	opacity: 0.0;
 	transition-property: opacity, transform, width, height;
-	transition-duration: 0.15s;
+	transition-duration: 0.1s;
 	ui-scale: 100%;
 	z-index: 98;
 	overflow: noclip;
@@ -137,10 +137,10 @@
 {
 	width: 3.5%;
 	height: 3.5%;
-	background-image: url("s2r://panorama/images/minimap/gold_psd.vtex");
+	background-image: url("s2r://panorama/images/hud/icons/icon_unsecured_png.vtex");
 	background-size: 100% 100%;
 	background-position: 50% 50%;
-	wash-color: gold;
+	wash-color: rgb(130, 255, 249);
 }
 
 .map_button.idol_dropping
@@ -547,6 +547,17 @@
 .map_button.enlarge_entry,.map_button.boss.enlarge_entry,.map_button.player.enlarge_entry
 {
 	transform: scaleY(1.2) scaleX(1.2);
+	z-index: 100;
+}
+
+.detail_view .map_button.player
+{
+	transform: scaleY(1.3) scaleX(1.3);
+}
+
+.detail_view .map_button.player.enlarge_entry
+{
+	transform: scaleY(1.5) scaleX(1.5);
 	z-index: 100;
 }
 

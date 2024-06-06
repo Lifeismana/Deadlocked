@@ -1,12 +1,5 @@
 /* Prettified by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io */
 
-Label
-{
-	font-family: "Forevs Demo";
-	font-weight: bold;
-	color: offWhite;
-}
-
 CitadelHeroBuildsPage
 {
 	width: 100%;
@@ -49,7 +42,7 @@ CitadelHeroBuildsPage
 	vertical-align: center;
 	horizontal-align: center;
 	font-weight: semi-bold;
-	font-size: 40px;
+	font-size: 34px;
 	transition-property: transform, color, brightness;
 	transition-duration: 0.3s;
 	color: offWhite;
@@ -129,8 +122,8 @@ CitadelHeroBuildsPage
 
 .HeroBuildsTitle
 {
-	font-size: 40px;
-	font-weight: semi-bold;
+	font-size: 36px;
+	font-weight: bold;
 	horizontal-align: center;
 	text-align: center;
 }
@@ -283,9 +276,8 @@ CitadelHeroBuildsPage
 	horizontal-align: center;
 }
 
-#SelectBuildButton,#FavoriteBuildButton
+#SelectBuildButton
 {
-	font-family: "Forevs Demo";
 	font-weight: bold;
 	font-size: 28px;
 	color: offWhite;
@@ -299,6 +291,38 @@ CitadelHeroBuildsPage
 {
 	z-index: 12;
 	horizontal-align: center;
+}
+
+#FavoriteBuildButton
+{
+	font-weight: bold;
+	font-size: 28px;
+	color: offWhite;
+	background-color: #ffffff30;
+	padding: 10px;
+	margin-top: 20px;
+	horizontal-align: center;
+	opacity: 1;
+	background-color: #00000030;
+}
+
+#FavoriteBuildButtonLabel
+{
+	color: ritualGreen;
+	opacity: 1;
+}
+
+.selectedIcon
+{
+	width: 26px;
+	height: 26px;
+	wash-color: ritualGreen;
+	vertical-align: middle;
+	background-image: url("s2r://panorama/images/icons/icon_checkmark.vsvg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 10px;
 }
 
 #EditButtonsContainer
@@ -353,7 +377,7 @@ CitadelHeroBuildsPage
 
 #ExistingBuildSelector
 {
-	width: 100%;
+	width: 470px;
 	padding-bottom: 20px;
 }
 

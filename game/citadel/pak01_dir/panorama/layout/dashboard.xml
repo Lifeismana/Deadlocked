@@ -203,30 +203,33 @@
 				</Panel>
 				<Panel id="PlaytestContainer">
 					<Panel id="matchmaking_status">
+						<Panel id="playtest_status">
+							<Label class="status_label" text="Status:" />
+							<Label class="match_queue_text server_count" text="{s:server_count}" />
+							<Label id="playtest_upcoming" class="playtest_upcoming_time" text="Playtest begins {t:l:t:m:playtest_start}" />
+							<Label class="playtest_active_time" text="Matchmaking open until {t:t:playtest_end}" />
+							<Label class="match_queue_text unranked_mm_paused" text="Matchmaking is currently paused: {t:d:unranked_mm_pause_time}" />
+						</Panel>
 						<Panel id="playtest_schedule">
 							<Label class="playtest_schedule_name" text="Playtest Schedule" />
 							<Label class="playtest_schedule_text" text="{s:playtest_schedule}" />
 						</Panel>
-						<Panel id="playtest_upcoming">
-							<Label class="playtest_upcoming_time" text="Next Playtest: {t:l:t:m:playtest_start} to {t:t:playtest_end}" />
+						<Panel id="new_playtest_schedule">
+							<Panel id="playtest_schedule_info">
+								<Label class="schedule_label" text="Playtest Schedule:" />
+								<Label class="region_label" text="Region: NA" />
+							</Panel>
+							<Panel id="playtest_schedule_times">
+								<Panel id="playtest_weekday" class="playtest_date_box">
+									<Label class="playtest_days" text="Monday - Friday:" />
+									<Label class="playtest_time" text="5pm - 3am PST" />
+								</Panel>
+								<Panel id="playtest_weekend" class="playtest_date_box">
+									<Label class="playtest_days" text="Saturday - Sunday:" />
+									<Label class="playtest_time" text="3pm - 3am PST" />
+								</Panel>
+							</Panel>
 						</Panel>
-						<Panel id="playtest_active">
-							<Label class="playtest_waiting_for_more_players" text="Searching For Match" />
-							<Label class="playtest_next_match_time" text="{s:timer_prompt}: {t:d:playtest_next_formation}" />
-							<Label class="playtest_next_match_time_short_players" text="{s:queued_users} in queue" />
-							<Label class="playtest_active_time" text="Matchmaking open until {t:t:playtest_end}" />
-						</Panel>
-						<Panel class="ActiveMatchButton">
-							<Label class="match_active_text" text="{s:active_matches}" onactivate="CitadelShowWatchPage( true ); CitadelPlayUISound( EMainMenuActivate )" />
-							<Image class="DiagonalArrow" src="s2r://panorama/images/icons/arrow_diagonal.vsvg" />
-						</Panel>
-						<Label class="match_queue_text unranked_party_blocked" text="Current parties in matchmaking don&apos;t allow a match to form " />
-						<Label class="match_queue_text unranked_mm_paused" text="Matchmaking is currently paused: {t:d:unranked_mm_pause_time}" />
-						<Label class="match_queue_text unranked_mm_disabled" text="Matchmaking is currently disabled" />
-						<Label class="match_queue_text server_count" text="{s:server_count}" />
-						<Label class="match_queue_text unranked_queue" text="{s:unranked_matchmaker_status}" />
-						<Label class="match_queue_text coopbot_queue" text="{s:coopbot_matchmaker_status}" />
-						<Label class="match_queue_text coopbot_form" text="{s:coopbot_matchmaker_form}" />
 					</Panel>
 					<Panel id="DiscordInvite">
 						<Label class="discordIntro" text="Join the Deadlock discord to chat with other players and get latest news." />

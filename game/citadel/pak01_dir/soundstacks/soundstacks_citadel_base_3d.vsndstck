@@ -2009,6 +2009,32 @@
 				input_field_name = "volume_for_limiter"
 				input_use_namespace = "true"
 			},
+			
+			{
+				name = "util_draw_debug_sphere"
+				operator = "util_draw_debug_sphere"
+				input_radius = "5.f"
+				input_position = "@add_position_offset.output"
+				input_rgb_color = "[52., 235., 168.]"
+				input_label = ""
+				input_show_detailed_info = "1.0"
+				detail_label_1 = "dist"
+				detail_value_1 = "@distance_filter.output"
+				detail_label_2 = "accum"
+				detail_value_2 = "@volume_filter.output"
+				detail_label_3 = "mxr"
+				detail_value_3 = "@mixer.output_volume"
+				detail_label_4 = "evnt"
+				detail_value_4 = "@volume_to_gain.output"
+				detail_label_5 = "fall"
+				detail_value_5 = "@citadel_distance_falloff::output.result_vol_linear"
+				detail_label_6 = "bias"
+				detail_value_6 = "@remap_recency_bias_linear_vol.output"
+				detail_label_7 = "inst"
+				detail_value_7 = "@citadel_instance_attenuator::output.result_vol_offset_linear"
+				detail_label_8 = "occl"
+				detail_value_8 = "@occlusion_volume_attenuation::output.result"
+			},
 		]
 		_system_properties = 
 		{

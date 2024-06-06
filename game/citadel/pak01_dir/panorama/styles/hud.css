@@ -218,6 +218,8 @@ Button:hover
 	horizontal-align: left;
 	margin-left: 235px;
 	margin-bottom: 0px;
+	horizontal-align: center;
+	margin-right: 1290px;
 	flow-children: none;
 	transition-property: margin-left, ui-scale;
 	transition-duration: 0.1s;
@@ -227,13 +229,16 @@ Button:hover
 {
 	transition-property: margin-left, ui-scale;
 	transition-duration: 0.1s;
-	margin-left: 0px;
-	margin-right: 80px;
 }
 
 .replay_playback #gold_and_ap_container
 {
 	margin-bottom: 155px;
+}
+
+.replay_playback #gold_and_ap_container.in_item_shop
+{
+	margin-bottom: 105px;
 }
 
 .GameStatePreGame #health_and_abilities_container,.GameStatePreGame #gold_and_ap_container
@@ -275,7 +280,9 @@ Button:hover
 
 .AspectRatio16x10 #health_and_abilities_container
 {
-	margin-left: 100px;
+	horizontal-align: center;
+	margin-right: 1130px;
+	margin-left: 0px;
 }
 
 CitadelHudModifierIcons
@@ -286,17 +293,7 @@ CitadelHudModifierIcons
 
 #health_and_abilities_container
 {
-	ui-scale: 130%;
-}
-
-#health_and_abilities_container.localPlayerMidHealth.isZoomed
-{
-	ui-scale: 150%;
-}
-
-#health_and_abilities_container.localPlayerLowHealth.isZoomed
-{
-	ui-scale: 150%;
+	ui-scale: 120%;
 }
 
 .player_selected #health_and_abilities_container
@@ -637,7 +634,7 @@ CitadelHudModifierIcons
 	border-radius: 2px;
 	vertical-align: bottom;
 	horizontal-align: middle;
-	margin-bottom: 140px;
+	margin-bottom: 160px;
 	flow-children: down;
 }
 
@@ -1175,7 +1172,7 @@ CitadelHudModifierIcons
 	width: 120px;
 	height: 120px;
 	transition-property: opacity;
-	transition-duration: 0.2s;
+	transition-duration: 0.1s;
 	opacity: 0;
 }
 
@@ -1212,7 +1209,7 @@ CitadelHudModifierIcons
 
 .damage_arrow_icon
 {
-	wash-color: red;
+	wash-color: colorEnemy;
 	animation-name: damage_pulse;
 	animation-duration: 0.6s;
 	animation-iteration-count: infinite;
@@ -1263,33 +1260,64 @@ CitadelHudModifierIcons
 	visibility: visible;
 }
 
+.damage_offscreen #unit_info
+{
+	vertical-align: middle;
+	horizontal-align: center;
+	border: 3px solid rgba(139, 0, 0, 0.5);
+	width: 42px;
+	height: 36px;
+	flow-children: right;
+}
+
+.damage_offscreen.player #unit_info
+{
+	width: 80px;
+	height: 68px;
+	vertical-align: center;
+	horizontal-align: center;
+	border: 3px solid colorEnemy;
+	background-color: rgba(255, 194, 194, 0.6);
+	border-radius: 4px;
+}
+
 .damage_offscreen #hero_icon
 {
-	width: 36px;
+	width: 30px;
 	height: 36px;
-	vertical-align: top;
-	horizontal-align: center;
-	border: 4px solid darkred;
-	border-radius: 2px;
+	horizontal-align: left;
+}
+
+.damage_offscreen #health_container
+{
+	height: 100%;
+	width: 6px;
+	horizontal-align: right;
 }
 
 .damage_offscreen #health_bar
 {
 	height: 100%;
 	width: 6px;
-	horizontal-align: right;
 	vertical-align: bottom;
-	background-color: red;
+	background-color: colorEnemy;
+	z-index: 10;
+}
+
+.damage_offscreen #health_backer
+{
+	height: 100%;
+	width: 6px;
+	background-color: offBlack;
+	z-index: 1;
 }
 
 .damage_offscreen.player #hero_icon
 {
-	width: 80px;
-	height: 80px;
-	vertical-align: center;
+	width: 100%;
+	height: 100%;
+	vertical-align: bottom;
 	horizontal-align: center;
-	border: 4px solid red;
-	border-radius: 2px;
 }
 
 .damage_offscreen.player #health_bar
@@ -1530,7 +1558,7 @@ CitadelHudModifierIcons
 	horizontal-align: center;
 	vertical-align: bottom;
 	margin-top: 5px;
-	ui-scale: 100%;
+	ui-scale: 90%;
 	transition-property: ui-scale, transform;
 	transition-duration: 0.2s;
 	border-radius: 2px;
@@ -2004,6 +2032,11 @@ CitadelTooltipManager
 	margin-bottom: 55px;
 }
 
+.replay_playback .abilitiesContainer.in_item_shop
+{
+	margin-bottom: 0px;
+}
+
 #APContainer
 {
 	width: 80px;
@@ -2011,7 +2044,7 @@ CitadelTooltipManager
 	horizontal-align: center;
 	vertical-align: bottom;
 	flow-children: right;
-	margin-bottom: 6px;
+	margin-bottom: 0px;
 	padding-left: 16px;
 	opacity: 1;
 	visibility: collapse;
@@ -2208,7 +2241,7 @@ CitadelTooltipManager
 	background-color: #b969ff80;
 	visibility: collapse;
 	width: 240px;
-	margin-top: 100px;
+	margin-top: 120px;
 	horizontal-align: center;
 	border-radius: 4px;
 	animation-name: unlockAvailable;
@@ -2514,6 +2547,11 @@ CitadelHudSandboxTutorial
 .replay_playback #StatsAndModsContainer
 {
 	margin-bottom: 50px;
+}
+
+.replay_playback #StatsAndModsContainer.in_item_shop
+{
+	margin-bottom: 0px;
 }
 
 .wants_scoreboard #StatsAndModsContainer

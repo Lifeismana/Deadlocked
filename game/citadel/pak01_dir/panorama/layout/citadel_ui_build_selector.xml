@@ -6,12 +6,13 @@
 	</styles>
 	<snippets>
 		<snippet name="HeroBuildDropDownItem">
-			<Panel class="HeroBuildDropDownItem" acceptsfocus="true">
+			<Panel class="HeroBuildDropDownItem" acceptsfocus="true" onmouseover="UIShowTextTooltip( {s:build_desc} ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 				<Label class="BuildName" text="{s:build_name}" />
+				<Panel id="DescIcon" class="TooltipOverride" />
 			</Panel>
 		</snippet>
 	</snippets>
-	<CitadelHeroBuildsSelector oncancel="CitadelNavigateBack();">
+	<CitadelHeroBuildsSelector>
 		<DropDown id="HeroBuildsDropDown" />
 	</CitadelHeroBuildsSelector>
 </root>

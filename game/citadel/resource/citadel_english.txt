@@ -7,6 +7,7 @@
 
 		"OK"							"OK"
 		"Cancel"						"Cancel"
+		"DontShowAgain"					"Don't show again"
 
 		"Citadel_PlaytestWarningTitle"							"Early Development Build"
 		"Citadel_PlaytestWarningBody"							"Deadlock is still early in development, with a lot of temporary art and experimental gameplay. Do not share anything about the game with anyone."
@@ -129,6 +130,9 @@
 		"GameUI_ClientMissingModel"			"Connection cannot continue due to missing model.\n"
 		"GameUI_ClientConsistencyFail"		"Connection aborted due to server enforcing model consistency.\n"
 
+		"citadel_replay_manager_error_chunk_failed"		"Replay not yet ready for download"
+		"citadel_replay_manager_error_write_failure"	"Replay failed to write to local disk"
+
 		//Playtest User
 		"Citadel_PlaytestUser_SubmitProcessing"				"Please wait"
 		"Citadel_PlaytestUser_SubmitProcessingTitle"		"Submitting User"
@@ -136,6 +140,10 @@
 		"Citadel_PlaytestUser_Result_SuccessTitle"			"Successfully submitted"
 		"Citadel_PlaytestUser_Result_GenericFailure"		"Failed to submit the user, unable to talk to the Deadlock network. Please try again shortly."
 		"Citadel_PlaytestUser_Result_GenericFailureTitle"	"Unable to submit"
+		"Citadel_PlaytestUser_Result_InvalidFriend"			"You are not friends with the specified user"
+		"Citadel_PlaytestUser_Result_NotFriendsLongEnough"	"You have not been friends with this user long enough to be able to send them an invite."
+		"Citadel_PlaytestUser_Result_AlreadyHasGame"		"This player already has access to Deadlock"
+		"Citadel_PlaytestUser_Result_LimitedUser"			"This player is a limited Steam user, and therefore is not eligible for playing Deadlock at this time."
 
 		// Discord Invite
 		"Citadel_DiscordInvite_Title"						"Discord Invite"
@@ -527,6 +535,7 @@
 		"Citadel_HUD_Damage_Invulnerable"							"SHIELDED"
 		"Citadel_HUD_Damage_NoTroopers"								"NEED TROOPERS"
 		"Citadel_HUD_Damage_Resistant"								"RESISTANT"
+		"Citadel_HUD_Damage_NotInMidPit"							"NOT IN PIT"
 
 		"Citadel_Tip_0"												"This is a tip."
 		"Citadel_Tip_1"												"This is another tip."
@@ -785,11 +794,19 @@
 		"CitadelHeroDetails_Equipment"						"Equipment"
 		"CitadelHeroDetails_Builds"							"Builds"
 		"CitadelHeroDetails_Progression"					"Progression"
-		"CitadelHeroDetails_Builds_SelectButton"		    "Choose Build"
-		"CitadelHeroDetails_Builds_CreateEditButton"		"Create or Edit Build"
+		"CitadelHeroDetails_Builds_SelectButton"		    "Browse Builds"
+		"CitadelHeroDetails_Builds_CreateButton"		"Create new Build"
+		"CitadelHeroDetails_Builds_EditButton"		"Edit my Builds"
 
 		// Hero Builds Page
 		// Create Page
+		"Citadel_HeroBuildsPage_Title"						"Hero Builds"
+		"Citadel_HeroBuildsPage_Desc"						"Here you'll be able to create custom builds per hero to use in-game. You may also browse through public builds created by the community."
+		"Citadel_HeroBuildsPage_Dev"						"<b>Dev Note:</b> Our builds feature is still in very early development. Please continute sharing feedback of what features you'd like to see implemented in the future."
+		"Citadel_HeroBuildsPage_SelectedBuild_Title"		"My Current Build:"
+		"Citadel_HeroBuildsPage_Browse_button"				"View or Change Build"
+		
+		
 		"Citadel_HeroBuildsPage_CreateBuildPreamble_EditBuild"		"Select Build"	
 		"Citadel_HeroBuildsPage_CreateBuildTitle"			"Create a Hero Build"
 		"Citadel_HeroBuildsPage_CreateOrEditBuildTitle"     "Create or Edit a Hero Build"
@@ -802,8 +819,8 @@
 		"Citadel_HeroBuildsPage_SaveBuildLabel"				"Save Build"
 		"Citadel_HeroBuildsPage_BuildSavedLabel"			"Build Saved"
 		"Citadel_HeroBuildsPage_DeleteBuildLabel"			"Delete Build"
-		"Citadel_HeroBuildsPage_SelectBuildLabel"			"Favorite Build"
-		"Citadel_HeroBuildsPage_FavoriteBuild"				"Build Favorited"
+		"Citadel_HeroBuildsPage_SelectBuildLabel"			"Make Default"
+		"Citadel_HeroBuildsPage_FavoriteBuild"				"Selected"
 		"Citadel_HeroBuildsPage_EditBuildLabel"				"Continue"
 		"Citadel_HeroBuildsPage_CreateNewBuild"				"Create new build..."
 		"Citadel_HeroBuildsPage_BuildCreatorTitle"			"Created by"
@@ -2046,7 +2063,7 @@
 		"ability_ice_dome_quip"			"Create an impenetrable healing dome"
 		"ability_ice_dome_desc"			"{s:hero_name} freezes the air around him, creating an <span class=\"highlight\">impenetrable dome</span> around himself. While in the dome, allies rapidly <span class=\"highlight\">regenerate health</span> and enemies are <span class=\"highlight\">slowed</span>."
 		"ability_ice_dome_t1_desc"		"<span class=\"highlight\">+{s:FireRateSlow}%</span> Fire Rate Slow"
-		"ability_ice_dome_t2_desc"		"<span class=\"highlight\">+{s:BonusHealthRegen}</span> Health Regen and now scales with Spirit"
+		"ability_ice_dome_t3_desc"		"<span class=\"highlight\">+{s:BonusHealthRegen}</span> Health Regen and now scales with Spirit"
 		"ability_ice_dome/modifier_ice_dome/modifier_debuff"						"Frozen Shelter"
 		"frozen_shelter_modifier_buff"		"Frozen Shelter"
 		"ability_ice_dome/modifier_ice_dome/ice_dome_enemy_aura/modifier_debuff"	"Frozen Shelter"
@@ -2073,7 +2090,7 @@
 		"UppercutBuffOnHit_postfix"				"s"
 
 		"citadel_ability_sticky_bomb"			"Sticky Bomb"
-		"citadel_ability_sticky_bomb_quip"		"Plant on a bomb on an enemy"
+		"citadel_ability_sticky_bomb_quip"		"Plant a bomb on an enemy"
 		"citadel_ability_sticky_bomb_desc"		"Attach a Sticky Bomb to a nearby target that deals <span class=\"highlight\">explosive damage</span> after a short fuse time. <br>Gain <span class=\"highlight\">+{s:BonusDamagePctPerPlayerHit}% bomb damage</span> for every enemy hero hit."
 		"modifier_citadel_sticky_bomb_attached"	"Bomb on you"
 		"citadel_ability_sticky_bomb_t3_desc"	"On Attach, <span class=\"highlight\">disarms</span> the target for <span class=\"highlight\">{s:DebuffDuration}s</span>"
@@ -2531,7 +2548,7 @@
 
 		"citadel_ability_hornet_snipe"			"Assassinate"
 		"citadel_ability_hornet_snipe_quip"		"Snipe injured targets for massive damage"
-		"citadel_ability_hornet_snipe_desc"		"Use your scoped rifle to fire a powerful shot over long distances. Does <span class=\"highlight\">bonus damage</span> to enemies with <span class=\"highlight\">less than {s:LowHealthEnemyThresholdPct}% health</span> remaining. Landing a killing blow on a player with Assassinate <span class=\"highlight\">grants you bonus souls</span>."
+		"citadel_ability_hornet_snipe_desc"		"Use your scoped rifle to fire a powerful shot over long distances. Deal only partial damage until fully charged after 1s of being scoped. Does <span class=\"highlight\">bonus damage</span> to enemies with <span class=\"highlight\">less than {s:LowHealthEnemyThresholdPct}% health</span> remaining. Landing a killing blow on a player with Assassinate <span class=\"highlight\">grants you bonus souls</span>."
 		//"citadel_ability_hornet_snipe_t3_desc"	"Assassinate kills grant +{s:BonusGoldOnKill} souls"
 		"LowHealthEnemyDamageBonus_label"		"Bonus Damage"
 		"LowHealthEnemyThresholdPct_label"		"Low Health Threshold"
@@ -2692,11 +2709,19 @@
 
 		citadel_ability_shiv_dive		"Haunt"
 		citadel_ability_shiv_dive_quip	"Possess an enemy"
-		citadel_ability_shiv_dive_desc	"Possess an enemy, controlling their movement.  Shiv explodes out of the possessed after {s:PossessDuration}s and stuns nearby enemies."
+		citadel_ability_shiv_dive_desc	"Begin Haunting, gaining movement speed and the ability to <span class=\"highlight\">possess the first enemy hero you touch</span>, controlling their movement.  Shiv explodes out of the possessed after {s:PossessDuration}s and stuns nearby enemies."
+		citadel_ability_shiv_haunt	"While Haunting"
+		citadel_ability_shiv_possess	"While Possessing"
+		citadel_ability_shiv_possess_end	"When Possess Ends"
 		citadel_ability_shiv_dive/shiv_possessing "Possessing"
 		citadel_ability_shiv_dive/target_possessed "Possessed"
-		PossessedMoveSpeedBonus_label	"Possessed Move Speed"
+		citadel_ability_shiv_dive/transformed "Transformed"
+		TransformSpeedBonus_label				"Haunting Speed Bonus"
+		TransformSpeedBonus_postfix				"m/s"
+		PossessedMoveSpeedBonus_label	"Haunting Speed Bonus"
 		PossessedMoveSpeedBonus_postfix	"m/s"
+		TransformDuration_label			"Haunt Duration"
+		TransformDuration_postfix		"s"
 
 		//-----------------------------------------------------------------------------
 		// Hero: Rutger
@@ -2724,7 +2749,7 @@
 		//-----------------------------------------------------------------------------
 		synth_plasma_flux			"Flying Cloak"
 		synth_plasma_flux_quip		"Launch a damaging cloak that you can teleport to"
-		synth_plasma_flux_desc		"Launch a sentient cloak that <span class=\"highlight\">travels forward</span> and <span class=\"highlight\">damages enemies</span>. You can <span class=\"highlight\">teleport to its location</span> as it travels out, ending its lifetime early."
+		synth_plasma_flux_desc		"Launch a sentient cloak that <span class=\"highlight\">travels forward</span> and <span class=\"highlight\">damages enemies</span>. You can press <span class=\"highlight\">[{s:in_ability2}]</span> to <span class=\"highlight\">teleport</span> to its location."
 		synth_plasma_flux_t3_desc	"<span class=\"highlight\">+{s:WeaponDamageBonus} Weapon Damage</span> for {s:WeaponDamageBonusDuration}s</span> after teleporting with Flying Cloak."
 		DPSDuration_label			"Damage Duration"
 		DPSDuration_postfix			"s"
@@ -2944,6 +2969,8 @@
 
 		"citadel_ability_tengu_dragonsfire_t3_desc"	"<span class=\"highlight\">+{s:AbilityDuration}s</span> Duration and <span class=\"highlight\">+{s:FlyingBulletResist}</span> Flying Bullet Resist"
 
+		"citadel_ability_tengu_airlift"				"Air Lift"
+		"citadel_ability_tengu_airlift_desc"		"{s:hero_name} takes to the sky and is able to grab enemy or allied Heroes.  While grabbing a Hero, {s:hero_name} and their ally gain some bullet resist.  Heroes that are grabbed can still attack and use abilities.  <br>[{s:in_ability4}] to grab and drop heroes. <br>[{s:iv_attack}] to accelerate flying speed."
 
 		//-----------------------------------------------------------------------------
 		// Tokamak
@@ -4402,7 +4429,7 @@
 		"hero_warden_lore"				"Most people think the supernatural came into the world 50 years ago.  They’re wrong.  Its presence shaped folklore for generations… and as long as there have been people afraid of the shadows, there have been those who dedicated their lives to fighting in them.\n\nComing from a lineage of militant alchemists, Warden’s family always trained for the day they would have to stave off a mystic apocalypse… but as time passed the importance of the lessons seemed less and less important.  What once was viewed as a sincere warning slowly morphed into being perceived as amusing anecdotes told by their superstitious grandparents.\n\nWhen the portal opened in Central Park, Warden’s parents realized not only was everything they were told was true, they were unprepared.  Refusing to let the next generation fall asleep on the job, Warden was trained since birth to be a supernatural killing machine with one purpose: stopping the Patrons from ever entering our world."
 		"hero_wraith_lore"				"The cornerstone of the New York gambling scene, Wraith's organization is about as open a secret as it comes.  However, thanks to a non-trivial amount of bribes, shakedowns, and blackmail, Wraith knows that she's above the law."
 		"hero_yamato_lore"				"犯罪組織のボスの家に生まれたカオリと兄のヤマトは、\n父の死後、セブンスムーンの運営を引き継ぐ運命に\nあることをずっと自覚していた。彼らは何年もの間、\n二頭体制で組織を運営し、利益と成功をもたらし、\nアメリカへの進出も計画していた。\n\n計画は単純だった。カオリは日本に残って国内を\n統制し、ヤマトはアメリカに渡り国際的な拠点を\n作るはずだった。兄妹にとって不運だったのは、\nカオリが日本で指揮をとるという計画を快く\n思わない部下たちがいたことだった。\n\n反逆は迅速かつ暴力的だった。ヤマトが命を犠牲に\nしてカオリを守ったおかげで、カオリは一握りの\n部下たちと共に日本からアメリカへ逃れることができた。\n\nアメリカに到着したカオリとその一行を迎え入れたのは、\nヤマトを出迎えるはずの人物だった。その男は\n日本人の名前には馴染みがなく、カオリのことを\n「ヤマト」と呼んだ。カオリは間違いを正そうかと思ったが、\n兄を記憶に留める最善の方法は、自分がヤマトの\n名前を受け継ぎ、彼の夢をかなえることだと決意した。"   
-		"hero_tengu_lore"				"The gargoyle didn't know what was happening when it sprang to life...  just that a big human and a small human were being hurt.  And so the gargoyle leapt to action, sending the attackers fleeing in horror.  The small human said thank you and asked the gargoyle's name.  The gargoyle didn't have one.  And so the small human said, \"I'm going to call you Ivy.\"  The gargoyle, being covered in ivy at the time, thought it was a bit obvious, but decided to go along with it for the small human's sake.\n\nThe humans asked if Ivy would come home with them so they could show their appreciation, and so Ivy walked with them.  That night she learned much.  The family were called The Arroyo's.  The little one, Sophia.  Mofongo is what they called a plate of deliciousness.  But most importantly, she learned that the people attacking them were called \"The Mendoza Syndicate\", and they were hurting people...nice people like The Arroyo's.\n\n18 years have passed since the day the Arroyo's took Ivy home... and during that she made it her mission to dismantle the Mendoza Syndicate and free Spanish Harlem from its grasp.  However the thing about dedicating your life to a single pursuit for nearly 2 decades is that you don't really know what to once you achieve it.  For the first time in her life, Ivy is prepared to venture outside of Spanish Harlem and see what the world has to offer beyond vigilante justice."
+		"hero_tengu_lore"				"The gargoyle didn't know what was happening when it sprang to life...  just that a big human and a small human were being hurt.  And so the gargoyle leapt to action, sending the attackers fleeing in horror.  The small human said thank you and asked the gargoyle's name.  The gargoyle didn't have one.  And so the small human said, \"I'm going to call you Ivy.\"  The gargoyle, being covered in ivy at the time, thought it was a bit obvious, but decided to go along with it for the small human's sake.\n\nThe humans asked if Ivy would come home with them so they could show their appreciation, and so Ivy walked with them.  That night she learned much.  The family were called The Arroyo's.  The little one, Sophia.  Mofongo is what they called a plate of deliciousness.  But most importantly, she learned that the people attacking them were called \"The Mendoza Syndicate\", and they were hurting people...nice people like The Arroyo's.\n\n18 years have passed since the day the Arroyo's took Ivy home... and during that she made it her mission to dismantle the Mendoza Syndicate and free Spanish Harlem from its grasp.  However the thing about dedicating your life to a single pursuit for nearly 2 decades is that you don't really know what to do once you achieve it.  For the first time in her life, Ivy is prepared to venture outside of Spanish Harlem and see what the world has to offer beyond vigilante justice."
 		"hero_synth_lore"				"Arin Fairfax, the eldest heir to Fairfax Industries, has been living in hiding for the past 5 years after being shot and left for dead on their 18th birthday.  Arin doesn't know who is trying to keep them from taking control of their parent's company... but in the avarice fueled viper's nest that is Fairfax Industries it could be anyone.\n\nTaking on the name \"Pocket\", Arin desperately wants to keep their true identity a secret… not only for their own protection; but because they want to forge their own identity separate from their parents."
 		"hero_mirage_lore"				"The Djinn are one of the more curious groups of people in the modern world.  Possessing great power in controlled doses, Djinn are incapable of maintaining corporeal form for longer than 48 minutes without resting within a vessel.  As a result, most Djinn employ human bodyguards for transport, protection, and companionship.\n\nMirage is one such bodyguard.  Employeed by Djinn ambassador Nashala Dion, Mirage is in New York on a diplomatic mission.  It's the hope of the Djinn that they can negotiate with the US government for a sale of part of Wyoming so that they can build a sovereign nation for their people."
 		"hero_slork_lore"				"[lore here]"
@@ -4441,7 +4468,7 @@
 		"cooldown_reduction_pickup/cooldown_reduction"	"Reduced Cooldown"
 		"zipline_speed_pickup/zipline_speed"			"Increased Zipline Speed"
 		"extra_stamina_pickup/extra_stamina"			"Extra Stamina"
-		"clip_size_pickup/clip_size"					"4 Large clips"
+		"clip_size_pickup/clip_size"					"3 Large clips"
 
 		"small_gold_pickup_label"						"Souls"
 		"cooldown_reduction_pickup_label"				"Lower Cooldowns"
@@ -4449,7 +4476,7 @@
 		"health_regen_pickup_label"						"Healing"
 		"zipline_speed_pickup_label"					"Zipline Speed"
 		"extra_stamina_pickup_label"					"Extra Stamina"
-		"clip_size_pickup_label"						"4 Large clips"
+		"clip_size_pickup_label"						"3 Large clips"
 		"fire_rate_pickup_label"						"Fire Rate"
 
 
@@ -6798,6 +6825,7 @@
 		"AbilityButtonHint_Activate"				"Activate"
 		"AbilityButtonHint_Detonate"				"Detonate"
 		"AbilityButtonHint_EruptWall"				"Erupt Wall"
+		"AbilityButtonHint_CancelWall"				"Remove Wall"
 		"AbilityButtonHint_CastShadowRedemption"	"Resurrect with Shadow Redemption"
 		"AbilityButtonHint_SpeedBoost"				"Speed Boost"
 		"AbilityButtonHint_GuidedArrowSpeed"		"Accelerate"
@@ -6820,6 +6848,9 @@
 		"AbilityButtonHint_CastOnTarget"			"Cast on Target"
 		"AbilityButtonHint_ZipLineBoost"			"<span class=\"AbilityName\">Zipline Speed Boost</span> <span class=\"Countdown\">{s:ability_cooldown}</span>"
 		"AbilityButtonHint_LightningCrashDive"		"Dive Early"
+		"AbilityButtonHint_CancelIceDome"				"Remove Shelter"
+		"AbilityButtonHint_GrabTarget"				"Grab Target"
+		"AbilityButtonHint_DropTarget"				"Drop Hero"
 
 		"AbilityButtonHint_HoldToAltVoidSphere"			"Hold to Bring Allies"
 		"AbilityButtonHint_DoubleTapAltVoidSphere"		"Double Tap to Bring Allies"
@@ -6839,7 +6870,7 @@
 		// START Chat
 		//-----------------------------------------------------------------------------
 
-		"citadel_chatmessage"					"<span class=\"ChatTarget\">{s:target} <span class=\"ChatPersona\"><span class=\"{s:player_color_class}\">{s:persona}</span></span></span>:&nbsp;{s:chat_wheel_icon} {s:message}"
+		"citadel_chatmessage"					"{s:target} {s:persona}: {s:message}"
 		"citadel_purchasemessage"				"<span class=\"ChatTarget\">{s:target} <span class=\"ChatPersona\"><span class=\"{s:player_color_class}\">{s:persona}</span></span></span> <span class=\"{s:purchaseText}\">{s:soldOrPurchasedText}</span> <span class=\"{s:message_color_class}\">{s:message}</span>"
 		"citadel_ping_wheel_message"			"{s:message}"
 	
@@ -7097,5 +7128,9 @@
 		"AbilityStat_Bebop_UppercutTarget_desc"						"You knocked <span class=\"boldText\">{i:lifetime_value} enemies</span> away with Uppercut"
 		"AbilityStat_Bebop_UppercutLandingDamage_title"				"Uppercut Landing Damage"
 		"AbilityStat_Bebop_UppercutLandingDamage_desc"				"You dealt <span class=\"boldText\">{i:lifetime_value} damage</span> with Uppercut landing impact"
+
+		"Citadel_GraphicsDriverWarning_Title"				"Warning: Graphics Driver Out-of-Date"
+		"Citadel_GraphicsDriverOutOfDateWarning_AMD"		"For an optimal gameplay experience, please visit AMD support to download the latest driver."
+		"Citadel_GraphicsDriverOutOfDateWarning_Nvidia"		"For an optimal gameplay experience, please visit Nvidia support to download the latest driver."
 	}
 }

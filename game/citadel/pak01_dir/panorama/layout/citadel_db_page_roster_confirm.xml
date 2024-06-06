@@ -10,6 +10,17 @@
 			<Label id="ModeLabel" class="PageTitle" text="{s:mode_name}" />
 		</Panel>
 		<Panel id="HeroRowContainer">
+			<Panel class="rosterCounts">
+				<Panel class="rosterCountsLine">
+					<Label text="Heroes in roster: " />
+					<Label class="rosterCountsValue" text="{i:roster_count}" />
+				</Panel>
+				<Panel class="rosterCountsLine">
+					<Label class="singular" text="Preferred hero: " />
+					<Label class="multiple" text="Preferred heroes: " />
+					<Label class="rosterCountsValue rosterCountsHeroValue" text="{s:preferred_hero}" />
+				</Panel>
+			</Panel>
 			<Panel id="RosterHeroes" />
 		</Panel>
 		<CitadelRosterHeroDetails id="RosterHeroDetails" />
