@@ -192,11 +192,11 @@
 					</Panel>
 				</Panel>
 				<Panel class="death_button_hint shop_while_dead">
-					<Label class="button_hint_text emphasis" text="{s:upgrade_key}" />
+					<Label class="button_hint_text emphasis" html="true" text="{s:upgrade_key}" />
 					<Label class="button_hint_text" text="#Citadel_Dead_ShopReminder" />
 				</Panel>
 				<Panel class="death_button_hint replay_death">
-					<Label class="button_hint_text emphasis" text="{s:key_replay_death}" />
+					<Label class="button_hint_text emphasis" html="true" text="{s:key_replay_death}" />
 					<Label class="button_hint_text" text="#Citadel_Dead_ReplayDeath" />
 				</Panel>
 			</Panel>
