@@ -2268,6 +2268,13 @@ CitadelSettingsEnum .EnumButton
 	z-index: 20;
 }
 
+#HUDPingIndicator
+{
+	horizontal-align: right;
+	margin-right: -35px;
+	margin-left: 35px;
+}
+
 .EmoticonsContainerTitle
 {
 	margin-left: 4px;
@@ -2663,5 +2670,20 @@ CitadelSettingsEnum .EnumButton
 #SoundGameVoiceVolume,#SoundGameVolume
 {
 	visibility: collapse;
+}
+
+.ContextualPingButton
+{
+	background-color: #253341ea;
+}
+
+.ContextualPingButton,.UsingContextualPings .NonContextualPingButton
+{
+	visibility: collapse;
+}
+
+.UsingContextualPings .ContextualPingButton
+{
+	visibility: visible;
 }
 

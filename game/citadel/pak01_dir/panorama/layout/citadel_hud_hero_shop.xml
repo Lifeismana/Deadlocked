@@ -123,6 +123,7 @@
 						<Label class="NavLabel FilterType" text="{s:filter_name}" />
 					</Panel>
 				</Panel>
+				<CitadelHeroBuildsSelector id="HeroBuildSelector" user_builds_only="false" />
 				<Panel id="ShopModListsContainer">
 					<Label class="HeroFavoritesHeaderLabel" text="{s:hero_name}&apos;s Recommended Mods" />
 					<CitadelShopModsList id="ShopModsListWeapon" category="Weapon" />

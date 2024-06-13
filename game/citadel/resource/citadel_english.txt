@@ -231,7 +231,7 @@
 		"Citadel_Shop_TierBonus"									"TIER BONUS"
 		"Citadel_Shop_TierBonus_Weapon"								"Weapon Damage"
 		"Citadel_Shop_TierBonus_Armor"								"Base Health"
-		"Citadel_Shop_TierBonus_Tech"								"Spirit"
+		"Citadel_Shop_TierBonus_Tech"								"Spirit Power"
 		"Citadel_Item_Tooltip_ReturnToShop"							"Return to Shop to purchase"
 		"Citadel_Item_Tooltip_CantAfford"							"Can't afford mod"
 		"Citadel_Player_Level_AbilityPoints"						"<span class=\"boldText\">1 Ability Point</span> gained at levels 2, 3, 5, 7, and each level after"
@@ -243,7 +243,7 @@
 		"Citadel_Player_Level_PowerIncreases"						"Power Increases"
 		"Citadel_Hero_Stats_Tooltip_WeaponPower"					"Total Bonus to your Gun and Melee Damage gained from buying items in the Weapon tree"
 		"Citadel_Hero_Stats_Tooltip_HealthMult"						"Total Bonus to your Base Health gained from buying items in the Vitality tree"
-		"Citadel_Hero_Stats_Tooltip_Spirit"							"Spirit increases the effectiveness of your Abilities. Spirit is gained from buying items in the Spirit tree"
+		"Citadel_Hero_Stats_Tooltip_Spirit"							"Spirit Power increases the effectiveness of your Abilities. Spirit Power is gained from buying items in the Spirit tree"
 		"Citadel_Hero_Stats_Tooltip_Shards"							"Your available currency to spend on items"
 		"Citadel_Hero_Stats_Souls"									"Souls"
 		"Citadel_Hero_Stats_Unsecured"								"Unsecured"
@@ -282,8 +282,9 @@
 		"Citadel_Friends_Add_Friend_Entry_Placeholder"		"Enter Friend ID to search for"
 		"Citadel_Friends_Add_Friend_Your_ID"				"Your Friend ID is:"
 		"Citadel_Friends_Friend_Code_Button"				"Add friend"
-		"Citadel_Friends_Online"							"<span class=\"OnlineNumber\">{d:friends_online}</span> Friends Online"
-		"Citadel_Friends_Playing"							"<span class=\"OnlineNumber\">{d:friends_in_game}</span> Friends Playing"
+		"Citadel_Friends_Play_With_Friends"					"Play with Friends"
+		"Citadel_Friends_Online"							"<span class=\"OnlineNumber\">{d:friends_online}</span> Online"
+		"Citadel_Friends_Playing"							"<span class=\"OnlineNumber\">{d:friends_in_game}</span> In-Game"
 
 		"Citadel_Play_MatchmakingOfflineTitle"				"Matchmaking Closed"
 		"Citadel_Play_MatchmakingOfflineText"				"Matchmaking is currently closed. Please come back during the scheduled playtesting times"
@@ -459,7 +460,7 @@
 		"Citadel_HUD_RejuvCaptured"									"Captured Rejuvenator"
 		"Citadel_HUD_RejuvStolen"									"Stole Rejuvenator!"
 		"Citadel_HUD_IdolPickedUp"									"Urn Picked Up!"
-		"Citadel_HUD_IdolReturned"									"Spirit Urn Returned!"
+		"Citadel_HUD_IdolReturned"									"Soul Urn Returned!"
 		"Citadel_HUD_DamageSummary_Title"							"Damage <i>Taken</i>"
 		"Citadel_HUD_DamageSummary_Hint"							"Hold <span class=\"keybind\">[{s:key_extra_info}]</span> to view adjustment details"
 
@@ -530,6 +531,9 @@
 
 		"Citadel_HUD_AbilityUnlockAvailable"						"Hold <span class=\"keybind\">[{s:show_scoreboard}]</span> to Unlock an Ability"
 		"Citadel_HUD_AbilityUpgradeAvailable"						"Hold <span class=\"keybind\">[{s:show_scoreboard}]</span> to Upgrade an Ability"
+
+		"Citadel_HUD_JoinTeamChat_Dialog"							"Hold <span class=\"keybind\">[{s:key_voice_record}]</span> to opt-in to Team Chat"
+
 
 		"Citadel_HUD_Damage_TooFar"									"TOO FAR"
 		"Citadel_HUD_Damage_Invulnerable"							"SHIELDED"
@@ -617,11 +621,17 @@
 		"Citadel_Roster_Random"										"Random"
 		"Citadel_GC_NoSteam"										"Unable to matchmake. No connection to Steam."
 		"Citadel_GC_steamupdating"									"Unable to matchmake. No connection to Steam."
-		"Citadel_GC_updating"										"Unable to matchmake. Game coordinator is updating."
-		"Citadel_GC_noconnection"									"Unable to matchmake. No connection to game coordinator."
+		"Citadel_GC_updating"										"Unable to matchmake. The Deadlock Network is updating."
+		"Citadel_GC_noconnection"									"Unable to matchmake. No connection to the Deadlock Network."
+		"Citadel_Dashboard_Status_ConnectingToServer"				"Connecting to Game Server"
+		"Citadel_Dashboard_Status_ConnectingToServer_Detail"		"Your match will begin shortly"
+		"Citadel_Dashboard_Status_GCOffline"						"Deadlock Network Offline"
+		"Citadel_Dashboard_Status_GCOffline_Detail"					"Some features may be unavailable"
 
 		"Citadel_ZiplineBoostDesc"									"Zipline Boost"
 
+		"citadel_mute_player"									"Click to mute player"
+		"citadel_unmute_player"									"Click to un-mute player"
 
 		"Citadel_PartyFindMatch_OpenInvitesTitle"				"Pending Invites"
 		"Citadel_PartyFindMatch_OpenInvitesBody"				"You have pending party invites that haven't been accepted. Do you want to cancel these invites and proceed?"
@@ -692,8 +702,22 @@
 		"Citadel_PartyAction_TooBusy"							"The Deadlock Network is too busy to process this action right now. Please try again in a few minutes."
 		"Citadel_PartyAction_RateLimited"						"You have performed too many operations in a short period of time. Please wait a little while and try again."
 		"Citadel_PartyAction_AlreadyDrafting"					"The party has already started a match. You must stop the current match before you start another one."
-		"Citadel_PartyAction_PlayerBanned"						"A member of your party {g:citadel_persona:nl:account_id} is currently banned from this mode until {t:s:time_stamp} at {t:t:time_stamp}"
-		"Citadel_PartyAction_TooManyHighMMR"					"Your party contains too many very high MMR players to be able to match make. We are temporarily not allowing this to avoid unbalanced teams among high skill players."
+		
+		"Citadel_PartySetMode_ErrorTitle"						"Error"
+		"Citadel_PartySetMode_FailedToGetResponse"				"Unable to talk to the Deadlock Network right now. Please try again in a few minutes."
+		"Citadel_PartySetMode_InternalError"					"An unexpected internal error occurred. Please try again in a few minutes."
+		"Citadel_PartySetMode_InvalidParty"						"The party could not be found. It may have already been abandoned."
+		"Citadel_PartySetMode_InvalidPermissions"				"You do not have permission to make those changes to that party."
+		"Citadel_PartySetMode_InvalidValue"						"The provided value was not valid for this party."
+		"Citadel_PartySetMode_InMatchMaking"					"The party is currently in match making, and this change could not be made at this time."
+		"Citadel_PartySetMode_InMatch"							"The party is currently in a match, and this change could not be made at this time."
+		"Citadel_PartySetMode_Disabled"							"This action is temporarily disabled. Please try again in a few minutes."
+		"Citadel_PartySetMode_TooBusy"							"The Deadlock Network is too busy to process this action right now. Please try again in a few minutes."
+		"Citadel_PartySetMode_RateLimited"						"You have performed too many operations in a short period of time. Please wait a little while and try again."
+		"Citadel_PartySetMode_AlreadyDrafting"					"The party has already started a match. You must stop the current match before you start another one."
+		"Citadel_PartySetMode_PlayerBanned"						"A member of your party {g:citadel_persona:nl:account_id} is currently banned from this mode until {t:s:time_stamp} at {t:t:time_stamp}"
+		"Citadel_PartySetMode_TooManyHighMMR"					"Your party contains too many very high MMR players to be able to match make. We are temporarily not allowing this to avoid unbalanced teams among high skill players."
+
 
 		"Citadel_PartyInvite_ErrorTitle"						"Unable to Send Invite"
 		"Citadel_PartyInvite_FailedToGetResponse"				"Unable to talk to the Deadlock Network right now and invite the specified user. Please try again in a few minutes."
@@ -1191,7 +1215,7 @@
 		"citadel_ability_projectmind_quip"		"Teleport to the targeted location"
 		"citadel_ability_projectmind_desc"			"<span class=\"highlight\">Teleport</span> to the targeted location."
 		"BulletShieldOnLand_label"				"Bullet Shield on Teleport"
-		citadel_ability_projectmind_t2_desc	"Provides a <span class=\"highlight\">{s:BulletShieldOnLand} bullet shield</span> for {s:BulletShieldDuration}s on teleport. Shield amount scales with Spirit."
+		citadel_ability_projectmind_t2_desc	"Provides a <span class=\"highlight\">{s:BulletShieldOnLand} bullet shield</span> for {s:BulletShieldDuration}s on teleport. Shield amount scales with Spirit Power."
 		modifier_wraith_project_mind_shield				"Bullet Shield"
 		citadel_ability_projectmind/modifier_citadel_projectmind/modifier_wraith_project_mind_shield	"Bullet Shield"
 		wraith_project_mind_t2_title			"Bullet Shield:"
@@ -1209,7 +1233,17 @@
 		"citadel_ability_wraith_rapidfire_desc"	"Temporarily boosts your <span class=\"highlight\">fire rate</span>. Nearby allies receive half the fire rate bonus."
 		"citadel_ability_wraith_rapidfire/modifier_rapidfire" "Rapid Fire"
 		
-		
+		citadel_ability_card_toss	"Card Trick"
+		citadel_ability_card_toss_quip "Throw homing cards"
+		citadel_ability_card_toss_desc "Deal weapon damage to summon cards.  Activate to throw a card that flies towards the enemy or point under your crosshair."
+		CardResourceGenPctScale_label			"Card Summon Rate"
+		CardResourceGenPctScale_postfix			"%"
+
+		citadel_ability_psychic_pulse "Psychic Pulse"
+		citadel_ability_psychic_pulse_quip "Reveal enemies through walls"
+		citadel_ability_psychic_pulse_desc "Sense enemies in front of you, revealing their position through walls to your team.  Card Trick can target enemies seen through walls"
+		SenseRange_label	"Sense Range"
+
 		//-----------------------------------------------------------------------------
 		// Hero Heavy 
 		//-----------------------------------------------------------------------------
@@ -1320,7 +1354,7 @@
 		citadel_ability_time_bomb_quip			"Proximity explosion"
 		citadel_ability_time_bomb_desc			"{s:hero_name} throws a bomb that explodes if enemies are in its radius after its arm time. The explosion causes a quick <span class=\"highlight\">time freeze</span> and deals <span class=\"highlight\">{s:SingleTargetMult}x more damage</span> if it only hits a single target."
 		citadel_ability_time_bomb_t2_desc		"Enemies hit by Time Bomb will have their <span class=\"highlight\">bullet resist reduced by {s:BulletArmorReduction}</span> for <span class=\"highlight\">{s:BulletArmorReductionDuration}s</span>"
-		citadel_ability_time_bomb_t3_desc		"<span class=\"highlight\">+{s:Damage} Damage</span> and Time Bomb gains <span class=\"highlight\">+50% more damage</span> from Spirit"
+		citadel_ability_time_bomb_t3_desc		"<span class=\"highlight\">+{s:Damage} Damage</span> and Time Bomb gains <span class=\"highlight\">+50% more damage</span> from Spirit Power"
 		chrono_time_trap_debuff					"Time Bomb"
 
 		citadel_ability_chrono_pulse_grenade			"Pulse Grenade"
@@ -1511,7 +1545,7 @@
 		"ability_afterburn"				"Afterburn"
 		"ability_afterburn_quip"			"Shoot enemies to set them on fire"
 		"ability_afterburn_desc"			"Your bullets build up to <span class=\"highlight\">apply a burning effect on enemies</span>. {s:hero_name}'s bullets and abilities will <span class=\"highlight\">refresh</span> the duration."
-		ability_afterburn_t2_desc	"<span class=\"highlight\">{s:AfterburnSpiritDamageReduction}%</span> Spirit Damage on victims."
+		ability_afterburn_t2_desc	"Victims deal <span class=\"highlight\">{s:AfterburnSpiritDamageReduction}%</span> Spirit Damage."
 
 		"modifier_citadel_afterburn_buildup"	"Igniting"
 		BuildUpBulletPercentPerHit_label		"Buildup per bullet"
@@ -1654,7 +1688,7 @@
 		"ability_sleep_dagger_quip"		"Put an enemy to sleep"
 		"ability_sleep_dagger_desc"		"Throw a dagger that <span class=\"highlight\">damages</span> and <span class=\"highlight\">sleeps</span> the target. Sleeping targets wake up shortly after being damaged. Throwing a Dagger does not break invisibility."
 		"ability_sleep_dagger/modifier_citadel_sleep_bomb/modifier_citadel_sleep_dagger_asleep"		"Sleeping"
-		ability_sleep_dagger_t3_desc	"Upon waking, victims deal <span class=\"highlight\">{s:VictimDamagePenalty}% damage</span> for {s:VictimDamagePenaltyDuration}s."
+		ability_sleep_dagger_t3_desc	"Applies <span class=\"highlight\">{s:BulletResistReduction}% Bullet Resist</span> for {s:BulletResistReductionDuration}s on wake-up."
 
 		"modifier_citadel_sleep_dagger_asleep"	"Asleep"
 		//HazeDaggerRadius_label			"Hit Radius"
@@ -1746,7 +1780,7 @@
 		"citadel_ability_self_vacuum"			"Singularity"
 		"citadel_ability_self_vacuum_quip"		"Pull in and stun the enemy team"
 		"citadel_ability_self_vacuum_desc"		"Create a singularity in your hands that <span class=\"highlight\">pulls in nearby enemies and damages them</span>. Once it's finished, enemies get knocked into the air."
-		citadel_ability_self_vacuum_t3_desc		"Singularity takes <span class=\"highlight\">{s:DamagePercentHealth}%</span> of the enemies max health each second."
+		citadel_ability_self_vacuum_t3_desc		"Singularity takes <span class=\"highlight\">{s:DamagePercentHealth}%</span> of the enemies' max health each second."
 		VacuumRadius_label						"Singularity Radius"
 		VacuumRadius_postfix					"m"
 		DamagePercentHealth_label				"Damage Health Percent"
@@ -1848,7 +1882,7 @@
 		ability_warden_high_alert				"Willpower"
 		ability_warden_high_alert_quip			"Gain a spirit shield and movement speed"
 		ability_warden_high_alert_desc			"Gain a <span class=\"highlight\">spirit shield</span> that provides <span class=\"highlight\">bonus movement speed while active</span>. The shield also <span class=\"highlight\">blocks spirit damage-based effects</span>."
-		ability_warden_high_alert_t3_desc		"<span class=\"highlight\">+{s:TechShieldPoints}</span> Spirit Shield Health and now scales with Spirit"
+		ability_warden_high_alert_t3_desc		"<span class=\"highlight\">+{s:TechShieldPoints}</span> Spirit Shield Health and now scales with Spirit Power"
 		MoveSpeedBonusPct_label					"Move speed bonus"
 		MoveSpeedBonusPct_postfix				"%"
 		TechShieldPoints_label					"Spirit Shield Health"
@@ -1957,12 +1991,14 @@
 
 		"citadel_ability_lash_down_strike"			"Ground Strike"
 		"citadel_ability_lash_down_strike_quip"		"Slam down to the ground, damaging enemies"
-		citadel_ability_lash_down_strike_desc		"Stomp the ground beneath you, <span class=\"highlight\">damaging enemies</span> in front of you. If you perform Ground Strike while airborne, you quickly dive towards the ground."
-		StompDamagePerMeter_label					"Damage per meter dropped"
+		citadel_ability_lash_down_strike_desc		"Stomp the ground beneath you, <span class=\"highlight\">damaging enemies</span> in front of you. If you perform Ground Strike while airborne, you quickly dive towards the ground. Damage grows slower after 25m."
+		StompDamagePerMeterPrimary_label					"Damage Per Meter"
 		citadel_ability_lash_down_strike_t2_desc	"Struck enemies are <span class=\"highlight\">popped into the air</span> and slowed by <span class=\"highlight\">{s:EnemySlowPct}%</span> for <span class=\"highlight\">{s:SlowDuration}s</span>"
+		citadel_ability_lash_down_strike_t3_desc	"<span class=\"highlight\">Damage Per Meter</span> +110% and improved scaling"
+		
 		
 		// Custom Tool Tip +(8.75/7)% damage
-		citadel_ability_lash_down_strike_t3_desc	"Increase Damage per meter dropped by <span class=\"highlight\">+85%</span>"
+		
 
 		lash_down_strike_slow_modifier			"Slowed"
 
@@ -2024,7 +2060,7 @@
 		"ability_ice_grenade_quip"			"Damage and slow enemies"
 
 		"ability_ice_grenade_desc"			"Throw a grenade that explodes in a cloud of freezing ice, <span class=\"highlight\">damaging</span> and <span class=\"highlight\">slowing</span> enemies."
-		"ability_ice_grenade_t2_desc"		"Frost Grenade now <span class=\"highlight\">heals {s:HealAmount} HP</span> to friendly targets. Scales with Spirit."
+		"ability_ice_grenade_t2_desc"		"Frost Grenade now <span class=\"highlight\">heals {s:HealAmount} HP</span> to friendly targets. Scales with Spirit Power."
 		"ability_ice_grenade/kelvin_ice_grenade_slow"	"Ice Grenade Slow"
 
 		"ability_icebeam"					"Arctic Beam"
@@ -2047,13 +2083,13 @@
 		"ability_icepath"					"Ice Path"
 		"ability_icepath_quip"				"Speed around on a floating path of ice"
 		"ability_icepath_desc"				"{s:hero_name} creates a <span class=\"highlight\">floating trail</span> of ice and snow that gives movement bonuses to him and his allies. Kelvin gains {s:SlowResistancePercent}% slow resistance for the duration. Enemies can also walk on the floating trail. <br>Press [{s:key_innate_1}] / [{s:key_duck}] to travel up or down while in Ice Path."
-		"ability_icepath_t3_desc"			"While active, gain +{s:BonusSpiritMeter} Spirit per meter of Ice Path trail created.  Max of {s:BonusSpiritMax} Spirit"
+		"ability_icepath_t3_desc"			"While active, gain +{s:BonusSpiritMeter} Spirit Power per meter of Ice Path trail created.  Max of {s:BonusSpiritMax} Spirit Power"
 		SprintSpeedBonus_label				"Sprint Speed"
 		SprintSpeedBonus_prefix				"+"
 		SprintSpeedBonus_postfix			"m/s"
 		IcePathAuraDuration_label			"Ice Trail Duration"
 		IcePathAuraDuration_postfix			"s"
-		"BonusTechPower_label"				"Spirit while Pathing"
+		"BonusTechPower_label"				"Spirit Power while Pathing"
 		IcePathShardRadius_label			"Path Width"
 		IcePathShardRadius_postfix			"m"
 		BonusTechDamagePercent_label		"Bonus Spirit Damage"
@@ -2064,7 +2100,7 @@
 		"ability_ice_dome_quip"			"Create an impenetrable healing dome"
 		"ability_ice_dome_desc"			"{s:hero_name} freezes the air around him, creating an <span class=\"highlight\">impenetrable dome</span> around himself. While in the dome, allies rapidly <span class=\"highlight\">regenerate health</span> and enemies are <span class=\"highlight\">slowed</span>."
 		"ability_ice_dome_t1_desc"		"<span class=\"highlight\">+{s:FireRateSlow}%</span> Fire Rate Slow"
-		"ability_ice_dome_t3_desc"		"<span class=\"highlight\">+{s:BonusHealthRegen}</span> Health Regen and now scales with Spirit"
+		"ability_ice_dome_t3_desc"		"<span class=\"highlight\">+{s:BonusHealthRegen}</span> Health Regen and now scales with Spirit Power"
 		"ability_ice_dome/modifier_ice_dome/modifier_debuff"						"Frozen Shelter"
 		"frozen_shelter_modifier_buff"		"Frozen Shelter"
 		"ability_ice_dome/modifier_ice_dome/ice_dome_enemy_aura/modifier_debuff"	"Frozen Shelter"
@@ -2100,7 +2136,7 @@
 
 		"citadel_ability_bebop_laser_beam"		"Hyper Beam"
 		"citadel_ability_bebop_laser_beam_quip"	"Unleash a massive damaging beam"
-		"citadel_ability_bebop_laser_beam_desc" "Charge up your laser to unleash a powerful torrent of energy that <span class=\"highlight\">deals damage and slows enemies</span>. You have slow movement and turn rate for the duration. If activated in the air, you will hover while unleashing the beam."
+		"citadel_ability_bebop_laser_beam_desc" "Charge up your laser to unleash a powerful torrent of energy that <span class=\"highlight\">deals damage</span> and <span class=\"highlight\">slows enemies' movement and dashes</span>. You have slow movement and turn rate for the duration. If activated in the air, you will hover while unleashing the beam."
 		"modifier_bebop_laser_beam"				"Hyper Beam"
 		"citadel_ability_bebop_laser_beam_t3_desc"	"Hyper Beam heals {s:hero_name} for <span class=\"highlight\">{s:BeamLifesteal}%</span> of its damage on Heroes. {s:BeamLifestealNonHeroPercent}% on non-hero"
 		"BeamLength_label"						"Beam Length"
@@ -2111,7 +2147,7 @@
 
 		"citadel_ability_hook"					"Hook"
 		"citadel_ability_hook_quip"				"Pull in a target to you"
-		"citadel_ability_hook_desc"				"Launch out a hook that <span class=\"highlight\">grabs and reels in</span> the first enemy or friendly hero it hits, dealing damage if the target is an enemy."
+		"citadel_ability_hook_desc"				"Launch out a hook that <span class=\"highlight\">grabs and reels in</span> the first enemy or friendly hero it hits, dealing damage if the target is an enemy.<br>Target will be placed where you are facing."
 		"citadel_ability_hook_t1_desc"			"Bebop deals <span class=\"highlight\">{s:BulletAmp}% more bullet damage</span> against hooked enemies for {s:BulletAmpDuration}s"
 		BulletShieldOnHook_label				"Bullet Shield"
 		BulletShieldOnHook_postfix				"HP"
@@ -2129,9 +2165,9 @@
 		"akimbo_chargedshot_t3_desc"	"Reduces enemy bullet armor by <span class=\"highlight\">{s:BulletArmorReduction}</span> for <span class=\"highlight\">{s:BulletArmorReductionDuration}s</span>"
 
 		"akimbo_stealammo"			"Steal Clip"
-		"akimbo_stealammo_desc"		"Force targets to reload. {s:hero_name} gains <span class=\"highlight\">{s:StealTechPower}% Spirit</span> per target."
+		"akimbo_stealammo_desc"		"Force targets to reload. {s:hero_name} gains <span class=\"highlight\">{s:StealTechPower}% Spirit Power</span> per target."
 		"akimbo_stealammo/modifier_bonus_tech_power"	"Spirit Bonus"
-		"StealTechPower_label"				"Steal Spirit"
+		"StealTechPower_label"				"Steal Spirit Power"
 		"TargetReloadSpeedPenalty_label"	"Target Reload Speed Penalty"
 		"TargetReloadSpeedPenalty_postfix"	"%"
 
@@ -2445,7 +2481,7 @@
 		"modifier_citadel_death_tax"				"Death Tax"
 		"modifier_citadel_death_tax_tech_amp"		"Death Tax Power"
 		ability_death_tax_t1_desc	"Reduce one of your Cooldowns by <span class=\"highlight\">{s:CooldownReductionOnKill}s</span> when a marked enemy dies"
-		ability_death_tax_t3_desc	"Increase Spirit by <span class=\"highlight\">{s:TechPowerAmpBonus}</span> for <span class=\"highlight\">{s:TechPowerAmpBonusDuration}s</span> when a marked enemy dies.  Stacks up to <span class=\"highlight\">{s:TechPowerAmpBonusMaxStacks}</span> times."
+		ability_death_tax_t3_desc	"Increase Spirit Power by <span class=\"highlight\">{s:TechPowerAmpBonus}</span> for <span class=\"highlight\">{s:TechPowerAmpBonusDuration}s</span> when a marked enemy dies.  Stacks up to <span class=\"highlight\">{s:TechPowerAmpBonusMaxStacks}</span> times."
 
 		ability_blood_shards				"Malice"
 		ability_blood_shards_quip			"Stack damage amplification on an enemy"
@@ -2605,11 +2641,12 @@
 
 		"ability_ult_combo"				"Combo"
 		"ability_ult_combo_quip"		"Hold the enemy hero in place and pummel them"
-		"ability_ult_combo_desc"		"Hold the target in place, <span class=\"highlight\">stunning them and dealing damage</span> during the channel."
+		"ability_ult_combo_desc"		"Hold the target in place, <span class=\"highlight\">stunning them and dealing damage</span> during the channel. If they die during Combo, you permanently gain max health."
 		"ability_ult_combo_t2_desc"		"Combo Duration <span class=\"highlight\">+{s:AbilityChannelTime}s</span>"
 		"ability_ult_combo_t3_desc"		"<span class=\"highlight\">+{s:DPS}</span> Damage Per Second and <span class=\"highlight\">{s:LifeStealPercentOnHit}% lifesteal</span>"
 		LifestealPercentOnHit_label		"Lifesteal"
 		LifestealPercentOnHit_postfix	"%"
+		BonusHealthOnKill_label			"Bonus Max Health Per Kill"
 
 		GrabExtraTargetRange_label		"Extra Target Range"
 		GrabExtraTargetRange_postfix	"m"
@@ -2673,7 +2710,7 @@
 		BuffBulletDamage_label					"Weapon Damage"
 		BuffBulletDamage_prefix					"+"
 		BuffBulletDamage_postfix				"%"
-		BuffSpirit_label						"Spirit"
+		BuffSpirit_label						"Spirit Power"
 		BuffSpirit_prefix						"+"
 		
 		citadel_ability_shiv_transform			"Transform"
@@ -2787,7 +2824,7 @@
 
 		synth_barrage				"Barrage"
 		synth_barrage_quip			"Air glide while firing multiple projectiles"
-		synth_barrage_desc			"Channel to start launching projectiles that <span class=\"highlight\">deal damage and apply movement slow</span> around their impact point. Each projectile landed on a hero grants you a <span class=\"highlight\">stacking buff that amplifies all of your damage</span>. If you cast it while in the air, you'll <span class=\"highlight\">float</span> and maintain any horizontal momentum you started with."
+		synth_barrage_desc			"Channel to start launching projectiles that <span class=\"highlight\">deal damage</span> and <span class=\"highlight\">apply movement slow</span> around their impact point. Each projectile landed on a hero grants you a <span class=\"highlight\">stacking buff that amplifies all of your damage</span>.<br>If you cast it while in the air, you'll <span class=\"highlight\">float</span> and maintain any horizontal momentum you started with."
 		synth_barrage_t3_desc		"<span class=\"highlight\">{s:LifeStealPercentOnHit}% lifesteal on Heroes.</span> ({s:LifeStealPercentOnHitNonHero}% on other)"
 
 		DamagePerProjectile_label	"Damage Per Projectile"
@@ -2914,7 +2951,7 @@
 		"citadel_ability_tengu_ghost_desc"		"Summon a tracking ghost that bounces randomly {s:Bounces} times to new targets after impact. Slows targets hit for 5 seconds."
 		"citadel_ability_tengu_ghost_t3_desc"	"Bounces +{s:Bounces} additional times"
 
-		"citadel_ability_tengu_stone_form"			"True Form"
+		"citadel_ability_tengu_stone_form"			"Stone Form"
 		"citadel_ability_tengu_stone_form_quip"		"Turn into impervious stone and stun enemies nearby"
 		"citadel_ability_tengu_stone_form_desc"		"Turn yourself into <span class=\"highlight\">impervious stone</span> and smash into the ground, <span class=\"highlight\">stunning and damaging</span> enemies nearby. Heals you for a percentage of your max health. You have some air control before falling."
 		"citadel_ability_tengu_stone_form_t2_desc"	"<span class=\"highlight\">+{s:Damage} Damage</span> and stuns for <span class=\"highlight\">{s:StunDuration}s</span>."
@@ -2939,7 +2976,7 @@
 		"citadel_modifier_tangotether_tether_receiver"	"Covenant"											
 
 		"citadel_ability_tengu_lightningcrash"		"Falling Grace"
-		"citadel_ability_tengu_lightningcrash_quip"	"Fly above the battlefield and spew flames"
+		"citadel_ability_tengu_lightningcrash_quip"	"Fly above the battlefield"
 		"citadel_ability_tengu_lightningcrash_desc"	"Jump into the air and start flying for a short time. When you hit the ground you <span class=\"highlight\">deal damage</span> based on how long you flew, as well as gaining a <span class=\"highlight\">regeneration boost</span>. You can end your flight and dive early by pressing <span class='keybind'>[{s:iv_attack}]</span>."
 		"citadel_ability_tengu_lightningcrash_t3_desc"	"<span class=\"highlight\">+{s:Damage}</span> Damage, and <span class=\"highlight\">+{s:Regeneration}</span> Regeneration"
 		"AirSpeedHealthBonus_label"			"Healthy Speed Bonus"
@@ -3806,7 +3843,7 @@
 		"Citadel_StatusEffectBuff"		"Buff"
 
 		// modifier names
-		"modifier_idol_pickup_aura/aura_target/timer"			"Picking up Spirit Urn"
+		"modifier_idol_pickup_aura/aura_target/timer"			"Picking up Soul Urn"
 		"modifier_neutral_gold_pickup_aura/aura_target/timer"	"Picking up Unsecured Souls"
 		"modifier_rejuv_pickup_aura/aura_target/timer"			"Picking up Team Rejuvenator"
 		"modifier_early_gold_pickup_aura/aura_target/timer"		"Capturing Team Souls"
@@ -4064,7 +4101,7 @@
 		BonusClipPerKill_label				"Bonus Ammo Per Kill"
 
 		BonusSpiritPerKill_prefix				"{s:sign}"
-		BonusSpiritPerKill_label				"Bonus Spirit Per Kill"
+		BonusSpiritPerKill_label				"Bonus Spirit Power Per Kill"
 
 		MaxClipBonus_label				"Max Clip Bonus"
 
@@ -4132,6 +4169,8 @@
 		"CITADEL_ABILITY_INVALID_ONLY_TWO_AIR_JUMPS"	"Can't air jump three times"
 		"CITADEL_ABILITY_INVALID_ONLY_ONE_AIR_DASH"		"Can't air dash twice"
 		"CITADEL_ABILITY_INVALID_ONLY_TWO_AIR_DASHES"	"Can't air dash three times"
+		"CITADEL_ABILITY_INVALID_ONLY_ONE_DOWN_DASH"	"Can't down dash twice"
+		"CITADEL_ABILITY_INVALID_ONLY_TWO_DOWN_DASHES"	"Can't down dash three times"
 		"CITADEL_ABILITY_INVALID_NOTHING_TO_REFRESH"	"Nothing to refresh"
 		"CITADEL_ABILITY_INVALID_BEETLE_TARGET"			"Target has beetle"
 		"CITADEL_ABILITY_INVALID_CLIP_IS_FULL"			"Clip is full"
@@ -4430,7 +4469,7 @@
 		"hero_warden_lore"				"Most people think the supernatural came into the world 50 years ago.  They’re wrong.  Its presence shaped folklore for generations… and as long as there have been people afraid of the shadows, there have been those who dedicated their lives to fighting in them.\n\nComing from a lineage of militant alchemists, Warden’s family always trained for the day they would have to stave off a mystic apocalypse… but as time passed the importance of the lessons seemed less and less important.  What once was viewed as a sincere warning slowly morphed into being perceived as amusing anecdotes told by their superstitious grandparents.\n\nWhen the portal opened in Central Park, Warden’s parents realized not only was everything they were told was true, they were unprepared.  Refusing to let the next generation fall asleep on the job, Warden was trained since birth to be a supernatural killing machine with one purpose: stopping the Patrons from ever entering our world."
 		"hero_wraith_lore"				"The cornerstone of the New York gambling scene, Wraith's organization is about as open a secret as it comes.  However, thanks to a non-trivial amount of bribes, shakedowns, and blackmail, Wraith knows that she's above the law."
 		"hero_yamato_lore"				"犯罪組織のボスの家に生まれたカオリと兄のヤマトは、\n父の死後、セブンスムーンの運営を引き継ぐ運命に\nあることをずっと自覚していた。彼らは何年もの間、\n二頭体制で組織を運営し、利益と成功をもたらし、\nアメリカへの進出も計画していた。\n\n計画は単純だった。カオリは日本に残って国内を\n統制し、ヤマトはアメリカに渡り国際的な拠点を\n作るはずだった。兄妹にとって不運だったのは、\nカオリが日本で指揮をとるという計画を快く\n思わない部下たちがいたことだった。\n\n反逆は迅速かつ暴力的だった。ヤマトが命を犠牲に\nしてカオリを守ったおかげで、カオリは一握りの\n部下たちと共に日本からアメリカへ逃れることができた。\n\nアメリカに到着したカオリとその一行を迎え入れたのは、\nヤマトを出迎えるはずの人物だった。その男は\n日本人の名前には馴染みがなく、カオリのことを\n「ヤマト」と呼んだ。カオリは間違いを正そうかと思ったが、\n兄を記憶に留める最善の方法は、自分がヤマトの\n名前を受け継ぎ、彼の夢をかなえることだと決意した。"   
-		"hero_tengu_lore"				"The gargoyle didn't know what was happening when it sprang to life...  just that a big human and a small human were being hurt.  And so the gargoyle leapt to action, sending the attackers fleeing in horror.  The small human said thank you and asked the gargoyle's name.  The gargoyle didn't have one.  And so the small human said, \"I'm going to call you Ivy.\"  The gargoyle, being covered in ivy at the time, thought it was a bit obvious, but decided to go along with it for the small human's sake.\n\nThe humans asked if Ivy would come home with them so they could show their appreciation, and so Ivy walked with them.  That night she learned much.  The family were called The Arroyo's.  The little one, Sophia.  Mofongo is what they called a plate of deliciousness.  But most importantly, she learned that the people attacking them were called \"The Mendoza Syndicate\", and they were hurting people...nice people like The Arroyo's.\n\n18 years have passed since the day the Arroyo's took Ivy home... and during that she made it her mission to dismantle the Mendoza Syndicate and free Spanish Harlem from its grasp.  However the thing about dedicating your life to a single pursuit for nearly 2 decades is that you don't really know what to do once you achieve it.  For the first time in her life, Ivy is prepared to venture outside of Spanish Harlem and see what the world has to offer beyond vigilante justice."
+		"hero_tengu_lore"				"The gargoyle didn't know what was happening when it sprang to life...  just that a big human and a small human were being hurt.  And so the gargoyle leapt to action, sending the attackers fleeing in horror.  The small human said thank you and asked the gargoyle's name.  The gargoyle didn't have one.  And so the small human said, \"I'm going to call you Ivy.\"  The gargoyle, being covered in ivy at the time, thought it was a bit obvious, but decided to go along with it for the small human's sake.\n\nThe humans asked if Ivy would come home with them so they could show their appreciation, and so Ivy walked with them.  That night she learned much.  The family were called The Arroyo's.  The little one, Sophia.  Mofongo is what they called a plate of deliciousness.  But most importantly, she learned that the people attacking them were called \"The Mendoza Syndicate\", and they were hurting people...nice people like The Arroyo's.\n\n18 years have passed since the day the Arroyo's took Ivy home... and during that time she made it her mission to dismantle the Mendoza Syndicate and free Spanish Harlem from its grasp.  However the thing about dedicating your life to a single pursuit for nearly 2 decades is that you don't really know what to do once you achieve it.  For the first time in her life, Ivy is prepared to venture outside of Spanish Harlem and see what the world has to offer beyond vigilante justice."
 		"hero_synth_lore"				"Arin Fairfax, the eldest heir to Fairfax Industries, has been living in hiding for the past 5 years after being shot and left for dead on their 18th birthday.  Arin doesn't know who is trying to keep them from taking control of their parent's company... but in the avarice fueled viper's nest that is Fairfax Industries it could be anyone.\n\nTaking on the name \"Pocket\", Arin desperately wants to keep their true identity a secret… not only for their own protection; but because they want to forge their own identity separate from their parents."
 		"hero_mirage_lore"				"The Djinn are one of the more curious groups of people in the modern world.  Possessing great power in controlled doses, Djinn are incapable of maintaining corporeal form for longer than 48 minutes without resting within a vessel.  As a result, most Djinn employ human bodyguards for transport, protection, and companionship.\n\nMirage is one such bodyguard.  Employeed by Djinn ambassador Nashala Dion, Mirage is in New York on a diplomatic mission.  It's the hope of the Djinn that they can negotiate with the US government for a sale of part of Wyoming so that they can build a sovereign nation for their people."
 		"hero_slork_lore"				"[lore here]"
@@ -4709,7 +4748,7 @@
 		"BulletPenetrationPercent_label"				"Bullet Penetration"
 
 		"TechPower_prefix"								"{s:sign}"
-		"TechPower_label"								"Spirit"
+		"TechPower_label"								"Spirit Power"
 		"TechPower_postfix"								""
 
 		"ArmorPower_prefix"								"{s:sign}"
@@ -4721,7 +4760,7 @@
 		"TechPowerAmp_postfix"							""
 
 		"SpellAmplificationPercent_prefix"				"{s:sign}"
-		"SpellAmplificationPercent_label"				"Spirit"
+		"SpellAmplificationPercent_label"				"Spirit Power"
 		"SpellAmplificationPercent_postfix"				""
 
 		//BaseDamagePerShot_label							"Base Damage"
@@ -5840,21 +5879,21 @@
 		TechDamageBonusPercent_postfix		"%"
 
 		SuperiorStaminaBonusSpirit_prefix	"{s:sign}"
-		SuperiorStaminaBonusSpirit_label	"Spirit After Second Jump/Dash"
+		SuperiorStaminaBonusSpirit_label	"Spirit Power After Second Jump/Dash"
 
 		EchoShardBonusSpirit_prefix		"{s:sign}"
-		EchoShardBonusSpirit_label		"Spirit for Echo Ability"
+		EchoShardBonusSpirit_label		"Spirit Power for Echo Ability"
 
 		EchoShardBonusCourage_prefix	"{s:sign}"
 		EchoShardBonusCourage_label		"Courage for Echo Ability"
 
 		BonusSpirit_prefix				"{s:sign}"
-		BonusSpirit_label				"Bonus Spirit"
+		BonusSpirit_label				"Bonus Spirit Power"
 		modifier_power_shard_bonus		"Echo Boost"
 
 		BonusDuration_label				"Bonus Duration"
 		BonusDuration_postfix 			"s"
-		superior_stamina_buff			"Bonus Spirit"
+		superior_stamina_buff			"Bonus Spirit Power"
 
 		HighGroundBonusWeaponPower_prefix	"{s:sign}"
 		HighGroundBonusWeaponPower_label	"Weapon Damage When Above Enemies"
@@ -5869,7 +5908,7 @@
 		"BaseAttackDamagePercent_postfix"					"%"
 
 		"ImbuedTechPower_prefix"					"{s:sign}"
-		"ImbuedTechPower_label"						"Imbued Ability Spirit"
+		"ImbuedTechPower_label"						"Imbued Ability Spirit Power"
 
 		"MovementSpeedBonusDuration_label"			"Move Speed Duration"
 		"MovementSpeedBonusDuration_postfix"		"s"
@@ -5905,7 +5944,7 @@
 		"Cloaked"								"Cloaked"
 
 		"zipline_boost"							"Zipline Boosted"
-		"ActiveTechPower_label"					"Spirit"
+		"ActiveTechPower_label"					"Spirit Power"
 		"ActiveTechPower_prefix"				"+"
 
 		"ActiveBulletShieldHealth_label"		"Active Shield Health"
@@ -5994,7 +6033,7 @@
 		"StatDesc_TechArmorDamageReduction"		 		"Spirit Resist"
 		"StatDesc_IncomingAbilityDamageReduction"		"Ability Armor"
 		"StatDesc_IncomingAbilityDamageScale"			"Ability Damage Scale"
-		"StatDesc_TechPower"							"Spirit"
+		"StatDesc_TechPower"							"Spirit Power"
 		"StatDesc_ManaPerLevel"							"Energy Per Level"
 		"StatDesc_HealthPerLevel"						"Health Per Level"
 		"StatDesc_ManaRegenPerLevel"					"Energy Regen Per Level"
@@ -6130,6 +6169,7 @@
 		"citadel_settings_enable_console"				"Enable Console"
 		"citadel_settings_enable_console_tooltip"		"If you have launch options like -dev or -console that enable the console they override this setting."
 		"citadel_camera_pitch_inverted"					"Invert Mouse"
+		"citadel_enable_ping_indicator"					"Enable HUD Ping Indicator"
 		"citadel_settings_alt_cast_mode"				"Change Self Cast Mode:"
 		"citadel_settings_alt_cast_double_tap"			"Double Tap"
 		"citadel_settings_alt_cast_double_tap_tooltip"	"Double tap an ability button to self cast the ability"
@@ -6158,6 +6198,7 @@
 		"citadel_settings_spectatorkeybinds"			"Spectator Keybinds"
 		"citadel_settings_replaykeybinds"				"Replay Keybinds"
 		"citadel_settings_ping_wheel_contextual"		"Use Contextual Wheel Slot"
+		"citadel_settings_ping_wheel_contextual_desc"	"Contextual Slot is changed during gameplay based on the current context"
 
 		"citadel_settings_rendering"					"Rendering"
 		"citadel_settings_basicvideosettings"			"Use basic settings"
@@ -6471,7 +6512,7 @@
 		"team_msg_IdolEnemyGrabbed_Title"	"Enemy Team picked up"
 		"team_msg_IdolWestGrabbed_Title"	"West picked up"
 		"team_msg_IdolEastGrabbed_Title"	"East picked up"
-		"team_msg_Idol_Desc"	"Spirit Urn"
+		"team_msg_Idol_Desc"	"Soul Urn"
 		"team_msg_IdolCollected_Subtext"	"You and your teammates earned the money rewards."
 		"team_msg_IdolEnemyCollected_Subtext"	"The enemy has collected the money rewards."
 		"team_msg_ObjectiveCollected_Title"	"Your team collected"
@@ -6753,7 +6794,7 @@
 		"ReportCard_DamageTaken_Desc"				"For incoming damage, less is more"
 		"ReportCard_DamageTaken_Progress"			"<span class=\"yourscore\">{i:damageTaken}</span> &lt; {i:damageTakenNextGoal}"
 		"ReportCard_NetWorth"						"Souls Earned"
-		"ReportCard_NetWorth_Desc"					"Souls gained by killing troopers and shooting bonus spirits"
+		"ReportCard_NetWorth_Desc"					"Souls gained by killing troopers and shooting orbs"
 		"ReportCard_NetWorth_Progress"				"<span class=\"yourscore\">{i:netWorth}</span> / {i:netWorthNextGoal} Souls"
 
 		"ReportCard_PowerUp"						"Power Up your Hero"
@@ -7035,7 +7076,7 @@
 		"headed_to_purple"										"{s:param_1} headed to Purple"
 		"ping_attack"											"Let's take out {s:param_1}"
 		"ping_stun"												"Stun {s:param_1}!"
-		"ping_idols_call"										"Idol's here!"
+		"ping_jar_call"											"Spirit Jar is here!"
 		"ping_enemy_take_mid"									"They're taking mid!"
 		"ping_take_mid"											"Let's take mid!"
 		"ping_use_ability"										"{s:param_1} is ready!"
@@ -7054,7 +7095,7 @@
 		"top_of_garage"											"{s:param_1} is on top of the garage"
 		"under_garage"											"{s:param_1} is inside the garage"
 		"on_top_of_mid"											"{s:param_1} is on top of mid"
-		"in_mid"												"{s:param_1} is inside mid"
+		"in_mid"												"{s:param_1} inside mid"
 		"on_bridge"												"{s:param_1} is on the bridge"
 		"on_roof"												"{s:param_1} is on the roof"
 		"ping_need_heal"										"Heal Please"
@@ -7067,6 +7108,7 @@
 		"ping_youre_welcome"									"You're Welcome"
 		"ping_sorry"											"Sorry"
 		"ping_enemy_has_item"									"Careful! {s:param_1} has {s:param_2}"
+		"Citadel_Ping_Customize_Reminder"						"You may change the options in your ping wheel via <b>Settings.</b>"
 
 		//-----------------------------------------------------------------------------
 		// END Chat

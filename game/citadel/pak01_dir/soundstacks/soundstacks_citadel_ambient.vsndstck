@@ -22,56 +22,100 @@
 							]
 						}
 						value = "player_position"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					random_soundevent_name = 
 					{
 						data_type = "string"
 						value = "default.null"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					random_soundevent_timer_min = 
 					{
 						data_type = "float"
 						value = "4.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					random_soundevent_timer_max = 
 					{
 						data_type = "float"
 						value = "10.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					position = 
 					{
 						data_type = "float3"
 						value = "[0.0, 0.0, 0.0]"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					position_random = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					rand_radius_min = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					rand_radius_max = 
 					{
 						data_type = "float"
 						value = "250.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					volume_atten = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					use_initial_random_offset = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 					cull_at_distance = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_rand"
+						}
 					}
 				}
 			},
@@ -278,7 +322,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Opvars"
+							property_group = "citadel_ambient_opvar_iterator - Opvars"
 						}
 					}
 				}
@@ -451,7 +495,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Opvars"
+							property_group = "citadel_ambient_multi_opvar_remap - Opvars"
 							property_help = "List of opvars whose values influence the volume/filter values of the sound"
 						}
 					}
@@ -463,7 +507,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Opvars"
+							property_group = "citadel_ambient_multi_opvar_remap - Opvars"
 							property_help = "List of opvars whose values have an inverse influence on the volume/filter values of the sound"
 						}
 					}
@@ -475,7 +519,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Opvars"
+							property_group = "citadel_ambient_multi_opvar_remap - Opvars"
 							property_help = "List of opvars whose values influence the position of the sound.  As volume goes to zero the position goes towards the position"
 						}
 					}
@@ -487,7 +531,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Opvars"
+							property_group = "citadel_ambient_multi_opvar_remap - Opvars"
 							property_help = "List of opvars whose values have an inverse influence on the the position of the sound.  As volume goes to zero the position goes towards the inverse of the position"
 						}
 					}
@@ -499,7 +543,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Opvars"
+							property_group = "citadel_ambient_multi_opvar_remap - Opvars"
 							property_help = "List of opvars whose values have an inverse influence on the the position of the sound, they will alter the position regardless of the volume"
 						}
 					}
@@ -509,7 +553,7 @@
 						value = 999
 						_system_properties = 
 						{
-							property_group = "Opvars"
+							property_group = "citadel_ambient_multi_opvar_remap - Opvars"
 							property_help = "Max rate that the opvar value will change (in units/sec)"
 						}
 					}
@@ -519,7 +563,7 @@
 						value = 999
 						_system_properties = 
 						{
-							property_group = "Opvars"
+							property_group = "citadel_ambient_multi_opvar_remap - Opvars"
 							property_help = "Max rate that the inverse opvar value will change (in units/sec)"
 						}
 					}
@@ -536,7 +580,7 @@
 						{
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
-							property_group = "Volume"
+							property_group = "citadel_ambient_multi_opvar_remap - Volume"
 							property_help = "Remaps the aggregate opvar value to the volume"
 						}
 					}
@@ -553,7 +597,7 @@
 						{
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
-							property_group = "Filter"
+							property_group = "citadel_ambient_multi_opvar_remap - Filter"
 							property_help = "Remaps the aggregate opvar value to the lpf value"
 						}
 					}
@@ -564,7 +608,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Volume"
+							property_group = "citadel_ambient_multi_opvar_remap - Volume"
 							property_help = "Min value for the linear volume remapper"
 						}
 					}
@@ -575,7 +619,7 @@
 						_system_properties = 
 						{
 							display_group = "normal"
-							property_group = "Volume"
+							property_group = "citadel_ambient_multi_opvar_remap - Volume"
 							property_help = "Max value for the linear volume remapper"
 						}
 					}
@@ -592,7 +636,7 @@
 						{
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
-							property_group = "Volume"
+							property_group = "citadel_ambient_multi_opvar_remap - Volume"
 							property_help = "Remaps the aggregate inverse opvar value to the volume"
 						}
 					}
@@ -609,7 +653,7 @@
 						{
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
-							property_group = "Filter"
+							property_group = "citadel_ambient_multi_opvar_remap - Filter"
 							property_help = "Remaps the aggregate inverse opvar value to the filter value"
 						}
 					}
@@ -621,7 +665,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "LFO"
+							property_group = "citadel_ambient_multi_opvar_remap - LFO"
 							property_help = "Frequency control for the volume LFO"
 						}
 					}
@@ -632,7 +676,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "LFO"
+							property_group = "citadel_ambient_multi_opvar_remap - LFO"
 							property_help = "Amplitude control for the volume LFO"
 						}
 					}
@@ -643,7 +687,7 @@
 						_system_properties = 
 						{
 							display_group = "locked"
-							property_group = "Volume"
+							property_group = "citadel_ambient_multi_opvar_remap - Volume"
 							property_help = "Volume scalar, usually set from code or another stack"
 						}
 					}
@@ -654,7 +698,7 @@
 						_system_properties = 
 						{
 							display_group = "locked"
-							property_group = "Volume"
+							property_group = "citadel_ambient_multi_opvar_remap - Volume"
 							property_help = "Volume scalar, no idea where it's set from"
 						}
 					}
@@ -1216,56 +1260,100 @@
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					volume_atten = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					volume_lfo_freq = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					volume_lfo_scale = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					pitch_external = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					direct_mix_level = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					voicegraph_name = 
 					{
 						data_type = "string"
 						value = "citadel.hrtf_w_lpf_dynamics_b"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					use_hrtf = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					delay = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					vsnd_pause_with_game = 
 					{
 						data_type = "bool"
 						value = "true"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 					should_save = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_simple_voicegraph_filter_dynamics"
+						}
 					}
 				}
 			},
@@ -1463,129 +1551,233 @@
 					{
 						data_type = "vsnd"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_vol_01 = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_file_02 = 
 					{
 						data_type = "vsnd"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_vol_02 = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_file_03 = 
 					{
 						data_type = "vsnd"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_vol_03 = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_file_04 = 
 					{
 						data_type = "vsnd"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_vol_04 = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_file_05 = 
 					{
 						data_type = "vsnd"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_vol_05 = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_file_06 = 
 					{
 						data_type = "vsnd"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_vol_06 = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_file_07 = 
 					{
 						data_type = "vsnd"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_vol_07 = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_file_08 = 
 					{
 						data_type = "vsnd"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_vol_08 = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					radius = 
 					{
 						data_type = "float"
 						value = "100.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					rotation_angle = 
 					{
 						data_type = "float"
 						value = "0"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vertical_rotation_angle = 
 					{
 						data_type = "float"
 						value = "0"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					filter_mix = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					compressor_gain = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					compressor_enable = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					send_name = 
 					{
 						value = "world"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					mixer_mixgroup = 
 					{
 						value = "World"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					vsnd_pause_with_game = 
 					{
 						data_type = "bool"
 						value = "true"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 					voicegraph_name = 
 					{
 						data_type = "string"
 						value = "citadel.hrtf_8layer_ambience"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_fixed_rotation_multi_vsnd"
+						}
 					}
 				}
 			},
@@ -1887,31 +2079,55 @@
 					{
 						data_type = "string"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					soundevent_02 = 
 					{
 						data_type = "string"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					soundevent_03 = 
 					{
 						data_type = "string"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					soundevent_04 = 
 					{
 						data_type = "string"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					volume_atten = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					pitch_adjust = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					attachment = 
 					{
@@ -1919,6 +2135,7 @@
 						value = ""
 						_system_properties = 
 						{
+							property_group = "citadel_start_multi_quad"
 							display_group = "locked"
 						}
 					}
@@ -1928,6 +2145,7 @@
 						value = "[0.0, 0.0, 0.0]"
 						_system_properties = 
 						{
+							property_group = "citadel_start_multi_quad"
 							display_group = "locked"
 							display_edit_type = "field_position_editor"
 						}
@@ -1936,52 +2154,92 @@
 					{
 						data_type = "float"
 						value = "-1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					rand_delay_min = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					rand_delay_max = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					radius = 
 					{
 						data_type = "float"
 						value = "100.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					set_radius = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					volume_opvar_01_filter_velocity = 
 					{
 						data_type = "float"
 						value = "0.600000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					global_volume_opvar_01 = 
 					{
 						data_type = "string"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					remap_global_opvar_01_to_vol_min = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					remap_global_opvar_01_to_vol_max = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 					voice_layer = 
 					{
 						data_type = "enum"
 						enum_field = "vmix_voice_start.voice_layer"
 						value = "none"
+						_system_properties = 
+						{
+							property_group = "citadel_start_multi_quad"
+						}
 					}
 				}
 			},
@@ -2331,6 +2589,7 @@
 						value = "[0.0, 0.0, 0.0]"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "locked"
 							display_edit_type = "field_position_editor"
 						}
@@ -2341,6 +2600,7 @@
 						value = "[0.0, 0.0, 0.0]"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2350,6 +2610,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2357,6 +2618,10 @@
 					{
 						data_type = "bool"
 						value = "false"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					position_force_from_input = 
 					{
@@ -2364,6 +2629,7 @@
 						value = "false"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2373,6 +2639,7 @@
 						value = "true"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2382,7 +2649,7 @@
 						value = "All"
 						_system_properties = 
 						{
-							property_group = "Mixer"
+							property_group = "citadel_ambient_3d - Mixer"
 						}
 					}
 					mixer_set_mixlayer = 
@@ -2391,7 +2658,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
-							property_group = "Mixer"
+							property_group = "citadel_ambient_3d - Mixer"
 						}
 					}
 					mixer_mixlayer_to_set = 
@@ -2400,7 +2667,7 @@
 						value = ""
 						_system_properties = 
 						{
-							property_group = "Mixer"
+							property_group = "citadel_ambient_3d - Mixer"
 						}
 					}
 					mixer_mixlayer_amount_manual = 
@@ -2409,7 +2676,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
-							property_group = "Mixer"
+							property_group = "citadel_ambient_3d - Mixer"
 						}
 					}
 					volume = 
@@ -2418,6 +2685,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_edit_type = "field_linear_atten_editor"
 						}
 					}
@@ -2427,6 +2695,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2436,6 +2705,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2443,6 +2713,10 @@
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					volume_fade_in = 
 					{
@@ -2450,6 +2724,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2459,6 +2734,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2468,6 +2744,7 @@
 						value = "1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "locked"
 						}
 					}
@@ -2477,6 +2754,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2486,6 +2764,7 @@
 						value = "999.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2493,6 +2772,10 @@
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					pitch_force_input_to_value = 
 					{
@@ -2500,6 +2783,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2509,6 +2793,7 @@
 						value = "1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "locked"
 						}
 					}
@@ -2518,6 +2803,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2527,6 +2813,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2534,21 +2821,37 @@
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					pitch_modulation_attack = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					pitch_modulation_release = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					pitch_modulation_namespace = 
 					{
 						data_type = "string"
 						value = ""
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					delay = 
 					{
@@ -2556,6 +2859,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2565,6 +2869,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2574,6 +2879,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2583,6 +2889,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2592,6 +2899,7 @@
 						value = "-1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2601,6 +2909,7 @@
 						value = "250"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 							display_edit_type = "field_2d2knot_editor"
 							x1_field = "public.spread_min"
@@ -2617,6 +2926,7 @@
 						value = "500"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2626,6 +2936,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2635,6 +2946,7 @@
 						value = "0.10000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2644,6 +2956,7 @@
 						value = ".9"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2653,6 +2966,7 @@
 						value = "60.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2662,6 +2976,7 @@
 						value = "0.300000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2671,6 +2986,7 @@
 						value = "1.00000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2680,6 +2996,7 @@
 						value = "1200.00000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2689,6 +3006,7 @@
 						value = "2500.00000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2696,11 +3014,19 @@
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					occlusion_interval = 
 					{
 						data_type = "float"
 						value = "0.100000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					limiter_on = 
 					{
@@ -2708,6 +3034,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2717,6 +3044,7 @@
 						value = ""
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2726,6 +3054,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2735,6 +3064,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2744,6 +3074,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2753,6 +3084,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2762,6 +3094,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2771,6 +3104,7 @@
 						value = "true"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2780,6 +3114,7 @@
 						value = "-1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2789,6 +3124,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2798,6 +3134,7 @@
 						value = "-1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2806,11 +3143,19 @@
 						data_type = "enum"
 						enum_field = "vmix_voice_start.voice_layer"
 						value = "none"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					event_use_music_convar = 
 					{
 						data_type = "bool"
 						value = "false"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					memory_type = 
 					{
@@ -2818,6 +3163,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2832,6 +3178,7 @@
 						]
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
 						}
@@ -2842,7 +3189,7 @@
 						value = "false"
 						_system_properties = 
 						{
-							property_group = "Curves"
+							property_group = "citadel_ambient_3d - Curves"
 						}
 					}
 					volume_fade_out_curve = 
@@ -2856,7 +3203,7 @@
 						]
 						_system_properties = 
 						{
-							property_group = "Curves"
+							property_group = "citadel_ambient_3d - Curves"
 							display_edit_type = "field_curve_2d_editor"
 							display_edit_flag = "public.use_volume_fade_out_curve"
 						}
@@ -2872,7 +3219,7 @@
 						]
 						_system_properties = 
 						{
-							property_group = "Curves"
+							property_group = "citadel_ambient_3d - Curves"
 							display_edit_type = "field_curve_2d_editor"
 						}
 					}
@@ -2882,6 +3229,7 @@
 						value = ""
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "locked"
 						}
 					}
@@ -2891,6 +3239,7 @@
 						value = "20000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2900,6 +3249,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2909,6 +3259,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2918,6 +3269,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2927,6 +3279,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2936,6 +3289,7 @@
 						value = "1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2945,6 +3299,7 @@
 						value = "1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2954,6 +3309,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2963,6 +3319,7 @@
 						value = "1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2972,6 +3329,7 @@
 						value = "main"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2981,6 +3339,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2990,6 +3349,7 @@
 						value = "1"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -2999,6 +3359,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -3013,6 +3374,7 @@
 						]
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
 						}
@@ -3023,6 +3385,7 @@
 						value = "2500.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -3032,6 +3395,7 @@
 						value = "1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -3041,6 +3405,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -3050,6 +3415,7 @@
 						value = "0.050000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -3059,6 +3425,7 @@
 						value = "1.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -3068,6 +3435,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
+							property_group = "citadel_ambient_3d"
 							display_group = "advanced"
 						}
 					}
@@ -3078,7 +3446,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "Hrtf"
+							property_group = "citadel_ambient_3d - Hrtf"
 						}
 					}
 					hrtf_mix = 
@@ -3088,7 +3456,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "Hrtf"
+							property_group = "citadel_ambient_3d - Hrtf"
 						}
 					}
 					effect_owning_graph = 
@@ -3097,7 +3465,7 @@
 						value = "main"
 						_system_properties = 
 						{
-							property_group = "Effects"
+							property_group = "citadel_ambient_3d - Effects"
 						}
 					}
 					use_pathing_render = 
@@ -3107,7 +3475,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "Pathing"
+							property_group = "citadel_ambient_3d - Pathing"
 						}
 					}
 					use_pathing_distance = 
@@ -3117,7 +3485,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "Pathing"
+							property_group = "citadel_ambient_3d - Pathing"
 						}
 					}
 					use_pathing_render_eq = 
@@ -3127,7 +3495,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "Pathing"
+							property_group = "citadel_ambient_3d - Pathing"
 						}
 					}
 					pathing_render_mix = 
@@ -3137,7 +3505,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "Pathing"
+							property_group = "citadel_ambient_3d - Pathing"
 						}
 					}
 					effect_input_name = 
@@ -3146,7 +3514,7 @@
 						value = ""
 						_system_properties = 
 						{
-							property_group = "Effects"
+							property_group = "citadel_ambient_3d - Effects"
 						}
 					}
 					effect_to_apply = 
@@ -3155,13 +3523,17 @@
 						value = ""
 						_system_properties = 
 						{
-							property_group = "Effects"
+							property_group = "citadel_ambient_3d - Effects"
 						}
 					}
 					use_uiposition = 
 					{
 						data_type = "bool"
 						value = "false"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d - Position"
+						}
 					}
 					uiposition = 
 					{
@@ -3170,7 +3542,7 @@
 						_system_properties = 
 						{
 							display_edit_type = "field_position_editor"
-							property_group = "Position"
+							property_group = "citadel_ambient_3d - Position"
 						}
 					}
 					recency_bias = 
@@ -3180,7 +3552,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "Recency Bias"
+							property_group = "citadel_ambient_3d - Recency Bias"
 						}
 					}
 					recency_bias_max_scale = 
@@ -3190,7 +3562,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "Recency Bias"
+							property_group = "citadel_ambient_3d - Recency Bias"
 						}
 					}
 					recency_bias_min_scale = 
@@ -3200,7 +3572,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
-							property_group = "Recency Bias"
+							property_group = "citadel_ambient_3d - Recency Bias"
 						}
 					}
 					metadata = 
@@ -3220,47 +3592,83 @@
 						[
 							"sounds/common/null.vsnd",
 						]
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					vsnd_files_field_name = 
 					{
 						data_type = "string"
 						value = "vsnd_files"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					vsnd_selection_type = 
 					{
 						data_type = "enum"
 						enum_field = "opvar_get_vsnd.array_selection_type"
 						value = "random_exclusive"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					vsnd_selection_index = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					pitch_external = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					pitch_filter_rate = 
 					{
 						data_type = "float"
 						value = "99999.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					sa_source_offset = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					vsnd_pause_with_game = 
 					{
 						data_type = "bool"
 						value = "true"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					vsnd_play_loop_release = 
 					{
 						data_type = "bool"
 						value = "false"
+						_system_properties = 
+						{
+							property_group = "citadel_ambient_3d"
+						}
 					}
 					effect_amount = 
 					{
@@ -3268,7 +3676,7 @@
 						value = "1.0"
 						_system_properties = 
 						{
-							property_group = "Effects"
+							property_group = "citadel_ambient_3d - Effects"
 						}
 					}
 					should_apply_effect_amount = 
@@ -3277,7 +3685,7 @@
 						value = "0.0"
 						_system_properties = 
 						{
-							property_group = "Effects"
+							property_group = "citadel_ambient_3d - Effects"
 						}
 					}
 					apply_radio_effect_for_voice = 
@@ -3286,7 +3694,7 @@
 						value = "false"
 						_system_properties = 
 						{
-							property_group = "Effects"
+							property_group = "citadel_ambient_3d - Effects"
 						}
 					}
 					voice_radio_effect_distance_threshold = 
@@ -3295,7 +3703,7 @@
 						value = "500.0"
 						_system_properties = 
 						{
-							property_group = "Effects"
+							property_group = "citadel_ambient_3d - Effects"
 						}
 					}
 					distance_hpf_on = 
@@ -3304,7 +3712,7 @@
 						value = "1.0"
 						_system_properties = 
 						{
-							property_group = "Distance"
+							property_group = "citadel_ambient_3d - Distance"
 						}
 					}
 					distance_lpf_on = 
@@ -3313,7 +3721,7 @@
 						value = "1.0"
 						_system_properties = 
 						{
-							property_group = "Distance"
+							property_group = "citadel_ambient_3d - Distance"
 						}
 					}
 					mono_downmix_enabled = 
@@ -3322,7 +3730,7 @@
 						value = "1.0"
 						_system_properties = 
 						{
-							property_group = "Mono"
+							property_group = "citadel_ambient_3d - Mono"
 						}
 					}
 					mono_downmix_min_distance = 
@@ -3331,7 +3739,7 @@
 						value = "250.0"
 						_system_properties = 
 						{
-							property_group = "Mono"
+							property_group = "citadel_ambient_3d - Mono"
 						}
 					}
 					mono_downmix_max_distance = 
@@ -3340,7 +3748,7 @@
 						value = "950.0"
 						_system_properties = 
 						{
-							property_group = "Mono"
+							property_group = "citadel_ambient_3d - Mono"
 						}
 					}
 				}

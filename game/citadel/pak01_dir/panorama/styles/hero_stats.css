@@ -64,13 +64,13 @@ CitadelHeroDetailsPage .PercentBonusContainer
 	background-repeat: no-repeat;
 }
 
-#CourageStats .PercentBonusIcon
+#WeaponStats .PercentBonusIcon
 {
 	background-image: url("s2r://panorama/images/hud/core/icon_damage_force.vsvg");
 	wash-color: courageBrightColor;
 }
 
-#FortitudeStats .PercentBonusIcon
+#VitalityStats .PercentBonusIcon
 {
 	background-image: url("s2r://panorama/images/upgrades/mods_armor/health_psd.vtex");
 	wash-color: fortitudeBrightColor;
@@ -95,7 +95,7 @@ CitadelHeroDetailsPage .PercentBonusContainer
 	text-align: center;
 }
 
-#FortitudeStats .StatsTypeLabel
+#VitalityStats .StatsTypeLabel
 {
 	color: fortitudeBrightColor;
 }
@@ -105,7 +105,7 @@ CitadelHeroDetailsPage .PercentBonusContainer
 	color: spiritBrightColor;
 }
 
-#CourageStats .StatsTypeLabel
+#WeaponStats .StatsTypeLabel
 {
 	color: courageBrightColor;
 }
@@ -246,7 +246,7 @@ CitadelHeroDetailsPage #SpiritStats
 	margin: 0px 5px;
 }
 
-#FortitudeStatsContainer #TopBanner
+#VitalityStatsContainer #TopBanner
 {
 	background-color: #001413;
 	height: 5px;
@@ -295,7 +295,7 @@ CitadelHeroStats CitadelModifiedAttributeLabel
 	margin: 10px 0px 10px 0px;
 }
 
-#CourageStatsContainer #IntroStatsContainer
+#WeaponStatsContainer #IntroStatsContainer
 {
 	background-color: #2D1B00;
 	height: 90px;

@@ -234,6 +234,7 @@
 								<CitadelSettingsKeyBinder id="MouseWheelBinder" text="#citadel_keybind_mouse_wheel" bind="MouseWheel" />
 								<CitadelSettingsKeyBinder id="PingBinder" text="#citadel_keybind_ping" bind="Ping" />
 								<CitadelSettingsCheckbox id="InvertPings" convar="citadel_invert_ping_type" text="#citadel_settings_chat_invert_ping" onmouseover="CitadelUIShowTextTooltip( #citadel_settings_invert_ping_desc )" onmouseout="CitadelUIHideTextTooltip()" />
+								<CitadelSettingsCheckbox id="HUDPingIndicator" convar="player_ping_indicator_enabled" text="#citadel_enable_ping_indicator" />
 							</Panel>
 						</Panel>
 						<Panel id="hotkeycolumn2" class="SettingsDualColumn HotkeySettingsColumn">
@@ -364,10 +365,15 @@
 							</Panel>
 						</Panel>
 						<Panel id="BottomChatWheelPanel">
-							<Button class="ChatWheelButton" id="ChatWheelButton4" onactivate="CitadelBindChatWheelButton( 4 );" oncancel="CitadelCancelChatWheelBind();">
+							<Button class="ChatWheelButton NonContextualPingButton" id="ChatWheelButton4" onactivate="CitadelBindChatWheelButton( 4 );" oncancel="CitadelCancelChatWheelBind();">
 								<Panel class="ChatWheelButtonContents">
 									<Panel class="ChatWheelSoundIcon" />
 									<Label text="{s:chat_wheel_all_prefix}{s:chat_wheel_label}" html="true" />
+								</Panel>
+							</Button>
+							<Button class="ChatWheelButton ContextualPingButton" id="ChatWheelButtonEmpty" onmouseover="CitadelUIShowTextTooltip( #citadel_settings_ping_wheel_contextual_desc, UI.MainMenu.Hover, &apos;&apos; );" onmouseout="CitadelUIHideTextTooltip()">
+								<Panel class="ChatWheelButtonContents">
+									<Label text="[Contextual Slot]" html="true" />
 								</Panel>
 							</Button>
 							<Label class="ContextualLabel" text="Contextual Ping Wheel Slot" />

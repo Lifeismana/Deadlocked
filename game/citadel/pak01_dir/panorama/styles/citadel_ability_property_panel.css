@@ -112,6 +112,12 @@ AbilityPropertyPanel
 	height: 100%;
 }
 
+#PromotedPropertiesContainer .HasScalingStat .AbilityPropertyContainer
+{
+	border: 2px solid spiritColor&40;
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #00000080 ), to( spiritDarkColor&50 ) );
+}
+
 .HeaderContainer .AbilityPropertyContainer
 {
 	height: 35px;

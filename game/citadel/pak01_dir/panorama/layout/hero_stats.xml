@@ -16,7 +16,7 @@
 	</snippets>
 	<CitadelHeroStats class="hero_stats">
 		<Panel class="TopStatsContainer">
-			<Panel id="CourageStats" class="ParentStatsContainer">
+			<Panel id="WeaponStats" class="ParentStatsContainer">
 				<Panel class="StatCategoryTitleArea">
 					<Label class="StatsTypeLabel" text="#CitadelCategoryWeapon" />
 					<Panel class="PercentBonusContainer" onmouseover="UIShowTextTooltip( #Citadel_Hero_Stats_Tooltip_WeaponPower ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
@@ -24,9 +24,9 @@
 						<Label class="PercentBonusTitle" text="+{i:weapon_increase}%" />
 					</Panel>
 				</Panel>
-				<Panel id="CourageStatsContainer" class="StatsContainer" />
+				<Panel id="WeaponStatsContainer" class="StatsContainer" />
 			</Panel>
-			<Panel id="FortitudeStats" class="ParentStatsContainer">
+			<Panel id="VitalityStats" class="ParentStatsContainer">
 				<Panel class="StatCategoryTitleArea">
 					<Label class="StatsTypeLabel" text="#CitadelCategoryArmor" />
 					<Panel class="PercentBonusContainer" onmouseover="UIShowTextTooltip( #Citadel_Hero_Stats_Tooltip_HealthMult ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
@@ -34,7 +34,7 @@
 						<Label class="PercentBonusTitle" text="+{i:health_increase}%" />
 					</Panel>
 				</Panel>
-				<Panel id="FortitudeStatsContainer" class="StatsContainer" />
+				<Panel id="VitalityStatsContainer" class="StatsContainer" />
 			</Panel>
 		</Panel>
 		<Panel class="BottomStatsContainer">

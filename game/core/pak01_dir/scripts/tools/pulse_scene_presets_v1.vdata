@@ -66,19 +66,39 @@
 				name = "OverlapInparamsLayout"
 				className = "OverlapParamsLayout_Base OverlapInparamsLayout"
 			},
+			
+			{
+				name = "PortsLayout"
+				className = "PortsLayout"
+			},
 		]
 	}
-	BaseNode = 
+	BaseConnection = 
 	{
+		className = "BaseConnection"
+	}
+	ConnectionAnchorPoint = 
+	{
+		className = "Connection_AnchorPoint"
 		children = 
 		[
 			
 			{
-				preset = "BaseNodeHeader"
+				_class = "image"
+				className = "ConnectionAnchorPointImage"
+				image = "game:tools/images/pulse_editor/connection_anchor.png"
 			},
+		]
+	}
+	BaseRequirement = 
+	{
+		className = "BaseConnection"
+		children = 
+		[
 			
 			{
-				inlinePreset = "BaseNodeParamLayouts"
+				name = "PortsLayout"
+				className = "PortsLayout"
 			},
 		]
 	}
@@ -148,32 +168,6 @@
 			},
 			
 			{
-				name = "GroupBackground"
-				className = "GroupBackground"
-				children = 
-				[
-					
-					{
-						name = "ResizeFlow_Corner_BottomRight"
-						_class = "resize_handle_corner_bottom_right"
-						className = "ResizeFlow_Corner_BottomRight"
-					},
-					
-					{
-						name = "ResizeFlow_Edge_Right"
-						_class = "resize_handle_edge_right"
-						className = "ResizeFlow_Edge_Base ResizeFlow_Edge_Right"
-					},
-					
-					{
-						name = "ResizeFlow_Edge_Left"
-						_class = "resize_handle_edge_left"
-						className = "ResizeFlow_Edge_Base ResizeFlow_Edge_Left"
-					},
-				]
-			},
-			
-			{
 				name = "FlowDragHandle"
 				_class = "flow_drag_handle"
 				className = "DragHandle_Base FlowDragHandle"
@@ -230,6 +224,38 @@
 						className = "RequirementLayout_Separator_Line"
 					},
 				]
+			},
+		]
+	}
+	Group = 
+	{
+		className = "Group"
+		children = 
+		[
+			
+			{
+				name = "GroupBackground"
+				className = "GroupBackground"
+				children = 
+				[
+					
+					{
+						name = "ResizeFlow_Edge_Right"
+						_class = "resize_handle_edge_right"
+						className = "ResizeFlow_Edge_Base ResizeFlow_Edge_Right"
+					},
+					
+					{
+						name = "ResizeFlow_Edge_Left"
+						_class = "resize_handle_edge_left"
+						className = "ResizeFlow_Edge_Base ResizeFlow_Edge_Left"
+					},
+				]
+			},
+			
+			{
+				name = "NodeContainer"
+				className = "NodeContainer"
 			},
 		]
 	}
@@ -307,16 +333,13 @@
 			},
 			
 			{
-				inlinePreset = "BaseNodeParamLayouts"
-			},
-			
-			{
 				name = "BlockCommentHeader"
 				className = "BlockCommentHeader"
 			},
 			
 			{
 				name = "BlockCommentTextBox"
+				_class = "text"
 				className = "BlockCommentTextBox"
 			},
 			

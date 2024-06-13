@@ -614,6 +614,49 @@ CitadelHudHeroShop
 	width: 100%;
 }
 
+#CurrentBuildSelection
+{
+	width: 100%;
+	height: 70px;
+	background-color: red;
+}
+
+#HeroBuildSelector
+{
+	width: 100%;
+	visibility: collapse;
+	background-color: goldColor&30;
+	height: 67px;
+	border: 0px solid baseBorder;
+	border-top: 7px solid #C3B661;
+}
+
+.ChangeBuild
+{
+	font-weight: semi-bold;
+}
+
+.BuildName
+{
+	max-width: 90%;
+	width: fit-children;
+	color: offBlack;
+	font-size: 22px;
+	font-weight: bold;
+	vertical-align: middle;
+	tooltip-position: bottom;
+}
+
+.showingFavorites #HeroBuildSelector
+{
+	visibility: visible;
+}
+
+#CitadelHeroBuildsPage #HeroBuildSelector
+{
+	visibility: collapse;
+}
+
 #HeroPanel,#ShopModsContainer
 {
 	visibility: collapse;

@@ -98,16 +98,39 @@
 	{
 		InteractionPriority = "BASE"
 	}
+	StateNodeBg = 
+	{
+		LayoutChildren = "VBOX"
+		InteractionPriority = "BASE"
+	}
 	StateInfoFlagRow = 
 	{
 		FixedSizeY = 24
 		LayoutChildren = "HBOX"
 	}
-	StateInfoFlag = 
+	DefaultStateInfoFlag = 
 	{
 		FixedSizeX = 24
 		FixedSizeY = 24
-		Background_Color = "#5050B4"
+		Margin_Right = 8
+		Border = "1px #4CFF00"
+		Background_Color = "#4CFF00"
+	}
+	EntryOverrideInfoFlag = 
+	{
+		FixedSizeX = 24
+		FixedSizeY = 24
+		Margin_Right = 8
+		Border = "1px #00FFFF"
+		Background_Color = "#00FFFF"
+	}
+	GlobalTransitionInfoFlag = 
+	{
+		FixedSizeX = 24
+		FixedSizeY = 24
+		Margin_Right = 8
+		Border = "1px #FF50B4"
+		Background_Color = "#FF50B4"
 	}
 	StateTypeRegion = 
 	{
@@ -115,6 +138,7 @@
 	}
 	StateEventRegion = 
 	{
+		LayoutChildren = "VBOX"
 	}
 	StateEventRow = 
 	{
@@ -123,6 +147,22 @@
 	StateEventLabel = 
 	{
 		FixedSizeX = 1
+	}
+	TransitionConduit = 
+	{
+		InteractionPriority = "BASE"
+	}
+	OffStateLabel = 
+	{
+		LayoutChildren = "HBOX"
+	}
+	BlendTreeStateLabel = 
+	{
+		LayoutChildren = "HBOX"
+	}
+	StateMachineStateLabel = 
+	{
+		LayoutChildren = "HBOX"
 	}
 	CommentBg = 
 	{

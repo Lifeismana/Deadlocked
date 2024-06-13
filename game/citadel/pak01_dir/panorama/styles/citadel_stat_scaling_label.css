@@ -69,10 +69,16 @@ CitadelStatScalingLabel.HasScalingStats
 
 .FormulaHiddenContainer .ScalingStatImage,.AbilityPanelStat .ScalingStatImage
 {
-	width: 30px;
-	height: 24px;
-	margin: 0px;
+	width: 40px;
+	height: 30px;
+	margin-right: -5px;
 	background-position: right;
+}
+
+#HeaderAttributesContainer .FormulaHiddenContainer .ScalingStatImage,#HeaderAttributesContainer .AbilityPanelStat .ScalingStatImage
+{
+	width: 30px;
+	height: 26px;
 }
 
 .hero_stats .FormulaHiddenContainer .ScalingStatImage
@@ -80,6 +86,7 @@ CitadelStatScalingLabel.HasScalingStats
 	width: 40px;
 	height: 34px;
 	z-index: 2;
+	margin-right: 0px;
 }
 
 #HeroStatsDisplay .ScalingStatImage
@@ -194,7 +201,7 @@ Label.ScalingStatCurrentValue
 {
 	flow-children: right;
 	padding: 0px 3px 0px 10px;
-	margin-left: -10px;
+	margin-left: -5px;
 	z-index: 1;
 	visibility: collapse;
 }

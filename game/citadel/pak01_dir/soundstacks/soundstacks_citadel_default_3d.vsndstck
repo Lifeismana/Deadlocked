@@ -25,52 +25,84 @@
 						[
 							"sounds/common/null.vsnd",
 						]
+						_system_properties = 
+						{
+							property_group = "VSND Files"
+						}
 					}
 					vsnd_files_field_name = 
 					{
 						data_type = "string"
 						value = "vsnd_files"
+						_system_properties = 
+						{
+							property_group = "VSND Files"
+						}
 					}
 					vsnd_selection_type = 
 					{
 						data_type = "enum"
 						enum_field = "opvar_get_vsnd.array_selection_type"
 						value = "random_exclusive"
+						_system_properties = 
+						{
+							property_group = "VSND Files"
+						}
 					}
 					vsnd_selection_index = 
 					{
 						data_type = "float"
 						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "VSND Files"
+						}
 					}
 					pitch_external = 
 					{
 						data_type = "float"
 						value = "1.000000"
+						_system_properties = 
+						{
+							property_group = "Pitch"
+						}
 					}
 					pitch_filter_rate = 
 					{
 						data_type = "float"
 						value = "99999.000000"
-					}
-					sa_source_offset = 
-					{
-						data_type = "float"
-						value = "0.000000"
+						_system_properties = 
+						{
+							property_group = "Pitch"
+						}
 					}
 					cull_at_distance = 
 					{
 						data_type = "float"
 						value = "0"
+						_system_properties = 
+						{
+							property_group = "Limiter"
+							property_help = "Culling from default_3d"
+						}
 					}
 					vsnd_pause_with_game = 
 					{
 						data_type = "bool"
 						value = "true"
+						_system_properties = 
+						{
+							property_group = "VSND Files"
+						}
 					}
 					vsnd_play_loop_release = 
 					{
 						data_type = "bool"
 						value = "false"
+						_system_properties = 
+						{
+							property_group = "VSND Files"
+						}
 					}
 					effect_amount = 
 					{
@@ -156,7 +188,7 @@
 					volume_max_gain_change_per_second = 
 					{
 						data_type = "float"
-						value = "10.0"
+						value = "100.0"
 						_system_properties = 
 						{
 							property_group = "Volume"

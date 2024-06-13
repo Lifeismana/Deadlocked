@@ -146,6 +146,7 @@
 			_class = "modifier_item_pickup_aura_target"
 			_my_subclass_name = "aura_target"
 			m_bIsHidden = true
+			m_PickupTimer = 4.000000
 			m_PickupTimerModifier = subclass:
 			{
 				_class = "modifier_item_pickup_timer"
@@ -154,12 +155,28 @@
 				m_bIsHidden = false
 				m_eDrawOverheadStatus = "OVERHEAD_DRAW_FOR_EVERYONE"
 				m_eHudDisplayLocation = "DISPLAY_HUD_CENTER"
+				m_TimerToSilence = 0.500000
+				m_SilenceDuration = 0.300000
+				m_SilenceModifier = subclass:
+				{
+					_class = "modifier_citadel_silenced"
+					_my_subclass_name = "modifier_citadel_silenced"
+					m_bIsHidden = true
+					m_nEnabledStateMask = "MODIFIER_STATE_SILENCED | MODIFIER_STATE_MUTED"
+				}
 			}
-			m_PickupTimer = 4.000000
 		}
 		m_strFilterAbilityName = "ability_golden_idol"
 		m_bIsHidden = true
 		m_flAuraRadius = 70.000000
+	}
+	modifier_rejuv_pickup_punchable = 
+	{
+		_class = "modifier_item_pickup_punchable"
+		m_nEnabledStateMask = "MODIFIER_STATE_IS_MELEE_TARGET"
+		m_IsDroppingParticle = resource_name:"particles/environment/rejuv_ambient.vpcf"
+		m_IsPunchableParticle = resource_name:"particles/environment/rejuv_attackable.vpcf"
+		m_bIsHidden = true
 	}
 	modifier_rejuv_pickup_aura = 
 	{
@@ -312,6 +329,16 @@
 		m_sStartSound = soundevent:""
 		m_sAmbientLoopingSound = soundevent:""
 		m_nEnabledStateMask = "MODIFIER_STATE_HOLDING_IDOL"
+	}
+	modifier_citadel_idol_walkback = 
+	{
+		_class = "modifier_citadel_idol_walkback"
+		m_flStopDistance = 600
+		m_flMaxSpeedDistance = 1600
+		m_flSlowSpeed = 30.000000
+		m_flFastSpeed = 175.000000
+		m_flVerticalOffset = 16.000000
+		m_flTolerance = 20.000000
 	}
 	modifier_hero_testing_damage_aura = 
 	{

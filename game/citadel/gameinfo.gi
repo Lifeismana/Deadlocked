@@ -389,24 +389,32 @@
 		"snd_steamaudio_invalid_path_length"	"0.0"
 		"cl_disconnect_soundevent"				"citadel.convar.stop_all_game_layer_soundevents"
 		"snd_event_browser_default_stack"		"citadel_default_3d"
-
+		
+		// voip
 		"voice_in_process"			            "1"
 		"voice_always_sample_mic"               "1"
 		"reset_voice_on_input_stallout"         "0"
 		"voice_input_stallout"                  "0.5"
 		"cl_usesocketsforloopback" "1"
-		"cl_tickpacket_desired_queuelength" "1"
 		"voice_threshold_attack"				".03"
 		"voice_threshold_delay"					".05"
 		"voice_threshold_hold"					".1"
+
+		// For perf reasons, since we don't use source-based DSP:
+		"disable_source_soundscape_trace"       "1"
+		
+		"cl_tickpacket_desired_queuelength" "1"
 
 		"fps_max"		"400"
 		"fps_max_ui"	"120"
 
 		// Convars that control spatialization of UI audio.
-		"snd_ui_positional"			"1"
-		"snd_ui_spatialization_spread"		"2.4"
-		"snd_envelope_rate"			"10.0"
+		"snd_ui_positional"								"1"
+		"snd_ui_spatialization_spread"					"2.4"
+		
+		// sound volume rate change limiting
+		"snd_envelope_rate"								"100.0"
+		"snd_soundmixer_update_maximum_frame_rate" 		"0"
 
 		"speaker_config"
 		{

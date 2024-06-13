@@ -15,10 +15,27 @@
 	}
 	PlayerAlert.LowHealth = 
 	{
-		base = "Base.Gameplay.Alerts.2d"
-		volume = -6.000000
+		base = "Base.UI"
+		mixer_mixgroup = "UI-Health"
+		volume = -3.000000
 		vsnd_files = "sounds/gameplay/low_health/default_alert.vsnd"
 		vsnd_duration = 2.975170
+	}
+	PlayerAlert.MajorDamage = 
+	{
+		base = "Base.UI"
+		mixer_mixgroup = "UI-Health"
+		volume = -3.000000
+		pitch = 1.000000
+		limiter_event_name = "Damage.Receive.Major"
+		vsnd_files = 
+		[
+			"sounds/hit_indicators/damage_receive_major_01.vsnd",
+			"sounds/hit_indicators/damage_receive_major_02.vsnd",
+			"sounds/hit_indicators/damage_receive_major_03.vsnd",
+			"sounds/hit_indicators/damage_receive_major_04.vsnd",
+			"sounds/hit_indicators/damage_receive_major_05.vsnd",
+		]
 	}
 	Player.Bullet.Impact.Default = 
 	{
@@ -575,7 +592,7 @@
 	}
 	Player.Melee.Hold.Shared = 
 	{
-		base = "Base.Hero.Weapon.Melee.3d"
+		base = "Base.Ability.Melee"
 		pitch = 1.000000
 		pitch_rand_max = 0.010000
 		pitch_rand_min = -0.010000
@@ -586,6 +603,53 @@
 		volume = 0.000000
 		vsnd_files = "sounds/player/melee/shared/charged_melee_full.vsnd"
 		vsnd_duration = 1.406009
+	}
+	Ability.Melee.Impact.Player = 
+	{
+		base = "Base.Ability.Melee"
+		pitch = 1.500000
+		volume = 2.000000
+		vsnd_files = 
+		[
+			"sounds/hit_indicators/damage_receive_melee_01.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_02.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_03.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_04.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_05.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_06.vsnd",
+		]
+		vsnd_duration = 1.372200
+	}
+	Ability.Melee.Impact.Heavy.Player = 
+	{
+		base = "Base.Ability.Melee"
+		volume = 2.000000
+		vsnd_files = 
+		[
+			"sounds/hit_indicators/damage_receive_melee_01.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_02.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_03.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_04.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_05.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_06.vsnd",
+		]
+		vsnd_duration = 1.372200
+	}
+	Ability.Melee.Impact.NPC = 
+	{
+		base = "Base.Ability.Melee"
+		pitch = 2.000000
+		volume = -3.000000
+		vsnd_files = 
+		[
+			"sounds/hit_indicators/damage_receive_melee_01.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_02.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_03.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_04.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_05.vsnd",
+			"sounds/hit_indicators/damage_receive_melee_06.vsnd",
+		]
+		vsnd_duration = 1.372200
 	}
 	Player.Sprint = 
 	{

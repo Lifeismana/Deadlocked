@@ -64,6 +64,11 @@
 					<Label text="All Perks" />
 				</Button>
 			</Panel>
+			<Panel class="nav_menu_item_container">
+				<Button class="nav_menu_item small_text half_width" onactivate="HTConCommand( &apos;citadel_spawn_nearby_neutrals&apos; ); PlaySoundEffect( Stinger.LevelUp )">
+					<Label text="Spawn Camp" />
+				</Button>
+			</Panel>
 			<Panel class="nav_menu_item_header">
 				<Label text="Game Rules" />
 				<Panel class="dash" />

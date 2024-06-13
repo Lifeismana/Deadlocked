@@ -740,6 +740,11 @@ PopupManager
 	visibility: visible;
 }
 
+.AspectRatio21x9.connectedToGame #LeftStripe
+{
+	background-color: none;
+}
+
 #LogoArea
 {
 	width: 270px;
@@ -1398,7 +1403,7 @@ PopupManager
 	width: 400px;
 	horizontal-align: right;
 	vertical-align: top;
-	margin: 160px 30px 30px 30px;
+	margin: 500px 20px 0px 0px;
 	flow-children: down;
 	z-index: 1000;
 }
@@ -1411,6 +1416,7 @@ PopupManager
 .IsShowingDashboardPage #PartyContainer,.connectedToGame #PartyContainer
 {
 	visibility: visible;
+	visibility: collapse;
 }
 
 .HideParty #PartyContainer
@@ -1506,15 +1512,6 @@ PopupManager
 	font-size: 16px;
 }
 
-#playtest_schedule
-{
-	visibility: collapse;
-	flow-children: down;
-	padding-bottom: 7px;
-	margin-bottom: 10px;
-	border-bottom: 2px solid white;
-}
-
 .HasPlaytestSchedule #new_playtest_schedule
 {
 	visibility: visible;
@@ -1552,7 +1549,7 @@ PopupManager
 	vertical-align: middle;
 	margin-right: 10px;
 	text-transform: uppercase;
-	font-weight: semi-bold;
+	font-weight: bold;
 	color: silvered&90;
 	font-size: 16px;
 }
@@ -1574,9 +1571,23 @@ PopupManager
 	font-size: 22px;
 }
 
+.playtest_date_time
+{
+	flow-children: right;
+}
+
 .playtest_time
 {
 	opacity: 0.7;
+	font-weight: semi-bold;
+}
+
+.local_time
+{
+	font-size: 14px;
+	opacity: 0.3;
+	vertical-align: bottom;
+	margin-left: 8px;
 }
 
 .playtest_date_box
@@ -1687,6 +1698,11 @@ PopupManager
 .hasNotCreatedDiscordInvite #DiscordInvite
 {
 	visibility: visible;
+}
+
+.in_matchmaking.hasNotCreatedDiscordInvite #DiscordInvite
+{
+	visibility: collapse;
 }
 
 .recommendIntro
@@ -1924,9 +1940,14 @@ PopupManager
 #StatusIcons
 {
 	horizontal-align: right;
-	margin: 170px 30px 0px 0px;
+	margin: 20px 410px 0px 0px;
 	visibility: visible;
 	z-index: 101;
+}
+
+.connectedToGame #StatusIcons
+{
+	visibility: collapse;
 }
 
 #Announcements
@@ -2521,8 +2542,8 @@ Label.playModeDesc
 	border: 1px solid #ffffff10;
 	background-color: offBlack;
 	horizontal-align: right;
-	margin-right: 75px;
-	margin-top: 208px;
+	margin-right: 420px;
+	margin-top: 90px;
 	visibility: collapse;
 	padding: 10px;
 	z-index: 100;

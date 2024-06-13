@@ -24,7 +24,7 @@
 						_system_properties = 
 						{
 							display_group = "Normal"
-							property_group = "Volume"
+							property_group = "citadel_damage - Volume"
 							property_help = "Base volume for sound in db."
 						}
 					}
@@ -172,6 +172,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
+							property_group = "citadel_damage"
 							display_edit_type = "field_curve_2d_editor"
 						}
 					}
@@ -264,6 +265,7 @@
 						_system_properties = 
 						{
 							display_group = "advanced"
+							property_group = "citadel_damage"
 							display_edit_type = "field_curve_2d_editor"
 						}
 					}
@@ -518,6 +520,11 @@
 					{
 						data_type = "float"
 						value = "@citadel_damage_info::output.inverse_is_viewing_victim"
+					}
+					mono_downmix_enabled = 
+					{
+						data_type = "float"
+						value = "@citadel_damage_info::output.is_viewing_other"
 					}
 					occlusion_scale = 
 					{

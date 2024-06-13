@@ -119,6 +119,7 @@
 						{
 							display_group = "locked"
 							display_edit_type = "none"
+							property_group = "Perspective - Volume Falloff"
 							property_help = "Overwritten by perspective stack and forwarded to citadel_default_3d"
 						}
 					}
@@ -136,6 +137,7 @@
 						{
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
+							property_group = "Perspective - Volume Falloff"
 						}
 					}
 					volume_falloff_curve_db_team = 
@@ -152,6 +154,7 @@
 						{
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
+							property_group = "Perspective - Volume Falloff"
 						}
 					}
 					volume_falloff_curve_db_opponent = 
@@ -168,6 +171,7 @@
 						{
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
+							property_group = "Perspective - Volume Falloff"
 						}
 					}
 					volume_falloff_curve_db_neutral = 
@@ -184,6 +188,7 @@
 						{
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
+							property_group = "Perspective - Volume Falloff"
 						}
 					}
 					volume_enemy_targeting_boost = 
@@ -193,7 +198,7 @@
 						_system_properties = 
 						{
 							display_group = "Normal"
-							property_group = "Relevance"
+							property_group = "Perspective - Relevance"
 							property_help = "Volume in db that will boost this sound if its owning entity is targeting the local player."
 						}
 					}
@@ -204,7 +209,7 @@
 						_system_properties = 
 						{
 							display_group = "Normal"
-							property_group = "Volume"
+							property_group = "Perspective - Volume"
 							property_help = "Base volume for sound in db."
 						}
 					}
@@ -215,7 +220,7 @@
 						_system_properties = 
 						{
 							display_group = "Normal"
-							property_group = "Volume"
+							property_group = "Perspective - Volume Falloff"
 							property_help = "Minimum linear scale volume for a sound."
 						}
 					}
@@ -226,7 +231,7 @@
 						_system_properties = 
 						{
 							display_group = "Normal"
-							property_group = "Relevance"
+							property_group = "Perspective - Relevance"
 							property_help = "Minimum linear scale volume for a sound with a relevance score > 0. Scales to its full value between relevance 0 to 1."
 						}
 					}
@@ -237,7 +242,7 @@
 						_system_properties = 
 						{
 							display_group = "Normal"
-							property_group = "Relevance"
+							property_group = "Perspective - Relevance"
 							property_help = "Minimum linear scale volume for a sound with an owner that is targeting the local player."
 						}
 					}
@@ -453,6 +458,7 @@
 						value = "-1.0"
 						_system_properties = 
 						{
+							property_group = "Perspective"
 							display_group = "advanced"
 						}
 					}
@@ -462,6 +468,7 @@
 						value = "0.0"
 						_system_properties = 
 						{
+							property_group = "Perspective"
 							display_group = "advanced"
 						}
 					}
@@ -471,6 +478,7 @@
 						value = ".85"
 						_system_properties = 
 						{
+							property_group = "Perspective"
 							display_group = "advanced"
 						}
 					}
@@ -480,6 +488,7 @@
 						value = "1.5"
 						_system_properties = 
 						{
+							property_group = "Perspective"
 							display_group = "advanced"
 						}
 					}
@@ -489,6 +498,7 @@
 						value = "0"
 						_system_properties = 
 						{
+							property_group = "Perspective"
 							display_group = "player"
 						}
 					}
@@ -498,6 +508,7 @@
 						value = "1.0"
 						_system_properties = 
 						{
+							property_group = "Perspective"
 							display_group = "advanced"
 						}
 					}
@@ -507,6 +518,7 @@
 						value = "1.0"
 						_system_properties = 
 						{
+							property_group = "Perspective"
 							display_group = "advanced"
 						}
 					}
@@ -516,6 +528,7 @@
 						value = ".9"
 						_system_properties = 
 						{
+							property_group = "Perspective"
 							display_group = "advanced"
 						}
 					}
@@ -525,7 +538,7 @@
 						value = "-1"
 						_system_properties = 
 						{
-							property_group = "Mixer"
+							property_group = "Perspective - Mix Layers"
 						}
 					}
 				}

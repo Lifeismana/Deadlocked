@@ -180,6 +180,7 @@
 					<Panel class="ProfileBacker" />
 					<CitadelParty id="party" />
 				</Panel>
+				<DBPlayerList id="PlayerList" />
 				<Panel id="StatusIcons">
 					<Panel class="newBadge" />
 					<Panel id="Announcements" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" onactivate="CitadelToggleViewAnnouncements()">
@@ -210,23 +211,25 @@
 							<Label class="playtest_active_time" text="Matchmaking open until {t:t:playtest_end}" />
 							<Label class="match_queue_text unranked_mm_paused" text="Matchmaking is currently paused: {t:d:unranked_mm_pause_time}" />
 						</Panel>
-						<Panel id="playtest_schedule">
-							<Label class="playtest_schedule_name" text="Playtest Schedule" />
-							<Label class="playtest_schedule_text" text="{s:playtest_schedule}" />
-						</Panel>
 						<Panel id="new_playtest_schedule">
 							<Panel id="playtest_schedule_info">
 								<Label class="schedule_label" text="Playtest Schedule:" />
-								<Label class="region_label" text="Region: NA" />
+								<Label class="region_label" text="Region: {s:region_name}" />
 							</Panel>
 							<Panel id="playtest_schedule_times">
 								<Panel id="playtest_weekday" class="playtest_date_box">
 									<Label class="playtest_days" text="Monday - Friday:" />
-									<Label class="playtest_time" text="5pm - 3am PST" />
+									<Panel class="playtest_date_time">
+										<Label class="playtest_time" text="{t:t:weekday_start} - {t:t:weekday_end}" />
+										<Label class="local_time" text="Local Time" />
+									</Panel>
 								</Panel>
 								<Panel id="playtest_weekend" class="playtest_date_box">
 									<Label class="playtest_days" text="Saturday - Sunday:" />
-									<Label class="playtest_time" text="3pm - 3am PST" />
+									<Panel class="playtest_date_time">
+										<Label class="playtest_time" text="{t:t:weekend_start} - {t:t:weekend_end}" />
+										<Label class="local_time" text="Local Time" />
+									</Panel>
 								</Panel>
 							</Panel>
 						</Panel>

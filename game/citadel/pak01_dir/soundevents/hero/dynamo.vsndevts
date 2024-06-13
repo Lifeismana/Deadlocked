@@ -389,8 +389,11 @@
 	Dynamo.Nikuman.Lp = 
 	{
 		base = "Base.Ability"
-		mixer_mixgroup = "DynamoAbility"
 		volume = -3.000000
+		mixer_mixlayer_to_set = "Ability-Dramatic"
+		mixer_set_mixlayer = 1.000000
+		mixer_mixlayer_amount_manual = 1.000000
+		mixer_set_mixlayer_for_perspective = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_loop.vsnd"
 		vsnd_duration = 6.689433
 	}
@@ -727,7 +730,7 @@
 		volume_enemy_targeting_boost = 0.000000
 		volume_offset_opponent = -3.000000
 		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_cast.vsnd"
-		vsnd_duration = 1.393787
+		vsnd_duration = 4.448163
 	}
 	Dynamo.A2.Quantum.Select = 
 	{
@@ -735,7 +738,7 @@
 		volume = -5.000000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_select.vsnd"
-		vsnd_duration = 1.220136
+		vsnd_duration = 2.390952
 	}
 	Dynamo.A2.Quantum.End = 
 	{
@@ -743,7 +746,7 @@
 		volume = -4.000000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_end.vsnd"
-		vsnd_duration = 1.880340
+		vsnd_duration = 1.740227
 	}
 	Dynamo.A2.Quantum.Deselect = 
 	{

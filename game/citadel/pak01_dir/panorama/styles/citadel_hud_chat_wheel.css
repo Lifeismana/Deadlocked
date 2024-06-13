@@ -15,7 +15,7 @@ CitadelChatWheel
 	height: 950px;
 	horizontal-align: center;
 	vertical-align: middle;
-	z-index: 1;
+	z-index: 100;
 }
 
 .Hidden
@@ -447,12 +447,12 @@ CitadelChatWheel
 	opacity: 1;
 }
 
-.hasContextualResponse #RespondingToContainer
+.isRespondingToPing #RespondingToContainer
 {
 	visibility: visible;
 }
 
-.hasContextualResponse #Icon2,.hasContextualResponse #Icon3
+.isRespondingToPing #Icon2,.isRespondingToPing #Icon3
 {
 	visibility: collapse;
 }
@@ -478,5 +478,20 @@ CitadelChatWheel
 	color: #389cff;
 	text-align: center;
 	font-size: 16px;
+}
+
+#CustomizeReminder
+{
+	vertical-align: bottom;
+	horizontal-align: center;
+	margin-bottom: 100px;
+	background-color: #000000ae;
+	border-radius: 100px;
+	padding: 20px 40px;
+}
+
+#CustomizeReminder Label
+{
+	font-weight: semi-bold;
 }
 

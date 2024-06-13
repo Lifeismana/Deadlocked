@@ -282,9 +282,10 @@
 	Ability.Hornet.Leap.Cast = 
 	{
 		base = "Base.Ability"
-		volume = 0.000000
+		volume = -2.000000
 		play_from_listener_player = 1.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_flight_cast.vsnd"
+		vsnd_duration = 4.656236
 	}
 	Ability.Hornet.Leap.Lp = 
 	{
@@ -296,6 +297,7 @@
 		volume_offset_player = -5.000000
 		delay_rand_max = -20.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_flight_loop.vsnd"
+		vsnd_duration = 24.670000
 	}
 	Ability.Hornet.Leap.Expire = 
 	{
@@ -303,6 +305,7 @@
 		volume = -9.000000
 		play_from_listener_player = 1.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_flight_expire.vsnd"
+		vsnd_duration = 2.372494
 	}
 	Hornet.Hornet.Sting.Cast = 
 	{
@@ -399,18 +402,21 @@
 		base = "Base.Ability"
 		play_from_listener_player = 1.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_in.vsnd"
+		vsnd_duration = 0.804694
 	}
 	Hornet.Assassinate.Zoom.Out = 
 	{
 		base = "Base.Ability"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_out.vsnd"
+		vsnd_duration = 0.462902
 	}
 	Hornet.Assassinate.Zoom.Lp = 
 	{
 		base = "Base.Ability.Target"
-		volume = 0.000000
+		volume = 6.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_lp.vsnd"
+		vsnd_duration = 11.332335
 	}
 	Hornet.Assassinate.Cast = 
 	{

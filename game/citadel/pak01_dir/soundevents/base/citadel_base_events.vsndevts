@@ -172,7 +172,7 @@
 		volume_offset_player = -99.000000
 		volume_offset_neutral = -99.000000
 		volume_offset_team = -99.000000
-		volume_offset_enemy = -16.000000
+		volume_offset_opponent = -16.000000
 		volume_enemy_targeting_boost = 16.000000
 	}
 	Base.Ability.Projectile = 
@@ -886,6 +886,18 @@
 		volume_falloff_max_opponent = 2500.000000
 		volume_falloff_max_neutral = 2500.000000
 		volume_falloff_curve_amount = 0.500000
+	}
+	Base.Ability.Melee = 
+	{
+		base = "Base.Ability"
+		volume_falloff_min_player = 200.000000
+		volume_falloff_min_team = 200.000000
+		volume_falloff_min_opponent = 200.000000
+		volume_falloff_min_neutral = 200.000000
+		volume_falloff_max_player = 800.000000
+		volume_falloff_max_team = 800.000000
+		volume_falloff_max_opponent = 800.000000
+		volume_falloff_max_neutral = 800.000000
 	}
 	Base.Weapon.Short = 
 	{

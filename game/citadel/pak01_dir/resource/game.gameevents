@@ -101,6 +101,13 @@
 		"local"		"1"			// Not networked
 	}
 
+	// local message when a player has changed who they chat with
+	"player_chat_group_changed"
+	{
+		"local"		"1"			// Not networked
+		"player"	"player_controller"
+	}
+
 	// SourceTV events - tell the client to watch a specific spot
 	"citadeltv_chase_hero"
 	{

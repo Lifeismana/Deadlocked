@@ -39,6 +39,7 @@
 	Base.Hero.VO.3d = 
 	{
 		base = "Base.Hero.VO"
+		volume_falloff_max_team = 2500.000000
 	}
 	Base.Hero.VO.Ability.3d = 
 	{
@@ -46,6 +47,7 @@
 		mono_downmix_min_distance = 1.000000
 		mono_downmix_max_distance = 5.000000
 		hrtf_on_player = 1.000000
+		volume_falloff_max_team = 2500.000000
 		reverb_falloff_curve = 
 		[
 			
@@ -71,6 +73,8 @@
 	Base.Hero.VO.Ultimate.3d = 
 	{
 		base = "Base.Hero.VO"
+		volume_falloff_max_team = 2500.000000
+		mix_group_prefix = "VO-Hero-ULT"
 	}
 	Base.Hero.VO.Pain.3d = 
 	{

@@ -795,6 +795,71 @@
 			duck_to_percent = 100
 			ducker_threshold = 20
 		},
+		{
+			name = "UI-Health"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
+		{
+			name = "VO-Hero-Ult-Pla"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
+		{
+			name = "VO-Hero-Ult-Tea"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
+		{
+			name = "VO-Hero-Ult-Opp"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
+		{
+			name = "VO-Hero-Ult-Neu"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
 	]
 	SoundMixers = 
 	{
@@ -1098,7 +1163,7 @@
 			},
 			{
 				mixgroup = "Ambience-Bed"
-				vol = 0.5
+				vol = 0.6
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1106,7 +1171,7 @@
 			},
 			{
 				mixgroup = "Ambience-Details"
-				vol = 0.508
+				vol = 0.6
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1114,7 +1179,7 @@
 			},
 			{
 				mixgroup = "VO-Hero-Tea"
-				vol = 0.5
+				vol = 0.7
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1122,7 +1187,7 @@
 			},
 			{
 				mixgroup = "VO-Hero-Opp"
-				vol = 0.5
+				vol = 0.7
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1283,6 +1348,46 @@
 			{
 				mixgroup = "Music-World"
 				vol = 0.5
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.0
+			},
+			{
+				mixgroup = "UI-Health"
+				vol = 1.0
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.0
+			},
+			{
+				mixgroup = "VO-Hero-Ult-Pla"
+				vol = 1.0
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.0
+			},
+			{
+				mixgroup = "VO-Hero-Ult-Tea"
+				vol = 1.0
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.0
+			},
+			{
+				mixgroup = "VO-Hero-Ult-Opp"
+				vol = 1.0
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.0
+			},
+			{
+				mixgroup = "VO-Hero-Ult-Neu"
+				vol = 1.0
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -2197,11 +2302,19 @@
 			[
 				{
 					mixgroup = "VO-Hero-Tea"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.7
+				},
+				{
+					mixgroup = "Ability-Neu"
 					vol = 1.0
 					lvl = 0.0
 					dsp = 1.0
 					solo = 0.0
-					mute = 1.0
+					mute = 0.0
 				},
 			]
 			Triggers = 
@@ -2283,6 +2396,116 @@
 					mixamount = 1.0
 					attack = 0.1
 					release = 0.1
+				},
+			]
+		}
+		"VO-Ult" = 
+		{
+			Mixers = 
+			[
+				{
+					mixgroup = "Weapons"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.5
+				},
+				{
+					mixgroup = "Ability-Pla"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.5
+				},
+				{
+					mixgroup = "Ability-Opp"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.5
+				},
+				{
+					mixgroup = "Ability-Tea"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.5
+				},
+				{
+					mixgroup = "Ambience-Bed"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.0
+				},
+				{
+					mixgroup = "Ambience-Details"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.0
+				},
+				{
+					mixgroup = "Ult-Pla"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.6
+				},
+				{
+					mixgroup = "Ult-Tea"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.6
+				},
+				{
+					mixgroup = "Ult-Opp"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.6
+				},
+				{
+					mixgroup = "Ult-Neu"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.6
+				},
+			]
+			Triggers = 
+			[
+				{
+					trigger = "VO-Hero-Ult-Pla"
+					threshold = 0.0
+					mixamount = 1.0
+					attack = 0.0
+					release = 0.0
+				},
+				{
+					trigger = "VO-Hero-Ult-Tea"
+					threshold = 0.0
+					mixamount = 1.0
+					attack = 0.0
+					release = 0.0
+				},
+				{
+					trigger = "VO-Hero-Ult-Opp"
+					threshold = 0.0
+					mixamount = 1.0
+					attack = 0.0
+					release = 0.0
 				},
 			]
 		}

@@ -24,6 +24,7 @@
 						{
 							display_group = "locked"
 							property_help = "Used by child stacks to override the volume-over-distance falloff."
+							property_group = "citadel_distance_falloff"
 						}
 					}
 					volume_falloff_curve_db = 
@@ -41,6 +42,7 @@
 							display_group = "advanced"
 							display_edit_type = "field_curve_2d_editor"
 							property_help = "Remaps distance to volume attenuation in db."
+							property_group = "citadel_distance_falloff"
 						}
 					}
 					distance = 

@@ -6,6 +6,14 @@ CitadelHud
 	height: 100%;
 }
 
+#HUDContents
+{
+	width: 100%;
+	height: 100%;
+	max-width: 2000px;
+	horizontal-align: center;
+}
+
 #PopupManager
 {
 	z-index: 1001;
@@ -75,6 +83,11 @@ CitadelHudHeroShop.in_item_shop
 	visibility: visible;
 }
 
+.GameStatePostGame #gameplay_hud,.GameStatePostGame CitadelHudSoulAPContainer,.GameStatePostGame #AbilitiesContainer,.GameStatePostGame #StatsAndModsContainer
+{
+	opacity: 0;
+}
+
 #gameplay_hud_alive
 {
 	width: 100%;
@@ -113,6 +126,11 @@ CitadelHudHeroShop.in_item_shop
 	vertical-align: bottom;
 	background-image: url("s2r://panorama/images/hud/hud_lowerleft_backer_psd.vtex");
 	background-size: cover;
+}
+
+.AspectRatio21x9 #hudBacker
+{
+	visibility: collapse;
 }
 
 Button
@@ -358,6 +376,7 @@ CitadelHudModifierIcons
 .action_binding
 {
 	text-transform: uppercase;
+	horizontal-align: center;
 	min-width: 50px;
 	font-size: 20px;
 	font-weight: bold;
@@ -396,6 +415,12 @@ CitadelHudModifierIcons
 	horizontal-align: center;
 	vertical-align: center;
 	background-color: #ffff4c50;
+}
+
+#zipline_sign
+{
+	horizontal-align: center;
+	width: 300px;
 }
 
 .action_upgrade,.action_mantle,.action_teleport,.action_vehicle .action_zip_line,.in_item_shop .unused_ability_points .action_upgrade,.in_item_shop .can_shop .action_upgrade
@@ -596,10 +621,33 @@ CitadelHudModifierIcons
 	flow-children: down;
 	border-radius: 6px;
 	background-color: #00000077;
-	padding: 10px;
-	flow-children: right;
+	padding: 10px 15px;
+	flow-children: down;
 	transition-property: opacity;
 	transition-duration: 0.12s;
+}
+
+#voice_active_box.InPartyChat
+{
+	border: 2px solid #7ec59a60;
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( #598b6d70 ), to( #43434380 ) );
+}
+
+.micIcon
+{
+	background-image: url("s2r://panorama/images/global/chat_type_teamchat.vsvg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.InPartyChat .micIcon
+{
+	background-image: url("s2r://panorama/images/global/chat_type_partychat.vsvg");
 }
 
 #voice_active_box.voiceActive
@@ -607,18 +655,29 @@ CitadelHudModifierIcons
 	opacity: 1;
 }
 
-#voice_active_box Image
-{
-	height: 28px;
-	width: 28px;
-	margin-right: 8px;
-	vertical-align: center;
-}
-
 #voice_active_box Label
 {
-	color: rgb(255, 255, 255);
-	font-size: 24px;
+	color: offWhite;
+	font-size: 20px;
+	font-weight: semi-bold;
+}
+
+#voice_active_not_in_chat
+{
+	visibility: collapse;
+	horizontal-align: center;
+}
+
+#voice_active_not_in_chat Label
+{
+	color: #FF6666;
+	font-size: 18px;
+	font-weight: semi-bold;
+}
+
+#voice_active_box.voiceActiveButNotInChat #voice_active_not_in_chat
+{
+	visibility: visible;
 }
 
 #ability_interrupt_panel
@@ -918,13 +977,13 @@ CitadelHudModifierIcons
 	width: 100%;
 	vertical-align: center;
 	horizontal-align: center;
-	z-index: 50;
+	z-index: -1;
 }
 
 .ping_offscreen
 {
-	width: 128px;
-	height: 128px;
+	width: 105px;
+	height: 105px;
 	padding: 10px;
 	transition-property: opacity, ui-scale;
 	transition-duration: 0.2s, 0.1s;
@@ -1027,8 +1086,8 @@ CitadelHudModifierIcons
 
 .playerPulse
 {
-	height: 45px;
-	width: 45px;
+	height: 35px;
+	width: 35px;
 	vertical-align: center;
 	horizontal-align: center;
 	overflow: noclip;
@@ -1625,17 +1684,10 @@ ActiveAbilitiesMenu
 {
 	vertical-align: bottom;
 	horizontal-align: left;
-	margin-bottom: 400px;
+	margin-bottom: 450px;
 	width: 250px;
 	height: 450px;
 	margin-left: 20px;
-}
-
-.AspectRatio21x9 #hud_aura_modifiers
-{
-	horizontal-align: center;
-	margin-right: 1400px;
-	margin-left: 0px;
 }
 
 #status_bars
@@ -1912,7 +1964,7 @@ ActiveAbilitiesMenu
 	color: #ffffff99;
 }
 
-.viewing_as_player .hero_panel,.viewing_as_player #hud_weapons,.viewing_as_player #hud_signature,.viewing_as_player #hud_items,.viewing_as_player #shortcut_container,.viewing_as_player #hud_passive_items
+.viewing_as_player .hero_panel,.viewing_as_player #hud_weapons,.viewing_as_player #hud_signature,.viewing_as_player #hud_items,.viewing_as_player #shortcut_container,.viewing_as_player #hud_passive_items,.ShowGoldAndAPOnHud #hud_signature,.ShowGoldAndAPOnHud #hud_items,.ShowGoldAndAPOnHud #hud_passive_items
 {
 	visibility: visible;
 }
@@ -2541,7 +2593,7 @@ CitadelHudSandboxTutorial
 
 .AspectRatio21x9 #StatsAndModsContainer.in_item_shop
 {
-	transform: translateX(340px) translateY(-10px);
+	transform: translateX(60px) translateY(-10px);
 }
 
 .replay_playback #StatsAndModsContainer

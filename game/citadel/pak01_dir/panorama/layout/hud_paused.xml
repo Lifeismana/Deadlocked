@@ -12,6 +12,11 @@
 					<Label id="PauserLabel" class="PausedText" text=" by {s:pauser}" />
 				</Panel>
 			</Panel>
+			<Panel id="ChatInfoContainer" hittest="false">
+				<Label class="ChatInfoText introArea" text="Text chat is enabled for everyone during pause" allowtextselection="false" />
+				<Label class="ChatInfoText" text="[ENTER] Team Chat" allowtextselection="false" />
+				<Label class="ChatInfoText" text="[SHIFT+ENTER] All Chat" allowtextselection="false" />
+			</Panel>
 			<Label id="PausedCountdownLabel" hittest="false" hittestchildren="false" />
 			<Panel id="PrevTip" class="TipButton" onactivate="CitadelPrevTipText()" />
 			<Panel id="TipContainer" hittest="false">

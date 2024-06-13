@@ -3,8 +3,8 @@
 	Atlas.Wpn.Fire = 
 	{
 		base = "Base.Weapon"
-		recency_bias_max_scale = 0.750000
 		preload_vsnds = true
+		recency_bias_max_scale = 0.750000
 		vsnd_files = 
 		[
 			"sounds/weapons/abrams/abrams_wpn_fire_01.vsnd",
@@ -285,7 +285,7 @@
 			"sounds/vo/atlas/emote/abrams_pain_death_11.vsnd",
 			"sounds/vo/atlas/emote/abrams_pain_death_12.vsnd",
 		]
-		vsnd_duration = 0.817460
+		vsnd_duration = 1.168322
 	}
 	Atlas.Effort = 
 	{
@@ -300,7 +300,7 @@
 			"sounds/vo/atlas/emote/abrams_effort_general_06.vsnd",
 			"sounds/vo/atlas/emote/abrams_effort_general_07.vsnd",
 		]
-		vsnd_duration = 0.464240
+		vsnd_duration = 0.742585
 	}
 	Atlas.Effort.Melee = 
 	{
@@ -325,7 +325,7 @@
 			"sounds/vo/atlas/emote/abrams_effort_melee_small_10.vsnd",
 			"sounds/vo/atlas/emote/abrams_effort_melee_small_11.vsnd",
 		]
-		vsnd_duration = 0.660113
+		vsnd_duration = 0.947574
 	}
 	Atlas.Effort.Dash = 
 	{
@@ -340,7 +340,7 @@
 			"sounds/vo/atlas/emote/abrams_effort_dash_06.vsnd",
 			"sounds/vo/atlas/emote/abrams_effort_dash_07.vsnd",
 		]
-		vsnd_duration = 0.511406
+		vsnd_duration = 0.608844
 	}
 	Ability.A1.SiphonLife.Cast = 
 	{
@@ -349,6 +349,7 @@
 		mixer_set_mixlayer = 1.000000
 		mixer_mixlayer_amount_manual = 1.000000
 		mixer_mixlayer_to_set = "Ability-Dramatic"
+		mixer_set_mixlayer_for_perspective = 0.000000
 		vsnd_files = "sounds/abilities/abrams/abrams_a1_siphonlife_cast.vsnd"
 		vsnd_duration = 2.971814
 	}
@@ -392,6 +393,7 @@
 		mixer_mixlayer_amount_manual = 1.000000
 		mixer_mixlayer_to_set = "Ability-Dramatic"
 		mono_downmix_min_distance = 300.000000
+		mixer_set_mixlayer_for_perspective = 0.000000
 		vsnd_files = "sounds/abilities/abrams/abrams_a4_slam_cast_01.vsnd"
 		vsnd_duration = 3.428957
 	}

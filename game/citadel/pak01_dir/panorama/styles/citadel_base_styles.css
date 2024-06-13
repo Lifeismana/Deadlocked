@@ -464,6 +464,27 @@ Label
 	wash-color: silvered;
 }
 
+.SecondaryButton.red.fill
+{
+	background-color: colorEnemy&70;
+	border: 0px solid colorEnemy&00;
+}
+
+.SecondaryButton.red.fill Label
+{
+	color: offWhite;
+}
+
+.SecondaryButton.red.fill:enabled:hover
+{
+	background-color: colorEnemy;
+}
+
+.SecondaryButton.red.fill:enabled:hover Label
+{
+	color: offWhite;
+}
+
 .SecondaryButton.green.fill
 {
 	background-color: ritualGreen&50;

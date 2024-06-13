@@ -158,12 +158,12 @@ CitadelHudTopBarPlayer:hover .PlayerInfoContainer
 	z-index: 2;
 }
 
-CitadelHudTopBarPlayer.SpectatorTarget .HeroContents,CitadelHudTopBarPlayer.LocalPlayer .HeroContents
+CitadelHudTopBarPlayer.SpectatorTarget .HeroContents,CitadelHudTopBarPlayer.LocalPlayer .HeroContents,CitadelHudTopBarPlayer.IsInLocalPlayerLane .HeroContents
 {
 	height: 150px;
 }
 
-.wants_scoreboard CitadelHudTopBarPlayer.SpectatorTarget .HeroContents,.wants_scoreboard CitadelHudTopBarPlayer.LocalPlayer .HeroContents
+.wants_scoreboard CitadelHudTopBarPlayer.SpectatorTarget .HeroContents,.wants_scoreboard CitadelHudTopBarPlayer.LocalPlayer .HeroContents,.wants_scoreboard CitadelHudTopBarPlayer.IsInLocalPlayerLane .HeroContents
 {
 	height: 140px;
 }
@@ -178,12 +178,12 @@ CitadelHudTopBarPlayer.SpectatorTarget .HeroContents,CitadelHudTopBarPlayer.Loca
 	border-bottom: 4px solid offWhite&70;
 }
 
-CitadelHudTopBarPlayer.SpectatorTarget .HeroContentsBG,CitadelHudTopBarPlayer.LocalPlayer .HeroContentsBG
+CitadelHudTopBarPlayer.SpectatorTarget .HeroContentsBG,CitadelHudTopBarPlayer.LocalPlayer .HeroContentsBG,CitadelHudTopBarPlayer.IsInLocalPlayerLane .HeroContentsBG
 {
 	height: 140px;
 }
 
-.wants_scoreboard CitadelHudTopBarPlayer.SpectatorTarget .HeroContentsBG,.wants_scoreboard CitadelHudTopBarPlayer.LocalPlayer .HeroContentsBG
+.wants_scoreboard CitadelHudTopBarPlayer.SpectatorTarget .HeroContentsBG,.wants_scoreboard CitadelHudTopBarPlayer.LocalPlayer .HeroContentsBG,.wants_scoreboard CitadelHudTopBarPlayer.IsInLocalPlayerLane .HeroContentsBG
 {
 	height: 130px;
 }
@@ -213,6 +213,12 @@ CitadelHudTopBarPlayer.SpectatorTarget .HeroContentsBG,CitadelHudTopBarPlayer.Lo
 	border-bottom: 4px solid offWhite&70;
 }
 
+.InParty .HeroContentsBG
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #d7ffde80 ), to( #338d5e80 ) );
+	border-bottom: 4px solid #6DA849;
+}
+
 .Dead.team1 .HeroContentsBG
 {
 	background-color: #79141490;
@@ -225,27 +231,38 @@ CitadelHudTopBarPlayer.SpectatorTarget .HeroContentsBG,CitadelHudTopBarPlayer.Lo
 	border-bottom: 4px solid colorTeam2&70;
 }
 
-.SpectatorTarget .HeroContentsBG,.LocalPlayer .HeroContentsBG
+.LocalPlayer.InParty .HeroContentsBG
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #d7ffde ), to( #56b28280 ) );
+	border-bottom: 4px solid #8dcb66;
+}
+
+.SpectatorTarget .HeroContentsBG,.LocalPlayer .HeroContentsBG,.SpectatorTarget.InParty .HeroContentsBG,.LocalPlayer.InParty .HeroContentsBG
 {
 	background-color: offWhite&ee;
 }
 
-.LaneNum1 .HeroContentsBG
+.SpectatorTarget.InParty .HeroContentsBG,.LocalPlayer.InParty .HeroContentsBG
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #d7ffde ), to( #338d5e ) );
+}
+
+.LaneNum1 .HeroContentsBG,.InParty.LaneNum1 .HeroContentsBG
 {
 	border-bottom: 4px solid laneYellowColor;
 }
 
-.LaneNum3 .HeroContentsBG
+.LaneNum3 .HeroContentsBG,.InParty.LaneNum3 .HeroContentsBG
 {
 	border-bottom: 4px solid laneOrangeColor;
 }
 
-.LaneNum4 .HeroContentsBG
+.LaneNum4 .HeroContentsBG,.InParty.LaneNum4 .HeroContentsBG
 {
 	border-bottom: 4px solid laneBlueColor;
 }
 
-.LaneNum6 .HeroContentsBG
+.LaneNum6 .HeroContentsBG,.InParty.LaneNum6 .HeroContentsBG
 {
 	border-bottom: 4px solid lanePurpleColor;
 }
@@ -701,9 +718,40 @@ Label.KillStreakText
 	visibility: collapse;
 }
 
+@keyframes 'JoinedTeamChat'
+{
+	0%
+	{
+		opacity: 0;
+		pre-transform-scale2d: 1;
+	}
+	
+	50%
+	{
+		pre-transform-scale2d: 1.2;
+	}
+	
+	70%
+	{
+		pre-transform-scale2d: 1;
+		opacity: 1;
+	}
+	
+}
+
 .VoiceActive .VoiceBar
 {
 	visibility: visible;
+}
+
+.PreMatch.InTeamChat .VoiceBar,.LocalPlayerJoiningTeamChat.InTeamChat .VoiceBar
+{
+	visibility: visible;
+	background-color: gradient( linear, 100% 0%, 0% 0%, from( #9DC3DF ), color-stop (0.5, #ffffff50), to( #9DC3DF ) );
+	border: 2px solid #ffffff30;
+	animation-name: JoinedTeamChat;
+	animation-iteration-count: 1;
+	animation-duration: 0.3s;
 }
 
 .DeathStatus
@@ -1290,6 +1338,11 @@ CitadelHudModBarGraph
 	color: #FFF6D8;
 	opacity: 0.7;
 	font-size: 15px;
+}
+
+.InParty .PlayerName
+{
+	color: #C8E8B5;
 }
 
 .wants_scoreboard CitadelHudTopBarPlayer:selected .PlayerName

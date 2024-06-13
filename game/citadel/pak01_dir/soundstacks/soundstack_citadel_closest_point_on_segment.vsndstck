@@ -23,7 +23,9 @@
 						value = "[ 0.f, 0.f, 0.f]"
 						_system_properties = 
 						{
-							property_group = "advanced"
+							display_group = "locked"
+							property_group = "citadel_closest_point_on_segment"
+							property_help = "set by code"
 						}
 					}
 					end_point = 
@@ -32,13 +34,20 @@
 						value = "[ 0.f, 0.f, 0.f]"
 						_system_properties = 
 						{
-							property_group = "advanced"
+							display_group = "locked"
+							property_group = "citadel_closest_point_on_segment"
+							property_help = "set by code"
 						}
 					}
 					draw_debug = 
 					{
 						data_type = "float"
 						value = "0.0"
+						_system_properties = 
+						{
+							display_group = "advanced"
+							property_group = "citadel_closest_point_on_segment"
+						}
 					}
 				}
 			},

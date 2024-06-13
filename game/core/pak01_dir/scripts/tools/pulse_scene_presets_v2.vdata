@@ -9,6 +9,44 @@
 		[
 			
 			{
+				name = "HeaderIcon"
+				_class = "image"
+				className = "HeaderIcon"
+			},
+			
+			{
+				name = "HeaderTextContainer"
+				className = "HeaderTextContainer"
+				children = 
+				[
+					
+					{
+						name = "HeaderText"
+						_class = "text"
+						className = "HeaderText"
+					},
+					
+					{
+						name = "SubHeaderText"
+						_class = "text"
+						className = "SubHeaderText"
+					},
+				]
+			},
+		]
+	}
+	BaseFlowHeader = 
+	{
+		name = "Header"
+		className = "NodeHeader_Base FlowNodeHeader"
+		children = 
+		[
+			
+			{
+				className = "FlowRail"
+			},
+			
+			{
 				_class = "image"
 				name = "RequirementsIconInsideHeader"
 				className = "RequirementsIconInsideHeader"
@@ -42,43 +80,66 @@
 			},
 		]
 	}
-	BaseNodeParamLayouts = 
+	BaseValueHeader = 
 	{
+		name = "Header"
+		className = "NodeHeader_Base ValueNodeHeader"
 		children = 
 		[
 			
 			{
-				name = "InflowPortsLayout"
-				className = "FlowPortsLayout_Base InflowPortsLayout"
+				name = "HeaderIcon"
+				_class = "image"
+				className = "HeaderIcon"
 			},
 			
 			{
-				name = "OutflowPortsLayout"
-				className = "FlowPortsLayout_Base OutflowPortsLayout"
-			},
-			
-			{
-				name = "OverlapOutparamsLayout"
-				className = "OverlapParamsLayout_Base OverlapOutparamsLayout"
-			},
-			
-			{
-				name = "OverlapInparamsLayout"
-				className = "OverlapParamsLayout_Base OverlapInparamsLayout"
+				name = "HeaderTextContainer"
+				className = "HeaderTextContainer"
+				children = 
+				[
+					
+					{
+						name = "HeaderText"
+						_class = "text"
+						className = "HeaderText"
+					},
+					
+					{
+						name = "SubHeaderText"
+						_class = "text"
+						className = "SubHeaderText"
+					},
+				]
 			},
 		]
 	}
-	BaseNode = 
+	BaseConnection = 
 	{
+		className = "BaseConnection"
+	}
+	ConnectionAnchorPoint = 
+	{
+		className = "Connection_AnchorPoint"
 		children = 
 		[
 			
 			{
-				preset = "BaseNodeHeader"
+				_class = "image"
+				className = "ConnectionAnchorPointImage"
+				image = "game:tools/images/pulse_editor/connection_anchor.png"
 			},
+		]
+	}
+	BaseRequirement = 
+	{
+		className = "BaseConnection"
+		children = 
+		[
 			
 			{
-				inlinePreset = "BaseNodeParamLayouts"
+				name = "PortsLayout"
+				className = "PortsLayout"
 			},
 		]
 	}
@@ -88,24 +149,44 @@
 		[
 			
 			{
-				preset = "BaseNodeHeader"
-				className = "NodeHeader_Base ValueNodeHeader"
-			},
-			
-			{
-				inlinePreset = "BaseNodeParamLayouts"
-			},
-			
-			{
-				name = "ValueNodeComment"
-				_class = "text"
-				className = "Comment_Base ValueNodeComment"
+				className = "BaseValueInnerContainer"
+				children = 
+				[
+					
+					{
+						name = "OverlapOutparamsLayout"
+						className = "OverlapParamsLayout_Base OverlapOutparamsLayout"
+					},
+					
+					{
+						name = "OverlapInparamsLayout"
+						className = "OverlapParamsLayout_Base OverlapInparamsLayout"
+					},
+					
+					{
+						name = "PortsLayout"
+						className = "PortsLayout"
+						children = 
+						[
+							
+							{
+								preset = "BaseValueHeader"
+							},
+						]
+					},
+					
+					{
+						name = "ValueNodeComment"
+						_class = "text"
+						className = "Comment_Base ValueNodeComment"
+					},
+				]
 			},
 		]
 	}
 	BaseValue = 
 	{
-		className = "BaseValue"
+		className = "BaseValue node_theme value"
 		children = 
 		[
 			
@@ -131,15 +212,43 @@
 			},
 		]
 	}
-	BaseFlowLayouts = 
+	DragHandleContainer = 
 	{
+		className = "DragHandleContainer"
 		children = 
 		[
 			
 			{
-				preset = "BaseNodeHeader"
-				className = "NodeHeader_Base FlowNodeHeader"
+				className = "DragHandle"
+				children = 
+				[
+					
+					{
+						className = "DragHandleGripContainer"
+						children = 
+						[
+							
+							{
+								className = "DragHandleGrip"
+							},
+							
+							{
+								className = "DragHandleGrip"
+							},
+							
+							{
+								className = "DragHandleGrip"
+							},
+						]
+					},
+				]
 			},
+		]
+	}
+	BaseFlowLayouts = 
+	{
+		children = 
+		[
 			
 			{
 				name = "FlowNodeComment"
@@ -148,35 +257,9 @@
 			},
 			
 			{
-				name = "GroupBackground"
-				className = "GroupBackground"
-				children = 
-				[
-					
-					{
-						name = "ResizeFlow_Corner_BottomRight"
-						_class = "resize_handle_corner_bottom_right"
-						className = "ResizeFlow_Corner_BottomRight"
-					},
-					
-					{
-						name = "ResizeFlow_Edge_Right"
-						_class = "resize_handle_edge_right"
-						className = "ResizeFlow_Edge_Base ResizeFlow_Edge_Right"
-					},
-					
-					{
-						name = "ResizeFlow_Edge_Left"
-						_class = "resize_handle_edge_left"
-						className = "ResizeFlow_Edge_Base ResizeFlow_Edge_Left"
-					},
-				]
-			},
-			
-			{
+				preset = "DragHandleContainer"
 				name = "FlowDragHandle"
 				_class = "flow_drag_handle"
-				className = "DragHandle_Base FlowDragHandle"
 			},
 			
 			{
@@ -198,7 +281,25 @@
 			},
 			
 			{
-				inlinePreset = "BaseNodeParamLayouts"
+				name = "InflowPortsLayout"
+				className = "FlowPortsLayout_Base InflowPortsLayout"
+			},
+			
+			{
+				name = "OutflowPortsLayout"
+				className = "FlowPortsLayout_Base OutflowPortsLayout"
+			},
+			
+			{
+				name = "PortsLayout"
+				className = "PortsLayout"
+				children = 
+				[
+					
+					{
+						preset = "BaseFlowHeader"
+					},
+				]
 			},
 		]
 	}
@@ -233,9 +334,41 @@
 			},
 		]
 	}
+	Group = 
+	{
+		className = "Group node_theme"
+		children = 
+		[
+			
+			{
+				name = "GroupBackground"
+				className = "GroupBackground"
+				children = 
+				[
+					
+					{
+						name = "ResizeFlow_Edge_Right"
+						_class = "resize_handle_edge_right"
+						className = "ResizeFlow_Edge_Base ResizeFlow_Edge_Right"
+					},
+					
+					{
+						name = "ResizeFlow_Edge_Left"
+						_class = "resize_handle_edge_left"
+						className = "ResizeFlow_Edge_Base ResizeFlow_Edge_Left"
+					},
+				]
+			},
+			
+			{
+				name = "NodeContainer"
+				className = "NodeContainer"
+			},
+		]
+	}
 	BaseFlow = 
 	{
-		className = "BaseFlow"
+		className = "BaseFlow node_theme"
 		children = 
 		[
 			
@@ -277,21 +410,39 @@
 		[
 			
 			{
-				name = "PortLabel"
-				_class = "text"
-				className = "PortLabel"
-			},
-			
-			{
-				name = "PortPlug"
-				_class = "port_plug"
-				className = "PortPlug"
-			},
-			
-			{
-				name = "PortValueLabel"
-				_class = "text"
-				className = "PortValueLabel"
+				className = "Row"
+				children = 
+				[
+					
+					{
+						className = "FlowRail"
+					},
+					
+					{
+						className = "PortlabelContainer"
+						children = 
+						[
+							
+							{
+								name = "PortLabel"
+								_class = "text"
+								className = "PortLabel"
+							},
+							
+							{
+								name = "PortValueLabel"
+								_class = "text"
+								className = "PortValueLabel"
+							},
+						]
+					},
+					
+					{
+						name = "PortPlug"
+						_class = "port_plug"
+						className = "PortPlug"
+					},
+				]
 			},
 		]
 	}
@@ -302,12 +453,7 @@
 		[
 			
 			{
-				preset = "BaseNodeHeader"
-				className = "NodeHeader_Base FlowNodeHeader"
-			},
-			
-			{
-				inlinePreset = "BaseNodeParamLayouts"
+				preset = "BaseFlowHeader"
 			},
 			
 			{
@@ -317,6 +463,7 @@
 			
 			{
 				name = "BlockCommentTextBox"
+				_class = "text"
 				className = "BlockCommentTextBox"
 			},
 			
