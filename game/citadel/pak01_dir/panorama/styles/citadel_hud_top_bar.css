@@ -744,16 +744,6 @@ Label.KillStreakText
 	visibility: visible;
 }
 
-.PreMatch.InTeamChat .VoiceBar,.LocalPlayerJoiningTeamChat.InTeamChat .VoiceBar
-{
-	visibility: visible;
-	background-color: gradient( linear, 100% 0%, 0% 0%, from( #9DC3DF ), color-stop (0.5, #ffffff50), to( #9DC3DF ) );
-	border: 2px solid #ffffff30;
-	animation-name: JoinedTeamChat;
-	animation-iteration-count: 1;
-	animation-duration: 0.3s;
-}
-
 .DeathStatus
 {
 	horizontal-align: left;

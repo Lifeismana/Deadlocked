@@ -12,14 +12,19 @@ TeamChatStatus
 	visibility: collapse;
 }
 
-TeamChatStatus.PreMatch,TeamChatStatus.JoiningChat
+.connectedToHeroTesting TeamChatStatus,.connectedToLaneTraining.connectedToGame TeamChatStatus
 {
-	visibility: visible;
+	visibility: collapse;
 }
 
 .replay_playback TeamChatStatus
 {
 	visibility: collapse;
+}
+
+TeamChatStatus.JoiningChat
+{
+	visibility: visible;
 }
 
 .wants_scoreboard TeamChatStatus,.detail_view TeamChatStatus
