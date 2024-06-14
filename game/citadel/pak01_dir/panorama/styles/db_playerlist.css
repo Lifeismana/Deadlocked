@@ -319,7 +319,7 @@
 {
 	flow-children: right;
 	vertical-align: middle;
-	width: fill-parent-flow(1.0);
+	width: 280px;
 }
 
 #CitadelHeroImage
@@ -357,9 +357,9 @@
 	font-weight: medium;
 	vertical-align: middle;
 	color: offWhite&90;
-	margin-left: 10px;
+	margin-left: 5px;
 	font-size: 16px;
-	width: 270px;
+	width: 160px;
 	max-height: 30px;
 	text-overflow: shrink;
 }
@@ -633,6 +633,37 @@ DropDownMenu Label
 }
 
 .connectedToGame #FriendListButton,.connectedToHeroTesting #FriendListButton
+{
+	visibility: collapse;
+}
+
+#MatchHistory
+{
+	font-size: 14px;
+	horizontal-align: right;
+	ignore-parent-flow: true;
+	color: offWhite&50;
+	font-weight: semi-bold;
+	margin-right: 10px;
+	vertical-align: middle;
+	text-decoration: underline;
+	visibility: collapse;
+}
+
+#LinkToProfile
+{
+	width: 100%;
+	height: 100%;
+	ignore-parent-flow: true;
+	visibility: collapse;
+}
+
+.localPlayer #LinkToProfile,.localPlayer #MatchHistory
+{
+	visibility: visible;
+}
+
+.connectedToGame #LinkToProfile,.connectedToGame #MatchHistory
 {
 	visibility: collapse;
 }
