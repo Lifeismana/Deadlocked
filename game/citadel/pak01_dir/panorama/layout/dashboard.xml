@@ -218,14 +218,14 @@
 							</Panel>
 							<Panel id="playtest_schedule_times">
 								<Panel id="playtest_weekday" class="playtest_date_box">
-									<Label class="playtest_days" text="Monday - Friday:" />
+									<Label class="playtest_days" text="Monday - Thursday:" />
 									<Panel class="playtest_date_time">
 										<Label class="playtest_time" text="{t:t:weekday_start} - {t:t:weekday_end}" />
 										<Label class="local_time" text="Local Time" />
 									</Panel>
 								</Panel>
 								<Panel id="playtest_weekend" class="playtest_date_box">
-									<Label class="playtest_days" text="Saturday - Sunday:" />
+									<Label class="playtest_days" text="Friday - Sunday:" />
 									<Panel class="playtest_date_time">
 										<Label class="playtest_time" text="{t:t:weekend_start} - {t:t:weekend_end}" />
 										<Label class="local_time" text="Local Time" />
