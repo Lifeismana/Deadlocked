@@ -123,7 +123,13 @@
 						<Label class="NavLabel FilterType" text="{s:filter_name}" />
 					</Panel>
 				</Panel>
-				<CitadelHeroBuildsSelector id="HeroBuildSelector" user_builds_only="false" />
+				<Panel id="BuildsPanel">
+					<CitadelHeroBuildsSelector id="HeroBuildSelector" user_builds_only="false" />
+					<Button id="RefreshHeroBuildsButton" class="SecondaryButton light hasIcon fill" onmouseactivate="CitadelShopRefreshBuilds();">
+						<Panel class="refreshIcon buttonIcon" />
+						<Label text="Refresh Builds" />
+					</Button>
+				</Panel>
 				<Panel id="ShopModListsContainer">
 					<Label class="HeroFavoritesHeaderLabel" text="{s:hero_name}&apos;s Recommended Mods" />
 					<CitadelShopModsList id="ShopModsListWeapon" category="Weapon" />

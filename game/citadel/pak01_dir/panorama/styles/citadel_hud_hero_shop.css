@@ -621,14 +621,49 @@ CitadelHudHeroShop
 	background-color: red;
 }
 
-#HeroBuildSelector
+#BuildsPanel
 {
 	width: 100%;
-	visibility: collapse;
-	background-color: goldColor&30;
 	height: 67px;
+	visibility: collapse;
+	flow-children: right;
+	background-color: goldColor&30;
 	border: 0px solid baseBorder;
 	border-top: 7px solid #C3B661;
+}
+
+.showingFavorites #BuildsPanel
+{
+	visibility: visible;
+}
+
+#CitadelHeroBuildsPage #BuildsPanel
+{
+	visibility: collapse;
+}
+
+#RefreshHeroBuildsButton
+{
+	ignore-parent-flow: true;
+	horizontal-align: right;
+	opacity: 0.7;
+}
+
+.refreshIcon
+{
+	width: 16px;
+	height: 16px;
+	wash-color: offBlack;
+	vertical-align: middle;
+	margin-top: 3px;
+	margin-right: 7px;
+	background-image: url("s2r://panorama/images/icons/icon_refresh.vsvg");
+	background-size: contain;
+}
+
+#RefreshHeroBuildsButton:hover
+{
+	opacity: 1;
 }
 
 .ChangeBuild
@@ -645,16 +680,6 @@ CitadelHudHeroShop
 	font-weight: bold;
 	vertical-align: middle;
 	tooltip-position: bottom;
-}
-
-.showingFavorites #HeroBuildSelector
-{
-	visibility: visible;
-}
-
-#CitadelHeroBuildsPage #HeroBuildSelector
-{
-	visibility: collapse;
 }
 
 #HeroPanel,#ShopModsContainer
