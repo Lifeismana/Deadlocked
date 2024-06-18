@@ -35,7 +35,13 @@ jobs:
                 sudo rm -rf /usr/local/lib/android
                 sudo rm -rf /opt/ghc
                 sudo rm -rf /opt/hostedtoolcache/CodeQL
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
+              with:
+                repository: steamdatabase/gametracking
+                ref: master
+            - uses: actions/checkout@v4
+              with:
+                path: 'deadlock'
             - uses: docker://ghcr.io/steam-tracking/ddlck-vpk-decompiler:latest
               env:
                 GIT_NAME: ${{ secrets.GIT_NAME }}
@@ -43,3 +49,5 @@ jobs:
                 MANIFESTS: "${{ inputs.manifests }}"
                 STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
                 STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+                GPG_KEY: ${{ secrets.GPG_KEY }}
+                GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
