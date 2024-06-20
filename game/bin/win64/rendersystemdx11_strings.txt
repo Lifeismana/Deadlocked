@@ -253,11 +253,9 @@ $$LcH
 $< t6<$t,<+t"<vt
 $D9x<t
 $D9x<tN
-$DD;{
 $Ib?s
 $L9x0
 $^fE;
-$~5So
 %""""D
 %.0Lf
 %.100s: Can not read TIFF directory
@@ -351,7 +349,6 @@ $~5So
 &YA1H
 &xr(*
 ',=?k
-(	V_log2_uint
 ( ( m_nFlags & (TSPEC_VOLUME_TEXTURE|TSPEC_TEXTURE_ARRAY) ) != 0 ) || ( m_nDepth == 1 )
 ( ( m_nFlags & TSPEC_VOLUME_TEXTURE ) == 0 ) || ( ( m_nFlags & TSPEC_TEXTURE_ARRAY ) == 0 )
 ( ( poolType == POOLED_BACKING_STORE_VERTEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_VERTEX_FIXED_SIZE ) ) || ( ( poolType == POOLED_BACKING_STORE_INDEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_INDEX_FIXED_SIZE ) )
@@ -692,7 +689,7 @@ $~5So
 *pThreadGroupSizeYOut
 *pThreadGroupSizeZOut
 *pView != nullptr
-+	V_logd
++	V_log2_uint
 +C$Hc
 +D$8A
 +D$p;
@@ -706,7 +703,6 @@ $~5So
 +h->|
 +o'q)}
 +v$x+v$xv$+xv+$xv$+x+$vx+$vx$v+x+$vx$+vx+v $+v $v $+v +$v $++$ v+$ v$ v++$ v$+ v+xv$+ v$v$ +v+ $v$ ++x$v+ $v$v ++ $v$ +v
-,	V_logf
 , channels = 
 , height = 
 ,*/vu
@@ -724,7 +720,6 @@ $~5So
 ---	-
 -4gpu
 -BH>t
--I96t(I
 -adapter
 -ags_async_shaders
 -autoconfig
@@ -775,8 +770,10 @@ $~5So
 -threads
 -tools
 -vulkan
+.	V_logd
 ..om?
 .00cfg
+.5/E!
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
 .?AU?$_InitialTaskHandle@XV<lambda_60c5de84e69e46aa92419d47e2f3ad51>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -823,13 +820,13 @@ $~5So
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferBC7_bc7e@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferBC7_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferETC@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@@@YAXHHPEBDV1?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@@@YAXHHPEBD$$QEAV1?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CShaderBuffer@UID3D10Blob@@@@
 .?AV?$CTier0AppSystem@VIRenderDeviceMgr@@$0A@@@
 .?AV?$CTier0AppSystem@VIRenderUtils@@$0A@@@
@@ -1111,11 +1108,16 @@ $~5So
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
+/%%Z 
+/%@s-
+/%GW 
 /2GG>!B
-/5T !
-/5Z,!
-/=*;!
-/=,;!
+/57Z 
+/5?T%
+/5Ki2
+/5[W 
+/=n*!
 />58d%
 /TF<)VGy#WH
 0 0 0
@@ -1180,7 +1182,7 @@ $~5So
 220323000000Z
 220801000000Z
 230714000000Z
-240613154228Z0/
+240620161300Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1206,12 +1208,10 @@ $~5So
 6:%+H
 6I]Dc
 6OB,n_
-7	V_powd
 7&F|If
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 7xicuU
-8	V_powf
 8"3hrf
 8-uCH
 8-uGH
@@ -1238,12 +1238,10 @@ $~5So
 8b  16-May-2010
 8ke?;
 8vtext
-9	V_qsort
 9)~P3
 93t6H
 93t=H
 93tdH
-95Mc,
 97tmD
 98t H
 98tkH
@@ -1264,7 +1262,7 @@ $~5So
 9\$0u
 9\$hu
 9^ t"H
-9_ u%D9
+9_ u!D9
 9_8~Ufff
 9k8~QH
 9k8~^
@@ -1278,7 +1276,7 @@ $~5So
 9t$Pu	
 9{\~9H
 9|$Hu(H
-:	V_qsort_s
+:	V_powd
 :>)*	v
 :>t6k'
 :ALPHD
@@ -1289,8 +1287,9 @@ $~5So
 :VP8 tP
 :VP8LtHD
 :VP8X
+;	V_powf
 ;.u1L
-;=lj+
+;=<j+
 ;?0123456789:;<=>?
 ;Cxr*H
 ;CxsB
@@ -1311,8 +1310,8 @@ $~5So
 ;s ~H
 ;t$@|
 ;t$D|
-;|$ r
 ;|$8|
+<	V_qsort
 <	w	@
 < t=<	t9
 <+uXH
@@ -1351,6 +1350,8 @@ $~5So
 <vt{<x
 <xuM@
 <}wTI
+=	V_qsort_s
+=NVDAt
 =SPB8u*
 =SPB8ue
 =imb;D
@@ -1546,7 +1547,6 @@ $~5So
 @A^_^
 @A_A\_^]
 @A_A]A\_^
-@A_A]_^]
 @A_A^A\
 @A_A^A\_^
 @A_A^A\_^[]
@@ -1582,6 +1582,7 @@ $~5So
 @SUVH
 @SUVWATAUAVAWH
 @SUVWATAVAWH
+@SUVWATAWH
 @SUVWAUH
 @SUVWAVAW
 @SUVWAVAWH
@@ -1601,9 +1602,9 @@ $~5So
 @SVAWH
 @SVWATAUAVAWH
 @SVWATAUH
-@SVWATAWH
 @SVWATH
 @SVWAUAWH
+@SVWAUH
 @SVWAVH
 @SVWH
 @SWATAUAVH
@@ -1634,6 +1635,7 @@ $~5So
 @USVWAWH
 @USVWH
 @USWATAVH
+@USWATH
 @USWH
 @UVATAUAWH
 @UVATAUH
@@ -1664,6 +1666,7 @@ $~5So
 @b;zO]
 @ffffff
 @t*fG9
+@viD;
 A ;B u
 A E9p
 A!;I2
@@ -1741,18 +1744,20 @@ AUAWH
 AUUUUUU
 AVAWH
 A\^[]
+A\_[]
 A\_^[]
 A\_^]
 A\_^][
 A]A\[]
 A]A\]
 A]A\^[]
-A]A\^]
 A]A\_]
 A]A\_^
 A]A\_^[
 A]A\_^]
 A]A\_^][
+A]_[]
+A]_^[
 A]_^]
 A]_^][
 A^A\^[
@@ -1764,6 +1769,7 @@ A^A\_^[
 A^A]A\
 A^A]A\]
 A^A]A\][
+A^A]A\^
 A^A]A\^[]
 A^A]A\_]
 A^A]A\_]H
@@ -1771,6 +1777,7 @@ A^A]A\_^
 A^A]A\_^[]
 A^A]A\_^][
 A^A]^[]
+A^A]_
 A^A]_[]
 A^_[]
 A^_^[
@@ -1779,7 +1786,6 @@ A^_^][
 A_A\]
 A_A\][
 A_A\^[]
-A_A\_^[
 A_A\_^]
 A_A]A\[
 A_A]A\[]
@@ -1809,7 +1815,6 @@ A_A^A]A\_^[]
 A_A^A]A\_^[]H
 A_A^A]A\_^]
 A_A^A]A\_^][
-A_A^A]]
 A_A^A]_]
 A_A^]
 A_A^^[]
@@ -1898,7 +1903,7 @@ B49A4u
 BC6H_HueShiftFixup_BlockHasDecodingErrors
 BC6H_HueShiftFixup_QuantizeBlock
 BC?>6t9^	c:>
-BD9%~IF
+BD9%^UF
 BF>^G
 BGR565
 BGR888
@@ -3049,6 +3054,7 @@ D3DERR_UNSUPPORTEDTEXTUREFILTER
 D3DERR_WRONGTEXTUREFORMAT
 D3DGetInputSignatureBlob
 D3DKMTEnumAdapters2
+D3DKMTEnumAdapters3
 D3DKMTQueryAdapterInfo
 D3DOK_NOAUTOGEN
 D3DPERF_BeginEvent
@@ -3059,7 +3065,7 @@ D3DReflect failed
 D3D_OK
 D4/L;
 D7 D;^
-D8 t*H
+D8 t(H
 D8(tqHcw
 D8*t$Ic
 D81uUL9r
@@ -3080,7 +3086,7 @@ D8d$3
 D8d$4
 D8d$5
 D8d$6
-D8fIt
+D8d$<t
 D8i(u
 D8ihu
 D8kDt 
@@ -3097,6 +3103,7 @@ D9 u2D9
 D9(tT
 D9L$ 
 D9aXt3E
+D9d$ t
 D9d$$
 D9d$0txD
 D9d$pu
@@ -3142,7 +3149,7 @@ D;|$0|
 D;|$@}
 D;|$H
 D;|>(
-DATAH
+DATAI
 DBM&(
 DCT coefficient out of range
 DCT scaled block size %dx%d not supported
@@ -3612,7 +3619,7 @@ H!T$0D
 H#L$0H
 H)D$@A
 H)T$@
-H)|$`
+H)\$`
 H*0"ZOW
 H+D$hH
 H+D$xH
@@ -3630,30 +3637,29 @@ H-^Eu
 H3N I
 H4IcH8H
 H9(tO
+H9-pAG
 H9.u4
 H90u'
-H95M3F
-H95P?F
-H95T8F
-H95[:F
-H95p?F
+H950KF
+H95P|B
+H95XKF
+H95g{B
 H97u+A
 H98t$H
-H9=&6F
-H9=*_/
-H9=*c/
-H9=:S/
-H9=B6F
-H9=BZ/
-H9=J`/
-H9=Re/
-H9=Rg/
-H9=ZW/
-H9=Zf/
-H9=bU/
-H9=jb/
-H9=mL,
-H9=zQ/
+H9="e/
+H9="g/
+H9=*W/
+H9=*f/
+H9=2U/
+H9=:b/
+H9==L,
+H9=CSF
+H9=JQ/
+H9=RY/
+H9=bd/
+H9=z[/
+H9=z\/
+H9=zi/
 H9D$0
 H9D$8t%
 H9D$8t0
@@ -3704,9 +3710,9 @@ H;C s%H
 H;C s'H
 H;L$8
 H;XXs
+H;\$`
 H;xXu5
 H;{@I
-H;|$`
 H=vtex
 HA^A]A\]
 HA_A^A\_^]
@@ -3771,7 +3777,7 @@ Hc\$(M
 Hc\$0L+
 Hc\$XI
 Hc\$pI
-Hc] L
+Hc]0L
 Hc]wH
 Hc^XH
 Hcl$8
@@ -3797,7 +3803,6 @@ HostComputer
 HostStateMgr001
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-I	V_snprintf
 I+4$H
 I91u9I
 I9F s
@@ -4017,6 +4022,7 @@ K}*n:
 K~Je#>!
 L	B I
 L	G H;
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ ;H8
@@ -4160,9 +4166,7 @@ L$pH3
 L$pHc
 L$pJc
 L$pf;
-L$pfD
 L$pff
-L$rfE;
 L$x;V u
 L$xA+
 L$xH3
@@ -4176,23 +4180,24 @@ L80L;
 L80M;
 L9#tUH
 L93uf
+L95AqB
+L95\qB
+L95qpB
 L97vH
 L9?tR
 L9AHA
 L9aHA
-L9cPu9
-L9cPurH
-L9c`u9
-L9c`urH
+L9cPu@
+L9c`u@
 L9d$ 
 L9d$(H
 L9d$8u
 L9ghu8H
 L9gpu
 L9kPu!H
-L9kPujL
+L9kPuqL
 L9k`u!H
-L9k`ujL
+L9k`uqL
 L9p u
 L9t$ A
 L9u@t
@@ -4252,7 +4257,7 @@ LcUwL
 Lc]wH
 Lc]wI
 Lc]wI;
-Lcd$\E;
+Lcd$PLc
 Lcd$pD
 Lcl$TM
 LcmwH
@@ -4323,7 +4328,6 @@ MP;H8s
 MQC,ARD
 MT$8L
 MX+C$L
-MXD;{
 M\$ A
 M\$$D;L$(L
 MakeStringToken
@@ -4384,11 +4388,9 @@ MultiDrawIndexedInstancedIndirectCount failed - invalid indirect buffers
 MultiDrawIndexedInstancedIndirectCount unsupported in D3D11
 N3`d?
 N>O=I9
-NAL.h
 NAN(IND)
 NAN(SNAN)
 ND$tA
-NHD8 t
 NJ2"v
 NO COMMAND!
 NULL VP8Io parameter in VP8Decode().
@@ -4457,12 +4459,12 @@ NvAPI_D3D_SetLatencyMarker returned error '%d'.
 NvAPI_D3D_SetLatencyMarker( PC_LATENCY_PING ) returned error '%d'.
 NvAPI_D3D_SetSleepMode() return error '%d'
 NvAPI_D3D_Sleep returned error '%d'.
-O	V_sscanf
 O!t/H
 O*9y]
 O8HcY
-O=ej+
+O=5j+
 OF>;^
+ONz?X
 OUTSTANDING_HOOKUP_REQUEST 
 OVER_BUDGET
 OZw3(?
@@ -4518,7 +4520,7 @@ PAq=?Mp#
 PERF WARNING: Texture pool size set to more than 80%% of total GPU memory.
 PFMGetInfo_AndAdvanceToTextureBits
 PFMReadFile
-PHD8fJtCD8fKt
+PHE8wJtBE8wKt
 PIX error Beginning %s event
 PIX/NSIGHT WAS detected.
 PLATFORM_WINDOWS
@@ -4593,8 +4595,12 @@ Premature end of JPEG file
 Premature end of input file
 Premature end-of-file encountered.
 Premature end-of-partition0 encountered.
-Present
 PresentId
+Present_Dx11Thread
+Present_Failed
+Present_IDXGISwapChain
+Present_Queue
+Present_Wait
 Prevent state leakage: Do not modify rendercontext's attributes when doing local rendering.
 PrimaryChromaticities
 Prints out live D3D11 objects (requires -dx11debug)
@@ -4613,7 +4619,7 @@ Quantizing to %d colors
 QueryPerformanceCounter
 QueryPerformanceFrequency
 QueryServiceConfigW
-QueuePresent
+R	V_sscanf
 R	p!"
 R Lck
 R Lcn
@@ -4981,7 +4987,6 @@ SwapChainColor.vtex
 SwapChainDepth.vtex
 SwapChainTrueColor.vtex
 SwizzlePlanarScanlineToInterleaved
-T	V_stricmp_fast
 T$ D;
 T$ E3
 T$ Ei
@@ -5039,8 +5044,6 @@ T$pD+
 T$pfD
 T$xD;{
 T$xE3
-T%)\ 
-T=Q,!
 TD u"E;
 TEX read request: %d KB; %s
 TEXMAN: %s LoadStreamingData (%s)
@@ -5137,6 +5140,7 @@ TileOffsets
 TileWidth
 Time (in seconds) between updating texture memory budget.
 Timed out waiting for thread to exit? hung?
+Tiq2z
 TlsAlloc
 TlsFree
 TlsGetValue
@@ -5174,7 +5178,7 @@ UA>N0Wl
 UATAUAVAWH
 UATAUAVH
 UATAUI
-UAUAVAWH
+UATAVAWH
 UAUAWH
 UAVAWH
 UHc~`H
@@ -5194,19 +5198,18 @@ USVAWH
 USVWATAUAVAWH
 USVWATAUAWH
 USVWATAVAWH
-USVWATH
 USVWATI
 USVWAVH
 USVWH
 USWATAUAWH
 USWATAVH
 USWAUAVH
+USWAUH
 USWAVH
 UUUUD
 UUUUUU
 UUUUUUU
 UVATAUAVH
-UVATAUH
 UVATAVAWH
 UVATH
 UVAUAVH
@@ -5270,10 +5273,9 @@ UserSettingsPathID
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_strlower_fast
 V6E>`"(5
 VATAUAVAWH
-VATAUH
+VATAUAVH
 VAUAVH
 VAVAWH
 VApplication001
@@ -5320,6 +5322,7 @@ VWATH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 VZ#-DLU[3=h
 V_:X1:
 V_CopyMemory3D
@@ -5372,7 +5375,10 @@ VsInputSignatureElement_t::Schema_VerifyBindingIsRegistered
 VsInputSignature_t
 VsInputSignature_t::Schema_VerifyBindingIsRegistered
 Vulkan
+W	V_stricmp_fast
 W%	s;M@
+W5L><
+W=E><
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
@@ -5421,9 +5427,12 @@ X AVH
 X D8e
 X VAVAWH
 X!t5~
-X-l<"
-X-}>'
-X59A'
+X%:9!
+X%@Y 
+X-XY 
+X5'T%
+X57>'
+X;Ft1U
 XA^A]^]
 XA^_^[
 XA_A\_[
@@ -5441,9 +5450,14 @@ XYZ, Luv
 X_^[]
 X|$ A
 X|$8E
-Y-M>'
-Y5IA'
+Y	V_strlower_fast
+Y%S!'
+Y%l<'
+Y-,$'
+Y5G>'
+Y5a>'
 Y9"SD
+Y=j2&
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -5467,7 +5481,6 @@ ZeroStride Vertex buffer created!
 Zod(^?
 Zpm"U
 [	UoA
-[	V_strtoi64
 [    Discard |    NoTear]
 [*ncd>0
 [-&LMb#{'
@@ -5494,7 +5507,6 @@ Zpm"U
 \$ UVAVH
 \$ UVWATAUAVAWH
 \$ UVWATAUH
-\$ UVWAUAWH
 \$ UVWAVAW
 \$ UVWAVAWH
 \$ UVWH
@@ -5540,7 +5552,6 @@ Zpm"U
 \$PH;
 \$PHc
 \$PHk
-\$PIc
 \$PfD
 \$Pfff
 \$XD+
@@ -5561,10 +5572,9 @@ Zpm"U
 \$pA;
 \$pE3
 \$pHc
-\$rfD
 \$xu3M
-\%O[ 
-\%sX 
+\5AT%
+\5lj&
 \mfpmp.exe
 ])6M>&
 ]>)2X
@@ -5572,13 +5582,13 @@ Zpm"U
 ]J<0"0i3
 ]Lu*E;|$
 ]oB;\7(
+^	V_strtoi64
 ^,tyI
 ^<V7w
 ^RfN>
 ^oEZ_
 _8Hcs
 _DOD3D
-_HBlW
 _INTC_CreateDeviceExtensionContext
 _INTC_D3D11_BeginUAVOverlap
 _INTC_D3D11_CreateDeviceExtensionContext
@@ -5904,13 +5914,13 @@ e+000
 e0A^A]A\_^[]
 e0A_A^A]A\]
 e0A_A^A]A\_^]
+e8A_A^A]A\_^[]
 e@A_A^]
-eHA_A^A]A\_^[]
 eLK(w
 eO@h/
+eXA_A^A]A\_^[]
 effortblocks = %d
 egE9e
-ehA_A^A]A\_^[]
 error creating copy/flip shader, flags=%i
 error creating resolve shader for %d samples
 errorCode == FFX_OK
@@ -6015,7 +6025,7 @@ fD9t$E
 fD9t$b
 fD;3t
 fD;D$tfD
-fD;l$F
+fD;l$V}{3
 fDeltaTime
 fDeviceToViewDepth
 fDownscaleFactor
@@ -6120,7 +6130,6 @@ gfffA
 gfffL
 gfffffffH
 h AVH
-h.	OU
 h>1my
 hA^A]][
 hA^A]^]
@@ -6146,6 +6155,8 @@ hr = D3D11Device()->CreateShaderResourceView( m_pIndexBuffer, &srvDesc, &m_pSRVi
 hr = D3D11Device()->CreateShaderResourceView( m_pVertexBuffer, &srvDesc, &m_pSRView )
 hr = D3D11Device()->CreateUnorderedAccessView( m_pIndexBuffer, &uavDesc, &m_pUAView )
 hr = D3D11Device()->CreateUnorderedAccessView( m_pVertexBuffer, &uavDesc, &m_pUAView )
+hrDeviceRemovedReason
+hrPresent
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
@@ -6213,10 +6224,10 @@ j?V()
 j?{$*
 jj@0HK4
 k0i0$
+k6f3~
 k;J;J;J;J;J;J;J;J;J;J;J;J;J;J;J;Jx
 kL@8o(u
 kernel32.dll
-kfs2,["
 l!;b	F
 l$ A*
 l$ AVH
@@ -6241,7 +6252,6 @@ l$ fD
 l$$9L$(
 l$$D;
 l$(A+
-l$(E3
 l$(LcH
 l$(M+
 l$0A__
@@ -6295,13 +6305,14 @@ l$`L9x
 l$hD+
 l$pE3
 l$pLc
+l$pfD
+l$rfE;
 l$x9s v'
 l$xE3
 l$xu4H
 l2|X/gGe
 l6qnk
 ldexp
-ldvj>
 libyuv::ABGRToI420( src, srcStride, pDestY, nLumaStride, pDestU, nLumaStride, pDestV, nLumaStride, width, height ) == 0
 libyuv::I420ToABGR( pSrcY, nLumaStride, pReadU, nLumaStride, pReadV, nLumaStride, dst, dstStride, width, height ) == 0
 libyuv::I420ToRGB24( pSrcY, nLumaStride, pURead, nLumaStride, pVRead, nLumaStride, dst, dstStride, width, height ) == 0
@@ -6485,7 +6496,7 @@ nSamplerIndex >= 0 && nSamplerIndex < V_ARRAYSIZE(m_pBoundSamplerStates[0])
 nSamplesPerPixel <= 4
 nSemanticIndex >= 0
 nSignature == 0x4d494238
-nSize <= m_nMemoryUsed
+nSize <= static_cast< size_t >( m_nMemoryUsed.GetRaw() )
 nSlice < pTexture->m_nInternalHandle.GetSpec()->GetArrayCount()
 nSlice < pTexture->m_nInternalHandle.GetSpec()->GetDepth()
 nSliceSize * nSlices == nDataSize
@@ -6543,58 +6554,62 @@ ntelu
 null VP8Io passed to VP8GetHeaders()
 num > 0
 numWorkGroups
+nvapi_Direct_GetMethod
 nvapi_QueryInterface
-nvapi_pepQueryInterface
 n|$`fA
 o KPBf
 o$$fA
-o%7E>
-o%88&
-o%?I'
-o%M;&
-o%Q.&
+o%$i&
+o%*l&
+o%,U&
+o%.A&
+o%;(&
+o%;=&
+o%I&&
+o%J}&
+o%O2&
+o%T_&
+o%Zo&
+o%].F
+o%]s&
+o%g6'
 o,$fD
-o- }&
-o-5#F
-o-7>&
-o-=W&
-o-G|&
-o-R2&
-o-V.&
-o-[q&
+o- n*
+o-%9&
+o-/F&
+o-=(&
+o-?!$
+o-N&&
+o-OJ&
+o-_,&
+o-cm&
+o-u.F
+o-ui&
 o47Lc
-o5 H&
-o5(#F
-o554&
-o588&
-o5>W&
-o5@L&
-o5SH&
-o5UL&
-o5[9'
-o5va&
-o5vq*
-o=!/:
-o="|&
-o=#Z&
-o=&::
-o=)E&
-o=*_&
-o=/ &
-o=2T:
-o=5\:
-o=9^:
-o=A5:
-o=BW:
-o=Ji&
-o=M2&
-o=Sv&
-o=_\,
-o=fo&
-o=gG&
-o=ud&
-o=xa&
-o=}.&
+o5%S&
+o5/4&
+o57.&
+o5AH&
+o5Lv&
+o5_!&
+o5aL&
+o5dm&
+o5h.F
+o=(K:
+o=18:
+o=3e&
+o=6C:
+o=B]:
+o=Ee:
+o=Ig:
+o=Nv&
+o=Q>:
+o=R`:
+o=[.F
+o=^k&
+o=^o&
+o=n#&
+o=p]&
 oAPfD
 oD$ f
 oD$ fA
@@ -6656,7 +6671,6 @@ p*W4H
 p0R^G'
 p;Y>u
 p?ati_compress_wrapper.dll
-pA]A\^
 pA]][
 pA^A]A\^]
 pA_A^A\_^[]
@@ -6906,7 +6920,7 @@ rw_spd_global_atomic
 rw_upscaled_output
 s AWH
 s WATAUAVAWH
-s WAVAWH
+s WAUAVH
 s%D;k
 s(HcO
 s5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -7127,11 +7141,13 @@ t;@8w
 t;LcF
 t?HcS
 t@9+u,9s
+t@H95bSC
 t@McO4
+tAH9=
 tBMcW<IcO@Lc
 tC@8-
-tC@85bd%
-tCH95
+tC@8-1"%
+tC@85
 tDD8%
 tDD85
 tEHcR
@@ -7140,11 +7156,10 @@ tGH9[0u
 tID8-
 tIf9wbH
 tNfE;
-tOD8-F#$
-tOD8-~0$
+tOD8-
 tOt'F
 tP@87uKH
-tQH95w:F
+tQH957FF
 tQfD9 tK
 tRLcY
 tSH9X t
@@ -7203,7 +7218,7 @@ trying to bind a deleted shader
 tvH9}
 twIcF
 tyfD9 tsH
-t}H9=f6F
+t}H9=&BF
 u	fD;A
 u"D;{
 u#f;N
@@ -7311,6 +7326,7 @@ vs_%d_%d
 vs_4_0
 vtexA
 vtexH
+vvr-Z%h$7+
 v}`[>
 w(D;\$4
 w+OQvr
@@ -7319,10 +7335,11 @@ w4kK0
 wGHcN
 which->m_pNext->m_pPrev==which
 which->m_pPrev->m_pNext==which
+wine_get_version
 wlt\D
 wn>Jj
 workGroupOffset
-wpD8-G%E
+wpD8-
 wpL9w`t$HcO 
 writing renderdoc capture to %s
 wrong protocol type
@@ -7346,6 +7363,7 @@ x<H9{0
 xA^A]
 xA^_][H
 xA_A\_^
+xA_A\_^][
 xA_A]A\_[]
 xA_A^A\[
 xA_A^A]A\_^[]
@@ -7458,7 +7476,6 @@ zY;>u:m
 |$@H;|$x
 |$@HcL$<H
 |$@Ic
-|$@tyA
 |$DD98
 |$DE3
 |$HA;
@@ -7511,18 +7528,20 @@ zY;>u:m
 }LfD;
 }LuHO
 }OLcCxL
-}\fff
 }gE8}
 }i;{$
 ~ $s%r
 ~,*u<I
 ~,*uEI
 ~-fD;
+~.fD;
+~3fD;
 ~5LcS
 ~II9}
 ~L@8~8u
 ~NLct$4H
 ~PLcMpM
+~S \#
 ~WH+]
 ~ZLc]
 ~[Lc>D;~
@@ -7531,7 +7550,6 @@ zY;>u:m
 ~gfff
 ~hMcnxE
 ~qj#k"
-~rfff
 ~t&LN
 ~vNcD
 ~|E9e

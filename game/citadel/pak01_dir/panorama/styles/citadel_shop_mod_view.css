@@ -71,6 +71,16 @@ CitadelShopMod.itemDisabled:hover
 	pre-transform-scale2d: 1;
 }
 
+.Searching CitadelShopMod
+{
+	visibility: collapse;
+}
+
+.Searching CitadelShopMod.SearchMatch
+{
+	visibility: visible;
+}
+
 .mod_backer
 {
 	height: 100%;

@@ -25,8 +25,12 @@
 	{
 		base = "Base.UI"
 		mixer_mixgroup = "UI-Health"
-		volume = -3.000000
+		volume = -4.000000
 		pitch = 1.000000
+		limiter_on = 1.000000
+		limiter_match_event = 1.000000
+		limiter_max = 0.000000
+		limiter_stop_oldest = 1.000000
 		limiter_event_name = "Damage.Receive.Major"
 		vsnd_files = 
 		[
@@ -36,6 +40,7 @@
 			"sounds/hit_indicators/damage_receive_major_04.vsnd",
 			"sounds/hit_indicators/damage_receive_major_05.vsnd",
 		]
+		vsnd_duration = 2.752948
 	}
 	Player.Bullet.Impact.Default = 
 	{

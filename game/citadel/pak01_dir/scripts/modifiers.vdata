@@ -170,14 +170,6 @@
 		m_bIsHidden = true
 		m_flAuraRadius = 70.000000
 	}
-	modifier_rejuv_pickup_punchable = 
-	{
-		_class = "modifier_item_pickup_punchable"
-		m_nEnabledStateMask = "MODIFIER_STATE_IS_MELEE_TARGET"
-		m_IsDroppingParticle = resource_name:"particles/environment/rejuv_ambient.vpcf"
-		m_IsPunchableParticle = resource_name:"particles/environment/rejuv_attackable.vpcf"
-		m_bIsHidden = true
-	}
 	modifier_rejuv_pickup_aura = 
 	{
 		_class = "modifier_item_pickup_aura"
@@ -206,16 +198,6 @@
 		m_flAuraRadius = 70.000000
 		m_iAuraSearchFlags = "CITADEL_UNIT_TARGET_FLAG_PENETRATE_INVULNERABLE"
 		m_eDebuffType = "MODIFIER_DEBUFF_ENEMY_TEAM_ONLY"
-	}
-	modifier_citadel_respawn_credit = 
-	{
-		_class = "modifier_citadel_respawn_credit"
-		m_sExpireSound = soundevent:""
-		m_strParticleEffect = resource_name:"particles/modifiers/respawn_credit_buff.vpcf"
-		m_flBonusClipSize = 0.000000
-		m_flBonusFirerate = 20.000000
-		m_flBonusHealth = 200.000000
-		m_flBonusMoveSpeedMeterPerSecond = 1.000000
 	}
 	citadel_modifier_teleport = 
 	{

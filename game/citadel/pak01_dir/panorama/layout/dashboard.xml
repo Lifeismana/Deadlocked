@@ -157,12 +157,6 @@
 								<Panel class="smallIcon MuteIcon" />
 							</Button>
 							<Panel class="menu_divider" />
-							<Button id="matchmakeForceUnranked" class="nav_menu_item force_match_button" onactivate="CitadelForceMatchFormation( 1 ); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( Force a competitive match to be formed with the users currently matchmaking ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
-								<Label text="Force Match" class="menuButtonLabel" />
-							</Button>
-							<Button id="matchmakeForceCoopBot" class="nav_menu_item force_match_button" onactivate="CitadelForceMatchFormation( 3 ); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( Force a coop bot match to be formed with the users currently matchmaking ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
-								<Label text="Force Coop Bot Match" class="menuButtonLabel" />
-							</Button>
 						</Panel>
 					</Panel>
 					<Label id="BuildNumber" text="#Citadel_Dashboard_BuildVersion" />

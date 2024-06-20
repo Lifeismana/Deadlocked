@@ -1,6 +1,14 @@
 <!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
 	generic_data_type = "CGraphCanvasStyleLayer"
+	"@global-variables value_type_colors" = 
+	{
+		"$data_type_string" = "#006DBB"
+		"$data_type_number" = "#3EBB70"
+		"$data_type_bool" = "#8E2A00"
+		"$data_type_other" = "#9C7300"
+		"$data_type_flow" = "#8C8C8C"
+	}
 	.BaseFlow = 
 	{
 		InteractionPriority = "BASE"
@@ -90,10 +98,32 @@
 		Background_Color = "transparent"
 		Border = "transparent"
 		Foreground_Width = "3px"
+		PaintLayer = "CONNECTIONS_BACKGROUND"
+		"&.ValueType_Bool" = 
+		{
+			Foreground_Color = "$data_type_bool"
+		}
+		"&.ValueType_Number" = 
+		{
+			Foreground_Color = "$data_type_number"
+		}
+		"&.ValueType_String" = 
+		{
+			Foreground_Color = "$data_type_string"
+		}
+		"&.ValueType_Other" = 
+		{
+			Foreground_Color = "$data_type_other"
+		}
+		"&.ValueType_Flow" = 
+		{
+			Foreground_Color = "$data_type_flow"
+		}
 	}
 	".BaseConnection:hover, .BaseConnection.IsSourceHovered" = 
 	{
 		Foreground_Color = "#FFFFFF"
+		PaintLayer = "CONNECTIONS_FOREGROUND"
 	}
 	".BaseConnection:selected" = 
 	{
@@ -106,6 +136,7 @@
 	.Connection_Inparam = 
 	{
 		Foreground_Width = "2px"
+		PaintLayer = "CONNECTIONS_FOREGROUND"
 	}
 	.Connection_Outflow = 
 	{
@@ -123,6 +154,7 @@
 			Margin_Left = -16
 			FixedSizeX = 16
 			FixedSizeY = 16
+			PaintLayer = "CONNECTIONS_FOREGROUND"
 		}
 		"&:hover" = 
 		{
@@ -139,6 +171,22 @@
 	{
 		MinSizeX = 80
 		LayoutChildren = "HBOX"
+		"&.ValueType_Bool" = 
+		{
+			Foreground_Color = "$data_type_bool"
+		}
+		"&.ValueType_Number" = 
+		{
+			Foreground_Color = "$data_type_number"
+		}
+		"&.ValueType_String" = 
+		{
+			Foreground_Color = "$data_type_string"
+		}
+		"&.ValueType_Other" = 
+		{
+			Foreground_Color = "$data_type_other"
+		}
 	}
 	.ValueLiteral_Text = 
 	{
@@ -173,7 +221,7 @@
 	{
 		ImageTint = "#929899"
 	}
-	.NodeHeader_Base = 
+	.NodeHeader = 
 	{
 		HAlign = "STRETCH"
 		MinSizeY = 19
@@ -388,7 +436,7 @@
 		HAlign = "LEFT"
 		Positioning = "INSIDE_PARENT"
 	}
-	.PortsLayout = 
+	.NodeRows = 
 	{
 		HAlign = "STRETCH"
 		LayoutChildren = "VBOX"
@@ -601,7 +649,7 @@
 		{
 			TextHAlign = "LEFT"
 		}
-		"&.PortValue_Bool" = 
+		"&.ValueType_Bool" = 
 		{
 			.PortValueLabel = 
 			{
@@ -622,7 +670,7 @@
 				]
 			}
 		}
-		"&.PortValue_Number" = 
+		"&.ValueType_Number" = 
 		{
 			.PortValueLabel = 
 			{
@@ -643,7 +691,7 @@
 				]
 			}
 		}
-		"&.PortValue_String" = 
+		"&.ValueType_String" = 
 		{
 			.PortValueLabel = 
 			{
@@ -664,7 +712,7 @@
 				]
 			}
 		}
-		"&.PortValue_Other" = 
+		"&.ValueType_Other" = 
 		{
 			.PortValueLabel = 
 			{
@@ -871,26 +919,71 @@
 	}
 	.Cursor = 
 	{
+		PaintLayer = "NODES"
 		InteractionPriority = "BASE"
 		FixedSizeX = 32
 		FixedSizeY = 32
+		Padding_Left = -4
+		BackgroundImage = "tools/images/pulse_editor/yielded_cursor_other.png"
+		"&.SelectedInstance" = 
+		{
+			BackgroundImage = "tools/images/pulse_editor/yielded_cursor.png"
+		}
+		"&.CallstackCursor" = 
+		{
+			FixedSizeX = 16
+			FixedSizeY = 16
+			BackgroundImage = "tools/images/pulse_editor/yielded_cursor.png"
+			Visibility = "COLLAPSE"
+			"&.SelectedInstance" = 
+			{
+				Visibility = "VISIBLE"
+			}
+		}
+		"&.DeadCursor" = 
+		{
+			Visibility = "COLLAPSE"
+			BackgroundImage = "tools/images/pulse_editor/dead_cursor.png"
+			"&.LastDeadCursor" = 
+			{
+				FixedSizeX = 32
+				FixedSizeY = 32
+			}
+			"&.SelectedInstance" = 
+			{
+				Visibility = "VISIBLE"
+			}
+		}
+		"&:hover" = 
+		{
+			Border = "2px #909090"
+			Background_Color = "#625B20"
+			ImageTint = "red"
+		}
 	}
-	".Cursor:hover" = 
+	.PulseTextTooltip = 
 	{
-		PaintLayer = "NODES"
-		Border = "2px #909090"
-		Background_Color = "#625B20"
-	}
-	.CallstackCursor = 
-	{
-		FixedSizeX = 16
-		FixedSizeY = 16
-	}
-	.CursorIcon = 
-	{
-		VAlign = "STRETCH"
-		HAlign = "STRETCH"
-		PaintLayer = "NODES"
+		PaintLayer = "HOVER_OVERLAY"
+		LayoutChildren = "HBOX"
+		Border = "1px black"
+		Background_Color = 
+		[
+			100,
+			100,
+			100,
+		]
+		.Tooltip = 
+		{
+			Font = "Segoe UI,11,-1,5,50,0,0,0,0,0,Regular"
+			Foreground_Color = 
+			[
+				255,
+				255,
+				255,
+			]
+			Margin = "4px"
+			PaintLayer = "HOVER_OVERLAY"
+		}
 	}
 	.ClientPaintArea = 
 	{

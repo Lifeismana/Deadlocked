@@ -40,6 +40,7 @@ enum EGCServerSignoutData {
 	k_EServerSignoutData_PerfData = 6;
 	k_EServerSignoutData_PlayerChat = 7;
 	k_EServerSignoutData_BookRewards = 8;
+	k_EServerSignoutData_PenalizedPlayers = 9;
 }
 
 message CMsgServerCrashSentinelFile {
@@ -366,6 +367,20 @@ message CMsgServerSignoutData_PlayerChat {
 	repeated .CMsgServerSignoutData_PlayerChat.ChatLine chat_lines = 1;
 }
 
+message CMsgServerSignoutData_PenalizedPlayers {
+	message Penalty {
+		optional uint32 account_id = 1;
+		optional .CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason reason = 2 [default = k_EPenaltyReason_Abandon];
+	}
+
+	enum EPenaltyReason {
+		k_EPenaltyReason_Abandon = 0;
+		k_EPenaltyReason_DisconnectedTooLong = 1;
+	}
+
+	repeated .CMsgServerSignoutData_PenalizedPlayers.Penalty penalized_players = 1;
+}
+
 message CMsgMatchData {
 	message PlayerItem {
 		optional uint32 item_id = 1;
@@ -438,6 +453,8 @@ message CMsgMatchData {
 	optional uint64 objectives_mask_team0 = 9;
 	optional uint64 objectives_mask_team1 = 10;
 	optional uint32 match_end_time = 11;
+	optional float stomp_score = 12;
+	optional bool safe_to_abandon = 13;
 }
 
 message CMsgServerToGCMatchSignout {
@@ -498,6 +515,7 @@ message CMsgGCToServerCancelAllocateForMatch {
 message CMsgServerToGCUpdateLobbyServerState {
 	optional uint64 lobby_id = 1;
 	optional .ELobbyServerState server_state = 2 [default = k_eLobbyServerState_Assign];
+	optional bool safe_to_abandon = 3;
 }
 
 message CMsgServerToGCAbandonMatch {

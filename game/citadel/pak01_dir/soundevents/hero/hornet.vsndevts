@@ -284,6 +284,7 @@
 		base = "Base.Ability"
 		volume = -2.000000
 		play_from_listener_player = 1.000000
+		volume_offset_team = -3.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_flight_cast.vsnd"
 		vsnd_duration = 4.656236
 	}
@@ -295,6 +296,7 @@
 		volume_fade_in = 0.100000
 		play_from_listener_player = 1.000000
 		volume_offset_player = -5.000000
+		volume_offset_team = -5.000000
 		delay_rand_max = -20.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_flight_loop.vsnd"
 		vsnd_duration = 24.670000
@@ -304,47 +306,19 @@
 		base = "Base.Ability"
 		volume = -9.000000
 		play_from_listener_player = 1.000000
+		volume_offset_team = -3.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_flight_expire.vsnd"
 		vsnd_duration = 2.372494
 	}
 	Hornet.Hornet.Sting.Cast = 
 	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Hornet.Hornet.Sting.Cast.Main"
-		soundevent_02 = "Hornet.Hornet.Sting.Cast.Buzz"
-		soundevent_03 = "Hornet.Hornet.Sting.Cast.Tech"
-		volume = 1.000000
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-	}
-	Hornet.Hornet.Sting.Cast.Main = 
-	{
 		base = "Base.Ability"
 		volume = 0.000000
-		vsnd_files = "sounds/abilities/hornet/a3_hornet_sting/cast.vsnd"
-		vsnd_duration = 1.181250
-	}
-	Hornet.Hornet.Sting.Cast.Buzz = 
-	{
-		base = "Base.Ability"
-		volume = -15.000000
-		pitch = 0.800000
+		play_from_listener_player = 1.000000
 		vsnd_files = 
 		[
-			"sounds/abilities/hornet/a3_hornet_sting/cast_buzz_01.vsnd",
-			"sounds/abilities/hornet/a3_hornet_sting/cast_buzz_02.vsnd",
-			"sounds/abilities/hornet/a3_hornet_sting/cast_buzz_03.vsnd",
-			"sounds/abilities/hornet/a3_hornet_sting/cast_buzz_04.vsnd",
+			"sounds/abilities/hornet/vindicta_crow_familiar_cast.vsnd",
 		]
-		vsnd_duration = 0.781021
-	}
-	Hornet.Hornet.Sting.Cast.Tech = 
-	{
-		base = "Base.Ability"
-		volume = -1.000000
-		vsnd_files = "sounds/abilities/hornet/a3_hornet_sting/cast_tech.vsnd"
-		vsnd_duration = 0.909563
 	}
 	Hornet.Hornet.Sting.Proj.Lp = 
 	{
@@ -416,7 +390,7 @@
 		base = "Base.Ability.Target"
 		volume = 6.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_lp.vsnd"
-		vsnd_duration = 11.332335
+		vsnd_duration = 11.191497
 	}
 	Hornet.Assassinate.Cast = 
 	{

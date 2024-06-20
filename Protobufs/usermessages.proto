@@ -351,6 +351,7 @@ message CUserMsg_ParticleManager {
 		optional string control_point_configuration = 7;
 		optional bool cluster = 8;
 		optional float endcap_time = 9;
+		optional .CMsgVector aggregation_position = 10;
 	}
 
 	message DestroyParticle {

@@ -19,7 +19,7 @@ CitadelHudTopBar
 	horizontal-align: center;
 	flow-children: none;
 	color: offWhite;
-	z-index: 9999;
+	z-index: 200;
 }
 
 .spec_mode CitadelHudTopBar
@@ -415,6 +415,11 @@ CitadelHudTopBarPlayer.SpectatorTarget .HeroContentsBG,CitadelHudTopBarPlayer.Lo
 	visibility: collapse;
 }
 
+.LocalPlayer .KingPandaContainer,.SpectatorTarget .KingPandaContainer,.IsInLocalPlayerLane .KingPandaContainer
+{
+	margin-top: 120px;
+}
+
 .KingPanda .KingPandaContainer
 {
 	visibility: visible;
@@ -427,7 +432,12 @@ CitadelHudTopBarPlayer.SpectatorTarget .HeroContentsBG,CitadelHudTopBarPlayer.Lo
 
 .UltimateUnlocked .KingPandaContainer
 {
-	visibility: collapse;
+	margin-top: 80px;
+}
+
+.LocalPlayer.UltimateUnlocked .KingPandaContainer,.SpectatorTarget.UltimateUnlocked .KingPandaContainer,.IsInLocalPlayerLane.UltimateUnlocked .KingPandaContainer
+{
+	margin-top: 90px;
 }
 
 .PandaIcon
@@ -447,8 +457,8 @@ CitadelHudTopBarPlayer.SpectatorTarget .HeroContentsBG,CitadelHudTopBarPlayer.Lo
 {
 	background-image: url("s2r://panorama/images/hud/top_bar/dead_panda_png.vtex");
 	wash-color: #FF5656;
-	width: 18px;
-	margin-top: 3px;
+	width: 28px;
+	margin-top: 0px;
 }
 
 .PandaBacker

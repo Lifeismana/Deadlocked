@@ -246,7 +246,8 @@
 		"Citadel_Player_Level_PowerIncreases"						"Power Increases"
 		"Citadel_Hero_Stats_Tooltip_WeaponPower"					"Total Bonus to your Gun and Melee Damage gained from buying items in the Weapon tree"
 		"Citadel_Hero_Stats_Tooltip_HealthMult"						"Total Bonus to your Base Health gained from buying items in the Vitality tree"
-		"Citadel_Hero_Stats_Tooltip_Spirit"							"Spirit Power increases the effectiveness of your Abilities. Spirit Power is gained from buying items in the Spirit tree"
+		"Citadel_Hero_Stats_Tooltip_Spirit"							"<span class=\"spirit_color\">Spirit Power</span> increases the effectiveness of your Abilities. Spirit Power is gained from buying items in the Spirit tree"
+		"Citadel_Hero_Stats_Tooltip_Spirit_IconDesc"				"Look for the <span class=\"spirit_color\">Spirit Power</span> icon on your Abilities to see its effect."
 		"Citadel_Hero_Stats_Tooltip_Shards"							"Your available currency to spend on items"
 		"Citadel_Hero_Stats_Souls"									"Souls"
 		"Citadel_Hero_Stats_Unsecured"								"Unsecured"
@@ -974,6 +975,12 @@
 		"CitadelCategoryBuilds"					"Build"
 		"CitadelCategorySuggested"				"Suggested Items"
 		"CitadelCategoryCustom"					"Custom Build"
+		"CitadelShopSearch"						"Search"
+
+		"CitadelShop_SearchExampleLine1"		"Search Examples:"
+		"CitadelShop_SearchExampleLine2"		"Name: <span class=\"highlight\">Phantom Strike</span>"
+		"CitadelShop_SearchExampleLine3"		"Property: <b>Bullet Resist</b>"
+		"CitadelShop_SearchExampleAlt"			"Try searching by <span class=\"highlight\">Item Name</span> or by stat such as <span class=\"highlight_weapon\">Ammo</span>, <span class=\"highlight_vitality\">Lifesteal</span> or <span class=\"highlight_spirit\">Spirit Power</span>."
 
 		"CitadelItemSlotFavorites"				"{s:hero_name}'s Favs"
 
@@ -1023,9 +1030,11 @@
 
 		"citadel_ability_bull_leap"				"Seismic Impact"
 		"citadel_ability_bull_leap_quip"		"Smash into enemies from above, stunning them"
-		"citadel_ability_bull_leap_desc"		"<span class=\"highlight\">Leap high into the air</span> and choose a ground location to smash into. When you hit the ground, <span class=\"highlight\">all enemies in the radius are damaged and stunned</span>."
+		"citadel_ability_bull_leap_desc"		"<span class=\"highlight\">Leap high into the air</span> and choose a ground location to crash into.  When you hit the ground, <span class=\"highlight\">all enemies in the radius are damaged and stunned</span>.<br>Press [{s:iv_attack}] to crash down early."
 		"modifier_citadel_bull_leap"			"Boosting"
 		
+		AbilityButtonHint_BullLeapCrash			"Crash Down"
+
 		//-----------------------------------------------------------------------------
 		// Hero Seven
 		//-----------------------------------------------------------------------------
@@ -1726,7 +1735,7 @@
 		"ability_smoke_bomb_quip"		"Fade out of sight"
 		"ability_smoke_bomb_desc"		"Fade out of sight, becoming <span class=\"highlight\">invisible</span> and gaining <span class=\"highlight\">sprint speed</span>. Attacking removes invisibility.  Close enemies can see through your invisibility."
 		"ability_smoke_bomb_t1_desc"	"<span class=\"highlight\">+{s:InvisMoveSpeedMod}m/s</span> Invis Sprint Speed"
-		"ability_smoke_bomb_t2_desc"	"<span class=\"highlight\">Remove all debuffs</span> when Smoke Bomb is cast"
+		"ability_smoke_bomb_t2_desc"	"Replenishes Stamina on cast and grants +{s:StaminaCooldownReduction}% Stamina Regen"
 		"ability_smoke_bomb_t3_desc"	"<span class=\"highlight\">{s:AbilityCooldown}s</span> Ability Cooldown"
 		"modifier_citadel_smoke_bomb_in_smoke"	"In Smoke"
 		"modifier_citadel_smoke_bomb_invis" 	"Invisible"
@@ -2071,7 +2080,7 @@
 
 		"ability_icebeam"					"Arctic Beam"
 		"ability_icebeam_quip"				"Apply an escalating slow that can disarm"
-		"ability_icebeam_desc"				"{s:hero_name} shoots freezing cold energy out in front of him, <span class=\"highlight\">damaging and slowing</span> anything it touches. The <span class=\"highlight\">slow increases in strength</span> the more it hits and applies <span class=\"highlight\">disarm</span> at max strength. {s:hero_name} has reduced movement speed while using Arctic Beam; this reduction is removed if using Ice Path."
+		"ability_icebeam_desc"				"{s:hero_name} shoots freezing cold energy out in front of him, <span class=\"highlight\">damaging and slowing</span> anything it touches. The <span class=\"highlight\">slow increases in strength</span> the more it hits and applies <span class=\"highlight\">disarm</span> at max strength. {s:hero_name} has reduced movement speed while using Arctic Beam."
 		"ability_icebeam_t3_desc"			"Fires an <span class=\"highlight\">additional Arctic Beam</span> to another enemy within {s:BeamSplit}m of the last target hit"
 		"modifier_citadel_kelvin_frozen"	"Frozen"
 		"ability_icebeam/modifier_slow"												"Arctic Beam Slow"
@@ -2444,6 +2453,7 @@
 
 		//-----------------------------------------------------------------------------
 		// Lady Geist
+		// hero ghost
 		//-----------------------------------------------------------------------------
 		"ability_blood_bomb"				"Essence Bomb"
 		"ability_blood_bomb_quip"			"Sacrifice some health to launch a damaging bomb"
@@ -2473,6 +2483,8 @@
 		ability_health_swap					"Soul Exchange"
 		ability_health_swap_quip			"Swap your current health with an enemy hero's"
 		ability_health_swap_desc			"<span class=\"highlight\">Swaps health levels</span> with an enemy target. Activation requires the enemy have a higher health level than you. There is a minimum health percentage that enemies can be brought down to."
+		ability_health_swap_t3_desc			"On cast, <span class=\"highlight\">+{s:BonusFireRate}%</span> Fire Rate and <span class=\"highlight\">+{s:TechResist}%</span> Spirit Resist for {s:HealthSwapBuffDuration}s."
+
 		modifier_blood_exchange				"Blood Exchange"
 		EnemyMinHealthPct_label				"Enemy Min Health"
 		EnemyMinHealthPct_postfix			"%"
@@ -2480,8 +2492,10 @@
 		EnemySlowPct_postfix				"%"
 		"ability_health_swap/modifier_health_swap_debuff"	"Health Swap"
 		
-		ability_health_swap_t3_desc			"On cast, <span class=\"highlight\">reset the cooldown</span> of all primary abilities."
-		
+		HealthSwapBuffDuration_label		"Buff Duration"
+		HealthSwapBuffDuration_postfix		"s"
+		modifier_health_swap_buff			"Soul Exchange"
+
 		"ability_death_tax"					"Death Tax"
 		"ability_death_tax_desc"			"Enemies injured by Lady Geist are marked with Death Tax. Whenever a marked enemy dies, {s:hero_name} gains health."
 		"modifier_citadel_death_tax"				"Death Tax"
@@ -3014,7 +3028,7 @@
 		"citadel_ability_tengu_dragonsfire_t3_desc"	"<span class=\"highlight\">+{s:AbilityDuration}s</span> Duration and <span class=\"highlight\">+{s:FlyingBulletResist}</span> Flying Bullet Resist"
 
 		"citadel_ability_tengu_airlift"				"Air Lift"
-		"citadel_ability_tengu_airlift_desc"		"{s:hero_name} takes to the sky and is able to grab enemy or allied Heroes.  While grabbing a Hero, {s:hero_name} and their ally gain some bullet resist.  Heroes that are grabbed can still attack and use abilities.  <br>[{s:in_ability4}] to grab and drop heroes. <br>[{s:iv_attack}] to accelerate flying speed."
+		"citadel_ability_tengu_airlift_desc"		"{s:hero_name} takes to the sky and is able to grab enemy or allied Heroes.  While grabbing a Hero, {s:hero_name} and their ally gain some bullet resist.  Heroes that are grabbed can still attack and use abilities.  <br>[{s:iv_attack2}] to grab and drop heroes. <br>[{s:iv_attack}] to accelerate flying speed."
 
 		//-----------------------------------------------------------------------------
 		// Tokamak
@@ -3432,7 +3446,7 @@
 
 		"citadel_ability_infinity_slash"		"Shadow Transformation"
 		"citadel_ability_infinity_slash_quip"	"Become invincible and more powerful"
-		"citadel_ability_infinity_slash_desc"	"Become infused with Yamato's <span class=\"highlight\">invincible</span> shadow soul. After the initial {s:ShadowDuration}s transformation, your <span class=\"highlight\">abilities are refreshed and are 60% faster</span>, and your weapon has <span class=\"highlight\">infinite ammo</span>."
+		"citadel_ability_infinity_slash_desc"	"Become infused with Yamato's shadow soul. After an initial <span class=\"highlight\">invincible</span> transformation, your <span class=\"highlight\">abilities are refreshed and are 60% faster</span>, and your weapon has <span class=\"highlight\">infinite ammo</span> and gain damage and debuff resist."
 		"citadel_ability_infinity_slash_buff_header" "Per Hero Hit"	
 		"ShadowDuration_label"					"Explosion Delay"
 		"ShadowDuration_postfix"				"s"
@@ -3874,7 +3888,7 @@
 		"modifier_pullaura" 					"Pulled"
 		"modifier_healaura" 					"Healing"
 		"modifier_health_nova"					"Health Nova"
-		"upgrade_health_stimpak/modifier_stimpak_regen"			"Stimpak"
+		"upgrade_health_stimpak/modifier_stimpak_regen"			"Healing Rite"
 		"modifier_bullet_deflector"				"Bullet Deflector"
 		"modifier_summon_minion" 				"Summoned Minion"
 		"modifier_citadel_charging" 			"Charging"
@@ -4571,7 +4585,10 @@
 		"Radius_label"								"Radius"
 		"Radius_postfix"								"m"
 
-		"ActiveRadius_label"						"Radius"
+		"InactiveRadius_label"						"Inactive Radius"
+		"InactiveRadius_postfix"						"m"
+
+		"ActiveRadius_label"						"Active Radius"
 		"ActiveRadius_postfix"						"m"
 
 		"MaxRadius_label"								"Max Radius"
@@ -5966,6 +5983,17 @@
 		"StealDuration_label"					"Steal Duration"
 		"StealDuration_postfix"					"s"
 
+		"VeilCross_conditional"					"Cross a Cosmic Veil"
+		modifier_veil_walker_triggered			"Veil Fire Rate"
+		modifier_veil_walker_stealth			"Veil Walker Invisibility"
+
+		InvisDuration_label						"Invisibility Duration"
+		InvisDuration_postfix					"s"
+
+		SlideScale_label						"Slide Distance"
+		SlideScale_postfix						"%"
+		SlideScale_prefix						"+"
+
 		//-----------------------------------------------------------------------------
 		// END Ability Properties desc
 		//-----------------------------------------------------------------------------
@@ -6225,6 +6253,7 @@
 		"citadel_settings_area_lights"					"Area Lights"
 		"citadel_settings_depth_of_field"				"Depth of Field"
 		"citadel_settings_displacement_mapping"			"Displacement Mapping"
+		"citadel_settings_mboit"						"MBOIT"
 		"citadel_settings_screen_space_shadows"			"Contact Shadows"
 		"citadel_settings_camera_volume_cutout"			"Camera Cutout"
 		"citadel_settings_render_portals"				"Portal Rendering"
@@ -6711,9 +6740,11 @@
 		"menu_learn_completed"						"Completed"
 
 		"AbandonMatchPrompt_Title"					"Abandon this match?"
-		"AbandonMatchPrompt_Text"					"You will not be able to rejoin, and your team will be down a player."
+		"AbandonMatchPrompt_Text"					"You will not be able to rejoin, your team will be down a player and a matchmaking penalty will be applied."
 		"AbandonMatchPrompt_Confirm"				"Abandon my friends"
 		"AbandonMatchPrompt_Cancel"					"Stay in match"
+
+		"SafeToAbandon_Text"						"This match is now safe to abandon without penalty."
 
 		"ModIconTooltip_UnlockTier2"				"Unlocked after your team destroys an enemy Walker"
 		"ModIconTooltip_UnlockGuardians"			"Unlocked after your team destroys a set of enemy Base Guardians"	
@@ -6877,7 +6908,7 @@
 		"AbilityButtonHint_CastShadowRedemption"	"Resurrect with Shadow Redemption"
 		"AbilityButtonHint_SpeedBoost"				"Speed Boost"
 		"AbilityButtonHint_GuidedArrowSpeed"		"Accelerate"
-		"AbilityButtonHint_GuidedArrowRelease"		"Release"
+		"AbilityButtonHint_GuidedArrowRelease"		"Detonate"
 		"AbilityButtonHint_MoveUp"					"Move Up"
 		"AbilityButtonHint_MoveDown"				"Move Down"
 		"AbilityButtonHint_FlyUp"					"Fly Up"

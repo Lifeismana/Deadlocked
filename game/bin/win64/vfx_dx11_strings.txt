@@ -105,7 +105,6 @@ $Globals
 %s[line %d:%d] 
 %s\%s_%08X%08X%08X%08X.vshadercache
 &YA1H
-'	V_log10f
 ', type<
 ',=?k
 'AppendStructuredBuffer'
@@ -215,7 +214,7 @@ $Globals
 )D$ D
 )l$0H
 )t$ H
-*	V_log2f
+*	V_log10f
 *** ERROR! VS input struct member "%s" is missing semantic annotation!
 *** Error compiling UI visibility expression for variable "%s": %s
 *** Error compiling expression for attribute "%s": %s
@@ -307,7 +306,6 @@ $Globals
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 , at <EOF>
 , at offset %d
 , near %s
@@ -316,6 +314,7 @@ $Globals
 ,0<	w
 ,T$`H
 ,W5y+
+-	V_log2f
 -Stop: 
 -end of input-(
 -memory-
@@ -388,6 +387,7 @@ $Globals
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
 // BDA $Globals
 // BDA $Globals Pushconstant
 // End $Globals
@@ -418,7 +418,7 @@ $Globals
 220323000000Z
 220801000000Z
 230714000000Z
-240613154301Z0/
+240620161300Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -442,7 +442,6 @@ $Globals
 77:1: element : ( struct_decl | function_definition | variable_definition[ false ] | constant_buffer | type_def | bindless_constant_def | auto_bindless_texture2d_binding | valve_compiler_option | slang_enum | slang_interface | slang_extension | semicolon= ';' );
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 7xicuU
-8	V_powf
 8/t[H
 88888
 888888
@@ -464,13 +463,13 @@ $Globals
 9)~P3
 9)~[H
 98t H
-9H7n?}
 9Yh~"
 9^h~LH
 9s ~'
 9sh~G3
 9sh~I3
 : lexer error %d :
+;	V_powf
 ;G(uSL
 ;H9>&X
 ;I9}(tiH
@@ -613,6 +612,7 @@ $Globals
 @VWATAUH
 @VWAVH
 @WAVAWH
+@].mZ
 @_RDATA
 A0HcG@H
 A8}(u
@@ -929,7 +929,6 @@ CreateEventW
 CreateFileW
 CreateInterface
 CullMode
-D	V_sincosf
 D!l$xA
 D$ E3
 D$ L;
@@ -982,7 +981,7 @@ D3DStripShader
 D3DXPreprocess() failed with no error message! CVfxDx11::CompileShaderAndGetVariables(636): 
 D8$:u
 D81uUL9r
-D8=$D
+D8=4D
 D8fTt
 D8t$ht
 D97~lH
@@ -1048,7 +1047,6 @@ Dynamic combo %s referenced in expression doesn't exist.
 E0A9E@
 E0HcH
 E0Lc`
-E49D)
 E8q(u
 E;f |
 E;fh|
@@ -1076,7 +1074,7 @@ External descriptor set %s redeclared with different bind slots (%d vs %d)
 ExternalDescSet
 ExternalDescriptorSet
 Extraneous token
-F	V_sinf
+F",}2
 FEATURES
 FLOATLITERAL
 FLOATSUFFIX
@@ -1102,6 +1100,7 @@ FreeEnvironmentStringsW
 FreeLibrary
 Friday
 Function %s() expects %d arguments. Found %d.
+G	V_sincosf
 GD$H3
 GL$(D
 GL$8D
@@ -1199,7 +1198,7 @@ Hc{h;{xu
 HeightBlend
 HeightCorrection
 HighPrecisionBlendEnable
-I	V_snprintf
+I	V_sinf
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
 IMAGE_FORMAT_IMC2
@@ -1250,6 +1249,7 @@ K0HcQ
 KERNEL32.dll
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!|$(L!
 L$ E3
 L$ I;
@@ -1385,10 +1385,10 @@ NEAREST
 NEVER
 NOT_EQUAL
 NV_NULL
+NYs_<
 Newline in string literal
 No closing */ before end of file
 November
-O	V_sscanf
 OCTAL_ESC
 October
 Ordered constructor wrapped type has no default constructor.
@@ -1438,6 +1438,7 @@ ProcessUvScaleAnnotation
 Pz}b!
 QL;PLt
 QueryPerformanceCounter
+R	V_sscanf
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -1571,7 +1572,6 @@ StructuredBuffer
 SubsurfaceProfile
 Sunday
 Swizzle operation only supports up to four channels.
-T	V_stricmp_fast
 T$ E3
 T$"E3
 T$@Hi
@@ -1650,6 +1650,7 @@ Unknown texture dimension
 Unknown variable name %s.
 Unsupported annotation data type
 Unsupported render state type
+UtfNs
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
@@ -1710,6 +1711,7 @@ VfxSetStateInDepthStencilDesc
 VfxSetStateInRasterizerDesc
 VfxStaticAnalyzeConstnessInternal
 Viewport
+W	V_stricmp_fast
 WATAUAVAWH
 WATAUAVH
 WAVAWH
@@ -1723,15 +1725,14 @@ WriteConsoleW
 WriteFile
 Wrong number of args left on stack (%i args, wanted %i)!
 Wrong number of items in value for annotation %s. Ignoring annotation.
-X	V_strspn
 XA;ML|
 XA^A]A\[
 Y9"SD
-Y:,4~
 Y>t$7?
 YL$XH
 YT$XH
 Yt$@Hc
+[	V_strspn
 [AiC@
 [AiCD
 [AiCH
@@ -1840,7 +1841,6 @@ _sampler
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 antlr3BaseRecognizerNew
@@ -1921,6 +1921,7 @@ consumestructuredbuffer
 cs_5_0
 cs_6_0
 ctx.m_pVariableIndexToParamIndex[nVarIndex] < ctx.m_nNumAllParams
+d	V_tanf
 d$HE3
 d$PE3
 d$XL;
@@ -2036,7 +2037,6 @@ l$0fD
 l$8Hc
 l$XL;
 l2|X/gGe
-lB)`!1
 layer
 layeroverride
 length
@@ -2194,7 +2194,6 @@ tRLcY
 tSD8;tN3
 tSLc@
 tTD8;tO3
-tXKG3
 t]L93tX3
 texture2darrayindex
 texture2dindex
@@ -2235,6 +2234,7 @@ vFromAxis.LengthSqr() == 1
 vKfffff
 vPLc~
 vToAxis.LengthSqr() == 1
+v[m5aS%|
 value
 varDesc.m_pCompiledExpressionBuffer != nullptr
 variableConstness.GetValue( &bWasConstant, tok )
@@ -2263,7 +2263,6 @@ x=HcS
 x>fff
 y fA;
 y\PD>!
-z[JyT
 { u H
 {pu	H
 {un'%

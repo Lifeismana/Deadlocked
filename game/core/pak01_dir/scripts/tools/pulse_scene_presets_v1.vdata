@@ -4,7 +4,7 @@
 	BaseNodeHeader = 
 	{
 		name = "Header"
-		className = "NodeHeader_Base"
+		className = "NodeHeader"
 		children = 
 		[
 			
@@ -68,8 +68,8 @@
 			},
 			
 			{
-				name = "PortsLayout"
-				className = "PortsLayout"
+				name = "NodeRows"
+				className = "NodeRows"
 			},
 		]
 	}
@@ -97,8 +97,8 @@
 		[
 			
 			{
-				name = "PortsLayout"
-				className = "PortsLayout"
+				name = "NodeRows"
+				className = "NodeRows"
 			},
 		]
 	}
@@ -109,7 +109,7 @@
 			
 			{
 				preset = "BaseNodeHeader"
-				className = "NodeHeader_Base ValueNodeHeader"
+				className = "NodeHeader ValueNodeHeader"
 			},
 			
 			{
@@ -158,7 +158,7 @@
 			
 			{
 				preset = "BaseNodeHeader"
-				className = "NodeHeader_Base FlowNodeHeader"
+				className = "NodeHeader FlowNodeHeader"
 			},
 			
 			{
@@ -273,28 +273,10 @@
 	Cursor = 
 	{
 		className = "Cursor"
-		children = 
-		[
-			
-			{
-				name = "CursorIcon"
-				_class = "image"
-				className = "CursorIcon"
-			},
-		]
 	}
 	CallstackCursor = 
 	{
 		className = "Cursor CallstackCursor"
-		children = 
-		[
-			
-			{
-				name = "CursorIcon"
-				_class = "image"
-				className = "CursorIcon"
-			},
-		]
 	}
 	Port = 
 	{
@@ -321,6 +303,19 @@
 			},
 		]
 	}
+	PulseTextTooltip = 
+	{
+		className = "PulseTextTooltip"
+		children = 
+		[
+			
+			{
+				name = "Tooltip"
+				_class = "text"
+				className = "Tooltip"
+			},
+		]
+	}
 	BlockComment = 
 	{
 		className = "BlockComment_Base"
@@ -329,7 +324,7 @@
 			
 			{
 				preset = "BaseNodeHeader"
-				className = "NodeHeader_Base FlowNodeHeader"
+				className = "NodeHeader FlowNodeHeader"
 			},
 			
 			{

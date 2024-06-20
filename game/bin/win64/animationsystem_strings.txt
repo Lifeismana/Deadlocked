@@ -29,6 +29,7 @@
 	JS_STRING
 	TYPE_BOOL
 	TYPE_ENUM
+	V_fmodf
 	V_fprintf
 	V_frexpf
 	V_isalpha_str_fast
@@ -107,13 +108,13 @@
  (%s%s)
  (08@HPX`hpx
  (08@HPX`jP]
- (08@HPXbp
+ (08@HPXb
  (08@HPZP]
- (08@HRp
+ (08@HR
+ (08@J
  (08@JP]
- (08@Jp
  (0:P]
- (0X`hpzp
+ (0X`hpz
  (Start: 
  * %d WeightLists
  * ScaleSet[%d] :: %s
@@ -204,8 +205,6 @@
  A__]
  A__^
  A__^][
- AxGa
- BP?a
  Base Class Array'
  Base Class Descriptor at (
  Bik_debug_fabrik_backwards_enabled
@@ -485,12 +484,10 @@ $`<`uMM
 &vOutput != &pt3
 &vOutput != &pt4
 '	5't
-'	V_log10f
 ', type<
 ',=?k
 'Play reversed' has no effect when used with time synchronization!
 'p7M}f
-(	V_log2_uint
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( NmGetMostSignificantBit( flValue ) + 1 ) <= nMaxBitsToUse
@@ -504,33 +501,30 @@ $`<`uMM
 ( ndxKeyData >= 0 ) && ( ndxKeyData < 65536 )
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
-(%2B)
-(%a8!
 (%d,%d)
-(%hGE
+(%s::
 (("**,
 ((6"8(:,<*>
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-)\:
-(-,IC
-(-1U:
-(-4GC
-(-Sl(
+(-%Z=
+(-Fs:
+(-KbD
+(-K}5
+(-Pu:
+(-^09
+(-a]:
 (-aaD
-(-dZ6
+(-i`D
+(-{n:
 (0`hpx
 (4$Mc
-(5 \:
-(54c:
-(57&0
-(5:U:
-(5_i:
-(5lYa
-(5ml:
-(=@i:
-(=G2;
-(=vl:
+(5LYa
+(5g09
+(5~K:
+(=57>
+(=G]:
+(=fd)
 (A]A\^[
 (A]A\_^
 (A^A\
@@ -563,6 +557,7 @@ $`<`uMM
 (A__^]
 (Blend1D):m_flBlendValue
 (Blend1D):m_resetCount
+(CRxyt
 (D$ A
 (D$ H
 (D$ L
@@ -1051,12 +1046,13 @@ $`<`uMM
 )|$pH
 )|$pL
 )|B?d!
-*	V_log2f
+*	V_log10f
 *>PjS
 *HcD;LH
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *xNIL
++	V_log2_uint
 +:HcS
 +Base Pose
 +Bones
@@ -1086,7 +1082,6 @@ $`<`uMM
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 , at <EOF>
 , at offset %d
 , from: 
@@ -1104,6 +1099,7 @@ $`<`uMM
 ,\$`H
 ,d$pfE
 ,j.b0^2`4^6`8^:f<
+-	V_log2f
 - Scripted Sequence: 
 -1 1000
 -BH>t
@@ -1122,10 +1118,9 @@ $`<`uMM
 .00cfg
 .3z u
 .40t8Ic
-.5(|%
-.5w$'
-.=P}%
-.=ye:
+.5x|%
+.=3~%
+.=RF0
 .>PJ;I:qE>
 .?AU?$ArrayWrapper@V?$CUtlVector@UCWeightPreview@@HV?$CUtlMemory@UCWeightPreview@@H@@@@@Detail@Reflection@@
 .?AU?$ArrayWrapper@V?$CUtlVector@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@HV?$CUtlMemory@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@H@@@@@Detail@Reflection@@
@@ -2475,17 +2470,16 @@ $`<`uMM
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
 /2GG>!B
 /3HcC
-/5'P'
-/5GY"
-/5P#'
-/5W@'
-/5rx%
-/5x92
-/5z%0
+/5O''
+/5jv$
+/5pF)
+/5wP'
 /6s^M
-/=)["
+/=mf6
+/=y["
 />58d%
 /@$s6
 /A8s"
@@ -2512,7 +2506,6 @@ $`<`uMM
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
 08@HRP]
-08@Jp
 08BP]
 0;O0|
 0><[cZUg^>
@@ -2575,7 +2568,6 @@ $`<`uMM
 0iN>/
 0w0c1
 0}0i1
-1	V_modff
 1#IND
 1#INF
 1#QNAN
@@ -2592,7 +2584,7 @@ $`<`uMM
 220323000000Z
 220801000000Z
 230714000000Z
-240613154319Z0/
+240620161509Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -2614,9 +2606,9 @@ $`<`uMM
 3<$u?A
 3>N;kU
 3>fvw
-3^obdK
 3mq+<
 3qGZL
+4	V_modff
 456789:;<=
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
 4>H;7tIH
@@ -2624,19 +2616,16 @@ $`<`uMM
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5YA1I
-5ZrVV
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
 6I]Dc
 6OB,n_
 6p7MOf
-7	V_powd
 70503
 7Lck8H
 7YA1A
 7YA1I
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8/t[H
 80tWD
 8@8t)0u
@@ -2677,6 +2666,8 @@ $`<`uMM
 9+fIH
 90u(H
 94/~83
+958l/
+95fXB
 98t H
 98~(H
 98~+H
@@ -2759,7 +2750,7 @@ $`<`uMM
 9|$xu
 9}@~&
 9}@~V
-:	V_qsort_s
+:	V_powd
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 : lexer error %d :
@@ -2809,6 +2800,7 @@ $`<`uMM
 :m_hSequence
 :m_resetCount
 :m_resetCycleValue
+;	V_powf
 ;.u1L
 ;?0123456789:;<=>?
 ;CX}zH
@@ -2846,7 +2838,7 @@ $`<`uMM
 <	u)Icn
 <	u2H
 <	u4H
-<	u\L
+<	u8H
 <	w	@
 < t=<	t9
 < tY,
@@ -2891,6 +2883,7 @@ $`<`uMM
 <unknown>
 <utK@:
 <x~fH
+=	V_qsort_s
 =%H5<mN
 ========================================
 ==MQ?
@@ -2910,7 +2903,6 @@ $`<`uMM
 >f;D$4t
 >fA9~
 >jtm}S
-?	V_roundf
 ?!5WOo
 ?+>^m
 ?456789:;<=
@@ -3043,7 +3035,6 @@ $`<`uMM
 @.data
 @.reloc
 @08@HPX`hpx
-@08N 
 @0HcB
 @8/te3
 @84)u
@@ -3108,10 +3099,9 @@ $`<`uMM
 @A_^]
 @A__[
 @A__^
-@A__^][
 @HHcB$;B(u
 @HPX&I
-@HPX`hvp
+@HPX`hvP
 @HcAp3
 @L9?t	H
 @PHcB(;B,u
@@ -3598,7 +3588,6 @@ A_A\_[
 A_A\_[]
 A_A\_][
 A_A\_^]
-A_A\_^][
 A_A]A\]
 A_A]A\][
 A_A]A\^[
@@ -3894,6 +3883,7 @@ Audio Tag
 August
 Auto Reset
 Axis isn't normalized!
+B	V_roundf
 B 9A tDA
 B D	B
 B H+P(
@@ -4041,7 +4031,6 @@ C(H9,
 C(H;>tQH
 C(HcK,;
 C(L9{0t	H
-C(L9|$(t
 C(LcC$H
 C,HcS0
 C,Hcs0Hc
@@ -4049,6 +4038,7 @@ C,fff
 C09s0t
 C0H94
 C0Hc	H
+C0L9e
 C42F4$
 C4;C8}
 C4HcS8
@@ -5521,8 +5511,8 @@ CKV3ClusterAlloc<class KeyValues3,63>::Free
 CKV3ClusterAlloc<class KeyValues3,63>::GetIndexForEntry::<lambda_1>::operator ()
 CKV3ClusterAlloc<class KeyValues3,63>::GetIndexForEntry::<lambda_2>::operator ()
 CKV3ClusterAlloc<class KeyValues3,63>::GetParentContext
-CKV3MemberIteratorView<1>::iterator::iterator
-CKV3MemberIteratorView<1>::iterator::operator *
+CKV3MemberIndexIteratorView<1>::iterator::iterator
+CKV3MemberIndexIteratorView<1>::iterator::operator *
 CKV3MemberNameWithStorage
 CKV3MemberValueIteratorView<0>::iterator::iterator
 CKV3MemberValueIteratorView<0>::iterator::operator *
@@ -7954,7 +7944,6 @@ CxH94
 CycleControlClipNode
 C|$pH
 C|$xL
-D	V_sincosf
 D W?{W
 D!l$xA
 D$ 	!O3
@@ -8333,6 +8322,7 @@ D$h_L
 D$hf;
 D$hfA
 D$hfD
+D$iE3
 D$pA+
 D$pA9u(~iD
 D$pE3
@@ -8351,7 +8341,6 @@ D$xM+
 D$xf;
 D$xfD+
 D$xfD9!
-D$yE3
 D+3L9c0u	
 D+A@H
 D+|$0fD;g
@@ -8385,7 +8374,7 @@ D8t$ht
 D8v@tf
 D8{8u+H
 D8|$`t
-D9%Jp/
+D9%jn/
 D9&|6
 D9/~%H
 D9/~4fff
@@ -8569,7 +8558,6 @@ DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
 D|$0H
 E	44H
-E	V_sind
 E 8C 
 E @8pHtD9s|~?L
 E D8xKtgA
@@ -9117,7 +9105,6 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 ExternalNameForInternalType
 ExtraSeqFlags
 Extraneous token
-F	V_sinf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -9456,6 +9443,7 @@ Func( %s )
 Function "%s" takes %i parameters, but %i were given
 Future Facing
 Future Velocity
+G	V_sincosf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -9638,7 +9626,7 @@ G|$(L
 G|$8B
 G|$HA
 G|$HL
-H	V_sinhf
+H	V_sind
 H	X0H
 H 8YKt
 H 8YKt	
@@ -9690,15 +9678,9 @@ H9(tO
 H9+t	H
 H9/t	H
 H92tBA
-H95'O7
-H95'ro
-H952x;
-H957Cs
-H957R;
-H95Mx;
-H95[h7
-H95cw;
-H95vh7
+H95'Cs
+H95'z\
+H95wN7
 H97u+A
 H98t2
 H98t7
@@ -9821,7 +9803,6 @@ HA__^[
 HD;N8|
 HD;Ot|
 HELPER_BONE
-HFPZh#
 HH:mm:ss
 HHcA H
 HSequence
@@ -10041,7 +10022,7 @@ HitReactFixedSettings_t::KV3Transfer_DefaultKeys_Impl
 HitReactFixedSettings_t::Schema_VerifyBindingIsRegistered
 HostStateMgr001
 HxH9Jxt
-I	V_snprintf
+I	V_sinf
 I could not work out what I was expecting, like so many of us these days!
 I#I0H
 I#J0H
@@ -10800,6 +10781,7 @@ JiggleBoneSettings_t::KV3Transfer_DefaultKeys_Impl
 JiggleBoneSettings_t::Schema_VerifyBindingIsRegistered
 JiggleBoneSimSpace
 JumpCorrectionMethod
+K	V_sinhf
 K HcC$Hc
 K$HcC(;
 K&>.yC
@@ -10863,6 +10845,7 @@ KeyValues3::Metadata_SetFileLineColumn::<lambda_1>::operator ()
 KeyValues3::TransferOwnershipOfBinaryBlob
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#^0I
@@ -10965,10 +10948,10 @@ L$AE3
 L$Bf;
 L$C9F
 L$C9G
-L$DD;
 L$DH;T$xt
 L$DH=
 L$DI;
+L$DL;
 L$HA;
 L$HE3
 L$HE9'
@@ -11033,11 +11016,6 @@ L+i0I
 L9#u/H
 L92tDA
 L94:H
-L95	mr
-L95'lr
-L95.^:
-L95I^:
-L95g]:
 L9;u	H
 L9?t	H
 L9@ s
@@ -11059,7 +11037,6 @@ L9egt
 L9j8u
 L9l$(t
 L9l$ht
-L9l$xt
 L9m@t
 L9p tkI
 L9s u#
@@ -11122,7 +11099,6 @@ Lc3Nc|
 Lc6Hc+A
 Lc;A+
 Lc;D;{
-Lc=t	-
 Lc?A+
 Lc?D;
 LcA,L
@@ -11414,6 +11390,7 @@ Missing required transfer interface: %s
 Missing token
 Missing token %s
 Mixed
+Mj MNA
 MjA9F
 Model %s: group %s: missing referenced sequence "%s"
 Model %s: sequence/animation name collision found "%s"
@@ -11599,7 +11576,6 @@ Num Iterations
 NumOps: %i
 Number of bones in input stream does not match skeleton
 Numbers starting with leading zero must be in octal.
-O	V_sscanf
 O$M9o
 O0+W8
 O8HcB
@@ -11658,8 +11634,7 @@ Overlay Blend (Masked): %.2f%%
 Overlay Blend: %.2f%%
 OverlayProjectionDirection
 Override Sound
-P08@Jp
-P08N 
+P08@J
 P>q_Y~
 P@@8|$Pu
 P@HPX`hpx
@@ -11832,6 +11807,7 @@ QuaternionParameter
 QuaternionStorage
 QueryPerformanceCounter
 Quint
+R	V_sscanf
 R A;F
 R.num_cols() == nSampleCount
 R.num_rows() == nSampleCount
@@ -12695,7 +12671,6 @@ SyncChildren
 Synchronize Children
 Synchronized
 Synthetic oneofs must be after all other oneofs
-T	V_stricmp_fast
 T$ D8t$(
 T$ E3
 T$ H;
@@ -12814,8 +12789,7 @@ T$xfD;
 T${9C
 T${A9F
 T+(I;
-T3]#Ir
-T5oO0
+T-m2<
 TILT_TWIST
 TNT::Matrix<float>::initialize
 TNT::Vector<float>::initialize
@@ -13124,6 +13098,7 @@ VWAUAWH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 V_DoubleToString_Unsafe
 V_FloatToString_Unsafe
 V_GetFileExtension
@@ -13173,7 +13148,6 @@ V_fabsf( flNewTargetValue - flDampedValue ) <= 180.f
 V_fabsf( vStartDirection.Normalized().Dot( vNormal ) ) < DEG2RAD( 1 )
 V_fabsf( vWsStartDirection.Normalized().Dot( vWsHingeAxis ) ) < DEG2RAD( 1 )
 V_fabsf((vMsJointAxis.LengthSqr()) - (1.0f)) <= (1e-2f)
-V_fmodf
 V_~]	,
 Validates the animation group channel list against the animations on load for every animation
 Value
@@ -13223,12 +13197,11 @@ Virtual Parameter
 VisBuilder_001
 Volume
 Vrad3_001
-W-Mj'
-W5T)-
-W5W>6
+W	V_stricmp_fast
+W- T!
+W-(M#
 W8IcG(M
 W9QHI
-W=7O8
 WARNING
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
@@ -13278,12 +13251,9 @@ X HcY`H
 X SUWATAUH
 X UVWATAUAWH
 X!t5~
+X%6d#
 X(Hc@ H
-X-:I)
-X-`~5
-X-aI)
-X5Bx%
-X5Q@'
+X5]+%
 XA]A\
 XA]A\^]
 XA^A]_^][
@@ -13318,17 +13288,17 @@ Xt/@A
 Xt7HH
 X|	@A
 Y (Green / Left)
-Y%!.9
+Y%*,9
+Y%3Z?
 Y(HcA H
-Y-<J:
+Y- O8
 Y0HcR
-Y5CZ)
-Y5Z@'
-Y5\X%
-Y5]e#
-Y5pg?
+Y5+	&
+Y5/T%
+Y5M&:
+Y5t	9
+Y5uZ8
 Y9"SD
-Y=o+<
 Y>kX>M
 YD$0A
 YD$4D
@@ -13367,7 +13337,6 @@ Zod(^?
 [lazy = true] can only be specified for submessage fields.
 [packed = true] can only be specified for repeated primitive fields.
 [unknown]
-\	V_strtok
 \$ 9\$0|LH
 \$ @8t$(
 \$ A;
@@ -13493,10 +13462,9 @@ Zod(^?
 \$p9]
 \$pE3
 \$pH;
-\-uI)
-\5yX%
+\-%I)
+\5LT%
 \9\D;
-\=d?J
 \A fA
 \D	 fA
 \D$@A
@@ -13512,12 +13480,9 @@ Zod(^?
 \y@fE
 \|	@fE
 \|'(H
-]%_j0
 ](IcE L
 ])6M>&
 ]0tOH
-]56=#
-]=p	0
 ]>)2X
 ]J<0"0i3
 ]`H9u
@@ -13537,12 +13502,12 @@ Zod(^?
 ^`I9^@I
 ^fD;]
 ^hH9^PH
+_	V_strtok
 _ ;_$t
 _8Hcw
 _8I;_@tj
 _8M9g(u\
 _<	u"H
-_Lfn 
 _RDATA
 _XHcGPH
 __based(
@@ -13634,7 +13599,6 @@ _xHc[
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a7hIw
 abcdefghijklmnopqrstuvwxyz
@@ -13784,7 +13748,6 @@ break
 broken pipe
 bulletimpact
 bytes
-c	V_tanhf
 c HcC8
 c [1>H'
 c(>\,
@@ -14136,6 +14099,7 @@ ctype
 curvature
 cycle
 cycleDelta.IsNormalized()
+d	V_tanf
 d$ D!
 d$ E3
 d$ L9c
@@ -14198,7 +14162,6 @@ d$xt2@
 d' E+
 d0 != 0.0f
 d1 != 0.0f
-d83H7Y
 d?000000`?
 damage
 data_checksum
@@ -14270,6 +14233,7 @@ expression
 extend .$0 {
 extendee
 extension_range
+f	V_tanhf
 f4MaxDist
 f4MinDist
 f4RelaxationFactor
@@ -14339,7 +14303,6 @@ fD9 t
 fD9!H
 fD9!u
 fD9$Hu
-fD9%-
 fD9'u
 fD9,Au
 fD9,pu
@@ -14363,7 +14326,7 @@ fE9fR
 fE9w0
 fE;B`
 fE;Bb
-fE;]*r|A
+fE;U*
 fG9$Ou
 fG;TF
 fJBGo
@@ -14461,6 +14424,7 @@ friction
 from.m_numInts == CalcNumIntsForBits( from.m_numBits )
 fromPose.GetActiveBoneCount() == toPose.GetActiveBoneCount()
 fromTime >= 0.0f && fromTime <= 1.0f
+fui8^G
 fullpackets_version
 function not supported
 g_pAnimationSystem
@@ -14682,8 +14646,7 @@ l$(E3
 l$(H+y0H
 l$(I;
 l$(L+
-l$(L9v
-l$(L9{
+l$(L9s
 l$(Lc
 l$(M9~
 l$(fA
@@ -15263,6 +15226,8 @@ m_bUseModelSpace
 m_bUseMostRecentValue
 m_bUseNewPoleVectorForAxis
 m_bUseShadowFastPath
+m_bUserFriendlyNameLong
+m_bUserFriendlyNameSealed
 m_bUserSpecifiedColor
 m_bUserSpecifiedMaterialGroup
 m_bValue
@@ -16074,6 +16039,7 @@ m_nHitBoxIndex
 m_nIKAnchorBoneIndex
 m_nIndex
 m_nIndex >= 0 && m_nIndex < m_nArrayElementCount
+m_nIndex >= 0 && m_nIndex < m_nMemberCount
 m_nIndex >= 0 && m_nIndex < m_pKV3->GetMemberCount()
 m_nIndexCount
 m_nInfluences
@@ -16183,6 +16149,7 @@ m_nTargetBoneIndex
 m_nTargetStateIdx
 m_nTargetStateNodeIdx
 m_nTickCount
+m_nToolMaterialHash
 m_nTotalElementCount
 m_nTotalRecordCount >= 0
 m_nTransitionNodeIdx
@@ -16913,7 +16880,7 @@ p UWATAVAWH
 p WATAUAVAWH
 p WAVAWH
 p*W4H
-p08@H^ 
+p08@H^
 p0R^G'
 p7M}f
 p;Y>u
@@ -17338,7 +17305,7 @@ t$(A_
 t$(D9c|~c
 t$(E3
 t$(I;
-t$(L9n
+t$(L9o
 t$(Lc
 t$(fD
 t$0@8
@@ -17869,7 +17836,6 @@ xM;8}IH
 xMA;F
 xQD;AH}KH
 xSD;*}NIc
-xSE;H
 xVA;Hh}PA
 xY;Ch}TH
 x_;Qh}Z
@@ -17982,6 +17948,7 @@ zero dir
 |$8H9|$ t
 |$8H;
 |$8Hc
+|$8Hk
 |$8L;
 |$8fA
 |$8fD
@@ -18118,7 +18085,6 @@ zero dir
 }5fff
 }8H;{8t-H
 }8HcE0L
-}:p~Pl
 }<fff
 }>;_$
 }@H;{@t-H

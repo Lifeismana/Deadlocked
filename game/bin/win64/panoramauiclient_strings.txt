@@ -10,11 +10,10 @@
 	JS_STRING
 	TYPE_BOOL
 	TYPE_ENUM
+	V_fmodf
 	V_isbreakablewspace32
 	V_isnand
 	V_isvalidhex
-	V_iswcntrl
-	V_iswdigit
 	V_vsnprintf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
@@ -40,6 +39,7 @@
 	type_name
 	uVeH
 	w|Hc
+ 	V_iswcntrl
  	uIH
                           
     Actual    : 
@@ -80,7 +80,6 @@
  <b>@import</b> 
  = { <proto text format> }". To set fields within it, use syntax like "
  ?InternalFieldCount@Object@v8@@QEBAHXZ
- @DeletePanel
  A\][H
  A^A\^][
  A^A\^][H
@@ -183,7 +182,7 @@
  volatile
  { ... };
  } from:
-!	V_iswspace
+!	V_iswdigit
 !! No context to execute within.
 !"Needs impl"
 !"Unknown movetype"
@@ -304,7 +303,6 @@
 #FileOpenDialog_Save
 #FileOpenDialog_Select
 #H;k0u
-#I0_T
 #Movie_Auto
 #Movie_Auto_Resolution
 #Movie_FastFoward
@@ -324,6 +322,7 @@
 #UI_TextEntry_CopyToClipboard
 #UI_TextEntry_CutToClipboard
 #UI_TextEntry_PasteClipboard
+$	V_iswspace
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $0  extend .$1 {
 $0  extensions $1 to $2;
@@ -720,7 +719,6 @@ $u"8K
 +L$DA
 +M<7>
 +Xt@(
-+^lm|
 +f)>0'
 +h->|
 +o'q)}
@@ -734,6 +732,7 @@ $u"8K
 ,<ellipsis>
 ,HR>O
 ,I<%w
+,T( v-
 ,W5y+
 ,X< w
 ,j.b0^2`4^6`8^:f<
@@ -752,6 +751,7 @@ $u"8K
 -sse4
 -tools
 ...<truncated>...
+..eEN
 ..om?
 .00cfg
 .>PJ;I:qE>
@@ -1291,7 +1291,7 @@ $u"8K
 220323000000Z
 220801000000Z
 230714000000Z
-240613154342Z0/
+240620161516Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1326,7 +1326,6 @@ $u"8K
 7?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
 7H9uHt
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8 tCA
 8$u*E
 8$uFH
@@ -1372,7 +1371,6 @@ $u"8K
 8ke?;
 8w>Hc
 8|u9H
-9	V_qsort
 9	tYH
 9)~P3
 90u(H
@@ -1491,7 +1489,6 @@ $u"8K
 9{t~:3
 9{|~<3
 9|$PtHHc
-:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :$t>H
@@ -1502,6 +1499,7 @@ $u"8K
 :Tu)f
 :context->%p->%s:
 :context->null->UIEngine Global:
+;	V_powf
 ;	t/H
 ;"u	@
 ;)u1D
@@ -1531,6 +1529,7 @@ $u"8K
 ;t$\H
 ;{,}"H
 ;{ht"
+<	V_qsort
 <	u#L
 <	w	@
 <	wHH
@@ -1585,6 +1584,7 @@ $u"8K
 <{uVA
 <}t$<-t
 <}tSH
+=	V_qsort_s
 =ERCPt
 =imb;D
 =rIQU
@@ -1599,7 +1599,6 @@ $u"8K
 >f;D$4t
 >fD9%U
 >jtm}S
-?	V_roundf
 ?!5WOo
 ?"u	@
 ?"u	E
@@ -2206,6 +2205,7 @@ August
 Autosuggest_Prefix_txt
 Autosuggest_Suffix_txt
 Avestan
+B	V_roundf
 B 9A tDA
 B H+P(
 B H+X(
@@ -2881,7 +2881,6 @@ Cypriot
 Cyrillic
 C|$pH
 C|$xL
-D	V_sincosf
 D W?{W
 D!l$xA
 D$ 	I
@@ -3211,6 +3210,7 @@ DelayLoadPanel
 DeleteAsync
 DeleteCriticalSection
 DeleteFrameRowButton
+DeletePanel
 DeleteRowButton
 DeleteVideoPlayer
 DemoUpconverterVersion001
@@ -3527,6 +3527,7 @@ FreeLibrary
 Friday
 FuHcu
 Fullscreen
+G	V_sincosf
 G 8C u
 G 9C 
 G 9C u
@@ -4018,7 +4019,6 @@ HorizontalScrollThumb
 HorizontalSplitter
 HostStateMgr001
 HtmlUserAgent
-I	V_snprintf
 I#I0H
 I#J0H
 I#M0H
@@ -4231,6 +4231,7 @@ Khmer
 Kwvt,
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!l$pH
 L!|$(L!
@@ -4624,7 +4625,6 @@ MutableMessage
 MutableRawRepeatedField
 Myanmar
 N(+V0
-N,nJ>
 N0+V8
 N0fff
 N3`d?
@@ -4679,7 +4679,6 @@ NumberEntryChanged
 NumberEntryDecrementValue
 NumberEntryIncrementValue
 Numbers starting with leading zero must be in octal.
-O	V_sscanf
 O$M9o
 O0+W8
 OF>;^
@@ -4854,6 +4853,7 @@ Q@9QL}
 QD9QL~
 Qu.fff
 QueryPerformanceCounter
+R	V_sscanf
 RA+B(
 RBLegend
 RHH;C(t
@@ -5294,7 +5294,6 @@ Symbol name "
 Synthetic oneofs must be after all other oneofs
 Syriac
 SystemInputLanguageChanged
-T	V_stricmp_fast
 T$ E3
 T$ H+
 T$ H;
@@ -5585,7 +5584,6 @@ UsingCompositionLayer
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_strlower_fast
 V0H;V8t
 V6E>`"(5
 V8ParamToPanoramaType expected IUIPanel object to convert, but got some other invalid object
@@ -5625,6 +5623,7 @@ VWAUAVAWH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 V_BasicHtmlEntityEncode
 V_ExtractDomainFromURL
 V_FloatToString_Unsafe
@@ -5665,7 +5664,6 @@ V_atofloat32
 V_atoi
 V_atoi64
 V_atoui64
-V_fmodf
 V_strcmp( pRow->GetID(), "PropRow" ) == 0
 V_stristr_fast( m_strSource.String(), "://" ) != nullptr
 V_~]	,
@@ -5708,6 +5706,7 @@ VolumeControl
 VolumeSliderPopup
 VolumeSliderValueChanged
 Vrad3_001
+W	V_stricmp_fast
 WARNING
 WATAUAVAWH
 WATAVH
@@ -5761,6 +5760,7 @@ Xt$PH
 Xt$hH
 Xt$xA;
 X|$|A;
+Y	V_strlower_fast
 Y0HcR
 Y5i:	
 Y9"SD
@@ -5769,7 +5769,7 @@ Y>kX>M
 YD$@f
 Y_txt
 You can't interpolate a layout-position
-Z	V_strtod
+Z":$c9
 ZP~IIc
 Z\>z8
 Zod(^?
@@ -5918,13 +5918,13 @@ Zod(^?
 \|$HH
 \|$TH
 \|$XA
+]	V_strtod
 ] is an invalid data character in JavaScript compatibility mode
 ])6M>&
 ]0H;w0t!H
 ]>)2X
 ]J<0"0i3
 ]XD;]
-^	V_strupper_fast
 ^,tyI
 ^<V7w
 ^RfN>
@@ -6033,7 +6033,7 @@ _oD>Kg
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
-a	V_tanf
+a	V_strupper_fast
 a numbered reference must not be zero
 a-?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z
 a7hIw
@@ -6096,6 +6096,7 @@ azure
 b?^Cy
 bAllocationCanFit
 bFound
+bI``7
 background-blur
 background-blur: gaussian( 6, 6, 1 );</pre>
 background-color
@@ -6306,6 +6307,7 @@ curFilter[0] == '*' && curFilter[1] == '.'
 current_item
 cycle_class
 cycle_classes
+d	V_tanf
 d$ ;3}&M
 d$ A81
 d$ D!
@@ -6736,6 +6738,7 @@ java_package
 java_string_check_utf8
 javascript:
 jj@0HK4
+jr^X+
 json_name = "
 jstype
 jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
@@ -7541,6 +7544,7 @@ r$;3|
 r'?IsolateFromNeverReadOnlySpaceObject@internal@v8@@YAPEAVIsolate@12@_K@Z
 r7f;\$|
 r:f;\$|
+rH%@Q
 rKf;\$t
 rNf;\$t
 r_f;\$l
@@ -7925,7 +7929,7 @@ tRLcY
 tSf91tNH
 tTA8~TtNA
 tU;\$0tH
-tUH959
+tUH95I
 tUH99uPL
 tUvS@2
 tV@8/tQ@8
@@ -8236,7 +8240,6 @@ x_^][
 xdigit
 xrHcE
 y-offset
-y?@YpO
 y\PD>!
 yellow
 yellowgreen

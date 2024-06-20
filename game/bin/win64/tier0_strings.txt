@@ -26,6 +26,7 @@
 	D$0H
 	HcC8N
 	JR>8o
+	MT#ix
 	Message: %s
 	Title: %s
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
@@ -166,7 +167,6 @@
  Hc)H
  Hc1H
  Hc1L
- Hc=*o"
  HcA8H
  Hcqx
  Lc)H
@@ -268,7 +268,7 @@
 "f^n[
 "name" of the file referenced by the symbolic link named /etc/malloc.conf
 "pA3Q
-"pA3Q(
+"pA3Q8
 #%llu
 #4o>w
 #D$8H
@@ -456,7 +456,7 @@ $~DE3
 %u outstanding allocations (%d delta).
 %u(%f):  
 %u_%u_%u
-%vmdlkeys0
+%vmdlkeys1
 &	$@06p
 &#%u;
 &?PPPPPPP?
@@ -577,6 +577,7 @@ $~DE3
 &yacute;
 &yen;
 &yuml;
+' h84
 '":|;
 ',=?k
 ':' not expected inside an array.  ('[]' used when '{}' was intended?)
@@ -624,7 +625,6 @@ $~DE3
 ( uintptr_t( m_p8ByteValues ) % sizeof( double ) ) == 0
 ( uintptr_t( m_p8ByteValues ) % sizeof( float64 ) ) == 0
 ( uintptr_t( pSrcData ) % 8 ) == 0
-(%d,%d)
 (%f) 
 (((uintp)pNew & 0x3) == 0)
 ((IAssertionFailureListener_Tier0Manipulator *)pListener)->GetRegisteredVar()
@@ -669,11 +669,9 @@ $~DE3
 (D$PL
 (D$Pf
 (D$`H
+(D85n
 (GetChar()) == (0)
-(H9-3
-(H9-}
-(H95k
-(H95m
+(H95M
 (H;D$Xr
 (Ic~ L
 (L$ H
@@ -773,6 +771,7 @@ $~DE3
 )	%)t
 ) %%-%d.%ds 
 )/o>	
+)05	x
 )147:;=IJ]
 )14:;EFIJ^de
 )14:EFIJNOde\
@@ -1056,7 +1055,6 @@ $~DE3
 ./?\]_
 .00cfg
 .;D$T
-.=x~%
 .>PJ;I:qE>
 .?AUConcurrentQueueProducerTypelessBase@details@moodycamel@@
 .?AUImplicitProducer@?$ConcurrentQueue@PEAVCThreadedJob@@UConcurrentQueueDefaultTraits@moodycamel@@@moodycamel@@
@@ -1458,7 +1456,7 @@ $~DE3
 220323000000Z
 220801000000Z
 230714000000Z
-240613154149Z0/
+240620161129Z0/
 241009235959Z0a1
 29C }
 2;L$Hr"
@@ -1466,6 +1464,7 @@ $~DE3
 2B$$@2
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
+2Hc=j
 2YA1H
 2YA1I
 2]fQ	?5!
@@ -1609,7 +1608,7 @@ $~DE3
 9#ueH
 9)~P3
 9+}/I9.t*
-9-F 2
+9-;.2
 91~33
 93t>H
 96ID3
@@ -1698,13 +1697,13 @@ $~DE3
 :~dm1	
 ;.t A
 ;.u1L
-;5*1$
-;=,r(
-;=8-#
-;=@s(
-;=S~9
-;=W;'
-;=eq!
+;5rr4
+;=N6#
+;=W:'
+;=])&
+;=tt&
+;=|z!
+;=~&&
 ;A rg
 ;A8t^
 ;A8u	H
@@ -1785,6 +1784,7 @@ $~DE3
 <	wyE3
 < t=<	t9
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
+<!-- schema 
 <"t	< r
 <"t&I
 <$!tc
@@ -1943,6 +1943,7 @@ $~DE3
 >5PJ>
 >::operator ()
 >;D$P
+>L)=!b,
 >Mp$d
 >YA1H
 >YA1I
@@ -2339,6 +2340,7 @@ $~DE3
 ?BuildMidpointFromVertexSubSet@CVertexKDTree@@QEAAXPEBMHPEBHH@Z
 ?BuildNode@CVertexKDTree@@AEAAHHH@Z
 ?C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\bitbuf.cpp
+?C`84
 ?CalcBudgetGroupTimes_Recursive@CVProfile@@QEAAXPEAVCVProfNode@@PEAIHM@Z
 ?CalcStackDepth@CThread@@QEAA_KPEAX@Z
 ?Capture@CCallStackCapture@@QEAAXP6AHIPEAPEAXHH@ZII@Z
@@ -2608,6 +2610,7 @@ $~DE3
 ?GenerateRandomNumber_Locked@?$CUniformRandomStreamImpl@VCThreadSpinMutex@@@@AEAAHXZ
 ?Get@CUtlBinaryBlock@@QEBAXPEAXH@Z
 ?Get@CUtlBuffer@@QEAA_NPEAXH@Z
+?GetAMDFamily@CPUInformation@@SA_NPEAI@Z
 ?GetActualSize@CLZMA@@QEAAIPEBE@Z
 ?GetActualSize@CLZSS@@QEAAIPEAE@Z
 ?GetAddressAfterLastRegion@CVirtualMemorySnapshot@@QEBA_K_K@Z
@@ -2751,7 +2754,7 @@ $~DE3
 ?GetVSibling@CVProfNode@@QEBAPEBV1@XZ
 ?GetWinLevelRevision@CPUInformation@@SA_NPEAG0@Z
 ?GrowByChunks@CBufferString@@QEAAHHH@Z
-?HEAP WARNING: memory block at %p appears to be corrupt
+?HEAP WARNING: memory pointer %p is invalid
 ?HandleFirstWriteLockTransition@CEventRWLock@@IEAAXAEAVCEventListNode@@@Z
 ?HandleToString@CCountedStringPool_CI@@QEBAPEBDG@Z
 ?HandlerQueueHeartBeat@MiniDumpStandardData_t@@QEBAXXZ
@@ -3479,7 +3482,7 @@ $~DE3
 ?p7M}
 ?s_iCurrentUniqueNodeID@CVProfNode@@1HA
 ?t-L9k
-?t3L95%
+?t3L95
 ?t8L9
 ?t_v>
 ?ulJcL*
@@ -3488,7 +3491,6 @@ $~DE3
 ?{Q}<
 @ M;A H
 @ M;B H
-@"0s4
 @'B1`
 @(D3@
 @,D3@
@@ -3501,9 +3503,10 @@ $~DE3
 @8,0u
 @8,3u
 @8,7u
-@8,9u
 @8,>u
-@8-Eg(
+@8-9b(
+@8-Iu(
+@8-yh(
 @8/t|D
 @8/uJ
 @83tSD
@@ -3513,11 +3516,13 @@ $~DE3
 @84+u
 @84/u
 @848u
+@85K/
+@85lr&
 @8:tyD
 @8;t7I
 @8<(u
-@8=1m
-@8=Q&9
+@8=q69
+@8=|K-
 @8i(u
 @8i(u:
 @8j(t
@@ -3525,7 +3530,7 @@ $~DE3
 @8kIt
 @8l$H
 @8l$Pu<
-@8oIumH9-
+@8oIumH9->
 @8q un
 @8q2u}H
 @8q<uuH
@@ -3608,7 +3613,6 @@ $~DE3
 @C#e<X
 @C#e<\
 @D9g8|>H
-@H95(/'
 @H;C s
 @HcC(H
 @OQ]=
@@ -3623,6 +3627,7 @@ $~DE3
 @SAWH
 @SUATAVH
 @SUATAWH
+@SUAUH
 @SUAVAWH
 @SUAVH
 @SUAWH
@@ -6343,7 +6348,7 @@ D$09D$p}
 D$0@8{
 D$0A+
 D$0D+
-D$0D8%!
+D$0D8%
 D$0D;
 D$0E+
 D$0E2
@@ -6453,7 +6458,7 @@ D$DE3
 D$DHcT$@A
 D$Dt5
 D$Dwb
-D$H9=QN
+D$H9=
 D$H;\$
 D$H;|$
 D$HA+
@@ -6629,7 +6634,7 @@ D8$0u
 D8$1u
 D8$8u
 D8$:u
-D8%HK8
+D8%([8
 D8&tfD8
 D8'uZ
 D8,(u
@@ -6637,11 +6642,15 @@ D8,+u
 D8,.u
 D8,8u
 D8,;u
-D8-"Z-
-D8-([-
-D8-AT-
-D8-VX-
-D8-zS-
+D8-&h-
+D8-?a-
+D8-Ii-
+D8-Iw2
+D8-Zd-
+D8-ge-
+D8-x`-
+D8-|j-
+D8-~a-
 D8.ui;
 D80fH
 D81uUL9r
@@ -6653,9 +6662,11 @@ D84:u
 D8;tlL
 D8<.u
 D8<0u
+D8<1u
 D8<2u
 D8<>u
-D8=0]
+D8=(1)
+D8=t1)
 D8?tt
 D8?t|E
 D8L$0u`
@@ -6682,6 +6693,7 @@ D8{Hu
 D8|$`t
 D8}/t
 D8}?t	H
+D9%fY
 D9+u>H
 D93tjH
 D93}mL
@@ -6689,6 +6701,7 @@ D941L
 D942H
 D949L
 D9<1H
+D9=>i
 D9D$Pw
 D9Gd~/A
 D9L$Pv
@@ -6874,7 +6887,6 @@ E0HcH
 E0I;E
 E0I;G
 E0Lc`
-E3X84
 E79~,
 E8$6u
 E8$9u
@@ -6905,6 +6917,7 @@ E>nEA
 E?*9N
 E@y=TVH
 EH*?H
+EHI9t
 EHLEpBD
 EHRSDSD
 EL$0H
@@ -7320,6 +7333,7 @@ GetNameFromOSType
 GetOEMCP
 GetObjectA
 GetPerfSortedLogicalProcessors
+GetPerformanceAndEfficiencyCoreCount
 GetPlatformName
 GetPriorityClass
 GetProcAddress
@@ -7362,6 +7376,7 @@ GetTypeInfo( nType ).m_nSizeInBytes <= sizeof( s_pUndefinedValue )
 GetUserDefaultLCID
 GetUserDefaultLocaleName
 GetUserNameA
+GetVendorRecommendedThreadPoolCountIncludingMainThread
 GetWin32ConsoleCursorColumnIndex
 GetWindowLongA
 GetWindowLongPtrA
@@ -7413,6 +7428,7 @@ H(VVH
 H)C`D
 H)\$PH+
 H*0"ZOW
+H+5U|
 H+BhH
 H+BhI
 H+ChH
@@ -7439,13 +7455,14 @@ H3L$HH3
 H3l$hH3
 H9(tO
 H9+u^
-H9-499
-H9-AE)
-H9-E89
-H9-L )
+H9-8:'
+H9-TI9
+H9-[+2
+H9-eH9
 H9.ub
 H9/uMH
 H90t]
+H95BX(
 H97u+A
 H98t2
 H98t7
@@ -7453,8 +7470,9 @@ H98tCH
 H98t^
 H98ta
 H99tKH
-H9=J&9
-H9=w!*
+H9=c1*
+H9=g{)
+H9=j69
 H9>u+H
 H9A u
 H9BHtW
@@ -7505,8 +7523,6 @@ H9{ptd
 H9|$ u
 H9}xs	
 H;.t^
-H;5/v"
-H;5Ty"
 H;8thH
 H;9tcH
 H;9vb
@@ -7596,17 +7612,15 @@ HA_A^_]
 HA_A^_^][
 HA_^][
 HA__^]
-HD;=k
 HDUUUU
+HEAP WARNING: memory block at %p appears to be corrupt
 HEAP WARNING: memory block at %p is unexpectedly allocated
 HEAP WARNING: memory block at %p is unexpectedly free
 HEAP WARNING: memory block at %p is unexpectedly unrecognized
-HEAP WARNING: memory pointer %p is invalid
 HFfA9	rX
 HFfD;
 HH:MM:SS.z
 HH:mm:ss
-HHc=I
 HIGHDPI
 H[><y5
 H_^][
@@ -7614,12 +7628,11 @@ HammerMapLoader001
 HandleAsStringFailure
 HasExpandedResources
 Hc+;k
-Hc-GN
 Hc3;s
-Hc58b5
 Hc7;w
 Hc;9E0t
 Hc<8H
+Hc=S9(
 Hc>;~
 Hc?A;
 HcAdL
@@ -7643,6 +7656,7 @@ HcD$PH
 HcD$`;
 HcD$`H
 HcD$`H;
+HcD$`L
 HcD$hH;
 HcD$hI;
 HcD$lI;
@@ -7858,7 +7872,6 @@ IEEE 754r decimal floating point (64 bits)
 IEEE 754r half-precision floating point (16 bits)
 IGraphMotionItem
 IIDFromString
-IIc?I
 IJumpHelperAnimNode
 IKChain
 IKChainOld
@@ -8489,7 +8502,6 @@ L$xI+
 L$xf;
 L$xfD
 L$|E3
-L+5Y*&
 L+CpA
 L+t$pH;T$pL
 L+|$pH;T$pL
@@ -8499,17 +8511,19 @@ L9	t(
 L9	t5
 L9#t!H
 L9#u+H
-L9%h9'
+L9%;d'
+L9%GI'
+L9%bj+
+L9%hF'
 L9&ua
-L9-nW+
-L9-uC'
 L940u)H
-L95A#(
-L95C})
-L95a[5
+L95$H9
+L95'K(
+L95Zq'
+L95b^5
 L9<*u
-L9=fI'
-L9=uL'
+L9=3<'
+L9=fW'
 L9>ua
 L9@ s
 L9B8u
@@ -8539,9 +8553,6 @@ L9wxt
 L9|$xD
 L9~(u^
 L:TLcD:XI
-L;5)D"
-L;=Zp'
-L;=^o'
 L;@ A
 L;@ v
 L;B r
@@ -8896,6 +8907,7 @@ Multiple statement lists
 MurmurHash3_32
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 Mutex Should have protected use while processing
+Mwfff
 M{ D;K$
 N < nFrames
 N&B:H
@@ -9025,6 +9037,7 @@ P I;Q I
 P I;S I
 P Lcs
 P(H9t$@u
+P(YXPs4
 P(tOL
 P0HcK
 P0L9sh
@@ -9127,7 +9140,7 @@ PF_TYPE_PARTICLE_SPEED
 PF_TYPE_RANDOM_BIASED
 PF_TYPE_RANDOM_UNIFORM
 PH;|$H
-PHc=.|:
+PHc=N
 PM_TYPE_CONTROL_POINT
 POLISH
 PORTUGUESE
@@ -9867,6 +9880,7 @@ STMID_WINDOWS_PDB70_GUID
 STRING
 STUB_GetStatStructName
 SUATH
+SUAUAVH
 SUAUAWH
 SUAUH
 SUAVAWH
@@ -10491,6 +10505,7 @@ TrimRight
 Truncated data
 TryAcquireSRWLockExclusive
 TryEnterCriticalSection
+Ttf7_J
 Tuesday
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
@@ -10837,6 +10852,7 @@ VWAUAVH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 V_:X1:
 V_AbbreviatePathInPlace
 V_AddBackSlashesToSpecialChars
@@ -11253,14 +11269,13 @@ Vtube
 W(D8|
 W(H9o
 W(fA;
+W)lQ(84
 W*fA;
 W,+L$
 W,CiT(
 W/q#IX
 W0H;W8
-W5&.4
-W5:Z4
-W5j'4
+W5:(4
 WARNING: %s Denied a request to load '%s'
 WARNING: Command buffer full... ignoring!
 WARNING: Command too long... ignoring!
@@ -11400,13 +11415,14 @@ XXXXXX: found leading plus sign while parsing string '%s' as float64, ignoring i
 X_^][
 Xi#/H
 Y	rH5
+Y5"D#
 Y8+Y(
 Y9"SD
+Y=Ek.
 Y>kX>
 Y>kX>M
 YD$@f
 YD$hf
-Yi5f,
 You should do this for any new assertions you see. (Distinguished by "Location" and "Assert" above)
 Z* ,	
 Z.xgU
@@ -11417,6 +11433,7 @@ Z\>z8
 ZdN=Y
 Zf?FO
 Zod(^?
+Zvpcf1
 ZwSetTimerResolution
 [   func+child         func ]
 [   func+child       func ]
@@ -11490,9 +11507,11 @@ ZwSetTimerResolution
 \$,E3
 \$,E;
 \$,I;
-\$095k	:
+\$095
 \$09=
 \$09="
+\$09=+F'
+\$09=B
 \$0@2
 \$0A#
 \$0A+
@@ -11521,7 +11540,7 @@ ZwSetTimerResolution
 \$8fD
 \$8tYA;
 \$8u3L
-\$@9=2
+\$@9=
 \$@9A
 \$@A+
 \$@E+
@@ -11621,7 +11640,7 @@ ZwSetTimerResolution
 ]g+N$L
 ^(H9k
 ^,tyI
-^5,^5
+^5Q3*
 ^8U)zj
 ^<V7w
 ^>&qN
@@ -11722,8 +11741,8 @@ _oD>Kg
 _p&&<Y.
 _root_keyname
 _test_conversion_counter
+_u/E2
 _u1E8^
-_u7E2
 _u98K
 _wWT+
 ` UAVAWH
@@ -12058,7 +12077,6 @@ coroutine.m_pStackHigh <= coroutinePrev.m_pStackHigh
 corrupted entry
 count >= 0
 covariant virtual thunk to 
-cq>\fT
 crash
 create
 create_particle
@@ -12131,6 +12149,7 @@ d$pE3
 d$xE3
 d$xM;
 d-&_I
+d30`@
 d?000000`?
 damage
 darwin
@@ -12361,8 +12380,8 @@ fC94wu
 fC;DA
 fC;DB
 fC;DH
-fD)%7
-fD)%L
+fD)%W(9
+fD)%l"9
 fD9	t(L
 fD9 t
 fD9!H
@@ -12531,6 +12550,8 @@ hA]A\_^
 hA]_^]
 hA^A\_^][
 hA^A]A\_^]
+hA^A]][
+hA^A]][H
 hA^_^[
 hA_A\_^][
 hA_A^A\_
@@ -12548,7 +12569,6 @@ hEntityNPC
 hEntityTarget
 hTarget
 hThread
-h^7wI
 h_^[]
 handindex
 hashlen <= 32
@@ -12660,7 +12680,6 @@ is_ragdoll
 item->next != nullptr
 iu+-,
 iygE3
-iz;R.
 j>>A?1
 j?V()
 j?{$*
@@ -12791,7 +12810,7 @@ l$xH+
 l2|X/gGe
 l6qnk
 l<}2l
-l=!084
+l=!@84
 lR(g 
 large
 last_sniff
@@ -13575,7 +13594,6 @@ n,CiT(
 n03>Pu
 n<	fE
 n<	fG
-n<!-- schema 
 n>log2
 nActualAllocSize <= UINT_MAX
 nActualWritten != 0
@@ -13606,6 +13624,7 @@ nDataSize < CONVAR_DATA_BLOCK_SIZE
 nDelegateParamCount < (1 << EventListenerInfo_t::PARAMETER_COUNT_BITS)
 nDestSize == 0 || pDest != nullptr
 nDirectoryCount == 1
+nEfficiencyCoreCount < ci.m_nPhysicalProcessors
 nEltBytes == nOtherEltBytes
 nEnd > nStart
 nEntrySize <= UINT32_MAX
@@ -13777,7 +13796,6 @@ number is too big
 numbits >= 0 && numbits <= 32
 numchars >= 2
 numsegments
-o-JLX
 oA fD
 oD$ f
 oD$0f
@@ -14201,25 +14219,26 @@ rotation_vector
 rotation_xyz
 rq7x;P
 rqwvH
-rsH9=
+rsH9=O
 rsf;\$d
 rtree
 run_interval
 rvf;\$d
 ryf;\$l
 r|f;\$l
-r}H9-?
-r}H9=o
-r}L9%_
-r}L95
+r}H9-
+r}H9=
+r}L9%
+r}L95/
+r}L95o
 r}L9=
-r~H9-
+r~H9-7
 s @8~
 s AWH
 s WATAUAVAWH
 s WAVAWH
 s$fff
-s(uq@85s
+s(uq@85S
 s)HcC
 s,fff
 s0HcL$tH
@@ -14487,7 +14506,7 @@ t$PHc
 t$PL;
 t$PLc
 t$Pfff
-t$TL;='`'
+t$TL;=
 t$Tfff
 t$XA;
 t$XD+
@@ -14523,7 +14542,6 @@ t$hE+
 t$hE3
 t$hE;
 t$hH;
-t$hHcD$`L
 t$hLc
 t$hMce E
 t$hfA
@@ -14574,12 +14592,10 @@ t-H;C
 t-Lck
 t.L95
 t/Hc.;n
-t20R?
 t2Hc|$0;
-t3H9-F
-t3H9-`
+t3H9-
+t3H9-&
 t3H95
-t3H95!
 t3fff
 t4=UUU
 t4L;C
@@ -14597,11 +14613,10 @@ t;8_2t
 t;8_<t
 t;D8/t6
 t;H9-
-t;H9-z
 t;H;w@t5L
 t;LcF
 t<A8(t7H
-t<L9-
+t<L9-e
 t<fff
 t=D82t8H
 t?8_:t
@@ -14632,18 +14647,18 @@ tSE9<$t
 tSf91tNH
 tU;\$0tH
 tUA80tPI
-tUH95)
+tUH95
 tUfff
 tXfff
-tZH9=:
+tZH9=
 t\;4$vWC
 t\@8/tWE3
 t^@8/tYE3
-t_H9-
-t_H9-m
+t_H9-G*2
+t_H9-M
 t_H95
-t_H95)
-t_H95O
+t_H95	
+t_H955(2
 t_Hc]
 t`@87t[E3
 t`f9Q
@@ -14664,6 +14679,7 @@ tcache_nslots_small_max
 tcache_nslots_small_min
 tcache_stashed_bytes
 tcaches
+tcyPS
 tdI9>u
 te%\H
 telemetry32.dll
@@ -14677,7 +14693,7 @@ test_angles_relative
 testscript_debug
 text file busy
 texturescale
-tfL95P
+tfL95
 tfL9;u
 tfL9f
 tgfff
@@ -14726,11 +14742,11 @@ typeInfo.m_nSizeInBytes <= MAX_CONVAR_DATA_SIZE
 typeStr.IsEqual_CaseSensitive( "PVAL_EHANDLE" ) || typeStr.IsEqual_CaseSensitive( "PVAL_ENTITY_NAME" )
 u	8V(
 u	D8&
-u D85v#)
+u D85
 u!@8-
-u!@8-&
+u!@8-Z
 u!H9=
-u!H9=:
+u!H9=c
 u!H;C(w
 u!L9L$Pu
 u"HcM@H
@@ -14751,6 +14767,7 @@ u(L9k
 u)9k`tLH9kHu
 u)9nxtLH9n`u
 u)HcA<H
+u*;5#
 u*IcM A;
 u,!T$(H!T$ 
 u,AiT
@@ -14758,8 +14775,10 @@ u0HcE(H
 u1!D$0H
 u1@8;
 u1L9L$Pu*H
-u295J
-u295p
+u29-h*2
+u29-n
+u295*
+u295V(2
 u2fA;
 u2fE;
 u3HcH<H
@@ -14786,15 +14805,14 @@ u<Hc
 u<Hc5
 u<P/Y
 u<g~l<it[<ntP<ot,<pt
-u=9-#
-u=9-=
 u>L9L$Pu7L9L$Xu0L9L$`u)H
 u@Icu
-uCH;=
-uCL;5
+uC9-3-2
+uCH;=c
+uCL;5|
 uED8r(t
 uED9-
-uEH;5O
+uEH;5
 uHA9P
 uID8e
 uJ<0uF@
@@ -14804,14 +14822,14 @@ uRDZZ
 uSD8#
 uSD8;
 uUHcl$@A;
-uVHc=
-uWHc=
+uVHc=[e'
+uWHc==|'
 uWL9L$PuPL9L$XuIL9L$`uBD8	t
 uZEeu
 uZHcE
 u[L9L$PuTL9L$XuML9L$`uFH
 u^HcD$8H
-uc@8-
+uc@8-!
 uchar32
 ueHcL$HH
 uef9\8
@@ -14824,7 +14842,6 @@ uint32
 uint64
 uint8
 ujGs?
-uj~K[8
 ulVal < ( uint32 ) ( 1 << m_nBitCount )
 umD8'
 umHc=
@@ -14847,7 +14864,7 @@ unsigned long long
 unsigned short
 unspecified
 unwind_info
-uo@85j
+uo@85J
 uoIc<$I
 update
 uptime
@@ -14905,12 +14922,11 @@ virtual-table number doesn't end with '_'
 visualstudioautomation.exe -appverifier_setup %d
 visualstudioautomation.exe -attachtoprocessid %d
 vmdl;vmdl_prefab
-vmdlkeys1
+vmdlkeys0
 vmdlkeys2
 vmdlkeys3
 vmdlkeys4
 volatile
-vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -14995,10 +15011,10 @@ vtest
 vtune
 vtuneapi.dll
 vulkan
-vwL95
+vwL95Zf5
 v}`[>
 w!fff
-w"@85
+w"@85^
 w"fff
 w&Lc/H
 w&fA+
@@ -15098,9 +15114,8 @@ yE>cb
 y\PD>!
 yaw_end
 yaw_start
-ylCD^
 z,u<u
-z:K(%d)
+z:K(%d,%d)
 z<uZEeu
 z=u;H
 z>@G'h
@@ -15263,7 +15278,6 @@ zzzzzzzzI
 |$XH#
 |$XH;
 |$XHc
-|$XL;
 |$\A;
 |$\Hc
 |$` utD
@@ -15331,7 +15345,7 @@ zzzzzzzzI
 })f;C
 }0<}ts<:toL
 }1;C$
-}1@8-
+}1@8-Gl(
 }1f;C
 }4fff
 }6;s(u
@@ -15363,9 +15377,8 @@ zzzzzzzzI
 ~,*u<I
 ~,AiT
 ~0@8-
-~0@8-SX(
-~0@8-ab(
-~0@8-ck(
+~0@8-7h(
+~0@8-We(
 ~0Ic6D
 ~4fff
 ~<uZEeu

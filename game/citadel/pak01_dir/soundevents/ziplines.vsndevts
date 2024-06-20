@@ -173,13 +173,17 @@
 	Ability.ZipLine.Loop_Wind = 
 	{
 		base = "Base.World.3d.Zipline.Lp"
-		volume = -3.000000
-		spread_min = 250.000000
+		volume = -1.000000
+		spread_min = 0.000000
 		spread_max_value = 1.000000
 		spread_max = 500.000000
 		spread_min_value = 1.000000
-		vsnd_files = "sounds/world/zipline/wind_fast_lp.vsnd"
-		vsnd_duration = 15.815419
+		volume_fade_in = 0.800000
+		volume_fade_out = 1.400000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.100000
+		vsnd_files = "sounds/world/zipline/zipline_gust_loop.vsnd"
 	}
 	Ability.ZipLine.Loop_Energy = 
 	{

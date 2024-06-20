@@ -10,7 +10,6 @@
 	%02i%% (%i/%i)
 	%s at offset %d, 
 	V_fprintf
-	V_iswcntrl
 	V_towupper32
 	V_vsnprintf
 	Warning
@@ -26,6 +25,7 @@
 	g_pThreadPool
 	kE>fvw
 	wOIc
+ 	V_iswcntrl
      
                           
                      Cost
@@ -188,11 +188,12 @@
 !pStaticComboData->IsDynamicComboVariableDataCompact()
 !staticComboData.IsDynamicComboVariableDataCompact()
 !this->m_bBufferInstalled && this->m_nVertexIncrement == 0
+" @_\
 "%s" [%d][%d] has invalid vs input signature:
 "w3Hc
 #include
 #line
-$@8==b
+$@8=/b
 $A;\$
 $D;{(r
 $IcD$
@@ -232,15 +233,14 @@ $}2fA;w
 %s[line %d:%d] 
 %s__font_page_%d
 %s_intermediate_%d.vtex
+&#4Vh\(1	
 &YA1E
 &YA1H
 &YA1I
-'	V_log10f
 ', type<
 ',=?k
 'exists'
 'return'
-(	V_log2_uint
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
@@ -316,7 +316,7 @@ $}2fA;w
 )|$ A
 )|$`L
 )|$pE3
-*	V_log2f
+*	V_log10f
 *** %s "%s" in %s does not follow the 0..N format!
 *** %s "%s" in %s has max(%d) > 254!
 *** %s "%s" in %s has min(%d) < 0!
@@ -409,6 +409,7 @@ $}2fA;w
 *pLookForFileNameDelimiter == '>'
 *pLookForFileNameDelimiter == '\"'
 *pStartOfFileNameDelimiter == '\"'
++	V_log2_uint
 +C$Hc
 +C$Lc
 +D$tHc
@@ -423,13 +424,13 @@ $}2fA;w
 +h->|
 +mat_clearshadercache
 +o'q)}
-,	V_logf
 , <^A
 , GetFont used
 , LoadFont used
 , at <EOF>
 , at offset %d
 , near %s
+,!fh)
 ,$L9l$Xt
 ,$L9l$`t
 ,/<-w
@@ -437,6 +438,7 @@ $}2fA;w
 ,D$@A
 ,L$XL
 ,W5y+
+-	V_log2f
 -----
 ----------
 --------------------------------------------------
@@ -481,7 +483,7 @@ $}2fA;w
 .?AV?$CBaseAppSystem@VIPostProcessingSystem@@@@
 .?AV?$CBaseAppSystem@VITextLayout@@@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1??CompileComboAndGetVariables_DynamicShaderCompile@@YA_NAEAV?$CUtlVector@UDynamicShaderCompileTask_t@@HV?$CUtlMemory@UDynamicShaderCompileTask_t@@H@@@@P6AXHH@Z@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??CompileAllShadersForStaticCombo@@YA_N_KAEAVCVfxStaticComboData@@AEAVCVfx@@W4VfxProgram_t@@PEAVIVfx@@@Z@@@YAXHHPEBDV1?1??CompileAllShadersForStaticCombo@@YA_N_KAEAVCVfxStaticComboData@@AEAVCVfx@@W4VfxProgram_t@@PEAVIVfx@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??CompileAllShadersForStaticCombo@@YA_N_KAEAVCVfxStaticComboData@@AEAVCVfx@@W4VfxProgram_t@@PEAVIVfx@@@Z@@@YAXHHPEBD$$QEAV1?1??CompileAllShadersForStaticCombo@@YA_N_KAEAVCVfxStaticComboData@@AEAVCVfx@@W4VfxProgram_t@@PEAVIVfx@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CTier0AppSystem@VIFontManager@@$0A@@@
 .?AV?$CTier0AppSystem@VIMaterialSystem2@@$0A@@@
 .?AV?$CTier0AppSystem@VIMaterialSystem2Utils@@$0A@@@
@@ -630,6 +632,7 @@ $}2fA;w
 .xdata
 .xdata$x
 .|08z
+/	V_logf
 // %s - %s
 // Dynamic Shader Compile Enabled
 // Reloading all shaders -----------------------------------------------------
@@ -679,7 +682,7 @@ $}2fA;w
 220323000000Z
 220801000000Z
 230714000000Z
-240613154258Z0/
+240620161259Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -702,17 +705,14 @@ $}2fA;w
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
-5kjqN
 6*f(_
 69B(u(
 6;F(r
 6I]Dc
 6OB,n_
 6YA1H
-7	V_powd
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8A]A\_^
 8A][H
 8A_A]
@@ -723,7 +723,6 @@ $}2fA;w
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8L$`t
-9	V_qsort
 9"u3H
 9)~P3
 93~sH
@@ -750,8 +749,9 @@ $}2fA;w
 9|$Pu
 9|$hu
 9~0~-H
-:	V_qsort_s
+:	V_powd
 : lexer error %d :
+;	V_powf
 ;;w(r
 ;B8T	dH
 ;B@|8
@@ -764,6 +764,7 @@ $}2fA;w
 ;T$p}1H
 ;\$hu
 ;t$hu
+<	V_qsort
 <	u2H
 <	u8H
 < t=<	t9
@@ -799,7 +800,7 @@ $}2fA;w
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 =	 ();,
-=K>WK0
+=	V_qsort_s
 =SBMSugH
 =imb;D
 =rIQU
@@ -950,11 +951,12 @@ $}2fA;w
 @.data
 @.reloc
 @8,7u
-@8-BU
+@8-"U
 @84)u
-@85.Z
+@85dX
 @8;te3
 @8<(u
+@8=yb
 @8j(t
 @8k(t
 @8l$H
@@ -2002,7 +2004,6 @@ Currently only DXT5 GPU compression supported.
 Custom font '%s' is already registered, ignoring new registration '%s' range %d - %d
 Custom font file '%s' should be assocated with a font name, will be ignored on Linux and Mac
 Cx@u1H
-D	V_sincosf
 D!l$xA
 D$ -v
 D$ 5J
@@ -2113,16 +2114,16 @@ D3D Semantic Name: "%s"
 D4 H9C
 D7 fB
 D7*f9kBu
-D8%+U
-D8%TW
+D8%4W
 D8&ta3
 D8*tt
 D80uQE3
 D81uUL9r
 D840u
 D87th3
-D8=t[
-D8=zY
+D8=T[
+D8=ZY
+D8=z\
 D8t$Q
 D8t$ht
 D9 ~BI
@@ -2284,7 +2285,6 @@ ExtTextOutW
 ExternalDescSet
 ExternalNameForInternalType
 Extraneous token
-F	V_sinf
 F 8C 
 F ;F0|
 F A8D
@@ -2337,6 +2337,7 @@ Found existing value when inserting into tree - replacing existing value with ne
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+G	V_sincosf
 G 8C 
 G(knN
 G8L9!t
@@ -2454,10 +2455,12 @@ H#D$`H
 H-^Eu
 H9(tO
 H9+t	H
-H9-gm
+H9-7m
+H9-Rm
+H9-ol
 H93t7H
 H93tkH
-H95Wr
+H95'r
 H97u+A
 H98t2
 H98t7
@@ -2465,6 +2468,7 @@ H9=&r
 H9A(u
 H9M(u)
 H9T$Hu+
+H9h(^
 H9l$ht
 H9q t
 H9q tE@
@@ -2548,7 +2552,7 @@ Hc{pHc
 HelpSystem_001
 HorizJustification_e
 HostStateMgr001
-I	V_snprintf
+I	V_sinf
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
 I,;J,u/E
@@ -2560,6 +2564,7 @@ I9.tR
 I94	u@Nc\
 I9l$ 
 ID9|$Tt
+IK1"%
 IKV3TransferInterface_ResourceLoad
 IMAGE_FORMAT_IMC2
 IMAGE_FORMAT_NV12
@@ -2639,6 +2644,7 @@ IsValidIndex( i )
 IsValidIndex(elem)
 IsValidIndex(elem) && IndexInRange( elem )
 IsValidIndex(i) && (i != InvalidIndex())
+J%y?H{z
 J>@G_
 JHHc]oA
 January
@@ -2683,6 +2689,7 @@ KeyValues3::TransferOwnershipOfBinaryBlob
 KeyValuesSystem
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!|$(L!
 L$ E3
 L$ I;
@@ -2763,16 +2770,15 @@ L20Hc
 L7*fD
 L9#u/H
 L9+t	H
-L9-)x
-L9-Dx
-L9-lw
+L9-<w
 L93t	H
 L93tJA
+L95n,
 L9;t	H
-L9=.C
-L9=IC
-L9=ls
-L9=pB
+L9=<s
+L9=@B
+L9=Ws
+L9=kr
 L9?t	H
 L9c u
 L9d$(t
@@ -3003,7 +3009,6 @@ No valid vcs file found for shader %s
 NoZPrepass
 Not safe to 'new' this class due to alignment requirements
 November
-O	V_sscanf
 O8HcB
 OCTAL_ESC
 October
@@ -3120,6 +3125,7 @@ PropertyEditorSystem_001
 Pz}b!
 Q$HcA
 QueryPerformanceCounter
+R	V_sscanf
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -3327,7 +3333,6 @@ StatsService_001
 SteamAudio001
 Sunday
 SupportsMappingDimensions
-T	V_stricmp_fast
 T$ D9
 T$ E3
 T$ Hc
@@ -3367,6 +3372,7 @@ T$xD8u
 T$xE3
 T$xE;
 T$xf;W
+T&C9T
 TANGENT
 TEXCOORD
 TUUUU
@@ -3537,6 +3543,7 @@ VWAUAVAWH
 VWAUAVH
 VWAVH
 VWAWH
+VWebm001
 V_DoubleToString_Unsafe
 V_FloatToString_Unsafe
 V_GetFileExtension
@@ -3621,6 +3628,7 @@ VisBuilder_001
 Visualize overdraw
 Visualize shading complexity
 Vrad3_001
+W	V_stricmp_fast
 W0]7L
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
@@ -3641,7 +3649,6 @@ WriteConsoleW
 WriteFile
 Wrong number of args left on stack (%i args, wanted %i)!
 Wrong number of args left on stack!
-X	V_strspn
 XA;ML|
 XA_A]_^][
 XD$LH
@@ -3654,6 +3661,7 @@ YL$XH
 YT$XH
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 Yt$@Hc
+[	V_strspn
 [ VAVAWH
 [ mat_print_material_info ] Error! Cannot find material '%s'!
 [Dynamic shader compile] Reloading %d material(s)
@@ -3711,7 +3719,6 @@ Yt$@Hc
 \$xA;
 \0bf;
 \error.vmat
-]	V_strtoui64
 ] ;]$t
 ] A;],}
 ](A8~8t
@@ -3759,6 +3766,7 @@ _copy%u
 _feature
 _gUT^
 _psrs
+`	V_strtoui64
 `.rdata
 `A]A\_
 `A^_^
@@ -3804,7 +3812,6 @@ _psrs
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 address family not supported
@@ -3902,6 +3909,7 @@ cs_5_0
 cs_6_0
 ctx.m_pVariableIndexToParamIndex[nVarIndex] < ctx.m_nNumAllParams
 curPos.IsValid()
+d	V_tanf
 d$ L9c
 d$ UAVAWH
 d$(Hc
@@ -4267,6 +4275,7 @@ log10
 looks like this:
 loop != 99
 lr.type != VFX_STATIC_COMBO_LOAD_REQUEST_FAILED
+m'pIa<
 m0k0$
 m9kp~^
 mL+7H
@@ -4636,7 +4645,6 @@ purecall
 q Lc7
 qangle
 quaternion
-qxwR3
 r	Vr.>T
 radians
 random
@@ -4811,7 +4819,6 @@ t$`E3
 t$`L#
 t$`M+
 t$`f;
-t$hAi
 t$hHc
 t$h}[H
 t$lE3
@@ -5052,6 +5059,7 @@ z(f9z*t
 |$`I+
 |$`fA;l$
 |$`}[H
+|$hAi
 |$pHcG
 |$x1E
 |$xE3

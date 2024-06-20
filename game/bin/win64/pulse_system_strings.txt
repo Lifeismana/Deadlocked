@@ -5,6 +5,7 @@
 	!s99
 	%.*s
 	%s at offset %d, 
+	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_isnand
@@ -133,6 +134,7 @@
 !pOutStr->IsEmpty()
 "?IsExternal@Value@v8@@QEBA_NXZ
 "?IsFunction@Value@v8@@QEBA_NXZ
+"J5+'
 %?IsObject@Value@v8@@QEBA_NXZ
 %d %d %d
 %d %d %d %d
@@ -191,6 +193,7 @@
 (A_A\^[
 (A_A\_^][
 (A_A]A\_
+(A_A^A\_
 (A_A^A]A\_^][
 (A_A^_^][
 (D$ H
@@ -485,6 +488,7 @@
 0A_A^_^]
 0A__]
 0IcG(L
+0[(.V
 0iN>/
 0w0c1
 0}0i1
@@ -496,7 +500,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240613154219Z0/
+240620161234Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -525,13 +529,11 @@
 6*f(_
 6?Resolve@Resolver@Promise@v8@@QEAA?AV?$Maybe@_N@3@V?$Local@VContext@v8@@@3@V?$Local@VValue@v8@@@3@@Z
 6I]Dc
-6M:pX
 6OB,n_
 70503
 7?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@IV?$Local@VValue@v8@@@2@@Z
 7?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8/t[H
 8?SetInternalField@Object@v8@@QEAAXHV?$Local@VValue@v8@@@2@@Z
 8?SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
@@ -562,8 +564,8 @@
 9|$`u
 9|$hu
 9~0~@H
-:	V_qsort_s
 : lexer error %d :
+;	V_powf
 ;.|@H
 ;G(uSL
 ;H9>&X
@@ -597,6 +599,7 @@
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
+=	V_qsort_s
 =-?New@Context@v8@@SA?AV?$Local@VContext@v8@@@2@PEAVIsolate@2@PEAVExtensionConfiguration@2@V?$MaybeLocal@VObjectTemplate@v8@@@2@V?$MaybeLocal@VValue@v8@@@2@UDeserializeInternalFieldsCallback@2@PEAVMicrotaskQueue@2@@Z
 =9?SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
 == PulseGraphDef ==
@@ -796,6 +799,7 @@
 @VWAVH
 @WATAUAVH
 @WATAUAWH
+@WATAVAWH
 @WATAVH
 @WATH
 @WAUAVH
@@ -828,7 +832,6 @@ ATAVH
 ATAWH
 AUAVAWH
 AUAVH
-AUlTw
 AVAWH
 AXHcIPL
 A\_][
@@ -913,7 +916,6 @@ Attempting to re-init an instance in domain %s with script %s.
 Attempting to re-register a callback for hook %s.
 August
 B ?Int32Value@Value@v8@@QEBA?AV?$Maybe@H@2@V?$Local@VContext@v8@@@2@@Z
-B#KZ0
 B(I9A(
 BACKSLASH_CHAR
 BC?>6t9^	c:>
@@ -1747,6 +1749,8 @@ CUtlMemory<class CBasePulseGraphInstance *,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CBasePulseGraphInstance *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CGenericExprPart *,int>::Grow
 CUtlMemory<class CGenericExprPart *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CGlobalSymbol,int>::Grow
+CUtlMemory<class CGlobalSymbol,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CPulseBreakpointInstance *,int>::Grow
 CUtlMemory<class CPulseBreakpointInstance *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CPulseCell_Base *,int>::Grow
@@ -1901,7 +1905,7 @@ CUtlMemory_RawAllocator<unsigned int>::Grow
 CUtlOrderedMap
 CUtlOrderedMap<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::FindElement
 CUtlQueue<int,class CUtlMemory<int,int> >::Count
-CUtlQueue<int,class CUtlMemory<int,int> >::RemoveAtHead
+CUtlQueue<int,class CUtlMemory<int,int> >::RemoveAtHead::<lambda_1>::operator ()
 CUtlRBTree overflow with %u elements!
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,class CBasePulseGraphInstance *,class CDefLess<class CUtlSymbolLarge>,int>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,class CBasePulseGraphInstance *,class CDefLess<class CUtlSymbolLarge>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,class CBasePulseGraphInstance *,class CDefLess<class CUtlSymbolLarge>,int>::Node_t,int>,int> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,class CBasePulseGraphInstance *,class CDefLess<class CUtlSymbolLarge>,int>::Node_t,class CUtlOrderedMapBase<class CUtlSymbolLarge,class CBasePulseGraphInstance *,class CDefLess<class CUtlSymbolLarge>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbolLarge,class CBasePulseGraphInstance *,class CDefLess<class CUtlSymbolLarge>,int>::Node_t,int>,int> >::NewNode
@@ -1994,7 +1998,8 @@ Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of res
 Cursor[ ptr:%p | id:%d | graph:%p ]: Register observer:%d
 Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d
 Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d
-D	V_sincosf
+CvCMC
+D!?5U
 D!l$xA
 D$ -#
 D$ 2Q
@@ -2089,7 +2094,6 @@ D0?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
 D8$2u
 D81uUL9r
 D8<>u
-D8=z8
 D8e@u
 D8t$ht
 D9H$t
@@ -2101,7 +2105,6 @@ D9g8~6M
 D9m@t
 D9t$Pu
 D9y ~1H
-D;C4u
 DATAH
 DIGIT
 DIV_FLOAT
@@ -2147,13 +2150,13 @@ Do not stop the current yielding node, but do not continue to the next node afte
 Domain: %s
 Double add of KV3Transfer interface '%s'
 Double-save to Member '%s'
-E	V_sind
 E0HcH
 E0Lc`
 E8f;X
 E8q(u
 E9e u	H
 E9e ~GI
+EF)RO
 EH*?H
 EHHcI
 ENTITY_NAME
@@ -2348,6 +2351,7 @@ Func( %s )
 Function signature which has been replaced after compilation.
 Function signature which will be replaced after compilation.
 Functions not supported in this evaluator (%s)
+G	V_sincosf
 G ;G$t
 G fA;
 GD$(H
@@ -2384,6 +2388,7 @@ G\$(L
 G\$8H
 G\$8L
 G\$HA
+G\$hL
 G\$xH
 Game Blackboards: 
 GameResourceServiceClientV001
@@ -2474,6 +2479,7 @@ G|$8E3
 G|$8H
 G|$HH
 G|$XA
+H	V_sind
 H!D$ I
 H!T$0D
 H#D$HH+
@@ -2521,6 +2527,7 @@ HandleInt
 HandleIntDerived
 HandleJSException
 HardCancel
+Hc/;o
 Hc3;s
 Hc7Lc9
 Hc;;{
@@ -2548,6 +2555,7 @@ HcN H
 HcO H
 HcQ<H
 HcS H
+HcS03
 HcW H
 Hc]HA
 Hc^$A
@@ -2561,7 +2569,6 @@ HelpSystem_001
 Hook register '%s' invoked with invalid function as first paramter.
 Hook register '%s' invoked with unrecognized 'this' value.
 HostStateMgr001
-I	V_snprintf
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
 ID_CHAR
@@ -2802,6 +2809,7 @@ Kill elegantly.
 Kill immediately.
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!|$(L!
 L$ E3
 L$ H;
@@ -2881,7 +2889,6 @@ Lc6D;v
 Lc7D;w
 Lc>D;~
 LcA<E3
-LcC0E3
 LcG H
 LcK(H
 LcK0H
@@ -3024,7 +3031,6 @@ Msg invoked with unrecognized 'this' value.
 Mul R%d <- R%d * R%d
 MultiByteToWideChar
 Must call SetMetadataEnabled on the root KV3 context to track metadata
-N(h]~
 NEGATE
 NEGATE_FLOAT
 NEGATE_INT
@@ -3090,6 +3096,7 @@ Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
 P 9_h
+P0m!3OM
 P;l$h
 PANEL_ID
 PA^A]A\_^[]
@@ -3312,6 +3319,7 @@ PulseValueTypeInfo_t<16>::KV3TransferSaveInstance::<lambda_2>::operator ()
 PulseValueType_t
 PulseWarningLog 
 Pz}b!
+Qn\5Z
 QueryPerformanceCounter
 QxH9\$ u
 R%d->%s
@@ -3322,6 +3330,7 @@ REQUIREMENT_RESULT
 RESOURCE_TYPE_PULSE_GRAPH_DEF
 RETURN_VALUE
 RETURN_VOID
+RZ9-2v@9
 Raise pen.
 RaiseException
 Random Integer
@@ -3342,6 +3351,7 @@ Reinterpret Instance %s R%d <- %s R%d
 Release
 Remove Tag From Cursor
 Remove the given tag from this cursor. If other cursors are waiting on us, they will resume.
+RemoveAtHead( temp )
 RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
@@ -3642,7 +3652,6 @@ Sub R%d <- R%d - R%d
 Succeeded
 Sunday
 Synchronous - wait for the method to fully complete before returning
-T	V_stricmp_fast
 T$ E3
 T$ H;
 T$ Hc
@@ -3669,15 +3678,15 @@ Tag Cursor
 Terminate()
 TerminateProcess
 TernaryConditional
-Test Compiled Params_ After Type Changes
-Test Compiled Params_ Before Type Changes
+Test Compiled Params  After Type Changes
+Test Compiled Params  Before Type Changes
 Test Domain
 Test Handle
 Test Mode Assert True
-Test Optional Parameters_ After Defaults Added
-Test Optional Parameters_ After Reorder Sparse Defaults
-Test Optional Parameters_ Before Defaults Added
-Test Optional Parameters_ Before Reorder Sparse Defaults
+Test Optional Parameters  After Defaults Added
+Test Optional Parameters  After Reorder Sparse Defaults
+Test Optional Parameters  Before Defaults Added
+Test Optional Parameters  Before Reorder Sparse Defaults
 Test functions for the derived test domain.
 Test node that just generates the integer 50. Nothing to see here!
 Test node that picks between two outflows as specified in the test domain.
@@ -3719,7 +3728,6 @@ UNKNOWN
 UNRECOGNIZED
 USATAUH
 USAVH
-USAWH
 USVAUI
 USVWATAUAVAWH
 USVWATAUAVH
@@ -3816,6 +3824,7 @@ VWATAVAWH
 VWAUAWH
 VWAVH
 VWAWH
+VWebm001
 V_AppearsToBeANumber
 V_DoubleToString_Unsafe
 V_FloatToString_Unsafe
@@ -3851,7 +3860,6 @@ V_atofloat32
 V_atoi
 V_cosd
 V_fmodd
-V_fmodf
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -3866,6 +3874,7 @@ Vector2D
 Vector3
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WATAUAVAWH
 WAUAVH
@@ -3885,7 +3894,6 @@ WorldRendererMgr001
 WriteConsoleW
 WriteFile
 X to the Y power
-X!'<v~K
 XA]A\^[
 XHcGPM
 Y9"SD
@@ -3949,7 +3957,9 @@ Z!?IsArray@Value@v8@@QEBA_NXZ
 \$`E3
 \$hHc
 \$xu3M
+\;+c-
 \??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
+\Npz_
 \T$,t
 \T$<t
 \T$Dt
@@ -4247,6 +4257,7 @@ jj@0HK4
 k0i0$
 l$ ATAVAWH
 l$ AVH
+l$ E3
 l$ HcA
 l$ Lci
 l$ VH
@@ -4428,7 +4439,6 @@ m_hBlackboardResource
 m_hCursor
 m_hGraph
 m_hObserver
-m_head != QUEUE_ITERATOR_INVALID
 m_mapCellDesc
 m_mapCursorDesc
 m_mapDefToPersistentInfo[ h ] == pInfo
@@ -5003,7 +5013,6 @@ y\PD>!
 |$@L;
 |$@t!H
 |$@t#
-|$@uN
 |$@~ H
 |$HE3
 |$HLcT$XA

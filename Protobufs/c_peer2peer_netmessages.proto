@@ -76,6 +76,7 @@ message CMsgFightingGame_GameData_CharacterSelect {
 	optional uint32 selected_hero_id = 2;
 	optional uint32 selected_style = 3;
 	repeated uint32 econ_item_refs = 4;
+	optional int64 message_ack = 5;
 }
 
 message CMsgFightingGame_GameData_Loaded {

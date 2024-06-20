@@ -21,6 +21,7 @@
 	?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 	?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
 	E;FtE
+	V_fmodf
 	V_fpclassifyd
 	V_isnand
 	Warning
@@ -117,7 +118,6 @@
  tDE3
  {NO ELEMENT}
  | %s
-!5IC!
 !>6'Y
 !?triggered@QAction@@QEAAX_N@Z
 !?unsetCursor@QWidget@@QEAAXXZ
@@ -207,7 +207,6 @@
 $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 $Ib?s
 $[?setRange@QDoubleValidator@@UEAAXNNH@Z
-${*DY
 % ?timerEvent@QMenu@@MEAAXPEAVQTimerEvent@@@Z
 %1	%2
 %1 -> %2 (%3)
@@ -285,7 +284,6 @@ ${*DY
 &YA1E
 &YA1H
 &YA1L
-'	V_log10f
 ',=?k
 ( %1, %2 )
 ( %1, %2, %3, %4% )
@@ -452,6 +450,7 @@ ${*DY
 )|$`H
 )|$pA
 )|B?d!
+*	V_log10f
 * ?timerEvent@QTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 * ForceRescanOfActiveKeys
 * Rehandling active codes
@@ -469,7 +468,6 @@ ${*DY
 +	?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
 +"?updateGeometries@QListView@@MEAAXXZ
-+*59C
 +CDA+
 +H;;H
 +H;;u
@@ -481,6 +479,7 @@ ${*DY
 +f)>0'
 +h->|
 +o'q)}
++w$uO
 , ?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 , alpha: 
 ,"?updateGeometries@QTableView@@MEAAXXZ
@@ -586,6 +585,7 @@ ${*DY
 .?AV?$CDynamicWidgetFactory_Custom@VQToolBar@@@@
 .?AV?$CDynamicWidgetFactory_Custom@VQToolButton@@@@
 .?AV?$CDynamicWidgetFactory_Orientation@VQHeaderView@@@@
+.?AV?$CDynamicWidgetFactory_Orientation@VQSplitter@@@@
 .?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_CurveEditor@@@@
 .?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_Gradient@@@@
 .?AV?$CPropertyAttributeEditorFactoryBase@VCQAttributeEditor_ImageAbsPathBrowse@@@@
@@ -957,7 +957,6 @@ ${*DY
 />58d%
 /YA1H
 /]?size@QImage@@QEBA?AVQSize@@XZ
-0	V_modfd
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -1231,7 +1230,7 @@ ${*DY
 220801000000Z
 2222<<
 230714000000Z
-240613154255Z0/
+240620161447Z0/
 241009235959Z0a1
 2AttributeFilterChanged()
 2CalcValueAdded(double)
@@ -1292,6 +1291,7 @@ ${*DY
 2triggered()
 2valueChanged(double)
 2valueChanged(int)
+3	V_modfd
 3 == TestToken_t( &testTable, "grandparent.parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child.grandchild" ), WILDCARD )
 3 == TestToken_t( &testTable, "parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child.grandchild" ), WILDCARD )
 3 == TestToken_t( &testTable, "parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "parent.child.grandchild" ), WILDCARD )
@@ -1313,11 +1313,9 @@ ${*DY
 6I]Dc
 6OB,n_
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
-7	V_powd
 70503
 7<.uf
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8/t[H
 80uWfff
 8<.ud
@@ -1340,13 +1338,13 @@ ${*DY
 8O8u'H
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
 8ke?;
-9	V_qsort
 9)~P3
 9/~cH
 98t H
 99~CE
 99~tH
 99~yH
+9>\c;
 9>powf
 9>~ZH
 9Att3H
@@ -1374,10 +1372,12 @@ ${*DY
 9|$@~4H
 9|$hu
 9~h~t3
-:	V_qsort_s
+:	V_powd
 : Add
 :>)*	v
 :>t6k'
+:vkHs
+;	V_powf
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;H9>&X
@@ -1393,6 +1393,7 @@ ${*DY
 ;|$0|
 ;|$@|
 ;|$@~
+<	V_qsort
 <	u2H
 <	u8H
 <	u\L
@@ -1420,13 +1421,13 @@ ${*DY
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
 >Icn 
 >Mp$d
 >jtm}S
-?	V_roundf
 ?!5WOo
 ?+>^m
 ?333333
@@ -3454,6 +3455,7 @@ AssetSystemTest001
 Attempting to register the command %s for context %s multiple times
 AttributeFilterChanged
 August
+B	V_roundf
 B(I9A(
 BC?>6t9^	c:>
 BF>^G
@@ -4262,7 +4264,6 @@ D8 ulH
 D8 uzH
 D8,8u
 D81uUL9r
-D85Bj
 D8<>u
 D8AHH
 D8L$0u`
@@ -4360,6 +4361,7 @@ E9&~|I
 E9g t@
 E9g tI
 E;t$(|
+E<c>w
 E>nEA
 E@HcX
 EH*?H
@@ -4629,7 +4631,6 @@ HandleAsStringFailure
 HandleFilterChanged
 HandleViewportResize
 Hc+;k
-Hc-dR
 Hc/;o
 Hc7;w
 Hc:LcyHD
@@ -5084,7 +5085,6 @@ NumEnter
 NumMul
 NumSub
 NumToggle
-O	V_sscanf
 O JcD/
 O8HcB
 O?initPainter@QPaintDevice@@MEBAXPEAVQPainter@@@Z
@@ -5201,6 +5201,7 @@ PA_A^A]A\_^]
 PA_A^_^]H
 PA__^[]
 PAq=?Mp#
+PG=E.
 PPL9l$pt
 PanoramaTextServices001
 PanoramaUIClient001
@@ -5295,6 +5296,8 @@ QScrollArea
 QScrollBar
 QSlider
 QSpinBox
+QSplitterHorizontal
+QSplitterVertical
 QTabWidget
 QTableWidget
 QTextBrowser
@@ -5314,6 +5317,7 @@ Qt5Widgets.dll
 QtMetaTypePrivate::QSequentialIterableImpl
 QueryPerformanceCounter
 R	?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
+R	V_sscanf
 R IcB
 R?metaObject@QStandardItemModel@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QTextDocument@@UEBAPEBUQMetaObject@@XZ
@@ -5611,7 +5615,6 @@ SwitchToEngineWindow
 SyncToScrollBar
 SyncToScrollBar %.0f us
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T	V_stricmp_fast
 T$ E3
 T$ H;
 T$(E3
@@ -5810,6 +5813,7 @@ VWAUAWH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 V_DoubleToString_Unsafe
 V_FloatToString_Unsafe
 V_Int32ToString_Unsafe
@@ -5834,7 +5838,6 @@ V_UInt64ToString_Unsafe
 V_UnqualifiedFileName
 V_atof
 V_atoi
-V_fmodf
 V_~]	,
 Va?width@QPixmap@@QEBAHXZ
 Value
@@ -5855,6 +5858,7 @@ Vis:1
 VisBuilder_001
 Visit Developer Help URL
 Vrad3_001
+W	V_stricmp_fast
 W?resetTransform@QPainter@@QEAAXXZ
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -5886,7 +5890,6 @@ WorldRendererMgr001
 Writable
 WriteConsoleW
 WriteFile
-X	V_strspn
 X UVWATAWH
 X!t5~
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
@@ -5932,6 +5935,7 @@ Y?setHsvF@QColor@@QEAAXNNNN@Z
 YD$@f
 YO?insertColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 YY?setDropAction@QDropEvent@@QEAAXW4DropAction@Qt@@@Z
+Z4rw}
 Z?setItalic@QFont@@QEAAX_N@Z
 Z?setItem@QStandardItemModel@@QEAAXHPEAVQStandardItem@@@Z
 Z?setItemData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBV?$QMap@HVQVariant@@@@@Z
@@ -5953,6 +5957,7 @@ Z[?setRowCount@QStandardItemModel@@QEAAXH@Z
 Z\>z8
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 Zod(^?
+[	V_strspn
 [%1] %2
 [*ncd>0
 [?setPointSizeF@QFont@@QEAAXN@Z
@@ -6024,6 +6029,7 @@ Zod(^?
 \?setWidthF@QPen@@QEAAXN@Z
 \t3D8T$(t
 ])6M>&
+]-OZ	
 ]>)2X
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
@@ -6236,7 +6242,6 @@ d?000000`?
 darkColors
 dddd, MMMM dd, yyyy
 dddddd
-de2Pr
 decimalPlaces
 decimals
 default
@@ -6427,6 +6432,7 @@ k0i0$
 k;J;J;J;J;J;J;J;J;J;J;J;J;J;J;J;Jx
 kPH;sPH
 kQ?lineSpacing@QFontMetrics@@QEBAHXZ
+kR}rRa
 kX?setBlue@QColor@@QEAAXH@Z
 l"?value@QDoubleSpinBox@@QEBANXZ
 l$ 9k@t
@@ -6926,8 +6932,7 @@ tEHcR
 tFL;w0u@H
 tRLcY
 tXHc:
-tY@85
-t[ew6
+tY@85J[
 t\Ic.
 t]IcU
 t_L9>t
@@ -7010,6 +7015,8 @@ v=Y]Bv
 v@D8s(t
 vAD8s(t
 vKfffff
+vUtf\
+vY'e`
 value
 value too large
 valueAdd
@@ -7051,7 +7058,6 @@ x8Mxt
 xA^_^]
 xA_A\[]
 xA_A^A]A\_^[]
-xE'Jk
 xS;Q }NHc
 xSE;H
 x_;G`}ZH
@@ -7114,7 +7120,7 @@ zY;>u:m
 |$8u)H
 |$8uFH
 |$8~ H
-|$<;=9
+|$<;=
 |$@A3X$A
 |$@A_A^A]A\
 |$@H9|$ht
@@ -7140,13 +7146,11 @@ zY;>u:m
 |$pH;
 |$pIcO
 |)L9c
-|.2I!y
 |8M|t
 |Lu?c
 |V?reason@QFocusEvent@@QEBA?AW4FocusReason@Qt@@XZ
 |`A;N
 |b=})>
-|kEX-
 });C$
 }0L9}
 }8M}t

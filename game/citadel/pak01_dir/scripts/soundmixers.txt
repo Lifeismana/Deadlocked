@@ -367,7 +367,7 @@
 			ducker_threshold = 20
 		},
 		{
-			name = "Music-Duck"
+			name = "Music-GameOver"
 			path_substring = ""
 			class_substring = ""
 			chan_type = ""
@@ -963,7 +963,7 @@
 			},
 			{
 				mixgroup = "All-Tea"
-				vol = 0.5
+				vol = 0.488
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1259,7 +1259,7 @@
 			},
 			{
 				mixgroup = "Reload-Pla"
-				vol = 0.35
+				vol = 0.45
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1267,7 +1267,7 @@
 			},
 			{
 				mixgroup = "Reload-Opp"
-				vol = 0.25
+				vol = 0.45
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1322,7 +1322,7 @@
 				dsp = 0.0
 			},
 			{
-				mixgroup = "Music-Duck"
+				mixgroup = "Music-GameOver"
 				vol = 0.5
 				solo = 0.0
 				mute = 0.0
@@ -1367,7 +1367,7 @@
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
-				dsp = 0.0
+				dsp = 0.3
 			},
 			{
 				mixgroup = "VO-Hero-Ult-Tea"
@@ -1375,7 +1375,7 @@
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
-				dsp = 0.0
+				dsp = 0.3
 			},
 			{
 				mixgroup = "VO-Hero-Ult-Opp"
@@ -1383,7 +1383,7 @@
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
-				dsp = 0.0
+				dsp = 0.3
 			},
 			{
 				mixgroup = "VO-Hero-Ult-Neu"
@@ -1391,363 +1391,7 @@
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
-				dsp = 0.0
-			},
-		]
-		Display_Mix = [  ]
-		Paused_Mix = 
-		[
-			{
-				mixgroup = "VO-Hero-Pla"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.4
-			},
-			{
-				mixgroup = "World"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "Announcer"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "Dmg-Victim"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.15
-			},
-			{
-				mixgroup = "DMG-Send"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "UI"
-				vol = 0.498884
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "Music"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "Proj-Impact"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.5
-			},
-			{
-				mixgroup = "Proj-Whizby"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "Weapons-Pla"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.65
-			},
-			{
-				mixgroup = "Mods"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.5
-			},
-			{
-				mixgroup = "All-Pla"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.25
-			},
-			{
-				mixgroup = "All-Tea"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.25
-			},
-			{
-				mixgroup = "All-Opp"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.25
-			},
-			{
-				mixgroup = "All-Neu"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.25
-			},
-			{
-				mixgroup = "Dmg-Attacker"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.15
-			},
-			{
-				mixgroup = "Dmg-Other"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.15
-			},
-			{
-				mixgroup = "Weapons-Opp"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.65
-			},
-			{
-				mixgroup = "Weapons-Tea"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.65
-			},
-			{
-				mixgroup = "Weapons-Neu"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.65
-			},
-			{
-				mixgroup = "DMG-Receive-Trigger"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "Weapons"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.65
-			},
-			{
-				mixgroup = "Ability-Pla"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.35
-			},
-			{
-				mixgroup = "Ability-Opp"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.35
-			},
-			{
-				mixgroup = "Ability-Tea"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.35
-			},
-			{
-				mixgroup = "Ability-Neu"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.35
-			},
-			{
-				mixgroup = "Ult-Pla"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.35
-			},
-			{
-				mixgroup = "Ult-Opp"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.35
-			},
-			{
-				mixgroup = "Ult-Tea"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.35
-			},
-			{
-				mixgroup = "Ult-Neu"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.35
-			},
-			{
-				mixgroup = "Boss-Tea"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.25
-			},
-			{
-				mixgroup = "Boss-Neu"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.25
-			},
-			{
-				mixgroup = "Boss-Opp"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.25
-			},
-			{
-				mixgroup = "Movement-Pla"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 1.0
-			},
-			{
-				mixgroup = "Movement-Tea"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.5
-			},
-			{
-				mixgroup = "Movement-Opp"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.5
-			},
-			{
-				mixgroup = "Movement-Neu"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.5
-			},
-			{
-				mixgroup = "Ambience-Bed"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "Ambience-Details"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "VO-Hero-Tea"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.4
-			},
-			{
-				mixgroup = "VO-Hero-Opp"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.4
-			},
-			{
-				mixgroup = "VO-Hero-Neu"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.4
-			},
-			{
-				mixgroup = "All"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
-			},
-			{
-				mixgroup = "VO-NPC"
-				vol = 0.0
-				solo = 0.0
-				mute = 0.0
-				lvl = 1.0
-				dsp = 0.0
+				dsp = 0.3
 			},
 		]
 	}
@@ -1841,48 +1485,48 @@
 					vol = 1.0
 					dsp = 1.0
 					solo = 0.0
-					lvl = 0.75
-					mute = 1.0
+					mute = 0.0
+					lvl = 0.0
 				},
 				{
 					mixgroup = "VO-Hero-Tea"
-					vol = 1.0
 					dsp = 1.0
 					solo = 0.0
-					lvl = 0.75
-					mute = 1.0
+					vol = 0.0
+					mute = 0.0
+					lvl = 0.0
 				},
 				{
 					mixgroup = "VO-Hero-Opp"
-					vol = 1.0
 					dsp = 1.0
 					solo = 0.0
-					lvl = 0.5
-					mute = 0.5
+					vol = 0.5
+					mute = 0.0
+					lvl = 0.0
 				},
 				{
 					mixgroup = "VO-Hero-Neu"
-					vol = 1.0
 					dsp = 1.0
 					solo = 0.0
-					lvl = 0.75
-					mute = 1.0
+					vol = 0.0
+					mute = 0.0
+					lvl = 0.0
 				},
 				{
 					mixgroup = "Music"
-					vol = 1.0
-					lvl = 0.0
 					dsp = 1.0
 					solo = 0.0
-					mute = 0.4
+					mute = 0.0
+					vol = 0.5
+					lvl = 0.0
 				},
 				{
-					mixgroup = "Music-Duck"
-					vol = 1.0
-					lvl = 0.0
+					mixgroup = "Music-GameOver"
 					dsp = 1.0
 					solo = 0.0
-					mute = 0.4
+					vol = 0.5
+					mute = 0.0
+					lvl = 0.0
 				},
 			]
 			Triggers = 
@@ -2144,62 +1788,6 @@
 				},
 			]
 		}
-		"Music-Duck" = 
-		{
-			Mixers = 
-			[
-				{
-					mixgroup = "Music-Duck"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					mute = 0.0
-					solo = 1.0
-				},
-				{
-					mixgroup = "Music"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					mute = 0.0
-					solo = 1.0
-				},
-				{
-					mixgroup = "Announcer"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					mute = 0.0
-					solo = 1.0
-				},
-				{
-					mixgroup = "UI"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					mute = 0.0
-					solo = 1.0
-				},
-				{
-					mixgroup = "VO-Hero-Ping"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					mute = 0.0
-					solo = 1.0
-				},
-			]
-			Triggers = 
-			[
-				{
-					trigger = "Music-Duck"
-					threshold = 0.0
-					mixamount = 1.0
-					attack = 0.1
-					release = 0.1
-				},
-			]
-		}
 		"Ult-Ducker" = 
 		{
 			Mixers = 
@@ -2308,14 +1896,6 @@
 					mute = 0.0
 					vol = 0.7
 				},
-				{
-					mixgroup = "Ability-Neu"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 0.0
-				},
 			]
 			Triggers = 
 			[
@@ -2341,11 +1921,11 @@
 			[
 				{
 					mixgroup = "Music"
-					vol = 1.0
 					lvl = 0.0
 					dsp = 1.0
 					solo = 0.0
-					mute = 0.6
+					mute = 0.0
+					vol = 0.5
 				},
 			]
 			Triggers = 
@@ -2365,27 +1945,27 @@
 			[
 				{
 					mixgroup = "Weapons-Tea"
-					vol = 1.0
 					lvl = 0.0
 					dsp = 1.0
 					solo = 0.0
-					mute = 0.5
+					vol = 0.5
+					mute = 0.0
 				},
 				{
 					mixgroup = "Boss-Opp"
-					vol = 1.0
 					lvl = 0.0
 					dsp = 1.0
 					solo = 0.0
-					mute = 0.5
+					vol = 0.5
+					mute = 0.0
 				},
 				{
 					mixgroup = "Boss-Tea"
 					lvl = 0.0
 					dsp = 1.0
 					solo = 0.0
-					vol = 1.0
-					mute = 0.5
+					vol = 0.5
+					mute = 0.0
 				},
 			]
 			Triggers = 
@@ -2489,23 +2069,173 @@
 				{
 					trigger = "VO-Hero-Ult-Pla"
 					threshold = 0.0
-					mixamount = 1.0
-					attack = 0.0
-					release = 0.0
+					mixamount = 0.25
+					attack = 0.1
+					release = 0.5
 				},
 				{
 					trigger = "VO-Hero-Ult-Tea"
 					threshold = 0.0
 					mixamount = 1.0
-					attack = 0.0
-					release = 0.0
+					attack = 0.1
+					release = 0.5
 				},
 				{
 					trigger = "VO-Hero-Ult-Opp"
 					threshold = 0.0
 					mixamount = 1.0
-					attack = 0.0
-					release = 0.0
+					attack = 0.1
+					release = 0.5
+				},
+			]
+		}
+		"Game-PregameWait" = 
+		{
+			Mixers = 
+			[
+				{
+					mixgroup = "Ability-Neu"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.25
+				},
+				{
+					mixgroup = "Ability-Opp"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.25
+				},
+				{
+					mixgroup = "Ability-Pla"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.25
+				},
+				{
+					mixgroup = "Ability-Tea"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.25
+				},
+				{
+					mixgroup = "Reload-Neu"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.25
+				},
+				{
+					mixgroup = "Reload-Opp"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.25
+				},
+				{
+					mixgroup = "Reload-Pla"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.25
+				},
+				{
+					mixgroup = "Reload-Tea"
+					lvl = 0.0
+					dsp = 1.0
+					solo = 0.0
+					mute = 0.0
+					vol = 0.25
+				},
+			]
+			Triggers = [  ]
+		}
+		"Game-Pause" = 
+		{
+			Mixers = 
+			[
+				{
+					mixgroup = "Music"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 1.0
+				},
+				{
+					mixgroup = "UI"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 1.0
+				},
+			]
+			Triggers = [  ]
+		}
+		"Game-PostGame" = 
+		{
+			Mixers = 
+			[
+				{
+					mixgroup = "Music"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 1.0
+				},
+				{
+					mixgroup = "Announcer"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 1.0
+				},
+				{
+					mixgroup = "UI"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 1.0
+				},
+				{
+					mixgroup = "VO-Hero-Ping"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 1.0
+				},
+				{
+					mixgroup = "Music-GameOver"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 1.0
+				},
+			]
+			Triggers = 
+			[
+				{
+					trigger = "Music-GameOver"
+					threshold = 0.0
+					mixamount = 1.0
+					attack = 0.1
+					release = 0.1
 				},
 			]
 		}

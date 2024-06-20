@@ -3,7 +3,6 @@
 			Sequence:	%s
 		%.*s
 		Instrument: %s
-		V_fseek
 	 The lexer was matching from line %d, offset %d, which
 	 This indicates a poorly specified lexer RULE
 	 dspmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f
@@ -36,9 +35,12 @@
 	Sample Rate:	%d
 	Track: %s
 	VOL: %f
+	V_fmodf
+	V_fopen
 	V_fprintf
 	V_fread
 	V_frexpf
+	V_fseek
 	V_ftell
 	V_vsnprintf
 	Warning
@@ -116,7 +118,6 @@
  A_A]A\_^
  A_A]_^[
  A_A^A\
- A_A^A\_]
  A_A^A\_^
  A_A^A\_^][
  A_A^A]
@@ -151,6 +152,9 @@
  Hc)L
  Hc1H
  Hc1L
+ Hc55
+ Hc55%4
+ Hc9H
  Hc9L
  HcA(E3
  HcAX3
@@ -207,6 +211,7 @@
 !g_pSoundServices
 !hn7!
 !m_NameStack.IsEmpty()
+!m_RecordingOutputs.IsValidIndex( m_RecordingOutputs.Find( pOutput ) )
 !m_bCacheLock
 !m_bLoaded
 !m_pMemPool
@@ -249,7 +254,6 @@ $09LWiv
 $2?O_n~
 $?aB$?
 $A_A^A\[
-$HcHx
 $Ib?s
 $`<`u
 $procedural
@@ -346,7 +350,7 @@ $toolgraphs
 &YA1A
 &YA1H
 &YA1I
-'	V_log10f
+&YA1L
 ', type<
 ',=?k
 '3<CIOSW[^adfikosvy|~
@@ -370,15 +374,18 @@ $toolgraphs
 ( nStart + 1 ) < m_nCount
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
+(%187
 (%2db) %6lli : %s
 (%d,%d)
 (%s) %d
 (%s:%s) 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
+(-N77
 (8GXgw
 (92tSH
 (9:t:H
+(=#>7
 (?3s'?
 (A\_^[
 (A]^][
@@ -498,6 +505,7 @@ $toolgraphs
 (m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
 (m_nRefCount & INTERNAL_LOCKED) != 0
 (m_soundEventListeners.FindAndRemove( pListener )) == (false)
+(nChannels == k_nSampleChannels) && (nSampleBits == k_nSampleBits) && (nSampleRate == k_nSampleRate)
 (null)
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (t$ 3
@@ -708,10 +716,10 @@ $toolgraphs
 )t$PE
 )t$PE3
 )t$PH
+)t$PI
 )t$PL
 )t$PL+
 )t$PM
-)t$Pfff
 )t$Pu?
 )t$`+
 )t$`D
@@ -758,6 +766,7 @@ $toolgraphs
 )|$pH+
 )|$pL
 )|B?d!
+*	V_log10f
 ** %s -> %s
 **Cleanup resources**
 **unload**
@@ -786,7 +795,6 @@ $toolgraphs
 +h->|
 +o'q)}
 +w?FFv?
-,	V_logf
 , at <EOF>
 , at offset %d
 , near %s
@@ -1032,6 +1040,8 @@ $toolgraphs
 .?AV?$CParameter@VCGranulatorInstance@CVoiceContainerGranulator@@M@CVoiceContainerBase@@
 .?AV?$CParameter@VCInstanceBase@CVoiceContainerBase@@H@CVoiceContainerBase@@
 .?AV?$CParameter@VCRandomSamplerInstanceView@CVoiceContainerRandomSampler@@H@CVoiceContainerBase@@
+.?AV?$CRefCountServiceBase@VCRefMT@@@@
+.?AV?$CRefCounted1@VIAudioWAVRecorder@@V?$CRefCountServiceBase@VCRefMT@@@@@@
 .?AV?$CTier0AppSystem@VISoundOpSystem@@$0A@@@
 .?AV?$CTier0AppSystem@VISoundOpSystemEdit@@$0A@@@
 .?AV?$CTier0AppSystem@VISoundSystem@@$0A@@@
@@ -1464,6 +1474,7 @@ $toolgraphs
 .?AVCVSoundTypeManager@@
 .?AVCVocoderAudioProcessor@@
 .?AVCVoiceContainerBlender@@
+.?AVCVoiceContainerEnvelope@@
 .?AVCVoiceContainerLoopTrigger@@
 .?AVCVoiceContainerNull@@
 .?AVCVoiceContainerOutputStreamAttached@@
@@ -1483,13 +1494,16 @@ $toolgraphs
 .?AVIAudioInputStream@@
 .?AVIAudioMixer@@
 .?AVIAudioOutputStream@@
+.?AVIAudioStreamRecorder@@
 .?AVIAudioSubsystem@@
+.?AVIAudioWAVRecorder@@
 .?AVIBaseToolAttr@@
 .?AVIDebugVisualizer@@
 .?AVIErrorListener@@
 .?AVIKV3TransferInterface_ResourceLoad@@
 .?AVIMixFilter@@
 .?AVIRD_RegisterResourceDataUtils@@
+.?AVIRefCounted@@
 .?AVIResourceTypeManager@@
 .?AVISequenceArranger@@
 .?AVISoundEventManager@@
@@ -1507,7 +1521,6 @@ $toolgraphs
 .?AVIVMixToolServices@@
 .?AVIVSoundManager@@
 .?AVIVoiceTraceKV3@@
-.?AVIWaveTmpFileWriter@@
 .?AV__non_rtti_object@std@@
 .?AVbad_cast@std@@
 .?AVbad_exception@std@@
@@ -1572,6 +1585,7 @@ $toolgraphs
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
 /2GG>!B
 /9s(L
 /=LZjw
@@ -1610,7 +1624,6 @@ $toolgraphs
 0 0 0 255
 0 360
 0 = use biquad instead of svf, 1 = use vectorized svf, 2 = use scalar svf
-0*/ r
 0.000000
 0.1 10
 0.1 16000
@@ -1626,8 +1639,8 @@ $toolgraphs
 0A^_]
 0A^_^
 0A^_^[]
-0A^_^][
 0A_A\[
+0A_A\^
 0A_A\_
 0A_A\_^[
 0A_A]A\_]
@@ -1677,8 +1690,9 @@ $toolgraphs
 220323000000Z
 220801000000Z
 230714000000Z
-240613154320Z0/
+240620161419Z0/
 241009235959Z0a1
+2@8-J9?
 2C $ 2
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1721,13 +1735,11 @@ $toolgraphs
 6s?fBbEcJYG[I[NYVP\B]@f;g<h<u4{,
 6uu?>
 6uu?uj
-7	V_powd
 70503
 7K[iu
 7YA1H
 7h>?8
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8 udH
 8#8fD
 8#LT`f
@@ -1765,7 +1777,7 @@ $toolgraphs
 8f;o(
 8ke?;
 8}WW`
-9	V_qsort
+9	[]-
 9)~EH
 9)~P3
 9*t8H
@@ -1773,7 +1785,8 @@ $toolgraphs
 90~f3
 91~SL
 92t:H
-94(t&@8|( u
+94(t*@8|( u#H
+95rgD
 98t H
 99jd9
 99~QH
@@ -1791,7 +1804,6 @@ $toolgraphs
 9G8~$M
 9GDt	
 9GHt9
-9K_9`n
 9N0~-L
 9NH~.L
 9Px~5M
@@ -1856,7 +1868,7 @@ $toolgraphs
 9|$Pu
 9|$Xu
 9|$xu
-:	V_qsort_s
+:	V_powd
 : %s::
 : lexer error %d :
 :!|$ 0
@@ -1868,8 +1880,9 @@ $toolgraphs
 :H?'mK?
 :YA1H
 :^V=/
-;5oA7
-;=;.7
+;	V_powf
+;-B>C
+;=a=C
 ;?%L+
 ;?Bh9?
 ;?uX;?
@@ -1888,11 +1901,11 @@ $toolgraphs
 ;_0u'D
 ;nGVKUTS[BXIWH\KbHi:k6s4r7p8
 ;s0}p
-;t$@u
 ;t$Lu
 ;t$T|
+;wp}.H
 ;|$x|
-;~p}.H
+<	V_qsort
 <	u%H
 <	u)Icn
 <	u2H
@@ -1932,6 +1945,7 @@ $toolgraphs
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
+=	V_qsort_s
 =&~g>&"2?
 =YA1H
 =`#I>
@@ -1957,6 +1971,7 @@ $toolgraphs
 >`#I>`#I
 >fff?fff?fff?
 >ffffff
+>i([XZ
 >jtm}S
 >q`u1
 >q`ue
@@ -1965,7 +1980,6 @@ $toolgraphs
 >wcv?>
 >wcv?uj
 >~a)>
-?	V_roundf
 ?	g	2	
 ?!AfJ+
 ?333333
@@ -2173,7 +2187,7 @@ $toolgraphs
 ?rJRTS\Rg>`H`CeIkHq7v4}4v4u7
 ?s,DT
 ?ulJcL*
-?urIcN
+?uvIcN
 ?wr^a
 ?{Q}<
 @%s.output
@@ -2183,6 +2197,7 @@ $toolgraphs
 @0A9A
 @58B5uW
 @8+t`3
+@8,3u
 @8.td3
 @8/t-H
 @8/ti3
@@ -2193,13 +2208,13 @@ $toolgraphs
 @83t`3
 @83te3
 @83ti3
-@84(u
 @84)u
-@85tI4
+@85EJ?
 @87ti3
 @88t^H
 @8<(u
 @8<.u
+@8=,&D
 @8h,t
 @8j(t
 @8k(t
@@ -2214,6 +2229,7 @@ $toolgraphs
 @:l$P
 @:ytt
 @>%>b
+@@Q8$
 @A\][
 @A]A\_^[
 @A^A]A\_^
@@ -2242,7 +2258,6 @@ $toolgraphs
 @A__^
 @C u9A
 @Hc13
-@Hc5_`;
 @HcA03
 @LcIPI
 @SATAVAWH
@@ -2283,7 +2298,6 @@ $toolgraphs
 @SUWAVH
 @SUWH
 @SVATAUAVH
-@SVATAVAWH
 @SVATAVH
 @SVATH
 @SVAUAVH
@@ -2360,6 +2374,7 @@ $toolgraphs
 @VAWH
 @VWATAUAWH
 @VWATAUH
+@VWATAVAWH
 @VWAUAVAWH
 @VWAUAVH
 @VWAUH
@@ -2391,6 +2406,7 @@ A+zLL
 A03>A|
 A2D6 $
 A2F $
+A8,4u
 A84>u
 A86te3
 A8A9@8u
@@ -2459,6 +2475,7 @@ AUAWH
 AVAWH
 AXf9G
 A\^[]
+A\^]H
 A\_][
 A\_^]
 A\_^][
@@ -2515,7 +2532,6 @@ A_A\_
 A_A\_[]
 A_A\_^]
 A_A\_^][
-A_A]A\_]
 A_A]A\_^
 A_A][]
 A_A]]
@@ -2564,7 +2580,6 @@ A_A^_^]
 A_A^_^][
 A_Sharp
 A_^[]
-A_^]H
 A__^[
 A__^]
 Abort processing sound event %s (scheduled recursively will not process this frame)
@@ -2597,7 +2612,6 @@ AllPass
 AllocateFieldOfType
 AllocateResource failed for %s
 Already have a job for this voice container!
-Amped Decaying Sine Wave Container
 An array of containers
 Analysis Container
 AnimGraphEditorUtils001
@@ -2649,6 +2663,7 @@ AudioDevice_Shutdown
 AudioMixer
 August
 Available Operators:
+B	V_roundf
 B(I9A(
 B(IcB
 B(IcZ
@@ -2757,6 +2772,7 @@ C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_
 C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_selector_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_soundschema_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_switch_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_testbed_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.g
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\piecewisecurve.cpp
@@ -2918,6 +2934,8 @@ CAsyncWavDataCache::SpewMemoryUsage
 CAsyncWaveData::GetFileName
 CAsyncWaveData::StartAsyncLoading
 CAudioCaptureDevice::OutputBuffer
+CAudioCaptureDevice::RegisterStreamRecorder
+CAudioCaptureDevice::RegisterStreamRecorder::<lambda_1>::operator ()
 CAudioDecoderEncoded::FreeBuffer
 CAudioDecoderStretch::ReadInputFromSource
 CAudioDecoderWave::AddDelaySamplesToPacket
@@ -3134,7 +3152,6 @@ CHRTFAudioProcessor::GetControlParameter
 CHRTFAudioProcessor::Process
 CHRTFAudioProcessor::ProcessSingleChannel
 CHRTFAudioProcessor::SetControlParameter
-CH|LH
 CKV3ArrayIteratorView<0>::CKV3ArrayIteratorView
 CKV3ArrayIteratorView<0>::iterator::operator *
 CKV3ArrayIteratorView<1>::CKV3ArrayIteratorView
@@ -3458,6 +3475,10 @@ CSosTrackSystem::GetTrackIndex
 CSosTrackSystem::PlayTrackEvent
 CSosTrackSystem::StopTrack
 CSosTrackSystem::TestTrackEvent
+CSoundContainerReference
+CSoundContainerReference::KV3TransferLoad_Impl
+CSoundContainerReference::KV3Transfer_DefaultKeys_Impl
+CSoundContainerReference::Schema_VerifyBindingIsRegistered
 CSoundDebugVisualizer
 CSoundEvent: %s
 CSoundEventDefinition::GetStaticGroupName
@@ -3514,6 +3535,7 @@ CSoundSystem::CheckDevice
 CSoundSystem::CreateDefaultDevice
 CSoundSystem::InitSoundSystem
 CSoundSystem::PreloadSoundEvent
+CSoundSystem::RegisterStreamRecorder
 CSteamAudioDirectProcessor::GetControlParameter
 CSteamAudioDirectProcessor::ProcessSingleChannel
 CSteamAudioHybridReverbProcessor::GetControlParameter
@@ -3644,6 +3666,9 @@ CUtlMemory<class CSosSoundEventGroupSchema,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CSosSoundEventGroupSchema,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CSosStackExecutionList::CSosStackExecInfo_t,int>::Grow
 CUtlMemory<class CSosStackExecutionList::CSosStackExecInfo_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CSoundContainerReference,int>::Grow
+CUtlMemory<class CSoundContainerReference,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CSoundContainerReference,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CSoundEventDefinition *,int>::Grow
 CUtlMemory<class CSoundEventDefinition *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CSoundEventInstanceDefFieldInfo,int>::Grow
@@ -3699,6 +3724,8 @@ CUtlMemory<class CVoiceTraceFrame,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CVoiceTraceFrame,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class IAsset *,int>::Grow
 CUtlMemory<class IAsset *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class IAudioStreamRecorder *,int>::Grow
+CUtlMemory<class IAudioStreamRecorder *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class IBaseToolAttr *,int>::Grow
 CUtlMemory<class IBaseToolAttr *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class IImpulseResponse *,int>::Grow
@@ -3806,12 +3833,6 @@ CUtlMemory<struct CVMixMixer::VMixVoice_t,int>::Grow
 CUtlMemory<struct CVMixMixer::VMixVoice_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CVMixNestedVoiceGraphFlattener::VMixGraphVoice_t,int>::Grow
 CUtlMemory<struct CVMixNestedVoiceGraphFlattener::VMixGraphVoice_t,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<struct CVoiceContainerAnalysisBase *,int>::Grow
-CUtlMemory<struct CVoiceContainerAnalysisBase *,int>::Grow::<lambda_1>::operator ()
-CUtlMemory<struct CVoiceContainerAnalysisBase *,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<struct CVoiceContainerBase *,int>::Grow
-CUtlMemory<struct CVoiceContainerBase *,int>::Grow::<lambda_1>::operator ()
-CUtlMemory<struct CVoiceContainerBase *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CVoiceContainerRandomSampler::CInstanceData,int>::Grow
 CUtlMemory<struct CVoiceContainerRandomSampler::CInstanceData,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CVoiceContainerStaticAdditiveSynth::CHarmonic,int>::Grow
@@ -4147,9 +4168,7 @@ CUtlMemory_RawAllocator<unsigned int>::EnsureCapacity
 CUtlMemory_RawAllocator<unsigned int>::Grow
 CUtlOrderedMap<char const *,class CUtlString,class CDefStringLess,unsigned short>::FindElement
 CUtlQueue<int,class CUtlMemory<int,int> >::Count
-CUtlQueue<int,class CUtlMemory<int,int> >::RemoveAtHead
 CUtlQueue<struct CVoiceContainerVOIP::VOIPInstanceInitParams_t,class CUtlMemory<struct CVoiceContainerVOIP::VOIPInstanceInitParams_t,int> >::Count
-CUtlQueue<struct CVoiceContainerVOIP::VOIPInstanceInitParams_t,class CUtlMemory<struct CVoiceContainerVOIP::VOIPInstanceInitParams_t,int> >::RemoveAtHead
 CUtlRBTree overflow with %u elements!
 CUtlRBTree<struct CUtlOrderedMapBase<char const *,class CSosOperator *,class CDefFastCaselessStringLess,int>::Node_t,class CUtlOrderedMapBase<char const *,class CSosOperator *,class CDefFastCaselessStringLess,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<char const *,class CSosOperator *,class CDefFastCaselessStringLess,int>::Node_t,int>,int> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<char const *,class CSosOperator *,class CDefFastCaselessStringLess,int>::Node_t,class CUtlOrderedMapBase<char const *,class CSosOperator *,class CDefFastCaselessStringLess,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<char const *,class CSosOperator *,class CDefFastCaselessStringLess,int>::Node_t,int>,int> >::RemoveAll
@@ -4343,6 +4362,10 @@ CVoiceContainerDefault
 CVoiceContainerDefault::KV3TransferLoad_Impl
 CVoiceContainerDefault::KV3Transfer_DefaultKeys_Impl
 CVoiceContainerDefault::Schema_VerifyBindingIsRegistered
+CVoiceContainerEnvelope
+CVoiceContainerEnvelope::KV3TransferLoad_Impl
+CVoiceContainerEnvelope::KV3Transfer_DefaultKeys_Impl
+CVoiceContainerEnvelope::Schema_VerifyBindingIsRegistered
 CVoiceContainerEnvelopeAnalyzer
 CVoiceContainerEnvelopeAnalyzer::KV3TransferLoad_Impl
 CVoiceContainerEnvelopeAnalyzer::KV3Transfer_DefaultKeys_Impl
@@ -4412,6 +4435,7 @@ CVoiceTraceFrame::AllocGraphParams
 CVoiceTraceFrame::AllocStackParams
 CVoiceTraceFrame::AllocVoiceParams
 CWD>~3
+CWaveTmpFileWriter::OnAudioFormatChanged
 CWaveTmpFileWriter::WaveFinishTmpFile
 CWeakHandle<struct InfoForResourceTypeCVoiceContainerBase>::InitUntyped
 CXf9C
@@ -4523,11 +4547,11 @@ Currently sets a single float operator field
 Curves
 Cutoff Freq
 Cutoff Frequency
-D	V_sincosf
 D W?{W
 D!l$xA
 D$ !H
 D$ %o
+D$ '?%
 D$ @82t
 D$ A;
 D$ Ctq
@@ -4538,7 +4562,6 @@ D$ D89t
 D$ D;
 D$ E3
 D$ H;
-D$ Hc
 D$ L;
 D$ M+
 D$ Q7)
@@ -4582,6 +4605,7 @@ D$,;o
 D$,E3
 D$,sD
 D$0%o
+D$0'?%
 D$092t:H
 D$0;C
 D$0@8{
@@ -4621,6 +4645,7 @@ D$8@8
 D$8A;
 D$8D;
 D$8E3
+D$8E;/
 D$8H;
 D$8Hc
 D$8HcJ
@@ -4696,7 +4721,6 @@ D$XfD;
 D$Xu$H
 D$\;D$x
 D$\@2
-D$\E3
 D$_fD
 D$`;p
 D$`E+
@@ -4715,7 +4739,6 @@ D$dHc_
 D$h;D$`
 D$hAW
 D$hH;
-D$hHc
 D$hL;
 D$h|R
 D$lM;
@@ -4748,6 +4771,7 @@ D8 Ik
 D8 tP
 D8 tV
 D8 th
+D8%Hq4
 D8'tf3
 D8+tJ
 D80t;L9
@@ -4780,7 +4804,8 @@ D9!~RE3
 D90u.H
 D9:u(A
 D9;~-H
-D9;~HL
+D9;~EL
+D9=~UC
 D9APueL
 D9CDtc
 D9C`~JE3
@@ -4808,12 +4833,12 @@ D9mt~
 D9o(H
 D9ot~
 D9st~
-D9t$8u
+D9t$@u
 D9t$L~	D
 D9t$Pu
 D9t$T~%
 D9t$hu
-D9uHu
+D9u(u
 D9vt~
 D9y ~1H
 D9y`~PH
@@ -4904,7 +4929,6 @@ Decay
 Decay Time (Seconds)
 Decay target amplitude
 Decay time (ms)
-Decaying Sine Wave Container
 December
 Decreased audio mix latency to %d buffers
 Default Container
@@ -4967,6 +4991,10 @@ E+7A;
 E02Gh$
 E0HcH
 E0Lc`
+E0RIFFD
+E0WAVED
+E0dataD
+E0fmt H
 E4M9~0
 E8g8E
 E8g9H
@@ -5038,6 +5066,7 @@ Envelope Analyzer
 Envelope Curve
 Envelope Mode
 Envelope Type
+Envelope VSND
 EpH9Fpt2
 Error saving default keys for CAudioEmphasisSample: %s
 Error saving default keys for CAudioMorphData: %s
@@ -5059,6 +5088,7 @@ Error saving default keys for CSosGroupBranchPattern: %s
 Error saving default keys for CSosGroupMatchPattern: %s
 Error saving default keys for CSosSoundEventGroupListSchema: %s
 Error saving default keys for CSosSoundEventGroupSchema: %s
+Error saving default keys for CSoundContainerReference: %s
 Error saving default keys for CSoundEventMetaData: %s
 Error saving default keys for CSoundInfoHeader: %s
 Error saving default keys for CTestBlendContainer: %s
@@ -5069,6 +5099,7 @@ Error saving default keys for CVoiceContainerBase: %s
 Error saving default keys for CVoiceContainerBlender: %s
 Error saving default keys for CVoiceContainerDecayingSineWave: %s
 Error saving default keys for CVoiceContainerDefault: %s
+Error saving default keys for CVoiceContainerEnvelope: %s
 Error saving default keys for CVoiceContainerEnvelopeAnalyzer: %s
 Error saving default keys for CVoiceContainerGranulator: %s
 Error saving default keys for CVoiceContainerLoopTrigger: %s
@@ -5147,7 +5178,6 @@ ExternalNameForInternalType
 Extra taps
 Extract Source
 Extraneous token
-F	V_sinf
 F	t,P
 F HcF$H
 F Nc$
@@ -5160,6 +5190,7 @@ F0;FPt
 F0A9,
 F0D9 ~aI
 F0HcF4H
+F0|LH
 F8J9<
 F>F_@>
 F>qUxv
@@ -5191,7 +5222,6 @@ FILTER_UNKNOWN
 FIND ELEMENT: (%s)
 FLCID
 FLT_Alloc
-FM Synth Container
 FREEING MATCH ENTRY:
 FX Mix (1.0 == wet)
 FXf9F
@@ -5226,6 +5256,7 @@ File %s had sound/ instead of sounds/, path needs to be fixed in resource file.
 File %s is opened for edit by someone. Ignoring the mapping.
 File %s missing sounds dir. Fixing for now.
 File %s missing vsnd extension. Fixing for now.
+Filter
 Filter Bandwidth
 Filter Slope
 Filter Type
@@ -5246,6 +5277,7 @@ FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
 Flag to enable spatial audio in Dota 2.
 FlattenedSerializersVersion001
+Fldb Gain
 Float( %f )
 FloatsAreEqual( flSend, 1.0f, 1e-3f )
 FlsAlloc
@@ -5268,6 +5300,7 @@ FreeLibrary
 Frequency (Hz)
 Friday
 Func( %s )
+G	V_sincosf
 G ;G$t
 G fff
 G$A9B$
@@ -5310,6 +5343,7 @@ GT$hH
 GXf9G
 G\$(H
 G\$(L
+G\$0L
 G\$8H
 G\$8L
 G\$@L
@@ -5422,7 +5456,6 @@ G|$(L
 G|$HA
 G|$XI
 G|$hD
-H	V_sinhf
 H HcH
 H UATAUAVAWH
 H USWH
@@ -5442,14 +5475,19 @@ H0f9O
 H8B;\1
 H8HcH0D
 H9(tO
-H94(u
-H95)D'
+H953>
+H959R
+H95A=
+H95TR
+H95zQ
 H97u+A
 H97uGL
 H98t2
 H98t7
 H9;t	H
-H9=FH'
+H9<(u
+H9=?>
+H9=e<
 H9>u/H
 H9A(u
 H9D$Pu>I
@@ -5489,6 +5527,7 @@ H;}8r
 HA;6|
 HALL Detected 
 HA]A\_[
+HA]A\_^
 HA]_][
 HA^A\
 HA^A]_[
@@ -5511,7 +5550,6 @@ Hc+Lc6H
 Hc.;n
 Hc/;o
 Hc3;s
-Hc5*p;
 Hc7;w
 Hc7Lc
 Hc;;{
@@ -5641,7 +5679,7 @@ HighPass
 Highest
 HostStateMgr001
 Hovering voice %i, you could debug draw something too
-I	V_snprintf
+I	V_sinf
 I 	A0
 I could not work out what I was expecting, like so many of us these days!
 I |0E
@@ -5746,6 +5784,7 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CSosGro
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CSosGroupMatchPattern)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CSosSoundEventGroupListSchema)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CSosSoundEventGroupSchema)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CSoundContainerReference)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CSoundEventMetaData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CTestBlendContainer)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVSound)
@@ -5754,7 +5793,7 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceC
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceContainerBase)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceContainerBlender)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceContainerDecayingSineWave)
-Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceContainerDefault)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceContainerEnvelope)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceContainerEnvelopeAnalyzer)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceContainerGranulator)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceContainerLoopTrigger)
@@ -5831,7 +5870,7 @@ J(IcB A
 J8H99t
 J>@G_
 January
-JhR4 
+K	V_sinhf
 K Ic6
 K UWAUAWH
 K&>.yC
@@ -5888,6 +5927,7 @@ KeyValuesSystem
 Knee Width (dB)
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!|$(L!
 L$ ;L$(
 L$ E3
@@ -5928,7 +5968,6 @@ L$(E3
 L$(Hc
 L$(Hc/
 L$(Lc
-L$(Mc
 L$(fD
 L$,fD
 L$/Lc
@@ -6030,16 +6069,19 @@ L5 D8
 L9 Hk
 L9#t	H
 L9#u/H
-L9%;}>
 L9(tMA
 L9+t	H
 L9.t	H
 L9.u~H
 L90t 
-L95_KC
+L95)M<
+L957{'
+L95?]D
 L9<(t
-L9=!C
-L9=CP7
+L9=-3'
+L9=11'
+L9==2'
+L9=|d
 L9bHt
 L9bPt
 L9bPu
@@ -6195,7 +6237,6 @@ List all mix layers to dev console.
 List all mixers to dev console.
 Lj[;>
 Load all the probes from a file and display probes based on the passed on arguments.
-Load the audio content into the kv3 content
 LoadKV3Object error: %s
 LoadKV3ObjectInPlace error: %s
 LoadKV3ObjectInPlace::<lambda_1>::operator ()
@@ -6425,7 +6466,6 @@ Num Match groups: %i
 Number of materials not mapped = %d.
 Number of materials updated with new mapping = %d.
 Number of sections
-O	V_sscanf
 O JcD/
 O(;_ s
 O-p?A6
@@ -6486,7 +6526,6 @@ PARAM COUNT COMPARE FAIL: %s->%s
 PARAMDATA COMPARE FAIL: %s->%s : %s
 PARAMINFO COMPARE FAIL: %s->%s
 PA\^[
-PA]_^
 PA^A\]
 PA^A]A\^[
 PA^A]A\_^][
@@ -6504,7 +6543,6 @@ PA_A]A\_]
 PA_A^A]A\_^[
 PA_A^A]A\_^]
 PA_A^A]^]
-PA_A^]
 PA_A^_
 PA_A^_^]
 PA__^
@@ -6581,6 +6619,7 @@ PlaySoundA
 Playback Mode
 Plays a selected vsnd on playback.
 Plays a single channel of silence.
+Plays sound with envelope.
 Pointers cannot be used as numeric values
 PostProcessingSystem_001
 PpHcD$ 
@@ -6635,6 +6674,7 @@ QueryPerformanceCounter
 Queued: elapsed time: %f, next sync time: %f, length: %f
 Quick example for how we'd derive traits from voice containers.
 Quietest Volume
+R	V_sscanf
 R;876.
 R@8p,u
 RESOURCE_TYPE_SOUND
@@ -6667,6 +6707,7 @@ Recognition exception
 ReconnectInterface
 Reference dB at snd_refdist
 Reference distance for snd_refdb
+Reference to a vsnd file or another container.
 Reference to non-existent soundevent: %s
 Regenerate curve on compile
 RegisterConCommand: Unknown error registering con command "%s"!
@@ -6861,9 +6902,11 @@ SchemaEmitClassInfoHelper<class CSosGroupBranchPattern>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CSosGroupMatchPattern>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CSosSoundEventGroupListSchema>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CSosSoundEventGroupSchema>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CSoundContainerReference>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CSoundEventMetaData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CTestBlendContainer>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CVoiceContainerBlender>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CVoiceContainerEnvelope>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CVoiceContainerLoopTrigger>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CVoiceContainerSelector>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CVoiceContainerSwitch>::ValidateClassFieldTypes
@@ -6880,7 +6923,6 @@ SchemaEmitClassInfoHelper<struct CVoiceContainerAnalysisBase>::ValidateClassFiel
 SchemaEmitClassInfoHelper<struct CVoiceContainerBase>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CVoiceContainerBase>::ValidateStaticFieldTypes
 SchemaEmitClassInfoHelper<struct CVoiceContainerDecayingSineWave>::ValidateClassFieldTypes
-SchemaEmitClassInfoHelper<struct CVoiceContainerDefault>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CVoiceContainerEnvelopeAnalyzer>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CVoiceContainerGranulator>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CVoiceContainerRandomSampler>::ValidateClassFieldTypes
@@ -6988,6 +7030,7 @@ SosOpFieldInfo_t::ValueToKV3
 SosOpFieldInfo_t::ValueToString: Unable to find ENUM match for %i on %s
 SosOpFieldInfo_t::ValueToString: Unable to find ENUM tokenset on %s
 SosOpFieldInfo_t::WriteValueToKV3
+Sound
 Sound DSP: Failed to lock.
 Sound DSP: preset failed to init.
 Sound Disabled
@@ -7116,7 +7159,6 @@ Sunday
 Sustain target amplitude
 Sustain time (ms)
 SystemAttributes
-T	V_stricmp_fast
 T$ E3
 T$ H;
 T$ Hi
@@ -7181,10 +7223,15 @@ T$pE3
 T$pL+
 T$pff
 T$xD9"
+T%C"4
 T1(Hk
 T1,Hk
 T8 Hk
 T94fA
+TESTBED: Amped Decaying Sine Wave Container
+TESTBED: Decaying Sine Wave Container
+TESTBED: FM Synth Container
+TESTBED: Nested Voice Containers
 TOK_COLON
 TUNNEL Detected 
 TUUUU
@@ -7196,7 +7243,6 @@ Target Value
 TerminateProcess
 TernaryConditional
 Test nesting voice containers.
-Test: Nested Voice Containers
 TestScriptMgr001
 TestVoiceContainerNesting
 TestVoiceContainerNesting::BlendContainer_t::BlendContainer_t
@@ -7368,7 +7414,6 @@ UWAUH
 UWAVH
 UWAWH
 UXHcM
-UbIl(85
 UnInvalid
 UnNegate
 UnNot
@@ -7433,6 +7478,7 @@ Usage: snd_sos_compare_operator_stacks <stackname> <stackname>
 Usage: snd_sos_pause_first_soundevent <soundevent index>
 Usage: snd_sos_unpause_soundevent <soundevent index>
 Usage: snd_steamaudio_display_probes <pathing|reverb> <display_duration> <-1|search_radius> <display_radius>.
+Use Vsnd File
 Use perspective correction for 3D audio only in the frontal directions.
 Used main graph %s on voice %s
 Used stack: %s
@@ -7440,7 +7486,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
-V	V_strlower_fast
 V(t:H
 V6E>`"(5
 V?V/V?
@@ -7623,6 +7668,7 @@ VUUUf
 VWATAUAVAWL
 VWATAUAVH
 VWATAUAWH
+VWATAUH
 VWATAVAW
 VWATAVAWH
 VWATH
@@ -7632,6 +7678,7 @@ VWAUH
 VWAVAWH
 VWAVH
 VWAWH
+VWebm001
 V_DoubleToString_Unsafe
 V_FixDoubleSlashes
 V_FloatToString_Unsafe
@@ -7683,8 +7730,6 @@ V_cosf
 V_coshf
 V_expf
 V_fclose
-V_fmodf
-V_fopen
 V_~]	,
 Value Operator Offset: %i
 Value Stack Offset: %i
@@ -7703,10 +7748,15 @@ Voice volume
 Voices
 Volume of sounds in tools (e.g. Hammer, SFM)
 Vrad3_001
-Vsnd Asset
+Vsnd Container
+Vsnd File
+Vsnd Reference
 Vu?N\t?8Ws?vGr?
-W	V_strnchr
+W	V_stricmp_fast
+W%("4
+W%)%4
 W(tFH
+W5I$2
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Attempting to import existing public field %s in stack %s
 WARNING: Attempting to set fields on a stopped sound
@@ -7723,7 +7773,6 @@ WATAWH
 WAVAW
 WAVAWE3
 WAVAWH
-WAVEA
 WAVEH
 WAVEu7
 WINMM.dll
@@ -7767,7 +7816,7 @@ X UVWATAUAVAWH
 X UVWH
 X UWH
 X!t5~
-X%+;%
+X%{i%
 X<"wP
 X?/QY?s
 X?OsX?
@@ -7782,12 +7831,10 @@ XA_A^_^[]
 XB r+
 X_^[]
 Xt$PA
-Y->:%
-Y5LL&
-Y5S>3
+Y	V_strlower_fast
+Y5Tr&
 Y7D9.
 Y9"SD
-Y=yp+
 Y>kX>M
 Y?'WY?
 YD$ A
@@ -7803,7 +7850,7 @@ Yt$ A
 Y|$ D
 Y|$`A
 Y}?\0 >%
-Z	V_strtod
+Z	V_strnchr
 Z(IcB
 Z48wN39
 Z?SHX?
@@ -7819,7 +7866,6 @@ Zod(^?
 [Index: 
 [K]taM?
 [_?'N
-\	V_strtok
 \$ ATAVAWH
 \$ AVH
 \$ A_A^A\
@@ -7836,10 +7882,10 @@ Zod(^?
 \$ UVAVH
 \$ UVWATAUAVAWH
 \$ UVWATAVH
+\$ UVWATAWH
 \$ UVWAUAVH
 \$ UVWAVAWH
 \$ UVWH
-\$ UWATAVAWH
 \$ UWAUAVAWH
 \$ UWAWH
 \$ VAVAWH
@@ -7904,7 +7950,6 @@ Zod(^?
 \$H@2
 \$HA^A]A\_^
 \$HHcD$@L
-\$LA9
 \$P;D$p~
 \$PD8g@t!
 \$PH+
@@ -7916,6 +7961,7 @@ Zod(^?
 \$Pff
 \$Pt>L
 \$XA;
+\$XE3
 \$Xr	D8
 \$Xt-L
 \$Xt.L
@@ -7933,21 +7979,26 @@ Zod(^?
 \$htXL
 \$hu4H
 \$hu:M
-\$hu;H
 \$pM;
 \$rfA3
 \$x@80u
 \$xsFH
+\%0k%
+\-$k%
 \0 >%
 \0 >gM|
+\58k%
+\=,k%
 \A(fD
 \N\O\NZOt)s(r(
 \`>)CS>
 \ffff
+]	V_strtod
 ] D9[D
 ])6M>&
 ]0IcM@;
-]5fF7
+]5Nm7
+]5Zj4
 ]>)2X
 ]?K[`?n
 ]@A;\$
@@ -7959,9 +8010,11 @@ Zod(^?
 ^ H9^
 ^<IUr&
 ^?sYa?
+^@IcF8H
 ^RfN>
 ^\HcNlI
 ^hmpsv
+_	V_strtok
 _ ;_$t
 _(9w0
 _?K<`?
@@ -8029,7 +8082,6 @@ _stack_properties
 _startSample
 _system_properties
 _voicegraph
-`	V_tand
 ` UAVAWH
 `+!]?
 `.rdata
@@ -8045,7 +8097,7 @@ _voicegraph
 `A^_^
 `A^_^][
 `A_A\_][
-`A_A^A\^[
+`A_A^A\_^
 `A_A^A\_^[]
 `A_A^A\_^][
 `A_A^A]
@@ -8091,7 +8143,6 @@ _voicegraph
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a&M-=Z]<i*k)n-t&q&p&|
 a7hIw
 a?wSa?\
@@ -8198,6 +8249,7 @@ bLegalTypeChange
 bResample
 bSucceeded
 bSuccess
+bWasRecording == IsRecording()
 bWorldPositionIsValid
 backward
 bad address
@@ -8230,7 +8282,7 @@ bool8
 bp(=>?g
 broken pipe
 buffer too small
-c	V_tanhf
+c	V_tand
 c D8c7trH
 c [1>H'
 c(>\,
@@ -8334,6 +8386,7 @@ curve_defintion_type
 curve_tangent_mode_t
 curve_type
 custom_stack
+d	V_tanf
 d$ AV
 d$ E3
 d$ fI
@@ -8342,10 +8395,12 @@ d$(Hc
 d$(I+
 d$(fI
 d$0E3
+d$0E9&~qI
 d$0Hc
 d$0Ic
 d$0fA
 d$0fI
+d$0uBM
 d$8H;
 d$8HcD$0I
 d$8fD
@@ -8391,7 +8446,6 @@ d?000000`?
 d?Z<c?
 dFDFBB"
 d\xBH
-dataA
 dataH
 data_type
 dddd, MMMM dd, yyyy
@@ -8497,6 +8551,7 @@ executable format error
 execute_once
 exit_if_blocked
 expression
+f	V_tanhf
 f$;Iu
 f9)u4H9j
 f98tN
@@ -8582,10 +8637,10 @@ frames
 function
 function not supported
 g)>3j.>
-g4mt-
 g9@x!8
 g>M-a>Y
 g?``g?H
+gF,em
 gHM9oPt
 gM|?\0 
 gSB5*!
@@ -9152,7 +9207,7 @@ l$4fB
 l$6fB
 l$8E3
 l$8Hc
-l$8Hc-
+l$8Hc-_
 l$8Hc/
 l$8Hk
 l$8I+
@@ -9197,7 +9252,7 @@ l$XI;
 l$XMc(L
 l$X~3I
 l$`D+
-l$`Hc-aZ;
+l$`Hc-
 l$`I;
 l$`fA;
 l$`~9L
@@ -9272,6 +9327,7 @@ m_NumElements == 0
 m_PreviewInputs
 m_PreviewTweak
 m_Processors
+m_RecordingOutputs.FindAndRemove( pOutput )
 m_Root == InvalidIndex()
 m_RunTimePhonemes
 m_Sentences
@@ -9281,7 +9337,7 @@ m_TrackTable.IsValidHandle( nNewHandle )
 m_actionInstanceType
 m_actionType
 m_additionalOutputs
-m_analysisContainers
+m_analysisContainer
 m_audioMeters
 m_automaticControlInputs
 m_bApplyAntialiasing
@@ -9317,6 +9373,9 @@ m_bShouldPause
 m_bShouldVoiceDuck
 m_bSolo
 m_bSyncInstances
+m_bUseReference
+m_bUseReference == 0
+m_bUseReference == 1
 m_bandDesc
 m_branchPattern
 m_buffer.GetWriteAvailable() >= (int)nBytesDecoded
@@ -9485,10 +9544,8 @@ m_groupBoundingBoxMaxsOpvar
 m_groupBoundingBoxMinsOpvar
 m_groupList
 m_hCache != 0
-m_hSound
 m_handle.HasData()
 m_harmonics
-m_head != QUEUE_ITERATOR_INVALID
 m_impulseResponseInputs
 m_impulseResponseValues
 m_index.Count() == m_sources.Count()
@@ -9648,6 +9705,7 @@ m_sendList
 m_sendName
 m_shouldPlayClusterChild
 m_shouldPlayOpvar
+m_sound
 m_soundEventListeners.FindAndRemove( pListener )
 m_soundEventName
 m_soundEventVMix
@@ -9683,7 +9741,6 @@ m_voiceStateMutex.OwnedByCurrentThread()
 m_volumeScaling
 m_vsndInputs
 m_vsndName
-m_vsndReference
 mainGraph
 make_vertical
 mask_type
@@ -10963,8 +11020,9 @@ t7D8(t2H
 t7D;C0}1H
 t7HcP
 t8D90t1D9
-t<;S0}7H
+t8fff
 t<dE;
+t=D;K0}7H
 t?;S0}:H
 t?;tt?74t?
 t?Dlt?e
@@ -10982,7 +11040,6 @@ tED;S0}?H
 tEHc~
 tGA8>tB
 tHD80tCH
-tHR0{wY
 tHf95
 tIHcNlI
 tILcwpB
@@ -10999,7 +11056,6 @@ tRD8}
 tRH9)tMH
 tRIcw 
 tRLcY
-tS95o
 tS;+ 
 tUD8e
 tUL99tPH
@@ -11009,6 +11065,7 @@ tYHcA
 tYHcp
 tZxXH
 t\@:y
+t^@8+tY3
 t^@8/tY3
 t^x\H
 t_D8&tZ3
@@ -11028,7 +11085,6 @@ tc@88t^3
 tcA9y
 td@88t_3
 te@80t`3
-te@83t`3
 te@87t`3
 teHc[ 
 teHc_ 
@@ -11042,6 +11098,7 @@ tfD9~0u
 tf~d@2
 tg@80tb3
 tg@87tb3
+tgA8,$ta3
 tgA86tb3
 tgD8+tb3
 tgD8.tb3
@@ -11066,7 +11123,6 @@ tkD80tf3
 tkHc^ 
 tl9x(H
 tlA86tg3
-tlA87tg3
 tlD8'tg3
 tlvj@2
 tmE88thI
@@ -11111,6 +11167,7 @@ try_get_function
 try_get_module
 twHcHX
 twIcF
+txD90}
 tyE8 ttI
 tzL97u
 t{D8#tv3
@@ -11120,7 +11177,7 @@ u"f9s$u
 u$D8r(t
 u%@8j(t
 u%HcD$LH
-u%L95<S?
+u%L95
 u&8OTt
 u(A8t$
 u)9s8t$H
@@ -11372,13 +11429,13 @@ z?Mbz?H5z?
 zG(knN
 zUuSA
 zY;>u:m	
+zYAk#
 { AVH
 { AWH
 { H9{
 {09;v+
 {0x%x}
 {0}&H
-{3n[f
 {89{$v
 {@9s8|AH
 {@u!H
@@ -11436,7 +11493,6 @@ zY;>u:m
 |$(HcL$ H
 |$(Hi
 |$09ot~
-|$0A9
 |$0A9n
 |$0E3
 |$0E9|$`
@@ -11447,7 +11503,6 @@ zY;>u:m
 |$0t	H
 |$0tjL
 |$0u=H
-|$0uBM
 |$0uE
 |$4E3
 |$6fD+
@@ -11490,6 +11545,7 @@ zY;>u:m
 |$Ht	H
 |$H~ H
 |$H~!H
+|$LA9
 |$NfD
 |$P93vS
 |$P9E
@@ -11597,6 +11653,7 @@ zY;>u:m
 }J;Ea
 }K;X$
 }LuHO
+}P:JPB
 }T>k6Q>]
 }ULcU
 }ZE9B@t)A
@@ -11609,6 +11666,7 @@ zY;>u:m
 }qG;<!}KA
 }rf[QG<4+#
 }vpjd^WQKE?8-
+}ymA-
 ~ fff
 ~"IcD
 ~'fff

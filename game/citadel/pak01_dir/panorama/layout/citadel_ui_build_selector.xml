@@ -7,6 +7,7 @@
 	<snippets>
 		<snippet name="HeroBuildDropDownItem">
 			<Panel class="HeroBuildDropDownItem" acceptsfocus="true" onmouseover="CitadelUIShowTextTooltip( &apos;{s:build_desc}&apos;, &apos;&apos;, &apos;&apos; ); CitadelPlayUISound( EMainMenuHover )" onmouseout="CitadelUIHideTextTooltip()">
+				<Label id="DescIcon" class="TooltipOverride" text="Your Build" />
 				<Label class="BuildName" text="{s:build_name}" />
 			</Panel>
 		</snippet>

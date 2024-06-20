@@ -281,6 +281,12 @@
 		"upgrade_clip_size_3"				"Extra Large Magazine"
 		"upgrade_clip_size_3_desc"			"Greatly Increases <span class=\"highlight\">ammo</span>."
 
+		"upgrade_ammo_scavenger"			"Ammo Scavenger"
+		"upgrade_ammo_scavenger_desc"		"Any time you secure or deny a Soul you <span class=\"highlight\">get ammo back</span> and gain <span class=\"highlight\">fire rate</span>."
+		AmmoPerSoul_label					"Ammo Per Soul"
+		AmmoScavengerDuration_label			"Fire Rate Duration"
+		AmmoScavengerDuration_postfix		"s"
+
 		"upgrade_stabilizer"				"Stabilizer"
 		"upgrade_stabilizer_desc"		"Removes the <span class=\"highlight\">movement speed penalty</span> while shooting, and increases <span class=\"highlight\">bullet speed</span>."
 
@@ -301,7 +307,7 @@
 		"upgrade_small_attack_speed_desc"	"Increases your <span class=\"highlight\">fire rate</span>."
 
 		"upgrade_targeted_silence"		"Silence Glyph"
-		"upgrade_targeted_silence_desc"	"Fires a projectile which <span class=\"highlight\">silences</span> the target and <span class=\"highlight\">amplifies your Spirit damage</span> against it."
+		"upgrade_targeted_silence_desc"	"Fires a projectile which <span class=\"highlight\">silences</span> the target and <span class=\"highlight\">amplifies your Spirit damage</span> against it. Silence does not interrupt channeling abilities."
 
 		"upgrade_proc_silence"			"EMP Bullets"
 		"upgrade_proc_silence_desc"		"Your bullets charge up an <span class=\"highlight\">EMP</span> on enemy heroes that will <span class=\"highlight\">prevent targets from using abilities</span>. Victims are immune to emp bullets for <span class=\"highlight\">{s:ImmunityDuration}s</span> after application expires."
@@ -439,7 +445,7 @@
 
 		"upgrade_fervor"			"Frenzy"
 		"upgrade_fervor_passive"	"While you are <span class=\"highlight\">below {s:LowHealthThreshold}% health</span>, you gain stat bonuses."
-
+		"FervorTechResist_postfix"  "%"
 		"upgrade_tech_defense_shredders"		"Soul Shredder Bullets"
 		"upgrade_tech_defense_shredders_desc"	"Your bullets apply a debuff that <span class=\"highlight\">amplifies your spirit damage</span> against the target and grants you <span class=\"highlight\">spirit lifesteal</span> against them."
 		ShreddersTechAmp_label				"Spirit Amp"
@@ -560,6 +566,11 @@
 		upgrade_critshot_desc				"Your bullets have a chance to be empowered, causing them to deal <span class=\"highlight\">bonus damage</span> and <span class=\"highlight\">slow</span> on hit."
 		CritDamagePercent_label				"Bonus Damage"
 		CritDamagePercent_postfix			"%"
+
+		upgrade_veil_walker					"Veil Walker"
+		upgrade_veil_walker_desc			"Walking through a <span class=\"highlight\">cosmic veil</span> restores <span class=\"highlight\">all bullet and spirit shields</span>, grants a brief movespeed boosted <span class=\"highlight\">stealth</span>, and bonus <span class=\"highlight\">fire rate</span> for your next magazine."
+
+
 		//-----------------------------------------------------------------------------
 		// Upgrades: Tech
 		//-----------------------------------------------------------------------------
@@ -645,6 +656,10 @@
 		"upgrade_kinetic_sash"			"Kinetic Dash"
 		"upgrade_kinetic_sash_desc"		"Your next <span class=\"highlight\">Dash-jump</span> does not cost an extra stamina and you gain <span class=\"highlight\">fire rate</span> and <span class=\"highlight\">temporary bonus ammo</span> until your next reload. Lasts up to {s:AbilityDuration}s."
 		modifier_kinetic_sash_triggered	"Kinetic Dash"
+
+		"upgrade_active_reload"			"Active Reload"
+		"upgrade_active_reload_desc"	"While reloading, pressing [{s:key_reload}] during the highlighted portion will cause you to <span class=\"highlight\">instantly regain your clip</span> and grant you +{s:BulletLifestealPercent}% Bullet Lifesteal and +{s:BonusFireRate}% Fire Rate for {s:AbilityDuration}s."
+		"upgrade_active_reload/buff"	"Active Reload"
 
 		"upgrade_arcane_medallion"		"Arcane Medallion"
 		"upgrade_arcane_medallion_desc"	"Whenever you deal <span class=\"highlight\">{s:MinimumDamage} Spirit damage</span> or more in a single hit against an enemy hero, gain <span class=\"highlight\">temporary Spirit Power</span>."
@@ -765,9 +780,15 @@
 		"BonusChannelTimePercentage_postfix"	"%"
 		"ChannelBulletShield_label"				"Bullet Barrier While Channeling"
 
+		"upgrade_infuser"				"Infuser"
+		"upgrade_infuser_desc"			"Gain <span class=\"highlight\">Spirit Power</span> and <span class=\"highlight\">Spirit Lifesteal</span>."
+
 		"upgrade_acolytes_glove"				"Spirit Strike"
 		"upgrade_acolytes_glove_desc"			"When you perform a <span class=\"highlight\">light or heavy melee</span> attack against a hero, gain <span class=\"highlight\">temporary Spirit Power</span>."
 		modifier_acolytes_glove_triggered		"Spirit Strike"
+
+		"upgrade_melee_charge"					"Melee Charge"
+		"upgrade_melee_charge_desc"				"Increases your melee charge distance. When you perform a <span class=\"highlight\">heavy melee</span> attack against an enemy, your weapon <span class=\"highlight\">reloads instantly</span>."
 
 		"upgrade_charmed_wraps"					"Charmed Wraps"
 		"upgrade_charmed_wraps_desc"			"Your abilities get their <span class=\"highlight\">cooldowns reduced</span> when you perform a <span class=\"highlight\">heavy melee</span> attack against a hero (or <span class=\"highlight\">two light melee</span> attacks within {s:LightMeleeTimeWindow}s)."
@@ -854,9 +875,9 @@
 		"upgrade_proc_melee_stun"						"Melee Knockdown"
 		"upgrade_proc_melee_stun_desc"					"The 3rd hit of your <span class=\"highlight\">melee combo</span> will <span class=\"highlight\">stun</span> enemies."
 		
-		"upgrade_reduce_debuff_duration"				"Debuff Reducer"
+		"upgrade_reduce_debuff_duration"				"Debuff Remover"
 		"upgrade_reduce_debuff_duration_desc"			"Reduces the <span class=\"highlight\">duration</span> of all negative effects applied to you."
-		"upgrade_reduce_debuff_duration_active_desc"	"<span class=\"highlight\">Remove all debuffs</span>."
+		"upgrade_reduce_debuff_duration_active_desc"	"<span class=\"highlight\">Remove all debuffs</span>. Cannot be used while stunned or slept."
 
 		"upgrade_high_impact_armor"						"High Impact Armor"
 		"upgrade_high_impact_armor_desc"				"Provides protection against high-damage bullets. Any <span class=\"highlight\">bullet damage</span> portion above the threshold is reduced by {s:DamageReduction}%."
@@ -960,6 +981,9 @@
 		upgrade_unstoppable						"Unstoppable"
 		upgrade_unstoppable_desc				"Gain Spirit Resist, suppress <span class=\"highlight\">negative status effects</span> and become <span class=\"highlight\">immune</span> to <span class=\"highlight\">stun, silence, sleep, root, disarm, and tether</span>."
 		
+		upgrade_colossus				"Colossus"
+		upgrade_colossus_desc			"Gain <span class=\"highlight\">Bullet and Spirit Resist</span>, and <span class=\"highlight\">slow enemies nearby</span>. Your model size grows by {s:ModelScaleGrowth}%."
+
 		"upgrade_ablative_coat"					"Ablative Coat"
 		"upgrade_ablative_coat_desc"			"Provides <span class=\"highlight\">Bullet Resist</span> but you lose some each time you take Weapon Damage. Loss can only happen once every {s:StackLossFrequency}s. Bullet Resist is restored when out of combat."
 		"upgrade_ablative_coat_innate"			"Increases your <span class=\"highlight\">forward movement speed</span> over time. If Ablative Coat is reduced to 0 Bullet Resist, taking damage will reset the effect for <span class=\"highlight\">1.5s</span>"
@@ -1006,7 +1030,7 @@
 		"upgrade_zipine_mastery"					"Zip Line Mastery"
 		"upgrade_zipine_mastery_desc"				"Zip line speed <span class=\"highlight\">accelerates</span> and allows you to use <span class=\"highlight\">neutral</span> zip lines and capture them while zip lining.  Provides a movement speed bonus when jumping off a zip line whose duration increases the longer you are on the zip line."
 		
-		"upgrade_rocket_boots"						"Majestic Leap"
+		"upgrade_rocket_boots"						"Majestic Leap - Disabled"
 		"upgrade_rocket_boots_desc"					"<span class=\"highlight\">Launch yourself</span> high into the air. Cannot be used for {s:InteruptCooldown}s if damaged by enemy Hero."
 		
 		"upgrade_rocket_booster"					"Majestic Leap"

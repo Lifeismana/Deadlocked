@@ -11,6 +11,7 @@
 	JS_STRING
 	TYPE_BOOL
 	TYPE_ENUM
+	V_fmodf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
@@ -49,7 +50,7 @@
   Problem     : Enum value did not match field type:
   Problem     : Field is not the right type for this message:
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -133,6 +134,7 @@
  HcBLM
  HcD$PI
  HcD$`I
+ K:^vL
  Lc)H
  NETWORK_DISCONNECT_CLIENT_NO_MAP
  NETWORK_DISCONNECT_REJECT_BANNED
@@ -506,7 +508,6 @@ $schemasystem/schema_enable_defines.h
 (D$0L
 (D$0f
 (D$@B
-(D$@D
 (D$@L
 (D$@f
 (D$Pf
@@ -518,9 +519,9 @@ $schemasystem/schema_enable_defines.h
 (HcCx
 (L$ D
 (L$0B
-(L$0D
 (L$0H
 (L$PD
+(L$`D
 (Lc)H
 (NETWORK_DISCONNECT_INVALID_MESSAGE_ERROR
 (NETWORK_DISCONNECT_KICKED_HOSTAGEKILLING
@@ -530,17 +531,19 @@ $schemasystem/schema_enable_defines.h
 (NETWORK_DISCONNECT_SERVER_REQUIRES_STEAM
 (NETWORK_DISCONNECT_STEAM_AUTHALREADYUSED
 (T$ I
-(T$ L
 (T$ fD
 (T$0D
 (T$@3
 (T$@D
+(T$PH
 (T?j?Y
 (\$0D
+(\$@L
 (]	.(0
 (_^][
 (cannot determine missing fields for lite message)
 (d$ H
+(d$0D
 (d$`3
 (d$p3
 (f*^[0
@@ -606,7 +609,6 @@ $schemasystem/schema_enable_defines.h
 )D$0L
 )D$0f
 )D$0fH
-)D$@D
 )D$@H
 )D$@L
 )D$@f
@@ -621,7 +623,6 @@ $schemasystem/schema_enable_defines.h
 )L$ D
 )L$0A
 )L$0C
-)L$0Lc
 )L$0f
 )L$PD
 )NETWORK_DISCONNECT_NO_PEER_GROUP_HANDLERS
@@ -629,14 +630,15 @@ $schemasystem/schema_enable_defines.h
 )NETWORK_DISCONNECT_REQUEST_HOSTSTATE_IDLE
 )T$ A
 )T$ E
-)T$ Ic
 )T$ fD
 )T$pH
 )T$pf
 )\$0H+
+)\$@D
 )d$ H
 )d$0D
 )d$`D
+)l$ Lc
 )l$ fD
 )l$PD
 )l$`A
@@ -704,6 +706,7 @@ $schemasystem/schema_enable_defines.h
 ,W5y+
 ,X< w
 ,j.b0^2`4^6`8^:f<
+,uWLc
 -#GameUI_Disconnect_LocalProblem_NetworkConfig
 -BH>t
 -NETWORK_DISCONNECT_DIRECT_CONNECT_RESERVATION
@@ -917,16 +920,16 @@ $schemasystem/schema_enable_defines.h
 .xdata$x
 /2GG>!B
 />58d%
-/D$Tr 
-/D$`w
+/D$Lr 
+/D$Xw
 /D$pv
 /D$tv
 /D$xv
 /D$|v
 /D(\w
-/T$Xr
-/T$dw
-/d$\w
+/T$Pr
+/T$\w
+/d$Tw
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -937,7 +940,6 @@ $schemasystem/schema_enable_defines.h
 08@HP
 08@HR
 0><[cZUg^>
-0A9~ 
 0A^A\_
 0A^^[
 0A^^]
@@ -961,13 +963,14 @@ $schemasystem/schema_enable_defines.h
 0A_A^_^]
 0D;v<|
 0D;{<
+0GR{>9(
 0HcD$pM
 0Lc\$`I
 0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
 0X8b?~
 0iN>/
-0t,Ic
-0tgHc
+0t-Ic
+0tdHc
 0w0c1
 0}0i1
 1#IND
@@ -987,7 +990,7 @@ $schemasystem/schema_enable_defines.h
 220323000000Z
 220801000000Z
 230714000000Z
-240613154242Z0/
+240620161257Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1019,6 +1022,7 @@ $schemasystem/schema_enable_defines.h
 6*f(_
 6I]Dc
 6OB,n_
+6c'Z^:hwR
 6p7MOf
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
@@ -1030,6 +1034,7 @@ $schemasystem/schema_enable_defines.h
 8A]_^[
 8A^_^[
 8A_A]_^
+8A_A^A]A\_^][
 8A_A^^[
 8Csinf
 8D$@t
@@ -1044,6 +1049,7 @@ $schemasystem/schema_enable_defines.h
 9)~4H
 9)~P3
 90u(H
+92vr+
 98t H
 98~(H
 98~+H
@@ -1057,6 +1063,7 @@ $schemasystem/schema_enable_defines.h
 9St~)
 9V8~2
 9V<~)E3
+9Y@t'D
 9Z4~13
 9Zp~3I
 9\$hu
@@ -1073,8 +1080,7 @@ $schemasystem/schema_enable_defines.h
 9t$Hu
 9t$Pu	
 9valu
-9x(~\H
-9y(t(D
+9x@~\H
 9{p~83
 9{t~:3
 9{|~<3
@@ -1084,7 +1090,6 @@ $schemasystem/schema_enable_defines.h
 9|$Pu
 9|$`u
 9|$xu
-:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :>)*	v
@@ -1093,9 +1098,9 @@ $schemasystem/schema_enable_defines.h
 ;.u1L
 ;?0123456789:;<=>?
 ;D$H}yH
-;E(sAL
+;E@sAL
 ;Eh~AA
-;F(s:L
+;F@s:L
 ;Fh~AA
 ;Fl~AA
 ;H9>&X
@@ -1106,7 +1111,7 @@ $schemasystem/schema_enable_defines.h
 ;YA1D
 ;\$p|
 ;q }kH
-;s u	H
+;w8u	H
 ;{,}"H
 ;|$`u
 <	w	@
@@ -1129,6 +1134,7 @@ $schemasystem/schema_enable_defines.h
 <undefined>
 <unknown>
 <utK@:
+=	V_qsort_s
 =%H5<mN
 ==MQ?
 =SHX?
@@ -1224,7 +1230,6 @@ $schemasystem/schema_enable_defines.h
 ?UUUUUU
 ?WriteAsBinary@KeyValues@@QEBA_NAEAVCUtlBuffer@@@Z
 ?YA1A
-?_?<b
 ?f`Y4
 ?kxG2)
 ?{Q}<
@@ -1237,7 +1242,6 @@ $schemasystem/schema_enable_defines.h
 @.data
 @.reloc
 @08@HPX`hpx
-@0D9$(u#Lc3H
 @0HcB
 @84)u
 @8HcB
@@ -1276,9 +1280,11 @@ $schemasystem/schema_enable_defines.h
 @A_A^_
 @A_A^_^]
 @A__[
+@HD9$(u#Lc3H
 @HHcB$;B(u
 @HPX&I
-@HPX`hvp:
+@HPX`hv@A
+@HVPO
 @Hc93
 @PHcB(;B,u
 @SATAUAVAWH
@@ -1339,7 +1345,6 @@ $schemasystem/schema_enable_defines.h
 @UVWATAUH
 @UVWAVH
 @UVWH
-@UWATAUAVH
 @UWAVAWH
 @UWAVH
 @UWAWH
@@ -1347,7 +1352,6 @@ $schemasystem/schema_enable_defines.h
 @VWAVAWH
 @VWAWH
 @WATAUAWH
-@WATAVH
 @WAUAVH
 @WAVAWH
 @WAVH
@@ -1356,7 +1360,7 @@ $schemasystem/schema_enable_defines.h
 @_RDATA
 @b;zO]
 @ffffff
-@hc^|
+@jpd~
 @t#H;
 @tZH;
 @tfH;
@@ -1377,12 +1381,10 @@ A+P@H
 A+Q A
 A03>A|
 A08HcQ
-A0HcI(H
 A8}(u
 A9,A$
 A9<Fu
 A9@(|
-A9GXt
 A9]8~;3
 A9]8~n3
 A9]P~B3
@@ -1390,7 +1392,9 @@ A9]h~@3
 A9^ ~G3
 A9t$ 
 A9t$ ~EL
-A9w(~jL
+A9u(~mL
+A9u@~jL
+A;<$|
 A;D$ 
 A;Fp~DA
 A;Ft~DA
@@ -1408,9 +1412,10 @@ A;]h|
 A;^ |
 A;n(|
 A;p |bH
-A;w u	I
+A;w8u	I
 A;} |
 A;}8|
+A;}@|
 A;}P|
 A;}h|
 A;~ |
@@ -1421,6 +1426,7 @@ AABB_t
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
+AHHcI@H
 AK>(v
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 ATAUAVH
@@ -1454,7 +1460,6 @@ A_A\_]
 A_A]A\^[
 A_A]A\_^[
 A_A]A\_^]
-A_A]]
 A_A]_^[]
 A_A^A\
 A_A^A\_]
@@ -1633,6 +1638,7 @@ CD$`H
 CD$hH
 CD$pH
 CD$xH
+CD2V3
 CEHandleNetworkableInt
 CEntityMsg
 CGeoViewVertex::Serialize
@@ -1740,7 +1746,6 @@ CNETMsg_SpawnGroup_Unload
 CNETMsg_SplitScreenUser
 CNETMsg_StringCmd
 CNETMsg_Tick
-COPfA
 COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
 COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
 COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
@@ -1915,6 +1920,8 @@ CUtlMemory<struct AggregateMeshInfo_t,int>::Swap
 CUtlMemory<struct AggregateSceneObject_t,int>::Grow
 CUtlMemory<struct AggregateSceneObject_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct AggregateSceneObject_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct BoundsElem_t,int>::Grow
+CUtlMemory<struct BoundsElem_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CBoxMerge::BoxMerge_t *,int>::Grow
 CUtlMemory<struct CBoxMerge::BoxMerge_t *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CClusterBoundsList::elem_t,int>::Grow
@@ -1932,6 +1939,8 @@ CUtlMemory<struct CVoxCluster::MergeCost_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CVoxCluster::VoxLeafCluster_t,int>::Grow
 CUtlMemory<struct CVoxCluster::VoxLeafCluster_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CVoxCluster::VoxLeafCluster_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CVoxelSampler3::ClusterData_t,int>::Grow
+CUtlMemory<struct CVoxelSampler3::ClusterData_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CVoxelSampler3::LeafRegion_t,int>::Grow
 CUtlMemory<struct CVoxelSampler3::LeafRegion_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CVoxelSampler3::LeafRegion_t,int>::Grow::<lambda_2>::operator ()
@@ -2034,7 +2043,7 @@ CUtlMemory_RawAllocator<unsigned int>::Grow
 CUtlMultiJobProcessor::MarkJobFinished
 CUtlMultiJobProcessor::StartSubmittingInitialJobs
 CUtlMultiJobProcessor::WaitForCompletion::<lambda_1>::operator ()
-CUtlQueue<int,class CUtlMemory<int,int> >::RemoveAtHead
+CUtlQueue<int,class CUtlMemory<int,int> >::RemoveAtHead::<lambda_1>::operator ()
 CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int> >::RemoveAll
 CUtlString
 CUtlStringToken::TrackTokenCreation( pString, nullptr )
@@ -2042,24 +2051,26 @@ CUtlVector
 CVisBuilder::Build
 CVisClusterList::CompactClusters
 CVisClusterList::MergeClusters
-CVisClusterList::RecomputeClusterCostLists(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis_cluster.cpp:453
-CVisClusterList::RecomputeClusterCostListsForPartition(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis_cluster.cpp:491
+CVisClusterList::RecomputeClusterCostLists(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis_cluster.cpp:472
+CVisClusterList::RecomputeClusterCostListsForPartition(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis_cluster.cpp:510
 CVisibilityMesh::LoadRTEFromFile
 CVoxCluster::MergeCandidateMinIndex
 CVoxCluster::SetEntry
 CVoxelSampler3::AdaptivelySampleBorders
-CVoxelSampler3::AdaptivelySampleBorders(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis3.cpp:3855
+CVoxelSampler3::AdaptivelySampleBorders(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis3.cpp:3981
 CVoxelSampler3::AddChildNode
 CVoxelSampler3::AddInsideRegionsToFlatClusterBounds
+CVoxelSampler3::ClusterHintID
+CVoxelSampler3::ClusterVoxelSize
 CVoxelSampler3::ClustersAlongLine
 CVoxelSampler3::CollapseRegions
 CVoxelSampler3::FinalizeRegions
 CVoxelSampler3::FlattenRegionsByStatus
 CVoxelSampler3::LeafStatusAlongLine
-CVoxelSampler3::MergeClusterSet(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis3.cpp:2966
-CVoxelSampler3::MergeClusterSet(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis3.cpp:2983
+CVoxelSampler3::MergeClusterSet(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis3.cpp:3054
+CVoxelSampler3::MergeClusterSet(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis3.cpp:3071
 CVoxelSampler3::MergeInsideRegions
-CVoxelSampler3::MergeInsideRegions(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis3.cpp:3060
+CVoxelSampler3::MergeInsideRegions(), C:\buildworker\citadel_staging_win64\build\src\utils\visbuilder\vis3.cpp:3148
 CVoxelSampler3::PreMergeClusters
 CVoxelSampler3::RasterizeSegments
 CVoxelSampler3::ValidateLeaves
@@ -2133,7 +2144,6 @@ Ct$HH
 Ct3Gt%
 C|$pH
 C|$xL
-D	V_sincosf
 D W?{W
 D!l$xA
 D$  L
@@ -2141,7 +2151,7 @@ D$ #C
 D$ .A
 D$ 1u<
 D$ 7\[OL
-D$ 9F
+D$ 9F(
 D$ 9P }
 D$ @2
 D$ BR
@@ -2170,7 +2180,7 @@ D$01u<
 D$09p }
 D$0<`u
 D$0@8{
-D$0A9D$
+D$0A9D$(
 D$0BR
 D$0E3
 D$0E9`
@@ -2184,11 +2194,12 @@ D$0H;S
 D$0HcFXL
 D$0HcH
 D$0HcP
-D$0Hc^(
+D$0Hc^@
 D$0L9P s
 D$0L;
 D$0Lc<
 D$0LcJ
+D$0Lc|$(H
 D$0Mc
 D$0f;
 D$0fD
@@ -2196,8 +2207,8 @@ D$0fH
 D$0gh
 D$0wI
 D$49C
+D$49w
 D$4E3
-D$4E;
 D$4H;
 D$8E3
 D$8H;
@@ -2230,10 +2241,10 @@ D$DE3
 D$HE3
 D$HH;
 D$HHc
-D$HIc\$(
+D$HIc\$@
 D$HJc
 D$HL9gXt
-D$HLc
+D$HLc3
 D$HM;
 D$Hf;
 D$HtF
@@ -2257,7 +2268,9 @@ D$PtP
 D$PtS
 D$T9E
 D$T;E
+D$TD;
 D$THc
+D$TfA
 D$XH;
 D$XH;E
 D$XHc
@@ -2276,10 +2289,8 @@ D$`Ic
 D$`L;
 D$`Mc
 D$`f;
-D$`u3M
 D$dHc
 D$h9t$P
-D$hE3
 D$hH;
 D$hf;
 D$hff
@@ -2293,8 +2304,9 @@ D$pHc
 D$pL;
 D$pMc
 D$pf;
+D$pu3M
 D$tA;
-D$tD;
+D$tD;s
 D$xE3
 D$xH+
 D$xLc
@@ -2303,8 +2315,12 @@ D$xf;
 D$xtnL
 D+3L9c0u	
 D+A@H
+D+LLc
+D+VfA
 D,\Ik
+D.Vf;D2Vf
 D1wPL
+D2TfB9D.Tt
 D8.uBH
 D81uUL9r
 D84:u
@@ -2344,7 +2360,7 @@ D9cH|
 D9cp~TI
 D9ct~UI
 D9d$ t+
-D9f(~LA
+D9f@~LA
 D9ft~8I
 D9f|~:I
 D9l$`u1
@@ -2363,7 +2379,7 @@ D;C |
 D;Gx}
 D;I }
 D;J(|
-D;K(u
+D;N@u
 D;d$@
 D;l$P
 D;q }pL9T$P
@@ -2420,6 +2436,9 @@ E9w ~*I
 E;A(|
 E;N }2Mc
 E;T$ |
+E;](|
+E;g(|
+E;|$(
 E>nEA
 EH*?H
 EHH;EPt
@@ -2511,15 +2530,14 @@ ExtraVertexStreamOverride_t
 ExtraVertexStreamOverride_t::KV3Transfer_DefaultKeys_Impl
 ExtraVertexStreamOverride_t::Schema_VerifyBindingIsRegistered
 E|$(D
-F	V_sinf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
 F H+H(I
 F H+p(I
 F L+@(I
-F(H9|
-F(I9|
+F(H9\
+F(I9\
 F89HXtRA
 F>qUxv
 FATAL
@@ -2596,9 +2614,13 @@ Found invalid proto option data for:
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+G	V_sincosf
 G @8pKu
 G D8`Kt~A
 G H+H(
+G(9Gpt
+G(A9Gpt
+G(Hc_p;
 G8D8`au
 G@L;D$hu
 GD$8H
@@ -2608,10 +2630,13 @@ GD$`H
 GD$hH
 GD$pH
 GEOVH
+GH3C0%
 GHL9d
-GIU7n
+GJ)?r
 GPD	u
 GPD	}
+GRf9ERt
+GRfA9ERt
 GSD9)~mE3
 GT$8H
 GT$HA
@@ -2734,10 +2759,12 @@ H-^Eu
 H8Lc$
 H9(tO
 H92tBA
+H950a
+H957:
+H95Ta
 H97u+A
 H98t2
 H98t7
-H9=0v
 H9A s
 H9A u)M
 H9C H
@@ -2853,8 +2880,6 @@ HcG@H
 HcGXL
 HcG\L
 HcH(I
-HcI(3
-HcIpH
 HcK H
 HcK Hc
 HcK,I
@@ -2866,14 +2891,15 @@ HcQ<H
 HcT$$
 HcU ;
 HcU8;
-HcUHI
 HcUP;
 HcUPH
 HcUh;
+HcUwI
 HcV ;
 HcV8;
 HcY H
-HcY(H
+HcY(3
+HcY@H
 Hc\$@A
 Hc\$HH
 Hcl$ 
@@ -2888,15 +2914,14 @@ Hcw(H
 HcyxE3
 Hc{(;{8u
 Hc{@;{Pu
-Hc{X;{hu
 Hc|$ L
 Hc|$P
-Hc|$x
+Hc|$xD
 HelpSystem_001
 Hex and octal numbers must be integers.
 Hint %.2f (%.2f regions)
 HostStateMgr001
-I	V_snprintf
+I	V_sinf
 I#I0H
 I#J0H
 I#M0H
@@ -2929,6 +2954,7 @@ INITY
 INVALID_CPPTYPE
 IPulseSystem_001
 Ic.A;n
+Ic4$M
 Ic6A;v
 Ic>Lc{(
 Ic@8I
@@ -2963,6 +2989,7 @@ Ic^XA
 Ic^lA
 Ic^pA
 Icm@H
+Icw(H
 IdempotencyLevel
 If intended, call ClearSpecificType first to discard the old value.%s
 If intended, call SetToNull() first to discard the old value.%s
@@ -3054,13 +3081,12 @@ January
 K HcC$Hc
 K$HcC(;
 K&>.yC
-K(A3FH%
 K(HcC,Hc
 K,+3A;
 K,HcC0;
 K0HcQ
 KERNEL32.dll
-KPfA;N
+KPf;O
 KV3 instances cannot be set to an unspecified specific type
 KV3 save text failed: %s
 KV3 save transfer failed: %s
@@ -3091,9 +3117,9 @@ KeyValues3::IsValidTypeCombination
 KeyValues3::Metadata_GetFilename::<lambda_1>::operator ()
 KeyValues3::Metadata_GetLineColumn::<lambda_1>::operator ()
 KeyValues3::SetMemberIntArray
-KxHcSpD
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#^0I
@@ -3120,7 +3146,7 @@ L$ fI
 L$ fff
 L$ |+L;
 L$$D;v
-L$$E9g
+L$$E9g(
 L$$Hc+E
 L$&8\$&t,8Y
 L$(8H
@@ -3171,12 +3197,13 @@ L$@uU
 L$AE3
 L$DH;T$xt
 L$EE3
-L$H;^
+L$H;^(
 L$HE3
 L$HH3
 L$HHc\$@I
 L$HLc
 L$Hf;
+L$Hr'
 L$LA;Ox
 L$ME3
 L$P+G$E3
@@ -3184,7 +3211,6 @@ L$PE3
 L$PH3
 L$PH;
 L$Pf;
-L$Pr'
 L$QE3
 L$XD;v$
 L$XH3
@@ -3223,6 +3249,8 @@ L+H0H
 L+i0I
 L9#u/H
 L92tDA
+L958v
+L95Gu
 L9;u	H
 L9@ s
 L9BHA
@@ -3237,7 +3265,7 @@ L9p tkI
 L9s u$H
 L9{0u	
 L9|$pt
-L;5qX
+L;5 b
 L;A r
 L;EPL
 L;Q s
@@ -3260,32 +3288,34 @@ LI0D;
 LITE_RUNTIME
 Label
 Lc'A+
+Lc3D;s
 Lc7D;w
 Lc9Jc<"D;
 Lc;D;{
 LcA,L
 LcA<E3
+LcI@L
 LcK H
 LcL$ 
 LcL$ 3
 LcL$ D
 LcL$$H
-LcL$XH
+LcL$XI
 LcL$hH
+LcN H
+LcN@L
 LcT$ E3
 LcT$dA
 Lc\$`
 Lcc(D;c8u
 Lcd$0
-Lcd$HD;
 Lcl$ A
-Lcs(D;s8u
-LcspD;
+Lcl$HD;
 Lct$PA
 Lct$XHc
 Lcv D
+Lcw@D;wPu
 Lc{xE
-Lc|$(H
 Leaf %d has missing voxels %llx
 LeaveCriticalSection
 Level geo input to VIS
@@ -3306,6 +3336,8 @@ LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 LookAtList
 M#}0I
+M0Mc_LI
+M6tCV
 M90u7
 M9` u
 M9g(u
@@ -3360,7 +3392,6 @@ MaterialUtils_001
 MathLib_Init
 McE8C
 McE8G
-McO(M
 Mc~(M
 Md$@A
 MemAlloc_StrDupFunc
@@ -3399,7 +3430,6 @@ MutualVisibilityMatrix
 N D94
 N(+V0
 N0+V8
-N0Mc_LI
 N3`d?
 N>O=I9
 NAN(IND)
@@ -3496,7 +3526,7 @@ Ordered object's memory was modified prior to construction
 Outside detection took %.2f seconds
 OverlayProjectionDirection
 P08@J
-P08JP@	
+P08J G	
 P>q_Y~
 P@HPX`hpx
 PA^A]A\^[
@@ -3565,6 +3595,7 @@ RegisterStringToken
 Release
 ReleaseMessage
 ReleaseSRWLockExclusive
+RemoveAtHead( temp )
 RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
@@ -3749,7 +3780,7 @@ T$8H+
 T$8I+
 T$8I;
 T$8Lc
-T$@A;O
+T$@A;O(
 T$@E;
 T$@H;
 T$@Mc
@@ -3841,13 +3872,11 @@ Type is already registered:
 UA>N0Wl
 UATAUAVAWH
 UATAUAWH
-UAUAWH
 UAVAWH
 UHH;UPt
 UNKNOWN_ENUM_VALUE_%s_%d
 USATAWH
 USAUAVH
-USAWH
 USVWATAUAVAWH
 USVWATAUI
 USVWATAVH
@@ -3862,7 +3891,7 @@ UUUUUUU
 UUUUUUUUH
 UVATAUAVH
 UVATAVAWH
-UVAUAWH
+UVAUH
 UVAVH
 UVAWH
 UVWATAUAVAW
@@ -3901,6 +3930,7 @@ UtlMemory_FailedAllocation
 V0H;V8t
 V6'?C
 V6E>`"(5
+VATAUAVH
 VAVAWH
 VApplication001
 VAsyncFileSystem2_001
@@ -3933,6 +3963,7 @@ VWAUAWH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 VXVSD
 V_GetFileExtension
 V_Int32ToString_Unsafe
@@ -3958,7 +3989,6 @@ V_StringToVector4D
 V_UInt16ToString_Unsafe
 V_UInt32ToString_Unsafe
 V_cosf
-V_fmodf
 V_~]	,
 Value must be "true" or "false" for boolean option "
 Value must be identifier for boolean option "
@@ -4037,11 +4067,11 @@ X VWATAUAVH
 X VWAUAVAWH
 X!t5~
 XA;n |
+XA^A]A\^
 XA^A]_^][
 XA^^][
 XA^_][
 XA_A]A\]
-XA_A]^]
 XA_A^A]A\_^[]
 XA_A^A]A\_^][
 XE;F |
@@ -4055,10 +4085,12 @@ Y\$8E
 Yd$0A
 Yd$4E
 You must build with -world before you can build with -vis!  Couldn't find raytrace.rte
+ZO1mW66
 Z\>z8
 ZdN=Y
 Zod(^?
 [*ncd>0
+[6js0
 [K]taM?
 [`fff
 [aOni*{
@@ -4112,7 +4144,6 @@ Zod(^?
 \$8HcV
 \$8I;
 \$@;\$D
-\$@D9+
 \$@E3
 \$@H;
 \$@Hc
@@ -4134,18 +4165,19 @@ Zod(^?
 \$pH;
 \$pMc,$Ic{0
 \$xu1H
+\80A9^ 
 \U%08x
 ])6M>&
 ]>)2X
 ]D$dA
-]D*8L
+]D.8L
 ]J<0"0i3
 ^,tyI
 ^<V7w
+^HIcn@H
 ^RfN>
 ^fD;]
 _ ;_$t
-_0Hco(H
 _8I;_@tj
 _8M9g(u\
 _RDATA
@@ -4174,9 +4206,8 @@ _nextafter
 _oD>Kg
 `+!]?
 `.rdata
-`:pZ	
+`:@a	
 `A]_[
-`A^A\_
 `A^_^
 `A^_^][
 `A_A^A\_^[]
@@ -4310,7 +4341,6 @@ d$0E3
 d$8Ict$
 d$8Ic|$
 d$@D9d$P|SH
-d$HD8
 d$HD;F
 d$HMc
 d$IfD
@@ -4373,8 +4403,10 @@ f9)u:H
 f9,Ju
 f9,~u
 f9<Ju
+f9CRt
 f9t$bu
 f;D$0t
+f;L+TH
 f;\$4
 f;\$4r
 f;\$<
@@ -4388,7 +4420,6 @@ f;\$\
 fA9	t	I
 fA9,Au
 fA99}
-fA;GPt
 fB9,Nu
 fB94Ou
 fB9<@u
@@ -4396,7 +4427,6 @@ fB9<A}1L
 fB9<Bu
 fB9<Hu
 fB9<{u
-fB;D9
 fD9	t(L
 fD9 t
 fD9!H
@@ -4414,7 +4444,6 @@ fD9;u
 fD9t$b
 fE9,Fu
 fE98t'
-fE;|$
 fG9$Ou
 fJBGo
 fakeplayer
@@ -4461,6 +4490,7 @@ gfffffffH;l$8
 gfffffffI
 gfffffffL
 gfffffffL+
+giR%i
 glview
 go_package
 group
@@ -4486,6 +4516,7 @@ http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
 i u!H
 i.uEL
+i?g{d.Q
 idempotency_level
 identifier removed
 identifier_value
@@ -4568,7 +4599,6 @@ l$@t	H
 l$HA_A^A]A\_^
 l$HH3
 l$HIc
-l$PD;+
 l$PH9C t;A
 l$PH;
 l$PL;
@@ -4641,6 +4671,7 @@ m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 m_bakedLightingInfo
 m_builderParams
+m_clusterData.IsValidIndex( nIndex )
 m_clusterList.IsValidIndex( nAdjCluster )
 m_clusterList[ i ].m_adjClusters.Count() == 0
 m_clutterSceneObjects
@@ -4663,7 +4694,6 @@ m_flags
 m_fragmentTransforms
 m_grassFileName
 m_hBuffer
-m_head != QUEUE_ITERATOR_INVALID
 m_infoOverlays
 m_inputLayoutFields
 m_instancePositions
@@ -4864,6 +4894,7 @@ o.tvH
 oD$ f
 oD$@H
 oI>O7
+oYP$|
 objc_class_prefix
 obwQ4
 oneof_decl
@@ -4966,11 +4997,9 @@ q(Lc6E
 qS>g?h3
 qangle
 quaternion
-q~=dZ
 r	Vr.>T
 r!fff
 r"fff
-r-Hc>H
 r7f;\$|
 r:f;\$|
 rKf;\$t
@@ -4998,10 +5027,8 @@ rsf;\$d
 ruby_package
 rvf;\$d
 s AWH
-s UWATH
 s WATAUAVAWH
 s"fff
-s09{(
 s1_mapname
 s7fff
 s8HcCP
@@ -5025,9 +5052,9 @@ sfixed64
 signon_state
 sint32
 sint64
+smHcL$0
 sm_pConfigRegistry->m_nCount >= 0 && sm_pConfigRegistry->m_nCount < V_ARRAYSIZE( sm_pConfigRegistry->m_pInfo )
 smfff
-snHcL$ 
 snan)
 soundevent
 source_code_info
@@ -5083,8 +5110,8 @@ t$ UWAWH
 t$ WATAUAVAWH
 t$ WAVAWH
 t$ WH
+t$$@8
 t$(D9c|~c
-t$(D9m
 t$(E3
 t$(I;
 t$0A+
@@ -5093,6 +5120,7 @@ t$0H+
 t$0H9
 t$0Hi
 t$0Ic
+t$89]
 t$8;;
 t$8E3
 t$8H+
@@ -5102,6 +5130,7 @@ t$8Hi
 t$8I+
 t$8Lk
 t$8ff
+t$8~ H
 t$@;i
 t$@E3
 t$@H+
@@ -5116,13 +5145,11 @@ t$HE;
 t$HH+
 t$HH9r
 t$HHc
-t$HHk
 t$HJc
 t$HcD
 t$Ht	H
 t$PH;
 t$PHc
-t$PHc3
 t$TD;v$
 t$XA+
 t$XE3
@@ -5147,20 +5174,20 @@ t%fff
 t'<Zt
 t'HcW
 t)IcV
+t)Lc?D;
 t*HcA
 t*HcC
 t+H+}
-t,IcL$(
+t,IcL$@
 t,Lc;D;{
 t-Lck
 t.fff
-t0Lc7D;w
 t2IcE
 t4I92u/M
 t5Hc.
 t7Hc>
 t7HcP
-t;Hcs(;s8u
+t;Hcs@;sPu
 t;LcF
 t?HcS
 tAHc3;s
@@ -5168,7 +5195,6 @@ tEHcR
 tIHcA
 tIHcC
 tLLcx|M
-tLhDg
 tMI92uHM
 tQfD9 tK
 tRLcY
@@ -5197,13 +5223,13 @@ tick_interval
 tier0.dll
 timed out
 times
+tmJc,.
 tnL9f
 too many files open
 too many files open in system
 too many links
 too many symbolic link levels
-trIcO
-trJct-
+trIcO(
 trailing_comments
 transform
 trfff
@@ -5232,11 +5258,12 @@ u,!T$(H!T$
 u-H;A
 u.H;A
 u.H;P
+u08M7u]
 u1!D$0H
 u1fff
-u3D;C
+u3B;l.
+u3D;G
 u3HcH<H
-u4B;t-
 u4D9v
 u4I9}(
 u6fff
@@ -5269,6 +5296,7 @@ v?,	m2
 v@D8s(t
 vAD8s(t
 vDirToSun
+vH9^@
 vKfffff
 vZHc~
 val_bool
@@ -5326,7 +5354,6 @@ xKD;I
 xVD;A
 xWI96tRI
 x_^][
-xbE;E
 xrMc4
 y\PD>!
 yxxxxxxxH
@@ -5338,7 +5365,6 @@ zY;>u:m
 {@9s8|AH
 {pHcs`Hc
 {un'%
-{xHc[pL
 |#tAM
 |$ ATAVAWH
 |$ AUAVAWH
@@ -5369,9 +5395,9 @@ zY;>u:m
 |$0H;
 |$0Hc
 |$0Ic
+|$0L+
 |$0M+
 |$0uE
-|$8A9~
 |$8H9Cxt;A
 |$8H;
 |$8Hc
@@ -5389,13 +5415,13 @@ zY;>u:m
 |$@Hc}
 |$DE3
 |$H9W
+|$H9~@
 |$H;|$LL
-|$HA9
 |$HE9g
 |$HH;
 |$HM;
 |$PE3
-|$PH+
+|$PHc;
 |$PI;
 |$PL;
 |$PM;
@@ -5435,7 +5461,7 @@ zY;>u:m
 }0HcC
 }>;_$
 }LuHO
-}]LcD$$E
+}\LcD$4E
 ~ 	uIH
 ~ $s%r
 ~ HcF8
@@ -5445,7 +5471,6 @@ zY;>u:m
 ~;fff
 ~@fff
 ~Offf
-~[fff
 ~qj#k"
 ~t&LN
 ~xI9~PI

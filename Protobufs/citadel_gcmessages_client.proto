@@ -102,6 +102,8 @@ enum EGCCitadelClientMessages {
 	k_EMsgClientToGCGetDiscordLinkResponse = 9206;
 	k_EMsgClientToGCPartySetMode = 9207;
 	k_EMsgClientToGCPartySetModeResponse = 9208;
+	k_EMsgClientToGCGrantForumAccess = 9209;
+	k_EMsgClientToGCGrantForumAccessResponse = 9210;
 }
 
 enum ECitadelAccountPermissionFlag {
@@ -186,6 +188,7 @@ message CSOGameAccountClient {
 		k_eGotInitialHeroes = 4;
 		k_eTeamMember = 8;
 		k_eClaimedDiscordLink = 16;
+		k_eClaimedForum = 32;
 	}
 
 	optional uint32 account_id = 1 [(key_field) = true];
@@ -290,25 +293,6 @@ message CMsgClientToGCIsInMatchmaking {
 
 message CMsgClientToGCIsInMatchmakingResponse {
 	optional bool in_matchmaking = 1;
-}
-
-message CMsgClientToGCDevForceMatchFormation {
-	enum EOperation {
-		k_eOp_ForceMatchFormation_Incomplete = 0;
-		k_eOp_DisableMatchMaking = 1;
-		k_eOp_EnableMatchMaking = 2;
-		k_eOp_ForceBotMatchFormation_Incomplete = 3;
-		k_eOp_ForceMatchFormation_Complete = 4;
-		k_eOp_PauseMatchmakingWindow = 5;
-		k_eOp_UnpauseMatchmakingWindow = 6;
-	}
-
-	optional .CMsgClientToGCDevForceMatchFormation.EOperation operation = 1 [default = k_eOp_ForceMatchFormation_Incomplete];
-}
-
-message CMsgClientToGCDevForceMatchFormationResponse {
-	optional bool success = 1;
-	optional string error_message = 2;
 }
 
 message CMsgDevMatchInfo {
@@ -1324,4 +1308,23 @@ message CMsgClientToGCGetDiscordLinkResponse {
 	optional .CMsgClientToGCGetDiscordLinkResponse.EResponse response = 1 [default = k_eInternalError];
 	optional string discord_link = 2;
 	optional uint32 valid_hours = 3;
+}
+
+message CMsgClientToGCGrantForumAccess {
+	optional string email = 1;
+}
+
+message CMsgClientToGCGrantForumAccessResponse {
+	enum EResponse {
+		k_eInternalError = 0;
+		k_eSuccess = 1;
+		k_eAlreadyClaimed = 2;
+		k_eDisabled = 3;
+		k_eEmailUsed = 4;
+	}
+
+	optional .CMsgClientToGCGrantForumAccessResponse.EResponse response = 1 [default = k_eInternalError];
+	optional string email = 2;
+	optional string username = 3;
+	optional string forum_password = 4;
 }

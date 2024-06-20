@@ -3,43 +3,31 @@
 	StatusEffects.InvisRevealed = 
 	{
 		base = "Base.Status.Effect.3d"
-		volume = -6
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/invis_interrupt.vsnd",
-		]
+		volume = -6.000000
+		vsnd_files = "sounds/gameplay/status_effects/invis_interrupt.vsnd"
 		vsnd_duration = 1.743855
 	}
 	modifier_invis.ModifierCreated = 
 	{
 		base = "Base.Mod.3d"
 		pitch = 1.010000
-		vsnd_files = 
-		[
-			"sounds/mods/tech/smoke/cast.vsnd",
-		]
+		vsnd_files = "sounds/mods/tech/smoke/cast.vsnd"
 		vsnd_duration = 3.201125
 	}
 	modifier_invis.ModifierLoopSelf = 
 	{
 		base = "Base.Mod.3d"
-		delay = 0
-		delay_rand_min = -1
-		delay_rand_max = 0
+		delay = 0.000000
+		delay_rand_min = -1.000000
+		delay_rand_max = 0.000000
 		pitch = 1.010000
-		vsnd_files = 
-		[
-			"sounds/mods/tech/smoke/lp.vsnd",
-		]
+		vsnd_files = "sounds/mods/tech/smoke/lp.vsnd"
 		vsnd_duration = 17.451458
 	}
 	StatusEffects.EMP_Impact = 
 	{
 		base = "Base.Status.Effect.3d"
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/emp_impact.vsnd",
-		]
+		vsnd_files = "sounds/gameplay/status_effects/emp_impact.vsnd"
 		vsnd_duration = 4.351746
 	}
 	StatusEffects.EMP_LP = 
@@ -59,10 +47,7 @@
 		delay = 0.000000
 		delay_rand_min = -1.000000
 		delay_rand_max = 0.000000
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/emp_lp_01.vsnd",
-		]
+		vsnd_files = "sounds/gameplay/status_effects/emp_lp_01.vsnd"
 		vsnd_duration = 6.730227
 	}
 	StatusEffects.EMP_LP_02 = 
@@ -71,10 +56,7 @@
 		delay = 0.000000
 		delay_rand_min = -1.000000
 		delay_rand_max = 0.000000
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/emp_lp_02.vsnd",
-		]
+		vsnd_files = "sounds/gameplay/status_effects/emp_lp_02.vsnd"
 		vsnd_duration = 8.461519
 	}
 	StatusEffects.EMP_LP_03 = 
@@ -83,48 +65,36 @@
 		delay = 0.000000
 		delay_rand_min = -1.000000
 		delay_rand_max = 0.000000
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/emp_lp_03.vsnd",
-		]
+		vsnd_files = "sounds/gameplay/status_effects/emp_lp_03.vsnd"
 		vsnd_duration = 5.795487
 	}
 	StatusEffects.ShieldBreak = 
 	{
 		base = "Base.Status.Effect.3d"
 		volume = -3.000000
-		vsnd_files = 
-		[
-			"sounds/hit_indicators/damage_send_shield_break.vsnd",
-		]
+		vsnd_files = "sounds/hit_indicators/damage_send_shield_break.vsnd"
 		vsnd_duration = 2.759683
 	}
 	StatusEffects.Bleeding = 
 	{
 		base = "Base.Status.Effect.3d"
-		volume = -9
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/bleeding_lp.vsnd",
-		]
+		volume = -9.000000
+		vsnd_files = "sounds/gameplay/status_effects/bleeding_lp.vsnd"
 		vsnd_duration = 0.500250
 	}
 	Invis.Revealed = 
 	{
 		base = "Base.Status.Effect.3d"
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/invis_revealed.vsnd",
-		]
+		vsnd_files = "sounds/gameplay/status_effects/invis_revealed.vsnd"
 		vsnd_duration = 1.863175
 	}
 	Player.Weapon.Jammed = 
 	{
 		base = "Base.Status.Effect.2d"
-		volume = -9
+		volume = -9.000000
 		limiter_on = 1.000000
 		limiter_max = 0.000000
-		pitch = 1
+		pitch = 1.000000
 		limiter_match_event = 1.000000
 		limiter_event_name = "Player.Weapon.Jammed"
 		limiter_stop_oldest = true
@@ -134,39 +104,27 @@
 	Ability.Stun.Impact = 
 	{
 		base = "Base.Status.Effect.3d"
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/stun.vsnd",
-		]
+		vsnd_files = "sounds/gameplay/status_effects/stun.vsnd"
 		vsnd_duration = 1.512358
 	}
 	Status.Sleep = 
 	{
 		base = "Base.Status.Effect.3d"
-		volume = -15
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/sleep.vsnd",
-		]
+		volume = -15.000000
+		vsnd_files = "sounds/gameplay/status_effects/sleep.vsnd"
 		vsnd_duration = 2.460136
 	}
 	Status.Stunned = 
 	{
 		base = "Base.Status.Effect.3d"
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/stun.vsnd",
-		]
+		vsnd_files = "sounds/gameplay/status_effects/stun.vsnd"
 		vsnd_duration = 1.512358
 	}
 	Status.Silence = 
 	{
 		base = "Base.Status.Effect.3d"
-		volume = -5
-		vsnd_files = 
-		[
-			"sounds/gameplay/status_effects/emp_impact.vsnd",
-		]
-		vsnd_duration = 4.351746
+		volume = -5.000000
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
 	}
 }

@@ -46,6 +46,7 @@
 	R)v4N
 	R)v4n
 	SkyTexture "materials/skybox/skymodel_hosekwilkie_ref/%s.exr"
+	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_frexpf
@@ -280,6 +281,7 @@
 !?unpolish@QProxyStyle@@UEAAXPEAVQWidget@@@Z
 !@uaZ
 !A3333
+!Gmrx
 !IsConnected()
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
 !IsFaceInMesh( hFaceA ) || CheckFaceIntegrity( hFaceA )
@@ -441,7 +443,6 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 $$LcH
 $(~|?
 $+T$xL
-$3!G\
 $9E@uB
 $?ParseForGlobalSettings@FbxImporter@fbxsdk@@QEAAX_N@Z
 $@nlv
@@ -451,7 +452,6 @@ $D9l$@
 $D9l$@|NH
 $D9x<t
 $D9x<tN
-$DD;{
 $DT<I
 $Ib?s
 $IcL$
@@ -741,16 +741,17 @@ $name_$id
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
 (%1,%2)
+(%_jR
 (%d,%d)
+(%djR
+(%~hR
 ((width & 1) == 0) && ((height & 1) == 0)
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (1@zD
-(5hiR
-(9=gl~
+(56hR
+(9=Gz~
 (;^ |
-(=InR
-(=flR
 (A?)\
 (A\_][
 (A]A\^[
@@ -814,6 +815,7 @@ $name_$id
 (D$pL
 (D$pf
 (D$pfD
+(Debug Feature) Used to draw collision with the same material in Physics Debugger as in Hammer.
 (Edges to Faces)
 (Edges to Vertices)
 (EpfA
@@ -1046,12 +1048,12 @@ $name_$id
 )D$PH
 )D$PH;
 )D$PL
-)D$PM
 )D$Pw
 )D$`=
 )D$`D
 )D$`H
 )D$`I
+)D$`M
 )D$`s
 )D$pA
 )D$pD
@@ -1298,7 +1300,6 @@ $name_$id
 *y-Affff
 *zA@ffffby
 +	?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
-+	V_logd
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
 +"?updateGeometries@QListView@@MEAAXXZ
 +2: 	
@@ -1324,7 +1325,6 @@ $name_$id
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 , ?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 , channels = 
 , height = 
@@ -1356,7 +1356,6 @@ $name_$id
 -@+MJA
 -@9m|
 -BH>t
--C:tWd
 -YA1H
 -YA1f
 -addon
@@ -1375,11 +1374,11 @@ $name_$id
 -sse4
 -tools
 -wait_before_assetsystem_startup
+.	V_logd
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 ..om?
 .00cfg
 .40t8Ic
-.5O.k
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
 .?AU?$_InitialTaskHandle@XV<lambda_60c5de84e69e46aa92419d47e2f3ad51>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -1542,6 +1541,7 @@ $name_$id
 .?AUCAttr_m_TargetMorphControl@?1??GetStaticAttributes@CModelDocAnimConstraintMorph@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_TestEnum@?1??GetAttributeTable_CModelDocTestStruct@CModelDocTestStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_ToName@?1??GetStaticAttributes@CModelDocMeshModifier_RenameStream@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_ToolMaterial@?1??GetStaticAttributes@CModelDocBasePhysicsShape@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_WeightedBone@?1??GetStaticAttributes@CModelDocVSNAPFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_aAnchorAngles@?1??GetStaticAttributes@CModelDocBasePhysicsJoint@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_aOffsetAngles@?1??GetStaticAttributes@CModelDocBasePhysicsShapeWithTransform@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -4393,6 +4393,7 @@ $name_$id
 .?AV?$CDynamicWidgetFactory_Custom@VQToolBar@@@@
 .?AV?$CDynamicWidgetFactory_Custom@VQToolButton@@@@
 .?AV?$CDynamicWidgetFactory_Orientation@VQHeaderView@@@@
+.?AV?$CDynamicWidgetFactory_Orientation@VQSplitter@@@@
 .?AV?$CInlineStructAttributeWrapper@VCModelDocTestStruct@@VCModelDocTestNode@@@@
 .?AV?$CModelDocAttr@HVCModelDocActivityModifier@@@@
 .?AV?$CModelDocAttr@HVCModelDocAnimAlign@@@@
@@ -4982,13 +4983,13 @@ $name_$id
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferBC7_bc7e@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferBC7_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferETC@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@@@YAXHHPEBDV1?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@@@YAXHHPEBD$$QEAV1?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelProcessorAbstract@V?$CParallelProcessor@UBentNormalComputationJob_t@@V?$CFuncJobItemProcessor@UBentNormalComputationJob_t@@@@$00@@@@
 .?AV?$CParallelProcessorAbstract@V?$CParallelProcessor@UCavityMapComputationJob_t@@V?$CFuncJobItemProcessor@UCavityMapComputationJob_t@@@@$00@@@@
 .?AV?$CParallelProcessorAbstract@V?$CParallelProcessor@UPointOcclusionMapComputationJob_t@@V?$CFuncJobItemProcessor@UPointOcclusionMapComputationJob_t@@@@$00@@@@
@@ -7106,20 +7107,19 @@ $name_$id
 .xJ>Hf
 .xdata
 .xdata$x
-/%Ut9
-/%lE.
-/%wq9
-/-+s9
-/-Gp9
+/	V_logf
+/%@TY
+/%LC.
+/-[a4
+/-kr9
 // THIS FILE IS AUTO-GENERATED
 /2GG>!B
-/5cvR
-/5gt9
-/5stR
-/5wwR
-/=YuR
-/=j,:
-/=l,:
+/5#uR
+/5'xR
+/5YwR
+/5muR
+/=	vR
+/=0vR
 />58d%
 /D$pv
 /D$tv
@@ -7144,6 +7144,7 @@ $name_$id
 0.3937 (convert from cm)
 0123456789abcdefghijklmnopqrstuvwxyz
 0;O0|
+0;|p[6o
 0><[cZUg^>
 0@Kcj
 0@ffffl
@@ -7260,7 +7261,7 @@ $name_$id
 220323000000Z
 220801000000Z
 230714000000Z
-240613154302Z0/
+240620161435Z0/
 241009235959Z0a1
 2D Aim
 2D Blend Has No Referenced Animations
@@ -7386,7 +7387,6 @@ $name_$id
 3\.,I
 3dplant
 3mq+<
-3v_0h
 4$IcL$
 4'AffffvE
 4,F]k
@@ -7431,20 +7431,18 @@ $name_$id
 6YA1I
 6YA3333
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
-6aO/Q>
 6p7MOf
 6pG	@
-7	V_powd
 7&F|If
 7/ND!@m
 70503
 7L4HA
+7Sd!jF-
 7YA1A
 7YA1H
 7YA1I
 7`ZKV?e
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8 @ffff
 8"3hrf
 8/t[H
@@ -7498,14 +7496,14 @@ $name_$id
 8gDio5x
 8ke?;
 8|@ffff
-9	V_qsort
 9$@]m
 9)~4H
 9)~ML
 9)~P3
 9)~eH
 9*tsD
-95`lv
+950zv
+95aYv
 97tmD
 98t H
 993u,H
@@ -7600,7 +7598,7 @@ $name_$id
 9|$`u
 9|$hu
 9~h~t3
-:	V_qsort_s
+:	V_powd
 : @\c
 :!L$ 0
 :!|$ 0E
@@ -7625,6 +7623,7 @@ $name_$id
 :m_Name
 :r?M+
 :x&4I,
+;	V_powf
 ;	uXH
 ; @t{Ic
 ; tris:
@@ -7687,6 +7686,7 @@ $name_$id
 ;|$`|
 ;|$d|
 ;|$p|
+<	V_qsort
 <	tf3
 <	u"H
 <	u2H
@@ -7767,6 +7767,7 @@ $name_$id
 <unknown>
 <unnamed>
 <utK@:
+=	V_qsort_s
 =%H5<mN
 =-k?l1.
 == (or missing)
@@ -7840,6 +7841,7 @@ $name_$id
 ?*oG8-
 ?+>^m
 ?+Vh{O@
+?+bBU
 ?+hZbe4
 ?,F]k
 ?,cC7
@@ -7998,6 +8000,7 @@ $name_$id
 ??0QSpinBox@@QEAA@PEAVQWidget@@@Z
 ??0QSplashScreen@@QEAA@AEBVQPixmap@@V?$QFlags@W4WindowType@Qt@@@@@Z
 ??0QSplitter@@QEAA@PEAVQWidget@@@Z
+??0QSplitter@@QEAA@W4Orientation@Qt@@PEAVQWidget@@@Z
 ??0QStackedLayout@@QEAA@XZ
 ??0QStandardItem@@QEAA@AEBVQString@@@Z
 ??0QStandardItemModel@@QEAA@PEAVQObject@@@Z
@@ -8795,7 +8798,6 @@ $name_$id
 ?fromImage@QPixmap@@SA?AV1@AEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 ?fromImageInPlace@QPixmap@@KA?AV1@AEAVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 ?fromUtf8@QString@@SA?AV1@PEBDH@Z
-?gaO;
 ?generatedIconPixmap@QCommonStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 ?generatedIconPixmap@QProxyStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 ?geometry@QLayout@@UEBA?AVQRect@@XZ
@@ -9869,6 +9871,9 @@ $name_$id
 @8;tb3
 @8;tc3
 @8;th3
+@8=JY
+@8=QZ
+@8=R'
 @8V{;6
 @8gDio
 @8j(t
@@ -10230,6 +10235,7 @@ $name_$id
 @ffff~A
 @g-?O
 @g3^%
+@gaO;
 @g|_\
 @h"lxz
 @h"lxz=k@
@@ -11180,7 +11186,6 @@ C(E9,
 C(H9,
 C(H94
 C(L9{0t	H
-C(L9|$(t
 C,D9{(A
 C0@u2H
 C0D9D
@@ -11190,6 +11195,7 @@ C0D9d
 C0D9x<t
 C0H9K8u
 C0Hc	H
+C0L9e
 C4L9t$ t
 C4McS,E
 C5R?	
@@ -14098,6 +14104,8 @@ CKV3FGDToolAttr::RemoveAttr
 CKV3FGDToolAttrCache::FindOrCreateAttr
 CKV3FGDToolAttrCache::FindOrCreateExtraAttr
 CKV3FGDToolAttrCache::FindOrCreateMapKey
+CKV3MemberIndexIteratorView<1>::iterator::iterator
+CKV3MemberIndexIteratorView<1>::iterator::operator *
 CKV3MemberIteratorView<0>::iterator::iterator
 CKV3MemberIteratorView<0>::iterator::operator *
 CKV3MemberIteratorView<1>::iterator::iterator
@@ -17335,7 +17343,6 @@ CxH94
 Cx~!H
 Cycle Start Frame
 Cycle Type
-D	V_sincosf
 D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D W?{W
 D [%.2f, %.2f] G [%.2f, %.2f]
@@ -17562,7 +17569,6 @@ D$8A;
 D$8A;G
 D$8D9
 D$8D;5
-D$8D;o
 D$8E3
 D$8H;
 D$8H=
@@ -17623,6 +17629,7 @@ D$DE3
 D$DH+
 D$H;D$L
 D$HD;
+D$HD;o
 D$HE3
 D$HH+D$XH
 D$HH;
@@ -17795,6 +17802,7 @@ D8/tq3
 D81uUL9r
 D83tc3
 D84:u
+D85{	
 D8<.u
 D8<2u
 D8<;u
@@ -17836,22 +17844,18 @@ D8}wu@H
 D9 u2D9
 D9 uHA
 D9$(|
-D9%*kv
-D9%1)
-D9%Da
-D9%P)
-D9%o)
+D9%qp
+D9%r:
+D9%xt
 D9(tT
-D9-RB
 D9/~%H
 D9/~4fff
 D97~H3
 D99t~I
 D99~CH
-D9=(4
-D9=\/
-D9=t.
-D9=v2
+D9=0A
+D9=H@
+D9=XD
 D9>|%Hc
 D9A t7
 D9A(t
@@ -17910,8 +17914,7 @@ D9|$p
 D9|$pu*H
 D9|$x
 D9~(D
-D;%!NP
-D;%]|O
+D;%aXP
 D;&s0I
 D;0|V
 D;A8t
@@ -18154,7 +18157,6 @@ DynamicMeshDeformParams_t
 DynamicMeshDeformParams_t::KV3TransferLoad_Impl
 DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
-E	V_sind
 E A84$u
 E D9{(
 E H9H
@@ -18627,7 +18629,6 @@ Extrude Radius
 Extrude Sides
 Extrude Twist
 E|$xH
-F	V_sinf
 F	tj<
 F 9F(r
 F D9|
@@ -19030,6 +19031,7 @@ Friday
 From Name
 Frond Animation - foliageanimation
 FrondPivotPaint
+G	V_sincosf
 G 9F t;I
 G D9D
 G channel
@@ -19339,6 +19341,7 @@ G|$8L
 G|$hI
 G|$hL
 G|$xI
+H	V_sind
 H SVWAVH
 H SVWH
 H USAVH
@@ -19367,13 +19370,13 @@ H9+t	H
 H9+u]H
 H9.t	H
 H93t	H
+H95W*
 H97u+A
 H98t$H
 H98t2
 H98t7
 H9;t	H
-H9=4{
-H9=i5v
+H9=9Cv
 H9>u/H
 H9A@t	H9A8
 H9AHt	H9A8
@@ -19522,6 +19525,7 @@ HasClones() == false
 Hc	Hi
 Hc	Li
 Hc+;k
+Hc-TG^
 Hc.;n
 Hc/;o
 Hc3;s
@@ -19840,7 +19844,7 @@ HullIVRHole_t::operator new
 HullPerElement
 HullPerMesh
 HullSimplificationAlgorithm_t
-I	V_snprintf
+I	V_sinf
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
 I("hq
 I+4$H
@@ -20439,7 +20443,7 @@ JiggleBoneList
 Joint Name
 Joint to Joint Simple
 Jp d=?
-Jun 13 2024
+Jun 20 2024
 JvljQ
 K %vmo
 K ?toggled@QAbstractButton@@QEAAX_N@Z
@@ -20543,6 +20547,7 @@ KqUq;@
 K}*n:	
 K~Je#>!
 L	?canDropMimeData@QAbstractItemModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z
+L	V_snprintf
 L Ankle
 L Hip
 L Knee
@@ -20767,11 +20772,10 @@ L2rpR@r
 L9	u)H
 L9#t	H
 L9#u/H
-L9%k}
 L9&t	H
 L9+t	H
-L9-K"
-L95'`
+L95Jq
+L95eq
 L97t	H
 L97vH
 L98t#A
@@ -21221,7 +21225,6 @@ MWheelLeft
 MWheelRight
 MWheelUp
 MX+C$L
-MXD;{
 MXHcY
 MXHcy
 MXIcuHE
@@ -21655,7 +21658,6 @@ Number of samples per pixel.
 NumberOfInks
 Nut?{
 Nx	V @M
-O	V_sscanf
 O!t/H
 O*9y]
 O.@Jt;
@@ -21781,7 +21783,6 @@ Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P Icu
-P"$K%
 P'?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
 P(Hc|$ D
 P(Lcu
@@ -22155,6 +22156,8 @@ QScrollArea
 QScrollBar
 QSlider
 QSpinBox
+QSplitterHorizontal
+QSplitterVertical
 QTAAR
 QT_QPA_PLATFORM
 QTabWidget
@@ -22191,6 +22194,7 @@ QueryPerformanceFrequency
 Quintic
 Qxt2A
 R	?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
+R	V_sscanf
 R Ankle
 R Hip
 R IcB
@@ -23092,7 +23096,6 @@ Sync Track
 SystemAttributes
 SystemParametersInfoA
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T	V_stricmp_fast
 T$ A;
 T$ E3
 T$ Ei
@@ -23198,7 +23201,7 @@ T$xE3
 T$xHc
 T$xL+
 T$xfD
-T-3s9
+T-sr9
 T0@GZ
 T5i@H
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
@@ -23416,6 +23419,7 @@ Tool Frame Listeners - PostFrame
 Tool Frame Listeners - PreFrame
 Tool Frame Listeners - RunFrame
 Tool Framework
+Tool Material
 ToolAttr expected '%s' to match '%s'
 ToolAttrTypeName::<lambda_1>::operator ()
 ToolBarArea
@@ -23757,7 +23761,6 @@ UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
 UtlTokenizer_UnqescapeOrUnquoteString
 UwH;U
 UxtcD
-V	V_strlower_fast
 V ?toolTip@QAction@@QEBA?AVQString@@XZ
 V6'?C
 V6E>`"(5
@@ -23875,6 +23878,7 @@ VWAUAWH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 VZ#-DLU[3=h
 V_:X1:
 V_ClassifyAndValidatePath
@@ -23932,7 +23936,6 @@ V_expd
 V_expf
 V_fabsf( 1.0f - pEdge->m_Normals[ 0 ].Length() ) < 0.001f && V_fabsf( 1.0f - pEdge->m_Normals[ 1 ].Length() ) < 0.001f
 V_fabsf( vWsStartDirection.Normalized().Dot( vWsHingeAxis ) ) < DEG2RAD( 1 )
-V_fmodf
 V_isempty( pAltMaterialSuffix ) || dstMat.altMaterialSuffix.IsEqual_FastCaseInsensitive( pAltMaterialSuffix )
 V_sscanf( pLODStr, "lod%d", &nLOD ) == 1
 V_sscanf( pValue, "%fx%f m", &vMeters.x, &vMeters.y ) == 2
@@ -24011,10 +24014,12 @@ Volumetric Solve Strength
 Voronoi Plane Primitive
 Vortices
 Vrad3_001
+W	V_stricmp_fast
 W%	s;M@
+W%W ;
 W(Aq=
 W3|Uxa
-W5g+7
+W=d,e
 W?,|C
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -24132,17 +24137,16 @@ X VWATH
 X VWAVH
 X zR&="@r
 X!t5~
-X%5PT
-X%66T
-X%L*T
-X%TV5
-X%mV5
-X%ps9
-X%q-T
-X-j;:
-X5JwR
+X%!.T
+X%DT5
+X%Z+:
+X%]T5
+X-dTR
+X-}QT
+X59TT
 X9t6@
 X=2v?
+X=igR
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrush@QPalette@@QEAAXW4ColorGroup@1@W4ColorRole@1@AEBVQBrush@@@Z
@@ -24188,24 +24192,31 @@ Xt7HH
 X|$ A
 X|$8E
 X|$LE
+Y	V_strlower_fast
 Y (Green / Left)
 Y - Left
 Y ANb
-Y%No9
-Y%]PT
-Y--9:
-Y-0tR
-Y-4iR
+Y%D+T
+Y-88:
 Y-<aE
-Y-QgR
-Y5UAH
-Y5oRT
-Y5zyR
+Y-MQT
+Y-g.T
+Y-m8:
+Y5*zR
+Y55xR
+Y5>}R
+Y5ITT
+Y5QuR
+Y5VxR
+Y5p<6
+Y5v<6
 Y6	@W'g(
 Y8Hcy0H
 Y9"SD
-Y=.zR
-Y=wuR
+Y='vR
+Y=3 :
+Y=POP
+Y=QzR
 Y>kX>M
 Y?3333E
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
@@ -24481,12 +24492,10 @@ Z}uU
 \$xu3M
 \$|L+
 \$|Lc
-\%*;:
-\5EvR
-\5I!T
-\;nt2
-\="!T
-\=%uR
+\%Cp9
+\%j::
+\%qT5
+\5LuR
 \T$lHc
 \ffff
 \r@n|7'@^
@@ -24499,7 +24508,7 @@ Z}uU
 ]'HcE
 ])6M>&
 ]0D8m8t	H
-]5dh?
+]5tf?
 ]8A9^
 ]8A;^
 ]>)2X
@@ -24540,6 +24549,8 @@ _%02d
 _%03d
 _%04d
 _0HcO@A
+_5fW\
+_5|wR
 _8Hcs
 _8Hcw
 _@')UG3;
@@ -24727,7 +24738,6 @@ _zero
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a"X&i
 a.ucL
@@ -25290,6 +25300,7 @@ cut_max
 cut_min
 cycle_type
 cyclestart
+d	V_tanf
 d$ D!
 d$ E3
 d$ L9c
@@ -25502,13 +25513,13 @@ e0A_A^A]A\]
 e0A_A^A]A\_^]
 e0F$J
 e1->m_nPlaceInDissolveQueue < 0
+e8A_A^A]A\_^[]
 e@A_A^A]A\_^]
 e@A_A^]
 eC:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
 eCount
 eDc?t
 eFast
-eHA_A^A]A\_^[]
 eHL9e t
 eHMc|$
 eImportMode != CModelDocPhysicsHullFile::IMPORT_MODE_COUNT
@@ -25542,7 +25553,6 @@ effect_packing_material
 effortblocks = %d
 egE9e
 eh0 != InvalidHalfEdge( ) && eh1 != InvalidHalfEdge( )
-ehA_A^A]A\_^[]
 ehandle
 elastic
 elastic_damping
@@ -26397,6 +26407,7 @@ j@ffff
 j@ffff>7
 jMVy@
 jMs|@h
+jUtfR
 jY?setFamily@QFont@@QEAAXAEBVQString@@@Z
 jackal
 jaguar
@@ -26475,8 +26486,7 @@ l$(H9k
 l$(L+
 l$(L9f
 l$(L9g
-l$(L9v
-l$(L9{
+l$(L9s
 l$(LcH
 l$(M+
 l$(M9~
@@ -26512,7 +26522,7 @@ l$8Mc
 l$8u&H
 l$8u1H
 l$<D;
-l$@;-%
+l$@;-
 l$@A+
 l$@A;
 l$@E3
@@ -27083,6 +27093,8 @@ m_bUnrecognizedReferencesAreErrors
 m_bUseCompressedNormalTangent
 m_bUseNewPoleVectorForAxis
 m_bUseShadowFastPath
+m_bUserFriendlyNameLong
+m_bUserFriendlyNameSealed
 m_bUserSpecifiedColor
 m_bUserSpecifiedMaterialGroup
 m_baseNameHash
@@ -27380,6 +27392,7 @@ m_nHeight == 0
 m_nHitBoxIndex
 m_nIncomingTangent
 m_nIndex >= 0 && m_nIndex < m_nArrayElementCount
+m_nIndex >= 0 && m_nIndex < m_nMemberCount
 m_nIndex >= 0 && m_nIndex < m_pKV3->GetMemberCount()
 m_nIndexCount
 m_nIndexMask + 1 == ( 1U << m_nIndexShift )
@@ -27434,6 +27447,7 @@ m_nSurfacePropertyIndex
 m_nTaperedCapsuleRigidIndex
 m_nTargetAxis
 m_nTickCount
+m_nToolMaterialHash
 m_nTranslateMotion
 m_nTreeDepth
 m_nTriCount1
@@ -28086,44 +28100,43 @@ n|$`fA
 o KPBf
 o!L9l$ t
 o$$fA
-o%((S
-o%<^S
-o%=+S
-o%S5Q
-o%[RS
-o%h?S
-o%z	Q
+o%8KS
+o%?\T
+o%M*S
+o%MNS
+o%QAS
+o%T'S
 o*Ral
 o,$fD
-o-#+S
-o-%~S
-o-06S
-o-5tS
-o-7VS
-o-LTT
-o-XRS
-o-[fS
+o-7QS
+o-=jS
+o-RES
+o-VAS
+o-|'S
 o47Lc
-o58XS
-o5HDS
-o5V~S
-o5W2S
-o5aTT
-o5cJS
-o5pZS
-o5r,S
-o= rS
-o=0iS
-o=2JS
-o=CfS
-o=NKT
-o=RNS
-o=bPS
-o=hTT
-o=h~S
-o=slS
-o=yWS
-o=zqS
+o5 [S
+o5"-S
+o55GS
+o58KS
+o5>jS
+o5@_S
+o5S[S
+o5U_S
+o5[LT
+o5\)Q
+o5vtS
+o=#mS
+o=)XS
+o=*rS
+o=/3S
+o=1lW
+o=I39
+o=J|S
+o=MES
+o=gZS
+o=uwS
+o=xtS
+o=}AS
 o?ffff
 oAPfD
 oB)?@
@@ -28705,7 +28718,6 @@ pushout_strength
 pxA;~
 pxADj
 q	@QN
-q:R{\
 q;4,F
 q@P7P
 qAdjust
@@ -29233,7 +29245,7 @@ t$(H;
 t$(Hc
 t$(HcD$XLc
 t$(Ic
-t$(L9n
+t$(L9o
 t$(L;
 t$(Lc
 t$(Lct$ 
@@ -29241,7 +29253,7 @@ t$(Lct$ H
 t$(fD
 t$(u4A
 t$09D$X
-t$0;5C
+t$0;5
 t$0;o8
 t$0A^_
 t$0A_A^
@@ -29355,7 +29367,7 @@ t$LF;4
 t$P9\$`~"H
 t$PA+
 t$PD9
-t$PD;5\
+t$PD;5,
 t$PH9t$@t
 t$PH;u
 t$PHc
@@ -29520,7 +29532,6 @@ t4A;APs.H
 t4D;&s/H
 t4D;.s/H
 t5;+s1H
-t5@1S
 t5Ich
 t6;C`s1H
 t6A;6s1I
@@ -29569,6 +29580,7 @@ tKA;H
 tLIcD$
 tMHcK
 tN;C`sIH
+tNCf	
 tNfE;
 tO@8(tJH
 tP@87uKH
@@ -29729,6 +29741,7 @@ too many files open in system
 too many length or distance symbols
 too many links
 too many symbolic link levels
+tool_material
 toolbarArea
 toolframework
 toolframework2
@@ -30389,6 +30402,7 @@ x!;;}
 x!A;Fx}
 x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
 x$A;]
+x%;=l	
 x%fff
 x%i (
 x'A;n
@@ -30405,7 +30419,7 @@ x<H9{0
 x=HcS
 x>V6'
 x>V6'?C
-x@;=+
+x@;=K
 xA\^][
 xA]A\^[
 xA]A\_^
@@ -30425,6 +30439,7 @@ xA_A^A]A\_^][
 xA_A^[]
 xA_A^^]
 xHcL$PH
+xP;=_
 xR;\$P}LH
 xS;Q }NHc
 xSE;H
@@ -30438,6 +30453,7 @@ xs == 0
 xsA;E
 xtw?g
 xu;Qh}p
+xuC|3I&
 y Ht1H
 y,HcIH;
 y899u
@@ -30608,6 +30624,7 @@ zm6Vb
 |$8Hc>H
 |$8HcD$0L
 |$8Hct$0E
+|$8Hk
 |$8L+
 |$8L;
 |$8Lc
@@ -30667,7 +30684,7 @@ zm6Vb
 |$H~!H
 |$LB9<
 |$P9)~:D
-|$P;=%
+|$P;=
 |$P;k8
 |$PD;
 |$PE3
@@ -30844,7 +30861,6 @@ zm6Vb
 ~NLct$4H
 ~PLcMpM
 ~PMcw
-~V#pZ&=
 ~WH+]
 ~XMcw
 ~ZLc]

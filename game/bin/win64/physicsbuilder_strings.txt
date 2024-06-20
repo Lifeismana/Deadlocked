@@ -1,6 +1,6 @@
 					
 								
-																
+																(
 			<table>			<tr>			<th align="left"><b>Aggressive</b></th>			<th align="left">Removes any bones which are not skinned or referenced</th>			</tr>			<tr>			<th align="left"><b>Leaf Only</b></th>			<th align="left">Removes any bones which are not skinned or referenced that have no children</th>			</tr>			<tr>			<th align="left"><b>None</b></th>			<th align="left">Doesn't remove any bones</th>			</tr>			</table>
 	!s99
 	#jT$
@@ -14,6 +14,7 @@
 	D$0H
 	HcC8N
 	NAN encountered in element '%s' guid %s attribute '%s'!
+	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_frexpf
@@ -76,6 +77,7 @@
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  %41g
  '%s' -> '%s'
+ '4.,
  'L>[
  (%d %d %d)
  (%lu = 0x%lx)
@@ -340,7 +342,6 @@ $D9l$@
 $D9l$@|NH
 $D9x<t
 $D9x<tN
-$DD;{
 $ILcp
 $Ib?s
 $IcL$
@@ -372,6 +373,7 @@ $prefix_element$
 %d %d %d %d
 %d Effects are mutually exclusive
 %d edges, %d interior edges, %d silhouette edges
+%d materials used in physics builder:
 %d,%d
 %d,%d,%d
 %d,%d,%d,%d
@@ -391,6 +393,7 @@ $prefix_element$
 %ld%c
 %lu: Row out of range, max %lu
 %lu: Sample out of range, max %lu
+%s	%s
 %s %s -> %s
 %s %s decoding is not implemented
 %s %s encoding is not implemented
@@ -611,8 +614,7 @@ $prefix_element$
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
-(%"~k
-(%Q">
+(%1+>
 (%d,%d
 (%d,%d)
 (%d,%d,%d
@@ -621,14 +623,11 @@ $prefix_element$
 (*%s*), 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-,Kt
-(-M:c
-(-MCc
-(-l8c
-(-lAc
-(-w1c
+(-<bt
+(-}Qc
+(-}Zc
+(5j|%
 (;^ |
-(=/}C
 (A\_][
 (A]A\^[
 (A]A\_^][
@@ -697,6 +696,7 @@ $prefix_element$
 (D;O |
 (D;s |
 (D;w |
+(Debug Feature) Used to draw collision with the same material in Physics Debugger as in Hammer.
 (Edges to Faces)
 (Edges to Vertices)
 (EpfA
@@ -930,12 +930,12 @@ $prefix_element$
 )D$PH
 )D$PH;
 )D$PL
-)D$PM
 )D$Pw
 )D$`=
 )D$`D
 )D$`H
 )D$`I
+)D$`M
 )D$`f
 )D$`s
 )D$pA
@@ -1213,7 +1213,6 @@ $prefix_element$
 *pHalfEdgeHandleB != INVALID_MESH_COMPONENT
 *pScan == '['
 *xNIL
-+	V_logd
 +;uKH
 +A$Lc
 +C$Hc
@@ -1232,7 +1231,6 @@ $prefix_element$
 +h->|
 +o'q)}
 +|$`A
-,	V_logf
 , channels = 
 , height = 
 , window
@@ -1269,6 +1267,7 @@ $prefix_element$
 -sse3
 -sse4
 -tools
+.	V_logd
 ..om?
 .00cfg
 .40t8Ic
@@ -1434,6 +1433,7 @@ $prefix_element$
 .?AUCAttr_m_TargetMorphControl@?1??GetStaticAttributes@CModelDocAnimConstraintMorph@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_TestEnum@?1??GetAttributeTable_CModelDocTestStruct@CModelDocTestStruct@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_ToName@?1??GetStaticAttributes@CModelDocMeshModifier_RenameStream@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_ToolMaterial@?1??GetStaticAttributes@CModelDocBasePhysicsShape@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_WeightedBone@?1??GetStaticAttributes@CModelDocVSNAPFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_aAnchorAngles@?1??GetStaticAttributes@CModelDocBasePhysicsJoint@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_aOffsetAngles@?1??GetStaticAttributes@CModelDocBasePhysicsShapeWithTransform@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -5025,13 +5025,13 @@ $prefix_element$
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferBC7_bc7e@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferBC7_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferETC@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@@@YAXHHPEBDV1?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@@@YAXHHPEBD$$QEAV1?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelProcessorAbstract@V?$CParallelProcessor@UBentNormalComputationJob_t@@V?$CFuncJobItemProcessor@UBentNormalComputationJob_t@@@@$00@@@@
 .?AV?$CParallelProcessorAbstract@V?$CParallelProcessor@UCavityMapComputationJob_t@@V?$CFuncJobItemProcessor@UCavityMapComputationJob_t@@@@$00@@@@
 .?AV?$CParallelProcessorAbstract@V?$CParallelProcessor@UPointOcclusionMapComputationJob_t@@V?$CFuncJobItemProcessor@UPointOcclusionMapComputationJob_t@@@@$00@@@@
@@ -7250,6 +7250,7 @@ $prefix_element$
 .rtc$IZZ
 .rtc$TAA
 .rtc$TZZ
+.ruaYq
 .text
 .text$di
 .text$mn
@@ -7263,6 +7264,7 @@ $prefix_element$
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
 // 						"BA_INT_DANGER"		break out of this anim only if threatened
@@ -7279,7 +7281,6 @@ $prefix_element$
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5Kdk
 />58d%
 /D$pv
 /D$tv
@@ -7295,7 +7296,6 @@ $prefix_element$
 0123456789abcdefghijklmnopqrstuvwxyz
 0;O0|
 0><[cZUg^>
-0>M{o
 0A;n@|
 0A\^]
 0A\_[
@@ -7393,7 +7393,7 @@ $prefix_element$
 220323000000Z
 220801000000Z
 230714000000Z
-240613154320Z0/
+240620161435Z0/
 241009235959Z0a1
 2D Aim
 2D Blend Has No Referenced Animations
@@ -7453,18 +7453,15 @@ $prefix_element$
 6YA1H
 6YA1I
 6p7MOf
-7	V_powd
 7&F|If
 70503
 7YA1H
 7YA1I
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8"3hrf
 8-byte data pool
 8/t[H
 80tWD
-8@%718
 8A\_^[
 8A]A\_]
 8A^A]A\[H
@@ -7512,11 +7509,11 @@ $prefix_element$
 8fB9,
 8fB9l
 8ke?;
-9	V_qsort
 9)~ML
 9)~P3
 9)~eH
 9*tsD
+95a;g
 97tmD
 98t H
 98~YE3
@@ -7632,7 +7629,7 @@ $prefix_element$
 9~P~3
 9~P~7
 9~P~;
-:	V_qsort_s
+:	V_powd
 :!L$ 0
 :!|$ 0E
 :!|$`0
@@ -7646,6 +7643,7 @@ $prefix_element$
 :VP8LtHD
 :VP8X
 :fA;x
+;	V_powf
 ;	uXH
 ; tris:
 ;(}{H
@@ -7715,6 +7713,7 @@ $prefix_element$
 ;|$P|
 ;|$`|
 ;}st-;}ot(H
+<	V_qsort
 <	tf3
 <	u"H
 <	u2H
@@ -7790,6 +7789,7 @@ $prefix_element$
 <unnamed>
 <unset>
 <utK@:
+=	V_qsort_s
 =%H5<mN
 ======
 ==MQ?
@@ -7804,6 +7804,7 @@ $prefix_element$
 >IsValidIndex(i) && (i != InvalidIndex())
 >Lc'D;g
 >Mp$d
+>OvT,
 >YA1H
 >c;j1
 >jtm}S
@@ -8043,7 +8044,7 @@ $prefix_element$
 @83th3
 @84)u
 @84:u
-@85jV
+@85zr
 @88t9H
 @88t_H
 @88wdH
@@ -9219,7 +9220,6 @@ C(D9x<t
 C(H9,
 C(H94
 C(L9{0t	H
-C(L9|$(t
 C,D9{(A
 C0@u2H
 C0D9D
@@ -9229,6 +9229,7 @@ C0D9d
 C0D9x<t
 C0H9K8u
 C0Hc	H
+C0L9e
 C4L9t$ t
 C4McS,E
 C5R?	
@@ -9545,7 +9546,6 @@ C:\buildworker\citadel_staging_win64\build\src\tools\undolib\undohistory.cpp
 C:\buildworker\citadel_staging_win64\build\src\utils\physicsbuilder\physicsbuilder.cpp
 C:\buildworker\citadel_staging_win64\build\src\utils\physicsbuilder\physicsbuilderworld_modeldoc.cpp
 C<;C4A
-C=2c>3
 C@H9,
 C@H94
 CAimConstraint
@@ -16142,7 +16142,7 @@ CUtlPriorityQueue<class CFeAgglomerator::CCluster *,class CFeAgglomerator::CClus
 CUtlPriorityQueue<class CFeAgglomerator::CLink,class CDefUtlPriorityQueueOps<class CFeAgglomerator::CLink,struct CFeAgglomerator::LinkLessFunc_t>,class CUtlMemory<class CFeAgglomerator::CLink,int> >::RemoveAt
 CUtlPriorityQueue<struct CHalfEdgeComponentList<struct CHalfEdgeMesh<struct HullIFRVertexData_t,struct HullIFRHalfEdgeData_t,struct HullIFRFaceData_t>::HalfEdge_t,22>::ComponentHandleWithListPointer_t,class CHullIFR::CHalfEdgeQueueOps,class CUtlMemory<struct CHalfEdgeComponentList<struct CHalfEdgeMesh<struct HullIFRVertexData_t,struct HullIFRHalfEdgeData_t,struct HullIFRFaceData_t>::HalfEdge_t,22>::ComponentHandleWithListPointer_t,int> >::RemoveAt
 CUtlQueue<int,class CUtlMemory<int,int> >::Count
-CUtlQueue<int,class CUtlMemory<int,int> >::RemoveAtHead
+CUtlQueue<int,class CUtlMemory<int,int> >::RemoveAtHead::<lambda_1>::operator ()
 CUtlRBTree overflow with %u elements!
 CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlMemory<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int> >::Insert
 CUtlRBTree<class CDmAttribute *,class CDefLess<class CDmAttribute *>,int,class CUtlMemory<struct UtlRBTreeNode_t<class CDmAttribute *,int>,int> >::NewNode
@@ -16758,7 +16758,6 @@ CxH94
 Cx~!H
 Cycle Start Frame
 Cycle Type
-D	V_sincosf
 D W?{W
 D!l$xA
 D#C|D
@@ -17017,8 +17016,7 @@ D$8A9Gxt
 D$8A;
 D$8A;G
 D$8D9
-D$8D;5#
-D$8D;o
+D$8D;53
 D$8E3
 D$8H;
 D$8H=
@@ -17093,6 +17091,7 @@ D$H;D$L
 D$H@L
 D$HA;
 D$HD;
+D$HD;o
 D$HE3
 D$HH+
 D$HH+D$XH
@@ -17349,10 +17348,9 @@ D8|$`t
 D9 u2D9
 D9 uHA
 D9$(|
-D9%b4
-D9%lT
-D9%wU
-D9%~px
+D9%1g
+D9%Vq
+D9%bP
 D9&u?H
 D9'u@
 D9(tT
@@ -17362,9 +17360,9 @@ D97uFA
 D97~H3
 D99t~I
 D99~CH
-D9=$D
-D9=^%
-D9=dD
+D9=f2
+D9=}z
+D9=~A
 D9>|%Hc
 D9>~J
 D9A t7
@@ -17424,13 +17422,15 @@ D9|$`u
 D9|$`}
 D9|$pu*H
 D9~(D
+D;% 	v
+D;%]	v
 D;&s0I
+D;-4%
 D;.s.I
 D;0|V
 D;0}"H
 D;A8t
 D;C$|
-D;C4u
 D;D$(|
 D;D$(}CJ
 D;D$0|
@@ -18233,7 +18233,6 @@ Extrude Twist
 EzLc}
 E|$HD
 E|$XD
-F	V_sinf
 F	tj<
 F 9F(r
 F A;F
@@ -18572,6 +18571,7 @@ From Name
 Frond Animation - foliageanimation
 FrondPivotPaint
 Fsfm_v3
+G	V_sincosf
 G 9F t;I
 G D9D
 G D;c 
@@ -18636,7 +18636,7 @@ GL$HA
 GL$HH
 GL$XE
 GL$XL
-GL$h3
+GL$x3
 GPHcwx;
 GPSIFDOffset
 GPfA;
@@ -18654,9 +18654,9 @@ GT$XD
 GT$XH
 GT$XL
 GT$hE3
-GT$hH
 GT$hHi
 GT$pH
+GT$xA
 GT$xH
 GUhE3
 GVertexGenericIntegerData
@@ -18864,8 +18864,6 @@ Gt$HA
 Gt$HL
 Gt$`D
 Gt$`H
-Gt$hA
-Gt$hH
 Gt$xD
 Gt$xH
 GuhE3
@@ -18903,15 +18901,14 @@ H0Hc|$HL
 H4IcH8H
 H9(t?A
 H9+t	H
-H95'd
-H9577
-H95Ao
-H95W4
+H95wP
+H95wZ
 H97u+A
 H98t$H
 H98t2
 H98t7
 H9;t	H
+H9=m4x
 H9>u/H
 H9A@t	H9A8
 H9AHt	H9A8
@@ -19054,7 +19051,6 @@ HX9OXt-
 H[><y5
 H_^][
 HalftoneHints
-Hammer Node id=%d uid=
 Hammer temp export
 HammerEntityPicker()
 HammerMapLoader001
@@ -19212,6 +19208,7 @@ HcO0Lc
 HcQ(LcA,H
 HcQ<H
 HcR ;
+HcS03
 HcS0H
 HcS<9
 HcT$0L
@@ -19439,7 +19436,7 @@ HullIVRHole_t::operator new
 HullPerElement
 HullPerMesh
 HullSimplificationAlgorithm_t
-I	V_snprintf
+I	V_sinf
 I(I+I H
 I+4$H
 I+O H
@@ -19501,6 +19498,7 @@ IYtYL
 IYtfL
 IYu5H
 Ic	I+
+Ic,$Hc
 Ic.A;n
 Ic.Ic
 Ic4$A;t$
@@ -20083,9 +20081,9 @@ Kochanek-Bartels
 Kochanek-Bartels Early
 Kochanek-Bartels Late
 Kochanek_Bartels_Spline
-KtRN5X
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L Ankle
 L Hip
 L Knee
@@ -20377,12 +20375,10 @@ L9#t	H
 L9#u/H
 L9&t	H
 L9+t	H
-L95.|
-L95I|
-L95g{
 L97vH
 L98t#A
 L9;t	H
+L9=n^
 L9?t	H
 L9BHA
 L9IHA
@@ -20515,7 +20511,6 @@ LcC D;
 LcC$E
 LcC$H
 LcC,I
-LcC0E3
 LcCxA
 LcD$0H
 LcD$0I
@@ -20607,6 +20602,7 @@ LcewL
 Lcf$L
 Lcl$ 
 Lcl$(L
+Lcl$0
 Lcl$0E
 Lcl$0E;
 Lcl$0H
@@ -20833,7 +20829,6 @@ MPropertySuppressEnumerator
 MQC,ARD
 MT$8L
 MX+C$L
-MXD;{
 MXIcuHE
 M\$ A
 M\$$D;L$(L
@@ -21237,7 +21232,6 @@ Number
 Number of Points
 Number of samples per pixel.
 NumberOfInks
-O	V_sscanf
 O!t/H
 O*9y]
 O0A9D$0u
@@ -21335,7 +21329,6 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P	V_sscanf_s
 P HcE
 P Icu
 P Lcm
@@ -21391,6 +21384,7 @@ PA_A^_^[
 PA_A^_^]
 PA_][
 PAq=?Mp#
+PGTtV
 PHcGHM
 PHcL;
 PNG exceeds maximum uncompressed size limit!
@@ -21684,6 +21678,7 @@ QueryPerformanceCounter
 QueryPerformanceFrequency
 Quintic
 Qxt2A
+R	V_sscanf
 R Ankle
 R Hip
 R IcB
@@ -21811,6 +21806,7 @@ Remove all values from the list
 Remove bones that are not present in this allow-list.
 Remove vertices behind the slice plane.
 Remove vertices in front of the slice plane.
+RemoveAtHead( temp )
 RemoveBoneAndChildren
 RemoveBoneFromMesh::<lambda_1>::operator ()
 RemoveBoneFromMeshAndKeepChildren::<lambda_1>::operator ()
@@ -21937,6 +21933,7 @@ RtlUnwindEx
 RtlVirtualUnwind
 Run Targeted Stack
 Runtime is referencing editor-only config '%s'
+S	V_sscanf_s
 S$w\L
 S,;S(~9D
 S0Q0O
@@ -22497,7 +22494,6 @@ Switch Threshold
 SwizzlePlanarScanlineToInterleaved
 Symbol table:  %d entries %llu bytes
 Sync Track
-T	V_stricmp_fast
 T$ ;2}6H
 T$ A;
 T$ D;
@@ -22620,7 +22616,8 @@ T$xE3
 T$xHc
 T$xL+
 T$xfD
-T%0	9
+T-Tnz
+T=6.z
 TD u"E;
 TGALoader::LoadRGBA8888
 TGALoader::ReadFile
@@ -22809,6 +22806,7 @@ TongueV
 TongueWidth
 Too many color components: %d, max %d
 Too much
+Tool Material
 ToolAttr expected '%s' to match '%s'
 ToolAttrTypeName::<lambda_1>::operator ()
 ToolEvents
@@ -23144,7 +23142,6 @@ UtlTokenizer_UnqescapeOrUnquoteString
 UwH;U
 UwJc|*
 UxtcD
-V	V_strlower_fast
 V6'?C
 V6E>`"(5
 VATAUAVAWH
@@ -23244,6 +23241,7 @@ VWAUAWH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 VZ#-DLU[3=h
 V_:X1:
 V_CompareNameWithWildcards
@@ -23295,7 +23293,6 @@ V_expd
 V_expf
 V_fabsf( 1.0f - pEdge->m_Normals[ 0 ].Length() ) < 0.001f && V_fabsf( 1.0f - pEdge->m_Normals[ 1 ].Length() ) < 0.001f
 V_fabsf( vWsStartDirection.Normalized().Dot( vWsHingeAxis ) ) < DEG2RAD( 1 )
-V_fmodf
 V_stricmp_fast( pClone->GetName(), pSourceNode->GetName() ) == 0
 V_strlen( pSerializer->GetName() ) <= DMX_MAX_FORMAT_NAME_MAX_LENGTH
 V_strlen( pUpdater->GetName() ) <= DMX_MAX_FORMAT_NAME_MAX_LENGTH
@@ -23366,12 +23363,9 @@ Volumetric Solve Strength
 Voronoi Plane Primitive
 Vortices
 Vrad3_001
-W	V_strnchr
+W	V_stricmp_fast
 W%	s;M@
-W%1s]
-W%wH9
-W-Ey6
-W-Kr]
+W-;~]
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to parse class '%s'.
 WARNING: No 'models_ModelDocGameData' FGD was specified in the 'ModelDoc' section of gameinfo.gi.
@@ -23468,21 +23462,23 @@ X HcYxH
 X UVWAVAWH
 X VWATH
 X!t5~
-X%*=.
-X%m?.
-X%tbF
-X-/O/
-X-;m/
-X-=y6
-X-@Dt
-X-Ly+
-X-]Y$
-X-cm/
-X-lr/
-X-ry+
-X5Q=:
-X5vZf
-X=-~k
+X%=H.
+X%YH.
+X%YO.
+X%eD:
+X%f*:
+X%jN.
+X%uO.
+X--b$
+X-<{/
+X-P[t
+X-[b$
+X-f{/
+X5EYk
+X5ZZ$
+X5^pk
+X5_?(
+X5k($
 XA\[H
 XA\_^[
 XA]A\
@@ -23521,26 +23517,22 @@ Xt7HH
 X|$ A
 X|$8E
 X|$LE
+Y	V_strlower_fast
 Y (Green / Left)
 Y - Left
-Y%=::
-Y-&E`
-Y-5y6
-Y-G9>
-Y-V{t
-Y-}::
-Y5G<:
-Y5Nfk
-Y5P[O
-Y5Rik
-Y5Ydk
-Y5a=:
-Y5rdk
+Y%3*:
+Y%DE:
+Y%K!:
+Y%a#G
+Y-9^G
+Y-:Ok
+Y-Zhr
+Y-n;\
+Y59G:
+Y5[@9
 Y9"SD
-Y=J,9
-Y=X[O
-Y=ufk
-Y=}[j
+Y=*uk
+Y=Bsk
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -23560,7 +23552,7 @@ Yaw Friction
 Yd$ A
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 YpU_Z
-Z	V_strtod
+Z	V_strnchr
 Z (Blue  / Up)
 Z - Up
 Z* ,	
@@ -23786,24 +23778,21 @@ Zpm"U
 \$|E2
 \$|L+
 \$|Lc
-\%H=.
-\-OO/
-\-wm/
-\5%c\
-\5?j\
+\-z{/
+\5/v\
 \L$HIc
 \T$lHc
 \t$0D
 \t3D8T$(t
+]	V_strtod
 ]$HcK
-]%B]O
+]%RtO
 ]'HcE
-](IcE L
+](IcE Lk
 ])6M>&
 ],Lcu
 ]0D8m8t	H
 ]0HcM@A
-]5'!]
 ]>)2X
 ]@IcE8Li
 ]D$hH
@@ -23813,7 +23802,7 @@ Zpm"U
 ]PHcuHH
 ]T$4I
 ]T$<f
-]XIcEPLi
+]XIcEPL
 ]`9]p|EH
 ]oB;\7(
 ^ ;^$t
@@ -23825,10 +23814,11 @@ Zpm"U
 ^oEZ_
 _ ;_$t
 _0HcO@A
-_5T\k
+_5E?p
 _8Hcs
 _8Hcw
 _8tDH
+_=(*z
 _CustomCommand
 _CustomCommand%d
 _InFrameSpine
@@ -23977,7 +23967,6 @@ _zero
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a < m_nAttributeCount
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a.ucL
@@ -24610,6 +24599,7 @@ cut_max
 cut_min
 cycle_type
 cyclestart
+d	V_tanf
 d$ D!
 d$ E3
 d$ L9c
@@ -24717,6 +24707,7 @@ d$xMc L
 d$xeL
 d$xu;M
 d?000000`?
+dFDZ{A9
 dYA1H
 damage_direction_cp
 damage_position_cp
@@ -24852,6 +24843,7 @@ e+000
 e0A_A^A]A\]
 e0A_A^A]A\_^]
 e1->m_nPlaceInDissolveQueue < 0
+e8A_A^A]A\_^[]
 e<D;e`
 e@A_A^A]A\_^]
 e@A_A^]
@@ -25612,6 +25604,7 @@ j'Vlk
 j>>A?1
 j?V()
 j?{$*
+jUtf}~
 jiggle_root_bone
 jiggle_type
 jigglebone
@@ -25722,8 +25715,7 @@ l$(E3
 l$(H9k
 l$(L+
 l$(L9g
-l$(L9v
-l$(L9{
+l$(L9s
 l$(M+
 l$(M9~
 l$(fD
@@ -26259,6 +26251,8 @@ m_bUndoInitialized == false
 m_bUseCompressedNormalTangent
 m_bUseNewPoleVectorForAxis
 m_bUseShadowFastPath
+m_bUserFriendlyNameLong
+m_bUserFriendlyNameSealed
 m_bUserSpecifiedColor
 m_bUserSpecifiedMaterialGroup
 m_baseNameHash
@@ -26457,7 +26451,6 @@ m_hairs
 m_hardThreshold
 m_hardVelocityThreshold
 m_hardnessFactor
-m_head != QUEUE_ITERATOR_INVALID
 m_heap.IsValidIndex( index )
 m_hitboxsets
 m_hulls
@@ -26617,6 +26610,7 @@ m_nSurfacePropertyIndex
 m_nTaperedCapsuleRigidIndex
 m_nTargetAxis
 m_nTickCount
+m_nToolMaterialHash
 m_nTranslateMotion
 m_nTreeDepth
 m_nTriCount1
@@ -27325,60 +27319,44 @@ n|$`fA
 o KPBf
 o!L9l$ t
 o$$fA
-o%*u9
-o%,H9
-o%K<9
-o%Rl9
-o%Ty9
-o%X)9
-o%oE:
-o%x49
+o%+19
+o%+F9
+o%9/9
+o%?;9
+o%D%9
+o%Dh9
+o%G?:
+o%Jx9
+o%M|9
+o%|R9
 o,$fD
-o-  9
-o-%^9
-o-'@9
-o-,>:
-o-5r9
-o-;|9
-o-H<9
-o-KP9
-o-[j9
-o-[u9
-o-`y9
-o-j|:
-o-o/5
-o-w:9
-o-}S9
+o--19
+o->/9
+o-?S9
+o-O59
+o-Sv9
+o-er9
+o-p*9
+o-uh9
+o-wJ9
+o-|H:
 o47Lc
-o5(B9
-o5,"5
-o58.9
-o5A>:
-o5Fh9
-o5Ln9
-o5S49
-o5\j9
-o5`D9
-o5b|:
-o5l|9
-o5u09
-o5x49
-o5~S9
-o= S9
-o="49
-o=.5:
-o=3P9
-o=B89
-o=H>:
-o=Pru
-o=R:9
-o=Sv9
-o=Xh9
-o=bx9
-o=cV9
-o=iA9
-o=j[9
-o=~|9
+o5'79
+o51Q9
+o5O*9
+o5QU9
+o5Tv9
+o5l,5
+o5ot6
+o5xL9
+o=#n9
+o=Nt9
+o=Nx9
+o=^,9
+o=`f9
+o=p]9
+o=r>9
+o=~?:
 oAPfD
 oD$ f
 oD$ fA
@@ -28019,6 +27997,7 @@ r7f;\$|
 r:f;\$|
 rKf;\$t
 rNf;\$t
+r_A<[
 r_NE3
 r_f;\$l
 radius
@@ -28162,7 +28141,7 @@ s WATAUAVAWH
 s off
 s xDHc
 s%D;k
-s(H95x
+s(H95
 s(HcO
 s0H9s
 s0u!H
@@ -28565,7 +28544,7 @@ t$(HcD$XLc
 t$(I;
 t$(Ic
 t$(L+
-t$(L9n
+t$(L9o
 t$(L;
 t$(Lc
 t$(Lct$ 
@@ -28573,7 +28552,7 @@ t$(fD
 t$(fI
 t$(u4A
 t$09D$X
-t$0;5K
+t$0;5;
 t$0;o8
 t$0A^_
 t$0A_A^
@@ -28693,7 +28672,7 @@ t$LF;4
 t$P9\$`~"H
 t$P9|$DI
 t$PA+
-t$PD;5dV
+t$PD;5Ts
 t$PE3
 t$PE9,$
 t$PH9GP
@@ -28949,6 +28928,7 @@ tXHc\$ H
 tXIcD$0
 tX~V2
 tYHc>;~
+t\0mh
 t\;A`sWH
 t\HcL$`H
 t\Ic.
@@ -29116,6 +29096,7 @@ too many files open in system
 too many length or distance symbols
 too many links
 too many symbolic link levels
+tool_material
 tools/images/animclip_editor/outliner_icon_clip_file.png
 tools/images/animskeleton_editor/outliner_icon_skeleton_file.png
 tools/images/modeldoc_editor/add_hold.png
@@ -29592,7 +29573,6 @@ uvmapcylinder
 uwH;u
 uwHcD$$A
 uwIcN
-uwL;e
 uzKs@>
 v %f %f %f
 v A;o
@@ -29804,7 +29784,6 @@ x UAVAWH
 x!;;}
 x!A;Fx}
 x$A;]
-x%;=T
 x%fff
 x%i (
 x'A;n
@@ -29822,7 +29801,7 @@ x<fff
 x=HcS
 x>V6'
 x>V6'?C
-x@;=#	
+x@;=3%
 xA]A\^[
 xA]A\_^
 xA^A]
@@ -29892,7 +29871,6 @@ znear
 {(LcC0I
 {,D+{HD+
 {0x%x}
-{2;03
 {89{D
 {8H9{
 {@9s8|AH
@@ -30016,9 +29994,9 @@ znear
 |$8H+
 |$8Hc
 |$8Hc>H
-|$8HcD$0H
 |$8HcD$0L
 |$8Hct$0E
+|$8Hk
 |$8L+
 |$8L;
 |$8Lc
@@ -30060,7 +30038,6 @@ znear
 |$@t	H
 |$@u#H
 |$@u$H
-|$@uN
 |$@x)H
 |$@~ H
 |$DA;
@@ -30093,7 +30070,7 @@ znear
 |$Hu'I
 |$LB9<
 |$P9)~:D
-|$P;=-_
+|$P;=
 |$PA;
 |$PD;
 |$PE3

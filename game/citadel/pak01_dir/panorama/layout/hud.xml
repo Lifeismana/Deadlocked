@@ -44,7 +44,6 @@
 		</Panel>
 		<CitadelHudEventIndicatorsPanel id="HudEventIndicatorsPanel" />
 		<CitadelModifierMessage id="ModifierMessages" />
-		<CitadelZiplineBoostIcon hittest="false" hittestchildren="false" id="ZiplineBoostIcon" onmouseover="CitadelUIShowTextTooltip( #Citadel_ZiplineBoostDesc, &apos;&apos;, &apos;&apos; );" onmouseout="CitadelUIHideTextTooltip()" />
 		<CitadelPlayerLevelUpBonuses id="LevelUpBonuses" />
 		<CitadelFlexUnlockMessage id="FlexUnlockMessage" />
 		<CitadelPlayerLevelRewards id="LevelRewards" />
@@ -60,14 +59,15 @@
 			<CitadelPartyInviteList id="partyinvites" />
 		</Panel>
 		<Panel id="TimerContainer" />
+		<Panel id="SafeToAbandonIndicator">
+			<Label text="#SafeToAbandon_Text" />
+		</Panel>
 		<Panel id="gameplay_hud" class="gameplay_hud" hittest="false">
 			<Panel id="hudBacker" />
 			<TeamObjectiveHealthPanel id="objectives_health_friendly" team="2" />
 			<Panel class="spectatorList">
 				<TeamStatusPanel id="team_status_panel_spectator" class="team_status_panel" team="1" />
 			</Panel>
-			<CitadelHudModifiers id="hud_aura_modifiers" display_location="left" />
-			<CitadelHudActivePlayerStats id="hudPlayerStats" />
 			<Panel id="voice_active_box">
 				<Panel style="flow-children:right;">
 					<Panel class="micIcon" />
@@ -119,15 +119,7 @@
 				<CitadelHudSpectateBar id="spectate_bar" />
 				<CitadelHudReplay id="hud_replay" />
 			</Panel>
-			<Panel id="minimap_persp" hittest="false">
-				<Panel id="minimap_container" hittest="false">
-					<Panel id="minimap_blur" hittest="false" />
-					<HudMinimap id="hud_minimap" acceptsinput="false" acceptsfocus="false" />
-				</Panel>
-			</Panel>
-			<HudDataFeed id="DataFeed" />
 			<CitadelHudDamageSummary id="hud_damage_summary" />
-			<CitadelHudTopBar id="TopBar" hittest="false" />
 			<CitadelHudHealthContainer id="health_and_abilities_container" />
 			<CitadelHudAbilityInterrupt id="ability_interrupt_panel" />
 			<CitadelDamageImpact />
@@ -147,28 +139,20 @@
 			<Panel id="entity_location_container" class="entity_location_container" hittest="false" />
 			<Panel id="entity_location_detail" class="entity_location_detail" hittest="false" />
 			<Label id="damage_meter" text="DPS {i:dps}" />
-		</Panel>
-		<Panel id="StatsAndModsContainer" hittest="false">
-			<CitadelHeroStats id="HeroStats" />
-			<Panel class="ModsContainer">
-				<Panel class="ModSection WeaponMods">
-					<Label class="ModTypeLabel" text="#CitadelCategoryWeapon" />
-					<CitadelModsPurchasedPanel id="ModPurchasedPanelWeapon" class="mod_weapon modsButton" mod_category="Weapon" show_cooldowns="true" show_spectating_player_items="true" />
+			<Panel class="clamp_width">
+				<HudDataFeed id="DataFeed" />
+				<Panel id="minimap_persp" hittest="false">
+					<Panel id="minimap_container" hittest="false">
+						<Panel id="minimap_blur" hittest="false" />
+						<HudMinimap id="hud_minimap" acceptsinput="false" acceptsfocus="false" />
+					</Panel>
 				</Panel>
-				<Panel class="ModSection ArmorMods">
-					<Label class="ModTypeLabel" text="#CitadelCategoryArmor" />
-					<CitadelModsPurchasedPanel id="ModPurchasedPanelArmor" class="mod_armor modsButton" mod_category="Armor" show_cooldowns="true" show_spectating_player_items="true" />
-				</Panel>
-				<Panel class="ModSection TechMods">
-					<Label class="ModTypeLabel" text="#CitadelCategoryTech" />
-					<CitadelModsPurchasedPanel id="ModPurchasedPanelTech" class="mod_tech modsButton" mod_category="Tech" show_cooldowns="true" show_spectating_player_items="true" />
-				</Panel>
-				<Panel class="ModSection FlexMods">
-					<Label class="ModTypeLabel" text="#CitadelCategoryFlex" />
-					<CitadelModsPurchasedPanel id="ModPurchasedPanelUniversal" class="mod_universal modsButton" mod_category="Locked Universal" show_cooldowns="true" show_spectating_player_items="true" />
-				</Panel>
+				<CitadelZiplineBoostIcon hittest="false" hittestchildren="false" id="ZiplineBoostIcon" onmouseover="CitadelUIShowTextTooltip( #Citadel_ZiplineBoostDesc, &apos;&apos;, &apos;&apos; );" onmouseout="CitadelUIHideTextTooltip()" />
+				<CitadelHudModifiers id="hud_aura_modifiers" display_location="left" />
+				<CitadelHudActivePlayerStats id="hudPlayerStats" />
 			</Panel>
 		</Panel>
+		<CitadelHudTopBar id="TopBar" hittest="false" />
 		<Panel id="AbilitiesContainer" class="abilitiesContainer" hittest="false">
 			<Panel class="unlockMessage upgradeReminderUI">
 				<Label html="true" text="#Citadel_HUD_AbilityUnlockAvailable" />
@@ -184,7 +168,6 @@
 				<Image id="hudAPInfinite" src="s2r://panorama/images/upgrades/infinity_psd.vtex" />
 			</Panel>
 		</Panel>
-		<CitadelHudSoulAPContainer id="gold_and_ap_container" />
 		<Panel id="gameplay_hud_dead" hittest="false" hittestchildren="false">
 			<Panel id="respawn_timer">
 				<Panel class="respawn_timer_container">
@@ -211,8 +194,8 @@
 				<Label class="action_binding" text="{s:mantle_key}" html="true" />
 			</Panel>
 			<Panel id="citadel_ability_zip_line" class="action_zip_line context_action">
-				<Image id="context_action_icon" class="context_action_icon" scaling="stretch-to-fit-preserve-aspect" src="s2r://panorama/images/hud/zipline_icon_psd.vtex" />
-				<Label class="action_binding" text="HOLD {s:jump_key} to Ride" html="true" />
+				<Panel id="zipline_sign" />
+				<Label class="action_binding" text="HOLD [ {s:jump_key} ] to Ride" html="true" />
 			</Panel>
 			<Panel class="action_capture_zip_line context_action">
 				<Image class="context_action_icon" scaling="stretch-to-fit-preserve-aspect" src="s2r://panorama/images/hud/capture_zipline_icon_psd.vtex" />
@@ -227,8 +210,8 @@
 				<Label class="action_binding" text="{s:vehicle_key}" html="true" />
 			</Panel>
 			<Panel class="action_upgrade context_action">
-				<Image class="context_action_icon" scaling="stretch-to-fit-preserve-aspect" src="s2r://panorama/images/hud/orb_icon_png.vtex" />
-				<Label class="action_binding" text="Press {s:upgrade_key} to Open Shop" html="true" />
+				<Image id="shop_sign" scaling="stretch-to-fit-preserve-aspect" src="s2r://panorama/images/shop/shop_logo_ui_psd.vtex" />
+				<Label class="action_binding" text="Press [ {s:upgrade_key} ] to Shop" html="true" />
 			</Panel>
 		</Panel>
 		<CitadelHudPersonalBest />
@@ -244,6 +227,30 @@
 			<CitadelAbilityDetailsPanel id="AbilityDetailsPanel4" class="abilityDetailsPanels" ability_slot="4" />
 		</Panel>
 		<CitadelHudHeroShop id="CitadelHudHeroShop" />
+		<Panel id="StatsAndModsContainer" hittest="false">
+			<Panel id="LowerLeft">
+				<CitadelHudSoulAPContainer id="gold_and_ap_container" />
+				<CitadelHeroStats id="HeroStats" />
+				<Panel class="ModsContainer">
+					<Panel class="ModSection WeaponMods">
+						<Label class="ModTypeLabel" text="#CitadelCategoryWeapon" />
+						<CitadelModsPurchasedPanel id="ModPurchasedPanelWeapon" class="mod_weapon modsButton" mod_category="Weapon" show_cooldowns="true" show_spectating_player_items="true" />
+					</Panel>
+					<Panel class="ModSection ArmorMods">
+						<Label class="ModTypeLabel" text="#CitadelCategoryArmor" />
+						<CitadelModsPurchasedPanel id="ModPurchasedPanelArmor" class="mod_armor modsButton" mod_category="Armor" show_cooldowns="true" show_spectating_player_items="true" />
+					</Panel>
+					<Panel class="ModSection TechMods">
+						<Label class="ModTypeLabel" text="#CitadelCategoryTech" />
+						<CitadelModsPurchasedPanel id="ModPurchasedPanelTech" class="mod_tech modsButton" mod_category="Tech" show_cooldowns="true" show_spectating_player_items="true" />
+					</Panel>
+					<Panel class="ModSection FlexMods">
+						<Label class="ModTypeLabel" text="#CitadelCategoryFlex" />
+						<CitadelModsPurchasedPanel id="ModPurchasedPanelUniversal" class="mod_universal modsButton" mod_category="Locked Universal" show_cooldowns="true" show_spectating_player_items="true" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
 		<CitadelHeroSelection id="hero_selection" hittest="true" />
 		<CitadelPaused id="PausedInfo" class="VisGroup_Top" />
 		<Panel id="deathReplayNoticeLower" class="deathReplayBar" />

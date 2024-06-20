@@ -65,6 +65,7 @@
 	Questionable extension field!
 	TYPE_BOOL
 	TYPE_ENUM
+	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_isdigit_str
@@ -147,7 +148,7 @@
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- !"#$%&'()*+,-./012355554
+ !"#$%&'()*+,-./012355554ZW	
  !"#$%&'()*+4444444444444444444444,-./0123
  !"#$%&'(????)*+,-./?????????????????01??????????????????????????????????????????????????????????????????????????????????????????????23456789??????????????????????????:;<=>
  $v E
@@ -185,6 +186,7 @@
  333333333!"#$%&'333333()*+,-.33333333333333333333333333/012
  9?SetSecurityToken@Context@v8@@QEAAXV?$Local@VValue@v8@@@2@@Z
  ;{}:
+ ;{};{}
  <xu"
  = { <proto text format> }". To set fields within it, use syntax like "
  ?IntegerValue@Value@v8@@QEBA?AV?$Maybe@_J@2@V?$Local@VContext@v8@@@2@@Z
@@ -859,13 +861,13 @@ $u"8K
 'D;c8r
 'HcO<H
 'Z9t%
+'[g=U
 'bQvE
 'g0dW
 'id' or 'name' missing
 'pSN.F
 'prB2
 'sp3s
-(	V_log2_uint
 (	]zV
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
@@ -887,6 +889,7 @@ $u"8K
 (0`hpx
 (1O\,n
 (;~8|
+(=*tD
 (A\_][
 (A]A\^[
 (A^A\^[
@@ -894,7 +897,7 @@ $u"8K
 (A^A]A\_^[
 (A^A]^[
 (A^A]_[
-(A^^H
+(A^_H
 (A^_][
 (A^_^[
 (A^_^]
@@ -1064,7 +1067,7 @@ $u"8K
 (t$@fD
 (t$@t
 (t$P3
-(t$P9
+(t$PA9
 (t$PD
 (t$PH
 (t$PIc
@@ -1354,6 +1357,7 @@ $u"8K
 *px <= 0.0f && *px > -flWidthImage
 *py <= 0.0f && *py >-flHeightImage
 *};8.
++	V_log2_uint
 +'+1+3+=+?+K+O+U+i+m+o+{+
 +(#E%da
 +(bF&drJ:x#
@@ -2200,7 +2204,9 @@ $u"8K
 /////////////
 /////////////////////////////////////////
 /2GG>!B
-/5^Q7
+/3grU
+/5>P7
+/5h[7
 /7v,D9
 /7v3f
 />58d%
@@ -2276,7 +2282,6 @@ $u"8K
 0A_A\_
 0A_A]A\
 0A_A]A\^]
-0A_A]]H
 0A_A]_][
 0A_A^A\
 0A_A^A\^]
@@ -2292,6 +2297,7 @@ $u"8K
 0A_A^A]A\_][
 0A_A^A]A\_^[
 0A_A^A]A\_^]
+0A_A^A]H
 0A_A^A]^]
 0A_A^A]_]
 0A_A^A]_^
@@ -2334,7 +2340,6 @@ $u"8K
 0tU+xc:
 0w0c1
 0}0i1
-1	V_modff
 1!1'1-191C1E1K1]1a1g1m1s1
 1#IND
 1#INF
@@ -2362,7 +2367,7 @@ $u"8K
 220323000000Z
 220801000000Z
 230714000000Z
-240613154337Z0/
+240620161300Z0/
 241009235959Z0a1
 2:3maJ
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -2474,6 +2479,7 @@ $u"8K
 3|$(A
 3|$,A3
 3|rN>
+4	V_modff
 4)#bH
 4.j."
 4444444444444444444444444444444444444444444444
@@ -2520,7 +2526,6 @@ $u"8K
 6r1ij
 6tpD4
 7	Fq?
-7	V_powd
 7$U8[
 7&F|If
 7,gm;
@@ -2539,7 +2544,6 @@ $u"8K
 7q|Q@
 7sAP'
 7}'&V
-8	V_powf
 8 t>A
 8!83858A8G8K8S8W8_8e8o8q8}8
 8"3hrf
@@ -2612,7 +2616,7 @@ $u"8K
 8O0u]A
 8SIffK5W
 8TZvrv<
-8X tW
+8X tZ
 8XugH
 8YA1H
 8\$PtD
@@ -2630,12 +2634,10 @@ $u"8K
 8ke?;
 8pe7?
 8q-S*]X
-9	V_qsort
 9	tYH
 9#9%9)9/9=9A9M9[9k9y9}9
 9)~4H
 9)~P3
-9-mEK
 9.u(H
 9.~>L
 90T1@I
@@ -2646,6 +2648,7 @@ $u"8K
 993u,H
 99~CE
 9:dzGN
+9=deP
 9>powf
 9>~DH
 9>~ZH
@@ -2763,7 +2766,7 @@ $u"8K
 9}X~'3
 9~(~'3
 9~8~uE3
-:	V_qsort_s
+:	V_powd
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :#uqH
@@ -2791,6 +2794,8 @@ $u"8K
 :q>*C
 :u(f9Q
 :z'H>
+:|L_k
+;	V_powf
 ;	t/H
 ;!;#;-;9;E;S;Y;_;q;{;
 ;"lY7
@@ -2802,7 +2807,6 @@ $u"8K
 ;.uNA
 ;2(-/
 ;5jNf
-;=zRB
 ;>4>se=
 ;?0123456789:;<=>?
 ;B |e
@@ -2857,11 +2861,11 @@ $u"8K
 ;uC#h/
 ;w }_
 ;{,}"H
-;{}:C:\buildworker\citadel_staging_win64\build\src\public\tier0\reliabletimer.h
 ;|$8|
 ;|$8~9H
 ;|$@|
 ;} u	H
+<	V_qsort
 <	u#L
 <	u)H
 <	w	@
@@ -2965,6 +2969,7 @@ $u"8K
 <xu^D
 <{tB<\u
 <~{Su;u
+=	V_qsort_s
 =!=-=3=7=?=C=o=s=u=y={=
 =#N"u#
 =&sf9
@@ -3316,8 +3321,8 @@ $u"8K
 @8~ t	
 @8~0t
 @8~0tM
-@: N 
-@:@N 
+@: a 
+@:`O 
 @:u`t3H
 @:{Xr
 @<:nq
@@ -3520,7 +3525,6 @@ $u"8K
 @UATAW
 @UATAWH
 @UAUAVH
-@UAUAWH
 @UAUH
 @UAVAW
 @UAVAWH
@@ -3647,7 +3651,6 @@ $u"8K
 @fA;\
 @fE;L
 @h!Aq8
-@htp$
 @import
 @import missing semicolon
 @keyframes
@@ -3706,7 +3709,7 @@ A9<Fu
 A9@(|
 A9E u
 A9E$t"H
-A9E$t0H9=_
+A9E$t0H9=
 A9HPu
 A9Z<~bL
 A9]8~;3
@@ -4574,6 +4577,7 @@ C:\buildworker\citadel_staging_win64\build\src\public\tier0\enum_helpers.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer.h
+C:\buildworker\citadel_staging_win64\build\src\public\tier0\reliabletimer.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
@@ -6056,7 +6060,6 @@ Czech
 C|$pH
 C|$xL
 D	!|H
-D	V_sincosf
 D 7D9
 D W?{W
 D g)*
@@ -6525,10 +6528,11 @@ D9#fE
 D9#t	H
 D9&~uA
 D9't%H
+D9(t5
 D9)t[
-D9-SeK
 D9.u1
-D98t4
+D95[]
+D95a|%
 D98~*A
 D98~ZL
 D9;~+I
@@ -7426,7 +7430,6 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 ExternalNameForInternalType
 F	8C	
 F	8C	u_A
-F	V_sinf
 F	tj<
 F 9F tDA
 F 9F(r
@@ -7604,10 +7607,12 @@ Freed EMS handle %u
 Freed XMS handle %u
 French
 Friday
+Fy192i
 F{(3?
 F|'|,
 F|w)a]c
 G	A8F	u
+G	V_sincosf
 G 8C u
 G 9C 
 G 9C u
@@ -7960,7 +7965,6 @@ H90ty
 H91ti
 H92tBA
 H93t	H
-H95G"Q
 H97u+A
 H98t!
 H98t1
@@ -8032,7 +8036,6 @@ H9|$`
 H9|$xt
 H9~@u
 H9~Pu
-H;&/$-
 H;A s'H
 H;B r
 H;C s$H
@@ -8368,7 +8371,7 @@ Huffman code size table overflow
 Huffman table 0x%02x was not defined
 Hungarian
 I	HA	981G'dc
-I	V_snprintf
+I	V_sinf
 I IcA
 I"9|OxTex
 I#I0H
@@ -8796,6 +8799,7 @@ Kwvt,
 K{"Kb,p
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!l$pH
 L!|$(L!
@@ -9553,6 +9557,7 @@ N[iY
 N]#8f'
 N_U9203
 N`UaK
+N`{EA4
 NamePart
 NavGameTest001
 NavSystem001
@@ -9617,7 +9622,6 @@ November
 Numbers starting with leading zero must be in octal.
 Nw!qB
 Nz3I#B
-O	V_sscanf
 O H;]
 O!t/H
 O#wjk
@@ -9766,6 +9770,7 @@ P-256
 P-384
 P-521
 P08@J
+P08J@
 P09_(~'H
 P1	98"
 P89P@}M
@@ -10014,7 +10019,7 @@ PSK-AES256-CBC-SHA
 PSK-RC4-SHA
 PSPECIFIED
 PUBLIC KEY
-PXH9-
+PXH9-{kQ
 PX`hpx
 Package name is too long
 PageDown
@@ -10174,6 +10179,7 @@ Quantizing to %d colors
 QueryPerformanceCounter
 Queue async event '%s' (delay %.2f to deliver at %.2f) for '%s' ( 0x%p )
 Q{0^:
+R	V_sscanf
 R)){R)){
 R11_EAC
 R16G16_UINT
@@ -11051,7 +11057,6 @@ SystemInputLanguageChanged
 SystemTimeToFileTime
 SystemTimeToTzSpecificLocalTime
 T	PA;
-T	V_stricmp_fast
 T"UdW
 T$ D#
 T$ D)s
@@ -11176,7 +11181,7 @@ T$xH;L$0t
 T$xH;U
 T$xMc
 T$zfD
-T5_s7
+T5?r7
 T61STRING
 T72[t
 TC	f\
@@ -11580,11 +11585,11 @@ UokOP
 Usage: panorama_dump_symbols <ESymbolType>
 Using a non-local image default %s, don't do that!
 Ut]<E
+UtfbC
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 Uz_G3=
-V	V_strlower_fast
 V'uk:
 V++}V++}
 V07;m
@@ -11685,6 +11690,7 @@ VWAUH
 VWAVH
 VWAWH
 VWSUATAUAVAW
+VWebm001
 VY5[;o
 VZ#-DLU[3=h
 V_:X1:
@@ -11728,7 +11734,6 @@ V_atoi
 V_atoui64
 V_a|I
 V_cosf
-V_fmodf
 V_stricmp_fast( pchUserLanguage, g_pLocalize->GetCurrentLanguage() ) == 0
 V_~]	,
 V`E3L
@@ -11778,13 +11783,16 @@ Virtual array controller messed up
 VisBuilder_001
 Vrad3_001
 V~~Vq
+W	V_stricmp_fast
 W"Fe~
 W%	s;M@
 W'6S`
+W-;H<
+W-d B
 W3i+,
 W8uDH
 W;()f
-W=.X<
+W=~W<
 W>peSp>9
 W@H1G@A
 WARNING
@@ -11877,7 +11885,7 @@ X!;3;
 X!t5~
 X!}}p|u
 X,,tX,,t4
-X-6x	
+X-Lx	
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X400Name
 X400Name:<unsupported>
@@ -11993,6 +12001,7 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
+X5bm0
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -12059,33 +12068,30 @@ XfD;\
 XfD;|
 XqgA+
 X~ '.
-Y%'W0
-Y%/Z0
-Y%9o9
-Y%Ar0
-Y%JGE
+Y	V_strlower_fast
+Y%J8	
+Y%PD0
+Y%ZGE
+Y%c\0
+Y%gW0
+Y%qo0
 Y(HcA H
-Y-BGE
-Y-M7	
-Y-N<0
-Y-PS0
-Y-Sf0
-Y-Yq9
-Y-cL<
-Y-rw0
+Y-"v0
+Y-Ch0
+Y-O~0
+Y-RGE
+Y-WF<
 Y0HcR
-Y50L1
-Y5Do9
-Y5QS<
-Y5Tv2
-Y5rL<
-Y5ww2
+Y54u2
+Y5Wv2
+Y5bN<
+Y5nm0
 Y9"SD
 Y93a=7c@
 Y;C;8V
-Y=*v2
-Y=CT1
-Y=lL1
+Y=#S1
+Y=LK1
+Y=cZ1
 Y>kX>M
 Y?33s?
 YD$@f
@@ -12112,7 +12118,6 @@ You need to read the OpenSSL FAQ, http://www.openssl.org/support/faq.html
 YpU_Z
 Ys/MA
 Y|u L
-Z	V_strtod
 Z!?IsArray@Value@v8@@QEBA_NXZ
 Z"T-47
 Z* ,	
@@ -12127,7 +12132,6 @@ Ze2Zh@
 Zod(^?
 Zpm"U
 ZwKiZwKi
-[	V_strtoi64
 [ UWAVI
 [!		|87
 [!%c:
@@ -12340,7 +12344,7 @@ ZwKiZwKi
 \$|fA;
 \$~fA;
 \%02X
-\%J9	
+\-&8	
 \1kYL
 \43n7
 \??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
@@ -12358,14 +12362,12 @@ ZwKiZwKi
 \r^mX
 \sG7tPD
 \t3D8T$(t
-]	V_strtoui64
+]	V_strtod
 ]&@+fk:
 ]&g''}
 ])6M>&
 ]0HcE(H
 ]1h=bfz
-]5+o0
-]5dp0
 ]8d$@
 ]:\|^
 ]>)2X
@@ -12379,6 +12381,7 @@ ZwKiZwKi
 ]cH9D$0}
 ]i7,>
 ]r}R{
+^	V_strtoi64
 ^,tyI
 ^.om5r
 ^0HcF(H
@@ -12446,13 +12449,15 @@ _xU`u
 _{j!g>
 _}eOk
 `	).0n
+`	V_strtoui64
 ` UAVAWH
 `&H|&
 `+!]?
 `-I	=S'\
 `.rdata
 `28)fk
-`: R 
+`:PT 
+`:`O 
 `:zQF
 `;k8|
 `@ `QE
@@ -12525,7 +12530,6 @@ _}eOk
 `generic-method-parameter-
 `generic-type-
 `h9T~
-`htp$
 `local static destructor helper'
 `local static guard'
 `local static thread guard'
@@ -12563,7 +12567,6 @@ _}eOk
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
-a	V_tanf
 a null shared library handle was used
 a0IcN
 a2d_ASN1_OBJECT
@@ -13639,6 +13642,7 @@ cubic-bezier
 curve
 cz>Sp
 czech
+d	V_tanf
 d e not congruent to 1
 d$ A3
 d$ AUAVAW
@@ -14277,7 +14281,7 @@ f9,~u
 f9<Fu
 f9<H}
 f9<Ju
-f9=wa
+f9=(a
 f9t$bu
 f9|$ tyf
 f9|$8
@@ -14361,7 +14365,7 @@ fD9dD uA
 fD9dD uO
 fD9t$b
 fD;"w
-fD;5W
+fD;57
 fD;a`
 fD;f`}~H
 fE9!fA
@@ -14497,7 +14501,6 @@ g&3gH
 g'L0X7b
 g*	(1
 g>	k?~
-gQm5s
 gTH.M
 gX8_C
 gXC.nT
@@ -16264,7 +16267,6 @@ o KPBf
 o!>d]
 o$$fA
 o$g31
-o%}z=
 o&1m&
 o*:TJ&
 o,$fD
@@ -18304,7 +18306,6 @@ t	9q t
 t	;Q@
 t	A80
 t	D8't
-t	D99
 t	E9'
 t	H9s
 t	Hcp
@@ -18581,22 +18582,22 @@ t,<tt
 t-H;C
 t-Lck
 t.H9-
-t.L9=
+t.L9={wH
 t.LcL$pM
 t.fff
 t/H9_
 t/fff
 t098~,H
 t0;?ZlP*m
-t0H9-
-t0H9=
+t0H9-L
+t0H9=E
 t0HcS
 t0L9s(t*E
 t0fff
 t0{r)
 t1<&u
 t1E9fPt
-t1H9=
+t1H9=7
 t1HHk
 t2fff
 t3HcK`A
@@ -18655,7 +18656,7 @@ tSf91tNH
 tTL9q t-H
 tU;Cxr
 tU;\$0tH
-tUH95
+tUH95m
 tUH99uPL
 tUvS@2
 tVH9X
@@ -18784,7 +18785,6 @@ tlsv1 unrecognized name
 tlsv1 unsupported extension
 to == nullptr
 to8\$ uE
-toIc}
 tofff
 token not present
 token present
@@ -18844,7 +18844,7 @@ tsa name mismatch
 tsa untrusted
 tsfff
 tst info setup error
-tuL9=
+tuL9=!S
 turkish
 turquoise
 tvD9g
@@ -18852,6 +18852,7 @@ tvD9o
 tvLcs
 tw8\$4
 twIcF
+txIc<$
 txfff
 ty@8:tt
 tyHcT$0)STH
@@ -19209,7 +19210,6 @@ vKfffff
 vLD9vD~,3
 vQO+t
 vW3N&
-vX}OD
 valid
 validity
 value
@@ -19295,6 +19295,7 @@ vxmlueH
 vzcrR
 v}`[>
 w#D9X
+w$D;w
 w(D;\$4
 w+OQvr
 w,Q)#I
@@ -19452,7 +19453,6 @@ xZIcF`H;
 x_^][
 x`\`U
 xatjD
-xe;='
 xg-9Ja
 xlHcF`H;
 xlink:href
@@ -19686,7 +19686,7 @@ zxNIjo
 |$HM;
 |$Hf;
 |$HfA
-|$HvmHc
+|$Hvt
 |$H~ H
 |$LE3
 |$P9_8
@@ -19738,7 +19738,6 @@ zxNIjo
 |$hHc
 |$hIc
 |$hL;
-|$hff
 |$hubH
 |$pD;g
 |$pE3
@@ -19824,6 +19823,7 @@ zxNIjo
 }W70d
 }X;^,
 }Xee+
+}[;-3
 }_|mPG@j^h
 }c@:{cw]@
 }cf;^n

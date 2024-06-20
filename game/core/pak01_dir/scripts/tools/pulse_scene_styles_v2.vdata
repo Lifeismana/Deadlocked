@@ -7,8 +7,10 @@
 		"$GreenMid_Hover" = "#1f6f40"
 		"$GreenLight" = "#7DB18A"
 		"$GreenLight_Hover" = "#83b590"
+		"$GreenLightBright" = "#7AD691"
 		"$GreenBright" = "#70FF00"
 		"$GreenBright_Hover" = "#77ff0d"
+		"$GreenTranslucent" = "#70FF0033"
 		"$TealDark" = "#0E222A"
 		"$TealDark_Hover" = "#14303b"
 		"$TealMidDark" = "#163541"
@@ -19,6 +21,7 @@
 		"$TealLight_Hover" = "#385a69"
 		"$TealBright" = "#98F2DC"
 		"$TealBright_Hover" = "#9df3de"
+		"$TealTranslucent" = "#98F2DC16"
 		"$PurpleBright" = "#9747FF"
 		"$PurpleBright_Hover" = "#9c50ff"
 		"$RedMid" = "#8E2F00"
@@ -37,6 +40,7 @@
 		"$YellowBright_Hover" = "#ffbc0d"
 		"$YellowLight" = "#DDB85D"
 		"$YellowLight_Hover" = "#dfbc65"
+		"$YellowTranslucent" = "#FFB8001A"
 		"$Black" = "#000000"
 		"$Blackish" = "#101010"
 		"$GreyDark" = "#252525"
@@ -50,11 +54,13 @@
 		"$GreyBright" = "#D9D9D9"
 		"$GreyBright_Hover" = "#dbdbdb"
 		"$White" = "#FFFFFF"
+		"$WhiteTranslucent" = "#FFFFFF1A"
 		"$port_data_background" = "$Black"
-		"$data_type_entity" = "$TealBright"
+		"$data_type_string" = "$GreenLightBright"
 		"$data_type_number" = "$YellowLight"
 		"$data_type_bool" = "$RedMid"
-		"$data_type_unknown" = "$GreyLight"
+		"$data_type_other" = "$TealBright"
+		"$data_type_flow" = "$GreyLight"
 		"$text" = "#ffffff"
 		"$node_base" = "#373737"
 		"$node_base_hover" = "#474747"
@@ -64,7 +70,7 @@
 		"$control_flow_hover" = "#ffffff"
 		"$control_flow_accessory" = "#b9b9b9"
 		"$control_flow_accessory_hover" = "#ffffff"
-		"$group" = "$GreyDark"
+		"$Group" = "$GreyDark"
 		"$value_group" = "$TealMid"
 	}
 	"@global-variables fonts" = 
@@ -80,7 +86,7 @@
 		LayoutChildren = "VBOX"
 		HAlign = "STRETCH"
 		MinSizeX = 200
-		MinSizeY = 40
+		MinSizeY = 38
 		"&::after" = 
 		{
 			PaintLayer = "SELECTION_OVERLAY"
@@ -90,12 +96,21 @@
 			Border = "3px Centered"
 			Visibility = "HIDDEN"
 		}
+		"&::before" = 
+		{
+			PaintLayer = "SELECTION_OVERLAY"
+			Positioning = "INSIDE_PARENT"
+			VAlign = "STRETCH"
+			HAlign = "STRETCH"
+			Border = "1px Inside"
+			Visibility = "HIDDEN"
+		}
 		"&.HoveredRelatedVarOrMethod" = 
 		{
-			"&::after" = 
+			"&::before" = 
 			{
 				Visibility = "VISIBLE"
-				Border_Color = "magenta"
+				Border = "DotLine $TealBright"
 			}
 		}
 		"&:selected" = 
@@ -104,6 +119,10 @@
 			{
 				Visibility = "VISIBLE"
 				Border_Color = "$TealBright"
+			}
+			"&.RequirementsNodeList::after" = 
+			{
+				Visibility = "COLLAPSE"
 			}
 			.FlowRail = 
 			{
@@ -114,7 +133,7 @@
 				Visibility = "VISIBLE"
 			}
 		}
-		"&:hover .DragHandle, &:hover-descendant .DragHandle" = 
+		"&:hover .DragHandle, &:hover-descendant .DragHandle, &:hover .PortPlug, &:hover-descendant .PortPlug" = 
 		{
 			Visibility = "VISIBLE"
 		}
@@ -172,39 +191,42 @@
 			HAlign = "STRETCH"
 			LayoutGrowFactor = 1
 			VAlign = "STRETCH"
-			".BaseFlow:first-child .NodeHeader_Base .FlowRail::before" = 
+			".BaseFlow:first-child .NodeRows .NodeRow.NodeHeader .FlowRail::before" = 
 			{
 				Margin_Top = 5
 				BorderRadius_TopLeft = 6
 				BorderRadius_TopRight = 6
 			}
-			".BaseFlow:last-child .NodeHeader_Base:last-child .FlowRail::before" = 
+			".BaseFlow:last-child .NodeRows .NodeRow:last-child .FlowRail::before" = 
 			{
 				Margin_Bottom = 5
 				BorderRadius_BottomRight = 6
 				BorderRadius_BottomLeft = 6
 			}
-			".BaseFlow:last-child .PortsLayout .port:last-child .FlowRail::before" = 
-			{
-				Margin_Bottom = 5
-				BorderRadius_BottomRight = 6
-				BorderRadius_BottomLeft = 6
-			}
-			".BaseFlow:last-child .BaseRequirement .PortsLayout .port .FlowRail::before" = 
+			".BaseFlow:last-child .BaseRequirement .NodeRows .NodeRow .FlowRail::before" = 
 			{
 				Margin_Bottom = "unset"
-				BorderRadius_BottomRight = 0
-				BorderRadius_BottomLeft = 0
+				BorderRadius_BottomRight = "unset"
+				BorderRadius_BottomLeft = "unset"
 			}
-			".BaseFlow:first-child, .BaseFlow::after:first-child" = 
+			".BaseFlow:first-child, .BaseFlow::after:first-child, .BaseFlow::before:first-child" = 
 			{
 				BorderRadius_TopLeft = "6px"
 				BorderRadius_TopRight = "6px"
 			}
-			".BaseFlow:last-child, .BaseFlow::after:last-child" = 
+			".BaseFlow:last-child, .BaseFlow::after:last-child, .BaseFlow::before:last-child" = 
 			{
 				BorderRadius_BottomLeft = "6px"
 				BorderRadius_BottomRight = "6px"
+			}
+			.BaseFlow = 
+			{
+				Margin_Bottom = 1
+				Margin_Top = 1
+				"&:last-child, .RequirementsNodeList" = 
+				{
+					Margin_Bottom = 0
+				}
 			}
 		}
 	}
@@ -219,6 +241,11 @@
 		BorderRadius_TopRight = "7px"
 		BorderRadius_BottomLeft = "17px"
 		BorderRadius_BottomRight = "17px"
+		"&.Value_VarReference, &.ValueExpression" = 
+		{
+			BorderRadius_TopLeft = "17px"
+			BorderRadius_TopRight = "17px"
+		}
 		.BaseValueInnerContainer = 
 		{
 			HAlign = "STRETCH"
@@ -241,6 +268,11 @@
 			BorderRadius_TopRight = "7px"
 			BorderRadius_BottomLeft = "17px"
 			BorderRadius_BottomRight = "17px"
+			"&.Value_VarReference, &.ValueExpression" = 
+			{
+				BorderRadius_TopLeft = "17px"
+				BorderRadius_TopRight = "17px"
+			}
 		}
 		"&:selected" = 
 		{
@@ -250,6 +282,16 @@
 				Border_Color = "$TealBright"
 			}
 		}
+		"&:hover .PortPlug, &:hover-descendant .PortPlug" = 
+		{
+			Visibility = "VISIBLE"
+		}
+		.OutparamPort = 
+		{
+			BorderRadius = "22px"
+			Margin = "3px"
+			MinSizeY = 28
+		}
 	}
 	.BaseConnection = 
 	{
@@ -257,10 +299,32 @@
 		Background_Color = "transparent"
 		Border = "transparent"
 		Foreground_Width = "3px"
+		PaintLayer = "CONNECTIONS_BACKGROUND"
+		"&.ValueType_Bool" = 
+		{
+			Foreground_Color = "$data_type_bool"
+		}
+		"&.ValueType_Number" = 
+		{
+			Foreground_Color = "$data_type_number"
+		}
+		"&.ValueType_String" = 
+		{
+			Foreground_Color = "$data_type_string"
+		}
+		"&.ValueType_Other" = 
+		{
+			Foreground_Color = "$data_type_other"
+		}
+		"&.ValueType_Flow" = 
+		{
+			Foreground_Color = "$data_type_flow"
+		}
 	}
 	".BaseConnection:hover, .BaseConnection.IsSourceHovered" = 
 	{
 		Foreground_Color = "#FFFFFF"
+		PaintLayer = "CONNECTIONS_FOREGROUND"
 	}
 	".BaseConnection:selected" = 
 	{
@@ -273,6 +337,7 @@
 	.Connection_Inparam = 
 	{
 		Foreground_Width = "2px"
+		PaintLayer = "CONNECTIONS_FOREGROUND"
 	}
 	.Connection_Outflow = 
 	{
@@ -290,6 +355,7 @@
 			Margin_Left = -16
 			FixedSizeX = 16
 			FixedSizeY = 16
+			PaintLayer = "CONNECTIONS_FOREGROUND"
 		}
 		"&:selected" = 
 		{
@@ -311,12 +377,28 @@
 	{
 		MinSizeX = 80
 		LayoutChildren = "HBOX"
-	}
-	.ValueLiteral_Text = 
-	{
-		PaintLayer = "NODES"
-		Font = "Courier New,13,-1,5,75,0,0,0,0,0,Bold"
-		Margin_Left = 20
+		.ValueLiteral_Text = 
+		{
+			PaintLayer = "NODES"
+			Font = "Courier New,13,-1,5,75,0,0,0,0,0,Bold"
+			Margin_Left = 20
+			"&.ValueType_Bool" = 
+			{
+				Foreground_Color = "$data_type_bool"
+			}
+			"&.ValueType_Number" = 
+			{
+				Foreground_Color = "$data_type_number"
+			}
+			"&.ValueType_String" = 
+			{
+				Foreground_Color = "$data_type_string"
+			}
+			"&.ValueType_Other" = 
+			{
+				Foreground_Color = "$data_type_other"
+			}
+		}
 	}
 	.GroupBackground = 
 	{
@@ -324,26 +406,9 @@
 		VAlign = "STRETCH"
 		HAlign = "STRETCH"
 		PaintLayer = "GROUP_BACKGROUND"
-		Background_Color = "$group"
-		Border = "SolidLine $group 10px Outside"
+		Background_Color = "$Group"
+		Border = "SolidLine $Group 10px Outside"
 		BorderRadius = "3px"
-	}
-	.ResizeFlow_Corner_BottomRight = 
-	{
-		InteractionPriority = "RESIZE_CORNER"
-		ParticipatesInBoxSelection = false
-		Positioning = "INSIDE_PARENT"
-		VAlign = "BOTTOM"
-		HAlign = "RIGHT"
-		FixedSizeX = 8
-		FixedSizeY = 8
-		PaintLayer = "NODES"
-		BackgroundImage = "tools/images/pulse_editor/resize_block_handle.png"
-		ImageTint = "#5B686A"
-	}
-	".ResizeFlow_Corner_BottomRight:hover" = 
-	{
-		ImageTint = "#929899"
 	}
 	.Row = 
 	{
@@ -352,7 +417,7 @@
 		VAlign = "STRETCH"
 		HAlign = "STRETCH"
 	}
-	.NodeHeader_Base = 
+	.NodeHeader = 
 	{
 		HAlign = "STRETCH"
 		LayoutGrowFactor = 1
@@ -402,11 +467,11 @@
 		FixedSizeY = 18
 		Margin_Top = 2
 		Margin_Right = 0
-		Margin_Left = 36
+		Margin_Left = 0
 		PaintLayer = "CONNECTIONS_FOREGROUND"
 		VAlign = "CENTER"
 		HAlign = "LEFT"
-		Positioning = "INSIDE_PARENT"
+		Positioning = "OUTSIDE_PARENT"
 		Visibility = "COLLAPSE"
 	}
 	.RequirementsIconInRequirementsList = 
@@ -414,11 +479,11 @@
 		FixedSizeX = 18
 		FixedSizeY = 18
 		Margin_Right = 0
-		Margin_Left = 36
+		Margin_Left = 0
 		PaintLayer = "CONNECTIONS_FOREGROUND"
 		VAlign = "CENTER"
 		HAlign = "LEFT"
-		Positioning = "INSIDE_PARENT"
+		Positioning = "OUTSIDE_PARENT"
 	}
 	.RequirementsNodeList = 
 	{
@@ -463,10 +528,6 @@
 		{
 			Visibility = "VISIBLE"
 		}
-		"&.ShowIconAlongsideFirstPort .NodeRows" = 
-		{
-			Margin_Left = 10
-		}
 		"&.ShowRequirementsIconInsideHeader .RequirementsIconInsideHeader" = 
 		{
 			Visibility = "VISIBLE"
@@ -476,6 +537,7 @@
 	{
 		VAlign = "STRETCH"
 		HAlign = "STRETCH"
+		LayoutGrowFactor = 1
 		LayoutChildren = "VBOX"
 	}
 	".ValueWithoutPortLabels .HeaderTextContainer" = 
@@ -486,9 +548,11 @@
 	{
 		Font = "$BaseFontSemiBold"
 		PaintLayer = "NODES"
-		HAlign = "LEFT"
+		TextHAlign = "LEFT"
+		HAlign = "STRETCH"
 		VAlign = "STRETCH"
 		LayoutGrowFactor = 1
+		TextClipMode = "ELIDE_TEXT_END"
 	}
 	".InflowNode .HeaderText" = 
 	{
@@ -500,6 +564,10 @@
 	".OutflowNode .HeaderText" = 
 	{
 		Foreground_Color = "#000000"
+	}
+	".BaseValue .HeaderText" = 
+	{
+		TextClipMode = "unset"
 	}
 	".ValueWithoutPortLabels .HeaderIcon" = 
 	{
@@ -518,6 +586,8 @@
 		Font = "Dinish,10,-1,5,50,0,0,0,0,0,Italic"
 		PaintLayer = "NODES"
 		HAlign = "LEFT"
+		VAlign = "CENTER"
+		LayoutGrowFactor = 1
 	}
 	".ValueWithoutPortLabels .SubHeaderText" = 
 	{
@@ -528,6 +598,36 @@
 		LayoutChildren = "VBOX"
 		HAlign = "STRETCH"
 		LayoutGrowFactor = 1
+	}
+	.NodeRow = 
+	{
+	}
+	".NodeRows .NodeRow:first-child" = 
+	{
+		FixedSizeY = 39
+		MinSizeY = 39
+		"& .FlowRail" = 
+		{
+			FixedSizeY = 39
+		}
+	}
+	".NodeRows .NodeRow:last-child" = 
+	{
+		FixedSizeY = 39
+		MinSizeY = 39
+		"& .FlowRail" = 
+		{
+			FixedSizeY = 39
+		}
+	}
+	".NodeRows .NodeRow:only-child" = 
+	{
+		FixedSizeY = 38
+		MinSizeY = 38
+		"& .FlowRail" = 
+		{
+			FixedSizeY = 38
+		}
 	}
 	.ResizeFlow_Edge_Base = 
 	{
@@ -555,7 +655,11 @@
 		LayoutChildren = "HBOX"
 		".port:first-child" = 
 		{
-			Margin_Left = 0
+			Margin_Left = -30
+		}
+		".port:last-child" = 
+		{
+			Margin_Right = 16
 		}
 	}
 	.InflowPortsLayout = 
@@ -583,11 +687,6 @@
 	{
 		HAlign = "LEFT"
 		Positioning = "INSIDE_PARENT"
-	}
-	.PortsLayout = 
-	{
-		HAlign = "STRETCH"
-		LayoutChildren = "VBOX"
 	}
 	.FlowRail = 
 	{
@@ -662,6 +761,11 @@
 		Margin_Top = 2
 		Margin_Bottom = 2
 	}
+	.PortPlugCtn = 
+	{
+		FixedSizeX = 24
+		FixedSizeY = 24
+	}
 	.PortPlug = 
 	{
 		InteractionPriority = "PORT"
@@ -670,6 +774,16 @@
 		BorderRadius = "3px"
 		BackgroundSize = "Stretch"
 		PaintLayer = "NODES"
+		Visibility = "HIDDEN"
+	}
+	".IsValidPortDragLocation .PortPlug, .IsDragPort .PortPlug" = 
+	{
+		Visibility = "VISIBLE"
+		Border = "1px DotLine"
+	}
+	".HasExternalConnection .PortPlug, .OutparamPort .PortPlug, .OutflowPort .PortPlug, .InflowPort .PortPlug" = 
+	{
+		Visibility = "VISIBLE"
 	}
 	.PortLabel = 
 	{
@@ -677,7 +791,7 @@
 		Font = "$BaseFont"
 		PaintLayer = "NODES"
 		Foreground_Color = "#FFFFFF"
-		Margin_Left = 18
+		Margin_Left = 6
 	}
 	.PortValueLabel = 
 	{
@@ -706,25 +820,24 @@
 			{
 				LayoutGrowFactor = 0
 			}
+			"&:nth-child(2)" = 
+			{
+				LayoutGrowFactor = 1
+			}
+			.PortPlugCtn = 
+			{
+				Margin_Bottom = 20
+				FixedSizeX = 10
+				FixedSizeY = 10
+				BorderRadius = "12px"
+				Border = "10px SolidLine $group"
+				PaintLayer = "COMMENTS"
+			}
 			.PortPlug = 
 			{
-				Margin_Bottom = 14
 				FixedSizeX = 12
 				FixedSizeY = 12
 				BorderRadius = "12px"
-				Border_Color = 
-				[
-					14,
-					20,
-					27,
-				]
-				Border_Width = 2
-				Background_Color = 
-				[
-					144,
-					144,
-					144,
-				]
 				"&:hover" = 
 				{
 					Background_Color = 
@@ -743,25 +856,20 @@
 			{
 				LayoutGrowFactor = 0
 			}
+			.PortPlugCtn = 
+			{
+				Margin_Top = 20
+				FixedSizeX = 10
+				FixedSizeY = 10
+				BorderRadius = "12px"
+				Border = "10px SolidLine $group"
+				PaintLayer = "CONNECTIONS_BACKGROUND"
+			}
 			.PortPlug = 
 			{
-				Margin_Top = 22
 				FixedSizeX = 12
 				FixedSizeY = 12
 				BorderRadius = "12px"
-				Border_Color = 
-				[
-					14,
-					20,
-					27,
-				]
-				Border_Width = 2
-				Background_Color = 
-				[
-					144,
-					144,
-					144,
-				]
 				"&:hover" = 
 				{
 					Background_Color = 
@@ -792,6 +900,10 @@
 		}
 		"&.InparamPort" = 
 		{
+			.PortPlugCtn = 
+			{
+				Margin_Right = 4
+			}
 			.PortPlug = 
 			{
 				FixedSizeX = 12
@@ -832,70 +944,40 @@
 		{
 			TextHAlign = "LEFT"
 		}
-		"&.PortValue_Bool" = 
+		"&.ValueType_Bool" = 
 		{
 			.PortValueLabel = 
 			{
-				Foreground_Color = 
-				[
-					142,
-					47,
-					0,
-				]
+				Foreground_Color = "$data_type_bool"
 			}
 			.PortPlug = 
 			{
-				Background_Color = 
-				[
-					142,
-					47,
-					0,
-				]
+				Background_Color = "$data_type_bool"
 			}
 		}
-		"&.PortValue_Number" = 
+		"&.ValueType_Number" = 
 		{
 			.PortValueLabel = 
 			{
-				Foreground_Color = 
-				[
-					62,
-					187,
-					112,
-				]
+				Foreground_Color = "$data_type_number"
 			}
 			.PortPlug = 
 			{
-				ImageTint = 
-				[
-					62,
-					187,
-					112,
-				]
+				ImageTint = "$data_type_number"
 			}
 		}
-		"&.PortValue_String" = 
+		"&.ValueType_String" = 
 		{
 			.PortValueLabel = 
 			{
-				Foreground_Color = 
-				[
-					0,
-					109,
-					187,
-				]
+				Foreground_Color = "$data_type_string"
 			}
 			.PortPlug = 
 			{
-				ImageTint = 
-				[
-					0,
-					109,
-					187,
-				]
+				ImageTint = "$data_type_string"
 			}
 		}
-		"&.PortValue_Other" = 
+		"&.ValueType_Other" = 
 		{
 			.PortValueLabel = 
 			{
@@ -903,12 +985,7 @@
 			}
 			.PortPlug = 
 			{
-				ImageTint = 
-				[
-					156,
-					115,
-					0,
-				]
+				ImageTint = "$data_type_other"
 			}
 		}
 		"&.PortHasError" = 
@@ -926,12 +1003,6 @@
 	}
 	".Port .PortPlug:hover" = 
 	{
-		ImageTint = 
-		[
-			255,
-			255,
-			255,
-		]
 		FixedSizeX = 14
 		FixedSizeY = 14
 	}
@@ -1030,13 +1101,7 @@
 		Background_Color = "transparent"
 		"&:hover, &:hover-descendant" = 
 		{
-			Border_Width = 3
-			Border_Color = 
-			[
-				144,
-				144,
-				144,
-			]
+			Background_Color = "$WhiteTranslucent"
 		}
 		.BlockCommentHeader = 
 		{
@@ -1044,10 +1109,10 @@
 			InteractionPriority = "BASE"
 			VAlign = "TOP"
 			HAlign = "STRETCH"
-			FixedSizeY = 22
-			Margin_Top = 2
-			Margin_Left = 3
-			Margin_Right = 3
+			FixedSizeY = 20
+			Padding = "2px"
+			BorderRadius_TopLeft = "12px"
+			BorderRadius_TopRight = "12px"
 		}
 		.BlockCommentTextBox = 
 		{
@@ -1064,13 +1129,7 @@
 		{
 			.BlockCommentHeader = 
 			{
-				Border_Width = 3
-				Border_Color = 
-				[
-					46,
-					46,
-					46,
-				]
+				DefaultHoverCursorName = "OpenHandCursor"
 			}
 		}
 		"&.BlockCommentNote" = 
@@ -1101,26 +1160,69 @@
 	}
 	.Cursor = 
 	{
-		InteractionPriority = "BASE"
-		FixedSizeX = 32
-		FixedSizeY = 32
+		PaintLayer = "HOVER_OVERLAY"
+		InteractionPriority = "ANCHOR"
+		FixedSizeX = 40
+		FixedSizeY = 40
+		Padding_Left = 10
+		BackgroundImage = "tools/images/pulse_editor/yielded_cursor_other.png"
+		"&.SelectedInstance" = 
+		{
+			BackgroundImage = "tools/images/pulse_editor/yielded_cursor.png"
+		}
+		"&.CallstackCursor" = 
+		{
+			FixedSizeX = 20
+			FixedSizeY = 20
+			BackgroundImage = "tools/images/pulse_editor/yielded_cursor.png"
+			Visibility = "COLLAPSE"
+			"&.SelectedInstance" = 
+			{
+				Visibility = "VISIBLE"
+			}
+		}
+		"&.DeadCursor" = 
+		{
+			Visibility = "COLLAPSE"
+			BackgroundImage = "tools/images/pulse_editor/dead_cursor.png"
+			"&.LastDeadCursor" = 
+			{
+				FixedSizeX = 40
+				FixedSizeY = 40
+			}
+			"&.SelectedInstance" = 
+			{
+				Visibility = "VISIBLE"
+			}
+		}
+		"&:hover" = 
+		{
+			ImageTint = "red"
+		}
 	}
-	".Cursor:hover" = 
+	.PulseTextTooltip = 
 	{
-		PaintLayer = "NODES"
-		Border = "2px #909090"
-		Background_Color = "#625B20"
-	}
-	.CallstackCursor = 
-	{
-		FixedSizeX = 16
-		FixedSizeY = 16
-	}
-	.CursorIcon = 
-	{
-		VAlign = "STRETCH"
-		HAlign = "STRETCH"
-		PaintLayer = "NODES"
+		PaintLayer = "HOVER_OVERLAY"
+		LayoutChildren = "HBOX"
+		Border = "1px black"
+		Background_Color = 
+		[
+			100,
+			100,
+			100,
+		]
+		.Tooltip = 
+		{
+			Font = "$BaseFont"
+			Foreground_Color = 
+			[
+				255,
+				255,
+				255,
+			]
+			Margin = "4px"
+			PaintLayer = "HOVER_OVERLAY"
+		}
 	}
 	.ClientPaintArea = 
 	{
@@ -1179,26 +1281,91 @@
 			{
 				Background_Color = "$dragColorHover"
 			}
-			".value_node_ctn::after" = 
-			{
-				ImageTint = "$DashedLineColor"
-			}
-			.param_group = 
-			{
-				Background_Color = "$paramColorBase"
-			}
 			.icon_style_20x20 = 
 			{
 				ImageTint = "$flowColor"
 			}
 			.HeaderText = 
 			{
+				Padding_Left = 6
+				Padding_Right = 6
 				Font = "$typeFace"
 			}
 			.RequirementLayout_Separator_Line = 
 			{
 				Background_Color = "$DashedLineColor"
 				Background_Style = "Dense6Pattern"
+			}
+			"&.BaseValue .OutparamPort" = 
+			{
+				Background_Color = "$Black"
+			}
+			"&.BaseConnection" = 
+			{
+				"&.ValueType_Bool" = 
+				{
+					Foreground_Color = "$data_type_bool"
+				}
+				"&.ValueType_Number" = 
+				{
+					Foreground_Color = "$data_type_number"
+				}
+				"&.ValueType_String" = 
+				{
+					Foreground_Color = "$data_type_string"
+				}
+				"&.ValueType_Other" = 
+				{
+					Foreground_Color = "$data_type_other"
+				}
+			}
+			.Port = 
+			{
+				.PortPlug = 
+				{
+					Border_Color = "$PortBorderColor"
+					Background_Color = "$PortBackgroundColor"
+				}
+				"&.OutflowPort .PortPlug, &.InflowPort .PortPlug" = 
+				{
+					Background_Color = "$InFlowOutFlowPortBackgroundColor"
+				}
+				"&.IsValidPortDragLocation .PortPlug, &.IsDragPort .PortPlug" = 
+				{
+					Border_Color = "$DashedLineColor"
+				}
+				"&.ValueType_Bool" = 
+				{
+					".PortValueLabel, .PortPlug" = 
+					{
+						Foreground_Color = "$data_type_bool"
+						ImageTint = "$data_type_bool"
+					}
+				}
+				"&.ValueType_Number" = 
+				{
+					".PortValueLabel, .PortPlug" = 
+					{
+						Foreground_Color = "$data_type_number"
+						ImageTint = "$data_type_number"
+					}
+				}
+				"&.ValueType_String" = 
+				{
+					".PortValueLabel, .PortPlug" = 
+					{
+						Foreground_Color = "$data_type_string"
+						ImageTint = "$data_type_string"
+					}
+				}
+				"&.ValueType_Other" = 
+				{
+					".PortValueLabel, .PortPlug" = 
+					{
+						Foreground_Color = "$data_type_other"
+						ImageTint = "$data_type_other"
+					}
+				}
 			}
 		}
 		".node_theme.$className:hover" = 
@@ -1252,6 +1419,9 @@
 		"$DashedLineColor" = "$GreyMidLight"
 		"$DashedLineColorHover" = "$GreyMidLight_Hover"
 		"$borderColorSelected" = "$TealBright"
+		"$PortBackgroundColor" = "$Black"
+		"$PortBorderColor" = "$GreyDark"
+		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
 		"$typeFace" = "$BaseFont"
 	}
 	"@variable-context node_theme_yielding" = 
@@ -1269,6 +1439,9 @@
 		"$DashedLineColor" = "$TanLight"
 		"$DashedLineColorHover" = "$TanLight_Hover"
 		"$borderColorSelected" = "$TealBright"
+		"$PortBackgroundColor" = "$Black"
+		"$PortBorderColor" = "$GreyDark"
+		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
 		"$typeFace" = "$BaseFont"
 	}
 	"@variable-context node_theme_value" = 
@@ -1286,7 +1459,10 @@
 		"$DashedLineColor" = "$TealLight"
 		"$DashedLineColorHover" = "$TealLight_Hover"
 		"$borderColorSelected" = "$TealBright"
-		"$portColor" = "$black"
+		"$PortBackgroundColor" = "$Black"
+		"$PortBorderColor" = "$GreyDark"
+		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
+		"$portColor" = "$Black"
 		"$typeFace" = "$BaseFont"
 	}
 	"@variable-context node_theme_IsSpontaneous" = 
@@ -1304,7 +1480,10 @@
 		"$DashedLineColor" = "$TealLight"
 		"$DashedLineColorHover" = "$TealLight_Hover"
 		"$borderColorSelected" = "$TealBright"
-		"$portColor" = "$black"
+		"$PortBackgroundColor" = "$Black"
+		"$PortBorderColor" = "$GreyDark"
+		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
+		"$portColor" = "$Black"
 		"$typeFace" = "$BaseFontBold"
 	}
 	"@include-mixin node_theme(default)" = 

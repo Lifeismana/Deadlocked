@@ -17,6 +17,7 @@
 	6p7MOf
 	D$0H
 	D;otD
+	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_isnand
@@ -228,9 +229,9 @@
 # of children to enable
 # of children to set
 # of control points to set
-#%U^40
 #>H3~?
 #HcC 
+#VkL.
 #bML"
 $>!@v>
 $AMBIENTSCALE
@@ -324,12 +325,9 @@ $x?"TA?
 &YA1E
 &YA1H
 &YA1I
-'	V_log10f
 ', type<
 ',=?k
-']!`r
 'p7M}f
-(	V_log2_uint
 (	u#L9|
 ( 1.0f - tr.m_flFraction ) >= 0.0f
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
@@ -365,57 +363,59 @@ $x?"TA?
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
-(%#c$
-(%)a$
-(%*N,
-(%E3B
-(%JE#
-(%`@8
+(%$XF
+(%:F#
+(%E6B
+(%UVX
 (%d,%d)
-(%jS8
-(%o`F
-(%|{]
+(%l{]
+(%mXF
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-	*)
-(-$_X
-(-+@8
-(-4rX
-(-5IX
-(-OJQ
-(-_W'
-(-ayA
-(-e9$
-(-k%]
-(-mXF
-(-t:+
-(-{IF
-(-}<'
-(5#4g
-(5.X(
-(5.v'
-(50vU
-(5=?'
-(5A0]
-(5BZ'
-(5Fq]
-(5Zf]
-(5^q&
-(5gP]
-(5ki&
-(5lE+
-(5p;(
-(5s<g
-(5sX(
-(5sv'
-(5vwJ
-(=$%W
-(='/V
-(=Fs(
-(=J&Y
-(=]]O
-(=c}&
-(=j<g
+(-$"+
+(-%:$
+(-2xX
+(-5WF
+(-=='
+(-F4Y
+(-K+$
+(-K9(
+(-MyU
+(-P V
+(-VIF
+(-[%]
+(-a|A
+(-b1G
+(-o`X
+(-sZL
+(-ut'
+(-wV(
+(-{?8
+(5  .
+(5!2V
+(5+j&
+(50<(
+(510]
+(53Y(
+(53w'
+(56q]
+(5Jf]
+(5L3V
+(5Q (
+(5WP]
+(5Y .
+(5l!g
+(5u<(
+(5vzJ
+(5yu(
+(5zMP
+(5|B+
+(=#~&
+(=MDD
+(=Vp(
+(=c!g
+(=d*W
+(=z4g
 (A^A\_[
 (A^A]A\_^[
 (A^A]_^
@@ -425,6 +425,7 @@ $x?"TA?
 (A_A\^[
 (A_A\_^][
 (A_A]A\_
+(A_A^A\_
 (A_A^A]A\_^][
 (A_A^^[
 (A_A^_^
@@ -920,6 +921,7 @@ $x?"TA?
 )|$pL
 )|B?d!
 )}@D8
+*	V_log10f
 *;Eot	;Ew
 *<alA?
 *StO9>T
@@ -928,6 +930,7 @@ $x?"TA?
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *pMaxIndices <= 32768
 *pMaxVertices <= 32768
++	V_log2_uint
 +Base Properties
 +Collection Options
 +Color and alpha adjustments
@@ -947,7 +950,6 @@ $x?"TA?
 +kt+Kt
 +o'q)}
 +|$PH
-,	V_logf
 , at <EOF>
 , at offset %d
 , near %s
@@ -989,7 +991,7 @@ $x?"TA?
 -unknown source-
 -unknown source-(
 -vulkan_disable_particle_descriptor_set
-.%2x)
+.%Bu)
 ..om?
 .00cfg
 .1 .95
@@ -1017,16 +1019,16 @@ $x?"TA?
 .?AV?$CKV3Transfer_UtlSymbolLargeInterface@V?$CUtlSymbolTableLargeBase@$00$0IAA@VCThreadNullMutex@@@@@@
 .?AV?$CKV3Transfer_UtlSymbolLargeInterface@V?$CUtlSymbolTableLargeBase@$0A@$0IAA@VCThreadNullMutex@@@@@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1??FilterInX@CSOAContainer@@QEAAXHVIntAABB_t@@HPEBM_N@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@@YAXHHPEBDV1?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??InitDependencyCounters@?$CSweepBlockProcessor@$00@@IEAAXXZ@@@YAXHHPEBDV1?1??InitDependencyCounters@?$CSweepBlockProcessor@$00@@IEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??PostSimulate@C_OP_RenderModels@@UEBAXPEAVCParticleCollection@@PEAX@Z@@@YAXHHPEBDV1?1??PostSimulate@C_OP_RenderModels@@UEBAXPEAVCParticleCollection@@PEAX@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??Run@?$CSweepBlockProcessor@$00@@QEAAXXZ@@@YAXHHPEBDV1?1??Run@?$CSweepBlockProcessor@$00@@QEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@@@YAXHHPEBDV1?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@@@YAXHHPEBDV1?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1??RemoveInteriorISOSurfaceSamples@CSOAContainer@@QEAAXHMH@Z@@CSOAContainer@@QEAAXV1?1??RemoveInteriorISOSurfaceSamples@2@QEAAXHMH@Z@_N@Z@@@YAXHHPEBDV1?8???$IterateRows@V<lambda_1>@?1??RemoveInteriorISOSurfaceSamples@CSOAContainer@@QEAAXHMH@Z@@CSOAContainer@@QEAAXV1?1??RemoveInteriorISOSurfaceSamples@2@QEAAXHMH@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_4>@?8??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@CSOAContainer@@QEAAXV<lambda_4>@?8??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@_N@Z@@@YAXHHPEBDV1?8???$IterateRows@V<lambda_4>@?8??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@CSOAContainer@@QEAAXV<lambda_4>@?8??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_5>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@CSOAContainer@@QEAAXV<lambda_5>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@_N@Z@@@YAXHHPEBDV1?8???$IterateRows@V<lambda_5>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@CSOAContainer@@QEAAXV<lambda_5>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_2>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@@YAXHHPEBDV<lambda_2>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@@YAXHHPEBD$$QEAV1?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??InitDependencyCounters@?$CSweepBlockProcessor@$00@@IEAAXXZ@@@YAXHHPEBD$$QEAV1?1??InitDependencyCounters@?$CSweepBlockProcessor@$00@@IEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??PostSimulate@C_OP_RenderModels@@UEBAXPEAVCParticleCollection@@PEAX@Z@@@YAXHHPEBD$$QEAV1?1??PostSimulate@C_OP_RenderModels@@UEBAXPEAVCParticleCollection@@PEAX@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??Run@?$CSweepBlockProcessor@$00@@QEAAXXZ@@@YAXHHPEBD$$QEAV1?1??Run@?$CSweepBlockProcessor@$00@@QEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@@@YAXHHPEBD$$QEAV1?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@@@YAXHHPEBD$$QEAV1?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1??RemoveInteriorISOSurfaceSamples@CSOAContainer@@QEAAXHMH@Z@@CSOAContainer@@QEAAXV1?1??RemoveInteriorISOSurfaceSamples@2@QEAAXHMH@Z@_N@Z@@@YAXHHPEBD$$QEAV1?8???$IterateRows@V<lambda_1>@?1??RemoveInteriorISOSurfaceSamples@CSOAContainer@@QEAAXHMH@Z@@CSOAContainer@@QEAAXV1?1??RemoveInteriorISOSurfaceSamples@2@QEAAXHMH@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_4>@?8??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@CSOAContainer@@QEAAXV<lambda_4>@?8??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@_N@Z@@@YAXHHPEBD$$QEAV1?8???$IterateRows@V<lambda_4>@?8??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@CSOAContainer@@QEAAXV<lambda_4>@?8??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_5>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@CSOAContainer@@QEAAXV<lambda_5>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@_N@Z@@@YAXHHPEBD$$QEAV1?8???$IterateRows@V<lambda_5>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@CSOAContainer@@QEAAXV<lambda_5>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_2>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@@YAXHHPEBD$$QEAV<lambda_2>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_AgeNoise@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_ChaoticAttractor@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_ColorLitPerParticle@@@@
@@ -2047,8 +2049,11 @@ $x?"TA?
 .xdata
 .xdata$x
 .~Pu	
+/	V_logf
 /2GG>!B
-/5OE/
+/5+9Y
+/5OH/
+/5[=Y
 />58d%
 /@DrR
 /@HrED
@@ -2067,6 +2072,7 @@ $x?"TA?
 /}Pv&Lc
 /~Pr	
 /~Pv.Mc
+0	P!2
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -2120,13 +2126,14 @@ $x?"TA?
 1<.	/>:
 1A26b
 1D Luminance to Color Lookup
+1i[VJ
 1wsHp
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240613154420Z0/
+240620161547Z0/
 241009235959Z0a1
 2D Orient
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -2178,7 +2185,6 @@ $x?"TA?
 6p7MOf
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8$u*E
 8$uFH
 8/t[H
@@ -2219,10 +2225,9 @@ $x?"TA?
 9)~P3
 9-		H
 92~;L
-95CV\
 98t H
 99~CE
-9=0Ei
+9=@Gi
 9>powf
 9>~&f
 9>~BH
@@ -2275,7 +2280,6 @@ $x?"TA?
 9~(~}D
 9~0~@H
 9~@~*H
-:	V_qsort_s
 : lexer error %d :
 :!E@0
 :!MP0
@@ -2285,19 +2289,23 @@ $x?"TA?
 :>)*	v
 :>t6k'
 :???;???;???3776>????/?/????7'7&>?????????
-:@-`I[
-:@-}L[
-:@5QI[
-:@5nL[
+:@%vI[
+:@-PI[
+:@-mL[
+:@5AI[
+:@5^L[
 :Exu2Ic
 :H9w u
 :YA1I
+:c/0e
+;	V_powf
 ;	t/H
 ;.|@H
 ;/i$?t$
 ;1#INF
 ;3|8H
 ;;|8H
+;=@{#
 ;?0123456789:;<=>?
 ;D$<t
 ;D$Pu
@@ -2323,15 +2331,17 @@ $x?"TA?
 ;kt}hH
 ;kt}vH
 ;k}!?
+;p,}yf
 ;q(} H
 ;q@} H
 ;uHVL
 ;|$T|
-<	V_remainderf
 <	u2H
+<	u8H
 <	u\L
 <	w	@
 < t=<	t9
+<#>Vcy
 <&r)D
 <0:08
 <0t0<2t
@@ -2376,6 +2386,7 @@ $x?"TA?
 <unknown>
 <utK@:
 =	8t?
+=	V_qsort_s
 = $s?(,
 =!@f>
 =%@u?
@@ -2425,7 +2436,7 @@ $x?"TA?
 >uYL>
 >zp'?
 >}"W?
-?	V_roundf
+?	V_remainderf
 ?!5WOo
 ?#\$ 
 ?+>^m
@@ -2578,8 +2589,6 @@ $x?"TA?
 @8,8u
 @84)u
 @84;u
-@85),:
-@85H-:
 @8<3u
 @8>u^H
 @8j(t
@@ -2737,6 +2746,7 @@ $x?"TA?
 @VWAVH
 @WATAUAVH
 @WATAUAWH
+@WATAVAWH
 @WATAWH
 @WATH
 @WAUAVH
@@ -3010,6 +3020,7 @@ Attribute %d is a vector and is not found in ATTRIBUTES_WHICH_ARE_VEC3S_MASK!
 Attribute %d is an int and is not found in ATTRIBUTES_WHICH_ARE_INTS!
 August
 Author Texture As Gradient
+AvC;w
 Average
 Average Hitbox Speed
 Avg Actual Traces
@@ -3017,6 +3028,7 @@ Avg Intersection Tests
 Avg. Render (us)
 Avg. Sim (us)
 Avoid Vertical Axis Singularity
+B	V_roundf
 B'E<H
 B(I9A(
 B0;B@|
@@ -3504,6 +3516,8 @@ CKV3ClusterAlloc<class KeyValues3,63>::Free
 CKV3ClusterAlloc<class KeyValues3,63>::GetIndexForEntry::<lambda_1>::operator ()
 CKV3ClusterAlloc<class KeyValues3,63>::GetIndexForEntry::<lambda_2>::operator ()
 CKV3ClusterAlloc<class KeyValues3,63>::GetParentContext
+CKV3MemberIndexIteratorView<1>::iterator::iterator
+CKV3MemberIndexIteratorView<1>::iterator::operator *
 CKV3MemberIteratorView<1>::iterator::iterator
 CKV3MemberIteratorView<1>::iterator::operator *
 CKV3MemberNameWithStorage
@@ -4379,6 +4393,8 @@ CUtlMemory<class CControlPointEditorDataEntry,int>::Grow::<lambda_1>::operator (
 CUtlMemory<class CControlPointEditorDataEntry,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CGenericExprPart *,int>::Grow
 CUtlMemory<class CGenericExprPart *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CGlobalSymbol,int>::Grow
+CUtlMemory<class CGlobalSymbol,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CInstancedMeshSceneObject *,int>::Grow
 CUtlMemory<class CInstancedMeshSceneObject *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CParticleCollection *,int>::Grow
@@ -4702,7 +4718,7 @@ CUtlMemory_RawAllocator<unsigned int>::Grow
 CUtlOrderedMap
 CUtlOrderedMap<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::FindElement
 CUtlQueue<int,class CUtlMemory<int,int> >::Count
-CUtlQueue<int,class CUtlMemory<int,int> >::RemoveAtHead
+CUtlQueue<int,class CUtlMemory<int,int> >::RemoveAtHead::<lambda_1>::operator ()
 CUtlRBTree overflow with %u elements!
 CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,class CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::Node_t,int>,int> >::NewNode
@@ -6492,7 +6508,6 @@ Custom Shader
 Cycle Scalar
 Cycle time
 C|9G|
-D	V_sincosf
 D W?{W
 D!l$xA
 D#C|D
@@ -6819,7 +6834,6 @@ D$`H9
 D$`H;
 D$`Hc
 D$`HcD$dL
-D$`I	
 D$`Ic
 D$`IcE
 D$`L;
@@ -6868,7 +6882,6 @@ D$pE3
 D$pH9
 D$pH;
 D$pHc
-D$pI	
 D$pL;
 D$pLc
 D$pLcD$`
@@ -6883,6 +6896,7 @@ D$xD;ot
 D$xD;u
 D$xH9
 D$xHc
+D$xI	
 D$xLc
 D$xLi
 D$xM+
@@ -6900,28 +6914,32 @@ D+|$p
 D5HF9d5$t
 D8$3u
 D8$3u	
-D8%(N.
-D8%1/@
-D8%1K.
-D8%5)@
-D8%i&@
-D8%p8.
+D8%)&@
+D8%E(@
+D8%PL.
+D8%SO.
+D8%YL.
+D8%eN.
+D8%eP.
+D8%w%@
 D8(tLH
 D8)u#L
 D8,:u
 D81uUL9r
-D85LT.
-D85MU.
-D85lA$
-D85p.@
-D85tA$
+D85,=$
+D850.@
+D854=$
+D85lU.
+D85mV.
+D85nA@
+D85r0@
 D88tS3
 D8<3u
 D8<8u
 D8<:u
 D8<>u
-D8=6e>
-D8=zd>
+D8=:d>
+D8=b?>
 D8L$0u`
 D8L$`u8
 D8[(u
@@ -6937,13 +6955,12 @@ D8t$ht
 D8|$"t
 D8|$Ht
 D9#tKH
-D9%Gj6
 D9+~3M
-D9-:Hh
-D9-D@h
-D9-d>h
-D9-s@h
-D9-|<h
+D9-$Dh
+D9-1Bh
+D9-@?h
+D9=]0R
+D9=~NR
 D9E4v
 D9H$t
 D9I$t
@@ -6975,9 +6992,9 @@ D9~(D
 D;#|8H
 D;+|8H
 D;3|8H
+D;5Eh6
 D;;|8H
 D;A$|BH
-D;C4u
 D;D$0}
 D;D$@u
 D;D$P
@@ -6989,10 +7006,10 @@ D;JH|
 D;J`|
 D;Jx|
 D;Rp}
+D;S,~N3
 D;S,~TE3
 D;STr
 D;VTr
-D;k,~M3
 D;kt|
 D;p(}QH
 D;sHu
@@ -7023,6 +7040,7 @@ DOUBLE_AND
 DOUBLE_OR
 DOUBLE_QUOTED_STRING
 DOUBLE_QUOTE_CHAR
+DQHle
 D_COMPRESSED_NORMALS_AND_TANGENTS
 D_DEBUG_STATS
 D_DEPTH_FEATHERING
@@ -7120,7 +7138,6 @@ Duration value for path point
 Dynamic Entities Only
 Dynamic Fog No Shadows
 Dynamic Fog with Shadows
-E	V_sind
 E A;t$x
 E D8!t
 E D9{(
@@ -7728,7 +7745,6 @@ Extra Arc Data Point
 Extraneous token
 E|$TD
 E|$`D
-F	V_sinf
 F A;n
 F Lcu
 F"5PH
@@ -7877,7 +7893,7 @@ Force based on distance from plane
 ForceMaterialOverride
 Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 Found particle target layer ID '%s' which isn't in the whitelist '%s'.
-FpD8%O
+FpD8%
 Frames Measured: %d
 FreeEnvironmentStringsW
 FreeLibrary
@@ -7896,10 +7912,10 @@ Function "%s" system "%s" is reading CP %d but didn't request it in GetControlPo
 Function %s failed to chain GetControlPointInfo call to base class!
 Function is disabled
 Functions not supported in this evaluator (%s)
+G	V_sincosf
 G ;G$t
 G tBH
 G(9C(
-G)WEx
 G03GD%
 GD$(H
 GD$8D
@@ -8061,6 +8077,7 @@ G|$(H
 G|$(L
 G|$8H
 G|$XA
+H	V_sind
 H SUWATAUAVAWH
 H SVWAWH
 H UATAUH
@@ -8084,15 +8101,16 @@ H-^Eu
 H1FxM
 H9(tO
 H9+t	H
-H9-*>@
-H9-E>@
-H9-]=@
-H95Ea_
-H95WVc
-H95jw_
+H95,Y2
+H95GUc
+H95GY2
+H95LX2
+H95Z`_
 H97u+A
 H98t2
 H98t7
+H9=L|$
+H9=k%:
 H9A(u
 H9C`t
 H9D$Pu>I
@@ -8217,6 +8235,7 @@ HcO8Hc
 HcOtL
 HcQ<H
 HcS H
+HcS03
 HcS@H
 HcT$0H
 HcUPH
@@ -8248,7 +8267,7 @@ Hct$0H
 Hct$@A
 Hct$p;
 Hcu`M
-HcuhL
+HcuxL
 Hcw4HcC(;
 Hc{HM
 Hc|$0
@@ -8265,7 +8284,7 @@ Honors the per-particle radius (multiplied by radius scale) but is more expensiv
 HostStateMgr001
 How aggressive the switch to fallbacks will be depending on how far over the cl_particle_sim_fallback_threshold_ms the sim time is.  Higher numbers are more aggressive.
 Hybrid Box/Capsule
-I	V_snprintf
+I	V_sinf
 I cannot be refracted through refracting objects like water
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
@@ -9022,6 +9041,7 @@ Kwvt,
 K|LcCx
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!l$pH
 L!|$(L!
@@ -9166,19 +9186,18 @@ L9't	H
 L90u H
 L93t	H
 L94:H
-L95>c3
-L95NO3
-L95Q'6
-L95Yc3
-L95iO3
-L95l'6
-L95wb3
+L95	?_
+L95'>_
+L9579_
+L95q&6
 L97t{L
 L9:t[
 L9;t	H
-L9=#mQ
-L9=$$f
-L9=ovQ
+L9=:vQ
+L9=?eQ
+L9=CuQ
+L9=ZeQ
+L9=cdQ
 L9?t	H
 L9?tb
 L9d$ t
@@ -9213,7 +9232,6 @@ LIGHT_STYLE_OLD
 LINE_CONTINUATION
 LITERAL_FALSE
 LITERAL_TRUE
-LK>! ~
 LOG_GENERAL
 LOS Failure Scalar
 LOS Failure Scale
@@ -9229,7 +9247,6 @@ Lc3D;s
 Lc7D;w
 Lc>D;~
 LcA<E3
-LcC0E3
 LcC`E
 LcD$ H
 LcD$x
@@ -9247,7 +9264,6 @@ LcL$8H
 LcL$@H
 LcL$XH
 LcL$`H
-LcMxH
 LcN H
 LcN(H
 LcO8H
@@ -9642,9 +9658,9 @@ November
 NumCols() && NumRows() && NumSlices()
 Number of Children to Use
 Numer of points along path
-O	V_sscanf
 O*9y]
 O8HcB
+O=9{#
 O@33S@
 OF>;^
 OPEN_BRACE
@@ -9706,7 +9722,6 @@ Output minimum
 Output vector
 Overlay
 OverlayProjectionDirection
-P 9=F
 P 9_h
 P(tOL
 P8H=vmdlt
@@ -10387,7 +10402,7 @@ QuaternionVectorsFLU
 QuaternionVectorsFLU differs from QuaternionMatrix() then, MatrixToVectorsFLU() by %.10e: [ %.08f %.08f %.08f %.08f ]
 QueryPerformanceCounter
 Qx;Q||@
-R 9=>
+R	V_sscanf
 R%d->%s
 R1h58
 R?vlD>
@@ -10530,6 +10545,7 @@ Remap speed to scalar
 Remap vector to CP
 Remap velocity to vector
 RemapFloatInput()
+RemoveAtHead( temp )
 Render Cables
 Render Callback
 Render Client Physics Objects
@@ -10563,7 +10579,7 @@ RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
 RenderModelSubModelFieldType_t
-RenderOps_Init(13774): 
+RenderOps_Init(13793): 
 RenderProjectedMaterial_t
 RenderProjectedMaterial_t::KV3TransferLoad_Impl
 RenderProjectedMaterial_t::KV3Transfer_DefaultKeys_Impl
@@ -11565,7 +11581,6 @@ Synchronize particles
 Synchronous - wait for the method to fully complete before returning
 System Name
 Systems Measured: %d
-T	V_stricmp_fast
 T$ E3
 T$ H;
 T$ Hc
@@ -11629,12 +11644,12 @@ T$pfA
 T$x;u
 T$xD;|$|
 T$xE3
+T$xI	
 T$|D;}
 T$|fff
-T%7g#
-T%Ct$
+T%'h#
 T(0Ic
-T5'1 
+T5w0 
 T>M-+?#gy?
 T>gaW?:]f?AHV>'
 T>l>~?
@@ -11743,7 +11758,7 @@ TurtleGraphics
 Twist amount (-1..1)
 Twist around axis
 Typesafe Int
-U t A
+U(t A
 UA>N0Wl
 UATAUAVAWH
 UATAVH
@@ -11875,6 +11890,7 @@ Unsupported ParticleModelType_t
 Unsupported setup.
 Unsupported type
 Unwanted token '%s' %s
+UopWt
 Update lights
 Usage: particle_profile <'systems'|'operators'> <num_frames>
 Usage: particle_profile_spike <'systems'|'operators'> <spike_threshold_ms>
@@ -11962,6 +11978,7 @@ VWAUH
 VWAVAWH
 VWAVH
 VWAWH
+VWebm001
 V_:X1:
 V_AppearsToBeANumber
 V_DoubleToString_Unsafe
@@ -12008,7 +12025,6 @@ V_fabsf((pOutBarns[ 0 ].OuterAngle()) - (flConeOuterAngleInDegrees)) <= (0.1f)
 V_floorf( DotProduct( vecFwd, vecUp ) ) < 0.1f
 V_floorf( DotProduct( vecLeft, vecUp ) ) < 0.1f
 V_fmodd
-V_fmodf
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -12070,7 +12086,7 @@ Visualization Ring
 Visualization Sphere Solid
 Visualization Sphere Wireframe
 Vrad3_001
-W5 kT
+W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Discarding existing in-progress particle performance request.
 WARNING: Particle system '%s' was not precached correctly. Performing blocking load....
@@ -12128,21 +12144,19 @@ X axis scaling scalar field
 X offset of center point
 X to the Y power
 X!t5~
-X%S_#
-X%YO]
-X%Ye]
-X%m9+
-X-p5$
-X5>dT
-X5O[B
-X5X5$
-X5Xd3
-X5o[B
-X=6[B
-X=8.]
-X=MKF
-X=V[B
-X=Z2G
+X%C`#
+X%IO]
+X%Ie]
+X%}6+
+X-06$
+X5O^B
+X5Xg3
+X5o^B
+X=(.]
+X=6^B
+X=I6$
+X=V^B
+X=|$]
 X?+5[>,
 XA]A\_[
 XA^A\][
@@ -12183,29 +12197,28 @@ Y Dimension Count
 Y Dimension Spacing
 Y axis scaling scalar field
 Y offset of center point
-Y%$G,
-Y%/&&
-Y%/G&
-Y%pL,
-Y%~"G
-Y- i$
-Y-.A8
-Y-?r'
-Y-AT(
-Y-TP'
-Y-`p(
+Y%`O,
+Y- q(
+Y-eV'
+Y-v6'
+Y-~@8
 Y4$E3
-Y5%7L
-Y5AQ(
-Y5Ao'
-Y5Cs(
-Y5V$5
-Y5_1M
-Y5jF,
-Y5pO4
-Y5ww@
+Y55:L
+Y5B>'
+Y5C5(
+Y5CHY
+Y5GY'
+Y5V'5
+Y5ZI,
+Y5o4M
+Y5pR4
+Y5wz@
+Y5xW(
+Y5xu'
 Y9"SD
-Y=IB,
+Y=-?8
+Y=9E,
+Y=@bW
 Y>kX>M
 YD$0A
 YD$0E
@@ -12322,7 +12335,7 @@ Zod(^?
 \$4z u
 \$5L3
 \$8A_A]_^]
-\$8D9-
+\$8D9-K>h
 \$8I;
 \$8L+
 \$8L9+t
@@ -12370,7 +12383,8 @@ Zod(^?
 \$tz$u"
 \$xHc
 \$xI+
-\=6!@
+\5BhT
+\=6$@
 \D$ A
 \D$ H
 \D$ fD
@@ -12397,18 +12411,14 @@ Zod(^?
 \l6DH
 \t$pD
 \t3D8T$(t
-]%V3F
-]%[IQ
+]%@JQ
 ])6M>&
-]-JIQ
-]5eIQ
 ]<tIH
 ]<tJH
-]=S$,
+]=C',
 ]>)2X
 ]J<0"0i3
 ]Lu*E;|$
-]h9]x|PH
 ^<V7w
 ^@I9^(I
 ^Fdt[
@@ -12416,7 +12426,11 @@ Zod(^?
 ^`I9^HI
 ^oEZ_
 _ ;_$t
-_59d-
+_%.%7
+_-*%7
+_52%7
+_5Qa-
+_5vP,
 _89_D
 _?p%{>
 _RDATA
@@ -12527,7 +12541,6 @@ _procedural_particle_snapshot.vsnap
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
-a	V_tanf
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 absolute value
@@ -12870,6 +12883,7 @@ cylinder outer output
 cylinder outer radius
 cylindrical bottom transform
 cylindrical top transform
+d	V_tanf
 d$ D!
 d$ D;
 d$ UAVAWH
@@ -12991,7 +13005,6 @@ dynamic control point count
 e tT3
 e+000
 e0A_A^A]A\]
-eL71.
 eLK(w
 e`A_A^A]A\_^]
 ease in and out
@@ -13292,6 +13305,7 @@ i >= 0 && i < capacity
 i >= 0 && j >= 0 && i < ysizeP1 && j < zsizeP1
 i u!H
 iH9i@~iH
+iJNOU
 iL97u
 identifier removed
 ignore delta time
@@ -13444,6 +13458,7 @@ kill physics particles
 kill unused
 l!;b	F
 l$ AVH
+l$ E3
 l$ Hc
 l$ HcA
 l$ Lca
@@ -14129,6 +14144,7 @@ m_bSkin
 m_bSkipRenderingOnMobile
 m_bSoftEdges
 m_bSphericalCookie
+m_bStartAsleep
 m_bStencilTestExclude
 m_bStickInsteadOfCull
 m_bSubFrame
@@ -14759,7 +14775,6 @@ m_hReferenceReplacement
 m_hSelfInstance.GetInstanceID() == PULSE_GRAPH_INSTANCE_ID_INVALID
 m_hSnapshot
 m_hTexture
-m_head != QUEUE_ITERATOR_INVALID
 m_hitboxSetName
 m_iAttachType
 m_iControlPoint
@@ -14969,6 +14984,7 @@ m_nInControlPointNumber
 m_nIncomingTangent
 m_nIncrement
 m_nIndex >= 0 && m_nIndex < m_nArrayElementCount
+m_nIndex >= 0 && m_nIndex < m_nMemberCount
 m_nIndex >= 0 && m_nIndex < m_pKV3->GetMemberCount()
 m_nIndexCountKb
 m_nIndexType
@@ -15808,17 +15824,17 @@ num to emit
 num_particles
 o L9s t
 o$$fD
+o%@9$
 o%S|G
+o%~8$
 o(L9d$Ht
 o(L9s(t
-o-d3$
-o-v0$
+o-$4$
+o-61$
 o0L9s0t
+o=(?$
 o=;lG
-o=Z,$
 o=b\G
-o=h>$
-o=s|V
 o=xoG
 oD$ f
 oD$@A
@@ -16573,6 +16589,7 @@ stack
 stack buffer overrun (/GS failure)
 start age maximum
 start age minimum
+start all physics asleep
 start alpha
 start as last particle
 start control point number
@@ -16780,6 +16797,7 @@ t=E9l$
 t>vTU>
 t?HcS
 tCfff
+tD9%K
 tDfff
 tEHcR
 tEL9:t@
@@ -16905,17 +16923,17 @@ tupleOffset < element.count
 twHc}
 twIcF
 twist axis
-tyD9=i
+tyD9=
 tyHc}
 type != MATERIAL2_POINTS
 type < ( 1 << TYPE_BIT_COUNT )
 type.CanConvertTo( m_pStaticSignature->GetArg( nIndex ).m_Type, pInScope )
 t{D9%
-t|950
 t|D9%
+t|D9%Yb\
 t|D9-
-t|D9-]h\
-t|D9=K/Q
+t|D9--h\
+t|D9=
 t~D8u
 u	9Wx
 u	D87
@@ -17203,8 +17221,7 @@ zeroth_moment
 |$(L;
 |$(fD
 |$,fff
-|$09{4
-|$0;{4
+|$0;x4
 |$0A;
 |$0E3
 |$0Hc
@@ -17239,7 +17256,6 @@ zeroth_moment
 |$@ff
 |$@t#
 |$@u)
-|$@uN
 |$@~ H
 |$DE3
 |$HHc

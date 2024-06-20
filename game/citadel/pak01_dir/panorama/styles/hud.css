@@ -28,6 +28,15 @@ CitadelHud
 	z-index: 2;
 }
 
+.clamp_width
+{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	max-width: 2000px;
+	z-index: 100;
+}
+
 #HudEventIndicatorsPanel
 {
 	width: 100%;
@@ -118,6 +127,8 @@ CitadelHudHeroShop.in_item_shop
 	vertical-align: bottom;
 	background-image: url("s2r://panorama/images/hud/hud_lowerleft_backer_psd.vtex");
 	background-size: cover;
+	z-index: 1;
+	opacity: 0;
 }
 
 .AspectRatio21x9 #hudBacker
@@ -243,7 +254,7 @@ Button:hover
 
 .replay_playback #gold_and_ap_container
 {
-	margin-bottom: 155px;
+	margin-bottom: 110px;
 }
 
 .replay_playback #gold_and_ap_container.in_item_shop
@@ -291,7 +302,7 @@ Button:hover
 .AspectRatio16x10 #health_and_abilities_container
 {
 	horizontal-align: center;
-	margin-right: 1130px;
+	margin-right: 1030px;
 	margin-left: 0px;
 }
 
@@ -361,8 +372,8 @@ CitadelHudModifierIcons
 {
 	min-width: 150px;
 	width: fit-children;
-	height: 150px;
 	visibility: collapse;
+	flow-children: down;
 }
 
 .action_binding
@@ -374,11 +385,13 @@ CitadelHudModifierIcons
 	font-weight: bold;
 	text-align: center;
 	vertical-align: center;
-	margin-top: 90px;
+	margin-top: 0px;
 	padding-left: 14px;
 	padding-right: 14px;
-	border-radius: 10px;
-	background-color: rgb(83, 83, 83);
+	border-radius: 50px;
+	padding: 15px 30px;
+	background-color: #000000aa;
+	z-index: 5;
 }
 
 #context_action_container.context_action_available
@@ -412,7 +425,42 @@ CitadelHudModifierIcons
 #zipline_sign
 {
 	horizontal-align: center;
-	width: 300px;
+	width: 160px;
+	height: 120px;
+	margin-bottom: -20px;
+	z-index: 10;
+	background-image: url("s2r://panorama/images/hud/zipline/ui_sign_york_png.vtex");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.yellowLane #zipline_sign
+{
+	background-image: url("s2r://panorama/images/hud/zipline/ui_sign_york_png.vtex");
+}
+
+.orangeLane #zipline_sign
+{
+	background-image: url("s2r://panorama/images/hud/zipline/ui_sign_orchard_png.vtex");
+}
+
+.blueLane #zipline_sign
+{
+	background-image: url("s2r://panorama/images/hud/zipline/ui_sign_broadway_png.vtex");
+}
+
+.purpleLane #zipline_sign
+{
+	background-image: url("s2r://panorama/images/hud/zipline/ui_sign_park_png.vtex");
+}
+
+#shop_sign
+{
+	horizontal-align: center;
+	width: 280px;
+	margin-bottom: 10px;
+	z-index: 10;
 }
 
 .action_upgrade,.action_mantle,.action_teleport,.action_vehicle .action_zip_line,.in_item_shop .unused_ability_points .action_upgrade,.in_item_shop .can_shop .action_upgrade
@@ -2024,6 +2072,33 @@ CitadelTooltipManager
 	visibility: collapse;
 }
 
+#SafeToAbandonIndicator
+{
+	margin: 12px;
+	vertical-align: top;
+	horizontal-align: right;
+	background-color: #911717ee;
+	border-radius: 8px;
+	width: 190px;
+	height: 90px;
+	visibility: collapse;
+}
+
+.SafeToAbandon #SafeToAbandonIndicator
+{
+	visibility: visible;
+}
+
+#SafeToAbandonIndicator Label
+{
+	padding: 8px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	font-weight: bold;
+	opacity: 0.75;
+}
+
 #GameOverButtonContainer
 {
 	visibility: collapse;
@@ -2577,15 +2652,29 @@ CitadelHudSandboxTutorial
 	transition-timing-function: ease-out;
 }
 
-#StatsAndModsContainer.in_item_shop
+#LowerLeft
+{
+	horizontal-align: left;
+	vertical-align: bottom;
+	padding-top: 20px;
+}
+
+#StatsAndModsContainer.in_item_shop #LowerLeft
 {
 	transform: translateX(10px) translateY(-10px);
 	ui-scale: 160%;
 }
 
-.AspectRatio21x9 #StatsAndModsContainer.in_item_shop
+.AspectRatio21x9 #StatsAndModsContainer
 {
-	transform: translateX(340px) translateY(-10px);
+	max-width: 2000px;
+	horizontal-align: center;
+}
+
+.AspectRatio21x9 #StatsAndModsContainer.in_item_shop #LowerLeft
+{
+	transform: translateX(60px) translateY(-10px);
+	max-width: 2000px;
 }
 
 .replay_playback #StatsAndModsContainer

@@ -12,7 +12,6 @@
 	#jT$
 	%.*s
 	%s at offset %d, 
-	-+pe
 	@@@@@@@@@@@@@@@@{N{N{N{N{N{N{N{N
 	A8va
 	A_A^A\]
@@ -307,7 +306,6 @@ $$LcH
 $< t6<$t,<+t"<vt
 $D9x<t
 $D9x<tN
-$DD;{
 $Ib?s
 $L9x0
 $^fE;
@@ -316,6 +314,7 @@ $bucH
 %.0Lf
 %.100s: Can not read TIFF directory
 %016llx
+%0;-_
 %3333
 %3333D
 %A Is
@@ -324,7 +323,6 @@ $bucH
 %H : %M : %S
 %I : %M : %S %p
 %UUUU+
-%^MKn
 %b %d %H : %M : %S %Y
 %d %d %d
 %d %d %d %d
@@ -426,7 +424,6 @@ $bucH
 %suncompressed data
 %u (0x%x)
 &?PPPPPPP?
-&D8%]
 &YA1E
 &YA1H
 &YA1I
@@ -435,7 +432,6 @@ $bucH
 ',=?k
 'exists'
 'return'
-(	V_log2_uint
 ( ( m_nFlags & (TSPEC_VOLUME_TEXTURE|TSPEC_TEXTURE_ARRAY) ) != 0 ) || ( m_nDepth == 1 )
 ( ( m_nFlags & TSPEC_VOLUME_TEXTURE ) == 0 ) || ( ( m_nFlags & TSPEC_TEXTURE_ARRAY ) == 0 )
 ( ( poolType == POOLED_BACKING_STORE_VERTEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_VERTEX_FIXED_SIZE ) ) || ( ( poolType == POOLED_BACKING_STORE_INDEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_INDEX_FIXED_SIZE ) )
@@ -612,6 +608,7 @@ $bucH
 (t$@L
 (t$@f
 (t$P=
+(t$PA
 (t$PD
 (t$PE
 (t$PH
@@ -697,7 +694,6 @@ $bucH
 )T$`D
 )T$pA
 )T$pD
-)\$0L
 )\$@D
 )\$@fD
 )\$PD
@@ -753,9 +749,9 @@ $bucH
 )t$@L
 )t$@fA
 )t$@fD
-)t$P9
 )t$PA
 )t$PD
+)t$PD9
 )t$PH
 )t$PH#
 )t$PI
@@ -813,7 +809,7 @@ $bucH
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *pSrc == 's'
 *pView != nullptr
-+	V_logd
++	V_log2_uint
 +++++
 +C$Hc
 +C$Lc
@@ -830,7 +826,6 @@ $bucH
 +h->|
 +o'q)}
 +v$x+v$xv$+xv+$xv$+x+$vx+$vx$v+x+$vx$+vx+v $+v $v $+v +$v $++$ v+$ v$ v++$ v$+ v+xv$+ v$v$ +v+ $v$ ++x$v+ $v$v ++ $v$ +v
-,	V_logf
 , at <EOF>
 , at offset %d
 , channels = 
@@ -964,6 +959,7 @@ $bucH
 -vulkan_vma_defrag_each_frame
 -vulkan_vma_shutdown
 -vulkanrenderthreadstack
+.	V_logd
 .. !""##$$%%&.'.(())**..++,.-H
 .....
 .......
@@ -973,7 +969,7 @@ $bucH
 ................
 ..om?
 .00cfg
-.5][*
+.5OQ*
 .;C ~
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -1029,14 +1025,14 @@ $bucH
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferBC7_bc7e@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferBC7_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?8??WriteToBufferETC@FloatBitMap_t@@IEBA_NPEAX_KW4ImageFormat@@AEBUFloatBitmapEncodeSettings_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBDV1?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@@@YAXHHPEBDV1?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_2>@?FD@???0CRayTracePipelineVulkan@@QEAA@PEAUVkDevice_T@@AEBURayTracePipelineStateCreateDesc_t@@@Z@@@YAXHHPEBDV<lambda_2>@?FD@???0CRayTracePipelineVulkan@@QEAA@PEAUVkDevice_T@@AEBURayTracePipelineStateCreateDesc_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@UBGRA8888_t@@$00@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA16161616F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA16161616F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA32323232F_t@@$0A@@ImageLoader@@YA_NPEBEPEAURGBA32323232F_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC6h@URGBA8888_t@@$00@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC7@UBGRA8888_t@@@ImageLoader@@YA_NPEBEPEAUBGRA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@@@YAXHHPEBD$$QEAV1?1???$ConvertFromBC7@URGBA8888_t@@@ImageLoader@@YA_NPEBEPEAURGBA8888_t@@HH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@@@YAXHHPEBD$$QEAV1?8??WriteToBufferBC6H_ispctexcomp@FloatBitMap_t@@IEBA_NPEAX_KAEBUFloatBitmapEncodeSettings_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_2>@?FD@???0CRayTracePipelineVulkan@@QEAA@PEAUVkDevice_T@@AEBURayTracePipelineStateCreateDesc_t@@@Z@@@YAXHHPEBD$$QEAV<lambda_2>@?FD@???0CRayTracePipelineVulkan@@QEAA@PEAUVkDevice_T@@AEBURayTracePipelineStateCreateDesc_t@@@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelProcessorAbstract@V?$CParallelProcessor@UPipelineWorkItem_t@CFossilizeStateCreator@@V?$CMemberFuncJobItemProcessor@UPipelineWorkItem_t@CFossilizeStateCreator@@V2@V2@@@$00@@@@
 .?AV?$CRefCountServiceBase@VCRefMT@@@@
 .?AV?$CRefCounted@V?$CRefCountServiceBase@VCRefMT@@@@@@
@@ -1374,14 +1370,13 @@ $bucH
 .xJ>Hf
 .xdata
 .xdata$x
-/%5o)
-/%Wl)
-/-'k)
+/	V_logf
+/%/$+
 /2GG>!B
-/5Go)
-/5kl)
-/=6[*
-/=8[*
+/5_=2
+/=>U*
+/=Zd*
+/=\d*
 />58d%
 /TF<)VGy#WH
 /YA1H
@@ -1468,6 +1463,7 @@ $bucH
 0A^A]_
 0A^^]
 0A^_^
+0A^_^H
 0A^_^][
 0A^_^][H
 0A_A]A\_]
@@ -1514,7 +1510,7 @@ $bucH
 220323000000Z
 220801000000Z
 230714000000Z
-240613154317Z0/
+240620161301Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1543,18 +1539,16 @@ $bucH
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
 6:%+H
+6D}R"
 6I]Dc
 6OB,n_
 6X multisample not supported in Vulkan, dropping to 4X.
-7	V_powd
 7&F|If
 70503
-7;Q_$)
 7D9sH
 7YA1H
 7YA1I
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8"3hrf
 8,uQH
 8-uCH
@@ -1598,20 +1592,19 @@ $bucH
 8uuOH
 8vtext
 8}u+H
-9	V_qsort
 9(~83
 9)~4H
 9)~P3
 9/~FH
 93t=H
 93tdH
+95,-;
 97tmD
 98t H
 98tkH
 993u,H
 99~CE
 99~pH
-9=	?9
 9>~ZH
 9C$u/
 9Cu,fD9y
@@ -1655,7 +1648,7 @@ $bucH
 9t$Pu	
 9{H~>
 9{\~9H
-:	V_qsort_s
+:	V_powd
 : lexer error %d :
 :>)*	v
 :>t6k'
@@ -1670,12 +1663,11 @@ $bucH
 :VP8X
 :u(f9Q
 ;	Fzo
+;	V_powf
 ;.u1L
-;5=O4
-;5EO4
 ;8r%H
 ;;L$Pr
-;=!^9
+;=@q9
 ;?0123456789:;<=>?
 ;BIb?
 ;C v)H;K
@@ -1705,6 +1697,7 @@ $bucH
 ;|$8|
 ;|$X}
 ;|$h}
+<	V_qsort
 <	u2H
 <	u\L
 <	ueH
@@ -1747,6 +1740,8 @@ $bucH
 <vt{<x
 <xuM@
 <}wTI
+=	V_qsort_s
+=>i\d]Jl
 =SPB8u*
 =SPB8ue
 =imb;D
@@ -1761,7 +1756,6 @@ $bucH
 >L9|$xt
 >Mp$d
 >jtm}S
-?	V_roundf
 ?!5WOo
 ?+>^m
 ?49HoKC
@@ -1939,6 +1933,7 @@ $bucH
 @88wdH
 @88wmH
 @88wuH
+@8=~mZ
 @8i(u
 @8j(t
 @8k(t
@@ -1964,8 +1959,8 @@ $bucH
 @>%>b
 @A8v_
 @A\][
-@A\^[H
 @A\_[
+@A\_[H
 @A]A\_
 @A]A\_^[
 @A]^[
@@ -1977,7 +1972,6 @@ $bucH
 @A^_^
 @A_A\_^[
 @A_A]A\_^
-@A_A]_^]
 @A_A^A\
 @A_A^A\_^
 @A_A^A\_^[]
@@ -2043,7 +2037,6 @@ $bucH
 @SVATAUAWH
 @SVATAUH
 @SVATAWH
-@SVATH
 @SVAUH
 @SVAVAWH
 @SVAVH
@@ -2054,6 +2047,7 @@ $bucH
 @SVWATAWH
 @SVWATH
 @SVWAUAWH
+@SVWAUH
 @SVWAVAWH
 @SVWAVH
 @SVWH
@@ -2231,17 +2225,16 @@ AVAWH
 AXHcz`H
 AXtHH
 A\^[]
-A\^][
 A\_[]
 A\_^[
 A\_^[]
 A\_^][
 A]A\^[]
-A]A\^]
 A]A\_^]
 A]A\_^][
 A]^[]
 A]_[]
+A]_^[
 A]_^]
 A]_^][
 A^A\_
@@ -2251,6 +2244,7 @@ A^A\_^[
 A^A\_^]
 A^A]A\
 A^A]A\][
+A^A]A\^
 A^A]A\_[]
 A^A]A\_]
 A^A]A\_]H
@@ -2271,7 +2265,6 @@ A_A\][
 A_A\^[]
 A_A\_[
 A_A\_[]
-A_A\_^[
 A_A\_^]
 A_A]A\[]
 A_A]A\]
@@ -2427,6 +2420,7 @@ AuQIc
 August
 AvA2Ev$
 A~2Fv$
+B	V_roundf
 B 9A uA
 B A8A
 B$9A$u9
@@ -2437,7 +2431,6 @@ B.f?y
 B09A0u!
 B49A4u
 B8<2u
-B94(r	@
 B@I;BHs
 BC6H_HueShiftFixup_BlockHasDecodingErrors
 BC6H_HueShiftFixup_QuantizeBlock
@@ -3055,15 +3048,15 @@ CRenderDeviceVulkan::AcquireDynamicDescriptorSet
 CRenderDeviceVulkan::AcquireSemaphore
 CRenderDeviceVulkan::AllocateBufferInPool
 CRenderDeviceVulkan::AllocateBufferInPool - invalid memory pool handle.
-CRenderDeviceVulkan::AllocateBufferInPool(9067): failed to allocate GPU memory in custom pool for %s.
-CRenderDeviceVulkan::AllocateBufferInPool(9077): vmaBindImageMemory failed for buffer %s with error %d.
+CRenderDeviceVulkan::AllocateBufferInPool(9081): failed to allocate GPU memory in custom pool for %s.
+CRenderDeviceVulkan::AllocateBufferInPool(9091): vmaBindImageMemory failed for buffer %s with error %d.
 CRenderDeviceVulkan::AllocateDeviceCheckPointString
 CRenderDeviceVulkan::AllocateTextureInPool
 CRenderDeviceVulkan::AllocateTextureInPool - invalid memory pool handle.
-CRenderDeviceVulkan::AllocateTextureInPool(8974): Unable to get Vulkan image for %s.
-CRenderDeviceVulkan::AllocateTextureInPool(8981): Allocation already set for %s, it is not valid to assign a new allocation.
-CRenderDeviceVulkan::AllocateTextureInPool(8993): failed to allocate GPU memory in custom pool for %s.
-CRenderDeviceVulkan::AllocateTextureInPool(9002): vmaBindImageMemory failed for image %s with error %d.
+CRenderDeviceVulkan::AllocateTextureInPool(8988): Unable to get Vulkan image for %s.
+CRenderDeviceVulkan::AllocateTextureInPool(8995): Allocation already set for %s, it is not valid to assign a new allocation.
+CRenderDeviceVulkan::AllocateTextureInPool(9007): failed to allocate GPU memory in custom pool for %s.
+CRenderDeviceVulkan::AllocateTextureInPool(9016): vmaBindImageMemory failed for image %s with error %d.
 CRenderDeviceVulkan::AssignQueryObjectToPool
 CRenderDeviceVulkan::BeginSubmittingDisplayLists(3880): 
 CRenderDeviceVulkan::CreateBLASForCompact
@@ -3077,30 +3070,30 @@ CRenderDeviceVulkan::CreateDescriptorSetVulkan
 CRenderDeviceVulkan::CreateGPUBufferFormatted
 CRenderDeviceVulkan::CreateMemoryPooledGPUBuffer
 CRenderDeviceVulkan::CreateQueryObject
-CRenderDeviceVulkan::CreateTLAS(7151): 
+CRenderDeviceVulkan::CreateTLAS(7165): 
 CRenderDeviceVulkan::CreateViewsOfTexture
 CRenderDeviceVulkan::CreateViewsOfTexture on texture %s but it does not have TSPEC_MUTABLE_FORMAT.
 CRenderDeviceVulkan::CreateViewsOfTexture on texture %s but view %s does not have TSPEC_IMAGE_VIEW_ONLY.
 CRenderDeviceVulkan::CreateViewsOfTexture on texture %s but view %s was already created.  A view can only be created once.
-CRenderDeviceVulkan::DeleteQueryObject(4055): 
+CRenderDeviceVulkan::DeleteQueryObject(4071): 
 CRenderDeviceVulkan::DestroyAllSemaphores
 CRenderDeviceVulkan::DestroyCmdBuffer
 CRenderDeviceVulkan::DestroyDescriptorSet
 CRenderDeviceVulkan::DestroyDeviceMemoryPool - invalid memory pool handle.
 CRenderDeviceVulkan::FreeBufferFromPool
-CRenderDeviceVulkan::FreeBufferFromPool(9126): Unable to get Vulkan buffer.
-CRenderDeviceVulkan::FreeBufferFromPool(9132): no allocation for buffer %s.
+CRenderDeviceVulkan::FreeBufferFromPool(9140): Unable to get Vulkan buffer.
+CRenderDeviceVulkan::FreeBufferFromPool(9146): no allocation for buffer %s.
 CRenderDeviceVulkan::FreeTextureFromPool
 CRenderDeviceVulkan::FreeTextureFromPool - invalid memory pool handle.
-CRenderDeviceVulkan::FreeTextureFromPool(9024): Unable to get Vulkan image for %s.
-CRenderDeviceVulkan::FreeTextureFromPool(9030): no allocation for image %s.
+CRenderDeviceVulkan::FreeTextureFromPool(9038): Unable to get Vulkan image for %s.
+CRenderDeviceVulkan::FreeTextureFromPool(9044): no allocation for image %s.
 CRenderDeviceVulkan::GetCmdPool
 CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9171): Unable to get Vulkan buffer.
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9177): no allocation for buffer %s.
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9185): Unable to get Vulkan buffer.
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9191): no allocation for buffer %s.
 CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9146): Unable to get Vulkan image for %s.
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9152): no allocation for image %s.
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9160): Unable to get Vulkan image for %s.
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9166): no allocation for image %s.
 CRenderDeviceVulkan::GetDeviceSpecificBuffer
 CRenderDeviceVulkan::GetDeviceSpecificDescriptorSet
 CRenderDeviceVulkan::GetDeviceSpecificRayTracePipeline
@@ -3300,7 +3293,7 @@ CTextureManagerBase::~CTextureManagerBase
 CTextureManagerVulkan::AddReferenceToDescriptorSet
 CTextureManagerVulkan::CTextureManagerVulkan
 CTextureManagerVulkan::ComputeTextureObject
-CTextureManagerVulkan::ComputeTextureObject(1474): 
+CTextureManagerVulkan::ComputeTextureObject(1478): 
 CTextureManagerVulkan::ComputeTextureObject: Tried to create a depth-stencil texture which is *not* a render target!
 CTextureManagerVulkan::CreateSamplerObject
 CTextureManagerVulkan::CreateSamplerObject::<lambda_1>::operator ()
@@ -3955,7 +3948,7 @@ CUtlMemory_RawAllocator<class CUtlHashtableEntry<unsigned int,struct empty_t> >:
 CUtlMemory_RawAllocator<unsigned int>::EnsureCapacity
 CUtlMemory_RawAllocator<unsigned int>::Grow
 CUtlQueue<struct VkSemaphore_T *,class CUtlMemory<struct VkSemaphore_T *,int> >::Count
-CUtlQueue<struct VkSemaphore_T *,class CUtlMemory<struct VkSemaphore_T *,int> >::RemoveAtTail
+CUtlQueue<struct VkSemaphore_T *,class CUtlMemory<struct VkSemaphore_T *,int> >::RemoveAtTail::<lambda_1>::operator ()
 CUtlRBTree overflow with %u elements!
 CUtlRBTree<struct CUtlOrderedMapBase<class CShaderVulkanBase const *,class CUtlLinkedList<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short>,unsigned short> > *,class CDefLess<class CShaderVulkanBase const *>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CShaderVulkanBase const *,class CUtlLinkedList<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short>,unsigned short> > *,class CDefLess<class CShaderVulkanBase const *>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CShaderVulkanBase const *,class CUtlLinkedList<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short>,unsigned short> > *,class CDefLess<class CShaderVulkanBase const *>,unsigned short>::Node_t,unsigned short>,unsigned short> >::FreeNode
 CUtlRBTree<struct CUtlOrderedMapBase<class CShaderVulkanBase const *,class CUtlLinkedList<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short>,unsigned short> > *,class CDefLess<class CShaderVulkanBase const *>,unsigned short>::Node_t,class CUtlOrderedMapBase<class CShaderVulkanBase const *,class CUtlLinkedList<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short>,unsigned short> > *,class CDefLess<class CShaderVulkanBase const *>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CShaderVulkanBase const *,class CUtlLinkedList<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CFossilizeStateCreator::FossilizeShaderModule_t *,unsigned short>,unsigned short> > *,class CDefLess<class CShaderVulkanBase const *>,unsigned short>::Node_t,unsigned short>,unsigned short> >::Insert
@@ -4072,7 +4065,7 @@ CVulkanSamplerObject::ReplaceSampler
 CWD>~3
 CWeakHandle<struct InfoForResourceTypeCTextureBase>::InitUntyped
 CXA9@
-CXH9u
+CXH9}
 C\$XH
 CalibrationIlluminant1
 CalibrationIlluminant2
@@ -4341,14 +4334,12 @@ D$P@8u
 D$PA;D$
 D$PD;
 D$PE3
-D$PE8
 D$PE;
 D$PH+
 D$PH;
 D$PH=
 D$PHcGpH
 D$PI;
-D$PIk
 D$PL;
 D$PLcP
 D$Pf;
@@ -4445,10 +4436,9 @@ D24X8_SHADOW
 D32FS8
 D4/L;
 D7 D;^
-D8 t*H
-D8%GuT
 D8*t$Ic
 D8,>u
+D80t(H
 D81uUL9r
 D84:u
 D86uz3
@@ -4501,10 +4491,11 @@ D8|$ht
 D9 u2D9
 D9 ~c
 D9#~SLce
-D9'~CI
+D9%^/;
 D9(tT
 D9.~>H
 D9:t9H
+D9;~>H
 D9?~>I
 D9@Tv*
 D9C vV
@@ -4529,7 +4520,7 @@ D9kXu
 D9l$p
 D9l$t
 D9n(t
-D9n`t
+D9n`uLA
 D9o s
 D9s |AH
 D9sXt	H
@@ -4539,7 +4530,7 @@ D9wPu
 D9|$ 
 D9~(D
 D;	t8
-D;%zb9
+D;%*p9
 D;@Tr
 D;A ~
 D;A`v
@@ -4593,6 +4584,7 @@ DEFAULT_WRITE_PATH
 DEVICE_COHERENT_AMD
 DEVICE_LOCAL
 DEVICE_UNCACHED_AMD
+DGAxj
 DIGIT
 DNGBackwardVersion
 DNGPrivateData
@@ -4812,7 +4804,6 @@ ExternalNameForInternalType
 ExtraSamples
 Extraneous token
 E|I96u
-F	V_sinf
 F	tj<
 F 9F(r
 F A3@ A
@@ -5159,7 +5150,7 @@ H(H;J(H
 H)D$@A
 H)G8H
 H)T$@
-H)|$`
+H)\$`
 H*0"ZOW
 H+D$PH
 H+D$hH
@@ -5186,13 +5177,14 @@ H97u+A
 H98t$H
 H98t2
 H98t7
-H9=&B>
-H9=)9:
-H9=B5<
-H9=FC>
-H9=R6<
-H9=Z7<
-H9=z8<
+H9=*F<
+H9=2G<
+H9=BH<
+H9=R!<
+H9=RI<
+H9=]fY
+H9=bJ<
+H9=mF:
 H9@ t
 H9@ t$A
 H9A(u
@@ -5266,7 +5258,7 @@ H9vHu
 H9vPu
 H9vXu
 H9w`u
-H9w`uAA
+H9w`uHA
 H9|$8t
 H9|$@t
 H9|$Ht
@@ -5277,11 +5269,11 @@ H9|$ht
 H9|$p
 H9|$pt
 H9|$xt8H
-H9|$xtsH
-H9}Ht
+H9|$xtgH
 H9}Pt
-H9}Xt
 H9}gt
+H9}ot
+H9}wt
 H9}xt
 H9~Pu
 H9~Xt
@@ -5306,6 +5298,7 @@ H;V8r
 H;XXs
 H;Y@u
 H;\$0t/
+H;\$`
 H;_0t
 H;l$@s
 H;pH@
@@ -5314,7 +5307,6 @@ H;s8r
 H;sHs
 H;xXu5
 H;{@I
-H;|$`
 H=vtex
 H@H;HHs
 HA]A\
@@ -5346,6 +5338,9 @@ HalftoneHints
 HammerMapLoader001
 HasAllocatedMemory( nDestAttr )
 HasUAVHiddenCounter()
+Hc-<N_
+Hc-W^9
+Hc-tO_
 Hc.;n
 Hc/;o
 Hc3;s
@@ -5421,8 +5416,8 @@ Hc\$@H
 Hc\$THc
 Hc\$XI
 Hc\$pI
-Hc] L
 Hc]0A
+Hc]0L
 Hc]HA
 Hc]`A
 Hc]wH
@@ -5460,7 +5455,7 @@ HostComputer
 HostStateMgr001
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-I	V_snprintf
+I	V_sinf
 I 9)t
 I could not work out what I was expecting, like so many of us these days!
 I$HcC
@@ -5704,7 +5699,6 @@ K0HcK4H
 K0HcQ
 K4HcK8H
 KERNEL32.dll
-KQ.[`e
 KV3 instances cannot be set to an unspecified specific type
 Keeping resolution of (%dx%d)
 KeyValueCache001
@@ -5743,6 +5737,7 @@ K}*n:
 K~Je#>!
 L	B I
 L	G H;
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#L$(L
@@ -5920,9 +5915,8 @@ L$pHc
 L$pIc
 L$pJc
 L$pf;
-L$pfD
 L$pff
-L$rfE;
+L$vfE;
 L$xA+
 L$xE3
 L$xH3
@@ -5942,11 +5936,12 @@ L9	u)H
 L9"uz
 L9#t	H
 L9#u/H
-L9%YwU
+L9%3ZN
 L9/t9H
+L95I#<
+L95}"<
 L97vH
 L9;t	H
-L9=>VU
 L9A8v1E3
 L9BHA
 L9IHA
@@ -5993,6 +5988,8 @@ L9w(t
 L9x v@I
 L9x(u
 L9{(v
+L9|$0t
+L9|$8
 L9|$@t
 L9|$HA
 L9|$Ht
@@ -6040,11 +6037,8 @@ LZWDecodeCompat: Not enough data at scanline %d (short %ld bytes)
 LZWDecodeCompat: Wrong length of decoded string: data probably corrupted at scanline %d
 LZWPreDecode
 LZWSetupEncode
-Lc#D;c
-Lc/D;o
 Lc3D;s
 Lc6D;v
-Lc7D;w
 Lc;D;{
 LcA<E3
 LcC$E
@@ -6088,9 +6082,8 @@ Lcc L
 Lcd$ Hc
 Lcd$ f
 Lcd$DD
-Lcd$\E;
+Lcd$PL
 Lcd$pD
-Lck M
 Lcl$ M
 Lcl$TM
 Lcl$tA
@@ -6184,7 +6177,6 @@ MQC,ARD
 MT$8L
 MULTI_INSTANCE
 MX+C$L
-MXD;{
 M\$ A
 M\$$D;L$(L
 MainCs
@@ -6260,6 +6252,7 @@ MultiDrawIndexedInstancedIndirect failed - invalid drawarg buffer
 MultiDrawIndexedInstancedIndirectCount failed - invalid drawarg buffer
 MultiDrawIndexedInstancedIndirectCount failed - invalid drawcount buffer
 Must call SetMetadataEnabled on the root KV3 context to track metadata
+MwLck H
 N(@8~ H
 N3`d?
 N73F4%
@@ -6267,7 +6260,6 @@ N>O=I9
 N@D9	t
 NAN(IND)
 NAN(SNAN)
-ND$tA
 NJ2"v
 NORMAL
 NULL VP8Io parameter in VP8Decode().
@@ -6319,13 +6311,11 @@ NumCols() <= V_ARRAYSIZE( s_DummyRow )
 Number of layout binding descriptors doesn't match number of descriptors. %d != %d
 NumberOfInks
 NvLL_VK_Sleep vkLatencySleepNV error '%s'.
-O	V_sscanf
 O!t/H
 O(D8o u
 O*9y]
 O8HcB
 O8HcY
-O=w0q\
 OCTAL_ESC
 OF>;^
 OUTSTANDING_HOOKUP_REQUEST 
@@ -6492,6 +6482,8 @@ Premature end-of-file encountered.
 Premature end-of-partition0 encountered.
 Present
 PresentId
+Present_Queue
+Present_Wait
 Prevent state leakage: Do not modify rendercontext's attributes when doing local rendering.
 Previous allocation with memoryRequirements.memoryTypeBits=0x%x was from heap %d (propertyFlags: 0x%x) with requested propertyFlags 0x%x, trying in heap %d (propertyFlags: 0x%x) with requested propertyFlags 0x%x.
 PrimaryChromaticities
@@ -6510,6 +6502,7 @@ Q2XXR
 Q5rHg,>
 QD$`H
 QD9Ql
+QUEUED FOR DELETION
 Qkkbal
 Quantization table 0x%02x was not defined
 Quantizing to %d = %d*%d*%d colors
@@ -6517,7 +6510,7 @@ Quantizing to %d colors
 Query
 QueryPerformanceCounter
 QueryPerformanceFrequency
-QueuePresent
+R	V_sscanf
 R	p!"
 R11_EAC
 R16G16_UINT
@@ -6627,6 +6620,7 @@ Reject swapchain blit request to swapchain that is no longer valid.
 Release
 ReleaseSRWLockExclusive
 ReleaseThreadHandle
+RemoveAtTail( temp )
 Removing texture from pending streamable list (%s)
 Removing texture from streamable list (%s)
 Render Device Empty
@@ -6665,6 +6659,7 @@ RenderSystem/Use32BitDepthBufferWithoutStencil
 RenderSystem/UseHardwareGammaRamp
 RenderSystem/UseReverseDepth
 RenderSystem/VulkanAdditionalShaderCache
+RenderSystem/VulkanDefrag
 RenderSystem/VulkanLazilyAllocateRenderTargets
 RenderSystem/VulkanMutableSwapchain
 RenderSystem/VulkanOnly
@@ -6780,7 +6775,6 @@ SUAUH
 SUAVH
 SUAWH
 SUVATAUAVH
-SUVATH
 SUVWATAUAVAWH
 SUVWATAUAVH
 SUVWATAUH
@@ -6934,7 +6928,6 @@ Swapchain extent(s) are 0, skipping swapchain creation
 SwizzlePlanarScanlineToInterleaved
 SystemTimeToFileTime
 SystemTimeToTzSpecificLocalTime
-T	V_stricmp_fast
 T$ A8W
 T$ A:W
 T$ D)s
@@ -7020,7 +7013,7 @@ T$xD;{
 T$xE3
 T$xH;
 T$xI+
-T%lQ*
+T%X +
 TANGENT
 TD u"E;
 TEX read request: %d KB; %s
@@ -7174,7 +7167,6 @@ UATAUH
 UATAVAWH
 UATAVH
 UATAWH
-UAUAVAWH
 UAUAWH
 UAVAWH
 UAVBarrier - requested barrier for more mip levels than are in the texture. Requested baseLevel: %d levelCount: %d (Actual levels: %d).  Clamping to actual number of levels.
@@ -7342,14 +7334,15 @@ Using '%s' for Vulkan validation reporting.
 Using Steam Shader Pre-Cache whitelist %s
 Using VK_EXT_memory_budget set texture memory budget to %llu MB.
 Using VK_GOOGLE_display_timing for frame pacing.
+Utf[B
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 Uxu9I
-V	V_strlower_fast
 V6E>`"(5
 VALIDATION
 VATAUAVAWH
+VATAUAVH
 VAUAVH
 VAUAWH
 VAVAWH
@@ -7575,6 +7568,7 @@ VWAUAWH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 VZ#-DLU[3=h
 V_:X1:
 V_CopyMemory3D
@@ -7792,7 +7786,9 @@ Vulkan/Pipeline State Object Count
 Vulkan/Staging Dynamic Total Pool Count
 Vulkan/Staging Dynamic Total Pool Size (MB)
 VulkanGPUMemVisThread
+W	V_stricmp_fast
 W%	s;M@
+W5%R%
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
 WARNING : 
@@ -7845,12 +7841,11 @@ X ATAVAWH
 X AVH
 X D8e
 X!t5~
-X%Pn)
-X-)V+
-X-7k+
-X-hn)
+X%U71
+X-K++
+X-W++
 X5AHx
-X5I=1
+X5O=2
 XA^A\][
 XA^A]A\_^[
 XA^A]^]
@@ -7865,6 +7860,7 @@ XA_A^_^][
 XA__^[
 XClipPathUnits
 XD$@H
+XL$DD
 XL$tL
 XMLPacket
 XPosition
@@ -7874,17 +7870,17 @@ X\$@I
 X_^[]
 X|$ A
 X|$8E
-Y%.j)
-Y%W-+
-Y%k(+
-Y-W(+
-Y-]:1
-Y5/<1
-Y5V*+
-Y5Y=1
+Y	V_strlower_fast
+Y%<81
+Y%Ce>
+Y%},+
+Y%}71
+Y-%&+
+Y-'++
+Y-C++
+Y51:1
 Y9"SD
-Y=P^-
-Y=c[*
+Y=5v7
 Y>kX>
 Y>kX>M
 YCbCrCoefficients
@@ -7912,7 +7908,6 @@ Zod(^?
 Zpm"U
 Z~$|7
 [	UoA
-[	V_strtoi64
 [*QmU
 [*ncd>0
 [-&LMb#{'
@@ -7945,7 +7940,6 @@ Z~$|7
 \$ UVAWH
 \$ UVWATAUAVAWH
 \$ UVWAUAVH
-\$ UVWAUAWH
 \$ UVWAVAW
 \$ UVWAVAWH
 \$ UVWH
@@ -8013,7 +8007,6 @@ Z~$|7
 \$PH;
 \$PHc
 \$PHk
-\$PIc
 \$PL;
 \$PfA
 \$PfD
@@ -8043,14 +8036,17 @@ Z~$|7
 \$pE3
 \$pHc
 \$pHk
-\$rfD
+\$xHcD$pL
 \$xIc<$I
 \$xIc}0I
 \$xM;
 \$xu$I
 \$xu3M
 \$xu7H
-\=WW*
+\%?l)
+\%ci)
+\3eTy
+\5i=2
 ])6M>&
 ]0A;^8
 ]>)2X
@@ -8058,6 +8054,7 @@ Z~$|7
 ]J<0"0i3
 ]Lu*E;|$
 ]oB;\7(
+^	V_strtoi64
 ^(HcN8A
 ^,tyI
 ^<V7w
@@ -8331,6 +8328,8 @@ c(>\,
 c0&>`
 c>v	k
 c?FA@s}
+cHu!H
+c`u!H
 cacheData
 cached_fp == invalid_function_sentinel()
 cached_fp == new_fp
@@ -8444,6 +8443,7 @@ d$XIc
 d$XfD
 d$`E3
 d$`E;
+d$`Mc
 d$`fff
 d$dD;d$ltY
 d$hE3
@@ -8453,6 +8453,7 @@ d$pM9g8
 d$xE3
 d$xLc
 d$xM+
+d<$$gQ
 d<-u`H
 d?000000`?
 dD9B$u
@@ -8537,14 +8538,13 @@ e8A_A^A]A\_^[]
 e@A_A^A]A\]
 e@A_A^A]A\_^]
 e@A_A^]
-eHA_A^A]A\_^[]
 eLK(w
 eO@h/
 ePA_A^A]A\_^]
+eXA_A^A]A\_^[]
 eax~Z
 effortblocks = %d
 egE9e
-ehA_A^A]A\_^[]
 ehandle
 ekhHD
 engineName
@@ -8573,16 +8573,16 @@ f9<Au
 f9<Fu
 f9<H}
 f9<Ju
-f9=c>9
+f9=TM9
 f9Bt~
 f9G`u1H
 f9G`uCH
 f9t$ 
 f9t$"
+f9t$Rt
+f9t$Zuaf;
 f9t$bu
 f9|$ tyf
-f9|$Rt
-f9|$Zuaf;
 f;E	tW
 f;\$4
 f;\$4r
@@ -8650,9 +8650,8 @@ fD9gpv-L9gxu
 fD9t$E
 fD9t$b
 fD;"w
-fD;D$tfD
 fD;jt
-fD;l$F}w3
+fD;l$V}w3
 fDeltaTime
 fDeviceToViewDepth
 fDownscaleFactor
@@ -8962,6 +8961,7 @@ l$0Hc
 l$0I;
 l$0Ic
 l$0L+
+l$0L;
 l$0Lc)
 l$0Mc
 l$0_^
@@ -8971,19 +8971,18 @@ l$4A+
 l$8@8
 l$8A;
 l$8A^A\^
+l$8D9(
 l$8E3
 l$8E;
 l$8H#
 l$8Hc
 l$8I#
 l$8L+
-l$8L;
 l$8Mc
 l$8tRH
 l$8u&H
 l$@A;
 l$@D8G
-l$@D9(
 l$@E3
 l$@H;
 l$@Hc
@@ -9020,27 +9019,26 @@ l$XI;
 l$XL+
 l$`A;
 l$`D9i8~UL
-l$`E;
 l$`H;
 l$`Hc
 l$`I+
 l$`L9x 
 l$`fA
 l$hD+
+l$hD9
 l$htSH
 l$pE3
 l$pI;
 l$pLc
+l$pfD
+l$rfE;
 l$t;w
-l$xD;
 l$xH9o8
 l$xH;o8
 l$xL9#
-l$xMc
 l$xu4H
 l$xu:H
 l$x~!H
-l'`	 
 l2|X/gGe
 l6qnk
 l8rfA;
@@ -9427,7 +9425,7 @@ nSemanticIndex <= 15
 nSemaphoreIndex < static_cast< int32 >( m_nSwapQueueImageCount )
 nSemaphoreIndex >= 0
 nSignature == 0x4d494238
-nSize <= m_nMemoryUsed
+nSize <= static_cast< size_t >( m_nMemoryUsed.GetRaw() )
 nSize > 0
 nSlice < pTexture->GetSpec()->GetArrayCount()
 nSliceSize * nSlices == nDataSize
@@ -9521,71 +9519,57 @@ numWorkGroups
 n|$`fA
 o KPBf
 o$$fA
-o%"l0
-o%$NZ
-o%$y0
-o%()0
-o%6FZ
-o%H40
-o%OE1
-o%]70
-o%a*0
-o%g@Z
+o%$[0
+o%&GZ
+o%*k0
+o%-o0
+o%721
+o%WAZ
+o%Zr0
+o%\E0
+o%{90
 o,$fD
-o- K4
-o-+j0
-o-+u0
-o-0y0
-o-G:0
-o-J|1
-o-MS0
-o-Wx0
-o-b.0
-o-f*0
-o-km0
-o-o	T
-o/+M/D
+o- r4
+o-%Oc
+o-/(0
+o-3i0
+o-Ee0
+o-U[0
+o-W=0
+o-eo0
+o-ky0
+o-l;1
+o-x90
+o-{M0
 o47Lc
-o5!>1
-o5#40
-o5,j0
-o50D0
-o5<|0
-o5B|1
-o5E00
-o5H40
-o5NS0
-o5P	T
-o5PH0
-o5]R>
-o5cD0
-o5eH0
-o5jp>
-o5k51
-o= 5G
-o=":0
-o=#v0
-o=(>1
-o=(h0
+o5%'6
+o51H0
+o54i0
+o5Uy>
+o5X?0
+o5h+0
+o5p	T
+o5vI4
+o5ve0
+o5|k0
+o=.g0
+o=.k0
+o=1".
 o=24R
-o=2x0
-o=3V0
-o=9A0
-o=:[0
+o=@Y0
 o=HGR
-o=N|0
+o=PP0
 o=Q4R
+o=R10
 o=V?R
-o=Ze0
-o=].0
 o=bYR
-o=cr0
+o=cM0
 o=eaR
 o=icR
+o=n21
 o=q:R
+o=r50
 o=r\R
-o=vk0
-o=wC0
 oAPfD
 oD$ f
 oD$ fA
@@ -10415,7 +10399,6 @@ t$`I#
 t$`L#
 t$`fD9+t$I
 t$`fE
-t$hD9
 t$hD9`
 t$hE3
 t$hI#
@@ -10458,7 +10441,7 @@ t+fff
 t-Lck
 t.fff
 t1@8l
-t2L9-
+t2L9-'qa
 t2fff
 t3D82t.
 t4D8k I
@@ -10472,8 +10455,7 @@ t6fE94
 t6fff
 t7@8sXt1H
 t7HcP
-t9H95N
-t9H95|
+t9H95
 t;@8w
 t;LcF
 t;fD9>t#
@@ -10482,17 +10464,17 @@ t=D8j
 t?D8 t:
 t?HcS
 t@9+u,9s
+t@H95
 t@McO4
+tAH9=
 tAHcI 
 tBMcW<IcO@Lc
 tC7Ddx
 tC@8-
-tC@8-U
+tC@8-Q
 tC@85
-tCH95
 tDD8%
-tDD8%"
-tDD85(:-
+tDD85
 tDfff
 tEHcR
 tFD9c
@@ -10503,6 +10485,7 @@ tLfff
 tNfA;
 tNfE;
 tOD8-
+tOD8-J
 tP@87uKH
 tQfD9 tK
 tR@8>tM3
@@ -10517,7 +10500,6 @@ tSf91tNH
 tSvQ@2
 tU;Cxr
 tU;\$0tH
-tVD8%
 tVH#E
 tZH9X0t
 tZH9XPt
@@ -10693,7 +10675,7 @@ uefA;
 ufA9l$(u_A9l$,uXA9l$0uQA9l$4uJA9l$8uCA9l$<u<A
 ufD:B
 uffA9r u_fA9r0uXfA9r@uQfA9rPuJfA9r`uCfA9rpu<A
-uffD9e
+uffD9u
 ufiD$@
 ugfA;
 ugfD9A
@@ -10735,7 +10717,6 @@ v/D9+
 v0A;o
 v0H9{0
 v2!L.2
-v4,*{
 v;A+o
 v=Y]Bv
 v@D8s(t
@@ -11644,6 +11625,7 @@ xA_A^A]A\_^[]
 xA_A^A]A\_^][
 xA_A^[]
 xA_A^_[
+xA_A^_^][
 xCH;{
 xChromaOffset
 xDH;{
@@ -11801,7 +11783,6 @@ zY;>u:m
 |$@fA
 |$@fA;
 |$@ff
-|$@tyA
 |$@u;
 |$DE3
 |$HA;
@@ -11815,6 +11796,7 @@ zY;>u:m
 |$Hu*
 |$Hu*H
 |$P9E
+|$PD;(
 |$PE3
 |$PI;
 |$PIc
@@ -11823,7 +11805,6 @@ zY;>u:m
 |$TD	
 |$X9_
 |$XD9
-|$XD;(
 |$XE3
 |$XHc
 |$XHcU
@@ -11914,7 +11895,6 @@ zY;>u:m
 ~gfff
 ~hMcnxE
 ~qj#k"
-~rfff
 ~t&LN
 ~vNcD
 ~|E9e

@@ -4,6 +4,7 @@
 		<include src="s2r://panorama/styles/hud_minimap.vcss_c" />
 	</styles>
 	<Panel class="HudMinimap" hittest="true">
+		<GlobalClassListener classes="gDetailView" />
 		<HudMinimapRender id="map_render" hittest="false" />
 		<UICanvas id="canvas" hittest="false" />
 	</Panel>

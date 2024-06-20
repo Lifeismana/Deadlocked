@@ -118,16 +118,19 @@
 		base = "Base.Mod.Tier3.3d"
 		volume = -12.000000
 		volume_fade_out = 0.500000
-		vsnd_files = "sounds/mods/armor/stasis/cast_lyr1.vsnd"
-		vsnd_duration = 6.368125
+		block_event_name = ""
+		block_duration = -1.000000
+		block_distance = 0.000000
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
 	}
 	Mods.Armor.Stasis.Cast.Lyr2 = 
 	{
 		base = "Base.Mod.Tier3.3d"
 		volume = -12.000000
 		volume_fade_out = 0.500000
-		vsnd_files = "sounds/mods/armor/stasis/cast_lyr2.vsnd"
-		vsnd_duration = 6.368125
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
 	}
 	Mods.Armor.Stasis.Lp = 
 	{
@@ -140,30 +143,39 @@
 	}
 	Mods.Armor.Stasis.Lp1 = 
 	{
-		base = "Base.Mod.Tier3.3d"
+		base = "Base.Mod.3d"
 		delay = 0.000000
 		delay_rand_min = -3.000000
 		delay_rand_max = 0.000000
-		volume_fade_out = 0.100000
+		volume_fade_out = 2.000000
 		volume_fade_in = 0.300000
 		pitch_rand_min = -0.001000
 		pitch_rand_max = 0.001000
-		volume = -9.000000
-		vsnd_files = "sounds/mods/armor/stasis/lp1.vsnd"
-		vsnd_duration = 8.037791
+		volume = 0.000000
+		block_event_name = ""
+		block_duration = -1.000000
+		block_distance = 0.000000
+		spread_min = 0.000000
+		spread_max_value = 0.758621
+		spread_max = 500.000000
+		spread_min_value = 0.000000
+		vsnd_files = "sounds/mods/tech/stasis/etherealshift_fullvocal.vsnd"
 	}
 	Mods.Armor.Stasis.Lp2 = 
 	{
-		base = "Base.Mod.Tier3.3d"
+		base = "Base.Mod.3d"
 		delay_rand_min = -3.000000
 		delay_rand_max = 0.000000
 		volume_fade_out = 0.100000
 		volume_fade_in = 0.300000
 		pitch_rand_min = -0.001000
 		pitch_rand_max = 0.001000
-		volume = -6.000000
-		vsnd_files = "sounds/mods/armor/stasis/lp2.vsnd"
-		vsnd_duration = 4.230417
+		volume = 0.000000
+		spread_min = 0.000000
+		spread_max_value = 0.382445
+		spread_max = 500.000000
+		spread_min_value = 0.000000
+		vsnd_files = "sounds/mods/tech/stasis/etherealshift_activebox.vsnd"
 	}
 	Mods.Armor.RocketBoots.Cast = 
 	{
@@ -436,5 +448,6 @@
 		spread_max = 500.000000
 		spread_min_value = 0.000000
 		vsnd_files = "sounds/mods/armor/rescue_beam/pull_start.vsnd"
+		vsnd_duration = 2.361723
 	}
 }

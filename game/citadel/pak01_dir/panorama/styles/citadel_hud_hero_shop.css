@@ -11,7 +11,14 @@ CitadelHudHeroShop
 	flow-children: right;
 }
 
-.AspectRatio21x9 CitadelHudHeroShop
+#Shop
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+}
+
+.AspectRatio21x9 #Shop
 {
 	width: 1920px;
 	horizontal-align: center;
@@ -176,6 +183,120 @@ CitadelHudHeroShop
 {
 	height: 100%;
 	width: fill-parent-flow(1.0);
+}
+
+#SearchContainer
+{
+	horizontal-align: right;
+	flow-children: down;
+	z-index: 99;
+	background-color: #CBBCA6;
+	width: 240px;
+}
+
+#SearchContainer #SearchBox
+{
+	padding: 0px;
+}
+
+#SearchContainer #SearchTextEntry
+{
+	text-align: center;
+	background-color: #333;
+	border-radius: 3px;
+	border: 3px solid silvered&20;
+	height: 50px;
+	padding: 10px 0px 15px 10px;
+}
+
+#SearchContainer #SearchTextEntry > #PlaceholderText
+{
+	vertical-align: middle;
+	font-weight: medium;
+	margin-top: 0px;
+	font-weight: semi-bold;
+}
+
+#SearchContainer #ClearSearchButton
+{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	visibility: collapse;
+	visibility: visible;
+	background-size: auto 50%;
+	background-position: center;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/icons/icon_x.vsvg");
+	horizontal-align: right;
+	opacity: 0.3;
+	transition-property: opacity, pre-transform-scale2d;
+	transition-duration: 0.3s;
+}
+
+#SearchContainer #ClearSearchButton:hover
+{
+	opacity: 0.7;
+	pre-transform-scale2d: 1.2;
+}
+
+#SearchContainer .ShowSearchResults #ClearSearchButton
+{
+	visibility: visible;
+}
+
+#SearchExamples
+{
+	ignore-parent-flow: true;
+	vertical-align: top;
+	horizontal-align: right;
+	flow-children: down;
+	margin-top: 70px;
+	z-index: 99;
+	padding: 8px;
+	background-color: #333;
+	width: 340px;
+	border-radius: 5px 0px 5px 5px;
+	opacity: 0;
+	transition-property: transform, opacity;
+}
+
+.ShowSearchExamples #SearchExamples
+{
+	opacity: 1;
+}
+
+#SearchExamples > Label
+{
+	padding: 4px;
+	opacity: 0.5;
+	font-size: 17px;
+	font-weight: medium;
+}
+
+#SearchExamples > Label .highlight
+{
+	color: offWhite;
+	font-weight: bold;
+}
+
+#SearchExamples > Label .highlight_weapon
+{
+	color: courageBrightColor;
+	font-weight: semi-bold;
+}
+
+#SearchExamples > Label .highlight_vitality
+{
+	color: fortitudeBrightColor;
+	font-weight: semi-bold;
+}
+
+#SearchExamples > Label .highlight_spirit
+{
+	color: spiritBrightColor;
+	font-weight: semi-bold;
 }
 
 #FiltersDropDownContainer
@@ -766,6 +887,7 @@ CitadelTrainingPage #FavoritesNav
 	flow-children: down;
 	ignore-parent-flow: true;
 	horizontal-align: right;
+	visibility: collapse;
 }
 
 #FavoritesNav
@@ -792,7 +914,7 @@ CitadelTrainingPage #FavoritesNav
 	color: offBlack;
 }
 
-.showingWeapon #ShopModsListWeapon,.showingTech #ShopModsListTech,.showingArmor #ShopModsListArmor,.showingFavorites #ShopModsListFavorites,.showingFilters #ShopModsListAll
+.showingWeapon #ShopModsListWeapon,.showingTech #ShopModsListTech,.showingArmor #ShopModsListArmor,.showingFavorites #ShopModsListFavorites,.showingFilters #ShopModsListAll,.showingSearch #ShopModsListAll
 {
 	visibility: visible;
 }
@@ -1360,6 +1482,12 @@ CitadelModifiedAbilities
 	border-radius: 5px 5px 0px 0px;
 }
 
+#SearchContainer
+{
+	border-radius: 0px;
+	background-color: none;
+}
+
 .NavigationButtonSmall
 {
 	vertical-align: bottom;
@@ -1510,12 +1638,6 @@ CitadelModifiedAbilities
 #FiltersName .NavHeaderColor
 {
 	background-color: #555;
-}
-
-.showingWeapon #WeaponNav.NavigationButton,#WeaponNav .NavHeaderColor
-{
-	background-color: courageBrightColor;
-	font-weight: semi-bold;
 }
 
 .ReadOnlyShop

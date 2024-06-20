@@ -21,7 +21,6 @@
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  %02d. %-30s  %s
  %41g
- %h! 
  'L>[
  (%s%s)
  A\_[
@@ -105,7 +104,6 @@ $Lc>Hk
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
 (%d,%d)
-(*y9%-
 (A]A\^[
 (A]_^[
 (A_A]A\_
@@ -237,6 +235,7 @@ $Lc>Hk
 )L$0D
 )L$@A
 )L$@E
+)L$@L
 )L$@uTH
 )L$PHc
 )L$`D
@@ -324,6 +323,7 @@ $Lc>Hk
 -> Success (%d attempts)
 -YA1f
 -convars_visible_by_default
+-fcRG
 -sse2
 -sse3
 -sse4
@@ -345,7 +345,7 @@ $Lc>Hk
 .?AV<lambda_2>@?1??CalcClusters_C@CNavTree@@QEAAXAEBV?$function@$$A6A_NHPEBV?$Vec3D@M@@@Z@std@@@Z@
 .?AV<lambda_2>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@
 .?AV<lambda_2>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
-.?AV<lambda_2>@?7??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@
+.?AV<lambda_2>@?M@??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@
 .?AV<lambda_3>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
 .?AV<lambda_4>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
 .?AV?$CBaseAppSystem@VINavSystem@@@@
@@ -398,7 +398,7 @@ $Lc>Hk
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??CalcClusters_C@CNavTree@@QEAAXAEBV?$function@$$A6A_NHPEBV?$Vec3D@M@@@Z@std@@@Z@XAEBUTreeIter_t@3@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@_NAEBU4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?7??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?M@??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
@@ -547,12 +547,13 @@ $Lc>Hk
 1#SNAN
 130801120000Z
 1<.	/>:
+1TG ^3
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240613154321Z0/
+240620161514Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -608,10 +609,8 @@ $Lc>Hk
 9W0|<
 9\$hu
 9p@u+
-9r+7A
 9t$Pu	
 9|$(u
-:	V_qsort_s
 :D;	|
 :Mc7M
 ;1#INF
@@ -624,10 +623,9 @@ $Lc>Hk
 ;YA1D
 ;l$0u
 <	u2H
-<	u\L
+<	u8H
 <	w	@
 < t=<	t9
-<%e0j
 <0:08
 <Ct-<D
 <St[@:
@@ -643,6 +641,7 @@ $Lc>Hk
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 <utK@:
+=	V_qsort_s
 =%H5<mN
 ==MQ?
 =SHX?
@@ -805,6 +804,7 @@ $Lc>Hk
 @b;zO]
 @ffffff
 @p8Ap
+@t9Ft
 A+P@H
 A0E9L$,
 A8}(u
@@ -832,7 +832,7 @@ ATAWH
 AUAVAWH
 AVAWH
 AVOID
-A\_^]
+A\_^]H
 A]A\[
 A]A\]
 A]A\^H
@@ -841,9 +841,11 @@ A]A\_^[
 A]A\_^][
 A]_^[
 A]_^[]
+A]_^]
 A^A\[
 A^A\]
 A^A\^[]
+A^A\_^]
 A^A]A\
 A^A]A\[]
 A^A]A\]
@@ -859,7 +861,6 @@ A_A\_^[]
 A_A]A\
 A_A]A\]
 A_A]A\^[
-A_A]A\^]H
 A_A]A\_
 A_A]A\_]
 A_A]A\_^[
@@ -995,8 +996,8 @@ CKV3ClusterAlloc<class KeyValues3,63>::Free
 CKV3ClusterAlloc<class KeyValues3,63>::GetIndexForEntry::<lambda_1>::operator ()
 CKV3ClusterAlloc<class KeyValues3,63>::GetIndexForEntry::<lambda_2>::operator ()
 CKV3ClusterAlloc<class KeyValues3,63>::GetParentContext
-CKV3MemberIteratorView<1>::iterator::iterator
-CKV3MemberIteratorView<1>::iterator::operator *
+CKV3MemberIndexIteratorView<1>::iterator::iterator
+CKV3MemberIndexIteratorView<1>::iterator::operator *
 CKV3TransferLoadContext::ErrorListener_AppendFormatContext
 CKV3TransferLoadContext::InternalAllocatePooledMemory
 CKV3TransferLoadContext::LoadOwningPointer
@@ -1273,7 +1274,6 @@ D$ Hc
 D$ I9P
 D$ I;R
 D$ L;
-D$ i~
 D$ p9
 D$$E;
 D$(E3
@@ -1291,6 +1291,7 @@ D$0HcH
 D$0HcL
 D$0Ic
 D$0fH
+D$0i~
 D$49C
 D$4E3
 D$4H;K
@@ -1301,14 +1302,15 @@ D$8H;
 D$8Hc
 D$8L9
 D$8fff
-D$<E3
 D$@D;
 D$@D;w
 D$@E3
+D$@E;
 D$@H+
 D$@H;
 D$@H;F
 D$@t+E
+D$DD+
 D$DE3
 D$DHc
 D$FI;
@@ -1347,6 +1349,7 @@ D$`HcL
 D$`L;
 D$`L;D$P
 D$`ff
+D$hB;
 D$hH;
 D$hHc
 D$hL;
@@ -1372,7 +1375,6 @@ D8$2u-A
 D8$2u1H
 D8$2u4H
 D8$2u5A
-D8-qs
 D81uUL9r
 D8L$0u`
 D8[(u
@@ -1396,7 +1398,6 @@ D;/}HIc
 D;T$X|"A+
 D;T$p|&A+
 D;sHu
-D;t$8
 D;x,|
 D;~(u
 DNnW'
@@ -1460,9 +1461,11 @@ ExternalNameForInternalType
 F H9H
 F Jc<
 F(Hc4
+F<q,J
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to register all schema data: %s
 FATAL: %s called on a pool context (no root available)
+FT?P*x
 Failed to allocate an instance of a class
 Failed to look up vnotify path (%s:%s)
 Failed to save unsupported class
@@ -1502,6 +1505,7 @@ GT$8A
 GT$8H
 GT$8i
 G\$(L
+G^	>#
 G_ rr
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -1545,8 +1549,6 @@ GetThreadLocalStackAllocator
 GetTypeInfo( nType ).m_nSizeInBytes <= sizeof( s_pUndefinedValue )
 Gl$HI
 Gp8Cpt
-Gt$8H
-Gt9Ft
 GxD8p
 G|$8L
 H SAUH
@@ -1730,7 +1732,6 @@ K~Je#>!
 L!d$(L!d$@D
 L!|$(L!
 L$ A+
-L$ D;L$D}
 L$ E;
 L$ Hc
 L$ I;
@@ -1773,8 +1774,10 @@ L$8E3
 L$8H3
 L$8Mc
 L$8fI
+L$<E3
 L$<fB
 L$@;|
+L$@Di
 L$@H3
 L$@Hc
 L$@I;
@@ -1995,7 +1998,6 @@ Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.cr
 Physics
 Physics shape '%s'/'%s' generated invalid verts
 PhysicsBuilderMgr001
-Pl7%yL
 Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
@@ -2063,6 +2065,7 @@ SATAUH
 SATAVH
 SAVAWH
 SA|X=G
+SO`- 
 SSE and SSE2 are required.
 SUATH
 SUVWATAUAVAWH
@@ -2129,10 +2132,10 @@ Start PC
 StatsService_001
 SteamAudio001
 Sunday
-T	V_stricmp_fast
 T$ D8
 T$ fD
 T$$A9
+T$$D;T$D}
 T$(E;
 T$(E;Q
 T$(H;
@@ -2150,7 +2153,6 @@ T$@A;A
 T$@D;N,
 T$@E3
 T$@E;S
-T$@Lc
 T$HA;W
 T$HLcL$0E3
 T$PE3
@@ -2170,6 +2172,7 @@ T$dLc0D
 T$hA;
 T$hE3
 T$hI;
+T$hLc
 T$pE#
 T$pH;
 T$pHcL
@@ -2227,13 +2230,14 @@ USWATAVAWH
 UT$@A
 UUUUUU
 UUUUUUUUH
-UVATAUAWH
 UVAVH
 UVWATAUAVAWH
 UVWATAVAWH
+UVWATAVH
 UVWATH
 UVWAUAVH
 UVWAUAWH
+UVWAUH
 UVWAVAWH
 UVWAWH
 UWATAUAWH
@@ -2260,6 +2264,7 @@ Unknown result from WaitForSingleObject (%d)
 UnmapViewOfFile
 Unrecognized enumerator value %d
 Unsupported KV3 basic type '%s' (%d)!
+UtfV,
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
@@ -2317,6 +2322,7 @@ VWATAVH
 VWAUAWH
 VWAVH
 VWAWH
+VWebm001
 V_DoubleToString_Unsafe
 V_FloatToString_Unsafe
 V_GetFileExtension
@@ -2357,6 +2363,7 @@ VertexPaintTintColor
 VisBuilder_001
 Vrad3_001
 VxHcD
+W	V_stricmp_fast
 WALKABLESEED
 WARNING: Failed to load %s: %s
 WARNING: VNotify abandoned after too many attempts:
@@ -2714,7 +2721,6 @@ hA_A^A]A\_^][
 hNavHulls.HasData()
 hNavHullsPresets.HasData()
 hResource.IsLoaded()
-hUSc8
 host unreachable
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
@@ -2819,7 +2825,7 @@ m_bUseShadowFastPath
 m_nAsUint64 == 0
 m_nGenParamsIndex >= 0 && m_nGenParamsIndex < m_GenParams.NumAgentHulls()
 m_nIndex >= 0 && m_nIndex < m_nArrayElementCount
-m_nIndex >= 0 && m_nIndex < m_pKV3->GetMemberCount()
+m_nIndex >= 0 && m_nIndex < m_nMemberCount
 m_nMode == MODE_NONE
 m_nodeStack[ 0 ] == m_pTree->m_nRootNode
 m_normal.LengthSqr() != 0.0
@@ -2854,7 +2860,7 @@ mwtMH
 n03>Pu
 n<	fE
 n<	fG
-nBaseEdge >= 0 && nBaseEdge < rBasePoly.m_nVerts
+nBaseEdge >= 0 && nBaseEdge < pBasePoly->m_nVerts
 nCellContentsIndex < CellContentsCount( x, y )
 nCellsVertically < RC_SPAN_MAX_HEIGHT
 nClassBehavior == KV3TRANSFER_CLASS_UNIMPLEMENTED
@@ -3308,7 +3314,6 @@ xA^A]A\_][
 xA_A]A\[
 xA_A^_^][
 xOD;C
-xSE;H
 x_;G`}ZH
 x~fff
 yP9y<v

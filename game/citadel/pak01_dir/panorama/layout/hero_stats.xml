@@ -43,7 +43,7 @@
 					<Label class="StatsTypeLabel" text="#CitadelCategoryTech" />
 					<Panel class="SpiritContent">
 						<Panel id="SpiritStatsContainer" class="StatsContainer" />
-						<Panel class="TooltipOverride" onmouseover="UIShowTextTooltip( #Citadel_Hero_Stats_Tooltip_Spirit ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" />
+						<Panel class="TooltipOverride" onmouseover="UIShowCustomLayoutTooltip( SpiritStatTooltip, file://{resources}/layout/tooltips/citadel_tooltip_spirit_stat.xml ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideCustomLayoutTooltip( SpiritStatTooltip )" />
 					</Panel>
 				</Panel>
 				<Panel class="SpiritTooltipButton">

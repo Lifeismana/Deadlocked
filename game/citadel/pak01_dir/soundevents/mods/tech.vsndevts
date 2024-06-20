@@ -803,6 +803,7 @@
 		delay = 0.030000
 		volume_fade_out = 0.800000
 		vsnd_files = "sounds/mods/tech/glitch/curse_select_lp.vsnd"
+		vsnd_duration = 4.206372
 	}
 	Mods.Tech.Glitch.Deselect = 
 	{
@@ -819,6 +820,7 @@
 		pitch_modulation_max = 0.000000
 		delay = 0.030000
 		vsnd_files = "sounds/mods/tech/glitch/curse_select_end.vsnd"
+		vsnd_duration = 0.913175
 	}
 	Mods.Tech.Glitch.Select = 
 	{
@@ -835,5 +837,62 @@
 		pitch_modulation_max = 0.000000
 		delay = 0.030000
 		vsnd_files = "sounds/mods/tech/glitch/curse_select_start.vsnd"
+		vsnd_duration = 3.126145
+	}
+	Mods.Tech.Stasis.End = 
+	{
+		base = "Base.Mod.3d"
+		volume = 2.000000
+		volume_rand_max = 0.000000
+		volume_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch_rand_min = 0.000000
+		spread_min = 157.069397
+		spread_max_value = 1.000000
+		spread_max = 202.857147
+		spread_min_value = 0.000000
+		pitch_modulation_max = 0.000000
+		delay = 0.030000
+		block_event_name = ""
+		block_duration = -1.000000
+		hrtf_on = 1.000000
+		hrtf_mix = 1.000000
+		vsnd_files = "sounds/mods/tech/stasis/etherealshift_end.vsnd"
+	}
+	Mods.Tech.Stasis.Cast = 
+	{
+		base = "Base.Mod.3d"
+		volume = 2.000000
+		volume_rand_max = 0.000000
+		volume_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch_rand_min = 0.000000
+		spread_min = 157.069397
+		spread_max_value = 1.000000
+		spread_max = 202.857147
+		spread_min_value = 0.000000
+		pitch_modulation_max = 0.000000
+		delay = 0.030000
+		block_event_name = ""
+		block_duration = -1.000000
+		hrtf_mix = 1.000000
+		pitch = 0.900000
+		vsnd_files = "sounds/mods/tech/stasis/etherealshift_cast.vsnd"
+	}
+	Mods.Tech.Stasis.Active = 
+	{
+		base = "Base.Ability"
+		volume = 1.000000
+		mixer_mixlayer_to_set = "Ability-Dramatic"
+		mixer_mixlayer_amount_manual = 1.000000
+		mixer_set_mixlayer = 1.000000
+		mixer_set_mixlayer_for_perspective = 0.000000
+		volume_fade_out = 0.600000
+		hrtf_mix = 1.000000
+		spread_min = 0.000000
+		spread_max_value = 0.539185
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		vsnd_files = "sounds/mods/tech/stasis/etherealshift_active.vsnd"
 	}
 }

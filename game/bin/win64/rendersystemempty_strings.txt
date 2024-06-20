@@ -18,7 +18,6 @@
 	g_pMemAlloc
 	g_pThreadPool
 	kE>fvw
-	x3zh
 	|IHc
                           
         %3d %3d %3d %3d %3d %3d %3d %3d
@@ -151,8 +150,8 @@ $D9x<tN
 $Ib?s
 $L9x0
 $^fE;
-$e7AChj
 %.100s: Can not read TIFF directory
+%2-ef
 %A Is
 %GoU?*
 %d %d %d
@@ -223,8 +222,8 @@ $e7AChj
 %u (0x%x)
 &?PPPPPPP?
 &xr(*
+')8hc'
 ',=?k
-(	V_log2_uint
 ( ( m_nFlags & (TSPEC_VOLUME_TEXTURE|TSPEC_TEXTURE_ARRAY) ) != 0 ) || ( m_nDepth == 1 )
 ( ( m_nFlags & TSPEC_VOLUME_TEXTURE ) == 0 ) || ( ( m_nFlags & TSPEC_TEXTURE_ARRAY ) == 0 )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
@@ -262,6 +261,7 @@ $e7AChj
 (D$p;
 (HcC(M
 (L$ D
+(L$ H
 (L$0D
 (L$0Lc
 (L$@D
@@ -347,11 +347,11 @@ $e7AChj
 (|$0f
 (|$0fA
 (|$@D
+(|$@Hc
 (|$@I
 (|$@L
 (|$@f
 (|$PH
-(|$PHc
 (|$PI
 (|$Pf
 (|$`D
@@ -367,15 +367,14 @@ $e7AChj
 )D$ i
 )D$0E
 )D$0E8f
-)D$@E
 )D$@H
 )D$@fD
 )D$`M
 )D$pD
 )D$pfD
+)L$ E
 )L$ Hc
 )L$03
-)L$0E
 )L$PE
 )L$PH
 )L$PH;
@@ -383,7 +382,6 @@ $e7AChj
 )L$`f
 )L$`fD
 )L$pD
-)T$ E
 )T$ fD
 )T$PD
 )T$PfD
@@ -446,6 +444,7 @@ $e7AChj
 )|$0f
 )|$0fD
 )|$@A
+)|$@D
 )|$@E
 )|$@E3
 )|$@H
@@ -457,10 +456,9 @@ $e7AChj
 )|$`E
 )|B?d!
 *;Eot	;Ew
-*Du,l
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
-+	V_logd
++	V_log2_uint
 +C$Hc
 +D$8A
 +G$Hc
@@ -470,7 +468,6 @@ $e7AChj
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 , channels = 
 , height = 
 ,*/vu
@@ -483,7 +480,6 @@ $e7AChj
 ,W5y+
 ,X< w
 -BH>t
--I96t(I
 -adapter
 -autoconfig
 -autoconfig_level
@@ -511,6 +507,7 @@ $e7AChj
 -threads
 -tools
 -vulkan
+.	V_logd
 ..om?
 .00cfg
 .>PJ;I:qE>
@@ -673,6 +670,7 @@ $e7AChj
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
 /2GG>!B
 />58d%
 /TF<)VGy#WH
@@ -723,7 +721,7 @@ $e7AChj
 220323000000Z
 220801000000Z
 230714000000Z
-240613154218Z0/
+240620161300Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -747,11 +745,9 @@ $e7AChj
 6:%+H
 6I]Dc
 6OB,n_
-7	V_powd
 7&F|If
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8"3hrf
 80tWD
 8A\_^[
@@ -768,7 +764,6 @@ $e7AChj
 8b  16-May-2010
 8ke?;
 8vtext
-9	V_qsort
 9)~P3
 97tmD
 98t H
@@ -797,7 +792,7 @@ $e7AChj
 9s|~%H
 9t$Pu	
 9{\~9H
-:	V_qsort_s
+:	V_powd
 :>)*	v
 :>t6k'
 :ALPHD
@@ -805,6 +800,7 @@ $e7AChj
 :VP8 tP
 :VP8LtHD
 :VP8X
+;	V_powf
 ;.u1L
 ;?0123456789:;<=>?
 ;Cxr*H
@@ -815,6 +811,7 @@ $e7AChj
 ;L$<|
 ;\$p|
 ;|$8|
+<	V_qsort
 <	w	@
 < t=<	t9
 <0:08
@@ -833,8 +830,10 @@ $e7AChj
 <unknown multisample type
 <unknown>
 <utK@:
+=	V_qsort_s
 =SPB8u*
 =SPB8ue
+=X9~iib
 =imb;D
 =rIQU
 >0<0:
@@ -992,7 +991,6 @@ $e7AChj
 @A^_[
 @A^_^
 @A_A]A\_^
-@A_A]_^]
 @A_A^A\
 @A_A^A\_^[]
 @A_A^A\_^][
@@ -1118,13 +1116,13 @@ AUAWH
 AVAWH
 A\^[]
 A\_^][
-A]A\^]
 A]A\_^]
 A]A\_^][
 A]_^][
 A^A\_^[
 A^A]A\
 A^A]A\][
+A^A]A\^
 A^A]A\_]H
 A^A]A\_^
 A^A]A\_^[]
@@ -1156,7 +1154,6 @@ A_A^A]A\_^[]
 A_A^A]A\_^[]H
 A_A^A]A\_^]
 A_A^A]A\_^][
-A_A^A]]
 A_A^A]_]
 A_A^]
 A_A^^[
@@ -1345,7 +1342,6 @@ C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utlsoacontainer.
 C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
 C<;C4A
-C?TbX
 CByteswap::SwapBufferToTargetEndian
 CCIR601 sampling not implemented yet
 CCITT Group 3
@@ -1843,7 +1839,7 @@ D;c8|
 D;d$0r
 D;sHu
 D;t$0
-DATAH
+DATAI
 DBM&(
 DCT coefficient out of range
 DCT scaled block size %dx%d not supported
@@ -2107,12 +2103,11 @@ H!T$0D
 H*0"ZOW
 H+L$0f
 H-^Eu
-H2}!@
 H3N I
 H4IcH8H
 H9(tO
 H90u'
-H95=I
+H95-I
 H97u+A
 H98t$H
 H9G(t
@@ -2192,7 +2187,7 @@ Hc\$(M
 Hc\$0L+
 Hc\$XI
 Hc\$pI
-Hc] L
+Hc]0L
 Hc]wH
 Hc^XH
 Hcl$8
@@ -2212,7 +2207,6 @@ HostComputer
 HostStateMgr001
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-I	V_snprintf
 I+4$H
 I9Jhs
 I@H9k8u
@@ -2333,7 +2327,6 @@ IsValidIndex(elem) && IndexInRange( elem )
 IsValidIterator( it )
 IsValidLocale
 IsValidLocaleName
-J iwaU
 J%f%f%f%f%f%f%f%f
 J>@G_
 JFIF APP0 marker: version %d.%02d, density %dx%d  %d
@@ -2360,6 +2353,7 @@ K}*n:
 K~Je#>!
 L	B I
 L	G H;
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ H9
@@ -2657,7 +2651,6 @@ Not implemented yet
 November
 NumCols() <= V_ARRAYSIZE( s_DummyRow )
 NumberOfInks
-O	V_sscanf
 O!t/H
 O*9y]
 OF>;^
@@ -2771,6 +2764,7 @@ Quantization table 0x%02x was not defined
 Quantizing to %d = %d*%d*%d colors
 Quantizing to %d colors
 QueryPerformanceCounter
+R	V_sscanf
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -3020,7 +3014,6 @@ Success
 Sunday
 Suspension not allowed here
 SwizzlePlanarScanlineToInterleaved
-T	V_stricmp_fast
 T$ Ei
 T$ H9
 T$ H;
@@ -3148,7 +3141,7 @@ U8A8_
 UA>N0Wl
 UATAUAVAWH
 UATAUAVH
-UAUAVAWH
+UATAVAWH
 UAUAWH
 UAVAWH
 UHc~`H
@@ -3163,7 +3156,6 @@ USWATAUAWH
 UUUUD
 UUUUUU
 UUUUUUU
-UVATAUH
 UVATAVAWH
 UVAUAVH
 UVAVAWH
@@ -3210,6 +3202,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 V6E>`"(5
+VATAUAVH
 VAUAVH
 VAVAWH
 VApplication001
@@ -3249,6 +3242,7 @@ VWATAWH
 VWAUH
 VWAVH
 VWAWH
+VWebm001
 VZ#-DLU[3=h
 V_:X1:
 V_GetFileExtension
@@ -3293,6 +3287,7 @@ VsInputSignatureElement_t::Schema_VerifyBindingIsRegistered
 VsInputSignature_t
 VsInputSignature_t::Schema_VerifyBindingIsRegistered
 Vulkan
+W	V_stricmp_fast
 W%	s;M@
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
@@ -3366,7 +3361,6 @@ Z\>z8
 Zod(^?
 Zpm"U
 [	UoA
-[	V_strtoi64
 [*ncd>0
 [-&LMb#{'
 [D9`luUD9
@@ -3386,7 +3380,6 @@ Zpm"U
 \$ ULcA
 \$ UVATH
 \$ UVWATAUAVAWH
-\$ UVWAUAWH
 \$ UVWAVAWH
 \$ UWAWH
 \$ VH
@@ -3432,9 +3425,11 @@ Zpm"U
 \$pHc
 \$xu3M
 ])6M>&
+]1,@z
 ]>)2X
 ]J<0"0i3
 ]Lu*E;|$
+^	V_strtoi64
 ^<V7w
 ^RfN>
 ^oEZ_
@@ -3693,13 +3688,14 @@ fD9dD uA
 fD9dD uO
 fD9t$E
 fD9t$b
-fD;l$F}y3
+fD;l$V
 fE9,Fu
 fE98t'
 fG9$Ou
 fHcK0L
 fJBGo
 false
+fbR4oNI
 fffff
 ffffff
 fffffff
@@ -3757,7 +3753,6 @@ http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
 iG(1'
-iddFH
 identifier removed
 illegal byte sequence
 immediate
@@ -3818,7 +3813,6 @@ l$ VWAVH
 l$ VWH
 l$ fD
 l$(A+
-l$(E3
 l$(LcH
 l$(M+
 l$0E2
@@ -4307,9 +4301,9 @@ t;@8w
 t;LcF
 t?HcS
 t@9+u,9s
+t@H95
 t@McO4
 tBMcW<IcO@Lc
-tCH95~>
 tEHcR
 tFD9c
 tGH9[0u
@@ -4371,7 +4365,6 @@ u)HcB
 u,!T$(H!T$ 
 u1!D$0H
 u1fD9
-u2g+l
 u3HcH<H
 u4D9v
 u4I9}(
@@ -4485,6 +4478,7 @@ xSH;A
 xSH;H
 xSH;P
 x^j=|
+xiIKeR
 xlH;{
 xqH;A
 xqH;~
@@ -4602,7 +4596,6 @@ zY;>u:m
 ~gfff
 ~hMcnxE
 ~qj#k"
-~rfff
 ~t&LN
 ~|E9e
 ~}6Hc
