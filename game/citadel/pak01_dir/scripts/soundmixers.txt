@@ -860,6 +860,58 @@
 			duck_to_percent = 100
 			ducker_threshold = 20
 		},
+		{
+			name = "Mods-Pla"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
+		{
+			name = "Mods-Tea"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
+		{
+			name = "Mods-Opp"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
+		{
+			name = "Mods-Neu"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
 	]
 	SoundMixers = 
 	{
@@ -1392,6 +1444,38 @@
 				mute = 0.0
 				lvl = 1.0
 				dsp = 0.3
+			},
+			{
+				mixgroup = "Mods-Pla"
+				vol = 0.75
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.5
+			},
+			{
+				mixgroup = "Mods-Tea"
+				vol = 0.5
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.5
+			},
+			{
+				mixgroup = "Mods-Opp"
+				vol = 1.0
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.5
+			},
+			{
+				mixgroup = "Mods-Neu"
+				vol = 0.5
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.5
 			},
 		]
 	}
