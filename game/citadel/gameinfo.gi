@@ -95,7 +95,7 @@
 		"VulkanAdditionalShaderCache" "vulkan_shader_cache.foz"
 		"VulkanStagingPMBSizeLimitMB" "128"
 		"GraphicsPipelineLibrary"	"1"
-		"VulkanOnlyTestProbability" "20"
+		"VulkanOnlyTestProbability" "0"
 		"VulkanDefrag"				"1"
 		"MinStreamingPoolSizeMB"	"1024"
 	}
