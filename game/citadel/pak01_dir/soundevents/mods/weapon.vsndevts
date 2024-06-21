@@ -645,4 +645,14 @@
 		vsnd_files = "sounds/mods/general/use_weapon.vsnd"
 		vsnd_duration = 3.630408
 	}
+	Mods.Weapon.ActiveReload.Success = 
+	{
+		base = "Base.Mod"
+		vsnd_files = "sounds/mods/weapon/active_reload/item_active_reload_success.vsnd"
+	}
+	Mods.Weapon.ActiveReload.Fail = 
+	{
+		base = "Base.Mod"
+		vsnd_files = "sounds/mods/weapon/active_reload/item_active_reload_fail.vsnd"
+	}
 }
