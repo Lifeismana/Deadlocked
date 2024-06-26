@@ -259,7 +259,6 @@
 	Objective
 	PFT_SOUND
 	PartyID_t
-	Pp<J
 	Private script scope:
 	Public script scope:
 	Questionable extension field!
@@ -753,13 +752,11 @@
  (%s)
  (+%.2f)
  (08@HPX`hpx
- (08@HPX`jP
+ (08@HPX`j
  (08@HPXb
- (08@HPZP
+ (08@HPZ
  (08@HR
  (08@J
- (08@JP
- (0:P
  (0X`hpz
  (Dirty Animation)
  (Eluded)
@@ -794,7 +791,6 @@
  --> 
  .!p*
  ... }
- .PlO
  //!"#$%&'()/*///+,-/.
  0"r$4&
  9P(u>L
@@ -971,13 +967,10 @@
  Hc1H
  Hc1I
  Hc1L
- Hc5-
- Hc53O
- Hc5=
- Hc5M
- Hc5U
- Hc5]
- Hc5k
+ Hc5?
+ Hc5e
+ Hc5m
+ Hc5u
  Hc9E3
  Hc9H
  Hc9I
@@ -1274,6 +1267,7 @@
 !CoJobMgr().IsImplClassShuttingDown( k_ECoJobImplClass_GCSDKJob )
 !Custom game event manager
 !D$ F
+!D85}[&
 !D]#t^;Gc
 !GetModifierProp() || GetModifierProp()->CountModifierInLists( this ) == 0 || GetModifierProp()->m_bDestructing
 !GetMoveParent()
@@ -3094,11 +3088,13 @@ $~GHc
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 (%.1f, %.1f, %.1f) -- Node ID: %d; type %d
-(%.f"
 (%0.2f) %s
 (%0.2f): %s
 (%0.2f,%0.2f,%0.2f)
 (%0.3f) '%s', vDeltaPos = (%0.3f, %0.3f, %0.3f)
+(%CN=
+(%IL=
+(%^f"
 (%d %d %d %d)
 (%d) %s
 (%d) ------> %s ( HELD BY %s ) 
@@ -3111,9 +3107,6 @@ $~GHc
 (%g %g %g %g)
 (%g %g %g)
 (%g %g)
-(%qE 
-(%sM=
-(%yK=
 (("**,
 ((6"8(:,<*>
 ((int64)nRepeatIndex - nLastRepeatIndex) >= 1
@@ -3124,9 +3117,8 @@ $~GHc
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (,$t6D
-(-?,y
-(-??"
-(-@Z*
+(-;zi
+(-o?"
 (.CMsgSteamLearn_GetAccessTokens_Response"r
 (.CMsgSteamLearn_SnapshotProject_Response"-
 (0'yX
@@ -3134,6 +3126,7 @@ $~GHc
 (0x%08X)'??'
 (1O\,n
 (;s |
+(=?9w
 (A;>|
 (ACTIVE)
 (A]A\^[
@@ -3701,6 +3694,7 @@ $~GHc
 (|$pv
 )	~,Vg
 )!)#)?)G)])e)i)o)u)
+)!w=0J
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
 )#GameUI_Disconnect_PureServer_ClientExtra
 )#GameUI_Disconnect_RemoteProblem_BadCrypt
@@ -4014,7 +4008,7 @@ $~GHc
 )t$@@2
 )t$@A
 )t$@D
-)t$@D9=g'
+)t$@D9=
 )t$@E
 )t$@E3
 )t$@H
@@ -4554,6 +4548,7 @@ $~GHc
 .%.-.3.7.9.?.W.[.o.y.
 .%X&1
 .%llu
+.%qE$
 .)55L
 ... and no start position
 ....................
@@ -4565,8 +4560,8 @@ $~GHc
 .0taH
 .0tqH
 .1zEuC
-.5Fiw
-.5]U[
+.5*jw
+.51EZ
 .6<A>Y
 .7Z!L
 .7t H
@@ -11462,12 +11457,13 @@ $~GHc
 .|$tz
 .~(u H
 /	V_logf
+/%'~v
+/%4y*
 /'/)/A/E/K/M/Q/W/o/u/}/
-/-?0h
-/-B8h
-/-e7h
-/-o4h
-/-w|v
+/-	7h
+/-,6h
+/--0h
+/-W3h
 ///////
 /////////////
 /////////////////////////////////////////
@@ -11480,18 +11476,22 @@ $~GHc
 /0wcA
 /2GG>!B
 /4(v%H
-/5#/*
-/5[\#
-/5k*	
-/5m#"
-/5rd]
+/5 12
+/5$3w
+/5*?w
+/5212
+/54)/
+/5;~v
+/5=$"
+/5Be]
+/5JgN
+/5k\#
 /8r H
 /8s{H
 /<GE3
-/=^>w
-/=h,h
-/=zMw
-/=|Mw
+/=VBw
+/=XBw
+/=~@O
 />58d%
 /@ soA
 /@ voA
@@ -11659,7 +11659,7 @@ $~GHc
 0123456789abcdefghijklmnopqrstuvwxyz
 02V8[
 08@HP
-08@HRP
+08@HR
 0: Draw nothing at waypoints; 1: Draw a tick mark at waypoints; 2: Draw a shape around waypoints.
 0;Q5[
 0><[cZUg^>
@@ -11796,7 +11796,6 @@ $~GHc
 0tHA+
 0tU+xc:
 0ufH9o(u`H
-0vD~J
 0w0c1
 0}0i1
 1 = draw labels of waypoint types during ai_path_draw_active
@@ -12048,7 +12047,7 @@ $~GHc
 24.CUserMsg_ParticleManager.SetSceneObjectTintAndDesat
 24.CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240624154530Z0/
+240626034147Z0/
 241009235959Z0a1
 25.CMsgServerSignoutData_DetailedStats.TimeSample.Stats
 25.CSource2Metrics_MatchPerfSummary_Notification.Client
@@ -12482,7 +12481,6 @@ $~GHc
 9)~P3
 9+~)L
 9+~.L
-9-Hh*
 9.u(H
 90T1@I
 90t&H
@@ -12493,6 +12491,8 @@ $~GHc
 93t#H
 93~j3
 94(t H
+9504.
+95Ma+
 97~HH
 98Shu4L
 98t H
@@ -12507,13 +12507,6 @@ $~GHc
 9:dzGN
 9;uCA
 9<(t,H
-9=-7,
-9=-D,
-9=-J,
-9=AkH
-9=M=,
-9=m:,
-9=mG,
 9>powf
 9>~ZH
 9?uR3
@@ -12709,10 +12702,9 @@ $~GHc
 ;.uNA
 ;2(-/
 ;3}8H
-;5`AZ
 ;5jNf
 ;8uXH
-;=l_L
+;=QjH
 ;>4>se=
 ;>}!f
 ;>}oD
@@ -12833,6 +12825,7 @@ $~GHc
 ;w }_
 ;w<}=fA9\
 ;w<}}f9Y
+;wy:=
 ;{,}"H
 ;{t;H
 ;{tGH
@@ -13376,7 +13369,7 @@ $~GHc
 ?ff&?333?
 ?k_EGCMsgInitiateTradeResponse_Free_Account_Initiator_DEPRECATED
 ?kxG2)
-?m_bPointTrace
+?m_previewModel
 ?r>6;
 ?srJO
 ?t[E3
@@ -13418,11 +13411,12 @@ $~GHc
 @.reloc
 @/XXH
 @08@HPX`hpx
-@08ND~J
 @0HcB
 @1h!L
 @2A2G"$
 @2{Z@
+@6@}O
+@6p|O
 @8(t#H
 @8(t1
 @8(t`
@@ -13447,9 +13441,9 @@ $~GHc
 @84/u
 @848u
 @84:u
-@85(J
-@85AL
-@85lP
+@855Y
+@85G"(
+@85Q]
 @88t3I9
 @88t4I
 @88t5H9{0u
@@ -13461,7 +13455,8 @@ $~GHc
 @8;tb3
 @8<(u
 @8<0u
-@8=&b
+@8=O6'
+@8=SB
 @8>tO3
 @8>uAH
 @8HcB
@@ -13554,10 +13549,11 @@ $~GHc
 @8~It*@8~Hu$
 @8~It/@8~Hu)
 @8~It1@8~Hu+
-@:@c#
+@:03)
 @<:B<u
 @<:nq
 @>%>b
+@>0^O
 @@33s?
 @@HcB ;B$u
 @@Lcs 
@@ -13651,7 +13647,7 @@ $~GHc
 @H9AhH
 @HHcB$;B(u
 @HPX&I
-@HPX`hv 
+@HPX`hv
 @Hc13
 @HcA D
 @HcA H
@@ -14024,14 +14020,12 @@ $~GHc
 @b;zO]
 @dKb]
 @fD9d
-@fD~J
 @fE9d
 @fE9l
 @fff>fff>fff>fff>
 @ffffff
 @h!Aq8
 @m_hEffect
-@nD~J
 @pHcL
 @pJcL
 @player_start_teleport_destination
@@ -14283,7 +14277,6 @@ A@L;B
 A@d0I
 A@tkf
 AA Compromise
-AA:P+
 AABBDirection
 AABB_t
 AABB_t::Schema_VerifyBindingIsRegistered
@@ -21782,6 +21775,7 @@ CCitadel_Modifier_Rutger_Pulse_Aura_VData
 CCitadel_Modifier_Rutger_Pulse_Aura_VData::KV3TransferLoad_Impl
 CCitadel_Modifier_Rutger_Pulse_Aura_VData::KV3Transfer_DefaultKeys_Impl
 CCitadel_Modifier_Rutger_Pulse_Aura_VData::Schema_VerifyBindingIsRegistered
+CCitadel_Modifier_Rutger_Pulse_Target
 CCitadel_Modifier_Rutger_Pulse_Target::Schema_VerifyBindingIsRegistered
 CCitadel_Modifier_Rutger_Pulse_VData
 CCitadel_Modifier_Rutger_Pulse_VData::KV3TransferLoad_Impl
@@ -34018,6 +34012,7 @@ D8+t[3
 D8,(u
 D8,0u
 D8,;u
+D8-K+
 D8.tb3
 D8.uBH
 D80t4
@@ -34033,7 +34028,8 @@ D847u
 D848u
 D84:u
 D84>u
-D85""#
+D85V -
+D85|V
 D86t]3
 D87tsL
 D87tvL
@@ -34171,8 +34167,8 @@ D8}xtCH
 D8}xu,L
 D9 tF
 D9"fA
-D9%.1
-D9%~7
+D9%.8
+D9%ip
 D9&~aH
 D9(t.
 D9(t/H
@@ -34180,13 +34176,15 @@ D9(u3I
 D9(uGH
 D9)t[
 D9*u3H
-D9-].
 D91~;H
 D94A8
+D95:U)
 D97~U
 D98t8H
 D98tUI
 D9;urH
+D9=9>
+D9=v>
 D9>~+A
 D9@(t
 D9@(|
@@ -35440,6 +35438,7 @@ E jc"
 E u1H
 E!-<p
 E!M$E!E A!U
+E%jMN
 E'D8)t
 E(;E0
 E(;E8
@@ -38034,7 +38033,6 @@ FV|FgUV
 FXHc\
 FXfD94Xt+H
 FXfD9<Xt7H
-F[DEAD]
 Facial Expression
 FacingPercentage
 Factor 1: %f
@@ -39670,18 +39668,10 @@ H9)uUH
 H9+t	H
 H9+tf
 H9+uEA
-H9-!(
-H9-9X
-H9-=7,
-H9-=D,
-H9-=J,
-H9-TX
-H9-]=,
-H9-]H
-H9-`W
-H9-q(
-H9-}:,
-H9-}G,
+H9--;,
+H9--H,
+H9-[)
+H9-rI
 H9.u%H
 H9/t	H
 H9/tgH
@@ -39698,18 +39688,13 @@ H90uk
 H92tBA
 H93t	H
 H93t"H
-H95'x:
-H95-#^
-H959=
-H95Bx:
-H95H#^
-H95Pm
-H95Sw:
-H95Y"^
-H95Zg
-H95tm
-H95w9
-H95yv
+H95	#^
+H95$n
+H957B_
+H959w
+H95WU
+H95g9
+H95lQ
 H97u+A
 H98t1
 H98t2
@@ -39720,11 +39705,8 @@ H9;t	H
 H9;tlH9y
 H9;u3
 H9;uGH
-H9=	?
-H9=!S
-H9=Z6
-H9=jf
-H9=u?
+H9=%@
+H9=ea+
 H9>t$H
 H9>u/H
 H9A s
@@ -40326,21 +40308,22 @@ Have Path
 HbAta
 Hc)E3
 Hc+;k
-Hc-&/
-Hc-.j
-Hc-O@
-Hc-gR
-Hc-wT
+Hc-'U
+Hc-7P
+Hc-DO
 Hc.;n
 Hc/;o
 Hc/Lc
 Hc/Lc3H
 Hc3;s
 Hc3L+
-Hc5*C
-Hc5DD
-Hc5ZE
-Hc5tF
+Hc5$G
+Hc5(+
+Hc5:H
+Hc5Ov
+Hc5TI
+Hc5jJ
+Hc5z?
 Hc7;w
 Hc7E3
 Hc8a"
@@ -44440,6 +44423,7 @@ K[C7W+
 K\LcCX
 Kc4<H
 Kc<7L
+Kdcup
 Keep a history of all instructions run on a per graph basis.
 Keep recoil constant even with fire rate changes.
 Keep this many old copies in history of autosaves and quicksaves.
@@ -44558,7 +44542,7 @@ L$ H	x
 L$ H	x(
 L$ H3
 L$ H9
-L$ H95
+L$ H95jP
 L$ H;
 L$ Hc
 L$ Hk
@@ -44679,7 +44663,7 @@ L$0E2
 L$0E3
 L$0E;
 L$0H3
-L$0H95
+L$0H95QX
 L$0H;
 L$0H;K
 L$0Hc
@@ -45029,14 +45013,12 @@ L9+tJ
 L9+uCH
 L9+uEH
 L9,:H
-L9-!lf
-L9-/s
-L9-X+
 L9.t	H
 L90t>
 L90tW
 L92tDA
 L93t	H
+L95iq
 L97t{L
 L98t	H
 L98uC
@@ -45045,10 +45027,9 @@ L99uKA
 L9:t[
 L9;t	H
 L9;u	H
-L9=	;
-L9=,kK
-L9=GkK
-L9=djK
+L9=C;
+L9=^;
+L9=d:
 L9>uEH
 L9?t	H
 L9?tb
@@ -45260,8 +45241,6 @@ L9~8u$
 L9~@u
 L9~Pt	M
 L9~`u
-L;5@n
-L;5oj
 L;9t#H
 L;A r
 L;D$Xu
@@ -45412,7 +45391,7 @@ Lc3A+
 Lc3D;s
 Lc3Hc
 Lc40L
-Lc5t0
+Lc5$1
 Lc6A+
 Lc6D;v
 Lc6Hc
@@ -48480,12 +48459,12 @@ P-256
 P-384
 P-521
 P08@J
-P08Jp
-P08ND~J
 P0HcC(H
 P1	98"
 P2A2T$"
 P2A2W"
+P6 \O
+P6@wO
 P8H9|$ht
 P8H9|$pt
 P8H=vmdl
@@ -48874,7 +48853,7 @@ PVS is shared between teams
 PVSManagerGameSystem
 PVSModifier
 PXD9l$0u
-PXHc-QT
+PXHc-
 PX`hpx
 P_^]H
 P`9(tLH
@@ -49209,7 +49188,6 @@ Please specify 0 or 1 with the -stream Parameter
 Please wait for broadcast to start ...
 Pm8A?
 PmR"H?
-PnD~J
 Point entity.
 Point under crosshair
 PointAtEntity
@@ -49463,7 +49441,6 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Pushing entity (%s) that has a parent (%s)
 Put all physics in all the worlds to sleep
-Px#pY]
 PxH9(t
 PxL9`
 PxL;(t
@@ -54679,21 +54656,19 @@ T$|s\
 T%d %s
 T(<A#
 T14A#
-T5!WW
-T52NN
-T52vL
-T5I|W
-T5QvL
-T5oWj
-T5tWa
-T5yON
-T5}uk
+T5 PN
+T5#QN
+T5-$Z
+T57FN
+T5JQN
+T5^RN
+T5gMN
 T61STRING
 T72[t
 T8 fA;
 T8"fA;
 T;$M;
-T=Hbh
+T=!?w
 TAG NAME: %s | BOUND: %s, REFERENCED: %s
 TARGET
 TASKSTATUS_COMPLETE
@@ -55724,6 +55699,7 @@ U t	Ak
 U$qk.
 U).ovc
 U)l:T^8rv
+U+[1Z
 U,E3M
 U-olL
 U79Pc
@@ -56721,18 +56697,16 @@ V~~Vq
 W	V_stricmp_fast
 W D#?D#o
 W"Fe~
+W%0z?
 W'6S`
-W-Xkf
 W3i+,
-W5'3$
-W54&A
-W5:sN
-W5bi"
+W573$
+W5ri"
+W5~[h
 W8uDH
 W9QHI
 W;()f
 W=AlE3
-W=H5B
 W>peSp>9
 W@H1G@A
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.
@@ -57170,11 +57144,10 @@ X VWAWH
 X!;3; 
 X!t5~
 X!}}p|u
-X%*Mw
-X%=1w
-X%LoQ
-X%R:w
 X,,tX,,t4
+X-ME=
+X-se\
+X-tE=
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X0Hc@(H
 X400Name
@@ -57291,8 +57264,10 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
-X5r-K
-X5x4M
+X52.K
+X5A5M
+X5H9V
+X5K-J
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -57413,7 +57388,6 @@ X_^[]H
 X_^[]I
 X_^][
 X`HcHXH
-X`hrP
 Xd$4f
 Xd$HD
 Xen Ambient: Food Dig
@@ -57459,38 +57433,43 @@ X|$XA
 X|$`fA
 X~ '.
 Y	V_strlower_fast
-Y%91w
-Y%Gza
-Y%~{v
+Y%PyM
 Y(L@L
-Y-!@~
-Y-P~D
+Y-U^E
+Y-gG!
+Y-p]E
 Y0HcR
 Y0u3H
-Y5(;)
+Y5(B=
 Y5)0D
-Y5/C`
-Y54Pk
+Y5)O^
 Y54f3
-Y5E9<
-Y5G~D
-Y5HuL
-Y5J-%
-Y5Jzh
-Y5O{6
-Y5TE;
-Y5cd#
-Y5e-Z
-Y5iN^
-Y5n4M
+Y57,z
+Y575M
+Y5=ds
+Y5N&t
+Y5R]$
+Y5U9<
+Y5WeX
+Y5^fM
+Y5d+z
+Y5dE;
+Y5ibs
+Y5l`X
+Y5r``
+Y5sd#
 Y89X8t>
 Y9"SD
 Y93a=7c@
 Y;C;8V
 Y=-l3
-Y=3HV
-Y=Wd#
-Y=nIo
+Y=.Jo
+Y=Oya
+Y=R[[
+Y=d^O
+Y=gd#
+Y=j``
+Y=jfM
 Y>kX>M
 YD$ A
 YD$ H
@@ -57665,6 +57644,7 @@ ZwKiZwKi
 [Bot Director Cmd] Team[%d] given %d gold   
 [Bot]%s
 [C:%u:%u]
+[DEAD]
 [Default] Determine a lifespan based on the warning/error state of the group
 [Default] General information
 [Demo] Animation Write Buffer Overflow
@@ -58153,13 +58133,12 @@ ZwKiZwKi
 \$xu3H
 \$xu3M
 \%02X
-\%3}v
+\%Xu+
 \1kYL
 \43n7
 \5RF/
-\5SEl
-\5_9o
-\=/]"
+\=?]"
+\=w>w
 \>4Hc]w9\>8t
 \D$ H
 \D$0H
@@ -58206,7 +58185,6 @@ ZwKiZwKi
 \\$xH
 \\MVT
 \^c$j
-\cfOmf8t'}
 \d$(H
 \h	.L
 \h	.M
@@ -58239,6 +58217,7 @@ ZwKiZwKi
 ] |EH
 ]"D9}
 ]$D;E$
+]%-]W
 ]&@+fk:
 ]&g''}
 ](IcE H
@@ -58248,11 +58227,15 @@ ZwKiZwKi
 ]09]H|EH
 ]0tTH
 ]1h=bfz
-]5XuL
+]5*cf
+]5-EQ
+]5.PN
+]5iQN
 ]8HcE0H
 ]8d$@
 ]:\|^
 ]<fA;
+]=Qh[
 ]>)2X
 ]?33s?
 ]@Icu8H
@@ -58280,7 +58263,6 @@ ZwKiZwKi
 ^ I;~8u
 ^ Icv
 ^ tLA
-^%!/%
 ^(I9^
 ^,tyI
 ^.om5r
@@ -58417,6 +58399,9 @@ _}eOk
 `-I	=S'\
 `.rdata
 `28)fk
+`6 SO
+`6`~O
+`6p}O
 `8Lcs 
 `:zQF
 `<`tw
@@ -58514,7 +58499,6 @@ _}eOk
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
-`fD~J
 `fPw.
 `generic-class-parameter-
 `generic-method-parameter-
@@ -58529,7 +58513,6 @@ _}eOk
 `managed vector copy constructor iterator'
 `managed vector destructor iterator'
 `n#%c
-`nD~J
 `non-type-template-parameter
 `o_je
 `omni callsig'
@@ -58571,7 +58554,6 @@ a2i_ASN1_INTEGER
 a2i_ASN1_STRING
 a2i_GENERAL_NAME
 a7hIw
-aBvD~J
 aD87tJH
 aD9w@~PA
 aE%d0
@@ -60000,6 +59982,7 @@ c8HcCP
 c?FA@s}
 cACertificate
 cC#`#
+cH<:6
 cHE8$.u
 cMessageInfos < SHRT_MAX
 cMicrosecondsToSleep > 0
@@ -62279,7 +62262,6 @@ drawline
 draws footstep/foley events that are heard or not heard
 drop_position
 drop_rate_bonus
-dropitem
 dsa not implemented
 dsa routines
 dsaEncryption
@@ -63192,7 +63174,6 @@ eye_angles
 eyes_follow
 eyj5yR
 ezd<f
-f	-a[X
 f	rixZ
 f fE;
 f!D$*
@@ -63234,10 +63215,12 @@ f9,pu
 f9,~u
 f9/tR
 f93t`
+f95J\X
 f99tj
 f9<Fu
 f9<H}
 f9<Ju
+f9=KU
 f9>t{
 f9A u
 f9A\}0f
@@ -63355,6 +63338,7 @@ fC94Qu0
 fC94Su?
 fC94wu
 fChance > 0.0f && fChance <= 1.0f
+fD	57+T
 fD!#L
 fD!3L
 fD!;H
@@ -63410,7 +63394,6 @@ fD98tE
 fD98u
 fD9;u
 fD9;|
-fD9=@+T
 fD9@(u
 fD9D3
 fD9DH
@@ -64821,11 +64804,10 @@ iEntity >= 0
 iFFp}A
 iFH9-
 iFH9-(
-iFH9-(#
 iFH9-H
-iFH9-H&
 iFH9-h
-iFH9-h)
+iFH9-h#
+iFH9-xt\
 iGroup
 iHu H
 iILV]
@@ -66724,7 +66706,6 @@ l$@Hc
 l$@Hc+;k
 l$@Hc+H
 l$@Hc-
-l$@Hc-3
 l$@Hch(;h8
 l$@Hco
 l$@Hk
@@ -66845,7 +66826,7 @@ l$X~!H
 l$\D9n
 l$\Lcd$H
 l$\fD
-l$`;-
+l$`;-~m4
 l$`D9l$p|LH
 l$`D9l$p|NH
 l$`D;
@@ -69619,6 +69600,7 @@ m_bPlayerSelectable
 m_bPlayerTargetFOVTrueCone
 m_bPlaying
 m_bPlayingIdle
+m_bPointTrace
 m_bPositionRelativeToOtherEntity
 m_bPostSpawnUseAngles
 m_bPrecomputedFieldsValid
@@ -73769,7 +73751,6 @@ m_pprevious
 m_preferredCarryAngles
 m_prevLocalAngles
 m_prevSample
-m_previewModel
 m_previewParticle
 m_programBuffer
 m_projectileInfo
@@ -77233,6 +77214,7 @@ o0H9o
 o0L9s0t
 o1+v3
 o2i_ECPublicKey
+o3#/_|
 o8HcE
 o8IcGPL
 o8Lcs 
@@ -77652,17 +77634,15 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^D~J
+p08@H^
 p0Hc@(M
 p0R^G'
 p7M}f
 p88Hp88H
 p;Y>u
-p>D~J
 p@0pqE5tsO?|1
 p@HPX`h
 pA;T0
-pACCitadel_Modifier_Rutger_Pulse_Target
 pA\^]
 pA\_[
 pA\_^[]
@@ -77884,7 +77864,6 @@ pExistingVData->m_nScope == nScope
 pExtensionWithDot[ 0 ] == '.'
 pExtentOut
 pF;D	
-pF@mO
 pField
 pField == pFieldBase + nFields
 pField->fieldSize == 1
@@ -77912,6 +77891,7 @@ pGroupName && pGroupName[0]
 pHandler
 pHandler != this
 pHandler == &g_EntitySaveRestoreBlockHandler || (m_Handlers.Count() >= 1 && m_Handlers[0] == &g_EntitySaveRestoreBlockHandler)
+pHc-9
 pHelper
 pHhXpHhX
 pHitEntity
@@ -78865,7 +78845,6 @@ playing_commentary
 playoverscript
 plays for local player attacker dealing damage with this ability
 plays for local player victim taking damage from this ability
-pnD~J
 pnInputBones
 pnOutputBones
 point
@@ -79759,7 +79738,6 @@ s UWAVI
 s WATAUAVAWH
 s WAVAWH
 s f95
-s f95+[X
 s u!H
 s!@8s"t
 s!JcD
@@ -81595,8 +81573,8 @@ t!D9@
 t!D9P
 t!D9k
 t!D;n
-t!H95
-t!H9=
+t!H95E
+t!H9=8
 t!H9C
 t!Hc;;{
 t!HcC
@@ -81664,7 +81642,7 @@ t$ L9?t	H
 t$ L;
 t$ Lc
 t$ Lc3A
-t$ Lc5
+t$ Lc5y
 t$ Lcs
 t$ M;
 t$ UATAUAVAWH
@@ -81905,7 +81883,7 @@ t$HA_A^A]A\_
 t$HD#
 t$HD8
 t$HD8upu
-t$HD9=s
+t$HD9=
 t$HE#
 t$HE3
 t$HE;
@@ -82253,6 +82231,7 @@ t0{r)
 t198~)H
 t1@8{[u+H
 t1D8%
+t1D8%<
 t1E9fPt
 t1HcA@E3
 t1Hc}
@@ -82429,8 +82408,8 @@ tGfff
 tH@8=
 tHIcm
 tHLcp
-tHfD9%S
-tI@8=
+tHfD9%
+tI@8=7p%
 tID80tDH
 tID9@
 tIHcA
@@ -82471,7 +82450,7 @@ tND9F
 tNHcH
 tNMcPHA
 tNfA;
-tO@8=1k%
+tO@8=
 tOHcF
 tOMcw
 tPA;G
@@ -82541,14 +82520,14 @@ tW~U@2
 tX@8}`uRE3
 tXD8u0uRE3
 tXD98tSI
-tXH95
+tXH95?
 tXH99uSH
 tXL9g
 tXfff
-tY@8=5o%
+tY@8=
 tYD8 tT3
 tYE8.tTA
-tYH955
+tYH95
 tYfff
 tZD8chuTL
 tZD9@
@@ -82562,8 +82541,8 @@ t[@8}guUE3
 t[A9H
 t[A9P
 t[E9}
-t[H9=
-t\H95
+t[H9=W@+
+t\H95r
 t\Ic<$Hc
 t\Ic?
 t]D9@
@@ -82575,7 +82554,8 @@ t]M;o
 t]v[@2
 t^@8.tY3
 t^A9I
-t^H95
+t^H95X
+t^H95\
 t^HcB
 t^HcC
 t^~\2
@@ -82908,7 +82888,7 @@ tj<jtV
 tj@8<.tdL
 tjD8o$t@H
 tjD8u0udE3
-tjH95G
+tjH95
 tjxSA
 tk8_hu
 tk@8/u
@@ -83166,7 +83146,7 @@ tsH9sHumH
 tsHcI
 tsHcN
 tsIc7
-tsL9%8
+tsL9%
 tsa name mismatch
 tsa untrusted
 tsfff
@@ -83177,7 +83157,7 @@ ttD90toH
 ttL9{0u
 tuA8] uoI
 tuD9C
-tuL9=Q
+tuL9=
 tuL9k t7H
 tupleOffset < element.count
 turbo_mode
@@ -83257,7 +83237,7 @@ t|A;@(uvH
 t|H9;uwD
 t|McP83
 t}D9@
-t}D;5=
+t}D;5M
 t}E9~
 t~H9}Pt_H9{
 t~fE;
@@ -83318,7 +83298,7 @@ u'L9Z
 u'f9l
 u'f9lH
 u'uJM
-u(D8-p
+u(D8- 
 u(H9C0u
 u(L90t#H
 u(fA;
@@ -83605,7 +83585,6 @@ unimplemented type:
 uninitialized
 uninterpreted_option
 union 
-unique integer ID of this ping wheel message
 uniqueMember
 unique_target
 unit_status_offset
@@ -84502,6 +84481,7 @@ x0Hc@(H
 x121Address
 x2IcF I
 x3HcC
+x3km9H
 x4;Fh}/H
 x4;Q }/H
 x4;Y(}/;Y<
@@ -84605,11 +84585,10 @@ xp_orb_vault
 xqH;A
 xrJ:DCG
 xxD8kDu1D8kEu
-x|9=6#
-x|9=C
-x|9=R
-x|9=Z
-x|9=m
+x|9=C+
+x|9=N2
+x|9=Q
+x|9={$
 x}H;~
 x~fff
 y D8<.u
@@ -84653,7 +84632,6 @@ yaw: %f
 yawVel
 ydH9y0uT
 yes - via input
-yfc}w
 yfriction
 yh9A(w
 yielding
@@ -84698,6 +84676,7 @@ z4u2H
 z8u6A
 z==Gz==G
 zCuAE
+zCunique integer ID of this ping wheel message
 zDcitadel_metal_expire_time
 zF):O4
 zG2m8
@@ -84756,7 +84735,7 @@ z}u{H
 { H9{
 { HcC
 { Lce
-{ fD9=
+{ fD9=p+T
 { u H
 { u!H
 {$){ u
@@ -84764,7 +84743,7 @@ z}u{H
 {%s}SAVE/%s.sav
 {(;s0u
 {(D97|
-{(fD9=P*T
+{(fD9=
 {(u H
 {,D+{HD+
 {09k(|AH
@@ -84798,7 +84777,7 @@ z}u{H
 {pH9{PH
 {ry\W
 {un'%
-{xH9=p
+{xH9=0
 {xHcCpH
 {x`M`
 {|~7H
@@ -84998,7 +84977,7 @@ z}u{H
 |$@Hc
 |$@Hc}
 |$@Ic
-|$@L9%
+|$@L9%_
 |$@L;
 |$@L;t$P}\L
 |$@Lc
@@ -85074,7 +85053,7 @@ z}u{H
 |$PI;
 |$PIc
 |$PL;
-|$PLc=
+|$PLc=9
 |$Pf9H:t
 |$PfD
 |$PfE
@@ -85243,7 +85222,7 @@ z}u{H
 |(fff
 |(tFM
 |)L9c
-|)f95b?
+|)f95
 |,I9,
 |11Jv
 |<C!FReQ
@@ -85375,11 +85354,12 @@ z}u{H
 }HcRTH
 }HfD9#A
 }LuHO
-}P;5(
 }PfD;v^wIfE;
+}Q;=9
 }QfA;
 }R;_$
 }T;_$
+}U;=y
 }VKRZ
 }W70d
 }Xee+
@@ -85453,6 +85433,7 @@ z}u{H
 ~3fff
 ~4fff
 ~5D8%
+~5D8%2c*
 ~5fff
 ~6fff
 ~7HcG
