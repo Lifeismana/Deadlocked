@@ -73,9 +73,11 @@
 			FakeLoss		.1
 			//FakeReorderPct 0.05
 			//FakeReorderDelay 10
+			//FakeJitter "low"
 			// Turning off fake jitter for now while I work on making the CQ totally solid
 			FakeReorderPct 0
 			FakeReorderDelay 0
+			FakeJitter "off"
 		}
 	}
 

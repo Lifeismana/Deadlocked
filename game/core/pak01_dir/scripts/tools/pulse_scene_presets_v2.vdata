@@ -1,40 +1,6 @@
 <!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
 	generic_data_type = "CGraphCanvasPreset"
-	BaseNodeHeader = 
-	{
-		name = "Header"
-		className = "NodeHeader NodeRow"
-		children = 
-		[
-			
-			{
-				name = "HeaderIcon"
-				_class = "image"
-				className = "HeaderIcon"
-			},
-			
-			{
-				name = "HeaderTextContainer"
-				className = "HeaderTextContainer"
-				children = 
-				[
-					
-					{
-						name = "HeaderText"
-						_class = "text"
-						className = "HeaderText"
-					},
-					
-					{
-						name = "SubHeaderText"
-						_class = "text"
-						className = "SubHeaderText"
-					},
-				]
-			},
-		]
-	}
 	BaseFlowHeader = 
 	{
 		name = "Header"
@@ -44,6 +10,28 @@
 			
 			{
 				className = "FlowRail"
+				children = 
+				[
+					
+					{
+						className = "FlowEntry"
+					},
+					
+					{
+						name = "FlowIcon"
+						className = "FlowIcon"
+					},
+					
+					{
+						name = "HeaderIcon"
+						_class = "image"
+						className = "HeaderIcon"
+					},
+					
+					{
+						className = "FlowExit"
+					},
+				]
 			},
 			
 			{
@@ -54,12 +42,6 @@
 			},
 			
 			{
-				name = "HeaderIcon"
-				_class = "image"
-				className = "HeaderIcon"
-			},
-			
-			{
 				name = "HeaderTextContainer"
 				className = "HeaderTextContainer"
 				children = 
@@ -69,12 +51,6 @@
 						name = "HeaderText"
 						_class = "text"
 						className = "HeaderText"
-					},
-					
-					{
-						name = "SubHeaderText"
-						_class = "text"
-						className = "SubHeaderText"
 					},
 				]
 			},
@@ -103,12 +79,6 @@
 						name = "HeaderText"
 						_class = "text"
 						className = "HeaderText"
-					},
-					
-					{
-						name = "SubHeaderText"
-						_class = "text"
-						className = "SubHeaderText"
 					},
 				]
 			},
@@ -166,13 +136,6 @@
 					{
 						name = "NodeRows"
 						className = "NodeRows"
-						children = 
-						[
-							
-							{
-								preset = "BaseValueHeader"
-							},
-						]
 					},
 					
 					{
@@ -293,13 +256,6 @@
 			{
 				name = "NodeRows"
 				className = "NodeRows"
-				children = 
-				[
-					
-					{
-						preset = "BaseFlowHeader"
-					},
-				]
 			},
 		]
 	}
@@ -320,11 +276,6 @@
 				className = "RequirementLayout_Separator"
 				children = 
 				[
-					
-					{
-						name = "RequirementLayout_Separator_Spacer"
-						className = "RequirementLayout_Separator_Spacer"
-					},
 					
 					{
 						name = "RequirementLayout_Separator_Line"
@@ -385,7 +336,7 @@
 	{
 		className = "Cursor CallstackCursor"
 	}
-	Port = 
+	Port_InOrOutParam = 
 	{
 		className = "Port NodeRow"
 		children = 
@@ -398,6 +349,21 @@
 					
 					{
 						className = "FlowRail"
+						children = 
+						[
+							
+							{
+								className = "FlowEntry"
+							},
+							
+							{
+								className = "FlowIcon"
+							},
+							
+							{
+								className = "FlowExit"
+							},
+						]
 					},
 					
 					{
@@ -435,6 +401,26 @@
 			},
 		]
 	}
+	Port_InflowOrOutflow = 
+	{
+		className = "Port"
+		children = 
+		[
+			
+			{
+				className = "PortPlugCtn"
+				children = 
+				[
+					
+					{
+						name = "PortPlug"
+						_class = "port_plug"
+						className = "PortPlug"
+					},
+				]
+			},
+		]
+	}
 	PulseTextTooltip = 
 	{
 		className = "PulseTextTooltip"
@@ -453,10 +439,6 @@
 		className = "BlockComment_Base"
 		children = 
 		[
-			
-			{
-				preset = "BaseFlowHeader"
-			},
 			
 			{
 				name = "BlockCommentHeader"

@@ -43,6 +43,7 @@
 	D$0H
 	Default
 	NAN encountered in element '%s' guid %s attribute '%s'!
+	V_fmodd
 	V_fmodf
 	V_fpclassifyd
 	V_fprintf
@@ -106,7 +107,7 @@
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- $px|K
+ !B~|s
  %.4g kg
  %41g
  &Color
@@ -157,7 +158,6 @@
  A\_^
  A]A\]
  A]A\_^[
- A]^[
  A]^]
  A]_^
  A]_^][
@@ -186,7 +186,6 @@
  A_A]A\_^
  A_A]^][
  A_A]_
- A_A]_^[
  A_A^A\
  A_A^A\_^
  A_A^A\_^][
@@ -257,7 +256,6 @@
  RELEASE
  REPEAT
  Type Descriptor'
- VtfJ
  X?setAlignment@QTextOption@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
  [ %f %f %f %f  %f %f %f %f  %f %f %f %f  %f %f %f %f ]
  [%1]
@@ -619,7 +617,6 @@ $prefix_element$
 %suncompressed data
 %u (0x%x)
 & ?timerEvent@QMenuBar@@MEAAXPEAVQTimerEvent@@@Z
-&>PVN
 &?PPPPPPP?
 &Add...
 &Allow Wrapping
@@ -722,29 +719,32 @@ $prefix_element$
 ( z >= 0 ) && ( z < NumSlices() )
 (#%d)
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
-(%'40
 (%1,%2)
 (%d,%d
 (%d,%d)
 (%d,%d,%d
 (%d,%d,%d,%d
+(%j}(
+(%wB0
+(%x#*
 ((width & 1) == 0) && ((height & 1) == 0)
 (*%s*), 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-%f&
-(-+.0
-(-.D&
-(-?d&
-(-HQH
-(-L40
-(-^h&
-(-eS&
-(54N&
-(5\8&
-(5^:&
-(5f5&
-(9=G|G
+(-?#*
+(-r^H
+(-{<0
+(5 E0
+(5*v&
+(51M&
+(5Jc)
+(5M\&
+(5NR&
+(5ka&
+(5mw&
+(5~h&
+(=<c)
+(=I~(
 (A]A\_[
 (A]^][
 (A^A\^[
@@ -995,7 +995,6 @@ $prefix_element$
 )D$0E8f
 )D$0H
 )D$0I
-)D$0J
 )D$0L
 )D$@D
 )D$@H
@@ -1155,7 +1154,6 @@ $prefix_element$
 )|$ f
 )|$ fD
 )|$ t
-)|$ u
 )|$0D
 )|$0H
 )|$0f
@@ -1183,10 +1181,8 @@ $prefix_element$
 )|$`Mc
 )|$pA
 )|$pD
-)|$pE
 )|$pH
 )|B?d!
-*	V_log10f
 * ?timerEvent@QTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 * ForceRescanOfActiveKeys
 * Rehandling active codes
@@ -1213,8 +1209,6 @@ $prefix_element$
 *StO9>T
 *YA1H
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
-*pMaxIndices <= 32768
-*pMaxVertices <= 32768
 *pScan == '['
 +	?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
@@ -1224,7 +1218,6 @@ $prefix_element$
 +C$Lc
 +D$8A
 +D$tH
-+D$tL
 +E(A+B
 +End Points
 +Forward
@@ -1254,6 +1247,7 @@ $prefix_element$
 +h->|
 +o'q)}
 +~0+^4
+,	V_log10f
 , %1 KB
 , %1 MB
 , %1 mip levels, %2
@@ -1279,7 +1273,6 @@ $prefix_element$
 ,X< w
 ,YA1A
 ,YA1H
--	V_log2f
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
@@ -1307,7 +1300,6 @@ $prefix_element$
 -unknown source-
 -unknown source-(
 -vsync
-.	V_logd
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 ..om?
 .00cfg
@@ -2544,7 +2536,7 @@ $prefix_element$
 .xJ>Hf
 .xdata
 .xdata$x
-/	V_logf
+/	V_log2f
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
 // 						"BA_INT_DANGER"		break out of this anim only if threatened
@@ -2561,7 +2553,9 @@ $prefix_element$
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5G8.
+/5'N.
+/57K*
+/5=?#
 /<9w-
 />58d%
 /D$4r
@@ -2574,6 +2568,7 @@ $prefix_element$
 /TF<)VGy#WH
 /YA1H
 /]?size@QImage@@QEBA?AVQSize@@XZ
+0	V_logd
 0 0 -1
 0 0 0
 0 0 0 0
@@ -2582,6 +2577,7 @@ $prefix_element$
 0.0 to 1.0 value indicating the probability of this element being evaluated. Where a value of 0 means the element will never be evaluated and 1.0 means it will always be evaluated
 0123456789abcdefghijklmnopqrstuvwxyz
 0><[cZUg^>
+0>bE=
 0A;n@|
 0A\^]
 0A\_[
@@ -2649,6 +2645,7 @@ $prefix_element$
 0x%p = %s '%s'
 0z$u"
 0}0i1
+1	V_logf
 1"?updateGeometry@QWidget@@QEAAXXZ
 1#IND
 1#INF
@@ -2875,7 +2872,7 @@ $prefix_element$
 220323000000Z
 220801000000Z
 230714000000Z
-240620161736Z0/
+240627200908Z0/
 241009235959Z0a1
 255 255 255
 2AnimationLoopingChanged( bool )
@@ -2945,7 +2942,6 @@ $prefix_element$
 2valueChanged(double)
 2valueChanged(int)
 2valueEdited()
-3	V_modfd
 311109235959Z0b1
 33333333H
 33333333H+
@@ -2960,14 +2956,16 @@ $prefix_element$
 3H9o8
 3YA1H
 3mq+<
-4(v`=
 4-byte data pool
+40F1'
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
 4;t	H
 4@A;m@
+4M\,d)
 4YA1H
 4YA1i
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+5	V_modfd
 5;FJ$,XEK4<
 5FjiT
 5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -3045,6 +3043,7 @@ $prefix_element$
 8b  16-May-2010
 8fB9,
 8fB9l
+8fD9D
 8fff?
 8ke?;
 8text
@@ -3054,10 +3053,8 @@ $prefix_element$
 98t H
 993u,H
 99~CE
-9=!`Z
 9>powf
 9>~ZH
-9>~|H
 9Cu,fD9y
 9D$pu0L
 9FQtA
@@ -3101,6 +3098,7 @@ $prefix_element$
 9sHva
 9sLv|
 9sPt'9
+9sP~OH
 9sP~kH
 9sh~i3
 9s|~%H
@@ -3113,8 +3111,8 @@ $prefix_element$
 9t$hu
 9t$xu
 9wP~IL
+9z$tkH
 9{8t&H
-9{P~OH
 9{\~9H
 9|$(u
 9|$@u
@@ -3131,7 +3129,6 @@ $prefix_element$
 9~P~7
 9~P~;
 9~h~t3
-:	V_powd
 : Add
 : lexer error %d :
 :!e00A
@@ -3145,15 +3142,17 @@ $prefix_element$
 :VP8 tP
 :VP8LtHD
 :VP8X
-;	V_powf
 ;(}{H
 ;.u1L
 ;.|@H
+;5:mZ
+;=t0:
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;CP}$Hc
 ;Cxr*H
 ;CxsB
+;D$ u
 ;D$0|
 ;D$4|
 ;D;t$0u"
@@ -3182,7 +3181,7 @@ $prefix_element$
 ;|$0|
 ;|$8|
 ;|$@~
-<	V_qsort
+<	V_powd
 <	u2H
 <	u8H
 <	u\L
@@ -3194,7 +3193,7 @@ $prefix_element$
 <!-- dmx
 <!u:H
 <!uCH
-<&r)D
+<&r"D
 <0:08
 <0|:<9
 <:tLC
@@ -3232,7 +3231,7 @@ $prefix_element$
 <unknown>
 <unset>
 <utK@:
-=	V_qsort_s
+=	V_powf
 =%H5<mN
 =33s?
 == PulseGraphDef ==
@@ -3242,6 +3241,7 @@ $prefix_element$
 =SPB8ue
 =imb;D
 =rIQU
+>	V_qsort
 >%H5<mN
 >0<0:
 >Mp$d
@@ -3250,6 +3250,7 @@ $prefix_element$
 >c;j1
 >ff&?
 >jtm}S
+?	V_qsort_s
 ?!5WOo
 ?#\$ 
 ?+>^m
@@ -3596,7 +3597,6 @@ $prefix_element$
 ?ConColorMsg@@YAXAEBVColor@@PEBDZZ
 ?ConMsg@@YAXPEBDZZ
 ?ConvertCRLF@CUtlBuffer@@QEAA_NAEAV1@@Z
-?D9e4}iL9e
 ?DebugPrintKV3@@YAXPEBVKeyValues3@@@Z
 ?Detach@CTSListBase@@QEAAPEAUTSLNodeBase_t@@XZ
 ?E=$% B
@@ -5093,7 +5093,7 @@ $prefix_element$
 @88wmH
 @88wuH
 @8;tIL
-@8=``=
+@8=nt=
 @8j(t
 @8k(t
 @8krt_
@@ -5146,13 +5146,11 @@ $prefix_element$
 @A^_^][
 @A^_^][H
 @A_A\^
-@A_A\_^[
 @A_A\_^]
 @A_A]A\_^
 @A_A]A\_^][
 @A_A]]
 @A_A]_
-@A_A]_^]
 @A_A^A\
 @A_A^A\^]
 @A_A^A\_]
@@ -5195,6 +5193,7 @@ $prefix_element$
 @SATAVH
 @SATAWH
 @SATH
+@SAUAVH
 @SAUAWH
 @SAVAWH
 @SAVH
@@ -5240,7 +5239,6 @@ $prefix_element$
 @SVAVH
 @SVWATAUAVAWH
 @SVWATAUH
-@SVWATAWH
 @SVWATH
 @SVWAUAVAWH
 @SVWAUAVH
@@ -5296,7 +5294,6 @@ $prefix_element$
 @USVWATAWH
 @USVWATH
 @USVWAUAVAWH
-@USVWAUAWH
 @USVWAUH
 @USVWAVAWH
 @USVWAVH
@@ -5437,7 +5434,7 @@ A;Exr
 A;Exsff
 A;M t
 A;M8v#A
-A;N8t
+A;O8t
 A;QP|
 A;Z<|
 A;_0u
@@ -5452,6 +5449,7 @@ A;~@|
 A>l$/
 A>pP&
 A@H90t0H
+AAssertCastNumberInternal
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABGR8888
 ABSTRACT - CQPropertyWidget::AcceptDropMenu
@@ -5519,15 +5517,14 @@ A^A\_^[]
 A^A\_^]
 A^A]A\
 A^A]A\][
-A^A]A\^[]
 A^A]A\_]
 A^A]A\_^
 A^A]A\_^[]
 A^A]A\_^][
-A^A][]
 A^A]^[]
 A^A]^]
 A^A]^][
+A^A]_[]
 A^A]_]
 A^A]_^[]
 A^A]_^]
@@ -5592,6 +5589,7 @@ A_A^A]A\_^]H
 A_A^A]A\_^][
 A_A^A][]
 A_A^A]]
+A_A^A]^[]
 A_A^A]^]
 A_A^A]_[]
 A_A^A]_]
@@ -5603,7 +5601,6 @@ A_A^^
 A_A^^[]
 A_A^^]
 A_A^_
-A_A^_[]
 A_A^_]
 A_A^_^[]
 A_A^_^]
@@ -5716,7 +5713,6 @@ AsShotPreProfileMatrix
 AsShotWhiteXY
 Assert True
 AssertCast
-AssertCastNumberInternal
 Asset Preview %d
 AssetBrowserSystem_001
 AssetPreviewSystem_001
@@ -5752,7 +5748,7 @@ AuQIc
 August
 Axis around which the rotation will occur
 AxisScale
-B	V_roundf
+B @8{(u
 B A+B
 B D;B0|
 B J;D
@@ -5906,9 +5902,8 @@ BuildParticleSimList
 ButtonCodeToWindowsVirtualKey
 C 9C(
 C ;C$t
-C H!o
-C H9,
 C HcK0H
+C I!.H
 C$LcC
 C(9C0
 C(D9x<t
@@ -6231,6 +6226,7 @@ CAssetThumbnailCache::UpdateThumbnailListenerAsset
 CAssetThumbnailDB
 CAssetThumbnailDB::LoadFromDisk
 CAssetThumbnailDB::LoadFromDisk Failed to find GAME search path.
+CAssetThumbnailDB::LoadFromDisk exceeded maximum load size %d > %d, discarding old cache.
 CAssetThumbnailDB::SaveToDisk
 CAttributeDictSaveDataOps does not support arrays
 CAttributeDictSaveDataOps::Restore
@@ -6867,7 +6863,6 @@ CMemAllocSystemInitialize
 CMeshBuilder2<struct VertexColorUVPos_t>::AdvanceIndices
 CMeshBuilder2<struct VertexColorUVPos_t>::BaseIndexData
 CMeshBuilder2<struct VertexColorUVPos_t>::Begin
-CMeshBuilder2<struct VertexColorUVPos_t>::ComputeNumVertsAndIndices
 CMeshBuilder2<struct VertexColorUVPos_t>::Draw
 CMeshBuilder2<struct VertexColorUVPos_t>::End
 CMeshBuilder2<struct VertexColorUVPos_t>::ExtractBuffers
@@ -9390,6 +9385,7 @@ Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d
 Custom Color
 Custom Colors
 Cx~!H
+D	V_roundf
 D W?{W
 D!l$xA
 D#C|D
@@ -9456,16 +9452,12 @@ D$(A;
 D$(E3
 D$(H+
 D$(H;
-D$(HH
 D$(Hc
 D$(HcE
 D$(I+
 D$(L+
-D$(XH
 D$(fI
 D$(fff
-D$(hH
-D$(xH
 D$0#~
 D$0&s
 D$0*2
@@ -9497,6 +9489,7 @@ D$0I;A t
 D$0J8b
 D$0JD
 D$0Jz
+D$0L#
 D$0Lc
 D$0Lc M
 D$0M`J
@@ -9617,7 +9610,7 @@ D$Pt;H
 D$PtBH
 D$PtEH
 D$Pu-
-D$T;A8|
+D$TA;D$8|
 D$TE3
 D$XE3
 D$XHc
@@ -9671,12 +9664,10 @@ D$pA8
 D$pA;E
 D$pE3
 D$pHc
-D$pL#
 D$pL;
 D$pMc
 D$peH
 D$pf;
-D$pff
 D$pv8
 D$pxxx
 D$xA;
@@ -9687,6 +9678,7 @@ D$xHc
 D$xL+
 D$xf;
 D$xfD
+D$xff
 D$|E3
 D)e(u
 D)u(u
@@ -9758,7 +9750,6 @@ D9&u?H
 D9'u@
 D9(tT
 D97uFA
-D9=4uS
 D9AHH
 D9H$t
 D9I$t
@@ -9766,8 +9757,6 @@ D9L$
 D9P$t
 D9Q$t
 D9Q$trH
-D9R$tlH
-D9`XL
 D9aXt3E
 D9c@u
 D9cH~&I
@@ -9776,10 +9765,9 @@ D9d$8~1I
 D9e(D
 D9f@~kH
 D9g8~6M
-D9gXu
+D9hXL
 D9kXu
 D9l$t
-D9m@t
 D9n(t
 D9oXu
 D9t$ 
@@ -9796,7 +9784,9 @@ D9|$
 D9}(|HH
 D9}hu
 D9~(D
+D;$(t
 D;$7|
+D;,(t
 D;D$(|
 D;D$(}CJ
 D;D$p|
@@ -10088,7 +10078,6 @@ Dump all simulating particles, optional name substring.
 DumpModeDecode: Not enough data for scanline %d
 Dynamic Configs
 E A84$u
-E A;E$t
 E D9{(
 E(HcH
 E),$H
@@ -10110,7 +10099,7 @@ E9e ~GI
 E9f@}yH
 E9f@~hH
 E9n(E
-E9t$Xt&H
+E9wXt&H
 E;Fx|
 E;t$(|
 E;u$t>H
@@ -10165,7 +10154,6 @@ ERROR: Unable to create an attribute handle! Save, quit, restart and clean up yo
 ESCAPE_CHAR
 ESCAPE_CODE
 ET$PH
-EX9CXu
 EXEC-BEGIN (UNSUPRESSED): %s
 EXEC-BEGIN-MODIFIER: %s
 EXEC-BEGIN: %s
@@ -10490,6 +10478,7 @@ FLA+@
 FLOAT
 FORWARD
 FQHc.H
+FX9CXu
 Facial Animation File
 Factory for element type '%s' already exists (Check your IMPLEMENT_ELEMENT_FACTORY macros for duplicate lookupNames)
 Fail Immediately
@@ -10685,8 +10674,7 @@ Function "%s" takes %i parameters, but %i were given
 Functions not supported in this evaluator (%s)
 FxD9x
 FxH9<
-G	V_sincosf
-G ;G$t
+G H9,
 G channel not found!
 G tBH
 G$L9t$Pt
@@ -10695,7 +10683,7 @@ G4L9sXu
 G8,7u
 G89G@
 G89G@}8
-G8@8-ff5
+G8@8-
 G8uaA
 G:B8D
 G@I+?I
@@ -10920,10 +10908,10 @@ Gt$`H
 GuhE3
 G|$(H
 G|$8L
+G|$8M
 G|$HH
 G|$XA
 H	GHI
-H	V_sind
 H A+H
 H ATAUH
 H D+H
@@ -10948,25 +10936,20 @@ H9(t?A
 H9(tO
 H9+t	H
 H9+u]H
-H9-&N$
-H9-:EA
-H9-AN$
-H9-UEA
-H9-XM$
-H9-jDA
+H9-&\$
+H9-A\$
+H9-X[$
+H9-zYA
 H9/t	H
 H9/u+9
 H90t7
 H93t	H
 H94(t
-H95cH9
-H95g8?
+H95g H
 H97u+A
 H98t$H
 H98t2
-H98t7
 H9;t	H
-H9=?0=
 H9A(u
 H9APuuH
 H9CPt
@@ -11064,7 +11047,6 @@ HA_A^A]A\_^][
 HA_A^A]_^]
 HA_A^][
 HA_A^_^
-HA_A^_^][
 HA__H
 HA__^]
 HBm_name
@@ -11092,7 +11074,6 @@ HandleIntDerived
 HardCancel
 HasAllocatedMemory( nDestAttr )
 Hc+;k
-Hc-[OZ
 Hc.;n
 Hc/;o
 Hc/E3
@@ -11102,7 +11083,7 @@ Hc;;{
 Hc>;~
 HcA L
 HcA(E3
-HcA03
+HcA0H
 HcA8A
 HcAHL
 HcAPH
@@ -11110,7 +11091,7 @@ HcAXH
 HcAhH
 HcApD;
 HcAxL
-HcB$;G
+HcB$A;C
 HcBPA
 HcC H
 HcC0A
@@ -11191,8 +11172,8 @@ HcW H
 Hc\$(I
 Hc\$(M
 Hc\$0A
-Hc\$0H
 Hc\$0L+
+Hc\$0M
 Hc\$@D
 Hc\$XI
 Hc\$pI
@@ -11262,11 +11243,12 @@ How much should the surface normal up direction influence the final orientation.
 Hr>wL
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-I	V_sinf
+I	V_sincosf
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
 I I;4
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
+I9.t	I
 I9D$P
 I9FPuiH
 I9Jhs
@@ -11310,13 +11292,12 @@ ISceneObjectDesc::GetCustomOpaqueFade
 IToolFrameListener
 IToolSceneWindow
 IToolSpecificPopupUI
-IXfff
 I[?setRgbF@QColor@@QEAAXNNNN@Z
 Iblendweight
+Ic	D;
 Ic.A;n
 Ic.Ic
 Ic4$A;
-Ic4$E3
 Ic6A;v
 Ic7A;w
 Ic<$H
@@ -11336,6 +11317,7 @@ IcGxH
 IcH4H
 IcH<H
 IcI H
+IcM(A;
 IcNxD+
 IcNxH
 IcV0H
@@ -11383,7 +11365,7 @@ If true, the parent element will be discarded there is no state with the specifi
 If true, treat the specified up direction as fixed up direction to apply to all elements placed on the path. If false the up direction is just an initial direction.
 IfA9,
 IfA9l
-IfD9d
+IfD9D
 IgnoreConsoleKeypress
 Ignored
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
@@ -11753,6 +11735,7 @@ It doesn't make sense to have attachment type PATTACH_WORLDORIGIN and have an en
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
 ItemIsolateView
 ItemIsolateVignette
+J	V_sind
 J%f%f%f%f%f%f%f%f
 J8B:s
 J8G:s
@@ -11774,7 +11757,7 @@ Joint Rotations
 Js`@2
 Jump to Instr I%d
 JumpOrLeap( C%d:I%d )
-K	V_sinhf
+K	V_sinf
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 K H9H
 K H9K0u
@@ -11793,7 +11776,6 @@ KV3TransferSchema_AllocateClassInstance
 KV3TransferSchema_ClassName::<lambda_1>::operator ()
 KV3Transfer_SaveMapAsFlatTable
 KXHcS8
-KYvqOl
 Keep a history of all instructions run on a per graph basis.
 Keep running normally.
 Key Bindings
@@ -11852,7 +11834,6 @@ Kill immediately.
 K}*n:	
 K~Je#>!
 L	?canDropMimeData@QAbstractItemModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z
-L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ ;H8
@@ -11869,6 +11850,7 @@ L$ Lc1H
 L$ Mc
 L$ SH
 L$ SUVWATAUAVAWH
+L$ SUVWAVH
 L$ SUVWH
 L$ SUWATAUAVAWH
 L$ SVWATAUAVAWH
@@ -11888,7 +11870,6 @@ L$ UVAUAVH
 L$ UVWATAUAVAWH
 L$ UVWATAVAWH
 L$ UWAUAVAWH
-L$ VH
 L$ VWATAUAVAW
 L$ VWAUAVH
 L$ VWAVH
@@ -11990,7 +11971,9 @@ L$PH3
 L$PIc
 L$PL;
 L$Pf;
+L$Pt\L
 L$PtfL
+L$PtmL
 L$PtnL
 L$QE3
 L$TD;
@@ -12045,14 +12028,15 @@ L9#t	H
 L9#u/H
 L9&t	H
 L9+t	H
-L9--K?
-L9-HK?
-L9-_J?
+L9-M`?
+L9-h`?
 L93t	H
 L97t	H
 L97u	L9
 L97vH
 L9;t	H
+L9;tHA
+L9=12Q
 L9AHA
 L9aHA
 L9d$ u
@@ -12072,7 +12056,6 @@ L9m@t
 L9mPt
 L9m`t
 L9mxt
-L9s(t
 L9sXu
 L9t$(t
 L9t$Xt
@@ -12100,7 +12083,7 @@ L;t$0
 L;t$h
 L;|$8
 L;|$X
-L;|$p
+L;|$x
 L?UUUUUUU?
 L?n(Zy&
 LARGEST_FIRST
@@ -12153,6 +12136,7 @@ Lay out child elements with their origin at the corner of each grid cell.
 Layout Grid
 Layout length vertically (Along Z axis instead of Y).
 Lc#D;c
+Lc&E3
 Lc'D;g
 Lc(u?A
 Lc*E2
@@ -12216,6 +12200,8 @@ Lc]wI
 Lc]wI;
 LcaPL
 Lcc8HckPA
+LccxE
+Lcd$\E
 Lcd$hL
 Lcd$pD
 LcfPD;f`
@@ -12248,10 +12234,8 @@ LcwPD;w`
 Lcy@L
 Lc{LE3
 Lc{hE3
-Lc{xE
 Lc|$ 
 Lc|$PE
-Lc|$\E
 Lc}(D;}8
 Lc}hLcu`
 Lc~<L
@@ -12328,18 +12312,23 @@ LowPrecisionUv1
 Lower pen.
 L|4f;
 M	?canDropMimeData@QAbstractProxyModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z
+M	V_sinhf
 M +D$tL
 M HcG
 M L;mP
+M(+D$tL
+M0+D$tL
 M0H;M`
 M0t+H
 M8+D$tL
 M8fD;
 M8tEL
 M9}ht
+M9~(t
 M;P s(I
 M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
+M@+D$tL
 M@+G$L
 MATCHFRAMEWORK_001
 MAX_ALLOC_CHUNK is wrong, please fix
@@ -12352,6 +12341,7 @@ MFgdFromSchemaCompletelySkipField
 MGD;}
 MGapTypeQueriesForScopeSingleton
 MGetKV3ClassDefaults
+MH+D$tL
 MHHcY
 MHHcy
 MIsBoxedIntegerType
@@ -12635,6 +12625,7 @@ MultiplySetBy
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 Must specify a search path or root-relative (ie. game/.. or content/...) path.
 Mx~.H
+N	V_snprintf
 N0Ic^,A
 N3`d?
 N>O=I9
@@ -12777,6 +12768,7 @@ O*9y]
 O0HcW 
 O8HcB
 O8HcY
+O=m0:
 O?initPainter@QPaintDevice@@MEBAXPEAVQPainter@@@Z
 OBJECT
 OF>;^
@@ -12965,6 +12957,7 @@ P8H=vpcf
 P8H=vsvg
 P8H=vtex
 P8I9D$
+P9z$t%D
 P>q_Y~
 P?isValid@QColor@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
@@ -12984,6 +12977,7 @@ PA^A]^
 PA^_]
 PA^_^
 PA^_^[]
+PA^_^][
 PA_A\[
 PA_A\[H
 PA_A\_
@@ -12997,6 +12991,7 @@ PA_A^A]A\_
 PA_A^A]A\_^]
 PA_A^A]][
 PA_A^A]^]
+PA_A^A]_^][
 PA_A^]
 PA_A^^
 PA_A^_
@@ -13006,7 +13001,7 @@ PAq=?Mp#
 PGDInstruction_t
 PGDInstruction_t::KV3Transfer_DefaultKeys_Impl
 PGDInstruction_t::Schema_VerifyBindingIsRegistered
-PH9G@r'w;B
+PH9G@r'w;
 PH;B@r'wLB
 PH;G@r+
 PHH=vmat
@@ -13226,6 +13221,7 @@ Prt_ComputeDirectionalCentroid
 Pull From Global Browser
 PullSelectionFromGlobalBrowser
 Pulse
+Pulse cursor in '%s' exceeded %d instructions, terminating!
 Pulse test failure: %s
 PulseCursorCancelPriority_t
 PulseCursorExecResult_t
@@ -13367,8 +13363,8 @@ QuaternionVectorsFLU
 QuaternionVectorsFLU differs from QuaternionMatrix() then, MatrixToVectorsFLU() by %.10e: [ %.08f %.08f %.08f %.08f ]
 QueryPerformanceCounter
 QueryPerformanceFrequency
+Qxfff
 R	?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
-R	V_sscanf
 R A;F
 R channel not found!
 R%d->%s
@@ -13507,6 +13503,7 @@ Replace the current color tint value completely, overwriting any object level ti
 Replace the current state with a previously saved state.
 Replace tint
 ReplaceColor
+RepresentativeTexture
 Request elegant wind-down of any associated work (e.g. vcd interrupt).
 Requested feature was omitted at compile time
 Requirement Result R%d
@@ -13561,7 +13558,6 @@ RtlUnwindEx
 RtlVirtualUnwind
 RunFrame
 RunPulseInstruction
-S	V_sscanf_s
 S,;S(~9D
 S0Q0O
 S93uFH
@@ -13670,6 +13666,7 @@ SVWAVH
 SVWAWH
 SWATAUH
 SWATH
+SWAUH
 SWAVH
 SXHcK8H
 SYNC_WAIT_FOR_COMPLETION
@@ -14329,6 +14326,7 @@ SwizzlePlanarScanlineToInterleaved
 Symbol table:  %d entries %llu bytes
 Synchronous - wait for the method to fully complete before returning
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
+T	V_sscanf
 T$ E3
 T$ Ei
 T$ H;
@@ -14372,7 +14370,6 @@ T$@E3
 T$@H;
 T$@Ic
 T$@Mc
-T$@fD
 T$DE3
 T$HA;
 T$HE3
@@ -14385,6 +14382,7 @@ T$PE3
 T$PH3
 T$PHc
 T$PIk
+T$PfD
 T$T90
 T$TE3
 T$X;H$
@@ -14393,7 +14391,6 @@ T$XA;
 T$XD;s
 T$XE3
 T$XHc
-T$XfD
 T$Xfff
 T$`E#
 T$`E3
@@ -14418,8 +14415,8 @@ T$pfD
 T$pfff
 T$xD;{
 T$xE3
-T%oI*
-T5}I*
+T5-W*
+T=cY*
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
@@ -14615,6 +14612,7 @@ Tuesday
 Turtle Graphics Domain
 TurtleGraphics
 Typesafe Int
+U	V_sscanf_s
 U I;U(
 U%	>G
 U(fff
@@ -14647,7 +14645,6 @@ USATAVH
 USATAWI
 USATH
 USAUAVAWH
-USAUAVH
 USAUAWH
 USAVAWH
 USAVH
@@ -14655,13 +14652,15 @@ USAVI
 USAWH
 USAWI
 USER32.dll
-USVATAUAVH
 USVATAUAWH
 USVATAVAWH
 USVATAWH
 USVATH
+USVAUAVAWH
+USVAUH
 USVAUI
 USVAVAWH
+USVAVH
 USVWATAUAVAWH
 USVWATAUAVH
 USVWATAUAWH
@@ -14685,8 +14684,8 @@ USWATAVAWH
 USWATAVH
 USWATH
 USWAUAVAWH
+USWAUAVH
 USWAUH
-USWAVAWH
 USWAVH
 USWAWH
 USWAWI
@@ -14702,6 +14701,7 @@ UVATH
 UVAUAVAWH
 UVAUAVH
 UVAUH
+UVAUI
 UVAVAWH
 UVAVAWI
 UVAVH
@@ -14730,7 +14730,6 @@ UWATH
 UWAUAVAWH
 UWAUAWH
 UWAUH
-UWAUI
 UWAVH
 UWAVI
 UWAWH
@@ -15008,7 +15007,6 @@ V_expf
 V_fabsf( flCheckDecompositionOrthogonality ) < 0.001f
 V_fabsf( flFarZ ) < FLT_MAX
 V_fabsf( flNearZ ) < FLT_MAX
-V_fmodd
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -15074,10 +15072,10 @@ VisBuilder_001
 Visit Developer Help URL
 VisitAndModifyElement_R
 Vrad3_001
-W	V_stricmp_fast
 W%	s;M@
-W-W&.
-W5_d&
+W-7<.
+W5<V,
+W5or&
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?save@QPixmap@@QEBA_NPEAVQIODevice@@PEBDH@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -15157,10 +15155,11 @@ X UAVAWH
 X UVWH
 X to the Y power
 X!t5~
-X%"{8
 X-Axis Size
-X-`-0
-X5Z=*
+X5''P
+X57+,
+X5E#,
+X5aQ7
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrush@QPalette@@QEAAXW4ColorGroup@1@W4ColorRole@1@AEBVQBrush@@@Z
@@ -15190,7 +15189,6 @@ XA__^[
 XClipPathUnits
 XD$PD
 XD$Xf
-XHc-Ic9
 XL$TD
 XL$tL
 XMLPacket
@@ -15205,18 +15203,26 @@ Xd$ D
 Xd$HD
 X|$ A
 X|$8E
-Y	V_strlower_fast
-Y%?_,
+Y	V_stricmp_fast
+Y% i*
+Y%/l,
+Y%l),
+Y- &*
 Y-Axis Size
-Y-Tc&
-Y5)H&
-Y5G8.
-Y5s`1
-Y5~B*
+Y5'N.
+Y5.P*
+Y59V&
+Y5:M*
+Y5:]*
+Y5AK*
+Y5G+,
+Y5RK*
+Y5a+,
+Y5sv1
+Y5v]*
 Y9"SD
-Y=&B*
-Y=:@*
-Y=h`1
+Y=]M*
+Y=hv1
 Y>kX>M
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -15287,12 +15293,12 @@ ZoomForwardBack2D
 ZoomForwardBack3D
 Zpm"U
 [	UoA
+[	V_strlower_fast
 [ 0, 1 ] Value specifying the location along the local x-axis the bend will occur around
 [ 0, 1 ] Value specifying the location on the gradient to pick the color from.
 [ AVH
 [ Chunk%d ]
 [ written by I%d last-read I%d ]
-[!rIP
 [%1] %2
 [%d] Aborting undo '%s'
 [%d] Popping undo '%s'
@@ -15350,12 +15356,12 @@ Zpm"U
 \$ UVATAUAWH
 \$ UVATH
 \$ UVAUH
+\$ UVAVH
 \$ UVAWH
 \$ UVWATAUAVAWH
 \$ UVWATAUH
 \$ UVWATAVH
 \$ UVWATAWH
-\$ UVWAUAVH
 \$ UVWAVAWH
 \$ UVWH
 \$ UWATAUAWH
@@ -15376,6 +15382,7 @@ Zpm"U
 \$(Lc
 \$(fA
 \$(tGH
+\$09+t|H
 \$0A;
 \$0D;
 \$0E3
@@ -15384,12 +15391,11 @@ Zpm"U
 \$0Hc
 \$0Hk
 \$0Ic
-\$0M#
+\$0L#
 \$0eH
 \$0fA
 \$0t H
 \$0t!H
-\$0uJ
 \$8A_A]_^]
 \$8E3
 \$8H;
@@ -15408,6 +15414,7 @@ Zpm"U
 \$@tSH
 \$@tUH
 \$@u!H
+\$DE2
 \$HE3
 \$HHcT$@H
 \$HLc@
@@ -15429,7 +15436,6 @@ Zpm"U
 \$XfA
 \$`9_
 \$`;_
-\$`@8
 \$`D;
 \$`E3
 \$`E;
@@ -15459,17 +15465,12 @@ Zpm"U
 \$xu3M
 \$xu7H
 \$|E2
-\5D	<
 \?setWidth@QPen@@QEAAXH@Z
-\D$ A
+\D$0A
 \D$DH
-\D$TA
-\D$XA
-\D$\A
 \L$HH
 \T$HE
 \t3D8T$(t
-]	V_strtod
 ])6M>&
 ]0tRH
 ]0tTH
@@ -15477,6 +15478,7 @@ Zpm"U
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]@tQH
 ]@tSH
+]HfD;
 ]HvtC
 ]J<0"0i3
 ]Lu*E;|$
@@ -15487,7 +15489,6 @@ Zpm"U
 ]g8Y1u H
 ]oB;\7(
 ]t$0E
-^ I9^
 ^,tyI
 ^<V7w
 ^?text@QClipboard@@QEBA?AVQString@@W4Mode@1@@Z
@@ -15497,8 +15498,10 @@ Zpm"U
 ^`IcFXH
 ^oEZ_
 ^ptoH
+_	V_strtod
 _ ;_$t
 _(f9_*~
+_5\J*
 _8D;g@u4
 _8Hcs
 _8tDH
@@ -15553,6 +15556,7 @@ _oD>Kg
 _pD8w0tDH
 _root_keyname
 _volumeatlas_
+` UAVAWH
 `+!]?
 `.rdata
 `;k8|
@@ -15564,13 +15568,14 @@ _volumeatlas_
 `A]A\_^]
 `A]_[
 `A^A\_^]
-`A^A]A\_]
 `A^A]^][
 `A^A]_[]
+`A^][
 `A^^]
 `A^_[
 `A^_^
 `A^_^][
+`A_A]A\_^][
 `A_A]]
 `A_A^A\_[
 `A_A^A\_^
@@ -15866,7 +15871,6 @@ c [1>H'
 c(>\,
 c0&>`
 c?FA@s}
-c@D9g@t
 cR?metaObject@QDrag@@UEBAPEBUQMetaObject@@XZ
 cable_static
 cached_fp == invalid_function_sentinel()
@@ -15989,7 +15993,6 @@ curve info
 curvetypes
 custom
 custom_colors
-d	V_tanf
 d"?validate@QDoubleSpinBox@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 d$ D!
 d$ D9d$0|LH
@@ -16018,10 +16021,10 @@ d$@A;
 d$@E3
 d$HA;
 d$HE3
-d$HLc
 d$HLcd$hL
 d$IfD
 d$Ls*
+d$P;{
 d$PA;
 d$PE8w
 d$PLc&L
@@ -16037,6 +16040,7 @@ d$`Hc
 d$`Ic
 d$`fD
 d$`fff
+d$`tLA
 d$`|NH
 d$dD;d$ltY
 d$hE3
@@ -16207,7 +16211,7 @@ eyeball_bone_l_index
 eyeball_bone_r_index
 eyeball_l
 eyeball_r
-f	V_tanhf
+f	V_tanf
 f+Gpf
 f3EZf
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -16481,6 +16485,7 @@ group
 group >= 0 && group < QPalette::NColorGroups && role >= 0 && role < CQTabbedStyle::NumColorRoles
 groupColor
 group_title
+h	V_tanhf
 h != m_elementIds.InvalidHandle()
 h AVH
 h VATAWH
@@ -16663,7 +16668,6 @@ k<9{@~CL
 kL@8o(u
 kQ?lineSpacing@QFontMetrics@@QEBAHXZ
 kX?setBlue@QColor@@QEAAXH@Z
-k[].)K
 key != m_nDeletedKeyValue
 key != m_nEmptyKeyValue
 keyvalues
@@ -16741,6 +16745,7 @@ l$8fA
 l$8u(H
 l$@A;
 l$@E3
+l$@Hc
 l$@Hcl$`L
 l$@Hk
 l$@Lc
@@ -16764,6 +16769,7 @@ l$HM;
 l$H~#H
 l$H~R3
 l$PA+
+l$PA;
 l$PD30A
 l$PD;
 l$PE3
@@ -16795,12 +16801,14 @@ l$`Ic.L
 l$`L9x 
 l$`Li
 l$`ff
+l$hA;
 l$hD+
 l$hD9~0u
 l$hE3
 l$hHc
 l$hHcE
 l$ht8A
+l$hu3M
 l$h~ H
 l$pE3
 l$pIc<$I
@@ -16860,7 +16868,6 @@ lowprecisionuv1
 m Hc](
 m(HcE H
 m0k0$
-mHIcM(;
 mL+7H
 mTransform.IsValid()
 mX?setBlueF@QColor@@QEAAXN@Z
@@ -17612,6 +17619,7 @@ must be either LogLUV or LogL
 mwtMH
 n * nBlockSize >= num
 n < m_Vector.Count()
+n I9n
 n$<fA
 n03>Pu
 n<	fE
@@ -17826,50 +17834,51 @@ n|$`fA
 o H9o
 o KPBf
 o$$fA
-o%$H+
-o%*K+
-o%,4+
-o%. +
-o%4sG
-o%CUD
-o%FkG
-o%HbD
-o%J\+
-o%M{(
-o%T>+
-o%ZN+
-o%]R+
-o%weG
+o%4V+
+o%:Y+
+o%<B+
+o%>.+
+o%CYG
+o%K*+
+o%Zj+
+o%d	+
+o%dL+
+o%g#,
+o%j\+
+o%m`+
 o,$fD
-o- U/
-o-/%+
-o-7j+
-o-G_+
-o-O)+
-o-`g+
-o-cL+
-o-oeG
-o-uH+
-o-ytG
+o-0c/
+o-5&+
+o-?3+
+o-Gx+
+o-N{G
+o-Wm+
+o-_7+
+o-pu+
+o-sZ+
 o47Lc
-o5%2+
-o51c+
-o5A'+
-o5LU+
-o5a++
-o5dL+
-o5v,/
-o5|e+
-o=$tG
-o=3D+
-o=NU+
-o=^J+
-o=^N+
-o=p<+
-o=sHG
+o5&L+
+o5(n+
+o55@+
+o5?!+
+o5Aq+
+o5F{G
+o5Q5+
+o5\c+
+o5q9+
+o5tZ+
+o=!-/
+o=%O+
+o=(L+
+o=>{G
+o=CR+
+o=^c+
+o=nX+
+o=n\+
 oAPfD
 oD$ f
 oD$ fA
+oD$0f
 oD$@H
 oD$IE+
 oD$PH
@@ -17947,6 +17956,8 @@ p;Y>u
 p?ati_compress_wrapper.dll
 pA]][
 pA]_^][
+pA^A]A\_^][
+pA^A][
 pA^A]]
 pA^^]
 pA^^]H
@@ -17959,6 +17970,7 @@ pA_A^A]
 pA_A^A]A\_^[
 pA_A^A]A\_^]
 pA_A^[
+pA_A^]
 pA_A^_][
 pA_A^_^]
 pA_^]
@@ -18566,6 +18578,8 @@ t	D8
 t	Hcp
 t H9X
 t fff
+t!HcA
+t!HcI
 t!fff
 t"Hc(H
 t#HcD
@@ -18635,9 +18649,9 @@ t$0Hc~
 t$0Hi
 t$0Lc
 t$0fff
+t$0t[
 t$8;;
 t$8;Upr4I
-t$8A+
 t$8Ai
 t$8D9Gh~]E3
 t$8D;KP
@@ -18649,7 +18663,6 @@ t$8Hc3;s
 t$8Hcq
 t$8Hcy
 t$8Hc~
-t$8Ic
 t$8L+
 t$8Lc
 t$8Lct$XHc
@@ -18660,7 +18673,6 @@ t$8~ H
 t$;\$p|
 t$;|$0|
 t$@;P
-t$@;i
 t$@A^A]A\_
 t$@A_A^A]A\_
 t$@A_A^A]_
@@ -18676,6 +18688,7 @@ t$@I+
 t$@I;
 t$@Ic
 t$@Lc1A+
+t$@Lc1D;q
 t$@fD
 t$@t$
 t$@u&H
@@ -18694,9 +18707,11 @@ t$HHc
 t$HHc2H
 t$HI+
 t$HIc}
+t$HL9;tHA
 t$HLcU
 t$HcG
 t$Hff
+t$Hfff
 t$HtPf;
 t$Hu&H
 t$H}!Ic
@@ -18739,6 +18754,7 @@ t$`A+
 t$`E3
 t$`H9
 t$`H9]
+t$`Hc
 t$`Ic
 t$`L#
 t$`fD
@@ -18747,27 +18763,25 @@ t$`fE
 t$`t%H
 t$`uDH
 t$`uL;n
+t$`}[H
 t$`~ H
 t$fff
 t$hD9`
 t$hE3
 t$hHc
 t$hIc
-t$hL9u
 t$hLc
 t$heH
 t$hfL
-t$htK
 t$htKH
 t$hu:H
-t$h}[H
 t$lL9
 t$pA;
 t$pD+
 t$pD9u
 t$pE3
+t$pHc
 t$pHc~
-t$pIc
 t$pIc0+
 t$pL+t$pH
 t$pfE
@@ -18821,7 +18835,6 @@ t7@8sXt1H
 t7H9{xt1H
 t7HcP
 t;LcF
-t;fD9&t#
 t=D8`
 t=fff
 t?HcS
@@ -18855,9 +18868,10 @@ tSf91tNH
 tT@8:tO3
 tU;Cxr
 tU;\$0tH
+tVJcD
 tWH9X
 tX~V2
-tY@85
+tY@85Z
 tYfff
 t\HcL$`H
 t]H9X
@@ -18912,7 +18926,6 @@ textureType
 tfIc>Ic7
 tgD9f
 tgH9;u
-tgfff
 th@8:tcH
 thHc\$0
 thIc>
@@ -18988,8 +19001,6 @@ tvH9}
 twIcF
 twfE;
 tyfD9 tsH
-type != MATERIAL2_HETEROGENOUS
-type != MATERIAL2_POINTS
 type == AT_INT_ARRAY
 type >= 0 && type < V_ARRAYSIZE(s_pAttrInfo)
 type.CanConvertTo( m_pStaticSignature->GetArg( nIndex ).m_Type, pInScope )
@@ -18997,13 +19008,13 @@ u	9Wx
 u	fD;A
 u Hcu
 u L9u
-u!A8E!u
+u"A8D$!u
 u"D;{
 u#f;N
 u$D8r(t
+u%9z4|
 u%@8j(t
 u&fE;
-u'D9R4|
 u(Icv
 u)HcB
 u*D9Q4|
@@ -19041,19 +19052,19 @@ uDfD;
 uED8r(t
 uEHc3;s
 uFA9l$
+uFD9E
+uGf9o
+uGf9y
 uIE9F
 uJD;w
 uLHc;;{
 uMA9l$
 uNIcT
-uNf9y
-uNf9{
 uO9CLuJ
 uOE9F
 uPL9ugt
 uPfE9Z uIfE9Z0uBfE9Z@u;fE9ZPu4fE9Z`u-fE9Zpu&A
 uPfff
-uQD9M
 uSA8.tH
 uSfA9r uLfA9r0uEfA9r@u>fA9rPu7fA9r`u0fA9rpu)A
 uSfff
@@ -19065,7 +19076,6 @@ uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
 uWire <= UINT32_MAX
 uX8FPt
 uXHc~
-uXf9o
 uYHcB
 uZE9F(uTE9F,uNE9F0uHE9F4uBE9F8u<E9F<u6A
 uZfE9E uSfE9E0uLfE9E@uEfE9EPu>fE9E`u7fE9Epu0E
@@ -19118,6 +19128,7 @@ upAxis exists and is not Y or Z, it's "%s"
 upD9`hujD9
 upHcEhLk
 upHck
+usHcr
 useEdgeInfo
 usecurvetypes
 useedgeinfo
@@ -19128,7 +19139,6 @@ uwHcD$$A
 uwHc~
 uxLcv
 uzKs@>
-u~Hcr
 v A;o
 v I;^8u
 v$fff
@@ -19274,6 +19284,7 @@ wu%A;\$
 wwH9Q
 www.digicert.com1!0
 www.digicert.com1$0"
+x	H;A
 x ATAVAWH
 x AUAVAWH
 x AVH
@@ -19286,10 +19297,8 @@ x";F }
 x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
 x';Qh}"Hc
 x*H;A
-x,HcC
 x/fff
 x0Ysqx
-x2A;E
 x8Lc A
 x8t>H
 x<H9{0
@@ -19298,7 +19307,6 @@ x=HcS
 x>V6'
 x>V6'?C
 xA^A]
-xA^A]A\_^[
 xA^_[]
 xA^_][H
 xA^_^]
@@ -19314,16 +19322,15 @@ xA__^[
 xGH;{
 xS;Q }NHc
 xSE;H
-xSH;A
 xXH;A
 x[A;Sp}UI
 x^j=|
 xcoord
 xlH;{
-xqH;A
-xrHcE
+xoH;~
 xs == 0
-x}H;~
+xtHcC
+xzHcC
 y0tXH
 y899u
 y:gt	3
@@ -19382,12 +19389,13 @@ zY;>u:m
 |$ H;
 |$ Hc
 |$ HcE
-|$ Hcs
+|$ Hc{
 |$ Ic
 |$ Lc
 |$ Lc?H
 |$ Lk
 |$ M+
+|$ Mc
 |$ Mc>A
 |$ RIFFu
 |$ UATAUAVAWH
@@ -19396,6 +19404,7 @@ zY;>u:m
 |$ fff
 |$ ti
 |$ u*
+|$ }[H
 |$ ~)E
 |$!du}
 |$"ouv
@@ -19456,6 +19465,7 @@ zY;>u:m
 |$@HcL$<H
 |$@Hcx
 |$@Hcy
+|$@I;
 |$@Ic
 |$@L;
 |$@Lk
@@ -19468,7 +19478,6 @@ zY;>u:m
 |$HA;
 |$HD+
 |$HD;
-|$HE2
 |$HE3
 |$HH+
 |$HIc
@@ -19487,6 +19496,7 @@ zY;>u:m
 |$PMc
 |$PeL
 |$Pff
+|$P}[H
 |$P~ H
 |$P~!H
 |$P~#H
@@ -19506,6 +19516,7 @@ zY;>u:m
 |$Xt5A
 |$Xu1H
 |$Xu3H
+|$Xu3M
 |$`30
 |$`9{
 |$`;{
@@ -19514,11 +19525,11 @@ zY;>u:m
 |$`D;
 |$`E3
 |$`Hcx
-|$`}[H
 |$`~ H
 |$h9k`
 |$hD9
 |$hE3
+|$hH;
 |$hHc
 |$hIc
 |$hM+
@@ -19548,11 +19559,12 @@ zY;>u:m
 |V?reason@QFocusEvent@@QEBA?AW4FocusReason@Qt@@XZ
 |aA;N
 |b=})>
+} ;Q$w
 } H99u
+}$fA;
+}$fA;P
 }(fff
 });C$
-});G$
-},A;E$
 }09]<~MI
 }1;C$
 }:;_|
@@ -19566,8 +19578,9 @@ zY;>u:m
 }XIcEPL
 }dfff
 }gA8_
-}i;{$
+}k;{$
 }oA8_Rt3
+}q;{$
 }wH;}
 ~ $s%r
 ~(fff
@@ -19577,10 +19590,10 @@ zY;>u:m
 ~0fff
 ~5fff
 ~8fff
-~@E9~
 ~CModelInstance destructor: leaking softbody because physics world disappeared
 ~Dfff
 ~II9}
+~Jfff
 ~L@8~8u
 ~NLct$4H
 ~PLcMpM

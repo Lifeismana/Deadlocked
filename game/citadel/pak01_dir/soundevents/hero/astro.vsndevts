@@ -225,6 +225,7 @@
 			"sounds/player/footsteps/astro/holiday_footstep_16.vsnd",
 			"sounds/player/footsteps/astro/holiday_footstep_17.vsnd",
 		]
+		vsnd_duration = 0.835102
 	}
 	Astro.ExplosiveBarrel.Cast = 
 	{
@@ -258,19 +259,6 @@
 		limiter_event_name = "Ability.Astro.ExpBarrels.Explode"
 		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/explode.vsnd"
 		vsnd_duration = 2.489667
-	}
-	Astro.ExpBarrels.BarrelKick = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Astro.ExpBarrels.BarrelKick.Pop"
-		soundevent_02 = "Astro.ExpBarrels.BarrelKick.Punch"
-		soundevent_03 = "Astro.ExpBarrels.BarrelKick.Snap"
-		soundevent_04 = "Astro.ExpBarrels.BarrelKick.Thud"
-		volume = 1.000000
-		use_01 = 1.000000
-		use_02 = 0.000000
-		use_03 = 1.000000
-		use_04 = 0.000000
 	}
 	Ability.Astro.BouncePad.Launch = 
 	{

@@ -11,7 +11,7 @@
 {
 	flow-children: down;
 	horizontal-align: center;
-	margin: 5px 0px;
+	margin: 15px 0px;
 }
 
 .DescArea
@@ -72,9 +72,38 @@ TextEntry #PlaceholderText
 	horizontal-align: left;
 }
 
+.formContents
+{
+	background-color: #00000080;
+	padding: 20px;
+}
+
+.subheader
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: silvered;
+	padding-left: 8px;
+	margin-bottom: 10px;
+}
+
+.ErrorLabel
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-weight: semi-bold;
+	color: colorEnemy;
+	margin: 10px 0px 0px 0px;
+}
+
+.friendSelected .ErrorLabel
+{
+	opacity: 0;
+}
+
 PopupPlaytestUser CitadelInviteFriendMenu
 {
-	height: 800px;
+	height: 500px;
 	width: 800px;
 }
 

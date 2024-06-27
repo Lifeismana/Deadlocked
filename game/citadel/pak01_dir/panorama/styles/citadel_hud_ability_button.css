@@ -14,7 +14,7 @@ CitadelHudAbilityButton
 	background-color: #222;
 }
 
-.wants_scoreboard .hud_abilities CitadelHudAbilityButton,.detail_view .hud_abilities CitadelHudAbilityButton
+.wants_scoreboard .hud_abilities CitadelHudAbilityButton,.hud_abilities CitadelHudAbilityButton.gDetailView
 {
 	height: 160px;
 	width: 160px;
@@ -72,7 +72,7 @@ CitadelHudAbilityButton.horizontalButton
 	opacity: 0.5;
 }
 
-.wants_scoreboard #AbilityUpgradePips,.detail_view #AbilityUpgradePips
+.wants_scoreboard #AbilityUpgradePips,.gDetailView #AbilityUpgradePips
 {
 	width: 100%;
 }
@@ -108,7 +108,7 @@ CitadelHudAbilityButton.horizontalButton
 	flow-children: none;
 }
 
-.wants_scoreboard .hud_abilities .abilityUpgradeContainer,.detail_view .hud_abilities .abilityUpgradeContainer
+.wants_scoreboard .hud_abilities .abilityUpgradeContainer,.gDetailView .hud_abilities .abilityUpgradeContainer
 {
 	height: 40px;
 }

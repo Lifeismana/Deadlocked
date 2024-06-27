@@ -59,17 +59,17 @@ AbilityPropertyPanel
 	font-weight: semi-bold;
 }
 
-.detail_view .DefaultStateVisible,.AltStateVisible,.HeaderContainer .AbilityPropertyName
+.gDetailView .DefaultStateVisible,.AltStateVisible,.HeaderContainer .AbilityPropertyName
 {
 	visibility: collapse;
 }
 
-.detail_view .AltStateVisible
+.gDetailView .AltStateVisible
 {
 	visibility: visible;
 }
 
-.CurrentValueSameAsBase .BaseValue,.detail_view .CurrentValueSameAsBase .BaseValue
+.CurrentValueSameAsBase .BaseValue,.gDetailView .CurrentValueSameAsBase .BaseValue
 {
 	visibility: collapse;
 }
@@ -84,14 +84,15 @@ AbilityPropertyPanel
 	opacity: 0.3;
 	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.IsStatusEffect .AbilityPropertyImageAndValues,.StatusEffectLabel,.IsStatusEffect.IsShowingStatusEffectValue .StatusEffectLabel,.StatusEffectContainer,.IsStatusEffect .AbilityPropertyName,.IsStatusEffect .StatusEffectContainer .BaseValue,.IsStatusEffect .StatusEffectContainer .CurrentValue,.detail_view .CurrentValueSameAsBase.IsStatusEffect.IsShowingStatusEffectValue .StatusEffectContainer .BaseValue,.StatusEffectPropertyName
+.IsStatusEffect .AbilityPropertyImageAndValues,.StatusEffectLabel,.IsStatusEffect.IsShowingStatusEffectValue .StatusEffectLabel,.StatusEffectContainer,.IsStatusEffect .AbilityPropertyName,.IsStatusEffect .StatusEffectContainer .BaseValue,.IsStatusEffect .StatusEffectContainer .CurrentValue,.gDetailView .CurrentValueSameAsBase.IsStatusEffect.IsShowingStatusEffectValue .StatusEffectContainer .BaseValue,.StatusEffectPropertyName
 {
 	visibility: collapse;
 }
 
-.IsStatusEffect .StatusEffectContainer,.IsStatusEffect .StatusEffectLabel,.detail_view .IsStatusEffect.IsShowingStatusEffectValue .StatusEffectContainer .BaseValue,.IsStatusEffect.IsShowingStatusEffectValue .StatusEffectContainer .CurrentValue,.IsStatusEffect.IsShowingStatusEffectValue .StatusEffectPropertyName
+.IsStatusEffect .StatusEffectContainer,.IsStatusEffect .StatusEffectLabel,.gDetailView .IsStatusEffect.IsShowingStatusEffectValue .StatusEffectContainer .BaseValue,.IsStatusEffect.IsShowingStatusEffectValue .StatusEffectContainer .CurrentValue,.IsStatusEffect.IsShowingStatusEffectValue .StatusEffectPropertyName
 {
 	visibility: visible;
 }
@@ -131,7 +132,7 @@ AbilityPropertyPanel
 	margin-top: 0px;
 }
 
-.detail_view .HeaderContainer .HasScalingStat .AbilityPropertyContainer
+.HeaderContainer .HasScalingStat .AbilityPropertyContainer.gDetailView
 {
 	padding-right: 40px;
 }
@@ -187,7 +188,7 @@ CitadelStatScalingLabel
 	margin-top: 5px;
 }
 
-.detail_view .HeaderContainer CitadelStatScalingLabel
+.gDetailView .HeaderContainer CitadelStatScalingLabel
 {
 	margin-top: 2px;
 }

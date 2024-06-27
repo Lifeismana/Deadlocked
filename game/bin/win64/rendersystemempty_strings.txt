@@ -151,7 +151,6 @@ $Ib?s
 $L9x0
 $^fE;
 %.100s: Can not read TIFF directory
-%2-ef
 %A Is
 %GoU?*
 %d %d %d
@@ -222,7 +221,6 @@ $^fE;
 %u (0x%x)
 &?PPPPPPP?
 &xr(*
-')8hc'
 ',=?k
 ( ( m_nFlags & (TSPEC_VOLUME_TEXTURE|TSPEC_TEXTURE_ARRAY) ) != 0 ) || ( m_nDepth == 1 )
 ( ( m_nFlags & TSPEC_VOLUME_TEXTURE ) == 0 ) || ( ( m_nFlags & TSPEC_TEXTURE_ARRAY ) == 0 )
@@ -351,7 +349,6 @@ $^fE;
 (|$@I
 (|$@L
 (|$@f
-(|$PH
 (|$PI
 (|$Pf
 (|$`D
@@ -458,7 +455,6 @@ $^fE;
 *;Eot	;Ew
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
-+	V_log2_uint
 +C$Hc
 +D$8A
 +G$Hc
@@ -479,6 +475,7 @@ $^fE;
 ,Icl$
 ,W5y+
 ,X< w
+-	V_log2_uint
 -BH>t
 -adapter
 -autoconfig
@@ -507,7 +504,6 @@ $^fE;
 -threads
 -tools
 -vulkan
-.	V_logd
 ..om?
 .00cfg
 .>PJ;I:qE>
@@ -670,10 +666,10 @@ $^fE;
 .xJ>Hf
 .xdata
 .xdata$x
-/	V_logf
 /2GG>!B
 />58d%
 /TF<)VGy#WH
+0	V_logd
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -707,6 +703,7 @@ $^fE;
 0iN>/
 0w0c1
 0}0i1
+1	V_logf
 1#IND
 1#INF
 1#QNAN
@@ -721,7 +718,7 @@ $^fE;
 220323000000Z
 220801000000Z
 230714000000Z
-240620161300Z0/
+240627183245Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -792,7 +789,6 @@ $^fE;
 9s|~%H
 9t$Pu	
 9{\~9H
-:	V_powd
 :>)*	v
 :>t6k'
 :ALPHD
@@ -800,7 +796,6 @@ $^fE;
 :VP8 tP
 :VP8LtHD
 :VP8X
-;	V_powf
 ;.u1L
 ;?0123456789:;<=>?
 ;Cxr*H
@@ -811,7 +806,7 @@ $^fE;
 ;L$<|
 ;\$p|
 ;|$8|
-<	V_qsort
+<	V_powd
 <	w	@
 < t=<	t9
 <0:08
@@ -830,16 +825,18 @@ $^fE;
 <unknown multisample type
 <unknown>
 <utK@:
-=	V_qsort_s
+=	V_powf
 =SPB8u*
 =SPB8ue
-=X9~iib
 =imb;D
 =rIQU
+>	V_qsort
 >0<0:
 >L9|$xt
 >Mp$d
+>V_lh
 >jtm}S
+?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?49HoKC
@@ -1088,6 +1085,7 @@ A9:~-A
 A9<Fu
 A9Z<~bL
 A9nLu[H
+A9u<t3E
 A9v0t
 A:8ucI
 A;Exr
@@ -1680,6 +1678,8 @@ D!l$xA
 D#C|D
 D#C|H
 D#K|H
+D$ D9
+D$ D;
 D$ E3
 D$ H;
 D$ I9P
@@ -2093,7 +2093,6 @@ GrayResponseUnit
 Green
 Group3Options
 Group4Options
-G|$(H
 H	F H
 H	y A
 H SVWAVH
@@ -2107,9 +2106,10 @@ H3N I
 H4IcH8H
 H9(tO
 H90u'
-H95-I
+H95-J
 H97u+A
 H98t$H
+H9=$\
 H9G(t
 H9L$8
 H9L$Ht?H
@@ -2187,7 +2187,7 @@ Hc\$(M
 Hc\$0L+
 Hc\$XI
 Hc\$pI
-Hc]0L
+Hc] L
 Hc]wH
 Hc^XH
 Hcl$8
@@ -2201,6 +2201,7 @@ Hcuw3
 HcuwH
 HcuwLc
 Hc}wE3
+Hc~`H
 HelpSystem_001
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HostComputer
@@ -2209,6 +2210,7 @@ Huffman code size table overflow
 Huffman table 0x%02x was not defined
 I+4$H
 I9Jhs
+I;wxu
 I@H9k8u
 IBPool
 ICC Profile
@@ -2353,7 +2355,6 @@ K}*n:
 K~Je#>!
 L	B I
 L	G H;
-L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ H9
@@ -2464,6 +2465,7 @@ L$pf;
 L$pff
 L$xA+
 L$xf;
+L9%[^
 L97vH
 L9AHA
 L9aHA
@@ -2612,6 +2614,7 @@ Model
 ModelDocUtils001
 Monday
 MultiByteToWideChar
+N	V_snprintf
 N3`d?
 N>O=I9
 NAN(IND)
@@ -2619,6 +2622,7 @@ NAN(SNAN)
 NJ2"v
 NULL VP8Io parameter in VP8Decode().
 NV_NULL
+NZa9l
 N_U9203
 NavGameTest001
 NavSystem001
@@ -2685,6 +2689,7 @@ PA^A]A\_[
 PA^A]A\_^][
 PA^A]^
 PA_A^A\][
+PA_A^A\_^][
 PA_A^A]A\_^]
 PA_A^A]][
 PA_A^]
@@ -2764,7 +2769,6 @@ Quantization table 0x%02x was not defined
 Quantizing to %d = %d*%d*%d colors
 Quantizing to %d colors
 QueryPerformanceCounter
-R	V_sscanf
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -3014,6 +3018,7 @@ Success
 Sunday
 Suspension not allowed here
 SwizzlePlanarScanlineToInterleaved
+T	V_sscanf
 T$ Ei
 T$ H9
 T$ H;
@@ -3144,7 +3149,6 @@ UATAUAVH
 UATAVAWH
 UAUAWH
 UAVAWH
-UHc~`H
 UNKNOWN
 USAVAWH
 USVATAVAWH
@@ -3287,7 +3291,6 @@ VsInputSignatureElement_t::Schema_VerifyBindingIsRegistered
 VsInputSignature_t
 VsInputSignature_t::Schema_VerifyBindingIsRegistered
 Vulkan
-W	V_stricmp_fast
 W%	s;M@
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
@@ -3338,6 +3341,7 @@ XMLPacket
 XPosition
 XResolution
 XYZ, Luv
+Y	V_stricmp_fast
 Y9"SD
 Y>kX>M
 YCbCrCoefficients
@@ -3425,11 +3429,9 @@ Zpm"U
 \$pHc
 \$xu3M
 ])6M>&
-]1,@z
 ]>)2X
 ]J<0"0i3
 ]Lu*E;|$
-^	V_strtoi64
 ^<V7w
 ^RfN>
 ^oEZ_
@@ -3460,6 +3462,7 @@ _logb
 _nextafter
 _oD>Kg
 _tools.txt
+`	V_strtoi64
 `+!]?
 `.rdata
 `;k8|
@@ -3620,6 +3623,7 @@ dummyfilename.tif
 dxsupport
 dxsupport.cfg
 e(A_A^A]A\_^[]
+e*w,y$V
 e+000
 e0A_A^A]A\]
 e@A_A^]
@@ -3688,14 +3692,13 @@ fD9dD uA
 fD9dD uO
 fD9t$E
 fD9t$b
-fD;l$V
+fD;l$F
 fE9,Fu
 fE98t'
 fG9$Ou
 fHcK0L
 fJBGo
 false
-fbR4oNI
 fffff
 ffffff
 fffffff
@@ -4002,6 +4005,7 @@ o47Lc
 oAPfD
 oD$ f
 oD$ fA
+oD$0f
 oD$@H
 oD$IE+
 oI0fA
@@ -4294,14 +4298,13 @@ t-Lck
 t.fff
 t1@8l
 t3D82t.
-t5D;y
 t7@8sXt1H
 t7HcP
 t;@8w
 t;LcF
 t?HcS
 t@9+u,9s
-t@H95
+t@H953>
 t@McO4
 tBMcW<IcO@Lc
 tEHcR
@@ -4453,13 +4456,14 @@ wrong protocol type
 wwH9Q
 www.digicert.com1!0
 www.digicert.com1$0"
+x	H;A
 x >= 0 && x < m_nWidth
 x ATAVAWH
 x AUAVAWH
 x AVH
-x(H;B
-x*H;A
-x+H;B
+x#H;B
+x%H;A
+x&H;B
 x0Ysqx
 x8Lc A
 x<H9{0
@@ -4474,16 +4478,13 @@ xA_A^[]
 xCH;{
 xDH;{
 xEH;{
-xSH;A
-xSH;H
-xSH;P
+xSM;H
+xXH;A
+xXM;H
 x^j=|
-xiIKeR
 xlH;{
-xqH;A
-xqH;~
+xnH;~
 xs == 0
-xxH;H
 y >= 0 && y < m_nHeight
 y899u
 y@9i8|AH
@@ -4507,7 +4508,6 @@ zY;>u:m
 |$ AVAWH
 |$ AVH
 |$ D!
-|$ D;
 |$ E3
 |$ H+
 |$ H;
@@ -4534,6 +4534,7 @@ zY;>u:m
 |$0B+
 |$0E3
 |$0L+
+|$0M;
 |$8A_A^A\
 |$8Di
 |$8E;
@@ -4593,7 +4594,6 @@ zY;>u:m
 ~WH+]
 ~[Lc>D;~
 ~bfff
-~gfff
 ~hMcnxE
 ~qj#k"
 ~t&LN

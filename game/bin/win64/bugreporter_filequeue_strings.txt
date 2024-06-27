@@ -1,7 +1,7 @@
+		V_fread
 	!s99
 	V_fopenUTF8
 	V_fprintf
-	V_fread
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	_V_strnicmp_fast
@@ -31,6 +31,7 @@
 %s%c%04i%02i%02i-%02i%02i%02i-%s
 %s%cbug.txt
 ',=?k
+'/%$]
 (f*^[0
 (m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
 (m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
@@ -45,9 +46,7 @@
 +o'q)}
 ,/<-w
 ,W5y+
--A.	sf(}	c
 .00cfg
-.0X98
 .?AVCBugReporter@@
 .?AVIBaseInterface@@
 .?AVIBugReporter@@
@@ -110,7 +109,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240620161138Z0/
+240627182930Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -124,7 +123,6 @@
 3>N;kU
 3>fvw
 3mq+<
-3p$Mm
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
@@ -228,6 +226,7 @@ Bellevue1
 BinaryProperties_GetValue
 BugReporter005
 Build
+C ;C$t
 C0Hc	H
 C847u
 C:\buildworker\citadel_staging_win64\build\_build_\utils\bugreporter_filequeue\_vpc_bugreporter_filequeue\default\win64\_msvc_\Retail\bugreporter_filequeue.pdb
@@ -374,7 +373,6 @@ HcK H
 HcO H
 HcQ<H
 Hcu`M
-Huj}jV`
 I+4$H
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 InitializeCriticalSectionAndSpinCount
@@ -386,6 +384,7 @@ InvokeMiniDumpHandler
 IsDebuggerPresent
 IsGrowable()
 IsProcessorFeaturePresent
+IsValid()
 IsValidCodePage
 J>@G_
 January
@@ -395,7 +394,6 @@ KERNEL32.dll
 KeyValuesFromJSON
 K}*n:	
 K~Je#>!
-L	V_snprintf
 L!|$(L!
 L$ I;
 L$ L;
@@ -412,7 +410,6 @@ L$@;|
 L$@E3
 L$@H3
 L$HH3
-L;55W
 L?n(Zy&
 LCMapStringEx
 LCMapStringW
@@ -436,6 +433,7 @@ Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
 Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
 Monday
 MultiByteToWideChar
+N	V_snprintf
 Names
 November
 October
@@ -470,9 +468,11 @@ RtlLookupFunctionEntry
 RtlPcToFileHeader
 RtlUnwindEx
 RtlVirtualUnwind
+R|vs|A
 S0Q0O
 SA|X=G
 SVWATAUAVAWH
+SWg7,
 Saturday
 Savegame
 Screenshot
@@ -509,7 +509,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 V6E>`"(5
-V6Oc':
 VFileSystem017
 VWATAVAW
 VWATAVAWH
@@ -522,7 +521,6 @@ Valve Corp.0
 Valve Corp.1
 Version
 Versions
-W	V_stricmp_fast
 WATAUAVAWH
 WAVAWH
 WSOCK32.dll
@@ -531,8 +529,9 @@ Wednesday
 WideCharToMultiByte
 WriteConsoleW
 WriteFile
-Y	V_strlower_fast
+Y	V_stricmp_fast
 Y9"SD
+[	V_strlower_fast
 [K]taM?
 \$ VWATAUAVH
 \$(fB
@@ -543,6 +542,7 @@ Y9"SD
 \$HE3
 \\bugbait.valvesoftware.com\bugsub\config.txt
 ]J<0"0i3
+]T1Je
 _RDATA
 __based(
 __cdecl
@@ -645,6 +645,7 @@ l$ WH
 l2|X/gGe
 log10
 m0k0$
+m@2k&oq
 mL+7H
 m_Elements.IsValidIterator( it )
 m_Elements.IsValidIterator( m_LastAlloc )
@@ -658,7 +659,6 @@ n03>Pu
 netmask
 network
 ntelA
-o:r:R
 operator
 operator "" 
 operator co_await
@@ -679,6 +679,7 @@ resource/bugreporter.res
 restrict(
 source2
 stack buffer overrun (/GS failure)
+t!HcA
 t$ E3
 t$ WATAUAVAWH
 t$ WAVAWH
@@ -693,7 +694,7 @@ t-Lck
 t7HcP
 t8IcA
 tRLcY
-tUH95]W
+tUH95=[
 tier0.dll
 try_get_function
 try_get_module
@@ -704,19 +705,17 @@ u,!T$(H!T$
 u3HcH<H
 u4I9}(
 uED8r(t
+uhrc29
 username
 uzKs@>
 v=Y]Bv
 v@D8s(t
 vAD8s(t
 vKfffff
-vMpk?
-v[9qe
 valveusername
 vmc.com
 www.digicert.com1!0
 www.digicert.com1$0"
-w{;Q}
 x ATAVAWH
 x AVH
 x UAVAWH
@@ -731,6 +730,8 @@ y\PD>!
 |$XLc
 |Lu?c
 |b=})>
+|i&=c>
+});C$
 }LuHO
 ~qj#k"
 ~t&LN

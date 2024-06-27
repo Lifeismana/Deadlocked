@@ -2,6 +2,7 @@
 	!s99
 	D$0H
 	JR>8o
+	h3zE
 	kE>fvw
 	wOHc
 	wRHc
@@ -89,14 +90,14 @@
  (timestamp=%u which=%d state=%u percent=%d)
  (timestamp=%u which=%d touchpad=%d finger=%d x=%f y=%f pressure=%f)
  (timestamp=%u which=%d)
- (timestamp=%u which=%u iscapture=%s)
+ (timestamp=%u which=%u recording=%s)
  (timestamp=%u which=%u)
  (timestamp=%u windowid=%u event=%s data1=%d data2=%d)
  (timestamp=%u windowid=%u text='%s' start=%d length=%d)
  (timestamp=%u windowid=%u text='%s')
  (timestamp=%u windowid=%u which=%u button=%u state=%s clicks=%u x=%g y=%g)
  (timestamp=%u windowid=%u which=%u state=%08x x=%g y=%g [%g, %g, %g, %g, %g, %g])
- (timestamp=%u windowid=%u which=%u state=%s repeat=%s scancode=%u keycode=%u mod=%u)
+ (timestamp=%u windowid=%u which=%u state=%s repeat=%s scancode=%u keycode=%u mod=0x%x)
  (timestamp=%u windowid=%u which=%u state=%u x=%g y=%g xrel=%g yrel=%g)
  (timestamp=%u windowid=%u which=%u tip=%u state=%s x=%g y=%g axes=[%g, %g, %g, %g, %g, %g])
  (timestamp=%u windowid=%u which=%u tip=%u state=%s x=%g y=%g)
@@ -132,7 +133,6 @@
  A_A^_^]
  A_^]
  A__]
- A__^
  Base Class Array'
  Base Class Descriptor at (
  C>TQ
@@ -141,7 +141,6 @@
  D8d$8t
  E;~(
  H3E H3E
- Hc5r
  Ic0H
  Type Descriptor'
  _RDATA
@@ -156,11 +155,13 @@
  v.H+
 !)@:F,@zj/@\G1@|
 !>6'Y
+!UTF-8
 !hn7!
 "3DUfw
 "TEXCOORD
 "e?<<<<<<l?
 "texture1
+#>u,%M
 #D$,;C
 #define SDL_TEXCOORD_PRECISION
 #define SDL_TEXCOORD_PRECISION highp
@@ -251,7 +252,7 @@ $`C0M
 (L$`D
 (L$`H
 (L$`L
-(L$`~<D
+(L$`~JD
 (T$ D
 (T$ H
 (T$03
@@ -297,6 +298,7 @@ $`C0M
 (|$0D
 (|$0H
 (|$@D
+(|$@E
 (|$@H
 (|$@I
 (|$PD
@@ -338,7 +340,6 @@ $`C0M
 )T$`D
 )UXD)E@
 )\$0E
-)\$0fD
 )\$@D
 )\$@E
 )\$@H
@@ -354,7 +355,6 @@ $`C0M
 )t$0L
 )t$@A
 )t$@H
-)t$@Hc
 )t$@I
 )t$@L
 )t$@s+
@@ -383,6 +383,7 @@ $`C0M
 )|$pI
 )|B?d!
 *StO9>T
+*\q7sF/
 *dx.versionS
 *llvm.identS
 +L$LA
@@ -401,7 +402,6 @@ $`C0M
 ,hint:SDL_GAMECONTROLLER_USE_BUTTON_LABELS:=1
 -9D	/9a
 -BH>t
--NV21ta-
 ..om?
 .00cfg
 .>PJ;I:qE>
@@ -791,7 +791,7 @@ $`C0M
 220323000000Z
 220801000000Z
 230714000000Z
-240610220044Z0/
+240626192633Z0/
 241009235959Z0a1
 2>X94>
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -818,7 +818,6 @@ $`C0M
 4c@Cj
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 4i0=f0
-5-AB6
 504944564944
 5FjiT
 5G7A 
@@ -893,12 +892,13 @@ $`C0M
 9g>@3
 9k8t&H
 9l$Ht
+9l$`u&
 9oDu,
-9t$8v!3
 9{(~iL
 9{(~lH
 9{,uL
-9|$8v
+9|$8w0H
+9}/Hc
 :>)*	v
 :>t6k'
 :@:F<@Z
@@ -930,9 +930,8 @@ $`C0M
 ;datatL
 ;j`}kH
 ;jp}_H
-;t$4t
+;s u+;k$u&H
 ;t$`sN
-;{ u+;k$u&H
 ;{(|^;s,|YH
 ;{ttR
 ;|$0r
@@ -988,7 +987,6 @@ $`C0M
 >jtm}S
 >|I9D$`t6
 ?!5WOo
-?#@/{t
 ?+>^m
 ?49HoKC
 ?7zQ6$
@@ -1013,6 +1011,7 @@ $`C0M
 ?t_v>
 ?xz	@
 ?{Q}<
+@	;sU
 @ %z8
 @.data
 @.reloc
@@ -1169,9 +1168,16 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 AC Back
 AC Bookmarks
+AC Close
+AC Exit
 AC Forward
 AC Home
+AC New
+AC Open
+AC Print
+AC Properties
 AC Refresh
+AC Save
 AC Search
 AC Stop
 ADVAPI32.dll
@@ -1210,7 +1216,6 @@ A^A][
 A^A]_^[]
 A^_[]
 A^_^[]
-A_A\]
 A_A\_
 A_A]A\[]
 A_A]A\^]
@@ -1232,7 +1237,6 @@ A_A^A\_^[]
 A_A^A\_^][
 A_A^A]A\[
 A_A^A]A\]
-A_A^A]A\^
 A_A^A]A\^]
 A_A^A]A\_
 A_A^A]A\_^[]
@@ -1258,6 +1262,7 @@ AcquireSRWLockExclusive
 AcquireSRWLockShared
 Acquiring DirectInput device
 AddVectoredExceptionHandler
+Added HIDAPI device '%s' VID 0x%.4x, PID 0x%.4x, bluetooth %d, version %d, serial %s, interface %d, interface_class %d, interface_subclass %d, interface_protocol %d, usage page 0x%.4x, usage 0x%.4x, path = %s, driver = %s (%s)
 AdjustWindowRectEx
 AdjustWindowRectEx()
 AdjustWindowRectExForDpi
@@ -1288,13 +1293,6 @@ Audio stream not bound to an audio device
 Audio streams are bound to device ids from SDL_OpenAudioDevice, not raw physical devices
 Audio subsystem is not initialized
 Audio target '%s' not available
-AudioFastForward
-AudioMute
-AudioNext
-AudioPlay
-AudioPrev
-AudioRewind
-AudioStop
 August
 AuthenticAMD
 AvRevertMmThreadCharacteristics
@@ -1321,12 +1319,9 @@ BitBlt
 Blit combination not supported
 Break
 Brects
-BrightnessDown
-BrightnessUp
 Button name too large: %s
 C,fA;
 C,fB9D
-C-<0r(<1v
 C.B8D
 C0fB9D
 C4A_A^A]A\[
@@ -1358,7 +1353,7 @@ CONNECTED
 CRITICAL
 CWD>~3
 CXHcC`
-Calculator
+C`u	D
 CallNextHookEx
 CallWindowProcW
 Called convert_filters() with NULL filters (SDL bug)
@@ -1384,6 +1379,8 @@ CentaurHauls
 ChHcCp
 ChangeDisplaySettingsEx() failed: %s
 ChangeDisplaySettingsExW
+ChannelDown
+ChannelUp
 ChoosePixelFormat
 Chunk count in WAVE file exceeds limit of %u
 Clear
@@ -1407,7 +1404,6 @@ CommDlgExtendedError
 Command data exceeds HID report size
 CommandLineToArgvW
 CompareStringA
-Computer
 Conflicting window flags specified
 Conflicting window graphics flags specified: 0x%.8x
 Conflicting window type flags specified: 0x%.8x
@@ -1572,6 +1568,7 @@ Cursor not associated with the current mouse
 Cvf+Ctf
 Cx9{@~
 Cy2@K>
+C|9D$8v
 C|B9D
 D	|$dH
 D W?{W
@@ -1591,6 +1588,8 @@ D$ W0
 D$ fA
 D$ fD
 D$ fE
+D$ t!H
+D$ t&
 D$#0A
 D$#Hc
 D$$+D$,
@@ -1606,7 +1605,6 @@ D$(Hc
 D$(HcA
 D$(V0
 D$(fD
-D$,t-H
 D$080
 D$09A0
 D$09D$8
@@ -1619,8 +1617,6 @@ D$0H9D$8
 D$0H;
 D$0HcA
 D$0L+
-D$0Lc
-D$0LcCT3
 D$0Mc
 D$0f#
 D$0fA
@@ -1655,6 +1651,7 @@ D$@H+
 D$@H;G
 D$@Hc
 D$@HcD$8H
+D$@Lc
 D$@M;
 D$@UL
 D$DA+
@@ -1687,7 +1684,7 @@ D$TE3
 D$TMc
 D$TX%*
 D$TX%J
-D$TuhL
+D$TukL
 D$X'0
 D$XD9x
 D$XE3
@@ -1827,7 +1824,6 @@ D8c:u
 D8d$8t
 D8d$Xt
 D8l$:
-D8qFu
 D8t$"}
 D8t$8t
 D8t$ht
@@ -1877,7 +1873,6 @@ DISP_CHANGE_BADPARAM
 DISP_CHANGE_FAILED
 DRIVERINTERNALERROR
 DRIVERINVALIDCALL
-DSmN$Y
 DXBC$?kZ
 DXBC%
 DXBC*
@@ -1934,7 +1929,6 @@ DirectSoundCreate8
 DirectSoundEnumerateW
 DispatchMessageW
 DisplayConfigGetDeviceInfo
-DisplaySwitch
 DlF&gr
 Downloads folder unavailable before Vista
 DragAcceptFiles
@@ -2076,9 +2070,13 @@ FreeLibraryAndExitThread
 Frequency ratio is too high
 Frequency ratio is too low
 Friday
+Fu D8qFu
 Function not supported
 G"fA+
 G(A9X
+G-<0r(<1v
+G99IF
+G?<!t/
 GDI32.dll
 GET_ATTRIBUTES_VALUES failed for controller %p
 GL 3.x is not supported
@@ -2162,6 +2160,7 @@ GetDpiForMonitor
 GetDpiForWindow
 GetEnvironmentStringsW
 GetEnvironmentVariableA
+GetEraseBackgroundModeHint: invalid value for SDL_HINT_WINDOWS_ERASE_BACKGROUND_MODE. Fallback to default
 GetFileAttributesExW
 GetFileSizeEx
 GetFileTime
@@ -2251,11 +2250,10 @@ H!T$0D
 H)~ H;
 H+B0I
 H-^Eu
+H9-Q+
 H93t5H
-H95XA
 H97u+A
 H9;t\H
-H9=!m
 H9A u
 H9B t
 H9D$@
@@ -2284,7 +2282,6 @@ H9{ht
 H9{xu
 H;\$0r
 H;z8u
-H;{ht
 H;|$Hu
 H=factuA
 HA_A\_^][
@@ -2403,6 +2400,7 @@ HidD_SetNumInputBuffers
 HidD_SetOutputReport
 HidP KDR
 HidP_GetCaps
+Hk|f|JZT
 Hs0Q4
 HygonGenuine
 I(HcA8I
@@ -2450,6 +2448,7 @@ IPD9Axt
 ISGNh
 ISGNl
 ISO-8859-1
+IYUV!
 IYUVH
 IYUVI
 IYUVt
@@ -2559,11 +2558,9 @@ Joystick only has %d balls
 Joystick only has %d buttons
 Joystick only has %d hats
 K&>.yC
-KBDIllumDown
-KBDIllumToggle
-KBDIllumUp
 KCalways_on_top
 KERNEL32.dll
+KLLcM
 KP9Qxt
 KP9qxH
 Keypad !
@@ -2635,7 +2632,6 @@ L$ E3
 L$ I;
 L$ L+
 L$ L;
-L$ Lc
 L$ SATAVAWH
 L$ SH
 L$ SUVAVAWH
@@ -2720,7 +2716,7 @@ L$pD+
 L$pD;
 L$pE+
 L$pE3
-L$pH+CxH
+L$pH+
 L$pHcD$x
 L$xE3
 L$xHc
@@ -2733,7 +2729,6 @@ L9p`t
 L9t$(t/H
 L9xHt
 L9xPt
-L;vht
 L?UUUUUUU?
 L?n(Zy&
 LCMapStringEx
@@ -2746,6 +2741,7 @@ Late swap tearing currently unsupported
 LcA0H
 LcA4A
 LcA<E3
+LcC\E3
 LcD$HL
 LcD$PH
 LcD$`H
@@ -2754,7 +2750,6 @@ LcI4E3
 LcI4H
 LcI4L
 LcL$0L
-LcL$4HcL$8E;
 LcL$<L
 LcL$xMc
 LcMXLcU
@@ -2797,7 +2792,6 @@ M H1E
 M'y>0y
 M+4$I
 M0M9w0u
-M4+M<
 M9`8tT
 MB(iVR
 MFCreateAttributes
@@ -2833,7 +2827,16 @@ Mapping not available
 March
 McF43
 Md$@A
+MediaFastForward
+MediaPause
+MediaPlay
+MediaPlayPause
+MediaRecord
+MediaRewind
 MediaSelect
+MediaStop
+MediaTrackNext
+MediaTrackPrevious
 MessageBoxA
 Metal
 Metal is not supported.
@@ -2864,6 +2867,7 @@ NAN(SNAN)
 NES Controller
 NOTAVAILABLE
 NOTFOUND
+NV12!
 NV12H
 NV12t
 NV12t	A
@@ -2871,6 +2875,7 @@ NV12t2
 NV12t7
 NV12tu
 NV12u
+NV21!
 NV21H
 NV21t
 NV21t$A
@@ -2879,6 +2884,7 @@ NV21t;
 NV21tC
 NV21tT
 NV21tX
+NV21tc
 NV21tu
 NV21u
 NV21w,tB
@@ -3100,7 +3106,7 @@ RDEF\
 RENDER
 RIFF form type is not WAVE (not a Waveform file)
 RIFF size truncates chunk
-RSDSI
+RSDS)
 RTS00
 RTS0H
 RaiseException
@@ -3130,6 +3136,7 @@ ReleaseSemaphore() failed
 RemoveDirectoryW
 RemovePropW
 RemoveVectoredExceptionHandler
+Removing HIDAPI device '%s' VID 0x%.4x, PID 0x%.4x, bluetooth %d, version %d, serial %s, interface %d, interface_class %d, interface_subclass %d, interface_protocol %d, usage page 0x%.4x, usage 0x%.4x, path = %s, driver = %s (%s)
 Removing effect from the device
 Render targets not supported by OpenGL
 Renderer already associated with window
@@ -3181,10 +3188,8 @@ SDL failed to get a vertex buffer for this Direct3D 9 rendering batch!
 SDL generic title storage driver
 SDL generic user storage driver
 SDL offscreen video driver
-SDL-prerelease-3.1.2-433-g44f66b5c8
+SDL-prerelease-3.1.2-615-g8949de397
 SDL.display.HDR_enabled
-SDL.display.HDR_headroom
-SDL.display.SDR_white_point
 SDL.internal.texture.parent
 SDL.internal.window.renderer
 SDL.internal.window.surface
@@ -3226,6 +3231,7 @@ SDL.surface.colorspace
 SDL.surface.tonemap
 SDL.texture.HDR_headroom
 SDL.texture.SDR_white_point
+SDL.texture.access
 SDL.texture.colorspace
 SDL.texture.d3d11.texture
 SDL.texture.d3d11.texture_u
@@ -3233,6 +3239,8 @@ SDL.texture.d3d11.texture_v
 SDL.texture.d3d12.texture
 SDL.texture.d3d12.texture_u
 SDL.texture.d3d12.texture_v
+SDL.texture.format
+SDL.texture.height
 SDL.texture.opengl.target
 SDL.texture.opengl.tex_h
 SDL.texture.opengl.tex_w
@@ -3245,6 +3253,10 @@ SDL.texture.opengles2.texture
 SDL.texture.opengles2.texture_u
 SDL.texture.opengles2.texture_uv
 SDL.texture.opengles2.texture_v
+SDL.texture.width
+SDL.window.HDR_enabled
+SDL.window.HDR_headroom
+SDL.window.SDR_white_level
 SDL.window.shape
 SDL.window.win32.hdc
 SDL.window.win32.hwnd
@@ -3424,7 +3436,6 @@ SDL_EVENT_DID_ENTER_BACKGROUND
 SDL_EVENT_DID_ENTER_FOREGROUND
 SDL_EVENT_DISPLAY_ADDED
 SDL_EVENT_DISPLAY_CONTENT_SCALE_CHANGED
-SDL_EVENT_DISPLAY_HDR_STATE_CHANGED
 SDL_EVENT_DISPLAY_MOVED
 SDL_EVENT_DISPLAY_ORIENTATION
 SDL_EVENT_DISPLAY_REMOVED
@@ -3497,6 +3508,7 @@ SDL_EVENT_WINDOW_ENTER_FULLSCREEN
 SDL_EVENT_WINDOW_EXPOSED
 SDL_EVENT_WINDOW_FOCUS_GAINED
 SDL_EVENT_WINDOW_FOCUS_LOST
+SDL_EVENT_WINDOW_HDR_STATE_CHANGED
 SDL_EVENT_WINDOW_HIDDEN
 SDL_EVENT_WINDOW_HIT_TEST
 SDL_EVENT_WINDOW_ICCPROF_CHANGED
@@ -3570,11 +3582,11 @@ SDL_GamepadHasSensor
 SDL_GamepadSensorEnabled
 SDL_GetAssertionHandler
 SDL_GetAssertionReport
-SDL_GetAudioCaptureDevices
 SDL_GetAudioDeviceFormat
 SDL_GetAudioDeviceName
 SDL_GetAudioDriver
-SDL_GetAudioOutputDevices
+SDL_GetAudioPlaybackDevices
+SDL_GetAudioRecordingDevices
 SDL_GetAudioStreamAvailable
 SDL_GetAudioStreamData
 SDL_GetAudioStreamDevice
@@ -3614,6 +3626,7 @@ SDL_GetDaysInMonth
 SDL_GetDefaultAssertionHandler
 SDL_GetDefaultCursor
 SDL_GetDefaultKeyFromScancode
+SDL_GetDefaultScancodeFromKey
 SDL_GetDesktopDisplayMode
 SDL_GetDisplayBounds
 SDL_GetDisplayContentScale
@@ -3847,6 +3860,7 @@ SDL_GetTextureColorMod
 SDL_GetTextureColorModFloat
 SDL_GetTextureProperties
 SDL_GetTextureScaleMode
+SDL_GetTextureSize
 SDL_GetThreadID
 SDL_GetThreadName
 SDL_GetTicks
@@ -3882,6 +3896,7 @@ SDL_GetWindowSizeInPixels
 SDL_GetWindowSurface
 SDL_GetWindowSurfaceVSync
 SDL_GetWindowTitle
+SDL_GetWindows
 SDL_GlobDirectory
 SDL_GlobStorageDirectory
 SDL_HAPTIC_GAIN_MAX
@@ -3991,6 +4006,7 @@ SDL_JOYSTICK_ZERO_CENTERED_DEVICES
 SDL_Joystick
 SDL_JoystickConnected
 SDL_JoystickEventsEnabled
+SDL_KEYCODE_OPTIONS
 SDL_LOGGING
 SDL_LoadBMP
 SDL_LoadBMP_IO
@@ -4026,6 +4042,8 @@ SDL_MOUSE_DOUBLE_CLICK_RADIUS
 SDL_MOUSE_DOUBLE_CLICK_TIME
 SDL_MOUSE_FOCUS_CLICKTHROUGH
 SDL_MOUSE_NORMAL_SPEED_SCALE
+SDL_MOUSE_RELATIVE_CLIP_INTERVAL
+SDL_MOUSE_RELATIVE_CURSOR_VISIBLE
 SDL_MOUSE_RELATIVE_MODE_CENTER
 SDL_MOUSE_RELATIVE_MODE_WARP
 SDL_MOUSE_RELATIVE_SPEED_SCALE
@@ -4149,7 +4167,6 @@ SDL_PumpEvents
 SDL_PushEvent
 SDL_PutAudioStreamData
 SDL_QUIT_ON_LAST_WINDOW_CLOSE
-SDL_QueryTexture
 SDL_Quit
 SDL_QuitSubSystem
 SDL_RENDER_DIRECT3D11_DEBUG
@@ -4170,6 +4187,7 @@ SDL_ReadS32BE
 SDL_ReadS32LE
 SDL_ReadS64BE
 SDL_ReadS64LE
+SDL_ReadS8
 SDL_ReadStorageFile
 SDL_ReadSurfacePixel
 SDL_ReadU16BE
@@ -4296,6 +4314,7 @@ SDL_SetRenderScale
 SDL_SetRenderTarget
 SDL_SetRenderVSync
 SDL_SetRenderViewport
+SDL_SetScancodeName
 SDL_SetStringProperty
 SDL_SetSurfaceAlphaMod
 SDL_SetSurfaceBlendMode
@@ -4420,6 +4439,7 @@ SDL_WINDOWS_CLOSE_ON_ALT_F4
 SDL_WINDOWS_DPI_AWARENESS
 SDL_WINDOWS_ENABLE_MENU_MNEMONICS
 SDL_WINDOWS_ENABLE_MESSAGELOOP
+SDL_WINDOWS_ERASE_BACKGROUND_MODE
 SDL_WINDOWS_FORCE_MUTEX_CRITICAL_SECTIONS
 SDL_WINDOWS_FORCE_SEMAPHORE_KERNEL
 SDL_WINDOWS_INTRESOURCE_ICON
@@ -4450,6 +4470,7 @@ SDL_WriteS32BE
 SDL_WriteS32LE
 SDL_WriteS64BE
 SDL_WriteS64LE
+SDL_WriteS8
 SDL_WriteStorageFile
 SDL_WriteU16BE
 SDL_WriteU16LE
@@ -4527,7 +4548,11 @@ SDL_isblank
 SDL_iscntrl
 SDL_isdigit
 SDL_isgraph
+SDL_isinf
+SDL_isinff
 SDL_islower
+SDL_isnan
+SDL_isnanf
 SDL_isprint
 SDL_ispunct
 SDL_isspace
@@ -4555,6 +4580,12 @@ SDL_pow
 SDL_powf
 SDL_qsort
 SDL_qsort_r
+SDL_rand
+SDL_rand_bits
+SDL_rand_bits_r
+SDL_rand_r
+SDL_randf
+SDL_randf_r
 SDL_realloc
 SDL_round
 SDL_roundf
@@ -4566,6 +4597,7 @@ SDL_sinf
 SDL_snprintf
 SDL_sqrt
 SDL_sqrtf
+SDL_srand
 SDL_sscanf
 SDL_strcasecmp
 SDL_strcasestr
@@ -4768,7 +4800,6 @@ Stale SDL_PenID
 Steam
 Steam Controller
 Steam Deck
-Steam Virtual Gamepad
 Steam cloud is disabled for this application
 Steam cloud is disabled for this user
 SteamAPI_ISteamRemoteStorage_BeginFileWriteBatch
@@ -4806,8 +4837,8 @@ SwapBuffers
 SwapBuffers()
 SwitchPro
 SysReq
-System audio capture device
-System audio output device
+System audio playback device
+System audio recording device
 SystemParametersInfoA
 SystemParametersInfoW
 SystemTimeToFileTime
@@ -4946,7 +4977,6 @@ UTF-16LE
 UTF-32
 UTF-32BE
 UTF-32LE
-UTF-8
 UTF16
 UTF16BE
 UTF16LE
@@ -4971,11 +5001,13 @@ UWATAUAWH
 UWATAVAWH
 UWAUAVAWH
 UWAVH
+UYVY!
 UYVYt
 UYVYt	H
 UYVYt0H
 UYVYu
 UYVYu^
+Ugn^b
 Unable to create DIB
 Unable to create DXGI interface
 Unable to create Direct3D interface
@@ -5218,7 +5250,6 @@ Writing to
 Wrong format
 Wrong preset coefficients in MS ADPCM format header
 X 843"8
-X UATAWH
 X!t5~
 X-Box
 X0HcN
@@ -5263,8 +5294,9 @@ Y + U + V would overflow
 Y + U would overflow
 Y9"SD
 Y>kX>M
-YA0t0
+YAPt0
 YD$@f
+YUY2!
 YUY2t
 YUY2t 
 YUY2t A
@@ -5273,6 +5305,7 @@ YUY2t"A
 YUY2t#
 YUY2t/
 YUY2t3
+YV12!
 YV12, IYUV, NV12, NV21 textures only support full surface locks
 YV12D
 YV12H
@@ -5285,6 +5318,7 @@ YV12t$
 YV12t6
 YV12u
 YV12u(H
+YVYU!
 YVYUt
 YVYUt(
 YVYUt.
@@ -5301,6 +5335,7 @@ You probably don't have a working Vulkan driver installed. %s %s %s(%d)
 Ypitch
 Yplane
 Z< tV<,u53
+ZVfJ@
 Z\>z8
 Zod(^?
 [*ncd>0
@@ -5364,7 +5399,6 @@ Zod(^?
 \$PM+
 \$Pt	Di
 \$XE3
-\$`E3
 \$`M+
 \$`fA
 \$gm?
@@ -5386,7 +5420,6 @@ Zod(^?
 ^RfN>
 _ A9n
 _ H;_@tKH
-_Et>c
 _RDATA
 _SDL_WAKEUP
 __FUNCTION__, ID3D11Device1::CreateInputLayout
@@ -5492,6 +5525,7 @@ access
 adapterIndex
 aligning pitch would overflow
 altivec
+always
 always_ignore
 arm-simd
 asinf
@@ -5544,6 +5578,7 @@ d$9fD
 d$PA+
 d$PE3
 d$PLc
+d$XE3
 d$hE3
 d$hE8
 d3d11.dll
@@ -5563,6 +5598,7 @@ dddd, MMMM dd, yyyy
 default
 desc missing sensor descriptions
 desc missing touchpad descriptions
+dhIok
 direct-to-disk audio
 direct3d
 direct3d11
@@ -5655,6 +5691,7 @@ f9G"u/
 f9G"uBL
 f9G`t'Hc
 f9G`t*Hc
+f9H u
 f9H uP
 f9H"t6H
 f9H"uE
@@ -5749,6 +5786,7 @@ force
 format
 frame
 free_func
+french_numbers
 fullscreen
 g9@x!8
 gH9{ t
@@ -5914,6 +5952,7 @@ ignorezero
 image/bmp
 imm32.dll
 index must be in the range of 0 - %d
+initial
 inity
 input.color
 input.pos
@@ -5945,6 +5984,7 @@ k_eControllerType_
 kz#+c
 l$ ATAVAWD
 l$ AVH
+l$ E3
 l$ VAVAWH
 l$ VAWLcI43
 l$ VAWLcQ43
@@ -6000,6 +6040,7 @@ l$pfA
 l$pfE
 l2|X/gGe
 l9\$p~_H
+latin_letters
 leftshoulder
 leftstick
 lefttrigger
@@ -6039,6 +6080,7 @@ misc5
 misc6
 modal
 model
+modified
 mouse_grabbed
 mouse_input
 mutex
@@ -6052,6 +6094,7 @@ n]?iJ
 nan(ind)
 nan(snan)
 ncolors
+never
 newpath
 nintendo_joycons_combined
 no current context
@@ -6200,7 +6243,9 @@ righty
 s HcP@
 s#IcU
 s%fD9
+s%fff
 s(HcC
+sWc_)
 s`D9sdtYH
 sampler0
 scRGB_output
@@ -6244,9 +6289,9 @@ system
 t	9{tu
 t	L9c
 t <.u
-t!9ptt
 t!LcC0H
 t!fff
+t"9itt
 t"HcK8H
 t#D9X
 t$ ATAVAWD
@@ -6287,7 +6332,6 @@ t$8H+
 t$8Ic
 t$8f;
 t$8fE
-t$@E3
 t$@Lc
 t$@Mc
 t$@|^H
@@ -6439,14 +6483,13 @@ u_texture
 u_texture_u
 u_texture_v
 u`9{xts
-u`D9%T
+u`D9%
 uafD;
 ue!T$(H!T$ 
 uhfE;
 uinput-fpc
 ujGs?
 ukE9|
-unD9s
 unable to create an EGL window surface
 unable to show color buffer in an OS-native window
 unaware
@@ -6469,10 +6512,12 @@ uniform vec3 Yoffset;
 uniform vec3 u_offset;
 unknown
 unknown object
+unmodified
 unused_pad0
-uoH9-}x
+uoH9-
 upHcK
 userdata
+utD9w
 utility
 uxH9=
 uxHcC
@@ -6775,7 +6820,6 @@ x:H;|$0r3D
 x=H9l$hu
 xA_A^A]A\][
 xA_A^A]A\_^][
-xC;l$0u
 xG9|$0v6
 xZD9chtd
 x]9\$PvW
@@ -6802,7 +6846,6 @@ z>@G'h
 z>eR}>
 z?u=E
 zDuBD
-zJp3\
 zKuI3
 zSuQE
 zY;>u:m	
@@ -6866,6 +6909,7 @@ znul%
 |$8f;k:s,
 |$8u1H
 |$8u@H
+|$<fD
 |$@-H
 |$@8E:tS
 |$@A_A^A]A\
@@ -6875,6 +6919,7 @@ znul%
 |$@I;n w
 |$@Ic
 |$@u	L
+|$HD:
 |$HLc|$hLc
 |$P-H
 |$PE3
@@ -6887,11 +6932,13 @@ znul%
 |$PujH
 |$X8EitU
 |$XE3
+|$XHc
 |$XL+
 |$\.u
 |$`9h$t
 |$`A+
 |$`D;
+|$`E3
 |$`H;
 |$`fA
 |$hE3
@@ -6925,4 +6972,3 @@ znul%
 ~ZLcd$xL
 ~qj#k"
 ~t&LN
-~wgf9q

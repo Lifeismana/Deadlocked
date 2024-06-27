@@ -5,6 +5,8 @@
 		base = "Base.Weapon"
 		preload_vsnds = true
 		volume = 2.000000
+		limiter_max = 0.000000
+		volume_fade_out = 0.250000
 		vsnd_files = 
 		[
 			"sounds/weapons/hornet/vindicta_weapon_fire_01.vsnd",
@@ -313,12 +315,14 @@
 	Hornet.Hornet.Sting.Cast = 
 	{
 		base = "Base.Ability"
-		volume = 0.000000
+		volume = -4.000000
 		play_from_listener_player = 1.000000
+		volume_offset_player = -2.000000
 		vsnd_files = 
 		[
 			"sounds/abilities/hornet/vindicta_crow_familiar_cast.vsnd",
 		]
+		vsnd_duration = 3.173447
 	}
 	Hornet.Hornet.Sting.Proj.Lp = 
 	{

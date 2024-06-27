@@ -4,6 +4,7 @@
 	{
 		base = "Base.Damage.Send"
 		limiter_event_name = "Damage.Send"
+		volume = 2.000000
 		vsnd_files = 
 		[
 			"sounds/hit_indicators/damage_send_default_01.vsnd",
@@ -19,9 +20,9 @@
 	{
 		base = "Base.Damage.Send"
 		limiter_event_name = "Damage.Send.Crit"
-		volume = 3.000000
+		volume = 1.000000
 		limiter_on = 1.000000
-		limiter_max = 3.000000
+		limiter_max = 0.000000
 		limiter_match_entity = 1.000000
 		limiter_stop_oldest = true
 		vsnd_files = 

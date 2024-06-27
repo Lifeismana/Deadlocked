@@ -50,7 +50,7 @@
   Problem     : Enum value did not match field type:
   Problem     : Field is not the right type for this message:
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$8
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -80,21 +80,21 @@
  = { <proto text format> }". To set fields within it, use syntax like "
  A;6|
  A\_[
+ A]A\_^[
  A^A\_^[
  A^A]A\^[
  A^A]A\_[
  A^A]A\_^][
  A^A]_
  A^A]_^[
- A^A]_^]
  A^][
+ A^^]
  A^_[
  A^_]
  A^_^
  A^_^][
  A_A\_
  A_A\_^]
- A_A]_^[
  A_A]_^]
  A_A^A\
  A_A^A\][
@@ -131,10 +131,8 @@
  Hc1L
  Hc9H
  Hc9L
- HcBLM
  HcD$PI
  HcD$`I
- K:^vL
  Lc)H
  NETWORK_DISCONNECT_CLIENT_NO_MAP
  NETWORK_DISCONNECT_REJECT_BANNED
@@ -487,8 +485,10 @@ $schemasystem/schema_enable_defines.h
 (("**,
 ((6"8(:,<*>
 (0`hpx
+(5P~	
 (A^A\^[
 (A^A]^[
+(A^A]_^
 (A^_][
 (A^_^[
 (A^_^]
@@ -596,6 +596,7 @@ $schemasystem/schema_enable_defines.h
 )#GameUI_Disconnect_SteamDeny_BadAntiCheat
 )#Player_DisconnectReason_ConvictedAccount
 )#Player_DisconnectReason_UntrustedAccount
+))X2`A=
 )<$E3
 )<$fD
 )>6{1n
@@ -963,14 +964,12 @@ $schemasystem/schema_enable_defines.h
 0A_A^_^]
 0D;v<|
 0D;{<
-0GR{>9(
 0HcD$pM
 0Lc\$`I
 0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
 0X8b?~
 0iN>/
 0t-Ic
-0tdHc
 0w0c1
 0}0i1
 1#IND
@@ -990,7 +989,7 @@ $schemasystem/schema_enable_defines.h
 220323000000Z
 220801000000Z
 230714000000Z
-240620161257Z0/
+240627200639Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1019,10 +1018,10 @@ $schemasystem/schema_enable_defines.h
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+5l;v<0
 6*f(_
 6I]Dc
 6OB,n_
-6c'Z^:hwR
 6p7MOf
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
@@ -1049,7 +1048,7 @@ $schemasystem/schema_enable_defines.h
 9)~4H
 9)~P3
 90u(H
-92vr+
+97~BL
 98t H
 98~(H
 98~+H
@@ -1134,7 +1133,6 @@ $schemasystem/schema_enable_defines.h
 <undefined>
 <unknown>
 <utK@:
-=	V_qsort_s
 =%H5<mN
 ==MQ?
 =SHX?
@@ -1150,6 +1148,7 @@ $schemasystem/schema_enable_defines.h
 >f;D$0t
 >f;D$4t
 >jtm}S
+?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?333?
@@ -1266,8 +1265,8 @@ $schemasystem/schema_enable_defines.h
 @A^_]
 @A^_^
 @A^_^][
-@A_A\_^[
 @A_A^A\
+@A_A^A\_^
 @A_A^A\_^[]
 @A_A^A\_^][
 @A_A^A]
@@ -1283,8 +1282,8 @@ $schemasystem/schema_enable_defines.h
 @HD9$(u#Lc3H
 @HHcB$;B(u
 @HPX&I
-@HPX`hv@A
-@HVPO
+@HPX`hv`:
+@HVpH
 @Hc93
 @PHcB(;B,u
 @SATAUAVAWH
@@ -1303,7 +1302,6 @@ $schemasystem/schema_enable_defines.h
 @SUVWAVAWH
 @SUVWAVH
 @SUVWH
-@SUWAUH
 @SUWAVH
 @SUWH
 @SVATAUAVH
@@ -1314,10 +1312,10 @@ $schemasystem/schema_enable_defines.h
 @SVAVH
 @SVAWH
 @SVWATAUAVAWH
+@SVWATAUH
 @SVWATAVAWH
-@SVWATAWH
 @SVWAUAVH
-@SVWAUAWH
+@SVWAUH
 @SVWAVAWH
 @SVWAVH
 @SVWH
@@ -1327,6 +1325,7 @@ $schemasystem/schema_enable_defines.h
 @SWAVH
 @SWAWH
 @UATAUAVAWH
+@UATAVAWH
 @UAUAVAWH
 @UAVAWH
 @UAVH
@@ -1336,7 +1335,6 @@ $schemasystem/schema_enable_defines.h
 @USVWATAUAVH
 @USVWATAVAWH
 @USVWAUAVAWH
-@USVWAUAWH
 @USVWAVAWH
 @USVWAVH
 @USWH
@@ -1349,6 +1347,7 @@ $schemasystem/schema_enable_defines.h
 @UWAVH
 @UWAWH
 @VAVAWH
+@VWAUAVH
 @VWAVAWH
 @VWAWH
 @WATAUAWH
@@ -1360,7 +1359,6 @@ $schemasystem/schema_enable_defines.h
 @_RDATA
 @b;zO]
 @ffffff
-@jpd~
 @t#H;
 @tZH;
 @tfH;
@@ -1390,12 +1388,8 @@ A9]8~n3
 A9]P~B3
 A9]h~@3
 A9^ ~G3
-A9t$ 
-A9t$ ~EL
 A9u(~mL
 A9u@~jL
-A;<$|
-A;D$ 
 A;Fp~DA
 A;Ft~DA
 A;Gh~@A
@@ -1437,13 +1431,13 @@ A\_[]
 A]A\_
 A]A\_^[]
 A]A\_^]
-A]_][
+A]_^[
 A^A\^[
+A^A\^]
 A^A\_[]
 A^A\_^[
 A^A\_^[]
 A^A]A\
-A^A]A\^]
 A^A]A\_]
 A^A]A\_^
 A^A]A\_^[]
@@ -1460,7 +1454,6 @@ A_A\_]
 A_A]A\^[
 A_A]A\_^[
 A_A]A\_^]
-A_A]_^[]
 A_A^A\
 A_A^A\_]
 A_A^A\_^
@@ -1468,6 +1461,7 @@ A_A^A\_^[
 A_A^A\_^[]
 A_A^A\_^][
 A_A^A]A\]
+A_A^A]A\^]
 A_A^A]A\_
 A_A^A]A\_^[
 A_A^A]A\_^[]
@@ -1562,11 +1556,11 @@ Boolean default must be true or false.
 BoxIntersectRTEnvNode
 Building map visibility
 Built %s clusters in %.1fs
-C H!o
 C H+X(
 C H+X(I
 C H;W
 C HcK$;
+C I!.H
 C$HcK(Hc
 C(D9C0D
 C(HcK,;
@@ -2172,7 +2166,6 @@ D$(E3
 D$(H;
 D$(H;Q
 D$(Hc
-D$(Hk
 D$(Lc?Ic
 D$(fI
 D$0#C
@@ -2251,8 +2244,8 @@ D$HtF
 D$HtG
 D$HtH
 D$HtQ
-D$HtR
 D$HtT
+D$LHc
 D$P%A
 D$PD8
 D$PD;
@@ -2263,19 +2256,20 @@ D$PI;
 D$PL;
 D$Pf;
 D$PtF
-D$PtL
-D$PtP
-D$PtS
+D$PtM
+D$PtO
 D$T9E
 D$T;E
 D$TD;
-D$THc
 D$TfA
 D$XH;
 D$XH;E
 D$XHc
 D$XL;
 D$Xf;
+D$XtQ
+D$XtS
+D$XtT
 D$`A;E
 D$`D9p }
 D$`D;
@@ -2294,15 +2288,11 @@ D$h9t$P
 D$hH;
 D$hf;
 D$hff
-D$htL
-D$htP
-D$htQ
-D$hthL
+D$htqL
 D$pA+
 D$pH;
 D$pHc
 D$pL;
-D$pMc
 D$pf;
 D$pu3M
 D$tA;
@@ -2312,7 +2302,6 @@ D$xH+
 D$xLc
 D$xM+
 D$xf;
-D$xtnL
 D+3L9c0u	
 D+A@H
 D+LLc
@@ -2363,6 +2352,7 @@ D9d$ t+
 D9f@~LA
 D9ft~8I
 D9f|~:I
+D9l$P
 D9l$`u1
 D9m |EH
 D9q }
@@ -2386,7 +2376,7 @@ D;q }pL9T$P
 D;q }uH
 D;r }
 D;sHu
-D;ugr
+D;uwr
 D;v(|
 D;w0|
 D;wM9oxt	I
@@ -2435,7 +2425,6 @@ E9f(~]
 E9w ~*I
 E;A(|
 E;N }2Mc
-E;T$ |
 E;](|
 E;g(|
 E;|$(
@@ -2536,8 +2525,8 @@ F @8xHt_H
 F H+H(I
 F H+p(I
 F L+@(I
-F(H9\
-F(I9\
+F(H9\00tdHc
+F(J9\
 F89HXtRA
 F>qUxv
 FATAL
@@ -2555,6 +2544,8 @@ FPD	~
 FPD	~(H
 FPE	~
 FPE	~(H
+FRf9ERt
+FRfA9GRt
 Failed to read %s
 Failed to save unsupported class
 Failed to unserialize ray tracing environment.
@@ -2614,7 +2605,6 @@ Found invalid proto option data for:
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
-G	V_sincosf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -2632,12 +2622,9 @@ GD$pH
 GEOVH
 GH3C0%
 GHL9d
-GJ)?r
 GPD	u
 GPD	}
-GRf9ERt
-GRfA9ERt
-GSD9)~mE3
+GSD9!~rE3
 GT$8H
 GT$HA
 G\$(L
@@ -2759,12 +2746,12 @@ H-^Eu
 H8Lc$
 H9(tO
 H92tBA
-H950a
-H957:
-H95Ta
+H954X
+H95g'
 H97u+A
 H98t2
-H98t7
+H9=Jo
+H9=oz
 H9A s
 H9A u)M
 H9C H
@@ -2808,7 +2795,6 @@ H;}0t
 H;~ r
 HA^_][
 HA^_^[
-HA_A^A]A\_^[]
 HA_A^_[
 HA_A^_]
 HA_A^_^
@@ -2826,6 +2812,7 @@ Hc;;{
 HcAxE3
 HcB(H;
 HcBLH
+HcBLL
 HcC ;
 HcC H
 HcC L
@@ -2921,7 +2908,7 @@ HelpSystem_001
 Hex and octal numbers must be integers.
 Hint %.2f (%.2f regions)
 HostStateMgr001
-I	V_sinf
+I	V_sincosf
 I#I0H
 I#J0H
 I#M0H
@@ -2958,6 +2945,8 @@ Ic4$M
 Ic6A;v
 Ic>Lc{(
 Ic@8I
+Ic@LI
+Ic@LK
 IcA H
 IcA$H
 IcA(H
@@ -3078,6 +3067,7 @@ J<L4,&
 J>@G_
 JSType
 January
+K	V_sinf
 K HcC$Hc
 K$HcC(;
 K&>.yC
@@ -3112,14 +3102,12 @@ KeyValues3::Internal_ExpandCompactArray
 KeyValues3::Internal_FreeAllocation
 KeyValues3::Internal_GetArrayElementsArray
 KeyValues3::Internal_PrepareForInternalTypeAndNewData
-KeyValues3::Internal_SetValueAnyArray
 KeyValues3::IsValidTypeCombination
 KeyValues3::Metadata_GetFilename::<lambda_1>::operator ()
 KeyValues3::Metadata_GetLineColumn::<lambda_1>::operator ()
 KeyValues3::SetMemberIntArray
 K}*n:	
 K~Je#>!
-L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#^0I
@@ -3170,7 +3158,6 @@ L$0Mc
 L$0McAhM
 L$0f;
 L$0fA
-L$0fD
 L$0fH
 L$0fI
 L$4+L$8
@@ -3196,7 +3183,6 @@ L$@f;
 L$@uU
 L$AE3
 L$DH;T$xt
-L$EE3
 L$H;^(
 L$HE3
 L$HH3
@@ -3204,8 +3190,6 @@ L$HHc\$@I
 L$HLc
 L$Hf;
 L$Hr'
-L$LA;Ox
-L$ME3
 L$P+G$E3
 L$PE3
 L$PH3
@@ -3215,6 +3199,7 @@ L$QE3
 L$XD;v$
 L$XH3
 L$XH;M
+L$XIc|
 L$Xf;
 L$`;M
 L$`E3
@@ -3224,11 +3209,16 @@ L$`Ic
 L$`Lc
 L$`f;
 L$h+G$3
+L$h+G$L
 L$h;M
+L$hA+E
 L$hH+
 L$hH3
 L$hH;
 L$hf;
+L$p+G$L
+L$pA+
+L$pA+E
 L$pD+
 L$pE3
 L$pH+
@@ -3237,8 +3227,10 @@ L$pH9
 L$pI+
 L$pf;
 L$tfD
+L$x+G$L
 L$x;E
 L$xA+
+L$xA+E
 L$xH+
 L$xH3
 L$xf;
@@ -3249,8 +3241,7 @@ L+H0H
 L+i0I
 L9#u/H
 L92tDA
-L958v
-L95Gu
+L95mg
 L9;u	H
 L9@ s
 L9BHA
@@ -3265,7 +3256,6 @@ L9p tkI
 L9s u$H
 L9{0u	
 L9|$pt
-L;5 b
 L;A r
 L;EPL
 L;Q s
@@ -3308,6 +3298,7 @@ LcT$ E3
 LcT$dA
 Lc\$`
 Lcc(D;c8u
+LccxE
 Lcd$0
 Lcl$ A
 Lcl$HD;
@@ -3315,7 +3306,6 @@ Lct$PA
 Lct$XHc
 Lcv D
 Lcw@D;wPu
-Lc{xE
 Leaf %d has missing voxels %llx
 LeaveCriticalSection
 Level geo input to VIS
@@ -3336,8 +3326,7 @@ LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 LookAtList
 M#}0I
-M0Mc_LI
-M6tCV
+M0Lc^LI
 M90u7
 M9` u
 M9g(u
@@ -3349,7 +3338,7 @@ MGD;}
 MGetKV3ClassDefaults
 MM/dd/yy
 MODEL_PROCESSING_SERVICES_INTERFACE_001
-MPfA;OPfA
+MPf;NPf
 Main thread clear batches.
 MakeStringToken
 Map has %s (%s max) lines of sight
@@ -3427,7 +3416,7 @@ Must call SetMetadataEnabled on the root KV3 context to track metadata
 MutableMessage
 MutableRawRepeatedField
 MutualVisibilityMatrix
-N D94
+N	V_snprintf
 N(+V0
 N0+V8
 N3`d?
@@ -3494,6 +3483,7 @@ O$M9o
 O(HcV
 O0+W8
 O8HcB
+O:9W86
 OBJECT_TYPE_BLOCK_LIGHT
 OBJECT_TYPE_DISABLED_IN_LOW_QUALITY
 OBJECT_TYPE_MODEL
@@ -3526,7 +3516,6 @@ Ordered object's memory was modified prior to construction
 Outside detection took %.2f seconds
 OverlayProjectionDirection
 P08@J
-P08J G	
 P>q_Y~
 P@HPX`hpx
 PA^A]A\^[
@@ -3536,6 +3525,7 @@ PA^_]
 PA^_^
 PA_A\_^]
 PA_A]A\^[
+PA_A^A\_^][
 PA_A^A]A\[
 PA_A^A]A\_^]
 PA_A^_^]
@@ -3786,9 +3776,7 @@ T$@H;
 T$@Mc
 T$@fI
 T$H@2
-T$HA;
 T$HH+
-T$HfD
 T$Jfff
 T$LE2
 T$P;y 
@@ -3797,10 +3785,11 @@ T$PH+
 T$PH3
 T$PIc
 T$PL;
-T$Rff
+T$PfD
 T$XH+
 T$XH;
 T$XHc\$PI
+T$Zfff
 T$`H;
 T$`fA;
 T$hA;7
@@ -3809,8 +3798,6 @@ T$hHc
 T$hI;
 T$hL;MPt
 T$hM;
-T$jff
-T$jfff
 T$lE3
 T$pH+
 T$pH;
@@ -3880,7 +3867,6 @@ USAUAVH
 USVWATAUAVAWH
 USVWATAUI
 USVWATAVH
-USVWATAVI
 USVWAVH
 USWATAVH
 USWATH
@@ -3889,8 +3875,9 @@ UT$@A
 UUUUUU
 UUUUUUU
 UUUUUUUUH
-UVATAUAVH
+UVATAUAVAWI
 UVATAVAWH
+UVATAVI
 UVAUH
 UVAVH
 UVAWH
@@ -4085,12 +4072,10 @@ Y\$8E
 Yd$0A
 Yd$4E
 You must build with -world before you can build with -vis!  Couldn't find raytrace.rte
-ZO1mW66
 Z\>z8
 ZdN=Y
 Zod(^?
 [*ncd>0
-[6js0
 [K]taM?
 [`fff
 [aOni*{
@@ -4111,9 +4096,9 @@ Zod(^?
 \$ UVAVH
 \$ UVWATAUAVAWH
 \$ UVWATAWH
-\$ UVWAUAVH
 \$ UVWAVAWH
 \$ UVWH
+\$ UWATH
 \$ VAVAWH
 \$ VH
 \$ VWATAUAVH
@@ -4143,7 +4128,7 @@ Zod(^?
 \$8H;
 \$8HcV
 \$8I;
-\$@;\$D
+\$@A;_x
 \$@E3
 \$@H;
 \$@Hc
@@ -4206,7 +4191,6 @@ _nextafter
 _oD>Kg
 `+!]?
 `.rdata
-`:@a	
 `A]_[
 `A^_^
 `A^_^][
@@ -4253,6 +4237,7 @@ _oD>Kg
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a.uEL
 a.ucL
 a7hIw
 aabb.m_vMaxBounds.IsValid()
@@ -4314,6 +4299,7 @@ cached_fp == new_fp
 cached_handle == ((HANDLE)(LONG_PTR)-1)
 cached_handle == new_handle
 can't reach here.
+cb[duB
 cc_enable_arenas
 cc_generic_services
 char8
@@ -4354,7 +4340,6 @@ d$`IcF
 d$`L;
 d$`fD
 d$dD;d$ltY
-d$pu<H
 d?000000`?
 dddd, MMMM dd, yyyy
 debuglos
@@ -4397,7 +4382,6 @@ expected_long_tick_reason
 extend .$0 {
 extendee
 extension_range
-f!H.D;vx|
 f9)u4H9j
 f9)u:H
 f9,Ju
@@ -4427,6 +4411,7 @@ fB9<A}1L
 fB9<Bu
 fB9<Hu
 fB9<{u
+fD!`.A;ux|
 fD9	t(L
 fD9 t
 fD9!H
@@ -4490,7 +4475,6 @@ gfffffffH;l$8
 gfffffffI
 gfffffffL
 gfffffffL+
-giR%i
 glview
 go_package
 group
@@ -4499,6 +4483,7 @@ h>1my
 hA^^][
 hA^_^[
 hA_A\_[
+hA_A^A\]
 hA_A^A]A\_^[]
 h_^][
 hintType
@@ -4515,8 +4500,6 @@ http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
 i u!H
-i.uEL
-i?g{d.Q
 idempotency_level
 identifier removed
 identifier_value
@@ -4565,6 +4548,7 @@ jj@0HK4
 json_name = "
 jstype
 jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
+k.ttI
 k0i0$
 kL@8o(u
 key_t
@@ -4608,6 +4592,7 @@ l$XD3wPL
 l$XI;
 l$\D9n
 l$\fD
+l$`I;
 l$`t&
 l$pD9c
 l$pE3
@@ -4890,11 +4875,9 @@ nullD
 num > 0
 num_server_players
 number
-o.tvH
 oD$ f
 oD$@H
 oI>O7
-oYP$|
 objc_class_prefix
 obwQ4
 oneof_decl
@@ -4921,7 +4904,6 @@ otherVec.GetNumBits() == STORAGE::GetNumBits()
 outputBuffer
 output_type
 owner dead
-ownership == KV3_COPY_EXTERNAL
 o|$0f
 o|$pfA
 p UATAUAVAWH
@@ -4995,6 +4977,7 @@ pvstype
 py_generic_services
 q(Lc6E
 qS>g?h3
+q[N,q
 qangle
 quaternion
 r	Vr.>T
@@ -5005,6 +4988,7 @@ r:f;\$|
 rKf;\$t
 rNf;\$t
 r_f;\$l
+r`7`-
 range check failure
 rbf;\$l
 read only file system
@@ -5131,12 +5115,12 @@ t$8I+
 t$8Lk
 t$8ff
 t$8~ H
-t$@;i
 t$@E3
 t$@H+
 t$@Hc
 t$@Kc
 t$@L;
+t$@Lc1D;q
 t$@fff
 t$@t&
 t$H<`uUH
@@ -5162,12 +5146,12 @@ t$`H+
 t$`L#
 t$`L;
 t$`fD9+t$I
+t$`}[H
 t$dL9b u
 t$hE3
 t$huY
-t$h}[H
 t$pE3
-t$pIc
+t$pHc
 t$xt*3
 t%fE9
 t%fff
@@ -5298,7 +5282,7 @@ vAD8s(t
 vDirToSun
 vH9^@
 vKfffff
-vZHc~
+v]Hc~
 val_bool
 val_byte
 val_long
@@ -5354,7 +5338,7 @@ xKD;I
 xVD;A
 xWI96tRI
 x_^][
-xrMc4
+xtMc4
 y\PD>!
 yxxxxxxxH
 z :"U
@@ -5383,6 +5367,7 @@ zY;>u:m
 |$ UH
 |$ t	H
 |$ teH;
+|$ }[H
 |$$H99tAA
 |$$H9y
 |$$Mc
@@ -5413,6 +5398,7 @@ zY;>u:m
 |$@H;
 |$@Hc
 |$@Hc}
+|$@I;
 |$DE3
 |$H9W
 |$H9~@
@@ -5425,6 +5411,8 @@ zY;>u:m
 |$PI;
 |$PL;
 |$PM;
+|$P}[H
+|$TA;
 |$XD;
 |$XE3
 |$`	u9H
@@ -5435,7 +5423,6 @@ zY;>u:m
 |$`A9}
 |$`CI
 |$`H;
-|$`}[H
 |$hE3
 |$hH;
 |$hL;

@@ -181,6 +181,8 @@
 		"Citadel_RecommendFriend_Title"						"Recommend a Friend"
 		"Citadel_RecommendFriend_desc"						"Have a friend who you'd like to play with in our playtests?<br>Submit their information below."
 		"Citadel_RecommendFriend_PopupButton"				"Submit"
+		"Citadel_RecommendFriend_SelectTitle"				"Select a Friend from Steam:"
+		"Citadel_RecommendFriend_ErrorMsg"					"Must select a friend from list"
 
 		// Report Player
 		"Citadel_ReportPlayer_Result_Success"				"Thank you for your report!"
@@ -193,6 +195,10 @@
 
 		"Citadel_SkipTutorial_Title"						"Skip Tutorial"
 		"Citadel_SkipTutorial_Body"							"Are you sure that you want to skip the tutorial? You should really only do this if you have played before."
+
+		"Citadel_Region_NA"									"NA"
+		"Citadel_Region_Europe"								"Europe"
+		"Citadel_Region_SEA"								"SEA"
 
 		"Citadel_GenericError_RegionInfoNotProvided"				"In order to play online, you must register your account."
 		"Citadel_GenericError_DurationControlBlocked"				"You have exceeded the available amount of time that you are allowed to play online."
@@ -476,6 +482,7 @@
 		"Citadel_Hud_KillFeedGuardian"								"Guardian"
 		"Citadel_Hud_KillFeedBarracksBoss"							"Base Guardians"
 		"Citadel_Hud_KillFeedWalker"								"Walker"
+		"Citadel_Hud_KillFeedAllWalkers"							"Enemy Walkers"
 		"Citadel_Hud_KillFeedShieldName"							"Shrine"
 		"Citadel_Hud_KillFeedTitan"									"Patron"
 		"Citadel_Hud_KillFeedEnemyGuardian"							"Enemy Guardian"
@@ -1420,7 +1427,7 @@
 		citadel_ability_chrono_swap				"Paradoxical Swap"
 		citadel_ability_chrono_swap_quip		"Swap positions with an enemy hero"
 		modifier_chrono_swap_bubble_move		"Paradoxical Swap"
-		citadel_ability_chrono_swap_desc		"Fire a projectile that <span class=\"highlight\">swaps your position with the target enemy hero.</span> While the effect occurs, you gain <span class=\"highlight\">spell lifesteal</span> and the enemy <span class=\"highlight\">takes damage over time</span>."
+		citadel_ability_chrono_swap_desc		"Fire a projectile that <span class=\"highlight\">swaps your position with the target enemy hero.</span> While the effect occurs, you gain <span class=\"highlight\">spirit lifesteal</span> and the enemy <span class=\"highlight\">takes damage over time</span>."
 		modifier_citadel_chrono_swap_debuff		"Slowed"
 		modifier_citadel_chrono_swap_buff		"Spirit Immune"
 		CooldownOnMiss_Label					"Cooldown on miss"
@@ -1453,6 +1460,7 @@
 		citadel_ability_chrono_kinetic_carbine		"Kinetic Carbine"
 		citadel_ability_chrono_kinetic_carbine_quip	"Charge up your weapon to deal high damage and timestop"
 		citadel_ability_chrono_kinetic_carbine_desc	"Start charging your weapon and gain <span class=\"highlight\">increased movement speed</span> once it's fully charged. Your next shot will release the energy, dealing <span class=\"highlight\">spirit damage</span> and applying a <span class=\"highlight\">time stop</span> to the enemy hit. The damage dealt is an amplification of your current weapon damage. <br><br>You can slow time on yourself by pressing [{s:iv_attack2}] while an empowered shot is available."
+		citadel_ability_chrono_kinetic_carbine_t2_desc	"{s:AbilityCooldown}s Cooldown and +{s:SpeedBoostDuration}s Speed Boost Duration"
 	
 		//citadel_ability_chrono_kinetic_carbine_t1_desc  "+<span class=\"highlight\">{s:MinSlowDuration}s/{s:MaxSlowDuration}s</span> Min/Max Stop Duration"
 		//citadel_ability_chrono_kinetic_carbine_t2_desc	"<span class=\"highlight\">+{s:SpeedBoostDuration}s</span> Speed Duration, <span class=\"highlight\">{s:MaxChargeDuration}s</span> Charge Time"
@@ -1896,7 +1904,7 @@
 
 		ability_warden_high_alert				"Willpower"
 		ability_warden_high_alert_quip			"Gain a spirit shield and movement speed"
-		ability_warden_high_alert_desc			"Gain a <span class=\"highlight\">spirit shield</span> that provides <span class=\"highlight\">bonus movement speed while active</span>. The shield also <span class=\"highlight\">blocks spirit damage-based effects</span>."
+		ability_warden_high_alert_desc			"Gain a <span class=\"highlight\">spirit shield</span> and <span class=\"highlight\">bonus movement speed</span>. The shield also <span class=\"highlight\">blocks spirit damage-based effects</span>."
 		ability_warden_high_alert_t3_desc		"<span class=\"highlight\">+{s:TechShieldPoints}</span> Spirit Shield Health and now scales with Spirit Power"
 		MoveSpeedBonusPct_label					"Move speed bonus"
 		MoveSpeedBonusPct_postfix				"%"
@@ -2201,10 +2209,10 @@
 		//-----------------------------------------------------------------------------
 		"modifier_citadel_decoy_invisibility"		"Invisible!"
 
-		"ability_explosive_barrel"					"Explosive Barrel"
+		"ability_explosive_barrel"					"Powder Keg"
 		"ability_explosive_barrel_quip"				"Throw a barrel that explodes when shot"
-		"ability_explosive_barrel_desc"				"Place a barrel that explodes immediately when <span class=\"highlight\">{s:hero_name} shoots or punches it</span> or after the armtime if an enemy hero is nearby, dealing damage and popping them into the air. Placing on a <span class=\"highlight\">Bounce Pad</span> will launch it. <br><br><span class=\"highlight\">Heavy</span> and <span class=\"highlight\">Light</span> melee attacks on the barrel launches the barrel. Distance is based on type of melee attack. <br><br>Selecting barrel after using a bouncepad will bring up a targetting preview."
-		//"ability_explosive_barrel_t3_desc"			"Exploding barrels release <span class=\"highlight\">{s:MirvOnExplode} Mini-bombs</span> that deal {s:MirvDamagePercent}% of Barrel Damage after {s:MirvExplodeTime}s"
+		"ability_explosive_barrel_desc"				"Place a barrel that explodes when <span class=\"highlight\">shot</span>, or on landing after launched via <span class=\"highlight\">melee attack</span> or <span class=\"highlight\">bounce pad</span>. Has a minimum arm time before it can explode."
+		//"ability_explosive_barrel_t3_desc"		"Exploding barrels release <span class=\"highlight\">{s:MirvOnExplode} Mini-bombs</span> that deal {s:MirvDamagePercent}% of Barrel Damage after {s:MirvExplodeTime}s"
 		BarrelLifetime_label						"Barrel Life Time"
 		BarrelLifetime_postfix						"s"
 		//MinExplodeTime_label						"Min Time to Explode"
@@ -2596,7 +2604,7 @@
 		"citadel_ability_hornet_sting"			"Crow Familiar"
 		"citadel_ability_hornet_sting_quip"		"Make a target bleed over time"
 		"citadel_ability_hornet_sting_desc"		"Your crow familiar deals <span class=\"highlight\">impact damage</span> and applies a <span class=\"highlight\">bleed</span> that deals damage based on the <span class=\"highlight\">target's current health</span>."
-		citadel_ability_hornet_sting_t1_desc	"Crow <span class=\"highlight\">Ricochets up to {s:TargetBounceCount}x</span> towards enemies within {s:TargetBounceRange}m"
+		citadel_ability_hornet_sting_t1_desc	"Crow <span class=\"highlight\">Ricochets up to 2 times</span> towards other enemies within {s:TargetBounceRange}m"
 		citadel_ability_hornet_sting_t3_desc	"+{s:DotHealthPercent}% Bleed and suppresses healing by {s:HealAmpReceivePenaltyPercent}%"
 		"citadel_ability_hornet_sting/modifier_citadel_hornet_sting_debuff"		"Crow Familiar"
 		BulletVulnerbility_prefix				"{s:sign}"
@@ -2677,7 +2685,7 @@
 		//-----------------------------------------------------------------------------
 		"citadel_ability_shiv_dagger"			"Thrown Shiv"
 		"citadel_ability_shiv_dagger_quip"		"Apply bleed and a stacking slow to the target"
-		"citadel_ability_shiv_dagger_desc"		"Throw a dagger that <span class=\"highlight\">damages and slows</span> an enemy.  Each additional hit adds a <span class=\"highlight\">stack</span> and refreshes the debuff duration, causing the damage and slow to increase per stack."
+		"citadel_ability_shiv_dagger_desc"		"Throw a dagger that <span class=\"highlight\">damages and slows</span> an enemy.  Each additional hit adds a <span class=\"highlight\">stack</span> and refreshes the debuff duration, causing the damage and slow to increase per stack.<br><br><span class=\"highlight\">While at maximum Rage</span> the dagger shatters on impact, bleeding all enemies in a radius."
 		modifier_shiv_bleed_thrown_shiv			"Thrown Shiv"
 		modifier_citadel_shiv_dagger			"Shiv Dagger"
 		modifier_shiv_thrown_shiv_debuff		"Shiv Dagger"
@@ -2686,6 +2694,8 @@
 		BleedDPSPerStack_label					"Bleed DPS Per Shiv"
 		BaseWeaponMeleeDamageBonus_label		"Bonus Weapon Damage Per Shiv"
 		BaseWeaponMeleeDamageBonus_postfix		"%"
+		AOERadius_label							"Impact Radius"
+		AOERadius_postfix						"m"
 
 		ShivStickDuration_label					"Stack duration"
 		ShivStickDuration_postfix				"s"
@@ -2699,7 +2709,7 @@
 
 		"citadel_ability_shiv_dash"				"Shiv Dash"
 		"citadel_ability_shiv_dash_quip"		"Dash ahead, damaging all enemies along the path"
-		"citadel_ability_shiv_dash_desc"		"Perform a <span class=\"highlight\">dash forward, damaging enemies along the path</span>."
+		"citadel_ability_shiv_dash_desc"		"Perform a <span class=\"highlight\">dash forward, damaging enemies along the path</span>.<br><br><span class=\"highlight\">While at maximum rage</span> Shiv Dash's path is 200% wider."
 		"citadel_ability_shiv_dash_t3_tooltip"	"On hit"
 		DashRange_label							"Dash Range"
 		DashRange_postfix						"m"
@@ -2719,7 +2729,7 @@
 
 		citadel_ability_shiv_blood_rage			"Blood Rage"
 		citadel_ability_shiv_blood_rage_quip	"Build up a rage to heal yourself"
-		citadel_ability_shiv_blood_rage_desc	"Damaging enemies fills you with rage.  Cast to consume your rage, healing you based on the amount consumed."
+		citadel_ability_shiv_blood_rage_desc	"Damaging enemies fills you with rage.  Cast to consume your rage, healing you based on the amount consumed.  While at maximum rage, your other abilities gain <span class=\"highlight\">special properties</span>, and you deal increased damage."
 		Heal_label								"Heal"
 		HealthHealedPerRage_label				"Health per rage"
 		HealthHealedPerRage_postfix				""
@@ -2748,6 +2758,7 @@
 		DamageScale_label						"Damage Increase"
 		DamageScale_postfix						"%"
 		AbilityResourceDrainRate_label			"Blood Drain Rate"
+		citadel_blood_while_rage_full					"While at max Rage"
 
 		citadel_ability_shiv_transform_t1_desc	"Gain 1 Blood for each Shiv Dash victim"
 		citadel_ability_shiv_transform_t2_desc	"Shiv Dagger damage on heroes drops 1 Blood Vial"
@@ -2766,20 +2777,12 @@
 		citadel_ability_shiv_killing_blow_t3_desc	"Finishing off an enemy with Killing Blow allows Shiv to do it again <span class=\"highlight\">immediately.</span>"
 
 		citadel_ability_shiv_dive		"Haunt"
-		citadel_ability_shiv_dive_quip	"Possess an enemy"
-		citadel_ability_shiv_dive_desc	"Begin Haunting, gaining movement speed and the ability to <span class=\"highlight\">possess the first enemy hero you touch</span>, controlling their movement.  Shiv explodes out of the possessed after {s:PossessDuration}s and stuns nearby enemies."
-		citadel_ability_shiv_haunt	"While Haunting"
-		citadel_ability_shiv_possess	"While Possessing"
-		citadel_ability_shiv_possess_end	"When Possess Ends"
-		citadel_ability_shiv_dive/shiv_possessing "Possessing"
-		citadel_ability_shiv_dive/target_possessed "Possessed"
-		citadel_ability_shiv_dive/transformed "Transformed"
-		TransformSpeedBonus_label				"Haunting Speed Bonus"
-		TransformSpeedBonus_postfix				"m/s"
-		PossessedMoveSpeedBonus_label	"Haunting Speed Bonus"
-		PossessedMoveSpeedBonus_postfix	"m/s"
-		TransformDuration_label			"Haunt Duration"
-		TransformDuration_postfix		"s"
+		citadel_ability_shiv_dive_quip	"Haunt a hero"
+		citadel_ability_shiv_dive_desc	"Haunt a hero, becoming hidden inside them <span class=\"highlight\">safe from damage and unable to attack</span>.  Can be cancelled to end Haunt early.  Deals damage around the target if Shiv <span class=\"highlight\">stays inside the target long enough</span>."
+		citadel_ability_shiv_dive/shiv_possessing "Haunting"
+		citadel_ability_shiv_dive/target_possessed "Haunted"
+		MinPossessTimeForDamage_label	"Required Haunt time for damage"
+		MinPossessTimeForDamage_postfix	"s"
 
 		//-----------------------------------------------------------------------------
 		// Hero: Rutger
@@ -3446,7 +3449,7 @@
 
 		"citadel_ability_infinity_slash"		"Shadow Transformation"
 		"citadel_ability_infinity_slash_quip"	"Become invincible and more powerful"
-		"citadel_ability_infinity_slash_desc"	"Become infused with Yamato's shadow soul. After an initial <span class=\"highlight\">invincible</span> transformation, your <span class=\"highlight\">abilities are refreshed and are 60% faster</span>, and your weapon has <span class=\"highlight\">infinite ammo</span> and gain damage and debuff resist. You are unable to die in this mode."
+		"citadel_ability_infinity_slash_desc"	"Become infused with Yamato's shadow soul. After an initial <span class=\"highlight\">invincible</span> transformation, your <span class=\"highlight\">abilities are refreshed and are 60% faster</span>, your weapon has <span class=\"highlight\">infinite ammo</span>, and you gain damage and debuff resists. You are unable to die in this mode."
 		"citadel_ability_infinity_slash_buff_header" "Per Hero Hit"	
 		"ShadowDuration_label"					"Explosion Delay"
 		"ShadowDuration_postfix"				"s"
@@ -3520,7 +3523,7 @@
 		// Viscous
 		//-----------------------------------------------------------------------------
 		"viscous_goo_grenade"							"Bouncy Goo"
-		"viscous_goo_grenade_desc"						"Throw a bouncing ball of goo that <span class=\"highlight\">deals damage</span> and applies <span class=\"highlight\">movement slow</span> to enemies caught in its radius. Leaves puddles of goo behind when it bounces."
+		"viscous_goo_grenade_desc"						"Throw a bouncing ball of goo that <span class=\"highlight\">deals damage</span> and leaves puddles of goo behind when it bounces that apply <span class=\"highlight\">movement slow</span> to enemies in the radius."
 		"viscous_goo_grenade/modifier_viscous_goo_grenade_debuff"		"Slowed"
 		"MaxBounces_label"								"Bounces"
 		"PuddleRadius_label"							"Goo Radius"
@@ -3540,18 +3543,11 @@
 
 		"viscous_goo_bowling_ball"						"Rolling Goo"
 		"viscous_goo_bowling_ball_desc"					"Morph into a ball for a short duration that deals damage to the target on impact. Colliding with an enemy hero breaks the ball. Can only damage a unit once per cast."
-		"modifier_viscous_bowling_ball"					"Goo Overload"
 		"viscous_goo_bowling_ball_t2_desc"				"Stuns heroes for {s:StunDuration}s on impact"
 		"viscous_goo_bowling_ball_t3_desc"				"Breaks after hitting 3 heroes.<br>Duration is reset when you hit a hero."
-		
-		"viscous_goo_mastery"							"Symbiosis"
-		"viscous_goo_mastery_desc"						"Reabsorb goo when you walk on the puddles left behind, gaining <span class=\"highlight\">health regen and movement speed</span>."
-		"viscous_goo_mastery_t3_desc"					"Viscous deals <span class=\"highlight\">{s:BonusDamageAmp}% Increased Damage</span> while Symbiosis is active"
-		"MaxDuration_label"								"Max Duration"
-		"MaxDuration_postfix"							"s"
-		"GooPickupDuration_prefix"						"+" 
-		"GooPickupDuration_label"						"Duration on Absorb" 
-		"GooPickupDuration_postfix"						"s" 
+
+		"viscous_telepunch"								"Portal Punch"
+		"viscous_telepunch_desc"						"Target a location in the world and <span class=\"highlight\">punch</span> enemies from that location after a short delay, <span class=\"highlight\">dealing damage</span> and knocking them in the direction of the punch."
 
 		"BonusDamageAmp_label"							"Increased Damage"
 		"BonusDamageAmp_postfix"						"%"
@@ -4477,11 +4473,11 @@
 		"hero_ghost_lore"				"Once, Lady Jeanne Geist was the toast of the town.  But as time passed and her beauty faded she found herself further and further from her glory days in High Society until finally she was nothing more than a frail woman in a nursing home, telling stories of a glorious past.  And that’s when Oathkeeper revealed himself.  A powerful spirit from another plane, Oathkeeper offered her a path to reclaim her past glories… he could restore her youth; all she had to do was drain the essence of the living to sustain herself. \n\nGeist was torn.  Obviously murder was ghoulish business, and undoubtedly Oathkeeper was not an entity that could be trusted… but still, the thought of having a second chance of reliving her youth was too good to pass up.  And so she concocted a plan: after making a pact with Oathkeeper she would bind and ward him, limiting his influence and pull over her.  Oathkeeper would still get fed; but on her terms, not his.\n\nHowever, as years have turned to decades; the strength of the Ward has weakened, and Oathkeeper hungers more than he ever has in the past… "
 		"hero_gigawatt_lore"			"When mystic energy awoke on Earth, the world changed... anything was possible.  But just because anything WAS possible, didn’t mean that anything SHOULD be possible.  And so the government made rules.   Laws.  A means for US citizens to enjoy the benefits of the supernatural world in safety.  But rules and laws are for lesser men.  Men with limitations.  Men who were not Seven.  \n\nThere are many rumors about what Seven did to land himself in Lost Whisper, an oubliette for the most dangerous of occultists.  But there is no doubt about what happened on the night of his execution. \n\nWards placed by the most powerful ritualists of 7 different nations… wards designed to not just prevent mystical interference with the execution, but to simultaneously obliterate Seven's soul so that it could never be contacted, resurrected, or otherwise be used by someone looking to follow in his footsteps... failed.\n\nOnlookers viewed in horror as the strongest mentalist employed by the US Army’s head popped like a grape.  They screamed as Scotland Yard’s premiere occult investigator, the one who allegedly captured Seven, crumbled to ash.  Seven's body buckled and writhed against his restraints; his skin burning from eldritch electricity... and yet he would not die.  He laughed.\n\nHe laughed as he tore himself free from his bondage.\n\nHe laughed as his captors cowered in fear.\n\nHe laughed as he massacred his tormentors.\n\nHe laughed as he tasted the fresh air that was denied to him for years.\n\nAnd he laughed when he thought about what he was going to do once he reached New York City."
 		"hero_haze_lore"				"The Occult Security and Investigation Commission is a black box government organization that makes the CIA look transparent.  It falls on the men, women, and entities of the OSIC to keep the country safe from sinister forces that are beyond the capabilities of local law enforcement.\n\nAs a member of the notorious Sandman Division, Haze is routinely tasked with infiltrating the dreams of persons of interest, to assess their threat level, and if needed... to put them to sleep."
-		"hero_hornet_lore"				"A victim of John Hathorne during the Salem Witch Trials, Vindicta got a second chance of life when her spirit was brought back to the mortal plane during the first Maelstrom (the event that introduced the supernatural to the public at large).\n\nWaging a one-ghost war against the decedents of Hathorne and their neo-inquisition, Vindicta looks keep the supernatural safe from Hathorne's ilk, and they aren't afraid to stack as many bodies as needed to do it."
+		"hero_hornet_lore"				"A victim of John Hathorne during the Salem Witch Trials, Vindicta got a second chance of life when her spirit was brought back to the mortal plane during the first Maelstrom (the event that introduced the supernatural to the public at large).\n\nWaging a one ghost war against \"The Friends of Humanity\", a neo inquisition formed by Hathorne's descendants; Vindicta looks to keep the supernatural safe from Hathorne's ilk, and she isn't afraid to stack as many bodies as needed to do it."
 		"hero_inferno_lore"				"Like most teenagers; Infernus was wild, rebellious, and impetuous.  Unlike most teenagers, Infernus was a creature from another plane and had a supernatural mastery over fire.  Needless to say:  his youth was filled with no small amount of arson, murder, and evidence disposal.  But that was then.  Now an adult, Infernus has mellowed out considerably.  He’s happy working at a bar with good live music, and talking to interesting people.  That being said when someone at the bar gets belligerent or violent, he’s not afraid to dust off the skills he once honed."
 		"hero_kelvin_lore"				"A famed adventuring scientist, Kelvin made it his life's mission to explore and understand the unknowable.  So naturally when rumors surfaced regarding an 8th astral gate hidden in the arctic, Kelvin couldn't build an expedition team fast enough.  Assembling the brightest minds of his generation, Kelvin and his team set forth with much fanfare.\n\nThey never returned.\n\nA year and a half later the frozen body of Kelvin was found by a fishing trawler, his corpse clutching a rock etched with glowing runes.  The crew chipped away at the ice, looking to get a closer look at the body and were shocked when Kelvin opened his eyes.  They checked his vitals... there was no pulse.  They sought to bandage his open wounds... there was no blood.  And yet, impossibly, Kelvin was \"alive\".\n\nHaving no memory of what happened on the expedition, Kelvin is looking for answers."
 		"hero_lash_lore"				"Jacob Lash is an asshole."
-		"hero_krill_lore"				"Mo and Krill are members of The Tunnel Rats, a group that help facilitate illicit trade and commerce between the boroughs thanks to a network of underground tunnels.  But while most denizens the New York underworld respect the work The Rats do, every once in a while a gang tries to exploit the tunnel system for personal vendettas...that's when Mo and Krill step in and remind the city what happens to those who disrespect their hospitality."
+		"hero_krill_lore"				"Mo and Krill are members of The Tunnel Rats, a group that help facilitate illicit trade and commerce between the boroughs thanks to a network of underground tunnels.  But while most denizens of the New York underworld respect the work The Rats do, every once in a while a gang tries to exploit the tunnel system for personal vendettas...that's when Mo and Krill step in and remind the city what happens to those who disrespect their hospitality."
 		"hero_nano_lore"				"Granted the dubious honor of being named Time Magazine's most dangerous woman on the planet, Calico is an enigmatic occult arms dealer that is willing to fund any and all sides of a conflict if the price is right.\n\nWhile her critics (and friends) would correctly identify her as being amoral, she is not without her principles... however cold and calculated those principles may be."
 		"hero_orion_lore"				"A founding member of \"The Baxter Society\", Wesley Grey Talon spent close to 40 years hunting monsters that preyed on man before finally deciding to find a replacement and lay down his bow. Grey Talon's duties had meant that he never spent much time with his wife and kid, and now that his son had started a family of his own he realized that this was his last chance to reconnect with the people he loved.\n\nRetirement suited Wesley.  He made up for lost time with his wife.  He doted on his grandkids.  He cooked dinner for the whole family every Wednesday.  He was happy.\n\nThen he got the call.\n\nThe authorities claimed that it was a freak accident... that the fire consumed his son's house before anyone got a chance to escape.  But Wesley knew better.  His son's wife was Ixian... she could snuff out flame with a thought.  If their bodies were found burned they had to be dead long before there was a fire.\n\nAnd so Grey Talon has picked up his bow once more, and when he finds who's responsible there will be a bloody reckoning."
 		"hero_shiv_lore"				"A loyal member of \"The Baxter Society\", an international order of monster hunters, Shiv travels across North America looking to put down creatures that prey on the living.\n\nWhile his less polished nature and criminal past make some of the more traditional members of the Society wary, no one can deny his effectiveness."
@@ -4539,6 +4535,12 @@
 		"clip_size_pickup_label"						"3 Large clips"
 		"fire_rate_pickup_label"						"Fire Rate"
 
+		"spirit_permanent_pickup_label"					"+2 Spirit"
+		"firerate_permanent_pickup_label"				"+1.5% FireRate"
+		"ammo_permanent_pickup_label"					"+3% Ammo"
+		"hp_permanent_pickup_label"						"+15 HP"
+		"cd_permanent_pickup_label"						"+0.5% Cooldown Reduction"
+		"wp_permanent_pickup_label"						"+2% Weapon Damage"
 
 		"breakable_pickup_missing_loc"					"PICKUP MISSING LOC NAME"
 
@@ -4799,7 +4801,7 @@
 
 		"BonusFireRatePlayerUnit_prefix"				"{s:sign}"
 		"BonusFireRatePlayerUnit_postfix"				"%"
-		"BonusFireRatePlayerUnit_label"					"Fire Rate for Player Minions"
+		"BonusFireRatePlayerUnit_label"					"Minions Fire Rate"
 
 		"BonusFireRateNPC_prefix"							"{s:sign}"
 		"BonusFireRateNPC_postfix"							"%"
@@ -5911,7 +5913,7 @@
 		EchoShardBonusCourage_label		"Courage for Echo Ability"
 
 		BonusSpirit_prefix				"{s:sign}"
-		BonusSpirit_label				"Bonus Spirit Power"
+		BonusSpirit_label				"Spirit Power"
 		modifier_power_shard_bonus		"Echo Boost"
 
 		BonusDuration_label				"Bonus Duration"
@@ -6169,14 +6171,19 @@
 		"citadel_settings_game"							"Game"
 		"citadel_settings_network"						"Network"
 		"citadel_settings_mastervolume"					"Master Volume"
-		"citadel_settings_gamevolume"					"Game Volume"
+		"citadel_settings_mastervolume_desc"			"Adjusts the overall volume of the game"
+		"citadel_settings_gamevolume"					"Game Sound Volume"
+		"citadel_settings_gamevolume_desc"				"Adjusts the volume of sound effects, music, and dialog"
 		"citadel_settings_musicvolume"					"Menu Music Volume"
-		"citadel_settings_voicevolume"					"Voice Chat Volume"	
-		"citadel_settings_gamevoicevolume"				"Game Voice Volume"
+		"citadel_settings_musicvolume_desc"				"Adjusts the volume of the music in the main menu"
+		"citadel_settings_voicevolume"					"Voice Chat Volume (Other Players)"
+		"citadel_settings_voicevolume_desc"				"Adjust the volume of other players' microphones"	
+		"citadel_settings_gamevoicevolume"				"Voice Input Volume (Yours)"
+		"citadel_settings_gamevoicevolume_desc"			"Controls the input volume of your microphone"
 		"citadel_settings_playsoundinbackground" 		"Play Sound in Background"
 		"citadel_settings_voice_steam_link"				"Recording device settings are configured using <a href=\"event:DOTAShowSteamVoiceSettings()\">Steam voice settings</a>."
 		"citadel_settings_voice_level"					"Voice Level"
-		"citadel_settings_openmicthreshold"				"Open Mic Threshold"
+		"citadel_settings_openmicthreshold"				"Open Mic Sensitivity"
 		"citadel_settings_voice_always_sample_mic"		"Always Sample Mic"
 		"citadel_settings_invert_ping_desc"				"Check to invert pings. <br/> Defaults: <br/> Single Ping = Passive. <br/> Double Ping = Aggressive <br/><br/>Inverted:<br/>Single Ping = Aggressive <br/>Double Ping = Passive"
 		"citadel_settings_open_mic_desc"				"Enable Open Mic"
@@ -6203,6 +6210,7 @@
 		"citadel_settings_enable_console"				"Enable Console"
 		"citadel_settings_enable_console_tooltip"		"If you have launch options like -dev or -console that enable the console they override this setting."
 		"citadel_camera_pitch_inverted"					"Invert Mouse"
+		"citadel_camera_zoom_is_toggle"					"Toggle Zoom"
 		"citadel_enable_ping_indicator"					"Enable HUD Ping Indicator"
 		"citadel_settings_alt_cast_mode"				"Change Self Cast Mode:"
 		"citadel_settings_alt_cast_double_tap"			"Double Tap"
@@ -6594,9 +6602,10 @@
 		"Citadel_TeamMsg_WestTitanKilledTitle"			"West Patron"
 		"Citadel_TeamMsg_EastTitanKilledTitle"			"East Patron"
 
-		"Citadel_FlexSlotUnlockedLane"					"You've unlocked a flex slot for killing a lanes "
+		"Citadel_FlexSlotUnlockedLane"					"You've unlocked a flex slot for killing a lane's "
 		"Citadel_FlexSlotUnlockedGenerator"				"You've unlocked a flex slot for killing the first "
-		"Citadel_FlexSlotUnlockedTier3"				"You've unlocked a flex slot for killing the "
+		//"Citadel_FlexSlotUnlockedTier3"				"You've unlocked a flex slot for killing the "
+		"Citadel_FlexSlotUnlockedAllTier2"				"You've unlocked a flex slot for killing all the "
 
 		"team_msg_TitanDefeated_Title"		"Patron destroyed"
 		"team_msg_YourTitanDefeated_Desc"	"Your Patron has been destroyed"
@@ -6749,7 +6758,8 @@
 		"ModIconTooltip_UnlockTier2"				"Unlocked after your team destroys an enemy Walker"
 		"ModIconTooltip_UnlockGuardians"			"Unlocked after your team destroys a set of enemy Base Guardians"	
 		"ModIconTooltip_UnlockGenerators"			"Unlocked after your team destroys an enemy Shrine"	
-		"ModIconTooltip_UnlockTier3"				"Unlocked after your team destroys the enemy Patron's first form"
+		//"ModIconTooltip_UnlockTier3"				"Unlocked after your team destroys the enemy Patron's first form"
+		"ModIconTooltip_UnlockAllTier2"				"Unlocked after your team destroys all enemy Walkers"
 
 		"HeroesPageTitle"							"Heroes"
 		"HeroesPageActionText"						"Select a hero to view details"

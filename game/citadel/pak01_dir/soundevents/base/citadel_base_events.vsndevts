@@ -222,6 +222,7 @@
 	{
 		base = "Base.Ability"
 		mix_group_prefix = "Ult"
+		send_name_team = "main"
 	}
 	Base.Footsteps = 
 	{
@@ -263,7 +264,7 @@
 		spread_max_value_opponent = 0.000000
 		spread_max_value_neutral = 0.000000
 		spread_min_value = 0.000000
-		volume_falloff_use_curve_editor = 1.000000
+		volume_falloff_use_curve_editor = true
 		volume_falloff_curve_db = 
 		[
 			
@@ -446,6 +447,15 @@
 	{
 		base = "Base.Footsteps"
 		mix_group_prefix = "Reload"
+		mono_downmix_enabled = 1.000000
+		mono_downmix_max_distance = 0.000000
+		mono_downmix_min_distance = 0.000000
+		limiter_on = 1.000000
+		limiter_stop_oldest = false
+		block_match_this_event = true
+		block_match_entity = 1.000000
+		block_duration = 1.000000
+		volume_fade_out = 0.050000
 		position_offset = 
 		[
 			0.000000,
@@ -461,6 +471,7 @@
 		block_volume_min = 0.001000
 		block_duration = 0.020000
 		block_match_this_event = true
+		block_match_entity = 1.000000
 		volume_falloff_min_player = 99998.000000
 		volume_falloff_min_team = 200.000000
 		volume_falloff_min_opponent = 300.000000
@@ -479,6 +490,7 @@
 	{
 		type = "citadel_perspective_default"
 		mix_group_prefix = "VO-Hero"
+		send_name_team = "main"
 		limiter_match_entity = 1.000000
 		volume_fade_out = 0.100000
 		block_distance_max = 3000.000000
@@ -574,10 +586,10 @@
 		spread_max_value = 0.000000
 		spread_min_value = 0.000000
 		limiter_on = 1.000000
-		limiter_max = 2.000000
+		limiter_max = 1.000000
 		limiter_match_entity = 1.000000
 		limiter_stop_oldest = true
-		volume_fade_out = 0.100000
+		volume_fade_out = 0.050000
 		volume_falloff_min = 999999.000000
 		volume_falloff_max = 999999.000000
 		distance_hpf_on = 0.000000
@@ -595,24 +607,24 @@
 			[
 				0.000000,
 				0.000000,
-				0.000000,
-				-0.160806,
-				0.000000,
-				0.000000,
+				-0.375116,
+				-0.375116,
+				2.000000,
+				3.000000,
 			],
 			
 			[
-				2.073356,
-				-0.333407,
-				-0.928367,
-				-0.928367,
+				2.081517,
+				-3.937106,
+				-2.858471,
+				-2.858471,
 				2.000000,
 				3.000000,
 			],
 			
 			[
 				11.017005,
-				-10.348144,
+				-14.000000,
 				-0.127606,
 				-0.127606,
 				2.000000,
@@ -914,6 +926,6 @@
 	{
 		base = "Base.Ability.Short"
 		mix_group_prefix = "Mods"
-		play_from_listener_player = true
+		play_from_listener_player = 1.000000
 	}
 }

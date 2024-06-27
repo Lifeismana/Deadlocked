@@ -20,20 +20,18 @@
  -- RESOURCE LOADING STATS ------------------------------------------------
  -- RESOURCE STREAMING STATS ----------------------------------------------
  -> Matched %d of %d loaded resources
- 4&@$
  A\_[
+ A]A\_^[
+ A^A]A\_^
  A^A]_
- A^A]_^]
+ A^^]
  A^_]
  A^_^
- A_A]_^[
- A_A]_^]
  A_A^A\
  A_A^A\_^
  A_A^A]A\_
  A_A^[
  A_A^]
- A_A^^
  A_A^_
  A_][
  Base Class Array'
@@ -79,7 +77,7 @@
 !pRequest->m_bCanceled
 !pToFinalize->BHasExternalWorkPending()
 !value.IsValid()
-$?D85
+$?D855e	
 %d %d %d
 %d %d %d %d
 %f %f
@@ -138,6 +136,7 @@ $?D85
 ,7L9>t	H
 ,W5y+
 ,YA1A
+-"v|}Q
 --tools_resource_listeners_default_deferred
 -convars_visible_by_default
 -exit_on_resource_load_failure
@@ -294,12 +293,13 @@ $?D85
 220323000000Z
 220801000000Z
 230714000000Z
-240620161239Z0/
+240627183138Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+3"Dy#
 311109235959Z0b1
 33333333H+
 341013235959Z0H1
@@ -320,7 +320,6 @@ $?D85
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 8A\_[]
 8A_A]_^
-8A_A^A]A\_^][
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
@@ -358,14 +357,13 @@ $?D85
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=	V_qsort_s
 =imb;D
 =rIQU
->%5Z8
 >0<0:
 >@8w@t
 >Mp$d
 >jtm}S
+?	V_qsort_s
 ?7zQ6$
 ?:kP<
 ??0CStackTop_Base@@IEAA@XZ
@@ -426,7 +424,6 @@ $?D85
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
 ?MoveFrom@CBufferString@@QEAAXAEAV1@@Z
 ?OnExit@CThread@@MEAAXXZ
-?P	t5f
 ?Pop@CTSListBase@@QEAAPEAUTSLNodeBase_t@@XZ
 ?Printf@CUtlBuffer@@QEAAXPEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
@@ -463,9 +460,9 @@ $?D85
 @.data
 @.reloc
 @84)u
-@85I|
 @8j(t
 @8k(t
+@8o4t
 @8w$t
 @8w@t
 @8z$u
@@ -478,8 +475,9 @@ $?D85
 @A^A]_^]
 @A^_]
 @A^_^
-@A_A\_^[
+@A^_^][
 @A_A^A\
+@A_A^A\_^
 @A_A^A\_^][
 @A_A^A]
 @A_A^A]A\_^]
@@ -498,15 +496,14 @@ $?D85
 @SUWH
 @SVAVH
 @SVWATAUAVAWH
-@SVWATAWH
-@SVWAUAWH
+@SVWATAUH
 @SVWH
 @SWATH
 @SWAVH
 @SWAWH
 @UATAUAVAWH
-@UATAWH
 @UAVAWH
+@UAVH
 @UAWH
 @USAUH
 @USVWATAUAVAWH
@@ -519,6 +516,7 @@ $?D85
 @UVWATAUAVAWH
 @UVWAUAVH
 @UVWH
+@UWATAWH
 @VAVH
 @VAWH
 @VWAUAVH
@@ -526,6 +524,7 @@ $?D85
 @WATH
 @WAUAVH
 @WAVAWH
+@WAVH
 @WAWH
 @_RDATA
 @l9Al
@@ -555,13 +554,13 @@ A^A]A\_^[]
 A^A][]
 A^_^[]
 A_A\][
-A_A\^[]
 A_A\_^]
 A_A]A\]
 A_A][
 A_A]^[
 A_A]_[]
 A_A^A\
+A_A^A\^[]
 A_A^A\_]
 A_A^A\_^
 A_A^A]A\]
@@ -613,7 +612,7 @@ BenchmarkService001
 BinaryProperties_GetValue
 Blocking Manifest Load
 Bump Extref resource %016llX (file "%s") to %d
-C H!o
+C I!.H
 C0Hc	H
 C:\buildworker\citadel_staging_win64\build\_build_\mathlib\extended\_vpc_mathlib_extended\default\win64\_schema_\release\aabb_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\mathlib\extended\_vpc_mathlib_extended\default\win64\_schema_\release\fourquaternions_h_schema.sc.cc
@@ -1118,6 +1117,7 @@ Couldn't load KV3 for resource: %s
 CreateEventW
 CreateFileW
 CreateInterface
+C|5/k
 C|B9D9
 D!l$xA
 D$ /H
@@ -1127,14 +1127,11 @@ D$ L;
 D$(;D$,
 D$(E3
 D$(H;
-D$(HH
-D$(XH
 D$(fI
-D$(hH
-D$(xH
 D$0@8{
 D$0E3
 D$0HcH
+D$0fD
 D$0fH
 D$8E3
 D$8H;
@@ -1163,9 +1160,9 @@ D81uUL9r
 D8t$ht
 D9a|u
 D9q|u
+D9r|u
 D9t$Hu
 D;8}^I
-D;n$w,E
 DATAH
 DISABLED
 DMCRt
@@ -1192,7 +1189,6 @@ E(H;Eh
 E0HcH
 E0Lc`
 E8q(u
-E9p|u
 EH*?H
 EHHcI
 ENABLED
@@ -1349,8 +1345,8 @@ Finished external request for resource %016llX (file "%s") remaining=%i
 FixupResourceName
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
+Fl9Bl
 Fl9Bl~
-FlA9@l
 FlattenedSerializersVersion001
 FlsAlloc
 FlsFree
@@ -1460,7 +1456,7 @@ Gt$8A
 Gt$8H
 Gt$8L
 Gt$8M
-Gt$h@8=K
+Gt$h@8=+
 Gt$hL
 G|$8H
 G|$8L
@@ -1475,8 +1471,6 @@ H97u+A
 H98t!A
 H98t-A
 H98t2
-H98t7
-H9=iB
 H9>u/H
 H9BP}
 H9D$0u
@@ -1486,9 +1480,9 @@ H9\$H
 H9k u
 H9|$ t
 H9|$(t
+H;=hf
 H;XXs
 H;xXu5
-HA_A^A]A\_^][
 HH:mm:ss
 HammerMapLoader001
 HandleAsStringFailure
@@ -1510,6 +1504,7 @@ Hc|$0I
 Hc}HH
 HelpSystem_001
 HostStateMgr001
+HyLVp
 I+4$H
 I9CP}
 IKV3TransferInterface_ResourceLoad
@@ -1718,6 +1713,7 @@ L$ Hc
 L$ I;
 L$ L;
 L$ SH
+L$ SUVWAVH
 L$ SWH
 L$ VWATAUAVAW
 L$ VWAVH
@@ -1836,13 +1832,12 @@ Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
 P@HcG
-P@L9o
+P@L9n
 PA^A\]
 PA^_]
 PA^_^
 PA_A^A]A\_^]
 PAq=?Mp#
-P^t4E
 PackedAABB_t
 PackedAABB_t::Schema_VerifyBindingIsRegistered
 PanoramaTextServices001
@@ -1943,7 +1938,6 @@ SUVWATAVAWH
 SVAUAWH
 SVWATAUAVAWH
 SWATAUH
-SWAWH
 Saturday
 Scan all of the loaded modules and validate any resource manifests found
 SceneSystem_002
@@ -2012,7 +2006,6 @@ T$ H;
 T$0D;
 T$0E3
 T$@E3
-T$@fD
 T$Hf#
 T$PE3
 T$`H;
@@ -2055,7 +2048,7 @@ UINT16
 UINT32
 UINT8
 USAUAVH
-USVATAWH
+USVATAVAWH
 USVWATAUAVAWH
 USVWAVH
 USWAUAWH
@@ -2093,7 +2086,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 V6E>`"(5
-VAVAWH
 VApplication001
 VAsyncFileSystem2_001
 VAvi001
@@ -2156,7 +2148,6 @@ VariableInfo_t::Schema_VerifyBindingIsRegistered
 Vector
 VisBuilder_001
 Vrad3_001
-W	V_stricmp_fast
 W(fff
 WARNING: %s resource '%s' (%016llX) requested but is not in the system. (Missing from from a manifest?)
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
@@ -2180,6 +2171,7 @@ WriteConsoleW
 WriteFile
 X VWAVH
 XA_A^A]A\_^][
+Y	V_stricmp_fast
 Y9"SD
 Zero refcount resource detected when m_DeletionRequests = 0: '%s'
 [% 5ims alloc] [% 5ims async] [% 5ims final] [% 5i / %10s] %s
@@ -2201,19 +2193,17 @@ Zero refcount resource detected when m_DeletionRequests = 0: '%s'
 \$ H;\$0
 \$ L;
 \$ UH
-\$ UVWAUAVH
-\$ UVWAUAWH
+\$ UVAVH
 \$ UVWAVAWH
 \$ VH
 \$ VWATAUAVH
-\$ WH
 \$0H;
-\$0L#
 \$0[I
 \$0eH
 \$0u%f
 \$8A9\$
 \$8I;
+\$8L#
 \$@E3
 \$@H;
 \$@u!H
@@ -2252,7 +2242,6 @@ _not_pickable
 `A^_[
 `A^_^
 `A^_^][
-`A_A\]
 `A_A^A\_^][
 `A_A^A]A\_^]
 `A_A^_^]
@@ -2294,7 +2283,6 @@ _not_pickable
 `virtual displacement map'
 a7hIw
 abcdefghijklmnopqrstuvwxyz
-abl.3<
 address family not supported
 address in use
 address not available
@@ -2343,16 +2331,18 @@ d$ Hc
 d$ UAVAWH
 d$(E3
 d$0E3
-d$PL#
-d$XE3
 d$XIc
+d$`tLA
+d+D?CCX;'5
 data.m_nRefCount == 0
 dddd, MMMM dd, yyyy
 destination address required
 device or resource busy
 directory not empty
 double
+dsRh`bN
 e0A_A^A]A\]
+eF64>
 ehA_A^A]A\_^[]
 ehandle
 enable_profiling
@@ -2363,7 +2353,6 @@ fB9<A}1L
 fD91uTL9r
 fD94H}aD
 fD9t$b
-fD;"w
 false
 fffff
 ffffff
@@ -2389,6 +2378,7 @@ g_pResourceSystemImp->InFrameUpdate()
 generic
 generic_data_type
 gfffffffH
+hA_A\_]
 hA_A^A]A\_^[]
 hReferringResource != RESOURCE_HANDLE_INVALID
 hResource != RESOURCE_HANDLE_INVALID
@@ -2418,12 +2408,10 @@ invalid seek
 invalid_parameter
 io error
 is a directory
-j])0x
 jj@0HK4
 k0i0$
 kernel32.dll
 ku ;k
-k}!R6as
 l$ AVH
 l$ E3
 l$ Hc
@@ -2432,6 +2420,7 @@ l$ Lci
 l$ Lcy
 l$ Mc
 l$ VH
+l$ VWATAUAVH
 l$ VWATAVAWH
 l$ VWAVH
 l$ WH
@@ -2443,10 +2432,13 @@ l$0Lc)
 l$@E3
 l$HA_A^A]A\_^
 l$HHcn
+l$H}`f;=l(
+l$H}`f;=|
 l$PE3
 l$PHc/L
 l$Pff
 l$XI;
+l$`I;
 l$hff
 l2|X/gGe
 log10
@@ -2634,6 +2626,7 @@ p0R^G'
 p;Y>u
 pA]A\[
 pA_A^A]A\_^[
+pA_A^A]A\_^]
 pCallback == nullptr
 pContext
 pDefaultKeys
@@ -2752,11 +2745,8 @@ t$ UH
 t$ WATAUAVAWH
 t$ WAVAWH
 t$ WH
-t$ fD
-t$ ff
 t$(E3
 t$(H9t$ t
-t$(fA;
 t$(fI
 t$0E3
 t$0Hc
@@ -2768,28 +2758,27 @@ t$8;;
 t$8H+
 t$8Hc
 t$8Hcq
-t$8fA;
 t$H~ H
+t$PfA;
+t$PfD
 t$Pt8H
 t$Pu*H
 t$P~!H
 t$XI;
 t$`L#
+t$`}[H
 t$hD;OP}{A
-t$htK
-t$h}[H
 t)I9>u
 t*H9;t	H
+t,HcA
 t-Lck
 t0A8nGt*
 t0H92t+H
 t4L9:t/H
-t4fff
 t7HcP
 tHI9]
 tRLcY
-tVD9=p
-tWD9-
+t[D9-Um
 t_L9>t
 ta91}
 table
@@ -2810,11 +2799,9 @@ twIcF
 tzL97u
 u#HcB
 u$D8r(t
-u$f9l
 u%@8j(t
 u&I97u
 u'HcB
-u'f9l
 u*HcB
 u,!T$(H!T$ 
 u3HcH<H
@@ -2828,7 +2815,7 @@ uint32
 uint64
 uint8
 unspecified
-utfD9y
+utfD9q
 uzKs@>
 v0Hc>D
 v=Y]Bv
@@ -2838,7 +2825,7 @@ vKfffff
 vagrp
 value too large
 vanim
-vanmgrpheconitem
+vanmgrpheconitemvents
 vcdlist
 vcompmat
 vdata
@@ -2850,7 +2837,6 @@ vector4
 vector4d
 ventl
 ventr
-vents
 vgcxdata
 vmesh
 vmorf
@@ -2875,7 +2861,7 @@ vsurf
 vtest
 vwnod
 vwrld
-wQR>W
+w0HcG(H
 wrong protocol type
 www.digicert.com1!0
 www.digicert.com1$0"
@@ -2883,6 +2869,7 @@ x ATAVAWH
 x AVH
 x#A;Fp}
 xA_A^A]A\_^][
+xY{O}
 y\PD>!
 {0x%x}
 {@9s8|AH
@@ -2894,28 +2881,27 @@ y\PD>!
 |$ Bi
 |$ D!
 |$ E3
-|$ H;
 |$ Hc
 |$ Lc
 |$ Lc?H
 |$ UATAUAVAWH
 |$ UH
-|$ ff
+|$ }[H
 |$0H;|$8
 |$0uE
 |$0x>H
 |$8~ H
 |$8~#H
 |$@E3
-|$@H;
 |$@Hc
+|$@I;
 |$@~ H
 |$H~#H
 |$P;k8
+|$P}[H
 |$XD;
 |$`L;
 |$`f	H
-|$`}[H
 |$hH;
 |$hHc
 |)L9c
@@ -2924,17 +2910,13 @@ y\PD>!
 }2fff
 }8A8|$Dt
 }>;_$
-}Lf;=
-}Lf;=B)
 }LuHO
-}[;n$wVD
-}\A;v$wVD
-}kf;n
-}tf;o
-~0HcF(H
+}XD;s$wRA
+}mf;{
 ~0fff
 ~2fff
 ~5LcS
 ~<fff
+~_fff
 ~qj#k"
 ~t&LN

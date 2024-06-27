@@ -399,7 +399,7 @@ CitadelHudModifierIcons
 	visibility: visible;
 }
 
-.detail_view #context_action_container,.wants_scoreboard #context_action_container
+#context_action_container.gDetailView,.wants_scoreboard #context_action_container
 {
 	visibility: collapse;
 }
@@ -1963,25 +1963,6 @@ ActiveAbilitiesMenu
 	color: white;
 }
 
-.entity_location_container
-{
-	width: 100%;
-	height: 100%;
-	visibility: visible;
-}
-
-.entity_location_detail
-{
-	width: 100%;
-	height: 100%;
-	visibility: collapse;
-}
-
-.detail_view .entity_location_detail
-{
-	visibility: visible;
-}
-
 #mispredict_indicator
 {
 	border-radius: 4px;
@@ -2136,7 +2117,7 @@ CitadelTooltipManager
 	z-index: 9998;
 }
 
-.wants_scoreboard .abilitiesContainer,.detail_view .abilitiesContainer
+.wants_scoreboard .abilitiesContainer,.abilitiesContainer.gDetailView
 {
 	height: 400px;
 }
@@ -2369,7 +2350,7 @@ CitadelTooltipManager
 	ui-scale: 140%;
 }
 
-.wants_scoreboard .unlockMessage,.wants_scoreboard .upgradeMessage,.detail_view .unlockMessage,.detail_view .upgradeMessage
+.wants_scoreboard .unlockMessage,.wants_scoreboard .upgradeMessage,.gDetailView .unlockMessage,.gDetailView .upgradeMessage
 {
 	margin-top: 0px;
 	opacity: 0;

@@ -31,17 +31,18 @@
  (%s%s)
  A\^]
  A\_[
+ A]A\_^[
  A^A]A\_^
  A^A]_
- A^A]_^]
+ A^^]
  A^_^
- A^_^H
- A_A]_^[
  A_A^A\
  A_A^A\_^
+ A_A^A]
  A_A^A]A\_
  A_A^[
  A_A^_
+ A_A^_^]
  A_][
  A_][H
  Base Class Array'
@@ -178,7 +179,15 @@
 #Valve_SelectLanguage_Ukrainian
 #Valve_SelectLanguage_Vietnamese
 $?<=v
-$?<=v7Hc1
+$?<=v(Hc*
+$?<=v*Lc:A
+$?<=v,Hc*
+$?<=v,Hc:
+$?<=v,Lc2A
+$?<=vGHc
+$?<=vUHc
+$?<=vWHc:
+$?<=vXHc
 $?<=w
 $?<=w	
 $?<>t)E
@@ -188,9 +197,14 @@ $?<>t9
 $?<>tG
 $?<>tH
 $?<>u
-$?<>u(
-$?<>uCA
-$?<>uXHcA
+$?<>u&
+$?<>u(Ic@
+$?<>u@A
+$?<>uSHcB
+$?<>uTHcB
+$?<>uUHcB
+$?<>uoHcB
+$?<>u}HcB
 $?<?t;<>u
 $?A2@
 %04d_%02d_%02d_%02d_%02d_%02d
@@ -217,7 +231,7 @@ $?A2@
 (%d,%d)
 (%s from %u files; %s not file-based)
 (A^A]A\_^[
-(A_A^_^][
+(A^A]_^
 (D$0H
 (f*^[0
 (int)eLang >= k_Lang_First && (int)eLang < k_Lang_MAX
@@ -232,10 +246,8 @@ $?A2@
 (t$0H
 (t$PH
 )>6{1n
-)t$ D
 )t$PH
 *.txt
-*D~.y
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *pCtxEnd == '}'
@@ -322,30 +334,29 @@ $?A2@
 0A^_^
 0A_A]A\_[
 0A_A^A\
-0A_A^A\][
+0A_A^A\_^][
 0A_A^A]
 0A_A^A]A\_
 0A_A^A]A\_^[
 0A_A^A]A\_^]
-0A_A^A]_^][
+0A_A^A]_]
 0A_A^_
 0A_A^_^]
-0A__^
 0_^[H
 0iN>/
 0w0c1
 0}0i1
 130801120000Z
 1<.	/>:
-1u	@8p
 2	0!&
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240620161258Z0/
+240627183137Z0/
 241009235959Z0a1
+2D0<V
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
@@ -368,22 +379,25 @@ $?A2@
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 8#u	I
+8#u	M
 8%uqH
+8A_A^_^][
 8D$@t
+8D$`u
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 9)~P3
 98t H
 9>~ZH
-:	V_powd
 :#u	H
 :#u	L
-::8~ du
 :help
 :name_ref
 :shorthelp
+:w}|7
 ;H9>&X
 ;I9}(tiH
+<	V_powd
 <	u2H
 <	u\L
 < t=<	t9
@@ -392,6 +406,7 @@ $?A2@
 <.t{<_tw
 </u{8E
 <0:08
+<1u	E8a
 <floating-point value out of range>
 <invalid currency %d>
 <invalid date format %d>
@@ -403,7 +418,6 @@ $?A2@
 <no failure reason set>
 <none>
 <space>
-=	V_qsort_s
 =imb;D
 =rIQU
 >#u	H
@@ -411,8 +425,11 @@ $?A2@
 >#u	M
 >0<0:
 >Mp$d
+>cjFO
 >jtm}S
 >|u;E
+?	V_qsort_s
+?#u	L
 ?7zQ6$
 ?:kP<
 ??0CDirWatcher@@QEAA@XZ
@@ -496,46 +513,44 @@ $?A2@
 @SUAWH
 @SUVWATAVAWH
 @SUVWATH
-@SUVWAVAWH
 @SUVWH
 @SUWH
 @SVWATAUAVAWH
-@SVWAUAWH
+@SVWATAUH
 @SWATAVH
 @SWATH
 @SWAWH
 @UATAUAVAWH
 @USVWATAUAVAWH
 @USVWATAUAVH
-@USWATH
+@USWAUH
 @UVWATAUAVAWH
 @UVWH
+@VWAUAVH
 @WAUAVH
 @WAVAWH
 @_RDATA
 A8}(u
-A9_D~<A
+A9\$D~DA
 A:8ucI
 A>pP&
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 ATAUAVH
 AUAVAWH
-A\_[]
+A]_[]
 A^A]A\
+A^A]A\^[
 A^A]A\_^[]
-A^A]_^]
 A^_^[]
 A^_^][
-A_A\_^]
 A_A^A\_[]
+A_A^A\_]
 A_A^A\_^
-A_A^A]A\[]
 A_A^A]A\]
 A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
-A_A^]
 A_A^_
 A__[H
 AnimGraphEditorUtils001
@@ -559,7 +574,7 @@ BenchmarkService001
 BinaryProperties_GetValue
 Brazilian
 Bulgarian
-C H!o
+C I!.H
 C0Hc	H
 C:\buildworker\citadel_staging_win64\build\_build_\localize\_vpc_localize\default\win64\_msvc_\Retail\localize.pdb
 C:\buildworker\citadel_staging_win64\build\src\common\language.cpp
@@ -713,19 +728,21 @@ D$ E3
 D$(E3
 D$(H;
 D$0@8{
-D$0E;
 D$0H;
 D$0HcH
 D$8L9
 D$@H+
-D$@Lc
+D$HD;
+D$HE;
+D$HLc|$@E
 D$PH+
 D$PI;
-D$Pu	M
-D$QE3
-D$XHcY
+D$`E;
+D$l+D$D
+D$lf3F
 D81uUL9r
 D8t$ht
+D>LS3
 Danish
 December
 DeleteCriticalSection
@@ -756,6 +773,7 @@ EncodePointer
 EngineServiceMgr001
 English
 EnterCriticalSection
+ExLct$X%
 ExitProcess
 FATAL ERROR: unable to register all schema data: %s
 Failed to read localization file %s
@@ -825,7 +843,7 @@ H9(tDI
 H9(tO
 H97u+A
 H98t2
-H98t7
+H9=q#
 H;XXs
 H;xXu5
 HA]_^[
@@ -834,23 +852,25 @@ HA_A^A]A\
 HH:mm:ss
 HammerMapLoader001
 HcD$@
-HcD$`H
-HcD$hH
+HcD$PH
+HcD$TD
 HcD$pH
+HcD$xH
 HcE_H
 HcG H
 HcK H
-HcL$8H
+HcL$0H
 HcO H
 HcO8Hc
 HcQ<H
+HcT$4
 Hc\$8
 Hc\$H
 Hc\$L
 Hc\$P
-Hc\$X
 Hc\$h
 Hc\$x
+Hc]@I
 Hcu`M
 Hc|$x
 HelpSystem_001
@@ -881,6 +901,7 @@ IsDebuggerPresent
 IsGrowable()
 IsIdxValid(i)
 IsProcessorFeaturePresent
+IsValid()
 IsValidCodePage
 Italian
 J>@G_
@@ -902,11 +923,10 @@ L$ ATAUAVAWH
 L$ I;
 L$ L;
 L$ SH
-L$ SUVWAUAVAWH
 L$ SUVWH
+L$ SVATAUAVH
 L$ UVWATAUAVAWH
 L$ VWAVH
-L$ VWAWH
 L$ WH
 L$ fff
 L$ |+L;
@@ -918,6 +938,8 @@ L$8H3
 L$@;|
 L$@H3
 L$OH;
+L$`fff
+L$hHc
 L9#u/H
 L?n(Zy&
 LCMapStringEx
@@ -962,11 +984,10 @@ Lc;D;{
 Lc>D;~
 LcA<E3
 LcD$$H
-LcL$8M
-LcL$`H
+LcL$0H
+LcL$PH
 LcO8H
-Lcd$xA
-Lct$h%
+Lc|$xA
 LeaveCriticalSection
 Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
 List all loaded localization files
@@ -1075,8 +1096,8 @@ RtlVirtualUnwind
 Russian
 S0Q0O
 SA|X=G
-SUATAVAWH
 SUVAUAVH
+SUVWAVAWH
 SUVWAVH
 SVWATAUAVAWH
 SVWATAUAVH
@@ -1120,19 +1141,18 @@ SteamAudio001
 Sunday
 Swedish
 T$ u	H
-T$0ff
-T$8Ic
+T$0A;
+T$0Ic
+T$4I;
 T$@Lc
 T$PE3
 T$Pu	H
+T$XLc*L
+T$XMc
+T$Xf9B
 T$`u	H
-T$`u	L
 T$hIc\
-T$hLc*M
-T$hMc
-T$hf9B
 T$hu	H
-T$pI;
 TUUUU
 TerminateProcess
 TestScriptMgr001
@@ -1155,9 +1175,7 @@ Traditional_Chinese
 Tuesday
 Turkish
 UATAUAVAWH
-UAVAWH
-USATAUAVAWH
-USATAVH
+USVAUAVH
 USVWATAUAVAWH
 USVWAVH
 USWATAVAWH
@@ -1165,8 +1183,9 @@ UUUUUU
 UUUUUUUUH
 UVAVH
 UVWATAUAVAWH
-UVWAUAVH
 UVWAVAWH
+UWATAVAWH
+UWAUAVAWH
 UWAVH
 Ukrainian
 Unable to find localization token '%s'
@@ -1224,11 +1243,9 @@ Valve_TestPluralsEnglishOnly:p
 Vietnamese
 VisBuilder_001
 Vrad3_001
-W	V_stricmp_fast
 WARNING: Duplicate string token '%s' found in %s (original in %s)
 WATAUAVAWH
 WAVAWH
-W]v>d
 WaitForSingleObjectEx
 WakeAllConditionVariable
 Washington1
@@ -1238,22 +1255,23 @@ WorldRendererMgr001
 WriteConsoleW
 WriteFile
 XA]_^[
+Y	V_stricmp_fast
 Y9"SD
 [K]taM?
 [unknown string]
 [unknown]
 \$ E3
 \$ UVATH
-\$ UVWATAWH
-\$ UVWAUAVH
+\$ UVAVH
+\$ UVWATAVH
 \$ VWATAUAVH
 \$ WH
 \$0H;
+\$0L#
 \$0eH
 \$8I;
 \$@H;
 \$Mu$
-\$XE2
 \$pu:M
 \resource\valve_
 ]J<0"0i3
@@ -1318,8 +1336,8 @@ _gUT^
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+`~j	d
 a7hIw
-aTHK"
 abcdefghijklmnopqrstuvwxyz
 allClusters.FindAndFastRemove( pCluster )
 argindex >= 0
@@ -1343,7 +1361,6 @@ cs_CZ
 czech
 d$@H;
 d$PA8E
-d$xE3
 da_DK
 danish
 dddd, MMMM dd, yyyy
@@ -1370,7 +1387,6 @@ f9D$
 f9i0t
 f9o0t
 fB9<A}1L
-fD9(u3E3
 fD91t
 fD91uTL9r
 fD94H}aD
@@ -1424,10 +1440,10 @@ l$0Hc
 l$0u(H
 l$@E3
 l$@Hc
+l$@fff
 l$AH;
-l$TLc|$PD
+l$`I;
 l$`tvHc
-l$x8]
 l$xHc
 l2|X/gGe
 latam
@@ -1480,6 +1496,8 @@ ot$ H
 p*W4H
 p0R^G'
 p;Y>u
+pA^A\_^]
+pA^A]^[]
 pA_A^A]A\_^[
 pCallback == nullptr
 pContext
@@ -1513,6 +1531,7 @@ romanian
 ru_RU
 russian
 s(f9C0t
+sH00Y
 sLD9sD~,3
 s_nConnectionCount > 0
 s_nRegistrationCount < V_ARRAYSIZE(s_pConnectionRegistration)
@@ -1528,27 +1547,27 @@ t$ E3
 t$ WATAUAVAWH
 t$ WAVAWH
 t$ WH
-t$0Hc
 t$8;;
 t$8H+
 t$8Hc
-t$<A;
 t$H<"u
 t$HL9
 t$H~ H
 t$PD9
 t$PLc
-t$TD;
 t$`D9
 t$`L#
-t$h}[H
+t$`}[H
 t&A88t
+t,<0u(A
 t,IcE
 t-Lck
+t/<0u+A
 t7HcP
 t;fff
+tQ@8}
 tRLcY
-tW<_u
+tU<_u
 tchinese
 tgH9;u
 th_TH
@@ -1582,36 +1601,43 @@ www.digicert.com1!0
 www.digicert.com1$0"
 x ATAVAWH
 x AVH
-xA^A\[]
 xSE;H
+xc%[b
 y$D8\
 y\PD>!
+z.h8=3Vc
 zh_CN
 zh_TW
 {un'%
 |$ 9YD
 |$ ATAVAWH
+|$ AUAVAWH
 |$ AVH
 |$ AWH
 |$ D!
 |$ E3
+|$ Hc<
+|$ IcT
 |$ L9
 |$ Lc
 |$ UH
+|$ }[H
 |$(E3
+|$4A;
 |$8~ H
+|$@I;
+|$@L;
 |$H~#H
 |$PE3
-|$PL;
-|$Pu	H
-|$Pu	L
+|$P}[H
 |$`E3
-|$`}[H
-|$pA;
+|$hH;
 |)L9c
 |Lu?c
 |b=})>
+}-fff
 }>;_$
 }LuHO
+}k<p_
 ~qj#k"
 ~t&LN

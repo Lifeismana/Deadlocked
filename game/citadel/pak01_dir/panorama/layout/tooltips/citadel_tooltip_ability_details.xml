@@ -5,6 +5,7 @@
 		<include src="s2r://panorama/styles/tooltips/citadel_tooltip_ability_details.vcss_c" />
 	</styles>
 	<CitadelTooltipAbilityDetails class="abilityDetailsTooltip" hittest="false" hittestchildren="false">
+		<GlobalClassListener classes="gDetailView" />
 		<Panel class="TexturePanel" />
 		<AbilityDetailsPanel id="AbilityDetailsPanel" />
 		<Panel class="AbilityList">

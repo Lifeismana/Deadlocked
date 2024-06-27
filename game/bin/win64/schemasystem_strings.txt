@@ -19,11 +19,11 @@
  (Abstract)
  - %s
  A\_[
+ A]A\_^[
  A^A]A\_^
  A^A]_
- A^A]_^]
+ A^^]
  A^_^
- A_A]_^[
  A_A^A\
  A_A^A\_^
  A_A^A]A\_
@@ -41,6 +41,10 @@
  delete
  delete[]
  new[]
+ r,E;
+ r3A;
+ rCA;
+ s#fD;
  tDE3
 !>6'Y
 !GlobalTypes
@@ -55,7 +59,6 @@
 !hn7!
 !m_Enum
 !m_NameStack.IsEmpty()
-!o*`#4
 !pDerivedType->IsSchemaAbstractClass()
 %-10s%-10s %-8s %-40s %-40s %-40s
 %-10s%-10u %-8u %-40s %-40s %-40s
@@ -88,6 +91,7 @@
 %s< %d >
 %s< %s >
 %s< %s, %s >
+%s< %s, %zu >
 %s[%d]
 %s|  % 2d: %s [Offset: %d]
 %s|  % 2d: [% 3d] %-12s %s
@@ -106,6 +110,7 @@
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
 (%d,%d)
 (A^A]A\_^[
+(A^A]_^
 (A^_^[
 (A_A]A\_
 (Lc)H
@@ -188,7 +193,6 @@
 .?AVbad_exception@std@@
 .?AVexception@std@@
 .?AVtype_info@@
-.B	[}
 .CRT$XCA
 .CRT$XCC
 .CRT$XCU
@@ -265,10 +269,11 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240620161246Z0/
+240627195216Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
+2e}G3,
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 311109235959Z0b1
@@ -304,7 +309,6 @@
 9t$@u
 ;H9>&X
 ;I9}(tiH
-<	V_qsort
 < %d >
 < t=<	t9
 <%s : %u>
@@ -317,12 +321,13 @@
 <no failure reason set>
 <unknown: %d>
 <unknown>
-=	V_qsort_s
 =imb;D
 =rIQU
+>	V_qsort
 >0<0:
 >Mp$d
 >jtm}S
+?	V_qsort_s
 ?7zQ6$
 ?:kP<
 ??0CUtlBuffer@@QEAA@HHH@Z
@@ -389,9 +394,9 @@
 @A\][
 @A^A]A\_^
 @A^_^
-@A_A\_^[
 @A_A^A\
 @A_A^A\_]
+@A_A^A\_^
 @A_A^A\_^][
 @A_A^A]
 @A_A^A]A\_
@@ -404,11 +409,11 @@
 @SUVWATAVAWH
 @SUVWAVH
 @SUWH
+@SVAUAVAWH
 @SVAVH
 @SVWATAUAVAWH
 @SVWATAUAVH
-@SVWATAWH
-@SVWAUAWH
+@SVWATAUH
 @SVWAVAWH
 @SVWAVH
 @SVWH
@@ -423,14 +428,14 @@
 @USVWATAUAVAWH
 @USVWATAUAVH
 @UVWATAUAVAWH
-@UWATAVH
 @VATAUH
 @VATAWH
+@VWAUAVH
+@WATAUAVH
 @WATAUAWH
 @WAUAVH
 @WAVAWH
 @WAVH
-@WAWH
 @_RDATA
 @fE9d
 A H;B uIH
@@ -481,13 +486,14 @@ B 9A u
 B$f9A$u
 B(9A(
 B(9A(u
-B(9A(u(H
 B(9A(u0H
+B(9A(u2H
 B(I9A(
 B09A0
 BAD BINDING
 BC?>6t9^	c:>
 BF>^G
+BH[R(
 Bad registered schema binding '%s' - not a class or enum!
 BakedLODBuilderMgr001
 Bellevue1
@@ -495,7 +501,7 @@ BenchmarkService001
 Binary
 BinaryProperties_GetValue
 Binding for '%s' is not a class
-C H!o
+C I!.H
 C0Hc	H
 C:\buildworker\citadel_staging_win64\build\_build_\resourcefile\_vpc_resourcefile\default\win64\_schema_\release\resourcemanifestfiledata_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\resourcefile\_vpc_resourcefile\default\win64\_schema_\release\resourcetype_h_schema.sc.cc
@@ -536,7 +542,7 @@ C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\kv3transfer.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
-C@f9G@
+C@f9G@u
 CBitVec
 CBitVecEnum
 CBufferString
@@ -565,6 +571,7 @@ CGlobalConCommandRegistry::AddToList
 CGlobalConVarRegistry::HookUpConVar
 CGlobalSymbol
 CGlobalSymbolCaseSensitive
+CHH9GH
 CHandle
 CKV3ArrayIteratorView<0>::CKV3ArrayIteratorView
 CKV3ArrayIteratorView<0>::iterator::operator *
@@ -616,6 +623,7 @@ CSchemaFieldIterator::Advance
 CSchemaFieldIterator::GetFieldMemoryOffset
 CSchemaFieldIterator::GetFieldName
 CSchemaFieldIterator::GetFullyQualifiedFieldName
+CSchemaFieldIterator::Reset
 CSchemaInheritanceIterator::PopulateTraversal_R
 CSchemaSystem::ConvertOldIntrospectedResourceDataToKV3::<lambda_1>::operator ()
 CSchemaSystem::ConvertOldIntrospectedResourceDataToKV3::<lambda_2>::operator ()
@@ -703,6 +711,8 @@ CUtlMemory<class SchemaMetaInfoHandle_t<class CSchemaType>,int>::Grow::<lambda_2
 CUtlMemory<int,int>::Grow
 CUtlMemory<int,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<int,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct AtomicTypeInfo_CollectionOfT_t,int>::Grow
+CUtlMemory<struct AtomicTypeInfo_CollectionOfT_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct AtomicTypeInfo_I_t,int>::Grow
 CUtlMemory<struct AtomicTypeInfo_I_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct AtomicTypeInfo_TT_t,int>::Grow
@@ -732,12 +742,12 @@ CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CSchemaTyp
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CSchemaType_Bitfield *,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow
+CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow::<lambda_2>::operator ()
-CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow
-CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct TypeAndCountInfo_t,class CSchemaType_FixedArray *,class CDefLess<struct TypeAndCountInfo_t>,unsigned short>::Node_t,unsigned short>,unsigned short>::Grow
@@ -779,6 +789,11 @@ CUtlRBTree<struct CUtlOrderedMapBase<int,class CSchemaType_Bitfield *,class CDef
 CUtlRBTree<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class SchemaMetaInfoHandle_t<struct SchemaAtomicTypeInfo_t>,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short> >::RemoveAll
+CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::FreeNode
+CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::NewNode
+CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::RemoveAll
+CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_CollectionOfT_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_CollectionOfT_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::RemoveAt
 CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::FreeNode
 CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_I_t,class CSchemaType_Atomic_I *,class CDefLess<struct AtomicTypeInfo_I_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::NewNode
@@ -789,11 +804,6 @@ CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaTyp
 CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::RemoveAll
 CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_TT_t,class CSchemaType_Atomic_TT *,class CDefLess<struct AtomicTypeInfo_TT_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::RemoveAt
-CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::FreeNode
-CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::NewNode
-CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::RemoveAll
-CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_CollectionOfT *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::RemoveAt
 CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::FreeNode
 CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,class CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::CKeyLess,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct AtomicTypeInfo_T_t,class CSchemaType_Atomic_T *,class CDefLess<struct AtomicTypeInfo_T_t>,unsigned short>::Node_t,unsigned short>,unsigned short> >::NewNode
@@ -835,6 +845,7 @@ Calling GetValueString on a table - you probably meant to call GetMemberString!%
 Cannot KV3Transfer an abstract class!
 Cannot deduce for class
 Cast of %s loses value information (returning %s)
+Ci_z5"p
 Class
 Class '%s
 Class Name
@@ -872,10 +883,10 @@ D$HH;
 D$PA;n
 D$PH+
 D$PI;
+D$PMc>E;~
 D$XE3
 D$XH;
 D$`A2E`
-D$`Mc>E;~
 D$hH;
 D$xfA;
 D81uUL9r
@@ -1127,19 +1138,22 @@ H!D$ I
 H!T$0D
 H-^Eu
 H9(tO
+H954U
 H97u+A
 H98t2
-H98t7
+H9D$H
 H;L$@
+H;X/g%
 H;XXs
 H;xXu5
-HA^A\_]
+HA^A]A\_
 HA_A^A]A\_^][
 HH:mm:ss
 HSCRIPT
 HammerMapLoader001
 Has Trivial Constructor: %s
 Has Trivial Destructor: %s
+Hc(;h
 Hc7;w
 HcE_H
 HcG H
@@ -1153,11 +1167,12 @@ HostStateMgr001
 I+4$H
 IPulseSystem_001
 IS_TYPESAFE_INTEGER
+Ic,$E
 If intended, call ClearSpecificType first to discard the old value.%s
 If intended, call SetToNull() first to discard the old value.%s
 IfA9,
 IfA9l
-IfD9L
+IfD9D
 Ignorable Indirection
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 InfoForResourceTypeCResourceManifestInternal
@@ -1189,11 +1204,11 @@ IsValid()
 IsValidCodePage
 IsValidIndex(i) && (i != InvalidIndex())
 J>@G_
-JAtV:]
 January
 K&>.yC
 K0HcQ
 KERNEL32.dll
+KUFUE
 KV3 instances cannot be set to an unspecified specific type
 KV3TransferSchema_ClassName::<lambda_1>::operator ()
 KeyValueCache001
@@ -1217,24 +1232,20 @@ KeyValues3::Internal_FindOrCreateMemberAimedAtExternalName::<lambda_1>::operator
 KeyValues3::Internal_FreeAllocation
 KeyValues3::Internal_GetArrayElementsArray
 KeyValues3::Internal_PrepareForInternalTypeAndNewData
-KeyValues3::Internal_SetValueAnyArray
 KeyValues3::IsValidTypeCombination
 KeyValues3::Metadata_GetFilename::<lambda_1>::operator ()
 KeyValues3::Metadata_GetLineColumn::<lambda_1>::operator ()
-KvlCWq
 K}*n:	
 K~Je#>!
 L!|$(L!
 L$ I;
 L$ L;
 L$ SH
-L$ SVWATAVH
-L$ SVWAVAWH
+L$ SVWAUAWH
 L$ SWH
-L$ UVWAUAWH
 L$ VWATAUAVAW
+L$ VWAUAVAWH
 L$ VWAVH
-L$ WAUAVH
 L$ WH
 L$ fff
 L$ |+L;
@@ -1246,8 +1257,9 @@ L$8H3
 L$@;|
 L$@H3
 L$@Hc
+L$@Mc&E;f
 L$PL;L$X
-L$PMc>E;~
+L$`Mc>E;~
 L9#u/H
 L9APt
 L;d$h
@@ -1261,7 +1273,6 @@ LeaveCriticalSection
 Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
 Listing %d %s schema bindings (%d classes and %d enums)
 Lj[;>
-Lo=KI
 LoadLibraryExW
 LocaleNameToLCID
 Localize_001
@@ -1287,6 +1298,8 @@ March
 MaterialParamBuffer_t
 MaterialUtils_001
 MathLib_Init
+Mc$$H
+Mc$$I
 Mc&E;f
 Mc<$E;|$
 Mc>E;~
@@ -1326,8 +1339,8 @@ Ordered object's memory was modified prior to construction
 OuterOffset
 PA^_^
 PA_A^A]A\_^]
+PA_A^A]^[
 PA_A^_
-PA_A^_^[
 PAq=?Mp#
 PanoramaTextServices001
 PanoramaUIClient001
@@ -1391,6 +1404,7 @@ RtlLookupFunctionEntry
 RtlPcToFileHeader
 RtlUnwindEx
 RtlVirtualUnwind
+S$r[Vq(
 S0Q0O
 S@fD;
 SA|X=G
@@ -1453,8 +1467,10 @@ SteamAudio001
 Struct
 Structure name collision: '%s' and '%s' (%d)
 Sunday
+T$0fD
 T$8Hc
 T$PE3
+T$pfD
 TRS_FALSE
 TRS_NONE
 TRS_TRUE
@@ -1558,7 +1574,6 @@ Vector4D
 VectorAligned
 VisBuilder_001
 Vrad3_001
-W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: SchemaSystem tried to load schema data for module '%s' but InstallSchemaBindings returned false.
 WARNING: SchemaSystem tried to load schema data for module '%s' but failed to load the module.
@@ -1577,13 +1592,14 @@ WorldGroupId_t
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
+Y	V_stricmp_fast
 Y9"SD
 [K]taM?
 [fA9<
 [fE94
 [fE;A
 \$ UH
-\$ UVWAUAVH
+\$ UVAVH
 \$ UVWAVAWH
 \$ VH
 \$ VWATAUAVH
@@ -1593,7 +1609,6 @@ Y9"SD
 \$@H;
 \$@fE;
 \$H;D$4
-\$PE3
 ]J<0"0i3
 _ ;_$t
 _RDATA
@@ -1620,13 +1635,12 @@ _include
 _multibase
 _not_pickable
 `.rdata
-`A^A]_
 `A^_^
 `A^_^][
 `A_A]A\_[
-`A_A]_^]
 `A_A^A\_^][
 `A_A^A]A\_^]
+`A_A^A]_^
 `A_A^_^]
 `RTTI
 `anonymous namespace'
@@ -1700,7 +1714,6 @@ connection already in progress
 connection refused
 connection reset
 cross device link
-d$HL;
 dddd, MMMM dd, yyyy
 destination address required
 device or resource busy
@@ -1718,7 +1731,6 @@ fB9<A}1L
 fD91uTL9r
 fD94H}aD
 fD9t$b
-fD;3w
 fE94*t+A
 false
 fffff
@@ -1774,17 +1786,17 @@ l$ Lci
 l$ Lcy
 l$ VWATAVAWH
 l$ VWAVH
+l$ WAVAWH
 l$ WH
 l$(E3
 l$0Hc
+l$0HcE
 l$0Lc)
+l$0Mc
 l$@E3
-l$@HcE
-l$@Mc
 l$HA_A^A]A\_^
-l$PL;
 l$XI;
-l$XL;
+l$`I;
 l$hE3
 l$pu3M
 l$xE3
@@ -1902,11 +1914,10 @@ operator co_await
 operator<=>
 ot$ H
 owner dead
-ownership == KV3_COPY_EXTERNAL
 p*W4H
 p0R^G'
 p;Y>u
-pA^A\_^[
+pA_A]_^[
 pA_A^A]A\_^[
 pArrayOf->m_pTypeScope == m_pParentScope
 pBase && pBase->m_pClass
@@ -1952,7 +1963,6 @@ pType.IsValid()
 pTypeScope != nullptr
 panorama
 panorama_image
-peK/?&
 permission denied
 pointer
 protocol error
@@ -1962,7 +1972,9 @@ qangle
 quaternion
 r	Vr.>T
 r	w!L9\
+r	w&M9L
 r	w(L9\
+r	w2H9\
 range check failure
 read only file system
 resource
@@ -2024,7 +2036,6 @@ t$(E3
 t$(f;
 t$(fD
 t$0fD;
-t$0~ H
 t$8;;
 t$8E3
 t$8H+
@@ -2034,19 +2045,16 @@ t$@}#Hc
 t$XI;
 t$`L#
 t$`fE;
+t$`}[H
 t$hE;
-t$h}[H
 t$pfA
 t$xH;
-t+fA;
-t,fA;
 t-Lck
 t4fB9,
 t6fE94
 t7HcP
 t9H9s
-tAfD9
-tBfD9M
+t<fE94
 tEfff
 tRLcY
 table
@@ -2071,15 +2079,17 @@ u$D8r(t
 u%@8j(t
 u&fE;
 u)HcG
+u)fE;
 u,!T$(H!T$ 
 u3HcH<H
 u4I9}(
 u<fD;
 u>Lc[
 uCN9t
+uCfD;
 uDfD;
 uED8r(t
-uNf9y
+uGf9y
 u]Hcu
 uchar32
 uint16
@@ -2102,6 +2112,8 @@ vector4d
 vfD9d
 vrman
 vs. codegen '
+w/I9l
+w;L9L
 wrong protocol type
 www.digicert.com1!0
 www.digicert.com1$0"
@@ -2109,6 +2121,7 @@ x ATAVAWH
 x AVH
 xA_A^A]A\_^[]
 y\PD>!
+y]ing
 {@9s8|AH
 {un'%
 |$ ATAVAWH
@@ -2123,26 +2136,31 @@ y\PD>!
 |$ Mc
 |$ UAVAWH
 |$ UH
+|$ }[H
 |$(A^
+|$0Mc
+|$0fA;
 |$0uE
 |$8Hc
-|$8fA;
 |$@Hc
-|$@Mc
+|$@I;
 |$@f;
 |$@u%H
 |$@~ H
 |$HL;
-|$Pfff
+|$P}[H
 |$X@8t$pu$H
 |$`E3
-|$`}[H
+|$hH;
 |$h~!H
 |)L9c
 |Lu?c
 |b=})>
+}$f;Q
+}$fA;P
+}'fA;P
 }>;_$
-}GfE9y
+}AfA9X
 }LuHO
 ~5LcS
 ~qj#k"

@@ -541,6 +541,50 @@
 							property_group = "Perspective - Mix Layers"
 						}
 					}
+					send_name_player = 
+					{
+						data_type = "string"
+						value = "main"
+						_system_properties = 
+						{
+							display_group = "Normal"
+							property_group = "Perspective - Send Name"
+							property_help = "Assigns the name of the VMIX track based on perspective."
+						}
+					}
+					send_name_team = 
+					{
+						data_type = "string"
+						value = "team_filtering"
+						_system_properties = 
+						{
+							display_group = "Normal"
+							property_group = "Perspective - Send Name"
+							property_help = "Assigns the name of the VMIX track based on perspective."
+						}
+					}
+					send_name_opponent = 
+					{
+						data_type = "string"
+						value = "main"
+						_system_properties = 
+						{
+							display_group = "Normal"
+							property_group = "Perspective - Send Name"
+							property_help = "Assigns the name of the VMIX track based on perspective."
+						}
+					}
+					send_name_neutral = 
+					{
+						data_type = "string"
+						value = "main"
+						_system_properties = 
+						{
+							display_group = "Normal"
+							property_group = "Perspective - Send Name"
+							property_help = "Assigns the name of the VMIX track based on perspective."
+						}
+					}
 				}
 			},
 			
@@ -823,6 +867,16 @@
 			},
 			
 			{
+				name = "send_name_switch"
+				operator = "logic_perspective_switch_string"
+				input_participant_perspective = "@citadel_find_perspective::game_entity_perspective.output"
+				input_player_value = "@public.send_name_player"
+				input_team_value = "@public.send_name_team"
+				input_opponent_value = "@public.send_name_opponent"
+				input_neutral_value = "@public.send_name_neutral"
+			},
+			
+			{
 				name = "citadel_default_3d"
 				operator = "sos_import_stack"
 				import_stack = "citadel_default_3d"
@@ -898,6 +952,11 @@
 					{
 						data_type = "float"
 						value = "@mixlayer_should_disable.output"
+					}
+					send_name = 
+					{
+						data_type = "string"
+						value = "@send_name_switch.output"
 					}
 				}
 			},

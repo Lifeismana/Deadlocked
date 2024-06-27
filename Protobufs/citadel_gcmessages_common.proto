@@ -104,6 +104,7 @@ enum ECitadelBotDifficulty {
 enum ECitadelRegionMode {
 	k_ECitadelRegionMode_ROW = 0;
 	k_ECitadelRegionMode_Europe = 1;
+	k_ECitadelRegionMode_SEAsia = 2;
 }
 
 enum ECitadelGameMode {
@@ -431,6 +432,7 @@ message CMsgMatchMetaDataContents {
 		repeated .CMsgMatchMetaDataContents.AbilityStat ability_stats = 20;
 		repeated float stats_type_stat = 21 [packed = true];
 		repeated .CMsgMatchMetaDataContents.BookReward book_rewards = 22;
+		optional uint32 abandon_match_time_s = 23;
 	}
 
 	message Objective {

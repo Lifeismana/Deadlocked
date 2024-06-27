@@ -9,8 +9,11 @@
 		<Panel class="MainBody">
 			<Label class="h2 display align_center silvered" text="#Citadel_RecommendFriend_Title" />
 			<Label class="DescArea body_sm align_center silvered" text="#Citadel_RecommendFriend_desc" html="true" />
-			<Panel class="LeftRightFlow">
-				<CitadelInviteFriendMenu id="FriendMenu" />
+			<Panel class="formContents LeftRightFlow">
+				<Panel class="LeftSide TopBottomFlow">
+					<Label class="subheader" text="#Citadel_RecommendFriend_SelectTitle" html="true" />
+					<CitadelInviteFriendMenu id="FriendMenu" />
+				</Panel>
 				<Panel class="TopBottomFlow">
 					<Panel class="LabelRow">
 						<Label class="TypeLabel" text="Email:" />
@@ -25,6 +28,7 @@
 						<Label class="TypeLabel" text="Select Region:" />
 						<DropDown class="SelectDropDown" id="LocationDropDown" dropdownbodyposition="100% 100%" />
 					</Panel>
+					<Label class="ErrorLabel" text="#Citadel_RecommendFriend_ErrorMsg" />
 					<Panel class="ButtonRow LeftRightFlow">
 						<Button class="PopupButton" id="OKButton" onactivate="CitadelPopupSubmitPlaytestUser()" enabled="false">
 							<Label text="#Citadel_RecommendFriend_PopupButton" />

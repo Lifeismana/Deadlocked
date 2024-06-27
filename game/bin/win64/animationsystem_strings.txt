@@ -107,13 +107,11 @@
  'L>[
  (%s%s)
  (08@HPX`hpx
- (08@HPX`jP]
+ (08@HPX`j
  (08@HPXb
- (08@HPZP]
+ (08@HPZ
  (08@HR
  (08@J
- (08@JP]
- (0:P]
  (0X`hpz
  (Start: 
  * %d WeightLists
@@ -173,11 +171,9 @@
  A_A]A\_[
  A_A]A\_]
  A_A]A\_^
- A_A]_^[
  A_A]_^]
  A_A^A\
  A_A^A\][
- A_A^A\^]
  A_A^A\_[
  A_A^A\_]
  A_A^A\_^
@@ -186,8 +182,6 @@
  A_A^A]A\_
  A_A^A]A\_^[
  A_A^A]A\_^]
- A_A^A]^]
- A_A^A]_[
  A_A^A]_]
  A_A^A]_^
  A_A^A]_^][
@@ -205,14 +199,16 @@
  A__]
  A__^
  A__^][
+ Aconst char *__cdecl Reflection::Internal::GetFuncName<class CEmitTagActionUpdater>(void)
+ BPaf
  Base Class Array'
  Base Class Descriptor at (
  Bik_debug_fabrik_backwards_enabled
  C>TQ
  Class Hierarchy Descriptor'
  Complete Object Locator'
- D;hX
  E;eX
+ E;kX
  H;\$8
  H;{ t/H
  Hc)H
@@ -257,6 +253,7 @@
  definition file imports the proto which defines the option.
  delete
  delete[]
+ ep?G 
  has the same name as 
  if you ignore case and strip out the enum name prefix (if any). This is error-prone and can lead to undefined behavior. Please avoid doing this. If you are using allow_alias, please assign the same numeric value to both enums.
  is unused.
@@ -479,6 +476,7 @@ $`<`uMM
 &YA1E
 &YA1H
 &YA1I
+&sourceTaskList != this && &targetTaskList != this
 &vOutput != &pt1
 &vOutput != &pt2
 &vOutput != &pt3
@@ -496,40 +494,39 @@ $`<`uMM
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( m_pAnimGraphChangeListener == nullptr ) || ( pListener == nullptr )
 ( nFlags & KEYVALUES3_AS_STRING_APPEND ) == 0
-( nRemainingFlags == 0 )
 ( ndxBucket >= 0 ) && ( ndxBucket < 65536 )
 ( ndxKeyData >= 0 ) && ( ndxKeyData < 65536 )
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
+(%"'-
+(%:aJ
+(%Ms:
+(%`xS
+(%as:
 (%d,%d)
-(%s::
+(%ws:
 (("**,
 ((6"8(:,<*>
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-%Z=
-(-Fs:
-(-KbD
-(-K}5
-(-Pu:
-(-^09
-(-a]:
-(-aaD
-(-i`D
-(-{n:
+(-7JU
+(-SR,
+(-YsS
+(-il0
 (0`hpx
 (4$Mc
-(5LYa
-(5g09
-(5~K:
-(=57>
-(=G]:
-(=fd)
+(5kA-
+(5oO=
+(5}R=
+(=FJ-
+(=PO=
+(=lkS
 (A]A\^[
 (A]A\_^
 (A^A\
 (A^A\^[
 (A^A\_[
+(A^A\_]
 (A^A]][
 (A^A]^[
 (A^A]_^
@@ -544,6 +541,7 @@ $`<`uMM
 (A_A\_]
 (A_A\_^][
 (A_A]A\_
+(A_A]A\_^[
 (A_A]_]
 (A_A^
 (A_A^A\]
@@ -557,8 +555,8 @@ $`<`uMM
 (A__^]
 (Blend1D):m_flBlendValue
 (Blend1D):m_resetCount
-(CRxyt
 (D$ A
+(D$ E
 (D$ H
 (D$ L
 (D$ f
@@ -580,9 +578,9 @@ $`<`uMM
 (D$PH
 (D$PL
 (D$Pf
-(D$`A
 (D$`D
 (D$`H
+(D$pA
 (D$pD
 (D60H
 (D70H
@@ -595,20 +593,23 @@ $`<`uMM
 (L$ D
 (L$ H
 (L$ f
+(L$0A
 (L$0D
 (L$0H
 (L$0I
 (L$0L
+(L$0f
+(L$0t!
 (L$@A
 (L$@D
 (L$@H
+(L$@f
 (L$@s
 (L$PA
 (L$PD
 (L$PH
 (L$PI
 (L$PL
-(L$`A
 (L$`D
 (L$`H
 (L$`I
@@ -618,16 +619,15 @@ $`<`uMM
 (L$pH
 (L$pL
 (L$pf
+(L;d$h
 (Lc)H
 (LcfHA
 (Lcf`A
 (M E3
 (M0fA
 (M@fA
-(None)
 (T$ D
 (T$ H
-(T$ L
 (T$ fD
 (T$0A
 (T$0D
@@ -645,7 +645,6 @@ $`<`uMM
 (T$`fA
 (T$pD
 (T$pH
-(T$pf
 (T?j?Y
 (U@fA
 (Visit( pPart->GetCondition(), pOutResult, pOutError )) == (GenericExprResult_t::OK)
@@ -658,7 +657,6 @@ $`<`uMM
 (\$ D
 (\$ H
 (\$0D
-(\$@A
 (\$@D
 (\$@L
 (\$PD
@@ -673,6 +671,7 @@ $`<`uMM
 (cannot determine missing fields for lite message)
 (channel = 
 (d$ A
+(d$ IcF
 (d$0D
 (d$0L
 (d$@A
@@ -713,7 +712,6 @@ $`<`uMM
 (t$ I
 (t$ L
 (t$ f
-(t$ s2
 (t$ t
 (t$ v-
 (t$0D
@@ -727,9 +725,11 @@ $`<`uMM
 (t$@H
 (t$@I
 (t$@L
+(t$PA
 (t$PD
 (t$PH
 (t$PL
+(t$Pf
 (t$PfA
 (t$`A
 (t$`D
@@ -737,7 +737,6 @@ $`<`uMM
 (t$`I
 (t$`L
 (t$`Lcv(D;v8u
-(t$pA
 (t$pD
 (t$pD8
 (t$pE
@@ -749,11 +748,14 @@ $`<`uMM
 (|$ H
 (|$ I
 (|$ r
+(|$ s
 (|$0@
+(|$0A
 (|$0D
 (|$0H
 (|$0I
 (|$@D
+(|$@E
 (|$@H
 (|$@I
 (|$@L
@@ -805,10 +807,10 @@ $`<`uMM
 )D$@I
 )D$@Jc
 )D$@L
+)D$@M
 )D$@f
 )D$PA
 )D$PD
-)D$PE
 )D$PE3
 )D$PH
 )D$PI
@@ -817,13 +819,17 @@ $`<`uMM
 )D$Pw
 )D$Px
 )D$`A
+)D$`B
 )D$`D
 )D$`H
+)D$`I
 )D$`L
+)D$`M
 )D$`s*
 )D$`u 
 )D$pA
 )D$pB
+)D$pD
 )D$pI
 )D$pL
 )D$pf
@@ -852,7 +858,6 @@ $`<`uMM
 )L$@E
 )L$@H
 )L$@Ic
-)L$@L
 )L$@t
 )L$PA
 )L$PD
@@ -863,14 +868,17 @@ $`<`uMM
 )L$Pf
 )L$`A
 )L$`B
+)L$`D
+)L$`E
 )L$`H
+)L$`M
 )L$pA
+)L$pB
 )L$pD
 )L$pE
 )L$pH
 )L$pI
 )L$pL
-)L$pM
 )M Hc
 )M@Ic
 )T$ A
@@ -894,7 +902,6 @@ $`<`uMM
 )T$pD
 )T$pH
 )T$pI
-)T$pf
 )\$ 9y`
 )\$ D
 )\$ L
@@ -914,15 +921,14 @@ $`<`uMM
 )\$`E
 )\$`H
 )\$`I
-)\$`L
 )\$`f
 )\$pD
+)\$pI
 )\$pL+
 )d$ M;
 )d$0D
 )d$@A
 )d$@L
-)d$@f
 )d$@r
 )d$PD
 )d$`D
@@ -948,6 +954,7 @@ $`<`uMM
 )l$`f
 )l$pD
 )l$pE
+)l$pH
 )l$pM
 )t$ $
 )t$ 99
@@ -979,6 +986,7 @@ $`<`uMM
 )t$@I
 )t$@L
 )t$@f
+)t$@t
 )t$PA
 )t$PD
 )t$PH
@@ -1004,6 +1012,7 @@ $`<`uMM
 )t$pE3
 )t$pH
 )t$pL
+)t$pM
 )u@t 
 )|$ A
 )|$ D
@@ -1011,6 +1020,7 @@ $`<`uMM
 )|$ I+
 )|$ L
 )|$ w
+)|$08
 )|$0;
 )|$0A
 )|$0D
@@ -1027,15 +1037,15 @@ $`<`uMM
 )|$@I
 )|$@L
 )|$@L+
-)|$@f
 )|$P3
 )|$PA
+)|$PB
 )|$PD
 )|$PH
 )|$PM
+)|$Pfff
 )|$Pw6
 )|$`A
-)|$`B
 )|$`D
 )|$`E
 )|$`H
@@ -1046,19 +1056,17 @@ $`<`uMM
 )|$pH
 )|$pL
 )|B?d!
-*	V_log10f
-*>PjS
+*518\
 *HcD;LH
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *xNIL
-+	V_log2_uint
 +:HcS
 +Base Pose
 +Bones
 +C$Hc
 +C$Lc
-+D$TA;
++D$T;
 +D$pI
 +D$xI
 +G$Hc
@@ -1068,8 +1076,8 @@ $`<`uMM
 +L$@;
 +L$DA
 +L$X;
-+L$`A;
 +L$h;
++L$p;
 +L$x;
 +M<7>
 +Permissions
@@ -1082,6 +1090,7 @@ $`<`uMM
 +f)>0'
 +h->|
 +o'q)}
+,	V_log10f
 , at <EOF>
 , at offset %d
 , from: 
@@ -1092,14 +1101,15 @@ $`<`uMM
 ,>f9E
 ,HR>O
 ,HcD;LH
+,HfD;
 ,I<%w
 ,W5y+
 ,X< w
 ,YA1I
-,\$`H
+,\$pH
 ,d$pfE
 ,j.b0^2`4^6`8^:f<
--	V_log2f
+-	V_log2_uint
 - Scripted Sequence: 
 -1 1000
 -BH>t
@@ -1118,9 +1128,8 @@ $`<`uMM
 .00cfg
 .3z u
 .40t8Ic
-.5x|%
-.=3~%
-.=RF0
+.5hb(
+.=Kd(
 .>PJ;I:qE>
 .?AU?$ArrayWrapper@V?$CUtlVector@UCWeightPreview@@HV?$CUtlMemory@UCWeightPreview@@H@@@@@Detail@Reflection@@
 .?AU?$ArrayWrapper@V?$CUtlVector@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@HV?$CUtlMemory@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@H@@@@@Detail@Reflection@@
@@ -1232,6 +1241,11 @@ $`<`uMM
 .?AUCAnimationGroup@@
 .?AUCDefinition@CNmAndNode@@
 .?AUCDefinition@CNmAnimationPoseNode@@
+.?AUCDefinition@CNmBlend1DNode@@
+.?AUCDefinition@CNmBlend2DNode@@
+.?AUCDefinition@CNmBoneMaskBlendNode@@
+.?AUCDefinition@CNmBoneMaskNode@@
+.?AUCDefinition@CNmBoneMaskSelectorNode@@
 .?AUCDefinition@CNmCachedBoolNode@@
 .?AUCDefinition@CNmCachedFloatNode@@
 .?AUCDefinition@CNmCachedIDNode@@
@@ -1249,12 +1263,36 @@ $`<`uMM
 .?AUCDefinition@CNmControlParameterIDNode@@
 .?AUCDefinition@CNmControlParameterTargetNode@@
 .?AUCDefinition@CNmControlParameterVectorNode@@
+.?AUCDefinition@CNmCurrentSyncEventIDNode@@
+.?AUCDefinition@CNmCurrentSyncEventIndexNode@@
+.?AUCDefinition@CNmCurrentSyncEventPercentageThroughNode@@
 .?AUCDefinition@CNmDurationScaleNode@@
+.?AUCDefinition@CNmFixedWeightBoneMaskNode@@
+.?AUCDefinition@CNmFloatAbsNode@@
+.?AUCDefinition@CNmFloatAngleMathNode@@
+.?AUCDefinition@CNmFloatClampNode@@
+.?AUCDefinition@CNmFloatComparisonNode@@
+.?AUCDefinition@CNmFloatCurveNode@@
+.?AUCDefinition@CNmFloatEaseNode@@
+.?AUCDefinition@CNmFloatMathNode@@
+.?AUCDefinition@CNmFloatRangeComparisonNode@@
+.?AUCDefinition@CNmFloatRemapNode@@
+.?AUCDefinition@CNmFloatSelectorNode@@
+.?AUCDefinition@CNmFloatSwitchNode@@
+.?AUCDefinition@CNmFootEventConditionNode@@
+.?AUCDefinition@CNmFootstepEventIDNode@@
+.?AUCDefinition@CNmFootstepEventPercentageThroughNode@@
 .?AUCDefinition@CNmIDComparisonNode@@
+.?AUCDefinition@CNmIDEventConditionNode@@
+.?AUCDefinition@CNmIDEventNode@@
+.?AUCDefinition@CNmIDEventPercentageThroughNode@@
 .?AUCDefinition@CNmIDToFloatNode@@
+.?AUCDefinition@CNmIsTargetSetNode@@
 .?AUCDefinition@CNmLayerBlendNode@@
 .?AUCDefinition@CNmNotNode@@
 .?AUCDefinition@CNmOrNode@@
+.?AUCDefinition@CNmOrientationWarpNode@@
+.?AUCDefinition@CNmParameterizedBlendNode@@
 .?AUCDefinition@CNmParameterizedClipSelectorNode@@
 .?AUCDefinition@CNmParameterizedSelectorNode@@
 .?AUCDefinition@CNmPassthroughNode@@
@@ -1263,13 +1301,23 @@ $`<`uMM
 .?AUCDefinition@CNmSelectorNode@@
 .?AUCDefinition@CNmSpeedScaleBaseNode@@
 .?AUCDefinition@CNmSpeedScaleNode@@
+.?AUCDefinition@CNmStateCompletedConditionNode@@
+.?AUCDefinition@CNmStateEventConditionNode@@
 .?AUCDefinition@CNmStateMachineNode@@
 .?AUCDefinition@CNmStateNode@@
+.?AUCDefinition@CNmSyncEventIndexConditionNode@@
+.?AUCDefinition@CNmTargetInfoNode@@
+.?AUCDefinition@CNmTargetOffsetNode@@
+.?AUCDefinition@CNmTargetPointNode@@
+.?AUCDefinition@CNmTargetWarpNode@@
+.?AUCDefinition@CNmTimeConditionNode@@
+.?AUCDefinition@CNmTransitionEventConditionNode@@
 .?AUCDefinition@CNmTransitionNode@@
 .?AUCDefinition@CNmVectorCreateNode@@
 .?AUCDefinition@CNmVectorInfoNode@@
 .?AUCDefinition@CNmVectorNegateNode@@
 .?AUCDefinition@CNmVelocityBasedSpeedScaleNode@@
+.?AUCDefinition@CNmVelocityBlendNode@@
 .?AUCDefinition@CNmVirtualParameterBoneMaskNode@@
 .?AUCDefinition@CNmVirtualParameterBoolNode@@
 .?AUCDefinition@CNmVirtualParameterFloatNode@@
@@ -2097,8 +2145,13 @@ $`<`uMM
 .?AVCNmAdditiveBlendTask@@
 .?AVCNmAndNode@@
 .?AVCNmAnimationPoseNode@@
+.?AVCNmBlend1DNode@@
+.?AVCNmBlend2DNode@@
 .?AVCNmBlendTask@@
 .?AVCNmBlendTaskBase@@
+.?AVCNmBoneMaskBlendNode@@
+.?AVCNmBoneMaskNode@@
+.?AVCNmBoneMaskSelectorNode@@
 .?AVCNmBoneMaskValueNode@@
 .?AVCNmBoolValueNode@@
 .?AVCNmCachedBoolNode@@
@@ -2122,23 +2175,48 @@ $`<`uMM
 .?AVCNmControlParameterIDNode@@
 .?AVCNmControlParameterTargetNode@@
 .?AVCNmControlParameterVectorNode@@
+.?AVCNmCurrentSyncEventIDNode@@
+.?AVCNmCurrentSyncEventIndexNode@@
+.?AVCNmCurrentSyncEventPercentageThroughNode@@
 .?AVCNmDurationScaleNode@@
 .?AVCNmEvent@@
 .?AVCNmExternalGraphNode@@
+.?AVCNmFixedWeightBoneMaskNode@@
+.?AVCNmFloatAbsNode@@
+.?AVCNmFloatAngleMathNode@@
+.?AVCNmFloatClampNode@@
+.?AVCNmFloatComparisonNode@@
+.?AVCNmFloatCurveNode@@
+.?AVCNmFloatEaseNode@@
+.?AVCNmFloatMathNode@@
+.?AVCNmFloatRangeComparisonNode@@
+.?AVCNmFloatRemapNode@@
+.?AVCNmFloatSelectorNode@@
+.?AVCNmFloatSwitchNode@@
 .?AVCNmFloatValueNode@@
 .?AVCNmFootEvent@@
+.?AVCNmFootEventConditionNode@@
+.?AVCNmFootstepEventIDNode@@
+.?AVCNmFootstepEventPercentageThroughNode@@
 .?AVCNmFrameSnapEvent@@
 .?AVCNmGraphNode@@
 .?AVCNmIDComparisonNode@@
 .?AVCNmIDEvent@@
+.?AVCNmIDEventConditionNode@@
+.?AVCNmIDEventNode@@
+.?AVCNmIDEventPercentageThroughNode@@
 .?AVCNmIDToFloatNode@@
 .?AVCNmIDValueNode@@
+.?AVCNmIsTargetSetNode@@
 .?AVCNmLayerBlendNode@@
 .?AVCNmLegacyEvent@@
 .?AVCNmModelSpaceBlendTask@@
 .?AVCNmNotNode@@
 .?AVCNmOrNode@@
+.?AVCNmOrientationWarpEvent@@
+.?AVCNmOrientationWarpNode@@
 .?AVCNmOverlayBlendTask@@
+.?AVCNmParameterizedBlendNode@@
 .?AVCNmParameterizedClipSelectorNode@@
 .?AVCNmParameterizedSelectorNode@@
 .?AVCNmPassthroughNode@@
@@ -2151,11 +2229,21 @@ $`<`uMM
 .?AVCNmSelectorNode@@
 .?AVCNmSpeedScaleBaseNode@@
 .?AVCNmSpeedScaleNode@@
+.?AVCNmStateCompletedConditionNode@@
+.?AVCNmStateEventConditionNode@@
 .?AVCNmStateMachineNode@@
 .?AVCNmStateNode@@
+.?AVCNmSyncEventIndexConditionNode@@
+.?AVCNmTargetInfoNode@@
+.?AVCNmTargetOffsetNode@@
+.?AVCNmTargetPointNode@@
 .?AVCNmTargetValueNode@@
+.?AVCNmTargetWarpEvent@@
+.?AVCNmTargetWarpNode@@
 .?AVCNmTask@@
+.?AVCNmTimeConditionNode@@
 .?AVCNmTransitionEvent@@
+.?AVCNmTransitionEventConditionNode@@
 .?AVCNmTransitionNode@@
 .?AVCNmValueNode@@
 .?AVCNmVectorCreateNode@@
@@ -2163,6 +2251,7 @@ $`<`uMM
 .?AVCNmVectorNegateNode@@
 .?AVCNmVectorValueNode@@
 .?AVCNmVelocityBasedSpeedScaleNode@@
+.?AVCNmVelocityBlendNode@@
 .?AVCNmVirtualParameterBoneMaskNode@@
 .?AVCNmVirtualParameterBoolNode@@
 .?AVCNmVirtualParameterFloatNode@@
@@ -2425,7 +2514,6 @@ $`<`uMM
 .D$4z
 .D$8z
 .E8u5
-.G<t(H
 .GdtOI
 .H9k H
 .N0te
@@ -2448,7 +2536,6 @@ $`<`uMM
 .idata$6
 .pdata
 .placeholder.proto
-.q<t+
 .rdata
 .rdata$T
 .rdata$r
@@ -2470,22 +2557,19 @@ $`<`uMM
 .xJ>Hf
 .xdata
 .xdata$x
-/	V_logf
+/	V_log2f
 /2GG>!B
 /3HcC
-/5O''
-/5jv$
-/5pF)
-/5wP'
+/5@,-
+/5H\#
+/5P+-
+/5WZ#
 /6s^M
-/=mf6
-/=y["
 />58d%
 /@$s6
 /A8s"
 /C,s3H
 /D>Pr
-/F$rn
 /H9l$0t
 /N@wq
 /s@wxH
@@ -2505,8 +2589,7 @@ $`<`uMM
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
-08@HRP]
-08BP]
+08@HR
 0;O0|
 0><[cZUg^>
 0A\^]
@@ -2568,6 +2651,7 @@ $`<`uMM
 0iN>/
 0w0c1
 0}0i1
+1	V_logf
 1#IND
 1#INF
 1#QNAN
@@ -2584,7 +2668,7 @@ $`<`uMM
 220323000000Z
 220801000000Z
 230714000000Z
-240620161509Z0/
+240627200554Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -2595,10 +2679,7 @@ $`<`uMM
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 311109235959Z0b1
 3333333
-33333333H
 33333333H+
-33333333I
-33333333L
 341013235959Z0H1
 360428235959Z0i1
 370322235959Z0c1
@@ -2606,9 +2687,9 @@ $`<`uMM
 3<$u?A
 3>N;kU
 3>fvw
+3HcD$xH
 3mq+<
 3qGZL
-4	V_modff
 456789:;<=
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
 4>H;7tIH
@@ -2617,6 +2698,7 @@ $`<`uMM
 5FjiT
 5YA1I
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+6	V_modff
 6*f(_
 6I]Dc
 6OB,n_
@@ -2631,7 +2713,6 @@ $`<`uMM
 8@8t)0u
 8@8t90u
 8@HP:
-8@JP]
 8A*t5H
 8A\_[]
 8A\_[]I
@@ -2641,8 +2722,10 @@ $`<`uMM
 8A]_^[
 8A^_^[
 8A_A\^[
+8A_A]^]
 8A_A]_]
 8A_A]_^
+8A_A^A\_^]
 8A_A^^[
 8A_A^_^
 8A_A^_^][
@@ -2664,10 +2747,8 @@ $`<`uMM
 9)~P3
 9)~eH
 9+fIH
+9-Cv>
 90u(H
-94/~83
-958l/
-95fXB
 98t H
 98~(H
 98~+H
@@ -2675,13 +2756,16 @@ $`<`uMM
 9;~kH
 9;~oH
 9;~xH
+9<.~I3
 9>powf
 9>~ZH
 9A0t=
 9AhtKH
 9C(ulH
 9Cu,fD9y
+9D$ t
 9D$ u"
+9D$ht
 9D$pu
 9D9'|-
 9Gx~aH
@@ -2714,8 +2798,11 @@ $`<`uMM
 9o0~pH
 9o4~?H
 9p@u+
+9qH|AH
+9qP|AH
 9r }/H
 9r4~.D
+9s |=H
 9s |AH
 9s4~5L
 9s8~:L
@@ -2734,6 +2821,7 @@ $`<`uMM
 9ux~zH
 9valu
 9xX~}H
+9z |AH
 9{(u	H
 9{p~83
 9{t~:3
@@ -2750,7 +2838,6 @@ $`<`uMM
 9|$xu
 9}@~&
 9}@~V
-:	V_powd
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 : lexer error %d :
@@ -2767,10 +2854,10 @@ $`<`uMM
 :!\$`0
 :!\$x0
 :!\$|0
+:!l$00
 :!l$@0
 :!t$$0
 :!t$(0
-:!t$D0L
 :!t$l0
 :!|$ 0E
 :!|$`0
@@ -2800,10 +2887,9 @@ $`<`uMM
 :m_hSequence
 :m_resetCount
 :m_resetCycleValue
-;	V_powf
 ;.u1L
 ;?0123456789:;<=>?
-;CX}zH
+;CX}|H
 ;E,s<H
 ;Eh~AA
 ;FDsDH
@@ -2834,6 +2920,7 @@ $`<`uMM
 ;|$\|
 ;|$t|
 ;|$||
+<	V_powd
 <	u%H
 <	u)Icn
 <	u2H
@@ -2883,12 +2970,13 @@ $`<`uMM
 <unknown>
 <utK@:
 <x~fH
-=	V_qsort_s
+=	V_powf
 =%H5<mN
 ========================================
 ==MQ?
 =SHX?
 =imb;D
+=m_nNodeIdx
 =rIQU
 >%H5<mN
 >-memory-
@@ -2903,6 +2991,7 @@ $`<`uMM
 >f;D$4t
 >fA9~
 >jtm}S
+?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?456789:;<=
@@ -3022,7 +3111,7 @@ $`<`uMM
 ?YA1A
 ?f`Y4
 ?kxG2)
-?m_Stamp
+?m_BindPose
 ?{Q}<
 @ 9B tDA
 @ H;}
@@ -3047,6 +3136,7 @@ $`<`uMM
 @8s2t
 @8s@t
 @8t$Xul
+@8t80u
 @8w$t
 @8w%u
 @8y*uS@8y+u:H
@@ -3054,29 +3144,28 @@ $`<`uMM
 @8z%u
 @8{(u
 @8|$0
+@8}pt5I
 @<333?
 @>%>b
 @@HcB ;B$u
 @A\][
-@A\^[
 @A\^]
 @A]A\^][
 @A]A\_^[
 @A]A\_^]
+@A]_[
 @A^A\_^]
 @A^A]A\^]
 @A^A]A\_^
 @A^A]_
 @A^A]_^]
 @A^][
-@A^^[
 @A^^]
 @A^_[
 @A^_]
 @A^_^
 @A^_^][
 @A_A\]
-@A_A\_^[
 @A_A\_^]
 @A_A][
 @A_A]]
@@ -3101,12 +3190,12 @@ $`<`uMM
 @A__^
 @HHcB$;B(u
 @HPX&I
-@HPX`hvP
+@HPX`hv
 @HcAp3
 @L9?t	H
 @PHcB(;B,u
 @SATAUAVAWH
-@SATAUH
+@SATAUAVH
 @SATH
 @SAUAVH
 @SAVAWH
@@ -3137,6 +3226,7 @@ $`<`uMM
 @SUVWAWH
 @SUVWH
 @SUWATAUH
+@SUWATAVH
 @SUWATAWH
 @SUWATH
 @SUWAUAVH
@@ -3159,7 +3249,6 @@ $`<`uMM
 @SVWATAVAWH
 @SVWATAWH
 @SVWAUAVH
-@SVWAUAWH
 @SVWAVAWH
 @SVWAVH
 @SVWAWH
@@ -3170,7 +3259,6 @@ $`<`uMM
 @SWATAVH
 @SWATAWH
 @SWATH
-@SWAUAVAWH
 @SWAUH
 @SWAVAWH
 @SWAVH
@@ -3203,6 +3291,7 @@ $`<`uMM
 @USVWAVAWH
 @USVWAVH
 @USVWH
+@USWATAUAVAWH
 @USWATH
 @USWAUAVAWH
 @USWAUAWH
@@ -3211,15 +3300,16 @@ $`<`uMM
 @USWAWH
 @USWH
 @UVATAUAVH
-@UVATAUH
-@UVATAVAWH
+@UVATAUAWH
 @UVATH
 @UVAUAVAWH
+@UVAUAWH
 @UVAVAWH
 @UVAVH
 @UVAWH
 @UVWATAUAVAWH
 @UVWATAUH
+@UVWATAVAWH
 @UVWATAWH
 @UVWAUAVH
 @UVWAVH
@@ -3227,6 +3317,7 @@ $`<`uMM
 @UVWH
 @UWATAUAVAWH
 @UWATAUH
+@UWATAVH
 @UWATAWH
 @UWATH
 @UWAUAWH
@@ -3320,7 +3411,7 @@ A9]8~n3
 A9]P~B3
 A9]h~@3
 A9^ ~G3
-A9^p~6
+A9^p~*Hc
 A9_ ~%f
 A9optjE
 A9}x~lL
@@ -3329,8 +3420,8 @@ A;,$|
 A;4$|
 A;<$|
 A;B(}
+A;D$ }
 A;D$(
-A;E }
 A;F |
 A;F8|
 A;Fp~DA
@@ -3344,8 +3435,8 @@ A;I }
 A;O |
 A;Oh~DA
 A;P0}
+A;T$ }
 A;T$0}
-A;U }
 A;U }.D
 A;V }
 A;W(~
@@ -3539,8 +3630,6 @@ AVAWH
 AXHcAL
 A\^[]
 A\_^[]
-A\_^]
-A]A\[
 A]A\^
 A]A\_]
 A]A\_][
@@ -3556,6 +3645,7 @@ A^A\^
 A^A\^[
 A^A\_[
 A^A\_]
+A^A\_][
 A^A\_^
 A^A\_^[
 A^A\_^[]
@@ -3566,6 +3656,7 @@ A^A]A\^]
 A^A]A\_]
 A^A]A\_^
 A^A]A\_^[]
+A^A]A\_^]
 A^A]A\_^][
 A^A]]
 A^A]][
@@ -3581,6 +3672,7 @@ A^_^[]
 A^_^]
 A^_^][
 A_A\[
+A_A\[]
 A_A\]
 A_A\][
 A_A\^]
@@ -3600,8 +3692,10 @@ A_A]A\_^[
 A_A]A\_^]
 A_A][
 A_A][]
+A_A]^
 A_A]^[]
 A_A]_
+A_A]_[
 A_A]_[]
 A_A^A\
 A_A^A\[]
@@ -3615,11 +3709,13 @@ A_A^A\_^[
 A_A^A\_^[]
 A_A^A\_^][
 A_A^A]
+A_A^A]A\[]
 A_A^A]A\]
 A_A^A]A\^
 A_A^A]A\^[]
 A_A^A]A\^]
 A_A^A]A\_
+A_A^A]A\_[]
 A_A^A]A\_^[
 A_A^A]A\_^[]
 A_A^A]A\_^]
@@ -3633,6 +3729,7 @@ A_A^A]^]
 A_A^A]_]
 A_A^A]_^
 A_A^A]_^[]
+A_A^A]_^]
 A_A^A]_^][
 A_A^[
 A_A^]
@@ -3651,7 +3748,6 @@ A_A^_^[]
 A_A^_^]
 A_A^_^][
 A__[]
-A__][
 A__^[]
 A__^][
 A`Lc,
@@ -3883,7 +3979,6 @@ Audio Tag
 August
 Auto Reset
 Axis isn't normalized!
-B	V_roundf
 B 9A tDA
 B D	B
 B H+P(
@@ -3896,7 +3991,6 @@ B8<2u
 B8D8`duxA9]
 B8HcX\
 B9,	t0
-B9<>|
 B<=(;|
 B<=(;|?
 B>Bh9
@@ -3936,6 +4030,7 @@ Base recognizer function recoverFromMismatchedToken called by unknown parser typ
 Beginning
 Bellevue1
 BenchmarkService001
+Bezier
 BinAdd
 BinDiv
 BinEq
@@ -4017,12 +4112,12 @@ BoundaryRadius
 Buffer Used: %i
 C 9C@u
 C ;C$t
-C H!o
 C H+X(
 C H+X(I
 C H;W
 C HcK$;
 C HcW$
+C I!.H
 C$HcK(Hc
 C$HcS(
 C(A9@(}
@@ -4034,7 +4129,6 @@ C(L9{0t	H
 C(LcC$H
 C,HcS0
 C,Hcs0Hc
-C,fff
 C09s0t
 C0H94
 C0Hc	H
@@ -4217,31 +4311,47 @@ C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_legacy_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_rootmotion_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_transition_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_warp_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animflags_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraph_dataset_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraph_definition_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraph_node_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_blend1d_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_blend2d_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_bonemasks_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_bools_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_cachedvalues_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_childgraph_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_clip_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_constvalues_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_controlparameters_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_events_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_externalgraph_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_floats_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_ids_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_layers_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_orientationwarp_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_passthrough_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_pose_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_rootmotionoverride_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_selector_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_speedscale_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_state_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_stateconditions_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_statemachine_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_targets_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_targetwarp_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_transition_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_vectors_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animrootmotion_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animskeleton_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animsynctrack_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtarget_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_blend_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_cachedpose_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_defaultpose_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_h_schema.sc.cc
+C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_sample_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtime_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\ikrig_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animattachment_h_schema.sc.cc
@@ -4366,27 +4476,37 @@ C:\buildworker\citadel_staging_win64\build\src\animlib\animlib.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\animpose.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\animserializer.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\animsynctrack.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\animtarget.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_definition.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_instance.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_node.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_recording.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_rootmotion.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_sampledevents.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_blend1d.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_blend2d.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_bonemasks.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_bools.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_cachedvalues.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_childgraph.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_clip.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_controlparameters.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_events.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_externalgraph.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_floats.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_ids.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_layers.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_orientationwarp.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_passthrough.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_pose.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_rootmotionoverride.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_selector.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_speedscale.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_state.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_stateconditions.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_statemachine.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_targets.cpp
+C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_targetwarp.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_transition.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_vectors.cpp
 C:\buildworker\citadel_staging_win64\build\src\animlib\tasksystem\animtaskposepool.cpp
@@ -4405,6 +4525,7 @@ C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\fuse_expr_compil
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\fuse_expr_executioncontext.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.g
+C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\piecewisecurve.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\quaternion.cpp
 C:\buildworker\citadel_staging_win64\build\src\modellib\animationophistory.cpp
@@ -4443,11 +4564,13 @@ C:\buildworker\citadel_staging_win64\build\src\public\animlib\animclip.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\animcompressor.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\animdebug.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\animeasing.h
+C:\buildworker\citadel_staging_win64\build\src\public\animlib\animevent.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\animpose.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\animrootmotion.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\animserializer.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\animskeleton.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\animsynctrack.h
+C:\buildworker\citadel_staging_win64\build\src\public\animlib\animtarget.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\animtime.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_context.h
 C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_dataset.h
@@ -4468,7 +4591,6 @@ C:\buildworker\citadel_staging_win64\build\src\public\mathlib\fuse_expr_executio
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr.h
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr_eval.h
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\interpolaterbf.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\range.h
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\rotation.h
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\vectoraligned.h
 C:\buildworker\citadel_staging_win64\build\src\public\modellib\ik\ikchaindata.h
@@ -4481,6 +4603,7 @@ C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\kv3typemanage
 C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\legacy_back_compat_introspectedtokv3typemanager.h
 C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\iresourcesystem.h
 C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\weakhandle.h
 C:\buildworker\citadel_staging_win64\build\src\public\schemalib\schemaenumhelpers.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\assert_base.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitstring.h
@@ -4513,8 +4636,6 @@ C:\buildworker\citadel_staging_win64\build\src\resourcefile\introspectedtokv3typ
 C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
 C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcefile.cpp
 C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaclassinfo.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaenumhelpers.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaenuminfo.cpp
 C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
 C:\buildworker\citadel_staging_win64\build\src\thirdparty\tnt\tnt_matrix.h
 C:\buildworker\citadel_staging_win64\build\src\thirdparty\tnt\tnt_vector.h
@@ -4527,7 +4648,7 @@ C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utltokenizer.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
 C;4,|
-C@:D$pt"
+C@:D$ t"
 C@H9,
 C@H98t$H
 C@H9|$0t
@@ -5768,7 +5889,9 @@ CMoverUpdateNode::KV3TransferLoad_Impl
 CMoverUpdateNode::KV3Transfer_DefaultKeys_Impl
 CMoverUpdateNode::Schema_VerifyBindingIsRegistered
 CNetworkedCycle
+CNmAdditiveBlendTask
 CNmAdditiveBlendTask::CNmAdditiveBlendTask
+CNmAdditiveBlendTask::Schema_VerifyBindingIsRegistered
 CNmAndNode::CDefinition
 CNmAndNode::CDefinition::KV3TransferLoad_Impl
 CNmAndNode::CDefinition::KV3Transfer_DefaultKeys_Impl
@@ -5783,18 +5906,38 @@ CNmAnimationPoseNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmAnimationPoseNode::InitializeInternal
 CNmAnimationPoseNode::ShutdownInternal
 CNmAnimationPoseNode::Update
+CNmBitFlags
+CNmBitFlags::KV3TransferLoad_Impl
+CNmBitFlags::KV3Transfer_DefaultKeys_Impl
+CNmBitFlags::Schema_VerifyBindingIsRegistered
 CNmBitSerializer::ReadBool
 CNmBitSerializer::ReadDependencyIndex
 CNmBitSerializer::ReadNormalizedFloat16Bit
 CNmBitSerializer::ReadNormalizedFloat8Bit
-CNmBitSerializer::ReadResourcePtr
+CNmBitSerializer::ReadResourceHandle
 CNmBitSerializer::ReadUInt
 CNmBitSerializer::WriteBool
 CNmBitSerializer::WriteDependencyIndex
 CNmBitSerializer::WriteNormalizedFloat16Bit
 CNmBitSerializer::WriteNormalizedFloat8Bit
 CNmBitSerializer::WriteUInt
+CNmBlend1DNode::CDefinition
+CNmBlend1DNode::CDefinition::KV3TransferLoad_Impl
+CNmBlend1DNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmBlend1DNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmBlend2DNode::CDefinition
+CNmBlend2DNode::CDefinition::KV3TransferLoad_Impl
+CNmBlend2DNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmBlend2DNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmBlend2DNode::EvaluateBlendSpace
+CNmBlend2DNode::InitializeInternal
+CNmBlend2DNode::ShutdownInternal
+CNmBlend2DNode::Update
+CNmBlendTask
 CNmBlendTask::CNmBlendTask
+CNmBlendTask::Schema_VerifyBindingIsRegistered
+CNmBlendTaskBase
+CNmBlendTaskBase::Schema_VerifyBindingIsRegistered
 CNmBlender::ApplyAdditiveToReferencePose
 CNmBlender::LocalBlendFromReferencePose
 CNmBlender::LocalBlendToReferencePose
@@ -5812,15 +5955,33 @@ CNmBoneMask::ResetWeights
 CNmBoneMask::ScaleWeights
 CNmBoneMask::Schema_VerifyBindingIsRegistered
 CNmBoneMask::WeightInfo_t
+CNmBoneMaskBlendNode::CDefinition
+CNmBoneMaskBlendNode::CDefinition::KV3TransferLoad_Impl
+CNmBoneMaskBlendNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmBoneMaskBlendNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmBoneMaskBlendNode::GetValueInternal
+CNmBoneMaskNode::CDefinition
+CNmBoneMaskNode::CDefinition::InstantiateNode
+CNmBoneMaskNode::CDefinition::KV3TransferLoad_Impl
+CNmBoneMaskNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmBoneMaskNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmBoneMaskPool::AcquireMask
 CNmBoneMaskPool::ReleaseMask
 CNmBoneMaskPool::operator []
+CNmBoneMaskSelectorNode::CDefinition
+CNmBoneMaskSelectorNode::CDefinition::KV3TransferLoad_Impl
+CNmBoneMaskSelectorNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmBoneMaskSelectorNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmBoneMaskSelectorNode::GetBoneMaskForIndex
+CNmBoneMaskSelectorNode::GetValueInternal
+CNmBoneMaskSelectorNode::InitializeInternal
 CNmBoneMaskTask::CNmBoneMaskTask
 CNmBoneMaskTaskList::AppendTaskListAndFixDependencies
 CNmBoneMaskTaskList::BlendToGeneratedMask
 CNmBoneMaskTaskList::CopyFrom
 CNmBoneMaskTaskList::EmplaceTask
 CNmBoneMaskTaskList::GenerateBoneMask
+CNmBoneMaskTaskList::SetToBlendBetweenTaskLists
 CNmBoneMaskValueNode::CDefinition
 CNmBoolValueNode::CDefinition
 CNmCachedBoolNode::CDefinition
@@ -5838,9 +5999,13 @@ CNmCachedIDNode::CDefinition::KV3TransferLoad_Impl
 CNmCachedIDNode::CDefinition::KV3Transfer_DefaultKeys_Impl
 CNmCachedIDNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmCachedIDNode::GetValueInternal
+CNmCachedPoseReadTask
 CNmCachedPoseReadTask::CNmCachedPoseReadTask
+CNmCachedPoseReadTask::Schema_VerifyBindingIsRegistered
+CNmCachedPoseWriteTask
 CNmCachedPoseWriteTask::CNmCachedPoseWriteTask
 CNmCachedPoseWriteTask::Execute
+CNmCachedPoseWriteTask::Schema_VerifyBindingIsRegistered
 CNmCachedTargetNode::CDefinition
 CNmCachedTargetNode::CDefinition::KV3TransferLoad_Impl
 CNmCachedTargetNode::CDefinition::KV3Transfer_DefaultKeys_Impl
@@ -5925,6 +6090,24 @@ CNmControlParameterVectorNode::CDefinition
 CNmControlParameterVectorNode::CDefinition::KV3TransferLoad_Impl
 CNmControlParameterVectorNode::CDefinition::KV3Transfer_DefaultKeys_Impl
 CNmControlParameterVectorNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmCurrentSyncEventIDNode::CDefinition
+CNmCurrentSyncEventIDNode::CDefinition::KV3TransferLoad_Impl
+CNmCurrentSyncEventIDNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmCurrentSyncEventIDNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmCurrentSyncEventIDNode::GetValueInternal
+CNmCurrentSyncEventIDNode::InitializeInternal
+CNmCurrentSyncEventIndexNode::CDefinition
+CNmCurrentSyncEventIndexNode::CDefinition::KV3TransferLoad_Impl
+CNmCurrentSyncEventIndexNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmCurrentSyncEventIndexNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmCurrentSyncEventIndexNode::GetValueInternal
+CNmCurrentSyncEventIndexNode::InitializeInternal
+CNmCurrentSyncEventPercentageThroughNode::CDefinition
+CNmCurrentSyncEventPercentageThroughNode::CDefinition::KV3TransferLoad_Impl
+CNmCurrentSyncEventPercentageThroughNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmCurrentSyncEventPercentageThroughNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmCurrentSyncEventPercentageThroughNode::GetValueInternal
+CNmCurrentSyncEventPercentageThroughNode::InitializeInternal
 CNmDebugPathTracker::Clear
 CNmDebugPathTracker::PopBasePath
 CNmDebugPathTracker::RemoveTrackedPath
@@ -5936,6 +6119,7 @@ CNmDurationScaleNode::CalculateSpeedScaleMultiplier
 CNmDurationScaleNode::InitializeInternal
 CNmDurationScaleNode::ShutdownInternal
 CNmEvent
+CNmEvent::GetEndTime
 CNmEvent::KV3TransferLoad_Impl
 CNmEvent::Schema_VerifyBindingIsRegistered
 CNmExternalGraphNode::CDefinition
@@ -5944,11 +6128,114 @@ CNmExternalGraphNode::CDefinition::KV3Transfer_DefaultKeys_Impl
 CNmExternalGraphNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmExternalGraphNode::Update
 CNmExternalGraphNode::~CNmExternalGraphNode
+CNmFixedWeightBoneMaskNode::CDefinition
+CNmFixedWeightBoneMaskNode::CDefinition::KV3TransferLoad_Impl
+CNmFixedWeightBoneMaskNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFixedWeightBoneMaskNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatAbsNode::CDefinition
+CNmFloatAbsNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatAbsNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatAbsNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatAbsNode::GetValueInternal
+CNmFloatAbsNode::InitializeInternal
+CNmFloatAbsNode::ShutdownInternal
+CNmFloatAngleMathNode::CDefinition
+CNmFloatAngleMathNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatAngleMathNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatAngleMathNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatAngleMathNode::GetValueInternal
+CNmFloatAngleMathNode::InitializeInternal
+CNmFloatAngleMathNode::Operation_t
+CNmFloatAngleMathNode::ShutdownInternal
+CNmFloatClampNode::CDefinition
+CNmFloatClampNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatClampNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatClampNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatClampNode::GetValueInternal
+CNmFloatClampNode::InitializeInternal
+CNmFloatClampNode::ShutdownInternal
+CNmFloatComparisonNode::CDefinition
+CNmFloatComparisonNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatComparisonNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatComparisonNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatComparisonNode::Comparison_t
+CNmFloatComparisonNode::GetValueInternal
+CNmFloatComparisonNode::InitializeInternal
+CNmFloatComparisonNode::ShutdownInternal
+CNmFloatCurveNode::CDefinition
+CNmFloatCurveNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatCurveNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatCurveNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatCurveNode::GetValueInternal
+CNmFloatCurveNode::InitializeInternal
+CNmFloatCurveNode::ShutdownInternal
+CNmFloatEaseNode::CDefinition
+CNmFloatEaseNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatEaseNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatEaseNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatEaseNode::GetValueInternal
+CNmFloatEaseNode::InitializeInternal
+CNmFloatEaseNode::ShutdownInternal
+CNmFloatMathNode::CDefinition
+CNmFloatMathNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatMathNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatMathNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatMathNode::GetValueInternal
+CNmFloatMathNode::InitializeInternal
+CNmFloatMathNode::Operator_t
+CNmFloatMathNode::ShutdownInternal
+CNmFloatRangeComparisonNode::CDefinition
+CNmFloatRangeComparisonNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatRangeComparisonNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatRangeComparisonNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatRangeComparisonNode::GetValueInternal
+CNmFloatRangeComparisonNode::InitializeInternal
+CNmFloatRangeComparisonNode::ShutdownInternal
+CNmFloatRemapNode::CDefinition
+CNmFloatRemapNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatRemapNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatRemapNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatRemapNode::GetValueInternal
+CNmFloatRemapNode::InitializeInternal
+CNmFloatRemapNode::RemapRange_t
+CNmFloatRemapNode::RemapRange_t::KV3TransferLoad_Impl
+CNmFloatRemapNode::RemapRange_t::KV3Transfer_DefaultKeys_Impl
+CNmFloatRemapNode::RemapRange_t::Schema_VerifyBindingIsRegistered
+CNmFloatRemapNode::ShutdownInternal
+CNmFloatSelectorNode::CDefinition
+CNmFloatSelectorNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatSelectorNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatSelectorNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFloatSelectorNode::GetValueInternal
+CNmFloatSelectorNode::InitializeInternal
+CNmFloatSelectorNode::ShutdownInternal
+CNmFloatSwitchNode::CDefinition
+CNmFloatSwitchNode::CDefinition::KV3TransferLoad_Impl
+CNmFloatSwitchNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFloatSwitchNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmFloatValueNode::CDefinition
 CNmFootEvent
 CNmFootEvent::KV3TransferLoad_Impl
 CNmFootEvent::KV3Transfer_DefaultKeys_Impl
 CNmFootEvent::Schema_VerifyBindingIsRegistered
+CNmFootEventConditionNode::CDefinition
+CNmFootEventConditionNode::CDefinition::KV3TransferLoad_Impl
+CNmFootEventConditionNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFootEventConditionNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFootEventConditionNode::GetValueInternal
+CNmFootEventConditionNode::InitializeInternal
+CNmFootstepEventIDNode::CDefinition
+CNmFootstepEventIDNode::CDefinition::KV3TransferLoad_Impl
+CNmFootstepEventIDNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFootstepEventIDNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFootstepEventIDNode::GetValueInternal
+CNmFootstepEventIDNode::InitializeInternal
+CNmFootstepEventPercentageThroughNode::CDefinition
+CNmFootstepEventPercentageThroughNode::CDefinition::KV3TransferLoad_Impl
+CNmFootstepEventPercentageThroughNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmFootstepEventPercentageThroughNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmFootstepEventPercentageThroughNode::GetValueInternal
+CNmFootstepEventPercentageThroughNode::InitializeInternal
 CNmFrameSnapEvent
 CNmFrameSnapEvent::KV3TransferLoad_Impl
 CNmFrameSnapEvent::KV3Transfer_DefaultKeys_Impl
@@ -5956,7 +6243,7 @@ CNmFrameSnapEvent::Schema_VerifyBindingIsRegistered
 CNmFrameTime::CNmFrameTime
 CNmGraphContext::TrackActiveNode
 CNmGraphDataSet
-CNmGraphDataSet::GetResource
+CNmGraphDataSet::GetWeakHandle
 CNmGraphDataSet::KV3TransferLoad_Impl
 CNmGraphDataSet::KV3Transfer_DefaultKeys_Impl
 CNmGraphDataSet::Schema_VerifyBindingIsRegistered
@@ -5989,6 +6276,7 @@ CNmGraphNode::Shutdown
 CNmGraphNode::ShutdownInternal
 CNmGraphNode::~CNmGraphNode
 CNmGraphVariation
+CNmGraphVariation::GetDataSet
 CNmGraphVariation::GetDefinition
 CNmGraphVariation::KV3TransferLoad_Impl
 CNmGraphVariation::KV3Transfer_DefaultKeys_Impl
@@ -6005,6 +6293,24 @@ CNmIDEvent
 CNmIDEvent::KV3TransferLoad_Impl
 CNmIDEvent::KV3Transfer_DefaultKeys_Impl
 CNmIDEvent::Schema_VerifyBindingIsRegistered
+CNmIDEventConditionNode::CDefinition
+CNmIDEventConditionNode::CDefinition::KV3TransferLoad_Impl
+CNmIDEventConditionNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmIDEventConditionNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmIDEventConditionNode::GetValueInternal
+CNmIDEventConditionNode::InitializeInternal
+CNmIDEventNode::CDefinition
+CNmIDEventNode::CDefinition::KV3TransferLoad_Impl
+CNmIDEventNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmIDEventNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmIDEventNode::GetValueInternal
+CNmIDEventNode::InitializeInternal
+CNmIDEventPercentageThroughNode::CDefinition
+CNmIDEventPercentageThroughNode::CDefinition::KV3TransferLoad_Impl
+CNmIDEventPercentageThroughNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmIDEventPercentageThroughNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmIDEventPercentageThroughNode::GetValueInternal
+CNmIDEventPercentageThroughNode::InitializeInternal
 CNmIDToFloatNode::CDefinition
 CNmIDToFloatNode::CDefinition::KV3TransferLoad_Impl
 CNmIDToFloatNode::CDefinition::KV3Transfer_DefaultKeys_Impl
@@ -6016,6 +6322,13 @@ CNmIDValueNode::CDefinition
 CNmIKRig
 CNmIKRig::KV3Transfer_DefaultKeys_Impl
 CNmIKRig::Schema_VerifyBindingIsRegistered
+CNmIsTargetSetNode::CDefinition
+CNmIsTargetSetNode::CDefinition::KV3TransferLoad_Impl
+CNmIsTargetSetNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmIsTargetSetNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmIsTargetSetNode::GetValueInternal
+CNmIsTargetSetNode::InitializeInternal
+CNmIsTargetSetNode::ShutdownInternal
 CNmLayerBlendNode::CDefinition
 CNmLayerBlendNode::CDefinition::KV3TransferLoad_Impl
 CNmLayerBlendNode::CDefinition::KV3Transfer_DefaultKeys_Impl
@@ -6033,7 +6346,9 @@ CNmLegacyEvent
 CNmLegacyEvent::KV3TransferLoad_Impl
 CNmLegacyEvent::KV3Transfer_DefaultKeys_Impl
 CNmLegacyEvent::Schema_VerifyBindingIsRegistered
+CNmModelSpaceBlendTask
 CNmModelSpaceBlendTask::CNmModelSpaceBlendTask
+CNmModelSpaceBlendTask::Schema_VerifyBindingIsRegistered
 CNmNotNode::CDefinition
 CNmNotNode::CDefinition::KV3TransferLoad_Impl
 CNmNotNode::CDefinition::KV3Transfer_DefaultKeys_Impl
@@ -6048,7 +6363,40 @@ CNmOrNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmOrNode::GetValueInternal
 CNmOrNode::InitializeInternal
 CNmOrNode::ShutdownInternal
+CNmOrientationWarpEvent
+CNmOrientationWarpEvent::KV3TransferLoad_Impl
+CNmOrientationWarpEvent::KV3Transfer_DefaultKeys_Impl
+CNmOrientationWarpEvent::Schema_VerifyBindingIsRegistered
+CNmOrientationWarpNode::CDefinition
+CNmOrientationWarpNode::CDefinition::KV3TransferLoad_Impl
+CNmOrientationWarpNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmOrientationWarpNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmOrientationWarpNode::DrawDebug
+CNmOrientationWarpNode::InitializeInternal
+CNmOrientationWarpNode::PerformWarp
+CNmOrientationWarpNode::ShutdownInternal
+CNmOrientationWarpNode::Update
+CNmOverlayBlendTask
 CNmOverlayBlendTask::CNmOverlayBlendTask
+CNmOverlayBlendTask::Schema_VerifyBindingIsRegistered
+CNmParameterizedBlendNode::BlendRange_t
+CNmParameterizedBlendNode::BlendRange_t::KV3TransferLoad_Impl
+CNmParameterizedBlendNode::BlendRange_t::KV3Transfer_DefaultKeys_Impl
+CNmParameterizedBlendNode::BlendRange_t::Schema_VerifyBindingIsRegistered
+CNmParameterizedBlendNode::CDefinition
+CNmParameterizedBlendNode::CDefinition::InstantiateNode
+CNmParameterizedBlendNode::CDefinition::KV3TransferLoad_Impl
+CNmParameterizedBlendNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmParameterizedBlendNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmParameterizedBlendNode::EvaluateBlendSpace
+CNmParameterizedBlendNode::InitializeInternal
+CNmParameterizedBlendNode::Parameterization_t
+CNmParameterizedBlendNode::Parameterization_t::CreateParameterization
+CNmParameterizedBlendNode::Parameterization_t::KV3TransferLoad_Impl
+CNmParameterizedBlendNode::Parameterization_t::KV3Transfer_DefaultKeys_Impl
+CNmParameterizedBlendNode::Parameterization_t::Schema_VerifyBindingIsRegistered
+CNmParameterizedBlendNode::ShutdownInternal
+CNmParameterizedBlendNode::Update
 CNmParameterizedClipSelectorNode::CDefinition
 CNmParameterizedClipSelectorNode::CDefinition::KV3TransferLoad_Impl
 CNmParameterizedClipSelectorNode::CDefinition::KV3Transfer_DefaultKeys_Impl
@@ -6074,6 +6422,7 @@ CNmPassthroughNode::InitializeInternal
 CNmPassthroughNode::Update
 CNmPose::CNmPose
 CNmPose::DrawDebug
+CNmPose::GetModelSpaceTransform
 CNmPose::GetTransform
 CNmPose::SetTransform
 CNmPoseBuffer::CopyFrom
@@ -6093,11 +6442,16 @@ CNmReferencePoseNode::CDefinition::KV3TransferLoad_Impl
 CNmReferencePoseNode::CDefinition::KV3Transfer_DefaultKeys_Impl
 CNmReferencePoseNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmReferencePoseNode::Update
+CNmReferencePoseTask
+CNmReferencePoseTask::Schema_VerifyBindingIsRegistered
+CNmResourceMappings_t::GetResourceHandle
+CNmResourceMappings_t::GetResourceIndex
 CNmResourceTypeManagers::Register
 CNmRootMotionData
 CNmRootMotionData::GetTransform
 CNmRootMotionData::KV3TransferLoad_Impl
 CNmRootMotionData::KV3Transfer_DefaultKeys_Impl
+CNmRootMotionData::SamplingMode_t
 CNmRootMotionData::Schema_VerifyBindingIsRegistered
 CNmRootMotionDebugger::RecordBlend
 CNmRootMotionDebugger::RecordGraphSource
@@ -6117,12 +6471,17 @@ CNmRootMotionOverrideNode::InitializeInternal
 CNmRootMotionOverrideNode::ModifyRootMotion
 CNmRootMotionOverrideNode::OverrideFlags_t
 CNmRootMotionOverrideNode::ShutdownInternal
+CNmSampleTask
 CNmSampleTask::CNmSampleTask
 CNmSampleTask::Execute
+CNmSampleTask::Schema_VerifyBindingIsRegistered
 CNmSampledEvent::CNmSampledEvent
 CNmSampledEvent::GetEvent
+CNmSampledEvent::GetPercentageThrough
+CNmSampledEvent::GetStateEventType
 CNmSampledEvent::IsEventOfType
 CNmSampledEventsBuffer::BlendEventRanges
+CNmSampledEventsBuffer::GetEvent
 CNmSampledEventsBuffer::MarkEventsAsFromInactiveBranch
 CNmSampledEventsBuffer::MarkEventsAsIgnored
 CNmSampledEventsBuffer::MarkOnlyStateEventsAsIgnored
@@ -6137,6 +6496,7 @@ CNmSelectorNode::ShutdownInternal
 CNmSelectorNode::Update
 CNmSkeleton
 CNmSkeleton::GetBoneID
+CNmSkeleton::GetParentBoneIndex
 CNmSkeleton::KV3TransferLoad_Impl
 CNmSkeleton::KV3Transfer_DefaultKeys_Impl
 CNmSkeleton::Schema_VerifyBindingIsRegistered
@@ -6152,6 +6512,23 @@ CNmSpeedScaleNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmSpeedScaleNode::CalculateSpeedScaleMultiplier
 CNmSpeedScaleNode::InitializeInternal
 CNmSpeedScaleNode::ShutdownInternal
+CNmStateCompletedConditionNode::CDefinition
+CNmStateCompletedConditionNode::CDefinition::KV3TransferLoad_Impl
+CNmStateCompletedConditionNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmStateCompletedConditionNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmStateCompletedConditionNode::GetValueInternal
+CNmStateCompletedConditionNode::InitializeInternal
+CNmStateCompletedConditionNode::ShutdownInternal
+CNmStateEventConditionNode::CDefinition
+CNmStateEventConditionNode::CDefinition::KV3TransferLoad_Impl
+CNmStateEventConditionNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmStateEventConditionNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmStateEventConditionNode::Condition_t
+CNmStateEventConditionNode::Condition_t::KV3TransferLoad_Impl
+CNmStateEventConditionNode::Condition_t::KV3Transfer_DefaultKeys_Impl
+CNmStateEventConditionNode::Condition_t::Schema_VerifyBindingIsRegistered
+CNmStateEventConditionNode::GetValueInternal
+CNmStateEventConditionNode::InitializeInternal
 CNmStateMachineNode::CDefinition
 CNmStateMachineNode::CDefinition::KV3TransferLoad_Impl
 CNmStateMachineNode::CDefinition::KV3Transfer_DefaultKeys_Impl
@@ -6186,6 +6563,13 @@ CNmStateNode::TimedEvent_t::KV3Transfer_DefaultKeys_Impl
 CNmStateNode::TimedEvent_t::Schema_VerifyBindingIsRegistered
 CNmStateNode::Update
 CNmStateNode::UpdateLayerContext
+CNmSyncEventIndexConditionNode::CDefinition
+CNmSyncEventIndexConditionNode::CDefinition::KV3TransferLoad_Impl
+CNmSyncEventIndexConditionNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmSyncEventIndexConditionNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmSyncEventIndexConditionNode::GetValueInternal
+CNmSyncEventIndexConditionNode::InitializeInternal
+CNmSyncEventIndexConditionNode::TriggerMode_t
 CNmSyncTrack
 CNmSyncTrack::CNmSyncTrack
 CNmSyncTrack::CalculateDurationSynchronized
@@ -6206,21 +6590,73 @@ CNmTarget
 CNmTarget::KV3TransferLoad_Impl
 CNmTarget::KV3Transfer_DefaultKeys_Impl
 CNmTarget::Schema_VerifyBindingIsRegistered
+CNmTarget::SetOffsets
+CNmTarget::TryGetTransform
+CNmTargetInfoNode::CDefinition
+CNmTargetInfoNode::CDefinition::KV3TransferLoad_Impl
+CNmTargetInfoNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmTargetInfoNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmTargetInfoNode::GetValueInternal
+CNmTargetInfoNode::Info_t
+CNmTargetInfoNode::InitializeInternal
+CNmTargetInfoNode::ShutdownInternal
+CNmTargetOffsetNode::CDefinition
+CNmTargetOffsetNode::CDefinition::KV3TransferLoad_Impl
+CNmTargetOffsetNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmTargetOffsetNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmTargetOffsetNode::InitializeInternal
+CNmTargetOffsetNode::ShutdownInternal
+CNmTargetPointNode::CDefinition
+CNmTargetPointNode::CDefinition::KV3TransferLoad_Impl
+CNmTargetPointNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmTargetPointNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmTargetPointNode::GetValueInternal
+CNmTargetPointNode::InitializeInternal
+CNmTargetPointNode::ShutdownInternal
 CNmTargetValueNode::CDefinition
+CNmTargetWarpEvent
+CNmTargetWarpEvent::KV3TransferLoad_Impl
+CNmTargetWarpEvent::KV3Transfer_DefaultKeys_Impl
+CNmTargetWarpEvent::Schema_VerifyBindingIsRegistered
+CNmTargetWarpNode::CDefinition
+CNmTargetWarpNode::CDefinition::KV3TransferLoad_Impl
+CNmTargetWarpNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmTargetWarpNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmTargetWarpNode::InitializeInternal
+CNmTargetWarpNode::ShutdownInternal
+CNmTargetWarpNode::Update
+CNmTargetWarpNode::UpdateWarp
+CNmTask
 CNmTask::AccessDependencyPoseBuffer
 CNmTask::Deserialize
 CNmTask::GetNewPoseBuffer
 CNmTask::MarkTaskComplete
 CNmTask::ReleaseDependencyPoseBuffer
 CNmTask::ReleasePoseBuffer
+CNmTask::Schema_VerifyBindingIsRegistered
 CNmTask::Serialize
 CNmTask::TransferDependencyPoseBuffer
 CNmTaskSystem::RegisterTask
 CNmTaskSystem::RollbackToTaskIndexMarker
+CNmTimeConditionNode::CDefinition
+CNmTimeConditionNode::CDefinition::KV3TransferLoad_Impl
+CNmTimeConditionNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmTimeConditionNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmTimeConditionNode::ComparisonType_t
+CNmTimeConditionNode::GetValueInternal
+CNmTimeConditionNode::GetValueInternal::<lambda_1>::operator ()
+CNmTimeConditionNode::InitializeInternal
+CNmTimeConditionNode::Operator_t
 CNmTransitionEvent
 CNmTransitionEvent::KV3TransferLoad_Impl
 CNmTransitionEvent::KV3Transfer_DefaultKeys_Impl
 CNmTransitionEvent::Schema_VerifyBindingIsRegistered
+CNmTransitionEventConditionNode::CDefinition
+CNmTransitionEventConditionNode::CDefinition::KV3TransferLoad_Impl
+CNmTransitionEventConditionNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmTransitionEventConditionNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmTransitionEventConditionNode::GetValueInternal
+CNmTransitionEventConditionNode::InitializeInternal
 CNmTransitionNode::CDefinition
 CNmTransitionNode::CDefinition::KV3TransferLoad_Impl
 CNmTransitionNode::CDefinition::KV3Transfer_DefaultKeys_Impl
@@ -6266,6 +6702,11 @@ CNmVelocityBasedSpeedScaleNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmVelocityBasedSpeedScaleNode::CalculateSpeedScaleMultiplier
 CNmVelocityBasedSpeedScaleNode::InitializeInternal
 CNmVelocityBasedSpeedScaleNode::ShutdownInternal
+CNmVelocityBlendNode::CDefinition
+CNmVelocityBlendNode::CDefinition::KV3TransferLoad_Impl
+CNmVelocityBlendNode::CDefinition::KV3Transfer_DefaultKeys_Impl
+CNmVelocityBlendNode::CDefinition::Schema_VerifyBindingIsRegistered
+CNmVelocityBlendNode::CreateParameterizationFromSpeeds
 CNmVirtualParameterBoneMaskNode::CDefinition
 CNmVirtualParameterBoneMaskNode::CDefinition::KV3TransferLoad_Impl
 CNmVirtualParameterBoneMaskNode::CDefinition::KV3Transfer_DefaultKeys_Impl
@@ -6313,6 +6754,8 @@ CNmZeroPoseNode::CDefinition::KV3TransferLoad_Impl
 CNmZeroPoseNode::CDefinition::KV3Transfer_DefaultKeys_Impl
 CNmZeroPoseNode::CDefinition::Schema_VerifyBindingIsRegistered
 CNmZeroPoseNode::Update
+CNmZeroPoseTask
+CNmZeroPoseTask::Schema_VerifyBindingIsRegistered
 COMMA
 COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
 COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
@@ -6394,6 +6837,8 @@ CPhysSurfacePropertiesPhysics::Schema_VerifyBindingIsRegistered
 CPhysSurfacePropertiesSoundNames
 CPhysSurfacePropertiesSoundNames::KV3Transfer_DefaultKeys_Impl
 CPhysSurfacePropertiesSoundNames::Schema_VerifyBindingIsRegistered
+CPiecewiseCurve
+CPiecewiseCurve::RecomputeSplineTangents
 CPlayerInfo
 CPlayerInputAnimMotorUpdater
 CPlayerInputAnimMotorUpdater::KV3TransferLoad_Impl
@@ -6415,7 +6860,6 @@ CProductQuantizer
 CProductQuantizer::KV3TransferLoad_Impl
 CProductQuantizer::KV3Transfer_DefaultKeys_Impl
 CProductQuantizer::Schema_VerifyBindingIsRegistered
-CPs9H
 CQuaternionAnimParameter
 CQuaternionAnimParameter::KV3TransferLoad_Impl
 CQuaternionAnimParameter::KV3Transfer_DefaultKeys_Impl
@@ -6522,7 +6966,6 @@ CSceneObjectData
 CSceneObjectData::KV3TransferLoad_Impl
 CSceneObjectData::KV3Transfer_DefaultKeys_Impl
 CSceneObjectData::Schema_VerifyBindingIsRegistered
-CSchemaEnumInfo::FindMemberByName::<lambda_1>::operator ()
 CSchemaType mismatch: meta '
 CSchemaType::AssertEqual
 CSelectorUpdateNode
@@ -6805,6 +7248,11 @@ CTwoBoneIKUpdateNode::KV3TransferLoad_Impl
 CTwoBoneIKUpdateNode::KV3Transfer_DefaultKeys_Impl
 CTwoBoneIKUpdateNode::Schema_VerifyBindingIsRegistered
 CType
+CURVE_TANGENT_FREE
+CURVE_TANGENT_LINEAR
+CURVE_TANGENT_MIRROR
+CURVE_TANGENT_SINE
+CURVE_TANGENT_SPLINE
 CUnaryUpdateNode
 CUnaryUpdateNode::KV3TransferLoad_Impl
 CUnaryUpdateNode::KV3Transfer_DefaultKeys_Impl
@@ -6864,6 +7312,7 @@ CUtlLeanVectorFixedGrowableBase<signed char,128,short>::EnsureCapacity
 CUtlLeanVectorFixedGrowableBase<struct CNmBoneMaskTask,10,short>::EnsureCapacity
 CUtlLeanVectorFixedGrowableBase<struct CNmLayerBlendNode::LayerDefinition_t,3,short>::EnsureCapacity
 CUtlLeanVectorFixedGrowableBase<struct CNmLayerBlendNode::Layer_t,3,short>::EnsureCapacity
+CUtlLeanVectorFixedGrowableBase<struct CNmParameterizedBlendNode::BlendRange_t,5,short>::EnsureCapacity
 CUtlLeanVectorFixedGrowableBase<struct CNmStateMachineNode::StateDefinition_t,5,short>::EnsureCapacity
 CUtlLeanVectorFixedGrowableBase<struct CNmStateMachineNode::StateInfo,10,short>::EnsureCapacity
 CUtlLeanVectorFixedGrowableBase<struct CNmStateMachineNode::TransitionDefinition_t,5,short>::EnsureCapacity
@@ -6885,6 +7334,7 @@ CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<float,5,short>,float,sh
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<short,4,short>,short,short>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<short,5,short>,short,short>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<struct CNmLayerBlendNode::LayerDefinition_t,3,short>,struct CNmLayerBlendNode::LayerDefinition_t,short>::InsertBeforeGetPtr
+CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<struct CNmParameterizedBlendNode::BlendRange_t,5,short>,struct CNmParameterizedBlendNode::BlendRange_t,short>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<struct CNmStateMachineNode::StateDefinition_t,5,short>,struct CNmStateMachineNode::StateDefinition_t,short>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<struct CNmStateMachineNode::TransitionDefinition_t,5,short>,struct CNmStateMachineNode::TransitionDefinition_t,short>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorFixedGrowableBase<struct CNmStateNode::TimedEvent_t,1,short>,struct CNmStateNode::TimedEvent_t,short>::InsertBeforeGetPtr
@@ -7033,6 +7483,12 @@ CUtlMemory<class CMotionGraphGroup,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CMotionMetricEvaluator const *,int>::Grow
 CUtlMemory<class CMotionMetricEvaluator const *,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CMotionMetricEvaluator const *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CNmBoneMaskValueNode *,int>::Grow
+CUtlMemory<class CNmBoneMaskValueNode *,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CNmBoneMaskValueNode *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CNmBoolValueNode *,int>::Grow
+CUtlMemory<class CNmBoolValueNode *,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CNmBoolValueNode *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CNmEvent const *,int>::Grow
 CUtlMemory<class CNmEvent const *,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CNmEvent const *,int>::Grow::<lambda_2>::operator ()
@@ -7042,6 +7498,9 @@ CUtlMemory<class CNmGraphNode::CDefinition *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CNmPoseBuffer,int>::Grow
 CUtlMemory<class CNmPoseBuffer,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CNmPoseBuffer,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CNmPoseNode *,int>::Grow
+CUtlMemory<class CNmPoseNode *,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CNmPoseNode *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CNmTask *,int>::Grow
 CUtlMemory<class CNmTask *,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CNmTask *,int>::Grow::<lambda_2>::operator ()
@@ -7222,8 +7681,9 @@ CUtlMemory<class Reflection::CConstant *,int>::Grow
 CUtlMemory<class Reflection::CConstant *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class Reflection::CField *,int>::Grow
 CUtlMemory<class Reflection::CField *,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<class SchemaMetaInfoHandle_t<class CSchemaEnumeratorInfo>,int>::Grow
-CUtlMemory<class SchemaMetaInfoHandle_t<class CSchemaEnumeratorInfo>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class Vec2D<float>,int>::Grow
+CUtlMemory<class Vec2D<float>,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class Vec2D<float>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class Vec3D<float>,int>::Grow
 CUtlMemory<class Vec3D<float>,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class Vec3D<float>,int>::Grow::<lambda_2>::operator ()
@@ -7422,6 +7882,9 @@ CUtlMemory<struct CNmRecordedGraphState::ChildGraphState_t,int>::Grow::<lambda_2
 CUtlMemory<struct CNmRootMotionDebugger::RecordedAction_t,int>::Grow
 CUtlMemory<struct CNmRootMotionDebugger::RecordedAction_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CNmRootMotionDebugger::RecordedAction_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNmStateEventConditionNode::Condition_t,int>::Grow
+CUtlMemory<struct CNmStateEventConditionNode::Condition_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNmStateEventConditionNode::Condition_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CPackedAnimationChannelDesc::ChannelDesc_t,int>::Grow
 CUtlMemory<struct CPackedAnimationChannelDesc::ChannelDesc_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CPoseRecipe::OpInfo,int>::Grow
@@ -7713,8 +8176,19 @@ CUtlMemory<struct VariableInfo_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct WeightList,int>::Grow
 CUtlMemory<struct WeightList,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct WeightList,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `protected: void __cdecl CNmBlend2DNode::EvaluateBlendSpace(class CNmGraphContext &)'::`10'::IndexWeight_t,int>::Grow
+CUtlMemory<struct `protected: void __cdecl CNmBlend2DNode::EvaluateBlendSpace(class CNmGraphContext &)'::`10'::IndexWeight_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `public: static struct CNmParameterizedBlendNode::Parameterization_t __cdecl CNmParameterizedBlendNode::Parameterization_t::CreateParameterization(class CUtlLeanVectorFixedGrowable<float,5,short> const &)'::`2'::IndexValuePair,int>::Grow
+CUtlMemory<struct `public: static struct CNmParameterizedBlendNode::Parameterization_t __cdecl CNmParameterizedBlendNode::Parameterization_t::CreateParameterization(class CUtlLeanVectorFixedGrowable<float,5,short> const &)'::`2'::IndexValuePair,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct `public: static struct CNmParameterizedBlendNode::Parameterization_t __cdecl CNmParameterizedBlendNode::Parameterization_t::CreateParameterization(class CUtlLeanVectorFixedGrowable<float,5,short> const &)'::`2'::IndexValuePair,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct activitylist_t,int>::Grow
 CUtlMemory<struct activitylist_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct cubic_spline_section_t,int>::Grow
+CUtlMemory<struct cubic_spline_section_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct cubic_spline_section_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct curve_tangents_t,int>::Grow
+CUtlMemory<struct curve_tangents_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct curve_tangents_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct std::pair<class CAnimParamHandle,class CAnimVariant>,int>::Grow
 CUtlMemory<struct std::pair<class CAnimParamHandle,class CAnimVariant>,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct std::pair<class CAnimParamHandle,class CAnimVariant>,int>::Grow::<lambda_2>::operator ()
@@ -7808,6 +8282,8 @@ CWayPointHelperUpdateNode::KV3TransferLoad_Impl
 CWayPointHelperUpdateNode::KV3Transfer_DefaultKeys_Impl
 CWayPointHelperUpdateNode::Schema_VerifyBindingIsRegistered
 CWeakHandle
+CWeakHandle<struct InfoForResourceTypeCNmClip>::InitUntyped
+CWeakHandle<struct InfoForResourceTypeCNmGraphVariation>::InitUntyped
 CWritableBoneAccessor<class CTransform>::GetBoneForWrite
 CWritableBoneAccessor<class CTransform>::MarkBoneReadable
 CZeroPoseUpdateNode
@@ -7879,6 +8355,8 @@ ChoiceNode
 Choreo AnimNode attempted to use more layers than are available
 ChoreoNode
 ClampDuration
+ClampTo180
+ClampTo360
 Class does not allow allocation from its schema binding
 Class does not allow construction from its schema binding
 ClearField
@@ -7925,9 +8403,11 @@ CorExitProcess
 Could not create an instance of 
 Could not find type "
 Couldn't find IK Chain description
+Couldn't find bone mask with ID: %s
 Couldn't find enum value %s in our list of valid enum values, returning the default.
 Couldn't load KV3 for resource: %s
 Couldn't parse default value "
+CpHc~
 CreateEventW
 CreateFileW
 CreateInterface
@@ -7944,6 +8424,8 @@ CxH94
 CycleControlClipNode
 C|$pH
 C|$xL
+C|D;Cxu	
+D	V_roundf
 D W?{W
 D!l$xA
 D$ 	!O3
@@ -7961,6 +8443,7 @@ D$ &d
 D$ &u
 D$ (y
 D$ )/
+D$ *G
 D$ -D
 D$ .3
 D$ .A
@@ -7971,6 +8454,7 @@ D$ 2
 D$ 2s
 D$ 4+
 D$ 4JL
+D$ 5&
 D$ 5r
 D$ 5t
 D$ 6)
@@ -7980,6 +8464,7 @@ D$ 8vIML
 D$ 9:
 D$ 9D
 D$ 9P }
+D$ ;M
 D$ <R
 D$ =x
 D$ >A
@@ -8041,6 +8526,7 @@ D$ Y(
 D$ Y0
 D$ YbC9
 D$ [GX
+D$ ]w
 D$ ^"
 D$ ^vo
 D$ `d
@@ -8059,6 +8545,7 @@ D$ iw4
 D$ k-),H
 D$ m(
 D$ mJ
+D$ n")
 D$ n:,
 D$ ne
 D$ no
@@ -8066,6 +8553,7 @@ D$ q/
 D$ r'
 D$ srP
 D$ t 
+D$ t*
 D$ tRH
 D$ ta
 D$ wN+<
@@ -8074,9 +8562,9 @@ D$ y6hCH
 D$ y9Wu
 D$ y9WuH
 D$ |R
+D$ }I
 D$ }S
-D$$ t
-D$$@H
+D$$@v
 D$$E3
 D$$H;L$ 
 D$(;j
@@ -8086,22 +8574,19 @@ D$(A;O
 D$(E3
 D$(H;
 D$(H;Q
-D$(HH
 D$(Hc
 D$(HcWh
 D$(I;
 D$(L+
 D$(L;
-D$(XH
 D$(f9SRt
 D$(fA
 D$(fI
-D$(hH
 D$(u2
-D$(xH
 D$0	!O3L
 D$0 W!1H
 D$0!s!
+D$0"*
 D$0"K
 D$0"V
 D$0#C
@@ -8113,15 +8598,18 @@ D$0&u
 D$0(y
 D$0)/
 D$0*9N
+D$0*G
 D$0.3
 D$0//
 D$001
 D$01(
 D$02 
 D$02s
+D$05&
 D$05r
 D$05t
 D$09p }
+D$0;M
 D$0<R
 D$0<`u
 D$0=x
@@ -8181,6 +8669,7 @@ D$0X7
 D$0Y(
 D$0YbC9H
 D$0[GX
+D$0]w
 D$0^"
 D$0`d
 D$0b?
@@ -8196,18 +8685,21 @@ D$0h[)
 D$0iw4
 D$0k-),
 D$0m(
+D$0n")
 D$0n:,
 D$0no
 D$0q/
 D$0r'
 D$0srP
 D$0t 
+D$0t*
 D$0ta
 D$0x{
 D$0y6hC
 D$0y9Wu
 D$0y9WuL
 D$0|R
+D$0}I
 D$0}S
 D$2fD
 D$2fE
@@ -8245,6 +8737,7 @@ D$@H;
 D$@H;F
 D$@H;GXt2H
 D$@Hc
+D$@HcL$8
 D$@HcV$
 D$@L9@ r
 D$@M;
@@ -8252,8 +8745,8 @@ D$@X7
 D$@eH
 D$@f;
 D$@fA
+D$@fA9D$2~
 D$@fD
-D$@fD9
 D$@inf
 D$@nan
 D$@u5H
@@ -8331,6 +8824,7 @@ D$pHc
 D$pL;
 D$pM+
 D$pf;
+D$pt?H
 D$tf;
 D$xD;(
 D$xE3
@@ -8343,7 +8837,7 @@ D$xfD+
 D$xfD9!
 D+3L9c0u	
 D+A@H
-D+|$0fD;g
+D3BfD
 D7(Hc
 D8$:u
 D8'tO3
@@ -8371,10 +8865,9 @@ D8k@t!H
 D8q(u
 D8t$0
 D8t$ht
-D8v@tf
 D8{8u+H
 D8|$`t
-D9%jn/
+D9%*Q2
 D9&|6
 D9/~%H
 D9/~4fff
@@ -8433,11 +8926,13 @@ D9xhtkH
 D9y ~1H
 D9|$(u
 D9|$Pu
+D;0D;
 D;A }
 D;Gx}
 D;I }
 D;J(|
 D;a }
+D;d$ 
 D;ox|
 D;q }pL9T$P
 D;q }uH
@@ -8508,6 +9003,10 @@ DecodePointer
 Default Value
 Default value for an enum field must be an identifier.
 DeleteCriticalSection
+Delta
+DeltaOrientationX
+DeltaOrientationY
+DeltaOrientationZ
 Demo Settings Component
 DemoUpconverterVersion001
 DependencyClass::m_pDependencyLL == nullptr
@@ -8543,6 +9042,9 @@ DisconnectInterfaceSingletons
 DisconnectTier2Libraries
 Distance
 Distance Remaining
+DistanceHorizontalOnly
+DistanceVerticalOnly
+Dividing by zero in CNmFloatMathNode
 DoesntMatch
 Dog Leg (3 Bone)
 DotProduct( vZeroDegreeDirection, vHingeAxis ) - 1.0f < 1e-3f
@@ -8565,6 +9067,7 @@ E H+H(I
 E),$H
 E+A@H
 E+}(H
+E0A9F
 E0HcH
 E0Lc`
 E4LcvH
@@ -8586,7 +9089,7 @@ E9g ~
 E9g(~kM
 E9t$h
 E;A(|
-E;E }
+E;D$ }
 E;Mx|
 E;N }2Mc
 E;S0}
@@ -8620,6 +9123,7 @@ EaseIn
 EaseOut
 EconItemToolModel_001
 EhA9D:
+ElapsedTime
 Empty VB array found for this draw descriptor
 Enable IK.
 Enable Networking
@@ -8650,6 +9154,7 @@ EnumHelpers_t<enum HingeAxis>::List
 EnumHelpers_t<enum IKChainDataPoleVectorForAxis>::List
 EnumHelpers_t<enum IKTargetCoordinateSystem>::List
 EnumHelpers_t<enum IKTargetSource>::List
+EnumHelpers_t<enum curve_tangent_mode_t>::List
 EnumOptions
 EnumReservedRange
 EnumSystemLocalesEx
@@ -8844,7 +9349,13 @@ Error saving default keys for CMovementHandshakeAnimTag: %s
 Error saving default keys for CMoverUpdateNode: %s
 Error saving default keys for CNmAndNode::CDefinition: %s
 Error saving default keys for CNmAnimationPoseNode::CDefinition: %s
+Error saving default keys for CNmBitFlags: %s
+Error saving default keys for CNmBlend1DNode::CDefinition: %s
+Error saving default keys for CNmBlend2DNode::CDefinition: %s
 Error saving default keys for CNmBoneMask: %s
+Error saving default keys for CNmBoneMaskBlendNode::CDefinition: %s
+Error saving default keys for CNmBoneMaskNode::CDefinition: %s
+Error saving default keys for CNmBoneMaskSelectorNode::CDefinition: %s
 Error saving default keys for CNmCachedBoolNode::CDefinition: %s
 Error saving default keys for CNmCachedFloatNode::CDefinition: %s
 Error saving default keys for CNmCachedIDNode::CDefinition: %s
@@ -8864,9 +9375,28 @@ Error saving default keys for CNmControlParameterFloatNode::CDefinition: %s
 Error saving default keys for CNmControlParameterIDNode::CDefinition: %s
 Error saving default keys for CNmControlParameterTargetNode::CDefinition: %s
 Error saving default keys for CNmControlParameterVectorNode::CDefinition: %s
+Error saving default keys for CNmCurrentSyncEventIDNode::CDefinition: %s
+Error saving default keys for CNmCurrentSyncEventIndexNode::CDefinition: %s
+Error saving default keys for CNmCurrentSyncEventPercentageThroughNode::CDefinition: %s
 Error saving default keys for CNmDurationScaleNode::CDefinition: %s
 Error saving default keys for CNmExternalGraphNode::CDefinition: %s
+Error saving default keys for CNmFixedWeightBoneMaskNode::CDefinition: %s
+Error saving default keys for CNmFloatAbsNode::CDefinition: %s
+Error saving default keys for CNmFloatAngleMathNode::CDefinition: %s
+Error saving default keys for CNmFloatClampNode::CDefinition: %s
+Error saving default keys for CNmFloatComparisonNode::CDefinition: %s
+Error saving default keys for CNmFloatCurveNode::CDefinition: %s
+Error saving default keys for CNmFloatEaseNode::CDefinition: %s
+Error saving default keys for CNmFloatMathNode::CDefinition: %s
+Error saving default keys for CNmFloatRangeComparisonNode::CDefinition: %s
+Error saving default keys for CNmFloatRemapNode::CDefinition: %s
+Error saving default keys for CNmFloatRemapNode::RemapRange_t: %s
+Error saving default keys for CNmFloatSelectorNode::CDefinition: %s
+Error saving default keys for CNmFloatSwitchNode::CDefinition: %s
 Error saving default keys for CNmFootEvent: %s
+Error saving default keys for CNmFootEventConditionNode::CDefinition: %s
+Error saving default keys for CNmFootstepEventIDNode::CDefinition: %s
+Error saving default keys for CNmFootstepEventPercentageThroughNode::CDefinition: %s
 Error saving default keys for CNmFrameSnapEvent: %s
 Error saving default keys for CNmGraphDataSet: %s
 Error saving default keys for CNmGraphDefinition: %s
@@ -8875,13 +9405,22 @@ Error saving default keys for CNmGraphDefinition::ExternalGraphSlot_t: %s
 Error saving default keys for CNmGraphVariation: %s
 Error saving default keys for CNmIDComparisonNode::CDefinition: %s
 Error saving default keys for CNmIDEvent: %s
+Error saving default keys for CNmIDEventConditionNode::CDefinition: %s
+Error saving default keys for CNmIDEventNode::CDefinition: %s
+Error saving default keys for CNmIDEventPercentageThroughNode::CDefinition: %s
 Error saving default keys for CNmIDToFloatNode::CDefinition: %s
 Error saving default keys for CNmIKRig: %s
+Error saving default keys for CNmIsTargetSetNode::CDefinition: %s
 Error saving default keys for CNmLayerBlendNode::CDefinition: %s
 Error saving default keys for CNmLayerBlendNode::LayerDefinition_t: %s
 Error saving default keys for CNmLegacyEvent: %s
 Error saving default keys for CNmNotNode::CDefinition: %s
 Error saving default keys for CNmOrNode::CDefinition: %s
+Error saving default keys for CNmOrientationWarpEvent: %s
+Error saving default keys for CNmOrientationWarpNode::CDefinition: %s
+Error saving default keys for CNmParameterizedBlendNode::BlendRange_t: %s
+Error saving default keys for CNmParameterizedBlendNode::CDefinition: %s
+Error saving default keys for CNmParameterizedBlendNode::Parameterization_t: %s
 Error saving default keys for CNmParameterizedClipSelectorNode::CDefinition: %s
 Error saving default keys for CNmParameterizedSelectorNode::CDefinition: %s
 Error saving default keys for CNmPassthroughNode::CDefinition: %s
@@ -8893,21 +9432,33 @@ Error saving default keys for CNmSelectorNode::CDefinition: %s
 Error saving default keys for CNmSkeleton: %s
 Error saving default keys for CNmSpeedScaleBaseNode::CDefinition: %s
 Error saving default keys for CNmSpeedScaleNode::CDefinition: %s
+Error saving default keys for CNmStateCompletedConditionNode::CDefinition: %s
+Error saving default keys for CNmStateEventConditionNode::CDefinition: %s
+Error saving default keys for CNmStateEventConditionNode::Condition_t: %s
 Error saving default keys for CNmStateMachineNode::CDefinition: %s
 Error saving default keys for CNmStateMachineNode::StateDefinition_t: %s
 Error saving default keys for CNmStateMachineNode::TransitionDefinition_t: %s
 Error saving default keys for CNmStateNode::CDefinition: %s
 Error saving default keys for CNmStateNode::TimedEvent_t: %s
+Error saving default keys for CNmSyncEventIndexConditionNode::CDefinition: %s
 Error saving default keys for CNmSyncTrack: %s
 Error saving default keys for CNmSyncTrack::EventMarker_t: %s
 Error saving default keys for CNmSyncTrack::Event_t: %s
 Error saving default keys for CNmTarget: %s
+Error saving default keys for CNmTargetInfoNode::CDefinition: %s
+Error saving default keys for CNmTargetOffsetNode::CDefinition: %s
+Error saving default keys for CNmTargetPointNode::CDefinition: %s
+Error saving default keys for CNmTargetWarpEvent: %s
+Error saving default keys for CNmTargetWarpNode::CDefinition: %s
+Error saving default keys for CNmTimeConditionNode::CDefinition: %s
 Error saving default keys for CNmTransitionEvent: %s
+Error saving default keys for CNmTransitionEventConditionNode::CDefinition: %s
 Error saving default keys for CNmTransitionNode::CDefinition: %s
 Error saving default keys for CNmVectorCreateNode::CDefinition: %s
 Error saving default keys for CNmVectorInfoNode::CDefinition: %s
 Error saving default keys for CNmVectorNegateNode::CDefinition: %s
 Error saving default keys for CNmVelocityBasedSpeedScaleNode::CDefinition: %s
+Error saving default keys for CNmVelocityBlendNode::CDefinition: %s
 Error saving default keys for CNmVirtualParameterBoneMaskNode::CDefinition: %s
 Error saving default keys for CNmVirtualParameterBoolNode::CDefinition: %s
 Error saving default keys for CNmVirtualParameterFloatNode::CDefinition: %s
@@ -9068,6 +9619,7 @@ Error, bone '%s' has no parent, can't compute a hinge constraint here.  EP_TODO:
 Error: attempting to set the look target on entity '%s' with model '%s' on the client when the AnimGraph is also replicating it from the server.  Disable networking on the Look Component to save bandwidth if this is not needed
 EventList_GetEventType
 EventList_IndexForName
+ExactlyAtEventIndex
 Exceeds Maximum Package Depth
 ExitProcess
 Expanded map entry type 
@@ -9113,11 +9665,11 @@ F H+p(I
 F L+@(I
 F(	<(I
 F(!<(
+F0A9E
 F8$2u
 F89HXtRA
 F<333?A
 F>qUxv
-F@HcN8
 F@IcN8
 FABRIK
 FATAL
@@ -9287,6 +9839,7 @@ Fallback hinge is not unit length!
 False
 February
 FeetSettings
+FhHc{
 FhL9 t
 Field "
 Field "$0" uses reserved number $1.
@@ -9352,6 +9905,8 @@ FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
 FlattenedSerializersVersion001
 FlexOpCode_t
+FlipHemisphere
+FlipHemisphereNegate
 Float
 Float Parameter
 Float( %f )
@@ -9439,11 +9994,11 @@ Frequency
 Friday
 Fully Allowed
 FullyAllowed
+FullyInState
 Func( %s )
 Function "%s" takes %i parameters, but %i were given
 Future Facing
 Future Velocity
-G	V_sincosf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -9453,11 +10008,12 @@ G(9C(
 G(A9@(}
 G(t'H
 G0D9$
-G2tVf
+G2tTf
 G8D8`au
 G@HcO8
 G@L;D$hu
 G@LcG8
+GC:\buildworker\citadel_staging_win64\build\src\public\mathlib\range.h
 GD$(H
 GD$83
 GD$8A
@@ -9479,9 +10035,10 @@ GHL9d
 GL$(A
 GL$H3
 GL$HA
-GL$HD
-GL$HE3
+GL$HJ
+GL$HL
 GL$Hf
+GL$HfA
 GL$h3
 GPA!4
 GPD	u
@@ -9539,6 +10096,7 @@ GetDateFormatEx
 GetDefaultMiniDumpTypeFlags
 GetDefinition<CNmCachedFloatNode>()->m_mode == NmCachedValueMode_t::OnExit
 GetDefinition<CNmCachedTargetNode>()->m_mode == NmCachedValueMode_t::OnExit
+GetDefinition<CNmRootMotionOverrideNode>()->m_overrideFlags.IsFlagSet( OverrideFlags_t::ListenForEvents )
 GetDouble
 GetEnumValue
 GetEnvironmentStringsW
@@ -9616,6 +10174,9 @@ GoalPosition
 Graph Writable
 GraphNodes
 Graphs cannot have more than one Stride Retargetting node
+GreaterThan
+GreaterThanEqual
+GreaterThanEqualToEventIndex
 GridBlendNode
 Groups are not supported in proto3 syntax.
 Gt$HA
@@ -9626,8 +10187,7 @@ G|$(L
 G|$8B
 G|$HA
 G|$HL
-H	V_sind
-H	X0H
+H	p0H
 H 8YKt
 H 8YKt	
 H @8iKt
@@ -9635,14 +10195,13 @@ H @8qKuXI
 H D8yK
 H D8yKt
 H Hc@
+H I9M
 H SWH
 H UATAUAVAWH
 H USWH
 H WATAUAVAWH
 H!D$ I
 H!T$0D
-H!X0H
-H#D$HH+
 H#E0H
 H#U0H
 H#]0H
@@ -9676,14 +10235,15 @@ H0H9)t
 H0HcGh
 H9(tO
 H9+t	H
+H9-5nU
+H9-PnU
+H9-lmU
 H9/t	H
 H92tBA
-H95'Cs
-H95'z\
-H95wN7
+H957;v
+H95r<>
 H97u+A
 H98t2
-H98t7
 H9;t	H
 H9A s
 H9A u)M
@@ -9692,7 +10252,7 @@ H9Axt
 H9C H
 H9D$P
 H9D$Pu>I
-H9D$`u%9D$h
+H9D$`
 H9D$h
 H9FPu<H
 H9G8t3
@@ -9784,8 +10344,8 @@ H@H9u
 HA\_][
 HA^A]A\^
 HA^A]A\_
+HA^A]_^
 HA^A]_^][
-HA^^][
 HA^_][
 HA^_^[
 HA_A]A\^][
@@ -9847,12 +10407,15 @@ HcCPL
 HcCXD
 HcCpA
 HcD$ H
+HcD$0
+HcD$03
 HcD$0A
 HcD$0D
 HcD$0H
-HcD$@
 HcD$@H
+HcD$D
 HcD$\H
+HcD$xH
 HcD7L
 HcE0D
 HcE8D
@@ -9913,9 +10476,15 @@ HcK$H
 HcK,H
 HcK,I
 HcK4H
+HcK8;
 HcK8Hc
+HcL$0B
 HcL$0H
+HcL$4D+
 HcL$4I
+HcL$8
+HcL$8B
+HcL$@
 HcL$XH
 HcL$`H
 HcL$hH
@@ -9942,11 +10511,11 @@ HcT$0
 HcT$0H
 HcT$8H
 HcT$@H
-HcT$PA
-HcT$\A
+HcT$P
 HcT$`H
 HcT$`L
 HcT$hH
+HcT$x
 HcU ;
 HcU8;
 HcUP;
@@ -9968,7 +10537,6 @@ Hc\$@I
 Hc\$HA
 Hc\$PA
 Hc\$xH
-Hc]0H
 Hc]HI
 Hc]XA
 Hc]hA
@@ -9980,6 +10548,7 @@ Hc^$A
 Hc^(A
 Hc^,A
 Hc^0A
+Hc^0H
 Hc^4A
 Hc^8A
 Hc^@A
@@ -9993,6 +10562,7 @@ Hc^|A
 Hck H
 Hck(H
 Hck0;k@
+HckxL
 Hcl$ H
 HcodL
 HcphH
@@ -10011,6 +10581,8 @@ Hc|$pH
 Hc~@H
 Height
 HelpSystem_001
+Hermite
+HermiteFeaturePreserving
 Hex and octal numbers must be integers.
 Hinge Axis
 HingeAxis
@@ -10022,7 +10594,7 @@ HitReactFixedSettings_t::KV3Transfer_DefaultKeys_Impl
 HitReactFixedSettings_t::Schema_VerifyBindingIsRegistered
 HostStateMgr001
 HxH9Jxt
-I	V_sinf
+I	V_sincosf
 I could not work out what I was expecting, like so many of us these days!
 I#I0H
 I#J0H
@@ -10110,6 +10682,7 @@ IResourceTypeManager::LoadStreamingData
 IS_TYPESAFE_INTEGER
 Ic	I+
 Ic,$Lc?
+Ic.A;n
 Ic.Hc3
 Ic.Hc;
 Ic>A;~
@@ -10121,6 +10694,7 @@ IcA$H
 IcA(H
 IcA0H
 IcAXL
+IcB H
 IcB4H
 IcB`H
 IcBdH
@@ -10148,6 +10722,7 @@ IcM0A;
 IcMP;
 IcMXI
 IcMx;
+IcN8;
 IcN|H
 IcO ;
 IcO0H
@@ -10205,6 +10780,7 @@ IdempotencyLevel
 Identity
 If intended, call ClearSpecificType first to discard the old value.%s
 If intended, call SetToNull() first to discard the old value.%s
+IgnoreInactiveEvents
 IgnoreSource
 IgnoreTarget
 Ignoring extension "
@@ -10451,7 +11027,13 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CMoveme
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CMoverUpdateNode)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmAndNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmAnimationPoseNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmBitFlags)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmBlend1DNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmBlend2DNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmBoneMask)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmBoneMaskBlendNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmBoneMaskNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmBoneMaskSelectorNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmCachedBoolNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmCachedFloatNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmCachedIDNode::CDefinition)
@@ -10466,8 +11048,27 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmCons
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmConstIDNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmConstTargetNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmConstVectorNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmCurrentSyncEventIDNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmCurrentSyncEventIndexNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmCurrentSyncEventPercentageThroughNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmEvent)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFixedWeightBoneMaskNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatAbsNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatAngleMathNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatClampNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatComparisonNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatCurveNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatEaseNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatMathNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatRangeComparisonNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatRemapNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatRemapNode::RemapRange_t)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatSelectorNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFloatSwitchNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFootEvent)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFootEventConditionNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFootstepEventIDNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFootstepEventPercentageThroughNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmFrameSnapEvent)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmGraphDataSet)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmGraphDefinition)
@@ -10477,12 +11078,20 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmGrap
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmGraphVariation)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmIDComparisonNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmIDEvent)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmIDEventConditionNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmIDEventNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmIDEventPercentageThroughNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmIDToFloatNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmIKRig)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmIsTargetSetNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmLayerBlendNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmLayerBlendNode::LayerDefinition_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmNotNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmOrNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmOrientationWarpNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmParameterizedBlendNode::BlendRange_t)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmParameterizedBlendNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmParameterizedBlendNode::Parameterization_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmParameterizedClipSelectorNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmParameterizedSelectorNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmPassthroughNode::CDefinition)
@@ -10492,16 +11101,27 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmRoot
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmSelectorNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmSkeleton)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmSpeedScaleBaseNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmStateCompletedConditionNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmStateEventConditionNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmStateEventConditionNode::Condition_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmStateMachineNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmStateMachineNode::StateDefinition_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmStateMachineNode::TransitionDefinition_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmStateNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmStateNode::TimedEvent_t)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmSyncEventIndexConditionNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmSyncTrack)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmSyncTrack::EventMarker_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmSyncTrack::Event_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTarget)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTargetInfoNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTargetOffsetNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTargetPointNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTargetWarpEvent)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTargetWarpNode::CDefinition)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTimeConditionNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTransitionEvent)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTransitionEventConditionNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmTransitionNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmVectorCreateNode::CDefinition)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CNmVectorInfoNode::CDefinition)
@@ -10691,6 +11311,7 @@ Invalid string value %s -- pick another one!
 Invalid strings::Substitute() format string: "
 Invalid symbol name: 
 Invalid tag nIndex %d
+Invalid target detected for warp node!
 Invalid use of KV3 specific type %s with basic type %s, must be basic type %s
 Invalid value for boolean field "
 Invalid value!
@@ -10708,6 +11329,7 @@ IsBoneReadable( iBone )
 IsConstant()
 IsControlParameter( parameterNodeIdx )
 IsDebuggerPresent
+IsDurationEvent()
 IsEmpty() || flTime > GetMostRecentPose().m_flTime
 IsFinalized()
 IsFinite( P1 )
@@ -10727,11 +11349,12 @@ IsFinite( flValue )
 IsFinite( flVelocity )
 IsFinite( m_flPlaybackSpeed ) && m_flPlaybackSpeed >= 0.f
 IsFinite( s )
+IsFinite( s0.m_flSlopeIncoming )
+IsFinite( s0.m_flSlopeOutgoing )
 IsFinite( scale )
 IsFinite( speed )
 IsFinite( timeStep )
 IsFinite(s)
-IsFlagSet( GetDefinition<CNmRootMotionOverrideNode>()->m_overrideFlags, ListenForEvents )
 IsGrowable()
 IsInitialized()
 IsInitialized() && !IsComplete( context )
@@ -10743,6 +11366,7 @@ IsSet()
 IsSet() && rhs.IsSet()
 IsSourceACachedPose()
 IsSourceATransition()
+IsStateEvent()
 IsTagActive
 IsValid()
 IsValid() && flScale >= 0.0f && flScale <= 1.0f
@@ -10758,6 +11382,7 @@ IsWriting()
 Iterate
 IterateRandom
 Iw:Hc
+J	V_sind
 J'6E3
 J<L4,&
 J>@G_
@@ -10781,7 +11406,7 @@ JiggleBoneSettings_t::KV3Transfer_DefaultKeys_Impl
 JiggleBoneSettings_t::Schema_VerifyBindingIsRegistered
 JiggleBoneSimSpace
 JumpCorrectionMethod
-K	V_sinhf
+K	V_sinf
 K HcC$Hc
 K$HcC(;
 K&>.yC
@@ -10845,7 +11470,6 @@ KeyValues3::Metadata_SetFileLineColumn::<lambda_1>::operator ()
 KeyValues3::TransferOwnershipOfBinaryBlob
 K}*n:	
 K~Je#>!
-L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#^0I
@@ -10860,11 +11484,11 @@ L$ Hk
 L$ I;
 L$ L+
 L$ L;
-L$ L;l$(
 L$ SH
 L$ SUVATAUAWH
 L$ SUVWATAVAWH
 L$ SUVWATH
+L$ SUVWAVH
 L$ SUVWH
 L$ SVWH
 L$ SWATAUAVAWH
@@ -10896,14 +11520,18 @@ L$(H+
 L$(H3
 L$(Hc
 L$(Mc
+L$(fA
 L$(fD
+L$09JX
 L$0;{
+L$0A9Nh
 L$0D9a
 L$0D;A
 L$0E3
 L$0E;
 L$0H3
 L$0H;
+L$0Hc
 L$0HcGlH
 L$0Hk
 L$0I+
@@ -10913,19 +11541,19 @@ L$0McAhM
 L$0f;
 L$0fA
 L$0fD
+L$0fD;
 L$0fH
 L$0fI
 L$4+L$8
 L$4+L$H
-L$49Nh
 L$8+)H
+L$8;JX
 L$8A9m0uQI
-L$8D;RX
 L$8E3
 L$8H3
-L$8Hc
 L$8IcT
 L$8L+
+L$8f9qjt
 L$8f;
 L$<;L$P
 L$<E8uq
@@ -10945,14 +11573,12 @@ L$@f;
 L$@fI
 L$@uU
 L$AE3
-L$Bf;
 L$C9F
 L$C9G
+L$DH;
 L$DH;T$xt
 L$DH=
-L$DI;
 L$DL;
-L$HA;
 L$HE3
 L$HE9'
 L$HH3
@@ -10961,7 +11587,6 @@ L$HHc
 L$HL+
 L$Hf;
 L$P+G$E3
-L$P;|$@
 L$PE3
 L$PH3
 L$PH;
@@ -10972,14 +11597,12 @@ L$QE3
 L$S9C
 L$S9F
 L$X;C
-L$XH+
 L$XH3
 L$XH;M
 L$Xf;
 L$`+G$3
 L$`+G$L
 L$`;M
-L$`D;
 L$`H3
 L$`H;
 L$`Ic
@@ -11016,6 +11639,10 @@ L+i0I
 L9#u/H
 L92tDA
 L94:H
+L959!=
+L95Jz9
+L95W =
+L95ez9
 L9;u	H
 L9?t	H
 L9@ s
@@ -11061,11 +11688,13 @@ L;A r
 L;EPL
 L;Q s
 L;c u
+L;d$ 
 L;d$(
 L;d$h
 L;l$ 
 L;l$8|
 L;l$X
+L;l$h
 L;l$p
 L;t$(t|D
 L;{ u
@@ -11090,6 +11719,7 @@ LOD Off
 LOG_GENERAL
 LQHE3
 Label
+LabelledDebugHelperDebug
 Last Bone in Chain
 Layers for this mood
 Lc#A+
@@ -11105,6 +11735,7 @@ LcA,L
 LcA<E3
 LcB 3
 LcD$0I
+LcD3(3
 LcG(3
 LcG8M
 LcG<H
@@ -11116,8 +11747,8 @@ LcK@H
 LcK`H
 LcKpE
 LcKpH
+LcL$$L
 LcL$0H
-LcL$`H
 LcN8H
 LcO H
 LcO(H
@@ -11129,15 +11760,16 @@ Lcg E3
 Lcg@D
 Lch I
 Lcl$@H
-Lcl$P
-Lcl$PK
+Lcl3 H
 Lco(H
 LcoXH
+Lcq(H
 Lcs E
 LcsPL
 Lcs`D;sp
 Lct$PA
 Lcv(D;v8u
+Lcw(3
 Lcw8L
 Lc|$p
 Lc|$pD
@@ -11153,10 +11785,13 @@ LegacyOptionsConversion_AE_CL_ADD_PARTICLE_EFFECT_CP
 LegacyOptionsConversion_AE_CL_CREATE_PARTICLE_EFFECT
 Length
 LerpInPlace
+LessThan
+LessThanEqual
 Lexer encountered %d error(s)
 Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
 LightmapUV
 LightmapUVW
+LimitSearchToSourceState
 Line: 
 Linear
 Linking WeightLists To Data Channels :: %s
@@ -11199,6 +11834,9 @@ LookHeading
 LookPitch
 LookTarget
 LookTarget_WorldSpace
+LoopCount
+M	V_sinhf
+M Ic<
 M#}0I
 M(+E(
 M0Ic]0
@@ -11226,8 +11864,6 @@ MESH_DRAW_FLAGS_USE_COMPRESSED_PER_VERTEX_LIGHTING
 MESH_DRAW_FLAGS_USE_SHADOW_FAST_PATH
 MESH_DRAW_FLAGS_USE_UNCOMPRESSED_PER_VERTEX_LIGHTING
 MESH_DRAW_INPUT_LAYOUT_IS_NOT_MATCHED_TO_MATERIAL
-MEnumFlagsWithOverlappingBits
-MEnumeratorIsNotAFlag
 MGD;}
 MGetKV3ClassDefaults
 MINAA
@@ -11332,6 +11968,7 @@ Max IK Translation Error
 Max Move Speed
 Max Stretch
 Max Value
+MaxFlags
 MaxMoveSpeed
 Mc&Lc
 Mc.E;n
@@ -11378,6 +12015,7 @@ MethodOptions
 Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
 Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
 Min Value
+Mirror
 Mismatch in foot motion count.  Model '%s', sequence '%s' has %d foot motion on it, where foot motion list specifies needing %d.
 Mismatch parameter type for child graph '%s', parent type: '%s', child type: '%s'
 Mismatched Token Exception
@@ -11390,7 +12028,6 @@ Missing required transfer interface: %s
 Missing token
 Missing token %s
 Mixed
-Mj MNA
 MjA9F
 Model %s: group %s: missing referenced sequence "%s"
 Model %s: sequence/animation name collision found "%s"
@@ -11479,8 +12116,10 @@ Must call SetMetadataEnabled on the root KV3 context to track metadata
 MutableMessage
 MutableRawRepeatedField
 Mw+G$L
+N	V_snprintf
 N 9H 
 N(+V0
+N(Ic^(
 N0+V8
 N3`d?
 N>O=I9
@@ -11494,6 +12133,7 @@ Name of the layer
 NamePart
 NavGameTest001
 NavSystem001
+NearEqual
 Need space between identifier and decimal point.
 Need space between number and identifier.
 Negative duration is not supported!
@@ -11529,6 +12169,7 @@ NmCompressionSettings_t::Schema_VerifyBindingIsRegistered
 NmEasing::Evaluate
 NmEasingFunction_t
 NmEasingOperation_t
+NmEventConditionRules_t
 NmFootPhaseCondition_t
 NmFootPhase_t
 NmFrameSnapEventMode_t
@@ -11543,16 +12184,20 @@ NmPoseBlendMode_t
 NmQuantizationDecodeFloat
 NmQuantizationEncodeUnsignedNormalizedFloat
 NmRootMotionBlendMode_t
+NmStateEventTypeCondition_t
 NmSyncTrackTimeRange_t
 NmSyncTrackTimeRange_t::KV3Transfer_DefaultKeys_Impl
 NmSyncTrackTimeRange_t::Schema_VerifyBindingIsRegistered
 NmSyncTrackTime_t
 NmSyncTrackTime_t::KV3Transfer_DefaultKeys_Impl
 NmSyncTrackTime_t::Schema_VerifyBindingIsRegistered
+NmTargetWarpAlgorithm_t
+NmTargetWarpRule_t
 NmTransitionRuleCondition_t
 NmTransitionRule_t
 No DATA block for resource
 No DATA block for resource '%s'
+No Orientation Warp Event Found!
 No VBs found for this draw descriptor
 No animation set for clip node!
 No closing */ before end of file
@@ -11608,6 +12253,8 @@ OneofDescriptorProto
 OneofOptions
 Only wrote %d (of %d) values when saving map!
 Only wrote %d (of %d) values when saving map! (Likely string-incompatible or case-sensitive keys.)
+OperatorAnd
+OperatorOr
 OptimizeMode
 Option "
 Option field "
@@ -11617,6 +12264,8 @@ OrLockType
 Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
+Orientation Warp failed since there is not enough time left to warp or we're past the warp event!
+Orientation warp failed since there wasnt a valid target direction set!
 Original
 Original Foot 
 Original Joint
@@ -11638,6 +12287,8 @@ P08@J
 P>q_Y~
 P@@8|$Pu
 P@HPX`hpx
+P@HcF@
+P@HcF@D
 P@IcN
 PARENT
 PATTACH_ABSORIGIN
@@ -11668,11 +12319,14 @@ PA^^]
 PA^_]
 PA^_^
 PA^_^[]
+PA^_^][
 PA_A\^
 PA_A\^[]
 PA_A\_^]
 PA_A^A\_[
+PA_A^A\_^][
 PA_A^A]A\[
+PA_A^A]A\]
 PA_A^A]A\_^]
 PA_A^A]_^][
 PA_A^^
@@ -11734,6 +12388,8 @@ PerChoiceBlendTimes
 PerTickSettings
 PerTickSettings_t
 PerVertexLighting
+PercentageThroughState
+PercentageThroughSyncEvent
 Perlin
 PermModelDataAnimatedMaterialAttribute_t
 PermModelDataAnimatedMaterialAttribute_t::KV3Transfer_DefaultKeys_Impl
@@ -11781,6 +12437,8 @@ PoseType_t
 Position
 PostProcessingSystem_001
 PreferClosestSyncEventID
+PreferHighestProgress
+PreferHighestWeight
 Preview Button
 Previous normal
 Priority
@@ -11807,7 +12465,6 @@ QuaternionParameter
 QuaternionStorage
 QueryPerformanceCounter
 Quint
-R	V_sscanf
 R A;F
 R.num_cols() == nSampleCount
 R.num_rows() == nSampleCount
@@ -11951,6 +12608,7 @@ RootMotionSpeed
 RootMotionTurnSpeed
 RootMotionVelocity
 Rotation Error Range
+RotationOnly
 Round
 RtlCaptureContext
 RtlLookupFunctionEntry
@@ -11960,6 +12618,7 @@ RtlUnwindEx
 RtlVirtualUnwind
 S v)H
 S(9S0
+S,88\
 S0Hcs(L
 S0Q0O
 S>$hkDh$h>[2
@@ -11998,6 +12657,7 @@ STRING
 STRING_CHAR
 STRING_PIECE
 SUATAUAWH
+SUATAWH
 SUATH
 SUAUAVAWH
 SUAUAVH
@@ -12025,7 +12685,6 @@ SUVWH
 SUWATAUH
 SUWAUH
 SUWAVH
-SUWAWH
 SVATAVH
 SVAVAWH
 SVAWH
@@ -12042,7 +12701,9 @@ SWATAUH
 SWATAVAWH
 SWATAWH
 SWATH
+SWAUAWH
 SWAUH
+SWAVAWH
 SWAWH
 SameCycleAsSource
 SameTimeAsSource
@@ -12198,6 +12859,8 @@ SchemaEmitClassInfoHelper<class CMotionNodeSequence>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CMotionSearchDB>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CMovementComponentUpdater>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CMoverUpdateNode>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CNmBitFlags>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CNmBitFlags>::ValidateStaticFieldTypes
 SchemaEmitClassInfoHelper<class CNmBoneMask>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CNmChildGraphNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CNmClip>::ValidateClassFieldTypes
@@ -12218,6 +12881,7 @@ SchemaEmitClassInfoHelper<class CNmSyncTrack::Event_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CNmSyncTrack>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CNmSyncTrack>::ValidateStaticFieldTypes
 SchemaEmitClassInfoHelper<class CNmTarget>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CNmTargetWarpEvent>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CNmTransitionEvent>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CPairedSequenceUpdateNode>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CParamSpanUpdater>::ValidateClassFieldTypes
@@ -12329,6 +12993,11 @@ SchemaEmitClassInfoHelper<struct CMorphSetData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CMotionSearchNode>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmAndNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmAnimationPoseNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmBlend1DNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmBlend2DNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmBoneMaskBlendNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmBoneMaskNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmBoneMaskSelectorNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmCachedBoolNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmCachedFloatNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmCachedIDNode::CDefinition>::ValidateClassFieldTypes
@@ -12341,25 +13010,62 @@ SchemaEmitClassInfoHelper<struct CNmConstFloatNode::CDefinition>::ValidateClassF
 SchemaEmitClassInfoHelper<struct CNmConstIDNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmConstTargetNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmConstVectorNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmCurrentSyncEventIDNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmCurrentSyncEventIndexNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmCurrentSyncEventPercentageThroughNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFixedWeightBoneMaskNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatAbsNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatAngleMathNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatClampNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatComparisonNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatCurveNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatEaseNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatMathNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatRangeComparisonNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatRemapNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatRemapNode::RemapRange_t>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatSelectorNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFloatSwitchNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFootEventConditionNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFootstepEventIDNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmFootstepEventPercentageThroughNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmGraphDefinition::ChildGraphSlot_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmGraphDefinition::ExternalGraphSlot_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmIDComparisonNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmIDEventConditionNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmIDEventNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmIDEventPercentageThroughNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmIDToFloatNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmIsTargetSetNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmLayerBlendNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmLayerBlendNode::LayerDefinition_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmNotNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmOrNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmOrientationWarpNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmParameterizedBlendNode::BlendRange_t>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmParameterizedBlendNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmParameterizedBlendNode::Parameterization_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmParameterizedClipSelectorNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmParameterizedSelectorNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmPassthroughNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmRootMotionOverrideNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmSelectorNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmSpeedScaleBaseNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmStateCompletedConditionNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmStateEventConditionNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmStateEventConditionNode::Condition_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmStateMachineNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmStateMachineNode::StateDefinition_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmStateMachineNode::TransitionDefinition_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmStateNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmStateNode::TimedEvent_t>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmSyncEventIndexConditionNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmTargetInfoNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmTargetOffsetNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmTargetPointNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmTargetWarpNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmTimeConditionNode::CDefinition>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<struct CNmTransitionEventConditionNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmTransitionNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmVectorCreateNode::CDefinition>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct CNmVectorInfoNode::CDefinition>::ValidateClassFieldTypes
@@ -12456,10 +13162,6 @@ SchemaEmitClassInfoHelper<struct VPhysXJoint_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct VPhysXRange_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct VPhysics2ShapeDef_t>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<struct WeightList>::ValidateClassFieldTypes
-SchemaEnumFlagsFromString_Generic
-SchemaEnumFlagsToString_DistinctBits
-SchemaEnumFlagsToString_Generic
-SchemaEnumFlagsToString_OverlappingBits
 SchemaEnumFromString
 SchemaEnumToFriendlyName
 SchemaEnumToString
@@ -12473,6 +13175,9 @@ ScriptInfo_t::KV3TransferLoad_Impl
 ScriptInfo_t::KV3Transfer_DefaultKeys_Impl
 ScriptInfo_t::Schema_VerifyBindingIsRegistered
 Scripts
+SearchBothStateAndAnimEvents
+SearchOnlyAnimEvents
+SearchOnlyStateEvents
 Second argument to Swap() (of type "
 SelectorInstanceData_t
 SelectorNode
@@ -12623,6 +13328,7 @@ Specified target is invalid!
 Speed
 Speed Function
 Speed Scale
+Spline
 Spring
 Spring Frequency Max
 Spring Frequency Min
@@ -12642,6 +13348,7 @@ StateMachine
 StateMachineNode
 Static field count mismatch (codegen %d vs. meta %d) for %s (should be AttachmentHandle_t)
 Static field count mismatch (codegen %d vs. meta %d) for %s (should be CFootTrajectory)
+Static field count mismatch (codegen %d vs. meta %d) for %s (should be CNmBitFlags)
 Static field count mismatch (codegen %d vs. meta %d) for %s (should be CNmSyncTrack)
 Static field count mismatch (codegen %d vs. meta %d) for %s (should be HSequence)
 StatsService_001
@@ -12671,6 +13378,7 @@ SyncChildren
 Synchronize Children
 Synchronized
 Synthetic oneofs must be after all other oneofs
+T	V_sscanf
 T$ D8t$(
 T$ E3
 T$ H;
@@ -12680,6 +13388,7 @@ T$ I9I t
 T$ Ic
 T$ L+
 T$ M;
+T$ fA
 T$ ff
 T$"E3
 T$#9G
@@ -12692,9 +13401,9 @@ T$(H;T$0t
 T$(Hc
 T$(fD
 T$,Hc
+T$08\
 T$09W|
 T$0:P
-T$0D9RX
 T$0D9bh
 T$0E3
 T$0H+
@@ -12708,17 +13417,18 @@ T$0I+
 T$0I;
 T$0L;
 T$0Li
+T$0fA
 T$0fD
 T$39C
 T$8;O
 T$8E3
 T$8H+
 T$8H;
+T$8HcL$@B
 T$8I+
 T$8I;
 T$8Lc
 T$:f;
-T$;9G
 T$@;y
 T$@E3
 T$@H;
@@ -12729,10 +13439,9 @@ T$C9C
 T$C9F
 T$C9G
 T$H@2
-T$HD;vh
+T$HA;vh
 T$HH+
 T$HH;
-T$HfD
 T$I9G
 T$Jfff
 T$K9C
@@ -12746,6 +13455,7 @@ T$PH;
 T$PHcN
 T$PIc
 T$PL;
+T$PfD
 T$S9C
 T$S9F
 T$S9G
@@ -12784,12 +13494,14 @@ T$xH+
 T$xH;
 T$xH;L$0t
 T$xH;U
-T$xfD
 T$xfD;
 T${9C
+T${9G
 T${A9F
+T%5w?
 T+(I;
-T-m2<
+T-l"@
+T5oF5
 TILT_TWIST
 TNT::Matrix<float>::initialize
 TNT::Vector<float>::initialize
@@ -12827,6 +13539,7 @@ Target Move Speed
 Target Parent
 Target Source
 Target settings has an invalid bone specified (index '%d', name '%s').  Returning identity.
+Target warp exceed accurate sampling error threshold! Switching to inaccurate sampling!
 TargetMoveHeading
 TargetMoveSpeed
 Task Handshake Tag
@@ -12853,6 +13566,7 @@ Time Remaining
 Time before the next animation can start
 Time from the end of the mood when an animation cannot play
 Time from the start of the mood before an animation can start
+Timed
 TlsAlloc
 TlsFree
 TlsGetValue
@@ -12869,6 +13583,8 @@ Tried to load a polymorphic pointer with no '%s' key
 Tried to load resource reference '%s' from a value without a resource reference specific type.
 Tried to merge messages of different types 
 TryAcquireSRWLockExclusive
+Trying to cast '%s' to a different resource type!
+Trying to set an offset on an unset node!
 Tuesday
 TurnHelperNode
 Two Bone
@@ -12895,10 +13611,13 @@ UAVAWH
 UHH;UPt
 UNKNOWN_ENUM_VALUE_%s_%d
 UNRECOGNIZED
+USATAUAVAWH
 USATAVAWH
 USATAVH
+USATAWH
 USAUAWH
 USAVH
+USAVI
 USAWH
 USVATAUAVAWH
 USVATAVAWH
@@ -12925,15 +13644,12 @@ USWAWH
 UT$@A
 UUUUUU
 UUUUUUU
-UUUUUUUUD
 UUUUUUUUH
-UUUUUUUUI
 UVATAUAVAWH
 UVATAUAVH
 UVATAUAWH
 UVATAVAWH
 UVATH
-UVATI
 UVAUAVAWH
 UVAUAVH
 UVAUAWH
@@ -12945,7 +13661,7 @@ UVWATAUAWH
 UVWATAUH
 UVWATAVH
 UVWATAWH
-UVWATH
+UVWAUAVAWH
 UVWAUAVH
 UVWAUAWH
 UVWAVAWH
@@ -13004,7 +13720,6 @@ Unnamed Parameter
 Unnamed Tag
 Unparsed options: 
 Unrecognizd V1 mesh flag '%s'
-Unrecognized bits encountered serializing instance of %s (0x%llX)
 Unrecognized enumerator value %d
 Unrecognized syntax: 
 Unsupported
@@ -13033,6 +13748,7 @@ VATAUH
 VATAVAWH
 VATAVH
 VATAWH
+VAUAWH
 VAVAWH
 VApplication001
 VAsyncFileSystem2_001
@@ -13094,6 +13810,7 @@ VWATAVAW
 VWATAVAWH
 VWATAVH
 VWAUAVAWH
+VWAUAVH
 VWAUAWH
 VWAUH
 VWAVH
@@ -13197,11 +13914,10 @@ Virtual Parameter
 VisBuilder_001
 Volume
 Vrad3_001
-W	V_stricmp_fast
-W- T!
-W-(M#
+W575;
 W8IcG(M
 W9QHI
+W=GE=
 WARNING
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
@@ -13213,10 +13929,14 @@ WATAVH
 WAUAVH
 WAVAWH
 WPL9t2 
+W\$@A
 WaNd?
 WaitForSingleObjectEx
 WakeAllConditionVariable
 Warning parsing text-format 
+WarpXY
+WarpXYZ
+WarpZ
 Washington1
 WayPointDirection
 WayPointDistance
@@ -13240,6 +13960,7 @@ WideCharToMultiByte
 World Space
 World space tilt normal
 WorldRendererMgr001
+WorldSpace
 Write Cached Pose
 WriteConsoleW
 WriteFile
@@ -13249,13 +13970,14 @@ X D8e
 X Hc@
 X HcY`H
 X SUWATAUH
-X UVWATAUAWH
+X UVWATAUAVH
 X!t5~
-X%6d#
 X(Hc@ H
-X5]+%
+X-:.!
+X-a.!
+X5R^(
 XA]A\
-XA]A\^]
+XA^A]A\[
 XA^A]_^][
 XA^^][
 XA^_][
@@ -13275,29 +13997,31 @@ XD$DA
 XHcGh
 XL$0D
 XL$`H
-XL$`f
 XL$pf
-XL.0A
 XPHc@HH
 XPIc@HH
+XT.0D
 XT> A
 X_^][
-X`hrP]
 Xd$ D
 Xt/@A
 Xt7HH
 X|	@A
+Y	V_stricmp_fast
 Y (Green / Left)
-Y%*,9
-Y%3Z?
+Y%/60
+Y%D}D
 Y(HcA H
-Y- O8
+Y-vMF
 Y0HcR
-Y5+	&
-Y5/T%
-Y5M&:
-Y5t	9
-Y5uZ8
+Y5(O?
+Y5-C3
+Y5.S?
+Y5KD3
+Y5L>)
+Y5MK'
+Y5NB3
+Y5k:D
 Y9"SD
 Y>kX>M
 YD$0A
@@ -13381,7 +14105,6 @@ Zod(^?
 \$ WATAUAVAWH
 \$ WATAVH
 \$ WH
-\$ s	A
 \$$9Y
 \$$H9
 \$$H9Y
@@ -13406,6 +14129,7 @@ Zod(^?
 \$0Hi
 \$0Hk
 \$0I+
+\$0I9\$H
 \$0L+@0H
 \$0L;
 \$0M+
@@ -13444,7 +14168,6 @@ Zod(^?
 \$PE3
 \$PH9
 \$PH9G t5A
-\$PH;
 \$PHc
 \$Pfff
 \$XH;}
@@ -13457,37 +14180,44 @@ Zod(^?
 \$gm?
 \$hE3
 \$hH;
-\$hIc
 \$hfD
 \$p9]
-\$pE3
 \$pH;
-\-%I)
-\5LT%
+\$pw;
+\-u.!
+\53\)
+\56)<
+\5i>)
 \9\D;
 \A fA
 \D	 fA
 \D$@A
-\D$@H
 \L$Df
+\T$pA
 \U%08x
 \d$8A
 \l$DD
 \q`fA
 \t	`fA
-\t$HA
 \t3D8T$(t
 \y@fE
 \|	@fE
 \|'(H
+] HcE
+]%_a5
 ](IcE L
 ])6M>&
+]0HcE(H
 ]0tOH
+]5ap'
+]=|L"
 ]>)2X
+]@tKH
 ]J<0"0i3
 ]`H9u
 ]`HcEXL
 ^ ;^$t
+^ HcF
 ^ Lc3D;s
 ^,tyI
 ^89{(u	H
@@ -13499,11 +14229,11 @@ Zod(^?
 ^XA9_P}
 ^XH9^@H
 ^XH;]Xt*H
-^`I9^@I
 ^fD;]
 ^hH9^PH
-_	V_strtok
 _ ;_$t
+_0HcG(H
+_0HcG(L
 _8Hcw
 _8I;_@tj
 _8M9g(u\
@@ -13526,6 +14256,7 @@ __thiscall
 __unaligned
 __vectorcall
 _`HcGXH
+_`IcGXH
 _autoreset
 _cabs
 _class
@@ -13535,6 +14266,7 @@ _hypot
 _logb
 _nextafter
 _oD>Kg
+_x;_(|
 _xH;]xt*H
 _xHc[
 `	P!2
@@ -13547,6 +14279,9 @@ _xHc[
 `A]_]
 `A^A\_^]
 `A^A]A\_[
+`A^A][
+`A^][
+`A^^]
 `A^_^
 `A^_^][
 `A_A\_^]
@@ -13599,6 +14334,7 @@ _xHc[
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a	V_strtok
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a7hIw
 abcdefghijklmnopqrstuvwxyz
@@ -13780,6 +14516,7 @@ class_t
 classes
 client_name
 client_streaming
+closestDistance != 3.402823466e+38F
 cmd_number
 color
 color.a == 255
@@ -13908,7 +14645,6 @@ const char *__cdecl Reflection::Internal::GetFuncName<class CDirectPlaybackAnimN
 const char *__cdecl Reflection::Internal::GetFuncName<class CDirectPlaybackUpdateNode>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CDirectionalBlendUpdateNode>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CDistanceRemainingMetricEvaluator>(void)
-const char *__cdecl Reflection::Internal::GetFuncName<class CEmitTagActionUpdater>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CEnumAnimParameter>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CEnumAnimParameterInstance>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CExpressionActionUpdater>(void)
@@ -14086,8 +14822,13 @@ context.IsValid() && IsInitialized()
 context.IsValid() && IsValid()
 context.IsValid() && m_nActiveStateIndex != -1
 context.IsValid() && m_nActiveStateIndex == -1 && m_pActiveTransition == nullptr
+context.IsValid() && m_pBlendWeightValueNode != nullptr && m_pSourceBoneMask != nullptr && m_pTargetBoneMask != nullptr
 context.IsValid() && m_pInputValueNode != nullptr
+context.IsValid() && m_pSourceStateNode != nullptr
+context.IsValid() && m_pTargetNode != nullptr
+context.IsValid() && m_pValueNodeA != nullptr
 context.IsValid() && pDefinition != nullptr
+context.IsValid() && pOutValue != nullptr
 context.m_nCurrentTaskIdx != -1 && m_bufferIdx != -1
 context.m_pSampledEventsBuffer->IsValidRange( result.m_sampledEventRange )
 control_point
@@ -14097,9 +14838,9 @@ cross device link
 csharp_namespace
 ctype
 curvature
+curve_tangent_mode_t
 cycle
 cycleDelta.IsNormalized()
-d	V_tanf
 d$ D!
 d$ E3
 d$ L9c
@@ -14112,6 +14853,7 @@ d$(fD
 d$(ff
 d$0E3
 d$0E9
+d$0fD
 d$8A;
 d$8Ict$
 d$8Ic|$
@@ -14147,6 +14889,7 @@ d$`Ic
 d$`Lc#A+
 d$`LccPL
 d$`fD
+d$`tLA
 d$dD;d$ltY
 d$hA;
 d$hE3
@@ -14162,6 +14905,7 @@ d$xt2@
 d' E+
 d0 != 0.0f
 d1 != 0.0f
+d3@fE
 d?000000`?
 damage
 data_checksum
@@ -14190,6 +14934,7 @@ double
 double_value
 duration
 duration >= 0.f
+e(A_A^A]A\_^[]
 e+000
 e0A_A^A]A\]
 e8H9u
@@ -14233,7 +14978,7 @@ expression
 extend .$0 {
 extendee
 extension_range
-f	V_tanhf
+f	V_tanf
 f4MaxDist
 f4MinDist
 f4RelaxationFactor
@@ -14264,9 +15009,7 @@ f9nBt
 f9oBt
 f9s4t
 f9s6u
-f9sjt
 f9t$bu
-f;A(|
 f;D$0t
 f;NRu.f;FPu(
 f;\$$
@@ -14288,6 +15031,8 @@ fA9EPt
 fA9ERt
 fA9T$
 fA9\$
+fA9o0
+fA9t$
 fA;LV
 fB9,Nu
 fB94Ou
@@ -14316,17 +15061,21 @@ fD9c$
 fD9c&
 fD9d$`
 fD9t$b
+fD;+|
+fD;6|
+fD;>|
 fD;A^
 fD;Krs<f
+fD;mp
 fE)'H
 fE9,Fu
 fE98t'
 fE9fP
 fE9fR
-fE9w0
 fE;B`
 fE;Bb
 fE;U*
+fE;l$
 fG9$Ou
 fG;TF
 fJBGo
@@ -14424,12 +15173,13 @@ friction
 from.m_numInts == CalcNumIntsForBits( from.m_numBits )
 fromPose.GetActiveBoneCount() == toPose.GetActiveBoneCount()
 fromTime >= 0.0f && fromTime <= 1.0f
-fui8^G
 fullpackets_version
 function not supported
+g0D8} t"H
 g_pAnimationSystem
 g_pResourceHandleUtils
-g_pResourceHandleUtils->GetResourceHandleType( m_resources[slotIdx] ) == ResourceClassInfo_t<T>::RESOURCE_TYPE
+g_pResourceHandleUtils->GetResourceHandleType( *pHandle ) == T::GetResourceType()
+g_pResourceHandleUtils->GetResourceHandleType( m_resources[slotIdx] ) == T::GetResourceType()
 g_pResourceSystem
 game:tools/images/animgraph_editor/animgraph_icon_action.png
 game:tools/images/animgraph_editor/animgraph_icon_component.png
@@ -14467,11 +15217,11 @@ group
 group.m_motionGraphConfigs.IsValidIndex( nIndex.m_nConfig )
 group.m_motionGraphConfigs.IsValidIndex( selection.m_nConfigIndex.GetConfig() )
 group.m_motionGraphs.IsValidIndex( nIndex.m_nMotion )
+h	V_tanhf
 h A9}h~ED
-h VWAVH
+h(A;vh|
 h>1my
 hA]A\_[
-hA^A\
 hA^A]^]
 hA^^][
 hA^_^[
@@ -14479,16 +15229,19 @@ hA_A\_[
 hA_A\_^][H
 hA_A^
 hA_A^A\[
+hA_A^A\]
 hA_A^A]A\_]
 hA_A^A]A\_^[]
 hA_A^A]A\_^][
 hA_A^A]_[]
+hA_A^_^][
 hParam.GetType() == value.GetType()
 hSeq != GetSequenceHandle()
 hSequence != SEQUENCE_HANDLE_INVALID
 h_^][
 handindex
 handle.IsValid()
+hb;?~
 headtype
 helper
 hero_id
@@ -14503,6 +15256,7 @@ http://www.digicert.com/CPS0
 hurt_me
 hurt_them
 i < ( uint32 ) m_weights.Count()
+i >= 0 && i < m_sampledEvents.Count()
 i u!H
 iActivityIndex > g_FirstPrivateActivity
 iBone >= 0 && iBone < CBoneAccessor< T >::m_nBones
@@ -14513,6 +15267,7 @@ idempotency_level
 identifier removed
 identifier_value
 idx < m_tags.Count() && m_tags[ idx ]->GetName() == tagName
+idx >= 0 && idx < m_parentIndices.Count()
 ikLockParentSpaceTransforms.Count() >= nBoneCount
 ik_constraints_enabled
 ik_debug_all_chains_unique_color_per_chain
@@ -14588,6 +15343,7 @@ items_clientside
 items_t
 iu+-,
 iv_debugbone
+j*$E3
 j<	u#H
 j>>A?1
 j?V()
@@ -14604,7 +15360,8 @@ jstype
 jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 k H9+t	H
 k VATAVH
-k VWATAVAWH
+k VWAUAVAWH
+k(9k8|AH
 k(H9+t	H
 k-),M
 k0i0$
@@ -14641,7 +15398,6 @@ l$ WAVAWH
 l$ WH
 l$$9nx
 l$$L;
-l$(A;vh|
 l$(E3
 l$(H+y0H
 l$(I;
@@ -14649,7 +15405,6 @@ l$(L+
 l$(L9s
 l$(Lc
 l$(M9~
-l$(fA
 l$(fD
 l$0;s
 l$0@2
@@ -14673,16 +15428,16 @@ l$8E9l$
 l$8H;
 l$8Hk
 l$8L+
-l$8L;m
 l$@$`3
 l$@A+
-l$@A:
 l$@E3
 l$@Hc
 l$@Ic,$H
 l$@L+
+l$@L;d$`
 l$@M;
 l$@fA
+l$@fD
 l$@t	3
 l$@t I
 l$@u&H
@@ -14721,7 +15476,9 @@ l$Xu2
 l$\D9n
 l$\fD
 l$`E3
+l$`I;
 l$`L9l$ t
+l$`f;
 l$`t&
 l$hHc
 l$hIc
@@ -14785,7 +15542,6 @@ m_AttachmentType
 m_AttributeName
 m_AttributeType
 m_AxialEdges
-m_BindPose
 m_BodyGroupName
 m_BodyGroupsHiddenInTools
 m_BodygroupOnOtherModels
@@ -14952,6 +15708,7 @@ m_Sphere
 m_SphereRigids
 m_SpringIntegrator
 m_Springs
+m_Stamp
 m_Stops
 m_SwingLimit
 m_TaperedCapsuleRigids
@@ -14983,6 +15740,7 @@ m_WorldCollisionParams
 m_aAngOffset
 m_actions
 m_activityArray
+m_algorithm
 m_allTags
 m_anchor
 m_angularVelocityLimitNodeIdx
@@ -15015,6 +15773,7 @@ m_bActiveTalking
 m_bAdditive
 m_bAllZeros
 m_bAllowLooping
+m_bAllowTargetUpdate
 m_bAlwaysUseFallbackHinge
 m_bAnimEventsAndTagsOnMostWeightedOnly
 m_bAnimGraphAdditive
@@ -15110,12 +15869,16 @@ m_bInterpolate
 m_bInverse
 m_bIsAdditive
 m_bIsAttachment
+m_bIsBoneSpaceOffset
 m_bIsBoneTarget
 m_bIsClient
 m_bIsDisableTag
 m_bIsEndState
+m_bIsInclusiveCheck
 m_bIsNotMatchedToMaterial
 m_bIsOffState
+m_bIsOffsetNode
+m_bIsOffsetRelativeToCharacter
 m_bIsPassthrough
 m_bIsPredicted
 m_bIsReading
@@ -15123,11 +15886,13 @@ m_bIsReferenced
 m_bIsRotationStatic
 m_bIsScaleStatic
 m_bIsSet
+m_bIsSet && m_bIsBoneTarget
 m_bIsStartState
 m_bIsStateMachineLayer
 m_bIsSynchronized
 m_bIsTranslationStatic
 m_bIsUsingBoneSpaceOffsets
+m_bIsWorldSpaceTarget
 m_bIsZeroDuration
 m_bLegacyCyclepose
 m_bLegacyDelta
@@ -15182,6 +15947,7 @@ m_bResetChosen
 m_bResetOnChange
 m_bResetOnFinish
 m_bResetPending
+m_bReturnAbsoluteResult
 m_bRootOffset
 m_bRotateYawForward
 m_bSampleRootMotion
@@ -15226,6 +15992,7 @@ m_bUseModelSpace
 m_bUseMostRecentValue
 m_bUseNewPoleVectorForAxis
 m_bUseShadowFastPath
+m_bUseStartValue
 m_bUserFriendlyNameLong
 m_bUserFriendlyNameSealed
 m_bUserSpecifiedColor
@@ -15245,6 +16012,7 @@ m_blendItems
 m_blendKeyType
 m_blendMethod
 m_blendMode
+m_blendRanges
 m_blendSource
 m_blendSourceX
 m_blendSourceY
@@ -15261,6 +16029,7 @@ m_boneIDs
 m_boneIndex
 m_boneIndices
 m_boneMaskBlendInTimePercentage
+m_boneMaskID
 m_boneMasks
 m_boneName
 m_boneNameToken
@@ -15281,6 +16050,10 @@ m_bones
 m_bonesHash
 m_boolCompressor
 m_break
+m_bsr.m_flBlendWeightBetween0And1 >= 0 && m_bsr.m_flBlendWeightBetween0And1 <= 1.0f
+m_bsr.m_flBlendWeightBetween1And2 > 0.0f && m_bsr.m_flBlendWeightBetween1And2 < 1.0f
+m_bsr.m_flBlendWeightBetween1And2 >= 0 && m_bsr.m_flBlendWeightBetween1And2 < 1.0f
+m_bsr.m_pSource0 != nullptr
 m_bufferIdx != -1
 m_bufferIdx == -1
 m_bulletImpact
@@ -15298,6 +16071,7 @@ m_children
 m_choiceChangeMethod
 m_choiceMethod
 m_choicePreviousCycle
+m_clampRange
 m_clipName
 m_clips
 m_cmd
@@ -15314,6 +16088,7 @@ m_components
 m_compressedPoseData
 m_compressedPoseOffsets
 m_conditionNodeIndices
+m_conditions
 m_configName
 m_constValue
 m_constantRotation
@@ -15350,6 +16125,7 @@ m_decodeKey
 m_decodeOps
 m_decodedAnims
 m_decoderArray
+m_defaultMaskNodeIdx
 m_defaultValue
 m_definition
 m_deltaTransform
@@ -15391,6 +16167,7 @@ m_eSimSpace
 m_eTagBehavior
 m_eTimingSource
 m_eType
+m_easingOp
 m_elasticity
 m_elems
 m_embeddedKeyvalues
@@ -15403,6 +16180,10 @@ m_entryEvents
 m_enumOptions
 m_evaluate.Count() == 0
 m_eventArray
+m_eventConditionRules
+m_eventID
+m_eventIDs
+m_eventTypeCondition
 m_events
 m_events.IsEmpty()
 m_executeEvents
@@ -15447,6 +16228,7 @@ m_flBaseMinLeft
 m_flBaseMinUp
 m_flBaseStiffness
 m_flBaseUpFriction
+m_flBegin
 m_flBiasAndClampPitchOffset
 m_flBiasAndClampYawOffset
 m_flBindPoseDirectionMS
@@ -15456,11 +16238,14 @@ m_flBlendTimeSeconds
 m_flBlendValue
 m_flBlendWeight >= 0.0f && m_flBlendWeight <= 1.0f
 m_flBoneScaleArray
+m_flBoneWeight
 m_flBoneWeightArray
 m_flBoundaryRadius
 m_flCachedPoseKey0[0] != m_flCachedPoseKey0[1]
 m_flCachedPoseKey1[0] != m_flCachedPoseKey1[1]
 m_flClipStartTime
+m_flComparand
+m_flComparisonValue
 m_flControlPoint1
 m_flControlPoint2
 m_flCounterRotationScale
@@ -15485,6 +16270,7 @@ m_flDefaultRunSpeed
 m_flDefaultSurfaceStretch
 m_flDefaultThreadStretch
 m_flDefaultTimeDilation
+m_flDefaultValue
 m_flDefaultVelAirDrag
 m_flDefaultVelQuadAirDrag
 m_flDefaultVolumetricSolveAmount
@@ -15501,12 +16287,14 @@ m_flDurationScale
 m_flDurationSeconds
 m_flEaseIn
 m_flEaseOut
+m_flEaseTime
 m_flElasticDamping
 m_flElasticity
 m_flEnd
 m_flEndCycle
 m_flEndOffset
 m_flEntitySimTime
+m_flEpsilon
 m_flErrorQuantizationRotationMax
 m_flErrorQuantizationScaleMax
 m_flErrorQuantizationTranslationMax
@@ -15554,6 +16342,7 @@ m_flKillRate
 m_flLastPathTime
 m_flLastTimeStep
 m_flLength
+m_flLerpFallbackDistanceThreshold
 m_flLinearDamping
 m_flLinearDampingRatio
 m_flLinearFrequency
@@ -15587,6 +16376,7 @@ m_flMaxScale
 m_flMaxSpringTension
 m_flMaxStretch
 m_flMaxStretchAmount
+m_flMaxTangentLength
 m_flMaxTimeRemaining
 m_flMaxTimeStep
 m_flMaxTorque
@@ -15648,10 +16438,13 @@ m_flRodVelocitySmoothRate
 m_flRootMotionBlend
 m_flRotationOffset
 m_flSampleRate
+m_flSamplingPositionErrorThresholdSq
 m_flScale
 m_flSearchInterval
 m_flSelectionThreshold
 m_flShapeRadius
+m_flSlopeIncoming
+m_flSlopeOutgoing
 m_flSlowDownStrength
 m_flSpeedScaleBlending
 m_flSphereRadius
@@ -15667,6 +16460,7 @@ m_flStartHeadingWS
 m_flStartOffset
 m_flStartTime
 m_flStartTimeSeconds
+m_flStartValue
 m_flStaticImpactVolume
 m_flStepHeightDecreaseScale
 m_flStepHeightIncreaseScale
@@ -15683,6 +16477,8 @@ m_flSurfaceArea
 m_flTargetFacing
 m_flTargetMoveSpeed
 m_flTargetSpeed
+m_flTargetUpdateAngleThresholdRadians
+m_flTargetUpdateDistanceThreshold
 m_flTensionCompressScale
 m_flTensionStretchScale
 m_flTiltPlanePitchSpringStrength
@@ -15697,6 +16493,7 @@ m_flTraceAngleBlend
 m_flTraceDistance
 m_flTraceHeight
 m_flTraceRadius
+m_flTransitionDurationSeconds
 m_flTransitionLength > 0.0f
 m_flTurnAmount
 m_flTurnTimeMax
@@ -15710,6 +16507,7 @@ m_flUvDensity
 m_flVHeightSrc
 m_flVTopSrc
 m_flValue
+m_flValueB
 m_flValueX
 m_flValueY
 m_flVar1
@@ -15761,6 +16559,7 @@ m_groups.IsValidIndex( nGroup )
 m_groups.IsValidIndex( nIndex )
 m_groups.IsValidIndex( nIndex.m_nGroup )
 m_groups.IsValidIndex( selection.m_nConfigIndex.GetGroup() )
+m_hAnimation.HasData()
 m_hAnticipationHeadingParam
 m_hAnticipationPosParam
 m_hBasePoseCacheHandle
@@ -15821,6 +16620,7 @@ m_hitOffsetParam
 m_hitStrengthParam
 m_hitboxsets
 m_horizontalAxis
+m_hullIndices
 m_hulls
 m_idToIndexMap
 m_ikChainIndex
@@ -15836,19 +16636,21 @@ m_indexBuffer
 m_indexHash
 m_indexNames
 m_indexToHandle
+m_indices
 m_influenceFlags
 m_influenceIndices
 m_influenceNames
 m_influenceOffsets
 m_influenceRotations
 m_influenceWeights
+m_infoType
 m_initializedNodeIndices.Find( childGraphNodeIdx ) != -1
 m_inputDataBlocks
 m_inputDataBlocks.Count() == replayInputRanges.Count()
 m_inputList
+m_inputRange
 m_inputTimeRemapRange
 m_inputValue
-m_inputValueNodeIdx
 m_inputValueXNodeIdx
 m_inputValueYNodeIdx
 m_inputValueZNodeIdx
@@ -15857,6 +16659,7 @@ m_instanceData
 m_instanceNodeStartOffsets.IsEmpty()
 m_intCompressor
 m_internalOps
+m_internalState == InternalState_t::AllowUpdates
 m_invBindPose
 m_items
 m_jiggleBone
@@ -15892,6 +16695,7 @@ m_localToWorldTransform
 m_lodBoneCounts
 m_lodGroupSwitchDistances
 m_manualTurnOffset
+m_maskNodeIndices
 m_material
 m_materialGroups
 m_materials
@@ -15938,6 +16742,7 @@ m_nBaseNodeIdx
 m_nBaseSequenceFrame
 m_nBaseVertex
 m_nBindOffsetBytes
+m_nBlendWeightValueNodeIdx
 m_nBody1
 m_nBody2
 m_nBodyGroupOption
@@ -15961,9 +16766,11 @@ m_nChildNodeIdx
 m_nChoice
 m_nClavicleLeftJointIndex
 m_nClavicleRightJointIndex
+m_nClipReferenceNodeIdx
 m_nCollisionAttributeIndex
 m_nCollisionMask
 m_nCollisionPlaneIndex
+m_nComparandValueNodeIdx
 m_nCompressorIndex
 m_nConditionNodeIdx
 m_nConfig
@@ -15977,7 +16784,6 @@ m_nCount > 0
 m_nCurrStackSize < m_stack.Count()
 m_nCurrStackSize < m_stack.Count() && nIndex <= m_nCurrStackSize
 m_nDataSlotIdx
-m_nDataSlotIndex
 m_nDebugFlags
 m_nDefaultMeshGroupMask
 m_nDefaultMotorIndex
@@ -16006,6 +16812,7 @@ m_nExtraGoalIterations
 m_nExtraIterations
 m_nExtraPressureIterations
 m_nFacingMode
+m_nFalseValueNodeIdx
 m_nFirstFreePoolIdx < 127
 m_nFirstFreePoolIdx < nCurrentPoolSize
 m_nFirstMeshlet
@@ -16037,6 +16844,7 @@ m_nHeight
 m_nHipBoneIndex
 m_nHitBoxIndex
 m_nIKAnchorBoneIndex
+m_nIncomingTangent
 m_nIndex
 m_nIndex >= 0 && m_nIndex < m_nArrayElementCount
 m_nIndex >= 0 && m_nIndex < m_nMemberCount
@@ -16044,8 +16852,15 @@ m_nIndex >= 0 && m_nIndex < m_pKV3->GetMemberCount()
 m_nIndexCount
 m_nInfluences
 m_nInitializationCount == 0
+m_nInputIdx0
+m_nInputIdx1
 m_nInputNodeIdx
+m_nInputParameterNodeIdx0
+m_nInputParameterNodeIdx1
+m_nInputParameterValueNodeIdx
 m_nInputValueNodeIdx
+m_nInputValueNodeIdxA
+m_nInputValueNodeIdxB
 m_nJiggleParent
 m_nLayerBoneMaskNodeIdx
 m_nLayerRootMotionWeightNodeIdx
@@ -16075,13 +16890,13 @@ m_nNameHash
 m_nNode
 m_nNodeBaseJiggleboneDependsCount
 m_nNodeCount
-m_nNodeIdx
 m_nNodeIdx != -1
 m_nNumChannels
 m_nNumFrames
 m_nNumIterations
 m_nNumMeshlets
 m_nOrder
+m_nOutgoingTangent
 m_nOutputBoneIndex == slave.m_nBoneIndex
 m_nOwningAnimNodePathCount
 m_nPackedBaseUv
@@ -16131,6 +16946,8 @@ m_nSimdTriCount1
 m_nSimdTriCount2
 m_nSlaveAxis
 m_nSlaveChannel
+m_nSourceMaskNodeIdx
+m_nSourceStateNodeIdx
 m_nSphereRigidIndex
 m_nSrcResult
 m_nStartEventOffset
@@ -16141,22 +16958,27 @@ m_nStaticNodeFlags
 m_nStaticNodes
 m_nSubCycles
 m_nSurfacePropertyIndex
+m_nSwitchValueNodeIdx
 m_nTagIndex
 m_nTailFrame
 m_nTaperedCapsuleRigidIndex
 m_nTargetAxis
 m_nTargetBoneIndex
+m_nTargetMaskNodeIdx
 m_nTargetStateIdx
 m_nTargetStateNodeIdx
+m_nTargetValueNodeIdx
 m_nTickCount
 m_nToolMaterialHash
 m_nTotalElementCount
 m_nTotalRecordCount >= 0
+m_nTransitionDurationOverrideNodeIdx
 m_nTransitionNodeIdx
 m_nTranslateMotion
 m_nTreeDepth
 m_nTriCount1
 m_nTriCount2
+m_nTrueValueNodeIdx
 m_nType
 m_nUniqueFrameIndex
 m_nUpType
@@ -16188,16 +17010,18 @@ m_oneBoneEnd
 m_oneBoneStart
 m_opFixedData
 m_opFixedSettings
+m_operation
+m_operator
 m_optionNodeIndices
 m_optionNodes.Count() == m_conditions.Count()
 m_orientationHandle
 m_outputMorph
+m_outputRange
 m_outputTransformList
 m_outputWeightList
 m_overrideFlags
 m_pAction
 m_pActiveTransition->IsInitialized()
-m_pAnimation != nullptr
 m_pAnimationGroupResourceData == nullptr
 m_pAnimationGroupResourceData->m_localHAnimArray.Count() == 1
 m_pAnimationGroupResourceData->m_localHAnimArray[ 0 ] == nullptr
@@ -16226,6 +17050,8 @@ m_pGroomData
 m_pISequenceArray.Count() == 0
 m_pISequenceArray.Count() == m_pSequenceTable->CountElements()
 m_pISequenceArray.IsValidIndex( m_pSequenceTable->Element( hSeqHash ) )
+m_pInputParameterNode0 != nullptr && m_pInputParameterNode1 != nullptr && m_sourceNodes.Count() > 1
+m_pInputParameterValueNode != nullptr && m_sourceNodes.Count() > 1
 m_pInputValueNode != nullptr
 m_pInstanceData != nullptr
 m_pLineDeltas && m_pLineDeltas->GetArrayElementCount() == m_nTotalRecordCount
@@ -16248,12 +17074,14 @@ m_pSkeleton != nullptr
 m_pSkeleton->GetNumBones() > 0
 m_pSourceNode != nullptr
 m_pSourceNode != nullptr && m_pSourceNode->IsInitialized()
+m_pSourceStateNode->IsInitialized()
 m_pStanceSourceNode
 m_pStaticPoseCache
 m_pSymbolTable->GetVariable( nIndex.GetRaw() )->m_eVarType == GetFuseVariableType( *pVar )
 m_pTagManager
 m_pTagManagerUpdater
 m_pTarget->m_pRoot == nullptr
+m_pTargetValueNode != nullptr
 m_pTextureAtlas
 m_paramHandles
 m_paramIndex
@@ -16263,6 +17091,11 @@ m_paramX
 m_paramY
 m_parameterMapping.Count() == numChildParams
 m_parameterNodeIdx
+m_parameterRange
+m_parameterValueNodeIdx
+m_parameterValueRange
+m_parameterValues
+m_parameterization
 m_parameters
 m_params
 m_paramsModified
@@ -16281,6 +17114,7 @@ m_peak
 m_percentageThrough
 m_persistentNodeIndices
 m_phase
+m_phaseCondition
 m_physics
 m_playbackSpeed
 m_pool[ nMaskIdx ].m_bIsUsed
@@ -16326,6 +17160,7 @@ m_quantizer
 m_quat
 m_quaternionCompressor
 m_ragdollNodePaths
+m_range
 m_ranges
 m_refAnimGroups
 m_refAnimIncludeModels
@@ -16340,6 +17175,7 @@ m_refSequenceGroups
 m_reflectivity
 m_remappingTable
 m_remappingTableStarts
+m_requireRuleID
 m_resetCount
 m_resetCycleOption
 m_resetCycleValue
@@ -16353,9 +17189,11 @@ m_rootMotionBlend
 m_rootNode
 m_rootNodePath
 m_rootToWorld
+m_rotationOffset
 m_roughThreshold
 m_roughnessFactor
 m_rule
+m_ruleCondition
 m_sAttachment
 m_sAttachmentName
 m_sBone
@@ -16382,6 +17220,7 @@ m_sampleIndices
 m_sampleTimes
 m_sampleToConfig
 m_samples
+m_samplingMode
 m_scale
 m_scaleRange
 m_sceneObjects
@@ -16408,9 +17247,12 @@ m_softContactFrequency
 m_solverIterationCount
 m_sortedOrder
 m_sortedOrder.IsValidIndex( (int)flFloorValue )
+m_sourceNodeIndices
+m_sourceStateNodeIdx
 m_spans
 m_speedFunction
 m_spheres
+m_spline
 m_srcStateIndex
 m_stanceCycle
 m_standardDeviations
@@ -16442,12 +17284,15 @@ m_swing2LimitDamping
 m_swing2LimitRestitution
 m_swing2LimitSpring
 m_swing2LimitValue
+m_switchDynamically
+m_syncEventIdx
 m_syncEventOffset
 m_syncEventOffsetOverrideNodeIdx
 m_syncEvents
 m_syncEvents.Tail().m_startTime <= 1.0f
 m_syncEvents[ syncEventIdx ].m_duration > NmConstants::g_epsilon
 m_syncEvents[ time.m_nEventIdx ].m_duration > NmConstants::g_epsilon
+m_syncID
 m_syncTrack
 m_szChannelClass
 m_szDescription
@@ -16465,6 +17310,7 @@ m_tagStatus.IsValidIndex( nIndex )
 m_tags
 m_tags.Count() == m_tagIndexBySymbol.Count()
 m_tail
+m_tangents
 m_target
 m_targetAttachment
 m_targetBoneIndex
@@ -16498,9 +17344,11 @@ m_transitionIndices
 m_transitionOptions
 m_transitioningLayers[ i ].m_nOrder < MAX_TRANSITIONING_SEQUENCES
 m_transitions
+m_translationOffset
 m_translationRangeX
 m_translationRangeY
 m_translationRangeZ
+m_triggerMode
 m_triggerParam
 m_triggerPhase
 m_triggers
@@ -16532,6 +17380,8 @@ m_vBoundsMinLS
 m_vCentroid
 m_vConeApex
 m_vDebugOffset
+m_vDomainMaxs
+m_vDomainMins
 m_vEyePosition
 m_vFootBaseBindPosePositionMS
 m_vGuideBary_vBaseBary
@@ -16625,11 +17475,13 @@ map<$0, $1>
 map_entry should not be set explicitly. Use map<KeyType, ValueType> instead.
 map_name
 marker >= 0 && marker <= m_tasks.Count()
+maskIdx >= 0 && maskIdx < 255
 match_id
 matrix3x4
 matrix3x4_t
 matrix3x4a_t
 maxStretch
+mb?95
 meleeimpact
 memberName.m_pString
 mesh_calculate_curvature_smooth_invert
@@ -16652,6 +17504,7 @@ motionflags
 mwtMH
 n < m_Vector.Count()
 n HcF$
+n I9.t	I
 n03>Pu
 n<	fE
 n<	fG
@@ -16670,6 +17523,7 @@ nBoneCount == pDstWeightList->m_linearBoneWeightArray.Count()
 nBoneCtrl
 nBoneIdx < GetNumBones()
 nBoneIdx < GetNumBones() && nBoneIdx >= 0
+nBoneIdx < m_pSkeleton->GetNumBones()
 nBoneIndex >= 0
 nBoneIndex >= 0 && nBoneIndex < pModel->NumBones()
 nBoneMergeCount == 1 && pBoneMerge[0].m_nDestIndex == 0
@@ -16687,6 +17541,8 @@ nCount >= 1
 nCtrlChild
 nCtrlParent
 nD$4H
+nD$<L
+nD$@H
 nDimensionCount < kMaxMetricDimensions
 nDummy
 nFlags
@@ -16749,6 +17605,7 @@ nNumEvents0 > 0 && nNumEvents1 > 0 && nEventsLCM > 0
 nNumEventsTrack0 > 0 && nNumEventsTrack1 > 0
 nNumSyncEvents > 0
 nNumTasks < s_nMaxTasks
+nNumWarpFrames > 0
 nOriginalRootMotionActionIdx1 > nOriginalRootMotionActionIdx0
 nParent < b
 nParentBone < 0 || BitVec_IsBitSet( m_pReadableBones, nParentBone )
@@ -16759,13 +17616,14 @@ nParentNode
 nPosIndex > 0 && nRotIndex > 0 && nScaleIndex > 0
 nRbfType >= 0 && nRbfType < CInterpolateRbf::RBF_NUM_TYPES
 nReserved
+nResourceIdx < (uint32_t) m_resourceIDToIdxMap.Count()
 nResult < m_usedResultSlots.Count()
 nRootMostDestBone < nDestTransformCount
 nSampleCount > 0
 nSampleIndex < m_nSampleCount
 nSampleIndex >= 0
 nScaleSourceNode
-nSearchLen > 0
+nSelectedRangeIdx != -1
 nSlot == INVALID_SPLITSCREENSLOT || nSlot.GetRaw() == 0
 nSourceMaskIdx != -1
 nSubtreeTipBone < nBoneCount
@@ -16780,6 +17638,7 @@ nVertexBase
 nVertexCount
 nVertexMapIndex
 n]?iJ
+n`I9n@I
 nan(ind)
 nan(snan)
 near '%c' :
@@ -16825,22 +17684,21 @@ num > 0
 numPoses > 1
 number
 numframes
+o H9o
 o L9s t
-o%7)T
-o-/)T
-o-2+T
+o%#IY
+o%DDY
+o%S8Y
+o%V<Y
+o%XEY
+o-$EY
+o-iEY
 o0Lcg(I
-o5.8T
-o5W)T
-o5`0T
-o5d+T
-o5g:T
-o5g;T
-o=B0T
-o=E8T
-o=I:T
-o=K;T
-o=R3T
+o5,EY
+o5~EY
+o=4EY
+o=;(Y
+o=x+Y
 o@u H
 oI>O7
 objc_class_prefix
@@ -16861,6 +17719,7 @@ operator co_await
 operator<=>
 optimize_for
 option json_name is not allowed on extension fields.
+optionIndex >= -1 && optionIndex < (int32) m_boneMaskOptionNodes.Count()
 optional
 optionallycompressedtangentframe
 options
@@ -16894,6 +17753,7 @@ pA^A]]
 pA^^]
 pA^_^
 pA^_^][
+pA_A\]
 pA_A]A\][
 pA_A^A\_^
 pA_A^A\_^[]
@@ -16914,6 +17774,7 @@ pAnimData != nullptr
 pAnimGroup->m_localHAnimArray.IsEmpty()
 pAnimGroup->m_localHAnimArray_Handle.Count() == 1
 pAnimGroup->m_localHAnimArray_Handle.Head() == RESOURCE_HANDLE_INVALID
+pAnimation != nullptr
 pBasePose != nullptr && pLayerPose != nullptr && pResultPose != nullptr
 pBasePose->GetMorphCount() == pSubPose->GetMorphCount()
 pBasePose->GetSkeleton() == pLayerPose->GetSkeleton()
@@ -16986,10 +17847,12 @@ pParent
 pParentTransforms
 pPolymorphicClassName && pPolymorphicClassName[0] != '\0'
 pPose
+pPose != nullptr
 pPoseBuffer->IsPoseSet()
 pPrevClusterInFreeList != nullptr
 pQuaternions
 pRagdollNode
+pResourceIdx != nullptr
 pResourceLoadInterface != nullptr
 pResult->m_pKV3Root != nullptr
 pRootNode->IsInitialized()
@@ -17050,7 +17913,6 @@ poses[ i ] != nullptr
 position
 positive_int_value
 posxyz
-ppTargetPtr != nullptr
 program.GetTempVariableCount() <= EXPR_TEMP_VAR_SIZE
 proto
 proto2
@@ -17063,10 +17925,8 @@ purecall
 pushoff
 pxWsDefaultTarget && pxWsDefaultTarget->IsValid()
 py_generic_services
-q(u*H
-q(x:Hc
+q(u H
 q.IsValid()
-q8u,H
 qAdjust
 qS>g?h3
 qValue.IsValid()
@@ -17135,6 +17995,7 @@ s L9d$@t
 s WATAUAVAWH
 s"fff
 s%fff
+s(9s8|=H
 s.HcE
 s0H9s
 s2 >= 0.0f && s2 <= 1.0f
@@ -17183,9 +18044,10 @@ snan)
 softcontactdampingratio
 softcontactfrequency
 solidCollisionAtZeroWeight
+sortedIndexValuePairs[i].m_value <= sortedIndexValuePairs[i + 1].m_value
 sound_base
 soundevent
-source.m_pSkeleton == m_pSkeleton && m_weights.size() == source.m_weights.size() && flBlendWeight >= 0.0f && flBlendWeight <= 1.0f
+source.m_pSkeleton == m_pSkeleton && m_weights.Count() == source.m_weights.Count() && flBlendWeight >= 0.0f && flBlendWeight <= 1.0f
 sourceTaskIdx != -1
 source_code_info
 source_file
@@ -17243,6 +18105,7 @@ t HcT
 t Lc7D;w
 t fff
 t!H9C
+t!HcA
 t!HcD
 t!L9{
 t"$`< u
@@ -17308,6 +18171,7 @@ t$(I;
 t$(L9o
 t$(Lc
 t$(fD
+t$09t$@|LH
 t$0@8
 t$0D;
 t$0E3
@@ -17325,6 +18189,7 @@ t$0fA
 t$0fD
 t$0fff
 t$0x,Hc
+t$89t$H|LH
 t$8;;
 t$8;Upr4I
 t$8@2
@@ -17355,7 +18220,6 @@ t$@Hk
 t$@L+
 t$@L9t$(t
 t$@L;
-t$@L;d$`
 t$@Lc
 t$@Lc1A+
 t$@Lc2A
@@ -17367,6 +18231,7 @@ t$@u1H
 t$@~ H
 t$@~#H
 t$H<`uUH
+t$HA:
 t$HA_A^A]A\_
 t$HE3
 t$HH+
@@ -17377,6 +18242,7 @@ t$HHc2H
 t$HLc
 t$HMc4$L
 t$HMk
+t$HcI
 t$HcL
 t$Hf9
 t$HfD
@@ -17384,6 +18250,7 @@ t$Hff
 t$Ht	H
 t$HxGH
 t$H~ H
+t$P9C
 t$P9E
 t$PA;
 t$PD8d76t
@@ -17399,6 +18266,7 @@ t$PHc1+
 t$PI9
 t$PI;
 t$PLc
+t$Pf;
 t$PfD
 t$Pfff
 t$P|SH
@@ -17435,15 +18303,14 @@ t$`L9t$ t
 t$`L;
 t$`fD9+t$I
 t$`u,
+t$`}[H
 t$b9G
 t$dL9b u
 t$hA;
 t$hE3
 t$hHc
 t$hfE;
-t$htK
 t$huY
-t$h}[H
 t$pA;
 t$pA;v
 t$pE3
@@ -17460,8 +18327,10 @@ t%fff
 t&A88t
 t&HcD
 t'<Zt
-t'HcT
 t'HcW
+t(HcE(D
+t(HcT
+t(IcF(D
 t)HcT(
 t)IcV
 t*HcA
@@ -17478,6 +18347,8 @@ t-Lck
 t-fff
 t.fff
 t00JcD0(Lk
+t1H9;t,H
+t1H9;t,I
 t4I92u/M
 t5JcT(
 t6HcApE3
@@ -17506,7 +18377,6 @@ tJHcGpE3
 tKHcL
 tLLcx|M
 tMI92uHM
-tQA;~
 tQfD9 tK
 tR@8:tM3
 tRD8}
@@ -17576,12 +18446,14 @@ timeStep >= 0.f
 timed out
 tjIc>
 tk@8:tf3
+tmA:E
 tmFrame2
 tmpWeights[nChannel][nIndex] == -1.0f
 tnLc6Lc?A
 tnMc>Lc&A
 tnMc>Lc'A
 to constrain
+toMc>Hc7A
 toTime >= 0.0f && toTime <= 1.0f
 token[0] == '\0' || !V_isalpha_str_fast( token )
 token[0] == '\0' || !V_isdigit_str( token )
@@ -17601,15 +18473,14 @@ trfff
 tried to restore a CRelativeOffsetArray, but the number of elements did not match
 try_get_function
 try_get_module
-tsMc>Hc7A
 tsfff
 ttHc+Lc?
 ttHcK0H
-ttMc<$Lc3A
 turn_rate
 tvLc6Lc?A
 twHc3;s
 twIcF
+twMc<$Lc3A
 txHc3;s
 txLc6L
 txLc>Lc#A
@@ -17623,6 +18494,7 @@ tzL97u
 t|H9;uwD
 t~Ic/Mc&
 u	A9)
+u	fA;
 u 9k(u
 u H9P r
 u H;t
@@ -17638,6 +18510,7 @@ u(#T$(u
 u,!T$(H!T$ 
 u,B	<
 u-H;A
+u.@8}`tcI
 u.H;A
 u.H;P
 u0H9t$pt
@@ -17664,6 +18537,8 @@ ubf9P
 uchar32
 udfff
 ueD8a
+ugfff
+uhfE;
 uint16
 uint32
 uint64
@@ -17682,6 +18557,7 @@ updateValue.GetType() == m_pParamSettings->GetParameterType()
 use_layer_sequence
 uuHcK
 uzKs@>
+v B9<6|
 v I9?u@A
 v&HcH
 v0Hc>D
@@ -17707,6 +18583,7 @@ vKfffff
 vLookTarget
 vMoveDir.IsValid() && VectorIsNormalized( vMoveDir )
 vNormalWS.IsValid()
+vOYQy
 vOffset
 vPosWS.IsValid()
 vPosition.IsValid()
@@ -17758,6 +18635,7 @@ vseqL
 v}`[>
 w H;s t/H
 w HcG8
+w |AH
 w(H;s(t/H
 w.num_cols() == nSampleCount
 w.num_rows() == nSampleCount
@@ -17800,9 +18678,9 @@ x';Ch}"H
 x';F(}"H
 x(;UX}#H
 x*;AX}%L
-x+Lcx 
 x,A;Fp}&I
 x/;F(}*H
+x0;==Ni
 x0H+x
 x3A;Y
 x5D;AX}/H
@@ -17834,6 +18712,7 @@ xJ;Kh}E
 xLocalToWorld.IsValid()
 xM;8}IH
 xMA;F
+xNA;|$
 xQD;AH}KH
 xSD;*}NIc
 xVA;Hh}PA
@@ -17860,7 +18739,6 @@ x{A;Fx}uI
 x|A;Fx}v
 x};Cx}xH
 y(HcA H
-y8u,H
 y9WuL
 yPHcAHH
 y\PD>!
@@ -17874,14 +18752,18 @@ zero dir
 { AUAVAWH
 { AVH
 { H9;t	H
+{(9s |AH
 {,D+{HD+
 {09k(|AH
+{09s(|AH
 {0x%x}
 {89{D
+{8HcK
 {@9s8|AH
 {@H9;t	H
 {@L99t
 {PLc'M
+{X9sP|AH
 {`HcCXH
 {dHcv`
 {hH9{PH
@@ -17890,6 +18772,7 @@ zero dir
 {un'%
 {xH9{PH
 |#tAM
+|$ 9|$0|LH
 |$ A;
 |$ ATAVAWH
 |$ AUAVAWH
@@ -17919,6 +18802,7 @@ zero dir
 |$ fD;fXt
 |$ t	H
 |$ teH;
+|$ }[H
 |$ ~(H
 |$$H99tAA
 |$$H9y
@@ -17931,6 +18815,7 @@ zero dir
 |$(ff
 |$(t	H
 |$0 |
+|$09|$@|HH
 |$0;k0
 |$0D8a
 |$0E3
@@ -17943,6 +18828,7 @@ zero dir
 |$0t	H
 |$0tjL
 |$0uE
+|$8A;4$
 |$8E3
 |$8H9Cxt;A
 |$8H9|$ t
@@ -17965,6 +18851,7 @@ zero dir
 |$@Hc
 |$@Hc>
 |$@Hc}
+|$@I;
 |$@Ic>
 |$@Ik
 |$@L9
@@ -18005,17 +18892,21 @@ zero dir
 |$PMc>A
 |$PMc>A+
 |$Pu!H
+|$P}[H
 |$P~ H
 |$P~(H
+|$XA;
 |$XD;wH
+|$XH;
+|$XH;}
 |$XHc
-|$XHcD$PL
 |$XHcU
 |$XIc>
 |$XL+
 |$XLk
 |$XM+
 |$XfE
+|$X~6
 |$`	u9H
 |$`	u:H
 |$`9w
@@ -18032,7 +18923,7 @@ zero dir
 |$`Hc
 |$`Hi
 |$`fD
-|$`}[H
+|$`fD;
 |$`~ H
 |$hE3
 |$hH;
@@ -18044,6 +18935,7 @@ zero dir
 |$pH;
 |$pI;
 |$pIk
+|$pt2
 |$pt4
 |$pt?
 |$pt`H
@@ -18051,7 +18943,6 @@ zero dir
 |$xA9_
 |$xD;wH
 |$xE3
-|$xH;
 |$xH;T$0t
 |$xHc
 |$xI;
@@ -18075,6 +18966,7 @@ zero dir
 }&fff
 }'HcC
 }'fff
+}(;=INi
 }(H;{(t-H
 }(IcE H
 });C$
@@ -18089,7 +18981,9 @@ zero dir
 }>;_$
 }@H;{@t-H
 }@HcE8H
+}E4IF
 }EHcG
+}Hu*H
 }LuHO
 }PHcEHH
 }PIcEHL
@@ -18102,15 +18996,17 @@ zero dir
 ~ 	uIH
 ~ $s%r
 ~ H;{xt,H
+~ HcF
 ~ HcF8
 ~&fff
-~'fE9f2~
 ~,*u<I
 ~,A;D$,um3
 ~3fff
 ~8IcF0H
+~:fff
 ~;fff
 ~@fff
+~D$@f
 ~D$HA
 ~D$HI
 ~D$TH
@@ -18122,3 +19018,4 @@ zero dir
 ~PH;{Pt'H
 ~qj#k"
 ~t&LN
+~uLcK

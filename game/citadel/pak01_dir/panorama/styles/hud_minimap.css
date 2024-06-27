@@ -127,25 +127,36 @@
 
 .map_button.idol_spawn
 {
-	background-image: url("s2r://panorama/images/minimap/gold_crate_marker_psd.vtex");
+	background-image: url("s2r://panorama/images/minimap/soul_jar_marker_psd.vtex");
 	background-size: 150% 150%;
 	background-position: 50% 50%;
-	wash-color: gold;
+	wash-color: #70F8C1;
 }
 
 .map_button.gold_spawn
 {
-	width: 3.5%;
-	height: 3.5%;
+	width: 3%;
+	height: 3%;
 	background-image: url("s2r://panorama/images/hud/icons/icon_unsecured_png.vtex");
 	background-size: 100% 100%;
 	background-position: 50% 50%;
 	wash-color: rgb(130, 255, 249);
 }
 
+.map_button.powerup_spawn
+{
+	width: 20px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/minimap/gold_crate_marker_psd.vtex");
+	background-size: 100% 100%;
+	background-position: center;
+	opacity: 0.9;
+}
+
 .map_button.idol_dropping
 {
-	background-image: url("s2r://panorama/images/minimap/gold_crate_marker_psd.vtex");
+	background-image: url("s2r://panorama/images/minimap/soul_jar_marker_psd.vtex");
 	background-size: 150% 150%;
 	background-position: 50% 50%;
 	wash-color: grey;
@@ -531,7 +542,7 @@
 	z-index: 99;
 	background-size: 125% 125%;
 	background-position: 0% 0%;
-	background-image: url("s2r://panorama/images/minimap/gold_crate_marker_psd.vtex");
+	background-image: url("s2r://panorama/images/minimap/soul_jar_marker_psd.vtex");
 	visibility: collapse;
 }
 

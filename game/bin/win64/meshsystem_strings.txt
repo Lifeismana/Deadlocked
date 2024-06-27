@@ -26,19 +26,19 @@
  9D: 
  A\_[
  A\_^
+ A]A\_^[
  A]_^][
  A^A\^
  A^A\_^]
  A^A]A\_^
  A^A]_
- A^A]_^]
  A^][
+ A^^]
  A^_]
  A^_^
+ A^_^][
  A_A\_
- A_A\_^[
  A_A\_^]
- A_A]_^[
  A_A^A\
  A_A^A\_[
  A_A^A\_]
@@ -469,7 +469,6 @@ $+T$xL
 .xdata
 .xdata$x
 .{I_i
-/	V_logf
 />58d%
 /D$Ps
 /D$Ts
@@ -506,6 +505,7 @@ $+T$xL
 0iN>/
 0w0c1
 0}0i1
+1	V_logf
 130801120000Z
 1<.	/>:
 2	0!&
@@ -514,7 +514,7 @@ $+T$xL
 220323000000Z
 220801000000Z
 230714000000Z
-240620161246Z0/
+240627200551Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -566,6 +566,7 @@ $+T$xL
 98t H
 99~CE
 9>~ZH
+9D$ t
 9HcC0L
 9W4~IH
 9_H~-
@@ -584,7 +585,6 @@ $+T$xL
 9|$hu
 :!L$ 0
 :!|$ 0E
-;	V_powf
 ;?0123456789:;<=>?
 ;H9>&X
 ;I9}(tiH
@@ -605,7 +605,7 @@ $+T$xL
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=	V_qsort_s
+=	V_powf
 =%H5<mN
 =3vmdlkeys4
 ==MQ?
@@ -620,6 +620,7 @@ $+T$xL
 >c;j1
 >fA9~
 >jtm}S
+?	V_qsort_s
 ?7zQ6$
 ?:kP<
 ??0CTSListBase@@QEAA@XZ
@@ -728,7 +729,6 @@ $+T$xL
 @A^_^
 @A^_^][
 @A_A\]
-@A_A\_^[
 @A_A\_^]
 @A_A^A\
 @A_A^A\^]
@@ -752,8 +752,8 @@ $+T$xL
 @SUATAWH
 @SUAVH
 @SUAWH
-@SUVWATAUAVAWH
 @SUVWATAVAWH
+@SUVWAUAVAWH
 @SUVWAUAVH
 @SUVWAUH
 @SUVWAVAWH
@@ -762,7 +762,7 @@ $+T$xL
 @SUWH
 @SVATAUH
 @SVWATAUAVAWH
-@SVWATAWH
+@SVWATAUH
 @SVWAUAWH
 @SVWH
 @SWATAVAWH
@@ -783,7 +783,7 @@ $+T$xL
 @USVWATAUAVAWH
 @USVWATAUAVH
 @USVWATAVAWH
-@USVWAUAWH
+@USVWAUAVAWH
 @USWAWH
 @UVATH
 @UVAVH
@@ -867,6 +867,7 @@ A_A^A]A\_^[
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]^]
+A_A^A]_^
 A_A^A]_^[]
 A_A^[
 A_A^]
@@ -985,7 +986,7 @@ BenchmarkService001
 BinaryProperties_GetValue
 BoneConstraintList
 Browse to the corresponding model in asset browser, right click and select Full Recompile.
-C H!o
+C I!.H
 C$z!u
 C(H9,
 C(L9{0t	H
@@ -1293,12 +1294,12 @@ CMeshInstance_Imp::DestroyOwnedVBAndIB
 CMeshRayTrace::GetMeshTraceData
 CMeshSystem::CreateProjectedDecal
 CMeshSystem::CreateSceneObjectForDecal
-CMeshSystem::CreateSceneObjectForDecal(1347): 
+CMeshSystem::CreateSceneObjectForDecal(1379): 
 CMeshSystem::DeleteSceneWorldInfo
 CMeshSystem::DestroyProjectedDecal
 CMeshSystem::DestroyProjectedDecals
 CMeshSystem::FindAllMeshInstancesWithMesh
-CMeshSystem::GetDecalIB(1600): 
+CMeshSystem::GetDecalIB(1632): 
 CMeshSystem::LoadModelSyncNoExtrefs
 CMeshSystem::RemoveDecalDrawDataRefCounted::<lambda_1>::operator ()
 CMeshSystem::SetLegacyModelLoadEventHandler
@@ -1381,6 +1382,7 @@ CModelSkeletonSorter::ReorderArray
 CModelTypeManager::AllocateResource
 CModelTypeManager::FinalizeResource
 CModelTypeManager::GetErrorResource(169): GetErrorModel() called before error model exists!
+CModelTypeManager::OnReallocateTypesafe
 CModel_Imp::AddEmbeddedAnimData
 CModel_Imp::AddEmbeddedPhysData
 CModel_Imp::InitEmbeddedData
@@ -1442,8 +1444,6 @@ CPointConstraint
 CPointConstraint::KV3TransferLoad_Impl
 CPointConstraint::KV3Transfer_DefaultKeys_Impl
 CPointConstraint::Schema_VerifyBindingIsRegistered
-CPuUH
-CPuWH
 CRC32_ProcessBuffer
 CRenderBufferBinding
 CRenderBufferBinding::KV3TransferLoad_Impl
@@ -2063,13 +2063,9 @@ D$ ta
 D$(D9
 D$(E3
 D$(H;
-D$(HH
 D$(I;
-D$(XH
 D$(fI
-D$(hH
 D$(v=E
-D$(xH
 D$.H;
 D$0	!O3L
 D$0"K
@@ -2087,6 +2083,7 @@ D$0H.
 D$0H;
 D$0HcH
 D$0K f
+D$0L#
 D$0M;
 D$0Qx;
 D$0^"
@@ -2132,9 +2129,7 @@ D$dHc
 D$hH;
 D$pH;
 D$pHc
-D$pL#
 D$pL;
-D$pMc
 D$xH;
 D$xHcU
 D$|E3
@@ -2153,6 +2148,7 @@ D8t$ht
 D9 ;E
 D9/~%H
 D9/~4fff
+D97|(
 D9;t2
 D9AHH
 D9aPuK
@@ -2192,7 +2188,6 @@ Double add of KV3Transfer interface '%s'
 Double-save to Member '%s'
 DrawIndexedTriangles
 DrawIndexedTriangles(145): 
-DyB7||
 DynamicMeshDeformParams_t
 DynamicMeshDeformParams_t::KV3TransferLoad_Impl
 DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
@@ -2429,7 +2424,6 @@ Found existing value when inserting into tree - replacing existing value with ne
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
-G	V_sincosf
 G$L9t$ t
 G(+G$
 G0H9C0u3
@@ -2520,18 +2514,18 @@ H+\$H
 H-^Eu
 H9(tO
 H9+t	H
-H9-	-
-H9-".
-H9-/K
-H9-6E
-H9-@-
-H9-FJ
-H9-dI
+H9-	=
+H9-">
+H9-/V
+H9-6P
+H9-@=
+H9-FU
+H9-dT
 H93t	H
-H95G 
+H95G$
+H95g#
 H97u+A
 H98t2
-H98t7
 H9D$pt
 H9\$`u	H
 H9k H
@@ -2565,7 +2559,6 @@ H=vmatu	A
 H=vmdl
 HA_A^A]A\_^[]
 HA_A^A]A\_^][
-HA_A^_^][
 HA__[]
 HELPER_BONE
 HH:mm:ss
@@ -2629,7 +2622,7 @@ Hc{PD
 Hc{p;
 HelpSystem_001
 HostStateMgr001
-I	V_sinf
+I	V_sincosf
 I+4$H
 I9.t	I
 I9|6 t
@@ -2670,7 +2663,7 @@ If intended, call ClearSpecificType first to discard the old value.%s
 If intended, call SetToNull() first to discard the old value.%s
 IfA9,
 IfA9l
-IfD9d
+IfD9D
 IfE9d
 IfE9|
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
@@ -2802,6 +2795,7 @@ IsValid()
 IsValidCodePage
 IsValidHandle( handle )
 IsValidIndex(i) && (i != InvalidIndex())
+J	\0(L
 J>@G_
 JHA;T	
 JIGGLE_BONE
@@ -2809,6 +2803,7 @@ JOINT_FLAGS_BODY1_FIXED
 JOINT_FLAGS_NONE
 JOINT_FLAGS_USE_BLOCK_SOLVER
 January
+K	V_sinf
 K&>.yC
 K0HcQ
 K9l> t
@@ -2857,7 +2852,6 @@ KeyValues3::SetMemberFloatArray
 KeyValues3::TransferOwnershipOfBinaryBlob
 K}*n:	
 K~Je#>!
-L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ E3
@@ -2869,16 +2863,15 @@ L$ I#
 L$ I;
 L$ L;
 L$ SH
+L$ SUVWAVH
 L$ SVWH
 L$ SWH
 L$ USWH
 L$ UVATAVAWH
 L$ UVWAVAWH
-L$ VH
 L$ VWATAUAVAW
 L$ VWAVH
 L$ WH
-L$ f9<
 L$ fff
 L$ |+L;
 L$&8\$&t,8Y
@@ -2893,8 +2886,10 @@ L$0H;
 L$0H;M0
 L$0HcGlH
 L$0Hct$ H
+L$0Hk
 L$0I+
 L$0fA
+L$0fD
 L$8E3
 L$8H3
 L$8fA
@@ -2916,16 +2911,11 @@ L8,HcM
 L8DE3
 L9!t~
 L9#u/H
-L9-)-
-L9-D-
-L9-W,
-L95	}
-L95'|
-L95){
-L95.\
-L95Gz
-L95I\
-L95g[
+L95>&
+L95Y&
+L95w%
+L9=^7
+L9=y7
 L9?t	H
 L9d$ t
 L9d$(t
@@ -2963,16 +2953,17 @@ LcK8H
 LcK@H
 LcKHH
 LcKpH
+LcL$$L
 LcL$0H
 LcL$hH
 LcT$dA
 Lcc0Mcn`A
+LccxE
 LccxL
 LccxM
 LcpPE
 Lcs8H
 Lcs`D;sp
-Lc{xE
 Lc|$ L
 Lc|$X
 Lc|$pD
@@ -3097,6 +3088,7 @@ Multiple normals in the input layout
 Multiple tangents in the input layout
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 Mw;Mo
+N	V_snprintf
 NULL RenderMesh with valid handle
 NavGameTest001
 NavSystem001
@@ -3130,9 +3122,12 @@ PA^A]_[]
 PA^^]
 PA^_]
 PA^_^
+PA^_^][
 PA_A\_^]
 PA_A]A\^[
+PA_A^A\_^][
 PA_A^A]A\_^]
+PA_A^A]_^][
 PA_A^_
 PA_A^_^]
 PAq=?Mp#
@@ -3195,7 +3190,6 @@ Quaternion
 QuaternionAverageExponential
 QuaternionStorage
 QueryPerformanceCounter
-R	V_sscanf
 R.num_cols() == nSampleCount
 R.num_rows() == nSampleCount
 R10G10B10A2_TYPELESS
@@ -3502,6 +3496,7 @@ StatsService_001
 SteamAudio001
 Sunday
 SurfacePropertiesList
+T	V_sscanf
 T$ E3
 T$ H+
 T$ H;
@@ -3511,18 +3506,13 @@ T$(E3
 T$0E3
 T$0Li
 T$8H;T$@
-T$8Hc
-T$@H;
-T$@fD
 T$HD;k
-T$HfD
 T$HvD
 T$PE3
 T$XE3
 T$XM;
 T$`Hc
 T$hE3
-T$xfD
 TILT_TWIST
 TNT::Matrix<float>::initialize
 TNT::Vector<float>::initialize
@@ -3553,7 +3543,6 @@ Tried to load resource reference '%s' from a value without a resource reference 
 Trying to cast '%s' to a different resource type!
 Trying to override a material with an invalid draw call index
 Trying to override the same draw call with two different materials!
-TtfAg
 Tuesday
 TypeManager
 UATAUAVAWH
@@ -3728,7 +3717,6 @@ VertexPaintTintColor
 VeryFast
 VisBuilder_001
 Vrad3_001
-W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -3755,10 +3743,10 @@ XA]A\
 XA_A^A]A\_^[]
 XA_A^_^][
 XA__[]
-XHcA0E3
 Xt7HH
-Y	V_strlower_fast
+Y	V_stricmp_fast
 Y9"SD
+YFhEZ
 YK @8op
 YL$(A
 YL$LA
@@ -3766,6 +3754,7 @@ Y\$,A
 Yd$$A
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 ZdN=Y
+[	V_strlower_fast
 [K]taM?
 [fA9<
 [fE94
@@ -3774,9 +3763,9 @@ ZdN=Y
 \$ AVH
 \$ UAVAWH
 \$ UH
+\$ UVAVH
 \$ UVWATAUAVAWH
 \$ UVWATAWH
-\$ UVWAUAVH
 \$ UVWAVAWH
 \$ UVWH
 \$ UWATAVAWH
@@ -3803,15 +3792,14 @@ ZdN=Y
 \$8I;
 \$@E3
 \$@H;
+\$@Hc
 \$@fE;
 \$DE3
 \$HfA
 \$PA+
 \$PA9^
 \$pfA
-\$xD9e`t
 \$xtRI
-\8 JcD8
 ]0tTH
 ]J<0"0i3
 ]xLcc
@@ -3849,8 +3837,10 @@ _gUT^
 `A_A^A\_^][
 `A_A^A]A\_
 `A_A^A]A\_^]
+`A_A^]
 `A_A^_^]
 `Hc9L
+`HcA0L
 `RTTI
 `anonymous namespace'
 `copy constructor closure'
@@ -3914,6 +3904,7 @@ b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b+GnH
 bAllocationCanFit
 bDidInsert
+bInserted
 bLegalTypeChange
 bOwnVBAndIB == m_bOwnVBAndIB && m_pFixedMeshDataOverride
 bReady == IsReadyToCompactResult_t::IS_READY
@@ -3970,15 +3961,17 @@ d$(fI
 d$0E3
 d$8Hc
 d$8Hcw
-d$HLc
+d$8x+Hc
 d$HvJE3
 d$PA;
+d$PE3
 d$PI9
 d$PMc
 d$PfE
 d$XIc
 d$`LccPL
 d$`fD
+d$`tLA
 d$dD;d$ltY
 data_block
 dddd, MMMM dd, yyyy
@@ -3996,7 +3989,6 @@ e A_A^A]A\_^]
 e0A_A^A]A\]
 e8A_A^A]A\_^[]
 e8Lc7A+
-e9G&\
 e@A_A^A]A\_^]
 eCount
 eFast
@@ -4091,14 +4083,15 @@ g_pAnimationSystem
 g_pResourceHandleUtils
 g_pResourceSystem
 g_pThreadPool->YieldWait( &m_jobsFinishedEvent, TT_INFINITE, m_bUseCachedWaitSet ? &m_pCachedWaitSet : nullptr )
+g_pVPhysics2
 generic
 gfffG
 gfffffffH
 group_data_block
 h F9d5P~.H
 hA_A^A]A\_^[]
+hA_A^_^][
 hCompact
-hO~9F
 health
 hidden
 host unreachable
@@ -4128,7 +4121,7 @@ invalid_parameter
 io error
 is a directory
 jj@0HK4
-k VWATAVAWH
+k VWAUAVAWH
 k0i0$
 k@H9k(H
 kE_PL
@@ -4141,8 +4134,10 @@ l$ Hc
 l$ HcA
 l$ Lci
 l$ VATAVH
+l$ VH
 l$ VWATAUAVH
 l$ VWATAVAWH
+l$ VWAUAVAWH
 l$ VWAVH
 l$ WATAUAVAWH
 l$ WH
@@ -4158,10 +4153,11 @@ l$(fD
 l$0E2
 l$0E3
 l$0Hc
-l$0Hc-
+l$0Hc-Zf
 l$0Hck
 l$0Jc
 l$0Lc)
+l$0u!H
 l$0u"I
 l$0|LH
 l$8Hc
@@ -4173,14 +4169,14 @@ l$HA_A^A]A\_^
 l$HE3
 l$HHc
 l$HHk
+l$Hf90t
 l$PA;
 l$XD+
 l$XH9
 l$XI9
 l$XI;
-l$Xf97t
-l$XfA
 l$`E3
+l$`I;
 l$hff
 l$pE3
 l2|X/gGe
@@ -4919,6 +4915,7 @@ motiondisabled
 multiplayer_break
 mwtMH
 n < m_Vector.Count()
+n I9.t	I
 n03>Pu
 n<	fE
 n<	fG
@@ -5047,11 +5044,13 @@ p*W4H
 p0R^G'
 p7M}f
 p;Y>u
+pA\^]H
 pA]][
 pA_A]A\][
 pA_A^A\_^[]
 pA_A^A]A\_^[
 pA_A^A]A\_^]
+pA_A^]
 pAssociateContext
 pAsyncResults != nullptr
 pBlockInfo->m_nBlockSize == 0
@@ -5124,7 +5123,6 @@ qAdjust
 qangle
 quaternion
 r	Vr.>T
-rJ{5w
 r_NE3
 ragdoll
 range check failure
@@ -5169,6 +5167,7 @@ surfacePropertyName
 t	D89
 t fff
 t$ AVH
+t$ AVL
 t$ AWH
 t$ E3
 t$ H9t$Xt
@@ -5189,6 +5188,7 @@ t$ WAVAWH
 t$ WH
 t$ fE;
 t$ fff
+t$(A^
 t$(E3
 t$(L9o
 t$(Lc
@@ -5218,13 +5218,12 @@ t$8fD9uBt
 t$8~ H
 t$@9i ~7H
 t$@9w
-t$@;i
 t$@E3
 t$@Hc
-t$@Hk
 t$@Ic
 t$@L9t$(t
 t$@Lc
+t$@Lc1D;q
 t$@fD;
 t$@x*H
 t$@}#Hc
@@ -5233,6 +5232,7 @@ t$HE3
 t$HHc
 t$HHk
 t$HI;
+t$HcI
 t$H~ H
 t$PH9t$@t
 t$PHcn0Mc~0
@@ -5246,10 +5246,9 @@ t$XM+
 t$`H9
 t$`I9
 t$`L#
-t$htK
+t$`}[H
 t$hu7H
-t$h}[H
-t$pIc
+t$pHc
 t$xIcG0A
 t$xL9t$pt
 t'HcW
@@ -5260,11 +5259,9 @@ t00JcD0(Lk
 t6fE94
 t7HcP
 t;Hc^0H
-t;fD9&t#
 t?HcS
 tEHcR
 tELcp
-tEf95'S
 tHfD95
 tILcu
 tPLc}
@@ -5316,9 +5313,8 @@ u@fD9uB~
 uBL91t
 uDfD;
 uED8r(t
+uGf9y
 uJHcC\
-uNf9y
-u\f9y
 ubf9P
 uchar32
 ugA;v
@@ -5369,14 +5365,12 @@ vphysics2
 vs. codegen '
 vseqL
 vtexL
-w%fA;
 w.num_cols() == nSampleCount
 w.num_rows() == nSampleCount
 w1fA;
 w@H91t
 wXHcGPH
 wheeldrag
-wpIcGhH
 wrong protocol type
 wu%A;\$
 wwH9Q
@@ -5429,6 +5423,7 @@ z(u&A
 |$ UAUAWH
 |$ UAVAWH
 |$ UH
+|$ }[H
 |$$E3
 |$(A+
 |$(A^
@@ -5447,8 +5442,8 @@ z(u&A
 |$@E3
 |$@Hc
 |$@Hi
+|$@I;
 |$@t	H
-|$@x Hc
 |$@x)H
 |$@~ H
 |$HD;
@@ -5461,6 +5456,7 @@ z(u&A
 |$PL;
 |$PM;
 |$Pfff
+|$P}[H
 |$P~ H
 |$XA+
 |$XH3
@@ -5470,7 +5466,7 @@ z(u&A
 |$`E3
 |$`H9|$Ht
 |$`H;
-|$`}[H
+|$hH;
 |$hu1H
 |$pE;
 |$pIk
@@ -5482,6 +5478,7 @@ z(u&A
 |]A;N
 |b=})>
 |lHcC
+}$fA;P
 }'fff
 }>;_$
 }EHcG
@@ -5494,3 +5491,4 @@ z(u&A
 ~Nfff
 ~qj#k"
 ~t&LN
+~uLcK

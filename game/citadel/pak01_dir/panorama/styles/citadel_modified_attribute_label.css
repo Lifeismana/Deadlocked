@@ -224,7 +224,7 @@ CitadelTooltipModDetails #ImportantAttributeContainer .LabelsText
 	font-size: 22px;
 }
 
-.detail_view #ImportantStatsContainer .HasScalingStat #ModifiedLabel,.detail_view #ImportantStatsContainer .HasScalingStat #BaseLabel,.detail_view #ImportantStatsContainer .HasScalingStat #StatScalingLabel,.detail_view #ImportantStatsContainer .HasScalingStat #ValueFromModsLabel,.detail_view #ImportantAttributeContainer .HasScalingStat #ModifiedLabel,.detail_view #ImportantAttributeContainer .HasScalingStat #BaseLabel,.detail_view #ImportantAttributeContainer .HasScalingStat #StatScalingLabel,.detail_view #ImportantAttributeContainer .HasScalingStat #ValueFromModsLabel
+.gDetailView #ImportantStatsContainer .HasScalingStat #ModifiedLabel,.gDetailView #ImportantStatsContainer .HasScalingStat #BaseLabel,.gDetailView #ImportantStatsContainer .HasScalingStat #StatScalingLabel,.gDetailView #ImportantStatsContainer .HasScalingStat #ValueFromModsLabel,.gDetailView #ImportantAttributeContainer .HasScalingStat #ModifiedLabel,.gDetailView #ImportantAttributeContainer .HasScalingStat #BaseLabel,.gDetailView #ImportantAttributeContainer .HasScalingStat #StatScalingLabel,.gDetailView #ImportantAttributeContainer .HasScalingStat #ValueFromModsLabel
 {
 	font-size: 18px;
 }
@@ -251,14 +251,14 @@ CitadelTooltipModDetails #ImportantAttributeContainer .LabelsText
 	max-height: 35px;
 }
 
-.hero_stats .HasModifiedValue #BaseLabel,.detail_view .HasScalingStat .HasModifiedValue #BaseLabel
+.hero_stats .HasModifiedValue #BaseLabel,.gDetailView .HasScalingStat .HasModifiedValue #BaseLabel
 {
 	text-decoration: none;
 	color: white;
 	margin-right: 0px;
 }
 
-.detail_view .HasModifiedValue #BaseLabel,.detail_view .HasModifiedValue.isAbilityUpgradPreview #BaseLabel
+.gDetailView .HasModifiedValue #BaseLabel,.gDetailView .HasModifiedValue.isAbilityUpgradPreview #BaseLabel
 {
 	color: #ffffff40;
 	text-decoration: line-through;
@@ -278,27 +278,27 @@ CitadelTooltipModDetails #ImportantAttributeContainer .LabelsText
 	visibility: collapse;
 }
 
-.detail_view .TechMod #ModifiedLabel
+.gDetailView .TechMod #ModifiedLabel
 {
 	color: spiritBrightColor;
 }
 
-.detail_view .TechMod .prop_weapon_damage #ModifiedLabel
+.gDetailView .TechMod .prop_weapon_damage #ModifiedLabel
 {
 	color: spiritBrightColor;
 }
 
-.detail_view .WeaponMod #ModifiedLabel
+.gDetailView .WeaponMod #ModifiedLabel
 {
 	color: courageBrightColor;
 }
 
-.detail_view .WeaponMod .prop_tech_damage #ModifiedLabel
+.gDetailView .WeaponMod .prop_tech_damage #ModifiedLabel
 {
 	color: spiritBrightColor;
 }
 
-.detail_view .ArmorMod #ModifiedLabel
+.gDetailView .ArmorMod #ModifiedLabel
 {
 	color: fortitudeBrightColor;
 }
@@ -373,7 +373,7 @@ CitadelTooltipModDetails #ImportantAttributeContainer .LabelsText
 	pre-transform-rotate2d: 180deg;
 }
 
-#TierBonusValue.HasModifiedValue .GreenUpArrow,.isAbilityUpgradPreview .GreenUpArrow,.detail_view .GreenUpArrow,.detail_view .HasModifiedValue .GreenUpArrow,.hero_stats .HasModifiedValue .GreenUpArrow,.detail_view .HasScaledValue .GreenUpArrow,.upgradeBeingHovered .HasModifiedValue .GreenUpArrow
+#TierBonusValue.HasModifiedValue .GreenUpArrow,.isAbilityUpgradPreview .GreenUpArrow,.gDetailView .GreenUpArrow,.gDetailView .HasModifiedValue .GreenUpArrow,.hero_stats .HasModifiedValue .GreenUpArrow,.gDetailView .HasScaledValue .GreenUpArrow,.upgradeBeingHovered .HasModifiedValue .GreenUpArrow
 {
 	visibility: collapse;
 }
@@ -402,22 +402,22 @@ CitadelTooltipModDetails #ImportantAttributeContainer .LabelsText
 	visibility: visible;
 }
 
-.detail_view .hero_stats #AdditionLabel,.detail_view .hero_stats #ModifiedAdditionLabel
+.gDetailView .hero_stats #AdditionLabel,.gDetailView .hero_stats #ModifiedAdditionLabel
 {
 	visibility: collapse;
 }
 
-.hero_stats .HasModifiedValue #ModifiedLabel,.detail_view .HasScalingStat #ModifiedAdditionLabel,.detail_view .HasScalingStat #AdditionLabel
+.hero_stats .HasModifiedValue #ModifiedLabel,.gDetailView .HasScalingStat #ModifiedAdditionLabel,.gDetailView .HasScalingStat #AdditionLabel
 {
 	visibility: visible;
 }
 
-#ModifiedLabel,.detail_view .HasScalingStat #BaseLabel,#StatScalingLabel,.HasModifiedValue #BaseLabel,.HasScalingStat #BaseLabel,.isAbilityUpgradPreview #ModifiedLabel,#ValueFromModsLabel,.detail_view .HasScalingStat .HasModifiedValue #ModifiedLabel,.detail_view .HasScalingStat #ModifiedLabel,.detail_view .HasScalingStat .IsRoundingDown #ValueFromModsLabel,.detail_view .HasScalingStat .IsRoundingDown #AdditionLabel,.HideModsValue #ValueFromModsLabel,.detail_view .HasScalingStat.HideModsValue #ValueFromModsLabel,.detail_view .HideModsValue #ValueFromModsLabel,.HideModsValue #AdditionLabel,.detail_view .HasScalingStat.HideModsValue #AdditionLabel,.detail_view .HideModsValue #AdditionLabel
+#ModifiedLabel,.gDetailView .HasScalingStat #BaseLabel,#StatScalingLabel,.HasModifiedValue #BaseLabel,.HasScalingStat #BaseLabel,.isAbilityUpgradPreview #ModifiedLabel,#ValueFromModsLabel,.gDetailView .HasScalingStat .HasModifiedValue #ModifiedLabel,.gDetailView .HasScalingStat #ModifiedLabel,.gDetailView .HasScalingStat .IsRoundingDown #ValueFromModsLabel,.gDetailView .HasScalingStat .IsRoundingDown #AdditionLabel,.HideModsValue #ValueFromModsLabel,.gDetailView .HasScalingStat.HideModsValue #ValueFromModsLabel,.gDetailView .HideModsValue #ValueFromModsLabel,.HideModsValue #AdditionLabel,.gDetailView .HasScalingStat.HideModsValue #AdditionLabel,.gDetailView .HideModsValue #AdditionLabel
 {
 	visibility: collapse;
 }
 
-.HasModifiedValue #ModifiedLabel,.detail_view .HasModifiedValue #ModifiedLabel,.detail_view .HasScalingStat .isAbilityUpgradPreview.HasModifiedValue #ModifiedLabel,.detail_view .HasScalingStat .isAbilityUpgradPreview #ModifiedLabel,.HasScalingStat #ModifiedLabel,.detail_view .HasScalingStat #BaseLabel,.detail_view .HasScalingStat #StatScalingLabel,.detail_view .HasModifiedValue #BaseLabel,.detail_view .HasScalingStat #ValueFromModsLabel,.detail_view .HasScalingStat #ModifiedAdditionLabel,.detail_view .HasScalingStat #AdditionLabel
+.HasModifiedValue #ModifiedLabel,.gDetailView .HasModifiedValue #ModifiedLabel,.gDetailView .HasScalingStat .isAbilityUpgradPreview.HasModifiedValue #ModifiedLabel,.gDetailView .HasScalingStat .isAbilityUpgradPreview #ModifiedLabel,.HasScalingStat #ModifiedLabel,.gDetailView .HasScalingStat #BaseLabel,.gDetailView .HasScalingStat #StatScalingLabel,.gDetailView .HasModifiedValue #BaseLabel,.gDetailView .HasScalingStat #ValueFromModsLabel,.gDetailView .HasScalingStat #ModifiedAdditionLabel,.gDetailView .HasScalingStat #AdditionLabel
 {
 	visibility: visible;
 }

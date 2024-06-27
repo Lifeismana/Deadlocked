@@ -5,6 +5,7 @@
 	!s99
 	%.*s
 	%s at offset %d, 
+	V_fmodd
 	V_fmodf
 	V_fpclassifyd
 	V_fprintf
@@ -61,20 +62,20 @@
  <-- Retval '%s'
  ?InternalFieldCount@Object@v8@@QEBAHXZ
  A\_[
+ A]A\_^[
  A]^]
  A^A\_H
  A^A\_^]
  A^A]A\_^
  A^A]^][
  A^A]_
- A^A]_^]
  A^][
  A^^[
+ A^^]
  A^_^
  A_A\[
  A_A\_^]
  A_A]A\^]
- A_A]_^[
  A_A^A\
  A_A^A\_]
  A_A^A\_^
@@ -134,7 +135,6 @@
 !pOutStr->IsEmpty()
 "?IsExternal@Value@v8@@QEBA_NXZ
 "?IsFunction@Value@v8@@QEBA_NXZ
-"J5+'
 %?IsObject@Value@v8@@QEBA_NXZ
 %d %d %d
 %d %d %d %d
@@ -263,6 +263,7 @@
 ,?Message@TryCatch@v8@@QEBA?AV?$Local@VMessage@v8@@@2@XZ
 ,W5y+
 - Graph Def '
+-;V&KB
 -?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 -?NewFromUtf8Literal@String@v8@@CA?AV?$Local@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 -?NewInstance@ObjectTemplate@v8@@QEAA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
@@ -488,7 +489,6 @@
 0A_A^_^]
 0A__]
 0IcG(L
-0[(.V
 0iN>/
 0w0c1
 0}0i1
@@ -500,7 +500,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240620161234Z0/
+240627183140Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -565,7 +565,6 @@
 9|$hu
 9~0~@H
 : lexer error %d :
-;	V_powf
 ;.|@H
 ;G(uSL
 ;H9>&X
@@ -578,7 +577,7 @@
 <	u4H
 <	u\L
 < t=<	t9
-<&r)D
+<&r"D
 <(?Length@Array@v8@@QEBAIXZ
 <0:08
 <DOWN>
@@ -599,7 +598,7 @@
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=	V_qsort_s
+=	V_powf
 =-?New@Context@v8@@SA?AV?$Local@VContext@v8@@@2@PEAVIsolate@2@PEAVExtensionConfiguration@2@V?$MaybeLocal@VObjectTemplate@v8@@@2@V?$MaybeLocal@VValue@v8@@@2@UDeserializeInternalFieldsCallback@2@PEAVMicrotaskQueue@2@@Z
 =9?SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
 == PulseGraphDef ==
@@ -609,6 +608,7 @@
 >?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z
 >Mp$d
 >jtm}S
+?	V_qsort_s
 ?7zQ6$
 ?:kP<
 ??0CUtlBuffer@@QEAA@HHH@Z
@@ -705,6 +705,7 @@
 @?Uint32Value@Value@v8@@QEBA?AV?$Maybe@I@2@V?$Local@VContext@v8@@@2@@Z
 @A\][
 @A\^[
+@A]_[
 @A^A\_
 @A^A]A\_^
 @A^A]_
@@ -713,9 +714,7 @@
 @A^_]
 @A^_^
 @A^_^][
-@A_A\_^[
 @A_A\_^]
-@A_A]_^]
 @A_A^A\
 @A_A^A\_]
 @A_A^A\_^
@@ -758,9 +757,7 @@
 @SVAVH
 @SVWATAUAVAWH
 @SVWATAUH
-@SVWATAWH
 @SVWAUAVH
-@SVWAUAWH
 @SVWAUH
 @SVWAVAWH
 @SVWAWH
@@ -788,8 +785,8 @@
 @USWH
 @UVAWH
 @UVWATAUAVAWH
+@UVWATAWH
 @UVWAUAVH
-@UVWAUAWH
 @VATAWH
 @VAVAWH
 @VWATAUAWH
@@ -806,6 +803,7 @@
 @WAVAWH
 @XIcO(H
 @_RDATA
+@t5o]
 A default string (set)
 A testing-only domain that doesn't correspond to any in-engine use case.
 A testing-only domain that draws on a 2D canvas with a LOGO-like 'turtle' cursor.
@@ -845,9 +843,9 @@ A^A]A\
 A^A]A\^]
 A^A]A\_^[]
 A^A]^][
+A^A]_[]
 A^A]_^[]
 A^^[]
-A^_][
 A^_^[]
 A^_^]
 A_A\][
@@ -973,7 +971,7 @@ Black
 Bool( %s )
 Boolean
 C ;C$t
-C H!o
+C I!.H
 C-?New@External@v8@@SA?AV?$Local@VExternal@v8@@@2@PEAVIsolate@2@PEAX@Z
 C0Hc	H
 C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_firecursors_h_schema.sc.cc
@@ -1998,8 +1996,6 @@ Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of res
 Cursor[ ptr:%p | id:%d | graph:%p ]: Register observer:%d
 Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d
 Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d
-CvCMC
-D!?5U
 D!l$xA
 D$ -#
 D$ 2Q
@@ -2020,11 +2016,7 @@ D$ w
 D$(8B
 D$(E3
 D$(H;
-D$(HH
-D$(XH
 D$(fI
-D$(hH
-D$(xH
 D$0*2
 D$0+@8
 D$0-#
@@ -2051,6 +2043,7 @@ D$0S~*
 D$0WS
 D$0`I
 D$0cd
+D$0fD
 D$0fE
 D$0nm0
 D$0vpN	M
@@ -2091,7 +2084,6 @@ D$pL;
 D$xBE
 D+|$0fD;g
 D0?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
-D8$2u
 D81uUL9r
 D8<>u
 D8e@u
@@ -2102,9 +2094,10 @@ D9P$t
 D9Q$t
 D9fH|"H
 D9g8~6M
-D9m@t
 D9t$Pu
 D9y ~1H
+D;$(t
+D;,(t
 DATAH
 DIGIT
 DIV_FLOAT
@@ -2150,13 +2143,13 @@ Do not stop the current yielding node, but do not continue to the next node afte
 Domain: %s
 Double add of KV3Transfer interface '%s'
 Double-save to Member '%s'
+DqTTk
 E0HcH
 E0Lc`
 E8f;X
 E8q(u
 E9e u	H
 E9e ~GI
-EF)RO
 EH*?H
 EHHcI
 ENTITY_NAME
@@ -2351,8 +2344,6 @@ Func( %s )
 Function signature which has been replaced after compilation.
 Function signature which will be replaced after compilation.
 Functions not supported in this evaluator (%s)
-G	V_sincosf
-G ;G$t
 G fA;
 GD$(H
 GD$8H
@@ -2477,9 +2468,9 @@ Gt$HL
 G|$(H
 G|$8E3
 G|$8H
+G|$8M
 G|$HH
 G|$XA
-H	V_sind
 H!D$ I
 H!T$0D
 H#D$HH+
@@ -2490,7 +2481,6 @@ H9+t	H
 H9/t	H
 H97u+A
 H98t2
-H98t7
 H9>t	H
 H9A(u
 H9D$(t
@@ -2514,9 +2504,9 @@ HA]_^[
 HA^A]
 HA^^][
 HA_A^
-HA_A^_^][
 HA__^[
 HH:mm:ss
+HJ[xr
 HPulseGraphInstance::HPulseGraphInstance
 HYieldedCursor::Get
 HYieldedCursor::HYieldedCursor
@@ -2537,7 +2527,7 @@ HcAHL
 HcAPH
 HcApD;
 HcAxL
-HcB$;G
+HcB$A;C
 HcCxL
 HcD$0
 HcD$0D
@@ -2569,6 +2559,7 @@ HelpSystem_001
 Hook register '%s' invoked with invalid function as first paramter.
 Hook register '%s' invoked with unrecognized 'this' value.
 HostStateMgr001
+I	V_sincosf
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
 ID_CHAR
@@ -2587,7 +2578,6 @@ IResourceTypeManager::GetNonStreamingDataLoadSize
 IResourceTypeManager::IsStreamingDataAlreadyLoaded
 IResourceTypeManager::LoadStreamingData
 IS_TYPESAFE_INTEGER
-IXfff
 Ic/Hc
 IcG8E3
 Ic] A
@@ -2742,6 +2732,7 @@ IsValid()
 IsValidCodePage
 IsValidIndex( i )
 IsWaitingOnAutoWake( pCursor )
+J	V_sind
 J>@G_
 JUMP_COND
 January
@@ -2809,7 +2800,6 @@ Kill elegantly.
 Kill immediately.
 K}*n:	
 K~Je#>!
-L	V_snprintf
 L!|$(L!
 L$ E3
 L$ H;
@@ -2818,6 +2808,7 @@ L$ I;
 L$ L;
 L$ SH
 L$ SUVWAVAWH
+L$ SUVWAVH
 L$ SVWH
 L$ SW
 L$ SWH
@@ -2863,11 +2854,11 @@ L93t	H
 L9;t	H
 L9d$ t
 L9d$(t
-L9d$0
 L9d$0t
 L9e0t
 L9e8t
 L9eot
+L9t$ 
 L9t$(t
 L9t$`t
 L9t$ht
@@ -3031,6 +3022,7 @@ Msg invoked with unrecognized 'this' value.
 Mul R%d <- R%d * R%d
 MultiByteToWideChar
 Must call SetMetadataEnabled on the root KV3 context to track metadata
+N	V_snprintf
 NEGATE
 NEGATE_FLOAT
 NEGATE_INT
@@ -3096,17 +3088,18 @@ Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
 P 9_h
-P0m!3OM
 P;l$h
 PANEL_ID
 PA^A]A\_^[]
 PA^_[
 PA^_]
 PA^_^
+PA^_^][
 PA_A^A\
 PA_A^A]A\_^]
 PA_A^_
 PA_A^_^[
+PA_A^_^]
 PAq=?Mp#
 PGDInstruction_t
 PGDInstruction_t::KV3TransferLoad_Impl
@@ -3244,6 +3237,7 @@ PublicMethod '%s' defined with invalid function as second paramter.
 PublicMethod invoked with unrecognized 'this' value.
 PublicMethod requires two arguments, (string, function).
 Pulse
+Pulse cursor in '%s' exceeded %d instructions, terminating!
 Pulse test failure: %s
 PulseCursorCancelPriority_t
 PulseCursorExecResult_t
@@ -3319,7 +3313,6 @@ PulseValueTypeInfo_t<16>::KV3TransferSaveInstance::<lambda_2>::operator ()
 PulseValueType_t
 PulseWarningLog 
 Pz}b!
-Qn\5Z
 QueryPerformanceCounter
 QxH9\$ u
 R%d->%s
@@ -3330,7 +3323,6 @@ REQUIREMENT_RESULT
 RESOURCE_TYPE_PULSE_GRAPH_DEF
 RETURN_VALUE
 RETURN_VOID
-RZ9-2v@9
 Raise pen.
 RaiseException
 Random Integer
@@ -3404,9 +3396,9 @@ SUVWATAUAVAWH
 SUVWATAVAWH
 SUVWAWH
 SUVWH
-SUWAVH
 SVATAUH
 SVWATAUAVAWH
+SWAUH
 SYNC_WAIT_FOR_COMPLETION
 Saturday
 Save a named value of any type on the cursor.
@@ -3664,6 +3656,7 @@ T$8Lc
 T$@E3
 T$HLc
 T$PE3
+T$PfD
 T$XHc
 T$`E3
 T$hE3
@@ -3735,6 +3728,7 @@ USVWAUAVH
 USVWAUAWH
 USVWAVH
 USWATAVH
+USWAUAVH
 USWAWH
 UUUUUU
 UUUUUUUUD
@@ -3793,6 +3787,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
+V#t@Z
 V6E>`"(5
 V8ToVariant
 VAVAWH
@@ -3859,7 +3854,6 @@ V_atof
 V_atofloat32
 V_atoi
 V_cosd
-V_fmodd
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -3874,7 +3868,6 @@ Vector2D
 Vector3
 VisBuilder_001
 Vrad3_001
-W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WATAUAVAWH
 WAUAVH
@@ -3895,7 +3888,9 @@ WriteConsoleW
 WriteFile
 X to the Y power
 XA]A\^[
+XA_A^_^][
 XHcGPM
+Y	V_stricmp_fast
 Y9"SD
 YXfff
 Yield, Resume=%s
@@ -3922,9 +3917,9 @@ Z!?IsArray@Value@v8@@QEBA_NXZ
 \$ UVATAUAVH
 \$ UVATAUAWH
 \$ UVAUH
+\$ UVAVH
 \$ UVWATAUAVAWH
 \$ UVWATAWH
-\$ UVWAUAVH
 \$ UVWAVAWH
 \$ UVWH
 \$ UWATAUAWH
@@ -3942,7 +3937,6 @@ Z!?IsArray@Value@v8@@QEBA_NXZ
 \$0eH
 \$0tEH
 \$0u&M
-\$0uJ
 \$8HcD$0H
 \$8I;
 \$@E3
@@ -3957,9 +3951,7 @@ Z!?IsArray@Value@v8@@QEBA_NXZ
 \$`E3
 \$hHc
 \$xu3M
-\;+c-
 \??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
-\Npz_
 \T$,t
 \T$<t
 \T$Dt
@@ -4113,7 +4105,6 @@ bp(=>?g
 broken pipe
 c [1>H'
 c(>\,
-c@D9g@t
 cached_fp == invalid_function_sentinel()
 cached_fp == new_fp
 cached_handle == ((HANDLE)(LONG_PTR)-1)
@@ -4138,6 +4129,7 @@ d$8L+
 d$PA;
 d$PI9
 d$XIc
+d$`tLA
 d$hL;
 d$xHc
 d-?New@ObjectTemplate@v8@@SA?AV?$Local@VObjectTemplate@v8@@@2@PEAVIsolate@2@V?$Local@VFunctionTemplate@v8@@@2@@Z
@@ -4281,6 +4273,7 @@ l$@D9
 l$@E3
 l$@Hc
 l$HA_A^A]A\_^
+l$PA;
 l$PHc+H
 l$PL;
 l$XA;
@@ -4289,7 +4282,9 @@ l$XI;
 l$XfA
 l$XuZH
 l$`I9
+l$`I;
 l$`ff
+l$hA;
 l$hff
 l$h~ H
 l$pE3
@@ -4648,6 +4643,7 @@ pA_A^A\_^[]
 pA_A^A]A\_^[
 pA_A^A]A\_^]
 pA_A^[
+pA_A^]
 pA_A^_^]
 pA__]
 pA__^][
@@ -4815,6 +4811,7 @@ string
 string_token
 subclass
 success
+t!HcA
 t$ AVH
 t$ AVL
 t$ AWD
@@ -4850,6 +4847,7 @@ t$8Hc
 t$8L+
 t$8~ H
 t$@A;
+t$@E3
 t$@Hc
 t$@t	I
 t$@u)
@@ -4871,10 +4869,9 @@ t$`H9
 t$`HcD$@M
 t$`L#
 t$`fD
+t$`}[H
 t$hE3
 t$hHcD$@M
-t$htK
-t$h}[H
 t$pA;
 t$pD;k
 t$pE3
@@ -4883,6 +4880,7 @@ t%HcB$A;B
 t&A88t
 t'fff
 t-Lck
+t1fff
 t7HcP
 t>@8:t9H
 tDfff
@@ -4940,6 +4938,7 @@ unknown event class: %s
 unspecified
 uofff
 upHcEhLk
+usfff
 uzKs@>
 v8.dll
 v8system
@@ -4971,6 +4970,7 @@ x AVH
 x AVHcA
 x D;Ah}
 x';Qh}"Hc
+x>`986%HSVa2
 xA^_[]
 xA^_^]
 xSE;H
@@ -4986,12 +4986,15 @@ y\PD>!
 |$ AVH
 |$ D!
 |$ E3
+|$ Hc
 |$ Lc
 |$ Lc?H
 |$ Lk
+|$ Mc
 |$ UATAUAVAWH
 |$ UAVAWH
 |$ UH
+|$ }[H
 |$(A;
 |$(A^
 |$(E3
@@ -5010,6 +5013,7 @@ y\PD>!
 |$@H9s
 |$@Hc
 |$@Hcy
+|$@I;
 |$@L;
 |$@t!H
 |$@t#
@@ -5020,13 +5024,14 @@ y\PD>!
 |$P9E
 |$P;k8
 |$PE3
+|$P}[H
 |$P~ H
 |$XHcD$PL
 |$XHcU
 |$Xu?A
 |$`HcE
-|$`}[H
 |$hE3
+|$hH;
 |$pH;
 |$pf9q"u
 |$pf9x
@@ -5037,13 +5042,12 @@ y\PD>!
 |b=})>
 }(fff
 });C$
-});G$
 }0Lc}(D;}8
 }>;_$
 }LuHO
 }afff
+}f^.O*
 }gA8_
 }xMc7E;w
-~@E9~
 ~qj#k"
 ~t&LN

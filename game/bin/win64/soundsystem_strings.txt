@@ -3,6 +3,7 @@
 			Sequence:	%s
 		%.*s
 		Instrument: %s
+		V_fread
 	 The lexer was matching from line %d, offset %d, which
 	 This indicates a poorly specified lexer RULE
 	 dspmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f
@@ -38,7 +39,6 @@
 	V_fmodf
 	V_fopen
 	V_fprintf
-	V_fread
 	V_frexpf
 	V_fseek
 	V_ftell
@@ -93,6 +93,7 @@
  A;v$|
  A\_[
  A\_^
+ A]A\_^[
  A]^]
  A]_^][
  A^A\^
@@ -116,8 +117,8 @@
  A_A\_^]
  A_A]A\^]
  A_A]A\_^
- A_A]_^[
  A_A^A\
+ A_A^A\H
  A_A^A\_^
  A_A^A\_^][
  A_A^A]
@@ -136,7 +137,6 @@
  A_A^_^]
  A_][
  A_][H
- A_^[
  A_^]H
  A__[
  A__^
@@ -152,8 +152,7 @@
  Hc)L
  Hc1H
  Hc1L
- Hc55
- Hc55%4
+ Hc5u
  Hc9H
  Hc9L
  HcA(E3
@@ -226,7 +225,6 @@
 !pVoice->m_pInstance
 !src.m_bCompleted
 !voice.m_bControlledByRecording
-!y].H
 "$&')*+,-.//123456779:;<=>??ABCDEFGG(
 "+=N]r
 "2CScs
@@ -343,11 +341,13 @@ $toolgraphs
 %s_random_min
 %s_random_variance
 %s_seek_speed_filter
+%t(v&
 &6EUdt
 &<~my
 &?PPPPPPP?
 &J;'@
 &YA1A
+&YA1D
 &YA1H
 &YA1I
 &YA1L
@@ -374,18 +374,15 @@ $toolgraphs
 ( nStart + 1 ) < m_nCount
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
-(%187
 (%2db) %6lli : %s
 (%d,%d)
 (%s) %d
 (%s:%s) 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-N77
 (8GXgw
 (92tSH
 (9:t:H
-(=#>7
 (?3s'?
 (A\_^[
 (A]^][
@@ -766,7 +763,6 @@ $toolgraphs
 )|$pH+
 )|$pL
 )|B?d!
-*	V_log10f
 ** %s -> %s
 **Cleanup resources**
 **unload**
@@ -795,6 +791,7 @@ $toolgraphs
 +h->|
 +o'q)}
 +w?FFv?
+,	V_log10f
 , at <EOF>
 , at offset %d
 , near %s
@@ -810,8 +807,8 @@ $toolgraphs
 ,B,fA
 ,HHcO
 ,HR>O
+,HcX 
 ,W5y+
-,YA1D
 ,YA1H
 ,YA1I
 ---empty---
@@ -847,6 +844,7 @@ $toolgraphs
 -windowsaudio
 ..om?
 .00cfg
+.5P;4
 .9GXdx
 .>PJ;I:qE>
 .?AUCAttr_m_bBassMono@?1??GetAttributeTable_Impl@VMixUtilityDesc_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -1585,8 +1583,14 @@ $toolgraphs
 .xJ>Hf
 .xdata
 .xdata$x
-/	V_logf
 /2GG>!B
+/50a-
+/56b-
+/5Ag-
+/5Fd-
+/5Gc-
+/5Le-
+/5[f-
 /9s(L
 /=LZjw
 />58d%
@@ -1608,17 +1612,13 @@ $toolgraphs
 /R?jjU?
 /V\r{
 /YA1H
-/YA1I
 /YA1L
 /s,s*H
-/t;Xs
 /uPrl
 /z(sC
 /z,s7
 /{hs"A
-/~(s	
-/~0s	
-/~4s 
+/~4s(A
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -1629,6 +1629,7 @@ $toolgraphs
 0.1 16000
 0><[cZUg^>
 0A;l$
+0A;~Pt
 0A\_^][
 0A]A\_
 0A]_^
@@ -1676,6 +1677,7 @@ $toolgraphs
 0|t?L
 0|t?uj
 0}0i1
+1	V_logf
 130801120000Z
 1:1: Tokens : ( T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
 1<.	/>:
@@ -1690,9 +1692,8 @@ $toolgraphs
 220323000000Z
 220801000000Z
 230714000000Z
-240620161419Z0/
+240627200552Z0/
 241009235959Z0a1
-2@8-J9?
 2C $ 2
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1777,7 +1778,6 @@ $toolgraphs
 8f;o(
 8ke?;
 8}WW`
-9	[]-
 9)~EH
 9)~P3
 9*t8H
@@ -1786,7 +1786,7 @@ $toolgraphs
 91~SL
 92t:H
 94(t*@8|( u#H
-95rgD
+95g19
 98t H
 99jd9
 99~QH
@@ -1831,6 +1831,7 @@ $toolgraphs
 9_p~C
 9i0~4H
 9k,uR
+9kp~/
 9n8tW
 9q$~SH
 9q(~FH
@@ -1868,7 +1869,6 @@ $toolgraphs
 9|$Pu
 9|$Xu
 9|$xu
-:	V_powd
 : %s::
 : lexer error %d :
 :!|$ 0
@@ -1880,21 +1880,20 @@ $toolgraphs
 :H?'mK?
 :YA1H
 :^V=/
-;	V_powf
-;-B>C
-;=a=C
+;5ZrB
 ;?%L+
 ;?Bh9?
 ;?uX;?
 ;C$uiH
+;E`s*D
+;Exs6D
 ;F,s#H
 ;F,s`H
 ;G(uSL
-;G`s*D
-;Gxs6D
 ;H9>&X
 ;HDt4
 ;I9}(tiH
+;Qt~	
 ;\$x|
 ;]8}{A9
 ;]Xs	
@@ -1902,10 +1901,11 @@ $toolgraphs
 ;nGVKUTS[BXIWH\KbHi:k6s4r7p8
 ;s0}p
 ;t$Lu
-;t$T|
+;t$X|
 ;wp}.H
 ;|$x|
-<	V_qsort
+<	V_powd
+<	t:<
 <	u%H
 <	u)Icn
 <	u2H
@@ -1917,7 +1917,6 @@ $toolgraphs
 <0:08
 <1Lcs
 <699v&
-<:tHC
 <>#n2
 <BHcO
 <DOWN>
@@ -1945,7 +1944,7 @@ $toolgraphs
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=	V_qsort_s
+=	V_powf
 =&~g>&"2?
 =YA1H
 =`#I>
@@ -1954,6 +1953,7 @@ $toolgraphs
 =imb;D
 =rF`JXKXWJYB[Cd;l2x(z%a+N2SNTQXKVJWGZI]J]Jm(r$u"u"
 =rIQU
+>	V_qsort
 >0<0:
 >0|t?L
 >0|t?z7
@@ -1971,7 +1971,6 @@ $toolgraphs
 >`#I>`#I
 >fff?fff?fff?
 >ffffff
->i([XZ
 >jtm}S
 >q`u1
 >q`ue
@@ -1980,6 +1979,7 @@ $toolgraphs
 >wcv?>
 >wcv?uj
 >~a)>
+?	V_qsort_s
 ?	g	2	
 ?!AfJ+
 ?333333
@@ -2198,6 +2198,7 @@ $toolgraphs
 @58B5uW
 @8+t`3
 @8,3u
+@8->8D
 @8.td3
 @8/t-H
 @8/ti3
@@ -2209,12 +2210,11 @@ $toolgraphs
 @83te3
 @83ti3
 @84)u
-@85EJ?
+@85#.9
 @87ti3
 @88t^H
 @8<(u
 @8<.u
-@8=,&D
 @8h,t
 @8j(t
 @8k(t
@@ -2229,7 +2229,6 @@ $toolgraphs
 @:l$P
 @:ytt
 @>%>b
-@@Q8$
 @A\][
 @A]A\_^[
 @A^A]A\_^
@@ -2240,7 +2239,6 @@ $toolgraphs
 @A^_^
 @A^_^][
 @A_A\_
-@A_A\_^[
 @A_A]A\_^
 @A_A]_
 @A_A]_^[
@@ -2258,6 +2256,7 @@ $toolgraphs
 @A__^
 @C u9A
 @Hc13
+@Hc5oa;
 @HcA03
 @LcIPI
 @SATAVAWH
@@ -2375,7 +2374,6 @@ $toolgraphs
 @VWATAUAWH
 @VWATAUH
 @VWATAVAWH
-@VWAUAVAWH
 @VWAUAVH
 @VWAUH
 @VWAW
@@ -2406,6 +2404,7 @@ A+zLL
 A03>A|
 A2D6 $
 A2F $
+A2G.A
 A8,4u
 A84>u
 A86te3
@@ -2512,8 +2511,8 @@ A^A]A\[]H
 A^A]A\^[
 A^A]A\_[]
 A^A]A\_]
+A^A]A\_][
 A^A]A\_^
-A^A]A\_^[
 A^A]A\_^[]
 A^A]]
 A^A]_][
@@ -2580,6 +2579,7 @@ A_A^_^]
 A_A^_^][
 A_Sharp
 A_^[]
+A__[]
 A__^[
 A__^]
 Abort processing sound event %s (scheduled recursively will not process this frame)
@@ -2663,10 +2663,10 @@ AudioDevice_Shutdown
 AudioMixer
 August
 Available Operators:
-B	V_roundf
 B(I9A(
 B(IcB
 B(IcZ
+B8RsU
 B9<	u6I
 B?:B&
 B?:B&?
@@ -2739,7 +2739,7 @@ BxA9A`u$
 Bytecode instruction
 B~?Nd~?
 C ;C$t
-C H!o
+C I!.H
 C fff
 C(98~-H
 C(;C,
@@ -3630,6 +3630,10 @@ CUtlMemory<class CFilter4thOrder,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CFilter4thOrder,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CGenericExprPart *,int>::Grow
 CUtlMemory<class CGenericExprPart *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CIREntry *,int>::Grow
+CUtlMemory<class CIREntry *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CIRList,int>::Grow
+CUtlMemory<class CIRList,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CLayerTrigger,int>::Grow
 CUtlMemory<class CLayerTrigger,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CMonoDelayLine,int>::Grow
@@ -4441,7 +4445,6 @@ CWeakHandle<struct InfoForResourceTypeCVoiceContainerBase>::InitUntyped
 CXf9C
 C_Sharp
 C`;Cpu
-C`HcKp
 CallPostConnect
 Calling GetValueString on a table - you probably meant to call GetMemberString!%s
 Can't call GetBinaryBlobBase() on a non-blob.%s
@@ -4547,6 +4550,7 @@ Currently sets a single float operator field
 Curves
 Cutoff Freq
 Cutoff Frequency
+D	V_roundf
 D W?{W
 D!l$xA
 D$ !H
@@ -4588,17 +4592,12 @@ D$(A;
 D$(D;
 D$(E3
 D$(H;
-D$(HH
 D$(Hc
 D$(I+
-D$(Ic
 D$(L;
 D$(Lc6M
-D$(XH
 D$(fA
 D$(fI
-D$(hH
-D$(xH
 D$(|*
 D$(|,L
 D$,;o
@@ -4618,7 +4617,6 @@ D$0E;}0
 D$0FI1
 D$0H#
 D$0H+
-D$0H9D$8
 D$0H;
 D$0Hc
 D$0HcD
@@ -4633,6 +4631,7 @@ D$0Z/
 D$0f;
 D$0fD
 D$0fH
+D$0fff
 D$0l}
 D$0|R
 D$4;E
@@ -4675,6 +4674,7 @@ D$@u!H
 D$@|R
 D$DD9
 D$HE3
+D$HH9}
 D$HH;
 D$HI+
 D$HIc
@@ -4703,7 +4703,6 @@ D$PRIFFA
 D$PdataH
 D$PfS
 D$Pfmt H
-D$TA;
 D$TE3
 D$TLcd$\
 D$Tf#
@@ -4739,11 +4738,12 @@ D$dHc_
 D$h;D$`
 D$hAW
 D$hH;
+D$hHcX 
 D$hL;
 D$h|R
 D$lM;
-D$p;u
 D$pD9
+D$pE;
 D$pL;
 D$pM+
 D$pMc
@@ -4768,10 +4768,10 @@ D+e`H
 D+}4E
 D8 Hk
 D8 Ik
+D8 t@
 D8 tP
 D8 tV
 D8 th
-D8%Hq4
 D8'tf3
 D8+tJ
 D80t;L9
@@ -4781,7 +4781,6 @@ D84/u
 D87t:H
 D87tbI
 D88t9
-D88tF
 D88tXH
 D8<3u
 D8<;u
@@ -4790,6 +4789,7 @@ D8>td3
 D8?t5
 D8?t`3
 D8c4t
+D8h,u
 D8o@t 
 D8t$X
 D8t$ht
@@ -4797,15 +4797,16 @@ D8x,t	H
 D8{8t
 D8{tu#
 D8|$P
-D8|$Xt.E
+D8|$Pu H
+D8|$Xt E
 D8~B|
 D9	~SE
 D9!~RE3
 D90u.H
+D93tUH
 D9:u(A
 D9;~-H
 D9;~EL
-D9=~UC
 D9APueL
 D9CDtc
 D9C`~JE3
@@ -4816,6 +4817,7 @@ D9I$t
 D9P$t
 D9Q$t
 D9cH~NL
+D9d$ 
 D9d$ht/B
 D9d$xu
 D9d$xu>
@@ -4825,7 +4827,6 @@ D9fht0A
 D9g(H
 D9gt~
 D9kt~
-D9l$ 
 D9l$ ~wH
 D9l$@
 D9l$x~2I
@@ -4843,7 +4844,6 @@ D9vt~
 D9y ~1H
 D9y`~PH
 D9{DA
-D9{p~2A
 D9{t~
 D9{x~0H
 D9|$0u
@@ -4851,7 +4851,6 @@ D9}0t3
 D9}d~
 D9~t~
 D:G,LcG
-D;0~O
 D;8}1H
 D;;}	
 D;C }
@@ -5004,7 +5003,7 @@ E9!~"H
 E9B@t
 E9l$t~
 E9n,tCA
-E9o@~dM
+E9o@~ZM
 E;.}~H
 E;7}	H
 E;H`}
@@ -5186,7 +5185,6 @@ F(A;F,
 F(HcF,H
 F,HcF0H
 F,s7E
-F0;FPt
 F0A9,
 F0D9 ~aI
 F0HcF4H
@@ -5300,8 +5298,6 @@ FreeLibrary
 Frequency (Hz)
 Friday
 Func( %s )
-G	V_sincosf
-G ;G$t
 G fff
 G$A9B$
 G$D8;I
@@ -5311,6 +5307,7 @@ G*fA9B*
 G-8B-
 G-LcG
 G.2C.$
+G.A2B.$
 G.A2F.$
 G0H+{xH
 G0Wfu
@@ -5357,6 +5354,8 @@ G\$hH
 G\$hL
 G\$pL
 G\$xL
+G\+GlHc
+G\fA+F
 G_Sharp
 Game v.o. volume
 Game volume
@@ -5475,19 +5474,21 @@ H0f9O
 H8B;\1
 H8HcH0D
 H9(tO
-H953>
-H959R
-H95A=
-H95TR
-H95zQ
+H958-
+H95S-
+H95YA
+H95a,
+H95aq'
+H95tA
+H95|q'
 H97u+A
 H97uGL
 H98t2
-H98t7
 H9;t	H
 H9<(u
-H9=?>
-H9=e<
+H9=1v;
+H9=O+
+H9=e5
 H9>u/H
 H9A(u
 H9D$Pu>I
@@ -5522,6 +5523,7 @@ H9~@H
 H;D$Pu
 H;D$`
 H;XXs
+H;t$8
 H;xXu5
 H;}8r
 HA;6|
@@ -5533,10 +5535,9 @@ HA^A\
 HA^A]_[
 HA_A\^]
 HA_A^
-HA_A^A]A\_^[]
 HA_A^^]
-HA_A^_^][
 HA__^[
+HGRPA
 HH:mm:ss
 HLcB,H
 HRTF calculations will calculate the player as being this far behind the camera.
@@ -5547,12 +5548,14 @@ HandleAsStringFailure
 Harmonics
 Hc+;k
 Hc+Lc6H
+Hc-ZRD
 Hc.;n
 Hc/;o
 Hc3;s
 Hc7;w
 Hc7Lc
 Hc;;{
+Hc=&vB
 Hc>;~
 HcA(E3
 HcA`H;
@@ -5609,6 +5612,7 @@ HcHXE3
 HcIpL
 HcK H
 HcK<H
+HcKpA
 HcKpA;
 HcL$03
 HcL$8D
@@ -5629,6 +5633,7 @@ HcQ<H
 HcT$H
 HcT$P+
 HcT$PJ
+HcT$xH
 HcVlI
 HcYPI
 Hc[$H
@@ -5679,12 +5684,13 @@ HighPass
 Highest
 HostStateMgr001
 Hovering voice %i, you could debug draw something too
-I	V_sinf
+I	V_sincosf
 I 	A0
 I could not work out what I was expecting, like so many of us these days!
 I |0E
 I+4$H
 I89Q4w
+I9.t	I
 I98tKI
 I9>u*H
 I<OXb<^
@@ -5715,7 +5721,6 @@ IcC,H
 IcC0H
 IcC4H
 IcC8M
-IcD$X
 IcD$`L
 IcE I
 IcFhE
@@ -5744,6 +5749,7 @@ If set to 1, show all incoming updates to vmix inputs.
 If set to >= 0, we will use this mix modifier for source-specific DSP effects. Otherwise we will use the listener DSP value.
 IfA9,
 IfA9l
+IfD9D
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 Il?333333c?
 Incorrect sampling rate in %s (mp3 frames are at %dHz, .vsnd file has %dHz)
@@ -5870,7 +5876,7 @@ J(IcB A
 J8H99t
 J>@G_
 January
-K	V_sinhf
+K	V_sinf
 K Ic6
 K UWAUAWH
 K&>.yC
@@ -5927,7 +5933,6 @@ KeyValuesSystem
 Knee Width (dB)
 K}*n:	
 K~Je#>!
-L	V_snprintf
 L!|$(L!
 L$ ;L$(
 L$ E3
@@ -5941,6 +5946,7 @@ L$ SAUH
 L$ SH
 L$ SUH
 L$ SUVWATAVAWH
+L$ SUVWAVH
 L$ SUWATAWH
 L$ SUWAUAVH
 L$ SVWH
@@ -6049,6 +6055,8 @@ L$hHi
 L$hfD
 L$p9OH
 L$p;OH
+L$pD9}X
+L$pD;}X
 L$pE3
 L$pH3
 L$pHi
@@ -6065,6 +6073,7 @@ L$xHc
 L$xL;
 L$xfC
 L+d$PI+
+L0)J.Jq
 L5 D8
 L9 Hk
 L9#t	H
@@ -6074,14 +6083,8 @@ L9+t	H
 L9.t	H
 L9.u~H
 L90t 
-L95)M<
-L957{'
-L95?]D
+L957l'
 L9<(t
-L9=-3'
-L9=11'
-L9==2'
-L9=|d
 L9bHt
 L9bPt
 L9bPu
@@ -6089,7 +6092,6 @@ L9d$ t
 L9d$Pt
 L9d$ht
 L9d$xt
-L9e t
 L9e(t
 L9eHt
 L9g t	H
@@ -6106,7 +6108,6 @@ L9}8v-H
 L;\$xw
 L;d$(
 L;d$h
-L;xfA
 L<xE;
 L?UUUUUUU?
 L?fff?33s?
@@ -6157,7 +6158,6 @@ LcCp3
 LcD$,
 LcD$03
 LcD$`H
-LcD$xI
 LcE8I
 LcHxH
 LcK H
@@ -6186,9 +6186,9 @@ LcO0H
 LcQPL
 LcT$@L
 LcT$hI
+LcW\L
 Lc\$XA
 Lcd$ D;
-Lcd$ D;d$0
 Lcd$0D;
 Lcd$8
 Lcd$d
@@ -6214,6 +6214,7 @@ Lcu`L
 Lcv0D;v@
 Lcw0A
 Lcy B
+Lc|$ D;|$0
 Lc}(H
 Lc}XD;}hu
 Lc}pD;
@@ -6258,12 +6259,14 @@ Low EQ gain (dB)
 LowPass
 Lowest
 Lowpass4Tap
+M	V_sinhf
 M D8}
 M H;M8
 M HcE
 M HcW
 M"IcB
 M.McB
+M0D;d$ 
 M0fD9~<t
 M0t+H
 M49JDt
@@ -6310,6 +6313,7 @@ MXR_ParseSoundMixer
 MXR_ParseSoundMixerKV3
 MXR_SetSoloActive
 Main Output
+MakeGlobalSymbol
 MakeStringToken
 MapListService_001
 March
@@ -6334,7 +6338,6 @@ Mc.E+
 Mc<$D;>
 Mc>A+
 Mc>E;~
-McB0D
 McB0E
 McB@A
 McBDA
@@ -6411,11 +6414,13 @@ Modulation Frequency
 Modulator Frequency
 Monday
 MpLcE
+MtD8}
 MultiByteToWideChar
 Music volume
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 MwIcq8
 Mx;L$ 
+N	V_snprintf
 N Hcw03
 N(H9n
 N3`d?
@@ -6674,7 +6679,6 @@ QueryPerformanceCounter
 Queued: elapsed time: %f, next sync time: %f, length: %f
 Quick example for how we'd derive traits from voice containers.
 Quietest Volume
-R	V_sscanf
 R;876.
 R@8p,u
 RESOURCE_TYPE_SOUND
@@ -6855,6 +6859,7 @@ SUVWAUAVAWH
 SUVWAUH
 SUVWAVAWH
 SUVWAVH
+SUWATAUAVH
 SUWATH
 SUWAUH
 SUWAVH
@@ -6863,7 +6868,6 @@ SVATH
 SVAVAWH
 SVAVH
 SVWATAUAVAWH
-SVWATAUAVH
 SVWATAUH
 SVWATAVAWH
 SVWATH
@@ -7067,6 +7071,7 @@ SoundSystem/DisableSoundOnDedicatedServer
 SoundSystem/WaveDataCacheSizeMB
 SoundSystem/WaveDataCacheSizeMB_LowFragmentation
 SoundSystem001
+SoundSystemDebug
 SoundSystemLowLevel
 SoundWithProbability_t
 SoundWithProbability_t::KV3TransferLoad_Impl
@@ -7159,6 +7164,7 @@ Sunday
 Sustain target amplitude
 Sustain time (ms)
 SystemAttributes
+T	V_sscanf
 T$ E3
 T$ H;
 T$ Hi
@@ -7202,9 +7208,6 @@ T$@Hc
 T$@HcD$8L
 T$@Lc
 T$@fB
-T$@fD
-T$DH;
-T$HfD
 T$Lt	
 T$PD;
 T$PE3
@@ -7218,12 +7221,13 @@ T$`A;
 T$`E3
 T$`H;
 T$`I;
+T$hM;
 T$lE3
 T$pE3
 T$pL+
 T$pff
 T$xD9"
-T%C"4
+T$xE3
 T1(Hk
 T1,Hk
 T8 Hk
@@ -7385,7 +7389,7 @@ USWATAUAVH
 USWATAUH
 USWATAWH
 USWAUAWH
-USWAVH
+USWAWH
 UUUUUU
 UUUUUUUUH
 UVATAUAVAWH
@@ -7395,6 +7399,7 @@ UVATH
 UVAUAVAWH
 UVAUH
 UVAVAWH
+UVAVAWI
 UVAVH
 UVAVI
 UVAWH
@@ -7752,11 +7757,7 @@ Vsnd Container
 Vsnd File
 Vsnd Reference
 Vu?N\t?8Ws?vGr?
-W	V_stricmp_fast
-W%("4
-W%)%4
 W(tFH
-W5I$2
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Attempting to import existing public field %s in stack %s
 WARNING: Attempting to set fields on a stopped sound
@@ -7816,7 +7817,8 @@ X UVWATAUAVAWH
 X UVWH
 X UWH
 X!t5~
-X%{i%
+X%[Z%
+X-!n7
 X<"wP
 X?/QY?s
 X?OsX?
@@ -7826,15 +7828,26 @@ XA^_][
 XA^_^]
 XA_A\
 XA_A]A\]
+XA_A^A]A\_^[]
 XA_A^A]A\_^][
 XA_A^_^[]
+XA_A^_^][
 XB r+
+X\$xf
 X_^[]
 Xt$PA
-Y	V_strlower_fast
-Y5Tr&
+Y	V_stricmp_fast
+Y-nY%
+Y5$T&
+Y5Jy7
+Y5`|7
 Y7D9.
 Y9"SD
+Y=;h7
+Y=_Q5
+Y=ab+
+Y=df7
+Y=hi7
 Y>kX>M
 Y?'WY?
 YD$ A
@@ -7850,7 +7863,6 @@ Yt$ A
 Y|$ D
 Y|$`A
 Y}?\0 >%
-Z	V_strnchr
 Z(IcB
 Z48wN39
 Z?SHX?
@@ -7858,6 +7870,7 @@ ZPKE?81("
 ZW][Rbmxv
 Z\>z8
 Zod(^?
+[	V_strlower_fast
 [ 0.005714, 0.3, 1.083, 1.083, 2.0, 3.0 ]
 [ 1.0, 1.0, 0.227125, 0.227125, 2.0, 3.0 ]
 [%f,%f,%f,%f,%f,%f]
@@ -7866,6 +7879,7 @@ Zod(^?
 [Index: 
 [K]taM?
 [_?'N
+\	V_strnchr
 \$ ATAVAWH
 \$ AVH
 \$ A_A^A\
@@ -7883,7 +7897,6 @@ Zod(^?
 \$ UVWATAUAVAWH
 \$ UVWATAVH
 \$ UVWATAWH
-\$ UVWAUAVH
 \$ UVWAVAWH
 \$ UVWH
 \$ UWAUAVAWH
@@ -7924,7 +7937,6 @@ Zod(^?
 \$0t L
 \$0t0L
 \$0u!H
-\$0uJ
 \$0~>
 \$4Mc
 \$4fD
@@ -7934,7 +7946,9 @@ Zod(^?
 \$8t#L
 \$<L+
 \$@;\$H
+\$@<	t,
 \$@@8w@t!
+\$@A;W,
 \$@D8g@t!
 \$@E3
 \$@H+
@@ -7945,13 +7959,13 @@ Zod(^?
 \$@fD
 \$@fE
 \$@s"
-\$D<	t*
 \$DM+
 \$H@2
 \$HA^A]A\_^
 \$HHcD$@L
 \$P;D$p~
 \$PD8g@t!
+\$PE3
 \$PH+
 \$PHcY$H
 \$PI;
@@ -7983,22 +7997,16 @@ Zod(^?
 \$rfA3
 \$x@80u
 \$xsFH
-\%0k%
-\-$k%
 \0 >%
 \0 >gM|
-\58k%
-\=,k%
 \A(fD
 \N\O\NZOt)s(r(
 \`>)CS>
 \ffff
-]	V_strtod
 ] D9[D
 ])6M>&
 ]0IcM@;
-]5Nm7
-]5Zj4
+]5N!7
 ]>)2X
 ]?K[`?n
 ]@A;\$
@@ -8014,7 +8022,7 @@ Zod(^?
 ^RfN>
 ^\HcNlI
 ^hmpsv
-_	V_strtok
+_	V_strtod
 _ ;_$t
 _(9w0
 _?K<`?
@@ -8143,6 +8151,7 @@ _voicegraph
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a	V_strtok
 a&M-=Z]<i*k)n-t&q&p&|
 a7hIw
 a?wSa?\
@@ -8282,7 +8291,6 @@ bool8
 bp(=>?g
 broken pipe
 buffer too small
-c	V_tand
 c D8c7trH
 c [1>H'
 c(>\,
@@ -8386,7 +8394,6 @@ curve_defintion_type
 curve_tangent_mode_t
 curve_type
 custom_stack
-d	V_tanf
 d$ AV
 d$ E3
 d$ fI
@@ -8428,9 +8435,9 @@ d$Xfff
 d$X~?L
 d$X~@L
 d$`9;vW
-d$`E3
 d$`Hcp
 d$`Mc
+d$`tLA
 d$`ttE
 d$`u1H
 d$hA;
@@ -8517,6 +8524,7 @@ dump_audio_input
 duration
 dynamicEQScale
 d~?i3~?A
+e	V_tand
 e A_A^A]A\]
 e(L9e t
 e0A_A^A]A\]
@@ -8551,13 +8559,14 @@ executable format error
 execute_once
 exit_if_blocked
 expression
-f	V_tanhf
+f	V_tanf
 f$;Iu
 f9)u4H9j
 f98tN
 f9<H}
 f9BHu
 f9s:t
+f;=X|:
 f;W u
 f;l$P
 f?3Jf?6
@@ -8640,7 +8649,6 @@ g)>3j.>
 g9@x!8
 g>M-a>Y
 g?``g?H
-gF,em
 gHM9oPt
 gM|?\0 
 gSB5*!
@@ -8707,6 +8715,7 @@ greater_than
 greater_than_or_equal
 groups
 gx>/'u>
+h	V_tanhf
 h VWATAVAWH
 h;aW~<
 h>1my
@@ -9157,7 +9166,6 @@ k8y<=
 k=E.x=i
 k?P+k?@
 k?n_m?P
-k`@8+u
 key_groups
 kkWfd
 l$ A8@@t%
@@ -9170,6 +9178,7 @@ l$ HcY
 l$ L;
 l$ Lci
 l$ VATAVH
+l$ VH
 l$ VWATAUAVH
 l$ VWATAUAWH
 l$ VWATAVAWH
@@ -9207,7 +9216,7 @@ l$4fB
 l$6fB
 l$8E3
 l$8Hc
-l$8Hc-_
+l$8Hc-oF:
 l$8Hc/
 l$8Hk
 l$8I+
@@ -9231,7 +9240,6 @@ l$HLk
 l$Ht?H
 l$Hu3H
 l$L@2
-l$LE3
 l$P;3
 l$PA8}vt2I
 l$PA;
@@ -10262,6 +10270,7 @@ pA^^[
 pA_A\_^[
 pA_A^A\_^[]
 pA_A^A]A\_^[
+pA_A^A]A\_^]
 pA_A^A]_]
 pA_A^[
 pA_A^_^]
@@ -10815,16 +10824,18 @@ syncIndex >= 0
 sync_track
 sync_type
 szfff
-t	8X,u
+t	9EP
 t	9E`
 t	9G@
 t	9GD
 t	D9&
 t	H90t
 t!D8;t
+t!HcA
+t!HcI
 t"D;C0}
 t$ A8w(tEH
-t$ A9W
+t$ A9U
 t$ ATAVAWH
 t$ AVH
 t$ AWH
@@ -10835,7 +10846,6 @@ t$ H;
 t$ I94
 t$ Ic8A;x
 t$ L9;t	H
-t$ Lc
 t$ Li
 t$ Mc
 t$ UH
@@ -10866,7 +10876,6 @@ t$(fD
 t$0;kp
 t$0@8
 t$0A9o8
-t$0A;
 t$0D;}p
 t$0E3
 t$0Hc
@@ -10874,12 +10883,12 @@ t$0Hc7;w
 t$0Hcq
 t$0Hi
 t$0Hk
-t$0Ic?
 t$0L;
 t$0fff
 t$0t!
 t$0tz
 t$0u*H
+t$0x)Hc
 t$0}#Hc
 t$0~ H
 t$6fB
@@ -10889,14 +10898,15 @@ t$8;Upr4I
 t$8A_A\_
 t$8D;
 t$8E3
+t$8E;
 t$8H+
 t$8Hc
 t$8Hc5
 t$8Hcs8
+t$8Ic<$
 t$8M+
 t$8fB
 t$8fff
-t$8t7
 t$8~ H
 t$8~#H
 t$<;{
@@ -10914,6 +10924,7 @@ t$@}#Hc
 t$@~ H
 t$@~,H
 t$@~1H
+t$D8~
 t$H92t3H
 t$H;]p}.H
 t$HA9
@@ -10927,6 +10938,7 @@ t$HHc\$`;
 t$HI+
 t$HL+
 t$HLc
+t$Hu H
 t$Hu<H
 t$H~ H
 t$H~!H
@@ -10954,29 +10966,28 @@ t$Xu:H
 t$XuBM
 t$X~ H
 t$X~#H
-t$`9S0|=
+t$`9V0|=
+t$`A;
 t$`D;
 t$`E3
 t$`E9o@~eM
 t$`H9
 t$`Hc
-t$`Hc5
+t$`Hc5{H;
 t$`I;
 t$`Ic
 t$`L#
-t$`Lc5
+t$`Lc5.
 t$`fD;
+t$`}[H
 t$fff
-t$h<	
 t$hE3
 t$hH+
 t$hHc
 t$hLc5
 t$hf9{:t
-t$htK
 t$hu!I
 t$hu3H
-t$h}[H
 t$pE3
 t$pH+
 t$pHcHxD
@@ -11010,11 +11021,12 @@ t0;U(u
 t0D8yvt*A
 t0D;K0H
 t2HcA
-t3D8{
-t3D8{LH
-t3D8{~H
+t3D8c
+t3D8cLH
+t3D8c~H
 t3L9c
-t4fD9{|H
+t4HcL
+t4fD9c|H
 t5Hc{8H
 t7D8(t2H
 t7D;C0}1H
@@ -11030,6 +11042,7 @@ t?Hc[$
 t?Ic]$
 t?Ic^$
 t@E97~;I
+t@Hc~
 tAHck8H
 tAHc}
 tCR;\HdY\
@@ -11040,7 +11053,6 @@ tED;S0}?H
 tEHc~
 tGA8>tB
 tHD80tCH
-tHf95
 tIHcNlI
 tILcwpB
 tK;C`
@@ -11118,6 +11130,7 @@ tier0.dll
 time slice ms
 timed out
 tjIcw 
+tjvh@2
 tkD8.tf3
 tkD80tf3
 tkHc^ 
@@ -11182,25 +11195,26 @@ u&8OTt
 u(A8t$
 u)9s8t$H
 u,!T$(H!T$ 
-u0D;l$ 
 u3HcH<H
 u4A8qQu.A8qRu(A8qSu"A8qTu
 u4I9}(
+u7McH
 u7fff
 u8Hc3;s
+u8McH
 u@QlH
 u@QlL
 uBIcw
 uED8r(t
 uEHcG
+uGf9o
+uGf9y
 uH8CTt
-uNf9y
 uPA;m@u
 uPfD+
 uUD9e
 uWLcK
 uXL+uHL
-u\f9o
 ubHcO
 uchar32
 ugI9<
@@ -11258,10 +11272,9 @@ v?/\v?
 v@D8s(t
 vAD8s(t
 vDHcC
-vEHcE
 vHc+H
+vKHcE
 vKfffff
-vNHcE
 vSphere1Pos != vSphere2Pos
 vWewe
 value
@@ -11400,7 +11413,6 @@ xEA;6}@H
 xFtPH
 xG;^8}B;^L
 xG;{`}B;{t
-xHA;@`}BI
 xJE;u
 xK;{`}F;{t
 xLA;.}GH
@@ -11414,7 +11426,6 @@ xe\Y]fv
 xnbUH<1( 
 xrga[UNHB<6/)#
 y dwU
-y!fD;
 y0u H
 y?$Cz?
 y?Zzy?
@@ -11429,7 +11440,6 @@ z?Mbz?H5z?
 zG(knN
 zUuSA
 zY;>u:m	
-zYAk#
 { AVH
 { AWH
 { H9{
@@ -11488,12 +11498,15 @@ zYAk#
 |$ UAVAWH
 |$ UH
 |$ ^][
+|$ u!H
+|$ }[H
 |$(A^
 |$(E3
 |$(HcL$ H
 |$(Hi
 |$09ot~
 |$0A9n
+|$0A;
 |$0E3
 |$0E9|$`
 |$0Hc
@@ -11516,6 +11529,7 @@ zYAk#
 |$8Hcy
 |$8I+
 |$8ff
+|$8fff
 |$8u*
 |$8~ H
 |$8~#H
@@ -11528,6 +11542,7 @@ zYAk#
 |$@E3
 |$@H+
 |$@Hc
+|$@I;
 |$@Lc
 |$@fff
 |$@u(
@@ -11538,7 +11553,6 @@ zYAk#
 |$HD9|$X|QH
 |$HE3
 |$HE9
-|$HH;
 |$HHc
 |$HHi
 |$HfE
@@ -11560,6 +11574,7 @@ zYAk#
 |$Pu!H
 |$Pu*H
 |$Pu;
+|$P}[H
 |$P~ H
 |$X;(u
 |$XA+
@@ -11568,13 +11583,12 @@ zYAk#
 |$XHcU
 |$XI9
 |$XL;
-|$Xfff
 |$`A+
 |$`E3
 |$`L;
 |$`Mc
-|$`}[H
 |$hD9|$x|JH
+|$hH;
 |$hHc
 |$hIcN
 |$hu1H
@@ -11582,7 +11596,6 @@ zYAk#
 |$pL;
 |$pM;
 |$tHc
-|$x<	
 |$xE3
 |(fff
 |)L9c
@@ -11612,8 +11625,8 @@ zYAk#
 |CHcL
 |EHc|
 |JHcL
-|LHcL
 |Lu?c
+|NHcL
 |NHct
 |]A;N
 |]PfD
@@ -11634,10 +11647,10 @@ zYAk#
 }$fA;A
 }&f;N
 }'fA;J
+}'fA;P
 }'fff
 }(f;S
 });C$
-});G$
 }.fA;B
 }0Hcm0L
 }0IcE(H
@@ -11653,26 +11666,27 @@ zYAk#
 }J;Ea
 }K;X$
 }LuHO
-}P:JPB
 }T>k6Q>]
 }ULcU
+}X|EH
 }ZE9B@t)A
 }];X$
 }^LcT$HI
 }`u=H
 }b;}(u
+}f7z7x
 }ofA;<$
 }p?IGq?|
 }qG;<!}KA
 }rf[QG<4+#
 }vpjd^WQKE?8-
-}ymA-
 ~ fff
 ~"IcD
 ~'fff
 ~*fff
 ~3fff
 ~<fff
+~?Xf9
 ~@NcT
 ~CD9A
 ~CSosOperatorSystem: Deleting orphaned CSosOperatorStack pointer for %s via shutdown

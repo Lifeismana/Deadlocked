@@ -6,6 +6,7 @@
 		<include src="s2r://panorama/styles/team_chat_status.vcss_c" />
 	</styles>
 	<TeamChatStatus hittest="false">
+		<GlobalClassListener classes="gDetailView" />
 		<Panel id="chat_count_zone">
 			<Panel class="chat_number">
 				<Panel class="chat_type_icon" />

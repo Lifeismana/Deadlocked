@@ -34,14 +34,14 @@
 	visibility: collapse;
 }
 
-.in_item_shop .hud_abilities,.wants_scoreboard .hud_abilities,.detail_view .hud_abilities
+.in_item_shop .hud_abilities,.wants_scoreboard .hud_abilities,.gDetailView .hud_abilities
 {
 	background-color: colorCommonDarkGray;
 	padding: 5px 10px 0px 10px;
 	border-top: 6px solid spiritBrightColor;
 }
 
-.in_item_shop .abilitiesHeaderColor,.wants_scoreboard .abilitiesHeaderColor,.detail_view .abilitiesHeaderColor
+.in_item_shop .abilitiesHeaderColor,.wants_scoreboard .abilitiesHeaderColor,.gDetailView .abilitiesHeaderColor
 {
 	visibility: visible;
 }
@@ -623,7 +623,7 @@ Label.ability_key
 	height: 150px;
 }
 
-.in_item_shop #abilities:hover,.wants_scoreboard #abilities,.detail_view #abilities
+.in_item_shop #abilities:hover,.wants_scoreboard #abilities,.gDetailView #abilities
 {
 	height: 240px;
 }
@@ -1117,7 +1117,7 @@ Label.ability_key
 	visibility: collapse;
 }
 
-.detail_view .items #expanded_info
+.gDetailView .items #expanded_info
 {
 	visibility: collapse;
 }
@@ -1149,7 +1149,7 @@ CitadelHudAbilities CitadelHudAbilityUpgradePips
 	ui-scale: 60%;
 }
 
-.wants_scoreboard CitadelHudAbilities CitadelHudAbilityUpgradePips,.detail_view CitadelHudAbilities CitadelHudAbilityUpgradePips
+.wants_scoreboard CitadelHudAbilities CitadelHudAbilityUpgradePips,.gDetailView CitadelHudAbilities CitadelHudAbilityUpgradePips
 {
 	visibility: visible;
 }

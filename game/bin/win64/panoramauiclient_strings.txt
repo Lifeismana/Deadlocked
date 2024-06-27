@@ -39,7 +39,6 @@
 	type_name
 	uVeH
 	w|Hc
- 	V_iswcntrl
  	uIH
                           
     Actual    : 
@@ -74,12 +73,14 @@
  (0X`hpz
  ,)(;
  ... }
+ .P	"
  /&gt;
  0"r$4&
  ;{}:
  <b>@import</b> 
  = { <proto text format> }". To set fields within it, use syntax like "
  ?InternalFieldCount@Object@v8@@QEBAHXZ
+ @WindowHidden
  A\][H
  A^A\^][
  A^A\^][H
@@ -182,7 +183,6 @@
  volatile
  { ... };
  } from:
-!	V_iswdigit
 !! No context to execute within.
 !"Needs impl"
 !"Unknown movetype"
@@ -220,6 +220,7 @@
 !pAfter || nDepth > 0
 !pChild || pChild->GetAttribute( k_symItemIndexAttribute, -1 ) == nItemIndex
 !pCurrent->GetParent()
+"	V_iswcntrl
 " because it is missing required fields: 
 " conflicts with field "
 " conflicts with the existing symbol "
@@ -286,6 +287,7 @@
 "MutableRawRepeatedField"
 "e" must be followed by exponent.
 "e?<<<<<<l?
+#	V_iswdigit
 #%02X%02X%02X%02X
 #AsyncPanel_Failure
 #AsyncPanel_Loading
@@ -322,7 +324,6 @@
 #UI_TextEntry_CopyToClipboard
 #UI_TextEntry_CutToClipboard
 #UI_TextEntry_PasteClipboard
-$	V_iswspace
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $0  extend .$1 {
 $0  extensions $1 to $2;
@@ -416,6 +417,7 @@ $u"8K
 %s_Notch_%d
 %s_Right
 %sdeg
+&	V_iswspace
 &?PPPPPPP?
 &lt;Needs a description&gt;
 &nbsp
@@ -439,7 +441,6 @@ $u"8K
 (0`hpx
 (?R or (?[+-]digits must be followed by )
 (A]_][
-(A]_^[
 (A^A\^[
 (A^A]^[
 (A^A]_[H
@@ -666,7 +667,7 @@ $u"8K
 )t$ I
 )t$ J
 )t$ f
-)t$ f95sM
+)t$ f95sL
 )t$ |.
 )t$0H
 )t$0H;
@@ -732,7 +733,6 @@ $u"8K
 ,<ellipsis>
 ,HR>O
 ,I<%w
-,T( v-
 ,W5y+
 ,X< w
 ,j.b0^2`4^6`8^:f<
@@ -751,7 +751,6 @@ $u"8K
 -sse4
 -tools
 ...<truncated>...
-..eEN
 ..om?
 .00cfg
 .>PJ;I:qE>
@@ -1249,7 +1248,6 @@ $u"8K
 0A^_^][
 0A_A\]
 0A_A]A\_]
-0A_A]_][
 0A_A^A\
 0A_A^A\^]
 0A_A^A\_^
@@ -1291,7 +1289,7 @@ $u"8K
 220323000000Z
 220801000000Z
 230714000000Z
-240620161516Z0/
+240627200921Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1311,7 +1309,7 @@ $u"8K
 4$u.A
 456789:;<=
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
-4u2fD9=nj
+4u2fD9=Nj
 5FjiT
 5butt
 5fD9%
@@ -1378,7 +1376,6 @@ $u"8K
 98~(H
 98~+H
 99~CE
-9<(t`L
 9>powf
 9>~ZH
 9?uR3
@@ -1436,11 +1433,11 @@ $u"8K
 9G,t4H
 9G,t7H
 9G,t:H
+9G,t<H
 9G,tBH
 9G,tFH
 9G,tLH
 9G0t,H
-9G4t,H
 9G4t7H
 9G8u%
 9G<t4H
@@ -1455,7 +1452,7 @@ $u"8K
 9GLtdH
 9K,tIH
 9K,tVH
-9M4t;L9=
+9M4t;L9=#1
 9M4t~H
 9M<t4H
 9M<tO;
@@ -1474,6 +1471,7 @@ $u"8K
 9]0t3
 9_(~FH
 9_|~;I
+9b*%aO
 9k tJ
 9o0~pH
 9o4~?H
@@ -1499,7 +1497,6 @@ $u"8K
 :Tu)f
 :context->%p->%s:
 :context->null->UIEngine Global:
-;	V_powf
 ;	t/H
 ;"u	@
 ;)u1D
@@ -1509,6 +1506,7 @@ $u"8K
 ;3}'M
 ;3}*Lc
 ;3}/Hc
+;@Yv2
 ;@~-H
 ;A(rME
 ;D$TtBHc
@@ -1524,12 +1522,12 @@ $u"8K
 ;\$Pu
 ;\$p|
 ;]tHL
+;f95P
 ;q }kH
 ;t$ }yH
 ;t$\H
 ;{,}"H
 ;{ht"
-<	V_qsort
 <	u#L
 <	w	@
 <	wHH
@@ -1566,7 +1564,6 @@ $u"8K
 <`tHH
 <a href="\1\3">\1\3</a>
 <ellipsis>
-<f959
 <htl<jt\<lt4<tt$<wt
 <invalid>
 <no failure reason set>
@@ -1584,21 +1581,24 @@ $u"8K
 <{uVA
 <}t$<-t
 <}tSH
-=	V_qsort_s
+=	V_powf
 =ERCPt
 =imb;D
 =rIQU
+>	V_qsort
 >	t.H
 >-ufH
 >0<0:
+>25Zw
 >9CDt7K
 >?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z
 >HkL$0hH
 >Mp$d
 >f;D$0t
 >f;D$4t
->fD9%U
+>fD9%
 >jtm}S
+?	V_qsort_s
 ?!5WOo
 ?"u	@
 ?"u	E
@@ -1749,7 +1749,6 @@ $u"8K
 @.data
 @.reloc
 @08@HPX`hpx
-@08Nt
 @0HcB
 @8+t?
 @84)u
@@ -1778,7 +1777,6 @@ $u"8K
 @@HcB ;B$u
 @A]A\]
 @A]A\^][
-@A]A\_^[
 @A]A\_^]
 @A^A\^
 @A^A\^][
@@ -1797,6 +1795,7 @@ $u"8K
 @A_A^A\_^][
 @A_A^A]
 @A_A^A]A\]H
+@A_A^A]A\^
 @A_A^A]A\_
 @A_A^A]A\_^[
 @A_A^A]A\_^]
@@ -1804,11 +1803,10 @@ $u"8K
 @A_A^^
 @A_A^_
 @A_A^_^]
-@DebugIndividualStyle
 @H9AH
 @HHcB$;B(u
 @HPX&I
-@HPX`hvP
+@HPX`hv
 @Hcq(M
 @PHcB(;B,u
 @SATAUAVAWH
@@ -1851,7 +1849,6 @@ $u"8K
 @SVAVH
 @SVAWH
 @SVWATAUAVAWH
-@SVWATAUH
 @SVWATAVAWH
 @SVWATAWH
 @SVWATH
@@ -1911,6 +1908,7 @@ $u"8K
 @UWAVAWH
 @UWAVH
 @UWAWH
+@VATAUAVAWH
 @VAVAWH
 @VAVH
 @VAWH
@@ -1967,8 +1965,8 @@ A9E,t<H
 A9E0u
 A9E4t4H
 A9E4t7H
-A9E4t8H9-
-A9E4t;H9-Q
+A9E4t8H9-Q
+A9E4t;H9-!
 A9E8u
 A9E<t4H
 A9E<tYH
@@ -1980,7 +1978,6 @@ A9F$t;H
 A9F(u
 A9F,t4H
 A9F,t9H
-A9F,t<H
 A9F,tFH
 A9F0u
 A9F4t4H
@@ -2205,7 +2202,6 @@ August
 Autosuggest_Prefix_txt
 Autosuggest_Suffix_txt
 Avestan
-B	V_roundf
 B 9A tDA
 B H+P(
 B H+X(
@@ -2881,6 +2877,7 @@ Cypriot
 Cyrillic
 C|$pH
 C|$xL
+D	V_roundf
 D W?{W
 D!l$xA
 D$ 	I
@@ -3051,12 +3048,14 @@ D0?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
 D8 uhL
 D8(tLH
 D8)u#L
-D8-?"
+D8-G"
 D8.uBH
 D80t@
 D81uUL9r
 D83t?
 D84:u
+D85 U
+D85(U
 D88tS3
 D8L$0u`
 D8[(u
@@ -3157,6 +3156,7 @@ DebugComputedRow
 DebugComputedValue
 DebugFrameLeftMargin
 DebugFrameRow
+DebugIndividualStyle
 DebugInheritedStylesHeader
 DebugInspectOpacitySlider
 DebugLabelToggle
@@ -3527,13 +3527,11 @@ FreeLibrary
 Friday
 FuHcu
 Fullscreen
-G	V_sincosf
 G 8C u
 G 9C 
 G 9C u
 G 9C uE
 G 9C uW
-G ;G$t
 G @8pKu
 G A8E 
 G D8#t
@@ -3547,7 +3545,7 @@ G$9C$u7H
 G(9C(u 
 G(9C(u2
 G(9C(uC
-G(f95|
+G(f95
 G,9C,u
 G,9C,u]
 G09C0u
@@ -3750,6 +3748,7 @@ H92tBA
 H93t	H
 H97u+A
 H98tB
+H9=5O
 H9A s
 H9A u)M
 H9D$P
@@ -3914,6 +3913,7 @@ HcD$lH
 HcD$pA
 HcE0D
 HcE8D
+HcE@H
 HcELH
 HcEXH
 HcE\H
@@ -4019,6 +4019,7 @@ HorizontalScrollThumb
 HorizontalSplitter
 HostStateMgr001
 HtmlUserAgent
+I	V_sincosf
 I#I0H
 I#J0H
 I#M0H
@@ -4174,7 +4175,6 @@ IsDraggable
 IsFinite( *pflContentHeight )
 IsFinite( *pflContentWidth )
 IsGrowable()
-IsInList(before)
 IsPlaying
 IsProcessorFeaturePresent
 IsSelected
@@ -4231,7 +4231,6 @@ Khmer
 Kwvt,
 K}*n:	
 K~Je#>!
-L	V_snprintf
 L!d$(L!d$@D
 L!l$pH
 L!|$(L!
@@ -4413,6 +4412,7 @@ Layout File
 LayoutDirtied
 Lc#D;c
 Lc+D;k
+Lc0A;
 Lc7D;w
 Lc;D;{
 Lc>D;~
@@ -4475,6 +4475,7 @@ M;f8tBI
 M@<<t 
 MATCHFRAMEWORK_001
 MB(iVR
+MFvgwyX
 MGD;}
 MM/dd/yy
 MODEL_PROCESSING_SERVICES_INTERFACE_001
@@ -4624,6 +4625,7 @@ Multiple extension registrations for type "
 MutableMessage
 MutableRawRepeatedField
 Myanmar
+N	V_snprintf
 N(+V0
 N0+V8
 N0fff
@@ -4685,6 +4687,7 @@ OF>;^
 OH+WP
 OPQRSTUVWXYZ[\]F^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^_^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^`abbbbbbbbcddefghijklmn
 O`+Wh
+O`IcD
 October
 Offscreen
 Ogham
@@ -4716,10 +4719,10 @@ P(9G<H
 P(A9F<I
 P08@J
 P08J0
-P08Nt
 P09G@
 P0A9F@A
 P8D:8
+P<Ulx+
 P>q_Y~
 P@HPX`hpx
 PA]A\[
@@ -4853,7 +4856,6 @@ Q@9QL}
 QD9QL~
 Qu.fff
 QueryPerformanceCounter
-R	V_sscanf
 RA+B(
 RBLegend
 RHH;C(t
@@ -4960,7 +4962,6 @@ SUVWAVH
 SUVWAWH
 SUVWH
 SUWATAVAWH
-SUWAUAWH
 SUWAVH
 SVAVAWH
 SVAVH
@@ -5294,6 +5295,7 @@ Symbol name "
 Synthetic oneofs must be after all other oneofs
 Syriac
 SystemInputLanguageChanged
+T	V_sscanf
 T$ E3
 T$ H+
 T$ H;
@@ -5493,13 +5495,13 @@ UATAUAVAWH
 UATAVH
 UAUAVH
 UAVAWH
+UD8%n
 UHH;UPt
 UIEngine()
 UIEngine()->GetCurrentFrameTime() >= m_flLastMotion - 1.0f
 UNKNOWN
 UNKNOWN_ENUM_VALUE_%s_%d
 USAVH
-USAWH
 USVWATAUAVAWH
 USVWATAUAVH
 USVWATAUH
@@ -5531,6 +5533,7 @@ UVWAUAVH
 UVWAUAWH
 UVWAVAWH
 UWATAUAVH
+UWATAUAWH
 UWATAVAWH
 UWAUAVAWH
 UWAVH
@@ -5706,7 +5709,6 @@ VolumeControl
 VolumeSliderPopup
 VolumeSliderValueChanged
 Vrad3_001
-W	V_stricmp_fast
 WARNING
 WATAUAVAWH
 WATAVH
@@ -5726,7 +5728,6 @@ WideCharToMultiByte
 WindowCursorHidden
 WindowCursorShown
 WindowGotFocus
-WindowHidden
 WindowLostFocus
 WindowOffScreen
 WindowOnScreen
@@ -5760,24 +5761,25 @@ Xt$PH
 Xt$hH
 Xt$xA;
 X|$|A;
-Y	V_strlower_fast
+X}tA;
+Y	V_stricmp_fast
 Y0HcR
-Y5i:	
+Y5Y:	
 Y9"SD
-Y=zw	
 Y>kX>M
 YD$@f
 Y_txt
 You can't interpolate a layout-position
-Z":$c9
 ZP~IIc
 Z\>z8
 Zod(^?
+[	V_strlower_fast
 [%s] 
 [*ncd>0
 [K]taM?
 [`fff
 [aOni*{
+[f95j
 [lazy = true] can only be specified for submessage fields.
 [object@%p]
 [packed = true] can only be specified for repeated primitive fields.
@@ -5803,6 +5805,7 @@ Zod(^?
 \$ VH
 \$ VWATAUAVH
 \$ VWAVH
+\$ VWAWH
 \$ WH
 \$ fI
 \$$9Y
@@ -5828,7 +5831,6 @@ Zod(^?
 \$0I+
 \$0L+@0H
 \$0eH
-\$0uJ
 \$5L3
 \$8A\^]
 \$8E3
@@ -5918,7 +5920,6 @@ Zod(^?
 \|$HH
 \|$TH
 \|$XA
-]	V_strtod
 ] is an invalid data character in JavaScript compatibility mode
 ])6M>&
 ]0H;w0t!H
@@ -5932,6 +5933,7 @@ Zod(^?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^fD;]
 ^u+fff
+_	V_strtod
 _ ;_$t
 _(H;u0t!H
 _-?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
@@ -6033,7 +6035,6 @@ _oD>Kg
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
-a	V_strupper_fast
 a numbered reference must not be zero
 a-?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z
 a7hIw
@@ -6096,7 +6097,6 @@ azure
 b?^Cy
 bAllocationCanFit
 bFound
-bI``7
 background-blur
 background-blur: gaussian( 6, 6, 1 );</pre>
 background-color
@@ -6210,6 +6210,7 @@ buffer-async
 buffer-sync
 burlywood
 bytes
+c	V_strupper_fast
 c HcC8
 c [1>H'
 c(>\,
@@ -6307,7 +6308,6 @@ curFilter[0] == '*' && curFilter[1] == '.'
 current_item
 cycle_class
 cycle_classes
-d	V_tanf
 d$ ;3}&M
 d$ A81
 d$ D!
@@ -6443,15 +6443,13 @@ extendee
 extension_range
 extern "C" 
 extrazoomout
+f	V_tanf
 f9)u4H9j
 f9)u:H
 f9,Ju
 f9,~u
-f9-4z
-f9-6=
-f9-o=
-f95	g
-f95)e
+f959d
+f95Su
 f9<Ju
 f9Exu#H
 f9Q(u
@@ -6480,33 +6478,36 @@ fB9<A}1L
 fB9<Bu
 fB9<Hu
 fB9<{u
+fC;D0
 fD9	t(L
 fD9 t
 fD9!H
 fD9!u
 fD9$Hu
-fD9%$
-fD9%+
-fD9%Q
-fD9%^h
-fD9%u
-fD9%~
+fD9% 
+fD9%(w
+fD9%;
+fD9%G
+fD9%T
+fD9%ng
+fD9%t
+fD9%{
 fD9'u
 fD9,Au
 fD9,pu
-fD9-/
-fD9-p
+fD9-P
 fD91uTL9r
 fD94Au
 fD94H}aD
 fD94Q}
 fD94iu
 fD95-
-fD95h
+fD95=
+fD95x
 fD98@
 fD98u
 fD9;u
-fD9=3a
+fD9=C`
 fD9t$b
 fE9,Fu
 fE98t'
@@ -6590,6 +6591,7 @@ framewidth
 frexp
 fuchsia
 function not supported
+g?qBb1
 g_iStylePropertyIndexNextFree < 255
 g_pCVar
 g_pPanoramaUIEngine
@@ -6738,7 +6740,6 @@ java_package
 java_string_check_utf8
 javascript:
 jj@0HK4
-jr^X+
 json_name = "
 jstype
 jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
@@ -7069,6 +7070,7 @@ ondblclick
 oneof_decl
 oneof_index
 onfocus
+onframechange
 oninputsubmit
 onload
 onmouseactivate
@@ -7124,7 +7126,7 @@ o|$0f
 p WATAUAVAWH
 p WAVAWH
 p*W4H
-p08@H^t
+p08@H^
 p0R^G'
 p;Y>u
 p@HPX`h
@@ -7544,7 +7546,6 @@ r$;3|
 r'?IsolateFromNeverReadOnlySpaceObject@internal@v8@@YAPEAVIsolate@12@_K@Z
 r7f;\$|
 r:f;\$|
-rH%@Q
 rKf;\$t
 rNf;\$t
 r_f;\$l
@@ -7767,11 +7768,13 @@ t	D8't
 t	D9&t
 t	Hcp
 t	f95
-t	f95_u
+t	f95U
 t D8h
 t D9A
 t H;}
 t!H9C
+t!HcA
+t!HcI
 t!L9{
 t!fff
 t"$`< u
@@ -7825,7 +7828,6 @@ t$8H+
 t$8Hc
 t$8Hk
 t$8I+
-t$8Ic
 t$8Lcq
 t$8ff
 t$8u&H
@@ -7894,7 +7896,7 @@ t*HcA
 t*HcC
 t+D88t&H
 t+H+}
-t,f95\
+t,f95
 t-Lck
 t.fA;
 t.fff
@@ -7903,21 +7905,22 @@ t1<.up
 t4I92u/M
 t5A9>t
 t6H95
-t6H95g!
+t6H957!
+t6H95Y 
 t6f95
 t7HcP
 t7L9%
 t8IcD$
-t8f959M
+t8f959L
 t9D8 t4L
-t:L9%
+t:L9%T
 t;<,uKH
 t;HcB
 t;LcF
 t<HcE
 t=f95
 t?HcS
-t@f9=
+t@f9=|*
 tEHcR
 tIHcA
 tIHcC
@@ -7929,7 +7932,7 @@ tRLcY
 tSf91tNH
 tTA8~TtNA
 tU;\$0tH
-tUH95I
+tUH95
 tUH99uPL
 tUvS@2
 tV@8/tQ@8
@@ -7939,13 +7942,14 @@ t]fff
 t^HcC
 t_Ic6
 t_L9>t
-t`f950
+t`f95
 taHcC
 tabid
 tabindex
 target
 targetid
 tbJ9|
+tcIcD
 tchinese
 teD9O
 template-parameter-
@@ -8076,10 +8080,10 @@ u,!T$(H!T$
 u-H;A
 u.H;A
 u.H;P
-u/f9-
+u/f9-$
 u1!D$0H
 u1fff
-u2fD9%/v
+u2fD9%?u
 u3HcH<H
 u4D9v
 u4I9}(
@@ -8090,7 +8094,7 @@ u:B8D7
 u;8^Eu6H
 u<g~l<it[<ntP<ot,<pt
 u>D8s0u8
-u?8Chu:f9-
+u?8Chu:f9-T
 uA8Ghu<f95
 uED8r(t
 uTM9<$tN
@@ -8098,7 +8102,7 @@ uWH9k
 u[HcC ;G uR
 u^8D$ tX
 u`D8s0tZH
-ucf9-
+ucf9-X
 ui-scale
 ui-scale-x
 ui-scale-y
@@ -8225,7 +8229,6 @@ x AVHcA
 x UATAUAVAWH
 x UAVAWH
 x#D;Bh}
-x,HcC
 x-offset
 x0H+x
 xA]_^[
@@ -8238,7 +8241,7 @@ xA_A^_^][
 xWI96tRI
 x_^][
 xdigit
-xrHcE
+x~HcC
 y-offset
 y\PD>!
 yellow
@@ -8309,10 +8312,10 @@ zoomwithuiscale
 |$0E9}
 |$0H;
 |$0Hc
-|$0L9l$xt
 |$0L;d$h
 |$0M+
 |$0f9
+|$0ff
 |$0t5H
 |$0~4H
 |$89C0u
@@ -8326,7 +8329,6 @@ zoomwithuiscale
 |$8fD
 |$8u)H
 |$8u-
-|$8uW
 |$@	u
 |$@-D
 |$@;3}
@@ -8392,7 +8394,6 @@ zoomwithuiscale
 |c;K(t^A
 }'HcC
 });C$
-});G$
 })Ic@
 }0HcC
 }1;C$
@@ -8400,7 +8401,7 @@ zoomwithuiscale
 }:;_$
 }LuHO
 }fMcU,M
-}i;{$
+}u;{$
 ~	;~d
 ~ 	uIH
 ~ $s%r

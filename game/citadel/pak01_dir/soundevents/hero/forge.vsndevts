@@ -4,8 +4,8 @@
 	{
 		base = "Base.Weapon"
 		preload_vsnds = true
-		limiter_max = 3.000000
-		volume_fade_out = 0.100000
+		limiter_max = 1.000000
+		volume_fade_out = 0.200000
 		volume = 2.000000
 		vsnd_files = 
 		[
@@ -15,6 +15,8 @@
 			"sounds/weapons/forge/forge_weapon_fire_04.vsnd",
 			"sounds/weapons/forge/forge_weapon_fire_05.vsnd",
 			"sounds/weapons/forge/forge_weapon_fire_06.vsnd",
+			"sounds/weapons/forge/forge_weapon_fire_07.vsnd",
+			"sounds/weapons/forge/forge_weapon_fire_08.vsnd",
 		]
 		vsnd_duration = 1.773197
 	}
@@ -48,65 +50,24 @@
 	}
 	Forge.Wpn.SpinUp.Start = 
 	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Forge.Wpn.SpinUp.Start.Click"
-		soundevent_02 = "Forge.Wpn.SpinUp.Start.Servo"
-		soundevent_03 = "Forge.Wpn.SpinUp.Start.Tech"
-		volume = 0.800000
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-	}
-	Forge.Wpn.SpinUp.Start.Click = 
-	{
-		base = "Base.Hero.Weapon.Reload.3d"
+		base = "Base.Weapon"
 		volume = -10.000000
-		vsnd_files = "sounds/weapons/forge/spin/up_click.vsnd"
-		vsnd_duration = 2.182979
-	}
-	Forge.Wpn.SpinUp.Start.Servo = 
-	{
-		base = "Base.Hero.Weapon.Reload.3d"
-		volume = -10.000000
-		vsnd_files = "sounds/weapons/forge/spin/up_servo.vsnd"
-		vsnd_duration = 1.131646
-	}
-	Forge.Wpn.SpinUp.Start.Tech = 
-	{
-		base = "Base.Hero.Weapon.Reload.3d"
-		volume = -10.000000
-		vsnd_files = "sounds/weapons/forge/spin/up_tech.vsnd"
-		vsnd_duration = 1.779667
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
 	}
 	Forge.Wpn.Spin.Lp = 
 	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Forge.Wpn.SpinUp.Start.Click"
-		soundevent_02 = "Forge.Wpn.SpinUp.Start.Servo"
-		volume = 1.000000
-		use_01 = 1.000000
-		use_02 = 1.000000
-	}
-	Forge.Wpn.Spin.Lp1 = 
-	{
-		base = "Base.Hero.Weapon.Reload.3d"
+		base = "Base.Weapon"
 		volume = -10.000000
-		vsnd_files = "sounds/weapons/forge/spin/lp1.vsnd"
-		vsnd_duration = 2.154292
-	}
-	Forge.Wpn.Spin.Lp2 = 
-	{
-		base = "Base.Hero.Weapon.Reload.3d"
-		volume = -10.000000
-		vsnd_files = "sounds/weapons/forge/spin/lp2.vsnd"
-		vsnd_duration = 0.947354
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
 	}
 	Forge.Wpn.Spin.Down = 
 	{
-		base = "Base.Hero.Weapon.Reload.3d"
+		base = "Base.Weapon"
 		volume = -10.000000
-		vsnd_files = "sounds/weapons/forge/spin/down.vsnd"
-		vsnd_duration = 1.404042
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
 	}
 	Engineer.ZoomIn = 
 	{
@@ -628,6 +589,7 @@
 			"sounds/player/footsteps/forge/forge_footstep_14.vsnd",
 			"sounds/player/footsteps/forge/forge_footstep_15.vsnd",
 		]
+		vsnd_duration = 0.760998
 	}
 	Engineer.MovementFoley = 
 	{

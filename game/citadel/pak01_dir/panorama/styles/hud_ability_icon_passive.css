@@ -33,7 +33,7 @@
 	margin-bottom: 20px;
 }
 
-.wants_scoreboard #slot_signature_1 #button_container,.wants_scoreboard #slot_signature_4 #button_container,.detail_view #slot_signature_1 #button_container,.detail_view #slot_signature_4 #button_container
+.wants_scoreboard #slot_signature_1 #button_container,.wants_scoreboard #slot_signature_4 #button_container,.gDetailView #slot_signature_1 #button_container,.gDetailView #slot_signature_4 #button_container
 {
 	margin-bottom: 20px;
 }
@@ -1161,7 +1161,7 @@ Label.ability_key
 	margin-bottom: 135px;
 }
 
-.wants_scoreboard #slot_signature_1 .stack_charges,.wants_scoreboard #slot_signature_2 .stack_charges,.wants_scoreboard #slot_signature_3 .stack_charges,.wants_scoreboard #slot_signature_4 .stack_charges,.detail_view #slot_signature_1 .stack_charges,.detail_view #slot_signature_2 .stack_charges,.detail_view #slot_signature_3 .stack_charges,.detail_view #slot_signature_4 .stack_charges
+.wants_scoreboard #slot_signature_1 .stack_charges,.wants_scoreboard #slot_signature_2 .stack_charges,.wants_scoreboard #slot_signature_3 .stack_charges,.wants_scoreboard #slot_signature_4 .stack_charges,.gDetailView #slot_signature_1 .stack_charges,.gDetailView #slot_signature_2 .stack_charges,.gDetailView #slot_signature_3 .stack_charges,.gDetailView #slot_signature_4 .stack_charges
 {
 	margin-bottom: 130px;
 }
@@ -1237,7 +1237,7 @@ Label.ability_key
 	visibility: collapse;
 }
 
-.detail_view .items #expanded_info
+.gDetailView .items #expanded_info
 {
 	visibility: collapse;
 }
@@ -1293,7 +1293,7 @@ CitadelHudAbilities CitadelHudAbilityUpgradePips
 	ui-scale: 60%;
 }
 
-.wants_scoreboard CitadelHudAbilities CitadelHudAbilityUpgradePips,.detail_view CitadelHudAbilities CitadelHudAbilityUpgradePips
+.wants_scoreboard CitadelHudAbilities CitadelHudAbilityUpgradePips,.gDetailView CitadelHudAbilities CitadelHudAbilityUpgradePips
 {
 	visibility: visible;
 }

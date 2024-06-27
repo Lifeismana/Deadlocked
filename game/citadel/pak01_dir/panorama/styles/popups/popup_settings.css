@@ -1442,9 +1442,30 @@ Slider.HorizontalSlider
 	height: 30px;
 }
 
-.CitadelSettingsSlider
+#MasterVolume
 {
-	width: 100%;
+	margin: 20px 0px;
+}
+
+CitadelSettingsSlider.volumeSlider
+{
+	width: 90%;
+}
+
+CitadelSettingsSlider
+{
+	tooltip-position: right;
+}
+
+CitadelSettingsSlider:hover
+{
+	brightness: 1.5;
+}
+
+#AudioSettings CitadelSettingsSlider.suboption
+{
+	width: 80%;
+	horizontal-align: left;
 }
 
 #AspectRatioPanel
@@ -2667,7 +2688,7 @@ CitadelSettingsEnum .EnumButton
 	visibility: visible;
 }
 
-#SoundGameVoiceVolume,#SoundGameVolume
+#SoundGameVoiceVolume
 {
 	visibility: collapse;
 }

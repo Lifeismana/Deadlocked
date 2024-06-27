@@ -6,6 +6,7 @@
 		<include src="s2r://panorama/styles/citadel_hud_ability_button.vcss_c" />
 	</styles>
 	<CitadelHudAbilityButton>
+		<GlobalClassListener classes="gDetailView" />
 		<Panel class="abilityImages">
 			<Label class="ImbuedLabel" text="#Citadel_Ability_IsImbued" />
 			<Label class="cooldownSeconds" text="{s:cooldown_sec}" />

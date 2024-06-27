@@ -17,6 +17,7 @@
 							<Label text="#citadel_settings_game" class="SectionHeader" />
 							<ToggleButton class="CheckBox" id="EnableConsoleCheckbox" text="#citadel_settings_enable_console" onactivate="CitadelUpdateEnableConsole();" onmouseover="UIShowTextTooltipStyled( #citadel_settings_enable_console_tooltip , OptionsTooltip)" onmouseout="UIHideTextTooltip()" />
 							<CitadelSettingsCheckbox convar="citadel_camera_pitch_inverted" text="#citadel_camera_pitch_inverted" />
+							<CitadelSettingsCheckbox convar="cl_citadel_zoom_is_toggle" text="#citadel_camera_zoom_is_toggle" />
 							<CitadelSettingsSlider convar="sensitivity" min="0.05" max="8.0" percentage="false" displayprecision="2" text="#citadel_settings_mousesensitivity" />
 						</Panel>
 					</Panel>
@@ -147,11 +148,11 @@
 						<Panel class="SettingsSection">
 							<Label text="#citadel_settings_volume" class="SectionHeader" />
 							<Panel class="SectionHeaderLine" />
-							<CitadelSettingsSlider convar="volume" min="0.0" max="1.0" percentage="true" updateonvaluechange="true" text="#citadel_settings_mastervolume" />
-							<CitadelSettingsSlider id="SoundGameVolume" convar="snd_gamevolume" min="0.0" max="1.0" percentage="true" text="#citadel_settings_gamevolume" />
-							<CitadelSettingsSlider convar="snd_musicvolume" min="0.0" max="1.0" percentage="true" text="#citadel_settings_musicvolume" />
-							<CitadelSettingsSlider convar="snd_voipvolume" min="0.0" max="2.0" percentage="true" text="#citadel_settings_voicevolume" />
-							<CitadelSettingsSlider id="SoundGameVoiceVolume" convar="snd_gamevoicevolume" min="0.0" max="1.0" percentage="true" text="#citadel_settings_gamevoicevolume" />
+							<CitadelSettingsSlider id="MasterVolume" class="volumeSlider" convar="volume" min="0.0" max="1.0" percentage="true" updateonvaluechange="true" text="#citadel_settings_mastervolume" onmouseover="UIShowTextTooltip( #citadel_settings_mastervolume_desc )" onmouseout="UIHideTextTooltip()" />
+							<CitadelSettingsSlider class="suboption volumeSlider" id="SoundGameVolume" convar="snd_gamevolume" min="0.0" max="1.0" percentage="true" text="#citadel_settings_gamevolume" onmouseover="UIShowTextTooltip( #citadel_settings_gamevolume_desc )" onmouseout="UIHideTextTooltip()" />
+							<CitadelSettingsSlider class="suboption volumeSlider" convar="snd_musicvolume" min="0.0" max="1.0" percentage="true" text="#citadel_settings_musicvolume" onmouseover="UIShowTextTooltip( #citadel_settings_musicvolume_desc )" onmouseout="UIHideTextTooltip()" />
+							<CitadelSettingsSlider class="suboption volumeSlider" convar="snd_voipvolume" min="0.0" max="2.0" percentage="true" text="#citadel_settings_voicevolume" onmouseover="UIShowTextTooltip( #citadel_settings_voicevolume_desc )" onmouseout="UIHideTextTooltip()" />
+							<CitadelSettingsSlider id="SoundGameVoiceVolume" class="suboption volumeSlider" convar="snd_gamevoicevolume" min="0.0" max="1.0" percentage="true" text="#citadel_settings_gamevoicevolume" onmouseover="UIShowTextTooltip( #citadel_settings_gamevoicevolume_desc )" onmouseout="UIHideTextTooltip()" />
 							<Button onactivate="CitadelSetAudioDefaults()" class="ButtonBevel" id="AudioDefaultsButton">
 								<Label text="#citadel_settings_audiodefaults" />
 							</Button>

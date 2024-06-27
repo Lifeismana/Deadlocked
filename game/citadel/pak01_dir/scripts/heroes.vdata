@@ -17,7 +17,7 @@
 		m_HeroID = 0
 		m_strModelName = resource_name:"models/heroes_staging/gen_man/gen_man.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -626,7 +626,7 @@
 		m_HeroID = 1
 		m_strModelName = resource_name:"models/heroes_staging/inferno_v4/inferno.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -1283,7 +1283,7 @@
 		m_HeroID = 2
 		m_strModelName = resource_name:"models/heroes_staging/gigawatt_prisoner/gigawatt_prisoner.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -1302,11 +1302,11 @@
 			EWeaponPowerScale = 1
 			EProcBuildUpRateScale = 1
 			EStamina = 3
-			EBaseHealthRegen = 2.000000
+			EBaseHealthRegen = 1.000000
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
-			ETechArmorDamageReduction = 15.000000
+			EBulletArmorDamageReduction = 20.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -2007,14 +2007,14 @@
 		m_HeroID = 3
 		m_strModelName = resource_name:"models/heroes_staging/hornet_v3/hornet.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
 		m_nModelSkin = 0
 		m_mapStartingStats = 
 		{
-			EMaxMoveSpeed = 7
+			EMaxMoveSpeed = 8
 			ESprintSpeed = 0
 			ECrouchSpeed = 4.750000
 			EMoveAcceleration = 4
@@ -2667,7 +2667,7 @@
 		m_HeroID = 4
 		m_strModelName = resource_name:"models/heroes_staging/ghost/ghost.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -3323,7 +3323,7 @@
 		m_HeroID = 6
 		m_strModelName = resource_name:"models/heroes_staging/atlas_detective_v2/atlas_detective.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -3978,7 +3978,7 @@
 		m_HeroID = 7
 		m_strModelName = resource_name:"models/heroes_staging/wraith_gen_man/wraith_gen_man.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -4017,7 +4017,7 @@
 			ESlot_Ability_Innate_1 = "citadel_ability_dash"
 			ESlot_Ability_Innate_2 = "citadel_ability_sprint"
 			ESlot_Ability_Innate_3 = "citadel_ability_melee_parry"
-			ESlot_Signature_1 = "citadel_ability_psychic_daggers"
+			ESlot_Signature_1 = "citadel_ability_card_toss"
 			ESlot_Signature_2 = "citadel_ability_projectmind"
 			ESlot_Signature_3 = "citadel_ability_wraith_rapidfire"
 			ESlot_Signature_4 = "citadel_ability_psychic_lift"
@@ -4623,7 +4623,6 @@
 		m_strTopBarVertical = panorama:"file://{images}/heroes/wraith_vertical.psd"
 		m_mapWIPAbilities = 
 		{
-			ESlot_Signature_1 = "citadel_ability_card_toss"
 			ESlot_Signature_3 = "citadel_ability_psychic_pulse"
 		}
 	}
@@ -4642,7 +4641,7 @@
 		m_HeroID = 8
 		m_strModelName = resource_name:"models/heroes_staging/engineer/engineer.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -5301,14 +5300,14 @@
 		m_HeroID = 10
 		m_strModelName = resource_name:"models/heroes_staging/chrono/chrono.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
 		m_nModelSkin = 0
 		m_mapStartingStats = 
 		{
-			EMaxMoveSpeed = 7
+			EMaxMoveSpeed = 6.500000
 			ESprintSpeed = 0
 			ECrouchSpeed = 4.750000
 			EMoveAcceleration = 4
@@ -5846,7 +5845,6 @@
 		}
 		m_mapScalingStats = 
 		{
-			EMaxMoveSpeed = 6.500000
 		}
 		m_heroStatsDisplay = 
 		{
@@ -5951,7 +5949,7 @@
 		m_HeroID = 11
 		m_strModelName = resource_name:"models/heroes_staging/prof_dynamo/prof_dynamo.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -6611,7 +6609,7 @@
 		m_HeroID = 12
 		m_strModelName = resource_name:"models/heroes_staging/kelvin_v2/kelvin.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -7263,7 +7261,7 @@
 		m_HeroID = 13
 		m_strModelName = resource_name:"models/heroes_staging/haze/haze.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -7923,7 +7921,7 @@
 		m_HeroID = 14
 		m_strModelName = resource_name:"models/heroes_staging/astro/astro.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -8552,7 +8550,7 @@
 		m_HeroID = 15
 		m_strModelName = resource_name:"models/heroes_staging/bebop/bebop.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -9211,7 +9209,7 @@
 		m_HeroID = 16
 		m_strModelName = resource_name:"models/heroes_staging/nano/nano_v2/nano.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -9861,7 +9859,7 @@
 		m_HeroID = 17
 		m_strModelName = resource_name:"models/heroes_staging/archer/archer.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -10525,7 +10523,7 @@
 		m_HeroID = 18
 		m_strModelName = resource_name:"models/heroes_staging/digger/digger.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -10544,7 +10542,7 @@
 			EWeaponPowerScale = 1
 			EProcBuildUpRateScale = 1
 			EStamina = 3
-			EBaseHealthRegen = 2.500000
+			EBaseHealthRegen = 3
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
@@ -11183,7 +11181,7 @@
 		m_HeroID = 19
 		m_strModelName = resource_name:"models/heroes_staging/shiv/shiv.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -11206,7 +11204,6 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
-			EBulletArmorDamageReduction = -15.000000
 			ETechArmorDamageReduction = 10.000000
 		}
 		m_flCollisionRadius = 20
@@ -11842,7 +11839,7 @@
 		m_HeroID = 20
 		m_strModelName = resource_name:"models/heroes_staging/tengu/tengu_v2/tengu.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -12501,7 +12498,7 @@
 		m_HeroID = 21
 		m_strModelName = resource_name:"models/heroes_staging/kali/kali.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -13126,7 +13123,7 @@
 		m_HeroID = 25
 		m_strModelName = resource_name:"models/heroes_staging/warden/warden.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -13786,7 +13783,7 @@
 		m_HeroID = 27
 		m_strModelName = resource_name:"models/heroes_staging/yamato_v2/yamato.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -14439,7 +14436,7 @@
 		m_HeroID = 31
 		m_strModelName = resource_name:"models/heroes_staging/lash_v2/lash.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -15091,7 +15088,7 @@
 		m_HeroID = 35
 		m_strModelName = resource_name:"models/heroes_staging/viscous/viscous.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -15133,7 +15130,7 @@
 			ESlot_Weapon_Secondary = "citadel_weapon_viscous_alt"
 			ESlot_Signature_1 = "viscous_goo_grenade"
 			ESlot_Signature_2 = "viscous_restorative_goo"
-			ESlot_Signature_3 = "viscous_goo_mastery"
+			ESlot_Signature_3 = "viscous_telepunch"
 			ESlot_Signature_4 = "viscous_goo_puddle"
 		}
 		m_mapItemSlotInfo = 
@@ -15721,7 +15718,7 @@
 		m_HeroID = 38
 		m_strModelName = resource_name:"models/heroes_staging/gunslinger/gunslinger.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -16343,7 +16340,7 @@
 		m_HeroID = 39
 		m_strModelName = resource_name:"models/heroes_staging/yakuza/yakuza.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -16965,7 +16962,7 @@
 		m_HeroID = 46
 		m_strModelName = resource_name:"models/heroes_staging/gen_man/gen_man.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -17586,7 +17583,7 @@
 		m_HeroID = 47
 		m_strModelName = resource_name:"models/heroes_staging/tokamak/tokamak.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -18209,7 +18206,7 @@
 		m_HeroID = 48
 		m_strModelName = resource_name:"models/heroes_staging/wrecker/wrecker.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -18862,7 +18859,7 @@
 		m_HeroID = 49
 		m_strModelName = resource_name:"models/heroes_staging/rutger/rutger.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -19485,7 +19482,7 @@
 		m_HeroID = 50
 		m_strModelName = resource_name:"models/heroes_staging/synth/synth.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -20138,7 +20135,7 @@
 		m_HeroID = 51
 		m_strModelName = resource_name:"models/heroes_staging/thumper/thumper.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -20760,7 +20757,7 @@
 		m_HeroID = 52
 		m_strModelName = resource_name:"models/heroes_staging/mirage/mirage.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -21413,7 +21410,7 @@
 		m_HeroID = 53
 		m_strModelName = resource_name:"models/heroes_staging/slork/slork.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -22039,7 +22036,7 @@
 		m_HeroID = 54
 		m_strModelName = resource_name:"models/heroes_staging/cadence/cadence.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -22662,7 +22659,7 @@
 		m_HeroID = 55
 		m_strModelName = resource_name:"models/heroes_staging/gen_man/gen_man.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"
@@ -23284,7 +23281,7 @@
 		m_HeroID = 56
 		m_strModelName = resource_name:"models/heroes_staging/gen_man/gen_man.vmdl"
 		m_hDamageTakenParticle = resource_name:"particles/generic/player_damage_screen.vpcf"
-		m_hGroundDamageTakenParticle = resource_name:"particles/abilities/inferno/inferno_incendiary_debuff_screen.vpcf"
+		m_hGroundDamageTakenParticle = resource_name:"particles/generic/player_ground_damage_screen.vpcf"
 		m_hDeathParticle = resource_name:"particles/generic/player_death_screen.vpcf"
 		m_hLowHealthParticle = resource_name:"particles/generic/player_low_health_screen.vpcf"
 		m_hRespawnParticle = resource_name:"particles/generic/player_respawn_deploy.vpcf"

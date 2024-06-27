@@ -266,6 +266,7 @@
 	Haze.BulletFlurry.Cast.Delay = 
 	{
 		base = "Base.Ability.Ult"
+		play_from_listener_player = 1.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_delay.vsnd"
 		vsnd_duration = 1.852698
@@ -276,6 +277,7 @@
 		volume = 2.000000
 		delay_rand_max = -10.000000
 		volume_fade_out = 0.250000
+		play_from_listener_player = 1.000000
 		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_lp.vsnd"
 		vsnd_duration = 12.049070
 	}
@@ -305,6 +307,7 @@
 			"sounds/player/footsteps/haze/haze_step_10.vsnd",
 			"sounds/player/footsteps/haze/haze_step_11.vsnd",
 		]
+		vsnd_duration = 0.744331
 	}
 	Haze.MovementFoley = 
 	{

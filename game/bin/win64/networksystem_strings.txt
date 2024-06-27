@@ -23,7 +23,6 @@
 	PFT_SOUND
 	TYPE_BOOL
 	TYPE_ENUM
-	Utf7
 	V_vsnprintf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
@@ -71,8 +70,13 @@
  	uIH
         
                           
+                         %9s%9s%9s   See also
+           delay is chosen using the exponential distribution.
            per client out %.1f, in %.1f kB/s
            per client out %.1f/s, in %.1f/s
+         Delay . . . . : %9s%9s
+         Max . . . . . : %9s%9s
+         Percentage. . : %9s%9s
     Actual    : 
     Expected  : 
     Field type: 
@@ -120,22 +124,21 @@
  (%s%s)
  (%s)
  (08@HPX`hpx
- (08@HPX`j@
+ (08@HPX`j
  (08@HPXb
- (08@HPZ@
+ (08@HPZ
  (08@HR
  (08@J
- (08@J@
- (0:@
  (0X`hpz
  - keeping around as cacheable shared connection
  ... }
  0"r$4&
- 9E(|KH
+ 9E(|IH
  = { <proto text format> }". To set fields within it, use syntax like "
  A\_[
  A\_^
  A\_^][
+ A]A\_^[
  A^A\^
  A^A\_^[
  A^A\_^]
@@ -153,10 +156,8 @@
  A^_^
  A^_^H
  A^_^][
- A_A\_
  A_A\_^[
  A_A\_^]
- A_A]_^[
  A_A]_^]
  A_A^A\
  A_A^A\][
@@ -194,7 +195,6 @@
  Hc)L
  Hc*H
  Hc1L
- Hc5%
  Hc9L
  HcD$PI
  HcD$`I
@@ -264,7 +264,6 @@
  teH;
  tjL;
  type does not match
- u%9l
  { ... };
  } from:
 !#GameUI_Disconnect_ConnectionLost
@@ -410,7 +409,6 @@
 "NETWORK_DISCONNECT_STEAM_OWNERSHIP
 "SPAWN_GROUP_CREATE_NEW_SCENE_WORLD
 "SPAWN_GROUP_IS_INITIAL_SPAWN_GROUP
-"as=`
 "e" must be followed by exponent.
 "e?<<<<<<l?
 "eQueryCvarValueStatus_CvarNotFound
@@ -548,6 +546,8 @@ $schemasystem/schema_enable_defines.h
 %-5d %-20s : [%-5d -> %-5d] %-5s bits:  %-32s %-80s : '%s' %s
 %-75s %-75s offset %10.10s %9.9s %s
 %.12s @ %s
+%.2f%%
+%.2fms
 %.3f %% of entities have non-zero metadata entries
 %20.20s 
 %20.20s %s is variant %d/%d of %s
@@ -575,7 +575,6 @@ $schemasystem/schema_enable_defines.h
 %d %d %d
 %d %d %d %d
 %d %s %u, 
-%d %s field end <= start (start %d -> end %d) (width %d)
 %d (%d peak) fields allocated in mempool
 %d / %s "%s" thinking for %.02f ms!!!
 %d [%s,%s] %s
@@ -751,6 +750,7 @@ $schemasystem/schema_enable_defines.h
 (A^A\^[
 (A^A\_^
 (A^A]^[
+(A^A]_^
 (A^^][
 (A^_][
 (A^_^[
@@ -806,9 +806,11 @@ $schemasystem/schema_enable_defines.h
 (_^][
 (cannot determine missing fields for lite message)
 (compressed)
+(d$`D
 (f*^[0
 (intp)this % 8 == 0
 (l$ D
+(l$PL
 (m_nAllocatedFlags & 0x8000000000000000) == 0
 (m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
 (m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
@@ -838,7 +840,6 @@ $schemasystem/schema_enable_defines.h
 (|$0@
 (|$0D
 (|$@9
-(|$@D
 (|$@E
 (|$PI
 (|$`H
@@ -877,20 +878,21 @@ $schemasystem/schema_enable_defines.h
 )NETWORK_DISCONNECT_PURESERVER_CLIENTEXTRA
 )NETWORK_DISCONNECT_REQUEST_HOSTSTATE_IDLE
 )\$`H
+)\$pE
 )d$PA
-)d$pE
+)d$`E
 )l$ D
 )l$@E
-)l$`E
+)l$PE
 )l$pD
 )t$0E
 )t$0H
 )t$0L
 )t$0f
 )t$@D
+)t$@E
 )t$@H
 )t$P+
-)t$PE
 )t$PM
 )t$Pf
 )t$`A
@@ -898,10 +900,10 @@ $schemasystem/schema_enable_defines.h
 )t$pH
 )t$pL
 )|$ E
+)|$0E
 )|$0t+
 )|$@A
 )|$@D
-)|$@E
 )|$PA
 )|$`D
 )|$pD
@@ -929,7 +931,6 @@ $schemasystem/schema_enable_defines.h
 +NETWORK_DISCONNECT_STEAM_VAC_CHECK_TIMEDOUT
 +Xt@(
 +YA1H
-+\$PH
 +f)>0'
 +h->|
 +o'q)}
@@ -1368,7 +1369,7 @@ $schemasystem/schema_enable_defines.h
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
-08@HR@
+08@HR
 0><[cZUg^>
 0A\^[
 0A\_^
@@ -1391,6 +1392,7 @@ $schemasystem/schema_enable_defines.h
 0A_A^A\_^
 0A_A^A\_^][
 0A_A^A]
+0A_A^A]A\^
 0A_A^A]A\_
 0A_A^A]A\_^[
 0A_A^A]A\_^]
@@ -1438,7 +1440,7 @@ $schemasystem/schema_enable_defines.h
 220801000000Z
 230714000000Z
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240620161257Z0/
+240627183144Z0/
 241009235959Z0a1
 25.CSource2Metrics_MatchPerfSummary_Notification.Client
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1468,10 +1470,10 @@ $schemasystem/schema_enable_defines.h
 6*f(_
 6I]Dc
 6L9t$0t
-6Lc6D;v
 6OB,n_
 6YA1H
 70503
+7Lc>D;~
 7YA1H
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
@@ -1492,7 +1494,7 @@ $schemasystem/schema_enable_defines.h
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
-8E`tF
+8E`tHE
 8HcA H
 8L;l$`
 8NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
@@ -1550,6 +1552,7 @@ $schemasystem/schema_enable_defines.h
 :>)*	v
 :>t6k'
 :F<N:V>
+:L9c8u
 :L9s8u
 :M9w8u
 :YA1H
@@ -1557,27 +1560,23 @@ $schemasystem/schema_enable_defines.h
 ;.u1L
 ;@t3H
 ;A$|cH
-;A0}LE
-;B0}	Ic
-;B0}=Ic
-;B0}LH
-;D$\}
+;A0}LA
+;B0}MH
 ;D$`t
 ;Eh~AA
-;F0}@Hc
 ;Fh~AA
 ;Fl~AA
 ;H9>&X
 ;HcK(;
 ;I9}(tiH
 ;Jh~EA
-;L9}`t
 ;Nh~AA
 ;Nh~CA
 ;\$p|
 ;_8~.H
 ;q }kH
 ;s8~.H
+;w8~.H
 ;{,}"H
 ;{8~.H
 ;|$0|
@@ -1603,8 +1602,7 @@ $schemasystem/schema_enable_defines.h
 <undefined>
 <unknown>
 <utK@:
-<yHcL$xA
-=	V_qsort_s
+<|HcL$pA
 =YA1H
 =imb;D
 =rIQU
@@ -1616,6 +1614,7 @@ $schemasystem/schema_enable_defines.h
 >f;D$0t
 >f;D$4t
 >jtm}S
+?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?456789:;<=
@@ -1776,17 +1775,18 @@ $schemasystem/schema_enable_defines.h
 @.data
 @.reloc
 @08@HPX`hpx
-@08N@
+@08Np
 @0;B0
 @0HcB
 @4A;A4upI
 @4HcG 
 @8(tX
 @8(u	
+@8-'`
 @82uH
 @84)u
 @848u
-@8;tf3
+@8;te3
 @8<(u
 @8<0u
 @8<2u
@@ -1804,19 +1804,20 @@ $schemasystem/schema_enable_defines.h
 @8n"t
 @8n"uH
 @8n"uL
+@8o!t
 @8s"t
-@8w!t
 @8w"t
 @8w"uH
 @8w"uI
 @8w"uL
 @8w$t
-@8w<u
 @8y*uS@8y+u:H
 @8z$u
 @8z%u
 @8{"t
 @8{(u
+@8|$rH
+@8|$rt
 @>%>b
 @@HcB ;B$u
 @A\][
@@ -1830,7 +1831,6 @@ $schemasystem/schema_enable_defines.h
 @A^_]
 @A^_^
 @A^_^][
-@A_A\_^[
 @A_A^A\
 @A_A^A\_[
 @A_A^A\_^
@@ -1850,7 +1850,7 @@ $schemasystem/schema_enable_defines.h
 @A__[
 @HHcB$;B(u
 @HPX&I
-@HPX`hv
+@HPX`hv0$
 @HcC8Hk
 @L9nHu$
 @L;d$p
@@ -1899,13 +1899,12 @@ $schemasystem/schema_enable_defines.h
 @SVAVAWH
 @SVAVH
 @SVWATAUAVAWH
+@SVWATAUH
 @SVWATAVAWH
-@SVWATAWH
 @SVWAUAVH
-@SVWAUAWH
+@SVWAUH
 @SVWAVAWH
 @SVWAVH
-@SVWAWH
 @SVWH
 @SWATAUH
 @SWATAWH
@@ -1916,6 +1915,7 @@ $schemasystem/schema_enable_defines.h
 @SWAWH
 @UATAUAVAWH
 @UAUAWH
+@UAUH
 @UAVAWH
 @UAVH
 @UAWH
@@ -1951,6 +1951,7 @@ $schemasystem/schema_enable_defines.h
 @VAWH
 @VWATAVH
 @VWATH
+@VWAUAVH
 @VWAVAWH
 @VWAVH
 @WATAUAWH
@@ -1966,7 +1967,7 @@ $schemasystem/schema_enable_defines.h
 @fD9d
 @fE9d
 @fE9l
-@ht I
+@htpJ
 @t!H;
 @t#H;
 @tZH;
@@ -2009,6 +2010,7 @@ A9,A$
 A96~j
 A9<Fu
 A9@(|
+A9@0t%H
 A9A,u
 A9FTu
 A9T$p~
@@ -2022,6 +2024,13 @@ A9w ~/
 A:8ucI
 A;,$}'H
 A;>}[H
+A;@0}	Hc
+A;D$0
+A;D$0}
+A;D$0}	Hc
+A;D$0}	Ic
+A;D$0}<Hc
+A;E0}:A
 A;F`u
 A;Fp~DA
 A;Ft~DA
@@ -2030,19 +2039,17 @@ A;Gh~CA
 A;Gx~@A
 A;G|~@A
 A;H }
-A;H0}	Hc
 A;Oh~DA
+A;T$0}
 A;T$p|
 A;U }.D
-A;W0|
-A;W0}
-A;\$8~2H
 A;](|
 A;]8|
 A;]P|
 A;]h|
 A;^ u
 A;^ |
+A;^8~/H
 A;_4v
 A;_8~/H
 A;_8~3
@@ -2050,19 +2057,21 @@ A;n(|
 A;p |bH
 A;t$8~2H
 A;} |
+A;}0|
 A;}8|
 A;}P|
 A;}h|
 A;~ |
-A;~8~/H
 A;~`|
 A>l$/
 A>pP&
 A@L;B
+AA:`C
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 AK>(v
+AO=Ag
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 AQD	A
 ATAUAVH
@@ -2073,15 +2082,16 @@ ATAWH
 AUAVAWH
 AUAWH
 AVAWH
+AVG        Mean delay, for packets that are jittered, in ms.  The random
 A]A\^[]
 A]A\_^[]
 A]A\_^]
+A]_^[
 A^A\^[
 A^A\_]
 A^A\_^[
 A^A\_^[]
 A^A]A\
-A^A]A\^[]
 A^A]A\_[]
 A^A]A\_]
 A^A]A\_^[]
@@ -2095,14 +2105,16 @@ A^_[H
 A^_^[]
 A^_^]
 A^_^][
+A_A\[]
 A_A\]
 A_A\][
 A_A\^[
 A_A\^]
+A_A\_]
 A_A\_^]
 A_A\_^][
-A_A]A\[]
 A_A]A\^[
+A_A]A\_[]
 A_A]A\_^[
 A_A]A\_^[]
 A_A]A\_^]
@@ -2119,7 +2131,7 @@ A_A^A\_^[]
 A_A^A\_^][
 A_A^A]A\[]
 A_A^A]A\]
-A_A^A]A\^[]
+A_A^A]A\^][
 A_A^A]A\_
 A_A^A]A\_[]
 A_A^A]A\_^[
@@ -2141,8 +2153,6 @@ A_A^_^[]
 A_A^_^]
 A_A^_^][
 A_^[]
-A__[]
-A__^[
 A`D	A
 Accepting Steam Net connection %s
 Access violation - no RTTI data!
@@ -2160,8 +2170,6 @@ AddOrUpdateFieldMetadata:  adding/updating %s with invalid array count %d!
 AddString
 AddUInt32
 AddUInt64
-Adding 0--%dms of additional latency to %g%% packets, for jitter / random reordering
-Adding additional packet lag of %dms (%dms send, %dms recv), Bernoulli loss of %g%%.
 AlignedByteArray not properly aligned
 Allowing IP connections without auth
 Already saw decimal point or exponent; can't have another one.
@@ -2171,6 +2179,7 @@ AnimationSystemUtils_001
 AnimationSystem_001
 Annotation
 AppPolicyGetProcessTerminationMethod
+Applied simulated network conditions from gameinfo.
 ApplyOverrides_R:  couldn't find field from schema %s::%s
 April
 AreFileApisANSI
@@ -2205,13 +2214,14 @@ B$D	B
 B(H9A(uaH
 B(I9A(
 B+4:I
-B4IcE@I
-B4IcE`I
+B4HcG@H
+B4HcGXH
 B8<2u
 B8D8`duxA9]
 B8HcX\
 B9<	u<I
 BC?>6t9^	c:>
+BDfA#
 BEPL+
 BF>^G
 BVD.Bz
@@ -2228,11 +2238,8 @@ Boolean default must be true or false.
 BufType
 Buffer overflow in net channel %s
 BuildDelta
-BuildDeltaProperites_Old
 BuildDeltaProperties fieldDataBuf
-BuildDeltaProperties_New
 BuildEntityClassNetworkSerializer
-BuildMergedSerializedEntity with bogus offsets!
 BuildMergedSerializedEntity:  delta header with corrupt array count [ ent %d ]:  entry %d/%d == %u!
 BuildMergedSerializedEntity:  ignoring %s, was in previous state only, now outside of valid range for root field %s [array count %d, base index %d]
 BuildMergedSerializedEntity:  problem writing %s:  %d bits [%d to %d] is < 1 bit!
@@ -2241,16 +2248,15 @@ Builtin
 Bytes
 BytesWire
 C ;C$t
-C H!o
 C H+X(
 C H+X(I
 C H;W
 C HcH
 C HcK$;
+C I!.H
 C$9C w&H
 C$HcK(Hc
 C$LcC
-C$weL
 C(D8(t
 C(D9C0D
 C(HcK,;
@@ -2799,10 +2805,7 @@ CSerializedEntities::CreateSerializedEntityBlob
 CSerializedEntities::ReportArrayCountError
 CSerializedEntity::ReportFieldBits
 CSerializedEntity::SetFieldInfo
-CSerializedEntity::SetFieldInfo with bogus offsets!
 CSerializedEntity::SetFinalFieldDataBits
-CSerializedEntity::SetPackedFieldOffsets
-CSerializedEntity::SetPackedFieldOffsets with bogus offsets!
 CSerializedEntity::SetPackedFields
 CSerializedEntity::WriteFields
 CSerializedEntityFieldIterator::GetBitRange
@@ -3273,6 +3276,7 @@ Cannot allocate abstract class
 Cannot deallocate abstract class
 Cannot deduce for class
 Cannot executed queued 'net_option' commands.  No InputService
+Cannot find jitter profile '%s' from gameinfo
 Cannot get here
 Cannot map steam net connection to ns_address??
 Cannot open file %s
@@ -3299,6 +3303,7 @@ CheckFlushQueuedSteamNetworkingSocketsConCommands
 Class does not allow allocation from its schema binding
 Class does not allow deallocation from its schema binding
 Class,Field,Field Path,Decode Count,Total Bits,Avg Bits,Total Index Bits,Avg Index Bits,Priority,=SUM(E:E),Full Name,Notes
+Clear all simulated network conditions
 ClearField
 ClearNetChanSteamConnection
 Client
@@ -3428,6 +3433,7 @@ D$8I;
 D$8L9
 D$8L;
 D$8f;
+D$8fA
 D$8fff
 D$8inf
 D$8nan
@@ -3451,6 +3457,7 @@ D$@nan
 D$@u5H
 D$DE3
 D$DHc
+D$H;D$\}
 D$HA;N(
 D$HB#
 D$HE3
@@ -3474,7 +3481,6 @@ D$PL;
 D$Pf;
 D$PfA
 D$X@8t$rt
-D$XD8D$rt
 D$XD9e
 D$XE3
 D$XH;
@@ -3506,23 +3512,21 @@ D$hf;
 D$hfD
 D$mH;
 D$pA+
+D$pA9D$
 D$pA;
-D$pB#
 D$pH;
 D$pHc
 D$pLcw0L
 D$pf;
+D$xB#
 D$xE3
 D$xH+
 D$xH;
-D$xHcM
 D$xHcT$pM
-D$xHcU
 D$xL9
 D$xLc
 D$xM+
 D$xf;
-D$xfD
 D$xt+I
 D+3L9c0u	
 D+A@H
@@ -3534,11 +3538,13 @@ D8!t9D
 D8!u	D8"
 D8(u	
 D8.uBH
+D80t,A
 D81uUL9r
 D84:u
-D88t,A
+D86tt3
+D86uFHc
 D8<8u
-D8>tt3
+D8='&!
 D8L$0u`
 D8T$1
 D8[(u
@@ -3548,6 +3554,7 @@ D8a*t5H
 D8a8I
 D8d$:H
 D8d$X
+D8g<t
 D8h*t6H
 D8i(u
 D8i*t8H
@@ -3560,18 +3567,20 @@ D8m	H
 D8o!t
 D8o"t
 D8q(u
+D8t$Au
+D8t$Cu
+D8t$Ht
 D8t$ht
 D8t$zu;fA
 D8u!t
+D8u:H
 D8{!t
 D8{"uG
 D8{8u+H
-D8|$Bu
-D8|$Cu
-D8|$Dt
 D8|$`t
 D9&~4I
 D9(~x
+D9=|,
 D9@(|
 D9AHu
 D9G@t
@@ -3580,7 +3589,6 @@ D9H(|
 D9I0t
 D9N8~^E3
 D9P }
-D9T$p
 D9ah~VM
 D9bp~0A
 D9c(~?
@@ -3589,7 +3597,7 @@ D9c0~7I
 D9c4~TI
 D9c8~X
 D9cH|
-D9cp~
+D9c`~
 D9cp~TI
 D9ct~UI
 D9d$ t+
@@ -3603,15 +3611,12 @@ D9v(~qA
 D9wt~fM
 D9yTu4
 D9{(~IA
-D;B0}	Ic
 D;Gx}
 D;I }
 D;J(|
-D;J0}
 D;L$Pu
-D;L$ps
 D;T$x|
-D;b0}
+D;d$\}
 D;l$4u-A
 D;q }pL9T$P
 D;q }uH
@@ -3621,9 +3626,8 @@ D;t$H|
 D;u sVH
 D;v(|
 D;w0|
-D;x L
 D;{(|
-D;|$\}
+D;|$hH
 D> 9E
 DIALOG_ASKCONNECT
 DIALOG_ENTRY
@@ -3638,7 +3642,6 @@ DTI: can't Flush(), no data to write.
 DTI: enabled from command line.
 DTI: was unable to open file '%s' for write!
 DTI: wrote client stats into %s. Session duration = %0.2f seconds, rowcount %d.
-Deadlock
 DebugCallback
 December
 Declared Class
@@ -3682,34 +3685,38 @@ E0HcH
 E0Lc`
 E0M9~
 E0M9~0t
-E0McE@I
-E8&uFHc
 E80t"A
 E84/u
 E8a(u
+E8g<u
+E8n<t
+E8n<u
+E8o<u
 E8q(u
 E8w!t
-E8{"uP
+E8{"u\
 E9`x~
 E9f ~3A
 E9f(~]
+E9g0t
 E9n`~/I
 E;A(|
 E;N }2Mc
 E;l$(
+E;l$0}
+E;n0}	Ic
 E;o(}kL
 E;w |
 E;|$(
 E;|$X
 E>nEA
-E@HcU
 E@I;F
 ED$8D
-EEXE3
+EEPE3
 EH*?H
 EHH;EPt
 EHHcI
-EL$`E
+EL$pE
 EL$xM
 ENetworkDisconnectionReason
 EPA	v
@@ -3717,9 +3724,6 @@ EPD	v
 EPD	w
 EPD	{
 EPD	~
-EPIcU`H
-EPIcU`L
-EPMcE`I
 EQueryCvarValueStatus
 ERROR
 ERROR! SendData %s data too big (%i)
@@ -3786,6 +3790,7 @@ ExitProcess
 Expanded map entry type 
 Expect a decimal number, got: 
 Expected "
+Expected AVG or PROFILE argument
 Expected double, got: 
 Expected eight hex digits up to 10ffff for \U escape sequence
 Expected four hex digits for \u escape sequence.
@@ -3825,7 +3830,7 @@ F(f9C(
 F(f9C(u
 F(f9G(
 F(f9G(u
-F84"u
+F84*u
 F89HXtRA
 F8H9Fhuw
 F9l2xu'B
@@ -3869,6 +3874,7 @@ Failed to query config value '%s'!
 Failed to save unsupported class
 Failed to set SteamNetworkingSockets option '%s'
 Failed to start listening for SDR on port %d.  Waiting and will retry
+FakeJitter
 FakeLag
 FakeLoss
 FakeReorderDelay
@@ -3992,7 +3998,6 @@ FreeEnvironmentStringsW
 FreeLibrary
 Friday
 F|Hc~`H
-G	V_sincosf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -4012,6 +4017,7 @@ G,fA;
 G-8F-
 G-u3H
 G09C0u
+G0LcG@H
 G49C4u
 G4A9C4
 G8D8`au
@@ -4028,7 +4034,10 @@ GD$(H
 GD$8H
 GD$HD
 GD8CDu
+GHHcWXH
+GHHcWXL
 GHL9d
+GHLcGXH
 GL$(f
 GL$8A
 GL$8L
@@ -4082,6 +4091,8 @@ GetEnvironmentStringsW
 GetFileSizeEx
 GetFileType
 GetFloat
+GetGlobalConfig_float
+GetGlobalConfig_int
 GetInt32
 GetInt64
 GetLastError
@@ -4132,7 +4143,7 @@ Gt$hH
 G|$8L
 G|$hH95
 G|9o`t
-G|L95
+G|L95tr
 H 8YKt
 H 8YKt	
 H @8iKt
@@ -4172,36 +4183,30 @@ H+x(H
 H+x8H
 H+x@H
 H-^Eu
-H40nC
 H9(t:H
 H9(tO
 H9+t!H
 H92tBA
-H93t	H
 H93t2H
 H93teH
 H97u+A
 H98t2
-H98t7
 H98tcA
 H9;t	H
 H9;tkH
 H9A s
 H9A u)M
 H9C H
-H9C u
 H9C(H
-H9C(t
 H9C8u
 H9D$P
 H9D$Pu>I
 H9D$h
 H9FPu<H
 H9G8t3
-H9KXs1H
+H9KPs1H
 H9L$8rnw
 H9L$Ht?H
-H9L$hs
 H9P s
 H9X s
 H9X u
@@ -4277,7 +4282,7 @@ HD;Ot|
 HH:mm:ss
 HHcA H
 HHcA I
-HHtff
+HHtdf
 H[><y5
 HammerMapLoader001
 HasField
@@ -4294,7 +4299,6 @@ HcAxE3
 HcB(H
 HcB(H;
 HcB(I
-HcB<D
 HcC ;
 HcC H
 HcC L
@@ -4310,6 +4314,7 @@ HcChI
 HcD$ H
 HcD$8D
 HcD$@L
+HcD$TH
 HcD$X
 HcD$XL;
 HcD$\H
@@ -4403,21 +4408,24 @@ HcGHI
 HcGLI
 HcGPI
 HcGTI
+HcGXD+
 HcGXI
 HcGXL
 HcG\I
 HcG\L
+HcG`A
 HcG`I
 HcGdI
 HcGhI
 HcGlI
+HcGxA
 HcH(H
 HcH(I
 HcK H
 HcK Hc
 HcK,I
+HcL$PH
 HcL$pH
-HcM8H
 HcO H
 HcO(D
 HcO8Hc
@@ -4426,10 +4434,9 @@ HcQ H
 HcQ(H
 HcQ<H
 HcT$$
+HcT$0I
 HcT$PH
-HcT$PL
 HcT$`H
-HcT$pH
 HcU ;
 HcU8;
 HcU8H
@@ -4438,10 +4445,13 @@ HcUPH
 HcUh;
 HcV ;
 HcV8;
+HcW@L
+HcWXH
 HcYDE3
 HcZ0Mc4$
 Hc\$@L
 Hc\$HL
+Hc\$T
 Hc^@A
 Hcl$ H
 HcphH
@@ -4455,6 +4465,7 @@ HelpSystem_001
 Hex and octal numbers must be integers.
 Host game server ip
 HostStateMgr001
+I	V_sincosf
 I#I0H
 I#J0H
 I#M0H
@@ -4466,6 +4477,8 @@ I(D9I0D
 I+4$H
 I+J(H
 I96uGA
+I9@ u
+I9@(t
 I9A$u
 I9D$XtmH
 I9F u
@@ -4497,7 +4510,9 @@ IPulseSystem_001
 IPv6 client not supported!
 ITDND
 Ic6A;v
+Ic<$A;|$
 Ic@8I
+Ic@<E
 IcA H
 IcA$H
 IcA(H
@@ -4519,12 +4534,9 @@ IcB@H
 IcD$p
 IcE H
 IcE8H
-IcE@I
 IcELH
 IcEPH
-IcE`D+
 IcEhH
-IcEpA
 IcF(H
 IcF,H
 IcF8H
@@ -4537,9 +4549,7 @@ IcO ;
 IcO8A;	}
 IcU ;
 IcU8;
-IcU@L
 IcUP;
-IcU`H
 IcV ;
 IcV0;
 IcV8;
@@ -4561,7 +4571,7 @@ If set, only net_showmsg spew for data inbound on this socket name e.g. client, 
 IfA9,
 IfA9<
 IfA9l
-IfD9|
+IfD9D
 Ignoring extension "
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 Il?333333c?
@@ -4593,6 +4603,9 @@ InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Interpreting non ascii codepoint %d.
 Invalid
+Invalid AVG argument '%s'
+Invalid MAX argument '%s'
+Invalid PCT argument '%s'
 Invalid access of CConVarRef for '%s'
 Invalid control characters encountered in text.
 Invalid descriptor
@@ -4637,7 +4650,7 @@ J<L4,&
 J>@G_
 JSType
 January
-Jnb>5
+Jitter:  Average . . . : %9s%9s%9s   net_fakejitter
 K HcC$Hc
 K$HcC
 K$HcC(;
@@ -4652,7 +4665,7 @@ K9D7 sv@2
 K<LcC8
 KERNEL32.dll
 KV3 instances cannot be set to an unspecified specific type
-KcL/ Hk
+KcL. Hk
 KdLcC`
 Key in map fields cannot be enum types.
 Key in map fields cannot be float/double, bytes or message types.
@@ -4673,14 +4686,12 @@ KeyValues3::Internal_ExpandCompactArray
 KeyValues3::Internal_FreeAllocation
 KeyValues3::Internal_GetArrayElementsArray
 KeyValues3::Internal_PrepareForInternalTypeAndNewData
-KeyValues3::Internal_SetValueAnyArray
 KeyValues3::IsValidTypeCombination
 KeyValues3::Metadata_GetFilename::<lambda_1>::operator ()
 KeyValues3::Metadata_GetLineColumn::<lambda_1>::operator ()
 KtLcCp
 K}*n:	
 K~Je#>!
-L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#^0I
@@ -4694,7 +4705,7 @@ L$ I+
 L$ I;
 L$ L+
 L$ L;
-L$ LcM
+L$ LcL$4
 L$ SH
 L$ SUVWH
 L$ SVWH
@@ -4737,15 +4748,14 @@ L$0fH
 L$0fI
 L$4+L$8
 L$4+L$H
+L$4E;
 L$8E3
 L$8H3
-L$8H;
 L$8f;
 L$8fI
 L$<;L$P
 L$<E3
 L$@;|
-L$@A+
 L$@D8m
 L$@E3
 L$@H3
@@ -4767,6 +4777,8 @@ L$PH3
 L$PH;
 L$PIc
 L$Pf;
+L$PfI
+L$X+\$|
 L$XD;
 L$XE3
 L$XH3
@@ -4774,13 +4786,14 @@ L$XH;
 L$XH;M
 L$XIc
 L$Xf;
-L$XfA
 L$`;M
 L$`H3
 L$`H;
 L$`Ic
+L$`L;
 L$`f;
 L$`fI
+L$`ff
 L$h;M
 L$hH+
 L$hH3
@@ -4814,8 +4827,12 @@ L+H0H
 L+i0I
 L9#t	H
 L9#u/H
+L9%V8
 L9(tZ
 L92tDA
+L95@C
+L95K'
+L95Qx
 L9;t	H
 L9;u	H
 L9>u%H
@@ -4825,7 +4842,8 @@ L9P s
 L9Qhs
 L9b(t
 L9c t
-L9d$XuMA
+L9c u
+L9d$Xt
 L9e@u$
 L9f u$
 L9f(u$
@@ -4845,17 +4863,21 @@ L9s u$H
 L9s0u*H
 L9t$0t
 L9t$@t
-L9u@t
+L9t$P
+L9t$PuIH
+L9t$`t
+L9t$pI
 L9uHt
 L9{0u	
-L9|$pI
 L9}0u$
 L;A r
 L;D$pu
 L;EPL
 L;Q s
 L;c u
+L;d$`
 L;l$8|
+L;l$`}
 L;t$(t|D
 L;{ u
 L;{ u?M
@@ -4872,7 +4894,9 @@ LI0D;
 LITE_RUNTIME
 LOG_GENERAL
 Label
+Latency. . . . . . . . : %7dms%7dms%7dms   net_fakelag
 Lc#E+
+Lc%r`
 Lc3A+
 Lc7D;w
 Lc;A+
@@ -4881,16 +4905,19 @@ LcA,L
 LcA<E3
 LcD$8
 LcD$8D;D$4|'
+LcD$HH
 LcD$hD;D$d|'
 LcL$@D;
 LcL$@H
 LcL$XH
-LcL$lH
 LcL$pH
 LcNXH
 LcO8H
+LcO@L
+LcOXL
 LcW@E
-Lcc`L
+LcWXL
+Lcc`H
 Lcd$PL
 Lcd$x
 LcfHL
@@ -4898,9 +4925,9 @@ Lcg(D;g8u
 Lcl$@D
 Lcl$`
 Lcs0D;s@u
+Lct$DI
 Lct$H
 Lct$PA
-Lct$\L
 Lcw0D;w@u
 Leaked channel %s remote %s
 LeaveCriticalSection
@@ -4918,6 +4945,7 @@ LoggingSystem_GetChannelVerbosity
 LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
+Loss . . . . . . . . . : %8.2f%%%8.2f%%%9s   net_fakeloss
 M#}0I
 M(IcUL
 M(L9F 
@@ -4930,6 +4958,7 @@ M9n`u%A
 M9w t
 M;f8tBI
 MATCHFRAMEWORK_001
+MAX        Clamp random jitter delay to MAX ms.
 MB(iVR
 MGD;}
 MIsBoxedFloatType
@@ -4971,10 +5000,10 @@ MNetworkVarTypeOverride is referring to an unknown class name %s in class %s
 MNetworkVarsAtomic
 MNetworkVarsDisable
 MODEL_PROCESSING_SERVICES_INTERFACE_001
+MPD8u
 MResourceTypeForInfoType
 MSG_SPLITSCREEN_ADDUSER
 MSG_SPLITSCREEN_REMOVEUSER
-MXD8|$zH
 MakeGlobalSymbol
 MakeSerializersMatchByMeta failed for %s
 MakeStringToken
@@ -5016,14 +5045,11 @@ Maximum number of messages to allow waiting in queue after processing; exceeding
 Maximum number of messages to process from a client in a single frame (0 == no limit).
 Mc&E;f
 Mc>E;~
+McE0I
 McE8C
 McE8G
-McG0I
 McGHI
-McM@M
-McM`M
 McOpI
-McU`M
 Mc|$HI
 Mc~(M
 Md$@A
@@ -5056,6 +5082,7 @@ Multiple steam net connections from %s
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 MutableMessage
 MutableRawRepeatedField
+N	V_snprintf
 N(+V0
 N0+V8
 N3`d?
@@ -5206,9 +5233,9 @@ Overflow.
 Overrides IP for multihomed hosts
 OxHcGpM
 OxL94
-P(L98t,H
+P(L90t,H
 P08@J
-P08N@
+P08Np
 P>q_Y~
 P@HPX`hpx
 PACKET_STATUS_DROPPED
@@ -5217,6 +5244,7 @@ PACKET_STATUS_NORMAL
 PA\_^][
 PA]_^][
 PA^A]A\^[
+PA^A]A\_^
 PA^A]^
 PA^A]_^]
 PA^^]
@@ -5224,14 +5252,15 @@ PA^_]
 PA^_^
 PA_A^A\_^
 PA_A^A]A\[
-PA_A^A]A\_
 PA_A^A]A\_^]
 PA_A^A]^[
 PA_A^_
 PA_A^_^]
 PAq=?Mp#
+PCT        Percentage of packets (0...100) that will receive a random delay.
 PLACEHOLDER_VALUE
 PRGND
+PROFILE    One of: off, low, med, high
 PX`hpx
 Package name is too long
 PackedFieldMetadataListIterator_t::operator []
@@ -5290,6 +5319,7 @@ PopOnePlusOne
 PostProcessingSystem_001
 PrefetchType
 Print current ping times to SDR points of presence, and selected route
+Print current simulated network condifions
 Print detailed network statistics for each network connection
 ProcessOverride encountered unknown directive NetworkOverrideType_t(%d)
 ProcessPacket %s:%s packet %i at %i
@@ -5335,7 +5365,6 @@ QueueCallback( %s ) '%s' using value type (%s) on struct field, ignoring!
 QueueChange
 QueueReplayCompatFieldChange( %s ): can't place MNetworkReplayCompatField callback on a fully fake struct (e.g., a pointed to component or object), game code should move callback on entity %d to a C_BaseEntity derived class!
 QueueTimeMS
-R	V_sscanf
 REPLAY_EVENT_CANCEL
 REPLAY_EVENT_DEATH
 REPLAY_EVENT_GENERIC
@@ -5353,7 +5382,6 @@ ReAlloc(0) can cause a crash on some platforms (like Linux)
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
 Reached maximum recursion limit for nested messages.
-ReadFieldList with bogus offsets!
 ReadFields
 ReconnectInterface
 RegisterConCommand: Unknown error registering con command "%s"!
@@ -5379,6 +5407,7 @@ RenderDeviceMgr001
 RenderHardwareConfig002
 RenderService_001
 RenderUtils_001
+Reorder: Percentage  . : %9s%9s
 Repeated fields can't have default values.
 ReplayEventType_t
 RequestPause_t
@@ -5428,6 +5457,7 @@ STRING
 STRING_PIECE
 SUATH
 SUAVH
+SUVATAUAVAWH
 SUVATAUH
 SUVAUAVAWH
 SUVWATAUAVAWH
@@ -5496,6 +5526,7 @@ SetUnhandledExceptionFilter
 Setting FS %s field %s to %s
 Shortcut to set both FakePacketLag_Recv and FakePacketLag_Send net options
 Shortcut to set both FakePacketLoss_Recv and FakePacketLoss_Send net options
+Shortcut to set jitter net options.  Run with no arguments for usage.
 Should dedicated server listen for new-style P2P?
 Should not reach here.
 Show connectionless UDP traffic.
@@ -5517,7 +5548,6 @@ SoundOpSystem001
 SoundOpSystemEdit001
 SoundService_001
 SoundSystem001
-Source 2 Unit Tests
 Source2Client002
 Source2ClientPrediction001
 Source2ClientUI001
@@ -5579,6 +5609,7 @@ SteamNetworking006
 SteamNetworkingMessages002
 SteamNetworkingMessages_LibV2
 SteamNetworkingSockets config option not found
+SteamNetworkingSockets not initialized.
 SteamNetworkingSockets not yet initialized.  Queuing command '%s'
 SteamNetworkingSockets012
 SteamNetworkingSockets_LibV12
@@ -5596,6 +5627,7 @@ Sw[Hc
 Symbol name "
 Synthetic oneofs must be after all other oneofs
 System
+T	V_sscanf
 T$ D8t$(
 T$ E3
 T$ H;
@@ -5604,6 +5636,7 @@ T$ I9I t
 T$ L+
 T$ M;
 T$ u)I
+T$(E3
 T$(H+
 T$(H;T$0t
 T$(Hc
@@ -5623,6 +5656,7 @@ T$0I;
 T$0IcG(
 T$0L+
 T$0L;
+T$0xQ
 T$8E3
 T$8H+
 T$8Hc
@@ -5648,14 +5682,11 @@ T$XHc
 T$XHcD$P
 T$XL;
 T$XL;t$p
-T$XfD
-T$`H+
 T$`H;
-T$`HcL$pL
-T$`LcD$pH
 T$`fA;
 T$`u	
 T$hE3
+T$hH+
 T$hH;
 T$hHc
 T$hI;
@@ -5670,7 +5701,7 @@ T$pL;M
 T$xH+
 T$xH;L$0t
 T$xH;U
-T9 D;
+T1 D;
 TCP/UDP Disabled.
 TUUUU
 TYPE_BYTES
@@ -5717,6 +5748,7 @@ Too many queued messages on channel (%s) %d queued, limit is %d.
 ToolFramework2_002
 ToolSceneNodeFactory_001
 ToolService_001
+Total
 Tried to merge messages of different types 
 TryAcquireSRWLockExclusive
 Trying to Transmit() on a CNetChan that doesn't have a HSteamNetConnection
@@ -5735,13 +5767,11 @@ UDP <- %s: sz=%i OOB (%d)
 UHH;UPt
 UNKNOWN_ENUM_VALUE_%s_%d
 USATAUAVAWH
-USATAUAWH
+USATAWH
 USAUAVH
 USAUAWH
 USAUH
 USAVH
-USVATAUAVAWH
-USVATAUAVH
 USVATAUH
 USVAWH
 USVWATAUAVAWH
@@ -5751,12 +5781,13 @@ USVWATAVH
 USVWAUAVAWH
 USVWAUAVH
 USVWAVH
+USVWH
 USWATAUAVAWH
 USWATAUAVH
+USWATAUAWH
 USWATAVAWH
 USWAUAVH
 USWAVH
-USWAWH
 UUUUUU
 UUUUUUU
 UUUUUUUUH
@@ -5778,6 +5809,7 @@ UWATAUH
 UWATAVAWH
 UWATAVAWI
 UWATAVH
+UWATAWH
 UWATH
 UWAUAVAWH
 UWAUAVH
@@ -5786,6 +5818,7 @@ U`H9Uh
 Unable to find polymorphic type for %s in %s
 Unable to get SDR ping location
 Unable to unambiguously match %s::%s in %s, %d possible matches found
+Unexpected argument '%s'
 Unexpected failure while serializing option submessage 
 Unhandled name stack entry
 UnhandledExceptionFilter
@@ -5796,6 +5829,7 @@ Unknown KV3 basic type %u
 Unknown KV3 specific type %u
 Unknown enumeration value of "
 Unknown exception
+Unknown jitter profile '%s'.
 Unknown message type %u
 Unparsed options: 
 Unrecognized enumerator value %d
@@ -5806,8 +5840,10 @@ Unserialized nonresident asset %s status [%d]
 Unsupported
 Unsupported KV3 basic type '%s' (%d)!
 Unsupported: type mismatch
+Usage:
 Usage: net_captureculldata <file path>
 Usage: net_option <setting> [<value>]
+Use net_fakestatus to display current simulated network conditions.
 UsecEngineLatency
 UsecLocalLatency
 Using Valve ICE implementation
@@ -5856,6 +5892,7 @@ VStringTokenSystem001
 VT$PD
 VUUUH
 VWATAUAVAWL
+VWATAUAVH
 VWATAVAW
 VWATAVAWH
 VWAUAVAWH
@@ -5895,7 +5932,6 @@ V_atoui64
 V_strcmp( pClassInfo->GetName(), pPossibleBase->GetName() )
 V_~]	,
 Validate
-ValidateOffsets(false)
 ValidateSerializedEntity:  %s [ent %d] invalid change '%s' for field %s (value '%s') on array that has metadata with only %d array elements!
 ValidateSerializedEntity:  expected metadata entry of ARRAYCOUNT for %s but got %s instead
 ValidateSerializedEntity:  metadata incorrect entry for %s [%d expected %d]
@@ -5923,7 +5959,6 @@ Vector4D
 VisBuilder_001
 VoiceDataFormat_t
 Vrad3_001
-W	V_stricmp_fast
 WARNING
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WATAUAVAWH
@@ -5963,8 +5998,7 @@ XA_A^A]A\_^][
 XA_A^A]^][
 XA_^[]
 XL;l$p
-X`hr@
-Xo_Mh\r
+Y	V_stricmp_fast
 Y0HcR
 Y9"SD
 Y>kX>M
@@ -6031,7 +6065,6 @@ Zod(^?
 \$ UVAWH
 \$ UVWATAUAVAWH
 \$ UVWATAWH
-\$ UVWAUAVH
 \$ UVWAVAWH
 \$ UVWH
 \$ VAVAWH
@@ -6082,7 +6115,8 @@ Zod(^?
 \$@f;
 \$@fA;F
 \$@fE;
-\$@tSH
+\$@fff
+\$@tJH
 \$DD9l$Ht	H
 \$H@2
 \$HI9
@@ -6097,11 +6131,13 @@ Zod(^?
 \$PLc
 \$Pf3A
 \$Pt1
+\$PurfE
 \$XA+
 \$XH;}
 \$Xt	H
 \$Xu3I
 \$XuMfA
+\$`A;
 \$`A;]8u
 \$`E3
 \$`H+
@@ -6114,9 +6150,10 @@ Zod(^?
 \$pA;
 \$pH;
 \$pHcL$xfD+
-\$xA#
+\$pu3H
+\$xHc}
 \$xu3M
-\$|E+
+\$|A+
 \U%08x
 ](A;](
 ])6M>&
@@ -6195,7 +6232,7 @@ _xHcGpL
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
-`ht I
+`htpJ
 `local static guard'
 `local static thread guard'
 `local vftable constructor closure'
@@ -6277,7 +6314,6 @@ avg_packet_out
 avg_packets_in
 avg_packets_out
 avg_ping_ms
-ayV3&W
 b.m_cbitsCheckpoint >= 0
 b?^Cy
 bAllocationCanFit
@@ -6444,6 +6480,7 @@ d$PL+
 d$XfD
 d$`D9c<
 d$`E3
+d$`Hc|$pI
 d$`Lk
 d$`|LH
 d$dD;d$ltY
@@ -6498,9 +6535,10 @@ e+000
 e.m_pField
 e0A^A]A\_^[]
 e0A_A^A]A\]
+eDataType == k_ESteamNetworkingConfig_Float
+eDataType == k_ESteamNetworkingConfig_Int32
 eLK(w
 eQueryCvarValueStatus_NotACvar
-egfE;e
 ehandle
 embedded field
 enable
@@ -6539,6 +6577,7 @@ f9,Ju
 f9,~u
 f9<Ju
 f9t$bu
+f;=Zi
 f;D$0t
 f;E`t
 f;Eht
@@ -6564,6 +6603,7 @@ fB9<A}1L
 fB9<Bu
 fB9<Hu
 fB9<{u
+fC94.
 fC9T/
 fD9	t(L
 fD9 t
@@ -6587,7 +6627,6 @@ fE9,Fu
 fE94*t+A
 fE98t'
 fG9$Ou
-fG94/
 fJBGo
 failed to construct fake field from metadata %s::%s (%s) in %s
 fakeLagSend >= 0 && fakeLagRecv >= 0
@@ -6812,6 +6851,8 @@ jstype
 jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 k0i0$
 k8H9k
+k<u H
+kDxU\I
 kL@8o(u
 key_t
 l$ 9A
@@ -6839,16 +6880,16 @@ l$(Hc
 l$(I;
 l$0D+ D9
 l$0D9h(
-l$0D;
 l$0E2
 l$0E3
-l$0E8n 
+l$0E8l$ 
 l$0H;
 l$0Hc
 l$0Hc)H
 l$0Hk
 l$0Lc)
 l$0M;
+l$8D;
 l$8H9
 l$8H;
 l$8Hc
@@ -6872,6 +6913,7 @@ l$HH;
 l$HIc
 l$HfA;F
 l$Hu2I
+l$P@2
 l$PE3
 l$PH9C t;A
 l$PH;
@@ -6879,7 +6921,6 @@ l$PHc
 l$PL;
 l$PfD
 l$Pt	H
-l$PurfE
 l$XA+
 l$XA;
 l$XD9l$4
@@ -6891,12 +6932,12 @@ l$XuAH
 l$\D9n
 l$\fD
 l$`E3
+l$`I;
 l$`L;
 l$`t	H
 l$`t&
-l$`upfE
-l$`uqfE
-l$`utfD
+l$`uufF
+l$`uyfD
 l$dE;
 l$h9W0|<
 l$pD9c
@@ -7125,10 +7166,16 @@ net_compresspackets_minsize
 net_connections_stats
 net_culloptimization
 net_detailed_canpacket_log
+net_fakeclear
+net_fakeclear: Cleared simulated network conditions
+net_fakejitter
+net_fakejitter [send|recv] AVG [PCT] [MAX]
+net_fakejitter [send|recv] PROFILE
 net_fakelag
 net_fakelag = %dms  (net_option FakePacketLag_Send = %dms, net_option FakePacketLag_Recv = %dms)
 net_fakeloss
 net_fakeloss = %g%%  (net_option FakePacketLoss_Send = %g%%, net_option FakePacketLoss_Recv = %g%%)
+net_fakestatus
 net_filelogging
 net_fs_showindirections
 net_listallmessages
@@ -7262,7 +7309,6 @@ origin
 origin_x
 origin_y
 origin_z
-original
 ot$ H
 out of order
 outgoing
@@ -7272,14 +7318,14 @@ outgoing_sequence_start
 output_type
 override_operator_name
 owner dead
-ownership == KV3_COPY_EXTERNAL
 o|$0f
 p UATAUAVAWH
 p WATAUAVAWH
 p WAVAWH
 p*W4H
-p08@H^@
+p08@H^p
 p0R^G'
+p0j`9
 p9L;@t
 p;Y>u
 p@HPX`h
@@ -7287,7 +7333,6 @@ pA^[]
 pA^_^
 pA^_^[]
 pA^_^][
-pA_A\]
 pA_A^A\^]
 pA_A^A\_^
 pA_A^A\_^][
@@ -7316,7 +7361,6 @@ pDeltaHdr->hSerializer == hSerializer
 pDerived
 pEntity
 pEntity->GetFieldCount() == (int)pFields->m_nCount
-pEntity->ValidateOffsets()
 pEntry >= m_Values
 pExtensionWithDot[ 0 ] == '.'
 pFSField
@@ -7340,7 +7384,6 @@ pLast
 pLast->m_pNext == nullptr
 pList
 pMemory[i] == 0
-pMerged->ValidateOffsets()
 pMergedState->GetMetaDataCount() == 0
 pMeta
 pMsg->GetTypeHandle() == hMessage
@@ -7527,7 +7570,7 @@ s7fff
 s8HcCP
 sHH9oHt
 sHfff
-sPHc5R
+sPHc5
 sPHcCh
 sYfff
 s_listSteamNetConnections[ idxList ].m_hSteamNetConn == hSteamNetConn
@@ -7549,6 +7592,7 @@ send_node_sym
 send_table_crc
 sendnode
 sendprop_t
+send|recv  If present, applies the changes to the specified direction only.
 sentinel
 sequence_bytes
 sequence_number
@@ -7570,7 +7614,6 @@ server_tick_executed
 service
 sfixed32
 sfixed64
-shD;cpu
 shutdown
 signon_state
 simplified
@@ -7668,18 +7711,19 @@ symbols
 syntax
 synthetic_default
 system_specs
-s|Or9Y;
 t	Hcp
 t @8x
 t H;}
+t HcI
 t IcA
 t!D89t
 t!E8t$<u
 t!H9C
+t!HcA
+t!HcI
 t!L9{
 t"$`< u
 t"H;K
-t"HcC
 t"fff
 t#H9_8u
 t#HcE8H
@@ -7699,12 +7743,10 @@ t$ UWATAVAWH
 t$ UWAUAVAWH
 t$ UWAVH
 t$ WATAUAVAWH
-t$ WATAWH
 t$ WAVAWH
 t$ WH
 t$ fE;
 t$ ff
-t$(A;
 t$(A^
 t$(D9c|~c
 t$(E3
@@ -7720,6 +7762,7 @@ t$0Ic
 t$0L;
 t$0fff
 t$0~ H
+t$4A;
 t$4I9
 t$8;;
 t$8@8
@@ -7742,6 +7785,7 @@ t$@L;
 t$@Lc
 t$@Lc2A
 t$@Lk
+t$@f;p
 t$@fff
 t$@t	3
 t$@t&
@@ -7754,7 +7798,7 @@ t$HH+
 t$HH9r
 t$HHc
 t$HHk
-t$HfD;p
+t$HcI
 t$Hff
 t$Ht	H
 t$H~#H
@@ -7769,6 +7813,7 @@ t$PIc
 t$PMc|$HI
 t$Pfff
 t$Pu)
+t$Tfff
 t$XA+
 t$XA;w I
 t$XAi
@@ -7777,6 +7822,7 @@ t$XH9}(
 t$XH;
 t$XHc
 t$XI;
+t$XLc
 t$Xt	H
 t$Xu*H
 t$X|CI
@@ -7789,18 +7835,17 @@ t$`L#
 t$`L;
 t$`M;
 t$`fD9+t$I
+t$`}[H
 t$dL9b u
 t$h9s(
 t$h;p(
 t$hE3
+t$hM+4$I
 t$huY
-t$h}[H
-t$lLc
 t$pD;
 t$pE3
 t$pI+
 t$pfA;
-t$xD;
 t$xE3
 t$xM;
 t$xt*3
@@ -7809,16 +7854,18 @@ t%Hc3;s
 t%fE9
 t%fff
 t&A88t
-t&HcU
 t'<Zt
 t'HcW
 t'fff
+t)HcA
 t)IcV
 t*HcA
 t*HcC
+t+A;}0}%Hc
 t+H+}
 t+fff
 t,A;Fh
+t-A8y9t'H
 t-Lck
 t.fff
 t0Lc0H
@@ -7828,41 +7875,40 @@ t4I92u/M
 t4fE94
 t5A8X
 t7HcP
-t:fD9>t"
 t;LcF
-t<@8x9t6L
 t<HcCh
-t=HcD$pH
 t>D9u
 t>Hc;;{
 t?HcS
+t@HcD$pD
 tAHcD$PD
 tAIcOL
-tAL9-c_
+tAL9-
 tBD;l$4};A
-tCH95	
+tCH95
 tDM9w u
 tEHcR
 tIHcA
 tIHcC
 tLLcx|M
 tMI92uHM
-tOL957~
+tOL95
 tQfD9 tK
 tRLcY
 tSf91tNH
-tSfff
 tU;\$0tH
 tUH99uPL
 tVxB3
 tXH99uSH
 tYHcS
-tZL9=
+tZL95?
+t[L9w uUH
 t]Ic4$
+t]xFA
 t^HcC
 t^xGA
 t_L9>t
-t_xJA
+t_xHA
 t`HcG
 t`xIA
 taHcC
@@ -7871,29 +7917,26 @@ table_id
 tag='%s':%u
 target struct
 target_entity
-taxI3
 taxQ3
 tbJ9|
 tc == SCHEMA_TYPE_BITFIELD || pFieldInfo->m_nQueuedDataSize > 0
 tc@82t^3
-tcE8>t^3
-tdxPA
+tcE87t^3
+tcxKA
 texPA
 text file busy
 text format contains deprecated field "
 tfD8ew
-tfxOA
+tgA8>tb3
 tgD8'tb3
 tgH9;u
 tgxN3
-tgxPA
 tgxR3
 the actual field type (for enums T should be the generated enum 
 the global scope
 they_hear_you
 thxPA
 thxTA
-tiA8>td3
 tick_interval
 tier0.dll
 timed out
@@ -7901,7 +7944,6 @@ times
 tixQA
 tjxQA
 tkxPA
-tmxPA
 tmxRA
 tmxUA
 tnxSA
@@ -7918,6 +7960,7 @@ total_data_out
 total_packets_in
 total_packets_out
 tpxOA
+tpxYA
 tqxWA
 tqxWL
 trailing_comments
@@ -7925,13 +7968,14 @@ transform
 trfE;
 trfff
 trxW3
+trxWA
 trxZA
 try_get_function
 try_get_module
 tsfff
 ttxTA
-ttxYA
-tux^3
+tux^A
+tvxQA
 twIcF
 txxRA
 txxSA
@@ -7941,16 +7985,15 @@ type or int32_t).
 type.googleapis.com/
 type.googleprod.com/
 t{Lc&D
+t{xd3
 t|H9;uwD
 t}L9v0H
 t}Mcp0E;q0uzA
-u	9oLu
-u	H9:u
 u 9k(u
 u E;GXu
 u H9P r
 u!H;K
-u"L9=
+u"L95
 u"L;B r
 u#H9{
 u$D8r(t
@@ -7984,19 +8027,18 @@ u<Lc3
 u<g~l<it[<ntP<ot,<pt
 uED8r(t
 uEH9C(H
+uGf9y
+uHu8H
+uHu<H
+uIfD9~
 uJfA9
 uJfff
 uMfff
-uNf9y
-uNf9{
 uWH9C(H
 uZH9C(H
-u[fD9~
 uchar32
 udH;~ u^
-uhu8H
 uhu=H
-uhuCH
 uint16
 uint32
 uint64
@@ -8024,8 +8066,6 @@ unspecified
 unverified_lazy
 uoL;@
 update_baseline
-updated
-updated field %d/%d: %s
 updated_entries
 upper
 uptime
@@ -8096,6 +8136,7 @@ vprof_report
 vs. codegen '
 v}`[>
 w HcG8
+w"fA;
 w;fA;
 w<fA;
 w@fA;
@@ -8121,11 +8162,9 @@ x UAVAWH
 x t'H
 x!A;E
 x!fA;
-x#;5P
 x#;W`L
 x#D;Bh}
 x+;G`}&H
-x-HcF
 x0H+x
 xA\_][
 xA^^[]
@@ -8147,9 +8186,11 @@ zY;>u:m
 {,D+{HD+
 {0x%x}
 {@9s8|AH
+{D8eh
 {D9l$Ht	H
 {X9kP|AH
 {XH9{(H
+{hD;cpu
 {pu$H
 {un'%
 {xHcCpH
@@ -8185,6 +8226,7 @@ zY;>u:m
 |$ fI
 |$ t	H
 |$ teH;
+|$ }[H
 |$"*uXH
 |$$H99tAA
 |$$H9y
@@ -8227,6 +8269,7 @@ zY;>u:m
 |$@H;
 |$@Hc
 |$@Hc}
+|$@I;
 |$@Lcw
 |$@fA
 |$@~ H
@@ -8247,8 +8290,10 @@ zY;>u:m
 |$H~ H
 |$PD;
 |$PE3
+|$PHc
 |$PI;
 |$PL;
+|$P}[H
 |$T;{
 |$TE3
 |$X;E$
@@ -8267,12 +8312,11 @@ zY;>u:m
 |$`E2
 |$`E3
 |$`H;
-|$`}[H
+|$`L9u@t
 |$h9YD
 |$hE3
 |$hH;
 |$hHc
-|$hL9
 |$hL;
 |$h~!H
 |$pE2
@@ -8282,25 +8326,26 @@ zY;>u:m
 |$xE3
 |$xH;T$0t
 |$xHc
-|$xHcV
 |$xI;
 |$xL;
-|%@8i!t
 |%@8k!t
 |%@8n!t
-|%@8q!t
-|%@8w!t
+|%@8o!t
 |%D8o!t
 |%D8w!t
-|%D8{!t
+|(@8n!t
+|(@8o!t
+|(D8o!t
+|(D8w!t
+|(D8{!t
+|)D8{!t
 |)L9c
-|,D8{!t
-|-D8w!t
 |6@8k!t
 |Lu?c
 |b=})>
 |c;K(t^A
-} ;n$
+}"fA;
+}#fA;P
 }$;S4w
 }'HcC
 }(;{Hu
@@ -8309,18 +8354,22 @@ zY;>u:m
 },A+}0
 }0HcC
 }1;C$
-}2fD9J
+}2fE9P
 }3;S4w.
 }4;EDw/
 }:;_$
 }>;_$
-}GfE9y
+}AfA9X
 }If;=
+}If;=wj
 }LuHO
 }RfE;
 }T;_$
-}k;n$
-}n;k$L
+}Z;=v
+}hu<H
+}m;n$
+}s;{$wnL
+}w;{$
 ~ 	uIH
 ~ $s%r
 ~ HcF8
@@ -8342,9 +8391,9 @@ zY;>u:m
 ~O@8r
 ~Offf
 ~PD;fX
-~QD8s
+~RD8z
+~VD8s
 ~YMc<$E;|$
-~ZD8:t
 ~eD8l$ZL
 ~hLcl$0I
 ~kD86tfE

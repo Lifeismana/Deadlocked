@@ -1,5 +1,4 @@
 	!s99
-	36	rgX
 	V_vsnprintf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
@@ -7,16 +6,14 @@
 	_V_strnicmp_fast
 	g_pMemAlloc
 	kE>fvw
-	xy|.
                           
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  %41g
  'L>[
- A^A\_
  A^A]A\_[
- A^_]
- A^_]H
+ A^][
+ A^][H
  A^_^
  A_A^A\
  A_A^A\_^
@@ -27,10 +24,9 @@
  Base Class Descriptor at (
  Class Hierarchy Descriptor'
  Complete Object Locator'
- Hc5T
  HcA(H
  HcA03
- HcA0H
+ HcA0E3
  Hci0L
  LcA(E3
  LcQ(3
@@ -64,6 +60,7 @@
 (m_nRefCount & INTERNAL_LOCKED) != 0
 (t$ H
 (t$PH
+)!Q#!
 )>6{1n
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
@@ -72,6 +69,7 @@
 +f)>0'
 +h->|
 +o'q)}
+,*:	Oc}
 ,/<-w
 ,W5y+
 -------------------- PollInputState_SDL (frame %llu, elapsed ms = %.2f) --------------------
@@ -176,7 +174,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240620161237Z0/
+240627183140Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -192,7 +190,6 @@
 3mq+<
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
-5P-Y`
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
 6I]Dc
@@ -202,7 +199,6 @@
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
-8cux0
 9)~P3
 98t H
 9>~ZH
@@ -216,12 +212,12 @@
 <no failure reason set>
 <undefined>
 <unknown>
-=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
 >Mp$d
 >jtm}S
+?	V_qsort_s
 ?7zQ6$
 ?:kP<
 ??0CUtlBuffer@@QEAA@HHH@Z
@@ -280,6 +276,7 @@
 @A_A^A\_^][
 @A_A^A]
 @SAVH
+@SUAVH
 @SUVWATAVAWH
 @SUWATH
 @SUWH
@@ -289,8 +286,8 @@
 @UAWH
 @USVWATAUAVAWH
 @USVWATAUAVH
+@USVWAVH
 @UWATAWH
-@UWAVH
 @WATAUAVAWH
 @WAVAWH
 @_RDATA
@@ -373,6 +370,7 @@ ButtonCode_VirtualKeyToButtonCode
 ButtonName
 C ;C$t
 C0Hc	H
+C8H9(tHA
 C:\buildworker\citadel_staging_win64\build\_build_\inputsystem\_vpc_inputsystem\default\win64\_msvc_\Retail\inputsystem.pdb
 C:\buildworker\citadel_staging_win64\build\src\inputsystem\inputsystem.cpp
 C:\buildworker\citadel_staging_win64\build\src\inputsystem\joystick.cpp
@@ -414,6 +412,8 @@ CInputSystem::AddCursorEntrySurfaces
 CInputSystem::AddedJoystickDevice
 CInputSystem::AttachToWindow: Tried to attach to the same window twice!
 CInputSystem::ProcessSDLEvent
+CInputSystem::RemoveSDLEventFilter::<lambda_1>::operator ()
+CInputSystem::RemoveWndProcFilter::<lambda_1>::operator ()
 CInputSystem::ScaleCursorEntry
 CInputSystem::SetCursorIcon
 CInputSystem::SetIMEAllowed
@@ -437,6 +437,10 @@ CURRENCYUNIT
 CURRENCY_SIGN
 CUtlFlags<unsigned short>::IsFlagSet
 CUtlFlags<unsigned short>::SetFlag
+CUtlMemory<bool (__cdecl*)(union SDL_Event const *),int>::Grow
+CUtlMemory<bool (__cdecl*)(union SDL_Event const *),int>::Grow::<lambda_2>::operator ()
+CUtlMemory<bool (__cdecl*)(void *,unsigned int,unsigned __int64,unsigned __int64),int>::Grow
+CUtlMemory<bool (__cdecl*)(void *,unsigned int,unsigned __int64,unsigned __int64),int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CInputSystem::CursorSurface_t,int>::Grow
 CUtlMemory<struct CInputSystem::CursorSurface_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CInputSystem::InputWindow_t,int>::Grow
@@ -493,6 +497,7 @@ D$0@8{
 D$0HcH
 D$4t3
 D$8L9
+D$@A;
 D$@H+
 D$Du8
 D$HE3
@@ -500,9 +505,9 @@ D$PE3
 D$PH+
 D$PI;
 D$`E3
-D$lE3
+D$hE3
 D$pE3
-D$xE3
+D$tE3
 D81uUL9r
 D8t$ht
 DECIMALSEPARATOR
@@ -537,6 +542,7 @@ EH*?H
 EJECT
 ENTER
 ESCAPE
+ET82iJ1k
 EURO_SIGN
 EXCLAIM
 EXECUTE
@@ -581,7 +587,6 @@ Found existing value when inserting into tree - replacing existing value with ne
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
-G8H9(tB
 G@L9f
 GD$83
 GD$HH
@@ -610,6 +615,7 @@ GetFileType
 GetForegroundWindow
 GetKeyState
 GetKeyboardLayout
+GetKeyboardLayoutList
 GetLastError
 GetModuleFileNameW
 GetModuleHandleA
@@ -641,7 +647,6 @@ H0H9X8u
 H8H9X@u
 H9(tO
 H97u+A
-H98t.A
 H9X u
 H;XXs
 H;_hu<fA
@@ -663,7 +668,9 @@ HcK H
 HcO H
 HcQ<H
 Hco(;o8
+Hcs0H
 Hcu`M
+Hc~0H
 HelpSystem_001
 HhH9Xpu
 HostStateMgr001
@@ -718,10 +725,12 @@ ISS: Relative mouse %s from '%s'
 ISS: Relative mouse disabled from default
 ISS: Standard cursors from '%s'
 ISS: Standard cursors from default
+IU1\~
 I_WITH_ACUTE
 I_WITH_CIRCUMFLEX
 I_WITH_DIAERESIS
 I_WITH_GRAVE
+Icn0H
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 ImmIsUIMessageA
 InitializeCriticalSectionAndSpinCount
@@ -850,6 +859,8 @@ L$0H;
 L$8H3
 L$@;|
 L$@H3
+L9 t.A
+L;t$p
 L?n(Zy&
 LCMapStringEx
 LCMapStringW
@@ -860,8 +871,8 @@ LEFT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK
 L_SHOULDER
 L_TRIGGER
 LcA<E3
+LcK@H
 LcO8H
-LcO@H
 Lcg0L
 Lcs0M
 LeaveCriticalSection
@@ -999,7 +1010,7 @@ Pz}b!
 QUESTION
 QUOTEDBL
 QueryPerformanceCounter
-R	V_sscanf
+Q~Z`2yp
 RCTRL
 REGISTERED_SIGN
 RETURN2
@@ -1150,6 +1161,7 @@ SDL_EVENT_WINDOW_RESIZED
 SDL_EVENT_WINDOW_RESTORED
 SDL_EVENT_WINDOW_SHOWN
 SDL_EVENT_WINDOW_TAKE_FOCUS
+SDL_KEYCODE_OPTIONS
 SDL_TOUCH_MOUSE_EVENTS
 SDL_WINDOWS_CLOSE_ON_ALT_F4
 SDL_WINDOWS_RAW_KEYBOARD
@@ -1213,6 +1225,7 @@ Source2V8System001
 StatsService_001
 SteamAudio001
 Sunday
+T	V_sscanf
 T$ E3
 T$PE3
 TEXTINPUT '%s'
@@ -1256,6 +1269,7 @@ U_WITH_DIAERESIS
 U_WITH_GRAVE
 UnhandledExceptionFilter
 Unknown exception
+UnloadKeyboardLayout
 UnregisterClassA
 UpdateCaptureOnFocusChange:  enabling capture of 0x%p
 UpdateCaptureOnFocusChange:  releasing capture of 0x%p
@@ -1322,7 +1336,6 @@ Valve Corp.1
 Valve.Source.Input
 VisBuilder_001
 Vrad3_001
-W	V_stricmp_fast
 WATAUAVAWH
 WAVAWH
 WaitForSingleObjectEx
@@ -1340,6 +1353,7 @@ X_AXIS
 X_AXIS_NEG
 X_AXIS_POS
 X_BUTTON
+Y	V_stricmp_fast
 Y9"SD
 YEN_SIGN
 Y_AXIS
@@ -1352,12 +1366,12 @@ Z_AXIS
 Z_AXIS_NEG
 Z_AXIS_POS
 [K]taM?
-[zDiy
 \$ UH
 \$ UVWH
 \$ VWATAUAVH
+\$ WH
 \$0H;
-\$0Hc
+\$0Ic
 \$0[I
 \$0eH
 \$8I;
@@ -1481,14 +1495,16 @@ int16
 int32
 int64
 invalid_parameter
+jEMR;
 jj@0HK4
 joy_axisbutton_threshold
 k0i0$
 key_updatelayout
+l$ AVH
 l$ VWATAVAWH
-l$ WATAVH
 l$0Hc
 l$8u&H
+l$@I;
 l$xHi
 l2|X/gGe
 log10
@@ -1503,6 +1519,8 @@ m_Root == InvalidIndex()
 m_Vector.Count() == m_SymbolTable.GetNumStrings()
 m_bIMEAllowed == false
 m_nType == IE_ButtonPressed
+m_sdlEventFilters.FindAndRemove( pFilter )
+m_wndProcFilters.FindAndRemove( pFilter )
 mouse %d %s (%d) at %g %g on window %d
 mouse motion %g %g at %g %g with buttons "%s" on window %d
 mwtMH
@@ -1510,8 +1528,8 @@ n03>Pu
 n4A3n
 n8A3n tlA
 nD$Xf
+nD$hD
 nD$hf
-nD$|D
 nFlagMask == (T)nFlagMask
 nL$xf
 nSlot == INVALID_SPLITSCREENSLOT || nSlot.GetRaw() == 0
@@ -1535,6 +1553,7 @@ pCallback == nullptr
 pCopyData->dwData <= UINT32_MAX
 pMemory[i] == 0
 pSchemaSystem != nullptr
+p\aqM
 purecall
 qangle
 r	Vr.>T
@@ -1555,17 +1574,14 @@ t$ E3
 t$ WATAUAVAWH
 t$ WAVAWH
 t$ WH
-t$0Hc
 t$8;;
 t$8H+
 t$@Ic
-t$H~ H
 t$`Hi
 t$`L#
 t$pE3
 t%E8g@t
 t(E8g@t
-t,fff
 t-Lck
 t/H;{hu)fA
 t7HcP
@@ -1593,6 +1609,7 @@ uint16
 uint32
 uint64
 unknown event
+unmodified,french_numbers
 unset
 using
 uzKs@>
@@ -1604,6 +1621,7 @@ vector2
 vector3
 vector4
 visible
+wt1k)
 www.digicert.com1!0
 www.digicert.com1$0"
 x ATAVAWH
@@ -1617,12 +1635,12 @@ y\PD>!
 |$ fff
 |$0E3
 |$8fH
+|$8~#H
 |$@Hc
-|$@I;
 |$@t*
 |$Hu(H
-|$PLc
 |$Pu!H
+|$XLc{0D;{@
 |)L9c
 |Lu?c
 |b=})>

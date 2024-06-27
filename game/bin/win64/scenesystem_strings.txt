@@ -125,7 +125,7 @@
   w/ zero threshold: %d,
   w/ zero threshold: (%.1f, %.1f)
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -146,11 +146,13 @@
  'L>[
  (%s%s)
  (08@HPX`hpx
- (08@HPX`j
+ (08@HPX`j0
  (08@HPXb
- (08@HPZ
+ (08@HPZ0
  (08@HR
  (08@J
+ (08@J0
+ (0:0
  (0X`hpz
  (Asc)
  (Des)
@@ -165,10 +167,9 @@
  (will sort)
  *CentralNode*
  *Inactive*
- . yN
  ... }
- .0zN
- .PzN
+ .PlN
+ .`mN
  0"r$4&
  9|$T
  ; contains 
@@ -196,7 +197,6 @@
  A^A]_
  A^A]_][
  A^A]_^[
- A^A]_^]
  A^][
  A^^[
  A^^]
@@ -212,7 +212,6 @@
  A_A\_^]
  A_A]A\_^
  A_A]A\_^H
- A_A]_^[
  A_A]_^]
  A_A^A\
  A_A^A\H
@@ -360,7 +359,6 @@
  Window=0x%08X
  Window=0x%08X%n
  WorkMin (%.0f,%.0f), WorkMax (%.0f,%.0f), WorkSize (%.0f,%.0f)
- YA1H
  [$0]
  [cur %i, targ %i %s, %.1fs]
  [default = $0
@@ -444,6 +442,7 @@
 !NETWORK_DISCONNECT_LOOPDEACTIVATE
 !NETWORK_DISCONNECT_REJECT_NOLOBBY
 !NETWORK_DISCONNECT_REMOTE_TIMEOUT
+!Z	n6
 !\>G[
 !bDepthMode
 !bLooksLikeABug
@@ -823,7 +822,6 @@ $2$r$
 $8H)u
 $;D$p~
 $<1mm
-$@8=>
 $@8x)
 $HcG H
 $IH+K
@@ -861,7 +859,6 @@ $`<`uIM
 $`<`uMM
 $fA;L$
 $schemasystem/schema_enable_defines.h
-$tIC:\buildworker\citadel_staging_win64\build\src\mathlib\extended\lightdesc.cpp
 $x?"TA?
 $~RE3
 %!FontType
@@ -966,7 +963,6 @@ $~RE3
 %g %s%s
 %g dB
 %g ms
-%g'	i
 %i The quick brown fox jumps over the lazy dog
 %i dynamic, %i cached, %i failed, %i lru'd in %ix%i atlas
 %i filtered textures
@@ -1090,7 +1086,6 @@ $~RE3
 ( m_nIndexIncrement == 0 ) || ( m_nIndexCount < m_nMaxIndexCount )
 ( m_nIndexIncrement == 0 ) || ( m_nIndexCount < m_nMaxIndexCount - 1 )
 ( m_nNumPrimitives >= 0 ) && ( m_nNumPrimitives <= V_ARRAYSIZE( m_drawPrimitives ) )
-( nAttributeVertexCount & 0x3 ) == 0
 ( nInstanceFlags & 0xFFFF ) == nInstanceFlags
 ( nMaterialFlags & 0xFFFF ) == nMaterialFlags
 ( nNumIndices % 3 ) == 0
@@ -1105,65 +1100,60 @@ $~RE3
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 ($$fE
-(%!9E
-(%#NB
+(%#@!
 (%.02f)
 (%.1f,%.1f)
 (%.3f, %.3f, %.3f)
 (%.3f, %.3f, %.3f, %.3f)
 (%.3ff, %.3ff, %.3ff, %.3ff)
-(%3M!
+(%.l?
+(%0!E
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) %s
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) Col %d %s
-(%@,E
-(%Q-E
-(%SH!
-(%Z=E
-(%^o?
-(%a"S
+(%<j@
+(%=&>
+(%A"E
+(%C;!
+(%J2E
+(%Y-E
+(%c6!
 (%d,%d)
 (%d,%d,%d,%d)
-(%i8E
-(%k$S
-(%lm@
-(%m)>
-(%sC!
+(%sd?
 (("**,
 ((6"8(:,<*>
-(-#m@
-(-H?E
-(-I/S
-(-RFE
-(-\EE
-(-`*S
-(-`/S
-(-`W 
-(-g)>
-(-g2E
-(-j	S
-(-nJE
-(-{i 
+(-0O 
+(-7&>
+(-84E
+(-9$S
+(-B;E
+(-Ka 
+(-L:E
+(-P$S
+(-W'E
+(-Ye?
+(-^?E
+(-lm@
+(-r~ 
 (0`hpx
 (1GDL
 (2) Or right-click this text
 (3) Or click this button
-(5FLE
-(5X >
-(5Y	S
-(5`%S
-(5e$S
-(5k{@
-(5pt>
+(5*3T
+(56AE
+(5;x@
+(5=3T
+(5@q>
+(5h2U
+(5~AE
 (;^ |
 (;s |
 (<-- right-click here)
-(=F+S
-(=M"S
-(=P.P
-(=d)>
-(=g*S
-(=s$S
-(=~"S
+(= 8P
+(=4&>
+(=6 S
+(=nj@
+(=o&>
 (A\_H
 (A\_^[
 (A\_^]
@@ -1171,6 +1161,7 @@ $~RE3
 (A^A\_]
 (A^A]A\_^[
 (A^A]^[
+(A^A]_^
 (A^^][
 (A^_H
 (A^_][
@@ -1306,7 +1297,6 @@ $~RE3
 (Use ImGui::SameLine() to keep adding items to the right of the preceding item)
 (YA1D
 (YA1H
-(YA1Hc
 (Z(^(b(f(j(n(r(v(z1
 (\$ D
 (\$ H
@@ -1522,6 +1512,7 @@ $~RE3
 )D$PI
 )D$PI;
 )D$Pf
+)D$Pi
 )D$`A
 )D$`D
 )D$`H
@@ -1703,7 +1694,6 @@ $~RE3
 )t$pH
 )t$pL
 )t$pM
-)t$pi
 )u'fH
 )u'fI
 )|$ 3
@@ -1770,9 +1760,6 @@ $~RE3
 *YA1H
 *YA1L
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
-*pMaxIndices <= 32768
-*pMaxVertices <= 32768
-+	V_log2_uint
 +!+5-
 +%.0f px
 +2[Sp
@@ -1803,7 +1790,6 @@ $~RE3
 +T$(;
 +T$DE3
 +Xt@(
-+YA1D
 +YA1H
 +YA1Hc
 +Z+^+b7
@@ -1842,7 +1828,7 @@ $~RE3
 ,YA1H
 ,j.b0^2`4^6`8^:f<
 ,t,x,|,
--	V_log2f
+-	V_log2_uint
 - BorderOuterV
 - Drag from window menu button (upper-left button) to undock an entire node (all windows).
 - Drag from window title bar or their tab to dock/undock.
@@ -1882,7 +1868,6 @@ $~RE3
 -NETWORK_DISCONNECT_LOCALPROBLEM_NETWORKCONFIG
 -NETWORK_DISCONNECT_REJECT_INVALIDSTEAMCERTLEN
 -YA1H
--YA1I
 -YA1f
 -convars_visible_by_default
 -j'j2j>jU
@@ -1913,15 +1898,15 @@ $~RE3
 .?AV<lambda_1>@?4??AddLightProbeVolumesForView@CLightBinner2@@IEAAXPEAVCSceneView@@H@Z@
 .?AV<lambda_1>@?6??DebugLightProbeVolumeGrid@CLightBinner2@@IEAAXPEAVCSceneView@@@Z@
 .?AV<lambda_1>@?7???R<lambda_2>@?1??DebugLightProbeVolumeGrid@CLightBinner2@@IEAAXPEAVCSceneView@@@Z@QEBA@PEAVCSceneLightProbeVolumeObject@@@Z@
-.?AV<lambda_1>@?BN@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@
-.?AV<lambda_1>@?DF@??RenderAView@CSceneSystem@@AEAAXPEAVCSceneView@@MPEAUConstantBufferHandle_t__@@AEAUSceneSystemPerFrameStats_t@@@Z@
+.?AV<lambda_1>@?BP@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@
+.?AV<lambda_1>@?DH@??RenderAView@CSceneSystem@@AEAAXPEAVCSceneView@@MPEAUConstantBufferHandle_t__@@AEAUSceneSystemPerFrameStats_t@@@Z@
 .?AV<lambda_1>@?L@??Thread_RenderLayerDrawList@CSceneSystem@@QEAAXV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@PEAVCRenderBatchList@@W4EBatchStartFlags_t@@AEBV?$CUtlVector@PEAVCSceneDrawList@@HV?$CUtlMemory@PEAVCSceneDrawList@@H@@@@@Z@
 .?AV<lambda_2>@?1??DebugLightProbeVolumeGrid@CLightBinner2@@IEAAXPEAVCSceneView@@@Z@
 .?AV<lambda_2>@?BA@???R0?1??DebugLightProbeVolumeGrid@CLightBinner2@@IEAAXPEAVCSceneView@@@Z@QEBA@PEAVCSceneLightProbeVolumeObject@@@Z@
-.?AV<lambda_2>@?BN@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@
-.?AV<lambda_2>@?DK@??RenderAView@CSceneSystem@@AEAAXPEAVCSceneView@@MPEAUConstantBufferHandle_t__@@AEAUSceneSystemPerFrameStats_t@@@Z@
-.?AV<lambda_2>@?FC@??Thread_RenderView@CSceneSystem@@QEAAXPEAVCSceneView@@@Z@
-.?AV<lambda_3>@?BN@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@
+.?AV<lambda_2>@?BP@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@
+.?AV<lambda_2>@?DM@??RenderAView@CSceneSystem@@AEAAXPEAVCSceneView@@MPEAUConstantBufferHandle_t__@@AEAUSceneSystemPerFrameStats_t@@@Z@
+.?AV<lambda_2>@?FE@??Thread_RenderView@CSceneSystem@@QEAAXPEAVCSceneView@@@Z@
+.?AV<lambda_3>@?BP@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@
 .?AV?$CBaseAppSystem@VIAppSystem@@@@
 .?AV?$CBaseAppSystem@VISceneSystem@@@@
 .?AV?$CBaseAppSystem@VISceneUtils@@@@
@@ -1965,17 +1950,16 @@ $~RE3
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??AddLightProbeVolumesForView@CLightBinner2@@IEAAXPEAVCSceneView@@H@Z@XPEAVCSceneLightProbeVolumeObject@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?6??DebugLightProbeVolumeGrid@CLightBinner2@@IEAAXPEAVCSceneView@@@Z@XPEAVCSceneLightProbeVolumeObject@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?7???R<lambda_2>@?1??DebugLightProbeVolumeGrid@CLightBinner2@@IEAAXPEAVCSceneView@@@Z@QEBA@PEAVCSceneLightProbeVolumeObject@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?BN@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?DF@??RenderAView@CSceneSystem@@AEAAXPEAVCSceneView@@MPEAUConstantBufferHandle_t__@@AEAUSceneSystemPerFrameStats_t@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?BP@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?DH@??RenderAView@CSceneSystem@@AEAAXPEAVCSceneView@@MPEAUConstantBufferHandle_t__@@AEAUSceneSystemPerFrameStats_t@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?L@??Thread_RenderLayerDrawList@CSceneSystem@@QEAAXV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@PEAVCRenderBatchList@@W4EBatchStartFlags_t@@AEBV?$CUtlVector@PEAVCSceneDrawList@@HV?$CUtlMemory@PEAVCSceneDrawList@@H@@@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??DebugLightProbeVolumeGrid@CLightBinner2@@IEAAXPEAVCSceneView@@@Z@XPEAVCSceneLightProbeVolumeObject@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?BA@???R1?1??DebugLightProbeVolumeGrid@CLightBinner2@@IEAAXPEAVCSceneView@@@Z@QEBA@PEAVCSceneLightProbeVolumeObject@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?BN@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?DK@??RenderAView@CSceneSystem@@AEAAXPEAVCSceneView@@MPEAUConstantBufferHandle_t__@@AEAUSceneSystemPerFrameStats_t@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?FC@??Thread_RenderView@CSceneSystem@@QEAAXPEAVCSceneView@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_3>@?BN@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?BP@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?DM@??RenderAView@CSceneSystem@@AEAAXPEAVCSceneView@@MPEAUConstantBufferHandle_t__@@AEAUSceneSystemPerFrameStats_t@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?FE@??Thread_RenderView@CSceneSystem@@QEAAXPEAVCSceneView@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_3>@?BP@??ReleaseLayerDependents@CSceneSystem@@QEAAXAEBV?$shared_ptr@VCViewDrawList@@@std@@PEAVCSceneLayer@@@Z@X$$V@std@@
 .?AV?$_Iosb@H@std@@
-.?AV?$_Ref_count@VCMesh@@@std@@
 .?AV?$_Ref_count_obj2@V?$CUtlVector@UCMeshDrawPrimitive_t@@HV?$CUtlMemory@UCMeshDrawPrimitive_t@@H@@@@@std@@
 .?AV?$_Ref_count_obj2@VCRenderGraphBuilder@@@std@@
 .?AV?$_Ref_count_obj2@VCSceneViewDebugOverlays@@@std@@
@@ -2305,18 +2289,20 @@ $~RE3
 .xdata
 .xdata$x
 .|$(u
-/	V_logf
+/	V_log2f
 / w"D
 /"/&/*0
 /..namedfork/rsrc
 /./f/
 /0sgE
 /2GG>!B
-/5wn7
+/5,a7
 /6r+H
 /84_>
 /8r:H
 /=HV=Y
+/=Uf.
+/=Zg.
 />58d%
 />s8D8
 /?s*E
@@ -2330,6 +2316,7 @@ $~RE3
 /D$pw
 /D$tv
 /D$tw
+/D$|D
 /FSType
 /GTr+
 /I%_n
@@ -2352,6 +2339,7 @@ $~RE3
 /S@r'fA
 /S@r(fA
 /SHw 
+/T$|H
 /V@r#f
 /X@r#fA
 /X@r(fA
@@ -2359,6 +2347,7 @@ $~RE3
 /Y@r&fA
 /Y@r(fA
 /YA1H
+/YA1I
 /YA1L
 /YHw 
 /Z@r&fA
@@ -2415,11 +2404,10 @@ $~RE3
 0123456789abcdefghijklmnopqrstuvwxyz
 050s0
 08@HP
-08@HR
+08@HR0
 08iu*)
 0: spheres, 1: cubes
 0><[cZUg^>
-0>p{N
 0?333?333?333?333?
 0@333@
 0A]A\_^[
@@ -2472,6 +2460,7 @@ $~RE3
 0A_A^_^[
 0A_A^_^]
 0A__[
+0A__^
 0A__^][
 0D;v<|
 0D;{<
@@ -2479,7 +2468,6 @@ $~RE3
 0Hc)L
 0HcD$HI
 0HcD$pM
-0Ic<$
 0K0O0S0W0[0_0c0g0k0o0
 0L9s(t	H
 0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
@@ -2501,6 +2489,7 @@ $~RE3
 0x%08X/
 0xDDDDDDDD
 0}0i1
+1	V_logf
 1 = visualize bounds, 2 = visualize sceneobject mesh materials, 3 = required texture size, 4 = bounds group, 5 = LOD, 6 == LPV Binding, 7 == instancing
 1"1i3
 1#IND
@@ -2544,7 +2533,7 @@ $~RE3
 220801000000Z
 230714000000Z
 24 Hour Clock
-240620161415Z0/
+240627200754Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -2560,7 +2549,6 @@ $~RE3
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 2q2z2
-2u;fA;
 2}>Ic
 3 (tab skip)
 3)323A3O3
@@ -2579,6 +2567,7 @@ $~RE3
 3<$u?A
 3>N;kU
 3>fvw
+3Ic,$L
 3Icl$(H
 3L$0}
 3YA1H
@@ -2589,17 +2578,12 @@ $~RE3
 4-wide
 4. I am double clickable
 456789:;<=
-48;5'oo
+48;5Wzo
 49Icn
 4:A;p|vHH
 4@D;f
-4D8}4u
 4G4Pe
-4HfA;
-4J-#;
 4YA1H
-4fA9|
-4fB9t(0u
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 4j4r4}4
 50x50
@@ -2612,7 +2596,6 @@ $~RE3
 5_5i5p
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 5s3R6=
-5{Zbm
 6*6.6[
 6*f(_
 646.1991
@@ -2648,12 +2631,12 @@ $~RE3
 8.ulI
 80tWD
 80x80
-8;5,5 
 8;t$(
 8@HP:
 8A*t5H
 8A]A\
 8A]_^[
+8A^A\
 8A^A]A\[
 8A^_^[
 8A_A\
@@ -2696,11 +2679,11 @@ $~RE3
 8L9s8t	H
 8L;|$@
 8NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
-8NR]lz
 8O0u]A
 8QYt.
 8T$Qu
 8Wv*T
+8YA1H
 8[u1H
 8\$@t
 8\$Pt
@@ -2718,14 +2701,15 @@ $~RE3
 90t:H
 90u(H
 92FFCu
-95&s 
+95Y(j
 97vvH
 98t H
 98~(H
 98~+H
 99~CE
 9;t	I
-9={V 
+9=KN 
+9=oWn
 9>powf
 9>~ZH
 9@9Y9`9y9
@@ -2735,7 +2719,6 @@ $~RE3
 9A~v]
 9B`t|
 9Cu,fD9y
-9D$Pt
 9D$Pu	A
 9D$pu
 9D$tu
@@ -2745,14 +2728,14 @@ $~RE3
 9L$`A
 9Ox~%I
 9Q4}	A
-9SDt!H
 9ST|	9SD
 9St~)
 9T$DuEA
 9V8~2
 9V<~)E3
-9WDt)H
-9WDt1H
+9WDt%H
+9WDt-H
+9WT|	9WD
 9Y ~C
 9Z4~13
 9Zp~3I
@@ -2777,6 +2760,8 @@ $~RE3
 9rcniu
 9s4~5L
 9s8~:L
+9sDt%D
+9sT|	9sD
 9t$0u
 9t$8u
 9t$Hu
@@ -2787,8 +2772,7 @@ $~RE3
 9valu
 9yx~4
 9{Xt\@8=
-9{Xt\@8=$_
-9{Xth@8=z^
+9{Xth@8=j[
 9{h~#f
 9{l~!H
 9{l~"H
@@ -2800,12 +2784,12 @@ $~RE3
 9|$8u
 9|$@t
 9|$@u
-9|$@~2fff
 9|$P~1
 9|$Xu
 9|$`u
 9|$xu
 9|$|u
+9} |EH
 9~`tV
 9~p~)H
 9~p~*H
@@ -2831,7 +2815,6 @@ $~RE3
 :eu.H
 :fylgu
 :ip#=
-;	V_powf
 ;##Instances
 ;%u)A
 ;(;1;?;];
@@ -2842,8 +2825,9 @@ $~RE3
 ;/i$?t$
 ;3s^A
 ;3~<H
-;5(VT
+;5.zo
 ;74==
+;=x)8
 ;?0123456789:;<=>?
 ;BIb?
 ;C@r3
@@ -2854,7 +2838,6 @@ $~RE3
 ;D$\u
 ;D$\u9H
 ;D$\uL
-;D$`u
 ;D$`}
 ;D$du
 ;D$hsC
@@ -2877,7 +2860,6 @@ $~RE3
 ;Nh~CA
 ;Su"I
 ;T$@r
-;UpJcL.
 ;YA1D
 ;\$p|
 ;_4~!H
@@ -2886,12 +2868,9 @@ $~RE3
 ;k}!?
 ;l$ |
 ;l$0|
-;o<}RH
 ;q }kH
-;q<}CH
 ;t$ |
 ;t$@u
-;t$@|
 ;t$\|
 ;t$pr
 ;t$xu
@@ -2905,7 +2884,6 @@ $~RE3
 ;|$p|
 ;|(@u?H
 ;}p}~H
-<	V_qsort
 <	u=H
 <	uCH
 <	w	@
@@ -2939,7 +2917,6 @@ $~RE3
 <Ct-<D
 <CtK<Dv
 <Eu/H
-<HfA;
 <Left click for details>
 <NULL>
 <None>
@@ -3065,7 +3042,7 @@ $~RE3
 <utK@:
 <{Q}<
 =	8t?
-=	V_qsort_s
+=	V_powf
 = $s?(,
 = gpjt&= gnpt
 = {[8V
@@ -3107,6 +3084,7 @@ $~RE3
 =xav?
 =xtmht
 =xtmvu~f
+>	V_qsort
 >">bJ<?
 >%H5<mN
 >%]s?
@@ -3150,6 +3128,7 @@ $~RE3
 >zp'?
 >}"W?
 ?	FDH
+?	V_qsort_s
 ? ?(?-
 ?!5WOo
 ?#%X.y
@@ -3196,7 +3175,6 @@ $~RE3
 ??0CUtlMemoryPoolBase@@QEAA@HHHW4MemoryPoolGrowType_t@@PEBDW4MemAllocAttribute_t@@@Z
 ??0CUtlScratchMemoryPool@@QEAA@IIPEAX_N@Z
 ??0CUtlSymbolTable@@QEAA@HH_N@Z
-??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
 ??1CMemoryStack@@QEAA@XZ
 ??1CTSListBase@@QEAA@XZ
 ??1CThreadEvent@@QEAA@XZ
@@ -3207,9 +3185,7 @@ $~RE3
 ??1CUtlMemoryPoolBase@@QEAA@XZ
 ??1CUtlScratchMemoryPool@@QEAA@XZ
 ??1CUtlSymbolTable@@QEAA@XZ
-??1KeyValues@@QEAA@XZ
 ??4CUtlString@@QEAAAEAV0@AEBVCBufferString@@@Z
-??ACUtlString@@QEBADH@Z
 ??YCUtlString@@QEAAAEAV0@AEBV0@@Z
 ??YCUtlString@@QEAAAEAV0@PEBD@Z
 ??_FCThreadMutex@@QEAAXXZ
@@ -3358,7 +3334,7 @@ $~RE3
 ?q42s(
 ?rmMx
 ?t'<:
-?u[D8=
+?u[D8-D
 ?uzHcN
 ?vmg$9e
 ?xinput1_4.dll
@@ -3378,10 +3354,11 @@ $~RE3
 @.data
 @.reloc
 @08@HPX`hpx
-@08ND
+@08Nt
 @0;C0t
 @0A;A0t
 @0HcB
+@0fA;
 @33333
 @33333#
 @33333'
@@ -3420,24 +3397,26 @@ $~RE3
 @33333}
 @4A:A4u
 @4D9B4t
-@60|N
-@60~N
+@60qN
+@60tN
+@6`oN
+@6`qN
 @8(t:I
 @8(t@I
 @8)u&I
 @8.tj3
 @80uFI
 @84)u
-@854@
-@85E$<
-@85R%<
-@85Z?
-@85d_
-@85h@
-@85r*h
+@85*7
+@854W
+@8588
+@85>"h
+@85>&h
+@85S!h
+@85g7
+@85kX
+@85pj 
 @88twI
-@8=&wi
-@8=24s
 @8@C@N
 @8H;C8t
 @8HcB
@@ -3453,6 +3432,7 @@ $~RE3
 @8sTu
 @8t$0
 @8t$`
+@8t$ht
 @8t$p
 @8w$t
 @8w2t03
@@ -3491,6 +3471,7 @@ $~RE3
 @A]_^
 @A^A\]
 @A^A\_
+@A^A\_^]
 @A^A]A\_^
 @A^A]_
 @A^A]_^[
@@ -3532,7 +3513,7 @@ $~RE3
 @En[vP
 @HHcB$;B(u
 @HPX&I
-@HPX`hvp
+@HPX`hv
 @HcA,I
 @HcC(H
 @L;d$0}#H
@@ -3545,7 +3526,6 @@ $~RE3
 @SATH
 @SAUAVAWH
 @SAUAVH
-@SAUH
 @SAVAWH
 @SAVH
 @SAWH
@@ -3785,8 +3765,14 @@ $~RE3
 @fffff|
 @pn>6
 @t#H;
+@t/H9s t)H
 @t/H9w t)H
+@t/H9w8t)H
 @t/H9wXt)H
+@t/L9nXt)H
+@t/L9o t)H
+@t/L9s t)H
+@t/L9wXt)H
 @tZH;
 @tfH;
 @xHcQ
@@ -3803,11 +3789,11 @@ A Rather Long Title
 A fD9<hu
 A file with this name is already in the pool.
 A protocol message was rejected because it was too big (more than 
+A#EhA;
 A#G$A;G$u
 A#G(A;G(u
 A#G(A;G(u$A
 A$D	A
-A$Hcy
 A(A;B(t
 A(HcP
 A+<$H
@@ -3860,7 +3846,7 @@ A9]h~@3
 A9^ ~G3
 A9t$<u
 A9w u^
-A9~p~&H
+A9~p~"H
 A:%0.3f
 A:%3d
 A:8u'H
@@ -3904,7 +3890,6 @@ A>l$/
 A>pP&
 A@H9H`u
 A@L;B
-AA:pb
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -4035,10 +4020,12 @@ A_A]A\[]
 A_A]A\]
 A_A]A\^[
 A_A]A\^[H
+A_A]A\^[]
 A_A]A\^]
 A_A]A\_
 A_A]A\_[
 A_A]A\_[]
+A_A]A\_]
 A_A]A\_^
 A_A]A\_^[
 A_A]A\_^[]
@@ -4209,7 +4196,6 @@ Allow dynamic BLAS creation for geometry going through the compute shader skinni
 Allow stationary/dynamic lights to cast shadows.
 Allow time-sliced shadow buffer rendering when enabled via gameinfo.gi
 Allow use of dithered lod transitions
-AllowThickHair
 Allows rendering dynamic lights
 Allows rendering stationary/mixed lights
 Alpha
@@ -4335,7 +4321,6 @@ AxisLabel
 AxisText
 AxisTick
 AxisType
-B	V_roundf
 B 9A tDA
 B D;B0|
 B H+P(
@@ -4521,7 +4506,6 @@ Brianna
 BringWindowToTop
 Broccoli
 Bsmall
-Bu.fE;
 BudgetGroupName - FIXME
 Buffer
 Buffer contents: %d lines, %d bytes
@@ -4560,12 +4544,12 @@ By using SetNextItemAllowOverlap() you can notify that an item may be overlapped
 C ;C$t
 C ;E@uD;
 C D9L
-C H!o
 C H+X(
 C H+X(I
 C H9s
 C H;W
 C HcK$;
+C I!.H
 C$HcK(Hc
 C(+C H
 C(9l$@u\H
@@ -4609,6 +4593,7 @@ C:\buildworker\citadel_staging_win64\build\_build_\scenesystem\_vpc_scenesystem\
 C:\buildworker\citadel_staging_win64\build\src\bitmap\imageformat.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\barnlight.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\latticedeformer.cpp
+C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\lightdesc.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\halton.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_staging_win64\build\src\meshutils\formats.cpp
@@ -4626,7 +4611,6 @@ C:\buildworker\citadel_staging_win64\build\src\public\mathlib\math_pfns.h
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\rotation.h
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\vector4d_base.h
 C:\buildworker\citadel_staging_win64\build\src\public\meshsystem\meshinstance.h
-C:\buildworker\citadel_staging_win64\build\src\public\meshutils\mesh.h
 C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\indexdata.h
 C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\irenderdevice.h
@@ -5027,12 +5011,10 @@ CMemoryStack::Alloc
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)
 CMesh::CalculateBounds
 CMesh::CreatePackedVB
-CMesh::GetAttrArray
 CMeshBuilder2<struct VertexUVPosColorNormalAndTangent_t>::AdvanceIndex
 CMeshBuilder2<struct VertexUVPosColorNormalAndTangent_t>::AdvanceIndices
 CMeshBuilder2<struct VertexUVPosColorNormalAndTangent_t>::BaseIndexData
 CMeshBuilder2<struct VertexUVPosColorNormalAndTangent_t>::Begin
-CMeshBuilder2<struct VertexUVPosColorNormalAndTangent_t>::ComputeNumVertsAndIndices
 CMeshBuilder2<struct VertexUVPosColorNormalAndTangent_t>::End
 CMeshBuilder2<struct VertexUVPosColorNormalAndTangent_t>::ExtractBuffers
 CMeshBuilder2<struct VertexUVPosColorNormalAndTangent_t>::Index
@@ -5119,12 +5101,11 @@ CRC64_ProcessBuffer
 CRayTraceSceneWorld::AddDrawCallToBuild::<lambda_1>::operator ()
 CRayTraceSceneWorld::AddMaterial
 CRayTraceSceneWorld::AddPathTraceSceneInfoToBuild
-CRayTraceSceneWorld::AddPathTraceSceneInfoToBuild::<lambda_10>::operator ()
 CRayTraceSceneWorld::AddPathTraceSceneInfoToBuild::<lambda_3>::operator ()
 CRayTraceSceneWorld::AddPathTraceSceneInfoToBuild::<lambda_4>::operator ()
 CRayTraceSceneWorld::AddPathTraceSceneInfoToBuild::<lambda_6>::operator ()
+CRayTraceSceneWorld::AddPathTraceSceneInfoToBuild::<lambda_7>::operator ()
 CRayTraceSceneWorld::AddPathTraceSceneInfoToBuild::<lambda_8>::operator ()
-CRayTraceSceneWorld::AddPathTraceSceneInfoToBuild::<lambda_9>::operator ()
 CRayTraceSceneWorld::AddSceneWorldToBuild
 CRayTraceSceneWorld::BeginBuild
 CRayTraceSceneWorld::CPipeline::Rebuild
@@ -5559,8 +5540,6 @@ CUtlMemory<class CLightBinnerNull *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CMDLAttachmentData,int>::Grow
 CUtlMemory<class CMDLAttachmentData,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CMDLAttachmentData,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<class CMeshVertexAttribute,int>::Grow
-CUtlMemory<class CMeshVertexAttribute,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CPVSBits const *,int>::Grow
 CUtlMemory<class CPVSBits const *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CRayTraceSceneWorld::CPipeline *,int>::Grow
@@ -5714,6 +5693,8 @@ CUtlMemory<class matrix3x4a_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class matrix3x4a_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class std::function<void __cdecl(class CSceneObject *)> *,int>::Grow
 CUtlMemory<class std::function<void __cdecl(class CSceneObject *)> *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class std::tuple<void *,unsigned int,unsigned __int64,unsigned __int64,unsigned __int64>,int>::Grow
+CUtlMemory<class std::tuple<void *,unsigned int,unsigned __int64,unsigned __int64,unsigned __int64>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<double,int>::Grow
 CUtlMemory<double,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<enum ImGuiFontSize_t,int>::Grow
@@ -5814,6 +5795,8 @@ CUtlMemory<struct CSceneSystem::ScratchRenderTarget_t,int>::Grow::<lambda_2>::op
 CUtlMemory<struct CSceneSystem::VertexCacheUpdateRequest_t,int>::Grow
 CUtlMemory<struct CSceneSystem::VertexCacheUpdateRequest_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CSceneSystem::VertexCacheUpdateRequest_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CSceneViewDebugOverlays::ImGuiData_t *,int>::Grow
+CUtlMemory<struct CSceneViewDebugOverlays::ImGuiData_t *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CScratchRenderTargetSystem::RenderTargetInfo_t,int>::Grow
 CUtlMemory<struct CScratchRenderTargetSystem::RenderTargetInfo_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CScratchRenderTargetSystem::RenderTargetInfo_t,int>::Grow::<lambda_2>::operator ()
@@ -5905,8 +5888,6 @@ CUtlMemory<struct ISceneLayer::InputTexture_t,int>::Grow
 CUtlMemory<struct ISceneLayer::InputTexture_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct ISceneView::WorldList_t,int>::Grow
 CUtlMemory<struct ISceneView::WorldList_t,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<struct ImGuiContext *,int>::Grow
-CUtlMemory<struct ImGuiContext *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct ImGuiViewportDrawData,int>::Grow
 CUtlMemory<struct ImGuiViewportDrawData,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct ImGuiViewportDrawData,int>::Grow::<lambda_2>::operator ()
@@ -6397,7 +6378,7 @@ CompareStringEx
 CompareStringW
 Completion
 Completion, History, Edit Callbacks
-CompressMultiplier
+CompositeMorphTextureAtlas
 Compressed texture bits for mip %i are corrupt, decompression error!
 Compute Shader Invocations - the number of times the compute shader was invoked.
 Compute Skinning Stats
@@ -6525,9 +6506,9 @@ CustomTexture2
 Cxf9Cz
 Cxf9Czu
 Cycles focus between the game window and undocked imgui windows
-C|!Z%
 C|$pH
 C|$xL
+D	V_roundf
 D W?{W
 D!l$xA
 D#L$`A
@@ -6704,11 +6685,11 @@ D$?A3
 D$@;B
 D$@A+
 D$@A;
+D$@A;G,
 D$@D8
 D$@E2
 D$@E3
 D$@H+
-D$@H98
 D$@H9X s
 D$@H;
 D$@H;F
@@ -6720,7 +6701,6 @@ D$@Hi
 D$@I+F@
 D$@I;
 D$@Ic
-D$@Ik
 D$@L9@ r
 D$@L;
 D$@M;
@@ -6752,11 +6732,11 @@ D$HH;
 D$HH;D$X
 D$HHc
 D$HI+FH
+D$HIk
 D$HL9gXt
 D$HL;
 D$HM;
 D$Hf;
-D$Hf;(
 D$HfA
 D$HfD
 D$If+
@@ -6773,7 +6753,6 @@ D$P:[
 D$P;D$\
 D$P=W
 D$PA;
-D$PA;G,
 D$PD9|$0
 D$PE3
 D$PH+
@@ -6852,7 +6831,7 @@ D$h9t$P
 D$hAi
 D$hD+
 D$hD8
-D$hD8l$0
+D$hD8d$0
 D$hD9d$|u
 D$hD;
 D$hE2
@@ -6915,6 +6894,7 @@ D0!...
 D16_SHADOW
 D16_UNORM
 D1<A9F
+D22f;
 D24FS8
 D24S8
 D24X8
@@ -6928,31 +6908,35 @@ D333E
 D76fA
 D8 tZ
 D8!t}H
-D8%<5!
-D8%o/!
+D8%H{8
+D8%O'!
 D8+t	H
-D8-%q!
-D8-4or
-D8-74 
-D8-hpr
-D8-mq!
-D8-~4 
-D8-~q!
+D8-B{7
+D8-Mi!
+D8-N, 
+D8-P	 
+D8-^i!
+D8-cX^
+D8-m@!
+D8-q* 
+D8-{X^
 D8.uBH
 D8/te3
 D80t;
 D81uUL9r
 D84(u
 D84:u
-D85LX
+D85''j
+D85z(r
 D88t#H
 D8<8u
-D8=-i^
 D8>tGD9;~BD
 D8?uOD
 D8A<u
 D8Bbt
 D8D$L
+D8G4u
+D8G5A
 D8G>A
 D8IYu
 D8L$0u`
@@ -7021,36 +7005,32 @@ D9	t7
 D9 |b
 D9 ~^
 D9 ~`
+D9%o^j
 D9&t_I
 D9&~"I
 D9&~-M
 D9'u	H
-D9-OA 
+D9-/9 
+D9-s- 
 D90u	9h
 D93v*
 D93vT
-D9502j
-D95Ddx
-D95Qcx
 D97~s3
 D98t2A
 D98u	9h
+D98~m
 D99tr
 D99u	
 D9:t]
 D9;t2
-D9='l7
 D9>t!D8
 D9>|"Hc
 D9?t!D8{
 D9@$H
 D9@(|
-D9@fA
-D9@fA;
 D9A t
 D9AHu
 D9B t
-D9BfA
 D9D$HD
 D9D$\A
 D9H }
@@ -7061,9 +7041,9 @@ D9N8~^E3
 D9P }
 D9P(D
 D9P0D
-D9R$tdH
 D9R(H
 D9R0A
+D9R4|
 D9\$Pu
 D9a8~dH
 D9ah~VM
@@ -7092,6 +7072,8 @@ D9ft~8I
 D9f|~:I
 D9g@~6H
 D9j u
+D9kDt%D
+D9kT|
 D9l$ 
 D9l$`
 D9l$`u1
@@ -7110,8 +7092,8 @@ D9s8~^E
 D9sP~
 D9sXt7D8%
 D9sXt7D85
-D9sXtXD85f
-D9sXtjD8%n
+D9sXtXD85V
+D9sXtjD8%^
 D9sX|JA
 D9shvBB
 D9sh~
@@ -7124,7 +7106,6 @@ D9t$Xu
 D9t$`
 D9t$`t
 D9t$`u,H
-D9u u>H
 D9v(~qA
 D9w8t
 D9wTt8
@@ -7133,10 +7114,8 @@ D9y t
 D9z u
 D9{ A
 D9{ ~BA
-D9{Dt%D
 D9{Tt8
 D9{Tu5A
-D9{T|
 D9{l~-I
 D9{l~nI
 D9|$0
@@ -7147,11 +7126,8 @@ D9|$h
 D9~@~'E
 D9~X~)M
 D:?u(D
+D;%b(8
 D;.uZH
-D;09D
-D;48D
-D;5f`x
-D;8H9D
 D;Cl|
 D;D$0
 D;D$4u
@@ -7170,9 +7146,7 @@ D;\$@suA
 D;d$ |
 D;d$0
 D;d$H
-D;d$Pu
 D;kT~BIc
-D;l$Pu
 D;l$p
 D;l$x
 D;od~9Ic
@@ -7183,18 +7157,15 @@ D;sHu
 D;shr
 D;t$ 
 D;t$@
-D;t$Pu
 D;t$`
 D;u8}
 D;v(u
 D;v(|
 D;w t9
-D;w |
 D;w0|
 D;{(|
 D;|$0u
 D;|$4
-D;|$Pu
 D;|$`
 D;|$xu
 D;~ s
@@ -7328,6 +7299,7 @@ DependencyClass::m_pDependencyLL == nullptr
 Deprecated
 Depth
 Depth bias applied to shadow receiver for transmissive backface geo (based on renderstate depthbias being 0)
+DepthBias
 DepthPyramid
 Depthbuffer isn't large enough to cover viewport [%ix%i], viewport [%i,%i]
 Descender
@@ -7574,6 +7546,7 @@ Earth
 Ecircumflex
 Ecircumflexsmall
 EconItemToolModel_001
+Ed$xD
 EdD+E\
 Edieresis
 Edieresissmall
@@ -7852,7 +7825,6 @@ FamilyBlues
 FamilyName
 FamilyOtherBlues
 Fancy
-FarPlaneOverride
 Faster lines using texture data. Require backend to render with bilinear filtering (not point/nearest filtering).
 Features:
 February
@@ -7950,7 +7922,6 @@ Flags: 0x%08X (%s%s%s%s%s%s%s%s%s..)
 Flash given color to identify places where it is used.
 FlattenedSerializersVersion001
 FlfD+
-FlipFrustumX
 Float3
 FlsAlloc
 FlsFree
@@ -8040,16 +8011,15 @@ Fullscreen window
 Fullsort
 Functions
 Fx8Axu6f
-F|$@M
 F|HcV`
 F||<##
-G	V_sincosf
 G @8pKu
 G D8`Kt~A
 G E)o
 G H+H(
 G fD9DH
 G!G&C
+G(5ex
 G(H9C@uBE
 G(H9o0
 G(Hc<
@@ -8057,6 +8027,7 @@ G(IcO L
 G(fA;
 G+GXGfGkGpGuG{G
 G,L9t$ t
+G03GD%
 G7G;G@GEGJM
 G8D8`au
 G8H9CXu
@@ -8082,7 +8053,6 @@ GD$XH
 GD$`H
 GD$hH
 GD$pH
-GD3G0%
 GDBytes
 GDI32.dll
 GENERAL
@@ -8381,8 +8351,12 @@ H0McX
 H8HcEw
 H9(tO
 H9*t	H
-H9-]Zr
-H9-xZr
+H9-6xw
+H9-=Lr
+H9-Qxw
+H9-XLr
+H9-gww
+H9-rKr
 H9/u	H
 H90t#A
 H90t?
@@ -8390,14 +8364,17 @@ H90t@A
 H90tKA
 H92tBA
 H93t	H
-H95	iq
-H953f:
-H9570;
+H95#b:
+H954!i
+H957;w
+H958 i
+H95<:w
+H95~\q
 H97u)I
 H97u+A
 H98t#
 H98t2
-H98t7
+H98tD
 H98tKA
 H98tNA
 H98tZA
@@ -8411,8 +8388,7 @@ H99ttA
 H9:t!A
 H9:t%A
 H9;t	H
-H9=)O7
-H9=nz>
+H9=.r>
 H9A s
 H9A u
 H9A u)M
@@ -8592,12 +8568,13 @@ Handle ImGuiBackendFlags_RendererHasVtxOffset for 16-bit indices in your backend
 HasField
 HasRange: %s
 Hc+;k
+Hc-4Y]
+Hc-HOT
 Hc.;n
 Hc/;o
 Hc3;s
 Hc3Lc
 Hc7;w
-Hc:Hc
 Hc;9E0t
 Hc;;{
 Hc>;~
@@ -8627,8 +8604,6 @@ HcCxH
 HcD$ 
 HcD$ H
 HcD$0H
-HcD$4H
-HcD$8
 HcD$8L
 HcD$<
 HcD$<A
@@ -8649,11 +8624,11 @@ HcD$\H
 HcD$`H
 HcD$d;CP}
 HcD$dA
-HcD$hHi
 HcD$lH
 HcD$lM
 HcD$pL
 HcD$xH
+HcD$xLi
 HcD$|
 HcE H
 HcE H+
@@ -8721,7 +8696,7 @@ HcKpH
 HcL$ D
 HcL$8H
 HcL$`;
-HcL$hH
+HcL$xH
 HcMg3
 HcMgH
 HcMgL
@@ -8741,7 +8716,6 @@ HcT$03
 HcT$4H
 HcT$8H
 HcT$@H
-HcT$T
 HcU ;
 HcU0A
 HcU8;
@@ -8873,7 +8847,7 @@ HuaTianKaiTi?
 HuaTianSongTi?
 Hungarumlautsmall
 I	GHI
-I	V_sinf
+I	V_sincosf
 I am a a tooltip for a disabled item.
 I am a fancy tooltip
 I am a manually emitted tooltip.
@@ -8914,6 +8888,7 @@ I9F`u
 I9H t
 I9I t
 I9Jhs
+I9u8D
 I9xPu
 I9~8u
 I;>u 
@@ -8984,8 +8959,9 @@ Iacute
 Iacutesmall
 Ic.A;n
 Ic.D+
+Ic4$H
 Ic7A;w
-Ic<$f
+Ic<$fD
 Ic>A;~
 Ic?A;
 Ic@8I
@@ -9015,6 +8991,7 @@ IcF8I
 IcF<H
 IcG@H
 IcG@f
+IcG`I
 IcK@H
 IcO ;
 IcO8A;	}
@@ -9074,7 +9051,7 @@ ImGui Metrics
 ImGui Platform
 ImGui Style
 ImGui Style Editor
-ImGui::GetCurrentContext() == m_pImGuiContext
+ImGui::GetCurrentContext() == m_ImGuiData.m_pImGuiContext
 ImGui::GetCurrentContext() == nullptr
 ImGuiBackendFlags_RendererHasVtxOffset: %s
 ImGuiChildFlags_AlwaysUseWindowPadding
@@ -9294,6 +9271,7 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CSSDSMs
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CSSDSMsg_ViewTargetList)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be SceneViewId_t)
 InstanceBuffer
+InstanceCount
 InstanceData
 InstancedMesh
 InstancedMesh %s has %i lods and %i meshes, there must be a 1:1 mapping (right now).
@@ -9473,7 +9451,7 @@ JSType
 J\;5yTb
 J\RJ=
 January
-Jc<#L
+Jc<;L
 JobsRunning()
 Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
 Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
@@ -9481,6 +9459,7 @@ Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 Jsmall
 Jt;Jlu
 JvKsK}l	J
+K	V_sinf
 K HcC$Hc
 K L9c uM
 K SUVWATAVAWH
@@ -9514,7 +9493,7 @@ KV3 save transfer failed: %s
 K`Lc3H
 Kanjis: 
 Kasich
-Kc<,L
+Kc<'L
 Kc\&pA
 Kd8Kct
 KdrJL
@@ -9546,7 +9525,6 @@ KeyValues3::Internal_ExpandCompactArray
 KeyValues3::Internal_FreeAllocation
 KeyValues3::Internal_GetArrayElementsArray
 KeyValues3::Internal_PrepareForInternalTypeAndNewData
-KeyValues3::Internal_SetValueAnyArray
 KeyValues3::IsValidTypeCombination
 KeyValues3::Metadata_GetFilename::<lambda_1>::operator ()
 KeyValues3::Metadata_GetLineColumn::<lambda_1>::operator ()
@@ -9578,7 +9556,6 @@ K|9{l~*H
 K}*n:	
 K}udN
 K~Je#>!
-L	V_snprintf
 L	kHH
 L!d$(L!d$@D
 L!|$(L!
@@ -9618,6 +9595,7 @@ L$ SWH
 L$ UATAUAVAWH
 L$ UH
 L$ USAVAWH
+L$ USH
 L$ USVWATAUAVAWH
 L$ USVWATH
 L$ USWH
@@ -9715,6 +9693,7 @@ L$@HcT$<H
 L$@HcU
 L$@Hi
 L$@I;
+L$@Ic
 L$@Lc
 L$@Lk
 L$@Mc
@@ -9747,6 +9726,7 @@ L$LE3
 L$LH;u
 L$LHc
 L$Ls=D
+L$P5th
 L$PD;
 L$PE3
 L$PH+OPH
@@ -9809,8 +9789,8 @@ L$hL;
 L$hf;
 L$htrA
 L$lA;MH
-L$lI;
 L$pD+
+L$pD;
 L$pE3
 L$pH+
 L$pH3
@@ -9831,6 +9811,7 @@ L$xH;M
 L$xIc
 L$xf;
 L$xfD
+L$|I;
 L'LZa
 L+@(H
 L+@0H
@@ -9845,11 +9826,11 @@ L0L:LA
 L9#t*H
 L9#u&9t$X
 L9#u/H
-L9%	en
-L9%%gp
-L9%@gp
-L9%Hfp
-L9%Khp
+L9%0\p
+L9%8[p
+L9%;]p
+L9%m+<
+L9%t\p
 L9't	H
 L9(t@
 L9/t	H
@@ -9857,12 +9838,22 @@ L90t?
 L90u	
 L92tDA
 L93t	H
-L95,Uf
-L95ATf
+L951Nf
 L98tCA
 L9;t	H
 L9;u	H
-L9=YHv
+L9=)5v
+L9=2rw
+L9=9sw
+L9=Fqw
+L9=Tsw
+L9=Xtw
+L9=Xuw
+L9=cNr
+L9=grw
+L9=stw
+L9=suw
+L9=~Nr
 L9?t	H
 L9@ s
 L9BHA
@@ -9870,6 +9861,7 @@ L9P s
 L9Q@u
 L9Qhs
 L9T$@
+L9`@tNH
 L9`Pt
 L9a@u
 L9b(t
@@ -9906,8 +9898,6 @@ L;L$@
 L;Q s
 L;c u
 L;d$HL
-L;d$P
-L;d$Pt
 L;d$h
 L;d$p
 L;l$8|
@@ -9920,7 +9910,7 @@ L;{ u
 L;{ u?M
 L;|$@
 L;|$X
-L=|CP
+L=|3P
 L>ntGG
 L?)\O?
 L?UUUUUUU?
@@ -9986,10 +9976,11 @@ Layout/Scrolling/Vertical
 Layout/Text Baseline Alignment
 Layout/Widgets Width
 Lc$8E;w
+Lc&D;f
 Lc'D;g
 Lc+D;k
 Lc3D;s
-Lc5C6j
+Lc53<j
 Lc6A+
 Lc6D;v
 Lc6L+
@@ -10026,12 +10017,12 @@ LcL$PH
 LcL$XH
 LcL$pH
 LcL$xH
+LcM H
 LcM0H
-LcMPH
+LcMXH
 LcMhH
 LcO(H
 LcT$8D
-LcT$T
 LcV D
 LcV(D
 LcW D
@@ -10053,12 +10044,11 @@ Lct$0E;
 Lct$8
 Lct$@
 Lct$@E
+Lct$@H
 Lct$PA
-Lct$PH
 Lct$`
-Lcu(D;u8u
 Lcu8D;uH
-Lcu@D;
+LcuHD;
 Lc|$8
 Lc|$TLcl$pM
 Lc|$h
@@ -10078,6 +10068,7 @@ LeftCtrl
 LeftShift
 LeftSuper
 Legacy Columns API
+LegacyPointLightShadowsEnabled
 Legend
 Legend Options
 Legend Popups
@@ -10095,7 +10086,6 @@ Light
 Light Bounds Debugger
 Light Cookies
 LightBinner
-LightBinnerGpuTileSizePixels
 LightCookieTexture
 LightDesc_t::BuildShadowFrustaForLight
 LightDesc_t::ShadowFrustaCountForLight
@@ -10189,6 +10179,7 @@ Lyc>=
 M#}0I
 M(H;M
 M(t-I
+M8HcE0
 M9&t	I
 M90u7
 M9` u
@@ -10218,6 +10209,7 @@ MOD desires lightbiner GPU but is unsupported by HW (SupportsCompute=%i CubeMapA
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 MOUSE STATE
 MOUSE WHEELING
+MPHcEHH
 MRM\Mc
 MSAA mismatch with bound rendertarget. Need to add explicit MSAA resolve layer.
 MSAA mismatch with bound texture. Need to add explicit MSAA resolve layer.
@@ -10419,7 +10411,6 @@ More content %d
 More spacing: Hello
 More..
 Morph
-MorphTextureAtlasWidth
 Most plotters can also be passed a function pointer for getting data.
 Mostly False
 Mostly True
@@ -10495,6 +10486,7 @@ MyPopup
 MyTabBar
 MyTag
 M|$DD;
+N	V_snprintf
 N Bins
 N H+N 
 N HcF
@@ -10818,7 +10810,6 @@ OuterRectClipped
 Output
 Output flags:
 OutputIndices
-OutputVB
 Outputs
 Outside
 Over two lines..
@@ -10843,8 +10834,8 @@ Override. Old value was 1.0
 Overrides the map's fog settings (-1 populates fog_ vars with map's values)
 P(P;P`
 P08@J
-P08ND
-P6`|N
+P08J0
+P08Nt
 P>q_Y~
 P@HPX`hpx
 PA\][
@@ -10926,6 +10917,7 @@ Penumbra size multiplier for shadow sampling, reduces fog shadow aliasing
 Per-frame scratch memory used: %s (high watermark %s)
 PerInstancePackedShaderData_t::EncodeInstanceDataForRayTracing
 PerVertexLighting
+PerViewConstantBuffer_t
 PerViewLightProbeVolumeConstantBuffer_t
 PerViewLightingConstantBufferGPU_t
 PerViewLightingConstantBufferGpu_t
@@ -11080,7 +11072,6 @@ QueryPerformanceFrequency
 Querying
 Querying Item Status (Edited/Active/Hovered etc.)
 Querying Window Status (Focused/Hovered etc.)
-R	V_sscanf
 R LcG4L
 R%R<RqS
 R/bl"
@@ -11397,6 +11388,7 @@ RightSuper
 Ringsmall
 Roman
 Romney
+RootLODLevel
 RootViewIsOrthographic
 RootViewOrigin
 RootViewOrthoInvWidth
@@ -11572,6 +11564,7 @@ Scale
 Scale factor for requested texture size (texture streaming)
 Scale factor for requested texture size (texture streaming) - used for geo that doesn't have a precomputed UV density measure
 Scale for computed barnlight shadowmap size
+Scale global volume fog density
 Scale of the text used for 3d display
 ScaleMax: %f
 ScaleToPixel: %f
@@ -11745,6 +11738,7 @@ Selection
 Selection State: Multiple Selection
 Selection State: Single Selection
 Selectors/Pickers
+SelfShadowStrength
 Semibold
 Semicolon
 Separator
@@ -11937,7 +11931,7 @@ SkinningCS_Dispatch
 Skip NaN
 SkyAmbientBounce
 SkyBounceScale
-SkyColor
+SkyIBLSource
 SkyTextureScale
 Skybox
 Slant
@@ -12019,6 +12013,7 @@ StartComposites
 StartData
 StartDirection
 StartFontMetrics
+StartIndex
 StartKernData
 StartKernPairs
 StartKernPairs0
@@ -12061,7 +12056,6 @@ Streaming Activity
 Strength %.2f
 Stretch
 Stretch + ScrollX
-StretchMultiplier
 StretchProp
 StretchSame
 Striding is useful for interleaved data (e.g. audio) or plotting structs.
@@ -12106,6 +12100,7 @@ Synced instances
 Synthetic oneofs must be after all other oneofs
 System file
 SystemRoot
+T	V_sscanf
 T H E Z O C Q S
 T#T.Tk
 T$ ;T$<
@@ -12170,7 +12165,6 @@ T$8fA;
 T$<;V
 T$<A;
 T$<A;}l
-T$<E3
 T$@A;
 T$@D+
 T$@D;c
@@ -12181,9 +12175,7 @@ T$@Hc
 T$@I+
 T$@Ic
 T$@IcE
-T$@fD
 T$@fE
-T$@ff
 T$D;D$<
 T$DHk
 T$H;T$8
@@ -12248,28 +12240,24 @@ T$pIk
 T$pL;M
 T$xD;
 T$xD;D$x
-T$xD;M
 T$xE2
 T$xE3
 T$xE;
 T$xH+
 T$xH;L$0t
 T$xH;U
-T$xI;
 T$xIc
 T$xLcl$XH
 T$|Hc
-T%5OB
-T%H0E
-T%p6E
-T-$$E
+T%8%E
+T%`+E
 T08A;
-T5Y->
+T5)*>
+T5]}2
 T6HI;
 T8PHcD8HH
 T: %7.3f
 T; Lc
-T=1w,
 T>M-+?#gy?
 T>gaW?:]f?AHV>'
 T>l>~?
@@ -12365,6 +12353,7 @@ Target
 Target RowBg0 to override the alternating odd/even colors,
 Target RowBg1 to blend with them.
 Tcommaaccent
+TempBufferStartIndex
 Template view factory "%s" was registered twice!
 Temporal filtering weight
 TerminateProcess
@@ -12637,6 +12626,7 @@ USER GUIDE:
 USER32.dll
 USER:
 USVATAUAVAWH
+USVATAUAWH
 USVATAWH
 USVATAWI
 USVAUAVH
@@ -12649,7 +12639,6 @@ USVWATAUAVH
 USVWATAUAWH
 USVWATAUH
 USVWATAVAWH
-USVWATAVH
 USVWATAVI
 USVWAUAVAWH
 USVWAUAVH
@@ -12718,6 +12707,7 @@ UVWAWH
 UVWAWI
 UVWQ8888
 UWATAUAVH
+UWATAUAWH
 UWATAUH
 UWATAVAWH
 UWATAVI
@@ -12725,6 +12715,7 @@ UWATAWH
 UWATH
 UWAUAVAWH
 UWAUAVH
+UWAUH
 UWAVAWH
 UWAVH
 UWAWH
@@ -12881,7 +12872,6 @@ VUUUE3
 VUUUH
 VUUUIc
 VUUUL
-VUtfG
 VVector
 VWATAUAVAWH
 VWATAUAVAWHc
@@ -12970,7 +12960,6 @@ VertCount
 Vertex Shader Invocations - the number of primitives (triangles) that were executed in the vetex shader stage.
 VertexCacheVB
 VertexColorUVPos_t
-VertexCount
 VertexElementAnnotation
 VertexGenericIntegerData
 VertexPaintBlendParams
@@ -13023,14 +13012,15 @@ VolumetricFogManifest
 VoxelSpaceFromWorldSpace
 Vrad3_001
 Vsmall
-W	V_stricmp_fast
 W$W>WBWSW
+W%Bj4
+W%D_2
+W%kh-
 W(fA#
-W-Od2
-W-PY	
-W52a	
-W5W{.
-W5e?.
+W- V	
+W5%4.
+W5*x.
+W5_VD
 W9QHI
 W: %.1f
 W@9w8v8
@@ -13259,24 +13249,31 @@ X UVWAVAWH
 X UWATAUAWH
 X VWAVH
 X!t5~
-X%Ug?
+X%%d?
+X%-H7
+X%^j?
+X%tw.
+X-,j?
+X-0l@
+X-7]-
 X-Axis
 X-Axis %d
 X-Axis %d [0x%08X]
 X-Axis 1
 X-Axis 2
-X-Jp@
-X-\m?
-X-`o@
+X-Ok@
 X-axis in Stops
+X-~l@
 X/Y = %.0f px
 X1Ic	D
 X24_TYPELESS_G8_UINT
 X32_TYPELESS_G8X24_UINT
-X5)u@
-X5HR4
-X5Xv@
-X=s.1
+X5(s@
+X51c-
+X5vs@
+X= "1
+X=Hh.
+X=z#X
 X?+5[>,
 XA]_^]
 XA^A]_]
@@ -13326,6 +13323,7 @@ X\$0H
 X\$@I
 X_HEIGHT
 X`Hc@XH
+X`hr0
 Xl$4D
 Xl=hs>
 Xr(fA
@@ -13343,50 +13341,45 @@ Xt$`f
 Xt$hH
 Xt$hM
 Xt$hf
+Y	V_stricmp_fast
 Y!Q!t!
-Y%*w5
+Y%ZJD
 Y(t+H
+Y-,&>
 Y-Axis
 Y-Axis %d
 Y-Axis %d [0x%08X]
 Y-Axis 1
 Y-Axis 2
 Y-Axis 3
-Y-\)>
-Y-hBT
-Y-{.P
+Y-K8P
 Y0HcR
-Y5 ['
-Y5!&)
-Y5%}F
-Y5&p)
-Y5'y.
-Y5(t)
-Y5.o.
-Y53^*
-Y53d*
-Y5<w.
-Y5@8T
-Y5A8T
-Y5A=)
-Y5Cw*
-Y5J S
-Y5RO)
-Y5XQX
-Y5[v	
-Y5a/)
-Y5gdP
+Y5	$)
+Y5%d.
+Y5+-*
+Y5+s	
+Y5/p)
+Y50l)
+Y59l.
+Y5H#T
+Y5Hu.
+Y5I#T
+Y5I-)
+Y5I_*
+Y5JK)
+Y5K@*
+Y5S{.
+Y5UfT
+Y5ZG)
+Y5]s.
+Y5hl.
+Y5m;J
+Y5n+E
 Y5na)
-Y5ne)
-Y5qE*
-Y5s2*
-Y5s}*
-Y5}o.
+Y5v])
+Y5yr2
+Y5{F*
 Y9"SD
-Y=TJT
-Y=U,*
-Y=V	"
-Y=j!1
 Y>kX>
 Y>kX>M
 Y?fff?33s?
@@ -13408,7 +13401,6 @@ YZ0AmfE
 Y\$0D
 Y\$@A
 Y\$PA
-Y\$pA
 Y\$pE
 Y]Ym[u[
 Yacute
@@ -13635,11 +13627,8 @@ Zsmall
 \$0eH
 \$0fA
 \$0fH
-\$0u H
 \$4Ic
 \$8+A
-\$8A9
-\$8A;
 \$8A\^]
 \$8A^_^
 \$8D;
@@ -13669,7 +13658,6 @@ Zsmall
 \$@tJH
 \$@u}
 \$H9\$X|LH
-\$HA;
 \$HA_A^A]A\^]
 \$HE3
 \$HH9
@@ -13681,8 +13669,8 @@ Zsmall
 \$HL;
 \$HM9~
 \$Ht	H
+\$P9s
 \$P@2
-\$PA9
 \$PD;
 \$PE3
 \$PE;
@@ -13697,7 +13685,6 @@ Zsmall
 \$Pt8
 \$Pt:H
 \$PtJH
-\$TE3
 \$XA:
 \$XD;
 \$XD;cx
@@ -13706,14 +13693,17 @@ Zsmall
 \$XHcD$PH
 \$XfD
 \$Xt	H
+\$Xu:H
+\$`9s
 \$`A;
-\$`D9{
+\$`D9k
 \$`D;
 \$`E3
 \$`H+
 \$`HcD$H
 \$`Ic
 \$`fH
+\$`tVH
 \$gm?
 \$hE3
 \$hH9
@@ -13722,7 +13712,6 @@ Zsmall
 \$hL;
 \$hLc}
 \$hMc
-\$hu:H
 \$huOM
 \$lD8
 \$p9Q
@@ -13734,9 +13723,8 @@ Zsmall
 \$xI;
 \$xu!M
 \$|LcT$HL
-\%6o	
-\5nHD
-\5pt.
+\%]"G
+\->"G
 \>$hkDh$h>
 \??k=Y
 \D$Df
@@ -13755,10 +13743,10 @@ Zsmall
 \uQI;
 ] L9o@u
 ]!])a
-](H9]
 ](u;H
 ])6M>&
 ]0tFA
+]5ir2
 ]8L9g8t
 ]>)2X
 ]?i0*v
@@ -13782,21 +13770,23 @@ Zsmall
 _ ;_$t
 _$+_ f
 _(IcG L
-_-1QK
-_5*S)
-_54+)
-_5>m)
-_5Fi)
-_5TB)
-_5t4)
-_5|Z)
+_-)YK
+_5$O)
+_5.S)
+_51	)
+_5Fe)
+_5Hi)
+_5\2)
+_5g{)
+_5rD)
+_5|$)
 _8Hc}w;{4~!H
 _8I;_@tj
 _8M9g(u\
 _?p%{>
 _A`:`
 _AngledHeader
-_B9o0u-H
+_BD9w0u-H
 _COL3F
 _COL4F
 _ConvertToGPULight
@@ -13880,7 +13870,7 @@ _|HcGxA
 `*`0a
 `+!]?
 `.rdata
-`6`~N
+`6P{N
 `80QA
 `>:X/?
 `?Mg_?$
@@ -13954,7 +13944,6 @@ _|HcGxA
 `virtual displacement map'
 `xiA;
 a	]u]
-a < m_nAttributeCount
 a HcA
 a'aCaYb"b8b
 a7hIw
@@ -14017,13 +14006,10 @@ asterisk
 asuperior
 atan2
 atilde
-attribute_name
-attrs.Count() == pVertexBuffer->GetArrayElementCount()
 autofitter
 avg %f
 avg lum
 avg lum: average scene luminance, calculated using average of pixels that fall within
-b Hc|$@
 b Lct$0
 b%d (%.02f secs)
 b%d (%d)
@@ -14244,13 +14230,13 @@ currency
 current ImPlot Colormap. If you want to style individual
 curvature
 cvars
-d	V_tanf
 d$ D!
 d$ D9
 d$ E3
 d$ UAVAWH
 d$(D;d$$
 d$(E3
+d$(L;d$8
 d$(fI
 d$0E3
 d$0Hc
@@ -14258,12 +14244,11 @@ d$8E3
 d$8Ict$
 d$8Ic|$
 d$8fI
-d$@@8(t:I
 d$@D9d$P|LH
 d$@D;
 d$@E2
 d$@E3
-d$@Ic
+d$@E9
 d$@fA9
 d$@fI
 d$@|LH
@@ -14294,6 +14279,7 @@ d$XfD
 d$\A;
 d$`D9c<
 d$`H;
+d$`Ic
 d$`fD
 d$`u	A
 d$`|QH
@@ -14421,6 +14407,7 @@ e(u;H
 e+000
 e.g.:
 e0A_A^A]A\]
+e9sDt%D
 e@A_A^A]A\]
 eH9k8H
 eLK(w
@@ -14475,9 +14462,9 @@ expected_long_tick_reason
 extend .$0 {
 extendee
 extension_range
-extra_stream_data
-extra_vertex_streams
 e}1Hc
+e~[>L
+f	V_tanf
 f i j k d b h
 f!f=fEfwf
 f(x) = 10^x
@@ -14533,6 +14520,7 @@ fA9,vu
 fA99}
 fA9HT
 fA;9s7f
+fA;P*w
 fB9,Nu
 fB94Ou
 fB94ht	H
@@ -14542,8 +14530,7 @@ fB9<Bu
 fB9<Hu
 fB9<{u
 fB9L`
-fB9t(0L
-fB9t(2t
+fB9T@
 fC94wu
 fC9L>T
 fD9	t(L
@@ -14558,8 +14545,8 @@ fD9$wu
 fD9't
 fD9'u
 fD9,Au
-fD9,Hu0
 fD9,pu
+fD9->
 fD91u
 fD91uTL9r
 fD92t
@@ -14569,29 +14556,25 @@ fD94Q}
 fD94iu
 fD97t
 fD9;u
-fD9=X
 fD9DH
+fD9DP
 fD9H*
-fD9LH
+fD9`tt
 fD9aTL
 fD9cTuHLcK
 fD9d$pt+fD
 fD9f`
-fD9sDt%D
+fD9oDt%D
 fD9t$b
-fD9tH
-fD;"w
 fD;L*Z}	D
 fD;SD
 fD;m@~
 fD;mH
-fD;q*w
 fD;~P}gI
 fE9!fA
 fE9,Fu
 fE98t'
 fE9|x
-fE; w
 fG9$Ou
 fJBGo
 fNear < 0
@@ -15000,6 +14983,7 @@ items_count
 items_type (first column)
 iu+-,
 iygE3
+j HcD$@H
 j>>A?1
 j?V()
 j?{$*
@@ -15060,6 +15044,7 @@ l$ WAVAWH
 l$ WH
 l$ fH
 l$$D;
+l$$E;o`
 l$$L;
 l$(9X 
 l$(A^
@@ -15070,7 +15055,6 @@ l$(H+y0H
 l$(I;
 l$(L;
 l$(Lc;D;{
-l$(Lk
 l$(f;
 l$(fH
 l$(u8H
@@ -15146,10 +15130,11 @@ l$XI;
 l$XLi
 l$XM+
 l$XfD
-l$XfD;
 l$\D9n
 l$\fD
+l$`E3
 l$`H+
+l$`I;
 l$`Ic(H
 l$`Ic.
 l$`L+
@@ -15166,13 +15151,13 @@ l$pD8^
 l$pD9c
 l$pE3
 l$pE9
+l$pHc
 l$pLc
 l$pLc*
 l$pM+
 l$pM;
 l$ptV
 l$tE3
-l$xHc
 l$xIc
 l$xM+
 l$xfA
@@ -15535,7 +15520,6 @@ mat_tonemap_force_use_alpha
 mat_tonemap_uncap_exposure
 mat_viewportscale
 material
-material_name_for_stream_mapping
 materials.Count() == drawFlags.Count()
 materials/dev/aoproxy_splat.vmat
 materials/dev/compact_indirect_draws.vmat
@@ -15598,7 +15582,6 @@ maxdate
 maxtime
 memberName.m_pString
 mergedindices
-meshUtilsKeyValues
 mesh_calculate_curvature_smooth_invert
 mesh_calculate_curvature_smooth_pass_count
 mesh_calculate_curvature_smooth_weight
@@ -15642,6 +15625,7 @@ mycolumns
 mycolumns3
 mypicker
 n r x z o e s c
+n(I9n
 n03>Pu
 n4	fE
 n<	fE
@@ -15649,7 +15633,6 @@ n<	fG
 n>log2
 nAnimBones
 nAttrCount > 0
-nAttrCount >= 1
 nBarns <= 1
 nBarns <= V_ARRAYSIZE( barnDescs )
 nBits <= 24
@@ -15705,6 +15688,7 @@ nInstanceSlot >= 0
 nInstanceSlotIndex != -1
 nLOD < MAX_LOD_LEVELS
 nLODIndex == -1 || nLODIndex < m_perObjectLOD.Count()
+nMXI#
 nMaxCascadeSize >= 1
 nMaxFrusta >= 1
 nMaxFrusta >= V_ARRAYSIZE( directions )
@@ -15757,11 +15741,10 @@ nType == m_pInfo->m_nType || nType == CONVAR_TYPE_INVALID
 nType >= 0 && nType <= CONVAR_TYPE_COUNT
 nUseIndex != -1
 nValidLayouts > 0
-nVertexCount == nAttributeVertexCount
-nVertexCount > 0
 nVertexCount >= 0
 nVertexCount >= 2
 nVertexCount >= 3
+nXL9n8t
 n]?iJ
 nan(ind)
 nan(snan)
@@ -15838,36 +15821,39 @@ number
 numbersign
 nxnstripped
 ny@fD
+o L9/t
 o Lc.I
 o O 0
-o%+ >
-o%B&2
-o%T >
-o%}yQ
+o%MiQ
 o)9oX
-o-,.>
-o-?oT
-o-I~T
-o-R >
-o-Y/>
-o-bqT
+o-	nT
+o-"aT
+o-),>
+o-X&>
+o-^AT
+o-^BT
+o-kqT
+o-ofT
+o-u&>
+o-vpT
 o0H9o8
-o5+.>
-o5,%>
+o5%#>
+o5'_T
+o57qT
 o59UI
-o5U&>
-o5^~T
-o5_RT
-o5goT
-o=-+>
-o=8&>
-o=BQT
-o=CRT
-o=XdT
-o=aQT
-o=f\T
-o=rvT
-o=u~T
+o5?AT
+o5PfT
+o5TaT
+o5WpT
+o5t&>
+o=!AT
+o=&LT
+o=2fT
+o=5nT
+o=9pT
+o=AGT
+o=BiT
+o=a_T
 oD$ f
 oD$@H
 oEoOoZoaozo
@@ -15938,7 +15924,6 @@ oversubscribed dynamic bit lengths tree
 oversubscribed literal/length tree
 own texture data.
 owner dead
-ownership == KV3_COPY_EXTERNAL
 oypfD
 oypst.
 o|$0f
@@ -15955,7 +15940,7 @@ p q g j y
 p#p7pP
 p*W4H
 p.HasShadowsToRender()
-p08@H^D
+p08@H^t
 p0R^G'
 p7M}f
 p;Kl|
@@ -16015,6 +16000,7 @@ pEnumInfo
 pEnvMap->m_nEnvCubeMapArrayIndex < MAX_ENVMAPS
 pExtensionWithDot[ 0 ] == '.'
 pExtra
+pF0sN
 pField == pFieldBase + nFields
 pFlexSetup->m_flexDescWeights.Count() / 2 == nFlexWeights
 pFlexSetup->m_pFlexDescDelayedWeights != nullptr
@@ -16029,6 +16015,7 @@ pHairCtx->m_hAoVolume != RENDER_TEXTURE_HANDLE_INVALID
 pHairCtx->m_hDensityVolume != RENDER_TEXTURE_HANDLE_INVALID
 pHairMat
 pHairMesh->m_pGroomData
+pHdr->GetPhysicsContainer()->m_pFeModel == m_pSoftbody->GetFeModel()
 pHeader->m_nHeaderVersion == RESOURCE_FILE_HEADER_VERSION
 pLPV->m_nLightProbeAtlasSizeY > 0
 pLPV->m_nLightProbeAtlasSizeZ > 0
@@ -16209,6 +16196,7 @@ qYqaqnq
 qangle
 qhIUi
 qo-W>
+qqu<H
 quadLayout
 quaternion
 question
@@ -16358,7 +16346,9 @@ rupiah
 rvf;\$d
 r|fD9
 s AWH
+s H93t
 s H9s
+s L93t
 s WATAUAVAWH
 s WAVAWH
 s"fff
@@ -16525,7 +16515,6 @@ sdD83t[M
 sdnut4
 seaborn style
 section
-semantic_index
 semicolon
 serializing
 server_ip_address
@@ -16682,8 +16671,8 @@ t	9>t
 t	A;y 
 t	A;z 
 t	D#%
-t	D#%3
-t	D#%K
+t	D#%c
+t	D#%{
 t	H9s
 t	HcC
 t	Hcp
@@ -16695,6 +16684,7 @@ t HcOxL
 t fff
 t!H9C
 t!H9s
+t!HcA
 t!HcK(Li
 t!L9{
 t"$`< u
@@ -16756,7 +16746,6 @@ t$(HcF
 t$(Hi
 t$(I;
 t$(Jc
-t$(fA;
 t$(fI
 t$(t!H
 t$09C
@@ -16816,7 +16805,6 @@ t$@E3
 t$@H+
 t$@H;
 t$@Hc
-t$@Ic
 t$@L;
 t$@Li
 t$@Lk
@@ -16841,17 +16829,16 @@ t$HHc
 t$HHcD$@L
 t$HHk
 t$HL;u
-t$Hff
 t$Ht	H
 t$H~#H
 t$P9{l
-t$P;t$h
 t$PD8
 t$PD9
 t$PD9d$@u
 t$PE3
 t$PH;
 t$PHc
+t$PIc
 t$PLc7D;w
 t$PLcs
 t$PLi
@@ -16865,7 +16852,7 @@ t$PuVHcC
 t$P|?H
 t$P~ H
 t$Qu	E
-t$TD8%
+t$TD8%1
 t$XD8k
 t$XE3
 t$XH;
@@ -16875,6 +16862,7 @@ t$XIc
 t$XfD
 t$Xt	H
 t$X~#H
+t$`;{<}4
 t$`D8
 t$`D;
 t$`E+
@@ -16884,10 +16872,13 @@ t$`E;
 t$`H+
 t$`H;
 t$`Hc
+t$`HcD$XH
+t$`Ic
 t$`L#
 t$`L;
 t$`Lc
 t$`fD9+t$I
+t$`}[H
 t$`~ H
 t$d@2
 t$dE3
@@ -16896,17 +16887,17 @@ t$dL9b u
 t$hE3
 t$hE;
 t$hIc
+t$hM;
 t$hMc
 t$huY
-t$h}[H
 t$lu/A
 t$pE3
-t$pHcD$hH
 t$pHi
 t$pL9&t
 t$pL;
-t$p|FH
+t$t;E
 t$t@8t$dt"H
+t$xA;
 t$xD;
 t$xE2
 t$xE3
@@ -16916,6 +16907,7 @@ t$xIc
 t$xLk
 t$xt*3
 t$xuIM
+t$x|EH
 t$|fD
 t%@8x
 t%D9-
@@ -16937,11 +16929,11 @@ t'HcW
 t'IcP
 t(+S8D+
 t(;;}
-t(HcA
 t(Icm
 t(L9.t#D9n
 t(fff
 t)@8x
+t)Ic@
 t)IcV
 t*HcA
 t*HcC
@@ -16950,6 +16942,7 @@ t+H+}
 t+HcJ H
 t,<tt
 t,D8a
+t,HcA
 t-9t$ t.
 t-D9n,t
 t-E9'
@@ -16960,7 +16953,7 @@ t.H99t)
 t.LcA
 t.fff
 t/@8p
-t/D85D
+t/D854
 t/H;|$0r
 t/LcA
 t/fff
@@ -16979,7 +16972,6 @@ t4D9y
 t4H9A u.H;
 t4I92u/M
 t4L;C
-t4fff
 t5D9A4t
 t69_Xt18
 t6;T$@t
@@ -16987,8 +16979,7 @@ t6D9s$t#D
 t7HcP
 t7L9h
 t8fff
-t9BfC
-t:D85m
+t:D85]
 t;IcP
 t;LcF
 t=fE9
@@ -17195,17 +17186,13 @@ u#HcM
 u$D8r(t
 u$HcM
 u$HcM H
-u$f9l
 u%@8j(t
 u%H;Y r
 u&D9w
 u&HcM
 u&L;c
-u'D9R4|
 u'H$>
 u'L9Z
-u'f9l
-u'f9lH
 u(9VD|
 u(@8+u(L
 u(HcE
@@ -17213,11 +17200,12 @@ u(f9~:u
 u)9ST|	9SD
 u)9VT|	9VD
 u)9WT|	9WD
+u)9sT|	9sD
 u)D9A
 u+D9KT|
-u+D9NT|
+u+D9OT|
 u+D9RT|
-u+D9sT|
+u+D9oT|
 u+E9PT|
 u,!T$(H!T$ 
 u,9VD|
@@ -17247,14 +17235,14 @@ u<g~l<it[<ntP<ot,<pt
 u=D9Y
 u>Lc[
 u@L9s8
+u@~c=
 uBfD9
 uCfD9H
 uCfD9`
-uDhO@
+uD;D$`u
 uED8r(t
 uH9}@~.H
 uJL9H@
-uL9=I@r
 uNH9z A
 uPD87tb3
 uRHcF
@@ -17284,7 +17272,7 @@ uint64s
 uint8
 ujMc'E;g
 ujfD;
-ukD9{
+ukD9c
 ukE8}0
 uluzu
 unIc/A;o
@@ -17319,7 +17307,7 @@ uzIcA
 uzKs@>
 u|Ic/A;o
 u~9t$Xt
-u~@8=
+u~@8=Kgz
 u~Mc>E;~
 v I9?u@A
 v.fff
@@ -17360,8 +17348,6 @@ vector4
 vector4d
 vectors
 version
-vertex_buffer
-vertex_data
 vertexbuffer
 vertical
 vertical split
@@ -17377,6 +17363,7 @@ vmatH
 vnvyv
 void_context
 volume_fog_debug_volumes
+volume_fog_density_scale
 volume_fog_depth
 volume_fog_depth_warp
 volume_fog_depth_warp_debug
@@ -17402,12 +17389,14 @@ w HcG8
 w*fD9P
 w,f9p
 w7fA9|
+w8H9w
 w8HcG0L
 w@D8o
 wDwNwYw`wy
 wPtJE
 wTHcWP
 wXH9w8t
+wXL9w8t
 w\fff
 w`HcE H
 warping
@@ -17615,7 +17604,6 @@ zx(u8
 |$ UATAVH
 |$ UAVAWH
 |$ UH
-|$ f;
 |$ fA
 |$ fD
 |$ fH
@@ -17624,6 +17612,7 @@ zx(u8
 |$ teH;
 |$ u*H
 |$ |SH
+|$ }[H
 |$$D;
 |$$H99tAA
 |$$H9y
@@ -17640,7 +17629,6 @@ zx(u8
 |$(ff
 |$(t	H
 |$,D;
-|$09|$8
 |$0;|$4}^H
 |$0;|$4}fH
 |$0A;
@@ -17653,7 +17641,7 @@ zx(u8
 |$0Hc@
 |$0Hk
 |$0M+
-|$0ff
+|$0fA;
 |$0t(@
 |$0uE
 |$0uTHcJ
@@ -17685,9 +17673,10 @@ zx(u8
 |$@H;
 |$@Hc
 |$@Hc}
+|$@I;
 |$@Ic
 |$@M+
-|$@f9.~
+|$@fA9/~
 |$@tL
 |$@u;
 |$@~ H
@@ -17700,7 +17689,6 @@ zx(u8
 |$H;|$LL
 |$HE3
 |$HE9g
-|$HE;d
 |$HH9
 |$HH;
 |$HHc
@@ -17714,11 +17702,11 @@ zx(u8
 |$H~$H
 |$P;E
 |$PE3
-|$PE;|$
 |$PI;
 |$PL;
 |$PM;
 |$Pu4
+|$P}[H
 |$P~ H
 |$P~#H
 |$X;G
@@ -17749,11 +17737,11 @@ zx(u8
 |$`Lc
 |$`fE
 |$`uTHcK
-|$`}[H
 |$dA9
 |$hD;
 |$hE3
 |$hE;
+|$hG;l
 |$hH;
 |$hL;
 |$hLi
@@ -17763,6 +17751,7 @@ zx(u8
 |$hff
 |$htlI
 |$p@2
+|$pD9o
 |$pE3
 |$pH9+t&H
 |$pH;
@@ -17791,18 +17780,16 @@ zx(u8
 |c;K(t^A
 |ifD;
 }	fE+
+}!fD;A
 }"I9VP
-}"f;i
 }"fff
 }$;D$d
-}%fD;
 }%}.}I
 }'HcC
 }'fff
 }(McA
 });C$
 })Ic@
-})f;-y
 }0HcC
 }4fff
 }>;_$
@@ -17816,15 +17803,15 @@ zx(u8
 }`IcEXL
 }`ltuo
 }`stib
+}cf;_
 }gt H
 }hHcD$HHc
-}kf;n
-}lf;s
+}hf;{
+}mf;{
 }mxQ>
-}tf;o
+}rf;{
 }wIc<$A;|$
 }x(u6A
-}yf;k
 ~ 	uIH
 ~ $s%r
 ~ D9_

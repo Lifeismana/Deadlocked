@@ -206,7 +206,7 @@ Label.ScalingStatCurrentValue
 	visibility: collapse;
 }
 
-.detail_view .ScalingAmount
+.gDetailView .ScalingAmount
 {
 	visibility: visible;
 }
@@ -304,12 +304,12 @@ AbilityPropertyPanel .ScalingStatCurrentValue
 	margin-top: -5px;
 }
 
-AbilityPropertyPanel .AbilityPanelStat,.detail_view AbilityPropertyPanel .ScalingStatCurrentValue,.detail_view .ScalingStatAltMultiply,.detail_view .ScalingStatValue
+AbilityPropertyPanel .AbilityPanelStat,.gDetailView AbilityPropertyPanel .ScalingStatCurrentValue,.gDetailView .ScalingStatAltMultiply,.gDetailView .ScalingStatValue
 {
 	visibility: visible;
 }
 
-.detail_view .IsReadOnly AbilityPropertyPanel .ScalingStatCurrentValue
+.gDetailView .IsReadOnly AbilityPropertyPanel .ScalingStatCurrentValue
 {
 	visibility: collapse;
 }

@@ -282,9 +282,10 @@
 		"upgrade_clip_size_3_desc"			"Greatly Increases <span class=\"highlight\">ammo</span>."
 
 		"upgrade_ammo_scavenger"			"Ammo Scavenger"
-		"upgrade_ammo_scavenger_desc"		"Any time you secure or deny a Soul you <span class=\"highlight\">get ammo back</span> and gain <span class=\"highlight\">fire rate</span>."
+		"upgrade_ammo_scavenger_desc"		"Any time you secure or deny a Soul you <span class=\"highlight\">get ammo back</span> and gain stacking <span class=\"highlight\">spirit power</span>."
 		AmmoPerSoul_label					"Ammo Per Soul"
-		AmmoScavengerDuration_label			"Fire Rate Duration"
+		SpiritPowerPerSoul_label			"Spirit Power Per Soul"
+		AmmoScavengerDuration_label			"Spirit Power Duration"
 		AmmoScavengerDuration_postfix		"s"
 
 		"upgrade_stabilizer"				"Stabilizer"
@@ -347,8 +348,8 @@
 		"upgrade_nearby_enemy_boost_desc"	"Gain bonus <span class=\"highlight\">weapon damage</span> and <span class=\"highlight\">fire rate</span> when there are two or more enemy heroes nearby."
 
 		"upgrade_dps_aura"				"Heroic Aura"
-		"upgrade_dps_aura_active_desc"	"Provides <span class=\"highlight\">bonus movement speed</span> and <span class=\"highlight\">bullet lifesteal</span> to you and nearby allies."
-		"upgrade_dps_aura_desc"			"Provides <span class=\"highlight\">fire rate</span> to you and nearby allies.<br>Player minions receive a custom fire rate."
+		"upgrade_dps_aura_active_desc"	"Provides <span class=\"highlight\">bonus movement speed</span> and <span class=\"highlight\">fire rate</span> to you and nearby allies."
+		"upgrade_dps_aura_desc"			"Provides <span class=\"highlight\">fire rate</span> to nearby player minions."
 		"modifier_dps_aura_active"		"Heroic Active"
 		"modifier_dps_aura_player"		"Heroic Firerate"
 
@@ -376,7 +377,7 @@
 		MagicBurstDamage_label		"Bonus Damage"
 
 		"upgrade_magic_shock"	"Improved Burst"
-		"upgrade_magic_shock_desc"	"Abilities deal <span class=\"highlight\">bonus damage and slows</span> if they deal {s:MinimumDamage} damage or more in a single hit."
+		"upgrade_magic_shock_desc"	"Abilities deal <span class=\"highlight\">bonus damage and slows</span> if they deal {s:MinimumDamage} damage or more in a single hit.<br/>Targets are immune to the effects of Improved Burst for <span class=\"highlight\">{s:ReProcLockoutTime}s</span> after taking damage from it."
 		MagicShockDamage_label		"Max Health Bonus Damage"
 		MagicShockDamage_postfix	"%"
 
@@ -568,7 +569,9 @@
 		CritDamagePercent_postfix			"%"
 
 		upgrade_veil_walker					"Veil Walker"
-		upgrade_veil_walker_desc			"Walking through a <span class=\"highlight\">cosmic veil</span> restores <span class=\"highlight\">all bullet and spirit shields</span>, grants a brief movespeed boosted <span class=\"highlight\">stealth</span>, and bonus <span class=\"highlight\">fire rate</span> for your next magazine."
+		upgrade_veil_walker_desc			"Walking through a <span class=\"highlight\">cosmic veil</span> grants you movespeed-boosted <span class=\"highlight\">stealth</span>, restores <span class=\"highlight\">all bullet and spirit shields</span>, and grants bonus <span class=\"highlight\">fire rate</span> for your next magazine."
+		VeilWalker_MoveSpeed_label			"Invis Move Speed"
+		VeilWalker_MoveSpeed_postfix		"m/s"
 
 
 		//-----------------------------------------------------------------------------
@@ -684,6 +687,8 @@
 		MagicAmp_postfix					"%"
 		WitheringWhipDisarmDuration_label	"Disarm Duration"
 		WitheringWhipDisarmDuration_postfix	"s"
+		SpiritPower_label					"Spirit Power"
+		SpiritPower_prefix					"+"
 
 		"upgrade_self_bubble"				"Ethereal Shift"
 		"upgrade_self_bubble_desc"			"You enter a void state and become <span class=\"highlight\">untargetable and invincible</span> for a short duration, during which you cannot move or perform any actions. Afterwards you <span class=\"highlight\">instantly reload</span> and gain <span class=\"highlight\">bonus Spirit</span>.<br>Press [{s:in_mantle}] to cancel early."
@@ -1057,11 +1062,13 @@
 		"modifier_citadel_active_disarm_spirit_steal"	"Drain Will"
 
 		"upgrade_vex_barrier"			"Reactive Barrier"
-		"upgrade_vex_barrier_desc"		"Automatically deploy a temporary <span class=\"highlight\">Spirit Shield</span> when you are <span class=\"highlight\">Stunned, Chained, Immobilized or Slept</span>."
+		"upgrade_vex_barrier_desc"		"Automatically deploy temporary <span class=\"highlight\">Bullet and Spirit Shields</span> when you are <span class=\"highlight\">Stunned, Chained, Immobilized, or Slept</span>."
 		"upgrade_vex_barrier_shield"	"Reactive Barrier"
 
-		"VexBarrierShieldMaxHealth_label"	"Spirit Shield Health"
-		"VexBarrierShieldDuration_label"    "Duration"
-		"VexBarrierShieldDuration_postfix"    "s"
+		"VexBarrierBulletMaxHealth_label"	"Bullet Shield Health"
+		"VexBarrierTechMaxHealth_label"		"Spirit Shield Health"
+
+		"VexBarrierShieldDuration_label"	"Duration"
+		"VexBarrierShieldDuration_postfix"	"s"
 	}
 }

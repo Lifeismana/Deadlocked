@@ -35,6 +35,7 @@ shaders/vfx/citadel_minimap_fow.ini CRC:0000000000 size:0
 shaders/vfx/citadel_minimap_fow_pc_50_features.vcs CRC:00210d5844 size:3295
 shaders/vfx/citadel_minimap_fow_pc_50_ps.vcs CRC:00b8b3afb9 size:2802
 shaders/vfx/citadel_minimap_fow_pc_50_vs.vcs CRC:00707c3368 size:1118
+shaders/vfx/citadel_motion_vectors.ini CRC:0000000000 size:0
 shaders/vfx/citadel_overlay.ini CRC:0000000000 size:0
 shaders/vfx/citadel_overlay_pc_50_features.vcs CRC:0044dcc30f size:42400
 shaders/vfx/citadel_overlay_pc_50_ps.vcs CRC:00170f11f1 size:75877
@@ -54,8 +55,8 @@ shaders/vfx/deferred_fogging.ini CRC:0000000000 size:0
 shaders/vfx/deferred_fogging_pc_50_cs.vcs CRC:00a7549cbb size:28581
 shaders/vfx/deferred_fogging_pc_50_features.vcs CRC:0073c7e479 size:9173
 shaders/vfx/deferred_lighting.ini CRC:0000000000 size:0
-shaders/vfx/deferred_lighting_pc_50_cs.vcs CRC:00d06b8523 size:133488
-shaders/vfx/deferred_lighting_pc_50_features.vcs CRC:00b72471f9 size:24344
+shaders/vfx/deferred_lighting_pc_50_cs.vcs CRC:00371014e5 size:237064
+shaders/vfx/deferred_lighting_pc_50_features.vcs CRC:00a16e6d8a size:27484
 shaders/vfx/deferred_rain.ini CRC:0000000000 size:0
 shaders/vfx/deferred_rain_pc_50_features.vcs CRC:0072bfe3f1 size:6000
 shaders/vfx/deferred_rain_pc_50_ps.vcs CRC:002e1bee4a size:10181
@@ -100,8 +101,8 @@ shaders/vfx/environment_blend_pc_50_features.vcs CRC:00beccf73d size:116255
 shaders/vfx/environment_blend_pc_50_ps.vcs CRC:00496b5069 size:230953
 shaders/vfx/environment_blend_pc_50_vs.vcs CRC:005232147d size:44969
 shaders/vfx/environment_layer.ini CRC:0000000000 size:0
-shaders/vfx/environment_layer_pc_50_features.vcs CRC:00dc449bb9 size:27533
-shaders/vfx/environment_layer_pc_50_ps.vcs CRC:00aa9dca8e size:18548
+shaders/vfx/environment_layer_pc_50_features.vcs CRC:0018c4efd7 size:31527
+shaders/vfx/environment_layer_pc_50_ps.vcs CRC:00ad852de4 size:23066
 shaders/vfx/environment_layer_pc_50_vs.vcs CRC:00d2f604b7 size:30598
 shaders/vfx/environment_simple.ini CRC:0000000000 size:0
 shaders/vfx/environment_simple_pc_50_features.vcs CRC:00e00cb5cf size:15615
@@ -112,8 +113,8 @@ shaders/vfx/environment_texture_set_pc_50_features.vcs CRC:005d82cf65 size:16509
 shaders/vfx/environment_texture_set_pc_50_ps.vcs CRC:006ae7f42f size:24842
 shaders/vfx/environment_texture_set_pc_50_vs.vcs CRC:00a089b8e2 size:15638
 shaders/vfx/environment_window_parallax.ini CRC:0000000000 size:0
-shaders/vfx/environment_window_parallax_pc_50_features.vcs CRC:008bece553 size:51066
-shaders/vfx/environment_window_parallax_pc_50_ps.vcs CRC:008f9a30fc size:73386
+shaders/vfx/environment_window_parallax_pc_50_features.vcs CRC:000ecd8514 size:51066
+shaders/vfx/environment_window_parallax_pc_50_ps.vcs CRC:008b0faf83 size:73386
 shaders/vfx/environment_window_parallax_pc_50_vs.vcs CRC:001283ab7f size:26792
 shaders/vfx/error.ini CRC:0000000000 size:0
 shaders/vfx/error_pc_50_features.vcs CRC:00722506ab size:3269
@@ -162,7 +163,7 @@ shaders/vfx/painterly_post_process_pc_50_features.vcs CRC:0038d63d89 size:6999
 shaders/vfx/painterly_post_process_pc_50_ps.vcs CRC:0090b0c7a3 size:12411
 shaders/vfx/painterly_post_process_pc_50_vs.vcs CRC:00d5e0f0ae size:316
 shaders/vfx/pbr.ini CRC:0000000000 size:0
-shaders/vfx/pbr_pc_50_features.vcs CRC:00bf2c0fd2 size:150944
+shaders/vfx/pbr_pc_50_features.vcs CRC:00bc7a2da0 size:151076
 shaders/vfx/pbr_pc_50_ps.vcs CRC:00ce1629bf size:34379243
 shaders/vfx/pbr_pc_50_vs.vcs CRC:00d79fcb68 size:2084112
 shaders/vfx/post_process.ini CRC:0000000000 size:0
@@ -181,6 +182,7 @@ shaders/vfx/rain_drops.ini CRC:0000000000 size:0
 shaders/vfx/rain_drops_pc_50_features.vcs CRC:00fa27bed7 size:7686
 shaders/vfx/rain_drops_pc_50_ps.vcs CRC:00b52e3c85 size:286
 shaders/vfx/rain_drops_pc_50_vs.vcs CRC:009cdeca22 size:12884
+shaders/vfx/reconstruct_static_motion_vectors.ini CRC:0000000000 size:0
 shaders/vfx/render_portal.ini CRC:0000000000 size:0
 shaders/vfx/render_portal_pc_50_features.vcs CRC:00f170f1e2 size:4688
 shaders/vfx/render_portal_pc_50_ps.vcs CRC:00debb9636 size:4059
@@ -197,9 +199,9 @@ shaders/vfx/sky_pc_50_features.vcs CRC:0093e4d80e size:10135
 shaders/vfx/sky_pc_50_ps.vcs CRC:002f3f91df size:11996
 shaders/vfx/sky_pc_50_vs.vcs CRC:00ecd59da5 size:5687
 shaders/vfx/spritecard.ini CRC:0000000000 size:0
-shaders/vfx/spritecard_pc_50_features.vcs CRC:006d7daec3 size:27658
-shaders/vfx/spritecard_pc_50_ps.vcs CRC:004610b350 size:1876785
-shaders/vfx/spritecard_pc_50_vs.vcs CRC:002353e76d size:1186679
+shaders/vfx/spritecard_pc_50_features.vcs CRC:00b8ce2992 size:27658
+shaders/vfx/spritecard_pc_50_ps.vcs CRC:00e18ac7bf size:1874611
+shaders/vfx/spritecard_pc_50_vs.vcs CRC:001f894eb7 size:1186739
 shaders/vfx/ssao.ini CRC:0000000000 size:0
 shaders/vfx/ssao_convert_depth.ini CRC:0000000000 size:0
 shaders/vfx/ssao_convert_depth_pc_50_features.vcs CRC:002350e615 size:1831

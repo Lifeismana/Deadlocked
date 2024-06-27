@@ -22,7 +22,7 @@ DraggableAbilityIcon.NoAbility
 	opacity: 0;
 }
 
-.in_item_shop DraggableAbilityIcon.NoAbility,.detail_view DraggableAbilityIcon.NoAbility,.wants_scoreboard DraggableAbilityIcon.NoAbility
+.in_item_shop DraggableAbilityIcon.NoAbility,.gDetailView DraggableAbilityIcon.NoAbility,.wants_scoreboard DraggableAbilityIcon.NoAbility
 {
 	opacity: 0.1;
 }
@@ -690,7 +690,7 @@ Label.ability_key
 	visibility: collapse;
 }
 
-.detail_view #expanded_info
+.gDetailView #expanded_info
 {
 	visibility: collapse;
 }
@@ -736,7 +736,7 @@ CitadelHudAbilities CitadelHudAbilityUpgradePips
 	ui-scale: 60%;
 }
 
-.wants_scoreboard CitadelHudAbilities CitadelHudAbilityUpgradePips,.detail_view CitadelHudAbilities CitadelHudAbilityUpgradePips
+.wants_scoreboard CitadelHudAbilities CitadelHudAbilityUpgradePips,.gDetailView CitadelHudAbilities CitadelHudAbilityUpgradePips
 {
 	visibility: visible;
 }

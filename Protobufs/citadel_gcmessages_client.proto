@@ -308,8 +308,6 @@ message CMsgDevMatchInfo {
 	optional uint64 match_id = 3;
 	repeated .CMsgDevMatchInfo.MatchPlayer players = 4;
 	optional fixed64 lobby_id = 5;
-	optional uint32 kills_team_0 = 7;
-	optional uint32 kills_team_1 = 8;
 	optional uint32 net_worth_team_0 = 9;
 	optional uint32 net_worth_team_1 = 10;
 	optional uint32 duration_s = 11;

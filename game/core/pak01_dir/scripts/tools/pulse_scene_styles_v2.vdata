@@ -191,23 +191,17 @@
 			HAlign = "STRETCH"
 			LayoutGrowFactor = 1
 			VAlign = "STRETCH"
-			".BaseFlow:first-child .NodeRows .NodeRow.NodeHeader .FlowRail::before" = 
+			".BaseFlow:first-child .NodeRows .NodeRow:first-child .FlowEntry" = 
 			{
 				Margin_Top = 5
 				BorderRadius_TopLeft = 6
 				BorderRadius_TopRight = 6
 			}
-			".BaseFlow:last-child .NodeRows .NodeRow:last-child .FlowRail::before" = 
+			".BaseFlow:last-child .NodeRows .NodeRow:last-child .FlowExit" = 
 			{
 				Margin_Bottom = 5
 				BorderRadius_BottomRight = 6
 				BorderRadius_BottomLeft = 6
-			}
-			".BaseFlow:last-child .BaseRequirement .NodeRows .NodeRow .FlowRail::before" = 
-			{
-				Margin_Bottom = "unset"
-				BorderRadius_BottomRight = "unset"
-				BorderRadius_BottomLeft = "unset"
 			}
 			".BaseFlow:first-child, .BaseFlow::after:first-child, .BaseFlow::before:first-child" = 
 			{
@@ -219,13 +213,55 @@
 				BorderRadius_BottomLeft = "6px"
 				BorderRadius_BottomRight = "6px"
 			}
+			".BaseFlow:first-child .NodeRows .NodeRow.HasHeaderIcon:first-child .FlowRail .FlowEntry" = 
+			{
+				Margin_Top = 0
+				Visibility = "HIDDEN"
+			}
+			".BaseFlow .NodeRows .NodeRow.HasHeaderIcon .FlowRail" = 
+			{
+				.FlowIcon = 
+				{
+					Visibility = "COLLAPSE"
+				}
+				.FlowEntry = 
+				{
+					Margin_Top = 0
+					BorderRadius_BottomRight = 6
+					BorderRadius_BottomLeft = 6
+				}
+				.FlowExit = 
+				{
+					BorderRadius_TopLeft = 6
+					BorderRadius_TopRight = 6
+				}
+			}
+			".BaseFlow:only-child .NodeRows .NodeRow.HasHeaderIcon .FlowRail" = 
+			{
+				".FlowEntry, .FlowExit" = 
+				{
+					Margin_Top = 0
+					Margin_Bottom = 0
+					Visibility = "HIDDEN"
+				}
+			}
+			".BaseFlow:last-child .NodeRows .NodeRow.HasHeaderIcon:last-child .FlowRail .FlowExit" = 
+			{
+				Visibility = "HIDDEN"
+				Margin_Bottom = 0
+			}
 			.BaseFlow = 
 			{
 				Margin_Bottom = 1
 				Margin_Top = 1
-				"&:last-child, .RequirementsNodeList" = 
+				"&:last-child" = 
 				{
 					Margin_Bottom = 0
+				}
+				.RequirementsNodeList = 
+				{
+					Margin_Bottom = 0
+					Margin_Top = -1
 				}
 			}
 		}
@@ -236,6 +272,7 @@
 		LayoutChildren = "VBOX"
 		MinSizeX = 200
 		MinSizeY = 20
+		SnapSizeX = 40
 		Border = "2px #000000"
 		BorderRadius_TopLeft = "7px"
 		BorderRadius_TopRight = "7px"
@@ -288,9 +325,32 @@
 		}
 		.OutparamPort = 
 		{
-			BorderRadius = "22px"
-			Margin = "3px"
-			MinSizeY = 28
+			BorderRadius = "17px"
+			FixedSizeY = 34
+		}
+		.NodeRows = 
+		{
+			".NodeRow::after" = 
+			{
+				FixedSizeY = 2
+				Padding_Left = 10
+				Padding_Right = 10
+				HAlign = "STRETCH"
+				VAlign = "BOTTOM"
+				BackgroundImage = "tools/images/pulse_editor/dashed_line_repeat.png"
+				ImageTint = "$node_base_accessory"
+				BackgroundSize = "Natural"
+				Positioning = "ON_PARENT_BORDER"
+				PaintLayer = "CONNECTIONS_FOREGROUND"
+			}
+			".NodeRow:last-child::after" = 
+			{
+				Visibility = "COLLAPSE"
+			}
+			".NodeRow:nth-last-child(2)::after" = 
+			{
+				Visibility = "COLLAPSE"
+			}
 		}
 	}
 	.BaseConnection = 
@@ -439,11 +499,10 @@
 	{
 		FixedSizeX = 18
 		FixedSizeY = 18
-		Margin_Right = 2
-		Margin_Left = 2
+		Margin_Top = 2
+		Margin_Bottom = 2
 		PaintLayer = "NODES"
 		VAlign = "CENTER"
-		HAlign = "RIGHT"
 	}
 	.BaseRequirement = 
 	{
@@ -501,13 +560,6 @@
 		VAlign = "BOTTOM"
 		Positioning = "OUTSIDE_PARENT"
 	}
-	.RequirementLayout_Separator_Spacer = 
-	{
-		FixedSizeX = 0
-		FixedSizeY = 1
-		PaintLayer = "NODES"
-		Margin_Top = 0
-	}
 	.RequirementLayout_Separator_Line = 
 	{
 		HAlign = "STRETCH"
@@ -563,7 +615,6 @@
 	}
 	".OutflowNode .HeaderText" = 
 	{
-		Foreground_Color = "#000000"
 	}
 	".BaseValue .HeaderText" = 
 	{
@@ -581,13 +632,9 @@
 		HAlign = "CENTER"
 		VAlign = "CENTER"
 	}
-	.SubHeaderText = 
+	.HeaderText.SubHeaderText = 
 	{
 		Font = "Dinish,10,-1,5,50,0,0,0,0,0,Italic"
-		PaintLayer = "NODES"
-		HAlign = "LEFT"
-		VAlign = "CENTER"
-		LayoutGrowFactor = 1
 	}
 	".ValueWithoutPortLabels .SubHeaderText" = 
 	{
@@ -602,31 +649,75 @@
 	.NodeRow = 
 	{
 	}
-	".NodeRows .NodeRow:first-child" = 
+	".BaseFlow .NodeRows" = 
 	{
-		FixedSizeY = 39
-		MinSizeY = 39
-		"& .FlowRail" = 
+		".NodeRow:first-child" = 
 		{
 			FixedSizeY = 39
+			MinSizeY = 39
+			"& .FlowRail" = 
+			{
+				FixedSizeY = 39
+			}
 		}
-	}
-	".NodeRows .NodeRow:last-child" = 
-	{
-		FixedSizeY = 39
-		MinSizeY = 39
-		"& .FlowRail" = 
+		".NodeRow:last-child" = 
 		{
 			FixedSizeY = 39
+			MinSizeY = 39
+			"& .FlowRail" = 
+			{
+				FixedSizeY = 39
+			}
 		}
-	}
-	".NodeRows .NodeRow:only-child" = 
-	{
-		FixedSizeY = 38
-		MinSizeY = 38
-		"& .FlowRail" = 
+		".NodeRow:only-child" = 
 		{
 			FixedSizeY = 38
+			MinSizeY = 38
+			"& .FlowRail" = 
+			{
+				FixedSizeY = 38
+			}
+		}
+		".NodeRow::after" = 
+		{
+			FixedSizeY = 2
+			Padding_Left = 40
+			Padding_Right = 10
+			HAlign = "STRETCH"
+			VAlign = "BOTTOM"
+			BackgroundImage = "tools/images/pulse_editor/dashed_line_repeat.png"
+			ImageTint = "$node_base_accessory"
+			BackgroundSize = "Natural"
+			Positioning = "ON_PARENT_BORDER"
+			PaintLayer = "CONNECTIONS_FOREGROUND"
+		}
+		".NodeRow:last-child::after" = 
+		{
+			Visibility = "COLLAPSE"
+		}
+	}
+	".BaseFlow.ShowRequirementsList .NodeRows" = 
+	{
+		".NodeRow:only-child" = 
+		{
+			FixedSizeY = 39
+			MinSizeY = 39
+			"& .FlowRail" = 
+			{
+				FixedSizeY = 39
+			}
+		}
+	}
+	".BaseFlow.ShowRequirementsList .BaseRequirement" = 
+	{
+		".NodeRows .NodeRow" = 
+		{
+			FixedSizeY = 40
+			MinSizeY = 40
+			"& .FlowRail" = 
+			{
+				FixedSizeY = 40
+			}
 		}
 	}
 	.ResizeFlow_Edge_Base = 
@@ -653,13 +744,20 @@
 		HAlign = "STRETCH"
 		FixedSizeY = 0
 		LayoutChildren = "HBOX"
-		".port:first-child" = 
+		".Port:first-child" = 
 		{
-			Margin_Left = -30
+			Margin_Left = 16
 		}
-		".port:last-child" = 
+		".Port:last-child" = 
 		{
 			Margin_Right = 16
+		}
+		".InflowPort.Port:last-child" = 
+		{
+		}
+		".InflowPort.Port:only-child" = 
+		{
+			Padding_Left = 0
 		}
 	}
 	.InflowPortsLayout = 
@@ -691,12 +789,63 @@
 	.FlowRail = 
 	{
 		FixedSizeX = 40
+		LayoutChildren = "VBOX"
 		VAlign = "STRETCH"
-		"&::before" = 
+		.FlowEntry = 
 		{
-			FixedSizeX = 6
+			MinSizeX = 6
 			VAlign = "STRETCH"
+			LayoutGrowFactor = 1
 		}
+		.FlowExit = 
+		{
+			MinSizeX = 6
+			VAlign = "STRETCH"
+			LayoutGrowFactor = 1
+		}
+		.FlowIcon = 
+		{
+			MinSizeX = 6
+			Positioning = "OUTSIDE_PARENT"
+			FixedSizeY = 20
+			FixedSizeX = 40
+			BackgroundImageHeight = 20
+			"&::after" = 
+			{
+				FixedSizeY = 20
+				FixedSizeX = 40
+				BackgroundImageHeight = 20
+			}
+		}
+	}
+	.FlowIcon = 
+	{
+		BackgroundImage = "tools/images/pulse_editor/flow_icon_dot.png"
+	}
+	".Port .FlowIcon, .SubHeader .FlowIcon, .SubHeader .HeaderIcon" = 
+	{
+		Visibility = "COLLAPSE"
+	}
+	".NodeRows .Port:only-child .FlowIcon" = 
+	{
+		Visibility = "VISIBLE"
+	}
+	".BaseRequirement .NodeRows .Port .FlowIcon" = 
+	{
+		Visibility = "COLLAPSE"
+	}
+	".IsYielding .FlowIcon" = 
+	{
+		Positioning = "unset"
+		BackgroundImage = "tools/images/pulse_editor/flow_icon_execute_inline.png"
+		"&::after" = 
+		{
+			BackgroundImage = "tools/images/pulse_editor/flow_icon_execute_inline_accessory.png"
+		}
+	}
+	".IsSpontaneous .FlowIcon" = 
+	{
+		Visibility = "COLLAPSE"
 	}
 	"&:first-child .FlowRail::before" = 
 	{
@@ -812,17 +961,32 @@
 		HAlign = "STRETCH"
 		LayoutGrowFactor = 1
 		LayoutChildren = "HBOX"
-		MinSizeY = 40
+		MinSizeY = 36
 		"&.InflowPort" = 
 		{
 			LayoutGrowFactor = 1
+			Margin_Right = 28
+			"&:before" = 
+			{
+				FixedSizeY = 12
+				LayoutGrowFactor = 1
+			}
 			"&:first-child, &:last-child" = 
 			{
+				Margin_Right = 16
 				LayoutGrowFactor = 0
+				"&:before" = 
+				{
+					Visibility = "COLLAPSE"
+				}
 			}
 			"&:nth-child(2)" = 
 			{
 				LayoutGrowFactor = 1
+				"&:before" = 
+				{
+					Visibility = "VISIBLE"
+				}
 			}
 			.PortPlugCtn = 
 			{
@@ -889,6 +1053,8 @@
 		{
 			HAlign = "LEFT"
 			LayoutChildren = "HBOX_REVERSE"
+			Margin = "3px"
+			BorderRadius = "17px"
 			.PortLabel = 
 			{
 				Margin_Left = 5
@@ -922,13 +1088,18 @@
 			{
 				BackgroundImage = "tools/images/pulse_editor/connection_cap_broken.png"
 			}
+			"&.HasExternalConnection .PortPlug" = 
+			{
+				Padding = "4px 5px 4px 3px"
+				BackgroundImage = "tools/images/pulse_editor/port_result_left.png"
+			}
 		}
 		"&.OutparamPort" = 
 		{
 			.PortPlug = 
 			{
-				FixedSizeX = 9
-				FixedSizeY = 9
+				FixedSizeX = 12
+				FixedSizeY = 12
 				Margin = "2px"
 				Padding = "2px"
 				Background_Color = 
@@ -1124,6 +1295,7 @@
 			LayoutGrowFactor = 1
 			Margin_Left = 16
 			Font = "$BaseFont"
+			TextClipMode = "WORD_WRAP"
 		}
 		"&.BlockCommentRegion" = 
 		{
@@ -1155,8 +1327,8 @@
 	}
 	.ValueNodeComment = 
 	{
-		VAlign = "TOP"
-		Margin_Bottom = 8.000000
+		HAlign = "RIGHT"
+		Margin_Left = 8.000000
 	}
 	.Cursor = 
 	{
@@ -1261,9 +1433,21 @@
 			Foreground_Color = "$colorBase"
 			Border_Color = "$borderColor"
 			Font = "$typeFace"
-			".FlowRail::before" = 
+			.FlowIcon = 
+			{
+				ImageTint = "$flowColor"
+				"&::after" = 
+				{
+					ImageTint = "$flowColorAccessory"
+				}
+			}
+			".FlowEntry, .FlowExit" = 
 			{
 				Background_Color = "$flowColor"
+			}
+			".NodeRow::after" = 
+			{
+				ImageTint = "$DashedLineColor"
 			}
 			.DragHandle = 
 			{
@@ -1290,15 +1474,15 @@
 				Padding_Left = 6
 				Padding_Right = 6
 				Font = "$typeFace"
+				"&.SubHeaderText" = 
+				{
+					Font = "Dinish,10,-1,5,50,0,0,0,0,0,Italic"
+				}
 			}
 			.RequirementLayout_Separator_Line = 
 			{
 				Background_Color = "$DashedLineColor"
 				Background_Style = "Dense6Pattern"
-			}
-			"&.BaseValue .OutparamPort" = 
-			{
-				Background_Color = "$Black"
 			}
 			"&.BaseConnection" = 
 			{
@@ -1333,6 +1517,10 @@
 				"&.IsValidPortDragLocation .PortPlug, &.IsDragPort .PortPlug" = 
 				{
 					Border_Color = "$DashedLineColor"
+				}
+				"&.ParamsOnLeft .Row" = 
+				{
+					Background_Color = "$Black"
 				}
 				"&.ValueType_Bool" = 
 				{
@@ -1411,6 +1599,7 @@
 		"$paramColorBase" = "$GreyMid"
 		"$paramColorHover" = "$GreyMid_Hover"
 		"$flowColor" = "$GreyLight"
+		"$flowColorAccessory" = "$White"
 		"$dragColorBase" = "$GreyLight"
 		"$dragColorHover" = "$White"
 		"$colorBase" = "$White"
@@ -1431,6 +1620,7 @@
 		"$paramColorBase" = "$Mustard"
 		"$paramColorHover" = "$Mustard_Hover"
 		"$flowColor" = "$TanLight"
+		"$flowColorAccessory" = "$YellowBright"
 		"$dragColorBase" = "$TanLight"
 		"$dragColorHover" = "$White"
 		"$colorBase" = "$White"
@@ -1451,6 +1641,7 @@
 		"$paramColorBase" = "$TealDark"
 		"$paramColorHover" = "$TealDark_Hover"
 		"$flowColor" = "$TealLight_Hover"
+		"$flowColorAccessory" = "$White"
 		"$dragColorBase" = "$TealLight_Hover"
 		"$dragColorHover" = "$White"
 		"$colorBase" = "$White"
@@ -1472,6 +1663,7 @@
 		"$paramColorBase" = "$TealDark"
 		"$paramColorHover" = "$TealDark_Hover"
 		"$flowColor" = "$GreenLight"
+		"$flowColorAccessory" = "$GreenLight"
 		"$dragColorBase" = "$GreenLight"
 		"$dragColorHover" = "$White"
 		"$colorBase" = "$White"

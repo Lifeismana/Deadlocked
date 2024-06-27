@@ -25,7 +25,6 @@
 	g_pThreadPool
 	kE>fvw
 	wOIc
- 	V_iswcntrl
      
                           
                      Cost
@@ -94,12 +93,12 @@
  A8F 
  A\_[
  A\_^][
+ A]A\_^[
  A]^]
  A^A\^][
  A^A\_H
  A^A]A\_]
  A^A]_
- A^A]_^]
  A^][
  A^^]
  A^_[
@@ -111,8 +110,6 @@
  A_A\^
  A_A]A\^]
  A_A]A\_^
- A_A]_^[
- A_A]_^[H
  A_A]_^]H
  A_A^A\
  A_A^A\_^
@@ -120,6 +117,7 @@
  A_A^A]A\_
  A_A^A]A\_^]
  A_A^A]_[
+ A_A^A]_[H
  A_A^A]_^
  A_A^[
  A_A^]
@@ -188,16 +186,13 @@
 !pStaticComboData->IsDynamicComboVariableDataCompact()
 !staticComboData.IsDynamicComboVariableDataCompact()
 !this->m_bBufferInstalled && this->m_nVertexIncrement == 0
-" @_\
+"	V_iswcntrl
 "%s" [%d][%d] has invalid vs input signature:
 "w3Hc
 #include
 #line
-$@8=/b
 $A;\$
-$D;{(r
 $IcD$
-$}2fA;w
 %15.15s 
 %6d %-50s
 %6s %-50s %5s %5s %5s %5s %5s %5s %5s %10s
@@ -233,7 +228,6 @@ $}2fA;w
 %s[line %d:%d] 
 %s__font_page_%d
 %s_intermediate_%d.vtex
-&#4Vh\(1	
 &YA1E
 &YA1H
 &YA1I
@@ -255,12 +249,12 @@ $}2fA;w
 ( renderablePass.nFrameCount == g_pMaterialSystem2Imp->GetFrameCount() )
 (%d,%d)
 (A]A\_[
+(A^A]_^
 (A^A]_^][
 (A^^][
 (A_A\
 (A_A]A\_
 (A_A^
-(A_A^A]A\_^][
 (A_A^A][
 (A_A^A]_
 (A_A^_^][
@@ -316,7 +310,6 @@ $}2fA;w
 )|$ A
 )|$`L
 )|$pE3
-*	V_log10f
 *** %s "%s" in %s does not follow the 0..N format!
 *** %s "%s" in %s has max(%d) > 254!
 *** %s "%s" in %s has min(%d) < 0!
@@ -409,7 +402,6 @@ $}2fA;w
 *pLookForFileNameDelimiter == '>'
 *pLookForFileNameDelimiter == '\"'
 *pStartOfFileNameDelimiter == '\"'
-+	V_log2_uint
 +C$Hc
 +C$Lc
 +D$tHc
@@ -424,13 +416,13 @@ $}2fA;w
 +h->|
 +mat_clearshadercache
 +o'q)}
+,	V_log10f
 , <^A
 , GetFont used
 , LoadFont used
 , at <EOF>
 , at offset %d
 , near %s
-,!fh)
 ,$L9l$Xt
 ,$L9l$`t
 ,/<-w
@@ -438,7 +430,7 @@ $}2fA;w
 ,D$@A
 ,L$XL
 ,W5y+
--	V_log2f
+-	V_log2_uint
 -----
 ----------
 --------------------------------------------------
@@ -632,7 +624,7 @@ $}2fA;w
 .xdata
 .xdata$x
 .|08z
-/	V_logf
+/	V_log2f
 // %s - %s
 // Dynamic Shader Compile Enabled
 // Reloading all shaders -----------------------------------------------------
@@ -644,9 +636,11 @@ $}2fA;w
 0 0 0 255
 0123456789)"
 0@8t$Pu
+0A\_[
 0A\_^][
 0A]^[
 0A]_[
+0A^A\[
 0A^A]A\_^][
 0A^A]]
 0A^A]^
@@ -656,7 +650,6 @@ $}2fA;w
 0A_A^A\
 0A_A^A\_]
 0A_A^A\_^
-0A_A^A\_^][
 0A_A^A]
 0A_A^A]A\_
 0A_A^A]A\_^[
@@ -673,6 +666,7 @@ $}2fA;w
 0iN>/
 0w0c1
 0}0i1
+1	V_logf
 130801120000Z
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
 1<.	/>:
@@ -682,12 +676,13 @@ $}2fA;w
 220323000000Z
 220801000000Z
 230714000000Z
-240620161259Z0/
+240627200643Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+3*8G(
 311109235959Z0b1
 33333333H+
 341013235959Z0H1
@@ -706,8 +701,9 @@ $}2fA;w
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
+6280u
 69B(u(
-6;F(r
+6D;g(r
 6I]Dc
 6OB,n_
 6YA1H
@@ -717,6 +713,7 @@ $}2fA;w
 8A][H
 8A_A]
 8A_A^
+8A_A^A\_^[
 8A_A^A]A\_^][
 8D$@t
 8D8(t
@@ -749,10 +746,7 @@ $}2fA;w
 9|$Pu
 9|$hu
 9~0~-H
-:	V_powd
 : lexer error %d :
-;	V_powf
-;;w(r
 ;B8T	dH
 ;B@|8
 ;B@|L
@@ -764,7 +758,7 @@ $}2fA;w
 ;T$p}1H
 ;\$hu
 ;t$hu
-<	V_qsort
+<	V_powd
 <	u2H
 <	u8H
 < t=<	t9
@@ -800,14 +794,16 @@ $}2fA;w
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 =	 ();,
-=	V_qsort_s
+=	V_powf
 =SBMSugH
 =imb;D
 =rIQU
+>	V_qsort
 >0<0:
 >L9|$Pt
 >Mp$d
 >jtm}S
+?	V_qsort_s
 ?333?
 ?7zQ6$
 ?9;~oH
@@ -951,12 +947,13 @@ $}2fA;w
 @.data
 @.reloc
 @8,7u
-@8-"U
+@8-/L
 @84)u
-@85dX
+@85>O
+@85^P
 @8;te3
 @8<(u
-@8=yb
+@8=iQ
 @8j(t
 @8k(t
 @8l$H
@@ -972,17 +969,16 @@ $}2fA;w
 @A^A]A\_^
 @A^A][
 @A^A]_^]
-@A^][
 @A^^]
 @A^_^
 @A^_^][
-@A_A\_^[
 @A_A]_
 @A_A]_^]
 @A_A^A\
 @A_A^A\_^
 @A_A^A\_^][
 @A_A^A]
+@A_A^A]A\_
 @A_A^A]A\_^]
 @A_A^]
 @A_A^_
@@ -993,7 +989,9 @@ $}2fA;w
 @A__^][
 @D8(t
 @D;d$D
+@SATAVH
 @SATAWH
+@SATH
 @SAUAVAWH
 @SAUH
 @SAVAWH
@@ -1014,8 +1012,8 @@ $}2fA;w
 @SVAUH
 @SVAVH
 @SVWATAUAVAWH
-@SVWATAWH
-@SVWAUAWH
+@SVWATAUH
+@SVWATAVAWH
 @SVWH
 @SWATAUH
 @SWATH
@@ -1047,9 +1045,11 @@ $}2fA;w
 @UVWH
 @UWATAWH
 @VAUAVH
+@VAUH
 @VAVH
 @VAWH
 @VWATAUH
+@VWAUAVH
 @VWAVH
 @VWAWH
 @WATAUAWH
@@ -1071,15 +1071,17 @@ A8H+B8u
 A8L9e
 A8}(u
 A9FXw0E9fT
+A9^\~*I
 A9v ~g3
 A:8ucI
-A;4/|
+A;</|
 A;E,}
 A;EH|
 A;L$`
 A;](r
-A;],}
+A;^\|
 A;v |
+A;vH|
 A;~ u
 A>pP&
 A@;C@|K
@@ -1139,7 +1141,6 @@ A_A^A\_^[]
 A_A^A]A\[]
 A_A^A]A\]
 A_A^A]A\_
-A_A^A]A\_[]
 A_A^A]A\_^[
 A_A^A]A\_^[]
 A_A^A]A\_^]
@@ -1263,9 +1264,9 @@ C 8F
 C ;C$t
 C A8F
 C A8G 
-C H!o
 C HcL8
-C IcD1 
+C I!.H
+C KcD1 
 C$LcC
 C(HcC
 C,HcCh
@@ -1547,7 +1548,6 @@ COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&v
 COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CP;BP|$
 CP;BP|0
-CPD;$0
 CPlatformFont::GetCharABCWidths
 CPlatformFont_SharedResources::AddRef
 CPostProcessingState::CPostProcessingState
@@ -2013,7 +2013,6 @@ D$ H;
 D$ L'Q
 D$ L;
 D$ fD
-D$ fD;
 D$$D;
 D$(E2
 D$(E3
@@ -2048,12 +2047,11 @@ D$@D89t
 D$@E3
 D$@H+
 D$@Hc
-D$@Ic
 D$@Lc
 D$@\A
+D$DIc7
 D$HE3
 D$HH+
-D$HIc7
 D$HtQ
 D$P3D$d%
 D$P;D$`|
@@ -2073,25 +2071,23 @@ D$`;D$p|
 D$`D;D$p|
 D$`D;n
 D$`E3
+D$`Hc
 D$`fA
+D$aHc
+D$bHc
 D$d3D$P%
-D$dHc
-D$eHc
-D$fHc
-D$gHc
 D$h	f#
+D$h!D
 D$h(f
 D$h;L$@
 D$hA;
 D$hH;
 D$hHc
-D$hf;
 D$jHc
 D$jf3
 D$kHc
-D$p!D
-D$p;CH
 D$pA;
+D$pA;FH
 D$pE3
 D$pE9
 D$pE;
@@ -2099,6 +2095,8 @@ D$pHc
 D$pfA;
 D$rE2
 D$tfA;
+D$x%u
+D$x&u
 D$xA;M
 D$xLc|
 D$xM;
@@ -2114,16 +2112,18 @@ D3D Semantic Name: "%s"
 D4 H9C
 D7 fB
 D7*f9kBu
-D8%4W
+D8%DJ
+D8%YM
+D8%]L
 D8&ta3
 D8*tt
 D80uQE3
 D81uUL9r
 D840u
 D87th3
-D8=T[
-D8=ZY
-D8=z\
+D8=:T
+D8=XR
+D8g u
 D8t$Q
 D8t$ht
 D9 ~BI
@@ -2139,7 +2139,6 @@ D9Q$t
 D9d$TtdH
 D9d$TtgH
 D9d$pH
-D9k\~)I
 D9l$0
 D9l$TtdH
 D9l$TtgH
@@ -2153,7 +2152,7 @@ D9u4t`H
 D9u4tcH
 D9w0~$I
 D9y(~RH
-D9yH~AA
+D9yH~CA
 D9|$TtdH
 D9|$TtgH
 D;H`t
@@ -2162,6 +2161,7 @@ D;M(}*H
 D;M8u
 D;T$8|
 D;T$8}:H
+D;c(r
 D;d$DE
 D;d$`}_
 D;f4u
@@ -2234,6 +2234,7 @@ ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!
 ESC_SEQ
 EX9GX
+EX;E|
 EXPONENT
 EXPORTSYSTEM_INTERFACE_VERSION_001
 E\$@H
@@ -2299,6 +2300,7 @@ FEATURES
 FIXME!
 FLOATLITERAL
 FLOATSUFFIX
+FPD;$8
 Failed to Allocate a Dynamic Index Buffer of size %u
 Failed to Allocate a Dynamic Vertex Buffer of size %u
 Failed to allocate an instance of a class
@@ -2337,7 +2339,6 @@ Found existing value when inserting into tree - replacing existing value with ne
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
-G	V_sincosf
 G 8C 
 G(knN
 G8L9!t
@@ -2450,25 +2451,22 @@ G|$(L
 G|$8H
 H!D$ I
 H!T$0D
-H#D$(H
 H#D$`H
 H-^Eu
 H9(tO
 H9+t	H
-H9-7m
-H9-Rm
-H9-ol
+H9-2e
+H9-:{
+H9-Od
 H93t7H
 H93tkH
-H95'r
+H954~
 H97u+A
 H98t2
-H98t7
-H9=&r
+H9=6b
 H9A(u
 H9M(u)
 H9T$Hu+
-H9h(^
 H9l$ht
 H9q t
 H9q tE@
@@ -2488,7 +2486,6 @@ HA^A]_^
 HA_A]A\_][
 HA_A^A]A\^[
 HA_A^A]A\_^][
-HA__^[
 HD8(t
 HEADER
 HEXINTEGERLITERAL
@@ -2504,7 +2501,6 @@ Hc7;w
 HcA(E3
 HcApD;
 HcC@H
-HcCpH
 HcD$ 
 HcD$ L
 HcD$0
@@ -2514,17 +2510,14 @@ HcD$`
 HcD$`A
 HcD$xH
 HcD20
-HcE(D
-HcE(H
-HcE(I
-HcE(L
-HcE(M
+HcE,H
+HcE,I
 HcE_H
 HcEoJ
 HcG H
 HcK H
 HcL$p3
-HcM`I
+HcMhI
 HcO H
 HcQ<H
 HcS H
@@ -2534,7 +2527,7 @@ HcW(3
 Hc\$ 
 Hc\$(
 Hc\$@H
-Hc]`L
+Hc]hL
 Hc]oH
 Hc_P;_Tt
 Hck +
@@ -2548,23 +2541,22 @@ Hct$@E3
 Hct$p
 Hct$xL
 Hcu`M
-Hc{pHc
 HelpSystem_001
 HorizJustification_e
 HostStateMgr001
-I	V_sinf
+I	V_sincosf
 I could not work out what I was expecting, like so many of us these days!
+I"IcF
 I+4$H
 I,;J,u/E
 I/O request overflow!
 I0L9l$xu*
 I0L9l$xu4
 I0L9u
-I9.tR
 I94	u@Nc\
 I9l$ 
+IB*Z'
 ID9|$Tt
-IK1"%
 IKV3TransferInterface_ResourceLoad
 IMAGE_FORMAT_IMC2
 IMAGE_FORMAT_NV12
@@ -2584,13 +2576,14 @@ IS_MOBILE
 IS_PC
 IS_SM_
 IS_VULKAN
-Ic<$A;|$
 Ic>A;~
 IcBTH
 IcF@M
 IcFPI
+IcFpI
 IcN0L
 IcT20
+Ic^pIc
 If intended, call ClearSpecificType first to discard the old value.%s
 If intended, call SetToNull() first to discard the old value.%s
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
@@ -2644,10 +2637,10 @@ IsValidIndex( i )
 IsValidIndex(elem)
 IsValidIndex(elem) && IndexInRange( elem )
 IsValidIndex(i) && (i != InvalidIndex())
-J%y?H{z
 J>@G_
 JHHc]oA
 January
+K	V_sinf
 K$HcC
 K&>.yC
 K0HcQ
@@ -2680,7 +2673,6 @@ KeyValues3::Internal_ExpandCompactArray
 KeyValues3::Internal_FreeAllocation
 KeyValues3::Internal_GetArrayElementsArray
 KeyValues3::Internal_PrepareForInternalTypeAndNewData
-KeyValues3::Internal_SetValueAnyArray
 KeyValues3::IsValidTypeCombination
 KeyValues3::Metadata_GetFilename::<lambda_1>::operator ()
 KeyValues3::Metadata_GetLineColumn::<lambda_1>::operator ()
@@ -2689,7 +2681,6 @@ KeyValues3::TransferOwnershipOfBinaryBlob
 KeyValuesSystem
 K}*n:	
 K~Je#>!
-L	V_snprintf
 L!|$(L!
 L$ E3
 L$ I;
@@ -2739,12 +2730,10 @@ L$DH;
 L$DfE
 L$HE3
 L$HH;
-L$LH;
 L$P+G$E3
 L$P+G$L
 L$PA;
 L$PE3
-L$PH;
 L$PIc
 L$PM+
 L$PMc
@@ -2760,8 +2749,6 @@ L$hE3
 L$hHc
 L$pM+
 L$pMc
-L$pteL
-L$pthL
 L$x;t$@
 L$xE3
 L$xHc
@@ -2769,16 +2756,16 @@ L+d$PI+
 L20Hc
 L7*fD
 L9#u/H
+L9'tJA
 L9+t	H
-L9-<w
 L93t	H
 L93tJA
-L95n,
+L95%|
 L9;t	H
-L9=<s
-L9=@B
-L9=Ws
-L9=kr
+L9=7k
+L9=Kj
+L9=^:
+L9=y:
 L9?t	H
 L9c u
 L9d$(t
@@ -2834,7 +2821,7 @@ LcL$PH
 LcL$XH
 LcM(I
 LcM8H
-LcM<H
+LcMHH
 LcMpH
 LcO H
 LcO8H
@@ -2852,16 +2839,17 @@ Lct$0Hc|$@M
 Lct$@
 Lct$HD;
 Lcu H
-LcuPE
 Lcw@I
 Lc|$(J
 Lc|$4E3
+Lc}XE
 Lc~ Lcg A
 LeaveCriticalSection
 Legacy compiled shaders found, they need to be recompiled
 Lexer encountered %i errors parsing compile targets expression "%s"
 Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
 LightSim_DiffuseAlbedoTexture
+Lil$x
 Line: 
 Lj[;>
 LoadLibraryExW
@@ -2986,6 +2974,7 @@ MoveToEx
 MultiByteToWideChar
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 Must run with -shaderstats to use mat_shading_complexity!
+N	V_snprintf
 N"HcF
 N8D9l
 NORMAL
@@ -3010,13 +2999,13 @@ NoZPrepass
 Not safe to 'new' this class due to alignment requirements
 November
 O8HcB
+O>X`M
 OCTAL_ESC
 October
 Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
 Ot$DD
-Ou`A9M
 Out of range dynamic combo id %d in material "%s"
 OutputDXT5Texture_1x1
 OutputDXT5Texture_2x2
@@ -3025,14 +3014,12 @@ OverrideTextureParam cannot be called from outside of a CMaterialOverrideScopeGu
 OwnedByCurrentThread()
 P8H=vmat
 P8H=vtex
-PA]A\_][
 PA^^]
 PA^_]
 PA_A]_^]
 PA_A^A\^]
 PA_A^A\_^
 PA_A^A]A\_^]
-PA_A^_
 PA__[
 PAq=?Mp#
 PC SM 4.0 (D3D10)
@@ -3066,6 +3053,7 @@ Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.cr
 PhysicsBuilderMgr001
 Pixel Shader
 Pixel Shader Render State
+PlG=I
 Plat_DebugPrint
 Plat_DebugString
 Plat_ExitProcess
@@ -3125,7 +3113,6 @@ PropertyEditorSystem_001
 Pz}b!
 Q$HcA
 QueryPerformanceCounter
-R	V_sscanf
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -3210,23 +3197,18 @@ SHEXt[
 SSE and SSE2 are required.
 SUATAUAVAWH
 SUATH
-SUAVH
 SUPPORTS_CS
 SUPPORTS_GS
 SUVWATAUAVAWH
 SUVWATAVAWH
-SUVWATAVH
 SUVWAUAVH
 SUVWAUAWH
 SUVWAVAWH
 SUVWAVH
 SUWATAUAWH
-SUWATAUH
 SVATAUAVAWH
 SVWATAUAVAWH
 SVWATAUAVH
-SVWAUH
-SVWAWH
 SV_ClipDistance
 SV_Position
 SV_Target
@@ -3333,11 +3315,11 @@ StatsService_001
 SteamAudio001
 Sunday
 SupportsMappingDimensions
+T	V_sscanf
 T$ D9
 T$ E3
 T$ Hc
 T$ Lc
-T$ fD
 T$"E3
 T$&E3
 T$0E3
@@ -3365,14 +3347,14 @@ T$hD8m
 T$hD8u
 T$hD8}
 T$hHc
+T$hfA;
 T$pE3
 T$pM+
 T$x@8u
 T$xD8u
 T$xE3
 T$xE;
-T$xf;W
-T&C9T
+T$xfff
 TANGENT
 TEXCOORD
 TUUUU
@@ -3436,7 +3418,6 @@ USVWAUAVAWH
 USVWAUAVH
 USVWAVH
 USVWH
-USWATAUAVAWH
 USWATAUAVH
 USWATH
 USWAUAVAWH
@@ -3628,7 +3609,6 @@ VisBuilder_001
 Visualize overdraw
 Visualize shading complexity
 Vrad3_001
-W	V_stricmp_fast
 W0]7L
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
@@ -3650,18 +3630,19 @@ WriteFile
 Wrong number of args left on stack (%i args, wanted %i)!
 Wrong number of args left on stack!
 XA;ML|
+XA^A]_^][
 XA_A]_^][
 XD$LH
 XD8(t
 XHcAxL
 Xl$8A
+Y	V_stricmp_fast
 Y9"SD
 Y>t$7?
 YL$XH
 YT$XH
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 Yt$@Hc
-[	V_strspn
 [ VAVAWH
 [ mat_print_material_info ] Error! Cannot find material '%s'!
 [Dynamic shader compile] Reloading %d material(s)
@@ -3673,13 +3654,12 @@ Yt$@Hc
 \$ UVATAUAWH
 \$ UVAUH
 \$ UVAVH
-\$ UVWATAUAVAWH
-\$ UVWAUAVH
 \$ UVWAVAWH
 \$ UVWH
 \$ VH
 \$ VWATAUAVH
-\$ v<
+\$ VWAWH
+\$ v9
 \$(D;
 \$(E3
 \$(Ei
@@ -3706,23 +3686,20 @@ Yt$@Hc
 \$HLc
 \$XE3
 \$XHc
+\$`D;
 \$`E3
-\$`E;
 \$`Hi
-\$`LcN
 \$hA;
 \$hHcL$`H
 \$hI+
 \$hu2
-\$pfD;
 \$x1E
 \$xA;
 \0bf;
 \error.vmat
+]	V_strspn
 ] ;]$t
-] A;],}
 ](A8~8t
-](fA;w
 ]J<0"0i3
 ]oHcB
 ^^^ Attribute-based texture warning is now disabled after outputting 50 warnings.
@@ -3766,7 +3743,6 @@ _copy%u
 _feature
 _gUT^
 _psrs
-`	V_strtoui64
 `.rdata
 `A]A\_
 `A^_^
@@ -3798,8 +3774,6 @@ _psrs
 `scalar deleting destructor'
 `string'
 `typeof'
-`u$f9l
-`u'f9l
 `udt returning'
 `vbase destructor'
 `vbtable'
@@ -3864,6 +3838,7 @@ argument list too long
 argument out of domain
 array
 attributes[i].GetType() == VFX_VARIABLE_TYPE_TEXTURE2D
+b	V_strtoui64
 bAllocationCanFit
 bLegalTypeChange
 bLfff
@@ -3909,7 +3884,6 @@ cs_5_0
 cs_6_0
 ctx.m_pVariableIndexToParamIndex[nVarIndex] < ctx.m_nNumAllParams
 curPos.IsValid()
-d	V_tanf
 d$ L9c
 d$ UAVAWH
 d$(Hc
@@ -3918,14 +3892,14 @@ d$@D9#
 d$@E3
 d$@HcG@H
 d$H1D$dL
+d$HE3
 d$PA+
 d$PD9
 d$PLi
 d$Pu7H
 d$QE3
+d$XE3
 d$`fA
-d$hff
-d$pfE;
 d$xD;m
 d$xE3
 d$xfE
@@ -3940,9 +3914,9 @@ device or resource busy
 dim != RENDER_TEXTURE_DIMENSION_BUFFER
 directory not empty
 double
+e(A_A^A]A\_^[]
 e0A_A^A]A\]
-e8A_A^A]A\_^[]
-e@A_A^A]A\]
+e@A_A^A]A\_^]
 eXL9d$h
 eXL9d$ht
 e`A_A^A]A\_^]
@@ -3955,6 +3929,7 @@ error.vmat
 error.vmat_c
 executable format error
 externaldescriptorset
+f	V_tanf
 f#D$0f;
 f9)u4H9j
 f9<H}
@@ -4002,7 +3977,6 @@ fD9w:t
 fD9{*t
 fD9{Bt
 fD9|(
-fD;"w
 fD;s0}0I
 fD;t$`}VE
 fD;{(}JI
@@ -4010,7 +3984,6 @@ fD;{@}RI
 fE9g2t
 fE9u2t
 false
-fbfE;
 featureComboData.m_vsInputSignatureIndexArray.IsEmpty()
 features
 ffD9[Ju	I
@@ -4170,18 +4143,18 @@ gs_4_0
 gs_4_1
 gs_5_0
 gs_6_0
-hA^A\_^][
 hA^A]A\_^[
 hA_A^A]A\_^[]
 hI9|	
 hN9d	
 hResource != RESOURCE_HANDLE_INVALID
 height >= INT16_MIN && height <= INT16_MAX
+hfA9T
 hfB9,	~HfE
 hfB9l
 hfB9|
+hfD9D
 hfD9L
-hfD9d
 host unreachable
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
@@ -4212,8 +4185,8 @@ is a directory
 is also the end of the line, so you must check your lexer rules
 j0fD9r2t
 jj@0HK4
+k L9+t	H
 k(HcC
-k(Hc{$H
 k0i0$
 kHf9kJ~
 l$ AVH
@@ -4226,12 +4199,10 @@ l$ Lcy
 l$ VATAWH
 l$ VH
 l$ VWATAVAWH
-l$ VWAUAVAWH
 l$ VWAVH
 l$ WH
 l$ fff
 l$(fA
-l$0D;C
 l$0E2
 l$0E3
 l$0H9l$ t
@@ -4245,13 +4216,14 @@ l$4fA
 l$8Hi
 l$8u'I
 l$@E3
-l$DE3
 l$H1D$dL
 l$HA_A^A]A\_^
 l$HE3
 l$HHk
 l$PA+
 l$PD9l$8
+l$PfD;
+l$Pfff
 l$XA;
 l$XE3
 l$XI;
@@ -4260,11 +4232,10 @@ l$XL;
 l$`;n
 l$`E9E
 l$`I;
-l$hLc
+l$hHc
+l$hfA;
 l$if3
-l$pE3
 l$pHc
-l$pu4A
 l$x1E
 l2|X/gGe
 length
@@ -4275,9 +4246,7 @@ log10
 looks like this:
 loop != 99
 lr.type != VFX_STATIC_COMBO_LOAD_REQUEST_FAILED
-m'pIa<
 m0k0$
-m9kp~^
 mL+7H
 m_CharCache.IsValidIndex( cacheHandle )
 m_DebugFont != INVALID_FONT_HANDLE
@@ -4516,6 +4485,7 @@ nVal <= VFX_COMBO_VALUE_MAX
 nVarIndex >= 0 && nVarIndex < ctx.m_nNumVariableIndexToParamIndex
 nVfxProgramType < VFX_PROGRAM_MAX
 n`fA;
+nbfA;
 near '%c' :
 near char(%#02X) :
 network down
@@ -4548,7 +4518,6 @@ ntelA
 num > 0
 numChars >= 1
 n|$DfD
-o L9/t	H
 op != INVALID_OPERATOR
 operation canceled
 operation in progress
@@ -4562,7 +4531,6 @@ operator<=>
 ot$ H
 outputBuffer
 owner dead
-ownership == KV3_COPY_EXTERNAL
 p WATAUAVAWH
 p*W4H
 p0R^G'
@@ -4572,6 +4540,7 @@ pA_A^A\_^[]
 pA_A^A]A\_^[
 pA_A^A]A\_^]
 pA_A^A]_]
+pA_A^]
 pA_A^_^]
 pCallback == nullptr
 pChars && textureID && texCoords
@@ -4670,13 +4639,15 @@ rwtexture1darray
 rwtexture2d
 rwtexture2darray
 rwtexture3d
+s HcB 
 s Lc7
 s(L94
 sHf9sJ~
 sLcG$E
+sVfA;
 sXD9{P|AH
 sXfA;
-s]fA;
+sZfA;
 s_nConnectionCount > 0
 s_nRegistrationCount < V_ARRAYSIZE(s_pConnectionRegistration)
 s_nResourceFCRegisteredCount > 0
@@ -4722,7 +4693,6 @@ struct VS_INPUT
 structuredbuffer
 subclass
 success
-t$ ;W
 t$ AVH
 t$ AVL
 t$ AWH
@@ -4732,6 +4702,7 @@ t$ L9#t	H
 t$ L9?t	H
 t$ Li
 t$ Mk
+t$ UAVAWH
 t$ UH
 t$ UWATAVAWH
 t$ UWAVH
@@ -4745,16 +4716,15 @@ t$ fD;y@
 t$(A^
 t$(E3
 t$(H9t$ t
-t$(I#
 t$(Ic
 t$(fA;
-t$(fE;
 t$0@8
 t$0E3
 t$0Hc
 t$0Hcq
 t$0Hi
 t$0ff
+t$0tV3
 t$0~ H
 t$4E3
 t$4|aH
@@ -4766,8 +4736,6 @@ t$8H+
 t$8Hc
 t$8Hcq
 t$8Hk
-t$8Ii
-t$8tX3
 t$8|QH
 t$8~ H
 t$;B4u
@@ -4786,8 +4754,8 @@ t$HAi
 t$HE3
 t$HHc
 t$HHk
-t$HLc
-t$Hc3;s
+t$Hc;;{
+t$HcI
 t$Hu!H
 t$Hx-
 t$H}!Ic
@@ -4802,7 +4770,6 @@ t$PI9
 t$PL+
 t$PM+
 t$Pt$H
-t$PuP
 t$X1D$tH
 t$X1D$tL
 t$XD#
@@ -4811,6 +4778,7 @@ t$XE3
 t$XI9
 t$XI;
 t$XLc
+t$XLi
 t$XfA;
 t$XfD;
 t$Xu*
@@ -4818,9 +4786,8 @@ t$`D;
 t$`E3
 t$`L#
 t$`M+
-t$`f;
-t$hHc
-t$h}[H
+t$`}[H
+t$hLc
 t$lE3
 t$pA+
 t$p|FH
@@ -4828,10 +4795,10 @@ t$x;Y(r
 t$xD#
 t$xD9u
 t$xE3
-t$xf;_
 t&A88t
 t'E;f
 t,Ic@
+t-HcA
 t-Lck
 t-fff
 t/HcW0
@@ -4839,7 +4806,6 @@ t0L;Sp
 t1IcD$
 t4H;1u/H
 t7HcP
-t9A;u,}
 t; HcVx
 t;fff
 tDfff
@@ -4849,16 +4815,16 @@ tRLcY
 tYfff
 tZvX2
 t\@8:tW
-t]L9ePtW
-t]fD9_
 t^@8/tY3
 t^D8:tY
 t_L9>t
 table
 tangent
 target != COMPILE_TARGET_MAX
+tbfff
 tcH9]
 tdD8?t_3
+teL9e(t_
 texEntry.TestForStreamingFinish( true )
 texcoord
 text file busy
@@ -4889,6 +4855,7 @@ tvL9*tqH
 twIcF
 txH9*tsH
 txL9:tsH
+tzf9s
 u$D8r(t
 u$D:B
 u%9N4|
@@ -4907,9 +4874,9 @@ u7L9c u1
 u8M;q
 uCD85
 uED8r(t
-uNf9{
+uGf9y
 uW@8u
-uXf9i
+u[fD9y
 u`|EH
 ubf9P
 uchar32
@@ -4975,15 +4942,14 @@ x UATAUAVAWH
 x UAVAWH
 x!;W`L
 x=HcS
-x?;Cp}:;
-xA]_^[
 xA_A\_]
 xA_A^A]A\][
 xA_A^A]A\^[
-yHA;],}
+xOPNq
 y\PD>!
+y`fA;
 z(f9z*t
-{ HcB 
+{(Hcs$
 {0x%x}
 {89s0|AH
 {@9s8|AH
@@ -5003,7 +4969,6 @@ z(f9z*t
 |$ AWH
 |$ D!
 |$ E3
-|$ H;
 |$ Hc
 |$ Ic
 |$ L9{
@@ -5013,6 +4978,8 @@ z(f9z*t
 |$ UAVAWH
 |$ UH
 |$ f;
+|$ fA;
+|$ }[H
 |$(A^
 |$(E3
 |$(E9f
@@ -5036,13 +5003,13 @@ z(f9z*t
 |$@A+
 |$@A;u
 |$@A_A^A]A\
-|$@E3
-|$@H;
 |$@Hc
 |$@Hi
+|$@I;
 |$H1D$dH
 |$H1D$dL
 |$HE3
+|$HLc
 |$HLi
 |$HLk
 |$HfE
@@ -5051,15 +5018,16 @@ z(f9z*t
 |$PE3
 |$PL93tQA
 |$PtxD
+|$P}[H
 |$P~ H
 |$XE3
 |$XHc
 |$`E3
 |$`Hc
 |$`I+
-|$`fA;l$
-|$`}[H
+|$`fA;
 |$hAi
+|$hH;
 |$pHcG
 |$x1E
 |$xE3
@@ -5071,13 +5039,16 @@ z(f9z*t
 |b=})>
 |lHcC
 } fA;P"w
+}!fD;A
 }1;C$
-}5fD;_
 }>;_$
-}@McF
 }LuHO
-}nf;n
-}uf;k
+}Qf;{
+}Rf;_
+}Tf;{
+}Uf;_
+}mf;w"wgL
+}nf;{
 ~ L9>t	H
 ~6fff
 ~qj#k"
