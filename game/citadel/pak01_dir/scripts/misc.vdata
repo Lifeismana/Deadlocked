@@ -1475,16 +1475,16 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = "breakable_pickup_missing_loc"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
 	}
 	small_gold_pickup = 
 	{
 		_class = "citadel_breakable_prop_gold_pickup"
 		m_flPickupRadius = 70.000000
-		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
+		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
-		m_hModel = resource_name:"models/null.vmdl"
+		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
 		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
@@ -1501,6 +1501,7 @@
 			204,
 		]
 		m_sDefaultMaterialGroupName = "gold"
+		m_bIsPermanentPickup = true
 	}
 	move_speed_pickup = 
 	{
@@ -1513,7 +1514,7 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = "move_speed_pickup_label"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.Speed"
 		m_Color = 
 		[
@@ -1553,7 +1554,7 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = "fire_rate_pickup_label"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
 		_base = "citadel_breakable_prop_pickup_base"
 		m_sModifer = subclass:
@@ -1585,7 +1586,7 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = "health_regen_pickup_label"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Player.Heal.Medium"
 		_base = "citadel_breakable_prop_pickup_base"
 		m_Color = 
@@ -1618,7 +1619,7 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = "breakable_pickup_missing_loc"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
 		_base = "citadel_breakable_prop_pickup_base"
 		m_sModifer = subclass:
@@ -1651,7 +1652,7 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = "extra_stamina_pickup_label"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
 		_base = "citadel_breakable_prop_pickup_base"
 		m_sModifer = subclass:
@@ -1683,7 +1684,7 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = "zipline_speed_pickup_label"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
 		_base = "citadel_breakable_prop_pickup_base"
 		m_sModifer = subclass:
@@ -1715,7 +1716,7 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = "cooldown_reduction_pickup_label"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
 		_base = "citadel_breakable_prop_pickup_base"
 		m_sModifer = subclass:
@@ -1747,7 +1748,7 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = "clip_size_pickup_label"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
 		_base = "citadel_breakable_prop_pickup_base"
 		m_sModifer = subclass:
@@ -1781,7 +1782,7 @@
 		m_flPickupExpirationDuration = 30.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
-		m_sNameLocString = "breakable_pickup_missing_loc"
+		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
 		_base = "citadel_breakable_prop_pickup_base"
 		_not_pickable = 2
