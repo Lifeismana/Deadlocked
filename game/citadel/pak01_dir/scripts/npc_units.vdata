@@ -7548,6 +7548,21 @@
 			m_IsDroppingParticle = resource_name:"particles/environment/rejuv_ambient.vpcf"
 			m_IsPunchableParticle = resource_name:"particles/environment/rejuv_attackable.vpcf"
 			m_bIsHidden = true
+			m_NearRejuvAuraModifier = subclass:
+			{
+				_class = "modifier_base_aura"
+				_my_subclass_name = "near_rejuv"
+				m_bIsHidden = true
+				m_flAuraRadius = 300.000000
+				m_modifierProvidedByAura = subclass:
+				{
+					_class = "modifier_base"
+					_my_subclass_name = "target_near_rejuv"
+					m_bIsHidden = true
+					m_nEnabledStateMask = "MODIFIER_STATE_NEAR_REJUVINATOR"
+				}
+				m_iAuraSearchType = "CITADEL_UNIT_TARGET_HERO"
+			}
 		}
 	}
 }
