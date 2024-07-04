@@ -44,24 +44,21 @@
 			<Label class="TeammateKeybind" text="{s:spectate_keybind}" html="true" />
 			<Image class="SpectatorImage" src="s2r://panorama/images/hud/spec_icon_png.vtex" />
 			<Panel id="HeroContents" class="HeroContents" hittest="false">
-				<Panel class="HeroContentsBG" />
-				<Panel class="HeroIconContainer">
-					<CitadelHeroImage id="HeroIcon" scaling="none" heroimagestyle="vertical" />
+				<Panel id="HeroImageArea">
+					<Panel class="HeroContentsCoinOuterBorder" />
+					<Panel class="HeroContentsCoinBackground" />
+					<Panel class="HeroIconContainer">
+						<CitadelHeroImage id="HeroIcon" scaling="stretch-to-fit-x-preserve-aspect" heroimagestyle="vertical" />
+					</Panel>
+					<Panel class="HeroContentsCoinInnerBorder" />
 				</Panel>
 				<Panel class="HeroInnerContent">
 					<Panel id="HealthBar">
 						<ProgressBar id="HeroHealth" min="0" max="1" vertical="true" />
 					</Panel>
-					<Panel id="TotalSoulsContainer">
-						<Panel class="SoulsBacker" />
-						<Label class="TotalSoulsLabel" text="TOTAL SOULS" />
-						<Panel class="SoulsValueContainer">
-							<Panel class="SoulsImage" />
-							<Label class="SoulsValue" html="true" text="{s:total_souls}" />
-						</Panel>
-					</Panel>
-					<Panel class="UltimateStatus">
-						<CitadelAbilityIcon id="UltimateAbilityIcon" read_only="true" ability_slot="4" />
+					<Panel id="UltimateStatus" class="UltimateStatus">
+						<Panel id="UltimateStatusBG" class="UltimateStatusBG" />
+						<Panel id="UltimateAbilityIconMini" />
 						<Panel class="LockedOverlay">
 							<Panel class="LockedIcon" />
 						</Panel>
@@ -86,6 +83,14 @@
 		</Panel>
 		<Panel id="PlayerNameNWContainer">
 			<Panel class="PlayerInfoContainer TopBottomFlow">
+				<Panel id="TotalSoulsContainer">
+					<Panel class="SoulsBacker" />
+					<Label class="TotalSoulsLabel" text="TOTAL SOULS" />
+					<Panel class="SoulsValueContainer">
+						<Panel class="SoulsImage" />
+						<Label class="SoulsValue" html="true" text="{s:total_souls}" />
+					</Panel>
+				</Panel>
 				<Panel class="ValveEmployee" />
 				<Label class="PlayerName" text="{s:player_name}" />
 				<Panel id="KDAContainer" class="TopBottomFlow">

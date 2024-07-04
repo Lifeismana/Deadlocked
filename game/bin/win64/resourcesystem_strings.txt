@@ -107,6 +107,7 @@ $?D855e
 (A_A]A\_
 (D$0H
 (D$Pf
+(L@=X
 (Lc)H
 (f*^[0
 (intp)this % 8 == 0
@@ -136,7 +137,6 @@ $?D855e
 ,7L9>t	H
 ,W5y+
 ,YA1A
--"v|}Q
 --tools_resource_listeners_default_deferred
 -convars_visible_by_default
 -exit_on_resource_load_failure
@@ -293,13 +293,12 @@ $?D855e
 220323000000Z
 220801000000Z
 230714000000Z
-240627183138Z0/
+240704150646Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
-3"Dy#
 311109235959Z0b1
 33333333H+
 341013235959Z0H1
@@ -585,7 +584,6 @@ AppPolicyGetProcessTerminationMethod
 April
 AreFileApisANSI
 AssertCast
-AssertCastNumberInternal
 AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetRenameSystem_001
@@ -1094,7 +1092,7 @@ Cannot assign multiple callbacks to a CAsyncResourceDataRequest
 Cannot deduce for class
 Cannot serialize a non-empty CUtlStringToken (0x%08X)
 Cast of %s loses value information (returning %s)
-Cast of %s loses value information (returning %s) on %s:%d
+Cast of %s loses value information (returning %s) in %s on %s:%u
 Class does not allow allocation from its schema binding
 ClientToolsInfo_001
 CloseHandle
@@ -1109,6 +1107,7 @@ ConVarRefAbstract::GetUndefinedInfo
 ConstantInfo_t
 ConstantInfo_t::KV3Transfer_DefaultKeys_Impl
 ConstantInfo_t::Schema_VerifyBindingIsRegistered
+Construct
 Construction is only allowed from the resolve function
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
@@ -1117,7 +1116,6 @@ Couldn't load KV3 for resource: %s
 CreateEventW
 CreateFileW
 CreateInterface
-C|5/k
 C|B9D9
 D!l$xA
 D$ /H
@@ -1480,7 +1478,6 @@ H9\$H
 H9k u
 H9|$ t
 H9|$(t
-H;=hf
 H;XXs
 H;xXu5
 HH:mm:ss
@@ -1504,7 +1501,6 @@ Hc|$0I
 Hc}HH
 HelpSystem_001
 HostStateMgr001
-HyLVp
 I+4$H
 I9CP}
 IKV3TransferInterface_ResourceLoad
@@ -1673,6 +1669,7 @@ KERNEL32.dll
 KPL;HP
 KPL;HP|
 KV3 instances cannot be set to an unspecified specific type
+KV3Helper_CheckValueNumericCast
 KV3TransferSchema_AllocateClassInstance
 KV3TransferSchema_ClassName::<lambda_1>::operator ()
 KV3Transfer_SaveMapAsFlatTable
@@ -1820,8 +1817,10 @@ No listeners registered for '%s' (unregistering 0x%p)
 No schema binding info for enum '%s'
 Not safe to 'new' this class due to alignment requirements
 November
+O#8Dg)4
 O8HcB
 October
+Og|sA
 OnAsyncProcessResourceData
 OnResourceDataLoaded for resource %016llX (file "%s") (%llu bytes)
 OnTimestampedEvent - bad part: %d
@@ -1831,6 +1830,7 @@ OpenProcess
 Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
+OzYDv4
 P@HcG
 P@L9n
 PA^A\]
@@ -2172,6 +2172,7 @@ WriteFile
 X VWAVH
 XA_A^A]A\_^][
 Y	V_stricmp_fast
+Y0lSjSB
 Y9"SD
 Zero refcount resource detected when m_DeletionRequests = 0: '%s'
 [% 5ims alloc] [% 5ims async] [% 5ims final] [% 5i / %10s] %s
@@ -2333,16 +2334,13 @@ d$(E3
 d$0E3
 d$XIc
 d$`tLA
-d+D?CCX;'5
 data.m_nRefCount == 0
 dddd, MMMM dd, yyyy
 destination address required
 device or resource busy
 directory not empty
 double
-dsRh`bN
 e0A_A^A]A\]
-eF64>
 ehA_A^A]A\_^[]
 ehandle
 enable_profiling
@@ -2432,8 +2430,8 @@ l$0Lc)
 l$@E3
 l$HA_A^A]A\_^
 l$HHcn
+l$H}`f;=
 l$H}`f;=l(
-l$H}`f;=|
 l$PE3
 l$PHc/L
 l$Pff
@@ -2825,7 +2823,7 @@ vKfffff
 vagrp
 value too large
 vanim
-vanmgrpheconitemvents
+vanmgrpheconitem
 vcdlist
 vcompmat
 vdata
@@ -2837,6 +2835,7 @@ vector4
 vector4d
 ventl
 ventr
+vents
 vgcxdata
 vmesh
 vmorf
@@ -2869,7 +2868,6 @@ x ATAVAWH
 x AVH
 x#A;Fp}
 xA_A^A]A\_^][
-xY{O}
 y\PD>!
 {0x%x}
 {@9s8|AH

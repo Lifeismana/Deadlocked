@@ -8,6 +8,40 @@
 		"scripts/misc/xp_orbs.vdata_inc",
 		"scripts/misc/neutral_camps.vdata_inc",
 	]
+	citadel_item_powerup_spawner = 
+	{
+		m_flInitialSpawnTime = 600.000000
+		m_flSpawnInterval = 300.000000
+		m_flInitialSpawnTimeTest = 1.000000
+		m_flRespawnTimeTest = 10.000000
+		m_hModel = resource_name:"models/npc/sewer_beast/sewer.vmdl"
+		m_flModelScale = 1.500000
+		m_InactiveParticle = resource_name:"particles/environment/powerup_spawner_inactive_ambient.vpcf"
+		m_ActiveParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
+		m_vecPrimaryPickups = 
+		[
+			
+			{
+				m_sPickup = "gun_powerup_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "survival_powerup_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "casting_powerup_pickup"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "movement_powerup_pickup"
+				m_flPickupWeight = 1.000000
+			},
+		]
+	}
 	citadel_breakable_prop_base = 
 	{
 		_class = "citadel_breakable_prop"
@@ -20,92 +54,8 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
-		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
-		[
-			
-			{
-				m_sPickup = "small_gold_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 25.000000
-		m_flSecondaryDropChance = 25.000000
-	}
-	citadel_item_powerup_spawner = 
-	{
-		m_flInitialSpawnTime = 600.000000
-		m_flSpawnInterval = 300.000000
-		m_hModel = resource_name:"models/npc/sewer_beast/sewer.vmdl"
-		m_flModelScale = 1.500000
-		m_InactiveParticle = resource_name:"particles/environment/powerup_spawner_inactive_ambient.vpcf"
-		m_ActiveParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
-		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "cooldown_reduction_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "health_regen_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "extra_stamina_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "fire_rate_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "move_speed_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "clip_size_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
+		m_flInitialSpawnTime = 0.000000
+		m_flPrimaryDropChance = 0.000000
 	}
 	citadel_breakable_prop_drop_powerups = 
 	{
@@ -118,6 +68,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_base"
+		_not_pickable = 2
 		m_vecPrimaryPickups = 
 		[
 			
@@ -151,19 +105,43 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_vecSecondaryPickups = 
+		m_vecPickups_lv2 = 
 		[
 			
 			{
-				m_sPickup = "small_gold_pickup"
+				m_sPickup = "spirit_permanent_pickup_lv2"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "firerate_permanent_pickup_lv2"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "ammo_permanent_pickup_lv2"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "hp_permanent_pickup_lv2"
+				m_flPickupWeight = 2.000000
+			},
+			
+			{
+				m_sPickup = "cd_permanent_pickup_lv2"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "wp_permanent_pickup_lv2"
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 39.000000
-		m_flSecondaryDropChance = 0.000000
-		_base = "citadel_breakable_prop_base"
-		_not_pickable = 2
+		m_iMatchTimeMinsForLevel2Pickups = 25
+		m_flInitialSpawnTimeTest = 1.000000
+		m_flRespawnTimeTest = 10.000000
+		m_eRollType = "ECitadelRandomRoll_BreakablePowerupPickup"
 	}
 	citadel_breakable_prop_drop_gold = 
 	{
@@ -176,40 +154,11 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_base"
+		_not_pickable = 2
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -217,11 +166,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_base"
-		_not_pickable = 2
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 	}
 	citadel_breakable_item_container = 
 	{
@@ -234,6 +179,9 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_powerups"
 		m_vecPrimaryPickups = 
 		[
 			
@@ -267,18 +215,43 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_vecSecondaryPickups = 
+		m_vecPickups_lv2 = 
 		[
 			
 			{
-				m_sPickup = "small_gold_pickup"
+				m_sPickup = "spirit_permanent_pickup_lv2"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "firerate_permanent_pickup_lv2"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "ammo_permanent_pickup_lv2"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "hp_permanent_pickup_lv2"
+				m_flPickupWeight = 2.000000
+			},
+			
+			{
+				m_sPickup = "cd_permanent_pickup_lv2"
+				m_flPickupWeight = 1.000000
+			},
+			
+			{
+				m_sPickup = "wp_permanent_pickup_lv2"
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 39.000000
-		m_flSecondaryDropChance = 0.000000
-		_base = "citadel_breakable_prop_drop_powerups"
+		m_iMatchTimeMinsForLevel2Pickups = 25
+		m_flInitialSpawnTimeTest = 1.000000
+		m_flRespawnTimeTest = 10.000000
+		m_eRollType = "ECitadelRandomRoll_BreakablePowerupPickup"
 		m_hModel = resource_name:"models/props_gameplay/item_container_breakable/item_container.vmdl"
 		m_sBreakSound = soundevent:"glass.break"
 	}
@@ -293,40 +266,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -334,17 +277,14 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_drop_gold"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_gameplay/vase_large/vase_large.vmdl"
 		m_sBreakSound = soundevent:"Pottery.Large.Break"
 	}
 	citadel_breakable_prop_box_multi = 
 	{
 		_class = "citadel_breakable_prop"
-		m_flRespawnTime = 1
+		m_flRespawnTime = 180.000000
 		m_iHealth = 1
 		m_bBreakOnDodgeTouch = true
 		m_bSolidAfterDeath = false
@@ -352,40 +292,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -393,10 +303,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_drop_gold"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/test/physics/break_box_multi.vmdl"
 	}
 	citadel_breakable_prop_wooden_crate = 
@@ -410,40 +317,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -451,10 +328,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_drop_gold"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_gameplay/wooden_crate_01.vmdl"
 		m_bIsMantleable = true
 	}
@@ -469,40 +343,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -510,10 +354,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_drop_gold"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_gameplay/lion_statue_02/lion_statue_02.vmdl"
 		m_sBreakSound = soundevent:"Pottery.Break"
 		m_sDamageSound = soundevent:"Concrete.BulletImpact"
@@ -529,40 +370,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -570,10 +381,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_drop_gold"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_gameplay/sake_barrel_01/sake_barrel_01.vmdl"
 		m_sBreakSound = soundevent:"Wood.Break"
 		m_bIsMantleable = true
@@ -589,40 +397,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -630,10 +408,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_drop_gold"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_gameplay/wooden_crate_02/wooden_crate_02.vmdl"
 		m_bIsMantleable = true
 		m_sBreakSound = soundevent:"Wood.Break"
@@ -649,40 +424,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -690,10 +435,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_drop_gold"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_gameplay/wooden_crate_03/wooden_crate_03.vmdl"
 		m_sBreakSound = soundevent:"Wood_Crate.Break"
 		m_bIsMantleable = true
@@ -709,40 +451,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 180.000000
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -750,10 +462,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_drop_gold"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_gameplay/jar_01/jar_01.vmdl"
 		m_bIsMantleable = true
 		m_sBreakSound = soundevent:"Pottery.Break"
@@ -770,40 +479,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_drop_gold"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -811,10 +490,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_drop_gold"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_vehicles/car_04_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -834,40 +510,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -875,10 +521,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_vehicles/car_01_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -898,40 +541,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -939,10 +552,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_vehicles/car_04_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -962,40 +572,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -1003,10 +583,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_vehicles/car_05_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -1026,40 +603,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -1067,10 +614,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_vehicles/large_truck_01_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -1090,40 +634,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -1131,10 +645,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_vehicles/large_truck_02_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -1154,40 +665,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -1195,10 +676,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_vehicles/mini_truck_03_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -1218,40 +696,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -1259,10 +707,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_vehicles/bike_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -1282,40 +727,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -1323,10 +738,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_vehicles/ground_ship_03_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -1346,40 +758,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -1387,10 +769,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_structures/caldera_base_glass_vert_01_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -1410,40 +789,10 @@
 		m_bDamagedByAbilities = true
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
+		m_flInitialSpawnTime = 0
+		m_flPrimaryDropChance = 39.000000
+		_base = "citadel_breakable_prop_car"
 		m_vecPrimaryPickups = 
-		[
-			
-			{
-				m_sPickup = "spirit_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "firerate_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "ammo_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "hp_permanent_pickup"
-				m_flPickupWeight = 2.000000
-			},
-			
-			{
-				m_sPickup = "cd_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-			
-			{
-				m_sPickup = "wp_permanent_pickup"
-				m_flPickupWeight = 1.000000
-			},
-		]
-		m_vecSecondaryPickups = 
 		[
 			
 			{
@@ -1451,10 +800,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_flPickupLockoutPeriod = 180.000000
-		m_flPrimaryDropChance = 0.000000
-		m_flSecondaryDropChance = 39.000000
-		_base = "citadel_breakable_prop_car"
+		m_eRollType = "ECitadelRandomRoll_BreakableGoldPickup"
 		m_hModel = resource_name:"models/props_structures/caldera_base_glass_horiz_01_breakable.vmdl"
 		m_sAnimgraphParamOnHit = "b_Hit_Trigger"
 		m_flDropChance = 0.000000
@@ -1477,6 +823,7 @@
 		m_bShowOnMinimap = true
 		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 140
 	}
 	small_gold_pickup = 
 	{
@@ -1491,6 +838,7 @@
 		m_bShowOnMinimap = false
 		m_sNameLocString = "small_gold_pickup_label"
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
 		_base = "citadel_breakable_prop_pickup_base"
 		m_flGoldAmount = 35
 		m_flGoldPerMinuteAmount = 3
@@ -1503,7 +851,7 @@
 		m_sDefaultMaterialGroupName = "gold"
 		m_bIsPermanentPickup = true
 	}
-	move_speed_pickup = 
+	gun_powerup_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
 		m_flPickupRadius = 70.000000
@@ -1514,68 +862,47 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = ""
-		m_sPickupSound = soundevent:"Powerup.Pickup.Speed"
-		m_Color = 
-		[
-			255,
-			0,
-			0,
-		]
+		m_sNameLocString = "gun_powerup_pickup"
+		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
+		m_nNameOffset = 140
 		_base = "citadel_breakable_prop_pickup_base"
-		m_sDefaultMaterialGroupName = "red"
 		m_sModifer = subclass:
 		{
-			_class = "modifier_breakable_prop_speed_pickup"
-			m_flDuration = 50.000000
-			_my_subclass_name = "small_move_speed"
-			m_flSpeedBoost = 40.000000
-			m_bIsHidden = false
-			m_eDebuffType = "MODIFIER_DEBUFF_NO"
-			m_strParticleStatusEffect = resource_name:"particles/abilities/kali/kali_speed_boost_buff.vpcf"
-			m_strParticleEffect = resource_name:""
-			m_sStartSound = soundevent:""
-			m_vecRenderAttributes = 
+			_class = "modifier_base"
+			_my_subclass_name = "gun_powerup_pickup"
+			m_flDuration = 100.000000
+			m_vecScriptValues = 
 			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_FIRE_RATE"
+					m_value = 20.000000
+				},
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_AMMO_CLIP_SIZE_PERCENT"
+					m_value = 30.000000
+				},
 			]
-			m_strSmallIconCssClass = "move_speed_pickup"
-			m_flSprintBoost = 160.000000
-		}
-		m_iTempParticleSheetIndex = 4
-	}
-	fire_rate_pickup = 
-	{
-		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
-		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
-		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
-		m_hModel = resource_name:"models/null.vmdl"
-		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
-		m_flPickupExpirationDuration = 300.000000
-		m_flParticleRadius = 1.500000
-		m_bShowOnMinimap = true
-		m_sNameLocString = ""
-		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
-		_base = "citadel_breakable_prop_pickup_base"
-		m_sModifer = subclass:
-		{
-			_class = "modifier_breakable_prop_fire_rate_pickup"
-			m_flDuration = 45.000000
-			m_flFireRate = 18.000000
-			_my_subclass_name = "small_fire_rate"
+			m_sLocalizationName = "gun_powerup_pickup"
+			m_strHudMessageText = "#gun_powerup_pickup"
+			m_vecAlwaysShowInStatModifierUI = 
+			[
+				"MODIFIER_VALUE_FIRE_RATE",
+				"MODIFIER_VALUE_AMMO_CLIP_SIZE_PERCENT",
+			]
 			m_eDebuffType = "MODIFIER_DEBUFF_NO"
-			m_strSmallIconCssClass = "fire_rate_pickup"
+			m_strHudIcon = panorama:"file://{images}/hud/modifiers/icon_powerup.svg"
 		}
 		m_Color = 
 		[
-			210,
-			105,
-			30,
+			218,
+			148,
+			65,
 		]
-		m_sDefaultMaterialGroupName = "orange"
-		m_iTempParticleSheetIndex = 3
+		m_iTempParticleSheetIndex = 9
 	}
-	health_regen_pickup = 
+	survival_powerup_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
 		m_flPickupRadius = 70.000000
@@ -1586,190 +913,153 @@
 		m_flPickupExpirationDuration = 300.000000
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
-		m_sNameLocString = ""
+		m_sNameLocString = "survival_powerup_pickup"
 		m_sPickupSound = soundevent:"Player.Heal.Medium"
+		m_nNameOffset = 140
 		_base = "citadel_breakable_prop_pickup_base"
+		m_sModifer = subclass:
+		{
+			_class = "modifier_base"
+			_my_subclass_name = "survival_powerup_pickup"
+			m_flDuration = 100.000000
+			m_vecScriptValues = 
+			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_HEALTH_MAX"
+					m_value = 400
+				},
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_REGEN_MAX_HEALTH_PERCENT_PER_SECOND"
+					m_value = 1.000000
+				},
+			]
+			m_sLocalizationName = "survival_powerup_pickup"
+			m_strHudMessageText = "#survival_powerup_pickup"
+			m_vecAlwaysShowInStatModifierUI = 
+			[
+				"MODIFIER_VALUE_HEALTH_MAX",
+				"MODIFIER_VALUE_REGEN_MAX_HEALTH_PERCENT_PER_SECOND",
+			]
+			m_eDebuffType = "MODIFIER_DEBUFF_NO"
+			m_strHudIcon = panorama:"file://{images}/hud/modifiers/icon_powerup.svg"
+		}
+		m_iTempParticleSheetIndex = 6
+		m_Color = 
+		[
+			122,
+			184,
+			29,
+		]
+	}
+	casting_powerup_pickup = 
+	{
+		_class = "citadel_breakable_prop_modifier_pickup"
+		m_flPickupRadius = 70.000000
+		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
+		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
+		m_hModel = resource_name:"models/null.vmdl"
+		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
+		m_flPickupExpirationDuration = 300.000000
+		m_flParticleRadius = 1.500000
+		m_bShowOnMinimap = true
+		m_sNameLocString = "casting_powerup_pickup"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 140
+		_base = "citadel_breakable_prop_pickup_base"
+		m_sModifer = subclass:
+		{
+			_class = "modifier_base"
+			_my_subclass_name = "casting_powerup_pickup"
+			m_flDuration = 100.000000
+			m_vecScriptValues = 
+			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_TECH_POWER"
+					m_value = 25.000000
+				},
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE"
+					m_value = 20.000000
+				},
+			]
+			m_sLocalizationName = "casting_powerup_pickup"
+			m_strHudMessageText = "#casting_powerup_pickup"
+			m_vecAlwaysShowInStatModifierUI = 
+			[
+				"MODIFIER_VALUE_TECH_POWER",
+				"MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE",
+			]
+			m_eDebuffType = "MODIFIER_DEBUFF_NO"
+			m_strHudIcon = panorama:"file://{images}/hud/modifiers/icon_powerup.svg"
+		}
+		m_Color = 
+		[
+			203,
+			143,
+			252,
+		]
+		m_iTempParticleSheetIndex = 7
+	}
+	movement_powerup_pickup = 
+	{
+		_class = "citadel_breakable_prop_modifier_pickup"
+		m_flPickupRadius = 70.000000
+		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
+		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
+		m_hModel = resource_name:"models/null.vmdl"
+		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
+		m_flPickupExpirationDuration = 300.000000
+		m_flParticleRadius = 1.500000
+		m_bShowOnMinimap = true
+		m_sNameLocString = "movement_powerup_pickup"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Speed"
+		m_nNameOffset = 140
+		_base = "citadel_breakable_prop_pickup_base"
+		m_sModifer = subclass:
+		{
+			_class = "modifier_base"
+			_my_subclass_name = "movement_powerup_pickup"
+			m_flDuration = 100.000000
+			m_vecScriptValues = 
+			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_STAMINA"
+					m_value = 2
+				},
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_SPRINT_SPEED_BONUS"
+					m_value = 78.740200
+				},
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_ZIP_LINE_SPEED_PERCENTAGE"
+					m_value = 30
+				},
+			]
+			m_vecAlwaysShowInStatModifierUI = 
+			[
+				"MODIFIER_VALUE_SPRINT_SPEED_BONUS",
+				"MODIFIER_VALUE_SPRINT_SPEED_BONUS",
+				"MODIFIER_VALUE_ZIP_LINE_SPEED_PERCENTAGE",
+			]
+			m_sLocalizationName = "movement_powerup_pickup"
+			m_strHudMessageText = "#movement_powerup_pickup"
+			m_eDebuffType = "MODIFIER_DEBUFF_NO"
+			m_strHudIcon = panorama:"file://{images}/hud/modifiers/icon_powerup.svg"
+		}
+		m_iTempParticleSheetIndex = 8
 		m_Color = 
 		[
 			50,
-			205,
 			50,
-		]
-		m_sDefaultMaterialGroupName = "green"
-		m_sModifer = subclass:
-		{
-			_class = "modifier_breakable_prop_health_regen_pickup"
-			_my_subclass_name = "small_health_regen"
-			m_flDuration = 45.000000
-			m_eDebuffType = "MODIFIER_DEBUFF_NO"
-			m_flFlatHealthRegen = 0.000000
-			m_flMaxHealthRegenPercent = 0.010000
-			m_strSmallIconCssClass = "health_regen_pickup"
-		}
-		m_iTempParticleSheetIndex = 1
-	}
-	double_jump_pickup = 
-	{
-		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
-		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
-		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
-		m_hModel = resource_name:"models/null.vmdl"
-		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
-		m_flPickupExpirationDuration = 300.000000
-		m_flParticleRadius = 1.500000
-		m_bShowOnMinimap = true
-		m_sNameLocString = ""
-		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
-		_base = "citadel_breakable_prop_pickup_base"
-		m_sModifer = subclass:
-		{
-			_class = "modifier_breakable_prop_double_jump"
-			_my_subclass_name = "double_jump"
-			m_flDuration = 180.000000
-			m_AirJumpVerticalSpeedPercent = 75.000000
-			m_AirJumps = 0
-			m_eDebuffType = "MODIFIER_DEBUFF_NO"
-			m_flZiplineSpeedBoost = 30.000000
-		}
-		m_Color = 
-		[
-			255,
-			140,
-			0,
-		]
-		m_sDefaultMaterialGroupName = "orange"
-		m_iTempParticleSheetIndex = 1
-	}
-	extra_stamina_pickup = 
-	{
-		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
-		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
-		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
-		m_hModel = resource_name:"models/null.vmdl"
-		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
-		m_flPickupExpirationDuration = 300.000000
-		m_flParticleRadius = 1.500000
-		m_bShowOnMinimap = true
-		m_sNameLocString = ""
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
-		_base = "citadel_breakable_prop_pickup_base"
-		m_sModifer = subclass:
-		{
-			_class = "modifier_breakable_prop_extra_stamina"
-			_my_subclass_name = "extra_stamina"
-			m_nExtraStamina = 1
-			m_flDuration = 120.000000
-			m_eDebuffType = "MODIFIER_DEBUFF_NO"
-			m_strSmallIconCssClass = "extra_stamina_pickup"
-		}
-		m_Color = 
-		[
-			255,
-			165,
-			0,
-		]
-		m_sDefaultMaterialGroupName = "orange"
-		m_iTempParticleSheetIndex = 2
-	}
-	zipline_speed_pickup = 
-	{
-		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
-		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
-		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
-		m_hModel = resource_name:"models/null.vmdl"
-		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
-		m_flPickupExpirationDuration = 300.000000
-		m_flParticleRadius = 1.500000
-		m_bShowOnMinimap = true
-		m_sNameLocString = ""
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
-		_base = "citadel_breakable_prop_pickup_base"
-		m_sModifer = subclass:
-		{
-			_class = "modifier_breakable_prop_zipline_speed"
-			_my_subclass_name = "zipline_speed"
-			m_flDuration = 240.000000
-			m_eDebuffType = "MODIFIER_DEBUFF_NO"
-			m_flZiplineSpeedBoost = 30.000000
-			m_strSmallIconCssClass = "zipline_speed_pickup"
-		}
-		m_Color = 
-		[
-			236,
-			236,
-			236,
-		]
-		m_sDefaultMaterialGroupName = "white"
-		m_iTempParticleSheetIndex = 1
-	}
-	cooldown_reduction_pickup = 
-	{
-		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
-		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
-		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
-		m_hModel = resource_name:"models/null.vmdl"
-		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
-		m_flPickupExpirationDuration = 300.000000
-		m_flParticleRadius = 1.500000
-		m_bShowOnMinimap = true
-		m_sNameLocString = ""
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
-		_base = "citadel_breakable_prop_pickup_base"
-		m_sModifer = subclass:
-		{
-			_class = "modifier_breakable_prop_cooldown_reduction"
-			m_flDuration = 120.000000
-			m_eDebuffType = "MODIFIER_DEBUFF_NO"
-			m_flCooldownReduction = 20.000000
-			_my_subclass_name = "cooldown_reduction"
-			m_strSmallIconCssClass = "cooldown_reduction_pickup"
-		}
-		m_Color = 
-		[
-			0,
-			0,
 			255,
 		]
-		m_sDefaultMaterialGroupName = "blue"
-		m_iTempParticleSheetIndex = 0
-	}
-	clip_size_pickup = 
-	{
-		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
-		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
-		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
-		m_hModel = resource_name:"models/null.vmdl"
-		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
-		m_flPickupExpirationDuration = 300.000000
-		m_flParticleRadius = 1.500000
-		m_bShowOnMinimap = true
-		m_sNameLocString = ""
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
-		_base = "citadel_breakable_prop_pickup_base"
-		m_sModifer = subclass:
-		{
-			_class = "modifier_breakable_prop_clip_size_pickup"
-			_my_subclass_name = "clip_size"
-			m_flClipSize = 65.000000
-			m_nClipCount = 3
-			m_eDebuffType = "MODIFIER_DEBUFF_NO"
-			m_flDuration = 120.000000
-			m_strSmallIconCssClass = "clip_size_pickup"
-			m_flFireRate = 0.000000
-		}
-		m_Color = 
-		[
-			128,
-			0,
-			128,
-		]
-		m_sDefaultMaterialGroupName = "purple"
-		m_iTempParticleSheetIndex = 5
 	}
 	permanent_pickup_base = 
 	{
@@ -1784,6 +1074,7 @@
 		m_bShowOnMinimap = false
 		m_sNameLocString = ""
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
 		_base = "citadel_breakable_prop_pickup_base"
 		_not_pickable = 2
 		m_bIsPermanentPickup = true
@@ -1801,6 +1092,7 @@
 		m_bShowOnMinimap = false
 		m_sNameLocString = "spirit_permanent_pickup_label"
 		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
+		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
 		m_sModifer = subclass:
@@ -1813,6 +1105,44 @@
 				{
 					m_eModifierValue = "MODIFIER_VALUE_TECH_POWER"
 					m_value = 2.000000
+				},
+			]
+			m_strHudMessageText = "#spirit_permanent_pickup_label"
+		}
+		m_sDefaultMaterialGroupName = "purple"
+		m_Color = 
+		[
+			88,
+			20,
+			180,
+		]
+	}
+	spirit_permanent_pickup_lv2 = 
+	{
+		_class = "citadel_breakable_prop_modifier_pickup"
+		m_flPickupRadius = 70.000000
+		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
+		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
+		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
+		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
+		m_flPickupExpirationDuration = 30.000000
+		m_flParticleRadius = 1.500000
+		m_bShowOnMinimap = false
+		m_sNameLocString = "spirit_permanent_pickup_label_lv2"
+		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
+		m_nNameOffset = 60
+		_base = "spirit_permanent_pickup"
+		m_bIsPermanentPickup = true
+		m_sModifer = subclass:
+		{
+			_class = "modifier_permanent_pickup"
+			_my_subclass_name = "modifier_permanent_pickup"
+			m_vecScriptValues = 
+			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_TECH_POWER"
+					m_value = 3.000000
 				},
 			]
 			m_strHudMessageText = "#spirit_permanent_pickup_label"
@@ -1838,6 +1168,7 @@
 		m_bShowOnMinimap = false
 		m_sNameLocString = "firerate_permanent_pickup_label"
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
 		m_sModifer = subclass:
@@ -1850,6 +1181,45 @@
 				{
 					m_eModifierValue = "MODIFIER_VALUE_FIRE_RATE"
 					m_value = 1.500000
+				},
+			]
+			m_strHudMessageText = "#firerate_permanent_pickup_label"
+			m_strSmallIconCssClass = "fireRate"
+		}
+		m_sDefaultMaterialGroupName = "red"
+		m_Color = 
+		[
+			200,
+			0,
+			0,
+		]
+	}
+	firerate_permanent_pickup_lv2 = 
+	{
+		_class = "citadel_breakable_prop_modifier_pickup"
+		m_flPickupRadius = 70.000000
+		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
+		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
+		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
+		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
+		m_flPickupExpirationDuration = 30.000000
+		m_flParticleRadius = 1.500000
+		m_bShowOnMinimap = false
+		m_sNameLocString = "firerate_permanent_pickup_label_lv2"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
+		_base = "firerate_permanent_pickup"
+		m_bIsPermanentPickup = true
+		m_sModifer = subclass:
+		{
+			_class = "modifier_permanent_pickup"
+			_my_subclass_name = "modifier_permanent_pickup"
+			m_vecScriptValues = 
+			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_FIRE_RATE"
+					m_value = 2.000000
 				},
 			]
 			m_strHudMessageText = "#firerate_permanent_pickup_label"
@@ -1876,6 +1246,7 @@
 		m_bShowOnMinimap = false
 		m_sNameLocString = "ammo_permanent_pickup_label"
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
 		m_sModifer = subclass:
@@ -1888,6 +1259,45 @@
 				{
 					m_eModifierValue = "MODIFIER_VALUE_AMMO_CLIP_SIZE_PERCENT"
 					m_value = 3
+				},
+			]
+			m_strHudMessageText = "#ammo_permanent_pickup_label"
+			m_strSmallIconCssClass = "ammoIncrease"
+		}
+		m_sDefaultMaterialGroupName = "orange"
+		m_Color = 
+		[
+			255,
+			165,
+			0,
+		]
+	}
+	ammo_permanent_pickup_lv2 = 
+	{
+		_class = "citadel_breakable_prop_modifier_pickup"
+		m_flPickupRadius = 70.000000
+		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
+		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
+		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
+		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
+		m_flPickupExpirationDuration = 30.000000
+		m_flParticleRadius = 1.500000
+		m_bShowOnMinimap = false
+		m_sNameLocString = "ammo_permanent_pickup_label_lv2"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
+		_base = "ammo_permanent_pickup"
+		m_bIsPermanentPickup = true
+		m_sModifer = subclass:
+		{
+			_class = "modifier_permanent_pickup"
+			_my_subclass_name = "modifier_permanent_pickup"
+			m_vecScriptValues = 
+			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_AMMO_CLIP_SIZE_PERCENT"
+					m_value = 5
 				},
 			]
 			m_strHudMessageText = "#ammo_permanent_pickup_label"
@@ -1914,6 +1324,7 @@
 		m_bShowOnMinimap = false
 		m_sNameLocString = "hp_permanent_pickup_label"
 		m_sPickupSound = soundevent:"Player.Heal.Small"
+		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
 		m_sModifer = subclass:
@@ -1926,6 +1337,44 @@
 				{
 					m_eModifierValue = "MODIFIER_VALUE_HEALTH_MAX"
 					m_value = 15
+				},
+			]
+			m_strHudMessageText = "#hp_permanent_pickup_label"
+		}
+		m_sDefaultMaterialGroupName = "green"
+		m_Color = 
+		[
+			50,
+			205,
+			50,
+		]
+	}
+	hp_permanent_pickup_lv2 = 
+	{
+		_class = "citadel_breakable_prop_modifier_pickup"
+		m_flPickupRadius = 70.000000
+		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
+		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
+		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
+		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
+		m_flPickupExpirationDuration = 30.000000
+		m_flParticleRadius = 1.500000
+		m_bShowOnMinimap = false
+		m_sNameLocString = "hp_permanent_pickup_label_lv2"
+		m_sPickupSound = soundevent:"Player.Heal.Small"
+		m_nNameOffset = 60
+		_base = "hp_permanent_pickup"
+		m_bIsPermanentPickup = true
+		m_sModifer = subclass:
+		{
+			_class = "modifier_permanent_pickup"
+			_my_subclass_name = "modifier_permanent_pickup"
+			m_vecScriptValues = 
+			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_HEALTH_MAX"
+					m_value = 20
 				},
 			]
 			m_strHudMessageText = "#hp_permanent_pickup_label"
@@ -1951,6 +1400,7 @@
 		m_bShowOnMinimap = false
 		m_sNameLocString = "cd_permanent_pickup_label"
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
 		m_sModifer = subclass:
@@ -1962,7 +1412,46 @@
 				
 				{
 					m_eModifierValue = "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE"
-					m_value = 0.500000
+					m_value = 0.750000
+				},
+			]
+			m_strHudMessageText = "#cd_permanent_pickup_label"
+			m_strSmallIconCssClass = "cooldownReduction"
+		}
+		m_sDefaultMaterialGroupName = "blue"
+		m_Color = 
+		[
+			0,
+			0,
+			200,
+		]
+	}
+	cd_permanent_pickup_lv2 = 
+	{
+		_class = "citadel_breakable_prop_modifier_pickup"
+		m_flPickupRadius = 70.000000
+		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
+		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
+		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
+		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
+		m_flPickupExpirationDuration = 30.000000
+		m_flParticleRadius = 1.500000
+		m_bShowOnMinimap = false
+		m_sNameLocString = "cd_permanent_pickup_label_lv2"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
+		_base = "cd_permanent_pickup"
+		m_bIsPermanentPickup = true
+		m_sModifer = subclass:
+		{
+			_class = "modifier_permanent_pickup"
+			_my_subclass_name = "modifier_permanent_pickup"
+			m_vecScriptValues = 
+			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE"
+					m_value = 1.000000
 				},
 			]
 			m_strHudMessageText = "#cd_permanent_pickup_label"
@@ -1989,6 +1478,7 @@
 		m_bShowOnMinimap = false
 		m_sNameLocString = "wp_permanent_pickup_label"
 		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
 		m_sModifer = subclass:
@@ -2001,6 +1491,44 @@
 				{
 					m_eModifierValue = "MODIFIER_VALUE_BASEATTACK_DAMAGE_PERCENT"
 					m_value = 2
+				},
+			]
+			m_strHudMessageText = "#wp_permanent_pickup_label"
+		}
+		m_sDefaultMaterialGroupName = "orange"
+		m_Color = 
+		[
+			200,
+			85,
+			0,
+		]
+	}
+	wp_permanent_pickup_lv2 = 
+	{
+		_class = "citadel_breakable_prop_modifier_pickup"
+		m_flPickupRadius = 70.000000
+		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
+		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
+		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
+		m_sSpawnSound = soundevent:"Powerup.Spawn.Generic"
+		m_flPickupExpirationDuration = 30.000000
+		m_flParticleRadius = 1.500000
+		m_bShowOnMinimap = false
+		m_sNameLocString = "wp_permanent_pickup_label_lv2"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_nNameOffset = 60
+		_base = "wp_permanent_pickup"
+		m_bIsPermanentPickup = true
+		m_sModifer = subclass:
+		{
+			_class = "modifier_permanent_pickup"
+			_my_subclass_name = "modifier_permanent_pickup"
+			m_vecScriptValues = 
+			[
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_BASEATTACK_DAMAGE_PERCENT"
+					m_value = 3
 				},
 			]
 			m_strHudMessageText = "#wp_permanent_pickup_label"

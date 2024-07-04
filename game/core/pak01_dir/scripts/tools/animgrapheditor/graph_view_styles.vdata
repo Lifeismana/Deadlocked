@@ -55,10 +55,30 @@
 		LayoutChildren = "VBOX"
 		HAlign = "STRETCH"
 	}
-	DebugInfoBlock = 
+	PoseDebugInfoBlock = 
 	{
+		MinSizeX = 125
 		LayoutChildren = "VBOX"
 		HAlign = "STRETCH"
+	}
+	ValueDebugInfoBlock = 
+	{
+		MinSizeX = 60
+		LayoutChildren = "VBOX"
+		HAlign = "STRETCH"
+	}
+	BlendSpaceDebug1D = 
+	{
+		HAlign = "STRETCH"
+		FixedSizeY = 40
+		Background_Color = "#232323"
+	}
+	BlendSpaceDebug2D = 
+	{
+		HAlign = "CENTER"
+		FixedSizeX = 200
+		FixedSizeY = 200
+		Background_Color = "#232323"
 	}
 	PinRegion = 
 	{

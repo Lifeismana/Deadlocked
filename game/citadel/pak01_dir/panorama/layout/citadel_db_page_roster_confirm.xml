@@ -12,12 +12,12 @@
 		<Panel id="HeroRowContainer">
 			<Panel class="rosterCounts">
 				<Panel class="rosterCountsLine">
-					<Label text="Heroes in roster: " />
+					<Label text="#Citadel_Roster_HeroCount" />
 					<Label class="rosterCountsValue" text="{i:roster_count}" />
 				</Panel>
 				<Panel class="rosterCountsLine">
-					<Label class="singular" text="Preferred hero: " />
-					<Label class="multiple" text="Preferred heroes: " />
+					<Label class="singular" text="#Citadel_Roster_PreferredCount_Singular" />
+					<Label class="multiple" text="#Citadel_Roster_PreferredCount" />
 					<Label class="rosterCountsValue rosterCountsHeroValue" text="{s:preferred_hero}" />
 				</Panel>
 			</Panel>

@@ -146,9 +146,13 @@
 	Wraith.RapidFire.Cast = 
 	{
 		base = "Base.Ability"
-		volume = 2.000000
-		vsnd_files = "sounds/abilities/wraith/fullauto_cast.vsnd"
-		vsnd_duration = 2.176485
+		volume = 5.000000
+		spread_min = 0.000000
+		spread_max_value = 0.746082
+		spread_max = 500.000000
+		spread_min_value = 0.000000
+		pitch = 0.950000
+		vsnd_files = "sounds/abilities/wraith/wraith_psychicpulse_cast.vsnd"
 	}
 	Wraith.MovementFoley = 
 	{
@@ -404,16 +408,21 @@
 	{
 		base = "Base.Ability"
 		pitch = 1.000000
-		volume = 0.000000
+		volume = 7.000000
 		delay = 0.020000
 		spread_min = 0.000000
-		spread_max_value = 1.000000
+		spread_max_value = 0.000000
 		spread_max = 250.000000
 		spread_min_value = 0.000000
 		hrtf_on = 0.000000
 		hrtf_mix = 1.000000
-		vsnd_files = "sounds/abilities/wraith/royalflush_cast_start.vsnd"
-		vsnd_duration = 2.149569
+		vsnd_files = 
+		[
+			"sounds/abilities/wraith/wraith_cardtrick_summon_01.vsnd",
+			"sounds/abilities/wraith/wraith_cardtrick_summon_02.vsnd",
+			"sounds/abilities/wraith/wraith_cardtrick_summon_03.vsnd",
+			"sounds/abilities/wraith/wraith_cardtrick_summon_04.vsnd",
+		]
 	}
 	Wraith.ProjectMind.Select = 
 	{
@@ -575,5 +584,148 @@
 		soundevent_02 = "Wraith.Footstep.Foley"
 		use_01 = 1.000000
 		use_02 = 1.000000
+	}
+	Wraith.PsychicDagger.Proj_Lp = 
+	{
+		base = "Base.Ability"
+		pitch = 0.900000
+		volume = 8.000000
+		delay = 0.050000
+		volume_falloff_curve_amount = 1.000000
+		volume_falloff_max_player = 3500.000000
+		spread_min = 0.000000
+		spread_max_value = 0.000000
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		volume_falloff_max_team = 3500.000000
+		volume_falloff_max_opponent = 3500.000000
+		vsnd_files = "sounds/abilities/wraith/royalflush_proj.vsnd"
+	}
+	Wraith.PsychicDagger.Impact = 
+	{
+		base = "Base.Ability"
+		pitch = 1.000000
+		volume = 4.000000
+		delay = 0.020000
+		spread_min = 0.000000
+		spread_max_value = 0.000000
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		hrtf_on = 0.000000
+		hrtf_mix = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		vsnd_files = "sounds/abilities/wraith/wraith_cardtrick_impact_hit.vsnd"
+	}
+	Wraith.PsychicDagger.Impact_Miss = 
+	{
+		base = "Base.Ability"
+		pitch = 1.000000
+		volume = 4.000000
+		delay = 0.020000
+		spread_min = 0.000000
+		spread_max_value = 0.000000
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		hrtf_on = 0.000000
+		hrtf_mix = 1.000000
+		pitch_rand_min = -0.200000
+		pitch_rand_max = 0.100000
+		vsnd_files = "sounds/abilities/wraith/wraith_cardtrick_impact_miss.vsnd"
+	}
+	Wraith.PsychicDagger.Start_01 = 
+	{
+		base = "Base.Ability"
+		pitch = 1.000000
+		volume = 7.000000
+		delay = 0.020000
+		spread_min = 0.000000
+		spread_max_value = 0.000000
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		hrtf_on = 0.000000
+		hrtf_mix = 1.000000
+		vsnd_files = "sounds/abilities/wraith/wraith_cardtrick_summon_01.vsnd"
+	}
+	Wraith.PsychicDagger.Start_02 = 
+	{
+		base = "Base.Ability"
+		pitch = 1.000000
+		volume = 7.000000
+		delay = 0.020000
+		spread_min = 0.000000
+		spread_max_value = 0.000000
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		hrtf_on = 0.000000
+		hrtf_mix = 1.000000
+		vsnd_files = "sounds/abilities/wraith/wraith_cardtrick_summon_02.vsnd"
+	}
+	Wraith.PsychicDagger.Start_03 = 
+	{
+		base = "Base.Ability"
+		pitch = 1.000000
+		volume = 7.000000
+		delay = 0.020000
+		spread_min = 0.000000
+		spread_max_value = 0.000000
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		hrtf_on = 0.000000
+		hrtf_mix = 1.000000
+		vsnd_files = "sounds/abilities/wraith/wraith_cardtrick_summon_03.vsnd"
+	}
+	Wraith.PsychicDagger.Start_04 = 
+	{
+		base = "Base.Ability"
+		pitch = 1.000000
+		volume = 7.000000
+		delay = 0.020000
+		spread_min = 0.000000
+		spread_max_value = 0.000000
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		hrtf_on = 0.000000
+		hrtf_mix = 1.000000
+		vsnd_files = "sounds/abilities/wraith/wraith_cardtrick_summon_04.vsnd"
+	}
+	Wraith.PsychicDagger.Proj_Homing_Lp = 
+	{
+		base = "Base.Ability"
+		pitch = 0.900000
+		volume = 0.000000
+		delay = 0.050000
+		volume_falloff_curve_amount = 1.000000
+		volume_falloff_max_player = 3500.000000
+		spread_min = 0.000000
+		spread_max_value = 0.000000
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		volume_falloff_max_team = 3500.000000
+		volume_falloff_max_opponent = 3500.000000
+		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/proj_lp.vsnd"
+		vsnd_duration = 1.750750
+	}
+	Wraith.PsychicPulse.Hit_01 = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		spread_min = 0.000000
+		spread_max_value = 0.874608
+		spread_max = 500.000000
+		spread_min_value = 0.000000
+		pitch = 0.900000
+		delay = 0.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		delay_rand_min = 0.150000
+		delay_rand_max = 0.300000
+		vsnd_files = 
+		[
+			"sounds/abilities/wraith/wraith_psychicpulse_detected_01.vsnd",
+			"sounds/abilities/wraith/wraith_psychicpulse_detected_02.vsnd",
+			"sounds/abilities/wraith/wraith_psychicpulse_detected_03.vsnd",
+			"sounds/abilities/wraith/wraith_psychicpulse_detected_04.vsnd",
+		]
 	}
 }

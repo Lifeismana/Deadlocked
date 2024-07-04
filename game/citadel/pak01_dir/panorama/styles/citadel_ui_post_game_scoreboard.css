@@ -238,9 +238,10 @@ CitadelPostGameScoreboard.Team1Victory.localPlayerIsTeam2
 
 #HeroImage
 {
-	height: 228px;
+	height: 128px;
 	width: 111px;
 	horizontal-align: center;
+	vertical-align: bottom;
 	border-bottom: 5px solid offWhite&90;
 }
 
@@ -262,10 +263,9 @@ CitadelPostGameScoreboard.Team1Victory.localPlayerIsTeam2
 
 .PlayersContainer
 {
-	margin-top: 200px;
+	margin-top: 270px;
 	flow-children: right;
 	horizontal-align: center;
-	animation-name: players_move_in;
 	animation-duration: 0.6s;
 	animation-iteration-count: 1;
 	animation-delay: 0.2s;

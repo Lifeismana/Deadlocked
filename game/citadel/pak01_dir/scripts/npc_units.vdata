@@ -313,6 +313,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -372,7 +373,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -557,6 +559,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -616,7 +619,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:""
-		m_sPlayerLastHitSound = resource_name:""
+		m_strLastHitSound = resource_name:""
+		m_bPlayLastHitSound = false
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -806,6 +810,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -865,7 +870,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -1050,6 +1056,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -1109,7 +1116,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -1294,6 +1302,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -1353,7 +1362,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -1544,6 +1554,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -1603,7 +1614,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -1794,6 +1806,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 55.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -1853,7 +1866,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -1877,7 +1891,6 @@
 		m_flPlayerDPS = 42.000000
 		m_flTrooperDPS = 66.500000
 		m_flModelScale = 1.100000
-		m_flTrooperDamageResistPct = 55.000000
 	}
 	super_trooper_medic = 
 	{
@@ -2040,6 +2053,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 55.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -2099,7 +2113,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -2129,7 +2144,6 @@
 		}
 		m_MedicHealActiveParticle = resource_name:"particles/trooper/trooper_medic_chargeup.vpcf"
 		m_flModelScale = 1.100000
-		m_flTrooperDamageResistPct = 55.000000
 	}
 	super_trooper_melee = 
 	{
@@ -2292,6 +2306,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 55.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -2351,7 +2366,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/npc/npc_melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -2376,7 +2392,6 @@
 		m_flTrooperDPS = 66.500000
 		m_TrooperType = "TROOPER_MELEE"
 		m_flModelScale = 1.100000
-		m_flTrooperDamageResistPct = 55.000000
 	}
 	trooper_melee = 
 	{
@@ -2539,6 +2554,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -2598,7 +2614,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/npc/npc_melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -2784,6 +2801,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -2843,7 +2861,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/npc/npc_melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -3029,6 +3048,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 0.000000
 		m_flT2BossDamageResistPct = 0.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -3088,7 +3108,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -3272,6 +3293,7 @@
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -3331,7 +3353,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -3532,6 +3555,7 @@
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -3591,7 +3615,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -3643,6 +3668,40 @@
 			m_strActiveEffectConfigName = "tier1"
 			m_flHealthPerSecondRegen = 65.000000
 			m_flBackdoorProtectionDamageMitigationFromPlayers = 65.000000
+		}
+		m_BackdoorBulletResistModifier = subclass:
+		{
+			_class = "modifier_citadel_objective_bullet_resist"
+			_my_subclass_name = "modifier_citadel_objective_bullet_resist"
+			m_BulletResist = 40
+			m_BulletResistReductionPerHero = 20
+		}
+		m_ObjectiveRegen = subclass:
+		{
+			_class = "modifier_citadel_objective_regen"
+			_my_subclass_name = "modifier_citadel_objective_regen"
+			m_flOutOfCombatHealthRegen = 130
+			m_flOutOfCombatRegenDelay = 60
+		}
+	}
+	destroyable_building = 
+	{
+		_class = "destroyable_building"
+		m_iMaxHealthFinal = 13000
+		m_iMaxHealthGenerator = 4000
+		m_ObjectiveRegen = subclass:
+		{
+			_class = "modifier_citadel_objective_regen"
+			_my_subclass_name = "modifier_citadel_objective_regen"
+			m_flOutOfCombatHealthRegen = 160
+			m_flOutOfCombatRegenDelay = 60
+		}
+		m_BackdoorBulletResistModifier = subclass:
+		{
+			_class = "modifier_citadel_objective_bullet_resist"
+			_my_subclass_name = "modifier_citadel_objective_bullet_resist"
+			m_BulletResist = 40
+			m_BulletResistReductionPerHero = 20
 		}
 	}
 	alt_npc_boss_tier1 = 
@@ -3804,6 +3863,7 @@
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 25.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -3863,7 +3923,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -4306,6 +4367,7 @@
 		m_flShieldReactivateDelay = 2.000000
 		m_flGoldReward = 110
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
+		m_strLastHitSound = soundevent:"LastHit.Default"
 	}
 	neutral_trooper_weak = 
 	{
@@ -4470,6 +4532,7 @@
 		m_flShieldReactivateDelay = 2.000000
 		m_flGoldReward = 44
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_sModelName = resource_name:"models/npc/trooper/trooper_mid_boss.vmdl"
 		m_flModelScale = 0.280000
 		m_nMaxHealth = 200
@@ -4671,6 +4734,7 @@
 		m_flShieldReactivateDelay = 2.000000
 		m_flGoldReward = 88
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_sModelName = resource_name:"models/npc/trooper/trooper_mid_boss.vmdl"
 		m_flModelScale = 0.375000
 		m_nMaxHealth = 500
@@ -4860,6 +4924,7 @@
 		m_flShieldReactivateDelay = 2.000000
 		m_flGoldReward = 330
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_sModelName = resource_name:"models/props_gameplay/neutral_vault/neutral_vault.vmdl"
 		m_nMaxHealth = 500
 		m_bDamagedByBullets = false
@@ -5040,6 +5105,7 @@
 		m_flShieldReactivateDelay = 2.000000
 		m_flGoldReward = 330
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_sModelName = resource_name:"models/props_gameplay/sinners_sacrifice_vault/sinners_sacrifice.vmdl"
 		m_nMaxHealth = 500
 		m_bDamagedByBullets = false
@@ -5230,6 +5296,7 @@
 		m_flShieldReactivateDelay = 2.000000
 		m_flGoldReward = 44
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_sModelName = resource_name:"models/npc/trash_bug/trash_bug_drone.vmdl"
 		m_flModelScale = 0.280000
 		m_nMaxHealth = 200
@@ -5432,6 +5499,7 @@
 		m_flShieldReactivateDelay = 2.000000
 		m_flGoldReward = 220
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_sModelName = resource_name:"models/npc/gargoyle/neutral_gargoyle.vmdl"
 		m_flModelScale = 0.525000
 		m_nMaxHealth = 1760
@@ -5641,6 +5709,7 @@
 		m_flShieldReactivateDelay = 2.000000
 		m_flGoldReward = 220
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_sModelName = resource_name:"models/npc/trooper/trooper_mid_boss.vmdl"
 		m_flModelScale = 0.525000
 		m_nMaxHealth = 1760
@@ -5688,6 +5757,7 @@
 		m_flSightRangeNPCs = 1600.000000
 		m_flPlayerInitialSightRange = 1200.000000
 		m_hFootstepSounds = "citadel"
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_navHull = 2
 		m_mapBoundAbilities = 
 		{
@@ -5701,6 +5771,7 @@
 		m_StompImpactEffect = resource_name:"particles/npc/tier2boss/tier2boss_stomp.vpcf"
 		m_flStompDamage = 350.000000
 		m_flStunDuration = 2.000000
+		m_flMeleeAttemptRange = 600
 		m_flStompImpactRadius = 787.402000
 		m_flStompImpactHeight = 78.740200
 		m_flStompTossUpMagnitude = 1.250000
@@ -5788,6 +5859,7 @@
 		m_flSightRangeNPCs = 1600.000000
 		m_flPlayerInitialSightRange = 1200.000000
 		m_hFootstepSounds = "citadel"
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_navHull = 2
 		m_mapBoundAbilities = 
 		{
@@ -5801,6 +5873,7 @@
 		m_StompImpactEffect = resource_name:"particles/npc/tier2boss/tier2boss_stomp.vpcf"
 		m_flStompDamage = 350.000000
 		m_flStunDuration = 2.000000
+		m_flMeleeAttemptRange = 600
 		m_flStompImpactRadius = 787.402000
 		m_flStompImpactHeight = 78.740200
 		m_flStompTossUpMagnitude = 1.250000
@@ -5889,6 +5962,7 @@
 		m_flSightRangeNPCs = 1600.000000
 		m_flPlayerInitialSightRange = 1200.000000
 		m_hFootstepSounds = "citadel"
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_navHull = 2
 		m_mapBoundAbilities = 
 		{
@@ -5902,6 +5976,7 @@
 		m_StompImpactEffect = resource_name:"particles/npc/tier2boss/tier2boss_stomp.vpcf"
 		m_flStompDamage = 350.000000
 		m_flStunDuration = 2.000000
+		m_flMeleeAttemptRange = 600
 		m_flStompImpactRadius = 787.402000
 		m_flStompImpactHeight = 78.740200
 		m_flStompTossUpMagnitude = 1.250000
@@ -5990,6 +6065,7 @@
 		m_flSightRangeNPCs = 1600.000000
 		m_flPlayerInitialSightRange = 1200.000000
 		m_hFootstepSounds = "citadel"
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_navHull = 2
 		m_mapBoundAbilities = 
 		{
@@ -6003,6 +6079,7 @@
 		m_StompImpactEffect = resource_name:"particles/npc/tier2boss/tier2boss_stomp.vpcf"
 		m_flStompDamage = 350.000000
 		m_flStunDuration = 2.000000
+		m_flMeleeAttemptRange = 600
 		m_flStompImpactRadius = 787.402000
 		m_flStompImpactHeight = 78.740200
 		m_flStompTossUpMagnitude = 1.250000
@@ -6673,6 +6750,7 @@
 		m_flShieldReactivateDelay = 2.000000
 		m_flGoldReward = 88
 		m_flGoldRewardBonusPercentPerMinute = 1.200000
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_sModelName = resource_name:"models/npc/box_ghost/box_ghost.vmdl"
 		m_flModelScale = 0.375000
 		m_nMaxHealth = 500
@@ -6939,6 +7017,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 55.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -6998,7 +7077,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -7028,7 +7108,6 @@
 		}
 		m_MedicHealActiveParticle = resource_name:"particles/trooper/trooper_medic_chargeup.vpcf"
 		m_flModelScale = 1.100000
-		m_flTrooperDamageResistPct = 55.000000
 	}
 	alt_super_trooper_melee = 
 	{
@@ -7191,6 +7270,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 55.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -7250,7 +7330,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/npc/npc_melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -7275,7 +7356,6 @@
 		m_flTrooperDPS = 66.500000
 		m_TrooperType = "TROOPER_MELEE"
 		m_flModelScale = 1.100000
-		m_flTrooperDamageResistPct = 55.000000
 	}
 	alt_super_trooper_normal = 
 	{
@@ -7438,6 +7518,7 @@
 		m_flSightRangePlayers = 700.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_hFootstepSounds = "trooper"
+		m_flTrooperDamageResistPct = 55.000000
 		m_flT1BossDamageResistPct = 35.000000
 		m_flT2BossDamageResistPct = 20.000000
 		m_flShieldDamageResistPct = 80.000000
@@ -7497,7 +7578,8 @@
 		m_MeleeActivateParticle = resource_name:"particles/abilities/melee/melee_activate.vpcf"
 		m_MeleeAnimName = "b_melee"
 		m_LastHitParticle = resource_name:"particles/generic/last_hit.vpcf"
-		m_sPlayerLastHitSound = soundevent:"Robo.KilledLastHit"
+		m_strLastHitSound = soundevent:"LastHit.Default"
+		m_bPlayLastHitSound = true
 		m_NearDeathModifier = subclass:
 		{
 			_class = "modifier_near_death_fx"
@@ -7521,7 +7603,6 @@
 		m_flPlayerDPS = 42.000000
 		m_flTrooperDPS = 66.500000
 		m_flModelScale = 1.100000
-		m_flTrooperDamageResistPct = 55.000000
 	}
 	citadel_item_pickup_rejuv = 
 	{

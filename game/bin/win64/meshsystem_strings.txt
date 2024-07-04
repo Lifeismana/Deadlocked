@@ -21,6 +21,7 @@
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  %41g
+ %T.A
  'L>[
  (%s%s)
  9D: 
@@ -514,7 +515,7 @@ $+T$xL
 220323000000Z
 220801000000Z
 230714000000Z
-240627200551Z0/
+240704151300Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -608,18 +609,21 @@ $+T$xL
 =	V_powf
 =%H5<mN
 =3vmdlkeys4
+=73q]
 ==MQ?
+=MIsBoxedIntegerType
 =SHX?
 =imb;D
-=m_Value
 =rIQU
 >%H5<mN
 >0<0:
 >Mp$d
 >YA1I
+>b`T>
 >c;j1
 >fA9~
 >jtm}S
+>~73]
 ?	V_qsort_s
 ?7zQ6$
 ?:kP<
@@ -874,7 +878,6 @@ A_A^]
 A_A^^
 A_A^_
 A_A^_^]
-A__[]
 A__^][
 ActivityList_IndexForName
 ActivityList_RegisterPrivateActivity
@@ -916,7 +919,6 @@ AppPolicyGetProcessTerminationMethod
 April
 AreFileApisANSI
 AssertCast
-AssertCastNumberInternal
 AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetRenameSystem_001
@@ -1995,7 +1997,7 @@ Cannot KV3Transfer an abstract class!
 Cannot allocate abstract class
 Cannot deduce for class
 Cast of %s loses value information (returning %s)
-Cast of %s loses value information (returning %s) on %s:%d
+Cast of %s loses value information (returning %s) in %s on %s:%u
 CharacterSetBuild
 Class does not allow allocation from its schema binding
 ClientToolsInfo_001
@@ -2501,6 +2503,7 @@ GetTable() != nullptr
 GetTempPath2W
 GetThreadLocalStackAllocator
 GetTypeInfo( nType ).m_nSizeInBytes <= sizeof( s_pUndefinedValue )
+GetValueShortArray
 Gl$(L
 Gl$XE
 Gt$(H
@@ -2514,16 +2517,14 @@ H+\$H
 H-^Eu
 H9(tO
 H9+t	H
-H9-	=
-H9-">
 H9-/V
+H9-0=
 H9-6P
-H9-@=
 H9-FU
 H9-dT
 H93t	H
 H95G$
-H95g#
+H95W#
 H97u+A
 H98t2
 H9D$pt
@@ -2810,6 +2811,7 @@ K9l> t
 KERNEL32.dll
 KV3 instances cannot be set to an unspecified specific type
 KV3 load transfer failed for mesh '%s': %s
+KV3Helper_CheckValueNumericCast
 KV3TransferSchema_AllocateClassInstance
 KV3TransferSchema_ClassName::<lambda_1>::operator ()
 K`A;F
@@ -2911,11 +2913,17 @@ L8,HcM
 L8DE3
 L9!t~
 L9#u/H
-L95>&
-L95Y&
-L95w%
-L9=^7
-L9=y7
+L9-y*
+L95	%
+L95'$
+L95N}
+L95^_
+L95i}
+L95n{
+L95w~
+L95y_
+L9=)6
+L9=P5
 L9?t	H
 L9d$ t
 L9d$(t
@@ -3002,7 +3010,6 @@ MESH_DRAW_FLAGS_USE_UNCOMPRESSED_PER_VERTEX_LIGHTING
 MESH_DRAW_INPUT_LAYOUT_IS_NOT_MATCHED_TO_MATERIAL
 MGD;}
 MGetKV3ClassDefaults
-MIsBoxedIntegerType
 MKV3TransferName
 MM/dd/yy
 MODEL_BONE_FLEX_INVALID
@@ -3746,7 +3753,6 @@ XA__[]
 Xt7HH
 Y	V_stricmp_fast
 Y9"SD
-YFhEZ
 YK @8op
 YL$(A
 YL$LA
@@ -4087,6 +4093,7 @@ g_pVPhysics2
 generic
 gfffG
 gfffffffH
+gr@tO
 group_data_block
 h F9d5P~.H
 hA_A^A]A\_^[]
@@ -4357,6 +4364,7 @@ m_Tris
 m_TwistLimit
 m_Twists
 m_UserFriendlyName
+m_Value
 m_VertexMapValues
 m_VertexMaps
 m_VertexPositions
@@ -4398,6 +4406,7 @@ m_bIgnoreRotation
 m_bInfluenceRootTransform
 m_bInverse
 m_bIsAttachment
+m_bIsFarFieldOnly
 m_bIsNotMatchedToMaterial
 m_bIsTwoSided
 m_bOverrideMassCenter
@@ -5026,6 +5035,7 @@ operation not supported
 operation would block
 operator
 operator "" 
+operator ()
 operator co_await
 operator<=>
 optionallycompressedtangentframe
@@ -5486,6 +5496,7 @@ z(u&A
 }PIcEHL
 }a;_$
 }k;^$
+}u"!U
 ~6fff
 ~HMcvH
 ~Nfff

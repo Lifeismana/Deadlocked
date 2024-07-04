@@ -6,6 +6,7 @@
 		<include src="s2r://panorama/styles/citadel_hud_top_bar.vcss_c" />
 	</styles>
 	<CitadelHudTopBar hittest="false">
+		<Panel id="GradientBacker" />
 		<Panel id="TeamsContainer" hittest="false">
 			<CitadelHudTopBarTeam id="TeamFriendly" team="2" />
 			<CitadelHudTopBarTeam id="TeamEnemy" team="3" />

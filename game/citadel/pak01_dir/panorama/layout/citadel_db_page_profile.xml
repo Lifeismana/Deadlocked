@@ -19,7 +19,7 @@
 	</snippets>
 	<CitadelProfilePage class="DashboardPage" oncancel="CitadelNavigateBack();">
 		<Panel id="Title">
-			<Label text="Profile" />
+			<Label text="#Citadel_Profile_Title" />
 		</Panel>
 		<Panel class="MainContents">
 			<Panel class="LeftPanel">
@@ -29,13 +29,13 @@
 						<CitadelUserName id="SelfName" />
 					</Panel>
 					<Panel class="StatsSectionLoading">
-						<Label text="Loading..." />
+						<Label text="#Citadel_Profile_Loading" />
 					</Panel>
 					<Panel id="StatsSection" />
 					<Panel class="StatsFooter">
 						<CitadelHeroImage id="FavoriteHeroImage" />
 						<Panel class="HeroRightCol">
-							<Label class="MostPlayedLabel" text="Most Played Hero" />
+							<Label class="MostPlayedLabel" text="#Citadel_Profile_MostPlayed" />
 							<Label class="MostPlayedNameLabel" text="{g:citadel_hero_name:most_played_hero_id}" />
 						</Panel>
 					</Panel>
@@ -43,10 +43,10 @@
 			</Panel>
 			<Panel class="RightPanel">
 				<Panel class="MatchHistoryTitle">
-					<Label text="Match History" />
+					<Label text="#Citadel_Profile_MatchHistory" />
 				</Panel>
 				<Panel id="MatchListingLoading">
-					<Label text="Loading..." />
+					<Label text="#Citadel_Profile_Loading" />
 				</Panel>
 				<Panel id="MatchListing" />
 				<Panel class="MatchHistoryFooter">

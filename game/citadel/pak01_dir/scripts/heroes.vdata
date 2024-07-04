@@ -434,6 +434,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -1047,6 +1048,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -1242,28 +1244,19 @@
 		m_hAmbientParticle = resource_name:"particles/abilities/inferno/inferno_hand_ambient.vpcf"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_non_player_bonus",
 			"upgrade_clip_size",
 			"upgrade_endurance",
-			"upgrade_extra_charge",
 			"upgrade_resilience",
 			"upgrade_magic_vulnerability",
 			"upgrade_quick_silver",
 			"upgrade_arcane_extension",
-			"upgrade_fleetfoot_boots",
-			"upgrade_soaring_spirit",
+			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
 			"upgrade_tech_defense_shredders",
-			"upgrade_magic_slow",
-			"upgrade_imbued_duration_extender",
 			"upgrade_chonky",
-			"upgrade_burst_fire",
-			"upgrade_mega_spirit",
+			"upgrade_toxic_bullets",
 			"upgrade_escalating_exposure",
-			"upgrade_rapid_recharge",
-			"upgrade_damage_recycler",
 			"upgrade_ricochet",
-			"upgrade_tech_overflow",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/inferno.vmap"
 		m_strTopBarVertical = panorama:"file://{images}/heroes/inferno_vertical.psd"
@@ -1705,6 +1698,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -1962,33 +1956,23 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/gigawatt.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_endurance",
-			"upgrade_clip_size",
+			"upgrade_non_player_bonus",
+			"upgrade_resilience",
 			"upgrade_magic_reach",
 			"upgrade_improved_spirit",
-			"upgrade_non_player_bonus",
-			"upgrade_extra_charge",
-			"upgrade_magic_tempo",
 			"upgrade_magic_vulnerability",
-			"upgrade_magic_storm",
-			"upgrade_long_range",
 			"upgrade_tech_armor",
 			"upgrade_health_stealing_magic",
 			"upgrade_tech_defense_shredders",
-			"upgrade_rocket_booster",
 			"upgrade_bullet_armor",
-			"upgrade_mega_spirit",
-			"upgrade_tech_range",
+			"upgrade_suppressor",
+			"upgrade_rocket_booster",
 			"upgrade_magic_slow",
-			"upgrade_improved_bullet_armor",
-			"upgrade_cooldown_reduction",
-			"upgrade_rapid_recharge",
 			"upgrade_soaring_spirit",
+			"upgrade_tech_purge",
 			"upgrade_chain_lightning",
 			"upgrade_escalating_exposure",
 			"upgrade_damage_recycler",
-			"upgrade_burst_fire",
-			"upgrade_tech_purge",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/gigawatt_vertical.psd"
 	}
@@ -2429,6 +2413,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -2629,25 +2614,22 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/hornet.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_clip_size",
 			"upgrade_endurance",
-			"upgrade_improved_stamina",
+			"upgrade_hollow_point_rounds",
+			"upgrade_headshot_booster",
 			"upgrade_extra_charge",
-			"upgrade_vampire",
 			"upgrade_long_range",
 			"upgrade_slowing_bullets",
-			"upgrade_blitz_bullets",
 			"upgrade_improved_spirit",
 			"upgrade_magic_shield",
 			"upgrade_regenerating_bullet_shield",
 			"upgrade_quick_silver",
+			"upgrade_soaring_spirit",
 			"upgrade_rapid_recharge",
-			"upgrade_bullet_resist_shredder",
 			"upgrade_chonky",
 			"upgrade_sharpshooter",
-			"upgrade_burst_fire",
-			"upgrade_glass_cannon",
 			"upgrade_critshot",
+			"upgrade_mega_spirit",
 			"upgrade_silencer",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/hornet_vertical.psd"
@@ -3088,6 +3070,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -3280,28 +3263,19 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/geist.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_clip_size",
-			"upgrade_improved_spirit",
-			"upgrade_non_player_bonus",
+			"upgrade_resilience",
+			"upgrade_magic_burst",
 			"upgrade_magic_reach",
-			"upgrade_endurance",
-			"upgrade_quick_silver",
-			"upgrade_magic_tempo",
-			"upgrade_health_stealing_magic",
+			"upgrade_headshot_booster",
+			"upgrade_medic_bullets",
 			"upgrade_tech_defense_shredders",
-			"upgrade_magic_storm",
 			"upgrade_crackshot",
 			"upgrade_bullet_armor",
+			"upgrade_healbane",
 			"upgrade_tech_armor",
-			"upgrade_burst_fire",
-			"upgrade_sharpshooter",
-			"upgrade_soaring_spirit",
-			"upgrade_cooldown_reduction",
+			"upgrade_magic_shock",
 			"upgrade_tech_purge",
-			"upgrade_mega_spirit",
-			"upgrade_tech_range",
-			"upgrade_reduce_debuff_duration",
-			"upgrade_damage_recycler",
+			"upgrade_improved_bullet_armor",
 			"upgrade_fervor",
 			"upgrade_critshot",
 		]
@@ -3744,6 +3718,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -3942,22 +3917,15 @@
 			"upgrade_close_range",
 			"upgrade_lifestrike_gauntlets",
 			"upgrade_berserker",
-			"upgrade_crackshot",
-			"upgrade_bullet_resist_shredder",
-			"upgrade_slowing_bullets",
 			"upgrade_close_quarter_combat",
 			"upgrade_cold_front",
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
 			"upgrade_chonky",
 			"upgrade_improved_bullet_armor",
-			"upgrade_tech_damage_pulse",
-			"upgrade_magic_slow",
 			"upgrade_tech_purge",
-			"upgrade_reduce_debuff_duration",
 			"upgrade_bullet_armor_reduction_aura",
 			"upgrade_fervor",
-			"upgrade_damage_recycler",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/abrams.vmap"
 		m_strTopBarVertical = panorama:"file://{images}/heroes/bull_vertical.psd"
@@ -4399,6 +4367,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -4601,24 +4570,17 @@
 		[
 			"upgrade_non_player_bonus",
 			"upgrade_clip_size",
-			"upgrade_improved_spirit",
 			"upgrade_endurance",
 			"upgrade_vampire",
 			"upgrade_slowing_bullets",
 			"upgrade_bullet_resist_shredder",
+			"upgrade_quick_silver",
 			"upgrade_magic_shield",
-			"upgrade_magic_tempo",
 			"upgrade_regenerating_bullet_shield",
-			"upgrade_magic_slow",
-			"upgrade_burst_fire",
 			"upgrade_chain_lightning",
-			"upgrade_cooldown_reduction",
-			"upgrade_soaring_spirit",
 			"upgrade_chonky",
 			"upgrade_bullet_armor_reduction_aura",
-			"upgrade_mega_spirit",
 			"upgrade_critshot",
-			"upgrade_surging_power",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/wraith_vertical.psd"
 		m_mapWIPAbilities = 
@@ -5063,6 +5025,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -5257,30 +5220,23 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/engineer_hud.psd"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_clip_size",
+			"upgrade_sprint_booster",
 			"upgrade_magic_reach",
 			"upgrade_extra_charge",
-			"upgrade_endurance",
-			"upgrade_improved_spirit",
-			"upgrade_long_range",
+			"upgrade_resilience",
 			"upgrade_magic_vulnerability",
 			"upgrade_improved_stamina",
 			"upgrade_magic_tempo",
 			"upgrade_fleetfoot_boots",
-			"upgrade_slowing_bullets",
 			"upgrade_tech_armor",
 			"upgrade_chain_lightning",
 			"upgrade_magic_shield",
 			"upgrade_rapid_recharge",
 			"upgrade_cooldown_reduction",
 			"upgrade_escalating_exposure",
-			"upgrade_soaring_spirit",
 			"upgrade_magic_slow",
-			"upgrade_tech_purge",
-			"upgrade_damage_recycler",
-			"upgrade_tech_range",
 			"upgrade_dps_aura",
-			"upgrade_mega_spirit",
+			"upgrade_ability_power_shard",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/forge.vmap"
 		m_strTopBarVertical = panorama:"file://{images}/heroes/engineer_vertical.psd"
@@ -5721,6 +5677,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -5913,24 +5870,16 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/chrono.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_close_range",
-			"upgrade_endurance",
-			"upgrade_magic_reach",
-			"upgrade_clip_size",
-			"upgrade_improved_spirit",
+			"upgrade_hollow_point_rounds",
+			"upgrade_medic_bullets",
+			"upgrade_magic_burst",
+			"upgrade_sprint_booster",
 			"upgrade_crackshot",
-			"upgrade_tech_defense_shredders",
 			"upgrade_magic_shield",
 			"upgrade_regenerating_bullet_shield",
-			"upgrade_magic_storm",
-			"upgrade_magic_vulnerability",
-			"upgrade_close_quarter_combat",
-			"upgrade_reduce_debuff_duration",
+			"upgrade_magic_shock",
+			"upgrade_chain_lightning",
 			"upgrade_chonky",
-			"upgrade_soaring_spirit",
-			"upgrade_tech_range",
-			"upgrade_mega_spirit",
-			"upgrade_escalating_exposure",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/chrono_vertical.psd"
 	}
@@ -6375,6 +6324,7 @@
 				m_strParamValue = "False"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -6569,25 +6519,16 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/sumo_hud.psd"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_improved_spirit",
 			"upgrade_clip_size",
-			"upgrade_health",
 			"upgrade_magic_reach",
 			"upgrade_hollow_point_rounds",
-			"upgrade_extra_charge",
-			"upgrade_crackshot",
-			"upgrade_slowing_bullets",
-			"upgrade_resilience",
+			"upgrade_healing_booster",
 			"upgrade_arcane_extension",
 			"upgrade_magic_tempo",
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
-			"upgrade_tech_purge",
-			"upgrade_improved_bullet_armor",
 			"upgrade_cooldown_reduction",
-			"upgrade_rapid_recharge",
-			"upgrade_tech_range",
-			"upgrade_imbued_duration_extender",
+			"upgrade_rocket_booster",
 			"upgrade_ability_refresher",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/prof_dynamo.vmap"
@@ -7031,6 +6972,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -7225,24 +7167,21 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/kelvin.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_endurance",
-			"upgrade_non_player_bonus",
-			"upgrade_clip_size",
-			"upgrade_extra_charge",
-			"upgrade_magic_reach",
+			"upgrade_medic_bullets",
 			"upgrade_close_range",
+			"upgrade_magic_burst",
+			"upgrade_resilience",
+			"upgrade_extra_charge",
+			"upgrade_berserker",
 			"upgrade_crackshot",
-			"upgrade_cold_front",
-			"upgrade_magic_storm",
 			"upgrade_healing_booster",
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
+			"upgrade_magic_shock",
 			"upgrade_close_quarter_combat",
 			"upgrade_tech_purge",
 			"upgrade_rapid_recharge",
-			"upgrade_improved_bullet_armor",
 			"upgrade_critshot",
-			"upgrade_diviners_kevlar",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/kelvin_vertical.psd"
 	}
@@ -7682,6 +7621,7 @@
 				m_strParamValue = "2"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -7882,25 +7822,19 @@
 		m_RecommendedUpgrades = 
 		[
 			"upgrade_clip_size",
+			"upgrade_improved_spirit",
 			"upgrade_endurance",
-			"upgrade_health",
 			"upgrade_vampire",
 			"upgrade_slowing_bullets",
 			"upgrade_blitz_bullets",
-			"upgrade_magic_reach",
 			"upgrade_regenerating_bullet_shield",
 			"upgrade_magic_shield",
-			"upgrade_kinetic_sash",
-			"upgrade_quick_silver",
-			"upgrade_magic_tempo",
-			"upgrade_burst_fire",
 			"upgrade_bullet_armor_reduction_aura",
 			"upgrade_chonky",
+			"upgrade_inhibitor",
 			"upgrade_armor_reduction_debuff",
 			"upgrade_silencer",
-			"upgrade_ricochet",
 			"upgrade_critshot",
-			"upgrade_tech_range",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/haze.vmap"
 		m_strTopBarVertical = panorama:"file://{images}/heroes/haze_vertical.psd"
@@ -7962,7 +7896,7 @@
 			ESlot_Ability_Innate_3 = "citadel_ability_melee_parry"
 			ESlot_Signature_1 = "ability_explosive_barrel"
 			ESlot_Signature_2 = "ability_bounce_pad"
-			ESlot_Signature_3 = "ability_astro_shotgun_toggle"
+			ESlot_Signature_3 = "ability_hat_trick"
 			ESlot_Signature_4 = "ability_gravity_lasso"
 		}
 		m_mapItemSlotInfo = 
@@ -8342,6 +8276,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -8569,7 +8504,7 @@
 			EWeaponPowerScale = 1
 			EProcBuildUpRateScale = 1
 			EStamina = 3
-			EBaseHealthRegen = 2.000000
+			EBaseHealthRegen = 1
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
@@ -8972,6 +8907,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -9167,28 +9103,20 @@
 		m_RecommendedUpgrades = 
 		[
 			"upgrade_clip_size",
-			"upgrade_non_player_bonus",
-			"upgrade_lifestrike_gauntlets",
 			"upgrade_improved_spirit",
+			"upgrade_non_player_bonus",
+			"upgrade_sprint_booster",
+			"upgrade_acolytes_glove",
 			"upgrade_endurance",
 			"upgrade_magic_burst",
-			"upgrade_tech_armor",
-			"upgrade_bullet_armor",
-			"upgrade_magic_shield",
-			"upgrade_magic_storm",
-			"upgrade_tech_defense_shredders",
-			"upgrade_fleetfoot_boots",
-			"upgrade_magic_tempo",
 			"upgrade_soaring_spirit",
-			"upgrade_chain_lightning",
-			"upgrade_burst_fire",
+			"upgrade_tech_armor",
+			"upgrade_tech_defense_shredders",
+			"upgrade_blitz_bullets",
+			"upgrade_intensifying_clip",
 			"upgrade_chonky",
-			"upgrade_tech_purge",
-			"upgrade_cooldown_reduction",
 			"upgrade_magic_shock",
 			"upgrade_mega_spirit",
-			"upgrade_damage_recycler",
-			"upgrade_tech_overflow",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/bebop.vmap"
 		m_strTopBarVertical = panorama:"file://{images}/heroes/bebop_vertical.psd"
@@ -9630,6 +9558,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -10280,6 +10209,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -10479,31 +10409,23 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/archer.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_non_player_bonus",
+			"upgrade_hollow_point_rounds",
 			"upgrade_endurance",
-			"upgrade_clip_size",
 			"upgrade_improved_spirit",
 			"upgrade_extra_charge",
 			"upgrade_magic_burst",
-			"upgrade_improved_stamina",
 			"upgrade_sprint_booster",
-			"upgrade_magic_storm",
+			"upgrade_crackshot",
 			"upgrade_long_range",
 			"upgrade_regenerating_bullet_shield",
-			"upgrade_quick_silver",
 			"upgrade_tech_defense_shredders",
-			"upgrade_health_stealing_magic",
 			"upgrade_soaring_spirit",
 			"upgrade_magic_shield",
 			"upgrade_rapid_recharge",
 			"upgrade_magic_shock",
+			"upgrade_magic_storm",
 			"upgrade_sharpshooter",
-			"upgrade_burst_fire",
 			"upgrade_mega_spirit",
-			"upgrade_tech_bleed",
-			"upgrade_superior_stamina",
-			"upgrade_tech_overflow",
-			"upgrade_critshot",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/archer_vertical.psd"
 		m_flStepSoundTimeSprinting = 0.355000
@@ -10944,6 +10866,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -11116,7 +11039,7 @@
 		{
 			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.250000
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
-			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 47.000000
+			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 44.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
@@ -11137,31 +11060,21 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/digger_hud.psd"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_endurance",
-			"upgrade_lifestrike_gauntlets",
-			"upgrade_improved_spirit",
+			"upgrade_sprint_booster",
+			"upgrade_medic_bullets",
+			"upgrade_magic_burst",
 			"upgrade_close_range",
-			"upgrade_clip_size",
-			"upgrade_tech_damage_pulse",
 			"upgrade_magic_vulnerability",
-			"upgrade_magic_tempo",
-			"upgrade_slowing_bullets",
+			"upgrade_berserker",
 			"upgrade_cardio_calibrator",
+			"upgrade_healing_booster",
 			"upgrade_tech_armor",
 			"upgrade_bullet_armor",
 			"upgrade_fleetfoot_boots",
-			"upgrade_cooldown_reduction",
-			"upgrade_soaring_spirit",
 			"upgrade_improved_bullet_armor",
-			"upgrade_magic_storm",
-			"upgrade_magic_slow",
-			"upgrade_close_quarter_combat",
-			"upgrade_mega_spirit",
+			"upgrade_tech_damage_pulse",
 			"upgrade_tech_purge",
-			"upgrade_unstoppable",
-			"upgrade_escalating_exposure",
 			"upgrade_phantom_strike",
-			"upgrade_damage_recycler",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/digger.vmap"
 		m_strTopBarVertical = panorama:"file://{images}/heroes/digger_vertical.psd"
@@ -11604,6 +11517,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -12260,6 +12174,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -12453,28 +12368,17 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/tengu.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_endurance",
-			"upgrade_clip_size",
-			"upgrade_improved_spirit",
-			"upgrade_extra_charge",
-			"upgrade_resilience",
-			"upgrade_magic_storm",
-			"upgrade_long_range",
-			"upgrade_fleetfoot_boots",
-			"upgrade_magic_shield",
-			"upgrade_magic_tempo",
+			"upgrade_non_player_bonus",
+			"upgrade_health_stimpak",
+			"upgrade_bullet_armor",
+			"upgrade_tech_armor",
+			"upgrade_healing_booster",
 			"upgrade_health_nova",
-			"upgrade_vampire",
-			"upgrade_quick_silver",
-			"upgrade_soaring_spirit",
+			"upgrade_magic_tempo",
 			"upgrade_chain_lightning",
-			"upgrade_rapid_recharge",
-			"upgrade_dps_aura",
 			"upgrade_chonky",
-			"upgrade_titan_round",
-			"upgrade_magic_slow",
-			"upgrade_mega_spirit",
-			"upgrade_damage_recycler",
+			"upgrade_banshee_slugs",
+			"upgrade_inhibitor",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/tengu_vertical.psd"
 		m_mapWIPAbilities = 
@@ -12919,6 +12823,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -13544,6 +13449,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -13741,28 +13647,21 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/warden_hud.psd"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_lifestrike_gauntlets",
-			"upgrade_improved_spirit",
+			"upgrade_non_player_bonus",
 			"upgrade_close_range",
 			"upgrade_magic_reach",
-			"upgrade_clip_size",
 			"upgrade_endurance",
-			"upgrade_magic_storm",
-			"upgrade_cold_front",
+			"upgrade_berserker",
+			"upgrade_fleetfoot_boots",
 			"upgrade_cardio_calibrator",
-			"upgrade_crackshot",
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
-			"upgrade_fleetfoot_boots",
-			"upgrade_soaring_spirit",
-			"upgrade_close_quarter_combat",
-			"upgrade_reduce_debuff_duration",
-			"upgrade_tech_range",
+			"upgrade_suppressor",
 			"upgrade_magic_slow",
+			"upgrade_close_quarter_combat",
+			"upgrade_improved_bullet_armor",
 			"upgrade_tech_purge",
-			"upgrade_mega_spirit",
 			"upgrade_unstoppable",
-			"upgrade_damage_recycler",
 			"upgrade_inhibitor",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/warden.vmap"
@@ -14205,6 +14104,7 @@
 				m_strParamValue = "1"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -14397,27 +14297,23 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/yamato.vmap"
 		m_RecommendedUpgrades = 
 		[
+			"upgrade_close_range",
+			"upgrade_headshot_booster",
 			"upgrade_endurance",
+			"upgrade_resilience",
 			"upgrade_magic_burst",
 			"upgrade_improved_spirit",
-			"upgrade_magic_reach",
-			"upgrade_clip_size",
-			"upgrade_close_range",
 			"upgrade_cold_front",
-			"upgrade_magic_tempo",
-			"upgrade_magic_storm",
-			"upgrade_regenerating_bullet_shield",
+			"upgrade_crackshot",
+			"upgrade_bullet_armor",
+			"upgrade_tech_armor",
 			"upgrade_tech_defense_shredders",
-			"upgrade_magic_shield",
-			"upgrade_tech_range",
+			"upgrade_tech_damage_pulse",
 			"upgrade_magic_shock",
+			"upgrade_soaring_spirit",
 			"upgrade_close_quarter_combat",
-			"upgrade_reduce_debuff_duration",
-			"upgrade_tech_bleed",
-			"upgrade_cooldown_reduction",
+			"upgrade_fervor",
 			"upgrade_mega_spirit",
-			"upgrade_siphon_bullets",
-			"upgrade_damage_recycler",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/yamato_vertical.psd"
 	}
@@ -14857,6 +14753,7 @@
 				m_strParamValue = "2"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -15047,28 +14944,19 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/lash.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_clip_size",
+			"upgrade_sprint_booster",
+			"upgrade_magic_burst",
 			"upgrade_magic_reach",
 			"upgrade_non_player_bonus",
 			"upgrade_close_range",
-			"upgrade_improved_spirit",
-			"upgrade_endurance",
-			"upgrade_magic_burst",
 			"upgrade_extra_charge",
-			"upgrade_slowing_bullets",
-			"upgrade_tech_armor",
+			"upgrade_cold_front",
 			"upgrade_bullet_armor",
-			"upgrade_health_stealing_magic",
-			"upgrade_soaring_spirit",
+			"upgrade_tech_armor",
 			"upgrade_rapid_recharge",
-			"upgrade_superior_stamina",
-			"upgrade_close_quarter_combat",
 			"upgrade_tech_range",
-			"upgrade_tech_purge",
 			"upgrade_magic_shock",
-			"upgrade_mega_spirit",
-			"upgrade_siphon_bullets",
-			"upgrade_damage_recycler",
+			"upgrade_chonky",
 		]
 		m_hGameSoundEventScript = resource_name:"soundevents/hero/lash.vsndevts"
 		m_strTopBarVertical = panorama:"file://{images}/heroes/lash_vertical.psd"
@@ -15510,6 +15398,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -16139,6 +16028,7 @@
 				m_strParamValue = "2"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -16761,6 +16651,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -17383,6 +17274,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -18004,6 +17896,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -18627,6 +18520,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -19280,6 +19174,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -19904,6 +19799,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -20097,27 +19993,23 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/pocket.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_endurance",
-			"upgrade_health",
+			"upgrade_health_stimpak",
+			"upgrade_resilience",
+			"upgrade_magic_burst",
 			"upgrade_close_range",
-			"upgrade_clip_size",
-			"upgrade_improved_spirit",
 			"upgrade_crackshot",
+			"upgrade_improved_spirit",
 			"upgrade_tech_defense_shredders",
 			"upgrade_magic_shield",
-			"upgrade_bullet_resist_shredder",
 			"upgrade_regenerating_bullet_shield",
-			"upgrade_magic_storm",
+			"upgrade_suppressor",
 			"upgrade_magic_vulnerability",
-			"upgrade_reduce_debuff_duration",
-			"upgrade_magic_slow",
-			"upgrade_close_quarter_combat",
 			"upgrade_soaring_spirit",
-			"upgrade_chonky",
-			"upgrade_mega_spirit",
+			"upgrade_rocket_booster",
+			"upgrade_magic_slow",
+			"upgrade_magic_shock",
 			"upgrade_escalating_exposure",
-			"upgrade_damage_recycler",
-			"upgrade_siphon_bullets",
+			"upgrade_mega_spirit",
 		]
 	}
 	hero_thumper = 
@@ -20556,6 +20448,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -21178,6 +21071,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -21832,6 +21726,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -22457,6 +22352,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -23080,6 +22976,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[
@@ -23702,6 +23599,7 @@
 				m_strParamValue = "0"
 			},
 		]
+		m_strLastHitSound = soundevent:"LastHit.Default"
 		m_strLowHealthSound = soundevent:"PlayerAlert.LowHealth"
 		m_colorUI = 
 		[

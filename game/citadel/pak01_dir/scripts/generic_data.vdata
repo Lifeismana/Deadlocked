@@ -332,6 +332,8 @@
 		m_strLoopingSequenceName = "golden_idol_idle"
 		m_ParachuteModel = resource_name:"models/props_gameplay/gold_crate_parachute.vmdl"
 		m_CrateModel = resource_name:"models/props_gameplay/gold_crate.vmdl"
+		m_IdolReturnLocationParticle = resource_name:"particles/environment/powerup_spawner_inactive_ambient.vpcf"
+		m_flIdolReturnLocationParticleScale = 2.000000
 	}
 	m_TargetingSpringStrength = 
 	[
@@ -423,5 +425,6 @@
 		m_strDamageDOT = soundevent:"Damage.Send.DOT"
 		m_strDamageHealthTransfer = soundevent:"Player.Heal.SiphonTick"
 	}
+	m_strRejuvPickupSound = soundevent:"Rejuv.Pickup"
 	m_ShoppingEffect = resource_name:"particles/generic/hero_shopping_status.vpcf"
 }

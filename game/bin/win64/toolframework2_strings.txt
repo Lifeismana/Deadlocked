@@ -336,7 +336,6 @@
 !s_pJoystickInput
 !sePm0
 !usedTris[ nSourceTri ]
-!w0?s
 " ?timerEvent@QListView@@MEAAXPEAVQTimerEvent@@@Z
 "%s" attribute should not be used when using AnimGraph, reset value to default if possible.
 "%s": Bad mode
@@ -503,7 +502,6 @@ $name_$id
 %g %g
 %g %g %g
 %g %g %g %g
-%iT%a
 %ld%c
 %lu: Row out of range, max %lu
 %lu: Sample out of range, max %lu
@@ -737,23 +735,19 @@ $name_$id
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
-(%!;{
 (%1,%2)
-(%7;{
 (%d,%d)
 ((width & 1) == 0) && ((height & 1) == 0)
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (1@zD
-(5'$z
-(53C[
-(58/[
-(5C:[
-(5P-[
-(5S1[
-(5wD[
+(5&2[
+(5C?[
+(5H+[
+(5S6[
+(5`)[
+(5c-[
 (;^ |
-(=?Z:
 (A?)\
 (A\_][
 (A]A\^[
@@ -1312,15 +1306,31 @@ $name_$id
 +;uKH
 +@;^7[/
 +A33333W
++Additive
++Advanced Options
++Animation
 +Auto Tags
++Branch Animation - Pivot Paint
 +C$Lc
++Chain Settings
++Collision and Limits
 +D$8A
++Default Solver Settings
++Default Target Settings
++Effect Duration
++Event Info
++Frond Animation - foliageanimation
 +G$Hc
 +G$Lc
 +H;D$X
++Import Settings
 +L$0k
 +L$DA
 +M<7>
++Motion Resistance
++Sequence
++Simulation
++Skinning Options
 +T$`L
 +Xt@(
 +YA1A
@@ -1330,7 +1340,6 @@ $name_$id
 +egy@
 +f)>0'
 +h->|
-+m:2I
 +o'q)}
 , ?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 , channels = 
@@ -1730,6 +1739,7 @@ $name_$id
 .?AUCAttr_m_bInvertedCollision@?1??GetStaticAttributes@CModelDocClothShape@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bIsChildOfParentNode@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpAddBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bIsEssentialPiece@?1??GetStaticAttributes@CModelDocBaseBreakPiece@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_bIsFarFieldOnly@?1??GetStaticAttributes@CModelDocDistanceField@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bIsGlobal@?1??GetStaticAttributes@CModelDocClothEffectWind@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bIsLengthExplicit@?1??GetStaticAttributes@CModelDocClothSpring@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bIsStatic@?1??GetStaticAttributes@CModelDocClothNode@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -7136,12 +7146,14 @@ $name_$id
 .xJ>Hf
 .xdata
 .xdata$x
+/%$>P
+/%l~.
 // THIS FILE IS AUTO-GENERATED
 /2GG>!B
-/5$T:
-/5*`:
-/=Vc:
-/=Xc:
+/=>h}
+/=N_:
+/=jn:
+/=ln:
 />58d%
 /D$pv
 /D$tv
@@ -7224,7 +7236,6 @@ $name_$id
 0Lc1L
 0Lc\$`I
 0M9't	I
-0Ps|!
 0R@ffffF(
 0X8b?~
 0fKVE8
@@ -7285,7 +7296,7 @@ $name_$id
 220323000000Z
 220801000000Z
 230714000000Z
-240627200640Z0/
+240704151240Z0/
 241009235959Z0a1
 2D Aim
 2D Blend Has No Referenced Animations
@@ -7310,7 +7321,6 @@ $name_$id
 2focusChanged( QWidget *, QWidget * )
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
-2qB-BP
 2stateChanged( int )
 2tGZE
 2textChanged( const QString& )
@@ -7653,10 +7663,10 @@ $name_$id
 ;.u1L
 ;0t2H
 ;39!@ffff
-;5:Kt
+;5ZJt
 ;:|73
 ;;| H
-;=D+v
+;=d*v
 ;?0123456789:;<=>?
 ;@*$pV
 ;A0}OH
@@ -7798,6 +7808,7 @@ $name_$id
 ============================== begin import json data ==============================
 ================================================================================
 ==MQ?
+=MIsBoxedIntegerType
 =N3@\
 =SHX?
 =SPB8ue
@@ -7807,7 +7818,6 @@ $name_$id
 =i<l}
 =imb;D
 =l'A\
-=m_Value
 =rIQU
 =wf@j
 >	V_qsort
@@ -8822,6 +8832,7 @@ $name_$id
 ?fromImage@QPixmap@@SA?AV1@AEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 ?fromImageInPlace@QPixmap@@KA?AV1@AEAVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 ?fromUtf8@QString@@SA?AV1@PEBDH@Z
+?gaO;
 ?generatedIconPixmap@QCommonStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 ?generatedIconPixmap@QProxyStyle@@UEBA?AVQPixmap@@W4Mode@QIcon@@AEBV2@PEBVQStyleOption@@@Z
 ?geometry@QLayout@@UEBA?AVQRect@@XZ
@@ -10255,7 +10266,6 @@ $name_$id
 @ffff~A
 @g-?O
 @g3^%
-@gaO;
 @g|_\
 @h"lxz
 @h"lxz=k@
@@ -10617,7 +10627,7 @@ Address
 Adjust Acceleration
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 AdobeDeflate
-Advanced Options
+Advanced
 Affect Children
 Affect Edges
 Affect Faces
@@ -10813,7 +10823,6 @@ Animated Length
 AnimatedMaterialAttribute
 AnimatedMaterialAttributeColor
 AnimatedMaterialAttributeValue
-Animation
 Animation Order
 Animation Skeleton
 Animation references itself as blend target
@@ -10872,7 +10881,6 @@ AsShotNeutral
 AsShotPreProfileMatrix
 AsShotWhiteXY
 AssertCast
-AssertCastNumberInternal
 Asset Browser System
 Asset Preview System
 Asset System
@@ -11160,7 +11168,6 @@ Box Primitive
 Box Select (
 Box Select Invert (
 Box: %s
-Branch Animation - Pivot Paint
 Break
 Break Particle
 Break Piece External
@@ -11464,6 +11471,7 @@ C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
 C:\buildworker\citadel_staging_win64\build\src\public\toolattr_lib\toolattr.h
 C:\buildworker\citadel_staging_win64\build\src\public\toolattr_lib\toolattr_concrete.h
 C:\buildworker\citadel_staging_win64\build\src\public\toolattr_lib\toolattr_typeinfo.h
+C:\buildworker\citadel_staging_win64\build\src\public\toolframework2\itoolsystem2.h
 C:\buildworker\citadel_staging_win64\build\src\public\toolutils2\toolattr_kv3fgd.h
 C:\buildworker\citadel_staging_win64\build\src\public\toolutils2\toolnodefactory.h
 C:\buildworker\citadel_staging_win64\build\src\qcontrols\inputbindcodes.cpp
@@ -17046,7 +17054,7 @@ Capsule
 Capsule: %s
 CapsuleReplacements
 Cast of %s loses value information (returning %s)
-Cast of %s loses value information (returning %s) on %s:%d
+Cast of %s loses value information (returning %s) in %s on %s:%u
 Caution: quantization tables are too coarse for baseline JPEG
 CellLength
 CellWidth
@@ -17061,7 +17069,6 @@ ChD9T
 ChD9\
 ChD9d
 ChD9|
-Chain Settings
 ChangeClassKeys
 ChangeColorSpace
 Changes how the cycle time is computed.  Mainly used with autolayer.
@@ -17225,7 +17232,6 @@ Collision File
 Collision Group
 Collision Property
 Collision Radius
-Collision and Limits
 Color
 Color for the tag badge
 ColorMap
@@ -17614,7 +17620,7 @@ D$8A9Gxt
 D$8A;
 D$8A;G
 D$8D9
-D$8D;5+
+D$8D;5K
 D$8E3
 D$8H;
 D$8H=
@@ -17694,12 +17700,12 @@ D$P9D$`
 D$P;L$H
 D$P;L$L
 D$PA6
-D$PA8
 D$PA9F
 D$PA;F
 D$PBR
 D$PD;
 D$PE3
+D$PE8(t
 D$PE;
 D$PE;&
 D$PH+
@@ -17829,13 +17835,14 @@ D8 u:I
 D8#t]3
 D8#t`3
 D8#tc3
+D8#td3
 D8$:u
 D8$;u
 D8'tO3
 D8'tc3
 D8(t{H
 D8*t$Ic
-D8+th3
+D8+tb3
 D8,1u
 D8,8u
 D8/tk3
@@ -17883,22 +17890,23 @@ D8|$`t
 D8}wu@H
 D9 u2D9
 D9$(|
-D9%";
-D9%%8
-D9%5,
-D9%8 
-D9%::
-D9%=7
-D9%?6
-D9%H3
-D9%Q7
-D9%QE
-D9%U6
-D9%W>
-D9%^&
-D9%e!
-D9%j/
-D9%k#
+D9%&"
+D9%(*
+D9%-8
+D9%.-
+D9%B:
+D9%D	
+D9%E7
+D9%U+
+D9%Z9
+D9%]6
+D9%_5
+D9%h2
+D9%q6
+D9%qD
+D9%u5
+D9%w=
+D9%~%
 D9(tT
 D9/~%H
 D9/~4fff
@@ -18073,8 +18081,6 @@ Default (No RGB Tint)
 Default Gravity Scale
 Default Material Group
 Default Root Bone Name
-Default Solver Settings
-Default Target Settings
 DefaultButtonBackground
 DefaultButtonInnerBorder
 DefaultButtonOuterBorder
@@ -18328,7 +18334,6 @@ EdgeVertexData
 Edges, 
 EditorDynamicConfig
 Eff%s%d
-Effect Duration
 Effect Name
 Effect Version
 Effect name is not set
@@ -18375,6 +18380,7 @@ End mouse capture [%i] due to hidden widget
 End mouse capture [%i]: %s
 Engine2
 EngineServiceMgr001
+EngineToolID_t
 EnsureTypeIs - unknown type '%d'%s
 EnsureTypeIs(KV3_BTYPE_BINARY_BLOB) not supported!%s
 Enter
@@ -18595,7 +18601,6 @@ EtD;e
 Euler Offset XYZ
 Euler XYZ
 Event
-Event Info
 EwHcX
 Ex9p 
 Exact
@@ -18661,6 +18666,7 @@ Explict Masses
 Expression
 External Tool Debug
 ExternalNameForInternalType
+ExternalToolID_t
 Extra Border Points
 Extra Damping
 Extra Drag
@@ -18875,6 +18881,7 @@ Failed to write data as KeyValues3. (error %s)
 Failed to write file: %s
 Falling back to unsupported EXR
 Falloff
+Far Field Only
 Fast Drag
 Favor higher density in mesh UV density calculation
 Fax3Decode1D
@@ -19083,7 +19090,6 @@ Friction Scale
 Friction that resists motion about the spin axis. Ignored by drivable vehicles.
 Friday
 From Name
-Frond Animation - foliageanimation
 FrondPivotPaint
 G 9F t;I
 G D9D
@@ -19158,7 +19164,6 @@ GL$XL
 GPHcwx;
 GPSIFDOffset
 GT$(E3
-GT$(L
 GT$8A
 GT$8E3
 GT$8H
@@ -19219,6 +19224,8 @@ Generate solar radiance image
 Generate the diffuse warp lookup texture used for pre-integrated skin shading.
 Generate the shadow warp lookup texture used for pre-integrated skin shading.
 GenerateDecalUVs
+GeneratePositionMap
+GenerateTextureInternal
 GenerateUniqueName
 Generates SH skyboxes
 Generates a LUT for AO cone vs. sphere
@@ -19423,10 +19430,8 @@ H9+t	H
 H9+u]H
 H9.t	H
 H93t	H
-H95	 
-H957T
-H95a!
-H95wQ
+H95!m
+H95WS
 H97u+A
 H98t$H
 H98t2
@@ -20519,7 +20524,6 @@ K9l> t
 K?@mOy
 KERNEL32.dll
 KHu$H
-KKc-u
 KPH9I
 KPt*A
 KPtKH
@@ -20528,6 +20532,7 @@ KV3 instances cannot be set to an unspecified specific type
 KV3 save transfer failed: %s
 KV3 syntax error: %s
 KV3 syntax error: %s while parsing @entitygroup %s
+KV3Helper_CheckValueNumericCast
 KV3TransferSchema_AllocateClassInstance
 KV3TransferSchema_ClassName::<lambda_1>::operator ()
 KV3Transfer_LoadMapFromArrayOfKVTables
@@ -20831,12 +20836,16 @@ L2rpR@r
 L9	u)H
 L9#t	H
 L9#u/H
-L9%#5
+L9%s6
 L9&t	H
 L9+t	H
-L95>-
-L95Y-
-L95w,
+L9-	>
+L9-$>
+L9-7=
+L95	6
+L95'5
+L95^,
+L95y,
 L97t	H
 L97vH
 L98t#A
@@ -21149,6 +21158,7 @@ LinearResponseLimit
 LinearizationTable
 LinkVisited
 LinkedEntityClass
+ListenToSocketForImportData
 Lj[;>
 Lkh9Fgc^A
 Load a custom skin diffusion profile.
@@ -21239,7 +21249,6 @@ MGetKV3ClassDefaults
 MHHcY
 MHHcy
 MISSING: %1 (%2)
-MIsBoxedIntegerType
 MKV3TransferName
 MM/dd/yy
 MMouse
@@ -21542,7 +21551,6 @@ MorphRuleList
 MorphStereoControl
 Most simple expressions involving the VData keys are supported. Use 'true' to tag unconditionally.
 Motion Bias
-Motion Resistance
 Motion Type
 Mouse4
 Mouse4DoubleClick
@@ -21566,6 +21574,7 @@ Mutually Exclusive Cloth Effects
 N	V_snprintf
 N"@q:
 N3`d?
+N7]](k )
 N>O=I9
 N?green@QColor@@QEBAHXZ
 N?greenF@QColor@@QEBANXZ
@@ -21591,6 +21600,7 @@ N`H+^
 Name Mode
 NavGameTest001
 NavSystem001
+NbW	L
 NcL7(J
 NeXTDecode: Not enough data for scanline %ld
 Need to specify a bone name.
@@ -21731,7 +21741,7 @@ O.@Jt;
 O0A9D$0u
 O8HcB
 O8HcY
-O==+v
+O=]*v
 O?0 ,	f
 O?ffff
 O?installUpdateHandler@QAccessible@@SAP6AXPEAVQAccessibleEvent@@@ZP6AX0@Z@Z
@@ -22850,7 +22860,6 @@ SelectionSet
 SelectionSetList
 Selects faces whose UVs overlap. Note that neighboring faces are not considered overlapping, and there is a minor tolerance to this check.
 September
-Sequence
 SerializedEntitiesVersion001
 ServerToolsInfo_001
 Set Bodygroup On Other Models
@@ -22923,7 +22932,6 @@ Shutting down Qt windows...
 Signal '%s' not compatible with slot '%s'
 Simplify (Qem Error)
 Simulate
-Simulation
 Simulation Params Material
 Single
 Single Hull
@@ -22967,7 +22975,6 @@ Skin Threshold
 Skin To Bones
 Skin all the geometry in this mesh to a single bone.
 SkinToSingleBone
-Skinning Options
 Skip channel (do not modify)
 Slave Axis
 Slave Channel
@@ -23268,13 +23275,9 @@ T$xD;{
 T$xE3
 T$xHc
 T$xL+
-T%I$}
-T-$fw
-T-)#}
-T-*%}
+T-Tfw
 T0@GZ
 T5i@H
-T=!`:
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
@@ -23539,6 +23542,7 @@ Torsion Spring
 Trace Distance
 Trace Height
 Trace Radius
+Trace the distance field with low fidelity far field occlusion only. This can be much faster, but the result will lack high frequency occlusion detail.
 Track Mouse & Focus
 Tracks Constant Threshold
 Tracks Precision
@@ -23857,6 +23861,7 @@ VBik001
 VConComm001
 VD$Pf
 VEngineCvar007
+VF<g9P
 VFileSystem017
 VJ}@q=
 VMAP_MANUAL_RECOMPILE
@@ -24090,8 +24095,11 @@ Voronoi Plane Primitive
 Vortices
 Vrad3_001
 W%	s;M@
+W%7W;
 W(Aq=
+W-uX}
 W3|Uxa
+W=H:;
 W?,|C
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -24181,6 +24189,7 @@ Window
 WindowText
 Windows 10 Version 1903 (build 18362)
 With Hands
+Wj+udw
 Working Directory:
 Working directory:
 World Collision
@@ -24213,6 +24222,10 @@ X VWATH
 X VWAVH
 X zR&="@r
 X!t5~
+X%-R:
+X%B[:
+X%R5}
+X-j}:
 X9t6@
 X=2v?
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
@@ -24264,19 +24277,20 @@ Y	V_stricmp_fast
 Y (Green / Left)
 Y - Left
 Y ANb
-Y%:~:
-Y%C;P
-Y%lu_
-Y5/9X
-Y5Pp6
-Y5Vp6
-Y5d04
-Y5j?a
+Y%)R:
+Y%s;P
+Y-,@2
+Y--{:
+Y5&U}
+Y5o7X
+Y5rS}
 Y6	@W'g(
 Y8Hcy0H
 Y9"SD
-Y=1@}
-Y=Y66
+Y='U}
+Y=9?}
+Y=\7X
+Y=qa}
 Y>kX>M
 Y?3333E
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
@@ -24552,7 +24566,9 @@ Z}uU
 \$xu3M
 \$|L+
 \$|Lc
-\=w_:
+\%*}:
+\5y~T
+\=R~T
 \T$lHc
 \ffff
 \r@n|7'@^
@@ -24561,15 +24577,14 @@ Z}uU
 ]	?addApplicationFont@QFontDatabase@@SAHAEBVQString@@@Z
 ]"^AR
 ]$HcK
-]%%d}
 ]%h@sh
 ]'HcE
 ])6M>&
-]0D8m8t	H
-]5r:}
 ]8A9^
 ]8A;^
+]=HfQ
 ]>)2X
+]@D8mHt	H
 ]D$hH
 ]HfD;
 ]HvtC
@@ -24590,9 +24605,8 @@ Z}uU
 ^)8~@
 ^,tyI
 ^-wf"
-^5H+O
+^5H,O
 ^<V7w
-^<YDB
 ^?O<g
 ^?text@QPalette@@QEBAAEBVQBrush@@XZ
 ^Cp\&
@@ -24609,7 +24623,7 @@ _%02d
 _%03d
 _%04d
 _0HcO@A
-_5}g[
+_5C2[
 _8Hcs
 _8Hcw
 _@')UG3;
@@ -25811,6 +25825,7 @@ fadetime
 falcon
 falloff
 false
+far_field_only
 features
 feeder_bone
 ferret
@@ -26584,7 +26599,7 @@ l$8Mc
 l$8u&H
 l$8u1H
 l$<D;
-l$@;-
+l$@;-%xn
 l$@A+
 l$@A;
 l$@E3
@@ -27066,6 +27081,7 @@ m_Tris
 m_TwistLimit
 m_Twists
 m_UserFriendlyName
+m_Value
 m_ValueIndexToHandleArray.Count() == m_StreamSet.GetNumValues()
 m_Vector.Count() == m_SymbolTable.GetNumStrings()
 m_VertexMapValues
@@ -28167,26 +28183,32 @@ n|$`fA
 o KPBf
 o!L9l$ t
 o$$fA
-o%.JQ
-o%A'T
-o%^PQ
-o%c7Q
-o%jhQ
-o%lfQ
-o%}=Q
+o%$oS
+o%)!T
+o%*EQ
+o%8,Q
+o%HhQ
+o%T[Q
+o%TnS
+o%Z2Q
+o%^aQ
+o%nHQ
 o*Ral
 o,$fD
-o-A6T
-o-O(T
-o-t"T
+o-'ZS
+o-XqS
 o47Lc
-o5;rS
-o5<(T
-o5>9N
-o5J8N
-o5KlS
-o5s"T
-o=>[9
+o5(^S
+o52mS
+o545N
+o5@4N
+o5D8N
+o5R6N
+o5{pS
+o5|&T
+o5~8N
+o=&mS
+o=T&N
 o?ffff
 oAPfD
 oB)?@
@@ -29786,6 +29808,7 @@ to read "TransferFunction" tag
 to read TIFF directory
 toD9 }
 to_name
+todUm{
 toebone
 toeland
 toelift
@@ -30459,6 +30482,7 @@ x!;;}
 x!A;Fx}
 x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
 x$A;]
+x%;=,
 x%fff
 x%i (
 x'A;n
@@ -30475,7 +30499,7 @@ x<H9{0
 x=HcS
 x>V6'
 x>V6'?C
-x@;=k%
+x@;=k
 xA\^][
 xA]A\^[
 xA]A\_^

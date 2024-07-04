@@ -27,28 +27,24 @@
 	
 	"playevent"
 	{
-		"event" "amb.Outdoors.AnnouncementRandom_01"
-	}
-	
-	"playevent"
-	{
-		"event" "amb.Outdoors.AnnouncementRandom_02"
-	}
-	
-	"playevent"
-	{
-		"event" "amb.Outdoors.AnnouncementRandom_03"
-	}
-	
-	"playevent"
-	{
-		"event" "amb.Outdoors.AnnouncementRandom_04"
-	}
-	
-	"playevent"
-	{
 		"event" "amb.Outdoors.DogBarksRandom"
 	}
+	
+	"playevent"
+	{
+		"event" "amb.Outdoors.PlaneRandom"
+	}
+	
+	"playevent"
+	{
+		"event" "amb.Outdoors.Birds_SparseRandom"
+	}
+	
+	"playevent"
+	{
+		"event" "amb.Outdoors.ConstructionRandom"
+	}
+
 	
 }
 
@@ -153,11 +149,6 @@
 	
 	"playsoundscape"
 	{
-		"name"				"amb.generic.outdoors.magic"
-	}
-	
-	"playsoundscape"
-	{
 		"name"				"amb.random.alley.oneshots"
 	}
 
@@ -181,6 +172,12 @@
 		"event" "amb.Indoors.General.Outdoors_Lp"
 		"traveler" "IndoorsExterior"
 	}
+	
+	"playevent"
+	{
+		"event" "amb.Outdoors.Construction_Lp"
+		"traveler" "IndoorConstruction"
+	}
 }
 
 //			     //
@@ -190,11 +187,6 @@
 {
 	"dsp" "20"
 	"fadetime" "1.5"
-	"playevent"
-	{
-		"event" "amb.Base.Lp"
-		"traveler" "Base"
-	}
 
 	"playevent"
 	{
@@ -230,6 +222,12 @@
 	{
 		"event" "amb.Base.Binaural_9hz"
 		"traveler" "BinauralBase"
+	}
+	
+	"playevent"
+	{
+		"event" "amb.Outdoors.Construction_Lp"
+		"traveler" "BaseConstruction"
 	}
 }
 
@@ -472,6 +470,12 @@
 	{
 		"name"				"amb.random.indoors.oneshots"
 	}
+	
+	"playevent"
+	{
+		"event" "amb.Outdoors.Construction_Lp"
+		"traveler" "WarehouseConstruction"
+	}
 }
 
 // mid temple
@@ -505,6 +509,12 @@
 		"event" "amb.Indoors.Air_Deep"
 		"traveler" "DeepAir"
 	}
+	
+	"playevent"
+	{
+		"event" "amb.Outdoors.Construction_Lp"
+		"traveler" "UndergroundConstruction"
+	}
 }
 
 // underpass
@@ -525,6 +535,12 @@
 	{
 		"event" "amb.Indoors.Air_Deep"
 		"traveler" "DeepAir"
+	}
+	
+	"playevent"
+	{
+		"event" "amb.Outdoors.Construction_Lp"
+		"traveler" "UnderpassConstruction"
 	}
 }
 
@@ -551,6 +567,12 @@
 	"playevent"
 	{
 		"event" "amb.Outdoors.Alley.SwellsRandom"
+	}
+	
+	"playevent"
+	{
+		"event" "amb.Outdoors.Construction_Lp"
+		"traveler" "TunnelConstruction"
 	}
 	
 }

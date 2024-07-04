@@ -2,7 +2,6 @@
 	!s99
 	D$0H
 	JR>8o
-	h3zE
 	kE>fvw
 	wOHc
 	wRHc
@@ -72,6 +71,7 @@
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !((("#$%&((((((('
  "$&(*,.02468:<>@BDFHJLNPRTVXZ\^`bdfhjlnprtvxz|~
  $(,048<@DHLPUY]aeimquy}
  %41g
@@ -93,6 +93,7 @@
  (timestamp=%u which=%u recording=%s)
  (timestamp=%u which=%u)
  (timestamp=%u windowid=%u event=%s data1=%d data2=%d)
+ (timestamp=%u windowid=%u num_candidates=%d selected_candidate=%d)
  (timestamp=%u windowid=%u text='%s' start=%d length=%d)
  (timestamp=%u windowid=%u text='%s')
  (timestamp=%u windowid=%u which=%u button=%u state=%s clicks=%u x=%g y=%g)
@@ -188,6 +189,7 @@ $`C0M
 %02x 
 %GoU?*
 %I64d
+%d %s
 %d,%d,%d,%d
 %d.%d
 %s %s
@@ -218,10 +220,13 @@ $`C0M
 &?PPPPPPP?
 &Constants
 &SV_Target
+&TRr^:
 &dx.valverS
 &wVF7A(
 ',=?k
 ':<kF
+(((((((((((((((((((((((((((((
+(((((((((((((((((((((((((((((((((((((((((((((((
 (+D$<
 (2texture_type
 (A^_^[
@@ -382,8 +387,8 @@ $`C0M
 )|$pD
 )|$pI
 )|B?d!
+**o#J!
 *StO9>T
-*\q7sF/
 *dx.versionS
 *llvm.identS
 +L$LA
@@ -445,6 +450,7 @@ $`C0M
 .xdata
 /2GG>!B
 />58d%
+/dhHcj$
 000000000000
 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0
 0123456789abcdef
@@ -791,7 +797,7 @@ $`C0M
 220323000000Z
 220801000000Z
 230714000000Z
-240626192633Z0/
+240703013814Z0/
 241009235959Z0a1
 2>X94>
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -833,7 +839,6 @@ $`C0M
 7h>?8
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 8*u;I
-80t&H
 80tWD
 82Pa8
 8859-1
@@ -898,7 +903,6 @@ $`C0M
 9{(~lH
 9{,uL
 9|$8w0H
-9}/Hc
 :>)*	v
 :>t6k'
 :@:F<@Z
@@ -924,14 +928,12 @@ $`C0M
 ;\$@r
 ;\$@|
 ;\$Pr
-;\$`r
 ;\$p|
 ;_(t E3
 ;datatL
 ;j`}kH
 ;jp}_H
 ;s u+;k$u&H
-;t$`sN
 ;{(|^;s,|YH
 ;{ttR
 ;|$0r
@@ -1011,7 +1013,6 @@ $`C0M
 ?t_v>
 ?xz	@
 ?{Q}<
-@	;sU
 @ %z8
 @.data
 @.reloc
@@ -1391,7 +1392,6 @@ CloseClipboard
 CloseHandle
 CloseTouchInputHandle
 CoCreateInstance
-CoCreateInstance() failed, HRESULT is %08X
 CoInitialize
 CoInitialize failed
 CoInitialize() failed
@@ -2048,7 +2048,6 @@ Failed to load vkGetInstanceProcAddr from Vulkan Portability library
 Failed to obtain XInput device capabilities. Device disconnected?
 Failed to read extension type: %u
 Fatal Error
-Fc\t4
 February
 File dialog driver unsupported
 File is not a Windows BMP file
@@ -2075,7 +2074,6 @@ Function not supported
 G"fA+
 G(A9X
 G-<0r(<1v
-G99IF
 G?<!t/
 GDI32.dll
 GET_ATTRIBUTES_VALUES failed for controller %p
@@ -2250,10 +2248,11 @@ H!T$0D
 H)~ H;
 H+B0I
 H-^Eu
-H9-Q+
+H9-1"
 H93t5H
 H97u+A
 H9;t\H
+H9=m;
 H9A u
 H9B t
 H9D$@
@@ -2400,7 +2399,6 @@ HidD_SetNumInputBuffers
 HidD_SetOutputReport
 HidP KDR
 HidP_GetCaps
-Hk|f|JZT
 Hs0Q4
 HygonGenuine
 I(HcA8I
@@ -2467,6 +2465,7 @@ Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 Il?333333c?
 ImmAssociateContext
 ImmGetCandidateListW
+ImmGetCompositionFontW
 ImmGetCompositionStringW
 ImmGetContext
 ImmGetIMEFileNameA
@@ -2792,6 +2791,7 @@ M H1E
 M'y>0y
 M+4$I
 M0M9w0u
+M4+M<
 M9`8tT
 MB(iVR
 MFCreateAttributes
@@ -2943,6 +2943,7 @@ Number of buttons exceeds limit of %d
 Numlock
 O,D9C u
 O4IcG
+O@up9
 OES H
 OES t\
 OES uwH
@@ -3106,7 +3107,7 @@ RDEF\
 RENDER
 RIFF form type is not WAVE (not a Waveform file)
 RIFF size truncates chunk
-RSDS)
+RSDShL
 RTS00
 RTS0H
 RaiseException
@@ -3143,7 +3144,6 @@ Renderer already associated with window
 Renderer does not support RenderCopyEx
 Renderer doesn't support querying output size
 Renderer's window has been destroyed, can't use further
-Requested renderer for SDL_FRAMEBUFFER_ACCELERATION is not available
 Reset()
 ResetEvent
 Resetting device
@@ -3188,7 +3188,7 @@ SDL failed to get a vertex buffer for this Direct3D 9 rendering batch!
 SDL generic title storage driver
 SDL generic user storage driver
 SDL offscreen video driver
-SDL-prerelease-3.1.2-615-g8949de397
+SDL-prerelease-3.1.2-681-ged9bbb2dc
 SDL.display.HDR_enabled
 SDL.internal.texture.parent
 SDL.internal.window.renderer
@@ -3496,6 +3496,7 @@ SDL_EVENT_SENSOR_UPDATE
 SDL_EVENT_SYSTEM_THEME_CHANGED
 SDL_EVENT_TERMINATING
 SDL_EVENT_TEXT_EDITING
+SDL_EVENT_TEXT_EDITING_CANDIDATES
 SDL_EVENT_TEXT_INPUT
 SDL_EVENT_USER
 SDL_EVENT_WILL_ENTER_BACKGROUND
@@ -3809,6 +3810,7 @@ SDL_GetRenderDrawColor
 SDL_GetRenderDrawColorFloat
 SDL_GetRenderDriver
 SDL_GetRenderLogicalPresentation
+SDL_GetRenderLogicalPresentationRect
 SDL_GetRenderMetalCommandEncoder
 SDL_GetRenderMetalLayer
 SDL_GetRenderOutputSize
@@ -3853,6 +3855,7 @@ SDL_GetSurfaceProperties
 SDL_GetSystemRAM
 SDL_GetSystemTheme
 SDL_GetTLS
+SDL_GetTextInputArea
 SDL_GetTextureAlphaMod
 SDL_GetTextureAlphaModFloat
 SDL_GetTextureBlendMode
@@ -3937,7 +3940,7 @@ SDL_HasSSE42
 SDL_HasScreenKeyboardSupport
 SDL_HideCursor
 SDL_HideWindow
-SDL_IME_SHOW_UI
+SDL_IME_IMPLEMENTED_UI
 SDL_IOFromConstMem
 SDL_IOFromDynamicMem
 SDL_IOFromFile
@@ -4215,7 +4218,6 @@ SDL_RenderFillRects
 SDL_RenderFillRects(): rects
 SDL_RenderGeometry
 SDL_RenderGeometryRaw
-SDL_RenderGeometryRawFloat
 SDL_RenderLine
 SDL_RenderLines
 SDL_RenderLines(): points
@@ -4325,7 +4327,7 @@ SDL_SetSurfaceColorspace
 SDL_SetSurfacePalette
 SDL_SetSurfaceRLE
 SDL_SetTLS
-SDL_SetTextInputRect
+SDL_SetTextInputArea
 SDL_SetTextureAlphaMod
 SDL_SetTextureAlphaModFloat
 SDL_SetTextureBlendMode
@@ -4370,6 +4372,7 @@ SDL_ShowWindowSystemMenu
 SDL_SignalCondition
 SDL_SoftStretch
 SDL_StartTextInput
+SDL_StepUTF8
 SDL_StopHapticEffect
 SDL_StopHapticEffects
 SDL_StopHapticRumble
@@ -4694,6 +4697,7 @@ SV_TARGET
 SV_Target
 SWATH
 SWAUH
+SWAVAWH
 SWAVH
 SYSTEM
 S^>#/
@@ -5007,7 +5011,6 @@ UYVYt	H
 UYVYt0H
 UYVYu
 UYVYu^
-Ugn^b
 Unable to create DIB
 Unable to create DXGI interface
 Unable to create Direct3D interface
@@ -5238,6 +5241,7 @@ WakeConditionVariable
 Washington1
 Wednesday
 WideCharToMultiByte
+Window framebuffer support not available
 Window must be created with SDL_WINDOW_TRANSPARENT
 Window surface is invalid, please call SDL_GetWindowSurface() to get a new surface
 Windows
@@ -5261,6 +5265,7 @@ XA_A]_^][
 XA_A^A\]
 XA_A^A]A\_^][
 XA_A^A]^][
+XA_A^_[
 XA_A^_^
 XA_A^_^][
 XInput ArcadePad #%d
@@ -5335,7 +5340,6 @@ You probably don't have a working Vulkan driver installed. %s %s %s(%d)
 Ypitch
 Yplane
 Z< tV<,u53
-ZVfJ@
 Z\>z8
 Zod(^?
 [*ncd>0
@@ -5418,6 +5422,7 @@ Zod(^?
 ^8U)zj
 ^<V7w
 ^RfN>
+^qI$qnt
 _ A9n
 _ H;_@tKH
 _RDATA
@@ -5556,12 +5561,14 @@ c`9{8uoL
 callback
 calloc_func
 camera
+candidates
 cbGUID
 cfgmgr32.dll
 chrome
 color
 color_scale
 colorspace
+composition
 context
 count
 d!t!i,j,
@@ -5598,7 +5605,6 @@ dddd, MMMM dd, yyyy
 default
 desc missing sensor descriptions
 desc missing touchpad descriptions
-dhIok
 direct-to-disk audio
 direct3d
 direct3d11
@@ -5933,6 +5939,7 @@ hidapi device
 hidapi joystick
 hidapi,*,a:b0,b:b1,back:b4,dpdown:b12,dpleft:b13,dpright:b14,dpup:b11,guide:b5,leftshoulder:b9,leftstick:b7,lefttrigger:a4,leftx:a0,lefty:a1,rightshoulder:b10,rightstick:b8,righttrigger:a5,rightx:a2,righty:a3,start:b6,x:b2,y:b3,
 hidden
+hide_numpad
 high_pixel_density
 hint:
 hint:SDL_GAMECONTROLLER_USE_BUTTON_LABELS
@@ -5983,8 +5990,10 @@ kEDdDk}Ldk}Hd
 k_eControllerType_
 kz#+c
 l$ ATAVAWD
+l$ ATAVAWH
 l$ AVH
 l$ E3
+l$ UAVAWH
 l$ VAVAWH
 l$ VAWLcI43
 l$ VAWLcQ43
@@ -6016,7 +6025,7 @@ l$0t	H
 l$8A_A^A\
 l$8E3
 l$8Hc
-l$8Hc-
+l$8Hc-<
 l$8f;
 l$8fD
 l$8tK
@@ -6080,7 +6089,6 @@ misc5
 misc6
 modal
 model
-modified
 mouse_grabbed
 mouse_input
 mutex
@@ -6088,6 +6096,7 @@ n!~!c,}
 n03>Pu
 n9kTH
 nAtfA
+nD$83
 nL$XL
 nT$PH
 n]?iJ
@@ -6243,9 +6252,7 @@ righty
 s HcP@
 s#IcU
 s%fD9
-s%fff
 s(HcC
-sWc_)
 s`D9sdtYH
 sampler0
 scRGB_output
@@ -6340,6 +6347,7 @@ t$HA_A^A]A\_
 t$HE3
 t$HH9
 t$HHi
+t$HfA9
 t$Ht/H
 t$PD+
 t$PE3
@@ -6382,10 +6390,12 @@ t69|$ u0
 t6H9l$(t/H
 t6L;C
 t7HcP
+t8<0t&H
 t>L9|$(t/H
 t?8_:t
 t?< uPA
 tA8_:t
+tH@80tCH
 tHLcD$xMc
 tK90~7L
 tKH;=
@@ -6437,7 +6447,6 @@ touchpad:b12,misc2:b13,misc3:b14
 tpHcC
 transparent
 truncate
-tsHcUhH
 tuHcD$0
 twD;ALtqD
 twfA9]
@@ -6512,14 +6521,13 @@ uniform vec3 Yoffset;
 uniform vec3 u_offset;
 unknown
 unknown object
-unmodified
 unused_pad0
 uoH9-
 upHcK
 userdata
 utD9w
 utility
-uxH9=
+uxH9=&w
 uxHcC
 uzKs@>
 v2!L.2
@@ -6775,6 +6783,7 @@ vulkan.texture
 v}`[>
 w t|H
 w(IcG
+w*~9d
 w.fA;
 w0_row
 w1_row
@@ -6857,6 +6866,7 @@ znul%
 {?!u,
 {Xt1D9ctt2A
 {hf9C u
+{iX6;,
 {un'%
 {w8&-
 |#tAM
@@ -6899,6 +6909,8 @@ znul%
 |$0H#
 |$0Hc
 |$0_[
+|$0t"H
+|$0u#H
 |$8;3
 |$8A_A^A\
 |$8E3
@@ -6908,8 +6920,6 @@ znul%
 |$8]u+
 |$8f;k:s,
 |$8u1H
-|$8u@H
-|$<fD
 |$@-H
 |$@8E:tS
 |$@A_A^A]A\
@@ -6938,7 +6948,6 @@ znul%
 |$`9h$t
 |$`A+
 |$`D;
-|$`E3
 |$`H;
 |$`fA
 |$hE3
@@ -6962,7 +6971,6 @@ znul%
 }P;}Hs
 }PD9}H
 }XLcEHI
-}h><P
 ~	f;{
 ~ $s%r
 ~(fff

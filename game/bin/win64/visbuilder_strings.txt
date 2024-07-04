@@ -50,7 +50,7 @@
   Problem     : Enum value did not match field type:
   Problem     : Field is not the right type for this message:
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$8
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -485,7 +485,6 @@ $schemasystem/schema_enable_defines.h
 (("**,
 ((6"8(:,<*>
 (0`hpx
-(5P~	
 (A^A\^[
 (A^A]^[
 (A^A]_^
@@ -596,7 +595,6 @@ $schemasystem/schema_enable_defines.h
 )#GameUI_Disconnect_SteamDeny_BadAntiCheat
 )#Player_DisconnectReason_ConvictedAccount
 )#Player_DisconnectReason_UntrustedAccount
-))X2`A=
 )<$E3
 )<$fD
 )>6{1n
@@ -921,16 +919,16 @@ $schemasystem/schema_enable_defines.h
 .xdata$x
 /2GG>!B
 />58d%
-/D$Lr 
-/D$Xw
+/D$\r 
+/D$hw
 /D$pv
 /D$tv
 /D$xv
 /D$|v
 /D(\w
-/T$Pr
-/T$\w
-/d$Tw
+/T$`r
+/T$lw
+/d$dw
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -989,7 +987,7 @@ $schemasystem/schema_enable_defines.h
 220323000000Z
 220801000000Z
 230714000000Z
-240627200639Z0/
+240704151244Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1006,7 +1004,7 @@ $schemasystem/schema_enable_defines.h
 360428235959Z0i1
 370322235959Z0c1
 380115120000Z0b1
-3;l$ t
+3;l$@t
 3<$u?A
 3>N;kU
 3>fvw
@@ -1016,9 +1014,9 @@ $schemasystem/schema_enable_defines.h
 4;tMA
 4@Mc<
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+4xG;<,
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
-5l;v<0
 6*f(_
 6I]Dc
 6OB,n_
@@ -1096,7 +1094,6 @@ $schemasystem/schema_enable_defines.h
 :F<N:V>
 ;.u1L
 ;?0123456789:;<=>?
-;D$H}yH
 ;E@sAL
 ;Eh~AA
 ;F@s:L
@@ -1241,6 +1238,7 @@ $schemasystem/schema_enable_defines.h
 @.data
 @.reloc
 @08@HPX`hpx
+@08N4
 @0HcB
 @84)u
 @8HcB
@@ -1282,8 +1280,7 @@ $schemasystem/schema_enable_defines.h
 @HD9$(u#Lc3H
 @HHcB$;B(u
 @HPX&I
-@HPX`hv`:
-@HVpH
+@HPX`hv
 @Hc93
 @PHcB(;B,u
 @SATAUAVAWH
@@ -1509,7 +1506,6 @@ AppPolicyGetProcessTerminationMethod
 April
 AreFileApisANSI
 AssertCast
-AssertCastNumberInternal
 AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetRenameSystem_001
@@ -1525,6 +1521,7 @@ B H+X(
 B L+P(H
 B L+P(I
 B$D	B
+B&E/5
 B(H9A(uaH
 B(I9A(
 B3D?t%
@@ -1554,6 +1551,7 @@ BinaryProperties_GetValue
 BoneConstraintList
 Boolean default must be true or false.
 BoxIntersectRTEnvNode
+BuildEnclosedClusters
 Building map visibility
 Built %s clusters in %.1fs
 C H+X(
@@ -2092,8 +2090,7 @@ Can't print proto content: proto type
 Can't reach
 Cannot get here
 Cannot skip field value, unexpected token: 
-Cast of %s loses value information (returning %s)
-Cast of %s loses value information (returning %s) on %s:%d
+Cast of %s loses value information (returning %s) in %s on %s:%u
 Cd$`L
 Cd$xH
 Ch9C,
@@ -2107,6 +2104,7 @@ ClutterSceneObject_t::Schema_VerifyBindingIsRegistered
 ClutterTile_t
 ClutterTile_t::KV3Transfer_DefaultKeys_Impl
 ClutterTile_t::Schema_VerifyBindingIsRegistered
+CollapseRegions
 Color
 CommandLine
 Compacted to %d regions (%d clusters) in %.2f seconds [target %d clusters]
@@ -2145,7 +2143,6 @@ D$ #C
 D$ .A
 D$ 1u<
 D$ 7\[OL
-D$ 9F(
 D$ 9P }
 D$ @2
 D$ BR
@@ -2173,7 +2170,6 @@ D$01u<
 D$09p }
 D$0<`u
 D$0@8{
-D$0A9D$(
 D$0BR
 D$0E3
 D$0E9`
@@ -2187,12 +2183,11 @@ D$0H;S
 D$0HcFXL
 D$0HcH
 D$0HcP
-D$0Hc^@
 D$0L9P s
 D$0L;
 D$0Lc<
 D$0LcJ
-D$0Lc|$(H
+D$0Lc|$HH
 D$0Mc
 D$0f;
 D$0fD
@@ -2214,6 +2209,7 @@ D$8inf
 D$8nan
 D$8sBA
 D$<8A
+D$@9F(
 D$@E3
 D$@H+
 D$@H9X s
@@ -2223,6 +2219,7 @@ D$@H;GXt2H
 D$@Hc
 D$@L9@ r
 D$@M;
+D$@Mc
 D$@f;
 D$@fD
 D$@ff
@@ -2234,7 +2231,6 @@ D$DE3
 D$HE3
 D$HH;
 D$HHc
-D$HIc\$@
 D$HJc
 D$HL9gXt
 D$HLc3
@@ -2247,11 +2243,13 @@ D$HtQ
 D$HtT
 D$LHc
 D$P%A
+D$PA9D$(
 D$PD8
 D$PD;
 D$PE3
 D$PH+
 D$PH;
+D$PHc^@
 D$PI;
 D$PL;
 D$Pf;
@@ -2285,14 +2283,16 @@ D$`Mc
 D$`f;
 D$dHc
 D$h9t$P
+D$hE3
 D$hH;
+D$hIc\$@
 D$hf;
 D$hff
+D$hfff
 D$htqL
 D$pA+
 D$pH;
 D$pHc
-D$pL;
 D$pf;
 D$pu3M
 D$tA;
@@ -2382,7 +2382,7 @@ D;w0|
 D;wM9oxt	I
 D;{(|
 D;|$0u
-D;|$X
+D;|$x
 DEFAULT_WRITE_PATH
 DNnW'
 DO NOT PARSE: fields may be stripped and missing.
@@ -2432,6 +2432,7 @@ E>nEA
 EH*?H
 EHH;EPt
 ENetworkDisconnectionReason
+EN|w5/
 EPA	v
 EPD	v
 EPD	w
@@ -2586,6 +2587,7 @@ FileDescriptorSet
 FileOptions
 Files that do not use optimize_for = LITE_RUNTIME cannot import files which do use this option.  This file is not lite, but it imports "
 Files with optimize_for = LITE_RUNTIME cannot define services unless you set both options cc_generic_services and java_generic_services to false.
+FinalizeRegions
 FindClose
 FindFirstFileExW
 FindNextFileW
@@ -2746,12 +2748,8 @@ H-^Eu
 H8Lc$
 H9(tO
 H92tBA
-H954X
-H95g'
 H97u+A
 H98t2
-H9=Jo
-H9=oz
 H9A s
 H9A u)M
 H9C H
@@ -2806,7 +2804,6 @@ HHcA H
 H[><y5
 HammerMapLoader001
 HasField
-Hc3;s
 Hc7;w
 Hc;;{
 HcAxE3
@@ -2871,8 +2868,8 @@ HcK H
 HcK Hc
 HcK,I
 HcKp;
-HcL$8H
 HcL$@
+HcL$XH
 HcO H
 HcQ<H
 HcT$$
@@ -3080,6 +3077,7 @@ KPf;O
 KV3 instances cannot be set to an unspecified specific type
 KV3 save text failed: %s
 KV3 save transfer failed: %s
+KV3Helper_CheckValueNumericCast
 Key in map fields cannot be enum types.
 Key in map fields cannot be float/double, bytes or message types.
 KeyValueCache001
@@ -3143,7 +3141,6 @@ L$(E3
 L$(H+
 L$(H3
 L$(Hc
-L$(Mc
 L$0D9a
 L$0D;A
 L$0E3
@@ -3183,17 +3180,17 @@ L$@f;
 L$@uU
 L$AE3
 L$DH;T$xt
-L$H;^(
 L$HE3
 L$HH3
 L$HHc\$@I
 L$HLc
+L$HMc
 L$Hf;
-L$Hr'
 L$P+G$E3
 L$PE3
 L$PH3
 L$PH;
+L$PMc
 L$Pf;
 L$QE3
 L$XD;v$
@@ -3201,6 +3198,7 @@ L$XH3
 L$XH;M
 L$XIc|
 L$Xf;
+L$Xr'
 L$`;M
 L$`E3
 L$`H3
@@ -3211,6 +3209,7 @@ L$`f;
 L$h+G$3
 L$h+G$L
 L$h;M
+L$h;^(
 L$hA+E
 L$hH+
 L$hH3
@@ -3241,7 +3240,8 @@ L+H0H
 L+i0I
 L9#u/H
 L92tDA
-L95mg
+L958v
+L95Gu
 L9;u	H
 L9@ s
 L9BHA
@@ -3256,6 +3256,7 @@ L9p tkI
 L9s u$H
 L9{0u	
 L9|$pt
+L;5ag
 L;A r
 L;EPL
 L;Q s
@@ -3289,9 +3290,8 @@ LcK H
 LcL$ 
 LcL$ 3
 LcL$ D
-LcL$$H
+LcL$DH
 LcL$XI
-LcL$hH
 LcN H
 LcN@L
 LcT$ E3
@@ -3303,7 +3303,7 @@ Lcd$0
 Lcl$ A
 Lcl$HD;
 Lct$PA
-Lct$XHc
+Lct$xHc
 Lcv D
 Lcw@D;wPu
 Leaf %d has missing voxels %llx
@@ -3385,6 +3385,7 @@ Mc~(M
 Md$@A
 MemAlloc_StrDupFunc
 Merge vis clusters:
+MergeInsideRegions
 Merged cluster lists in %.2f seconds [%d clusters]
 Merged to %d clusters in first pass
 Merged to %d clusters in second pass
@@ -3410,6 +3411,7 @@ Missing name.
 ModelDocUtils001
 Monday
 MovementSettings
+MuWv8
 MultiByteToWideChar
 Multiple extension registrations for type "
 Must call SetMetadataEnabled on the root KV3 context to track metadata
@@ -3483,7 +3485,6 @@ O$M9o
 O(HcV
 O0+W8
 O8HcB
-O:9W86
 OBJECT_TYPE_BLOCK_LIGHT
 OBJECT_TYPE_DISABLED_IN_LOW_QUALITY
 OBJECT_TYPE_MODEL
@@ -3516,6 +3517,8 @@ Ordered object's memory was modified prior to construction
 Outside detection took %.2f seconds
 OverlayProjectionDirection
 P08@J
+P08J@K	
+P08N4
 P>q_Y~
 P@HPX`hpx
 PA^A]A\^[
@@ -3563,6 +3566,7 @@ PxL9`
 Pz}b!
 Q0I;Q8t
 Q5rHg,>
+QQo`g9/L
 QueryPerformanceCounter
 RB dH
 RaiseException
@@ -3732,6 +3736,8 @@ Source2V8System001
 SourceCodeInfo
 SpawnGroupFlags_t
 SplitInstanceSubtree
+SplitNodeIntoRegions
+SplitNode_r
 Stack depth limit hit (%d)
 StatsService_001
 SteamAudio001
@@ -3792,13 +3798,11 @@ T$XHc\$PI
 T$Zfff
 T$`H;
 T$`fA;
-T$hA;7
 T$hH;
 T$hHc
 T$hI;
 T$hL;MPt
 T$hM;
-T$lE3
 T$pH+
 T$pH;
 T$pH;M
@@ -4191,6 +4195,7 @@ _nextafter
 _oD>Kg
 `+!]?
 `.rdata
+`:`e	
 `A]_[
 `A^_^
 `A^_^][
@@ -4285,6 +4290,7 @@ box_mins
 boxed_type
 bp(=>?g
 broken pipe
+bylw8
 bytes
 c HcC8
 c [1>H'
@@ -4299,7 +4305,6 @@ cached_fp == new_fp
 cached_handle == ((HANDLE)(LONG_PTR)-1)
 cached_handle == new_handle
 can't reach here.
-cb[duB
 cc_enable_arenas
 cc_generic_services
 char8
@@ -4578,7 +4583,6 @@ l$@A+
 l$@E3
 l$@Icl
 l$@L+
-l$@fA
 l$@t	H
 l$HA_A^A]A\_^
 l$HH3
@@ -4586,6 +4590,7 @@ l$HIc
 l$PH9C t;A
 l$PH;
 l$PL;
+l$PfA
 l$Pt	H
 l$XA;
 l$XD3wPL
@@ -4911,7 +4916,7 @@ p WATAUAVAWH
 p WATAWH
 p WAVAWH
 p*W4H
-p08@H^
+p08@H^4
 p0R^G'
 p7M}f
 p;Y>u
@@ -4977,7 +4982,6 @@ pvstype
 py_generic_services
 q(Lc6E
 qS>g?h3
-q[N,q
 qangle
 quaternion
 r	Vr.>T
@@ -4988,7 +4992,6 @@ r:f;\$|
 rKf;\$t
 rNf;\$t
 r_f;\$l
-r`7`-
 range check failure
 rbf;\$l
 read only file system
@@ -5182,7 +5185,6 @@ tLLcx|M
 tMI92uHM
 tQfD9 tK
 tRLcY
-tSE;y
 tSf91tNH
 tU;\$0tH
 tUH95
@@ -5338,7 +5340,8 @@ xKD;I
 xVD;A
 xWI96tRI
 x_^][
-xtMc4
+xuMc4
+xv;D$H}pH
 y\PD>!
 yxxxxxxxH
 z :"U
@@ -5370,7 +5373,6 @@ zY;>u:m
 |$ }[H
 |$$H99tAA
 |$$H9y
-|$$Mc
 |$($`<`u
 |$(A^
 |$(E3
@@ -5379,7 +5381,6 @@ zY;>u:m
 |$0E3
 |$0H;
 |$0Hc
-|$0Ic
 |$0L+
 |$0M+
 |$0uE
@@ -5392,7 +5393,6 @@ zY;>u:m
 |$8~ H
 |$@	u
 |$@-D
-|$@A;
 |$@E3
 |$@H+
 |$@H;
@@ -5400,6 +5400,7 @@ zY;>u:m
 |$@Hc}
 |$@I;
 |$DE3
+|$DMc
 |$H9W
 |$H9~@
 |$H;|$LL
@@ -5409,6 +5410,7 @@ zY;>u:m
 |$PE3
 |$PHc;
 |$PI;
+|$PIc
 |$PL;
 |$PM;
 |$P}[H
@@ -5421,6 +5423,7 @@ zY;>u:m
 |$`;{<
 |$`A+
 |$`A9}
+|$`A;
 |$`CI
 |$`H;
 |$hE3

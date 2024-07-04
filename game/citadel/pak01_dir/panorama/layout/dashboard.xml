@@ -23,7 +23,7 @@
 				<Panel id="PlayMenu" hittest="false">
 					<Panel id="GameTitleSpacer" />
 					<Panel id="PlayTitle">
-						<Label text="Select Play Mode:" />
+						<Label text="#Citadel_Main_PlayMode" />
 					</Panel>
 					<Panel id="PlayOptions" hittest="false">
 						<Panel class="menu_divider" />
@@ -52,7 +52,7 @@
 				<Panel id="LeftStripe" hittest="false">
 					<Panel id="LogoArea">
 						<Panel id="GameTitle" />
-						<Label class="GameSubtext" text="Early Development Build" />
+						<Label class="GameSubtext" text="#Citadel_Main_EarlyDevBuild" />
 					</Panel>
 					<Panel id="Menu" hittest="false">
 						<Panel class="InGameOptions">
@@ -63,10 +63,10 @@
 								<Panel class="MenuIcon" />
 								<Label text="#menu_changehero" class="menuButtonLabel" />
 							</Button>
-							<Button id="reconnect" class="nav_menu_item primary" onactivate="CitadelReconnect(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( Rejoin your game in progress ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
+							<Button id="reconnect" class="nav_menu_item primary" onactivate="CitadelReconnect(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( #Citadel_Dashboard_RejoinTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 								<Label text="#menu_rejoin" class="menuButtonLabel" />
 							</Button>
-							<Button id="lobbyleave" class="nav_menu_item primary endsession" onactivate="CitadelLeaveGameLobby(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( Abandons you from the match you are currently playing ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
+							<Button id="lobbyleave" class="nav_menu_item primary endsession" onactivate="CitadelLeaveGameLobby(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( #Citadel_Dashboard_AbandonTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 								<Label text="#menu_abandon" class="menuButtonLabel" />
 							</Button>
 							<Button id="disconnect" class="nav_menu_item primary endsession" onactivate="CitadelConfirmDisconnectFromGame(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseout="CitadelHoverTextStop()">
@@ -85,22 +85,22 @@
 						</Panel>
 						<Button id="matchmakePartySetMode" class="nav_menu_item primary partymenu" onactivate="CitadelPartyOpenPlayPage(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelUIShowTextTooltip( #Citadel_Dashboard_PartySetModeButtonTooltipText, UI.MainMenu.Hover, &apos;&apos; );" onmouseout="CitadelUIHideTextTooltip()">
 							<Label text="#menu_play" class="menuButtonLabel" />
-							<Label class="queueNumber" text="{s:mm_unranked_count} in Queue" html="true" />
+							<Label class="queueNumber" text="#menu_play_normal_count" html="true" />
 						</Button>
 						<Button id="matchmakePartyPlay" class="nav_menu_item primary partymenu" onactivate="CitadelPartyFindMatch(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelUIShowTextTooltip( #Citadel_Dashboard_PlayButtonTooltipText, UI.MainMenu.Hover, &apos;&apos; );" onmouseout="CitadelUIHideTextTooltip()">
 							<Label text="#menu_play" class="menuButtonLabel" />
-							<Label class="queueNumber" text="{s:mm_unranked_count} in Queue" html="true" />
+							<Label class="queueNumber" text="#menu_play_normal_count" html="true" />
 						</Button>
 						<Button id="matchmakePartyPlayNotReady" class="nav_menu_item primary partymenu" onactivate="CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelUIShowTextTooltip( #Citadel_Dashboard_PlayButtonTooltipText, UI.MainMenu.Hover, &apos;&apos; );" onmouseout="CitadelUIHideTextTooltip()">
 							<Label text="#menu_play" class="menuButtonLabel" />
 						</Button>
 						<Button id="matchmakeEnter" class="nav_menu_item primary" onactivate="CitadelNavigateToPlayPage(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseout="">
 							<Label text="#menu_play" class="menuButtonLabel" />
-							<Label class="queueNumber" text="{s:mm_unranked_count} in Queue" html="true" />
+							<Label class="queueNumber" text="#menu_play_normal_count" html="true" />
 						</Button>
 						<Button id="matchmakeEnterSteamDeck" class="nav_menu_item primary" onactivate="" onmouseover="CitadelUIShowTextTooltip( #Citadel_Dashboard_PlayButtonTooltipTextSteamDeck, UI.MainMenu.Hover, &apos;&apos; );" onmouseout="CitadelUIHideTextTooltip()">
 							<Label text="#menu_play" class="menuButtonLabel" />
-							<Label text="{s:queued_users} in Queue" class="queueNumber" html="true" />
+							<Label text="#menu_play_allmodes_count" class="queueNumber" html="true" />
 						</Button>
 						<Button id="rosterDetail" class="nav_menu_item primary" onactivate="CitadelShowRosterConfirmPage( 7 ); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 							<Panel class="MenuIcon" />
@@ -138,16 +138,12 @@
 							<Label text="#menu_exit" class="menuButtonLabel" />
 						</Button>
 						<Panel id="SubOptions">
-							<Button id="patch_version" class="nav_menu_item minor" onactivate="CitadelShowLatestPatchNotes(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( View the latest patch notes ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
+							<Button id="patch_version" class="nav_menu_item minor" onactivate="CitadelShowLatestPatchNotes(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( #Citadel_Dashboard_PatchNotesTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 								<Label text="Patch Notes - {s:patch_version}" class="menuButtonLabel patch_version_text" />
 							</Button>
-							<Button id="settings" class="nav_menu_item minor" onactivate="CitadelSettings(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( Adjust setting such as display and audio ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
+							<Button id="settings" class="nav_menu_item minor" onactivate="CitadelSettings(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( #Citadel_Dashboard_SettingsTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 								<Panel class="smallIcon GearIcon" />
 								<Label text="#menu_settings" class="menuButtonLabel" />
-							</Button>
-							<Button id="submit_feedback" class="nav_menu_item minor" onactivate="CitadelSubmitFeedback(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( Submit feedback or issues ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
-								<Panel class="smallIcon SendIcon" />
-								<Label text="#menu_submit_feedback" class="menuButtonLabel" />
 							</Button>
 							<Button id="control_zoo" class="nav_menu_item minor" onactivate="CitadelToggleControlZoo();" onmouseover="UIShowTextTooltip( View control Zoo ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 								<Panel class="smallIcon ZooIcon" />
@@ -168,7 +164,7 @@
 						<Panel id="BookNewCircle" />
 						<Panel id="BookNewFrame" />
 					</Panel>
-					<Label class="ViewLabel" text="View Library" />
+					<Label class="ViewLabel" text="#Citadel_Dashboard_ViewLibrary" />
 				</Panel>
 				<Panel id="PartyContainer">
 					<Panel class="ProfileBacker" />
@@ -178,8 +174,8 @@
 				<Panel id="StatusIcons">
 					<Panel class="newBadge" />
 					<Panel id="Announcements" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" onactivate="CitadelToggleViewAnnouncements()">
-						<Panel class="AnnouncementIcon" onmouseover="UIShowTextTooltip( Show Announcements );" onmouseout="UIHideTextTooltip()" />
-						<Panel class="AnnouncementIconClose" onmouseover="UIShowTextTooltip( Close Announcements );" onmouseout="UIHideTextTooltip()" />
+						<Panel class="AnnouncementIcon" onmouseover="UIShowTextTooltip( #Citadel_Dashboard_ShowAnnounceTooltip );" onmouseout="UIHideTextTooltip()" />
+						<Panel class="AnnouncementIconClose" onmouseover="UIShowTextTooltip( #Citadel_Dashboard_CloseAnnounceTooltip );" onmouseout="UIHideTextTooltip()" />
 					</Panel>
 				</Panel>
 				<Panel id="NewPlayerContainer">
@@ -199,46 +195,46 @@
 				<Panel id="PlaytestContainer">
 					<Panel id="matchmaking_status">
 						<Panel id="playtest_status">
-							<Label class="status_label" text="Status:" />
+							<Label class="status_label" text="#Citadel_Playtest_Status" />
 							<Label class="match_queue_text server_count" text="{s:server_count}" />
-							<Label id="playtest_upcoming" class="playtest_upcoming_time" text="Playtest begins {t:l:t:m:playtest_start}" />
-							<Label class="playtest_active_time" text="Matchmaking open until {t:t:playtest_end}" />
-							<Label class="match_queue_text unranked_mm_paused" text="Matchmaking is currently paused: {t:d:unranked_mm_pause_time}" />
+							<Label id="playtest_upcoming" class="playtest_upcoming_time" text="#Citadel_Playtest_Upcoming" />
+							<Label class="playtest_active_time" text="#Citadel_Playtest_MatchmakingOpen" />
+							<Label class="match_queue_text unranked_mm_paused" text="#Citadel_Playtest_MatchmakingPaused" />
 						</Panel>
 						<Panel id="new_playtest_schedule">
 							<Panel id="playtest_schedule_info">
-								<Label class="schedule_label" text="Playtest Schedule:" />
-								<Label class="region_label" text="Region: {s:region_name}" />
+								<Label class="schedule_label" text="#Citadel_Playtest_Schedule" />
+								<Label class="region_label" text="#Citadel_Playtest_Region" />
 							</Panel>
 							<Panel id="playtest_schedule_times">
 								<Panel id="playtest_weekday" class="playtest_date_box">
-									<Label class="playtest_days" text="Monday - Thursday:" />
+									<Label class="playtest_days" text="#Citadel_Playtest_Weekdays" />
 									<Panel class="playtest_date_time">
 										<Label class="playtest_time" text="{t:t:weekday_start} - {t:t:weekday_end}" />
-										<Label class="local_time" text="Local Time" />
+										<Label class="local_time" text="#Citadel_Playtest_LocalTime" />
 									</Panel>
 								</Panel>
 								<Panel id="playtest_weekend" class="playtest_date_box">
-									<Label class="playtest_days" text="Friday - Sunday:" />
+									<Label class="playtest_days" text="#Citadel_Playtest_Weekends" />
 									<Panel class="playtest_date_time">
 										<Label class="playtest_time" text="{t:t:weekend_start} - {t:t:weekend_end}" />
-										<Label class="local_time" text="Local Time" />
+										<Label class="local_time" text="#Citadel_Playtest_LocalTime" />
 									</Panel>
 								</Panel>
 							</Panel>
 						</Panel>
 					</Panel>
 					<Panel id="DiscordInvite">
-						<Label class="discordIntro" text="Join the Deadlock discord to chat with other players and get latest news." />
+						<Label class="discordIntro" text="#Citadel_Playtest_DiscordInfo" />
 						<Button id="DiscordButton" class="SecondaryButton fill light hasIcon" onactivate="CitadelConfirmDiscord(); CitadelPlayUISound( ESocialMenuHover )">
 							<Panel class="DiscordIcon buttonIcon" />
-							<Label text="Join the Discord" />
+							<Label text="#Citadel_Playtest_DiscordButton" />
 						</Button>
 					</Panel>
 					<Panel id="RecommendFriend">
-						<Label class="recommendIntro" text="Have someone you&apos;d like to invite to join our playtests?" />
+						<Label class="recommendIntro" text="#Citadel_Playtest_RecommendInfo" />
 						<Button id="RecommendButton" class="SecondaryButton fill light" onactivate="CitadelSubmitPlaytestUser(); CitadelPlayUISound( ESocialMenuHover )">
-							<Label text="Recommend a Friend" />
+							<Label text="#Citadel_Playtest_RecommendButton" />
 						</Button>
 					</Panel>
 				</Panel>

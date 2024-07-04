@@ -21,17 +21,17 @@
 						<Panel class="team_list" id="team2_list" />
 					</Panel>
 					<Panel class="spectate_group">
-						<Label id="match_id" text="ID: {s:match_id}" />
+						<Label id="match_id" text="#Citadel_Watch_Page_MatchID" />
 					</Panel>
 				</Panel>
 				<Panel class="match_info" hittest="false">
 					<Panel id="match_time_container">
-						<Label class="team_score" text="{d:net_worth_team_0}k" />
+						<Label class="team_score" text="#Citadel_Watch_Page_NetWorthTeam0" />
 						<Label id="match_duration" class="match_time" text="{g:citadel_match_time:match_duration}" />
 						<Countdown id="countdown_timer">
 							<Label class="match_time" text="{t:d:t:countdown_time}" />
 						</Countdown>
-						<Label class="team_score" html="true" text="{d:net_worth_team_1} k" />
+						<Label class="team_score" html="true" text="#Citadel_Watch_Page_NetWorthTeam1" />
 					</Panel>
 				</Panel>
 				<Panel id="MatchTag">
@@ -49,11 +49,11 @@
 					<Panel id="MatchComplete" class="tag">
 						<Label id="start_time" text="{t:s:t:m:match_start_time}" />
 					</Panel>
-					<Panel id="FriendInMatch" onmouseover="UIShowTextTooltip( Steam Friend in Match ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
+					<Panel id="FriendInMatch" onmouseover="UIShowTextTooltip( #Citadel_Watch_Page_FriendInMatch ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 						<Panel class="SteamFriendIcon" />
 					</Panel>
 					<Panel id="SpectatorCount">
-						<Label class="spectator_count" text="{d:spectators} Spectators" />
+						<Label class="spectator_count" text="#Citadel_Watch_Page_Spectators" />
 					</Panel>
 				</Panel>
 			</Panel>
@@ -69,15 +69,15 @@
 				</Panel>
 				<Panel class="match_info" hittest="false">
 					<Panel id="match_time_container">
-						<Label class="team_score" text="{d:net_worth_team_0}k" />
+						<Label class="team_score" text="#Citadel_Watch_Page_NetWorthTeam0" />
 						<Label id="match_duration" class="match_time" text="{g:citadel_match_time:match_duration}" />
 						<Countdown id="countdown_timer">
 							<Label class="match_time" text="{t:d:t:countdown_time}" />
 						</Countdown>
-						<Label class="team_score" html="true" text="{d:net_worth_team_1} k" />
+						<Label class="team_score" html="true" text="#Citadel_Watch_Page_NetWorthTeam1" />
 					</Panel>
 					<Panel class="spectate_group">
-						<Label id="match_id" text="ID: {s:match_id}" />
+						<Label id="match_id" text="#Citadel_Watch_Page_MatchID" />
 					</Panel>
 				</Panel>
 				<Panel id="MatchTag">
@@ -95,7 +95,7 @@
 					<Panel id="MatchComplete" class="tag">
 						<Label id="start_time" text="{t:s:t:m:match_start_time}" />
 					</Panel>
-					<Panel id="FriendInMatch" onmouseover="UIShowTextTooltip( Steam Friend in Match ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
+					<Panel id="FriendInMatch" onmouseover="UIShowTextTooltip( #Citadel_Watch_Page_FriendInMatch ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 						<Panel class="SteamFriendIcon" />
 					</Panel>
 				</Panel>

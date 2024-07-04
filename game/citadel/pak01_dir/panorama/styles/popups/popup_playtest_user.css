@@ -107,3 +107,19 @@ PopupPlaytestUser CitadelInviteFriendMenu
 	width: 800px;
 }
 
+.LocWarning
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-weight: semi-bold;
+	color: #88F;
+	max-width: 300px;
+	margin: 10px 0px 0px 0px;
+	visibility: collapse;
+}
+
+.ShowLocWarning .LocWarning
+{
+	visibility: visible;
+}
+

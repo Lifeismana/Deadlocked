@@ -506,30 +506,30 @@
 			},
 		]
 	}
-	FireCursors = 
+	TimelineClientPaintAreaRow = 
 	{
-		className = "FireCursors node_theme"
+		className = "NodeRow"
 		children = 
 		[
 			
 			{
-				inlinePreset = "BaseFlowLayouts"
-			},
-			
-			{
-				name = "ClientPaintArea"
-				className = "ClientPaintArea"
-			},
-		]
-	}
-	Timeline = 
-	{
-		className = "Timeline node_theme"
-		children = 
-		[
-			
-			{
-				inlinePreset = "BaseFlowLayouts"
+				className = "FlowRail"
+				children = 
+				[
+					
+					{
+						className = "FlowEntry"
+					},
+					
+					{
+						name = "FlowIcon"
+						className = "FlowIcon"
+					},
+					
+					{
+						className = "FlowExit"
+					},
+				]
 			},
 			
 			{

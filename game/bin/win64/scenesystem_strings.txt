@@ -146,14 +146,13 @@
  'L>[
  (%s%s)
  (08@HPX`hpx
- (08@HPX`j0
- (08@HPXb
- (08@HPZ0
- (08@HR
+ (08@HPX`j
+ (08@HPXb@
+ (08@HPZ
+ (08@HR@
  (08@J
- (08@J0
- (0:0
- (0X`hpz
+ (08@J@
+ (0X`hpz@
  (Asc)
  (Des)
  (Frozen)
@@ -168,8 +167,8 @@
  *CentralNode*
  *Inactive*
  ... }
- .PlN
- .`mN
+ .0wN
+ .pvN
  0"r$4&
  9|$T
  ; contains 
@@ -378,6 +377,7 @@
  conflicts with an existing nested message type.
  conflicts with an existing oneof type.
  contains invalid UTF-8 data when 
+ dMSL
  definition file imports the proto which defines the option.
  delete
  delete[]
@@ -442,7 +442,6 @@
 !NETWORK_DISCONNECT_LOOPDEACTIVATE
 !NETWORK_DISCONNECT_REJECT_NOLOBBY
 !NETWORK_DISCONNECT_REMOTE_TIMEOUT
-!Z	n6
 !\>G[
 !bDepthMode
 !bLooksLikeABug
@@ -466,6 +465,7 @@
 !m_pMemory
 !m_pPVSData
 !m_pendingRenderers.IsEmpty()
+!n6|cB
 !name.IsEmpty()
 !pDest->m_hEnvMapArray.GetData()
 !pMorphCompositeSet->IsTransformBufferMorphingUnused( &( pTransform->m_matTransform ) )
@@ -822,6 +822,7 @@ $2$r$
 $8H)u
 $;D$p~
 $<1mm
+$@8=^
 $@8x)
 $HcG H
 $IH+K
@@ -1100,60 +1101,75 @@ $~RE3
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 ($$fE
-(%#@!
+(%!0E
+(%* S
+(%*@E
 (%.02f)
 (%.1f,%.1f)
 (%.3f, %.3f, %.3f)
 (%.3f, %.3f, %.3f, %.3f)
 (%.3ff, %.3ff, %.3ff, %.3ff)
-(%.l?
-(%0!E
+(%1%S
+(%3H!
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) %s
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) Col %d %s
-(%<j@
-(%=&>
-(%A"E
-(%C;!
-(%J2E
-(%Y-E
-(%c6!
+(%9;E
+(%;'S
+(%SC!
+(%Sj?
+(%]	S
 (%d,%d)
 (%d,%d,%d,%d)
-(%sd?
+(%l/E
+(%s>!
+(%wt>
+(%|q?
 (("**,
 ((6"8(:,<*>
-(-0O 
-(-7&>
-(-84E
-(-9$S
-(-B;E
-(-Ka 
-(-L:E
-(-P$S
-(-W'E
-(-Ye?
-(-^?E
-(-lm@
-(-r~ 
+(-"IE
+(-,HE
+(-0-S
+(-02S
+(-75E
+(-9k?
+(->ME
+(-HL 
+(-Ls@
+(-Mz 
+(-gBE
+(-g] 
+(-i%S
+(-nj?
+(-qAE
+(-{n>
+(-}HE
+(-~-S
+(/x.-
 (0`hpx
 (1GDL
 (2) Or right-click this text
 (3) Or click this button
-(5*3T
-(56AE
-(5;x@
-(5=3T
-(5@q>
-(5h2U
-(5~AE
+(5 w>
+(5) S
+(50(S
+(55	S
+(55'S
+(5^OE
+(5h!S
+(5q%S
+(5z S
 (;^ |
 (;s |
 (<-- right-click here)
-(= 8P
-(=4&>
-(=6 S
-(=nj@
-(=o&>
+(=2 S
+(=5	S
+(=7-S
+(=C'S
+(=N%S
+(=Np@
+(=O,>
+(=b.S
+(=n2S
 (A\_H
 (A\_^[
 (A\_^]
@@ -1513,6 +1529,7 @@ $~RE3
 )D$PI;
 )D$Pf
 )D$Pi
+)D$`;
 )D$`A
 )D$`D
 )D$`H
@@ -1582,6 +1599,7 @@ $~RE3
 )T$`D
 )T$`E
 )T$pD
+)T$pE
 )T$pu]3
 )YA1H
 )\$ A
@@ -1602,7 +1620,6 @@ $~RE3
 )\$`D
 )\$`E
 )\$`H
-)\$`I
 )\$pD
 )\$pH
 )d$ E
@@ -1883,6 +1900,7 @@ $~RE3
 ..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
 ...<truncated>...
 ..om?
+./q6q
 .00cfg
 .8"6z>
 .>PJ;I:qE>
@@ -2296,13 +2314,12 @@ $~RE3
 /./f/
 /0sgE
 /2GG>!B
-/5,a7
+/5WX'
+/5_i7
 /6r+H
 /84_>
 /8r:H
 /=HV=Y
-/=Uf.
-/=Zg.
 />58d%
 />s8D8
 /?s*E
@@ -2404,9 +2421,11 @@ $~RE3
 0123456789abcdefghijklmnopqrstuvwxyz
 050s0
 08@HP
-08@HR0
+08@HR
+08@J@
 08iu*)
 0: spheres, 1: cubes
+0:`[ 
 0><[cZUg^>
 0?333?333?333?333?
 0@333@
@@ -2533,7 +2552,7 @@ $~RE3
 220801000000Z
 230714000000Z
 24 Hour Clock
-240627200754Z0/
+240704151346Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -2578,7 +2597,7 @@ $~RE3
 4-wide
 4. I am double clickable
 456789:;<=
-48;5Wzo
+48;57
 49Icn
 4:A;p|vHH
 4@D;f
@@ -2635,6 +2654,7 @@ $~RE3
 8@HP:
 8A*t5H
 8A]A\
+8A]A\_^][H
 8A]_^[
 8A^A\
 8A^A]A\[
@@ -2698,18 +2718,16 @@ $~RE3
 9)~4H
 9)~P3
 90t"H
-90t:H
+90t:I
 90u(H
 92FFCu
-95Y(j
 97vvH
 98t H
 98~(H
 98~+H
 99~CE
 9;t	I
-9=KN 
-9=oWn
+9=Oen
 9>powf
 9>~ZH
 9@9Y9`9y9
@@ -2772,8 +2790,7 @@ $~RE3
 9valu
 9yx~4
 9{Xt\@8=
-9{Xth@8=j[
-9{h~#f
+9{Xth@8=ja
 9{l~!H
 9{l~"H
 9{p~"
@@ -2825,9 +2842,12 @@ $~RE3
 ;/i$?t$
 ;3s^A
 ;3~<H
-;5.zo
+;5F> 
+;5u?s
 ;74==
-;=x)8
+;=% 8
+;=O"j
+;=X/8
 ;?0123456789:;<=>?
 ;BIb?
 ;C@r3
@@ -2959,7 +2979,6 @@ $~RE3
 <td>CLEAR_STENCIL</td>
 <td>DEBUG_BREAK</td>
 <td>DELETED</td>
-<td>DISABLED_IN_LOW_QUALITY</td>
 <td>DOES_NOT_ACCEPT_DECALS</td>
 <td>FORWARD_LAYER_ONLY</td>
 <td>GAME_OVERLAY_LAYER</td>
@@ -3334,7 +3353,7 @@ $~RE3
 ?q42s(
 ?rmMx
 ?t'<:
-?u[D8-D
+?u[D8=
 ?uzHcN
 ?vmg$9e
 ?xinput1_4.dll
@@ -3354,7 +3373,6 @@ $~RE3
 @.data
 @.reloc
 @08@HPX`hpx
-@08Nt
 @0;C0t
 @0A;A0t
 @0HcB
@@ -3397,25 +3415,19 @@ $~RE3
 @33333}
 @4A:A4u
 @4D9B4t
-@60qN
-@60tN
-@6`oN
-@6`qN
+@6P{N
+@6P~N
 @8(t:I
 @8(t@I
 @8)u&I
 @8.tj3
 @80uFI
 @84)u
-@85*7
-@854W
-@8588
-@85>"h
-@85>&h
-@85S!h
-@85g7
-@85kX
-@85pj 
+@859p 
+@85P#<
+@85k=
+@85n2h
+@85v6h
 @88twI
 @8@C@N
 @8H;C8t
@@ -3483,7 +3495,6 @@ $~RE3
 @A^_^][
 @A_A\]
 @A_A\_^[
-@A_A\_^[H
 @A_A]A\^]
 @A_A]A\_^][
 @A_A^A\
@@ -3551,6 +3562,7 @@ $~RE3
 @SUVH
 @SUVWATAUAVAWH
 @SUVWATAUAVH
+@SUVWATAUH
 @SUVWATAVAWH
 @SUVWATAWH
 @SUVWATH
@@ -3657,6 +3669,7 @@ $~RE3
 @USWH
 @UUU@
 @UVATAUAVH
+@UVATAUAWH
 @UVATAWH
 @UVAUAWH
 @UVAUH
@@ -3783,6 +3796,7 @@ A D3CDH
 A H+H(H
 A H+H(I
 A H+X(
+A HcA
 A L+H(H
 A L+H(I
 A Rather Long Title
@@ -3829,6 +3843,7 @@ A8}(u
 A9,A$
 A96u{
 A9<Fu
+A9>~*f
 A9@(|
 A9@\|
 A9D$ u
@@ -3846,7 +3861,6 @@ A9]h~@3
 A9^ ~G3
 A9t$<u
 A9w u^
-A9~p~"H
 A:%0.3f
 A:%3d
 A:8u'H
@@ -3890,6 +3904,7 @@ A>l$/
 A>pP&
 A@H9H`u
 A@L;B
+AA: e
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -4006,7 +4021,6 @@ A_A\]
 A_A\][
 A_A\^
 A_A\^[]
-A_A\_
 A_A\_[]
 A_A\_[]H
 A_A\_]
@@ -4145,6 +4159,7 @@ AddBool
 AddDouble
 AddEnum
 AddFloat
+AddFragment
 AddInt32
 AddInt64
 AddMessage
@@ -4277,7 +4292,6 @@ Asking for the bounds of an object with no bounds because it has not been added 
 Asmall
 Aspect: %f
 AssertCast
-AssertCastNumberInternal
 AssetBrowserSystem_001
 AssetGridWidget_ClearLayer
 AssetPreviewSystem_001
@@ -5876,6 +5890,7 @@ CUtlMemory<struct DrawIndirectArguments_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct EnvironmentMapBinding_t,int>::Grow
 CUtlMemory<struct EnvironmentMapBinding_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct FogVolume_t,int>::Grow
+CUtlMemory<struct FogVolume_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct FogVolume_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct FragmentCullStats_t,int>::Grow
 CUtlMemory<struct FragmentCullStats_t,int>::Grow::<lambda_1>::operator ()
@@ -6179,7 +6194,7 @@ Capture/Logging
 Caronsmall
 Carrot
 Cast of %s loses value information (returning %s)
-Cast of %s loses value information (returning %s) on %s:%d
+Cast of %s loses value information (returning %s) in %s on %s:%u
 Category A
 Category B
 Category C
@@ -6746,6 +6761,7 @@ D$LD;
 D$LE;
 D$LHc
 D$Lf+
+D$LfD
 D$P%A
 D$P9APt
 D$P9t$0
@@ -6908,28 +6924,36 @@ D333E
 D76fA
 D8 tZ
 D8!t}H
-D8%H{8
-D8%O'!
+D8%& !
 D8+t	H
-D8-B{7
-D8-Mi!
-D8-N, 
-D8-P	 
-D8-^i!
-D8-cX^
-D8-m@!
-D8-q* 
-D8-{X^
+D8-*,
+D8-7/ 
+D8-CK!
+D8-MK!
+D8-Q. 
+D8-SR 
+D8-W*j
+D8-cI!
+D8-dpr
+D8-g- 
+D8-yR 
 D8.uBH
 D8/te3
 D80t;
 D81uUL9r
 D84(u
 D84:u
-D85''j
-D85z(r
+D85E/}
+D85W7j
+D85Z6r
+D85a/}
 D88t#H
 D8<8u
+D8=3h^
+D8=5i7
+D8=Kh^
+D8=_h^
+D8=}h^
 D8>tGD9;~BD
 D8?uOD
 D8A<u
@@ -7005,13 +7029,11 @@ D9	t7
 D9 |b
 D9 ~^
 D9 ~`
-D9%o^j
+D9%	\Y
 D9&t_I
 D9&~"I
 D9&~-M
 D9'u	H
-D9-/9 
-D9-s- 
 D90u	9h
 D93v*
 D93vT
@@ -7097,6 +7119,7 @@ D9sXtjD8%^
 D9sX|JA
 D9shvBB
 D9sh~
+D9sp~(I
 D9t$$
 D9t$8u
 D9t$@vOH
@@ -7126,7 +7149,7 @@ D9|$h
 D9~@~'E
 D9~X~)M
 D:?u(D
-D;%b(8
+D;%B.8
 D;.uZH
 D;Cl|
 D;D$0
@@ -7155,6 +7178,7 @@ D;q }uH
 D;r }
 D;sHu
 D;shr
+D;sp|
 D;t$ 
 D;t$@
 D;t$`
@@ -8351,12 +8375,8 @@ H0McX
 H8HcEw
 H9(tO
 H9*t	H
-H9-6xw
-H9-=Lr
-H9-Qxw
-H9-XLr
-H9-gww
-H9-rKr
+H9-(Zr
+H9-BYr
 H9/u	H
 H90t#A
 H90t?
@@ -8364,12 +8384,15 @@ H90t@A
 H90tKA
 H92tBA
 H93t	H
-H95#b:
-H954!i
-H957;w
-H958 i
-H95<:w
-H95~\q
+H95<Iw
+H95I1i
+H95WFr
+H95WIw
+H95\Hw
+H95^jq
+H95d1i
+H95h0i
+H95yjq
 H97u)I
 H97u+A
 H98t#
@@ -8388,7 +8411,7 @@ H99ttA
 H9:t!A
 H9:t%A
 H9;t	H
-H9=.r>
+H9=mQ7
 H9A s
 H9A u
 H9A u)M
@@ -8432,6 +8455,8 @@ H9q@u
 H9qPu
 H9r`t
 H9s uvH
+H9s`u93
+H9shuJH
 H9sxt
 H9x s
 H9x`t
@@ -8439,8 +8464,6 @@ H9y@u
 H9{ u
 H9{ uI@
 H9{ uiH
-H9{`u?3
-H9{huJH
 H9|$ t
 H9|$(t
 H9|$0t
@@ -8568,12 +8591,11 @@ Handle ImGuiBackendFlags_RendererHasVtxOffset for 16-bit indices in your backend
 HasField
 HasRange: %s
 Hc+;k
-Hc-4Y]
-Hc-HOT
 Hc.;n
 Hc/;o
 Hc3;s
 Hc3Lc
+Hc5jcT
 Hc7;w
 Hc;9E0t
 Hc;;{
@@ -8647,6 +8669,7 @@ HcE_L
 HcE`H
 HcEgH
 HcEhD
+HcExH
 HcF H
 HcF L
 HcF$H
@@ -9440,7 +9463,6 @@ Items (%d)
 I|?ff6?-
 J Bush
 J H+N8
-J HcB
 J(H+N@
 J0H+NH
 J1J7JU
@@ -9490,6 +9512,7 @@ KTf;O`f
 KUMUX
 KV3 instances cannot be set to an unspecified specific type
 KV3 save transfer failed: %s
+KV3Helper_CheckValueNumericCast
 K`Lc3H
 Kanjis: 
 Kasich
@@ -9643,6 +9666,7 @@ L$0E;
 L$0H3
 L$0H;
 L$0H;K
+L$0Hi
 L$0Hk
 L$0I+
 L$0I;
@@ -9683,7 +9707,6 @@ L$@;|
 L$@A+
 L$@D+
 L$@D;
-L$@D;c
 L$@E3
 L$@E;
 L$@H+O@
@@ -9691,7 +9714,6 @@ L$@H3
 L$@H;
 L$@HcT$<H
 L$@HcU
-L$@Hi
 L$@I;
 L$@Ic
 L$@Lc
@@ -9733,6 +9755,7 @@ L$PH+OPH
 L$PH3
 L$PH9J(u
 L$PH;
+L$PH;M
 L$PHc
 L$PI9HX
 L$PL;
@@ -9826,11 +9849,16 @@ L0L:LA
 L9#t*H
 L9#u&9t$X
 L9#u/H
-L9%0\p
-L9%8[p
-L9%;]p
-L9%m+<
-L9%t\p
+L9%3[f
+L9%8]f
+L9%N[f
+L9%S]f
+L9%Tjp
+L9%Y\f
+L9%Y^f
+L9%ZZf
+L9%t^f
+L9%y0<
 L9't	H
 L9(t@
 L9/t	H
@@ -9838,22 +9866,13 @@ L90t?
 L90u	
 L92tDA
 L93t	H
-L951Nf
 L98tCA
 L9;t	H
 L9;u	H
-L9=)5v
-L9=2rw
-L9=9sw
-L9=Fqw
-L9=Tsw
-L9=Xtw
-L9=Xuw
-L9=cNr
-L9=grw
-L9=stw
-L9=suw
-L9=~Nr
+L9=3\r
+L9=ICv
+L9=N\r
+L9=l[r
 L9?t	H
 L9@ s
 L9BHA
@@ -9910,7 +9929,7 @@ L;{ u
 L;{ u?M
 L;|$@
 L;|$X
-L=|3P
+L=|CP
 L>ntGG
 L?)\O?
 L?UUUUUUU?
@@ -9980,11 +9999,13 @@ Lc&D;f
 Lc'D;g
 Lc+D;k
 Lc3D;s
-Lc53<j
+Lc5^]7
+Lc5cLj
 Lc6A+
 Lc6D;v
 Lc6L+
 Lc;D;{
+Lc=%.k
 Lc>D;~
 Lc?D;
 LcA,L
@@ -10179,7 +10200,6 @@ Lyc>=
 M#}0I
 M(H;M
 M(t-I
-M8HcE0
 M9&t	I
 M90u7
 M9` u
@@ -10833,9 +10853,7 @@ Override. Old default was 45.
 Override. Old value was 1.0
 Overrides the map's fog settings (-1 populates fog_ vars with map's values)
 P(P;P`
-P08@J
-P08J0
-P08Nt
+P08@J@
 P>q_Y~
 P@HPX`hpx
 PA\][
@@ -11308,6 +11326,7 @@ Reorderable, hideable, with headers
 Repeated fields can't have default values.
 RepresentativeTexture
 Requested unsupported scenesystem scratch rendertarget
+RequireResource
 Required fields are not allowed in proto3.
 Requires a debugger being attached, otherwise IM_DEBUG_BREAK() options will appear to crash your application.
 Requires io.ConfigDebugIsDebuggerPresent=true to be set.
@@ -11517,7 +11536,6 @@ SVWATAUAWA
 SVWATAUAWH
 SVWATAVAWH
 SVWATAVH
-SVWATAWH
 SVWATAWUH
 SVWATH
 SVWAUAVAWH
@@ -12200,6 +12218,7 @@ T$PH3
 T$PH;
 T$PIc
 T$PL;
+T$PfA
 T$PfH
 T$Tu$f
 T$XA;
@@ -12249,15 +12268,16 @@ T$xH;U
 T$xIc
 T$xLcl$XH
 T$|Hc
-T%8%E
-T%`+E
+T%@9E
+T%R-E
+T-k2E
 T08A;
-T5)*>
-T5]}2
+T5	0>
 T6HI;
 T8PHcD8HH
 T: %7.3f
 T; Lc
+T=ar,
 T>M-+?#gy?
 T>gaW?:]f?AHV>'
 T>l>~?
@@ -12780,6 +12800,7 @@ Untitled
 UpArrow
 Update delay for shadow size
 Update hysteresis for shadow size
+UpdateAllocation
 UpdateDirtyObjects
 UpdateTextureSetSlice
 UploadLightProbeVolumeConstants
@@ -13013,14 +13034,10 @@ VoxelSpaceFromWorldSpace
 Vrad3_001
 Vsmall
 W$W>WBWSW
-W%Bj4
-W%D_2
-W%kh-
 W(fA#
-W- V	
-W5%4.
-W5*x.
-W5_VD
+W-__2
+W-yd	
+W5_gD
 W9QHI
 W: %.1f
 W@9w8v8
@@ -13249,31 +13266,24 @@ X UVWAVAWH
 X UWATAUAWH
 X VWAVH
 X!t5~
-X%%d?
-X%-H7
-X%^j?
-X%tw.
-X-,j?
-X-0l@
-X-7]-
+X%>p?
+X-/q@
 X-Axis
 X-Axis %d
 X-Axis %d [0x%08X]
 X-Axis 1
 X-Axis 2
-X-Ok@
+X-^r@
 X-axis in Stops
-X-~l@
 X/Y = %.0f px
 X1Ic	D
 X24_TYPELESS_G8_UINT
 X32_TYPELESS_G8X24_UINT
-X5(s@
-X51c-
-X5vs@
-X= "1
-X=Hh.
-X=z#X
+X50M4
+X5Vy@
+X5lx@
+X=[)1
+X=\+#
 X?+5[>,
 XA]_^]
 XA^A]_]
@@ -13323,7 +13333,6 @@ X\$0H
 X\$@I
 X_HEIGHT
 X`Hc@XH
-X`hr0
 Xl$4D
 Xl=hs>
 Xr(fA
@@ -13343,43 +13352,56 @@ Xt$hM
 Xt$hf
 Y	V_stricmp_fast
 Y!Q!t!
-Y%ZJD
+Y%J[D
+Y%ry1
 Y(t+H
-Y-,&>
+Y-+FP
 Y-Axis
 Y-Axis %d
 Y-Axis %d [0x%08X]
 Y-Axis 1
 Y-Axis 2
 Y-Axis 3
-Y-K8P
+Y-Z	Q
+Y-kQU
 Y0HcR
-Y5	$)
-Y5%d.
-Y5+-*
-Y5+s	
-Y5/p)
-Y50l)
-Y59l.
-Y5H#T
-Y5Hu.
-Y5I#T
-Y5I-)
-Y5I_*
-Y5JK)
-Y5K@*
-Y5S{.
-Y5UfT
-Y5ZG)
-Y5]s.
-Y5hl.
-Y5m;J
-Y5n+E
-Y5na)
-Y5v])
-Y5yr2
-Y5{F*
+Y5	/)
+Y5	:*
+Y5!l.
+Y5(2T
+Y5)!)
+Y5)2T
+Y5.k)
+Y5/t.
+Y50o)
+Y56j.
+Y59)+
+Y5;NX
+Y5;Y*
+Y5;_*
+Y5D	Q
+Y5Dr.
+Y5EvT
+Y5I8)
+Y5Kr*
+Y5MzI
+Y5ZJ)
+Y5[.$
+Y5^<E
+Y5d*J
+Y5i*)
+Y5i[)
+Y5pX'
+Y5v\)
+Y5v`)
+Y5y@*
+Y5{-*
+Y5{x*
 Y9"SD
+Y=]'*
+Y=^lV
+Y=e'>
+Y=qDT
 Y>kX>
 Y>kX>M
 Y?fff?33s?
@@ -13642,6 +13664,7 @@ Zsmall
 \$@;D$<
 \$@@8}x
 \$@A8
+\$@A:
 \$@D8
 \$@E2
 \$@E3
@@ -13685,7 +13708,6 @@ Zsmall
 \$Pt8
 \$Pt:H
 \$PtJH
-\$XA:
 \$XD;
 \$XD;cx
 \$XE3
@@ -13723,8 +13745,10 @@ Zsmall
 \$xI;
 \$xu!M
 \$|LcT$HL
-\%]"G
-\->"G
+\-!w.
+\-c0A
+\5p4A
+\5xo.
 \>$hkDh$h>
 \??k=Y
 \D$Df
@@ -13746,7 +13770,6 @@ Zsmall
 ](u;H
 ])6M>&
 ]0tFA
-]5ir2
 ]8L9g8t
 ]>)2X
 ]?i0*v
@@ -13770,16 +13793,15 @@ Zsmall
 _ ;_$t
 _$+_ f
 _(IcG L
-_-)YK
-_5$O)
-_5.S)
-_51	)
-_5Fe)
-_5Hi)
-_5\2)
-_5g{)
-_5rD)
-_5|$)
+_5"R)
+_52N)
+_5<&)
+_5Fh)
+_5Nd)
+_5\=)
+_5gz)
+_5g~)
+_5|/)
 _8Hc}w;{4~!H
 _8I;_@tj
 _8M9g(u\
@@ -13870,7 +13892,6 @@ _|HcGxA
 `*`0a
 `+!]?
 `.rdata
-`6P{N
 `80QA
 `>:X/?
 `?Mg_?$
@@ -14463,7 +14484,6 @@ extend .$0 {
 extendee
 extension_range
 e}1Hc
-e~[>L
 f	V_tanf
 f i j k d b h
 f!f=fEfwf
@@ -14546,7 +14566,7 @@ fD9't
 fD9'u
 fD9,Au
 fD9,pu
-fD9->
+fD9-b
 fD91u
 fD91uTL9r
 fD92t
@@ -14556,6 +14576,7 @@ fD94Q}
 fD94iu
 fD97t
 fD9;u
+fD9=F
 fD9DH
 fD9DP
 fD9H*
@@ -14761,7 +14782,6 @@ hHandle != m_modelToMeshData.InvalidHandle()
 hIndirectBuffer != RENDER_BUFFER_HANDLE_INVALID
 hI{L[
 hLightCookie != RESOURCE_HANDLE_INVALID
-hModel != MODEL_HANDLE_INVALID
 hOutputTexture != RENDER_TEXTURE_HANDLE_INVALID
 hRenderTarget != SCENE_VIEW_RENDER_TARGET_INVALID
 hRenderTexture != RENDER_TEXTURE_HANDLE_INVALID
@@ -15120,7 +15140,6 @@ l$PMk
 l$PfA
 l$PfF
 l$Pt	H
-l$P~ H
 l$T;w
 l$XA9F
 l$XA;
@@ -15608,6 +15627,7 @@ mindate
 mintime
 minus
 mixed
+mnP7y
 model_default_preview_sequence_name
 morphcomposite
 msaa copy
@@ -15729,7 +15749,6 @@ nSlot == INVALID_SPLITSCREENSLOT || nSlot.GetRaw() == 0
 nSoProxyCount > 0
 nSumVerts < V_ARRAYSIZE( silhouette.m_vSilhouetteSumVerts )
 nSwitchDistances > 0 && nSwitchDistances < MAX_LOD_LEVELS
-nT$ fD
 nT$PL
 nTotalMeshletsCulled >= uint( genCullRequests.Count() )
 nTotalQuadCount == 0
@@ -15824,36 +15843,36 @@ ny@fD
 o L9/t
 o Lc.I
 o O 0
-o%MiQ
+o%"!2
+o%myQ
 o)9oX
-o-	nT
-o-"aT
-o-),>
-o-X&>
-o-^AT
-o-^BT
-o-kqT
-o-ofT
-o-u&>
-o-vpT
+o-	2>
+o-)~T
+o-8,>
+o-BqT
+o-U,>
+o-~QT
+o-~RT
 o0H9o8
-o5%#>
-o5'_T
-o57qT
+o57$>
 o59UI
-o5?AT
-o5PfT
-o5TaT
-o5WpT
-o5t&>
-o=!AT
-o=&LT
-o=2fT
-o=5nT
-o=9pT
-o=AGT
-o=BiT
-o=a_T
+o5>~T
+o5?RT
+o5GoT
+o5T,>
+o5_QT
+o5pvT
+o5tqT
+o="QT
+o=#RT
+o=8dT
+o=AQT
+o=F\T
+o=RvT
+o=U~T
+o=aWT
+o=byT
+o=d2>
 oD$ f
 oD$@H
 oEoOoZoaozo
@@ -15940,7 +15959,7 @@ p q g j y
 p#p7pP
 p*W4H
 p.HasShadowsToRender()
-p08@H^t
+p08@H^
 p0R^G'
 p7M}f
 p;Kl|
@@ -16000,7 +16019,7 @@ pEnumInfo
 pEnvMap->m_nEnvCubeMapArrayIndex < MAX_ENVMAPS
 pExtensionWithDot[ 0 ] == '.'
 pExtra
-pF0sN
+pFP}N
 pField == pFieldBase + nFields
 pFlexSetup->m_flexDescWeights.Count() / 2 == nFlexWeights
 pFlexSetup->m_pFlexDescDelayedWeights != nullptr
@@ -16113,6 +16132,7 @@ packed
 panorama
 paragraph
 params.bSetup
+params.m_hModel != MODEL_HANDLE_INVALID
 parenleft
 parenleftinferior
 parenleftsuperior
@@ -16671,8 +16691,8 @@ t	9>t
 t	A;y 
 t	A;z 
 t	D#%
-t	D#%c
-t	D#%{
+t	D#%C
+t	D#%[
 t	H9s
 t	HcC
 t	Hcp
@@ -16852,7 +16872,7 @@ t$PuVHcC
 t$P|?H
 t$P~ H
 t$Qu	E
-t$TD8%1
+t$TD8%
 t$XD8k
 t$XE3
 t$XH;
@@ -16887,7 +16907,6 @@ t$dL9b u
 t$hE3
 t$hE;
 t$hIc
-t$hM;
 t$hMc
 t$huY
 t$lu/A
@@ -16910,7 +16929,7 @@ t$xuIM
 t$x|EH
 t$|fD
 t%@8x
-t%D9-
+t%D9-f3 
 t%D9x`u
 t%HcS
 t%Hc}
@@ -17150,7 +17169,6 @@ tsopH
 tsuperior
 tt-cmaps
 tt-glyf
-ttfff
 tufff
 tvLcs
 tvfff
@@ -17229,13 +17247,13 @@ u6D9a
 u6fff
 u89uH|EH
 u8H;A
+u8HcE0
 u99D$8t
 u<P/Y
 u<g~l<it[<ntP<ot,<pt
 u=D9Y
 u>Lc[
 u@L9s8
-u@~c=
 uBfD9
 uCfD9H
 uCfD9`
@@ -17307,7 +17325,7 @@ uzIcA
 uzKs@>
 u|Ic/A;o
 u~9t$Xt
-u~@8=Kgz
+u~@8=
 u~Mc>E;~
 v I9?u@A
 v.fff
@@ -17467,7 +17485,6 @@ xA_A\][
 xA_A\^[
 xA_A]_[
 xA_A^
-xA_A^A\]
 xA_A^A]A\_^[]
 xA_A^A]A\_^][
 xA_A^A]]
@@ -17583,6 +17600,7 @@ zx(u8
 |$ AVAWE
 |$ AVAWH
 |$ AVAWLc
+|$ AVD
 |$ AVH
 |$ AVHc
 |$ AVI
@@ -17821,6 +17839,8 @@ zx(u8
 ~(fA#
 ~+Hc_8;_Hu
 ~,*u<I
+~-.!A
+~-P!A
 ~-~E~W~
 ~3fff
 ~4fff

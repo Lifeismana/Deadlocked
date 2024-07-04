@@ -912,6 +912,19 @@
 			duck_to_percent = 100
 			ducker_threshold = 20
 		},
+		{
+			name = "MapObjective"
+			path_substring = ""
+			class_substring = ""
+			chan_type = ""
+			sndlvl_min = 0
+			sndlvl_max = 20
+			priority = 60
+			is_ducked = 0
+			causes_ducking = 0
+			duck_to_percent = 100
+			ducker_threshold = 20
+		},
 	]
 	SoundMixers = 
 	{
@@ -1476,6 +1489,14 @@
 				mute = 0.0
 				lvl = 1.0
 				dsp = 0.5
+			},
+			{
+				mixgroup = "MapObjective"
+				vol = 0.75
+				solo = 0.0
+				mute = 0.0
+				lvl = 1.0
+				dsp = 0.0
 			},
 		]
 	}
@@ -2320,6 +2341,54 @@
 					mixamount = 1.0
 					attack = 0.1
 					release = 0.1
+				},
+			]
+		}
+		MapObjective = 
+		{
+			Mixers = 
+			[
+				{
+					mixgroup = "MapObjective"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 0.5
+				},
+				{
+					mixgroup = "Music"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 0.5
+				},
+				{
+					mixgroup = "VO-Hero-Pla"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 0.5
+				},
+				{
+					mixgroup = "Announcer"
+					vol = 1.0
+					lvl = 0.0
+					dsp = 1.0
+					mute = 0.0
+					solo = 0.5
+				},
+			]
+			Triggers = 
+			[
+				{
+					trigger = "MapObjective"
+					threshold = 0.0
+					mixamount = 1.0
+					attack = 0.1
+					release = 0.5
 				},
 			]
 		}

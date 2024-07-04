@@ -140,13 +140,13 @@
 	{
 		_class = "modifier_held_item_pickup_aura"
 		m_iAuraSearchType = "CITADEL_UNIT_TARGET_HERO"
-		m_strParticleEffect = resource_name:"particles/items/crate_light_pillar.vpcf"
+		m_strParticleEffect = resource_name:"particles/generic/idol_carry.vpcf"
 		m_modifierProvidedByAura = subclass:
 		{
 			_class = "modifier_item_pickup_aura_target"
 			_my_subclass_name = "aura_target"
 			m_bIsHidden = true
-			m_PickupTimer = 4.000000
+			m_PickupTimer = 2.000000
 			m_PickupTimerModifier = subclass:
 			{
 				_class = "modifier_item_pickup_timer"
@@ -156,19 +156,25 @@
 				m_eDrawOverheadStatus = "OVERHEAD_DRAW_FOR_EVERYONE"
 				m_eHudDisplayLocation = "DISPLAY_HUD_CENTER"
 				m_TimerToSilence = 0.500000
-				m_SilenceDuration = 0.300000
+				m_SilenceDuration = 0.100000
 				m_SilenceModifier = subclass:
 				{
 					_class = "modifier_citadel_silenced"
 					_my_subclass_name = "modifier_citadel_silenced"
 					m_bIsHidden = true
-					m_nEnabledStateMask = "MODIFIER_STATE_SILENCED | MODIFIER_STATE_MUTED"
+					m_nEnabledStateMask = "MODIFIER_STATE_SILENCED | MODIFIER_STATE_MUTED | MODIFIER_STATE_ZIPLINE_DISABLED"
 				}
 			}
 		}
 		m_strFilterAbilityName = "ability_golden_idol"
 		m_bIsHidden = true
 		m_flAuraRadius = 70.000000
+	}
+	modifier_citadel_idol_return = 
+	{
+		_class = "modifier_citadel_idol_return"
+		m_nEnabledStateMask = "MODIFIER_STATE_RETURN_IDOL_AREA"
+		m_bIsHidden = true
 	}
 	modifier_rejuv_pickup_aura = 
 	{

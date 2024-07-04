@@ -162,7 +162,7 @@
 		mixer_set_mixlayer_for_perspective = 0.000000
 		mixer_set_mixlayer = 1.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_attach.vsnd"
-		vsnd_duration = 1.576372
+		vsnd_duration = 0.853243
 	}
 	Ability.Bebop.StickyBomb.Loop = 
 	{
@@ -229,6 +229,10 @@
 	{
 		base = "Base.Ability"
 		volume = 0.000000
+		mixer_set_mixlayer_for_perspective = 0.000000
+		mixer_mixlayer_to_set = "Ability-Dramatic"
+		mixer_set_mixlayer = 1.000000
+		mixer_mixlayer_amount_manual = 1.000000
 		vsnd_files = "sounds/abilities/bebop/a3_hook/impact_success.vsnd"
 		vsnd_duration = 1.119070
 	}
@@ -911,5 +915,13 @@
 		soundevent_02 = "Ability.Bebop.HyperBeam.Windup.Jazz"
 		use_01 = 1.000000
 		use_02 = 1.000000
+	}
+	Ability.Bebop.Hook.Success.Multi = 
+	{
+		type = "citadel_start_multi"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		soundevent_01 = "Ability.Bebop.Hook.Victim"
+		soundevent_02 = "Ability.Bebop.Hook.Success"
 	}
 }

@@ -13,8 +13,6 @@ enum EGCCitadelClientMessages {
 	k_EMsgClientToGCIsInMatchmaking = 9017;
 	k_EMsgClientToGCIsInMatchmakingResponse = 9018;
 	k_EMsgGCToClientDevPlaytestStatus = 9019;
-	k_EMsgClientToGCSubmitUserFeedback = 9021;
-	k_EMsgClientToGCSubmitUserFeedbackResponse = 9022;
 	k_EMsgClientToGCDevSetMMBias = 9023;
 	k_EMsgClientToGCGetProfileCard = 9024;
 	k_EMsgClientToGCGetProfileCardResponse = 9025;
@@ -692,31 +690,6 @@ message CMsgClientToGCPartySetReadyStateResponse {
 	}
 
 	optional .CMsgClientToGCPartySetReadyStateResponse.EResponse result = 1 [default = k_eInternalError];
-}
-
-message CMsgClientToGCSubmitUserFeedback {
-	enum EType {
-		eType_CriticalBug = 1;
-		eType_Bug = 2;
-		eType_Suggestion = 3;
-		eType_Other = 4;
-	}
-
-	optional uint64 match_id = 1;
-	optional string message_text = 2;
-	optional .CMsgClientToGCSubmitUserFeedback.EType feedback_type = 3 [default = eType_CriticalBug];
-	optional uint32 client_version = 4;
-	optional string source_info = 5;
-}
-
-message CMsgClientToGCSubmitUserFeedbackResponse {
-	enum EResponse {
-		eResponse_Success = 0;
-		eResponse_InternalError = 1;
-		eResponse_InvalidMsg = 2;
-	}
-
-	optional .CMsgClientToGCSubmitUserFeedbackResponse.EResponse response = 1 [default = eResponse_Success];
 }
 
 message CMsgClientToGCDevSetMMBias {

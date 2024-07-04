@@ -20,7 +20,6 @@
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
 	kE>fvw
-	ubHcD
 	wOIc
                           
     - %s 
@@ -170,6 +169,7 @@
 %s: value %s must be marked with a resource_name: prefix
 %s: value %s must be marked with a soundevent: prefix
 %s::%s (%u)
+&Iblr
 &YA1E
 &YA1H
 ', type<
@@ -219,29 +219,24 @@
 (m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
 (m_nRefCount & INTERNAL_LOCKED) != 0
 (null)
+(t$ 3
 (t$ H
 (t$0H
 (t$@H
-(t$P3
 (t$PH
 (t$PL
-(t$`H
 (t$pH
-(t$pL
 (|$0f9{
+(|$@H
 (|$@I
-(|$PH
 )>6{1n
+)D$`H;
 )t$ H
 )t$@H
 )t$@L
 )t$PA
 )t$PE3
 )t$PH
-)t$PI
-)t$`H
-)t$`I
-)t$pI
 )t$pL
 )|$0D
 )|$0H
@@ -263,7 +258,6 @@
 ,?Message@TryCatch@v8@@QEBA?AV?$Local@VMessage@v8@@@2@XZ
 ,W5y+
 - Graph Def '
--;V&KB
 -?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 -?NewFromUtf8Literal@String@v8@@CA?AV?$Local@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 -?NewInstance@ObjectTemplate@v8@@QEAA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
@@ -476,7 +470,6 @@
 0A^_^
 0A^_^[]
 0A^_^][
-0A_A]A\_]
 0A_A]A\_^
 0A_A][
 0A_A^A\
@@ -484,10 +477,12 @@
 0A_A^A]A\_
 0A_A^A]A\_^[
 0A_A^A]A\_^]
+0A_A^A]_]
 0A_A^^
 0A_A^_
 0A_A^_^]
 0A__]
+0HcB(L
 0IcG(L
 0iN>/
 0w0c1
@@ -500,7 +495,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240627183140Z0/
+240704150643Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -518,6 +513,7 @@
 380115120000Z0b1
 3>N;kU
 3>fvw
+3ilve
 3mq+<
 4/tNC
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
@@ -557,6 +553,7 @@
 9t$(u
 9t$Xu
 9t$hu
+9w |	D
 9|$(u
 9|$@u
 9|$Hu
@@ -720,9 +717,9 @@
 @A_A^A\_^
 @A_A^A\_^][
 @A_A^A]
+@A_A^A]A\[
 @A_A^A]A\_
 @A_A^A]A\_^]
-@A_A^A]][
 @A_A^]
 @A_A^_
 @A_A^_^]
@@ -749,7 +746,6 @@
 @SUVWAVAWH
 @SUVWAVH
 @SUVWH
-@SUWATH
 @SUWH
 @SVATAWH
 @SVATH
@@ -758,7 +754,6 @@
 @SVWATAUAVAWH
 @SVWATAUH
 @SVWAUAVH
-@SVWAUH
 @SVWAVAWH
 @SVWAWH
 @SVWH
@@ -783,17 +778,17 @@
 @USWAUAVAWH
 @USWAVH
 @USWH
+@UVAVH
 @UVAWH
 @UVWATAUAVAWH
-@UVWATAWH
 @UVWAUAVH
-@VATAWH
+@UVWAVH
+@UWAUAVAWH
 @VAVAWH
 @VWATAUAWH
 @VWATAUH
 @VWAUAVAWH
 @VWAUAVH
-@VWAVH
 @WATAUAVH
 @WATAUAWH
 @WATAVAWH
@@ -803,11 +798,13 @@
 @WAVAWH
 @XIcO(H
 @_RDATA
-@t5o]
 A default string (set)
 A testing-only domain that doesn't correspond to any in-engine use case.
 A testing-only domain that draws on a 2D canvas with a LOGO-like 'turtle' cursor.
 A8}(u
+A9^Ht
+A9u u	H
+A9u ~DH
 A:8ucI
 A;} |
 A>pP&
@@ -832,29 +829,27 @@ AUAVAWH
 AUAVH
 AVAWH
 AXHcIPL
-A\_][
 A\_^]
 A]A\[]
-A]^[]
+A]_[]
+A]_^[]
 A^A\]
 A^A\^[]
-A^A\_[]
 A^A]A\
 A^A]A\^]
+A^A]A\_]
 A^A]A\_^[]
-A^A]^][
+A^A][]
 A^A]_[]
-A^A]_^[]
 A^^[]
 A^_^[]
 A^_^]
 A_A\][
-A_A\^
+A_A\_^[]
 A_A\_^]
 A_A]A\_]
-A_A]A\_^
-A_A]_^[]
-A_A]_^]
+A_A]^
+A_A]^H
 A_A^A\_
 A_A^A\_]
 A_A^A\_^
@@ -865,12 +860,11 @@ A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^][
 A_A^A]_[]
+A_A^A]_^[]
 A_A^[
 A_A^]
 A_A^_
-A_A^_^[]
 A_A^_^]
-A__[]
 Abort
 Abs Float
 Abs Int
@@ -891,13 +885,14 @@ Any Other Cursors Have Tag
 Any cursors above this count will wait, up to the limit.
 Any extra waiting cursors will be terminated. -1 for infinite cursors.
 AppPolicyGetProcessTerminationMethod
+AppendAlloc
 Apply the same tag we're waiting on to the resulting cursor upon wait completion. Can be used to wait on our result cursor with the same tag.
 April
 Are we currently running unit tests?
 AreFileApisANSI
 Assert True
 AssertCast
-AssertCastNumberInternal
+AssertFatalCast
 AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetRenameSystem_001
@@ -1022,6 +1017,7 @@ C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlhandletable.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmap.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlqueue.h
+C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrange.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
@@ -1096,7 +1092,6 @@ CGapArgumentList::AddAndRequestArgStorageForWriteUntyped
 CGapArgumentList::PrepareUpToArgIndex
 CGapArgumentList::ReadArgIntoVariant
 CGapArgumentList::ReadArgIntoVariantUnknownName
-CGapArgumentList::ValidateArgumentRead
 CGapArgumentList::ValidateInternalStateOnRead
 CGapArgumentList::WriteArgCopyFromVariant
 CGapArgumentList::WriteArgPointAtRegister_Fastpath
@@ -1448,10 +1443,7 @@ CPulseExecCursor
 CPulseExecCursor::AssertParentInstanceIsDomain
 CPulseExecCursor::CancelPriorityCellToCursor
 CPulseExecCursor::CancelPriorityCursorToCell
-CPulseExecCursor::CompleteAndReturn
-CPulseExecCursor::CreateAndRunChildCursorForOutflow
 CPulseExecCursor::DebugPreInstruction::<lambda_1>::operator ()
-CPulseExecCursor::EnterYieldedState
 CPulseExecCursor::Event_NotifyYieldedCellOfResult
 CPulseExecCursor::Event_RequestAutoWakeOfYieldedCursor
 CPulseExecCursor::Event_ResumeFromYield
@@ -1464,16 +1456,13 @@ CPulseExecCursor::GetInstance
 CPulseExecCursor::GetYieldedCell
 CPulseExecCursor::GetYieldedCellStorageVoid
 CPulseExecCursor::HasYieldedCellBeenCanceled::<lambda_1>::operator ()
-CPulseExecCursor::HaveCursorYieldAtCell
 CPulseExecCursor::JumpOrLeapOrCall
-CPulseExecCursor::ProcessHaltBeforeUnyield
 CPulseExecCursor::RegisterObserverCursorForExecutionResult::<lambda_1>::operator ()
 CPulseExecCursor::RequestCancelOfYieldedCursor
 CPulseExecCursor::TryExecute
 CPulseExecCursor::TryExecute::<lambda_1>::operator ()
 CPulseExecCursor::TryExecute::<lambda_2>::operator ()
 CPulseExecCursor::TryRetire
-CPulseExecCursor::UnyieldWithResult
 CPulseExecCursor::WriteOutstores_Slowpath
 CPulseFakeEntityList::CreateFakeEntity
 CPulseFakeEntityList::DestroyFakeEntity
@@ -1481,9 +1470,6 @@ CPulseFakeEntityList::DestroyFakeEntity::<lambda_1>::operator ()
 CPulseFakeEntityList::GetFakeEntity
 CPulseGraphDef
 CPulseGraphDef::DestructConstantStorage::<lambda_1>::operator ()
-CPulseGraphDef::FindCallInfoForInstruction::<lambda_1>::operator ()
-CPulseGraphDef::FindCallInfoForInstruction::<lambda_2>::operator ()
-CPulseGraphDef::FindCallInfoForInstruction::<lambda_3>::operator ()
 CPulseGraphDef::GetBlackboardReference::<lambda_1>::operator ()
 CPulseGraphDef::GetCallInfo::<lambda_1>::operator ()
 CPulseGraphDef::GetCell::<lambda_1>::operator ()
@@ -1652,7 +1638,6 @@ CPulseTypeManager::DeallocateResource( %s, %s, dealloc=%p live=%p )
 CPulseTypeManager::Test_InstallProceduralGraphDef
 CPulseTypeManager::Test_ReloadProceduralGraphDef
 CPulseValueFullType
-CPulseValueFullType::AreInstancesEqual
 CPulseValueFullType::ConstructInstance
 CPulseValueFullType::ConvertInstanceRawUnchecked
 CPulseValueFullType::CopyInstanceRaw
@@ -1756,8 +1741,6 @@ CUtlMemory<class CPulseCell_Base *,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CPulseCell_Base *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CPulseCell_Base const *,int>::Grow
 CUtlMemory<class CPulseCell_Base const *,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<class CPulseExecCursor *,int>::Grow
-CUtlMemory<class CPulseExecCursor *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CPulseGraphDefPersistentInfo *,int>::Grow
 CUtlMemory<class CPulseGraphDefPersistentInfo *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CPulseRegisterFrame *,int>::Grow
@@ -1917,6 +1900,7 @@ CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExe
 CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int> >::RemoveAll
+CUtlRange
 CUtlString
 CUtlStringToken::TrackTokenCreation( pString, nullptr )
 CUtlSymbolLarge
@@ -1942,7 +1926,7 @@ Cannot deduce for class
 Cannot reference domain '%s' from '%s'
 Cannot reinterpret instance (actual: %s) from (original) %s to (desired) %s
 Cast of %s loses value information (returning %s)
-Cast of %s loses value information (returning %s) on %s:%d
+Cast of %s loses value information (returning %s) in %s on %s:%u
 Causes each execution cursor to pause at this node for a fixed period of time. Each cursor will wake up and resume execution when the time expires, unless aborted or early-woken.
 Causes each execution cursor to wait for the completion of all prior cursors that have visited this node. Use this to safely support multiple triggers to areas of the graph that take time to complete.
 Causes this execution cursor to wait for the completion of other cursors with the given tag. Can optionally kill the tag while waiting.
@@ -1991,11 +1975,9 @@ Creating SourceTSInstance[%d] in Domain %s
 Cursor Has Tag
 Cursor Queue
 Cursor [%s] @ %.2f. Cell: %u => %s: %s
-Cursor[ ptr:%p | id:%d | graph:%p ]: Completed with result:%d
 Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of result:%d from Subject:%d
 Cursor[ ptr:%p | id:%d | graph:%p ]: Register observer:%d
 Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d
-Cursor[ ptr:%p | id:%d | graph:%p ]: Yielded at cell ptr:%p id:%d
 D!l$xA
 D$ -#
 D$ 2Q
@@ -2018,22 +2000,17 @@ D$(E3
 D$(H;
 D$(fI
 D$0*2
-D$0+@8
 D$0-#
 D$02Q
-D$03%
 D$0;(
-D$0=W
 D$0@8{
 D$0@G
 D$0BE
 D$0D9 |
 D$0E3
-D$0Gb
 D$0H9F
 D$0HcH
 D$0J8b
-D$0JD
 D$0L;
 D$0M;
 D$0M`J
@@ -2041,7 +2018,6 @@ D$0OeeFH
 D$0OeeFL
 D$0S~*
 D$0WS
-D$0`I
 D$0cd
 D$0fD
 D$0fE
@@ -2073,10 +2049,9 @@ D$L;y
 D$P@G
 D$PE3
 D$PH+
-D$PH9
 D$PI;
+D$PLc
 D$`E3
-D$`H9
 D$`H;
 D$hH;
 D$hHc
@@ -2092,12 +2067,11 @@ D9H$t
 D9I$t
 D9P$t
 D9Q$t
-D9fH|"H
+D9fH|%I
 D9g8~6M
 D9t$Pu
 D9y ~1H
 D;$(t
-D;,(t
 DATAH
 DIGIT
 DIV_FLOAT
@@ -2143,13 +2117,10 @@ Do not stop the current yielding node, but do not continue to the next node afte
 Domain: %s
 Double add of KV3Transfer interface '%s'
 Double-save to Member '%s'
-DqTTk
 E0HcH
 E0Lc`
-E8f;X
 E8q(u
-E9e u	H
-E9e ~GI
+E@f;X
 EH*?H
 EHHcI
 ENTITY_NAME
@@ -2309,7 +2280,6 @@ FakeEntity_tAPI!GetName
 FakeEntity_tAPI!SetAndGetIntValue
 FakeEntity_tAPI!SetIntValue
 FakeEntity_tAPI::Schema_VerifyBindingIsRegistered
-FatalCastNumberInternal
 February
 Find Fake Entity
 Find a spawned entity by name.
@@ -2347,13 +2317,13 @@ Functions not supported in this evaluator (%s)
 G fA;
 GD$(H
 GD$8H
-GD$@I
 GD$HA
 GD$HH
 GD$PH
 GD$X3
 GD$XH
 GD$`3
+GD$`A
 GD$`H
 GD$hH
 GD$pH
@@ -2364,10 +2334,9 @@ GET_CONST_INLINE_STORAGE
 GET_DOMAIN_VALUE
 GET_VAR
 GL$(A
-GL$(L
 GL$8H
 GL$H3
-GL$HA
+GL$`A
 GREEN
 GT$(A
 GT$(H
@@ -2387,6 +2356,7 @@ GameResourceServiceServerV001
 GameTime_t
 GameUIService_001
 GapArgumentListSignature_t::GetArg
+GatherInparams
 Generate a random integer between min and max (inclusive)
 GenerateInt
 GenerateIntWithResult
@@ -2463,7 +2433,6 @@ GetVar R%d <- V%d (%s)
 Gl$HH
 Green
 Gt$8I
-Gt$@I
 Gt$HL
 G|$(H
 G|$8E3
@@ -2500,13 +2469,12 @@ H;D$Pu
 H;D$`
 H;XXs
 H;xXu5
-HA]_^[
 HA^A]
 HA^^][
 HA_A^
+HA__][
 HA__^[
 HH:mm:ss
-HJ[xr
 HPulseGraphInstance::HPulseGraphInstance
 HYieldedCursor::Get
 HYieldedCursor::HYieldedCursor
@@ -2521,14 +2489,15 @@ Hc/;o
 Hc3;s
 Hc7Lc9
 Hc;;{
+Hc=Ug
+Hc=a[
 HcA(E3
 HcA(H
-HcAHL
+HcAHH
 HcAPH
 HcApD;
-HcAxL
+HcAxH
 HcB$A;C
-HcCxL
 HcD$0
 HcD$0D
 HcD$0H
@@ -2538,8 +2507,9 @@ HcD$hD
 HcD$x
 HcE_H
 HcG H
-HcG4I
-HcG4Lk
+HcG<I
+HcG<Lk
+HcGxL
 HcK H
 HcN H
 HcO H
@@ -2563,6 +2533,9 @@ I	V_sincosf
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
 ID_CHAR
+IGapHost_Cursor
+IGapHost_ExecLog
+IGapHost_YieldingCursor
 IKV3TransferInterface_EHandle_Load
 IKV3TransferInterface_EHandle_Save
 IKV3TransferInterface_GameTime_Load
@@ -2607,6 +2580,7 @@ Inflow B
 InflowA
 InflowB
 InfoForResourceTypeIPulseGraphDef
+InitFrame
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
 InitializeSListHead
@@ -2738,12 +2712,14 @@ JUMP_COND
 January
 Jump to Instr I%d
 JumpOrLeap( C%d:I%d )
+K USAUAVI
 K&>.yC
 K-?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z
 K0HcQ
 KERNEL32.dll
 KLLcCH
 KV3 instances cannot be set to an unspecified specific type
+KV3Helper_CheckValueNumericCast
 KV3TransferSchema_AllocateClassInstance
 KV3TransferSchema_ClassName::<lambda_1>::operator ()
 KV3Transfer_SaveMapAsFlatTable
@@ -2812,7 +2788,6 @@ L$ SUVWAVH
 L$ SVWH
 L$ SW
 L$ SWH
-L$ USVWAVAWH
 L$ UVWATAUAVAWH
 L$ VWATAUAVAW
 L$ VWAVH
@@ -2839,15 +2814,15 @@ L$@H3
 L$HE3
 L$HHc
 L$PE3
-L$PIc
+L$PHc
 L$XH+
 L$`D;
-L$`E3
 L$`I;
 L$`ff
 L$hE3
 L$hfI
-L$pE3
+L$pH#
+L$pH;
 L$xI;
 L9#u/H
 L93t	H
@@ -2876,11 +2851,11 @@ LTE_FLOAT
 LTE_INT
 LT_FLOAT
 LT_INT
+LayoutAndAllocateConstantStorage
 Lc6D;v
 Lc7D;w
 Lc>D;~
 LcA<E3
-LcG H
 LcK(H
 LcK0H
 LcK8H
@@ -3023,6 +2998,7 @@ Mul R%d <- R%d * R%d
 MultiByteToWideChar
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 N	V_snprintf
+N*DhwP
 NEGATE
 NEGATE_FLOAT
 NEGATE_INT
@@ -3087,10 +3063,11 @@ Or R%d <- R%d || R%d
 Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
-P 9_h
+P 9_p
 P;l$h
 PANEL_ID
 PA^A]A\_^[]
+PA^^]
 PA^_[
 PA^_]
 PA^_^
@@ -3223,6 +3200,7 @@ Plat_NonFatalErrorFunc
 Plat_RegisterModule
 Pointers cannot be used as numeric values
 PostProcessingSystem_001
+PrepareOutstores_Fastpath
 Print String With Editor Suggestions
 Print String With Leaf Suggestions
 Print string with suggestions from editor code.
@@ -3245,7 +3223,6 @@ PulseCursorID_t
 PulseCursorID_t::Schema_VerifyBindingIsRegistered
 PulseCursorYieldToken_t
 PulseCursorYieldToken_t::Schema_VerifyBindingIsRegistered
-PulseDebugLog 
 PulseDebugLog: Calling external method on non-existent entity or game blackboard
 PulseDocNodeID_t
 PulseDocNodeID_t::Schema_VerifyBindingIsRegistered
@@ -3310,11 +3287,10 @@ PulseValueTypeInfo_t<16>::KV3TransferLoadInstance::<lambda_1>::operator ()
 PulseValueTypeInfo_t<16>::KV3TransferLoadInstance::<lambda_2>::operator ()
 PulseValueTypeInfo_t<16>::KV3TransferSaveInstance::<lambda_1>::operator ()
 PulseValueTypeInfo_t<16>::KV3TransferSaveInstance::<lambda_2>::operator ()
+PulseValueTypeInfo_t<17>::KV3TransferLoadInstance
 PulseValueType_t
-PulseWarningLog 
 Pz}b!
 QueryPerformanceCounter
-QxH9\$ u
 R%d->%s
 REINTERPRET_INSTANCE
 REQUIREMENT_FAIL
@@ -3375,8 +3351,10 @@ RtlLookupFunctionEntry
 RtlPcToFileHeader
 RtlUnwindEx
 RtlVirtualUnwind
+Ru+/l
 RunPulseInstruction
 S0Q0O
+SATAUAVAWH
 SA|X=G
 SEMICOLON
 SET_BLACKBOARD_REFERENCE
@@ -3388,7 +3366,6 @@ SQUARE
 SSE and SSE2 are required.
 STRING_CHAR
 SUATH
-SUAUAVAWH
 SUAVH
 SUB_FLOAT
 SUB_INT
@@ -3396,7 +3373,7 @@ SUVWATAUAVAWH
 SUVWATAVAWH
 SUVWAWH
 SUVWH
-SVATAUH
+SUWAWH
 SVWATAUAVAWH
 SWAUH
 SYNC_WAIT_FOR_COMPLETION
@@ -3637,7 +3614,6 @@ Stop Waiting
 Stop without any wind-down.
 StopWaiting
 StorageMatchesExactly( m_pStaticSignature->GetArg( nIndex ).m_Type, type )
-StorageMatchesExactly( storageType, validateType )
 String
 String( %s )
 Sub R%d <- R%d - R%d
@@ -3654,6 +3630,7 @@ T$0Hk
 T$8E3
 T$8Lc
 T$@E3
+T$HE3
 T$HLc
 T$PE3
 T$PfD
@@ -3661,8 +3638,6 @@ T$XHc
 T$`E3
 T$hE3
 T$pE#
-T$pE3
-T$xE3
 TOK_COLON
 TRIANGLE
 TStringOp != PulseInstructionCode_t::NOP
@@ -3721,15 +3696,15 @@ UNKNOWN
 UNRECOGNIZED
 USATAUH
 USAVH
-USVAUI
+USVAVH
 USVWATAUAVAWH
 USVWATAUAVH
-USVWAUAVH
-USVWAUAWH
+USVWATAWH
+USVWAUAVAWH
+USVWAUH
 USVWAVH
-USWATAVH
 USWAUAVH
-USWAWH
+USWAUH
 UUUUUU
 UUUUUUUUD
 UUUUUUUUH
@@ -3740,7 +3715,6 @@ UVWATAUAVAWH
 UVWATAVH
 UVWATAWH
 UVWATH
-UVWAUAWH
 UVWAVAWH
 UVWAVH
 UWATAUAWH
@@ -3787,9 +3761,9 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
-V#t@Z
 V6E>`"(5
 V8ToVariant
+VAUAWH
 VAVAWH
 VApplication001
 VAsyncFileSystem2_001
@@ -3813,7 +3787,6 @@ VStringTokenSystem001
 VUUUH
 VUUUI
 VWATAUAVAWL
-VWATAUAWH
 VWATAVAW
 VWATAVAWH
 VWAUAWH
@@ -3886,13 +3859,13 @@ WideCharToMultiByte
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
+WriteOutstores_Slowpath
 X to the Y power
-XA]A\^[
 XA_A^_^][
 XHcGPM
+Xt$xH
 Y	V_stricmp_fast
 Y9"SD
-YXfff
 Yield, Resume=%s
 YpHcAhHk
 Z!?IsArray@Value@v8@@QEBA_NXZ
@@ -3922,12 +3895,12 @@ Z!?IsArray@Value@v8@@QEBA_NXZ
 \$ UVWATAWH
 \$ UVWAVAWH
 \$ UVWH
-\$ UWATAUAWH
 \$ UWATAVAWH
 \$ UWAWH
 \$ VH
 \$ VWATAUAVH
 \$ VWATAVAWH
+\$ WAVAWH
 \$ WH
 \$ uYM
 \$(E3
@@ -4092,6 +4065,7 @@ bLegalTypeChange
 bValue
 bValue == false
 bValue == true
+b]^di
 bad address
 bad exception
 bad file descriptor
@@ -4131,7 +4105,6 @@ d$PI9
 d$XIc
 d$`tLA
 d$hL;
-d$xHc
 d-?New@ObjectTemplate@v8@@SA?AV?$Local@VObjectTemplate@v8@@@2@PEAVIsolate@2@V?$Local@VFunctionTemplate@v8@@@2@@Z
 dddd, MMMM dd, yyyy
 destination address required
@@ -4257,7 +4230,6 @@ l$ VWATAUAVH
 l$ VWATAVAWH
 l$ VWAUAVAWH
 l$ VWAVH
-l$ WAVAWH
 l$ WH
 l$(L9v
 l$0E2
@@ -4267,13 +4239,13 @@ l$0Hk
 l$0L;
 l$0Lc)
 l$0u!H
+l$8E3
 l$8Hk
 l$8fA
 l$@D9
 l$@E3
 l$@Hc
 l$HA_A^A]A\_^
-l$PA;
 l$PHc+H
 l$PL;
 l$XA;
@@ -4286,9 +4258,7 @@ l$`I;
 l$`ff
 l$hA;
 l$hff
-l$h~ H
 l$pE3
-l$pHc
 l$pM;
 l$p~ H
 l$x~ H
@@ -4308,14 +4278,12 @@ m_BlackboardReferences
 m_BlackboardReferences.IsValidIndex( nIndex )
 m_BlackboardResource
 m_CallInfos
-m_CallInfos.IsValidIndex( instr.m_nCallInfoIndex )
 m_CallInfos.IsValidIndex( nCall )
 m_CallMethodID
 m_CaseOutflows
 m_Cells
 m_Cells.IsValidIndex( nCell )
 m_Chunks
-m_Chunks.IsValidIndex( nCurChunk )
 m_ClockScopeID
 m_Color
 m_Connection
@@ -4415,7 +4383,6 @@ m_YieldResume1
 m_YieldResume2
 m_bAdvanceToNextInstruction
 m_bCallModeSync
-m_bCurrentlyExecuting
 m_bExpectingToDestroyWithYieldedCursors
 m_bExplicitTimeStepping
 m_bIsObservable
@@ -4638,7 +4605,7 @@ p*W4H
 p-?New@Symbol@v8@@SA?AV?$Local@VSymbol@v8@@@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@@Z
 p0R^G'
 p;Y>u
-pA^_^
+pA^A]^][
 pA_A^A\_^[]
 pA_A^A]A\_^[
 pA_A^A]A\_^]
@@ -4655,14 +4622,13 @@ pBreakpoint
 pCallInfo
 pCallback == nullptr
 pCallingMethod
-pCell
 pCheckpointName
-pChildCursor->GetState() == PULSE_CURSOR_STATE_HALTED
-pChunk->m_Instructions.IsValidIndex( nCurInstruction )
 pClass
 pContext
+pContext->SourceObject()->IsNull()
 pCurChunk->m_InstructionEditorIDs.IsValidIndex( nInstruction )
 pCurClassInfo
+pCursor->GapHost_GetRawCursor()->GetState() == PULSE_CURSOR_STATE_YIELDED
 pCursor->GetState() == PULSE_CURSOR_STATE_YIELDED
 pDefaultKeys
 pDefaultKeys != &g_NullKV3
@@ -4753,7 +4719,6 @@ pulse_editor
 pulse_list_graphs
 pulse_open_graph_id
 pulse_open_graph_id %u
-pulse_open_graph_id %u %u
 pulse_print_graph_execution_history
 pulse_runtime_lib
 pulse_save_execution_history
@@ -4788,6 +4753,7 @@ rotation_vector
 s < ( 1 << ( 31 - HandleBits ) )
 s D9s0|AH
 s f9s"~
+s5!0"5#8
 s_Instance
 s_flExplicitCurTime
 s_nConnectionCount > 0
@@ -4819,6 +4785,7 @@ t$ AWH
 t$ AWL
 t$ E3
 t$ UH
+t$ UWATAUAVH
 t$ UWATAVAWH
 t$ UWAVH
 t$ WATAUAVAWH
@@ -4842,7 +4809,6 @@ t$8;;
 t$8;Upr4I
 t$8E3
 t$8H+
-t$8H9{
 t$8Hc
 t$8L+
 t$8~ H
@@ -4854,11 +4820,9 @@ t$@u)
 t$@~ H
 t$H;{
 t$HE3
-t$HHc
 t$HI;
 t$Hu*
 t$P9E
-t$PAi
 t$PH;
 t$PHk
 t$Pfff
@@ -4870,23 +4834,23 @@ t$`HcD$@M
 t$`L#
 t$`fD
 t$`}[H
-t$hE3
 t$hHcD$@M
-t$pA;
 t$pD;k
 t$pE3
+t$pHc
 t$xE3
-t%HcB$A;B
 t&A88t
 t'fff
 t-Lck
 t1fff
 t7HcP
 t>@8:t9H
+tAHcC
 tDfff
 tPfff
 tRD8}
 tRLcY
+tSLcK
 tT~R@2
 tU~S2
 t_L9>t
@@ -4909,15 +4873,14 @@ tools/images/pulse_editor/cursor_tag.png
 tools/images/pulse_editor/cursor_wait_zone.png
 tools/images/pulse_editor/exit_cycle_random.png
 tools/images/pulse_editor/inflow_wait.png
-tqD8~`tkH
 transform
 try_get_function
 try_get_module
 twIcF
 type.CanConvertTo( m_pStaticSignature->GetArg( nIndex ).m_Type, pInScope )
 tzL97u
+t|D8}`tvH
 t~@8}
-u	9Wx
 u L9u
 u$D8r(t
 u%@8j(t
@@ -4925,7 +4888,6 @@ u,!T$(H!T$
 u3HcH<H
 u4I9}(
 uED8r(t
-uSfff
 uchar32
 uffff
 uint16
@@ -4946,7 +4908,6 @@ v=Y]Bv
 v@D8s(t
 vAD8s(t
 vKfffff
-validateType.CanConvertTo( storageType, pSchemaScope )
 value too large
 varType.CanReinterpretAs( regType )
 varType.CanReinterpretInstanceAs( pRegBytes, regType, pInScope )
@@ -4970,11 +4931,11 @@ x AVH
 x AVHcA
 x D;Ah}
 x';Qh}"Hc
-x>`986%HSVa2
 xA^_[]
 xA^_^]
 xSE;H
 y\PD>!
+zdvqw
 { AVH
 {0x%x}
 {@9s8|AH
@@ -4999,8 +4960,6 @@ y\PD>!
 |$(A^
 |$(E3
 |$(HcD$ H
-|$0Hc
-|$0ff
 |$0tjL
 |$0uE
 |$0~ H
@@ -5036,6 +4995,7 @@ y\PD>!
 |$pf9q"u
 |$pf9x
 |$pt0
+|$xHc
 |)L9c
 |Lu?c
 |aA;N
@@ -5046,7 +5006,6 @@ y\PD>!
 }>;_$
 }LuHO
 }afff
-}f^.O*
 }gA8_
 }xMc7E;w
 ~qj#k"

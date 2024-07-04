@@ -20,7 +20,7 @@
 			</Panel>
 			<Panel class="LabelRow">
 				<Label class="TypeLabel" text="Comments:" />
-				<TextEntry id="ReportedUserComments" placeholder="Describe what issue you had with this player" undohistory="enabled" maxchars="4096" multiline="true" />
+				<TextEntry id="ReportedUserComments" placeholder="#Citadel_ReportPlayer_CommentPlaceholder" undohistory="enabled" maxchars="4096" multiline="true" />
 			</Panel>
 			<Panel class="ButtonRow LeftRightFlow">
 				<Button class="PopupButton" id="OKButton" onactivate="CitadelPopupSubmitPlayerReport()" enabled="false">

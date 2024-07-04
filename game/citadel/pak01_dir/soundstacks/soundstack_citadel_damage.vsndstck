@@ -269,6 +269,17 @@
 							display_edit_type = "field_curve_2d_editor"
 						}
 					}
+					inflictor_position = 
+					{
+						data_type = "float3"
+						value = "[ 0.0, 0.0, 0.0 ]"
+						_system_properties = 
+						{
+							display_group = "locked"
+							property_group = "citadel_damage"
+							property_help = "Set in code. Will not be set if damage type is EDmgAudioType_DOT"
+						}
+					}
 				}
 			},
 			
@@ -316,7 +327,7 @@
 				input_execute = "1.0"
 				input_switch = "@citadel_damage_info::output.is_viewing_victim"
 				input1 = "@citadel_damage_info::get_victim_info.output_position"
-				input2 = "@citadel_damage_info::get_inflictor_info.output_position"
+				input2 = "@public.inflictor_position"
 			},
 			
 			{

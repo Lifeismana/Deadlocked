@@ -26,9 +26,9 @@
 				<Label class="HeroBuildsTitle" text="#Citadel_HeroBuildsPage_CreateBuildTitle" />
 				<Label class="HeroBuildsDesc" text="#Citadel_HeroBuildsPage_CreateBuildDesc" />
 				<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_BuildNameTitle" />
-				<TextEntry id="HeroBuildName" placeholder="Enter Build Name" undohistroy="enabled" maxchars="50" />
+				<TextEntry id="HeroBuildName" placeholder="#Citadel_HeroBuildsPage_BuildName" undohistroy="enabled" maxchars="50" />
 				<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_BuildDescriptionTitle" />
-				<TextEntry id="HeroBuildDescription" placeholder="Enter Description" undohistroy="enabled" maxchars="4096" multiline="true" />
+				<TextEntry id="HeroBuildDescription" placeholder="#Citadel_HeroBuildsPage_Description" undohistroy="enabled" maxchars="4096" multiline="true" />
 				<Panel class="SharePanel">
 					<Label id="PublicBuildLabel" text="#Citadel_HeroBuildsPage_PublicBuildLabel" />
 					<Panel class="Checkbox" onmouseactivate="CitadelShopHeroBuildsPublicBuildCheckbox()" />
@@ -61,7 +61,7 @@
 				<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_BuildDescriptionTitle" />
 				<Label class="BrowseHeroBuildDescription" id="HeroBuildDescription" />
 				<Panel id="BuildCreatorPanel" hittest="false">
-					<Label text="By:" />
+					<Label text="#Citadel_HeroBuildsPage_By" />
 					<Label id="CustomBuild" class="HeroBuildCreator" html="true" text="{g:citadel_persona:build_creator}" />
 					<Label id="DefaultBuild" class="HeroBuildCreator" html="true" text="Valve" />
 				</Panel>

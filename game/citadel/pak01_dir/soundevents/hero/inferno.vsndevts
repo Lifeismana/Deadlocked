@@ -119,6 +119,7 @@
 			"sounds/player/footsteps/inferno/inferno_footstep_13.vsnd",
 			"sounds/player/footsteps/inferno/inferno_footstep_15.vsnd",
 		]
+		vsnd_duration = 1.922222
 	}
 	Inferno.Incend.Cast = 
 	{
@@ -236,6 +237,20 @@
 		delay_rand_max = -15.000000
 		vsnd_files = "sounds/abilities/inferno/a3_ignite/inferno_afternburn_modifier_lp.vsnd"
 		vsnd_duration = 23.176666
+	}
+	Inferno.Afterburn.Modifier.Start = 
+	{
+		base = "Base.Ability"
+		volume = 0.000000
+		volume_fade_out = 0.500000
+		vsnd_files = 
+		[
+			"sounds/abilities/inferno/inferno_afterburn_proc_01.vsnd",
+			"sounds/abilities/inferno/inferno_afterburn_proc_02.vsnd",
+			"sounds/abilities/inferno/inferno_afterburn_proc_03.vsnd",
+			"sounds/abilities/inferno/inferno_afterburn_proc_04.vsnd",
+			"sounds/abilities/inferno/inferno_afterburn_proc_05.vsnd",
+		]
 	}
 	Inferno.Afterburn.Explode = 
 	{

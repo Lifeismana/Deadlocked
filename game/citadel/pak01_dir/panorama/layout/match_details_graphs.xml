@@ -43,7 +43,7 @@
 				<Panel id="TeamCtnLeft" class="TeamCtn" />
 				<Panel id="SwitchPage" onactivate="CitadelShowPostGameTab( 1 );">
 					<Panel id="NavArrow" />
-					<Label text="View Scoreboard" />
+					<Label text="#Citadel_MatchDetails_ViewScoreboard" />
 					<Panel id="GraphIcon" />
 				</Panel>
 				<Panel id="TeamCtnRight" class="TeamCtn" />
@@ -55,25 +55,25 @@
 					</Panel>
 					<Panel class="GraphOptionsCtn">
 						<Panel id="GraphTeamOption" class="GraphOption">
-							<Label class="OptionLabel" text="Showing Data By:" />
+							<Label class="OptionLabel" text="#Citadel_MatchDetails_ShowDataBy" />
 							<Panel id="HeroButton" class="GraphOptionButton" onactivate="CitadelGraphShowAsTeam( 0 )">
-								<Label text="Player" />
+								<Label text="#Citadel_MatchDetails_ShowDataByPlayer" />
 							</Panel>
 							<Panel id="TeamButton" class="GraphOptionButton" onactivate="CitadelGraphShowAsTeam( 1 )">
-								<Label text="Team" />
+								<Label text="#Citadel_MatchDetails_ShowDataByTeam" />
 							</Panel>
 						</Panel>
 						<Panel id="GraphPctOption" class="GraphOption">
-							<Label class="OptionLabel" text="View As:" />
+							<Label class="OptionLabel" text="#Citadel_MatchDetails_ViewAs" />
 							<Panel id="ValueButton" class="GraphOptionButton" onactivate="CitadelGraphShowAsPct( 0 )">
-								<Label text="Value" />
+								<Label text="#Citadel_MatchDetails_ViewAsValue" />
 							</Panel>
 							<Panel id="PctButton" class="GraphOptionButton" onactivate="CitadelGraphShowAsPct( 1 )">
-								<Label text="%" />
+								<Label text="#Citadel_MatchDetails_ViewAsPct" />
 							</Panel>
 						</Panel>
 					</Panel>
-					<Label class="DropDownIntro" text="Graph Type:" />
+					<Label class="DropDownIntro" text="#Citadel_MatchDetails_GraphType" />
 				</Panel>
 				<Panel class="GraphCtn">
 					<UICanvas id="Graph" />
@@ -84,13 +84,13 @@
 					<Panel class="LaneBody">
 						<Panel id="LeftPlayers" class="LaneStatPlayerCtn" />
 						<Panel class="LaneStats">
-							<Label class="StatGroupLabel" text="Stats at {s:sample_time}" />
+							<Label class="StatGroupLabel" text="#Citadel_MatchDetails_StatsAt" />
 							<Panel id="LaneStatKills" />
 							<Panel id="LaneStatNetWorth" />
 							<Panel id="LaneStatLastHits" />
 							<Panel id="LaneStatDenies" />
 							<Panel id="LaneStatDamage" />
-							<Label class="StatGroupLabel" text="Objectives" />
+							<Label class="StatGroupLabel" text="#Citadel_MatchDetails_Objectives" />
 							<Panel id="LaneStatTier1" />
 							<Panel id="LaneStatTier2" />
 							<Panel id="LaneStatBarracks" />

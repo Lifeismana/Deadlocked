@@ -26,7 +26,7 @@
 	<CitadelPostGame class="DashboardPage" oncancel="CitadelNavigateBack();">
 		<Panel id="LoadingBody" class="TabContents">
 			<Panel class="LoadingContents">
-				<Label text="Loading Match Details" />
+				<Label text="#Citadel_MatchDetails_Loading" />
 				<Image id="LoadingSpinner" src="s2r://panorama/images/control_icons/spinner_png.vtex" />
 			</Panel>
 		</Panel>
@@ -34,7 +34,7 @@
 			<Panel class="ErrorContents">
 				<Label class="ErrorMsg" text="{s:ErrorMsg}" />
 				<Button id="RetryButton" class="PopupButton" onactivate="CitadelMatchDetailsRetry(); CitadelPlayUISound( EMainMenuActivate )">
-					<Label text="Retry" />
+					<Label text="#Citadel_Post_Game_Retry" />
 				</Button>
 			</Panel>
 		</Panel>
@@ -45,15 +45,15 @@
 		</Panel>
 		<Panel id="PostGameNavigation">
 			<Panel class="Personal PostGameNav">
-				<Label id="PersonalButton" text="Personal" onactivate="CitadelShowPostGameTab( 0 );" />
+				<Label id="PersonalButton" text="#Citadel_Post_Game_Personal" onactivate="CitadelShowPostGameTab( 0 );" />
 			</Panel>
 			<Label class="NavDivider personaNavDivider" text="/" />
 			<Panel class="Scoreboard PostGameNav">
-				<Label id="ScoreboardButton" text="Scoreboard" onactivate="CitadelShowPostGameTab( 1 );" />
+				<Label id="ScoreboardButton" text="#Citadel_Post_Game_Scoreboard" onactivate="CitadelShowPostGameTab( 1 );" />
 			</Panel>
 			<Label class="NavDivider" text="/" />
 			<Panel class="Graphs PostGameNav">
-				<Label id="GraphsButton" text="Graphs" onactivate="CitadelShowPostGameTab( 2 );" />
+				<Label id="GraphsButton" text="#Citadel_Post_Game_Graphs" onactivate="CitadelShowPostGameTab( 2 );" />
 			</Panel>
 		</Panel>
 		<Panel id="PageContainer">
@@ -68,7 +68,7 @@
 						<Panel class="IntroContent TopBottomFlow">
 							<Label class="HeroName" text="{g:citadel_hero_name:player_hero_id}" />
 							<Panel class="PlayerName LeftRightFlow">
-								<Label html="true" text="Played By " />
+								<Label html="true" text="#Citadel_Post_Game_PlayedBy" />
 								<CitadelUserName id="PlayerUserName" />
 							</Panel>
 						</Panel>
@@ -165,9 +165,9 @@
 			</Panel>
 		</Panel>
 		<Panel class="matchOutcomeContainer">
-			<Label class="matchIDLabel" text="MATCH {s:match_id}" />
-			<Label id="OutcomeVictory" class="matchOutcomeLabel" text="Victory" />
-			<Label id="OutcomeDefeat" class="matchOutcomeLabel" text="Defeat" />
+			<Label class="matchIDLabel" text="#Citadel_MatchDetails_MatchID" />
+			<Label id="OutcomeVictory" class="matchOutcomeLabel" text="#Citadel_MatchDetails_Victory" />
+			<Label id="OutcomeDefeat" class="matchOutcomeLabel" text="#Citadel_MatchDetails_Defeat" />
 		</Panel>
 	</CitadelPostGame>
 </root>

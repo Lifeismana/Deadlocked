@@ -79,7 +79,7 @@
 
 .connectedToGame #LocalPlayerAndParty
 {
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 .connectedToHeroTesting #LocalPlayerAndParty
@@ -210,7 +210,7 @@
 	background-color: gradient( linear, 0% 0%, 100% 0%, from( #595959 ), to( #444 ) );
 }
 
-.PlayerContainer.localPlayer.inParty
+.localPlayerInParty .PlayerContainer.localPlayer
 {
 	background-color: gradient( linear, 0% 0%, 100% 0%, from( #7ec59a70 ), to( #64646480 ) );
 }

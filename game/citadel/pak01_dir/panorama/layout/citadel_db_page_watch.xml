@@ -15,7 +15,7 @@
 	</snippets>
 	<CitadelWatchPage class="DashboardPage" oncancel="CitadelNavigateBack();">
 		<Panel id="WatchTitle" class="PageTitle">
-			<Label text="Watch Matches" />
+			<Label text="#Citadel_Watch_Title" />
 		</Panel>
 		<Panel class="MatchContents">
 			<Panel class="NavButtonContainer">
@@ -23,10 +23,10 @@
 				<Panel id="GotoMatchID" class="SecondaryButton align_center light outline" onactivate="CitadelWatchGotoMatch(); CitadelPlayUISound( EMainMenuActivate )">
 					<Label text="#Citadel_WatchPage_SearchMatchID" />
 				</Panel>
-				<Label class="FeaturedMatchesLabel" text="Featured Matches" />
+				<Label class="FeaturedMatchesLabel" text="#Citadel_Watch_Featured" />
 			</Panel>
 			<Panel id="LoadingContainer">
-				<Label text="Loading..." />
+				<Label text="#Citadel_Watch_Loading" />
 			</Panel>
 			<Panel id="MatchContainer" />
 		</Panel>

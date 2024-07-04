@@ -28,7 +28,7 @@
 		</Panel>
 		<Panel class="AbilityModsContainer">
 			<Panel id="AbilityList">
-				<Label id="AbilityListHeader" text="Abilities" />
+				<Label id="AbilityListHeader" text="#item_info_abilities" />
 				<CitadelAbilityIcon id="AbilityButton1" class="abilityButton1" read_only="true" ability_slot="1" />
 				<CitadelAbilityIcon id="AbilityButton2" class="abilityButton2" read_only="true" ability_slot="2" />
 				<CitadelAbilityIcon id="AbilityButton3" class="abilityButton3" read_only="true" ability_slot="3" />
@@ -39,7 +39,7 @@
 				<CitadelModsPurchasedPanel id="mod_armor" class="mod_armor" mod_category="Armor" read_only="true" />
 				<CitadelModsPurchasedPanel id="mod_tech" class="mod_tech" mod_category="Tech" read_only="true" />
 				<Panel class="TopBottomFlow">
-					<Label class="UniversalSlotsLabel" text="FLEX SLOTS" />
+					<Label class="UniversalSlotsLabel" text="#item_info_flex_slots" />
 					<Panel class="LeftRightFlow">
 						<CitadelModsPurchasedPanel id="mod_universal_locked" class="mod_universal_locked" mod_category="Locked Universal" read_only="true" />
 					</Panel>

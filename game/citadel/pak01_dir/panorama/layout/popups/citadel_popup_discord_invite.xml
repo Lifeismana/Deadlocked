@@ -9,19 +9,19 @@
 		<Panel class="MainBody">
 			<Panel class="LoadedPanel TopBottomFlow">
 				<Label class="h2 display align_center silvered" text="#Citadel_DiscordInvite_Title" />
-				<Label class="body_sm align_center silvered" text="Your invite to join the Deadlock discord is listed below, copy the link into a browser and follow the prompts to join." allowtextselection="true" hittest="true" acceptsfocus="true" />
+				<Label class="body_sm align_center silvered" text="#Citadel_DiscordInvite_Description" allowtextselection="true" hittest="true" acceptsfocus="true" />
 				<Panel id="LinkContainer" class="LeftRightFlow">
 					<Label id="DiscordLink" class="body_sm align_center silvered" text="{s:discord_link}" allowtextselection="true" hittest="true" acceptsfocus="true" />
-					<Panel id="CopyToClipboard" class="align_center" onactivate="CitadelDiscordCopyToClipboard()" onmouseover="UIShowTextTooltip( Copy Link to Clipboard );" onmouseout="UIHideTextTooltip()" />
+					<Panel id="CopyToClipboard" class="align_center" onactivate="CitadelDiscordCopyToClipboard()" onmouseover="UIShowTextTooltip( #Citadel_DiscordInvite_CopyLink );" onmouseout="UIHideTextTooltip()" />
 				</Panel>
-				<Label class="CopiedText body_sm align_center silvered" text="Copied!" />
+				<Label class="CopiedText body_sm align_center silvered" text="#Citadel_DiscordInvite_Copied" />
 				<Label class="DescArea body_sm align_center silvered" text="#Citadel_DiscordInvite_DiscordLinkHours" html="true" />
 				<Button class="SecondaryButton align_center" onactivate="CitadelDiscordConfirmClose()">
 					<Label text="#Citadel_DiscordInvite_Close" />
 				</Button>
 			</Panel>
 			<Panel class="NotLoadedPanel">
-				<Label class="DescArea body_sm align_center silvered" text="Loading..." />
+				<Label class="DescArea body_sm align_center silvered" text="#Citadel_DiscordInvite_Loading" />
 			</Panel>
 		</Panel>
 	</PopupDiscordInvite>

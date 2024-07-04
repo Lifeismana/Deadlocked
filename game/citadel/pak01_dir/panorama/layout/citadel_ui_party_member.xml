@@ -15,7 +15,7 @@
 			</Panel>
 			<Panel id="Invite" hittest="0" class="InviteIcon" />
 			<Panel id="Voice" hittest="0" class="VoiceIcon" />
-			<Panel id="InvalidVersion" class="test" onmouseover="UIShowTextTooltip( Steam Client is out of date );" onmouseout="UIHideTextTooltip()" onactivate="CitadelPartyMemberReportInvalidVersion()" />
+			<Panel id="InvalidVersion" class="test" onmouseover="UIShowTextTooltip( #Citadel_Party_OutOfDateClientTooltip );" onmouseout="UIHideTextTooltip()" onactivate="CitadelPartyMemberReportInvalidVersion()" />
 		</Panel>
 		<Panel class="DetailsCol">
 			<CitadelUserName id="FriendNickname" />

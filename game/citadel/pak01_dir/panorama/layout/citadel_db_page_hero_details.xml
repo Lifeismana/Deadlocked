@@ -15,7 +15,7 @@
 		</snippet>
 		<snippet name="complexity_snippet">
 			<Panel class="statsContainer">
-				<Label class="hero_desc_title" text="Complexity" />
+				<Label class="hero_desc_title" text="#Citadel_HeroPage_Complexity" />
 				<Panel class="hero_desc_section_complexity_stars">
 					<Image class="complexity_star complexity_star1" src="s2r://panorama/images/upgrades/recommended_star_png.vtex" />
 					<Image class="complexity_star complexity_star2" src="s2r://panorama/images/upgrades/recommended_star_png.vtex" />
@@ -63,7 +63,7 @@
 					<Panel id="ActionItemsContainer" hittest="false">
 						<Panel id="HeroTestingButton" class="actionItemButton testingButton" onmouseover="CitadelPlayUISound( EMainMenuHover )">
 							<Panel class="ButtonItems">
-								<Label class="actionItemLabel" text="Hero Sandbox" />
+								<Label class="actionItemLabel" text="#Citadel_HeroPage_Sandbox" />
 							</Panel>
 						</Panel>
 						<CitadelHeroImage id="HeroImage" />
@@ -72,7 +72,7 @@
 						<Panel id="HeroStatsContent">
 							<Panel id="StatsHeaderContainer">
 								<Panel class="separator leftSeperator" />
-								<Label id="StatsHeader" text="BASE STATS" />
+								<Label id="StatsHeader" text="#Citadel_HeroPage_BaseStatsS" />
 								<Panel class="separator rightSeperator" />
 							</Panel>
 							<Panel id="TopStats" />
@@ -83,7 +83,7 @@
 			</Panel>
 		</Panel>
 		<Panel id="PlayerStatsContainer">
-			<Label class="playerStatTitle" text="Player Stats" />
+			<Label class="playerStatTitle" text="#Citadel_HeroPage_PlayerStats" />
 			<Panel id="PlayerStatsList" />
 		</Panel>
 		<CitadelHeroStats id="HeroStats" on_dashboard="true" />
@@ -95,7 +95,7 @@
 				<Panel class="movieFooterBar" />
 			</Movie>
 			<Panel class="noMoviePreview movieArea">
-				<Label class="noMovieLabel" text="Hero currently does not have movies created for abilities" />
+				<Label class="noMovieLabel" text="#Citadel_HeroPage_MissingVideos" />
 			</Panel>
 			<Panel id="AbilityDetails1" class="abilityDetails TopBottomFlow">
 				<AbilityDetailsPanel id="AbilityInfoPanel1" ability_slot="1" />
@@ -115,7 +115,7 @@
 			</Panel>
 		</Panel>
 		<Panel id="HeroBackstoryContainer">
-			<Label class="HeroBackstoryHeaderLabel" text="A FATE&apos;S TALE:" />
+			<Label class="HeroBackstoryHeaderLabel" text="#Citadel_HeroPage_FatesTale" />
 			<Label class="HeroBackstoryLabel" text="{s:hero_backstory}" />
 		</Panel>
 		<Panel id="HeroFavoritesContainer">
@@ -127,7 +127,7 @@
 				</Panel>
 				<Panel id="CreateHeroBuildsButton" class="actionItemButton" onmouseover="CitadelPlayUISound( EMainMenuHover )">
 					<Panel class="ButtonItems">
-						<Label class="actionItemLabel" text="Create/Edit Build" />
+						<Label class="actionItemLabel" text="#Citadel_HeroPage_EditBuild" />
 					</Panel>
 				</Panel>
 			</Panel>

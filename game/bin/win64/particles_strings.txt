@@ -36,7 +36,6 @@
 	kE>fvw
 	ubHcD
 	wOIc
- 	9F~
                           
     near %s
   C%d:I%d {ID=%-3d} 
@@ -163,6 +162,7 @@
 !4G(H
 !4G(L
 !4G(M
+!6U(3%
 !>6'Y
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
 !IsInitializingParticleCollection()
@@ -365,61 +365,49 @@ $x?"TA?
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
-(%	i$
-(%)	V
-(%,WX
-(%9#)
-(%<{]
-(%__F
+(% mX
+(%!WX
+(%.MF
+(%:d;
+(%F:/
+(%Jh;
 (%d,%d)
-(%fS,
-(%rVF
+(%l~F
+(%o_G
+(%s`G
+(%z #
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-+%]
-(-,1Y
-(--'(
-(-3GO
-(-EA$
-(-TbX
-(-U~'
-(-W_(
-(-XB(
-(-]WF
-(-aG'
-(-duX
-(-eLX
-(-k2$
-(-kHF
-(-t>+
-(-v{(
-(-y.)
-(5#PP
-(5'P]
-(5/!.
-(51.g
-(5>E(
-(5GtU
-(5X9"
-(5Y~(
-(5]E]
-(5]kA
-(5a7"
-(5d)(
-(5f|J
-(5g:]
-(5g[]
-(5lI+
-(5no&
-(5{{&
-(5~^+
-(=$^O
-(=(.g
-(=,ZA
-(=AHQ
-(=G4V
-(=p6"
-(=z)Y
+(- WQ
+(-18A
+(-6MF
+(-Am'
+(-N?/
+(-O5'
+(-bDX
+(-xd&
+(5&aG
+(5+D&
+(5+p'
+(505U
+(528'
+(53IR
+(5^$V
+(5c5(
+(5cT'
+(5eHR
+(5f:]
+(5yNU
+(5z/]
+(=#X&
+(=-ZW
+(=FXS
+(=_YS
+(=`	"
+(=a=A
+(=fG(
+(=oMX
+(=qY&
 (A^A\_[
 (A^A]A\_^[
 (A^A]_^
@@ -599,6 +587,7 @@ $x?"TA?
 (pFunction == CP_FUNCTION_SKIP_VALIDITY_CHECK) || pFunction->HasControlPointBeenRequested( PrivateDef(), nControlPoint, CP_READ )
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (t$ 2
+(t$ 3
 (t$ A
 (t$ D
 (t$ H
@@ -620,7 +609,6 @@ $x?"TA?
 (t$@L
 (t$@fD
 (t$@u
-(t$P3
 (t$PA
 (t$PD
 (t$PE
@@ -635,7 +623,6 @@ $x?"TA?
 (t$`L
 (t$`M
 (t$`f
-(t$`ty
 (t$pA
 (t$pD
 (t$pH
@@ -730,6 +717,7 @@ $x?"TA?
 )D$t@
 )D$x@
 )Epfff
+)ID1W
 )L$ A
 )L$ D
 )L$ E
@@ -857,7 +845,6 @@ $x?"TA?
 )t$0D
 )t$0E
 )t$0H
-)t$0I
 )t$0fD
 )t$@A
 )t$@D
@@ -902,6 +889,7 @@ $x?"TA?
 )|$0E
 )|$0H
 )|$0I
+)|$0L
 )|$@A
 )|$@D
 )|$@E
@@ -968,21 +956,19 @@ $x?"TA?
 ,7L9>t	H
 ,<ellipsis>
 ,>u"u?
-,D$`A
+,D$LH
+,D$`H
 ,D,@D;
 ,HR>O
 ,I<%w
-,L$df
-,L$dfD
-,L$hH
-,L$hf
 ,T, E
 ,T,PD;
 ,W5y+
 ,X< w
 ,YA1H
-,d$hI
-,t$dI
+,t$XH
+,|$hL
+,}@Hc
 -	V_log2_uint
 ----------------------------
 -1 for all asleep, 1 for all awake
@@ -999,11 +985,13 @@ $x?"TA?
 -unknown source-
 -unknown source-(
 -vulkan_disable_particle_descriptor_set
+.%RL)
 ..om?
 .00cfg
 .1 .95
 .46zNuLB
 .4>zQuOB
+.=\pO
 .>PJ;I:qE>
 .>l	y<\
 .?AUConcurrentQueueProducerTypelessBase@details@moodycamel@@
@@ -1920,7 +1908,10 @@ $x?"TA?
 .?AVIAsyncProcessedDataResult@@
 .?AVIBaseSequence@@
 .?AVIErrorListener@@
+.?AVIGapHost_Cursor@@
+.?AVIGapHost_ExecLog@@
 .?AVIGapHost_Unknown@@
+.?AVIGapHost_YieldingCursor@@
 .?AVIGapTypeQueriesForScope@@
 .?AVIGapTypeQueryRegistrationForScope@@
 .?AVIKV3TransferInterface_EHandle_Load@@
@@ -2094,7 +2085,6 @@ $x?"TA?
 0A^_^[]
 0A^_^][
 0A_A\_^]
-0A_A]A\_]
 0A_A^A\
 0A_A^A\H
 0A_A^A]
@@ -2137,7 +2127,7 @@ $x?"TA?
 220323000000Z
 220801000000Z
 230714000000Z
-240627200916Z0/
+240704151338Z0/
 241009235959Z0a1
 2D Orient
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -2212,6 +2202,7 @@ $x?"TA?
 8A^A]_^][
 8A_A\_[
 8A_A]_^
+8A_A^
 8A_A^A]A\_^[]
 8A_A^A]A\_^][
 8A__^]
@@ -2228,6 +2219,7 @@ $x?"TA?
 9)~P3
 9-		H
 92~;L
+95Zv`
 98t H
 99~CE
 9>powf
@@ -2264,6 +2256,7 @@ $x?"TA?
 9t$Pu	
 9t$Xu
 9t$hu
+9w |	D
 9zt~=
 9{(~)L
 9{@~)L
@@ -2291,21 +2284,16 @@ $x?"TA?
 :>)*	v
 :>t6k'
 :???;???;???3776>????/?/????7'7&>?????????
-:@%FI[
-:@%kL[
-:@- I[
-:@-=L[
-:@5.L[
 :Exu2Ic
 :H9w u
 :YA1I
+:mvO!
 ;	t/H
 ;.|@H
 ;/i$?t$
 ;1#INF
 ;3|8H
 ;;|8H
-;=y/#
 ;?0123456789:;<=>?
 ;D$`u
 ;F0u!H
@@ -2333,6 +2321,7 @@ $x?"TA?
 ;q@} H
 ;uHVL
 ;|$T|
+;|$`u 
 <	u2H
 <	u8H
 <	u\L
@@ -2348,6 +2337,7 @@ $x?"TA?
 <;HcO
 <==9=-=)==
 <>#n2
+<>HcO
 <>u:D8t$(
 <>u<D8e
 <?u@H
@@ -2397,6 +2387,7 @@ $x?"TA?
 =I.w? F
 =SHX?
 =Z.K>
+=]oGG
 =d]T?
 =ffn?
 =h"L?
@@ -2583,9 +2574,9 @@ $x?"TA?
 @.data
 @.reloc
 @8,8u
+@8-7u)
 @84)u
 @84;u
-@858):
 @8<3u
 @8>u^H
 @8j(t
@@ -2603,6 +2594,7 @@ $x?"TA?
 @?*BL?
 @A\][
 @A\^[
+@A]A\_^]
 @A]^[
 @A]^]
 @A]_[
@@ -2628,9 +2620,9 @@ $x?"TA?
 @A_A^A\_^[]
 @A_A^A\_^][
 @A_A^A]
+@A_A^A]A\[
 @A_A^A]A\_
 @A_A^A]A\_^]
-@A_A^A]][
 @A_A^]
 @A_A^^
 @A_A^_
@@ -2669,7 +2661,6 @@ $x?"TA?
 @SUVWAWH
 @SUVWH
 @SUWATAVH
-@SUWATH
 @SUWH
 @SVATAVH
 @SVATAWH
@@ -2684,6 +2675,7 @@ $x?"TA?
 @SVWATAWH
 @SVWATH
 @SVWAUAVH
+@SVWAUAWH
 @SVWAVAWH
 @SVWH
 @SWATAVH
@@ -2724,7 +2716,7 @@ $x?"TA?
 @UVAVH
 @UVAWH
 @UVWATAUAVAWH
-@UVWATAWH
+@UVWATAUH
 @UVWATH
 @UVWAUAVH
 @UVWAUAWH
@@ -2734,7 +2726,7 @@ $x?"TA?
 @UVWH
 @UWATAUAWH
 @UWAVH
-@VATAWH
+@UWAWH
 @VATH
 @VAVAWH
 @VAVH
@@ -2747,7 +2739,6 @@ $x?"TA?
 @VWAVH
 @WATAUAVH
 @WATAUAWH
-@WATAUH
 @WATAVAWH
 @WATAWH
 @WATH
@@ -2788,7 +2779,10 @@ A94$t
 A99~<H
 A9<Fu
 A9Vt~+
+A9^Ht
 A9t$x
+A9u u	H
+A9u ~DH
 A9v0t
 A:8ucI
 A;8|?
@@ -2828,11 +2822,11 @@ ATAVAWH
 ATAVH
 AUAVAWH
 AUAVH
+AVAWH
 AXD;Ah|
 AXHcIPL
 A\^[]
 A\_[]
-A\_][
 A\_^[
 A\_^[]
 A\_^]
@@ -2845,7 +2839,6 @@ A]A\^]
 A]A\_^
 A]A\_^[]
 A]A\_^]
-A]^[]
 A]_[]
 A]_][
 A]_^[]
@@ -2860,6 +2853,7 @@ A^A\_][
 A^A\_^[]
 A^A\_^]
 A^A]A\
+A^A]A\_[]
 A^A]A\_]
 A^A]A\_^[]
 A^A]A\_^][
@@ -2867,11 +2861,10 @@ A^A][]
 A^A]]
 A^A]^[]
 A^A]^]
-A^A]^][
+A^A]_
 A^A]_[]
 A^A]_]
 A^A]_^[
-A^A]_^[]
 A^A]_^]
 A^^[]
 A^_[]
@@ -2880,22 +2873,24 @@ A^_^]
 A^_^][
 A_A\[]
 A_A\][
-A_A\^
 A_A\_
 A_A\_[]
 A_A\_^[
+A_A\_^[]
 A_A]A\
 A_A]A\[
 A_A]A\_[
 A_A]A\_[]
 A_A]A\_]
-A_A]A\_^
 A_A]A\_^[
 A_A][]
 A_A]]
 A_A]][
+A_A]^
+A_A]^H
 A_A]^[]
 A_A]_
+A_A]_^[
 A_A]_^]
 A_A^A\
 A_A^A\_
@@ -2929,7 +2924,6 @@ A_A^^
 A_A^^]
 A_A^_
 A_A^_H
-A_A^_[]
 A_A^_^[]
 A_A^_^]
 A_^[]
@@ -2954,6 +2948,7 @@ Add Decay to Bounce
 Add R%d <- R%d + R%d
 Add to Current Value Raw
 Add to Initial Value
+AddControlPoint
 Additive
 Address of m_Children.m_pHead: [%p]
 Adjust heading (positive = right, negative = left)
@@ -2987,6 +2982,7 @@ AnimationSystemUtils_001
 AnimationSystem_001
 AnimationType_t
 AppPolicyGetProcessTerminationMethod
+AppendAlloc
 Apply Min Pullforce
 Apply fog of war to color
 Apply fog to particle
@@ -2998,7 +2994,6 @@ Are we currently running unit tests?
 AreFileApisANSI
 Assert True
 AssertCast
-AssertCastNumberInternal
 AssetBrowse( vpost, *showassetpreview )
 AssetBrowse( vtex, *showassetpreview )
 AssetBrowserSystem_001
@@ -3283,11 +3278,13 @@ C:\buildworker\citadel_staging_win64\build\src\public\mathlib\rotation.h
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\simd_vector.h
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\voxelarray.h
 C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_staging_win64\build\src\public\particleslib\particle_editor_info.h
 C:\buildworker\citadel_staging_win64\build\src\public\particleslib\particlefloatinput.h
 C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\gap_variant.h
 C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_cell.h
 C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_graph_instance.h
 C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_interface.h
+C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_runtime_lib.h
 C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_test_domain.h
 C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_type.h
 C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\indexdata.h
@@ -3326,6 +3323,7 @@ C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllocalmemstack.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmap.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlqueue.h
+C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrange.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsoacontainer.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
@@ -3437,7 +3435,6 @@ CGapArgumentList::AddAndRequestArgStorageForWriteUntyped
 CGapArgumentList::PrepareUpToArgIndex
 CGapArgumentList::ReadArgIntoVariant
 CGapArgumentList::ReadArgIntoVariantUnknownName
-CGapArgumentList::ValidateArgumentRead
 CGapArgumentList::ValidateInternalStateOnRead
 CGapArgumentList::WriteArgCopyFromVariant
 CGapArgumentList::WriteArgPointAtRegister_Fastpath
@@ -4732,6 +4729,7 @@ CUtlRBTree<struct CUtlOrderedMapBase<class PulseDocNodeID_t,struct PulseGraphExe
 CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int> >::RemoveAll
+CUtlRange
 CUtlString
 CUtlStringToken::TrackTokenCreation( pString, nullptr )
 CUtlSymbolLarge
@@ -6385,7 +6383,7 @@ Capsule
 Capsule Light
 Capsule Light Controls
 Cast of %s loses value information (returning %s)
-Cast of %s loses value information (returning %s) on %s:%d
+Cast of %s loses value information (returning %s) in %s on %s:%u
 Causes all single-fire particle assertions to trigger once more.
 Causes each execution cursor to pause at this node for a fixed period of time. Each cursor will wake up and resume execution when the time expires, unless aborted or early-woken.
 Ch8Gh
@@ -6412,6 +6410,7 @@ CloseHandle
 Closed loop
 ClosestPointTestType_t
 Cluster Cooldown Time
+CmdLinkAH
 CmdLinkAL
 Collection Age
 CollectionFloatInput()
@@ -6634,7 +6633,6 @@ D$0$%h
 D$0&3
 D$0'~
 D$0*2
-D$0+@8
 D$0+U9
 D$0+kA
 D$0-#
@@ -6643,8 +6641,9 @@ D$02P+
 D$02Q
 D$04H
 D$04u
+D$09F
+D$0;F
 D$0=4L3H
-D$0=W
 D$0>	$
 D$0?M
 D$0@8{
@@ -6658,7 +6657,6 @@ D$0E*
 D$0E3
 D$0F"5PH
 D$0F&
-D$0Gb
 D$0GfFFH
 D$0H#
 D$0H%=+
@@ -6669,7 +6667,6 @@ D$0H9Gp
 D$0HcH
 D$0Ic
 D$0J8b
-D$0JD
 D$0K^Ed
 D$0L;
 D$0Lc
@@ -6686,7 +6683,6 @@ D$0ZM~
 D$0[4
 D$0[I
 D$0`<	
-D$0`I
 D$0b$
 D$0b-
 D$0cd
@@ -6724,11 +6720,13 @@ D$4E3
 D$4Lc
 D$4fD;
 D$4u>
+D$8BE
 D$8E3
 D$8H9
 D$8H;
 D$8Hc
 D$8HcJ
+D$8Hc\
 D$8Hct$@
 D$8I;
 D$8L9
@@ -6801,15 +6799,14 @@ D$PtNG
 D$Pu!M
 D$TA;
 D$TD;
+D$TE9
 D$THc
-D$Tu A
 D$X9D
 D$X@2
 D$XD8@`
 D$XD9E<v
 D$XD;
 D$XD;E<r
-D$XE9
 D$XE;
 D$XH9
 D$XH;
@@ -6853,7 +6850,7 @@ D$dfD
 D$h+D$p
 D$h+D$|
 D$h@8
-D$hD9t$0
+D$hD;
 D$hE3
 D$hE;
 D$hH9
@@ -6885,7 +6882,6 @@ D$pL;
 D$pLc
 D$pLcD$`
 D$pfA
-D$pt.
 D$ptKF
 D$t)D$d@
 D$tHc
@@ -6899,6 +6895,7 @@ D$xI
 D$xLc
 D$xLi
 D$xM+
+D$xs[
 D$xz\uZ
 D$|)D$l@
 D$|Hc
@@ -6912,29 +6909,28 @@ D+|$0fD;g
 D+|$p
 D5(F9d5
 D8$3u
-D8%-*@
-D8%9O.
-D8%A2@
-D8%E,@
-D8%HO.
-D8%MP.
-D8%QL.
-D8%nT.
-D8%y)@
-D8%}Q.
+D8%y$.
 D8(tLH
 D8)u#L
 D8,:u
 D81uUL9r
-D85AX.
+D85	,.
+D851+.
+D85LI$
+D85TI$
+D85U..
 D86u|H
 D88tS3
 D8<3u
 D8<8u
 D8<:u
 D8<>u
-D8=6h>
-D8=zg>
+D8= b@
+D8=)a,
+D8=6=>
+D8=jn@
+D8=wa,
+D8=z<>
 D8L$0u`
 D8L$`u8
 D8[(u
@@ -6951,10 +6947,6 @@ D8|$"t
 D8|$Ht
 D9#tKH
 D9+~3M
-D9-!Ch
-D9-0@h
-D9=]0R
-D9=nNR
 D9E4v
 D9H$t
 D9I$t
@@ -6981,13 +6973,12 @@ D9u8u
 D9v(D
 D9y ~1H
 D9zt~5E
+D9{ ~CH
 D9~(D
 D;#|8H
 D;$(t
 D;+|8H
-D;,(t
 D;3|8H
-D;5uk6
 D;;|8H
 D;A$|BH
 D;D$0}
@@ -7008,6 +6999,7 @@ D;VTr
 D;kt|
 D;p(}QH
 D;sHu
+D;t$0
 D;wt|
 D;x(}RH
 D;|$T
@@ -7141,12 +7133,8 @@ E0Lc`
 E8$?u
 E8'u^I
 E8)tEH
-E8f;X
 E8q(u
-E8|$)u
 E9,$L
-E9e u	H
-E9e ~GI
 E9n(E
 E9t$x
 E9|$t
@@ -7161,6 +7149,7 @@ E;u$t>H
 E;|$t
 E;|$x
 E>nEA
+E@f;X
 EH*?H
 EHANDLE support hasn't been implemented yet
 EHHcI
@@ -7716,7 +7705,6 @@ Error saving default keys for TextureControls_t: %s
 Error saving default keys for TextureGroup_t: %s
 Error saving default keys for VecInputMaterialVariable_t: %s
 Error: Sort failed
-Et$|H
 EvalParticleFloatBias
 EvaluatePulseTargetFn
 EventTypeSelection_t
@@ -7843,6 +7831,7 @@ FindClose
 FindFirstFileExW
 FindInterfaceVoid( interfaceName, true ) == nullptr
 FindNextFileW
+FindOrAddActiveControlPoint
 FindSafeFraction
 FindVertexIndicesForEdge
 Fire And Forget
@@ -7910,16 +7899,17 @@ Functions not supported in this evaluator (%s)
 G tBH
 G(9C(
 G03GD%
+G8f9p"t
 GD$(H
 GD$8D
 GD$8H
-GD$@I
 GD$HA
 GD$HH
 GD$PH
 GD$X3
 GD$XH
 GD$`3
+GD$`A
 GD$`H
 GD$hH
 GD$pH
@@ -7931,9 +7921,8 @@ GET_CONST_INLINE_STORAGE
 GET_DOMAIN_VALUE
 GET_VAR
 GL$(A
-GL$(L
 GL$8H
-GL$HA
+GL$`A
 GLOW_ALPHA
 GLOW_RGB
 GREEN
@@ -7944,8 +7933,8 @@ GT$HA
 GT$HH
 GT$PH
 GT$hH
-GT$pE
 GT$xD
+GT$xE
 GT$xH
 G\$(H
 G\$(L
@@ -7971,6 +7960,7 @@ Gameplay State High
 Gameplay State Low
 Gamma-correct vertex colors
 GapArgumentListSignature_t::GetArg
+GatherInparams
 Gaussian
 Gd$HI
 Generate a random integer between min and max (inclusive)
@@ -8063,12 +8053,12 @@ Green Channel
 Green with Green as Alpha
 GroupHasValidAnimation
 Gt$8I
-Gt$@I
 Gt$hL
 Gx8CNu53
 G|$(H
 G|$(L
 G|$8H
+G|$8H9w8u
 G|$8M
 G|$XA
 H SUWATAUAVAWH
@@ -8080,6 +8070,7 @@ H USVWATAUAVH
 H USVWAVAWH
 H USVWAVH
 H UVWATAUAVAWH
+H UVWAWH
 H UWAUAVAWH
 H WAUH
 H!D$ I
@@ -8089,14 +8080,15 @@ H#D$HH+
 H#D$pH
 H#T$xH;T$x
 H(HcC
+H(HcG4H
 H*0"ZOW
 H-^Eu
 H1FxM
 H9(tO
 H9+t	H
-H9-j=@
-H95U`_
-H95zv_
+H95BD_
+H95l42
+H95w"c
 H97u+A
 H98t2
 H9A(u
@@ -8107,6 +8099,7 @@ H9Q@t
 H9X(t
 H9]wt
 H9_ v%H
+H9_8u
 H9_@u
 H9l$@t
 H9o(ulH
@@ -8137,8 +8130,8 @@ HA^A]
 HA^^][
 HA_A]_^
 HA_A^A]A\^[
-HA_A^A]]
 HA_A^^]
+HA_A^_]
 HH:mm:ss
 HITBOX_INDEX
 HITBOX_LERP_CONSTANT
@@ -8165,15 +8158,14 @@ Hc7;w
 Hc;;{
 Hc>;~
 HcA(E3
-HcAHL
+HcAHH
 HcAPH
 HcApD;
 HcApE3
-HcAxL
+HcAxH
 HcB$A;C
 HcC 3
 HcC H
-HcCxL
 HcD$$M
 HcD$0
 HcD$@I
@@ -8192,9 +8184,10 @@ HcF H
 HcF(H
 HcFhHk
 HcG H
-HcG4I
-HcG4Lk
+HcG<I
+HcG<Lk
 HcGHHcwd;
+HcGxL
 HcK H
 HcK0H
 HcKPH
@@ -8206,7 +8199,6 @@ HcL$,I
 HcL$8
 HcL$8H
 HcL$8L
-HcL$PL
 HcL$X
 HcL$`B
 HcL$dA
@@ -8279,7 +8271,7 @@ I9n I
 I9n t
 I9n0I
 I9n@I
-I9w(t
+I9v(t
 I9} t
 I9}(t
 I9}0t
@@ -8287,6 +8279,9 @@ I;A s
 I;A s&
 I@H9k8u
 ID_CHAR
+IGapHost_Cursor
+IGapHost_ExecLog
+IGapHost_YieldingCursor
 IHDRPLTEIDATIENDtRNScHRMgAMAiCCPsBITsRGBtEXtzTXtiTXtbKGDhISTpHYssPLTtIMEoFFseXIf
 IKV3TransferInterface_EHandle_Load
 IKV3TransferInterface_EHandle_Save
@@ -8327,12 +8322,12 @@ IXDkCPDH
 I`DkCXLH
 Ic.A;n
 Ic/A;o
-Ic4$A
 Ic?A;
 IcGhHk
 IcGhLk
 IcIdH
 IcIdI
+IcN L
 Ic\$@E;
 Ic] A
 Ic^(A
@@ -8409,6 +8404,8 @@ Init from parent particle event
 Init vector attribute from a list of values
 Init vector attribute to vector expression
 InitDependencyCounters
+InitFrame
+InitInstance_Internal
 InitSkinnedTransformInfo
 Initial Trace Down
 InitializeConditionVariable
@@ -8963,6 +8960,7 @@ JumpOrLeap( C%d:I%d )
 K	V_sinf
 K H9K0u
 K SUVWAWH
+K USAUAVI
 K USWAUI
 K&>.yC
 K(L9x
@@ -8970,6 +8968,7 @@ K0HcQ
 KDLcC@
 KERNEL32.dll
 KV3 instances cannot be set to an unspecified specific type
+KV3Helper_CheckValueNumericCast
 KV3TransferSchema_AllocateClassInstance
 KV3TransferSchema_ClassName::<lambda_1>::operator ()
 KV3Transfer_LoadMapFromArrayOfKVTables
@@ -9059,7 +9058,7 @@ L$ UATAUAVAWH
 L$ UH
 L$ USVAUAVH
 L$ USVWATAVAWH
-L$ USVWAVAWH
+L$ USVWAVH
 L$ USWH
 L$ UVAUAVH
 L$ UVWATAUAVAWH
@@ -9076,9 +9075,7 @@ L$ |+L;
 L$&8\$&t,8Y
 L$(;k
 L$(E3
-L$(H;L$0
 L$(H;M
-L$(Hc
 L$(HcD$ M
 L$(fI
 L$,v-
@@ -9117,17 +9114,17 @@ L$@Ic
 L$@fA
 L$@uU
 L$DA+
-L$HH;
+L$HE3
 L$HHc
 L$HL9
 L$HfD;
 L$Ht$H
 L$Ht,E
 L$PA87uOH
-L$PA;
 L$PD;
 L$PE3
 L$PH3
+L$PHc
 L$PHct$@A
 L$PI+
 L$PIc
@@ -9142,7 +9139,7 @@ L$XLc
 L$XMc
 L$`;M
 L$`D;
-L$`E3
+L$`H;L$p
 L$`Hc
 L$`ff
 L$bA8
@@ -9150,11 +9147,15 @@ L$h H
 L$h;M
 L$hA;
 L$hD3
+L$hHc
 L$hMc
 L$pA;
 L$pD!l$x
+L$pD;
 L$pD;|$ 
-L$pE3
+L$pE8
+L$pH#
+L$pH;
 L$pHi
 L$pIc
 L$pff
@@ -9168,43 +9169,44 @@ L$xE;
 L$xHi
 L$xMc
 L$xfD
-L$xt0L
 L$|D;u
 L$|E;
 L00Hc
 L9#u/H
 L9't	H
-L9-G9a
 L90u H
 L93t	H
 L94:H
-L95)h3
-L959T3
-L95Gg3
-L95Q(6
-L95WS3
-L95l(6
+L95&mT
+L95><3
+L95N(3
+L95Y<3
+L95^t<
+L95g	_
+L95i(3
+L95w;3
+L95yt<
 L97t{L
 L9:t[
 L9;t	H
-L9=:xQ
-L9=?gQ
-L9=CwQ
-L9=ZgQ
-L9=cfQ
+L9=:5Q
+L9=?$Q
+L9=C4Q
+L9=Z$Q
+L9=c#Q
 L9?t	H
 L9?tb
+L9F(u
 L9d$ t
 L9d$(t
 L9d$Ht
 L9l$`u
 L9m0u
-L9n t<H
+L9n t8H
 L9s(t!
 L9t$(t
 L9t$0t
 L9t$ht
-L9t$pt
 L9vPteL9v`t_L9vhtYH
 L9|$ t
 L9~(uXH
@@ -9236,10 +9238,10 @@ LT_FLOAT
 LT_INT
 Last/Newest Particle
 Lc&D;f
+Lc'D;g
 Lc3D;s
 Lc7D;w
 Lc>D;~
-Lc?D;
 LcA<E3
 LcC`E
 LcD$ H
@@ -9249,7 +9251,6 @@ LcF 3
 LcFhH
 LcFlC
 LcFlH
-LcG H
 LcK(H
 LcK0H
 LcK8H
@@ -9261,11 +9262,13 @@ LcL$`H
 LcN H
 LcN(H
 LcO8H
+LcT$hA
+LcT$hE3
 LcZ L
 Lc\$@Mc
 Lc`(M
 LcaXM
-Lcd$TH
+Lcd$0
 Lch(M
 Lcl$8
 Lcl$P
@@ -9606,7 +9609,7 @@ Named model mesh group random
 Named model sequence random
 NavGameTest001
 NavSystem001
-NduRE9
+Ndu\E9
 Neg R%d <- -R%d
 Negate
 Negative Half Blend Add
@@ -9714,8 +9717,7 @@ Output minimum
 Output vector
 Overlay
 OverlayProjectionDirection
-P 9=r
-P 9_h
+P 9_p
 P(tOL
 P8H=vmdlt
 P8H=vpcf
@@ -9903,6 +9905,7 @@ PATTACH_RENDERORIGIN_FOLLOW
 PATTACH_ROOTBONE_FOLLOW
 PATTACH_WATERWAKE
 PATTACH_WORLDORIGIN
+PA^^]
 PA^_]
 PA^_^
 PA^_^][
@@ -10290,6 +10293,7 @@ Post Processing Strength
 PostProcessingSystem_001
 PostSimulate
 PrecalculateParticleFloatBiasInfo
+PrepareOutstores_Fastpath
 Prevent passing through a plane
 Prevent passing through static part of world
 Print debug message every time a particle collection is created
@@ -10381,6 +10385,7 @@ PulseValueTypeInfo_t<16>::KV3TransferLoadInstance::<lambda_1>::operator ()
 PulseValueTypeInfo_t<16>::KV3TransferLoadInstance::<lambda_2>::operator ()
 PulseValueTypeInfo_t<16>::KV3TransferSaveInstance::<lambda_1>::operator ()
 PulseValueTypeInfo_t<16>::KV3TransferSaveInstance::<lambda_2>::operator ()
+PulseValueTypeInfo_t<17>::KV3TransferLoadInstance
 PulseValueType_t
 PulseWarningLog 
 Pz}b!
@@ -10417,6 +10422,7 @@ RGB with RGB as Alpha Passthrough
 RGBA with RGB as Alpha
 ROTATION
 ROTATION_SPEED
+R\Dg8
 Radial Amount (-1..1)
 Radius
 Radius Scale
@@ -10573,7 +10579,7 @@ RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
 RenderModelSubModelFieldType_t
-RenderOps_Init(13797): 
+RenderOps_Init(13828): 
 RenderProjectedMaterial_t
 RenderProjectedMaterial_t::KV3TransferLoad_Impl
 RenderProjectedMaterial_t::KV3Transfer_DefaultKeys_Impl
@@ -10582,6 +10588,7 @@ RenderService_001
 RenderSimpleModelCollection is missing a model to render
 RenderUtils_001
 Renderer Modifiers
+Rendering
 Rendering Options
 Rendering filter
 Repeatedly Trigger Child Group
@@ -10639,6 +10646,7 @@ S ;S$|D
 S0;S4|@
 S0Q0O
 S>$hkDh$h>[2
+SATAUAVAWH
 SATAUAWH
 SAUAVAWH
 SA|X=G
@@ -10724,7 +10732,6 @@ SSE and SSE2 are required.
 STRING_CHAR
 SUATAUH
 SUATH
-SUAUAVAWH
 SUAUAWH
 SUAVH
 SUBMODEL_AS_BODYGROUP_SUBMODEL
@@ -10761,6 +10768,7 @@ SWATAWH
 SWATH
 SWAUH
 SWAVH
+SWAWH
 SYNC_WAIT_FOR_COMPLETION
 Saturate color pre alphablend
 Saturday
@@ -11395,6 +11403,7 @@ SetLastError
 SetStdHandle
 SetUnhandledExceptionFilter
 SetVar V%d (%s) <- R%d R%d
+SetupContextData
 Shader
 Shader Extra Data 1
 Shader Extra Data 2
@@ -11556,7 +11565,6 @@ StopWaiting
 Stopped on Collision
 Stops all particle systems currently playing
 StorageMatchesExactly( m_pStaticSignature->GetArg( nIndex ).m_Type, type )
-StorageMatchesExactly( storageType, validateType )
 String
 String( %s )
 Sub R%d <- R%d - R%d
@@ -11607,6 +11615,7 @@ T$@E3
 T$@Hc
 T$BHc
 T$CueD
+T$HE3
 T$HHc
 T$HI	
 T$HLc
@@ -11639,14 +11648,14 @@ T$pM;
 T$pfA
 T$x;u
 T$xD;|$|
-T$xE3
 T$xI	
 T$|D;u
 T$|fff
-T%#|$
-T%wo#
+T%^W"
+T%gB#
 T(0Ic
-T-3T:
+T-5S"
+T-SU"
 T>M-+?#gy?
 T>gaW?:]f?AHV>'
 T>l>~?
@@ -11777,28 +11786,29 @@ USAVAWH
 USAVH
 USER_EVENT_STATES
 USVATAUH
+USVATAVH
 USVATH
-USVAUI
+USVAVH
 USVWATAUAVAWH
 USVWATAUAVH
 USVWATAUH
 USVWATAVAWH
 USVWATAVH
+USVWATAWH
 USVWAUAVAWH
-USVWAUAVH
 USVWAUH
 USVWAVAWH
 USVWAVH
 USVWAWH
 USVWH
 USWATAUAVAWH
+USWATAUAVH
 USWATAUAWH
 USWATAVH
 USWATAWH
 USWATH
 USWAUAVH
 USWAUH
-USWAVAWH
 USWAVH
 USWAWH
 UT$@A
@@ -11839,6 +11849,7 @@ UWAUAVAWI
 UWAUAVH
 UWAUAVI
 UWAUH
+UWAVAWH
 UWAVH
 UWAWH
 U_0=1
@@ -11914,12 +11925,12 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
-V.kyh
 V6'?C
 V6E>`"(5
 VATAUH
 VATAWH
 VAUAVH
+VAUAWH
 VAVAWH
 VApplication001
 VAsyncFileSystem2_001
@@ -12081,7 +12092,8 @@ Visualization Ring
 Visualization Sphere Solid
 Visualization Sphere Wireframe
 Vrad3_001
-W=U?/
+W-_Y/
+W5@9T
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Discarding existing in-progress particle performance request.
 WARNING: Particle system '%s' was not precached correctly. Performing blocking load....
@@ -12124,6 +12136,7 @@ Write normal instead of rotation
 WriteConsoleW
 WriteFile
 WriteKV3MessageToVCon
+WriteOutstores_Slowpath
 X @8u
 X Axis
 X D8e
@@ -12135,22 +12148,22 @@ X USVWATH
 X UVWATAUAVAWH
 X UVWAVAWH
 X UWATAUAVH
+X UWAVH
 X axis scaling scalar field
 X offset of center point
 X to the Y power
 X!t5~
-X%i9]
-X%m=+
-X-P=$
-X5/_B
-X58=$
-X5jfT
-X=*#@
-X==JF
-X=J1G
-X=L$]
-X=^z]
-X=i=$
+X%y.]
+X%{:#
+X5%T3
+X5?g3
+X5V2T
+X5^b-
+X5ef$
+X5p:3
+X=-X]
+X=Ub-
+X=pg3
 X?+5[>,
 XA]A\_[
 XA^A\][
@@ -12193,39 +12206,41 @@ Y Dimension Count
 Y Dimension Spacing
 Y axis scaling scalar field
 Y offset of center point
-Y#VE!
-Y%4EY
-Y%MwR
-Y%n!G
-Y-	D#
-Y-/l,
-Y-E`'
-Y-N@'
-Y-s%(
-Y-~?8
+Y%`!,
+Y-.f'
+Y-/P'
+Y-11(
+Y-<.'
+Y-PM(
 Y4$E3
-Y5"H'
-Y5'c'
-Y58Q4
-Y5B0)
-Y5I>(
-Y5M8L
-Y5X`(
-Y5dw(
-Y5g2M
-Y5o"(
-Y5qP4
+Y5).(
+Y5)M'
+Y51y:
+Y53P(
+Y5:k(
+Y5VoT
+Y5ff$
+Y5pn'
+Y5w6'
 Y9"SD
-Y=hbW
+Y=3A-
+Y=5h3
+Y==oT
+Y=>^-
+Y=Qs$
+Y=}r$
 Y>kX>M
 YD$0A
 YD$0E
 YD$0f
 YD$@D
 YD$@f
+YD$DH
+YD$HH
 YD$HL
 YD$`D
 YL$0A
+YL$8H
 YL$@A
 YL$@D
 YL$PE
@@ -12236,24 +12251,29 @@ YT$0A
 YT$0E
 YT$0H
 YT$@A
+YT$HH
 YXfff
 Y\$03
+Y\$<Hc
 Y\$`H
 Y\$pA
 Y\$pD
+Yd$4H
 Yd$PD
 Yd$`f
 Yield, Resume=%s
 Yl$ A
 Yl$ B
 Yl$0A
+Yl$HH
 Yl$pA
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
-Yqa`P
 Yt$0I
 Yt$PD
 Y|$0A
+Y|$4H
 Y|$@B
+Y|$@H
 Y|$DA
 Y|$PA
 Y|$dE
@@ -12304,7 +12324,6 @@ Zod(^?
 \$ UVWAVAWH
 \$ UVWH
 \$ UWATAUAVH
-\$ UWATAUAWH
 \$ UWAVH
 \$ UWAWH
 \$ VH
@@ -12312,6 +12331,7 @@ Zod(^?
 \$ VWATAVAWH
 \$ VWATH
 \$ WATAUAVAWH
+\$ WAVAWH
 \$ WH
 \$ fI
 \$$D;
@@ -12334,15 +12354,15 @@ Zod(^?
 \$4z u
 \$5L3
 \$8A_A]_^]
-\$8D9-;?h
+\$8D;
 \$8I;
 \$8L+
-\$8L9+t
 \$@E3
 \$@H9w(ulH
 \$@H;
 \$@Hc
 \$@Ic
+\$@L9+t
 \$@fE
 \$@tCH
 \$DL+
@@ -12370,7 +12390,6 @@ Zod(^?
 \$\v5
 \$`;|$Dt
 \$`D;
-\$`E3
 \$`Ic
 \$`tQH
 \$gm?
@@ -12384,7 +12403,8 @@ Zod(^?
 \$tz$u"
 \$xD;T$Dt
 \$xHc
-\=Q$/
+\5?oT
+\=&oT
 \D$ A
 \D$ H
 \D$ fD
@@ -12402,22 +12422,18 @@ Zod(^?
 \L$PD
 \T$TD
 \T$xA
-\]lHi
 \d$@A
 \d$HH
 \d$PA
 \l$HH
 \l$lH
 \l6DH
+\m|Hi
 \t$pD
 \t3D8T$(t
-]%F2F
-]%[FQ
 ])6M>&
-]5%GQ
-]<tIH
-]<tJH
-]=HI4
+],tIH
+],tJH
 ]>)2X
 ]J<0"0i3
 ]Lu*E;|$
@@ -12426,10 +12442,7 @@ Zod(^?
 ^RfN>
 ^oEZ_
 _ ;_$t
-_%^'7
-_-Z'7
-_5!i-
-_5b'7
+_5s",
 _89_D
 _?p%{>
 _RDATA
@@ -12473,11 +12486,9 @@ _procedural_particle_snapshot.vsnap
 `?fff?33s?
 `A]A\[
 `A]A\_
-`A]^]
 `A]_]
 `A]_^
 `A^A\_^]
-`A^_[
 `A^_^
 `A^_^][
 `A_A\_
@@ -12714,6 +12725,7 @@ c0 < c1
 c0&>`
 c?FA@s}
 c?zS9?
+cHD9g@t
 cable end cap offset amount
 cable end cap shape factor
 cable_tesselation_ib
@@ -13074,9 +13086,11 @@ f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
 f9)u4H9j
 f9<H}
 f9GPu
+f9X"t
 f9nZt
 f>KZ}
 fA9	t	I
+fA9D$
 fA9]"t
 fA9v"u
 fB9<A}1L
@@ -13243,6 +13257,7 @@ gravity scale
 group ID to affect
 group emission times for new particles
 group id
+g{"c0.
 h VWAVH
 h>1my
 h>4hp?
@@ -13437,6 +13452,7 @@ j>>A?1
 j?V()
 j?{$*
 j@87te3
+jJGaR
 jj@0HK4
 k L9w t
 k VWATAVAWH
@@ -13465,8 +13481,8 @@ l$ VWATAUAVH
 l$ VWATAVAWH
 l$ VWATH
 l$ VWAUAVAWH
-l$ VWAUH
 l$ VWAVH
+l$ WATAUAVAWH
 l$ WAVAWH
 l$ WH
 l$(9YD
@@ -13520,6 +13536,7 @@ l$XuZH
 l$`A;
 l$`D8f t
 l$`I;
+l$`Ic
 l$`L9x 
 l$`ff
 l$dtY
@@ -14241,6 +14258,7 @@ m_fRadPerPointTo
 m_fRadiusMax
 m_fRadiusMin
 m_fRadiusScale
+m_fSizeCullScale
 m_fSpeedMax
 m_fSpeedMin
 m_fSpeedRandExp
@@ -15683,7 +15701,7 @@ nIndex >= 0 && nIndex < m_nNumArgs
 nIndex >= 0 && nIndex < nMemberCount
 nIndexInDependencyCountersTable < m_nNumBlocks * m_nNumPasses
 nIndexInDependencyCountersTable >= 0
-nL$@Hc
+nL$0Hc
 nL$`H
 nLastValidEntryIdx
 nMaxIndexCount > 0
@@ -15826,24 +15844,26 @@ num_particles
 n|$lA
 o L9s t
 o$$fD
-o%S|G
-o%`@$
-o%r:"
+o%=-G
+o%NRG
+o%U\G
+o%s.G
 o(L9d$Ht
 o(L9s(t
-o-9X#
-o-D;$
-o-TE5
-o-V8$
-o-WM5
+o-)+#
+o-/RG
+o-6\G
+o->.G
+o-K]G
+o-~PG
 o0L9s0t
-o5z C
-o=:4$
-o=;lG
-o=HF$
-o=b\G
-o=xoG
-o=xuB
+o5vPG
+o=AKG
+o=JHG
+o=nPG
+o=uKG
+o=zWG
+o=}DG
 oD$ f
 oD$@A
 oD$@H
@@ -15999,15 +16019,14 @@ p WATAUAVAWH
 p WATAWH
 p WAVAWH
 p(?!@V>
+p(HcG4I
 p*W4H
 p0R^G'
 p7M}f
 p;Y>u
-pA]A\_
-pA]_[
 pA^A]^
+pA^A]^][
 pA^][
-pA^_[
 pA^_^
 pA_A\_^[
 pA_A^A\_^[]
@@ -16039,6 +16058,7 @@ pColl->m_pCallBack == nullptr
 pCollection->m_nTotalActiveParticlesIncludingChildren == pCollection->CheckSystemActiveParticleCount()
 pCollection->m_nTotalActiveParticlesIncludingChildren >= 0
 pContext
+pContext->SourceObject()->IsNull()
 pCtx->m_flTimeOffset != -FLT_MAX
 pCtx->nCurrent < V_ARRAYSIZE(pCtx->nList)
 pCtx->nCurrent < pCtx->nCount
@@ -16256,7 +16276,6 @@ protocol not supported
 proxy type
 psystem: %s, time=%g unreasonable vecWorldPos=%g %g %g
 public: 
-pulse_open_graph_id %u
 pulse_open_graph_id %u %u
 pulse_runtime_lib
 pulse_save_execution_history
@@ -16276,6 +16295,7 @@ r4E9|$
 r_draw_particle_children_with_parents
 r_drawparticles
 r_freezeparticles
+r_limit_particle_job_duration
 r_particle_cables_cast_shadows
 r_particle_debug_filter
 r_particle_debug_force_simulation
@@ -16537,6 +16557,7 @@ simulation timescale
 size >= 1
 size at which to fade away
 size at which to start fading
+size cull scale
 size_t( s_Elements[ s ].m_nEnumerator ) == s
 sizeof( float ) == CSOAContainer::ElementSizeInBytes( g_pParticleSystemMgr->GetParticleAttributeDataType( nAttr ) )
 sizeof( uint64 ) == CSOAContainer::ElementSizeInBytes( g_pParticleSystemMgr->GetParticleAttributeDataType( nAttr ) )
@@ -16680,6 +16701,7 @@ t$ L9?t	H
 t$ Lc
 t$ Li
 t$ UH
+t$ UWATAUAVH
 t$ UWATAVAWH
 t$ UWAVH
 t$ WATAUAVAWD
@@ -16717,7 +16739,6 @@ t$8E3
 t$8E8&
 t$8H+
 t$8H9
-t$8H9{
 t$8Hc
 t$8Hk
 t$8Ic
@@ -16737,13 +16758,10 @@ t$HE3
 t$HH9
 t$HHi
 t$HHk
-t$HIc
 t$HcG
 t$Ht'
 t$P9E
-t$P@2
 t$PA;
-t$PAi
 t$PD8
 t$PD87
 t$PE3
@@ -16761,9 +16779,11 @@ t$XH9
 t$XHk
 t$XI9
 t$XI;
+t$Xff
 t$`A;
 t$`A;vt
 t$`D;r
+t$`E3
 t$`H9
 t$`H;
 t$`Hc
@@ -16774,12 +16794,11 @@ t$`~#H
 t$fff
 t$hE3
 t$hLc
+t$hMce
 t$p9k
-t$pA;
 t$pE3
 t$tr_
 t$xt*3
-t$xus
 t%D8h
 t%HcB$A;B
 t&A88t
@@ -16808,6 +16827,7 @@ t=E9l$
 t>vTU>
 t?HcS
 tCfff
+tD9%[IE
 tDfff
 tEHcR
 tEL9:t@
@@ -16900,7 +16920,6 @@ total count scale
 total_frames
 total_render
 total_sim
-tqD8~`tkH
 trD90}
 trHc}
 trace accuracy tolerance
@@ -16932,19 +16951,17 @@ tupleOffset < element.count
 twHc}
 twIcF
 twist axis
-tyD9=
 tyHc}
 type != MATERIAL2_POINTS
 type < ( 1 << TYPE_BIT_COUNT )
 type.CanConvertTo( m_pStaticSignature->GetArg( nIndex ).m_Type, pInScope )
-t{D9%
+t{D9-N:\
+t|D8}`tvH
 t|D9%
-t|D9%"
-t|D9-
-t|D9-mk\
-t|D9=
+t|D9=\
 t~D8u
-u	9Wx
+t~D9%
+t~D9-
 u	D87
 u	D;(
 u L9u
@@ -16952,7 +16969,7 @@ u!Hco`;opu
 u#L9|
 u$D8r(t
 u%@8j(t
-u'L9oxu!H
+u'H9{xu!H
 u,!T$(H!T$ 
 u,9A\|	9AL
 u.D9Qd|
@@ -16968,9 +16985,7 @@ u?D9~
 uED8r(t
 uGHcE
 uJD;w
-uSfff
 uTM9<$tN
-uXfff
 u^HcMdA
 uchar32
 uefE;
@@ -17047,7 +17062,6 @@ vQO+t
 vTint.x < 2.f
 vTint.y < 2.f
 vTint.z < 2.f
-validateType.CanConvertTo( storageType, pSchemaScope )
 value
 value to lerp to
 value too large
@@ -17145,9 +17159,7 @@ x D;Ah}
 x D;Rp}
 x UATAUAVAWH
 x UAVAWH
-x z,u*
 x';Qh}"Hc
-x)fff
 x<H9{0
 x>V6'
 x>V6'?C
@@ -17163,7 +17175,6 @@ x_^][
 x{A;BP}uH
 y\PD>!
 yield_token
-z |i{
 z#u!A
 z&u$F
 z)u'F
@@ -17241,6 +17252,8 @@ zeroth_moment
 |$0tjL
 |$0uE
 |$0~ H
+|$49~
+|$4;~
 |$4D;vt
 |$8D;
 |$8E+
@@ -17273,12 +17286,10 @@ zeroth_moment
 |$P9E
 |$P;k8
 |$PA;
-|$PD;
 |$PE3
 |$PH9
 |$PIc
 |$PfA
-|$PfE
 |$P}[H
 |$P~ H
 |$TA;}t
@@ -17316,7 +17327,6 @@ zeroth_moment
 |$pt2
 |$pt:H
 |$x9kX~,H
-|$xD;t$0
 |$xE3
 |$xHc
 |$|Hc
@@ -17343,7 +17353,6 @@ zeroth_moment
 }cf;_
 }ef;_"w_H
 }ef;~"w_H
-}fMxs
 }gA8_
 }hf;{
 }mf;{
@@ -17357,6 +17366,7 @@ zeroth_moment
 ~5fff
 ~6fff
 ~:fff
+~@E9~
 ~L$`I
 ~L$pI
 ~Pfff

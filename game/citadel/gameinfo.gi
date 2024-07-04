@@ -188,8 +188,6 @@
 			"bakedlighting"	"1"	// Enable lightmapping during compile time		
 			"envmap"	"0" // turned off since it currently causes an assert and doesn't work due to some build issue
 			"nav"		"1"	// Generate nav mesh data
-			"sareverb"	"1" // Bake Steam Audio reverb
-			"sapaths"	"1" // Bake Steam Audio pathing info
 		}
 
 		MeshCompiler
@@ -233,7 +231,7 @@
 			{
 				GridSpacing			"3.0"
 				HeightAboveFloor	"1.5"
-				RebakeOption		"1"						// 0: cleanup, 1: manual, 2: auto
+				RebakeOption		"0"						// 0: cleanup, 1: manual, 2: auto
 				NumRays				"32768"
 				NumBounces			"64"
 				IRDuration			"1.0"
@@ -243,7 +241,7 @@
 			{
 				GridSpacing			"3.0"
 				HeightAboveFloor	"1.5"
-				RebakeOption		"1"						// 0: cleanup, 1: manual, 2: auto
+				RebakeOption		"0"						// 0: cleanup, 1: manual, 2: auto
 				NumVisSamples		"1"
 				ProbeVisRadius		"0"
 				ProbeVisThreshold	"0.1"
@@ -384,12 +382,16 @@
 		// Panorama - enable minidumps on JS exceptions
 		"panorama_js_minidumps" "1"
 
+		// too expensive (500MB+) to load this
+		"snd_steamaudio_load_reverb_data" "0"
+		"snd_steamaudio_load_pathing_data" "0"
+
 		// Steam Audio project specific convars
 		"snd_steamaudio_enable_custom_hrtf"		"0"
 		"snd_steamaudio_active_hrtf"			"0"
 		"snd_steamaudio_reverb_update_rate"		"10.0"
 		"snd_steamaudio_ir_duration"			"1.0"
-		"snd_steamaudio_enable_pathing"			"1"
+		"snd_steamaudio_enable_pathing"			"0"
 		"snd_steamaudio_invalid_path_length"	"0.0"
 		"cl_disconnect_soundevent"				"citadel.convar.stop_all_game_layer_soundevents"
 		"snd_event_browser_default_stack"		"citadel_default_3d"

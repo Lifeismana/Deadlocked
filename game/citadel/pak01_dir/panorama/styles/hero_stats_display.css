@@ -15,7 +15,6 @@ Label
 #HealthStatsContainer,#WeaponTechContainer
 {
 	width: fill-parent-flow(1.0);
-	background-color: #00000030;
 	height: 100%;
 }
 
@@ -37,8 +36,7 @@ Label
 .StatsHeader
 {
 	flow-children: right;
-	background-color: #00000080;
-	padding: 10px 15px;
+	padding: 5px 15px;
 	width: 100%;
 	height: 80px;
 }
@@ -72,5 +70,74 @@ Label
 .IsZeroValue
 {
 	opacity: 0.2;
+}
+
+.DamageReport #WeaponTechContainer
+{
+	visibility: collapse;
+}
+
+.DamageReport #StatContainer_MaxHealth
+{
+	margin-left: 0px;
+}
+
+.DamageReport #StatContainer_BaseHealthRegen
+{
+	margin-left: 10px;
+}
+
+.DamageReport #HealthStats
+{
+	flow-children: right-wrap;
+	width: 100%;
+	height: 100%;
+}
+
+.DamageReport #HealthStats .StatElement
+{
+	visibility: collapse;
+	width: 50%;
+	margin-bottom: 5px;
+}
+
+.DamageReport #HealthStats #StatContainer_BulletArmorDamageReduction
+{
+	visibility: visible;
+}
+
+.DamageReport #HealthStats #StatContainer_TechArmorDamageReduction
+{
+	visibility: visible;
+}
+
+.DamageReport #HealthStats #StatContainer_BulletShieldHealth
+{
+	visibility: visible;
+}
+
+.DamageReport #HealthStats #StatContainer_TechShieldHealth
+{
+	visibility: visible;
+}
+
+.DamageReport #HealthStats #StatContainer_MaxHealth CitadelModifiedAttributeLabel
+{
+	horizontal-align: center;
+}
+
+#HeroName
+{
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Forevs Demo";
+	text-transform: uppercase;
+	margin-bottom: -4px;
+}
+
+.player_name_text
+{
+	font-weight: semi-bold;
+	opacity: 0.6;
 }
 

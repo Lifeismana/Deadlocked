@@ -4,124 +4,267 @@
 	{
 	}
 
+    "Lighting/"
+    {
+        "Diffuse Lighting"
+        {
+		    matDebugMode DIFFUSE_LIGHTING
+        }
+
+        "Specular Lighting"
+        {
+		    matDebugMode SPECULAR_LIGHTING
+        }
+
+        "Transmissive Lighting"
+        {
+		    matDebugMode TRANSMISSIVE_LIGHTING
+        }
+
+        "Emissive Lighting"
+        {
+		    matDebugMode EMISSIVE_LIGHTING
+        }
+
+        "Cubemap Reflections"
+        {
+		    matDebugMode CUBEMAP_REFLECTIONS
+        }
+
+        "CSM Cascades"
+        {
+		    matDebugMode CSM_CASCADE
+        }
+
+        "Baked Lighting"
+        {
+		    matDebugMode BAKED_LIGHTING
+        }
+
+        "Indirect Diffuse Lighting"
+        {
+		    matDebugMode INDIRECT_DIFFUSE_LIGHTING
+        }
+
+        "Indirect Specular Lighting"
+        {
+		    matDebugMode INDIRECT_SPECULAR_LIGHTING
+        }
+    }
+
+    "Performance/"
+    {
+        "Lighting Complexity"
+        {
+		    matDebugMode LIGHTING_COMPLEXITY
+            toolsVisMaxLightingComplexity 8
+        }
+
+        "Reflection Complexity"
+        {
+		    matDebugMode REFLECTION_COMPLEXITY
+            toolsVisMaxLightingComplexity 4
+        }
+
+        "Overdraw"
+        {
+            showShadingComplexity 1
+        }
+
+        "Quad Overdraw"
+        {
+            showShadingComplexity 1
+            showQuadOverdraw 1
+        }
+
+        "Distance Fields"
+        {
+            showDistanceField 1
+        }
+    }
+
 	"Albedo"
 	{
-		toolsVisMode 3
-	}
-
-	"LRV"
-	{
-		toolsVisMode 4
+		matDebugMode ALBEDO
 	}
 	
-	"Lighting Only"
+	"Reflectivity"
 	{
-		toolsVisMode 19
-	}
-
-	"Disable NPR Lighting"
-	{
-		toolsVisMode 20
-	}
-
-	"Force NPR Lighting"
-	{
-		toolsVisMode 21
-	}
-
-	"Lighting Only + Disable NPR Lighting"
-	{
-		toolsVisMode 22
-	}
-
-	"Lighting Only Diffuse + Disable NPR Lighting"
-	{
-		toolsVisMode 23
-	}
-
-	"Lighting Only Specular + Disable NPR Lighting"
-	{
-		toolsVisMode 24
-	}
-
-	//"Full Bright"
-	//{
-	//	toolsVisMode 1
-	//}
-
-	"Normal"
-	{
-		toolsVisMode 2
+		matDebugMode REFLECTIVITY
 	}
 	
-	"Texture Occlusion"
-	{
-		toolsVisMode 5
-	}
-
 	"Roughness"
 	{
-		toolsVisMode 6
+		matDebugMode ROUGHNESS
 	}
 	
-	"Emissive"
+	"Ambient Occlusion - Diffuse"
 	{
-		toolsVisMode 8
+		matDebugMode DIFFUSE_AMBIENT_OCCLUSION
 	}
 	
-	"Metalness"
+	"Ambient Occlusion - Specular"
 	{
-		toolsVisMode 9
-	}
-	
-	"Depth"
-	{
-		toolsVisMode 10
-	}
-	
-	"Flags"
-	{
-		toolsVisMode 11
-	}
-	
-	"SSAO"
-	{
-		toolsVisMode 13
+		matDebugMode SPECULAR_AMBIENT_OCCLUSION
 	}
 
-	"Local AO"
+    "Ambient Occlusion - Distance Fields"
+    {
+        showDistanceField 2
+    }
+
+    "UVSet 1 Density (1k)"
 	{
-		toolsVisMode 14
+		matDebugMode SHOW_UVS
+        toolsVisUvDensityResolution 1024
+        toolsVisUvDensityUvSet 0
 	}
 
-	"Global AO"
+	"UVSet 2 Density (1k)"
 	{
-		toolsVisMode 15
-	}
-	
-	"Combined AO"
-	{
-		toolsVisMode 16
-	}
-	
-	"Combined AO + Occlusion"
-	{
-		toolsVisMode 17
-	}
-	
-	"Sky Vis (Reflections)"
-	{
-		toolsVisMode 18
+		matDebugMode SHOW_UVS
+        toolsVisUvDensityResolution 1024
+        toolsVisUvDensityUvSet 1
 	}
 
-	"Fog Factor"
+	"Normal - Tangent Space"
 	{
-		toolsVisMode 19
-	}
-
-	"Distance Fields"
-	{
-		showDistanceField 1
+		matDebugMode NORMAL_TS
 	}
 	
+	"Normal"
+	{
+		matDebugMode NORMAL_WS
+	}
+	
+	"Geometric Normal"
+	{
+		matDebugMode GEOMETRIC_NORMAL_WS
+	}
+
+	"Tangent"
+	{
+		matDebugMode TANGENT_U_WS
+	}
+	
+	"Bitangent"
+	{
+		matDebugMode TANGENT_V_WS
+	}
+
+	"Geometric Roughness"
+	{
+		matDebugMode GEOMETRIC_ROUGHNES
+	}
+	
+	"Curvature"
+	{
+		matDebugMode CURVATURE
+	}
+
+	"Eyes/Mouth Mask"
+	{
+		matDebugMode EYE_AND_MOUTH_MASK
+	}
+
+	"Wrinkle"
+	{
+		matDebugMode WRINKLE
+	}
+	
+	"Texture Mip Usage"
+	{
+		matDebugMode TEXTURE_MIP_USAGE
+	}
+
+	"Material Layers"
+	{
+		matDebugMode MATERIAL_LAYERS
+	}
+
+	"Material Layers Height"
+	{
+		matDebugMode MATERIAL_LAYERS_HEIGHT
+		toolsVisMaxHeightRange 1
+		toolsVisHeightTint 1
+	}
+
+    "Xen Animation Offset"
+    {
+        matDebugMode XEN_ANIMATION_OFFSET
+    }
+
+    "Vertex Data/"
+    {
+        "Vertex Color Tint"
+        {
+            matDebugMode VERTEX_COLOR
+        }
+
+        "Vertex Height Offset"
+        {
+            matDebugMode VERTEX_BLEND
+        }
+    }
+
+    "GBuffer/"
+    {
+        "GBuffer Albedo"
+        {
+            matDebugMode GBUFFER_ALBEDO
+        }
+
+        "GBuffer Normal"
+        {
+            matDebugMode GBUFFER_NORMAL
+        }
+    
+        "GBuffer Roughness"
+        {
+            matDebugMode GBUFFER_ROUGHNESS
+        }
+
+        "GBuffer Metallic"
+        {   
+            matDebugMode GBUFFER_METALLIC
+        }
+
+        "GBuffer AO"
+        {
+            matDebugMode GBUFFER_AO
+        }
+
+        "GBuffer Height"
+        {
+            matDebugMode GBUFFER_HEIGHT
+        }
+
+        "GBuffer Aux RGB"
+        {
+            matDebugMode GBUFFER_AUX_XYZ
+        }
+
+        "GBuffer Aux A"
+        {
+            matDebugMode GBUFFER_AUX_W
+        }
+    }
+
+    "Shaders/"
+    {
+    	"Shader ID"
+        {
+            matDebugMode SHADER_ID
+        }
+
+        "Shading Model"
+        {
+            matDebugMode SHADING_MODEL
+        }
+
+        "Shading Group"
+        {
+            matDebugMode SHADING_GROUP
+        }
+    }
 }

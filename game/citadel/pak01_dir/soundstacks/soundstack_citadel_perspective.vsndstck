@@ -208,9 +208,27 @@
 						value = "0.0"
 						_system_properties = 
 						{
-							display_group = "Normal"
+							display_group = "locked"
 							property_group = "Perspective - Volume"
 							property_help = "Base volume for sound in db."
+						}
+					}
+					volume_falloff_min = 
+					{
+						data_type = "float"
+						value = "0.0"
+						_system_properties = 
+						{
+							display_group = "locked"
+						}
+					}
+					volume_falloff_max = 
+					{
+						data_type = "float"
+						value = "0.0"
+						_system_properties = 
+						{
+							display_group = "locked"
 						}
 					}
 					volume_falloff_floor = 
@@ -219,7 +237,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
-							display_group = "Normal"
+							display_group = "locked"
 							property_group = "Perspective - Volume Falloff"
 							property_help = "Minimum linear scale volume for a sound."
 						}

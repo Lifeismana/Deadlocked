@@ -221,6 +221,7 @@ message CCitadelUserMsg_RecentDamageSummary {
 		optional uint32 attacker_class = 6;
 		optional int32 damage_absorbed = 7;
 		optional bool is_killing_blow = 8;
+		optional uint32 victim_hero_id = 9;
 	}
 
 	message ModifierRecord {

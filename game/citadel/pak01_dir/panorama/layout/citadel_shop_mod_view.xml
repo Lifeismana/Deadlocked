@@ -22,8 +22,8 @@
 				<Panel class="defensive_icon" />
 			</Panel>
 			<Panel class="active_tag">
-				<Label id="ActiveTag" text="Active" />
-				<Label id="ActiveSlotsFull" text="ACTIVES FULL" />
+				<Label id="ActiveTag" text="#item_info_active" />
+				<Label id="ActiveSlotsFull" text="#item_info_actives_full" />
 			</Panel>
 			<Panel class="mod_name_area">
 				<Label class="modName" text="{s:mod_name}" />
@@ -33,10 +33,10 @@
 				<Image class="purchasedIcon" src="s2r://panorama/images/upgrades/checkmark_purchased_psd.vtex" />
 				<Image class="componentIcon" src="s2r://panorama/images/upgrades/lock_icon_psd.vtex" />
 			</Panel>
-			<Label id="NewLabel" class="new_tag" text="NEW" />
+			<Label id="NewLabel" class="new_tag" text="#item_info_new" />
 			<Panel id="SellOverlay">
 				<Panel class="MessageContent">
-					<Label class="SellLabel" text="Sell" />
+					<Label class="SellLabel" text="#item_info_sell" />
 					<Label class="ItemName" text="{s:mod_name}" />
 					<Panel class="SellCost">
 						<Image class="goldIcon" />
@@ -46,12 +46,12 @@
 			</Panel>
 			<Panel id="ReturnToShop">
 				<Panel class="MessageContent">
-					<Label class="ReturnLabel" text="No Nearby Shop" />
+					<Label class="ReturnLabel" text="#item_info_no_shop" />
 				</Panel>
 			</Panel>
 			<Panel id="CantAfford">
 				<Panel class="MessageContent">
-					<Label class="CantAffordLabel" text="Can&apos;t Afford" />
+					<Label class="CantAffordLabel" text="#item_info_cant_afford" />
 				</Panel>
 			</Panel>
 			<Panel id="ComponentsContainer" />

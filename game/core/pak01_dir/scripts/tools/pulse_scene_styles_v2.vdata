@@ -260,8 +260,13 @@
 				}
 				.RequirementsNodeList = 
 				{
-					Margin_Bottom = 0
+					Margin_Bottom = -1
 					Margin_Top = -1
+					Padding_Top = 1
+					.PortPlug = 
+					{
+						Margin_Top = -1
+					}
 				}
 			}
 		}
@@ -273,15 +278,14 @@
 		MinSizeX = 200
 		MinSizeY = 20
 		SnapSizeX = 40
-		Border = "2px #000000"
 		BorderRadius_TopLeft = "7px"
 		BorderRadius_TopRight = "7px"
-		BorderRadius_BottomLeft = "17px"
-		BorderRadius_BottomRight = "17px"
+		BorderRadius_BottomLeft = "19px"
+		BorderRadius_BottomRight = "19px"
 		"&.Value_VarReference, &.ValueExpression" = 
 		{
-			BorderRadius_TopLeft = "17px"
-			BorderRadius_TopRight = "17px"
+			BorderRadius_TopLeft = "19px"
+			BorderRadius_TopRight = "19px"
 		}
 		.BaseValueInnerContainer = 
 		{
@@ -303,12 +307,12 @@
 			Visibility = "HIDDEN"
 			BorderRadius_TopLeft = "7px"
 			BorderRadius_TopRight = "7px"
-			BorderRadius_BottomLeft = "17px"
-			BorderRadius_BottomRight = "17px"
+			BorderRadius_BottomLeft = "19px"
+			BorderRadius_BottomRight = "19px"
 			"&.Value_VarReference, &.ValueExpression" = 
 			{
-				BorderRadius_TopLeft = "17px"
-				BorderRadius_TopRight = "17px"
+				BorderRadius_TopLeft = "19px"
+				BorderRadius_TopRight = "19px"
 			}
 		}
 		"&:selected" = 
@@ -322,11 +326,6 @@
 		"&:hover .PortPlug, &:hover-descendant .PortPlug" = 
 		{
 			Visibility = "VISIBLE"
-		}
-		.OutparamPort = 
-		{
-			BorderRadius = "17px"
-			FixedSizeY = 34
 		}
 		.NodeRows = 
 		{
@@ -481,12 +480,7 @@
 	{
 		HAlign = "STRETCH"
 		LayoutGrowFactor = 1
-		MinSizeY = 40
 		LayoutChildren = "HBOX"
-	}
-	.FlowNodeHeader = 
-	{
-		MinSizeY = 40
 	}
 	".ValueWithoutPortLabels .ValueNodeHeader" = 
 	{
@@ -562,13 +556,16 @@
 	}
 	.RequirementLayout_Separator_Line = 
 	{
+		FixedSizeY = 2
+		Padding_Left = 40
+		Padding_Right = 10
 		HAlign = "STRETCH"
-		FixedSizeY = 1
-		LayoutGrowFactor = 1
-		PaintLayer = "NODES"
-		Margin_Top = 0
-		Margin_Right = 12
-		Margin_Left = 32
+		VAlign = "BOTTOM"
+		BackgroundImage = "tools/images/pulse_editor/dashed_line_repeat.png"
+		ImageTint = "$node_base_accessory"
+		BackgroundSize = "Natural"
+		Positioning = "ON_PARENT_BORDER"
+		PaintLayer = "CONNECTIONS_FOREGROUND"
 	}
 	.HasRequirements = 
 	{
@@ -648,6 +645,7 @@
 	}
 	.NodeRow = 
 	{
+		MinSizeY = 40
 	}
 	".BaseFlow .NodeRows" = 
 	{
@@ -712,7 +710,6 @@
 	{
 		".NodeRows .NodeRow" = 
 		{
-			FixedSizeY = 40
 			MinSizeY = 40
 			"& .FlowRail" = 
 			{
@@ -746,11 +743,11 @@
 		LayoutChildren = "HBOX"
 		".Port:first-child" = 
 		{
-			Margin_Left = 16
+			Margin_Left = 15
 		}
 		".Port:last-child" = 
 		{
-			Margin_Right = 16
+			Margin_Right = 15
 		}
 		".InflowPort.Port:last-child" = 
 		{
@@ -961,7 +958,6 @@
 		HAlign = "STRETCH"
 		LayoutGrowFactor = 1
 		LayoutChildren = "HBOX"
-		MinSizeY = 36
 		"&.InflowPort" = 
 		{
 			LayoutGrowFactor = 1
@@ -973,7 +969,7 @@
 			}
 			"&:first-child, &:last-child" = 
 			{
-				Margin_Right = 16
+				Margin_Right = 15
 				LayoutGrowFactor = 0
 				"&:before" = 
 				{
@@ -1027,6 +1023,7 @@
 				FixedSizeY = 10
 				BorderRadius = "12px"
 				Border = "10px SolidLine $group"
+				Background_Color = "$group"
 				PaintLayer = "CONNECTIONS_BACKGROUND"
 			}
 			.PortPlug = 
@@ -1068,7 +1065,7 @@
 		{
 			.PortPlugCtn = 
 			{
-				Margin_Right = 4
+				Margin_Right = 8
 			}
 			.PortPlug = 
 			{
@@ -1396,21 +1393,47 @@
 			PaintLayer = "HOVER_OVERLAY"
 		}
 	}
-	.ClientPaintArea = 
+	.Step_Timeline = 
 	{
-		PaintLayer = "NODES"
+		.NodeRow = 
+		{
+			LayoutChildren = "HBOX"
+			HAlign = "STRETCH"
+			LayoutGrowFactor = 1
+		}
+		.ClientPaintArea = 
+		{
+			HAlign = "STRETCH"
+			VAlign = "STRETCH"
+			LayoutGrowFactor = 1
+		}
 	}
-	".FireCursors .ClientPaintArea" = 
+	.CPulseCell_Inflow_Wait = 
 	{
-		HAlign = "STRETCH"
-		LayoutGrowFactor = 1
-		FixedSizeY = 30
-	}
-	".Timeline .ClientPaintArea" = 
-	{
-		HAlign = "STRETCH"
-		LayoutGrowFactor = 1
-		FixedSizeY = 30
+		.NodeRows = 
+		{
+			LayoutChildren = "HBOX"
+			.NodeHeader = 
+			{
+				LayoutGrowFactor = "unset"
+			}
+			.HeaderText = 
+			{
+				TextClipMode = "unset"
+			}
+			".NodeRow:after" = 
+			{
+				Visibility = "COLLAPSE"
+			}
+		}
+		".Port .FlowRail" = 
+		{
+			Visibility = "COLLAPSE"
+		}
+		".Port .PortLabel" = 
+		{
+			HAlign = "STRETCH"
+		}
 	}
 	.DebuggerLive = 
 	{
@@ -1481,8 +1504,7 @@
 			}
 			.RequirementLayout_Separator_Line = 
 			{
-				Background_Color = "$DashedLineColor"
-				Background_Style = "Dense6Pattern"
+				ImageTint = "$node_base_accessory"
 			}
 			"&.BaseConnection" = 
 			{

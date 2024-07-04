@@ -1,0 +1,633 @@
+/* Prettified by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io */
+
+@define weaponColor: #FFA826;
+@define techColor: #00DDFF;
+@define offWhite: #FFEFD7;
+@define offBlack: #10130D;
+@define courageLightColor: #FFD18D;
+@define courageBrightColor: #EC9719;
+@define courageColor: #9D620B;
+@define courageDarkColor: #7F540E;
+@define courageDarkerColor: #302306;
+@define fortitudeLightColor: #D3FC96;
+@define fortitudeBrightColor: #7BBA1D;
+@define fortitudeColor: #649717;
+@define fortitudeDarkColor: #4C7113;
+@define fortitudeDarkerColor: #1F3400;
+@define spiritLightColor: #E7C8FF;
+@define spiritBrightColor: #CE90FF;
+@define spiritColor: #8A55B3;
+@define spiritDarkColor: #613484;
+@define spiritDarkerColor: #362147;
+#TimeControlDropDownDropDownMenu,.TimeControlOption
+{
+	max-width: 150px;
+	text-overflow: shrink;
+}
+
+#TimeControlDropDownDropDownMenu:disabled,.TimeControlOption:disabled
+{
+	opacity: 0.5;
+}
+
+@define bgColor: #b7b7b7;
+@define bgColorDark: #909090;
+@define abilityDamageBarColor: #8A55B3;
+@define weaponDamageBarColor: #af731d;
+@define tooltipBGolor: #5f5f5f;
+@define tooltipBGColorDark: #282828;
+@define tooltipBGColorMid: #515151;
+@define tooltipBGColorLight: #909090;
+@define tooltipTextColorDefault: white;
+@define tooltipHeroNameColor: #ffefd7;
+@define tooltipPlayerNameColor: #a69d8f;
+.DamageRatioProgressBar
+{
+	border: 1px solid #00000050;
+	background-color: bgColor&30;
+	border-radius: 2px;
+	width: 25px;
+	height: 120px;
+	margin: 5px 9px;
+}
+
+.DamageRatioProgressBar.Horizontal
+{
+	width: 160px;
+	height: 40px;
+}
+
+.DamageRatioProgressBar .ProgressBarLeft
+{
+	background-color: weaponDamageBarColor;
+}
+
+.DamageRatioProgressBar .ProgressBarMiddle
+{
+	background-color: abilityDamageBarColor;
+}
+
+.DamageRatioProgressBar:hover
+{
+	brightness: 1.5;
+}
+
+.HudDamageReport
+{
+	width: 535px;
+	vertical-align: top;
+	horizontal-align: left;
+	margin-top: 130px;
+	z-index: 202;
+	border-radius: 0px 5px 5px 0px;
+	border: 1px solid #ffffff01;
+	font-family: "Retail Demo";
+	flow-children: right;
+	transform: translateX(0px);
+	transition-duration: 0.1s;
+	transition-property: transform;
+	transition-timing-function: ease-in-out;
+	visibility: collapse;
+}
+
+.HudDamageReport.Minimized:not(.ShowAlways)
+{
+	transform: translateX(-402px);
+}
+
+.HudDamageReport.ShowAlways:not(.Hidden),.HudDamageReport.in_item_shop:not(.Hidden)
+{
+	visibility: visible;
+}
+
+.HudDamageReport #ReportContents
+{
+	flow-children: down;
+	width: 400px;
+	padding-left: 40px;
+	background-color: rgba(164, 164, 164, 0.95);
+	background-image: url("s2r://panorama/images/shop/dmg_report_texture_png.vtex");
+	z-index: 2;
+}
+
+.HudDamageReport .Header
+{
+	width: 100%;
+	margin-left: 22px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.HudDamageReport .Header .DamageReportHeader
+{
+	font-size: 20px;
+	vertical-align: middle;
+	color: black;
+	font-weight: bold;
+}
+
+.HudDamageReport .Header .TimeControl
+{
+	max-width: 150px;
+	margin-right: 20px;
+	margin: 4px 20px;
+	vertical-align: center;
+	horizontal-align: right;
+}
+
+.HudDamageReport .Header .CloseButton
+{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	horizontal-align: right;
+	background-size: auto 50%;
+	background-position: center;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/icons/icon_x.vsvg");
+	visibility: collapse;
+}
+
+.HudDamageReport .DamageSection
+{
+	width: 100%;
+	flow-children: down;
+	margin-bottom: 10px;
+}
+
+.HudDamageReport .DamageControlRow
+{
+	width: 100%;
+	flow-children: right;
+	background-color: #00000050;
+	padding: 4px 0px;
+	margin-left: 20px;
+}
+
+.HudDamageReport .DamageControlRow .LabelArea
+{
+	flow-children: down;
+	margin: 0px 10px;
+}
+
+.HudDamageReport .DamageControlRow .LabelArea .DamageDesc
+{
+	horizontal-align: left;
+	vertical-align: center;
+	color: rgb(24, 24, 24);
+	opacity: 0.9;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.HudDamageReport .DamageControlRow .TimeControl
+{
+	horizontal-align: right;
+	vertical-align: center;
+}
+
+.HudDamageReport .DamageControlRow .DamageBreakdown
+{
+	flow-children: right;
+	vertical-align: middle;
+	horizontal-align: right;
+	margin: 3px 20px 3px 0px;
+}
+
+.HudDamageReport .DamageControlRow .DamageBreakdown .DamageRatioProgressBar
+{
+	height: 100%;
+	vertical-align: center;
+	width: 60px;
+	margin: 0px 5px;
+}
+
+.HudDamageReport .DamageControlRow .DamageBreakdown .DamageRatioProgressBar:hover
+{
+	brightness: 1;
+}
+
+.HudDamageReport .DamageControlRow .DamageBreakdown .DamagePercent
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	opacity: 1;
+}
+
+.HudDamageReport .DamageControlRow .DamageBreakdown .weaponDmg
+{
+	color: courageDarkColor;
+}
+
+.HudDamageReport .DamageControlRow .DamageBreakdown .spiritDmg
+{
+	color: spiritDarkColor;
+}
+
+.HudDamageReport .DamageReceived .DamageReceivedContainer
+{
+	width: 100%;
+	flow-children: right;
+}
+
+.HudDamageReport .DamageReceived .DamageReceivedContainer .DamageTakenTotal
+{
+	ignore-parent-flow: true;
+	flow-children: right;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+}
+
+.HudDamageReport .DamageReceived .DamageReceivedContainer .DamageTakenTotal .DamageDesc
+{
+	text-align: center;
+	horizontal-align: center;
+	vertical-align: center;
+	color: black;
+	opacity: 0.5;
+	font-weight: semi-bold;
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+.HudDamageReport .DamageReceived .DamageReceivedContainer .DamageTakenTotal .DamageTotal
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	horizontal-align: center;
+	font-family: "Retail Text Demo";
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer
+{
+	width: 100%;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph
+{
+	vertical-align: center;
+	horizontal-align: left;
+	flow-children: none;
+	margin: 20px;
+	min-height: 150px;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph .PieSlice
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	vertical-align: center;
+	horizontal-align: center;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph .PieSlice.WeaponDamage
+{
+	background-color: weaponDamageBarColor;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph .PieSlice.AbilityDamage
+{
+	background-color: abilityDamageBarColor;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph .PieSlice.DamagePriority9
+{
+	brightness: 1.2;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph .PieSlice.DamagePriority8
+{
+	brightness: 1.1;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph .PieSlice.DamagePriority6
+{
+	brightness: 0.9;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph .PieSlice.DamagePriority5
+{
+	brightness: 0.8;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph .PieSlice.DamagePriority4
+{
+	brightness: 0.6;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer #DamageDealtPieGraph .PieSlice.DamagePriority3
+{
+	brightness: 0.4;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer .DamageDealtTotal
+{
+	flow-children: down;
+	horizontal-align: right;
+	vertical-align: middle;
+	margin-right: 25px;
+	max-width: 120px;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer .DamageDealtTotal .DamageDesc
+{
+	text-align: center;
+	horizontal-align: center;
+	vertical-align: center;
+	color: black;
+	opacity: 0.7;
+	font-weight: semi-bold;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.HudDamageReport .DamageDealt .DamageDealtContainer .DamageDealtTotal .DamageTotal
+{
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 2px;
+	text-align: center;
+	horizontal-align: center;
+	font-family: "Retail Text Demo";
+}
+
+.HudDamageReport #DamageDealtToHero
+{
+	visibility: collapse;
+}
+
+.HudDamageReport .DamageByHero
+{
+	flow-children: right;
+	width: 350px;
+	height: 240px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.HudDamageReport .DamageByHero .HeroDamageColumn
+{
+	margin: 3px;
+	flow-children: down;
+	background-color: #00000030;
+	border-radius: 3px;
+	transition-property: pre-transform-scale2d;
+	transition-duration: 0.05s;
+	transition-timing-function: ease;
+}
+
+.HudDamageReport .DamageByHero .HeroDamageColumn:hover
+{
+	brightness: 1;
+	pre-transform-scale2d: 1.1;
+	background-color: #c5c5c5;
+	box-shadow: 0px 0px 20px #00000070;
+}
+
+.HudDamageReport .DamageByHero .HeroDamageColumn .HeroIconContainer
+{
+	max-height: 55px;
+	horizontal-align: center;
+}
+
+CitadelTooltipDamageReportHeroSummary #Contents,CitadelTooltipDamageReportAbilitySummary #Contents
+{
+	padding: 0px;
+}
+
+.SummaryTooltip
+{
+	width: 400px;
+	background-color: tooltipBGColorMid;
+	flow-children: down;
+}
+
+.SummaryTooltip .Header
+{
+	padding: 8px 12px;
+	width: 100%;
+	background-color: tooltipBGColorDark;
+	flow-children: right;
+}
+
+.SummaryTooltip .Header .NameContainer
+{
+	flow-children: down;
+	width: 100%;
+}
+
+.SummaryTooltip .Header .NameContainer .HeroName,.SummaryTooltip .Header .NameContainer .ViewingHeroName
+{
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Forevs Demo";
+	text-transform: uppercase;
+	margin-bottom: -4px;
+}
+
+.AllHeroes .SummaryTooltip .Header .NameContainer .HeroName
+{
+	visibility: collapse;
+}
+
+.SummaryTooltip .Header .NameContainer .ViewingHeroName
+{
+	visibility: collapse;
+}
+
+.AllHeroes .SummaryTooltip .Header .NameContainer .ViewingHeroName
+{
+	visibility: visible;
+}
+
+.SummaryTooltip .Header .NameContainer .HeroSubtitle
+{
+	font-weight: semi-bold;
+	opacity: 0.6;
+}
+
+.SummaryTooltip .Data
+{
+	padding: 8px;
+	flow-children: down;
+	width: 100%;
+}
+
+.SummaryTooltip .Footer
+{
+	padding: 0px;
+	width: 100%;
+	background-color: tooltipBGColorLight;
+}
+
+.AbilitySummary .AbilityProgressBarContainer
+{
+	width: 100%;
+	margin: 8px;
+}
+
+.AbilitySummary .Data .AbilityDamageContainer
+{
+	width: 100%;
+	flow-children: right;
+}
+
+.AbilitySummary .Data .AbilityDamageContainer #AbilityImage
+{
+	width: 36px;
+	height: 36px;
+	opacity: 0.9;
+	vertical-align: center;
+	horizontal-align: center;
+}
+
+.AbilitySummary .Data .AbilityDamageContainer .AbilityDamageBarContainer
+{
+	width: 100%;
+}
+
+.AbilitySummary .Data .AbilityDamageContainer .AbilityDamageBarContainer .DamageRatioProgressBar
+{
+	width: 100%;
+}
+
+.AbilitySummary .Data .AbilityDamageContainer .AbilityDamageBarContainer .AbilityName
+{
+	vertical-align: center;
+	horizontal-align: left;
+	margin-left: 20px;
+	font-weight: semi-bold;
+	font-size: 17px;
+}
+
+.AbilitySummary .Data .AbilityDamageContainer .AbilityDamageBarContainer .DamageValue
+{
+	vertical-align: center;
+	horizontal-align: right;
+	height: 40px;
+	min-width: 50px;
+	text-align: center;
+	font-weight: semi-bold;
+	font-size: 16px;
+	margin-right: 10px;
+	padding: 9px 10px;
+	background-color: #00000090;
+}
+
+.AbilitySummary .Footer
+{
+	height: 40px;
+	background-color: tooltipBGColorDark;
+}
+
+.AbilitySummary .Footer .DamageTotalContainer
+{
+	vertical-align: center;
+	horizontal-align: center;
+	flow-children: right;
+}
+
+.AbilitySummary .Footer .DamageTotalContainer .TotalLabel
+{
+	vertical-align: center;
+	font-size: 18px;
+	margin-right: 10px;
+	font-weight: semi-bold;
+	opacity: 0.7;
+}
+
+.AbilitySummary .Footer .DamageTotalContainer .DamageValue
+{
+	vertical-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Retail Text Demo";
+}
+
+#ReportToggle
+{
+	width: 220px;
+	height: 50px;
+	transform: rotateZ(90deg);
+	margin-left: 0px;
+	horizontal-align: right;
+	vertical-align: middle;
+	ignore-parent-flow: true;
+	border-radius: 5px 5px 0px 0px;
+	background-color: grey;
+	background-color: gradient( linear, 0% 100%, 0% 70%, from( #3d3d3d ), to( grey ) );
+	background-image: url("s2r://panorama/images/shop/dmg_report_texture_png.vtex");
+	background-img-opacity: 0.2;
+	z-index: 1;
+}
+
+.ShowAlways #ReportToggle
+{
+	visibility: collapse;
+}
+
+#ReportToggle Label
+{
+	horizontal-align: center;
+	vertical-align: middle;
+	font-weight: semi-bold;
+	opacity: 0.9;
+}
+
+#ReportToggle .Show
+{
+	visibility: collapse;
+}
+
+.Minimized #ReportToggle .Show
+{
+	visibility: visible;
+}
+
+#ReportToggle .Close
+{
+	visibility: visible;
+}
+
+.Minimized #ReportToggle .Close
+{
+	visibility: collapse;
+}
+
+.HeroSummary
+{
+	width: 360px;
+}
+
+.HeroSummary .Data
+{
+	height: 180px;
+}
+
+.HeroSummary .ModsContainer
+{
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	height: fit-children;
+	width: 368px;
+	flow-children: right;
+	visibility: visible;
+	ui-scale: 90%;
+}
+
+.HeroSummary .Footer
+{
+	padding-top: 10px;
+	background-color: tooltipBGColorDark;
+	height: fit-children;
+}
+

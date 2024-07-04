@@ -1,0 +1,79 @@
+<!-- xml reconstructed by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/hud_damage_report.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="HeroDamageColumn">
+			<Panel class="HeroDamageColumn">
+				<ProgressBarWithMiddle id="DamageRatioProgressBar" class="DamageRatioProgressBar" vertical="true" />
+				<Panel class="HeroIconContainer">
+					<CitadelHeroImage id="HeroImage" scaling="stretch-to-cover-preserve-aspect" heroimagestyle="vertical" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="HudDamageReport Minimized">
+		<GlobalClassListener classes="gDetailView" />
+		<Panel id="ReportContents">
+			<Panel class="Header">
+				<Label html="true" class="DamageReportHeader" text="#Citadel_HUD_DamageReport_Title" />
+				<Panel class="TimeControl">
+					<DropDown id="TimeControlDropDown">
+						<Label id="TimeOptionLastRespawn" class="TimeControlOption" value="-1" text="#Citadel_HUD_DamageReport_LastRespawn" />
+						<Label id="TimeOption600" class="TimeControlOption" value="600" text="#Citadel_HUD_DamageReport_Time600" />
+						<Label id="TimeOption300" class="TimeControlOption" value="300" text="#Citadel_HUD_DamageReport_Time300" />
+						<Label id="TimeOption180" class="TimeControlOption" value="180" text="#Citadel_HUD_DamageReport_Time180" />
+						<Label id="TimeOption60" class="TimeControlOption" value="60" text="#Citadel_HUD_DamageReport_Time60" />
+						<Label id="TimeOption30" class="TimeControlOption" value="30" text="#Citadel_HUD_DamageReport_Time30" />
+					</DropDown>
+				</Panel>
+				<Panel class="CloseButton" />
+			</Panel>
+			<Panel class="DamageReceived DamageSection">
+				<Panel class="DamageControlRow DamageReceivedControls">
+					<Panel class="LabelArea">
+						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_DamageReceived" />
+					</Panel>
+					<Panel class="DamageBreakdown">
+						<Label html="true" class="DamagePercent weaponDmg" text="#Citadel_HUD_DamageReport_DamagePercentWeapon" />
+						<ProgressBarWithMiddle id="DamageReceivedByTypeProgressBar" class="DamageRatioProgressBar Horizontal" />
+						<Label html="true" class="DamagePercent spiritDmg" text="#Citadel_HUD_DamageReport_DamagePercentAbility" />
+					</Panel>
+				</Panel>
+				<Panel class="DamageReceivedContainer">
+					<Panel id="DamageReceivedByHero" class="DamageByHero" />
+					<Panel class="DamageTakenTotal LabelArea">
+						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_Total_Taken" />
+						<Label html="true" class="DamageTotal" text="#Citadel_HUD_DamageReport_DamageReceived_Amount" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel class="DamageDealt DamageSection">
+				<Panel class="DamageControlRow DamageDealtControls">
+					<Panel class="LabelArea">
+						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_DamageDealt" />
+					</Panel>
+					<Panel class="DamageBreakdown">
+						<Label html="true" class="DamagePercent weaponDmg" text="#Citadel_HUD_DamageReport_DamagePercentWeapon" />
+						<ProgressBarWithMiddle id="DamageDealtToTypeProgressBar" class="DamageRatioProgressBar Horizontal" />
+						<Label html="true" class="DamagePercent spiritDmg" text="#Citadel_HUD_DamageReport_DamagePercentAbility" />
+					</Panel>
+				</Panel>
+				<Panel class="DamageDealtContainer">
+					<Panel id="DamageDealtPieGraph" onmouseover="CitadelShowDamageReportAbilitySummaryTooltip(-1,true,true)" onmouseout="CitadelHideDamageReportAbilitySummaryTooltip()" />
+					<Panel id="DamageDealtToHero" class="DamageByHero" />
+					<Panel class="DamageDealtTotal LabelArea">
+						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_Total_Dealt" />
+						<Label html="true" class="DamageTotal" text="#Citadel_HUD_DamageReport_DamageDealt_Amount" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="ReportToggle" onactivate="$.GetContextPanel().ToggleClass(&apos;Minimized&apos;)">
+			<Label class="viewSummary Show" text="View Damage Report" />
+			<Label class="viewSummary Close" text="Close" />
+		</Panel>
+	</Panel>
+</root>

@@ -37,8 +37,8 @@
 					</Panel>
 				</Panel>
 				<Panel id="PlayerReportContainer">
-					<Label id="ReportPlayerLabel" text="R" onmouseover="UIShowTextTooltip( Click To Report Player );" onmouseout="UIHideTextTooltip()" />
-					<Label id="ReportedPlayerLabel" text="Player Reported!" />
+					<Label id="ReportPlayerLabel" text="#Citadel_MatchDetails_Report" onmouseover="UIShowTextTooltip( #Citadel_MatchDetails_ReportTooltip );" onmouseout="UIHideTextTooltip()" />
+					<Label id="ReportedPlayerLabel" text="#Citadel_MatchDetails_Reported" />
 				</Panel>
 			</Panel>
 		</snippet>
@@ -53,7 +53,7 @@
 					<Panel class="ScoreBG" />
 					<Panel class="ScoreContainer">
 						<Panel class="SoulsImage" />
-						<Label class="ScoreLabel" html="true" text="{i:team1_networth}k" />
+						<Label class="ScoreLabel" html="true" text="#Citadel_MatchDetails_Team1NetWorth" />
 					</Panel>
 				</Panel>
 				<Panel class="TimeContainer">
@@ -63,7 +63,7 @@
 					<Panel class="ScoreBG" />
 					<Panel class="ScoreContainer">
 						<Panel class="SoulsImage" />
-						<Label class="ScoreLabel" html="true" text="{i:team2_networth}k" />
+						<Label class="ScoreLabel" html="true" text="#Citadel_MatchDetails_Team2NetWorth" />
 					</Panel>
 				</Panel>
 			</Panel>
@@ -73,36 +73,36 @@
 			<Panel id="Team1TitleContainer" class="titleContainer">
 				<Panel id="Team1NameContainer" class="nameContainer">
 					<Panel class="TeamColorCircle" />
-					<Label class="TeamName" text="The Amber Hand" />
+					<Label class="TeamName" text="#Citadel_Team1_Name" />
 				</Panel>
-				<Label class="VictoryLabel" text="Victory" />
+				<Label class="VictoryLabel" text="#Citadel_MatchDetails_Victory" />
 			</Panel>
 			<Panel id="Team2TitleContainer" class="titleContainer">
 				<Panel id="Team2NameContainer" class="nameContainer">
-					<Label class="TeamName" text="The Sapphire Flame" />
+					<Label class="TeamName" text="#Citadel_Team2_Name" />
 					<Panel class="TeamColorCircle" />
 				</Panel>
-				<Label class="VictoryLabel" text="Victory" />
+				<Label class="VictoryLabel" text="#Citadel_MatchDetails_Victory" />
 			</Panel>
 		</Panel>
 		<Panel class="PlayersContainer">
 			<Panel id="Team1Players" class="TeamPlayersContainer" />
 			<Panel id="StatsTypeContainer">
-				<Label class="StatsLabel Title" text="Player Stats" />
-				<Label class="StatsLabel Row0 SoulsStatLabel" text="Total Souls" />
-				<Label class="StatsLabel Row1" text="Kills" />
-				<Label class="StatsLabel Row2" text="Deaths" />
-				<Label class="StatsLabel Row3" text="Assists" />
-				<Label class="StatsLabel Row4" text="Player Dmg" />
-				<Label class="StatsLabel Row5" text="Obj Dmg" />
-				<Label class="StatsLabel Row6" text="Healing" />
+				<Label class="StatsLabel Title" text="#Citadel_MatchDetails_Stats" />
+				<Label class="StatsLabel Row0 SoulsStatLabel" text="#Citadel_MatchDetails_NetWorth" />
+				<Label class="StatsLabel Row1" text="#Citadel_MatchDetails_Kills" />
+				<Label class="StatsLabel Row2" text="#Citadel_MatchDetails_Deaths" />
+				<Label class="StatsLabel Row3" text="#Citadel_MatchDetails_Assists" />
+				<Label class="StatsLabel Row4" text="#Citadel_MatchDetails_PlayerDmg" />
+				<Label class="StatsLabel Row5" text="#Citadel_MatchDetails_ObjDmg" />
+				<Label class="StatsLabel Row6" text="#Citadel_MatchDetails_Healing" />
 			</Panel>
 			<Panel id="Team2Players" class="TeamPlayersContainer" />
 		</Panel>
 		<CitadelScoreboardMods id="ScoreboardMods" hittest="false" onmouseout="CitadelPostGameScoreboardPlayerUnhovered();" />
 		<Panel id="SwitchPage" onactivate="CitadelShowPostGameTab( 2 );">
 			<Panel id="GraphIcon" />
-			<Label text="View Graphs" />
+			<Label text="#Citadel_MatchDetails_ViewGraphs" />
 			<Panel id="NavArrow" />
 		</Panel>
 	</CitadelPostGameScoreboard>

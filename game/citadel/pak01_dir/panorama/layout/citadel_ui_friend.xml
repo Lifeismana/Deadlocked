@@ -27,13 +27,13 @@
 				<Label class="PartyInfoLabel Spectator" text="#Citadel_PartyInfo_Spectator" />
 				<Label class="PartyInfoLabel InvitePending" text="#Citadel_InvitePending" />
 			</Panel>
-			<Panel id="FriendAddButton" onmouseover="UIShowTextTooltip( Invite Friend to Party ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" hittest="false">
+			<Panel id="FriendAddButton" onmouseover="UIShowTextTooltip( #Citadel_Party_InviteFriendTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" hittest="false">
 				<Label class="InviteText" text="Send Invite" />
 			</Panel>
-			<Panel id="FriendInviteToGameButton" onmouseover="UIShowTextTooltip( Select Friend ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" hittest="false">
+			<Panel id="FriendInviteToGameButton" onmouseover="UIShowTextTooltip( #Citadel_Party_SelectFriendTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" hittest="false">
 				<Label class="InviteText" text="Select" />
 			</Panel>
-			<Panel id="AddUnvailableButton" onmouseover="UIShowTextTooltip( Unavailable while in Queue );" onmouseout="UIHideTextTooltip()" hittest="false">
+			<Panel id="AddUnvailableButton" onmouseover="UIShowTextTooltip( #Citadel_Party_UnavailableInQueueTooltip );" onmouseout="UIHideTextTooltip()" hittest="false">
 				<Label class="InviteText" text="Send Invite" />
 			</Panel>
 		</Panel>

@@ -16,19 +16,20 @@
 				</Panel>
 				<Panel class="TopBottomFlow">
 					<Panel class="LabelRow">
-						<Label class="TypeLabel" text="Email:" />
-						<TextEntry id="PlaytestUserEmail" placeholder="Email Address" undohistory="enabled" maxchars="512" multiline="false" />
-						<Label class="TypeLabelDetail" text="(Best email to reach your friend, but does not need to match the email address of their Steam account)" />
+						<Label class="TypeLabel" text="#Citadel_RecommendFriend_Email" />
+						<TextEntry id="PlaytestUserEmail" placeholder="#Citadel_RecommendFriend_EmailPrompt" undohistory="enabled" maxchars="512" multiline="false" />
+						<Label class="TypeLabelDetail" text="#Citadel_RecommendFriend_EmailDesc" />
 					</Panel>
 					<Panel class="LabelRow">
-						<Label class="TypeLabel" text="Comments:" />
-						<TextEntry id="PlaytestUserComments" placeholder="Describe who this is briefly" undohistory="enabled" maxchars="4096" multiline="true" />
+						<Label class="TypeLabel" text="#Citadel_RecommendFriend_Comments" />
+						<TextEntry id="PlaytestUserComments" placeholder="#Citadel_RecommendFriend_CommentsPrompt" undohistory="enabled" maxchars="4096" multiline="true" />
 					</Panel>
 					<Panel class="LabelRow">
-						<Label class="TypeLabel" text="Select Region:" />
+						<Label class="TypeLabel" text="#Citadel_RecommendFriend_Region" />
 						<DropDown class="SelectDropDown" id="LocationDropDown" dropdownbodyposition="100% 100%" />
 					</Panel>
 					<Label class="ErrorLabel" text="#Citadel_RecommendFriend_ErrorMsg" />
+					<Label class="LocWarning" text="#Citadel_RecommendFriend_LocWarning" />
 					<Panel class="ButtonRow LeftRightFlow">
 						<Button class="PopupButton" id="OKButton" onactivate="CitadelPopupSubmitPlaytestUser()" enabled="false">
 							<Label text="#Citadel_RecommendFriend_PopupButton" />

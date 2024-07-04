@@ -34,7 +34,7 @@
 			"sounds/hit_indicators/damage_send_crit_05.vsnd",
 			"sounds/hit_indicators/damage_send_crit_06.vsnd",
 		]
-		vsnd_duration = 0.330385
+		vsnd_duration = 0.518844
 	}
 	Damage.Send.DOT = 
 	{
@@ -239,22 +239,21 @@
 	{
 		base = "Base.Damage.Receive"
 		limiter_event_name = "Damage.Receive.Lethal.NPC"
-		pitch = 1.500000
-		volume = -9.000000
+		volume = 2.000000
+		position_force_from_input = true
 		vsnd_files = 
 		[
-			"sounds/hit_indicators/damage_receive_lethal_01.vsnd",
-			"sounds/hit_indicators/damage_receive_lethal_02.vsnd",
-			"sounds/hit_indicators/damage_receive_lethal_03.vsnd",
-			"sounds/hit_indicators/damage_receive_lethal_04.vsnd",
-			"sounds/hit_indicators/damage_receive_lethal_05.vsnd",
-			"sounds/hit_indicators/damage_receive_lethal_06.vsnd",
-			"sounds/hit_indicators/damage_receive_lethal_07.vsnd",
-			"sounds/hit_indicators/damage_receive_lethal_08.vsnd",
-			"sounds/hit_indicators/damage_receive_lethal_09.vsnd",
-			"sounds/hit_indicators/damage_receive_lethal_10.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_01.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_02.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_03.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_04.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_05.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_06.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_07.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_08.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_09.vsnd",
+			"sounds/hit_indicators/damage_receive_lethal_npc_10.vsnd",
 		]
-		vsnd_duration = 4.946826
 	}
 	Damage.Receive.Sidechain = 
 	{
