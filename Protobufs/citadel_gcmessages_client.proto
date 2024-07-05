@@ -316,6 +316,7 @@ message CMsgDevMatchInfo {
 	optional .ECitadelMatchMode match_mode = 16 [default = k_ECitadelMatchMode_Invalid];
 	optional .ECitadelGameMode game_mode = 17 [default = k_ECitadelGameMode_Invalid];
 	optional uint32 match_score = 18;
+	optional .ECitadelRegionMode region_mode = 19 [default = k_ECitadelRegionMode_ROW];
 }
 
 message CMsgGCToClientDevPlaytestStatus {

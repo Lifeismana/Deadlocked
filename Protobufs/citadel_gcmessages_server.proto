@@ -141,6 +141,7 @@ message CSOCitadelServerStaticLobby {
 	optional fixed32 metadata_salt = 10;
 	optional uint32 match_start_time = 11;
 	optional uint32 experimental_gameplay_state = 15;
+	optional .ECitadelRegionMode region_mode = 16 [default = k_ECitadelRegionMode_ROW];
 }
 
 message CMsgServerSignoutData_ServerPerfStats {
