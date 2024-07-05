@@ -14,10 +14,11 @@
 			</Panel>
 		</snippet>
 	</snippets>
-	<Panel class="HudDamageReport Minimized">
+	<Panel class="HudDamageReport Minimized ShowPieGraph">
 		<GlobalClassListener classes="gDetailView" />
 		<Panel id="ReportContents">
 			<Panel class="Header">
+				<CitadelHeroImage id="ViewingHeroImage" scaling="stretch-to-cover-preserve-aspect" heroimagestyle="vertical" />
 				<Label html="true" class="DamageReportHeader" text="#Citadel_HUD_DamageReport_Title" />
 				<Panel class="TimeControl">
 					<DropDown id="TimeControlDropDown">
@@ -68,6 +69,7 @@
 						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_Total_Dealt" />
 						<Label html="true" class="DamageTotal" text="#Citadel_HUD_DamageReport_DamageDealt_Amount" />
 					</Panel>
+					<Panel class="DamageDealtToggleButton Button" onactivate="$.GetContextPanel().ToggleClass(&apos;ShowPieGraph&apos;)" />
 				</Panel>
 			</Panel>
 		</Panel>

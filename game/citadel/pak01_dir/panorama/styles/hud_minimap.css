@@ -26,6 +26,7 @@
 @define ZIndexEnemyPlayer: 13;
 @define ZIndexFriendlyPlayerLow: 12;
 @define ZIndexEnemyPlayerLow: 11;
+@define ZIndexDeadPlayer: 11;
 @define ZIndexPingLocalPlayer: 0;
 @define ZIndexT1Shop: 1;
 .HudMinimap
@@ -285,6 +286,11 @@
 {
 	width: 12%;
 	height: 12%;
+}
+
+.map_button.player.enemy.PlayerDead .map_button.player.enemy.arrowUp.PlayerDead,.map_button.player.enemy.arrowDown.PlayerDead,.map_button.player.friend.PlayerDead .map_button.player.friend.arrowUp.PlayerDead,.map_button.player.friend.arrowDown.PlayerDead,.map_button.localplayer.friend.PlayerDead
+{
+	z-index: ZIndexDeadPlayer;
 }
 
 .map_button.npc
