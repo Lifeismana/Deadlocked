@@ -244,6 +244,20 @@
 		vsnd_files = "sounds/abilities/tengu/a2_tether/dur_lp3.vsnd"
 		vsnd_duration = 7.238292
 	}
+	Ability.Tengu.Tether.Attach = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/tengu/ivy_tether_attach_01.vsnd",
+			"sounds/abilities/tengu/ivy_tether_attach_02.vsnd",
+			"sounds/abilities/tengu/ivy_tether_attach_03.vsnd",
+			"sounds/abilities/tengu/ivy_tether_attach_04.vsnd",
+			"sounds/abilities/tengu/ivy_tether_attach_05.vsnd",
+			"sounds/abilities/tengu/ivy_tether_attach_06.vsnd",
+		]
+	}
 	Ability.Tengu.Stone_Form.Cast = 
 	{
 		type = "citadel_start_multi"
@@ -463,6 +477,7 @@
 			"sounds/player/footsteps/ivy/ivy_footstep_14.vsnd",
 			"sounds/player/footsteps/ivy/ivy_footstep_15.vsnd",
 		]
+		vsnd_duration = 0.653878
 	}
 	Ivy.Death = 
 	{
