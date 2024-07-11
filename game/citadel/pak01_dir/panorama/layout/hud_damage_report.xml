@@ -28,8 +28,8 @@
 		<GlobalClassListener classes="gDetailView" />
 		<Panel id="ReportContents">
 			<Panel class="Header">
-				<Label html="true" class="DamageReportHeader" text="#Citadel_HUD_DamageReport_DamageReceived" />
 				<CitadelHeroImage id="ViewingHeroImage" scaling="stretch-to-cover-preserve-aspect" heroimagestyle="vertical" />
+				<Label html="true" class="DamageReportHeader" text="#Citadel_HUD_DamageReport_DamageReceived" />
 				<Panel class="TimeControl">
 					<DropDown id="TimeControlDropDown">
 						<Label id="TimeOptionLastRespawn" class="TimeControlOption" value="-1" text="#Citadel_HUD_DamageReport_LastRespawn" />
@@ -55,7 +55,7 @@
 				<Panel id="DamagePieGraph" />
 				<Panel class="DamageTotal">
 					<Panel class="LabelArea">
-						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_TotalTaken" />
+						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_Total" />
 						<Label html="true" class="DamageValue" text="#Citadel_HUD_DamageReport_TotalDamageValue" />
 					</Panel>
 				</Panel>

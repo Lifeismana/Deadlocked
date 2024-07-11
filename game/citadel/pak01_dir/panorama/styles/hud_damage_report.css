@@ -108,7 +108,7 @@
 
 .Minimized.HudDamageReport
 {
-	width: 200px;
+	width: fit-children;
 }
 
 .HudDamageReport
@@ -117,7 +117,7 @@
 	horizontal-align: right;
 	z-index: 199;
 	margin-top: 130px;
-	width: 400px;
+	width: 450px;
 	border-radius: 5px 0px 0px 5px;
 	border: 1px solid #ffffff01;
 	font-family: "Retail Demo";
@@ -154,9 +154,8 @@
 
 .HudDamageReport .Header #ViewingHeroImage
 {
-	max-height: 55px;
-	margin: 10px;
-	visibility: collapse;
+	max-height: 45px;
+	margin: 8px;
 }
 
 .HudDamageReport .Header .DamageReportHeader
