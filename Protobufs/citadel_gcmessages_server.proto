@@ -106,6 +106,7 @@ message CServerLobbyData_AutoTest {
 message CSOCitadelServerDynamicLobby {
 	optional uint64 lobby_id = 1;
 	repeated uint32 left_account_ids = 2 [packed = true];
+	optional bool broadcast_active = 3;
 }
 
 message CSOCitadelServerStaticLobby {
@@ -142,6 +143,7 @@ message CSOCitadelServerStaticLobby {
 	optional uint32 match_start_time = 11;
 	optional uint32 experimental_gameplay_state = 15;
 	optional .ECitadelRegionMode region_mode = 16 [default = k_ECitadelRegionMode_ROW];
+	optional string broadcast_url = 17;
 }
 
 message CMsgServerSignoutData_ServerPerfStats {

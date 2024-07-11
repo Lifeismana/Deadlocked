@@ -212,6 +212,7 @@ $Ib?s
 (m_nRefCount & INTERNAL_LOCKED) != 0
 (nLumaStride > 0) && (nLumaStride < INT_MAX) && (nChromaStride > 0) && (nChromaStride < INT_MAX)
 (null)
+(r$?ea
 (show)
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (spew)
@@ -594,7 +595,6 @@ $Ib?s
 .xJ>Hf
 .xdata
 .xdata$x
-/*]tu
 /2GG>!B
 />58d%
 /D$|w
@@ -646,7 +646,7 @@ $Ib?s
 220323000000Z
 220801000000Z
 230714000000Z
-240704151244Z0/
+240711150315Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -663,9 +663,11 @@ $Ib?s
 39nPu
 3>N;kU
 3>fvw
+3@K0`xw?
 3D;t%
 3L9uht
 3mq+<
+41HdK
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -713,19 +715,23 @@ $Ib?s
 9|$Xu
 9|$`u
 9|$xu
+:	V_powf
 :>)*	v
 :>t6k'
 :vmatt
+;	V_qsort
 ;?0123456789:;<=>?
 ;D$0|
 ;D$4|
 ;H9>&X
 ;I9}(tiH
 ;J;J;J;J;J;J;J;J;J;J;J;J;J;J;J;Jx
+;M!pH1]
 ;YA1D
 ;\$0|
 ;t$@|
 ;t$D|
+<	V_qsort_s
 <	u2H
 <	u8H
 <	u\L
@@ -752,22 +758,20 @@ $Ib?s
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 <utK@:
-=	V_powf
 =%H5<mN
 ==MQ?
 =SHX?
 =imb;D
 =rIQU
->	V_qsort
 >%H5<mN
 >0<0:
 >Mp$d
 >c;j1
 >fA9~
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?+>^m
+?/},!f
 ?49HoKC
 ?7zQ6$
 ?7{KV
@@ -2019,6 +2023,7 @@ ExtraVertexStreamOverride_t
 ExtraVertexStreamOverride_t::KV3TransferLoad_Impl
 ExtraVertexStreamOverride_t::KV3Transfer_DefaultKeys_Impl
 ExtraVertexStreamOverride_t::Schema_VerifyBindingIsRegistered
+F	V_sincosf
 F(D;`H|
 F(D;hH|
 F>qUxv
@@ -2326,7 +2331,6 @@ Hc}pH
 HelpSystem_001
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
 HostStateMgr001
-I	V_sincosf
 I+4$H
 IEntityKeyComplex::Release
 IHHcB
@@ -2455,7 +2459,6 @@ IsValidIndex(i) && (i != InvalidIndex())
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
 J>@G_
 JH9{(u
-JMQ? D
 January
 Jc41I
 Jc< H
@@ -3096,6 +3099,7 @@ Usage: %s <world_name> <lump_name>
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
+V	V_stricmp_fast
 V6'?C
 V6E>`"(5
 VATAUH
@@ -3222,6 +3226,7 @@ World_t
 World_t::KV3TransferLoad_Impl
 World_t::KV3Transfer_DefaultKeys_Impl
 World_t::Schema_VerifyBindingIsRegistered
+WpE^>
 WriteConsoleW
 WriteFile
 X D8e
@@ -3236,7 +3241,6 @@ XL$tL
 XT$DH
 X|$ A
 X|$8E
-Y	V_stricmp_fast
 Y9"SD
 Y>kX>M
 YD$@f
@@ -3426,7 +3430,6 @@ boolean
 bp(=>?g
 broken pipe
 broken promise
-c	Tu$
 c [1>H'
 c(>\,
 c0&>`
@@ -4501,7 +4504,6 @@ zY;>u:m
 ~PLcMpM
 ~ZLc]
 ~^Lc]
-~k~QY
 ~qj#k"
 ~t&LN
 ~vNcD

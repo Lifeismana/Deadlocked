@@ -182,7 +182,6 @@
 !!!!!!
 !!!!!!!!
 !!!!!!!!!!!!!!!!!!
-!!ao.;Me
 !"Failed to read multisample type on a texture (probably minimized or tabbed away)\n"
 !"Unsupport image format!"
 !( ( srcDesc.Format != destDesc.Format ) || ( nFlags & ( COPY_TEXTURE_FLAGS_FLIP_X | COPY_TEXTURE_FLAGS_FLIP_Y ) ) != 0 )
@@ -243,6 +242,7 @@
 #A+A(y
 #CfU7
 #D$`E#
+#D=fn
 #NVAPI_DriverProfileFailure
 #RenderSystem_BadVersionOfFraps
 #RenderSystem_CannotCreateDevice
@@ -256,7 +256,6 @@ $< t6<$t,<+t"<vt
 $D9x<t
 $D9x<tN
 $Ib?s
-$L,gjw
 $L9x0
 $^fE;
 %""""D
@@ -475,6 +474,7 @@ $^fE;
 (m_nRefCount & INTERNAL_LOCKED) != 0
 (nLumaStride > 0) && (nLumaStride < INT_MAX) && (nChromaStride > 0) && (nChromaStride < INT_MAX)
 (nResult) == (0)
+(nlYO
 (null)
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (size_t)texData.m_nTextureDataSize == nGpuTexSize
@@ -663,6 +663,7 @@ $^fE;
 )|$`Mc
 )|B?d!
 )}pH;
+*	V_log2_uint
 *** Buffer "%s": Failed to create shader resource view!
 *** Buffer "%s": Failed to create unordered access view!
 *** IB "%s": Failed to allocate!
@@ -692,6 +693,7 @@ $^fE;
 *pThreadGroupSizeYOut
 *pThreadGroupSizeZOut
 *pView != nullptr
+*tQr3
 +C$Hc
 +D$8A
 +D$p;
@@ -718,8 +720,7 @@ $^fE;
 ,Icl$
 ,W5y+
 ,X< w
-,h->f
--	V_log2_uint
+-	V_logd
 -- ----!!!"""###$$-%%---&'-(())***+++---,
 ---	-
 -4gpu
@@ -775,9 +776,10 @@ $^fE;
 -threads
 -tools
 -vulkan
+.	V_logf
 ..om?
 .00cfg
-.5Ma!
+.5/J!
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
 .?AU?$_InitialTaskHandle@XV<lambda_60c5de84e69e46aa92419d47e2f3ad51>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -1112,14 +1114,16 @@ $^fE;
 .xJ>Hf
 .xdata
 .xdata$x
-/-[W 
-/-wT 
+/%%_ 
+/%G\ 
+/%px-
 /2GG>!B
-/=F,!
-/=H,!
+/57_ 
+/5Sm2
+/5[\ 
+/=n/!
 />58d%
 /TF<)VGy#WH
-0	V_logd
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -1168,7 +1172,6 @@ $^fE;
 0iN>/
 0w0c1
 0}0i1
-1	V_logf
 1#IND
 1#INF
 1#QNAN
@@ -1183,7 +1186,7 @@ $^fE;
 220323000000Z
 220801000000Z
 230714000000Z
-240704151151Z0/
+240711145907Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1239,11 +1242,12 @@ $^fE;
 8b  16-May-2010
 8ke?;
 8vtext
+9	V_powd
+9 g_E
 9)~P3
 93t6H
 93t=H
 93tdH
-95}a,
 97tmD
 98t H
 98tkH
@@ -1267,7 +1271,6 @@ $^fE;
 9_8~Ufff
 9k8~QH
 9k8~^
-9nCK]
 9p@u+
 9q|~2H
 9s v#
@@ -1278,6 +1281,7 @@ $^fE;
 9t$Pu	
 9{\~9H
 9|$Hu(H
+:	V_powf
 :>)*	v
 :>t6k'
 :ALPHD
@@ -1288,8 +1292,9 @@ $^fE;
 :VP8 tP
 :VP8LtHD
 :VP8X
+;	V_qsort
 ;.u1L
-;=!k+
+;=<o+
 ;?0123456789:;<=>?
 ;Cxr*H
 ;CxsB
@@ -1310,7 +1315,7 @@ $^fE;
 ;t$@|
 ;t$D|
 ;|$8|
-<	V_powd
+<	V_qsort_s
 <	w	@
 < t=<	t9
 <+uXH
@@ -1328,7 +1333,6 @@ $^fE;
 <Ct-<D
 <DuBfff
 <Invalid>
-<J;ye'`
 <No D3D11>
 <No D3D11Create>
 <Not set>
@@ -1350,20 +1354,17 @@ $^fE;
 <vt{<x
 <xuM@
 <}wTI
-=	V_powf
 =NVDAt
 =SPB8u*
 =SPB8ue
 =imb;D
 =rIQU
 =s`~:
->	V_qsort
 >%ucI
 >0<0:
 >L9|$xt
 >Mp$d
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?49HoKC
@@ -1900,7 +1901,6 @@ B(I9A(
 B,9A,u)
 B.f?y
 B09A0u!
-B3e6SFW-
 B49A4u
 BC6H_HueShiftFixup_BlockHasDecodingErrors
 BC6H_HueShiftFixup_QuantizeBlock
@@ -2259,16 +2259,16 @@ CRenderDeviceBase
 CRenderDeviceBase::AcquirePooledDynamicConstantBuffer
 CRenderDeviceBase::AllocatePooledBackingStore
 CRenderDeviceBase::AllocatePooledIndexBuffer
-CRenderDeviceBase::AllocatePooledIndexBuffer(3627): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3663): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3629): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3665): 
 CRenderDeviceBase::AsyncSetTextureData(3284): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3531): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3533): 
 CRenderDeviceBase::CreateConstantBuffer
 CRenderDeviceBase::CreateConstantBuffer(1584): 
 CRenderDeviceBase::CreateConstantBufferInternal
 CRenderDeviceBase::DestroyConstantBuffer
 CRenderDeviceBase::EnableAsyncPresent
-CRenderDeviceBase::EndRenderDocCapture(3517): 
+CRenderDeviceBase::EndRenderDocCapture(3519): 
 CRenderDeviceBase::FindOrCreateTexture
 CRenderDeviceBase::FindOrCreateTexture(1764): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
@@ -2292,7 +2292,7 @@ CRenderDeviceBase::QueueFallbackTextureCopy
 CRenderDeviceBase::ResizeEngineWindow
 CRenderDeviceBase::SetCubemapRadianceSHConstants
 CRenderDeviceBase::SetCubemapRadianceSHConstants::<lambda_1>::operator ()
-CRenderDeviceBase::StartRenderDocCapture(3504): 
+CRenderDeviceBase::StartRenderDocCapture(3506): 
 CRenderDeviceDx11::AcquirePooledDynamicVertexBuffer
 CRenderDeviceDx11::BeginSubmittingDisplayLists(1176): 
 CRenderDeviceDx11::CheckFormatSupport
@@ -3637,29 +3637,28 @@ H-^Eu
 H3N I
 H4IcH8H
 H9(tO
-H9-@BG
 H9.u4
 H90u'
 H950KF
+H95G~B
 H95XKF
-H95`|B
-H95w{B
 H97u+A
 H98t$H
-H9="T/
-H9=*R/
-H9=*a/
-H9=1J,
-H9=2_/
-H9=Bi/
+H9="j/
+H9="l/
+H9=*\/
+H9=*k/
+H9=2Z/
+H9=:g/
+H9==Q,
 H9=CSF
 H9=JV/
-H9=TQ;
-H9=Z]/
-H9=Za/
-H9=jQ/
-H9=rX/
-H9=z^/
+H9=R^/
+H9=]sA
+H9=bi/
+H9=z`/
+H9=za/
+H9=zn/
 H9D$0
 H9D$8t%
 H9D$8t0
@@ -4002,6 +4001,7 @@ JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
 JPEGMEM
 January
 Jc< H
+K	V_snprintf
 K 9s 
 K H9K0u
 K WATAUAVAWH
@@ -4020,7 +4020,6 @@ KeyValueCache001
 KeyValuesSystem
 Kf;;u
 KfD;3u
-Kf^ O
 K}*n:	
 K~Je#>!
 L	B I
@@ -4181,11 +4180,12 @@ L80H;
 L80L;
 L80M;
 L9#tUH
+L9%+Z;
 L93uf
-L95aqB
-L95|qB
+L951tB
+L95LtB
+L95asB
 L97vH
-L9=Fz.
 L9?tR
 L9AHA
 L9aHA
@@ -4386,7 +4386,6 @@ MultiDraw %u
 MultiDrawIndexedInstancedIndirect failed - invalid drawarg buffer
 MultiDrawIndexedInstancedIndirectCount failed - invalid indirect buffers
 MultiDrawIndexedInstancedIndirectCount unsupported in D3D11
-N	V_snprintf
 N3`d?
 N>O=I9
 NAN(IND)
@@ -4462,6 +4461,7 @@ NvAPI_D3D_Sleep returned error '%d'.
 O!t/H
 O*9y]
 O8HcY
+O=5o+
 OF>;^
 OUTSTANDING_HOOKUP_REQUEST 
 OVER_BUDGET
@@ -4607,6 +4607,7 @@ PropertyEditorSystem_001
 PxHc>E3
 Pz}b!
 P~6-U~/W
+Q	V_sscanf
 Q2XXR
 Q5rHg,>
 QD$`H
@@ -4764,15 +4765,8 @@ RenderSystem/Use32BitDepthBufferWithoutStencil
 RenderSystem/UseHardwareGammaRamp
 RenderSystem/UseReverseDepth
 RenderUtils_001
-Rendering/Constant Buffers (MB)
-Rendering/Index Buffers (MB)
-Rendering/Texture Non-Evictable Size (MB)
-Rendering/Texture Pool Size (MB)
-Rendering/Texture Resident Size (MB)
-Rendering/Texture Unthrottle Streaming
 Rendering/Total GPU Memory Budget (MB)
 Rendering/Total GPU Memory Used (MB)
-Rendering/Vertex Buffers (MB)
 Rendersystem/SheetCacheTextureCols
 Rendersystem/SheetCacheTextureRows
 Report the maximum D3D feature level available.
@@ -4986,7 +4980,6 @@ SwapChainColor.vtex
 SwapChainDepth.vtex
 SwapChainTrueColor.vtex
 SwizzlePlanarScanlineToInterleaved
-T	V_sscanf
 T$ D;
 T$ E3
 T$ Ei
@@ -5044,8 +5037,6 @@ T$pD+
 T$pfD
 T$xD;{
 T$xE3
-T%|"!
-T-cW 
 TD u"E;
 TEX read request: %d KB; %s
 TEXMAN: %s LoadStreamingData (%s)
@@ -5273,6 +5264,7 @@ UserSettingsPathID
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
+V	V_stricmp_fast
 V6E>`"(5
 VATAUAVAWH
 VATAUAVH
@@ -5419,16 +5411,18 @@ WriteConsoleW
 WriteFile
 Wrong JPEG library version: library is %d, caller expects %d
 Wrote RenderDoc capture to %s
+X	V_strlower_fast
 X @8u
 X AVH
 X D8e
 X VAVAWH
 X!t5~
-X-,9"
-X-I7"
-X-WL"
-X5i='
-X5oR%
+X%:>!
+X%@^ 
+X-MA'
+X-X^ 
+X5	D'
+X5gC'
 XA^A]^]
 XA^_^[
 XA_A\_[
@@ -5446,16 +5440,11 @@ XYZ, Luv
 X_^[]
 X|$ A
 X|$8E
-Y	V_stricmp_fast
-Y%=:'
-Y%~S 
-Y-		"
-Y-}:'
-Y5O<'
-Y5y='
+Y-\)'
+Y5R#'
+Y5wC'
 Y9"SD
-Y=@R#
-Y=s,!
+Y=J8C
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -5479,7 +5468,6 @@ ZeroStride Vertex buffer created!
 Zod(^?
 Zpm"U
 [	UoA
-[	V_strlower_fast
 [    Discard |    NoTear]
 [*ncd>0
 [-&LMb#{'
@@ -5573,10 +5561,8 @@ Zpm"U
 \$pE3
 \$pHc
 \$xu3M
-\%3U 
-\=g(!
 \mfpmp.exe
-\s>3x
+]	V_strtoi64
 ])6M>&
 ]>)2X
 ]HfD;
@@ -5681,7 +5667,6 @@ _logb
 _nextafter
 _oD>Kg
 _tools.txt
-`	V_strtoi64
 ` UAVAWH
 `+!]?
 `.rdata
@@ -5836,7 +5821,6 @@ connection already in progress
 connection refused
 connection reset
 couldn't create deferred context - death!
-cpZH)
 cross device link
 cs2.exe
 d$ D!
@@ -6172,6 +6156,7 @@ iLumaMipDimensions
 iLumaMipLevelToUse
 iMaxRenderSize
 iRenderSize
+ia&t3
 identifier removed
 illegal byte sequence
 imageFormat != IMAGE_FORMAT_UNKNOWN
@@ -6559,68 +6544,56 @@ nvapi_QueryInterface
 n|$`fA
 o KPBf
 o$$fA
-o%;<&
-o%Bl&
-o%Dy&
-o%H)&
+o%!1&
+o%Tn&
+o%Zq&
+o%\Z&
 o%].F
-o%h4&
-o%oE'
-o%}7&
+o%^F&
+o%k-&
+o%kB&
+o%y+&
 o,$fD
-o-%r&
-o-+|&
-o-,>'
-o-8<&
-o-;P&
-o-Kj&
-o-Ku&
-o-Py&
-o-g:&
-o-j|'
-o-mS&
+o-"5&
+o-&1&
+o-+t&
+o-Ps*
+o-U>&
+o-_K&
+o-m-&
+o-o&$
 o-u.F
-o-wx&
+o-~+&
 o47Lc
-o5(.&
-o56h&
-o5<n&
-o5A>'
-o5C4&
-o5Lj&
-o5PD&
-o5\|&
-o5b|'
-o5e0&
+o5#K&
+o5%O&
+o5+<'
+o5Fd&
+o5Ft*
+o5UX&
+o5_9&
+o5g3&
 o5h.F
-o5h4&
-o5nS&
-o5pH&
-o=#P&
+o5qM&
+o5|{&
+o=#y&
 o=(K:
-o=.5'
+o=/_,
 o=18:
-o=28&
 o=6C:
-o=@<8
-o=A`*
-o=B:&
+o=6r&
+o=7J&
 o=B]:
-o=Cv&
 o=Ee:
-o=H>'
-o=Hh&
+o=Eg&
+o=Hd&
 o=Ig:
+o=M1&
 o=Q>:
 o=R`:
-o=Rx&
-o=SV&
-o=YA&
-o=Z[&
 o=[.F
-o=n|&
-o=ze&
-o=}.&
+o=cj&
+o=~{&
 oAPfD
 oD$ f
 oD$ fA
@@ -7161,21 +7134,19 @@ t@McO4
 tAH9=
 tBMcW<IcO@Lc
 tC@8-
-tC@8-e^%
-tC@85"a%
-tDD8%S@$
-tDD8%^?$
-tDD85\
+tC@8-1'%
+tC@85
+tDD8%
+tDD85
 tEHcR
 tFD9c
 tGH9[0u
 tHHcD
-tID8-t
+tID8-
 tIf9wbH
 tKJcD
 tNfE;
 tOD8-
-tOD8->-$
 tOt'F
 tP@87uKH
 tQH957FF

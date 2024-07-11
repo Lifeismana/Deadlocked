@@ -5,8 +5,6 @@
 	!s99
 	%.*s
 	%s at offset %d, 
-	V_fmodd
-	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_isnand
@@ -20,6 +18,7 @@
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
 	kE>fvw
+	n$-z`
 	wOIc
                           
     - %s 
@@ -169,7 +168,6 @@
 %s: value %s must be marked with a resource_name: prefix
 %s: value %s must be marked with a soundevent: prefix
 %s::%s (%u)
-&Iblr
 &YA1E
 &YA1H
 ', type<
@@ -458,6 +456,7 @@
 .xdata$x
 /-?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 />58d%
+/xYe2
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -495,7 +494,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240704150643Z0/
+240711145844Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -513,7 +512,6 @@
 380115120000Z0b1
 3>N;kU
 3>fvw
-3ilve
 3mq+<
 4/tNC
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
@@ -527,6 +525,7 @@
 6I]Dc
 6OB,n_
 70503
+7:hP0
 7?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@IV?$Local@VValue@v8@@@2@@Z
 7?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
@@ -561,6 +560,7 @@
 9|$`u
 9|$hu
 9~0~@H
+:	V_powf
 : lexer error %d :
 ;.|@H
 ;G(uSL
@@ -568,6 +568,7 @@
 ;I9}(tiH
 ;\$0t
 ;}9Lk
+<	V_qsort_s
 <	u%H
 <	u)Icn
 <	u2H
@@ -595,17 +596,16 @@
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=	V_powf
 =-?New@Context@v8@@SA?AV?$Local@VContext@v8@@@2@PEAVIsolate@2@PEAVExtensionConfiguration@2@V?$MaybeLocal@VObjectTemplate@v8@@@2@V?$MaybeLocal@VValue@v8@@@2@UDeserializeInternalFieldsCallback@2@PEAVMicrotaskQueue@2@@Z
 =9?SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
 == PulseGraphDef ==
+=i!.q
 =imb;D
 =rIQU
 >0<0:
 >?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z
 >Mp$d
 >jtm}S
-?	V_qsort_s
 ?7zQ6$
 ?:kP<
 ??0CUtlBuffer@@QEAA@HHH@Z
@@ -2238,6 +2238,7 @@ External system requesting an int from the test graph
 External system requesting an int from the test graph (variant)
 ExternalNameForInternalType
 Extraneous token
+F	V_sincosf
 F.3gL
 F.3gM
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
@@ -2314,6 +2315,7 @@ Func( %s )
 Function signature which has been replaced after compilation.
 Function signature which will be replaced after compilation.
 Functions not supported in this evaluator (%s)
+G	V_sind
 G fA;
 GD$(H
 GD$8H
@@ -2489,8 +2491,6 @@ Hc/;o
 Hc3;s
 Hc7Lc9
 Hc;;{
-Hc=Ug
-Hc=a[
 HcA(E3
 HcA(H
 HcAHH
@@ -2529,7 +2529,6 @@ HelpSystem_001
 Hook register '%s' invoked with invalid function as first paramter.
 Hook register '%s' invoked with unrecognized 'this' value.
 HostStateMgr001
-I	V_sincosf
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
 ID_CHAR
@@ -2706,12 +2705,12 @@ IsValid()
 IsValidCodePage
 IsValidIndex( i )
 IsWaitingOnAutoWake( pCursor )
-J	V_sind
 J>@G_
 JUMP_COND
 January
 Jump to Instr I%d
 JumpOrLeap( C%d:I%d )
+K	V_snprintf
 K USAUAVI
 K&>.yC
 K-?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z
@@ -2989,6 +2988,7 @@ Missing publicMethods declaration.
 Missing required transfer interface: %s
 Missing token
 Missing token %s
+MjrNm
 Mod R%d <- R%d %% R%d
 ModelDocUtils001
 Monday
@@ -2997,8 +2997,6 @@ Msg invoked with unrecognized 'this' value.
 Mul R%d <- R%d * R%d
 MultiByteToWideChar
 Must call SetMetadataEnabled on the root KV3 context to track metadata
-N	V_snprintf
-N*DhwP
 NEGATE
 NEGATE_FLOAT
 NEGATE_INT
@@ -3351,7 +3349,6 @@ RtlLookupFunctionEntry
 RtlPcToFileHeader
 RtlUnwindEx
 RtlVirtualUnwind
-Ru+/l
 RunPulseInstruction
 S0Q0O
 SATAUAVAWH
@@ -3761,6 +3758,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
+V	V_stricmp_fast
 V6E>`"(5
 V8ToVariant
 VAUAWH
@@ -3827,6 +3825,8 @@ V_atof
 V_atofloat32
 V_atoi
 V_cosd
+V_fmodd
+V_fmodf
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -3864,11 +3864,12 @@ X to the Y power
 XA_A^_^][
 XHcGPM
 Xt$xH
-Y	V_stricmp_fast
 Y9"SD
 Yield, Resume=%s
 YpHcAhHk
 Z!?IsArray@Value@v8@@QEBA_NXZ
+ZmOz#
+ZnBKef
 [ Chunk%d ]
 [ written by I%d last-read I%d ]
 [***INVALID INSTRUCTION %d***]
@@ -4065,7 +4066,6 @@ bLegalTypeChange
 bValue
 bValue == false
 bValue == true
-b]^di
 bad address
 bad exception
 bad file descriptor
@@ -4753,7 +4753,6 @@ rotation_vector
 s < ( 1 << ( 31 - HandleBits ) )
 s D9s0|AH
 s f9s"~
-s5!0"5#8
 s_Instance
 s_flExplicitCurTime
 s_nConnectionCount > 0
@@ -4935,7 +4934,6 @@ xA^_[]
 xA^_^]
 xSE;H
 y\PD>!
-zdvqw
 { AVH
 {0x%x}
 {@9s8|AH

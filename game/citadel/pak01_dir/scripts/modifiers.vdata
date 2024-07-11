@@ -140,7 +140,7 @@
 	{
 		_class = "modifier_held_item_pickup_aura"
 		m_iAuraSearchType = "CITADEL_UNIT_TARGET_HERO"
-		m_strParticleEffect = resource_name:"particles/generic/idol_carry.vpcf"
+		m_strParticleEffect = resource_name:"particles/generic/idol_pickup_aura.vpcf"
 		m_modifierProvidedByAura = subclass:
 		{
 			_class = "modifier_item_pickup_aura_target"
@@ -325,7 +325,7 @@
 		m_flMaxSpeedDistance = 1600
 		m_flSlowSpeed = 30.000000
 		m_flFastSpeed = 175.000000
-		m_flVerticalOffset = 16.000000
+		m_flVerticalOffset = 0.000000
 		m_flTolerance = 20.000000
 	}
 	modifier_hero_testing_damage_aura = 
@@ -382,6 +382,14 @@
 		_class = "modifier_tier3_boss_invuln"
 		m_ShieldParticle = resource_name:"particles/npc/tier3boss/tier3_boss_invulerability_shield.vpcf"
 		m_flShieldRadius = 350.000000
+	}
+	modifier_citadel_can_damage_tier3phase2_boss = 
+	{
+		_class = "modifier_base"
+		m_bIsHidden = true
+		m_eDebuffType = "MODIFIER_DEBUFF_NO"
+		m_nAttributes = "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED | MODIFIER_ATTRIBUTE_MULTIPLE"
+		m_nEnabledStateMask = "MODIFIER_STATE_IN_TIER3_PHASE2_BOSS_PIT"
 	}
 	modifier_player_disconnected = 
 	{

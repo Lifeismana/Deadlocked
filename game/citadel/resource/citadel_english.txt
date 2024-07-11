@@ -633,12 +633,12 @@
 		"Citadel_HUD_Damage_NoTroopers"								"NEED TROOPERS"
 		"Citadel_HUD_Damage_Resistant"								"RESISTANT"
 		"Citadel_HUD_Damage_NotInMidPit"							"NOT IN PIT"
+		"Citadel_HUD_Damage_NotInTier3Pit"							"NOT IN PIT"
 
 		"Citadel_HUD_DamageReport_Title"							"Damage Report"
-		"Citadel_HUD_DamageReport_DamageReceived"					"Incoming Damage:"
-		"Citadel_HUD_DamageReport_DamageReceived_Amount"			"{d:total_damage_received}"
-		"Citadel_HUD_DamageReport_DamageDealt"						"Outgoing Damage:"
-		"Citadel_HUD_DamageReport_DamageDealt_Amount"				"{d:total_damage_dealt}"
+		"Citadel_HUD_DamageReport_DamageReceived"					"Incoming Damage"
+		"Citadel_HUD_DamageReport_DamageDealt"						"Outgoing Damage"
+		
 		"Citadel_HUD_DamageReport_LastRespawn"						"Last Respawn"
 		"Citadel_HUD_DamageReport_Time600"							"10 minutes"
 		"Citadel_HUD_DamageReport_Time300"							"5 minutes"
@@ -650,9 +650,9 @@
 		"Citadel_HUD_DamageReport_AllHeroDamageReceived"			"Damage Received from All Heroes"
 		"Citadel_HUD_DamageReport_HeroDamageDealt"					"Damage Dealt to Hero"
 		"Citadel_HUD_DamageReport_AllHeroDamageDealt"				"Damage Dealt to All Heroes"
-		"Citadel_HUD_DamageReport_Total"							"Total Damage"
-		"Citadel_HUD_DamageReport_Total_Dealt"						"Total Damage Dealt"
-		"Citadel_HUD_DamageReport_Total_Taken"						"Total Damage Taken"
+		"Citadel_HUD_DamageReport_Total"							"Total Damage:"
+		"Citadel_HUD_DamageReport_TotalTaken"						"Hero Damage Taken:"
+		"Citadel_HUD_DamageReport_TotalDamageValue"					"{d:total_damage}"
 		"Citadel_HUD_DamageReport_DamagePercentWeapon"				"{i:weapon_damage_percent}%"
 		"Citadel_HUD_DamageReport_DamagePercentAbility"				"{i:ability_damage_percent}%"
 
@@ -1007,6 +1007,19 @@
 		"Citadel_Graph_WeaponDamage"					"Gun Damage"
 		"Citadel_Graph_WeaponDamageCrit"				"Gun Damage - Crit"
 
+		"Citadel_Graph_Souls_Players"					"Enemy Kills"
+		"Citadel_Graph_Souls_Assists"					"Kill Assists"
+		"Citadel_Graph_Souls_Boss"						"Objectives"
+		"Citadel_Graph_Souls_Lane"						"Troopers"
+		"Citadel_Graph_Souls_Neutral"					"Neutral Enemies"
+		"Citadel_Graph_Souls_Treasure"					"Urn"
+		"Citadel_Graph_Souls_Denies"					"Denies"
+
+		"Citadel_Graph_Damage_Boss"						"Objectives"
+		"Citadel_Graph_Damage_Creep"					"Troopers"
+		"Citadel_Graph_Damage_Player"					"Enemy Players"
+		"Citadel_Graph_Damage_Neutral"					"Neutral Enemies"
+
 		"Citadel_LaneStats_Kills"						"Kills"
 		"Citadel_LaneStats_Souls"						"Souls"
 		"Citadel_LaneStats_LastHits"					"Last Hits"
@@ -1231,7 +1244,7 @@
 		//-----------------------------------------------------------------------------
 		"citadel_ability_bull_charge"			"Shoulder Charge"
 		"citadel_ability_bull_charge_quip"		"Charge into the fray, dragging enemies along"
-		"citadel_ability_bull_charge_desc"		"<span class=\"highlight\">Charge forward</span>, colliding with enemies and dragging them along. Speed increased after colliding with enemy Heroes."
+		"citadel_ability_bull_charge_desc"		"<span class=\"highlight\">Charge forward</span>, colliding with enemies and dragging them along.  Hitting a <span class=\"highlight\">wall</span> will <span class=\"highlight\">Stun</span> enemies caught by {s:hero_name}. Speed increased after colliding with enemy Heroes."
 		"modifier_citadel_bull_charging"		"Charging"
 		citadel_ability_bull_charge_t3_desc		"<span class=\"highlight\">+{s:WeaponDamageBonus}</span> Weapon Damage for <span class=\"highlight\">{s:WeaponPowerIncreaseDuration}s</span> after colliding with an enemy"
 		"modifier_shoulder_charge_buff"			"Bonus Damage"
@@ -1279,7 +1292,6 @@
 		"citadel_ability_static_charge"			"Static Charge"
 		"citadel_ability_static_charge_quip"	"Apply a delayed area stun to an enemy hero"
 		"citadel_ability_static_charge/modifier_citadel_staticcharge"	"Static Charge"
-		citadel_ability_static_charge_t2_desc	"An additional Static Charge is applied to a nearby enemy"
 
 		"citadel_ability_lightning_ball"		"Lightning Ball"
 		"citadel_ability_lightning_ball_quip"	"Launch a damaging ball of lightning"
@@ -1307,7 +1319,7 @@
 
 		"citadel_ability_storm_cloud"			"Storm Cloud"
 		"citadel_ability_storm_cloud_quip"		"Fry all enemies in a large area"
-		"citadel_ability_storm_cloud_desc"		"Channel an expanding storm cloud around you that <span class=\"highlight\">damages all enemies</span> within its radius."
+		"citadel_ability_storm_cloud_desc"		"Channel an expanding storm cloud around you that <span class=\"highlight\">damages all enemies</span> within its radius. Enemies do not take damage when they are out of line-of-sight."
 		citadel_ability_storm_cloud_t1_desc		"<span class=\"highlight\">+{s:BulletResistOnActive}% Bullet Resist</span> while channeling Storm Cloud"
 		citadel_ability_storm_cloud_t2_desc		"<span class=\"highlight\">+{s:AbilityChannelTime}s</span> Channel Time and <span class=\"highlight\">+{s:Radius}m</span> Radius"
 		citadel_ability_storm_cloud_t3_desc		"+{s:DPS} DPS"
@@ -1967,7 +1979,7 @@
 		"ability_smoke_bomb_desc"		"Fade out of sight, becoming <span class=\"highlight\">invisible</span> and gaining <span class=\"highlight\">sprint speed</span>. Attacking removes invisibility. Close enemies can see through your invisibility."
 		//"ability_smoke_bomb_t1_desc"	"<span class=\"highlight\">{s:AbilityCooldown}s</span> Ability Cooldown"
 		"ability_smoke_bomb_t2_desc"	"<span class=\"highlight\">+{s:InvisMoveSpeedMod}m/s</span> Invis Sprint Speed"
-		"ability_smoke_bomb_t3_desc"	"After invis, gain <span class=\"highlight\">+{s:BulletLifesteal} Bullet Lifesteal</span> for {s:PostInvisBuffDuration}s"
+		"ability_smoke_bomb_t3_desc"	"After invis, gain <span class=\"highlight\">+{s:BulletLifesteal}% Bullet Lifesteal</span> for {s:PostInvisBuffDuration}s"
 		"modifier_citadel_smoke_bomb_in_smoke"	"In Smoke"
 		"modifier_citadel_smoke_bomb_invis" 	"Invisible"
 		"ability_smoke_bomb/modifier_buff"		"Stabilizer"
@@ -2680,8 +2692,7 @@
 
 		"ability_guided_arrow"		"Guided Owl"
 		"ability_guided_arrow_quip"	"Fly your owl to damage enemies from afar"
-		"ability_guided_arrow_desc"	"After {s:AbilityCastDelay}s cast time, <span class=\"highlight\">launch a spirit owl that you control</span> and which <span class=\"highlight\">explodes on impact</span>. Hold [{s:iv_attack}] to accelerate the owl.<br>Press [{s:in_mantle}] to release control. Gain <span class=\"highlight\">permanent Spirit Power</span> for each enemy hero killed with Guided Owl."
-		"ability_guided_arrow_t1_desc"	"Enemies hit are <span class=\"highlight\">stunned for {s:StunDuration}s</span>"
+		"ability_guided_arrow_desc"	"After {s:AbilityCastDelay}s cast time, <span class=\"highlight\">launch a spirit owl that you control</span> and which explodes on impact, <span class=\"highlight\">damaging and stunning</span> enemies. Hold [{s:iv_attack}] to accelerate the owl.<br>Press [{s:in_mantle}] to release control. Gain <span class=\"highlight\">permanent Spirit Power</span> for each enemy hero killed with Guided Owl."
 		"ability_guided_arrow_t3_desc"	"After hit, kills enemies that are below <span class=\"highlight\">{s:LowHealthEnemyThresholdPct}% Health</span>"
 		BonusTechPowerPerKill_label		"Spirit Power Per Kill"
 
@@ -3052,6 +3063,7 @@
 		synth_pulse					"Enchanter's Satchel"
 		synth_pulse_quip			"Briefly escape into your suitcase, then deal damage"
 		synth_pulse_desc			"<span class=\"highlight\">Escape</span> into your suitcase. When the duration ends, <span class=\"highlight\">deal damage</span> to nearby enemies. Duration can be ended early by performing any action."
+		synth_pulse_t3_desc			"<span class=\"highlight\">Disarms</span> targets for {s:DisarmDuration}s"
 		EscapeDuration_label		"Escape Duration"
 		EscapeDuration_postfix		"s"
 		BulletShieldPerHero_label	"Bullet Shield Per Hero"
@@ -3679,7 +3691,7 @@
 
 		"citadel_ability_infinity_slash"		"Shadow Transformation"
 		"citadel_ability_infinity_slash_quip"	"Become invincible and more powerful"
-		"citadel_ability_infinity_slash_desc"	"Become infused with Yamato's shadow soul. After an initial <span class=\"highlight\">invincible</span> transformation, your <span class=\"highlight\">abilities are refreshed and are 60% faster</span>, your weapon has <span class=\"highlight\">infinite ammo</span>, and you gain damage and debuff resists. You are unable to die in this mode."
+		"citadel_ability_infinity_slash_desc"	"Become infused with Yamato's shadow soul. After an initial <span class=\"highlight\">invincible</span> transformation, your <span class=\"highlight\">abilities are refreshed and are 60% faster</span>, your weapon has <span class=\"highlight\">infinite ammo</span>, and you gain <span class=\"highlight\">damage resists</span> and <span class=\"highlight\">immunity to negative status effects</span>. You are unable to die in this mode."
 		"citadel_ability_infinity_slash_buff_header" "Per Hero Hit"	
 		"ShadowDuration_label"					"Explosion Delay"
 		"ShadowDuration_postfix"				"s"
@@ -4774,17 +4786,17 @@
 		
 		"spirit_permanent_pickup_label"					"+2 Spirit"
 		"firerate_permanent_pickup_label"				"+1.5% Fire Rate"
-		"ammo_permanent_pickup_label"					"+3% Ammo"
+		"ammo_permanent_pickup_label"					"+4% Ammo"
 		"hp_permanent_pickup_label"						"+15 Max HP"
 		"cd_permanent_pickup_label"						"+0.75% Cooldown Reduction"
-		"wp_permanent_pickup_label"						"+2% Weapon Damage"
+		"wp_permanent_pickup_label"						"+3% Weapon Damage"
 
 		"spirit_permanent_pickup_label_lv2"			"+3 Spirit"
 		"firerate_permanent_pickup_label_lv2"			"+2% Fire Rate"
-		"ammo_permanent_pickup_label_lv2"				"+5% Ammo"
+		"ammo_permanent_pickup_label_lv2"				"+6% Ammo"
 		"hp_permanent_pickup_label_lv2"				"+20 Max HP"
 		"cd_permanent_pickup_label_lv2"				"+1% Cooldown Reduction"
-		"wp_permanent_pickup_label_lv2"				"+3% Weapon Damage"
+		"wp_permanent_pickup_label_lv2"				"+4% Weapon Damage"
 
 		"breakable_pickup_missing_loc"					"PICKUP MISSING LOC NAME"
 
@@ -5042,6 +5054,10 @@
 		"BonusFireRate_prefix"							"{s:sign}"
 		"BonusFireRate_postfix"							"%"
 		"BonusFireRate_label"							"Fire Rate"
+
+		"ActivatedFireRate_prefix"						"{s:sign}"
+		"ActivatedFireRate_postfix"						"%"
+		"ActivatedFireRate_label"						"Fire Rate"
 
 		"BonusFireRatePlayerUnit_prefix"				"{s:sign}"
 		"BonusFireRatePlayerUnit_postfix"				"%"
@@ -6202,7 +6218,10 @@
 
 		"modifier_limit_ability_cooldown"		"Quick Cooldowns"
 
-		"ability_golden_idol"					"Throw Idol"
+		"ability_golden_idol"					"Drop Soul Urn"
+		"golden_idol_bonus_01"					"+25% Extra Souls"
+		"golden_idol_bonus_02"					"+1 Ability Point"
+
 		"ability_capture_zip_line"				"Capture Hyperline"
 		"modifier_citadel_capture_zipline_timer"	"Capturing Hyperline"
 
@@ -6431,10 +6450,12 @@
 		"citadel_settings_playsoundinbackground" 		"Play Sound in Background"
 		"citadel_settings_voice_steam_link"				"Recording device settings are configured using <a href=\"event:DOTAShowSteamVoiceSettings()\">Steam voice settings</a>."
 		"citadel_settings_voice_level"					"Voice Level"
-		"citadel_settings_openmicthreshold"				"Open Mic Sensitivity"
+		"citadel_settings_openmicthreshold"				"Mic Trigger Threshold"
 		"citadel_settings_voice_always_sample_mic"		"Always Sample Mic"
 		"citadel_settings_invert_ping_desc"				"Check to invert pings. <br/> Defaults: <br/> Single Ping = Passive. <br/> Double Ping = Aggressive <br/><br/>Inverted:<br/>Single Ping = Aggressive <br/>Double Ping = Passive"
+		"citadel_settings_openmicthreshold_desc"		"Only transmit voice when audio input volume is above this level. Applies to Push To Talk and Open Mic."
 		"citadel_settings_open_mic_desc"				"Enable Open Mic"
+		"citadel_settings_monitor_mic_desc"				"Turn this on to listen to your microphone while adjusting voice settings."
 		"citadel_settings_defaultaudio"					"Default"
 		"citadel_settings_sounddevice"					"Sound Device:"
 		"citadel_settings_voice_sounddevice"			"Voice Input Device:"
@@ -6476,6 +6497,7 @@
 		"citadel_settings_borderless"					"Borderless Window"
 		"citadel_settings_chat_ptt"						"Push to Talk"
 		"citadel_settings_chat_openmic"					"Open Mic"
+		"citadel_settings_monitor_mic"					"Listen to my mic"
 		"citadel_settings_chat_invert_ping"				"Invert Ping"
 		"citadel_settings_mousesensitivity"				"Mouse Sensitivity"
 		"citadel_settings_keybinddefaults"				"Reset all keybinds to defaults"
@@ -6545,13 +6567,27 @@
 		"citadel_settings_texturequality_low"			"Low"
 		"citadel_settings_texturequality_med"			"Med"
 		"citadel_settings_texturequality_high"			"High"
+		"citadel_settings_upscaling"					"Upscaling Technology"
+		"citadel_settings_upscaling_desc"				"Generates high resolution frames from low resolution, faster-to-render internal frames.<br><br>FSR2 uses temporal anti-aliasing (TAA).<br><br>Performance cost: moderate/consistent"
+		"citadel_settings_upscaling_none"				"None"
+		"citadel_settings_upscaling_fsr"				"FSR"
+		"citadel_settings_upscaling_fsr2"				"FSR2 (TAA)"
+		"citadel_settings_antialiasing"					"Anti-Aliasing"
+		"citadel_settings_antialiasing_desc"			"Post-process anti-aliasing effect to use when FSR2 is disabled.<br><br>Performance cost: small/consistent"
+		"citadel_settings_antialiasing_none"			"None"
+		"citadel_settings_antialiasing_fxaa"			"FXAA"
+		"citadel_settings_antialiasing_cmaa"			"CMAA"
 		"citadel_settings_particlequality"				"Effects Quality"
 		"citadel_settings_particlequality_desc"			"Cull unnecessary parts of effects for better performance. Not currently used."
 		"citadel_settings_particlequality_low"			"Low"
 		"citadel_settings_particlequality_med"			"Med"
 		"citadel_settings_particlequality_high"			"High"
-		"citadel_settings_renderquality"				"Game Screen Render Quality"
-		"citadel_settings_renderquality_desc"			"Fraction of native resolution to render internally before upscaling."
+		"citadel_settings_renderquality"				"Quality Level"
+		"citadel_settings_renderquality_desc"			"Quality - 1.5x upscaling<br>Balanced - 1.7x upscaling<br>Performance - 2x upscaling<br>Ultra Performance - 3x upscaling<br><br>Performance cost: heavy/consistent"
+		"citadel_settings_renderquality_quality"		"Quality"
+		"citadel_settings_renderquality_balanced"		"Balanced"
+		"citadel_settings_renderquality_performance"	"Performance"
+		"citadel_settings_renderquality_ultra_performance"	"Ultra Performance"
 		"citadel_settings_fps_max"						"Maximum frames per second allowed"
 		"citadel_settings_fps_max_tip"					"Extended values can be provided with the +fps_max launch option.\nValues out of range for the slider will disable the slider."
 		"citadel_settings_fsr"							"FidelityFX Super Resolution"
@@ -6671,7 +6707,7 @@
 		"guide_overview_desc" 						"Explore the various sections to learn about the game."
 
 		"guide_the_map_welcome_header"				"Introduction"
-		"guide_the_map_welcome_desc"				"Deadlock is a 6v6 strategic shooter, where gunplay, fast-paced movement, power progression, and unique heroes collide."
+		"guide_the_map_welcome_desc"				"Welcome to The Cursed Apple. If your team wants to emerge victorious, you’ll need to wield both guns and supernatural powers to lay siege to the enemy base."
 
 		"guide_the_map_header"						"Overview"
 		"guide_the_map_desc"						"Hover over areas on the map to learn more about the things you'll see while playing Deadlock."
@@ -6701,7 +6737,7 @@
 		"guide_upgrades_last_hit_desc"				"Get Souls by killing troopers and players.  You can also get Souls by killing neutrals located throughout the map.<br><br>Souls are shared among allies nearby."
 
 		"guide_upgrades_yellow_orbs_header"			"Securing Souls"
-		"guide_upgrades_yellow_orbs_desc"			"When you land a killing blow, extra Souls appear.<br><br>You can secure these Souls by shooting the Green Orb containing them or letting them float away."
+		"guide_upgrades_yellow_orbs_desc"			"When you land a killing blow, extra Souls appear.<br><br>You can secure these Souls by shooting the blue orb containing them or letting them float away."
 
 		"guide_upgrades_deny_header"				"Stealing Souls"
 		"guide_upgrades_deny_desc"					"Enemy Soul Orbs are orange and enemies will get them if they float away or if they shoot them.<br><br>You can shoot these Orange Orbs first to steal them."
@@ -6710,13 +6746,13 @@
 		"guide_upgrades_killing_guardians_desc"		"Destroying an enemy objective earns everyone on your team Ability Points (AP).<br><br>You can spend these points to upgrade your abilities by holding <span class='keybind'>[TAB]</span>."
 
 		"guide_upgrades_going_home_header"			"Shop"
-		"guide_upgrades_going_home_desc"			"When you have souls to spend, go back to base to shop and heal.<br><br>There's also a shop next to each guardian, available until the guardian is destroyed."
+		"guide_upgrades_going_home_desc"			"When you have souls to spend, go back to base to heal and buy powerful items that increase your stats and grant additional abilities.<br><br>There's also a shop next to each guardian, available until the guardian is destroyed."
 
 		"guide_upgrades_upgrade_abilities_header"	"Upgrade Abilities"
 		"guide_upgrades_upgrade_abilities_desc"		"Spend Ability Points to upgrade your abilities.<br><br>Abilities have three upgrade tiers."
 
 		"guide_upgrades_buy_mods_header"			"Buy Items"
-		"guide_upgrades_buy_mods_desc"				"Spend Souls to buy Items that increase your stats and grant you additional abilities.<br><br>There is a Suggested Items tab with hand-picked recommendations for each hero."
+		"guide_upgrades_buy_mods_desc"				"Items can modify a variety of things like ammo count, melee damage or health regeneration.  Items that increase Spirit Power improve the effectiveness of your abilities.<br><br>There is a Suggested Items tab with hand-picked recommendations for each hero."
 
 		"guide_neutrals_header"						"Neutrals"
 		"guide_neutrals_desc"						"There are many neutral creatures lurking around the map. Defeat them to earn souls.<br><br>Sometimes, a powerful creature will appear at the center of the map… defeating it will offer your team great power."
@@ -6728,7 +6764,7 @@
 		"guide_movement_crouch_desc"				"Press <span class='keybind'>[ {s:key_duck} ]</span> to crouch."
 
 		"guide_movement_slide_header"				"Slide"
-		"guide_movement_slide_desc"					"Hold <span class='keybind'>[ {s:key_duck} ]</span> to slide while moving down a ramp or when moving at high speed."
+		"guide_movement_slide_desc"					"Hold <span class='keybind'>[ {s:key_duck} ]</span> to slide while moving down a ramp or moving at high speed."
 
 		"guide_movement_dodge_header"				"Dash"
 		"guide_movement_dodge_desc"					"While moving press <span class='keybind'>[ {s:key_innate_1} ]</span> to dash.<br><br>Requires stamina."

@@ -3,6 +3,7 @@
 																
 																																														
 		%.*s
+		V_frexpf
 	 The lexer was matching from line %d, offset %d, which
 	 This indicates a poorly specified lexer RULE
 	 or unterminated input element such as: "STRING["]
@@ -29,9 +30,7 @@
 	JS_STRING
 	TYPE_BOOL
 	TYPE_ENUM
-	V_fmodf
 	V_fprintf
-	V_frexpf
 	V_isalpha_str_fast
 	V_isdigit_str
 	V_vsnprintf
@@ -108,17 +107,18 @@
  (%s%s)
  (08@HPX`hpx
  (08@HPX`j
- (08@HPXb 
+ (08@HPXbp
  (08@HPZ
- (08@HR 
+ (08@HRp
  (08@J
- (08@J 
- (0X`hpz 
+ (08@Jp
+ (0X`hpzp
  (Start: 
  * %d WeightLists
  * ScaleSet[%d] :: %s
  * WeightList[%d] :: %s
  ... }
+ .p%Q
  0"r$4&
  : Extraneous input - expected %s ...
  : Extraneous input - expected <EOF>
@@ -201,6 +201,7 @@
  A__^
  A__^][
  Aconst char *__cdecl Reflection::Internal::GetFuncName<class CEmitTagActionUpdater>(void)
+ BPsf
  Base Class Array'
  Base Class Descriptor at (
  Bik_debug_fabrik_backwards_enabled
@@ -485,6 +486,7 @@ $`<`uMM
 ',=?k
 'Play reversed' has no effect when used with time synchronization!
 'p7M}f
+'~{9Uw
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( NmGetMostSignificantBit( flValue ) + 1 ) <= nMaxBitsToUse
@@ -497,30 +499,33 @@ $`<`uMM
 ( ndxKeyData >= 0 ) && ( ndxKeyData < 65536 )
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
-(%ap2
+(%-p:
+(%Ap:
+(%J&%
+(%Wp:
 (%d,%d)
-(%j'%
 (("**,
 ((6"8(:,<*>
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-$P?
-(-1G=
-(-:~S
-(-V]=
-(-`_=
-(-jgQ
-(-q>=
-(-{X=
+(-#],
+(-'UU
+(-Ii0
+(-I~S
+(-tI?
+(-z}S
 (0`hpx
 (4$Mc
-(5.5=
-(5F8=
-(5z>=
-(=75=
-(==8=
-(=S'K
-(=_dJ
+(5;L-
+(5OL=
+(5]O=
+(5~.=
+(=0L=
+(==cJ
+(=Y#K
+(=\vS
+(=fO=
+(=g@=
 (A]A\^[
 (A]A\_^
 (A^A\
@@ -604,12 +609,12 @@ $`<`uMM
 (L$@D
 (L$@H
 (L$@f
-(L$@s
 (L$PA
 (L$PD
 (L$PH
 (L$PI
 (L$PL
+(L$Ps
 (L$`D
 (L$`H
 (L$`I
@@ -705,6 +710,7 @@ $`<`uMM
 (merge 
 (null)
 (t$ 2
+(t$ @
 (t$ A
 (t$ D
 (t$ D8
@@ -775,6 +781,7 @@ $`<`uMM
 (|$pH
 (|$pI
 (|$pL
+)	V_log10f
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
 )<$fD
 )>6{1n
@@ -812,7 +819,6 @@ $`<`uMM
 )D$@f
 )D$PA
 )D$PD
-)D$PE3
 )D$PH
 )D$PI
 )D$PL
@@ -831,6 +837,7 @@ $`<`uMM
 )D$pA
 )D$pB
 )D$pD
+)D$pE3
 )D$pI
 )D$pL
 )D$pf
@@ -872,6 +879,7 @@ $`<`uMM
 )L$`D
 )L$`E
 )L$`H
+)L$`Hc
 )L$`M
 )L$pA
 )L$pB
@@ -922,7 +930,6 @@ $`<`uMM
 )\$`E
 )\$`H
 )\$`I
-)\$`f
 )\$pD
 )\$pI
 )\$pL+
@@ -1021,7 +1028,6 @@ $`<`uMM
 )|$ I+
 )|$ L
 )|$ w
-)|$08
 )|$0;
 )|$0A
 )|$0D
@@ -1030,6 +1036,7 @@ $`<`uMM
 )|$0I
 )|$0L
 )|$0t
+)|$@8
 )|$@A
 )|$@B
 )|$@D
@@ -1057,6 +1064,7 @@ $`<`uMM
 )|$pH
 )|$pL
 )|B?d!
+*	V_log2_uint
 *HcD;LH
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
@@ -1090,7 +1098,7 @@ $`<`uMM
 +f)>0'
 +h->|
 +o'q)}
-,	V_log10f
+,	V_log2f
 , at <EOF>
 , at offset %d
 , from: 
@@ -1105,11 +1113,10 @@ $`<`uMM
 ,W5y+
 ,X< w
 ,YA1I
-,\$pH
 ,d$pfE
 ,j.b0^2`4^6`8^:f<
--	V_log2_uint
 - Scripted Sequence: 
+-*d[?'
 -1 1000
 -BH>t
 -Stop: 
@@ -1122,14 +1129,13 @@ $`<`uMM
 -tools
 -unknown source-
 -unknown source-(
+.	V_logf
 ...<truncated>...
 ..om?
 .00cfg
 .3z u
 .40t8Ic
-.50f(
-.=@	'
-.=_g(
+.5h_(
 .>PJ;I:qE>
 .?AU?$ArrayWrapper@V?$CUtlVector@UCWeightPreview@@HV?$CUtlMemory@UCWeightPreview@@H@@@@@Detail@Reflection@@
 .?AU?$ArrayWrapper@V?$CUtlVector@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@HV?$CUtlMemory@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@H@@@@@Detail@Reflection@@
@@ -2557,21 +2563,16 @@ $`<`uMM
 .xJ>Hf
 .xdata
 .xdata$x
-/	V_log2f
-/(/	*
+/%jZ#
 /2GG>!B
 /3HcC
-/5 I]
-/5"(5
-/50<7
-/53(5
-/5G2+
-/5Jb(
-/5`9-
-/5p8-
-/5pa#
+/5*'5
+/58;7
+/5;'5
+/5g))
+/5w1+
 /6s^M
-/=ei;
+/=^ 9
 />58d%
 /@$s6
 /A8s"
@@ -2597,7 +2598,7 @@ $`<`uMM
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
 08@HR
-08@J 
+08@Jp
 0;O0|
 0><[cZUg^>
 0A\^]
@@ -2659,7 +2660,6 @@ $`<`uMM
 0iN>/
 0w0c1
 0}0i1
-1	V_logf
 1#IND
 1#INF
 1#QNAN
@@ -2676,7 +2676,7 @@ $`<`uMM
 220323000000Z
 220801000000Z
 230714000000Z
-240704151346Z0/
+240711150311Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -2685,6 +2685,7 @@ $`<`uMM
 2_BONE_IK
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+3	V_modff
 311109235959Z0b1
 3333333
 33333333H+
@@ -2706,7 +2707,6 @@ $`<`uMM
 5FjiT
 5YA1I
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
-6	V_modff
 6*f(_
 6I]Dc
 6OB,n_
@@ -2726,6 +2726,7 @@ $`<`uMM
 8A\_[]I
 8A]A\
 8A]A\_^
+8A]A\_^][
 8A]_][
 8A]_^[
 8A^_^[
@@ -2752,10 +2753,12 @@ $`<`uMM
 8_^][
 8emE3
 8ke?;
+9	V_powd
 9)~P3
 9)~eH
 9+fIH
 90u(H
+95XK2
 98t H
 98~(H
 98~+H
@@ -2845,6 +2848,7 @@ $`<`uMM
 9|$xu
 9}@~&
 9}@~V
+:	V_powf
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 : lexer error %d :
@@ -2895,7 +2899,7 @@ $`<`uMM
 :m_resetCount
 :m_resetCycleValue
 ;.u1L
-;=gXR
+;=Tf1
 ;?0123456789:;<=>?
 ;CX}|H
 ;E,s<H
@@ -2928,7 +2932,7 @@ $`<`uMM
 ;|$\|
 ;|$t|
 ;|$||
-<	V_powd
+<	V_qsort_s
 <	u%H
 <	u)Icn
 <	u2H
@@ -2946,6 +2950,7 @@ $`<`uMM
 </td<*u
 <0:08
 <0u7A
+<3~uW+L
 <>#n2
 <Ct-<D
 <DOWN>
@@ -2978,7 +2983,6 @@ $`<`uMM
 <unknown>
 <utK@:
 <x~fH
-=	V_powf
 =%H5<mN
 ========================================
 ==MQ?
@@ -2999,7 +3003,6 @@ $`<`uMM
 >f;D$4t
 >fA9~
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?456789:;<=
@@ -3144,7 +3147,6 @@ $`<`uMM
 @8s2t
 @8s@t
 @8t$Xul
-@8t80u
 @8w$t
 @8w%u
 @8y*uS@8y+u:H
@@ -3198,7 +3200,7 @@ $`<`uMM
 @A__^
 @HHcB$;B(u
 @HPX&I
-@HPX`hv@
+@HPX`hv
 @HcAp3
 @L9?t	H
 @PHcB(;B,u
@@ -3214,6 +3216,7 @@ $`<`uMM
 @SUATAWH
 @SUAUAVAWH
 @SUAUAVH
+@SUAUH
 @SUAVH
 @SUAWH
 @SUVATAVAWH
@@ -3223,6 +3226,7 @@ $`<`uMM
 @SUVH
 @SUVWATAUAVAWH
 @SUVWATAUAVH
+@SUVWATAUH
 @SUVWATAVAWH
 @SUVWATAWH
 @SUVWATH
@@ -3299,6 +3303,7 @@ $`<`uMM
 @USVWAUAVH
 @USVWAVAWH
 @USVWAVH
+@USVWAWH
 @USVWH
 @USWATAUAVAWH
 @USWATH
@@ -3374,6 +3379,7 @@ $`<`uMM
 @}QeH
 @}VeH
 @}yeH
+A	V_roundf
 A D	A
 A H+H(H
 A H+H(I
@@ -3699,6 +3705,7 @@ A_A]A\_[
 A_A]A\_]
 A_A]A\_^
 A_A]A\_^[
+A_A]A\_^[]
 A_A]A\_^]
 A_A][
 A_A][]
@@ -8434,8 +8441,7 @@ CxH94
 CycleControlClipNode
 C|$pH
 C|$xL
-C|D;Cxu	
-D	V_roundf
+C|;Cxu	
 D W?{W
 D!l$xA
 D$ 	!O3
@@ -8856,6 +8862,7 @@ D8<.u
 D8<>u
 D8L$0u`
 D8[(u
+D8`!t
 D8`)t
 D8`)u#H
 D8a*t5H
@@ -8874,7 +8881,6 @@ D8t$0
 D8t$ht
 D8{8u+H
 D8|$`t
-D9%:T2
 D9&|6
 D9/~%H
 D9/~4fff
@@ -8944,6 +8950,7 @@ D;q }pL9T$P
 D;q }uH
 D;q8|
 D;r }
+D;s(|
 D;sHu
 D;v(|
 D;vXu
@@ -9662,6 +9669,7 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 ExternalNameForInternalType
 ExtraSeqFlags
 Extraneous token
+F	V_sincosf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -9672,7 +9680,6 @@ F(	<(I
 F(!<(
 F0A9E
 F2tVf
-F69g! 
 F8$2u
 F89HXtRA
 F<333?A
@@ -9995,6 +10002,7 @@ ForwardSpeed
 Found existing value when inserting into dict - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound.
 Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 Found invalid proto option data for: 
+Fr: %.2f
 FreeEnvironmentStringsW
 FreeLibrary
 Frequency
@@ -10006,6 +10014,7 @@ Func( %s )
 Function "%s" takes %i parameters, but %i were given
 Future Facing
 Future Velocity
+G	V_sind
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -10039,12 +10048,15 @@ GD$xf
 GDL99u
 GHL9d
 GL$(A
+GL$83
+GL$8A
+GL$8D
+GL$8E3
+GL$8J
+GL$8f
+GL$8fA
 GL$H3
 GL$HA
-GL$HJ
-GL$HL
-GL$Hf
-GL$HfA
 GL$h3
 GPA!4
 GPD	u
@@ -10052,6 +10064,7 @@ GPD	}
 GT$(A
 GT$8D
 GT$8H
+GT$8L
 GT$@A
 GT$HA
 GT$XA
@@ -10193,6 +10206,7 @@ G|$(L
 G|$8B
 G|$HA
 G|$HL
+H	V_sinf
 H	p0H
 H 8YKt
 H 8YKt	
@@ -10201,7 +10215,6 @@ H @8qKuXI
 H D8yK
 H D8yKt
 H Hc@
-H I9M
 H SWH
 H UATAUAVAWH
 H USWH
@@ -10241,10 +10254,14 @@ H0H9)t
 H0HcGh
 H9(tO
 H9+t	H
+H9-%yU
+H9-@yU
+H9-\xU
 H9/t	H
 H92tBA
-H953?>
-H95k*:
+H95R9>
+H95m9>
+H95wJc
 H97u+A
 H98t2
 H9;t	H
@@ -10321,6 +10338,7 @@ H;D$`
 H;D$x
 H;G t-H
 H;H s
+H;H u
 H;L$Ht
 H;T$ 
 H;W||
@@ -10371,7 +10389,6 @@ HHcA H
 HSequence
 HSequence::Schema_VerifyBindingIsRegistered
 H[><y5
-H_/`g
 H_^][
 H`Hc,1H
 H`Lc,
@@ -10564,7 +10581,6 @@ Hc^|A
 Hck H
 Hck(H
 Hck0;k@
-HckxL
 Hcl$ H
 HcodL
 HcphH
@@ -10596,7 +10612,6 @@ HitReactFixedSettings_t::KV3Transfer_DefaultKeys_Impl
 HitReactFixedSettings_t::Schema_VerifyBindingIsRegistered
 HostStateMgr001
 HxH9Jxt
-I	V_sincosf
 I could not work out what I was expecting, like so many of us these days!
 I#I0H
 I#J0H
@@ -11373,7 +11388,7 @@ IsStateEvent()
 IsTagActive
 IsValid()
 IsValid() && flScale >= 0.0f && flScale <= 1.0f
-IsValidBoneIndex( boneIdx )
+IsValidBoneIndex( nBoneIdx )
 IsValidCodePage
 IsValidIndex( index )
 IsValidLocale
@@ -11385,7 +11400,7 @@ IsWriting()
 Iterate
 IterateRandom
 Iw:Hc
-J	V_sind
+J	V_sinhf
 J'6E3
 J<L4,&
 J>@G_
@@ -11409,7 +11424,7 @@ JiggleBoneSettings_t::KV3Transfer_DefaultKeys_Impl
 JiggleBoneSettings_t::Schema_VerifyBindingIsRegistered
 JiggleBoneSimSpace
 JumpCorrectionMethod
-K	V_sinf
+K	V_snprintf
 K HcC$Hc
 K$HcC(;
 K&>.yC
@@ -11524,7 +11539,6 @@ L$(H+
 L$(H3
 L$(Hc
 L$(Mc
-L$(fA
 L$(fD
 L$09JX
 L$0;{
@@ -11550,6 +11564,8 @@ L$0fH
 L$0fI
 L$4+L$8
 L$4+L$H
+L$4H=
+L$4I;
 L$8+)H
 L$8;JX
 L$8A9m0uQI
@@ -11557,7 +11573,6 @@ L$8E3
 L$8H3
 L$8IcT
 L$8L+
-L$8f9qjt
 L$8f;
 L$<;L$P
 L$<E8uq
@@ -11579,9 +11594,7 @@ L$@uU
 L$AE3
 L$C9F
 L$C9G
-L$DH;
 L$DH;T$xt
-L$DH=
 L$DL;
 L$HE3
 L$HE9'
@@ -11641,15 +11654,15 @@ L+A0L
 L+H0H
 L+i0I
 L9#u/H
-L9-)N7
-L9-DN7
-L9-WM7
+L9-yG7
 L92tDA
 L94:H
-L957Hy
-L95>E8
-L95YE8
-L95wD8
+L95*w9
+L959Iy
+L95Ew9
+L95WHy
+L95gv9
+L95~dc
 L9;u	H
 L9?t	H
 L9@ s
@@ -11707,7 +11720,6 @@ L;t$(t|D
 L;{ u
 L;{ u?M
 L;|$X
-L;|$`
 L?UUUUUUU?
 L?n(Zy&
 LABEL_OPTIONAL
@@ -11774,6 +11786,7 @@ Lcq(H
 Lcs E
 LcsPL
 Lcs`D;sp
+LcsxL
 Lct$PA
 Lcv(D;v8u
 Lcw(3
@@ -11843,7 +11856,6 @@ LookPitch
 LookTarget
 LookTarget_WorldSpace
 LoopCount
-M	V_sinhf
 M Ic<
 M#}0I
 M(+E(
@@ -12124,7 +12136,6 @@ Must call SetMetadataEnabled on the root KV3 context to track metadata
 MutableMessage
 MutableRawRepeatedField
 Mw+G$L
-N	V_snprintf
 N 9H 
 N(+V0
 N(Ic^(
@@ -12232,6 +12243,7 @@ Numbers starting with leading zero must be in octal.
 O$M9o
 O0+W8
 O8HcB
+O=Mf1
 O@IcZ
 OF>;^
 OH+WP
@@ -12291,13 +12303,13 @@ Overlay Blend (Masked): %.2f%%
 Overlay Blend: %.2f%%
 OverlayProjectionDirection
 Override Sound
-P08@J 
-P08J0?
+P08@Jp
+P6P$Q
 P>q_Y~
 P@@8|$Pu
 P@HPX`hpx
 P@HcF@
-P@HcF@D
+P@HcG@
 P@IcN
 PARENT
 PATTACH_ABSORIGIN
@@ -12462,6 +12474,7 @@ Protocol Buffer map usage error:
 Protocol Buffer reflection usage error:
 PxL9`
 Pz}b!
+Q	V_sscanf
 Q0I;Q8t
 Q0LcG
 Q5rHg,>
@@ -12717,8 +12730,8 @@ SWAVAWH
 SWAWH
 SameCycleAsSource
 SameTimeAsSource
-Sample (Additive): %s, %.2f%%, Fr: %.2f
-Sample: %s, %.2f%%, Fr: %.2f
+Sample (Additive): %s
+Sample: %s
 SampleCode
 SampleCode::KV3TransferLoad_Impl
 SampleCode::KV3Transfer_DefaultKeys_Impl
@@ -13389,7 +13402,6 @@ SyncChildren
 Synchronize Children
 Synchronized
 Synthetic oneofs must be after all other oneofs
-T	V_sscanf
 T$ D8t$(
 T$ E3
 T$ H;
@@ -13508,8 +13520,9 @@ T$xfD;
 T${9C
 T${9G
 T${A9F
-T%U{?
+T%et?
 T+(I;
+T-,2A
 TILT_TWIST
 TNT::Matrix<float>::initialize
 TNT::Vector<float>::initialize
@@ -13574,6 +13587,7 @@ Time Remaining
 Time before the next animation can start
 Time from the end of the mood when an animation cannot play
 Time from the start of the mood before an animation can start
+Time: %.2f%%
 Timed
 TlsAlloc
 TlsFree
@@ -13634,6 +13648,7 @@ USVAVAWH
 USVAVH
 USVWATAUAVAWH
 USVWATAUAVH
+USVWATAUAWH
 USVWATAUH
 USVWATAVAWH
 USVWATAVH
@@ -13746,6 +13761,7 @@ UtlMemory_FailedAllocation
 UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
 UtlTokenizer_UnqescapeOrUnquoteString
 UwHcN$
+V	V_stricmp_fast
 V0H;V8t
 V6'?C
 V6E>`"(5
@@ -13871,6 +13887,7 @@ V_fabsf( flNewTargetValue - flDampedValue ) <= 180.f
 V_fabsf( vStartDirection.Normalized().Dot( vNormal ) ) < DEG2RAD( 1 )
 V_fabsf( vWsStartDirection.Normalized().Dot( vWsHingeAxis ) ) < DEG2RAD( 1 )
 V_fabsf((vMsJointAxis.LengthSqr()) - (1.0f)) <= (1e-2f)
+V_fmodf
 V_uuid_t
 V_~]	,
 Validates the animation group channel list against the animations on load for every animation
@@ -13921,12 +13938,7 @@ Virtual Parameter
 VisBuilder_001
 Volume
 Vrad3_001
-Vz!`O
-W%-z)
-W-=E)
-W5D+2
-W5S%9
-W5wB;
+W- S"
 W8IcG(M
 W9QHI
 WARNING
@@ -13957,6 +13969,7 @@ Waypoint Direction
 Waypoint Distance
 Waypoint Heading
 Waypoint Position
+WbD"v{
 Wd$pA
 Wednesday
 Weight of the animation, higher numbers get picked more
@@ -13985,13 +13998,11 @@ X SUWATAUH
 X UVWATAUAVH
 X!t5~
 X(Hc@ H
-X-	L<
-X-0L<
-X57& 
-X5A2+
-X5E$ 
-X5k$ 
-X=)u$
+X-O& 
+X-u& 
+X-z6!
+X5R[(
+X5q1+
 XA]A\
 XA^A]A\[
 XA^A]_^][
@@ -14023,26 +14034,23 @@ Xd$ D
 Xt/@A
 Xt7HH
 X|	@A
-Y	V_stricmp_fast
 Y (Green / Left)
-Y%.4>
-Y%4|A
-Y%P@0
-Y%Zi?
+Y%Jh?
 Y(HcA H
-Y-&YF
-Y-(R=
+Y-=Z>
+Y-fXF
+Y-m40
 Y0HcR
-Y5=C3
-Y5Bq0
-Y5E+?
-Y5J2+
-Y5LH)
-Y5MG3
-Y5MU'
-Y5cK-
-Y5kH3
-Y5nF3
+Y5,G)
+Y5-T'
+Y5M<3
+Y5[ED
+Y5\x3
+Y5]@3
+Y5_C)
+Y5z1+
+Y5{A3
+Y5~?3
 Y9"SD
 Y>kX>M
 YD$0A
@@ -14126,6 +14134,7 @@ Zod(^?
 \$ WATAUAVAWH
 \$ WATAVH
 \$ WH
+\$ fI
 \$$9Y
 \$$H9
 \$$H9Y
@@ -14209,13 +14218,10 @@ Zod(^?
 \$p9]
 \$pH;
 \$pw;
-\%f|A
-\-DL<
-\5&8<
-\5O& 
-\5iH)
+\5IG)
+\5S_)
+\5|C)
 \9\D;
-\;=PVR
 \A fA
 \D	 fA
 \D$@A
@@ -14234,13 +14240,14 @@ Zod(^?
 ])6M>&
 ]0HcE(H
 ]0tOH
-]5.b$
-]5^v'
+]5=}0
+]5Ao'
 ]>)2X
 ]@tKH
 ]J<0"0i3
 ]`H9u
 ]`HcEXL
+^	V_strtok
 ^ ;^$t
 ^ HcF
 ^ Lc3D;s
@@ -14291,7 +14298,6 @@ _hypot
 _logb
 _nextafter
 _oD>Kg
-_x;_(|
 _xH;]xt*H
 _xHc[
 `	P!2
@@ -14300,11 +14306,11 @@ _xHc[
 `.rdata
 `A]A\^[]H
 `A]A\_^]
+`A]][
 `A]_[
 `A]_]
 `A^A\_^]
 `A^A]A\_[
-`A^A][
 `A^][
 `A^^]
 `A^_^
@@ -14320,6 +14326,7 @@ _xHc[
 `A_A^_^[
 `A_A^_^]
 `A_^]
+`A__^[]
 `A__^][
 `Hc9L
 `HcA@L
@@ -14359,7 +14366,6 @@ _xHc[
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_strtok
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a7hIw
 abcdefghijklmnopqrstuvwxyz
@@ -14509,6 +14515,7 @@ break
 broken pipe
 bulletimpact
 bytes
+c	V_tanf
 c HcC8
 c [1>H'
 c(>\,
@@ -14958,6 +14965,7 @@ double
 double_value
 duration
 duration >= 0.f
+e	V_tanhf
 e(A_A^A]A\_^[]
 e+000
 e0A_A^A]A\]
@@ -15002,7 +15010,6 @@ expression
 extend .$0 {
 extendee
 extension_range
-f	V_tanf
 f4MaxDist
 f4MinDist
 f4RelaxationFactor
@@ -15047,6 +15054,7 @@ f;\$L
 f;\$Lr
 f;\$T
 f;\$\
+f@80g
 fA9	t	I
 fA9,Au
 fA99}
@@ -15056,7 +15064,7 @@ fA9ERt
 fA9T$
 fA9\$
 fA9o0
-fA9t$
+fA9ujt
 fA;LV
 fB9,Nu
 fB94Ou
@@ -15099,7 +15107,6 @@ fE9fR
 fE;B`
 fE;Bb
 fE;U*
-fE;l$
 fG9$Ou
 fG;TF
 fJBGo
@@ -15241,7 +15248,6 @@ group
 group.m_motionGraphConfigs.IsValidIndex( nIndex.m_nConfig )
 group.m_motionGraphConfigs.IsValidIndex( selection.m_nConfigIndex.GetConfig() )
 group.m_motionGraphs.IsValidIndex( nIndex.m_nMotion )
-h	V_tanhf
 h A9}h~ED
 h(A;vh|
 h>1my
@@ -15290,7 +15296,6 @@ idempotency_level
 identifier removed
 identifier_value
 idx < m_tags.Count() && m_tags[ idx ]->GetName() == tagName
-idx >= 0 && idx < m_parentIndices.Count()
 ikLockParentSpaceTransforms.Count() >= nBoneCount
 ik_constraints_enabled
 ik_debug_all_chains_unique_color_per_chain
@@ -15459,6 +15464,7 @@ l$@Ic,$H
 l$@L+
 l$@L;d$`
 l$@M;
+l$@f9
 l$@fA
 l$@fD
 l$@t	3
@@ -15520,6 +15526,7 @@ l$xA;
 l$xE3
 l$xHi
 l$xM+
+l$xfD9g
 l$xu!M
 l2|X/gGe
 l3@fD
@@ -16608,6 +16615,7 @@ m_hParamIn
 m_hParamOut
 m_hParameter
 m_hParameterCameraClearanceDistance
+m_hParameterCameraOnly
 m_hParameterOrientation
 m_hParameterPelvisOffset
 m_hParameterPosition
@@ -17581,6 +17589,7 @@ nFootMotionCount == footMotionList.Count()
 nFrameCount > 0 && percentageThrough >= 0.0f
 nGroupIndex <= UINT16_MAX
 nGrowSize >= 0
+nIdx >= 0 && nIdx < m_parentIndices.Count()
 nIndex != -1
 nIndex != 0
 nIndex < 0 || m_autoResetParams[ nIndex ].first == hParam
@@ -17713,23 +17722,24 @@ number
 numframes
 o H9o
 o L9s t
-o%M*Y
-o%^OY
-o%eYY
-o-.*Y
-o-?OY
-o-FYY
-o-N+Y
-o-[ZY
+o%]*Y
+o%nOY
+o%uYY
+o->*Y
+o-OOY
+o-VYY
+o-^+Y
+o-kZY
 o0Lcg(I
-o5 OY
-o5$JY
-o5'YY
-o5'ZY
-o=	YY
-o=QHY
-o=ZEY
-o=~MY
+o5'HY
+o50OY
+o54JY
+o57YY
+o57ZY
+o=!0Y
+o="RY
+o=aHY
+o=jEY
 o@u H
 oI>O7
 objc_class_prefix
@@ -17773,7 +17783,6 @@ p WAVAWH
 p*W4H
 p08@H^
 p0R^G'
-p0j0p
 p7M}f
 p;Y>u
 p@HPX`h
@@ -18277,7 +18286,6 @@ t$HMc4$L
 t$HMk
 t$HcI
 t$HcL
-t$Hf9
 t$HfD
 t$Hff
 t$Ht	H
@@ -18314,6 +18322,7 @@ t$XH9>
 t$XH9t$8t
 t$XH;
 t$XHc
+t$XHcs|
 t$XHk
 t$XI+
 t$XI9
@@ -18478,6 +18487,7 @@ timeStep >= 0.f
 timed out
 tjIc>
 tk@8:tf3
+tkMc<$Lc3A
 tmA:E
 tmFrame2
 tmpWeights[nChannel][nIndex] == -1.0f
@@ -18485,7 +18495,6 @@ tnLc6Lc?A
 tnMc>Lc&A
 tnMc>Lc'A
 to constrain
-toMc>Hc7A
 toTime >= 0.0f && toTime <= 1.0f
 token[0] == '\0' || !V_isalpha_str_fast( token )
 token[0] == '\0' || !V_isdigit_str( token )
@@ -18512,7 +18521,6 @@ turn_rate
 tvLc6Lc?A
 twHc3;s
 twIcF
-twMc<$Lc3A
 txHc3;s
 txLc6L
 txLc>Lc#A
@@ -18858,6 +18866,8 @@ zero dir
 |$0t	H
 |$0tjL
 |$0uE
+|$2fA;
+|$2fE
 |$8A;4$
 |$8E3
 |$8H9Cxt;A
@@ -18996,7 +19006,6 @@ zero dir
 }&fff
 }'HcC
 }'fff
-}(;=)^i
 }(H;{(t-H
 }(IcE H
 });C$

@@ -10,10 +10,10 @@
 	JS_STRING
 	TYPE_BOOL
 	TYPE_ENUM
-	V_fmodf
 	V_isbreakablewspace32
 	V_isnand
 	V_isvalidhex
+	V_iswcntrl
 	V_vsnprintf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
@@ -39,6 +39,7 @@
 	type_name
 	uVeH
 	w|Hc
+ 	V_iswdigit
  	uIH
                           
     Actual    : 
@@ -65,15 +66,16 @@
  %s %s
  'L>[
  (08@HPX`hpx
- (08@HPX`j
- (08@HPXb
- (08@HPZ
- (08@HR
- (08@J
- (0X`hpz
+ (08@HPX`jp"
+ (08@HPXbp
+ (08@HPZp"
+ (08@HRp
+ (08@Jp
+ (08@Jp"
+ (0:p"
+ (0X`hpzp
  ,)(;
  ... }
- .P	"
  /&gt;
  0"r$4&
  ;{}:
@@ -198,6 +200,7 @@
 !?IsBoolean@Value@v8@@QEBA_NXZ
 !BDialogVariablesInString( pszString )
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
+!Oi "f
 !bAssert || pPanel == nullptr || pResult != nullptr
 !bHasEverEnumerated
 !bParsedSecond
@@ -220,7 +223,6 @@
 !pAfter || nDepth > 0
 !pChild || pChild->GetAttribute( k_symItemIndexAttribute, -1 ) == nItemIndex
 !pCurrent->GetParent()
-"	V_iswcntrl
 " because it is missing required fields: 
 " conflicts with field "
 " conflicts with the existing symbol "
@@ -287,7 +289,7 @@
 "MutableRawRepeatedField"
 "e" must be followed by exponent.
 "e?<<<<<<l?
-#	V_iswdigit
+#	V_iswspace
 #%02X%02X%02X%02X
 #AsyncPanel_Failure
 #AsyncPanel_Loading
@@ -366,6 +368,7 @@ $`<`uEM
 $`<`uFM
 $`<`uIM
 $`<`uMM
+$k)<Z
 $u"8K
 %.2f|%.2f|%.2f|%.2f
 %?IsNumber@Value@v8@@QEBA_NXZ
@@ -417,7 +420,6 @@ $u"8K
 %s_Notch_%d
 %s_Right
 %sdeg
-&	V_iswspace
 &?PPPPPPP?
 &lt;Needs a description&gt;
 &nbsp
@@ -667,8 +669,7 @@ $u"8K
 )t$ I
 )t$ J
 )t$ f
-)t$ f95sL
-)t$ |.
+)t$ f95cN
 )t$0H
 )t$0H;
 )t$0I
@@ -1227,7 +1228,9 @@ $u"8K
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
-08@HR
+08@HRp"
+08@Jp
+08Bp"
 0;O@~
 0><[cZUg^>
 0A\_^][
@@ -1289,7 +1292,7 @@ $u"8K
 220323000000Z
 220801000000Z
 230714000000Z
-240704151424Z0/
+240711150542Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1307,9 +1310,10 @@ $u"8K
 3H9uot
 3mq+<
 4$u.A
+4,hGh
 456789:;<=
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
-4u2fD9=Nj
+4u2fD9=
 5FjiT
 5butt
 5fD9%
@@ -1322,6 +1326,7 @@ $u"8K
 7?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@1@Z
 7?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 7?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
+7FM8Z
 7H9uHt
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 8 tCA
@@ -1332,6 +1337,7 @@ $u"8K
 80tWD
 8?u$H
 8@HP:
+8@Jp"
 8@t?E3
 8@tTH
 8@tvD
@@ -1452,7 +1458,7 @@ $u"8K
 9GLtdH
 9K,tIH
 9K,tVH
-9M4t;L9=#1
+9M4t;L9=c1
 9M4t~H
 9M<t4H
 9M<tO;
@@ -1486,6 +1492,7 @@ $u"8K
 9{t~:3
 9{|~<3
 9|$PtHHc
+:	V_powf
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :$t>H
@@ -1496,6 +1503,7 @@ $u"8K
 :Tu)f
 :context->%p->%s:
 :context->null->UIEngine Global:
+;	V_qsort
 ;	t/H
 ;"u	@
 ;)u1D
@@ -1520,12 +1528,12 @@ $u"8K
 ;\$Pu
 ;\$p|
 ;]tHL
-;f95P
 ;q }kH
 ;t$ }yH
 ;t$\H
 ;{,}"H
 ;{ht"
+<	V_qsort_s
 <	u#L
 <	w	@
 <	wHH
@@ -1562,6 +1570,7 @@ $u"8K
 <`tHH
 <a href="\1\3">\1\3</a>
 <ellipsis>
+<f95i
 <htl<jt\<lt4<tt$<wt
 <invalid>
 <no failure reason set>
@@ -1579,11 +1588,9 @@ $u"8K
 <{uVA
 <}t$<-t
 <}tSH
-=	V_powf
 =ERCPt
 =imb;D
 =rIQU
->	V_qsort
 >	t.H
 >-ufH
 >0<0:
@@ -1595,7 +1602,6 @@ $u"8K
 >f;D$4t
 >fD9%
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?"u	@
 ?"u	E
@@ -1746,6 +1752,7 @@ $u"8K
 @.data
 @.reloc
 @08@HPX`hpx
+@08N$
 @0HcB
 @8+t?
 @84)u
@@ -1925,6 +1932,7 @@ $u"8K
 @tfH;
 A	BlA;rh~
 A	BxD
+A	V_roundf
 A H+H(H
 A H+H(I
 A H+X(
@@ -1962,8 +1970,8 @@ A9E,t<H
 A9E0u
 A9E4t4H
 A9E4t7H
-A9E4t8H9-Q
-A9E4t;H9-!
+A9E4t8H9-
+A9E4t;H9-a
 A9E8u
 A9E<t4H
 A9E<tYH
@@ -2035,7 +2043,7 @@ A??ToLocalEmpty@api_internal@v8@@YAXXZ
 A?Value@External@v8@@QEBAPEAXXZ
 A?Value@Number@v8@@QEBANXZ
 A@L;B
-AA:@d
+AA: d
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -2154,7 +2162,6 @@ AddStyleToEachChild
 AddTimedStyle
 AddUInt32
 AddUInt64
-AdvanceAnimatedImageStripFrame
 AlignedByteArray not properly aligned
 AllowOversized
 Already saw decimal point or exponent; can't have another one.
@@ -2874,7 +2881,6 @@ Cypriot
 Cyrillic
 C|$pH
 C|$xL
-D	V_roundf
 D W?{W
 D!l$xA
 D$ 	I
@@ -3045,14 +3051,11 @@ D0?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
 D8 uhL
 D8(tLH
 D8)u#L
-D8-G"
 D8.uBH
 D80t@
 D81uUL9r
 D83t?
 D84:u
-D85 U
-D85(U
 D88tS3
 D8L$0u`
 D8[(u
@@ -3396,6 +3399,7 @@ Extensions in proto3 are only allowed for defining options.
 Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
 E|$XA
+F	V_sincosf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -3542,7 +3546,7 @@ G$9C$u7H
 G(9C(u 
 G(9C(u2
 G(9C(uC
-G(f95
+G(f95|
 G,9C,u
 G,9C,u]
 G09C0u
@@ -3745,7 +3749,8 @@ H92tBA
 H93t	H
 H97u+A
 H98tB
-H9=5O
+H9=%Q
+H9=Q<)
 H9A s
 H9A u)M
 H9D$P
@@ -4016,7 +4021,6 @@ HorizontalScrollThumb
 HorizontalSplitter
 HostStateMgr001
 HtmlUserAgent
-I	V_sincosf
 I#I0H
 I#J0H
 I#M0H
@@ -4083,6 +4087,7 @@ IcWP;
 IdempotencyLevel
 If 'loop = true', how many times to loop before stopping. -1 == infinite
 If >= 0, drags longer than this distance will suppress mouse click events (e.g. onactivate of embedded panels)
+If set, how many frames in the sprite sheet. Default assumes every space in image is filled.
 If this is > 0, don't let the content panel translate in a way that would let you see through the frame
 If this is > 0, the min scale is set to account for the higher value, where the smaller dimension is maxed out first
 IfHasClassEvent
@@ -4200,6 +4205,7 @@ JSType
 January
 Javanese
 Just ignore the calculations, you can zoom to this amount (will validate that this is <= maxscale)
+K	V_snprintf
 K HcC$Hc
 K$HcC(;
 K&>.yC
@@ -4621,7 +4627,6 @@ Multiple extension registrations for type "
 MutableMessage
 MutableRawRepeatedField
 Myanmar
-N	V_snprintf
 N(+V0
 N0+V8
 N0fff
@@ -4713,8 +4718,8 @@ Osmanya
 OverMaxPips
 P(9G<H
 P(A9F<I
-P08@J
-P08J0
+P08@Jp
+P08N$
 P09G@
 P0A9F@A
 P8D:8
@@ -4845,6 +4850,7 @@ Protocol Buffer map usage error:
 Protocol Buffer reflection usage error:
 PxL9`
 Pz}b!
+Q	V_sscanf
 Q0I;Q8t
 Q5rHg,>
 Q@9QL}
@@ -5290,7 +5296,6 @@ Symbol name "
 Synthetic oneofs must be after all other oneofs
 Syriac
 SystemInputLanguageChanged
-T	V_sscanf
 T$ E3
 T$ H+
 T$ H;
@@ -5490,7 +5495,6 @@ UATAUAVAWH
 UATAVH
 UAUAVH
 UAVAWH
-UD8%n
 UHH;UPt
 UIEngine()
 UIEngine()->GetCurrentFrameTime() >= m_flLastMotion - 1.0f
@@ -5582,6 +5586,7 @@ UsingCompositionLayer
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
+V	V_stricmp_fast
 V0H;V8t
 V6E>`"(5
 V8ParamToPanoramaType expected IUIPanel object to convert, but got some other invalid object
@@ -5662,6 +5667,7 @@ V_atofloat32
 V_atoi
 V_atoi64
 V_atoui64
+V_fmodf
 V_strcmp( pRow->GetID(), "PropRow" ) == 0
 V_stristr_fast( m_strSource.String(), "://" ) != nullptr
 V_~]	,
@@ -5731,6 +5737,7 @@ WorldRendererMgr001
 Wrapper
 WriteConsoleW
 WriteFile
+X	V_strlower_fast
 X @8u
 X D8e
 X UVWATAUAVAWH
@@ -5749,6 +5756,7 @@ XL$LH
 XL6$I
 XT$P@8
 X_^[]
+X`hrp"
 XfD;\
 XfD;|
 Xl$hH
@@ -5757,29 +5765,29 @@ Xt$hH
 Xt$xA;
 X|$|A;
 X}tA;
-Y	V_stricmp_fast
 Y0HcR
-Y5Y:	
+Y5Y<	
 Y9"SD
+Y=:,	
 Y>kX>M
 YD$@f
 Y_txt
 You can't interpolate a layout-position
+Z7anN)
 ZP~IIc
 Z\>z8
 Zod(^?
-[	V_strlower_fast
 [%s] 
 [*ncd>0
 [K]taM?
 [`fff
 [aOni*{
-[b5W=
-[f95j
+[f95:
 [lazy = true] can only be specified for submessage fields.
 [object@%p]
 [packed = true] can only be specified for repeated primitive fields.
 [thunk]:
+\	V_strtod
 \ at end of pattern
 \$ @8t$(
 \$ AVH
@@ -5874,6 +5882,7 @@ Zod(^?
 \$pI+
 \$|;qX
 \$|E3
+\(y}G
 \??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 \C not allowed in lookbehind assertion
 \K4v-A
@@ -5929,7 +5938,6 @@ Zod(^?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^fD;]
 ^u+fff
-_	V_strtod
 _ ;_$t
 _(H;u0t!H
 _-?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
@@ -5964,6 +5972,7 @@ _hypot
 _logb
 _nextafter
 _oD>Kg
+`	V_strupper_fast
 ` UAVAWH
 `+!]?
 `.rdata
@@ -6206,7 +6215,7 @@ buffer-async
 buffer-sync
 burlywood
 bytes
-c	V_strupper_fast
+c	V_tanf
 c HcC8
 c [1>H'
 c(>\,
@@ -6439,13 +6448,14 @@ extendee
 extension_range
 extern "C" 
 extrazoomout
-f	V_tanf
 f9)u4H9j
 f9)u:H
 f9,Ju
 f9,~u
-f959d
-f95Su
+f9-V>
+f9-y{
+f95	h
+f95)f
 f9<Ju
 f9Exu#H
 f9Q(u
@@ -6480,30 +6490,28 @@ fD9 t
 fD9!H
 fD9!u
 fD9$Hu
-fD9% 
-fD9%(w
-fD9%;
-fD9%G
-fD9%T
-fD9%ng
-fD9%t
-fD9%{
+fD9%$
+fD9%D
+fD9%K
+fD9%^i
+fD9%q
 fD9'u
 fD9,Au
 fD9,pu
-fD9-P
+fD9- 
+fD9-?
+fD9-p
 fD91uTL9r
 fD94Au
 fD94H}aD
 fD94Q}
 fD94iu
 fD95-
-fD95=
-fD95x
+fD95h
 fD98@
 fD98u
 fD9;u
-fD9=C`
+fD9=3b
 fD9t$b
 fE9,Fu
 fE98t'
@@ -6581,6 +6589,7 @@ font-weight: thin;</pre>
 forestgreen
 format.m_iEndChar >= format.m_iStartChar || format.m_iEndChar == -1
 forwards
+framecount
 frameheight
 frametime
 framewidth
@@ -6724,6 +6733,7 @@ itemstoscroll
 itemwidth
 iu+-,
 ivory
+j 6mv
 j>>A?1
 j?V()
 j?{$*
@@ -7121,9 +7131,8 @@ o|$0f
 p WATAUAVAWH
 p WAVAWH
 p*W4H
-p08@H^
+p08@H^$
 p0R^G'
-p9T>y
 p;Y>u
 p@HPX`h
 pA;>|
@@ -7764,7 +7773,7 @@ t	D8't
 t	D9&t
 t	Hcp
 t	f95
-t	f95U
+t	f95_u
 t D8h
 t D9A
 t H;}
@@ -7892,7 +7901,7 @@ t*HcA
 t*HcC
 t+D88t&H
 t+H+}
-t,f95
+t,f95\
 t-Lck
 t.fA;
 t.fff
@@ -7901,22 +7910,22 @@ t1<.up
 t4I92u/M
 t5A9>t
 t6H95
-t6H957!
-t6H95Y 
+t6H95#!
+t6H95w!
 t6f95
 t7HcP
 t7L9%
 t8IcD$
-t8f959L
+t8f95)N
 t9D8 t4L
-t:L9%T
+t:L9%
 t;<,uKH
 t;HcB
 t;LcF
 t<HcE
 t=f95
 t?HcS
-t@f9=|*
+t@f9=
 tEHcR
 tIHcA
 tIHcC
@@ -7934,12 +7943,11 @@ tUvS@2
 tV@8/tQ@8
 tWH9t$Ht
 tXH99uSH
-t\>Zl
 t]fff
 t^HcC
 t_Ic6
 t_L9>t
-t`f95
+t`f950
 taHcC
 tabid
 tabindex
@@ -8077,10 +8085,10 @@ u,!T$(H!T$
 u-H;A
 u.H;A
 u.H;P
-u/f9-$
+u/f9-
 u1!D$0H
 u1fff
-u2fD9%?u
+u2fD9%/w
 u3HcH<H
 u4D9v
 u4I9}(
@@ -8091,7 +8099,7 @@ u:B8D7
 u;8^Eu6H
 u<g~l<it[<ntP<ot,<pt
 u>D8s0u8
-u?8Chu:f9-T
+u?8Chu:f9-$
 uA8Ghu<f95
 uED8r(t
 uTM9<$tN
@@ -8099,7 +8107,7 @@ uWH9k
 u[HcC ;G uR
 u^8D$ tX
 u`D8s0tZH
-ucf9-X
+ucf9-(
 ui-scale
 ui-scale-x
 ui-scale-y

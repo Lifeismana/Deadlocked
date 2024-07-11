@@ -17,8 +17,6 @@
 	6p7MOf
 	D$0H
 	D;otD
-	V_fmodd
-	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_isnand
@@ -76,6 +74,7 @@
  : unexpected input...
  <-- Arg '%s'
  <-- Retval '%s'
+ @	P 1
  A\^]
  A\_[
  A\_^
@@ -162,7 +161,6 @@
 !4G(H
 !4G(L
 !4G(M
-!6U(3%
 !>6'Y
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
 !IsInitializingParticleCollection()
@@ -188,6 +186,7 @@
 !m_bEnableFadingAndClamping
 !m_bEnableNamedValues
 !m_bEnableProjectedDepthControls
+!m_bFog
 !m_bInit
 !m_bIsArray
 !m_bIsLocked
@@ -236,6 +235,7 @@
 #HcC 
 #bML"
 $>!@v>
+$A;\$
 $AMBIENTSCALE
 $COLORWARPINTENSITY
 $D90|
@@ -332,6 +332,7 @@ $x?"TA?
 'p7M}f
 (	u#L9|
 ( 1.0f - tr.m_flFraction ) >= 0.0f
+( FIRST_TEXTURE_DESCRIPTOR + descriptorHashValue.nDescriptorSetIdx ) < m_globalDescriptorBindings.Count()
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( fakeEnt.m_nHandle.WeakHandle() == nHandle )
@@ -365,49 +366,60 @@ $x?"TA?
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
-(% mX
-(%!WX
-(%.MF
-(%:d;
-(%F:/
-(%Jh;
+(%* 8
+(%0b;
+(%:!,
+(%E%X
+(%IkT
 (%d,%d)
-(%l~F
-(%o_G
-(%s`G
-(%z #
+(%e\X
+(%ja;
+(%rrX
+(%v7/
+(%ze;
+(%|D]
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(- WQ
-(-18A
-(-6MF
-(-Am'
-(-N?/
-(-O5'
-(-bDX
-(-xd&
-(5&aG
-(5+D&
-(5+p'
-(505U
-(528'
-(53IR
-(5^$V
-(5c5(
-(5cT'
-(5eHR
-(5f:]
-(5yNU
-(5z/]
-(=#X&
-(=-ZW
-(=FXS
-(=_YS
-(=`	"
+(-"*?
+(-"GX
+(-4]&
+(-BHD
+(-M6U
+(-OJ$
+(-PTQ
+(-Q8A
+(-Qh'
+(-Qr&
+(-_/X
+(-_0'
+(-~</
+(5*WG
+(5,uA
+(5.0(
+(5.>&
+(5.O'
+(55YG
+(58ER
+(5;J&
+(5;k'
+(5B3'
+(5F:]
+(5V^G
+(5Z/]
+(5cFR
+(5nj&
+(5s0(
+(5sO'
+(=!:?
+(=(ZG
+(=/PX
+(=>qK
+(=@}X
+(=DQ;
+(=DgX
+(=GmR
 (=a=A
-(=fG(
-(=oMX
-(=qY&
+(=vUS
 (A^A\_[
 (A^A]A\_^[
 (A^A]_^
@@ -476,6 +488,7 @@ $x?"TA?
 (L$pA
 (L$pD
 (L$pE
+(L$pHk
 (L$pfD
 (Lc)H
 (M Ic
@@ -670,6 +683,7 @@ $x?"TA?
 (|$pI
 (|$pL
 (|$pr$H
+)	V_log10f
 )<$E3
 )<$fD
 )>6{1n
@@ -717,7 +731,6 @@ $x?"TA?
 )D$t@
 )D$x@
 )Epfff
-)ID1W
 )L$ A
 )L$ D
 )L$ E
@@ -916,6 +929,7 @@ $x?"TA?
 )|$pL
 )|B?d!
 )}@D8
+*	V_log2_uint
 *;Eot	;Ew
 *<alA?
 *StO9>T
@@ -944,7 +958,6 @@ $x?"TA?
 +kt+Kt
 +o'q)}
 +|$PH
-,	V_log10f
 , at <EOF>
 , at offset %d
 , near %s
@@ -969,7 +982,6 @@ $x?"TA?
 ,t$XH
 ,|$hL
 ,}@Hc
--	V_log2_uint
 ----------------------------
 -1 for all asleep, 1 for all awake
 -BH>t
@@ -985,13 +997,14 @@ $x?"TA?
 -unknown source-
 -unknown source-(
 -vulkan_disable_particle_descriptor_set
-.%RL)
+.	V_logf
 ..om?
 .00cfg
 .1 .95
 .46zNuLB
 .4>zQuOB
-.=\pO
+.5$l/
+.=`pO
 .>PJ;I:qE>
 .>l	y<\
 .?AUConcurrentQueueProducerTypelessBase@details@moodycamel@@
@@ -1016,7 +1029,7 @@ $x?"TA?
 .?AV?$CParallelLambdaJob@V<lambda_1>@?1??FilterInX@CSOAContainer@@QEAAXHVIntAABB_t@@HPEBM_N@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@@@YAXHHPEBD$$QEAV1?1??GenerateDistanceFieldFromTrianglesWithVoting@CVoxelArray@@IEAAXPEBV?$Vec3D@M@@HPEBHHMH@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??InitDependencyCounters@?$CSweepBlockProcessor@$00@@IEAAXXZ@@@YAXHHPEBD$$QEAV1?1??InitDependencyCounters@?$CSweepBlockProcessor@$00@@IEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
-.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??PostSimulate@C_OP_RenderModels@@UEBAXPEAVCParticleCollection@@PEAX@Z@@@YAXHHPEBD$$QEAV1?1??PostSimulate@C_OP_RenderModels@@UEBAXPEAVCParticleCollection@@PEAX@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
+.?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??PostSimulate@C_OP_RenderModels@@UEBAXPEAVCParticleCollection@@PEAX_N@Z@@@YAXHHPEBD$$QEAV1?1??PostSimulate@C_OP_RenderModels@@UEBAXPEAVCParticleCollection@@PEAX_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?1??Run@?$CSweepBlockProcessor@$00@@QEAAXXZ@@@YAXHHPEBD$$QEAV1?1??Run@?$CSweepBlockProcessor@$00@@QEAAXXZ@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@@@YAXHHPEBD$$QEAV1?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_1>@?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV1?4??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
 .?AV?$CParallelLambdaJob@V<lambda_1>@?M@???$ParallelFor@$00V<lambda_1>@?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@@@YAXHHPEBD$$QEAV1?8???$IterateRows@V<lambda_1>@?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@@CSOAContainer@@QEAAXV1?1???$TransformRGB@V<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@FloatBitMap_t@@QEAAX$$QEAV<lambda_2>@?O@??GenerateDistanceFieldFromTriangles@CVoxelArray@@QEAAXPEBV?$Vec3D@M@@HPEBHHMHH@Z@@Z@_N@Z@HHW4JobPriority_t@@@Z@@CParallelProcessLauncher@@
@@ -1997,6 +2010,9 @@ $x?"TA?
 .D$@z$u"
 .D$Dz
 .D$Hz
+.D$`E
+.D$dz
+.D$hz
 .D$tz
 .D$xz
 .FPu	
@@ -2110,7 +2126,6 @@ $x?"TA?
 0tHA+
 0w0c1
 0}0i1
-1	V_logf
 1 1000
 1#IND
 1#QNAN
@@ -2127,7 +2142,7 @@ $x?"TA?
 220323000000Z
 220801000000Z
 230714000000Z
-240704151338Z0/
+240711150238Z0/
 241009235959Z0a1
 2D Orient
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -2218,10 +2233,11 @@ $x?"TA?
 9	tYH
 9)~P3
 9-		H
+9-#X@
 92~;L
-95Zv`
 98t H
 99~CE
+9=O&\
 9>powf
 9>~&f
 9>~BH
@@ -2249,6 +2265,7 @@ $x?"TA?
 9r0~8L
 9rH~8L
 9r`~8L
+9rt~>
 9rx~>L
 9t$(u
 9t$8u
@@ -2257,7 +2274,6 @@ $x?"TA?
 9t$Xu
 9t$hu
 9w |	D
-9zt~=
 9{(~)L
 9{@~)L
 9{X~,L
@@ -2275,6 +2291,7 @@ $x?"TA?
 9~(~}D
 9~0~@H
 9~@~*H
+:	V_powf
 : lexer error %d :
 :!E@0
 :!MP0
@@ -2287,13 +2304,13 @@ $x?"TA?
 :Exu2Ic
 :H9w u
 :YA1I
-:mvO!
 ;	t/H
 ;.|@H
 ;/i$?t$
 ;1#INF
 ;3|8H
 ;;|8H
+;=)+#
 ;?0123456789:;<=>?
 ;D$`u
 ;F0u!H
@@ -2322,6 +2339,7 @@ $x?"TA?
 ;uHVL
 ;|$T|
 ;|$`u 
+<	V_qsort_s
 <	u2H
 <	u8H
 <	u\L
@@ -2372,7 +2390,6 @@ $x?"TA?
 <unknown>
 <utK@:
 =	8t?
-=	V_powf
 = $s?(,
 =!@f>
 =%@u?
@@ -2387,7 +2404,6 @@ $x?"TA?
 =I.w? F
 =SHX?
 =Z.K>
-=]oGG
 =d]T?
 =ffn?
 =h"L?
@@ -2396,6 +2412,7 @@ $x?"TA?
 =rIQU
 =uvz?
 =v?ke
+>	V_remainderf
 >	t.H
 >!@6>
 >!@F>
@@ -2423,7 +2440,6 @@ $x?"TA?
 >uYL>
 >zp'?
 >}"W?
-?	V_qsort_s
 ?!5WOo
 ?#\$ 
 ?+>^m
@@ -2574,7 +2590,6 @@ $x?"TA?
 @.data
 @.reloc
 @8,8u
-@8-7u)
 @84)u
 @84;u
 @8<3u
@@ -2589,6 +2604,7 @@ $x?"TA?
 @8z$u
 @8z%u
 @8{(u
+@8|$Puo9|$T
 @8}8t
 @>%>b
 @?*BL?
@@ -2759,7 +2775,7 @@ $x?"TA?
 @t/H9w t)H
 @t/H9w8t)H
 @x3Fx%
-A	V_remainderf
+A	V_roundf
 A minimum on particle simulation time, particle simulation happening more frequently than this will lerp.
 A testing-only domain that doesn't correspond to any in-engine use case.
 A testing-only domain that draws on a 2D canvas with a LOGO-like 'turtle' cursor.
@@ -2776,7 +2792,7 @@ A8y-tF
 A8}(u
 A9,A$
 A94$t
-A99~<H
+A99~9H
 A9<Fu
 A9Vt~+
 A9^Ht
@@ -2791,7 +2807,7 @@ A;Exsff
 A;M t
 A;M8v#A
 A;\$x} 
-A;^t|
+A;]t|
 A;} |
 A>l$/
 A>pP&
@@ -2853,7 +2869,6 @@ A^A\_][
 A^A\_^[]
 A^A\_^]
 A^A]A\
-A^A]A\_[]
 A^A]A\_]
 A^A]A\_^[]
 A^A]A\_^][
@@ -3821,6 +3836,7 @@ CParticleSystemMgr::InitAttributeTable has an out-of-date attribute list! (eleme
 CParticleSystemMgr::InitParticleDescriptorSetLayout
 CParticleSystemMgr::ReleaseProceduralMaterial
 CParticleSystemMgr::SetLastSimulationDuration
+CParticleSystemMgr::UpdateGlobalParticleDescriptorSetContents
 CParticleTransformInput
 CParticleTransformInput::GetCPNumber
 CParticleTransformInput::GetCPRangeMax
@@ -6510,7 +6526,6 @@ Custom Shader
 Cycle Scalar
 Cycle time
 C|9G|
-D	V_roundf
 D W?{W
 D!l$xA
 D#C|D
@@ -6664,6 +6679,7 @@ D$0H%=+H
 D$0H&]oL
 D$0H9
 D$0H9Gp
+D$0Hc
 D$0HcH
 D$0Ic
 D$0J8b
@@ -6774,6 +6790,7 @@ D$P;L
 D$P;~x}
 D$P@8
 D$P@G
+D$PA;
 D$PA;Et
 D$PD#
 D$PD8hZ
@@ -6819,11 +6836,9 @@ D$`9t$l
 D$`;_x
 D$`;_x|
 D$`A8
-D$`A;
 D$`A;Vt|
 D$`D8!t
 D$`D9E
-D$`D;
 D$`D;E
 D$`E3
 D$`E9
@@ -6866,7 +6881,6 @@ D$l9D
 D$lHc
 D$p9t$|
 D$p;}
-D$p@8
 D$pA;
 D$pD8!t
 D$pD9E
@@ -6886,6 +6900,7 @@ D$ptKF
 D$t)D$d@
 D$tHc
 D$x+D$h
+D$x@8
 D$xD9jt
 D$xD;ot
 D$xD;u
@@ -6899,7 +6914,6 @@ D$xs[
 D$xz\uZ
 D$|)D$l@
 D$|Hc
-D) fB
 D)e(u
 D)u(u
 D)v(u
@@ -6907,30 +6921,26 @@ D)~(u
 D+A@H
 D+|$0fD;g
 D+|$p
+D1 fF
 D5(F9d5
 D8$3u
-D8%y$.
 D8(tLH
 D8)u#L
 D8,:u
 D81uUL9r
-D85	,.
-D851+.
-D85LI$
-D85TI$
-D85U..
+D85!*.
+D85|B$
 D86u|H
 D88tS3
 D8<3u
 D8<8u
 D8<:u
 D8<>u
-D8= b@
-D8=)a,
-D8=6=>
-D8=jn@
-D8=wa,
-D8=z<>
+D8=!`,
+D8=4<>
+D8=L;>
+D8=_`,
+D8=p_@
 D8L$0u`
 D8L$`u8
 D8[(u
@@ -6947,6 +6957,8 @@ D8|$"t
 D8|$Ht
 D9#tKH
 D9+~3M
+D9-`uE
+D9-srE
 D9E4v
 D9H$t
 D9I$t
@@ -6983,7 +6995,7 @@ D;;|8H
 D;A$|BH
 D;D$0}
 D;D$@u
-D;D$P
+D;D$T
 D;D$p
 D;D$|
 D;E4r
@@ -7123,6 +7135,7 @@ Duration value for path point
 Dynamic Entities Only
 Dynamic Fog No Shadows
 Dynamic Fog with Shadows
+E	P|V
 E A;t$x
 E D8!t
 E D9{(
@@ -7728,6 +7741,7 @@ Extra Arc Data Point
 Extraneous token
 E|$\D
 E|$dD
+F	V_sincosf
 F A;n
 F Lcu
 F"5PH
@@ -7877,7 +7891,7 @@ Force based on distance from plane
 ForceMaterialOverride
 Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 Found particle target layer ID '%s' which isn't in the whitelist '%s'.
-FpD8%
+FpD8%?
 Frames Measured: %d
 FreeEnvironmentStringsW
 FreeLibrary
@@ -7896,6 +7910,7 @@ Function "%s" system "%s" is reading CP %d but didn't request it in GetControlPo
 Function %s failed to chain GetControlPointInfo call to base class!
 Function is disabled
 Functions not supported in this evaluator (%s)
+G	V_sind
 G tBH
 G(9C(
 G03GD%
@@ -7933,8 +7948,8 @@ GT$HA
 GT$HH
 GT$PH
 GT$hH
+GT$pE
 GT$xD
-GT$xE
 GT$xH
 G\$(H
 G\$(L
@@ -8061,6 +8076,7 @@ G|$8H
 G|$8H9w8u
 G|$8M
 G|$XA
+H	V_sinf
 H SUWATAUAVAWH
 H SVWAWH
 H UATAUH
@@ -8086,9 +8102,9 @@ H-^Eu
 H1FxM
 H9(tO
 H9+t	H
-H95BD_
-H95l42
-H95w"c
+H957wf
+H95J)_
+H95g"c
 H97u+A
 H98t2
 H9A(u
@@ -8261,7 +8277,6 @@ Honors the per-particle radius (multiplied by radius scale) but is more expensiv
 HostStateMgr001
 How aggressive the switch to fallbacks will be depending on how far over the cl_particle_sim_fallback_threshold_ms the sim time is.  Higher numbers are more aggressive.
 Hybrid Box/Capsule
-I	V_sincosf
 I cannot be refracted through refracting objects like water
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
@@ -8951,13 +8966,12 @@ IsoSurface
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
 IterateRows
 I|?ff6?-
-J	V_sind
 J>@G_
 JUMP_COND
 January
 Jump to Instr I%d
 JumpOrLeap( C%d:I%d )
-K	V_sinf
+K	V_snprintf
 K H9K0u
 K SUVWAWH
 K USAUAVI
@@ -9177,23 +9191,15 @@ L9't	H
 L90u H
 L93t	H
 L94:H
-L95&mT
-L95><3
-L95N(3
-L95Y<3
-L95^t<
-L95g	_
-L95i(3
-L95w;3
-L95yt<
+L95)r<
+L95Gq<
+L95n53
+L95~!3
 L97t{L
 L9:t[
 L9;t	H
-L9=:5Q
-L9=?$Q
-L9=C4Q
-L9=Z$Q
-L9=c#Q
+L9=_*Q
+L9=z*Q
 L9?t	H
 L9?tb
 L9F(u
@@ -9202,7 +9208,7 @@ L9d$(t
 L9d$Ht
 L9l$`u
 L9m0u
-L9n t8H
+L9n t<H
 L9s(t!
 L9t$(t
 L9t$0t
@@ -9577,7 +9583,6 @@ Multiply # of rendered particles by this for perf testing
 Multiply x2
 Must call Init() before use!
 Must call SetMetadataEnabled on the root KV3 context to track metadata
-N	V_snprintf
 N0A87u'I
 N3`d?
 N>O=I9
@@ -9609,7 +9614,7 @@ Named model mesh group random
 Named model sequence random
 NavGameTest001
 NavSystem001
-Ndu\E9
+NduRE9
 Neg R%d <- -R%d
 Negate
 Negative Half Blend Add
@@ -9717,6 +9722,7 @@ Output minimum
 Output vector
 Overlay
 OverlayProjectionDirection
+P 9=2
 P 9_p
 P(tOL
 P8H=vmdlt
@@ -10245,6 +10251,7 @@ Plat_NonFatalErrorFunc
 Plat_RegisterModule
 Plat_USTime
 Play EndCap when Finished
+Player Wake Radius
 Point
 Point Away
 Point vector at next particle position
@@ -10389,6 +10396,7 @@ PulseValueTypeInfo_t<17>::KV3TransferLoadInstance
 PulseValueType_t
 PulseWarningLog 
 Pz}b!
+Q	V_sscanf
 Q5rHg,>
 QAngle
 QD$`H
@@ -10422,7 +10430,6 @@ RGB with RGB as Alpha Passthrough
 RGBA with RGB as Alpha
 ROTATION
 ROTATION_SPEED
-R\Dg8
 Radial Amount (-1..1)
 Radius
 Radius Scale
@@ -10579,7 +10586,7 @@ RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
 RenderModelSubModelFieldType_t
-RenderOps_Init(13828): 
+RenderOps_Init(13902): 
 RenderProjectedMaterial_t
 RenderProjectedMaterial_t::KV3TransferLoad_Impl
 RenderProjectedMaterial_t::KV3Transfer_DefaultKeys_Impl
@@ -11582,7 +11589,6 @@ Synchronize particles
 Synchronous - wait for the method to fully complete before returning
 System Name
 Systems Measured: %d
-T	V_sscanf
 T$ E3
 T$ H;
 T$ Hc
@@ -11624,6 +11630,7 @@ T$Hz$u"
 T$PD9
 T$PE3
 T$PH3
+T$PHc
 T$PfD
 T$TA;
 T$XI	
@@ -11648,14 +11655,12 @@ T$pM;
 T$pfA
 T$x;u
 T$xD;|$|
+T$xE3
 T$xI	
 T$|D;u
 T$|fff
-T%^W"
-T%gB#
-T(0Ic
-T-5S"
-T-SU"
+T-eP"
+T00Ic
 T>M-+?#gy?
 T>gaW?:]f?AHV>'
 T>l>~?
@@ -11802,7 +11807,6 @@ USVWAVH
 USVWAWH
 USVWH
 USWATAUAVAWH
-USWATAUAVH
 USWATAUAWH
 USWATAVH
 USWATAWH
@@ -11925,6 +11929,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
+V	V_stricmp_fast
 V6'?C
 V6E>`"(5
 VATAUH
@@ -12031,6 +12036,8 @@ V_fabsf((pOutBarns[ 0 ].InnerAngle()) - (flConeInnerAngleInDegrees)) <= (0.1f)
 V_fabsf((pOutBarns[ 0 ].OuterAngle()) - (flConeOuterAngleInDegrees)) <= (0.1f)
 V_floorf( DotProduct( vecFwd, vecUp ) ) < 0.1f
 V_floorf( DotProduct( vecLeft, vecUp ) ) < 0.1f
+V_fmodd
+V_fmodf
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -12063,6 +12070,7 @@ Vector3
 VectorExpressionType_t
 VectorFloatExpressionType_t
 VectorReduce
+Vehicle Wake Radius
 Velocity Control Point
 Velocity Scale
 Velocity away from hitbox random
@@ -12092,8 +12100,7 @@ Visualization Ring
 Visualization Sphere Solid
 Visualization Sphere Wireframe
 Vrad3_001
-W-_Y/
-W5@9T
+W5P9T
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Discarding existing in-progress particle performance request.
 WARNING: Particle system '%s' was not precached correctly. Performing blocking load....
@@ -12132,6 +12139,7 @@ World-Z Align
 WorldIntersectT
 WorldRendererMgr001
 Worley
+Wqu_E
 Write normal instead of rotation
 WriteConsoleW
 WriteFile
@@ -12153,16 +12161,14 @@ X axis scaling scalar field
 X offset of center point
 X to the Y power
 X!t5~
-X%y.]
-X%{:#
+X%"7$
+X%F%+
+X%Y.]
 X5%T3
 X5?g3
 X5V2T
-X5^b-
-X5ef$
 X5p:3
-X=-X]
-X=Ub-
+X5w_`
 X=pg3
 X?+5[>,
 XA]A\_[
@@ -12200,35 +12206,31 @@ Xt$ A
 Xt$PH
 Xt$XA
 Xt$`H
-Y	V_stricmp_fast
 Y Axis
 Y Dimension Count
 Y Dimension Spacing
 Y axis scaling scalar field
 Y offset of center point
-Y%`!,
-Y-.f'
-Y-/P'
-Y-11(
-Y-<.'
-Y-PM(
+Y%KkT
+Y%K~"
+Y%`l$
+Y-.a'
+Y-<)'
+Y-?K'
+Y-A,(
+Y-`H(
 Y4$E3
-Y5).(
-Y5)M'
-Y51y:
-Y53P(
-Y5:k(
-Y5VoT
-Y5ff$
-Y5pn'
-Y5w6'
+Y5))(
+Y5)H'
+Y5CK(
+Y5Jf(
+Y5_z(
+Y5av:
+Y5rw"
+Y5vi$
 Y9"SD
-Y=3A-
 Y=5h3
-Y==oT
-Y=>^-
-Y=Qs$
-Y=}r$
+Y=mlT
 Y>kX>M
 YD$0A
 YD$0E
@@ -12362,7 +12364,6 @@ Zod(^?
 \$@H;
 \$@Hc
 \$@Ic
-\$@L9+t
 \$@fE
 \$@tCH
 \$DL+
@@ -12386,16 +12387,16 @@ Zod(^?
 \$XH9
 \$XHc
 \$XHcD$PH
-\$Xt6
 \$\v5
 \$`;|$Dt
-\$`D;
 \$`Ic
 \$`tQH
 \$gm?
 \$h;]
+\$hD;
 \$hHc
 \$hI+
+\$ht5
 \$hu3M
 \$hz$u"
 \$l;]X
@@ -12403,8 +12404,8 @@ Zod(^?
 \$tz$u"
 \$xD;T$Dt
 \$xHc
-\5?oT
-\=&oT
+\5olT
+\=VlT
 \D$ A
 \D$ H
 \D$ fD
@@ -12434,6 +12435,8 @@ Zod(^?
 ])6M>&
 ],tIH
 ],tJH
+]52H$
+]=+?D
 ]>)2X
 ]J<0"0i3
 ]Lu*E;|$
@@ -12442,7 +12445,7 @@ Zod(^?
 ^RfN>
 ^oEZ_
 _ ;_$t
-_5s",
+_5t ,
 _89_D
 _?p%{>
 _RDATA
@@ -12719,6 +12722,7 @@ brush only
 buffer error
 bulge control 0=random 1=orientation of start pnt 2=orientation of end point
 buoyancy force
+c	V_tanf
 c [1>H'
 c(>\,
 c0 < c1
@@ -12955,6 +12959,7 @@ density
 densityVolume.InterpolatedVoxel( Vector( 0.f, 0.f, 0.f ), 0 )=%?
 depth comparison bias
 desaturation amount
+descriptorHashValue.nDescriptorSetIdx < V_ARRAYSIZE( m_hAnchoredParticleTextures )
 desired height is relative to water
 desired hitbox
 desired offset
@@ -13079,7 +13084,6 @@ exponential falloff exponent
 expression
 extern "C" 
 extra velocity field to write
-f	V_tanf
 f %d %d %d
 f %d//%d %d//%d %d//%d
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -13107,6 +13111,7 @@ fD9dD uO
 fD9t$b
 fD9z8
 fE9`8
+fE9l$
 fJBGo
 fMinZNormalized >= 0.f && fMinZNormalized < fMaxZNormalized
 facing strength falloff
@@ -13257,7 +13262,6 @@ gravity scale
 group ID to affect
 group emission times for new particles
 group id
-g{"c0.
 h VWAVH
 h>1my
 h>4hp?
@@ -13452,7 +13456,6 @@ j>>A?1
 j?V()
 j?{$*
 j@87te3
-jJGaR
 jj@0HK4
 k L9w t
 k VWATAVAWH
@@ -13496,10 +13499,12 @@ l$0E2
 l$0E3
 l$0H9
 l$0Hc
+l$0Hc)H
 l$0Hck
 l$0Hk
 l$0L;
 l$0Lc)
+l$0Lk
 l$0u!H
 l$8E3
 l$8Hk
@@ -13527,7 +13532,6 @@ l$PHc+H
 l$PI9
 l$PfA
 l$XH9
-l$XHc
 l$XI;
 l$XfA
 l$XtUD
@@ -13535,6 +13539,7 @@ l$XtY
 l$XuZH
 l$`A;
 l$`D8f t
+l$`Hc
 l$`I;
 l$`Ic
 l$`L9x 
@@ -13977,6 +13982,7 @@ m_bFitToModelSize
 m_bFlipBasedOnYaw
 m_bFlipHorizontal
 m_bFlipUVBasedOnPitchYaw
+m_bFog
 m_bFollowNamedValue
 m_bForceDrawInterlevedWithSiblings
 m_bForceEmitOnFirstUpdate
@@ -14423,6 +14429,7 @@ m_flFinalTextureUVRotation
 m_flFlattenStrength
 m_flFogAmount
 m_flFogContribution
+m_flFogScale
 m_flForceScale
 m_flForwardDegrees
 m_flForwardShift
@@ -14602,6 +14609,7 @@ m_flPitch
 m_flPitchScale
 m_flPlaneOffset
 m_flPlaybackSpeed
+m_flPlayerWakeRadius
 m_flPosition
 m_flPositionDampingConstant
 m_flPostProcessStrength
@@ -14759,6 +14767,7 @@ m_flValueAboveMax
 m_flValueAtMax
 m_flValueAtMin
 m_flValueBelowMin
+m_flVehicleWakeRadius
 m_flVelocityMax
 m_flVelocityMin
 m_flVelocityScale
@@ -15847,19 +15856,23 @@ o$$fD
 o%=-G
 o%NRG
 o%U\G
+o%_OK
 o%s.G
 o(L9d$Ht
 o(L9s(t
-o-)+#
 o-/RG
 o-6\G
 o->.G
 o-K]G
+o-ZL$
+o-kgV
+o-uK$
 o-~PG
 o0L9s0t
 o5vPG
 o=AKG
 o=JHG
+o=ggV
 o=nPG
 o=uKG
 o=zWG
@@ -16736,7 +16749,6 @@ t$8;;
 t$8;Upr4I
 t$8D;l$@
 t$8E3
-t$8E8&
 t$8H+
 t$8H9
 t$8Hc
@@ -16747,6 +16759,7 @@ t$8~ H
 t$@D#
 t$@D;
 t$@E3
+t$@E8&
 t$@Hc
 t$@t1
 t$@uQH
@@ -16761,6 +16774,7 @@ t$HHk
 t$HcG
 t$Ht'
 t$P9E
+t$PA9ut
 t$PA;
 t$PD8
 t$PD87
@@ -16781,7 +16795,6 @@ t$XI9
 t$XI;
 t$Xff
 t$`A;
-t$`A;vt
 t$`D;r
 t$`E3
 t$`H9
@@ -16827,7 +16840,6 @@ t=E9l$
 t>vTU>
 t?HcS
 tCfff
-tD9%[IE
 tDfff
 tEHcR
 tEL9:t@
@@ -16951,16 +16963,18 @@ tupleOffset < element.count
 twHc}
 twIcF
 twist axis
+tx9-T
 tyHc}
 type != MATERIAL2_POINTS
 type < ( 1 << TYPE_BIT_COUNT )
 type.CanConvertTo( m_pStaticSignature->GetArg( nIndex ).m_Type, pInScope )
-t{D9-N:\
+t{D9-
 t|D8}`tvH
 t|D9%
-t|D9=\
+t|D9=
+t~95B
 t~D8u
-t~D9%
+t~D9%RFE
 t~D9-
 u	D87
 u	D;(
@@ -16969,7 +16983,6 @@ u!Hco`;opu
 u#L9|
 u$D8r(t
 u%@8j(t
-u'H9{xu!H
 u,!T$(H!T$ 
 u,9A\|	9AL
 u.D9Qd|
@@ -16978,6 +16991,7 @@ u1fD9
 u2D9Ql|
 u3HcH<H
 u4I9}(
+u7H9{xu1H
 u9@8|$Pt;H
 u;fD9
 u<g~l<it[<ntP<ot,<pt
@@ -16993,6 +17007,7 @@ uint16
 uint32
 uint64
 uint8
+uj9:L
 uj9~x
 uk9~x
 unFlags
@@ -17009,7 +17024,6 @@ unsigned
 unsigned( nDataType ) < ATTRDATATYPE_COUNT
 unspecified
 unused
-uo9:L
 uofff
 upHcEhLk
 use AABB
@@ -17043,7 +17057,6 @@ use soft edges for distance alpha
 use the derivative
 use velocity for test direction
 use vertical velocity for weighting
-ux9|$T
 ux9~x
 uzKs@>
 v %f %f %f
@@ -17206,6 +17219,7 @@ zeroth_moment
 {for 
 {un'%
 {xH9{xr
+|"IX_
 |#tAM
 |$ 9|$0|LH
 |$ A;
@@ -17255,6 +17269,7 @@ zeroth_moment
 |$49~
 |$4;~
 |$4D;vt
+|$8D9-
 |$8D;
 |$8E+
 |$8E2
@@ -17262,6 +17277,7 @@ zeroth_moment
 |$8HcD$0H
 |$8Hi
 |$8L9
+|$8L9/t
 |$8L;
 |$8u)H
 |$8~ H
@@ -17287,6 +17303,7 @@ zeroth_moment
 |$P;k8
 |$PA;
 |$PE3
+|$PE;}t
 |$PH9
 |$PIc
 |$PfA
@@ -17307,9 +17324,8 @@ zeroth_moment
 |$`E3
 |$`Lc
 |$`Mc
-|$dD;
-|$dHc
 |$hD9
+|$hD;
 |$hE3
 |$hH;
 |$hLc
@@ -17326,6 +17342,7 @@ zeroth_moment
 |$pt/
 |$pt2
 |$pt:H
+|$tHc
 |$x9kX~,H
 |$xE3
 |$xHc
@@ -17334,6 +17351,7 @@ zeroth_moment
 |(fff
 |(tFM
 |)L9c
+|-*0~
 |?@8l
 |Lu?c
 |`A;N

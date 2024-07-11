@@ -120,196 +120,55 @@
 	}
 	Orion.Charged.Shot.Cast = 
 	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Orion.Charged.Shot.CastLyr1"
-		soundevent_02 = "Orion.Charged.Shot.CastLyr2"
-		volume = 0.500000
-		use_01 = 1.000000
-		use_02 = 1.000000
+		base = "Base.Ability"
+		volume = 0.000000
+		volume_enemy_targeting_boost = 5.000000
+		play_from_listener_player = 1.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/archer/archer_charged_shot_fire_01.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_fire_02.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_fire_03.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_fire_04.vsnd",
+		]
 	}
-	Orion.Charged.Shot.CastLyr1 = 
+	Orion.Charged.Shot.CastDelay = 
 	{
 		base = "Base.Ability"
-		vsnd_files = "sounds/abilities/orion/a1_charged_shot/cast_lyr1.vsnd"
-		vsnd_duration = 1.372646
+		volume = 0.000000
+		play_from_listener_player = 1.000000
+		volume_enemy_targeting_boost = 5.000000
+		vsnd_files = 
+		[
+			"sounds/abilities/archer/archer_charged_shot_charging_start_01.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_charging_start_02.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_charging_start_03.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_charging_start_04.vsnd",
+		]
 	}
-	Orion.Charged.Shot.CastLyr2 = 
+	Orion.Charged.Shot.Channeling.Lp = 
 	{
-		base = "Base.Ability"
-		vsnd_files = "sounds/abilities/orion/a1_charged_shot/cast_lyr2.vsnd"
-		vsnd_duration = 1.164083
-	}
-	Orion.Charged.Shot.Channel = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Orion.Charged.Shot.Channel.Lyr1"
-		soundevent_02 = "Orion.Charged.Shot.Channel.Lyr2"
-		soundevent_03 = "Orion.Charged.Shot.Channel.Lyr3"
-		soundevent_04 = "Orion.Charged.Shot.Channel.Lyr4"
-		volume = 0.400000
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-		use_04 = 1.000000
-	}
-	Orion.Charged.Shot.Channel.Lyr1 = 
-	{
-		base = "Base.Ability"
-		volume = -6.000000
-		vsnd_files = "sounds/abilities/orion/a1_charged_shot/chrg_lyr1.vsnd"
-		vsnd_duration = 2.140417
-	}
-	Orion.Charged.Shot.Channel.Lyr2 = 
-	{
-		base = "Base.Ability"
-		volume = -6.000000
-		vsnd_files = "sounds/abilities/orion/a1_charged_shot/chrg_lyr2.vsnd"
-		vsnd_duration = 2.262146
-	}
-	Orion.Charged.Shot.Channel.Lyr3 = 
-	{
-		base = "Base.Ability"
-		volume = -6.000000
-		vsnd_files = "sounds/abilities/orion/a1_charged_shot/chrg_lyr3.vsnd"
-		vsnd_duration = 1.088625
-	}
-	Orion.Charged.Shot.Channel.Lyr4 = 
-	{
-		base = "Base.Ability"
-		volume = -6.000000
-		vsnd_files = "sounds/abilities/orion/a1_charged_shot/chrg_lyr4.vsnd"
-		vsnd_duration = 1.363271
+		base = "Base.Ability.Telegraph"
+		volume = -2.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.100000
+		play_from_listener_player = 1.000000
+		volume_offset_player = -8.000000
+		delay_rand_max = -15.000000
+		distance_lpf_on = 0.000000
+		vsnd_files = "sounds/abilities/archer/archer_charged_shot_charging_lp.vsnd"
 	}
 	Orion.Charged.Shot.Whizby = 
 	{
-		base = "Base.Hero.Ability.Whizby.2d"
-		pitch = 1.100000
-		pitch_rand_min = -0.005000
-		pitch_rand_max = 0.600000
-		volume_rand_min = -0.600000
-		volume_rand_max = 0.100000
-		volume = -3.000000
-		volume_fade_out = 0.010000
-		vsnd_files = 
-		[
-			"sounds/weapons/orion/whizbys/base_01.vsnd",
-			"sounds/weapons/orion/whizbys/base_02.vsnd",
-			"sounds/weapons/orion/whizbys/base_03.vsnd",
-			"sounds/weapons/orion/whizbys/base_04.vsnd",
-			"sounds/weapons/orion/whizbys/base_05.vsnd",
-			"sounds/weapons/orion/whizbys/base_06.vsnd",
-			"sounds/weapons/orion/whizbys/base_07.vsnd",
-			"sounds/weapons/orion/whizbys/base_08.vsnd",
-			"sounds/weapons/orion/whizbys/base_09.vsnd",
-			"sounds/weapons/orion/whizbys/base_10.vsnd",
-			"sounds/weapons/orion/whizbys/base_11.vsnd",
-			"sounds/weapons/orion/whizbys/base_12.vsnd",
-			"sounds/weapons/orion/whizbys/base_13.vsnd",
-			"sounds/weapons/orion/whizbys/base_14.vsnd",
-			"sounds/weapons/orion/whizbys/base_15.vsnd",
-			"sounds/weapons/orion/whizbys/base_16.vsnd",
-			"sounds/weapons/orion/whizbys/base_17.vsnd",
-			"sounds/weapons/orion/whizbys/base_18.vsnd",
-			"sounds/weapons/orion/whizbys/base_19.vsnd",
-			"sounds/weapons/orion/whizbys/base_20.vsnd",
-			"sounds/weapons/orion/whizbys/base_21.vsnd",
-			"sounds/weapons/orion/whizbys/base_22.vsnd",
-			"sounds/weapons/orion/whizbys/base_23.vsnd",
-			"sounds/weapons/orion/whizbys/base_24.vsnd",
-			"sounds/weapons/orion/whizbys/base_25.vsnd",
-			"sounds/weapons/orion/whizbys/base_26.vsnd",
-			"sounds/weapons/orion/whizbys/base_27.vsnd",
-			"sounds/weapons/orion/whizbys/base_28.vsnd",
-			"sounds/weapons/orion/whizbys/base_30.vsnd",
-			"sounds/weapons/orion/whizbys/base_31.vsnd",
-			"sounds/weapons/orion/whizbys/base_32.vsnd",
-			"sounds/weapons/orion/whizbys/base_33.vsnd",
-			"sounds/weapons/orion/whizbys/base_34.vsnd",
-			"sounds/weapons/orion/whizbys/base_35.vsnd",
-			"sounds/weapons/orion/whizbys/base_36.vsnd",
-			"sounds/weapons/orion/whizbys/base_37.vsnd",
-			"sounds/weapons/orion/whizbys/base_38.vsnd",
-			"sounds/weapons/orion/whizbys/base_39.vsnd",
-			"sounds/weapons/orion/whizbys/base_40.vsnd",
-			"sounds/weapons/orion/whizbys/base_41.vsnd",
-			"sounds/weapons/orion/whizbys/base_42.vsnd",
-			"sounds/weapons/orion/whizbys/base_43.vsnd",
-			"sounds/weapons/orion/whizbys/base_44.vsnd",
-		]
-		vsnd_duration = 0.891771
-	}
-	Orion.Charged.Shot.Whizby.R2L = 
-	{
 		base = "Base.Bullet.Whizby"
-		pitch = 1.100000
-		pitch_rand_min = -0.005000
-		pitch_rand_max = 0.600000
-		volume_rand_min = -0.600000
-		volume_rand_max = 0.100000
-		volume = -3.000000
-		volume_fade_out = 0.010000
+		volume = 3.000000
 		vsnd_files = 
 		[
-			"sounds/weapons/orion/whizbys/l2r_01.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_02.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_03.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_04.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_05.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_06.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_07.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_08.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_09.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_10.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_11.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_13.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_14.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_17.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_18.vsnd",
-			"sounds/weapons/orion/whizbys/l2r_19.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_whizby_01.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_whizby_02.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_whizby_03.vsnd",
+			"sounds/abilities/archer/archer_charged_shot_whizby_04.vsnd",
 		]
-		vsnd_duration = 0.828542
-	}
-	Orion.Charged.Shot.Whizby.L2R = 
-	{
-		base = "Base.Bullet.Whizby"
-		pitch = 1.100000
-		pitch_rand_min = -0.005000
-		pitch_rand_max = 0.600000
-		volume_rand_min = -0.600000
-		volume_rand_max = 0.100000
-		volume = -3.000000
-		volume_fade_out = 0.010000
-		vsnd_files = 
-		[
-			"sounds/weapons/orion/whizbys/r2l_01.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_02.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_03.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_04.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_05.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_06.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_07.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_08.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_09.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_10.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_11.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_12.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_13.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_14.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_15.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_16.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_17.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_18.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_19.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_20.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_21.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_22.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_23.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_24.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_25.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_26.vsnd",
-			"sounds/weapons/orion/whizbys/r2l_28.vsnd",
-		]
-		vsnd_duration = 0.950667
 	}
 	Orion.Charged.Shot.Proj.Impact = 
 	{
@@ -841,6 +700,7 @@
 			"sounds/player/footsteps/orion/orion_footstep_13.vsnd",
 			"sounds/player/footsteps/orion/orion_footstep_15.vsnd",
 		]
+		vsnd_duration = 0.305125
 	}
 	Orion.Effort.Dash = 
 	{

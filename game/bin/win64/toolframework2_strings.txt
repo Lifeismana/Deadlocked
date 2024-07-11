@@ -5,6 +5,7 @@
 		SolarIrradiance "[ %f %f %f ]"
 		SolarPosition "[ %f %f %f ]"
 		SolarRadius "%f"
+		V_frexpf
 	!s99
 	#jT$
 	//---- Texture ----
@@ -46,10 +47,8 @@
 	R)v4N
 	R)v4n
 	SkyTexture "materials/skybox/skymodel_hosekwilkie_ref/%s.exr"
-	V_fmodf
 	V_fpclassifyd
 	V_fprintf
-	V_frexpf
 	V_isnand
 	V_vsnprintf
 	Warning
@@ -174,6 +173,7 @@
  A_A^A\_^
  A_A^A\_^][
  A_A^A]
+ A_A^A]A\]
  A_A^A]A\^
  A_A^A]A\_
  A_A^A]A\_^]
@@ -449,6 +449,7 @@ $D9l$@|NH
 $D9x<t
 $D9x<tN
 $DT<I
+$H;T$hH
 $Ib?s
 $IcL$
 $L9d$0t
@@ -627,7 +628,6 @@ $name_$id
 &?PPPPPPP?
 &@R)v4
 &Affff
-&D;w@
 &OYMW
 &Q@^\
 &SU^@
@@ -663,6 +663,7 @@ $name_$id
 ( bHideCursor == false ) || ( m_bCaptureHideCursor == bHideCursor )
 ( buttonCode >= 0 ) && ( buttonCode < V_ARRAYSIZE( s_nBindCodesToVirtualKeys ) )
 ( const void * ) &other != ( const void * ) this
+( dataFields.m_nBoneWeights < 0 ) || ( dataFields.m_nBoneIndices >= 0 )
 ( error_value != SOCKET_ERROR ) && ( error_value != WSAENOTCONN )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( hCurrentEdge != hStartEdge ) || ( bAssert == false )
@@ -680,6 +681,7 @@ $name_$id
 ( m_nFreeListHead != s_InvalidReferenceIndex ) || ( m_nFreeListTail == s_InvalidReferenceIndex )
 ( m_nFreeListHead == s_InvalidReferenceIndex ) || ( m_nFreeListHead < (ReferenceIndex_t)m_ReferenceTable.Count() )
 ( min( max( %s, %.2g ), %.2g ) - %.2g ) / %.2g
+( nAttr < 0 )
 ( nDstIndex < nCurrentSize ) && ( nSrcIndex < nCurrentSize )
 ( nDstIndex < nCurrentSize ) && ( nSrcIndexA < nCurrentSize ) && ( nSrcIndexB < nCurrentSize )
 ( nDstIndex >= 0 ) && ( nSrcIndex >= 0 )
@@ -735,19 +737,20 @@ $name_$id
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
+(%!&}
+(%.tT
 (%1,%2)
+(%2tT
+(%7&}
 (%d,%d)
 ((width & 1) == 0) && ((height & 1) == 0)
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (1@zD
-(5&2[
-(5C?[
-(5H+[
-(5S6[
-(5`)[
-(5c-[
+(5S"]
+(5up@
 (;^ |
+(;s |
 (A?)\
 (A\_][
 (A]A\^[
@@ -774,6 +777,7 @@ $name_$id
 (A_A]A\_
 (A_A^
 (A_A^A\]
+(A_A^A\_][
 (A_A^A]A\
 (A_A^A]A\_^][
 (A_A^A]]
@@ -811,6 +815,10 @@ $name_$id
 (D$pL
 (D$pf
 (D$pfD
+(D;O |
+(D;s 
+(D;s |
+(D;w |
 (Debug Feature) Used to draw collision with the same material in Physics Debugger as in Hammer.
 (Edges to Faces)
 (Edges to Vertices)
@@ -844,6 +852,7 @@ $name_$id
 (M E3
 (M0fA
 (T$ D
+(T$ I;
 (T$ fD
 (T$0D
 (T$0H
@@ -1102,12 +1111,14 @@ $name_$id
 )L$pD
 )L$pH
 )L$pL
+)T$ H
 )T$ fD
 )T$0L
 )T$@B
 )T$@H
 )T$PA
 )T$PD
+)T$PE
 )T$PL
 )T$PfD
 )T$`D
@@ -1133,6 +1144,7 @@ $name_$id
 )\$pD
 )\ZEo^m/
 )b%g?o
+)d$ D
 )d$0A
 )d$0D
 )d$0E
@@ -1362,6 +1374,7 @@ $name_$id
 ,`2/@
 ,dF9<
 ,oyrn
+-	V_logd
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
@@ -1391,6 +1404,7 @@ $name_$id
 -sse4
 -tools
 -wait_before_assetsystem_startup
+.	V_logf
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 ..om?
 .00cfg
@@ -1752,6 +1766,7 @@ $name_$id
 .?AUCAttr_m_bLeaveBodyCollisionUnmodified@?1??GetStaticAttributes@CModelDocPhysicsShapeList@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bLinear@?1??GetStaticAttributes@CModelDocExtractMotion@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bLocalSpace@?1??GetStaticAttributes@CModelDocAnimBlendLayerBase@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_bLockBorder@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bLockFriction0@?1??GetStaticAttributes@CModelDocClothProxyMeshFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bLockFriction1@?1??GetStaticAttributes@CModelDocClothProxyMeshFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bLockGoalStrength0@?1??GetStaticAttributes@CModelDocClothProxyMeshFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -1787,6 +1802,7 @@ $name_$id
 .?AUCAttr_m_bRagdollAppliesBindPoseRoot@?1??GetStaticAttributes@CModelDocBaseBreakPiece@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bRecenterOnParentBone@?1??GetStaticAttributes@CModelDocBasePhysicsShapeWithTransform@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bRecomputeSmoothNormalsAfterAnimation@?1??GetStaticAttributes@CModelDocDynamicMeshDeformParams@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_bRemoveSmallComponents@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bReverse@?1??GetStaticAttributes@CModelDocAnimFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bRightToLeft@?1??GetStaticAttributes@CModelDoc2DBlendFromAnimation@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bRigidEdgeHinges@?1??GetStaticAttributes@CModelDocClothParams@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -1825,6 +1841,7 @@ $name_$id
 .?AUCAttr_m_bUninertialRods@?1??GetStaticAttributes@CModelDocClothParams@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUnitlessDamping@?1??GetStaticAttributes@CModelDocClothParams@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUseAdditionalOffset@?1??GetStaticAttributes@CModelDocConfigElement_AttachedModel@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_bUseAttributes@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUseBlockSolver@?1??GetStaticAttributes@CModelDocPhysicsJoint_Revolute@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUseFlatColor@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpBakeTextureToVertexData@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUseLayerSequence@?1??GetStaticAttributes@CModelDocClothEffectAnimEvent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -1861,6 +1878,12 @@ $name_$id
 .?AUCAttr_m_eventClass@?1??GetStaticAttributes@CModelDocAnimEvent_Legacy@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_excludeMaterials@?1??GetStaticAttributes@CModelDocDistanceField@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_expression@?1??GetStaticAttributes@CModelDocMorphRule@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_fColorAttributeWeight@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_fNormalAttributeWeight@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_fSmallComponentSizeThreshold@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_fTargetError@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_fTargetTrianglePercent@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_fUVAttributeWeight@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_filename@?1??GetStaticAttributes@CModelDocDistanceFieldFromFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_filename@?1??GetStaticAttributes@CModelDocPrecomputedTransmissionFromFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_filterBones@?1??GetStaticAttributes@CModelDocDistanceField@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -2736,6 +2759,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CBaseConcreteToolAttr@MVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocModelModifier_ScaleAndMirror@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMorphControl@@@@
 .?AV?$CBaseConcreteToolAttr@MVCModelDocMorphIncrementalShape@@@@
@@ -3171,6 +3195,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttr@_NVCModelDocMeshModifier_MeshOpVertexTransform@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCModelDocMeshModifier_RenameBonePrefix@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCModelDocModelDataFlags@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCModelDocModelModifier_RenameBone@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCModelDocModelModifier_ScaleAndMirror@@@@
@@ -3338,6 +3363,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CBaseConcreteToolAttrValue@MVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocModelModifier_ScaleAndMirror@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMorphControl@@@@
 .?AV?$CBaseConcreteToolAttrValue@MVCModelDocMorphIncrementalShape@@@@
@@ -3753,6 +3779,7 @@ $name_$id
 .?AV?$CBaseConcreteToolAttrValue@_NVCModelDocMeshModifier_MeshOpVertexTransform@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCModelDocMeshModifier_RenameBonePrefix@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCModelDocModelDataFlags@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCModelDocModelModifier_RenameBone@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCModelDocModelModifier_ScaleAndMirror@@@@
@@ -3921,6 +3948,7 @@ $name_$id
 .?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_MeshOpVertexWeld@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_ScaleWrinkleMap@@X@@
+.?AV?$CConcreteToolAttr@MVCModelDocMeshModifier_Simplify@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocModelModifier_ScaleAndMirror@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocMorphControl@@X@@
 .?AV?$CConcreteToolAttr@MVCModelDocMorphIncrementalShape@@X@@
@@ -4356,6 +4384,7 @@ $name_$id
 .?AV?$CConcreteToolAttr@_NVCModelDocMeshModifier_MeshOpVertexTransform@@X@@
 .?AV?$CConcreteToolAttr@_NVCModelDocMeshModifier_RenameBonePrefix@@X@@
 .?AV?$CConcreteToolAttr@_NVCModelDocMeshModifier_ScaleWrinkleMap@@X@@
+.?AV?$CConcreteToolAttr@_NVCModelDocMeshModifier_Simplify@@X@@
 .?AV?$CConcreteToolAttr@_NVCModelDocModelDataFlags@@X@@
 .?AV?$CConcreteToolAttr@_NVCModelDocModelModifier_RenameBone@@X@@
 .?AV?$CConcreteToolAttr@_NVCModelDocModelModifier_ScaleAndMirror@@X@@
@@ -4564,6 +4593,7 @@ $name_$id
 .?AV?$CModelDocAttr@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@
 .?AV?$CModelDocAttr@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@
 .?AV?$CModelDocAttr@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CModelDocAttr@MVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CModelDocAttr@MVCModelDocModelModifier_ScaleAndMirror@@@@
 .?AV?$CModelDocAttr@MVCModelDocMorphControl@@@@
 .?AV?$CModelDocAttr@MVCModelDocPhysicsBodyMarkup@@@@
@@ -4979,6 +5009,7 @@ $name_$id
 .?AV?$CModelDocAttr@_NVCModelDocMeshModifier_MeshOpVertexTransform@@@@
 .?AV?$CModelDocAttr@_NVCModelDocMeshModifier_RenameBonePrefix@@@@
 .?AV?$CModelDocAttr@_NVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CModelDocAttr@_NVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CModelDocAttr@_NVCModelDocModelDataFlags@@@@
 .?AV?$CModelDocAttr@_NVCModelDocModelModifier_RenameBone@@@@
 .?AV?$CModelDocAttr@_NVCModelDocModelModifier_ScaleAndMirror@@@@
@@ -5189,6 +5220,7 @@ $name_$id
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CToolAttrGetSetAccess@MVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocModelModifier_ScaleAndMirror@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMorphControl@@@@
 .?AV?$CToolAttrGetSetAccess@MVCModelDocMorphIncrementalShape@@@@
@@ -5595,6 +5627,7 @@ $name_$id
 .?AV?$CToolAttrGetSetAccess@_NVCModelDocMeshModifier_MeshOpVertexTransform@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCModelDocMeshModifier_RenameBonePrefix@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCModelDocModelDataFlags@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCModelDocModelModifier_RenameBone@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCModelDocModelModifier_ScaleAndMirror@@@@
@@ -5763,6 +5796,7 @@ $name_$id
 .?AV?$CValueAttributeWrapper@MVCModelDocMeshModifier_MeshOpSelectVerticesByWeight@@@@
 .?AV?$CValueAttributeWrapper@MVCModelDocMeshModifier_MeshOpVertexWeld@@@@
 .?AV?$CValueAttributeWrapper@MVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CValueAttributeWrapper@MVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CValueAttributeWrapper@MVCModelDocModelModifier_ScaleAndMirror@@@@
 .?AV?$CValueAttributeWrapper@MVCModelDocMorphControl@@@@
 .?AV?$CValueAttributeWrapper@MVCModelDocPhysicsBodyMarkup@@@@
@@ -6162,6 +6196,7 @@ $name_$id
 .?AV?$CValueAttributeWrapper@_NVCModelDocMeshModifier_MeshOpVertexTransform@@@@
 .?AV?$CValueAttributeWrapper@_NVCModelDocMeshModifier_RenameBonePrefix@@@@
 .?AV?$CValueAttributeWrapper@_NVCModelDocMeshModifier_ScaleWrinkleMap@@@@
+.?AV?$CValueAttributeWrapper@_NVCModelDocMeshModifier_Simplify@@@@
 .?AV?$CValueAttributeWrapper@_NVCModelDocModelDataFlags@@@@
 .?AV?$CValueAttributeWrapper@_NVCModelDocModelModifier_RenameBone@@@@
 .?AV?$CValueAttributeWrapper@_NVCModelDocModelModifier_ScaleAndMirror@@@@
@@ -6747,6 +6782,7 @@ $name_$id
 .?AVCModelDocMeshModifier_RenameBonePrefix@@
 .?AVCModelDocMeshModifier_RenameStream@@
 .?AVCModelDocMeshModifier_ScaleWrinkleMap@@
+.?AVCModelDocMeshModifier_Simplify@@
 .?AVCModelDocMeshModifier_SkinToSingleBone@@
 .?AVCModelDocMeshParentTransform@@
 .?AVCModelDocMeshSortOptions@@
@@ -7146,14 +7182,9 @@ $name_$id
 .xJ>Hf
 .xdata
 .xdata$x
-/%$>P
-/%l~.
+/%P`[
 // THIS FILE IS AUTO-GENERATED
 /2GG>!B
-/=>h}
-/=N_:
-/=jn:
-/=ln:
 />58d%
 /D$pv
 /D$tv
@@ -7170,7 +7201,6 @@ $name_$id
 /materials/
 /t$Hv
 /y-Hc
-0	V_logd
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -7197,6 +7227,7 @@ $name_$id
 0A^A]_^[
 0A^][
 0A^^[
+0A^^[H
 0A^^]
 0A^_^
 0A^_^H
@@ -7244,7 +7275,6 @@ $name_$id
 0x%p = %s '%s'
 0|DLI
 0}0i1
-1	V_logf
 1"?updateGeometry@QWidget@@QEAAXXZ
 1#IND
 1#INF
@@ -7296,7 +7326,7 @@ $name_$id
 220323000000Z
 220801000000Z
 230714000000Z
-240704151240Z0/
+240711150537Z0/
 241009235959Z0a1
 2D Aim
 2D Blend Has No Referenced Animations
@@ -7307,6 +7337,7 @@ $name_$id
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2Hc9HcJ
+2IcD$
 2L;|$P
 2LcJ L
 2OnDownPressed()
@@ -7459,6 +7490,7 @@ $name_$id
 6@u!V
 6A3333c
 6E;>|
+6HcD$03
 6I]Dc
 6OB,n_
 6YA1H
@@ -7495,6 +7527,7 @@ $name_$id
 8A_A]_^
 8A_A^A]A\
 8A_A^A]A\][
+8A_A^A]A\^]
 8A_A^A]A\_^[]
 8A_A^A]A\_^][
 8A_A^^[
@@ -7529,6 +7562,7 @@ $name_$id
 8gDio5x
 8ke?;
 8|@ffff
+9	V_powd
 9$@]m
 9)~4H
 9)~ML
@@ -7563,11 +7597,13 @@ $name_$id
 9Px? FcH
 9Q8u	D9AHu
 9RIFFL
+9S$~gE3
 9S8~"H
 9Sxv(L
 9W4~IH
 9W8~Q
 9X0~DL
+9Y ~?
 9Y ~C
 9YA1H
 9Yx~2
@@ -7579,10 +7615,13 @@ $name_$id
 9]x~3H
 9_8~Ufff
 9_H~-
+9i(~4H
 9jsA{
+9k ~rH
 9k8~QH
 9k8~^
 9n@3333
+9o ~WH
 9o0u.H
 9o8~@L
 9oP~8L
@@ -7626,11 +7665,13 @@ $name_$id
 9|$@u
 9|$Hu
 9|$Pu
+9|$P~0
 9|$P~2H
 9|$Xu
 9|$`u
 9|$hu
 9~h~t3
+:	V_powf
 : @\c
 :!L$ 0
 :!|$ 0E
@@ -7655,6 +7696,7 @@ $name_$id
 :m_Name
 :r?M+
 :x&4I,
+;	V_qsort
 ;	uXH
 ; @t{Ic
 ; tris:
@@ -7663,10 +7705,9 @@ $name_$id
 ;.u1L
 ;0t2H
 ;39!@ffff
-;5ZJt
 ;:|73
 ;;| H
-;=d*v
+;=t-x
 ;?0123456789:;<=>?
 ;@*$pV
 ;A0}OH
@@ -7719,7 +7760,8 @@ $name_$id
 ;|$`|
 ;|$d|
 ;|$p|
-<	V_powd
+;}st-;}ot(H
+<	V_qsort_s
 <	tf3
 <	u"H
 <	u2H
@@ -7800,7 +7842,6 @@ $name_$id
 <unknown>
 <unnamed>
 <utK@:
-=	V_powf
 =%H5<mN
 =-k?l1.
 == (or missing)
@@ -7820,7 +7861,6 @@ $name_$id
 =l'A\
 =rIQU
 =wf@j
->	V_qsort
 >!@A+r
 >"?IsValid@FbxProperty@fbxsdk@@QEBA_NXZ
 >%H5<mN
@@ -7837,7 +7877,6 @@ $name_$id
 >jtm}S
 >m_flStartTimeSeconds
 >tA}K
-?	V_qsort_s
 ? !o^A?
 ? zR&5t
 ?!5WOo
@@ -8248,6 +8287,7 @@ $name_$id
 ?Buffer@FbxString@fbxsdk@@QEAAPEADXZ
 ?Buffer@FbxString@fbxsdk@@QEBAPEBDXZ
 ?BuildMidpoint@CVertexKDTree@@QEAAXPEBMHH@Z
+?BuildMidpointFromVertexSubSet@CVertexKDTree@@QEAAXPEBMHPEBHH@Z
 ?C:\buildworker\citadel_staging_win64\build\src\bitmap\bitmap.cpp
 ?CheckArbitraryPeekGet@CUtlBuffer@@QEAA_NHAEAH@Z
 ?CheckForOtherRunningInstances@CSingleAppInstance@@QEAA_N_N0@Z
@@ -9797,6 +9837,7 @@ $name_$id
 ?~U.T
 ?~]<rZ&
 @	N} y
+@ A;	IcC
 @ D+@
 @ D9L
 @ ~JH
@@ -9963,6 +10004,7 @@ $name_$id
 @A_A\^
 @A_A\_
 @A_A\_^]
+@A_A]A\_[
 @A_A]A\_^
 @A_A]A\_^][
 @A_A]_^[
@@ -9996,6 +10038,7 @@ $name_$id
 @Hc3M
 @Hc9D
 @Hc9H
+@HcD$0I
 @HcD$8L
 @Integer overflow in %s
 @Lc9L
@@ -10290,6 +10333,7 @@ $name_$id
 @}?5^J+
 @}?5^Z
 @}?5^z
+A	V_roundf
 A A+A
 A B9T
 A D9D
@@ -10385,6 +10429,8 @@ A9nLu[H
 A9p0~
 A9v0t
 A:8ucI
+A;	HcE
+A;	IcC
 A;<$u
 A;<$|
 A;@Ps.I
@@ -10402,7 +10448,9 @@ A;u u
 A;u(u
 A;v(u
 A;vH|
+A;|$ 
 A;}(u
+A;~$|
 A;~(u
 A;~0}mI
 A=CYt
@@ -10615,10 +10663,13 @@ Add a voronoi plane mesh primitive.
 Add box mesh primitive.
 Add plane mesh primitive.
 Add to Selection
+AddAttributesForStreamSet
 AddChildInternal( pNewChild, GetNumChildren(), MODELDOC_EVENT_DISPATCH_DISABLED )
 AddStreamAncestorsAndStream_R
+AddStreamForVertexAttribute
 Adding additional extension for override tool: %s
 Adding additional extension for system tool: %s
+Adding duplicate attribute %s : %i
 Additional Materials
 Additional influence for the attachment.
 Additive
@@ -10865,6 +10916,7 @@ Apply given Cloth Effect, modulating it with time.
 ApplyPoseToNormalStreams
 ApplyPoseToPositionStreams
 ApplyScaleAndMirrorToAttributes
+ApplyStandardWeldAndClean
 April
 Ar!ES
 Archetype
@@ -10942,6 +10994,9 @@ Attempting to register the command %s for context %s multiple times
 Attempting to remove node from document that does not belong to the document
 Attribute %s is of type %s but was requested as type %s
 Attribute Name Pattern
+Attribute count / vertex stride between meshes is inconsistent
+Attribute offsets mismatched: attr %s offset A %i, offset B %i
+Attribute-Aware Simplification
 Attribute.%s.%s
 AuQIc
 August
@@ -11200,6 +11255,8 @@ ButtonText
 By default angle data is expected in degrees. Check this if the data is specified in radians.
 By default, any change to the chain position will be reflected in parent's rotation.  Uncheck this if you wish the parent to be left unmodified.
 By default, only the animation events on the first child animation are considered, if true all animation events which have a non-zero blend weight are used to detect animation events
+B{ks2j2
+C 9B u
 C 9k(u.H9
 C ;C$t
 C B9L
@@ -11290,6 +11347,7 @@ C:\buildworker\citadel_staging_win64\build\src\meshutils\mesh.cpp
 C:\buildworker\citadel_staging_win64\build\src\meshutils\modelanim.cpp
 C:\buildworker\citadel_staging_win64\build\src\meshutils\modelanimutils.cpp
 C:\buildworker\citadel_staging_win64\build\src\meshutils\modelmesh.cpp
+C:\buildworker\citadel_staging_win64\build\src\meshutils\modelmeshconversion.cpp
 C:\buildworker\citadel_staging_win64\build\src\meshutils\modelmeshprimitives.cpp
 C:\buildworker\citadel_staging_win64\build\src\meshutils\modelmeshstreamset.cpp
 C:\buildworker\citadel_staging_win64\build\src\meshutils\modelmeshutils.cpp
@@ -11724,6 +11782,8 @@ CBaseConcreteToolAttr<bool,class CModelDocMeshModifier_RenameBonePrefix>::Execut
 CBaseConcreteToolAttr<bool,class CModelDocMeshModifier_RenameBonePrefix>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<bool,class CModelDocMeshModifier_ScaleWrinkleMap>::ExecuteCustomCommand
 CBaseConcreteToolAttr<bool,class CModelDocMeshModifier_ScaleWrinkleMap>::SetOverlayState::<lambda_1>::operator ()
+CBaseConcreteToolAttr<bool,class CModelDocMeshModifier_Simplify>::ExecuteCustomCommand
+CBaseConcreteToolAttr<bool,class CModelDocMeshModifier_Simplify>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<bool,class CModelDocModelDataFlags>::ExecuteCustomCommand
 CBaseConcreteToolAttr<bool,class CModelDocModelDataFlags>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<bool,class CModelDocModelModifier_RenameBone>::ExecuteCustomCommand
@@ -12560,6 +12620,8 @@ CBaseConcreteToolAttr<float,class CModelDocMeshModifier_MeshOpVertexWeld>::Execu
 CBaseConcreteToolAttr<float,class CModelDocMeshModifier_MeshOpVertexWeld>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<float,class CModelDocMeshModifier_ScaleWrinkleMap>::ExecuteCustomCommand
 CBaseConcreteToolAttr<float,class CModelDocMeshModifier_ScaleWrinkleMap>::SetOverlayState::<lambda_1>::operator ()
+CBaseConcreteToolAttr<float,class CModelDocMeshModifier_Simplify>::ExecuteCustomCommand
+CBaseConcreteToolAttr<float,class CModelDocMeshModifier_Simplify>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<float,class CModelDocModelModifier_ScaleAndMirror>::ExecuteCustomCommand
 CBaseConcreteToolAttr<float,class CModelDocModelModifier_ScaleAndMirror>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<float,class CModelDocMorphControl>::ExecuteCustomCommand
@@ -12929,6 +12991,8 @@ CBaseConcreteToolAttrValue<bool,class CModelDocMeshModifier_RenameBonePrefix>::A
 CBaseConcreteToolAttrValue<bool,class CModelDocMeshModifier_RenameBonePrefix>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<bool,class CModelDocMeshModifier_ScaleWrinkleMap>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<bool,class CModelDocMeshModifier_ScaleWrinkleMap>::AttrValue_GetIntRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<bool,class CModelDocMeshModifier_Simplify>::AttrValue_GetFloatRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<bool,class CModelDocMeshModifier_Simplify>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<bool,class CModelDocModelDataFlags>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<bool,class CModelDocModelDataFlags>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<bool,class CModelDocModelModifier_RenameBone>::AttrValue_GetFloatRange::<lambda_1>::operator ()
@@ -13662,6 +13726,8 @@ CBaseConcreteToolAttrValue<float,class CModelDocMeshModifier_MeshOpSelectFacesBy
 CBaseConcreteToolAttrValue<float,class CModelDocMeshModifier_MeshOpSelectVerticesByWeight>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<float,class CModelDocMeshModifier_MeshOpVertexWeld>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<float,class CModelDocMeshModifier_ScaleWrinkleMap>::AttrValue_GetIntRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<float,class CModelDocMeshModifier_Simplify>::AttrValue_GetIntRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<float,class CModelDocMeshModifier_Simplify>::SetMinMaxFloat::<lambda_2>::operator ()
 CBaseConcreteToolAttrValue<float,class CModelDocModelModifier_ScaleAndMirror>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<float,class CModelDocMorphControl>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<float,class CModelDocMorphIncrementalShape>::AttrValue_GetIntRange::<lambda_1>::operator ()
@@ -14191,9 +14257,16 @@ CMaterialDrawDescriptor::KV3Transfer_DefaultKeys_Impl
 CMaterialDrawDescriptor::Schema_VerifyBindingIsRegistered
 CMaterialDrawDescriptor::TransferPostLoadFn
 CMemAllocSystemInitialize
+CMesh::AddAttributes
 CMesh::AllocateAndCopyMesh
+CMesh::AppendMesh
+CMesh::FindBaseAttributeForDelta
+CMesh::GetSkinningDataFields
 CMesh::RemoveSmallIslands
+CMesh::RemoveUnusedVertices
 CMesh::RemoveVertices
+CMesh::RestrideVertexBuffer
+CMeshVertexSearchTree::RemapMatchingVertices
 CMeshVisit::CollapseEdge
 CMeshVisit::WriteMeshIndexList
 CMeshletDescriptor
@@ -14458,6 +14531,7 @@ CModelDocMeshModifier_MeshOpBakeTextureToVertexData::ModifyMeshAndBindPoseParame
 CModelDocMeshModifier_MeshOpInflate::ModifyMeshAndBindPoseParametricMeshOp::<lambda_1>::operator ()
 CModelDocMeshModifier_MeshOpInflate::ModifyMeshAndBindPoseParametricMeshOp::<lambda_2>::operator ()
 CModelDocMeshModifier_MeshOpReplaceMaterial::CopyFrom
+CModelDocMeshModifier_Simplify::ModifyMeshAndBindPose
 CModelDocMeshSortOptions::CopyFrom
 CModelDocMorphIncrementalShape
 CModelDocMorphSuppressedShape
@@ -14573,6 +14647,7 @@ CModelMeshComponentList<struct CModelMesh::Vertex_t>::AddComponent::<lambda_1>::
 CModelMeshComponentList<struct CModelMesh::Vertex_t>::AddMultiple
 CModelMeshComponentList<struct CModelMesh::Vertex_t>::AppendComponentsFromList
 CModelMeshComponentList<struct CModelMesh::Vertex_t>::RemoveComponent
+CModelMeshConversion::ConvertFromCMesh
 CModelMeshDelta<struct CModelMesh::Edge_t>::AddEntriesForComponents
 CModelMeshDelta<struct CModelMesh::Edge_t>::AddEntriesForComponents::<lambda_1>::operator ()
 CModelMeshDelta<struct CModelMesh::Edge_t>::GetNumValues
@@ -15066,6 +15141,7 @@ CToolAttrGetSetAccess<bool,class CModelDocMeshModifier_MeshOpUVMapPlanarCustom>:
 CToolAttrGetSetAccess<bool,class CModelDocMeshModifier_MeshOpVertexTransform>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<bool,class CModelDocMeshModifier_RenameBonePrefix>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<bool,class CModelDocMeshModifier_ScaleWrinkleMap>::Access_MaybeGetDirectPtr
+CToolAttrGetSetAccess<bool,class CModelDocMeshModifier_Simplify>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<bool,class CModelDocModelDataFlags>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<bool,class CModelDocModelModifier_RenameBone>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<bool,class CModelDocModelModifier_ScaleAndMirror>::Access_MaybeGetDirectPtr
@@ -15455,6 +15531,7 @@ CToolAttrGetSetAccess<float,class CModelDocMeshModifier_MeshOpSelectFacesByAngle
 CToolAttrGetSetAccess<float,class CModelDocMeshModifier_MeshOpSelectVerticesByWeight>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<float,class CModelDocMeshModifier_MeshOpVertexWeld>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<float,class CModelDocMeshModifier_ScaleWrinkleMap>::Access_MaybeGetDirectPtr
+CToolAttrGetSetAccess<float,class CModelDocMeshModifier_Simplify>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<float,class CModelDocModelModifier_ScaleAndMirror>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<float,class CModelDocMorphControl>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<float,class CModelDocMorphIncrementalShape>::Access_MaybeGetDirectPtr
@@ -15811,6 +15888,11 @@ CUtlMemory<class CManifestInfo,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CMaterialDrawDescriptor,int>::Grow
 CUtlMemory<class CMaterialDrawDescriptor,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CMaterialDrawDescriptor,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CMesh,int>::Grow
+CUtlMemory<class CMesh,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CMesh,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CMeshVertexAttribute,int>::Grow
+CUtlMemory<class CMeshVertexAttribute,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CMeshletDescriptor,int>::Grow
 CUtlMemory<class CMeshletDescriptor,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CMeshletDescriptor,int>::Grow::<lambda_2>::operator ()
@@ -16077,6 +16159,7 @@ CUtlMemory<class CUtlVector<struct AnimMarkupChannel_t,int,class CUtlMemory<stru
 CUtlMemory<class CUtlVector<struct AnimMarkupChannel_t,int,class CUtlMemory<struct AnimMarkupChannel_t,int> >,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CUtlVector<struct AnimMarkupChannel_t,int,class CUtlMemory<struct AnimMarkupChannel_t,int> >,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlVector<struct CHalfEdgeComponentList<struct CModelMesh::Face_t,27>::ComponentHandleWithListPointer_t,int,class CUtlMemory<struct CHalfEdgeComponentList<struct CModelMesh::Face_t,27>::ComponentHandleWithListPointer_t,int> >,int>::Grow
+CUtlMemory<class CUtlVector<struct CHalfEdgeComponentList<struct CModelMesh::Face_t,27>::ComponentHandleWithListPointer_t,int,class CUtlMemory<struct CHalfEdgeComponentList<struct CModelMesh::Face_t,27>::ComponentHandleWithListPointer_t,int> >,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CUtlVector<struct CHalfEdgeComponentList<struct CModelMesh::Face_t,27>::ComponentHandleWithListPointer_t,int,class CUtlMemory<struct CHalfEdgeComponentList<struct CModelMesh::Face_t,27>::ComponentHandleWithListPointer_t,int> >,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlVector<struct CHalfEdgeComponentList<struct CModelMesh::Vertex_t,27>::ComponentHandleWithListPointer_t,int,class CUtlMemory<struct CHalfEdgeComponentList<struct CModelMesh::Vertex_t,27>::ComponentHandleWithListPointer_t,int> >,int>::Grow
 CUtlMemory<class CUtlVector<struct CHalfEdgeComponentList<struct CModelMesh::Vertex_t,27>::ComponentHandleWithListPointer_t,int,class CUtlMemory<struct CHalfEdgeComponentList<struct CModelMesh::Vertex_t,27>::ComponentHandleWithListPointer_t,int> >,int>::Grow::<lambda_1>::operator ()
@@ -16084,6 +16167,9 @@ CUtlMemory<class CUtlVector<struct CHalfEdgeComponentList<struct CModelMesh::Ver
 CUtlMemory<class CUtlVector<struct CUtlHashDict<class CUtlString,0,1>::Entry_t,int,class CUtlMemory<struct CUtlHashDict<class CUtlString,0,1>::Entry_t,int> >,int>::Grow
 CUtlMemory<class CUtlVector<struct CUtlHashDict<class CUtlString,0,1>::Entry_t,int,class CUtlMemory<struct CUtlHashDict<class CUtlString,0,1>::Entry_t,int> >,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CUtlVector<struct CUtlHashDict<class CUtlString,0,1>::Entry_t,int,class CUtlMemory<struct CUtlHashDict<class CUtlString,0,1>::Entry_t,int> >,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> >,int>::Grow
+CUtlMemory<class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> >,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> >,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlVectorFixedGrowable<struct CHalfEdgeComponentList<struct CHalfEdgeMesh<int,struct EdgeDataPair_t,int>::Vertex_t,22>::ComponentHandleWithListPointer_t,8,int> *,int>::Grow
 CUtlMemory<class CUtlVectorFixedGrowable<struct CHalfEdgeComponentList<struct CHalfEdgeMesh<int,struct EdgeDataPair_t,int>::Vertex_t,22>::ComponentHandleWithListPointer_t,8,int> *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CVertVisit,int>::Grow
@@ -16211,6 +16297,8 @@ CUtlMemory<enum MorphBundleType_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<enum StreamSource_t,int>::Grow
 CUtlMemory<enum StreamSource_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<enum StreamSource_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<float const *,int>::Grow
+CUtlMemory<float const *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<float,int>::Grow
 CUtlMemory<float,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<float,int>::Grow::<lambda_2>::operator ()
@@ -16612,6 +16700,8 @@ CUtlMemory<struct SkeletonAnimCapture_t::Camera_t,int>::Grow::<lambda_2>::operat
 CUtlMemory<struct SkeletonAnimCapture_t::Frame_t,int>::Grow
 CUtlMemory<struct SkeletonAnimCapture_t::Frame_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct SkeletonAnimCapture_t::Frame_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct StreamToAttribute_t,int>::Grow
+CUtlMemory<struct StreamToAttribute_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct TokenWarning_t,int>::Grow
 CUtlMemory<struct TokenWarning_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct ToolAttrChoice_t<bool>,int>::Grow
@@ -17108,6 +17198,7 @@ Clamp
 Class
 Class does not allow allocation from its schema binding
 CleanFaxData
+CleanMesh
 Clear
 Clear History
 Clear Rest of Selection
@@ -17232,7 +17323,9 @@ Collision File
 Collision Group
 Collision Property
 Collision Radius
+CollisionType
 Color
+Color Attribute Simplification Weight
 Color for the tag badge
 ColorMap
 ColorMatrix1
@@ -17271,6 +17364,7 @@ ComputeBoundingVolume
 ComputeCavityMap
 ComputeNumEdgesConnectedToVertex( hVertex ) == 1
 ComputePointOcclusionMap
+ComputeSparseDeltaValueSet
 ComputeWrinkleMap
 Computed Cavity Map for %i pixels in %.3f (%i pixels per job, %i total traces)
 Computed PointOcclusionMap for %i pixels in %.3f (%i pixels per job, %i total traces)
@@ -17337,8 +17431,10 @@ Convex Hull
 Copy Info
 Copy bone positions into vertex stream for use in foliage animation shader
 Copy skinning information from one rendermesh to another, based on a simple heuristic.
+CopyBlendWeightData
 CopyMeshSkinning
 CopyPrefabNodes_R
+CopyVertexStreamData
 Copyright
 Copyright (C) 2010, Thomas G. Lane, Guido Vollbeding
 CorExitProcess
@@ -17405,6 +17501,7 @@ D#C|D
 D#C|H
 D#K|H
 D$ 	!O3
+D$  >
 D$  s
 D$ !c
 D$ "K
@@ -17459,6 +17556,8 @@ D$ I;R
 D$ Ic
 D$ Ik
 D$ K f
+D$ Kc
+D$ L+
 D$ L;
 D$ M+
 D$ MrP
@@ -17516,6 +17615,8 @@ D$(I+
 D$(I;
 D$(Ic
 D$(L+
+D$(Lc
+D$(M+
 D$(M;
 D$(eH
 D$(fA
@@ -17567,7 +17668,7 @@ D$0H9D$8
 D$0H;
 D$0Hc
 D$0HcH
-D$0Jc\( 
+D$0I+
 D$0K f
 D$0L#
 D$0L;
@@ -17620,7 +17721,7 @@ D$8A9Gxt
 D$8A;
 D$8A;G
 D$8D9
-D$8D;5K
+D$8D;5;CR
 D$8E3
 D$8H;
 D$8H=
@@ -17630,6 +17731,7 @@ D$8HcH
 D$8HcJ
 D$8I+
 D$8I;
+D$8IcT
 D$8Jc
 D$8L9
 D$8L;
@@ -17690,6 +17792,7 @@ D$HL9gXt
 D$HL;
 D$Hf;
 D$HfI
+D$Hq&|
 D$Hwn
 D$L9D$Hs H
 D$L;D$T
@@ -17748,6 +17851,7 @@ D$`D;
 D$`D;e
 D$`E3
 D$`H;
+D$`HcL$hI
 D$`Hc{x
 D$`Ic
 D$`Jc
@@ -17766,6 +17870,8 @@ D$dE3
 D$dHc
 D$dfff
 D$h9t$P
+D$hA8L$$
+D$hA8N$
 D$hD+
 D$hD8
 D$hD;
@@ -17792,6 +17898,7 @@ D$pf;
 D$pt>H
 D$pxxx
 D$tE3
+D$tE8O$
 D$tHc
 D$x9D$h
 D$xD;
@@ -17820,6 +17927,7 @@ D+L$XE
 D+L$t
 D+L$t@
 D+\$p
+D+d$xA+m
 D+pt,A
 D+{HD+
 D/ IcL/
@@ -17890,33 +17998,36 @@ D8|$`t
 D8}wu@H
 D9 u2D9
 D9$(|
-D9%&"
-D9%(*
-D9%-8
-D9%.-
-D9%B:
-D9%D	
-D9%E7
-D9%U+
-D9%Z9
-D9%]6
-D9%_5
-D9%h2
-D9%q6
-D9%qD
-D9%u5
-D9%w=
-D9%~%
+D9%!J
+D9%)&
+D9%.+
+D9%:4
+D9%D/
+D9%E0
+D9%I=
+D9%M<
+D9%N1
+D9%R3
+D9%V'
+D9%Y1
+D9%^?
+D9%a<
+D9%t5
+D9%v\
+D9%x.
+D9%y;
 D9(tT
 D9/~%H
 D9/~4fff
 D97~H3
 D99t~I
 D99~CH
+D9=$I
 D9>|%Hc
 D9A t7
 D9A(t
 D9A,u
+D9C$~]3
 D9I t
 D9L$ 
 D9Y u
@@ -17932,6 +18043,7 @@ D9d$HH
 D9d$Hu
 D9d$`u
 D9d$hu
+D9d$x
 D9e(D
 D9i t
 D9kXu
@@ -17939,6 +18051,7 @@ D9l$
 D9l$ ~uI
 D9l$@tSM
 D9l$H|\
+D9l$P
 D9l$d
 D9l$h
 D9l$p
@@ -17965,6 +18078,7 @@ D9y ~6H
 D9{x~5I
 D9|$ 
 D9|$Pu
+D9|$Xt
 D9|$`u
 D9|$d
 D9|$h
@@ -17972,19 +18086,25 @@ D9|$p
 D9|$pu*H
 D9|$x
 D9~(D
+D;%]aQ
 D;&s0I
 D;0|V
+D;5$AR
+D;5v1R
 D;A8t
+D;C$|
 D;D$(|
 D;D$(}CJ
 D;D$0|
 D;D$p|
 D;G8|
+D;K t6H
 D;KTr
 D;L$ 
 D;L$$
 D;STr
 D;Y0t
+D;[$|
 D;a`}
 D;c8|
 D;d$,
@@ -17992,6 +18112,7 @@ D;d$4|
 D;d$D
 D;d$d
 D;d$d|
+D;d$x
 D;e |
 D;e(u
 D;e0|
@@ -18021,6 +18142,7 @@ D;uxu
 D;ux|
 D;ux}
 D;v(u
+D;w(|
 D;{Lr
 D;{x|
 D;|$ 
@@ -18254,6 +18376,7 @@ E;&s.I
 E;&s1I
 E;&t	D
 E;Fx|
+E;_$t
 E;e(u
 E;t$(|
 E;t$0
@@ -18681,6 +18804,7 @@ Extract TX
 Extract TY
 Extract TZ
 ExtractBindPoseFromModelDoc
+ExtractMeshFromMesh
 ExtractMotion
 ExtractMotionEditor
 Extrude Forward Axis
@@ -18688,6 +18812,7 @@ Extrude Radius
 Extrude Sides
 Extrude Twist
 E|$xH
+F	V_sincosf
 F	tj<
 F 9F(r
 F D9|
@@ -19091,14 +19216,17 @@ Friction that resists motion about the spin axis. Ignored by drivable vehicles.
 Friday
 From Name
 FrondPivotPaint
+G	V_sind
 G 9F t;I
 G D9D
+G D;c 
 G channel
 G channel not found!
 G tBH
 G$D8;I
 G$L9d$0t
 G$L9t$ t
+G(9C(t
 G(9E(t
 G/0L"
 G09A0t
@@ -19112,6 +19240,7 @@ G89G@
 G89G@}8
 G:\dev\source2\main\content\hlx\materials\particle\test\test_shlit_%d.exr
 G:\dev\source2\main\content\hlx\materials\particle\test\test_shlit_alpha.exr
+G@8C@t
 G@A9F0
 G@I+?I
 GAMEROOT
@@ -19338,6 +19467,7 @@ GetSelection()->HasPendingChangesToDispatch() == false
 GetShortPathNameA
 GetStartupInfoW
 GetStdHandle
+GetStreamInfoForAttribute
 GetStringTypeW
 GetSystemMetrics
 GetSystemTimeAsFileTime
@@ -19393,7 +19523,11 @@ Gt$8D
 Gt$HA
 Gt$HL
 Gt$XM
+Gt$`D
+Gt$`H
 Gt$hI
+Gt$xD
+Gt$xH
 Gz(<.
 G|$(L
 G|$8A
@@ -19402,6 +19536,7 @@ G|$8L
 G|$hI
 G|$hL
 G|$xI
+H	V_sinf
 H SVWAVH
 H SVWH
 H USAVH
@@ -19429,9 +19564,14 @@ H9(tO
 H9+t	H
 H9+u]H
 H9.t	H
+H9/t	H
 H93t	H
-H95!m
-H95WS
+H957Q
+H95GV
+H95Kr
+H95fr
+H95qq
+H95y#
 H97u+A
 H98t$H
 H98t2
@@ -19453,6 +19593,7 @@ H9T$Xu
 H9\$X
 H9\$p
 H9^8t
+H9i t`H
 H9k H
 H9k(H
 H9k0H
@@ -19516,17 +19657,19 @@ H;G0t
 H;G0t.H
 H;GHt$H
 H;L$8
-H;L$@
+H;L$P
 H;Q0uqH
 H;XXs
 H;\$(
 H;\$p
 H;l$(
+H;l$8
 H;l$8|
 H;l$X
 H;l$`
 H;l$xt
 H;sHs
+H;t$8|
 H;t$p
 H;xXu5
 H;|$@
@@ -19610,6 +19753,7 @@ HcAxE3
 HcAxH
 HcB`H
 HcC H
+HcC$I
 HcC(;
 HcC(H
 HcC4=
@@ -19639,6 +19783,7 @@ HcD$DH
 HcD$H
 HcD$HH
 HcD$PM
+HcD$T
 HcD$X
 HcD$XH
 HcD$XM
@@ -19646,6 +19791,7 @@ HcD$`
 HcD$`E
 HcD$`H
 HcD$p
+HcD$pD
 HcD$x
 HcD7L
 HcE_H
@@ -19657,6 +19803,7 @@ HcExH
 HcF`E3
 HcF|3
 HcG H
+HcG$E
 HcG(;
 HcG(H
 HcG0HcO4H
@@ -19673,6 +19820,7 @@ HcKp;
 HcKxH;
 HcKxL
 HcKxL;
+HcL$ 
 HcL$ H
 HcL$0
 HcL$0H
@@ -19904,7 +20052,6 @@ HullIVRHole_t::operator new
 HullPerElement
 HullPerMesh
 HullSimplificationAlgorithm_t
-I	V_sincosf
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
 I("hq
 I+4$H
@@ -19979,6 +20126,7 @@ Ic.Ic
 Ic4$A;t$
 Ic6A;v
 Ic6Hc
+Ic7A;w
 Ic<$A;|$
 Ic<$Hc
 Ic>A;~
@@ -19986,6 +20134,7 @@ Ic>Hc
 Ic?A;
 Ic?Hc
 IcA(H
+IcD$(
 IcD$xI
 IcEHH
 IcE`H
@@ -20473,7 +20622,6 @@ ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
 Iterate to Element
 Iterations
 Iwwg?
-J	V_sind
 J D9D
 J D9l
 J%f%f%f%f%f%f%f%f
@@ -20496,6 +20644,7 @@ JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
 JPEGMEM
 January
 Jc< H
+Jc\3 
 Jiggle Root Bone
 Jiggle Type
 Jiggle bone. Implemented through cloth.
@@ -20506,7 +20655,7 @@ Joint to Joint Simple
 Jp d=?
 Jun 27 2024
 JvljQ
-K	V_sinf
+K	V_snprintf
 K %vmo
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 K H9K0u
@@ -20675,6 +20824,7 @@ L$(E3
 L$(E;
 L$(Hc
 L$(I;
+L$(L+
 L$(Lc
 L$(Mc
 L$(fD
@@ -20700,6 +20850,7 @@ L$0fD
 L$0fH
 L$0fI
 L$0ff
+L$0fff
 L$4D;
 L$4I;E t
 L$8;L$0
@@ -20749,6 +20900,7 @@ L$HD;
 L$HE3
 L$HE;
 L$HH;
+L$HH;L$p
 L$HHc
 L$HI;
 L$HIc
@@ -20828,6 +20980,7 @@ L$xA+
 L$xE3
 L$xH;
 L$xI+
+L$xLc
 L$xf;
 L+d$HL
 L+d$PI+
@@ -20836,16 +20989,15 @@ L2rpR@r
 L9	u)H
 L9#t	H
 L9#u/H
-L9%s6
+L9%#w
 L9&t	H
 L9+t	H
-L9-	>
-L9-$>
-L9-7=
-L95	6
-L95'5
-L95^,
-L95y,
+L9-YB
+L9-tB
+L95>:
+L95Y:
+L95n0
+L95w9
 L97t	H
 L97vH
 L98t#A
@@ -20922,6 +21074,7 @@ L;t$(u
 L;t$0
 L;t$h
 L;|$(
+L;|$8
 L;|$X
 L;|$x
 L?UUUUUUU?
@@ -20963,8 +21116,10 @@ Layer0
 Lc Hc3E
 Lc tu
 Lc#D;c
+Lc&D;f
 Lc&Lc
 Lc'D;g
+Lc.D;n
 Lc/Hc
 Lc3A+
 Lc3D;s
@@ -20974,7 +21129,9 @@ Lc6Hc
 Lc7A+
 Lc7D;w
 Lc7Hc
+Lc8D9;t
 Lc;D;{
+Lc;E3
 Lc;Hc
 Lc;HcL(
 Lc;HcL( I
@@ -20984,6 +21141,7 @@ Lc?D;
 LcA(Lca,M
 LcA<E3
 LcC$E
+LcC$H
 LcC,I
 LcCxA
 LcD$0H
@@ -20997,6 +21155,7 @@ LcF,I
 LcG$H
 LcG<H
 LcIpI
+LcJ$H
 LcK H
 LcK$A;
 LcK0H
@@ -21026,11 +21185,11 @@ LcNHH
 LcN`H
 LcNhH
 LcO0H
-LcO@H
 LcOHH
 LcQ|M+
 LcRxL
 LcS(H
+LcT$4E
 LcT$HN
 LcT$XN
 LcT$dA
@@ -21071,6 +21230,7 @@ Lcl$0E;
 Lcl$0H
 Lcl$0L
 Lcl$8L
+Lcl$HD
 Lcl$HL
 Lcl$PH
 Lcl$TM
@@ -21092,6 +21252,7 @@ Lct$HH
 Lct$HL
 Lct$HLc>A
 Lct$P
+Lct$PE3
 Lct$PL
 Lct$`M
 Lct$dL
@@ -21106,7 +21267,6 @@ Lcv D
 Lcv8D;vH
 Lcv`H
 Lcw D;w0
-Lcw0D
 Lc{LE3
 Lc{hE3
 Lc|$ L
@@ -21147,6 +21307,7 @@ Light Reflectance Value (LRV) %.1f
 LightSplitterHandle
 LighterLine
 LighterToolbar
+LightmapScaleBias
 LightmapUV
 LightmapUVW
 Line length mismatch
@@ -21190,6 +21351,7 @@ LocalHierarchy
 LocaleNameToLCID
 Localize_001
 LocalizedCameraModel
+Lock Border
 Lock Friction <= 0.0
 Lock Friction >= 1.0
 Lock Goal Strength <= 0.0
@@ -21369,13 +21531,22 @@ Max vertex count of LOD0
 MaxSampleValue
 Maximum
 Maximum Degrees
+Maximum Error Percent
 Maximum supported image dimension is %u pixels
 Mc&E;f
 Mc'E;g
+Mc4$D93t
+Mc4$D97t
 Mc4$E;t$
+Mc6D97t
+Mc7A8M
 Mc7Hc
+Mc<$D9?t
+Mc<$E8N
 Mc<$E;|$
 Mc<6D
+McD$$H
+McD$$L
 McE8I
 McG4E
 McH(E
@@ -21416,14 +21587,17 @@ Merging common CCITT Fax codec-specific tags failed
 Mesh  Min/Max :: %8.4f, %8.4f R :: %8.4f %8.4f C :: %8.4f %8.4f
 Mesh Filter Affects Duplicate Input Mesh Names, %s -> %s
 Mesh Operation Stack
+Mesh has %i > %i floats of attributes, unable to apply all weightings.
 Mesh node name
 MeshDrawOrder
 MeshDrawPrimitiveFlags_t
 MeshFileReferenceEditor
+MeshID
 MeshList
 MeshModifierSliceOptionType_t
 MeshName
 MeshParentTransform
+MeshSimplify
 MeshSortOptions
 MeshSortOptionsEditor
 MeshSystem001
@@ -21571,10 +21745,8 @@ Must call InitModelDocLib before using the library.
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 Must specify a search path or root-relative (ie. game/.. or content/...) path.
 Mutually Exclusive Cloth Effects
-N	V_snprintf
 N"@q:
 N3`d?
-N7]](k )
 N>O=I9
 N?green@QColor@@QEBAHXZ
 N?greenF@QColor@@QEBANXZ
@@ -21600,7 +21772,6 @@ N`H+^
 Name Mode
 NavGameTest001
 NavSystem001
-NbW	L
 NcL7(J
 NeXTDecode: Not enough data for scanline %ld
 Need to specify a bone name.
@@ -21687,6 +21858,7 @@ No support for converting user data format to LogL
 No support for converting user data format to LogLuv
 No value found when unserializing key/value pairs for utldict
 No vertices selected by index and weight threshold.
+NoCollapse
 NoRole
 Node '%s' not allowed in this document type (%s)
 Node Name
@@ -21706,6 +21878,7 @@ Non-unique animation %s stream name :: %s
 Nonstandard tile length %d, convert file
 Nonstandard tile width %d, convert file
 Normal
+Normal Attribute Simplification Weight
 Normal Map
 NormalBias
 Not a JPEG file: starts with 0x%02x 0x%02x
@@ -21741,7 +21914,7 @@ O.@Jt;
 O0A9D$0u
 O8HcB
 O8HcY
-O=]*v
+O=m-x
 O?0 ,	f
 O?ffff
 O?installUpdateHandler@QAccessible@@SAP6AXPEAVQAccessibleEvent@@@ZP6AX0@Z@Z
@@ -21931,6 +22104,7 @@ PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
 PackHairStrandInfo
+PackToSharedVB
 PackedAABB_t
 Packing Material Particle System
 Packing Material Volume scale - to have more or less contents
@@ -22192,6 +22366,7 @@ Push mesh faces outward along their local normal. Optionally build shell geometr
 PushBack
 Pz}b!
 P~6-U~/W
+Q	V_sscanf
 Q A;U
 Q#@?9L,
 Q2XXR
@@ -22428,6 +22603,7 @@ Remapped width of the shadow penumbra
 Remove Behind
 Remove F_DETAIL_TEXTURE 1 and 2
 Remove Front
+Remove Small Components
 Remove a data stream (position, uv, etc.) from a mesh by name
 Remove all values from the list
 Remove bones that are not present in this allow-list.
@@ -22572,6 +22748,7 @@ S?palette@QGuiApplication@@SA?AVQPalette@@XZ
 S@,>OM
 S@;CPs,I
 SA3333;E
+SATAUAVH
 SATAUH
 SATAVAWH
 SATAVH
@@ -22624,6 +22801,7 @@ SUVWAWH
 SUVWH
 SUWATAUAVH
 SUWATAUAWH
+SUWATAVAWH
 SUWATAWH
 SUWAUAWH
 SUWAVAWH
@@ -22632,6 +22810,7 @@ SUWAWH
 SVATAUAVH
 SVATAUAWH
 SVATAUH
+SVATH
 SVAUH
 SVAWH
 SVWATAUAVAWH
@@ -22930,6 +23109,7 @@ Shrink Selection
 Shrink the selection by removing components that border unselected components.
 Shutting down Qt windows...
 Signal '%s' not compatible with slot '%s'
+Simplification test node.
 Simplify (Qem Error)
 Simulate
 Simulation Params Material
@@ -22986,6 +23166,7 @@ Slice a cuboid out of the target mesh by cutting away geometry outside of the bo
 Slice the mesh along a plane and optionally remove one side.
 SliceBox
 Slow Drag
+Small Component Size Percent
 Small Element Threshold
 Smooth Iterations
 Smooth Rate
@@ -23170,7 +23351,6 @@ Sync Track
 SystemAttributes
 SystemParametersInfoA
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T	V_sscanf
 T$ A;
 T$ E3
 T$ Ei
@@ -23181,6 +23361,7 @@ T$ Ic
 T$ Mc
 T$ fA
 T$ fD
+T$ ff
 T$ fff
 T$ t}
 T$"E3
@@ -23204,6 +23385,7 @@ T$0H;
 T$0Hc
 T$0I+
 T$0I;
+T$0Lc
 T$0Li
 T$0f;
 T$0tOA
@@ -23247,6 +23429,7 @@ T$XA;
 T$XD;s
 T$XE3
 T$XHcD$PH
+T$XHk
 T$XMc~HH
 T$`E3
 T$`H;
@@ -23270,12 +23453,17 @@ T$pE3
 T$pH;U
 T$pHcD$0L
 T$pI;
+T$pLcD$xH+
 T$pfD
 T$xD;{
 T$xE3
 T$xHc
+T$xHk
 T$xL+
-T-Tfw
+T%IR;
+T%hk2
+T%xp2
+T-DXy
 T0@GZ
 T5i@H
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
@@ -23339,6 +23527,7 @@ Target Hair Count
 Target Name
 Target Resource Name
 Target Source
+Target Triangle Percent
 Target Value
 Target Warp
 Target warps required at least one translation XY event!
@@ -23477,6 +23666,7 @@ Time Multiplier
 Time in seconds from the end of the animation over which it will fade out when it stops playing.
 Time in seconds from the start of the animation over which it will fade int when it starts playing.
 Tint CP
+TintColor
 Tip Mass
 Tip Parent Bone
 Tip Relative Offset
@@ -23615,6 +23805,7 @@ USAVI
 USAWH
 USER32.dll
 USVATAUAVAWH
+USVATAUAVAWI
 USVATAUAWH
 USVATAUAWI
 USVATAUH
@@ -23646,12 +23837,14 @@ USWATAUAVAWH
 USWATAUAWH
 USWATAUH
 USWATAVAWH
+USWATAVAWI
 USWATAVH
 USWATH
 USWAUAVAWH
 USWAUAVH
 USWAUAWH
 USWAUH
+USWAVAWH
 USWAWH
 UT$@A
 UUUU3
@@ -23659,6 +23852,7 @@ UUUUD
 UUUUUU
 UUUUUUU
 UUUUUUUUH
+UV Attribute Simplification Weight
 UV Map Cylinder
 UV Map Duplicate
 UV Map Planar
@@ -23737,6 +23931,7 @@ Unexpected missing default for %s
 Unexpected skinning defined on mesh %s
 Unexpected trailing tokens
 Unhandled IK solver type, %d
+Unhandled attribute %s, %i floats
 Unhandled color space: %d
 Unhandled data type %i in CModelStream::InterpolateValue()
 Unhandled name stack entry
@@ -23825,6 +24020,8 @@ Use Layer Sequence
 Use Per-Node Local Force and Rotation
 Use Pole Vector for Axis
 Use a higher quality solver for this joint. Improves accuracy / stiffness but increases CPU cost.
+UseBaseVertex
+UseTintColor
 User  Neg/Pos :: %8.4f, %8.4f
 User-Specified Color
 User-Specified MaterialGroup
@@ -23840,6 +24037,7 @@ UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
 UtlTokenizer_UnqescapeOrUnquoteString
 UwH;U
 UxtcD
+V	V_stricmp_fast
 V ?toolTip@QAction@@QEBA?AVQString@@XZ
 V6'?C
 V6E>`"(5
@@ -23861,7 +24059,6 @@ VBik001
 VConComm001
 VD$Pf
 VEngineCvar007
-VF<g9P
 VFileSystem017
 VJ}@q=
 VMAP_MANUAL_RECOMPILE
@@ -24016,6 +24213,7 @@ V_expd
 V_expf
 V_fabsf( 1.0f - pEdge->m_Normals[ 0 ].Length() ) < 0.001f && V_fabsf( 1.0f - pEdge->m_Normals[ 1 ].Length() ) < 0.001f
 V_fabsf( vWsStartDirection.Normalized().Dot( vWsHingeAxis ) ) < DEG2RAD( 1 )
+V_fmodf
 V_isempty( pAltMaterialSuffix ) || dstMat.altMaterialSuffix.IsEqual_FastCaseInsensitive( pAltMaterialSuffix )
 V_sscanf( pLODStr, "lod%d", &nLOD ) == 1
 V_sscanf( pValue, "%fx%f m", &vMeters.x, &vMeters.y ) == 2
@@ -24095,11 +24293,9 @@ Voronoi Plane Primitive
 Vortices
 Vrad3_001
 W%	s;M@
-W%7W;
 W(Aq=
-W-uX}
 W3|Uxa
-W=H:;
+W5`*8
 W?,|C
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -24123,6 +24319,7 @@ WAUAVAWH
 WAVAWH
 WDG,r3
 WIDGET DEBUGGER DELETING widget: 0x%p
+WIcT$
 WLcT$0I
 WLc\$0I
 WORLD
@@ -24167,6 +24364,7 @@ Weld Distance
 Weld Threshold
 Weld Vertices.
 Weld joint.
+WeldVertices
 Welds vertices within a threshold.
 What material this object is made of. Used for mass calculations, impact effects, surface decals, sounds, etc.
 What to replace matches with
@@ -24189,7 +24387,6 @@ Window
 WindowText
 Windows 10 Version 1903 (build 18362)
 With Hands
-Wj+udw
 Working Directory:
 Working directory:
 World Collision
@@ -24211,6 +24408,7 @@ WriteConsoleW
 WriteFile
 Wrong JPEG library version: library is %d, caller expects %d
 W{@3333
+X	V_strlower_fast
 X (Red   / Forward)
 X - Forward
 X @8u
@@ -24222,10 +24420,14 @@ X VWATH
 X VWAVH
 X zR&="@r
 X!t5~
-X%-R:
-X%B[:
-X%R5}
-X-j}:
+X%1:V
+X-,p2
+X-;`T
+X-In2
+X-cE0
+X-pu(
+X-v`<
+X5I`V
 X9t6@
 X=2v?
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
@@ -24273,24 +24475,25 @@ Xt7HH
 X|$ A
 X|$8E
 X|$LE
-Y	V_stricmp_fast
 Y (Green / Left)
 Y - Left
 Y ANb
-Y%)R:
-Y%s;P
-Y-,@2
-Y--{:
-Y5&U}
-Y5o7X
-Y5rS}
+Y%T7V
+Y-]]V
+Y-nn3
+Y-uyA
+Y-w:V
+Y5)<5
+Y5/_V
+Y5E=J
+Y5M\G
+Y5Y`V
+Y5aSv
+Y5x^i
+Y5zSv
 Y6	@W'g(
 Y8Hcy0H
 Y9"SD
-Y='U}
-Y=9?}
-Y=\7X
-Y=qa}
 Y>kX>M
 Y?3333E
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
@@ -24361,7 +24564,6 @@ Zx?HuS-
 Z|J'@X
 Z}uU 
 [	UoA
-[	V_strlower_fast
 [%1] %2
 [*ncd>0
 [-&LMb#{'
@@ -24397,6 +24599,7 @@ Z}uU
 \$ I+
 \$ L+
 \$ M+
+\$ UATAUAVAWH
 \$ UAVAWH
 \$ UH
 \$ ULcA
@@ -24472,6 +24675,7 @@ Z}uU
 \$8A_A]_^]
 \$8E3
 \$8E;
+\$8H+
 \$8H;
 \$8Hc
 \$8HcD$0H
@@ -24487,6 +24691,7 @@ Z}uU
 \$@H;
 \$@Hc
 \$@HcD$8H
+\$@I+
 \$@I;
 \$@Ic_
 \$@L+
@@ -24532,6 +24737,7 @@ Z}uU
 \$`D;
 \$`E3
 \$`E;
+\$`Hc
 \$`HcD$XL
 \$`Lc|$XI
 \$`fD
@@ -24553,6 +24759,7 @@ Z}uU
 \$pHc
 \$pHcD$hH
 \$pHc|$h
+\$pI+
 \$pu1H
 \$pu3H
 \$pu7H
@@ -24561,14 +24768,15 @@ Z}uU
 \$x9Yh
 \$xD;
 \$xH;
+\$xHc
 \$xHcD$pH
 \$xHct$pH
 \$xu3M
 \$|L+
 \$|Lc
-\%*}:
-\5y~T
-\=R~T
+\%oQ;
+\-O`T
+\5	.V
 \T$lHc
 \ffff
 \r@n|7'@^
@@ -24580,9 +24788,9 @@ Z}uU
 ]%h@sh
 ]'HcE
 ])6M>&
+]0HcM@A
 ]8A9^
 ]8A;^
-]=HfQ
 ]>)2X
 ]@D8mHt	H
 ]D$hH
@@ -24605,7 +24813,6 @@ Z}uU
 ^)8~@
 ^,tyI
 ^-wf"
-^5H,O
 ^<V7w
 ^?O<g
 ^?text@QPalette@@QEBAAEBVQBrush@@XZ
@@ -24623,7 +24830,8 @@ _%02d
 _%03d
 _%04d
 _0HcO@A
-_5C2[
+_5]"]
+_5o?j
 _8Hcs
 _8Hcw
 _@')UG3;
@@ -24982,8 +25190,12 @@ attachment
 attachment_key
 attachment_name
 attachment_type
+attr.m_nSizeFloats == GetNumComponentsForModelStreamType( nStreamType )
 attrName.m_Hash.IsValid()
 attr_name_match
+attributeAware
+attributeFaceVertexValues.Count() == nNumFaceVertices
+attributeVertexValues.Count() == nNumVertices
 attribute_picker
 attrs
 audioHardMinVelocity
@@ -25042,6 +25254,7 @@ bakedin
 balloffset
 barracuda
 basePlusDeltaPositions.Count() == nVertexCount
+baseValues.Count() == nNumValues
 base_damping
 base_forward_friction
 base_forward_max
@@ -25081,6 +25294,7 @@ bismuth
 bison
 black
 blendList
+blendWeightsAttr.m_nSizeFloats == blendIndicesAttr.m_nSizeFloats
 blend_anim_events
 blend_anim_list
 blend_time_seconds
@@ -25159,6 +25373,7 @@ burst_offset_cp
 burst_params_cp
 butterfly
 by this version of libtiff.
+c	V_tanf
 c [1>H'
 c tul)
 c(>\,
@@ -25316,6 +25531,7 @@ color$0
 color255
 color255alpha
 color32
+colorWeight
 color_alpha
 color_int
 colspan
@@ -25323,6 +25539,7 @@ combos
 command
 compRef.m_Handle != INVALID_MESH_COMPONENT
 comparison_mode
+componentType == MODEL_MESH_COMPONENT_VERTEX
 components
 compressedtangentframe
 compression
@@ -25394,6 +25611,7 @@ d$(Mk
 d$(fA
 d$(fD
 d$(fI
+d$0D+
 d$0D9d$@|LH
 d$0D;y
 d$0E+
@@ -25426,7 +25644,7 @@ d$HfA
 d$IfD
 d$LE3
 d$PA;
-d$PD;%
+d$PD;%8
 d$PE3
 d$PI9
 d$PL+
@@ -25448,6 +25666,7 @@ d$`L;e
 d$`LccPL
 d$`fD
 d$`fff
+d$`tIH
 d$`tLA
 d$`uGM
 d$dD;d$ltY
@@ -25589,6 +25808,8 @@ e1->m_nPlaceInDissolveQueue < 0
 e8A_A^A]A\_^[]
 e@A_A^A]A\_^]
 e@A_A^]
+e@D9eP|EH
+e@|EH
 eC:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
 eCount
 eDc?t
@@ -25707,12 +25928,14 @@ extract_rz
 extract_tx
 extract_ty
 extract_tz
+extracted.m_nIndexCount <= mesh.m_nIndexCount
+extracted.m_nVertexCount <= mesh.m_nVertexCount
 extracted_motion
 extrude_forward_axis
 extrude_radius
 extrude_sides
 extrude_twist
-f	V_tanf
+f,#/X
 f0 != f1
 f3EZf
 f4MaxDist
@@ -25808,6 +26031,8 @@ fWkrB
 f^7:!
 faceMergeAngle
 faceVertexGroupAssignments.Count() == nNumFaceVertices
+faceVertexHandles.Count() == vertexHandlesForFaces.Count()
+faceVertexIndices.Count() == nNumFaceVertices
 faceVerticesAxisU.Count() == pMesh->GetNumFaceVertices()
 faceVerticesAxisV.Count() == pMesh->GetNumFaceVertices()
 face_to_edge
@@ -26014,6 +26239,7 @@ function not supported
 funny
 future
 future already retrieved
+g < pMesh->m_nVertexStrideFloats
 g cMesh
 g default
 g)YNB
@@ -26472,6 +26698,7 @@ iterations
 iu+-,
 ivory
 i~g@sePmp
+j'6yGC
 j'Vlk
 j+dj@
 j,amL
@@ -26535,6 +26762,7 @@ l!;b	F
 l$ AVH
 l$ A^
 l$ Ai
+l$ D;c
 l$ E3
 l$ HcA
 l$ Lci
@@ -26591,6 +26819,7 @@ l$8A^A\^
 l$8D9mt
 l$8E3
 l$8E;
+l$8H9
 l$8Hk
 l$8IcD$
 l$8L;l$@t
@@ -26599,7 +26828,7 @@ l$8Mc
 l$8u&H
 l$8u1H
 l$<D;
-l$@;-%xn
+l$@;-
 l$@A+
 l$@A;
 l$@E3
@@ -26672,8 +26901,10 @@ l$hHk
 l$hMk
 l$hfD
 l$ht8A
+l$hu=H
 l$pA+
 l$pE3
+l$pIc
 l$pL;
 l$pLc
 l$p~-I
@@ -26682,6 +26913,7 @@ l$xHc
 l$xIcL
 l$xff
 l$xfff
+l$xu1H
 l$x~3I
 l2|X/gGe
 l6qnk
@@ -26715,6 +26947,7 @@ libyuv::RGB24ToI420( src, srcStride, pDestY, nLumaStride, pDestU, nLumaStride, p
 libyuv::RGBAToI420( src, srcStride, pDestY, nLumaStride, pDestU, nLumaStride, pDestV, nLumaStride, width, height ) == 0
 lifespan
 lifespanPP
+lightmap
 lineOrder
 linear
 linear_damping
@@ -26739,6 +26972,7 @@ local_vector
 localaxis
 localize
 locator_axis
+lockBorder
 lock_default_value
 lock_friction_0
 lock_friction_1
@@ -27103,6 +27337,7 @@ m_audioSounds
 m_axes
 m_bAcceptParentMaterialDrivenDecals
 m_bAdditive
+m_bAllocatedMeshData
 m_bBakedTwoSided
 m_bBoneMergeFlex
 m_bBringEngineToFront
@@ -27396,6 +27631,8 @@ m_lodBoneCounts
 m_lodCheckBoxes.IsEmpty()
 m_lodCheckBoxes[ li ]->isChecked()
 m_lodGroupSwitchDistances
+m_lodGroupSwitchDistances.Count() == inputMesh.m_lodGroupSwitchDistances.Count()
+m_lodGroupSwitchDistances[ i ] == inputMesh.m_lodGroupSwitchDistances[ i ]
 m_material
 m_materialGroups
 m_materials
@@ -27478,6 +27715,7 @@ m_nIndexCount
 m_nIndexMask + 1 == ( 1U << m_nIndexShift )
 m_nInfluences
 m_nJiggleParent
+m_nLODGroupMask == inputMesh.m_nLODGroupMask
 m_nMax
 m_nMin
 m_nMode == MODE_NONE
@@ -27740,6 +27978,7 @@ material_filter
 material_group
 material_group_count
 material_group_mode
+material_id
 material_name
 material_property
 material_search_path
@@ -27917,6 +28156,7 @@ n(H9n
 n/i,P@$
 n03>Pu
 n0I9n
+n2o)!k
 n8I9n
 n<	fE
 n<	fG
@@ -27924,8 +28164,10 @@ nAfterColor != -1
 nAlignFrameType >= 0 && nAlignFrameType < NUM_ALIGN_FRAME_TYPES
 nAlignToFrameType >= 0 && nAlignToFrameType < NUM_ALIGN_FRAME_TYPES
 nAttrIdx < MAX_SOA_FIELDS
+nAttributeCount
 nAxis >= X_AXIS && nAxis <= Z_AXIS
 nBeginDynamic
+nBlendWeightStreamCount == nNumExpectedBlendWeightStreams
 nBoneCtrl
 nBoneParent < pBoneStreamInfoList->Count()
 nBoneParent >= 0
@@ -27948,6 +28190,7 @@ nCount >= 1
 nCtrlChild
 nCtrlParent
 nCurrentIndex <= nMaxIndices
+nD$$H
 nD$PH
 nD$`f
 nDataSize > 0
@@ -27976,6 +28219,7 @@ nIndex >= 0
 nIndex >= 0 && nIndex < m_Children.Count()
 nIndex >= 0 && nIndex < m_nCount
 nIndex >= 0 && nIndex < nMemberCount
+nIndexOut == pMeshOut->m_nIndexCount
 nInit == VAR_INIT_OK
 nInputVertexStrideFloats >= nVertexStrideFloats
 nIsland < islands.Count()
@@ -27986,6 +28230,7 @@ nListBegin
 nListEnd
 nListIndex == nIndex
 nMapOffset
+nMaterialIdOffset != -1
 nMaxIndices >= ( ( nOrigVerts - 2 ) * 3 )
 nMaxIndices >= 6
 nMaxLengthIncludingNull < 0 || nMaxLengthIncludingNull >= 12
@@ -27997,6 +28242,7 @@ nNamespace >= 0 && nNamespace < MODELDOC_NAMESPACE_COUNT
 nNewBoneIndex < nNumBones
 nNewBoneIndex >= 0
 nNewHeight > 0
+nNewIndex < uint( nNewVertCount )
 nNewVert >= 0
 nNewWidth > 0
 nNode
@@ -28159,6 +28405,7 @@ nodes.IsValidIndex( nNode )
 non_bodygroup_single_choice
 none 
 normal
+normalWeight
 normal_3d
 normal_map
 normal_modulate_factor
@@ -28183,32 +28430,41 @@ n|$`fA
 o KPBf
 o!L9l$ t
 o$$fA
-o%$oS
-o%)!T
-o%*EQ
-o%8,Q
-o%HhQ
-o%T[Q
-o%TnS
-o%Z2Q
-o%^aQ
-o%nHQ
+o%(LU
+o%HWU
+o%OhV
+o%]6U
+o%]ZU
+o%aMU
+o%d3U
 o*Ral
 o,$fD
-o-'ZS
-o-XqS
+o-G]U
+o-MvU
+o-bQU
+o-fMU
 o47Lc
-o5(^S
-o52mS
-o545N
-o5@4N
-o5D8N
-o5R6N
-o5{pS
-o5|&T
-o5~8N
-o=&mS
-o=T&N
+o5!aV
+o5#WU
+o50gU
+o529U
+o5ESU
+o5HWU
+o5NvU
+o5PkU
+o5cgU
+o5ekU
+o5kXV
+o5l5S
+o="]U
+o=(aV
+o=3yU
+o=9dU
+o=:~U
+o=??U
+o=AxY
+o=]QU
+o=wfU
 o?ffff
 oAPfD
 oB)?@
@@ -28300,6 +28556,7 @@ output_name_prefix
 output_resolution
 output_stream_name
 output_vsnap
+overrideValues.Count() == nNumValues
 override_value
 overrideclass
 overwrite_existing
@@ -28403,6 +28660,7 @@ pDataEnd <= pBufferEnd
 pDefaultKeys
 pDefaultKeys != &g_NullKV3
 pDefaultValue->GetBasicType() == value.GetBasicType()
+pDeltaAttribute->m_bDelta
 pDestValue
 pDst == pLast
 pDstDocument != nullptr
@@ -28492,7 +28750,10 @@ pMesh->GetNumBones() == pPoseSkeleton->Count()
 pMesh->GetVertexComponentIndex( hV ) >= 0
 pMesh->RenameBone( CFmtStr( "__bone_%d", iNew ), pName )
 pMesh->RenameBone( pBoneName, CFmtStr( "__bone_%d", iOld ) )
+pMeshOut != nullptr
+pMeshOut->m_pIndices[i] < (uint32)nNewVerts
 pMeshPositions && pMeshPositions->Count() == nVertexCount
+pMeshVertexAttribute->m_nSizeFloats == 4 || pMeshVertexAttribute->m_nSizeFloats == 3
 pMeta
 pModelAnim
 pModelAnim->IsValidStream( nParentStream )
@@ -28553,6 +28814,7 @@ pOutVertexFaceCounts->Count() == pOutVertexList->Count()
 pOuter
 pOuterMap
 pOutput != nullptr
+pOutputModelMesh
 pParent
 pParent == nullptr
 pParent->GetCloneSourceDocument() == pSourceNode->GetDocument()
@@ -28591,6 +28853,7 @@ pSimWorldTransformsIn
 pSourceDoc
 pSourceMesh->GetMesh()
 pSrcDocument
+pSrcMesh
 pSrcParent
 pSrcParent->GetDocument() != this
 pSrcPosition >= m_pSrcStart && pSrcPosition <= m_pSrcEnd
@@ -28680,8 +28943,13 @@ pflOutWeights
 phase
 pheasant
 physics
-physicsjoint_cone
-physicsjoint_hinge
+physicsjoint_conical
+physicsjoint_null
+physicsjoint_prismatic
+physicsjoint_revolute
+physicsjoint_spherical
+physicsjoint_weld
+physicsjoint_wheel
 physicspreview
 physicspreviewrendermesh
 pick_type
@@ -28870,6 +29138,7 @@ references subasset (exact)
 relative_angles
 relative_origin
 remapOldToNew[ iBone ] == -1
+remapTable[ nMatchIndex ] != EMPTY_VALUE
 remap_from_max
 remap_from_min
 remap_max
@@ -28877,6 +29146,7 @@ remap_min
 remap_to_max
 remap_to_min
 remaps
+removeSmallComponents
 remove_behind
 remove_front
 remove_key
@@ -29068,6 +29338,7 @@ silver
 sim_material
 simulate
 sin pulse texture
+single_override_material
 size_t( s_Elements[ s ].m_nEnumerator ) == s
 sjdp?
 skeletonfilereference
@@ -29091,6 +29362,7 @@ slice
 slice_type
 sm_pConfigRegistry->m_nCount >= 0 && sm_pConfigRegistry->m_nCount < V_ARRAYSIZE( sm_pConfigRegistry->m_pInfo )
 small
+smallComponentSize
 small_element_threshold
 snail
 snake
@@ -29147,6 +29419,7 @@ src.m_nGuideIdx[ 0 ] <= 0x7FFF
 src.m_nGuideIdx[ 1 ] <= 0x7FFF
 src.m_nGuideIdx[ 2 ] <= 0x7FFF
 srcMesh.GetNumVertices() == pDestMesh->GetNumVertices()
+srcOffset == dstOffset
 srcStride == (width * 3)
 srcStride == (width * 4)
 srcStride == 0
@@ -29256,7 +29529,6 @@ t!D;&s
 t!HcA
 t!HcI
 t"Hc(H
-t"fff
 t#E;.s
 t#Ic4$A;t$
 t$ A+
@@ -29327,7 +29599,7 @@ t$(Lct$ H
 t$(fD
 t$(u4A
 t$09D$X
-t$0;5
+t$0;5k
 t$0;o8
 t$0A^_
 t$0A_A^
@@ -29387,6 +29659,7 @@ t$8u#H
 t$8x-Hc
 t$8~ H
 t$8~2H
+t$8~E
 t$@;o
 t$@A;
 t$@A;~H|
@@ -29491,6 +29764,7 @@ t$`}[H
 t$`~ H
 t$fff
 t$hD9`
+t$hD9}
 t$hE3
 t$hH9t$Ht
 t$hHc
@@ -29504,6 +29778,7 @@ t$pD9
 t$pD9'ufL9
 t$pE3
 t$pHc
+t$pI+
 t$pL+t$pH
 t$pfff
 t$pu3H
@@ -29525,6 +29800,7 @@ t$xLc
 t$xt*3
 t%D8 t H
 t%H9i t
+t%IcV
 t%fE9
 t&9N0t
 t&9o0t
@@ -29654,11 +29930,13 @@ tIf9wbH
 tKA;H
 tLIcD$
 tMHcV
+tMJc\>
 tN;C`sIH
 tNfE;
 tO@8(tJH
 tP@87uKH
 tPA;B`sJI
+tPKc\>
 tQIcV
 tQfD9 tK
 tR@8:tM3
@@ -29706,7 +29984,9 @@ tangent_3d
 tangent_and_flip
 tangentu_signv
 target
+targetError
 targetLayout.m_pBoxLayout
+targetTrianglePercent
 target_attribute
 target_attributes
 target_body
@@ -29794,6 +30074,7 @@ tlfff
 tm@80th3
 tmD83th3
 tmFrame2
+tmHc/;o
 tmHct$pH
 tn@88tiI
 tnIc.Lc#
@@ -29808,7 +30089,6 @@ to read "TransferFunction" tag
 to read TIFF directory
 toD9 }
 to_name
-todUm{
 toebone
 toeland
 toelift
@@ -30146,7 +30426,10 @@ type >= 0 && type < MODELDOC_SUBTYPE_COUNT
 type_invalid
 typesInitialized[ iType ]
 tyrannosaur
+tzMc,$E;l$
 t{;C`svH
+t|Lc'D;g
+t|Lc/D;o
 t~Hc>D
 u	D91
 u	fD;A
@@ -30159,7 +30442,6 @@ u$Hc?3
 u%9ktu 
 u%@8j(t
 u(@8shu
-u(H9u
 u(HcE
 u)HcB
 u)HcE
@@ -30199,6 +30481,7 @@ uED8r(t
 uFA9l$
 uFD9U
 uGf9y
+uHH9u
 uH|EH
 uIE9F
 uMA9l$
@@ -30282,6 +30565,7 @@ use_local_attach_point_offset
 use_mass_center_override
 use_new_pole_vector_for_axis
 use_per_node_local_force_and_rotation
+use_single_material
 usedTris.IsAllSet( )
 usemtl initialShadingGroup
 user_animation_float
@@ -30289,6 +30573,7 @@ user_specified_color
 user_specified_materialgroup
 uses_range
 utKf;
+uvWeight
 uvmapcylinder
 uwH;u
 uwIcN
@@ -30397,6 +30682,7 @@ vpost
 vs. codegen '
 vsnap
 vulture
+vwD]Bg
 v}`[>
 w(D;\$4
 w+OQvr
@@ -30414,6 +30700,7 @@ w@H91t
 wE@)@
 wEDM@
 wP9AR
+wTHc;
 wXHcGPH
 waiting_group
 walrus
@@ -30482,7 +30769,6 @@ x!;;}
 x!A;Fx}
 x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
 x$A;]
-x%;=,
 x%fff
 x%i (
 x'A;n
@@ -30499,11 +30785,12 @@ x<H9{0
 x=HcS
 x>V6'
 x>V6'?C
-x@;=k
+x@;=[Q
 xA\^][
 xA]A\^[
 xA]A\_^
 xA^A]
+xA^A]A\[
 xA^A]_^][
 xA^^[]
 xA^_][H
@@ -30555,6 +30842,7 @@ z/u-A
 z/u-E
 z6$r@ffff.N
 z8u6H
+z;u9Hc+H
 zD?fffff*
 zY;>u:m	
 zebra
@@ -30609,6 +30897,7 @@ zm6Vb
 |$ A;
 |$ ATAUAVAW
 |$ ATAUAVAWD
+|$ ATAUAVAWHcA 3
 |$ ATAUAVAWL
 |$ ATAVAW
 |$ ATAVAWH
@@ -30629,6 +30918,7 @@ zm6Vb
 |$ E3
 |$ E;
 |$ H+
+|$ H9
 |$ H;
 |$ Hc
 |$ Hk
@@ -30647,6 +30937,7 @@ zm6Vb
 |$ UH
 |$ ff
 |$ fff
+|$ t@Mc~ 3
 |$ ti
 |$ u#H
 |$ u*
@@ -30669,6 +30960,7 @@ zm6Vb
 |$(E3
 |$(Hc
 |$(Ic
+|$(L+
 |$(L9g
 |$(Lcl$ D
 |$(WEBP
@@ -30719,6 +31011,7 @@ zm6Vb
 |$<;{0
 |$@-D
 |$@@8h
+|$@A9D
 |$@A_A^A]A\
 |$@D;
 |$@D;|$x
@@ -30730,6 +31023,7 @@ zm6Vb
 |$@HcL$<H
 |$@Hc]@Mc
 |$@Hc~
+|$@I+
 |$@I;
 |$@Ic
 |$@Ic^xH
@@ -30755,6 +31049,7 @@ zm6Vb
 |$HHc9
 |$HHcULA
 |$HHct$@H
+|$HHcy H
 |$HI+
 |$HI;
 |$HLc
@@ -30768,7 +31063,7 @@ zm6Vb
 |$H~!H
 |$LB9<
 |$P9)~:D
-|$P;=
+|$P;=M
 |$P;k8
 |$PD;
 |$PE3
@@ -30796,6 +31091,7 @@ zm6Vb
 |$XH;|$x
 |$XHc
 |$XHcU
+|$XHc\$PL
 |$XIc
 |$XL9
 |$XL;
@@ -30818,6 +31114,7 @@ zm6Vb
 |$`u"M
 |$`u=H
 |$`|LH
+|$`~ H
 |$hA;u
 |$hCi
 |$hD;q
@@ -30835,6 +31132,7 @@ zm6Vb
 |$p+x
 |$p9{
 |$p;{
+|$pA+
 |$pD;
 |$pE3
 |$pE;
@@ -30844,6 +31142,7 @@ zm6Vb
 |$pIc}
 |$pIk
 |$pL;
+|$pM+
 |$xA+
 |$xE3
 |$xH;
@@ -30922,6 +31221,7 @@ zm6Vb
 ~ Hcv
 ~'fff
 ~*fff
+~+HcC$H
 ~,*u<I
 ~,*uEI
 ~,HcL$TIc
@@ -30931,6 +31231,7 @@ zm6Vb
 ~0AffffN
 ~31]H
 ~6fff
+~7fff
 ~8Mc~0I
 ~<fff
 ~=A;G

@@ -602,7 +602,7 @@
 #ammo_panel
 {
 	y: 85px;
-	x: 50%;
+	x: 49%;
 	vertical-align: center;
 	horizontal-align: left;
 	margin-left: 0px;
@@ -739,5 +739,50 @@
 .excluded .crosshair__dot,.excluded .crosshair__dotborder,.attack_disabled .crosshair__dot,.attack_disabled .crosshair__dotborder
 {
 	visibility: collapse;
+}
+
+#parry_unavailable
+{
+	width: 40px;
+	height: 40px;
+	background-image: url("s2r://panorama/images/hud/modifiers/icon_parry.vsvg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	y: 55px;
+	x: 55%;
+	vertical-align: center;
+	wash-color: #e75b5b;
+	visibility: collapse;
+	animation-name: parry_unvailable;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.parry_on_cooldown #parry_unavailable
+{
+	visibility: visible;
+}
+
+@keyframes 'parry_unvailable'
+{
+	0%
+	{
+		opacity: 0.8;
+		brightness: 1;
+	}
+	
+	50%
+	{
+		opacity: 1;
+		brightness: 1.8;
+	}
+	
+	100%
+	{
+		opacity: 0.8;
+		brightness: 1;
+	}
+	
 }
 

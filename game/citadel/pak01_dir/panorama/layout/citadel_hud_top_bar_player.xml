@@ -110,5 +110,6 @@
 				<CitadelHudModBarGraph id="ModsBarGraph" />
 			</Panel>
 		</Panel>
+		<Panel id="SpectatePlayerButtonPanel" onmouseover="$.GetContextPanel().AddClass(&apos;SpectateHover&apos;)" onmouseout="$.GetContextPanel().RemoveClass(&apos;SpectateHover&apos;)" />
 	</CitadelHudTopBarPlayer>
 </root>

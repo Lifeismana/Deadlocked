@@ -452,6 +452,7 @@ $^fE;
 )|$PK
 )|$`E
 )|B?d!
+*	V_log2_uint
 *;Eot	;Ew
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
@@ -475,7 +476,7 @@ $^fE;
 ,Icl$
 ,W5y+
 ,X< w
--	V_log2_uint
+-	V_logd
 -BH>t
 -adapter
 -autoconfig
@@ -504,6 +505,7 @@ $^fE;
 -threads
 -tools
 -vulkan
+.	V_logf
 ..om?
 .00cfg
 .>PJ;I:qE>
@@ -666,11 +668,9 @@ $^fE;
 .xJ>Hf
 .xdata
 .xdata$x
-/,cYO
 /2GG>!B
 />58d%
 /TF<)VGy#WH
-0	V_logd
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -704,7 +704,6 @@ $^fE;
 0iN>/
 0w0c1
 0}0i1
-1	V_logf
 1#IND
 1#INF
 1#QNAN
@@ -719,11 +718,12 @@ $^fE;
 220323000000Z
 220801000000Z
 230714000000Z
-240704151209Z0/
+240711145926Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2LcJ L
+2dMzTW
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 311109235959Z0b1
@@ -734,7 +734,6 @@ $^fE;
 3>N;kU
 3>fvw
 3mq+<
-48+*e9dA
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5;FJ$,XEK4<
 5FjiT
@@ -744,7 +743,6 @@ $^fE;
 6:%+H
 6I]Dc
 6OB,n_
-6Zb"=
 7&F|If
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
@@ -764,6 +762,7 @@ $^fE;
 8b  16-May-2010
 8ke?;
 8vtext
+9	V_powd
 9)~P3
 97tmD
 98t H
@@ -792,6 +791,7 @@ $^fE;
 9s|~%H
 9t$Pu	
 9{\~9H
+:	V_powf
 :>)*	v
 :>t6k'
 :ALPHD
@@ -799,6 +799,7 @@ $^fE;
 :VP8 tP
 :VP8LtHD
 :VP8X
+;	V_qsort
 ;.u1L
 ;?0123456789:;<=>?
 ;Cxr*H
@@ -809,7 +810,7 @@ $^fE;
 ;L$<|
 ;\$p|
 ;|$8|
-<	V_powd
+<	V_qsort_s
 <	w	@
 < t=<	t9
 <0:08
@@ -828,17 +829,15 @@ $^fE;
 <unknown multisample type
 <unknown>
 <utK@:
-=	V_powf
+<|q'9W
 =SPB8u*
 =SPB8ue
 =imb;D
 =rIQU
->	V_qsort
 >0<0:
 >L9|$xt
 >Mp$d
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?49HoKC
@@ -1237,7 +1236,6 @@ BayerGreenSplit
 Bellevue1
 BenchmarkService001
 BestQualityScale
-BfM'H'
 Biases the mip level the texture streaming system choses to stream for each texture.
 BinaryProperties_GetValue
 Bitmap_t::GetColor
@@ -1386,16 +1384,16 @@ CRenderContextEmpty::SetViewports
 CRenderDeviceBase
 CRenderDeviceBase::AcquirePooledDynamicConstantBuffer
 CRenderDeviceBase::AllocatePooledIndexBuffer
-CRenderDeviceBase::AllocatePooledIndexBuffer(3627): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3663): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3629): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3665): 
 CRenderDeviceBase::AsyncSetTextureData(3284): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3531): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3533): 
 CRenderDeviceBase::CreateConstantBuffer
 CRenderDeviceBase::CreateConstantBuffer(1584): 
 CRenderDeviceBase::CreateConstantBufferInternal
 CRenderDeviceBase::DestroyConstantBuffer
 CRenderDeviceBase::EnableAsyncPresent
-CRenderDeviceBase::EndRenderDocCapture(3517): 
+CRenderDeviceBase::EndRenderDocCapture(3519): 
 CRenderDeviceBase::FindOrCreateTexture
 CRenderDeviceBase::FindOrCreateTexture(1764): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
@@ -1416,7 +1414,7 @@ CRenderDeviceBase::Present(631):
 CRenderDeviceBase::ResizeEngineWindow
 CRenderDeviceBase::SetCubemapRadianceSHConstants
 CRenderDeviceBase::SetCubemapRadianceSHConstants::<lambda_1>::operator ()
-CRenderDeviceBase::StartRenderDocCapture(3504): 
+CRenderDeviceBase::StartRenderDocCapture(3506): 
 CRenderDeviceEmpty::DestroyConstantBuffer
 CRenderDeviceEmpty::InitDevice
 CRenderDeviceMgrBase::AddDeviceEventListener
@@ -2108,11 +2106,10 @@ H-^Eu
 H3N I
 H4IcH8H
 H9(tO
+H9-		
 H90u'
-H95-J
 H97u+A
 H98t$H
-H9=$\
 H9G(t
 H9L$8
 H9L$Ht?H
@@ -2343,6 +2340,7 @@ JPEG datastream contains no image
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
 JPEGMEM
 January
+K	V_snprintf
 K 9s 
 K H9K0u
 K&>.yC
@@ -2468,7 +2466,6 @@ L$pf;
 L$pff
 L$xA+
 L$xf;
-L9%[^
 L97vH
 L9AHA
 L9aHA
@@ -2555,6 +2552,7 @@ LogLuvInitState
 LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
+M.od:\
 M8fD;
 M8tEL
 M;P s(I
@@ -2617,7 +2615,6 @@ Model
 ModelDocUtils001
 Monday
 MultiByteToWideChar
-N	V_snprintf
 N3`d?
 N>O=I9
 NAN(IND)
@@ -2704,7 +2701,6 @@ PNG exceeds maximum uncompressed size limit!
 PSDReadCompressedChannelsInternal
 PSDReadFileRGBA8888
 PSDReadUncompressedChannels
-PYQN=
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
@@ -2764,6 +2760,7 @@ PropertyEditorSystem_001
 PxHc>E3
 Pz}b!
 P~6-U~/W
+Q	V_sscanf
 Q2XXR
 Q5rHg,>
 QD9Ql
@@ -2883,13 +2880,6 @@ RenderSystem/MinDXLevel
 RenderSystem/MinStreamingPoolSizeMB
 RenderSystem/MinStreamingPoolSizeMBTools
 RenderUtils_001
-Rendering/Constant Buffers (MB)
-Rendering/Index Buffers (MB)
-Rendering/Texture Non-Evictable Size (MB)
-Rendering/Texture Pool Size (MB)
-Rendering/Texture Resident Size (MB)
-Rendering/Texture Unthrottle Streaming
-Rendering/Vertex Buffers (MB)
 Rendersystem/SheetCacheTextureCols
 Rendersystem/SheetCacheTextureRows
 Requested feature was omitted at compile time
@@ -2911,7 +2901,6 @@ RtlPcToFileHeader
 RtlUnwind
 RtlUnwindEx
 RtlVirtualUnwind
-S*qLB*
 S,;S(~9D
 S0Q0O
 S93uFH
@@ -3022,7 +3011,6 @@ Success
 Sunday
 Suspension not allowed here
 SwizzlePlanarScanlineToInterleaved
-T	V_sscanf
 T$ Ei
 T$ H9
 T$ H;
@@ -3209,6 +3197,7 @@ UserSettingsPathID
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
+V	V_stricmp_fast
 V6E>`"(5
 VATAUAVH
 VAUAVH
@@ -3228,7 +3217,6 @@ VPhysics2_Handle_Interface_001
 VPhysics2_Interface_001
 VProcessUtils002
 VProfService_001
-VProf_FindOrCreateCounter
 VRenderDeviceSetupV001
 VScript
 VScriptDbg
@@ -3345,8 +3333,6 @@ XMLPacket
 XPosition
 XResolution
 XYZ, Luv
-X`j<4
-Y	V_stricmp_fast
 Y9"SD
 Y>kX>M
 YCbCrCoefficients
@@ -3433,6 +3419,7 @@ Zpm"U
 \$pE3
 \$pHc
 \$xu3M
+]	V_strtoi64
 ])6M>&
 ]>)2X
 ]J<0"0i3
@@ -3467,7 +3454,6 @@ _logb
 _nextafter
 _oD>Kg
 _tools.txt
-`	V_strtoi64
 `+!]?
 `.rdata
 `;k8|
@@ -4423,13 +4409,13 @@ unknown exception
 unknown header flags set
 upD9`hujD9
 uufff
-uv`iD\
 ux@8l$0t>
 uzKs@>
 v I;^8u
 v/D9+
 v0H9{0
 v2!L.2
+v2.}D
 v;A+o
 v=Y]Bv
 v@D8s(t
@@ -4487,6 +4473,7 @@ xSM;H
 xXH;A
 xXM;H
 x^j=|
+x_9&bP
 xlH;{
 xnH;~
 xs == 0
@@ -4592,6 +4579,7 @@ zY;>u:m
 }OLcCxL
 ~ $s%r
 ~5LcS
+~6IYi=R
 ~6fE;
 ~II9}
 ~L@8~8u

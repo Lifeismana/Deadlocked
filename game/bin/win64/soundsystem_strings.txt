@@ -3,7 +3,7 @@
 			Sequence:	%s
 		%.*s
 		Instrument: %s
-		V_fread
+		V_frexpf
 	 The lexer was matching from line %d, offset %d, which
 	 This indicates a poorly specified lexer RULE
 	 dspmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f
@@ -36,10 +36,9 @@
 	Sample Rate:	%d
 	Track: %s
 	VOL: %f
-	V_fmodf
 	V_fopen
 	V_fprintf
-	V_frexpf
+	V_fread
 	V_fseek
 	V_ftell
 	V_vsnprintf
@@ -55,6 +54,7 @@
 	_V_strncpy
 	_V_strnicmp_fast
 	_V_wcsncpy_bytes
+	d`PdIK
 	fA9N(D
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
@@ -152,7 +152,6 @@
  Hc)E3
  Hc)H
  Hc)L
- Hc-a
  Hc1H
  Hc1L
  Hc9H
@@ -246,7 +245,6 @@
 #L9d$ht
 #OS_Default_Device
 #Qn/"
-#^}_5
 #|?7o|?
 $	t	/
 $$BD#`
@@ -381,7 +379,6 @@ $toolgraphs
 (%d,%d)
 (%s) %d
 (%s:%s) 
-(%}(7
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (8GXgw
@@ -575,6 +572,7 @@ $toolgraphs
 (|$pD
 (|$pI
 (|$pL
+)	V_log10f
 )18>BFJMPSVX[]_acegiklnpqstvwyz{}~
 )7ESbp
 )<$vr
@@ -795,7 +793,6 @@ $toolgraphs
 +h->|
 +o'q)}
 +w?FFv?
-,	V_log10f
 , at <EOF>
 , at offset %d
 , near %s
@@ -846,6 +843,7 @@ $toolgraphs
 -unknown source-
 -unknown source-(
 -windowsaudio
+.	V_logf
 ..om?
 .00cfg
 .9GXdx
@@ -1604,6 +1602,7 @@ $toolgraphs
 /GTs(
 /GTv 
 /J(r8
+/MXrJ
 /Mc4$E
 /O,s0H
 /Q,w$I
@@ -1622,6 +1621,7 @@ $toolgraphs
 0 0 0 255
 0 360
 0 = use biquad instead of svf, 1 = use vectorized svf, 2 = use scalar svf
+0(\-}b
 0.000000
 0.1 10
 0.1 16000
@@ -1675,7 +1675,6 @@ $toolgraphs
 0|t?L
 0|t?uj
 0}0i1
-1	V_logf
 130801120000Z
 1:1: Tokens : ( T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
 1<.	/>:
@@ -1690,14 +1689,12 @@ $toolgraphs
 220323000000Z
 220801000000Z
 230714000000Z
-240704151246Z0/
+240711150029Z0/
 241009235959Z0a1
-2@8-Z8?
 2C $ 2
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2E9J(t)H
-2MP~z
 2YA1H
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
@@ -1737,7 +1734,6 @@ $toolgraphs
 6uu?>
 6uu?uj
 70503
-7I%_I
 7K[iu
 7YA1H
 7h>?8
@@ -1751,7 +1747,6 @@ $toolgraphs
 82Pa8
 89Cpu
 8>0RF>
-8@%W;
 8A\_[]
 8A]A\_^
 8A]^][
@@ -1780,19 +1775,24 @@ $toolgraphs
 8f;o(
 8ke?;
 8}WW`
+9	V_powd
 9)~EH
 9)~P3
 9*t8H
 9*t:H
+9-@GD
+9-v>C
 90~f3
 91~SL
 92t:H
 94(t*@8|( u#H
-95	M7
+95"fD
+95<fD
 98t H
 99jd9
 99~QH
 9;~wL
+9=0ZC
 9=aA\E
 9>~>E3
 9>~NH
@@ -1871,6 +1871,7 @@ $toolgraphs
 9|$Pu
 9|$Xu
 9|$xu
+:	V_powf
 : %s::
 : lexer error %d :
 :!|$ 0
@@ -1880,11 +1881,11 @@ $toolgraphs
 :?(\O?
 :E9J(t)H
 :H?'mK?
-:P?</
 :YA1H
 :^V=/
-;-r=C
-;=cZC
+;	V_qsort
+;=!<C
+;=;L7
 ;?%L+
 ;?Bh9?
 ;?uX;?
@@ -1908,7 +1909,7 @@ $toolgraphs
 ;t$X|
 ;wp}.H
 ;|$x|
-<	V_powd
+<	V_qsort_s
 <	t:<
 <	u%H
 <	u)Icn
@@ -1948,7 +1949,6 @@ $toolgraphs
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=	V_powf
 =&~g>&"2?
 =YA1H
 =`#I>
@@ -1957,7 +1957,6 @@ $toolgraphs
 =imb;D
 =rF`JXKXWJYB[Cd;l2x(z%a+N2SNTQXKVJWGZI]J]Jm(r$u"u"
 =rIQU
->	V_qsort
 >0<0:
 >0|t?L
 >0|t?z7
@@ -1983,7 +1982,6 @@ $toolgraphs
 >wcv?>
 >wcv?uj
 >~a)>
-?	V_qsort_s
 ?	g	2	
 ?!AfJ+
 ?333333
@@ -2207,19 +2205,17 @@ $toolgraphs
 @8/ti3
 @8/tl3
 @80tDE
+@80tGH
 @80tL
 @80uj
 @83t`3
 @83te3
 @83ti3
 @84)u
-@85Co9
-@85UI?
 @87ti3
 @88t^H
 @8<(u
 @8<.u
-@8=<%D
 @8h,t
 @8j(t
 @8k(t
@@ -2261,7 +2257,8 @@ $toolgraphs
 @A__^
 @C u9A
 @Hc13
-@Hc5_
+@Hc5/
+@Hc5o
 @HcA03
 @LcIPI
 @SATAVAWH
@@ -2397,6 +2394,7 @@ $toolgraphs
 @fE;|
 @l?O#m?
 @public.%s
+A	V_roundf
 A D9a 
 A HcI
 A(f9G
@@ -3459,6 +3457,7 @@ CSosOperatorSystem::OverwriteOpVarsParseKV3
 CSosOperatorSystem::RemoveSoundEventListener::<lambda_1>::operator ()
 CSosOperatorSystem::SetOpField: Unable to find operator stack %s
 CSosOperatorSystem::SetOpField: Unable to find operator stack from guid %d
+CSosOperatorSystem::StartSoundEvent Unable to find soundevent "core.empty" 
 CSosOperatorSystem::StartSoundEvent Unable to find soundevent %s
 CSosOperatorSystem::StartSoundEvent Unable to start soundevent %s
 CSosOperatorSystem::StartSoundEvent called with invalid soundevent hash
@@ -4573,7 +4572,6 @@ Currently sets a single float operator field
 Curves
 Cutoff Freq
 Cutoff Frequency
-D	V_roundf
 D W?{W
 D!l$xA
 D$ !H
@@ -4794,7 +4792,6 @@ D8 t@
 D8 tP
 D8 tV
 D8 th
-D8%h]4
 D8'tf3
 D8+tJ
 D80t;L9
@@ -4814,13 +4811,13 @@ D8?t`3
 D8c4t
 D8h,u
 D8o@t 
-D8t$X
 D8t$ht
 D8x,t	H
 D8{8t
 D8{tu#
 D8|$P
 D8|$Pu H
+D8|$X
 D8|$Xt E
 D8~B|
 D9	~SE
@@ -4830,9 +4827,6 @@ D93tUH
 D9:u(A
 D9;~-H
 D9;~EL
-D9=.SC
-D9=mRC
-D9=wu7
 D9APueL
 D9CDtc
 D9C`~JE3
@@ -4877,6 +4871,7 @@ D9}0t3
 D9}d~
 D9~t~
 D:G,LcG
+D;5BPC
 D;8}1H
 D;;}	
 D;C }
@@ -4999,12 +4994,12 @@ Downward Ratio
 Drive (dB)
 Dry/Wet
 DspPresetModifiers
-DuDE3
 Dump a record of current soundevents and profile data
 Dump main graph control output values
 Duration for which path remains visible. Should be close to update rate of the sound operator stack.
 Duration: %f
 Dynamic
+D}<E3
 E A;E
 E E+N,F
 E#J$A
@@ -5196,6 +5191,7 @@ Event Name
 Event VSNDS:
 Event: %s
 Events
+ExHcT$PH
 Exclude Stopped Sounds from Count
 ExitProcess
 Exponential
@@ -5205,6 +5201,7 @@ ExternalNameForInternalType
 Extra taps
 Extract Source
 Extraneous token
+F	V_sincosf
 F	t,P
 F HcF$H
 F Nc$
@@ -5212,7 +5209,6 @@ F$HcF(H
 F(A;F,
 F(HcF,H
 F,HcF0H
-F,s7E
 F0A9,
 F0D9 ~aI
 F0HcF4H
@@ -5332,6 +5328,7 @@ G$D8;I
 G(;G,
 G(L9t$@t
 G*fA9B*
+G,s7E
 G-8B-
 G-LcG
 G.2C.$
@@ -5483,6 +5480,7 @@ G|$(L
 G|$HA
 G|$XI
 G|$hD
+H	V_sinf
 H HcH
 H UATAUAVAWH
 H USWH
@@ -5502,19 +5500,14 @@ H0f9O
 H8B;\1
 H8HcH0D
 H9(tO
-H95+F
-H95+d
-H953-
-H956E
-H95W	<
+H956d
+H95Qd
+H95wc
 H97u+A
 H97uGL
 H98t2
 H9;t	H
 H9<(u
-H9=)?D
-H9=)K
-H9=E`
 H9>u/H
 H9A(u
 H9D$Pu>I
@@ -5708,7 +5701,6 @@ HighPass
 Highest
 HostStateMgr001
 Hovering voice %i, you could debug draw something too
-I	V_sincosf
 I 	A0
 I could not work out what I was expecting, like so many of us these days!
 I |0E
@@ -5717,7 +5709,6 @@ I89Q4w
 I9.t	I
 I98tKI
 I9>u*H
-I:Zx?X
 I<OXb<^
 IAgf0Bgf0Bgf0Bgf0B
 IAudioMixer::SetTimeScale
@@ -5898,12 +5889,13 @@ IsValidFieldDataType( nDataType )
 IsValidIndex( i )
 IsValidIndex( nIndex )
 IsValidIndex(i) && (i != InvalidIndex())
+J	V_sinhf
 J(IcB
 J(IcB A
 J8H99t
 J>@G_
 January
-K	V_sinf
+K	V_snprintf
 K Ic6
 K UWAUAWH
 K&>.yC
@@ -6006,6 +5998,7 @@ L$(fD
 L$,fD
 L$/Lc
 L$0A+
+L$0D+
 L$0D9
 L$0D;
 L$0E3
@@ -6022,7 +6015,6 @@ L$0M+
 L$0fD
 L$0fH
 L$0fI
-L$4D+
 L$4H;
 L$4L+
 L$8A;
@@ -6069,7 +6061,6 @@ L$XE3
 L$XH;
 L$XxoL
 L$`D+
-L$`D9
 L$`D;D$h
 L$`E3
 L$`H3
@@ -6109,13 +6100,15 @@ L9(tMA
 L9.t	H
 L9.u~H
 L90t 
-L95"`
-L953_
-L95I?<
-L95_\D
-L95no'
+L95)j'
+L95Gi'
 L9<(t
-L9=|u'
+L9=7p'
+L9=Bq'
+L9=Cn7
+L9=]q'
+L9=ao'
+L9=mp'
 L9bHt
 L9bPt
 L9bPu
@@ -6187,7 +6180,7 @@ LcCP3
 LcCp3
 LcD$,
 LcD$03
-LcD$`H
+LcD$PH
 LcE8I
 LcHxH
 LcK H
@@ -6290,9 +6283,7 @@ Low EQ gain (dB)
 LowPass
 Lowest
 Lowpass4Tap
-M	V_sinhf
 M D8}
-M H;M8
 M HcE
 M HcW
 M"IcB
@@ -6451,7 +6442,6 @@ Music volume
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 MwIcq8
 Mx;L$ 
-N	V_snprintf
 N Hcw03
 N(H9n
 N.tGD
@@ -6704,6 +6694,7 @@ PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown
 Px9\$(t
 Px9\$(t	H
 Pz}b!
+Q	V_sscanf
 Q5rHg,>
 Q>0P7>
 QA;S`}
@@ -7174,6 +7165,7 @@ Starts Event(s): %s
 Starts VSND: %s
 Starts a specified soundevent
 Starts a specified soundevent at the given position
+Starts a specified stack via an empty soundevent
 Starts the specified arrangement.
 Static
 Static field count mismatch (codegen %d vs. meta %d) for %s (should be CVoiceContainerBase)
@@ -7199,7 +7191,6 @@ Sunday
 Sustain target amplitude
 Sustain time (ms)
 SystemAttributes
-T	V_sscanf
 T$ E3
 T$ H;
 T$ Hi
@@ -7526,6 +7517,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
+V	V_stricmp_fast
 V(t:H
 V6E>`"(5
 V?V/V?
@@ -7770,6 +7762,7 @@ V_cosf
 V_coshf
 V_expf
 V_fclose
+V_fmodf
 V_~]	,
 Value Operator Offset: %i
 Value Stack Offset: %i
@@ -7847,6 +7840,7 @@ WriteFile
 Wrong arg count for '%s' %d, expected 1
 Wrong arg count for '%s' %d, expected 2
 Wrong arg count for '%s' %d, expected 3
+X	V_strlower_fast
 X 843"8
 X UVAVH
 X UVWATAUAVAWH
@@ -7870,12 +7864,11 @@ XB r+
 X\$xf
 X_^[]
 Xt$PA
-Y	V_stricmp_fast
-Y5&[7
-Y5e3+
+Y	V_strnchr
+Y5;R3
+Y5V[7
 Y7D9.
 Y9"SD
-Y=vG7
 Y>kX>M
 Y?'WY?
 YD$ A
@@ -7898,7 +7891,6 @@ ZPKE?81("
 ZW][Rbmxv
 Z\>z8
 Zod(^?
-[	V_strlower_fast
 [ 0.005714, 0.3, 1.083, 1.083, 2.0, 3.0 ]
 [ 1.0, 1.0, 0.227125, 0.227125, 2.0, 3.0 ]
 [%f,%f,%f,%f,%f,%f]
@@ -7907,7 +7899,7 @@ Zod(^?
 [Index: 
 [K]taM?
 [_?'N
-\	V_strnchr
+\	V_strtod
 \$ ATAVAWH
 \$ AVH
 \$ A_A^A\
@@ -8035,6 +8027,8 @@ Zod(^?
 ] D9[D
 ])6M>&
 ]0IcM@;
+]55)4
+]5:Z4
 ]>)2X
 ]?K[`?n
 ]@A;\$
@@ -8043,7 +8037,7 @@ Zod(^?
 ]Tfff
 ]`u0A
 ]xIcJ
-]|_q\
+^	V_strtok
 ^ H9^
 ^<IUr&
 ^?sYa?
@@ -8051,9 +8045,9 @@ Zod(^?
 ^RfN>
 ^\HcNlI
 ^hmpsv
-_	V_strtod
 _ ;_$t
 _(9w0
+_8F k
 _?K<`?
 _CustomCommand
 _CustomCommand%d
@@ -8180,7 +8174,6 @@ _voicegraph
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_strtok
 a&M-=Z]<i*k)n-t&q&p&|
 a7hIw
 a?wSa?\
@@ -8274,6 +8267,7 @@ audio_device_init_params_t::OverrideSpeakerConfig
 audio_input_test_signal
 auto.convar.
 auto_connect_public_fields
+b	V_tand
 b#M**y`Bl+o(u,{ x$w!
 b?^Cy
 bAllocationCanFit
@@ -8320,11 +8314,11 @@ bool8
 bp(=>?g
 broken pipe
 buffer too small
+c	V_tanf
 c D8c7trH
 c [1>H'
 c(>\,
 c0&>`
-c;=/MC
 c?FA@s}
 cB$$"$""""SE$4"tfFDD
 cached_fp == invalid_function_sentinel()
@@ -8400,6 +8394,7 @@ convar
 convar_get
 convar_set
 core.default
+core.empty
 core.null
 core.voip
 core_update_default
@@ -8554,7 +8549,7 @@ dump_audio_input
 duration
 dynamicEQScale
 d~?i3~?A
-e	V_tand
+e	V_tanhf
 e A_A^A]A\]
 e(L9e t
 e0A_A^A]A\]
@@ -8589,7 +8584,6 @@ executable format error
 execute_once
 exit_if_blocked
 expression
-f	V_tanf
 f$;Iu
 f9)u4H9j
 f98tN
@@ -8745,7 +8739,6 @@ greater_than
 greater_than_or_equal
 groups
 gx>/'u>
-h	V_tanhf
 h VWATAVAWH
 h;aW~<
 h>1my
@@ -9290,7 +9283,7 @@ l$XI;
 l$XMc(L
 l$X~3I
 l$`D+
-l$`Hc-
+l$`Hc-qz;
 l$`I;
 l$`fA;
 l$`~9L
@@ -9884,6 +9877,7 @@ mute: %3.2f
 muteTrackList
 mwtMH
 n L9n
+n%R9?
 n(L9g(t
 n03>Pu
 n0L9g0t
@@ -10178,6 +10172,7 @@ output_event_finished
 output_event_playing
 output_events_matching
 output_float
+output_frame_time
 output_goto_count
 output_guid
 output_high
@@ -10697,6 +10692,7 @@ snd_sos_soundevent_max_deferred_time
 snd_sos_soundevent_profile
 snd_sos_start_soundevent
 snd_sos_start_soundevent_at_pos
+snd_sos_start_stack
 snd_sos_stop_all_soundevents
 snd_sos_stop_soundevent_guid
 snd_sos_stop_soundevent_index
@@ -10932,7 +10928,7 @@ t$8D;
 t$8E3
 t$8H+
 t$8Hc
-t$8Hc5
+t$8Hc5c
 t$8Hcs8
 t$8M+
 t$8fB
@@ -11003,11 +10999,11 @@ t$`E3
 t$`E9o@~eM
 t$`H9
 t$`Hc
-t$`Hc5k
+t$`Hc5
 t$`I;
 t$`Ic
 t$`L#
-t$`Lc5NP1
+t$`Lc5
 t$`fD;
 t$`}[H
 t$fff
@@ -11093,11 +11089,12 @@ tLH9s
 tM;]@t
 tMHcX$
 tO9_`~JH
-tOD9%*
+tOD9%
 tRD8}
 tRH9)tMH
 tRIcw 
 tRLcY
+tS95_<C
 tS;+ 
 tUD8e
 tUL99tPH
@@ -11219,7 +11216,7 @@ u"f9s$u
 u$D8r(t
 u%@8j(t
 u%HcD$LH
-u%L95
+u%L95,
 u&8OTt
 u(A8t$
 u)9s8t$H

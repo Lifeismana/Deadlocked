@@ -1,5 +1,58 @@
 <!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
+	CurrencyChanged = 
+	{
+		base = "Base.UI"
+		mixer_mixgroup = "Currency"
+		volume = -3.000000
+		delay = 0.150000
+		spread_min_value = 1.000000
+		spread_max_value = 1.000000
+		limiter_match_event = 1.000000
+		limiter_max = 0.000000
+		limiter_event_name = "CurrencyChanged"
+		hrtf_on = 0.000000
+		pitch = 1.000000
+		pitch_modulation_max = 1.250000
+		pitch_modulation_attack = 4.000000
+		pitch_modulation_release = 0.500000
+		pitch_modulation_namespace = "CurrencyChanged"
+		vsnd_files = 
+		[
+			"sounds/ui/ui_get_gold_01.vsnd",
+			"sounds/ui/ui_get_gold_02.vsnd",
+			"sounds/ui/ui_get_gold_03.vsnd",
+			"sounds/ui/ui_get_gold_04.vsnd",
+			"sounds/ui/ui_get_gold_05.vsnd",
+			"sounds/ui/ui_get_gold_06.vsnd",
+			"sounds/ui/ui_get_gold_07.vsnd",
+			"sounds/ui/ui_get_gold_08.vsnd",
+			"sounds/ui/ui_get_gold_09.vsnd",
+			"sounds/ui/ui_get_gold_10.vsnd",
+			"sounds/ui/ui_get_gold_11.vsnd",
+		]
+	}
+	CurrencyChanged.Large = 
+	{
+		base = "Base.UI"
+		mixer_mixgroup = "Currency"
+		volume = -4.000000
+		delay = 0.300000
+		spread_min_value = 1.000000
+		spread_max_value = 1.000000
+		limiter_match_event = 1.000000
+		limiter_max = 0.000000
+		limiter_event_name = "CurrencyChanged"
+		hrtf_on = 0.000000
+		pitch = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ui/ui_get_gold_large_01.vsnd",
+			"sounds/ui/ui_get_gold_large_02.vsnd",
+			"sounds/ui/ui_get_gold_large_03.vsnd",
+			"sounds/ui/ui_get_gold_large_04.vsnd",
+		]
+	}
 	Player.GetGold = 
 	{
 		base = "Base.XP"
@@ -12,6 +65,27 @@
 		pitch_modulation_namespace = "gold"
 		vsnd_files = 
 		[
+			"sounds/ui/ui_get_gold_01.vsnd",
+			"sounds/ui/ui_get_gold_02.vsnd",
+			"sounds/ui/ui_get_gold_03.vsnd",
+			"sounds/ui/ui_get_gold_04.vsnd",
+			"sounds/ui/ui_get_gold_05.vsnd",
+			"sounds/ui/ui_get_gold_06.vsnd",
+			"sounds/ui/ui_get_gold_07.vsnd",
+			"sounds/ui/ui_get_gold_08.vsnd",
+			"sounds/ui/ui_get_gold_09.vsnd",
+			"sounds/ui/ui_get_gold_10.vsnd",
+			"sounds/ui/ui_get_gold_11.vsnd",
+		]
+	}
+	Player.ClaimOrb = 
+	{
+		base = "Player.GetGold"
+		volume = -8.000000
+		limiter_event_name = "Player.ClaimOrb"
+		pitch_modulation_namespace = "orbs"
+		vsnd_files = 
+		[
 			"sounds/gameplay/orbs/xp_orbs_acquire_01.vsnd",
 			"sounds/gameplay/orbs/xp_orbs_acquire_02.vsnd",
 			"sounds/gameplay/orbs/xp_orbs_acquire_03.vsnd",
@@ -21,11 +95,6 @@
 			"sounds/gameplay/orbs/xp_orbs_acquire_07.vsnd",
 		]
 		vsnd_duration = 1.867302
-	}
-	Player.ClaimOrb = 
-	{
-		base = "Player.GetGold"
-		volume = -8.000000
 	}
 	Player.Deny = 
 	{
@@ -47,6 +116,7 @@
 	{
 		base = "Player.GetGold"
 		limiter_event_name = "Player.Denied"
+		pitch_modulation_namespace = "deny"
 		volume = 2.000000
 		limiter_on = 1.000000
 		vsnd_files = 
@@ -94,7 +164,7 @@
 			"sounds/hit_indicators/damage_send_lethal_05.vsnd",
 			"sounds/hit_indicators/damage_send_lethal_06.vsnd",
 		]
-		vsnd_duration = 1.000000
+		vsnd_duration = 1.550499
 	}
 	Teammate.ClaimOrb = 
 	{
@@ -297,5 +367,6 @@
 		base = "Base.MapObjective"
 		volume = 0.000000
 		vsnd_files = "sounds/gameplay/rejuv_shatter.vsnd"
+		vsnd_duration = 9.389569
 	}
 }

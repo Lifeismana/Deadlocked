@@ -350,6 +350,13 @@ CitadelTooltipModDetails.TooltipVisible
 	text-shadow: 2px 2px 0px #00000030;
 }
 
+.ModName.PropertySearchMatch
+{
+	animation-name: SearchHighlight;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
 .ModCost
 {
 	font-weight: bold;
@@ -451,6 +458,33 @@ CitadelTooltipModDetails.TooltipVisible
 #AttributesSection_Innate .ModInfoLabel
 {
 	margin-bottom: 10px;
+}
+
+.ModInfoLabel.PropertySearchMatch
+{
+	animation-name: SearchHighlightDesc;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+@keyframes 'SearchHighlightDesc'
+{
+	0%
+	{
+		brightness: 1;
+	}
+	
+	50%
+	{
+		brightness: 2;
+	}
+	
+	100%
+	{
+		brightness: 1;
+	}
+	
 }
 
 .ModInfoLabel .InlineGlyph
@@ -649,6 +683,38 @@ CitadelTooltipModDetails.TechMod .AffectedAbilitiesContainer
 .HasMultipleImportantProperties #ImportantAttribute
 {
 	width: fill-parent-flow( 1 );
+}
+
+#ImportantAttribute.PropertySearchMatch
+{
+	animation-name: SearchHighlight;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	background-color: #ffffff00;
+	animation-delay: 1s;
+	background-color: rgba(255, 255, 151, 0.05);
+}
+
+@keyframes 'SearchHighlight'
+{
+	0%
+	{
+		pre-transform-scale2d: 1;
+		brightness: 1;
+	}
+	
+	50%
+	{
+		pre-transform-scale2d: 1;
+		brightness: 2;
+	}
+	
+	100%
+	{
+		pre-transform-scale2d: 1;
+		brightness: 1;
+	}
+	
 }
 
 .HideImportantAttribute #ImportantAttributeContainer

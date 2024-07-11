@@ -40,7 +40,6 @@
 	TYPE_BOOL
 	TYPE_ENUM
 	Target %d "%s": [FMT-> %s] [MSAA-> %s] [%s size : %d %d]
-	V_fmodf
 	V_vsnprintf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
@@ -125,7 +124,7 @@
   w/ zero threshold: %d,
   w/ zero threshold: (%.1f, %.1f)
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -146,15 +145,17 @@
  'L>[
  (%s%s)
  (08@HPX`hpx
- (08@HPX`j
- (08@HPXb@
- (08@HPZ
- (08@HR@
+ (08@HPX`jP
+ (08@HPXb
+ (08@HPZP
+ (08@HR
  (08@J
- (08@J@
- (0X`hpz@
+ (08@JP
+ (0:P
+ (0X`hpz
  (Asc)
  (Des)
+ (EXTERN)
  (Frozen)
  (Owned)
  (auto)
@@ -167,8 +168,6 @@
  *CentralNode*
  *Inactive*
  ... }
- .0wN
- .pvN
  0"r$4&
  9|$T
  ; contains 
@@ -290,6 +289,7 @@
  IsFocused
  IsMinimized
  IsPlatformMonitor
+ L9~ u
  L;!H
  Lc)H
  Lc1H
@@ -377,7 +377,6 @@
  conflicts with an existing nested message type.
  conflicts with an existing oneof type.
  contains invalid UTF-8 data when 
- dMSL
  definition file imports the proto which defines the option.
  delete
  delete[]
@@ -465,7 +464,6 @@
 !m_pMemory
 !m_pPVSData
 !m_pendingRenderers.IsEmpty()
-!n6|cB
 !name.IsEmpty()
 !pDest->m_hEnvMapArray.GetData()
 !pMorphCompositeSet->IsTransformBufferMorphingUnused( &( pTransform->m_matTransform ) )
@@ -610,6 +608,7 @@
 ##HorizontalScrolling
 ##Infinite
 ##Ini
+##Instances
 ##ItemSharing
 ##Legend
 ##LegendContext
@@ -681,8 +680,8 @@
 ##lines
 ##listbox 2
 ##log
+##max
 ##menubar
-##min
 ##off
 ##original
 ##output_type
@@ -774,7 +773,6 @@
 #IMPLOT_DRAG_RECT
 #Ib?AG
 #IcN I
-#L9~ u
 #MOVE
 #NETWORK_DISCONNECT_BADRELAYPASSWORD
 #NETWORK_DISCONNECT_REJECTED_BY_GAME
@@ -822,12 +820,11 @@ $2$r$
 $8H)u
 $;D$p~
 $<1mm
-$@8=^
 $@8x)
+$A8[fu
 $HcG H
 $IH+K
 $IH+O
-$II+	H
 $Ib?s
 $L9?t	H
 $NETWORK_DISCONNECT_REJECT_SERVERFULL
@@ -1101,75 +1098,113 @@ $~RE3
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 ($$fE
-(%!0E
-(%* S
-(%*@E
+(%	(E
+(%	,E
 (%.02f)
 (%.1f,%.1f)
 (%.3f, %.3f, %.3f)
 (%.3f, %.3f, %.3f, %.3f)
 (%.3ff, %.3ff, %.3ff, %.3ff)
+(%/?S
 (%1%S
-(%3H!
+(%3G!
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) %s
 (%6.1f,%6.1f) (%6.1f,%6.1f) Size (%6.1f,%6.1f) Col %d %s
-(%9;E
-(%;'S
-(%SC!
-(%Sj?
-(%]	S
+(%9>S
+(%@TE
+(%D%>
+(%EES
+(%J\E
+(%SB!
+(%Y2S
+(%]'S
 (%d,%d)
 (%d,%d,%d,%d)
-(%l/E
-(%s>!
-(%wt>
-(%|q?
+(%f(E
+(%f3E
+(%g!S
+(%yPE
+(%{6S
 (("**,
 ((6"8(:,<*>
-(-"IE
-(-,HE
-(-0-S
-(-02S
-(-75E
-(-9k?
-(->ME
-(-HL 
-(-Ls@
-(-Mz 
-(-gBE
-(-g] 
-(-i%S
-(-nj?
-(-qAE
-(-{n>
-(-}HE
-(-~-S
-(/x.-
+(-	9S
+(-!bE
+(-&LS
+(-(,S
+(-(P 
+(-,w>
+(--iE
+(--~ 
+(-9-S
+(-:=S
+(->t?
+(-AVE
+(-C&S
+(-GKS
+(-Ga 
+(-IJS
+(-P%E
+(-Q8S
+(-S S
+(-[ZE
+(-cr@
+(-lt 
+(-qgE
+(-rbE
+(-u'S
+(-yPS
+(-~!S
 (0`hpx
 (1GDL
 (2) Or right-click this text
 (3) Or click this button
-(5 w>
-(5) S
-(50(S
-(55	S
-(55'S
-(5^OE
-(5h!S
-(5q%S
-(5z S
+(5	8S
+(5/!S
+(5/oE
+(50'S
+(50?S
+(51%S
+(5:FS
+(5<,S
+(5DES
+(5M%>
+(5NJS
+(5O2S
+(5P0S
+(5j8S
+(5jdT
+(5ptE
+(5xoE
+(5y1E
+(5}dT
 (;^ |
 (;s |
 (<-- right-click here)
-(=2 S
-(=5	S
-(=7-S
-(=C'S
-(=N%S
-(=Np@
-(=O,>
-(=b.S
-(=n2S
+(= :S
+(=(JS
+(=,:E
+(=-%>
+(=-%S
+(=-8S
+(=.LS
+(=/!S
+(=0'S
+(=5s?
+(=6=S
+(=7?S
+(=99S
+(==0S
+(==9E
+(=A>S
+(=D%>
+(=MES
+(=X,S
+(=`dP
+(=a2S
+(=i-S
+(=m6S
+(=vLS
+(=}CS
 (A\_H
 (A\_^[
 (A\_^]
@@ -1202,6 +1237,7 @@ $~RE3
 (ActiveIdUsing: AllKeyboardKeys: %d, NavDirMask: 0x%X)
 (Center) Using ImDrawList::PushClipRect():
 (Click and drag to scroll)
+(Context Name: "%s")
 (D$ A
 (D$ D
 (D$ H
@@ -1286,7 +1322,7 @@ $~RE3
 (NETWORK_DISCONNECT_SERVER_REQUIRES_STEAM
 (NETWORK_DISCONNECT_STEAM_AUTHALREADYUSED
 (Popup)
-(R = radius, N = number of segments)
+(R = radius, N = approx number of segments)
 (Right) Using ImDrawList::AddText() with a fine ClipRect:
 (SceneWorld 3D Dump contains %d large objects - they are scaled down and will render red.)
 (T$ D
@@ -1323,7 +1359,6 @@ $~RE3
 (\$@D
 (\$PD
 (\$PH
-(\$PI
 (\$`A;
 (\$`D
 (\$`E
@@ -1343,6 +1378,7 @@ $~RE3
 (d$@L
 (d$PD
 (d$PH
+(d$PL
 (d$`D
 (d$pD
 (defaults 0.5,0.5 so average is half of pixels either side)
@@ -1424,10 +1460,10 @@ $~RE3
 (t$`D
 (t$`E
 (t$`H
-(t$`Hc
 (t$`I
 (t$`I;
 (t$`L
+(t$`t
 (t$p@
 (t$pD
 (t$pE
@@ -1525,8 +1561,8 @@ $~RE3
 )D$PA
 )D$PD
 )D$PH
-)D$PI
 )D$PI;
+)D$PM;
 )D$Pf
 )D$Pi
 )D$`;
@@ -1543,8 +1579,8 @@ $~RE3
 )D$pH
 )D$pL
 )D$pf
-)EPE9}0
 )EpA;
+)EpE9}0
 )HcD$HI
 )L$ D
 )L$ I;
@@ -1560,7 +1596,7 @@ $~RE3
 )L$@A
 )L$@D
 )L$@E
-)L$@u[3
+)L$@uX3
 )L$PA
 )L$PD
 )L$PH
@@ -1568,6 +1604,7 @@ $~RE3
 )L$PM
 )L$`A
 )L$`D
+)L$`H
 )L$`I;
 )L$`f
 )L$pA
@@ -1585,6 +1622,7 @@ $~RE3
 )T$ fD
 )T$0A
 )T$0D
+)T$0H
 )T$0L
 )T$0f
 )T$@A
@@ -1598,9 +1636,9 @@ $~RE3
 )T$Pw	E
 )T$`D
 )T$`E
+)T$pA
 )T$pD
 )T$pE
-)T$pu]3
 )YA1H
 )\$ A
 )\$ E
@@ -1627,10 +1665,11 @@ $~RE3
 )d$0D
 )d$@D
 )d$@E
-)d$@uZ3
+)d$@uX3
 )d$PA
 )d$PD
 )d$PH
+)d$PuZ3
 )d$`A
 )d$`D
 )d$`I
@@ -1755,6 +1794,7 @@ $~RE3
 )|$pH
 )|$pL
 )|B?d!
+*	V_log2_uint
 *#GameUI_Disconnect_LocalProblem_ManyRelays
 ** %d instances of same table! Some data below will refer to last instance.
 **DebugBreak**
@@ -1815,6 +1855,8 @@ $~RE3
 +o'q)}
 +t$$t$A+
 +t$8I
++|2H;
+,	V_log2f
 , %d depth-only alpha-tested
 , ,^,
 , <_wD
@@ -1824,6 +1866,7 @@ $~RE3
 ,/<-w
 ,0<	w
 ,6,:,>,B,F,J,N,R,V,Z0
+,9ADK
 ,C<*w
 ,D$0L
 ,HR><y5
@@ -1845,7 +1888,6 @@ $~RE3
 ,YA1H
 ,j.b0^2`4^6`8^:f<
 ,t,x,|,
--	V_log2_uint
 - BorderOuterV
 - Drag from window menu button (upper-left button) to undock an entire node (all windows).
 - Drag from window title bar or their tab to dock/undock.
@@ -1894,15 +1936,17 @@ $~RE3
 -tools
 -v-z-~-
 -w=Hc
+.	V_logf
 .".08
 .%03d %03d
 .(.,1
 ..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
 ...<truncated>...
 ..om?
-./q6q
 .00cfg
 .8"6z>
+.="'.
+.=#'.
 .>PJ;I:qE>
 .>l	y<\
 .?AUReadStatsCallback_t@?4??OnBeginSubmitDisplayLists@CInstancedMeshSceneObjectDesc@@UEAAXPEAVIRenderContext@@@Z@
@@ -2281,7 +2325,6 @@ $~RE3
 .idata$6
 .notdef
 .null
-.olt#
 .pdata
 .placeholder.proto
 .rdata
@@ -2303,19 +2346,18 @@ $~RE3
 .tls$
 .tls$ZZZ
 .vtex
+.wlt#
 .xJ>Hf
 .xdata
 .xdata$x
 .|$(u
-/	V_log2f
 / w"D
 /"/&/*0
 /..namedfork/rsrc
 /./f/
 /0sgE
 /2GG>!B
-/5WX'
-/5_i7
+/5$y7
 /6r+H
 /84_>
 /8r:H
@@ -2406,7 +2448,7 @@ $~RE3
 0 == ( pLayer->m_nLayerFlags & LAYERFLAGS_DO_NOT_SORT )
 0 == ( pLayer->m_nLayerFlags & LAYERFLAGS_SORT_BACK_TO_FRONT )
 0!0%0)0-014
-0##max
+0##min
 0$2z4
 0..255
 0.00..1.00
@@ -2421,11 +2463,9 @@ $~RE3
 0123456789abcdefghijklmnopqrstuvwxyz
 050s0
 08@HP
-08@HR
-08@J@
+08@HRP
 08iu*)
 0: spheres, 1: cubes
-0:`[ 
 0><[cZUg^>
 0?333?333?333?333?
 0@333@
@@ -2485,6 +2525,7 @@ $~RE3
 0D;{<
 0H;9t
 0Hc)L
+0Hc9H
 0HcD$HI
 0HcD$pM
 0K0O0S0W0[0_0c0g0k0o0
@@ -2508,7 +2549,6 @@ $~RE3
 0x%08X/
 0xDDDDDDDD
 0}0i1
-1	V_logf
 1 = visualize bounds, 2 = visualize sceneobject mesh materials, 3 = required texture size, 4 = bounds group, 5 = LOD, 6 == LPV Binding, 7 == instancing
 1"1i3
 1#IND
@@ -2519,7 +2559,7 @@ $~RE3
 1. I am selectable
 1.0 (0 stops)
 1.1.4
-1.90.8
+1.90.9
 10646
 123.456
 123456
@@ -2552,7 +2592,7 @@ $~RE3
 220801000000Z
 230714000000Z
 24 Hour Clock
-240704151346Z0/
+240711150330Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -2577,6 +2617,7 @@ $~RE3
 311109235959Z0b1
 3333333
 33333333H+
+333?3
 333D33
 341013235959Z0H1
 360428235959Z0i1
@@ -2597,7 +2638,6 @@ $~RE3
 4-wide
 4. I am double clickable
 456789:;<=
-48;57
 49Icn
 4:A;p|vHH
 4@D;f
@@ -2651,6 +2691,7 @@ $~RE3
 80tWD
 80x80
 8;t$(
+8@8s[t2
 8@HP:
 8A*t5H
 8A]A\
@@ -2689,6 +2730,7 @@ $~RE3
 8E;4$|
 8FxuXD
 8H9+t
+8HZu	8O<
 8Hc*L
 8HcA H
 8Ht;I
@@ -2727,7 +2769,7 @@ $~RE3
 98~+H
 99~CE
 9;t	I
-9=Oen
+9=;V 
 9>powf
 9>~ZH
 9@9Y9`9y9
@@ -2790,7 +2832,7 @@ $~RE3
 9valu
 9yx~4
 9{Xt\@8=
-9{Xth@8=ja
+9{Xth@8=:f
 9{l~!H
 9{l~"H
 9{p~"
@@ -2810,6 +2852,7 @@ $~RE3
 9~`tV
 9~p~)H
 9~p~*H
+:	V_powf
 : DrawCmd: +%d (in child window), Scroll: (%.f/%.f) (%.f/%.f)
 : DrawCmd: +%d (in same window)
 : Tried to copy from a message with a different type. to: 
@@ -2832,7 +2875,7 @@ $~RE3
 :eu.H
 :fylgu
 :ip#=
-;##Instances
+;	V_qsort
 ;%u)A
 ;(;1;?;];
 ;+r D
@@ -2842,12 +2885,13 @@ $~RE3
 ;/i$?t$
 ;3s^A
 ;3~<H
-;5F> 
-;5u?s
+;5,zY
+;5U^s
+;5V@ 
 ;74==
-;=% 8
-;=O"j
-;=X/8
+;=%#8
+;=X28
+;=_0j
 ;?0123456789:;<=>?
 ;BIb?
 ;C@r3
@@ -2904,6 +2948,7 @@ $~RE3
 ;|$p|
 ;|(@u?H
 ;}p}~H
+<	V_qsort_s
 <	u=H
 <	uCH
 <	w	@
@@ -2925,6 +2970,7 @@ $~RE3
 </td<*u
 </tr>
 <0:08
+<0HcD$PH
 <0u7A
 <8bunz8
 <9\$@
@@ -3061,7 +3107,6 @@ $~RE3
 <utK@:
 <{Q}<
 =	8t?
-=	V_powf
 = $s?(,
 = gpjt&= gnpt
 = {[8V
@@ -3103,7 +3148,6 @@ $~RE3
 =xav?
 =xtmht
 =xtmvu~f
->	V_qsort
 >">bJ<?
 >%H5<mN
 >%]s?
@@ -3147,7 +3191,6 @@ $~RE3
 >zp'?
 >}"W?
 ?	FDH
-?	V_qsort_s
 ? ?(?-
 ?!5WOo
 ?#%X.y
@@ -3415,20 +3458,19 @@ $~RE3
 @33333}
 @4A:A4u
 @4D9B4t
-@6P{N
-@6P~N
-@8(t:I
-@8(t@I
 @8)u&I
 @8.tj3
 @80uFI
 @84)u
-@859p 
-@85P#<
-@85k=
-@85n2h
-@85v6h
+@85$@
+@859s 
+@85J?
+@85P&<
+@85T_
+@85X@
+@85ZCh
 @88twI
+@8=ag
 @8@C@N
 @8H;C8t
 @8HcB
@@ -3524,7 +3566,7 @@ $~RE3
 @En[vP
 @HHcB$;B(u
 @HPX&I
-@HPX`hv
+@HPX`hv0
 @HcA,I
 @HcC(H
 @L;d$0}#H
@@ -3790,6 +3832,7 @@ $~RE3
 @tfH;
 @xHcQ
 @}`}i
+A	V_roundf
 A 9B`u
 A D	A
 A D3CDH
@@ -3904,7 +3947,6 @@ A>l$/
 A>pP&
 A@H9H`u
 A@L;B
-AA: e
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -4050,6 +4092,7 @@ A_A][]
 A_A]]
 A_A]^
 A_A]^[
+A_A]^]
 A_A]_
 A_A]_^
 A_A]_^[]
@@ -4727,6 +4770,7 @@ C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
 C:\buildworker\citadel_staging_win64\build\src\texturelib\extract.cpp
 C:\buildworker\citadel_staging_win64\build\src\thirdparty\imgui\imgui.h
 C:\buildworker\citadel_staging_win64\build\src\thirdparty\imgui\imgui_demo.cpp
+C:\buildworker\citadel_staging_win64\build\src\thirdparty\imgui\imgui_multicontext_compositor.h
 C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
@@ -4845,7 +4889,6 @@ CGeoViewVertex::Serialize
 CGlobalConCommandRegistry::AddToList
 CGlobalConVarRegistry::AddToList
 CGlobalConVarRegistry::HookUpConVar
-CH$	A:
 CH$I;
 CHARS
 CHARSET_COLLECTIONS
@@ -5267,7 +5310,7 @@ CSceneSystem::FinishRenderingViews::<lambda_2>::operator ()
 CSceneSystem::FrameAllocVertexCacheBlock
 CSceneSystem::FrameUpdate
 CSceneSystem::GenerateCompositeMorphTextureAtlas
-CSceneSystem::GenerateCompositeMorphTextureAtlas(5350): Expecting 1 renderable pass for material "%s" but found %d!
+CSceneSystem::GenerateCompositeMorphTextureAtlas(5335): Expecting 1 renderable pass for material "%s" but found %d!
 CSceneSystem::GetObjectBounds
 CSceneSystem::GetRenderTargetSize
 CSceneSystem::GetScratchRenderTargetCount
@@ -5359,7 +5402,6 @@ CSceneViewDebugOverlays::Render2DLineOverlay GetMode("Default") == NULL? Can't R
 CSceneViewDebugOverlays::Render2DLineOverlays
 CSceneViewDebugOverlays::Render3DLineBatches
 CSceneViewDebugOverlays::Render3DLineOverlay GetMode("Default") == NULL? Can't Render with material %s!
-CSceneViewDebugOverlays::Render3DSphereBatches
 CSceneViewDebugOverlays::Render3DTrangleBatches
 CSceneViewDebugOverlays::Render3DTriangleOverlay
 CSceneViewDebugOverlays::Render3DTriangleOverlay GetMode("Default") == NULL? Can't Render with material %s
@@ -6484,6 +6526,7 @@ Ctrl+W
 CubeMapDebugColors
 Cucumber
 CullBits
+CullCameraPositionWs
 CullParams_t
 CullRequests
 CullStats
@@ -6523,7 +6566,6 @@ Cxf9Czu
 Cycles focus between the game window and undocked imgui windows
 C|$pH
 C|$xL
-D	V_roundf
 D W?{W
 D!l$xA
 D#L$`A
@@ -6589,7 +6631,6 @@ D$(H9
 D$(H;
 D$(H;Q
 D$(Hc
-D$(Hc3
 D$(I9E@
 D$(Ic
 D$(L;
@@ -6655,14 +6696,17 @@ D$4A;
 D$4D;
 D$4H;
 D$4Hc
+D$4Hc3;s
 D$4fff
 D$4st
+D$5A3
+D$6A3
+D$7A3
 D$7RI
 D$7fff?H
 D$8+G
 D$8+W 
 D$89\$0t
-D$8;w
 D$8A+
 D$8D+
 D$8D;
@@ -6694,14 +6738,11 @@ D$<E;
 D$<Ik
 D$<L;
 D$<fD
-D$=A3
-D$>A3
-D$?A3
 D$@;B
 D$@A+
 D$@A;
 D$@A;G,
-D$@D8
+D$@D8oYu
 D$@E2
 D$@E3
 D$@H+
@@ -6728,6 +6769,7 @@ D$@t$
 D$@u5H
 D$@|A
 D$AD+
+D$AI9
 D$BA;
 D$D;B
 D$DA+
@@ -6818,7 +6860,6 @@ D$`BODAfD
 D$`CBDAf
 D$`D9p }
 D$`D;
-D$`E2
 D$`E3
 D$`E;
 D$`EBDAfD
@@ -6846,7 +6887,6 @@ D$h34
 D$h9t$P
 D$hAi
 D$hD+
-D$hD8
 D$hD8d$0
 D$hD9d$|u
 D$hD;
@@ -6870,7 +6910,6 @@ D$p9t$0
 D$pA+
 D$pD3
 D$pE3
-D$pE;
 D$pH;
 D$pH=
 D$pHc
@@ -6879,11 +6918,10 @@ D$pf;
 D$pfA;
 D$prQA
 D$prQf
-D$pt#H
-D$pu8H
-D$p~AH
+D$p~>H
 D$t9D$x
 D$t;E
+D$tD8
 D$tu7E
 D$xA8y
 D$xE3
@@ -6903,6 +6941,7 @@ D&D4a
 D)A )Q
 D)Q$L
 D+3L9c0u	
+D+=ZBm
 D+A@H
 D+K0A
 D+O$I
@@ -6924,36 +6963,29 @@ D333E
 D76fA
 D8 tZ
 D8!t}H
-D8%& !
+D8%l5!
 D8+t	H
-D8-*,
-D8-7/ 
-D8-CK!
-D8-MK!
-D8-Q. 
-D8-SR 
-D8-W*j
-D8-cI!
-D8-dpr
-D8-g- 
-D8-yR 
+D8-/J!
+D8-8r!
+D8->4 
+D8-BX5
+D8-J.
+D8-Uq!
+D8-a2 
+D8-cT 
+D8-g8j
 D8.uBH
 D8/te3
 D80t;
 D81uUL9r
 D84(u
 D84:u
-D85E/}
-D85W7j
-D85Z6r
-D85a/}
+D85:Ur
+D85EN}
+D85aN}
+D85gEj
 D88t#H
 D8<8u
-D8=3h^
-D8=5i7
-D8=Kh^
-D8=_h^
-D8=}h^
 D8>tGD9;~BD
 D8?uOD
 D8A<u
@@ -7016,9 +7048,11 @@ D8x=t
 D8xXt
 D8ybt
 D8yet9D8yft3fD
+D8z tJHcw
 D8z\u
 D8{8u+H
 D8|$`t
+D8}`t7D
 D8}ou
 D8~\t
 D9	t1H
@@ -7029,11 +7063,12 @@ D9	t7
 D9 |b
 D9 ~^
 D9 ~`
-D9%	\Y
+D9%izY
 D9&t_I
 D9&~"I
 D9&~-M
 D9'u	H
+D9-#5 
 D90u	9h
 D93v*
 D93vT
@@ -7041,7 +7076,6 @@ D97~s3
 D98t2A
 D98u	9h
 D98~m
-D99tr
 D99u	
 D9:t]
 D9;t2
@@ -7114,8 +7148,8 @@ D9s8~^E
 D9sP~
 D9sXt7D8%
 D9sXt7D85
-D9sXtXD85V
-D9sXtjD8%^
+D9sXtXD85&
+D9sXtjD8%.
 D9sX|JA
 D9shvBB
 D9sh~
@@ -7149,7 +7183,7 @@ D9|$h
 D9~@~'E
 D9~X~)M
 D:?u(D
-D;%B.8
+D;%B18
 D;.uZH
 D;Cl|
 D;D$0
@@ -7247,6 +7281,7 @@ D_ENABLE_VOLUMETRIC_FOG
 D_FAST_CONSERVATIVE_BOUNDS
 D_FULL_HAIR_PIPELINE
 D_HAIR_OFFSETS
+D_HAS_ROOT_VIEW
 D_LPV_INDIRECT
 D_NO_ZTEST
 D_OCCLUSION_CULLING
@@ -7255,7 +7290,6 @@ D_SCENE_DEPTH_MSAA
 D_SELF_SHADOW
 D_STRAND_COLOR_VARIATION
 D_VARIANT
-D_VISUALIZE_SCENEOBJECTS
 D_VIS_CULLING
 D_VOLUME_CULLER
 Daikon
@@ -7266,7 +7300,7 @@ Data: %p
 Day:   %s
 Dear ImGui %s
 Dear ImGui %s (%d)
-Dear ImGui 1.90.8 (19080)
+Dear ImGui 1.90.9 (19090)
 Dear ImGui Debug Log
 Dear ImGui Demo
 Dear ImGui ID Stack Tool
@@ -7488,6 +7522,7 @@ E3EAEL
 E4eman
 E80t"A
 E82/SO
+E8FZu
 E8H;C8t
 E8`!t&IcP
 E8`!tCIcP
@@ -7606,6 +7641,7 @@ Enable resizing of windows from their edges and from the lower-left corner.
 Enable the main-menu bar in Examples menu to see the difference.
 Enable turning DragXXX widgets into text input with a simple mouse click-release (without moving).
 Enable various tools calling IM_DEBUG_BREAK().
+Enable wrapping around from max to min and from min to max (only supported by DragXXX() functions)
 EnableAlphaTint
 EnableSunlight
 EnableViewModelSunlight
@@ -7770,6 +7806,7 @@ Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
 ExternalNameForInternalType
 E|aehv
+F	V_sincosf
 F 9F tDA
 F 9FPt
 F @8pKuNH
@@ -8025,6 +8062,7 @@ FrustumPlane0
 FrustumPlane1
 FrustumPlane2
 FrustumPlane3
+FrustumPlane4
 FrustumPlane5
 Fsmall
 Full-width:
@@ -8315,6 +8353,7 @@ G|Lcw`D;wpu
 H	CHH
 H	FHH
 H	KHH
+H	V_sinf
 H	kxH
 H 8YKt
 H 8YKt	
@@ -8375,8 +8414,16 @@ H0McX
 H8HcEw
 H9(tO
 H9*t	H
-H9-(Zr
-H9-BYr
+H9-"xr
+H9-/%h
+H9-F&h
+H9-I"h
+H9-J%h
+H9-N$h
+H9-a&h
+H9-d"h
+H9-i!h
+H9-}%h
 H9/u	H
 H90t#A
 H90t?
@@ -8384,15 +8431,13 @@ H90t@A
 H90tKA
 H92tBA
 H93t	H
-H95<Iw
-H95I1i
-H95WFr
-H95WIw
-H95\Hw
-H95^jq
-H95d1i
-H95h0i
-H95yjq
+H957er
+H957hw
+H95<gw
+H95G0z
+H95Y?i
+H95t?i
+H95x>i
 H97u)I
 H97u+A
 H98t#
@@ -8411,7 +8456,7 @@ H99ttA
 H9:t!A
 H9:t%A
 H9;t	H
-H9=mQ7
+H9=mT7
 H9A s
 H9A u
 H9A u)M
@@ -8441,6 +8486,7 @@ H9X@u
 H9ZPueH
 H9\$X
 H9\$x
+H9_8u
 H9hPu
 H9hPu%I
 H9i s
@@ -8458,6 +8504,8 @@ H9s uvH
 H9s`u93
 H9shuJH
 H9sxt
+H9w(t
+H9w@t
 H9x s
 H9x`t
 H9y@u	
@@ -8591,11 +8639,11 @@ Handle ImGuiBackendFlags_RendererHasVtxOffset for 16-bit indices in your backend
 HasField
 HasRange: %s
 Hc+;k
+Hc-x{T
 Hc.;n
 Hc/;o
 Hc3;s
 Hc3Lc
-Hc5jcT
 Hc7;w
 Hc;9E0t
 Hc;;{
@@ -8637,7 +8685,6 @@ HcD$@L
 HcD$@M
 HcD$HH
 HcD$HHc
-HcD$PA
 HcD$PH
 HcD$TL
 HcD$XM
@@ -8870,7 +8917,6 @@ HuaTianKaiTi?
 HuaTianSongTi?
 Hungarumlautsmall
 I	GHI
-I	V_sincosf
 I am a a tooltip for a disabled item.
 I am a fancy tooltip
 I am a manually emitted tooltip.
@@ -8944,6 +8990,7 @@ ILightBinner::GatherLightProbeVolumesInfoInArea
 IMAGE_FORMAT_IMC2
 IMAGE_FORMAT_NV12
 IMAGE_FORMAT_R11G11B10_FLOAT
+IMGUI_CONTEXT
 IMM32.dll
 IND)ind)
 IND)ind)"
@@ -9110,12 +9157,16 @@ ImGuiInputTextFlags_EscapeClearsAll
 ImGuiInputTextFlags_NoUndoRedo
 ImGuiInputTextFlags_ParseEmptyRefVal
 ImGuiInputTextFlags_ReadOnly
+ImGuiMultiContextCompositor_AddContext
+ImGuiMultiContextCompositor_RemoveContext
 ImGuiRendererManifest
 ImGuiSliderFlags_AlwaysClamp
 ImGuiSliderFlags_Logarithmic
 ImGuiSliderFlags_NoInput
 ImGuiSliderFlags_NoRoundToFormat
+ImGuiSliderFlags_WrapAround
 ImGuiTabBarFlags_AutoSelectNewTabs
+ImGuiTabBarFlags_DrawSelectedOverline
 ImGuiTabBarFlags_FittingPolicyResizeDown
 ImGuiTabBarFlags_FittingPolicyScroll
 ImGuiTabBarFlags_NoCloseWithMiddleMouseButton
@@ -9205,6 +9256,9 @@ ImVec4* colors = ImGui::GetStyle().Colors;
 ImVec4* colors = ImPlot::GetStyle().Colors;
 ImVector<struct ImDrawCmd>::operator []
 ImVector<struct ImDrawList *>::operator []
+ImVector<struct ImGuiContext *>::erase
+ImVector<struct ImGuiContext *>::front
+ImVector<struct ImGuiContext *>::insert
 Image file
 Image001.png
 ImageLoader::ImageFormatInfo
@@ -9304,6 +9358,8 @@ InstancedMeshSceneObjectManifest
 Instances
 Instruct Dear ImGui to render a mouse cursor itself. Note that a mouse cursor rendered via your application GPU rendering path will feel more laggy than hardware cursor, but will be more in sync with your other visuals.
 Instruct backend to not alter mouse cursor shape and visibility.
+Instruct dear imgui to disable keyboard inputs and interactions.
+Instruct dear imgui to disable mouse inputs and interactions.
 Instruct navigation to move the mouse cursor. See comment for ImGuiConfigFlags_NavEnableSetMousePos.
 Integer out of range (
 Intentionally vague touch behavior for %p
@@ -9481,7 +9537,7 @@ Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 Jsmall
 Jt;Jlu
 JvKsK}l	J
-K	V_sinf
+K	V_snprintf
 K HcC$Hc
 K L9c uM
 K SUVWATAVAWH
@@ -9678,7 +9734,7 @@ L$0fA
 L$0fH
 L$0fI
 L$0t~
-L$1Ai
+L$2Ai
 L$2D;c`
 L$4+L$8
 L$4+L$H
@@ -9817,7 +9873,6 @@ L$pD;
 L$pE3
 L$pH+
 L$pH3
-L$pHc
 L$pI+
 L$pL9
 L$pMc
@@ -9849,16 +9904,14 @@ L0L:LA
 L9#t*H
 L9#u&9t$X
 L9#u/H
-L9%3[f
-L9%8]f
-L9%N[f
-L9%S]f
-L9%Tjp
-L9%Y\f
-L9%Y^f
-L9%ZZf
-L9%t^f
-L9%y0<
+L9%Cif
+L9%Hkf
+L9%^if
+L9%ckf
+L9%ijf
+L9%ilf
+L9%jhf
+L9%y3<
 L9't	H
 L9(t@
 L9/t	H
@@ -9869,10 +9922,9 @@ L93t	H
 L98tCA
 L9;t	H
 L9;u	H
-L9=3\r
-L9=ICv
-L9=N\r
-L9=l[r
+L9=)bv
+L9=.{r
+L9=Lzr
 L9?t	H
 L9@ s
 L9BHA
@@ -9891,7 +9943,7 @@ L9f u@H
 L9i0unH
 L9j8u
 L9k t
-L9k tWH
+L9k tZH
 L9k u'D
 L9k unH
 L9l$p
@@ -9929,7 +9981,6 @@ L;{ u
 L;{ u?M
 L;|$@
 L;|$X
-L=|CP
 L>ntGG
 L?)\O?
 L?UUUUUUU?
@@ -9999,13 +10050,11 @@ Lc&D;f
 Lc'D;g
 Lc+D;k
 Lc3D;s
-Lc5^]7
-Lc5cLj
+Lc5sZj
 Lc6A+
 Lc6D;v
 Lc6L+
 Lc;D;{
-Lc=%.k
 Lc>D;~
 Lc?D;
 LcA,L
@@ -10506,7 +10555,6 @@ MyPopup
 MyTabBar
 MyTag
 M|$DD;
-N	V_snprintf
 N Bins
 N H+N 
 N HcF
@@ -10789,6 +10837,7 @@ Open Popup
 Open Recent
 Open:  $%.2f
 OpenClipboard
+Opened:
 Opposite
 OpticalSize
 OptimizeMode
@@ -10853,7 +10902,7 @@ Override. Old default was 45.
 Override. Old value was 1.0
 Overrides the map's fog settings (-1 populates fog_ vars with map's values)
 P(P;P`
-P08@J@
+P08@J
 P>q_Y~
 P@HPX`hpx
 PA\][
@@ -11067,6 +11116,7 @@ Pu<Xp_
 PushID
 PxL9`
 Pz}b!
+Q	V_sscanf
 Q HcI
 Q(tzH
 Q)Q7QWQ
@@ -11706,7 +11756,6 @@ Scratch Payload
 ScratchRenderTargetSystem tried to use a HSceneViewRenderTarget in view "%s" from a different view "%s"!
 Screen-size where clutter will be full density
 Screen-size where clutter will be gone
-ScreenSizeScaleForLOD
 ScreenToClient
 Scroll %.1f/%.1f %.1f/%.1f
 Scroll Offset
@@ -11930,6 +11979,7 @@ Simplified docking mode: disable window splitting, so docking is limited to merg
 Sin(time) = %f
 Single call to TextUnformatted()
 SingleCharMode = %d, Size = %d, Lock = %d
+Size > 0
 Size all columns to default###SizeAll
 Size all columns to fit###SizeAll
 Size column to fit###SizeOne
@@ -12118,12 +12168,12 @@ Synced instances
 Synthetic oneofs must be after all other oneofs
 System file
 SystemRoot
-T	V_sscanf
 T H E Z O C Q S
 T#T.Tk
 T$ ;T$<
 T$ ;U
 T$ A8
+T$ A;
 T$ A;T$
 T$ D)s
 T$ D8t$(
@@ -12143,7 +12193,6 @@ T$$A;
 T$(A;
 T$(D+
 T$(E3
-T$(E;
 T$(H+
 T$(H;T$0t
 T$,A;
@@ -12268,16 +12317,17 @@ T$xH;U
 T$xIc
 T$xLcl$XH
 T$|Hc
-T%@9E
-T%R-E
-T-k2E
+T%NHE
+T%XYE
+T%qBE
+T-Z6E
+T-ZME
 T08A;
-T5	0>
+T5v*7
 T6HI;
 T8PHcD8HH
 T: %7.3f
 T; Lc
-T=ar,
 T>M-+?#gy?
 T>gaW?:]f?AHV>'
 T>l>~?
@@ -12315,17 +12365,19 @@ TYPE_UINT32
 TYPE_UINT64
 Tab Bars (%d)
 Tab bar
-TabActive
 TabBar
 TabBar+Tabs
 TabBarBorderSize
 TabBars
 TabBorderSize
+TabDimmed
+TabDimmedSelected
+TabDimmedSelectedOverline
 TabHovered
 TabItemButton & Leading/Trailing flags
 TabRounding
-TabUnfocused
-TabUnfocusedActive
+TabSelected
+TabSelectedOverline
 Tabbing
 Table
 Table 0x%08X (%d columns, in '%s')
@@ -12662,7 +12714,6 @@ USVWATAVAWH
 USVWATAVI
 USVWAUAVAWH
 USVWAUAVH
-USVWAUAWH
 USVWAUAWI
 USVWAUH
 USVWAVAWH
@@ -12697,6 +12748,7 @@ UVATAUH
 UVATAVAWH
 UVAUAVAWH
 UVAUAVH
+UVAUAWH
 UVAUH
 UVAUI
 UVAVH
@@ -12845,6 +12897,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UzIuG
+V	V_stricmp_fast
 V$VYW
 V,V7VB
 V0H;V8t
@@ -12948,6 +13001,7 @@ V_exp2f
 V_expf
 V_fabsf( ( pOutBarnLights[ 0 ].ComputeRange() / ldesc.m_Range ) - 1.f ) < .001f
 V_fabsf( V_sqrtf( flLenSq ) - 1.0f ) < 0.00001f
+V_fmodf
 V_memcmp( m_passes.Base() + nLastPass, m_subsequentLayers.Base(), m_subsequentLayers.Count() * sizeof( m_subsequentLayers[ 0 ] ) ) == 0
 V_~]	,
 Validate
@@ -13013,6 +13067,7 @@ ViewportId=0x%08X
 ViewportMonitor: %d
 ViewportPos=%d,%d
 ViewportPos=%i,%i
+ViewportWidthForLOD
 Viewports
 Viewports (%d)
 Viridis
@@ -13024,7 +13079,6 @@ VisibleBarnLight_t::WantsDynamicShadowMap
 VisibleWindow
 Visualize
 VisualizeCulled
-VisualizeSceneObjectsMode
 Voltage
 VolumeMaxs
 VolumeMins
@@ -13035,11 +13089,13 @@ Vrad3_001
 Vsmall
 W$W>WBWSW
 W(fA#
-W-__2
-W-yd	
-W5_gD
+W-	g	
+W-Gk2
+W5D-2
+W5rf	
 W9QHI
 W: %.1f
+W=v(2
 W@9w8v8
 WARNING
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
@@ -13266,24 +13322,30 @@ X UVWAVAWH
 X UWATAUAWH
 X VWAVH
 X!t5~
-X%>p?
-X-/q@
+X%%`7
+X%Gl?
+X-<u@
+X-@p>
 X-Axis
 X-Axis %d
 X-Axis %d [0x%08X]
 X-Axis 1
 X-Axis 2
-X-^r@
+X-Rt@
 X-axis in Stops
+X-wp-
 X/Y = %.0f px
 X1Ic	D
 X24_TYPELESS_G8_UINT
 X32_TYPELESS_G8X24_UINT
-X50M4
-X5Vy@
-X5lx@
-X=[)1
-X=\+#
+X54|@
+X5<nD
+X5J{@
+X5iz@
+X8VKy
+X=,u,
+X=2WX
+X=\/#
 X?+5[>,
 XA]_^]
 XA^A]_]
@@ -13311,7 +13373,6 @@ XD$@f
 XD$HH
 XD$hD
 XD$lD
-XD$|E
 XGL'$
 XHeight
 XITrP
@@ -13333,6 +13394,7 @@ X\$0H
 X\$@I
 X_HEIGHT
 X`Hc@XH
+X`hrP
 Xl$4D
 Xl=hs>
 Xr(fA
@@ -13350,58 +13412,42 @@ Xt$`f
 Xt$hH
 Xt$hM
 Xt$hf
-Y	V_stricmp_fast
+Xt$tE
 Y!Q!t!
-Y%J[D
-Y%ry1
 Y(t+H
-Y-+FP
+Y-#3>
 Y-Axis
 Y-Axis %d
 Y-Axis %d [0x%08X]
 Y-Axis 1
 Y-Axis 2
 Y-Axis 3
-Y-Z	Q
-Y-kQU
 Y0HcR
-Y5	/)
-Y5	:*
-Y5!l.
-Y5(2T
-Y5)!)
-Y5)2T
-Y5.k)
-Y5/t.
-Y50o)
-Y56j.
-Y59)+
-Y5;NX
-Y5;Y*
-Y5;_*
-Y5D	Q
-Y5Dr.
-Y5EvT
-Y5I8)
-Y5Kr*
-Y5MzI
-Y5ZJ)
-Y5[.$
-Y5^<E
-Y5d*J
-Y5i*)
-Y5i[)
-Y5pX'
-Y5v\)
-Y5v`)
-Y5y@*
-Y5{-*
-Y5{x*
+Y5!6)
+Y5!A*
+Y5$\)
+Y5$q,
+Y5)3+
+Y5.`)
+Y51nD
+Y51s*
+Y588%
+Y5A()
+Y5Fr)
+Y5Hv)
+Y5S`*
+Y5Sf*
+Y5[dT
+Y5a?)
+Y5cy*
+Y5o)2
+Y5rQ)
+Y5ulJ
 Y9"SD
-Y=]'*
-Y=^lV
-Y=e'>
-Y=qDT
+Y=5Z*
+Y=Fw!
+Y=G S
+Y=u.*
 Y>kX>
 Y>kX>M
 Y?fff?33s?
@@ -13491,6 +13537,7 @@ Zsmall
 [%04d] Window
 [%05d] 
 [%05d] [%s] Hello, current time is %.1f, here's a word: '%s'
+[%s] [%05d] 
 [%s][%s]
 [%s][0x%08X,%d]
 [%s][Data]
@@ -13522,7 +13569,8 @@ Zsmall
 [docking] DockSpace: dockspace node 0x%08X: setup WindowClass 0x%08X -> 0x%08X
 [docking] In node 0x%08X: %d new appearing tabs:%s
 [docking] SelectedTabId = 0x%08X, NavWindow->TabId = 0x%08X
-[dragdrop] BeginDragDropSource() DragDropActive = true, source_id = %08X
+[dragdrop] AcceptDragDropPayload(): 0x%08X: payload delivery
+[dragdrop] BeginDragDropSource() DragDropActive = true, source_id = 0x%08X%s
 [dragdrop] ClearDragDrop()
 [drop here]
 [error]
@@ -13726,6 +13774,7 @@ Zsmall
 \$`Ic
 \$`fH
 \$`tVH
+\$dE2
 \$gm?
 \$hE3
 \$hH9
@@ -13745,10 +13794,10 @@ Zsmall
 \$xI;
 \$xu!M
 \$|LcT$HL
-\-!w.
-\-c0A
-\5p4A
-\5xo.
+\%5LG
+\%vt	
+\5^Z0
+\5~CR
 \>$hkDh$h>
 \??k=Y
 \D$Df
@@ -13792,16 +13841,17 @@ Zsmall
 ^xfD9
 _ ;_$t
 _$+_ f
+_%D8k
 _(IcG L
-_5"R)
-_52N)
-_5<&)
-_5Fh)
-_5Nd)
-_5\=)
-_5gz)
-_5g~)
-_5|/)
+_5 z)
+_54;)
+_5:Y)
+_5JU)
+_5T-)
+_5Y	)
+_5^o)
+_5fk)
+_5tD)
 _8Hc}w;{4~!H
 _8I;_@tj
 _8M9g(u\
@@ -13924,6 +13974,7 @@ _|HcGxA
 `A_A^_
 `A_A^_^[
 `A_A^_^]
+`A__^][
 `B`M`X
 `RTTI
 `anonymous namespace'
@@ -14102,6 +14153,7 @@ bullet
 button
 by %s
 bytes
+c	V_tanf
 c HcC8
 c L9#t	H
 c UAVAWI
@@ -14291,7 +14343,6 @@ d$PL;d$h
 d$PM;
 d$PMk
 d$PfE
-d$XD+d$TD
 d$XE3
 d$XH;
 d$XLk
@@ -14312,10 +14363,10 @@ d$hf;
 d$pD9e
 d$pD;
 d$pE3
+d$ptGH
 d$pu,I
 d$xE3
 d$xE;
-d$xHc
 d$xfD
 d$xfH
 d6d?a
@@ -14395,6 +14446,7 @@ drag float3
 drag float4
 drag int
 drag int 0..100
+drag int wrap 100..200
 drag int2
 drag int3
 drag int4
@@ -14484,7 +14536,6 @@ extend .$0 {
 extendee
 extension_range
 e}1Hc
-f	V_tanf
 f i j k d b h
 f!f=fEfwf
 f(x) = 10^x
@@ -14770,7 +14821,6 @@ hA_A^A]A\_^[]
 hA_A^A]A\_^][
 hA_A^A][
 hA__][
-hA__^[
 hBindlessTextureDescriptorSet != RENDER_DESCRIPTOR_SET_HANDLE_INVALID
 hBuffer != RENDER_BUFFER_HANDLE_INVALID
 hCB != CONSTANT_BUFFER_HANDLE_INVALID
@@ -14957,6 +15007,7 @@ io.ConfigFlags: DockingEnable
 io.ConfigFlags: NavEnableGamepad
 io.ConfigFlags: NavEnableKeyboard
 io.ConfigFlags: NavEnableSetMousePos
+io.ConfigFlags: NoKeyboard
 io.ConfigFlags: NoMouse
 io.ConfigFlags: NoMouseCursorChange
 io.ConfigFlags: ViewportsEnable
@@ -14998,6 +15049,8 @@ is_multiplayer
 is_transition
 ishltv
 isuperior
+it >= Data && it < Data + Size
+it >= Data && it <= Data + Size
 item view
 items_count
 items_type (first column)
@@ -15108,6 +15161,7 @@ l$<E3
 l$@$`3
 l$@9i
 l$@A;
+l$@E2
 l$@E3
 l$@Hc
 l$@Hc*
@@ -15144,6 +15198,7 @@ l$T;w
 l$XA9F
 l$XA;
 l$XE3
+l$XH;
 l$XHc
 l$XI;
 l$XLi
@@ -15599,6 +15654,8 @@ max_client_limit
 max_clients
 maxdate
 maxtime
+mcc->Contexts.contains(ctx) == false
+mcc->Contexts.contains(ctx) == true
 memberName.m_pString
 mergedindices
 mesh_calculate_curvature_smooth_invert
@@ -15627,7 +15684,6 @@ mindate
 mintime
 minus
 mixed
-mnP7y
 model_default_preview_sequence_name
 morphcomposite
 msaa copy
@@ -15843,36 +15899,23 @@ ny@fD
 o L9/t
 o Lc.I
 o O 0
-o%"!2
-o%myQ
+o%k%>
 o)9oX
-o-	2>
-o-)~T
-o-8,>
-o-BqT
-o-U,>
-o-~QT
-o-~RT
+o-8*>
+o-=w#
+o-NrT
+o-NsT
+o-O3>
+o-l3>
 o0H9o8
-o57$>
+o5/rT
 o59UI
-o5>~T
-o5?RT
-o5GoT
-o5T,>
-o5_QT
-o5pvT
-o5tqT
-o="QT
-o=#RT
-o=8dT
-o=AQT
-o=F\T
-o=RvT
-o=U~T
-o=aWT
-o=byT
-o=d2>
+o5k3>
+o5l*>
+o=1xT
+o=D*>
+o=m0>
+o=x+>
 oD$ f
 oD$@H
 oEoOoZoaozo
@@ -16019,7 +16062,6 @@ pEnumInfo
 pEnvMap->m_nEnvCubeMapArrayIndex < MAX_ENVMAPS
 pExtensionWithDot[ 0 ] == '.'
 pExtra
-pFP}N
 pField == pFieldBase + nFields
 pFlexSetup->m_flexDescWeights.Count() / 2 == nFlexWeights
 pFlexSetup->m_pFlexDescDelayedWeights != nullptr
@@ -16325,7 +16367,6 @@ renderSky
 renderTargetDesc.m_pColorTargets[i] != RENDER_TEXTURE_HANDLE_INVALID
 renderToCubemap
 renderType == pLines->m_RenderType
-renderType == pSpheres->m_RenderType
 renderType == pTris->m_RenderType
 renderViewModel
 rendertarget_
@@ -16393,6 +16434,7 @@ sDLcs
 sHfff
 sMH9;u?H
 sPHcCh
+sQH97t
 sTHcSP
 sTHcSPH
 sWD8#tNA
@@ -16691,8 +16733,8 @@ t	9>t
 t	A;y 
 t	A;z 
 t	D#%
-t	D#%C
-t	D#%[
+t	D#%#
+t	D#%;
 t	H9s
 t	HcC
 t	Hcp
@@ -16716,7 +16758,6 @@ t#D9s
 t#E9}`u
 t#HcE8H
 t#HcE<H
-t#fff
 t$ 9]
 t$ A9vX
 t$ A;vX
@@ -16778,7 +16819,6 @@ t$0E3
 t$0H+
 t$0H9J
 t$0Hc
-t$0Hc7
 t$0HcO(L
 t$0HcO0M
 t$0Hi
@@ -16909,6 +16949,7 @@ t$hE;
 t$hIc
 t$hMc
 t$huY
+t$lfD
 t$lu/A
 t$pE3
 t$pHi
@@ -16927,9 +16968,8 @@ t$xLk
 t$xt*3
 t$xuIM
 t$x|EH
-t$|fD
 t%@8x
-t%D9-f3 
+t%D9-
 t%D9x`u
 t%HcS
 t%Hc}
@@ -16964,7 +17004,6 @@ t,D8a
 t,HcA
 t-9t$ t.
 t-D9n,t
-t-E9'
 t-H;C
 t-Lck
 t-fff
@@ -16972,7 +17011,8 @@ t.H99t)
 t.LcA
 t.fff
 t/@8p
-t/D854
+t/D85
+t/E9'
 t/H;|$0r
 t/LcA
 t/fff
@@ -16998,7 +17038,7 @@ t6D9s$t#D
 t7HcP
 t7L9h
 t8fff
-t:D85]
+t:D85-
 t;IcP
 t;LcF
 t=fE9
@@ -17022,7 +17062,6 @@ tGIcm
 tGv:E
 tIHcA
 tIHcC
-tJHcw
 tKM9nXuEH
 tLLcx|M
 tMI92uHM
@@ -17084,8 +17123,8 @@ tbD8d/
 tbJ9|
 tcE9f
 tcommaaccent
+td8_at
 tdE8,$u^E
-tdH9/u=E
 teHc}
 tesidx
 tests1
@@ -17188,7 +17227,6 @@ type1
 type42
 t|H9;uwD
 t~M9B uxA
-u	8O<
 u	D9?u
 u 9G(u
 u 9k(u
@@ -17257,11 +17295,10 @@ u@L9s8
 uBfD9
 uCfD9H
 uCfD9`
-uD;D$`u
 uED8r(t
 uH9}@~.H
 uJL9H@
-uNH9z A
+uNH9r A
 uPD87tb3
 uRHcF
 uRHcG
@@ -17408,7 +17445,6 @@ w*fD9P
 w,f9p
 w7fA9|
 w8H9w
-w8HcG0L
 w@D8o
 wDwNwYw`wy
 wPtJE
@@ -17663,6 +17699,7 @@ zx(u8
 |$0t(@
 |$0uE
 |$0uTHcJ
+|$4E;
 |$8A;
 |$8D+
 |$8D;
@@ -17680,7 +17717,6 @@ zx(u8
 |$8u)H
 |$8~ H
 |$8~#H
-|$<E;
 |$<fA+
 |$@	u
 |$@ H
@@ -17748,13 +17784,13 @@ zx(u8
 |$`9w
 |$`;{<
 |$`A9}
-|$`A;G
 |$`CI
 |$`E3
 |$`H;
 |$`Lc
 |$`fE
 |$`uTHcK
+|$`|SH
 |$dA9
 |$hD;
 |$hE3
@@ -17811,6 +17847,7 @@ zx(u8
 }0HcC
 }4fff
 }>;_$
+}D;D$`u
 }HfD9#A
 }LuHO
 }NSb9
@@ -17839,13 +17876,13 @@ zx(u8
 ~(fA#
 ~+Hc_8;_Hu
 ~,*u<I
-~-.!A
-~-P!A
+~-w A
 ~-~E~W~
 ~3fff
 ~4fff
 ~5LcS
 ~8DiN 
+~8HcF0L
 ~;fff
 ~<uZEeu
 ~@fff

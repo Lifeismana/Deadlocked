@@ -282,6 +282,7 @@
 !#GameUI_ServerRejectFailedChannel
 !#Player_DisconnectReason_TK_Start
 !#Player_DisconnectReason_VotedOff
+!$+%_#s%
 !>6'Y
 !CNETMsg_SpawnGroup_ManifestUpdate
 !HcD$XH
@@ -1445,7 +1446,7 @@ $schemasystem/schema_enable_defines.h
 220801000000Z
 230714000000Z
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240704150633Z0/
+240711145848Z0/
 241009235959Z0a1
 25.CSource2Metrics_MatchPerfSummary_Notification.Client
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1562,6 +1563,7 @@ $schemasystem/schema_enable_defines.h
 :M9w8u
 :YA1H
 :\u3L
+;(YI)
 ;.u1L
 ;@t3H
 ;A$|cH
@@ -1586,6 +1588,7 @@ $schemasystem/schema_enable_defines.h
 ;{8~.H
 ;|$0|
 ;|$`|
+<	V_qsort_s
 <	w	@
 < t=<	t9
 <$L;|$hu
@@ -1609,6 +1612,7 @@ $schemasystem/schema_enable_defines.h
 <unknown>
 <utK@:
 <|HcL$pA
+=#5g|G
 =YA1H
 =imb;D
 =rIQU
@@ -1620,7 +1624,6 @@ $schemasystem/schema_enable_defines.h
 >f;D$0t
 >f;D$4t
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?456789:;<=
@@ -3823,6 +3826,7 @@ Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
 ExternalNameForInternalType
 Extra connection [%s]:
+F	V_sincosf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -4469,7 +4473,6 @@ HelpSystem_001
 Hex and octal numbers must be integers.
 Host game server ip
 HostStateMgr001
-I	V_sincosf
 I#I0H
 I#J0H
 I#M0H
@@ -4655,6 +4658,7 @@ J>@G_
 JSType
 January
 Jitter:  Average . . . : %9s%9s%9s   net_fakejitter
+K	V_snprintf
 K HcC$Hc
 K$HcC
 K$HcC(;
@@ -4895,6 +4899,7 @@ LCMapStringW
 LI0D;
 LITE_RUNTIME
 LOG_GENERAL
+La="pW
 Label
 Latency. . . . . . . . : %7dms%7dms%7dms   net_fakelag
 Lc#E+
@@ -4932,7 +4937,6 @@ Lct$PA
 Lcw0D;w@u
 Leaked channel %s remote %s
 LeaveCriticalSection
-Lf}'V
 Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
 Like net_showmsg, but only spew reliable messages
 List all registered net messages
@@ -5084,7 +5088,6 @@ Multiple steam net connections from %s
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 MutableMessage
 MutableRawRepeatedField
-N	V_snprintf
 N(+V0
 N0+V8
 N3`d?
@@ -5215,7 +5218,6 @@ OH+WP
 O`+Wh
 Obtained direct RTT measurements to relays in %d POPs.  Closest %d are:
 October
-Okeyx
 Oneof must have at least one field.
 OneofDescriptorProto
 OneofOptions
@@ -5357,7 +5359,7 @@ PushTwoPack5LeftDeltaOne
 PushTwoPack5LeftDeltaZero
 PxL9`
 Pz}b!
-Q)q9=
+Q	V_sscanf
 Q0I;Q8t
 Q5rHg,>
 QAngle
@@ -5631,7 +5633,6 @@ Sw[Hc
 Symbol name "
 Synthetic oneofs must be after all other oneofs
 System
-T	V_sscanf
 T$ D8t$(
 T$ E3
 T$ H;
@@ -5855,6 +5856,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
+V	V_stricmp_fast
 V0H;V8t
 V6E>`"(5
 VATAUAVAWH
@@ -6003,7 +6005,6 @@ XA_A^A]A\_^][
 XA_A^A]^][
 XA_^[]
 XL;l$p
-Y	V_stricmp_fast
 Y0HcR
 Y9"SD
 Y>kX>M
@@ -6265,7 +6266,6 @@ _xHcGpL
 `virtual displacement map'
 a(Hcw
 a7hIw
-ab!'+
 abcdefghijklmnopqrstuvwxyz
 activated
 active_samples
@@ -8347,6 +8347,7 @@ zY;>u:m
 |)L9c
 |6@8k!t
 |Lu?c
+|Vu80
 |b=})>
 |c;K(t^A
 }"fA;

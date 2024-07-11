@@ -564,6 +564,18 @@
 	animation-duration: 3s;
 }
 
+.deny .HudIndicatorContainer
+{
+	horizontal-align: center;
+	vertical-align: center;
+	height: fit-children;
+	width: fit-children;
+	flow-children: right;
+	z-index: 10;
+	animation-name: gold_pop;
+	animation-duration: 3s;
+}
+
 #Desc
 {
 	visibility: collapse;
@@ -763,6 +775,15 @@
 .mana_burn .HudIndicatorText
 {
 	color: mediumblue;
+	animation-name: crit_pop;
+	animation-duration: 0.6s;
+}
+
+.deny .HudIndicatorText
+{
+	color: rgb(255, 117, 85);
+	font-weight: bold;
+	font-style: italic;
 	animation-name: crit_pop;
 	animation-duration: 0.6s;
 }

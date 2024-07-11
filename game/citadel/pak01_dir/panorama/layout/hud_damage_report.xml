@@ -13,13 +13,23 @@
 				</Panel>
 			</Panel>
 		</snippet>
+		<snippet name="AbilityDamageBar">
+			<Panel class="AbilityDamageContainer">
+				<Image id="AbilityImage" />
+				<Panel class="AbilityDamageBarContainer">
+					<ProgressBarWithMiddle id="DamageRatioProgressBar" class="DamageRatioProgressBar Horizontal" />
+					<Label class="AbilityName" text="{s:damage_name}" />
+					<Label class="DamageValue" text="{d:damage_done}" />
+				</Panel>
+			</Panel>
+		</snippet>
 	</snippets>
-	<Panel class="HudDamageReport Minimized ShowPieGraph">
+	<Panel class="HudDamageReport">
 		<GlobalClassListener classes="gDetailView" />
 		<Panel id="ReportContents">
 			<Panel class="Header">
+				<Label html="true" class="DamageReportHeader" text="#Citadel_HUD_DamageReport_DamageReceived" />
 				<CitadelHeroImage id="ViewingHeroImage" scaling="stretch-to-cover-preserve-aspect" heroimagestyle="vertical" />
-				<Label html="true" class="DamageReportHeader" text="#Citadel_HUD_DamageReport_Title" />
 				<Panel class="TimeControl">
 					<DropDown id="TimeControlDropDown">
 						<Label id="TimeOptionLastRespawn" class="TimeControlOption" value="-1" text="#Citadel_HUD_DamageReport_LastRespawn" />
@@ -30,52 +40,26 @@
 						<Label id="TimeOption30" class="TimeControlOption" value="30" text="#Citadel_HUD_DamageReport_Time30" />
 					</DropDown>
 				</Panel>
-				<Panel class="CloseButton" />
+				<Panel class="CloseButton" onactivate="$.GetContextPanel().ToggleClass(&apos;Minimized&apos;)" />
 			</Panel>
-			<Panel class="DamageReceived DamageSection">
-				<Panel class="DamageControlRow DamageReceivedControls">
-					<Panel class="LabelArea">
-						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_DamageReceived" />
-					</Panel>
+			<Panel class="DamageSection">
+				<Panel class="DamageControlRow DamageControls">
 					<Panel class="DamageBreakdown">
 						<Label html="true" class="DamagePercent weaponDmg" text="#Citadel_HUD_DamageReport_DamagePercentWeapon" />
-						<ProgressBarWithMiddle id="DamageReceivedByTypeProgressBar" class="DamageRatioProgressBar Horizontal" />
+						<ProgressBarWithMiddle id="DamageByTypeProgressBar" class="DamageRatioProgressBar Horizontal" />
 						<Label html="true" class="DamagePercent spiritDmg" text="#Citadel_HUD_DamageReport_DamagePercentAbility" />
 					</Panel>
 				</Panel>
-				<Panel class="DamageReceivedContainer">
-					<Panel id="DamageReceivedByHero" class="DamageByHero" />
-					<Panel class="DamageTakenTotal LabelArea">
-						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_Total_Taken" />
-						<Label html="true" class="DamageTotal" text="#Citadel_HUD_DamageReport_DamageReceived_Amount" />
-					</Panel>
-				</Panel>
-			</Panel>
-			<Panel class="DamageDealt DamageSection">
-				<Panel class="DamageControlRow DamageDealtControls">
+				<Panel id="DamageByHero" class="DamageByHero" />
+				<CitadelDamageRows id="DamageByAbility" />
+				<Panel id="DamagePieGraph" />
+				<Panel class="DamageTotal">
 					<Panel class="LabelArea">
-						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_DamageDealt" />
+						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_TotalTaken" />
+						<Label html="true" class="DamageValue" text="#Citadel_HUD_DamageReport_TotalDamageValue" />
 					</Panel>
-					<Panel class="DamageBreakdown">
-						<Label html="true" class="DamagePercent weaponDmg" text="#Citadel_HUD_DamageReport_DamagePercentWeapon" />
-						<ProgressBarWithMiddle id="DamageDealtToTypeProgressBar" class="DamageRatioProgressBar Horizontal" />
-						<Label html="true" class="DamagePercent spiritDmg" text="#Citadel_HUD_DamageReport_DamagePercentAbility" />
-					</Panel>
-				</Panel>
-				<Panel class="DamageDealtContainer">
-					<Panel id="DamageDealtPieGraph" onmouseover="CitadelShowDamageReportAbilitySummaryTooltip(-1,true,true)" onmouseout="CitadelHideDamageReportAbilitySummaryTooltip()" />
-					<Panel id="DamageDealtToHero" class="DamageByHero" />
-					<Panel class="DamageDealtTotal LabelArea">
-						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_Total_Dealt" />
-						<Label html="true" class="DamageTotal" text="#Citadel_HUD_DamageReport_DamageDealt_Amount" />
-					</Panel>
-					<Panel class="DamageDealtToggleButton Button" onactivate="$.GetContextPanel().ToggleClass(&apos;ShowPieGraph&apos;)" />
 				</Panel>
 			</Panel>
-		</Panel>
-		<Panel id="ReportToggle" onactivate="$.GetContextPanel().ToggleClass(&apos;Minimized&apos;)">
-			<Label class="viewSummary Show" text="View Damage Report" />
-			<Label class="viewSummary Close" text="Close" />
 		</Panel>
 	</Panel>
 </root>

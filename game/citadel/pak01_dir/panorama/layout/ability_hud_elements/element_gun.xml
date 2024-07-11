@@ -43,6 +43,7 @@
 				<Label class="weapon_ammo_max" text=" / {i:max_clip_ammp}" />
 				<Panel class="weapon_ammo_infinite" />
 			</Panel>
+			<Panel id="parry_unavailable" />
 			<CircularProgressBar id="attack_delayed_progress_bar" />
 			<CircularProgressBar id="active_reload_progress_bar" />
 			<Label id="attack_delayed_label" text="{s:attack_delay_reason}" />

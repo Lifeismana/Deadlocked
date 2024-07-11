@@ -310,6 +310,7 @@ $D9x<t
 $D9x<tN
 $Ib?s
 $L9x0
+$T0?H
 $^fE;
 $bucH
 %""""D
@@ -425,7 +426,6 @@ $bucH
 %suncompressed data
 %u (0x%x)
 &?PPPPPPP?
-&D8%Q
 &YA1E
 &YA1H
 &YA1I
@@ -768,6 +768,7 @@ $bucH
 )|$ t
 )|$ u
 )|$0D
+)|$0L
 )|$0f
 )|$0fD
 )|$@A
@@ -788,6 +789,7 @@ $bucH
 )|$`f
 )|$pE
 )|B?d!
+*	V_log2_uint
 *** IB "%s": Tried to lock a GPU-only buffer!
 *** IB "%s": Tried to lock a non integral number of indices!
 *** IB "%s": Tried to lock a static buffer twice!
@@ -840,7 +842,7 @@ $bucH
 ,Icl$
 ,W5y+
 ,X< w
--	V_log2_uint
+-	V_logd
 -BH>t
 -I96t(I
 -Stop: 
@@ -943,7 +945,6 @@ $bucH
 -vulkan_enable_validation
 -vulkan_force_cpu
 -vulkan_force_enable_debug_utils
--vulkan_force_sm30
 -vulkan_force_sm60
 -vulkan_fossilize_log_verbose
 -vulkan_ignore_ctdl_bindless_non_blocking_issues
@@ -959,6 +960,7 @@ $bucH
 -vulkan_vma_defrag_each_frame
 -vulkan_vma_shutdown
 -vulkanrenderthreadstack
+.	V_logf
 .. !""##$$%%&.'.(())**..++,.-H
 .....
 .......
@@ -968,7 +970,7 @@ $bucH
 ................
 ..om?
 .00cfg
-.5-R*
+.5=X*
 .;C ~
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -1370,14 +1372,13 @@ $bucH
 .xJ>Hf
 .xdata
 .xdata$x
-/%'c)
+/%7i)
 /2GG>!B
-/5;c)
-/5w;2
+/5'l)
+/5Ki)
 />58d%
 /TF<)VGy#WH
 /YA1H
-0	V_logd
 0 && "Allocation mapped too many times simultaneously."
 0 && "Allocation not found in linear allocator!"
 0 && "Allocation to free not found in linear allocator!"
@@ -1492,7 +1493,6 @@ $bucH
 0iN>/
 0w0c1
 0}0i1
-1	V_logf
 1#IND
 1#INF
 1#QNAN
@@ -1510,7 +1510,7 @@ $bucH
 220323000000Z
 220801000000Z
 230714000000Z
-240704151239Z0/
+240711150321Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1577,7 +1577,7 @@ $bucH
 8D$Xt
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
-8F0u+
+8F o+
 8GbthH
 8H9o u
 8Ht;I
@@ -1595,6 +1595,7 @@ $bucH
 8uuOH
 8vtext
 8}u+H
+9	V_powd
 9)~4H
 9)~P3
 9/~FH
@@ -1615,12 +1616,12 @@ $bucH
 9H$uA9
 9H(u&9
 9L$Pv fff
+9MX~hL
 9RIFFL
 9S8~"H
 9SPv7
 9SPv@
 9Sxv(L
-9UP~X
 9W8~Q
 9Y>)F$
 9\$0u
@@ -1651,6 +1652,7 @@ $bucH
 9t$Pu	
 9{H~>
 9{\~9H
+:	V_powf
 : lexer error %d :
 :>)*	v
 :>t6k'
@@ -1665,12 +1667,13 @@ $bucH
 :VP8X
 :u(f9Q
 ;	Fzo
+;	V_qsort
 ;.u1L
-;5]F4
-;5eF4
+;5>pZ
+;5mL4
+;5uL4
 ;;L$Pr
-;=@[9
-;=}o9
+;=Pa9
 ;?0123456789:;<=>?
 ;BIb?
 ;C v)H;K
@@ -1700,7 +1703,7 @@ $bucH
 ;|$8|
 ;|$X}
 ;|$h}
-<	V_powd
+<	V_qsort_s
 <	u2H
 <	u\L
 <	ueH
@@ -1711,6 +1714,7 @@ $bucH
 <0:08
 <0ufA
 <0ugA
+<74-M5
 <:u|H
 <:wRH
 <:wXH
@@ -1744,12 +1748,10 @@ $bucH
 <vt{<x
 <xuM@
 <}wTI
-=	V_powf
 =SPB8u*
 =SPB8ue
 =imb;D
 =rIQU
->	V_qsort
 >%ucI
 >-memory-
 >.fozH
@@ -1760,7 +1762,6 @@ $bucH
 >L9|$xt
 >Mp$d
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?49HoKC
@@ -1933,14 +1934,15 @@ $bucH
 @.data
 @.reloc
 @0H9B0H
-@6 Y+
 @80u	
 @84)u
 @848~
+@85cw^
 @88wdH
 @88wmH
 @88wuH
-@8=NCZ
+@8=?>a
+@8=VIZ
 @8i(u
 @8j(t
 @8k(t
@@ -2142,6 +2144,7 @@ $bucH
 @fE9d
 @ffffff
 @pn>6
+A	V_roundf
 A ;B u
 A E9q
 A!;I2
@@ -2438,7 +2441,6 @@ B.f?y
 B09A0u!
 B49A4u
 B8<2u
-B9t:(
 B@I;BHs
 BC6H_HueShiftFixup_BlockHasDecodingErrors
 BC6H_HueShiftFixup_QuantizeBlock
@@ -2823,11 +2825,11 @@ CMediumCommandBufferChunk CUtlMemoryPool
 CMemAllocSystemInitialize
 CMemoryManagerVulkan::Allocate
 CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup
-CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup(1525): vmaCreatePool failed with error: %d
+CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup(1536): vmaCreatePool failed with error: %d
 CMemoryManagerVulkan::AllocateForObject
 CMemoryManagerVulkan::AllocateForObjectPooled
 CMemoryManagerVulkan::AllocateImageInCustomPoolGroup
-CMemoryManagerVulkan::AllocateImageInCustomPoolGroup(1454): vmaCreatePool failed with error: %d
+CMemoryManagerVulkan::AllocateImageInCustomPoolGroup(1465): vmaCreatePool failed with error: %d
 CMemoryManagerVulkan::AllocatePooled
 CMemoryManagerVulkan::DestroyCustomPoolGroup
 CMemoryManagerVulkan::GetCommandBuffer
@@ -2838,7 +2840,6 @@ CMemoryManagerVulkan::OnVmaGpuMemDump
 CMemoryManagerVulkan::Shutdown
 CMemoryManagerVulkan::VmaAllocateInCustomPool::<lambda_1>::operator ()
 CMemoryManagerVulkan::VmaDefrag
-CMemoryManagerVulkan::VmaDefragProcessDeletionQueueInternal
 CMemoryManagerVulkan::VmaFinishCurrentDefrag
 CMemoryManagerVulkan::VmaInit
 CMemoryManagerVulkan::VmaUpdateDefragMainThread
@@ -2999,16 +3000,16 @@ CRenderDeviceBase
 CRenderDeviceBase::AcquirePooledDynamicConstantBuffer
 CRenderDeviceBase::AllocatePooledBackingStore
 CRenderDeviceBase::AllocatePooledIndexBuffer
-CRenderDeviceBase::AllocatePooledIndexBuffer(3627): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3663): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3629): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3665): 
 CRenderDeviceBase::AsyncSetTextureData(3284): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3531): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3533): 
 CRenderDeviceBase::CreateConstantBuffer
 CRenderDeviceBase::CreateConstantBuffer(1584): 
 CRenderDeviceBase::CreateConstantBufferInternal
 CRenderDeviceBase::DestroyConstantBuffer
 CRenderDeviceBase::EnableAsyncPresent
-CRenderDeviceBase::EndRenderDocCapture(3517): 
+CRenderDeviceBase::EndRenderDocCapture(3519): 
 CRenderDeviceBase::FindOrCreateTexture
 CRenderDeviceBase::FindOrCreateTexture(1764): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
@@ -3032,7 +3033,7 @@ CRenderDeviceBase::QueueFallbackTextureCopy
 CRenderDeviceBase::ResizeEngineWindow
 CRenderDeviceBase::SetCubemapRadianceSHConstants
 CRenderDeviceBase::SetCubemapRadianceSHConstants::<lambda_1>::operator ()
-CRenderDeviceBase::StartRenderDocCapture(3504): 
+CRenderDeviceBase::StartRenderDocCapture(3506): 
 CRenderDeviceBase::UnregisterExternalAllocation
 CRenderDeviceMgrBase::AddDeviceEventListener
 CRenderDeviceMgrBase::AddModeChangeCallback
@@ -3057,52 +3058,52 @@ CRenderDeviceVulkan::AcquireDynamicDescriptorSet
 CRenderDeviceVulkan::AcquireSemaphore
 CRenderDeviceVulkan::AllocateBufferInPool
 CRenderDeviceVulkan::AllocateBufferInPool - invalid memory pool handle.
-CRenderDeviceVulkan::AllocateBufferInPool(9105): failed to allocate GPU memory in custom pool for %s.
-CRenderDeviceVulkan::AllocateBufferInPool(9115): vmaBindImageMemory failed for buffer %s with error %d.
+CRenderDeviceVulkan::AllocateBufferInPool(9117): failed to allocate GPU memory in custom pool for %s.
+CRenderDeviceVulkan::AllocateBufferInPool(9127): vmaBindImageMemory failed for buffer %s with error %d.
 CRenderDeviceVulkan::AllocateDeviceCheckPointString
 CRenderDeviceVulkan::AllocateTextureInPool
 CRenderDeviceVulkan::AllocateTextureInPool - invalid memory pool handle.
-CRenderDeviceVulkan::AllocateTextureInPool(9012): Unable to get Vulkan image for %s.
-CRenderDeviceVulkan::AllocateTextureInPool(9019): Allocation already set for %s, it is not valid to assign a new allocation.
-CRenderDeviceVulkan::AllocateTextureInPool(9031): failed to allocate GPU memory in custom pool for %s.
-CRenderDeviceVulkan::AllocateTextureInPool(9040): vmaBindImageMemory failed for image %s with error %d.
+CRenderDeviceVulkan::AllocateTextureInPool(9024): Unable to get Vulkan image for %s.
+CRenderDeviceVulkan::AllocateTextureInPool(9031): Allocation already set for %s, it is not valid to assign a new allocation.
+CRenderDeviceVulkan::AllocateTextureInPool(9043): failed to allocate GPU memory in custom pool for %s.
+CRenderDeviceVulkan::AllocateTextureInPool(9052): vmaBindImageMemory failed for image %s with error %d.
 CRenderDeviceVulkan::AssignQueryObjectToPool
-CRenderDeviceVulkan::BeginSubmittingDisplayLists(3899): 
+CRenderDeviceVulkan::BeginSubmittingDisplayLists(3910): 
 CRenderDeviceVulkan::CreateBLASForCompact
 CRenderDeviceVulkan::CreateBLASForCompact::<lambda_1>::operator ()
 CRenderDeviceVulkan::CreateConstantBufferInternal
 CRenderDeviceVulkan::CreateDefaultBuffers
-CRenderDeviceVulkan::CreateDefaultBuffers(2040): 
+CRenderDeviceVulkan::CreateDefaultBuffers(2051): 
 CRenderDeviceVulkan::CreateDefaultShaders
 CRenderDeviceVulkan::CreateDescriptorSet: Failed to create descriptor set.
 CRenderDeviceVulkan::CreateDescriptorSetVulkan
 CRenderDeviceVulkan::CreateGPUBufferFormatted
 CRenderDeviceVulkan::CreateMemoryPooledGPUBuffer
 CRenderDeviceVulkan::CreateQueryObject
-CRenderDeviceVulkan::CreateTLAS(7167): 
+CRenderDeviceVulkan::CreateTLAS(7178): 
 CRenderDeviceVulkan::CreateViewsOfTexture
 CRenderDeviceVulkan::CreateViewsOfTexture on texture %s but it does not have TSPEC_MUTABLE_FORMAT.
 CRenderDeviceVulkan::CreateViewsOfTexture on texture %s but view %s does not have TSPEC_IMAGE_VIEW_ONLY.
 CRenderDeviceVulkan::CreateViewsOfTexture on texture %s but view %s was already created.  A view can only be created once.
-CRenderDeviceVulkan::DeleteQueryObject(4094): 
+CRenderDeviceVulkan::DeleteQueryObject(4105): 
 CRenderDeviceVulkan::DestroyAllSemaphores
 CRenderDeviceVulkan::DestroyCmdBuffer
 CRenderDeviceVulkan::DestroyDescriptorSet
 CRenderDeviceVulkan::DestroyDeviceMemoryPool - invalid memory pool handle.
 CRenderDeviceVulkan::FreeBufferFromPool
-CRenderDeviceVulkan::FreeBufferFromPool(9164): Unable to get Vulkan buffer.
-CRenderDeviceVulkan::FreeBufferFromPool(9170): no allocation for buffer %s.
+CRenderDeviceVulkan::FreeBufferFromPool(9176): Unable to get Vulkan buffer.
+CRenderDeviceVulkan::FreeBufferFromPool(9182): no allocation for buffer %s.
 CRenderDeviceVulkan::FreeTextureFromPool
 CRenderDeviceVulkan::FreeTextureFromPool - invalid memory pool handle.
-CRenderDeviceVulkan::FreeTextureFromPool(9062): Unable to get Vulkan image for %s.
-CRenderDeviceVulkan::FreeTextureFromPool(9068): no allocation for image %s.
+CRenderDeviceVulkan::FreeTextureFromPool(9074): Unable to get Vulkan image for %s.
+CRenderDeviceVulkan::FreeTextureFromPool(9080): no allocation for image %s.
 CRenderDeviceVulkan::GetCmdPool
 CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9209): Unable to get Vulkan buffer.
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9215): no allocation for buffer %s.
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9221): Unable to get Vulkan buffer.
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9227): no allocation for buffer %s.
 CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9184): Unable to get Vulkan image for %s.
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9190): no allocation for image %s.
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9196): Unable to get Vulkan image for %s.
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9202): no allocation for image %s.
 CRenderDeviceVulkan::GetDeviceSpecificBuffer
 CRenderDeviceVulkan::GetDeviceSpecificDescriptorSet
 CRenderDeviceVulkan::GetDeviceSpecificRayTracePipeline
@@ -3120,7 +3121,7 @@ CRenderDeviceVulkan::OnLowMemoryNotification - evicting all textures to reduce m
 CRenderDeviceVulkan::QueryFeature
 CRenderDeviceVulkan::QueueStaticDescriptorPoolDeletion
 CRenderDeviceVulkan::ReadTexturePixels
-CRenderDeviceVulkan::ReadTexturePixels(3696): 
+CRenderDeviceVulkan::ReadTexturePixels(3707): 
 CRenderDeviceVulkan::RebakeDescriptorSetsReferencing - could not allocate descriptor in new pool.
 CRenderDeviceVulkan::RecreateGlobalPerFrameDescriptorSet
 CRenderDeviceVulkan::RegisterDescriptorSetLayout
@@ -3185,7 +3186,7 @@ CSheetDataTextureCache::AllocateAndUploadSequenceData(356):
 CStrongHandle<struct InfoForResourceTypeCTextureBase>::Shutdown
 CSwapChainBase::QueuePresentAndWait() looped for %d iterations without a present event.
 CSwapChainVulkan::CreateSwapChain
-CSwapChainVulkan::CreateSwapChain(2784): 
+CSwapChainVulkan::CreateSwapChain(2795): 
 CSwapChainVulkan::CreateSwapChain::<lambda_2>::operator ()
 CSwapChainVulkan::SetupViews
 CSwapChainVulkan::SwapBuffers
@@ -3304,7 +3305,7 @@ CTextureManagerBase::~CTextureManagerBase
 CTextureManagerVulkan::AddReferenceToDescriptorSet
 CTextureManagerVulkan::CTextureManagerVulkan
 CTextureManagerVulkan::ComputeTextureObject
-CTextureManagerVulkan::ComputeTextureObject(1478): 
+CTextureManagerVulkan::ComputeTextureObject(1479): 
 CTextureManagerVulkan::ComputeTextureObject: Tried to create a depth-stencil texture which is *not* a render target!
 CTextureManagerVulkan::CreateSamplerObject
 CTextureManagerVulkan::CreateSamplerObject::<lambda_1>::operator ()
@@ -3339,8 +3340,8 @@ CTextureVulkan::AssignStandin
 CTextureVulkan::ComputeImageViews
 CTextureVulkan::CopyImage
 CTextureVulkan::CreateImageViews
-CTextureVulkan::SetInitialImageLayout(809): 
-CTextureVulkan::SetInitialImageLayout(816): 
+CTextureVulkan::SetInitialImageLayout(810): 
+CTextureVulkan::SetInitialImageLayout(817): 
 CTextureVulkan::SpinWaitForFallbackTextureHookup
 CTextureVulkan::VmaAssignNewObject
 CTextureVulkan::VmaCreateNewVulkanObject
@@ -4191,7 +4192,6 @@ Custom
 CustomData
 CustomPools
 Cx~!H
-D	V_roundf
 D	g I
 D W?{W
 D!l$xA
@@ -4451,18 +4451,15 @@ D2rf;
 D32FS8
 D4/L;
 D7 D;^
-D8%	qT
-D8%%bT
-D8%0fT
-D8%4hT
-D8%AnT
-D8%mrT
-D8%~cT
+D8%(qT
+D8%5hT
+D8%@lT
+D8%DnT
+D8%QtT
+D8%}xT
 D8*t$Ic
 D8,>u
-D8-0Ba
-D8-Zaa
-D8-lr]
+D8->aV
 D80t(H
 D81uUL9r
 D84:u
@@ -4554,7 +4551,7 @@ D9wPu
 D9|$ 
 D9~(D
 D;	t8
-D;%*Z9
+D;%:`9
 D;@Tr
 D;A ~
 D;A`v
@@ -4575,10 +4572,10 @@ D;d$,
 D;d$4|
 D;e4|
 D;eH|
+D;eX|
 D;l$`
 D;l$t
 D;l$x
-D;mP|
 D;oxv
 D;sHu
 D;t$0
@@ -4696,7 +4693,7 @@ E D9{(
 E H;EH
 E tGH
 E'HcG H
-E(D8=)
+E(D8=i
 E)n(u
 E+A@H
 E/	F(
@@ -4737,6 +4734,7 @@ EH*?H
 EHHcI
 EL$p3
 EL$pfA
+EM~@&
 EPfff
 ERROR : 
 ERROR! VK call failed! result = %s ( %s )
@@ -5153,6 +5151,7 @@ G|$HM
 G|$hM
 G|L99u
 H	F H
+H	V_sinf
 H	y A
 H A9	}
 H SVWAVH
@@ -5188,23 +5187,20 @@ H4IcH8H
 H8H;J8H
 H9(t;A
 H9(tO
-H9-9cU
-H9-ybU
+H9-IeU
 H90u'
 H93t7H
 H93teH
-H95b	>
-H95~	>
 H97u+A
 H98t$H
 H98t2
-H9=*0<
-H9=21<
-H9=B2<
-H9=MHY
-H9=R3<
-H9=b4<
-H9=m0:
+H9=:6<
+H9=B7<
+H9=R8<
+H9=]NY
+H9=b9<
+H9=r:<
+H9=}6:
 H9@ t
 H9@ t$A
 H9A(u
@@ -5356,12 +5352,14 @@ HalftoneHints
 HammerMapLoader001
 HasAllocatedMemory( nDestAttr )
 HasUAVHiddenCounter()
-Hc-WH9
+Hc-4+_
+Hc-gN9
 Hc.;n
 Hc/;o
 Hc3;s
 Hc7;w
 Hc;;{
+Hc=b)_
 Hc>;~
 HcA H
 HcA L
@@ -5409,6 +5407,7 @@ HcKxH;
 HcKxL;
 HcL$H
 HcL$hI
+HcL$pH
 HcL$xM
 HcM<LcW
 HcMwI
@@ -5422,6 +5421,7 @@ HcT$`
 HcT$h
 HcT$hA
 HcT$hH
+HcT$tH
 HcUo+
 Hc\$ Lc|$8L
 Hc\$$L
@@ -5523,7 +5523,7 @@ Ic<$L
 IcA(H
 IcA0A
 IcA`E
-IcF8I
+IcE8I
 IcF\H
 IcG$E
 IcG(A
@@ -5710,7 +5710,7 @@ JPEGMEM
 JSON version mismatches.
 January
 Jc< H
-K	V_sinf
+K	V_snprintf
 K 9s 
 K H9K0u
 K WATAUAVAWH
@@ -5938,12 +5938,14 @@ L$pIc
 L$pJc
 L$pf;
 L$pff
+L$tE3
 L$xA+
 L$xE3
 L$xH3
 L$xHc
 L$xI;A
 L$xf;
+L$|A;
 L(0H;
 L(0L;
 L)0t	H
@@ -5960,7 +5962,7 @@ L9#u/H
 L9/t9H
 L97vH
 L9;t	H
-L9=@AU
+L9=PCU
 L9A8v1E3
 L9BHA
 L9IHA
@@ -5979,8 +5981,6 @@ L9egt
 L9eot
 L9ewt
 L9h t,H
-L9l$0t
-L9l$8
 L9l$8t
 L9l$Pt
 L9l$Xt
@@ -5991,7 +5991,6 @@ L9l$xu
 L9m8t
 L9m@t
 L9mPt
-L9mXutA
 L9mgt
 L9n`tEH
 L9n`tmH
@@ -6011,6 +6010,8 @@ L9w(t
 L9x v@I
 L9x(u
 L9{(v
+L9|$0t
+L9|$8
 L9|$@t
 L9|$HA
 L9|$Ht
@@ -6107,7 +6108,6 @@ Lcd$ f
 Lcd$DD
 Lcd$LL
 Lcd$pD
-Lcd$tH
 Lcl$ M
 Lcl$TM
 LcmhA
@@ -6170,7 +6170,6 @@ LowLatencySleep
 L|4f;
 M#F8M
 M+G0M
-M6&Ygk[
 M8+G$L
 M8fD;
 M8tEL
@@ -6220,6 +6219,7 @@ MatrixWorldToScreen
 Matteing
 MaxDeviceID
 MaxSampleValue
+Maximum amount of frametime in milliseconds to spend processing VMA defrag deletions, this allows them to be amortized.
 Maximum device access threads: %u
 Maximum resolution for top mip level in streaming textures
 Maximum supported image dimension is %u pixels
@@ -6275,9 +6275,7 @@ MultiDrawIndexedInstancedIndirectCount failed - invalid drawarg buffer
 MultiDrawIndexedInstancedIndirectCount failed - invalid drawcount buffer
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 MwLck H
-N	V_snprintf
 N(@8~ H
-N)$E:H
 N3`d?
 N73F4%
 N>O=I9
@@ -6327,6 +6325,7 @@ Not a JPEG file: starts with 0x%02x 0x%02x
 Not a TIFF file, bad magic number %d (0x%x)
 Not a TIFF file, bad version number %d (0x%x)
 Not a key frame.
+Not all required VK_KHR_shader_float16_int8 / VK_KHR_16bit_storage features are supported and VulkanRequireSM6 is set in gameinfo.gi.  Vulkan device creation failed.
 Not enough
 Not implemented yet
 Not yet handling multi-dimensional arrays.
@@ -6379,7 +6378,6 @@ P89P@}M
 P8H=vtex
 P>q_Y~
 PA]A\[
-PA]A\]H
 PA]_^][
 PA^A]A\
 PA^A]A\_[
@@ -6524,6 +6522,7 @@ Push constants sized %i exceed GPU's max size = %i
 PxHc>E3
 Pz}b!
 P~6-U~/W
+Q	V_sscanf
 Q$HcA
 Q2XXR
 Q5rHg,>
@@ -6690,6 +6689,7 @@ RenderSystem/VulkanLazilyAllocateRenderTargets
 RenderSystem/VulkanMutableSwapchain
 RenderSystem/VulkanOnly
 RenderSystem/VulkanRequireDescriptorIndexing
+RenderSystem/VulkanRequireSM6
 RenderSystem/VulkanRequireSubgroupWaveOpSupport
 RenderSystem/VulkanStagingPMBSizeLimitMB
 RenderSystem/VulkanSteamAppShaderCache
@@ -6699,15 +6699,8 @@ RenderSystem/VulkanUseExternalSubpassDependency
 RenderTarget
 RenderThread() != nullptr
 RenderUtils_001
-Rendering/Constant Buffers (MB)
-Rendering/Index Buffers (MB)
-Rendering/Texture Non-Evictable Size (MB)
-Rendering/Texture Pool Size (MB)
-Rendering/Texture Resident Size (MB)
-Rendering/Texture Unthrottle Streaming
 Rendering/Total GPU Memory Budget (MB)
 Rendering/Total GPU Memory Used (MB)
-Rendering/Vertex Buffers (MB)
 Renderpass with invalid attachment reference.  Attachment #%d  Max: %d Has: %d.  Rejecting.
 Renderpass with too many attachment.  Max: %d Has: %d.  Rejecting.
 Rendersystem/SheetCacheTextureCols
@@ -6953,7 +6946,6 @@ Swapchain extent(s) are 0, skipping swapchain creation
 SwizzlePlanarScanlineToInterleaved
 SystemTimeToFileTime
 SystemTimeToTzSpecificLocalTime
-T	V_sscanf
 T$ A8W
 T$ A:W
 T$ D)s
@@ -7039,8 +7031,8 @@ T$xD;{
 T$xE3
 T$xH;
 T$xI+
-T%<H*
-T%if)
+T%LN*
+T%yl)
 TANGENT
 TD u"E;
 TEX read request: %d KB; %s
@@ -7366,6 +7358,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 Uxu9I
+V	V_stricmp_fast
 V6E>`"(5
 VALIDATION
 VATAUAVAWH
@@ -7864,18 +7857,19 @@ WriteVulkanDescriptorSetData
 Wrong JPEG library version: library is %d, caller expects %d
 Wrote %s
 Wrote RenderDoc capture to %s
+X	V_strlower_fast
 X @8u
 X ATAVAWH
 X AVH
 X D8e
 X!t5~
-X% e)
-X%Z]*
-X--)1
-X-8e)
+X%0k)
+X%jc*
+X-	S+
+X-=/1
+X-Hk)
 X5AHx
-X5G+1
-X5g;2
+X5W11
 XA^A\][
 XA^A]A\_^[
 XA^A]^]
@@ -7900,24 +7894,19 @@ X\$@I
 X_^[]
 X|$ A
 X|$8E
-Y	V_stricmp_fast
-Y%'$+
-Y%J~*
-Y%|)1
-Y-w$+
-Y5&!+
-Y5*w/
-Y5W+1
-Y5X$+
-Y5ZoO
-Y5h +
-Y5q+1
-Y5~x/
+Y%7*+
+Y%K%+
+Y-7%+
+Y5	21
+Y56'+
+Y5:}/
+Y5g11
+Y5h*+
+Y5x&+
 Y9"SD
-Y=3R*
-Y=Mw/
-Y=Z90
-Y=rx/
+Y=CX*
+Y=]}/
+Y=j?0
 Y>kX>
 Y>kX>M
 YCbCrCoefficients
@@ -7941,11 +7930,11 @@ ZIPSetupEncode
 ZIPVSetField
 Z\>z8
 ZeroStride Vertex buffer created!
+ZfuVeH
 Zod(^?
 Zpm"U
 Z~$|7
 [	UoA
-[	V_strlower_fast
 [*QmU
 [*ncd>0
 [-&LMb#{'
@@ -8080,11 +8069,11 @@ Z~$|7
 \$xu$I
 \$xu3M
 \$xu7H
-\-&~*
 \2rfB
-\='N*
+\=7T*
+]	V_strtoi64
 ])6M>&
-]0A;^8
+]0A;]8
 ]>)2X
 ]HfD;
 ]HvtC
@@ -8134,10 +8123,9 @@ _nextafter
 _oD>Kg
 _p)_tH
 _tools.txt
-`	V_strtoi64
 `+!]?
 `.rdata
-`6=j+
+`6-d+
 `;k8|
 `A]A\[
 `A]A\]
@@ -8450,7 +8438,6 @@ d$ D!
 d$ E3
 d$ t>
 d$ u?A
-d$%GX
 d$(A;
 d$(D8
 d$(Lcd$HL
@@ -8484,7 +8471,6 @@ d$XE3
 d$XHc
 d$XIc
 d$XfD
-d$`D;
 d$`E3
 d$`E;
 d$`Ic
@@ -8617,7 +8603,8 @@ f9<Au
 f9<Fu
 f9<H}
 f9<Ju
-f9=T79
+f9=#<9
+f9=d=9
 f9Bt~
 f9G`u1H
 f9G`uCH
@@ -8834,6 +8821,7 @@ graphicsPipelines
 groups
 h AVH
 h>1my
+hA]A\^]H
 hA^A]][
 hA^A]^]
 hA_A^
@@ -9363,6 +9351,7 @@ mutableDescriptorTypeLists
 mwtMH
 n * nBlockSize >= num
 n I9n(tY
+n#n!$
 n$<fA
 n03>Pu
 n0I9n8tZ
@@ -9390,6 +9379,7 @@ nCount >= INT16_MIN && nCount <= INT16_MAX
 nCurrentCmdBuffersAvailable <= pPool->m_nAllocatedCommandBuffers[ nCommandBufferType ]
 nD$`f
 nDXLevel != 0
+nDataOffset >= nMipDataSize
 nDataSize % GetIndexSize() == 0
 nDataSize % GetVertexSize() == 0
 nDataSize < nGpuTexSize
@@ -9569,52 +9559,51 @@ numWorkGroups
 n|$`fA
 o KPBf
 o$$fA
-o%-OR
-o%4V0
-o%:Y0
-o%<B0
-o%>.0
-o%>tR
-o%E~R
-o%K*0
-o%Zj0
-o%d	0
-o%dL0
-o%j\0
-o%m`0
-o%w#1
+o%#(Z
+o%D#Z
+o%D\0
+o%J_0
+o%LH0
+o%N40
+o%[00
+o%jp0
+o%o%0
+o%tR0
+o%zb0
+o%}f0
 o,$fD
-o-5&0
-o-?30
-o-Gx0
-o-Wm0
-o-_70
-o-`c4
-o-pu0
-o-sZ0
+o-E,0
+o-O90
+o-W~0
+o-gs0
+o-o=0
+o-pi4
 o47Lc
-o5&L0
-o5(n0
-o55@0
-o5?!0
-o5?d4
-o5Aq0
-o5E%6
-o5MF>
-o5Q50
-o5Zd>
-o5\c0
-o5q90
-o5tZ0
-o=%O0
-o=(L0
-o=3V4
-o=@$G
-o=CR0
-o=Q-4
-o=^c0
-o=nX0
-o=n\0
+o55u>
+o56R0
+o58t0
+o5EF0
+o5O'0
+o5Oj4
+o5Qw0
+o5W!0
+o5a;0
+o5j	0
+o5li0
+o=	3R
+o=	t0
+o=&`0
+o='80
+o=5U0
+o=8R0
+o=C\4
+o=G	0
+o=P*G
+o=SX0
+o=a34
+o=ni0
+o=~^0
+o=~b0
 oAPfD
 oD$ f
 oD$ fA
@@ -9641,6 +9630,7 @@ o\$1fA
 o\$@f
 o\$IfA
 o\$Pf
+o]>a)O]6?
 oaPfA
 obwQ4
 od$@f
@@ -9685,7 +9675,6 @@ p WATAUAVAWH
 p*W4H
 p0R^G'
 p;Y>u
-p>-l+
 p?ati_compress_wrapper.dll
 pA]][
 pA^A]A\_^][
@@ -9912,6 +9901,7 @@ pVulkanFunctions != nullptr
 pVulkanImage
 pVulkanImage != nullptr
 pVulkanImage->m_pVmaAllocation != VK_NULL_HANDLE
+pZc%.q
 p[WPN
 p`9p t
 panorama
@@ -9969,7 +9959,6 @@ qS>g?h3
 qangle
 quaternion
 queryType != RENDER_QUERY_EVENT
-queuedDeletion.pImage != VK_NULL_HANDLE
 r	Vr.>T
 r'w.H;
 r'w2H
@@ -10048,6 +10037,7 @@ r_textures_evict_all
 r_transparency_and_composition_mask
 r_validate_texture_streaming
 r_vma_defrag_algorithm
+r_vma_defrag_deletion_timeslice
 r_vma_defrag_enabled
 r_vma_defrag_max_allocation_count_per_pass
 r_vma_defrag_max_allocation_size_per_pass
@@ -10433,6 +10423,7 @@ t$P~#H
 t$T;o
 t$X@2
 t$XD;8
+t$XE3
 t$XH#
 t$XI#
 t$XI+
@@ -10480,6 +10471,7 @@ t'H9X(t
 t'H9X8t
 t'Hc0H
 t'HcW
+t)HcA
 t)IcV
 t)fff
 t*D9&}%H
@@ -10492,7 +10484,7 @@ t-HcA
 t-Lck
 t.fff
 t1@8l
-t2L9-W3a
+t2L9-
 t2fff
 t3D82t.
 t48^ H
@@ -10515,15 +10507,15 @@ t=D8j
 t?D8 t:
 t?HcS
 t@9+u,9s
-t@H95
+t@H95S$[
 t@McO4
-tAH9=A
+tAH9=
 tAHcI 
 tBMcW<IcO@Lc
 tC7Ddx
 tC@8-
-tC@8-%
-tC@85^
+tC@8-5
+tC@85n
 tDD8%
 tDD85
 tDfff
@@ -10531,7 +10523,7 @@ tEHcR
 tFD9c
 tGH9[0u
 tHHcD
-tID8-l
+tID8-|
 tIf9wbH
 tLfff
 tNfA;
@@ -11715,6 +11707,7 @@ yChromaOffset
 y\PD>!
 ycbcrModel
 ycbcrRange
+ydW?v
 ypfA;
 ys == 0
 z%u#H
@@ -11903,7 +11896,6 @@ zY;>u:m
 |Lu?c
 |T4fD;
 |b=})>
-} ;Q$w
 } H99u
 } f;Q
 }!fD;A
@@ -11921,6 +11913,7 @@ zY;>u:m
 }OLcCxL
 }W;k$
 }W;s$
+}W;s$wRH
 }df;s
 }df;{
 }gf;{
@@ -11932,7 +11925,7 @@ zY;>u:m
 }of;{
 }q;{$
 }rf;_
-}z;{$wuL
+}u;{$wpL
 }{fA;Z
 ~ $s%r
 ~$u H

@@ -48,7 +48,7 @@
 		<snippet name="AttributesBox">
 			<Panel class="AppliedAttributesContainer TopBottomFlow">
 				<Panel class="LeftRightFlow">
-					<Label class="ModInfoLabel" text="{s:extra_info}" html="true" />
+					<Label id="ExtraInfo" class="ModInfoLabel" text="{s:extra_info}" html="true" />
 				</Panel>
 				<Panel class="StatsAppliedBackground">
 					<Panel id="ImportantAttributeContainer" />
@@ -86,7 +86,7 @@
 			<Panel class="HeaderContainer">
 				<Panel id="ModImage" class="mod_icon" />
 				<Panel class="TopBottomFlow ModNameContainer">
-					<Label class="ModName" text="{s:mod_name}" />
+					<Label id="ModName" class="ModName" text="{s:mod_name}" />
 					<Panel class="PurchasedStateContainer">
 						<Panel class="ModCostContainer LeftRightFlow">
 							<Panel class="goldIcon" />

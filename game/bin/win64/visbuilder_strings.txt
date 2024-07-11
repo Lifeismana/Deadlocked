@@ -11,7 +11,6 @@
 	JS_STRING
 	TYPE_BOOL
 	TYPE_ENUM
-	V_fmodf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
@@ -50,7 +49,7 @@
   Problem     : Enum value did not match field type:
   Problem     : Field is not the right type for this message:
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$8/
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -987,7 +986,7 @@ $schemasystem/schema_enable_defines.h
 220323000000Z
 220801000000Z
 230714000000Z
-240704151244Z0/
+240711150334Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1013,6 +1012,7 @@ $schemasystem/schema_enable_defines.h
 456789:;<=
 4;tMA
 4@Mc<
+4X22BD
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 4xG;<,
 5FjiT
@@ -1110,6 +1110,7 @@ $schemasystem/schema_enable_defines.h
 ;w8u	H
 ;{,}"H
 ;|$`u
+<	V_qsort_s
 <	w	@
 < t=<	t9
 <$L;|$hu
@@ -1145,7 +1146,6 @@ $schemasystem/schema_enable_defines.h
 >f;D$0t
 >f;D$4t
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?333?
@@ -1521,7 +1521,6 @@ B H+X(
 B L+P(H
 B L+P(I
 B$D	B
-B&E/5
 B(H9A(uaH
 B(I9A(
 B3D?t%
@@ -2432,7 +2431,6 @@ E>nEA
 EH*?H
 EHH;EPt
 ENetworkDisconnectionReason
-EN|w5/
 EPA	v
 EPD	v
 EPD	w
@@ -2520,6 +2518,7 @@ ExtraVertexStreamOverride_t
 ExtraVertexStreamOverride_t::KV3Transfer_DefaultKeys_Impl
 ExtraVertexStreamOverride_t::Schema_VerifyBindingIsRegistered
 E|$(D
+F	V_sincosf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -2547,6 +2546,7 @@ FPE	~
 FPE	~(H
 FRf9ERt
 FRfA9GRt
+FV=R^
 Failed to read %s
 Failed to save unsupported class
 Failed to unserialize ray tracing environment.
@@ -2709,6 +2709,7 @@ Groups are not supported in proto3 syntax.
 Gt$@L
 Gt$HA
 G|$(L
+H	V_sinf
 H 8YKt
 H 8YKt	
 H @8iKt
@@ -2905,7 +2906,6 @@ HelpSystem_001
 Hex and octal numbers must be integers.
 Hint %.2f (%.2f regions)
 HostStateMgr001
-I	V_sincosf
 I#I0H
 I#J0H
 I#M0H
@@ -3064,7 +3064,7 @@ J<L4,&
 J>@G_
 JSType
 January
-K	V_sinf
+K	V_snprintf
 K HcC$Hc
 K$HcC(;
 K&>.yC
@@ -3411,14 +3411,12 @@ Missing name.
 ModelDocUtils001
 Monday
 MovementSettings
-MuWv8
 MultiByteToWideChar
 Multiple extension registrations for type "
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 MutableMessage
 MutableRawRepeatedField
 MutualVisibilityMatrix
-N	V_snprintf
 N(+V0
 N0+V8
 N3`d?
@@ -3566,8 +3564,8 @@ PxL9`
 Pz}b!
 Q0I;Q8t
 Q5rHg,>
-QQo`g9/L
 QueryPerformanceCounter
+Q|[*/
 RB dH
 RaiseException
 RandomFloat
@@ -3980,6 +3978,7 @@ V_StringToVector4D
 V_UInt16ToString_Unsafe
 V_UInt32ToString_Unsafe
 V_cosf
+V_fmodf
 V_~]	,
 Value must be "true" or "false" for boolean option "
 Value must be identifier for boolean option "
@@ -4157,6 +4156,7 @@ Zod(^?
 \80A9^ 
 \U%08x
 ])6M>&
+]-%(16
 ]>)2X
 ]D$dA
 ]D.8L
@@ -4290,7 +4290,6 @@ box_mins
 boxed_type
 bp(=>?g
 broken pipe
-bylw8
 bytes
 c HcC8
 c [1>H'
@@ -4505,6 +4504,7 @@ http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
 i u!H
+iI&=<
 idempotency_level
 identifier removed
 identifier_value
@@ -4980,6 +4980,7 @@ public_dependency
 purecall
 pvstype
 py_generic_services
+q -EH
 q(Lc6E
 qS>g?h3
 qangle

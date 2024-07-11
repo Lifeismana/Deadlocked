@@ -3,31 +3,51 @@
 	Powerup.Pickup.Health = 
 	{
 		base = "Base.Gameplay.Powerup.Pickup.2d"
+		pitch = 1.000000
 		vsnd_files = "sounds/gameplay/powerups/health.vsnd"
-		vsnd_duration = 1.652146
-	}
-	Powerup.Pickup.Gold = 
-	{
-		base = "Base.Gameplay.Powerup.Pickup.2d"
-		vsnd_files = "sounds/gameplay/powerups/gold.vsnd"
-		vsnd_duration = 1.489542
+		vsnd_duration = 1.650045
 	}
 	Powerup.Pickup.Speed = 
 	{
 		base = "Base.Gameplay.Powerup.Pickup.2d"
+		pitch = 1.000000
 		vsnd_files = "sounds/gameplay/powerups/speed.vsnd"
-		vsnd_duration = 1.645083
-	}
-	Powerup.Pickup.FireRate = 
-	{
-		base = "Base.Gameplay.Powerup.Pickup.2d"
-		vsnd_files = "sounds/gameplay/powerups/gold.vsnd"
-		vsnd_duration = 1.489542
+		vsnd_duration = 1.642993
 	}
 	Powerup.Spawn.Generic = 
 	{
 		base = "Base.Gameplay.Powerup.Spawn.3d"
-		vsnd_files = "sounds/gameplay/powerups/spawn_generic.vsnd"
-		vsnd_duration = 1.487083
+		vsnd_files = "sounds/common/null.vsnd"
+		vsnd_duration = 0.050023
+	}
+	Powerup.Pickup.Spirit = 
+	{
+		base = "Base.Gameplay.Powerup.Pickup.2d"
+		volume = 2.000000
+		pitch = 1.000000
+		delay = 0.030000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.100000
+		vsnd_files = "sounds/gameplay/powerups/spirit.vsnd"
+	}
+	Powerup.Pickup.Ammo = 
+	{
+		base = "Base.Gameplay.Powerup.Pickup.2d"
+		pitch = 1.000000
+		volume = 4.000000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.100000
+		delay = 0.040000
+		vsnd_files = "sounds/gameplay/powerups/ammo.vsnd"
+	}
+	Powerup.Pickup.Weapon = 
+	{
+		base = "Base.Gameplay.Powerup.Pickup.2d"
+		pitch = 1.100000
+		volume = -2.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.100000
+		delay = 0.000000
+		vsnd_files = "sounds/gameplay/powerups/weapon.vsnd"
 	}
 }

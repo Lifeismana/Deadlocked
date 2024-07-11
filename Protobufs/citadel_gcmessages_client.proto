@@ -766,6 +766,7 @@ message CMsgClientToGCSpectateUserResponse {
 	optional uint32 udp_connect_ip = 5;
 	optional uint32 udp_connect_port = 6;
 	optional fixed64 lobby_id = 7;
+	optional string client_broadcast_url = 8;
 }
 
 message CMsgClientToGCSpectateLobby {

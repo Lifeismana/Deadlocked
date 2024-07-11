@@ -91,23 +91,21 @@
 							</Panel>
 							<RadioButton group="VideoDetails" class="OptionsCheckBox" onactivate="CitadelEnableCustomGraphics(1);" id="UseAdvancedVideoButton" text="#citadel_settings_advancedvideosettings" />
 							<Panel id="AdvancedVideo" class="FullWidth">
-								<Panel class="LeftRightFlow FullWidth">
-									<Panel class="advancedvideo">
-										<CitadelSettingsCheckbox convar="r_citadel_distancefield_shadows" text="#citadel_settings_distancefield_shadows" onmouseover="UIShowTextTooltip( #citadel_settings_distancefield_shadows_desc )" onmouseout="UIHideTextTooltip()" />
-										<CitadelSettingsCheckbox convar="r_displacement_mapping" text="#citadel_settings_displacement_mapping" onmouseover="UIShowTextTooltip( #citadel_settings_displacement_mapping_desc )" onmouseout="UIHideTextTooltip()" />
-										<CitadelSettingsCheckbox convar="r_arealights" text="#citadel_settings_area_lights" onmouseover="UIShowTextTooltip( #citadel_settings_area_lights_desc )" onmouseout="UIHideTextTooltip()" />
-										<CitadelSettingsCheckbox convar="r_post_bloom" text="#citadel_settings_post_bloom" onmouseover="UIShowTextTooltip( #citadel_settings_post_bloom_desc )" onmouseout="UIHideTextTooltip()" />
-										<CitadelSettingsCheckbox convar="r_effects_bloom" text="#citadel_settings_effects_bloom" onmouseover="UIShowTextTooltip( #citadel_settings_effects_bloom_desc )" onmouseout="UIHideTextTooltip()" />
-										<ToggleButton class="CheckBox" id="VSyncToggle" text="#citadel_settings_vsync" onactivate="CitadelSetVSync();" onmouseover="UIShowTextTooltip( #citadel_settings_vsync_desc )" onmouseout="UIHideTextTooltip()" />
-									</Panel>
-									<Panel class="advancedvideo">
-										<CitadelSettingsCheckbox convar="r_citadel_fxaa" text="#citadel_settings_fxaa" onactivate="CitadelAntialiasingValueChanged()" onmouseover="UIShowTextTooltip( #citadel_settings_fxaa_desc )" onmouseout="UIHideTextTooltip()" />
-										<CitadelSettingsCheckbox convar="r_citadel_fsr2" text="#citadel_settings_fsr2" onactivate="CitadelAntialiasingValueChanged()" onmouseover="UIShowTextTooltip( #citadel_settings_fsr2_desc )" onmouseout="UIHideTextTooltip()" />
-										<CitadelSettingsCheckbox convar="r_depth_of_field" text="#citadel_settings_depth_of_field" onmouseover="UIShowTextTooltip( #citadel_settings_depth_of_field_desc )" onmouseout="UIHideTextTooltip()" />
-										<CitadelSettingsCheckbox convar="r_citadel_distancefield_reflections" text="#citadel_settings_distancefield_reflections" onmouseover="UIShowTextTooltip( #citadel_settings_distancefield_reflections_desc )" onmouseout="UIHideTextTooltip()" />
-										<CitadelSettingsCheckbox convar="r_citadel_mboit" text="#citadel_settings_mboit" onmouseover="UIShowTextTooltip( #citadel_settings_mboit_desc )" onmouseout="UIHideTextTooltip()" />
-									</Panel>
-								</Panel>
+								<CitadelSettingsEnum class="HorizontalEnum" convar="mat_viewportscale" text="#citadel_settings_renderquality" id="RenderQualityEnum" onmouseover="UIShowTextTooltip( #citadel_settings_renderquality_desc )" onmouseout="UIHideTextTooltip()">
+									<RadioButton text="#citadel_settings_renderquality_ultra_performance" value="0.333333" class="EnumButton" id="RenderQualityUltraPerformance" group="renderquality" />
+									<RadioButton text="#citadel_settings_renderquality_performance" value="0.500000" class="EnumButton" id="RenderQualityPerformance" group="renderquality" />
+									<RadioButton text="#citadel_settings_renderquality_balanced" value="0.588235" class="EnumButton" id="RenderQualityBalanced" group="renderquality" />
+									<RadioButton text="#citadel_settings_renderquality_quality" value="0.666667" class="EnumButton" id="RenderQualityQuality" group="renderquality" />
+								</CitadelSettingsEnum>
+								<CitadelSettingsEnum class="HorizontalEnum" convar="r_citadel_upscaling" text="#citadel_settings_upscaling" id="UpscalingTechnologyEnum" onmouseover="UIShowTextTooltip( #citadel_settings_upscaling_desc )" onmouseout="UIHideTextTooltip()">
+									<RadioButton text="#citadel_settings_upscaling_none" value="0" class="EnumButton" id="UpscalingNone" group="upscaling" />
+									<RadioButton text="#citadel_settings_upscaling_fsr" value="1" class="EnumButton" id="UpscalingFSR" group="upscaling" />
+									<RadioButton text="#citadel_settings_upscaling_fsr2" value="2" class="EnumButton" id="UpscalingFSR2" group="upscaling" />
+								</CitadelSettingsEnum>
+								<CitadelSettingsEnum class="HorizontalEnum" convar="r_citadel_antialiasing" text="#citadel_settings_antialiasing" id="AntiAliasingEnum" onmouseover="UIShowTextTooltip( #citadel_settings_antialiasing_desc )" onmouseout="UIHideTextTooltip()">
+									<RadioButton text="#citadel_settings_antialiasing_none" value="0" class="EnumButton" id="AntialiasingNone" group="antialiasing" />
+									<RadioButton text="#citadel_settings_antialiasing_fxaa" value="1" class="EnumButton" id="AntialiasingFXAA" group="antialiasing" />
+								</CitadelSettingsEnum>
 								<CitadelSettingsEnum class="HorizontalEnum" convar="r_citadel_ssao_quality" text="#citadel_settings_ssao" id="SsaoQualityEnum" onmouseover="UIShowTextTooltip( #citadel_settings_ssao_desc )" onmouseout="UIHideTextTooltip()">
 									<RadioButton text="#citadel_settings_ssao_quality_off" value="0" id="SSaoQualityOff" group="ssaoquality" />
 									<RadioButton text="#citadel_settings_ssao_quality_low" value="1" id="SsaoQualityLow" group="ssaoquality" />
@@ -127,8 +125,21 @@
 									<RadioButton text="#citadel_settings_texturequality_med" value="1" class="EnumButton" id="TextureQualityMed" group="texturequality" />
 									<RadioButton text="#citadel_settings_texturequality_high" value="0" class="EnumButton" id="TextureQualityHigh" group="texturequality" />
 								</CitadelSettingsEnum>
-								<CitadelSettingsSlider id="RenderQuality" convar="mat_viewportscale" min="0.5" max="1.0" percentage="true" text="#citadel_settings_renderquality" onvaluechanged="CitadelRenderQualityValueChanged()" onmouseover="UIShowTextTooltip( #citadel_settings_renderquality_desc )" onmouseout="UIHideTextTooltip()" />
-								<ToggleButton class="CheckBox" id="FSRToggle" text="#citadel_settings_fsr" onactivate="CitadelSetFSR();" onmouseover="UIShowTextTooltipStyled( #citadel_settings_fsr_tooltip, OptionsTooltip)" onmouseout="UIHideTextTooltip()" />
+								<Panel class="LeftRightFlow FullWidth">
+									<Panel class="advancedvideo">
+										<CitadelSettingsCheckbox convar="r_citadel_distancefield_shadows" text="#citadel_settings_distancefield_shadows" onmouseover="UIShowTextTooltip( #citadel_settings_distancefield_shadows_desc )" onmouseout="UIHideTextTooltip()" />
+										<CitadelSettingsCheckbox convar="r_displacement_mapping" text="#citadel_settings_displacement_mapping" onmouseover="UIShowTextTooltip( #citadel_settings_displacement_mapping_desc )" onmouseout="UIHideTextTooltip()" />
+										<CitadelSettingsCheckbox convar="r_post_bloom" text="#citadel_settings_post_bloom" onmouseover="UIShowTextTooltip( #citadel_settings_post_bloom_desc )" onmouseout="UIHideTextTooltip()" />
+										<CitadelSettingsCheckbox convar="r_effects_bloom" text="#citadel_settings_effects_bloom" onmouseover="UIShowTextTooltip( #citadel_settings_effects_bloom_desc )" onmouseout="UIHideTextTooltip()" />
+										<ToggleButton class="CheckBox" id="VSyncToggle" text="#citadel_settings_vsync" onactivate="CitadelSetVSync();" onmouseover="UIShowTextTooltip( #citadel_settings_vsync_desc )" onmouseout="UIHideTextTooltip()" />
+									</Panel>
+									<Panel class="advancedvideo">
+										<CitadelSettingsCheckbox convar="r_arealights" text="#citadel_settings_area_lights" onmouseover="UIShowTextTooltip( #citadel_settings_area_lights_desc )" onmouseout="UIHideTextTooltip()" />
+										<CitadelSettingsCheckbox convar="r_depth_of_field" text="#citadel_settings_depth_of_field" onmouseover="UIShowTextTooltip( #citadel_settings_depth_of_field_desc )" onmouseout="UIHideTextTooltip()" />
+										<CitadelSettingsCheckbox convar="r_citadel_distancefield_reflections" text="#citadel_settings_distancefield_reflections" onmouseover="UIShowTextTooltip( #citadel_settings_distancefield_reflections_desc )" onmouseout="UIHideTextTooltip()" />
+										<CitadelSettingsCheckbox convar="r_citadel_mboit" text="#citadel_settings_mboit" onmouseover="UIShowTextTooltip( #citadel_settings_mboit_desc )" onmouseout="UIHideTextTooltip()" />
+									</Panel>
+								</Panel>
 							</Panel>
 						</Panel>
 					</Panel>
@@ -180,8 +191,9 @@
 							</Panel>
 							<Label class="PlainLabel" text="#citadel_settings_voice_level" />
 							<ProgressBar id="CurrentMicLevel" />
-							<CitadelSettingsSlider convar="voice_threshold" min="-120.0" max="-0.001" percentage="true" text="#citadel_settings_openmicthreshold" />
+							<CitadelSettingsSlider convar="voice_threshold" min="-120.0" max="0" percentage="true" text="#citadel_settings_openmicthreshold" onmouseover="UIShowTextTooltip( #citadel_settings_openmicthreshold_desc )" onmouseout="UIHideTextTooltip()" />
 							<CitadelSettingsCheckbox id="OpenMic" onactivate="CitadelOpenMicSettingChanged()" text="#citadel_settings_chat_openmic" onmouseover="UIShowTextTooltip( #citadel_settings_open_mic_desc )" onmouseout="UIHideTextTooltip()" />
+							<CitadelSettingsCheckbox id="MonitorMic" onactivate="CitadelMonitorMicChanged()" text="#citadel_settings_monitor_mic" onmouseover="UIShowTextTooltip( #citadel_settings_monitor_mic_desc )" onmouseout="UIHideTextTooltip()" />
 							<CitadelSettingsKeyBinder id="PushToTalkBinder" text="#citadel_keybind_push_to_talk" bind="PushToTalk" />
 							<CitadelSettingsKeyBinder id="PushToTalkPartyBinder" text="#citadel_keybind_push_to_talk_party" bind="PushToTalkParty" />
 						</Panel>
@@ -268,13 +280,12 @@
 								<CitadelSettingsKeyBinder id="SwitchPlayerCam1Binder" text="#citadel_switch_camera_teammate_1" bind="SwitchPlayerCam1" />
 								<CitadelSettingsKeyBinder id="SwitchPlayerCam2Binder" text="#citadel_switch_camera_teammate_2" bind="SwitchPlayerCam2" />
 								<CitadelSettingsKeyBinder id="SwitchPlayerCam3Binder" text="#citadel_switch_camera_teammate_3" bind="SwitchPlayerCam3" />
-								<CitadelSettingsKeyBinder id="SwitchPlayerCam4Binder" text="#citadel_switch_camera_teammate_3" bind="SwitchPlayerCam4" />
+								<CitadelSettingsKeyBinder id="SwitchPlayerCam4Binder" text="#citadel_switch_camera_teammate_4" bind="SwitchPlayerCam4" />
 								<CitadelSettingsKeyBinder id="SwitchPlayerCam5Binder" text="#citadel_switch_camera_teammate_5" bind="SwitchPlayerCam5" />
 								<Label class="SubHeaderText" text="#citadel_settings_spectatorkeybinds" />
 								<Panel class="SectionHeaderLine" />
 								<CitadelSettingsKeyBinder id="ToggleSpectatorNextTargetBinder" text="#citadel_keybind_spec_next_target" bind="SpectatorNextTarget" />
 								<CitadelSettingsKeyBinder id="ToggleSpectatorPrevTargetBinder" text="#citadel_keybind_spec_prev_target" bind="SpectatorPrevTarget" />
-								<CitadelSettingsKeyBinder id="ToggleSpectatorTeamBinder" text="#citadel_keybind_spec_change_Team" bind="ToggleSpectatorTeam" />
 								<CitadelSettingsKeyBinder id="ToggleSpectatorCameraBinder" text="#citadel_keybind_toggle_spec_camera" bind="ToggleSpectatorCamera" />
 								<CitadelSettingsKeyBinder id="ToggleSpectatorFlyUpBinder" text="#citadel_keybind_spectator_fly_up" bind="SpectatorFlyUp" />
 								<CitadelSettingsKeyBinder id="ToggleSpectatorFlyDownBinder" text="#citadel_keybind_spectator_fly_down" bind="SpectatorFlyDown" />
@@ -285,7 +296,6 @@
 								<Panel class="SectionHeaderLine" />
 								<CitadelSettingsKeyBinder id="ToggleReplayNextTargetBinder" text="#citadel_keybind_replay_next_target" bind="ReplayNextTarget" />
 								<CitadelSettingsKeyBinder id="ToggleReplayPrevTargetBinder" text="#citadel_keybind_replay_prev_target" bind="ReplayPrevTarget" />
-								<CitadelSettingsKeyBinder id="ToggleReplayTeamBinder" text="#citadel_keybind_replay_change_Team" bind="ToggleReplayTeam" />
 								<CitadelSettingsKeyBinder id="ToggleReplayCameraBinder" text="#citadel_keybind_toggle_replay_camera" bind="ToggleReplayCamera" />
 								<CitadelSettingsKeyBinder id="ToggleReplayFlyUpBinder" text="#citadel_keybind_replay_fly_up" bind="ReplayFlyUp" />
 								<CitadelSettingsKeyBinder id="ToggleReplayFlyDownBinder" text="#citadel_keybind_replay_fly_down" bind="ReplayFlyDown" />

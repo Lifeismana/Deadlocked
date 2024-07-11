@@ -138,7 +138,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_iMatchTimeMinsForLevel2Pickups = 25
+		m_iMatchTimeMinsForLevel2Pickups = 20
 		m_flInitialSpawnTimeTest = 1.000000
 		m_flRespawnTimeTest = 5.000000
 		m_eRollType = "ECitadelRandomRoll_BreakablePowerupPickup"
@@ -249,7 +249,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_iMatchTimeMinsForLevel2Pickups = 25
+		m_iMatchTimeMinsForLevel2Pickups = 20
 		m_flInitialSpawnTimeTest = 1.000000
 		m_flRespawnTimeTest = 5.000000
 		m_eRollType = "ECitadelRandomRoll_BreakablePowerupPickup"
@@ -815,7 +815,7 @@
 	{
 		_class = "citadel_breakable_prop_pickup"
 		_not_pickable = 2
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/null.vmdl"
@@ -830,7 +830,7 @@
 	small_gold_pickup = 
 	{
 		_class = "citadel_breakable_prop_gold_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -839,7 +839,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "small_gold_pickup_label"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Player.ClaimOrb"
 		m_nNameOffset = 60
 		_base = "citadel_breakable_prop_pickup_base"
 		m_flGoldAmount = 35
@@ -856,7 +856,7 @@
 	gun_powerup_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/null.vmdl"
@@ -865,14 +865,14 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
 		m_sNameLocString = "gun_powerup_pickup"
-		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Weapon"
 		m_nNameOffset = 140
 		_base = "citadel_breakable_prop_pickup_base"
 		m_sModifer = subclass:
 		{
 			_class = "modifier_base"
 			_my_subclass_name = "gun_powerup_pickup"
-			m_flDuration = 100.000000
+			m_flDuration = 130.000000
 			m_vecScriptValues = 
 			[
 				
@@ -907,7 +907,7 @@
 	survival_powerup_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/null.vmdl"
@@ -923,7 +923,7 @@
 		{
 			_class = "modifier_base"
 			_my_subclass_name = "survival_powerup_pickup"
-			m_flDuration = 100.000000
+			m_flDuration = 130.000000
 			m_vecScriptValues = 
 			[
 				
@@ -958,7 +958,7 @@
 	casting_powerup_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/null.vmdl"
@@ -967,14 +967,14 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = true
 		m_sNameLocString = "casting_powerup_pickup"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Spirit"
 		m_nNameOffset = 140
 		_base = "citadel_breakable_prop_pickup_base"
 		m_sModifer = subclass:
 		{
 			_class = "modifier_base"
 			_my_subclass_name = "casting_powerup_pickup"
-			m_flDuration = 100.000000
+			m_flDuration = 130.000000
 			m_vecScriptValues = 
 			[
 				
@@ -1009,7 +1009,7 @@
 	movement_powerup_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/powerup_spawner_ambient.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/null.vmdl"
@@ -1023,9 +1023,10 @@
 		_base = "citadel_breakable_prop_pickup_base"
 		m_sModifer = subclass:
 		{
-			_class = "modifier_base"
+			_class = "modifier_breakable_prop_extra_stamina"
 			_my_subclass_name = "movement_powerup_pickup"
-			m_flDuration = 100.000000
+			m_flDuration = 130.000000
+			m_nExtraStamina = 0
 			m_vecScriptValues = 
 			[
 				
@@ -1042,6 +1043,11 @@
 				{
 					m_eModifierValue = "MODIFIER_VALUE_ZIP_LINE_SPEED_PERCENTAGE"
 					m_value = 30
+				},
+				
+				{
+					m_eModifierValue = "MODIFIER_VALUE_STAMINA_REGEN_PER_SECOND_PERCENTAGE"
+					m_value = 20
 				},
 			]
 			m_vecAlwaysShowInStatModifierUI = 
@@ -1066,7 +1072,7 @@
 	permanent_pickup_base = 
 	{
 		_class = "citadel_breakable_prop_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1084,7 +1090,7 @@
 	spirit_permanent_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1093,7 +1099,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "spirit_permanent_pickup_label"
-		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Spirit"
 		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
@@ -1122,7 +1128,7 @@
 	spirit_permanent_pickup_lv2 = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1131,7 +1137,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "spirit_permanent_pickup_label_lv2"
-		m_sPickupSound = soundevent:"Powerup.Pickup.FireRate"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Spirit"
 		m_nNameOffset = 60
 		_base = "spirit_permanent_pickup"
 		m_bIsPermanentPickup = true
@@ -1160,7 +1166,7 @@
 	firerate_permanent_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1169,7 +1175,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "firerate_permanent_pickup_label"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Weapon"
 		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
@@ -1199,7 +1205,7 @@
 	firerate_permanent_pickup_lv2 = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1208,7 +1214,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "firerate_permanent_pickup_label_lv2"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Weapon"
 		m_nNameOffset = 60
 		_base = "firerate_permanent_pickup"
 		m_bIsPermanentPickup = true
@@ -1238,7 +1244,7 @@
 	ammo_permanent_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1247,7 +1253,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "ammo_permanent_pickup_label"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Ammo"
 		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
@@ -1260,7 +1266,7 @@
 				
 				{
 					m_eModifierValue = "MODIFIER_VALUE_AMMO_CLIP_SIZE_PERCENT"
-					m_value = 3
+					m_value = 4
 				},
 			]
 			m_strHudMessageText = "#ammo_permanent_pickup_label"
@@ -1277,7 +1283,7 @@
 	ammo_permanent_pickup_lv2 = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1286,7 +1292,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "ammo_permanent_pickup_label_lv2"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Ammo"
 		m_nNameOffset = 60
 		_base = "ammo_permanent_pickup"
 		m_bIsPermanentPickup = true
@@ -1299,7 +1305,7 @@
 				
 				{
 					m_eModifierValue = "MODIFIER_VALUE_AMMO_CLIP_SIZE_PERCENT"
-					m_value = 5
+					m_value = 6
 				},
 			]
 			m_strHudMessageText = "#ammo_permanent_pickup_label_lv2"
@@ -1316,7 +1322,7 @@
 	hp_permanent_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1354,7 +1360,7 @@
 	hp_permanent_pickup_lv2 = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1392,7 +1398,7 @@
 	cd_permanent_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1401,7 +1407,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "cd_permanent_pickup_label"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Spirit"
 		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
@@ -1431,7 +1437,7 @@
 	cd_permanent_pickup_lv2 = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1440,7 +1446,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "cd_permanent_pickup_label_lv2"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Spirit"
 		m_nNameOffset = 60
 		_base = "cd_permanent_pickup"
 		m_bIsPermanentPickup = true
@@ -1470,7 +1476,7 @@
 	wp_permanent_pickup = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1479,7 +1485,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "wp_permanent_pickup_label"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Weapon"
 		m_nNameOffset = 60
 		_base = "permanent_pickup_base"
 		m_bIsPermanentPickup = true
@@ -1492,7 +1498,7 @@
 				
 				{
 					m_eModifierValue = "MODIFIER_VALUE_BASEATTACK_DAMAGE_PERCENT"
-					m_value = 2
+					m_value = 3
 				},
 			]
 			m_strHudMessageText = "#wp_permanent_pickup_label"
@@ -1508,7 +1514,7 @@
 	wp_permanent_pickup_lv2 = 
 	{
 		_class = "citadel_breakable_prop_modifier_pickup"
-		m_flPickupRadius = 70.000000
+		m_flPickupRadius = 85.000000
 		m_spawnParticle = resource_name:"particles/environment/breakable_item_drop.vpcf"
 		m_gainedParticle = resource_name:"particles/generic/powerup_spawner_gained.vpcf"
 		m_hModel = resource_name:"models/props_gameplay/powerup_idol/powerup_idol.vmdl"
@@ -1517,7 +1523,7 @@
 		m_flParticleRadius = 1.500000
 		m_bShowOnMinimap = false
 		m_sNameLocString = "wp_permanent_pickup_label_lv2"
-		m_sPickupSound = soundevent:"Powerup.Pickup.Gold"
+		m_sPickupSound = soundevent:"Powerup.Pickup.Weapon"
 		m_nNameOffset = 60
 		_base = "wp_permanent_pickup"
 		m_bIsPermanentPickup = true
@@ -1530,7 +1536,7 @@
 				
 				{
 					m_eModifierValue = "MODIFIER_VALUE_BASEATTACK_DAMAGE_PERCENT"
-					m_value = 3
+					m_value = 4
 				},
 			]
 			m_strHudMessageText = "#wp_permanent_pickup_label_lv2"

@@ -3289,7 +3289,7 @@
 		_base = "trooper_base"
 		_class = "npc_trooper_boss"
 		m_sModelName = resource_name:"models/npc/boss_tier_01_brazier_guardian/boss_tier_01_brazier_guardian.vmdl"
-		m_nMaxHealth = 4600
+		m_nMaxHealth = 5000
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
 		m_hFootstepSounds = "trooper"
@@ -3551,7 +3551,7 @@
 		_base = "npc_boss_tier1"
 		_class = "npc_trooper_boss"
 		m_sModelName = resource_name:"models/npc/boss_tier_01_brazier_guardian/boss_tier_01_brazier_guardian.vmdl"
-		m_nMaxHealth = 3250
+		m_nMaxHealth = 3575
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
 		m_hFootstepSounds = "trooper"
@@ -3700,7 +3700,7 @@
 		{
 			_class = "modifier_citadel_objective_bullet_resist"
 			_my_subclass_name = "modifier_citadel_objective_bullet_resist"
-			m_BulletResist = 40
+			m_BulletResist = 60
 			m_BulletResistReductionPerHero = 20
 		}
 	}
@@ -3859,7 +3859,7 @@
 		_base = "npc_boss_tier1"
 		_class = "npc_trooper_boss"
 		m_sModelName = resource_name:"models/npc/boss_tier_01_brazier_guardian/boss_tier_01_brazier_guardian.vmdl"
-		m_nMaxHealth = 4600
+		m_nMaxHealth = 5000
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
 		m_hFootstepSounds = "trooper"
@@ -6236,7 +6236,7 @@
 		{
 			_class = "modifier_citadel_objective_regen"
 			_my_subclass_name = "tier3_regen"
-			m_flOutOfCombatHealthRegen = 40.000000
+			m_flOutOfCombatHealthRegen = 80.000000
 			m_flOutOfCombatRegenDelay = 30.000000
 		}
 	}
@@ -6317,7 +6317,7 @@
 		{
 			_class = "modifier_citadel_objective_regen"
 			_my_subclass_name = "tier3_regen"
-			m_flOutOfCombatHealthRegen = 40.000000
+			m_flOutOfCombatHealthRegen = 80.000000
 			m_flOutOfCombatRegenDelay = 30.000000
 		}
 		_base = "npc_boss_tier3"
@@ -6548,6 +6548,12 @@
 			m_FriendlyNearDeathParticle = resource_name:"particles/status_fx/status_fx_last_hit_friend.vpcf"
 			m_sSelfDestructStart = soundevent:"Trooper.SelfDestruct_Start"
 			m_sSelfDestructEnd = soundevent:"Trooper.SelfDestruct_Exp"
+		}
+		m_IntrinsicModifier = subclass:
+		{
+			_class = "modifier_base"
+			_my_subclass_name = "modifier_sentry_instrinsic"
+			m_nEnabledStateMask = "MODIFIER_STATE_TAKES_FULLDAMAGE_NO_FALLOFF"
 		}
 		m_flZShootPostionOffset = 25.000000
 	}

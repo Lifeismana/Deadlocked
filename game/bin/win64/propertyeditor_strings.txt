@@ -21,7 +21,6 @@
 	?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 	?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
 	E;FtE
-	V_fmodf
 	V_fpclassifyd
 	V_isnand
 	Warning
@@ -109,7 +108,6 @@
  X?setAlignment@QTextOption@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
  [%1]
  _][H
- _^[H
  _^]H
  delete
  delete[]
@@ -304,7 +302,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 (%1,%2)
 (%d,%d)
 ('%s' already in use)
-(9=GL
 (A]A\_[
 (A]^][
 (A^A]^]
@@ -374,7 +371,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 (t$ L
 (t$0H
 (t$0s
-(t$0v
 (t$@E
 (t$@H
 (t$@L
@@ -393,6 +389,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 (|$`H
 (|$pH
 )	?buddy@QAbstractItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
+)	V_log10f
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )<$E3
 )<$fD
@@ -459,6 +456,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 * Rehandling active codes
 * { font-size: 10px }
 *"?updateGeometries@QHeaderView@@MEAAXXZ
+**,hC
 *.parent
 *.parent.*
 *.parent.child
@@ -482,7 +480,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 +f)>0'
 +h->|
 +o'q)}
-,	V_log10f
 , ?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 , alpha: 
 ,"?updateGeometries@QTableView@@MEAAXXZ
@@ -960,6 +957,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 />58d%
 /YA1H
 /]?size@QImage@@QEBA?AVQSize@@XZ
+/axJ%~
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -1220,6 +1218,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 1setValue(double)
 1trigger()
 1update()
+2	V_modfd
 2 == TestToken_t( &testTable, "grandparent.parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child.*" ), WILDCARD )
 2 == TestToken_t( &testTable, "parent.child" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child" ), WILDCARD )
 2 == TestToken_t( &testTable, "parent.child" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child.*" ), WILDCARD )
@@ -1233,7 +1232,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 220801000000Z
 2222<<
 230714000000Z
-240704151229Z0/
+240711150526Z0/
 241009235959Z0a1
 2AttributeFilterChanged()
 2CalcValueAdded(double)
@@ -1281,7 +1280,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 2mapped(int,int)
 2rejected()
 2returnPressed()
-2sR~(
 2sliderPressed()
 2sliderReleased()
 2stateChanged(int)
@@ -1309,7 +1307,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 3mq+<
 4 == TestToken_t( &testTable, "grandparent.parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "grandparent.parent.child.grandchild" ), WILDCARD )
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
-5	V_modfd
 5FjiT
 5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
@@ -1339,6 +1336,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 8O8u'H
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
 8ke?;
+9	V_powd
 9)~P3
 9/~cH
 98t H
@@ -1372,9 +1370,11 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 9|$@~4H
 9|$hu
 9~h~t3
+:	V_powf
 : Add
 :>)*	v
 :>t6k'
+;	V_qsort
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;H9>&X
@@ -1390,7 +1390,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 ;|$0|
 ;|$@|
 ;|$@~
-<	V_powd
+<	V_qsort_s
 <	u2H
 <	u8H
 <	u\L
@@ -1418,15 +1418,12 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=	V_powf
 =imb;D
 =rIQU
->	V_qsort
 >0<0:
 >Icn 
 >Mp$d
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?+>^m
 ?333333
@@ -1434,6 +1431,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 ?7zQ6$
 ?7{KV
 ?8bunz8
+?9 Lp
 ?:kP<
 ??0CCountedStringPool_CI@@QEAA@XZ
 ??0CThreadMutex@@QEAA@PEBD@Z
@@ -3326,12 +3324,12 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 @^8U)zj
 @_RDATA
 @_^[H
+A	V_roundf
 A A+A
 A D+A
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 A+N<A+F8
 A03>A|
-A2*pe
 A3X$A
 A8]Lu
 A8_Qt3
@@ -3456,7 +3454,6 @@ Attempting to register the command %s for context %s multiple times
 AttributeFilterChanged
 August
 B(I9A(
-BBn7T
 BC?>6t9^	c:>
 BF>^G
 BL+ALu
@@ -4176,7 +4173,6 @@ CurveEdited
 CurveEditor
 Custom Color
 Custom Colors
-D	V_roundf
 D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D W?{W
 D!l$xA
@@ -4266,7 +4262,7 @@ D8 ulH
 D8 uzH
 D8,8u
 D81uUL9r
-D85r\
+D85<W
 D8<>u
 D8AHH
 D8L$0u`
@@ -4363,7 +4359,6 @@ E8q(u
 E9&~|I
 E9g t@
 E9g tI
-E;Q?|;On
 E;t$(|
 E>nEA
 E@HcX
@@ -4447,6 +4442,7 @@ Expected eg. [10,20] or 30
 ExternalNameForInternalType
 E|$xH
 F HcD$hD+
+F5xAT
 F>qUxv
 F@Hcn
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
@@ -4554,7 +4550,6 @@ GetModuleHandleW
 GetOEMCP
 GetProcAddress
 GetProcessHeap
-GetRangeValue
 GetResourceManifestCount
 GetResourceManifests
 GetShortPathNameA
@@ -4591,7 +4586,6 @@ H9+u]H
 H9/t	H
 H97u+A
 H98t2
-H9==H
 H9A@t
 H9C@t
 H9C@u:HcCHA;F
@@ -4634,7 +4628,6 @@ HandleAsStringFailure
 HandleFilterChanged
 HandleViewportResize
 Hc+;k
-Hc--`
 Hc/;o
 Hc7;w
 Hc:LcyHD
@@ -4866,6 +4859,7 @@ L$`D+
 L$`E3
 L$`Hc
 L$h;M
+L$hfI
 L$pH3
 L$xff
 L9#t	H
@@ -4923,6 +4917,7 @@ Layout Side To Side
 Layout Top To Bottom
 Lc'D;g
 Lc2A+
+Lc5jz
 Lc7D;w
 LcA<E3
 LcD$PH
@@ -5267,6 +5262,7 @@ PropertyManipulation_Fast
 PropertyManipulation_Slow
 PropertyNameBundle_t::InitFromGroupString
 Pz}b!
+Q	V_sscanf
 Q5rHg,>
 Q8D8eE
 Q?loadResource@QTextDocument@@MEAA?AVQVariant@@HAEBVQUrl@@@Z
@@ -5343,7 +5339,6 @@ RandomInt
 Randomize
 RandomizeGradient
 RangeEditor
-Range_t
 Raw Edit Mode
 ReSelectOnReturn
 Really delete this widget?<br><br>***THIS MAY CRASH THE PROGRAM***<br>
@@ -5618,7 +5613,6 @@ SwitchToEngineWindow
 SyncToScrollBar
 SyncToScrollBar %.0f us
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T	V_sscanf
 T$ E3
 T$ H;
 T$(E3
@@ -5760,6 +5754,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
+V	V_stricmp_fast
 V ?toolTip@QAction@@QEBA?AVQString@@XZ
 V6E>`"(5
 V?rect@QPixmap@@QEBA?AVQRect@@XZ
@@ -5842,6 +5837,7 @@ V_UInt64ToString_Unsafe
 V_UnqualifiedFileName
 V_atof
 V_atoi
+V_fmodf
 V_~]	,
 Va?width@QPixmap@@QEBAHXZ
 Value
@@ -5875,6 +5871,7 @@ WATAUAVAWH
 WAVAWH
 WIDGET DEBUGGER DELETING widget: 0x%p
 WP?isNull@QTextCursor@@QEBA_NXZ
+WSCl{
 WaNd?
 WaitForSingleObject
 WaitForSingleObjectEx
@@ -5920,8 +5917,6 @@ XR?mergeCharFormat@QTextCursor@@QEAAXAEBVQTextCharFormat@@@Z
 XX?setBackground@QPainter@@QEAAXAEBVQBrush@@@Z
 X`Hc@XH
 Xq499vV
-Xs"l!
-Y	V_stricmp_fast
 Y9"SD
 Y>kX>M
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
@@ -5940,6 +5935,7 @@ Y?setHsvF@QColor@@QEAAXNNNN@Z
 YD$@f
 YO?insertColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 YY?setDropAction@QDropEvent@@QEAAXW4DropAction@Qt@@@Z
+Z	V_strspn
 Z?setItalic@QFont@@QEAAX_N@Z
 Z?setItem@QStandardItemModel@@QEAAXHPEAVQStandardItem@@@Z
 Z?setItemData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBV?$QMap@HVQVariant@@@@@Z
@@ -6027,11 +6023,10 @@ Zod(^?
 \$x9Yh
 \$xH;
 \$xu3M
-\=$J	
+\=4K	
 \?setWidth@QPen@@QEAAXH@Z
 \?setWidthF@QPen@@QEAAXN@Z
 \t3D8T$(t
-]	V_strspn
 ])6M>&
 ]>)2X
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
@@ -6390,6 +6385,7 @@ hA_A^^]
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
 hcenter
 helpsystem
+hl}hO
 horizontalPolicy
 horizontalStretch
 horizontal_header
@@ -6428,7 +6424,6 @@ j?V()
 j?{$*
 jY?setFamily@QFont@@QEAAXAEBVQString@@@Z
 jZ?setMimeData@QDrag@@QEAAXPEAVQMimeData@@@Z
-jbF^U
 jj@0HK4
 k"?value@QAbstractSlider@@QEBAHXZ
 k0i0$
@@ -6463,7 +6458,6 @@ l$HA_A^A]A\_^
 l$HHc
 l$HLc
 l$PfA
-l$PfI
 l$Pu5M
 l$XH9
 l$XI9
@@ -6765,7 +6759,6 @@ qobject_cast< T* >( pResult ) == reinterpret_cast< T* >( pResult )
 quaternion
 quiet
 r	Vr.>T
-range
 range check failure
 read only file system
 resource
@@ -6932,7 +6925,7 @@ tEHcR
 tFL;w0u@H
 tRLcY
 tXHc:
-tY@85
+tY@85*N
 t\Ic.
 t]IcU
 t_L9>t
@@ -7069,6 +7062,7 @@ x`Hc@XH
 xi;C`}dH
 xj;C`}eH
 xk;C`}fH
+xp_OJL
 y8Myt
 yPt0H
 yU?qt_metacall@QDoubleValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -7127,7 +7121,7 @@ zY;>u:m
 |$8u)H
 |$8uFH
 |$8~ H
-|$<;=i
+|$<;=y
 |$@A3X$A
 |$@A_A^A]A\
 |$@H9|$ht
@@ -7168,7 +7162,6 @@ zY;>u:m
 }XHcEPH
 }oA8_Rt3
 ~QIcP
-~V!T+P8
 ~XHcFPH
 ~qj#k"
 ~t&LN

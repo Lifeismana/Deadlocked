@@ -427,7 +427,7 @@
 	Viscous.GooBall.Proj.Hit = 
 	{
 		base = "Base.Ability"
-		volume = 5.000000
+		volume = 9.000000
 		volume_fade_out = 0.500000
 		pitch_rand_min = -0.200000
 		pitch_rand_max = 0.200000
@@ -449,11 +449,12 @@
 	Viscous.GooBall.Proj.Lp = 
 	{
 		base = "Base.Ability"
-		volume = -6.000000
+		volume = -3.000000
 		volume_fade_out = 0.100000
 		pitch = 1.000000
 		volume_falloff_curve_amount = 0.600000
 		volume_offset_player = -5.000000
+		volume_rand_min = 0.000000
 		vsnd_files = "sounds/abilities/viscous/viscous_a1_gooball_proj_lp.vsnd"
 		vsnd_duration = 4.648685
 	}
@@ -477,6 +478,7 @@
 		spread_min_value = 0.000000
 		pitch = 0.900000
 		vsnd_files = "sounds/abilities/viscous/viscous_a3_telepunch_delay.vsnd"
+		vsnd_duration = 0.757075
 	}
 	Viscous.Telepunch.Erupt = 
 	{
@@ -488,6 +490,7 @@
 		volume_falloff_max_player = 2500.000000
 		volume_falloff_curve_amount = 0.500000
 		vsnd_files = "sounds/abilities/viscous/viscous_a3_telepunch_hit.vsnd"
+		vsnd_duration = 1.755510
 	}
 	Viscous.Telepunch.Select_Lp = 
 	{

@@ -1,0 +1,22 @@
+<!-- xml reconstructed by Source 2 Viewer 10.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/hud_damage_report.vcss_c" />
+		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="AbilityDamageBar">
+			<Panel class="AbilityDamageContainer">
+				<Image id="AbilityImage" />
+				<Panel class="AbilityDamageBarContainer">
+					<ProgressBarWithMiddle id="DamageRatioProgressBar" class="DamageRatioProgressBar Horizontal" />
+					<Label class="AbilityName" text="{s:damage_name}" />
+					<Label class="DamageValue" text="{d:damage_done}" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="HudDamageRows">
+		<Panel id="Data" />
+	</Panel>
+</root>

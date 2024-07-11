@@ -124,6 +124,22 @@ CitadelHudTopBarPlayer
 	overflow: noclip;
 }
 
+CitadelHudTopBarPlayer.SpectateHover
+{
+	brightness: 1.8;
+	margin-top: 5px;
+	transition-property: brightness, margin-top;
+	transition-duration: 0.3s;
+}
+
+CitadelHudTopBarPlayer.SpectatorTarget.SpectateHover
+{
+	brightness: 1;
+	margin-top: 0px;
+	transition-property: brightness, margin-top;
+	transition-duration: 0.3s;
+}
+
 .wants_scoreboard CitadelHudTopBarPlayer:selected #PlayerNameNWContainer
 {
 	height: 200px;
@@ -136,6 +152,18 @@ CitadelHudTopBarPlayer
 	z-index: 20;
 	transition-property: margin, brightness;
 	transition-duration: 0.2s;
+}
+
+#SpectatePlayerButtonPanel
+{
+	width: 100%;
+	height: 125px;
+	visibility: collapse;
+}
+
+.spec_mode #SpectatePlayerButtonPanel
+{
+	visibility: visible;
 }
 
 .SpectatorTarget #HeroImageArea,.LocalPlayer #HeroImageArea,.IsInLocalPlayerLane #HeroImageArea

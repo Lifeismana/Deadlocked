@@ -1,5 +1,5 @@
 																
-		V_fread
+		V_frexpf
 		cfFF                      - collision function mask
 		client                    - draw client world(s)
 		debugName substring       - filter by substring in debug name
@@ -24,9 +24,8 @@
 	6p7MOf
 	<SuuA
 	E;<$
-	V_fmodf
 	V_fopenUTF8
-	V_frexpf
+	V_fread
 	V_fseek
 	V_fseeki64
 	V_ftell
@@ -374,32 +373,29 @@ $tIs1
 ( pVertex->m_Edge == hEdge ) || ( pVertex->m_Edge == INVALID_MESH_COMPONENT )
 ( vChildAnchor - vParentAnchor ).Length() < 0.001f
 ( vNormal - vNormalOnHull * flDistance ).Length() < 0.001f
-(%#\/
-(%)Z/
+(%	Z/
+(%#P1
 (%-b;
 (%.4g,%.4g)
 (%0`;
-(%3""
-(%CP1
-(%ZU/
+(%:U/
+(%S""
 (%d,%d)
-(-)H1
-(-,q/
-(-0Z/
-(-2V/
-(-R\1
-(-l71
-(-u^"
-(5ID3
-(5SY;
-(5T93
-(5YU/
-(5hL/
+(%o71
+(-	H1
+(-2\1
+(-L71
+(-fl1
+(-~U/
+(5)D3
+(53Y;
+(5493
+(59U/
+(5HL/
+(5fJ/
+(5o\1
 (;^ |
-(=2U/
-(=9M/
-(=<Q1
-(=VK/
+(=6K/
 (A;)A
 (A\^][
 (A]A\^[
@@ -484,6 +480,7 @@ $tIs1
 (LcI03
 (M E3
 (None)
+(P+~7
 (T$ A
 (T$ D
 (T$ H
@@ -1023,6 +1020,7 @@ $tIs1
 -touch
 -unittest
 -validate
+.	V_logf
 .%x.%x.copy_tmp
 ../src/utils/physics_testbed/benchmarks/
 .00cfg
@@ -1186,7 +1184,6 @@ $tIs1
 .idata$5
 .idata$6
 .json
-.nT	n
 .pdata
 .rdata
 .rdata$T
@@ -1215,12 +1212,12 @@ $tIs1
 .xJ>Hf
 .xdata
 .xdata$x
+/%)6 
 /%u.rnsave
-/-+q"
-/5cL%
-/5h;>
+/-,n	
+/-Kq"
 /6sRH
-/=R+"
+/=r+"
 />58d%
 /@Hs?
 /@Ls{
@@ -1313,7 +1310,6 @@ $tIs1
 0w0c1
 0x%08X 
 0}0i1
-1	V_logf
 1.2.11
 130801120000Z
 1<.	/>:
@@ -1325,7 +1321,7 @@ $tIs1
 220323000000Z
 220801000000Z
 230714000000Z
-240704151238Z0/
+240711145934Z0/
 241009235959Z0a1
 2<iu	H
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1337,6 +1333,7 @@ $tIs1
 2_BONE_IK
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+3	V_modff
 311109235959Z0b1
 33333333H+
 33333333I
@@ -1363,7 +1360,6 @@ $tIs1
 5YA1H
 5YA1I
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
-6	V_modff
 6*f(_
 64-bit DWARF format is not supported
 6D9l$Lt
@@ -1410,7 +1406,7 @@ $tIs1
 8nu	H
 9)~P3
 9*tsD
-9-{S=
+9-[S=
 97~2H
 98t H
 99ccff;"><b>No</b> Collision
@@ -1419,6 +1415,7 @@ $tIs1
 9>~,H
 9>~ZH
 9A u'
+9A&W]
 9A0~&H
 9A0~<D
 9A0~=D
@@ -1457,7 +1454,6 @@ $tIs1
 9Y8~9H
 9Y8~`H
 9Y@~#
-9YOP~2s
 9\$H~CH
 9]0~JH
 9^8~0A
@@ -1527,15 +1523,17 @@ $tIs1
 9~8~QH
 9~PE3
 9~xv1
-:!-c/
+:	V_powf
+:!-s/
 :!L$ 0
 :!d$L0
 :!|$ 0E
 :!}g0
 ::string literal
 ::{ default arg#
-:@%,i
+:@%<i
 :YA1H
+;	V_qsort
 ; tris:
 ;"><b>Trigger</b> Touch
 ;3}%H
@@ -1565,6 +1563,7 @@ $tIs1
 ;|$0~
 ;|$H|
 ;|$P|
+<	V_qsort_s
 <	u%H
 <	u)Icn
 <	u4H
@@ -1653,7 +1652,6 @@ $tIs1
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=	V_powf
 =%H5<mN
 ==MQ?
 =CFootDefinition
@@ -1663,16 +1661,13 @@ $tIs1
 =imb;D
 =m_nRefCount > 0
 =rIQU
->	V_qsort
 >%H5<mN
 >0<0:
 >HcD;
 >Mp$d
 >YA1H
->a:yE|
 >c;j1
 >jtm}S
-?	V_qsort_s
 ?7zQ6$
 ?:kP<
 ?<du	H
@@ -3158,7 +3153,7 @@ CPhysicsBody::ConnectShadowController
 CPhysicsBody::CreateShadowController
 CPhysicsBody::EnableCollisions
 CPhysicsBody::GetSphereRadius
-CPhysicsBody::RemoveShadowController
+CPhysicsBody::RemoveShadowControllerInternal
 CPhysicsBody::RemoveTrigger
 CPhysicsBody::SetSphereRadius
 CPhysicsBody::SetUseAlternateGravity
@@ -4981,8 +4976,8 @@ D9i t
 D9l$8u
 D9l$hu
 D9n0~SI
+D9n0~dI
 D9n8v\H
-D9o0~dI
 D9t$0
 D9t$Hu
 D9t$Pu
@@ -4995,6 +4990,7 @@ D9{(v
 D9|$Pu
 D;&s0I
 D;/}ZH
+D;="9
 D;@0|
 D;@HcH I
 D;@H|
@@ -5428,6 +5424,7 @@ Ex9p
 Excluded flags: No interaction allowed because
 ExitProcess
 ExternalNameForInternalType
+F	V_sincosf
 F 9F@u
 F A9F@u
 F H9H
@@ -5452,7 +5449,6 @@ FDE aug data too large (%llu bytes)
 FDE encoded pointer 0x%llx out of range (base 0x%llx)
 FDE size 0x%llx out of range (start RVA 0x%x)
 FDE table ID 0x%x doesn't refer to a CIE
-FFyKn
 FHHcD$ I
 FLAG0_SHIFT_BREAKABLE_FORCE
 FLAG0_SHIFT_BREAKABLE_TORQUE
@@ -5909,7 +5905,8 @@ G|$HH
 G|$HL
 G|$h3
 G|333?H
-H	{HH
+H	V_sinf
+H	{H3
 H SWH
 H UAVAWH
 H USVWAVAWH
@@ -5935,15 +5932,15 @@ H8I;I8r
 H9(tO
 H9(t^H9h
 H9.twH
+H95g|A
 H97u+A
 H98t2
 H98t5
 H9= BD
-H9=:KB
+H9=5KB
 H9=;BD
-H9=UKB
+H9=TJB
 H9=YAD
-H9=tJB
 H9A(t
 H9A`u2I
 H9B8s
@@ -6074,6 +6071,7 @@ HcE_L
 HcEgH
 HcF H
 HcF(A
+HcF0E
 HcF8H
 HcF|3
 HcG H
@@ -6196,7 +6194,6 @@ HostStateMgr001
 Hull%d.obj
 HullIVRHole_t::operator new
 Hulls
-I	V_sincosf
 I(I+I H
 I+4$H
 I+O H
@@ -6237,7 +6234,6 @@ IcA@E
 IcE0D
 IcExH
 IcF0H
-IcF0L
 IcFHH
 IcG(I
 IcG(L;
@@ -6602,7 +6598,7 @@ Joint changed type from %d to %d, skipping!
 JointAxis_t
 JointMotion_t
 Joints: %d
-K	V_sinf
+K	V_snprintf
 K UAVAWH
 K&>.yC
 K(D9K
@@ -6784,7 +6780,6 @@ L$XE3
 L$XL;
 L$XLc
 L$Xff
-L$Xt;I
 L$`8KQt/
 L$`8Kpt/
 L$`8K|t?
@@ -6822,13 +6817,12 @@ L.IsValid()
 L9	u	I
 L9#u/H
 L9+t	H
-L9-)\:
-L9-D\:
-L9-W[:
+L9-	\:
+L9-$\:
+L9-7[:
 L93t	H
-L95>U;
-L95YU;
-L95wT;
+L959U;
+L95WT;
 L95~;D
 L99t;
 L9?t	H
@@ -6838,7 +6832,7 @@ L9d$(t
 L9d$Ht
 L9l$(t
 L9mot
-L9oXu
+L9nXu
 L9sPt:H
 L9sXu>
 L9t$(t
@@ -7139,7 +7133,6 @@ Multiply water damping for buoyancy affecting linear velocity in the vertical di
 Multiply water drag (tries to equalize object velocity with the velocity of the water flow)
 MurmurHash3_32
 Must call SetMetadataEnabled on the root KV3 context to track metadata
-N	V_snprintf
 N u3H
 N0HcF(H
 N<t2I
@@ -7362,6 +7355,7 @@ PropWorldOrigin
 PropertyEditorSystem_001
 PushBack
 Pz}b!
+Q	V_sscanf
 Q A;U
 Q Hct$ H
 QAngle
@@ -7960,7 +7954,6 @@ SweepShapeMultiple not supported for this shape type!
 Symbol name index invalid (%lld)
 Symbol name index too large
 Symbol nesting too deep
-T	V_sscanf
 T$ D;
 T$ E3
 T$ H+
@@ -8004,7 +7997,7 @@ T$HLcd
 T$HeH
 T$Hff
 T$P9T
-T$PA9~0~J3
+T$P9~0~D3
 T$PE3
 T$PHc
 T$PM;
@@ -8031,10 +8024,11 @@ T$xA;
 T$xH;
 T$xL+
 T$x}	
-T%Z|/
-T%j}/
+T%:|/
+T%J}/
+T%iO&
 T<Xu9H
-T=mo/
+T=Mo/
 TD u"E;
 TILT_TWIST
 TKc<7H
@@ -8276,6 +8270,7 @@ UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UxtcD
 Uz)u'
+V	V_stricmp_fast
 V6'?C
 V6E>`"(5
 VATAUAVH
@@ -8429,6 +8424,7 @@ V_fabsf( x ) < s_nCellSubdiv / 2 + 1.1f
 V_fabsf( y ) < s_nCellSubdiv / 2 + 1.1f
 V_fclose
 V_fgets
+V_fmodf
 V_strchr( pNamePattern, '!' ) == nullptr
 V_strcmp( primaryFile, pDebugFile ) == 0
 V_strcmp( separateFile, pDebugFile ) == 0
@@ -8458,13 +8454,14 @@ VeryFast
 VisBuilder_001
 Vortices
 Vrad3_001
-W%Bi"
+W%+P"
+W%3*#
+W%bi"
 W(HcK
 W(I;\
-W-Zi"
+W-zi"
 W0HcK
-W5p'!
-W5qm#
+W5"|!
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -8500,6 +8497,7 @@ WrapSimplifiedMeshAgg
 WriteConsoleW
 WriteFile
 Wrong alignment %d
+X	V_strlower_fast
 X AVH
 X SUVWAVAWH
 X UATAWH
@@ -8514,8 +8512,8 @@ X VWAVH
 X!t5~
 X$"fB
 X8HcH0H
-X=>R$
-X=\Q/
+X=<Q/
+X=^R$
 X@Hc@8H
 XA]A\
 XA]A\][
@@ -8547,27 +8545,27 @@ XpIc@H
 Xt$@A
 Xt$pE
 Xt7HH
+X{Vz(Zk|
 X|$@A
 X|$DD;
 X|$PD
 X|$xA
-Y	V_stricmp_fast
-Y%&Z;
-Y%'6&
-Y%0I$
-Y%]G1
-Y%f$&
-Y%oi$
-Y--B;
-Y-4L/
-Y-QJ/
-Y-hi$
+Y%/s$
+Y%=G1
+Y%F$&
+Y%G6&
+Y%PI$
+Y-(s$
+Y-1J/
+Y-pc/
+Y-pd&
+Y-xi$
 Y0tfH
-Y5F6&
-Y5VD1
+Y56D1
+Y5f6&
+Y5r-;
 Y8HcA0
 Y9"SD
-Y='z)
 Y@$fD
 YD$ A
 YD$ H
@@ -8713,10 +8711,8 @@ Y|$tA
 Z* ,	
 Zd?es-8R
 ZdN=Y
-[	V_strlower_fast
 [ UWAVI
 [%u] comm %u.%u(%u) data %u
-[("VH
 [-&LMb#{'
 [K]taM?
 [\ozH
@@ -8841,7 +8837,7 @@ ZdN=Y
 \v,Hc
 \|$0D
 \|$\H
-]%Yd/
+]%9d/
 ]@fff
 ]J<0"0i3
 ]Lu*E;|$
@@ -8856,6 +8852,7 @@ ZdN=Y
 ^PHcFHH
 ^l$ H
 ^oEZ_
+_	V_strtoui64
 _ ;_$t
 _(HcG H
 _(IcG Hk
@@ -8863,7 +8860,7 @@ _(tP;
 _8HcG0H
 _8Hcw
 _8IcG0H
-_=:' 
+_=J' 
 _@HcG8H
 _@IcG8Hi
 _PHcGHH
@@ -8983,7 +8980,6 @@ audioroughnessfactor
 audiosounds
 awake_bodies
 axle.m_vecWheelIndices.Count() > 0
-b	V_strtoui64
 b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b+GnH
 bAllocationCanFit
@@ -9025,6 +9021,7 @@ buildid/
 bulletimpact
 burst
 burstRandomize
+c	V_tanf
 c [1>H'
 c%d m%d pt%d
 c(>\,
@@ -9134,7 +9131,7 @@ d$@I;
 d$@ff
 d$HA;
 d$PA;
-d$PD;%pD
+d$PD;%
 d$PI9
 d$PL+
 d$PLc
@@ -9228,7 +9225,6 @@ extents
 extractbuildid -multi %u -getsrcmapopt - "%s"
 extractbuildid -multi %u -setdbg "%s" "%s"
 extractbuildid -multi %u -setsrcmap "%s" "%s"
-f	V_tanf
 f %d %d %d
 f!C2H
 f0 != f1
@@ -9594,7 +9590,7 @@ l$8Hk
 l$8L+
 l$@9^0~0H
 l$@9{P~2H
-l$@;-u
+l$@;-
 l$@A+
 l$@D9
 l$@D9l$P|SH
@@ -10849,7 +10845,6 @@ o-EfH
 o58fH
 o=+fH
 o=[}<
-o=~Q 
 oPLc;D
 occlusionFactor
 offset
@@ -11161,7 +11156,6 @@ pushaway
 pushoff
 pz_clip
 q.w() >= 0
-q9RX]
 qAdjust
 qHLcydE;
 qXE9w
@@ -11178,7 +11172,6 @@ r+w2H;
 r+w6H
 rHHc7;w
 rQE;S
-rXA3N
 r_NE3
 radius
 ragdoll
@@ -11350,7 +11343,7 @@ t$(L9o
 t$(Lc
 t$(fA
 t$(fD
-t$0;5S%
+t$0;5c%
 t$0D9t$@|LH
 t$0D;
 t$0E3
@@ -11405,6 +11398,7 @@ t$@Lc2A
 t$@u)
 t$@~ H
 t$BfE
+t$DH;
 t$H9{8~0
 t$H@2
 t$HD8u
@@ -11419,7 +11413,7 @@ t$H~ H
 t$H~#H
 t$LF;4
 t$P;7
-t$PD;5l
+t$PD;5|
 t$PE3
 t$PH9t$@t
 t$PHc
@@ -11865,6 +11859,7 @@ z|uzE
 {Pt(D9
 {Pt*D9
 {Pt-D9w0t
+{Tl;\
 {hHcO
 {pHcKhH
 {un'%
@@ -11983,7 +11978,7 @@ z|uzE
 |$HtG
 |$H~ H
 |$LB9<
-|$P;=5
+|$P;=E
 |$P;k8
 |$PA;
 |$PD9
@@ -12046,7 +12041,6 @@ z|uzE
 }&fff
 }'fff
 }8IcE0H
-}8Nf,?
 }>;_$
 }HHcK
 }LuHO

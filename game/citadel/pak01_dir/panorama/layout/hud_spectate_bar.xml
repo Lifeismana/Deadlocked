@@ -13,8 +13,8 @@
 			<Label class="notSpectatingUnitControl highlighted" text="{s:spectator_mode}" html="true" />
 			<Label class="playerName highlighted" text="{s:spectatedPlayerName}" html="true" />
 			<Panel id="next_prev" class="specControlItem">
-				<Panel class="mouseButtons" html="true" />
-				<Label class="spectatingUnitControl keybindTitle" text="Next / Prev" html="true" />
+				<Label class="keyBind" text="{s:key_next_target}" html="true" />
+				<Label class="keybindTitle" text="Cycle Players" />
 			</Panel>
 			<Panel id="swap_camera" class="specControlItem spectatorOnlyControl LeftRightFlow">
 				<Label class="keyBind spectatorOnlyControl" text="{s:spec_camera_mode}" html="true" />
@@ -32,10 +32,7 @@
 			</Panel>
 		</Panel>
 		<Panel id="camera_section">
-			<Panel id="mode_section" class="specControlItem spectatorOnlyControl LeftRightFlow">
-				<Label class="keyBind" text="{s:spec_change_team}" html="true" />
-				<Label class="keybindTitle" text="Change Team" />
-			</Panel>
+			<Panel id="mode_section" class="specControlItem spectatorOnlyControl LeftRightFlow" />
 			<Panel id="voice_section" class="specControlItem LeftRightFlow spectatorOnlyControl">
 				<Label class="keyBind" text="{s:free_cursor_toggle}" html="true" />
 				<Label class="keybindTitle" text="{s:free_cursor_mode}" />

@@ -52,6 +52,7 @@
 			game AbsoluteZ
 			game FrontDepth
 			game GBuffer
+			game MotionVectors
 
 			dev ToolsVis // Visualization modes for all shaders (lighting only, normal maps only, etc.)
 			dev ToolsWireframe // This should use the ToolsVis mode above instead of being its own mode\
@@ -84,6 +85,7 @@
 	RenderSystem
 	{
 		IndexBufferPoolSizeMB 32
+		UseReverseDepth 1
 		Use32BitDepthBuffer 1
 		Use32BitDepthBufferWithoutStencil 1
 		SwapChainSampleableDepth 1

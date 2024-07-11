@@ -171,6 +171,31 @@
 	background-img-opacity: 0.2;
 	border-radius: 3px;
 	border: 2px solid rgba(42, 204, 199, 0.5);
+}
+
+.map_button.idol_return_friendly
+{
+	background-image: url("s2r://panorama/images/minimap/soul_jar_marker_return_psd.vtex");
+	background-size: 150% 150%;
+	background-position: 50% 50%;
+	background-color: rgba(68, 132, 129, 0.5);
+	background-img-opacity: 0.2;
+	border-radius: 3px;
+	border: 2px solid rgba(42, 204, 199, 0.5);
+	animation-name: idolReturn;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+
+.map_button.idol_return_enemy
+{
+	background-image: url("s2r://panorama/images/minimap/soul_jar_marker_return_psd.vtex");
+	background-size: 150% 150%;
+	background-position: 50% 50%;
+	background-color: rgba(68, 132, 129, 0.5);
+	background-img-opacity: 0.2;
+	border-radius: 3px;
+	border: 2px solid rgba(204, 42, 199, 0.5);
 	animation-name: idolReturn;
 	animation-iteration-count: infinite;
 	animation-duration: 2s;

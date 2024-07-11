@@ -10,6 +10,7 @@
 	%02i%% (%i/%i)
 	%s at offset %d, 
 	V_fprintf
+	V_iswcntrl
 	V_towupper32
 	V_vsnprintf
 	Warning
@@ -186,7 +187,6 @@
 !pStaticComboData->IsDynamicComboVariableDataCompact()
 !staticComboData.IsDynamicComboVariableDataCompact()
 !this->m_bBufferInstalled && this->m_nVertexIncrement == 0
-"	V_iswcntrl
 "%s" [%d][%d] has invalid vs input signature:
 "w3Hc
 #include
@@ -228,7 +228,6 @@ $IcD$
 %s[line %d:%d] 
 %s__font_page_%d
 %s_intermediate_%d.vtex
-&0nN#
 &YA1E
 &YA1H
 &YA1I
@@ -294,6 +293,7 @@ $IcD$
 (|$ H
 (|$0f
 (|$`H
+)	V_log10f
 )>6{1n
 )D$ D
 )D$03
@@ -312,6 +312,7 @@ $IcD$
 )|$ A
 )|$`L
 )|$pE3
+*	V_log2_uint
 *** %s "%s" in %s does not follow the 0..N format!
 *** %s "%s" in %s has max(%d) > 254!
 *** %s "%s" in %s has min(%d) < 0!
@@ -418,7 +419,7 @@ $IcD$
 +h->|
 +mat_clearshadercache
 +o'q)}
-,	V_log10f
+,	V_log2f
 , <^A
 , GetFont used
 , LoadFont used
@@ -432,7 +433,6 @@ $IcD$
 ,D$@A
 ,L$XL
 ,W5y+
--	V_log2_uint
 -----
 ----------
 --------------------------------------------------
@@ -466,6 +466,7 @@ $IcD$
 -unknown source-(
 -vulkan_use_android_vcs
 -vulkan_use_ios_vcs
+.	V_logf
 .00cfg
 .?AUAsyncProcessResult@CBaseIntrospectedToKV3TypeManager@@
 .?AUAsyncStaticComboResult_t@CMaterial2@@
@@ -626,7 +627,6 @@ $IcD$
 .xdata
 .xdata$x
 .|08z
-/	V_log2f
 // %s - %s
 // Dynamic Shader Compile Enabled
 // Reloading all shaders -----------------------------------------------------
@@ -668,22 +668,19 @@ $IcD$
 0iN>/
 0w0c1
 0}0i1
-1	V_logf
 130801120000Z
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
 1<.	/>:
-1OCSoT
 2	0!&
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240704151239Z0/
+240711145955Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
-2I&H	;
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 311109235959Z0b1
@@ -702,14 +699,12 @@ $IcD$
 4@HcD
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
-5ge%DB
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
 69B(u(
 6D;g(r
 6I]Dc
 6OB,n_
-6QPe/
 6YA1H
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
@@ -724,6 +719,7 @@ $IcD$
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8L$`t
+9	V_powd
 9"u3H
 9)~P3
 93~sH
@@ -750,7 +746,9 @@ $IcD$
 9|$Pu
 9|$hu
 9~0~-H
+:	V_powf
 : lexer error %d :
+;	V_qsort
 ;B8T	dH
 ;B@|8
 ;B@|L
@@ -762,7 +760,7 @@ $IcD$
 ;T$p}1H
 ;\$hu
 ;t$hu
-<	V_powd
+<	V_qsort_s
 <	u2H
 <	u8H
 < t=<	t9
@@ -798,16 +796,13 @@ $IcD$
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 =	 ();,
-=	V_powf
 =SBMSugH
 =imb;D
 =rIQU
->	V_qsort
 >0<0:
 >L9|$Pt
 >Mp$d
 >jtm}S
-?	V_qsort_s
 ?333?
 ?7zQ6$
 ?9;~oH
@@ -1272,6 +1267,7 @@ C HcL8
 C I!.H
 C KcD1 
 C$LcC
+C(A$bu
 C(HcC
 C,HcCh
 C0Hc	H
@@ -2108,6 +2104,7 @@ D$xLc|
 D$xM;
 D$xfA
 D$xfA;
+D,ke&
 D16_SHADOW
 D24FS8
 D24S8
@@ -2293,6 +2290,7 @@ ExtTextOutW
 ExternalDescSet
 ExternalNameForInternalType
 Extraneous token
+F	V_sincosf
 F 8C 
 F ;F0|
 F A8D
@@ -2456,6 +2454,7 @@ Gt$(L
 Gt$8A
 G|$(L
 G|$8H
+H	V_sinf
 H!D$ I
 H!T$0D
 H#D$`H
@@ -2550,7 +2549,6 @@ Hcu`M
 HelpSystem_001
 HorizJustification_e
 HostStateMgr001
-I	V_sincosf
 I could not work out what I was expecting, like so many of us these days!
 I"IcF
 I+4$H
@@ -2646,8 +2644,7 @@ IsValidIndex(i) && (i != InvalidIndex())
 J>@G_
 JHHc]oA
 January
-Jk=$\
-K	V_sinf
+K	V_snprintf
 K$HcC
 K&>.yC
 K0HcQ
@@ -2979,7 +2976,6 @@ MoveToEx
 MultiByteToWideChar
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 Must run with -shaderstats to use mat_shading_complexity!
-N	V_snprintf
 N"HcF
 N8D9l
 NORMAL
@@ -3114,9 +3110,9 @@ Programmer Error! Static combo not loaded!
 Programmer Error! Static combo value not in range!
 PropertyEditorSystem_001
 Pz}b!
+Q	V_sscanf
 Q$HcA
 QueryPerformanceCounter
-R#!8%
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -3319,7 +3315,6 @@ StatsService_001
 SteamAudio001
 Sunday
 SupportsMappingDimensions
-T	V_sscanf
 T$ D9
 T$ E3
 T$ Hc
@@ -3479,6 +3474,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 Uv scale variable %s referenced by texture %s doesn't evaluate to a constant value at material load time (%s).
+V	V_stricmp_fast
 V6E>`"(5
 VATAVAWH
 VAVAWH
@@ -3640,13 +3636,13 @@ XD$LH
 XD8(t
 XHcAxL
 Xl$8A
-Y	V_stricmp_fast
 Y9"SD
 Y>t$7?
 YL$XH
 YT$XH
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 Yt$@Hc
+Z	V_strspn
 [ VAVAWH
 [ mat_print_material_info ] Error! Cannot find material '%s'!
 [Dynamic shader compile] Reloading %d material(s)
@@ -3699,9 +3695,9 @@ Yt$@Hc
 \$hu2
 \$x1E
 \$xA;
+\)SNk~v
 \0bf;
 \error.vmat
-]	V_strspn
 ] ;]$t
 ](A8~8t
 ]J<0"0i3
@@ -3709,6 +3705,7 @@ Yt$@Hc
 ^^^ Attribute-based texture warning is now disabled after outputting 50 warnings.
 ^^^ Constant buffer warning is now disabled after outputting 50 warnings.
 ^hLcC
+_	V_strtoui64
 _ ;_$t
 _@D;]@
 _RDATA
@@ -3842,7 +3839,6 @@ argument list too long
 argument out of domain
 array
 attributes[i].GetType() == VFX_VARIABLE_TYPE_TEXTURE2D
-b	V_strtoui64
 bAllocationCanFit
 bLegalTypeChange
 bLfff
@@ -3861,6 +3857,7 @@ bp(=>?g
 broken pipe
 buffer
 byteaddressbuffer
+c	V_tanf
 c [1>H'
 c(>\,
 c@f9{Bt
@@ -3888,7 +3885,6 @@ cs_5_0
 cs_6_0
 ctx.m_pVariableIndexToParamIndex[nVarIndex] < ctx.m_nNumAllParams
 curPos.IsValid()
-d H0]
 d$ L9c
 d$ UAVAWH
 d$(Hc
@@ -3908,6 +3904,7 @@ d$xD;m
 d$xE3
 d$xfE
 dD8/t_3
+dbf9A
 dddd, MMMM dd, yyyy
 degrees
 descs.Count() >= 1
@@ -3933,7 +3930,6 @@ error.vmat
 error.vmat_c
 executable format error
 externaldescriptorset
-f	V_tanf
 f#D$0f;
 f9)u4H9j
 f9<H}
@@ -4022,6 +4018,7 @@ fontFileName && fontFileName[0]
 font_show_glyph_miss
 from.m_numInts == CalcNumIntsForBits( from.m_numBits )
 function not supported
+f}|F6<
 g_bFogTypeEnabled
 g_bOtherFxEnabled
 g_bRoughnessParams
@@ -4897,6 +4894,7 @@ unknown
 unspecified
 uzKs@>
 u|fA;
+u~P4,Pu
 v ;F0|
 v=Y]Bv
 v@D8s(t
@@ -5041,7 +5039,6 @@ z(f9z*t
 |Lu?c
 |b=})>
 |lHcC
-|rSX#
 } fA;P"w
 }!fD;A
 }1;C$

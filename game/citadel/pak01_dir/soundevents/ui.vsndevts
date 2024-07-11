@@ -706,12 +706,19 @@
 		pitch_modulation_attack = 10.000000
 		pitch_modulation_release = 0.300000
 		pitch_modulation_max = 2.000000
-		volume = -14.000000
+		volume = -8.000000
 		vsnd_pause_with_game = false
 		use_uiposition = true
-		hrtf_on = 1.000000
-		vsnd_files = "sounds/ui/ui_heroselection_enter.vsnd"
-		vsnd_duration = 2.489478
+		hrtf_on = 0.000000
+		hrtf_mix = 0.000000
+		pitch = 1.100000
+		delay = 0.100000
+		vsnd_files = 
+		[
+			"sounds/ui/ui_heroselection_enter_01.vsnd",
+			"sounds/ui/ui_heroselection_enter_02.vsnd",
+			"sounds/ui/ui_heroselection_enter_03.vsnd",
+		]
 	}
 	Menu.HeroSelection.Complete = 
 	{

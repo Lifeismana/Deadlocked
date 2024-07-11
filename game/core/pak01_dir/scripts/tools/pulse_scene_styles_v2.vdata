@@ -36,6 +36,7 @@
 		"$Tan_Hover" = "#9d8158"
 		"$TanLight" = "#D3B874"
 		"$TanLight_Hover" = "#d5bc7b"
+		"$Beige" = "#e0d7af"
 		"$YellowBright" = "#FFB800"
 		"$YellowBright_Hover" = "#ffbc0d"
 		"$YellowLight" = "#DDB85D"
@@ -78,6 +79,7 @@
 		"$BaseFont" = "Barlow,-1,18,18,10,0,0,0,0,0,Regular"
 		"$BaseFontSemibold" = "Barlow, -1,18,18,60,0,0,0,0,0,Bold"
 		"$BaseFontBold" = "Barlow,-1,18,18,110,0,0,0,0,0,Bold"
+		"$BaseFontSmall" = "Barlow,-1,12,12,30,0,0,0,0,0,Regular"
 		"$AltFont" = "Courier Prime,-1,16,5,70,1,0,0,0,0,Bold"
 	}
 	.BaseFlow = 
@@ -275,23 +277,24 @@
 	{
 		InteractionPriority = "BASE"
 		LayoutChildren = "VBOX"
-		MinSizeX = 200
-		MinSizeY = 20
-		SnapSizeX = 40
-		BorderRadius_TopLeft = "7px"
-		BorderRadius_TopRight = "7px"
-		BorderRadius_BottomLeft = "19px"
-		BorderRadius_BottomRight = "19px"
-		"&.Value_VarReference, &.ValueExpression" = 
-		{
-			BorderRadius_TopLeft = "19px"
-			BorderRadius_TopRight = "19px"
-		}
 		.BaseValueInnerContainer = 
 		{
 			HAlign = "STRETCH"
 			LayoutChildren = "VBOX"
 			LayoutGrowFactor = 1
+			Margin = "1px"
+			MinSizeX = 200
+			MinSizeY = 20
+			SnapSizeX = 40
+			BorderRadius_TopLeft = "7px"
+			BorderRadius_TopRight = "7px"
+			BorderRadius_BottomLeft = "19px"
+			BorderRadius_BottomRight = "19px"
+		}
+		"&.Value_VarReference .BaseValueInnerContainer, &.ValueExpression .BaseValueInnerContainer" = 
+		{
+			BorderRadius_TopLeft = "19px"
+			BorderRadius_TopRight = "19px"
 		}
 		.FlowRail = 
 		{
@@ -309,6 +312,7 @@
 			BorderRadius_TopRight = "7px"
 			BorderRadius_BottomLeft = "19px"
 			BorderRadius_BottomRight = "19px"
+			Margin = "2px"
 			"&.Value_VarReference, &.ValueExpression" = 
 			{
 				BorderRadius_TopLeft = "19px"
@@ -646,6 +650,14 @@
 	.NodeRow = 
 	{
 		MinSizeY = 40
+	}
+	".BaseValue .NodeRow:first-child, .BaseValue .NodeRow:last-child" = 
+	{
+		MinSizeY = 39
+	}
+	".BaseValue .NodeRow:only-child" = 
+	{
+		MinSizeY = 38
 	}
 	".BaseFlow .NodeRows" = 
 	{
@@ -1371,26 +1383,28 @@
 	}
 	.PulseTextTooltip = 
 	{
-		PaintLayer = "HOVER_OVERLAY"
 		LayoutChildren = "HBOX"
-		Border = "1px black"
-		Background_Color = 
-		[
-			100,
-			100,
-			100,
-		]
-		.Tooltip = 
+		.PulseTextToolTipCtn = 
 		{
-			Font = "$BaseFont"
-			Foreground_Color = 
-			[
-				255,
-				255,
-				255,
-			]
-			Margin = "4px"
+			BorderRadius = "2px"
 			PaintLayer = "HOVER_OVERLAY"
+			LayoutChildren = "HBOX"
+			Border = "1px $GreyMid"
+			Background_Color = "$Beige"
+			Positioning = "OUTSIDE_PARENT"
+			VAlign = "BOTTOM"
+			HAlign = "RIGHT"
+			.Tooltip = 
+			{
+				Font = "$BaseFontSmall"
+				Foreground_Color = "$Black"
+				Margin = "1px 4px"
+				PaintLayer = "HOVER_OVERLAY"
+			}
+		}
+		"&.InflowPort .PulseTextToolTipCtn" = 
+		{
+			VAlign = "TOP"
 		}
 	}
 	.Step_Timeline = 
@@ -1456,6 +1470,14 @@
 			Foreground_Color = "$colorBase"
 			Border_Color = "$borderColor"
 			Font = "$typeFace"
+			"&.BaseValue" = 
+			{
+				Background_Color = "transparent"
+			}
+			.BaseValueInnerContainer = 
+			{
+				Background_Color = "$bgColorBase"
+			}
 			.FlowIcon = 
 			{
 				ImageTint = "$flowColor"
@@ -1586,9 +1608,22 @@
 			{
 				ImageTint = "$DashedLineColorHover"
 			}
+			".NodeRow::after" = 
+			{
+				ImageTint = "$DashedLineColorHover"
+			}
 			.param_group = 
 			{
 				Background_Color = "$paramColorHover"
+			}
+			"&.BaseValue" = 
+			{
+				Background_Color = "transparent"
+			}
+			.BaseValueInnerContainer = 
+			{
+				Background_Color = "$bgColorHover"
+				Foreground_Color = "$colorHover"
 			}
 		}
 		".node_theme.$className:hover-descendant" = 
@@ -1599,6 +1634,14 @@
 			{
 				ImageTint = "$DashedLineColorHover"
 			}
+			".NodeRow::after" = 
+			{
+				ImageTint = "$DashedLineColorHover"
+			}
+			"&.BaseValue" = 
+			{
+				Background_Color = "transparent"
+			}
 			.param_group = 
 			{
 				Background_Color = "$paramColorHover"
@@ -1608,6 +1651,10 @@
 		{
 			Background_Color = "$bgColorHover"
 			Foreground_Color = "$colorHover"
+			"&.BaseValue" = 
+			{
+				Background_Color = "transparent"
+			}
 			.param_group = 
 			{
 				Background_Color = "$paramColorHover"

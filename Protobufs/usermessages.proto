@@ -792,6 +792,7 @@ message CUserMessage_NotifyResponseFound {
 	repeated float float_criteria_values = 9;
 	repeated uint32 symbol_criteria_names = 10 [packed = true];
 	repeated uint32 symbol_criteria_values = 11 [packed = true];
+	optional int32 speak_result = 12;
 }
 
 message CUserMessage_PlayResponseConditional {

@@ -3,10 +3,10 @@
 							
 								
 												
-																
 																	
 																			
 																																									
+																0
 			Response %d: %s
 		 defaults are: <distance 1024> <flags 0> <magnitude 0> <scale 0>
 		%.*s
@@ -109,7 +109,7 @@
 		SCHED_TROOPERNEUTRAL_IDLE SCHEDULE_FLAGS_NONE	Tasks 		TASK_STOP_MOVING			0		TASK_TURN_INITIAL_FACING	2		TASK_WAIT_INDEFINITE		0	Interrupts 		COND_STUNNED		COND_FORCED_CALM		COND_FORCED_AGGRO		COND_NEW_ENEMY		COND_TROOPERNEUTRAL_NO_WATCHER		COND_TAKEN_DAMAGE		COND_RECEIVED_AGGRO
 		SCHED_TROOPERNEUTRAL_MOVE_TO_COVER SCHEDULE_FLAGS_NONE	Tasks 		TASK_SET_FAIL_SCHEDULE				SCHEDULE:SCHED_TROOPERNEUTRAL_RELOAD		TASK_FIND_PATH_TO_COVER		0		TASK_WAIT_FOR_MOVEMENT				5		TASK_TURN_INITIAL_FACING			2	Interrupts 		COND_STUNNED
 		SCHED_TROOPERNEUTRAL_MOVE_TO_NEW_NODE SCHEDULE_FLAGS_NONE	Tasks 		TASK_PICK_NEW_NODE			0		TASK_MOVE_TO_NEXT_MOVEMENT_NODE			0
-		SCHED_TROOPERNEUTRAL_RANGE_ATTACK SCHEDULE_FLAGS_NONE	Tasks 		TASK_TROOPERNEUTRAL_RANGE_ATTACK	0	Interrupts 		COND_STUNNED		COND_RANGE_ATTACK_LOS_BLOCKED		COND_FORCED_CALM		COND_TROOPERNEUTRAL_CAN_AOE_ATTACK
+		SCHED_TROOPERNEUTRAL_RANGE_ATTACK SCHEDULE_FLAGS_NONE	Tasks 		TASK_TROOPERNEUTRAL_RANGE_ATTACK	0	Interrupts 		COND_STUNNED		COND_RANGE_ATTACK_LOS_BLOCKED		COND_RANGE_ATTACK_TOO_FAR		COND_FORCED_CALM		COND_TROOPERNEUTRAL_CAN_AOE_ATTACK
 		SCHED_TROOPERNEUTRAL_RELOAD SCHEDULE_FLAGS_NONE	Tasks 		TASK_STOP_MOVING			0		TASK_RELOAD			0	Interrupts 		COND_STUNNED
 		SCHED_TROOPERNEUTRAL_RELOAD_AND_WAIT SCHEDULE_FLAGS_NONE	Tasks 		TASK_STOP_MOVING			0		TASK_TURN_TOWARD_ENEMY		1		TASK_RELOAD					0		TASK_WAIT_INDEFINITE		0	Interrupts 		COND_STUNNED		COND_SQUAD_SHOOT_SLOT_AVAILABLE		COND_LOST_ENEMY		COND_FORCED_CALM
 		SCHED_TROOPERNEUTRAL_RETURN_TO_NODE SCHEDULE_FLAGS_NONE	Tasks 		TASK_MOVE_TO_NEXT_MOVEMENT_NODE			0
@@ -136,6 +136,7 @@
 		SCHED_WAIT_FOR_REEVALUATE SCHEDULE_FLAGS_NONE	Tasks		TASK_BOT_MOVE_WITHOUT_GOAL				0.4	Interrupts
 		SCHED_WAIT_RANDOM SCHEDULE_FLAGS_NONE	Tasks 		TASK_WAIT_RANDOM				2	Interrupts 		COND_NEW_ENEMY		COND_TAKEN_DAMAGE		COND_TAKEN_FLINCH_DAMAGE
 		SCHED_WAIT_STUNNED SCHEDULE_FLAGS_NONE	Tasks 		TASK_WAIT_RANDOM				0.5	Interrupts 
+		V_frexpf
 	 5: Player Teleport
 	 6: Blind Zombie Sounds
 	 7: Player Continuous
@@ -254,6 +255,8 @@
 	Match reservation: %llu
 	MatchID_t
 	MatchID_t"4
+	MatchID_t"9
+	MatchID_t"{
 	MatchInfo
 	Max uptime scheduled Shutdown: %u (%u seconds from now)
 	None
@@ -261,6 +264,7 @@
 	Objective
 	PFT_SOUND
 	PartyID_t
+	Pp~O
 	Private script scope:
 	Public script scope:
 	Questionable extension field!
@@ -284,11 +288,8 @@
 	UM_Rumble
 	Unreachable entities drawn in green (can't get to it)
 	Usage: test_dispatcheffect <effect name> <distance away> <flags> <magnitude> <scale>
-	V_fmodd
-	V_fmodf
 	V_fpclassifyd
 	V_fprintf
-	V_frexpf
 	V_isdigit_str
 	V_isfinited
 	V_isnand
@@ -761,14 +762,13 @@
  (%s)
  (+%.2f)
  (08@HPX`hpx
- (08@HPX`jP
- (08@HPXb
- (08@HPZP
- (08@HR
+ (08@HPX`j
+ (08@HPXb`
+ (08@HPZ
+ (08@HR`
  (08@J
- (08@JP
- (0:P
- (0X`hpz
+ (08@J`
+ (0X`hpz`
  (Dirty Animation)
  (Eluded)
  (INVALID PSS PARAMETERS)
@@ -867,6 +867,7 @@
  A_A\^
  A_A\^][
  A_A\_
+ A_A\_[]
  A_A\_^[
  A_A\_^]
  A_A]A\^]
@@ -977,13 +978,12 @@
  Hc1H
  Hc1I
  Hc1L
- Hc55f
- Hc5=d
- Hc5EE
- Hc5]R
- Hc5eA
- Hc5ma
- Hc5{
+ Hc5%
+ Hc5-
+ Hc55
+ Hc5;k
+ Hc5=
+ Hc5m
  Hc9E3
  Hc9H
  Hc9I
@@ -1280,6 +1280,7 @@
 !CoJobMgr().IsImplClassShuttingDown( k_ECoJobImplClass_GCSDKJob )
 !Custom game event manager
 !D$ F
+!D85M
 !D]#t^;Gc
 !GetModifierProp() || GetModifierProp()->CountModifierInLists( this ) == 0 || GetModifierProp()->m_bDestructing
 !GetMoveParent()
@@ -1725,6 +1726,7 @@
 " which is not defined or is not an extension of "
 " which is.
 "!"%"+"1"9"K"O"c"g"s"u"
+"!.zV
 "#GameUI_Disconnect_DeltaEntMessage
 "#GameUI_Disconnect_HLTVUnavailable
 "#GameUI_ServerRejectInvalidCertLen
@@ -2073,7 +2075,6 @@ $?$6n
 $@4gM
 $@8x)
 $@D4Z
-$@ff&@
 $A;\$
 $CBroadcast_PostGameDataFrame_Request
 $CCitadelUserMsg_SpectatorTeamChanged
@@ -2567,7 +2568,6 @@ $~GHc
 %s removing BulletHandler %p (now %d)
 %s restored from text format, should be converted to keyvalues3 text format using sceneimagebuilder -kv3convert -game <dota, etc.>
 %s skel=%p agg=%p[%d] %s
-%s trying to open a door that has been deleted!
 %s waiting... %f
 %s was stuck on world geo while being off nav and/or performing an illegal move. Trying to move towards a valid position: %g %g %g
 %s was stuck on world geo while being off nav and/or performing an illegal move. Unable to make progress towards a valid position
@@ -3115,15 +3115,12 @@ $~GHc
 (#GameUI_Disconnect_LoopLevelLoadActivate
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
-(%)0	
 (%.1f, %.1f, %.1f) -- Node ID: %d; type %d
 (%0.2f) %s
 (%0.2f): %s
 (%0.2f,%0.2f,%0.2f)
 (%0.3f) '%s', vDeltaPos = (%0.3f, %0.3f, %0.3f)
-(%ETN
-(%Tgx
-(%a_'
+(%^/*
 (%d %d %d %d)
 (%d) %s
 (%d) ------> %s ( HELD BY %s ) 
@@ -3146,15 +3143,20 @@ $~GHc
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (,$t6D
-(-|.F
+(-E2\
+(-Kwn
+(-X3\
+(-j4\
 (.CMsgSteamLearn_GetAccessTokens_Response"r
 (.CMsgSteamLearn_SnapshotProject_Response"-
 (0'yX
 (0`hpx
 (0x%08X)'??'
 (1O\,n
+(5SN6
 (;s |
 (;{ |
+(=,N6
 (A;>|
 (ACTIVE)
 (A]A\
@@ -3188,6 +3190,7 @@ $~GHc
 (A_A^A\[
 (A_A^A\]
 (A_A^A\]H
+(A_A^A\^
 (A_A^A\_
 (A_A^A\_][
 (A_A^A]A\
@@ -3428,6 +3431,7 @@ $~GHc
 (default)
 (end of input).
 (f*^[0
+(fP;U
 (fS{ggRcjh
 (flUpAmount >= 0.0f) && (flUpAmount <= 1.0f)
 (flags == UCQ_FLAGS_NONE) || (nInsertPos == m_QueuedUserCommands.Head())
@@ -3518,7 +3522,6 @@ $~GHc
 (t$ u]H
 (t$ w
 (t$ w0H
-(t$ wV
 (t$0+
 (t$02
 (t$03
@@ -3606,7 +3609,6 @@ $~GHc
 (t$Pw
 (t$`8
 (t$`8X
-(t$`@
 (t$`A
 (t$`A;
 (t$`D
@@ -3686,6 +3688,7 @@ $~GHc
 (|$0t#H
 (|$0u
 (|$0v
+(|$0vD
 (|$0xbHc
 (|$@2
 (|$@3
@@ -3732,7 +3735,9 @@ $~GHc
 (|$pI
 (|$pL
 (|$ps
+(|$psDH
 (|$pv
+)	V_log10f
 )	~,Vg
 )!)#)?)G)])e)i)o)u)
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
@@ -3897,7 +3902,6 @@ $~GHc
 )T$@D
 )T$@E
 )T$@H
-)T$@f
 )T$@u5
 )T$PA
 )T$PD
@@ -4051,7 +4055,7 @@ $~GHc
 )t$@@2
 )t$@A
 )t$@D
-)t$@D9=
+)t$@D9=?
 )t$@E
 )t$@E3
 )t$@H
@@ -4059,9 +4063,9 @@ $~GHc
 )t$@I
 )t$@L
 )t$@N
-)t$@f
 )t$@t
 )t$@t"H
+)t$@u
 )t$@u	
 )t$@z"u 
 )t$@z&u$
@@ -4157,7 +4161,6 @@ $~GHc
 )|$@L
 )|$@M
 )|$@taH
-)|$@u
 )|$P3
 )|$P<"u
 )|$P@8
@@ -4165,7 +4168,6 @@ $~GHc
 )|$PD
 )|$PE
 )|$PH
-)|$PH9k0u
 )|$PHk
 )|$PI
 )|$PL
@@ -4381,7 +4383,6 @@ $~GHc
 +sv_dev_simulate_gcdown
 +t$$A
 +v30Y
-,	V_log10f
 , %s %s
 , <^v
 , <^w
@@ -4471,6 +4472,7 @@ $~GHc
 ,steammessages_steamlearn.steamworkssdk.proto
 ,steammessages_steamlearn.steamworkssdk.proto"\
 ,value:
+-	V_logd
 - "%s" = "%.2f"
 - "%s" = "%i"
 - "%s" = "%llu"
@@ -4585,6 +4587,7 @@ $~GHc
 -vscriptdebug
 -vscriptdebug_game
 -world
+.	V_logf
 . t{H
 .%.-.3.7.9.?.W.[.o.y.
 .%X&1
@@ -4600,12 +4603,12 @@ $~GHc
 .0taH
 .0tqH
 .1zEuC
-.5U[]
-.5rgy
+.5Ul]
 .6<A>Y
 .7Z!L
 .7t H
 .8u\D
+.8zFuD
 .97yY
 .;t'H
 .;uEH
@@ -5547,6 +5550,7 @@ $~GHc
 .?AV?$CModifierFactory@VCCitadel_Modifier_PayloadCarrier@@$0PP@@@
 .?AV?$CModifierFactory@VCCitadel_Modifier_PayloadPusherAuraTarget@@$0PP@@@
 .?AV?$CModifierFactory@VCCitadel_Modifier_PermanentPickup@@$0PP@@@
+.?AV?$CModifierFactory@VCCitadel_Modifier_Phantom_Strike_Caster@@$0PP@@@
 .?AV?$CModifierFactory@VCCitadel_Modifier_PlayerDisconnected@@$0PP@@@
 .?AV?$CModifierFactory@VCCitadel_Modifier_PlayerPinged@@$0PP@@@
 .?AV?$CModifierFactory@VCCitadel_Modifier_PoisonBullet_PoisonBuildup@@$0PP@@@
@@ -6255,6 +6259,7 @@ $~GHc
 .?AV?$CSubclassFactory@VCCitadel_Modifier_PayloadCarrier@@VCBaseModifier@@@@
 .?AV?$CSubclassFactory@VCCitadel_Modifier_PayloadPusherAuraTarget@@VCBaseModifier@@@@
 .?AV?$CSubclassFactory@VCCitadel_Modifier_PermanentPickup@@VCBaseModifier@@@@
+.?AV?$CSubclassFactory@VCCitadel_Modifier_Phantom_Strike_Caster@@VCBaseModifier@@@@
 .?AV?$CSubclassFactory@VCCitadel_Modifier_PlayerDisconnected@@VCBaseModifier@@@@
 .?AV?$CSubclassFactory@VCCitadel_Modifier_PlayerPinged@@VCBaseModifier@@@@
 .?AV?$CSubclassFactory@VCCitadel_Modifier_PoisonBullet_PoisonBuildup@@VCBaseModifier@@@@
@@ -6540,7 +6545,6 @@ $~GHc
 .?AV?$CUserMessagePB@$0BDN@VCCitadelUserMsg_GetDamageStatsResponse@@$00@@
 .?AV?$CUserMessagePB@$0BDO@VCCitadelUserMsg_AbilityInterrupted@@$00@@
 .?AV?$CUserMessagePB@$0BDP@VCCitadelUserMsg_HeroKilled@@$00@@
-.?AV?$CUserMessagePB@$0BEA@VCCitadelUserMsg_ReturnIdol@@$00@@
 .?AV?$CUserMessagePB@$0BEB@VCCitadelUserMsg_SetClientCameraAngles@@$00@@
 .?AV?$CUserMessagePB@$0BEC@VCCitadelUserMsg_MapLine@@$00@@
 .?AV?$CUserMessagePB@$0BED@VCCitadelUserMessage_BulletHit@@$00@@
@@ -7265,6 +7269,7 @@ $~GHc
 .?AVCCitadelModifierCadenceGunSpikesVData@@
 .?AVCCitadelModifierChronoPulseGrenadePulseAreaVData@@
 .?AVCCitadelModifierDustStormAuraApplyVData@@
+.?AVCCitadelModifierIdolReturnTimerVData@@
 .?AVCCitadelModifierItemPickupTimerVData@@
 .?AVCCitadelModifierProjectilePitchingLoopSoundThinker@@
 .?AVCCitadelModifierProjectilePitchingLoopSoundThinkerVData@@
@@ -7384,7 +7389,6 @@ $~GHc
 .?AVCCitadelUserMsg_RecentDamageSummary_ModifierRecord@@
 .?AVCCitadelUserMsg_RecentDamageSummary_t@@
 .?AVCCitadelUserMsg_ReturnIdol@@
-.?AVCCitadelUserMsg_ReturnIdol_t@@
 .?AVCCitadelUserMsg_SetClientCameraAngles@@
 .?AVCCitadelUserMsg_SetClientCameraAngles_t@@
 .?AVCCitadelUserMsg_SpectatorTeamChanged@@
@@ -8201,6 +8205,7 @@ $~GHc
 .?AVCCitadel_Modifier_PayloadPusherAuraTarget@@
 .?AVCCitadel_Modifier_PermanentPickup@@
 .?AVCCitadel_Modifier_PermanentPickupVData@@
+.?AVCCitadel_Modifier_Phantom_Strike_Caster@@
 .?AVCCitadel_Modifier_PlayerDisconnected@@
 .?AVCCitadel_Modifier_PlayerPinged@@
 .?AVCCitadel_Modifier_PoisonBullet_PoisonBuildup@@
@@ -10442,6 +10447,7 @@ $~GHc
 .?AVCTriggerSoundscape@@
 .?AVCTriggerTeamBase@@
 .?AVCTriggerTeleport@@
+.?AVCTriggerTier3Phase2Shield@@
 .?AVCTriggerToggleSave@@
 .?AVCTriggerTrooperDetector@@
 .?AVCTriggerVolume@@
@@ -10915,7 +10921,6 @@ $~GHc
 .?AVtype_info@@
 .?t'H
 .?uoH
-.@4u<
 .A,z&u$
 .A8z%u#
 .ADz%u#
@@ -10945,6 +10950,7 @@ $~GHc
 .CGameInfo"
 .CGameInfo.CCSGameInfo
 .CGameInfo.CDotaGameInfo
+.CHtBH
 .CHtwH
 .CHz=u;
 .CIPASNInfo"?
@@ -11186,9 +11192,9 @@ $~GHc
 .I`Mb"(
 .Ic\$
 .L$(z
-.L$@z
+.L$4z
+.L$8z
 .L$@zIuG
-.L$Dz
 .L$Dz8u6
 .L$Dz^u\
 .L$HzUuS
@@ -11562,12 +11568,12 @@ $~GHc
 .|$pz
 .|$tz
 .~(u H
-/%70x
+/%573
+/%H$3
+/%M"3
+/%u73
 /'/)/A/E/K/M/Q/W/o/u/}/
-/-?,j
-/-B4j
-/-e3j
-/-o0j
+/-GDj
 ///////
 /////////////
 /////////////////////////////////////////
@@ -11580,18 +11586,10 @@ $~GHc
 /0w6H
 /0wcA
 /2GG>!B
-/5'3x
-/5K0x
+/5T^ 
 /8r H
 /8s{H
 /<GE3
-/=3\t
-/=45o
-/=4gr
-/=VDQ
-/=ca"
-/=h(j
-/=zer
 />58d%
 /@ soA
 /@ voA
@@ -11620,8 +11618,9 @@ $~GHc
 /C4sJE3
 /C4vsH
 /C8rV
-/C<v0H
+/C<r!H
 /C@r2
+/C@sr2
 /CDr 
 /CLw,
 /CMsgSteamLearn_InferenceMetadataBackend_Request
@@ -11729,7 +11728,6 @@ $~GHc
 /t$@w'3
 /t$PwWH
 /t$XwA
-/t$`v
 /t$lr
 /u%A8
 /u&A8
@@ -11741,7 +11739,6 @@ $~GHc
 /usr/local/ssl/private
 /v$vN
 /w v4
-0	V_logd
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -11767,7 +11764,8 @@ $~GHc
 0123456789abcdefghijklmnopqrstuvwxyz
 02V8[
 08@HP
-08@HRP
+08@HR
+08@J`
 0: Draw nothing at waypoints; 1: Draw a tick mark at waypoints; 2: Draw a shape around waypoints.
 0;Q5[
 0><[cZUg^>
@@ -11890,7 +11888,6 @@ $~GHc
 0L9#t	H
 0Lcq(M
 0M2~@p
-0M9~0u
 0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
 0PARTICLE_SYSTEM_MANAGER_EVENT_UPDATE_ORIENTATION
 0PARTICLE_SYSTEM_MANAGER_EVENT_UPDATE_SHOULD_DRAW
@@ -11912,7 +11909,6 @@ $~GHc
 0ufH9o(u`H
 0w0c1
 0}0i1
-1	V_logf
 1 = draw labels of waypoint types during ai_path_draw_active
 1 = show gravity when applied, 2 = always show gravity
 1 == client, 2 == server
@@ -12163,7 +12159,7 @@ $~GHc
 24.CUserMsg_ParticleManager.SetSceneObjectTintAndDesat
 24.CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240710171143Z0/
+240711192902Z0/
 241009235959Z0a1
 25.CMsgServerSignoutData_DetailedStats.TimeSample.Stats
 25.CSource2Metrics_MatchPerfSummary_Notification.Client
@@ -12415,8 +12411,8 @@ $~GHc
 65535"
 65535"j
 65535B$
+6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
-6666666666666666`
 6?S.>
 6D8$.u
 6GAME_PARTICLE_MANAGER_EVENT_FREEZE_TRANSITION_OVERRIDE
@@ -12521,6 +12517,7 @@ $~GHc
 8A_A^
 8A_A^A\[
 8A_A^A\]
+8A_A^A\_
 8A_A^A]A\
 8A_A^A]A\_[
 8A_A^A]A\_^[]
@@ -12564,13 +12561,14 @@ $~GHc
 8YA1i
 8Yct$H
 8\$0t
+8\$Pt
 8\$PtD
 8\$PtF
 8]Vc2
 8]gt$H
 8_Yt	
 8_^][
-8_mteD9
+8_mtgD9
 8_nt	
 8`QXL
 8b&{	
@@ -12591,8 +12589,6 @@ $~GHc
 9)~P3
 9+~)L
 9+~.L
-9-$N0
-9-s/1
 9.u(H
 90T1@I
 90t H
@@ -12604,9 +12600,6 @@ $~GHc
 93t#H
 93~j3
 94(t H
-95)"!
-95PK2
-95XL2
 97~HH
 98Shu4L
 98t H
@@ -12617,13 +12610,9 @@ $~GHc
 98~d3
 98~q3
 99~CE
-99~v3
 9:dzGN
 9;uCA
 9<(t,H
-9=Xjg
-9=yB1
-9=}r0
 9>powf
 9>~ZH
 9?uR3
@@ -12652,6 +12641,7 @@ $~GHc
 9M8t~
 9N1=@
 9N@t@H
+9ND~&
 9Ox~%I
 9PptWH
 9STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_DATA_CHANGED
@@ -12773,12 +12763,14 @@ $~GHc
 9|$xu
 9} |EH
 9~0~@H
+:	V_powf
 : Stopped for %.2f. 
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 : has %d Aggregate Instances:
 : lexer error %d :
 : no physics component
+:!%,X
 :!D$@0A
 :!D$P0A
 :!\$`0
@@ -12813,6 +12805,7 @@ $~GHc
 :q>*C
 :u(f9Q
 :z'H>
+;	V_qsort
 ;	t/H
 ;!;#;-;9;E;S;Y;_;q;{;
 ;!u3L
@@ -12833,8 +12826,6 @@ $~GHc
 ;@"IL
 ;A,| 
 ;C8u{
-;C8}%H
-;C8}&H
 ;CProtoItemSocket_AssetModifier_DESERIALIZE_FROM_STRING_ONLY
 ;D$ u
 ;D$$|
@@ -12852,6 +12843,8 @@ $~GHc
 ;Fh~AA
 ;Fl~AA
 ;G(uSL
+;G8}%H
+;G8}&H
 ;GAME_PARTICLE_MANAGER_EVENT_CHANGE_CONTROL_POINT_ATTACHMENT
 ;GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_TINT_AND_DESAT
 ;H9>&X
@@ -12959,6 +12952,7 @@ $~GHc
 ;|$xu
 ;}XuT
 ;}p}~H
+<	V_qsort_s
 <	u H
 <	u2H
 <	u8H
@@ -13116,7 +13110,6 @@ $~GHc
 <utK@:
 <x~fH
 <~{Su;u
-=	V_powf
 =!=-=3=7=?=C=o=s=u=y={=
 =#N"u#
 =%H5<mN
@@ -13140,9 +13133,7 @@ $~GHc
 =imb;D
 =rIQU
 =trF6,#
-=wjz!
 =y.g^
->	V_qsort
 >	t.H
 >"I;6
 >#>)>/>3>A>W>c>e>w>
@@ -13182,7 +13173,6 @@ $~GHc
 >o}-XH
 >p00<
 ?	U.S)
-?	V_qsort_s
 ?!5WOo
 ?".P"
 ?#\$ 
@@ -13269,6 +13259,7 @@ $~GHc
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
 ?Clear@CGridStringPrinter@@QEAAXXZ
 ?ClearDestruct@CUtlMemoryPoolBase@@IEAAXP6AXPEAX@Z@Z
+?Collect model names of the entities you're pointing at
 ?CommitTo@CMemoryStack@@AEIAA_NPEAE@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?Compress@CLZSS@@QEAAPEAEPEAEHPEAI_N@Z
@@ -13280,6 +13271,7 @@ $~GHc
 ?Detach@CTSListBase@@QEAAPEAUTSLNodeBase_t@@XZ
 ?DevMsg@@YAXPEBDZZ
 ?DevWarning@@YAXPEBDZZ
+?Draws the LOS check generated by our fibonacci sphere trace algorithm
 ?Dump@KeyValues@@QEAA_NPEAVIKeyValuesDumpContext@@H@Z
 ?E=$% B
 ?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
@@ -13494,8 +13486,6 @@ $~GHc
 ?ff&?333?
 ?k_EGCMsgInitiateTradeResponse_Free_Account_Initiator_DEPRECATED
 ?kxG2)
-?m_FontName
-?m_eClass
 ?r>6;
 ?srJO
 ?t[E3
@@ -13536,11 +13526,12 @@ $~GHc
 @.reloc
 @/XXH
 @08@HPX`hpx
+@08ND
 @0HcB
 @1h!L
 @2A2G"$
 @2{Z@
-@6PdT
+@6@@U
 @8(t"H
 @8(t1
 @8(t`
@@ -13549,6 +13540,7 @@ $~GHc
 @8,2u
 @8,8u
 @8,:u
+@8-|Z
 @8/td3
 @80tDH
 @80t[
@@ -13561,19 +13553,24 @@ $~GHc
 @84)u
 @84/u
 @848u
+@85$-
+@85=5
+@85Hl
+@85V+!
+@85an
 @88t3I9
 @88t4I
-@88t5H9{0u
 @88t@H
 @88toH
 @88t{H
 @88u.
 @88uFH
 @8;tb3
-@8;tf3
 @8<(u
 @8<0u
-@8=w@*
+@8=/y*
+@8=I&
+@8=zb)
 @8>tO3
 @8>uAH
 @8HcB
@@ -13628,7 +13625,6 @@ $~GHc
 @8w$t
 @8wIt/@8wHu)
 @8wIu%H
-@8wNu}H
 @8wzuw
 @8x[t
 @8y*uS@8y+u:H
@@ -13663,13 +13659,10 @@ $~GHc
 @8~It*@8~Hu$
 @8~It/@8~Hu)
 @8~It1@8~Hu+
-@: )(
-@:0[,
-@:@)(
+@:`9-
 @<:B<u
 @<:nq
 @>%>b
-@>pKT
 @@33s?
 @@HcB ;B$u
 @@Lcs 
@@ -13725,7 +13718,6 @@ $~GHc
 @A_A]^
 @A_A]_
 @A_A]_^[
-@A_A]_^]
 @A_A^A\
 @A_A^A\][
 @A_A^A\^[
@@ -13765,7 +13757,7 @@ $~GHc
 @H9AhH
 @HHcB$;B(u
 @HPX&I
-@HPX`hv
+@HPX`hv0
 @Hc13
 @HcA D
 @HcA H
@@ -14081,6 +14073,7 @@ $~GHc
 @VATAUAWH
 @VATAUH
 @VATAV
+@VATAVAWH
 @VATAVH
 @VATAWH
 @VATH
@@ -14100,6 +14093,7 @@ $~GHc
 @VWATAUAWH
 @VWATAUH
 @VWATAW
+@VWATAWH
 @VWATH
 @VWAUAVAW
 @VWAUAVH
@@ -14143,9 +14137,10 @@ $~GHc
 @fD9d
 @fE9d
 @fE9l
+@ff&@
 @fff>fff>fff>fff>
 @ffffff
-@filter_activator_model
+@filter_activator_name
 @h!Aq8
 @pHcL
 @pJcL
@@ -14179,6 +14174,7 @@ $~GHc
 @}AeH
 @}{Hc
 @}|Hc
+A	V_roundf
 A = N
 A D	A
 A H+H(H
@@ -14267,8 +14263,8 @@ A8^It;A8^Hu5@
 A8^ItBA8^Hu<@
 A8^Iu#I
 A8^Ku
-A8_|t
-A8_}t
+A8^|t
+A8^}t
 A8m(u
 A8nHA
 A8nHu
@@ -14636,7 +14632,6 @@ AOE Attack
 AOERadius
 APA8FP
 APD	A
-APKon
 APPEND_EXP
 APPSYSTEM: In ConnectGameInterfaces(), s_nRegistrationCount is %d!
 APPSYSTEM: In ConnectGameInterfaces(), tried to use different connection modes!
@@ -14648,7 +14643,6 @@ APUsageFlag_NONE
 APtdf
 AQD	A
 ARumbleEffect_t
-ASCHED_TROOPERNEUTRAL_MOVE_TO_COVER
 ASCII
 ASIDENTIFIERCHOICE_CANONIZE
 ASIDENTIFIERCHOICE_IS_CANONICAL
@@ -15004,13 +14998,14 @@ A__^[
 A__^[]
 A__^]
 A`D	A
+Aai_doors_force_animation
 Abandoned
 AbiCompParticleTimeScaleChanged
 AbiCompSelectedAbilityChanged
 AbiCompTimeScaleChanged
 Abilities
 Ability
-Ability !COND_CAN_MOVE_AND_USE_ABILITY
+Ability !COND_CAN_MOVE_THEN_USE_ABILITY
 Ability %s MovementControl returned bad values for m_vecVelocity
 Ability %s has AbilityPropVal for '%s', but it doesn't have that property!
 Ability %s has Projectile Speed greater than sv_maxvelocity of %.1f and has been reduced to sv_maxvelocity
@@ -15156,7 +15151,6 @@ ActiveModelConfig_t
 ActiveModelConfig_t::Schema_VerifyBindingIsRegistered
 ActiveModifiers
 ActiveRadius
-ActiveStatusResistancePercent
 ActiveWeaponThink
 Activity %s has %d sequences with a total weight of %d!
 ActivityList_IndexForName
@@ -15262,7 +15256,6 @@ After this many players have abandoned a match, no longer penalize additional ab
 After this many seconds of being basically stationary, the ragdoll will go to sleep.
 Ag*g*
 AhHcA\
-AhI;@
 Aim At
 Aim Pitch in Hero Testing
 AimAmmoCostModifier
@@ -15329,6 +15322,7 @@ AlternativeSorting
 Always
 AlwaysUpdateOff
 AlwaysUpdateOn
+Am_iszCampName
 Amber
 Ambient
 Ambient generic does not currently support pitch changes
@@ -15433,6 +15427,7 @@ Any extra height for the directed spectator camera
 Any language
 AoESleep
 Ap$`<`u
+ApI;@
 ApLcAhB
 AppPolicyGetProcessTerminationMethod
 AppendToLogFile
@@ -16118,6 +16113,7 @@ BloodSpillDPSPercent
 BloodSpillDuration
 BlurVisionRange
 Blurry up through this distance.
+Bm_flOpvarValue
 Body Component Scriptdesc
 BodyGameSystem
 Bogus constraint %s (attaches %s to ENTITY NOT FOUND:%s)
@@ -16244,10 +16240,8 @@ Bounce multiplier for when physically simulated objects collide with other objec
 Bounce off walls
 BouncePadExtendDuration
 BounceRadians
-BounceRadius
 BounceRange
 BounceVelocity
-Bounces
 Bounding Box
 BoxAngles
 Bp$`<`u
@@ -16418,6 +16412,7 @@ By default, we stop the sequence from 'Sequence Channel Start' once the channel 
 By default, we stop the sequence from 'Sequence Created' once the modifier is removed.  Un-check this to allow it to continue past the modifier's lifetime.
 Bypasses lookup of soundscapes for indvidual audio sources when enabled.
 B{Y.w
+B};	7
 B}YU 
 B}YW@
 B}Y_ 
@@ -16476,7 +16471,6 @@ C2fD9k8tU
 C49G4t
 C4;C8}
 C4D	s
-C4H9k u
 C5R?	
 C69C,v
 C6f9E
@@ -17100,7 +17094,7 @@ C:\buildworker\citadel_staging_win64\build\src\game\server\citadel\npc_neutral.c
 C:\buildworker\citadel_staging_win64\build\src\game\server\citadel\npc_neutral_node_mover.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\server\citadel\npc_pestilence_drone.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\server\citadel\npc_shielded_sentry.cpp
-C:\buildworker\citadel_staging_win64\build\src\game\server\citadel\npc_shielded_sentry.cpp:382
+C:\buildworker\citadel_staging_win64\build\src\game\server\citadel\npc_shielded_sentry.cpp:385
 C:\buildworker\citadel_staging_win64\build\src\game\server\citadel\npc_surveillance_drone.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\server\citadel\npc_trooper.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\server\citadel\server_crash_sentinel.cpp
@@ -17283,7 +17277,7 @@ C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\citadel_utils
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\citadel_vscriptgamesystem.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\citadel_weak_point.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\citadel_zip_line_node.cpp
-C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_archer.cpp:1106
+C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_archer.cpp:1116
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_astro.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_astro.cpp:3441
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_bebop.cpp
@@ -17300,7 +17294,7 @@ C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citade
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_shiv.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_slork.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_tengu.cpp
-C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_tengu.cpp:1551
+C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_tengu.cpp:1562
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_thumper.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_tokamak.cpp
 C:\buildworker\citadel_staging_win64\build\src\game\shared\citadel\heroes\citadel_hero_viscous.cpp
@@ -19486,6 +19480,10 @@ CCitadelModifierDustStormAuraApplyVData
 CCitadelModifierDustStormAuraApplyVData::KV3TransferLoad_Impl
 CCitadelModifierDustStormAuraApplyVData::KV3Transfer_DefaultKeys_Impl
 CCitadelModifierDustStormAuraApplyVData::Schema_VerifyBindingIsRegistered
+CCitadelModifierIdolReturnTimerVData
+CCitadelModifierIdolReturnTimerVData::KV3TransferLoad_Impl
+CCitadelModifierIdolReturnTimerVData::KV3Transfer_DefaultKeys_Impl
+CCitadelModifierIdolReturnTimerVData::Schema_VerifyBindingIsRegistered
 CCitadelModifierItemPickupTimerVData
 CCitadelModifierItemPickupTimerVData::KV3TransferLoad_Impl
 CCitadelModifierItemPickupTimerVData::KV3Transfer_DefaultKeys_Impl
@@ -20509,7 +20507,6 @@ CCitadel_ArmorUpgrade_VexBarrierVData::KV3TransferLoad_Impl
 CCitadel_ArmorUpgrade_VexBarrierVData::KV3Transfer_DefaultKeys_Impl
 CCitadel_ArmorUpgrade_VexBarrierVData::Schema_VerifyBindingIsRegistered
 CCitadel_BeamBulletHandler::AllocateNewBullet
-CCitadel_BeamBulletHandler::CCitadel_BeamBulletHandler
 CCitadel_Bounce_Pad
 CCitadel_Bounce_Pad::Schema_VerifyBindingIsRegistered
 CCitadel_Bounce_PadVData
@@ -21832,6 +21829,8 @@ CCitadel_Modifier_PermanentPickupVData
 CCitadel_Modifier_PermanentPickupVData::KV3TransferLoad_Impl
 CCitadel_Modifier_PermanentPickupVData::KV3Transfer_DefaultKeys_Impl
 CCitadel_Modifier_PermanentPickupVData::Schema_VerifyBindingIsRegistered
+CCitadel_Modifier_Phantom_Strike_Caster
+CCitadel_Modifier_Phantom_Strike_Caster::Schema_VerifyBindingIsRegistered
 CCitadel_Modifier_PlayerDisconnected
 CCitadel_Modifier_PlayerDisconnected::Schema_VerifyBindingIsRegistered
 CCitadel_Modifier_PlayerPinged
@@ -23851,7 +23850,7 @@ CFuncRotatingSimulationTimeSerializer::Serialize
 CFuncShatterglass
 CFuncShatterglass::BreakLargestShard::<lambda_1>::operator ()
 CFuncShatterglass::GetPanelSize
-CFuncShatterglass::GetShardMaterialUndamaged
+CFuncShatterglass::GetShardMaterialBase
 CFuncShatterglass::Init
 CFuncShatterglass::Init::<lambda_1>::operator ()
 CFuncShatterglass::InputHit
@@ -24355,6 +24354,7 @@ CGenerateShardModelHelper::CGenerateShardModelHelper
 CGenerateShardModelHelper::GenerateShardModel
 CGenerateShardModelHelper::GenerateShardModel::<lambda_1>::operator ()
 CGenerateShardModelHelper::GenerateShardModel::<lambda_2>::operator ()
+CGenerateShardModelHelper::GenerateShardModel::<lambda_4>::operator ()
 CGenericConstraint
 CGenericConstraint::NotifyVPhysicsStateChanged
 CGenericConstraint::Schema_VerifyBindingIsRegistered
@@ -25013,8 +25013,8 @@ CItemStimPakVData::Schema_VerifyBindingIsRegistered
 CItemXP
 CItemXP::AssignedEarner_t
 CItemXP::AssignedEarner_t::Schema_VerifyBindingIsRegistered
-CItemXP::Claim
 CItemXP::CreateOrb
+CItemXP::GiveDenyRewards
 CItemXP::Schema_VerifyBindingIsRegistered
 CItem_ActiveReload_VData
 CItem_ActiveReload_VData::KV3TransferLoad_Impl
@@ -26304,7 +26304,7 @@ CMsgGCToGCUpdateWelcomeMsg
 CMsgGCToGCWebAPIAccountChanged"
 CMsgGCToServerAddSpectator
 CMsgGCToServerAllocateForMatch
-CMsgGCToServerRequestPing"2
+CMsgGCToServerRequestPing"@
 CMsgGCToServerSetServerConVar
 CMsgGCUpdateSubGCSessionInfo
 CMsgGameServerToClientGoodbye"
@@ -28357,7 +28357,7 @@ CSource2GameClients::StartModEventListener
 CSource2GameEntities::CheckEntities: %d ents
 CSource2GameEntities::CheckTransmit
 CSource2GameEntities::CheckTransmit(), C:\buildworker\citadel_staging_win64\build\src\game\server\gameinterface.cpp:3317
-CSource2GameEntities::CheckTransmit(), C:\buildworker\citadel_staging_win64\build\src\game\server\gameinterface.cpp:3428
+CSource2GameEntities::CheckTransmit(), C:\buildworker\citadel_staging_win64\build\src\game\server\gameinterface.cpp:3432
 CSource2Server::Connect
 CSource2Server::GameCreateNetworkStringTables
 CSource2Server::GameFrame
@@ -28553,7 +28553,6 @@ CTrackedObject_MODIFIER_TRACKED_PARTICLE
 CTrackedObject_MODIFIER_TRACKED_PARTICLE::KV3TransferLoad_Impl
 CTrackedObject_MODIFIER_TRACKED_PARTICLE::KV3Transfer_DefaultKeys_Impl
 CTrackedObject_MODIFIER_TRACKED_PARTICLE::Schema_VerifyBindingIsRegistered
-CTrackedObject_MODIFIER_TRACKED_RENDER_ATTRIBUTE
 CTrackedObject_MODIFIER_TRACKED_RENDER_ATTRIBUTE::KV3TransferLoad_Impl
 CTrackedObject_MODIFIER_TRACKED_RENDER_ATTRIBUTE::KV3Transfer_DefaultKeys_Impl
 CTrackedObject_MODIFIER_TRACKED_RENDER_ATTRIBUTE::Schema_VerifyBindingIsRegistered
@@ -28637,6 +28636,8 @@ CTriggerTeamBase
 CTriggerTeamBase::Schema_VerifyBindingIsRegistered
 CTriggerTeleport
 CTriggerTeleport::Schema_VerifyBindingIsRegistered
+CTriggerTier3Phase2Shield
+CTriggerTier3Phase2Shield::Schema_VerifyBindingIsRegistered
 CTriggerToggleSave
 CTriggerToggleSave::Schema_VerifyBindingIsRegistered
 CTriggerTrooperDetector
@@ -30083,8 +30084,6 @@ CUtlMemory<struct CEntityClass::ComponentOffsets_t,int>::Grow::<lambda_2>::opera
 CUtlMemory<struct CEntityDebugGameSystem::DebugScrollingMessage_t,int>::Grow
 CUtlMemory<struct CEntityDebugGameSystem::DebugScrollingMessage_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CEntityDebugGameSystem::DebugScrollingMessage_t,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<struct CEntityRecycler<class CItemXP,10>::RecyclableEntity_t,int>::Grow
-CUtlMemory<struct CEntityRecycler<class CItemXP,10>::RecyclableEntity_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CEntitySystem::CreationInfo_t,int>::Grow
 CUtlMemory<struct CEntitySystem::CreationInfo_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CEventDispatcher_Base::EventListenerInfo_t,int>::Swap
@@ -30115,6 +30114,8 @@ CUtlMemory<struct CInterestingEventsManager::DebugQueryResults_t,int>::Grow::<la
 CUtlMemory<struct CItemXP::AssignedEarner_t,int>::Grow
 CUtlMemory<struct CItemXP::AssignedEarner_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CItemXP::AssignedEarner_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CItemXP::Claim_t,int>::Grow
+CUtlMemory<struct CItemXP::Claim_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CJointIndexData,int>::Grow
 CUtlMemory<struct CJointIndexData,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CJointIndexData,int>::Grow::<lambda_2>::operator ()
@@ -32919,7 +32920,6 @@ Code=
 CoerceNumeric
 Cofactor: 
 CollapseToForcePoint
-Collect model names of the entities you're pointing at
 CollectedEntities.txt
 CollectedPlayerCoin
 Collecting match performance summary.
@@ -33315,7 +33315,6 @@ C|$XH
 C|$pH
 C|$xL
 D	!|H
-D	V_roundf
 D	vTL
 D 7D9
 D W?{W
@@ -33496,7 +33495,6 @@ D$ fA
 D$ fA;
 D$ fD
 D$ fI
-D$ ff
 D$ fff
 D$ g>f
 D$ gS<1H
@@ -33633,7 +33631,6 @@ D$0%m
 D$0&C"
 D$0'm
 D$0(G
-D$0(N
 D$0)!
 D$0)%
 D$0)^-
@@ -33657,7 +33654,6 @@ D$06B
 D$076G
 D$07h
 D$08*
-D$081V
 D$08C5t
 D$08\$0t
 D$08l'
@@ -33759,7 +33755,6 @@ D$0Nx
 D$0Q8
 D$0QU
 D$0Qy
-D$0R4
 D$0Rl2
 D$0R~
 D$0S'
@@ -33911,7 +33906,6 @@ D$8HcJ
 D$8I;
 D$8Ic
 D$8L9
-D$8L9g0u
 D$8L9t$Hu
 D$8L;
 D$8eH
@@ -33926,10 +33920,8 @@ D$8nan
 D$8tK3
 D$8tO
 D$8tS3
-D$8tV
 D$8tXeH
 D$8u,L
-D$8z'u%
 D$8z(u&
 D$8z6u4
 D$8|R
@@ -33966,6 +33958,7 @@ D$@;D$h
 D$@;E
 D$@;_
 D$@@2
+D$@A+
 D$@A8o`
 D$@A9F
 D$@A;
@@ -34049,6 +34042,7 @@ D$H H
 D$H+D$LH
 D$H17xbA
 D$H;B
+D$H;D$X
 D$H;D$h
 D$H<"u7
 D$H@2
@@ -34057,6 +34051,7 @@ D$H@8se
 D$HA;
 D$HD9`
 D$HD9f 
+D$HD9t$@
 D$HD;
 D$HD; 
 D$HD;w@}
@@ -34130,7 +34125,6 @@ D$PHc
 D$PI;
 D$PJ'C
 D$PJc
-D$PL9g0u
 D$PL;
 D$PLc
 D$P[(VkH
@@ -34183,12 +34177,12 @@ D$XHQ
 D$XHc
 D$XHcE
 D$XHcF
-D$XL9g0u
 D$XL;
 D$XLct$`
 D$Xf;
 D$XfA;
 D$Xt"H
+D$Xt+
 D$XtVH
 D$XtW
 D$Xu#
@@ -34216,7 +34210,6 @@ D$`E+
 D$`E3
 D$`E8nIu
 D$`H+
-D$`H9{0u
 D$`H;
 D$`H;CXt2H
 D$`H;E
@@ -34226,7 +34219,6 @@ D$`I;
 D$`Ic
 D$`IcG
 D$`L+
-D$`L9e
 D$`L;
 D$`Lc
 D$`Mc
@@ -34238,9 +34230,7 @@ D$`fE
 D$`ff
 D$`t"
 D$`t<H
-D$`tAH
 D$`worl
-D$`x)H
 D$`|FH
 D$a8_Ht7H
 D$bfD
@@ -34287,8 +34277,8 @@ D$hfff
 D$htKH
 D$htRH
 D$htV
+D$hx)H
 D$k`H
-D$l;k
 D$lE#
 D$lfA;
 D$lff
@@ -34358,7 +34348,6 @@ D$xdd
 D$xf;
 D$xf;D$0
 D$xfA;
-D$xfD
 D$|A;
 D$|E3
 D$|L+
@@ -34368,7 +34357,6 @@ D$|fff?
 D( f;
 D(n%6
 D)l$0
-D)t$D
 D+3L9c0u	
 D+?+w
 D+@tD+B
@@ -34463,6 +34451,7 @@ D78B8
 D7q/;M
 D8 t#I
 D8 t'H
+D8 t+
 D8 t2H
 D8 t4
 D8 t6Hc
@@ -34475,12 +34464,11 @@ D8 u;I
 D8 uf
 D8#u<H
 D8$>u
-D8%<1N
+D8%N 
 D8'tO3
 D8'tb3
 D8(t	
 D8(t!@
-D8(t5L9o0u
 D8(t7
 D8(t:H
 D8(t<
@@ -34495,18 +34483,13 @@ D8,(u
 D8,0u
 D8,2u
 D8,;u
-D8-0z
-D8-1[
 D8.tb3
 D8.uBH
-D80t*
-D80t-
 D80t4
 D80t;
 D80tAA
 D80tNH
 D80tYH
-D80tr
 D80uzD
 D81uUL9r
 D83t$A
@@ -34517,7 +34500,7 @@ D847u
 D848u
 D84:u
 D84>u
-D85.11
+D857z*
 D86t]3
 D87tsL
 D87tvL
@@ -34533,7 +34516,6 @@ D8<*u
 D8<+u
 D8<;u
 D8<>u
-D8=b-
 D8?u<H
 D8C(u
 D8L$0u`
@@ -34580,6 +34562,7 @@ D8i*t8H
 D8i*t9I
 D8k$t@H
 D8l$p
+D8mptCH
 D8mwt<E
 D8mxtCH
 D8nBuj
@@ -34616,6 +34599,7 @@ D8vIt8D8vHu2
 D8vIu"H
 D8wIt<D8wHu6
 D8wIu"H
+D8wNuyH
 D8wht
 D8x uSD9p
 D8xhu	M
@@ -34632,11 +34616,11 @@ D8|$`t
 D8}?t	H
 D8}@t.
 D8}WuL
-D8}ptCH
+D8}hu-L
 D8}ptDH
 D8}pu
 D8}xtCH
-D8}xu,L
+D8}xu(L
 D8~,H
 D9 tF
 D9(t.
@@ -34645,16 +34629,24 @@ D9(u3I
 D9(uGH
 D9)t[
 D9*u3H
-D9-Mo
+D9-(70
+D9-X40
+D9-f50
+D9-t60
 D91~;H
-D953Y
-D95ZR-
 D96~[
 D97~U
 D98t8H
 D98tUI
 D9;urH
-D9=7)1
+D9=!E2
+D9=%D2
+D9=%F2
+D9=+A2
+D9=4@2
+D9=Z?2
+D9=gi1
+D9=kB2
 D9>~+A
 D9@(t
 D9@(|
@@ -34720,7 +34712,7 @@ D9e0uK
 D9e@H
 D9ePt0H
 D9e`u
-D9f0u
+D9f0u	A
 D9f8L
 D9fD~8
 D9fPt6D9gPt0H
@@ -34804,7 +34796,7 @@ D9|$(t\D
 D9|$0
 D9|$0~vH
 D9|$8}O
-D9|$8~8I
+D9|$8~5I
 D9|$<
 D9|$@
 D9|$H
@@ -34812,6 +34804,7 @@ D9|$P
 D9|$P~'H
 D9|$P~OH
 D9|$X
+D9|$X~zA
 D9|$`
 D9|$`t
 D9|$x~ H
@@ -34819,10 +34812,11 @@ D9|0 }2
 D9|38
 D9} u
 D9} |EH
-D9~D~$
 D;"r+H
 D;$(t
+D;%Q$
 D;3~3A
+D;5QY!
 D;@H}
 D;AX}
 D;D$X
@@ -34904,7 +34898,6 @@ D;|$h
 D;|0 u
 D;~(t
 D;~l}
-D>x$`<`u
 D@D/lcO+hcK
 DC,E;
 DD$xH
@@ -34980,6 +34973,7 @@ DFLAG_MITIGATION_DUE_TO_NO_NEARBY_TROOPERS
 DFLAG_NEVER_GIB
 DFLAG_NONE
 DFLAG_NOT_IN_MIDBOSS_PIT
+DFLAG_NOT_IN_TIER3_PIT
 DFLAG_PREVENT_DEATH
 DFLAG_PURE_DMG
 DFLAG_RADIUS_DMG
@@ -35344,6 +35338,7 @@ DamageTypes_t
 Damaged by Abilities?
 Damaged by Bullets?
 Damaged by Melee?
+DamagedMaterial
 Damagetype
 Damped float isn't valid
 Damped float's velocity isn't valid
@@ -35598,6 +35593,7 @@ Disabling damage on breakable prop %s - no physics interactions on model and no 
 Disabling motion on phys prop
 Disallow backtracking a player for lag compensation if it will cause them to become stuck
 Disallowed variable name: %s
+DisarmDuration
 Disarmed
 Discarding incoming message; simulating connection failure
 Discarding replay %s
@@ -35768,7 +35764,6 @@ Double-adding modifier %s to a modifier manager for value %s!
 Double-click to add this field to the Spawn Properties
 Double-save to Member '%s'
 DragReleaseSpeed
-DragSpeed
 Draw NPC pathing errors
 Draw Visualization
 Draw a bbox
@@ -35831,7 +35826,6 @@ Draws line between two 3D Points.
 Draws range indicators for abilities for the given NPC(s).  Uses the NPCs enemy for range drawing.
 Draws text on an entity
 Draws the 2D skybox
-Draws the LOS check generated by our fibonacci sphere trace algorithm
 Draws the attachments of the entity
 Draws the axis of the entity origin
 Draws the skeleton of the entity
@@ -35914,6 +35908,7 @@ E A9E@u
 E D8xKtgA
 E E	e
 E H+H(I
+E H9C0u
 E H9H
 E HcOx
 E IcM
@@ -35939,7 +35934,6 @@ E0$`<`u
 E09E8
 E0;E8
 E0D	u
-E0D9uP|EH
 E0HcH
 E0Lc`
 E0f;E
@@ -36711,6 +36705,7 @@ EOrbPlayer
 EOrbTier1TrooperBoss
 EOrbTier2TrooperBoss
 EOrbTier3TrooperBoss
+EOrbTreasureChest
 EOrbTrophyKill
 EOverrideBlockLOS_t
 EPA	v
@@ -37275,7 +37270,6 @@ Enemy is %s
 Enemy under crosshair
 Enemy: %d
 EnemyDamageSpeedPenalty
-EnemyDragSpeed
 EnemyLiftDuration
 EnemyMinHealthPct
 EnemyMoveSlow
@@ -37421,7 +37415,7 @@ EoA;D6(
 EoF;l
 EoHc0H
 EovVY
-EpH	D>xH
+EpH	D;xH
 Epf9A u1fD9a"u*D8i$u$
 Epsilon now %f
 Ep|ZH
@@ -37586,6 +37580,7 @@ Error saving default keys for CCitadelModifierAura_ConeVData: %s
 Error saving default keys for CCitadelModifierCadenceGunSpikesVData: %s
 Error saving default keys for CCitadelModifierChronoPulseGrenadePulseAreaVData: %s
 Error saving default keys for CCitadelModifierDustStormAuraApplyVData: %s
+Error saving default keys for CCitadelModifierIdolReturnTimerVData: %s
 Error saving default keys for CCitadelModifierItemPickupTimerVData: %s
 Error saving default keys for CCitadelModifierProjectilePitchingLoopSoundThinkerVData: %s
 Error saving default keys for CCitadelModifierResponseRules_t: %s
@@ -38339,7 +38334,7 @@ Extraneous token
 EyeAngles
 EyePosition
 EyePosition().IsValid()
-E|$0H
+F	V_sincosf
 F  t	H
 F  t!H
 F 9F tDA
@@ -38547,6 +38542,7 @@ FPE	~(H
 FPHcN`H
 FS_LocalToGlobal_t::Get
 FS_LocalToGlobal_t::SetMapping
+FTA9@
 FTNAE
 FTYPEDESC_PTR_AUTOALLOCATE must be used with FTYPEDESC_PTR
 FUNC_DOOR_SPAWN_CLOSED
@@ -38658,6 +38654,7 @@ FavoritesKV
 February
 FeetSettings
 Fgi?)
+FhH	E
 Fi:je
 Field
 Field "
@@ -39057,6 +39054,7 @@ FuseVariableAccess_t
 FuseVariableIndex_t
 FuseVariableIndex_t::Schema_VerifyBindingIsRegistered
 FuseVariableType_t
+FxH	E
 FxHc(H
 FxRadius
 F{(3?
@@ -39103,6 +39101,7 @@ G28C*t
 G2xVo\?
 G38C+t
 G49C4t
+G5zWb
 G6E9|$ 
 G6f9C6t
 G8$/u
@@ -39423,7 +39422,6 @@ GT$xH
 GT$xL
 GT$xi
 GT9ALuAH
-GTA9@
 GXD9wPt
 GXL9f 
 GXt&M
@@ -39443,7 +39441,6 @@ G\$`L
 G\$hA
 G\$hH
 G\$pL
-G\$xI
 G\$xL
 G\+GlHc
 G\fA+F
@@ -39507,6 +39504,7 @@ Gascan
 GatherCriteria
 GatherInparams
 Gc	_(
+Gd$8H
 Gd$HI
 Gd$pM
 Gd8Cdt
@@ -39939,8 +39937,6 @@ Gets the value of the given cvar, as a float.
 Gets this entity's owner
 Getting primary nextthink time from within the think of think context "%s"
 Gf8Cft
-GhH	E
-GhIt	!/
 Give a supply of ammo for current weapon..
 Give all bots on a particular team gold
 Give item oriented to player angles.
@@ -40061,12 +40057,16 @@ Gt$(L
 Gt$(M
 Gt$8H
 Gt$8L
+Gt$8M
 Gt$@H
 Gt$HH
 Gt$HI
 Gt$Hf
 Gt$XI
 Gt$hI
+Gt$xD
+Gt$xE
+Gt$xH
 Gt$xL
 Gt8Ctt
 Gu8Cut
@@ -40076,7 +40076,6 @@ Guide bot lines are spoken by the announcer
 Guide bot talks about neutrals
 Gun Data Visualizer
 GunDPS
-GxH	E
 GxH9Apu7
 GxH9Gpt
 G|$(H
@@ -40090,9 +40089,6 @@ G|$XA
 G|$XH
 G|$pI
 G|$xA
-G|$xD
-G|$xE
-G|$xH
 G|$xI
 G|$xL
 G|A_A^A\
@@ -40112,6 +40108,7 @@ H	D$x
 H	EhH
 H	ExH
 H	GpH
+H	V_sinf
 H	kxH
 H	q(H
 H	{pH
@@ -40220,7 +40217,16 @@ H9)uUH
 H9+t	H
 H9+tf
 H9+uEA
-H9-RV
+H9-1Q
+H9-4.
+H9-@-
+H9-}K0
+H9-}N0
+H9-}Q0
+H9-}T0
+H9-}W0
+H9-}Z0
+H9-}]0
 H9.u%H
 H9/t	H
 H9/tgH
@@ -40237,17 +40243,17 @@ H90uk
 H92tBA
 H93t	H
 H93t"H
-H95	tb
-H95'3
-H957?]
-H95G"
-H95GUm
-H95R?]
-H95V~
-H95q~
-H95t>]
-H95u	
-H95z/
+H95'V
+H95*I
+H95-xJ
+H95Iv/
+H95J6
+H95`L
+H95iv/
+H95o5
+H95t-
+H95xCb
+H95|e
 H97t	H
 H97u+A
 H98t)A
@@ -40261,12 +40267,9 @@ H98u!H
 H98u=I
 H9;t	H
 H9;tlH9y
-H9=:]
-H9=A^n
-H9=B`n
-H9=J[
-H9=Z	
+H9=*C
 H9>t$H
+H9>t8H
 H9>u/H
 H9A s
 H9A t
@@ -40278,7 +40281,6 @@ H9A u'
 H9A u)M
 H9A(u
 H9A(ugL
-H9A0u
 H9C H
 H9C(H
 H9C0H
@@ -40308,7 +40310,6 @@ H9D$xu3I
 H9D$xurH
 H9D8v9tB
 H9Egt"H
-H9F0u
 H9FPu<H
 H9Fpt
 H9FxuWH
@@ -40356,7 +40357,6 @@ H9\$ t
 H9\$@
 H9\$@t
 H9\$Ht$H
-H9\$HtAH
 H9\$X
 H9\$h
 H9\$ht
@@ -40451,7 +40451,6 @@ H9t$x
 H9t$xt
 H9u(t
 H9u(tLH
-H9u/t
 H9u8u
 H9u@t
 H9u@u
@@ -40465,6 +40464,7 @@ H9vXu
 H9v`u
 H9w t
 H9w t	H
+H9w0u
 H9wht
 H9wht	H
 H9wxu
@@ -40493,7 +40493,7 @@ H9|$(t
 H9|$0t
 H9|$8t
 H9|$@t
-H9|$@tVH
+H9|$H
 H9|$Ht
 H9|$Pt
 H9|$Xt
@@ -40546,6 +40546,7 @@ H;XXs
 H;Y s
 H;\$8r
 H;\$8t
+H;\$@
 H;\$`
 H;\$`t
 H;]Hu`H
@@ -40882,40 +40883,31 @@ Have Path
 HbAta
 Hc)E3
 Hc+;k
-Hc-G+
-Hc-ws
+Hc-6S
+Hc-f*
+Hc-jD
 Hc.;n
 Hc/;o
 Hc/Lc
 Hc/Lc3H
 Hc3;s
 Hc3L+
-Hc5*?
-Hc5*D
-Hc5*I
-Hc5*W
-Hc5*Y
-Hc5+G
-Hc52L
-Hc5:@
-Hc5:]
-Hc5BQ
-Hc5J7
-Hc5J@
-Hc5JJ
-Hc5JX
-Hc5JZ
-Hc5RM
-Hc5R`
-Hc5ZA
-Hc5Z^
-Hc5j8
-Hc5jK
-Hc5jY
-Hc5j[
-Hc5rN
-Hc5zB
-Hc5z_
+Hc5 =
+Hc5"j
+Hc507
+Hc52_
+Hc580
+Hc5@D
+Hc5Fq
+Hc5H*
+Hc5L`
+Hc5P>
+Hc5`8
+Hc5ba
+Hc5h1
+Hc5pE
+Hc5x+
+Hc5|b
 Hc7;w
 Hc7E3
 Hc8a"
@@ -40923,6 +40915,8 @@ Hc;;{
 Hc;A;
 Hc;HcC0;
 Hc;HcCH;
+Hc=;'
+Hc=Nn
 Hc>;~
 Hc>Ic\
 Hc@ H
@@ -41036,7 +41030,6 @@ HcD$`E
 HcD$`E3
 HcD$`H
 HcD$`J
-HcD$`M
 HcD$h
 HcD$hD
 HcD$hH
@@ -41046,6 +41039,7 @@ HcD$pHk
 HcD$pL
 HcD$x
 HcE H
+HcE H;
 HcE L
 HcE0D
 HcE0H
@@ -41344,6 +41338,7 @@ Hc\$X
 Hc\$XL
 Hc\$XLcd$hL
 Hc\$`H
+Hc\$p
 Hc\$p;]
 Hc\$pH
 Hc\8(;
@@ -41698,6 +41693,7 @@ How long to apply all of the vertical movement of this mantle
 How long to be in the attacking state once the attack triggers
 How long to display screen message text
 How long to hold the current value
+How long to keep an orb alive after it's been shot, to allow players with worse pings to have a chance. Set to 0 to disable.
 How long to lerp from start to end
 How long to let the value lag behind before springing to the default value
 How long to remember recent attackers
@@ -41761,7 +41757,6 @@ HurtThink
 HurtTouch
 Hurts the player.
 I	HA	981G'dc
-I	V_sincosf
 I H9J 
 I could not work out what I was expecting, like so many of us these days!
 I"9|OxTex
@@ -41787,7 +41782,6 @@ I91tfI
 I92u7A
 I96uGA
 I9<$t
-I9>tPI
 I9?u+
 I9@(t
 I9D$XtmH
@@ -41799,7 +41793,7 @@ I9Jhs
 I9N0t
 I9T$(t;
 I9]0~/I
-I9_ t<I
+I9^0u
 I9_0u
 I9~8u
 I;>r4
@@ -41807,8 +41801,8 @@ I;>u
 I;F8t
 I;F8tPH
 I;F@t
-I;Fht
-I;Fht1H
+I;Fpt
+I;Fpt1H
 I;I r
 I;Nxu1
 I;P r
@@ -41820,6 +41814,7 @@ I;^8t
 I;^@t
 I;^ht
 I;^htJH
+I;^pt
 I;_8u%
 I;_@u
 I;b_b
@@ -42175,6 +42170,7 @@ IcW8;
 IcWP;
 IcW\A
 IcW\H
+IcY@I
 Ic\$`H
 Ic]HA
 Ic]hHc>
@@ -42198,7 +42194,6 @@ Ice_Explosion_Decal
 Icm0Hc
 Icm8Hc
 IcohH
-Icq@I
 Ict$pA;
 Icu8A;uH
 Icv A;
@@ -43211,6 +43206,7 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitade
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadelModifierCadenceGunSpikesVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadelModifierChronoPulseGrenadePulseAreaVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadelModifierDustStormAuraApplyVData)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadelModifierIdolReturnTimerVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadelModifierItemPickupTimerVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadelModifierProjectilePitchingLoopSoundThinkerVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadelModifierResponseRules_t)
@@ -43270,9 +43266,11 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitade
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_ChronoSwap)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Chrono_KineticCarbine)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Chrono_KineticCarbineVData)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Chrono_PulseGrenade)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Chrono_PulseGrenade_VData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Chrono_TimeWall)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Chrono_TimeWallVData)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_CrowdControl)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Dash)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Dust_Storm)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_ExplosiveBarrel)
@@ -43298,6 +43296,8 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitade
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Hook)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_HornetLeap)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_HornetMark)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_HornetSting)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Hornet_Chain)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Hornet_Snipe)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_IceBeam)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_IceBeamVData)
@@ -43306,6 +43306,7 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitade
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_IceGrenadeVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_IcePath)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_IcePathVData)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_IncendiaryProjectile)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_InfinitySlash)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_InfinitySlashVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Jump)
@@ -43360,6 +43361,7 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitade
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Shiv_Blood_Rage)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Shiv_Dive)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Shiv_DiveVData)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_SleepDagger)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Slide)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Slork_InvisVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Slork_LastBreathVData)
@@ -43387,7 +43389,9 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitade
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Tengu_LightningCrash)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Tengu_StoneForm)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Tengu_StoneFormVData)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Tengu_Urn)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Tengu_UrnVData)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_ThrowSand)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_ThrowSandVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Thumper_1)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ability_Thumper_2)
@@ -43456,6 +43460,7 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitade
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Ice_Path_Shard_Physics)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Item)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Item_AOE_Tech_ShieldVData)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Item_BaseProjectileAOEModifier)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Item_BaseProjectileAOEModifierVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Item_Bubble)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Item_BubbleVData)
@@ -43659,6 +43664,7 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitade
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Modifier_IceDomeVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Modifier_IcePath)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Modifier_IcePath_TechPowerLinger)
+Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Modifier_IdolReturnTimer)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Modifier_ImmobilizeTrapDOT_Thinker)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Modifier_ImmobilizeTrapDOT_ThinkerVData)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CCitadel_Modifier_IncendiaryThinkerVData)
@@ -44961,7 +44967,6 @@ JInferences using supplied data, or data associated with the specified key.
 JOINT-ISO-ITU-T
 JSType
 JS_!0
-JW'6|
 JXfA;
 J_R=I)
 January
@@ -44994,7 +44999,7 @@ Jun 27 2024
 JustInTimeManifest
 Jy).A
 Jy;B`]A
-K	V_sinf
+K	V_snprintf
 K <!u4L
 K <!u<L
 K HcC$Hc
@@ -45156,6 +45161,8 @@ KtLcCp
 Ku+Hc
 KuBEN
 Kwvt,
+KxH9q
+KxH9q(
 K{"Kb,p
 K|LcCx
 K}*n:	
@@ -45186,7 +45193,7 @@ L$ H	x
 L$ H	x(
 L$ H3
 L$ H9
-L$ H95
+L$ H95r,
 L$ H;
 L$ Hc
 L$ Hk
@@ -45224,9 +45231,10 @@ L$ USATAWH
 L$ USATH
 L$ USVWATAUAVAWH
 L$ USVWATAUAVH
+L$ USVWAUAVAWH
 L$ USVWAVAW
 L$ USVWAVAWH
-L$ USWATAUAWH
+L$ USVWAWH
 L$ USWH
 L$ UVATAUH
 L$ UVAVAWH
@@ -45251,7 +45259,6 @@ L$ eH
 L$ fA
 L$ fD
 L$ fI
-L$ ff
 L$ fff
 L$ r4
 L$ r<
@@ -45260,9 +45267,7 @@ L$ |+L;
 L$#A2H3
 L$$D;
 L$$E#
-L$$E3
 L$$H;
-L$$Mc
 L$$fff
 L$$sX
 L$&8\$&t,8Y
@@ -45279,6 +45284,7 @@ L$(H+
 L$(H3
 L$(Hc
 L$(Ic
+L$(L9)t
 L$(L;
 L$(Lc
 L$(M3
@@ -45309,7 +45315,7 @@ L$0E2
 L$0E3
 L$0E;
 L$0H3
-L$0H95
+L$0H95Y4
 L$0H;
 L$0H;K
 L$0Hc
@@ -45320,6 +45326,7 @@ L$0Ic}
 L$0Ii
 L$0Ik
 L$0L+
+L$0L;
 L$0Lc
 L$0LcB
 L$0M3
@@ -45460,7 +45467,6 @@ L$P+G$E3
 L$P+G$L
 L$P;J
 L$P@88t
-L$PA+
 L$PA;
 L$PD8
 L$PD8 t
@@ -45485,7 +45491,6 @@ L$PMc
 L$PMi
 L$Pf;
 L$PfA
-L$PfA;
 L$PfD
 L$PfI
 L$Pt`L
@@ -45517,6 +45522,7 @@ L$XHc\$,D
 L$XMc
 L$Xf;
 L$XfD
+L$Xff
 L$\E3
 L$`+G$L
 L$`9t$pu
@@ -45542,7 +45548,6 @@ L$`LcB
 L$`f;
 L$`fD
 L$`fI
-L$`s,A
 L$`tlL
 L$`tpL
 L$`z.u,
@@ -45595,9 +45600,9 @@ L$pfD
 L$pfD94
 L$pfD;o
 L$pfE
+L$ps,A
 L$pta
 L$tE3
-L$tL9{0u
 L$x+G$L
 L$x8H
 L$x;J
@@ -45637,6 +45642,19 @@ L9 u]
 L9"tFH
 L9#t	H
 L9#u/H
+L9%+"P
+L9%,`
+L9%.C<
+L9%0 
+L9%4$P
+L9%5]M
+L9%;R4
+L9%DrX
+L9%F"P
+L9%K 
+L9%O$P
+L9%u!P
+L9%{#P
 L9&uVM
 L9&us
 L9't)L9g
@@ -45649,27 +45667,30 @@ L9+t%L9k
 L9+tJ
 L9+uEH
 L9,:H
-L9-?2<
+L9-"s
+L9-4s<
+L9-Hu
+L9-Os<
+L9-cu
 L9.t	H
 L90t>
 L90tW
 L92tDA
 L93t	H
-L95%HP
-L95:GP
-L95CJP
-L95^JP
+L95ee
 L97t{L
 L98t	H
 L98t~
 L98uC
 L98uJ
+L98uK
 L99ta
 L99uKA
 L9:t[
 L9;t	H
 L9;u	H
-L9= W
+L9=Q	
+L9=l	
 L9>uEH
 L9?t	H
 L9?tb
@@ -45755,6 +45776,7 @@ L9l$(t
 L9l$0t
 L9l$@t
 L9l$Ht6H
+L9l$P
 L9l$Pt
 L9l$Xt
 L9l$`
@@ -45770,7 +45792,6 @@ L9mpt
 L9mwt
 L9n u$
 L9n(u$
-L9n0u
 L9n0u$
 L9n8H
 L9n8u$
@@ -45780,6 +45801,7 @@ L9nXu$
 L9n`t
 L9n`u$
 L9o u
+L9o(u
 L9o0u
 L9oPt	M
 L9p tkI
@@ -45823,7 +45845,6 @@ L9uPt
 L9uot
 L9upt
 L9uxt
-L9v0u
 L9vPt	M
 L9w u$
 L9w0u
@@ -45883,6 +45904,7 @@ L9~@u
 L9~Pt	M
 L9~`u
 L;2t#H
+L;5PM
 L;9t#H
 L;A r
 L;D$Xu
@@ -45908,6 +45930,7 @@ L;l$H
 L;l$PA
 L;l$P|
 L;l$h
+L;q s
 L;t$ 
 L;t$(t|D
 L;t$0
@@ -46038,7 +46061,6 @@ Lc3A+
 Lc3D;s
 Lc3Hc
 Lc40L
-Lc5D}
 Lc6A+
 Lc6D;v
 Lc6Hc
@@ -46048,6 +46070,7 @@ Lc7Hc
 Lc8D;x
 Lc:E3
 Lc;D;{
+Lc=j?]
 Lc>A+
 Lc>D;~
 Lc>Mce(A
@@ -46507,9 +46530,8 @@ M9n0u%A
 M9n8u%A
 M9n@u%A
 M9nHu%A
-M9nPu%A
+M9nXu%A
 M9n`u%A
-M9o t	I
 M9o0u
 M9o8M
 M9w0u
@@ -46786,6 +46808,7 @@ MODIFIER_STATE_IN_FRIENDLY_BASE
 MODIFIER_STATE_IN_MID_BOSS_PIT
 MODIFIER_STATE_IN_MID_BOSS_TEMPLE
 MODIFIER_STATE_IN_SHOP
+MODIFIER_STATE_IN_TIER3_PHASE2_BOSS_PIT
 MODIFIER_STATE_IS_ASLEEP
 MODIFIER_STATE_IS_MELEE_TARGET
 MODIFIER_STATE_JUMP_DISABLED
@@ -46835,6 +46858,7 @@ MODIFIER_STATE_STAMINA_REGEN_PAUSED
 MODIFIER_STATE_STATUS_IMMUNE
 MODIFIER_STATE_STUNNED
 MODIFIER_STATE_SUPPRESS_AIR_DRAG
+MODIFIER_STATE_TAKES_FULLDAMAGE_NO_FALLOFF
 MODIFIER_STATE_TECH_DAMAGE_INVULNERABLE
 MODIFIER_STATE_TECH_INVULNERABLE
 MODIFIER_STATE_TECH_UNTARGETABLE_BY_ENEMIES
@@ -47642,6 +47666,7 @@ ModifierTrackedBodyGroup_t
 ModifierTrackedBodyGroup_t::KV3TransferLoad_Impl
 ModifierTrackedBodyGroup_t::KV3Transfer_DefaultKeys_Impl
 ModifierTrackedBodyGroup_t::Schema_VerifyBindingIsRegistered
+ModifierTrackedGraphParameter_t
 ModifierTrackedGraphParameter_t::KV3TransferLoad_Impl
 ModifierTrackedGraphParameter_t::KV3Transfer_DefaultKeys_Impl
 ModifierTrackedGraphParameter_t::Schema_VerifyBindingIsRegistered
@@ -47822,7 +47847,6 @@ MxLc}hD;
 Mx~[D
 M|1}0
 M}8vhJ
-N	V_snprintf
 N ;9}cHc
 N fD9f 
 N'L&R/l
@@ -48852,6 +48876,7 @@ OnIgnited
 OnInCastDelayChanged
 OnKilled
 OnLandDamageRadius
+OnLaunchTimeChanged
 OnLeapStateChanged
 OnLerpFinished
 OnLerpStarted
@@ -49149,8 +49174,6 @@ OverrideFriction
 OverrideHealth
 Ov~E3
 Owner entity index is invalid.
-OxH9i
-OxH9i(
 O~`L{
 P 9_p
 P 9l$0u3
@@ -49160,7 +49183,6 @@ P D9}
 P Hc+Hc
 P HcF@L
 P L9m
-P L9t$ht
 P!bxo
 P((xP((x
 P(HcC@H
@@ -49172,14 +49194,13 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08Jp
+P08@J`
+P08ND
 P0HcC(H
 P1	98"
+P2,!k!
 P2A2T$"
 P2A2W"
-P6`IT
-P6`xT
 P8H9|$ht
 P8H9|$pt
 P8H=vmdl
@@ -49588,7 +49609,7 @@ PVS is shared between teams
 PVSManagerGameSystem
 PVSModifier
 PXD9l$0u
-PXHc-
+PXHc-1
 PX`hpx
 P_^]H
 P`9(tLH
@@ -50213,6 +50234,7 @@ PxL;h
 PxL;x
 Pz}b!
 P~AeS~AeS
+Q	V_sscanf
 Q/xtJ2
 Q0I;Q8t
 Q3`bS
@@ -51066,6 +51088,7 @@ SCHED_TROOPERNEUTRAL_COME_OUT_OF_NODE
 SCHED_TROOPERNEUTRAL_FURNITURE
 SCHED_TROOPERNEUTRAL_HIDE_IN_NODE
 SCHED_TROOPERNEUTRAL_IDLE
+SCHED_TROOPERNEUTRAL_MOVE_TO_COVER
 SCHED_TROOPERNEUTRAL_MOVE_TO_NEW_NODE
 SCHED_TROOPERNEUTRAL_RANGE_ATTACK
 SCHED_TROOPERNEUTRAL_RELOAD
@@ -51959,6 +51982,7 @@ SchemaEmitClassInfoHelper<class CCitadelModifierAura_ConeVData>::ValidateClassFi
 SchemaEmitClassInfoHelper<class CCitadelModifierCadenceGunSpikesVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadelModifierChronoPulseGrenadePulseAreaVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadelModifierDustStormAuraApplyVData>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadelModifierIdolReturnTimerVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadelModifierItemPickupTimerVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadelModifierProjectilePitchingLoopSoundThinkerVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadelModifierVData>::ValidateClassFieldTypes
@@ -52018,9 +52042,11 @@ SchemaEmitClassInfoHelper<class CCitadel_Ability_ChargedTackle>::ValidateClassFi
 SchemaEmitClassInfoHelper<class CCitadel_Ability_ChronoSwap>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Chrono_KineticCarbine>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Chrono_KineticCarbineVData>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Ability_Chrono_PulseGrenade>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Chrono_PulseGrenade_VData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Chrono_TimeWall>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Chrono_TimeWallVData>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Ability_CrowdControl>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Dash>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Dust_Storm>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_ExplosiveBarrel>::ValidateClassFieldTypes
@@ -52046,6 +52072,8 @@ SchemaEmitClassInfoHelper<class CCitadel_Ability_HoldMelee>::ValidateClassFieldT
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Hook>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_HornetLeap>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_HornetMark>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Ability_HornetSting>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Ability_Hornet_Chain>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Hornet_Snipe>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_IceBeam>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_IceBeamVData>::ValidateClassFieldTypes
@@ -52054,6 +52082,7 @@ SchemaEmitClassInfoHelper<class CCitadel_Ability_IceGrenade>::ValidateClassField
 SchemaEmitClassInfoHelper<class CCitadel_Ability_IceGrenadeVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_IcePath>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_IcePathVData>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Ability_IncendiaryProjectile>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_InfinitySlash>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_InfinitySlashVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Jump>::ValidateClassFieldTypes
@@ -52108,6 +52137,7 @@ SchemaEmitClassInfoHelper<class CCitadel_Ability_ShivWeapon_VData>::ValidateClas
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Shiv_Blood_Rage>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Shiv_Dive>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Shiv_DiveVData>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Ability_SleepDagger>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Slide>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Slork_InvisVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Slork_LastBreathVData>::ValidateClassFieldTypes
@@ -52135,7 +52165,9 @@ SchemaEmitClassInfoHelper<class CCitadel_Ability_Tengu_DragonsFireVData>::Valida
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Tengu_LightningCrash>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Tengu_StoneForm>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Tengu_StoneFormVData>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Ability_Tengu_Urn>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Tengu_UrnVData>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Ability_ThrowSand>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_ThrowSandVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Thumper_1>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Ability_Thumper_2>::ValidateClassFieldTypes
@@ -52205,6 +52237,7 @@ SchemaEmitClassInfoHelper<class CCitadel_Ice_Dome_Blocker>::ValidateClassFieldTy
 SchemaEmitClassInfoHelper<class CCitadel_Ice_Path_Shard_Physics>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Item>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Item_AOE_Tech_ShieldVData>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Item_BaseProjectileAOEModifier>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Item_BaseProjectileAOEModifierVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Item_Bubble>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Item_BubbleVData>::ValidateClassFieldTypes
@@ -52409,6 +52442,7 @@ SchemaEmitClassInfoHelper<class CCitadel_Modifier_IceDome>::ValidateClassFieldTy
 SchemaEmitClassInfoHelper<class CCitadel_Modifier_IceDomeVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Modifier_IcePath>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Modifier_IcePath_TechPowerLinger>::ValidateClassFieldTypes
+SchemaEmitClassInfoHelper<class CCitadel_Modifier_IdolReturnTimer>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Modifier_ImmobilizeTrapDOT_Thinker>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Modifier_ImmobilizeTrapDOT_ThinkerVData>::ValidateClassFieldTypes
 SchemaEmitClassInfoHelper<class CCitadel_Modifier_IncendiaryThinkerVData>::ValidateClassFieldTypes
@@ -55077,7 +55111,6 @@ Stomp (both legs)
 Stomp (left leg)
 Stomp (right leg)
 StompBounceHeight
-StompComplete
 StompDamage
 StompDamagePerMeterPrimary
 StompDamagePerMeterSecondary
@@ -55088,6 +55121,7 @@ StompVerticalThreshold
 StompWidth
 Stomp_Left
 Stomp_Right
+Stomping
 Stone.Huge
 Stone.Large
 Stone.Medium
@@ -55216,7 +55250,6 @@ Synthetic oneofs must be after all other oneofs
 System %s failed to init
 SystemTimeToFileTime
 SystemTimeToTzSpecificLocalTime
-T	V_sscanf
 T"UdW
 T$ 9D$ v
 T$ @8l$(
@@ -55294,6 +55327,8 @@ T$0fD
 T$4E3
 T$4E;
 T$4I;
+T$4Lc
+T$4z u
 T$6ff
 T$8A;v
 T$8D9l$0
@@ -55339,7 +55374,6 @@ T$@Hc
 T$@HcD$8L
 T$@HcN
 T$@Hk
-T$@Ik
 T$@L#
 T$@L+
 T$@Lc
@@ -55353,7 +55387,6 @@ T$H9~
 T$H@2
 T$HA;
 T$HD9
-T$HD;
 T$HE3
 T$HH+
 T$HH;
@@ -55365,12 +55398,12 @@ T$HMc
 T$Ht	H
 T$Hu!
 T$Hz#u!
-T$Hz(u&
 T$Jfff
 T$LE2
 T$LE3
 T$P;D$p
 T$P;K(
+T$P;U 
 T$P;y 
 T$PA+
 T$PD+
@@ -55399,13 +55432,13 @@ T$Pt:
 T$RfD
 T$TD;
 T$TE3
-T$TLcd$@
 T$XA;
 T$XD;
 T$XE3
 T$XH+
 T$XHc
 T$XI9
+T$XL9n0u
 T$XfD
 T$`D#
 T$`E#
@@ -55420,6 +55453,7 @@ T$`f;
 T$`fA
 T$`fA;
 T$`fD
+T$dLcl$P
 T$dz$u"
 T$hD#
 T$hE#
@@ -55428,13 +55462,15 @@ T$hH;
 T$hHc
 T$hHcD$`H
 T$hI;
+T$hL9w
 T$hL;MPt
 T$hLc
-T$hLcD$HK
+T$hLcD$@K
 T$hM;
 T$p;}
 T$pD9
 T$pE#
+T$pE2
 T$pE3
 T$pH+
 T$pH;
@@ -55451,6 +55487,7 @@ T$tH;
 T$tHc
 T$tfA
 T$xA;v(
+T$xD9kTu
 T$xD;D$x
 T$xE3
 T$xH+
@@ -55464,19 +55501,19 @@ T$xI;
 T$xLc
 T$xMc
 T$|s\
+T%)Kx
+T%R~x
 T%d %s
-T%y3x
 T( fA;
 T("fA;
 T(<A#
-T-	Z!
 T14A#
-T5YTP
-T5h^P
+T5"QP
+T5iRP
+T5x\P
 T61STRING
 T72[t
 T;$M;
-T=H^j
 TAG NAME: %s | BOUND: %s, REFERENCED: %s
 TARGET
 TASKSTATUS_COMPLETE
@@ -56399,6 +56436,7 @@ Transition_DataDriven
 TranslationTrack_t::CalcInterpolatedValue
 Translucent
 TrapHeight
+Treasure Collect Orb
 Triangle
 Tried to add %s to response queue when it was already in there.
 Tried to add game system %s twice!
@@ -56495,6 +56533,8 @@ Turns off interactive fish behavior. Fish become immobile and unresponsive.
 Turns on bullet impacts and decals on world from troopers and neutrals shooting
 Turns on the absbox for all active physics objects.
 TurretAttackDelay
+TurretAttackFalloffEnd
+TurretAttackFalloffStart
 TurretAttackRange
 TurretBaseHealth
 TurretDPS
@@ -56636,6 +56676,7 @@ UNKNOWN_RESOURCE_LOAD
 UNLOCKED
 UNRECOGNIZED
 UPHcEHH
+UQ48!c
 URI:%s
 USAGE: rr_forceconcept <target name or index> <concept> "criteria1:value1,criteria2:value2,..."
 USATAUAVAW
@@ -56842,6 +56883,7 @@ UWAUAVAWH
 UWAUAVH
 UWAUAWH
 UWAUH
+UWAUI
 UWAVAWH
 UWAVH
 UWAVI
@@ -57042,7 +57084,7 @@ UpdateAnimgraphParametersPerTick was not chained to the base class in entity %s 
 UpdateBlocked: Area %d is already blocked with a different team id! This may cause flow bugs.
 UpdateEnemyMemory
 UpdateEntityPosition
-UpdateGoalPos used with non-location goal type %d
+UpdateGoalPos used with non-location goal type %s
 UpdateModifierStringTableData
 UpdateOnRemove
 UpdateOnRemove() was not chained to the base class in entity %s (a %s)!
@@ -57137,6 +57179,7 @@ Uxt+eH
 Uz&u$
 Uz_G3=
 U{OmL
+V	V_stricmp_fast
 V IcF
 V'uk:
 V++}V++}
@@ -57378,6 +57421,8 @@ V_fabsf((pOutBarns[ 0 ].InnerAngle()) - (flConeInnerAngleInDegrees)) <= (0.1f)
 V_fabsf((pOutBarns[ 0 ].OuterAngle()) - (flConeOuterAngleInDegrees)) <= (0.1f)
 V_fabsf((pSolution->LengthSqr()) - (1.0f)) <= (1e-3f)
 V_fabsf(flNewSpeedZ) < 10000.f
+V_fmodd
+V_fmodf
 V_isempty( pEntityClassName )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -57540,15 +57585,19 @@ Vw@*L
 V~~Vq
 W D#?D#o
 W"Fe~
+W%GbA
 W'6S`
 W3i+,
-W5B+(
-W5B?l
-W5Yem
+W5RXl
+W5ZvP
+W5i~m
+W5nlj
 W8uDH
 W9QHI
 W;()f
+W=8*D
 W=AlE3
+W=W~A
 W>peSp>9
 W@H1G@A
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.
@@ -57970,6 +58019,7 @@ WriteSBitLong: 0x%08x does not fit in %d bits
 WriteToBuffer Message %s is not initialized! Probably missing required fields!
 Wrote metadata file %s, %u bytes
 W}9D*
+X	V_strlower_fast
 X @8u
 X @8u/t
 X @l(&
@@ -57980,9 +58030,9 @@ X Hc@
 X UATAUAVAWH
 X UAVAWH
 X USAWH
+X USVH
 X USVWATAVAWH
 X USVWATH
-X USWH
 X UVATAUAWH
 X UVATAVAWH
 X UVAVH
@@ -57997,20 +58047,15 @@ X VWAWH
 X!;3; 
 X!t5~
 X!}}p|u
-X%(n+
-X%02x
-X%lzS
-X%xl$
+X%@#8
+X%lwS
 X,,tX,,t4
-X-)4y
-X-:Iy
-X-H2x
+X-cx^
+X-mnN
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X0Hc@(H
 X400Name
 X400Name:<unsupported>
-X5!:O
-X5-'6
 X500algorithms
 X509 CERTIFICATE
 X509 CRL
@@ -58123,9 +58168,14 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
-X5K*L
-X5r;X
-X5utT
+X518O
+X5B)"
+X5U]"
+X5bLX
+X5e	p
+X5or!
+X5upT
+X5y/d
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -58148,7 +58198,7 @@ X9_62_CHARACTERISTIC_TWO
 X9_62_CURVE
 X9_62_FIELDID
 X9_62_PENTANOMIAL
-X=3ow
+X=amH
 XA\_^[
 XA\_^]
 XA]A\
@@ -58197,9 +58247,9 @@ XD$0H
 XD$4H
 XD$8H
 XD$8fA
+XD$@H
 XD$@L
 XD$DH
-XD$PH
 XD$TH
 XD$XH
 XD$XL
@@ -58218,6 +58268,7 @@ XL$4H
 XL$8H
 XL$@D
 XL$D$
+XL$DD
 XL$DH
 XL$DLc{
 XL$LH
@@ -58250,7 +58301,6 @@ X_^[]H
 X_^[]I
 X_^][
 X`HcHXH
-X`hrP
 Xd$4f
 Xd$HD
 Xen Ambient: Food Dig
@@ -58260,8 +58310,8 @@ Xen Jellyfish: Reach
 Xen Swooper: Circling Center
 Xen Swooper: Food
 Xen Swooper: Landing Spot
+Xf`1U
 XqgA+
-XspiG
 Xt$@;{
 Xt$@D
 Xt$@E3
@@ -58297,44 +58347,43 @@ X|$PH
 X|$XA
 X|$`fA
 X~ '.
-Y	V_stricmp_fast
-Y%Wfx
-Y%zIy
+Y%*ay
+Y%JQ3
 Y(L@L
-Y-MZG
-Y-]gx
-Y-hYG
-Y-pzF
+Y-6~x
+Y-c\!
+Y-x^y
 Y0HcR
 Y0u3H
-Y5 aa
-Y5#[-
-Y5)M-
-Y52b#
-Y59x-
-Y5E3\
-Y5Hi=
-Y5I6A
-Y5Jvj
-Y5PTB
-Y5]!"
-Y5_O"
-Y5eu=
-Y5gzF
-Y5lMm
-Y5q'I
-Y5{iZ
+Y5	qu
+Y5 hB
+Y5"YI
+Y5'8O
+Y5*b)
+Y5ED\
+Y5G,O
+Y5X*+
+Y5]$I
+Y5^E7
+Y5`\h
+Y5aR<
+Y5f$I
+Y5h$I
+Y5kRC
+Y5kzZ
+Y5s'n
+Y5w^ 
+Y5z}7
 Y89X8t>
 Y9"SD
 Y93a=7c@
 Y;C;8V
-Y=/Y=
-Y=1x-
-Y=DC*
-Y=[ '
-Y=eA#
-Y=q\q
-Y=wuE
+Y=-o~
+Y=1rq
+Y=7kE
+Y=D` 
+Y=[PC
+Y={XX
 Y>kX>M
 YD$ A
 YD$ H
@@ -58356,6 +58405,7 @@ YD$TA
 YD$TD
 YD$XD
 YD$`H
+YD$dA
 YD$xH
 YL$(A
 YL$0I
@@ -58418,7 +58468,6 @@ Y|$tD
 Y|u L
 Z"T-47
 Z+5AS
-Z,fZH
 Z,fZL
 Z--wZ--w
 Z0000
@@ -58452,7 +58501,6 @@ Zone2Distance
 ZoomBias
 ZoomTime
 ZwKiZwKi
-[	V_strlower_fast
 [ 	4(I
 [ (%f, %f, %f, %f), (%f, %f, %f, %f), (%f, %f, %f, %f), (%f, %f, %f, %f) ]
 [ (%g, %g, %g), (%g, %g, %g), (%g, %g, %g), (%g, %g, %g) ]
@@ -58592,6 +58640,7 @@ ZwKiZwKi
 [`|bJj
 [a:%u:%u]
 [aOni*{
+[c2Tg
 [c:%u:%u]
 [custom]
 [dt %5.2f] velocity: %s
@@ -58624,10 +58673,10 @@ ZwKiZwKi
 [ve,P
 [w\<0
 [y_GE
+\	V_strtod
 \!4A#
 \$ ;Y
 \$ ;\$0
-\$ ;]
 \$ @8t$(
 \$ A;
 \$ ATAVAW
@@ -58718,6 +58767,7 @@ ZwKiZwKi
 \$ fI
 \$ fff
 \$$9Y
+\$$A;
 \$$H9
 \$$H9Y
 \$$I;
@@ -58778,7 +58828,6 @@ ZwKiZwKi
 \$8;\$Hu
 \$8@2
 \$8A\^]
-\$8D8l$Pt
 \$8E3
 \$8H;
 \$8Hc
@@ -58799,7 +58848,6 @@ ZwKiZwKi
 \$8t	H
 \$8t>H
 \$8x`HcG
-\$8z u
 \$@	4(H
 \$@9\$P|LH
 \$@9\74t
@@ -58817,7 +58865,6 @@ ZwKiZwKi
 \$@H;^
 \$@H;_
 \$@Hc
-\$@Hk
 \$@I;
 \$@L;
 \$@L;D$x
@@ -58923,6 +58970,7 @@ ZwKiZwKi
 \$XLc
 \$Xf9
 \$XfA;
+\$Xff
 \$Xt	H
 \$Xt2
 \$XtTH
@@ -58984,6 +59032,7 @@ ZwKiZwKi
 \$pHc]
 \$pHc|$hH
 \$pI;
+\$pIc
 \$pIcF
 \$pL;|$@
 \$pfA;
@@ -58993,7 +59042,6 @@ ZwKiZwKi
 \$pu:M
 \$r@2
 \$tD9n
-\$ttb
 \$ttc
 \$ttdA
 \$x@2
@@ -59008,9 +59056,12 @@ ZwKiZwKi
 \$xu3H
 \$xu3M
 \%02X
-\-VIy
+\%OJx
+\%sGx
 \1kYL
 \43n7
+\54^ 
+\5Oc4
 \>4Hc]w9\>8t
 \D$ H
 \D$0H
@@ -59030,11 +59081,11 @@ ZwKiZwKi
 \L$DH
 \L$LH
 \L$TL
-\L$Tf
 \L$\H
 \L$`3
 \L$`f
 \L$dH
+\L$df
 \L$hI
 \L$lI
 \L$tH
@@ -59044,6 +59095,7 @@ ZwKiZwKi
 \T$0I
 \T$HD
 \T$`A
+\T$`D
 \T$`H
 \T$hH
 \T$hL+
@@ -59087,7 +59139,7 @@ ZwKiZwKi
 ] |EH
 ]"D9}
 ]$D;E$
-]%=aY
+]%-rY
 ]&@+fk:
 ]&g''}
 ](IcE H
@@ -59096,17 +59148,17 @@ ZwKiZwKi
 ]0tTH
 ]0|EH
 ]1h=bfz
-]5='I
-]5Tu.
-]5Z?3
-]5_SP
-]5w)/
+]5/N2
+]56YI
+]5oQP
+]5}US
 ]8HcE0H
 ]8d$@
 ]:\|^
 ]<fA;
 ]>)2X
 ]?33s?
+]@9]P|EH
 ]@Icu8H
 ]@|EH
 ]Ez"u 
@@ -59133,7 +59185,6 @@ ZwKiZwKi
 ^,tyI
 ^.om5r
 ^8Icv0
-^8L9~
 ^<V7w
 ^<{YH
 ^@LcB H
@@ -59153,7 +59204,6 @@ ZwKiZwKi
 ^fD;]
 ^xHc3;s
 ^|~EH
-_	V_strtod
 _ ;_$t
 _ HcG
 _$D,!
@@ -59162,8 +59212,11 @@ _(f9_*~
 _0D9sL
 _0HcC 
 _0IcG(H
+_5V)"
+_5^#u
 _89_D
 _8I;_@tj
+_8L9w
 _8M9g(u\
 _=1<<@b
 _@HcH
@@ -59185,6 +59238,7 @@ _Pt[L
 _RDATA
 _Target
 _VScriptCastHelper<char const *>::Cast
+_Wv;2
 _XD9cD~8
 _XHcGPH
 _^[]H
@@ -59258,6 +59312,7 @@ _xU`u
 _{j!g>
 _}eOk
 `	).0n
+`	V_strupper_fast
 ` UAVAWH
 `$`<`
 `&H|&
@@ -59265,12 +59320,9 @@ _}eOk
 `+!]?
 `-I	=S'\
 `.rdata
-`203(
 `28)fk
-`6P@T
 `8Lcs 
-`: '(
-`:p&(
+`:p^"
 `:zQF
 `<`tw
 `@ `QE
@@ -59282,7 +59334,6 @@ _}eOk
 `A]A\^
 `A]A\^][
 `A]_[
-`A]_]
 `A]_^
 `A]_^[]
 `A]_^][
@@ -60359,6 +60410,7 @@ b_LaserFiring
 b_LassoAttached
 b_LowHealth
 b_MaxSpeed
+b_Move_Solve_Nudge_Active
 b_MovementInputActive
 b_NearDeath
 b_ParryActive
@@ -60401,6 +60453,7 @@ b_ZipLining
 b_action_restart
 b_can_see_enemy
 b_celebrate
+b_door_left
 b_groom
 b_looktarget_changed_autoclear
 b_movement_type_restart
@@ -60746,7 +60799,9 @@ breaksound
 brightness
 brightness_delta
 brightnessscale
+broadcast_active
 broadcast_id
+broadcast_url
 broken pipe
 broken_breakable
 brokenby
@@ -60813,7 +60868,7 @@ bytes
 bytes_read
 bytes_written
 b}Y=9
-c	V_strupper_fast
+c	V_tanf
 c <= UINT16_MAX
 c D8$0u
 c E8$.u
@@ -60973,6 +61028,7 @@ capture_time
 cargo
 carpet_bomb_drone_cluster
 carpet_bomb_drone_grenade
+carry
 cascadecrossfade
 cascadedistancefade
 cascaderenderstaticobj
@@ -61264,6 +61320,7 @@ citadel_boss_tier3_use_wip_model
 citadel_boss_tier_2_combat_sight_range
 citadel_boss_tier_2_idle_sight_range
 citadel_boss_tier_2_schedule_force
+citadel_boss_tier_3_check_pit_modifier
 citadel_boss_tier_3_damage_reduction_no_troopers
 citadel_boss_tier_3_phase_2_health_pct
 citadel_boss_tier_3_sight_range
@@ -61666,6 +61723,7 @@ citadel_pause_force_unpause_time
 citadel_pause_minimum_time
 citadel_pause_resume_time
 citadel_pause_resume_time_disconnected
+citadel_payload
 citadel_payload_attack_push_time
 citadel_payload_base_push_speed
 citadel_payload_player_push_speed
@@ -61692,6 +61750,7 @@ citadel_player_gold_comeback_multiplier
 citadel_player_gold_difficulty_multiplier
 citadel_player_gold_killer_to_assist_ratio
 citadel_player_gold_reward_first_kill_bonus
+citadel_player_gold_reward_max
 citadel_player_gold_reward_min
 citadel_player_gold_reward_time
 citadel_player_ground_dash_max_percent
@@ -62445,18 +62504,21 @@ d$,E3
 d$0@8~Iu
 d$0E3
 d$0Hc
+d$0HcE
 d$0I;
 d$0Ic
 d$0L+
 d$0L3
 d$0L9d$(t
 d$0L;
+d$0L;d$@
 d$0Mc
 d$0fA
 d$0fD
 d$0fE;
 d$0t4H
 d$0u!H
+d$0u<H
 d$0u=H
 d$0uBH
 d$0uLH
@@ -62474,6 +62536,7 @@ d$8L3
 d$8L;
 d$8fD
 d$8fE
+d$8ff
 d$8rJ
 d$8t7
 d$8u/A
@@ -63361,6 +63424,7 @@ e_action_desired_shared
 e_activity
 e_animate_death_hit_location
 e_body_idle
+e_door_open_action
 e_face_idle
 e_flashlight_mode
 e_laneside
@@ -64047,7 +64111,9 @@ eye_angles
 eyes_follow
 eyj5yR
 ezd<f
-f	V_tanf
+f	- I]
+f	-6p
+f	-7H]
 f	rixZ
 f!D$*
 f!D$:
@@ -64088,11 +64154,12 @@ f9,pu
 f9,~u
 f9/tR
 f93t`
+f95Xq
+f95dI]
 f99tj
 f9<Fu
 f9<H}
 f9<Ju
-f9={i
 f9>tv
 f9A u
 f9A\}0f
@@ -64210,7 +64277,6 @@ fC94Su?
 fC94wu
 fChance > 0.0f && fChance <= 1.0f
 fD	5'
-fD	5G
 fD!#L
 fD!3L
 fD!;H
@@ -64266,7 +64332,7 @@ fD98tDfff
 fD98u
 fD9;u
 fD9;|
-fD9=p
+fD9=P
 fD9@(u
 fD9DP
 fD9H(|
@@ -64339,8 +64405,10 @@ f_DrainScale
 f_Health
 f_Hit_Heading
 f_Hit_Strength
+f_Move_Solve_Nudge_Yaw
 f_Panel1
 f_TimeScale
+f_distance_door
 f_enemy_distance
 f_enemy_heading
 f_facing_tolerance_override
@@ -64421,6 +64489,8 @@ favouriteDrink
 fdxfv%
 feop(
 fetch_id
+ff&?H
+ff&?I
 ff&?f
 fffff
 ffffff
@@ -64459,8 +64529,8 @@ filter_activator_attribute_int
 filter_activator_class
 filter_activator_context
 filter_activator_mass_greater
+filter_activator_model
 filter_activator_modifier
-filter_activator_name
 filter_activator_team
 filter_base
 filter_damage_type
@@ -64536,6 +64606,7 @@ fixed_position
 fixedlength
 fixupNames
 fixup_lighting_origin_to_player_side
+fl2XTriArea > 0.0f
 flAddAmount
 flAmountToAdd >= 0
 flAmountToConsume >= 0
@@ -65201,6 +65272,7 @@ gold_orb_task_incomplete
 gold_orb_tier_1
 gold_orb_tier_2
 gold_orb_tier_3
+gold_orb_treasure
 gold_orb_trooper
 gold_orb_trophy_kill
 gold_player
@@ -65257,6 +65329,7 @@ grenade
 ground5_to_water1
 ground_dash
 ground_jump
+ground_origin
 ground_speed
 ground_water_air_transition_mesh_part
 ground_water_air_transition_with_ladder
@@ -65301,7 +65374,6 @@ h == m_CPPClassToVDataLookup.InvalidHandle()
 h A9}h~ED
 h ATAVAWH
 h AVH
-h AWH
 h UAVAWH
 h VATAUAVAWH
 h VAUAVH
@@ -65311,7 +65383,6 @@ h VWAVH
 h VWAWH
 h WAVAWH
 h2n_\
-h4H9h t3
 h8Lcs 
 h>1my
 hA+FHH
@@ -65613,6 +65684,7 @@ host_frametime
 host_frametime_std_deviation
 host_timescale
 host_unfiltered_frametime
+host_writeconfig
 hostfile
 hostname
 hostname_changed
@@ -65684,10 +65756,9 @@ iDisabled
 iEntity >= 0
 iFFp}A
 iFH9-
-iFH9-8
-iFH9-HB
-iFH9-X
-iFH9-x
+iFH9-0
+iFH9-P
+iFH9-`
 iGroup
 iHu H
 iILV]
@@ -67458,6 +67529,7 @@ l$ H;
 l$ Hc
 l$ HcA
 l$ HcnxH
+l$ Hi
 l$ I;
 l$ L;
 l$ Lc
@@ -67538,7 +67610,6 @@ l$0I;
 l$0Ic
 l$0L9c
 l$0L9i
-l$0L9i0u
 l$0L;
 l$0Lc)
 l$0M;
@@ -67597,7 +67668,6 @@ l$@Hc
 l$@Hc+;k
 l$@Hc+H
 l$@Hc-
-l$@Hc-[r
 l$@HcE
 l$@Hch(;h8
 l$@Hco
@@ -67670,6 +67740,7 @@ l$PHck
 l$PHk
 l$PI+
 l$PI;
+l$PL9i0u
 l$PL;
 l$PLc
 l$PM3
@@ -67679,6 +67750,7 @@ l$PsvH
 l$Pt	H
 l$Pt*L
 l$Pt+H
+l$PtWH
 l$PtXI;
 l$Pt[
 l$Ptb
@@ -67695,7 +67767,6 @@ l$VfD
 l$X@8~Iu
 l$XA+
 l$XA;
-l$XE2
 l$XE3
 l$XH9
 l$XH;
@@ -67721,12 +67792,13 @@ l$\D9n
 l$\Lcd$H
 l$\fD
 l$`9G
-l$`;-j
+l$`;-
 l$`D9l$p|LH
 l$`D9l$p|NH
 l$`D;
 l$`D;s0
 l$`E3
+l$`H+
 l$`H9\$8t
 l$`H;
 l$`Hc
@@ -68271,6 +68343,8 @@ m_BodyModel
 m_BombAttachedModifier
 m_BombAttachedParticle
 m_BombParticle
+m_Bonus01
+m_Bonus02
 m_BonusDamageModifier
 m_BonusHealthModifier
 m_BonusSpiritLingerModifier
@@ -68318,7 +68392,6 @@ m_BulletResistReductionPerHero
 m_BulletShieldHitParticle
 m_BulletShieldImpactModifier
 m_BulletShieldModifier
-m_BulletSlowModifier
 m_BulletSpeedCurve
 m_BulletsModifier
 m_BurnModifier
@@ -68666,6 +68739,7 @@ m_FlogParticle
 m_FlyingModifier
 m_FogColor
 m_Followup
+m_FontName
 m_FreePassMoveMonitor
 m_FreePassTimeRemaining
 m_Frequency
@@ -68790,6 +68864,7 @@ m_InnateModifier
 m_InnerAngle
 m_Inparams
 m_InternalId
+m_IntrinsicModifier
 m_InvincibleModifier
 m_InvisDetectRadiusParticle
 m_InvisLoopParticle
@@ -70051,6 +70126,7 @@ m_bDontRotateOther
 m_bDontTeleportAtEnd
 m_bDontUploadStats
 m_bDoorGroup
+m_bDoorLeft
 m_bDormant
 m_bDownAirDash
 m_bDraw3DSkybox
@@ -70225,6 +70301,7 @@ m_bHasRejuvenator
 m_bHasShopOpen
 m_bHasSlack
 m_bHasStartedPlaying
+m_bHasStompStarted
 m_bHasTriggerRadius
 m_bHasUsedBouncePad
 m_bHeatAtLevel
@@ -70454,6 +70531,7 @@ m_bModelOverrodeBlockLOS
 m_bModifierStatesDirty
 m_bMomentary
 m_bMoveCollidedPushUp
+m_bMoveSolveNudgeActive
 m_bMovementActive
 m_bMovementHandshakeRestart
 m_bMultiplayer
@@ -70461,6 +70539,7 @@ m_bMuteImpactEffects
 m_bNavChangedAlongPath
 m_bNavComplete
 m_bNavLinkIsOnPath
+m_bNavObstacleUpdatesOverridden
 m_bNeedsExplosion
 m_bNeedsHardware
 m_bNeedsTesting
@@ -70991,6 +71070,7 @@ m_eCameraOperation != k_ECameraOp_Spring
 m_eCameraOperation == k_ECameraOp_Lag || m_eCameraOperation == k_ECameraOp_Maintain
 m_eCaptureState
 m_eCitadelDamageType
+m_eClass
 m_eCurrentAttackState
 m_eCurrentAttackState == EMeleeHold_AttackState::EAttackState_Charging
 m_eCurrentAttackState == EMeleeHold_AttackState::EAttackState_GroundDashing || m_eCurrentAttackState == EMeleeHold_AttackState::EAttackState_AirDashing
@@ -71009,6 +71089,7 @@ m_eDoubleJumpFailReason
 m_eDrawOverheadStatus
 m_eEvent
 m_eGGTeam
+m_eGameMode
 m_eGameState
 m_eGuidedBotMatchObjective
 m_eHeight
@@ -71582,6 +71663,7 @@ m_flDistanceMapMax
 m_flDistanceMapMin
 m_flDistanceMax
 m_flDistanceMin
+m_flDistanceToDoor
 m_flDistanceToPlayer
 m_flDistanceToReachMaxSpeed
 m_flDistanceToReachZeroSpeed
@@ -71784,6 +71866,7 @@ m_flGoldAmount
 m_flGoldPerMinuteAmount
 m_flGoldReward
 m_flGoldRewardBonusPercentPerMinute
+m_flGraceTime
 m_flGrappleArriveTime
 m_flGrappleShotAttackTime
 m_flGrappleShotDelayToFlyOnHit
@@ -72145,6 +72228,7 @@ m_flMoveDistance
 m_flMoveDoneTime
 m_flMoveInterpTime
 m_flMoveInterval
+m_flMoveSolveNudgeYaw
 m_flMoveSoundMaxDuration
 m_flMoveSoundMaxPitch
 m_flMoveSoundMinDuration
@@ -72232,7 +72316,6 @@ m_flOnFullDrainSuppressTime
 m_flOnGroundStartTime
 m_flOnRestoreEffectDuration
 m_flOnTakeDamageEffectDuration
-m_flOpvarValue
 m_flOrbSpawnDelayMax
 m_flOrbSpawnDelayMin
 m_flOrbSpawnOffsetRandomXYZ
@@ -72506,6 +72589,7 @@ m_flSkirt
 m_flSkirtNear
 m_flSkyIntensity
 m_flSlack
+m_flSlamEnabledTime
 m_flSlideActivationProbeForwardOffset
 m_flSlideChangeTime
 m_flSlideEarlyOutWindow
@@ -73039,8 +73123,9 @@ m_hLookTarget
 m_hLosTarget
 m_hLowHealthParticle
 m_hMaster
-m_hMaterialDamaged
-m_hMaterialUndamaged
+m_hMaterialBase
+m_hMaterialDamageBase
+m_hMaterialDamageOverlay
 m_hMeasureReference
 m_hMeasureTarget
 m_hMedicTrooper->IsMedic()
@@ -73404,7 +73489,6 @@ m_iObserverMode
 m_iOldOwnerClass
 m_iOpvarIndex
 m_iOverrideObserverMode
-m_iParticleParity
 m_iPauseTeam
 m_iPerMinuteExtraGoldBounty
 m_iPlayerAssists
@@ -73430,6 +73514,7 @@ m_iRotationInterpolator
 m_iRumbleEffect
 m_iScore
 m_iSearchType
+m_iSecondsAfterDeathToAllowObserving
 m_iSensingFlags
 m_iSentToClients
 m_iServerControlPointAssignments
@@ -73497,7 +73582,6 @@ m_iszArriveAtDestinationSound
 m_iszAttachmentName
 m_iszBasePropData
 m_iszBinding
-m_iszCampName
 m_iszCaption
 m_iszClassName
 m_iszCommentaryFile
@@ -74736,6 +74820,7 @@ m_prevSample
 m_previewModel
 m_previewParticle
 m_programBuffer
+m_projInfo
 m_projectileInfo
 m_proximityTimer
 m_pszActivity
@@ -74743,6 +74828,7 @@ m_pszAttackLeanPosition
 m_pszDamageState
 m_pszDeathHitLocation
 m_pszDeathSequence
+m_pszDoorOpenAction
 m_pszElectricBeamPosition
 m_pszFlinchType
 m_pszFullBodySequence
@@ -75175,7 +75261,6 @@ m_strItemSale
 m_strItemUpgrade
 m_strKilledSound
 m_strLabelToken
-m_strLaneName
 m_strLaneTrooperKill
 m_strLaneTrooperOrb
 m_strLaserEndSound
@@ -75346,6 +75431,7 @@ m_strVictimHitSound
 m_strVictimTetheredSound
 m_strWIPModelName
 m_strWallCreated
+m_strWallSlamSound
 m_strWeaponImage
 m_strWeaponImpactEffect
 m_strWeaponNameLocString
@@ -75424,9 +75510,11 @@ m_think == &CAI_BaseNPC::CallNPCThink || GetIdealState() == NPC_STATE_SYNCHRONIZ
 m_thinkAlways
 m_time
 m_timeBeginFailedSteer
+m_timeDamage
 m_timeEnemyDisappeared
 m_timeLastSpawnCrates
 m_timeLastUpdate
+m_timeLaunch
 m_timeLoggedOn == 0
 m_timeLoggedOn > 0
 m_timeRevealedOnMinimapByNPC
@@ -75580,6 +75668,7 @@ m_vGoalDir
 m_vGoalDirection
 m_vGoalPosBlocked
 m_vGravity
+m_vGroundOrigin
 m_vHitEnemies
 m_vHoldOffset
 m_vHomePosition
@@ -75713,6 +75802,7 @@ m_vTintColor
 m_vTintColorLightingOnly
 m_vTossUpForce
 m_vValues
+m_vVel
 m_vVertsRefCounts.Count() == m_vVerts.Count()
 m_vVertsRefCounts[ aVertIndices[ v ] ] >= 0
 m_vVertsRefCounts[ nVertIdx ] >= 0
@@ -76595,6 +76685,7 @@ modifier_citadel_bullet_flurry
 modifier_citadel_bullet_flurry_windup
 modifier_citadel_burning
 modifier_citadel_can_damage_mid_boss
+modifier_citadel_can_damage_tier3phase2_boss
 modifier_citadel_chain_lightning
 modifier_citadel_chain_lightningeffect
 modifier_citadel_charged_tackle_active
@@ -76651,6 +76742,7 @@ modifier_citadel_parried_stun
 modifier_citadel_parry
 modifier_citadel_passive_cloak
 modifier_citadel_pestilence_drone_dot
+modifier_citadel_phantom_strike_caster
 modifier_citadel_posion_bullets_poison_buildup
 modifier_citadel_posion_bullets_poisoned
 modifier_citadel_posion_bullets_shot_watcher
@@ -77499,6 +77591,7 @@ nav_draw_blocked
 nav_draw_blocked_connections
 nav_draw_connected_area_radius
 nav_draw_externally_created
+nav_draw_indirect_connections
 nav_draw_jump_links
 nav_draw_limit
 nav_draw_link_alignment
@@ -78210,7 +78303,6 @@ o Icu8I
 o!>d]
 o$$fA
 o$g31
-o%>hx
 o&1m&
 o(H9o
 o(L9s(t
@@ -78470,6 +78562,7 @@ opvarValueString
 opvarValueType
 opvarname
 or`fD
+orb_claim_window
 orb_drop_00
 orb_drop_01
 orb_drop_02
@@ -78639,11 +78732,10 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
+p08@H^D
 p0Hc@(M
 p0R^G'
-p0jpA#
-p6@LT
+p6@&U
 p7M}f
 p88Hp88H
 p;Y>u
@@ -78778,6 +78870,7 @@ pBonus->m_ValueType == MODIFIER_VALUE_BASEATTACK_DAMAGE_PERCENT || pBonus->m_Val
 pBotPlayer != nullptr
 pBundle
 pBundleItemDef != NULL
+pCTrackedObject_MODIFIER_TRACKED_RENDER_ATTRIBUTE
 pCallInfo
 pCallback == nullptr
 pCallback->m_nListenerType == nListenerType
@@ -78905,7 +78998,6 @@ pGroupName && pGroupName[0]
 pHandler
 pHandler != this
 pHandler == &g_EntitySaveRestoreBlockHandler || (m_Handlers.Count() >= 1 && m_Handlers[0] == &g_EntitySaveRestoreBlockHandler)
-pHc-1
 pHelper
 pHhXpHhX
 pHitEntity
@@ -79023,7 +79115,6 @@ pModifier->GetFunctionTableType() == MODIFIER_FUNCTION_TABLE_PREVIEW
 pModifier->GetQueuedRefreshHandle() != INVALID_MODIFIER_QUEUED_REFRESH_HANDLE
 pModifier->IsMarkedForDeletion()
 pModifierProp->m_hHandle.GetRaw() == m_allModifierProps.InvalidIndex()
-pModifierTrackedGraphParameter_t
 pMove->m_vecVelocity.IsReasonable()
 pMoveData->m_vecSubtickMoves.Count() >= 1
 pMoveParent
@@ -79248,7 +79339,6 @@ pVecWorldMins->z <= pVecWorldMaxs->z
 pVictim
 pVolume
 pWaypoints == nullptr || pWaypoints->GetPos().IsValid()
-pWeapon
 pWeaponInfoOwner
 pWorkThread->m_bFinished is false but thread is not running
 pWorld
@@ -80276,6 +80366,7 @@ r"fff
 r"w-H
 r#fff
 r#w*H;
+r$wTA
 r%w0H
 r'u	H
 r*u	B
@@ -80762,7 +80853,8 @@ s L9|$@t
 s UWAVI
 s WATAUAVAWH
 s WAVAWH
-s f95
+s f95op
+s f95{H]
 s u!H
 s!@8s"t
 s!JcD
@@ -81452,14 +81544,11 @@ shatterglass_break
 shatterglass_cleanup
 shatterglass_cleanup_max
 shatterglass_debug
-shatterglass_distort
-shatterglass_edge_uv_scale
 shatterglass_hit_tolerance
 shatterglass_restore
 shatterglass_shard
 shatterglass_shard_lifetime
 shatterglass_subdiv_size
-shatterglass_voronoi_size
 shear
 shf9sj~
 shield
@@ -81866,6 +81955,7 @@ spawnobject
 spawnpos
 spawnprops
 speak
+speak_result
 speaker DSP needs an audio mix input.  The convar is no longer used in source2
 speaker_and_observers
 speaker_and_target
@@ -82570,7 +82660,6 @@ szSchedule
 szSequence
 szUntranslatedSchedule
 t	9T$
-t	;GP
 t	@8+t
 t	@80
 t	@87t
@@ -82609,14 +82698,15 @@ t!D9@
 t!D9P
 t!D9k
 t!D;n
-t!H95
-t!H9=
+t!H95ud
+t!H9=(
 t!H9C
 t!Hc;;{
 t!HcA
 t!HcC
 t!HcI
 t!IcB H
+t!L9%
 t!L9{
 t!L;	t
 t!fff
@@ -82651,7 +82741,6 @@ t#HcU
 t#Hc}
 t#L9&u
 t#LcwPD;w`u
-t$ ;K
 t$ ;x
 t$ <"u
 t$ @:
@@ -82682,7 +82771,7 @@ t$ L97t	H
 t$ L9?t	H
 t$ L;
 t$ Lc
-t$ Lc5
+t$ Lc5)
 t$ Lcs
 t$ M;
 t$ UATAVH
@@ -82802,12 +82891,14 @@ t$0t.
 t$0t>
 t$0tp
 t$0u H
+t$0u"=
 t$0u$H
 t$0z"u 
 t$0z$u"
 t$0|PH
 t$0~ H
 t$4D;
+t$4H;
 t$4Ic
 t$4f;
 t$4fA;
@@ -82914,7 +83005,6 @@ t$A9I
 t$A9W
 t$D9@
 t$D9B
-t$D;D$X
 t$DE;t$
 t$Df;
 t$DfA;
@@ -82929,7 +83019,7 @@ t$HA;_8}DI
 t$HA_A^A]A\_
 t$HD8
 t$HD8upu
-t$HD9=C
+t$HD9=
 t$HE3
 t$HE;
 t$HE;~h
@@ -82941,7 +83031,6 @@ t$HHc0H
 t$HHc2H
 t$HHcD$@L
 t$HHcG
-t$HHcp@
 t$HHi
 t$HHk
 t$HL;
@@ -83016,6 +83105,7 @@ t$TE2
 t$THcC@L
 t$Tf;
 t$VfD
+t$X$`<`u
 t$X9^8H
 t$X;E
 t$X;{
@@ -83037,9 +83127,11 @@ t$XHcD$PH
 t$XHcD$PI
 t$XHcD$PL
 t$XHcD$PM
+t$XHk
 t$XI+
 t$XI;
 t$XIc
+t$XL9
 t$XL9t$`t
 t$XLcs
 t$XfD
@@ -83067,6 +83159,7 @@ t$`H+
 t$`H9
 t$`H;
 t$`Hc
+t$`HcX@D
 t$`Hcq
 t$`I9
 t$`I;
@@ -83080,7 +83173,6 @@ t$`fA
 t$`fD
 t$`fD9+t$I
 t$`fff
-t$`sgH;
 t$`sgL;
 t$`t%H
 t$`tA3
@@ -83099,7 +83191,6 @@ t$dfD
 t$h;k0
 t$h;w`
 t$h@2
-t$hD)d
 t$hD9m
 t$hD;s0
 t$hE2
@@ -83123,9 +83214,11 @@ t$hfD
 t$hff
 t$hfff
 t$ht(H9o0u
+t$ht[
 t$hu3H
 t$hu7H
 t$huY
+t$h~ H
 t$h~aH
 t$lf;
 t$p9u
@@ -83157,6 +83250,7 @@ t$px,H
 t$p|FH
 t$p~ H
 t$p~#H
+t$p~?eH
 t$p~`H
 t$tf;
 t$x9C
@@ -83187,7 +83281,7 @@ t%HcD$ H
 t%HcD$$H
 t%Hckh;kxu
 t%I9~
-t%L9-
+t%L9-c
 t%fE9
 t%fff
 t&A88t
@@ -83208,7 +83302,7 @@ t'H;Q(t!H;Q0t
 t'HcW
 t'Ic]
 t'L9=
-t'L9=/
+t'L9=_g
 t'fff
 t(1pC
 t(D9@
@@ -83248,6 +83342,7 @@ t,<tt
 t,Hc3;s
 t,HcA
 t,fff
+t-;=O6
 t-H91t(H
 t-H;C
 t-Hc7L
@@ -83288,8 +83383,7 @@ t0M;Z
 t0{r)
 t198~)H
 t1@8{[u+H
-t1D8%@
-t1D8%P
+t1D8%
 t1E9fPt
 t1HcA@E3
 t1Hc}
@@ -83459,12 +83553,11 @@ tG;0|-H
 tGA;G
 tGD8 tBE
 tGHcT$0A
-tGL9{0u
 tGfff
-tH@8=
+tH@8=U
 tHIcm
 tHLcp
-tI@8=[
+tI@8=
 tID80tDH
 tID9@
 tIHcA
@@ -83523,7 +83616,6 @@ tQfD9 tK
 tR<+u
 tRD8}
 tRHcIL;
-tRL9{0u
 tRLcY
 tRMcw
 tRfff
@@ -83548,7 +83640,7 @@ tTvR@2
 tU;\$0tH
 tUD8e
 tUE9wtu	E9
-tUH95
+tUH95	M
 tUH99uPL
 tUHcC@
 tUHch H
@@ -83560,7 +83652,7 @@ tUfff
 tUvS@2
 tV9\$PuP
 tV@8(tAH
-tV@8=
+tV@8=]
 tVHcG
 tVvT2
 tV~T2
@@ -83582,10 +83674,10 @@ tXH99uSH
 tXKcD
 tXL9g
 tXfff
-tY@8=	
+tY@8=
 tYD8 tT3
 tYE8.tTA
-tYH95u
+tYH95
 tYHc\$HLc6
 tYfff
 tZD8chuTL
@@ -83599,7 +83691,7 @@ t[@8}guUE3
 t[A9H
 t[A9P
 t[E9}
-t[H9=
+t[H9=w
 t\H95
 t\Ic<$Hc
 t\Ic?
@@ -83612,12 +83704,12 @@ t]v[@2
 t^@8.tY3
 t^A9I
 t^H95
-t^H95|
 t^HcB
 t^HcC
 t^~\2
 t^~\D
 t_D8ghuY;_
+t_Hc;;{
 t_HcF
 t_L9>t
 t_v]2
@@ -83758,6 +83850,7 @@ team_objective_id
 team_wipe
 teamname
 teamnumber
+teamnumber_victim
 teamplay_round_start
 teams
 tech_armor_down
@@ -83811,7 +83904,6 @@ tfD8c$t@H
 tfD8k$t@H
 tfH9o0u
 tfH9{0u
-tfHc;;{
 tfjgvmfv
 tfvd@2
 tg@8}guaE3
@@ -83873,7 +83965,7 @@ ti@8w$t@H
 tiD8#td3
 tiD80td3
 tiD8v!u
-tiE9~TucI
+tiE9fTucI
 tick_interval
 tickrate
 tier0.dll
@@ -83944,7 +84036,7 @@ tj<jtV
 tj@8<.tdL
 tjD8o$t@H
 tjD8u0udE3
-tjH95G
+tjH95
 tjxSA
 tk@8/u
 tk@8:tf3
@@ -84075,6 +84167,7 @@ tp=G{
 tp@8}gujE3
 tpA8<
 tpBasis
+tpD9@
 tpD9w
 tpM9~
 tq8_hu
@@ -84082,6 +84175,7 @@ tq<Otm<
 tqL9f
 tqfff
 trA8<.tlL
+trLcA
 trace.m_vHitNormal.IsValid()
 trace_start
 tracer_additional
@@ -84167,6 +84261,7 @@ trigger_sound
 trigger_soundscape
 trigger_team_base
 trigger_teleport
+trigger_tier3phase2_shield
 trigger_togglesave
 trigger_tonemap
 trigger_transition
@@ -84209,7 +84304,6 @@ tsxVA
 ttD8 toH
 ttD90toH
 ttHcF
-ttL9{0u
 tuA8] uoI
 tuD9C
 tuL9=
@@ -84222,11 +84316,12 @@ turbo_mode_kill_guardian
 turn on, off, or toggle origin changes on server for entity by index
 turn_to_ash
 tvIc.L
-tvLcc
 tvLcs
 tv_allow_autorecording_index
 tv_allow_camera_man
 tv_allow_static_shots
+tv_broadcast 1
+tv_broadcast_url "full:%s"
 tv_citadel_auto_record
 tv_citadel_max_transition_distance
 tv_delay
@@ -84292,7 +84387,7 @@ t|H9;uwD
 t|McP83
 t|fff
 t}D9@
-t}D;5
+t}D;5M
 t}E9~
 t~A9,
 t~H9}Pt_H9{
@@ -84325,9 +84420,11 @@ u!Ic>A;~
 u!L90u
 u!fff
 u"H90u
+u"H98t
 u"Hc.L
 u"L9t$@t
 u"L;B r
+u#H90u
 u#H9{
 u$D)k
 u$D8r(t
@@ -84348,9 +84445,9 @@ u'H9t
 u'Hc>H
 u'L9Z
 u'uJM
-u(D8-
-u(H9C0u
+u(D8-Oc*
 u(L90t#H
+u(L9k0u
 u)H9}0t
 u)IcF
 u)L9(t$A
@@ -84359,7 +84456,6 @@ u)LcQ
 u)fE;
 u*H9C(H
 u*H9C0H
-u*H9N0u
 u*L90t%H
 u+,@	M
 u+H9y0
@@ -84382,6 +84478,7 @@ u/H;K
 u/fD9pju
 u09u@|EH
 u0D9u@|EH
+u0D;R
 u0J9\
 u0Lcc8
 u0|EH
@@ -84420,10 +84517,10 @@ u8H9C(H
 u8H;A
 u8L90t3
 u98QDu4H
+u9E9\
 u9HcAxH
 u;D;E`
 u;H;P
-u;HcEPL
 u;L98u6H
 u;]#t
 u;{Gk
@@ -84437,7 +84534,6 @@ u>9A8u9
 u>H9(t9H
 u@H9C H
 u@H9C(H
-u@H;u
 u@HcL$0
 u@LccP
 uAH9x
@@ -84508,6 +84604,7 @@ uQbK!
 uRH9C(H
 uRfD9E
 uSA9B8t
+uSD;A
 uSL9:tN
 uSf9\$Ht
 uSfff
@@ -84534,7 +84631,6 @@ uYf93tT
 uYfff
 uZ9{8
 uZH9C(H
-uZL90tUI
 uZfD9A
 u[H9C(H
 u[HcF(
@@ -84545,7 +84641,6 @@ u_H9C(H
 u`H9|$Pt5H
 u`|EH
 uafff
-ub8CXubH
 ub8D$hu%L
 ucD9{0u]H
 ucH9)t^L
@@ -84571,6 +84666,7 @@ uint64
 uint64 value '%llu' is above the maximum value that will fit within a double without precision loss (%llu)
 uint64s
 uint8
+uj8CXujH
 ukE8}0
 ulH9C(H
 ulH9C0H
@@ -85008,7 +85104,6 @@ v(Hco
 v(t	H
 v.GetType() == FIELD_CSTRING
 v.GetType() == v.GetExpectedType< RetVal_t >()
-v/M9~0u
 v0E;>
 v0Hc;;{
 v0Hc>A
@@ -85158,6 +85253,7 @@ variant
 vb'vb'v
 vcd error, gesture %s of model %s is marked as STUDIO_LOOPING!
 vcd_keys
+vdIcM
 vdata
 vdata_choice:scripts/navlinks.vdata
 vdata_choice:scripts/ping_wheel_messages.vdata
@@ -85256,7 +85352,6 @@ vismon_poll_frequency
 vismon_trace_limit
 visualizes all the trooper cover points
 visuals
-vmIcM
 vmatH
 vmdlA
 vmdlH
@@ -85434,6 +85529,7 @@ works_in_turbo_mode
 workshop_file_id
 workshoplink
 world
+world.glass
 worldGroupID
 worldName
 worldSpacePosition.IsValid()
@@ -85521,7 +85617,7 @@ x'H;A
 x'fff
 x(	t+H
 x(H;B
-x)D;E`}#H
+x)E;F`}#I
 x)u H
 x)xpH
 x*D;AH}$Ic
@@ -85644,12 +85740,8 @@ xp_orb_trooper
 xp_orb_vault
 xrJ:DCG
 xtH;~
-x|9=J
-x|9=P
-x|9=Q
-x|9=U
-x|9=W
-x|9=^
+x|9=FL
+x|9=Q9
 x~HcC
 x~fff
 y D8<.u
@@ -85720,7 +85812,6 @@ z :"U
 z"u H
 z$9)~
 z$=ZL
-z%u#A
 z&u$A
 z&u$H
 z'u%H
@@ -85735,16 +85826,21 @@ z0u.H
 z1_|'B
 z1u/H
 z2u0A
+z3u1A
 z4u2H
+z4u2I
+z6u4I
 z8u6A
 z==Gz==G
-zCcitadel_payload
+z=u;A
+z>u<A
 zCuAE
-zDcitadel_player_gold_reward_max
+zDm_strLaneName
 zF):O4
 zG2m8
 zH@u5A
 zHXE3
+zHuFA
 zIc>;
 zIuGH
 zNear
@@ -85790,7 +85886,6 @@ zyuwH
 z}u{H
 { %s }
 { <"u
-{ ATAVAWH
 { AUAVAWH
 { AVH
 { D8<.u
@@ -85806,7 +85901,7 @@ z}u{H
 {%s}SAVE/%s.sav
 {(;s0u
 {(D97|
-{(fD9=
+{(fD9=`
 {(u H
 {,D+{HD+
 {09k(|AH
@@ -85946,7 +86041,6 @@ z}u{H
 |$09|$@|LH
 |$0A#
 |$0A_A^
-|$0D8(
 |$0D8|$8
 |$0D9|$@|LH
 |$0D;
@@ -85982,6 +86076,7 @@ z}u{H
 |$0~/H
 |$4E3
 |$4H+
+|$4Hc
 |$4tP
 |$6fD
 |$89C
@@ -86041,7 +86136,7 @@ z}u{H
 |$@Hc}
 |$@I;
 |$@Ic
-|$@L9%w
+|$@L9%'
 |$@L;
 |$@L;t$P}\L
 |$@Lc
@@ -86071,7 +86166,6 @@ z}u{H
 |$HA9{H
 |$HA;D$<~
 |$HD8qhtOL9q0u
-|$HE2
 |$HE3
 |$HE9g
 |$HE;
@@ -86091,6 +86185,7 @@ z}u{H
 |$HMc~HE;~X
 |$HfD
 |$HfE
+|$Hfff
 |$Hu,
 |$Hu5
 |$Hu:M
@@ -86104,6 +86199,7 @@ z}u{H
 |$PA;
 |$PD+
 |$PD8
+|$PD8(
 |$PD9?
 |$PD9u
 |$PD9|$`|LH
@@ -86123,7 +86219,7 @@ z}u{H
 |$PIc
 |$PL;
 |$PLc
-|$PLc=9
+|$PLc=
 |$Pf9H:t
 |$PfD
 |$PfE
@@ -86149,6 +86245,7 @@ z}u{H
 |$THc
 |$TMc
 |$TfA;
+|$UfD
 |$VfD
 |$X;}
 |$XE3
@@ -86165,6 +86262,7 @@ z}u{H
 |$XIc~
 |$XfA;
 |$Xff
+|$Xt'H;
 |$Xtd@
 |$XtfI
 |$XtvH
@@ -86267,6 +86365,7 @@ z}u{H
 |$pI;
 |$pIc
 |$pL+
+|$pLc
 |$pM;
 |$pMc
 |$pf9q"u
@@ -86306,7 +86405,7 @@ z}u{H
 |(tFM
 |)@8~!t
 |)L9c
-|)f95B'
+|)f95
 |,I9,
 |11Jv
 |<C!FReQ
@@ -86348,13 +86447,13 @@ z}u{H
 }"fff
 }#fA;P
 }$;P$
-}$;\$|
 }$fA;P
 }$fff
 }$z9*
 }%A;@tw
 }%Hc+;k
 }&A;Atw I
+}&D;u
 }';sL
 }';{t
 }'D;J$
@@ -86392,6 +86491,7 @@ z}u{H
 }0uDH
 }0|EH
 }1;C$
+}1HRIw	
 }1f;Q
 }2;_L
 }3;W4w.
@@ -86436,9 +86536,8 @@ z}u{H
 }HfD9#A
 }LuHO
 }P9}`|EH
-}P;5(s
+}P;5h
 }PfD;v^wIfE;
-}P|EH
 }R;_$
 }T;_$
 }VKRZ
@@ -86453,6 +86552,7 @@ z}u{H
 }`9}p|EH
 }`D9}p|EH
 }`D;}
+}`L9k0u
 }`|EH
 }cf;_
 }cf;w
@@ -86522,7 +86622,8 @@ z}u{H
 ~2HcE,I
 ~3fff
 ~4fff
-~5D8%
+~5D8%&
+~5D8%V@*
 ~5fff
 ~6fff
 ~7HcG

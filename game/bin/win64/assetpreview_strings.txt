@@ -43,8 +43,6 @@
 	D$0H
 	Default
 	NAN encountered in element '%s' guid %s attribute '%s'!
-	V_fmodd
-	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_isnand
@@ -455,7 +453,6 @@ $D9x<t
 $D9x<tN
 $Ib?s
 $L9x0
-$XFV)
 $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 $^fE;
 $prefix_attribute$
@@ -720,6 +717,7 @@ $prefix_element$
 (#%d)
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
 (%1,%2)
+(%7z0
 (%O#*
 (%T#*
 (%d,%d
@@ -734,8 +732,9 @@ $prefix_element$
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (- +*
-(-6,(
-(-;|0
+(-6+(
+(-;t0
+(-\z0
 (5&!*
 (5W1*
 (5y&*
@@ -974,6 +973,7 @@ $prefix_element$
 (|$pI
 (|$pL
 )	?buddy@QAbstractItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
+)	V_log10f
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )$$fD
 ),$fD
@@ -1243,7 +1243,7 @@ $prefix_element$
 +h->|
 +o'q)}
 +~0+^4
-,	V_log10f
+,	V_log2f
 , %1 KB
 , %1 MB
 , %1 mip levels, %2
@@ -1269,6 +1269,7 @@ $prefix_element$
 ,X< w
 ,YA1A
 ,YA1H
+-	V_logd
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
@@ -1296,9 +1297,11 @@ $prefix_element$
 -unknown source-
 -unknown source-(
 -vsync
+.	V_logf
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 ..om?
 .00cfg
+.5@	9
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
 .?AU?$_InitialTaskHandle@XV<lambda_60c5de84e69e46aa92419d47e2f3ad51>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -2540,7 +2543,6 @@ $prefix_element$
 .xJ>Hf
 .xdata
 .xdata$x
-/	V_log2f
 /%Xr8
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
@@ -2561,7 +2563,6 @@ $prefix_element$
 /5]I#
 /<9w-
 />58d%
-/BC%}
 /D$4r
 /D$pv
 /D$tv
@@ -2572,7 +2573,6 @@ $prefix_element$
 /TF<)VGy#WH
 /YA1H
 /]?size@QImage@@QEBA?AVQSize@@XZ
-0	V_logd
 0 0 -1
 0 0 0
 0 0 0 0
@@ -2647,7 +2647,6 @@ $prefix_element$
 0x%p = %s '%s'
 0z$u"
 0}0i1
-1	V_logf
 1"?updateGeometry@QWidget@@QEAAXXZ
 1#IND
 1#INF
@@ -2700,7 +2699,6 @@ $prefix_element$
 1LaunchPopUpScrollerAll()
 1LaunchPopUpSlider_Horizontal()
 1LaunchPopUpSlider_Vertical()
-1ModalBrowse()
 1MultiplySetBy(double)
 1NavigateToFile()
 1OnAbout()
@@ -2869,12 +2867,13 @@ $prefix_element$
 1trigger()
 1update()
 1wsHp
+2	V_modfd
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240705205652Z0/
+240711150514Z0/
 241009235959Z0a1
 255 255 255
 2AnimationLoopingChanged( bool )
@@ -2965,10 +2964,10 @@ $prefix_element$
 4YA1H
 4YA1i
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
-5	V_modfd
 5;FJ$,XEK4<
 5FjiT
 5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
+5O"ME
 5YA1H
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 5sfm_v8
@@ -3048,6 +3047,7 @@ $prefix_element$
 8ke?;
 8text
 8vmatt
+9	V_powd
 9)~P3
 97tmD
 98t H
@@ -3130,6 +3130,7 @@ $prefix_element$
 9~P~7
 9~P~;
 9~h~t3
+:	V_powf
 : Add
 : lexer error %d :
 :!e00A
@@ -3143,10 +3144,11 @@ $prefix_element$
 :VP8 tP
 :VP8LtHD
 :VP8X
+;	V_qsort
 ;(}{H
 ;.u1L
 ;.|@H
-;=4P:
+;=4O:
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;CP}$Hc
@@ -3181,7 +3183,7 @@ $prefix_element$
 ;|$0|
 ;|$8|
 ;|$@~
-<	V_powd
+<	V_qsort_s
 <	u2H
 <	u8H
 <	u\L
@@ -3231,7 +3233,6 @@ $prefix_element$
 <unknown>
 <unset>
 <utK@:
-=	V_powf
 =%H5<mN
 =33s?
 == PulseGraphDef ==
@@ -3241,7 +3242,6 @@ $prefix_element$
 =SPB8ue
 =imb;D
 =rIQU
->	V_qsort
 >%H5<mN
 >0<0:
 >Mp$d
@@ -3250,7 +3250,6 @@ $prefix_element$
 >c;j1
 >ff&?
 >jtm}S
-?	V_qsort_s
 ?!5WOo
 ?#\$ 
 ?+>^m
@@ -5372,6 +5371,7 @@ $prefix_element$
 @spawn
 @t/H9w t)H
 @t/H9w8t)H
+A	V_roundf
 A A+A
 A D+A
 A D;A0|
@@ -9404,7 +9404,6 @@ Cursor[ ptr:%p | id:%d | graph:%p ]: Register observer:%d
 Custom Color
 Custom Colors
 Cx~!H
-D	V_roundf
 D W?{W
 D!l$xA
 D#C|D
@@ -10480,6 +10479,7 @@ ExternalNameForInternalType
 ExtraSamples
 Extraneous token
 E|$xH
+F	V_sincosf
 F	tj<
 F 9F(r
 F A;F
@@ -10696,6 +10696,7 @@ Function "%s" takes %i parameters, but %i were given
 Functions not supported in this evaluator (%s)
 FxD9x
 FxH9<
+G	V_sind
 G 9G(
 G H9,
 G channel not found!
@@ -10934,6 +10935,7 @@ G|$HH
 G|$XA
 H	CxH
 H	GHI
+H	V_sinf
 H A+H
 H ATAUH
 H D+H
@@ -10958,6 +10960,7 @@ H9(t?A
 H9(tO
 H9+t	H
 H9+u]H
+H9-X~$
 H9/t	H
 H9/u+9
 H90t7
@@ -11142,10 +11145,10 @@ HcE0D+
 HcEHH
 HcE_H
 HcE_L
-HcE`H
 HcEgH
 HcEwL;
 HcExH
+HcF`H
 HcG H
 HcG<I
 HcG<Lk
@@ -11263,7 +11266,6 @@ How much should the surface normal up direction influence the final orientation.
 Hr>wL
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-I	V_sincosf
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
 I I;4
 I could not work out what I was expecting, like so many of us these days!
@@ -11765,7 +11767,7 @@ It doesn't make sense to have attachment type PATTACH_WORLDORIGIN and have an en
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
 ItemIsolateView
 ItemIsolateVignette
-J	V_sind
+J	V_sinhf
 J%f%f%f%f%f%f%f%f
 J8B:s
 J8G:s
@@ -11787,7 +11789,7 @@ Joint Rotations
 Js`@2
 Jump to Instr I%d
 JumpOrLeap( C%d:I%d )
-K	V_sinf
+K	V_snprintf
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 K H9H
 K H9K0u
@@ -11800,6 +11802,7 @@ K09H(tC
 K0HcK4H
 K0HcQ
 K4HcK8H
+K6m!g
 KERNEL32.dll
 KP9sP
 KV3 instances cannot be set to an unspecified specific type
@@ -12342,7 +12345,6 @@ LowPrecisionUv1
 Lower pen.
 L|4f;
 M	?canDropMimeData@QAbstractProxyModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z
-M	V_sinhf
 M +D$tL
 M HcG
 M L;mP
@@ -12578,6 +12580,7 @@ MessageBoxW
 MguCA
 Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
 Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
+Mia=[dHc
 Min Float
 Min Int
 MinEV
@@ -12659,7 +12662,6 @@ MultiplySetBy
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 Must specify a search path or root-relative (ie. game/.. or content/...) path.
 Mx~.H
-N	V_snprintf
 N0Ic^,A
 N3`d?
 N>O=I9
@@ -12804,7 +12806,7 @@ O*9y]
 O0HcW 
 O8HcB
 O8HcY
-O=-P:
+O=-O:
 O?initPainter@QPaintDevice@@MEBAXPEAVQPainter@@@Z
 OBJECT
 OF>;^
@@ -13334,6 +13336,7 @@ Push To Global Browser
 PushSelectionToGlobalBrowser
 Pz}b!
 P~6-U~/W
+Q	V_sscanf
 Q$HcA
 Q2XXR
 Q5rHg,>
@@ -13404,6 +13407,7 @@ QueryPerformanceCounter
 QueryPerformanceFrequency
 Qxfff
 R	?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
+R	V_sscanf_s
 R A;F
 R channel not found!
 R%d->%s
@@ -14170,6 +14174,7 @@ Smart Prop Reference
 Smart Prop Root
 SmartProp:LoadOverrideMaterials
 SmartPropAttributeEditor( MaterialGroup:m_sModelName )
+SmartPropAttributeEditor(MaterialInSmartProp)
 SmartPropAttributeEditor(VariableValue)
 SmartPropAttributeEditor(angles)
 SmartPropAttributeEditor(bool)
@@ -14373,7 +14378,6 @@ SwizzlePlanarScanlineToInterleaved
 Symbol table:  %d entries %llu bytes
 Synchronous - wait for the method to fully complete before returning
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T	V_sscanf
 T$ E3
 T$ Ei
 T$ H;
@@ -14664,7 +14668,6 @@ Tuesday
 Turtle Graphics Domain
 TurtleGraphics
 Typesafe Int
-U	V_sscanf_s
 U I;U(
 U%	>G
 U(fff
@@ -14922,6 +14925,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
+V	V_stricmp_fast
 V ?toolTip@QAction@@QEBA?AVQString@@XZ
 V6'?C
 V6E>`"(5
@@ -15058,6 +15062,8 @@ V_expf
 V_fabsf( flCheckDecompositionOrthogonality ) < 0.001f
 V_fabsf( flFarZ ) < FLT_MAX
 V_fabsf( flNearZ ) < FLT_MAX
+V_fmodd
+V_fmodf
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -15123,8 +15129,9 @@ VisBuilder_001
 Visit Developer Help URL
 VisitAndModifyElement_R
 Vrad3_001
+VwN g
 W%	s;M@
-W5\],
+W5l_,
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?save@QPixmap@@QEBA_NPEAVQIODevice@@PEBDH@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -15199,6 +15206,7 @@ WriteOutstores_Slowpath
 Writing Asset Dependency or Thumbnail Database
 Wrong JPEG library version: library is %d, caller expects %d
 Wrote symbol stats to file: %s
+X	V_strlower_fast
 X @8u
 X D8e
 X UAVAWH
@@ -15207,12 +15215,11 @@ X to the Y power
 X!t5~
 X-Axis Size
 X-m7,
-X-p{0
+X-ps0
 X5):,
-X5Ij7
+X5Yl7
 X5ZY*
-X5]*,
-X5rj7
+X5m,,
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrush@QPalette@@QEAAXW4ColorGroup@1@W4ColorRole@1@AEBVQBrush@@@Z
@@ -15257,18 +15264,18 @@ Xd$ D
 Xd$HD
 X|$ A
 X|$8E
-Y	V_stricmp_fast
 Y%pw*
-Y-,C$
 Y-=7,
 Y-Axis Size
+Y-LA$
 Y-p4*
-Y53q,
 Y59:,
+Y5Cs,
 Y5~^*
 Y9"SD
 Y=!x*
 Y=&^*
+Y='s,
 Y=:\*
 Y>kX>M
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
@@ -15339,7 +15346,6 @@ ZoomForwardBack2D
 ZoomForwardBack3D
 Zpm"U
 [	UoA
-[	V_strlower_fast
 [ 0, 1 ] Value specifying the location along the local x-axis the bend will occur around
 [ 0, 1 ] Value specifying the location on the gradient to pick the color from.
 [ AVH
@@ -15380,6 +15386,7 @@ Zpm"U
 [fA9<
 [fE94
 [fE;A
+\	V_strtod
 \ u&H9
 \$ $?<
 \$ ATAVAWH
@@ -15544,7 +15551,6 @@ Zpm"U
 ^`IcFXH
 ^oEZ_
 ^ptoH
-_	V_strtod
 _ ;_$t
 _(f9_*~
 _8D;g@u4
@@ -15913,6 +15919,7 @@ busy_anim
 busy_sequence
 buttons
 by this version of libtiff.
+c	V_tanf
 c [1>H'
 c(>\,
 c0&>`
@@ -16171,6 +16178,7 @@ dstStride == width
 dummyfilename.tif
 duration
 durationTime
+e	V_tanhf
 e A_A^A]A\_^]
 e A_A^]
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -16257,7 +16265,6 @@ eyeball_bone_l_index
 eyeball_bone_r_index
 eyeball_l
 eyeball_r
-f	V_tanf
 f+Gpf
 f3EZf
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -16531,7 +16538,6 @@ group
 group >= 0 && group < QPalette::NColorGroups && role >= 0 && role < CQTabbedStyle::NumColorRoles
 groupColor
 group_title
-h	V_tanhf
 h != m_elementIds.InvalidHandle()
 h AVH
 h VATAWH
@@ -16699,6 +16705,7 @@ js_array
 js_object
 js_raw_args
 js_value
+k	=|!
 k VWATAVAWH
 k"?value@QAbstractSlider@@QEBAHXZ
 k$97uB
@@ -16713,7 +16720,6 @@ k<9s@~KL
 k<9{@~CL
 kL@8o(u
 kQ?lineSpacing@QFontMetrics@@QEBAHXZ
-kS*$l
 kX?setBlue@QColor@@QEAAXH@Z
 key != m_nDeletedKeyValue
 key != m_nEmptyKeyValue
@@ -16858,6 +16864,7 @@ l$pE3
 l$pIc<$I
 l$pLc
 l$pMc
+l$xE3
 l$xfD
 l$xu3M
 l2|X/gGe
@@ -17878,7 +17885,6 @@ o%/B,
 o%81+
 o%M4+
 o%Q'+
-o%swD
 o,$fD
 o- v+
 o-*y,
@@ -18691,6 +18697,7 @@ t$0Hcs@H
 t$0Hc~
 t$0Hi
 t$0Lc
+t$0Lc3D;s
 t$0fff
 t$0t[
 t$8;;
@@ -19269,6 +19276,7 @@ vmatL
 vmdlD
 vmdlH
 vmdlI
+vmdlIi
 vmesh
 vmtFallback
 vmtProxy
@@ -19292,6 +19300,7 @@ vwrld
 v}`[>
 w H97t
 w"?valueFromText@QDoubleSpinBox@@UEBANAEBVQString@@@Z
+w$^-H
 w(D;\$4
 w+OQvr
 w+r2H;
@@ -19301,6 +19310,7 @@ w4kK0
 w5L9l;XH
 w8H9w
 w8Hc/;
+wWMg9
 waiting_group
 weightweight$0
 weightweight$0Indices
@@ -19364,7 +19374,6 @@ xS;Q }NHc
 xSE;H
 xXH;A
 x[A;Sp}UI
-x[deX".
 x]Hc]
 x^j=|
 xcoord
@@ -19464,6 +19473,7 @@ zY;>u:m
 |$0A;
 |$0A_A^
 |$0B+
+|$0D8mX
 |$0E3
 |$0H9{
 |$0Hc
