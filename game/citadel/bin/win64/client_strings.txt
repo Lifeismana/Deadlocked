@@ -172,6 +172,7 @@
 	None
 	Not suitable for ECDSA.
 	Objective
+	P0BU
 	PFT_SOUND
 	Param BasePlayerWeapon returned NULL!
 	Param selecting string is out of range!
@@ -715,14 +716,14 @@
  (+%.2f)
  (08@HP
  (08@HPX`hpx
- (08@HPX`jP
- (08@HPXb
- (08@HPZP
- (08@HR
+ (08@HPX`j
+ (08@HPXbPg
+ (08@HPZ
+ (08@HRPg
  (08@J
- (08@JP
- (0:P
- (0X`hpz
+ (08@JPg
+ (0X`hpzPg
+ (2Pg
  (Dirty Animation)
  (INVALID PSS PARAMETERS)
  (Negative)
@@ -741,9 +742,9 @@
  - %s (%s)
  - %s%s
  - Subscribed
- . n[
  .!p*
  ... }
+ .02[
  .CPlayer_GetNicknameList_Request
  .CPublishedFile_Publish_Response"2
  /&gt;
@@ -1166,7 +1167,6 @@
  with %.1fs delay.
  { ... };
  {0x%x, 0x%x}
- {yz|"
  } from:
  }SIc
 ! !K+hcF&db
@@ -1656,7 +1656,6 @@
 !src.has_analog_left_delta()
 !src.has_pressed()
 !strchr( name.String(), '*' )
-!s~anO
 !timing.m_bTimingFailed
 !value.IsValid()
 !vecKeyFrames.IsEmpty()
@@ -3795,6 +3794,7 @@ $z(u&
 'NETWORK_DISCONNECT_REJECT_SINGLE_PLAYER
 'SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES
 'Sets the player's community preferences
+'W#H}
 'Z9t%
 'align' cue-setting already used
 'align' cue-setting must have a value of either 'start', 'middle', or 'end'
@@ -3935,9 +3935,6 @@ $z(u&
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 (%0.2f): %s
-(%Lb&
-(%S@-
-(%Z$U
 (%d %d %d %d)
 (%d) Dynamic prop %s (model %s): no sequence named:%s
 (%d) Name: %s (%s)
@@ -3971,7 +3968,10 @@ $z(u&
 (0`hpx
 (0x%08X)'??'
 (1O\,n
-(5.q.
+(5B3>
+(5]0>
+(5^5>
+(5n{.
 (9A@K
 (9Q0u
 (9QTu
@@ -3981,8 +3981,7 @@ $z(u&
 (;]X|
 (;s |
 (;{ |
-(=7q.
-(=}s.
+(=w{.
 (?R or (?[+-]digits must be followed by )
 (A;_(|
 (A;m(
@@ -4289,6 +4288,7 @@ $z(u&
 (int index, bool bDestroyImmediately) - Destroy a particle, if bDestroyImmediately destroy it without playing end caps.
 (int)callbackArray->Length() >= iOffset + 3
 (intp)this % 8 == 0
+(ip}_
 (jvg;
 (k_ECitadelDisconnectReason_OldConnection
 (k_ECustomGameInstallStatus_FailedGeneric
@@ -4772,7 +4772,6 @@ $z(u&
 )d$pD
 )d$pE
 )d$pL
-)f9-h
 )fD9A
 )k_ECitadelDisconnectReason_ChangingServer
 )k_ECitadelDisconnectReason_UserLeaveMatch
@@ -4832,7 +4831,7 @@ $z(u&
 )t$ N
 )t$ f
 )t$ f9
-)t$ f95
+)t$ f95[
 )t$ f;
 )t$ ff
 )t$ t
@@ -5211,7 +5210,7 @@ $z(u&
 +dev_simulate_gcdown
 +duck
 +f)>0'
-+fD9=:
++fD9=
 +forward
 +gC&s
 +h->|
@@ -5509,7 +5508,6 @@ $z(u&
 .%.-.3.7.9.?.W.[.o.y.
 .%0*llu
 .%X&1
-.%xO1
 .(Optional) Set of tags for the published file.
 ....................
 ...<truncated>...
@@ -5518,8 +5516,10 @@ $z(u&
 ..om?
 ..uR5&m
 .00cfg
-.55Xi
-.5c|5
+.58!z
+.5H~%
+.5Udi
+.5ak4
 .6<A>Y
 .7Z!L
 .97yY
@@ -5728,7 +5728,6 @@ $z(u&
 .?AV<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
 .?AV<lambda_1>@?N@??FillAttr@CSOAContainer@@QEAAXHM@Z@
 .?AV<lambda_2>@?$GapBindingTypesafeIntTraits_t@VCPlayerSlot@@@@
-.?AV<lambda_2>@?1??UpdateDamageData@CCitadel_UI_DamageRows@@QEAAXPEAUHeroDamageData_t@@@Z@
 .?AV<lambda_2>@?9??RemoveDisconnectedAndWrongTeamPlayers@CCitadel_Hud_TopBar_Team@@QEAA_NXZ@
 .?AV<lambda_2>@?BB@??EventSubmitValue@CCitadel_UI_Popup_PostMatchSurvey@@AEAA_NHH@Z@
 .?AV<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@
@@ -5739,6 +5738,7 @@ $z(u&
 .?AV<lambda_3>@?1??OnClientPreOutput@CRenderGameSystem@@QEAAXAEBUEventClientPreOutput_t@@@Z@
 .?AV<lambda_3>@?1??SaveGame_Finalize@CEntity2SaveRestore@@UEAA_NPEAUSaveRestoreDataHandle_t__@@@Z@
 .?AV<lambda_4>@?1??OnClientPreOutput@CRenderGameSystem@@QEAAXAEBUEventClientPreOutput_t@@@Z@
+.?AV<lambda_4>@?1??UpdateDamageData@CCitadel_UI_DamageRows@@QEAAXPEAUHeroDamageData_t@@@Z@
 .?AV<lambda_4>@?1??UpdateDirtyPanel@CCitadel_Hud_PlayerIntents_Team@@UEAAXXZ@
 .?AV<lambda_4>@?1??UpdateDirtyPanel@CCitadel_Hud_TopBar_Team@@UEAAXXZ@
 .?AV<lambda_4>@?BA@??UpdateSearch@CCitadel_Hud_Hero_Shop@@AEAAXXZ@
@@ -8197,7 +8197,6 @@ $z(u&
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?M@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?N@??FillAttr@CSOAContainer@@QEAAXHM@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?$GapBindingTypesafeIntTraits_t@VCPlayerSlot@@@@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??UpdateDamageData@CCitadel_UI_DamageRows@@QEAAXPEAUHeroDamageData_t@@@Z@HPEAVIUIPanelClient@panorama@@PEAV56@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?9??RemoveDisconnectedAndWrongTeamPlayers@CCitadel_Hud_TopBar_Team@@QEAA_NXZ@_NPEAVCPanel2D@panorama@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?BB@??EventSubmitValue@CCitadel_UI_Popup_PostMatchSurvey@@AEAA_NHH@Z@_NPEAVCPanel2D@panorama@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?BJ@??RefineNode@RayTracingEnvironment@@AEAAXHPEBHHPEBUTriangleBounds_t@@V?$Vec3D@M@@2HPEAVCUtlMultiJobProcessor@@@Z@X$$V@std@@
@@ -8208,6 +8207,7 @@ $z(u&
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??OnClientPreOutput@CRenderGameSystem@@QEAAXAEBUEventClientPreOutput_t@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??SaveGame_Finalize@CEntity2SaveRestore@@UEAA_NPEAUSaveRestoreDataHandle_t__@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?1??OnClientPreOutput@CRenderGameSystem@@QEAAXAEBUEventClientPreOutput_t@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_4>@?1??UpdateDamageData@CCitadel_UI_DamageRows@@QEAAXPEAUHeroDamageData_t@@@Z@HPEAVIUIPanelClient@panorama@@PEAV56@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?1??UpdateDirtyPanel@CCitadel_Hud_PlayerIntents_Team@@UEAAXXZ@_NPEAVCCitadel_Hud_PlayerIntents_Player@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?1??UpdateDirtyPanel@CCitadel_Hud_TopBar_Team@@UEAAXXZ@_NPEAVCCitadel_Hud_TopBar_Player@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_4>@?BA@??UpdateSearch@CCitadel_Hud_Hero_Shop@@AEAAXXZ@_NPEAVCCitadel_ShopModsTier@@@std@@
@@ -13437,12 +13437,8 @@ $z(u&
 .{I_i
 .|$\u/
 .|$du3
-/%Sx1
-/%ugx
 /'/)/A/E/K/M/Q/W/o/u/}/
 /-?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-/-Kfx
-/-gcx
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 // All corners fully specified 
 // Perfect circular or elliptical panel (circular if box was square)
@@ -13457,16 +13453,17 @@ $z(u&
 /0vaeH
 /0v}I
 /2GG>!B
-/5!]d
-/53/d
-/57D?
-/5d y
-/5j,y
-/5k_s
+/5	Wd
+/5:6E
+/5?Wd
+/5qWd
 /<GE3
-/=5o/
-/=:;y
-/=<;y
+/=.v@
+/=0\T
+/=Nu@
+/=^z@
+/=n6y
+/=n|@
 />58d%
 /@Xv+
 /A#i!&
@@ -13592,10 +13589,12 @@ $z(u&
 0123456789abcdefghijklmnopqrstuvwxyz
 02V8[
 08@HP
-08@HRP
+08@HR
+08@JPg
 0;O@~
 0;Q5[
 0><[cZUg^>
+0>@x[
 0?NpH
 0@83t`3
 0A\][
@@ -13713,7 +13712,7 @@ $z(u&
 0D$4H
 0D$5H
 0D$6H
-0D;58d`
+0D;5(
 0D;v<|
 0D;{<
 0GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW
@@ -14087,7 +14086,7 @@ $z(u&
 24.CUserMsg_ParticleManager.SetSceneObjectTintAndDesat
 24.CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240712202205Z0/
+240713032327Z0/
 241009235959Z0a1
 25.CMsgClientToGCModifyDevAnnouncementsResponse.EResult"_
 25.CMsgServerSignoutData_DetailedStats.TimeSample.Stats
@@ -14336,7 +14335,7 @@ $z(u&
 4k_ECitadelDisconnectReason_GameDestroyedUnexpectedly
 4k_EGCMsgInitiateTradeResponse_Target_Already_Trading
 4k_EGCMsgInitiateTradeResponse_Trade_Banned_Initiator
-4u2fD9=
+4u2fD9=.
 4zj@1;IJ
 5'0v2ZP
 5(EWorkshopFileType) Type of Workshop file to publish.
@@ -14356,7 +14355,7 @@ $z(u&
 5YA1H
 5YA1I
 5c">/
-5fD9%r
+5fD9%
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 5k_EMsgClientToGCCancelUnfinalizedTransactionsResponse
 5k_RemoveItemAttribute_Failed_AttributeCannotBeRemoved
@@ -14523,6 +14522,8 @@ $z(u&
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8E;<$
 8Et8A
+8FPw[
+8F`v[
 8G(u1
 8Gets the list of nicknames this user has for other users
 8H9;u
@@ -14603,6 +14604,7 @@ $z(u&
 9)~P3
 9*t)I
 9+~)L
+9-$7]
 9.u(H
 90T1@I
 90t&H
@@ -14614,11 +14616,9 @@ $z(u&
 93~-3
 93~j3
 94(t H
-95-zB
-9581_
-95@2_
-95lQ_
-95u<\
+95 b_
+95Ul\
+95pa_
 97~)H
 98Spu4L
 98t H
@@ -14636,8 +14636,10 @@ $z(u&
 9;~"3
 9;~-3
 9<(t,H
-9=JXR
-9=]0]
+9==`]
+9=}V]
+9=}c]
+9=}i]
 9>powf
 9>~AH
 9>~ZH
@@ -15317,7 +15319,6 @@ $z(u&
 <empty member name>
 <empty>
 <entindex> <fieldname>:  Track changes to entity index entindex, for field fieldname.
-<f95I
 <ffff
 <fffffff
 <function>
@@ -15447,7 +15448,7 @@ $z(u&
 >d`D$
 >f;D$0t
 >f;D$4t
->fD9%E
+>fD9%
 >fN46R^
 >jtm}S
 >o}-XH
@@ -15658,6 +15659,7 @@ $z(u&
 ?HAI	81	9dcG'
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 ?HaveWriteLock_BlockReadsNow@CThreadRWLock_FastRead@@QEAAX_N@Z
+?Hc5d
 ?Hc7;w
 ?Init@CMemoryStack@@QEAA_NPEBDIIII@Z
 ?Init@CThread@@MEAA_NXZ
@@ -15894,12 +15896,15 @@ $z(u&
 @0333?
 @0333?H
 @08@HPX`hpx
+@08N4
 @09B0
 @0H9Gx
 @0HcB
 @1h!L
 @2A2G"$
 @2{Z@
+@60*[
+@6`m[
 @8(t)H
 @8(t~H
 @8)u&I
@@ -15919,8 +15924,7 @@ $z(u&
 @84/u
 @848u
 @84;u
-@85P1
-@85TPb
+@850a
 @88t(H
 @88tW
 @88uFH
@@ -15930,8 +15934,8 @@ $z(u&
 @8;tb3
 @8<(u
 @8<+u
-@8=A6Y
-@8=rD~
+@8=!fY
+@8=Rt~
 @8>tO3
 @8>uAH
 @8HcB
@@ -16012,6 +16016,8 @@ $z(u&
 @8~0tM
 @:o)u
 @:s0t
+@;~ |
+@;~p|
 @<:B<u
 @<:nq
 @>%>b
@@ -16121,7 +16127,6 @@ $z(u&
 @HHcB$;B(u
 @HPX&I
 @HPX`hv
-@HV`K[
 @Hc)E3
 @Hc*I
 @Hc13
@@ -16143,6 +16148,7 @@ $z(u&
 @M9fPu%A
 @M9nxu%A
 @MfKZ
+@N0\[
 @PHcB(;B,u
 @Requests the metadata that was generated from a specified fetch.
 @SATAUAVAWH
@@ -18289,7 +18295,6 @@ B>Bh9?
 B>J7I
 B@+BH
 B@8A@t
-B@E9<
 B@I;BHs
 B@L9A8u
 BA8AAt
@@ -20380,6 +20385,8 @@ C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier2\vdata_helpers.cpp
 C:\buildworker\citadel_staging_win64\build\src\vac\client\cdll_vac.cpp
 C:\buildworker\citadel_staging_win64\build\src\vpklib\packedstore.cpp
+C;t>(
+C;t><
 C@9A@t
 C@9CL}`A
 C@9G@t
@@ -33377,6 +33384,9 @@ CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class panorama::CSty
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class panorama::CStyleSymbol,class panorama::CLabel *,class CDefLess<class panorama::CStyleSymbol>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::Node_t,int>,int>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::Node_t,int>,int>::Grow
+CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::Node_t,int>,int>::Swap
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::Node_t,int>,int>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum EAbilitySlots_t,class CSubclassName<4>,class CDefLess<enum EAbilitySlots_t>,int>::Node_t,int>,int>::Grow
@@ -33671,6 +33681,10 @@ CUtlMemory<struct screentilt_t *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct std::pair<__int64,int>,int>::Grow
 CUtlMemory<struct std::pair<__int64,int>,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct std::pair<__int64,int>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct std::pair<struct CitadelAbilityVData const *,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int> const *>,int>::Grow
+CUtlMemory<struct std::pair<struct CitadelAbilityVData const *,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int> const *>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct std::pair<struct CitadelHeroData_t const *,class CPlayerSlot>,int>::Grow
+CUtlMemory<struct std::pair<struct CitadelHeroData_t const *,class CPlayerSlot>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct texture_use_info_t,int>::Grow
 CUtlMemory<struct texture_use_info_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct thinkfunc_t,int>::Grow
@@ -34184,6 +34198,9 @@ CUtlRBTree<struct CUtlOrderedMapBase<class panorama::CStyleSymbol,class panorama
 CUtlRBTree<struct CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::Node_t,class CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::Node_t,int>,int> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::Node_t,class CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::Node_t,int>,int> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::Node_t,class CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum AbilityCastEvent_t,class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeIParticleSystemDefinition> >,class CDefLess<enum AbilityCastEvent_t>,int>::Node_t,int>,int> >::RemoveAll
+CUtlRBTree<struct CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::Node_t,class CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::Node_t,int>,int> >::NewNode
+CUtlRBTree<struct CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::Node_t,class CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::Node_t,int>,int> >::RemoveAll
+CUtlRBTree<struct CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::Node_t,class CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum Class_T,class CUtlOrderedMap<enum ECitadelDamageType,class CCitadelUserMsg_RecentDamageSummary_DamageRecord,class CDefLess<enum ECitadelDamageType>,int>,class CDefLess<enum Class_T>,int>::Node_t,int>,int> >::Swap
 CUtlRBTree<struct CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::Node_t,class CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::Node_t,int>,int> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::Node_t,class CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::Node_t,int>,int> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::Node_t,class CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum EAbilityResourceType,struct HeroAbilityResourceDef_t,class CDefLess<enum EAbilityResourceType>,int>::Node_t,int>,int> >::RemoveAll
@@ -38088,9 +38105,9 @@ D$8|R
 D$8~5
 D$<8A
 D$<;o
+D$<A;
 D$<D+
 D$<Hc
-D$<Ic
 D$<fA;
 D$=Hc
 D$>Hc
@@ -38250,7 +38267,6 @@ D$PE+
 D$PE3
 D$PE9
 D$PE;
-D$PF;d*(
 D$PH+
 D$PH1C
 D$PH9A
@@ -38501,7 +38517,6 @@ D$|uDI
 D(n%6
 D)l$0
 D)|$t
-D* E9$
 D+3L9c0u	
 D+?+w
 D+@tD+B
@@ -38609,8 +38624,6 @@ D8 tKA
 D8 uhL
 D8$8u
 D8$:u
-D8%2`Z
-D8%7bZ
 D8&tO3
 D8(t	
 D8(t#H
@@ -38644,7 +38657,7 @@ D847u
 D848u
 D84:u
 D84>u
-D85j-
+D85J]
 D86te3
 D87tsL
 D87tvL
@@ -38772,8 +38785,7 @@ D9 ~DD
 D9!~iA
 D9#uMH
 D9#~'I
-D9%.D
-D9%b}
+D9%nN
 D9&t_I
 D9'~3I
 D9(uHH
@@ -38782,7 +38794,6 @@ D9(~jH
 D9)t3
 D9)t[
 D9+u!H
-D9-]A
 D90tWD
 D90~\H
 D91t7
@@ -38997,10 +39008,13 @@ D9|0 }2
 D9}@uAD
 D;!}.L
 D;$(t
+D;%KGc
+D;-)Dc
 D;3~3A
 D;4A8D
 D;6fA9D
 D;8fA
+D;=%&
 D;@H}
 D;A8u
 D;CX|
@@ -39103,6 +39117,7 @@ D;|>
 D;|>(
 D;~ u
 D;~(t
+D> A94
 D@D/lcO+hcK
 DATAH
 DATAL
@@ -39207,6 +39222,7 @@ DFLAG_SUPPRESS_KILL_CREDIT
 DFLAG_SUPPRESS_PHYSICS_FORCE
 DFLAG_TRACK_DAMAGE
 DFLAG_TRIGGER_FLINCH
+DFake a player report on the post game screen
 DGRAM_SCTP_READ
 DGRAM_SCTP_WRITE
 DH PARAMETERS
@@ -42864,8 +42880,6 @@ F84(u
 F89Fhu
 F89HXtRA
 F9d0@
-F;d*(
-F;d*<
 F;d9(
 F>qUxv
 F@9D$`
@@ -43195,7 +43209,6 @@ Failed to write %s!
 Failed to write SST to temp folder
 Failed!
 Fake Ent-Fire
-Fake a player report on the post game screen
 Fake a player slot for the post game screen
 Fake client, simulated server side; don't send network messages to them
 Fake entity '%s' (%d) double-destroyed
@@ -43778,7 +43791,7 @@ G$;C$t
 G(9C(u 
 G(9C(u2
 G(9C(uC
-G(9]@}
+G(9^@}
 G(IcW M
 G(Lcs 
 G(f94(
@@ -44999,9 +45012,11 @@ H9(uC
 H9+t	H
 H9+tf
 H9+uEA
-H9-m0]
-H9-tC
-H9-vYQ
+H9-!+1
+H9-E8
+H9-M`]
+H9-ds
+H9-{+1
 H9.t	H
 H9.u%H
 H9/t	H
@@ -45012,19 +45027,19 @@ H90tH
 H90tb
 H92tBA
 H93t	H
-H95&.
-H950EM
-H956&
-H957v
-H95A.
-H95G*
-H95X-
-H95XN~
-H95Yo"
-H95_N~
-H95g]
-H95jK
-H95wo
+H95	$&
+H95&V
+H951^
+H957Z
+H95:4
+H95@OM
+H95H]
+H95J{
+H95X~~
+H95^=r
+H95_~~
+H95y=r
+H95{;Q
 H97t	H
 H97u+A
 H98t)A
@@ -45037,8 +45052,13 @@ H98t}H
 H99tQA
 H9;t	H
 H9;tlH9y
-H9=#1O
-H9=*c
+H9=!D
+H9=,w
+H9=AO2
+H9=QU;
+H9=c;O
+H9=jm
+H9=ml\
 H9>u/H
 H9A s
 H9A u
@@ -45672,12 +45692,7 @@ Hc	D;
 Hc(A;
 Hc)E3
 Hc+;k
-Hc->J
-Hc-G^
-Hc-Ib
-Hc-b`
-Hc-g[
-Hc-o3
+Hc-Oc
 Hc.;n
 Hc/;o
 Hc/Ic
@@ -45688,8 +45703,8 @@ Hc7;w
 Hc8a"
 Hc;;{
 Hc;A;
-Hc=	z
-Hc=6H
+Hc=6x
+Hc=eI*
 Hc>;~
 Hc>HcK
 Hc>Ic\
@@ -46482,7 +46497,7 @@ HeroesContainer
 HeroesContainerRecommended
 Hex and octal numbers must be integers.
 HfA;(
-HfD9%
+HfD9%WC
 Hg>?S
 Hhr+g
 HiL$H
@@ -49651,7 +49666,7 @@ L$ E;
 L$ H+
 L$ H3
 L$ H9
-L$ H95:
+L$ H95
 L$ H9H
 L$ H;
 L$ Hc
@@ -49775,7 +49790,7 @@ L$0E3
 L$0E;
 L$0H+
 L$0H3
-L$0H95!
+L$0H95
 L$0H;
 L$0H;K
 L$0Hc
@@ -49808,7 +49823,6 @@ L$3E;
 L$4+L$8
 L$4+L$H
 L$4;\$P
-L$4A;
 L$4D+
 L$4D;eh
 L$4D;{
@@ -50100,13 +50114,8 @@ L9	u)H
 L9 t A
 L9#t	H
 L9#u/H
-L9%"#
-L9%%K
-L9%,$
-L9%:%a
-L9%T#a
-L9%z7O
-L9%{$a
+L9%4Sa
+L9%[Ta
 L9&t	H
 L9&us
 L9't	H
@@ -50126,8 +50135,10 @@ L90t>
 L92t;H
 L92tDA
 L93t	H
-L95"F(
-L95L(*
+L95,X*
+L95NH
+L95RP(
+L95VC
 L97t{L
 L98t?I
 L98t|H
@@ -50139,9 +50150,9 @@ L9;t	H
 L9;tHA
 L9;u	H
 L9<1uP
-L9=@9k
-L9=a,
-L9=|,
+L9= ik
+L9=Q\
+L9=l\
 L9>uEH
 L9?t	H
 L9?tb
@@ -50558,7 +50569,6 @@ Lc0A;
 Lc0D;p
 Lc3D;s
 Lc3Hc
-Lc5$b
 Lc6A+
 Lc6D;v
 Lc6Hc
@@ -50568,9 +50578,8 @@ Lc8D;x
 Lc9E+
 Lc;A+
 Lc;D;{
-Lc=,s	
-Lc=1b
-Lc=4q	
+Lc=l}	
+Lc=t{	
 Lc>A+
 Lc>D;~
 Lc?D;
@@ -50699,6 +50708,7 @@ Lcd$0H
 Lcd$0J
 Lcd$4D;
 Lcd$8
+Lcd$8Lcl$TE;
 Lcd$@
 Lcd$@A
 Lcd$@H
@@ -50707,7 +50717,6 @@ Lcd$P
 Lcd$PD;
 Lcd$PE;
 Lcd$XE
-Lcd$\Lcl$`E;
 Lcd$`D;d$p
 Lcd$p
 Lcd3pL
@@ -50791,7 +50800,6 @@ Lc|$@Lc#E
 Lc|$H
 Lc|$HE;
 Lc|$PM
-Lc|$XD;
 Lc|$dA
 Lc|$dL
 Lc|$hL
@@ -51091,7 +51099,6 @@ Lycian
 Lydian
 L|4f;
 L},j'"7Er
-M	>`\
 M H9t
 M HcG
 M Ic<
@@ -52960,6 +52967,7 @@ Neutral Trooper Orb
 Neutral World Pickup
 NeutralPing
 NeutralPitch
+Neutrals
 Never
 Never close the group automatically (used to indicate an error like the process exiting unexpectedly)
 New Command
@@ -53178,6 +53186,7 @@ O%.U/
 O(+W0
 O(A+W0
 O,HcD$@H
+O.|:<F<2Ec
 O0+W8
 O0HcG(H
 O1NzNfj'fGv
@@ -53720,8 +53729,9 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08Jp
+P08@JPg
+P08J 5
+P08N4
 P09G@
 P0A9F@A
 P0HcC(H
@@ -53730,7 +53740,7 @@ P2A2T$"
 P2A2W"
 P2P ping to "%s". Timed out after %.2fms
 P2P_Messages
-P6 k[
+P6`O[
 P8D:8
 P8H9|$ht
 P8H9|$pt
@@ -54186,7 +54196,7 @@ PVAL_TYPESAFE_INT
 PVAL_VEC3
 PXD8d$`u
 PXD9l$0u
-PXHc-1`
+PXHc-
 PXHc}
 PX`hpx
 P_[]H
@@ -55151,7 +55161,7 @@ R8G8B8_ETC2
 R8G8_UINT
 R8_UINT
 R=1C&b
-R@8=6B
+R@8=vL
 RA+B(
 RADIATION
 RAND lib
@@ -56036,6 +56046,7 @@ SIG_CB
 SINGLE_LINE_COMMENT
 SINGLE_QUOTED_STRING
 SINGLE_QUOTE_CHAR
+SL95	
 SLASH
 SLOWBURN
 SLOWED
@@ -59903,19 +59914,19 @@ T$xI;
 T$xLc
 T$xMc
 T$xfD
+T%)rx
+T%X:y
 T%d %s
-T%yw1
+T%h?y
 T(<A#
-T-Sfx
 T1 Boss
 T14A#
 T2 Boss
-T5YDD
-T5~,"
+T5<.s
+T5~L"
 T61STRING
 T72[t
-T=a,y
-T=j"3
+T=jB3
 TANGENT_U_WS
 TANGENT_V_WS
 TC	f\
@@ -60979,6 +60990,7 @@ U).ovc
 U)l:T^8rv
 U,E3M
 U-olL
+U0McB
 U79Pc
 U7{8+S
 U8HcE0H
@@ -60986,7 +60998,6 @@ U8_`tP
 U8l$P
 U<E3M E3E$E3](E3U,A3
 U?Y5qX}	f
-U@McB
 UA>N0Wl
 UATAUAVAW
 UATAUAVAWH
@@ -61006,6 +61017,7 @@ UAUAVI
 UAUAWH
 UAVAW
 UAVAWH
+UD8%N
 UD:F<
 UF_FAIL_INVALID_ENTITY
 UF_FAIL_INVALID_FLAGS
@@ -62122,6 +62134,7 @@ VolumetricFog
 VolumetricFogView
 VoteData
 VoxManager
+Vpfff
 Vrad3_001
 VulnerabilityPerStack
 Vw@*L
@@ -62129,19 +62142,16 @@ Vx9Uw
 V~~Vq
 W"Fe~
 W'6S`
-W-.`>
-W-]J1
 W0t}H
 W3i+,
-W57r+
-W5<Yl
-W5QHg
+W5,pl
+W5qTg
 W8IcG(M
 W8uDH
 W9QHI
 W;()f
-W=&([
 W=AlE3
+W=v"[
 W>peSp>9
 W@H1G@A
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.
@@ -62583,15 +62593,17 @@ X to the Y power
 X!;3; 
 X!t5~
 X!}}p|u
-X%R&y
+X%:Ey
+X%M)y
+X%b2y
 X(Optional) If true, only return the published file ids of files that satisfy this query.
 X,,tX,,t4
-X-&O*
-X-|rR
+X-OI*
+X-vI*
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X400Name
 X400Name:<unsupported>
-X5!71
+X5)%)
 X500algorithms
 X509 CERTIFICATE
 X509 CRL
@@ -62704,6 +62716,9 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
+X5\v#
+X5q11
+X5z$P
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -62727,9 +62742,8 @@ X9_62_CHARACTERISTIC_TWO
 X9_62_CURVE
 X9_62_FIELDID
 X9_62_PENTANOMIAL
-X=!Id
-X=#P6
-X=Flf
+X=#p6
+X=qCd
 X@fff
 XA\[H
 XA\_^[
@@ -62780,6 +62794,7 @@ XA__^[
 XAxisLabel
 XB;T	
 XB`i|
+XC;t>(
 XD$0@
 XD$0D
 XD$0H
@@ -62794,6 +62809,7 @@ XD>8H
 XD{p7
 XE;T	
 XF;D	
+XF;t	
 XHcD3
 XInputPad
 XJcD	
@@ -62828,12 +62844,10 @@ X_^[]
 X_^[]H
 X_^[]I
 X_^][
-X`hrP
 Xd$HD
-Xf S[
-Xf@T[
 XfD;\
 XfD;|
+Xf`y[
 XhHc@`H
 Xl$hH
 XqgA+
@@ -62859,36 +62873,40 @@ X|$TI
 X|$XA
 X|$|A;
 X~ '.
-Y%,nd
-Y%9i!
-Y%T3G
-Y%nbx
+Y%I)y
+Y%|hd
 Y(L@L
 Y(Optional) Starting index to begin enumeration at. Defaults to the beginning of the list."Z
+Y-@wE
+Y-d ,
+Y-d!0
 Y0HcR
-Y5$B?
-Y5%X:
-Y5&dq
-Y54aJ
-Y55|S
-Y5=(Q
-Y5Cx,
-Y5E8Q
-Y5QM3
-Y5c^*
-Y5fc:
-Y5l]>
-Y5x;<
-Y5{c}
-Y5}j1
+Y5$b?
+Y5-T:
+Y50IV
+Y576O
+Y581C
+Y5=XQ
+Y5EhQ
+Y5Jm0
+Y5Qm3
+Y5Z3@
+Y5c~*
+Y5gO+
+Y5jn0
+Y5l}>
+Y5oLn
+Y5uR:
+Y5x[<
 Y9"SD
 Y93a=7c@
 Y;C;8V
-Y=/O[
-Y=Os1
-Y=T8Q
-Y=iO1
-Y=olK
+Y=49%
+Y=C& 
+Y=ThQ
+Y=l^U
+Y=o21
+Y=}(2
 Y>kX>M
 YAxisLabel
 YD$ A
@@ -62999,6 +63017,7 @@ ZiplineProtectionDamageAmp
 ZiplineProtectionSlowDurationOnHit
 ZiplingAttachStateChanged
 Zipping %s (%d files)
+Zkr#?
 Zod(^?
 ZoomBias
 ZoomTask
@@ -63102,6 +63121,7 @@ ZwKiZwKi
 [dt %5.2f] velocity: %s
 [ex %5.2f] extrap  : frac %.6f%s
 [f7@7F
+[f95Z
 [f<>28
 [fA9<
 [fE94
@@ -63289,7 +63309,6 @@ ZwKiZwKi
 \$0uC
 \$0uYLk
 \$49\$P
-\$4A9
 \$4fA
 \$4z$u"
 \$5L3
@@ -63324,6 +63343,7 @@ ZwKiZwKi
 \$<E3
 \$@	4(H
 \$@	t
+\$@A9
 \$@A;
 \$@D8
 \$@D;
@@ -63423,6 +63443,7 @@ ZwKiZwKi
 \$XHcL$PL
 \$XHc\$p
 \$XHc\$pL
+\$XHc\$pN
 \$XHct$PuAIc
 \$XL9
 \$XL9t$xt
@@ -63517,15 +63538,15 @@ ZwKiZwKi
 \$xu3M
 \$|;qX
 \$|E3
-\%#dx
 \%02X
-\-:O*
+\%Oqx
+\%snx
 \1kYL
 \3$fA
 \43n7
 \;{Lr
-\=;P6
-\=^R3
+\=;p6
+\=^r3
 \??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 \C not allowed in lookbehind assertion
 \D$0H
@@ -63604,7 +63625,8 @@ ZwKiZwKi
 ] Lc}
 ] is an invalid data character in JavaScript compatibility mode
 ] ~4H
-]%uw1
+]%>m0
+]%^n0
 ]&@+fk:
 ]&g''}
 ](IcE Hk
@@ -63614,14 +63636,14 @@ ZwKiZwKi
 ]0H;w0t!H
 ]0tTH
 ]1h=bfz
-]5_2-
+]5T]D
+]5_R-
 ]8A9^
 ]8A;^
 ]8d$@
 ]8t'H
 ]:\|^
-]=ANV
-]=gR3
+]=gr3
 ]>)2X
 ]?H9]'t
 ]@A;_@A
@@ -63650,7 +63672,6 @@ ZwKiZwKi
 ^ D8d
 ^ IcF
 ^ Icv
-^%}gJ
 ^,tyI
 ^.om5r
 ^0fA;
@@ -63677,7 +63698,7 @@ ZwKiZwKi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^`Hc~xA
 ^`IcvXH
-^fD9%Rc
+^fD9%2
 ^fD;]
 ^pIcvhH
 ^rLcgXD
@@ -63697,7 +63718,7 @@ _-?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
 _0D9sL
 _0HcC
 _0HcC 
-_5/G+
+_5/g+
 _89_D
 _8Hcs
 _8I;_@tj
@@ -63810,7 +63831,9 @@ _}eOk
 `.rdata
 `0HcK
 `28)fk
-`6Pf[
+`6 .[
+`6P-[
+`6P.[
 `8Lcs 
 `:zQF
 `@ `QE
@@ -67614,7 +67637,7 @@ d$PE3
 d$PH9/t	H
 d$PI9
 d$PL+
-d$PL9%
+d$PL9%a
 d$PL9d$X
 d$PM3
 d$PMc'L
@@ -69091,7 +69114,6 @@ eye_occlusion_renderer
 eyes_follow
 eyj5yR
 ezd<f
-f	-qZ
 f	rixZ
 f!D$*
 f!D$:
@@ -69123,26 +69145,21 @@ f9,Ju
 f9,^u
 f9,pu
 f9,~u
-f9-!	
-f9-/F
-f9-Fw
-f9-e`Y
-f9-~F
+f9-2<>
+f9-Z<>
+f9-oP
 f9/tR
 f93t`
-f95V`
-f95v*
+f9513
+f95B=
 f99tj
 f9<Au
 f9<Fu
 f9<H}
 f9<Ju
-f9= hY
-f9=PC
-f9=ahY
-f9=bi
-f9=qO
-f9=xOY
+f9=4+
+f9=D_
+f9=Ps
 f9>tq
 f9A^}
 f9B0u0
@@ -69257,17 +69274,18 @@ fC94wu
 fC9D,
 fC;D0
 fChance > 0.0f && fChance <= 1.0f
-fD	%"
-fD	%%
 fD	%,
-fD	%L
-fD	%M
-fD	%jy
-fD	-X
-fD	5!v
-fD	5e\
-fD	5e^
+fD	%-
+fD	%J
+fD	%h
+fD	%v
+fD	-8$
+fD	-m
+fD	-m#
+fD	5E
+fD	5O
 fD	5o
+fD	5q
 fD!3L
 fD!;L
 fD!d$*
@@ -69291,29 +69309,21 @@ fD9"u
 fD9$Hu
 fD9$Ou
 fD9$wu
-fD9% ;
-fD9% <
-fD9%&,
-fD9%(c
-fD9%):
-fD9%,e
-fD9%0j
-fD9%>9
-fD9%@d
-fD9%P:
-fD9%k9
-fD9%q
-fD9%w9
-fD9%|,
+fD9% 
+fD9%5E
+fD9%>D
+fD9%`E
+fD9%`F
+fD9%f6
+fD9%iD
+fD9%~C
 fD9't
 fD9'u
 fD9(t
 fD9,Au
 fD9,pu
-fD9-@~
-fD9-I
-fD9-oV
-fD9-u
+fD9-@
+fD9-U
 fD91u
 fD91uTL9r
 fD92t
@@ -69324,18 +69334,19 @@ fD94Ku
 fD94Pu
 fD94Q}
 fD94iu
-fD95%Y
-fD955V
-fD95H
-fD95pV
-fD95r
+fD95(
+fD95R
+fD95ec
+fD95iPP
+fD95t
+fD95u`
+fD95wQP
 fD97t
 fD98@
 fD98u
 fD9;u
 fD9;|
-fD9=3y
-fD9=p
+fD9=;/
 fD9@(u
 fD9DP
 fD9H(|
@@ -70613,7 +70624,6 @@ gunslinger_tenacity
 gustdirchange
 gustduration
 gxu*H
-gybDzN
 g{syW*
 g|FeW
 g~i|H
@@ -71063,6 +71073,7 @@ hovering
 how fast to run (1 to use player max run speed).
 hows joint info for this entity
 hp_stat
+hpzPg
 href="
 hscript
 hscript_lightbinding
@@ -71166,19 +71177,16 @@ iEntity >= 0
 iFFp}A
 iFH9-
 iFH9-(
-iFH9-(XP
-iFH9-8
-iFH9-8Y
+iFH9-8Xe
 iFH9-H
-iFH9-HW<
+iFH9-H\
 iFH9-X
-iFH9-X(e
+iFH9-X[e
 iFH9-h
-iFH9-h,
 iFH9-x
-iFH9-x+e
-iFH9-xSP
-iFH9-xd
+iFH9-x"W
+iFH9-x9d
+iFH9-xa<
 iHu H
 iILV]
 iIconIndex >= 0
@@ -72337,9 +72345,8 @@ justify_horizontal
 justify_vertical
 k @8l$xt
 k VWATAVAWH
-k f9-/\
-k f9-/^
-k f9-[v
+k f9-
+k f9-;
 k u H
 k(D9{ |AH
 k/.fG"
@@ -73588,6 +73595,7 @@ l$8IcD$
 l$8L;l$@t
 l$8Lc
 l$8M3
+l$8M;
 l$8Mc
 l$8f;|1
 l$8fA
@@ -73775,6 +73783,7 @@ l$`ff
 l$`fff
 l$`t	H
 l$`t&
+l$`u1H
 l$`u5M
 l$bA;
 l$h9W0|<
@@ -73788,7 +73797,7 @@ l$hHc
 l$hHc+;k
 l$hIc?E3
 l$hL;
-l$hLc-b
+l$hLc-BJ*
 l$hff
 l$hfff
 l$hs^H;
@@ -82152,19 +82161,19 @@ o!>d]
 o"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""pqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr^^stuvwwxyz{|}~
 o$$fA
 o$g31
-o%m/:
+o%]_:
 o&1m&
 o(H9o
 o(HcE
 o(L9s(t
 o*:TJ&
 o,u H
+o-u_:
 o0H9o
 o0L9s0t
 o1+v3
 o2i_ECPublicKey
-o55#X
-o5x/:
+o5h_:
 o8HcE
 o8HcO0L
 o8IcGPL
@@ -82174,8 +82183,7 @@ o:H9)t
 o<$fA
 o<$fD
 o<$fE
-o=k/:
-o=pU&
+o=[_:
 o??ToString@Value@v8@@QEBA?AV?$MaybeLocal@VString@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 o@ fA
 o@0fE
@@ -82673,7 +82681,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
+p08@H^4
 p0R^G'
 p1`@H
 p2pAddr.IsType<CSteamID>()
@@ -82938,6 +82946,7 @@ pHandle
 pHandler
 pHandler != this
 pHandler == &g_EntitySaveRestoreBlockHandler || (m_Handlers.Count() >= 1 && m_Handlers[0] == &g_EntitySaveRestoreBlockHandler)
+pHc-q
 pHcD$ H
 pHeader->m_nHeaderVersion == RESOURCE_FILE_HEADER_VERSION
 pHelper
@@ -85534,7 +85543,6 @@ s WATAUAVAWH
 s WAUAWH
 s WAVAWH
 s f95
-s f95;Z
 s f9s"~
 s u H
 s u!H
@@ -85573,7 +85581,7 @@ s5fE9!
 s6!TYK
 s6C}n
 s7fff
-s8H95
+s8H95s
 s8Hc+;
 s8HcCP
 s8f9s:~
@@ -85598,7 +85606,7 @@ sFD8sDt
 sFD95
 sGfff
 sGroupName.Length() > 0
-sHH95
+sHH95*
 sHH9s0H
 sHHcC@M
 sHf9sJ~
@@ -87497,7 +87505,7 @@ t >= 0.0f
 t >= 0.0f && t <= 1.0f
 t @8:t
 t A9@
-t D85
+t D85r
 t D8h
 t D9@
 t D9A
@@ -87595,7 +87603,7 @@ t$ L9o(u
 t$ L;
 t$ Lc
 t$ Lc3D;s
-t$ Lc5!
+t$ Lc5
 t$ Lcs
 t$ Li
 t$ Lk
@@ -87711,7 +87719,7 @@ t$0Hi
 t$0Hk
 t$0I+
 t$0Ic
-t$0L9%
+t$0L9%v
 t$0Lc
 t$0Lcs8A
 t$0Mc
@@ -87804,7 +87812,6 @@ t$@@2
 t$@@:
 t$@A+
 t$@A8
-t$@A;
 t$@A_A^A]A\_
 t$@A_A^A]_
 t$@D#
@@ -88005,7 +88012,6 @@ t$X~4H
 t$ZHc3D
 t$\;s
 t$\D;
-t$\E;
 t$`8E tKH
 t$`9t$p|LH
 t$`9t$p|NH
@@ -88049,13 +88055,13 @@ t$dL9b u
 t$dLc|$PD
 t$dfD
 t$f95
-t$f95_(
+t$f95'
 t$h9k 
 t$h;k0
 t$h;s
 t$h;w`
 t$h@2
-t$h@8-
+t$h@8-H
 t$hA8
 t$hD;s0
 t$hE3
@@ -88185,6 +88191,7 @@ t*HcT
 t*Hc]
 t*fA;
 t*fD9%
+t*fD9%(qM
 t*fff
 t+;Q s&H
 t+@8>t&I
@@ -88200,7 +88207,7 @@ t,9uPu"
 t,<tt
 t,@8w
 t,HcA
-t,f95|
+t,f95
 t,fff
 t-A9}`u'Hc>H
 t-H91t(H
@@ -88237,7 +88244,7 @@ t2@80t-H
 t2@88t-D
 t2D88t-H
 t2L9s
-t2fD9-~
+t2fD9-^
 t39N(t.H
 t3D8 t.H
 t3D9@
@@ -88248,7 +88255,7 @@ t4D9t$0u-
 t4I92u/M
 t4L;C
 t4fA;
-t4fD9=~
+t4fD9=^
 t5A9>t
 t5D8 t0H
 t5D80t0H
@@ -88267,20 +88274,19 @@ t6D88t1H
 t6D9A
 t6H91t1H
 t6H95
-t6H95?
-t6H95a
+t6H95+
 t6HcH
 t6L9c`
-t6f95
+t6f95%
 t6fE94
 t79(~$H
 t7HcP
-t7L9%
+t7L9%HV
 t8@80t
 t8D9c
 t8H9)t3H
 t8IcD$
-t8f95
+t8f95!
 t9A+GHx3;B
 t9D8 t4L
 t9D9>t
@@ -88326,7 +88332,7 @@ t?HcS
 t?Hch H
 t@9+u,9s
 t@<Ot<<
-t@@85B
+t@@85"
 t@@89t;L
 t@D8&t;H
 t@D8gCu
@@ -88335,7 +88341,7 @@ t@H9w0uWH
 t@H9~0uWH
 t@Hcm
 t@Ic6A
-t@f9=4
+t@f9=t
 t@fff
 tA8_:t
 tAA9P
@@ -88361,7 +88367,7 @@ tBLcu
 tBfff
 tCB94"t=H
 tCHc;;{
-tCfD95((P
+tCfD95
 tCs%@
 tD@8-
 tDD8d$r
@@ -88461,7 +88467,7 @@ tTvR2
 tU;\$0tH
 tUD88t6H
 tUD8e
-tUH95y
+tUH95
 tUH99uPL
 tUHch H
 tUIcE
@@ -88536,7 +88542,7 @@ t`H9X
 t`H9o@t0H
 t`Hcq
 t``4*O
-t`f95
+t`f95 =
 t`f9Q
 t`v^2
 t`v^@2
@@ -88825,6 +88831,7 @@ thumper_ability_2
 thumper_ability_3
 thumper_ability_4
 thumper_use_plane_reflection
+thvfE2
 ti@8*td3
 ti@82td3
 ti@8:td3
@@ -89240,7 +89247,7 @@ t{vy2
 t|@8}(uvE3
 t|D8}`tvH
 t|H9;uwD
-t|H9=\
+t|H9=L
 t|McP83
 t|fff
 t}Lc(A
@@ -89258,7 +89265,7 @@ u	D9q
 u	D;Q
 u	D;W
 u	H9(
-u	H9-T
+u	H9-48
 u	H90
 u	H98
 u	f9/
@@ -89346,7 +89353,7 @@ u2E9o
 u2H98t-
 u2L9(t-
 u2M9H(H
-u2fD9%7:
+u2fD9%wD
 u39L$Du-A
 u3H9C H
 u3H9C(H
@@ -89387,14 +89394,14 @@ u=HcD$0L
 u>9A8u9
 u>D8s0u8
 u>Lc[
-u?8Chu:f9-
+u?8Chu:f9-D
 u?L9(u:
 u@9y4tVH
 u@@8sTuP
 u@H9C H
 u@H9C(H
 u@HcL$0
-u@f9=ENY
+u@f9=%~Y
 uA8Ghu<f95
 uAH9x
 uAL9(t<I
@@ -89478,6 +89485,7 @@ uUD8e
 uVD9E
 uVH9C H
 uVH9T$`
+uWD9m
 uWH9C(H
 uWH9k
 uWire <= UINT32_MAX
@@ -89486,6 +89494,7 @@ uXE;wX
 uXfE;
 uXu;H
 uY@8w
+uYD9m
 uYHcMp
 uYL9%d
 uZ9{8
@@ -90208,7 +90217,7 @@ vecMessages.Count() <= CITADEL_PING_WHEEL_MAX_RESPONSES
 vecParticleJobs.Count() == 0
 vecPeerFound.Count() == m_PeerList.Count()
 vecPingMessageIDs.Count() < 3
-vecProgressBars.Count() == vecDamageData.Count()
+vecProgressBars.Count() == vecDamageByType.Count()
 vecSave
 vecStats.Count()
 vecUnits.IsEmpty()
@@ -90776,6 +90785,7 @@ x_resolution
 x`\`U
 xatjD
 xdigit
+xe;=Wd
 xe_hilbert_lut.vtex
 xegtao_ao
 xegtao_ao_working
@@ -90800,14 +90810,14 @@ xrJ:DCG
 xs == 0
 xzHcC
 x|9=!
-x|9=6
+x|9=6%1
 x|9=J
 x|9=Q
 x|9=U
 x|9=X
 x|9=n
-x|9={
-x|9=~
+x|9={-1
+x|9=~41
 x~HcC
 y D8<.u
 y axis
@@ -90851,7 +90861,6 @@ yakuza_summon_gangster
 yakuza_teleport_to_gangster
 yawmax
 yawmin
-yb,4K
 yellow
 yellowLane
 yellowgreen
@@ -90956,7 +90965,6 @@ zxNIjo
 { H9{
 { L9/t
 { fD9=
-{ fD9=8
 { u H
 { u!H
 {$){ u
@@ -91026,7 +91034,7 @@ zxNIjo
 {s:sign}
 {s:user_rich_presence}
 {un'%
-{xH9=0
+{xH9= '
 {x`M`
 {}()':
 |	;QD
@@ -91215,7 +91223,6 @@ zxNIjo
 |$4E3
 |$4H+
 |$4Hc
-|$4u9
 |$89C
 |$89C0u
 |$89{
@@ -91299,6 +91306,7 @@ zxNIjo
 |$@fD
 |$@ff
 |$@t#
+|$@tC
 |$@tbH
 |$@tnH
 |$@u H
@@ -91556,7 +91564,7 @@ zxNIjo
 |(tFM
 |)@8~!t
 |)L9c
-|)f95Dw:
+|)f95D
 |+Hc;;{
 |,I9,
 |11Jv
@@ -91564,7 +91572,7 @@ zxNIjo
 |8Hc\
 |<C!FReQ
 |>>B|>>Bq
-|D8=:
+|D8=j
 |FA;B
 |HcK`A
 |InzT
@@ -91683,12 +91691,13 @@ zxNIjo
 }LuHO
 }PfD;vvwIfE;
 }P|EH
-}Q;=yA-
+}Q;=yq-
 }R;_$
 }T;_$
 }Ufff
 }VKRZ
 }W70d
+}WA;_\
 }XA9U\trA
 }Xee+
 }Xf;_>wRfA;

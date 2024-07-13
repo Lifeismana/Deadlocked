@@ -327,7 +327,6 @@
 .HudDamageReport .DamageSection #DamageByHero
 {
 	flow-children: right;
-	width: 320px;
 	height: 180px;
 	padding: 0px;
 	horizontal-align: center;
@@ -364,6 +363,23 @@
 {
 	max-height: 55px;
 	horizontal-align: center;
+}
+
+.HudDamageReport .DamageSection #DamageByHero .HeroDamageColumn .NeutralImage
+{
+	width: 43px;
+	height: 55px;
+	visibility: collapse;
+}
+
+.HudDamageReport .DamageSection #DamageByHero .HeroDamageColumn.Neutrals #HeroImage
+{
+	visibility: collapse;
+}
+
+.HudDamageReport .DamageSection #DamageByHero .HeroDamageColumn.Neutrals .NeutralImage
+{
+	visibility: visible;
 }
 
 .HudDamageReport .DamageSection #DamageByAbility
@@ -547,6 +563,35 @@
 	margin-right: 10px;
 	padding: 9px 10px;
 	background-color: #00000090;
+}
+
+.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .killing_blow
+{
+	ignore-parent-flow: true;
+	visibility: collapse;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 35px;
+	x: -24px;
+	y: -11px;
+	z-index: 100;
+	background-image: url("s2r://panorama/images/hud/dmgsummary_killing_blow.vsvg");
+}
+
+.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .isKillingBlow .killing_blow
+{
+	visibility: visible;
+}
+
+.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .killing_blow Label
+{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Retail Demo";
+	color: #fff;
+	text-shadow: 0px 0px 3.0 #FF5656;
 }
 
 CitadelTooltipDamageReportHeroSummary #Contents,CitadelTooltipDamageReportAbilitySummary #Contents
