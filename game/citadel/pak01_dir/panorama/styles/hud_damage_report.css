@@ -86,6 +86,18 @@
 	opacity: 1;
 }
 
+.HudDamageReport.Minimized
+{
+	margin-right: 0px;
+}
+
+.connectedToHeroTesting .HudDamageReport.Minimized
+{
+	vertical-align: bottom;
+	margin: 0px;
+	margin-bottom: 100px;
+}
+
 .HudDamageReport.Minimized .DamageSection,.HudDamageReport.Minimized .TimeControl
 {
 	visibility: collapse;
@@ -93,17 +105,24 @@
 
 .HudDamageReport.Minimized .Header .DamageReportHeader
 {
-	font-size: 16px;
+	font-size: 18px;
+	margin-right: 0px;
 }
 
 .HudDamageReport.Minimized .Header .CloseButton
 {
-	background-image: url("s2r://panorama/images/icons/icon_graph.vsvg");
+	visibility: collapse;
+}
+
+.HudDamageReport.Minimized .Header #ViewingHeroImage
+{
+	max-height: 40px;
+	margin: 4px;
 }
 
 .HudDamageReport.Minimized #ReportContents
 {
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 .Minimized.HudDamageReport
@@ -117,7 +136,7 @@
 	horizontal-align: right;
 	z-index: 199;
 	margin-top: 130px;
-	width: 450px;
+	width: 470px;
 	border-radius: 5px 0px 0px 5px;
 	border: 1px solid #ffffff01;
 	font-family: "Retail Demo";
@@ -130,9 +149,35 @@
 	visibility: collapse;
 }
 
-.HudDamageReport.ShowAlways:not(.Hidden),.dead .HudDamageReport:not(.Hidden),.spec_mode .HudDamageReport:not(.Hidden)
+.HudDamageReport.ShowAlways:not(.Hidden),.HudDamageReport.gDetailView:not(.Hidden),.dead .HudDamageReport:not(.Hidden),.spec_mode .HudDamageReport:not(.Hidden)
 {
 	visibility: visible;
+}
+
+.HudDamageReport.in_item_shop
+{
+	opacity: 1;
+	margin-top: 150px;
+	z-index: 201;
+}
+
+.HudDamageReport.in_item_shop #ReportContents
+{
+	opacity: 1;
+}
+
+.HudDamageReport.in_item_shop.Minimized #ReportContents
+{
+	opacity: 1;
+}
+
+.HudDamageReport.in_item_shop.Minimized .Header
+{
+	margin-left: 0px;
+	padding: 10px;
+	flow-children: right;
+	vertical-align: middle;
+	background-color: #2E2E2E;
 }
 
 .HudDamageReport #ReportContents
@@ -140,7 +185,7 @@
 	flow-children: down;
 	background-color: #1E2616;
 	z-index: 2;
-	opacity: 0.95;
+	opacity: 0.98;
 }
 
 .HudDamageReport .Header
@@ -150,12 +195,14 @@
 	flow-children: right;
 	vertical-align: middle;
 	background-color: #10130D;
+	height: 80px;
 }
 
 .HudDamageReport .Header #ViewingHeroImage
 {
 	max-height: 45px;
 	margin: 8px;
+	vertical-align: center;
 }
 
 .HudDamageReport .Header .DamageReportHeader
@@ -163,6 +210,7 @@
 	font-size: 20px;
 	vertical-align: middle;
 	font-weight: bold;
+	margin: 4px;
 }
 
 .Minimized .HudDamageReport .Header .DamageReportHeader

@@ -12,9 +12,13 @@
 			</Panel>
 			<Label class="notSpectatingUnitControl highlighted" text="{s:spectator_mode}" html="true" />
 			<Label class="playerName highlighted" text="{s:spectatedPlayerName}" html="true" />
-			<Panel id="next_prev" class="specControlItem">
+			<Panel id="next_player" class="specControlItem specPlayerNav">
 				<Label class="keyBind" text="{s:key_next_target}" html="true" />
-				<Label class="keybindTitle" text="Cycle Players" />
+				<Label class="keybindTitle" text="Next Player" />
+			</Panel>
+			<Panel id="prev_player" class="specControlItem specPlayerNav">
+				<Label class="keyBind" text="{s:key_prev_target}" html="true" />
+				<Label class="keybindTitle" text="Prev Player" />
 			</Panel>
 			<Panel id="swap_camera" class="specControlItem spectatorOnlyControl LeftRightFlow">
 				<Label class="keyBind spectatorOnlyControl" text="{s:spec_camera_mode}" html="true" />

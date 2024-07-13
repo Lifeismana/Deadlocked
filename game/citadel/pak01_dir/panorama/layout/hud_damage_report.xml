@@ -24,10 +24,10 @@
 			</Panel>
 		</snippet>
 	</snippets>
-	<Panel class="HudDamageReport">
+	<Panel class="HudDamageReport Minimized">
 		<GlobalClassListener classes="gDetailView" />
 		<Panel id="ReportContents">
-			<Panel class="Header">
+			<Panel class="Header" onactivate="CitadelHudDamageReport_SetMinimized(false)">
 				<CitadelHeroImage id="ViewingHeroImage" scaling="stretch-to-cover-preserve-aspect" heroimagestyle="vertical" />
 				<Label html="true" class="DamageReportHeader" text="#Citadel_HUD_DamageReport_DamageReceived" />
 				<Panel class="TimeControl">
@@ -40,7 +40,7 @@
 						<Label id="TimeOption30" class="TimeControlOption" value="30" text="#Citadel_HUD_DamageReport_Time30" />
 					</DropDown>
 				</Panel>
-				<Panel class="CloseButton" onactivate="$.GetContextPanel().ToggleClass(&apos;Minimized&apos;)" />
+				<Panel class="CloseButton" onactivate="CitadelHudDamageReport_SetMinimized(true)" />
 			</Panel>
 			<Panel class="DamageSection">
 				<Panel class="DamageControlRow DamageControls">
