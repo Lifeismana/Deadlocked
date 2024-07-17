@@ -173,6 +173,7 @@
 	Not suitable for ECDSA.
 	Objective
 	PFT_SOUND
+	P``U
 	Param BasePlayerWeapon returned NULL!
 	Param selecting string is out of range!
 	PartyID_t
@@ -715,11 +716,13 @@
  (+%.2f)
  (08@HP
  (08@HPX`hpx
- (08@HPX`j
+ (08@HPX`j0Q
  (08@HPXb
- (08@HPZ
+ (08@HPZ0Q
  (08@HR
  (08@J
+ (08@J0Q
+ (0:0Q
  (0X`hpz
  (Dirty Animation)
  (INVALID PSS PARAMETERS)
@@ -743,6 +746,7 @@
  ... }
  .CPlayer_GetNicknameList_Request
  .CPublishedFile_Publish_Response"2
+ .`P[
  /&gt;
  //!"#$%&'()/*///+,-/.
  0"r$4&
@@ -946,7 +950,7 @@
  Hc1H
  Hc1I
  Hc1L
- Hc5O
+ Hc5?:.
  Hc7;w
  Hc7H
  Hc9E3
@@ -2785,6 +2789,7 @@ $GAME_PARTICLE_MANAGER_EVENT_SET_TEXT
 $GIRu
 $H9D$Xsi
 $H9[Xu
+$Hc@<H
 $HcG H
 $HypYkf
 $Ib?s
@@ -3673,7 +3678,6 @@ $z(u&
 &GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENT
 &GE_ClearDecalsForSkeletonInstanceEvent
 &L9/t
-&LDmd
 &N''iN''i
 &NETWORK_DISCONNECT_BAD_SERVER_PASSWORD
 &NETWORK_DISCONNECT_KICKED_NOSTEAMLOGIN
@@ -3932,6 +3936,7 @@ $z(u&
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 (%0.2f): %s
+(%YP6
 (%d %d %d %d)
 (%d) Dynamic prop %s (model %s): no sequence named:%s
 (%d) Name: %s (%s)
@@ -3954,7 +3959,6 @@ $z(u&
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (,$t6D
-(-?9*
 (.CMsgSteamLearn_GetAccessTokens_Response"r
 (.CMsgSteamLearn_SnapshotProject_Response"-
 (.CPlayer_GetCommunityPreferences_Request
@@ -3966,7 +3970,9 @@ $z(u&
 (0`hpx
 (0x%08X)'??'
 (1O\,n
-(4@LM
+(52=>
+(5M:>
+(5N?>
 (9A@K
 (9Q0u
 (9QTu
@@ -3976,7 +3982,6 @@ $z(u&
 (;]X|
 (;s |
 (;{ |
-(=?0y
 (?R or (?[+-]digits must be followed by )
 (A;_(|
 (A;m(
@@ -5063,6 +5068,7 @@ $z(u&
 *]r\)
 *^!l}
 *fD9%
+*fD9%|
 *fffff
 *gFBk
 *hbJ1
@@ -5489,6 +5495,7 @@ $z(u&
 -tickrate
 -toggle
 -tools
+-trusted
 -ui_page_manager_auto_delete
 -ui_page_manager_disable_auto_delete
 -unknown source-
@@ -5501,7 +5508,6 @@ $z(u&
 .	V_logf
 .%.-.3.7.9.?.W.[.o.y.
 .%0*llu
-.%8I1
 .%X&1
 .(Optional) Set of tags for the published file.
 ....................
@@ -5511,10 +5517,8 @@ $z(u&
 ..om?
 ..uR5&m
 .00cfg
-.5V~%
-.5fy4
-.5mg#
-.5qDF
+.5NbF
+.5at4
 .6<A>Y
 .7Z!L
 .97yY
@@ -6159,6 +6163,7 @@ $z(u&
 .?AV?$CGameSystemStaticFactory@VCDecalEmitterSystem@@VIDecalEmitterSystem@@@@
 .?AV?$CGameSystemStaticFactory@VCDefaultResponseSystem@@VIResponseSystem@@@@
 .?AV?$CGameSystemStaticFactory@VCDirtySpatialPartitionEntityList@@V1@@@
+.?AV?$CGameSystemStaticFactory@VCDllVerificationMonitor@@V1@@@
 .?AV?$CGameSystemStaticFactory@VCEntitySubclassGameSystem@@V1@@@
 .?AV?$CGameSystemStaticFactory@VCEnvCubemapFogSystem@@V1@@@
 .?AV?$CGameSystemStaticFactory@VCEnvVolumetricFogControllerSystem@@V1@@@
@@ -10159,6 +10164,7 @@ $z(u&
 .?AVCDirtySpatialPartitionEntityList@@
 .?AVCDisplacementMappingRendererCS@@
 .?AVCDistanceFieldRenderer@@
+.?AVCDllVerificationMonitor@@
 .?AVCDontUseThisGameSystem@@
 .?AVCDragPanel@panorama@@
 .?AVCDragZoom@panorama@@
@@ -13357,7 +13363,7 @@ $z(u&
 .dx_LV9
 .eRollType
 .edata
-.fD9%b
+.fD9%R
 .ffffff
 .foo = value".
 .i?0@I
@@ -13432,10 +13438,7 @@ $z(u&
 .{I_i
 .|$\u/
 .|$du3
-/%5qx
-/%Wnx
 /'/)/A/E/K/M/Q/W/o/u/}/
-/-'mx
 /-?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 // All corners fully specified 
@@ -13451,19 +13454,15 @@ $z(u&
 /0vaeH
 /0v}I
 /2GG>!B
-/5$*y
-/5*6y
-/5;Ys
-/5GVd
-/5Gqx
-/5Lf#
-/5knx
-/5qzq
-/5yVd
+/5%/s
+/5AYd
+/5S+d
+/5W@?
 /<GE3
-/=V9y
-/=X9y
-/=vav
+/=>Hy
+/=N~@
+/=ZWy
+/=\Wy
 />58d%
 /@Xv+
 /A#i!&
@@ -13589,7 +13588,8 @@ $z(u&
 0123456789abcdefghijklmnopqrstuvwxyz
 02V8[
 08@HP
-08@HR
+08@HR0Q
+08B0Q
 0;O@~
 0;Q5[
 0><[cZUg^>
@@ -14083,7 +14083,7 @@ $z(u&
 24.CUserMsg_ParticleManager.SetSceneObjectTintAndDesat
 24.CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240716173621Z0/
+240717225552Z0/
 241009235959Z0a1
 25.CMsgClientToGCModifyDevAnnouncementsResponse.EResult"_
 25.CMsgServerSignoutData_DetailedStats.TimeSample.Stats
@@ -14332,7 +14332,7 @@ $z(u&
 4k_ECitadelDisconnectReason_GameDestroyedUnexpectedly
 4k_EGCMsgInitiateTradeResponse_Target_Already_Trading
 4k_EGCMsgInitiateTradeResponse_Trade_Banned_Initiator
-4u2fD9=~
+4u2fD9=n*
 4zj@1;IJ
 5'0v2ZP
 5(EWorkshopFileType) Type of Workshop file to publish.
@@ -14352,7 +14352,7 @@ $z(u&
 5YA1H
 5YA1I
 5c">/
-5fD9%
+5fD9%r
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 5k_EMsgClientToGCCancelUnfinalizedTransactionsResponse
 5k_RemoveItemAttribute_Failed_AttributeCannotBeRemoved
@@ -14445,6 +14445,7 @@ $z(u&
 8?u$H
 8@8z9uk
 8@HP:
+8@J0Q
 8@t?E3
 8@tTH
 8@tvD
@@ -14599,8 +14600,8 @@ $z(u&
 9)~P3
 9*t)I
 9+~)L
-9-8i[
-9-VD]
+9-Fh]
+9-sb^
 9.u(H
 90T1@I
 90t&H
@@ -14612,10 +14613,7 @@ $z(u&
 93~-3
 93~j3
 94(t H
-95 q_
-95eF]
-95pp_
-95xq_
+95Uj]
 97~)H
 98Spu4L
 98t H
@@ -14633,12 +14631,6 @@ $z(u&
 9;~"3
 9;~-3
 9<(t,H
-9=-f]
-9=-s]
-9=-y]
-9=Ml]
-9=mi]
-9=mv]
 9>powf
 9>~AH
 9>~ZH
@@ -15015,15 +15007,7 @@ $z(u&
 ;3}/Hc
 ;3}8H
 ;5jNf
-;=_ZF
-;=`[F
-;=`\F
-;=`]F
-;=a_F
-;=a`F
-;=b^F
-;=caF
-;=kbF
+;=+(e
 ;>4>se=
 ;?0123456789:;<=>?
 ;@"IL
@@ -15145,7 +15129,7 @@ $z(u&
 ;`Fzc
 ;bwP*
 ;d22Vd22Vt::Nt::N
-;f95@
+;f950
 ;fffffff
 ;h)j 
 ;k<};
@@ -15457,7 +15441,7 @@ $z(u&
 >d`D$
 >f;D$0t
 >f;D$4t
->fD9%
+>fD9%E
 >fN46R^
 >jtm}S
 >o}-XH
@@ -15490,6 +15474,7 @@ $z(u&
 ??0CKeyValuesDumpContextToBufferString@@QEAA@PEAVCBufferString@@@Z
 ??0CMemoryStack@@QEAA@XZ
 ??0CMiniDumpCommentBuilderBase@@QEAA@XZ
+??0CModuleListSnapshot@@QEAA@PEAE_K@Z
 ??0CTSListBase@@QEAA@XZ
 ??0CThread@@QEAA@XZ
 ??0CThreadEvent@@QEAA@_N@Z
@@ -15564,6 +15549,7 @@ $z(u&
 ?BooleanValue@Value@v8@@QEBA_NPEAVIsolate@2@@Z
 ?C:\buildworker\citadel_staging_win64\build\src\bitmap\bitmap.cpp
 ?CScaleFunctionAbilityProperty_KineticCarbine
+?Capture@CModuleListSnapshot@@QEAA_NI@Z
 ?CarouselNav
 ?CheckArbitraryPeekGet@CUtlBuffer@@QEAA_NHAEAH@Z
 ?CheckGet@CUtlBuffer@@IEAA_NH@Z
@@ -15657,6 +15643,7 @@ $z(u&
 ?GetNameSymbol@KeyValues@@QEBA?AVHKeySymbol@@XZ
 ?GetNextCommentBuilder@CMiniDumpCommentBuilderBase@@UEAAPEAV1@XZ
 ?GetNextKey@KeyValues@@QEAAPEAV1@XZ
+?GetNextModule@CModuleListSnapshot@@QEBA_NPEAPEBXPEAPEBDPEAPEAXPEA_K@Z
 ?GetNextTrueSubKey@KeyValues@@QEAAPEAV1@XZ
 ?GetNextValue@KeyValues@@QEAAPEAV1@XZ
 ?GetPort@netadr_t@@QEBAGXZ
@@ -15725,6 +15712,7 @@ $z(u&
 ?PopulateUTF8@CStrAutoEncode@@AEBAXXZ
 ?Printf@CUtlBuffer@@QEAAXPEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
+?Purge@CModuleListSnapshot@@QEAAXXZ
 ?Purge@CUtlMemoryBlockAllocator@@QEAAXXZ
 ?Purge@CUtlString@@QEAAXXZ
 ?Put@CUtlBuffer@@QEAAXPEBXH@Z
@@ -15904,15 +15892,15 @@ $z(u&
 @0333?
 @0333?H
 @08@HPX`hpx
+@08Nd
 @09B0
 @0H9Gx
 @0HcB
 @1h!L
 @2A2G"$
 @2{Z@
-@6@&[
-@6@9[
-@6p,[
+@6@I[
+@6`H[
 @8(t)H
 @8(t~H
 @8)u&I
@@ -15932,15 +15920,10 @@ $z(u&
 @84/u
 @848u
 @84;u
-@855:
-@85<u
-@85@%F
-@85HB
-@85Ju
-@85ZoY
-@85aD
-@85pq
-@85vX
+@85 8F
+@85%^
+@858f
+@85Qh
 @88t(H
 @88tW
 @88uFH
@@ -15950,7 +15933,7 @@ $z(u&
 @8;tb3
 @8<(u
 @8<+u
-@8=ptY
+@8=-6
 @8>tO3
 @8>uAH
 @8HcB
@@ -16141,7 +16124,7 @@ $z(u&
 @H9AH
 @HHcB$;B(u
 @HPX&I
-@HPX`hv0Z[
+@HPX`hv
 @Hc)E3
 @Hc*I
 @Hc13
@@ -16163,6 +16146,7 @@ $z(u&
 @M9fPu%A
 @M9nxu%A
 @MfKZ
+@N`z[
 @PHcB(;B,u
 @Requests the metadata that was generated from a specified fetch.
 @SATAUAVAWH
@@ -16531,6 +16515,7 @@ $z(u&
 @_^]H
 @`D;G|u
 @`DlL
+@`H9D$0t
 @b;zO]
 @dKb]
 @fA;\
@@ -16543,6 +16528,7 @@ $z(u&
 @fff>fff>fff>fff>
 @ffffff
 @h!Aq8
+@hH9D$0
 @keyframes 
 @keyframes '%s'
 @t!H;
@@ -16716,8 +16702,8 @@ A9E,t<H
 A9E0u
 A9E4t4H
 A9E4t7H
-A9E4t8H9-iU
-A9E4t;H9-9V
+A9E4t8H9-Yy
+A9E4t;H9-)z
 A9E8u
 A9E<t4H
 A9E<tYH
@@ -16750,7 +16736,7 @@ A9Ft|
 A9G t
 A9G0u
 A9G4t4H
-A9G4t8H959x
+A9G4t8H95)
 A9G4tBH
 A9GHt/Mcu`E;upu
 A9HPu
@@ -16760,7 +16746,7 @@ A9MTt<H
 A9N0u
 A9N4t4H
 A9N@t#I
-A9O4t;H95;y
+A9O4t;H95+
 A9P t
 A9P(t
 A9]8~;3
@@ -18012,7 +17998,6 @@ ApplyVerticalAirDrag
 Applying overrides for %s 0x%p
 Approach
 April
-Apy[n
 Arabic
 Are we allowed to crit via headshots and weakpoints
 Are we currently running unit tests?
@@ -18498,6 +18483,7 @@ BRecursiveCheckBundles
 BSR_ANYCRLF)
 BSR_UNICODE)
 BScrollParentToFitWhenFocused
+BSecureAllowed
 BSerializeUserMessageToSVCMSG
 BSpline
 BTryDeleteExitedWorkerThreads()
@@ -20313,6 +20299,7 @@ C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\tspointerlist.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlblockmemory.h
+C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlbuffer.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utldict.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlfixedmemory.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlhandletable.h
@@ -25201,6 +25188,7 @@ CDistanceFieldRenderer::Render
 CDistanceFieldRenderer::Render::<lambda_1>::operator ()
 CDistanceFieldRenderer::Render::<lambda_2>::operator ()
 CDistanceFieldRenderer::Render::<lambda_3>::operator ()
+CDllVerificationMonitor
 CDotaGameInfo
 CDraggableAbilityIcon::SetAbility
 CDynamicFaceOcclusionRendererObjectDesc
@@ -26292,6 +26280,8 @@ CGameSystemStaticFactory<class CDefaultResponseSystem,class IResponseSystem>::Cr
 CGameSystemStaticFactory<class CDefaultResponseSystem,class IResponseSystem>::DestroyGameSystem
 CGameSystemStaticFactory<class CDirtySpatialPartitionEntityList,class CDirtySpatialPartitionEntityList>::CreateGameSystem
 CGameSystemStaticFactory<class CDirtySpatialPartitionEntityList,class CDirtySpatialPartitionEntityList>::DestroyGameSystem
+CGameSystemStaticFactory<class CDllVerificationMonitor,class CDllVerificationMonitor>::CreateGameSystem
+CGameSystemStaticFactory<class CDllVerificationMonitor,class CDllVerificationMonitor>::DestroyGameSystem
 CGameSystemStaticFactory<class CEntitySubclassGameSystem,class CEntitySubclassGameSystem>::CreateGameSystem
 CGameSystemStaticFactory<class CEntitySubclassGameSystem,class CEntitySubclassGameSystem>::DestroyGameSystem
 CGameSystemStaticFactory<class CEnvCubemapFogSystem,class CEnvCubemapFogSystem>::CreateGameSystem
@@ -30622,6 +30612,7 @@ CUtlBlockMemory<struct UtlLinkedListElem_t<struct CCitadel_Bullet_Standard::Part
 CUtlBlockMemory<unsigned char,int>::ChangeSize
 CUtlBlockMemory<unsigned char,int>::Init
 CUtlBlockMemory<unsigned char,int>::operator []
+CUtlBuffer::AccessForDirectRead
 CUtlDict<bool,class CDefFastCaselessStringLess>::Insert
 CUtlDict<char const *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CCitadel_AbilityHUDElement_Progress *,class CDefFastCaselessStringLess>::Insert
@@ -37389,6 +37380,9 @@ Couldn't open captions file '%s'.
 Couldn't parse default value "
 Couldn't paste command: %s
 Count() == MaxAllowedCount() - 1
+CountFilesCompletedTrustCheck
+CountFilesNeedTrustCheck
+CountItemsToReport
 Countdown
 CountdownActive
 CountdownAfterEnd
@@ -38222,6 +38216,7 @@ D$HD;
 D$HD;Mg
 D$HD;w@}
 D$HE3
+D$HH%
 D$HH1C
 D$HH;
 D$HH=
@@ -38749,7 +38744,7 @@ D8qTH
 D8s$t@H
 D8s$u
 D8sDudL95
-D8sDudL957
+D8sDudL95'
 D8t$(
 D8t$0
 D8t$3t
@@ -38801,6 +38796,9 @@ D9 ~DD
 D9!~iA
 D9#uMH
 D9#~'I
+D9%.p
+D9%:	
+D9%BF
 D9&t_I
 D9'~3I
 D9(uHH
@@ -38809,6 +38807,8 @@ D9(~jH
 D9)t3
 D9)t[
 D9+u!H
+D9-D)c
+D9-]m
 D90tWD
 D90~\H
 D91t7
@@ -38817,7 +38817,6 @@ D91~QA
 D93fA
 D93tq
 D943t
-D95JAU
 D97~*3
 D97~U
 D98t:H
@@ -38826,16 +38825,16 @@ D98~%H
 D98~\H
 D99~3Hc
 D9:~DH
-D9=%$_
-D9=1,_
-D9=G8^
-D9=V._
-D9=g-
-D9=i*_
-D9=m)_
-D9=m+_
-D9=s&_
-D9=|%_
+D9=!P_
+D9=7\^
+D9=FR_
+D9=S9G
+D9=YN_
+D9=]M_
+D9=]O_
+D9=cJ_
+D9=lI_
+D9={@
 D9>~+A
 D9@(|
 D9@8t
@@ -39034,7 +39033,6 @@ D9|0 }2
 D9}@uAD
 D;!}.L
 D;$(t
-D;%Nx
 D;3~3A
 D;4A8D
 D;6fA9D
@@ -44469,7 +44467,9 @@ GetCurrentDirectoryW
 GetCurrentPackageId
 GetCurrentProcess
 GetCurrentProcessId
+GetCurrentThread
 GetCurrentThreadId
+GetCurrentThreadStackLimits
 GetCursorInfo
 GetCursorOffset
 GetCycleClassStrByIndex
@@ -44570,6 +44570,7 @@ GetModifierIndex( eEvent, pModifier ) == -1
 GetModifierIndex( eValue, pModifier ) == -1
 GetModuleFileNameW
 GetModuleHandleA
+GetModuleHandleExA
 GetModuleHandleExW
 GetModuleHandleW
 GetMouseCanActivate() == k_EMouseCanActivateUnfocused
@@ -44712,6 +44713,7 @@ GetTimeFormatA
 GetTimeFormatEx
 GetTimeZoneInformation
 GetTooltipTarget
+GetTotalFilesLoaded
 GetTotalledDamage
 GetTracerAttachmentPosition
 GetTracerOrigin: Couldn't find attachment %d on model %s
@@ -44729,6 +44731,7 @@ GetUserFiles
 GetUserObjectInformationW
 GetValue
 GetVar R%d <- V%d (%s)
+GetVersionExA
 GetViewRenderInstance() must be implemented by game.
 GetWeaponInfoFromSubclassID
 GetWorldEntity
@@ -45037,14 +45040,11 @@ H9(uC
 H9+t	H
 H9+tf
 H9+uEA
-H9-;;1
-H9-=f]
-H9-=s]
-H9-=y]
-H9-]l]
-H9-dV
-H9-}i]
-H9-}v]
+H9-AM1
+H9-Tz
+H9-`/
+H9-oz
+H9-{/
 H9.t	H
 H9.u%H
 H9/t	H
@@ -45055,17 +45055,17 @@ H90tH
 H90tb
 H92tBA
 H93t	H
-H95)Mr
-H95+'B
-H95+KQ
-H953g
-H95CLr
-H95G5
-H95Ng
-H95Y3&
-H95ff
-H95g.
-H95l2
+H953pr
+H954/
+H957%
+H957Y
+H95IW&
+H95K.
+H95O/
+H95WR
+H95\V
+H95g%
+H95w7.
 H97t	H
 H97u+A
 H98t)A
@@ -45078,9 +45078,11 @@ H98t}H
 H99tQA
 H9;t	H
 H9;tlH9y
-H9=Oj
-H9=jJ
-H9=qT
+H9=%?1
+H9=:n
+H9=ax
+H9=j,
+H9=jF
 H9>u/H
 H9A s
 H9A u
@@ -45714,23 +45716,22 @@ Hc	D;
 Hc(A;
 Hc)E3
 Hc+;k
+Hc-Q?k
 Hc.;n
 Hc/;o
 Hc/Ic
 Hc3;s
 Hc3A;
-Hc5>q
-Hc5Q~
 Hc6;p
 Hc7;w
 Hc8a"
 Hc;;{
 Hc;A;
-Hc=EY*
 Hc>;~
 Hc>HcK
 Hc>Ic\
 Hc@ H
+Hc@XH
 Hc@\D
 Hc@hL
 HcA A
@@ -45840,6 +45841,7 @@ HcD$PH
 HcD$PL;
 HcD$PMc
 HcD$TE3
+HcD$TH
 HcD$X
 HcD$XH
 HcD$XL
@@ -47002,6 +47004,7 @@ ISchemaAttributeTypeBase<unsigned __int64>::OnIterateAttributeValue
 ISchemaAttributeTypeBase<unsigned int>::LoadByteStreamToEconAttributeValue
 ISchemaAttributeTypeBase<unsigned int>::OnIterateAttributeValue
 ISkeletonAnimationController
+IT9HPt
 ITEM_FLAG_CAN_SELECT_WITHOUT_AMMO
 ITEM_FLAG_DOHITLOCATIONDMG
 ITEM_FLAG_EXHAUSTIBLE
@@ -49688,7 +49691,7 @@ L$ E;
 L$ H+
 L$ H3
 L$ H9
-L$ H95j1
+L$ H95ZU
 L$ H9H
 L$ H;
 L$ Hc
@@ -49812,7 +49815,7 @@ L$0E3
 L$0E;
 L$0H+
 L$0H3
-L$0H95Q9
+L$0H95A]
 L$0H;
 L$0H;K
 L$0Hc
@@ -50137,11 +50140,11 @@ L9	u)H
 L9 t A
 L9#t	H
 L9#u/H
-L9% e
-L9%6d
-L9%;e
-L9%bc
-L9%ld
+L9%"%
+L9%.#
+L9%;"
+L9%=%
+L9%a$
 L9&t	H
 L9&us
 L9't	H
@@ -50155,15 +50158,17 @@ L9+t%L9k
 L9+te
 L9+uEH
 L9,:H
-L9-!(
-L9-D1<
+L9-4U<
+L9-VB
+L9-f7
+L9-qB
 L9.t	H
 L9/t	H
 L90t>
 L92t;H
 L92tDA
 L93t	H
-L95A$2
+L951H2
 L97t{L
 L98t?I
 L98t|H
@@ -50175,10 +50180,11 @@ L9;t	H
 L9;tHA
 L9;u	H
 L9<1uP
-L9=3eD
-L9=Ck
-L9=TeD
-L9=reD
+L9=3 
+L9=4xD
+L9=IA
+L9=RxD
+L9=pxD
 L9>uEH
 L9?t	H
 L9?tb
@@ -50595,8 +50601,6 @@ Lc0A;
 Lc0D;p
 Lc3D;s
 Lc3Hc
-Lc5Lp
-Lc5T^
 Lc6A+
 Lc6D;v
 Lc6Hc
@@ -51130,7 +51134,6 @@ M HcG
 M Ic<
 M#uPH
 M#}0I
-M%(kxF
 M'Ezb
 M(Lco$L
 M-laO
@@ -53172,6 +53175,8 @@ November
 Now = %.4f
 NpfA;
 NpuPA
+NtOpenFile
+NtQueryInformationThread
 Num Bones
 Num Calls
 Num3dSkyboxSceneWorlds
@@ -53756,6 +53761,8 @@ P-256
 P-384
 P-521
 P08@J
+P08JPS
+P08Nd
 P09G@
 P0A9F@A
 P0HcC(H
@@ -53764,7 +53771,6 @@ P2A2T$"
 P2A2W"
 P2P ping to "%s". Timed out after %.2fms
 P2P_Messages
-P6p&[
 P8D:8
 P8H9|$ht
 P8H9|$pt
@@ -54220,7 +54226,7 @@ PVAL_TYPESAFE_INT
 PVAL_VEC3
 PXD8d$`u
 PXD9l$0u
-PXHc-a
+PXHc-Q
 PXHc}
 PX`hpx
 P_[]H
@@ -54451,6 +54457,7 @@ PersonaContextMenu
 PersonaName
 PersonaNameReplacementToken
 PetLevelup_Rule_t
+Pf00[
 Ph9\$@
 Ph;D$x
 PhH9]o
@@ -54676,6 +54683,7 @@ Plots
 Plots view angles yaw at various stages of the frame/tick in Tracy.
 Pm8A?
 PmR"H?
+Pn01[
 Po<3ik)
 Point entity.
 Point under crosshair
@@ -55119,7 +55127,6 @@ QAngle
 QAngle-world
 QD$`H
 QD9QL~
-QJO~8
 QP8QDt
 QReturns the Steam Level of a user, the Badge level for the game, and if it's foil
 QSlerp
@@ -59937,15 +59944,20 @@ T$xI;
 T$xLc
 T$xMc
 T$xfD
-T%9q1
+T%(Ly
+T%8Qy
 T%d %s
 T(<A#
 T1 Boss
 T14A#
 T2 Boss
+T5>O"
+T5Lv(
+T5l0s
+T5y@D
 T61STRING
 T72[t
-T=!6y
+T=*E3
 TANGENT_U_WS
 TANGENT_V_WS
 TC	f\
@@ -62117,6 +62129,7 @@ ViewportRatio
 VignetteConstantBuffer_t
 VirtualAlloc
 VirtualFree
+VirtualQuery
 VisBuilder_001
 ViscousBallChanged
 Visible
@@ -62160,20 +62173,17 @@ Vx9Uw
 V~~Vq
 W"Fe~
 W'6S`
-W-W	C
-W-uGt
+W-}F1
 W0t}H
 W3i+,
-W5!Tg
-W5`	C
+W5Wn+
+W5\rl
 W8IcG(M
 W8uDH
 W9QHI
 W;()f
-W= d(
 W=AlE3
-W=IC1
-W=ok+
+W=F$[
 W>peSp>9
 W@H1G@A
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.
@@ -62615,16 +62625,15 @@ X to the Y power
 X!;3; 
 X!t5~
 X!}}p|u
-X%Ppx
+X%2Dy
+X%rBy
 X(Optional) If true, only return the published file ids of files that satisfy this query.
 X,,tX,,t4
-X-LlR
-X-hpx
-X-plR
+X-\pR
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X400Name
 X400Name:<unsupported>
-X5	s(
+X5,x#
 X500algorithms
 X509 CERTIFICATE
 X509 CRL
@@ -62737,9 +62746,8 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
-X5Gg#
-X5XZe
-X5z$P
+X5A31
+X5iu(
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -62763,7 +62771,10 @@ X9_62_CHARACTERISTIC_TWO
 X9_62_CURVE
 X9_62_FIELDID
 X9_62_PENTANOMIAL
-X=lp6
+X=)8O
+X=AEd
+X=fhf
+X=|t6
 X@fff
 XA\[H
 XA\_^[
@@ -62863,10 +62874,10 @@ X_^[]
 X_^[]H
 X_^[]I
 X_^][
+X`hr0Q
 Xd$HD
 XfD;\
 XfD;|
-Xf`y[
 XhHc@`H
 Xl$hH
 XqgA+
@@ -62892,37 +62903,43 @@ X|$TI
 X|$XA
 X|$|A;
 X~ '.
-Y%$-G
-Y%.lx
+Y%Ljd
 Y(L@L
 Y(Optional) Starting index to begin enumeration at. Defaults to the beginning of the list."Z
-Y-Q,D
+Y-4#0
+Y-d*,
 Y0HcR
-Y51}u
-Y531?
-Y56]:
-Y576O
-Y5<<F
-Y5=d1
-Y5K]}
-Y5QM7
-Y5Wv+
-Y5^<1
-Y5lQ:
-Y5sU>
-Y5zAG
-Y5|Q:
-Y5|c.
-Y5}_:
+Y5$MI
+Y5-]:
+Y57Q+
+Y58:C
+Y5:WO
+Y5:dq
+Y5:p0
+Y5I%u
+Y5JbG
+Y5PJI
+Y5W(K
+Y5Z<@
+Y5]zQ
+Y5`*j
+Y5he<
+Y5oUn
+Y5u[:
+Y5ws3
 Y9"SD
 Y93a=7c@
 Y;C;8V
-Y=)I1
-Y=5V3
-Y=?fK
-Y=n?"
-Y=sV3
-Y=}&1
+Y=3MI
+Y=<`U
+Y=?41
+Y=CAF
+Y=OK[
+Y=]`~
+Y=o*J
+Y=oo1
+Y=u(A
+Y=}22
 Y>kX>M
 YAxisLabel
 YD$ A
@@ -63365,7 +63382,7 @@ ZwKiZwKi
 \$@E3
 \$@H+
 \$@H9
-\$@H9-
+\$@H9-}
 \$@H9\$HtzH
 \$@H;
 \$@Hc
@@ -63556,8 +63573,10 @@ ZwKiZwKi
 \1kYL
 \3$fA
 \43n7
+\52PL
+\5ZZO
+\5zOO
 \;{Lr
-\=w5y
 \??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 \C not allowed in lookbehind assertion
 \D$0H
@@ -63636,7 +63655,7 @@ ZwKiZwKi
 ] Lc}
 ] is an invalid data character in JavaScript compatibility mode
 ] ~4H
-]%5q1
+]%.p0
 ]&@+fk:
 ]&g''}
 ](IcE Hk
@@ -63646,15 +63665,16 @@ ZwKiZwKi
 ]0H;w0t!H
 ]0tTH
 ]1h=bfz
-]5"R$
-]5UUk
-]5[Sk
-]5jW(
+]5$_D
+]5TWO
 ]8A9^
 ]8A;^
 ]8d$@
 ]8t'H
 ]:\|^
+]='u3
+]=aJV
+]=lCP
 ]>)2X
 ]?H9]'t
 ]@A;_@A
@@ -63683,7 +63703,7 @@ ZwKiZwKi
 ^ D8d
 ^ IcF
 ^ Icv
-^%VO7
+^%M$]
 ^,tyI
 ^.om5r
 ^0fA;
@@ -63692,7 +63712,6 @@ ZwKiZwKi
 ^8Icv0
 ^<V7w
 ^<{YH
-^=f`d
 ^@LcB H
 ^C.fL
 ^D8oat
@@ -63707,7 +63726,6 @@ ZwKiZwKi
 ^W,|*
 ^XIcFPH
 ^XXvJ
-^]kV+:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^`Hc~xA
@@ -63844,7 +63862,9 @@ _}eOk
 `.rdata
 `0HcK
 `28)fk
-`6PO[
+`60K[
+`6@J[
+`6PL[
 `8Lcs 
 `:zQF
 `@ `QE
@@ -63943,7 +63963,6 @@ _}eOk
 `generic-method-parameter-
 `generic-type-
 `h9T~
-`ht@LM
 `local static destructor helper'
 `local static guard'
 `local static thread guard'
@@ -69128,6 +69147,7 @@ eye_occlusion_renderer
 eyes_follow
 eyj5yR
 ezd<f
+f	54+
 f	rixZ
 f!D$*
 f!D$:
@@ -69139,7 +69159,6 @@ f!E"L
 f!F"H
 f!K*H
 f!t$r3
-f$sq%O
 f%wyLmX:
 f-(mL
 f0E9fH
@@ -69160,22 +69179,23 @@ f9,Ju
 f9,^u
 f9,pu
 f9,~u
-f9-'p@
-f9-9#
+f9-)G
+f9-9^>
+f9-<6
+f9-R^>
+f9-z^>
 f9/tR
 f93t`
-f959*
-f95C 
-f95D]
-f95IB
-f95N#
-f95aD
+f95)N
+f953D
+f959f
+f95Qh
+f95qf
 f99tj
 f9<Au
 f9<Fu
 f9<H}
 f9<Ju
-f9="f
 f9>tq
 f9A^}
 f9B0u0
@@ -69290,14 +69310,13 @@ fC94wu
 fC9D,
 fC;D0
 fChance > 0.0f && fChance <= 1.0f
-fD	%&
-fD	%)
-fD	%D
-fD	%M
-fD	%Y
-fD	-=
-fD	51
-fD	5Q
+fD	%4:k
+fD	%=8k
+fD	%I.
+fD	--
+fD	5!
+fD	5A
+fD	5u
 fD!3L
 fD!;L
 fD!d$*
@@ -69321,23 +69340,25 @@ fD9"u
 fD9$Hu
 fD9$Ou
 fD9$wu
-fD9%4
-fD9%4S
-fD9%;U
-fD9%@
-fD9%I
-fD9%K
-fD9%aS
-fD9%b
-fD9%e
-fD9%j
+fD9%$
+fD9%$w
+fD9%+y
+fD9%-
+fD9%9
+fD9%Qw
+fD9%R
+fD9%U
+fD9%Z
+fD9%ux
+fD9%z
+fD9%~w
 fD9't
 fD9'u
 fD9(t
 fD9,Au
 fD9,pu
-fD9-*
 fD9-@
+fD9-I
 fD91u
 fD91uTL9r
 fD92t
@@ -69348,20 +69369,19 @@ fD94Ku
 fD94Pu
 fD94Q}
 fD94iu
-fD95$
-fD95'aP
-fD95QaP
-fD95Qr
-fD95[p
+fD95	
+fD95A
+fD95K
 fD97t
 fD98@
 fD98u
 fD9;u
 fD9;|
-fD9=2
-fD9=H
-fD9=_?
-fD9=c
+fD9="
+fD9=8"~
+fD9=Oc
+fD9=S
+fD9={b
 fD9@(u
 fD9DP
 fD9H(|
@@ -70367,6 +70387,7 @@ gamematerial
 gamemode
 gameover_msg
 gameover_msg_test
+gameoverlayrenderer64.dll
 gamepad
 gameplay_hud
 gameplay_hud_dead
@@ -70714,7 +70735,6 @@ hIcF(L
 hInputDepth != RENDER_TEXTURE_HANDLE_INVALID
 hInputTexture != RENDER_TEXTURE_HANDLE_INVALID
 hJxRX@_
-hL#8ZE
 hLumaTexture != RENDER_TEXTURE_HANDLE_INVALID && hInputTexture != RENDER_TEXTURE_HANDLE_INVALID
 hMaterial != MATERIAL_HANDLE_INVALID
 hNewAnimGraph->GetModelName() == graphCreationSettings.m_hModel->GetModelName()
@@ -71192,15 +71212,17 @@ iEntity >= 0
 iFFp}A
 iFH9-
 iFH9-(
-iFH9-(2W
-iFH9-(Id
+iFH9-(=?
 iFH9-8
+iFH9-87
+iFH9-8pd
 iFH9-H
-iFH9-HLd
 iFH9-X
-iFH9-Xfe
+iFH9-X.4
+iFH9-X:
 iFH9-h
-iFH9-xie
+iFH9-x
+iFH9-xC
 iHu H
 iILV]
 iIconIndex >= 0
@@ -72360,8 +72382,8 @@ justify_horizontal
 justify_vertical
 k @8l$xt
 k VWATAVAWH
-k f9-
-k f9-O
+k f9-?
+k f9-{
 k u H
 k(D9{ |AH
 k/.fG"
@@ -73327,6 +73349,8 @@ kelvin_ice_path_shard_vert_per_quarter
 kelvin_ice_path_surf_size
 kelvin_ice_path_thickness
 kelvin_ice_path_uv_scale
+kernel32.dll
+kernelbase.dll
 key != m_nDeletedKeyValue
 key != m_nEmptyKeyValue
 key == 0
@@ -73776,7 +73800,7 @@ l$XuZH
 l$\D9n
 l$\Lcd$H
 l$\fD
-l$`;-2af
+l$`;-"
 l$`@8
 l$`D9l$p|LH
 l$`D9l$p|NH
@@ -73811,7 +73835,7 @@ l$hHc
 l$hHc+;k
 l$hIc?E3
 l$hL;
-l$hLc-"Z*
+l$hLc-
 l$hff
 l$hfff
 l$hs^H;
@@ -73988,7 +74012,7 @@ levels
 leveltransition
 levelup_rule
 lexer->mTokens(): Error: No lexer rules were added to the lexer yet!
-lfD9%)
+lfD9%
 lfoot
 lhash part of OpenSSL 1.0.2j  26 Sep 2016
 lib(%lu)
@@ -74716,6 +74740,7 @@ m_GameEvents.Count() == 0
 m_GameSceneNodeRegistry.Find( pGameSceneNode ) == m_GameSceneNodeRegistry.InvalidIndex()
 m_GameTimeEnabled
 m_Gender
+m_Get == 0 && m_Put == 0 && m_nMaxPut == 0
 m_GetupSpeedCurve
 m_GlitchSettings
 m_Glow
@@ -80609,7 +80634,6 @@ method_name
 metric_count
 metric_name
 metrics
-mf95#B
 mgf1 with sha1 (default)
 mhMcu
 micDist
@@ -82108,6 +82132,7 @@ nsSGC
 nsSslServerName
 nssslserver
 nt$pE3
+ntdll.dll
 ntelA
 null before block missing
 null is wrong length
@@ -82176,19 +82201,16 @@ o!>d]
 o"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""pqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr^^stuvwwxyz{|}~
 o$$fA
 o$g31
-o%=o:
 o&1m&
 o(H9o
 o(HcE
 o(L9s(t
 o*:TJ&
 o,u H
-o-Uo:
 o0H9o
 o0L9s0t
 o1+v3
 o2i_ECPublicKey
-o5Ho:
 o8HcE
 o8HcO0L
 o8IcGPL
@@ -82198,8 +82220,6 @@ o:H9)t
 o<$fA
 o<$fD
 o<$fE
-o=;o:
-o=Q0s
 o??ToString@Value@v8@@QEBA?AV?$MaybeLocal@VString@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 o@ fA
 o@0fE
@@ -82697,9 +82717,8 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^
+p08@H^d
 p0R^G'
-p0j@~
 p1`@H
 p2pAddr.IsType<CSteamID>()
 p2p_FightingGame_Connection
@@ -82714,7 +82733,6 @@ p2p_ping could not convert "%s" to a CPeerToPeerAddress
 p2p_ping could not ping "%s" because they are an unknown peer
 p2p_ping requires a destination address
 p2p_ping sending to "%s"
-p6@n[
 p7M}f
 p88Hp88H
 p;Y>u
@@ -84837,7 +84855,6 @@ r$;3|
 r%+G0f
 r'?IsolateFromNeverReadOnlySpaceObject@internal@v8@@YAPEAVIsolate@12@_K@Z
 r1w<H
-r3ikF
 r3w:I;
 r7f;\$|
 r99Kr99K
@@ -85564,7 +85581,7 @@ s WATAUAVAWH
 s WAUAWH
 s WAVAWH
 s f95
-s f95[
+s f95K
 s f9s"~
 s u H
 s u!H
@@ -85603,7 +85620,7 @@ s5fE9!
 s6!TYK
 s6C}n
 s7fff
-s8H95#
+s8H95
 s8Hc+;
 s8HcCP
 s8f9s:~
@@ -85625,10 +85642,10 @@ sCurrencyDesc[ eType ].m_eType == eType
 sD9>&
 sEH+t$
 sFD8sDt
-sFD95!
+sFD95
 sGfff
 sGroupName.Length() > 0
-sHH95z
+sHH95j0@
 sHH9s0H
 sHHcC@M
 sHf9sJ~
@@ -87521,7 +87538,7 @@ t	H;Q u
 t	Hcp
 t	L9w
 t	f95
-t	f95E
+t	f955
 t +~Hx
 t >= 0
 t >= 0.0f
@@ -87626,7 +87643,7 @@ t$ L9o(u
 t$ L;
 t$ Lc
 t$ Lc3D;s
-t$ Lc5Q!
+t$ Lc5AE
 t$ Lcs
 t$ Li
 t$ Lk
@@ -87857,7 +87874,7 @@ t$@I;
 t$@L;
 t$@Lc1A+
 t$@Lc1D;q
-t$@Lc5enB
+t$@Lc5
 t$@Li
 t$@Lk
 t$@f9
@@ -88079,7 +88096,7 @@ t$dL9b u
 t$dLc|$PD
 t$dfD
 t$f95
-t$f95w
+t$f95g
 t$h9k 
 t$h;k0
 t$h;s
@@ -88215,7 +88232,7 @@ t*HcT
 t*Hc]
 t*fA;
 t*fD9%
-t*fD9%h
+t*fD9%X
 t*fff
 t+;Q s&H
 t+@8>t&I
@@ -88298,10 +88315,10 @@ t6D88t1H
 t6D9A
 t6H91t1H
 t6H95
-t6H95{+
+t6H95kO
 t6HcH
 t6L9c`
-t6f95u 
+t6f95eD
 t6fE94
 t79(~$H
 t7HcP
@@ -88310,7 +88327,7 @@ t8@80t
 t8D9c
 t8H9)t3H
 t8IcD$
-t8f95q*
+t8f95aN
 t9A+GHx3;B
 t9D8 t4L
 t9D9>t
@@ -88318,7 +88335,7 @@ t9E8i
 t9~$H
 t:9O0~5I
 t:JcT)
-t:L9%lf
+t:L9%\
 t:fff
 t;<,uKH
 t;@80t6H
@@ -88339,7 +88356,7 @@ t=A9O
 t=D9k
 t=H9w(uTI
 t=Hch H
-t=f95QL
+t=f95Ap
 t>A9[8t
 t>D8v
 t>D9Z
@@ -88393,7 +88410,7 @@ tCB94"t=H
 tCHc;;{
 tCfD95
 tCs%@
-tD@8-?
+tD@8-/
 tDD8d$r
 tDD;|$@H
 tDLcI8E3
@@ -88416,7 +88433,7 @@ tGLcH8E3
 tGfE9t$2t?E9t$H~8I
 tH@8k
 tHLcp
-tHfD95k_P
+tHfD95[
 tI@88tD
 tID80tDH
 tIHcA
@@ -88484,14 +88501,14 @@ tT@89tOL
 tTA8~TtNA
 tTD9H
 tTIcD$
-tTL9-s
+tTL9-S
 tTL9q t-H
 tTfff
 tTvR2
 tU;\$0tH
 tUD88t6H
 tUD8e
-tUH95	
+tUH95
 tUH99uPL
 tUHch H
 tUIcE
@@ -88551,7 +88568,7 @@ t^@8.tY3
 t^D9A
 t^HcB
 t^HcC
-t^L958y
+t^L95(
 t^~\2
 t^~\D
 t_D8gpuY;_
@@ -88566,7 +88583,7 @@ t`H9X
 t`H9o@t0H
 t`Hcq
 t``4*O
-t`f95pL
+t`f95`p
 t`f9Q
 t`v^2
 t`v^@2
@@ -88655,7 +88672,7 @@ te@8w$t<H
 teA80t`3
 teD9O
 teH9X
-teHc=f
+teHc=
 teHcC
 teHcsHL
 team is
@@ -88973,7 +88990,7 @@ tlsv1 unsupported extension
 tl~j2
 tm+CHxh;B
 tm@80thH
-tm@8=A
+tm@8=
 tmIc/Mc&
 tn+CHxi;B
 tnD8+ti3
@@ -89362,7 +89379,7 @@ u.H;A
 u.H;P
 u/A8F
 u/H;A
-u/f9-4
+u/f9-$%
 u/fA;
 u/fD9pju
 u0;t$x
@@ -89407,6 +89424,7 @@ u:B8D7
 u;8^Eu6H
 u;H;P
 u;{Gk
+u<;={%9
 u<H9C(H
 u<fD;
 u<g~l<it[<ntP<ot,<pt
@@ -89424,7 +89442,7 @@ u@H9C H
 u@H9C(H
 u@HcL$0
 u@f9=
-uA8Ghu<f958
+uA8Ghu<f95(
 uAH9x
 uAL9(t<I
 uB!!cB!!c 
@@ -89518,7 +89536,7 @@ uXu;H
 uY@8w
 uYD9m
 uYHcMp
-uYL9%$
+uYL9%
 uZ9{8
 uZ@8}
 uZD8u
@@ -89539,7 +89557,7 @@ u_H9C(H
 u`D8s0tZH
 u`H9|$Pt5H
 ucD9{0u]H
-ucf9-h
+ucf9-X%
 uchar32
 udp_connect_ip
 udp_connect_port
@@ -90054,7 +90072,7 @@ uv y offset during copy to cascade.
 uvs are all identical
 uwuKL;
 uxE9n
-uxL9-
+uxL9-X;
 uxL9`
 uxMc}pI
 uz-E3
@@ -90566,7 +90584,7 @@ weekend_start
 weekends
 weight
 welcome_messages
-wf9-;
+wf9-+
 wfA'@7
 wfrZH
 wgrZH
@@ -90831,13 +90849,13 @@ xrD;vp}lH
 xrJ:DCG
 xs == 0
 xzHcC
-x|9=.
-x|9=;=1
-x|9=>D1
-x|9=G51
-x|9=S
-x|9=b
-x|9=j
+x|9=!?1
+x|9=A-1
+x|9=VG1
+x|9=j!1
+x|9=q)1
+x|9=u(1
+x|9=x
 x~HcC
 y D8<.u
 y axis
@@ -90993,7 +91011,7 @@ zxNIjo
 {(Hcs H
 {(L9{
 {(Lc{ I
-{(fD9=X
+{(fD9=H!~
 {(u H
 {,D+{HD+
 {09k(|AH
@@ -91031,6 +91049,7 @@ zxNIjo
 {H~4H
 {L;{P|
 {P9}d
+{Uf\l
 {Z@8{[t
 {\@8{Zt
 {`9kX|AH
@@ -91054,7 +91073,7 @@ zxNIjo
 {s:sign}
 {s:user_rich_presence}
 {un'%
-{xH9=p7
+{xH9=`[
 {x`M`
 {}()':
 |	;QD
@@ -91407,7 +91426,7 @@ zxNIjo
 |$PL9'tQA
 |$PL;
 |$PLc
-|$PLc=I
+|$PLc=
 |$PM;
 |$PMc8E;x
 |$PNc<
@@ -91578,12 +91597,13 @@ zxNIjo
 |$xfH
 |$x~5H
 |$x~`H
+|$|@t*H
 |(Optional) Get extended details back on the files found. Defaults to only returned the app Id and UGC Id of the files found.
 |(fff
 |(tFM
 |)@8~!t
 |)L9c
-|)f95
+|)f95d
 |+Hc;;{
 |,I9,
 |11Jv
@@ -91707,12 +91727,11 @@ zxNIjo
 }J;_$
 }LfD;
 }LuHO
-}P;5X-,
 }PfD;vvwIfE;
 }P|EH
-}Q;=9
 }R;_$
 }T;_$
+}U;=9
 }Ufff
 }VKRZ
 }W70d
