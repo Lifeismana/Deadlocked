@@ -93,16 +93,6 @@
 							property_group = "Mix Layer"
 						}
 					}
-					mixer_mixlayer_disable = 
-					{
-						data_type = "float"
-						value = "0"
-						_system_properties = 
-						{
-							display_group = "advanced"
-							property_group = "Mix Layer"
-						}
-					}
 					mixer_mixlayer_to_set = 
 					{
 						data_type = "string"
@@ -482,7 +472,7 @@
 					occlusion_scale = 
 					{
 						data_type = "float"
-						value = ".9"
+						value = "1.0"
 						_system_properties = 
 						{
 							display_group = "advanced"
@@ -492,7 +482,7 @@
 					occlusion_radius = 
 					{
 						data_type = "float"
-						value = "60.000000"
+						value = "150.000000"
 						_system_properties = 
 						{
 							display_group = "advanced"
@@ -502,7 +492,7 @@
 					occlusion_min = 
 					{
 						data_type = "float"
-						value = "0.300000"
+						value = "0.25"
 						_system_properties = 
 						{
 							display_group = "advanced"
@@ -522,7 +512,7 @@
 					occlusion_volume_blend_distance_min = 
 					{
 						data_type = "float"
-						value = "1200.00000"
+						value = "800.00000"
 						_system_properties = 
 						{
 							display_group = "advanced"
@@ -532,7 +522,7 @@
 					occlusion_volume_blend_distance_max = 
 					{
 						data_type = "float"
-						value = "2500.00000"
+						value = "2000.00000"
 						_system_properties = 
 						{
 							display_group = "advanced"
@@ -1924,25 +1914,9 @@
 			},
 			
 			{
-				name = "mixlayer_enabled"
-				operator = "math_float"
-				apply = "equal"
-				input1 = "@public.mixer_mixlayer_disable"
-				input2 = "0"
-			},
-			
-			{
-				name = "mixlayer_is_used"
-				operator = "math_float"
-				apply = "and"
-				input1 = "@public.mixer_set_mixlayer"
-				input2 = "@mixlayer_enabled.output"
-			},
-			
-			{
 				name = "mixlayer_input_switch"
 				operator = "ctrl_switch_float"
-				input_execute = "@mixlayer_is_used.output"
+				input_execute = "@public.mixer_set_mixlayer"
 				input_switch = "@public.mixer_mixlayer_amount_manual"
 				input1 = "@volume_filter.output"
 				input2 = "@public.mixer_mixlayer_amount_manual"
@@ -1951,7 +1925,7 @@
 			{
 				name = "mixer_set_mixlayer"
 				operator = "soundmixer_set_mixlayer_amount"
-				input_execute = "@mixlayer_is_used.output"
+				input_execute = "@public.mixer_set_mixlayer"
 				input = "@mixlayer_input_switch.output"
 				mixlayer = "@public.mixer_mixlayer_to_set"
 			},

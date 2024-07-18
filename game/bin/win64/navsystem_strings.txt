@@ -4,6 +4,7 @@
 	6p7MOf
 	Ic	L
 	V_fpclassifyd
+	V_frexpf
 	V_vsnprintf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
@@ -19,7 +20,6 @@
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- !krv
  %02d. %-30s  %s
  %41g
  'L>[
@@ -41,6 +41,7 @@
  A_A^A]A\_^]
  A_A^[
  A_A^_
+ A__]
  A__^
  Base Class Array'
  Base Class Descriptor at (
@@ -67,6 +68,8 @@
 !IsInternalTypeShortArray( Internal_Type() )
 !V_isempty( m_pNotifyGroupID )
 !V_isempty( pPathID )
+!VectorsAreEqual( vPrev, vCenter ) || !VectorsAreEqual( vCenter, vNext )
+!a.IsZero() && ( !b.IsZero() )
 !bBackFound
 !bLooksLikeABug
 !bOnlyTris || m_nVerts == 3
@@ -75,13 +78,20 @@
 !m_NameStack.IsEmpty()
 !m_pClusters->m_nClusters
 !m_pPhysicsInterface
+!multilist || ML
 !pFilter
 !pIgnore
 !pNavHullsPreset->m_vecNavHulls.IsEmpty()
 !rCon.m_bDummyConnection || !rOtherCon.m_bDummyConnection
 !rConn.m_bRemovedConnection
+!regionContour.m_outer.IsEmpty()
+!vecSeen.HasElement( v.m_nRawContourVertexIdx )
+!voxels.IsEmpty()
+$A;\$
 $Ic?;
+$Kfff
 $Lc>Hk
+$y"Ic
 %d %d %d
 %d %d %d %d
 %f %f
@@ -104,8 +114,10 @@ $Lc>Hk
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
 (%d,%d)
+(;o(u
 (A]A\^[
 (A]_^[
+(A^A\
 (A^A]_^
 (A_A]A\_
 (A_A]_]
@@ -116,7 +128,9 @@ $Lc>Hk
 (D$ H
 (D$ I
 (D$ M
+(D$ f
 (D$0D
+(D$0H
 (D$0f
 (D$@D
 (D$@H
@@ -126,6 +140,7 @@ $Lc>Hk
 (D$PL
 (D$`H
 (D$pD
+(HcA`E3
 (L$ D
 (L$ H
 (L$0D
@@ -165,6 +180,7 @@ $Lc>Hk
 (f*^[0
 (intp)this % 8 == 0
 (l$ D
+(l$0D
 (l$0L
 (l$@D
 (l$@L
@@ -185,6 +201,7 @@ $Lc>Hk
 (t$0H
 (t$@H
 (t$@I
+(t$@L
 (t$@u
 (t$PD
 (t$PH
@@ -201,11 +218,13 @@ $Lc>Hk
 (|$ H
 (|$0A
 (|$0D
+(|$0H
 (|$@D
 (|$@I
 (|$PA
 (|$PD
 (|$PE
+(|$PH
 (|$`D
 (|$`E
 (|$`H
@@ -223,12 +242,16 @@ $Lc>Hk
 )D$ f
 )D$0A
 )D$0E
+)D$0H
 )D$@D
 )D$PD
 )D$pB
 )D$pD
 )D$pH
+)D$pf
+)E0Lc
 )IcI(
+)L$ A
 )L$ D
 )L$ E
 )L$0D
@@ -265,6 +288,7 @@ $Lc>Hk
 )d$pD
 )l$ L
 )l$ fD
+)l$0D
 )l$0E
 )l$@D
 )l$@f
@@ -275,9 +299,12 @@ $Lc>Hk
 )t$ D
 )t$ E
 )t$ H
+)t$ I
 )t$0D
+)t$0Hc
 )t$0M
 )t$@H
+)t$@I
 )t$@L
 )t$@M
 )t$PD
@@ -314,7 +341,9 @@ $Lc>Hk
 +f)>0'
 +h->|
 +o'q)}
+,$;o(u
 ,/<-w
+,E E3
 ,I<%w
 ,W5y+
 ,X< w
@@ -326,26 +355,39 @@ $Lc>Hk
 -sse3
 -sse4
 -tools
+.	z>u<
 .00cfg
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
 .?AUVDataInitInfo_t@@
 .?AV<lambda_1>@?1??BlockCustom@CNavTree@@QEAAXAEBV?$function@$$A6A_NAEBUAABB_t@@@Z@std@@@Z@
 .?AV<lambda_1>@?1??CalcClusters_A@CNavTree@@QEAAXXZ@
 .?AV<lambda_1>@?1??CalcClusters_C@CNavTree@@QEAAXAEBV?$function@$$A6A_NHPEBV?$Vec3D@M@@@Z@std@@@Z@
+.?AV<lambda_1>@?1??FindWalkableVoxel@CNavOrientedMesh@@AEAAHAEBV?$Vec3D@M@@00_NAEBUVoxelSparseIndex_t@2@HAEA_N@Z@
 .?AV<lambda_1>@?1??FinishClusters@CNavTree@@QEAAXXZ@
+.?AV<lambda_1>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@
+.?AV<lambda_1>@?1??IsAgentAbleToStandOnVoxel@CNavOrientedMesh@@AEAA_NAEBV?$Vec3D@M@@0MHAEA_N@Z@
 .?AV<lambda_1>@?1??IslandRemoval@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0_NAEBVCNavGenParams@@@Z@
 .?AV<lambda_1>@?1??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@
 .?AV<lambda_1>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@
-.?AV<lambda_1>@?3??GenerateConnections@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@NNNN_NN1@Z@
+.?AV<lambda_1>@?1??TraceVoxelGrid@CNavOrientedMesh@@AEAAXAEBV?$Vec3D@M@@0AEBV?$function@$$A6A_NAEBV?$Vec3D@H@@@Z@std@@H_N@Z@
+.?AV<lambda_1>@?1??TriangulateContourWS@CNavOrientedMesh@@AEAA_NAEBUmatrix3x4_t@@AEBV?$CUtlVector@PEAUVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@PEAUVertexWS_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@UVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@UVertexWS_t@CNavOrientedMesh@@H@@@@@Z@
+.?AV<lambda_1>@?3??FindVoxelWalkableNeighbors@CNavOrientedMesh@@AEAAXAEBUVoxelSparseIndex_t@2@AEBV?$Vec3D@M@@QEBV4@1MAEAV?$CUtlVector@UVoxelSparseIndex_t@CNavOrientedMesh@@HV?$CUtlMemory@UVoxelSparseIndex_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@HHV?$CUtlMemory@HH@@@@AEA_NAEAH@Z@
+.?AV<lambda_1>@?3??GenerateConnections@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@NNNN_NN2@Z@
 .?AV<lambda_1>@?4??CutTreeToPhysics@@YAXAEAVCNavTree@@HM_NMAEBV?$function@$$A6A_NAEBUAABB_t@@@Z@std@@@Z@
-.?AV<lambda_1>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
+.?AV<lambda_1>@?9??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
 .?AV<lambda_1>@?BG@??SplitPolysByMarkup@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@_NNNN@Z@
 .?AV<lambda_2>@?1??CalcClusters_C@CNavTree@@QEAAXAEBV?$function@$$A6A_NHPEBV?$Vec3D@M@@@Z@std@@@Z@
+.?AV<lambda_2>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@
 .?AV<lambda_2>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@
-.?AV<lambda_2>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
+.?AV<lambda_2>@?1??TriangulateContourWS@CNavOrientedMesh@@AEAA_NAEBUmatrix3x4_t@@AEBV?$CUtlVector@PEAUVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@PEAUVertexWS_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@UVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@UVertexWS_t@CNavOrientedMesh@@H@@@@@Z@
+.?AV<lambda_2>@?9??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
 .?AV<lambda_2>@?M@??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@
-.?AV<lambda_3>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
-.?AV<lambda_4>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
+.?AV<lambda_3>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@
+.?AV<lambda_3>@?1??TriangulateContourWS@CNavOrientedMesh@@AEAA_NAEBUmatrix3x4_t@@AEBV?$CUtlVector@PEAUVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@PEAUVertexWS_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@UVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@UVertexWS_t@CNavOrientedMesh@@H@@@@@Z@
+.?AV<lambda_3>@?M@??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
+.?AV<lambda_4>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@
+.?AV<lambda_4>@?M@??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
+.?AV<lambda_5>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@
 .?AV?$CBaseAppSystem@VINavSystem@@@@
 .?AV?$CRefCountServiceBase@VCRefMT@@@@
 .?AV?$CRefCounted1@VIRefCounted@@V?$CRefCountServiceBase@VCRefMT@@@@@@
@@ -355,6 +397,7 @@ $Lc>Hk
 .?AV?$CTier3AppSystem@VINavSystem@@$0A@@@
 .?AV?$CVDataFileManager@VCNavHullPresetVData@@@@
 .?AV?$CVDataFileManager@VCNavHullVData@@@@
+.?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAA?AV?$Vec3D@M@@AEBV4@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@N@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@M@std@@
@@ -368,37 +411,59 @@ $Lc>Hk
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBV4@HN@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@HM@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBV4@NN@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@MM@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@@ZPEAV3@AEBU?$_Ph@$00@2@AEBV5@@std@@
+.?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@NNNN_NN2@ZPEAV3@AEBU?$_Ph@$00@2@AEBV5@MMMM_NM_N@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@ZPEAV3@AEBU?$_Ph@$00@2@AEBV5@AEAPEAV6@@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@N@ZPEAV3@AEBU?$_Ph@$00@2@M@std@@
-.?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@NNNN_NN1@ZPEAV3@AEBU?$_Ph@$00@2@MMMM_NM_N@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EBAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBV4@N@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@M@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EBA_NAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@
+.?AV?$_Func_base@H$$V@std@@
+.?AV?$_Func_base@HH@std@@
+.?AV?$_Func_base@V?$Vec3D@M@@AEBV1@@std@@
 .?AV?$_Func_base@VVecDouble3@@AEBV1@@std@@
 .?AV?$_Func_base@X$$V@std@@
 .?AV?$_Func_base@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@std@@
 .?AV?$_Func_base@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV1@@std@@
 .?AV?$_Func_base@XAEBUTreeIter_t@CNavTree@@@std@@
+.?AV?$_Func_base@XAEBUVoxelSparseIndex_t@CNavOrientedMesh@@AEBUAABB_t@@G@std@@
 .?AV?$_Func_base@XH@std@@
+.?AV?$_Func_base@XHAEBUAABB_t@@I@std@@
+.?AV?$_Func_base@XHHHAEBUVoxelSparseIndex_t@CNavOrientedMesh@@AEBUAABB_t@@AEBW4OrientedMeshSparseVoxelState_t@@@std@@
+.?AV?$_Func_base@XHHHAEBUVoxelSparseIndex_t@CNavOrientedMesh@@_NAEBUAABB_t@@@std@@
 .?AV?$_Func_base@_NAEBUAABB_t@@@std@@
+.?AV?$_Func_base@_NAEBV?$Vec3D@H@@@std@@
 .?AV?$_Func_base@_NAEBVCNavGenPoly@@@std@@
+.?AV?$_Func_base@_NHHH@std@@
 .?AV?$_Func_base@_NHPEBV?$Vec3D@M@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??BlockCustom@CNavTree@@QEAAXAEBV?$function@$$A6A_NAEBUAABB_t@@@Z@std@@@Z@XAEBUTreeIter_t@3@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??CalcClusters_A@CNavTree@@QEAAXXZ@XAEBUTreeIter_t@3@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??CalcClusters_C@CNavTree@@QEAAXAEBV?$function@$$A6A_NHPEBV?$Vec3D@M@@@Z@std@@@Z@XAEBUTreeIter_t@3@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??FindWalkableVoxel@CNavOrientedMesh@@AEAAHAEBV?$Vec3D@M@@00_NAEBUVoxelSparseIndex_t@3@HAEA_N@Z@_NAEBV?$Vec3D@H@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??FinishClusters@CNavTree@@QEAAXXZ@XAEBUTreeIter_t@3@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@XHHHAEBUVoxelSparseIndex_t@CNavOrientedMesh@@_NAEBUAABB_t@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??IsAgentAbleToStandOnVoxel@CNavOrientedMesh@@AEAA_NAEBV?$Vec3D@M@@0MHAEA_N@Z@_NAEBV?$Vec3D@H@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??IslandRemoval@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0_NAEBVCNavGenParams@@@Z@XH@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@_NHPEBV?$Vec3D@M@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??GenerateConnections@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@NNNN_NN1@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??TraceVoxelGrid@CNavOrientedMesh@@AEAAXAEBV?$Vec3D@M@@0AEBV?$function@$$A6A_NAEBV?$Vec3D@H@@@Z@std@@H_N@Z@H$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??TriangulateContourWS@CNavOrientedMesh@@AEAA_NAEBUmatrix3x4_t@@AEBV?$CUtlVector@PEAUVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@PEAUVertexWS_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@UVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@UVertexWS_t@CNavOrientedMesh@@H@@@@@Z@HH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??FindVoxelWalkableNeighbors@CNavOrientedMesh@@AEAAXAEBUVoxelSparseIndex_t@3@AEBV?$Vec3D@M@@QEBV5@1MAEAV?$CUtlVector@UVoxelSparseIndex_t@CNavOrientedMesh@@HV?$CUtlMemory@UVoxelSparseIndex_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@HHV?$CUtlMemory@HH@@@@AEA_NAEAH@Z@_NAEBV?$Vec3D@H@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??GenerateConnections@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@NNNN_NN2@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??CutTreeToPhysics@@YAXAEAVCNavTree@@HM_NMAEBV?$function@$$A6A_NAEBUAABB_t@@@Z@std@@@Z@_NAEBUAABB_t@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?9??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?BG@??SplitPolysByMarkup@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@_NNNN@Z@_NAEBVCNavGenPoly@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??CalcClusters_C@CNavTree@@QEAAXAEBV?$function@$$A6A_NHPEBV?$Vec3D@M@@@Z@std@@@Z@XAEBUTreeIter_t@3@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@XHHHAEBUVoxelSparseIndex_t@CNavOrientedMesh@@AEBUAABB_t@@AEBW4OrientedMeshSparseVoxelState_t@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@_NAEBU4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??TriangulateContourWS@CNavOrientedMesh@@AEAA_NAEBUmatrix3x4_t@@AEBV?$CUtlVector@PEAUVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@PEAUVertexWS_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@UVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@UVertexWS_t@CNavOrientedMesh@@H@@@@@Z@HH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?9??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?M@??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@X$$V@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_3>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_4>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@XHHHAEBUVoxelSparseIndex_t@CNavOrientedMesh@@_NAEBUAABB_t@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_3>@?1??TriangulateContourWS@CNavOrientedMesh@@AEAA_NAEBUmatrix3x4_t@@AEBV?$CUtlVector@PEAUVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@PEAUVertexWS_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@UVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@UVertexWS_t@CNavOrientedMesh@@H@@@@@Z@_NHHH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_3>@?M@??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_4>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@XAEBUVoxelSparseIndex_t@CNavOrientedMesh@@AEBUAABB_t@@G@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_4>@?M@??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_5>@?1??GetOutput@CNavGenOrientedMeshTile@@QEAAXAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@Z@XHAEBUAABB_t@@I@std@@
+.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAA?AV?$Vec3D@M@@AEBV4@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@V?$Vec3D@M@@AEBV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@N@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@M@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
@@ -412,9 +477,9 @@ $Lc>Hk
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBV4@HN@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@HM@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBV4@NN@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@MM@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@@ZPEAV3@AEBU?$_Ph@$00@2@AEBV5@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@std@@
+.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@NNNN_NN2@ZPEAV3@AEBU?$_Ph@$00@2@AEBV5@MMMM_NM_N@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@PEAV?$CUtlVector@UNavGenRecastDebugStage_t@@HV?$CUtlMemory@UNavGenRecastDebugStage_t@@H@@@@@ZPEAV3@AEBU?$_Ph@$00@2@AEBV5@AEAPEAV6@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@N@ZPEAV3@AEBU?$_Ph@$00@2@M@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@std@@
-.?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@NNNN_NN1@ZPEAV3@AEBU?$_Ph@$00@2@MMMM_NM_N@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EBAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBV4@N@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@M@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EBA_NAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@std@@
 .?AV?$_Ref_count@V?$CUtlVector@IHV?$CUtlMemory@IH@@@@@std@@
@@ -426,6 +491,7 @@ $Lc>Hk
 .?AVCKV3TransferContextBase@@
 .?AVCKV3TransferLoadContext@@
 .?AVCKV3TransferSaveContext@@
+.?AVCNavGenOrientedMeshTile@@
 .?AVCNavGenPolyProcessorStage1@@
 .?AVCNavGenPolyProcessorStage2@@
 .?AVCNavGenPolyProcessorStageBase@@
@@ -507,16 +573,28 @@ $Lc>Hk
 .xJ>Hf
 .xdata
 .xdata$x
+/5g5	
 />58d%
 /@4w)
 /@4w/
 /@4w0
+/@Xr#
+/@Xr$
 /C r2
 /C$r%
+/D$0r-
+/D$<w
 /D/(wZ
 /E v#H
 /F v"H
 /G v"H
+/HTr.
+/HTr/
+/L$4r!
+/L$@w
+/T$8r
+/T$Dv^M
+/Wtv9Hc/H
 /\$DvO
 /d$0D
 /x4w)
@@ -526,6 +604,7 @@ $Lc>Hk
 0 0 0 255
 0;|$`|
 0A]A\_][
+0A]A\_^[
 0A^^]
 0A^_^
 0A_A]_^]
@@ -536,6 +615,8 @@ $Lc>Hk
 0A_A^A]A\_^]
 0A_A^_
 0A_A^_^]
+0B;|&0|
+0D;s0
 0Lcd0
 0iN>/
 0w0c1
@@ -550,7 +631,7 @@ $Lc>Hk
 220323000000Z
 220801000000Z
 230714000000Z
-240711150415Z0/
+240718150148Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -567,21 +648,24 @@ $Lc>Hk
 3>N;kU
 3>fvw
 3mq+<
+4ILc$
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5%llu
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
+6A97}
 6D8$.u
-6HFs1
 6I]Dc
 6OB,n_
 6p7MOf
 70503
+7A;>}%
 7YA1A
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 80tWD
 8A;.|
+8A]A\
 8A_A]_^
 8A_A^A]A\_^][
 8Csinf
@@ -608,9 +692,9 @@ $Lc>Hk
 9p@u+
 9t$Pu	
 9|$(u
-9~)A-
 :D;	|
 :Mc7M
+;	V_qsort_s
 ;1#INF
 ;3}	D
 ;8}TH
@@ -620,7 +704,7 @@ $Lc>Hk
 ;I9}(tiH
 ;YA1D
 ;l$0u
-<	V_qsort_s
+;}ou	:]wu
 <	u2H
 <	u8H
 <	w	@
@@ -648,6 +732,9 @@ $Lc>Hk
 >%H5<mN
 >0 = watershed, 1 = monotone, 2 = layers
 >0<0:
+>33s?
+>>>>NAVGEN Oriented - Region has invalid bounds ( region %d ) - skipping
+>>>>NAVGEN Oriented - Region was not processed ( region %d ) - skipping
 >>NAVGEN MOVABLE: Skipping movable mesh... no polys present
 >>NAVGEN: -- End --
 >>NAVGEN: -- Start --
@@ -769,6 +856,7 @@ $Lc>Hk
 @SUVWATAVAWH
 @SUVWAVH
 @SUWATAUH
+@SUWAVH
 @SUWH
 @SVATAUAWH
 @SVATAUH
@@ -784,6 +872,7 @@ $Lc>Hk
 @USVWATAUAVAWH
 @USVWATAUAVH
 @USVWATAVAWH
+@USVWAVH
 @UVWATAUAVAWH
 @UVWAUAVH
 @UWATAVAWH
@@ -793,6 +882,7 @@ $Lc>Hk
 @VAVH
 @VAWH
 @VWAUAVH
+@VWAVH
 @VWAWH
 @WATAUAWH
 @WAUAVH
@@ -807,11 +897,11 @@ A+P@H
 A0E9L$,
 A8}(u
 A9,A$
-A90~!
+A9.~T
+A94$~]L
 A97u)L
-A9<$~]L
 A9<Fu
-A9>~UH
+A9>~\H
 A9T$,
 A9t$,
 A;>}	D
@@ -828,14 +918,17 @@ ATAVAWH
 ATAVH
 ATAWH
 AUAVAWH
+AUAWH
 AVAWH
 AVOID
+A\_[]
 A\_^]H
 A]A\[
 A]A\]
 A]A\^H
 A]A\_]
 A]A\_^[
+A]A\_^]
 A]A\_^][
 A]_^[
 A]_^[]
@@ -849,8 +942,10 @@ A^A]A\[]
 A^A]A\_^[]
 A^A]A\_^][
 A^A][]
+A^A]^[]
 A^A]_
 A^A]_]
+A^_][
 A^_^[]
 A^_^][
 A_A\][
@@ -868,7 +963,6 @@ A_A]]
 A_A]_^[]
 A_A^A\
 A_A^A\^[
-A_A^A\_[]
 A_A^A\_]
 A_A^A\_^
 A_A^A\_^[]
@@ -876,6 +970,7 @@ A_A^A\_^]
 A_A^A\_^][
 A_A^A]A\]
 A_A^A]A\_
+A_A^A]A\_[]
 A_A^A]A\_^[
 A_A^A]A\_^[]
 A_A^A]A\_^]
@@ -904,7 +999,6 @@ AssetPreviewSystem_001
 AssetRenameSystem_001
 AssetSystem001
 AssetSystemTest001
-Atexcoord
 August
 B(I9A(
 B<=(;|
@@ -926,12 +1020,14 @@ C ;C$t
 C H9A
 C I!.H
 C0D8,
+C0D80
 C0Hc	H
 C:\buildworker\citadel_staging_win64\build\_build_\navlib\_vpc_navlib\default\win64\_schema_\release\nav_vdata_h_schema.sc.cc
 C:\buildworker\citadel_staging_win64\build\_build_\navsystem\_vpc_navsystem\default\win64\_msvc_\Retail\navsystem.pdb
 C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_staging_win64\build\src\meshutils\triangulatepolygon.cpp
 C:\buildworker\citadel_staging_win64\build\src\navlib\nav_gen_common.cpp
+C:\buildworker\citadel_staging_win64\build\src\navlib\nav_gen_oriented_mesh.cpp
 C:\buildworker\citadel_staging_win64\build\src\navlib\nav_gen_poly.cpp
 C:\buildworker\citadel_staging_win64\build\src\navlib\nav_gen_polyclip.cpp
 C:\buildworker\citadel_staging_win64\build\src\navlib\nav_gen_processor.cpp
@@ -941,9 +1037,12 @@ C:\buildworker\citadel_staging_win64\build\src\navlib\nav_mesh.cpp
 C:\buildworker\citadel_staging_win64\build\src\navlib\nav_space_clusters.cpp
 C:\buildworker\citadel_staging_win64\build\src\navlib\nav_space_tree.cpp
 C:\buildworker\citadel_staging_win64\build\src\navlib\nav_utils.cpp
+C:\buildworker\citadel_staging_win64\build\src\navlib\oriented\nav_oriented_mesh.cpp
+C:\buildworker\citadel_staging_win64\build\src\navlib\oriented\nav_oriented_mesh.h
 C:\buildworker\citadel_staging_win64\build\src\navsystem\navsystem.cpp
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\doublesmath.inl
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\rotation.h
+C:\buildworker\citadel_staging_win64\build\src\public\mathlib\vectoraligned.h
 C:\buildworker\citadel_staging_win64\build\src\public\navlib\nav_gen_common.h
 C:\buildworker\citadel_staging_win64\build\src\public\navlib\nav_gen_poly.h
 C:\buildworker\citadel_staging_win64\build\src\public\navlib\nav_gen_poly_simple.h
@@ -963,6 +1062,7 @@ C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_schema_support.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
+C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
@@ -1016,6 +1116,7 @@ CNavGenEdge::GetPolyVertIdxInEdge
 CNavGenGrid::EntryIndex
 CNavGenInput::GetNavGenParamsIndex
 CNavGenInput::GetPropertyValue::<lambda_1>::operator ()
+CNavGenOrientedMeshTile::CNavGenOrientedMeshTile
 CNavGenParams::LoadAgentDefaultsFromGameInfo
 CNavGenParams::LoadDefaultsFromGameInfo
 CNavGenPoly::ConnectToOutgoing
@@ -1045,6 +1146,15 @@ CNavHullVData
 CNavHullVData::KV3TransferLoad_Impl
 CNavHullVData::KV3Transfer_DefaultKeys_Impl
 CNavMesh::RegisterPhysicsInterface
+CNavOrientedMesh::ComputeOrientationEntryFace
+CNavOrientedMesh::SimplifiedContourToTriangulationCoord::<lambda_1>::operator ()
+CNavOrientedMesh::SimplifyRegionContour
+CNavOrientedMesh::TraceRegionContours
+CNavOrientedMesh::TraceRegionContours::<lambda_1>::operator ()
+CNavOrientedMesh::TraceRegionRawContourLocalSpace::<lambda_1>::operator ()
+CNavOrientedMesh::TraceRegionRawContourLocalSpace::<lambda_2>::operator ()
+CNavOrientedMesh::TriangulateContourWS
+CNavOrientedMesh::ValidateAdjacency
 CNavSpaceData::InitAndOwnClusters
 CNavSystem::LoadNavGenParamsFromGameInfo::<lambda_1>::operator ()
 CNavToolsPhysicsInterface::Nav_CheckAreaOverlappingEntity
@@ -1081,6 +1191,12 @@ CThreadedJob
 CTier2ShutdownCallback::RunAllCallbacks
 CUtlArray<class Vec3D<float>,8,int>::[]::<lambda_1>::operator ()
 CUtlArray<double,5,int>::[]::<lambda_1>::operator ()
+CUtlLinkedList overflow! (exhausted memory allocator)
+CUtlLinkedList<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int> >::AllocInternal
+CUtlLinkedList<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int> >::LinkAfter
+CUtlLinkedList<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int> >::LinkBefore
+CUtlLinkedList<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int> >::RemoveAll
+CUtlLinkedList<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int> >::Unlink
 CUtlMemory<bool,int>::Grow
 CUtlMemory<bool,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<bool,int>::Grow::<lambda_2>::operator ()
@@ -1092,6 +1208,8 @@ CUtlMemory<class CNavGenConnection,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CNavGenConnection,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CNavGenEdge,int>::Grow
 CUtlMemory<class CNavGenEdge,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CNavGenOrientedMeshTile *,int>::Grow
+CUtlMemory<class CNavGenOrientedMeshTile *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CNavGenPoly,int>::Grow
 CUtlMemory<class CNavGenPoly,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CNavGenPoly,int>::Grow::<lambda_2>::operator ()
@@ -1115,6 +1233,9 @@ CUtlMemory<class CThreadedJobFunc *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlHashtable<class IPhysicsBody const *,struct empty_t,struct DefaultHashFunctor<class IPhysicsBody const *>,struct DefaultEqualFunctor<class IPhysicsBody const *>,struct undefined_t,class CUtlMemory<class CUtlHashtableEntry<class IPhysicsBody const *,struct empty_t>,int>,1>,int>::Grow
 CUtlMemory<class CUtlHashtable<class IPhysicsBody const *,struct empty_t,struct DefaultHashFunctor<class IPhysicsBody const *>,struct DefaultEqualFunctor<class IPhysicsBody const *>,struct undefined_t,class CUtlMemory<class CUtlHashtableEntry<class IPhysicsBody const *,struct empty_t>,int>,1>,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CUtlHashtable<class IPhysicsBody const *,struct empty_t,struct DefaultHashFunctor<class IPhysicsBody const *>,struct DefaultEqualFunctor<class IPhysicsBody const *>,struct undefined_t,class CUtlMemory<class CUtlHashtableEntry<class IPhysicsBody const *,struct empty_t>,int>,1>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CUtlLinkedList<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int> >,int>::Grow
+CUtlMemory<class CUtlLinkedList<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int> >,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CUtlLinkedList<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int> >,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlString,int>::Grow
 CUtlMemory<class CUtlString,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CUtlString,int>::Grow::<lambda_2>::operator ()
@@ -1125,6 +1246,17 @@ CUtlMemory<class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDoubl
 CUtlMemory<class CUtlVector<int,int,class CUtlMemory<int,int> >,int>::Grow
 CUtlMemory<class CUtlVector<int,int,class CUtlMemory<int,int> >,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CUtlVector<int,int,class CUtlMemory<int,int> >,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::FinalSimplifiedContourVertex_t *,int,class CUtlMemory<struct CNavOrientedMesh::FinalSimplifiedContourVertex_t *,int> >,int>::Grow
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::FinalSimplifiedContourVertex_t *,int,class CUtlMemory<struct CNavOrientedMesh::FinalSimplifiedContourVertex_t *,int> >,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::FinalSimplifiedContourVertex_t *,int,class CUtlMemory<struct CNavOrientedMesh::FinalSimplifiedContourVertex_t *,int> >,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::RegionBucketEntry_t,int,class CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int> >,int>::Grow
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::RegionBucketEntry_t,int,class CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int> >,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::RegionBucketEntry_t,int,class CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int> >,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::VertexWS_t *,int,class CUtlMemory<struct CNavOrientedMesh::VertexWS_t *,int> >,int>::Grow
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::VertexWS_t *,int,class CUtlMemory<struct CNavOrientedMesh::VertexWS_t *,int> >,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::VertexWS_t *,int,class CUtlMemory<struct CNavOrientedMesh::VertexWS_t *,int> >,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::VertexWS_t,int,class CUtlMemory<struct CNavOrientedMesh::VertexWS_t,int> >,int>::Grow
+CUtlMemory<class CUtlVector<struct CNavOrientedMesh::VertexWS_t,int,class CUtlMemory<struct CNavOrientedMesh::VertexWS_t,int> >,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> >,int>::Grow
 CUtlMemory<class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> >,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> >,int>::Grow::<lambda_2>::operator ()
@@ -1151,6 +1283,10 @@ CUtlMemory<enum PlaneRegion_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<int,int>::Grow
 CUtlMemory<int,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<int,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<int,int>::Swap
+CUtlMemory<signed char,int>::Grow
+CUtlMemory<signed char,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<signed char,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct AABB_t,int>::Grow
 CUtlMemory<struct AABB_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct AABB_t,int>::Grow::<lambda_2>::operator ()
@@ -1172,6 +1308,39 @@ CUtlMemory<struct CNavGenPolyProcessor::NavLinkBridge_t,int>::Grow
 CUtlMemory<struct CNavGenPolyProcessor::NavLinkBridge_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CNavGenPolyProcessor::OpenPoly_t,int>::Grow
 CUtlMemory<struct CNavGenPolyProcessor::OpenPoly_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::CVoxelData::VoxelData_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::CVoxelData::VoxelData_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::ContourDef_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::ContourDef_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNavOrientedMesh::ContourDef_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::FinalSimplifiedContourVertex_t *,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::FinalSimplifiedContourVertex_t *,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNavOrientedMesh::FinalSimplifiedContourVertex_t *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::LocalSpaceVoxel_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::LocalSpaceVoxel_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNavOrientedMesh::LocalSpaceVoxel_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::RawContourVertex_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::RawContourVertex_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNavOrientedMesh::RawContourVertex_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::RegionContours_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::RegionContours_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNavOrientedMesh::RegionContours_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::RegionData_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::RegionData_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNavOrientedMesh::RegionData_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::SimplifiedContourVertex_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::SimplifiedContourVertex_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNavOrientedMesh::SimplifiedContourVertex_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::VertexWS_t *,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::VertexWS_t *,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNavOrientedMesh::VertexWS_t *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::VertexWS_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::VertexWS_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNavOrientedMesh::VoxelSparseIndex_t,int>::Grow
+CUtlMemory<struct CNavOrientedMesh::VoxelSparseIndex_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CNavTree::SpaceTreeNode_t,int>::Grow
 CUtlMemory<struct CNavTree::SpaceTreeNode_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct ConnectionCandidate_t,int>::Grow
@@ -1194,16 +1363,39 @@ CUtlMemory<struct NavGenRecastDebugStage_t,int>::Grow
 CUtlMemory<struct NavGenRecastDebugStage_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct NavGenRecastDebugStage_t::Vertex_t,int>::Grow
 CUtlMemory<struct NavGenRecastDebugStage_t::Vertex_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int>::Grow
+CUtlMemory<struct UtlLinkedListElem_t<struct CNavOrientedMesh::VoxelGrid::VoxelSpan_t,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,int>,int>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,int>,int>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: bool __cdecl CNavOrientedMesh::Regions_Stage_FindSplits(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > const &,unsigned int,struct CNavOrientedMesh::RegionSplitResult_t &)'::`2'::RegionHalfSplit_t,int>::Grow
+CUtlMemory<struct `private: bool __cdecl CNavOrientedMesh::Regions_Stage_FindSplits(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > const &,unsigned int,struct CNavOrientedMesh::RegionSplitResult_t &)'::`2'::RegionHalfSplit_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct `private: bool __cdecl CNavOrientedMesh::Regions_Stage_FindSplits(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > const &,unsigned int,struct CNavOrientedMesh::RegionSplitResult_t &)'::`2'::RegionHalfSplit_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: bool __cdecl CNavOrientedMesh::Regions_Stage_FindSplits(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > const &,unsigned int,struct CNavOrientedMesh::RegionSplitResult_t &)'::`2'::RegionOrientationRange_t,int>::Grow
+CUtlMemory<struct `private: bool __cdecl CNavOrientedMesh::Regions_Stage_FindSplits(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > const &,unsigned int,struct CNavOrientedMesh::RegionSplitResult_t &)'::`2'::RegionOrientationRange_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct `private: bool __cdecl CNavOrientedMesh::Regions_Stage_FindSplits(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > const &,unsigned int,struct CNavOrientedMesh::RegionSplitResult_t &)'::`2'::RegionOrientationRange_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: unsigned int __cdecl CNavOrientedMesh::Regions_Iteration(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &)'::`44'::VoxelRecord_t,int>::Grow
+CUtlMemory<struct `private: unsigned int __cdecl CNavOrientedMesh::Regions_Iteration(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &)'::`44'::VoxelRecord_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct `private: unsigned int __cdecl CNavOrientedMesh::Regions_Iteration(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &)'::`44'::VoxelRecord_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::BoundaryPoly_t,int>::Grow
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::BoundaryPoly_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::SetNode_t *,int>::Grow
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::SetNode_t *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::Set_t,int>::Grow
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::Set_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::Regions_Stage_Expand(unsigned short,class CUtlVector<struct CNavOrientedMesh::RegionBucketEntry_t,int,class CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int> > &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &,class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > &,class Vec3D<float> const &)'::`2'::ModificationEntry_t,int>::Grow
+CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::Regions_Stage_Expand(unsigned short,class CUtlVector<struct CNavOrientedMesh::RegionBucketEntry_t,int,class CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int> > &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &,class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > &,class Vec3D<float> const &)'::`2'::ModificationEntry_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::TraceRegionContours(unsigned int,float,float)'[::C]::SetNode_t *,int>::Grow
+CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::TraceRegionContours(unsigned int,float,float)'[::C]::SetNode_t *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct qhFace const *,int>::Grow
 CUtlMemory<struct qhFace const *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct std::pair<double,double>,int>::Grow
 CUtlMemory<struct std::pair<double,double>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct std::pair<int,float>,int>::Grow
 CUtlMemory<struct std::pair<int,float>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct std::pair<int,unsigned short>,int>::Grow
+CUtlMemory<struct std::pair<int,unsigned short>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct std::pair<struct CNavTree::SpaceTreeNode_t *,struct AABB_t>,int>::Grow
 CUtlMemory<struct std::pair<struct CNavTree::SpaceTreeNode_t *,struct AABB_t>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct std::pair<void *,void *>,int>::Grow
@@ -1217,6 +1409,7 @@ CUtlMemory<unsigned int,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<unsigned short,int>::Grow
 CUtlMemory<unsigned short,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<unsigned short,int>::Grow::<lambda_2>::operator ()
+CUtlMemoryFixed<class Vec3D<float>,8>::Grow
 CUtlMemoryFixed<class qhPlane,6>::Grow
 CUtlMemoryFixed<int,3>::Grow
 CUtlMemory_RawAllocator<class CUtlHashtableEntry<unsigned int,struct empty_t> >::EnsureCapacity
@@ -1266,6 +1459,7 @@ CreateFileW
 CreateInterface
 CreateNewThreadPool
 D!l$xA
+D$ D;
 D$ D;B,
 D$ E3
 D$ E;
@@ -1275,20 +1469,30 @@ D$ I;R
 D$ L;
 D$ p9
 D$$E;
+D$(D;f
+D$(D;g
+D$(D;w
 D$(E3
 D$(E;A
 D$(H;
 D$(Lc
+D$(Lc7Hc
+D$(Lc7Ic
+D$(Lc7L
+D$(Lk
 D$(fD
 D$(fI
 D$(fff
 D$0@8{
+D$0A;
 D$0E3
 D$0Hc
 D$0Hc7H
+D$0HcE
 D$0HcH
 D$0HcL
 D$0Ic
+D$0L;
 D$0fH
 D$0i~
 D$49C
@@ -1297,18 +1501,24 @@ D$4H;K
 D$4Hc
 D$8A;r,
 D$8E3
+D$8E;
 D$8H;
 D$8Hc
 D$8L9
+D$8Lc|$0
 D$8fff
+D$@A;
+D$@A;D
 D$@D;
+D$@D;g
+D$@D;o
 D$@D;w
 D$@E3
 D$@E;
 D$@H+
 D$@H;
 D$@H;F
-D$@t+E
+D$@t*L
 D$DD+
 D$DE3
 D$DHc
@@ -1318,18 +1528,23 @@ D$HA;B
 D$HE3
 D$HIcD
 D$HL9gXt
+D$HL;
 D$Hff
 D$HtP
 D$LHc
 D$PA;
 D$PE3
 D$PH+
+D$PHc
 D$PI;
 D$PIcD
+D$PL;
 D$PLct
+D$TA;
 D$THc
 D$TM;
 D$TfA
+D$XA;
 D$XE3
 D$XE;
 D$XH;
@@ -1340,7 +1555,9 @@ D$XHk
 D$XIc
 D$XIc@ 
 D$XLc
+D$\Hc|$`
 D$_E3
+D$`A90~K
 D$`E3
 D$`E;
 D$`H;
@@ -1353,18 +1570,25 @@ D$hHc
 D$hIc
 D$hL;
 D$hLcM
+D$hfA
+D$pA;
 D$pB;
 D$pD8
 D$pE3
+D$pH;
 D$pHc
 D$pL;
 D$pLc
 D$tE3
+D$tE;
+D$xA;
 D$xD96
 D$xE3
 D$xH;
 D$xHc
 D$xHcD$TA
+D$xHi
+D(<C9D
 D(`H;
 D(`L;
 D+A@H
@@ -1387,6 +1611,9 @@ D8ept&
 D8s	t"H
 D8s`t^
 D8t$ht
+D8upu
+D9#~$I
+D9%FJ
 D90t>
 D99~&E
 D9B u
@@ -1397,14 +1624,17 @@ D9t$ t
 D9z u
 D;T$X|"A+
 D;T$p|&A+
+D;l$l
 D;sHu
 D;x,|
-D;~(u
+D;{(u
+D;|$T
 DNnW'
 DV6Hk
 December
 DeleteCriticalSection
 DemoUpconverterVersion001
+Dense voxels
 DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
@@ -1419,11 +1649,11 @@ Distance Field
 Double-save to Member '%s'
 DoubleIsValid_Force
 E H9H
-E(9G`
 E+A@H
 E0HcE`
 E0HcH
 E0Lc`
+E8E;g
 E8q(u
 E9t$(
 E;j(}
@@ -1432,8 +1662,9 @@ E;t$(
 EDfff
 EH*?H
 EHHcI
-EP;A`
+EP;Ax
 EPHcE
+EPL;D$H
 ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 ERROR: Ladders starting at index %d are lacking connectivity info during IslandRemoval.
 ERROR: Unable to compute distance to poly %d from point at ( %g, %g, %g )
@@ -1455,6 +1686,7 @@ EnumHelpers_t<enum VNotifyPriority_t>::List
 Error (problem that prevents task success)
 Error saving default keys for CNavHullPresetVData: %s
 Error saving default keys for CNavHullVData: %s
+EwL;E
 Executing supposedly unreachable code
 ExitProcess
 ExternalNameForInternalType
@@ -1485,6 +1717,7 @@ FlsSetValue
 FlushFileBuffers
 Follow user preference
 FontManager_001
+Found contour with less than 3 vertices for region %d even after multiple iterations. This might turn into a crack.
 Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 Fp8Gpt
 FpA8Ept
@@ -1511,6 +1744,7 @@ GenerateEdgeList
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -1559,19 +1793,25 @@ H9(tO
 H97u+A
 H98t2
 H9;t	H
+H9=E5
 H9s@H
 H9sHH
 H9sPH
+H9s`H
+H9shH
 H9t$x
 H9{8H
 H9{@H
 H9{HH
+H9{XH
 H;+|T~UH
 H;;|X~YH
+H;D$(
+H;D$H
 H;XXs
 H;\$`
 H;\$x
-H;]@H
+H;]XH
 H;t$8
 H;xXu5
 H;|$8
@@ -1585,6 +1825,7 @@ HH:mm:ss
 HammerMapLoader001
 HandleAsStringFailure
 Hc(A;
+Hc.;n
 Hc/;o
 Hc3;s
 Hc3L+
@@ -1595,14 +1836,18 @@ Hc;HcCH;
 Hc>;~
 HcC H
 HcCHH
+HcD$ Hk
 HcD$ M
 HcD$0
 HcD$<
+HcD$@H
 HcD$@I
 HcD$DH
+HcD$P
 HcD$PH
 HcD$XH
 HcD$`H
+HcD$`L
 HcD$hH
 HcD$pH
 HcD$x
@@ -1622,10 +1867,16 @@ HcK H
 HcL$0A
 HcL$<L;
 HcL$@#
+HcL$DA
+HcL$HA
 HcL$p
 HcO H
 HcQ<H
+HcT$PHc]
 HcWPH
+Hc\$4
+Hc\$`L
+Hc\$dL
 Hc^X;^hu
 Hct$(H
 Hct$@
@@ -1633,6 +1884,7 @@ Hct$@H
 Hct$X;
 Hct$p
 Hcu`M
+Hc{`;{pu
 Hc|$@A;?}MH
 HelpSystem_001
 Hide unless error/warning occurs
@@ -1640,6 +1892,7 @@ HostStateMgr001
 I+4$H
 I0IcG
 I;<$|`~bH
+ID;L$d
 IHcE`
 IJcD?
 IPulseSystem_001
@@ -1679,20 +1932,26 @@ InvokeMiniDumpHandler
 IsConnected()
 IsDebuggerPresent
 IsGrowable()
+IsInList(after)
+IsInList(before)
 IsPowerOfTwo( nAlignOf )
 IsProcessorFeaturePresent
 IsSafeToUseDefaultNew
 IsValid()
 IsValidCodePage
 IsValidIndex( i )
+IsValidIndex(elem)
 IslandRemoval
 IslandRemoval - unable to find a poly near navlink location %g %g %g
 J>@G_
+JPIcB
 January
+JcD)<Hi
 JoinNonZupPoly_A
 K&>.yC
 K(H;K0}
 K(H;K0} H
+K0D81u
 K0D9}
 K0HcQ
 K4LcC0
@@ -1742,12 +2001,15 @@ L$ WATAUAVAWH
 L$ WH
 L$ fff
 L$ |+L;
+L$$E3
 L$&8\$&t,8Y
 L$(A+
 L$(A9
 L$(D;
 L$(E3
+L$(H;
 L$(Hc
+L$(Lc
 L$,D;
 L$0A+
 L$0D;l$ 
@@ -1760,13 +2022,16 @@ L$0fA
 L$0ff
 L$4;{
 L$4HcD$<H
-L$8;HH
+L$8;H`
 L$8A+
 L$8A;
 L$8A;	
 L$8D;
+L$8D;o
 L$8E3
 L$8H3
+L$8H;
+L$8L;t$0
 L$8Mc
 L$8fI
 L$<E3
@@ -1781,53 +2046,73 @@ L$@fff
 L$DD;
 L$DL+
 L$HA9.~b3
+L$HH;
+L$HHc
 L$HHcE
 L$HLc
+L$HM;
 L$PB;t
 L$PE;
 L$PIc
 L$PLcx A;
 L$PfA
+L$THc
+L$XA;
 L$XD;
 L$XE+
 L$XE;
+L$XH;L$p
+L$XIc
 L$XL9L$p
+L$XLc/
+L$XLk
 L$`;M
 L$`A;^
 L$`E+
 L$`Hc
+L$`Lc
+L$`Lc'
 L$`Lk
 L$h;D$8
 L$h;M
 L$hA+
 L$hE3
+L$pA;>
 L$pE3
 L$pH;M
 L$pHc
+L$pMc
+L$pfA
 L$xA+
 L$xE;
 L$xH;
 L$xLcF(A
 L$xMc
 L$xff
-L0>2t
 L9#u/H
+L9't	H
 L9;t	H
 L9` u
 L9t$ht
 L;\$ 
 L;d$h
 L;l$p
+L;t$0
 L;|$X
 L?n(Zy&
 LCMapStringEx
 LCMapStringW
 LD$L+D$HD
 LadderConnect
+Lc!A;^
 Lc!E3
+Lc#D;c
+Lc&A+
 Lc3D;s
 Lc6D;v
+Lc7;k
 Lc7D;w
+Lc9E3
 Lc>D;~
 LcA<E3
 LcD$@
@@ -1835,7 +2120,9 @@ LcD$@M
 LcD$HL
 LcD$PH
 LcL$0
+LcL$8H
 LcL$PH
+LcL$`H
 LcMhA
 LcN(H
 LcNPH
@@ -1843,9 +2130,12 @@ LcT$`
 LcT$h3
 Lcb4E3
 Lcc8D;cH
+Lcd$tA;
 Lcj E
+Lcl$XLcd$t
 Lcl$`
 Lcr4L
+Lct$ 
 Lct$8
 Lct$@
 Lct$H
@@ -1853,6 +2143,7 @@ Lct$`
 Lct$`Lc'E
 Lct$hJ
 Lcw@D;wPu
+Lc~ D;~0u
 LeaveCriticalSection
 Level of validation for nav system.  Higher will be slower.
 Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
@@ -1884,6 +2175,8 @@ March
 MatchPolysToGround
 MaterialUtils_001
 MathLib_Init
+Max abrupt orientation difference an NPC can tolerate when moving through the mesh (degrees).
+Max orientation range allowed within a region before it gets further split.
 Mc!E;a
 Mc4$E;t$
 Mc<$E;|$
@@ -1893,6 +2186,7 @@ McU03
 Mc|$4
 Mc} M
 Mc~0A
+Mc~0E;~@u
 MemAlloc_AllocFunc
 MemAlloc_FreeFunc
 MemAlloc_StrDupFunc
@@ -1911,8 +2205,10 @@ MultiByteToWideChar
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 Must specify a search path or root-relative (ie. game/.. or content/...) path.
 N(H;N0}
+N@9}H
 NAN(IND)
 NAN(SNAN)
+NAVGEN Oriented - ValidateAdjacency - dense voxel %d has neighbor dense voxel %d but there's no back connection.
 NAV_GEN_PROJ
 NONAV
 Nav gen curerntly assumes jump down >= jump up.
@@ -1937,6 +2233,7 @@ NavEdgeMaxError
 NavEdgeMaxLen
 NavGameTest001
 NavGenGetPhysPolysoup
+NavGenPolyProcessor
 NavGenSplit::SplitWithConnections_Edge
 NavGenSplit::SplitWithConnections_Plane
 NavGenSplit::SplitWithConnections_VertPlane
@@ -1960,6 +2257,7 @@ NetworkServerService_001
 NetworkService_001
 NetworkSystemVersion001
 Never close the group automatically (used to indicate an error like the process exiting unexpectedly)
+NhvsR
 Not safe to 'new' this class due to alignment requirements
 November
 NumVerts()
@@ -1970,6 +2268,7 @@ OpenMutexA
 Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
+Oriented Mesh: 
 OverlayProjectionDirection
 P HcK
 P HcM
@@ -1977,13 +2276,14 @@ P Hc{
 P IcL$
 P IcO
 P(D8s	t
-PA;^`
+PA;^x
+PA;px
 PA^_]
 PA^_^][
 PA_A^A]A\_^]
 PA_A^_
 PAq=?Mp#
-PD;q`
+PD;qx
 PMc8E3
 PanoramaTextServices001
 PanoramaUIClient001
@@ -2018,6 +2318,7 @@ PropWorldOrigin
 PropertyEditorSystem_001
 Pz}b!
 Q HcB
+QH`";
 QueryPerformanceCounter
 RaiseException
 RandomInt
@@ -2100,6 +2401,7 @@ SetUnhandledExceptionFilter
 Show areas that are potentially visible from the current nav area
 Show regardless of user setting
 Simplified Contours
+SimplifyRegionContour( m_vecRegionData, rawContour, nRegion, flMaxError, flMaxEdgeLen, contourDef.m_simplified )
 SleepConditionVariableCS
 SoundOpSystem001
 SoundOpSystemEdit001
@@ -2118,6 +2420,7 @@ Source2Host001
 Source2Server001
 Source2V8System001
 Space gen: %d / %d finished, %d cells
+Sparse voxels
 SplitBottleneckPolys
 SplitBoundaryPolysWithConnections
 SplitPolysByMarkup
@@ -2129,6 +2432,7 @@ SteamAudio001
 Sunday
 T$ D8
 T$ D;
+T$ Ic
 T$ fD
 T$$A9
 T$(E;
@@ -2148,6 +2452,7 @@ T$@A;A
 T$@D;N,
 T$@E3
 T$@E;S
+T$DLcD$0
 T$HA;W
 T$HLcL$0E3
 T$PE3
@@ -2164,6 +2469,8 @@ T$`Hc
 T$`L+
 T$`L;
 T$dLc0D
+T$hA+
+T$hA9w
 T$hA;
 T$hE3
 T$hI;
@@ -2172,6 +2479,7 @@ T$pE#
 T$pH;
 T$pHcL
 T$xE2
+T$xH;
 T$xHc
 TUUUU
 TanFrameQuat
@@ -2189,6 +2497,7 @@ ThreeTwoMergeFindABCDFG
 ThreeTwoMergeFindHAndE
 Thursday
 Tile Boundaries
+Tile boundaries
 TlsAlloc
 TlsFree
 TlsGetValue
@@ -2197,11 +2506,13 @@ Too much Recast debug data; skipping tile
 ToolFramework2_002
 ToolSceneNodeFactory_001
 ToolService_001
+TraceRegionContour: we got into a cycle before reaching our starting voxel/face.
 TransformRecastNonZup
 TriangulatePolygon
 TriangulateQuad
 TrySendVNotify - SendKV3 failed
 Tuesday
+U	V_stricmp_fast
 U8E;`
 U8HcL
 UATAUAVAWH
@@ -2214,6 +2525,7 @@ USATH
 USAUAVH
 USAUH
 USVATAVH
+USVAUAVH
 USVWATAUAVAWH
 USVWATAUAWH
 USVWAUAVAWH
@@ -2221,12 +2533,16 @@ USVWAUAWH
 USVWAVAWH
 USVWAVH
 USVWH
-USWATAVAWH
+USWATAUAVAWH
+USWATH
 UT$@A
 UUUUUU
 UUUUUUUUH
+UVAUI
 UVAVH
 UVWATAUAVAWH
+UVWATAUAVH
+UVWATAUH
 UVWATAVAWH
 UVWATAVH
 UVWATH
@@ -2240,12 +2556,14 @@ UWATAUH
 UWAUAVAWH
 UWAUAVH
 UWAVH
+UWAWH
 U_0=1
 UnTransformRecastNonZup
 Unable to find '%s'. Please make sure one exists and contains agent nav hulls.
 Unable to find '%s'. Please make sure one exists and contains at least one preset for agent nav hulls.
 Unable to find nav hull definition '%s' in '%s'. Ignoring.
 Unable to find nav hull preset '%s'.
+Unable to find outer contour for region %d
 Unable to format KV3 instance as a string
 Unable to load agent preset '%s'.
 Unexpected missing default for %s
@@ -2262,7 +2580,6 @@ Unsupported KV3 basic type '%s' (%d)!
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_stricmp_fast
 V6'?C
 V6E>`"(5
 VATAUAVH
@@ -2343,7 +2660,9 @@ V_StringToVector2D
 V_StringToVector4D
 V_UInt64ToString_Unsafe
 V_UnqualifiedFileName
+V_acosf
 V_cosd
+V_cosf
 V_~]	,
 ValidateNewVerts( nCountIn, rVerts )
 ValidateVertices
@@ -2351,6 +2670,7 @@ Valve Corp.0
 Valve Corp.1
 ValveSMMem:%s
 ValveSMMut:%s
+VectorGetAngleBetweenVectors
 VertexElementAnnotation
 VertexGenericIntegerData
 VertexPaintBlendParams
@@ -2407,9 +2727,11 @@ ZdN=Y
 \$ D;0
 \$ Hc
 \$ I+
+\$ Lc'
 \$ UH
 \$ UVAVH
 \$ UVWH
+\$ UWAVH
 \$ VH
 \$ VWATAUAVH
 \$ VWATAVAWH
@@ -2445,14 +2767,18 @@ ZdN=Y
 \$PL;
 \$PMc1A
 \$PfE
+\$XE3
 \$XHc
 \$XI;
 \$XfA;
 \$\D;
 \$`I+
+\$hE3
 \$pE3
 \$xE3
+\$xLc
 \$xfE
+\$xt2I
 \D$HA
 \t$(A
 \t$pf
@@ -2463,6 +2789,7 @@ ZdN=Y
 ^`LcD
 ^pIcFpI
 _ ;_$t
+_ HcG
 _RDATA
 __based(
 __cdecl
@@ -2495,7 +2822,6 @@ _not_pickable
 `A_A^A]A\]
 `A_A^A]A\_^]
 `RTTI
-`Yy*U
 `anonymous namespace'
 `copy constructor closure'
 `default constructor closure'
@@ -2531,7 +2857,6 @@ _not_pickable
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-`{5M4
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 addEdge: Too many edges (%d/%d).
@@ -2544,7 +2869,9 @@ argument list too long
 argument out of domain
 array
 bAllocationCanFit
+bBackAtFirstVoxel
 bBackFound
+bFound
 bLegalTypeChange
 bad address
 bad exception
@@ -2606,9 +2933,11 @@ d$(fff
 d$0E3
 d$0fE
 d$0u"H
+d$4D;
 d$4H;S
 d$8L;d$`
 d$<D; 
+d$@Hc
 d$@I;
 d$IfD
 d$PE3
@@ -2618,11 +2947,13 @@ d$PfE
 d$XE3
 d$XI;
 d$`E3
+d$`Hc
 d$`fD
 d$dD;d$ltY
 d$hD;m
 d$hM;
 d$pIcL
+d$pL;
 d$xA;
 d$xLcA
 dddd, MMMM dd, yyyy
@@ -2637,6 +2968,7 @@ e0A_A^A]A\]
 e0HcL
 eLK(w
 ePA_A^A]A\_^]
+e`A_A^A]A\]
 edges[ j ].NumPolys() == 1
 ehandle
 end_as_info
@@ -2651,6 +2983,7 @@ fA9	t	I
 fA94@I
 fA94HI
 fA94II
+fA9DN
 fA9LE
 fB9<A}1L
 fB9LB
@@ -2658,6 +2991,7 @@ fC94Qu0
 fC94Su?
 fD9$Ku
 fD9$St
+fD9(sC
 fD9,9H
 fD9,BL
 fD91uTL9r
@@ -2679,6 +3013,7 @@ fffffff
 file exists
 file too large
 filename too long
+flMinDist != FLT_MAX
 flc_columns
 flc_count
 flc_file_ids
@@ -2744,6 +3079,7 @@ iu+-,
 jj@0HK4
 k0i0$
 kL@8o(u
+l$ D;
 l$ HcA
 l$ Lci
 l$ VH
@@ -2758,10 +3094,12 @@ l$0E+
 l$0E2
 l$0Hc
 l$0Lc)
+l$4A9.
 l$4D+
 l$8E;
 l$8Hcs H
 l$@E3
+l$@Lc7I
 l$@Mc
 l$@fD
 l$@ff
@@ -2769,15 +3107,19 @@ l$DE;
 l$HA_A^A]A\_^
 l$HH;
 l$HHc
+l$HHi
 l$HHk
 l$PA_A^A]A\_^
+l$PD;U
 l$PE;/
+l$P|SH
 l$XE3
 l$XI9
 l$XI;
 l$XIc
 l$XfA
 l$Xfff
+l$`A+
 l$`A;
 l$`E;
 l$`I;
@@ -2791,14 +3133,20 @@ log10
 lowprecisionuv
 lowprecisionuv1
 m0k0$
+mHLc/
 mL+7H
 mPIcE
+m_ElementCount == 0
 m_Elements.IsValidIterator( it )
 m_Elements.IsValidIterator( m_LastAlloc )
 m_Elements.IsValidIterator( m_LastAlloc ) || m_NumElements == I( 0 )
 m_FirstFree == InvalidIndex()
+m_Head == InvalidIndex()
+m_Memory.IsValidIterator( it )
+m_Memory.IsValidIterator( m_LastAlloc ) || m_ElementCount == 0
 m_NumElements == 0
 m_Root == InvalidIndex()
+m_Tail == InvalidIndex()
 m_agentBorderErosion
 m_agentHeight
 m_agentMaxClimb
@@ -2820,6 +3168,7 @@ m_bIsNotMatchedToMaterial
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 m_nAsUint64 == 0
+m_nGenParamIdx < m_genParams.NumAgentHulls()
 m_nGenParamsIndex >= 0 && m_nGenParamsIndex < m_GenParams.NumAgentHulls()
 m_nIndex >= 0 && m_nIndex < m_nArrayElementCount
 m_nIndex >= 0 && m_nIndex < m_nMemberCount
@@ -2880,6 +3229,7 @@ nSlot == INVALID_SPLITSCREENSLOT || nSlot.GetRaw() == 0
 nSrcEdge >= 0 && nSrcEdge < rSrcPoly.m_nVerts
 nSrcVerts <= NAV_GEN_MAX_VERTS
 nSrcVerts <= NAV_GEN_MAX_VERTS_FINAL
+nStartingFace >= 0
 nType != CONVAR_TYPE_INVALID
 nType == m_pInfo->m_nType || nType == CONVAR_TYPE_INVALID
 nType >= 0 && nType <= CONVAR_TYPE_COUNT
@@ -2922,6 +3272,8 @@ nav_gen_opt_to_quads_se_limit_end
 nav_gen_opt_to_quads_se_limit_start
 nav_gen_opt_to_quads_weld_limit_end
 nav_gen_opt_to_quads_weld_limit_start
+nav_gen_oriented_angle_tol
+nav_gen_oriented_max_region_range
 nav_gen_remove_vertical_polys
 nav_gen_split_boundary_polys
 nav_gen_split_multi_connection_polys
@@ -3122,6 +3474,7 @@ restrict(
 result out of range
 rotation_vector
 s AWH
+s!Lc{
 s_nConnectionCount > 0
 s_nRegistrationCount < V_ARRAYSIZE(s_pConnectionRegistration)
 s_nResourceFCRegisteredCount > 0
@@ -3147,6 +3500,7 @@ string_token
 subclass
 success
 svDE3
+t	;Ug
 t	Hcp
 t!HcA
 t#x!H
@@ -3155,7 +3509,11 @@ t$ AVH
 t$ AWH
 t$ E3
 t$ Hc
+t$ L;t$P
+t$ Lc
+t$ Lk
 t$ UH
+t$ UWATAUAWH
 t$ WATAUAVAWH
 t$ WATAWH
 t$ WAVAWH
@@ -3172,7 +3530,9 @@ t$0Hcq
 t$0fff
 t$4E3
 t$4I+
+t$4v"
 t$8;;
+t$8D;
 t$8E3
 t$8H+
 t$8Hc
@@ -3186,7 +3546,9 @@ t$@D9t$P|LH
 t$@E9s
 t$@Hc
 t$@Lc
+t$@~ H
 t$DD;
+t$DL;}
 t$HE3
 t$HE;
 t$HH;
@@ -3211,10 +3573,13 @@ t$hfff
 t$xE;
 t$xH;
 t$xL;
+t$xLct$4
 t$xfE
 t$xt*3
+t$xu3M
 t'<Zt
 t'HcW
+t((JcD( L
 t)IcV
 t)fA;
 t*Ic>
@@ -3232,17 +3597,27 @@ t=D;C
 t?HcS
 tCfff
 tEHcR
+tIHc_
 tIxGH
 tJLc/A
+tKHc_
 tRLcY
+tVHc7I
+tXIcD
+t[Hc+I
 t_L9>t
+taHcD
 table
 tangent
 tangentu_signv
+tdMc&I
+tefff
+texcoord
 text file busy
 tgH9;u
 tier0.dll
 timed out
+toLc}p
 too many files open
 too many files open in system
 too many links
@@ -3258,12 +3633,15 @@ u$D8r(t
 u%@8j(t
 u&D9d
 u,!T$(H!T$ 
+u0Lcm
+u29|$`u
 u3HcH<H
 u4I9}(
 u<g~l<it[<ntP<ot,<pt
 uC9D$Pu=
 uDD9d
 uED8r(t
+uFMc.E;n
 uQD9Q
 uchar32
 uint16
@@ -3293,6 +3671,8 @@ vector4
 vector4d
 vnotify_ui
 vwHc7;w
+w"Hc7;w
+wHY4`_^_
 wHc3;s
 wPD8s	t
 wPHcO
@@ -3309,29 +3689,41 @@ x%~&H
 x>V6'
 x>V6'?C
 xA^A]A\_][
+xA^A]A\_^]
 xA_A]A\[
+xA_A^A]A\_^[]
 xA_A^_^][
+xB9|&0~]3
 xOD;C
+x^;Wx}Y;G|}T;
 x_;G`}ZH
+xuHcC
+x}HcF
 x~fff
 yP9y<v
+yPfff
 y\PD>!
 z&u$A
 z/u-A
 z0u.H
 z8u6A
+zAu?A
 zIcB,I
+zJuHA
 { AUAVAWH
 { AVH
 { Lce
 {(;s0u
+{(Lc7D;w
 {0x%x}
 {@9s8|AH
 {XH9{@H
 {`H9{HH
 {hH9{PH
 {un'%
+{xH9{`H
 |#tAM
+|$ A+
 |$ ATAVAWH
 |$ AVAWL
 |$ AVD
@@ -3344,11 +3736,13 @@ zIcB,I
 |$ E3
 |$ Hc
 |$ Ik
+|$ L;
 |$ Lc
 |$ Lc?H
 |$ UATAUAVAWH
 |$ UATAVH
 |$ UH
+|$ uIH
 |$ }[H
 |$(;>
 |$(A^
@@ -3384,6 +3778,7 @@ zIcB,I
 |$PfE
 |$P}[H
 |$P~ H
+|$XA;
 |$XE3
 |$XHc+Hc7
 |$XHcD$PH
@@ -3408,20 +3803,29 @@ zIcB,I
 |`~cH
 |b=})>
 |h~nH
+} Lc?D;
 } fff
 }&D8Z
 });C$
 }0HcA
 }>;_$
+}Ffff
 }LuHO
 }Ufff
+}[;{$
+}gLc+I
 }jfff
+}l;{$
+}m;{$
+}t;~$
 }wIc]
 }wMcm
 ~ $s%r
+~"fff
 ~)IcD$
 ~4LcT$@H
 ~5D8%
+~6fff
 ~Lfff
 ~Rfff
 ~Xfff

@@ -121,19 +121,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -609,6 +609,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 	}
@@ -735,19 +736,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -1223,6 +1224,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 33.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -1295,11 +1297,11 @@
 			EWeaponPowerScale = 1
 			EProcBuildUpRateScale = 1
 			EStamina = 3
-			EBaseHealthRegen = 1.000000
+			EBaseHealthRegen = 1.500000
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
-			EBulletArmorDamageReduction = 20.000000
+			EBulletArmorDamageReduction = 8.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -1385,19 +1387,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -1878,6 +1880,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 31.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 1.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -2100,19 +2103,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -2593,6 +2596,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 20.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -2757,19 +2761,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -3241,10 +3245,11 @@
 		}
 		m_mapStandardLevelUpUpgrades = 
 		{
-			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 1.840000
+			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 2.100000
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -3405,19 +3410,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -3893,6 +3898,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 32.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -4054,19 +4060,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -4547,6 +4553,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 31.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -4614,8 +4621,8 @@
 			ESprintSpeed = 0
 			ECrouchSpeed = 4.750000
 			EMoveAcceleration = 4
-			ELightMeleeDamage = 63
-			EHeavyMeleeDamage = 116
+			ELightMeleeDamage = 50
+			EHeavyMeleeDamage = 93
 			EMaxHealth = 550
 			EWeaponPower = 0
 			EReloadSpeed = 1
@@ -4712,19 +4719,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -5200,6 +5207,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -5364,19 +5372,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -5852,6 +5860,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 40.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -6006,19 +6015,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -6495,10 +6504,11 @@
 		}
 		m_mapStandardLevelUpUpgrades = 
 		{
-			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.800000
+			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.900000
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 44.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -6659,19 +6669,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -7147,6 +7157,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 45.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -7308,19 +7319,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -7801,6 +7812,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 27.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -7963,19 +7975,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -8451,6 +8463,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 33.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -8504,11 +8517,10 @@
 			EWeaponPowerScale = 1
 			EProcBuildUpRateScale = 1
 			EStamina = 3
-			EBaseHealthRegen = 1
+			EBaseHealthRegen = 2.500000
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
-			EBulletArmorDamageReduction = 24.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -8594,19 +8606,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -9082,6 +9094,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 2.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -9245,19 +9258,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -9733,6 +9746,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -9896,19 +9910,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -10389,6 +10403,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 27.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -10553,19 +10568,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -11041,6 +11056,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 44.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -11204,19 +11220,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -11692,6 +11708,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_Blood"
 		_base = "hero_base"
@@ -11861,19 +11878,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -12349,6 +12366,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -12510,19 +12528,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -12998,6 +13016,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -13136,19 +13155,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -13634,6 +13653,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 45.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -13796,19 +13816,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -14284,6 +14304,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 31.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -14446,19 +14467,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -14934,6 +14955,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 37.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -14973,7 +14995,7 @@
 		m_bPlayerSelectable = true
 		m_bDisabled = false
 		m_bInDevelopment = true
-		m_bNeedsTesting = false
+		m_bNeedsTesting = true
 		m_bAssignedPlayersOnly = false
 		m_bBotSelectable = false
 		m_bLimitedTesting = false
@@ -15091,19 +15113,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -15579,6 +15601,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 38.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -15721,19 +15744,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -16209,6 +16232,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -16344,19 +16368,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -16832,6 +16856,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -16967,19 +16992,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -17455,6 +17480,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -17589,19 +17615,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -18077,6 +18103,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -18213,19 +18240,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -18701,6 +18728,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -18867,19 +18895,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -19355,6 +19383,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -19406,7 +19435,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
-			EBulletArmorDamageReduction = -20.000000
+			EBulletArmorDamageReduction = -15.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -19492,19 +19521,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -19976,10 +20005,11 @@
 		}
 		m_mapStandardLevelUpUpgrades = 
 		{
-			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.350000
+			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.400000
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 31.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -20141,19 +20171,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -20629,6 +20659,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -20764,19 +20795,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -21252,6 +21283,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -21419,19 +21451,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -21907,6 +21939,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -22045,19 +22078,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -22533,6 +22566,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -22669,19 +22703,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -23157,6 +23191,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"
@@ -23292,19 +23327,19 @@
 				
 				{
 					m_nTier = 1
-					m_strValue = "8"
+					m_strValue = "11"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 2
-					m_strValue = "12"
+					m_strValue = "14"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
 				{
 					m_nTier = 3
-					m_strValue = "16"
+					m_strValue = "17"
 					m_ValueType = "MODIFIER_VALUE_BASE_HEALTH_PERCENT"
 				},
 				
@@ -23780,6 +23815,7 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
 		_base = "hero_base"

@@ -167,16 +167,23 @@ CitadelPlayerLevelUpBonuses.FadeOutLevelUpToast
 	visibility: collapse;
 }
 
-.HealthImage
+.HealthImage,.BulletDamageImage,.MagicDamageImage,.BulletResistImage
 {
+	visibility: collapse;
+}
+
+.healthUpgrade .HealthImage
+{
+	visibility: visible;
 	background-image: url("s2r://panorama/images/upgrades/mods_armor/health_psd.vtex");
 	wash-color: offWhite;
 	opacity: 0.5;
 	margin-right: 2px;
 }
 
-.BulletDamageImage
+.weaponUpgrade .BulletDamageImage
 {
+	visibility:visible;
 	background-image: url("s2r://panorama/images/hud/core/icon_damage_bullet.vsvg");
 	wash-color: offWhite;
 	margin-right: 2px;
@@ -186,9 +193,21 @@ CitadelPlayerLevelUpBonuses.FadeOutLevelUpToast
 	background-position: center;
 }
 
-.MagicDamageImage
+.techUpgrade .MagicDamageImage
 {
+	visibility:visible;
 	background-image: url("s2r://panorama/images/hud/core/icon_damage_mystic.vsvg");
+	wash-color: offWhite;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.5;
+}
+
+.bulletResistUpgrade .BulletResistImage
+{
+	visibility:visible;
+	background-image: url("s2r://panorama/images/hud/core/icon_armor_force.vsvg");
 	wash-color: offWhite;
 	background-size: contain;
 	background-repeat: no-repeat;

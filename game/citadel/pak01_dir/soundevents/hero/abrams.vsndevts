@@ -346,10 +346,7 @@
 	{
 		base = "Base.Ability"
 		volume = 1.000000
-		mixer_set_mixlayer = 1.000000
-		mixer_mixlayer_amount_manual = 1.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_set_mixlayer_for_perspective = 0.000000
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		vsnd_files = "sounds/abilities/abrams/abrams_a1_siphonlife_cast.vsnd"
 		vsnd_duration = 2.971814
 	}
@@ -357,7 +354,6 @@
 	{
 		base = "Base.Ability"
 		volume = -3.000000
-		mixer_mixlayer_to_set = ""
 		vsnd_files = "sounds/abilities/abrams/abrams_a1_siphonlife_loop.vsnd"
 		vsnd_duration = 13.406576
 	}
@@ -365,7 +361,6 @@
 	{
 		base = "Base.Ability"
 		volume = 1.000000
-		mixer_mixlayer_to_set = ""
 		vsnd_files = "sounds/abilities/abrams/abrams_a1_siphonlife_end.vsnd"
 		vsnd_duration = 0.999977
 	}
@@ -389,11 +384,8 @@
 	{
 		base = "Base.Ability"
 		volume = 0.000000
-		mixer_set_mixlayer = 1.000000
-		mixer_mixlayer_amount_manual = 1.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		mono_downmix_min_distance = 300.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
 		vsnd_files = "sounds/abilities/abrams/abrams_a4_slam_cast_01.vsnd"
 		vsnd_duration = 3.428957
 	}

@@ -9,6 +9,9 @@
 			<Panel id="ContentsMain">
 				<Panel id="ContentsMainBackground" />
 				<Panel id="ContentsMainForeground">
+					<Panel id="AccountID">
+						<Label class="AccountID" text="#Citadel_ProfileCard_AccountID" />
+					</Panel>
 					<Panel id="HeroInfo">
 						<CitadelHeroImage id="HeroImage" />
 						<Label class="HeroName" text="{g:citadel_hero_name:HeroName}" />
@@ -40,19 +43,19 @@
 					</Panel>
 					<Panel id="PartyInfo">
 						<Panel id="InMatchmakingBanner" class="PartyStateBanner">
-							<Label class="PartyStateBannerText" text="Party is Matchmaking" />
+							<Label class="PartyStateBannerText" text="#Citadel_ProfileCard_PartyMatchmaking" />
 						</Panel>
 						<Panel id="InviteBanner" class="PartyStateBanner">
-							<Label class="PartyStateBannerText" text="Invited to Party" />
+							<Label class="PartyStateBannerText" text="#Citadel_ProfileCard_PartyInvited" />
 						</Panel>
 						<Panel id="NotReadyBanner" class="PartyStateBanner">
-							<Label class="PartyStateBannerText" text="Not Ready" />
+							<Label class="PartyStateBannerText" text="#Citadel_ProfileCard_PartyNotReady" />
 						</Panel>
 						<Panel id="ReadyBanner" class="PartyStateBanner">
-							<Label class="PartyStateBannerText" text="Ready to Play" />
+							<Label class="PartyStateBannerText" text="#Citadel_ProfileCard_PartyReady" />
 						</Panel>
 						<Panel id="RosterSection">
-							<Label class="RosterTitle" text="Roster" />
+							<Label class="RosterTitle" text="#Citadel_ProfileCard_PartyRoster" />
 							<Panel id="RosterList" />
 						</Panel>
 					</Panel>

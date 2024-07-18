@@ -12,6 +12,7 @@
 	#jT$
 	%.*s
 	%s at offset %d, 
+	-Cxe
 	@@@@@@@@@@@@@@@@{N{N{N{N{N{N{N{N
 	A8va
 	A_A^A\]
@@ -310,7 +311,6 @@ $D9x<t
 $D9x<tN
 $Ib?s
 $L9x0
-$T0?H
 $^fE;
 $bucH
 %""""D
@@ -426,6 +426,7 @@ $bucH
 %suncompressed data
 %u (0x%x)
 &?PPPPPPP?
+&D8%,
 &YA1E
 &YA1H
 &YA1I
@@ -654,6 +655,8 @@ $bucH
 (|$`H
 (|$pH
 (|$pL
+(}K&m
+)	V_log2_uint
 )$$fD
 ),$fD
 )4$fD
@@ -768,7 +771,6 @@ $bucH
 )|$ t
 )|$ u
 )|$0D
-)|$0L
 )|$0f
 )|$0fD
 )|$@A
@@ -789,7 +791,6 @@ $bucH
 )|$`f
 )|$pE
 )|B?d!
-*	V_log2_uint
 *** IB "%s": Tried to lock a GPU-only buffer!
 *** IB "%s": Tried to lock a non integral number of indices!
 *** IB "%s": Tried to lock a static buffer twice!
@@ -827,6 +828,7 @@ $bucH
 +h->|
 +o'q)}
 +v$x+v$xv$+xv+$xv$+x+$vx+$vx$v+x+$vx$+vx+v $+v $v $+v +$v $++$ v+$ v$ v++$ v$+ v+xv$+ v$v$ +v+ $v$ ++x$v+ $v$v ++ $v$ +v
+,	V_logd
 , at <EOF>
 , at offset %d
 , channels = 
@@ -842,7 +844,8 @@ $bucH
 ,Icl$
 ,W5y+
 ,X< w
--	V_logd
+-	V_logf
+-Am0(
 -BH>t
 -I96t(I
 -Stop: 
@@ -865,6 +868,7 @@ $bucH
 -maxtextureres
 -maxtextureres_2gb
 -multigpu
+-no_render_thread_affinity
 -no_render_thread_priority
 -noassert
 -noconfig
@@ -938,8 +942,10 @@ $bucH
 -vulkan_disable_validation_thread_safety
 -vulkan_disable_validation_unique_handles
 -vulkan_dump_shaders
+-vulkan_enable_ext_device_generated_commands
 -vulkan_enable_google_display_timing
 -vulkan_enable_gpu_validation
+-vulkan_enable_nv_raytracing_validation
 -vulkan_enable_robust_buffer_access
 -vulkan_enable_sync_validation
 -vulkan_enable_validation
@@ -960,7 +966,6 @@ $bucH
 -vulkan_vma_defrag_each_frame
 -vulkan_vma_shutdown
 -vulkanrenderthreadstack
-.	V_logf
 .. !""##$$%%&.'.(())**..++,.-H
 .....
 .......
@@ -970,7 +975,6 @@ $bucH
 ................
 ..om?
 .00cfg
-.5=X*
 .;C ~
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -1005,6 +1009,7 @@ $bucH
 .?AV<lambda_1>@?CC@??_CancelAndRunContinuations@?$_Task_impl@E@details@Concurrency@@UEAA_N_N00AEBV?$shared_ptr@U_ExceptionHolder@details@Concurrency@@@std@@@Z@
 .?AV<lambda_1>@?CI@??LoadFromPath@CPipelineCacheManagerVulkan@@QEAAXPEAVCPipelineManagerVulkan@@AEBVCUtlString@@AEBVCUtlStringList@@1H@Z@
 .?AV<lambda_1>@?HG@??LinkPipelineLibrary@CPipelineManagerVulkan@@AEAA_NPEBVCPipelineVulkan@@PEAUPipelineObjectVulkan_t@@PEAUVkPipelineCache_T@@@Z@
+.?AV<lambda_1>@?M@??VmaDefragProcessDeletionQueueInternal@CMemoryManagerVulkan@@AEAAX_N@Z@
 .?AV<lambda_1>@?N@??FillAttr@CSOAContainer@@QEAAXHM@Z@
 .?AV<lambda_1>@?P@??ExecuteOustandingSWCommandStreamJobs@CRenderThreadVulkan@@AEAAXXZ@
 .?AV<lambda_2>@?1??QueuePresent@CRenderContextVulkan@@UEAAXPEAUSwapChainHandle_t__@@HPEAVIRenderDevicePresentCallback@@@Z@
@@ -1085,6 +1090,7 @@ $bucH
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?CC@??_CancelAndRunContinuations@?$_Task_impl@E@details@Concurrency@@UEAA_N_N00AEBV?$shared_ptr@U_ExceptionHolder@details@Concurrency@@@std@@@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?CI@??LoadFromPath@CPipelineCacheManagerVulkan@@QEAAXPEAVCPipelineManagerVulkan@@AEBVCUtlString@@AEBVCUtlStringList@@1H@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?HG@??LinkPipelineLibrary@CPipelineManagerVulkan@@AEAA_NPEBVCPipelineVulkan@@PEAUPipelineObjectVulkan_t@@PEAUVkPipelineCache_T@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?M@??VmaDefragProcessDeletionQueueInternal@CMemoryManagerVulkan@@AEAAX_N@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?N@??FillAttr@CSOAContainer@@QEAAXHM@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?P@??ExecuteOustandingSWCommandStreamJobs@CRenderThreadVulkan@@AEAAXXZ@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??QueuePresent@CRenderContextVulkan@@UEAAXPEAUSwapChainHandle_t__@@HPEAVIRenderDevicePresentCallback@@@Z@X$$V@std@@
@@ -1239,6 +1245,7 @@ $bucH
 .?AVCVmaAllocationDeferredDeletion@@
 .?AVCVulkanDeviceMemoryPool@@
 .?AVCVulkanImage@@
+.?AVCVulkanIndirectCommandsLayout@@
 .?AVCVulkanPooledFenceObject@@
 .?AVCVulkanSamplerObject@@
 .?AVCVulkanTextureObjectToDelete@@
@@ -1372,10 +1379,10 @@ $bucH
 .xJ>Hf
 .xdata
 .xdata$x
-/%7i)
+/%o)+
 /2GG>!B
-/5'l)
-/5Ki)
+/5+o)
+/=~Z*
 />58d%
 /TF<)VGy#WH
 /YA1H
@@ -1502,6 +1509,7 @@ $bucH
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
 1<.	/>:
 1A26b
+1t"l(
 1t|ff
 1t}fff
 1wsHp
@@ -1510,7 +1518,7 @@ $bucH
 220323000000Z
 220801000000Z
 230714000000Z
-240711150321Z0/
+240718150113Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1550,6 +1558,7 @@ $bucH
 7YA1H
 7YA1I
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powd
 8"3hrf
 8,uQH
 8-uCH
@@ -1577,7 +1586,6 @@ $bucH
 8D$Xt
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
-8F o+
 8GbthH
 8H9o u
 8Ht;I
@@ -1595,12 +1603,13 @@ $bucH
 8uuOH
 8vtext
 8}u+H
-9	V_powd
+9	V_powf
 9)~4H
 9)~P3
 9/~FH
 93t=H
 93tdH
+95<4;
 97tmD
 98t H
 98tkH
@@ -1616,7 +1625,7 @@ $bucH
 9H$uA9
 9H(u&9
 9L$Pv fff
-9MX~hL
+9M8~^L
 9RIFFL
 9S8~"H
 9SPv7
@@ -1630,6 +1639,7 @@ $bucH
 9^ t"H
 9_8~Ufff
 9_Xt	H
+9bjG&
 9k$u H
 9k8v?L
 9k8~QH
@@ -1650,9 +1660,10 @@ $bucH
 9sx|AH
 9s|~%H
 9t$Pu	
+9t{D+
 9{H~>
 9{\~9H
-:	V_powf
+:	V_qsort
 : lexer error %d :
 :>)*	v
 :>t6k'
@@ -1667,13 +1678,12 @@ $bucH
 :VP8X
 :u(f9Q
 ;	Fzo
-;	V_qsort
+;	V_qsort_s
 ;.u1L
-;5>pZ
-;5mL4
-;5uL4
+;5]b4
+;5eb4
 ;;L$Pr
-;=Pa9
+;=Px9
 ;?0123456789:;<=>?
 ;BIb?
 ;C v)H;K
@@ -1703,7 +1713,6 @@ $bucH
 ;|$8|
 ;|$X}
 ;|$h}
-<	V_qsort_s
 <	u2H
 <	u\L
 <	ueH
@@ -1714,7 +1723,6 @@ $bucH
 <0:08
 <0ufA
 <0ugA
-<74-M5
 <:u|H
 <:wRH
 <:wXH
@@ -1928,21 +1936,21 @@ $bucH
 ?sqrtf
 ?u='@
 ?{Q}<
+@	V_roundf
 @ H9B H
 @ ~JH
 @"t$hD
 @.data
 @.reloc
 @0H9B0H
+@6 m+
 @80u	
 @84)u
 @848~
-@85cw^
 @88wdH
 @88wmH
 @88wuH
-@8=?>a
-@8=VIZ
+@8=flZ
 @8i(u
 @8j(t
 @8k(t
@@ -2144,7 +2152,6 @@ $bucH
 @fE9d
 @ffffff
 @pn>6
-A	V_roundf
 A ;B u
 A E9q
 A!;I2
@@ -2322,7 +2329,6 @@ A_A^A]A\_^][H
 A_A^A]^]
 A_A^A]_]
 A_A^A]_^[]
-A_A^A]_^][
 A_A^]
 A_A^^]
 A_A^_
@@ -2630,15 +2636,15 @@ C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderthreadbase.cpp
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderthreadbase.h
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\sheetcache.cpp
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(2421):Error loading texture: %s
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3447):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3479):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3499):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3517):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3536):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3557):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3568):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3579):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(2423):Error loading texture: %s
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3449):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3481):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3501):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3519):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3538):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3559):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3570):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3581):ResourceHandleToData( %s ) failed! Falling back to error texture!
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.h
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturestreaminghelper.cpp
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\vertexbufferbase.cpp
@@ -2698,14 +2704,14 @@ C:\buildworker\citadel_staging_win64\build\src\vfx\vfxexpr.g
 C<;C4A
 C@H;CHs
 CBLASVulkan::Build
-CBLASVulkan::Build(420):  %s nTriangleDataCount (%d) != m_GeometryNames.Count() (%d)
+CBLASVulkan::Build(422):  %s nTriangleDataCount (%d) != m_GeometryNames.Count() (%d)
 CBLASVulkan::CBLASVulkan
 CBarrierHelperVulkan::AddBuffer
 CBarrierHelperVulkan::AddUAV
 CBaseAccelerationStructureVulkan::Compact
 CBaseAccelerationStructureVulkan::Compact::<lambda_1>::operator ()
 CBaseAccelerationStructureVulkan::Create
-CBaseAccelerationStructureVulkan::Create(192): 
+CBaseAccelerationStructureVulkan::Create(194): 
 CBaseAccelerationStructureVulkan::DeviceAddress
 CBaseAccelerationStructureVulkan::GetCompactedSizeInBytes::<lambda_1>::operator ()
 CBaseAccelerationStructureVulkan::NotifyBufferMoved
@@ -2825,11 +2831,11 @@ CMediumCommandBufferChunk CUtlMemoryPool
 CMemAllocSystemInitialize
 CMemoryManagerVulkan::Allocate
 CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup
-CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup(1536): vmaCreatePool failed with error: %d
+CMemoryManagerVulkan::AllocateBufferInCustomPoolGroup(1556): vmaCreatePool failed with error: %d
 CMemoryManagerVulkan::AllocateForObject
 CMemoryManagerVulkan::AllocateForObjectPooled
 CMemoryManagerVulkan::AllocateImageInCustomPoolGroup
-CMemoryManagerVulkan::AllocateImageInCustomPoolGroup(1465): vmaCreatePool failed with error: %d
+CMemoryManagerVulkan::AllocateImageInCustomPoolGroup(1485): vmaCreatePool failed with error: %d
 CMemoryManagerVulkan::AllocatePooled
 CMemoryManagerVulkan::DestroyCustomPoolGroup
 CMemoryManagerVulkan::GetCommandBuffer
@@ -2949,12 +2955,14 @@ CRenderContextVulkan::DrawInstanced
 CRenderContextVulkan::DrawInstancedIndirect
 CRenderContextVulkan::EndQuery - BeginQuery failed, aborting!
 CRenderContextVulkan::EndQuery - Issued on an in-progress query!
+CRenderContextVulkan::ExecuteGeneratedCommands
+CRenderContextVulkan::ExecuteGeneratedCommands requires VK_EXT_device_generated_commands.
 CRenderContextVulkan::FillAndBindDynamicDescriptorSet
 CRenderContextVulkan::FillDynamicDescriptorSet
 CRenderContextVulkan::GenerateMipMaps
 CRenderContextVulkan::MarkIssuesCommands
-CRenderContextVulkan::MarkIssuesCommands(414): 
-CRenderContextVulkan::MarkIssuesCommands(425): 
+CRenderContextVulkan::MarkIssuesCommands(417): 
+CRenderContextVulkan::MarkIssuesCommands(428): 
 CRenderContextVulkan::MultiDrawIndexed
 CRenderContextVulkan::MultiDrawIndexedInstancedIndirect
 CRenderContextVulkan::MultiDrawIndexedInstancedIndirectCount
@@ -2962,6 +2970,8 @@ CRenderContextVulkan::MultiGpuTransferTexture
 CRenderContextVulkan::OnReleaseRenderContext
 CRenderContextVulkan::PerformBarriers
 CRenderContextVulkan::PerformInitialTextureBarriers
+CRenderContextVulkan::PreprocessGeneratedCommands
+CRenderContextVulkan::PreprocessGeneratedCommands requires VK_EXT_device_generated_commands.
 CRenderContextVulkan::PushConstants
 CRenderContextVulkan::QueuePresent
 CRenderContextVulkan::ReadBuffer
@@ -2992,6 +3002,10 @@ CRenderContextVulkan_SoftwareCommandLists::BindDescriptorSets
 CRenderContextVulkan_SoftwareCommandLists::BindMipLevelOfTexture
 CRenderContextVulkan_SoftwareCommandLists::BindMipLevelOfTextures
 CRenderContextVulkan_SoftwareCommandLists::BindRenderTargets
+CRenderContextVulkan_SoftwareCommandLists::ExecuteGeneratedCommands
+CRenderContextVulkan_SoftwareCommandLists::ExecuteGeneratedCommands requires VK_EXT_device_generated_commands.
+CRenderContextVulkan_SoftwareCommandLists::PreprocessGeneratedCommands
+CRenderContextVulkan_SoftwareCommandLists::PreprocessGeneratedCommands requires VK_EXT_device_generated_commands.
 CRenderContextVulkan_SoftwareCommandLists::SemaphoreWaitAtBegin
 CRenderContextVulkan_SoftwareCommandLists::SemaphoreWaitAtBegin - already set semaphore to wait on, can't set another one.
 CRenderContextVulkan_SoftwareCommandLists::SetConstantBufferDataInternal
@@ -3000,23 +3014,23 @@ CRenderDeviceBase
 CRenderDeviceBase::AcquirePooledDynamicConstantBuffer
 CRenderDeviceBase::AllocatePooledBackingStore
 CRenderDeviceBase::AllocatePooledIndexBuffer
-CRenderDeviceBase::AllocatePooledIndexBuffer(3629): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3665): 
-CRenderDeviceBase::AsyncSetTextureData(3284): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3533): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3631): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3667): 
+CRenderDeviceBase::AsyncSetTextureData(3286): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3535): 
 CRenderDeviceBase::CreateConstantBuffer
-CRenderDeviceBase::CreateConstantBuffer(1584): 
+CRenderDeviceBase::CreateConstantBuffer(1586): 
 CRenderDeviceBase::CreateConstantBufferInternal
 CRenderDeviceBase::DestroyConstantBuffer
 CRenderDeviceBase::EnableAsyncPresent
-CRenderDeviceBase::EndRenderDocCapture(3519): 
+CRenderDeviceBase::EndRenderDocCapture(3521): 
 CRenderDeviceBase::FindOrCreateTexture
-CRenderDeviceBase::FindOrCreateTexture(1764): 
+CRenderDeviceBase::FindOrCreateTexture(1766): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
-CRenderDeviceBase::Flush(913): 
-CRenderDeviceBase::ForceFlushGPU(930): 
-CRenderDeviceBase::FreeTextureGPUResources(2076): 
-CRenderDeviceBase::FreeTextureGPUResources(2080): 
+CRenderDeviceBase::Flush(915): 
+CRenderDeviceBase::ForceFlushGPU(932): 
+CRenderDeviceBase::FreeTextureGPUResources(2078): 
+CRenderDeviceBase::FreeTextureGPUResources(2082): 
 CRenderDeviceBase::GetCubemapRadianceSHConstants
 CRenderDeviceBase::GetCubemapRadianceSHConstants::<lambda_1>::operator ()
 CRenderDeviceBase::GetDeviceSpecificBuffer
@@ -3028,12 +3042,12 @@ CRenderDeviceBase::GetSwapChainFromTexture
 CRenderDeviceBase::GetTextureViewIndex
 CRenderDeviceBase::InitPerFrameMemoryStack
 CRenderDeviceBase::OnPresentCompleted::<lambda_1>::operator ()
-CRenderDeviceBase::Present(631): 
+CRenderDeviceBase::Present(633): 
 CRenderDeviceBase::QueueFallbackTextureCopy
 CRenderDeviceBase::ResizeEngineWindow
 CRenderDeviceBase::SetCubemapRadianceSHConstants
 CRenderDeviceBase::SetCubemapRadianceSHConstants::<lambda_1>::operator ()
-CRenderDeviceBase::StartRenderDocCapture(3506): 
+CRenderDeviceBase::StartRenderDocCapture(3508): 
 CRenderDeviceBase::UnregisterExternalAllocation
 CRenderDeviceMgrBase::AddDeviceEventListener
 CRenderDeviceMgrBase::AddModeChangeCallback
@@ -3058,52 +3072,54 @@ CRenderDeviceVulkan::AcquireDynamicDescriptorSet
 CRenderDeviceVulkan::AcquireSemaphore
 CRenderDeviceVulkan::AllocateBufferInPool
 CRenderDeviceVulkan::AllocateBufferInPool - invalid memory pool handle.
-CRenderDeviceVulkan::AllocateBufferInPool(9117): failed to allocate GPU memory in custom pool for %s.
-CRenderDeviceVulkan::AllocateBufferInPool(9127): vmaBindImageMemory failed for buffer %s with error %d.
+CRenderDeviceVulkan::AllocateBufferInPool(9226): failed to allocate GPU memory in custom pool for %s.
+CRenderDeviceVulkan::AllocateBufferInPool(9236): vmaBindImageMemory failed for buffer %s with error %d.
 CRenderDeviceVulkan::AllocateDeviceCheckPointString
 CRenderDeviceVulkan::AllocateTextureInPool
 CRenderDeviceVulkan::AllocateTextureInPool - invalid memory pool handle.
-CRenderDeviceVulkan::AllocateTextureInPool(9024): Unable to get Vulkan image for %s.
-CRenderDeviceVulkan::AllocateTextureInPool(9031): Allocation already set for %s, it is not valid to assign a new allocation.
-CRenderDeviceVulkan::AllocateTextureInPool(9043): failed to allocate GPU memory in custom pool for %s.
-CRenderDeviceVulkan::AllocateTextureInPool(9052): vmaBindImageMemory failed for image %s with error %d.
+CRenderDeviceVulkan::AllocateTextureInPool(9133): Unable to get Vulkan image for %s.
+CRenderDeviceVulkan::AllocateTextureInPool(9140): Allocation already set for %s, it is not valid to assign a new allocation.
+CRenderDeviceVulkan::AllocateTextureInPool(9152): failed to allocate GPU memory in custom pool for %s.
+CRenderDeviceVulkan::AllocateTextureInPool(9161): vmaBindImageMemory failed for image %s with error %d.
 CRenderDeviceVulkan::AssignQueryObjectToPool
-CRenderDeviceVulkan::BeginSubmittingDisplayLists(3910): 
+CRenderDeviceVulkan::BeginSubmittingDisplayLists(4017): 
 CRenderDeviceVulkan::CreateBLASForCompact
 CRenderDeviceVulkan::CreateBLASForCompact::<lambda_1>::operator ()
 CRenderDeviceVulkan::CreateConstantBufferInternal
 CRenderDeviceVulkan::CreateDefaultBuffers
-CRenderDeviceVulkan::CreateDefaultBuffers(2051): 
+CRenderDeviceVulkan::CreateDefaultBuffers(2158): 
 CRenderDeviceVulkan::CreateDefaultShaders
 CRenderDeviceVulkan::CreateDescriptorSet: Failed to create descriptor set.
 CRenderDeviceVulkan::CreateDescriptorSetVulkan
 CRenderDeviceVulkan::CreateGPUBufferFormatted
+CRenderDeviceVulkan::CreateIndirectCommandsPreprocessBuffer- invalid layout handle.
 CRenderDeviceVulkan::CreateMemoryPooledGPUBuffer
 CRenderDeviceVulkan::CreateQueryObject
-CRenderDeviceVulkan::CreateTLAS(7178): 
+CRenderDeviceVulkan::CreateTLAS(7287): 
 CRenderDeviceVulkan::CreateViewsOfTexture
 CRenderDeviceVulkan::CreateViewsOfTexture on texture %s but it does not have TSPEC_MUTABLE_FORMAT.
 CRenderDeviceVulkan::CreateViewsOfTexture on texture %s but view %s does not have TSPEC_IMAGE_VIEW_ONLY.
 CRenderDeviceVulkan::CreateViewsOfTexture on texture %s but view %s was already created.  A view can only be created once.
-CRenderDeviceVulkan::DeleteQueryObject(4105): 
+CRenderDeviceVulkan::DeleteQueryObject(4212): 
 CRenderDeviceVulkan::DestroyAllSemaphores
 CRenderDeviceVulkan::DestroyCmdBuffer
 CRenderDeviceVulkan::DestroyDescriptorSet
 CRenderDeviceVulkan::DestroyDeviceMemoryPool - invalid memory pool handle.
+CRenderDeviceVulkan::DestroyIndirectCommandsLayout - invalid layout handle.
 CRenderDeviceVulkan::FreeBufferFromPool
-CRenderDeviceVulkan::FreeBufferFromPool(9176): Unable to get Vulkan buffer.
-CRenderDeviceVulkan::FreeBufferFromPool(9182): no allocation for buffer %s.
+CRenderDeviceVulkan::FreeBufferFromPool(9285): Unable to get Vulkan buffer.
+CRenderDeviceVulkan::FreeBufferFromPool(9291): no allocation for buffer %s.
 CRenderDeviceVulkan::FreeTextureFromPool
 CRenderDeviceVulkan::FreeTextureFromPool - invalid memory pool handle.
-CRenderDeviceVulkan::FreeTextureFromPool(9074): Unable to get Vulkan image for %s.
-CRenderDeviceVulkan::FreeTextureFromPool(9080): no allocation for image %s.
+CRenderDeviceVulkan::FreeTextureFromPool(9183): Unable to get Vulkan image for %s.
+CRenderDeviceVulkan::FreeTextureFromPool(9189): no allocation for image %s.
 CRenderDeviceVulkan::GetCmdPool
 CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9221): Unable to get Vulkan buffer.
-CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9227): no allocation for buffer %s.
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9330): Unable to get Vulkan buffer.
+CRenderDeviceVulkan::GetDeviceMemoryBufferAllocationInfo(9336): no allocation for buffer %s.
 CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9196): Unable to get Vulkan image for %s.
-CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9202): no allocation for image %s.
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9305): Unable to get Vulkan image for %s.
+CRenderDeviceVulkan::GetDeviceMemoryTextureAllocationInfo(9311): no allocation for image %s.
 CRenderDeviceVulkan::GetDeviceSpecificBuffer
 CRenderDeviceVulkan::GetDeviceSpecificDescriptorSet
 CRenderDeviceVulkan::GetDeviceSpecificRayTracePipeline
@@ -3121,7 +3137,7 @@ CRenderDeviceVulkan::OnLowMemoryNotification - evicting all textures to reduce m
 CRenderDeviceVulkan::QueryFeature
 CRenderDeviceVulkan::QueueStaticDescriptorPoolDeletion
 CRenderDeviceVulkan::ReadTexturePixels
-CRenderDeviceVulkan::ReadTexturePixels(3707): 
+CRenderDeviceVulkan::ReadTexturePixels(3814): 
 CRenderDeviceVulkan::RebakeDescriptorSetsReferencing - could not allocate descriptor in new pool.
 CRenderDeviceVulkan::RecreateGlobalPerFrameDescriptorSet
 CRenderDeviceVulkan::RegisterDescriptorSetLayout
@@ -3153,7 +3169,7 @@ CRenderThreadVulkan::OnMultiGpuTransferTexture
 CRenderThreadVulkan::OnReadBuffer
 CRenderThreadVulkan::OnReadPixels
 CRenderThreadVulkan::OnReadPixels not supported for MSAA depth.  Requires shader-based MSAA depth resolve to be implemented.
-CRenderThreadVulkan::OnReadPixels(200): Error! NULL texture pointer sent to OnReadPixels()!
+CRenderThreadVulkan::OnReadPixels(203): Error! NULL texture pointer sent to OnReadPixels()!
 CRenderThreadVulkan::OnUpdateSwappedImageLayout
 CRenderThreadVulkan::PresentInternal
 CRenderThreadVulkan::ProcessAsyncReadRequests
@@ -3182,11 +3198,11 @@ CShaderVulkanBase::GetUniformBufferBinding
 CShaderVulkanBase::GetUniformTexelBufferBinding
 CShaderVulkanBase::InitPipelineShader
 CSheetDataTextureCache::AllocateAndUploadSequenceData
-CSheetDataTextureCache::AllocateAndUploadSequenceData(356): 
+CSheetDataTextureCache::AllocateAndUploadSequenceData(358): 
 CStrongHandle<struct InfoForResourceTypeCTextureBase>::Shutdown
 CSwapChainBase::QueuePresentAndWait() looped for %d iterations without a present event.
 CSwapChainVulkan::CreateSwapChain
-CSwapChainVulkan::CreateSwapChain(2795): 
+CSwapChainVulkan::CreateSwapChain(2902): 
 CSwapChainVulkan::CreateSwapChain::<lambda_2>::operator ()
 CSwapChainVulkan::SetupViews
 CSwapChainVulkan::SwapBuffers
@@ -3305,7 +3321,7 @@ CTextureManagerBase::~CTextureManagerBase
 CTextureManagerVulkan::AddReferenceToDescriptorSet
 CTextureManagerVulkan::CTextureManagerVulkan
 CTextureManagerVulkan::ComputeTextureObject
-CTextureManagerVulkan::ComputeTextureObject(1479): 
+CTextureManagerVulkan::ComputeTextureObject(1481): 
 CTextureManagerVulkan::ComputeTextureObject: Tried to create a depth-stencil texture which is *not* a render target!
 CTextureManagerVulkan::CreateSamplerObject
 CTextureManagerVulkan::CreateSamplerObject::<lambda_1>::operator ()
@@ -3340,8 +3356,8 @@ CTextureVulkan::AssignStandin
 CTextureVulkan::ComputeImageViews
 CTextureVulkan::CopyImage
 CTextureVulkan::CreateImageViews
-CTextureVulkan::SetInitialImageLayout(810): 
-CTextureVulkan::SetInitialImageLayout(817): 
+CTextureVulkan::SetInitialImageLayout(812): 
+CTextureVulkan::SetInitialImageLayout(819): 
 CTextureVulkan::SpinWaitForFallbackTextureHookup
 CTextureVulkan::VmaAssignNewObject
 CTextureVulkan::VmaCreateNewVulkanObject
@@ -3595,6 +3611,8 @@ CUtlMemory<class CRefCounted<class CRefCountServiceBase<class CRefMT> > *,int>::
 CUtlMemory<class CRefCounted<class CRefCountServiceBase<class CRefMT> > *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CRenderResource *,int>::Grow
 CUtlMemory<class CRenderResource *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CSmartPtr<class CThreadedJob,class CRefCountAccessor>,int>::Grow
+CUtlMemory<class CSmartPtr<class CThreadedJob,class CRefCountAccessor>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CStrongHandleCopyable<struct InfoForResourceTypeCTextureBase>,int>::Grow
 CUtlMemory<class CStrongHandleCopyable<struct InfoForResourceTypeCTextureBase>,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CStrongHandleCopyable<struct InfoForResourceTypeCTextureBase>,int>::Grow::<lambda_2>::operator ()
@@ -3891,6 +3909,9 @@ CUtlMemory<struct VkDescriptorSetLayout_T *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct VkImageMemoryBarrier,int>::Grow
 CUtlMemory<struct VkImageMemoryBarrier,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct VkImageMemoryBarrier,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct VkIndirectCommandsLayoutTokenEXT,int>::Grow
+CUtlMemory<struct VkIndirectCommandsLayoutTokenEXT,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct VkIndirectCommandsLayoutTokenEXT,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct VkPhysicalDevice_T *,int>::Grow
 CUtlMemory<struct VkPhysicalDevice_T *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct VkPipelineShaderStageCreateInfo,int>::Grow
@@ -4037,7 +4058,7 @@ CVertexBufferBase::GetVertexCapacity
 CVertexBufferBase::GetVertexSize
 CVertexBufferVulkan::Allocate
 CVertexBufferVulkan::Allocate called with invalid buffer size = %d for buffer (%s).
-CVertexBufferVulkan::Allocate(117):  - you must first call IRenderDevice::AllocateBufferFromPool() before using buffer '%s'
+CVertexBufferVulkan::Allocate(118):  - you must first call IRenderDevice::AllocateBufferFromPool() before using buffer '%s'
 CVertexBufferVulkan::AllocateBackingStore
 CVertexBufferVulkan::AllocatePerFrameDynamicPooled
 CVertexBufferVulkan::AssignDeviceMemoryPoolAllocation
@@ -4247,7 +4268,6 @@ D$0D;d$8
 D$0E3
 D$0E;
 D$0H#
-D$0H9
 D$0H9D$8
 D$0H;
 D$0H;G0
@@ -4266,6 +4286,7 @@ D$0xL
 D$18F(u
 D$2t)
 D$49C
+D$49D* tI
 D$4;C
 D$4D;
 D$4E3
@@ -4412,6 +4433,7 @@ D$pfA;
 D$pfD;
 D$pfff
 D$xA;
+D$xD8
 D$xD8k
 D$xE3
 D$xE;
@@ -4437,6 +4459,7 @@ D+pt,A
 D+{HD+
 D,$< 
 D,H< 
+D/ D;
 D/ IcL/
 D1 A9A
 D16_SHADOW
@@ -4451,15 +4474,9 @@ D2rf;
 D32FS8
 D4/L;
 D7 D;^
-D8%(qT
-D8%5hT
-D8%@lT
-D8%DnT
-D8%QtT
-D8%}xT
+D8%3Ia
 D8*t$Ic
 D8,>u
-D8->aV
 D80t(H
 D81uUL9r
 D84:u
@@ -4514,6 +4531,7 @@ D8|$ht
 D9 u2D9
 D9 ~c
 D9#~SLce
+D9%n6;
 D9(tT
 D9.~>H
 D9:t9H
@@ -4551,7 +4569,7 @@ D9wPu
 D9|$ 
 D9~(D
 D;	t8
-D;%:`9
+D;%:w9
 D;@Tr
 D;A ~
 D;A`v
@@ -4571,8 +4589,8 @@ D;c8|
 D;d$,
 D;d$4|
 D;e4|
+D;e8|
 D;eH|
-D;eX|
 D;l$`
 D;l$t
 D;l$x
@@ -4693,7 +4711,7 @@ E D9{(
 E H;EH
 E tGH
 E'HcG H
-E(D8=i
+E(D8=I
 E)n(u
 E+A@H
 E/	F(
@@ -4734,7 +4752,6 @@ EH*?H
 EHHcI
 EL$p3
 EL$pfA
-EM~@&
 EPfff
 ERROR : 
 ERROR! VK call failed! result = %s ( %s )
@@ -5002,6 +5019,7 @@ Freed XMS handle %u
 Friday
 Ft9nxu
 FtD9fxu8
+G	V_sinf
 G(IcO H
 G0HcH
 G0Ic8I
@@ -5059,6 +5077,7 @@ GetBasicType() == KV3_BTYPE_TABLE
 GetBindingStartOffsetHLSLToSPIRV
 GetBufferType() != RENDER_BUFFER_TYPE_DYNAMIC
 GetBufferType() == RENDER_BUFFER_TYPE_SEMISTATIC
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -5151,7 +5170,6 @@ G|$HM
 G|$hM
 G|L99u
 H	F H
-H	V_sinf
 H	y A
 H A9	}
 H SVWAVH
@@ -5187,20 +5205,23 @@ H4IcH8H
 H8H;J8H
 H9(t;A
 H9(tO
-H9-IeU
+H9-Y~U
 H90u'
 H93t7H
 H93teH
+H95''>
+H95r&>
 H97u+A
 H98t$H
 H98t2
-H9=:6<
-H9=B7<
-H9=R8<
-H9=]NY
-H9=b9<
-H9=r:<
-H9=}6:
+H9=:M<
+H9=BN<
+H9=RO<
+H9=b(<
+H9=bP<
+H9=rQ<
+H9=}M:
+H9=}eY
 H9@ t
 H9@ t$A
 H9A(u
@@ -5352,14 +5373,14 @@ HalftoneHints
 HammerMapLoader001
 HasAllocatedMemory( nDestAttr )
 HasUAVHiddenCounter()
-Hc-4+_
-Hc-gN9
+Hc-DQ_
+Hc-ge9
 Hc.;n
 Hc/;o
 Hc3;s
 Hc7;w
 Hc;;{
-Hc=b)_
+Hc=rO_
 Hc>;~
 HcA H
 HcA L
@@ -5694,6 +5715,7 @@ IsValidLocale
 IsValidLocaleName
 IssueTextureLoadRequest
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
+J	V_snprintf
 J%f%f%f%f%f%f%f%f
 J0HcH
 J8A;[
@@ -5710,7 +5732,6 @@ JPEGMEM
 JSON version mismatches.
 January
 Jc< H
-K	V_snprintf
 K 9s 
 K H9K0u
 K WATAUAVAWH
@@ -5821,7 +5842,6 @@ L$0E9
 L$0E;
 L$0H3
 L$0H;
-L$0Hc
 L$0I+
 L$0Ic
 L$0L+
@@ -5867,6 +5887,7 @@ L$@E3
 L$@H3
 L$@H9
 L$@H;
+L$@Hc
 L$@L+N
 L$@Mc
 L$@f;
@@ -5959,16 +5980,23 @@ L9	u)H
 L9"uz
 L9#t	H
 L9#u/H
+L9%sXN
+L9-m(Z
 L9/t9H
+L95%%<
+L95))<
+L95Y*<
 L97vH
 L9;t	H
-L9=PCU
+L9= ]U
+L9=^	=
 L9A8v1E3
 L9BHA
 L9IHA
 L9aHA
 L9d$ 
 L9d$(H
+L9d$(t
 L9d$8u
 L9d$@t
 L9d$Ht
@@ -6219,7 +6247,6 @@ MatrixWorldToScreen
 Matteing
 MaxDeviceID
 MaxSampleValue
-Maximum amount of frametime in milliseconds to spend processing VMA defrag deletions, this allows them to be amortized.
 Maximum device access threads: %u
 Maximum resolution for top mip level in streaming textures
 Maximum supported image dimension is %u pixels
@@ -6262,6 +6289,7 @@ Mismatched Token Exception
 Mismatched set
 Mismatching # of cubemap radiance SH constants, %i, want %i
 Missing Huffman code table entry
+Missing enum case
 Missing token
 MissingRequired
 Ml$<E;
@@ -6286,6 +6314,7 @@ NJ2"v
 NORMAL
 NULL VP8Io parameter in VP8Decode().
 NULL pVulkanImage in SetTextureDataInternal!
+NV Raytracing Validation
 NVIDIA Driver Version: %d.%d, disable r_low_latency_trigger_flash by default to workaround driver bug.
 NVIDIA Low Latency Trigger Flash
 NVIDIA Low Latency/AMD Anti-Lag 2 (0 = off, 1 = on, 2 = NV-only, on + boost)
@@ -6372,6 +6401,7 @@ OutputDebugStringW
 Overall System GPU memory use:
 Overflow of the sheet cache texture. Releasing and starting over. This is ok in asset browser, not so ok if the game is triggering this!
 Overflow of the sheet cache texture: Try increasing SheetCacheTextureRows in gameinfo.gi (current value %d)!
+P	V_sscanf
 P D9u
 P L9e`t
 P89P@}M
@@ -6401,6 +6431,7 @@ PA_A^A]A\_^[
 PA_A^A]A\_^]
 PA_A^A]A\_^]H
 PA_A^A]][
+PA_A^A]_^][
 PA_A^[
 PA_A^]
 PA_A^^
@@ -6517,12 +6548,12 @@ Prints out stats for the Vulkan Framebuffer manager
 Prints out stats for the Vulkan Pipeline manager
 Prints out stats for the Vulkan memory manager
 Prints out stats for the Vulkan shader table
+ProcessQueuedDeletion
 PropertyEditorSystem_001
 Push constants sized %i exceed GPU's max size = %i
 PxHc>E3
 Pz}b!
 P~6-U~/W
-Q	V_sscanf
 Q$HcA
 Q2XXR
 Q5rHg,>
@@ -6661,6 +6692,7 @@ RenderDoc capture window '%s'.
 RenderDoc is not active, did you forget to add -renderdoc to the command-line? Is RenderDoc installed?
 RenderHardwareConfig002
 RenderImageLayoutToVulkanLayout
+RenderIndirectCommandsLayoutTokenToVulkan
 RenderInputLayoutField_t
 RenderInputLayoutField_t::Schema_VerifyBindingIsRegistered
 RenderMultisampleType_t
@@ -7009,6 +7041,7 @@ T$XA;
 T$XA;_Xu
 T$XD;s
 T$XE3
+T$XH;
 T$`A9r
 T$`E3
 T$`I+
@@ -7031,8 +7064,8 @@ T$xD;{
 T$xE3
 T$xH;
 T$xI+
-T%LN*
-T%yl)
+T%,T*
+T%Yr)
 TANGENT
 TD u"E;
 TEX read request: %d KB; %s
@@ -7120,6 +7153,7 @@ ThreadInMainThread
 ThreadInMainThread()
 ThreadInMainThread() || g_pRenderDevice->IsAsyncPresentEnabled()
 ThreadJoin
+ThreadSetPerfSetAffinity
 ThreadSetPriority
 ThreadSleep
 ThreadYield
@@ -7171,6 +7205,7 @@ Trying to set dxlevel (%d) which is higher than the card can support (%d)!
 Trying to set dxlevel (%d) which is lower than the card can support (%d)!
 Tuesday
 Type 
+U	V_stricmp_fast
 U I;U(
 U t	Ak
 U%	>G
@@ -7358,7 +7393,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 Uxu9I
-V	V_stricmp_fast
 V6E>`"(5
 VALIDATION
 VATAUAVAWH
@@ -7428,6 +7462,8 @@ VK_EXT_debug_utils
 VK_EXT_depth_bias_control
 VK_EXT_depth_bias_control does not support all required features, disabling.
 VK_EXT_descriptor_indexing support required because VulkanRequireDescriptorIndxing is set in gameinfo.gi, but are not supported.  Vulkan device creation failed.
+VK_EXT_device_generated_commands
+VK_EXT_device_generated_commands does not support all required features, disabling.
 VK_EXT_extended_dynamic_state
 VK_EXT_extended_dynamic_state2
 VK_EXT_extended_dynamic_state3
@@ -7485,6 +7521,8 @@ VK_LAYER_LUNARG_standard_validation
 VK_NOT_READY
 VK_NV_device_diagnostic_checkpoints
 VK_NV_low_latency2
+VK_NV_ray_tracing_validation
+VK_NV_ray_tracing_validation not found.  Did you set NV_ALLOW_RAYTRACING_VALIDATION=1 in the environment?
 VK_OBJECT_TYPE_ACCELERATION_STRUCTURE_KHR
 VK_OBJECT_TYPE_ACCELERATION_STRUCTURE_NV
 VK_OBJECT_TYPE_BUFFER
@@ -7809,6 +7847,7 @@ Vulkan/Pipeline State Object Count
 Vulkan/Staging Dynamic Total Pool Count
 Vulkan/Staging Dynamic Total Pool Size (MB)
 VulkanGPUMemVisThread
+W	V_strlower_fast
 W%	s;M@
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
@@ -7857,19 +7896,18 @@ WriteVulkanDescriptorSetData
 Wrong JPEG library version: library is %d, caller expects %d
 Wrote %s
 Wrote RenderDoc capture to %s
-X	V_strlower_fast
 X @8u
 X ATAVAWH
 X AVH
 X D8e
 X!t5~
-X%0k)
-X%jc*
-X-	S+
-X-=/1
-X-Hk)
+X%Ji*
+X%R$+
+X-(q)
+X-M51
+X5	81
 X5AHx
-X5W11
+X5g71
 XA^A\][
 XA^A]A\_^[
 XA^A]^]
@@ -7894,19 +7932,16 @@ X\$@I
 X_^[]
 X|$ A
 X|$8E
-Y%7*+
-Y%K%+
-Y-7%+
-Y5	21
-Y56'+
-Y5:}/
-Y5g11
-Y5h*+
-Y5x&+
+Y%+++
+Y%Cv>
+Y-e++
+Y-g0+
+Y5H0+
+Y5X,+
+Y5w71
 Y9"SD
-Y=CX*
-Y=]}/
-Y=j?0
+Y=#^*
+Y=zE0
 Y>kX>
 Y>kX>M
 YCbCrCoefficients
@@ -7946,6 +7981,7 @@ Z~$|7
 [fA9<
 [fE94
 [fE;A
+\	V_strtoi64
 \ u&H9
 \$ ATAVAWH
 \$ AVH
@@ -7958,6 +7994,7 @@ Z~$|7
 \$ L+
 \$ M+
 \$ UATAUAVAWH
+\$ UAVAWH
 \$ UH
 \$ ULcA
 \$ UVATAUAWH
@@ -8070,8 +8107,6 @@ Z~$|7
 \$xu3M
 \$xu7H
 \2rfB
-\=7T*
-]	V_strtoi64
 ])6M>&
 ]0A;]8
 ]>)2X
@@ -8125,7 +8160,7 @@ _p)_tH
 _tools.txt
 `+!]?
 `.rdata
-`6-d+
+`6=~+
 `;k8|
 `A]A\[
 `A]A\]
@@ -8214,9 +8249,9 @@ allocator && allocation && buffer
 allocator && allocation && image
 allocator && allocation && pAllocationInfo
 allocator && allocation && ppData
-allocator && buffer != nullptr && pCreateInfo && pAllocation
+allocator && buffer != 0 && pCreateInfo && pAllocation
 allocator && context
-allocator && image != nullptr && pCreateInfo && pAllocation
+allocator && image != 0 && pCreateInfo && pAllocation
 allocator && pBudgets
 allocator && pBufferCreateInfo && pAllocationCreateInfo && VmaIsPow2(minAlignment) && pBuffer && pAllocation
 allocator && pBufferCreateInfo && pAllocationCreateInfo && pBuffer && pAllocation
@@ -8354,6 +8389,7 @@ byteaddressbuffer
 c [1>H'
 c(>\,
 c0&>`
+c2Qk*d}Fh
 c>v	k
 c?FA@s}
 cHu!H
@@ -8436,6 +8472,7 @@ customBorderColor
 customPool.m_nSize <= m_nCustomDeviceMemoryPoolSize
 d$ D!
 d$ E3
+d$ UAVAWH
 d$ t>
 d$ u?A
 d$(A;
@@ -8499,7 +8536,7 @@ data_with or data_height too large. data_width:
 dddd, MMMM dd, yyyy
 decoded.Width() == 4 && decoded.Height() == 4 && decoded.Depth() == 1
 dedicated
-dedicatedImage == nullptr
+dedicatedImage == 0
 default
 defragState == DEFRAG_STATE_WAIT_FOR_OLD_OBJECTS
 delta
@@ -8531,6 +8568,8 @@ descriptorSetTable
 descriptorType
 destination address required
 device or resource busy
+deviceAccelerationFeatures.accelerationStructure not supported, disabling raytracing.
+deviceRayTracingPipelineFeatures.rayTracingPipeline not supported, disabling raytracing.
 deviceType
 directory not empty
 discardRectangleCount
@@ -8603,8 +8642,8 @@ f9<Au
 f9<Fu
 f9<H}
 f9<Ju
-f9=#<9
-f9=d=9
+f9=#S9
+f9=dT9
 f9Bt~
 f9G`u1H
 f9G`uCH
@@ -8796,6 +8835,7 @@ g_pEngineServiceMgr is NULL. Display mode information unavailable
 g_pRenderDevice is NULL. %d adapter(s) available. Iterating adapters %d - %d
 g_pRenderDevice->GetDebugFlag( RENDERDEBUGFLAG_ENABLE_STREAMING_STATS ) == true
 g_pRenderDeviceVulkan->DescriptorIndexingEnabled()
+g_pRenderDeviceVulkan->EXTDeviceGeneratedCommandsEnabled()
 g_pRenderDeviceVulkan->EXTExtendedDynamicStateEnabled()
 g_pRenderDeviceVulkan->KHRBufferDeviceAddressEnabled()
 g_pRenderHardwareConfig is NULL. Display mode information unavailable
@@ -8821,7 +8861,6 @@ graphicsPipelines
 groups
 h AVH
 h>1my
-hA]A\^]H
 hA^A]][
 hA^A]^]
 hA_A^
@@ -8831,8 +8870,11 @@ hAllocation->GetType() == VmaAllocation_T::ALLOCATION_TYPE_BLOCK && hAllocation-
 hDescriptorSetUsedAsLayoutTemplate != RENDER_DESCRIPTOR_SET_HANDLE_INVALID
 hDst != INDEX_BUFFER_HANDLE_INVALID && hSrc != INDEX_BUFFER_HANDLE_INVALID && hDst != hSrc
 hElem != m_imageTransitionHashtable.InvalidHandle()
-hMemory != nullptr
+hIndirectBuffer != RENDER_BUFFER_HANDLE_INVALID
+hIndirectCommandsLayout != RENDER_INDIRECT_COMMAND_LAYOUT_HANDLE_INVALID
+hMemory != 0
 hPlatWnd != PLAT_WINDOW_INVALID
+hPreprocessBuffer != RENDER_BUFFER_HANDLE_INVALID
 hResource->m_nRefCount > 0
 hResource->m_pData == nullptr || hResource->m_pData == GetErrorResource()
 hT$0fA
@@ -8882,6 +8924,7 @@ incorrect header check
 incorrect length check
 index < m_ListsCount
 index pool
+indirect_preprocess
 ineID
 ineIt
 initialLayout
@@ -9017,7 +9060,6 @@ l$@A;
 l$@D8G
 l$@E3
 l$@H;
-l$@Hc
 l$@Hcl$`L
 l$@L+
 l$@Lc
@@ -9202,8 +9244,8 @@ m_elems
 m_hBuffer == RENDER_BUFFER_HANDLE_INVALID
 m_hDefaultVertexBuffer != VERTEX_BUFFER_HANDLE_INVALID
 m_hInstanceBuffer == RENDER_BUFFER_HANDLE_INVALID
-m_hMemory != nullptr
-m_hMemory == nullptr
+m_hMemory != 0
+m_hMemory == 0
 m_hMultiGpuPeer2PeerTexture != RENDER_TEXTURE_HANDLE_INVALID
 m_nAsUint64 == 0
 m_nAsyncPresentEnabled >= 0
@@ -9351,7 +9393,6 @@ mutableDescriptorTypeLists
 mwtMH
 n * nBlockSize >= num
 n I9n(tY
-n#n!$
 n$<fA
 n03>Pu
 n0I9n8tZ
@@ -9559,51 +9600,49 @@ numWorkGroups
 n|$`fA
 o KPBf
 o$$fA
-o%#(Z
-o%D#Z
-o%D\0
-o%J_0
-o%LH0
-o%N40
-o%[00
-o%jp0
-o%o%0
-o%tR0
-o%zb0
-o%}f0
+o%!%0
+o%7EZ
+o%H)8
+o%Tb0
+o%Ze0
+o%\N0
+o%^:0
+o%k!0
+o%k60
+o%zv0
 o,$fD
-o-E,0
-o-O90
-o-W~0
-o-gs0
-o-o=0
-o-pi4
+o-")0
+o-+h0
+o-U20
+o-_?0
+o-wy0
 o47Lc
-o55u>
-o56R0
-o58t0
-o5EF0
-o5O'0
-o5Oj4
-o5Qw0
-o5W!0
-o5a;0
-o5j	0
-o5li0
-o=	3R
-o=	t0
-o=&`0
-o='80
-o=5U0
-o=8R0
-o=C\4
-o=G	0
-o=P*G
-o=SX0
-o=a34
-o=ni0
-o=~^0
-o=~b0
+o5#?0
+o5%C0
+o5+01
+o5FX0
+o5Hz0
+o5UL0
+o5_-0
+o5_p4
+o5a}0
+o5g'0
+o5qA0
+o5|o0
+o=#m0
+o=6f0
+o=7>0
+o=;4R
+o=E[0
+o=HX0
+o=M%0
+o=Sb4
+o=b$R
+o=c^0
+o=pAG
+o=q94
+o=x7R
+o=~o0
 oAPfD
 oD$ f
 oD$ fA
@@ -9630,7 +9669,6 @@ o\$1fA
 o\$@f
 o\$IfA
 o\$Pf
-o]>a)O]6?
 oaPfA
 obwQ4
 od$@f
@@ -9901,7 +9939,6 @@ pVulkanFunctions != nullptr
 pVulkanImage
 pVulkanImage != nullptr
 pVulkanImage->m_pVmaAllocation != VK_NULL_HANDLE
-pZc%.q
 p[WPN
 p`9p t
 panorama
@@ -10037,7 +10074,6 @@ r_textures_evict_all
 r_transparency_and_composition_mask
 r_validate_texture_streaming
 r_vma_defrag_algorithm
-r_vma_defrag_deletion_timeslice
 r_vma_defrag_enabled
 r_vma_defrag_max_allocation_count_per_pass
 r_vma_defrag_max_allocation_size_per_pass
@@ -10051,7 +10087,9 @@ rasterizationSamples
 rasterizationState
 rasterizationStream
 rasterizerDiscardEnable
+rayQueryFeatures.rayQuery not supported, disabling raytracing.
 raytracingPipelines
+raytracingValidationFeatures.rayTracingValidation == VK_TRUE
 rbf;\$l
 rbtn_left_get(RBNode_t, m_AddressLink, node) == NULL
 rbtn_left_get(RBNode_t, m_SizeAddressLink, node) == NULL
@@ -10278,6 +10316,7 @@ t"Hc(H
 t"fff
 t#H9X0t
 t#H9XPt
+t#H9p t
 t#H9p8t
 t$ A+
 t$ A8M
@@ -10484,7 +10523,7 @@ t-HcA
 t-Lck
 t.fff
 t1@8l
-t2L9-
+t2L9-wca
 t2fff
 t3D82t.
 t48^ H
@@ -10507,15 +10546,14 @@ t=D8j
 t?D8 t:
 t?HcS
 t@9+u,9s
-t@H95S$[
+t@H95
 t@McO4
 tAH9=
 tAHcI 
 tBMcW<IcO@Lc
 tC7Ddx
 tC@8-
-tC@8-5
-tC@85n
+tC@85N
 tDD8%
 tDD85
 tDfff
@@ -10523,7 +10561,7 @@ tEHcR
 tFD9c
 tGH9[0u
 tHHcD
-tID8-|
+tID8-\
 tIf9wbH
 tLfff
 tNfA;
@@ -10539,6 +10577,7 @@ tSH9PHt
 tSH9X t
 tSH9X(t
 tSH9X0t
+tSH9p
 tSH9p0t
 tSf91tNH
 tSvQ@2
@@ -10559,6 +10598,7 @@ tangent
 tangents
 tangentt
 tbH9X0t
+tbH9p t
 tbH9p8t
 tbHc}
 tbIcD
@@ -10942,6 +10982,7 @@ vkCmdEndRenderingKHR
 vkCmdEndTransformFeedbackEXT
 vkCmdEndVideoCodingKHR
 vkCmdExecuteCommands
+vkCmdExecuteGeneratedCommandsEXT
 vkCmdExecuteGeneratedCommandsNV
 vkCmdFillBuffer
 vkCmdInitializeGraphScratchMemoryAMDX
@@ -10953,6 +10994,7 @@ vkCmdOpticalFlowExecuteNV
 vkCmdPipelineBarrier
 vkCmdPipelineBarrier2
 vkCmdPipelineBarrier2KHR
+vkCmdPreprocessGeneratedCommandsEXT
 vkCmdPreprocessGeneratedCommandsNV
 vkCmdPushConstants
 vkCmdPushDescriptorSetKHR
@@ -11119,7 +11161,7 @@ vkCreateDescriptorUpdateTemplate
 vkCreateDescriptorUpdateTemplate( m_pDeviceVulkan, &descriptorUpdateTemplateCreateInfo, NULL, &pPipelineOut->m_pDescriptorUpdateTemplate )
 vkCreateDescriptorUpdateTemplateKHR
 vkCreateDevice
-vkCreateDevice failed, unable to create Vulkan device.
+vkCreateDevice failed with error %s, unable to create Vulkan device.
 vkCreateDisplayModeKHR
 vkCreateDisplayPlaneSurfaceKHR
 vkCreateEvent
@@ -11155,7 +11197,11 @@ vkCreateImageView( VulkanDevice(), &imageViewCreateInfo, NULL, m_pImageView->Get
 vkCreateImageView( VulkanDevice(), &imageViewCreateInfo, NULL, m_pImageViewSrgb->GetPtr() )
 vkCreateImageView( VulkanDevice(), &imageViewCreateInfoSrgb, NULL, m_ImageViews.m_pImageViewSrgb->GetPtr() )
 vkCreateImageView( VulkanDevice(), &imageViewCreateInfoSrgb, NULL, m_ImageViews.m_ppPerMipLevelImageViewSrgb[ i ]->GetPtr())
+vkCreateIndirectCommandsLayoutEXT
+vkCreateIndirectCommandsLayoutEXT failed with result %s
+vkCreateIndirectCommandsLayoutEXT( m_pDeviceVulkan, &createInfo, nullptr, &pIndirectCommandsLayout )
 vkCreateIndirectCommandsLayoutNV
+vkCreateIndirectExecutionSetEXT
 vkCreateInstance
 vkCreateInstance failed, unable to create instance.
 vkCreateMicromapEXT
@@ -11228,7 +11274,9 @@ vkDestroyFence
 vkDestroyFramebuffer
 vkDestroyImage
 vkDestroyImageView
+vkDestroyIndirectCommandsLayoutEXT
 vkDestroyIndirectCommandsLayoutNV
+vkDestroyIndirectExecutionSetEXT
 vkDestroyInstance
 vkDestroyMicromapEXT
 vkDestroyOpticalFlowSessionNV
@@ -11342,6 +11390,7 @@ vkGetFenceFdKHR
 vkGetFenceStatus
 vkGetFenceWin32HandleKHR
 vkGetFramebufferTilePropertiesQCOM
+vkGetGeneratedCommandsMemoryRequirementsEXT
 vkGetGeneratedCommandsMemoryRequirementsNV
 vkGetImageDrmFormatModifierPropertiesEXT
 vkGetImageMemoryRequirements
@@ -11546,6 +11595,8 @@ vkUnmapMemory2KHR
 vkUpdateDescriptorSetWithTemplate
 vkUpdateDescriptorSetWithTemplateKHR
 vkUpdateDescriptorSets
+vkUpdateIndirectExecutionSetPipelineEXT
+vkUpdateIndirectExecutionSetShaderEXT
 vkUpdateVideoSessionParametersKHR
 vkWaitForFences
 vkWaitForPresentKHR
@@ -11707,7 +11758,6 @@ yChromaOffset
 y\PD>!
 ycbcrModel
 ycbcrRange
-ydW?v
 ypfA;
 ys == 0
 z%u#H
@@ -11913,7 +11963,7 @@ zY;>u:m
 }OLcCxL
 }W;k$
 }W;s$
-}W;s$wRH
+}\A;^$wVI
 }df;s
 }df;{
 }gf;{
@@ -11947,6 +11997,7 @@ zY;>u:m
 ~[Lc>D;~
 ~^Lc]
 ~bfff
+~c@mn
 ~du H
 ~hMcnxE
 ~qj#k"

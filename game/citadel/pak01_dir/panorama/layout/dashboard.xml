@@ -224,12 +224,21 @@
 							</Panel>
 						</Panel>
 					</Panel>
-					<Panel id="DiscordInvite">
-						<Label class="discordIntro" text="#Citadel_Playtest_DiscordInfo" />
-						<Button id="DiscordButton" class="SecondaryButton fill light hasIcon" onactivate="CitadelConfirmDiscord(); CitadelPlayUISound( ESocialMenuHover )">
-							<Panel class="DiscordIcon buttonIcon" />
-							<Label text="#Citadel_Playtest_DiscordButton" />
-						</Button>
+					<Panel id="DiscordForumInvite">
+						<Label class="accountIntro" text="#Citadel_Playtest_CreateAccountsTitle" />
+						<Label class="accountDesc" text="#Citadel_Playtest_CreateAccountsBody" />
+						<Panel id="ButtonRow">
+							<Button id="ForumButton" class="SecondaryButton fill light hasIcon" onactivate="CitadelJoinForum(); CitadelPlayUISound( ESocialMenuHover )">
+								<Panel class="ForumIcon buttonIcon" />
+								<Label class="defaultText" text="#Citadel_Playtest_JoinForum" />
+								<Label class="completedText" text="#Citadel_Playtest_JoinedForum" />
+							</Button>
+							<Button id="DiscordButton" class="SecondaryButton fill light hasIcon" onactivate="CitadelConfirmDiscord(); CitadelPlayUISound( ESocialMenuHover )">
+								<Panel class="DiscordIcon buttonIcon" />
+								<Label class="defaultText" text="#Citadel_Playtest_JoinDiscord" />
+								<Label class="completedText" text="#Citadel_Playtest_JoinedDiscord" />
+							</Button>
+						</Panel>
 					</Panel>
 					<Panel id="RecommendFriend">
 						<Label class="recommendIntro" text="#Citadel_Playtest_RecommendInfo" />

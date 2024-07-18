@@ -57,13 +57,13 @@
 		}
 		EFlashType_MeleeActivate = 
 		{
-			m_flDuration = 0.200000
+			m_flDuration = 0.275000
 			m_flCoverage = 0.500000
 			m_Color = 
 			[
-				255,
-				226,
-				140,
+				254,
+				101,
+				40,
 			]
 			m_flBrightness = 3.000000
 			m_flHardness = 0.000000
@@ -426,6 +426,13 @@
 		m_strDamageDOT = soundevent:"Damage.Send.DOT"
 		m_strDamageHealthTransfer = soundevent:"Player.Heal.SiphonTick"
 	}
-	m_strRejuvPickupSound = soundevent:"Rejuv.Pickup"
+	m_RejuvParams = 
+	{
+		m_flRejuvinatorExpirationWarningTiming = 30
+		m_flRejuvinatorBuffDuration = 180
+		m_flRejuvinatorDropHeight = 752
+		m_flRejuvinatorDropDuration = 9
+		m_strRejuvPickupSound = soundevent:"Rejuv.Pickup"
+	}
 	m_ShoppingEffect = resource_name:"particles/generic/hero_shopping_status.vpcf"
 }

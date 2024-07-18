@@ -91,11 +91,18 @@
 							</Panel>
 							<RadioButton group="VideoDetails" class="OptionsCheckBox" onactivate="CitadelEnableCustomGraphics(1);" id="UseAdvancedVideoButton" text="#citadel_settings_advancedvideosettings" />
 							<Panel id="AdvancedVideo" class="FullWidth">
-								<CitadelSettingsSlider id="RenderQuality" convar="mat_viewportscale" min="0.333333" max="1.0" percentage="true" text="#citadel_settings_renderquality" onmouseover="UIShowTextTooltip( #citadel_settings_renderquality_desc )" onmouseout="UIHideTextTooltip()" />
-								<CitadelSettingsEnum class="HorizontalEnum" convar="r_citadel_upscaling" text="#citadel_settings_upscaling" id="UpscalingTechnologyEnum" onmouseover="UIShowTextTooltip( #citadel_settings_upscaling_desc )" onmouseout="UIHideTextTooltip()">
+								<CitadelSettingsEnum class="HorizontalEnum" convar="r_citadel_upscaling" text="#citadel_settings_upscaling" id="UpscalingTechnologyEnum" onactivate="CitadelUpscalingValueChanged();" onmouseover="UIShowTextTooltip( #citadel_settings_upscaling_desc )" onmouseout="UIHideTextTooltip()">
 									<RadioButton text="#citadel_settings_upscaling_none" value="0" class="EnumButton" id="UpscalingNone" group="upscaling" />
 									<RadioButton text="#citadel_settings_upscaling_fsr" value="1" class="EnumButton" id="UpscalingFSR" group="upscaling" />
 									<RadioButton text="#citadel_settings_upscaling_fsr2" value="2" class="EnumButton" id="UpscalingFSR2" group="upscaling" />
+								</CitadelSettingsEnum>
+								<CitadelSettingsSlider id="RenderQuality" convar="mat_viewportscale" min="0.4" max="1.0" percentage="true" text="#citadel_settings_renderquality" onmouseover="UIShowTextTooltip( #citadel_settings_renderquality_desc )" onmouseout="UIHideTextTooltip()" />
+								<CitadelSettingsEnum class="HorizontalEnum" convar="mat_viewportscale" text="#citadel_settings_fsr2scaling" id="RenderQualityFSR2Enum" onmouseover="UIShowTextTooltip( #citadel_settings_fsr2scaling_desc )" onmouseout="UIHideTextTooltip()">
+									<RadioButton text="#citadel_settings_fsr2scaling_ultra_performance" value="0.333333" class="EnumButton" id="Fsr2ScalingUltraPerformance" group="renderqualityfsr2" />
+									<RadioButton text="#citadel_settings_fsr2scaling_performance" value="0.500000" class="EnumButton" id="Fsr2ScalingPerformance" group="renderqualityfsr2" />
+									<RadioButton text="#citadel_settings_fsr2scaling_balanced" value="0.588235" class="EnumButton" id="Fsr2ScalingBalanced" group="renderqualityfsr2" />
+									<RadioButton text="#citadel_settings_fsr2scaling_quality" value="0.666667" class="EnumButton" id="Fsr2ScalingQuality" group="renderqualityfsr2" />
+									<RadioButton text="#citadel_settings_fsr2scaling_native" value="1.000000" class="EnumButton" id="Fsr2ScalingNative" group="renderqualityfsr2" />
 								</CitadelSettingsEnum>
 								<CitadelSettingsEnum class="HorizontalEnum" convar="r_citadel_antialiasing" text="#citadel_settings_antialiasing" id="AntiAliasingEnum" onmouseover="UIShowTextTooltip( #citadel_settings_antialiasing_desc )" onmouseout="UIHideTextTooltip()">
 									<RadioButton text="#citadel_settings_antialiasing_none" value="0" class="EnumButton" id="AntialiasingNone" group="antialiasing" />
@@ -189,6 +196,7 @@
 							<CitadelSettingsSlider convar="voice_threshold" min="-120.0" max="0" percentage="true" text="#citadel_settings_openmicthreshold" onmouseover="UIShowTextTooltip( #citadel_settings_openmicthreshold_desc )" onmouseout="UIHideTextTooltip()" />
 							<CitadelSettingsCheckbox id="OpenMic" onactivate="CitadelOpenMicSettingChanged()" text="#citadel_settings_chat_openmic" onmouseover="UIShowTextTooltip( #citadel_settings_open_mic_desc )" onmouseout="UIHideTextTooltip()" />
 							<CitadelSettingsCheckbox id="MonitorMic" onactivate="CitadelMonitorMicChanged()" text="#citadel_settings_monitor_mic" onmouseover="UIShowTextTooltip( #citadel_settings_monitor_mic_desc )" onmouseout="UIHideTextTooltip()" />
+							<CitadelSettingsCheckbox id="StreamlinedMic" onactivate="CitadelStreamlinedMicChanged()" text="#citadel_settings_streamlined_mic" onmouseover="UIShowTextTooltip( #citadel_settings_streamlined_mic_desc )" onmouseout="UIHideTextTooltip()" />
 							<CitadelSettingsKeyBinder id="PushToTalkBinder" text="#citadel_keybind_push_to_talk" bind="PushToTalk" />
 							<CitadelSettingsKeyBinder id="PushToTalkPartyBinder" text="#citadel_keybind_push_to_talk_party" bind="PushToTalkParty" />
 						</Panel>
@@ -201,7 +209,7 @@
 				<Panel id="AboutTabContentContainer">
 					<Panel id="AboutCitadelLogo" />
 					<Label class="AboutVersion" text="#citadel_ClientVersion" html="true" />
-					<Label class="AboutVersion" text="Criteria CF© Connary Fagen, Inc. / connary.com" html="true" />
+					<Label class="AboutVersion" text="#citadel_clientversion_connary" html="true" />
 					<Image id="AboutValveLogo" />
 				</Panel>
 			</Panel>
@@ -374,10 +382,10 @@
 							</Button>
 							<Button class="ChatWheelButton ContextualPingButton" id="ChatWheelButtonEmpty" onmouseover="CitadelUIShowTextTooltip( #citadel_settings_ping_wheel_contextual_desc, UI.MainMenu.Hover, &apos;&apos; );" onmouseout="CitadelUIHideTextTooltip()">
 								<Panel class="ChatWheelButtonContents">
-									<Label text="[Contextual Slot]" html="true" />
+									<Label text="#citadel_settings_contextual_slot" html="true" />
 								</Panel>
 							</Button>
-							<Label class="ContextualLabel" text="Contextual Ping Wheel Slot" />
+							<Label class="ContextualLabel" text="#citadel_settings_contextual_slot_label" />
 							<CitadelSettingsCheckbox id="PingWheelContextualCheckbox" convar="citadel_use_contextual_ping_wheel_option" text="#citadel_settings_ping_wheel_contextual" />
 						</Panel>
 					</Panel>
@@ -405,7 +413,7 @@
 			<Panel class="ChatWheelPhraseChoiceLine">
 				<Panel id="ChatWheelMessageUnlockInfo" />
 				<Button id="ChatWheelSoundButton" class="ChatWheelSoundIcon" />
-				<Label class="ChatWheelAllLabel" text="[ALL]" />
+				<Label class="ChatWheelAllLabel" text="#citadel_settings_chat_wheel_all" />
 				<Label class="ChatWheelPhraseChoiceText" html="true" text="{s:chat_wheel_message}" />
 			</Panel>
 		</snippet>

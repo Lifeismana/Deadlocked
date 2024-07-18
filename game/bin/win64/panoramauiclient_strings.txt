@@ -14,6 +14,7 @@
 	V_isnand
 	V_isvalidhex
 	V_iswcntrl
+	V_iswdigit
 	V_vsnprintf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
@@ -39,7 +40,6 @@
 	type_name
 	uVeH
 	w|Hc
- 	V_iswdigit
  	uIH
                           
     Actual    : 
@@ -62,6 +62,7 @@
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ $"8Vf	V:eQ
  %41g
  %s %s
  'L>[
@@ -82,7 +83,7 @@
  <b>@import</b> 
  = { <proto text format> }". To set fields within it, use syntax like "
  ?InternalFieldCount@Object@v8@@QEBAHXZ
- @WindowCursorHidden
+ @WindowOffScreen
  A\][H
  A^A\^][
  A^A\^][H
@@ -200,7 +201,6 @@
 !?IsBoolean@Value@v8@@QEBA_NXZ
 !BDialogVariablesInString( pszString )
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
-!Oi "f
 !bAssert || pPanel == nullptr || pResult != nullptr
 !bHasEverEnumerated
 !bParsedSecond
@@ -223,6 +223,7 @@
 !pAfter || nDepth > 0
 !pChild || pChild->GetAttribute( k_symItemIndexAttribute, -1 ) == nItemIndex
 !pCurrent->GetParent()
+"	V_iswspace
 " because it is missing required fields: 
 " conflicts with field "
 " conflicts with the existing symbol "
@@ -289,7 +290,6 @@
 "MutableRawRepeatedField"
 "e" must be followed by exponent.
 "e?<<<<<<l?
-#	V_iswspace
 #%02X%02X%02X%02X
 #AsyncPanel_Failure
 #AsyncPanel_Loading
@@ -368,7 +368,6 @@ $`<`uEM
 $`<`uFM
 $`<`uIM
 $`<`uMM
-$k)<Z
 $u"8K
 %.2f|%.2f|%.2f|%.2f
 %?IsNumber@Value@v8@@QEBA_NXZ
@@ -669,7 +668,7 @@ $u"8K
 )t$ I
 )t$ J
 )t$ f
-)t$ f95cN
+)t$ f95#N
 )t$0H
 )t$0H;
 )t$0I
@@ -731,6 +730,7 @@ $u"8K
 , not just within "
 ,/<-w
 ,0<	w[H
+,3W85
 ,<ellipsis>
 ,HR>O
 ,I<%w
@@ -1292,7 +1292,7 @@ $u"8K
 220323000000Z
 220801000000Z
 230714000000Z
-240711150542Z0/
+240718150355Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1310,10 +1310,9 @@ $u"8K
 3H9uot
 3mq+<
 4$u.A
-4,hGh
 456789:;<=
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
-4u2fD9=
+4u2fD9=Nj
 5FjiT
 5butt
 5fD9%
@@ -1326,7 +1325,6 @@ $u"8K
 7?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@1@Z
 7?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 7?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
-7FM8Z
 7H9uHt
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 8 tCA
@@ -1375,6 +1373,7 @@ $u"8K
 8ke?;
 8w>Hc
 8|u9H
+9	V_powf
 9	tYH
 9)~P3
 90u(H
@@ -1458,7 +1457,7 @@ $u"8K
 9GLtdH
 9K,tIH
 9K,tVH
-9M4t;L9=c1
+9M4t;L9=#1
 9M4t~H
 9M<t4H
 9M<tO;
@@ -1492,7 +1491,7 @@ $u"8K
 9{t~:3
 9{|~<3
 9|$PtHHc
-:	V_powf
+:	V_qsort
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :$t>H
@@ -1503,7 +1502,7 @@ $u"8K
 :Tu)f
 :context->%p->%s:
 :context->null->UIEngine Global:
-;	V_qsort
+;	V_qsort_s
 ;	t/H
 ;"u	@
 ;)u1D
@@ -1528,12 +1527,12 @@ $u"8K
 ;\$Pu
 ;\$p|
 ;]tHL
+;f95P
 ;q }kH
 ;t$ }yH
 ;t$\H
 ;{,}"H
 ;{ht"
-<	V_qsort_s
 <	u#L
 <	w	@
 <	wHH
@@ -1570,7 +1569,7 @@ $u"8K
 <`tHH
 <a href="\1\3">\1\3</a>
 <ellipsis>
-<f95i
+<f95)
 <htl<jt\<lt4<tt$<wt
 <invalid>
 <no failure reason set>
@@ -1743,6 +1742,7 @@ $u"8K
 ?kxG2)
 ?uRE3
 ?{Q}<
+@	V_roundf
 @ 9B tDA
 @ H;}
 @ HcB
@@ -1752,7 +1752,7 @@ $u"8K
 @.data
 @.reloc
 @08@HPX`hpx
-@08N$
+@08N4
 @0HcB
 @8+t?
 @84)u
@@ -1932,7 +1932,6 @@ $u"8K
 @tfH;
 A	BlA;rh~
 A	BxD
-A	V_roundf
 A H+H(H
 A H+H(I
 A H+X(
@@ -1970,8 +1969,8 @@ A9E,t<H
 A9E0u
 A9E4t4H
 A9E4t7H
-A9E4t8H9-
-A9E4t;H9-a
+A9E4t8H9-Q
+A9E4t;H9-!
 A9E8u
 A9E<t4H
 A9E<tYH
@@ -3051,6 +3050,7 @@ D0?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
 D8 uhL
 D8(tLH
 D8)u#L
+D8-G"
 D8.uBH
 D80t@
 D81uUL9r
@@ -3280,6 +3280,7 @@ DropDownSelectionChanged
 DropInputFocus
 DropdownMenuFocusChanged
 D|$0H
+E	V_sincosf
 E 8F 
 E @8pHtD9s|~?L
 E D8xKtgA
@@ -3399,7 +3400,6 @@ Extensions in proto3 are only allowed for defining options.
 Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
 E|$XA
-F	V_sincosf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -3546,7 +3546,7 @@ G$9C$u7H
 G(9C(u 
 G(9C(u2
 G(9C(uC
-G(f95|
+G(f95<
 G,9C,u
 G,9C,u]
 G09C0u
@@ -3591,6 +3591,7 @@ GetAttributeInt
 GetAttributeString
 GetAttributeUInt32
 GetBool
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCStringCharConversion
@@ -3749,8 +3750,6 @@ H92tBA
 H93t	H
 H97u+A
 H98tB
-H9=%Q
-H9=Q<)
 H9A s
 H9A u)M
 H9D$P
@@ -4005,7 +4004,7 @@ HeaderType
 Hebrew
 HelpSystem_001
 Hex and octal numbers must be integers.
-HfD9%
+HfD9%w
 Hidden
 HideScrollDown
 HideScrollLeft
@@ -4193,6 +4192,7 @@ It's unexpected and inefficient to add to a render data list that has already ha
 ItemPips
 Item_%c
 Item_%s
+J	V_snprintf
 J<L4,&
 J>@G_
 JSConsoleInput
@@ -4205,7 +4205,6 @@ JSType
 January
 Javanese
 Just ignore the calculations, you can zoom to this amount (will validate that this is <= maxscale)
-K	V_snprintf
 K HcC$Hc
 K$HcC(;
 K&>.yC
@@ -4716,10 +4715,11 @@ Ordered object's memory was modified prior to construction
 Oriya
 Osmanya
 OverMaxPips
+P	V_sscanf
 P(9G<H
 P(A9F<I
 P08@Jp
-P08N$
+P08N4
 P09G@
 P0A9F@A
 P8D:8
@@ -4850,7 +4850,6 @@ Protocol Buffer map usage error:
 Protocol Buffer reflection usage error:
 PxL9`
 Pz}b!
-Q	V_sscanf
 Q0I;Q8t
 Q5rHg,>
 Q@9QL}
@@ -5490,11 +5489,13 @@ Tuesday
 Two values are specified, the first applies to how we stretch the top/middle/bottom horizontally to fill space, the second applies to how we stretch the left/middle/right vertically to fill space.<br><br><b>Examples:</b><pre>border-image-repeat: stretch stretch;
 Type appears to be in generated pool but wasn't 
 Type is already registered: 
+U	V_stricmp_fast
 UA>N0Wl
 UATAUAVAWH
 UATAVH
 UAUAVH
 UAVAWH
+UD8%n
 UHH;UPt
 UIEngine()
 UIEngine()->GetCurrentFrameTime() >= m_flLastMotion - 1.0f
@@ -5536,6 +5537,7 @@ UWATAUAWH
 UWATAVAWH
 UWAUAVAWH
 UWAVH
+UbXr]
 Ugaritic
 Unable to parse image scaling %s
 Underlying object is deleted!
@@ -5586,7 +5588,6 @@ UsingCompositionLayer
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_stricmp_fast
 V0H;V8t
 V6E>`"(5
 V8ParamToPanoramaType expected IUIPanel object to convert, but got some other invalid object
@@ -5710,6 +5711,7 @@ VolumeControl
 VolumeSliderPopup
 VolumeSliderValueChanged
 Vrad3_001
+W	V_strlower_fast
 WARNING
 WATAUAVAWH
 WATAVH
@@ -5726,18 +5728,17 @@ WebBrowser
 WebVTT Parse Error %d: %s:%u:%u - %s.
 Wednesday
 WideCharToMultiByte
+WindowCursorHidden
 WindowCursorShown
 WindowGotFocus
 WindowHidden
 WindowLostFocus
-WindowOffScreen
 WindowOnScreen
 WindowShown
 WorldRendererMgr001
 Wrapper
 WriteConsoleW
 WriteFile
-X	V_strlower_fast
 X @8u
 X D8e
 X UVWATAUAVAWH
@@ -5768,26 +5769,24 @@ X}tA;
 Y0HcR
 Y5Y<	
 Y9"SD
-Y=:,	
+Y=J1	
 Y>kX>M
 YD$@f
 Y_txt
 You can't interpolate a layout-position
-Z7anN)
 ZP~IIc
 Z\>z8
 Zod(^?
+[	V_strtod
 [%s] 
 [*ncd>0
 [K]taM?
 [`fff
 [aOni*{
-[f95:
 [lazy = true] can only be specified for submessage fields.
 [object@%p]
 [packed = true] can only be specified for repeated primitive fields.
 [thunk]:
-\	V_strtod
 \ at end of pattern
 \$ @8t$(
 \$ AVH
@@ -5882,7 +5881,6 @@ Zod(^?
 \$pI+
 \$|;qX
 \$|E3
-\(y}G
 \??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 \C not allowed in lookbehind assertion
 \K4v-A
@@ -5938,6 +5936,7 @@ Zod(^?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^fD;]
 ^u+fff
+_	V_strupper_fast
 _ ;_$t
 _(H;u0t!H
 _-?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
@@ -5972,7 +5971,6 @@ _hypot
 _logb
 _nextafter
 _oD>Kg
-`	V_strupper_fast
 ` UAVAWH
 `+!]?
 `.rdata
@@ -6099,6 +6097,7 @@ autocompletetext
 autoplay
 autoscroll-delay
 azure
+b	V_tanf
 b?^Cy
 bAllocationCanFit
 bFound
@@ -6215,7 +6214,6 @@ buffer-async
 buffer-sync
 burlywood
 bytes
-c	V_tanf
 c HcC8
 c [1>H'
 c(>\,
@@ -6452,10 +6450,10 @@ f9)u4H9j
 f9)u:H
 f9,Ju
 f9,~u
-f9-V>
-f9-y{
-f95	h
-f95)f
+f9-9{
+f9-O>
+f95Su
+f95ng
 f9<Ju
 f9Exu#H
 f9Q(u
@@ -6490,28 +6488,25 @@ fD9 t
 fD9!H
 fD9!u
 fD9$Hu
-fD9%$
-fD9%D
-fD9%K
-fD9%^i
-fD9%q
+fD9%1
+fD9%U
+fD9%^
+fD9%ti
 fD9'u
 fD9,Au
 fD9,pu
 fD9- 
-fD9-?
 fD9-p
 fD91uTL9r
 fD94Au
 fD94H}aD
 fD94Q}
 fD94iu
-fD95-
-fD95h
+fD95(
+fD95y
 fD98@
 fD98u
 fD9;u
-fD9=3b
 fD9t$b
 fE9,Fu
 fE98t'
@@ -6733,7 +6728,6 @@ itemstoscroll
 itemwidth
 iu+-,
 ivory
-j 6mv
 j>>A?1
 j?V()
 j?{$*
@@ -7131,7 +7125,7 @@ o|$0f
 p WATAUAVAWH
 p WAVAWH
 p*W4H
-p08@H^$
+p08@H^4
 p0R^G'
 p;Y>u
 p@HPX`h
@@ -7773,7 +7767,7 @@ t	D8't
 t	D9&t
 t	Hcp
 t	f95
-t	f95_u
+t	f95U
 t D8h
 t D9A
 t H;}
@@ -7882,6 +7876,7 @@ t$`td
 t$d@2
 t$dL9b u
 t$f95
+t$f95We
 t$hA8
 t$huY
 t$pE3
@@ -7901,7 +7896,7 @@ t*HcA
 t*HcC
 t+D88t&H
 t+H+}
-t,f95\
+t,f95
 t-Lck
 t.fA;
 t.fff
@@ -7910,22 +7905,22 @@ t1<.up
 t4I92u/M
 t5A9>t
 t6H95
-t6H95#!
-t6H95w!
+t6H957!
+t6H95Y 
 t6f95
 t7HcP
 t7L9%
 t8IcD$
-t8f95)N
+t8f95
 t9D8 t4L
-t:L9%
+t:L9%T
 t;<,uKH
 t;HcB
 t;LcF
 t<HcE
 t=f95
 t?HcS
-t@f9=
+t@f9=|*
 tEHcR
 tIHcA
 tIHcC
@@ -7937,7 +7932,7 @@ tRLcY
 tSf91tNH
 tTA8~TtNA
 tU;\$0tH
-tUH95
+tUH95i
 tUH99uPL
 tUvS@2
 tV@8/tQ@8
@@ -7947,7 +7942,7 @@ t]fff
 t^HcC
 t_Ic6
 t_L9>t
-t`f950
+t`f95
 taHcC
 tabid
 tabindex
@@ -8088,7 +8083,7 @@ u.H;P
 u/f9-
 u1!D$0H
 u1fff
-u2fD9%/w
+u2fD9%
 u3HcH<H
 u4D9v
 u4I9}(
@@ -8099,7 +8094,7 @@ u:B8D7
 u;8^Eu6H
 u<g~l<it[<ntP<ot,<pt
 u>D8s0u8
-u?8Chu:f9-$
+u?8Chu:f9-
 uA8Ghu<f95
 uED8r(t
 uTM9<$tN
@@ -8107,7 +8102,7 @@ uWH9k
 u[HcC ;G uR
 u^8D$ tX
 u`D8s0tZH
-ucf9-(
+ucf9-
 ui-scale
 ui-scale-x
 ui-scale-y

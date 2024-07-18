@@ -667,6 +667,7 @@ $prefix_element$
 ', type<
 ',=?k
 'p7M}f
+(	V_log10f
 ( !pUpAxisAttr && !pszUpAxis ) || ( pszUpAxis && StringHasPrefix( pszUpAxis, "Z" ) )
 ( %1, %2 )
 ( %1, %2, %3, %4% )
@@ -716,30 +717,24 @@ $prefix_element$
 ( z >= 0 ) && ( z < NumSlices() )
 (#%d)
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
+(%""*
+(%*'*
 (%1,%2)
-(%7z0
-(%O#*
-(%T#*
 (%d,%d
 (%d,%d)
 (%d,%d,%d
 (%d,%d,%d,%d
-(%n!*
-(%r!*
-(%z&*
+(%x2*
 ((width & 1) == 0) && ((height & 1) == 0)
 (*%s*), 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(- +*
-(-6+(
-(-;t0
-(-\z0
-(5&!*
-(5W1*
-(5y&*
-(=1 *
-(=R&*
+(-?2*
+(-k8(
+(-n'*
+(5)'*
+(5i+*
+(=r$.
 (A]A\_[
 (A]^][
 (A^A\^[
@@ -928,7 +923,6 @@ $prefix_element$
 (t$Pf
 (t$Ps
 (t$Pu4H
-(t$`3
 (t$`D
 (t$`E3
 (t$`H
@@ -973,7 +967,6 @@ $prefix_element$
 (|$pI
 (|$pL
 )	?buddy@QAbstractItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
-)	V_log10f
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )$$fD
 ),$fD
@@ -1137,6 +1130,7 @@ $prefix_element$
 )t$`Hc
 )t$`I
 )t$`L
+)t$`M
 )t$pC
 )t$pD
 )t$pE
@@ -1207,6 +1201,7 @@ $prefix_element$
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *pScan == '['
 +	?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
++	V_log2f
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
 +"?updateGeometries@QListView@@MEAAXXZ
 +A$Lc
@@ -1243,7 +1238,7 @@ $prefix_element$
 +h->|
 +o'q)}
 +~0+^4
-,	V_log2f
+,	V_logd
 , %1 KB
 , %1 MB
 , %1 mip levels, %2
@@ -1269,7 +1264,7 @@ $prefix_element$
 ,X< w
 ,YA1A
 ,YA1H
--	V_logd
+-	V_logf
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
@@ -1280,6 +1275,7 @@ $prefix_element$
 -1 == m_ThumbnailAssetsWaitingForCache.Find( pAsset )
 -> Success (%d attempts)
 -BH>t
+-J(	^
 -Stop: 
 -YA1A
 -YA1H
@@ -1297,11 +1293,9 @@ $prefix_element$
 -unknown source-
 -unknown source-(
 -vsync
-.	V_logf
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 ..om?
 .00cfg
-.5@	9
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
 .?AU?$_InitialTaskHandle@XV<lambda_60c5de84e69e46aa92419d47e2f3ad51>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -2471,18 +2465,9 @@ $prefix_element$
 .CRT$XTZ
 .D$0z
 .D$4z
-.D$4z@u>
 .D$8z
-.D$Dz
-.D$Dz@u>
-.D$dz
-.D$hz
 .E8u5
 .K(DL
-.L$8z
-.L$8z/u-
-.L$Hz
-.L$Hz/u-
 .L9o(t
 .L9o8t
 .P6AXPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
@@ -2498,10 +2483,6 @@ $prefix_element$
 .P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .R?matches@QKeyEvent@@QEBA_NW4StandardKey@QKeySequence@@@Z
-.T$0z&u$
-.T$0zQuO
-.T$@z&u$
-.T$@zQuO
 .YA1A
 .YA1H
 .[,t<
@@ -2529,6 +2510,20 @@ $prefix_element$
 .rtc$IZZ
 .rtc$TAA
 .rtc$TZZ
+.t$0z&u$
+.t$0zAu?
+.t$4z
+.t$4z8u6
+.t$8z
+.t$8z/u-
+.t$@z&u$
+.t$@zAu?
+.t$Dz
+.t$Dz8u6
+.t$Hz
+.t$Hz/u-
+.t$dz
+.t$hz
 .text
 .text$di
 .text$mn
@@ -2543,7 +2538,7 @@ $prefix_element$
 .xJ>Hf
 .xdata
 .xdata$x
-/%Xr8
+/%@6'
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
 // 						"BA_INT_DANGER"		break out of this anim only if threatened
@@ -2560,7 +2555,8 @@ $prefix_element$
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5]I#
+/5'Z*
+/5O\.
 /<9w-
 />58d%
 /D$4r
@@ -2645,8 +2641,8 @@ $prefix_element$
 0w0c1
 0x%llx
 0x%p = %s '%s'
-0z$u"
 0}0i1
+1	V_modfd
 1"?updateGeometry@QWidget@@QEAAXXZ
 1#IND
 1#INF
@@ -2867,13 +2863,12 @@ $prefix_element$
 1trigger()
 1update()
 1wsHp
-2	V_modfd
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240711150514Z0/
+240718150410Z0/
 241009235959Z0a1
 255 255 255
 2AnimationLoopingChanged( bool )
@@ -2960,6 +2955,7 @@ $prefix_element$
 4-byte data pool
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
 4;t	H
+4@8-p
 4@A;m@
 4YA1H
 4YA1i
@@ -2967,7 +2963,6 @@ $prefix_element$
 5;FJ$,XEK4<
 5FjiT
 5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
-5O"ME
 5YA1H
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 5sfm_v8
@@ -2986,6 +2981,7 @@ $prefix_element$
 7YA1A
 7YA1H
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powd
 8"3hrf
 8-byte data pool
 8/t[H
@@ -3047,8 +3043,9 @@ $prefix_element$
 8ke?;
 8text
 8vmatt
-9	V_powd
+9	V_powf
 9)~P3
+95yPS
 97tmD
 98t H
 993u,H
@@ -3130,7 +3127,7 @@ $prefix_element$
 9~P~7
 9~P~;
 9~h~t3
-:	V_powf
+:	V_qsort
 : Add
 : lexer error %d :
 :!e00A
@@ -3144,11 +3141,12 @@ $prefix_element$
 :VP8 tP
 :VP8LtHD
 :VP8X
-;	V_qsort
+;	V_qsort_s
 ;(}{H
 ;.u1L
 ;.|@H
-;=4O:
+;=!I:
+;=)V:
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;CP}$Hc
@@ -3183,7 +3181,6 @@ $prefix_element$
 ;|$0|
 ;|$8|
 ;|$@~
-<	V_qsort_s
 <	u2H
 <	u8H
 <	u\L
@@ -5076,6 +5073,7 @@ $prefix_element$
 ?value@QSettings@@QEBA?AVQVariant@@AEBVQString@@AEBV2@@Z
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 ?{Q}<
+@	V_roundf
 @ A+@
 @ D+@
 @ HcI0H
@@ -5371,7 +5369,6 @@ $prefix_element$
 @spawn
 @t/H9w t)H
 @t/H9w8t)H
-A	V_roundf
 A A+A
 A D+A
 A D;A0|
@@ -8820,8 +8817,12 @@ CUtlMemory<struct CSkeletonPose::CBone,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CSkeletonPose::CBone,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CToolHud::CHudObject,int>::Grow
 CUtlMemory<struct CToolHud::CHudObject,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CToolSceneJointAxes::JointAxisData_t,int>::Grow
+CUtlMemory<struct CToolSceneJointAxes::JointAxisData_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CToolSceneJointNames::JointNameData_t,int>::Grow
 CUtlMemory<struct CToolSceneJointNames::JointNameData_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CToolSceneJointRotations::JointRotationData_t,int>::Grow
+CUtlMemory<struct CToolSceneJointRotations::JointRotationData_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CToolSceneModel::CachedOps_t,int>::Grow
 CUtlMemory<struct CToolSceneModel::CachedOps_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CToolSceneModel::CachedOps_t,int>::Grow::<lambda_2>::operator ()
@@ -9421,6 +9422,7 @@ D$ @G
 D$ A+
 D$ A;
 D$ B9
+D$ D9~
 D$ D;
 D$ E2
 D$ E3
@@ -9726,7 +9728,6 @@ D8,8u
 D81uUL9r
 D84:u
 D84>u
-D85t@E
 D8<2u
 D8<>u
 D8L$0u`
@@ -9805,6 +9806,7 @@ D9}hu
 D9~(D
 D;$(t
 D;$7|
+D;%S*f
 D;D$(|
 D;D$(}CJ
 D;D$p|
@@ -10096,13 +10098,13 @@ Dump all new particles, optional name substring.
 Dump all simulating particles, optional name substring.
 DumpModeDecode: Not enough data for scanline %d
 Dynamic Configs
+E	V_sincosf
 E A84$u
 E D9{(
 E(HcH
 E),$H
 E)n(u
 E+A@H
-E-o'f
 E0HcH
 E0Lc`
 E80t"A
@@ -10479,7 +10481,7 @@ ExternalNameForInternalType
 ExtraSamples
 Extraneous token
 E|$xH
-F	V_sincosf
+F	V_sind
 F	tj<
 F 9F(r
 F A;F
@@ -10696,7 +10698,7 @@ Function "%s" takes %i parameters, but %i were given
 Functions not supported in this evaluator (%s)
 FxD9x
 FxH9<
-G	V_sind
+G	V_sinf
 G 9G(
 G H9,
 G channel not found!
@@ -10718,7 +10720,6 @@ GD$8Ai
 GD$8H
 GD$HA
 GD$HH
-GD$HL
 GD$PH
 GD$X3
 GD$XH
@@ -10815,6 +10816,7 @@ GetAssetPreviewType returned THUMBNAIL but no code to handle it in CreateAssetPr
 GetAsyncKeyState
 GetBasicType() == KV3_BTYPE_TABLE
 GetBlackboardReference R%d <- BR%d (%s)
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCStringCharConversion
@@ -10935,7 +10937,6 @@ G|$HH
 G|$XA
 H	CxH
 H	GHI
-H	V_sinf
 H A+H
 H ATAUH
 H D+H
@@ -10960,18 +10961,17 @@ H9(t?A
 H9(tO
 H9+t	H
 H9+u]H
-H9-X~$
 H9/t	H
 H9/u+9
 H90t7
 H93t	H
 H94(t
 H957(H
-H95dC>
 H97u+A
 H98t$H
 H98t2
 H9;t	H
+H9=oe=
 H9A(u
 H9APuuH
 H9CPt
@@ -11096,6 +11096,7 @@ HandleIntDerived
 HardCancel
 HasAllocatedMemory( nDestAttr )
 Hc+;k
+Hc-8?Z
 Hc.;n
 Hc/;o
 Hc/E3
@@ -11266,6 +11267,7 @@ How much should the surface normal up direction influence the final orientation.
 Hr>wL
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
+I	V_sinhf
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
 I I;4
 I could not work out what I was expecting, like so many of us these days!
@@ -11767,7 +11769,7 @@ It doesn't make sense to have attachment type PATTACH_WORLDORIGIN and have an en
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
 ItemIsolateView
 ItemIsolateVignette
-J	V_sinhf
+J	V_snprintf
 J%f%f%f%f%f%f%f%f
 J8B:s
 J8G:s
@@ -11789,7 +11791,6 @@ Joint Rotations
 Js`@2
 Jump to Instr I%d
 JumpOrLeap( C%d:I%d )
-K	V_snprintf
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 K H9H
 K H9K0u
@@ -11802,7 +11803,6 @@ K09H(tC
 K0HcK4H
 K0HcQ
 K4HcK8H
-K6m!g
 KERNEL32.dll
 KP9sP
 KV3 instances cannot be set to an unspecified specific type
@@ -12063,6 +12063,7 @@ L$xff
 L+d$PI+
 L9#t	H
 L9#u/H
+L9%sI_
 L9&t	H
 L9+t	H
 L93t	H
@@ -12580,7 +12581,6 @@ MessageBoxW
 MguCA
 Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
 Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
-Mia=[dHc
 Min Float
 Min Int
 MinEV
@@ -12741,6 +12741,7 @@ New Material
 New material to replace the original material with.
 NewValueAccepted
 Newline in string literal
+Nf%>3
 No Active Window
 No Focus Widget
 No Qt widget associated with the active window! (How did you execute this command?)
@@ -12806,7 +12807,6 @@ O*9y]
 O0HcW 
 O8HcB
 O8HcY
-O=-O:
 O?initPainter@QPaintDevice@@MEBAXPEAVQPainter@@@Z
 OBJECT
 OF>;^
@@ -12985,6 +12985,7 @@ Overall grid dimension along Y axis.
 OverlayProjectionDirection
 Override
 Overwrite With Current
+P	V_sscanf
 P 9_p
 P D+P
 P HcE
@@ -13036,6 +13037,7 @@ PA_A^A]_^][
 PA_A^]
 PA_A^^
 PA_A^_
+PA_A^_^[
 PA_A^_^]
 PA_A^_^]H
 PAq=?Mp#
@@ -13103,7 +13105,6 @@ PackBitsDecode: discarding %ld bytes to avoid buffer overrun
 PageName
 PageNumber
 PanCamera3D
-Panel ID
 PanelID
 Panorama Panel Handle
 PanoramaTextServices001
@@ -13111,7 +13112,9 @@ PanoramaUIClient001
 PanoramaUIEngine001
 Param
 Parameter Display Name
+Parent Map Entity
 Parent Map: %s
+Parent XML Panel
 ParentToCamera
 ParseEXRHeaderFromMemory failed! Error message: %s
 ParseVectorFromKeyValueString
@@ -13336,7 +13339,7 @@ Push To Global Browser
 PushSelectionToGlobalBrowser
 Pz}b!
 P~6-U~/W
-Q	V_sscanf
+Q	V_sscanf_s
 Q$HcA
 Q2XXR
 Q5rHg,>
@@ -13407,7 +13410,6 @@ QueryPerformanceCounter
 QueryPerformanceFrequency
 Qxfff
 R	?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
-R	V_sscanf_s
 R A;F
 R channel not found!
 R%d->%s
@@ -14467,10 +14469,8 @@ T$pfD
 T$pfff
 T$xD;{
 T$xE3
-T%*w*
-T%:x*
-T%oe*
-T5}e*
+T%ye*
+T=Sh*
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
@@ -14668,6 +14668,7 @@ Tuesday
 Turtle Graphics Domain
 TurtleGraphics
 Typesafe Int
+U	V_stricmp_fast
 U I;U(
 U%	>G
 U(fff
@@ -14925,7 +14926,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
-V	V_stricmp_fast
 V ?toolTip@QAction@@QEBA?AVQString@@XZ
 V6'?C
 V6E>`"(5
@@ -15129,9 +15129,10 @@ VisBuilder_001
 Visit Developer Help URL
 VisitAndModifyElement_R
 Vrad3_001
-VwN g
+W	V_strlower_fast
 W%	s;M@
-W5l_,
+W-gJ.
+W5ld,
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?save@QPixmap@@QEBA_NPEAVQIODevice@@PEBDH@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -15206,20 +15207,16 @@ WriteOutstores_Slowpath
 Writing Asset Dependency or Thumbnail Database
 Wrong JPEG library version: library is %d, caller expects %d
 Wrote symbol stats to file: %s
-X	V_strlower_fast
 X @8u
 X D8e
 X UAVAWH
 X UVWH
 X to the Y power
 X!t5~
+X%e7,
 X-Axis Size
-X-m7,
-X-ps0
-X5):,
-X5Yl7
-X5ZY*
-X5m,,
+X-Py0
+X5OLP
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrush@QPalette@@QEAAXW4ColorGroup@1@W4ColorRole@1@AEBVQBrush@@@Z
@@ -15250,6 +15247,7 @@ XA__^[
 XClipPathUnits
 XD$PD
 XD$Xf
+XHc-)
 XL$TD
 XL$tL
 XMLPacket
@@ -15264,19 +15262,25 @@ Xd$ D
 Xd$HD
 X|$ A
 X|$8E
-Y%pw*
-Y-=7,
+Y%L8,
+Y%sQ,
+Y- 5*
 Y-Axis Size
-Y-LA$
-Y-p4*
-Y59:,
-Y5Cs,
-Y5~^*
+Y5':,
+Y5*\*
+Y5*l*
+Y51Z*
+Y5A:,
+Y5BZ*
+Y5Cx,
+Y5MH'
+Y5O\.
+Y5fl*
+Y5~]*
 Y9"SD
-Y=!x*
-Y=&^*
-Y='s,
-Y=:\*
+Y='x,
+Y=M\*
+Y=`/(
 Y>kX>M
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -15346,6 +15350,7 @@ ZoomForwardBack2D
 ZoomForwardBack3D
 Zpm"U
 [	UoA
+[	V_strtod
 [ 0, 1 ] Value specifying the location along the local x-axis the bend will occur around
 [ 0, 1 ] Value specifying the location on the gradient to pick the color from.
 [ AVH
@@ -15386,7 +15391,6 @@ Zpm"U
 [fA9<
 [fE94
 [fE;A
-\	V_strtod
 \ u&H9
 \$ $?<
 \$ ATAVAWH
@@ -15518,18 +15522,19 @@ Zpm"U
 \$xu3M
 \$xu7H
 \$|E2
+\5|=<
 \?setWidth@QPen@@QEAAXH@Z
 \D$0A
 \D$DH
 \L$HH
 \T$HE
 \t3D8T$(t
+](tKH
 ])6M>&
-]0tRH
+]0tOH
 ]0tTH
 ]>)2X
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
-]@tQH
 ]@tSH
 ]HfD;
 ]HvtC
@@ -15591,6 +15596,7 @@ __vectorcall
 _base
 _cabs
 _class
+_ecw5 n
 _editor
 _editor/next_element_id
 _gUT^
@@ -15627,7 +15633,6 @@ _volumeatlas_
 `A^_[
 `A^_^
 `A^_^][
-`A_A]A\_^][
 `A_A]]
 `A_A^A\_[
 `A_A^A\_^
@@ -15807,6 +15812,7 @@ autoTime
 auto_time
 averageColor
 axisSystem
+b	V_tanf
 b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b?^Cy
 bAccepted
@@ -15919,7 +15925,6 @@ busy_anim
 busy_sequence
 buttons
 by this version of libtiff.
-c	V_tanf
 c [1>H'
 c(>\,
 c0&>`
@@ -16046,6 +16051,7 @@ curve info
 curvetypes
 custom
 custom_colors
+d	V_tanhf
 d"?validate@QDoubleSpinBox@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 d$ D!
 d$ D9d$0|LH
@@ -16101,7 +16107,6 @@ d$hE;
 d$pA;
 d$pE3
 d$pI;
-d$pfD
 d$xE3
 d$xHc
 d$xHcy
@@ -16178,7 +16183,6 @@ dstStride == width
 dummyfilename.tif
 duration
 durationTime
-e	V_tanhf
 e A_A^A]A\_^]
 e A_A^]
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -16450,6 +16454,7 @@ fromAttribute
 fromElement
 fromType.CanConvertTo( toType, pInScope )
 fromType.EqualTo( toType )
+ftg"j
 func_physbox
 function not supported
 functionName
@@ -16469,7 +16474,8 @@ g_pSoundOpSystem->GetFieldTypeSize( SOFTYPE_FLOAT ) == sizeof( float )
 g_pSoundOpSystem->GetFieldTypeSize( SOFTYPE_FLOAT_3 ) == (sizeof( float ) * 3)
 g_pTestScriptMgr
 g_pThreadPool->YieldWait( &m_jobsFinishedEvent, TT_INFINITE, m_bUseCachedWaitSet ? &m_pCachedWaitSet : nullptr )
-g_vLayerHeightRangeOffset%d
+g_vLayerBlendParams1
+g_vLayerHeightRangeOffset1
 ga_frame
 game/
 game:
@@ -16705,7 +16711,6 @@ js_array
 js_object
 js_raw_args
 js_value
-k	=|!
 k VWATAVAWH
 k"?value@QAbstractSlider@@QEBAHXZ
 k$97uB
@@ -16733,6 +16738,7 @@ keyvalues2_v
 l!;b	F
 l"?value@QDoubleSpinBox@@QEBANXZ
 l$ <!u
+l$ ATAVAWH
 l$ AVH
 l$ E3
 l$ HcA
@@ -16753,6 +16759,7 @@ l$ VWAVH
 l$ VWAWH
 l$ VWH
 l$ WATAVH
+l$ WATAWH
 l$ WAVAWH
 l$ WAWH
 l$ WH
@@ -17881,50 +17888,50 @@ n|$`fA
 o H9o
 o KPBf
 o$$fA
-o%/B,
-o%81+
-o%M4+
-o%Q'+
+o%+$+
+o%+9+
+o%9"+
+o%:y+
+o%?.+
+o%D[+
+o%G2,
+o%Jk+
+o%Mo+
+o%mXD
+o%zr+
+o%|E+
+o%~}D
 o,$fD
-o- v+
-o-*y,
-o-77+
-o-=P+
-o-Gu+
-o-R++
-o-V'+
-o-[j+
+o--$+
+o-7|+
+o->"+
+o-?F+
+o-O(+
+o-Si+
+o-ee+
+o-pH/
+o-u[+
+o-w=+
+o-|;,
 o47Lc
-o5 A+
-o5"y,
-o5,y+
-o55-+
-o581+
-o5>P+
-o5@E+
-o5K2,
-o5SA+
-o5UE+
-o5_r/
-o5vZ+
-o5x|+
-o="u+
-o=#S+
-o=)>+
-o=*X+
-o=>y+
-o=I|+
-o=Jb+
-o=M++
-o=Sd/
-o=So+
-o=cmG
-o=fh+
-o=g@+
-o=q;/
-o=u]+
-o=xZ+
-o=}'+
+o5'*+
+o51D+
+o5<r+
+o5OpG
+o5QH+
+o5Ti+
+o5fI/
+o5ooG
+o5x?+
+o=#a+
+o=3pG
+o=>r+
+o=Ng+
+o=Nk+
+o=`Y+
+o=pP+
+o=r1+
+o=~2,
 oAPfD
 oD$ f
 oD$ fA
@@ -18016,6 +18023,7 @@ pA^_]
 pA^_^
 pA^_^[]
 pA^_^][
+pA_A]A\_^][
 pA_A^A\_^[]
 pA_A^A]
 pA_A^A]A\_^[
@@ -18320,6 +18328,7 @@ pulse_save_execution_history
 pulse_save_execution_history_limit
 purecall
 q(u H
+q.#7?
 q0VuH
 qS>g?h3
 qangle
@@ -18415,7 +18424,7 @@ s AWH
 s WATAUAVAWH
 s f9s"~
 s%D;k
-s(H95
+s(H95h<S
 s(H9s
 s(HcO
 s0@8~(t
@@ -18634,6 +18643,7 @@ t"Hc(H
 t#HcD
 t$ A+
 t$ A9G4t	A
+t$ AUAVAWH
 t$ AVAWH
 t$ AVH
 t$ AVL
@@ -18684,6 +18694,7 @@ t$(Ic
 t$(Lc
 t$(f;
 t$(fI
+t$(ff
 t$(u4A
 t$0;o8
 t$0@8
@@ -18919,7 +18930,7 @@ tU;\$0tH
 tVJcD
 tWH9X
 tX~V2
-tY@85
+tY@85j
 tYfff
 t\HcL$`H
 t]H9X
@@ -19300,7 +19311,6 @@ vwrld
 v}`[>
 w H97t
 w"?valueFromText@QDoubleSpinBox@@UEBANAEBVQString@@@Z
-w$^-H
 w(D;\$4
 w+OQvr
 w+r2H;
@@ -19310,7 +19320,6 @@ w4kK0
 w5L9l;XH
 w8H9w
 w8Hc/;
-wWMg9
 waiting_group
 weightweight$0
 weightweight$0Indices
@@ -19508,7 +19517,7 @@ zY;>u:m
 |$8u!
 |$8u)H
 |$8~#H
-|$<;=iM>
+|$<;=
 |$<;{0
 |$@-D
 |$@@8h

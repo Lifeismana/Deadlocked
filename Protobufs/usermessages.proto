@@ -801,4 +801,5 @@ message CUserMessage_PlayResponseConditional {
 	optional string response = 3;
 	optional .CMsgVector ent_origin = 4;
 	optional float pre_delay = 5;
+	optional int32 mix_priority = 6;
 }

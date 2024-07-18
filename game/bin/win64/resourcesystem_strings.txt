@@ -55,7 +55,6 @@
 !IsResourceCurrentlyLoading( hResource )
 !V_stricmp_fast( pResourceName, CResourceNameGetter( hResource ).Get() )
 !V_stricmp_fast( updatedResourceName.GetName(), CResourceNameGetter( hResource ).Get() )
-!ZSOw
 !bLooksLikeABug
 !fnGetResourceManifestCount == !fnGetResourceManifests
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
@@ -78,7 +77,7 @@
 !pRequest->m_bCanceled
 !pToFinalize->BHasExternalWorkPending()
 !value.IsValid()
-$?D85ee	
+$?D85%e	
 %d %d %d
 %d %d %d %d
 %f %f
@@ -93,7 +92,6 @@ $?D85ee
 %sResource System profile stats unavailable. Compile with RESOURCE_SYSTEM_GATHER_STATS as 1 to gather stats.
 &YA1E
 &YA1H
-&a;[Q
 ',=?k
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
@@ -270,6 +268,7 @@ $?D85ee
 0 0 0
 0 0 0 0
 0 0 0 255
+0*Q_1vj
 0A^^]
 0A^_[
 0A^_]
@@ -294,7 +293,7 @@ $?D85ee
 220323000000Z
 220801000000Z
 230714000000Z
-240711145859Z0/
+240718145638Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -310,6 +309,7 @@ $?D85ee
 3>fvw
 3mq+<
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+4jhO.
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
@@ -336,13 +336,11 @@ $?D85ee
 9|$@u
 9|$Hu
 9|$xu
-:9;ME
-:]1)M
+;	V_qsort_s
 ;H9>&X
 ;I9}(tiH
 ;Q|uG
 ;oL|yH
-<	V_qsort_s
 <	u%H
 <	u)Icn
 <	u4H
@@ -462,7 +460,6 @@ $?D85ee
 @.data
 @.reloc
 @84)u
-@85=|
 @8j(t
 @8k(t
 @8o4t
@@ -614,6 +611,7 @@ BenchmarkService001
 BinaryProperties_GetValue
 Blocking Manifest Load
 Bump Extref resource %016llX (file "%s") to %d
+BvwVRQ
 C I!.H
 C0Hc	H
 C:\buildworker\citadel_staging_win64\build\_build_\mathlib\extended\_vpc_mathlib_extended\default\win64\_schema_\release\aabb_h_schema.sc.cc
@@ -1159,8 +1157,8 @@ D$pL;
 D$xH;
 D+G@Hc
 D81uUL9r
+D85}f	
 D8t$ht
-D95/e	
 D9a|u
 D9q|u
 D9r|u
@@ -1228,6 +1226,7 @@ Error saving default keys for ManifestTestResource_t: %s
 Error saving default keys for TestResource_t: %s
 Error saving default keys for VariableInfo_t: %s
 EventSetInformation
+ExV|?
 ExitProcess
 ExternalNameForInternalType
 FATAL ERROR: %s resource '%s' (%016llX) is the wrong resource type! (This is likely caused by a hash collision between the strings '%s' and '%s')
@@ -1417,6 +1416,7 @@ Generic data '%s' missing type key
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCommandLineA
 GetCommandLineW
@@ -1459,7 +1459,7 @@ Gt$8A
 Gt$8H
 Gt$8L
 Gt$8M
-Gt$h@8=[
+Gt$h@8=
 Gt$hL
 G|$8H
 G|$8L
@@ -2042,6 +2042,7 @@ Tried to install two resource managers for the same resource type "%lld"!
 Tried to load resource reference '%s' from a value without a resource reference specific type.
 Tried to release UGC that hasn't been referenced: %lld
 Tuesday
+U	V_stricmp_fast
 UATAUAVAWH
 UATAUAWH
 UATAVH
@@ -2087,7 +2088,6 @@ UseDeferredDeliveryModeForListener
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_stricmp_fast
 V6E>`"(5
 VApplication001
 VAsyncFileSystem2_001
@@ -2174,8 +2174,8 @@ WriteConsoleW
 WriteFile
 X VWAVH
 XA_A^A]A\_^][
-Y,Y0.
 Y9"SD
+ZReX*mf
 Zero refcount resource detected when m_DeletionRequests = 0: '%s'
 [% 5ims alloc] [% 5ims async] [% 5ims final] [% 5i / %10s] %s
 [% 5ims alloc] [% 5ims async] [% 5ims final] [% 5i / %10s] TOTAL
@@ -2214,7 +2214,6 @@ Zero refcount resource detected when m_DeletionRequests = 0: '%s'
 \$`9\$p|LH
 \$pu3H
 ]J<0"0i3
-]nTfC
 _ ;_$t
 _89_D
 _RDATA
@@ -2343,14 +2342,17 @@ destination address required
 device or resource busy
 directory not empty
 double
+dq)e{%,jjfIX
 e0A_A^A]A\]
 ehA_A^A]A\_^[]
 ehandle
 enable_profiling
 entity_name
 executable format error
+e~+:!
 f9)u4H9j
 fB9<A}1L
+fD9-xm
 fD91uTL9r
 fD94H}aD
 fD9t$b
@@ -2434,7 +2436,7 @@ l$@E3
 l$HA_A^A]A\_^
 l$HHcn
 l$H}`f;=
-l$H}`f;=,
+l$H}`f;=\(
 l$PE3
 l$PHc/L
 l$Pff
@@ -2779,8 +2781,7 @@ t4L9:t/H
 t7HcP
 tHI9]
 tRLcY
-tV9-2
-t[D9-
+t[D9-Em
 t_L9>t
 ta91}
 table
@@ -2827,7 +2828,7 @@ vKfffff
 vagrp
 value too large
 vanim
-vanmgrpheconitemvents
+vanmgrpheconitem
 vcdlist
 vcompmat
 vdata
@@ -2839,6 +2840,7 @@ vector4
 vector4d
 ventl
 ventr
+vents
 vgcxdata
 vmesh
 vmorf
@@ -2870,7 +2872,6 @@ www.digicert.com1$0"
 x ATAVAWH
 x AVH
 x#A;Fp}
-x<ls?
 xA_A^A]A\_^][
 y\PD>!
 {0x%x}

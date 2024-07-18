@@ -217,6 +217,9 @@
 		<CitadelHudPersonalBest />
 		<CitadelHudHeroTesting id="hud_hero_testing" />
 		<CitadelHudSandboxTutorial id="hud_sandbox_tutorial" hittest="false" />
+		<Panel id="death_replay_loading">
+			<Label text="Loading death replay" />
+		</Panel>
 		<Label id="clientserver_stats" text="MATCH: {i:match_id}\nCLIENT FPS:{i:client_framerate}   PING: {i:ping}ms\nSERVER CPU: {i:server_frametime_avg_pct}% (peak: {i:server_frametime_max_pct}%)" />
 		<Panel id="mispredict_indicator" />
 		<CitadelHudAbilityResource id="ability_resource" />

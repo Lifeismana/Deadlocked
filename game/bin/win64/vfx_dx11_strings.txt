@@ -190,6 +190,7 @@ $Globals
 'vector'
 'void'
 'volatile'
+(	V_log10f
 ( macroIndex - startIndex ) == CalcNumGlobalMacros( compileTarget )
 (A^^][
 (A_A\_^][
@@ -210,7 +211,6 @@ $Globals
 (t$@f
 (t$PH
 (|$0f
-)	V_log10f
 )>6{1n
 )D$ D
 )l$0H
@@ -293,6 +293,7 @@ $Globals
 *pLookForFileNameDelimiter == '\"'
 *pStartOfFileNameDelimiter == '\"'
 *u+<*u
++	V_log2f
 +C$Hc
 +C$Lc
 +F$Hc
@@ -306,7 +307,6 @@ $Globals
 +f)>0'
 +h->|
 +o'q)}
-,	V_log2f
 , at <EOF>
 , at offset %d
 , near %s
@@ -315,7 +315,7 @@ $Globals
 ,0<	w
 ,T$XH
 ,W5y+
--@%!$
+-	V_logf
 -Stop: 
 -end of input-(
 -memory-
@@ -324,7 +324,6 @@ $Globals
 -sse4
 -unknown source-
 -unknown source-(
-.	V_logf
 .00cfg
 .?AUID3DInclude@@
 .?AVCExpressionParserCallback@@
@@ -410,7 +409,6 @@ $Globals
 0iN>/
 0w0c1
 0}0i1
-1/sv[
 130801120000Z
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
 1:1: Tokens : ( T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | T__118 | T__119 | T__120 | T__121 | T__122 | T__123 | T__124 | T__125 | T__126 | T__127 | T__128 | T__129 | T__130 | CONSTANT_REGISTER | DXC_DESCRIPTOR_SPACE | PACK_OFFSET | VECTOR_TYPE | MATRIX_TYPE | STATIC | ID | INTEGERLITERAL | FLOATLITERAL | STRINGLITERAL | WS | LINE | PRAGMA | UNKNOWN );
@@ -420,7 +418,7 @@ $Globals
 220323000000Z
 220801000000Z
 230714000000Z
-240711145937Z0/
+240718150114Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -463,6 +461,7 @@ $Globals
 8L9l$pt
 8L9|$@t
 8wNHc
+9	V_powf
 9)~P3
 9)~[H
 98t H
@@ -471,7 +470,6 @@ $Globals
 9s ~'
 9sh~G3
 9sh~I3
-:	V_powf
 : lexer error %d :
 ;G(uSL
 ;H9>&X
@@ -496,6 +494,7 @@ $Globals
 =rIQU
 >0<0:
 >Mp$d
+>R\aL9
 >jtm}S
 ?7zQ6$
 ?:kP<
@@ -938,6 +937,7 @@ D$(D;
 D$(H;
 D$(HcD$(
 D$0@8{
+D$0E3
 D$0HcH
 D$4HcD$4
 D$8E3
@@ -1045,6 +1045,7 @@ DstBlendAlpha5
 DstBlendAlpha6
 DstBlendAlpha7
 Dynamic combo %s referenced in expression doesn't exist.
+E	V_sincosf
 E0A9E@
 E0HcH
 E0Lc`
@@ -1075,7 +1076,6 @@ External descriptor set %s redeclared with different bind slots (%d vs %d)
 ExternalDescSet
 ExternalDescriptorSet
 Extraneous token
-F	V_sincosf
 FEATURES
 FLOATLITERAL
 FLOATSUFFIX
@@ -1101,6 +1101,7 @@ FreeEnvironmentStringsW
 FreeLibrary
 Friday
 Function %s() expects %d arguments. Found %d.
+G	V_sinf
 GD$H3
 GL$(D
 GL$8D
@@ -1116,6 +1117,7 @@ Gd$PH
 Gd$`M
 Geometry Shader
 GetACP
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -1145,7 +1147,6 @@ GetStringTypeW
 GetSystemTimeAsFileTime
 Gl$xH
 Gl$xL
-H	V_sinf
 H!D$ I
 H!T$0D
 H-^Eu
@@ -1202,6 +1203,7 @@ HeightCorrection
 HighPrecisionBlendEnable
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
+I9>tO3
 IMAGE_FORMAT_IMC2
 IMAGE_FORMAT_NV12
 IMAGE_FORMAT_R11G11B10_FLOAT
@@ -1244,9 +1246,9 @@ IsGrowable()
 IsProcessorFeaturePresent
 IsValid()
 IsValidCodePage
+J	V_snprintf
 J>@G_
 January
-K	V_snprintf
 K UATAUAVAWI
 K&>.yC
 K0HcQ
@@ -1285,7 +1287,6 @@ L$h+G$3
 L$hMi
 L$pE3
 L$xf;
-L53Ek
 L9#t	H
 L9't	H
 L9c u
@@ -1393,11 +1394,11 @@ Newline in string literal
 No closing */ before end of file
 November
 OCTAL_ESC
-O^-?\
 October
 Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
+P	V_sscanf
 PACK_OFFSET
 PA_A^A]A\_^]
 PAq=?Mp#
@@ -1440,7 +1441,6 @@ PointStream
 Preprocessed HLSL code
 ProcessUvScaleAnnotation
 Pz}b!
-Q	V_sscanf
 QL;PLt
 QueryPerformanceCounter
 R11_EAC
@@ -1619,6 +1619,7 @@ ToolsStallMonitorInternal_EndScope
 TriangleStream
 Tuesday
 Two external descriptor sets have the same slot '%s' and '%s'
+U	V_stricmp_fast
 UAVAWH
 UNICODE_ESC
 UNKNOWN
@@ -1657,7 +1658,6 @@ Unsupported render state type
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_stricmp_fast
 V6E>`"(5
 VAVAWH
 VECTOR_TYPE
@@ -1730,12 +1730,12 @@ Wrong number of args left on stack (%i args, wanted %i)!
 Wrong number of items in value for annotation %s. Ignoring annotation.
 XA;ML|
 XA^A]A\[
+Y	V_strspn
 Y9"SD
 Y>t$7?
 YL$XH
 YT$XH
 Yt$@Hc
-Z	V_strspn
 [AiC@
 [AiCD
 [AiCH
@@ -1891,6 +1891,7 @@ appendstructuredbuffer
 args.Count() > 0
 args[0].type == SHADER_PARAM_TYPE_STRING
 attribute
+b	V_tanf
 bAllocationCanFit
 bad exception
 bindDesc.BindCount == 1
@@ -1901,7 +1902,6 @@ bool4
 bp(=>?g
 buffer
 byteaddressbuffer
-c	V_tanf
 c [1>H'
 c(>\,
 cached_fp == invalid_function_sentinel()
@@ -1925,6 +1925,8 @@ consumestructuredbuffer
 cs_5_0
 cs_6_0
 ctx.m_pVariableIndexToParamIndex[nVarIndex] < ctx.m_nNumAllParams
+d$0x&H
+d$0x*H
 d$HE3
 d$PE3
 d$XL;
@@ -2026,6 +2028,7 @@ intersection
 invalid_parameter
 is also the end of the line, so you must check your lexer rules
 jj@0HK4
+jq)Yz
 k0i0$
 k<u!H
 l$ AVH
@@ -2040,7 +2043,6 @@ l$0fD
 l$8Hc
 l$XL;
 l2|X/gGe
-l\C0,
 layer
 layeroverride
 length
@@ -2199,7 +2201,6 @@ tRLcY
 tSD8;tN3
 tSLc@
 tTD8;tO3
-t]L93tX3
 texture2darrayindex
 texture2dindex
 texture3dindex
@@ -2216,7 +2217,6 @@ typedef uint %s;
 u$D8r(t
 u$D:B
 u%@8j(t
-u)9cG
 u,!T$(H!T$ 
 u0L9t$Pt
 u3HcH<H
@@ -2269,7 +2269,6 @@ x>fff
 y fA;
 y\PD>!
 { u H
-{ZGw(
 {pu	H
 {un'%
 |$ ATAVAWH

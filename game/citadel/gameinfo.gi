@@ -400,13 +400,16 @@
 		
 		// voip
 		"voice_in_process"			            "1"
-		"voice_always_sample_mic"               "1"
+
+		"voice_always_sample_mic"               
+		{
+			"version"	"2"
+			"default"	"0"
+		}
+
 		"reset_voice_on_input_stallout"         "0"
 		"voice_input_stallout"                  "0.5"
 		"cl_usesocketsforloopback" "1"
-		"voice_threshold_attack"				".03"
-		"voice_threshold_delay"					".05"
-		"voice_threshold_hold"					".1"
 
 		// For perf reasons, since we don't use source-based DSP:
 		"disable_source_soundscape_trace"       "1"

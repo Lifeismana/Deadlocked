@@ -353,6 +353,7 @@ $^fE;
 (|$Pf
 (|$`D
 (|$pL
+)	V_log2_uint
 )$$fD
 ),$fD
 )4$fD
@@ -452,7 +453,6 @@ $^fE;
 )|$PK
 )|$`E
 )|B?d!
-*	V_log2_uint
 *;Eot	;Ew
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
@@ -465,6 +465,7 @@ $^fE;
 +f)>0'
 +h->|
 +o'q)}
+,	V_logd
 , channels = 
 , height = 
 ,*/vu
@@ -476,7 +477,7 @@ $^fE;
 ,Icl$
 ,W5y+
 ,X< w
--	V_logd
+-	V_logf
 -BH>t
 -adapter
 -autoconfig
@@ -505,7 +506,6 @@ $^fE;
 -threads
 -tools
 -vulkan
-.	V_logf
 ..om?
 .00cfg
 .>PJ;I:qE>
@@ -670,6 +670,7 @@ $^fE;
 .xdata$x
 /2GG>!B
 />58d%
+/?u|N'
 /TF<)VGy#WH
 0 0 0
 0 0 0 0
@@ -718,12 +719,11 @@ $^fE;
 220323000000Z
 220801000000Z
 230714000000Z
-240711145926Z0/
+240718145640Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2LcJ L
-2dMzTW
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 311109235959Z0b1
@@ -746,6 +746,7 @@ $^fE;
 7&F|If
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powd
 8"3hrf
 80tWD
 8A\_^[
@@ -762,7 +763,8 @@ $^fE;
 8b  16-May-2010
 8ke?;
 8vtext
-9	V_powd
+8|BaR6
+9	V_powf
 9)~P3
 97tmD
 98t H
@@ -791,7 +793,7 @@ $^fE;
 9s|~%H
 9t$Pu	
 9{\~9H
-:	V_powf
+:	V_qsort
 :>)*	v
 :>t6k'
 :ALPHD
@@ -799,7 +801,7 @@ $^fE;
 :VP8 tP
 :VP8LtHD
 :VP8X
-;	V_qsort
+;	V_qsort_s
 ;.u1L
 ;?0123456789:;<=>?
 ;Cxr*H
@@ -810,7 +812,6 @@ $^fE;
 ;L$<|
 ;\$p|
 ;|$8|
-<	V_qsort_s
 <	w	@
 < t=<	t9
 <0:08
@@ -829,7 +830,6 @@ $^fE;
 <unknown multisample type
 <unknown>
 <utK@:
-<|q'9W
 =SPB8u*
 =SPB8ue
 =imb;D
@@ -1264,6 +1264,7 @@ Bogus sampling factors
 Bogus virtual array access
 Borderless Window
 Buffer passed to JPEG library is too small
+B{iTl
 C(D9x<t
 C,D9{(A
 C0@u2H
@@ -1321,15 +1322,15 @@ C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderhardwareconfig
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderstatehelper.h
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\sheetcache.cpp
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(2421):Error loading texture: %s
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3447):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3479):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3499):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3517):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3536):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3557):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3568):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3579):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(2423):Error loading texture: %s
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3449):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3481):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3501):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3519):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3538):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3559):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3570):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3581):ResourceHandleToData( %s ) failed! Falling back to error texture!
 C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.h
 C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
 C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcefile.cpp
@@ -1384,23 +1385,23 @@ CRenderContextEmpty::SetViewports
 CRenderDeviceBase
 CRenderDeviceBase::AcquirePooledDynamicConstantBuffer
 CRenderDeviceBase::AllocatePooledIndexBuffer
-CRenderDeviceBase::AllocatePooledIndexBuffer(3629): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3665): 
-CRenderDeviceBase::AsyncSetTextureData(3284): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3533): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3631): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3667): 
+CRenderDeviceBase::AsyncSetTextureData(3286): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3535): 
 CRenderDeviceBase::CreateConstantBuffer
-CRenderDeviceBase::CreateConstantBuffer(1584): 
+CRenderDeviceBase::CreateConstantBuffer(1586): 
 CRenderDeviceBase::CreateConstantBufferInternal
 CRenderDeviceBase::DestroyConstantBuffer
 CRenderDeviceBase::EnableAsyncPresent
-CRenderDeviceBase::EndRenderDocCapture(3519): 
+CRenderDeviceBase::EndRenderDocCapture(3521): 
 CRenderDeviceBase::FindOrCreateTexture
-CRenderDeviceBase::FindOrCreateTexture(1764): 
+CRenderDeviceBase::FindOrCreateTexture(1766): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
-CRenderDeviceBase::Flush(913): 
-CRenderDeviceBase::ForceFlushGPU(930): 
-CRenderDeviceBase::FreeTextureGPUResources(2076): 
-CRenderDeviceBase::FreeTextureGPUResources(2080): 
+CRenderDeviceBase::Flush(915): 
+CRenderDeviceBase::ForceFlushGPU(932): 
+CRenderDeviceBase::FreeTextureGPUResources(2078): 
+CRenderDeviceBase::FreeTextureGPUResources(2082): 
 CRenderDeviceBase::GetCubemapRadianceSHConstants
 CRenderDeviceBase::GetCubemapRadianceSHConstants::<lambda_1>::operator ()
 CRenderDeviceBase::GetDeviceSpecificBuffer
@@ -1410,11 +1411,11 @@ CRenderDeviceBase::GetDeviceSpecificRayTracePipeline
 CRenderDeviceBase::GetDeviceSpecificTexture
 CRenderDeviceBase::GetSwapChainFromTexture
 CRenderDeviceBase::GetTextureViewIndex
-CRenderDeviceBase::Present(631): 
+CRenderDeviceBase::Present(633): 
 CRenderDeviceBase::ResizeEngineWindow
 CRenderDeviceBase::SetCubemapRadianceSHConstants
 CRenderDeviceBase::SetCubemapRadianceSHConstants::<lambda_1>::operator ()
-CRenderDeviceBase::StartRenderDocCapture(3506): 
+CRenderDeviceBase::StartRenderDocCapture(3508): 
 CRenderDeviceEmpty::DestroyConstantBuffer
 CRenderDeviceEmpty::InitDevice
 CRenderDeviceMgrBase::AddDeviceEventListener
@@ -1434,7 +1435,7 @@ CSOAContainer::SetAttributeType - ERROR, trying to change type of previously-def
 CSchemaType mismatch: meta '
 CSchemaType::AssertEqual
 CSheetDataTextureCache::AllocateAndUploadSequenceData
-CSheetDataTextureCache::AllocateAndUploadSequenceData(356): 
+CSheetDataTextureCache::AllocateAndUploadSequenceData(358): 
 CStrongHandle<struct InfoForResourceTypeCTextureBase>::Shutdown
 CTSFastPushQueue_Base<struct CRenderDeviceBase::FencedWaitingList_t<class CPipelineFence,struct ConstantBuffer_t>,struct CRenderDeviceBase::FencedWaitingList_t<class CPipelineFence,struct ConstantBuffer_t>,struct CRenderDeviceBase::FencedWaitingList_t<class CPipelineFence,struct ConstantBuffer_t>,0,class _CTSFastPushQueue_BlockedPopHandler_SpinWithYield<100> >::Push
 CTSFastPushQueue_Base<struct ConstantBuffer_t,struct ConstantBuffer_t,struct ConstantBuffer_t,0,class _CTSFastPushQueue_BlockedPopHandler_SpinWithYield<100> >::Push
@@ -2051,6 +2052,7 @@ GameResourceServiceServerV001
 GameUIService_001
 Genuu
 GetACP
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -2106,8 +2108,8 @@ H-^Eu
 H3N I
 H4IcH8H
 H9(tO
-H9-		
 H90u'
+H95mP
 H97u+A
 H98t$H
 H9G(t
@@ -2329,6 +2331,7 @@ IsValidIndex(elem) && IndexInRange( elem )
 IsValidIterator( it )
 IsValidLocale
 IsValidLocaleName
+J	V_snprintf
 J%f%f%f%f%f%f%f%f
 J>@G_
 JFIF APP0 marker: version %d.%02d, density %dx%d  %d
@@ -2340,7 +2343,6 @@ JPEG datastream contains no image
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
 JPEGMEM
 January
-K	V_snprintf
 K 9s 
 K H9K0u
 K&>.yC
@@ -2552,7 +2554,6 @@ LogLuvInitState
 LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
-M.od:\
 M8fD;
 M8tEL
 M;P s(I
@@ -2679,6 +2680,7 @@ Output file write error --- out of disk space?
 Overall System GPU memory use:
 Overflow of the sheet cache texture. Releasing and starting over. This is ok in asset browser, not so ok if the game is triggering this!
 Overflow of the sheet cache texture: Try increasing SheetCacheTextureRows in gameinfo.gi (current value %d)!
+P	V_sscanf
 P89P@}M
 P8H=vtex
 P>q_Y~
@@ -2760,7 +2762,6 @@ PropertyEditorSystem_001
 PxHc>E3
 Pz}b!
 P~6-U~/W
-Q	V_sscanf
 Q2XXR
 Q5rHg,>
 QD9Ql
@@ -3131,6 +3132,7 @@ Trying to create a render target with invalid image format %s
 Trying to set dxlevel (%d) which is higher than the card can support (%d)!
 Trying to set dxlevel (%d) which is lower than the card can support (%d)!
 Tuesday
+U	V_stricmp_fast
 U I;U(
 U%	>G
 U7>F%+%
@@ -3197,7 +3199,6 @@ UserSettingsPathID
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_stricmp_fast
 V6E>`"(5
 VATAUAVH
 VAUAVH
@@ -3353,6 +3354,7 @@ ZIPSetupDecode
 ZIPSetupEncode
 ZIPVSetField
 Z\>z8
+Zb:'7
 Zod(^?
 Zpm"U
 [	UoA
@@ -3361,6 +3363,7 @@ Zpm"U
 [D9`luUD9
 [K]taM?
 [aOni*{
+\	V_strtoi64
 \ u&H9
 \$ AVH
 \$ AWH
@@ -3419,7 +3422,6 @@ Zpm"U
 \$pE3
 \$pHc
 \$xu3M
-]	V_strtoi64
 ])6M>&
 ]>)2X
 ]J<0"0i3
@@ -3570,6 +3572,7 @@ connection already in progress
 connection refused
 connection reset
 cross device link
+d Y%\
 d$ D!
 d$ E3
 d$ t>
@@ -4294,7 +4297,7 @@ t;@8w
 t;LcF
 t?HcS
 t@9+u,9s
-t@H953>
+t@H95
 t@McO4
 tBMcW<IcO@Lc
 tEHcR
@@ -4415,7 +4418,6 @@ v I;^8u
 v/D9+
 v0H9{0
 v2!L.2
-v2.}D
 v;A+o
 v=Y]Bv
 v@D8s(t
@@ -4473,7 +4475,6 @@ xSM;H
 xXH;A
 xXM;H
 x^j=|
-x_9&bP
 xlH;{
 xnH;~
 xs == 0
@@ -4574,12 +4575,12 @@ zY;>u:m
 |)L9c
 |Lu?c
 |b=})>
+|f\y[W
 }HfD	
 }LuHO
 }OLcCxL
 ~ $s%r
 ~5LcS
-~6IYi=R
 ~6fE;
 ~II9}
 ~L@8~8u

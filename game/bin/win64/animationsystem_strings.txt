@@ -3,7 +3,6 @@
 																
 																																														
 		%.*s
-		V_frexpf
 	 The lexer was matching from line %d, offset %d, which
 	 This indicates a poorly specified lexer RULE
 	 or unterminated input element such as: "STRING["]
@@ -31,6 +30,7 @@
 	TYPE_BOOL
 	TYPE_ENUM
 	V_fprintf
+	V_frexpf
 	V_isalpha_str_fast
 	V_isdigit_str
 	V_vsnprintf
@@ -46,6 +46,7 @@
 	extension
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
+	g_pThreadPool
 	game_info
 	game_mode
 	game_team
@@ -107,18 +108,16 @@
  (%s%s)
  (08@HPX`hpx
  (08@HPX`j
- (08@HPXbp
+ (08@HPXb
  (08@HPZ
- (08@HRp
+ (08@HR
  (08@J
- (08@Jp
- (0X`hpzp
+ (0X`hpz
  (Start: 
  * %d WeightLists
  * ScaleSet[%d] :: %s
  * WeightList[%d] :: %s
  ... }
- .p%Q
  0"r$4&
  : Extraneous input - expected %s ...
  : Extraneous input - expected <EOF>
@@ -201,7 +200,6 @@
  A__^
  A__^][
  Aconst char *__cdecl Reflection::Internal::GetFuncName<class CEmitTagActionUpdater>(void)
- BPsf
  Base Class Array'
  Base Class Descriptor at (
  Bik_debug_fabrik_backwards_enabled
@@ -218,6 +216,7 @@
  Hc1H
  Hc1L
  Hc2H
+ Hc5o
  Hc9E3
  Hc9H
  Hc9L
@@ -449,6 +448,7 @@ $`<`uMM
 %s %.2f
 %s %.3f
 %s %f %f
+%s %s
 %s (%.2f)
 %s (%.2f, %.2f, %.2f)
 %s (%s)
@@ -486,7 +486,7 @@ $`<`uMM
 ',=?k
 'Play reversed' has no effect when used with time synchronization!
 'p7M}f
-'~{9Uw
+(	V_log10f
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( NmGetMostSignificantBit( flValue ) + 1 ) <= nMaxBitsToUse
@@ -499,33 +499,31 @@ $`<`uMM
 ( ndxKeyData >= 0 ) && ( ndxKeyData < 65536 )
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
-(%-p:
-(%Ap:
-(%J&%
-(%Wp:
+(%'y:
+(%:pJ
+(%_iA
 (%d,%d)
+(%ih0
+(%|	#
 (("**,
 ((6"8(:,<*>
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-#],
-(-'UU
-(-Ii0
-(-I~S
-(-tI?
-(-z}S
+(-&_=
+(-0a=
+(-3a,
+(-A@=
+(-YG=
+(-[Z=
+(-zwQ
 (0`hpx
 (4$Mc
-(5;L-
-(5OL=
-(5]O=
-(5~.=
-(=0L=
-(==cJ
-(=Y#K
-(=\vS
-(=fO=
-(=g@=
+(5J@=
+(5KP-
+(5PG=
+(5dN=
+(=&Y-
+(={4K
 (A]A\^[
 (A]A\_^
 (A^A\
@@ -558,6 +556,7 @@ $`<`uMM
 (A__][
 (A__^[
 (A__^]
+(Additive)
 (Blend1D):m_flBlendValue
 (Blend1D):m_resetCount
 (D$ A
@@ -567,7 +566,7 @@ $`<`uMM
 (D$ f
 (D$ t
 (D$03
-(D$0A;
+(D$0;
 (D$0B
 (D$0D
 (D$0H
@@ -575,14 +574,15 @@ $`<`uMM
 (D$0f
 (D$@A
 (D$@D
-(D$@E
 (D$@H
 (D$@I
 (D$@f
 (D$PD
+(D$PE
 (D$PH
 (D$PL
 (D$Pf
+(D$`A
 (D$`D
 (D$`H
 (D$pA
@@ -600,6 +600,7 @@ $`<`uMM
 (L$ f
 (L$0A
 (L$0D
+(L$0E
 (L$0H
 (L$0I
 (L$0L
@@ -690,6 +691,7 @@ $`<`uMM
 (e@fA
 (end of input).
 (f*^[0
+(f`7Q
 (flStanceCycle <= animCycle.GetValue()) && (animCycle <= flNextStanceCycle)
 (l$ D
 (l$ HcW
@@ -781,7 +783,7 @@ $`<`uMM
 (|$pH
 (|$pI
 (|$pL
-)	V_log10f
+)	V_log2_uint
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
 )<$fD
 )>6{1n
@@ -795,6 +797,7 @@ $`<`uMM
 )D$ J
 )D$ L
 )D$ f
+)D$ fA
 )D$ r	
 )D$03
 )D$0A
@@ -900,7 +903,6 @@ $`<`uMM
 )T$0L
 )T$0f
 )T$0s
-)T$@B
 )T$@E
 )T$@H
 )T$@I
@@ -949,6 +951,7 @@ $`<`uMM
 )l$ t
 )l$0D
 )l$0E
+)l$0L
 )l$@D
 )l$@E
 )l$@L+
@@ -975,6 +978,8 @@ $`<`uMM
 )t$ M
 )t$ f
 )t$ fD
+)t$ fE
+)t$ u
 )t$03
 )t$0A
 )t$0D
@@ -1021,7 +1026,7 @@ $`<`uMM
 )t$pH
 )t$pL
 )t$pM
-)u@t 
+)u`t 
 )|$ A
 )|$ D
 )|$ H
@@ -1036,7 +1041,6 @@ $`<`uMM
 )|$0I
 )|$0L
 )|$0t
-)|$@8
 )|$@A
 )|$@B
 )|$@D
@@ -1064,11 +1068,11 @@ $`<`uMM
 )|$pH
 )|$pL
 )|B?d!
-*	V_log2_uint
 *HcD;LH
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *xNIL
++	V_log2f
 +:HcS
 +Base Pose
 +Bones
@@ -1098,7 +1102,6 @@ $`<`uMM
 +f)>0'
 +h->|
 +o'q)}
-,	V_log2f
 , at <EOF>
 , at offset %d
 , from: 
@@ -1115,8 +1118,8 @@ $`<`uMM
 ,YA1I
 ,d$pfE
 ,j.b0^2`4^6`8^:f<
+-	V_logf
 - Scripted Sequence: 
--*d[?'
 -1 1000
 -BH>t
 -Stop: 
@@ -1129,13 +1132,11 @@ $`<`uMM
 -tools
 -unknown source-
 -unknown source-(
-.	V_logf
 ...<truncated>...
 ..om?
 .00cfg
 .3z u
 .40t8Ic
-.5h_(
 .>PJ;I:qE>
 .?AU?$ArrayWrapper@V?$CUtlVector@UCWeightPreview@@HV?$CUtlMemory@UCWeightPreview@@H@@@@@Detail@Reflection@@
 .?AU?$ArrayWrapper@V?$CUtlVector@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@HV?$CUtlMemory@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@H@@@@@Detail@Reflection@@
@@ -1366,6 +1367,7 @@ $`<`uMM
 .?AV<lambda_1>@?1???$MakeNetVarCallback@VCNetworkedCycle@@M@@YA?AV?$function@$$A6AXAEAVCAnimUpdateContext@@M@Z@std@@V?$CPackedDataOffset@VCNetworkedCycle@@@@P8CNetworkedCycle@@EAAXAEAVCAnimUpdateContext@@M@Z@Z@
 .?AV<lambda_1>@?1???$MakeNetVarCallback@VCSelectorUpdateNode@@E@@YA?AV?$function@$$A6AXAEAVCAnimUpdateContext@@E@Z@std@@PEBVCSelectorUpdateNode@@P83@EBAXAEAVCAnimUpdateContext@@E@Z@Z@
 .?AV<lambda_1>@?1???$MakeNetVarCallback@VCStateMachineUpdateNode@@E@@YA?AV?$function@$$A6AXAEAVCAnimUpdateContext@@E@Z@std@@PEBVCStateMachineUpdateNode@@P83@EBAXAEAVCAnimUpdateContext@@E@Z@Z@
+.?AV<lambda_1>@?CP@??RunGraphUpdate@CAnimUpdateContextBuilder@@QEAAXPEBVCAnimUpdateNodeBase@@PEAVCPoseUpdateResources@@_N2@Z@
 .?AV<lambda_1>@CAnimParameterInstance@@
 .?AV<lambda_1>@CConcreteAnimParameter@@
 .?AV?$CAnimNetVarDataOps@V?$CAnimNetVar@E@@$0DJ@@@
@@ -1753,6 +1755,7 @@ $`<`uMM
 .?AV?$_Func_base@VColor@@PEBVCAnimParameterBase@@@std@@
 .?AV?$_Func_base@VColor@@PEBVCAnimParameterInstance@@@std@@
 .?AV?$_Func_base@VColor@@PEBVCVirtualAnimParameter@@@std@@
+.?AV?$_Func_base@X$$V@std@@
 .?AV?$_Func_base@XAEAVCAnimUpdateContext@@E@std@@
 .?AV?$_Func_base@XAEAVCAnimUpdateContext@@H@std@@
 .?AV?$_Func_base@XAEAVCAnimUpdateContext@@M@std@@
@@ -1789,6 +1792,7 @@ $`<`uMM
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$MakeNetVarCallback@VCNetworkedCycle@@M@@YA?AV?$function@$$A6AXAEAVCAnimUpdateContext@@M@Z@std@@V?$CPackedDataOffset@VCNetworkedCycle@@@@P8CNetworkedCycle@@EAAXAEAVCAnimUpdateContext@@M@Z@Z@XAEAV6@M@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$MakeNetVarCallback@VCSelectorUpdateNode@@E@@YA?AV?$function@$$A6AXAEAVCAnimUpdateContext@@E@Z@std@@PEBVCSelectorUpdateNode@@P84@EBAXAEAVCAnimUpdateContext@@E@Z@Z@XAEAV5@E@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???$MakeNetVarCallback@VCStateMachineUpdateNode@@E@@YA?AV?$function@$$A6AXAEAVCAnimUpdateContext@@E@Z@std@@PEBVCStateMachineUpdateNode@@P84@EBAXAEAVCAnimUpdateContext@@E@Z@Z@XAEAV5@E@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?CP@??RunGraphUpdate@CAnimUpdateContextBuilder@@QEAAXPEBVCAnimUpdateNodeBase@@PEAVCPoseUpdateResources@@_N2@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@CAnimParameterInstance@@VColor@@PEBV2@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@CConcreteAnimParameter@@VColor@@PEBVCAnimParameterBase@@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Mem_fn@P8CActionComponentInstance@@EBAAEBVCUtlString@@XZ@std@@AEBVCUtlString@@PEBVCActionComponentInstance@@@std@@
@@ -2431,6 +2435,7 @@ $`<`uMM
 .?AVIMotionMetricInstance@@
 .?AVIMovementComponentInstance@@
 .?AVIPairedSequenceComponentInstance@@
+.?AVIParallelPoseOperation@@
 .?AVIParamLookupHelper@@
 .?AVIParticleAnimTag@@
 .?AVIPathAnimMotorInstance@@
@@ -2563,16 +2568,13 @@ $`<`uMM
 .xJ>Hf
 .xdata
 .xdata$x
-/%jZ#
+/%"X#
 /2GG>!B
 /3HcC
-/5*'5
-/58;7
-/5;'5
-/5g))
-/5w1+
+/5/%)
+/5w5+
 /6s^M
-/=^ 9
+/=6&9
 />58d%
 /@$s6
 /A8s"
@@ -2598,7 +2600,6 @@ $`<`uMM
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
 08@HR
-08@Jp
 0;O0|
 0><[cZUg^>
 0A\^]
@@ -2669,6 +2670,8 @@ $`<`uMM
 1:1: Tokens : ( T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
 1<.	/>:
 1YA1I
+1vf"m
+2	V_modff
 2$.CGameInfo.CDotaGameInfo.CPlayerInfo
 2).CGameInfo.CDotaGameInfo.CHeroSelectEvent
 210429000000Z
@@ -2676,7 +2679,7 @@ $`<`uMM
 220323000000Z
 220801000000Z
 230714000000Z
-240711150311Z0/
+240718150147Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -2685,7 +2688,6 @@ $`<`uMM
 2_BONE_IK
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
-3	V_modff
 311109235959Z0b1
 3333333
 33333333H+
@@ -2716,6 +2718,7 @@ $`<`uMM
 7YA1A
 7YA1I
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powd
 8/t[H
 80tWD
 8@8t)0u
@@ -2753,12 +2756,12 @@ $`<`uMM
 8_^][
 8emE3
 8ke?;
-9	V_powd
+9	V_powf
 9)~P3
 9)~eH
 9+fIH
 90u(H
-95XK2
+95XT2
 98t H
 98~(H
 98~+H
@@ -2804,7 +2807,6 @@ $`<`uMM
 9_|~;I
 9i(~pH
 9k tJ
-9k ~sH
 9o0~pH
 9o4~?H
 9p@u+
@@ -2848,10 +2850,10 @@ $`<`uMM
 9|$xu
 9}@~&
 9}@~V
-:	V_powf
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 : lexer error %d :
+:!=jv'
 :!D$ 0
 :!D$80
 :!D$@0
@@ -2898,8 +2900,10 @@ $`<`uMM
 :m_hSequence
 :m_resetCount
 :m_resetCycleValue
+;	V_qsort_s
 ;.u1L
-;=Tf1
+;='oR
+;=To1
 ;?0123456789:;<=>?
 ;CX}|H
 ;E,s<H
@@ -2932,7 +2936,6 @@ $`<`uMM
 ;|$\|
 ;|$t|
 ;|$||
-<	V_qsort_s
 <	u%H
 <	u)Icn
 <	u2H
@@ -2950,7 +2953,6 @@ $`<`uMM
 </td<*u
 <0:08
 <0u7A
-<3~uW+L
 <>#n2
 <Ct-<D
 <DOWN>
@@ -3034,6 +3036,7 @@ $`<`uMM
 ??YCUtlString@@QEAAAEAV0@AEBVCBufferString@@@Z
 ??YCUtlString@@QEAAAEAV0@PEBD@Z
 ?@En[vP
+?Abort@CThreadedJob@@QEAA?AW4JobStatus_t@@_N@Z
 ?Acquire@CUtlString@@QEAAXPEAVCBufferString@@_N@Z
 ?AddNullTermination@CUtlBuffer@@IEAAXXZ
 ?AddString@CUtlSymbolTable@@QEAA?AVCUtlSymbol@@PEBDPEA_N@Z
@@ -3056,17 +3059,16 @@ $`<`uMM
 ?E=$% B
 ?EnsureCapacity@CBufferString@@QEAAHHPEAPEAD_N1@Z
 ?EnterScopeInternalBudgetFlags@?$VProfScopeHelper@$0A@$0A@@@SAP6AXXZPEBDAEAUVProfBudgetGroupCallSite@@@Z
+?Execute@CThreadedJob@@QEAA?AW4JobStatus_t@@XZ
 ?ExtractFileBase@CBufferString@@QEAAPEBDPEBD_N@Z
 ?Find@CUtlSymbolTable@@QEBA?AVCUtlSymbol@@PEBD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?Format@CUtlString@@QEAAHPEBDZZ
-?FormatV@CUtlString@@QEAAHPEBDPEAD@Z
 ?Free@CRawAllocator@@SAXW4RawAllocatorType_t@@PEAX_K@Z
 ?FreeInts@CVariableBitStringBase@@AEAAXXZ
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
 ?GetEmptyString@CUtlString@@SAAEBV1@XZ
 ?GetString@CUtlBuffer@@QEAAXPEAVCBufferString@@@Z
-?Goal Position
 ?Hc/+
 ?HcCLH
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
@@ -3100,6 +3102,7 @@ $`<`uMM
 ?SaveKV3@@YA_NAEBUKV3ID_t@@0PEBVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@I@Z
 ?SeekGet@CUtlBuffer@@QEAAXW4SeekType_t@1@H@Z
 ?SeekPut@CUtlBuffer@@QEAAXW4SeekType_t@1@H@Z
+?ServerAuthoritative
 ?Set@CUtlBinaryBlock@@QEAAXPEBXH@Z
 ?Set@CUtlString@@QEAAXPEBD@Z
 ?SetDirect@CUtlString@@QEAAXPEBDH@Z
@@ -3109,6 +3112,7 @@ $`<`uMM
 ?SetLength@CUtlString@@QEAAXH@Z
 ?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?SetSeed@?$CUniformRandomStreamImpl@VCThreadSpinMutex@@@@QEAAXH@Z
+?SlopeData
 ?Split@CSplitString@@AEAAXPEBDHPEAPEBDH_N@Z
 ?TY,>5
 ?ToLowerFast@CBufferString@@QEAAXH@Z
@@ -3124,6 +3128,7 @@ $`<`uMM
 ?kxG2)
 ?m_BindPose
 ?{Q}<
+@	V_roundf
 @ 9B tDA
 @ H;}
 @ HcB
@@ -3136,6 +3141,7 @@ $`<`uMM
 @.reloc
 @08@HPX`hpx
 @0HcB
+@6`	Q
 @8/te3
 @84)u
 @8HcB
@@ -3200,9 +3206,10 @@ $`<`uMM
 @A__^
 @HHcB$;B(u
 @HPX&I
-@HPX`hv
+@HPX`hv@"Q
 @HcAp3
 @L9?t	H
+@NP#Q
 @PHcB(;B,u
 @SATAUAVAWH
 @SATAUAVH
@@ -3303,7 +3310,6 @@ $`<`uMM
 @USVWAUAVH
 @USVWAVAWH
 @USVWAVH
-@USVWAWH
 @USVWH
 @USWATAUAVAWH
 @USWATH
@@ -3379,7 +3385,6 @@ $`<`uMM
 @}QeH
 @}VeH
 @}yeH
-A	V_roundf
 A D	A
 A H+H(H
 A H+H(I
@@ -3469,6 +3474,7 @@ A;^p|
 A;^p}
 A;_ |
 A;_,|
+A;_l|
 A;m(|
 A;n(|
 A;n,|
@@ -3484,7 +3490,6 @@ A;},|
 A;}8|
 A;}P|
 A;}h|
-A;}l|
 A;~ |
 A;~,|
 A;~,}
@@ -3654,7 +3659,6 @@ A]^][
 A]_][
 A]_^[
 A]_^[]
-A]_^][
 A^A\[]
 A^A\^
 A^A\^[
@@ -3710,6 +3714,7 @@ A_A]A\_^]
 A_A][
 A_A][]
 A_A]^
+A_A]^[
 A_A]^[]
 A_A]_
 A_A]_[
@@ -3802,6 +3807,7 @@ AddUInt64
 Adding %d ScaleSets SequenceGroup[%d] :: %s
 Adding %d WeightLists SequenceGroup[%d] :: %s
 Additive
+Additive Blend
 Additive Blend (Masked): %.2f%%
 Additive Blend: %.2f%%
 Adjusted foot position; offset: %.2f
@@ -4421,6 +4427,7 @@ C:\buildworker\citadel_staging_win64\build\src\animgraphlib\binaryupdatenode.cpp
 C:\buildworker\citadel_staging_win64\build\src\animgraphlib\blend2dupdatenode.cpp
 C:\buildworker\citadel_staging_win64\build\src\animgraphlib\blendposeoperation.cpp
 C:\buildworker\citadel_staging_win64\build\src\animgraphlib\blendupdatenode.cpp
+C:\buildworker\citadel_staging_win64\build\src\animgraphlib\bonemaskposeoperation.cpp
 C:\buildworker\citadel_staging_win64\build\src\animgraphlib\bonemaskupdatenode.cpp
 C:\buildworker\citadel_staging_win64\build\src\animgraphlib\choiceupdatenode.cpp
 C:\buildworker\citadel_staging_win64\build\src\animgraphlib\choreoposeoperation.cpp
@@ -5137,6 +5144,7 @@ CBoneConstraintPoseSpaceMorph::KV3TransferLoad_Impl
 CBoneConstraintPoseSpaceMorph::KV3Transfer_DefaultKeys_Impl
 CBoneConstraintPoseSpaceMorph::Schema_VerifyBindingIsRegistered
 CBoneConstraintPoseSpaceMorph::SetRbfType::<lambda_1>::operator ()
+CBoneMaskPoseOperation::PerformMask
 CBoneMaskUpdateNode
 CBoneMaskUpdateNode::GetPoseHandle
 CBoneMaskUpdateNode::KV3TransferLoad_Impl
@@ -5169,6 +5177,7 @@ CBufferString
 CByteswap::SwapBufferToTargetEndian
 CCD didn't find enough joints to rotate.
 CCFollowPathInstanceData
+CCIntAnimParameter
 CCPPScriptComponentUpdater
 CCPPScriptComponentUpdater::KV3TransferLoad_Impl
 CCPPScriptComponentUpdater::KV3Transfer_DefaultKeys_Impl
@@ -5616,7 +5625,6 @@ CInputStreamUpdateNode::KV3TransferLoad_Impl
 CInputStreamUpdateNode::KV3Transfer_DefaultKeys_Impl
 CInputStreamUpdateNode::Schema_VerifyBindingIsRegistered
 CInputStreamUpdateNode::SetTransforms::<lambda_1>::operator ()
-CIntAnimParameter
 CIntAnimParameter::KV3TransferLoad_Impl
 CIntAnimParameter::KV3Transfer_DefaultKeys_Impl
 CIntAnimParameter::Schema_VerifyBindingIsRegistered
@@ -7554,6 +7562,9 @@ CUtlMemory<class CSmartPtr<class CAnimParameterBase,class CRefCountAccessor>,int
 CUtlMemory<class CSmartPtr<class CAnimParameterInstance,class CRefCountAccessor>,int>::Grow
 CUtlMemory<class CSmartPtr<class CAnimParameterInstance,class CRefCountAccessor>,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CSmartPtr<class CAnimParameterInstance,class CRefCountAccessor>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CSmartPtr<class CAnimPose,class CRefCountAccessor>,int>::Grow
+CUtlMemory<class CSmartPtr<class CAnimPose,class CRefCountAccessor>,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CSmartPtr<class CAnimPose,class CRefCountAccessor>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CSmartPtr<class CAnimReplayFrame,class CRefCountAccessor>,int>::Grow
 CUtlMemory<class CSmartPtr<class CAnimReplayFrame,class CRefCountAccessor>,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CSmartPtr<class CAnimReplayFrame,class CRefCountAccessor>,int>::Grow::<lambda_2>::operator ()
@@ -7573,6 +7584,9 @@ CUtlMemory<class CSmartPtr<class CMotionMetricEvaluator,class CRefCountAccessor>
 CUtlMemory<class CSmartPtr<class CMotionMetricInstance,class CRefCountAccessor>,int>::Grow
 CUtlMemory<class CSmartPtr<class CMotionMetricInstance,class CRefCountAccessor>,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CSmartPtr<class CMotionMetricInstance,class CRefCountAccessor>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CSmartPtr<class CThreadedJob,class CRefCountAccessor>,int>::Grow
+CUtlMemory<class CSmartPtr<class CThreadedJob,class CRefCountAccessor>,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CSmartPtr<class CThreadedJob,class CRefCountAccessor>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CSmartPtr<struct Reflection::CTypeFactory<void,class CAnimParameterBase>::CFactoryMaker,class CRefCountAccessor>,int>::Grow
 CUtlMemory<class CSmartPtr<struct Reflection::CTypeFactory<void,class CAnimParameterBase>::CFactoryMaker,class CRefCountAccessor>,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<class CSmartPtr<struct Reflection::CTypeFactory<void,class CAnimParameterBase>::CFactoryMaker,class CRefCountAccessor>,int>::Grow::<lambda_2>::operator ()
@@ -8720,6 +8734,7 @@ D$0}S
 D$2fD
 D$2fE
 D$49C
+D$4A8
 D$4H;
 D$4tG
 D$8!5
@@ -8937,6 +8952,7 @@ D9wt~fM
 D9xhtRH
 D9xhtkH
 D9y ~1H
+D9{ ~sI
 D9|$(u
 D9|$Pu
 D;A }
@@ -8950,6 +8966,7 @@ D;q }pL9T$P
 D;q }uH
 D;q8|
 D;r }
+D;s |
 D;s(|
 D;sHu
 D;v(|
@@ -9073,6 +9090,7 @@ DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
 D|$0H
 E	44H
+E	V_sincosf
 E 8C 
 E @8pHtD9s|~?L
 E D8xKtgA
@@ -9669,7 +9687,7 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 ExternalNameForInternalType
 ExtraSeqFlags
 Extraneous token
-F	V_sincosf
+F	V_sind
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -10002,7 +10020,6 @@ ForwardSpeed
 Found existing value when inserting into dict - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound.
 Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 Found invalid proto option data for: 
-Fr: %.2f
 FreeEnvironmentStringsW
 FreeLibrary
 Frequency
@@ -10014,7 +10031,7 @@ Func( %s )
 Function "%s" takes %i parameters, but %i were given
 Future Facing
 Future Velocity
-G	V_sind
+G	V_sinf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -10100,6 +10117,7 @@ GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
 GetBool
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -10188,6 +10206,7 @@ Global Blend
 GlobalSpace
 GlobalSymbol
 Goal Distance
+Goal Position
 GoalDistance
 GoalPosition
 Graph Writable
@@ -10206,7 +10225,6 @@ G|$(L
 G|$8B
 G|$HA
 G|$HL
-H	V_sinf
 H	p0H
 H 8YKt
 H 8YKt	
@@ -10254,17 +10272,13 @@ H0H9)t
 H0HcGh
 H9(tO
 H9+t	H
-H9-%yU
-H9-@yU
-H9-\xU
 H9/t	H
 H92tBA
-H95R9>
-H95m9>
-H95wJc
+H953A>
 H97u+A
 H98t2
 H9;t	H
+H9=y}d
 H9A s
 H9A u)M
 H9A(u
@@ -10359,6 +10373,7 @@ H;t$h
 H;w r
 H;xXu5
 H;{X~
+H;{pt,H
 H;}0t
 H;~ r
 H@H9u
@@ -10433,7 +10448,6 @@ HcD$03
 HcD$0A
 HcD$0D
 HcD$0H
-HcD$@H
 HcD$D
 HcD$\H
 HcD$xH
@@ -10612,6 +10626,7 @@ HitReactFixedSettings_t::KV3Transfer_DefaultKeys_Impl
 HitReactFixedSettings_t::Schema_VerifyBindingIsRegistered
 HostStateMgr001
 HxH9Jxt
+I	V_sinhf
 I could not work out what I was expecting, like so many of us these days!
 I#I0H
 I#J0H
@@ -10746,6 +10761,7 @@ IcO0H
 IcO8A;	}
 IcOxH
 IcU ;
+IcU(3
 IcU8;
 IcU@I
 IcUP;
@@ -10790,7 +10806,6 @@ Ic_xI
 Icm0L
 Icm@A;mP
 Icn@H
-IcuXA;uh
 IcuhA;ux
 IcvPH
 IdempotencyLevel
@@ -11400,7 +11415,7 @@ IsWriting()
 Iterate
 IterateRandom
 Iw:Hc
-J	V_sinhf
+J	V_snprintf
 J'6E3
 J<L4,&
 J>@G_
@@ -11424,7 +11439,6 @@ JiggleBoneSettings_t::KV3Transfer_DefaultKeys_Impl
 JiggleBoneSettings_t::Schema_VerifyBindingIsRegistered
 JiggleBoneSimSpace
 JumpCorrectionMethod
-K	V_snprintf
 K HcC$Hc
 K$HcC(;
 K&>.yC
@@ -11654,15 +11668,13 @@ L+A0L
 L+H0H
 L+i0I
 L9#u/H
-L9-yG7
+L9-YP7
+L9-tP7
 L92tDA
 L94:H
-L95*w9
-L959Iy
-L95Ew9
-L95WHy
-L95gv9
-L95~dc
+L95)jy
+L95Giy
+L95nG8
 L9;u	H
 L9?t	H
 L9@ s
@@ -11775,7 +11787,6 @@ LcO(H
 LcOHH
 LcQ@H
 LcX,M
-Lcd$0
 Lcg E3
 Lcg@D
 Lch I
@@ -12243,7 +12254,7 @@ Numbers starting with leading zero must be in octal.
 O$M9o
 O0+W8
 O8HcB
-O=Mf1
+O=Mo1
 O@IcZ
 OF>;^
 OH+WP
@@ -12299,12 +12310,13 @@ OutQuart
 OutQuint
 OutSine
 Overlay
+Overlay Blend
 Overlay Blend (Masked): %.2f%%
 Overlay Blend: %.2f%%
 OverlayProjectionDirection
 Override Sound
-P08@Jp
-P6P$Q
+P	V_sscanf
+P08@J
 P>q_Y~
 P@@8|$Pu
 P@HPX`hpx
@@ -12465,6 +12477,7 @@ PreferHighestWeight
 Preview Button
 Previous normal
 Priority
+Prl Eval
 Program has invalid instruction %i
 Program uses more temp variables than are supported. Needs %i, max is %i
 Prop( %s )
@@ -12474,7 +12487,6 @@ Protocol Buffer map usage error:
 Protocol Buffer reflection usage error:
 PxL9`
 Pz}b!
-Q	V_sscanf
 Q0I;Q8t
 Q0LcG
 Q5rHg,>
@@ -12700,7 +12712,6 @@ SUVWATAWH
 SUVWATH
 SUVWAUAVAWH
 SUVWAUAVH
-SUVWAUH
 SUVWAVAW
 SUVWAVAWH
 SUVWAWH
@@ -12709,6 +12720,8 @@ SUWATAUH
 SUWAUH
 SUWAVH
 SVATAVH
+SVAUAVH
+SVAUAWH
 SVAVAWH
 SVAWH
 SVWATAUAVAWH
@@ -12730,8 +12743,7 @@ SWAVAWH
 SWAWH
 SameCycleAsSource
 SameTimeAsSource
-Sample (Additive): %s
-Sample: %s
+Sample
 SampleCode
 SampleCode::KV3TransferLoad_Impl
 SampleCode::KV3Transfer_DefaultKeys_Impl
@@ -13234,7 +13246,6 @@ Sequence out of range: %d
 Sequence( %s, %.3f ) : %.3f
 SerializedEntitiesVersion001
 Server Authoritative
-ServerAuthoritative
 ServerToolsInfo_001
 ServiceDescriptorProto
 ServiceOptions
@@ -13303,7 +13314,6 @@ Slope Normal World Space
 Slope Pitch
 Slope Yaw
 SlopeAngle
-SlopeData
 SlopeHeading
 SlopeNormal
 SlopeNormal_WorldSpace
@@ -13451,7 +13461,6 @@ T$8I+
 T$8I;
 T$8Lc
 T$:f;
-T$@;y
 T$@E3
 T$@H;
 T$@fA
@@ -13520,9 +13529,8 @@ T$xfD;
 T${9C
 T${9G
 T${A9F
-T%et?
 T+(I;
-T-,2A
+T-[&@
 TILT_TWIST
 TNT::Matrix<float>::initialize
 TNT::Vector<float>::initialize
@@ -13587,7 +13595,6 @@ Time Remaining
 Time before the next animation can start
 Time from the end of the mood when an animation cannot play
 Time from the start of the mood before an animation can start
-Time: %.2f%%
 Timed
 TlsAlloc
 TlsFree
@@ -13621,6 +13628,7 @@ Type appears to be in generated pool but wasn't
 Type is already registered: 
 Type of mood
 TypeManager
+U	V_stricmp_fast
 U;A9F
 U;D$hu
 UA>N0Wl
@@ -13761,7 +13769,6 @@ UtlMemory_FailedAllocation
 UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
 UtlTokenizer_UnqescapeOrUnquoteString
 UwHcN$
-V	V_stricmp_fast
 V0H;V8t
 V6'?C
 V6E>`"(5
@@ -13938,9 +13945,12 @@ Virtual Parameter
 VisBuilder_001
 Volume
 Vrad3_001
-W- S"
+W-	Q"
+W5?b'
+W5o`'
 W8IcG(M
 W9QHI
+W=Tr$
 WARNING
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
@@ -13969,7 +13979,6 @@ Waypoint Direction
 Waypoint Distance
 Waypoint Heading
 Waypoint Position
-WbD"v{
 Wd$pA
 Wednesday
 Weight of the animation, higher numbers get picked more
@@ -13998,11 +14007,15 @@ X SUWATAUH
 X UVWATAUAVH
 X!t5~
 X(Hc@ H
-X-O& 
-X-u& 
-X-z6!
-X5R[(
-X5q1+
+X-!6!
+X-)( 
+X-O( 
+X-V$ 
+X-f	!
+X-|$ 
+X5F& 
+X5l& 
+X5q5+
 XA]A\
 XA^A]A\[
 XA^A]_^][
@@ -14031,26 +14044,26 @@ XT.0D
 XT> A
 X_^][
 Xd$ D
+Xf@4Q
 Xt/@A
 Xt7HH
 X|	@A
 Y (Green / Left)
-Y%Jh?
+Y%@d0
+Y%io0
 Y(HcA H
-Y-=Z>
-Y-fXF
-Y-m40
+Y-8W=
+Y-=_>
 Y0HcR
-Y5,G)
-Y5-T'
-Y5M<3
-Y5[ED
-Y5\x3
-Y5]@3
-Y5_C)
-Y5z1+
-Y5{A3
-Y5~?3
+Y5-X'
+Y58OE
+Y5;H3
+Y5<K)
+Y5>F3
+Y5oG)
+Y5wQ3
+Y5z5+
+Y5{TD
 Y9"SD
 Y>kX>M
 YD$0A
@@ -14134,7 +14147,6 @@ Zod(^?
 \$ WATAUAVAWH
 \$ WATAVH
 \$ WH
-\$ fI
 \$$9Y
 \$$H9
 \$$H9Y
@@ -14218,9 +14230,12 @@ Zod(^?
 \$p9]
 \$pH;
 \$pw;
-\5IG)
-\5S_)
-\5|C)
+\-$\<
+\-%J-
+\-56!
+\-c( 
+\5K[)
+\5YK)
 \9\D;
 \A fA
 \D	 fA
@@ -14235,19 +14250,18 @@ Zod(^?
 \y@fE
 \|	@fE
 \|'(H
+]	V_strtok
 ] HcE
 ](IcE L
 ])6M>&
 ]0HcE(H
 ]0tOH
-]5=}0
-]5Ao'
+]5>Y$
 ]>)2X
 ]@tKH
 ]J<0"0i3
 ]`H9u
 ]`HcEXL
-^	V_strtok
 ^ ;^$t
 ^ HcF
 ^ Lc3D;s
@@ -14326,7 +14340,6 @@ _xHc[
 `A_A^_^[
 `A_A^_^]
 `A_^]
-`A__^[]
 `A__^][
 `Hc9L
 `HcA@L
@@ -14471,6 +14484,7 @@ audioreflectivity
 audioroughnessfactor
 audiosounds
 auto_unragdoll_duration
+b	V_tanf
 b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b+GnH
 b?^Cy
@@ -14515,7 +14529,6 @@ break
 broken pipe
 bulletimpact
 bytes
-c	V_tanf
 c HcC8
 c [1>H'
 c(>\,
@@ -14873,6 +14886,7 @@ curvature
 curve_tangent_mode_t
 cycle
 cycleDelta.IsNormalized()
+d	V_tanhf
 d$ D!
 d$ E3
 d$ L9c
@@ -14933,7 +14947,6 @@ d$px)Hc
 d$x@2
 d$xH;
 d$xM;
-d$xt2@
 d' E+
 d0 != 0.0f
 d1 != 0.0f
@@ -14965,7 +14978,6 @@ double
 double_value
 duration
 duration >= 0.f
-e	V_tanhf
 e(A_A^A]A\_^[]
 e+000
 e0A_A^A]A\]
@@ -15010,6 +15022,7 @@ expression
 extend .$0 {
 extendee
 extension_range
+e}%za
 f4MaxDist
 f4MinDist
 f4RelaxationFactor
@@ -15023,6 +15036,7 @@ f9,~u
 f9<H}
 f9<Ju
 f9A&tNf9A$tH
+f9A0H
 f9B$t
 f9B&t
 f9E$t
@@ -15054,7 +15068,6 @@ f;\$L
 f;\$Lr
 f;\$T
 f;\$\
-f@80g
 fA9	t	I
 fA9,Au
 fA99}
@@ -15080,6 +15093,7 @@ fD9 t
 fD9!H
 fD9!u
 fD9$Hu
+fD9%MoR
 fD9'u
 fD9,Au
 fD9,pu
@@ -15134,6 +15148,7 @@ flAnimationForceAttraction
 flAnimationVertexAttraction
 flBlendValue <= 1.f
 flBlendValue >= 0.f
+flBlendWeight == 1.f
 flBlendWeight > 0.0f && flBlendWeight <= 1.0f
 flBlendWeight >= 0.0f && flBlendWeight <= 1.0f
 flCycle <= 1.f
@@ -15323,7 +15338,6 @@ ik_final_fixup_enable
 ik_hinge_debug_bone_index
 ik_planetilt_enable
 ikdata
-ilIcMXI
 illegal byte sequence
 impactHardThreshold
 impactSlotIndex != -1
@@ -15439,6 +15453,7 @@ l$0@2
 l$0D+ D9
 l$0E2
 l$0E3
+l$0H;
 l$0Hc
 l$0Hc)H
 l$0Hc*H
@@ -17099,6 +17114,7 @@ m_pNmGraphTypeManager == nullptr
 m_pNmGraphVariationTypeManager == nullptr
 m_pNmSkeletonTypeManager == nullptr
 m_pParamListUpdater
+m_pPoseUpdateResources->m_parallelOpEvaluationJobs.Count() == 0 && m_pPoseUpdateResources->m_parallelEvaluatedPoses.Count() == 0
 m_pRegionSVM
 m_pRootNode
 m_pSequenceResourceData == nullptr
@@ -17608,6 +17624,7 @@ nIndex >= 0 && nIndex < m_nCount
 nIndex >= 0 && nIndex < m_nCurrStackSize
 nIndex >= 0 && nIndex < m_wayPoints.Count()
 nIndex >= 0 && nIndex < nMemberCount
+nJ\i)A
 nJointCountToRotate >= 0
 nLOD < m_pSkeleton->GetLODCount()
 nLOD >= 0
@@ -17722,24 +17739,31 @@ number
 numframes
 o H9o
 o L9s t
-o%]*Y
-o%nOY
-o%uYY
-o->*Y
-o-OOY
-o-VYY
-o-^+Y
-o-kZY
+o%'^Y
+o%}@Y
+o-	mY
+o-"`Y
+o-^@Y
+o-oeY
+o-voY
+o-~AY
 o0Lcg(I
-o5'HY
-o50OY
-o54JY
-o57YY
-o57ZY
-o=!0Y
-o="RY
-o=aHY
-o=jEY
+o5?@Y
+o5?AY
+o5G^Y
+o5PeY
+o5T`Y
+o5WoY
+o5WpY
+o=!@Y
+o=#AY
+o=&KY
+o=2eY
+o=5mY
+o=9oY
+o=;pY
+o=AFY
+o=BhY
 o@u H
 oI>O7
 objc_class_prefix
@@ -17973,6 +17997,7 @@ qAdjust
 qS>g?h3
 qValue.IsValid()
 qangle
+qlIcMXI
 quaternion
 r	Vr.>T
 r!fff
@@ -18035,6 +18060,7 @@ s H93t	H
 s H9s
 s L9d$@t
 s WATAUAVAWH
+s"V]x
 s"fff
 s%fff
 s(9s8|=H
@@ -18388,7 +18414,6 @@ t-Lck
 t-fff
 t.fff
 t00JcD0(Lk
-t1H9;t,H
 t1H9;t,I
 t4I92u/M
 t5JcT(
@@ -18875,6 +18900,7 @@ zero dir
 |$8H;
 |$8Hc
 |$8Hk
+|$8IcuXA;uh
 |$8L;
 |$8fA
 |$8fD
@@ -18908,6 +18934,7 @@ zero dir
 |$HE3
 |$HE9
 |$HE9g
+|$HE;
 |$HH+
 |$HH;
 |$HHc
@@ -18929,6 +18956,7 @@ zero dir
 |$PIk
 |$PL9|$@t
 |$PL;
+|$PLcp
 |$PMc>A
 |$PMc>A+
 |$Pu!H
@@ -19006,6 +19034,7 @@ zero dir
 }&fff
 }'HcC
 }'fff
+}(;=)}i
 }(H;{(t-H
 }(IcE H
 });C$

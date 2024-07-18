@@ -69,6 +69,30 @@ CitadelHud
 	vertical-align: center;
 }
 
+#death_replay_loading
+{
+	visibility: collapse;
+	vertical-align: center;
+	horizontal-align: center;
+	width: 300px;
+	height: 100px;
+	border-radius: 8px;
+	background-color: #000000dd;
+}
+
+#death_replay_loading.Active
+{
+	visibility: visible;
+}
+
+#death_replay_loading Label
+{
+	vertical-align: center;
+	horizontal-align: center;
+	color: yellow;
+	font-size: 24px;
+}
+
 CitadelHudHeroShop,.joined_team #gameplay_hud.in_item_shop,#gameplay_hud.in_item_shop,.inPostGame.joined_team #gameplay_hud,.wants_scoreboard #context_action_container,.wants_scoreboard #context_action_container.context_action_available
 {
 	visibility: collapse;

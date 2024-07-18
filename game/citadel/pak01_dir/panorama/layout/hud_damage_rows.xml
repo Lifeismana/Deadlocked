@@ -7,12 +7,16 @@
 	<snippets>
 		<snippet name="AbilityDamageBar">
 			<Panel class="AbilityDamageContainer">
-				<Image id="AbilityImage" />
+				<Image id="RowImage" />
 				<Panel class="AbilityDamageBarContainer">
 					<ProgressBarWithMiddle id="DamageRatioProgressBar" class="DamageRatioProgressBar Horizontal" />
-					<Label class="AbilityName" text="{s:damage_name}" />
-					<Label class="DamageValue" text="{d:damage_done}" />
-					<Panel class="killing_blow" />
+					<Label class="DamageValue" text="#Citadel_HUD_DamageRows_DamageValue" />
+					<Panel class="DamageBarInner">
+						<Image id="AbilityImage" />
+						<Label class="AbilityName" text="{s:damage_name}" />
+						<Label class="Hits" text="#Citadel_HUD_DamageRows_Hits" />
+						<Panel class="killing_blow" />
+					</Panel>
 				</Panel>
 			</Panel>
 		</snippet>

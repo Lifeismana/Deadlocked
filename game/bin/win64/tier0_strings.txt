@@ -47,7 +47,6 @@
          Sum (%s)
         Avg Time/Call (%s)
       <+/->ConsoleOnly                      // Enable/disable a flag to send text only to the console.
-    %s %d: proc %d (group %u:%u)
     -press "Broadcast Minidump"
     -type up a short description of what you were doing
     Max committed memory: %u KB out of %d KB
@@ -64,10 +63,7 @@
    - %s
    Avg Time/Frame (%s)
   !!""##$$$$%%%%&&&&&&&&''''''''(((((((((((((((())))))))))))))))********************************
-  %02d: %u:0x%llx
-  %2u - proc %2u (grp %u:%-2u / phy %u / cor %u / smt %u): max freq %llu
   %52.52s%12d%12.3f%12.3f%7.2f%12.3f%7.2f%12.3f%12.3f%12.3f%12.3f
-  %s slot %d combined mask %u:0x%llx
   ---------- ------------  
   ------------ ----------  
   ------------ ------------  
@@ -84,10 +80,11 @@
  "%s"
  #%&(38:HJLPSUVXZ\^`cefksx}
  $V{Q
- %%%d.%ds 
+ %%-%d.%ds 
  %41g
  'L>[
  ( def. "%s" )
+ (%i core%s
  (%s%s)
  (%s: 
  (Administrator User)
@@ -102,6 +99,7 @@
  + light verifier
  + mem init
  + stackstats
+ - %uP/%uE
  - SymFindFileInPath failed
  - SymFindFileInPath_ returned %s
  - context match
@@ -168,7 +166,6 @@
  Hc)H
  Hc1H
  Hc1L
- Hc=Jf"
  HcA8H
  Hcqx
  Lc)H
@@ -261,11 +258,12 @@
 "[BINARY BLOB]"
 "[EHANDLE]"
 "[POINTER]"
-"aos{
 "e?<<<<<<l?
 "f^n[
 "name" of the file referenced by the symbolic link named /etc/malloc.conf
 "pA3Q
+"pA3Q`*4
+"vQ[JO8
 #%llu
 #4o>w
 #D$8H
@@ -279,6 +277,7 @@
 #int#
 #j<P/Y
 #t'fA
+#vpulse3
 $<1mm
 $A;\$
 $E+O0I
@@ -312,7 +311,6 @@ $~DE3
 %14.3f %12.2f
 %14s %10s
 %2d.A
-%3d - grp %u:%u / phy %d / cor %d / smt %d, max freq %llu
 %3d: <unknown relationship %d>
 %3d: Cache - group %u, mask 0x%llx
 %3d: Cache - mask 0x%llx
@@ -376,12 +374,12 @@ $~DE3
 %s not expected here.  Missing ':'?
 %s not expected here; expected string for key name or '}'
 %s not expected here; missing value?
-%s test: multithread interleaved push/pop, %s
-%s test: multithread push, multithread pop, %s
-%s test: multithread push, sequential pop, %s
-%s test: multithread push, single thread pop, %s
-%s test: sequential push, multithread pop, %s
-%s test: single thread push, multithread pop, %s
+%s test: multithread interleaved push/pop, no affinity...
+%s test: multithread push, multithread pop, no affinity...
+%s test: multithread push, sequential pop, no affinity...
+%s test: multithread push, single thread pop, no affinity...
+%s test: sequential push, multithread pop, no affinity...
+%s test: single thread push, multithread pop, no affinity...
 %s test: single thread push/pop, in order... 
 %s test: single thread push/pop, interleaved... 
 %s total bytes in user-space regions (%s bytes in kernel-space regions)
@@ -400,7 +398,9 @@ $~DE3
 %s: Invalid capacity %u
 %s: Invalid grow amount %d
 %s: Invalid lock state %d
+%s: Perf set logical CPUs cross %u groups, missing SetThreadSelectedCpuSetMasks so no affinity can be set
 %s: Start
+%s: Unable to find any logical processors to affinitize to
 %s: Unable to get executable filename (%d byte buffer).
 %s: Unable to load SDL
 %s: Unable to progress %d jobs to finished state (%llums elapsed)
@@ -432,6 +432,7 @@ $~DE3
 %s: invalid request, not in allocator
 %s: invalid string pointer (string chars %d)
 %s: out of memory, falling back to regular allocators
+%s: please provide a thread pool name
 %s: requested conversion of %d chars
 %s: string format requested %d chars
 %s: string length overflows (is %d, adding %d)
@@ -446,6 +447,7 @@ $~DE3
 %s_%s
 %s_singleton_mutex
 %u - %u
+%u CPU%s
 %u MB address space used assuming maximum PageHeap overhead.
 %u MB allocated.
 %u MB memory used assuming maximum PageHeap overhead.
@@ -453,7 +455,7 @@ $~DE3
 %u outstanding allocations (%d delta).
 %u(%f):  
 %u_%u_%u
-%vmdlkeys0
+%vmdlkeys1
 &	$@06p
 &#%u;
 &?PPPPPPP?
@@ -574,9 +576,9 @@ $~DE3
 &yacute;
 &yen;
 &yuml;
-' HQ4
 '":|;
 ',=?k
+'65diS
 ':' not expected inside an array.  ('[]' used when '{}' was intended?)
 ';>NO
 'HcD$8
@@ -622,7 +624,6 @@ $~DE3
 ( uintptr_t( m_p8ByteValues ) % sizeof( double ) ) == 0
 ( uintptr_t( m_p8ByteValues ) % sizeof( float64 ) ) == 0
 ( uintptr_t( pSrcData ) % 8 ) == 0
-(%d,%d)
 (%f) 
 (((uintp)pNew & 0x3) == 0)
 ((IAssertionFailureListener_Tier0Manipulator *)pListener)->GetRegisteredVar()
@@ -631,6 +632,7 @@ $~DE3
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (++pFiber->m_nRefCount) == (1)
+(-AVX) 
 (;l$Tv@A
 (;l$Xr
 (;{0u
@@ -667,9 +669,9 @@ $~DE3
 (D$PL
 (D$Pf
 (D$`H
+(D85Z
 (GetChar()) == (0)
-(H9-s
-(H95/
+(H95?
 (H;D$Xr
 (Ic~ L
 (L$ H
@@ -767,8 +769,10 @@ $~DE3
 (|$`I
 (|$pD
 )	%)t
-) %%-%d.%ds 
+) %%%d.%ds 
 )/o>	
+)05	P
+)05	`
 )147:;=IJ]
 )14:;EFIJ^de
 )14:EFIJNOde\
@@ -918,6 +922,12 @@ $~DE3
 +tPOu
 +{$Hc
 +~xY6
+,  Features: 
+, %uP/%uE cores
+, Frequency: %.01f %s
+, SMT/HT index %d
+, efficiency class %lld
+, max frequency %.01f %s
 ,!MbDg[
 ,#Hc}p;
 ,%03d
@@ -929,7 +939,6 @@ $~DE3
 ,0<	w&H
 ,0<	wGH
 ,3Ic\$pA;
-,6{&N
 ,D$Hf
 ,HR><y5
 ,HR>O
@@ -983,7 +992,6 @@ $~DE3
 -debug_exitprocess
 -debugbreak
 -dedicated
--disable_affinity_preferences
 -disable_minidump_log
 -disable_stall_monitor
 -emaildumps
@@ -993,7 +1001,6 @@ $~DE3
 -enable_minidump_log
 -error
 -etwprofile
--fake_mixed_cpu_mode
 -force_assert_full_dialog
 -force_assert_sdl_dialog
 -force_battery_level
@@ -1314,6 +1321,7 @@ $~DE3
 /CPr*
 /EPr1A
 /FPr,A8n0u&IcN A;N
+/Xo0l
 /YA1H
 /YA1I
 /_&./
@@ -1455,7 +1463,7 @@ $~DE3
 220323000000Z
 220801000000Z
 230714000000Z
-240711145548Z0/
+240718145225Z0/
 241009235959Z0a1
 29C }
 2;L$Hr"
@@ -1559,6 +1567,7 @@ $~DE3
 8A_A]A\_^[
 8A_A]][
 8A_A]_[
+8A_A^A\_][
 8A_A^A]A\^[
 8A_A^A]A\_^][
 8A_A^_]
@@ -1593,7 +1602,6 @@ $~DE3
 8\$`tE
 8_^][
 8_u	H
-8d*S*N
 8fA9T
 8fD9D
 8jthfA
@@ -1607,7 +1615,9 @@ $~DE3
 9#ueH
 9)~P3
 9+}|I9.tw
-9-;22
+9-+92
+9-G#&
+9-y72
 91~33
 93t>H
 96ID3
@@ -1673,6 +1683,7 @@ $~DE3
 9|$h}
 9|$xtD
 9~IE3
+: proc group %u:%u, physical ID %d, core ID %d
 :(uJH
 :/t<I
 :0ueI
@@ -1690,24 +1701,23 @@ $~DE3
 :LZSSu
 :R;uD
 :[ugH
+:`A@+4
 :u A8N
 :u(f9Q
 :~dm1	
 ;.t A
 ;.u1L
-;5D':
-;=(9'
-;=3v(
-;=4-'
-;=te&
-;=uh!
-;=yu(
+;=#{(
+;=Es!
+;=G"'
+;=h3#
+;=iz(
+;=w1'
 ;A rg
 ;A8t^
 ;A8u	H
 ;B8tb
 ;BIb?
-;C&(hX
 ;C8u	
 ;C8u-
 ;C8u.
@@ -1771,7 +1781,6 @@ $~DE3
 <	wyE3
 < t=<	t9
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
-<!-- schema 
 <"t	< r
 <"t&I
 <$!t_
@@ -1893,7 +1902,6 @@ $~DE3
 <parse error>
 <pointer>
 <pre>
-<qiB1d.
 <stdin>
 <stdout>
 <string>
@@ -1911,6 +1919,7 @@ $~DE3
 = {[8V
 =%H5<mN
 =->!Q
+=3X%4
 =9tau
 =========================================================================================
 ==MQ?
@@ -2326,6 +2335,7 @@ $~DE3
 ?BuildMidpointFromVertexSubSet@CVertexKDTree@@QEAAXPEBMHPEBHH@Z
 ?BuildNode@CVertexKDTree@@AEAAHHH@Z
 ?C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\bitbuf.cpp
+?CXc4
 ?CalcBudgetGroupTimes_Recursive@CVProfile@@QEAAXPEAVCVProfNode@@PEAIHM@Z
 ?CalcStackDepth@CThread@@QEAA_KPEAX@Z
 ?Capture@CCallStackCapture@@QEAAXP6AHIPEAPEAXHH@ZII@Z
@@ -2638,6 +2648,7 @@ $~DE3
 ?GetDelimiter@CUtlCharConversion@@QEBAPEBDXZ
 ?GetDelimiterLength@CUtlCharConversion@@QEBAHXZ
 ?GetDepth@CThreadMutex@@QEBAHXZ
+?GetDescription@CPUInformation@@QEBAPEBDPEAVCBufferString@@I@Z
 ?GetElements@CUtlSymbolTable@@QEBAHHHPEAVCUtlSymbol@@@Z
 ?GetEmptyString@CUtlString@@SAAEBV1@XZ
 ?GetEndPointer@CMiniDumpComment@@QEBAPEBDXZ
@@ -3488,9 +3499,6 @@ $~DE3
 @8,3u
 @8,7u
 @8,>u
-@8-!S(
-@8-1f(
-@8-aY(
 @8/t|D
 @8/uJ
 @83tSD
@@ -3500,11 +3508,11 @@ $~DE3
 @84+u
 @84/u
 @848u
-@85dd&
+@85;&
 @8:tyD
 @8;t7I
 @8<(u
-@8=qD9
+@8=t+-
 @8i(u
 @8i(u:
 @8j(t
@@ -3512,7 +3520,7 @@ $~DE3
 @8kIt
 @8l$H
 @8l$Pu<
-@8oIumH9-.
+@8oIumH9->o(
 @8q un
 @8q2u}H
 @8q<uuH
@@ -3589,7 +3597,6 @@ $~DE3
 @C#e<X
 @C#e<\
 @D9g8|>H
-@H95[+'
 @H;C s
 @HcC(H
 @OQ]=
@@ -3705,6 +3712,7 @@ $~DE3
 @UVATAUAVH
 @UVATAUAWH
 @UVATAVH
+@UVAUH
 @UVAVH
 @UVAWH
 @UVWATAUAVAWH
@@ -3907,6 +3915,7 @@ ATTEMPTED TO DECOMMIT OWNED MEMORY STACK SPACE
 AUAVAWH
 AUAWH
 AUUUUUU
+AVX2 
 AWAVAUATWVUSH
 A\A]A^A_[^_]
 A\^][
@@ -3916,6 +3925,7 @@ A\_^[]
 A\_^][
 A]A\[
 A]A\[]
+A]A\]
 A]A\_]
 A]A\_^
 A]A\_^[]
@@ -3950,6 +3960,7 @@ A^A]_^
 A^A]_^[]
 A^A]_^]
 A^^[]
+A^^][
 A^_[]
 A^_^[
 A^_^[]
@@ -4014,6 +4025,7 @@ A_A^A]_[
 A_A^A]_[]
 A_A^A]_]
 A_A^A]_^
+A_A^A]_^[
 A_A^A]_^[]
 A_A^A]_^][
 A_A^[
@@ -4044,15 +4056,6 @@ AcquireSRWLockExclusive
 AddLayer
 AddVectoredExceptionHandler
 Address range refers to non-existent CU at 0x%llx
-Affinity preferences: %d logical processors, limiting to %d
-Affinity preferences: %d speeds, preference split at sort index %d
-Affinity preferences: disabled (%u physical procs, %u logical)
-Affinity preferences: explicitly disabled
-Affinity preferences: no logical processor speed variation
-Affinity preferences: no logical processor split fit
-Affinity preferences: no per-logical-processor information
-Affinity preferences: only one logical processor
-Affinity preferences: turned off for internal reason
 Alert
 Align
 AlignValue( m_pFirstBlock->m_nBytesFree, 16 ) == m_pFirstBlock->m_nBytesFree
@@ -4274,9 +4277,9 @@ C,9sXu
 C,u	E3
 C0@8kH
 C0Hc	H
+C5KQ<
+C5MQ<
 C5R?	
-C5kA<
-C5mA<
 C8,4u
 C847u
 C8;C(u3
@@ -4996,6 +4999,7 @@ CLoggingSystem::SetChannelIndent
 CLookAtAnimNode
 CLookComponent
 CLookComponentUpdater
+CMOV 
 CMemAllocSystemInitialize
 CMemoryStack %s in %s
 CMemoryStack %s ran out of reserved memory (%u/%ukb committed) when attempting to commit %ukb additional
@@ -5159,7 +5163,6 @@ COrderedConstructor_DependencyManagement<void>::InternalLock
 COrderedConstructor_DependencyManagement<void>::Release
 CPH9C`
 CPL;C(r&
-CPU information: physical %u, logical %u (fake mode %u)
 CPageAllocator::AllocUnlocked
 CPageAllocator::FreeUnlocked
 CPageAllocator::GetAllocBytes
@@ -5370,6 +5373,7 @@ CThreadNullVerificationMutex::Lock
 CThreadNullVerificationMutex::Unlock
 CThreadPool::QueueMultipleAndWait
 CThreadPool::ResumeExecution
+CThreadPool::Start
 CThreadPool::Start called and it was already initialized.
 CThreadPool::Stop
 CThreadPool::SuspendExecution
@@ -5714,6 +5718,8 @@ CUtlMemory<struct UtlRBTreeNode_t<void *,int>,int>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<void *,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct VProfDataReportItem_t,int>::Grow
 CUtlMemory<struct VProfDataReportItem_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct _GROUP_AFFINITY,int>::Grow
+CUtlMemory<struct _GROUP_AFFINITY,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct _IMAGE_SECTION_HEADER,int>::Grow
 CUtlMemory<struct _IMAGE_SECTION_HEADER,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct _IMAGE_SECTION_HEADER,int>::Grow::<lambda_2>::operator ()
@@ -6095,7 +6101,6 @@ CoTaskMemFree
 CoTaskMemRealloc
 CoUninitialize
 Code Assertion Failed
-CollectProcessorRangeMasks
 Color
 Color has extra '%s' after values
 Color(r=%d, g=%d, b=%d)
@@ -6114,7 +6119,6 @@ Compilation units ran off the end of .debug_info
 Compressed entry encoding index out of range (%u)
 Compressed entry table is not sorted
 Compression unsupported for format %u
-ComputeAffinityPreferenceSlots
 ConCommand %s has conflicting command completion callbacks!
 ConCommandRef::GetInfo
 ConCommand_PrintDescription
@@ -6468,6 +6472,7 @@ D$PL;
 D$PVBKV
 D$P\L
 D$Pf;
+D$PfA9D
 D$PfD
 D$PfH
 D$Pfff
@@ -6478,6 +6483,7 @@ D$TA+
 D$TA;
 D$TE3
 D$TI;t$
+D$TfA
 D$XD;l$0
 D$XE+
 D$XE3
@@ -6615,11 +6621,12 @@ D8,.u
 D8,8u
 D8,:u
 D8,;u
-D8->^-
-D8-Dd-
-D8-Hf-
-D8-{b-
-D8-}c-
+D8-,}2
+D8-=c-
+D8-Ci-
+D8-Gk-
+D8-zg-
+D8-|h-
 D8.ui;
 D80fH
 D80t0@2
@@ -6627,14 +6634,15 @@ D81uUL9r
 D84/u
 D840u
 D84:u
-D85{72
+D85L	2
+D85q',
+D85zx"
 D8;tlL
 D8<.u
 D8<0u
 D8<1u
 D8<2u
 D8<>u
-D8=\")
 D8?tp
 D8?t|E
 D8L$0u`
@@ -6662,8 +6670,6 @@ D8{Hu
 D8|$`t
 D8}/t
 D8}?t	H
-D9%4G
-D9%JE
 D9+u>H
 D93tjH
 D93}mL
@@ -6671,7 +6677,7 @@ D941L
 D942H
 D949L
 D9<1H
-D9=^U
+D9=.`
 D9D$Pw
 D9Gd~/A
 D9L$Pv
@@ -6887,7 +6893,6 @@ E>nEA
 E?*9N
 E@y=TVH
 EH*?H
-EHI9t
 EHLEpBD
 EHRSDSD
 EL$0H
@@ -6999,6 +7004,7 @@ F H9F
 F(I;D$
 F(L9c
 F(fA;
+F/M/S %u/%u/%u 
 F/fA;
 F0I;D$
 F0Lc L
@@ -7028,6 +7034,7 @@ FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to create temp directory under '%s'
 FATAL ERROR: unable to create temp file under '%s'
 FATAL: %s called on a pool context (no root available)
+FCMOV 
 FCVAR_ARCHIVE
 FCVAR_CHEAT
 FCVAR_DONTRECORD
@@ -7076,6 +7083,7 @@ Fill result "%s"
 Filling szExecutableImageFileOut
 Filling szSymbolFileOut
 Final compact unwind index entry is not a last-address marker
+FinalizeCPUInformation
 Find concommands by flags.
 Find concommands with the specified string in their name/help text.
 Find help about a convar/concommand.
@@ -7235,6 +7243,7 @@ GetBaseFileInfo
 GetBasicType() == KV3_BTYPE_TABLE
 GetBasicTypeForBinaryType
 GetBinaryTypeForKV3
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUFrequencyResults
 GetCPUInformation
@@ -7307,7 +7316,6 @@ GetNameFromOSType
 GetOEMCP
 GetObjectA
 GetPerfSortedLogicalProcessors
-GetPerformanceAndEfficiencyCoreCount
 GetPlatformName
 GetPriorityClass
 GetProcAddress
@@ -7350,7 +7358,6 @@ GetTypeInfo( nType ).m_nSizeInBytes <= sizeof( s_pUndefinedValue )
 GetUserDefaultLCID
 GetUserDefaultLocaleName
 GetUserNameA
-GetVendorRecommendedThreadPoolCountIncludingMainThread
 GetWin32ConsoleCursorColumnIndex
 GetWindowLongA
 GetWindowLongPtrA
@@ -7398,10 +7405,11 @@ H!T$0D
 H#D$0H
 H#D$PH
 H#T$ 
+H'Xd4
 H(VVH
 H)C`D
 H*0"ZOW
-H+5uh
+H+5Es
 H+BhH
 H+BhI
 H+ChH
@@ -7427,26 +7435,22 @@ H3L$H
 H3L$HH3
 H3l$hH3
 H9(tO
-H9-8+'
-H9-TW9
-H9-[/2
-H9-eV9
-H9-s	5
+H9-K62
+H9-x92
 H9.ub
 H9/uMH
 H90t]
-H95BI(
+H95rR(
 H97u+A
 H98t2
 H98tCH
 H98t^
 H98ta
 H99tKH
-H9=)z(
-H9=3'*
-H9=4F=
-H9=Ss)
-H9=jD9
+H9=#,*
+H9=9c(
+H9=Cx)
+H9=D6=
 H9>u+H
 H9A u
 H9BHtW
@@ -7579,7 +7583,6 @@ HA_A]A\[
 HA_A]A\]
 HA_A]][
 HA_A^
-HA_A^A\_][
 HA_A^A]A\_^][
 HA_A^_]
 HA_A^_^][
@@ -7595,20 +7598,20 @@ HFfD;
 HH:MM:SS.z
 HH:mm:ss
 HIGHDPI
-HJi~Z
 H[><y5
 H_^][
 HammerMapLoader001
 HandleAsStringFailure
 HasExpandedResources
 Hc+;k
+Hc-GL
 Hc3;s
-Hc5Dw5
+Hc5X~5
 Hc7;w
 Hc;9E0t
 Hc<8H
-Hc=%^'
-Hc=]&#
+Hc=11#
+Hc=s0(
 Hc>;~
 Hc?A;
 HcAdL
@@ -7912,7 +7915,8 @@ ISolveIKChainAnimNode
 ISubGraphAnimNode
 ISubGraphManager
 ITALIAN
-I\zH6
+I\zH60
+I\zH6`
 Ic6A;v
 Ic<$A;|$
 Ic<$I
@@ -8494,20 +8498,18 @@ L9	t(
 L9	t5
 L9#t!H
 L9#u+H
-L9%G:'
-L9%h7'
-L9-.\+
+L9-wH'
 L940u)H
-L95"b5
-L95$V9
-L953$7
-L954>)
-L95I3(
-L95W@(
+L9598(
+L95C+7
+L95GE(
+L95Qf5
+L95Tf9
+L95q((
+L95xq+
 L9<*u
-L9=S0'
-L9=fH'
-L9=s.'
+L9=35'
+L9=S3'
 L9@ s
 L9B8u
 L9Cpu7H
@@ -8536,7 +8538,8 @@ L9wxt
 L9|$xD
 L9~(u^
 L:TLcD:XI
-L;=LY'
+L;5ga"
+L;5h!"
 L;@ A
 L;@ v
 L;B r
@@ -9023,7 +9026,6 @@ P I;Q I
 P I;S I
 P Lcs
 P(H9t$@u
-P(YX0
 P(tOL
 P0HcK
 P0L9sh
@@ -9104,6 +9106,7 @@ PA__]
 PA__]I
 PA__^
 PAq=?Mp#
+PCLMULQDQ 
 PER_USER
 PF_BIAS_TYPE_EXPONENTIAL
 PF_BIAS_TYPE_STANDARD
@@ -9126,7 +9129,7 @@ PF_TYPE_PARTICLE_SPEED
 PF_TYPE_RANDOM_BIASED
 PF_TYPE_RANDOM_UNIFORM
 PH;|$H
-PHc=J
+PHc=~
 PM_TYPE_CONTROL_POINT
 POLISH
 PORTUGUESE
@@ -9522,6 +9525,8 @@ QueueUserAPC
 R H;S I
 R1h58
 RD?4KF?=GH?9FJ?8HL?
+RDTSC 
+RDTSCP 
 RELEASE
 REPLICATED
 RPCRT4.dll
@@ -9726,15 +9731,14 @@ SDL_GetGlobalMouseState
 SDL_GetGrabbedWindow
 SDL_GetHaptics
 SDL_GetHint
-SDL_GetJoystickInstanceID
 SDL_GetKeyFromScancode
 SDL_GetKeyName
 SDL_GetKeyboardFocus
 SDL_GetKeyboardState
 SDL_GetModState
 SDL_GetNumberProperty
+SDL_GetPointerProperty
 SDL_GetPowerInfo
-SDL_GetProperty
 SDL_GetPropertyType
 SDL_GetRelativeMouseMode
 SDL_GetScancodeFromKey
@@ -9785,7 +9789,7 @@ SDL_SetClipboardText failed: %s
 SDL_SetCursor
 SDL_SetHint
 SDL_SetNumberProperty
-SDL_SetProperty
+SDL_SetPointerProperty
 SDL_SetRelativeMouseMode
 SDL_SetStringProperty
 SDL_SetTextInputArea
@@ -9855,6 +9859,9 @@ SRCSRV: source files ---------------------------------------
 SRCSRV: variables ------------------------------------------
 SRCSRVCMD=%P4_extract_cmd%
 SRCSRVTRG=%P4_extract_target%
+SSE2 
+SSE4.1 
+SSE4.2 
 SSRVOPT_DWORDPTR match
 SSRVOPT_GUIDPTR match
 STATETAGBEHAVIOR_ACTIVE_WHILE_CURRENT
@@ -9866,7 +9873,6 @@ STMID_WINDOWS_PDB70_GUID
 STRING
 STUB_GetStatStructName
 SUATH
-SUAUAVH
 SUAUAWH
 SUAUH
 SUAVAWH
@@ -9879,6 +9885,7 @@ SUVATAUAVAWH
 SUVATH
 SUVAUAVH
 SUVAUAWH
+SUVAVH
 SUVWATAUAVAW
 SUVWATAUAVAWH
 SUVWATAUAWH
@@ -9903,6 +9910,7 @@ SVAWH
 SVWATAUAVAWH
 SVWATAUAVH
 SVWATAUAWH
+SVWAUAVAWH
 SVWAVAWH
 SVWAVAWL
 SVWAVH
@@ -9985,7 +9993,6 @@ SetFloatInputMap_RemapPowerCurve
 SetForegroundWindow
 SetInformationJobObject
 SetLastError
-SetNoAffinityPrefs
 SetOptions
 SetPriorityClass
 SetProcessAffinityMask
@@ -9997,7 +10004,9 @@ SetStdHandle
 SetTextColor
 SetThreadAffinityMask
 SetThreadDescription
+SetThreadGroupAffinity
 SetThreadPriority
+SetThreadSelectedCpuSetMasks
 SetThreadedLoadLibraryFunc
 SetTimer
 SetUnhandledExceptionFilter
@@ -10331,7 +10340,6 @@ TerminateProcess
 TerminateThread
 Test bucket %d has an invalid value %d
 Test failure
-TestAffinityPreferenceSlotInfo
 TestFormatA
 TestFormatB
 TestFormatC
@@ -10407,10 +10415,7 @@ ThreadMultiWaitObjectSetGetCount( pWaitSet ) == nWaitItems
 ThreadNanoSleep
 ThreadOpenProcess
 ThreadPoolTest:         %d threads -- %d (%d) jobs processed in %fms, %fms to suspend (%f/%f)
-ThreadPoolTest:     Distribute
-ThreadPoolTest:     Distribute NO Sleep
 ThreadPoolTest:     NO Sleep
-ThreadPoolTest:     Non-distribute
 ThreadPoolTest:   NOT to completion
 ThreadPoolTest:   To completion
 ThreadPoolTest: Job distribution speed
@@ -10419,8 +10424,8 @@ ThreadPoolTest::Test
 ThreadProcInfo_t::Release
 ThreadProcWrapped
 ThreadReadProcessMemory
-ThreadSetAffinityPreference
 ThreadSetDebugNameS2
+ThreadSetPerfSetAffinity
 ThreadSetPriority
 ThreadSetProcessPriority
 ThreadShellExecute
@@ -10502,6 +10507,7 @@ U1(\Q
 UA>N0Wl
 UATAUAVAWH
 UATAUAVH
+UATAUH
 UATAVAWI
 UATAVH
 UATAWH
@@ -11257,15 +11263,13 @@ Vtube
 W(D8|
 W(H9o
 W(fA;
-W)lQ0Q4
+W)lQ`c4
 W*fA;
 W,+L$
 W,CiT(
 W/q#IX
 W0H;W8
-W5*?4
-W52o4
-W57p4
+W5ZL4
 WARNING: %s Denied a request to load '%s'
 WARNING: Command buffer full... ignoring!
 WARNING: Command too long... ignoring!
@@ -11364,6 +11368,7 @@ WriteConsoleW
 WriteFile
 WriteSBitLong: 0x%08x does not fit in %d bits
 Wrote
+Wsb(FO
 X 843"8
 X @8u/t
 X D8e
@@ -11399,9 +11404,10 @@ XGL'$
 XS&Y+
 XXXXXX: found leading plus sign while parsing string '%s' as float64, ignoring it
 X_^][
+Xe d0
 Xi#/H
+X|( *4
 Y	rH5
-Y5R?#
 Y8+Y(
 Y9"SD
 Y>kX>
@@ -11418,7 +11424,7 @@ Z\>z8
 ZdN=Y
 Zf?FO
 Zod(^?
-Zvpcf1
+Zvpcf2
 ZwSetTimerResolution
 [   func+child         func ]
 [   func+child       func ]
@@ -11493,9 +11499,10 @@ ZwSetTimerResolution
 \$,E3
 \$,E;
 \$,I;
-\$095[(:
+\$095k
 \$09=
-\$09=T:'
+\$09="
+\$09={#'
 \$0@2
 \$0A#
 \$0A+
@@ -11524,7 +11531,7 @@ ZwSetTimerResolution
 \$8fD
 \$8tYA;
 \$8u3L
-\$@9=b
+\$@9=
 \$@9A
 \$@A+
 \$@E+
@@ -11566,6 +11573,7 @@ ZwSetTimerResolution
 \$`H+
 \$`I;
 \$`L;
+\$`v	f95r
 \$dA+
 \$dE;
 \$gm?
@@ -11625,8 +11633,8 @@ ZwSetTimerResolution
 ]g+N$L
 ^(H9k
 ^,tyI
-^5I&*
-^5dp5
+^51+*
+^5|t5
 ^8U)zj
 ^<V7w
 ^>&qN
@@ -11754,7 +11762,6 @@ _wWT+
 `A_A^A]A\_][
 `A_A^A]A\_^]
 `A_A^A]_]
-`A_A^A]_^][
 `A_A^^
 `A_A^^][
 `A_A^_
@@ -11919,7 +11926,6 @@ autoargs
 b?^Cy
 bAllocationCanFit
 bContainsCRLF
-bDifferentCores
 bForceLookAtPath
 bFound
 bKill
@@ -12201,7 +12207,6 @@ disable
 disabled
 disabling
 disconnected
-distributed...
 diuoxXfFeEgGaAcsp?
 dixXu
 dmg.bullets
@@ -12360,8 +12365,6 @@ fC94wu
 fC;DA
 fC;DB
 fC;DH
-fD)%W69
-fD)%l09
 fD9	t(L
 fD9 t
 fD9!H
@@ -12518,6 +12521,7 @@ gfffffff
 gfffffffH
 gfffffffI
 gravity
+groupAffinities[0].Group == 0
 guard after
 guard before
 guard both
@@ -12529,8 +12533,6 @@ hA]A\_[
 hA]A\_^
 hA]_^]
 hA^A\_^][
-hA^A]][
-hA^A]][H
 hA^_^[
 hA_A\_^][
 hA_A^A\_
@@ -12793,7 +12795,7 @@ l$xH+
 l2|X/gGe
 l6qnk
 l<}2l
-l=!pQ4
+l=!8c4
 lR(g 
 large
 last_sniff
@@ -13578,6 +13580,7 @@ n03>Pu
 n2fA;
 n<	fE
 n<	fG
+n<!-- schema 
 n>log2
 nActualAllocSize <= UINT_MAX
 nActualWritten != 0
@@ -13608,7 +13611,6 @@ nDataSize < CONVAR_DATA_BLOCK_SIZE
 nDelegateParamCount < (1 << EventListenerInfo_t::PARAMETER_COUNT_BITS)
 nDestSize == 0 || pDest != nullptr
 nDirectoryCount == 1
-nEfficiencyCoreCount < ci.m_nPhysicalProcessors
 nEltBytes == nOtherEltBytes
 nEnd > nStart
 nEntrySize <= UINT32_MAX
@@ -13664,7 +13666,6 @@ nSize != 0
 nSize > 0
 nSizeCopy == nBytes
 nSlot == INVALID_SPLITSCREENSLOT || nSlot.GetRaw() == 0
-nSmtSize >= 1 && nSmtSize <= 63
 nState == THREAD_INIT_ONCE_INIT_DONE
 nState > 0 && nState < MAX_LOGGING_STATE_COUNT
 nStringLen >= 0
@@ -13684,7 +13685,6 @@ nValue == data
 nValues <= KEYVALUES3_SHORT_UINT8_ARRAY_LENGTH && nElementSpecificType == KV3_STYPE_UINT8
 nWaste >= 0
 nWideChars <= 0
-nWriteSlot < V_ARRAYSIZE( s_affinityPrefSlotInfo[pref] )
 n]?iJ
 nactive_huge
 nactive_nonhuge
@@ -13720,7 +13720,6 @@ nhugifies
 nlextents
 nmalloc
 nmuzzy
-no affinity...
 no buffer space
 no child process
 no guard
@@ -13742,7 +13741,6 @@ nolog
 non-virtual thunk to 
 noncontinuableexception
 nonfull_slabs
-nopref-all
 norecord
 not a directory
 not a socket
@@ -13780,6 +13778,8 @@ number is too big
 numbits >= 0 && numbits <= 32
 numchars >= 2
 numsegments
+o5g30
+o=+30
 oA fD
 oD$ f
 oD$0f
@@ -13991,6 +13991,8 @@ pLastChild->m_pPeer == dat
 pLastChild->m_pPeer == nullptr
 pList->IsArray()
 pListener->m_bRegistered
+pLogical[nLogicalIndex].IsPhysicalIDSet() && !pLogical[nLogicalIndex].IsCoreIDSet()
+pLogical[nLogicalIndex].m_nProcessorGroup == nProcGroup && pLogical[nLogicalIndex].m_nProcessorGroupRelIndex == nLogicalRelIndex
 pMember
 pMemory == blockInfo.m_pMemory
 pMemoryStatus
@@ -14071,6 +14073,8 @@ pflOutValue
 phycpu
 physgun_interactions
 physicsmode
+pi.m_nEfficiencyCores + pi.m_nPerformanceCores == pi.m_nPhysicalProcessors
+pi.m_nEfficiencyCores > 0 && pi.m_nPerformanceCores > 0
 pitch
 place high
 place low
@@ -14205,7 +14209,7 @@ rotation_vector
 rotation_xyz
 rq7x;P
 rqwvH
-rsH9=O
+rsH9=?
 rsf;\$d
 rtree
 run_interval
@@ -14215,8 +14219,8 @@ r|f;\$l
 r}H9-
 r}H9=
 r}L9%
-r}L95/
-r}L95o
+r}L95
+r}L95_
 r}L9=
 r~H9-
 s @8~
@@ -14224,7 +14228,7 @@ s AWH
 s WATAUAVAWH
 s WAVAWH
 s$fff
-s(uq@85k
+s(uq@85[
 s)HcC
 s,fff
 s0HcL$tH
@@ -14483,8 +14487,7 @@ t$PHc
 t$PL;
 t$PLc
 t$Pfff
-t$TL;=g\'
-t$Tfff
+t$TL;=
 t$XA;
 t$XD+
 t$XD9t$T
@@ -14565,9 +14568,8 @@ t-H9nPu
 t-H;C
 t-HcA
 t-Lck
-t.0FO
-t.L958
-t.L95;
+t.0FZ
+t.L95
 t0Hc3;s
 t2Hc|$0;
 t3H9-
@@ -14576,7 +14578,7 @@ t3fff
 t4=UUU
 t4L;C
 t5H9-
-t5H9-:
+t5H9-J
 t6fff
 t7HcP
 t98_2t
@@ -14625,7 +14627,7 @@ tSHcT$pI
 tSf91tNH
 tU;\$0tH
 tUA80tPI
-tUH95i
+tUH95)
 tUfff
 tXfff
 tZH9=
@@ -14633,10 +14635,10 @@ t\;4$vWC
 t\@8/tWE3
 t^@8/tYE3
 t_H9-
-t_H9-G.2
+t_H9-752
 t_H95
-t_H955,2
-t_H95i
+t_H95%32
+t_H95y
 t_Hc]
 t_IcD
 t`@87t[E3
@@ -14671,7 +14673,7 @@ test_angles_relative
 testscript_debug
 text file busy
 texturescale
-tfL95(
+tfL95
 tfL9;u
 tfL9f
 tgfff
@@ -14723,11 +14725,10 @@ u	8V(
 u	D8&
 u D85
 u!@8-
-u!@8-B
-u!@8-r
+u!@8-F
+u!@8-f
 u!H9=
-u!H9=.
-u!H9=j
+u!H9=Z
 u!H;C(w
 u!L9L$Pu
 u"HcM@H
@@ -14748,7 +14749,6 @@ u(L9k
 u)9k`tLH9kHu
 u)9nxtLH9n`u
 u)HcA<H
-u*;5#
 u*IcM A;
 u,!T$(H!T$ 
 u,AiT
@@ -14756,8 +14756,8 @@ u0HcE(H
 u1!D$0H
 u1@8;
 u1L9L$Pu*H
-u29-h.2
-u295V,2
+u29-X52
+u295F32
 u2fA;
 u3HcH<H
 u3fff
@@ -14780,15 +14780,16 @@ u9<"u	E
 u9HcA<H
 u;H;P
 u<Hc	
-u<Hc5
+u<Hc5p5$
 u<P/Y
 u<g~l<it[<ntP<ot,<pt
-u=9-c
+u=9-s
 u>L9L$Pu7L9L$Xu0L9L$`u)H
 u@Icu
-uC9-312
-uCH;=
-uCL;5
+uC9-#82
+uC9-&
+uCH;=S
+uCL;5l
 uED8r(t
 uED9-
 uEH;5
@@ -14804,7 +14805,7 @@ uSD8;
 uUHcl$@A;
 uVHc=
 uWE8eIuQ9
-uWHc=
+uWHc=mv'
 uWL9L$PuPL9L$XuIL9L$`uBD8	t
 uZEeu
 u[L9L$PuTL9L$XuML9L$`uFH
@@ -14838,7 +14839,7 @@ unsigned long long
 unsigned short
 unspecified
 unwind_info
-uo@85b
+uo@85R
 update
 uptime
 use_additional_offset
@@ -14895,11 +14896,12 @@ virtual-table number doesn't end with '_'
 visualstudioautomation.exe -appverifier_setup %d
 visualstudioautomation.exe -attachtoprocessid %d
 vmdl;vmdl_prefab
-vmdlkeys1
+vmdlkeys0
 vmdlkeys2
 vmdlkeys3
 vmdlkeys4
 volatile
+vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -14910,7 +14912,6 @@ vpcf16
 vpcf17
 vpcf18
 vpcf19
-vpcf2
 vpcf20
 vpcf21
 vpcf22
@@ -14966,7 +14967,6 @@ vpulse10
 vpulse11
 vpulse12
 vpulse2
-vpulse3
 vpulse4
 vpulse5
 vpulse6
@@ -14984,10 +14984,10 @@ vtest
 vtune
 vtuneapi.dll
 vulkan
-vwL95
+vwL95*n5
 v}`[>
 w!fff
-w"@85~
+w"@85N
 w"fff
 w#Lc?H
 w&fA+
@@ -15071,7 +15071,6 @@ xXI96tSI
 x_^][
 x`tm6
 xaH;{
-xe;=[@
 xmalloc
 xpH;A
 xqkfa]YUQMJGDA><97520.,*('%#! 
@@ -15087,7 +15086,7 @@ y\PD>!
 yaw_end
 yaw_start
 z,u<u
-z:K(%d)
+z:K(%d,%d)
 z<uZEeu
 z=u;H
 z>@G'h
@@ -15252,6 +15251,7 @@ zzzzzzzzI
 |$XH#
 |$XH;
 |$XHc
+|$XL;
 |$XLc
 |$\A;
 |$\Hc
@@ -15302,6 +15302,7 @@ zzzzzzzzI
 |@u*+
 |Lu?c
 |T4fD;
+|]mTS
 |b=})>
 |bH9w(t\
 |dD9i
@@ -15317,7 +15318,7 @@ zzzzzzzzI
 })f;C
 }0<}ts<:toL
 }1;C$
-}1@8-/](
+}1D85uG(
 }1f;C
 }4fff
 }6;s(u
@@ -15333,7 +15334,6 @@ zzzzzzzzI
 }Z;{$wUL
 }[;{$
 }^jIH
-}gDhX
 }j;{$weL
 }k;{$
 }lf;{
@@ -15354,13 +15354,18 @@ zzzzzzzzI
 ~,*u<I
 ~,AiT
 ~0@8-
-~0@8-?V(
+~0@8-S=(
+~0@8-cK(
+~0@8-cO(
+~0@8-sC(
+~0D853G(
 ~0Ic6D
 ~4fff
 ~<uZEeu
 ~DSTRCT
 ~HM9'I
 ~Hfff
+~J']_V
 ~Yf,=M
 ~qj#k"
 ~t&LN

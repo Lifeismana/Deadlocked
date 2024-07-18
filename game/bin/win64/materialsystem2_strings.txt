@@ -235,6 +235,7 @@ $IcD$
 ',=?k
 'exists'
 'return'
+(	V_log10f
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
@@ -293,7 +294,7 @@ $IcD$
 (|$ H
 (|$0f
 (|$`H
-)	V_log10f
+)	V_log2_uint
 )>6{1n
 )D$ D
 )D$03
@@ -312,7 +313,6 @@ $IcD$
 )|$ A
 )|$`L
 )|$pE3
-*	V_log2_uint
 *** %s "%s" in %s does not follow the 0..N format!
 *** %s "%s" in %s has max(%d) > 254!
 *** %s "%s" in %s has min(%d) < 0!
@@ -405,6 +405,7 @@ $IcD$
 *pLookForFileNameDelimiter == '>'
 *pLookForFileNameDelimiter == '\"'
 *pStartOfFileNameDelimiter == '\"'
++	V_log2f
 +C$Hc
 +C$Lc
 +D$tHc
@@ -419,7 +420,6 @@ $IcD$
 +h->|
 +mat_clearshadercache
 +o'q)}
-,	V_log2f
 , <^A
 , GetFont used
 , LoadFont used
@@ -433,6 +433,7 @@ $IcD$
 ,D$@A
 ,L$XL
 ,W5y+
+-	V_logf
 -----
 ----------
 --------------------------------------------------
@@ -466,7 +467,6 @@ $IcD$
 -unknown source-(
 -vulkan_use_android_vcs
 -vulkan_use_ios_vcs
-.	V_logf
 .00cfg
 .?AUAsyncProcessResult@CBaseIntrospectedToKV3TypeManager@@
 .?AUAsyncStaticComboResult_t@CMaterial2@@
@@ -677,7 +677,7 @@ $IcD$
 220323000000Z
 220801000000Z
 230714000000Z
-240711145955Z0/
+240718150113Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -708,6 +708,7 @@ $IcD$
 6YA1H
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powd
 8A]A\_^
 8A][H
 8A_A]
@@ -719,7 +720,7 @@ $IcD$
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8L$`t
-9	V_powd
+9	V_powf
 9"u3H
 9)~P3
 93~sH
@@ -746,9 +747,9 @@ $IcD$
 9|$Pu
 9|$hu
 9~0~-H
-:	V_powf
+:	V_qsort
 : lexer error %d :
-;	V_qsort
+;	V_qsort_s
 ;B8T	dH
 ;B@|8
 ;B@|L
@@ -760,7 +761,6 @@ $IcD$
 ;T$p}1H
 ;\$hu
 ;t$hu
-<	V_qsort_s
 <	u2H
 <	u8H
 < t=<	t9
@@ -946,13 +946,10 @@ $IcD$
 @.data
 @.reloc
 @8,7u
-@8-/K
 @84)u
-@85>N
-@85^O
+@85TM
 @8;te3
 @8<(u
-@8=)Q
 @8j(t
 @8k(t
 @8l$H
@@ -1267,7 +1264,6 @@ C HcL8
 C I!.H
 C KcD1 
 C$LcC
-C(A$bu
 C(HcC
 C,HcCh
 C0Hc	H
@@ -2104,7 +2100,6 @@ D$xLc|
 D$xM;
 D$xfA
 D$xfA;
-D,ke&
 D16_SHADOW
 D24FS8
 D24S8
@@ -2115,17 +2110,16 @@ D3D Semantic Name: "%s"
 D4 H9C
 D7 fB
 D7*f9kBu
-D8%DI
-D8%YL
-D8%]K
+D8%TH
+D8%kK
 D8&ta3
 D8*tt
 D80uQE3
 D81uUL9r
 D840u
 D87th3
-D8=:S
-D8=XQ
+D8= Q
+D8=-O
 D8g u
 D8t$Q
 D8t$ht
@@ -2219,6 +2213,7 @@ DynamicCombo
 DynamicComboFromFeature
 DynamicComboRule
 DynamicGlobalsBDA
+E	V_sincosf
 E03ED%
 E0;E@|
 E0D;E@|
@@ -2290,7 +2285,6 @@ ExtTextOutW
 ExternalDescSet
 ExternalNameForInternalType
 Extraneous token
-F	V_sincosf
 F 8C 
 F ;F0|
 F A8D
@@ -2344,6 +2338,7 @@ Found existing value when inserting into tree - replacing existing value with ne
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+G	V_sinf
 G 8C 
 G(knN
 G8L9!t
@@ -2389,6 +2384,7 @@ Geometry Shader
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCharABCWidthsW
@@ -2454,21 +2450,19 @@ Gt$(L
 Gt$8A
 G|$(L
 G|$8H
-H	V_sinf
 H!D$ I
 H!T$0D
 H#D$`H
 H-^Eu
 H9(tO
 H9+t	H
-H9-2d
-H9-Oc
+H9-]c
 H93t7H
 H93tkH
-H95)~
-H954}
 H97u+A
 H98t2
+H9=Tx
+H9=eL
 H9A(u
 H9M(u)
 H9T$Hu+
@@ -2641,10 +2635,10 @@ IsValidIndex( i )
 IsValidIndex(elem)
 IsValidIndex(elem) && IndexInRange( elem )
 IsValidIndex(i) && (i != InvalidIndex())
+J	V_snprintf
 J>@G_
 JHHc]oA
 January
-K	V_snprintf
 K$HcC
 K&>.yC
 K0HcQ
@@ -2761,14 +2755,13 @@ L7*fD
 L9#u/H
 L9'tJA
 L9+t	H
+L9-yn
 L93t	H
 L93tJA
-L95%{
+L95n"
 L9;t	H
-L9=7j
-L9=Ki
-L9=^9
-L9=y9
+L9=@8
+L9=Z=
 L9?t	H
 L9c u
 L9d$(t
@@ -3012,6 +3005,7 @@ OutputDXT5Texture_2x2
 OutputDXT5Texture_4x4
 OverrideTextureParam cannot be called from outside of a CMaterialOverrideScopeGuard
 OwnedByCurrentThread()
+P	V_sscanf
 P8H=vmat
 P8H=vtex
 PA^^]
@@ -3110,7 +3104,6 @@ Programmer Error! Static combo not loaded!
 Programmer Error! Static combo value not in range!
 PropertyEditorSystem_001
 Pz}b!
-Q	V_sscanf
 Q$HcA
 QueryPerformanceCounter
 R11_EAC
@@ -3183,6 +3176,7 @@ Resource_FindBlockInfo
 Resource_FindBlockInfo( pHeader, RESOURCE_BLOCK_ID_DATA, &dataBlockInfo )
 Resource_GetBlockInfo
 Resource_GetBlockInfo::<lambda_1>::operator ()
+Ro{1k
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlPcToFileHeader
@@ -3395,6 +3389,7 @@ Tried to load resource reference '%s' from a value without a resource reference 
 Trying to cast '%s' to a different resource type!
 Tuesday
 TypeManager
+U	V_stricmp_fast
 UATAUAVAWH
 UAUAVAWH
 UAUAVH
@@ -3474,7 +3469,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 Uv scale variable %s referenced by texture %s doesn't evaluate to a constant value at material load time (%s).
-V	V_stricmp_fast
 V6E>`"(5
 VATAVAWH
 VAVAWH
@@ -3636,13 +3630,13 @@ XD$LH
 XD8(t
 XHcAxL
 Xl$8A
+Y	V_strspn
 Y9"SD
 Y>t$7?
 YL$XH
 YT$XH
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 Yt$@Hc
-Z	V_strspn
 [ VAVAWH
 [ mat_print_material_info ] Error! Cannot find material '%s'!
 [Dynamic shader compile] Reloading %d material(s)
@@ -3695,17 +3689,16 @@ Z	V_strspn
 \$hu2
 \$x1E
 \$xA;
-\)SNk~v
 \0bf;
 \error.vmat
 ] ;]$t
 ](A8~8t
 ]J<0"0i3
 ]oHcB
+^	V_strtoui64
 ^^^ Attribute-based texture warning is now disabled after outputting 50 warnings.
 ^^^ Constant buffer warning is now disabled after outputting 50 warnings.
 ^hLcC
-_	V_strtoui64
 _ ;_$t
 _@D;]@
 _RDATA
@@ -3839,6 +3832,7 @@ argument list too long
 argument out of domain
 array
 attributes[i].GetType() == VFX_VARIABLE_TYPE_TEXTURE2D
+b	V_tanf
 bAllocationCanFit
 bLegalTypeChange
 bLfff
@@ -3857,7 +3851,6 @@ bp(=>?g
 broken pipe
 buffer
 byteaddressbuffer
-c	V_tanf
 c [1>H'
 c(>\,
 c@f9{Bt
@@ -3904,7 +3897,6 @@ d$xD;m
 d$xE3
 d$xfE
 dD8/t_3
-dbf9A
 dddd, MMMM dd, yyyy
 degrees
 descs.Count() >= 1
@@ -4018,7 +4010,6 @@ fontFileName && fontFileName[0]
 font_show_glyph_miss
 from.m_numInts == CalcNumIntsForBits( from.m_numBits )
 function not supported
-f}|F6<
 g_bFogTypeEnabled
 g_bOtherFxEnabled
 g_bRoughnessParams
@@ -4146,6 +4137,7 @@ gs_5_0
 gs_6_0
 hA^A]A\_^[
 hA_A^A]A\_^[]
+hHfX$
 hI9|	
 hN9d	
 hResource != RESOURCE_HANDLE_INVALID
@@ -4186,6 +4178,7 @@ is a directory
 is also the end of the line, so you must check your lexer rules
 j0fD9r2t
 jj@0HK4
+jl	|K6
 k L9+t	H
 k(HcC
 k0i0$
@@ -4873,7 +4866,8 @@ u5I9u
 u6L9x u0
 u7L9c u1
 u8M;q
-uCD85
+u;#|;%k
+uCD85B
 uED8r(t
 uGf9y
 uW@8u
@@ -4883,7 +4877,7 @@ ubf9P
 uchar32
 ufD:B
 ufiD$@
-uhH9=
+uhH9=;*
 uint16
 uint32
 uint64
@@ -4894,7 +4888,6 @@ unknown
 unspecified
 uzKs@>
 u|fA;
-u~P4,Pu
 v ;F0|
 v=Y]Bv
 v@D8s(t

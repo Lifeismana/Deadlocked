@@ -39,6 +39,10 @@
 							<Label class="MostPlayedNameLabel" text="{g:citadel_hero_name:most_played_hero_id}" />
 						</Panel>
 					</Panel>
+					<Button id="ForumButton" class="SecondaryButton light hasIcon" onactivate="CitadelJoinForum(); CitadelPlayUISound( ESocialMenuHover )">
+						<Panel class="ForumIcon buttonIcon" />
+						<Label class="defaultText" text="#Citadel_JoinForum_ViewInfo" />
+					</Button>
 				</Panel>
 			</Panel>
 			<Panel class="RightPanel">

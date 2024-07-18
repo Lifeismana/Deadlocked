@@ -64,7 +64,7 @@
 				</Panel>
 				<Panel class="componentModDetails">
 					<Label class="componentModName" text="{s:modName}" />
-					<Label class="componentModOwnedDisplay" text="owned" />
+					<Label class="componentModOwnedDisplay" text="#Citadel_ComponentOwned" />
 					<Label class="componentModRequiredDisplay" text="+{i:goldCost}" />
 					<Label class="componentModConsumedDisplay" text="" />
 				</Panel>
@@ -109,7 +109,7 @@
 			</Panel>
 			<Panel id="ComponentsContainer" class="LeftRightFlow">
 				<Panel id="ComponentsLabelContainer">
-					<Label class="componentsLabel" text="Components:" />
+					<Label class="componentsLabel" text="#Citadel_ComponentRequired" />
 				</Panel>
 				<Panel id="ComponentsList" />
 			</Panel>
@@ -130,13 +130,13 @@
 			</Panel>
 			<CitadelAltInfoPanel id="AltInfoContainer" />
 			<Panel id="OwnedByContainer">
-				<Label class="OwnedByLabel" text="Owned by:" />
+				<Label class="OwnedByLabel" text="#Citadel_ItemOwnedBy" />
 				<Panel id="OwnedByList" class="LeftRightFlow" />
 			</Panel>
 		</Panel>
 		<Panel class="AffectedAbilitiesContainer TopBottomFlow">
 			<Panel class="AffectedAbilitiesHeader">
-				<Label class="ModifiesLabel" text="Modifies" />
+				<Label class="ModifiesLabel" text="#Citadel_ItemModifies" />
 			</Panel>
 			<Panel id="AffectedAbilities" class="TopBottomFlow" />
 		</Panel>

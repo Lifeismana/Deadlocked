@@ -182,11 +182,11 @@ enum ECitadelClientAccountEvent {
 message CSOGameAccountClient {
 	enum EFlags {
 		k_eDeveloper = 1;
-		k_eCanForceMM = 2;
+		k_eExternalModerator = 2;
 		k_eGotInitialHeroes = 4;
-		k_eTeamMember = 8;
 		k_eClaimedDiscordLink = 16;
 		k_eClaimedForum = 32;
+		k_eAccountBanned = 64;
 	}
 
 	optional uint32 account_id = 1 [(key_field) = true];
@@ -248,6 +248,7 @@ message CMsgClientToGCStartMatchmakingResponse {
 		k_EResult_DurationControlBlocked = 12;
 		k_EResult_InvalidHeroSelection = 13;
 		k_EResult_HeroesNotUnlocked = 14;
+		k_EResult_PermanentBan = 15;
 	}
 
 	optional .CMsgClientToGCStartMatchmakingResponse.EResultCode result = 1 [default = k_EResult_OK];
@@ -524,6 +525,7 @@ message CMsgClientToGCPartySetModeResponse {
 		k_eSuccess = 1;
 		k_eInvalidPartyID = 2;
 		k_eInvalidPermissions = 3;
+		k_ePlayerPermanentBanned = 4;
 		k_eInvalidValue = 5;
 		k_eInMatchMaking = 6;
 		k_eInMatch = 7;
@@ -953,6 +955,7 @@ message CMsgClientToGCDevAction {
 		k_eForceAccountStorage = 7;
 		k_eBookReset = 9;
 		k_eBookXPGrant = 10;
+		k_eBanAccount = 11;
 	}
 
 	optional .CMsgClientToGCDevAction.EAction action = 1 [default = k_eSetDeveloper];
@@ -1127,6 +1130,7 @@ message CMsgClientToGCSubmitPlaytestUserResponse {
 		eResponse_NotFriendsLongEnough = 4;
 		eResponse_AlreadyHasGame = 5;
 		eResponse_LimitedUser = 6;
+		eResponse_InviteLimitReached = 7;
 	}
 
 	optional .CMsgClientToGCSubmitPlaytestUserResponse.EResponse response = 1 [default = eResponse_Success];

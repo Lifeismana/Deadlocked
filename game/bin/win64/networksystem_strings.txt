@@ -125,12 +125,11 @@
  (%s)
  (08@HPX`hpx
  (08@HPX`j
- (08@HPXb@
+ (08@HPXb
  (08@HPZ
- (08@HR@
+ (08@HR
  (08@J
- (08@J@
- (0X`hpz@
+ (0X`hpz
  - keeping around as cacheable shared connection
  ... }
  0"r$4&
@@ -196,9 +195,7 @@
  Hc)L
  Hc*H
  Hc1L
- Hc5T
- Hc5U
- Hc5e
+ Hc5E
  Hc9L
  HcD$PI
  HcD$`I
@@ -282,7 +279,7 @@
 !#GameUI_ServerRejectFailedChannel
 !#Player_DisconnectReason_TK_Start
 !#Player_DisconnectReason_VotedOff
-!$+%_#s%
+!8`yP
 !>6'Y
 !CNETMsg_SpawnGroup_ManifestUpdate
 !HcD$XH
@@ -332,6 +329,7 @@
 !pField->IsStructField() || pFieldFlattenedSerializer
 !pField->m_bNetworkVarEmbeddedNotFlattened
 !pList->m_bExcludedFromSerializerRegistry
+!pQ7	
 !pSerializer->m_bExcludedFromSerializerRegistry
 !s.IsOpen()
 !s.IsTryAny()
@@ -699,6 +697,7 @@ $schemasystem/schema_enable_defines.h
 &#GameUI_Disconnect_RemoteProblem_Other
 &#GameUI_ServerRejectInvalidReservation
 &#Player_DisconnectReason_NoSteamTicket:E
+&/cnav&
 &?PPPPPPP?
 &L9d$Pt
 &NETWORK_DISCONNECT_BAD_SERVER_PASSWORD
@@ -775,7 +774,6 @@ $schemasystem/schema_enable_defines.h
 (D$ L
 (D$ f
 (D$03
-(D$0@
 (D$0H
 (D$0L
 (D$0f
@@ -804,6 +802,7 @@ $schemasystem/schema_enable_defines.h
 (NETWORK_DISCONNECT_STEAM_AUTHALREADYUSED
 (NULL)
 (T$0D
+(T$`D
 (T?j?Y
 (This list may include POPs without any gameservers)
 (YA1H
@@ -826,7 +825,6 @@ $schemasystem/schema_enable_defines.h
 (null)
 (root)
 (size_t)m_pScratchBuf->Count() >= nLen
-(size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (stream: %s%s local: %s%s)
 (t$ A
 (t$ H
@@ -837,7 +835,6 @@ $schemasystem/schema_enable_defines.h
 (t$@L
 (t$PE
 (t$PH
-(t$PL
 (t$`H
 (t$`L
 (t$pH
@@ -866,7 +863,6 @@ $schemasystem/schema_enable_defines.h
 )D$0L
 )D$0f
 )D$0fH
-)D$0u
 )D$@H
 )D$@L
 )D$@f
@@ -879,6 +875,7 @@ $schemasystem/schema_enable_defines.h
 )L$0A
 )L$0f
 )L$@E
+)L$pE
 )NETWORK_DISCONNECT_NO_PEER_GROUP_HANDLERS
 )NETWORK_DISCONNECT_PURESERVER_CLIENTEXTRA
 )NETWORK_DISCONNECT_REQUEST_HOSTSTATE_IDLE
@@ -1375,7 +1372,6 @@ $schemasystem/schema_enable_defines.h
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
 08@HR
-08@J@
 0><[cZUg^>
 0A\^[
 0A\_^
@@ -1446,7 +1442,7 @@ $schemasystem/schema_enable_defines.h
 220801000000Z
 230714000000Z
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240711145848Z0/
+240718145650Z0/
 241009235959Z0a1
 25.CSource2Metrics_MatchPerfSummary_Notification.Client
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1563,7 +1559,7 @@ $schemasystem/schema_enable_defines.h
 :M9w8u
 :YA1H
 :\u3L
-;(YI)
+;	V_qsort_s
 ;.u1L
 ;@t3H
 ;A$|cH
@@ -1588,7 +1584,6 @@ $schemasystem/schema_enable_defines.h
 ;{8~.H
 ;|$0|
 ;|$`|
-<	V_qsort_s
 <	w	@
 < t=<	t9
 <$L;|$hu
@@ -1612,7 +1607,6 @@ $schemasystem/schema_enable_defines.h
 <unknown>
 <utK@:
 <|HcL$pA
-=#5g|G
 =YA1H
 =imb;D
 =rIQU
@@ -1784,22 +1778,21 @@ $schemasystem/schema_enable_defines.h
 @.data
 @.reloc
 @08@HPX`hpx
-@08N 
 @0;B0
 @0HcB
 @4A;A4upI
 @4HcG 
 @8(tX
 @8(u	
-@8-w^
 @82uH
 @84)u
 @848u
+@85O/!
 @8;te3
 @8<(u
 @8<0u
 @8<2u
-@8=]\ 
+@8=m!
 @8HcB
 @8L9!t
 @8i(u
@@ -1861,6 +1854,7 @@ $schemasystem/schema_enable_defines.h
 @HHcB$;B(u
 @HPX&I
 @HPX`hv
+@HVP:
 @HcC8Hk
 @L9nHu$
 @L;d$p
@@ -1911,6 +1905,7 @@ $schemasystem/schema_enable_defines.h
 @SVWATAUAVAWH
 @SVWATAUH
 @SVWATAVAWH
+@SVWATH
 @SVWAUAVH
 @SVWAUH
 @SVWAVAWH
@@ -2000,6 +1995,7 @@ A$D	A
 A(D	A
 A(HcP
 A(taH
+A+D$ 
 A+P@H
 A+Q A
 A03>A|
@@ -2092,7 +2088,6 @@ AUAWH
 AVAWH
 AVG        Mean delay, for packets that are jittered, in ms.  The random
 A]A\^[]
-A]A\_^[]
 A]A\_^]
 A]_^[
 A^A\^[
@@ -2103,11 +2098,13 @@ A^A]A\
 A^A]A\_[]
 A^A]A\_]
 A^A]A\_^[]
+A^A]^[
 A^A]^[]
 A^A]_
 A^A]_[]
 A^A]_]
 A^A]_^[]
+A^A]_^][
 A^^][
 A^_[H
 A^_^[]
@@ -2322,7 +2319,6 @@ C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\quantizedfloatencoder.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utldict.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
 C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
@@ -2830,18 +2826,6 @@ CT$PH
 CT$hL
 CT$pH
 CTENH
-CTSQueue corrupt
-CTSQueue corruption
-CTSQueue: Misaligned node
-CTSQueue: Misaligned queue
-CTSQueue<struct CNetworkFieldChangedEventQueueChangeInfo_t,0>::Pop
-CTSQueue<struct CNetworkFieldChangedEventQueueChangeInfo_t,0>::Purge
-CTSQueue<struct CNetworkFieldChangedEventQueueChangeInfo_t,0>::Push
-CTSQueue<struct CNetworkFieldChangedEventQueueChangeInfo_t,0>::~CTSQueue
-CTSQueue<struct CNetworkFieldPointerAllocationQueueInfo_t,0>::Pop
-CTSQueue<struct CNetworkFieldPointerAllocationQueueInfo_t,0>::Purge
-CTSQueue<struct CNetworkFieldPointerAllocationQueueInfo_t,0>::Push
-CTSQueue<struct CNetworkFieldPointerAllocationQueueInfo_t,0>::~CTSQueue
 CThreadSpinRWLock::CThreadSpinRWLock
 CTier2ShutdownCallback::RunAllCallbacks
 CTransform
@@ -2874,6 +2858,14 @@ CUtlLinkedList<class CUtlKeyValuePair<class CFieldPath,struct empty_t>,unsigned 
 CUtlLinkedList<class CUtlKeyValuePair<class CFieldPath,struct empty_t>,unsigned int,0,unsigned int,class CUtlMemory<struct UtlLinkedListElem_t<class CUtlKeyValuePair<class CFieldPath,struct empty_t>,unsigned int>,unsigned int> >::LinkBefore
 CUtlLinkedList<class CUtlKeyValuePair<class CFieldPath,struct empty_t>,unsigned int,0,unsigned int,class CUtlMemory<struct UtlLinkedListElem_t<class CUtlKeyValuePair<class CFieldPath,struct empty_t>,unsigned int>,unsigned int> >::RemoveAll
 CUtlLinkedList<class CUtlKeyValuePair<class CFieldPath,struct empty_t>,unsigned int,0,unsigned int,class CUtlMemory<struct UtlLinkedListElem_t<class CUtlKeyValuePair<class CFieldPath,struct empty_t>,unsigned int>,unsigned int> >::Unlink
+CUtlLinkedList<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short>,unsigned short> >::AllocInternal
+CUtlLinkedList<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short>,unsigned short> >::LinkBefore
+CUtlLinkedList<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short>,unsigned short> >::RemoveAll
+CUtlLinkedList<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short>,unsigned short> >::Unlink
+CUtlLinkedList<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short>,unsigned short> >::AllocInternal
+CUtlLinkedList<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short>,unsigned short> >::LinkBefore
+CUtlLinkedList<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short>,unsigned short> >::RemoveAll
+CUtlLinkedList<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short>,unsigned short> >::Unlink
 CUtlLinkedList<struct SteamNetConnection_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct SteamNetConnection_t,int>,int> >::AllocInternal
 CUtlLinkedList<struct SteamNetConnection_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct SteamNetConnection_t,int>,int> >::Free
 CUtlLinkedList<struct SteamNetConnection_t,int,0,int,class CUtlMemory<struct UtlLinkedListElem_t<struct SteamNetConnection_t,int>,int> >::LinkBefore
@@ -2924,11 +2916,11 @@ CUtlMemory<class CSerializerHandle_t<class CFlattenedSerializer>,int>::Grow::<la
 CUtlMemory<class CSerializerHandle_t<class CFlattenedSerializer>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CStackPair *,int>::Grow
 CUtlMemory<class CStackPair *,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<class CTSQueue<struct CNetworkFieldChangedEventQueueChangeInfo_t,0>,int>::Grow
-CUtlMemory<class CTSQueue<struct CNetworkFieldChangedEventQueueChangeInfo_t,0>,int>::Grow::<lambda_1>::operator ()
-CUtlMemory<class CTSQueue<struct CNetworkFieldChangedEventQueueChangeInfo_t,0>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlDelegate<class CUtlString __cdecl(int,char const *,int)>,int>::Grow
 CUtlMemory<class CUtlDelegate<class CUtlString __cdecl(int,char const *,int)>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CUtlLinkedList<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short>,unsigned short> >,int>::Grow
+CUtlMemory<class CUtlLinkedList<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short>,unsigned short> >,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<class CUtlLinkedList<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short>,unsigned short> >,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlSignaller_Base *,int>::Grow
 CUtlMemory<class CUtlSignaller_Base *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlString,int>::Grow
@@ -2995,6 +2987,9 @@ CUtlMemory<struct CKV3TransferLoadContext::NameStackEntry_t,int>::Grow
 CUtlMemory<struct CKV3TransferLoadContext::NameStackEntry_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CNetworkEncodingStats::FieldInfo_t,int>::Grow
 CUtlMemory<struct CNetworkEncodingStats::FieldInfo_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct CNetworkFieldChangedEventQueue::PerThreadState_t,int>::Grow
+CUtlMemory<struct CNetworkFieldChangedEventQueue::PerThreadState_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct CNetworkFieldChangedEventQueue::PerThreadState_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct CNetworkMessages::NetCategoryInfo_t,int>::Grow
 CUtlMemory<struct CNetworkMessages::NetCategoryInfo_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct CNetworkMessages::NetCategoryInfo_t,int>::Grow::<lambda_2>::operator ()
@@ -3089,6 +3084,10 @@ CUtlMemory<struct UtlLinkedListElem_t<class CNetChan *,int>,int>::Grow
 CUtlMemory<struct UtlLinkedListElem_t<class CNetChan *,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlLinkedListElem_t<class CUtlKeyValuePair<class CFieldPath,struct empty_t>,unsigned int>,unsigned int>::Grow
 CUtlMemory<struct UtlLinkedListElem_t<class CUtlKeyValuePair<class CFieldPath,struct empty_t>,unsigned int>,unsigned int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short>,unsigned short>::Grow
+CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldChangedEventQueueChangeInfo_t,unsigned short>,unsigned short>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short>,unsigned short>::Grow
+CUtlMemory<struct UtlLinkedListElem_t<struct CNetworkFieldPointerAllocationQueueInfo_t,unsigned short>,unsigned short>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlLinkedListElem_t<struct SteamNetConnection_t,int>,int>::Grow
 CUtlMemory<struct UtlLinkedListElem_t<struct SteamNetConnection_t,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<int,unsigned short>,unsigned short>::Grow
@@ -3368,6 +3367,7 @@ Cx<au
 Cx<fu
 C|$pH
 C|$xL
+C~1>_
 D	d$@
 D W?{W
 D!l$xA
@@ -3453,7 +3453,6 @@ D$@H9X s
 D$@H;
 D$@H;F
 D$@H;GXt2H
-D$@Ic
 D$@K9D
 D$@L9@ r
 D$@M;
@@ -3562,6 +3561,7 @@ D8a*t5H
 D8a8I
 D8d$:H
 D8d$X
+D8e!H
 D8g<t
 D8h*t6H
 D8i(u
@@ -3588,6 +3588,8 @@ D8{8u+H
 D8|$`t
 D9&~4I
 D9(~x
+D9=,D
+D9=Wx
 D9@(|
 D9AHu
 D9G@t
@@ -3681,6 +3683,7 @@ Double-save to Member '%s'
 Dump UDP packets summary to console
 Dump non-loopback udp only
 D|$0H
+E	V_sincosf
 E @8pHtD9s|~?L
 E D8xKtgA
 E E	e
@@ -3826,7 +3829,6 @@ Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
 ExternalNameForInternalType
 Extra connection [%s]:
-F	V_sincosf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -3840,7 +3842,6 @@ F(f9G(
 F(f9G(u
 F84*u
 F89HXtRA
-F8H9Fhuw
 F9l2xu'B
 F<9C<~
 F<9G<~
@@ -4081,6 +4082,7 @@ GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
 GetBitRange( %d -> %d ) end is before or same as start
 GetBool
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -4149,9 +4151,8 @@ Got message on poll group for socket %s, but cannot find connection in table?
 Groups are not supported in proto3 syntax.
 Gt$hH
 G|$8L
-G|$hH95
 G|9o`t
-G|L95
+G|L95$
 H 8YKt
 H 8YKt	
 H @8iKt
@@ -4194,7 +4195,6 @@ H-^Eu
 H9(t:H
 H9(tO
 H9+t!H
-H9-e|
 H92tBA
 H93t2H
 H93teH
@@ -4653,12 +4653,12 @@ IsValidIndex(elem) && IndexInRange( elem )
 IsValidIndex(i) && (i != InvalidIndex())
 IsValidLocale
 IsValidLocaleName
+J	V_snprintf
 J<L4,&
 J>@G_
 JSType
 January
 Jitter:  Average . . . : %9s%9s%9s   net_fakejitter
-K	V_snprintf
 K HcC$Hc
 K$HcC
 K$HcC(;
@@ -4780,6 +4780,7 @@ L$HH3
 L$HMc
 L$Hf;
 L$Hfff
+L$PD;
 L$PE3
 L$PH3
 L$PH;
@@ -4787,6 +4788,7 @@ L$PIc
 L$Pf;
 L$PfI
 L$X+\$|
+L$XA;
 L$XD;
 L$XE3
 L$XH3
@@ -4796,6 +4798,7 @@ L$XIc
 L$Xf;
 L$`;M
 L$`H3
+L$`H9F`
 L$`H;
 L$`Ic
 L$`L;
@@ -4838,6 +4841,8 @@ L9#t	H
 L9#u/H
 L9(tZ
 L92tDA
+L95K_
+L95hY
 L9;t	H
 L9;u	H
 L9>u%H
@@ -4899,10 +4904,10 @@ LCMapStringW
 LI0D;
 LITE_RUNTIME
 LOG_GENERAL
-La="pW
 Label
 Latency. . . . . . . . : %7dms%7dms%7dms   net_fakelag
 Lc#E+
+Lc%"x
 Lc3A+
 Lc7D;w
 Lc;A+
@@ -5238,9 +5243,10 @@ Overflow.
 Overrides IP for multihomed hosts
 OxHcGpM
 OxL94
+P	V_sscanf
 P(L90t,H
-P08@J@
-P08N 
+P08@J
+P08J0
 P>q_Y~
 P@HPX`hpx
 PACKET_STATUS_DROPPED
@@ -5295,6 +5301,7 @@ Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
 Plat_GetLocalTime
+Plat_GetThreadIndex
 Plat_IsInDebugSession
 Plat_IsInTestMode
 Plat_NonFatalErrorFunc
@@ -5359,7 +5366,6 @@ PushTwoPack5LeftDeltaOne
 PushTwoPack5LeftDeltaZero
 PxL9`
 Pz}b!
-Q	V_sscanf
 Q0I;Q8t
 Q5rHg,>
 QAngle
@@ -5474,11 +5480,13 @@ SUVWAUAVAWH
 SUVWAUAVH
 SUVWAUH
 SUVWAVAWH
+SUVWAVH
 SUVWAWH
 SUWATH
 SUWAUH
 SVATAUAVAWH
 SVAUAVAWH
+SVAUAVH
 SVAUH
 SVC_Messages
 SVC_Messages_LowFrequency
@@ -5761,6 +5769,7 @@ Trying to send a message on a CNetChan that doesn't have a HSteamNetConnection
 Tuesday
 Type appears to be in generated pool but wasn't 
 Type is already registered: 
+U	V_stricmp_fast
 UA>N0Wl
 UATAUAVAWH
 UATAVAWI
@@ -5781,10 +5790,10 @@ USVATAUH
 USVAWH
 USVWATAUAVAWH
 USVWATAUAWH
-USVWATAUH
 USVWATAVH
 USVWAUAVAWH
 USVWAUAVH
+USVWAVAWI
 USVWAVH
 USVWH
 USWATAUAVAWH
@@ -5810,7 +5819,6 @@ UVWAUAWH
 UVWAVAWH
 UVWAVH
 UWATAUAVH
-UWATAUH
 UWATAVAWH
 UWATAVAWI
 UWATAVH
@@ -5856,7 +5864,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
-V	V_stricmp_fast
 V0H;V8t
 V6E>`"(5
 VATAUAVAWH
@@ -5994,7 +6001,7 @@ X @8u
 X D8e
 X0Hc@(H
 XA\_][
-XA]A\_]
+XA\_^[
 XA^A]_^][
 XA^^][
 XA^_[]
@@ -6147,6 +6154,7 @@ Zod(^?
 \$`A;]8u
 \$`E3
 \$`H+
+\$`H;\$h
 \$gm?
 \$hA;
 \$hE3
@@ -6155,6 +6163,7 @@ Zod(^?
 \$hu:M
 \$pA;
 \$pH;
+\$pH;]
 \$pHcL$xfD+
 \$pu3H
 \$xHc}
@@ -6176,6 +6185,7 @@ Zod(^?
 ^RfN>
 ^fD;]
 ^hHcF`H
+^pLc3D;s
 _ ;_$t
 _0HcG(Lk
 _0IcG(Hk
@@ -6224,7 +6234,6 @@ _xHcGpL
 `A_A^^][
 `A_A^_^[
 `A_A^_^]
-`A__^
 `A__^][
 `L;eX
 `RTTI
@@ -6484,6 +6493,7 @@ d$HMc
 d$IfD
 d$PL+
 d$XfD
+d$Xff
 d$`D9c<
 d$`E3
 d$`Hc|$pI
@@ -6491,6 +6501,7 @@ d$`Lk
 d$`|LH
 d$dD;d$ltY
 d$hHc
+d$hM;
 d?000000`?
 data_bits
 data_compressed
@@ -6583,7 +6594,6 @@ f9,Ju
 f9,~u
 f9<Ju
 f9t$bu
-f;=Zd
 f;D$0t
 f;E`t
 f;Eht
@@ -6778,8 +6788,10 @@ http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
+i	TV-V
 iBitsRight > 0
 iNumSourceFields <= iNumLocalFields || bAllowMismatches
+iThreadIndex < m_perThreadState.Count()
 idempotency_level
 identified %d entity related c++ field shadowing issues:
 identifier removed
@@ -6931,6 +6943,7 @@ l$XA;
 l$XD9l$4
 l$XD9}@
 l$XD;
+l$XH;
 l$XI;
 l$XLk
 l$XuAH
@@ -6977,7 +6990,6 @@ lower
 m <= UINT32_MAX
 m0k0$
 mL+7H
-m_Count == 0
 m_ElementCount == 0
 m_Elements.IsValidIterator( it )
 m_Elements.IsValidIterator( m_LastAlloc )
@@ -6986,9 +6998,6 @@ m_FieldFlattenedSerializers.Find( pFieldFlattenedSerializer ) == m_FieldFlattene
 m_FirstFree == InvalidIndex()
 m_HcC
 m_Head == InvalidIndex()
-m_Head.value.pNode != End()
-m_Head.value.pNode == m_Tail.value.pNode
-m_Head.value.pNode->pNext == End()
 m_LastField.IsSentinel()
 m_LowerBoundPath.ComparePaths( pathUnpacked ) < 0
 m_MatchSerializerClones.Count() == 0
@@ -7136,7 +7145,6 @@ nStart <= INT16_MAX && nCount <= INT16_MAX
 nSym < m_msg.symbols_size()
 nTotalDataSize <= 255
 nTraversalOffset == 0
-nTries < 10000000
 nType != CONVAR_TYPE_INVALID
 nType == m_pInfo->m_nType || nType == CONVAR_TYPE_INVALID
 nType >= 0 && nType <= CONVAR_TYPE_COUNT
@@ -7260,6 +7268,7 @@ not a stream
 not connected
 not enough memory
 not supported
+nrfA;
 ntelA
 null@
 nullD
@@ -7328,7 +7337,7 @@ p UATAUAVAWH
 p WATAUAVAWH
 p WAVAWH
 p*W4H
-p08@H^ 
+p08@H^
 p0R^G'
 p9L;@t
 p;Y>u
@@ -7384,6 +7393,7 @@ pHdr->nContainedBitDataBits == (uint32)OutPropData.GetNumBitsWritten()
 pIn->m_nNumComponents == 8
 pIn->m_nNumComponents> 0
 pInnerMost.IsValid()
+pL;l$h
 pLast
 pLast->m_pNext == nullptr
 pList
@@ -7432,6 +7442,7 @@ peer_latency >= 0.0f
 pending data
 pending_full_frame
 permission denied
+pflOutValue
 php_class_prefix
 php_generic_services
 php_metadata_namespace
@@ -7581,7 +7592,6 @@ s_listSteamNetConnections[ idxList ].m_hSteamNetConn == hSteamNetConn
 s_nConnectionCount > 0
 s_nRegistrationCount < V_ARRAYSIZE(s_pConnectionRegistration)
 s_nResourceFCRegisteredCount > 0
-s`9sp|AH
 sample_rate
 savegamefilename
 savegamename
@@ -7742,6 +7752,7 @@ t$ D;WP
 t$ E3
 t$ H;
 t$ L;eo
+t$ Lk
 t$ UH
 t$ UWATAVAWH
 t$ UWAUAVAWH
@@ -7756,6 +7767,7 @@ t$(D9c|~c
 t$(E3
 t$(H+
 t$(H9_ht
+t$(H;
 t$(I;
 t$(u3H
 t$0E3
@@ -7812,6 +7824,7 @@ t$P9C<~
 t$PA+
 t$PE3
 t$PH;
+t$PHc
 t$PHc1L
 t$PIc
 t$PMc|$HI
@@ -7844,6 +7857,7 @@ t$dL9b u
 t$h9s(
 t$h;p(
 t$hE3
+t$hH;
 t$hM+4$I
 t$huY
 t$pD;
@@ -7871,6 +7885,7 @@ t+H+}
 t+fff
 t,A;Fh
 t-A8y9t'H
+t-HcA
 t-Lck
 t.fff
 t0Lc0H
@@ -7879,6 +7894,7 @@ t2HcG
 t4I92u/M
 t4fE94
 t5A8X
+t6HcA
 t7HcP
 t;LcF
 t<HcCh
@@ -7888,16 +7904,16 @@ t?HcS
 t@HcD$pD
 tAHcD$PD
 tAIcOL
-tAL9-
+tAL9-So
 tBD;l$4};A
-tCH95Q
+tCH95
 tDM9w u
 tEHcR
 tIHcA
 tIHcC
 tLLcx|M
 tMI92uHM
-tOL95
+tOL95_
 tQfD9 tK
 tRLcY
 tSf91tNH
@@ -7997,8 +8013,7 @@ t}Mcp0E;q0uzA
 u 9k(u
 u E;GXu
 u H9P r
-u!H;K
-u"L95
+u"L95gY
 u"L;B r
 u#H9{
 u$D8r(t
@@ -8006,7 +8021,6 @@ u$Hc7K
 u$fE;
 u%@8j(t
 u%H;Y r
-u'H;s
 u'L9Z
 u*H9C(H
 u,!T$(H!T$ 
@@ -8052,6 +8066,7 @@ uint8
 ujM;J udA
 ukE8}0
 ulVal < ( uint32 ) ( 1 << m_nBitCount )
+umfD;
 unOffset < m_nCustomDataSize
 unOffset <= k_usMaxFieldOffset
 unable to match %s::%s (type %s) in %s, no likely matches found
@@ -8094,7 +8109,6 @@ userid
 using_varint_bitcounts
 utlvector
 uuHcK
-uxH;u
 uxL9t$ht
 uzKs@>
 v I9?u@A
@@ -8145,6 +8159,7 @@ w"fA;
 w;fA;
 w<fA;
 w@fA;
+wFp",
 wHfE;
 weak_dependency
 world_offset_angle
@@ -8177,12 +8192,16 @@ xA_A^A]A\_^[]
 xA_A^A]A\_^][
 xA_A^_^][
 xIcGpL
+xKM+1
 x_^][
 xdigit
+xfA9T
+xfD9D
 xiA;F`}cI
 y.fff
 y\PD>!
 you_hear_them
+ypfA;
 yxxxxxxxH
 z :"U
 zY;>u:m	
@@ -8285,6 +8304,7 @@ zY;>u:m
 |$HE3
 |$HE9g
 |$HH;
+|$HH;|$X
 |$HHc
 |$HLk
 |$HM9nHt
@@ -8347,9 +8367,9 @@ zY;>u:m
 |)L9c
 |6@8k!t
 |Lu?c
-|Vu80
 |b=})>
 |c;K(t^A
+}!fD;A
 }"fA;
 }#fA;P
 }$;S4w
@@ -8357,6 +8377,7 @@ zY;>u:m
 }(;{Hu
 });C$
 })Ic@
+}*fD;A
 },A+}0
 }0HcC
 }1;C$
@@ -8367,12 +8388,14 @@ zY;>u:m
 }>;_$
 }AfA9X
 }If;=
-}If;=le
+}If;=G
 }LuHO
 }RfE;
 }T;_$
+}Z;=&
 }hu<H
 }m;n$
+}nf;{
 }s;{$wnL
 }w;{$
 ~ 	uIH

@@ -83,6 +83,7 @@
 !IsInternalTypeShortArray( Internal_Type() )
 !IsQueuedForSpawn()
 !L9d$ht
+![ddy
 !bLooksLikeABug
 !buf.IsText()
 !destBlock.IsReadOnly() && !destBlock.IsExternalMemory()
@@ -104,6 +105,7 @@
 $Ib?s
 %""""D
 %3333D
+%:qO0
 %GoU?*
 %cmaps%c
 %d %d %d
@@ -212,7 +214,6 @@ $Ib?s
 (m_nRefCount & INTERNAL_LOCKED) != 0
 (nLumaStride > 0) && (nLumaStride < INT_MAX) && (nChromaStride > 0) && (nChromaStride < INT_MAX)
 (null)
-(r$?ea
 (show)
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (spew)
@@ -335,6 +336,7 @@ $Ib?s
 +f)>0'
 +h->|
 +o'q)}
++xsZb
 ,/<-w
 ,HD;g
 ,HR>O
@@ -561,7 +563,6 @@ $Ib?s
 .CRT$XPZ
 .CRT$XTA
 .CRT$XTZ
-.F\z"u 
 .data
 .data$r
 .data$rs
@@ -646,7 +647,7 @@ $Ib?s
 220323000000Z
 220801000000Z
 230714000000Z
-240711150315Z0/
+240718150144Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -663,11 +664,9 @@ $Ib?s
 39nPu
 3>N;kU
 3>fvw
-3@K0`xw?
 3D;t%
 3L9uht
 3mq+<
-41HdK
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -693,6 +692,7 @@ $Ib?s
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8_^][
 8ke?;
+9	V_powf
 9)~P3
 98t H
 99~CE
@@ -715,23 +715,22 @@ $Ib?s
 9|$Xu
 9|$`u
 9|$xu
-:	V_powf
+:	V_qsort
 :>)*	v
 :>t6k'
 :vmatt
-;	V_qsort
+;	V_qsort_s
 ;?0123456789:;<=>?
 ;D$0|
 ;D$4|
 ;H9>&X
 ;I9}(tiH
+;J;.fW
 ;J;J;J;J;J;J;J;J;J;J;J;J;J;J;J;Jx
-;M!pH1]
 ;YA1D
 ;\$0|
 ;t$@|
 ;t$D|
-<	V_qsort_s
 <	u2H
 <	u8H
 <	u\L
@@ -740,6 +739,7 @@ $Ib?s
 <0:08
 <<NULL ENTITY LUMP>>
 <>#n2
+<@^(u?e 2q=
 <Ct-<D
 <St[A:
 <array: %u elements>
@@ -771,7 +771,6 @@ $Ib?s
 >jtm}S
 ?!5WOo
 ?+>^m
-?/},!f
 ?49HoKC
 ?7zQ6$
 ?7{KV
@@ -994,6 +993,8 @@ A8}(u
 A9,A$
 A9<Fu
 A9^Pt
+A;,$|
+A;4$|
 A;_Tt
 A>l$/
 A>pP&
@@ -1887,11 +1888,11 @@ D9t$@u
 D9t$Xu
 D9t$xu
 D9|$ 
-D;'}/J
-D;'}ZN
-D;'}oN
-D;'}qN
-D;'}tN
+D;/}/J
+D;/}ZN
+D;/}iN
+D;/}oN
+D;/}tN
 D;D$(|
 D;D$(}CJ
 D;D$p|
@@ -1945,6 +1946,7 @@ Double add of KV3Transfer interface '%s'
 Double-save to Member '%s'
 Dump all of the worlds that we know about
 Dump the contents of an entity lump
+E	V_sincosf
 E),$I
 E+A@H
 E0HcH
@@ -2023,7 +2025,6 @@ ExtraVertexStreamOverride_t
 ExtraVertexStreamOverride_t::KV3TransferLoad_Impl
 ExtraVertexStreamOverride_t::KV3Transfer_DefaultKeys_Impl
 ExtraVertexStreamOverride_t::Schema_VerifyBindingIsRegistered
-F	V_sincosf
 F(D;`H|
 F(D;hH|
 F>qUxv
@@ -2113,6 +2114,7 @@ FreeLibraryWhenCallbackReturns
 Friday
 G(;XH|
 G(;pH|
+G,.b<
 G0HcH
 GD$(H
 GD$8H
@@ -2151,6 +2153,7 @@ GetActiveWindow
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetAttributeType( nAttrIdx ) != ATTRDATATYPE_NONE
 GetBasicType() == KV3_BTYPE_TABLE
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -2235,27 +2238,16 @@ H#L$0H
 H+\$x
 H-^Eu
 H9(tO
-H9-4d
-H9-Od
-H9-fc
 H9/u+9
 H90t:
 H93t	H
-H95WI
+H95*T
+H957T
+H95ET
+H95JS
+H95Wh
 H97u+A
 H98t2
-H9=*W
-H9=-&
-H9=6Z
-H9=EW
-H9=QZ
-H9=S[
-H9=_X
-H9=a*
-H9=lV
-H9=n[
-H9=xY
-H9=zX
 H9A0t	H
 H9D$0
 H9D$Pu>I
@@ -2288,6 +2280,7 @@ Hc.;n
 Hc/;o
 Hc3;s
 Hc;;{
+Hc=Z|
 Hc>Ic\
 HcA(E3
 HcB(H
@@ -2457,6 +2450,7 @@ IsValidHandle( handle )
 IsValidIndex( i )
 IsValidIndex(i) && (i != InvalidIndex())
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
+J;vd]
 J>@G_
 JH9{(u
 January
@@ -2595,13 +2589,8 @@ L$xf;
 L$xff
 L9#t	H
 L9#u/H
-L9-,>
-L9-;=
-L9=2?
-L9==@
-L9=D>
-L9=X@
-L9=h?
+L95Nc
+L95ic
 L9FHt
 L9d$pt
 L9gHt	H
@@ -2619,7 +2608,7 @@ LCMapStringW
 LINEAR_D24S8
 LOG_GENERAL
 Lc&D;f
-Lc'Hi
+Lc/Hi
 Lc3D;
 Lc7D;w
 Lc;D;{
@@ -2812,6 +2801,7 @@ Q5rHg,>
 QD$`H
 QueryPerformanceCounter
 QueryPerformanceFrequency
+Quxzk>BSQH1
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -3033,6 +3023,7 @@ TryAcquireSRWLockExclusive
 Trying to find a flex controller (%s) that doesn't actually exist in the model.
 Tuesday
 TypeManager
+U	V_stricmp_fast
 U(fff
 UA>N0Wl
 UATAUAVAWH
@@ -3099,7 +3090,6 @@ Usage: %s <world_name> <lump_name>
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_stricmp_fast
 V6'?C
 V6E>`"(5
 VATAUH
@@ -3183,6 +3173,7 @@ VoxelVisBlockOffset_t::KV3TransferLoad_Impl
 VoxelVisBlockOffset_t::KV3Transfer_DefaultKeys_Impl
 VoxelVisBlockOffset_t::Schema_VerifyBindingIsRegistered
 Vrad3_001
+W#)bs
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -3226,7 +3217,6 @@ World_t
 World_t::KV3TransferLoad_Impl
 World_t::KV3Transfer_DefaultKeys_Impl
 World_t::Schema_VerifyBindingIsRegistered
-WpE^>
 WriteConsoleW
 WriteFile
 X D8e
@@ -3246,6 +3236,7 @@ Y>kX>M
 YD$@f
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 Z\>z8
+Zb?T`/
 ZdN=Y
 Zod(^?
 [	UoA
@@ -3455,12 +3446,12 @@ curvature
 d$ D!
 d$ UAVAWH
 d$$9w
-d$$A;
 d$(D9i
 d$8E3
 d$8ff
 d$HA;
 d$IfD
+d$PE3
 d$PfE
 d$XE3
 d$XIc
@@ -3641,6 +3632,7 @@ l$ VWAVH
 l$ WAWH
 l$ WH
 l$$9L$(
+l$$A;
 l$$D;
 l$0A__
 l$0E2
@@ -4250,8 +4242,8 @@ t$`H9
 t$`L#
 t$`}[H
 t$`~#H
-t$hA9u
-t$hA;m
+t$hA94$
+t$hA;,$
 t$hE3
 t$hu7H
 t$pE3

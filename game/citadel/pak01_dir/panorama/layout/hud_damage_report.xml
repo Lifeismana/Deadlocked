@@ -25,10 +25,13 @@
 			</Panel>
 		</snippet>
 	</snippets>
-	<Panel class="HudDamageReport Minimized">
+	<Panel class="HudDamageReport">
 		<GlobalClassListener classes="gDetailView" />
 		<Panel id="ReportContents">
-			<Panel class="Header" onactivate="CitadelHudDamageReport_SetMinimized(false)">
+			<Panel class="Header">
+				<Panel class="OpenTab CompactnessToggle" onactivate="CitadelHudDamageReport_SetUICompactness(0)" />
+				<Panel class="OpenCompact CompactnessToggle" onactivate="CitadelHudDamageReport_SetUICompactness(1)" />
+				<Panel class="OpenFull CompactnessToggle" onactivate="CitadelHudDamageReport_SetUICompactness(2)" />
 				<CitadelHeroImage id="ViewingHeroImage" scaling="stretch-to-cover-preserve-aspect" heroimagestyle="vertical" />
 				<Label html="true" class="DamageReportHeader" text="#Citadel_HUD_DamageReport_DamageReceived" />
 				<Panel class="TimeControl">
@@ -41,7 +44,7 @@
 						<Label id="TimeOption30" class="TimeControlOption" value="30" text="#Citadel_HUD_DamageReport_Time30" />
 					</DropDown>
 				</Panel>
-				<Panel class="CloseButton" onactivate="CitadelHudDamageReport_SetMinimized(true)" />
+				<Panel class="CloseButton" onactivate="CitadelHudDamageReport_SetUICompactness(0)" />
 			</Panel>
 			<Panel class="DamageSection">
 				<Panel class="DamageControlRow DamageControls">
@@ -52,12 +55,18 @@
 					</Panel>
 				</Panel>
 				<Panel id="DamageByHero" class="DamageByHero" />
+				<Label class="TopDamageSources" text="#Citadel_HUD_DamageReport_TopDamageSources" />
 				<CitadelDamageRows id="DamageByAbility" />
 				<Panel id="DamagePieGraph" />
-				<Panel class="DamageTotal">
-					<Panel class="LabelArea">
-						<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_Total" />
-						<Label html="true" class="DamageValue" text="#Citadel_HUD_DamageReport_TotalDamageValue" />
+				<Panel class="Footer">
+					<Panel class="DamageTotal">
+						<Panel class="LabelArea">
+							<Label html="true" class="DamageDesc" text="#Citadel_HUD_DamageReport_Total" />
+							<Label html="true" class="DamageValue" text="#Citadel_HUD_DamageReport_TotalDamageValue" />
+						</Panel>
+						<Panel class="ShowMore" onactivate="CitadelHudDamageReport_SetUICompactness(2)">
+							<Label text="#Citadel_HUD_DamageReport_ShowMore" />
+						</Panel>
 					</Panel>
 				</Panel>
 			</Panel>

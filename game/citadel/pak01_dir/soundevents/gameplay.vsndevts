@@ -31,6 +31,7 @@
 			"sounds/ui/ui_get_gold_10.vsnd",
 			"sounds/ui/ui_get_gold_11.vsnd",
 		]
+		vsnd_duration = 1.505782
 	}
 	CurrencyChanged.Large = 
 	{
@@ -52,6 +53,7 @@
 			"sounds/ui/ui_get_gold_large_03.vsnd",
 			"sounds/ui/ui_get_gold_large_04.vsnd",
 		]
+		vsnd_duration = 2.286485
 	}
 	Player.GetGold = 
 	{
@@ -77,6 +79,7 @@
 			"sounds/ui/ui_get_gold_10.vsnd",
 			"sounds/ui/ui_get_gold_11.vsnd",
 		]
+		vsnd_duration = 1.505782
 	}
 	Player.ClaimOrb = 
 	{
@@ -365,8 +368,26 @@
 	Rejuv.Pickup = 
 	{
 		base = "Base.MapObjective"
-		volume = 0.000000
+		volume = -3.000000
 		vsnd_files = "sounds/gameplay/rejuv_shatter.vsnd"
 		vsnd_duration = 9.389569
+	}
+	MidBoss.Arrive = 
+	{
+		base = "Base.MapObjective"
+		volume = -6.000000
+		vsnd_files = "sounds/gameplay/midboss_arrive.vsnd"
+	}
+	MidBoss.LowHealth = 
+	{
+		base = "Base.MapObjective"
+		volume = -3.000000
+		vsnd_files = "sounds/gameplay/midboss_lowhealth.vsnd"
+	}
+	MidBoss.Death = 
+	{
+		base = "Base.MapObjective"
+		volume = -9.000000
+		vsnd_files = "sounds/gameplay/midboss_death.vsnd"
 	}
 }

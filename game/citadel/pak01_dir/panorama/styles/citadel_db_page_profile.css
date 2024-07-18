@@ -324,3 +324,30 @@ CitadelProfilePage
 	color: white;
 }
 
+#ForumButton
+{
+	vertical-align: bottom;
+	horizontal-align: center;
+	margin-bottom: 20px;
+	opacity: 0.3;
+	visibility: collapse;
+}
+
+.hasJoinedForum #ForumButton
+{
+	visibility: visible;
+}
+
+.ForumIcon
+{
+	width: 16px;
+	height: 16px;
+	wash-color: offBlack;
+	vertical-align: middle;
+	margin-top: 3px;
+	opacity: 1;
+	margin-right: 8px;
+	background-image: url("s2r://panorama/images/icons/icon_feedback.vsvg");
+	background-size: contain;
+}
+

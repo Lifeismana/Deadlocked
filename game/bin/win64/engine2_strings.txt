@@ -15,10 +15,10 @@
 	2	L	
 	8\$RH
 	9w0t*
+	;=nKM
 	?	Z	$	O
 	?	Z	Z	Z	Z	?	g	
 	?	Z	t	t	t	
-	@8=0 B
 	A;~,A
 	Animation data size %d (%d per tick).
 	CDemoStop"0
@@ -38,12 +38,11 @@
 	PFT_SOUND
 	Recording time %.1f,
 	Size %d (%d per tick).
-	T0.F
+	SvNQx
 	TYPE_BOOL
 	TYPE_ENUM
 	This is necessary to run!
 	V	!#
-	V_fopen
 	V_fopenUTF8
 	V_fprintf
 	V_ftell
@@ -273,16 +272,16 @@
  %4u client frames = %12s bytes
  %i refs
  'L>[
- (%i core%s)
  (%s%s)
  ('" 
  (08@HPX`hpx
  (08@HPX`j
- (08@HPXb
+ (08@HPXbp
  (08@HPZ
- (08@HR
+ (08@HRp
  (08@J
- (0X`hpz
+ (08@Jp
+ (0X`hpzp
  (IP "%s")
  (Texture)
  (You)
@@ -410,6 +409,8 @@
  Hc)L
  Hc1H
  Hc1L
+ Hc5<
+ Hc5mFM
  Hc9H
  Hc9I
  Hc9L
@@ -860,6 +861,7 @@
 #GameUI_ServerRejectSteam
 #GameUI_ServerRequireSteams
 #General_UnableToStartGame
+#JMeb
 #L9d$pt
 #L9eht
 #LoadingProgress_CompilingShaders
@@ -1037,7 +1039,6 @@ $tI(knN
 %128.128s : %8d bits (%8.3f bytes)
 %2.2f
 %2.2f%%
-%2d: proc group %u:%u, physical ID %d, core ID %d
 %2i/%2i on map %s
 %2i:%02i:%02i
 %3333D
@@ -1301,7 +1302,6 @@ $tI(knN
 %s_%04d%s%s
 %s_%u_slot%d
 %s_current.meta
-%u CPU%s
 %u MB
 %u/%u started, %u full, %u cancels / %u stops, %u fails%s
 %u:%u
@@ -1365,6 +1365,7 @@ $tI(knN
 'j%-A+
 'k|7O
 'u5Hc
+(	V_log10f
 ( ( HTTPRequestCompleted_t * ) pvParam )->m_hRequest == m_hRequest
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
@@ -1403,11 +1404,9 @@ $tI(knN
 (*MARK) must have an argument
 (*VERB) not recognized
 (*d/%
-(-AVX) 
 (0`hpx
 (27>?<:20./-(
 (4%I!
-(5W|/
 (64-bit process)
 (8GXgw
 (;^ |
@@ -1452,7 +1451,6 @@ $tI(knN
 (D$ r
 (D$0$
 (D$03
-(D$0@
 (D$0D
 (D$0H
 (D$0I
@@ -1484,7 +1482,6 @@ $tI(knN
 (L$ H
 (L$0D
 (L$@D
-(L$@H
 (L$PD
 (L$PH
 (L$PL
@@ -1643,9 +1640,8 @@ $tI(knN
 (|$`L
 (|$`u
 (|$pD
-(|$pE
 (|$pL
-)	V_log10f
+)	V_log2_uint
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
 )#GameUI_Disconnect_PureServer_ClientExtra
 )#GameUI_Disconnect_RemoteProblem_BadCrypt
@@ -1673,7 +1669,6 @@ $tI(knN
 )D$0L
 )D$0f
 )D$0fH
-)D$0u
 )D$@D
 )D$@H
 )D$@L
@@ -1788,7 +1783,6 @@ $tI(knN
 )t$`H
 )t$`I
 )t$p3
-)t$pD
 )t$pE
 )t$pE3
 )t$pH
@@ -1823,7 +1817,6 @@ $tI(knN
 )|$pH
 )|$pL
 )|B?d!
-*	V_log2_uint
 *                                                  *
 *  Connections will be restricted to LAN only.     *
 *  Logging into anonymous game server account.     *
@@ -1840,7 +1833,6 @@ $tI(knN
 *.vpk
 *56e?
 *;Eot	;Ew
-*>>Zn
 *?333?
 *?5z(?
 *HcV$H+
@@ -1900,15 +1892,10 @@ $tI(knN
 +port
 +shift
 +w?FFv?
-,  Features: 
 , "%s"
-, Frequency: %.01f %s
 , Position
-, SMT/HT index %d
-, efficiency class %lld
 , from: 
 , localization %s
-, max frequency %.01f %s
 , not just within "
 , positional keys are enabled
 , setpos %0.2f %0.2f %0.2f; setang %0.2f %0.2f %0.2f
@@ -1934,6 +1921,7 @@ $tI(knN
 ,d3c&
 ,j.b0^2`4^6`8^:f<
 ,p	X4
+-	V_logf
 - plays a demo file
 -#GameUI_Disconnect_LocalProblem_NetworkConfig
 -%s %d
@@ -2153,16 +2141,17 @@ $tI(knN
 -width
 -windowless
 -worldwide
-.	V_logf
 ................................................................................
 ...<truncated>...
 ../src/shaders
 ..\content
 ..om?
 .00cfg
-.5^K6
+.5,qF
+.5NP6
 .7=-l
 .9GXdx
+.='qF
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
 .?AU?$_InitialTaskHandle@XV<lambda_60c5de84e69e46aa92419d47e2f3ad51>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -3345,21 +3334,25 @@ $tI(knN
 /%d/full?tick=%d
 /%d/start
 /%d/start?tick=%d&tps=%.1f&map=%s&keyframe_interval=%g&protocol=%d
-/-@P0
+/-YT0
 /0v%H
 /2GG>!B
-/5;m7
-/5Ln7
-/5Qp7
-/5Zr7
+/5+r7
+/5<s7
+/5Au7
+/5Jw7
+/5{|!
 /=LZjw
 />58d%
 />Oas
 />_pE a
 /B9A~_
 /BNA~_
+/BO+O+u
 /CPrT
 /F0sj
+/Gb@y
+/I5!o
 /M9 t*M
 /R?jjU?
 /TF<)VGy#WH
@@ -3379,9 +3372,10 @@ $tI(knN
 00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
-08:03:33
+08:02:28
 08@HP
 08@HR
+08@Jp
 09D*0}
 09D*0} D
 09D*0}"C
@@ -3507,7 +3501,7 @@ $tI(knN
 220801000000Z
 230714000000Z
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240711150637Z0/
+240718150442Z0/
 241009235959Z0a1
 25.CSource2Metrics_MatchPerfSummary_Notification.Client
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -3534,7 +3528,6 @@ $tI(knN
 3D9sdt	H
 3E8fXt
 3EgA#
-3Hc-#
 3L97t	H
 3L9uHt
 3YA1@
@@ -3547,8 +3540,6 @@ $tI(knN
 4	KcD
 4$u.A
 456789:;<=
-4D;5$tX
-4D;=ExX
 4DXgu~
 4S=?8_=i
 4YA1H
@@ -3570,6 +3561,7 @@ $tI(knN
 6GQ^h~
 6I]Dc
 6KT3c7
+6L9-W?A
 6OB,n_
 6YA1H
 6p7"'
@@ -3653,6 +3645,7 @@ $tI(knN
 8w>Hc
 8|u9H
 8}WW`
+9	V_powf
 9)~3H
 9)~4H
 9)~P3
@@ -3662,11 +3655,9 @@ $tI(knN
 90u(H
 90~_H
 92~>3
-953`F
-95DFP
-95_:d
-95h@d
-95y1T
+95d;d
+95hnF
+95mAd
 98t H
 98~(H
 98~+H
@@ -3674,7 +3665,6 @@ $tI(knN
 99~CE
 9;tcH
 9=aA\E
-9=r9K
 9>~ZH
 9?=d>?
 9?Gw8?Q
@@ -3746,7 +3736,7 @@ $tI(knN
 9|$P}
 9|$XuT
 9~h~=H
-:	V_powf
+:	V_qsort
 :    processpacketentities: server executed through command %d
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
@@ -3763,13 +3753,12 @@ $tI(knN
 :PASSuL
 :Tu)f
 :^V=/
-;	V_qsort
+;	V_qsort_s
 ;)u1D
 ;)} H
 ;)}FH
 ;.u1L
 ;</t3<\t/
-;=m8 
 ;?%L+
 ;?0123456789:;<=>?
 ;?Bh9?
@@ -3812,7 +3801,6 @@ $tI(knN
 ;|.(|
 ;~Lt5E
 <	8t R
-<	V_qsort_s
 <	u"H
 <	u2H
 <	u[H
@@ -3877,7 +3865,6 @@ $tI(knN
 =imb;D
 =rF`JXKXWJYB[Cd;l2x(z%a+N2SNTQXKVJWGZI]J]Jm(r$u"u"
 =rIQU
->-^7F
 >-ufH
 >0<0:
 >0|t?L
@@ -4069,6 +4056,7 @@ $tI(knN
 ?GetCounterValue@CVProfile@@QEBA_KH@Z
 ?GetCurrentPointer@CMiniDumpComment@@QEAAPEADXZ
 ?GetDataType@KeyValues@@QEBA?AW4types_t@CKeyValues_Data@@PEBD@Z
+?GetDescription@CPUInformation@@QEBAPEBDPEAVCBufferString@@I@Z
 ?GetExtensionAlloc@CUtlString@@QEBA?AV1@XZ
 ?GetFirstSubKey@KeyValues@@QEAAPEAV1@XZ
 ?GetFirstTrueSubKey@KeyValues@@QEAAPEAV1@XZ
@@ -4076,7 +4064,6 @@ $tI(knN
 ?GetFloat@KeyValues@@QEBAMPEBDM@Z
 ?GetForModify@CUtlString@@QEAAPEADXZ
 ?GetGameInfoBool@@YA_NPEBD_N@Z
-?GetIAFamilyModelStepping@CPUInformation@@SA_NPEAI00@Z
 ?GetIPHostByteOrder@netadr_t@@QEBAIXZ
 ?GetIPNetworkByteOrder@netadr_t@@QEBAIXZ
 ?GetId@CStableSymbolTable@@QEAAHPEBDPEA_N@Z
@@ -4272,6 +4259,7 @@ $tI(knN
 ?ulJcL*
 ?upHcN
 ?{Q}<
+@	V_roundf
 @ 9B tDA
 @ Current  :  %s
 @ H;}
@@ -4283,7 +4271,7 @@ $tI(knN
 @.data
 @.reloc
 @08@HPX`hpx
-@08N<
+@08N\
 @0HcB
 @8+u_
 @8,7u
@@ -4297,6 +4285,7 @@ $tI(knN
 @88uoH
 @89A8H
 @8;A8w
+@8=ak]
 @8>t`3
 @8HcB
 @8i(u
@@ -4561,6 +4550,7 @@ $tI(knN
 @fB9T
 @fD9D
 @fE9d
+@htpw
 @i-kuX
 @l?O#m?
 @r4Hc
@@ -4578,7 +4568,6 @@ A	@ A
 A	BlA;rh~
 A	BxD
 A	PHD
-A	V_roundf
 A 2B $
 A D	A
 A H+H(H
@@ -4733,7 +4722,6 @@ AUAVAWH
 AUAVH
 AUUATAVAWH
 AVAWH
-AVX2 
 AXfA;
 A\^[]
 A\_^[]
@@ -5405,11 +5393,11 @@ C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
 C:\buildworker\citadel_staging_win64\build\src\tier2\utlstreambuffer.cpp
 C<:n$
 C<;C4A
-C=-(X
-C=-BX
-C===X
-C=]+X
-C=}2X
+C==4X
+C=M'X
+C=]@X
+C=m:X
+C=}/X
 C>YPH>z
 C@H98t$H
 C@L9n0t
@@ -6191,7 +6179,6 @@ CLoopTypeSimple::DeallocateLoopMode
 CLoopTypeSimple::OnLoopActivate
 CLoopTypeSimple::OnLoopDeactivate
 CLoopTypeSimple::Shutdown
-CMOV 
 CMapListService::BuildList
 CMemAllocSystemInitialize
 CMemDump::AddFieldStats
@@ -8104,7 +8091,7 @@ D$HfA;
 D$HfD
 D$Ht=H
 D$LD;
-D$LE3
+D$LL;
 D$P%A
 D$P+D$d
 D$P;L$H
@@ -8129,6 +8116,7 @@ D$PfI
 D$Pu!M
 D$T@B
 D$TA;
+D$TE3
 D$TtGA
 D$W@B
 D$XA+
@@ -8220,7 +8208,6 @@ D$xM+
 D$xf;
 D$xff
 D$|E3
-D$|L;
 D(@f;
 D)4$E+
 D)D$x
@@ -8268,7 +8255,6 @@ D8(t>H
 D8(t?
 D8*t	H
 D8,2u
-D8-1hG
 D8.uBH
 D8/u#L
 D80t$A
@@ -8281,14 +8267,13 @@ D83t0H
 D840uA
 D84:u
 D84>u
+D85}j[
 D87t3
 D88t6
 D88tXE9>~S
 D88tk
 D88u	H
 D8<8u
-D8=\ja
-D8=eL[
 D8B9L
 D8C0H
 D8C8u
@@ -8307,7 +8292,6 @@ D8c&t
 D8c8u
 D8d$X
 D8fLt
-D8h	}
 D8h*t6H
 D8i(u
 D8i*t8H
@@ -8340,12 +8324,11 @@ D8~"u@
 D9	~OE
 D9	~SE
 D9 t=
-D9%%5X
-D9%Z@!
+D9%BH!
 D9&t_I
 D9(t&H
 D9(tj
-D95CwX
+D95db;
 D97~5
 D9>~%H
 D9@(|
@@ -8654,6 +8637,7 @@ Dumped stack stats struct "%s" to file "%s"
 Duplicate engine service named "%s" registered!
 Duplicate loop named "%s" registered!
 D|$0H
+E	V_sincosf
 E @8pHtD9s|~?L
 E D8xKtgA
 E D9{(
@@ -8675,7 +8659,7 @@ E0t H
 E0u2H
 E7D90|
 E80t"A
-E8D95
+E8D95i
 E8XCtXMcp8E
 E8a(u
 E8eht
@@ -9028,9 +9012,7 @@ ExternalNameForInternalType
 Extra arguments given after name
 E|$0H
 E|$@H
-E|$@L
-F	@t#
-F	V_sincosf
+E|$PL
 F	t,P
 F 9F tDA
 F @8pKuNH
@@ -9052,7 +9034,6 @@ F,9G,t
 F,A+F<Hc
 F,H9C
 F,HcF0H
-F/M/S %u/%u/%u 
 F09G0t
 F0HcF4H
 F49E`u~E3
@@ -9065,7 +9046,6 @@ FALSE
 FATAL
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to register all schema data: %s
-FCMOV 
 FCVAR_CHEAT cvars reverted to defaults (sv_cheats disabled).
 FI	N(L
 FK	N(L
@@ -9314,6 +9294,7 @@ Friday
 Full Frame
 FullFrameSplit tick=%d, chunk=%d of %d
 Function: %s
+G	V_sinf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -9330,13 +9311,11 @@ G0;F0
 G0HcH
 G2*&#!
 G4Lcw`
-G5w;H
 G8$7u
 G89D$`t
 G8D8`au
 G9D7 u
 G;$.|
-G=e;H
 G@9D$`t
 G@L;D$hu
 GAMEBIN
@@ -9492,6 +9471,7 @@ GetAsNumeric() - unsupported type '%s' (%d)!
 GetAvailableAddonMaps failed to find any maps in the '%s' addon - trying fallback maps:
 GetBasicType() == KV3_BTYPE_TABLE
 GetBool
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetClassBaseline
@@ -9556,7 +9536,6 @@ GetNumberOfConsoleInputEvents
 GetOEMCP
 GetObjectA
 GetPVSForSpawnGroup( handle )
-GetPerformanceAndEfficiencyCoreCount
 GetPlayerNetworkIDString
 GetProcAddress
 GetProcessHeap
@@ -9619,6 +9598,7 @@ Gh+OL+
 Giz{~z
 Gl$HM
 Glagolitic
+GlobPool
 Going to tick %u...
 Got input callback of %d samples but only have %d samples worth of space in the buffer.
 Got net_Disconnect_Legacy ?  Set pending disconnect %d:%s
@@ -9647,7 +9627,6 @@ H	CHD
 H	CHI
 H	CHL
 H	FHL
-H	V_sinf
 H 8YKt
 H 8YKt	
 H @8iKt
@@ -9707,20 +9686,22 @@ H9(tJA
 H9(tO
 H9(t`A
 H9+t	H
+H9-^oY
 H9/t	H
 H92tBA
 H93t	H
-H955gF
-H95GTM
-H95ZT:
-H95w!=
+H95"y
+H95&lF
+H95X|
+H95gYM
+H95||
 H97t	H
 H97u+A
 H98t2
 H98t6H
 H9;t	H
-H9=e? 
-H9={*]
+H9=Ci\
+H9=QD 
 H9>u/H
 H9A s
 H9A u)M
@@ -10559,6 +10540,7 @@ IsValidLocale
 IsValidLocaleName
 Issue an rcon command.
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
+J	V_snprintf
 J89H8w
 J8qH*
 J9ez)
@@ -10578,13 +10560,11 @@ Javanese
 Jc< H
 JiYMm
 Joystick
-Jul 11 2024
+Jul 18 2024
 Jumping to random tick %d (%.2f min)
-Jun 27 2024
 Just an assert
 JustInTime Resource Spawn Group
 JustInTimeManifest
-K	V_snprintf
 K D9k
 K H9K0u
 K HcC$Hc
@@ -10698,7 +10678,7 @@ L$ UVWATAUAVAWH
 L$ UVWATAVAWH
 L$ UVWAVAWH
 L$ UVWH
-L$ UWATAVAWH
+L$ UWAUAVAWH
 L$ VH
 L$ VWATAUAVAW
 L$ VWAVH
@@ -10883,36 +10863,29 @@ L+H0H
 L+d$PI+
 L+i0I
 L9 tQ
-L9 t^D9%&
+L9 t^D9%
 L9#t	H
 L9#u/H
-L9%-b>
-L9%2`>
-L9%<_>
+L9%#LA
+L9%]f>
+L9%bd>
+L9%lc>
 L9&uyD
 L9't	H
 L9(tKH
 L9(tZ
-L9-E	?
-L9-P9A
 L90t-H
 L90u2
 L92tDA
-L95 GR
-L953:O
-L953uN
-L95;rV
-L95SiR
-L95ZFY
-L95`BR
-L95sTR
-L95ssN
-L95szN
+L95#VR
+L95S[R
+L95SvR
+L95s`R
+L95s{R
 L98t7
 L9;t	H
 L9;u	H
-L9=]8@
-L9={;.
+L9=%-F
 L9?t	H
 L9@ s
 L9BHA
@@ -10999,8 +10972,8 @@ L9}`t
 L9}ot
 L9}ou L
 L9}wt
-L;5Yx
-L;5du
+L;5H}
+L;5wy
 L;A r
 L;EPL
 L;Q s
@@ -11093,7 +11066,7 @@ LcO(H
 LcO@H
 LcOHH
 LcOhE
-LcS(D
+LcS0D
 LcT$@L
 LcT$hI
 LcW@E
@@ -11360,7 +11333,6 @@ Maximum queries per second to respond to from a single IP address.
 Maximum queries per second to respond to from anywhere.
 Maximum replay time in seconds
 Maximum supported image dimension is %u pixels
-MbP?fff?33s?{
 Mc,$E
 Mc4$A
 McB@A
@@ -11521,6 +11493,7 @@ NamePart
 NavGameTest001
 NavSystem001
 NcL7(J
+Nc\[r
 Need space between identifier and decimal point.
 Need space between number and identifier.
 Net: %s
@@ -11701,6 +11674,7 @@ Ordered constructor wrapped type has no default constructor.
 Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
 Oriya
+OsEA{
 Osmanya
 Other
 Other Players
@@ -11717,16 +11691,18 @@ Override Fog color: %f %f %f
 Overrides the SourceTV master root address.
 Overrides the max players reported to prospective clients
 Overriding minidump handler with Engine2MinidumpFunction
+P	V_sscanf
 P HcN 
 P Lc{8D;{H
 P#7)^
 P(D8e t H
 P(D8m t H
-P08@J
-P08N<
+P08@Jp
+P08N\
 P8L9e
 P:S;A
 P>q_Y~
+P?fff?33s?{
 P@HPX`hpx
 PA]A\[
 PA]_[
@@ -11758,7 +11734,6 @@ PA_A^_^[
 PA_A^_^]
 PAq=?Mp#
 PBDEMS2
-PCLMULQDQ 
 PCRE does not support \L, \l, \N{name}, \U, or \u
 PLACEHOLDER_VALUE
 PLATFORM
@@ -11989,7 +11964,7 @@ Poor man's restart: reload the current map from disk.
 Post Source2 Client
 PostProcessingSystem_001
 PpHc-
-PpHc58DQ
+PpHc5
 Pq?A6
 Pre Source2 Client
 Pre-match interface command from [U:1:%u]: %s
@@ -12080,7 +12055,6 @@ PxL9`
 Pz}b!
 P{}b=
 P}V<4 
-Q	V_sscanf
 Q%llx,
 Q0I;Q8t
 Q2XXR
@@ -12117,8 +12091,6 @@ R8_UINT
 R;876.
 RA+B(
 RCON Cmd: recv error (%s)
-RDTSC 
-RDTSCP 
 RENDER_SYSTEM_DLL_DX11
 RENDER_SYSTEM_DLL_EMPTY
 RENDER_SYSTEM_DLL_NONE
@@ -12409,9 +12381,6 @@ SPEED
 SPLIT%d
 SRCDS_STEAM_SERVER_APP_ID
 SSE and SSE2 are required.
-SSE2 
-SSE4.1 
-SSE4.2 
 STEAMAPPS_INTERFACE_VERSION008
 STEAMAUTH: Client %s not immediately kicked because sv_steamauth_enforce=%d
 STEAMAUTH: Client %s received failure code %d
@@ -13408,6 +13377,7 @@ Turn on demo debug spew.
 Type appears to be in generated pool but wasn't 
 Type is already registered: 
 T~YRVr
+U	V_stricmp_fast
 U t	Ak
 U(HcP
 U(fff
@@ -13678,9 +13648,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
-UyNd0
 U}g7x~
-V	V_stricmp_fast
 V/?[w8rV
 V0H;V8t
 V6E>`"(5
@@ -13813,6 +13781,7 @@ V_expf
 V_fclose
 V_fflush
 V_fmodf
+V_fopen
 V_stristr_fast( pAddonDirectory, "_addons" )
 V_strnicmp_fast( partial, "stackstats_dump ", 16 ) == 0
 V_~]	,
@@ -13860,8 +13829,8 @@ VoiceDataFormat_t
 Vrad3_001
 Vu?N\t?8Ws?vGr?
 VyBl=
+W	V_strlower_fast
 W(Lc0E
-W=ipM
 WARNING
 WARNING! TextConsole::Init: Could not attach console hook.
 WARNING:  FlushEntityPacket, %s
@@ -14036,7 +14005,6 @@ Writing vprof lite report to %s
 Wrong JPEG library version: library is %d, caller expects %d
 Wrote vis errors to %s
 Wrote_Screenshot
-X	V_strlower_fast
 X 843"8
 X @8u
 X D8e
@@ -14048,8 +14016,9 @@ X-Origin-Auth header of the broadcast POSTs
 X-Origin-Auth header of the broadcast1 POSTs
 X-Origin-Delay
 X-Reason
-X5?8@
-X5RJ6
+X5=4H
+X5BO6
+X5G=@
 X?/QY?s
 X?OsX?
 X@Hc@8H
@@ -14076,16 +14045,17 @@ XHco
 XL$tL
 X|$ A
 X|$8E
-Y%)W}
 Y0HcR
 Y0LcQ\M
-Y5!X0
-Y5)31
-Y5Cg@
-Y5cV0
-Y5i=5
+Y5	B5
+Y51\0
+Y5<T5
+Y5?71
+Y5Kl@
+Y5NxP
+Y5sZ0
 Y9"SD
-Y=Zg@
+Y=bl@
 Y>kX>M
 Y?'WY?
 YD$@f
@@ -14111,6 +14081,7 @@ Zod(^?
 Zpm"U
 Zq",9
 [	UoA
+[	V_strtod
 [ %d ]%n
 [%d] Changing player name to Steam name '%s'
 [%s] %d - %s (refcount %d)
@@ -14161,7 +14132,6 @@ Zq",9
 [server]
 [test]
 [unknown]
-\	V_strtod
 \ at end of pattern
 \$ @8t$(
 \$ ATAVAWH
@@ -14388,7 +14358,6 @@ Zq",9
 ] D9[D
 ] is an invalid data character in JavaScript compatibility mode
 ])6M>&
-]54mM
 ]>)2X
 ]?K[`?n
 ]HfD;
@@ -14468,7 +14437,6 @@ _whitelist.txt
 `+!]?
 `-uRQg
 `.rdata
-`2`&%
 `3Q"X
 `;k\|
 `;s\|
@@ -14505,7 +14473,7 @@ _whitelist.txt
 `A_][
 `A_^[
 `A__]
-`A__^
+`H95S-W
 `HcY8M
 `RTTI
 `anonymous namespace'
@@ -14518,6 +14486,7 @@ _whitelist.txt
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
+`htpw
 `local static guard'
 `local static thread guard'
 `local vftable constructor closure'
@@ -14631,6 +14600,7 @@ avg_packets_in
 avg_packets_out
 avg_ping_ms
 avisound 
+b	V_tanf
 b#M**y`Bl+o(u,{ x$w!
 b0xNA;;|E)!
 b?^Cy
@@ -14768,7 +14738,6 @@ built_from_cl
 built_from_cl.txt
 button_info
 bytes
-c	V_tanf
 c D9%
 c HcC8
 c [1>H'
@@ -15102,7 +15071,7 @@ d$pM9w0t$H
 d$pfI
 d$xD;
 d$xE3
-d$xLc%/8K
+d$xLc%?=K
 d$xff
 d$xu;H
 d8?":7?
@@ -15359,6 +15328,7 @@ f9,pu
 f9,~u
 f9<Au
 f9<Ju
+f9=<l
 f9D$@ugE3
 f9o&ttH
 f9s t
@@ -15671,7 +15641,6 @@ gpu_level,
 gpu_rendersystem_dll_name
 gpu_texture_memory_size_mb
 gpu_vendor_id
-gr	pT
 graph
 grep line for pattern, print out matching lines only
 group
@@ -16919,10 +16888,8 @@ o$D9+uG
 o$D9+uHA
 o$D9+uK
 o$D9+uL
-o%>3G
-o%E=G
-o%Y	I
-o=0h-
+o%%=G
+o= C-
 o? Bo?
 oD$ f
 oD$@H
@@ -17052,7 +17019,7 @@ p WATAUAVAWH
 p WAVAWH
 p*W4H
 p->m_nPlayerSlot == i
-p08@H^<
+p08@H^\
 p0R^G'
 p2p_listpeers
 p2p_ping "%s"
@@ -17240,6 +17207,7 @@ perftest.cfg
 permanent
 permanently
 permission denied
+pflOutValue
 php_class_prefix
 php_generic_services
 php_metadata_namespace
@@ -18205,7 +18173,6 @@ t$xfA9
 t$xt*3
 t%D8"t H
 t%D8=
-t%D8=6ja
 t%fE9
 t%fff
 t&A88t
@@ -18256,14 +18223,14 @@ t<HcA(3
 t<HcE
 t<dE;
 t<fff
-t=L95Bh[
+t=L95
 t?;tt?74t?
 t?Dlt?e
 t?HcS
 t@D8't;H
 tA9C0u<
 tAHcO4H
-tAL9=cwX
+tAL9=
 tCHcu
 tCR;\HdY\
 tEHcR
@@ -18282,7 +18249,7 @@ tLfff
 tMH9^xtGA
 tMI92uHM
 tML9l$H
-tO95F
+tO95V
 tPA;G
 tPHcM
 tQfD9 tK
@@ -18324,7 +18291,7 @@ table_t
 tables
 target_entity
 taxQ3
-tbD8%<
+tbD8%
 tbD8?t]
 tbJ9|
 tc@8*t^3
@@ -18517,10 +18484,11 @@ t~HcqH3
 t~Hc|$P
 u	9JL
 u	9wT
-u	@8-
+u	@8-~
 u	D8-
 u	HcB
 u	L9}
+u	V_tier0_strcmp
 u 9k(u
 u H9P r
 u H9T$ht
@@ -18546,6 +18514,7 @@ u,!T$(H!T$
 u,9\$0~LL
 u,L9g
 u-H;A
+u.95z
 u.H;A
 u.H;P
 u.m_bAsDelta
@@ -18610,7 +18579,7 @@ uWire <= UINT32_MAX
 uXL+uHL
 uZEeu
 uZH9C(H
-uZL9-a
+uZL9-
 u^Hcu
 u_L9u
 u`L9%
@@ -18715,7 +18684,6 @@ utlstringtoken
 uuHcK
 uwiE(x
 uzKs@>
-v	V_tier0_strcmp
 v A;o
 v I9?u@A
 v#fA;
@@ -19227,6 +19195,7 @@ z_AMC
 |nhZNLFE9-"
 |obXOF>82,'#
 |qke_XRLF@93-'!
+|xI%<
 |}6Hc
 } D;A4|
 } Dispatched EventAppShutdown_t
@@ -19258,6 +19227,7 @@ z_AMC
 }?RJ}?H
 }?tt}?
 }B;_$
+}Bp[/
 }HfD9#A
 }J;Ea
 }LfD;

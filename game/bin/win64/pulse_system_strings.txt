@@ -18,7 +18,6 @@
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
 	kE>fvw
-	n$-z`
 	wOIc
                           
     - %s 
@@ -245,6 +244,7 @@
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 +M<7>
 +Xt@(
++e#Ll
 +f)>0'
 +h->|
 +o'q)}
@@ -263,9 +263,6 @@
 -convars_visible_by_default
 -end of input-(
 -memory-
--sse2
--sse3
--sse4
 -tools
 -unknown source-
 -unknown source-(
@@ -456,7 +453,6 @@
 .xdata$x
 /-?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 />58d%
-/xYe2
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -494,7 +490,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240711145844Z0/
+240718145643Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -525,7 +521,6 @@
 6I]Dc
 6OB,n_
 70503
-7:hP0
 7?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@IV?$Local@VValue@v8@@@2@@Z
 7?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
@@ -545,6 +540,7 @@
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8_^][
+9	V_powf
 9)~P3
 98t H
 9>~,ff
@@ -560,15 +556,14 @@
 9|$`u
 9|$hu
 9~0~@H
-:	V_powf
 : lexer error %d :
+;	V_qsort_s
 ;.|@H
 ;G(uSL
 ;H9>&X
 ;I9}(tiH
 ;\$0t
 ;}9Lk
-<	V_qsort_s
 <	u%H
 <	u)Icn
 <	u2H
@@ -599,7 +594,6 @@
 =-?New@Context@v8@@SA?AV?$Local@VContext@v8@@@2@PEAVIsolate@2@PEAVExtensionConfiguration@2@V?$MaybeLocal@VObjectTemplate@v8@@@2@V?$MaybeLocal@VValue@v8@@@2@UDeserializeInternalFieldsCallback@2@PEAVMicrotaskQueue@2@@Z
 =9?SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
 == PulseGraphDef ==
-=i!.q
 =imb;D
 =rIQU
 >0<0:
@@ -987,7 +981,6 @@ C:\buildworker\citadel_staging_win64\build\_build_\pulse_system\_vpc_pulse_syste
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.cpp
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.g
 C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr_eval_kv3.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr.h
 C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr_eval.h
 C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
@@ -2117,6 +2110,7 @@ Do not stop the current yielding node, but do not continue to the next node afte
 Domain: %s
 Double add of KV3Transfer interface '%s'
 Double-save to Member '%s'
+E	V_sincosf
 E0HcH
 E0Lc`
 E8q(u
@@ -2238,7 +2232,7 @@ External system requesting an int from the test graph
 External system requesting an int from the test graph (variant)
 ExternalNameForInternalType
 Extraneous token
-F	V_sincosf
+F	V_sind
 F.3gL
 F.3gM
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
@@ -2315,7 +2309,6 @@ Func( %s )
 Function signature which has been replaced after compilation.
 Function signature which will be replaced after compilation.
 Functions not supported in this evaluator (%s)
-G	V_sind
 G fA;
 GD$(H
 GD$8H
@@ -2389,8 +2382,8 @@ GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
 GetBlackboardReference R%d <- BR%d (%s)
+GetBuildbotModuleBaselineVersion
 GetCPInfo
-GetCPUInformation
 GetClassNameFromBindableName( pQualifiedName, &className )
 GetCommandLineA
 GetCommandLineW
@@ -2433,6 +2426,7 @@ GetTypeInfo( nType ).m_nSizeInBytes <= sizeof( s_pUndefinedValue )
 GetUnqualifiedBindableName::<lambda_1>::operator ()
 GetVar R%d <- V%d (%s)
 Gl$HH
+Gp?wi
 Green
 Gt$8I
 Gt$HL
@@ -2705,12 +2699,12 @@ IsValid()
 IsValidCodePage
 IsValidIndex( i )
 IsWaitingOnAutoWake( pCursor )
+J	V_snprintf
 J>@G_
 JUMP_COND
 January
 Jump to Instr I%d
 JumpOrLeap( C%d:I%d )
-K	V_snprintf
 K USAUAVI
 K&>.yC
 K-?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z
@@ -2949,7 +2943,6 @@ MakeStringToken
 MapListService_001
 March
 MaterialUtils_001
-MathLib_Init
 Max Float
 Max Int
 Maximum of two values (float)
@@ -2988,7 +2981,6 @@ Missing publicMethods declaration.
 Missing required transfer interface: %s
 Missing token
 Missing token %s
-MjrNm
 Mod R%d <- R%d %% R%d
 ModelDocUtils001
 Monday
@@ -3172,14 +3164,15 @@ PVAL_TRANSFORM is not yet supported in SourceTS.
 PVAL_TYPESAFE_INT
 PVAL_VEC3
 PXH9F 
-Panel ID
 PanelID
 Panorama Panel Handle
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
 Param
+Parent Map Entity
 Parent Map: %s
+Parent XML Panel
 Parser encountered %d error(s)
 ParticleSystemMgr003
 Pause
@@ -3360,7 +3353,6 @@ SINGLE_LINE_COMMENT
 SINGLE_QUOTED_STRING
 SINGLE_QUOTE_CHAR
 SQUARE
-SSE and SSE2 are required.
 STRING_CHAR
 SUATH
 SUAVH
@@ -3685,6 +3677,7 @@ Tuesday
 Turtle Graphics Domain
 TurtleGraphics
 Typesafe Int
+U	V_stricmp_fast
 U-?New@Integer@v8@@SA?AV?$Local@VInteger@v8@@@2@PEAVIsolate@2@H@Z
 UATAUAVAWH
 UATAVH
@@ -3758,7 +3751,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
-V	V_stricmp_fast
 V6E>`"(5
 V8ToVariant
 VAUAWH
@@ -3868,8 +3860,6 @@ Y9"SD
 Yield, Resume=%s
 YpHcAhHk
 Z!?IsArray@Value@v8@@QEBA_NXZ
-ZmOz#
-ZnBKef
 [ Chunk%d ]
 [ written by I%d last-read I%d ]
 [***INVALID INSTRUCTION %d***]
@@ -3925,7 +3915,9 @@ ZnBKef
 \$`E3
 \$hHc
 \$xu3M
+\9zWg
 \??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
+\C=KC
 \T$,t
 \T$<t
 \T$Dt
@@ -5006,5 +4998,6 @@ y\PD>!
 }afff
 }gA8_
 }xMc7E;w
+~]3E.
 ~qj#k"
 ~t&LN

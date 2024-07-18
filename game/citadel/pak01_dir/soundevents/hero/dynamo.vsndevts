@@ -390,10 +390,7 @@
 	{
 		base = "Base.Ability"
 		volume = -3.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_set_mixlayer = 1.000000
-		mixer_mixlayer_amount_manual = 1.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_loop.vsnd"
 		vsnd_duration = 6.689433
 	}
@@ -646,10 +643,6 @@
 	{
 		base = "Base.Ability"
 		volume = 1.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_mixlayer_amount_manual = 1.000000
-		mixer_set_mixlayer = 1.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_cast.vsnd"
 		vsnd_duration = 1.933674
 	}
@@ -657,18 +650,53 @@
 	{
 		base = "Base.Ability"
 		volume = 1.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_set_mixlayer = 1.000000
-		mixer_mixlayer_amount_manual = 1.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_prestomp.vsnd"
+		mix_layer_amount_over_time = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				0.067529,
+				0.000000,
+				0.000000,
+				6.891088,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				0.212644,
+				1.000000,
+				0.131315,
+				0.131315,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				0.342672,
+				0.000000,
+				-7.690609,
+				-7.690609,
+				3.000000,
+				1.000000,
+			],
+		]
 		vsnd_duration = 0.377075
 	}
 	Dynamo.A1.Stomp.Explode = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_hit.vsnd"
 		vsnd_duration = 1.559161
 	}
@@ -684,9 +712,7 @@
 	{
 		base = "Base.Ability"
 		volume = -3.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_set_mixlayer = 1.000000
-		mixer_mixlayer_amount_manual = 1.000000
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_loop.vsnd"
 		vsnd_duration = 6.689433
@@ -695,7 +721,6 @@
 	{
 		base = "Base.Ability"
 		volume = -7.000000
-		mixer_mixlayer_to_set = ""
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_end.vsnd"
 		vsnd_duration = 1.412993
@@ -704,11 +729,8 @@
 	{
 		base = "Base.Ability"
 		volume = 1.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_set_mixlayer = 1.000000
-		mixer_mixlayer_amount_manual = 1.000000
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		volume_enemy_targeting_boost = 0.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a4_singularity_cast_01.vsnd"
 		vsnd_duration = 5.050567
 	}
@@ -724,10 +746,7 @@
 	{
 		base = "Base.Ability"
 		volume = 0.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_set_mixlayer = 5.000000
-		mixer_mixlayer_amount_manual = 1.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		volume_enemy_targeting_boost = 0.000000
 		volume_offset_opponent = -3.000000
 		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_cast.vsnd"

@@ -543,19 +543,66 @@
 					occlusion_scale_non_player = 
 					{
 						data_type = "float"
-						value = ".9"
+						value = "1.0"
 						_system_properties = 
 						{
 							property_group = "Perspective"
 							display_group = "advanced"
 						}
 					}
-					mixer_set_mixlayer_for_perspective = 
+					mixer_mixlayer_perspective_player = 
 					{
-						data_type = "float"
-						value = "-1"
+						data_type = "string"
+						value = ""
 						_system_properties = 
 						{
+							display_group = "Normal"
+							property_group = "Perspective - Mix Layers"
+						}
+					}
+					mixer_mixlayer_perspective_team = 
+					{
+						data_type = "string"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "Normal"
+							property_group = "Perspective - Mix Layers"
+						}
+					}
+					mixer_mixlayer_perspective_opponent = 
+					{
+						data_type = "string"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "Normal"
+							property_group = "Perspective - Mix Layers"
+						}
+					}
+					mixer_mixlayer_perspective_neutral = 
+					{
+						data_type = "string"
+						value = ""
+						_system_properties = 
+						{
+							display_group = "Normal"
+							property_group = "Perspective - Mix Layers"
+						}
+					}
+					mix_layer_amount_over_time = 
+					{
+						data_type = "float6"
+						soundevent_data = "true"
+						value = 
+						[
+							"[ 0.0, 1.0, 0.0, 0.0, 0.0, 0.0 ]",
+							"[ 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ]",
+						]
+						_system_properties = 
+						{
+							display_group = "advanced"
+							display_edit_type = "field_curve_2d_editor"
 							property_group = "Perspective - Mix Layers"
 						}
 					}
@@ -806,6 +853,46 @@
 			},
 			
 			{
+				name = "mix_layer_string_switch"
+				operator = "logic_perspective_switch_string"
+				input_participant_perspective = "@citadel_find_perspective::game_entity_perspective.output"
+				input_player_value = "@public.mixer_mixlayer_perspective_player"
+				input_team_value = "@public.mixer_mixlayer_perspective_team"
+				input_opponent_value = "@public.mixer_mixlayer_perspective_opponent"
+				input_neutral_value = "@public.mixer_mixlayer_perspective_neutral"
+			},
+			
+			{
+				name = "mix_layer_persepective_not_empty"
+				operator = "math_string"
+				input_execute = "1"
+				input1 = "@mix_layer_string_switch.output"
+				input2 = ""
+				apply = "not_equal"
+			},
+			
+			{
+				name = "get_event_info"
+				operator = "soundevent_get_info"
+			},
+			
+			{
+				name = "remap_mix_layer_amount_over_time"
+				operator = "math_curve_2d"
+				input = "@get_event_info.output_elapsed_time"
+				public_field_name = "public.mix_layer_amount_over_time"
+			},
+			
+			{
+				name = "mix_layer_amount_over_time_mult"
+				input_execute = "1.0"
+				operator = "math_float"
+				apply = "mult"
+				input1 = "@mix_layer_persepective_not_empty.output"
+				input2 = "@remap_mix_layer_amount_over_time.output"
+			},
+			
+			{
 				name = "get_entity_relevance_value"
 				operator = "entity_info_relevance"
 				input_execute = "1"
@@ -858,30 +945,6 @@
 				apply = "max"
 				input1 = "@remap_volume_falloff_floor.output"
 				input2 = "@math_enemy_targeting_volume_floor.output"
-			},
-			
-			{
-				name = "mixlayer_use_perspective"
-				operator = "math_float"
-				apply = "greater_than_or_equal"
-				input1 = "@public.mixer_set_mixlayer_for_perspective"
-				input2 = "0"
-			},
-			
-			{
-				name = "mixlayer_not_match_perspective"
-				operator = "math_float"
-				apply = "not_equal"
-				input1 = "@public.mixer_set_mixlayer_for_perspective"
-				input2 = "@citadel_find_perspective::game_entity_perspective.output"
-			},
-			
-			{
-				name = "mixlayer_should_disable"
-				operator = "math_float"
-				apply = "and"
-				input1 = "@mixlayer_use_perspective.output"
-				input2 = "@mixlayer_not_match_perspective.output"
 			},
 			
 			{
@@ -966,10 +1029,20 @@
 						data_type = "float"
 						value = "@switch_pitch_external.output"
 					}
-					mixer_mixlayer_disable = 
+					mixer_mixlayer_to_set = 
+					{
+						data_type = "string"
+						value = "@mix_layer_string_switch.output"
+					}
+					mixer_set_mixlayer = 
 					{
 						data_type = "float"
-						value = "@mixlayer_should_disable.output"
+						value = "@mix_layer_persepective_not_empty.output"
+					}
+					mixer_mixlayer_amount_manual = 
+					{
+						data_type = "float"
+						value = "@mix_layer_amount_over_time_mult.output"
 					}
 					send_name = 
 					{

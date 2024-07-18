@@ -86,48 +86,102 @@
 	opacity: 1;
 }
 
-.HudDamageReport.Minimized
+.HudDamageReport.Tab
 {
+	width: fit-children;
 	margin-right: 0px;
 }
 
-.connectedToHeroTesting .HudDamageReport.Minimized
+.connectedToHeroTesting .HudDamageReport.Tab
 {
 	vertical-align: bottom;
 	margin: 0px;
 	margin-bottom: 100px;
 }
 
-.HudDamageReport.Minimized .DamageSection,.HudDamageReport.Minimized .TimeControl
+.HudDamageReport.Tab .DamageSection,.HudDamageReport.Tab .TimeControl
 {
 	visibility: collapse;
 }
 
-.HudDamageReport.Minimized .Header .DamageReportHeader
+.HudDamageReport.Tab .Header .DamageReportHeader
 {
 	font-size: 18px;
 	margin-right: 0px;
 }
 
-.HudDamageReport.Minimized .Header .CloseButton
+.HudDamageReport.Tab .Header .CloseButton
 {
 	visibility: collapse;
 }
 
-.HudDamageReport.Minimized .Header #ViewingHeroImage
+.HudDamageReport.Tab .Header #ViewingHeroImage
 {
 	max-height: 40px;
 	margin: 4px;
 }
 
-.HudDamageReport.Minimized #ReportContents
+.HudDamageReport.Tab #ReportContents
 {
 	opacity: 0.8;
 }
 
-.Minimized.HudDamageReport
+.HudDamageReport.Compact
 {
 	width: fit-children;
+	margin-right: 0px;
+}
+
+.HudDamageReport.Compact .TimeControl
+{
+	visibility: collapse;
+}
+
+.HudDamageReport.Compact .Header .DamageReportHeader
+{
+	font-size: 18px;
+	margin-right: 0px;
+}
+
+.HudDamageReport.Compact .Header #ViewingHeroImage
+{
+	max-height: 40px;
+	margin: 4px;
+}
+
+.HudDamageReport.Compact .DamageByHero
+{
+	visibility: collapse;
+}
+
+.HudDamageReport.Compact .Header
+{
+	width: 400px;
+}
+
+.HudDamageReport.Compact .TopDamageSources
+{
+	visibility: collapse;
+}
+
+.HudDamageReport.Tab .Header .OpenCompact
+{
+	visibility: visible;
+}
+
+.HudDamageReport.Compact .Header .OpenFull
+{
+	visibility: visible;
+}
+
+.HudDamageReport.Full .ShowMore
+{
+	visibility: collapse;
+}
+
+.HudDamageReport.Full .Header .OpenTab
+{
+	visibility: visible;
 }
 
 .HudDamageReport
@@ -166,12 +220,12 @@
 	opacity: 1;
 }
 
-.HudDamageReport.in_item_shop.Minimized #ReportContents
+.HudDamageReport.in_item_shop.Tab #ReportContents
 {
 	opacity: 1;
 }
 
-.HudDamageReport.in_item_shop.Minimized .Header
+.HudDamageReport.in_item_shop.Tab .Header
 {
 	margin-left: 0px;
 	padding: 10px;
@@ -195,7 +249,15 @@
 	flow-children: right;
 	vertical-align: middle;
 	background-color: #10130D;
-	height: 80px;
+	height: 70px;
+	transition-property: brightness,opacity;
+	transition-duration: 0.1s;
+}
+
+.HudDamageReport .Header:hover
+{
+	brightness: 1.3;
+	opacity: 1;
 }
 
 .HudDamageReport .Header #ViewingHeroImage
@@ -211,9 +273,10 @@
 	vertical-align: middle;
 	font-weight: bold;
 	margin: 4px;
+	margin-left: 10px;
 }
 
-.Minimized .HudDamageReport .Header .DamageReportHeader
+.Tab .HudDamageReport .Header .DamageReportHeader
 {
 	font-size: 16px;
 }
@@ -247,6 +310,14 @@
 	pre-transform-scale2d: 1.2;
 }
 
+.HudDamageReport .Header .CompactnessToggle
+{
+	width: 100%;
+	height: 100%;
+	ignore-parent-flow: true;
+	visibility: collapse;
+}
+
 .HudDamageReport .DamageSection
 {
 	width: 100%;
@@ -255,12 +326,11 @@
 
 .HudDamageReport .DamageControlRow
 {
-	width: 80%;
+	width: 100%;
 	flow-children: right;
 	horizontal-align: center;
 	background-color: #00000050;
-	padding: 4px 0px;
-	margin-left: 0px;
+	padding: 4px 8px;
 }
 
 .HudDamageReport .DamageControlRow .LabelArea
@@ -339,7 +409,7 @@
 	border: 1px solid #00000000;
 	background-color: #ffffff05;
 	border-radius: 3px;
-	opacity: 0.5;
+	opacity: 1;
 	transition-property: pre-transform-scale2d;
 	transition-duration: 0.05s;
 	transition-timing-function: ease;
@@ -386,6 +456,20 @@
 {
 	flow-children: down;
 	background-color: #00000050;
+}
+
+.HudDamageReport .DamageSection .TopDamageSources
+{
+	margin-top: 10px;
+	vertical-align: center;
+	horizontal-align: center;
+	font-weight: semi-bold;
+	color: offWhite;
+}
+
+.NoDisplayedDamage .HudDamageReport .DamageSection .TopDamageSources
+{
+	visibility: collapse;
 }
 
 .HudDamageReport .DamageSection #DamageDealtPieGraph
@@ -447,23 +531,50 @@
 	brightness: 0.4;
 }
 
-.HudDamageReport .DamageSection .DamageTotal
+.HudDamageReport .DamageSection .Footer
+{
+	width: 100%;
+	flow-children: right;
+	background-color: offBlack;
+}
+
+.HudDamageReport .DamageSection .Footer .DamageTotal
 {
 	flow-children: right;
 	horizontal-align: center;
 	vertical-align: bottom;
 	padding: 10px;
-	width: 100%;
-	background-color: offBlack;
 }
 
-.HudDamageReport .DamageSection .DamageTotal .LabelArea
+.HudDamageReport .DamageSection .Footer .DamageTotal .LabelArea
 {
+	vertical-align: center;
 	flow-children: right;
 	horizontal-align: center;
 }
 
-.HudDamageReport .DamageSection .DamageTotal .DamageDesc
+.HudDamageReport .DamageSection .Footer .DamageTotal .ShowMore
+{
+	vertical-align: center;
+	background-color: #2e2e2e;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 5px;
+	margin-left: 20px;
+}
+
+.HudDamageReport .DamageSection .Footer .DamageTotal .ShowMore:hover
+{
+	brightness: 1.3;
+}
+
+.HudDamageReport .DamageSection .Footer .DamageTotal .ShowMore Label
+{
+	font-size: 16px;
+}
+
+.HudDamageReport .DamageSection .Footer .DamageTotal .DamageDesc
 {
 	text-align: center;
 	horizontal-align: center;
@@ -474,7 +585,7 @@
 	margin-right: 5px;
 }
 
-.HudDamageReport .DamageSection .DamageTotal .DamageValue
+.HudDamageReport .DamageSection .Footer .DamageTotal .DamageValue
 {
 	vertical-align: bottom;
 	font-size: 18px;
@@ -504,6 +615,11 @@
 	pre-transform-scale2d: 1.1;
 }
 
+.HudDamageReport.NoDisplayedDamage .DamageSection .TopDamageSources
+{
+	visibility: collapse;
+}
+
 .HudDamageRows
 {
 	padding: 10px;
@@ -522,7 +638,7 @@
 	flow-children: right;
 }
 
-.HudDamageRows #Data .AbilityDamageContainer #AbilityImage
+.HudDamageRows #Data .AbilityDamageContainer #RowImage
 {
 	width: 36px;
 	height: 36px;
@@ -542,15 +658,6 @@
 	background-color: #982F2F30;
 }
 
-.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .AbilityName
-{
-	vertical-align: center;
-	horizontal-align: left;
-	margin-left: 20px;
-	font-weight: semi-bold;
-	font-size: 17px;
-}
-
 .HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .DamageValue
 {
 	vertical-align: center;
@@ -565,9 +672,36 @@
 	background-color: #00000090;
 }
 
-.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .killing_blow
+.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .DamageBarInner
 {
-	ignore-parent-flow: true;
+	margin-left: 10px;
+	flow-children: right;
+	vertical-align: center;
+}
+
+.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .DamageBarInner #AbilityImage
+{
+	width: 30px;
+	height: 30px;
+	opacity: 0.9;
+	vertical-align: center;
+	margin: 3px;
+}
+
+.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .DamageBarInner .AbilityName
+{
+	vertical-align: center;
+	horizontal-align: left;
+	margin-left: 5px;
+	font-weight: semi-bold;
+	font-size: 17px;
+}
+
+.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .DamageBarInner .killing_blow
+{
+	vertical-align: bottom;
+	horizontal-align: right;
+	margin-left: 40px;
 	visibility: collapse;
 	background-size: contain;
 	background-position: center;
@@ -580,18 +714,28 @@
 	background-image: url("s2r://panorama/images/hud/dmgsummary_killing_blow.vsvg");
 }
 
-.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .isKillingBlow .killing_blow
+.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .DamageBarInner .Hits
 {
-	visibility: visible;
+	color: #ffffff50;
+	vertical-align: center;
+	horizontal-align: center;
+	margin-left: 10px;
+	font-size: 12px;
+	font-weight: semi-bold;
+	background-color: #00000070;
+	border-radius: 3px;
+	padding: -2px 5px 2px 5px;
+	visibility: collapse;
 }
 
-.HudDamageRows #Data .AbilityDamageContainer .AbilityDamageBarContainer .killing_blow Label
+.HudDamageRows.AllHeroDamage #Data .AbilityDamageContainer .AbilityDamageBarContainer .DamageBarInner .AbilityImage
 {
-	font-size: 16px;
-	font-weight: bold;
-	font-family: "Retail Demo";
-	color: #fff;
-	text-shadow: 0px 0px 3.0 #FF5656;
+	visibility: collapse;
+}
+
+.LocalPlayerDead .HudDamageRows #Data .AbilityDamageContainer.isKillingBlow .AbilityDamageBarContainer .killing_blow
+{
+	visibility: visible;
 }
 
 CitadelTooltipDamageReportHeroSummary #Contents,CitadelTooltipDamageReportAbilitySummary #Contents

@@ -415,6 +415,7 @@
 	Mods.Tech.Knockdown.Cast = 
 	{
 		base = "Base.Mod.Tier3.3d"
+		volume = 2.000000
 		vsnd_files = "sounds/mods/tech/knockdown/cast.vsnd"
 		vsnd_duration = 1.765896
 	}
@@ -424,51 +425,6 @@
 		delay_rand_min = 0.000000
 		vsnd_files = "sounds/mods/tech/knockdown/proj_lp.vsnd"
 		vsnd_duration = 2.602667
-	}
-	Mods.Tech.Knockdown.Impact = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Mods.Tech.Knockdown.Impact.Glitch"
-		soundevent_02 = "Mods.Tech.Knockdown.Impact.Stab"
-		soundevent_03 = "Mods.Tech.Knockdown.Impact.Sub"
-		volume = 1.000000
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-	}
-	Mods.Tech.Knockdown.Impact.Glitch = 
-	{
-		base = "Base.Mod.Tier3.3d"
-		volume_falloff_max = 3000.000000
-		vsnd_files = "sounds/mods/tech/knockdown/impact_glitch.vsnd"
-		vsnd_duration = 5.944208
-	}
-	Mods.Tech.Knockdown.Impact.Stab = 
-	{
-		base = "Base.Mod.Tier3.3d"
-		vsnd_files = "sounds/mods/tech/knockdown/impact_stab.vsnd"
-		vsnd_duration = 2.058729
-	}
-	Mods.Tech.Knockdown.Impact.Sub = 
-	{
-		base = "Base.Mod.Tier3.3d"
-		volume_falloff_max = 2000.000000
-		vsnd_files = "sounds/mods/tech/knockdown/impact_sub.vsnd"
-		vsnd_duration = 1.496521
-	}
-	Mods.Tech.Knockdown.Delay.Modifier.Dur.Lp = 
-	{
-		base = "Base.Mod.Tier3.3d"
-		volume_falloff_max = 3000.000000
-		volume = 0.000000
-		volume_fade_in = 0.500000
-		volume_fade_out = 0.500000
-		delay = 0.000000
-		delay_rand_min = -2.000000
-		delay_rand_max = 0.000000
-		pitch = 1.100000
-		vsnd_files = "sounds/mods/tech/knockdown/mod_dur_lp.vsnd"
-		vsnd_duration = 6.051542
 	}
 	Mods.Tech.Stasis.Bomb.Cast = 
 	{
@@ -858,6 +814,7 @@
 		hrtf_on = 1.000000
 		hrtf_mix = 1.000000
 		vsnd_files = "sounds/mods/tech/stasis/etherealshift_end.vsnd"
+		vsnd_duration = 4.200091
 	}
 	Mods.Tech.Stasis.Cast = 
 	{
@@ -878,15 +835,13 @@
 		hrtf_mix = 1.000000
 		pitch = 0.900000
 		vsnd_files = "sounds/mods/tech/stasis/etherealshift_cast.vsnd"
+		vsnd_duration = 4.036893
 	}
 	Mods.Tech.Stasis.Active = 
 	{
 		base = "Base.Ability"
 		volume = 1.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_mixlayer_amount_manual = 1.000000
-		mixer_set_mixlayer = 1.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		volume_fade_out = 0.600000
 		hrtf_mix = 1.000000
 		spread_min = 0.000000
@@ -894,5 +849,38 @@
 		spread_max = 250.000000
 		spread_min_value = 0.000000
 		vsnd_files = "sounds/mods/tech/stasis/etherealshift_active.vsnd"
+		vsnd_duration = 6.796032
+	}
+	Mods.Tech.Knockdown.Impact = 
+	{
+		base = "Base.Mod.Tier3.3d"
+		volume = 2.000000
+		vsnd_files = "sounds/mods/tech/knockdown/impact.vsnd"
+	}
+	Mods.Tech.Knockdown.Delay = 
+	{
+		base = "Base.Mod.Tier3.3d"
+		spread_min = 157.110092
+		spread_max_value = 0.896552
+		spread_max = 342.889923
+		spread_min_value = 0.000000
+		pitch = 1.000000
+		delay_rand_min = 0.000000
+		delay_rand_max = 0.000000
+		vsnd_files = "sounds/mods/tech/knockdown/delay.vsnd"
+	}
+	Mods.Tech.Knockdown.Select = 
+	{
+		base = "Base.Mod.Tier3.3d"
+		volume = -8.000000
+		vsnd_files = "sounds/mods/tech/knockdown/select.vsnd"
+	}
+	Mods.Tech.Knockdown.Select_Lp = 
+	{
+		base = "Base.Mod.Tier3.3d"
+		volume = -14.000000
+		volume_fade_out = 0.400000
+		volume_fade_in = 0.200000
+		vsnd_files = "sounds/mods/tech/knockdown/select_lp.vsnd"
 	}
 }

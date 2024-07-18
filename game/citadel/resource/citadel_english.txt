@@ -265,8 +265,17 @@
 		"Citadel_Player_Level_WeaponPower"							"<span class=\"boldText\">+{s:weapon_bonus}% Base Bullet Damage</span>, <span class=\"boldText\">+{s:melee_bonus}% Base Melee damage</span> and <span class=\"boldText\">+{s:health_bonus} Max Health </span>"		
 		"Citadel_Player_Level_APShort"								"AP"
 		"Citadel_Player_Level_AbilityUnlocksShort"					"Ability Unlock"
-		"Citadel_Player_Level_PowerIncrease"						"Power Increase"		
 		"Citadel_Player_Level_PowerIncreases"						"Power Increases"
+		"Citadel_Player_Level_PowerIncreaseGrants"					"Each Power Increase grants:"
+		"Citadel_Player_Level_Legend"								"Legend:"
+		"Citadel_Player_Level_AbilityUnlock"						"Ability Unlock"
+		"Citadel_Player_Level_PowerIncrease"						"Power Increase"
+		"Citadel_Player_Level_AP"									"AP"
+		"Citadel_Player_Level_BaseBullet"							"Base Bullet Damage"
+		"Citadel_Player_Level_BaseMelee"							"Base Melee Damage"
+		"Citadel_Player_Level_BaseHealth"							"Base Health"
+		"Citadel_Player_Level_SpiritAmp"							"Spirit Damage Amp"
+		"Citadel_Player_Level_BulletResist"							"Bullet Resist"
 		"Citadel_Hero_Stats_Tooltip_WeaponPower"					"Total Bonus to your Gun and Melee Damage gained from buying items in the Weapon tree"
 		"Citadel_Hero_Stats_Tooltip_HealthMult"						"Total Bonus to your Base Health gained from buying items in the Vitality tree"
 		"Citadel_Hero_Stats_Tooltip_Spirit"							"<span class=\"spirit_color\">Spirit Power</span> increases the effectiveness of your Abilities. Spirit Power is gained from buying items in the Spirit tree"
@@ -293,6 +302,10 @@
 		"Citadel_ShopFilter_Disruption"								"Disruption"
 
 		"Citadel_Ability_IsImbued"									"Imbued"
+		"Citadel_ComponentRequired"									"Components:"
+		"Citadel_ComponentOwned"									"owned"
+		"Citadel_ItemOwnedBy"										"Owned by:"
+		"Citadel_ItemModifies"										"Modifies"
 		"Citadel_ComponentUseIn"									"Currently Used in:"
 		"Citadel_IsComponentOf"										"Is Component Of:"
 
@@ -323,13 +336,15 @@
 		"Citadel_JoinForum_Email"							"Email:"
 		"Citadel_JoinForum_EmailPlaceholder"				"Email Address"
 		"Citadel_JoinForum_Submit"							"Submit"
+		"Citadel_JoinForum_AcctDetails"						"Your Account Details:"
 		"Citadel_JoinForum_Description"						"The forum allows for users to report issues and discuss topics. By providing your email you'll be given a forum account and a password to access the forum."
 		"Citadel_JoinForum_FieldEmail"						"Email"
-		"Citadel_JoinForum_FieldUsername"					"User Name"
-		"Citadel_JoinForum_FieldPassword"					"Password"
+		"Citadel_JoinForum_FieldUsername"					"User Name:"
+		"Citadel_JoinForum_FieldPassword"					"Password:"
 		"Citadel_JoinForum_ChangePassword"					"A random password has been generated for you to access your account. It is highly recommended that you change this password immediately on your account if you have not done so already."
 		"Citadel_JoinForum_CopyTooltip"						"Copy to clipboard"
 		"Citadel_JoinForum_Copied"							"Copied!"
+		"Citadel_JoinForum_ViewInfo"						"View Forum Login Info"
 
 		"Citadel_Play_MatchmakingOfflineTitle"				"Matchmaking Closed"
 		"Citadel_Play_MatchmakingOfflineText"				"Matchmaking is currently closed. Please come back during the scheduled playtesting times"
@@ -635,9 +650,26 @@
 		"Citadel_HUD_Damage_NotInMidPit"							"NOT IN PIT"
 		"Citadel_HUD_Damage_NotInTier3Pit"							"NOT IN PIT"
 
+		"Citadel_DamageType_CITADEL_DAMAGETYPE_ABILITY"				"Ability Damage"
+		"Citadel_DamageType_CITADEL_DAMAGETYPE_BULLET"				"Gun Damage"
+		"Citadel_DamageType_CITADEL_DAMAGETYPE_ENVIRONMENTAL"		"Environmental Damage"
+		"Citadel_DamageType_CITADEL_DAMAGETYPE_MELEE"				"Melee Damage"
+		"Citadel_DamageType_CITADEL_DAMAGETYPE_POISON"				"Poison Damage"
+
+		"Citadel_AttackerClass_CLASS_TROOPER"						"Trooper"
+		"Citadel_AttackerClass_CLASS_TROOPER_NEUTRAL"				"Denizen"
+		"Citadel_AttackerClass_CLASS_TROOPER_BOSS"					"T1 Boss"
+		"Citadel_AttackerClass_CLASS_BOSS_BARRACKS"					"Barracks Boss"
+		"Citadel_AttackerClass_CLASS_BOSS_TIER_2"					"T2 Boss"
+		"Citadel_AttackerClass_CLASS_BOSS_TIER_3"					"Patros"
+		"Citadel_AttackerClass_CLASS_SUPER_NEUTRAL"					"Mid Boss"
+		"Citadel_AttackerClass_CLASS_ZAP_TRIGGER"					"Zap"
+
 		"Citadel_HUD_DamageReport_Title"							"Damage Report"
 		"Citadel_HUD_DamageReport_DamageReceived"					"Incoming Damage"
 		"Citadel_HUD_DamageReport_DamageDealt"						"Outgoing Damage"
+		"Citadel_HUD_DamageReport_TopDamageSources"					"Top {i:num_damage_rows} Damage Sources"
+		"Citadel_HUD_DamageReport_ShowMore"							"Show More"
 		
 		"Citadel_HUD_DamageReport_LastRespawn"						"Current Life"
 		"Citadel_HUD_DamageReport_Time600"							"10 minutes"
@@ -655,6 +687,10 @@
 		"Citadel_HUD_DamageReport_TotalDamageValue"					"{d:total_damage}"
 		"Citadel_HUD_DamageReport_DamagePercentWeapon"				"{i:weapon_damage_percent}%"
 		"Citadel_HUD_DamageReport_DamagePercentAbility"				"{i:ability_damage_percent}%"
+		
+		"Citadel_HUD_DamageRows_DamageName"							"{s:damage_name}"
+		"Citadel_HUD_DamageRows_DamageValue"						"{i:damage_done}"
+		"Citadel_HUD_DamageRows_Hits"								"({i:hit_count} hits)"
 
 		"Citadel_Tip_0"												"This is a tip."
 		"Citadel_Tip_1"												"This is another tip."
@@ -703,6 +739,12 @@
 		"Citadel_Playtest_DiscordButton"							"Join the Discord"
 		"Citadel_Playtest_RecommendInfo"							"Have someone you'd like to invite to join our playtests?"
 		"Citadel_Playtest_RecommendButton"							"Recommend a Friend"
+		"Citadel_Playtest_CreateAccountsTitle"						"Provide Feedback & Join the Discussion"
+		"Citadel_Playtest_CreateAccountsBody"						"Create a forum account to provide feedback about the game. Join the Deadlock discord to chat with other players and get latest news."
+		"Citadel_Playtest_JoinForum"								"Join the Feedback Forums"
+		"Citadel_Playtest_JoinedForum"								"Joined Forums"
+		"Citadel_Playtest_JoinDiscord"								"Join the Discord"
+		"Citadel_Playtest_JoinedDiscord"							"Joined Discord"
 
 		"Citadel_StartMatchmaking_ErrorTitle"						"Error"
 		"Citadel_StartMatchmaking_AlreadyFindingMatch"				"Cannot enter matchmaking, you are already trying to find a match."
@@ -728,6 +770,7 @@
 		"Citadel_StartMatchmaking_PlayerBannedFromMode"				"A player in this party is currently banned from playing in this mode."
 		"Citadel_StartMatchmaking_ModeLocked"						"You have not yet unlocked the ability to play in this mode"
 		"Citadel_StartMatchmaking_ModeBanned"						"You have been temporarily banned from playing in this mode until {t:s:time_stamp} at {t:t:time_stamp}"
+		"Citadel_StartMatchmaking_PermanentBan"						"You have been permanently banned from this mode"
 		"Citadel_StartMatchmaking_TooManyPlayersOnTeam"				"Too many players are on the same team"
 		"Citadel_StartMatchmaking_UnableToFillTeam"					"Unable to create valid teams based upon the current player teams"
 		"Citadel_StartMatchmaking_InvalidTeam"						"A user has an invalid team selected for this game mode"
@@ -872,7 +915,7 @@
 		"Citadel_PartySetMode_AlreadyDrafting"					"The party has already started a match. You must stop the current match before you start another one."
 		"Citadel_PartySetMode_PlayerBanned"						"A member of your party {g:citadel_persona:nl:account_id} is currently banned from this mode until {t:s:time_stamp} at {t:t:time_stamp}"
 		"Citadel_PartySetMode_TooManyHighMMR"					"Your party contains too many very high MMR players to be able to match make. We are temporarily not allowing this to avoid unbalanced teams among high skill players."
-
+		"Citadel_PartySetMode_PlayerPermaBanned"				"A member of your party {g:citadel_persona:nl:account_id} is permanently banned from playing in this mode"
 
 		"Citadel_PartyInvite_ErrorTitle"						"Unable to Send Invite"
 		"Citadel_PartyInvite_FailedToGetResponse"				"Unable to talk to the Deadlock Network right now and invite the specified user. Please try again in a few minutes."
@@ -992,6 +1035,13 @@
 		"Citadel_ProfileCard_StatValue_Date"					"{t:s:stat_value}"
 		"Citadel_ProfileCard_StatValue_String"					"{s:stat_value}"
 
+		"Citadel_ProfileCard_AccountID"							"Account ID: {d:account_id}"
+		"Citadel_ProfileCard_PartyMatchmaking"					"Party is Matchmaking"
+		"Citadel_ProfileCard_PartyInvited"						"Invited to Party"
+		"Citadel_ProfileCard_PartyNotReady"						"Not Ready"
+		"Citadel_ProfileCard_PartyReady"						"Ready to Play"
+		"Citadel_ProfileCard_PartyRoster"						"Roster"
+
 		"Citadel_Replay_Download"								"Download Replay"
 		"Citadel_Replay_Downloading"							"Downloading"
 		"Citadel_Replay_Watch"									"Watch Replay"
@@ -1075,6 +1125,13 @@
 		"Citadel_HeroBuildsPage_Dev"						"<b>Dev Note:</b> Our builds feature is still in very early development. Please continute sharing feedback of what features you'd like to see implemented in the future."
 		"Citadel_HeroBuildsPage_SelectedBuild_Title"		"My Current Build:"
 		"Citadel_HeroBuildsPage_Browse_button"				"View or Change Build"
+		"Citadel_HeroBuildsPage_Loading_Title"				"Loading Builds"
+		"Citadel_HeroBuildsPage_Loading_Body"				"Please Wait"
+		"Citadel_HeroBuildsPage_Loading_Failed"				"Failed getting hero builds"
+		"Citadel_HeroBuildsPage_ValveCreated"				"Valve"
+		"Citadel_HeroBuildsPage_Error_Saving"				"Error saving build."
+		"Citadel_HeroBuildsPage_Saving_Title"				"Saving Build"
+		"Citadel_HeroBuildsPage_Saving_Body"				"Please Wait"
 		
 		
 		"Citadel_HeroBuildsPage_CreateBuildPreamble_EditBuild"		"Select Build"	
@@ -1273,9 +1330,10 @@
 		"citadel_ability_bull_leap_quip"		"Smash into enemies from above, stunning them"
 		"citadel_ability_bull_leap_desc"		"<span class=\"highlight\">Leap high into the air</span> and choose a ground location to crash into.  When you hit the ground, <span class=\"highlight\">all enemies in the radius are damaged and stunned</span>.<br>Press [{s:iv_attack}] to crash down early."
 		"modifier_citadel_bull_leap"			"Boosting"
-		citadel_ability_bull_leap_t3_desc		"Gain {s:BonusMaxHealthPerHero} Max HP and {s:BonusFireRatePerHero}% Fire Rate per hero hit. Lasts {s:LandingBonusesDuration}s."
-		
+		citadel_ability_bull_leap_t2_desc		"Gain {s:BonusMaxHealthPerHero} Max HP and {s:BonusFireRatePerHero}% Fire Rate per hero hit. Lasts {s:LandingBonusesDuration}s."
+		citadel_ability_bull_leap_t3_desc		"On cast, become <span class=\"highlight\">Immune</span> to <span class=\"highlight\">Stun, Silence, Sleep, Root, and Disarm</span>. Expires {s:ImmunityDuration}s after landing."
 		AbilityButtonHint_BullLeapCrash			"Crash Down"
+		modifier_abrams_immunity				"Immunity"
 
 		//-----------------------------------------------------------------------------
 		// Hero Seven
@@ -1395,6 +1453,7 @@
 		citadel_ability_fissure_wall_t1_desc	"<span class=\"highlight\">Removes {s:StaminaReduction} stamina</span> and amplifies {s:hero_name}'s damage by <span class=\"highlight\">{s:BonusDamagePercent}%</span> on hit enemies for {s:DebuffDuration}s"
 		citadel_ability_fissure_wall_t3_desc	"Adds a <span class=\"highlight\">{s:WallStunDuration}s Stun</span> to enemies hit by Spectral Wall"
 		"citadel_ability_fissure_wall_trigger"	"Trigger Fissure Wall"
+		citadel_ability_fissure_wall_cancel		"Cancel Fissure Wall"
 		"WallStunDuration_label"				"Duration"
 		"WallStunDuration_postfix"				"s"
 		"WallImpactRange_label"					"Impact Range"
@@ -1966,8 +2025,8 @@
 		"ability_stacking_damage_desc"	"Shooting a target <span class=\"highlight\">increases your bullet damage on that target</span>. Gain one <span class=\"highlight\">stack</span> per bullet hit, two if the hit is a headshot."
 		"ability_stacking_damage/modifier_passive_haze_stacking_damage"		"Fixated"
 
-		"ability_stacking_damage_t1_desc" "<span class=\"highlight\">+{s:MaxStacks}</span> Max Stacks and <span class=\"highlight\">+{s:AbilityDuration}s</span> Duration"
-		"ability_stacking_damage_t2_desc" "<span class=\"highlight\">{s:ProcDamage}</span> Spirit damage and <span class=\"highlight\">{s:SlowPercent}%</span> slow for {s:SlowDuration}s to target every <span class=\"highlight\">{s:ProcDamageStackCount}</span> stacks"
+		"ability_stacking_damage_t1_desc" "<span class=\"highlight\">{s:ProcDamage}</span> Spirit damage and <span class=\"highlight\">{s:SlowPercent}%</span> slow for {s:SlowDuration}s to target every <span class=\"highlight\">{s:ProcDamageStackCount}</span> stacks"
+		"ability_stacking_damage_t2_desc" "<span class=\"highlight\">+{s:MaxStacks}</span> Max Stacks and <span class=\"highlight\">+{s:AbilityDuration}s</span> Duration"
 		
 		"DamageBonusFixedPerStack_label"					"Weapon Damage"
 		"DamageBonusFixedPerStack_prefix"					"+"
@@ -2140,7 +2199,7 @@
 
 		ability_warden_high_alert				"Willpower"
 		ability_warden_high_alert_quip			"Gain a spirit shield and movement speed"
-		ability_warden_high_alert_desc			"Gain a <span class=\"highlight\">spirit shield</span> and <span class=\"highlight\">bonus movement speed</span>. The shield also <span class=\"highlight\">blocks spirit damage-based effects</span>."
+		ability_warden_high_alert_desc			"Gain a <span class=\"highlight\">spirit shield</span> and <span class=\"highlight\">bonus movement speed</span>."
 		ability_warden_high_alert_t3_desc		"<span class=\"highlight\">+{s:TechShieldPoints}</span> Spirit Shield Health and now scales with Spirit Power"
 		MoveSpeedBonusPct_label					"Move speed bonus"
 		MoveSpeedBonusPct_postfix				"%"
@@ -2236,9 +2295,11 @@
 		//-----------------------------------------------------------------------------
 		"citadel_ability_lash"					"Grapple"
 		"citadel_ability_lash_quip"				"Use your whip to pull yourself to an enemy"
-		citadel_ability_lash_desc				"<span class=\"highlight\">Pull yourself through the air</span> toward a target and grant yourself a <span class=\"highlight\">weapon damage bonus</span>. This bonus stacks independently.  Using Grapple also restores <span class=\"highlight\">one stamina charge</span> and all <span class=\"highlight\">air jumps and dashes</span>."
-		LashDamage_label						"Grapple Damage"
+		citadel_ability_lash_desc				"<span class=\"highlight\">Pull yourself through the air</span> toward a target. Using Grapple also restores <span class=\"highlight\">one stamina charge</span> and all <span class=\"highlight\">air jumps and dashes</span>."
+		
+		citadel_ability_lash_t2_desc			"<span class=\"highlight\">+{s:AbilityCastRange}m</span> Cast Range and gain <span class=\"highlight\">+{s:WeaponDamageBonus}</span> Weapon Damage for {s:WeaponDamageBonusDuration}s"
 		citadel_ability_lash_t3_desc			"<span class=\"highlight\">+{s:WeaponFireRateBonus}%</span> Fire Rate to Weapon Bonus Buff"
+		LashDamage_label						"Grapple Damage"
 		WeaponFireRateBonus_label				"Fire Rate"
 		WeaponFireRateBonus_prefix				"+"
 		WeaponFireRateBonus_postfix				"%"
@@ -2297,7 +2358,7 @@
 
 		citadel_ability_lash_ultimate			"Death Slam"
 		citadel_ability_lash_ultimate_quip		"Lift enemies and smash them into the ground"
-		citadel_ability_lash_ultimate_desc		"Focus on enemies to connect whips to them. After channeling, connected enemies are <span class=\"highlight\">lifted and stunned</span> then slammed into the ground. Your victims and any enemies in the landing zone will be <span class=\"highlight\">damaged and slowed</span>. <br>Press [{s:iv_attack}] to throw connected enemies early."
+		citadel_ability_lash_ultimate_desc		"Focus on enemies to connect whips to them. After channeling, connected enemies are <span class=\"highlight\">lifted and stunned</span> then slammed into the ground. Your victims and any enemies in the landing zone will be <span class=\"highlight\">damaged and slowed</span>. <br>Press [{s:iv_attack}] to throw connected enemies early. Enemies that are not in line of sight or go out of range during the latch time will not be grabbed."
 		"citadel_ability_lash_ultimate/modifier_lash_grapple_enemy_debuff"		"Death Slam"
 		citadel_ability_lash_ultimate_debuff	"Movement Slow"
 
@@ -2325,7 +2386,7 @@
 		"ability_icebeam"					"Arctic Beam"
 		"ability_icebeam_quip"				"Apply an escalating slow that can disarm"
 		"ability_icebeam_desc"				"{s:hero_name} shoots freezing cold energy out in front of him, <span class=\"highlight\">damaging and slowing</span> anything it touches. The <span class=\"highlight\">slow increases in strength</span> the more it hits and applies <span class=\"highlight\">disarm</span> at max strength. {s:hero_name} has reduced movement speed while using Arctic Beam."
-		"ability_icebeam_t3_desc"			"Fires an <span class=\"highlight\">additional Arctic Beam</span> to another enemy within {s:BeamSplit}m of the last target hit"
+		"ability_icebeam_t3_desc"			"Fires <span class=\"highlight\">{s:BeamSplitCount} additional Arctic Beams</span> toward enemies within {s:BeamSplit}m of the last target hit"
 		"modifier_citadel_kelvin_frozen"	"Frozen"
 		"ability_icebeam/modifier_slow"												"Arctic Beam Slow"
 		MaxSlowPercent_label				"Max Slow Percent"
@@ -2729,9 +2790,10 @@
 
 		ability_health_swap					"Soul Exchange"
 		ability_health_swap_quip			"Swap your current health with an enemy hero's"
-		ability_health_swap_desc			"<span class=\"highlight\">Swaps health levels</span> with an enemy target. Activation requires the enemy have a higher health level than you. There is a minimum health percentage that enemies can be brought down to."
+		ability_health_swap_desc			"<span class=\"highlight\">Swaps health levels</span> with an enemy target. There is a minimum health percentage that enemies can be brought down to and a minimum amount of health received based on victims current health."
 		ability_health_swap_t3_desc			"On cast, <span class=\"highlight\">+{s:BonusFireRate}%</span> Fire Rate and <span class=\"highlight\">+{s:TechResist}%</span> Spirit Resist for {s:HealthSwapBuffDuration}s."
-
+		MinHealthTakenPct_label				"Min Health Received"
+		MinHealthTakenPct_postfix			"%"
 		modifier_blood_exchange				"Blood Exchange"
 		EnemyMinHealthPct_label				"Enemy Min Health"
 		EnemyMinHealthPct_postfix			"%"
@@ -3767,6 +3829,7 @@
 		"viscous_goo_grenade"							"Bouncy Goo"
 		"viscous_goo_grenade_desc"						"Throw a bouncing ball of goo that <span class=\"highlight\">deals damage</span> and leaves puddles of goo behind when it bounces that apply <span class=\"highlight\">movement slow</span> to enemies in the radius."
 		"viscous_goo_grenade/modifier_viscous_goo_grenade_debuff"		"Slowed"
+		"viscous_goo_grenade_t2_desc"					"+{s:Damage} Damage and +{s:Radius}m Radius"
 		"MaxBounces_label"								"Bounces"
 		"PuddleRadius_label"							"Goo Radius"
 		"PuddleRadius_postfix"							"m"
@@ -3775,7 +3838,10 @@
 		
 		"viscous_restorative_goo"						"Gooey Embrace"
 		"viscous_restorative_goo_desc"					"Encase the target in a cube of restorative goo that <span class=\"highlight\">purges debuffs, protects from damage, and greatly increases health regen</span>. Target is <span class=\"highlight\">unable to perform any actions</span> while cubed. Can be used on self. Hold <span class=\"highlight\">[{s:in_mantle}]</span> to escape early."
-		"viscous_restorative_goo_t3_desc"				"Heals for an additional {s:MaxHealthRegen}% of the target's <span class=\"highlight\">Max Health</span>."
+		"viscous_restorative_goo_t2_desc"				"Increases Movement Speed and Stamina Recovery"
+		"viscous_restorative_goo_buff_desc"				"After exiting the cube, the target have increased <span class=\"highlight\">movement speed and stamina recovery</span> for a short duration."
+		"PostCubeBuffDuration_label"					"Duration"
+		"PostCubeBuffDuration_postfix"					"s"
 		"modifier_restorative_goo"						"Gooey Embrace"
 		"viscous_restorative_goo/modifier_restorative_goo/breakoutProgress"		"Breaking out"
 
@@ -3789,7 +3855,7 @@
 		"viscous_goo_bowling_ball_t3_desc"				"Breaks after hitting 3 heroes.<br>Duration is reset when you hit a hero."
 
 		"viscous_telepunch"								"Portal Punch"
-		"viscous_telepunch_desc"						"Target a location in the world and <span class=\"highlight\">punch</span> enemies from that location after a short delay, <span class=\"highlight\">dealing damage</span> and knocking them in the direction of the punch."
+		"viscous_telepunch_desc"						"Target a location in the world and <span class=\"highlight\">punch</span> enemies from that location after a short delay, <span class=\"highlight\">dealing damage</span>, knocking them in the direction of the punch, and reducing their dash distance for a brief moment."
 
 		"BonusDamageAmp_label"							"Increased Damage"
 		"BonusDamageAmp_postfix"						"%"
@@ -4874,6 +4940,9 @@
 
 		"BonusHealth_prefix"							"{s:sign}"
 		"BonusHealth_label"							"Bonus Health"
+
+		"MaxHealth_prefix"							"{s:sign}"
+		"MaxHealth_label"							"Max Health"
 
 		BonusEnergyMax_label						"Energy Cells"
 
@@ -6263,6 +6332,13 @@
 		AirMoveIncreasePercent_postfix						"%"
 		AirMoveIncreasePercent_prefix						"+"
 		
+		ActiveReloadPercent_label				"Clip Reloaded"
+		ActiveReloadPercent_postfix				"%"
+		ActiveReloadPercent_prefix				"+"
+
+		RespawnHealthPercent_label				"Rebirth Health"
+		RespawnHealthPercent_postfix			"%"
+
 		//-----------------------------------------------------------------------------
 		// END Ability Properties desc
 		//-----------------------------------------------------------------------------
@@ -6456,6 +6532,7 @@
 		"citadel_settings_openmicthreshold_desc"		"Only transmit voice when audio input volume is above this level. Applies to Push To Talk and Open Mic."
 		"citadel_settings_open_mic_desc"				"Enable Open Mic"
 		"citadel_settings_monitor_mic_desc"				"Turn this on to listen to your microphone while adjusting voice settings."
+		"citadel_settings_streamlined_mic_desc"			"Open the recording device when the game is started, instead of when the mic is used."
 		"citadel_settings_defaultaudio"					"Default"
 		"citadel_settings_sounddevice"					"Sound Device:"
 		"citadel_settings_voice_sounddevice"			"Voice Input Device:"
@@ -6497,7 +6574,8 @@
 		"citadel_settings_borderless"					"Borderless Window"
 		"citadel_settings_chat_ptt"						"Push to Talk"
 		"citadel_settings_chat_openmic"					"Open Mic"
-		"citadel_settings_monitor_mic"					"Listen to my mic"
+		"citadel_settings_monitor_mic"					"Listen to My Mic"
+		"citadel_settings_streamlined_mic"				"Streamlined Mic"
 		"citadel_settings_chat_invert_ping"				"Invert Ping"
 		"citadel_settings_mousesensitivity"				"Mouse Sensitivity"
 		"citadel_settings_keybinddefaults"				"Reset all keybinds to defaults"
@@ -6583,12 +6661,14 @@
 		"citadel_settings_particlequality_med"			"Med"
 		"citadel_settings_particlequality_high"			"High"
 		"citadel_settings_renderquality"				"Render Quality"
-		"citadel_settings_renderquality_desc"			"Per-dimension scaling ratio for calculating internal render resolution. Lower values render faster. Higher values render sharper with fewer artifacts.<br><br>FSR2 Values:<br>100% - Native AA<br>67% - Quality<br>59% - Balanced<br>50% - Performance<br>33% - Ultra Performance<br><br>Performance cost: heavy/consistent"
-		"citadel_settings_renderquality_native"			"Native"
-		"citadel_settings_renderquality_quality"		"Quality"
-		"citadel_settings_renderquality_balanced"		"Balanced"
-		"citadel_settings_renderquality_performance"	"Performance"
-		"citadel_settings_renderquality_ultra_performance"	"Ultra"
+		"citadel_settings_renderquality_desc"			"Per-dimension scaling ratio for calculating internal render resolution. Lower values render faster. Higher values render sharper with fewer artifacts."
+		"citadel_settings_fsr2scaling"					"Scaling Mode"
+		"citadel_settings_fsr2scaling_desc"				"Native AA - 1x scaling<br>Quality - 1.5x scaling<br>Balanced - 1.7x scaling<br>Performance - 2x scaling<br>Ultra Performance - 3x scaling<br><br>Performance cost: heavy/consistent"
+		"citadel_settings_fsr2scaling_native"			"Native AA"
+		"citadel_settings_fsr2scaling_quality"			"Quality"
+		"citadel_settings_fsr2scaling_balanced"			"Balanced"
+		"citadel_settings_fsr2scaling_performance"		"Performance"
+		"citadel_settings_fsr2scaling_ultra_performance"	"Ultra"
 		"citadel_settings_fps_max"						"Maximum frames per second allowed"
 		"citadel_settings_fps_max_tip"					"Extended values can be provided with the +fps_max launch option.\nValues out of range for the slider will disable the slider."
 		"citadel_settings_fsr"							"FidelityFX Super Resolution"
@@ -6596,6 +6676,9 @@
 		"citadel_settings_render_system"				"Rendering"
 		"citadel_settings_render_system_tooltip"		"DirectX version"
 		"citadel_settings_render_system_recommended"	"recommended"
+		"citadel_settings_contextual_slot"				"[Contextual Slot]"
+		"citadel_settings_contextual_slot_label"		"Contextual Ping Wheel Slot"
+		"citadel_settings_chat_wheel_all"				"[ALL]"
 
 		"citadel_keybind_alt"							"ALT"
 		"citadel_keybind_shift"							"SHIFT"
@@ -6686,6 +6769,7 @@
 
 
 		"citadel_clientversion"							"Build {d:client_version_number}"
+		"citadel_clientversion_connary"					"Criteria CF© Connary Fagen, Inc. / connary.com"
 		"OS_Default_Device"								"Default Device"
 
 		"guide_world"			"Welcome, intergalactic tourists, to Fracture -- City of a Thousand Cities™! As you walk down our many historic streets and enjoy our countless parks and museums, you might think that Fracture’s just like any other bustling planet-capital in the galaxy. And in most ways, it is. But in other tiny but important ways, Fracture’s one of a kind.\n\nAs a for-instance: When you got off the shuttle at Bowl o’ Blood Spaceport, you probably got robbed. But not for all your money -- around 34% -- and you were given a receipt. Then you started yelling for the police, and you got robbed again.\n\nThat’s because Fracture is run by criminals. Now, that might sound like a bad idea, but if you read on, you’ll find out it’s actually one of the best darn ways a city could be run -- fine-tuned from centuries of illegality.\n\nHUMBLE BEGINNINGS\n\nWhile it might not look like it now, Fracture used to be a prison planet. That’s right! Prisoners were sent here to slave in the deep fissures of the planet’s crust, toiling away in the marrow mines until they died. That’s when the Founding Families realized -- \"\Hold on a minute. We’re alone on a planet here! We can do anything we want.\"\\n\nThat’s when Fracture truly began — its days as a prison mining planet behind it, and its bright future as an anything-goes prison utopia lying tantalizingly ahead.The galaxy still dumped off its law-defying folks, of course. And it was still pretty much impossible to escape the planet. But you could otherwise do mostly anything you wanted, unless you wanted to leave.\n\nNow, are the good folks of Fracture ashamed of their lawless past? Far from it! In fact, many folks here claim they can trace their lineage back to one of the twelve Founding Families!\n\nTHE FOUNDING FAMILIES\n\nSo who are the Founding Families, and why are they so important? Well, in the beginning, Fracture didn’t have a fancy mayor, or even laws or a way to enforce them. It wasn’t pretty. But what it had in abundance, being a prison planet, was criminals and walls. So the biggest prison gangs cut up the city into the Twelve Boroughs, with each family responsible for maintaining law and order.\n\nAnd crazily enough, it worked! If you wanted to commit a crime, you needed a permit for it, or there’d be hell to pay. Left to govern themselves, the criminals ended up being more organized and motivated than a government ever could’ve been. Sure, there was still crime -- but no surprises. You might be due to get mugged today, but you’d know about it, sure as jury duty.\n\nTHE GREAT BOROUGH BOOM\n\nAs the first planet in the galaxy to have institutionalized crime, Fracture was an overnight success. In fact, it was such a success, the population exploded. The walls of the twelve boroughs couldn’t contain all the fresh blood, and it quickly spilled over to the town’s outskirts. New boroughs were born. New walls were built. And these upstart gangs didn’t see much sense in paying tribute to a syndicate on the other end of town, when they had perfectly good rings in need of kissing right there.\n\nThis was known as The Great Borough Boom, an exciting and, as it turned out, deadly time in Fracture’s history that led directly to The Hundred-Borough War.\n\nToday it’s estimated there’s over a thousand boroughs jostling for elbow room in Fracture  -- but the truth is, the city’s such a shifting mosaic of alliances, backstabs, assassinations and startups, the census bureau’s never gonna get a headcount. \n\nAll you need to know is where you’re standing -- because wherever it is, you owe someone some respect.\n\nFRACTURE TODAY\n\nAs you can imagine, an ever-shifting map of alliances makes it hard to get around the city without making a lot of folks mad. That’s why the Bureau of Tourism recommends all newcomers to Fracture hire yourselves a guide to help you bribe, threaten and stab your way to all the culture, art and history Fracture has to offer."
@@ -7018,6 +7102,8 @@
 		"menu_exit"									"Exit Game"
 		"Citadel_Confirm_Discord"					"Are you ready to create your Discord invite? This invite will only be usable for 2 hours and you will not be able to create another invite."
 		"Citadel_Confirm_Discord_Create"			"Create Discord Invite"
+		"Citadel_Confirm_Discord_Created_Body"		"You have already created your Discord invite and are not able to create any more."
+		"Citadel_Confirm_Discord_Created_Title"		"Unable to Create Discord Invite"
 		"menu_exit_db_page"							"Back"
 		"menu_settings"								"Settings"
 		"menu_profile"								"Profile"

@@ -157,10 +157,7 @@
 	{
 		base = "Base.Ability.Short"
 		volume = 0.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_mixlayer_amount_manual = 1.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
-		mixer_set_mixlayer = 1.000000
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_attach.vsnd"
 		vsnd_duration = 0.853243
 	}
@@ -229,12 +226,9 @@
 	{
 		base = "Base.Ability"
 		volume = 0.000000
-		mixer_set_mixlayer_for_perspective = 0.000000
-		mixer_mixlayer_to_set = "Ability-Dramatic"
-		mixer_set_mixlayer = 1.000000
-		mixer_mixlayer_amount_manual = 1.000000
+		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		vsnd_files = "sounds/abilities/bebop/a3_hook/impact_success.vsnd"
-		vsnd_duration = 1.119070
+		vsnd_duration = 1.499093
 	}
 	Ability.Bebop.Hook.Ally = 
 	{

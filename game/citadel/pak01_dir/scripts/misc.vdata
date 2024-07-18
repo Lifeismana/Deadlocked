@@ -69,7 +69,7 @@
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
 		m_flInitialSpawnTime = 180.000000
-		m_flPrimaryDropChance = 40.000000
+		m_flPrimaryDropChance = 44.000000
 		_base = "citadel_breakable_prop_base"
 		_not_pickable = 2
 		m_vecPrimaryPickups = 
@@ -138,7 +138,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_iMatchTimeMinsForLevel2Pickups = 20
+		m_iMatchTimeMinsForLevel2Pickups = 15
 		m_flInitialSpawnTimeTest = 1.000000
 		m_flRespawnTimeTest = 5.000000
 		m_eRollType = "ECitadelRandomRoll_BreakablePowerupPickup"
@@ -181,7 +181,7 @@
 		m_bDamagedByMelee = true
 		m_bDamagedByBullets = true
 		m_flInitialSpawnTime = 180.000000
-		m_flPrimaryDropChance = 40.000000
+		m_flPrimaryDropChance = 44.000000
 		_base = "citadel_breakable_prop_drop_powerups"
 		m_vecPrimaryPickups = 
 		[
@@ -249,7 +249,7 @@
 				m_flPickupWeight = 1.000000
 			},
 		]
-		m_iMatchTimeMinsForLevel2Pickups = 20
+		m_iMatchTimeMinsForLevel2Pickups = 15
 		m_flInitialSpawnTimeTest = 1.000000
 		m_flRespawnTimeTest = 5.000000
 		m_eRollType = "ECitadelRandomRoll_BreakablePowerupPickup"
@@ -872,7 +872,7 @@
 		{
 			_class = "modifier_base"
 			_my_subclass_name = "gun_powerup_pickup"
-			m_flDuration = 130.000000
+			m_flDuration = 150.000000
 			m_vecScriptValues = 
 			[
 				
@@ -923,7 +923,7 @@
 		{
 			_class = "modifier_base"
 			_my_subclass_name = "survival_powerup_pickup"
-			m_flDuration = 130.000000
+			m_flDuration = 150.000000
 			m_vecScriptValues = 
 			[
 				
@@ -974,7 +974,7 @@
 		{
 			_class = "modifier_breakable_prop_cooldown_reduction"
 			_my_subclass_name = "casting_powerup_pickup"
-			m_flDuration = 130.000000
+			m_flDuration = 150.000000
 			m_vecScriptValues = 
 			[
 				
@@ -1025,7 +1025,7 @@
 		{
 			_class = "modifier_breakable_prop_extra_stamina"
 			_my_subclass_name = "movement_powerup_pickup"
-			m_flDuration = 130.000000
+			m_flDuration = 150.000000
 			m_nExtraStamina = 0
 			m_vecScriptValues = 
 			[

@@ -59,11 +59,11 @@
 				<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_BuildNameTitle" />
 				<CitadelHeroBuildsSelector id="HeroBuildSelector" user_builds_only="false" />
 				<Label class="HeroBuildsSubTitle" text="#Citadel_HeroBuildsPage_BuildDescriptionTitle" />
-				<Label class="BrowseHeroBuildDescription" id="HeroBuildDescription" />
+				<Label class="BrowseHeroBuildDescription" id="HeroBuildDescription" text="{g:citadel_filtered_string:build_description}" />
 				<Panel id="BuildCreatorPanel" hittest="false">
 					<Label text="#Citadel_HeroBuildsPage_By" />
 					<Label id="CustomBuild" class="HeroBuildCreator" html="true" text="{g:citadel_persona:build_creator}" />
-					<Label id="DefaultBuild" class="HeroBuildCreator" html="true" text="Valve" />
+					<Label id="DefaultBuild" class="HeroBuildCreator" html="true" text="#Citadel_HeroBuildsPage_ValveCreated" />
 				</Panel>
 				<Panel id="SelectBuildContainer" hittest="false">
 					<Panel id="SelectBuildButton" class="actionItemButton" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseactivate="CitadelShopHeroBuildsUseSelectedBuild()">

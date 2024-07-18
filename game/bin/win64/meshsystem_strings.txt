@@ -1,10 +1,10 @@
 					
 											
 																
-		V_frexpf
 	!s99
 	6p7M
 	6p7MOf
+	V_frexpf
 	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncat
@@ -97,6 +97,7 @@
 !m_pMemory || sz > 0
 !pDerivedType->IsSchemaAbstractClass()
 !pResourceCompilerContext
+"Hc;;{
 "QT#H
 #xMjL
 $+T$xL
@@ -236,18 +237,16 @@ $+T$xL
 )L$0I
 )L$0L
 )L$@E
-)L$PD
 )L$PH
 )L$Pf
 )T$ fD
 )T$0L
-)T$@B
+)T$@E
 )T$pD
 )YA1I
 )\$@D
 )\$@H
 )\$`D
-)\X=Q
 )d$0D
 )d$@L
 )d$PD
@@ -281,6 +280,7 @@ $+T$xL
 )|$PA
 )|$`D
 )|$`H
+)|$pD
 )|$pL
 *HcD;LH
 *StO9>T
@@ -294,16 +294,19 @@ $+T$xL
 +h->|
 +o'q)}
 ,/<-w
+,0p-	o
 ,HcD;LH
 ,W5y+
+-	V_logf
 -YA1f
 -convars_visible_by_default
 -sse2
 -sse3
 -sse4
 -tools
-.	V_logf
+.)n	U
 .00cfg
+.2z5u3
 .40t8Ic
 .?AUAsyncProcessDataResult@CRenderMeshManager@@
 .?AUAsyncProcessResult@CBaseIntrospectedToKV3TypeManager@@
@@ -488,7 +491,6 @@ $+T$xL
 0A^A]A\
 0A^A]A\_^
 0A^A]]
-0A^A]_^[
 0A^^]
 0A^_^
 0A_A]]
@@ -515,7 +517,7 @@ $+T$xL
 220323000000Z
 220801000000Z
 230714000000Z
-240711145952Z0/
+240718150225Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -562,12 +564,14 @@ $+T$xL
 8\$@t
 8\$hu
 8vIML
+9	V_powf
 9)~P3
 9)~eH
 98t H
 99~CE
 9>~ZH
 9D$ t
+9GpukH
 9HcC0L
 9W4~IH
 9_H~-
@@ -584,15 +588,14 @@ $+T$xL
 9|$Pu
 9|$Xu
 9|$hu
-:	V_powf
 :!L$ 0
 :!|$ 0E
+;	V_qsort_s
 ;?0123456789:;<=>?
 ;H9>&X
 ;I9}(tiH
 ;YA1D
 ;]p}~H
-<	V_qsort_s
 <	tf3
 <	u%H
 <	u)Icn
@@ -611,11 +614,10 @@ $+T$xL
 =%H5<mN
 =3vmdlkeys4
 ==MQ?
-=MIsBoxedIntegerType
 =SHX?
 =imb;D
+=m_Value
 =rIQU
-=~Z#/
 >%H5<mN
 >0<0:
 >Mp$d
@@ -647,7 +649,6 @@ $+T$xL
 ?Alloc@CUtlMemoryBlockAllocator@@QEAAII@Z
 ?Alloc@CUtlMemoryPoolBase@@QEAAPEAXXZ
 ?AllocAligned@CUtlScratchMemoryPool@@QEAAPEAXHH@Z
-?AllocateGuts@CUtlLocalStackAllocator@@IEAAPEAXH@Z
 ?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
@@ -663,7 +664,6 @@ $+T$xL
 ?Format@CUtlString@@QEAAHPEBDZZ
 ?Free@CRawAllocator@@SAXW4RawAllocatorType_t@@PEAX_K@Z
 ?Free@CUtlMemoryPoolBase@@QEAAXPEAX@Z
-?FreeGuts@CUtlLocalStackAllocator@@IEAAXPEBX@Z
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
 ?GetGameInfoBool@@YA_NPEBD_N@Z
 ?GetInt@KeyValues@@QEBAHPEBDH@Z
@@ -812,15 +812,13 @@ $+T$xL
 @fE9d
 @ffffff
 A IcI
-A+FpH
 A,L9q0
 A8_UNORM
 A8}(u
 A9G8t
-A9S0~;D
-A9S0~?D
+A9s0~;E3
+A9s0~?E3
 A;\$ u
-A<z1u/A
 A>pP&
 AABB_t
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -834,7 +832,6 @@ ATAVH
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 AUAVAWH
 AVAWH
-A]A\[
 A]A\_]
 A]A\_^[]
 A]A\_^]
@@ -987,7 +984,6 @@ BinaryProperties_GetValue
 BoneConstraintList
 Browse to the corresponding model in asset browser, right click and select Full Recompile.
 C I!.H
-C$z!u
 C(H9,
 C(L9{0t	H
 C0Hc	H
@@ -1126,6 +1122,8 @@ CBaseIntrospectedToKV3TypeManager::AsyncProcessData
 CBitVecT<class CVarBitVecStorage<32,0>,int>::Copy
 CBitVecT<class CVarBitVecStorage<32,0>,int>::ValidateOperand
 CBoneConstraintBase
+CBoneConstraintBase::GetInputAndOutputBones::<lambda_1>::operator ()
+CBoneConstraintBase::GetInputAndOutputBones::<lambda_2>::operator ()
 CBoneConstraintBase::KV3TransferLoad_Impl
 CBoneConstraintBase::Schema_VerifyBindingIsRegistered
 CBoneConstraintDotToMorph
@@ -2066,7 +2064,6 @@ D$(H;
 D$(I;
 D$(fI
 D$(v=E
-D$.H;
 D$0	!O3L
 D$0"K
 D$0#C
@@ -2100,6 +2097,7 @@ D$0ta
 D$8!5
 D$8,H
 D$8H;
+D$8HcD$4
 D$8L9
 D$8L;
 D$8fD
@@ -2133,6 +2131,7 @@ D$pL;
 D$xH;
 D$xHcU
 D$|E3
+D$~"b
 D16_UNORM
 D24_UNORM_S8_UINT
 D32_FLOAT
@@ -2142,8 +2141,8 @@ D8'tO3
 D81uUL9r
 D8<.u
 D8L$0u`
-D8t$4t8
-D8t$<
+D8T$4t8
+D8T$<
 D8t$ht
 D9 ;E
 D9/~%H
@@ -2160,6 +2159,7 @@ D9t$xu
 D9|$Pu
 D;D$ s\I
 D;t$P
+D;|$ 
 D;~ u
 DATAH
 DATAL
@@ -2192,6 +2192,7 @@ DynamicMeshDeformParams_t
 DynamicMeshDeformParams_t::KV3TransferLoad_Impl
 DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
+E	V_sincosf
 E Lcx
 E),$H
 E0HcH
@@ -2310,12 +2311,10 @@ Error saving default keys for VPhysXConstraintParams_t: %s
 Error saving default keys for VPhysXJoint_t: %s
 Error saving default keys for VPhysXRange_t: %s
 Error saving default keys for VPhysics2ShapeDef_t: %s
-EsrMJ
 EventList_GetEventType
 EventList_IndexForName
 ExitProcess
 ExternalNameForInternalType
-F	V_sincosf
 F Lcx
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to register all schema data: %s
@@ -2426,6 +2425,7 @@ Found existing value when inserting into tree - replacing existing value with ne
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+G	V_sinf
 G$L9t$ t
 G(+G$
 G0H9C0u3
@@ -2471,6 +2471,7 @@ GameUIService_001
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -2510,7 +2511,6 @@ Gt$(H
 Gt$HA
 Gt$HL
 G|$(L
-H	V_sinf
 H USH
 H!D$ I
 H!T$0D
@@ -2518,16 +2518,24 @@ H+\$H
 H-^Eu
 H9(tO
 H9+t	H
-H9-/V
-H9-0=
-H9-6P
-H9-FU
-H9-dT
+H9-$r
+H9-:\
+H9-?r
+H9-Vq
+H9-W]
+H9-Y\
+H9-e[
+H9-r]
+H9-tp
 H93t	H
-H95G$
-H95W#
+H95'v
+H95WA
+H95WB
+H95wF
 H97u+A
 H98t2
+H9=5<
+H9=T;
 H9D$pt
 H9\$`u	H
 H9k H
@@ -2556,7 +2564,6 @@ H;UgH
 H;XXs
 H;l$0
 H;xXu5
-H;|$p
 H=vmatu	A
 H=vmdl
 HA_A^A]A\_^[]
@@ -2619,6 +2626,7 @@ Hcp HcI
 Hcu`M
 Hcw +
 Hcw4HcC(;
+Hcw`A
 HcyxE3
 Hc{PD
 Hc{p;
@@ -2655,10 +2663,9 @@ Ic^ A
 Ic^$A
 Ic^(A
 Ic^xH
+Ict$P
 Icu H
 IcvPH
-IcvPL
-Icv`+
 Identity
 If intended, call ClearSpecificType first to discard the old value.%s
 If intended, call SetToNull() first to discard the old value.%s
@@ -2796,6 +2803,7 @@ IsValid()
 IsValidCodePage
 IsValidHandle( handle )
 IsValidIndex(i) && (i != InvalidIndex())
+J	V_snprintf
 J	\0(L
 J>@G_
 JHA;T	
@@ -2804,7 +2812,6 @@ JOINT_FLAGS_BODY1_FIXED
 JOINT_FLAGS_NONE
 JOINT_FLAGS_USE_BLOCK_SOLVER
 January
-K	V_snprintf
 K&>.yC
 K0HcQ
 K9l> t
@@ -2857,7 +2864,6 @@ K~Je#>!
 L!d$(L!d$@D
 L!|$(L!
 L$ E3
-L$ H;
 L$ Hc,
 L$ Hi
 L$ Hk
@@ -2909,21 +2915,20 @@ L$hD;
 L$pD+
 L$pH9
 L$pIc
-L8,HcM
-L8DE3
+L$xE3
 L9!t~
 L9#u/H
-L9-y*
-L95	%
-L95'$
-L95N}
-L95^_
-L95i}
-L95n{
+L9-yI
+L95	D
+L95'C
+L95*5
+L95E5
+L95N2
+L95g4
+L95i2
 L95w~
-L95y_
-L9=)6
-L9=P5
+L9=)U
+L9=PT
 L9?t	H
 L9d$ t
 L9d$(t
@@ -2939,6 +2944,7 @@ L;|$X
 L?n(Zy&
 LCMapStringEx
 LCMapStringW
+LDDfh}
 LOG_GENERAL
 Lc'A+
 Lc'D;g
@@ -2994,7 +3000,7 @@ LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 LookAtList
 M9.t	I
-M9fXt
+M9l$Xt
 MATCHFRAMEWORK_001
 MATERIAL_ATTRIBUTE:
 MB(iVR
@@ -3010,6 +3016,7 @@ MESH_DRAW_FLAGS_USE_UNCOMPRESSED_PER_VERTEX_LIGHTING
 MESH_DRAW_INPUT_LAYOUT_IS_NOT_MATCHED_TO_MATERIAL
 MGD;}
 MGetKV3ClassDefaults
+MIsBoxedIntegerType
 MKV3TransferName
 MM/dd/yy
 MODEL_BONE_FLEX_INVALID
@@ -3095,7 +3102,6 @@ Multiple normals in the input layout
 Multiple tangents in the input layout
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 Mw;Mo
-NT2/e
 NULL RenderMesh with valid handle
 NavGameTest001
 NavSystem001
@@ -3123,6 +3129,7 @@ Ordered object did not begin in a zeroed state
 Ordered object's memory was modified prior to construction
 Org(%.3f,%.3f,%.3f) Ang(%.3f,%.3f,%.3f)
 OverlayProjectionDirection
+P	V_sscanf
 P8H=vmdl
 PARENT
 PA^A]_[]
@@ -3192,7 +3199,6 @@ ProjectedDecalSceneObjectDesc
 PropWorldOrigin
 PropertyEditorSystem_001
 Pz}b!
-Q	V_sscanf
 QAngle
 Quaternion
 QuaternionAverageExponential
@@ -3322,7 +3328,6 @@ RtlVirtualUnwind
 RuntimeBuffersInfo_t::BufferInfo_t::UpconvertNormalEncoding
 RuntimeBuffersInfo_t::InitFromVBIBBlockHeader
 S0Q0O
-SATAUH
 SAVAWH
 SA|X=G
 SSE and SSE2 are required.
@@ -3338,7 +3343,7 @@ SVAUH
 SVWATAUAVAWH
 SVWATAUAVH
 SVWATAUAWH
-SVWAUAVH
+SVWAWH
 SWATAWH
 SWAVAWH
 Saturday
@@ -3507,8 +3512,8 @@ SurfacePropertiesList
 T$ E3
 T$ H+
 T$ H;
-T$ HcK
 T$ Ic
+T$"D;
 T$(E3
 T$0E3
 T$0Li
@@ -3552,6 +3557,7 @@ Trying to override a material with an invalid draw call index
 Trying to override the same draw call with two different materials!
 Tuesday
 TypeManager
+U	V_stricmp_fast
 UATAUAVAWH
 UATAWH
 UAVAWH
@@ -3585,6 +3591,7 @@ UVWAVAWH
 UVWAVH
 UWATAUAWH
 UWATAVAWH
+UWATAWH
 UWAUAVAWH
 UWAUH
 UWAVH
@@ -3609,7 +3616,6 @@ Untested code path - Morph layers without morphset/flex rules. Will try to map m
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_stricmp_fast
 V6'?C
 V6E>`"(5
 VApplication001
@@ -3725,7 +3731,7 @@ VertexPaintTintColor
 VeryFast
 VisBuilder_001
 Vrad3_001
-V}kasB
+W	V_strlower_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -3744,15 +3750,18 @@ WideCharToMultiByte
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
-X	V_strlower_fast
+WxHcwpH
 X!t5~
 X24_TYPELESS_G8_UINT
 X32_TYPELESS_G8X24_UINT
 X8Lcp0I
+X?Py9
 XA]A\
 XA_A^A]A\_^[]
+XA_A^A]A\_^][
 XA_A^_^][
 XA__[]
+XA__^[
 Xt7HH
 Y9"SD
 YK @8op
@@ -3807,13 +3816,12 @@ ZdN=Y
 \$PA9^
 \$pfA
 \$xtRI
+\8(HcM
 ]0tTH
 ]J<0"0i3
-]v<8i
 ]xLcc
 ^ ;^$t
 ^ Lc3D;s
-^LADc
 ^xH;,;t/H
 _ ;_$t
 _8Hcw
@@ -3911,7 +3919,6 @@ audioroughnessfactor
 audiosounds
 b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b+GnH
-b@0wB
 bAllocationCanFit
 bDidInsert
 bInserted
@@ -3972,6 +3979,7 @@ d$0E3
 d$8Hc
 d$8Hcw
 d$8x+Hc
+d$HE3
 d$HvJE3
 d$PA;
 d$PE3
@@ -4028,6 +4036,7 @@ f9)u4H9j
 f9NBt
 f9nBt
 f9oBt
+fA;^`
 fA;z(s0ff
 fA;zNs;I
 fA;zP
@@ -4038,9 +4047,8 @@ fD);H
 fD91uTL9r
 fD94H}aD
 fD9t$b
-fD;Y^s~A
-fD;[bsyI
-fD;o`
+fD;Y^
+fD;_b
 fE94*t+A
 fademaxdist
 fademindist
@@ -4099,6 +4107,7 @@ gfffG
 gfffffffH
 group_data_block
 h F9d5P~.H
+hA_A\_]
 hA_A^A]A\_^[]
 hA_A^_^][
 hCompact
@@ -4111,6 +4120,7 @@ http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
 i u!H
+iK<UVX
 iMesh == m_EmbeddedMeshes[ iMesh ].m_nExpectedIndex
 identifier removed
 illegal byte sequence
@@ -4119,6 +4129,7 @@ impacthard
 impactsoft
 inappropriate io control operation
 ineID
+int( nNext ) == pairs.Count()
 int16
 int32
 int64
@@ -4163,7 +4174,7 @@ l$(fD
 l$0E2
 l$0E3
 l$0Hc
-l$0Hc-Zf
+l$0Hc-
 l$0Hck
 l$0Jc
 l$0Lc)
@@ -4367,7 +4378,6 @@ m_Tris
 m_TwistLimit
 m_Twists
 m_UserFriendlyName
-m_Value
 m_VertexMapValues
 m_VertexMaps
 m_VertexPositions
@@ -4970,13 +4980,13 @@ nNodeY0
 nNodeY1
 nNumTrianglesOnNegSide == bestStats.m_nNumTrisStraddlingSplitPlane + bestStats.m_nNumTrisOnLeftOfSplitPlane
 nNumTrianglesOnPosSide == bestStats.m_nNumTrisStraddlingSplitPlane + bestStats.m_nNumTrisOnRightOfSplitPlane
-nPairCount <= GetCtrlCount()
 nParent < b
 nParentBoneIndex >= 0
 nParentNode
 nRbfType >= 0 && nRbfType < CInterpolateRbf::RBF_NUM_TYPES
 nReserved
 nRet < 256
+nRotLockStaticNodes <= nStaticNodes && nStaticNodes <= nCtrlCount && pFeModel->m_nNodeCount == nCtrlCount
 nSampleCount > 0
 nScaleSourceNode
 nSceneObjectIndex >= 0 && nSceneObjectIndex <= UINT16_MAX
@@ -5115,6 +5125,8 @@ pSimWorldTransformsIn
 pTraceData
 pTraceData->IsValidIndex( nId )
 pUtils->GetDataRegistrationFailed()
+pairs.Count() <= Min<int>( nCtrlCount, m_nBoneCount )
+pairs.Count() == nCtrlBonePairCount
 panorama
 particles_list
 permission denied
@@ -5123,6 +5135,8 @@ phys_data_block
 physics
 placementattachment
 placementbone
+pnInputBones
+pnOutputBones
 pointer
 position
 posxyz
@@ -5197,6 +5211,7 @@ t$ UWAWH
 t$ WATAUAVAWH
 t$ WATAWH
 t$ WAVAWH
+t$ WE3
 t$ WH
 t$ fE;
 t$ fff
@@ -5213,7 +5228,6 @@ t$0Hc
 t$0Hcq
 t$0Hi
 t$0Hk
-t$0L9t$H
 t$0Lk
 t$0Mc
 t$0fff
@@ -5317,6 +5331,7 @@ u%@8j(t
 u&fE;
 u,!T$(H!T$ 
 u3HcH<H
+u3Tpe
 u4I9}(
 u7Hck@;kPu
 u:Hcn@;nPu
@@ -5337,7 +5352,6 @@ unspecified
 upL;t$0
 userAnimationData.m_nType == FIELD_FLOAT32
 uzKs@>
-v77-:x
 v=Y]Bv
 v?,	m2
 v@D8s(t
@@ -5397,6 +5411,7 @@ x UAVAWH
 x!A;Fx}
 x$fff
 x*D;AH}$Ic
+x7fff
 x>V6'
 x>V6'?C
 xA^A]_^][
@@ -5408,14 +5423,13 @@ xp;Ph}kH
 xpHc@hH
 xxHc@pL
 y\PD>!
-z(u&A
 { AWH
 { H9;t	H
-{+Lyuo
 {0x%x}
 {@9s8|AH
 {@L99t
 {PLc'M
+{lLcM
 {pHcKhH
 {pHcs`Hc
 {un'%
@@ -5488,11 +5502,11 @@ z(u&A
 |(tFM
 |)L9c
 |Lu?c
-|Q3)1
 |]A;N
 |b=})>
 |lHcC
 }$fA;P
+}%Hc+;k
 }'fff
 }>;_$
 }EHcG

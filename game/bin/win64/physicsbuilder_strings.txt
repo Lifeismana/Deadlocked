@@ -2,7 +2,6 @@
 								
 																
 			<table>			<tr>			<th align="left"><b>Aggressive</b></th>			<th align="left">Removes any bones which are not skinned or referenced</th>			</tr>			<tr>			<th align="left"><b>Leaf Only</b></th>			<th align="left">Removes any bones which are not skinned or referenced that have no children</th>			</tr>			<tr>			<th align="left"><b>None</b></th>			<th align="left">Doesn't remove any bones</th>			</tr>			</table>
-		V_frexpf
 	!s99
 	#jT$
 	6p7M
@@ -17,6 +16,7 @@
 	NAN encountered in element '%s' guid %s attribute '%s'!
 	V_fpclassifyd
 	V_fprintf
+	V_frexpf
 	V_isnand
 	V_vsnprintf
 	Warning
@@ -620,16 +620,15 @@ $~NHc
 (*%s*), 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-<Ku
-(5#9d
-(5(%d
-(530d
-(5@#d
-(5C'd
-(5g:d
-(5w1d
+(-<Qu
+(5 'd
+(5#+d
+(5G>d
+(5W5d
+(5i,d
 (;^ |
 (;s |
+(=_<D
 (A\_][
 (A]A\^[
 (A]A\_^][
@@ -903,7 +902,6 @@ $~NHc
 )$$fD
 ),$fD
 )4$fD
-)55+n
 )<$E3
 )<$fD
 )>6{1n
@@ -970,7 +968,6 @@ $~NHc
 )L$0I
 )L$0I;
 )L$0L
-)L$0f
 )L$0t
 )L$0t%H
 )L$0t6H
@@ -985,7 +982,6 @@ $~NHc
 )L$@t&H
 )L$@u#H
 )L$PA
-)L$PD
 )L$PD8
 )L$PE
 )L$PH
@@ -1009,7 +1005,7 @@ $~NHc
 )T$0D
 )T$0L
 )T$0f
-)T$@B
+)T$@E
 )T$@H
 )T$PA
 )T$PD
@@ -1194,6 +1190,7 @@ $~NHc
 )|$`Mc
 )|$`f
 )|$pD
+)|$pE
 )|$pH
 )|$pI;
 )|B?d!
@@ -1258,6 +1255,7 @@ $~NHc
 +f)>0'
 +h->|
 +o'q)}
+,	V_logd
 , channels = 
 , height = 
 , window
@@ -1279,7 +1277,7 @@ $~NHc
 ,YA1H
 ,YA1I
 ,dF9<
--	V_logd
+-	V_logf
 ---- dmxconvert cmdline ----
 ---- dmxconvert output ----
 ---------------------------
@@ -1296,7 +1294,6 @@ $~NHc
 -sse3
 -sse4
 -tools
-.	V_logf
 ..om?
 .00cfg
 .40t8Ic
@@ -7289,17 +7286,13 @@ $~NHc
 .CRT$XPZ
 .CRT$XTA
 .CRT$XTZ
-.D$$zGuE
-.D$(z6u4H
 .D$4uV
 .D$8uI
 .D$<u<L
-.D$Dz
-.D$Hz
 .D$Tzrup
 .D$XzdubC
-.D$dz
-.D$hz
+.L$$z*u(
+.L$(z!u
 .YA1H
 .YA1I
 .data
@@ -7324,6 +7317,10 @@ $~NHc
 .rtc$IZZ
 .rtc$TAA
 .rtc$TZZ
+.t$Dz
+.t$Hz
+.t$dz
+.t$hz
 .text
 .text$di
 .text$mn
@@ -7337,7 +7334,8 @@ $~NHc
 .xJ>Hf
 .xdata
 .xdata$x
-/% i@
+/% m@
+/%lW7
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
 // 						"BA_INT_DANGER"		break out of this anim only if threatened
@@ -7354,7 +7352,8 @@ $~NHc
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5K~l
+/5{~l
+/=nJD
 />58d%
 /D$pv
 /D$tv
@@ -7439,7 +7438,6 @@ $~NHc
 0iN>/
 0w0c1
 0x%llx
-0z$u"
 0}0i1
 1#IND
 1#INF
@@ -7468,7 +7466,7 @@ $~NHc
 220323000000Z
 220801000000Z
 230714000000Z
-240711150526Z0/
+240718150225Z0/
 241009235959Z0a1
 2D Aim
 2D Blend Has No Referenced Animations
@@ -7533,6 +7531,7 @@ $~NHc
 7YA1H
 7YA1I
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powd
 8"3hrf
 8-byte data pool
 8/t[H
@@ -7584,7 +7583,7 @@ $~NHc
 8fB9l
 8fD9D
 8ke?;
-9	V_powd
+9	V_powf
 9)~ML
 9)~P3
 9)~eH
@@ -7650,6 +7649,7 @@ $~NHc
 9_<~fH
 9_H~-
 9i(~4H
+9iiFM
 9k ~rH
 9k8~QH
 9k8~^
@@ -7696,7 +7696,6 @@ $~NHc
 9|$HE
 9|$Hu
 9|$Pu
-9|$P~0
 9|$P~2H
 9|$Xu
 9|$hu
@@ -7708,11 +7707,12 @@ $~NHc
 9~P~3
 9~P~7
 9~P~;
-:	V_powf
+:	V_qsort
 :!L$ 0
 :!|$ 0E
 :!|$`0
 :: <NO TARGET BONE>
+:;=D$
 :>)*	v
 :>t6k'
 :A99u
@@ -7722,7 +7722,8 @@ $~NHc
 :VP8LtHD
 :VP8X
 :fA;x
-;	V_qsort
+:}5tEM
+;	V_qsort_s
 ;	uXH
 ; tris:
 ;(}{H
@@ -7789,11 +7790,11 @@ $~NHc
 ;w0}LH
 ;|$ |
 ;|$0|
+;|$0}
 ;|$8|
 ;|$P|
 ;|$`|
 ;}st-;}ot(H
-<	V_qsort_s
 <	tf3
 <	u"H
 <	u2H
@@ -7872,11 +7873,11 @@ $~NHc
 =%H5<mN
 ======
 ==MQ?
-=MIsBoxedIntegerType
 =SHX?
 =SPB8ue
 =YA1H
 =imb;D
+=m_Value
 =rIQU
 >%H5<mN
 >0<0:
@@ -8095,12 +8096,12 @@ $~NHc
 ?V_strnlen@@YAHPEBDH@Z
 ?YA1A
 ?YA1H
-?blendweights
 ?f`Y4
 ?kxG2)
 ?u='@
 ?uHE;
 ?{Q}<
+@	V_roundf
 @ A;	IcC
 @ D9L
 @ HcI0H
@@ -8131,7 +8132,6 @@ $~NHc
 @8;tb3
 @8;tc3
 @8;th3
-@8=>\
 @8j(t
 @8k(t
 @8krt_
@@ -8403,7 +8403,6 @@ $~NHc
 @ffffff
 @m_vCenter
 @unnamed_%d
-A	V_roundf
 A B9T
 A D9D
 A D9T
@@ -16992,6 +16991,7 @@ D$ r|
 D$ t 
 D$ ta
 D$ v5
+D$ z3u1
 D$!Ic
 D$"fD9 u
 D$$;D
@@ -17025,7 +17025,6 @@ D$(Ic
 D$(L+
 D$(Lc
 D$(M+
-D$(M;
 D$(eH
 D$(fA
 D$(fI
@@ -17033,6 +17032,7 @@ D$(ff
 D$(fff
 D$,;D$X
 D$,Hc
+D$,M;
 D$0	!O3L
 D$0 >
 D$0 s
@@ -17143,7 +17143,7 @@ D$8A9Gxt
 D$8A;
 D$8A;G
 D$8D9
-D$8D;5#P
+D$8D;5
 D$8E3
 D$8H;
 D$8H=
@@ -17159,7 +17159,6 @@ D$8L;
 D$8M;
 D$8Mc
 D$8f;
-D$8fA
 D$8ff
 D$8fff
 D$8i|$8
@@ -17206,6 +17205,7 @@ D$@Xu
 D$@f;
 D$@fD
 D$@ff
+D$@w9D
 D$@{S
 D$@|R
 D$AA;
@@ -17236,7 +17236,6 @@ D$HfI
 D$Hq&|
 D$HtQ
 D$Hwn
-D$Hz$u"
 D$L9D$Hs H
 D$L;D$T
 D$L;\$4|
@@ -17355,6 +17354,8 @@ D$hL;m
 D$hMc
 D$hf;
 D$hfA
+D$hfE
+D$hfff
 D$ht=
 D$lA+
 D$pA+
@@ -17432,8 +17433,8 @@ D8/tq3
 D81uUL9r
 D83tc3
 D84:u
-D85VA
-D85m@
+D85+D
+D85GC
 D8<.u
 D8GqA
 D8L$0u`
@@ -17469,28 +17470,37 @@ D8{qtfIct$xI
 D8|$`t
 D9 u2D9
 D9$(|
-D9%)1
-D9%2)
-D9%4-
-D9%D0
-D9%H7
-D9%T+
-D9%X$
-D9%m3
-D9%t%
-D9%t5
+D9%-5
+D9%4'
+D9%B7
+D9%E4
+D9%E7
+D9%F5
+D9%N8
+D9%Z6
+D9%]"
+D9%]3
+D9%e6
+D9%f+
+D9%h/
+D9%u2
+D9%w:
+D9%~*
 D9&u?H
 D9&~IA
 D9'u@
 D9(tT
+D9-ro
 D9/~%H
 D9/~4fff
 D97uFA
 D97~H3
 D99t~I
 D99~CH
-D9=0<
-D9=H;
+D9=0?
+D9=D6
+D9=Dn
+D9=H>
 D9>|%Hc
 D9>~J
 D9A t7
@@ -17516,8 +17526,8 @@ D9i t
 D9kXu
 D9l$ 
 D9l$ ~uI
+D9l$0
 D9l$H|\
-D9l$P
 D9l$p
 D9l$t
 D9mw|MH
@@ -17526,6 +17536,7 @@ D9oXu
 D9p`t"H
 D9q8~"
 D9t$0
+D9t$0~)
 D9t$0~fH
 D9t$@~LH
 D9t$Hu
@@ -17551,11 +17562,14 @@ D9|$`u
 D9|$d}
 D9|$pu*H
 D9~(D
+D;%uM
 D;&s0I
 D;.s.I
 D;0|V
 D;0}"H
-D;5^>
+D;5>?
+D;=mb
+D;=vO
 D;A8t
 D;C$|
 D;D$(|
@@ -17586,6 +17600,7 @@ D;l$t
 D;m`}
 D;n`}
 D;sHu
+D;t$0|
 D;t$@|
 D;t$D|
 D;t$T
@@ -17595,9 +17610,9 @@ D;t$du
 D;t7(
 D;u$F
 D;u0|
-D;up|
+D;u`|
+D;uh|
 D;uxu
-D;ux|
 D;ux}
 D;v(u
 D;v@|
@@ -17615,8 +17630,8 @@ D;|$xu
 D;|>(
 D;}$D
 D;}8u
-D;}p|
-D;}t|
+D;}`|
+D;}d|
 DBM&(
 DCT coefficient out of range
 DCT scaled block size %dx%d not supported
@@ -17919,6 +17934,7 @@ DynamicMeshDeformParams_t
 DynamicMeshDeformParams_t::KV3TransferLoad_Impl
 DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
+E	V_sincosf
 E A84$u
 E D9{(
 E H9H
@@ -18357,7 +18373,6 @@ Extrude Twist
 EzLc}
 E|$HD
 E|$XD
-F	V_sincosf
 F	tj<
 F 9F(r
 F A;F
@@ -18698,6 +18713,7 @@ Friday
 From Name
 FrondPivotPaint
 Fsfm_v3
+G	V_sinf
 G 9F t;I
 G D9D
 G D;c 
@@ -18853,6 +18869,7 @@ GetAsNumeric() - unsupported type '%s' (%d)!
 GetAssociatedBoneName() override required
 GetAttributeType( nAttrIdx ) != ATTRDATATYPE_NONE
 GetBasicType() == KV3_BTYPE_TABLE
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCStringCharConversion
@@ -19001,7 +19018,6 @@ G|$8A
 G|$HH
 G|$hI
 G|$xI
-H	V_sinf
 H ATH
 H SUATH
 H SVH
@@ -19032,13 +19048,10 @@ H4IcH8H
 H9(t?A
 H9+t	H
 H9/t	H
-H95W?
-H95g/
 H97u+A
 H98t$H
 H98t2
 H9;t	H
-H9=-Oy
 H9>u/H
 H9A@t	H9A8
 H9AHt	H9A8
@@ -19509,6 +19522,7 @@ Hc|$X
 Hc|$XL
 Hc|$XLcd$`L
 Hc|$`
+Hc|$hA
 Hc|$hL
 Hc|$hLcl$xL
 Hc|$lH
@@ -19578,7 +19592,6 @@ HullSimplificationAlgorithm_t
 I(I+I H
 I+4$H
 I+O H
-I5&jDaX
 I9.t	I
 I9D$P
 I9FPuiH
@@ -20097,6 +20110,7 @@ Item.Medium
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
 Iterate to Element
 Iterations
+J	V_snprintf
 J D9D
 J D9l
 J%f%f%f%f%f%f%f%f
@@ -20124,7 +20138,6 @@ JiggleBone
 JiggleBoneList
 Joint Name
 Joint to Joint Simple
-K	V_snprintf
 K H9K0u
 K UAVAWH
 K$HcC
@@ -20292,7 +20305,6 @@ L$ fI
 L$ fff
 L$ iM
 L$ iM(
-L$ zXuV
 L$ |+L;
 L$&8\$&t,8Y
 L$(A;n
@@ -20419,6 +20431,7 @@ L$PL;
 L$PLc
 L$PMc
 L$Pf;
+L$Pff
 L$Pfff
 L$QE3
 L$XA;
@@ -20517,15 +20530,15 @@ L9#t	H
 L9#u/H
 L9&t	H
 L9+t	H
-L95.*
-L95I*
-L95N(
-L95g)
-L95i(
+L95>-
+L95Y-
+L95^+
+L95w,
+L95y+
 L97vH
 L98t#A
 L9;t	H
-L9=nx
+L9=~{
 L9?t	H
 L9BHA
 L9IHA
@@ -20637,6 +20650,7 @@ Lc.D;n
 Lc/Hc
 Lc3A+
 Lc3D;s
+Lc5^_
 Lc6D;v
 Lc6Hc
 Lc7A+
@@ -20778,6 +20792,7 @@ Lcs`D;sp
 Lct$ L
 Lct$(A
 Lct$0H
+Lct$0I
 Lct$8M
 Lct$@D
 Lct$@E
@@ -20788,7 +20803,6 @@ Lct$HL
 Lct$HLc>A
 Lct$P
 Lct$PD
-Lct$PE3
 Lct$X
 Lct$`
 Lct$`Lc
@@ -20953,6 +20967,7 @@ MESH_DRAW_FLAGS_USE_UNCOMPRESSED_PER_VERTEX_LIGHTING
 MESH_DRAW_INPUT_LAYOUT_IS_NOT_MATCHED_TO_MATERIAL
 MGD;}
 MGetKV3ClassDefaults
+MIsBoxedIntegerType
 MKV3TransferName
 MM/dd/yy
 MODEL_BONE_FLEX_INVALID
@@ -21270,7 +21285,6 @@ N3`d?
 N>O=I9
 NAN(IND)
 NAN(SNAN)
-NI+gz@V
 NJ2"v
 NO DMEMODEL!?!?!
 NO TARGET
@@ -21498,6 +21512,7 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
+P	V_sscanf
 P HcE
 P Icu
 P Lcm
@@ -21827,7 +21842,7 @@ Push mesh faces outward along their local normal. Optionally build shell geometr
 PushBack
 Pz}b!
 P~6-U~/W
-Q	V_sscanf
+Q	V_sscanf_s
 Q A;U
 Q2XXR
 Q5rHg,>
@@ -21849,7 +21864,6 @@ QueryPerformanceCounter
 QueryPerformanceFrequency
 Quintic
 Qxt2A
-R	V_sscanf_s
 R Ankle
 R Hip
 R IcB
@@ -22506,6 +22520,7 @@ SnapshotVertexExtraction
 Softbody
 Software
 Solver Type
+Some events have invalid characters in their IDs
 Some events have unset IDs
 Some events have unset event classes
 Sort By Color
@@ -22788,8 +22803,8 @@ T$xE3
 T$xHc
 T$xHk
 T$xL+
-T%<?D
-T-D[{
+T-	e{
+T-Y_{
 TD u"E;
 TGALoader::LoadRGBA8888
 TGALoader::ReadFile
@@ -23035,6 +23050,7 @@ Two Sided
 Two Sided (Foliage)
 Two morph controls which should be grouped into a single control
 Type of faceposer keys, Gesture or Posture
+U	V_stricmp_fast
 U H+U8
 U H+U8D;
 U H+UHD;
@@ -23322,7 +23338,6 @@ UtlTokenizer_UnqescapeOrUnquoteString
 UwH;U
 UwJc|*
 UxtcD
-V	V_stricmp_fast
 V6'?C
 V6E>`"(5
 VATAUAVAWH
@@ -23545,10 +23560,12 @@ Volumetric Solve Strength
 Voronoi Plane Primitive
 Vortices
 Vrad3_001
+W	V_strlower_fast
 W%	s;M@
-W%{K9
-W-~;^
-W5KST
+W%kR9
+W%y4^
+W-9Q^
+W-n>^
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to parse class '%s'.
 WARNING: No 'models_ModelDocGameData' FGD was specified in the 'ModelDoc' section of gameinfo.gi.
@@ -23641,7 +23658,8 @@ WriteFile
 WriteResourceManifestToFile failed: "%s"
 Wrong JPEG library version: library is %d, caller expects %d
 Wrote symbol stats to file: %s
-X	V_strlower_fast
+Ww$oY
+X	V_strnchr
 X (Red   / Forward)
 X - Forward
 X @8u
@@ -23651,17 +23669,21 @@ X HcYxH
 X UVWAVAWH
 X VWATH
 X!t5~
-X%R7D
-X%ZTD
-X-&A'
-X-3&.
-X-PDu
-X5&=g
-X5,?(
-X55s(
-X5M=g
-X5P?(
-X5[V$
+X%2<D
+X%:YD
+X-8E'
+X-L*.
+X-PJu
+X-Zi*
+X-fE'
+X-s*.
+X5#='
+X5%gl
+X5N~l
+X5Ow(
+X5Q='
+X5lC(
+X5uw(
 XA\[H
 XA\_^[
 XA]A\
@@ -23701,18 +23723,17 @@ Xt7HH
 X|$ A
 X|$8E
 X|$LE
-Y	V_strnchr
 Y (Green / Left)
 Y - Left
-Y%WO7
-Y52C8
-Y5?hm
-Y5Y~l
-Y5_Oh
-Y5r~l
+Y%/Yu
+Y%7S7
+Y-*]l
+Y-Dte
+Y-H	7
+Y-z/s
+Y-}	7
+Y5"J8
 Y9"SD
-Y=3ID
-Y=a,f
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -23722,7 +23743,6 @@ YD$@f
 YD$HA
 YD$XA
 YK @8op
-YL$|I
 YPD9C0t
 YPosition
 YResolution
@@ -23749,6 +23769,7 @@ ZdN=Y
 Zod(^?
 Zpm"U
 [	UoA
+[	V_strtod
 [%d] Aborting undo '%s'
 [%d] Popping undo '%s'
 [%d] Pushing undo '%s'
@@ -23760,7 +23781,6 @@ Zpm"U
 [K]taM?
 [aOni*{
 [choices
-\	V_strtod
 \ u&H9
 \$ $?<
 \$ A;
@@ -23955,29 +23975,24 @@ Zpm"U
 \$|E2
 \$|L+
 \$|Lc
-\-:A'
-\-G&.
-\5%9'
-\510^
-\5B&]
-\5Is(
-\5\j7
-\5a=g
-\5d?(
-\='ED
+\-zE'
+\5e='
+\5ln7
+\=	5^
 \L$HIc
 \L$|D
 \T$lHc
 \t$0D
 \t3D8T$(t
-\|f6V
 ]$HcK
+]%"MP
 ]'HcE
 ](IcE Lk
 ])6M>&
 ],Lcu
 ]0HcM@A
-]5[IC
+]58PQ
+]5;MC
 ]>)2X
 ]@D8mHt	H
 ]@IcE8Li
@@ -24001,7 +24016,6 @@ Zpm"U
 ^oEZ_
 _ ;_$t
 _0HcO@A
-_5Tvl
 _8Hcs
 _8Hcw
 _8tDH
@@ -24374,6 +24388,7 @@ autofill_name
 autolevel
 axies
 axisSystem
+b	V_tanf
 b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b+GnH
 b?^Cy
@@ -24468,6 +24483,7 @@ blendindices
 blendindices$0
 blendindices$0Indices
 blendweight
+blendweights
 blendweights$0
 blendweights$0Indices
 blocklos
@@ -24550,7 +24566,6 @@ burst_params_cp
 busy_anim
 busy_sequence
 by this version of libtiff.
-c	V_tanf
 c [1>H'
 c(>\,
 c(L9#t	H
@@ -24805,7 +24820,6 @@ d$(E3
 d$(L9g
 d$(Lcd$HL
 d$(Mk
-d$(fA
 d$(fD
 d$(fI
 d$0D+
@@ -24840,7 +24854,6 @@ d$HHcD$@H
 d$HL;
 d$HLc
 d$HLcd$hL
-d$HfA
 d$IfD
 d$LE3
 d$Ls*
@@ -25816,7 +25829,6 @@ jitteriterations
 jitterscale
 jitterscale_vector
 jj@0HK4
-jo5]	y
 jointCount
 jointIndices
 jointIndicesIndices
@@ -25845,7 +25857,7 @@ k@H9k(H
 kE_PL
 kHH9k0H
 kL@8o(u
-kPH9-
+kPH9-&
 keep_colliders
 keep_vertices_in_memory
 key_type
@@ -25946,10 +25958,9 @@ l$0u"I
 l$0u$H
 l$0|LH
 l$4A+
-l$4wAD
 l$8A;
 l$8A^A\^
-l$8D9mt
+l$8D9md
 l$8E3
 l$8E;
 l$8E;|$
@@ -25961,7 +25972,7 @@ l$8Mc
 l$8u&H
 l$8u1H
 l$<D;
-l$@;-]
+l$@;-
 l$@A+
 l$@A;
 l$@E3
@@ -25980,6 +25991,7 @@ l$@u!H
 l$@u*H
 l$@u/HcU
 l$DD;
+l$DwKD
 l$H+F
 l$HA_A^A]A\_^
 l$HE3
@@ -26042,7 +26054,6 @@ l$hHcL$XL
 l$hHck
 l$hHk
 l$hfD
-l$hu=H
 l$pA+
 l$pA98
 l$pD;
@@ -26155,6 +26166,7 @@ lowest
 lowprecisionuv
 lowprecisionuv1
 lu!;w
+m"Q97"d
 m.num_cols() == 1
 m.num_rows() == nSampleCount
 m0k0$
@@ -26402,7 +26414,6 @@ m_Tris
 m_TwistLimit
 m_Twists
 m_UserFriendlyName
-m_Value
 m_ValueIndexToHandleArray.Count() == m_StreamSet.GetNumValues()
 m_Vector.Count() == m_SymbolTable.GetNumStrings()
 m_VertexMapValues
@@ -27544,28 +27555,28 @@ n|$`fA
 o KPBf
 o!L9l$ t
 o$$fA
-o%/a:
-o%=S5
-o%>n:
-o%Hq5
-o%I[:
-o%J):
-o%jw5
+o%/e:
+o%>r:
+o%I_:
+o%J-:
+o%MW5
+o%Xu5
+o%]#:
+o%z{5
 o,$fD
-o-1}:
-o-77:
-o-G,:
-o-`4:
+o-7;:
+o-G0:
+o-`8:
 o47Lc
-o510:
-o58N:
-o5L":
-o5Ua	
-o5|2:
-o=Ax>
-o=N":
-o=p	:
-o={T:
+o514:
+o58R:
+o5L&:
+o5ug	
+o5|6:
+o=A$7
+o=A|>
+o=N&:
+o={X:
 oAPfD
 oD$ f
 oD$ fA
@@ -28709,6 +28720,7 @@ t"Hc(H
 t#E;.s
 t#Ic4$A;t$
 t$ A+
+t$ AUAVAWH
 t$ AVAWH
 t$ AVH
 t$ AVL
@@ -28776,7 +28788,7 @@ t$(fD
 t$(fI
 t$(u4A
 t$09D$X
-t$0;5
+t$0;5K
 t$0;o8
 t$0A^_
 t$0A_A^
@@ -28896,7 +28908,7 @@ t$LF;4
 t$P9\$`~"H
 t$P9|$DI
 t$PA+
-t$PD;5
+t$PD;5T
 t$PE3
 t$PE9,$
 t$PH9GP
@@ -28930,7 +28942,6 @@ t$XI9
 t$XI;
 t$XIc
 t$XLk
-t$Xfff
 t$XuPH
 t$\D;
 t$`A+
@@ -28955,7 +28966,6 @@ t$`~ H
 t$fff
 t$hA+
 t$hD9`
-t$hD9}
 t$hE3
 t$hHc
 t$hL9@
@@ -28983,6 +28993,7 @@ t$pu4M
 t$pu5H
 t$x;U
 t$x@8h
+t$xA+
 t$xA9G
 t$xA;
 t$xA;G
@@ -29650,7 +29661,6 @@ t~Hc>D
 u	D91
 u	fD;A
 u Hcu
-u Lcu
 u u0H
 u"D;{
 u#HcT$8I
@@ -29949,8 +29959,8 @@ w4kK0
 w8;o@u
 w8Hc/;
 w@H91t
-wTHc;
 wXHcGPH
+waHc;
 warp_algorithm
 warp_rule
 water
@@ -30017,6 +30027,7 @@ x UAVAWH
 x!;;}
 x!A;Fx}
 x$A;]
+x%;=4C
 x%fff
 x%i (
 x'A;n
@@ -30034,7 +30045,6 @@ x<fff
 x=HcS
 x>V6'
 x>V6'?C
-x@;=S]
 xA]A\^[
 xA]A\_^
 xA^A]
@@ -30082,17 +30092,18 @@ yaw_stiffness
 ycoord
 yjIc>I
 ys == 0
+z#u!Hc+H
 z%u#H
+z&u$D
 z-u+2
+z.u,E
 z/u-A
 z/u-E
 z8u6H
-z;u9Hc+H
 zY;>u:m	
 zero dir
 zero_unselected
 znear
-zzf4Z
 { ATAVAWH
 { AUAVAWH
 { AVH
@@ -30233,6 +30244,7 @@ zzf4Z
 |$8Hc
 |$8Hc>H
 |$8HcD$0L
+|$8Hc\$0L
 |$8Hct$0E
 |$8Hk
 |$8L+
@@ -30348,7 +30360,6 @@ zzf4Z
 |$XH;|$x
 |$XHc
 |$XHcU
-|$XHc\$PL
 |$XHk
 |$XI9
 |$XIc
@@ -30413,6 +30424,7 @@ zzf4Z
 |$pLc
 |$pM+
 |$pfD
+|$pu;H
 |$x9C
 |$xD;8
 |$xE3

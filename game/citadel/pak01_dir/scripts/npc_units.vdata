@@ -3289,7 +3289,7 @@
 		_base = "trooper_base"
 		_class = "npc_trooper_boss"
 		m_sModelName = resource_name:"models/npc/boss_tier_01_brazier_guardian/boss_tier_01_brazier_guardian.vmdl"
-		m_nMaxHealth = 5000
+		m_nMaxHealth = 5500
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
 		m_hFootstepSounds = "trooper"
@@ -3303,7 +3303,7 @@
 		m_flAcceleration = 200
 		m_flMeleeDamage = 100.000000
 		m_flMeleeAttemptRange = 240
-		m_flMeleeHitRange = 480
+		m_flMeleeHitRange = 314.960000
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -3390,6 +3390,7 @@
 		m_BeamPointStartLoopSound = soundevent:"Guardian.Tier1.Wpn.Point.Begin.Lp"
 		m_BeamPointEndLoopSound = soundevent:"Guardian.Tier1.Wpn.Point.End.Lp"
 		m_BeamPointClosestLoopSound = soundevent:"Guardian.Tier1.Wpn.Point.Closest.Lp"
+		m_flMinMeleeAttackTime = 1.500000
 		m_TrooperBossInvulnModifier = subclass:
 		{
 			_my_subclass_name = "trooper_boss_invuln"
@@ -3565,7 +3566,7 @@
 		m_flAcceleration = 200
 		m_flMeleeDamage = 100.000000
 		m_flMeleeAttemptRange = 240
-		m_flMeleeHitRange = 480
+		m_flMeleeHitRange = 314.960000
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -3652,6 +3653,7 @@
 		m_BeamPointStartLoopSound = soundevent:"Guardian.Tier1.Wpn.Point.Begin.Lp"
 		m_BeamPointEndLoopSound = soundevent:"Guardian.Tier1.Wpn.Point.End.Lp"
 		m_BeamPointClosestLoopSound = soundevent:"Guardian.Tier1.Wpn.Point.Closest.Lp"
+		m_flMinMeleeAttackTime = 1.500000
 		m_TrooperBossInvulnModifier = subclass:
 		{
 			_my_subclass_name = "trooper_boss_invuln"
@@ -3859,7 +3861,7 @@
 		_base = "npc_boss_tier1"
 		_class = "npc_trooper_boss"
 		m_sModelName = resource_name:"models/npc/boss_tier_01_brazier_guardian/boss_tier_01_brazier_guardian.vmdl"
-		m_nMaxHealth = 5000
+		m_nMaxHealth = 5500
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
 		m_hFootstepSounds = "trooper"
@@ -3873,7 +3875,7 @@
 		m_flAcceleration = 200
 		m_flMeleeDamage = 100.000000
 		m_flMeleeAttemptRange = 240
-		m_flMeleeHitRange = 480
+		m_flMeleeHitRange = 314.960000
 		m_flMeleeDuration = 1.000000
 		m_flAttackT1BossMaxRange = 540
 		m_flAttackTrooperMaxRange = 700
@@ -3960,6 +3962,7 @@
 		m_BeamPointStartLoopSound = soundevent:"Guardian.Tier1.Wpn.Point.Begin.Lp"
 		m_BeamPointEndLoopSound = soundevent:"Guardian.Tier1.Wpn.Point.End.Lp"
 		m_BeamPointClosestLoopSound = soundevent:"Guardian.Tier1.Wpn.Point.Closest.Lp"
+		m_flMinMeleeAttackTime = 1.500000
 		m_TrooperBossInvulnModifier = subclass:
 		{
 			_my_subclass_name = "trooper_boss_invuln"
@@ -4184,8 +4187,8 @@
 		m_flHealthBarOffset = 600
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
-		m_iHealthGainPerMinute = 200
-		m_iStartingHealth = 4500
+		m_iHealthGainPerMinute = 275
+		m_iStartingHealth = 5000
 		m_flPhysicsImpulseMultiplier = 0.000000
 		m_flBeamWeaponWidth = 24
 		m_flBeamTurnRate = 360
@@ -5752,7 +5755,7 @@
 	{
 		_class = "npc_boss_tier2"
 		m_sModelName = resource_name:"models/npc/boss_tier_02_sun_walker/boss_tier_02_sun_walker.vmdl"
-		m_nMaxHealth = 4500
+		m_nMaxHealth = 5040
 		m_flSightRangePlayers = 1600.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_flPlayerInitialSightRange = 1200.000000
@@ -5772,8 +5775,8 @@
 		m_flStompDamage = 350.000000
 		m_flStunDuration = 2.000000
 		m_flMeleeAttemptRange = 600
-		m_flStompImpactRadius = 787.402000
-		m_flStompImpactHeight = 78.740200
+		m_flStompImpactRadius = 905.510000
+		m_flStompImpactHeight = 236.220000
 		m_flStompTossUpMagnitude = 1.250000
 		m_flTossSpeed = 400.000000
 		m_flSweepRadius = 200.000000
@@ -5854,7 +5857,7 @@
 	{
 		_class = "npc_boss_tier2"
 		m_sModelName = resource_name:"models/npc/boss_tier_02_sun_walker/boss_tier_02_sun_walker.vmdl"
-		m_nMaxHealth = 4500
+		m_nMaxHealth = 5040
 		m_flSightRangePlayers = 1600.000000
 		m_flSightRangeNPCs = 1600.000000
 		m_flPlayerInitialSightRange = 1200.000000
@@ -5874,8 +5877,8 @@
 		m_flStompDamage = 350.000000
 		m_flStunDuration = 2.000000
 		m_flMeleeAttemptRange = 600
-		m_flStompImpactRadius = 787.402000
-		m_flStompImpactHeight = 78.740200
+		m_flStompImpactRadius = 905.510000
+		m_flStompImpactHeight = 236.220000
 		m_flStompTossUpMagnitude = 1.250000
 		m_flTossSpeed = 400.000000
 		m_flSweepRadius = 200.000000
@@ -5977,8 +5980,8 @@
 		m_flStompDamage = 350.000000
 		m_flStunDuration = 2.000000
 		m_flMeleeAttemptRange = 600
-		m_flStompImpactRadius = 787.402000
-		m_flStompImpactHeight = 78.740200
+		m_flStompImpactRadius = 905.510000
+		m_flStompImpactHeight = 236.220000
 		m_flStompTossUpMagnitude = 1.250000
 		m_flTossSpeed = 400.000000
 		m_flSweepRadius = 200.000000
@@ -6080,8 +6083,8 @@
 		m_flStompDamage = 350.000000
 		m_flStunDuration = 2.000000
 		m_flMeleeAttemptRange = 600
-		m_flStompImpactRadius = 787.402000
-		m_flStompImpactHeight = 78.740200
+		m_flStompImpactRadius = 905.510000
+		m_flStompImpactHeight = 236.220000
 		m_flStompTossUpMagnitude = 1.250000
 		m_flTossSpeed = 400.000000
 		m_flSweepRadius = 200.000000

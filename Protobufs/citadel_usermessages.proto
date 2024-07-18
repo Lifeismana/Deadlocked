@@ -119,6 +119,7 @@ message CCitadelUserMessage_Damage {
 	optional uint32 victim_class = 16;
 	optional int32 victim_shield_max = 17;
 	optional int32 victim_shield_new = 18;
+	optional int32 hits = 19;
 }
 
 message PingCommonData {

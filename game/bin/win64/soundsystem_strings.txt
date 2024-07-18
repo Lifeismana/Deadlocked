@@ -3,7 +3,6 @@
 			Sequence:	%s
 		%.*s
 		Instrument: %s
-		V_frexpf
 	 The lexer was matching from line %d, offset %d, which
 	 This indicates a poorly specified lexer RULE
 	 dspmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f
@@ -36,9 +35,9 @@
 	Sample Rate:	%d
 	Track: %s
 	VOL: %f
-	V_fopen
 	V_fprintf
 	V_fread
+	V_frexpf
 	V_fseek
 	V_ftell
 	V_vsnprintf
@@ -54,7 +53,6 @@
 	_V_strncpy
 	_V_strnicmp_fast
 	_V_wcsncpy_bytes
-	d`PdIK
 	fA9N(D
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
@@ -154,6 +152,7 @@
  Hc)L
  Hc1H
  Hc1L
+ Hc5u
  Hc9H
  Hc9L
  HcA(E3
@@ -361,6 +360,7 @@ $toolgraphs
 'Group Box Mins' Opvar Name
 'Should Play Cluster Child' Opvar Name
 'Should Play' Opvar Name
+(	V_log10f
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
@@ -375,8 +375,10 @@ $toolgraphs
 ( nStart + 1 ) < m_nCount
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
+(%-*7
 (%2db) %6lli : %s
 (%d,%d)
+(%q(7
 (%s) %d
 (%s:%s) 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
@@ -384,6 +386,7 @@ $toolgraphs
 (8GXgw
 (92tSH
 (9:t:H
+(=c.7
 (?3s'?
 (A\_^[
 (A]^][
@@ -572,7 +575,6 @@ $toolgraphs
 (|$pD
 (|$pI
 (|$pL
-)	V_log10f
 )18>BFJMPSVX[]_acegiklnpqstvwyz{}~
 )7ESbp
 )<$vr
@@ -726,6 +728,7 @@ $toolgraphs
 )t$`H
 )t$`I
 )t$`L
+)t$`M
 )t$`t
 )t$pD
 )t$pE
@@ -812,6 +815,7 @@ $toolgraphs
 ,W5y+
 ,YA1H
 ,YA1I
+-	V_logf
 ---empty---
 ---invalid event---
 -24 24
@@ -843,7 +847,6 @@ $toolgraphs
 -unknown source-
 -unknown source-(
 -windowsaudio
-.	V_logf
 ..om?
 .00cfg
 .9GXdx
@@ -1602,7 +1605,6 @@ $toolgraphs
 /GTs(
 /GTv 
 /J(r8
-/MXrJ
 /Mc4$E
 /O,s0H
 /Q,w$I
@@ -1621,7 +1623,6 @@ $toolgraphs
 0 0 0 255
 0 360
 0 = use biquad instead of svf, 1 = use vectorized svf, 2 = use scalar svf
-0(\-}b
 0.000000
 0.1 10
 0.1 16000
@@ -1689,8 +1690,9 @@ $toolgraphs
 220323000000Z
 220801000000Z
 230714000000Z
-240711150029Z0/
+240718150139Z0/
 241009235959Z0a1
+2@8-:9?
 2C $ 2
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1738,6 +1740,7 @@ $toolgraphs
 7YA1H
 7h>?8
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powd
 8 udH
 8#8fD
 8#LT`f
@@ -1775,24 +1778,21 @@ $toolgraphs
 8f;o(
 8ke?;
 8}WW`
-9	V_powd
+9	V_powf
 9)~EH
 9)~P3
 9*t8H
 9*t:H
-9-@GD
-9-v>C
+9-6@C
 90~f3
 91~SL
 92t:H
 94(t*@8|( u#H
-95"fD
-95<fD
+95rgD
 98t H
 99jd9
 99~QH
 9;~wL
-9=0ZC
 9=aA\E
 9>~>E3
 9>~NH
@@ -1871,7 +1871,7 @@ $toolgraphs
 9|$Pu
 9|$Xu
 9|$xu
-:	V_powf
+:	V_qsort
 : %s::
 : lexer error %d :
 :!|$ 0
@@ -1883,9 +1883,8 @@ $toolgraphs
 :H?'mK?
 :YA1H
 :^V=/
-;	V_qsort
-;=!<C
-;=;L7
+;	V_qsort_s
+;=;M7
 ;?%L+
 ;?Bh9?
 ;?uX;?
@@ -1902,14 +1901,13 @@ $toolgraphs
 ;\$x|
 ;]8}{A9
 ;]Xs	
-;_0u'D
+;_0u&D
 ;nGVKUTS[BXIWH\KbHi:k6s4r7p8
 ;s0}p
 ;t$Lu
 ;t$X|
 ;wp}.H
 ;|$x|
-<	V_qsort_s
 <	t:<
 <	u%H
 <	u)Icn
@@ -2192,6 +2190,7 @@ $toolgraphs
 ?uvIcN
 ?wr^a
 ?{Q}<
+@	V_roundf
 @%s.output
 @,x#L
 @.data
@@ -2212,6 +2211,8 @@ $toolgraphs
 @83te3
 @83ti3
 @84)u
+@855J?
+@85td4
 @87ti3
 @88t^H
 @8<(u
@@ -2257,8 +2258,8 @@ $toolgraphs
 @A__^
 @C u9A
 @Hc13
-@Hc5/
-@Hc5o
+@Hc5?
+@Hc5O
 @HcA03
 @LcIPI
 @SATAVAWH
@@ -2326,7 +2327,6 @@ $toolgraphs
 @UAUAVAWH
 @UAUAVH
 @UAUAWH
-@UAUH
 @UAVAWH
 @UAVH
 @UAWH
@@ -2394,7 +2394,6 @@ $toolgraphs
 @fE;|
 @l?O#m?
 @public.%s
-A	V_roundf
 A D9a 
 A HcI
 A(f9G
@@ -2428,7 +2427,6 @@ A9P@t)H
 A9np~yL
 A9nt~
 A9vt~
-A9wt~
 A9}t~
 A9~$~C
 A:8ucI
@@ -4827,6 +4825,7 @@ D93tUH
 D9:u(A
 D9;~-H
 D9;~EL
+D9=~TC
 D9APueL
 D9CDtc
 D9C`~JE3
@@ -4871,7 +4870,6 @@ D9}0t3
 D9}d~
 D9~t~
 D:G,LcG
-D;5BPC
 D;8}1H
 D;;}	
 D;C }
@@ -5000,6 +4998,7 @@ Duration for which path remains visible. Should be close to update rate of the s
 Duration: %f
 Dynamic
 D}<E3
+E	V_sincosf
 E A;E
 E E+N,F
 E#J$A
@@ -5015,6 +5014,7 @@ E0RIFFD
 E0WAVED
 E0dataD
 E0fmt H
+E21Bz
 E4M9~0
 E8g8E
 E8g9H
@@ -5025,7 +5025,6 @@ E9B@t
 E9l$t~
 E9n,tCA
 E9o@~ZM
-E;.}~H
 E;7}	H
 E;H`}
 E;J8}[I
@@ -5201,7 +5200,6 @@ ExternalNameForInternalType
 Extra taps
 Extract Source
 Extraneous token
-F	V_sincosf
 F	t,P
 F HcF$H
 F Nc$
@@ -5322,6 +5320,7 @@ FreeLibrary
 Frequency (Hz)
 Friday
 Func( %s )
+G	V_sinf
 G fff
 G$A9B$
 G$D8;I
@@ -5399,6 +5398,7 @@ Get physics surface properties for all the materials.
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -5480,7 +5480,6 @@ G|$(L
 G|$HA
 G|$XI
 G|$hD
-H	V_sinf
 H HcH
 H UATAUAVAWH
 H USWH
@@ -5500,14 +5499,14 @@ H0f9O
 H8B;\1
 H8HcH0D
 H9(tO
-H956d
-H95Qd
-H95wc
+H95vf
 H97u+A
 H97uGL
 H98t2
 H9;t	H
 H9<(u
+H9='|
+H9=y@D
 H9>u/H
 H9A(u
 H9D$Pu>I
@@ -5701,6 +5700,7 @@ HighPass
 Highest
 HostStateMgr001
 Hovering voice %i, you could debug draw something too
+I	V_sinhf
 I 	A0
 I could not work out what I was expecting, like so many of us these days!
 I |0E
@@ -5889,13 +5889,12 @@ IsValidFieldDataType( nDataType )
 IsValidIndex( i )
 IsValidIndex( nIndex )
 IsValidIndex(i) && (i != InvalidIndex())
-J	V_sinhf
+J	V_snprintf
 J(IcB
 J(IcB A
 J8H99t
 J>@G_
 January
-K	V_snprintf
 K Ic6
 K UWAUAWH
 K&>.yC
@@ -6037,12 +6036,12 @@ L$@Hc
 L$@I+
 L$@Ic
 L$@Mc
-L$@fA
 L$@fA;
 L$@fI
 L$@r	D
 L$@t=A
 L$@uU
+L$DfA
 L$HH3
 L$HHc|$@
 L$HfD
@@ -6100,15 +6099,18 @@ L9(tMA
 L9.t	H
 L9.u~H
 L90t 
-L95)j'
-L95Gi'
+L95.l'
+L95?]D
+L95Il'
+L95W:>
+L95gk'
+L95i?<
 L9<(t
-L9=7p'
-L9=Bq'
-L9=Cn7
-L9=]q'
-L9=ao'
-L9=mp'
+L9=<r'
+L9=Co7
+L9=Wr'
+L9=bs'
+L9=}s'
 L9bHt
 L9bPt
 L9bPu
@@ -6391,6 +6393,7 @@ MeshSystem001
 MeshUtils001
 Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
 Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
+Mi@pg
 Mid EQ gain (dB)
 Min Threshold Count
 Min reverb gain amount amount for listener DSP.
@@ -6497,6 +6500,7 @@ O JcD/
 O(;_ s
 O-p?A6
 OF>;^
+OG/\W
 OLDKH
 OPEN SIDED OUTDOOR AREA Detected 
 OPEN_BRACE
@@ -6538,6 +6542,7 @@ OutputAudioStreamDestroy
 OutputPosToVmix
 Override
 Oversampling
+P	V_sscanf
 P HcHXL
 P(HcO
 P(tDH
@@ -6694,7 +6699,6 @@ PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown
 Px9\$(t
 Px9\$(t	H
 Pz}b!
-Q	V_sscanf
 Q5rHg,>
 Q>0P7>
 QA;S`}
@@ -7066,7 +7070,7 @@ Sound DSP: preset failed to init.
 Sound Disabled
 Sound Disabled.
 Sound Event
-Sound Initialization: Finish, Sampling Rate: %i
+Sound Initialization: Finish, Device Sampling Rate: %i
 Sound System Debugger
 Sound device in use (changing this does not change the soundsystem).
 Sound device synchronization max delay (ms)
@@ -7258,6 +7262,7 @@ T1(Hk
 T1,Hk
 T8 Hk
 T94fA
+T=:R2
 TESTBED: Amped Decaying Sine Wave Container
 TESTBED: Decaying Sine Wave Container
 TESTBED: FM Synth Container
@@ -7290,7 +7295,7 @@ This is a static additive synth that can scale components of the synth based on 
 ThreadInMainThread
 ThreadInMainThread()
 ThreadJoin
-ThreadSetAffinityPreference
+ThreadSetPerfSetAffinity
 ThreadSetPriority
 ThreadSleep
 Threshold
@@ -7364,6 +7369,7 @@ Trying to cast '%s' to a different resource type!
 Tuesday
 Type Name: %s
 Type: %s
+U	V_stricmp_fast
 U(HcP
 U0A9M
 U?:CU?K
@@ -7517,7 +7523,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
-V	V_stricmp_fast
 V(t:H
 V6E>`"(5
 V?V/V?
@@ -7763,6 +7768,7 @@ V_coshf
 V_expf
 V_fclose
 V_fmodf
+V_fopen
 V_~]	,
 Value Operator Offset: %i
 Value Stack Offset: %i
@@ -7786,6 +7792,7 @@ Vsnd Container
 Vsnd File
 Vsnd Reference
 Vu?N\t?8Ws?vGr?
+W	V_strlower_fast
 W(tFH
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Attempting to import existing public field %s in stack %s
@@ -7840,7 +7847,7 @@ WriteFile
 Wrong arg count for '%s' %d, expected 1
 Wrong arg count for '%s' %d, expected 2
 Wrong arg count for '%s' %d, expected 3
-X	V_strlower_fast
+X	V_strnchr
 X 843"8
 X UVAVH
 X UVWATAUAVAWH
@@ -7861,14 +7868,15 @@ XA_A^A]A\_^][
 XA_A^_^[]
 XA_A^_^][
 XB r+
+XUfi@
 X\$xf
 X_^[]
 Xt$PA
-Y	V_strnchr
-Y5;R3
-Y5V[7
+Y-=($
+Y5GK7
 Y7D9.
 Y9"SD
+Y=&I7
 Y>kX>M
 Y?'WY?
 YD$ A
@@ -7891,6 +7899,7 @@ ZPKE?81("
 ZW][Rbmxv
 Z\>z8
 Zod(^?
+[	V_strtod
 [ 0.005714, 0.3, 1.083, 1.083, 2.0, 3.0 ]
 [ 1.0, 1.0, 0.227125, 0.227125, 2.0, 3.0 ]
 [%f,%f,%f,%f,%f,%f]
@@ -7899,7 +7908,6 @@ Zod(^?
 [Index: 
 [K]taM?
 [_?'N
-\	V_strtod
 \$ ATAVAWH
 \$ AVH
 \$ A_A^A\
@@ -8024,11 +8032,10 @@ Zod(^?
 \N\O\NZOt)s(r(
 \`>)CS>
 \ffff
+]	V_strtok
 ] D9[D
 ])6M>&
 ]0IcM@;
-]55)4
-]5:Z4
 ]>)2X
 ]?K[`?n
 ]@A;\$
@@ -8037,7 +8044,6 @@ Zod(^?
 ]Tfff
 ]`u0A
 ]xIcJ
-^	V_strtok
 ^ H9^
 ^<IUr&
 ^?sYa?
@@ -8047,7 +8053,6 @@ Zod(^?
 ^hmpsv
 _ ;_$t
 _(9w0
-_8F k
 _?K<`?
 _CustomCommand
 _CustomCommand%d
@@ -8174,6 +8179,7 @@ _voicegraph
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a	V_tand
 a&M-=Z]<i*k)n-t&q&p&|
 a7hIw
 a?wSa?\
@@ -8267,7 +8273,7 @@ audio_device_init_params_t::OverrideSpeakerConfig
 audio_input_test_signal
 auto.convar.
 auto_connect_public_fields
-b	V_tand
+b	V_tanf
 b#M**y`Bl+o(u,{ x$w!
 b?^Cy
 bAllocationCanFit
@@ -8314,7 +8320,6 @@ bool8
 bp(=>?g
 broken pipe
 buffer too small
-c	V_tanf
 c D8c7trH
 c [1>H'
 c(>\,
@@ -8419,6 +8424,7 @@ curve_defintion_type
 curve_tangent_mode_t
 curve_type
 custom_stack
+d	V_tanhf
 d$ AV
 d$ E3
 d$ fI
@@ -8476,6 +8482,7 @@ d$xu7H
 d8?":7?
 d?000000`?
 d?Z<c?
+d?|7w
 dFDFBB"
 d\xBH
 dataH
@@ -8549,11 +8556,11 @@ dump_audio_input
 duration
 dynamicEQScale
 d~?i3~?A
-e	V_tanhf
 e A_A^A]A\]
 e(L9e t
 e0A_A^A]A\]
 e8D;u
+e;7r';
 e?W.e?w
 e@A_A^A]A\]
 e@A_A^A]A\_^]
@@ -9283,7 +9290,7 @@ l$XI;
 l$XMc(L
 l$X~3I
 l$`D+
-l$`Hc-qz;
+l$`Hc-
 l$`I;
 l$`fA;
 l$`~9L
@@ -9877,7 +9884,6 @@ mute: %3.2f
 muteTrackList
 mwtMH
 n L9n
-n%R9?
 n(L9g(t
 n03>Pu
 n0L9g0t
@@ -10025,6 +10031,7 @@ num > 0
 numerator
 n|$pD
 n|$|f
+o%H&7
 o? Bo?
 oD$ f
 oD$@H
@@ -10406,6 +10413,7 @@ player
 playvol
 pointer
 pos <= p0->D
+ppqe	
 pptc->iin < pptc->cin
 preload_vsnds
 preview.editor
@@ -10928,7 +10936,7 @@ t$8D;
 t$8E3
 t$8H+
 t$8Hc
-t$8Hc5c
+t$8Hc5
 t$8Hcs8
 t$8M+
 t$8fB
@@ -11089,12 +11097,11 @@ tLH9s
 tM;]@t
 tMHcX$
 tO9_`~JH
-tOD9%
+tOD9%z
 tRD8}
 tRH9)tMH
 tRIcw 
 tRLcY
-tS95_<C
 tS;+ 
 tUD8e
 tUL99tPH
@@ -11216,7 +11223,7 @@ u"f9s$u
 u$D8r(t
 u%@8j(t
 u%HcD$LH
-u%L95,
+u%L95
 u&8OTt
 u(A8t$
 u)9s8t$H
@@ -11464,6 +11471,7 @@ ylHc1+
 yslf`ZTMGA;5.
 z;u9A
 z?Mbz?H5z?
+zCuAD
 zG(knN
 zUuSA
 zY;>u:m	
@@ -11481,6 +11489,7 @@ zY;>u:m
 {P9kH|AH
 {UOu(
 {UOu0
+{Y>VV
 {a	Z;
 {i?M#i?d
 {p9sh|AH

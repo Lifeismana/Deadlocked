@@ -1675,22 +1675,47 @@ PopupManager
 	vertical-align: middle;
 }
 
-#DiscordInvite
+#DiscordForumInvite
 {
-	flow-children: right;
+	flow-children: down;
 	background-color: offWhite;
-	background-color: gradient( linear, 100% 0%, 0% 0%, from( #333c9d30 ), to( #5865F260 ) );
+	background-color: gradient( linear, 100% 0%, 0% 0%, from( #333c9d30 ), to( #53588f60 ) );
 	width: 100%;
 	padding: 15px 20px;
+	visibility: visible;
+}
+
+.hasCreatedDiscordInvite.hasJoinedForum #DiscordForumInvite
+{
 	visibility: collapse;
 }
 
-.hasNotCreatedDiscordInvite #DiscordInvite
+.completedText
+{
+	visibility: collapse;
+}
+
+.hasCreatedDiscordInvite #DiscordButton .completedText
 {
 	visibility: visible;
 }
 
-.in_matchmaking.hasNotCreatedDiscordInvite #DiscordInvite
+.hasCreatedDiscordInvite #DiscordButton .defaultText
+{
+	visibility: collapse;
+}
+
+.hasJoinedForum #ForumButton .completedText
+{
+	visibility: visible;
+}
+
+.hasJoinedForum #ForumButton .defaultText
+{
+	visibility: collapse;
+}
+
+.in_matchmaking #DiscordForumInvite
 {
 	visibility: collapse;
 }
@@ -1705,12 +1730,41 @@ PopupManager
 	white-space: normal;
 }
 
+#ButtonRow
+{
+	flow-children: right;
+	margin: 10px 0px;
+}
+
 #DiscordButton
 {
 	margin: 0px;
+	background-color: #b5bbfc60;
 	vertical-align: middle;
-	ignore-parent-flow: true;
 	horizontal-align: right;
+}
+
+#DiscordButton:hover
+{
+	background-color: #e7eaff80;
+}
+
+#ForumButton,#DiscordButton
+{
+	margin: 0px 20px 0px 0px;
+}
+
+.ForumIcon
+{
+	width: 16px;
+	height: 16px;
+	wash-color: offBlack;
+	vertical-align: middle;
+	margin-top: 3px;
+	opacity: 1;
+	margin-right: 8px;
+	background-image: url("s2r://panorama/images/icons/icon_feedback.vsvg");
+	background-size: contain;
 }
 
 .DiscordIcon
@@ -1726,13 +1780,28 @@ PopupManager
 	background-size: contain;
 }
 
-.discordIntro
+.hasCreatedDiscordInvite .DiscordIcon,.hasJoinedForum .ForumIcon
+{
+	background-image: url("s2r://panorama/images/icons/icon_checkmark.vsvg");
+}
+
+.hasCreatedDiscordInvite #DiscordButton,.hasJoinedForum #ForumButton
+{
+	opacity: 0.4;
+}
+
+.accountIntro
+{
+	color: silvered;
+	font-weight: bold;
+	white-space: normal;
+	font-size: 20px;
+}
+
+.accountDesc
 {
 	color: silvered;
 	font-weight: semi-bold;
-	max-width: 350px;
-	height: 50px;
-	margin-right: 20px;
 	white-space: normal;
 }
 

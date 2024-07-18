@@ -125,7 +125,7 @@
 		spread_max = 250.000000
 		spread_min_value = 0.000000
 		vsnd_files = "sounds/abilities/warden/lockdown_impact.vsnd"
-		vsnd_duration = 2.134853
+		vsnd_duration = 1.796576
 	}
 	Warden.HighAlert.Cast = 
 	{
@@ -184,37 +184,6 @@
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/warden/high_alert_end.vsnd"
 		vsnd_duration = 1.194813
-	}
-	Warden.CrowdControl.Cast = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "Warden.CrowdControl.Cast.Lyr1"
-		soundevent_02 = "Warden.CrowdControl.Cast.Lyr2"
-		volume = 0.960000
-		use_01 = 1.000000
-		use_02 = 1.000000
-	}
-	Warden.CrowdControl.Cast.Lyr1 = 
-	{
-		base = "Base.Ability"
-		volume = -9.000000
-		volume_rand_min = -0.060000
-		volume_rand_max = 0.100000
-		pitch_rand_min = -0.200000
-		pitch_rand_max = 0.100000
-		vsnd_files = "sounds/abilities/warden/crowd_control_cast_lyr1.vsnd"
-		vsnd_duration = 4.220208
-	}
-	Warden.CrowdControl.Cast.Lyr2 = 
-	{
-		base = "Base.Ability"
-		volume = -9.000000
-		volume_rand_min = -0.060000
-		volume_rand_max = 0.100000
-		pitch_rand_min = -0.150000
-		pitch_rand_max = 0.150000
-		vsnd_files = "sounds/abilities/warden/crowd_control_cast_lyr1.vsnd"
-		vsnd_duration = 4.220208
 	}
 	Warden.RiotProtocol.PreCast = 
 	{
@@ -509,5 +478,39 @@
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/start.vsnd"
 		vsnd_duration = 0.661973
+	}
+	Warden.CrowdControl.Cast = 
+	{
+		base = "Base.Ability"
+		volume_falloff_min = 1.000000
+		volume = -2.000000
+		spread_min = 0.000000
+		spread_max_value = 0.122257
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		vsnd_files = "sounds/abilities/warden/warden_a1_flask_cast.vsnd"
+	}
+	Warden.CrowdControl.Proj_Lp = 
+	{
+		base = "Base.Ability"
+		volume_falloff_min = 1.000000
+		volume_falloff_max = 1100.000000
+		volume = -1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		spread_min = 0.000000
+		spread_max_value = 0.100313
+		spread_max = 250.000000
+		spread_min_value = 0.000000
+		vsnd_files = "sounds/abilities/warden/warden_a1_flask_proj_lp.vsnd"
+	}
+	Warden.CrowdControl.Proj_Impact = 
+	{
+		base = "Base.Ability"
+		volume = 5.000000
+		volume_falloff_min = 10.000000
+		pitch_rand_min = -0.100000
+		pitch = 1.000000
+		vsnd_files = "sounds/abilities/warden/warden_a1_flask_impact.vsnd"
 	}
 }

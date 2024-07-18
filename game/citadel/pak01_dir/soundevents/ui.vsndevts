@@ -675,7 +675,7 @@
 	Menu.Party.Invited = 
 	{
 		base = "Base.UI"
-		volume = -20.000000
+		volume = -15.000000
 		use_uiposition = true
 		hrtf_on = 1.000000
 		vsnd_files = "sounds/ui/ui_shop_click_starred.vsnd"
@@ -693,7 +693,7 @@
 	Menu.Party.NewMember = 
 	{
 		base = "Base.UI"
-		volume = -20.000000
+		volume = -15.000000
 		use_uiposition = true
 		hrtf_on = 1.000000
 		vsnd_files = "sounds/gameplay/ping_map_spam.vsnd"
@@ -706,7 +706,7 @@
 		pitch_modulation_attack = 10.000000
 		pitch_modulation_release = 0.300000
 		pitch_modulation_max = 2.000000
-		volume = -8.000000
+		volume = -1.000000
 		vsnd_pause_with_game = false
 		use_uiposition = true
 		hrtf_on = 0.000000
@@ -719,6 +719,7 @@
 			"sounds/ui/ui_heroselection_enter_02.vsnd",
 			"sounds/ui/ui_heroselection_enter_03.vsnd",
 		]
+		vsnd_duration = 3.094921
 	}
 	Menu.HeroSelection.Complete = 
 	{

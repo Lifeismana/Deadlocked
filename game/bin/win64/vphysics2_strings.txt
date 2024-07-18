@@ -1,5 +1,4 @@
 																
-		V_frexpf
 		cfFF                      - collision function mask
 		client                    - draw client world(s)
 		debugName substring       - filter by substring in debug name
@@ -26,6 +25,7 @@
 	E;<$
 	V_fopenUTF8
 	V_fread
+	V_frexpf
 	V_fseek
 	V_fseeki64
 	V_ftell
@@ -75,6 +75,7 @@
  <font color="red">Query</font>(
  = %d
  @:Fq@L
+ ACovMatrix3
  A\_[
  A]A\_^[
  A]_^][
@@ -105,6 +106,7 @@
  A_A^A]A\]
  A_A^A]A\_
  A_A^A]A\_^]
+ A_A^A]_]
  A_A^A]_^
  A_A^[
  A_A^]
@@ -117,7 +119,6 @@
  A_^[
  A__]
  A__^
- AnVertexNode
  Base Class Array'
  Base Class Descriptor at (
  Bodies/Shapes - Static(%i/%i) Dynamic(%i/%i) Keyframed(%i/%i)
@@ -183,7 +184,6 @@
 !( uintp( buf.Get() ) & 0xF )
 !( uintp( pNode ) & 3 )
 !>6'Y
-!H9sP
 !HasPairs()
 !IsActive()
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
@@ -373,29 +373,28 @@ $tIs1
 ( pVertex->m_Edge == hEdge ) || ( pVertex->m_Edge == INVALID_MESH_COMPONENT )
 ( vChildAnchor - vParentAnchor ).Length() < 0.001f
 ( vNormal - vNormalOnHull * flDistance ).Length() < 0.001f
-(%	Z/
-(%#P1
-(%-b;
 (%.4g,%.4g)
-(%0`;
-(%:U/
-(%S""
+(%Zz/
+(%c!"
 (%d,%d)
-(%o71
-(-	H1
-(-2\1
-(-L71
-(-fl1
-(-~U/
-(5)D3
-(53Y;
-(5493
-(59U/
-(5HL/
-(5fJ/
-(5o\1
+(%sM1
+(%v6$
+(-2{/
+(-6<1
+(-BN1
+(-Y(;
+(-YE1
+(5Iz/
+(5Xq/
+(5o8;
+(5vo/
 (;^ |
-(=6K/
+(="z/
+(=9r/
+(=B/1
+(=Vp/
+(=lN1
+(=n?$
 (A;)A
 (A\^][
 (A]A\^[
@@ -480,7 +479,6 @@ $tIs1
 (LcI03
 (M E3
 (None)
-(P+~7
 (T$ A
 (T$ D
 (T$ H
@@ -772,7 +770,6 @@ $tIs1
 )T$0L
 )T$0M
 )T$@A
-)T$@B
 )T$@D
 )T$@E
 )T$@H
@@ -826,6 +823,7 @@ $tIs1
 )d$03
 )d$09}0
 )d$0D
+)d$0E
 )d$0Ik
 )d$0ff
 )d$@9F
@@ -846,6 +844,7 @@ $tIs1
 )l$ D
 )l$ E
 )l$ IcL
+)l$ L
 )l$ fD
 )l$ wh
 )l$0D
@@ -961,6 +960,7 @@ $tIs1
 )|$`A
 )|$`D
 )|$`E
+)|$`H
 )|$`L
 )|$`M
 )|$pA
@@ -998,6 +998,7 @@ $tIs1
 ,YA1I
 ,dF9<
 ,hfD;z
+-	V_logf
 -----------------
 -----------------END
 -YA1H
@@ -1020,11 +1021,11 @@ $tIs1
 -touch
 -unittest
 -validate
-.	V_logf
 .%x.%x.copy_tmp
 ../src/utils/physics_testbed/benchmarks/
 .00cfg
 .40t8Ic
+.5Ua$
 .?AUAsyncProcessResult@CBaseIntrospectedToKV3TypeManager@@
 .?AUCMorphSetData@@
 .?AV<lambda_1>@?1??CreateMotionControlCallbacksJob@CRnParticleRope@@AEAAX_NAEAVCJobContinuation@@1@Z@
@@ -1126,8 +1127,7 @@ $tIs1
 .?AVtype_info@@
 .@tthH
 .@ttxI
-.A z5u3
-.A$z%u#
+.A z u
 .CRT$XCA
 .CRT$XCC
 .CRT$XCU
@@ -1152,12 +1152,9 @@ $tIs1
 .D$(z
 .D$(zSuQ
 .D$,zuus
-.D$0z6u4
 .D$0zdub
-.D$4z%u#
 .D$4zSuQ
 .D$8z
-.D$8z4u2
 .D$8zBu@
 .D$<z1u/
 .D$@z u
@@ -1197,9 +1194,12 @@ $tIs1
 .rtc$TZZ
 .so.zip
 .sttS3
+.t$0z&u$
+.t$4z
+.t$8z
 .t$@z
 .t$Dz
-.t$lz=u;
+.t$lz(u&
 .text
 .text$di
 .text$mn
@@ -1212,12 +1212,13 @@ $tIs1
 .xJ>Hf
 .xdata
 .xdata$x
-/%)6 
+/%15 
 /%u.rnsave
-/-,n	
-/-Kq"
+/-Dr	
+/-Sp"
+/5+K%
 /6sRH
-/=r+"
+/=z*"
 />58d%
 /@Hs?
 /@Ls{
@@ -1316,12 +1317,13 @@ $tIs1
 1A26b
 1L;|$P
 1wsHp
+2	V_modff
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240711145934Z0/
+240718150159Z0/
 241009235959Z0a1
 2<iu	H
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1333,7 +1335,6 @@ $tIs1
 2_BONE_IK
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
-3	V_modff
 311109235959Z0b1
 33333333H+
 33333333I
@@ -1404,9 +1405,9 @@ $tIs1
 8YA1H
 8_u	H
 8nu	H
+9	V_powf
 9)~P3
 9*tsD
-9-[S=
 97~2H
 98t H
 99ccff;"><b>No</b> Collision
@@ -1415,7 +1416,6 @@ $tIs1
 9>~,H
 9>~ZH
 9A u'
-9A&W]
 9A0~&H
 9A0~<D
 9A0~=D
@@ -1449,7 +1449,7 @@ $tIs1
 9Y8~$
 9Y8~'
 9Y8~-H
-9Y8~4H
+9Y8~1H
 9Y8~8H
 9Y8~9H
 9Y8~`H
@@ -1457,7 +1457,7 @@ $tIs1
 9\$H~CH
 9]0~JH
 9^8~0A
-9^P~&3
+9^P~#3
 9_0~%H
 9_0~1
 9_0~aL
@@ -1474,7 +1474,7 @@ $tIs1
 9kH~EH
 9o0u.H
 9o0~I3
-9ohvZ
+9ohviM
 9oh~*H
 9oh~2H
 9p@u+
@@ -1520,22 +1520,23 @@ $tIs1
 9|$hu
 9|$xu
 9~(~1
-9~8~QH
+9~8~NH
 9~PE3
 9~xv1
-:	V_powf
-:!-s/
+:	V_qsort
+:!-+0
 :!L$ 0
 :!d$L0
 :!|$ 0E
 :!}g0
 ::string literal
 ::{ default arg#
-:@%<i
+:@%,l
 :YA1H
-;	V_qsort
+;	V_qsort_s
 ; tris:
 ;"><b>Trigger</b> Touch
+;-6R=
 ;3}%H
 ;?0123456789:;<=>?
 ;C(s(I
@@ -1563,7 +1564,6 @@ $tIs1
 ;|$0~
 ;|$H|
 ;|$P|
-<	V_qsort_s
 <	u%H
 <	u)Icn
 <	u4H
@@ -2006,6 +2006,7 @@ $tIs1
 @UVWH
 @UWATAUH
 @UWATAWH
+@UWAUAVAWH
 @UWAUAVH
 @UWAUH
 @UWAVH
@@ -4630,7 +4631,6 @@ Could not create phys debug VB for %d elements
 Could not lock phys debug IB for %d elements
 Could not lock phys debug VB for %d elements
 Couldn't load KV3 for resource: %s
-CovMatrix3
 CovMatrix3::KV3Transfer_DefaultKeys_Impl
 CovMatrix3::Schema_VerifyBindingIsRegistered
 CpHcQ
@@ -4738,11 +4738,12 @@ D$(HcC
 D$(HcD$$
 D$(I+
 D$(I;
-D$(M;
+D$(L;
 D$(fI
 D$,67Q
 D$,E9}8
 D$,Lc;D;{
+D$,M;
 D$0	!O3L
 D$0!5
 D$0"K
@@ -4814,7 +4815,7 @@ D$8M;
 D$8Mc
 D$8f9P
 D$8f9x
-D$8fA
+D$8fD9`
 D$8fD9x
 D$8fff
 D$8fff?
@@ -4841,6 +4842,7 @@ D$@Lc|$`A
 D$@WS)
 D$@f9p
 D$@t;H
+D$@w9D
 D$@|R
 D$DD;
 D$HD;
@@ -4905,6 +4907,7 @@ D$hIcD2
 D$hJcD
 D$hL;
 D$hfA
+D$hfE
 D$mH;
 D$p9C0
 D$p;C0|
@@ -4989,8 +4992,9 @@ D9y t
 D9{(v 
 D9|$Pu
 D;&s0I
+D;-,A
 D;/}ZH
-D;="9
+D;=B;
 D;@0|
 D;@HcH I
 D;@H|
@@ -5150,6 +5154,7 @@ DynamicMeshDeformParams_t
 DynamicMeshDeformParams_t::KV3TransferLoad_Impl
 DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
+E	V_sincosf
 E 9E@u
 E H9H
 E),$H
@@ -5424,7 +5429,6 @@ Ex9p
 Excluded flags: No interaction allowed because
 ExitProcess
 ExternalNameForInternalType
-F	V_sincosf
 F 9F@u
 F A9F@u
 F H9H
@@ -5762,6 +5766,7 @@ FourVectors2D::Schema_VerifyBindingIsRegistered
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+G	V_sinf
 G 9G@u
 G 9] |KH
 G D8w
@@ -5847,6 +5852,7 @@ GetAcquiredMask() & ( 1ull << nIndex )
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
 GetBody1()->m_nBodyFlags & BODY_FLAG_IS_WHEEL && GetShape2()->GetType() == SHAPE_MESH
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -5905,7 +5911,6 @@ G|$HH
 G|$HL
 G|$h3
 G|333?H
-H	V_sinf
 H	{H3
 H SWH
 H UAVAWH
@@ -5931,16 +5936,17 @@ H8Hc@0H
 H8I;I8r
 H9(tO
 H9(t^H9h
+H9-55B
 H9.twH
-H95g|A
+H95!.=
+H95g`A
 H97u+A
 H98t2
 H98t5
-H9= BD
-H9=5KB
-H9=;BD
-H9=TJB
-H9=YAD
+H9=0AD
+H9=KAD
+H9=i@D
+H9=jJB
 H9A(t
 H9A`u2I
 H9B8s
@@ -6004,9 +6010,11 @@ HA]A\^[
 HA]_^[
 HA^A]
 HA^A]A\^][
+HA^A]_^][
 HA_A^A\[
 HA_A^A]A\_^[]
 HA__[]
+HB(Q?
 HELPER_BONE
 HH:mm:ss
 HHcA8L
@@ -6575,6 +6583,7 @@ IsValidCodePage
 IsValidIndex( i )
 IsValidIndex(elem)
 IsValidIndex(elem) && IndexInRange( elem )
+J	V_snprintf
 J09H0
 J0f9H0r
 J0u5Hc
@@ -6598,7 +6607,6 @@ Joint changed type from %d to %d, skipping!
 JointAxis_t
 JointMotion_t
 Joints: %d
-K	V_snprintf
 K UAVAWH
 K&>.yC
 K(D9K
@@ -6733,7 +6741,6 @@ L$0fA
 L$0fD
 L$0ff
 L$4A;
-L$4D;
 L$89{H
 L$8A+
 L$8A;
@@ -6780,9 +6787,6 @@ L$XE3
 L$XL;
 L$XLc
 L$Xff
-L$`8KQt/
-L$`8Kpt/
-L$`8K|t?
 L$`;M
 L$`A+
 L$`H;
@@ -6817,13 +6821,10 @@ L.IsValid()
 L9	u	I
 L9#u/H
 L9+t	H
-L9-	\:
-L9-$\:
-L9-7[:
+L9-yX:
 L93t	H
-L959U;
-L95WT;
-L95~;D
+L95	}>
+L95'|>
 L99t;
 L9?t	H
 L9` u
@@ -6839,7 +6840,7 @@ L9t$(t
 L9t$ht
 L9|$ t
 L9|$(t
-L9|$Pt
+L9|$`t
 L;D$p
 L;J8s
 L;d$@
@@ -7215,6 +7216,7 @@ Out of range abbrev tag %llu
 Out of range compilation unit code %llu
 Overlapping Pair Mismatch: %i in map, %i in vectors
 OverlayProjectionDirection
+P	V_sscanf
 P.IsValid()
 P4_EXTRACT_CMD=p4.exe print -o %srcsrvtrg% -q "//%var3%#%var4%"
 P4_EXTRACT_TARGET=%targ%\%var2%\%fnbksl%(%var3%)\%var4%\%fnfile%(%var1%)
@@ -7355,7 +7357,6 @@ PropWorldOrigin
 PropertyEditorSystem_001
 PushBack
 Pz}b!
-Q	V_sscanf
 Q A;U
 Q Hct$ H
 QAngle
@@ -8024,11 +8025,8 @@ T$xA;
 T$xH;
 T$xL+
 T$x}	
-T%:|/
-T%J}/
-T%iO&
 T<Xu9H
-T=Mo/
+T=lO/
 TD u"E;
 TILT_TWIST
 TKc<7H
@@ -8091,6 +8089,7 @@ Two meshes may not have collision
 Two non-dynamics do NOT have a Trigger flag
 Two non-dynamics have a Trigger flag
 TypeManager
+U	V_stricmp_fast
 U Nc\
 UATAUAVAWH
 UATAUAWH
@@ -8269,8 +8268,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UxtcD
-Uz)u'
-V	V_stricmp_fast
 V6'?C
 V6E>`"(5
 VATAUAVH
@@ -8454,14 +8451,15 @@ VeryFast
 VisBuilder_001
 Vortices
 Vrad3_001
-W%+P"
-W%3*#
-W%bi"
+W	V_strlower_fast
+W%;O"
+W%C)#
+W%rh"
 W(HcK
 W(I;\
-W-zi"
+W-#h"
 W0HcK
-W5"|!
+W52{!
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -8497,7 +8495,6 @@ WrapSimplifiedMeshAgg
 WriteConsoleW
 WriteFile
 Wrong alignment %d
-X	V_strlower_fast
 X AVH
 X SUVWAVAWH
 X UATAWH
@@ -8511,9 +8508,9 @@ X UWAVH
 X VWAVH
 X!t5~
 X$"fB
+X-+}&
 X8HcH0H
-X=<Q/
-X=^R$
+X=4v/
 X@Hc@8H
 XA]A\
 XA]A\][
@@ -8524,6 +8521,7 @@ XA_A^A]A\^]
 XA_A^A]A\_^][
 XA_A^_^][
 XA__[]
+XD$DA
 XD$pL
 XHcY83
 XL$@f
@@ -8545,25 +8543,20 @@ XpIc@H
 Xt$@A
 Xt$pE
 Xt7HH
-X{Vz(Zk|
 X|$@A
 X|$DD;
 X|$PD
 X|$xA
-Y%/s$
-Y%=G1
-Y%F$&
-Y%G6&
-Y%PI$
-Y-(s$
-Y-1J/
-Y-pc/
-Y-pd&
-Y-xi$
+Y%'4&
+Y%/g$
+Y%n"&
+Y-$q/
+Y-(g$
+Y-Ao/
+Y-]i;
 Y0tfH
-Y56D1
-Y5f6&
-Y5r-;
+Y5"*;
+Y5F4&
 Y8HcA0
 Y9"SD
 Y@$fD
@@ -8582,7 +8575,7 @@ YD$8E
 YD$<A
 YD$@H
 YD$HA
-YD$LD
+YD$HD
 YD$TA
 YD$TD
 YD$XA
@@ -8695,6 +8688,7 @@ You must install a IKV3TransferInterface_ResourceLoad on your context in order t
 Yt$ A
 Yt$ D
 Yt$ E
+Yt$0D
 Yt$<A
 Yt$LL
 Yt$XD
@@ -8796,6 +8790,9 @@ ZdN=Y
 \$XE;f
 \$XH;
 \$XHc
+\$`8KQt/
+\$`8Kpt/
+\$`8K|t?
 \$`E3
 \$`HcD$XH
 \$`tRH
@@ -8807,6 +8804,8 @@ ZdN=Y
 \$xH;
 \$xfE
 \$|L+
+\%E>1
+\-?}&
 \<$fA
 \D$,A
 \D$,H
@@ -8829,6 +8828,7 @@ ZdN=Y
 \\$pA
 \\symbols
 \d$,H
+\d$PA
 \t$ A
 \t$0D
 \t$@H
@@ -8837,7 +8837,6 @@ ZdN=Y
 \v,Hc
 \|$0D
 \|$\H
-]%9d/
 ]@fff
 ]J<0"0i3
 ]Lu*E;|$
@@ -8845,14 +8844,15 @@ ZdN=Y
 ]`9]p|EH
 ]`A;EX
 ]hu	H
+^	V_strtoui64
 ^ ;^$t
 ^ Lc3D;s
 ^(HcF H
 ^CE8~Dt:H
 ^PHcFHH
+^T$0D
 ^l$ H
 ^oEZ_
-_	V_strtoui64
 _ ;_$t
 _(HcG H
 _(IcG Hk
@@ -8860,7 +8860,8 @@ _(tP;
 _8HcG0H
 _8Hcw
 _8IcG0H
-_=J' 
+_=R& 
+_=n`$
 _@HcG8H
 _@IcG8Hi
 _PHcGHH
@@ -8980,6 +8981,7 @@ audioroughnessfactor
 audiosounds
 awake_bodies
 axle.m_vecWheelIndices.Count() > 0
+b	V_tanf
 b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b+GnH
 bAllocationCanFit
@@ -9021,7 +9023,6 @@ buildid/
 bulletimpact
 burst
 burstRandomize
-c	V_tanf
 c [1>H'
 c%d m%d pt%d
 c(>\,
@@ -9547,6 +9548,7 @@ l$ E;
 l$ H+
 l$ H;
 l$ HcA
+l$ L;l$(
 l$ Lca
 l$ Lci
 l$ Lcy
@@ -9582,7 +9584,6 @@ l$0_^
 l$0u"I
 l$0|LH
 l$0|QH
-l$4wAD
 l$8;s
 l$8Hc+H
 l$8Hcn
@@ -9603,6 +9604,7 @@ l$@L;
 l$@M;
 l$@u=H
 l$DfA
+l$DwKD
 l$HA_A^A]A\_^
 l$HE3
 l$HHc
@@ -10792,6 +10794,7 @@ nVertBase + nSlices * i + j + 1 < vertices.Count()
 nVertexBase
 nVertexCount
 nVertexMapIndex
+nVertexNode
 nVerts >= 3
 nVirtElem
 nWasEffectsBeforeDisconnect == m_Effects.Count()
@@ -10840,11 +10843,9 @@ npcclip
 ntelA
 num > 0
 o%#o<
-o%-fH
-o-EfH
-o58fH
-o=+fH
+o%}eH
 o=[}<
+o={eH
 oPLc;D
 occlusionFactor
 offset
@@ -10898,7 +10899,6 @@ pA_A^A]A\_^[
 pA_A^A]A\_^]
 pA_A^A]_^
 pA_A^]
-pA_A^^
 pA_[]
 pA_][
 pAgg->GetData() != pAggData
@@ -11320,7 +11320,6 @@ t$ L9#t	H
 t$ L93t	H
 t$ L97t	H
 t$ L;
-t$ Lcq0M
 t$ LcsHD;sX
 t$ UH
 t$ UWATAUAVH
@@ -11343,7 +11342,7 @@ t$(L9o
 t$(Lc
 t$(fA
 t$(fD
-t$0;5c%
+t$0;5
 t$0D9t$@|LH
 t$0D;
 t$0E3
@@ -11407,13 +11406,14 @@ t$HE3
 t$HH+
 t$HHc
 t$HLc7A+
+t$HLcq0M
 t$HcI
 t$H|LH
 t$H~ H
 t$H~#H
 t$LF;4
 t$P;7
-t$PD;5|
+t$PD;5
 t$PE3
 t$PH9t$@t
 t$PHc
@@ -11628,10 +11628,8 @@ type info for
 type info name for 
 tzL97u
 t{;C`svH
-t{L9}
 u	9Q 
 u	D:@*
-u	I90
 u Hc.;n
 u!HcK
 u$D8r(t
@@ -11771,7 +11769,6 @@ w.num_cols() == nSampleCount
 w.num_rows() == nSampleCount
 w8HcG0M
 w@H91t
-wPHcF0
 wXA;^
 wXHcGPH
 wakeup
@@ -11827,20 +11824,24 @@ y HcA
 y(HcA L
 y9WuL
 y\PD>!
-z;u9Hc+H
-zGuED
+z#u!Hc+H
+z$u"E
+z+u)D
+z,u*E
+z2u0D
+z3u1A
+z;u9D
+z<u:D
+zDuBD
+zDuBE
 zHLc>D;~
-zHuFA
-zPuND
-zQuOD
-zYuWD
-zYuWE
-zau_E
-zjuhD
-zrupE
-zturE
-zzuxE
-z|uzE
+zLuJE
+zUuSD
+z]u[E
+z_u]E
+zeucE
+zgueE
+zoumE
 { H9;t	H
 { lambda
 { parm#
@@ -11859,7 +11860,6 @@ z|uzE
 {Pt(D9
 {Pt*D9
 {Pt-D9w0t
-{Tl;\
 {hHcO
 {pHcKhH
 {un'%
@@ -11978,7 +11978,7 @@ z|uzE
 |$HtG
 |$H~ H
 |$LB9<
-|$P;=E
+|$P;=
 |$P;k8
 |$PA;
 |$PD9
@@ -12069,6 +12069,7 @@ z|uzE
 ~CA;_
 ~D$8f
 ~D$DL
+~F\4h|
 ~Lcu@D;
 ~Ufff
 ~qj#k"

@@ -145,6 +145,7 @@
 !root
 " ?timerEvent@QListView@@MEAAXPEAVQTimerEvent@@@Z
 ""?updateEditorGeometry@QStyledItemDelegate@@UEBAXPEAVQWidget@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
+":[o,u
 "?update@QWidget@@QEAAXXZ
 "?updateEditorData@QAbstractItemView@@MEAAXXZ
 "?updateEditorGeometries@QAbstractItemView@@MEAAXXZ
@@ -200,6 +201,7 @@
 #?widgetAt@QApplication@@SAPEAVQWidget@@AEBVQPoint@@@Z
 #?winId@QWidget@@QEBA_KXZ
 #?window@QWidget@@QEBAPEAV1@XZ
+#Wv<U
 #[?setRadius@QRadialGradient@@QEAAXN@Z
 #u	I96A
 #u	M97A
@@ -237,6 +239,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 %s: Invalid grow amount %d
 %s: unhandled basic type %u
 & ?timerEvent@QMenuBar@@MEAAXPEAVQTimerEvent@@@Z
+&&ik^
 &?PPPPPPP?
 &Add...
 &Allow Wrapping
@@ -285,6 +288,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 &YA1H
 &YA1L
 ',=?k
+(	V_log10f
 ( %1, %2 )
 ( %1, %2, %3, %4% )
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
@@ -389,7 +393,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 (|$`H
 (|$pH
 )	?buddy@QAbstractItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
-)	V_log10f
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )<$E3
 )<$fD
@@ -411,6 +414,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 )L$`A
 )L$`D
 )L$`L
+)Mcph
 )T$ E
 )T$0HcD
 )YA1I
@@ -456,7 +460,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 * Rehandling active codes
 * { font-size: 10px }
 *"?updateGeometries@QHeaderView@@MEAAXXZ
-**,hC
 *.parent
 *.parent.*
 *.parent.child
@@ -482,6 +485,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 +o'q)}
 , ?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 , alpha: 
+,!ppH
 ,"?updateGeometries@QTableView@@MEAAXXZ
 ,/<-w
 ,0<	w
@@ -957,7 +961,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 />58d%
 /YA1H
 /]?size@QImage@@QEBA?AVQSize@@XZ
-/axJ%~
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -1019,6 +1022,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 0w0c1
 0x%p = %s '%s'
 0}0i1
+1	V_modfd
 1 == TestToken_t( &testTable, "A" ).Compare( TestToken_t( &testTable, "" ) )
 1 == TestToken_t( &testTable, "A.B" ).Compare( TestToken_t( &testTable, "A.A" ) )
 1 == TestToken_t( &testTable, "B" ).Compare( TestToken_t( &testTable, "A" ) )
@@ -1218,7 +1222,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 1setValue(double)
 1trigger()
 1update()
-2	V_modfd
 2 == TestToken_t( &testTable, "grandparent.parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child.*" ), WILDCARD )
 2 == TestToken_t( &testTable, "parent.child" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child" ), WILDCARD )
 2 == TestToken_t( &testTable, "parent.child" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child.*" ), WILDCARD )
@@ -1232,8 +1235,9 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 220801000000Z
 2222<<
 230714000000Z
-240711150526Z0/
+240718150104Z0/
 241009235959Z0a1
+2<#Ib
 2AttributeFilterChanged()
 2CalcValueAdded(double)
 2CalcValueDivided(double)
@@ -1317,6 +1321,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 70503
 7<.uf
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powd
 8/t[H
 80uWfff
 8A^A\
@@ -1336,7 +1341,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 8O8u'H
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
 8ke?;
-9	V_powd
+9	V_powf
 9)~P3
 9/~cH
 98t H
@@ -1352,7 +1357,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 9Y0~KH
 9\$ ~Zf
 9] ~bH
-9_P~'
+9_P~.
 9oX~7L
 9p@u+
 9s4u'
@@ -1370,11 +1375,11 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 9|$@~4H
 9|$hu
 9~h~t3
-:	V_powf
+:	V_qsort
 : Add
 :>)*	v
 :>t6k'
-;	V_qsort
+;	V_qsort_s
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;H9>&X
@@ -1390,7 +1395,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 ;|$0|
 ;|$@|
 ;|$@~
-<	V_qsort_s
 <	u2H
 <	u8H
 <	u\L
@@ -1431,7 +1435,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 ?7zQ6$
 ?7{KV
 ?8bunz8
-?9 Lp
 ?:kP<
 ??0CCountedStringPool_CI@@QEAA@XZ
 ??0CThreadMutex@@QEAA@PEBD@Z
@@ -3185,6 +3188,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 ?value@QSettings@@QEBA?AVQVariant@@AEBVQString@@AEBV2@@Z
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 ?{Q}<
+@	V_roundf
 @ A+@
 @ D+@
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
@@ -3194,6 +3198,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 @84)u
 @8;t`3
 @8;tb3
+@8=h	
 @8j(t
 @8k(t
 @8kpt
@@ -3324,7 +3329,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 @^8U)zj
 @_RDATA
 @_^[H
-A	V_roundf
 A A+A
 A D+A
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
@@ -4262,7 +4266,6 @@ D8 ulH
 D8 uzH
 D8,8u
 D81uUL9r
-D85<W
 D8<>u
 D8AHH
 D8L$0u`
@@ -4442,7 +4445,6 @@ Expected eg. [10,20] or 30
 ExternalNameForInternalType
 E|$xH
 F HcD$hD+
-F5xAT
 F>qUxv
 F@Hcn
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
@@ -4527,6 +4529,7 @@ GetArrayCount() != -1
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetAsyncKeyState
 GetBasicType() == KV3_BTYPE_TABLE
+GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -4917,7 +4920,7 @@ Layout Side To Side
 Layout Top To Bottom
 Lc'D;g
 Lc2A+
-Lc5jz
+Lc5:z
 Lc7D;w
 LcA<E3
 LcD$PH
@@ -5186,6 +5189,7 @@ Orientation
 Outgoing
 Output
 Overwrite With Current
+P	V_sscanf
 P D+P
 P8I9D$
 P>q_Y~
@@ -5262,7 +5266,6 @@ PropertyManipulation_Fast
 PropertyManipulation_Slow
 PropertyNameBundle_t::InitFromGroupString
 Pz}b!
-Q	V_sscanf
 Q5rHg,>
 Q8D8eE
 Q?loadResource@QTextDocument@@MEAA?AVQVariant@@HAEBVQUrl@@@Z
@@ -5311,6 +5314,7 @@ QVector
 QVector<double>
 QWidget
 QWidget*
+QqT+^o
 Qt5Core.dll
 Qt5Gui.dll
 Qt5Widgets.dll
@@ -5671,6 +5675,7 @@ TryAcquireSRWLockExclusive
 TrySendVNotify - SendKV3 failed
 Tuesday
 Type: %s
+U	V_stricmp_fast
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QTextDocument@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -5754,7 +5759,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
-V	V_stricmp_fast
 V ?toolTip@QAction@@QEBA?AVQString@@XZ
 V6E>`"(5
 V?rect@QPixmap@@QEBA?AVQRect@@XZ
@@ -5871,7 +5875,6 @@ WATAUAVAWH
 WAVAWH
 WIDGET DEBUGGER DELETING widget: 0x%p
 WP?isNull@QTextCursor@@QEBA_NXZ
-WSCl{
 WaNd?
 WaitForSingleObject
 WaitForSingleObjectEx
@@ -5917,6 +5920,7 @@ XR?mergeCharFormat@QTextCursor@@QEAAXAEBVQTextCharFormat@@@Z
 XX?setBackground@QPainter@@QEAAXAEBVQBrush@@@Z
 X`Hc@XH
 Xq499vV
+Y	V_strspn
 Y9"SD
 Y>kX>M
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
@@ -5935,7 +5939,6 @@ Y?setHsvF@QColor@@QEAAXNNNN@Z
 YD$@f
 YO?insertColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 YY?setDropAction@QDropEvent@@QEAAXW4DropAction@Qt@@@Z
-Z	V_strspn
 Z?setItalic@QFont@@QEAAX_N@Z
 Z?setItem@QStandardItemModel@@QEAAXHPEAVQStandardItem@@@Z
 Z?setItemData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBV?$QMap@HVQVariant@@@@@Z
@@ -6267,6 +6270,7 @@ extended
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
 f9)u4H9j
 f98t1
+f;f5Q6p
 fA9]jt
 fB9<A}1L
 fD90u
@@ -6385,7 +6389,6 @@ hA_A^^]
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
 hcenter
 helpsystem
-hl}hO
 horizontalPolicy
 horizontalStretch
 horizontal_header
@@ -7062,7 +7065,6 @@ x`Hc@XH
 xi;C`}dH
 xj;C`}eH
 xk;C`}fH
-xp_OJL
 y8Myt
 yPt0H
 yU?qt_metacall@QDoubleValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
