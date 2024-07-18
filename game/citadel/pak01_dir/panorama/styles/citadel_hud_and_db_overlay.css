@@ -16,7 +16,7 @@ CitadelOverlay
 	transform: translateY( -100% );
 	transition-property: transform, horizontal-align;
 	transition-duration: 1s;
-	min-width: 350px;
+	min-width: 300px;
 	margin-top: 10px;
 	border-radius: 5px;
 	height: 0px;
@@ -34,17 +34,12 @@ CitadelOverlay
 
 .AspectRatio16x10 #MatchmakingAndGCStatusContainer
 {
-	min-width: 280px;
+	max-width: 200px;
 }
 
 .HoldingTab #MatchmakingAndGCStatusContainer
 {
 	visibility: collapse;
-}
-
-.connectedToGame.in_matchmaking #MatchmakingAndGCStatusContainer
-{
-	margin-top: 130px;
 }
 
 .in_matchmaking.isSpectator #MatchmakingAndGCStatusContainer,.gc_disconnected.isSpectator #MatchmakingAndGCStatusContainer,.connectedToGame.in_matchmaking #MatchmakingAndGCStatusContainer,.connecting_server #MatchmakingAndGCStatusContainer
@@ -63,19 +58,8 @@ CitadelOverlay
 .connectedToGame.in_matchmaking #MatchmakingAndGCStatusContainer,.connectedToGame.gc_disconnected #MatchmakingAndGCStatusContainer
 {
 	horizontal-align: right;
-	margin-right: 20px;
-	background-color: #ffffff95;
-}
-
-.connectedToGame.in_matchmaking #StatusTitleText,.connectedToGame.gc_disconnected #StatusTitleText
-{
-	color: #111;
-}
-
-.connectedToGame.in_matchmaking #StatusText,.connectedToGame.gc_disconnected #StatusText
-{
-	color: #111111aa;
-	font-weight: medium;
+	margin-right: 10px;
+	margin-top: 15px;
 }
 
 .gc_disconnected #MatchmakingAndGCStatusContainer #StatusIcon
@@ -97,16 +81,17 @@ CitadelOverlay
 
 #StatusTitleText
 {
-	font-size: 20px;
+	font-size: 16px;
 	color: #fff;
 	font-weight: bold;
 	horizontal-align: left;
+	text-overflow: shrink;
 	margin-top: 1px;
 }
 
 .AspectRatio16x10 #StatusTitleText
 {
-	font-size: 16px;
+	font-size: 13px;
 }
 
 #StatusText
@@ -115,8 +100,14 @@ CitadelOverlay
 	color: #ffffff80;
 	text-align: left;
 	horizontal-align: left;
-	margin-top: -3px;
-	font-weight: medium;
+	text-overflow: shrink;
+	max-height: 20px;
+	font-weight: semi-bold;
+}
+
+.AspectRatio16x10 #StatusText
+{
+	font-size: 13px;
 }
 
 .TimeinQueue
@@ -139,7 +130,7 @@ CitadelOverlay
 
 #StatusIcon
 {
-	width: 50px;
+	width: 30px;
 	height: 100%;
 	background-color: #999999;
 	background-color: #C4FF47;
@@ -147,8 +138,8 @@ CitadelOverlay
 
 #SearchingIcon
 {
-	width: 34px;
-	height: 34px;
+	width: 28px;
+	height: 28px;
 	horizontal-align: center;
 	vertical-align: center;
 	margin-top: 2px;
