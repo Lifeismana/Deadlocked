@@ -14,7 +14,7 @@
 #spectate_target
 {
 	flow-children: down;
-	margin: 10px 20px 30px 20px;
+	margin: 10px 0px 0px 20px;
 }
 
 .spectatingTitle
@@ -182,8 +182,12 @@
 {
 	horizontal-align: left;
 	vertical-align: center;
-	margin-left: DistFromWindowBorder;
 	flow-children: right;
+}
+
+.spectateModeRoaming #voice_section
+{
+	visibility: collapse;
 }
 
 #camera_section
@@ -204,6 +208,7 @@
 #flight_control
 {
 	flow-children: down;
+	margin-top: 5px;
 }
 
 #fly_up,#fly_down
@@ -213,14 +218,9 @@
 	margin-bottom: 5px;
 }
 
-#swap_camera,#voice_section
+#swap_camera
 {
 	margin-top: 5px;
-}
-
-.spectateModeRoaming #swap_camera
-{
-	visibility: collapse;
 }
 
 .keybindTitle

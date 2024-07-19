@@ -24,6 +24,10 @@
 				<Label class="keyBind spectatorOnlyControl" text="{s:spec_camera_mode}" html="true" />
 				<Label class="spectatorOnlyControl keybindTitle" text="Change Camera" html="true" />
 			</Panel>
+			<Panel id="voice_section" class="specControlItem LeftRightFlow spectatorOnlyControl">
+				<Label class="keyBind" text="{s:free_cursor_toggle}" html="true" />
+				<Label class="keybindTitle" text="{s:free_cursor_mode}" />
+			</Panel>
 			<Panel id="flight_control" class="specControlItem TopBottomFlow">
 				<Panel id="fly_up" class="specControlItem spectatorOnlyControl LeftRightFlow">
 					<Label class="flightControl keyBind" text="{s:spec_fly_up}" html="true" />
@@ -35,12 +39,6 @@
 				</Panel>
 			</Panel>
 		</Panel>
-		<Panel id="camera_section">
-			<Panel id="mode_section" class="specControlItem spectatorOnlyControl LeftRightFlow" />
-			<Panel id="voice_section" class="specControlItem LeftRightFlow spectatorOnlyControl">
-				<Label class="keyBind" text="{s:free_cursor_toggle}" html="true" />
-				<Label class="keybindTitle" text="{s:free_cursor_mode}" />
-			</Panel>
-		</Panel>
+		<Panel id="camera_section" />
 	</Panel>
 </root>
