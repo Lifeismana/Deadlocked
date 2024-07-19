@@ -102,6 +102,8 @@ enum EGCCitadelClientMessages {
 	k_EMsgClientToGCPartySetModeResponse = 9208;
 	k_EMsgClientToGCGrantForumAccess = 9209;
 	k_EMsgClientToGCGrantForumAccessResponse = 9210;
+	k_EMsgClientToGCModeratorRequest = 9211;
+	k_EMsgClientToGCModeratorRequestResponse = 9212;
 }
 
 enum ECitadelAccountPermissionFlag {
@@ -1304,4 +1306,13 @@ message CMsgClientToGCGrantForumAccessResponse {
 	optional string email = 2;
 	optional string username = 3;
 	optional string forum_password = 4;
+}
+
+message CMsgClientToGCModeratorRequest {
+	optional uint32 account_id = 1;
+}
+
+message CMsgClientToGCModeratorRequestResponse {
+	optional bool success = 1;
+	repeated string response_text = 2;
 }
