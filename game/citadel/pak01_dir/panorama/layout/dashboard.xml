@@ -66,7 +66,7 @@
 							<Button id="reconnect" class="nav_menu_item primary" onactivate="CitadelReconnect(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( #Citadel_Dashboard_RejoinTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 								<Label text="#menu_rejoin" class="menuButtonLabel" />
 							</Button>
-							<Button id="lobbyleave" class="nav_menu_item primary endsession" onactivate="CitadelLeaveGameLobby(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( #Citadel_Dashboard_AbandonTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
+							<Button id="lobbyleave" class="nav_menu_item primary endsession" onactivate="CitadelConfirmDisconnectFromGame(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="UIShowTextTooltip( #Citadel_Dashboard_AbandonTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 								<Label text="#menu_abandon" class="menuButtonLabel" />
 							</Button>
 							<Button id="disconnect" class="nav_menu_item primary endsession" onactivate="CitadelConfirmDisconnectFromGame(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelPlayUISound( EMainMenuHover )" onmouseout="CitadelHoverTextStop()">

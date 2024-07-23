@@ -42,18 +42,18 @@
 				</Button>
 			</Panel>
 			<Panel class="nav_menu_item_container">
-				<Button class="small_text nav_menu_item half_width" onactivate="HTConCommand( &apos;cmd givelevelupgold 1&apos; ); PlaySoundEffect( Stinger.LevelUp )">
+				<Button class="small_text nav_menu_item half_width" onactivate="HTConCommand( &apos;givelevelupgold 1&apos; ); PlaySoundEffect( Stinger.LevelUp )">
 					<Label text="#HeroTesting_LevelUp" />
 				</Button>
-				<Button class="small_text nav_menu_item half_width" onactivate="HTConCommand( &apos;cmd givelevelupgold 30&apos; ); PlaySoundEffect( Stinger.LevelUp )">
+				<Button class="small_text nav_menu_item half_width" onactivate="HTConCommand( &apos;givelevelupgold 30&apos; ); PlaySoundEffect( Stinger.LevelUp )">
 					<Label text="#HeroTesting_MaxLevel" />
 				</Button>
 			</Panel>
 			<Panel class="nav_menu_item_container">
-				<Button class="small_text nav_menu_item half_width" onactivate="HTConCommand( &apos;cmd healthpct 50&apos; ); PlaySoundEffect( Stinger.LevelUp )">
+				<Button class="small_text nav_menu_item half_width" onactivate="HTConCommand( &apos;healthpct 50&apos; ); PlaySoundEffect( Stinger.LevelUp )">
 					<Label text="#HeroTesting_HalfHealth" />
 				</Button>
-				<Button class="small_text nav_menu_item half_width" onactivate="HTConCommand( &apos;cmd healthpct 100&apos; ); PlaySoundEffect( Stinger.LevelUp )">
+				<Button class="small_text nav_menu_item half_width" onactivate="HTConCommand( &apos;healthpct 100&apos; ); PlaySoundEffect( Stinger.LevelUp )">
 					<Label text="#HeroTesting_FullHealth" />
 				</Button>
 			</Panel>
