@@ -1,6 +1,6 @@
 					
 								
-																
+																x
 			<table>			<tr>			<th align="left"><b>Aggressive</b></th>			<th align="left">Removes any bones which are not skinned or referenced</th>			</tr>			<tr>			<th align="left"><b>Leaf Only</b></th>			<th align="left">Removes any bones which are not skinned or referenced that have no children</th>			</tr>			<tr>			<th align="left"><b>None</b></th>			<th align="left">Doesn't remove any bones</th>			</tr>			</table>
 	!s99
 	#jT$
@@ -612,6 +612,7 @@ $~NHc
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
+(%GQu
 (%d,%d
 (%d,%d)
 (%d,%d,%d
@@ -620,7 +621,8 @@ $~NHc
 (*%s*), 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-<Qu
+(-KKu
+(-lQu
 (5 'd
 (5#+d
 (5G>d
@@ -628,7 +630,7 @@ $~NHc
 (5i,d
 (;^ |
 (;s |
-(=_<D
+(=o<D
 (A\_][
 (A]A\^[
 (A]A\_^][
@@ -1287,7 +1289,6 @@ $~NHc
 -L9{ht'H
 -YA1H
 -YA1f
--convars_visible_by_default
 -physdebugdata
 -rgba
 -sse2
@@ -7295,6 +7296,7 @@ $~NHc
 .L$(z!u
 .YA1H
 .YA1I
+.[e'R
 .data
 .data$r
 .data$rs
@@ -7334,7 +7336,7 @@ $~NHc
 .xJ>Hf
 .xdata
 .xdata$x
-/% m@
+/%0m@
 /%lW7
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
@@ -7353,7 +7355,7 @@ $~NHc
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
 /5{~l
-/=nJD
+/=~JD
 />58d%
 /D$pv
 /D$tv
@@ -7456,6 +7458,7 @@ $~NHc
 1HcL$4I
 1I9FPt-
 1L;|$P
+1M7-P+
 1YA1H
 1YA1I
 1sAL"
@@ -7466,7 +7469,7 @@ $~NHc
 220323000000Z
 220801000000Z
 230714000000Z
-240719175508Z0/
+240722225238Z0/
 241009235959Z0a1
 2D Aim
 2D Blend Has No Referenced Animations
@@ -7729,7 +7732,6 @@ $~NHc
 ;)}FH
 ;.u1L
 ;0t2H
-;3.v~Q
 ;:|73
 ;;| H
 ;?0123456789:;<=>?
@@ -18390,6 +18392,7 @@ FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to register all schema data: %s
 FATAL: %s called on a pool context (no root available)
 FBX filename suffix
+FD&3E
 FGD Variable %s has bad default value %d (has bits set that are not valid choices)
 FHH;CHtIH
 FHHcD$ I
@@ -21429,6 +21432,7 @@ Object Rotation
 Obtained EMS handle %u
 Obtained XMS handle %u
 October
+Od&+S
 Offset
 Offset Angle
 Offset Angles
@@ -22802,8 +22806,8 @@ T$xE3
 T$xHc
 T$xHk
 T$xL+
-T-	e{
-T-Y_{
+T%,DD
+T-9_{
 TD u"E;
 TGALoader::LoadRGBA8888
 TGALoader::ReadFile
@@ -23561,10 +23565,11 @@ Vortices
 Vrad3_001
 W	V_strlower_fast
 W%	s;M@
-W%kR9
-W%y4^
-W-9Q^
-W-n>^
+W%Y4^
+W%{R9
+W-N>^
+W-v3^
+W5kXT
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to parse class '%s'.
 WARNING: No 'models_ModelDocGameData' FGD was specified in the 'ModelDoc' section of gameinfo.gi.
@@ -23581,6 +23586,7 @@ WIcT$
 WLcT$0I
 WLc\$0I
 WORLD
+WZJ-qr
 WaNd?
 WaitForSingleObjectEx
 WakeAllConditionVariable
@@ -23667,11 +23673,10 @@ X HcYxH
 X UVWAVAWH
 X VWATH
 X!t5~
-X%2<D
-X%:YD
+X%B<D
+X%JYD
 X-8E'
 X-L*.
-X-PJu
 X-Zi*
 X-fE'
 X-s*.
@@ -23727,11 +23732,11 @@ Y%/Yu
 Y%7S7
 Y-*]l
 Y-Dte
-Y-H	7
+Y-X	7
 Y-z/s
-Y-}	7
-Y5"J8
+Y52J8
 Y9"SD
+Y=#ND
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -23741,7 +23746,6 @@ YD$@f
 YD$HA
 YD$XA
 YK @8op
-YOFcd
 YPD9C0t
 YPosition
 YResolution
@@ -23975,16 +23979,15 @@ Zpm"U
 \$|L+
 \$|Lc
 \-zE'
+\5b+]
 \5e='
-\5ln7
-\=	5^
 \L$HIc
 \L$|D
 \T$lHc
 \t$0D
 \t3D8T$(t
 ]$HcK
-]%"MP
+]%RMP
 ]'HcE
 ](IcE Lk
 ])6M>&
@@ -24125,6 +24128,7 @@ _zero
 `D;f8
 `D;s8
 `D;w8
+`Fzc>]4
 `Hc1D
 `Hc9L
 `HcyxE3
@@ -27553,28 +27557,25 @@ n|$`fA
 o KPBf
 o!L9l$ t
 o$$fA
-o%/e:
-o%>r:
-o%I_:
-o%J-:
-o%MW5
-o%Xu5
-o%]#:
-o%z{5
+o%?e:
+o%Nr:
+o%Y_:
+o%Z-:
+o%]W5
+o%hu5
+o%m#:
 o,$fD
-o-7;:
-o-G0:
-o-`8:
+o-G;:
+o-W0:
+o-p8:
 o47Lc
-o514:
-o58R:
-o5L&:
-o5ug	
-o5|6:
-o=A$7
-o=A|>
-o=N&:
-o={X:
+o5(1:
+o5A4:
+o5HR:
+o5\&:
+o=Q$7
+o=Q|>
+o=^&:
 oAPfD
 oD$ f
 oD$ fA
@@ -28376,6 +28377,7 @@ s0H9s
 s0u!H
 s5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
 s<9s@~VL
+s=MftJe
 s@H9s(H
 sAmTb
 sHu!H
@@ -29173,7 +29175,7 @@ t_@80tZ3
 t_D8(tZ3
 t_D8>tZ3
 t_HcE
-t_L9>t
+t_M9>t
 t`fff
 ta98}
 taHc>
@@ -30091,7 +30093,6 @@ ycoord
 yjIc>I
 ys == 0
 z#u!Hc+H
-z$)!i9
 z%u#H
 z&u$D
 z-u+2

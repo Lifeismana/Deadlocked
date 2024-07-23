@@ -50,7 +50,6 @@
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- !t:n[
  %41g
  %4i: 
  %i:%i [%i%%]
@@ -228,6 +227,7 @@
 "Set control point rotation" pre-emission operator now correctly produces right-handed matrices [previously it would produce left-handed ones].
 "Twist around axis" force now rotates around the specified control point instead of control point 0.
 "e?<<<<<<l?
+"w xP"6
 # of children to enable
 # of children to set
 # of control points to set
@@ -367,64 +367,61 @@ $x?"TA?
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
-(% j'
-(%"R'
-(%$0(
-(%%BX
+(% uO
+(%!"'
 (%/]]
-(%2XX
-(%@uO
-(%A"'
+(%Dj'
+(%FR'
+(%H0(
 (%NGF
 (%P\;
 (%\mF
 (%d,%d)
-(%dj'
-(%fR'
-(%h0(
+(%e"'
 (%hrF
 (%m!/
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-$i&
+(-!~&
+(-$<'
+(-*kX
 (---U
-(-9vO
-(-A~&
-(-D<'
-(-JkX
-(-OV$
-(-U}M
+(-/V$
+(-5}M
+(-?T'
 (-VGF
 (-W2+
-(-_T'
-(-}$'
-(5&_(
-(5+V&
-(5+}(
+(-]$'
+(-d*X
+(-h<'
+(5*K(
+(5+,4
+(5/n(
+(51}Y
 (57tG
 (5:LG
 (5:q]
 (5;S]
 (5>GS
+(5>v&
+(5?_(
 (5ENG
-(5JK(
-(5K,4
-(5On(
-(5Q}Y
-(5^v&
-(5__(
+(5^##
+(5^S&
 (5bLQ
 (5fSG
 (5h6R
+(5kK&
 (5p>]
 (5pg]
 (5w%U
-(5~##
-(5~S&
+(=-7X
 (=8OG
-(=M7X
-(=a*?
+(=A*?
+(=c_&
 (=dK;
+(=oKX
+(=raX
 (=}KW
 (A^A\_[
 (A^A]A\_^[
@@ -999,7 +996,6 @@ $x?"TA?
 -Stop: 
 -YA1H
 -YA1f
--convars_visible_by_default
 -end of input-(
 -sse2
 -sse3
@@ -1013,8 +1009,7 @@ $x?"TA?
 ..om?
 .00cfg
 .1 .95
-.54]/
-.=c{M
+.=C{M
 .>PJ;I:qE>
 .>l	y<\
 .?AUConcurrentQueueProducerTypelessBase@details@moodycamel@@
@@ -2154,7 +2149,7 @@ $x?"TA?
 220323000000Z
 220801000000Z
 230714000000Z
-240719175638Z0/
+240722225250Z0/
 241009235959Z0a1
 2D Orient
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -2163,6 +2158,7 @@ $x?"TA?
 2YA1A
 2YA1H
 2YA1I
+2bG%9
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 311109235959Z0b1
@@ -2325,7 +2321,6 @@ $x?"TA?
 ;3|!H
 ;7|!H
 ;;|!H
-;=yC#
 ;?0123456789:;<=>?
 ;D$`u
 ;F0u!H
@@ -2403,6 +2398,7 @@ $x?"TA?
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 <utK@:
+<xA8D
 =	8t?
 =	V_remainderf
 = $s?(,
@@ -3170,6 +3166,7 @@ Box Angles
 Box Flags
 Box Maxs
 Box Mins
+Bq"@<s
 Branch Behavior
 Branch Split Rate
 Branch Towards Current Direction
@@ -6944,16 +6941,16 @@ D8(tLH
 D8)u#L
 D8,:u
 D81uUL9r
+D85,[$
+D854[$
 D86u|H
 D88tS3
 D8<3u
 D8<8u
 D8<:u
 D8<>u
-D8=!O,
-D8=<R,
+D8=MP,
 D8=d9>
-D8=mP,
 D8=|8>
 D8L$0u`
 D8L$`u8
@@ -9942,7 +9939,6 @@ PA_A^_
 PA_A^_^]
 PA_^]
 PAq=?Mp#
-PDt?K
 PET_GROUND_GRID
 PET_GROUND_NONE
 PET_GROUND_PLANE
@@ -12182,19 +12178,19 @@ X axis scaling scalar field
 X offset of center point
 X to the Y power
 X!t5~
-X%2C$
 X%9p]
 X%Z1+
 X5'Q`
-X55E3
-X5?XM
+X5/X3
 X5?Z`
-X5OX3
-X5cvA
-X5g]O
+X5CvA
+X5G]O
+X5`+3
+X5kjM
 X=>3]
 X=BQ]
 X=N\]
+X=`X3
 X?+5[>,
 XA]A\_[
 XA^A\][
@@ -12238,27 +12234,27 @@ Y Dimension Count
 Y Dimension Spacing
 Y axis scaling scalar field
 Y offset of center point
-Y%!)(
+Y%"8'
 Y%-.R
-Y%B8'
-Y%O)&
-Y%`x$
-Y%t|'
-Y-6k'
-Y-91(
-Y-A5'
+Y%/)&
+Y%@x$
+Y%T|'
+Y-!5'
+Y-<M'
 Y-IfT
-Y-\M'
+Y-pK$
+Y-|+,
 Y4$E3
-Y5#Q3
-Y58D(
-Y5?g(
-Y5OX(
-Y5vu$
-Y5{{(
+Y5/X(
+Y5Vu$
+Y5[{(
+Y5i	4
+Y5tx?
+Y5vF3
+Y5zI(
 Y9"SD
-Y= \3
-Y=EY3
+Y=%Y3
+Y=h##
 Y>kX>M
 YD$0A
 YD$0E
@@ -12430,7 +12426,7 @@ Zod(^?
 \$pfD
 \$xD;T$Dt
 \$xHc
-\=`kM
+\=@kM
 \=q	/
 \D$ A
 \D$ H
@@ -12453,7 +12449,6 @@ Zod(^?
 \d$@A
 \d$HH
 \d$PA
-\ko*-
 \l$HH
 \l$lH
 \l6DH
@@ -12463,10 +12458,9 @@ Zod(^?
 ])6M>&
 ],tIH
 ],tJH
-]52T$
-]5e7O
-]=M-4
-]=M;4
+]5E7O
+]=--4
+]=-;4
 ]>)2X
 ]J<0"0i3
 ]Lu*E;|$
@@ -12582,7 +12576,6 @@ _procedural_particle_snapshot.vsnap
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
-a%is4
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 absolute value
@@ -13044,7 +13037,6 @@ duration at which to stop
 duration field
 duration scale
 dynamic control point count
-dyv>x-I
 e tT3
 e+000
 e0A_A^A]A\]
@@ -15832,6 +15824,7 @@ next_cursor_id
 nf,fD
 ngZ8H
 ngZ8L
+nl7lC]\
 no buffer space
 no child process
 no link
@@ -15894,18 +15887,17 @@ o%c=G
 o(L9d$Ht
 o(L9s(t
 o-+=G
-o-+MV
-o-ZX$
+o-:X$
+o-UW$
 o-^0G
 o-d9G
-o-uW$
 o0L9s0t
 o5V0G
 o5l9G
+o5|QV
 o=!+G
-o='MV
+o=#2V
 o=*(G
-o=C2V
 o=N0G
 o=U+G
 o=Z7G
@@ -15918,7 +15910,6 @@ oD$@f
 oD$pD
 oI>O7
 oL$PD
-oL]"j!
 oM fA
 oT$0fA
 oT$@A
@@ -16884,7 +16875,7 @@ t\L9g(
 t^fff
 t_@8*tZH
 t_Ic<$
-t_L9>t
+t_M9>t
 table
 tagName
 tail alpha scale
@@ -17398,7 +17389,6 @@ zeroth_moment
 }@r2L
 }LuHO
 }P|EH
-}UtP1
 }Xu'A
 }^jIH
 }_fff
