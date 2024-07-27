@@ -1690,6 +1690,11 @@ PopupManager
 	visibility: collapse;
 }
 
+.in_matchmaking #DiscordForumInvite,.in_matchmaking.hasJoinedForum #DiscordForumInvite,.in_matchmaking.hasCreatedDiscordInvite #DiscordForumInvite
+{
+	visibility: collapse;
+}
+
 .completedText
 {
 	visibility: collapse;
