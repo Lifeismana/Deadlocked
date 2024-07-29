@@ -55,7 +55,7 @@
   Problem     : Field is not the right type for this message:
  !""#$%&'((()*+,-./0123456789:;<=>?@AABCDEFGHIJKLLAMAAN
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$h
  !"#$$$$$$%%&'()*++++++,,-./01MMMMMMMM22345678889:9:;<=>?=>?MMMMM@ABCDEFGHIJ
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -185,6 +185,7 @@
  volatile
  { ... };
  } from:
+!	V_iswspace
 !! No context to execute within.
 !"Needs impl"
 !"Unknown movetype"
@@ -222,7 +223,6 @@
 !pAfter || nDepth > 0
 !pChild || pChild->GetAttribute( k_symItemIndexAttribute, -1 ) == nItemIndex
 !pCurrent->GetParent()
-"	V_iswspace
 " because it is missing required fields: 
 " conflicts with field "
 " conflicts with the existing symbol "
@@ -419,6 +419,7 @@ $u"8K
 %s_Right
 %sdeg
 &?PPPPPPP?
+&II}Mr
 &lt;Needs a description&gt;
 &nbsp
 ',=?k
@@ -1176,7 +1177,6 @@ $u"8K
 .dummy
 .edata
 .foo = value".
-.hh5N
 .i?0@I
 .idata$2
 .idata$3
@@ -1290,7 +1290,7 @@ $u"8K
 220323000000Z
 220801000000Z
 230714000000Z
-240722225257Z0/
+240723235933Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1315,7 +1315,6 @@ $u"8K
 5butt
 5fD9%
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
-5lfaJl	aq
 6*f(_
 6I]Dc
 6OB,n_
@@ -1326,6 +1325,7 @@ $u"8K
 7?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
 7H9uHt
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powf
 8 tCA
 8$u*E
 8$uFH
@@ -1372,7 +1372,7 @@ $u"8K
 8ke?;
 8w>Hc
 8|u9H
-9	V_powf
+9	V_qsort
 9	tYH
 9)~P3
 90u(H
@@ -1490,7 +1490,7 @@ $u"8K
 9{t~:3
 9{|~<3
 9|$PtHHc
-:	V_qsort
+:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :$t>H
@@ -1501,7 +1501,6 @@ $u"8K
 :Tu)f
 :context->%p->%s:
 :context->null->UIEngine Global:
-;	V_qsort_s
 ;	t/H
 ;"u	@
 ;)u1D
@@ -1600,6 +1599,7 @@ $u"8K
 >f;D$4t
 >fD9%
 >jtm}S
+?	V_roundf
 ?!5WOo
 ?"u	@
 ?"u	E
@@ -1741,7 +1741,6 @@ $u"8K
 ?kxG2)
 ?uRE3
 ?{Q}<
-@	V_roundf
 @ 9B tDA
 @ H;}
 @ HcB
@@ -2294,86 +2293,86 @@ C847u
 C88G8u"
 C8H9K(H
 C98G9u
-C:\buildworker\citadel_staging_win64\build\_build_\panoramauiclient\_vpc_panoramauiclient\default\win64\_msvc_\Retail\panoramauiclient.pdb
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\basesymbol.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\asyncdatapanel.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\button.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\carousel.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\carouselnav.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\carouselnavbutton.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\console.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\consoleinput.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\consoletext.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\contextui.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\debug\debugautocomplete.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\debug\debugger.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\debug\debuglayout.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\debug\debugpanel.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\debug\debugpanelstyle.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\delayloadlist.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\dragzoom.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\dropdown.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\edgescroller.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\fileopendialog.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\grid.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\html.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\image.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\inputforwarding.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\label.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\moviecaptions.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\movieplayer.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\numberentry.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\panel2d.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\rangeslider.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\scrollbar.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\slider.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\textentry.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\controls\tooltip.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\data\panoramavideoplayer.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\csshelpers.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\fillbrush.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\panel2dfactory.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\stylepropertyfactory.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\uilength.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\panoramasymbol.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\renderer\styleproperties.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\textinput\textinput.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\textinput\textinput_daisywheel.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\uiengineclient.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\uievent.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\uifileresource.cpp
-C:\buildworker\citadel_staging_win64\build\src\panoramauiclient\panoramauiclient.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\controls\panel2d.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\controls\textentry.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\layout\uilength.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\localization\ilocalize.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\parseuieventparam.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\renderer\rendercommands.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\renderer\styleproperties.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\textinput\textinput_daisywheel.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\uievent.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\uijsregistration.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\assert_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitstring.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\concommand.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlptr.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsortvector.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsymboltable.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\_build_\panoramauiclient\_vpc_panoramauiclient\default\win64\_msvc_\Retail\panoramauiclient.pdb
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\basesymbol.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\asyncdatapanel.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\button.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\carousel.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\carouselnav.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\carouselnavbutton.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\console.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\consoleinput.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\consoletext.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\contextui.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\debug\debugautocomplete.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\debug\debugger.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\debug\debuglayout.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\debug\debugpanel.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\debug\debugpanelstyle.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\delayloadlist.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\dragzoom.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\dropdown.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\edgescroller.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\fileopendialog.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\grid.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\html.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\image.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\inputforwarding.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\label.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\moviecaptions.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\movieplayer.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\numberentry.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\panel2d.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\rangeslider.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\scrollbar.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\slider.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\textentry.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\controls\tooltip.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\data\panoramavideoplayer.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\csshelpers.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\fillbrush.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\panel2dfactory.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\uilength.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\panoramasymbol.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\renderer\styleproperties.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\textinput\textinput.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\textinput\textinput_daisywheel.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\uiengineclient.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\uievent.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\uifileresource.cpp
+C:\buildworker\citadel_rel_win64\build\src\panoramauiclient\panoramauiclient.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\controls\panel2d.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\controls\textentry.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\layout\uilength.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\localization\ilocalize.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\parseuieventparam.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\renderer\rendercommands.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\renderer\styleproperties.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\textinput\textinput_daisywheel.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\uievent.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\uijsregistration.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\assert_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitstring.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\concommand.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utllinkedlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlptr.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsortvector.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsymboltable.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
 C@9CL}`A
 C@H98t$H
 C@L;B
@@ -2878,6 +2877,7 @@ Cypriot
 Cyrillic
 C|$pH
 C|$xL
+D	V_sincosf
 D W?{W
 D!l$xA
 D$ 	I
@@ -3042,6 +3042,7 @@ D$xH+
 D$xLc
 D$xM+
 D$xf;
+D&+TP
 D+3L9c0u	
 D+A@H
 D0?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
@@ -3278,7 +3279,6 @@ DropDownSelectionChanged
 DropInputFocus
 DropdownMenuFocusChanged
 D|$0H
-E	V_sincosf
 E 8F 
 E @8pHtD9s|~?L
 E D8xKtgA
@@ -3556,6 +3556,7 @@ G98C9u&
 G<9C<u~H
 G@9GLH
 G@L;D$hu
+GD!a=
 GD$(H
 GD$hH
 GHL9d
@@ -4018,6 +4019,7 @@ HorizontalScrollThumb
 HorizontalSplitter
 HostStateMgr001
 HtmlUserAgent
+I	V_snprintf
 I#I0H
 I#J0H
 I#M0H
@@ -4190,7 +4192,6 @@ It's unexpected and inefficient to add to a render data list that has already ha
 ItemPips
 Item_%c
 Item_%s
-J	V_snprintf
 J<L4,&
 J>@G_
 JSConsoleInput
@@ -4401,6 +4402,7 @@ LITE_RUNTIME
 LOG_CONSOLE
 LOG_GENERAL
 LT_txt
+L[	P^
 Label
 Label '%s': Assigning non-localization string "%s" via SetLocalizationString
 LabelHREF
@@ -4624,7 +4626,6 @@ Multiple extension registrations for type "
 MutableMessage
 MutableRawRepeatedField
 Myanmar
-N!KF4N,
 N(+V0
 N0+V8
 N0fff
@@ -4680,8 +4681,10 @@ NumberEntryChanged
 NumberEntryDecrementValue
 NumberEntryIncrementValue
 Numbers starting with leading zero must be in octal.
+O	V_sscanf
 O$M9o
 O0+W8
+O8)]S
 OF>;^
 OH+WP
 OPQRSTUVWXYZ[\]F^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^_^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^`abbbbbbbbcddefghijklmn
@@ -4714,7 +4717,6 @@ Ordered object's memory was modified prior to construction
 Oriya
 Osmanya
 OverMaxPips
-P	V_sscanf
 P(9G<H
 P(A9F<I
 P08@Jp
@@ -5256,7 +5258,6 @@ Specifies which properties should transition smoothly to new values if a class/p
 Specifies which properties should transition smoothly to new values if a class/pseudo class changes the styles.<br><br><b>Examples:</b><pre>transition: position, transform, background-color;</pre>
 Spinner
 Splitter needs a parent panel
-Sqz*AiK)
 StartAnimating
 Start_txt
 StatsService_001
@@ -5294,6 +5295,7 @@ Symbol name "
 Synthetic oneofs must be after all other oneofs
 Syriac
 SystemInputLanguageChanged
+T	V_stricmp_fast
 T$ E3
 T$ H+
 T$ H;
@@ -5488,7 +5490,6 @@ Tuesday
 Two values are specified, the first applies to how we stretch the top/middle/bottom horizontally to fill space, the second applies to how we stretch the left/middle/right vertically to fill space.<br><br><b>Examples:</b><pre>border-image-repeat: stretch stretch;
 Type appears to be in generated pool but wasn't 
 Type is already registered: 
-U	V_stricmp_fast
 UA>N0Wl
 UATAUAVAWH
 UATAVH
@@ -5586,6 +5587,7 @@ UsingCompositionLayer
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
+V	V_strlower_fast
 V0H;V8t
 V6E>`"(5
 V8ParamToPanoramaType expected IUIPanel object to convert, but got some other invalid object
@@ -5709,7 +5711,6 @@ VolumeControl
 VolumeSliderPopup
 VolumeSliderValueChanged
 Vrad3_001
-W	V_strlower_fast
 WARNING
 WATAUAVAWH
 WATAVH
@@ -5765,17 +5766,17 @@ Xt$xA;
 X|$|A;
 X}tA;
 Y0HcR
-Y5Y<	
+Y5Y;	
 Y9"SD
-Y=J1	
+Y=:1	
 Y>kX>M
 YD$@f
 Y_txt
 You can't interpolate a layout-position
+Z	V_strtod
 ZP~IIc
 Z\>z8
 Zod(^?
-[	V_strtod
 [%s] 
 [*ncd>0
 [K]taM?
@@ -5786,7 +5787,6 @@ Zod(^?
 [packed = true] can only be specified for repeated primitive fields.
 [thunk]:
 \ at end of pattern
-\"-)Pp]
 \$ @8t$(
 \$ AVH
 \$ D8t$(
@@ -5928,6 +5928,7 @@ Zod(^?
 ]>)2X
 ]J<0"0i3
 ]XD;]
+^	V_strupper_fast
 ^,tyI
 ^<V7w
 ^RfN>
@@ -5935,14 +5936,13 @@ Zod(^?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^fD;]
 ^u+fff
-_	V_strupper_fast
 _ ;_$t
+_"5#8
 _(H;u0t!H
 _-?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
 _0HcC
 _8I;_@tj
 _8M9g(u\
-_:O4=
 _RDATA
 __based(
 __cdecl
@@ -6038,6 +6038,7 @@ _oD>Kg
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
+a	V_tanf
 a numbered reference must not be zero
 a-?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z
 a7hIw
@@ -6097,7 +6098,6 @@ autocompletetext
 autoplay
 autoscroll-delay
 azure
-b	V_tanf
 b?^Cy
 bAllocationCanFit
 bFound
@@ -6408,6 +6408,7 @@ dragclickzone
 dropdownbodyposition
 dwgIc
 e A_A^]
+e*9s=
 e+000
 e0A_A^A]A\]
 eFlowDirection == k_EFlowNone
@@ -6665,6 +6666,7 @@ http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
 https://
 hue-rotation
+h{xcJ
 iChildIndex <= m_pPanel->GetChildCount()
 iChildIndex >= 0
 iL97u
@@ -6728,6 +6730,7 @@ itemstoscroll
 itemwidth
 iu+-,
 ivory
+j&N?Q
 j>>A?1
 j?V()
 j?{$*
@@ -6874,7 +6877,6 @@ loopcount
 lower
 lowercase
 lowervalue
-m#"4b
 m0k0$
 mL+7H
 m_ElementCount == 0
@@ -8248,6 +8250,7 @@ y\PD>!
 yellow
 yellowgreen
 yxxxxxxxH
+y|=T,
 z :"U
 z-index
 z-offset

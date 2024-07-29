@@ -15,20 +15,18 @@
 			"sounds/weapons/lash/lash_weapon_fire_07.vsnd",
 			"sounds/weapons/lash/lash_weapon_fire_08.vsnd",
 		]
-		vsnd_duration = 1.480000
 	}
 	Lash.Wpn.Impact = 
 	{
 		base = "Base.Bullet.Impact"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Lash.A1.Ground.Strike.Mod.Start = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/a1_ground_strike/cast.vsnd"
-		vsnd_duration = 2.167583
 	}
 	Lash.A1.Ground.Strike.Mod.Lp = 
 	{
@@ -40,7 +38,6 @@
 		pitch = 1.250000
 		delay_rand_min = -3.000000
 		vsnd_files = "sounds/abilities/lash/a1_ground_strike/mod_lp.vsnd"
-		vsnd_duration = 2.946354
 	}
 	Lash.A1.Ground.Strike.Impact = 
 	{
@@ -56,7 +53,6 @@
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/a1_ground_strike/impact_hi.vsnd"
-		vsnd_duration = 1.496438
 	}
 	Lash.A1.GroundStrike.Impact.Lo = 
 	{
@@ -64,14 +60,12 @@
 		volume = 0.000000
 		volume_falloff_max = 2222.000000
 		vsnd_files = "sounds/abilities/lash/a1_ground_strike/impact_lo.vsnd"
-		vsnd_duration = 1.764333
 	}
 	Lash.GroundStrike.Target.Impact = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/a1_ground_strike/target.vsnd"
-		vsnd_duration = 1.586354
 	}
 	Lash.Lash.Cast = 
 	{
@@ -87,14 +81,12 @@
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/a2_grapple/cast_elastic.vsnd"
-		vsnd_duration = 1.799688
 	}
 	Lash.A2.Grapple.Cast.Growl = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/a2_grapple/cast_growl.vsnd"
-		vsnd_duration = 2.295396
 	}
 	Lash.Lash.Impact = 
 	{
@@ -102,7 +94,6 @@
 		pitch = 1.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/a2_grapple/target_impact.vsnd"
-		vsnd_duration = 2.121146
 	}
 	Lash.A3.Flog.Cast = 
 	{
@@ -118,14 +109,12 @@
 		base = "Base.Ability"
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/lash/a3_flog/cast_buzz.vsnd"
-		vsnd_duration = 2.853833
 	}
 	Lash.A3.Flog.Cast.Slash = 
 	{
 		base = "Base.Ability"
 		pitch = 0.750000
 		vsnd_files = "sounds/abilities/lash/a3_flog/cast_slash.vsnd"
-		vsnd_duration = 1.799083
 	}
 	Lash.Shoryuken.Impact = 
 	{
@@ -143,7 +132,6 @@
 		volume_falloff_max = 1500.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/abilities/lash/a3_flog/impact.vsnd"
-		vsnd_duration = 2.046292
 	}
 	Lash.A3.Flog.Impact.Swt = 
 	{
@@ -155,7 +143,6 @@
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/lash/a3_flog/miss.vsnd"
-		vsnd_duration = 1.720604
 	}
 	Lash.A4.Death.Slam.Cast.Delay = 
 	{
@@ -163,7 +150,6 @@
 		play_from_listener_player = 1.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/lash_death_slam_cast_delay.vsnd"
-		vsnd_duration = 4.778390
 	}
 	Lash.A4.Death.Slam.Cast = 
 	{
@@ -171,14 +157,14 @@
 		play_from_listener_player = 1.000000
 		volume = 0.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Lash.A4.Death.Slam.Miss = 
 	{
 		base = "Base.Ability.Ult"
 		volume = 0.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Lash.A4.Death.Slam.Grab = 
 	{
@@ -186,14 +172,12 @@
 		play_from_listener_player = 1.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/lash_death_slam_cast.vsnd"
-		vsnd_duration = 2.893061
 	}
 	Lash.A4.Death.Slam.Windup = 
 	{
 		base = "Base.Ability.Ult"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/lash/a4_death_slam/windup.vsnd"
-		vsnd_duration = 2.313250
 	}
 	Lash.A4.Death.Slam.Throw = 
 	{
@@ -201,7 +185,6 @@
 		play_from_listener_player = 1.000000
 		volume = 2.000000
 		vsnd_files = "sounds/abilities/lash/lash_death_slam_launch.vsnd"
-		vsnd_duration = 4.942767
 	}
 	Lash.A4.Death.Slam.Impact = 
 	{
@@ -217,14 +200,12 @@
 		base = "Base.Ability.Ult"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/a4_death_slam/impact_growl.vsnd"
-		vsnd_duration = 2.153375
 	}
 	Lash.A4.DeathSlam.Impact.Reson = 
 	{
 		base = "Base.Ability.Ult"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/lash/a4_death_slam/impact_reson.vsnd"
-		vsnd_duration = 3.096479
 	}
 	Lash.MovEmentFoley = 
 	{
@@ -276,7 +257,6 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
-		vsnd_duration = 1.062200
 	}
 	Lash.Melee.SwingLong = 
 	{
@@ -309,7 +289,6 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
-		vsnd_duration = 1.399773
 	}
 	Lash.SlideLandSweetener = 
 	{
@@ -326,7 +305,6 @@
 			"sounds/player/foley/lash/lash_jump_land_08.vsnd",
 			"sounds/player/foley/lash/lash_jump_land_09.vsnd",
 		]
-		vsnd_duration = 0.729500
 	}
 	Lash.SlideGetUp = 
 	{
@@ -343,7 +321,6 @@
 			"sounds/player/foley/lash/lash_jump_land_08.vsnd",
 			"sounds/player/foley/lash/lash_jump_land_09.vsnd",
 		]
-		vsnd_duration = 0.729500
 	}
 	Lash.Death = 
 	{
@@ -356,7 +333,6 @@
 			"sounds/vo/lash/emote/lash_pain_death_04.vsnd",
 			"sounds/vo/lash/emote/lash_pain_death_05.vsnd",
 		]
-		vsnd_duration = 1.443855
 	}
 	Lash.Effort = 
 	{
@@ -375,7 +351,6 @@
 			"sounds/vo/lash/emote/lash_efforts_10.vsnd",
 			"sounds/vo/lash/emote/lash_efforts_11.vsnd",
 		]
-		vsnd_duration = 1.241882
 	}
 	Lash.Effort.Melee = 
 	{
@@ -394,7 +369,6 @@
 			"sounds/vo/lash/emote/lash_efforts_10.vsnd",
 			"sounds/vo/lash/emote/lash_efforts_11.vsnd",
 		]
-		vsnd_duration = 1.241882
 	}
 	Lash.Effort.Dash = 
 	{
@@ -413,7 +387,6 @@
 			"sounds/vo/lash/emote/lash_efforts_10.vsnd",
 			"sounds/vo/lash/emote/lash_efforts_11.vsnd",
 		]
-		vsnd_duration = 1.241882
 	}
 	Lash.ReloadOpen = 
 	{
@@ -422,7 +395,6 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/lash/reload/open.vsnd"
-		vsnd_duration = 0.399977
 	}
 	Lash.ReloadClose = 
 	{
@@ -431,7 +403,6 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/lash/reload/close.vsnd"
-		vsnd_duration = 0.453379
 	}
 	Lash.ReloadInsert = 
 	{
@@ -440,7 +411,6 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/lash/reload/insert.vsnd"
-		vsnd_duration = 0.631134
 	}
 	Lash.Footstep = 
 	{

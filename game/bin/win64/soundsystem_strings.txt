@@ -3,6 +3,7 @@
 			Sequence:	%s
 		%.*s
 		Instrument: %s
+		V_fseek
 	 The lexer was matching from line %d, offset %d, which
 	 This indicates a poorly specified lexer RULE
 	 dspmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f
@@ -38,7 +39,6 @@
 	V_fprintf
 	V_fread
 	V_frexpf
-	V_fseek
 	V_ftell
 	V_vsnprintf
 	Warning
@@ -172,10 +172,10 @@
  Lct$pA
  LinePos:
  Type Descriptor'
+ VKH:
  changes to final result of %.2f
  delete
  delete[]
- eP}N
  new[]
  tDE3
 !!SyncExtref!!%s
@@ -225,7 +225,6 @@
 !pVoice->m_pInstance
 !src.m_bCompleted
 !voice.m_bControlledByRecording
-!xqc8
 "$&')*+,-.//123456779:;<=>??ABCDEFGG(
 "+=N]r
 "2CScs
@@ -352,6 +351,7 @@ $toolgraphs
 &YA1H
 &YA1I
 &YA1L
+'	V_log10f
 ', type<
 ',=?k
 '3<CIOSW[^adfikosvy|~
@@ -361,7 +361,6 @@ $toolgraphs
 'Group Box Mins' Opvar Name
 'Should Play Cluster Child' Opvar Name
 'Should Play' Opvar Name
-(	V_log10f
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
@@ -376,18 +375,18 @@ $toolgraphs
 ( nStart + 1 ) < m_nCount
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
-(%-*7
 (%2db) %6lli : %s
+(%Q&7
 (%d,%d)
-(%q(7
 (%s) %d
 (%s:%s) 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
+(-n%7
 (8GXgw
 (92tSH
 (9:t:H
-(=c.7
+(=C,7
 (?3s'?
 (A\_^[
 (A]^][
@@ -490,7 +489,6 @@ $toolgraphs
 (d$`fD
 (d$pD
 (end of input).
-(e{$D
 (f*^[0
 (fA9D
 (intp)this % 8 == 0
@@ -798,6 +796,7 @@ $toolgraphs
 +h->|
 +o'q)}
 +w?FFv?
+,	V_logf
 , at <EOF>
 , at offset %d
 , near %s
@@ -817,7 +816,6 @@ $toolgraphs
 ,W5y+
 ,YA1H
 ,YA1I
--	V_logf
 ---empty---
 ---invalid event---
 -24 24
@@ -850,6 +848,7 @@ $toolgraphs
 -windowsaudio
 ..om?
 .00cfg
+.5pw4
 .9GXdx
 .>PJ;I:qE>
 .?AUCAttr_m_bBassMono@?1??GetAttributeTable_Impl@VMixUtilityDesc_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -1691,7 +1690,7 @@ $toolgraphs
 220323000000Z
 220801000000Z
 230714000000Z
-240722225228Z0/
+240723235130Z0/
 241009235959Z0a1
 2@8-:9?
 2C $ 2
@@ -1722,9 +1721,11 @@ $toolgraphs
 4S=?8_=i
 4YA1H
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+5&u}8
 5EPX_f
 5FjiT
 5YA1H
+5\&P	h
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 5m8>8=t
 6*f(_
@@ -1736,12 +1737,13 @@ $toolgraphs
 6s?fBbEcJYG[I[NYVP\B]@f;g<h<u4{,
 6uu?>
 6uu?uj
+7	V_powd
 70503
 7K[iu
 7YA1H
 7h>?8
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powd
+8	V_powf
 8 udH
 8#8fD
 8#LT`f
@@ -1779,7 +1781,7 @@ $toolgraphs
 8f;o(
 8ke?;
 8}WW`
-9	V_powf
+9	V_qsort
 9)~EH
 9)~P3
 9*t8H
@@ -1795,7 +1797,6 @@ $toolgraphs
 99jd9
 99~QH
 9;~wL
-9<Y,6
 9=aA\E
 9>~>E3
 9>~NH
@@ -1874,7 +1875,7 @@ $toolgraphs
 9|$Pu
 9|$Xu
 9|$xu
-:	V_qsort
+:	V_qsort_s
 : %s::
 : lexer error %d :
 :!|$ 0
@@ -1886,7 +1887,6 @@ $toolgraphs
 :H?'mK?
 :YA1H
 :^V=/
-;	V_qsort_s
 ;=KM7
 ;?%L+
 ;?Bh9?
@@ -1969,7 +1969,6 @@ $toolgraphs
 >Mp$d
 >O-p?
 >O-p?A6
->Tbx&y
 >Tt$>
 >YA1H
 >`#I>
@@ -1984,6 +1983,7 @@ $toolgraphs
 >wcv?>
 >wcv?uj
 >~a)>
+?	V_roundf
 ?	g	2	
 ?!AfJ+
 ?333333
@@ -2194,7 +2194,6 @@ $toolgraphs
 ?uvIcN
 ?wr^a
 ?{Q}<
-@	V_roundf
 @%s.output
 @,x#L
 @.data
@@ -2759,178 +2758,178 @@ C5R?
 C8H94
 C9,>~U3
 C9,>~[3
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_msvc_\Retail\soundsystem.pdb
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\dsp_preset_soundgroup_mix_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\isoundopsystemedit_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\soundeventgroupsystem_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\soundeventscriptschema_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\voicecontainer_utils_cpp_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\lowlevel\_vpc_soundsystem_lowlevel\default\win64\_schema_\release\vmix_runtime_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_additive_synth_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_animschema_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_blenders_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_envelope_analyzer_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_granulator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_looptrigger_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_randomsampler_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_selector_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_set_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_soundschema_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_switch_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_testbed_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.g
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\piecewisecurve.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr_eval.h
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\kv3transfertypemanager.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\kv3typemanager.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\iresourcesystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\weakhandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\schemalib\schemaenumhelpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\audio_mix.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\isoundopsystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\lowlevel.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\lowlevel\lfo_generator.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\snd_audio_source.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\soundocclusiontest.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\soundopshared.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\assert_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\basetypes.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\byteswap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\enum_helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_resource.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_saveloadresource.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_schema_support.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\reliabletimer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\simpledatacache.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\smartptr.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utldict.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlqueue.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrange.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsymboltable.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsymboltablelarge.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\public\toolattr_lib\toolattr.h
-C:\buildworker\citadel_staging_win64\build\src\public\toolattr_lib\toolattr_concrete.h
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcefile.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaclassinfo.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\audio_stream.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\audio_stream_attached.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\debug_visualizer.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\device_capture.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\dsp_preset_soundgroup_mix.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\audioprocessor.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\delay_line.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\device_null.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\device_sdl.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\mix.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\mix.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\mp3_helpers.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\overlap_save_convolution_effect.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\proc_boxverb.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\proc_diffusor.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\proc_effect_chain.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\proc_freeverb.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\proc_mod_delay.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\proc_panner.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\proc_plateverb.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\proc_subgraph_switch.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\proc_utility.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\real_time_pitch.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\simple_filter.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\simple_filter.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\simple_reverberator.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\source1_procs.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\spline_function.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\stereodelay.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\lowlevel\windows_audio.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_adsp.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_das.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_dev_common.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_dma.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_dsp.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_mix.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_mixgroups.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_edit.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_entry_match_system.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_entry_match_system.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_group_system.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_block_entry.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_entity_info.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_math.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_start_soundevent.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_start_soundevent_data.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_steamaudio.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_stop_soundevents.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_vmix.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_vmix_effect.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_op_voicecontainer.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_system.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_system.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_track_system.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_vmidi_samplers.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_op_sys\sos_vmidi_sequencer.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_wave_data.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_wave_mixer.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_wave_mixer_mp3.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_wave_source.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\snd_wave_temp.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\soundevent.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\soundevent.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\soundsystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\steamaudio_wrapper.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\time_stretch.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\utlstringtokendict.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\vmix.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\vmix.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\vmix_engine.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\vmix_mixer.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\vmix_toolservices.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\vmix_voicelist.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\vmix_voicelist.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\vmix_voicetrace.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voice.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainer_utils.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer_additive_synth.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer_animschema.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer_envelope_analyzer.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer_granulator.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer_looptrigger.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer_randomsampler.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer_set.cpp
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\voicecontainers\voicecontainer_soundschema.h
-C:\buildworker\citadel_staging_win64\build\src\soundsystem\vsound_manager.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\kv3transfer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utltokenizer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolattr_lib\toolattr.cpp
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_msvc_\Retail\soundsystem.pdb
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\dsp_preset_soundgroup_mix_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\isoundopsystemedit_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\soundeventgroupsystem_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\soundeventscriptschema_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\_vpc_soundsystem\default\win64\_schema_\release\voicecontainer_utils_cpp_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\lowlevel\_vpc_soundsystem_lowlevel\default\win64\_schema_\release\vmix_runtime_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_additive_synth_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_animschema_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_blenders_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_envelope_analyzer_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_granulator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_looptrigger_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_randomsampler_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_selector_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_set_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_soundschema_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_switch_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\soundsystem\voicecontainers\_vpc_soundsystem_voicecontainers\default\win64\_schema_\release\voicecontainer_testbed_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\generic_expr.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\generic_expr.g
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\piecewisecurve.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\generic_expr.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\generic_expr_eval.h
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3transfertypemanager.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3typemanager.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\iresourcesystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\weakhandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaenumhelpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\audio_mix.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\isoundopsystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\lowlevel.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\lowlevel\lfo_generator.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\snd_audio_source.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\soundocclusiontest.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\soundopshared.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\assert_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\basetypes.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\enum_helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.inl
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_resource.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_saveloadresource.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_schema_support.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\reliabletimer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\simpledatacache.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\smartptr.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tslist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utldict.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlqueue.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrange.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsymboltable.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsymboltablelarge.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\public\toolattr_lib\toolattr.h
+C:\buildworker\citadel_rel_win64\build\src\public\toolattr_lib\toolattr_concrete.h
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcefile.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schemaclassinfo.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schematype.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\audio_stream.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\audio_stream_attached.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\debug_visualizer.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\device_capture.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\dsp_preset_soundgroup_mix.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\audioprocessor.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\delay_line.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\device_null.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\device_sdl.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\mix.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\mix.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\mp3_helpers.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\overlap_save_convolution_effect.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\proc_boxverb.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\proc_diffusor.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\proc_effect_chain.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\proc_freeverb.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\proc_mod_delay.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\proc_panner.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\proc_plateverb.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\proc_subgraph_switch.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\proc_utility.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\real_time_pitch.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\simple_filter.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\simple_filter.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\simple_reverberator.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\source1_procs.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\spline_function.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\stereodelay.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\lowlevel\windows_audio.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_adsp.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_das.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_dev_common.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_dma.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_dsp.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_mix.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_mixgroups.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_edit.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_entry_match_system.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_entry_match_system.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_group_system.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_block_entry.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_entity_info.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_math.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_start_soundevent.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_start_soundevent_data.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_steamaudio.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_stop_soundevents.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_vmix.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_vmix_effect.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_op_voicecontainer.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_system.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_system.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_track_system.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_vmidi_samplers.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_op_sys\sos_vmidi_sequencer.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_wave_data.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_wave_mixer.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_wave_mixer_mp3.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_wave_source.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\snd_wave_temp.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\soundevent.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\soundevent.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\soundsystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\steamaudio_wrapper.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\time_stretch.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\utlstringtokendict.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\vmix.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\vmix.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\vmix_engine.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\vmix_mixer.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\vmix_toolservices.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\vmix_voicelist.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\vmix_voicelist.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\vmix_voicetrace.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voice.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainer_utils.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer_additive_synth.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer_animschema.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer_envelope_analyzer.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer_granulator.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer_looptrigger.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer_randomsampler.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer_set.cpp
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\voicecontainers\voicecontainer_soundschema.h
+C:\buildworker\citadel_rel_win64\build\src\soundsystem\vsound_manager.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\keyvalues3.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\kv3transfer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utltokenizer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolattr_lib\toolattr.cpp
 C;,>|
 C>YPH>z
 CAssociateResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!
@@ -4573,6 +4572,7 @@ Currently sets a single float operator field
 Curves
 Cutoff Freq
 Cutoff Frequency
+D	V_sincosf
 D W?{W
 D!l$xA
 D$ !H
@@ -5001,7 +5001,6 @@ Duration for which path remains visible. Should be close to update rate of the s
 Duration: %f
 Dynamic
 D}<E3
-E	V_sincosf
 E A;E
 E E+N,F
 E#J$A
@@ -5202,6 +5201,7 @@ ExternalNameForInternalType
 Extra taps
 Extract Source
 Extraneous token
+F	V_sinf
 F	t,P
 F HcF$H
 F Nc$
@@ -5322,7 +5322,6 @@ FreeLibrary
 Frequency (Hz)
 Friday
 Func( %s )
-G	V_sinf
 G fff
 G$A9B$
 G$D8;I
@@ -5482,6 +5481,7 @@ G|$(L
 G|$HA
 G|$XI
 G|$hD
+H	V_sinhf
 H HcH
 H UATAUAVAWH
 H USWH
@@ -5564,7 +5564,6 @@ HLcB,H
 HRTF calculations will calculate the player as being this far behind the camera.
 HToolAttrTarget::AssertTypeMismatch
 H[><y5
-H]%9 
 HammerMapLoader001
 HandleAsStringFailure
 Harmonics
@@ -5704,7 +5703,7 @@ HighPass
 Highest
 HostStateMgr001
 Hovering voice %i, you could debug draw something too
-I	V_sinhf
+I	V_snprintf
 I 	A0
 I could not work out what I was expecting, like so many of us these days!
 I |0E
@@ -5893,7 +5892,6 @@ IsValidFieldDataType( nDataType )
 IsValidIndex( i )
 IsValidIndex( nIndex )
 IsValidIndex(i) && (i != InvalidIndex())
-J	V_snprintf
 J(IcB
 J(IcB A
 J8H99t
@@ -6499,6 +6497,7 @@ Num Match groups: %i
 Number of materials not mapped = %d.
 Number of materials updated with new mapping = %d.
 Number of sections
+O	V_sscanf
 O JcD/
 O(;_ s
 O-p?A6
@@ -6544,7 +6543,6 @@ OutputAudioStreamDestroy
 OutputPosToVmix
 Override
 Oversampling
-P	V_sscanf
 P HcHXL
 P(HcO
 P(tDH
@@ -6701,7 +6699,6 @@ PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown
 Px9\$(t
 Px9\$(t	H
 Pz}b!
-P{C`p
 Q5rHg,>
 Q>0P7>
 QA;S`}
@@ -6717,7 +6714,6 @@ RESOURCE_TYPE_SOUNDSTACKSCRIPT
 RESOURCE_TYPE_VMIX_LIST
 RJO_m
 ROOM Detected 
-RSDS\
 RXMSA
 RaiseException
 Random
@@ -7198,6 +7194,7 @@ Sunday
 Sustain target amplitude
 Sustain time (ms)
 SystemAttributes
+T	V_stricmp_fast
 T$ E3
 T$ H;
 T$ Hi
@@ -7265,7 +7262,6 @@ T1(Hk
 T1,Hk
 T8 Hk
 T94fA
-T=:R2
 TESTBED: Amped Decaying Sine Wave Container
 TESTBED: Decaying Sine Wave Container
 TESTBED: FM Synth Container
@@ -7372,7 +7368,6 @@ Trying to cast '%s' to a different resource type!
 Tuesday
 Type Name: %s
 Type: %s
-U	V_stricmp_fast
 U(HcP
 U0A9M
 U?:CU?K
@@ -7526,6 +7521,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
+V	V_strlower_fast
 V(t:H
 V6E>`"(5
 V?V/V?
@@ -7795,7 +7791,7 @@ Vsnd Container
 Vsnd File
 Vsnd Reference
 Vu?N\t?8Ws?vGr?
-W	V_strlower_fast
+W	V_strnchr
 W(tFH
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Attempting to import existing public field %s in stack %s
@@ -7850,7 +7846,6 @@ WriteFile
 Wrong arg count for '%s' %d, expected 1
 Wrong arg count for '%s' %d, expected 2
 Wrong arg count for '%s' %d, expected 3
-X	V_strnchr
 X 843"8
 X UVAVH
 X UVWATAUAVAWH
@@ -7875,10 +7870,9 @@ X\$xf
 X_^[]
 Xt$PA
 Y-=($
-Y5GK7
+Y5'I7
 Y7D9.
 Y9"SD
-Y=&I7
 Y>kX>M
 Y?'WY?
 YD$ A
@@ -7894,6 +7888,7 @@ Yt$ A
 Y|$ D
 Y|$`A
 Y}?\0 >%
+Z	V_strtod
 Z(IcB
 Z48wN39
 Z?SHX?
@@ -7901,7 +7896,6 @@ ZPKE?81("
 ZW][Rbmxv
 Z\>z8
 Zod(^?
-[	V_strtod
 [ 0.005714, 0.3, 1.083, 1.083, 2.0, 3.0 ]
 [ 1.0, 1.0, 0.227125, 0.227125, 2.0, 3.0 ]
 [%f,%f,%f,%f,%f,%f]
@@ -7910,6 +7904,7 @@ Zod(^?
 [Index: 
 [K]taM?
 [_?'N
+\	V_strtok
 \$ ATAVAWH
 \$ AVH
 \$ A_A^A\
@@ -8030,14 +8025,16 @@ Zod(^?
 \$xsFH
 \0 >%
 \0 >gM|
+\@RR5GGh
 \A(fD
 \N\O\NZOt)s(r(
 \`>)CS>
 \ffff
-]	V_strtok
+\qdH@Qi:
 ] D9[D
 ])6M>&
 ]0IcM@;
+]5n[7
 ]>)2X
 ]?K[`?n
 ]@A;\$
@@ -8120,6 +8117,7 @@ _stack_properties
 _startSample
 _system_properties
 _voicegraph
+`	V_tand
 ` UAVAWH
 `+!]?
 `.rdata
@@ -8181,7 +8179,7 @@ _voicegraph
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tand
+a	V_tanf
 a&M-=Z]<i*k)n-t&q&p&|
 a7hIw
 a?wSa?\
@@ -8275,7 +8273,6 @@ audio_device_init_params_t::OverrideSpeakerConfig
 audio_input_test_signal
 auto.convar.
 auto_connect_public_fields
-b	V_tanf
 b#M**y`Bl+o(u,{ x$w!
 b?^Cy
 bAllocationCanFit
@@ -8322,6 +8319,7 @@ bool8
 bp(=>?g
 broken pipe
 buffer too small
+c	V_tanhf
 c D8c7trH
 c [1>H'
 c(>\,
@@ -8426,7 +8424,7 @@ curve_defintion_type
 curve_tangent_mode_t
 curve_type
 custom_stack
-d	V_tanhf
+cxh8`
 d$ AV
 d$ E3
 d$ fI
@@ -8481,6 +8479,7 @@ d$xE3
 d$xIc
 d$xLc
 d$xu7H
+d,?`Z
 d8?":7?
 d?000000`?
 d?Z<c?
@@ -8517,7 +8516,6 @@ detail_value_8
 device or resource busy
 df"DDdD
 dffDD$"`
-dh-_[C
 diffmapping
 diffmaterials
 dipolePower
@@ -10033,7 +10031,7 @@ num > 0
 numerator
 n|$pD
 n|$|f
-o%H&7
+o%($7
 o? Bo?
 oD$ f
 oD$@H
@@ -11112,6 +11110,7 @@ tYHcA
 tYHcp
 tZxXH
 t\@:y
+t^9IY%
 t^@8+tY3
 t^@8/tY3
 t^x\H
@@ -11470,6 +11469,7 @@ y\PD>!
 yk 1"""
 ylHc1+
 yslf`ZTMGA;5.
+z$Z.N
 z;u9A
 z?Mbz?H5z?
 zCuAD

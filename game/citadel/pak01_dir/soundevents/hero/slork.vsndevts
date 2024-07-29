@@ -26,7 +26,6 @@
 			"sounds/weapons/slork/spear_fire/metal_10.vsnd",
 			"sounds/weapons/slork/spear_fire/metal_11.vsnd",
 		]
-		vsnd_duration = 1.284688
 	}
 	Slork.Wpn.Spear.Fire.Poison = 
 	{
@@ -38,7 +37,6 @@
 			"sounds/weapons/slork/spear_fire/poison_03.vsnd",
 			"sounds/weapons/slork/spear_fire/poison_04.vsnd",
 		]
-		vsnd_duration = 1.493417
 	}
 	Slork.Wpn.Spear.Impact.Player = 
 	{
@@ -68,7 +66,6 @@
 		[
 			"sounds/weapons/slork/spear_local_impact/spear.vsnd",
 		]
-		vsnd_duration = 0.939313
 	}
 	Slork.Wpn.Spear.Impact.Player.Poison = 
 	{
@@ -80,7 +77,6 @@
 		[
 			"sounds/weapons/slork/spear_local_impact/poison.vsnd",
 		]
-		vsnd_duration = 1.236042
 	}
 	Slork.Wpn.Spear.Whizby = 
 	{
@@ -104,7 +100,6 @@
 			"sounds/weapons/slork/whizbys/base_08.vsnd",
 			"sounds/weapons/slork/whizbys/base_09.vsnd",
 		]
-		vsnd_duration = 0.846167
 	}
 	Slork.Wpn.Impact = 
 	{
@@ -120,13 +115,11 @@
 			"sounds/weapons/slork/impacts/08.vsnd",
 			"sounds/weapons/slork/impacts/09.vsnd",
 		]
-		vsnd_duration = 1.585938
 	}
 	Slork.Wpn.Sprayer.Start = 
 	{
 		base = "Base.Weapon"
 		vsnd_files = "sounds/weapons/slork/sprayer/start.vsnd"
-		vsnd_duration = 0.618312
 	}
 	Slork.Wpn.Sprayer.Lp = 
 	{
@@ -146,7 +139,6 @@
 		delay_rand_min = -6.000000
 		delay_rand_max = 0.000000
 		vsnd_files = "sounds/weapons/slork/sprayer/acid_lp.vsnd"
-		vsnd_duration = 17.457521
 	}
 	Slork.Wpn.Sprayer.Pump.Lp = 
 	{
@@ -157,13 +149,11 @@
 		delay_rand_min = -6.000000
 		delay_rand_max = 0.000000
 		vsnd_files = "sounds/weapons/slork/sprayer/pump_lp.vsnd"
-		vsnd_duration = 13.227250
 	}
 	Slork.Wpn.Sprayer.End = 
 	{
 		base = "Base.Hero.Weapon"
 		vsnd_files = "sounds/weapons/slork/sprayer/end.vsnd"
-		vsnd_duration = 0.705625
 	}
 	Slork.Wpn.Poison.Hit = 
 	{
@@ -172,46 +162,39 @@
 		[
 			"sounds/weapons/slork/dot_tick.vsnd",
 		]
-		vsnd_duration = 0.992021
 	}
 	Slork.Wpn.Zoom.In = 
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		vsnd_files = "sounds/weapons/orion/zoom/in.vsnd"
-		vsnd_duration = 0.591375
 	}
 	Slork.Wpn.Zoom.Out = 
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		pitch = 1.200000
 		vsnd_files = "sounds/weapons/orion/zoom/out.vsnd"
-		vsnd_duration = 0.494687
 	}
 	Slork.Wpn.Reload.Clip.Out = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		vsnd_files = "sounds/weapons/slork/reload/clip_out.vsnd"
-		vsnd_duration = 0.608813
 	}
 	Slork.Wpn.Reload.Clip.In = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		vsnd_files = "sounds/weapons/orion/reload/clip_in.vsnd"
-		vsnd_duration = 0.619875
 	}
 	Slork.Reload.ClipOut = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		volume = 0.000000
 		vsnd_files = "sounds/weapons/slork/reload/clip_in.vsnd"
-		vsnd_duration = 0.619875
 	}
 	Slork.Reload.ClipIn = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		volume = 0.000000
 		vsnd_files = "sounds/weapons/slork/reload/clip_in.vsnd"
-		vsnd_duration = 0.619875
 	}
 	Slork.Weapon.Victim.Modifier.Start = 
 	{
@@ -230,7 +213,6 @@
 		[
 			"sounds/weapons/slork/victim_debuff/start.vsnd",
 		]
-		vsnd_duration = 1.074687
 	}
 	Slork.Weapon.Victim.Modifier.Start.Swt = 
 	{
@@ -240,7 +222,6 @@
 		[
 			"sounds/weapons/slork/victim_debuff/start_swt.vsnd",
 		]
-		vsnd_duration = 1.109271
 	}
 	Slork.Weapon.Victim.Modifier.Lp = 
 	{
@@ -251,7 +232,6 @@
 		[
 			"sounds/weapons/slork/victim_debuff/lp.vsnd",
 		]
-		vsnd_duration = 10.054708
 	}
 	Slork.Weapon.Victim.Modifier.End = 
 	{
@@ -261,7 +241,6 @@
 		[
 			"sounds/weapons/slork/victim_debuff/end.vsnd",
 		]
-		vsnd_duration = 2.206812
 	}
 	Slork.A1.Scald.PreCast = 
 	{
@@ -269,20 +248,17 @@
 		volume = -6
 		pitch = 1.200000
 		vsnd_files = "sounds/abilities/slork/a1_scald/pre_cast.vsnd"
-		vsnd_duration = 2.186604
 	}
 	Slork.A1.Scald.Cast = 
 	{
 		base = "Base.Ability"
 		volume = 0
 		vsnd_files = "sounds/abilities/slork/a1_scald/cast.vsnd"
-		vsnd_duration = 0.871417
 	}
 	Slork.A1.Scald.Proj.Lp = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/slork/a1_scald/proj_lp.vsnd"
-		vsnd_duration = 6.361250
 	}
 	Slork.A1.Scald.Impact = 
 	{
@@ -297,13 +273,11 @@
 	{
 		base = "Base.Hero.Ability.Proj.Impact.3d"
 		vsnd_files = "sounds/abilities/slork/a1_scald/proj_impact.vsnd"
-		vsnd_duration = 0.805833
 	}
 	Slork.A1.Scald.Detonate = 
 	{
 		base = "Base.Hero.Ability.Proj.Impact.3d"
 		vsnd_files = "sounds/abilities/slork/a1_scald/proj_detonate.vsnd"
-		vsnd_duration = 0.873208
 	}
 	Slork.A2.Chomp.Cast.Dash.Cast = 
 	{
@@ -319,21 +293,18 @@
 		base = "Base.Ability"
 		volume = 0
 		vsnd_files = "sounds/abilities/slork/a2_chomp/cast.vsnd"
-		vsnd_duration = 1.563313
 	}
 	Slork.A2.Chomp.Cast.Dash.Cast.Layer = 
 	{
 		base = "Base.Ability"
 		volume = 0
 		vsnd_files = "sounds/abilities/slork/a2_chomp/cast_layer.vsnd"
-		vsnd_duration = 1.349062
 	}
 	Slork.A2.Chomp.Cast.Dash.Miss = 
 	{
 		base = "Base.Ability"
 		volume = 0
 		vsnd_files = "sounds/abilities/slork/a2_chomp/miss.vsnd"
-		vsnd_duration = 1.931563
 	}
 	Slork.A2.Chomp.Target.Hit = 
 	{
@@ -341,7 +312,6 @@
 		volume = 0
 		volume_falloff_min = 25.000000
 		vsnd_files = "sounds/abilities/slork/a2_chomp/target_hit_main.vsnd"
-		vsnd_duration = 1.126708
 	}
 	Slork.A2.Chomp.Captured.Lp = 
 	{
@@ -355,7 +325,6 @@
 		pitch = 0.800000
 		volume = -1.000000
 		vsnd_files = "sounds/weapons/slork/sprayer/acid_lp.vsnd"
-		vsnd_duration = 17.457521
 	}
 	Slork.A2.Chomp.Consumed = 
 	{
@@ -373,21 +342,18 @@
 		base = "Base.Ability"
 		volume = 0
 		vsnd_files = "sounds/abilities/slork/a2_chomp/consume.vsnd"
-		vsnd_duration = 0.592250
 	}
 	Slork.A2.Chomp.Consumed.Chomp = 
 	{
 		base = "Base.Ability"
 		volume = 0
 		vsnd_files = "sounds/abilities/slork/a2_chomp/target_hit_chomp.vsnd"
-		vsnd_duration = 0.791417
 	}
 	Slork.A2.Chomp.Consumed.Bite = 
 	{
 		base = "Base.Ability"
 		volume = 0
 		vsnd_files = "sounds/abilities/slork/a2_chomp/target_hit_bite.vsnd"
-		vsnd_duration = 0.367042
 	}
 	Slork.A2.Chomp.Cast = 
 	{
@@ -413,13 +379,11 @@
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/ghost/a3_malice/channel_lyr1.vsnd"
-		vsnd_duration = 4.297729
 	}
 	Slork.Spray.PreCast.Lyr2 = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/ghost/a3_malice/channel_lyr2.vsnd"
-		vsnd_duration = 0.880542
 	}
 	Slork.Spray.Cast = 
 	{
@@ -434,13 +398,11 @@
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/ghost/a3_malice/cast_lyr1.vsnd"
-		vsnd_duration = 0.456062
 	}
 	Slork.Spray.Cast.Lyr2 = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/ghost/a3_malice/cast_lyr2.vsnd"
-		vsnd_duration = 1.055354
 	}
 	Slork.Spray.Proj.Lp = 
 	{
@@ -456,45 +418,38 @@
 		delay = 0.000000
 		delay_rand_max = 4.000000
 		vsnd_files = "sounds/abilities/ghost/a3_malice/proj_lp.vsnd"
-		vsnd_duration = 7.539166
 	}
 	Slork.Current.Start = 
 	{
 		base = "Base.Hero.Ultimate.3d"
 		vsnd_files = "sounds/abilities/slork/a4_current/start.vsnd"
-		vsnd_duration = 2.969167
 	}
 	Slork.Current.Modifier.Lp = 
 	{
 		base = "Base.Hero.Ultimate.3d"
 		vsnd_files = "sounds/abilities/slork/a4_current/dur_lp.vsnd"
-		vsnd_duration = 9.528042
 	}
 	Slork.Current.Modifier.End = 
 	{
 		base = "Base.Hero.Ultimate.3d"
 		vsnd_files = "sounds/abilities/slork/a4_current/end.vsnd"
-		vsnd_duration = 2.359896
 	}
 	Slork.Current.Countdown.Start = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/gigawatt/a2_static_charge/cast.vsnd"
-		vsnd_duration = 6.420750
 	}
 	Slork.Current.Torrent.Start = 
 	{
 		base = "Base.Hero.Ultimate.3d"
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/wraith/psychic_lift_impact.vsnd"
-		vsnd_duration = 2.714208
 	}
 	Slork.Current.Torrent.End = 
 	{
 		base = "Base.Ability"
 		volume = -9
 		vsnd_files = "sounds/abilities/wraith/psychic_lift_cast.vsnd"
-		vsnd_duration = 2.491437
 	}
 	Slork.Current.Torrent.Lp = 
 	{
@@ -514,7 +469,6 @@
 		volume_fade_out = 0.300000
 		volume = -6
 		vsnd_files = "sounds/abilities/mokrill/a2_burrow/travel_earthy_lp.vsnd"
-		vsnd_duration = 8.900000
 	}
 	Slork.Current.Torrent.Lp2 = 
 	{
@@ -525,14 +479,12 @@
 		volume_fade_out = 0.300000
 		volume = -9
 		vsnd_files = "sounds/abilities/mokrill/a2_burrow/travel_tech_lp.vsnd"
-		vsnd_duration = 18.447416
 	}
 	Slork.Chomp.Cast = 
 	{
 		base = "Base.Ability"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/astro/a4_lasso/cast.vsnd"
-		vsnd_duration = 4.749437
 	}
 	Slork.Invis.Modifier.Start = 
 	{
@@ -550,21 +502,18 @@
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_start_lyr1.vsnd"
-		vsnd_duration = 1.910563
 	}
 	Slork.Invis.Modifier.Start2 = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_start_lyr2.vsnd"
-		vsnd_duration = 1.827479
 	}
 	Slork.Invis.Modifier.Start3 = 
 	{
 		base = "Base.Ability"
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_start_lyr3.vsnd"
-		vsnd_duration = 1.375479
 	}
 	Slork.Invis.Modifier.Lp = 
 	{
@@ -582,7 +531,6 @@
 		volume_fade_in = 0.500000
 		volume_fade_out = 0.200000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_dur_lp_1.vsnd"
-		vsnd_duration = 9.840208
 	}
 	Slork.Invis.Modifier.Lp2 = 
 	{
@@ -591,14 +539,12 @@
 		volume_fade_in = 0.500000
 		volume_fade_out = 0.200000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_dur_lp_1.vsnd"
-		vsnd_duration = 9.840208
 	}
 	Slork.Invis.Modifier.Alert = 
 	{
 		base = "Base.Ability"
 		volume = 0
 		vsnd_files = "sounds/abilities/slork/invis_revealed.vsnd"
-		vsnd_duration = 1.240729
 	}
 	Slork.Ambush.Blast.Fire = 
 	{
@@ -616,7 +562,6 @@
 			"sounds/player/footsteps/slork/enemy/left_04.vsnd",
 			"sounds/player/footsteps/slork/enemy/left_05.vsnd",
 		]
-		vsnd_duration = 0.661375
 	}
 	Slork.Enemy.Footstep.Right = 
 	{
@@ -629,7 +574,6 @@
 			"sounds/player/footsteps/slork/enemy/right_04.vsnd",
 			"sounds/player/footsteps/slork/enemy/right_05.vsnd",
 		]
-		vsnd_duration = 0.670313
 	}
 	Slork.Enemy.Footstep = 
 	{
@@ -647,7 +591,6 @@
 			"sounds/player/footsteps/slork/enemy/right_04.vsnd",
 			"sounds/player/footsteps/slork/enemy/right_05.vsnd",
 		]
-		vsnd_duration = 0.670313
 	}
 	Slork.Footstep.Left = 
 	{
@@ -660,7 +603,6 @@
 			"sounds/player/footsteps/slork/left_04.vsnd",
 			"sounds/player/footsteps/slork/left_05.vsnd",
 		]
-		vsnd_duration = 0.689750
 	}
 	Slork.Footstep.Right = 
 	{
@@ -673,7 +615,6 @@
 			"sounds/player/footsteps/slork/right_04.vsnd",
 			"sounds/player/footsteps/slork/right_05.vsnd",
 		]
-		vsnd_duration = 0.696458
 	}
 	Slork.Footstep = 
 	{
@@ -691,7 +632,6 @@
 			"sounds/player/footsteps/slork/right_04.vsnd",
 			"sounds/player/footsteps/slork/right_05.vsnd",
 		]
-		vsnd_duration = 0.696458
 	}
 	Slork.Team.Footstep.Left = 
 	{
@@ -704,7 +644,6 @@
 			"sounds/player/footsteps/slork/left_04.vsnd",
 			"sounds/player/footsteps/slork/left_05.vsnd",
 		]
-		vsnd_duration = 0.689750
 	}
 	Slork.Team.Footstep.Right = 
 	{
@@ -717,7 +656,6 @@
 			"sounds/player/footsteps/slork/right_04.vsnd",
 			"sounds/player/footsteps/slork/right_05.vsnd",
 		]
-		vsnd_duration = 0.696458
 	}
 	Slork.Team.Footstep = 
 	{
@@ -735,7 +673,6 @@
 			"sounds/player/footsteps/slork/right_04.vsnd",
 			"sounds/player/footsteps/slork/right_05.vsnd",
 		]
-		vsnd_duration = 0.696458
 	}
 	Slork.Dirt.Footstep = 
 	{

@@ -302,6 +302,7 @@
  ^LXjt
  _$7*xq?"
  _GDK	Z
+ _UQ^]K
  _^[H
  _^]H
  a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
@@ -865,6 +866,7 @@ $u"8K
 'pSN.F
 'prB2
 'sp3s
+(	V_log2_uint
 (	]zV
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
@@ -886,7 +888,6 @@ $u"8K
 (0`hpx
 (1O\,n
 (;~8|
-(=:}D
 (A\_][
 (A]A\^[
 (A^A\^[
@@ -1117,7 +1118,6 @@ $u"8K
 (|$p3
 (|$pD
 (|$pL
-)	V_log2_uint
 )	~,Vg
 )!)#)?)G)])e)i)o)u)
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
@@ -2199,7 +2199,8 @@ $u"8K
 /////////////
 /////////////////////////////////////////
 /2GG>!B
-/5=u7
+/5&U7
+/5P`7
 /7v,D9
 /7v3f
 />58d%
@@ -2328,6 +2329,7 @@ $u"8K
 0tU+xc:
 0w0c1
 0}0i1
+1	V_modff
 1!1'1-191C1E1K1]1a1g1m1s1
 1#IND
 1#INF
@@ -2347,7 +2349,6 @@ $u"8K
 1u+@A
 1wsHp
 2	"n@
-2	V_modff
 2)252Y2]2c2k2o2u2w2{2
 2)Ab`
 2+~,@
@@ -2356,7 +2357,7 @@ $u"8K
 220323000000Z
 220801000000Z
 230714000000Z
-240722225252Z0/
+240723235032Z0/
 241009235959Z0a1
 2:3maJ
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -2475,7 +2476,6 @@ $u"8K
 474E4U4W4c4i4m4
 4Ic	I
 4If9,
-4O;vQ
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 4r]A;w
 4zj@1;IJ
@@ -2517,6 +2517,7 @@ $u"8K
 6r1ij
 6tpD4
 7	Fq?
+7	V_powd
 7$U8[
 7&F|If
 7,gm;
@@ -2535,7 +2536,7 @@ $u"8K
 7q|Q@
 7sAP'
 7}'&V
-8	V_powd
+8	V_powf
 8 t>A
 8!83858A8G8K8S8W8_8e8o8q8}8
 8"3hrf
@@ -2625,7 +2626,7 @@ $u"8K
 8ke?;
 8pe7?
 8q-S*]X
-9	V_powf
+9	V_qsort
 9	tYH
 9#9%9)9/9=9A9M9[9k9y9}9
 9)~4H
@@ -2756,7 +2757,7 @@ $u"8K
 9}(~8H
 9}X~'3
 9~(~'3
-:	V_qsort
+:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :#uqH
@@ -2784,7 +2785,6 @@ $u"8K
 :q>*C
 :u(f9Q
 :z'H>
-;	V_qsort_s
 ;	t/H
 ;!;#;-;9;E;S;Y;_;q;{;
 ;"lY7
@@ -2924,6 +2924,7 @@ $u"8K
 <[tQ<a
 <\8@6
 <]u<8C
+<_5,*
 <`t-L
 <`tHH
 <array: %u elements>
@@ -3623,6 +3624,7 @@ $u"8K
 @WE]X
 @X!pf
 @XHcB,;B0u
+@\;k*l9/
 @^8U)zj
 @_RDATA
 @_^[H
@@ -4490,109 +4492,109 @@ C8H9G
 C8H9K(H
 C8L9s@t
 C98G9u
-C:\buildworker\citadel_staging_win64\build\_build_\panorama\_vpc_panorama\default\win64\_msvc_\Retail\panorama.pdb
-C:\buildworker\citadel_staging_win64\build\src\bitmap\imageformat.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\tgaloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\pngloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\svg\svgloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\basesymbol.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\data\imageloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\data\panelimagesource.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\data\panoramavideoplayer.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\input\mousecursor.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\input\uiinput.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\backgroundimage.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\csshelpers.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\fillbrush.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\layoutfile.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\panel2dfactory.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\stylefile.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\stylepropertyfactory.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\layout\uilength.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\localization\localize.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\localization\localize.h
-C:\buildworker\citadel_staging_win64\build\src\panorama\panoramasymbol.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\renderer\styleproperties.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\renderer\styles.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\renderer\uianimationengine.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\renderer\uianimationengine.h
-C:\buildworker\citadel_staging_win64\build\src\panorama\renderer\uirenderengine.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\source2\panoramauiengine.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\source2\renderer\source2surface.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\source2\renderer\source2surface.h
-C:\buildworker\citadel_staging_win64\build\src\panorama\source2\uienginesource2.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\source2\uirenderdevicesource2.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\source2\uisoundsystemsource2.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\source2\uitoplevelwindowsource2.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\uiengine.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\uievent.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\uifileresource.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\uipanel.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama\uipanel.h
-C:\buildworker\citadel_staging_win64\build\src\panorama\uitoplevelwindow.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama_content\layoutcontent.cpp
-C:\buildworker\citadel_staging_win64\build\src\panorama_content\layoutcontent.h
-C:\buildworker\citadel_staging_win64\build\src\public\inputsystem\inputenums.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\vector4d_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\input\iuiinput.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\input\keycodes.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\input\mousecodes.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\layout\uilength.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\localization\dialogvariablevalue.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\localization\ilocalize.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\parseuieventparam.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\renderer\rendercommands.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\renderer\styleproperties.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\uievent.h
-C:\buildworker\citadel_staging_win64\build\src\public\panorama\uijsregistration.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\vertexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\iresourcesystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\weakhandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\schemalib\schemaenumhelpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\isoundopsystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\soundopshared.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\assert_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitstring.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\enum_helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\reliabletimer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlatlas2d.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utldict.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlhashmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlptr.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlptrarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsortvector.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstring.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsymboltable.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\vnotifyapi.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcefile.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\kv3transfer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\sharedmemorychannel.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utltokenizer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\vnotifyapi.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\_build_\panorama\_vpc_panorama\default\win64\_msvc_\Retail\panorama.pdb
+C:\buildworker\citadel_rel_win64\build\src\bitmap\imageformat.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\tgaloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\pngloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\svg\svgloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\basesymbol.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\data\imageloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\data\panelimagesource.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\data\panoramavideoplayer.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\input\mousecursor.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\input\uiinput.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\backgroundimage.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\csshelpers.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\fillbrush.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\layoutfile.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\panel2dfactory.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\stylefile.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\layout\uilength.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\localization\localize.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\localization\localize.h
+C:\buildworker\citadel_rel_win64\build\src\panorama\panoramasymbol.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\renderer\styleproperties.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\renderer\styles.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\renderer\uianimationengine.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\renderer\uianimationengine.h
+C:\buildworker\citadel_rel_win64\build\src\panorama\renderer\uirenderengine.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\source2\panoramauiengine.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\source2\renderer\source2surface.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\source2\renderer\source2surface.h
+C:\buildworker\citadel_rel_win64\build\src\panorama\source2\uienginesource2.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\source2\uirenderdevicesource2.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\source2\uisoundsystemsource2.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\source2\uitoplevelwindowsource2.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\uiengine.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\uievent.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\uifileresource.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\uipanel.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama\uipanel.h
+C:\buildworker\citadel_rel_win64\build\src\panorama\uitoplevelwindow.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama_content\layoutcontent.cpp
+C:\buildworker\citadel_rel_win64\build\src\panorama_content\layoutcontent.h
+C:\buildworker\citadel_rel_win64\build\src\public\inputsystem\inputenums.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\vector4d_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\input\iuiinput.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\input\keycodes.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\input\mousecodes.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\layout\uilength.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\localization\dialogvariablevalue.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\localization\ilocalize.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\parseuieventparam.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\renderer\rendercommands.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\renderer\styleproperties.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\uievent.h
+C:\buildworker\citadel_rel_win64\build\src\public\panorama\uijsregistration.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\iresourcesystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\weakhandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaenumhelpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\isoundopsystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\soundopshared.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\assert_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitstring.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\enum_helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.inl
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\reliabletimer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tslist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlatlas2d.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utldict.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlhashmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utllinkedlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlptr.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlptrarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsortvector.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstring.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsymboltable.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\vnotifyapi.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcefile.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\keyvalues3.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\kv3transfer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\sharedmemorychannel.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utltokenizer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\vnotifyapi.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
 C<;C4A
 C@H98t$H
 C@H9G
@@ -6043,6 +6045,7 @@ Czech
 C|$pH
 C|$xL
 D	!|H
+D	V_sincosf
 D 7D9
 D W?{W
 D g)*
@@ -6910,7 +6913,6 @@ Dutch
 Dynamic vertex buffer failed in CSource2Surface::DrawBasicQuads!!!
 Dynamic vertex buffer failed in CSource2Surface::DrawFancyQuad!!!
 D|$0H
-E	V_sincosf
 E (knN
 E 8F 
 E 9C 
@@ -7412,6 +7414,7 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 ExternalNameForInternalType
 F	8C	
 F	8C	u_A
+F	V_sinf
 F	tj<
 F 9F tDA
 F 9F(r
@@ -7593,7 +7596,6 @@ F{(3?
 F|'|,
 F|w)a]c
 G	A8F	
-G	V_sinf
 G 8C u
 G 9C 
 G 9C u
@@ -8343,6 +8345,7 @@ Huffman code size table overflow
 Huffman table 0x%02x was not defined
 Hungarian
 I	HA	981G'dc
+I	V_snprintf
 I IcA
 I"9|OxTex
 I#I0H
@@ -8669,7 +8672,6 @@ It's unexpected and inefficient to add to a render data list that has already ha
 Italian
 Iw,e=2-b[
 I{i3|G
-J	V_snprintf
 J#}QU^u
 J%%oJ%%o\..r\..r8
 J%f%f%f%f%f%f%f%f
@@ -9588,6 +9590,7 @@ November
 Numbers starting with leading zero must be in octal.
 Nw!qB
 Nz3I#B
+O	V_sscanf
 O H;]
 O!t/H
 O#wjk
@@ -9726,7 +9729,6 @@ Ordered object's memory was modified prior to construction
 Output aborted.
 Output file write error --- out of disk space?
 O~`L{
-P	V_sscanf
 P A@~t
 P!bxo
 P((xP((x
@@ -10308,7 +10310,6 @@ RSA_verify
 RSA_verify_ASN1_OCTET_STRING
 RSA_verify_PKCS1_PSS
 RSA_verify_PKCS1_PSS_mgf1
-RSDS 
 RST%d
 R_T5Y
 RaiseException
@@ -10737,7 +10738,6 @@ SXNET_add_id_ulong
 SXNET_get_id_asc
 SXNET_get_id_ulong
 SXNetID
-S`gj%[
 Salt Length: 0x
 Sampling factors too large for interleaved scan
 Saturday
@@ -11021,6 +11021,7 @@ SystemInputLanguageChanged
 SystemTimeToFileTime
 SystemTimeToTzSpecificLocalTime
 T	PA;
+T	V_stricmp_fast
 T"UdW
 T$ D#
 T$ D)s
@@ -11327,7 +11328,6 @@ Type is already registered:
 Type=
 T~FbT~Fb
 T~a@E
-U	V_stricmp_fast
 U RDn
 U t	Ak
 U$qk.
@@ -11556,6 +11556,7 @@ UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UxB9t
 Uz_G3=
+V	V_strlower_fast
 V'uk:
 V++}V++}
 V07;m
@@ -11751,14 +11752,14 @@ Virtual array controller messed up
 VisBuilder_001
 Vrad3_001
 V~~Vq
-W	V_strlower_fast
 W"Fe~
 W%	s;M@
 W'6S`
+W-kP<
 W3i+,
 W8uDH
 W;()f
-W=^a<
+W=<^<
 W>peSp>9
 W@H1G@A
 WARNING
@@ -11851,6 +11852,7 @@ X!;3;
 X!t5~
 X!}}p|u
 X,,tX,,t4
+X-J$B
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X400Name
 X400Name:<unsupported>
@@ -11966,7 +11968,6 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
-X5Zs0
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -12031,30 +12032,34 @@ XfD;\
 XfD;|
 XqgA+
 X~ '.
-Y%HJ0
-Y%_]0
-Y%_b0
-Y%iu0
+Y%']0
+Y%1v9
+Y%9u0
 Y(HcA H
-Y-;n0
-Y-?P<
-Y-h@	
-Y-zOE
-Y-{q0
+Y-F?0
+Y-H@	
+Y-HV0
+Y-Ki0
+Y-Qx9
+Y-SB;
+Y-jz0
+Y-}@	
 Y0HcR
-Y5@x7
-Y5A`1
-Y5JX<
-Y5fs0
-Y5f}2
-Y5hX1
+Y55h<
+Y5<v9
+Y5J^1
+Y5Lz2
+Y5R\<
+Y5V}2
+Y5d58
+Y5dB;
+Y5o{2
 Y9"SD
 Y93a=7c@
 Y;C;8V
-Y=;Q1
-Y=P78
-Y=r}2
-Y=sx7
+Y="z2
+Y=+W1
+Y=TO1
 Y>kX>M
 Y?33s?
 YD$@f
@@ -12081,6 +12086,7 @@ You need to read the OpenSSL FAQ, http://www.openssl.org/support/faq.html
 YpU_Z
 Ys/MA
 Y|u L
+Z	V_strtod
 Z!?IsArray@Value@v8@@QEBA_NXZ
 Z"T-47
 Z* ,	
@@ -12095,7 +12101,7 @@ Ze2Zh@
 Zod(^?
 Zpm"U
 ZwKiZwKi
-[	V_strtod
+[	V_strtoi64
 [ UWAVI
 [!		|87
 [!%c:
@@ -12128,7 +12134,6 @@ ZwKiZwKi
 [ve,P
 [w\<0
 [y_GE
-\	V_strtoi64
 \$ @8t$(
 \$ ATAVAW
 \$ ATAVAWH
@@ -12307,6 +12312,7 @@ ZwKiZwKi
 \$|fA;
 \$~fA;
 \%02X
+\%zB	
 \1kYL
 \43n7
 \??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
@@ -12324,12 +12330,14 @@ ZwKiZwKi
 \r^mX
 \sG7tPD
 \t3D8T$(t
+]	V_strtoui64
 ]&@+fk:
 ]&g''}
 ])6M>&
 ]0HcE(H
 ]1h=bfz
-]5/\D
+]5#r0
+]5\s0
 ]8d$@
 ]:\|^
 ]>)2X
@@ -12342,7 +12350,6 @@ ZwKiZwKi
 ][LK~lO
 ]i7,>
 ]r}R{
-^	V_strtoui64
 ^,tyI
 ^.om5r
 ^0HcF(H
@@ -12416,7 +12423,6 @@ _}eOk
 `-I	=S'\
 `.rdata
 `28)fk
-`6!sl
 `:zQF
 `;k8|
 `@ `QE
@@ -12527,6 +12533,7 @@ _}eOk
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
+a	V_tanf
 a null shared library handle was used
 a0IcN
 a2d_ASN1_OBJECT
@@ -12695,7 +12702,6 @@ aybSr
 azure
 a|gj(
 a|w9i
-b	V_tanf
 b <= sizeof ctx->buf
 b <= sizeof ctx->final
 b2i_PVK_bio
@@ -14342,6 +14348,7 @@ fG9$Ou
 fHcK0L
 fJBGo
 fUnh\
+fZg?PrsU
 facsimileTelephoneNumber
 fade_out
 failed loading private key
@@ -15761,7 +15768,6 @@ m_stackCompositionLayers.Count() == 0
 m_stackCompositionLayers.Count() == 1
 m_stackCompositionLayers.Count() == 1 && m_stackCompositionLayers[ 0 ] == pRoot
 m_stackCompositionLayers.Count() > 0
-m_s~:U
 m_unSkipUntilContextPopCounter == 0
 m_v8ObjTemplateSetupCur.IsEmpty()
 m_vecCallbacks.HasElement( del )
@@ -16228,7 +16234,7 @@ o KPBf
 o!>d]
 o$$fA
 o$g31
-o%}z=
+o%]z=
 o&1m&
 o*:TJ&
 o,$fD
@@ -16333,7 +16339,6 @@ o^ fB
 o_0fA
 o_pfA
 o` fE
-o`,;E
 o`0fE
 o`@fE
 o`PfE
@@ -18360,7 +18365,6 @@ t$0ff
 t$0fff
 t$0t.
 t$0u)H
-t$7E3
 t$8;;
 t$8@2
 t$8Ai
@@ -18933,7 +18937,6 @@ u]fE9M"uVfE9M2uOfE9MBuHfE9MRuAfE9Mbu:fE9Mru3A
 u_@8w
 u`H9|$Pt5H
 uaD9@
-ub8qm
 ubA9l$
 ucD9{0u]H
 ucHc}
@@ -19721,7 +19724,6 @@ zxNIjo
 |InzT
 |Lu?c
 |T4fD;
-|axy%
 |b=})>
 |c;K(t^A
 |c~=;F

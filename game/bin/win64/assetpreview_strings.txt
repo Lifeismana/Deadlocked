@@ -663,11 +663,11 @@ $prefix_element$
 &YA1H
 &xr(*
 '	5't
+'	V_log10f
 ' ?timerEvent@QPlainTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 ', type<
 ',=?k
 'p7M}f
-(	V_log10f
 ( !pUpAxisAttr && !pszUpAxis ) || ( pszUpAxis && StringHasPrefix( pszUpAxis, "Z" ) )
 ( %1, %2 )
 ( %1, %2, %3, %4% )
@@ -717,26 +717,27 @@ $prefix_element$
 ( z >= 0 ) && ( z < NumSlices() )
 (#%d)
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
-(%""*
-(%*'*
+(%	+*
+(%-n=
 (%1,%2)
+(%?#*
+(%D#*
+(%^!*
+(%b!*
 (%d,%d
 (%d,%d)
 (%d,%d,%d
 (%d,%d,%d,%d
-(%x2*
+(%j&*
 ((width & 1) == 0) && ((height & 1) == 0)
 (*%s*), 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-?2*
-(-f0(
-(-n'*
-(-{z0
-(5)'*
-(5W?>
-(5i+*
-(=h:5
+(5G1*
+(5i&*
+(5w?>
+(=A *
+(=B&*
 (A]A\_[
 (A]^][
 (A^A\^[
@@ -1175,6 +1176,7 @@ $prefix_element$
 )|$pD
 )|$pH
 )|B?d!
+*	V_log2f
 * ?timerEvent@QTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 * ForceRescanOfActiveKeys
 * Rehandling active codes
@@ -1203,7 +1205,7 @@ $prefix_element$
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *pScan == '['
 +	?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
-+	V_log2f
++	V_logd
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
 +"?updateGeometries@QListView@@MEAAXXZ
 +A$Lc
@@ -1240,7 +1242,7 @@ $prefix_element$
 +h->|
 +o'q)}
 +~0+^4
-,	V_logd
+,	V_logf
 , %1 KB
 , %1 MB
 , %1 mip levels, %2
@@ -1266,7 +1268,6 @@ $prefix_element$
 ,X< w
 ,YA1A
 ,YA1H
--	V_logf
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
@@ -2538,7 +2539,6 @@ $prefix_element$
 .xJ>Hf
 .xdata
 .xdata$x
-/%@6'
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
 // 						"BA_INT_DANGER"		break out of this anim only if threatened
@@ -2555,7 +2555,7 @@ $prefix_element$
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5'Z*
+/5oY*
 /<9w-
 />58d%
 /D$4r
@@ -2568,6 +2568,7 @@ $prefix_element$
 /TF<)VGy#WH
 /YA1H
 /]?size@QImage@@QEBA?AVQSize@@XZ
+0	V_modfd
 0 0 -1
 0 0 0
 0 0 0 0
@@ -2576,7 +2577,7 @@ $prefix_element$
 0.0 to 1.0 value indicating the probability of this element being evaluated. Where a value of 0 means the element will never be evaluated and 1.0 means it will always be evaluated
 0123456789abcdefghijklmnopqrstuvwxyz
 0><[cZUg^>
-0>bW=
+0>BW=
 0A;n@|
 0A\^]
 0A\_[
@@ -2642,7 +2643,6 @@ $prefix_element$
 0x%llx
 0x%p = %s '%s'
 0}0i1
-1	V_modfd
 1"?updateGeometry@QWidget@@QEAAXXZ
 1#IND
 1#INF
@@ -2868,7 +2868,7 @@ $prefix_element$
 220323000000Z
 220801000000Z
 230714000000Z
-240722225249Z0/
+240724000021Z0/
 241009235959Z0a1
 255 255 255
 2AnimationLoopingChanged( bool )
@@ -2973,21 +2973,20 @@ $prefix_element$
 6I]Dc
 6OB,n_
 6YA1H
-6ZF.)
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6p7MOf
+7	V_powd
 7&F|If
 70503
 7YA1A
 7YA1H
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powd
+8	V_powf
 8"3hrf
 8-byte data pool
 8/t[H
 80tWD
 80uWfff
-83V]o0
 89G(u0J
 8;B(u0J
 8;G(u4J
@@ -3044,9 +3043,8 @@ $prefix_element$
 8ke?;
 8text
 8vmatt
-9	V_powf
+9	V_qsort
 9)~P3
-95yPS
 97tmD
 98t H
 993u,H
@@ -3128,7 +3126,7 @@ $prefix_element$
 9~P~7
 9~P~;
 9~h~t3
-:	V_qsort
+:	V_qsort_s
 : Add
 : lexer error %d :
 :!e00A
@@ -3142,10 +3140,10 @@ $prefix_element$
 :VP8 tP
 :VP8LtHD
 :VP8X
-;	V_qsort_s
 ;(}{H
 ;.u1L
 ;.|@H
+;=$T:
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;CP}$Hc
@@ -3246,6 +3244,7 @@ $prefix_element$
 >c;j1
 >ff&?
 >jtm}S
+?	V_roundf
 ?!5WOo
 ?#\$ 
 ?+>^m
@@ -3583,7 +3582,7 @@ $prefix_element$
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEAHPEBDZZ
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
-?C:\buildworker\citadel_staging_win64\build\src\bitmap\bitmap.cpp
+?C:\buildworker\citadel_rel_win64\build\src\bitmap\bitmap.cpp
 ?CheckArbitraryPeekGet@CUtlBuffer@@QEAA_NHAEAH@Z
 ?CheckGet@CUtlBuffer@@IEAA_NH@Z
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
@@ -5072,7 +5071,6 @@ $prefix_element$
 ?value@QSettings@@QEBA?AVQVariant@@AEBVQString@@AEBV2@@Z
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 ?{Q}<
-@	V_roundf
 @ A+@
 @ D+@
 @ HcI0H
@@ -5918,290 +5916,290 @@ C89C@}
 C8;C4s
 C8H9C@u
 C8H9C@u	
-C:\buildworker\citadel_staging_win64\build\_build_\assetpreview\_vpc_assetpreview\default\win64\_msvc_\Retail\assetpreview.pdb
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entitycomponent_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityidentity_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityinstance_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityscriptframework_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\ientity2_entityio_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\networkvar_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\variant_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\particleslib\_vpc_particleslib\default\win64\_schema_\release\particles_new_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\particleslib\_vpc_particleslib\default\win64\_schema_\release\particleslib_utils_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_firecursors_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_limitcount_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_timeline_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_execution_history_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_graph_def_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_mathlib_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_runtime_lib_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_test_domain_cpp_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_test_domain_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_testscript_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\turtlegraphics_demo_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_benddeformer_cpp_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_fitonline_cpp_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_grid_cpp_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_pickone_cpp_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_placeinsphere_cpp_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_placemultiple_cpp_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_placeonpath_cpp_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelements_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropfilters_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropoperations_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropvariables_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\src\assetpreview\assetpreview.cpp
-C:\buildworker\citadel_staging_win64\build\src\assetpreview\assetpreviewlive.cpp
-C:\buildworker\citadel_staging_win64\build\src\assetpreview\assetpreviewsystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\assetpreview\assetthumbnailcache.cpp
-C:\buildworker\citadel_staging_win64\build\src\assetpreview\liveembeddedassetsystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\assetpreview\qbuildthumbnailsdialog.cpp
-C:\buildworker\citadel_staging_win64\build\src\assetpreview\qtoolscenecontroller_model.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\colorconversion.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\imageformat.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\psd.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\tgaloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\tiffloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\pngloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\datamodel.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\dependencygraph.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\dmattribute.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\dmelement.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\dmelementdictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\dmelementfactoryhelper.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\dmelementframework.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\dmserializerbinary.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\dmserializerkeyvalues.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\dmserializerkeyvalues2.cpp
-C:\buildworker\citadel_staging_win64\build\src\datamodel\undomanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\dmserializers.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\dmxmodelfileutils.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\importcommentary.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\importkeyvaluebase.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\importmks.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\importsfmv1.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\importsfmv2.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\importsfmv4.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\importtex.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\importvmt.cpp
-C:\buildworker\citadel_staging_win64\build\src\dmserializers\vmap_update.cpp
-C:\buildworker\citadel_staging_win64\build\src\entity2\entityidentity.cpp
-C:\buildworker\citadel_staging_win64\build\src\entity2\entitykeyvalues.cpp
-C:\buildworker\citadel_staging_win64\build\src\entity2\entitysystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\lightinglib\prt.cpp
-C:\buildworker\citadel_staging_win64\build\src\mapdoclib\mapthumbnail.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\color_conversion.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\bezierpath.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\camera.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\colorgradient.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\fuse_expr_compiler.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\fuse_expr_executioncontext.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.g
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr_eval_kv3.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\latticedeformer.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\vectorcollisionutils.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\kmeansclustering.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\quaternion.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\animation.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\animationophistory.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\model.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\modelconfig.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\rendermesh.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\skeletonpose.cpp
-C:\buildworker\citadel_staging_win64\build\src\particleslib\particle_editor_info.cpp
-C:\buildworker\citadel_staging_win64\build\src\particleslib\particle_property.cpp
-C:\buildworker\citadel_staging_win64\build\src\particleslib\particlemgr.cpp
-C:\buildworker\citadel_staging_win64\build\src\particleslib\particles_new.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\femodel.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\animationsystem\activitylist.h
-C:\buildworker\citadel_staging_win64\build\src\public\animationsystem\activitymapping.h
-C:\buildworker\citadel_staging_win64\build\src\public\bitmap\floatbitmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\datamodel\dmattribute.h
-C:\buildworker\citadel_staging_win64\build\src\public\datamodel\dmattributetypes.h
-C:\buildworker\citadel_staging_win64\build\src\public\datamodel\dmattributevar.h
-C:\buildworker\citadel_staging_win64\build\src\public\datamodel\dmelement.h
-C:\buildworker\citadel_staging_win64\build\src\public\entity2\entitykeyvalues.h
-C:\buildworker\citadel_staging_win64\build\src\public\entity2\entitysystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\entity2\variant.h
-C:\buildworker\citadel_staging_win64\build\src\public\materialsystem2\imesh2.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\fuse_expr_executioncontext.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr_eval.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\math_pfns.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\rotation.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\vector4d_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\modellib\modelconfig.h
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\gap_variant.h
-C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_cell.h
-C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_graph_instance.h
-C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_interface.h
-C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_test_domain.h
-C:\buildworker\citadel_staging_win64\build\src\public\pulse_runtime_lib\pulse_type.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\inputbindsystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\qcontrols.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\qdynamicwidget.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\qdynamicwidget_factory.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\qinputbindmenu.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\indexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\vertexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\weakhandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\iscenelayer.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\sceneanimatableobject.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\scenelightobject.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\sceneobject.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\skybox.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\vertexformat.h
-C:\buildworker\citadel_staging_win64\build\src\public\schemalib\schemaclassinfo.h
-C:\buildworker\citadel_staging_win64\build\src\public\schemalib\schemaenumhelpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\smartprops\attributetypes.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\isoundopsystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\soundopshared.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\assert_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitstring.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\byteswap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\enum_helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_ehandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_resource.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_schema_support.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tspointerlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlblockmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlbufferutil.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utldict.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlfixedmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlhandletable.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlhash.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlintrusivelist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlintstring.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmultijobprocessor.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlqueue.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrange.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlslice.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsymboltablelarge.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utltshash.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\vnotifyapi.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\p4helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\public\toolrenderutils\toolrendercontext.h
-C:\buildworker\citadel_staging_win64\build\src\public\toolscene\lightingcontrolrig.h
-C:\buildworker\citadel_staging_win64\build\src\public\toolscene\qtoolscenewidget.h
-C:\buildworker\citadel_staging_win64\build\src\public\toolscene\toolscene_camera.h
-C:\buildworker\citadel_staging_win64\build\src\public\toolutils2\toolhud.h
-C:\buildworker\citadel_staging_win64\build\src\public\toolutils2\toolsassethandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\vphysics2\handles.h
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\gap_argument_list.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\gap_variant.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\gap_weak_handle.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_cell.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_cell_timeline.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_cursor.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_cursor_handle.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_graph_def.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_graph_instance.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_instructions.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_test_domain.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_testscript.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_type.cpp
-C:\buildworker\citadel_staging_win64\build\src\pulse_runtime_lib\pulse_type_library.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\inputbindcodes.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\inputbindsystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qcolordialog.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qcolorsampler.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qdynamicwidget.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qinputbindmanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qsmartcombobox.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qsmartlineedit.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qtabbedstyle.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qwidgetdebugger.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\widgetlist.cpp
-C:\buildworker\citadel_staging_win64\build\src\raytrace\raytrace.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaclassinfo.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaenumhelpers.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaenuminfo.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\evaluatedattribute.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\markupattributeset.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartprop.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartpropconfig.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartpropelement_fitonline.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartpropelement_pickone.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartpropelement_placeinsphere.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartpropelement_placeonpath.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartpropeval.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartpropexpressioneval.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartpropfilters.cpp
-C:\buildworker\citadel_staging_win64\build\src\smartprops\smartpropvariables.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\kv3transfer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\sharedmemorychannel.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utlbufferutil.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utlmultijobprocessor.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utlsoacontainer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utltokenizer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\vnotifyapi.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\utlstreambuffer.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\modelraytracingenvironment.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\modeltrace.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\renderablebinding.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\renderablesceneworld.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\toolmatsysutils.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\toolmodelinstance.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\toolrenderable.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\toolrenderablemgr.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\toolrenderableview.cpp
-C:\buildworker\citadel_staging_win64\build\src\toolrenderutils\toolrendercontext.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\lightingcontrolrig.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\particleslibhost_toolscene.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\qanimpreviewwidget.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\qtoolscenewidget.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_camera.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_collisionmodel.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_hitboxes.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_jointaxes.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_jointnames.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_materialpreview.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_model.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_node.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_particlesystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_skeleton.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_sky.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_textureoverlay.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_texturesequencepreview.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscene_view.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolscene\toolscenetraceenvironment.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolutils2\bindablecamera.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolutils2\modelconfigpreview.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolutils2\qassetselectionwidget.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolutils2\qmodelconfigwidget.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolutils2\toolhud.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolutils2\toolrenderutils.cpp
+C:\buildworker\citadel_rel_win64\build\_build_\assetpreview\_vpc_assetpreview\default\win64\_msvc_\Retail\assetpreview.pdb
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entitycomponent_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityidentity_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityinstance_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityscriptframework_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\ientity2_entityio_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\networkvar_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\variant_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\particleslib\_vpc_particleslib\default\win64\_schema_\release\particles_new_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\particleslib\_vpc_particleslib\default\win64\_schema_\release\particleslib_utils_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_firecursors_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_limitcount_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_timeline_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_execution_history_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_graph_def_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_mathlib_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_runtime_lib_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_test_domain_cpp_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_test_domain_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_testscript_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\turtlegraphics_demo_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_benddeformer_cpp_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_fitonline_cpp_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_grid_cpp_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_pickone_cpp_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_placeinsphere_cpp_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_placemultiple_cpp_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelement_placeonpath_cpp_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropelements_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropfilters_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropoperations_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\smartprops\_vpc_smartprops\default\win64\_schema_\release\smartpropvariables_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\src\assetpreview\assetpreview.cpp
+C:\buildworker\citadel_rel_win64\build\src\assetpreview\assetpreviewlive.cpp
+C:\buildworker\citadel_rel_win64\build\src\assetpreview\assetpreviewsystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\assetpreview\assetthumbnailcache.cpp
+C:\buildworker\citadel_rel_win64\build\src\assetpreview\liveembeddedassetsystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\assetpreview\qbuildthumbnailsdialog.cpp
+C:\buildworker\citadel_rel_win64\build\src\assetpreview\qtoolscenecontroller_model.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\colorconversion.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\imageformat.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\psd.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\tgaloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\tiffloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\pngloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\datamodel.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\dependencygraph.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\dmattribute.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\dmelement.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\dmelementdictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\dmelementfactoryhelper.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\dmelementframework.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\dmserializerbinary.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\dmserializerkeyvalues.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\dmserializerkeyvalues2.cpp
+C:\buildworker\citadel_rel_win64\build\src\datamodel\undomanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\dmserializers.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\dmxmodelfileutils.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\importcommentary.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\importkeyvaluebase.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\importmks.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\importsfmv1.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\importsfmv2.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\importsfmv4.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\importtex.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\importvmt.cpp
+C:\buildworker\citadel_rel_win64\build\src\dmserializers\vmap_update.cpp
+C:\buildworker\citadel_rel_win64\build\src\entity2\entityidentity.cpp
+C:\buildworker\citadel_rel_win64\build\src\entity2\entitykeyvalues.cpp
+C:\buildworker\citadel_rel_win64\build\src\entity2\entitysystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\lightinglib\prt.cpp
+C:\buildworker\citadel_rel_win64\build\src\mapdoclib\mapthumbnail.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\color_conversion.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\bezierpath.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\camera.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\colorgradient.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\fuse_expr_compiler.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\fuse_expr_executioncontext.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\generic_expr.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\generic_expr.g
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\generic_expr_eval_kv3.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\latticedeformer.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\vectorcollisionutils.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\kmeansclustering.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\quaternion.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\animation.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\animationophistory.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\model.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\modelconfig.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\rendermesh.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\skeletonpose.cpp
+C:\buildworker\citadel_rel_win64\build\src\particleslib\particle_editor_info.cpp
+C:\buildworker\citadel_rel_win64\build\src\particleslib\particle_property.cpp
+C:\buildworker\citadel_rel_win64\build\src\particleslib\particlemgr.cpp
+C:\buildworker\citadel_rel_win64\build\src\particleslib\particles_new.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\femodel.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\animationsystem\activitylist.h
+C:\buildworker\citadel_rel_win64\build\src\public\animationsystem\activitymapping.h
+C:\buildworker\citadel_rel_win64\build\src\public\bitmap\floatbitmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\datamodel\dmattribute.h
+C:\buildworker\citadel_rel_win64\build\src\public\datamodel\dmattributetypes.h
+C:\buildworker\citadel_rel_win64\build\src\public\datamodel\dmattributevar.h
+C:\buildworker\citadel_rel_win64\build\src\public\datamodel\dmelement.h
+C:\buildworker\citadel_rel_win64\build\src\public\entity2\entitykeyvalues.h
+C:\buildworker\citadel_rel_win64\build\src\public\entity2\entitysystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\entity2\variant.h
+C:\buildworker\citadel_rel_win64\build\src\public\materialsystem2\imesh2.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\fuse_expr_executioncontext.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\generic_expr.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\generic_expr_eval.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\vector4d_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\modellib\modelconfig.h
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\gap_variant.h
+C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_cell.h
+C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_graph_instance.h
+C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_interface.h
+C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_test_domain.h
+C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_type.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\inputbindsystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qcontrols.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qdynamicwidget.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qdynamicwidget_factory.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qinputbindmenu.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\indexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\weakhandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\iscenelayer.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\sceneanimatableobject.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\scenelightobject.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\sceneobject.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\skybox.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\vertexformat.h
+C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaclassinfo.h
+C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaenumhelpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\smartprops\attributetypes.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\isoundopsystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\soundopshared.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\assert_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitstring.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\enum_helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.inl
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_ehandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_resource.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_schema_support.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tslist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tspointerlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlblockmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlbufferutil.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utldict.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlfixedmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlhandletable.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlhash.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlintrusivelist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlintstring.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utllinkedlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmultijobprocessor.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlqueue.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrange.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlslice.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsymboltablelarge.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utltshash.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\vnotifyapi.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\p4helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\public\toolrenderutils\toolrendercontext.h
+C:\buildworker\citadel_rel_win64\build\src\public\toolscene\lightingcontrolrig.h
+C:\buildworker\citadel_rel_win64\build\src\public\toolscene\qtoolscenewidget.h
+C:\buildworker\citadel_rel_win64\build\src\public\toolscene\toolscene_camera.h
+C:\buildworker\citadel_rel_win64\build\src\public\toolutils2\toolhud.h
+C:\buildworker\citadel_rel_win64\build\src\public\toolutils2\toolsassethandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\vphysics2\handles.h
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\gap_argument_list.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\gap_variant.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\gap_weak_handle.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_cell.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_cell_timeline.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_cursor.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_cursor_handle.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_graph_def.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_graph_instance.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_instructions.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_test_domain.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_testscript.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_type.cpp
+C:\buildworker\citadel_rel_win64\build\src\pulse_runtime_lib\pulse_type_library.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\inputbindcodes.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\inputbindsystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qcolordialog.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qcolorsampler.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qdynamicwidget.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qinputbindmanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qsmartcombobox.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qsmartlineedit.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qtabbedstyle.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qwidgetdebugger.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\widgetlist.cpp
+C:\buildworker\citadel_rel_win64\build\src\raytrace\raytrace.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schemaclassinfo.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schemaenumhelpers.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schemaenuminfo.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schematype.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\evaluatedattribute.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\markupattributeset.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartprop.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartpropconfig.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartpropelement_fitonline.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartpropelement_pickone.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartpropelement_placeinsphere.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartpropelement_placeonpath.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartpropeval.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartpropexpressioneval.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartpropfilters.cpp
+C:\buildworker\citadel_rel_win64\build\src\smartprops\smartpropvariables.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\keyvalues3.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\kv3transfer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\sharedmemorychannel.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utlbufferutil.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utlmultijobprocessor.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utlsoacontainer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utltokenizer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\vnotifyapi.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\utlstreambuffer.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\modelraytracingenvironment.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\modeltrace.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\renderablebinding.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\renderablesceneworld.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\toolmatsysutils.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\toolmodelinstance.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\toolrenderable.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\toolrenderablemgr.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\toolrenderableview.cpp
+C:\buildworker\citadel_rel_win64\build\src\toolrenderutils\toolrendercontext.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\lightingcontrolrig.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\particleslibhost_toolscene.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\qanimpreviewwidget.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\qtoolscenewidget.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_camera.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_collisionmodel.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_hitboxes.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_jointaxes.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_jointnames.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_materialpreview.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_model.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_node.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_particlesystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_skeleton.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_sky.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_textureoverlay.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_texturesequencepreview.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscene_view.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolscene\toolscenetraceenvironment.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolutils2\bindablecamera.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolutils2\modelconfigpreview.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolutils2\qassetselectionwidget.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolutils2\qmodelconfigwidget.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolutils2\toolhud.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolutils2\toolrenderutils.cpp
 C<;C4A
 C@+C8
 CActivityToSequenceMapping::HashValueType::HashValueType
@@ -6765,7 +6763,7 @@ CIndexDataBase<unsigned short>::AdvanceIndexCount
 CIndexDataBase<unsigned short>::Index
 CIndexDataBase<unsigned short>::~CIndexDataBase
 CInputBindManager::HandleInputCode recursion depth got too deep.
-CKMeansClustering::AssignVectorsToClusters(), C:\buildworker\citadel_staging_win64\build\src\mathlib\kmeansclustering.cpp:155
+CKMeansClustering::AssignVectorsToClusters(), C:\buildworker\citadel_rel_win64\build\src\mathlib\kmeansclustering.cpp:155
 CKMeansClustering::FindClusters
 CKMeansClustering::PopulateEmptyClusters
 CKV3ArrayIteratorView<0>::CKV3ArrayIteratorView
@@ -6922,7 +6920,7 @@ CParticleMgr::RemoveEffect
 CParticleMgr::RemoveEffectInternal
 CParticleMgr::SerialPostSimulate
 CParticleMgr::SimulateParticles
-CParticleMgr::SimulateParticles(), C:\buildworker\citadel_staging_win64\build\src\particleslib\particlemgr.cpp:1156
+CParticleMgr::SimulateParticles(), C:\buildworker\citadel_rel_win64\build\src\particleslib\particlemgr.cpp:1156
 CParticleMgr::SimulateParticles::<lambda_2>::operator ()
 CParticleProperty
 CParticleProperty::AddControlPoint
@@ -9404,6 +9402,7 @@ Cursor[ ptr:%p | id:%d | graph:%p ]: Register observer:%d
 Custom Color
 Custom Colors
 Cx~!H
+D	V_sincosf
 D W?{W
 D!l$xA
 D#C|D
@@ -9805,7 +9804,7 @@ D9}hu
 D9~(D
 D;$(t
 D;$7|
-D;%S*f
+D;%c*f
 D;D$(|
 D;D$(}CJ
 D;D$p|
@@ -10097,7 +10096,7 @@ Dump all new particles, optional name substring.
 Dump all simulating particles, optional name substring.
 DumpModeDecode: Not enough data for scanline %d
 Dynamic Configs
-E	V_sincosf
+E	V_sind
 E A84$u
 E D9{(
 E(HcH
@@ -10480,7 +10479,7 @@ ExternalNameForInternalType
 ExtraSamples
 Extraneous token
 E|$xH
-F	V_sind
+F	V_sinf
 F	tj<
 F 9F(r
 F A;F
@@ -10626,15 +10625,15 @@ FloatBitMap_t::RowPtrOrDummy
 FloatBitMap_t::WriteToBuffer
 FloatBitMap_t::WriteToBuffer(961): Unsupported color format "%s", skipping!
 FloatBitMap_t::WriteToBuffer: Received improper buffer size %s (expecting %s), skipping!
-FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1638
-FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1750
+FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1638
+FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1750
 FloatBitMap_t::WriteToBufferBGRA
 FloatBitMap_t::WriteToBufferDXT_atitc
 FloatBitMap_t::WriteToBufferDXT_atitc(1018): Error! Temp texture is %d bytes when ATI's lib requires %d bytes!
 FloatBitMap_t::WriteToBufferDXT_atitc(1103): Unsupported output color format "%s"!
 FloatBitMap_t::WriteToBufferDXT_atitc(1112): Error! Allocated %llu bytes when ATI's lib requires %d bytes!
 FloatBitMap_t::WriteToBufferDXT_atitc(1120): Error %d returned from ATI_TC_ConvertTexture()!
-FloatBitMap_t::WriteToBufferETC(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1874
+FloatBitMap_t::WriteToBufferETC(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1874
 FloatBitMap_t::WriteToBufferI
 FloatBitMap_t::WriteToBufferIA
 FloatBitMap_t::WriteToBufferR16
@@ -10697,7 +10696,6 @@ Function "%s" takes %i parameters, but %i were given
 Functions not supported in this evaluator (%s)
 FxD9x
 FxH9<
-G	V_sinf
 G 9G(
 G H9,
 G channel not found!
@@ -10708,7 +10706,7 @@ G4L9sXu
 G8,7u
 G89G@
 G89G@}8
-G8@8-&
+G8@8-F
 G8uaA
 G:B8D
 G@I+?I
@@ -10936,6 +10934,7 @@ G|$HH
 G|$XA
 H	CxH
 H	GHI
+H	V_sinhf
 H A+H
 H ATAUH
 H D+H
@@ -10965,10 +10964,11 @@ H9/u+9
 H90t7
 H93t	H
 H94(t
-H952D>
-H957(H
-H95GM?
-H95NC>
+H957D>
+H95RD>
+H95W(H
+H95gM?
+H95nC>
 H97u+A
 H98t$H
 H98t2
@@ -11097,7 +11097,7 @@ HandleIntDerived
 HardCancel
 HasAllocatedMemory( nDestAttr )
 Hc+;k
-Hc-8?Z
+Hc-H?Z
 Hc.;n
 Hc/;o
 Hc/E3
@@ -11268,7 +11268,7 @@ How much should the surface normal up direction influence the final orientation.
 Hr>wL
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-I	V_sinhf
+I	V_snprintf
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
 I I;4
 I could not work out what I was expecting, like so many of us these days!
@@ -11770,7 +11770,6 @@ It doesn't make sense to have attachment type PATTACH_WORLDORIGIN and have an en
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
 ItemIsolateView
 ItemIsolateVignette
-J	V_snprintf
 J%f%f%f%f%f%f%f%f
 J8B:s
 J8G:s
@@ -11901,7 +11900,6 @@ L$ USVWATAUAVAWH
 L$ USVWATAVAWH
 L$ USWATAUAVAWH
 L$ USWAVH
-L$ USWH
 L$ UVAUAVH
 L$ UVWATAUAVAWH
 L$ UVWATAVAWH
@@ -12064,7 +12062,6 @@ L$xff
 L+d$PI+
 L9#t	H
 L9#u/H
-L9%sI_
 L9&t	H
 L9+t	H
 L93t	H
@@ -12073,6 +12070,7 @@ L97u	L9
 L97vH
 L9;t	H
 L9;tHA
+L9=!`Q
 L9AHA
 L9aHA
 L9d$ u
@@ -12802,6 +12800,7 @@ NumSub
 NumToggle
 Number of instances of this object and its children to be placed.
 NumberOfInks
+O	V_sscanf
 O!t/H
 O*9y]
 O0HcW 
@@ -12985,7 +12984,7 @@ Overall grid dimension along Y axis.
 OverlayProjectionDirection
 Override
 Overwrite With Current
-P	V_sscanf
+P	V_sscanf_s
 P 9_p
 P D+P
 P HcE
@@ -13339,7 +13338,6 @@ Push To Global Browser
 PushSelectionToGlobalBrowser
 Pz}b!
 P~6-U~/W
-Q	V_sscanf_s
 Q$HcA
 Q2XXR
 Q5rHg,>
@@ -14380,6 +14378,7 @@ SwizzlePlanarScanlineToInterleaved
 Symbol table:  %d entries %llu bytes
 Synchronous - wait for the method to fully complete before returning
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
+T	V_stricmp_fast
 T$ E3
 T$ Ei
 T$ H;
@@ -14469,8 +14468,10 @@ T$pfD
 T$pfff
 T$xD;{
 T$xE3
-T%ye*
-T=Sh*
+T%*w*
+T%:x*
+T%oe*
+T5}e*
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
@@ -14668,7 +14669,6 @@ Tuesday
 Turtle Graphics Domain
 TurtleGraphics
 Typesafe Int
-U	V_stricmp_fast
 U I;U(
 U%	>G
 U(fff
@@ -14926,6 +14926,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
+V	V_strlower_fast
 V ?toolTip@QAction@@QEBA?AVQString@@XZ
 V6'?C
 V6E>`"(5
@@ -15129,8 +15130,9 @@ VisBuilder_001
 Visit Developer Help URL
 VisitAndModifyElement_R
 Vrad3_001
-W	V_strlower_fast
 W%	s;M@
+W5C$%
+W5oz&
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?save@QPixmap@@QEBA_NPEAVQIODevice@@PEBDH@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -15211,11 +15213,12 @@ X UAVAWH
 X UVWH
 X to the Y power
 X!t5~
-X%e7,
 X-Axis Size
-X5/LP
-X5a3 
-X5ip7
+X-m7,
+X5):,
+X5BY*
+X5E0,
+X5GGP
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrush@QPalette@@QEAAXW4ColorGroup@1@W4ColorRole@1@AEBVQBrush@@@Z
@@ -15260,23 +15263,18 @@ Xd$ D
 Xd$HD
 X|$ A
 X|$8E
-Y%L8,
+Y%hw*
 Y%sQ,
-Y- 5*
+Y-=7,
 Y-Axis Size
-Y5':,
-Y5*\*
-Y5*l*
-Y51Z*
-Y5A:,
-Y5BZ*
-Y5MH'
-Y5fl*
-Y5~]*
+Y-`4*
+Y51^&
+Y59:,
+Y5f^*
+Y5r[*
+Y5yY*
 Y9"SD
-Y=M\*
-Y=`/(
-Y=gx,
+Y="\*
 Y>kX>M
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -15311,6 +15309,7 @@ Yield, Resume=%s
 YpU_Z
 Y|$8H
 Y|$@I
+Z	V_strtod
 Z* ,	
 Z-Axis Size
 Z?setItalic@QFont@@QEAAX_N@Z
@@ -15346,7 +15345,6 @@ ZoomForwardBack2D
 ZoomForwardBack3D
 Zpm"U
 [	UoA
-[	V_strtod
 [ 0, 1 ] Value specifying the location along the local x-axis the bend will occur around
 [ 0, 1 ] Value specifying the location on the gradient to pick the color from.
 [ AVH
@@ -15379,7 +15377,6 @@ Zpm"U
 [NoWidget]
 [RETURN R%d]
 [RETURN]
-[S)fBPzD
 [Test] Explicit Yes/No Outflow
 [Test] Int Value 50
 [Test] Random Yes/No Outflow
@@ -15519,8 +15516,7 @@ Zpm"U
 \$xu3M
 \$xu7H
 \$|E2
-\5N3 
-\5\=<
+\5t8<
 \?setWidth@QPen@@QEAAXH@Z
 \D$0A
 \D$DH
@@ -15689,6 +15685,7 @@ _volumeatlas_
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a	V_tanf
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a"X&i
 a0IcN
@@ -15809,7 +15806,6 @@ autoTime
 auto_time
 averageColor
 axisSystem
-b	V_tanf
 b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b?^Cy
 bAccepted
@@ -15922,6 +15918,7 @@ busy_anim
 busy_sequence
 buttons
 by this version of libtiff.
+c	V_tanhf
 c [1>H'
 c(>\,
 c0&>`
@@ -16048,7 +16045,6 @@ curve info
 curvetypes
 custom
 custom_colors
-d	V_tanhf
 d"?validate@QDoubleSpinBox@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 d$ D!
 d$ D9d$0|LH
@@ -17884,51 +17880,53 @@ n|$`fA
 o H9o
 o KPBf
 o$$fA
-o%+$+
-o%+9+
-o%9"+
-o%:y+
-o%?.+
-o%D[+
-o%G2,
-o%Jk+
-o%Mo+
-o%mXD
-o%zr+
-o%|E+
-o%~}D
+o%/B,
+o%3vD
+o%81+
+o%M4+
+o%Q'+
 o,$fD
-o--$+
-o-7|+
-o->"+
-o-?F+
-o-O(+
-o-Si+
-o-ee+
-o-noG
-o-npG
-o-pH/
-o-u[+
-o-w=+
-o-|;,
+o- v+
+o-*y,
+o-77+
+o-=P+
+o-Gu+
+o-NlG
+o-NmG
+o-R++
+o-V'+
+o-[j+
 o47Lc
-o5'*+
-o5/pG
-o51D+
-o5<r+
-o5OoG
-o5QH+
-o5Ti+
-o5fI/
-o5x?+
-o=#a+
-o=>r+
-o=Ng+
-o=Nk+
-o=`Y+
-o=pP+
-o=r1+
-o=~2,
+o5 A+
+o5"y,
+o5,y+
+o5/lG
+o55-+
+o581+
+o5>P+
+o5@E+
+o5K2,
+o5SA+
+o5UE+
+o5_r/
+o5vZ+
+o5x|+
+o="u+
+o=#S+
+o=)>+
+o=*X+
+o=>y+
+o=I|+
+o=Jb+
+o=M++
+o=Sd/
+o=So+
+o=fh+
+o=g@+
+o=q;/
+o=u]+
+o=xZ+
+o=}'+
 oAPfD
 oD$ f
 oD$ fA
@@ -18007,6 +18005,7 @@ p*W4H
 p0R^G'
 p7M}f
 p;Y>u
+p>nV=
 p?ati_compress_wrapper.dll
 pA]][
 pA]_^][
@@ -18166,7 +18165,6 @@ pPrefixElement != nullptr
 pPrevClusterInFreeList != nullptr
 pPrevFocusWidget
 pProxy
-pQh`+
 pQuaternions
 pRecord
 pRecord->m_BindingType.CanReinterpretAs( bindingType, pScope )
@@ -18421,7 +18419,7 @@ s AWH
 s WATAUAVAWH
 s f9s"~
 s%D;k
-s(H95h<S
+s(H95x<S
 s(H9s
 s(HcO
 s0@8~(t
@@ -18927,7 +18925,7 @@ tU;\$0tH
 tVJcD
 tWH9X
 tX~V2
-tY@85j
+tY@85
 tYfff
 t\HcL$`H
 t]H9X
@@ -19386,6 +19384,7 @@ xcoord
 xlH;{
 xoH;~
 xs == 0
+xtFV>D 
 xtHcC
 xzHcC
 y0tXH

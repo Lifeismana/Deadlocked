@@ -14,13 +14,12 @@
 			"sounds/weapons/chrono/chrono_weapon_fire_05.vsnd",
 			"sounds/weapons/chrono/chrono_weapon_fire_06.vsnd",
 		]
-		vsnd_duration = 1.416780
 	}
 	Chrono.Wpn.Impact = 
 	{
 		base = "Base.Bullet.Impact"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Chrono.Weapon.Reload = 
 	{
@@ -34,7 +33,6 @@
 		base = "Base.Ability.Telegraph"
 		volume = 1.000000
 		vsnd_files = "sounds/abilities/chrono/chrono_kinetic_carbine_fire_01.vsnd"
-		vsnd_duration = 5.761406
 	}
 	Chrono.KineticCarbine.Charge.Lp = 
 	{
@@ -45,21 +43,18 @@
 		volume_offset_player = -6.000000
 		volume = 3.000000
 		vsnd_files = "sounds/abilities/chrono/chrono_kinetic_carbine_charge_lp.vsnd"
-		vsnd_duration = 7.846326
 	}
 	Chrono.KineticCarbine.Charge.Begin = 
 	{
 		base = "Base.Ability.Telegraph"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/chrono/a3_time_bank/accel.vsnd"
-		vsnd_duration = 3.273021
 	}
 	Chrono.KineticCarbine.Charge.Full = 
 	{
 		base = "Base.Ability.Telegraph"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/chrono/a2_chrono_swap/pre_cast.vsnd"
-		vsnd_duration = 4.534229
 	}
 	Chrono.KineticCarbine.Charge.Expire = 
 	{
@@ -67,20 +62,17 @@
 		pitch = 0.800000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/chrono/chrono_kinetic_carbine_charge_expire.vsnd"
-		vsnd_duration = 5.852354
 	}
 	Chrono.TimeTrap.Cast = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/chrono/a1_time_trap/cast.vsnd"
-		vsnd_duration = 1.406833
 	}
 	Chrono.TimeTrap.Armed = 
 	{
 		base = "Base.Ability"
 		volume = -12.000000
 		vsnd_files = "sounds/abilities/chrono/a1_time_trap/armed.vsnd"
-		vsnd_duration = 1.659688
 	}
 	Ability.TimeTrap.Active.lp = 
 	{
@@ -91,14 +83,12 @@
 		delay_rand_max = 0.000000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/chrono/a1_time_trap/lp2.vsnd"
-		vsnd_duration = 1.480250
 	}
 	Ability.TimeTrap.Trigger = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/chrono/a1_time_trap/explode.vsnd"
-		vsnd_duration = 2.151146
 	}
 	Ability.TimeBank.GoFast = 
 	{
@@ -107,7 +97,6 @@
 		volume_falloff_min = 300.000000
 		volume_falloff_max = 1200.000000
 		vsnd_files = "sounds/abilities/chrono/a3_time_bank/accel.vsnd"
-		vsnd_duration = 3.273021
 	}
 	Ability.TimeBank.GoSlow = 
 	{
@@ -117,7 +106,6 @@
 		volume_falloff_max = 900.000000
 		volume_fade_out = 0.500000
 		vsnd_files = "sounds/abilities/chrono/a3_time_bank/slow.vsnd"
-		vsnd_duration = 2.381208
 	}
 	Ability.TimeBank.Full = 
 	{
@@ -125,7 +113,6 @@
 		volume = -1.000000
 		pitch = 1.010000
 		vsnd_files = "sounds/abilities/chrono/a3_time_bank/slow.vsnd"
-		vsnd_duration = 2.381208
 	}
 	Ability.TimeBank.lp = 
 	{
@@ -159,7 +146,6 @@
 		base = "Base.Ability.Ult"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/chrono/a2_chrono_swap/pre_cast.vsnd"
-		vsnd_duration = 4.534229
 	}
 	Chrono.Swap.Cast = 
 	{
@@ -175,7 +161,6 @@
 		base = "Base.Ability.Ult"
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/chrono/a2_chrono_swap/activate.vsnd"
-		vsnd_duration = 2.532542
 	}
 	Ability.ChronoSwap.Activate_02 = 
 	{
@@ -183,7 +168,6 @@
 		volume = -9.000000
 		pitch = 1.300000
 		vsnd_files = "sounds/abilities/chrono/a2_chrono_swap/activate_layer.vsnd"
-		vsnd_duration = 2.767479
 	}
 	Ability.ChronoSwap.lp = 
 	{
@@ -194,7 +178,6 @@
 		delay_rand_min = -1.000000
 		delay_rand_max = 0.000000
 		vsnd_files = "sounds/abilities/chrono/a2_chrono_swap/lp.vsnd"
-		vsnd_duration = 6.893125
 	}
 	Chrono.ChronoSwap.Proj.Lp = 
 	{
@@ -202,21 +185,18 @@
 		pitch = 1.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/chrono/a2_chrono_swap/proj_lp.vsnd"
-		vsnd_duration = 5.858750
 	}
 	Chrono.ChronosSphere.PreCast = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/chrono/a4_chrono_sphere/pre_cast.vsnd"
-		vsnd_duration = 2.973583
 	}
 	Chrono.ChronosSphere.Cast = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/chrono/a4_chrono_sphere/activate.vsnd"
-		vsnd_duration = 1.707833
 	}
 	Chrono.ChronosSphere.Lp = 
 	{
@@ -227,14 +207,12 @@
 		delay_rand_max = 0.000000
 		volume_fade_out = 0.200000
 		vsnd_files = "sounds/abilities/chrono/a4_chrono_sphere/lp.vsnd"
-		vsnd_duration = 6.285438
 	}
 	Chrono.ChronosSphere.End = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/chrono/a4_chrono_sphere/end.vsnd"
-		vsnd_duration = 1.794562
 	}
 	Chrono.Footstep = 
 	{
@@ -259,7 +237,6 @@
 			"sounds/player/footsteps/chrono/paradox_footstep_14.vsnd",
 			"sounds/player/footsteps/chrono/paradox_footstep_15.vsnd",
 		]
-		vsnd_duration = 1.310272
 	}
 	Chrono.MovementFoley = 
 	{
@@ -292,7 +269,6 @@
 			"sounds/player/foley/chrono/chrono_jump_land_08.vsnd",
 			"sounds/player/foley/chrono/chrono_jump_land_09.vsnd",
 		]
-		vsnd_duration = 0.729500
 	}
 	Chrono.SlideGetUp = 
 	{
@@ -309,7 +285,6 @@
 			"sounds/player/foley/chrono/chrono_jump_land_08.vsnd",
 			"sounds/player/foley/chrono/chrono_jump_land_09.vsnd",
 		]
-		vsnd_duration = 0.729500
 	}
 	Chrono.Melee.SwingShort = 
 	{
@@ -341,7 +316,6 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
-		vsnd_duration = 1.062200
 	}
 	Chrono.Melee.SwingLong = 
 	{
@@ -374,7 +348,6 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
-		vsnd_duration = 1.399773
 	}
 	Chrono.ChronosSphere.LpTarget = 
 	{
@@ -385,7 +358,6 @@
 		delay_rand_max = 0.000000
 		volume_fade_out = 0.200000
 		vsnd_files = "sounds/abilities/chrono/a4_chrono_sphere/lp.vsnd"
-		vsnd_duration = 6.285438
 	}
 	Chrono.Death = 
 	{
@@ -398,7 +370,6 @@
 			"sounds/vo/paradox/emote/paradox_pain_death_04.vsnd",
 			"sounds/vo/paradox/emote/paradox_pain_death_05.vsnd",
 		]
-		vsnd_duration = 0.932744
 	}
 	Chrono.Effort = 
 	{
@@ -414,7 +385,6 @@
 			"sounds/vo/chrono/emote/paradox_effort_general_07.vsnd",
 			"sounds/vo/chrono/emote/paradox_effort_general_08.vsnd",
 		]
-		vsnd_duration = 0.452630
 	}
 	Chrono.Effort.Dash = 
 	{
@@ -428,7 +398,6 @@
 			"sounds/vo/chrono/emote/paradox_effort_dash_05.vsnd",
 			"sounds/vo/chrono/emote/paradox_effort_dash_06.vsnd",
 		]
-		vsnd_duration = 0.641202
 	}
 	Chrono.Effort.Melee = 
 	{
@@ -447,7 +416,6 @@
 			"sounds/vo/chrono/emote/paradox_effort_melee_small_05.vsnd",
 			"sounds/vo/chrono/emote/paradox_effort_melee_small_06.vsnd",
 		]
-		vsnd_duration = 1.197098
 	}
 	Chrono.TimeWall.Create = 
 	{
@@ -455,7 +423,6 @@
 		volume = 0.000000
 		volume_mult = 0.500000
 		vsnd_files = "sounds/abilities/chrono/a4_chrono_sphere/activate.vsnd"
-		vsnd_duration = 1.707833
 	}
 	Chrono.TimeWall.ChargeUp = 
 	{
@@ -463,7 +430,6 @@
 		volume = 0.000000
 		volume_mult = 0.500000
 		vsnd_files = "sounds/abilities/chrono/a4_chrono_sphere/pre_cast.vsnd"
-		vsnd_duration = 2.973583
 	}
 	Chrono.Reload.ClipOut = 
 	{
@@ -472,7 +438,6 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/chrono/reload/clipout.vsnd"
-		vsnd_duration = 0.320363
 	}
 	Chrono.Reload.ClipIn = 
 	{
@@ -481,7 +446,6 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/chrono/reload/end.vsnd"
-		vsnd_duration = 0.514943
 	}
 	Chrono.Reload.Twirl_01 = 
 	{
@@ -490,7 +454,6 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.000000
 		vsnd_files = "sounds/weapons/chrono/reload/twirl_01.vsnd"
-		vsnd_duration = 0.367166
 	}
 	Chrono.Reload.Twirl_02 = 
 	{
@@ -499,7 +462,6 @@
 		pitch_rand_min = 0.000000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/chrono/reload/twirl_02.vsnd"
-		vsnd_duration = 0.296984
 	}
 	Chrono.ZoomIn = 
 	{
@@ -513,7 +475,6 @@
 			"sounds/weapons/dynamo/zoom/in_4.vsnd",
 			"sounds/weapons/dynamo/zoom/in_5.vsnd",
 		]
-		vsnd_duration = 0.433667
 	}
 	Chrono.ZoomOut = 
 	{
@@ -527,7 +488,6 @@
 			"sounds/weapons/dynamo/zoom/out_4.vsnd",
 			"sounds/weapons/dynamo/zoom/out_5.vsnd",
 		]
-		vsnd_duration = 0.274687
 	}
 	Chrono.Footstep.Multi = 
 	{
@@ -564,6 +524,5 @@
 			"sounds/player/footsteps/chrono/paradox_hourglass_14.vsnd",
 			"sounds/player/footsteps/chrono/paradox_hourglass_15.vsnd",
 		]
-		vsnd_duration = 0.812358
 	}
 }

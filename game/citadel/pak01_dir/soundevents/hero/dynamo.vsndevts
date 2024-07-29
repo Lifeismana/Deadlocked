@@ -17,7 +17,6 @@
 			"sounds/weapons/dynamo/dynamo_weapon_fire_09.vsnd",
 			"sounds/weapons/dynamo/dynamo_weapon_fire_10.vsnd",
 		]
-		vsnd_duration = 1.376667
 	}
 	Dynamo.Wpn.Impact = 
 	{
@@ -35,7 +34,6 @@
 			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-009.vsnd",
 			"sounds/weapons/dynamo/dynamo_weapon_impacts_groupA_soft-010.vsnd",
 		]
-		vsnd_duration = 0.650998
 	}
 	Sumo.ZoomIn = 
 	{
@@ -58,7 +56,6 @@
 			"sounds/weapons/dynamo/zoom/in_4.vsnd",
 			"sounds/weapons/dynamo/zoom/in_5.vsnd",
 		]
-		vsnd_duration = 0.433667
 	}
 	Sumo.ZoomIn.Foley = 
 	{
@@ -76,7 +73,6 @@
 			"sounds/player/foley/dynamo/light_08.vsnd",
 			"sounds/player/foley/dynamo/light_09.vsnd",
 		]
-		vsnd_duration = 0.894792
 	}
 	Sumo.ZoomOut = 
 	{
@@ -99,7 +95,6 @@
 			"sounds/weapons/dynamo/zoom/out_4.vsnd",
 			"sounds/weapons/dynamo/zoom/out_5.vsnd",
 		]
-		vsnd_duration = 0.274687
 	}
 	Sumo.ZoomOut.Foley = 
 	{
@@ -117,19 +112,18 @@
 			"sounds/player/foley/dynamo/light_08.vsnd",
 			"sounds/player/foley/dynamo/light_09.vsnd",
 		]
-		vsnd_duration = 0.894792
 	}
 	Sumo.Reload.ClipOut = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Sumo.Reload.ClipIn = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Dynamo.Wpn.Reload.Clip.Out = 
 	{
@@ -137,7 +131,6 @@
 		volume = 0.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/weapons/dynamo/reload/clip_out.vsnd"
-		vsnd_duration = 0.626396
 	}
 	Dynamo.Wpn.Reload.Clip.In = 
 	{
@@ -150,7 +143,6 @@
 			"sounds/weapons/dynamo/reload/clip_in_3.vsnd",
 			"sounds/weapons/dynamo/reload/clip_in_4.vsnd",
 		]
-		vsnd_duration = 1.167625
 	}
 	Dynamo.Wpn.Reload.Foley.Locked = 
 	{
@@ -163,7 +155,6 @@
 			"sounds/weapons/dynamo/reload/clip_in_3.vsnd",
 			"sounds/weapons/dynamo/reload/clip_in_4.vsnd",
 		]
-		vsnd_duration = 1.167625
 	}
 	Dynamo.Wpn.Whizby = 
 	{
@@ -182,7 +173,6 @@
 			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-009.vsnd",
 			"sounds/weapons/dynamo/whizby/dynamo_weapon_whizby_groupB-010.vsnd",
 		]
-		vsnd_duration = 0.398639
 	}
 	Dynamo.Footstep = 
 	{
@@ -202,7 +192,6 @@
 			"sounds/player/footsteps/dynamo/dynamo_step_10.vsnd",
 			"sounds/player/footsteps/dynamo/dynamo_step_11.vsnd",
 		]
-		vsnd_duration = 0.321202
 	}
 	Dynamo.Stomp.PreCast = 
 	{
@@ -214,7 +203,6 @@
 		spread_min_value = 0.000000
 		volume = 1.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_prestomp.vsnd"
-		vsnd_duration = 0.377075
 	}
 	Dynamo.Stomp.Cast = 
 	{
@@ -237,7 +225,6 @@
 		spread_min_value = 0.000000
 		volume = 1.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_cast.vsnd"
-		vsnd_duration = 1.933674
 	}
 	Dynamo.Stomp.Explode = 
 	{
@@ -245,7 +232,6 @@
 		mixer_mixgroup = "All"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_hit.vsnd"
-		vsnd_duration = 1.559161
 	}
 	Sumo.ChargedTackle.Cast = 
 	{
@@ -267,7 +253,6 @@
 		pitch_rand_max = 0.020000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/dynamo/a2_charged_tackle/cast_lyr1.vsnd"
-		vsnd_duration = 2.991771
 	}
 	Sumo.ChargedTackle.Cast.Lyr2 = 
 	{
@@ -279,7 +264,6 @@
 		volume = -6.000000
 		pitch = 1.100000
 		vsnd_files = "sounds/abilities/dynamo/a2_charged_tackle/cast_lyr2.vsnd"
-		vsnd_duration = 3.488500
 	}
 	Sumo.ChargedTackle.Cast.Lyr3 = 
 	{
@@ -291,7 +275,6 @@
 		volume = -6.000000
 		pitch = 1.100000
 		vsnd_files = "sounds/abilities/dynamo/a2_charged_tackle/cast_lyr3.vsnd"
-		vsnd_duration = 1.375583
 	}
 	Dynamo.ChargedTackle.Channel = 
 	{
@@ -309,21 +292,18 @@
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/dynamo/a2_charged_tackle/cast_lyr1.vsnd"
-		vsnd_duration = 2.991771
 	}
 	Dynamo.ChargedTackle.Channel.Lyr2 = 
 	{
 		base = "Base.Ability"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/dynamo/a2_charged_tackle/cast_lyr2.vsnd"
-		vsnd_duration = 3.488500
 	}
 	Dynamo.ChargedTackle.Channel.Lyr3 = 
 	{
 		base = "Base.Ability"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/dynamo/a2_charged_tackle/cast_lyr3.vsnd"
-		vsnd_duration = 1.375583
 	}
 	Dynamo.ChargedTackle.Impact = 
 	{
@@ -340,7 +320,6 @@
 		volume_falloff_min = 100.000000
 		volume_falloff_max = 1800.000000
 		vsnd_files = "sounds/abilities/dynamo/a2_charged_tackle/impact_lyr1.vsnd"
-		vsnd_duration = 0.935500
 	}
 	Dynamo.ChargedTackle.Impact.Lyr2 = 
 	{
@@ -348,7 +327,6 @@
 		volume_falloff_min = 100.000000
 		volume_falloff_max = 1800.000000
 		vsnd_files = "sounds/abilities/dynamo/a2_charged_tackle/impact_lyr1.vsnd"
-		vsnd_duration = 0.935500
 	}
 	Dynamo.ChargedTackle.Step = 
 	{
@@ -363,7 +341,6 @@
 			"sounds/abilities/dynamo/a2_charged_tackle/step_03.vsnd",
 			"sounds/abilities/dynamo/a2_charged_tackle/step_04.vsnd",
 		]
-		vsnd_duration = 0.879388
 	}
 	Dynamo.Nikuman.Cast = 
 	{
@@ -384,7 +361,6 @@
 		spread_max_value = 1.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_cast.vsnd"
-		vsnd_duration = 2.789751
 	}
 	Dynamo.Nikuman.Lp = 
 	{
@@ -392,7 +368,6 @@
 		volume = -3.000000
 		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_loop.vsnd"
-		vsnd_duration = 6.689433
 	}
 	Dynamo.Nikuman.End = 
 	{
@@ -403,7 +378,6 @@
 		pitch_rand_min = -0.025000
 		pitch_rand_max = 0.025000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_end.vsnd"
-		vsnd_duration = 1.412993
 	}
 	Dynamo.Singularity.Cast = 
 	{
@@ -422,7 +396,6 @@
 		limiter_match_event = 1.000000
 		volume = -2.000000
 		vsnd_files = "sounds/abilities/dynamo/a4_singularity/cast_lyr1.vsnd"
-		vsnd_duration = 3.206938
 	}
 	Dynamo.Singularity.Cast.Lyr2 = 
 	{
@@ -432,7 +405,6 @@
 		limiter_match_event = 1.000000
 		volume = -2.000000
 		vsnd_files = "sounds/abilities/dynamo/a4_singularity/cast_lyr2.vsnd"
-		vsnd_duration = 3.999000
 	}
 	Dynamo.Singularity.Lp = 
 	{
@@ -446,7 +418,6 @@
 		volume_fade_out = 0.300000
 		pitch = 1.000000
 		vsnd_files = "sounds/abilities/dynamo/a4_singularity/lp.vsnd"
-		vsnd_duration = 5.040750
 	}
 	Dynamo.Singularity.End = 
 	{
@@ -455,7 +426,6 @@
 		volume_falloff_max = 1750.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/a4_singularity/end.vsnd"
-		vsnd_duration = 2.554333
 	}
 	Sumo.MovementFoley = 
 	{
@@ -488,7 +458,6 @@
 			"sounds/player/foley/dynamo/jump_land_08.vsnd",
 			"sounds/player/foley/dynamo/jump_land_09.vsnd",
 		]
-		vsnd_duration = 1.084771
 	}
 	Sumo.Melee.SwingShort = 
 	{
@@ -520,7 +489,6 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
-		vsnd_duration = 1.062200
 	}
 	Sumo.Melee.SwingLong = 
 	{
@@ -553,7 +521,6 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
-		vsnd_duration = 1.399773
 	}
 	Dynamo.Singularity.LpTarget = 
 	{
@@ -567,7 +534,6 @@
 		pitch = 1.000000
 		vsnd_play_loop_release = true
 		vsnd_files = "sounds/abilities/dynamo/a4_singularity/cast_lyr2.vsnd"
-		vsnd_duration = 3.999000
 	}
 	Dynamo.Death = 
 	{
@@ -586,7 +552,6 @@
 			"sounds/vo/dynamo/emote/prof_pain_death_10.vsnd",
 			"sounds/vo/dynamo/emote/prof_pain_death_11.vsnd",
 		]
-		vsnd_duration = 1.873719
 	}
 	Dynamo.Effort = 
 	{
@@ -599,7 +564,6 @@
 			"sounds/vo/dynamo/emote/prof_effort_general_04.vsnd",
 			"sounds/vo/dynamo/emote/prof_effort_general_05.vsnd",
 		]
-		vsnd_duration = 0.623968
 	}
 	Dynamo.Effort.Melee = 
 	{
@@ -615,7 +579,6 @@
 			"sounds/vo/dynamo/emote/prof_effort_melee_small_07.vsnd",
 			"sounds/vo/dynamo/emote/prof_effort_melee_small_08.vsnd",
 		]
-		vsnd_duration = 1.051134
 	}
 	Dynamo.Effort.Dash = 
 	{
@@ -637,14 +600,12 @@
 			"sounds/vo/dynamo/emote/prof_effort_dash_13.vsnd",
 			"sounds/vo/dynamo/emote/prof_effort_dash_14.vsnd",
 		]
-		vsnd_duration = 0.523107
 	}
 	Dynamo.A1.Stomp.Cast = 
 	{
 		base = "Base.Ability"
 		volume = 1.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_cast.vsnd"
-		vsnd_duration = 1.933674
 	}
 	Dynamo.A1.Stomp.PreCast = 
 	{
@@ -691,14 +652,12 @@
 				1.000000,
 			],
 		]
-		vsnd_duration = 0.377075
 	}
 	Dynamo.A1.Stomp.Explode = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a1_stomp_hit.vsnd"
-		vsnd_duration = 1.559161
 	}
 	Dynamo.A3.Heal.Cast = 
 	{
@@ -706,7 +665,6 @@
 		volume = 3.000000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_cast.vsnd"
-		vsnd_duration = 2.789751
 	}
 	Dynamo.A3.Heal.Loop = 
 	{
@@ -715,7 +673,6 @@
 		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_loop.vsnd"
-		vsnd_duration = 6.689433
 	}
 	Dynamo.A3.Heal.End = 
 	{
@@ -723,7 +680,6 @@
 		volume = -7.000000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_end.vsnd"
-		vsnd_duration = 1.412993
 	}
 	Dynamo.A4.Singularity.Cast = 
 	{
@@ -732,7 +688,6 @@
 		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a4_singularity_cast_01.vsnd"
-		vsnd_duration = 5.050567
 	}
 	Dynamo.A4.Singularity.End = 
 	{
@@ -740,7 +695,6 @@
 		volume = 1.000000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a4_singularity_end_01.vsnd"
-		vsnd_duration = 2.017755
 	}
 	Dynamo.A2.Quantum.Cast = 
 	{
@@ -750,7 +704,6 @@
 		volume_enemy_targeting_boost = 0.000000
 		volume_offset_opponent = -3.000000
 		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_cast.vsnd"
-		vsnd_duration = 4.448163
 	}
 	Dynamo.A2.Quantum.Select = 
 	{
@@ -758,7 +711,6 @@
 		volume = -5.000000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_select.vsnd"
-		vsnd_duration = 2.390952
 	}
 	Dynamo.A2.Quantum.End = 
 	{
@@ -766,7 +718,6 @@
 		volume = -4.000000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_end.vsnd"
-		vsnd_duration = 1.740227
 	}
 	Dynamo.A2.Quantum.Deselect = 
 	{
@@ -774,7 +725,6 @@
 		volume = -3.000000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/dynamo/dyanmo_a2_quantum_deselect.vsnd"
-		vsnd_duration = 0.810159
 	}
 	Dynamo.A3.Heal.Cast.Multi = 
 	{
@@ -791,6 +741,5 @@
 		delay = 0.100000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/player/heal_medium_a.vsnd"
-		vsnd_duration = 2.223674
 	}
 }

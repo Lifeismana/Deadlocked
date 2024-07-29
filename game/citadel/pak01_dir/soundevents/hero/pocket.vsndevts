@@ -14,13 +14,12 @@
 			"sounds/weapons/pocket/pocket_weapon_fire_05.vsnd",
 			"sounds/weapons/pocket/pocket_weapon_fire_06.vsnd",
 		]
-		vsnd_duration = 2.523401
 	}
 	Synth.Wpn.Impact = 
 	{
 		base = "Base.Bullet.Impact"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Synth.Wpn.Reload.ClipIn = 
 	{
@@ -29,14 +28,12 @@
 		pitch_rand_min = 0.000000
 		pitch_rand_max = 0.000000
 		vsnd_files = "sounds/gameplay/shared_reloads/shared_reload_clip_in.vsnd"
-		vsnd_duration = 1.292426
 	}
 	Synth.Wpn.Reload.Shotgun.In = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		volume = 1.000000
 		vsnd_files = "sounds/weapons/abrams/reload/clip_in.vsnd"
-		vsnd_duration = 1.039146
 	}
 	Synth.InertialShockwave.Cast = 
 	{
@@ -53,7 +50,6 @@
 	{
 		base = "Base.Mod.Tier3.3d"
 		vsnd_files = "sounds/mods/tech/ice_blast/cast_lyr1.vsnd"
-		vsnd_duration = 3.503771
 	}
 	Synth.InertialShockwave.Cast.Lyr2 = 
 	{
@@ -62,20 +58,17 @@
 		volume_falloff_min = 100.000000
 		volume_falloff_max = 3000.000000
 		vsnd_files = "sounds/mods/tech/ice_blast/cast_lyr2.vsnd"
-		vsnd_duration = 4.817896
 	}
 	Synth.InertialShockwave.Cast.Lyr3 = 
 	{
 		base = "Base.Mod.Tier3.3d"
 		vsnd_files = "sounds/mods/tech/ice_blast/cast_lyr3.vsnd"
-		vsnd_duration = 4.989062
 	}
 	Synth.A1.Plasma.Flux.Cast = 
 	{
 		base = "Base.Ability"
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/synth/a1_plasma_flux/cast.vsnd"
-		vsnd_duration = 1.972125
 	}
 	Synth.A1.Plasma.Flux.Proj.Lp = 
 	{
@@ -84,7 +77,6 @@
 		volume = -3.000000
 		volume_fade_in = 0.500000
 		vsnd_files = "sounds/abilities/synth/a2_flying_cloak/proj_lp.vsnd"
-		vsnd_duration = 15.751202
 	}
 	Pocket.A2.Flying.Cloak.Caster.Lp = 
 	{
@@ -92,7 +84,6 @@
 		volume = -9.000000
 		pitch = 0.950000
 		vsnd_files = "sounds/abilities/synth/a2_flying_cloak/player_cloak_lp.vsnd"
-		vsnd_duration = 5.896417
 	}
 	Synth.A1.Plasma.Flux.Proj.Expire = 
 	{
@@ -101,14 +92,12 @@
 		volume_falloff_max = 2900.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/synth/a2_flying_cloak/expire.vsnd"
-		vsnd_duration = 1.388503
 	}
 	Synth.A1.Plasma.Flux.Teleport.Arrive = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/synth/a1_plasma_flux/teleport_arrive.vsnd"
-		vsnd_duration = 1.207354
 	}
 	Synth.A1.Plasma.Flux.DPS.Start = 
 	{
@@ -118,7 +107,6 @@
 		volume_falloff_min = 6.000000
 		volume_falloff_max = 1600.000000
 		vsnd_files = "sounds/abilities/shiv/a1_thrown_shiv/debuff_start.vsnd"
-		vsnd_duration = 2.102187
 	}
 	Synth.A1.Plasma.Flux.DPS.Hit = 
 	{
@@ -126,7 +114,6 @@
 		volume = -9.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/abilities/synth/a2_flying_cloak/dot_hit_indicator.vsnd"
-		vsnd_duration = 0.832479
 	}
 	Synth.A1.Plasma.Flux.DPS.Hit.Pop = 
 	{
@@ -134,7 +121,6 @@
 		volume = -12.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/abilities/shiv/a1_thrown_shiv/dagger_hit_poof.vsnd"
-		vsnd_duration = 3.441708
 	}
 	Synth.A1.Plasma.Flux.DPS.Hit.Stab = 
 	{
@@ -142,13 +128,11 @@
 		volume = -12.000000
 		pitch = 0.700000
 		vsnd_files = "sounds/abilities/shiv/a1_thrown_shiv/dagger_hit_stab.vsnd"
-		vsnd_duration = 1.349521
 	}
 	Synth.A1.Plasma.Flux.DPS.Hit.Stab2 = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/shiv/shiv_dash_impact.vsnd"
-		vsnd_duration = 2.424438
 	}
 	Synth.A1.Plasma.Flux.Impact = 
 	{
@@ -171,7 +155,6 @@
 		volume_falloff_max = 3933.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/orion/a1_charged_shot/impact_lyr1.vsnd"
-		vsnd_duration = 1.216000
 	}
 	Synth.A1.Plasma.Flux.Impact.Lyr2 = 
 	{
@@ -185,14 +168,12 @@
 		volume_falloff_max = 3933.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/orion/a1_charged_shot/impact_lyr3.vsnd"
-		vsnd_duration = 0.843375
 	}
 	Synth.A1.Plasma.Flux.Tier3.Mod.Start = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/synth/a1_plasma_flux/t3_mod_start.vsnd"
-		vsnd_duration = 1.173458
 	}
 	Synth.A1.Plasma.Flux.Tier3.Mod.Lp = 
 	{
@@ -200,13 +181,11 @@
 		volume = -18.000000
 		pitch = 1.200000
 		vsnd_files = "sounds/abilities/synth/a1_plasma_flux/t3_mod_lp.vsnd"
-		vsnd_duration = 7.590375
 	}
 	Synth.A1.Plasma.Flux.Tier3.Mod.End = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/synth/a1_plasma_flux/t3_mod_end.vsnd"
-		vsnd_duration = 0.933625
 	}
 	Synth.Barrage.Fire = 
 	{
@@ -264,7 +243,6 @@
 		volume = 0.000000
 		pitch = 0.900000
 		vsnd_files = "sounds/abilities/synth/a2_grasp/cast.vsnd"
-		vsnd_duration = 2.524833
 	}
 	Synth.A2.Grasp.Cast.Layer = 
 	{
@@ -273,7 +251,6 @@
 		pitch = 0.900000
 		volume_falloff_min = 10.000000
 		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/exp_pop.vsnd"
-		vsnd_duration = 1.554729
 	}
 	Synth.A2.Grasp.Target.Lock = 
 	{
@@ -291,7 +268,6 @@
 		volume_falloff_min = 1.000000
 		volume_falloff_max = 1300.000000
 		vsnd_files = "sounds/abilities/synth/a2_grasp/target_lock_start.vsnd"
-		vsnd_duration = 1.431813
 	}
 	Synth.A2.Grasp.Target.Lock.layer = 
 	{
@@ -300,7 +276,6 @@
 		volume_falloff_min = 1.000000
 		volume_falloff_max = 1300.000000
 		vsnd_files = "sounds/abilities/synth/a2_grasp/target_lock_start_lyr.vsnd"
-		vsnd_duration = 1.165021
 	}
 	Synth.A2.Grasp.Expire = 
 	{
@@ -309,14 +284,12 @@
 		volume_falloff_min = 1.000000
 		volume_falloff_max = 1300.000000
 		vsnd_files = "sounds/abilities/synth/a2_grasp/target_lock_expire.vsnd"
-		vsnd_duration = 0.553625
 	}
 	Synth.A3.Blitz = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/synth/a3_blitz/cast.vsnd"
-		vsnd_duration = 4.301813
 	}
 	Synth.Affliction.Cast = 
 	{
@@ -332,7 +305,6 @@
 		pitch = 1.000000
 		volume = 1.000000
 		vsnd_files = "sounds/abilities/synth/affliction/cast_05_impact.vsnd"
-		vsnd_duration = 1.889792
 	}
 	Synth.A4.Cosmic.Box.Exp = 
 	{
@@ -351,7 +323,6 @@
 	{
 		base = "Base.Ability.Ult"
 		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/exp_impact.vsnd"
-		vsnd_duration = 2.046292
 	}
 	Synth.A4.Cosmic.Box.Exp.Phaser = 
 	{
@@ -359,7 +330,6 @@
 		volume = 0.000000
 		volume_falloff_min = 1.000000
 		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/exp_phaser.vsnd"
-		vsnd_duration = 0.682604
 	}
 	Synth.A4.Cosmic.Box.Exp.Tail = 
 	{
@@ -367,7 +337,6 @@
 		volume = 0.000000
 		volume_falloff_min = 1.000000
 		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/expire.vsnd"
-		vsnd_duration = 2.794146
 	}
 	Synth.A4.Cosmic.Box.Exp.Pop = 
 	{
@@ -375,7 +344,6 @@
 		volume = 0.000000
 		volume_falloff_min = 1.000000
 		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/exp_pop.vsnd"
-		vsnd_duration = 1.554729
 	}
 	Synth.A4.Cosmic.Box.Expire = 
 	{
@@ -384,7 +352,6 @@
 		pitch = 1.200000
 		volume_falloff_max = 2000.000000
 		vsnd_files = "sounds/abilities/synth/a4_cosmic_box/exp_tail.vsnd"
-		vsnd_duration = 4.933625
 	}
 	Synth.Footstep = 
 	{
@@ -426,7 +393,6 @@
 			"sounds/player/footsteps/hero_enemy/08.vsnd",
 			"sounds/player/footsteps/hero_enemy/09.vsnd",
 		]
-		vsnd_duration = 1.141633
 	}
 	Synth.Wpn.Reload.End = 
 	{
@@ -435,7 +401,6 @@
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.000000
 		vsnd_files = "sounds/weapons/astro/reload/clip_out.vsnd"
-		vsnd_duration = 0.608813
 	}
 	Synth.Wpn.Reload.ShellIn = 
 	{
@@ -459,7 +424,6 @@
 		pitch_rand_min = 0.000000
 		pitch_rand_max = 0.000000
 		vsnd_files = "sounds/weapons/pocket/reload/reload_start.vsnd"
-		vsnd_duration = 0.787755
 	}
 	Pocket.Reload.End = 
 	{
@@ -469,7 +433,6 @@
 		pitch_rand_max = 0.000000
 		pitch = 0.900000
 		vsnd_files = "sounds/weapons/pocket/reload/reload_end.vsnd"
-		vsnd_duration = 0.876054
 	}
 	Pocket.Reload.Flip_02 = 
 	{
@@ -480,7 +443,6 @@
 		pitch = 1.000000
 		mixer_mixlayer_amount_manual = 0.000000
 		vsnd_files = "sounds/weapons/pocket/reload/reload_flip_02.vsnd"
-		vsnd_duration = 0.403628
 	}
 	Pocket.Reload.Flip_03 = 
 	{
@@ -491,7 +453,6 @@
 		pitch = 1.000000
 		mixer_mixlayer_amount_manual = 0.000000
 		vsnd_files = "sounds/weapons/pocket/reload/reload_flip_03.vsnd"
-		vsnd_duration = 0.429773
 	}
 	Pocket.Reload.Flip_04 = 
 	{
@@ -502,7 +463,6 @@
 		pitch = 1.000000
 		mixer_mixlayer_amount_manual = 0.000000
 		vsnd_files = "sounds/weapons/pocket/reload/reload_flip_04.vsnd"
-		vsnd_duration = 0.380113
 	}
 	Pocket.Reload.Flip_01 = 
 	{
@@ -513,7 +473,6 @@
 		pitch = 1.000000
 		mixer_mixlayer_amount_manual = 0.000000
 		vsnd_files = "sounds/weapons/pocket/reload/reload_flip_01.vsnd"
-		vsnd_duration = 0.498390
 	}
 	Pocket.Death = 
 	{
@@ -527,7 +486,6 @@
 			"sounds/vo/pocket/emote/pocket_pain_death_05.vsnd",
 			"sounds/vo/pocket/emote/pocket_pain_death_06.vsnd",
 		]
-		vsnd_duration = 0.827823
 	}
 	Synth.A4.Cosmic.Box.Cast = 
 	{
@@ -539,7 +497,6 @@
 		spread_max = 250.000000
 		spread_min_value = 0.831492
 		vsnd_files = "sounds/abilities/pocket/pocket_affliction_cast.vsnd"
-		vsnd_duration = 4.175034
 	}
 	Synth.Affliction.Debuff_Lp = 
 	{

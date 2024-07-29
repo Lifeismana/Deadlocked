@@ -1,4 +1,5 @@
 																
+		V_fseek
 		cfFF                      - collision function mask
 		client                    - draw client world(s)
 		debugName substring       - filter by substring in debug name
@@ -23,10 +24,8 @@
 	6p7MOf
 	<SuuA
 	E;<$
-	V_fopenUTF8
 	V_fread
 	V_frexpf
-	V_fseek
 	V_fseeki64
 	V_ftell
 	V_vsnprintf
@@ -374,27 +373,24 @@ $tIs1
 ( vChildAnchor - vParentAnchor ).Length() < 0.001f
 ( vNormal - vNormalOnHull * flDistance ).Length() < 0.001f
 (%.4g,%.4g)
-(%C!"
-(%Zz/
 (%d,%d)
-(%sM1
-(%v6$
-(-2{/
-(-6<1
-(-BN1
-(-Y(;
-(-YE1
-(5Iz/
-(5Xq/
-(5o8;
-(5vo/
+(%jz/
+(%s];
+(%v_;
+(-B{/
+(-F<1
+(-RN1
+(-i(;
+(-iE1
+(50p"
+(5Yz/
+(5hq/
 (;^ |
-(="z/
-(=9r/
-(=B/1
-(=N?$
-(=Vp/
-(=lN1
+(=2z/
+(=Ir/
+(=R/1
+(=fp/
+(=|N1
 (A;)A
 (A\^][
 (A]A\^[
@@ -989,6 +985,7 @@ $tIs1
 +f)>0'
 +h->|
 +o'q)}
+,	V_logf
 , Fully Rigid
 ,/<-w
 ,0<	w&H
@@ -998,7 +995,6 @@ $tIs1
 ,YA1I
 ,dF9<
 ,hfD;z
--	V_logf
 -----------------
 -----------------END
 -YA1H
@@ -1024,7 +1020,6 @@ $tIs1
 ../src/utils/physics_testbed/benchmarks/
 .00cfg
 .40t8Ic
-.55a$
 .?AUAsyncProcessResult@CBaseIntrospectedToKV3TypeManager@@
 .?AUCMorphSetData@@
 .?AV<lambda_1>@?1??CreateMotionControlCallbacksJob@CRnParticleRope@@AEAAX_NAEAVCJobContinuation@@1@Z@
@@ -1211,12 +1206,11 @@ $tIs1
 .xJ>Hf
 .xdata
 .xdata$x
+/%.$#
 /%u.rnsave
-/-3p"
-/5Cr	
-/5jx;
+/5H8>
 /6sRH
-/=Z*"
+/=x# 
 />58d%
 /@Hs?
 /@Ls{
@@ -1233,6 +1227,7 @@ $tIs1
 /D$Ds
 /D$Dv
 /D$Hs
+/E&&?
 /HcM8
 /SPrX
 /SPvB
@@ -1309,19 +1304,19 @@ $tIs1
 0w0c1
 0x%08X 
 0}0i1
+1	V_modff
 1.2.11
 130801120000Z
 1<.	/>:
 1A26b
 1L;|$P
 1wsHp
-2	V_modff
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240722225224Z0/
+240723235156Z0/
 241009235959Z0a1
 2<iu	H
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1374,6 +1369,7 @@ $tIs1
 7L#6H
 7YA1H
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powf
 8/t[H
 8A\^][
 8A\_[]
@@ -1403,7 +1399,7 @@ $tIs1
 8YA1H
 8_u	H
 8nu	H
-9	V_powf
+9	V_qsort
 9)~P3
 9*tsD
 97~2H
@@ -1521,7 +1517,7 @@ $tIs1
 9~8~NH
 9~PE3
 9~xv1
-:	V_qsort
+:	V_qsort_s
 :!L$ 0
 :!d$L0
 :!|$ 0E
@@ -1529,10 +1525,9 @@ $tIs1
 ::string literal
 ::{ default arg#
 :YA1H
-;	V_qsort_s
 ; tris:
 ;"><b>Trigger</b> Touch
-;-6R=
+;-FR=
 ;3}%H
 ;?0123456789:;<=>?
 ;C(s(I
@@ -1765,6 +1760,7 @@ $tIs1
 ?InternalPop@CTSListBase@@AEAAPEAUTSLNodeBase_t@@XZ
 ?InternalPush@CTSListBase@@AEAAXPEAUTSLNodeBase_t@@@Z
 ?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
+?JFUJO
 ?L9Q t
 ?LoadKV3@@YA_NPEAVCKeyValues3Context@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBD@Z
 ?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBD@Z
@@ -2229,6 +2225,7 @@ AddAnimationAttraction
 AddGoalAttraction
 AddPtrAssociation
 Address range refers to non-existent CU at 0x%llx
+AdoBj
 Agg data %d: %p (%d parts, crc 0x%08X)
 Aggregate Count
 AhD9T
@@ -2403,231 +2400,231 @@ C8;C4s
 C8H9C8s
 C8I9B8s
 C8I9C8s
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animattachment_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animcapture_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animgraphids_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animskeleton_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\boneconstraints_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\footdefinition_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\footmotion_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\model_old_disk_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\modelconfig_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\modelenums_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\morphsetdata_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\rendermesh_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\surfaceproperties_resource_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\vphysx_collisionmesh_resource_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\dop26_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\fejigglebone_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\femodel_desc_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\femodel_morph_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\femodeldesc_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\physicsresourcehelpers_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\serialize_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\vphysics2\_vpc_vphysics2\default\win64\_msvc_\Retail\vphysics2.pdb
-C:\buildworker\citadel_staging_win64\build\_build_\vphysics2\_vpc_vphysics2\default\win64\_schema_\release\constraints_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\vphysics2\_vpc_vphysics2\default\win64\_schema_\release\vphysics_saverestore_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\src\common\dwarf_file.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\dwarf_symbols.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\dwarf_undecorate.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\stackhelpers\stackhelpers.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\stackhelpers\stackhelpers_virtualmachine_translation.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\stackhelpers\stackhelpers_vsymbolmodule_translation.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\vsymbolmodule.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\vsymbolmodule.h
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\colorgradient.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\feagglomerator.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\vectorcollisionutils.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\gjk.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\quaternion.cpp
-C:\buildworker\citadel_staging_win64\build\src\meshutils\dualhull.cpp
-C:\buildworker\citadel_staging_win64\build\src\meshutils\glview_buffer.cpp
-C:\buildworker\citadel_staging_win64\build\src\meshutils\hullifr.cpp
-C:\buildworker\citadel_staging_win64\build\src\meshutils\hullivr.cpp
-C:\buildworker\citadel_staging_win64\build\src\meshutils\mesh.cpp
-C:\buildworker\citadel_staging_win64\build\src\meshutils\quickhullsimplifier.cpp
-C:\buildworker\citadel_staging_win64\build\src\meshutils\simplify.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\boneconstraints.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\model.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\modelconfig.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\morphset.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\rendermesh.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\rendermesh_old_disk.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\buoyancy.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\femodel.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\femodel_bonemap.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\femodel_morph.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\femodel_morphstate.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\femodeldesc.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\physaggregatedata.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\physicsresourcehelpers.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\profileconcomm.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\regionsvmbuilder.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\disjoint_set_forest.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\fastaabb_tree.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\interpolaterbf.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\math_pfns.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\rotation.h
-C:\buildworker\citadel_staging_win64\build\src\public\meshutils\halfedgecomponentlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\meshutils\halfedgemesh.h
-C:\buildworker\citadel_staging_win64\build\src\public\meshutils\hullivr.h
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\physicslib\femodel_utils.h
-C:\buildworker\citadel_staging_win64\build\src\public\physicslib\physaggregatedata.h
-C:\buildworker\citadel_staging_win64\build\src\public\physicslib\serialize.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\indexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\vertexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\kv3transfertypemanager.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\kv3typemanager.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\legacy_back_compat_introspectedtokv3typemanager.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\resourcestream.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\iresourcesystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\rubikon\param_types.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\vertexformat.h
-C:\buildworker\citadel_staging_win64\build\src\public\schemalib\schemaenumhelpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitvec.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\byteswap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\enum_helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_resource.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_saveloadresource.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_schema_support.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_ssemath.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlblockmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlbufferstrider.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utldict.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlhash.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllocalmemstack.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlpriorityqueue.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsharedarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsortvector.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\public\vphysics2\iphysicsjointdesc.inl
-C:\buildworker\citadel_staging_win64\build\src\public\vphysx\vphysx_collisionmesh_resource.h
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\introspectedtokv3typemanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcefile.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\body.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\body.inl
-C:\buildworker\citadel_staging_win64\build\src\rubikon\bodysweep.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\characterproxy.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\collide.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\collisionfilter.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\conicaljoint.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\contact.inl
-C:\buildworker\citadel_staging_win64\build\src\rubikon\convexcontact.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\distance.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\dynamictree.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\dynamictree.inl
-C:\buildworker\citadel_staging_win64\build\src\rubikon\genericjoint.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\genericjoint.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\gjk.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\graphedge.inl
-C:\buildworker\citadel_staging_win64\build\src\rubikon\helpers\shape_helper.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\helpers\world_helper.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\helpers\world_helper.inl
-C:\buildworker\citadel_staging_win64\build\src\rubikon\hullshape.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\ik.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\intersectiondictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\joint.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\joint.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\linkage.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\memorycache.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\meshcontact.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\meshshape.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\meshshape.inl
-C:\buildworker\citadel_staging_win64\build\src\rubikon\nameindex.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\prismaticjoint.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\pulley.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\revolutejoint.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\rncommon.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\rnquerycache.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\rnquerycache.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\rnshadowcontroller.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\rope.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\rope_deprecated.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\rubikon.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\serialize2snapshot.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\shape.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\shape.inl
-C:\buildworker\citadel_staging_win64\build\src\rubikon\shape_cast.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_effect.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_effect.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_effect_dampen_velocity.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_effect_skinned_collider.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_effect_wind.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_effectproperty.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_effectproperty.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_hullcollider.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_mathhelpers.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\softbody_vertexmap.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\spherehullcast.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\spheretrianglecast.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\spheretrianglecast.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\spheretrianglecastsimd.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\spheretrianglecastsimd.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\sphericaljoint.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\spring.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\toi.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\trace.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\vehiclebodies.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\vehicledrivetrain.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\vehiclesteering.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\vehiclesuspension.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\weldjoint.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\wheelcontact.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\world.cpp
-C:\buildworker\citadel_staging_win64\build\src\rubikon\world.h
-C:\buildworker\citadel_staging_win64\build\src\rubikon\world.inl
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaclassinfo.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
-C:\buildworker\citadel_staging_win64\build\src\stacktranslate\universaltranslator.cpp
-C:\buildworker\citadel_staging_win64\build\src\thirdparty\tnt\tnt_matrix.h
-C:\buildworker\citadel_staging_win64\build\src\thirdparty\tnt\tnt_vector.h
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\kv3transfer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\iksolver.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\intersectioncontroller.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicsbody.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicscharacterproxy.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicsdefinitions.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicsfriction.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicsjoint.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicsragdoll.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicsragdollcontrol.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicsrope.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicsshape.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicssoftbody.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\physicsvehicle.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\vphys2_aggregate.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\vphys2_concomm.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\vphys2_concomm.h
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\vphys2_debug.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\vphys2_motioncontroller.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\vphys2_world.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\vphysics2.cpp
-C:\buildworker\citadel_staging_win64\build\src\vphysics2\vphysics_saverestore.cpp
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animattachment_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animcapture_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animgraphids_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animskeleton_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\boneconstraints_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\footdefinition_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\footmotion_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\model_old_disk_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\modelconfig_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\modelenums_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\morphsetdata_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\rendermesh_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\surfaceproperties_resource_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\vphysx_collisionmesh_resource_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\dop26_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\fejigglebone_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\femodel_desc_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\femodel_morph_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\femodeldesc_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\physicsresourcehelpers_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\physicslib\_vpc_physicslib\default\win64\_schema_\release\serialize_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\vphysics2\_vpc_vphysics2\default\win64\_msvc_\Retail\vphysics2.pdb
+C:\buildworker\citadel_rel_win64\build\_build_\vphysics2\_vpc_vphysics2\default\win64\_schema_\release\constraints_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\vphysics2\_vpc_vphysics2\default\win64\_schema_\release\vphysics_saverestore_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\src\common\dwarf_file.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\dwarf_symbols.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\dwarf_undecorate.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\stackhelpers\stackhelpers.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\stackhelpers\stackhelpers_virtualmachine_translation.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\stackhelpers\stackhelpers_vsymbolmodule_translation.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\vsymbolmodule.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\vsymbolmodule.h
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\colorgradient.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\feagglomerator.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\vectorcollisionutils.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\gjk.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\quaternion.cpp
+C:\buildworker\citadel_rel_win64\build\src\meshutils\dualhull.cpp
+C:\buildworker\citadel_rel_win64\build\src\meshutils\glview_buffer.cpp
+C:\buildworker\citadel_rel_win64\build\src\meshutils\hullifr.cpp
+C:\buildworker\citadel_rel_win64\build\src\meshutils\hullivr.cpp
+C:\buildworker\citadel_rel_win64\build\src\meshutils\mesh.cpp
+C:\buildworker\citadel_rel_win64\build\src\meshutils\quickhullsimplifier.cpp
+C:\buildworker\citadel_rel_win64\build\src\meshutils\simplify.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\boneconstraints.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\model.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\modelconfig.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\morphset.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\rendermesh.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\rendermesh_old_disk.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\buoyancy.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\femodel.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\femodel_bonemap.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\femodel_morph.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\femodel_morphstate.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\femodeldesc.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\physaggregatedata.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\physicsresourcehelpers.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\profileconcomm.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\regionsvmbuilder.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\disjoint_set_forest.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\fastaabb_tree.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\interpolaterbf.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
+C:\buildworker\citadel_rel_win64\build\src\public\meshutils\halfedgecomponentlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\meshutils\halfedgemesh.h
+C:\buildworker\citadel_rel_win64\build\src\public\meshutils\hullivr.h
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\physicslib\femodel_utils.h
+C:\buildworker\citadel_rel_win64\build\src\public\physicslib\physaggregatedata.h
+C:\buildworker\citadel_rel_win64\build\src\public\physicslib\serialize.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\indexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3transfertypemanager.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3typemanager.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\legacy_back_compat_introspectedtokv3typemanager.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\resourcestream.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\iresourcesystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\rubikon\param_types.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\vertexformat.h
+C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaenumhelpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitvec.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\enum_helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.inl
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_resource.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_saveloadresource.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_schema_support.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_ssemath.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tslist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlblockmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlbufferstrider.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utldict.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlhash.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utllinkedlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utllocalmemstack.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlpriorityqueue.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsharedarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsortvector.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\public\vphysics2\iphysicsjointdesc.inl
+C:\buildworker\citadel_rel_win64\build\src\public\vphysx\vphysx_collisionmesh_resource.h
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\introspectedtokv3typemanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcefile.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\body.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\body.inl
+C:\buildworker\citadel_rel_win64\build\src\rubikon\bodysweep.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\characterproxy.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\collide.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\collisionfilter.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\conicaljoint.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\contact.inl
+C:\buildworker\citadel_rel_win64\build\src\rubikon\convexcontact.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\distance.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\dynamictree.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\dynamictree.inl
+C:\buildworker\citadel_rel_win64\build\src\rubikon\genericjoint.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\genericjoint.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\gjk.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\graphedge.inl
+C:\buildworker\citadel_rel_win64\build\src\rubikon\helpers\shape_helper.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\helpers\world_helper.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\helpers\world_helper.inl
+C:\buildworker\citadel_rel_win64\build\src\rubikon\hullshape.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\ik.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\intersectiondictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\joint.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\joint.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\linkage.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\memorycache.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\meshcontact.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\meshshape.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\meshshape.inl
+C:\buildworker\citadel_rel_win64\build\src\rubikon\nameindex.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\prismaticjoint.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\pulley.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\revolutejoint.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\rncommon.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\rnquerycache.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\rnquerycache.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\rnshadowcontroller.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\rope.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\rope_deprecated.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\rubikon.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\serialize2snapshot.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\shape.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\shape.inl
+C:\buildworker\citadel_rel_win64\build\src\rubikon\shape_cast.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_effect.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_effect.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_effect_dampen_velocity.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_effect_skinned_collider.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_effect_wind.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_effectproperty.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_effectproperty.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_hullcollider.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_mathhelpers.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\softbody_vertexmap.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\spherehullcast.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\spheretrianglecast.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\spheretrianglecast.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\spheretrianglecastsimd.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\spheretrianglecastsimd.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\sphericaljoint.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\spring.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\toi.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\trace.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\vehiclebodies.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\vehicledrivetrain.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\vehiclesteering.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\vehiclesuspension.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\weldjoint.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\wheelcontact.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\world.cpp
+C:\buildworker\citadel_rel_win64\build\src\rubikon\world.h
+C:\buildworker\citadel_rel_win64\build\src\rubikon\world.inl
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schemaclassinfo.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schematype.cpp
+C:\buildworker\citadel_rel_win64\build\src\stacktranslate\universaltranslator.cpp
+C:\buildworker\citadel_rel_win64\build\src\thirdparty\tnt\tnt_matrix.h
+C:\buildworker\citadel_rel_win64\build\src\thirdparty\tnt\tnt_vector.h
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\keyvalues3.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\kv3transfer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\iksolver.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\intersectioncontroller.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicsbody.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicscharacterproxy.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicsdefinitions.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicsfriction.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicsjoint.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicsragdoll.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicsragdollcontrol.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicsrope.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicsshape.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicssoftbody.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\physicsvehicle.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\vphys2_aggregate.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\vphys2_concomm.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\vphys2_concomm.h
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\vphys2_debug.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\vphys2_motioncontroller.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\vphys2_world.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\vphysics2.cpp
+C:\buildworker\citadel_rel_win64\build\src\vphysics2\vphysics_saverestore.cpp
 C<;C4A
 C@;}0|
 C@H9,
@@ -2683,7 +2680,7 @@ CBoneConstraintPoseSpaceMorph::KV3TransferLoad_Impl
 CBoneConstraintPoseSpaceMorph::KV3Transfer_DefaultKeys_Impl
 CBoneConstraintPoseSpaceMorph::Schema_VerifyBindingIsRegistered
 CBoneConstraintPoseSpaceMorph::SetRbfType::<lambda_1>::operator ()
-CBroadphase::Update(), C:\buildworker\citadel_staging_win64\build\src\rubikon\broadphase.inl:157
+CBroadphase::Update(), C:\buildworker\citadel_rel_win64\build\src\rubikon\broadphase.inl:157
 CBufferStrider: new buffer placement is out of bounds!
 CBufferStrider::Validate
 CByteswap::SwapBufferToTargetEndian
@@ -3420,7 +3417,7 @@ CRnWorld::AddParticleRope::<lambda_3>::operator ()
 CRnWorld::AddToBodiesWithAppliedForcesList
 CRnWorld::AddVehicle::<lambda_1>::operator ()
 CRnWorld::BuildQueryTestTraceIn
-CRnWorld::Collide(), C:\buildworker\citadel_staging_win64\build\src\rubikon\world.cpp:2240
+CRnWorld::Collide(), C:\buildworker\citadel_rel_win64\build\src\rubikon\world.cpp:2240
 CRnWorld::Collide::<lambda_1>::operator ()
 CRnWorld::CollideShape
 CRnWorld::DeactivateBody
@@ -3436,7 +3433,7 @@ CRnWorld::ReportContactLost
 CRnWorld::SetSubstepCount
 CRnWorld::ShouldHit
 CRnWorld::Solve
-CRnWorld::SolveTOI(), C:\buildworker\citadel_staging_win64\build\src\rubikon\world.cpp:2039
+CRnWorld::SolveTOI(), C:\buildworker\citadel_rel_win64\build\src\rubikon\world.cpp:2039
 CRnWorld::SweepShape
 CRnWorld::SweepShapeMultiple
 CRnWorldHelper::AddRecordedTraceResult
@@ -4643,7 +4640,9 @@ CriticallyDampedSpring
 CriticallyDampedSpring: negative timestep supplied.
 CullVertices
 Currently allocated agg data: {
+Cx1]5
 CxH94
+D	V_sincosf
 D	`H;
 D	`M;
 D!l$xA
@@ -4987,10 +4986,9 @@ D9x`~z
 D9y t
 D9{(v 
 D9|$Pu
-D;%-9
+D;%=9
 D;&s0I
 D;/}ZH
-D;5|8
 D;@0|
 D;@HcH I
 D;@H|
@@ -5150,7 +5148,6 @@ DynamicMeshDeformParams_t
 DynamicMeshDeformParams_t::KV3TransferLoad_Impl
 DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
-E	V_sincosf
 E 9E@u
 E H9H
 E),$H
@@ -5425,6 +5422,7 @@ Ex9p
 Excluded flags: No interaction allowed because
 ExitProcess
 ExternalNameForInternalType
+F	V_sinf
 F 9F@u
 F A9F@u
 F H9H
@@ -5762,7 +5760,6 @@ FourVectors2D::Schema_VerifyBindingIsRegistered
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
-G	V_sinf
 G 9G@u
 G 9] |KH
 G D8w
@@ -5932,17 +5929,18 @@ H8Hc@0H
 H8I;I8r
 H9(tO
 H9(t^H9h
-H9-55B
+H9-E5B
 H9.twH
-H95!.=
-H95g`A
+H95&/=
+H951.=
+H95w`A
 H97u+A
 H98t2
 H98t5
 H9=0AD
 H9=KAD
 H9=i@D
-H9=jJB
+H9=zJB
 H9A(t
 H9A`u2I
 H9B8s
@@ -6010,7 +6008,6 @@ HA^A]_^][
 HA_A^A\[
 HA_A^A]A\_^[]
 HA__[]
-HB(Q?
 HELPER_BONE
 HH:mm:ss
 HHcA8L
@@ -6198,6 +6195,7 @@ HostStateMgr001
 Hull%d.obj
 HullIVRHole_t::operator new
 Hulls
+I	V_snprintf
 I(I+I H
 I+4$H
 I+O H
@@ -6226,7 +6224,6 @@ IResourceTypeManager::GetNonStreamingDataLoadSize
 IResourceTypeManager::IsStreamingDataAlreadyLoaded
 IResourceTypeManager::LoadStreamingData
 IS_TYPESAFE_INTEGER
-IW}KA
 Ic	I+
 Ic)Hc
 Ic3Mc
@@ -6580,7 +6577,6 @@ IsValidCodePage
 IsValidIndex( i )
 IsValidIndex(elem)
 IsValidIndex(elem) && IndexInRange( elem )
-J	V_snprintf
 J09H0
 J0f9H0r
 J0u5Hc
@@ -6692,7 +6688,6 @@ L$ SVWH
 L$ SWH
 L$ UH
 L$ USVWATAUAWH
-L$ USWH
 L$ UVWATAUAVAWH
 L$ UVWATAWH
 L$ UVWAVAWH
@@ -6818,10 +6813,8 @@ L.IsValid()
 L9	u	I
 L9#u/H
 L9+t	H
-L9-yX:
 L93t	H
-L95	}>
-L95'|>
+L957|>
 L99t;
 L9?t	H
 L9` u
@@ -7131,7 +7124,6 @@ Multiply water damping for buoyancy affecting linear velocity in the vertical di
 Multiply water drag (tries to equalize object velocity with the velocity of the water flow)
 MurmurHash3_32
 Must call SetMetadataEnabled on the root KV3 context to track metadata
-M~^#N
 N u3H
 N0HcF(H
 N<t2I
@@ -7188,6 +7180,7 @@ Notify Found
 Notify Lost
 Notify Persist
 November
+O	V_sscanf
 O*9y]
 O0A9D$0u
 O8HcB
@@ -7214,7 +7207,6 @@ Out of range abbrev tag %llu
 Out of range compilation unit code %llu
 Overlapping Pair Mismatch: %i in map, %i in vectors
 OverlayProjectionDirection
-P	V_sscanf
 P.IsValid()
 P4_EXTRACT_CMD=p4.exe print -o %srcsrvtrg% -q "//%var3%#%var4%"
 P4_EXTRACT_TARGET=%targ%\%var2%\%fnbksl%(%var3%)\%var4%\%fnfile%(%var1%)
@@ -7383,6 +7375,7 @@ RESOURCE_TYPE_VPHYSX_SURFACE_PROPERTIES
 REVOLUTE_JOINT
 REVOLUTE_WELD_FUSED_JOINT
 ROTATION
+RSDSAr
 R`9y tHD
 RaiseException
 Random hull inside sphere of radius %g should have volume around %g, but min volume %g may be hard to obtain using the trivial algorithm here
@@ -7953,6 +7946,7 @@ SweepShapeMultiple not supported for this shape type!
 Symbol name index invalid (%lld)
 Symbol name index too large
 Symbol nesting too deep
+T	V_stricmp_fast
 T$ D;
 T$ E3
 T$ H+
@@ -8023,9 +8017,9 @@ T$xA;
 T$xH;
 T$xL+
 T$x}	
-T%yM&
+T%	J&
 T<Xu9H
-T=lO/
+T=|O/
 TD u"E;
 TILT_TWIST
 TKc<7H
@@ -8088,7 +8082,6 @@ Two meshes may not have collision
 Two non-dynamics do NOT have a Trigger flag
 Two non-dynamics have a Trigger flag
 TypeManager
-U	V_stricmp_fast
 U Nc\
 UATAUAVAWH
 UATAUAWH
@@ -8267,6 +8260,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UxtcD
+V	V_strlower_fast
 V6'?C
 V6E>`"(5
 VATAUAVH
@@ -8421,6 +8415,7 @@ V_fabsf( y ) < s_nCellSubdiv / 2 + 1.1f
 V_fclose
 V_fgets
 V_fmodf
+V_fopenUTF8
 V_strchr( pNamePattern, '!' ) == nullptr
 V_strcmp( primaryFile, pDebugFile ) == 0
 V_strcmp( separateFile, pDebugFile ) == 0
@@ -8450,15 +8445,18 @@ VeryFast
 VisBuilder_001
 Vortices
 Vrad3_001
-W	V_strlower_fast
-W%#)#
-W%Rh"
+W%6i#
+W%I|"
+W%Vd"
+W%aj#
 W(HcK
 W(I;\
-W-jh"
+W->H$
+W-OK#
+W-c( 
 W0HcK
-W5`&!
-W5al#
+W5wr!
+W=.y$
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -8507,9 +8505,10 @@ X UWAVH
 X VWAVH
 X!t5~
 X$"fB
-X-+}&
+X-;}&
 X8HcH0H
-X=4v/
+X=Dv/
+X=~M$
 X@Hc@8H
 XA]A\
 XA]A\][
@@ -8546,19 +8545,20 @@ X|$@A
 X|$DD;
 X|$PD
 X|$xA
-Y%'4&
-Y%/g$
-Y%N"&
-Y-$q/
-Y-(g$
-Y-Ao/
-Y-]i;
-Y-xb&
+Y%74&
+Y%?g$
+Y%pD$
+Y-4q/
+Y-8g$
+Y-Qo/
+Y-mi;
 Y0tfH
-Y5"*;
-Y5F4&
+Y52*;
+Y5V4&
 Y8HcA0
 Y9"SD
+Y='w)
+Y=F" 
 Y@$fD
 YD$ A
 YD$ H
@@ -8804,8 +8804,8 @@ ZdN=Y
 \$xH;
 \$xfE
 \$|L+
-\%E>1
-\-?}&
+\%U>1
+\-O}&
 \<$fA
 \D$,A
 \D$,H
@@ -8837,6 +8837,8 @@ ZdN=Y
 \v,Hc
 \|$0D
 \|$\H
+]	V_strtoui64
+]=>Y$
 ]@fff
 ]J<0"0i3
 ]Lu*E;|$
@@ -8844,7 +8846,6 @@ ZdN=Y
 ]`9]p|EH
 ]`A;EX
 ]hu	H
-^	V_strtoui64
 ^ ;^$t
 ^ Lc3D;s
 ^(HcF H
@@ -8854,14 +8855,13 @@ ZdN=Y
 ^l$ H
 ^oEZ_
 _ ;_$t
+_%":)
 _(HcG H
 _(IcG Hk
 _(tP;
 _8HcG0H
 _8Hcw
 _8IcG0H
-_=2& 
-_=N`$
 _@HcG8H
 _@IcG8Hi
 _PHcGHH
@@ -8955,6 +8955,7 @@ _u1E8^
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a	V_tanf
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a7hIw
 a89q0
@@ -8981,7 +8982,6 @@ audioroughnessfactor
 audiosounds
 awake_bodies
 axle.m_vecWheelIndices.Count() > 0
-b	V_tanf
 b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b+GnH
 bAllocationCanFit
@@ -9671,7 +9671,6 @@ m0k0$
 mHcD7LH
 mL+7H
 mXD;u
-m_4\,
 m_AnimCaptures
 m_AnimStrayRadii
 m_AnimatedMaterialAttributes
@@ -10844,11 +10843,11 @@ npcclip
 ntelA
 num > 0
 o%}eH
-o=;}<
-o=bm<
-o=sn<
+o-Nk<
+o-^l<
+o5/k<
+o=1q<
 o={eH
-o=~P 
 oPLc;D
 occlusionFactor
 offset
@@ -11345,7 +11344,7 @@ t$(L9o
 t$(Lc
 t$(fA
 t$(fD
-t$0;5s(
+t$0;5
 t$0D9t$@|LH
 t$0D;
 t$0E3
@@ -11416,7 +11415,7 @@ t$H~ H
 t$H~#H
 t$LF;4
 t$P;7
-t$PD;5|
+t$PD;5
 t$PE3
 t$PH9t$@t
 t$PHc
@@ -11981,7 +11980,7 @@ zoumE
 |$HtG
 |$H~ H
 |$LB9<
-|$P;=E
+|$P;=U
 |$P;k8
 |$PA;
 |$PD9

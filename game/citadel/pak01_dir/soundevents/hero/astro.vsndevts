@@ -13,7 +13,6 @@
 			"sounds/weapons/astro/astro_weapon_fire_05.vsnd",
 			"sounds/weapons/astro/astro_weapon_fire_06.vsnd",
 		]
-		vsnd_duration = 2.406145
 	}
 	Astro.Wpn.Impact = 
 	{
@@ -33,7 +32,6 @@
 			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_10.vsnd",
 			"sounds/weapons/astro/wpn_impact/layer/astro_wpn_impact_11.vsnd",
 		]
-		vsnd_duration = 1.202562
 	}
 	Astro.Target.Practice.Wpn.Fire = 
 	{
@@ -102,7 +100,6 @@
 			"sounds/weapons/astro/fire/60.vsnd",
 			"sounds/weapons/astro/fire/61.vsnd",
 		]
-		vsnd_duration = 2.276104
 	}
 	Astro.Target.Practice.Wpn.Impact = 
 	{
@@ -121,7 +118,6 @@
 			"sounds/weapons/astro/wpn_impact/10.vsnd",
 			"sounds/weapons/astro/wpn_impact/11.vsnd",
 		]
-		vsnd_duration = 0.325021
 	}
 	Astro.Target.Practice.Wpn.Whizby = 
 	{
@@ -144,7 +140,6 @@
 			"sounds/weapons/shared/whizby/default_05.vsnd",
 			"sounds/weapons/shared/whizby/default_06.vsnd",
 		]
-		vsnd_duration = 0.532687
 	}
 	Astro.ZoomIn = 
 	{
@@ -159,7 +154,6 @@
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		vsnd_files = "sounds/weapons/astro/zoom/in.vsnd"
-		vsnd_duration = 1.323604
 	}
 	Astro.ZoomOut = 
 	{
@@ -174,7 +168,6 @@
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		vsnd_files = "sounds/weapons/astro/zoom/out.vsnd"
-		vsnd_duration = 1.829146
 	}
 	Astro.Wpn.Mechanical = 
 	{
@@ -185,19 +178,16 @@
 			"sounds/weapons/astro/mech/02.vsnd",
 			"sounds/weapons/astro/mech/03.vsnd",
 		]
-		vsnd_duration = 0.714063
 	}
 	Astro.Wpn.Reload.Clip.Out = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		vsnd_files = "sounds/weapons/astro/reload/clip_out.vsnd"
-		vsnd_duration = 0.608813
 	}
 	Astro.Wpn.Reload.Clip.In = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		vsnd_files = "sounds/weapons/astro/reload/clip_in.vsnd"
-		vsnd_duration = 1.039146
 	}
 	Astro.Footstep = 
 	{
@@ -225,14 +215,12 @@
 			"sounds/player/footsteps/astro/holiday_footstep_16.vsnd",
 			"sounds/player/footsteps/astro/holiday_footstep_17.vsnd",
 		]
-		vsnd_duration = 0.835102
 	}
 	Astro.ExplosiveBarrel.Cast = 
 	{
 		base = "Base.Ability"
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/launch.vsnd"
-		vsnd_duration = 2.492625
 	}
 	Astro.ExpBarrels.Fire.Lp = 
 	{
@@ -244,7 +232,6 @@
 		volume_falloff_min = 1.000000
 		volume_falloff_max = 900.000000
 		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/fire_lp.vsnd"
-		vsnd_duration = 11.118459
 	}
 	Ability.Astro.ExpBarrels.Explode = 
 	{
@@ -258,7 +245,6 @@
 		limiter_stop_oldest = true
 		limiter_event_name = "Ability.Astro.ExpBarrels.Explode"
 		vsnd_files = "sounds/abilities/astro/a1_exp_barrels/explode.vsnd"
-		vsnd_duration = 2.489667
 	}
 	Ability.Astro.BouncePad.Launch = 
 	{
@@ -268,7 +254,6 @@
 		volume_fade_in = 0.100000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/activate.vsnd"
-		vsnd_duration = 3.927292
 	}
 	Ability.Astro.BouncePad.Solo = 
 	{
@@ -279,7 +264,6 @@
 		volume_rand_max = 0.110000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/solo.vsnd"
-		vsnd_duration = 3.844687
 	}
 	Ability.Astro.BouncePad.Target = 
 	{
@@ -289,20 +273,17 @@
 		volume_fade_out = 0.010000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/target.vsnd"
-		vsnd_duration = 2.033229
 	}
 	Astro.BouncePad.CastDelay = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/plant.vsnd"
-		vsnd_duration = 2.273708
 	}
 	Ability.Astro.BouncePad.Bounce = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/activate.vsnd"
-		vsnd_duration = 3.927292
 	}
 	Ability.Astro.Jump_NoPad = 
 	{
@@ -311,21 +292,18 @@
 		pitch = 1.200000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/jump_no_bouncepad.vsnd"
-		vsnd_duration = 3.933250
 	}
 	Ability.Astro.BouncePad.Impact = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/land.vsnd"
-		vsnd_duration = 2.823854
 	}
 	Astro.BouncePad.Expire = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/expire.vsnd"
-		vsnd_duration = 1.632917
 	}
 	Astro.BouncePad.Travel.Lp = 
 	{
@@ -345,7 +323,6 @@
 		volume_fade_out = 0.100000
 		volume_falloff_max = 4444.000000
 		vsnd_files = "sounds/abilities/astro/a3_target_practice/cast.vsnd"
-		vsnd_duration = 3.057708
 	}
 	Astro.TargetPractice.Impact = 
 	{
@@ -379,7 +356,6 @@
 		volume_fade_out = 0.100000
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/astro/a3_target_practice/impact_lyr1.vsnd"
-		vsnd_duration = 1.625958
 	}
 	Astro.TargetPractice.Impact.Base = 
 	{
@@ -387,7 +363,6 @@
 		volume_fade_out = 0.100000
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/astro/a3_target_practice/impact_lyr2.vsnd"
-		vsnd_duration = 1.202729
 	}
 	Astro.TargetPractice.Impact.Finale.Motif = 
 	{
@@ -396,7 +371,6 @@
 		pitch = 1.100000
 		volume = -12.000000
 		vsnd_files = "sounds/abilities/astro/a2_bounce_pad/direct_hit.vsnd"
-		vsnd_duration = 3.038563
 	}
 	Astro.TargetPractice.Impact.Headshot.Layer = 
 	{
@@ -404,14 +378,12 @@
 		volume_fade_out = 0.100000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/astro/a3_target_practice/headshot_layer.vsnd"
-		vsnd_duration = 0.641655
 	}
 	Astro.Lasso.Cast = 
 	{
 		base = "Base.Ability.Ult"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/astro/a4_lasso/cast.vsnd"
-		vsnd_duration = 4.749437
 	}
 	Ability.Astro.Lasso.Captured.Lp = 
 	{
@@ -433,7 +405,6 @@
 		delay_rand_max = 0.000000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/astro/a4_lasso/lp1.vsnd"
-		vsnd_duration = 4.744583
 	}
 	Ability.Astro.Lasso.Captured.Lp2 = 
 	{
@@ -447,7 +418,6 @@
 		delay_rand_max = 0.000000
 		pitch = 0.800000
 		vsnd_files = "sounds/abilities/astro/a4_lasso/lp2.vsnd"
-		vsnd_duration = 7.063375
 	}
 	Astro.MovementFoley = 
 	{
@@ -471,7 +441,6 @@
 			"sounds/player/foley/astro/astro_foley_08.vsnd",
 			"sounds/player/foley/astro/astro_foley_09.vsnd",
 		]
-		vsnd_duration = 0.730000
 	}
 	Astro.MovementFoleyLight = 
 	{
@@ -496,7 +465,6 @@
 			"sounds/player/foley/astro/astro_foley_light_08.vsnd",
 			"sounds/player/foley/astro/astro_foley_light_09.vsnd",
 		]
-		vsnd_duration = 0.745875
 	}
 	Astro.JumpLand = 
 	{
@@ -536,7 +504,6 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
-		vsnd_duration = 1.062200
 	}
 	Astro.Melee.SwingLong = 
 	{
@@ -569,7 +536,6 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
-		vsnd_duration = 1.399773
 	}
 	Astro.SlideLandSweetener = 
 	{
@@ -587,7 +553,6 @@
 			"sounds/player/foley/astro/astro_jump_land_08.vsnd",
 			"sounds/player/foley/astro/astro_jump_land_09.vsnd",
 		]
-		vsnd_duration = 0.729500
 	}
 	Astro.SlideGetUp = 
 	{
@@ -605,7 +570,6 @@
 			"sounds/player/foley/astro/astro_jump_land_08.vsnd",
 			"sounds/player/foley/astro/astro_jump_land_09.vsnd",
 		]
-		vsnd_duration = 0.729500
 	}
 	Astro.Death = 
 	{
@@ -618,7 +582,6 @@
 			"sounds/vo/astro/emote/holliday_pain_death_04.vsnd",
 			"sounds/vo/astro/emote/holliday_pain_death_05.vsnd",
 		]
-		vsnd_duration = 0.900680
 	}
 	Astro.Effort = 
 	{
@@ -633,7 +596,6 @@
 			"sounds/vo/astro/emote/holliday_effort_general_06.vsnd",
 			"sounds/vo/astro/emote/holliday_effort_general_07.vsnd",
 		]
-		vsnd_duration = 1.365624
 	}
 	Astro.Effort.Dash = 
 	{
@@ -648,7 +610,6 @@
 			"sounds/vo/astro/emote/holliday_effort_general_06.vsnd",
 			"sounds/vo/astro/emote/holliday_effort_general_07.vsnd",
 		]
-		vsnd_duration = 1.365624
 	}
 	Astro.Effort.Melee = 
 	{
@@ -663,6 +624,5 @@
 			"sounds/vo/astro/emote/holliday_effort_melee_small_06.vsnd",
 			"sounds/vo/astro/emote/holliday_effort_melee_small_07.vsnd",
 		]
-		vsnd_duration = 1.052902
 	}
 }

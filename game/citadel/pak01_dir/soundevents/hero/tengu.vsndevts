@@ -15,7 +15,6 @@
 			"sounds/weapons/tengu/tengu_weapon_fire_05.vsnd",
 			"sounds/weapons/tengu/tengu_weapon_fire_06.vsnd",
 		]
-		vsnd_duration = 2.621519
 	}
 	Tengu.Wpn.Impact.Default = 
 	{
@@ -39,19 +38,19 @@
 	{
 		base = "Base.Hero.Foley.Foot.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Tengu.Weapon.Reload.In = 
 	{
 		base = "Base.Hero.Foley.Foot.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Tengu.Weapon.Reload.Out = 
 	{
 		base = "Base.Hero.Foley.Foot.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Tengu.ZoomIn = 
 	{
@@ -70,14 +69,12 @@
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_stonessquall_prep_01.vsnd"
-		vsnd_duration = 1.252064
 	}
 	Tengu.StoneSquall.Target.Lp = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_stonessquall_prep_loop_01.vsnd"
-		vsnd_duration = 6.749388
 	}
 	Tengu.StoneSquall.Cast = 
 	{
@@ -91,14 +88,12 @@
 			"sounds/abilities/tengu/ivy_stonessquall_throw_04.vsnd",
 			"sounds/abilities/tengu/ivy_stonessquall_throw_05.vsnd",
 		]
-		vsnd_duration = 2.181225
 	}
 	Tengu.StoneSquall.Projectile.Impact = 
 	{
 		base = "Base.Ability"
 		volume = 4.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_stonessquall_aoe_impact_01.vsnd"
-		vsnd_duration = 2.427710
 	}
 	Tengu.StoneSquall.Projectile.Lp = 
 	{
@@ -108,7 +103,6 @@
 		doppler_on = 1.000000
 		doppler_factor = 5.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_stonessquall_projectile_loop.vsnd"
-		vsnd_duration = 5.438209
 	}
 	Tengu.StoneSquall.AOE.Lp.Start = 
 	{
@@ -116,7 +110,6 @@
 		volume_enemy_targeting_boost = 0.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_a1_vines_extend_01.vsnd"
-		vsnd_duration = 3.553379
 	}
 	Tengu.StoneSquall.AOE.Lp = 
 	{
@@ -129,7 +122,6 @@
 		volume = 0.000000
 		volume_fade_in = 0.250000
 		vsnd_files = "sounds/abilities/tengu/ivy_stonessquall_aoe_loop_01.vsnd"
-		vsnd_duration = 11.434286
 	}
 	Tengu.StoneSquall.AOE.Lp.End = 
 	{
@@ -137,7 +129,6 @@
 		volume_enemy_targeting_boost = 0.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_a1_vines_retract_01.vsnd"
-		vsnd_duration = 1.653741
 	}
 	Tengu.Flask.Cast = 
 	{
@@ -145,7 +136,6 @@
 		volume_falloff_min = 1.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/a1_stone_squall/cast.vsnd"
-		vsnd_duration = 1.490021
 	}
 	Tengu.Flask.Proj.Impact = 
 	{
@@ -153,7 +143,6 @@
 		volume = 0.000000
 		volume_falloff_min = 10.000000
 		vsnd_files = "sounds/abilities/tengu/a1_stone_squall/impact.vsnd"
-		vsnd_duration = 2.839187
 	}
 	Tengu.Flask.Proj.Lp = 
 	{
@@ -163,7 +152,6 @@
 		volume_falloff_max = 1100.000000
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/inferno/a1_incendiary_grenade/proj_travel_lp.vsnd"
-		vsnd_duration = 5.419291
 	}
 	Tengu.Flask.Fire.Lp = 
 	{
@@ -180,28 +168,24 @@
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/a1_ghost/cast.vsnd"
-		vsnd_duration = 4.865500
 	}
 	Tengu.Tether.Cast = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/a2_tether/cast.vsnd"
-		vsnd_duration = 2.038354
 	}
 	Tengu.Tether.Activate = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/a2_tether/mod_start.vsnd"
-		vsnd_duration = 2.854563
 	}
 	Tengu.Tether.Heal = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/tengu/a2_tether/heal.vsnd"
-		vsnd_duration = 1.906396
 	}
 	Tengu.Tether.Dur.Lp = 
 	{
@@ -222,7 +206,6 @@
 		delay_rand_max = 0.000000
 		volume_fade_out = 0.900000
 		vsnd_files = "sounds/abilities/tengu/a2_tether/dur_lp1.vsnd"
-		vsnd_duration = 4.289542
 	}
 	Tengu.Tether.Dur.Lp2 = 
 	{
@@ -232,7 +215,6 @@
 		delay_rand_max = 0.000000
 		volume_fade_out = 0.900000
 		vsnd_files = "sounds/abilities/tengu/a2_tether/dur_lp2.vsnd"
-		vsnd_duration = 6.975000
 	}
 	Tengu.Tether.Dur.Lp3 = 
 	{
@@ -242,7 +224,6 @@
 		delay_rand_max = 0.000000
 		volume_fade_out = 0.900000
 		vsnd_files = "sounds/abilities/tengu/a2_tether/dur_lp3.vsnd"
-		vsnd_duration = 7.238292
 	}
 	Ability.Tengu.Tether.Attach = 
 	{
@@ -273,7 +254,6 @@
 		volume = -12.000000
 		volume_fade_out = 0.500000
 		vsnd_files = "sounds/abilities/tengu/a3_stone_form/cast_lyr1.vsnd"
-		vsnd_duration = 6.368125
 	}
 	Ability.Tengu.Stone_Form.Cast.Lyr2 = 
 	{
@@ -281,7 +261,6 @@
 		volume = -12.000000
 		volume_fade_out = 0.500000
 		vsnd_files = "sounds/abilities/tengu/a3_stone_form/cast_lyr2.vsnd"
-		vsnd_duration = 6.368125
 	}
 	Ability.Tengu.Stone_Form.Impact = 
 	{
@@ -296,21 +275,18 @@
 		base = "Base.Ability"
 		volume = -4.000000
 		vsnd_files = "sounds/abilities/tengu/a3_stone_form/impact.vsnd"
-		vsnd_duration = 2.595419
 	}
 	Ability.Tengu.Stone_Form.Impact_Explosion = 
 	{
 		base = "Base.Ability"
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/tengu/a3_stone_form/explosion.vsnd"
-		vsnd_duration = 3.595419
 	}
 	Tengu.LightningCrash.Cast = 
 	{
 		base = "Base.Ability.Ult"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/a4_lightning_crash/cast.vsnd"
-		vsnd_duration = 4.884417
 	}
 	Tengu.Lightning.Crash.Travel.Lp = 
 	{
@@ -324,7 +300,6 @@
 		delay_rand_min = -9.000000
 		delay_rand_max = 0.000000
 		vsnd_files = "sounds/abilities/tengu/a4_lightning_crash/travel_lp.vsnd"
-		vsnd_duration = 16.018499
 	}
 	Tengu.LightningCrash.Crash = 
 	{
@@ -342,7 +317,6 @@
 		base = "Base.Ability.Ult"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/a4_lightning_crash/impact.vsnd"
-		vsnd_duration = 4.492500
 	}
 	Tengu.LightningCrash.Crash.Lyr2 = 
 	{
@@ -372,13 +346,12 @@
 		volume = -12.000000
 		limiter_max = 2.000000
 		vsnd_files = "sounds/hit_indicators/base/default.vsnd"
-		vsnd_duration = 0.451156
 	}
 	Tengu.Wpn.Impact = 
 	{
 		base = "Base.Bullet.Impact"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Tengu.Reload.ClipIn = 
 	{
@@ -387,7 +360,6 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/clipin.vsnd"
-		vsnd_duration = 0.700386
 	}
 	Tengu.Reload.End = 
 	{
@@ -396,7 +368,6 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/end.vsnd"
-		vsnd_duration = 0.780000
 	}
 	Tengu.Reload.Middle = 
 	{
@@ -405,7 +376,6 @@
 		pitch_rand_min = 0.000000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/middle.vsnd"
-		vsnd_duration = 0.390000
 	}
 	Tengu.Reload.Start = 
 	{
@@ -414,7 +384,6 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/start.vsnd"
-		vsnd_duration = 0.661973
 	}
 	Tengu.WingFlap = 
 	{
@@ -436,7 +405,6 @@
 			"sounds/player/foley/ivy/ivy_wingflap_05.vsnd",
 			"sounds/player/foley/ivy/ivy_wingflap_06.vsnd",
 		]
-		vsnd_duration = 1.028594
 	}
 	Tengu.WingFlap_Strong = 
 	{
@@ -453,7 +421,6 @@
 			"sounds/player/foley/ivy/ivy_wingflap_05.vsnd",
 			"sounds/player/foley/ivy/ivy_wingflap_06.vsnd",
 		]
-		vsnd_duration = 1.028594
 	}
 	Tengu.Footstep = 
 	{
@@ -477,7 +444,6 @@
 			"sounds/player/footsteps/ivy/ivy_footstep_14.vsnd",
 			"sounds/player/footsteps/ivy/ivy_footstep_15.vsnd",
 		]
-		vsnd_duration = 0.653878
 	}
 	Ivy.Death = 
 	{
@@ -493,14 +459,12 @@
 			"sounds/vo/tengu/emote/ivy_pain_death_07.vsnd",
 			"sounds/vo/tengu/emote/ivy_pain_death_08.vsnd",
 		]
-		vsnd_duration = 0.450952
 	}
 	Ivy.A4.Wildfire.Cast = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_a4_wildfire_cast.vsnd"
-		vsnd_duration = 4.071202
 	}
 	Ivy.A4.Wildfire.Loop = 
 	{
@@ -508,13 +472,11 @@
 		volume = -5.000000
 		delay = 0.600000
 		vsnd_files = "sounds/abilities/tengu/ivy_a4_wildfire_loop.vsnd"
-		vsnd_duration = 9.458344
 	}
 	Ivy.A4.Wildfire.End = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/tengu/ivy_a4_wildfire_end.vsnd"
-		vsnd_duration = 3.087370
 	}
 }

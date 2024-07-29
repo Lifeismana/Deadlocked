@@ -13,7 +13,6 @@
 			"sounds/weapons/kelvin/kelvin_weapon_fire_05.vsnd",
 			"sounds/weapons/kelvin/kelvin_weapon_fire_06.vsnd",
 		]
-		vsnd_duration = 2.478798
 	}
 	Kelvin.Wpn.Impact = 
 	{
@@ -27,7 +26,6 @@
 			"sounds/weapons/kelvin/impact/layer/kelvin_wpn_impact_04.vsnd",
 			"sounds/weapons/kelvin/impact/layer/kelvin_wpn_impact_05.vsnd",
 		]
-		vsnd_duration = 1.165063
 	}
 	Kelvin.ZoomIn = 
 	{
@@ -50,7 +48,6 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/kelvin/reload/clip_out.vsnd"
-		vsnd_duration = 0.250091
 	}
 	Kelvin.Reload.ClipIn = 
 	{
@@ -59,7 +56,6 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/kelvin/reload/clip_in.vsnd"
-		vsnd_duration = 0.297392
 	}
 	Kelvin.Reload.End = 
 	{
@@ -68,7 +64,6 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/kelvin/reload/end.vsnd"
-		vsnd_duration = 0.263039
 	}
 	Kelvin.IceGrenade.Cast = 
 	{
@@ -86,28 +81,24 @@
 		base = "Base.Ability"
 		volume = -18.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/cast_rip.vsnd"
-		vsnd_duration = 0.638396
 	}
 	Kelvin.IceGrenade.Cast.Zap = 
 	{
 		base = "Base.Ability"
 		volume = -21.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/cast_zap.vsnd"
-		vsnd_duration = 1.367479
 	}
 	Kelvin.IceGrenade.Cast.Woosh = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/cast_woosh.vsnd"
-		vsnd_duration = 1.459021
 	}
 	Kelvin.IceGrenade.Proj.Lp = 
 	{
 		base = "Base.Ability"
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/proj_lp.vsnd"
-		vsnd_duration = 1.750750
 	}
 	Ability.Kelvin.IceGrenade.Explode = 
 	{
@@ -138,7 +129,6 @@
 		volume_falloff_min = 3.000000
 		volume_falloff_max = 2600.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/exp_bounce.vsnd"
-		vsnd_duration = 1.845188
 	}
 	Ability.Kelvin.IceGrenade.Explode.Stutter = 
 	{
@@ -147,7 +137,6 @@
 		volume_falloff_min = 2.000000
 		volume_falloff_max = 1900.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/exp_stutter.vsnd"
-		vsnd_duration = 2.130604
 	}
 	Ability.Kelvin.IceGrenade.Explode.Poof = 
 	{
@@ -156,7 +145,6 @@
 		volume_falloff_min = 1.000000
 		volume_falloff_max = 2900.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/exp_poof.vsnd"
-		vsnd_duration = 1.444625
 	}
 	Ability.Kelvin.IceGrenade.Explode.Low = 
 	{
@@ -165,7 +153,6 @@
 		volume_falloff_min = 6.000000
 		volume_falloff_max = 2000.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/exp_low.vsnd"
-		vsnd_duration = 1.234021
 	}
 	Ability.Kelvin.IceGrenade.Explode.Debris = 
 	{
@@ -183,7 +170,6 @@
 		volume_falloff_min = 1.000000
 		volume_falloff_max = 2400.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/exp_debris_ice.vsnd"
-		vsnd_duration = 1.505437
 	}
 	Ability.Kelvin.IceGrenade.Explode.Debris.Shock = 
 	{
@@ -192,7 +178,6 @@
 		volume_falloff_min = 1.000000
 		volume_falloff_max = 1600.000000
 		vsnd_files = "sounds/abilities/kelvin/a1_ice_grenade/exp_debris_shock.vsnd"
-		vsnd_duration = 1.602583
 	}
 	Kelvin.IcePath.Cast = 
 	{
@@ -208,13 +193,11 @@
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/kelvin/a2_ice_path/activate.vsnd"
-		vsnd_duration = 1.599646
 	}
 	Kelvin.IcePath.Cast.Tech = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/kelvin/a2_ice_path/activate_tech.vsnd"
-		vsnd_duration = 2.576167
 	}
 	Kelvin.IcePath.Dur.Lp = 
 	{
@@ -229,7 +212,6 @@
 		pitch = 1.100000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/kelvin/a2_ice_path/lp_st.vsnd"
-		vsnd_duration = 9.533334
 	}
 	Ability.Kelvin.IcePath_End = 
 	{
@@ -237,21 +219,18 @@
 		volume = -3.000000
 		pitch = 1.100000
 		vsnd_files = "sounds/abilities/kelvin/a2_ice_path/end.vsnd"
-		vsnd_duration = 2.185396
 	}
 	Kelvin.IceBeam.Start = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/kelvin/kelvin_ice_beam_start.vsnd"
-		vsnd_duration = 6.348617
 	}
 	Kelvin.IceBeam.Stop = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/kelvin/kelvin_ice_beam_stop.vsnd"
-		vsnd_duration = 3.274422
 	}
 	Kelvin.IceBeam.Lp.Point.Start = 
 	{
@@ -265,7 +244,6 @@
 		pitch_envelope_scale_min = 0.950000
 		pitch_envelope_scale_max = 1.200000
 		vsnd_files = "sounds/abilities/kelvin/kelvin_ice_beam_lp_point_start.vsnd"
-		vsnd_duration = 21.501089
 	}
 	Kelvin.IceBeam.Lp.Point.Closest = 
 	{
@@ -275,7 +253,6 @@
 		volume_fade_in = 0.250000
 		delay_rand_max = -4.000000
 		vsnd_files = "sounds/abilities/kelvin/kelvin_ice_beam_lp_point_closest.vsnd"
-		vsnd_duration = 16.483742
 	}
 	Kelvin.IceBeam.Lp.Point.End = 
 	{
@@ -285,7 +262,6 @@
 		volume_fade_in = 0.250000
 		delay_rand_max = -10.000000
 		vsnd_files = "sounds/abilities/kelvin/kelvin_ice_beam_lp_point_end.vsnd"
-		vsnd_duration = 15.387347
 	}
 	Kelvin.IceBeam.Modifier.Lp = 
 	{
@@ -295,7 +271,6 @@
 		volume_fade_out = 0.250000
 		delay_rand_max = -10.000000
 		vsnd_files = "sounds/abilities/kelvin/kelvin_ice_beam_lp_point_end.vsnd"
-		vsnd_duration = 15.387347
 	}
 	Kelvin.IceGrenade.Victim.Modifier.Start = 
 	{
@@ -305,7 +280,6 @@
 		volume_falloff_max = 4400.000000
 		pitch = 1.010000
 		vsnd_files = "sounds/abilities/kelvin/a3_ice_beam/victim_mod_start.vsnd"
-		vsnd_duration = 1.505437
 	}
 	Kelvin.IceGrenade.Victim.Modifier.End = 
 	{
@@ -314,7 +288,6 @@
 		volume_falloff_min = 2.000000
 		volume_falloff_max = 1600.000000
 		vsnd_files = "sounds/abilities/kelvin/frozen_shelter_expire.vsnd"
-		vsnd_duration = 2.003750
 	}
 	Kelvin.IceDome.Cast = 
 	{
@@ -323,7 +296,6 @@
 		volume_fade_out = 0.200000
 		volume_enemy_targeting_boost = 0.000000
 		vsnd_files = "sounds/abilities/kelvin/kelvin_ice_dome_start.vsnd"
-		vsnd_duration = 3.611928
 	}
 	Kelvin.IceDome.Lp = 
 	{
@@ -343,7 +315,6 @@
 			50.000000,
 		]
 		vsnd_files = "sounds/abilities/kelvin/kelvin_ice_dome_lp.vsnd"
-		vsnd_duration = 8.772766
 	}
 	Ability.Kelvin.IceDome.Destroy = 
 	{
@@ -356,7 +327,6 @@
 			50.000000,
 		]
 		vsnd_files = "sounds/abilities/kelvin/kelvin_ice_dome_stop.vsnd"
-		vsnd_duration = 5.026961
 	}
 	Ability.Kelvin.IceDome_CastTarget = 
 	{
@@ -365,7 +335,6 @@
 		volume = -18.000000
 		vsnd_play_loop_release = false
 		vsnd_files = "sounds/abilities/kelvin/frozen_shelter_lp.vsnd"
-		vsnd_duration = 10.027896
 	}
 	Kelvin.ability_ice_dome.modifier_ice_dome.ModifierLoop = 
 	{
@@ -389,7 +358,6 @@
 		volume_falloff_max = 1200.000000
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/kelvin/frozen_shield_lp1_st.vsnd"
-		vsnd_duration = 9.135834
 	}
 	Ability.Kelvin.IceDome_lp2 = 
 	{
@@ -402,7 +370,6 @@
 		volume_fade_out = 0.200000
 		volume = -10.000000
 		vsnd_files = "sounds/abilities/kelvin/frozen_shield_lp2_st.vsnd"
-		vsnd_duration = 7.757500
 	}
 	Ability.Kelvin.IceBeam_lp1_ULT = 
 	{
@@ -415,19 +382,16 @@
 		volume_falloff_max = 1000.000000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/kelvin/ice_lp1_m.vsnd"
-		vsnd_duration = 8.685542
 	}
 	Ability.Kelvin.CrystalShield.Cast = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/kelvin/frozen_shelter_cast.vsnd"
-		vsnd_duration = 2.951125
 	}
 	Ability.Kelvin.CrystalShield.Explode = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/kelvin/frozen_shelter_expire.vsnd"
-		vsnd_duration = 2.003750
 	}
 	Kelvin.MovementFoley = 
 	{
@@ -445,7 +409,6 @@
 			"sounds/player/foley/kelvin/kelvin_foley_08.vsnd",
 			"sounds/player/foley/kelvin/kelvin_foley_09.vsnd",
 		]
-		vsnd_duration = 0.888254
 	}
 	Kelvin.MovementFoleyLight = 
 	{
@@ -462,7 +425,6 @@
 			"sounds/player/foley/kelvin/kelvin_foley_light_08.vsnd",
 			"sounds/player/foley/kelvin/kelvin_foley_light_09.vsnd",
 		]
-		vsnd_duration = 0.809042
 	}
 	Kelvin.JumpLand = 
 	{
@@ -487,7 +449,6 @@
 			"sounds/player/foley/kelvin/kelvin_jump_land_08.vsnd",
 			"sounds/player/foley/kelvin/kelvin_jump_land_09.vsnd",
 		]
-		vsnd_duration = 1.084771
 	}
 	Kelvin.SlideGetUp = 
 	{
@@ -504,7 +465,6 @@
 			"sounds/player/foley/kelvin/kelvin_jump_land_08.vsnd",
 			"sounds/player/foley/kelvin/kelvin_jump_land_09.vsnd",
 		]
-		vsnd_duration = 1.084771
 	}
 	Kelvin.Melee.SwingShort = 
 	{
@@ -536,7 +496,6 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
-		vsnd_duration = 1.062200
 	}
 	Kelvin.Melee.SwingLong = 
 	{
@@ -569,7 +528,6 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
-		vsnd_duration = 1.399773
 	}
 	Kelvin.Skate = 
 	{
@@ -586,7 +544,6 @@
 			"sounds/player/foley/kelvin/kelvin_skate_13.vsnd",
 			"sounds/player/foley/kelvin/kelvin_skate_14.vsnd",
 		]
-		vsnd_duration = 0.619708
 	}
 	Kelvin.Footstep = 
 	{
@@ -626,7 +583,6 @@
 			"sounds/vo/kelvin/emote/kelvin_pain_death_08.vsnd",
 			"sounds/vo/kelvin/emote/kelvin_pain_death_09.vsnd",
 		]
-		vsnd_duration = 1.178005
 	}
 	Kelvin.Effort = 
 	{
@@ -644,7 +600,6 @@
 			"sounds/vo/kelvin/emote/kelvin_effort_general_09.vsnd",
 			"sounds/vo/kelvin/emote/kelvin_effort_general_10.vsnd",
 		]
-		vsnd_duration = 1.283469
 	}
 	Kelvin.Effort.Dash = 
 	{
@@ -664,7 +619,6 @@
 			"sounds/vo/kelvin/emote/kelvin_effort_dash_11.vsnd",
 			"sounds/vo/kelvin/emote/kelvin_effort_dash_12.vsnd",
 		]
-		vsnd_duration = 0.620454
 	}
 	Kelvin.Effort.Melee = 
 	{
@@ -692,7 +646,6 @@
 			"sounds/vo/kelvin/emote/kelvin_effort_melee_small_11.vsnd",
 			"sounds/vo/kelvin/emote/kelvin_effort_melee_small_12.vsnd",
 		]
-		vsnd_duration = 1.746531
 	}
 	Kelvin.Wpn.BulletWhizby = 
 	{
@@ -711,6 +664,5 @@
 			"sounds/weapons/kelvin/whizby/kelvin_weapon_whizby_groupB-009.vsnd",
 			"sounds/weapons/kelvin/whizby/kelvin_weapon_whizby_groupB-010.vsnd",
 		]
-		vsnd_duration = 0.646054
 	}
 }

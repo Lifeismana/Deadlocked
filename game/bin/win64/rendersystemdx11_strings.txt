@@ -119,7 +119,6 @@
  A]A\_
  A^A\[
  A^A\_
- A^A\_^[
  A^A]A\^[
  A^][
  A^^[
@@ -129,6 +128,7 @@
  A^_^H
  A^_^][
  A_A\_
+ A_A\_^[
  A_A\_^]
  A_A]A\_^
  A_A]^][
@@ -188,6 +188,7 @@
 !( height % 4 )
 !( width % 4 )
 !(( srcDesc.Format != destDesc.Format ) || ( nFlags & ( COPY_TEXTURE_FLAGS_FLIP_X | COPY_TEXTURE_FLAGS_FLIP_Y ) ) != 0)
+!=r}A
 !>6'Y
 !FAILED( hr )
 !GetStreamBuilder()->HasStreamStarted()
@@ -350,6 +351,7 @@ $^fE;
 &YA1H
 &xr(*
 ',=?k
+(	V_log2_uint
 ( ( m_nFlags & (TSPEC_VOLUME_TEXTURE|TSPEC_TEXTURE_ARRAY) ) != 0 ) || ( m_nDepth == 1 )
 ( ( m_nFlags & TSPEC_VOLUME_TEXTURE ) == 0 ) || ( ( m_nFlags & TSPEC_TEXTURE_ARRAY ) == 0 )
 ( ( poolType == POOLED_BACKING_STORE_VERTEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_VERTEX_FIXED_SIZE ) ) || ( ( poolType == POOLED_BACKING_STORE_INDEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_INDEX_FIXED_SIZE ) )
@@ -532,7 +534,6 @@ $^fE;
 (|$`E
 (|$`H
 (|$pL
-)	V_log2_uint
 )$$fD
 ),$fD
 )4$fD
@@ -685,8 +686,8 @@ $^fE;
 *D9'u
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
-*pSrc == 's'
 *pView != nullptr
++	V_logd
 +C$Hc
 +D$8A
 +D$p;
@@ -700,7 +701,7 @@ $^fE;
 +h->|
 +o'q)}
 +v$x+v$xv$+xv+$xv$+x+$vx+$vx$v+x+$vx$+vx+v $+v $v $+v +$v $++$ v+$ v$ v++$ v$+ v+xv$+ v$v$ +v+ $v$ ++x$v+ $v$v ++ $v$ +v
-,	V_logd
+,	V_logf
 , channels = 
 , height = 
 ,*/vu
@@ -714,7 +715,6 @@ $^fE;
 ,Icl$
 ,W5y+
 ,X< w
--	V_logf
 -- ----!!!"""###$$-%%---&'-(())***+++---,
 ---	-
 -4gpu
@@ -772,7 +772,6 @@ $^fE;
 -vulkan
 ..om?
 .00cfg
-.5cU!
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
 .?AU?$_InitialTaskHandle@XV<lambda_60c5de84e69e46aa92419d47e2f3ad51>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -1108,11 +1107,17 @@ $^fE;
 .xJ>Hf
 .xdata
 .xdata$x
-/%7W 
+/%EZ 
+/%gW 
+/%hs-
+/-7V 
 /2GG>!B
-/5'Z 
-/5KW 
-/=~8!
+/5#Y2
+/5;D%
+/5WZ 
+/5{W 
+/=&<!
+/=(<!
 />58d%
 /TF<)VGy#WH
 0 0 0
@@ -1170,6 +1175,7 @@ $^fE;
 1.2.11
 130801120000Z
 1<.	/>:
+1@xovGD
 1A26b
 1wsHp
 210429000000Z
@@ -1177,7 +1183,7 @@ $^fE;
 220323000000Z
 220801000000Z
 230714000000Z
-240722225057Z0/
+240723234943Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1203,11 +1209,12 @@ $^fE;
 6:%+H
 6I]Dc
 6OB,n_
+7	V_powd
 7&F|If
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 7xicuU
-8	V_powd
+8	V_powf
 8"3hrf
 8-uCH
 8-uGH
@@ -1215,7 +1222,6 @@ $^fE;
 8A\_][
 8A\_][H
 8A\_^[
-8A]A\^]
 8A^_][
 8A^_^[
 8A_A^A]A\_^[]
@@ -1234,11 +1240,13 @@ $^fE;
 8b  16-May-2010
 8ke?;
 8vtext
-9	V_powf
+9	V_qsort
 9)~P3
 93t6H
 93t=H
 93tdH
+95\y,
+95uS,
 97tmD
 98t H
 98tkH
@@ -1260,6 +1268,7 @@ $^fE;
 9^ t"H
 9_ u!D9
 9_8~Ufff
+9i8|AH
 9k8~QH
 9k8~^
 9p@u+
@@ -1272,7 +1281,7 @@ $^fE;
 9t$Pu	
 9{\~9H
 9|$Hu(H
-:	V_qsort
+:	V_qsort_s
 :>)*	v
 :>t6k'
 :ALPHD
@@ -1283,9 +1292,8 @@ $^fE;
 :VP8 tP
 :VP8LtHD
 :VP8X
-;	V_qsort_s
 ;.u1L
-;=,j+
+;=!]+
 ;?0123456789:;<=>?
 ;Cxr*H
 ;CxsB
@@ -1362,7 +1370,6 @@ $^fE;
 ?7{KV
 ?8bunz8
 ?:kP<
-?=$\j
 ??0CMemoryStack@@QEAA@XZ
 ??0CStringPool_CI@@QEAA@XZ
 ??0CTSListBase@@QEAA@XZ
@@ -1629,7 +1636,6 @@ $^fE;
 @USWATH
 @USWH
 @UVATAUAWH
-@UVATAUH
 @UVAUH
 @UVAVH
 @UVWATAUAVAWH
@@ -1643,6 +1649,7 @@ $^fE;
 @UWATAVH
 @UWAVH
 @VATH
+@VAVH
 @VAWH
 @VWATAVAWH
 @VWATH
@@ -1741,12 +1748,12 @@ A\_[]
 A\_^[]
 A\_^]
 A\_^][
-A]A\[]
 A]A\]
 A]A\^[]
 A]A\_]
 A]A\_^
 A]A\_^[
+A]A\_^[]
 A]A\_^]
 A]A\_^][
 A]_[]
@@ -1895,7 +1902,7 @@ B49A4u
 BC6H_HueShiftFixup_BlockHasDecodingErrors
 BC6H_HueShiftFixup_QuantizeBlock
 BC?>6t9^	c:>
-BD9%nEF
+BD9%n5F
 BF>^G
 BGR565
 BGR888
@@ -1968,109 +1975,109 @@ C89C@}
 C8;C4s
 C8H9C@u
 C8H9C@u	
-C:\buildworker\citadel_staging_win64\build\_build_\rendersystem\_vpc_rendersystemdx11\default\win64\_msvc_\Retail\rendersystemdx11.pdb
-C:\buildworker\citadel_staging_win64\build\_build_\rendersystem\_vpc_rendersystemdx11\default\win64\_schema_\release\rendersystemtypes_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\src\bitmap\bitmap.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\colorconversion.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\imageformat.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\psd.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\tiffloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\pngloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\color_conversion.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\kmeansclustering.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\bitmap\floatbitmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\math_pfns.h
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\indexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\texturebits.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\vertexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\vtex_file_format.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\resourcehandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\weakhandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\byteswap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\concommand.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\memstack.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadtoolstypes.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tsfastpushqueue.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tspointerlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlfixedmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlintrusivelist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlslice.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utltshash.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\commandstreambuilder.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\colorformatdx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\dxfunctions.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\dxfunctions.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\forceloadshaderdx11.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\fsr2upscaler.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\indexbufferdx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\inputlayoutdx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\nvreflexdx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\rendercontextdx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\rendercontextdx11.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\rendercontextdx11_software.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\renderdevicedx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\renderdevicemgrdx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\renderthreaddx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\renderthreaddx11.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\texturedx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\texturedx11.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\dx\vertexbufferdx11.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\fallbacktexturehelper.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\indexbufferbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\indexbufferbase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\inputlayoutbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\inputlayoutbase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\occlusionquerymgr.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\poolallocator.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\rendercontextbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\rendercontextbase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderdevicebase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderdevicebase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderdevicemgrbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderdocapi.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderhardwareconfig.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderresource.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderstatehelper.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderthreadbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderthreadbase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\sheetcache.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(2423):Error loading texture: %s
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3449):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3481):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3501):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3519):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3538):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3559):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3570):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3581):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturestreaminghelper.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vertexbufferbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vertexbufferbase.h
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcefile.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utlsoacontainer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\_build_\rendersystem\_vpc_rendersystemdx11\default\win64\_msvc_\Retail\rendersystemdx11.pdb
+C:\buildworker\citadel_rel_win64\build\_build_\rendersystem\_vpc_rendersystemdx11\default\win64\_schema_\release\rendersystemtypes_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\src\bitmap\bitmap.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\colorconversion.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\imageformat.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\psd.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\tiffloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\pngloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\color_conversion.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\kmeansclustering.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\bitmap\floatbitmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\indexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\texturebits.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vtex_file_format.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\resourcehandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\weakhandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\concommand.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\memstack.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadtoolstypes.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tsfastpushqueue.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tslist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tspointerlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlfixedmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlintrusivelist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utllinkedlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlslice.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utltshash.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\commandstreambuilder.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\colorformatdx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\dxfunctions.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\dxfunctions.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\forceloadshaderdx11.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\fsr2upscaler.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\indexbufferdx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\inputlayoutdx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\nvreflexdx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\rendercontextdx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\rendercontextdx11.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\rendercontextdx11_software.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\renderdevicedx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\renderdevicemgrdx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\renderthreaddx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\renderthreaddx11.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\texturedx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\texturedx11.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\dx\vertexbufferdx11.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\fallbacktexturehelper.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\indexbufferbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\indexbufferbase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\inputlayoutbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\inputlayoutbase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\occlusionquerymgr.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\poolallocator.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\rendercontextbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\rendercontextbase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderdevicebase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderdevicebase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderdevicemgrbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderdocapi.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderhardwareconfig.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderresource.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderstatehelper.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderthreadbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderthreadbase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\sheetcache.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(2423):Error loading texture: %s
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3449):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3481):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3501):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3519):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3538):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3559):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3570):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3581):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturestreaminghelper.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vertexbufferbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vertexbufferbase.h
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcefile.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schematype.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utlsoacontainer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
 C<;C4A
 CByteswap::SwapBufferToTargetEndian
 CCIR601 sampling not implemented yet
@@ -2125,7 +2132,7 @@ CInputLayoutBase::Release
 CInputLayoutDict<class CInputLayoutDx11>::ConcatentateInputLayouts
 CInputLayoutDict<class CInputLayoutDx11>::CreateInputLayout
 CInputLayoutDx11::DoesSemanticExist
-CKMeansClustering::AssignVectorsToClusters(), C:\buildworker\citadel_staging_win64\build\src\mathlib\kmeansclustering.cpp:155
+CKMeansClustering::AssignVectorsToClusters(), C:\buildworker\citadel_rel_win64\build\src\mathlib\kmeansclustering.cpp:155
 CKMeansClustering::FindClusters
 CKMeansClustering::PopulateEmptyClusters
 CL:>8
@@ -2171,7 +2178,6 @@ CRenderContextBase::SetStateBundles
 CRenderContextBase::SetViewports
 CRenderContextBase::SubrectPixelDifference
 CRenderContextBase::UnlockDynamicConstantBuffer
-CRenderContextBase::VaSetDebugString
 CRenderContextBase::~CRenderContextBase
 CRenderContextDx11:: Cannot resolve from a non-MSAA buffer to an MSAA buffer!
 CRenderContextDx11:: Trying to copy from a rect that is outside of the src texture
@@ -2333,7 +2339,6 @@ CRenderThreadDx11::CopyToStagingResource(233): Error! NULL texture pointer sent 
 CRenderThreadDx11::CopyToStagingResource(258): Warning: Failed to create staging texture %d(%x)
 CRenderThreadDx11::CopyToStagingResource(263): Warning: GetDeviceRemovedReason: %d(%x)
 CRenderThreadDx11::CopyToStagingResource(287): Warning: Failed to create staging texture %d(%x)
-CRenderThreadDx11::Execute(744): 
 CRenderThreadDx11::ManageQueries
 CRenderThreadDx11::OnAsyncReadback
 CRenderThreadDx11::OnAsyncReadback(162): 
@@ -3077,6 +3082,7 @@ D8|$<tJI
 D8|$Ht
 D8|$`t
 D9 u2D9
+D9%&x,
 D9(tT
 D9L$ 
 D9aXt3E
@@ -3415,15 +3421,15 @@ FloatBitMap_t::RowPtrOrDummy
 FloatBitMap_t::WriteToBuffer
 FloatBitMap_t::WriteToBuffer(961): Unsupported color format "%s", skipping!
 FloatBitMap_t::WriteToBuffer: Received improper buffer size %s (expecting %s), skipping!
-FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1638
-FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1750
+FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1638
+FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1750
 FloatBitMap_t::WriteToBufferBGRA
 FloatBitMap_t::WriteToBufferDXT_atitc
 FloatBitMap_t::WriteToBufferDXT_atitc(1018): Error! Temp texture is %d bytes when ATI's lib requires %d bytes!
 FloatBitMap_t::WriteToBufferDXT_atitc(1103): Unsupported output color format "%s"!
 FloatBitMap_t::WriteToBufferDXT_atitc(1112): Error! Allocated %llu bytes when ATI's lib requires %d bytes!
 FloatBitMap_t::WriteToBufferDXT_atitc(1120): Error %d returned from ATI_TC_ConvertTexture()!
-FloatBitMap_t::WriteToBufferETC(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1874
+FloatBitMap_t::WriteToBufferETC(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1874
 FloatBitMap_t::WriteToBufferI
 FloatBitMap_t::WriteToBufferIA
 FloatBitMap_t::WriteToBufferR16
@@ -3609,25 +3615,30 @@ H-^Eu
 H3N I
 H4IcH8H
 H9(tO
+H9-p&G
 H9.u4
 H90u'
-H95 ;F
-H95$4F
-H95'qB
-H95+6F
-H95@;F
-H95h;F
+H95 +F
+H95$$F
+H95+&F
+H95@+F
+H95h+F
 H97u+A
 H98t$H
-H9="j/
-H9=2u/
-H9=Jl/
-H9=Jm/
-H9=Jz/
-H9=SCF
-H9=Zw/
-H9=jn/
-H9=jr/
+H9="l/
+H9=*Y/
+H9=:`/
+H9=:d/
+H9=JT/
+H9=R[/
+H9=S3F
+H9=Za/
+H9=bf/
+H9=bh/
+H9=jX/
+H9=jg/
+H9=rV/
+H9=zc/
 H9D$0
 H9D$8t%
 H9D$8t0
@@ -3769,6 +3780,7 @@ HostComputer
 HostStateMgr001
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
+I	V_snprintf
 I+4$H
 I91u9I
 I9F s
@@ -3953,7 +3965,6 @@ IsValidLocale
 IsValidLocaleName
 IssueTextureLoadRequest
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
-J	V_snprintf
 J%f%f%f%f%f%f%f%f
 J>@G_
 JD9#u
@@ -4009,7 +4020,6 @@ L$ SUWATAUAVAWH
 L$ SVWATAUAVAWH
 L$ SVWH
 L$ USVWATAUAVAWH
-L$ USWH
 L$ UVAUAVH
 L$ UVWATAUAVAWH
 L$ UVWATAVAWH
@@ -4145,10 +4155,10 @@ L80H;
 L80L;
 L80M;
 L9#tUH
+L9%+E;
 L93uf
-L95,gB
-L95AfB
 L97vH
+L9=&}.
 L9?tR
 L9AHA
 L9aHA
@@ -4164,7 +4174,6 @@ L9kPu!H
 L9kPuqL
 L9k`u!H
 L9k`uqL
-L9p u
 L9t$ A
 L9uxt
 L9vPteL9v`t_L9vhtYH
@@ -4422,10 +4431,10 @@ NvAPI_D3D_SetLatencyMarker returned error '%d'.
 NvAPI_D3D_SetLatencyMarker( PC_LATENCY_PING ) returned error '%d'.
 NvAPI_D3D_SetSleepMode() return error '%d'
 NvAPI_D3D_Sleep returned error '%d'.
+O	V_sscanf
 O!t/H
 O*9y]
 O8HcY
-O=%j+
 OF>;^
 OUTSTANDING_HOOKUP_REQUEST 
 OVER_BUDGET
@@ -4456,7 +4465,6 @@ OutputDebugStringW
 Overall System GPU memory use:
 Overflow of the sheet cache texture. Releasing and starting over. This is ok in asset browser, not so ok if the game is triggering this!
 Overflow of the sheet cache texture: Try increasing SheetCacheTextureRows in gameinfo.gi (current value %d)!
-P	V_sscanf
 P89P@}M
 P8H=vtex
 P>q_Y~
@@ -4659,7 +4667,7 @@ RGBA8888_LINEAR
 RGBA8888_UINT
 RGBX8888
 RH@8t$PL
-RSDS#
+RSDS\>a
 RST%d
 R_T5Y
 RaiseException
@@ -4835,6 +4843,7 @@ SVWATAUAVAWH
 SVWATAUAVH
 SVWATAUAWH
 SVWATAVH
+SVWATAWH
 SVWAVH
 SVWAWH
 SV_InstanceID
@@ -4944,6 +4953,7 @@ SwapChainColor.vtex
 SwapChainDepth.vtex
 SwapChainTrueColor.vtex
 SwizzlePlanarScanlineToInterleaved
+T	V_stricmp_fast
 T$ D;
 T$ E3
 T$ Ei
@@ -5001,8 +5011,8 @@ T$pD+
 T$pfD
 T$xD;{
 T$xE3
-T%,2!
-T%yZ 
+T%\2!
+T-#Y 
 TD u"E;
 TEX read request: %d KB; %s
 TEXMAN: %s LoadStreamingData (%s)
@@ -5127,7 +5137,6 @@ Trying to dispatch compute shader without binding one first!
 Trying to set dxlevel (%d) which is higher than the card can support (%d)!
 Trying to set dxlevel (%d) which is lower than the card can support (%d)!
 Tuesday
-U	V_stricmp_fast
 U I;U(
 U t	Ak
 U%	>G
@@ -5142,7 +5151,6 @@ UATAVAWH
 UAUAWH
 UAVAWH
 UNKNOWN
-USATAUH
 USAUAWH
 USAVAWH
 USAVH
@@ -5156,6 +5164,7 @@ USVATH
 USVAWH
 USVWATAUAVAWH
 USVWATAUAWH
+USVWATAUH
 USVWATAVAWH
 USVWATI
 USVWAVH
@@ -5232,6 +5241,7 @@ UserSettingsPathID
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
+V	V_strlower_fast
 V6E>`"(5
 VATAUAVAWH
 VATAUAVH
@@ -5334,10 +5344,7 @@ VsInputSignatureElement_t::Schema_VerifyBindingIsRegistered
 VsInputSignature_t
 VsInputSignature_t::Schema_VerifyBindingIsRegistered
 Vulkan
-W	V_strlower_fast
 W%	s;M@
-W5| <
-W=u <
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
@@ -5386,12 +5393,12 @@ X AVH
 X D8e
 X VAVAWH
 X!t5~
-X%0Y 
-X%JG!
-X%u;'
-X%v!'
-X-HY 
-X5'>'
+X%`Y 
+X%zG!
+X-]<'
+X-xY 
+X5#D%
+X5w>'
 XA^A]^]
 XA^_^[
 XA_A\_[
@@ -5409,14 +5416,13 @@ XYZ, Luv
 X_^[]
 X|$ A
 X|$8E
-Y%C!'
-Y%\<'
-Y57>'
-Y5Q>'
+Y%>U 
+Y--<'
+Y-l$'
+Y5)?'
 Y9"SD
-Y=#<!
-Y=:2&
-Y=r2C
+Y=Qt)
+Y=S<!
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -5440,6 +5446,7 @@ ZeroStride Vertex buffer created!
 Zod(^?
 Zpm"U
 [	UoA
+[	V_strtoi64
 [    Discard |    NoTear]
 [*ncd>0
 [-&LMb#{'
@@ -5449,7 +5456,6 @@ Zpm"U
 [FlipDiscard | AllowTear]
 [K]taM?
 [aOni*{
-\	V_strtoi64
 \ u&H9
 \$ @2
 \$ AVH
@@ -5534,7 +5540,8 @@ Zpm"U
 \$pE3
 \$pHc
 \$xu3M
-\5\j&
+\5=D%
+\=G8!
 \mfpmp.exe
 ])6M>&
 ]>)2X
@@ -5545,6 +5552,7 @@ Zpm"U
 ]oB;\7(
 ^,tyI
 ^<V7w
+^R['i
 ^RfN>
 ^oEZ_
 _8Hcs
@@ -6069,6 +6077,7 @@ future already retrieved
 gACol[row][pix].b == 0
 gACol[row][pix].g == 0
 gACol[row][pix].r == 0
+gI1n^
 g_TSPointerListNodes.IsAllocationWithinPool( pCurrent )
 g_pApplication->GetGameMode( ) == APPLICATION_IS_GAME
 g_pEngineServiceMgr is NULL. Display mode information unavailable
@@ -6283,6 +6292,7 @@ lineOrder
 localize
 log10
 ltmX.
+lzss=
 m0k0$
 mL+7H
 mPu=H
@@ -6514,48 +6524,48 @@ nvapi_QueryInterface
 n|$`fA
 o KPBf
 o$$fA
-o%+(&
-o%+=&
-o%9&&
-o%:}&
-o%?2&
-o%D_&
-o%G0>
-o%Jo&
-o%Ms&
-o%W6'
-o%zv&
-o%|I&
+o%-9&
+o%1,&
+o%4<>
+o%F4>
+o%di&
+o%jl&
+o%lU&
+o%nA&
+o%w.>
+o%{(&
+o%{=&
 o,$fD
-o-/!$
-o-?J&
-o-O,&
-o-Sm&
-o-`!&
-o-ei&
-o-u_&
-o-wA&
+o-'z&
+o-20&
+o-;o&
+o-`n*
+o-e9&
+o-oF&
 o47Lc
-o5'.&
-o51H&
-o5<v&
-o5=}0
-o5?!&
-o5QL&
-o5Tm&
-o5xC&
-o=!.:
-o="P:
-o=#e&
-o=>v&
-o=Nk&
-o=No&
-o=^#&
-o=`]&
-o=jC:
-o=p=8
-o=pT&
-o=r5&
+o5 J&
+o53F&
+o55J&
+o5;7'
+o5V_&
+o5Vo*
+o5eS&
+o5o4&
+o5w.&
+o=	C&
+o=*g&
+o=-0&
+o=3t&
+o=Fm&
+o=GE&
+o=JC:
+o=Ub&
+o=X_&
+o=],&
+o=se&
+o=uF:
+o=zR:
+o=}?:
 oAPfD
 oD$ f
 oD$ fA
@@ -6731,7 +6741,6 @@ q!T9MiZ
 qS>g?h3
 qangle
 r	Vr.>T
-r3 %H
 r5D9K
 r7f;\$|
 r:f;\$|
@@ -7090,12 +7099,12 @@ t;@8w
 t;LcF
 t?HcS
 t@9+u,9s
-t@H95#HC
+t@H95
 t@McO4
-tAH9=AmA
+tAH9=
 tBMcW<IcO@Lc
 tC@8-
-tC@85Rt%
+tC@85
 tDD8%
 tDD85
 tEHcR
@@ -7106,11 +7115,11 @@ tID8-
 tIf9wbH
 tKJcD
 tNfE;
-tOD8-63$
-tOD8-n@$
+tOD8-
+tOD8-f3$
 tOt'F
 tP@87uKH
-tQH95G6F
+tQH95G&F
 tQfD9 tK
 tRLcY
 tSH9X t
@@ -7120,6 +7129,7 @@ tSH9XXt
 tSf91tNH
 tU;Cxr
 tU;\$0tH
+tUfff
 t\HcL$`H
 t^D;@
 t_M9>t
@@ -7169,7 +7179,7 @@ trying to bind a deleted shader
 tvH9}
 twIcF
 tyfD9 tsH
-t}H9=62F
+t}H9=6"F
 u	fD;A
 u"D;{
 u#f;N
@@ -7289,7 +7299,7 @@ wine_get_version
 wlt\D
 wn>Jj
 workGroupOffset
-wpD8-
+wpD8-W
 wpL9w`t$HcO 
 writing renderdoc capture to %s
 wrong protocol type
@@ -7337,7 +7347,6 @@ y >= 0 && y < m_nHeight
 y6uHI
 y899u
 y:gt	3
-y@9i8|AH
 y\PD>!
 ys == 0
 z%u#H
@@ -7483,6 +7492,7 @@ zY;>u:m
 }gE8}
 }q;{$
 ~ $s%r
+~$E>#
 ~(fE;
 ~,*u<I
 ~,*uEI

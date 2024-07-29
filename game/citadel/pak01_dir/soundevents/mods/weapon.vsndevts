@@ -22,7 +22,6 @@
 			"sounds/mods/weapon/electric/proc4.vsnd",
 			"sounds/mods/weapon/electric/proc5.vsnd",
 		]
-		vsnd_duration = 1.505875
 	}
 	Mods.Weapon.Electric.Bullets.Victim.Impact = 
 	{
@@ -45,14 +44,12 @@
 			"sounds/mods/weapon/electric/impact_3.vsnd",
 			"sounds/mods/weapon/electric/impact_4.vsnd",
 		]
-		vsnd_duration = 1.703625
 	}
 	Mods.Weapon.Beserk = 
 	{
 		base = "Base.Mod.3d"
 		volume = -21.000000
 		vsnd_files = "sounds/mods/weapon/beserk/cast.vsnd"
-		vsnd_duration = 3.087208
 	}
 	Mods.Weapon.Fervor.ActivateBonuses = 
 	{
@@ -64,7 +61,6 @@
 		pitch_rand_max = 0.020000
 		volume = -3.000000
 		vsnd_files = "sounds/mods/weapon/fervor/activate.vsnd"
-		vsnd_duration = 2.719875
 	}
 	Mods.Weapon.ExplosiveBullets.Explode = 
 	{
@@ -78,7 +74,6 @@
 		pitch_rand_max = 0.100000
 		volume_fade_out = 0.400000
 		vsnd_files = "sounds/mods/weapon/explosive/impact.vsnd"
-		vsnd_duration = 1.898957
 	}
 	Mods.Weapon.Bleeding.Bullets.Lp = 
 	{
@@ -97,14 +92,14 @@
 		volume = -5.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Mods.Weapon.Silencer.Dur.End = 
 	{
 		base = "Base.Mod.Tier4.3d"
 		volume = -9.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Mods.Weapon.Surging.Power.Mod.Start = 
 	{
@@ -112,33 +107,30 @@
 		volume = -1.000000
 		delay = 0.050000
 		vsnd_files = "sounds/mods/weapon/surging_power/mod_start.vsnd"
-		vsnd_duration = 2.371271
 	}
 	Mods.Weapon.Surging.Power.Mod.Dur.Lp = 
 	{
 		base = "Base.Mod.Tier4.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Mods.Weapon.Surging.Power.Mod.End = 
 	{
 		base = "Base.Mod.Tier4.3d"
 		volume = -1.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Mods.Weapon.Galvanic.Storm.Confirmation = 
 	{
 		base = "Base.Mod.Tier4.2d"
 		volume = -6.000000
 		vsnd_files = "sounds/mods/weapon/galvanic_storm/proc_2d_victim.vsnd"
-		vsnd_duration = 2.572083
 	}
 	Mods.Weapon.Galvanic.Storm.Slow.Confirmation = 
 	{
 		base = "Base.Mod.Tier4.2d"
 		vsnd_files = "sounds/mods/weapon/galvanic_storm/slow_mod_start.vsnd"
-		vsnd_duration = 2.144938
 	}
 	Mods.Weapon.Galvanic.Storm.Proc = 
 	{
@@ -152,27 +144,23 @@
 			"sounds/mods/weapon/galvanic_storm/proc_3d_04.vsnd",
 			"sounds/mods/weapon/galvanic_storm/proc_3d_05.vsnd",
 		]
-		vsnd_duration = 1.505875
 	}
 	Mods.Weapon.Galvanic.Storm.Slow.Victim = 
 	{
 		base = "Base.Mod.Tier4.Proc.2d"
 		vsnd_files = "sounds/mods/weapon/galvanic_storm/slow_mod_start.vsnd"
-		vsnd_duration = 2.144938
 	}
 	Mods.Weapon.Leveler.Headshot.Confirmation = 
 	{
 		base = "Base.Mod.Tier4.2d"
 		volume = -7.000000
 		vsnd_files = "sounds/mods/weapon/leveler/headshot.vsnd"
-		vsnd_duration = 1.303833
 	}
 	Mods.Weapon.Leveler.Headshot.Victim = 
 	{
 		base = "Base.Mod.Tier4.2d"
 		volume = -8.000000
 		vsnd_files = "sounds/mods/weapon/leveler/headshot.vsnd"
-		vsnd_duration = 1.303833
 	}
 	Mods.Weapon.HeadshotBooster.Headshot.Confirmation = 
 	{
@@ -180,7 +168,6 @@
 		volume = -9.000000
 		pitch = 1.500000
 		vsnd_files = "sounds/mods/weapon/leveler/headshot.vsnd"
-		vsnd_duration = 1.303833
 	}
 	Mods.Weapon.HeadshotBooster.Headshot.Victim = 
 	{
@@ -188,7 +175,6 @@
 		volume = -10.000000
 		pitch = 1.500000
 		vsnd_files = "sounds/mods/weapon/leveler/headshot.vsnd"
-		vsnd_duration = 1.303833
 	}
 	Mods.Weapon.BurstFire.Perfect = 
 	{
@@ -208,7 +194,6 @@
 		pitch_modulation_max = 2.000000
 		pitch = 0.750000
 		vsnd_files = "sounds/guardian/tier1/wpn/whizby_01.vsnd"
-		vsnd_duration = 0.640522
 	}
 	Mods.Weapon.Tech.Overflow.Mod.Start = 
 	{
@@ -225,19 +210,16 @@
 	{
 		base = "Base.Mod.Tier4.3d"
 		vsnd_files = "sounds/mods/weapon/tech_overflow/mod_start_gears.vsnd"
-		vsnd_duration = 0.455021
 	}
 	Mods.Weapon.Tech.Overflow.Mod.Start.Growl = 
 	{
 		base = "Base.Mod.Tier4.3d"
 		vsnd_files = "sounds/mods/weapon/tech_overflow/mod_start_growl.vsnd"
-		vsnd_duration = 4.488854
 	}
 	Mods.Weapon.Tech.Overflow.Mod.Start.Sub = 
 	{
 		base = "Base.Mod.Tier4.3d"
 		vsnd_files = "sounds/mods/weapon/tech_overflow/mod_start_sub.vsnd"
-		vsnd_duration = 1.850542
 	}
 	Mods.Weapon.Tech.Overflow.Mod.Lp = 
 	{
@@ -245,25 +227,22 @@
 		volume = -15.000000
 		volume_falloff_max = 2900.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Mods.Weapon.Tech.Overflow.Mod.End = 
 	{
 		base = "Base.Mod.Tier4.3d"
 		vsnd_files = "sounds/mods/weapon/tech_overflow/mod_end.vsnd"
-		vsnd_duration = 4.667354
 	}
 	Mods.Weapon.Detention.Rounds.Mod.Start = 
 	{
 		base = "Base.Mod.Tier3.3d"
 		vsnd_files = "sounds/mods/weapon/detention_rounds/mod_start.vsnd"
-		vsnd_duration = 4.126458
 	}
 	Mods.Weapon.Detention.Rounds.Mod.Dur.Lp = 
 	{
 		base = "Base.Mod.Tier3.3d"
 		vsnd_files = "sounds/mods/weapon/detention_rounds/mod_dur_lp.vsnd"
-		vsnd_duration = 0.951083
 	}
 	Mods.Weapon.Detention.Rounds.Mod.End = 
 	{
@@ -279,14 +258,12 @@
 		base = "Base.Mod.Tier3.3d"
 		volume = -6.000000
 		vsnd_files = "sounds/mods/weapon/detention_rounds/mod_end_rock.vsnd"
-		vsnd_duration = 0.698417
 	}
 	Mods.Weapon.Detention.Rounds.Mod.End.Water = 
 	{
 		base = "Base.Mod.Tier3.3d"
 		volume = -3.000000
 		vsnd_files = "sounds/mods/weapon/detention_rounds/mod_end_water.vsnd"
-		vsnd_duration = 2.615000
 	}
 	Mods.Weapon.OverdriveClip.Reload = 
 	{
@@ -317,7 +294,6 @@
 		pitch_rand_max = 0.020000
 		volume = 1.000000
 		vsnd_files = "sounds/mods/weapon/fervor/activate.vsnd"
-		vsnd_duration = 2.719875
 	}
 	Mods.Weapon.KineticSash.Triggered = 
 	{
@@ -325,7 +301,6 @@
 		volume = -1.000000
 		pitch = 1.300000
 		vsnd_files = "sounds/mods/weapon/kinetic_sash/activate.vsnd"
-		vsnd_duration = 1.645563
 	}
 	Mods.Weapon.Thermal.Detonator.Cast = 
 	{
@@ -341,20 +316,17 @@
 		base = "Base.Mod.3d"
 		volume = -1.000000
 		vsnd_files = "sounds/mods/weapon/thermal_det/cast_ping.vsnd"
-		vsnd_duration = 1.910771
 	}
 	Mods.Weapon.Thermal.Detonator.Cast.Voice = 
 	{
 		base = "Base.Mod.3d"
 		volume = -1.000000
 		vsnd_files = "sounds/mods/weapon/thermal_det/cast_voice.vsnd"
-		vsnd_duration = 0.832902
 	}
 	Mods.Weapon.Thermal.Detonator.Proj.Lp = 
 	{
 		base = "Base.Mod.3d"
 		vsnd_files = "sounds/mods/weapon/thermal_det/proj_lp.vsnd"
-		vsnd_duration = 4.669093
 	}
 	Mods.Weapon.Thermal.Detonator.Explode = 
 	{
@@ -370,21 +342,18 @@
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/mods/weapon/thermal_det/exp_base.vsnd"
-		vsnd_duration = 2.291361
 	}
 	Mods.Weapon.Thermal.Detonator.Explode.Layer = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/mods/weapon/thermal_det/exp_layer.vsnd"
-		vsnd_duration = 1.267506
 	}
 	Mods.Weapon.FleetfootBoots.Lp = 
 	{
 		base = "Base.Mod.3d"
 		volume = 0.000000
 		vsnd_files = "sounds/mods/weapon/fleetfoot_boots/lp.vsnd"
-		vsnd_duration = 6.200657
 	}
 	Mods.Weapon.TargetedSilence.Hit = 
 	{
@@ -398,14 +367,12 @@
 		spread_max = 230.000000
 		spread_min_value = 0.000000
 		vsnd_files = "sounds/mods/general/silenced_hit.vsnd"
-		vsnd_duration = 2.663356
 	}
 	Mods.Weapon.TargetedSilence.Cast = 
 	{
 		base = "Base.Mod.Tier3.3d"
 		volume = 8.000000
 		vsnd_files = "sounds/mods/weapon/silencer/silence_selected.vsnd"
-		vsnd_duration = 2.155896
 	}
 	Mods.Weapon.Thermal.Detonator.Lp = 
 	{
@@ -440,7 +407,6 @@
 				3.000000,
 			],
 		]
-		vsnd_duration = 11.904399
 	}
 	Mods.Weapon.Warp.Stone.Cast.Delay = 
 	{
@@ -448,7 +414,6 @@
 		volume = -9.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/mods/armor/meteor_strike/cast_energy.vsnd"
-		vsnd_duration = 1.777052
 	}
 	Mods.Weapon.Warp.Stone.Cast = 
 	{
@@ -456,7 +421,6 @@
 		volume = -5.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/mods/armor/meteor_strike/cast_boing.vsnd"
-		vsnd_duration = 1.347438
 	}
 	Mods.Weapon.TargetedSilence.Target.Lp = 
 	{
@@ -497,7 +461,6 @@
 				3.000000,
 			],
 		]
-		vsnd_duration = 6.578254
 	}
 	Mods.Weapon.TargetedSilence.Target.Start = 
 	{
@@ -513,7 +476,6 @@
 		delay_rand_min = -3.000000
 		delay_rand_max = 0.000000
 		vsnd_files = "sounds/mods/weapon/silencer/silence_selected.vsnd"
-		vsnd_duration = 2.155896
 	}
 	Mods.Weapon.TargetedSilence.Projectile.Lp = 
 	{
@@ -529,7 +491,6 @@
 		delay_rand_min = -3.000000
 		delay_rand_max = 0.000000
 		vsnd_files = "sounds/mods/weapon/silencer/silence_travel_lp.vsnd"
-		vsnd_duration = 0.932449
 	}
 	Mods.Weapon.OnslaughtAura.Cast_Layer = 
 	{
@@ -546,7 +507,6 @@
 		pitch_modulation_max = 0.000000
 		delay = 0.030000
 		vsnd_files = "sounds/mods/weapon/onslaught_aura/activate.vsnd"
-		vsnd_duration = 2.198186
 	}
 	Mods.Weapon.OnslaughtAura.Cast = 
 	{
@@ -573,7 +533,6 @@
 		spread_min_value = 0.000000
 		pitch_modulation_max = 0.000000
 		vsnd_files = "sounds/mods/weapon/fleetfoot_boots/activate.vsnd"
-		vsnd_duration = 3.336281
 	}
 	Mods.Weapon.FleetfootBoots.Cast = 
 	{
@@ -596,7 +555,6 @@
 		spread_min_value = 0.000000
 		delay = 0.050000
 		vsnd_files = "sounds/mods/weapon/surging_power/cast.vsnd"
-		vsnd_duration = 2.993537
 	}
 	Mods.Weapon.Surging.Power.Cast = 
 	{
@@ -615,7 +573,6 @@
 		pitch = 0.900000
 		delay = 0.050000
 		vsnd_files = "sounds/mods/weapon/silencer/silence_selected.vsnd"
-		vsnd_duration = 2.155896
 	}
 	Mods.Weapon.Silencer.Cast = 
 	{
@@ -643,7 +600,6 @@
 		pitch_modulation_max = 0.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/mods/general/use_weapon.vsnd"
-		vsnd_duration = 3.630408
 	}
 	Mods.Weapon.ActiveReload.Success = 
 	{

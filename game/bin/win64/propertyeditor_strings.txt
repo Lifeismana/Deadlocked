@@ -284,8 +284,8 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 &YA1E
 &YA1H
 &YA1L
+'	V_log10f
 ',=?k
-(	V_log10f
 ( %1, %2 )
 ( %1, %2, %3, %4% )
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
@@ -499,6 +499,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 -> Success (%d attempts)
 -BH>t
 -YA1H
+-]6=	
 -sse2
 -sse3
 -sse4
@@ -955,6 +956,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 />58d%
 /YA1H
 /]?size@QImage@@QEBA?AVQSize@@XZ
+0	V_modfd
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -1016,7 +1018,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 0w0c1
 0x%p = %s '%s'
 0}0i1
-1	V_modfd
 1 == TestToken_t( &testTable, "A" ).Compare( TestToken_t( &testTable, "" ) )
 1 == TestToken_t( &testTable, "A.B" ).Compare( TestToken_t( &testTable, "A.A" ) )
 1 == TestToken_t( &testTable, "B" ).Compare( TestToken_t( &testTable, "A" ) )
@@ -1229,7 +1230,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 220801000000Z
 2222<<
 230714000000Z
-240722225230Z0/
+240724000044Z0/
 241009235959Z0a1
 2AttributeFilterChanged()
 2CalcValueAdded(double)
@@ -1303,7 +1304,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 3>fvw
 3mq+<
 4 == TestToken_t( &testTable, "grandparent.parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "grandparent.parent.child.grandchild" ), WILDCARD )
-4NZ V o
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -1312,10 +1312,11 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 6I]Dc
 6OB,n_
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
+7	V_powd
 70503
 7<.uf
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powd
+8	V_powf
 8/t[H
 80uWfff
 8A^A\
@@ -1335,7 +1336,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 8O8u'H
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
 8ke?;
-9	V_powf
+9	V_qsort
 9)~P3
 9/~cH
 98t H
@@ -1369,11 +1370,10 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 9|$@~4H
 9|$hu
 9~h~t3
-:	V_qsort
+:	V_qsort_s
 : Add
 :>)*	v
 :>t6k'
-;	V_qsort_s
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;H9>&X
@@ -1422,6 +1422,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 >Icn 
 >Mp$d
 >jtm}S
+?	V_roundf
 ?!5WOo
 ?+>^m
 ?333333
@@ -3182,7 +3183,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 ?value@QSettings@@QEBA?AVQVariant@@AEBVQString@@AEBV2@@Z
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 ?{Q}<
-@	V_roundf
 @ A+@
 @ D+@
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
@@ -3487,75 +3487,75 @@ C,9G,u
 C09G0u
 C0Hc	H
 C5R?	
-C:\buildworker\citadel_staging_win64\build\_build_\propertyeditor\_vpc_propertyeditor\default\win64\_msvc_\Retail\propertyeditor.pdb
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\colorgradient.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\piecewisecurve.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\basepropitem.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\propertycopypaste.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\propertyeditorsystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\propitem_attr.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\propitem_element.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\propitem_map.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\qattributeeditor_command.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\qattributeeditor_curveeditor.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\qattributeeditor_editbox.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\qattributeeditor_gradient.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\qpropertyattributelabel.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\qpropertyeditor.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\qproprow.cpp
-C:\buildworker\citadel_staging_win64\build\src\propertyeditor\qproprowlist.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\propertyeditor\symboltokenstring.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\inputbindsystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\qcontrols.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\qdynamicwidget.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\qdynamicwidget_factory.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\qinputbindmenu.h
-C:\buildworker\citadel_staging_win64\build\src\public\qcontrols\widgetpool.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\assert_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\enum_helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utldict.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlorderedset.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\vnotifyapi.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\p4helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\inputbindcodes.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\inputbindsystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qcolordialog.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qcolorsampler.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qcontrols.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qcurveeditor.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qdynamicwidget.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qgradienteditor.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qinputbindmanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qrichitemlistpicker.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qsmartcombobox.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qsmartlineedit.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qtabbedstyle.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\qwidgetdebugger.cpp
-C:\buildworker\citadel_staging_win64\build\src\qcontrols\widgetlist.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\kv3transfer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\sharedmemorychannel.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\vnotifyapi.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolutils2\attributeeditorbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\tools\toolutils2\toolstringutils.cpp
+C:\buildworker\citadel_rel_win64\build\_build_\propertyeditor\_vpc_propertyeditor\default\win64\_msvc_\Retail\propertyeditor.pdb
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\colorgradient.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\piecewisecurve.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\basepropitem.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\propertycopypaste.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\propertyeditorsystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\propitem_attr.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\propitem_element.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\propitem_map.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qattributeeditor_command.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qattributeeditor_curveeditor.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qattributeeditor_editbox.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qattributeeditor_gradient.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qpropertyattributelabel.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qpropertyeditor.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qproprow.cpp
+C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qproprowlist.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\propertyeditor\symboltokenstring.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\inputbindsystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qcontrols.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qdynamicwidget.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qdynamicwidget_factory.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qinputbindmenu.h
+C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\widgetpool.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\assert_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\enum_helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.inl
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utldict.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlorderedset.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\vnotifyapi.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\p4helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\inputbindcodes.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\inputbindsystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qcolordialog.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qcolorsampler.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qcontrols.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qcurveeditor.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qdynamicwidget.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qgradienteditor.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qinputbindmanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qrichitemlistpicker.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qsmartcombobox.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qsmartlineedit.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qtabbedstyle.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\qwidgetdebugger.cpp
+C:\buildworker\citadel_rel_win64\build\src\qcontrols\widgetlist.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\keyvalues3.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\kv3transfer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\sharedmemorychannel.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\vnotifyapi.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolutils2\attributeeditorbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\tools\toolutils2\toolstringutils.cpp
 C@+C8
 CBasePropItem::AddMapOrTableSubAttribute
 CBasePropItem::AllocateVisibleRow::<lambda_1>::operator ()
@@ -3604,7 +3604,6 @@ CDynamicWidgetFactory_Custom<class QTabWidget>::InitWidget
 CDynamicWidgetFactory_Custom<class QTableWidget>::InitWidget
 CDynamicWidgetFactory_Custom<class QToolBar>::InitWidget
 CDynamicWidgetFactory_Custom<class QToolButton>::InitWidget
-CE1Lc
 CGlobalConVarRegistry::AddToList
 CGlobalConVarRegistry::HookUpConVar
 CGlobalHotkeyCommands
@@ -4360,6 +4359,7 @@ E9g tI
 E;t$(|
 E>nEA
 E@HcX
+EEVFn
 EH*?H
 EHHcI
 ELEMENT
@@ -5083,6 +5083,7 @@ NumEnter
 NumMul
 NumSub
 NumToggle
+O	V_sscanf
 O JcD/
 O8HcB
 O?initPainter@QPaintDevice@@MEBAXPEAVQPainter@@@Z
@@ -5184,7 +5185,6 @@ Orientation
 Outgoing
 Output
 Overwrite With Current
-P	V_sscanf
 P D+P
 P8I9D$
 P>q_Y~
@@ -5324,12 +5324,12 @@ R?mimeData@QClipboard@@QEBAPEBVQMimeData@@W4Mode@1@@Z
 R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
+RA+%N
 RGBA	
 RGBA	%1	%2	%3	%4
 RMouse
 RMouseDoubleClick
 RPL9|$Pt
-RSDSe
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 RaiseException
 RandomFloat
@@ -5611,6 +5611,7 @@ SwitchToEngineWindow
 SyncToScrollBar
 SyncToScrollBar %.0f us
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
+T	V_stricmp_fast
 T$ E3
 T$ H;
 T$(E3
@@ -5669,7 +5670,6 @@ TryAcquireSRWLockExclusive
 TrySendVNotify - SendKV3 failed
 Tuesday
 Type: %s
-U	V_stricmp_fast
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QTextDocument@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -5887,6 +5887,7 @@ WorldRendererMgr001
 Writable
 WriteConsoleW
 WriteFile
+X	V_strspn
 X UVWATAWH
 X!t5~
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
@@ -5914,7 +5915,6 @@ XR?mergeCharFormat@QTextCursor@@QEAAXAEBVQTextCharFormat@@@Z
 XX?setBackground@QPainter@@QEAAXAEBVQBrush@@@Z
 X`Hc@XH
 Xq499vV
-Y	V_strspn
 Y9"SD
 Y>kX>M
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
@@ -6020,7 +6020,7 @@ Zod(^?
 \$x9Yh
 \$xH;
 \$xu3M
-\=4K	
+\=$K	
 \?setWidth@QPen@@QEAAXH@Z
 \?setWidthF@QPen@@QEAAXN@Z
 \t3D8T$(t
@@ -6037,6 +6037,7 @@ Zod(^?
 ^?text@QPalette@@QEBAAEBVQBrush@@XZ
 ^Q?lighter@QColor@@QEBA?AV1@H@Z
 ^RfN>
+^W_;}
 ^_?toPlainText@QTextDocumentFragment@@QEBA?AVQString@@XZ
 ^`HcFXH
 _ ;_$t
@@ -6305,7 +6306,6 @@ fontfamily
 fontstyle
 foreground
 forever
-fq6AQ
 function not supported
 fxu3H
 g	?cap@QRegExp@@QEAA?AVQString@@H@Z
@@ -7073,6 +7073,7 @@ zY;>u:m
 {@+{8
 {@9s8|AH
 {un'%
+|	/{6}!
 |"?verticalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 |#tAM
 |$ 9Cpt

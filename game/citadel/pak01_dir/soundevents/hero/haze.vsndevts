@@ -13,13 +13,12 @@
 			"sounds/weapons/haze/haze_weapon_fire_05.vsnd",
 			"sounds/weapons/haze/haze_weapon_fire_06.vsnd",
 		]
-		vsnd_duration = 1.603424
 	}
 	Haze.Wpn.Impact = 
 	{
 		base = "Base.Bullet.Impact"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Haze.Wpn.BulletWhizby = 
 	{
@@ -46,7 +45,6 @@
 			"sounds/weapons/haze/haze_weapon_whizby_groupB-007.vsnd",
 			"sounds/weapons/haze/haze_weapon_whizby_groupB-008.vsnd",
 		]
-		vsnd_duration = 0.658005
 	}
 	Haze.ZoomIn = 
 	{
@@ -64,7 +62,6 @@
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
 		vsnd_files = "sounds/weapons/haze/zoom/in_1.vsnd"
-		vsnd_duration = 0.584042
 	}
 	Haze.ZoomIn2 = 
 	{
@@ -73,7 +70,6 @@
 		pitch_rand_min = -0.060000
 		pitch_rand_max = 0.050000
 		vsnd_files = "sounds/weapons/haze/zoom/in_2.vsnd"
-		vsnd_duration = 0.854312
 	}
 	Haze.ZoomOut = 
 	{
@@ -91,7 +87,6 @@
 		pitch_rand_max = 0.050000
 		volume = -31.000000
 		vsnd_files = "sounds/weapons/haze/zoom/out_1.vsnd"
-		vsnd_duration = 1.033500
 	}
 	Haze.ZoomOut2 = 
 	{
@@ -100,7 +95,6 @@
 		pitch_rand_max = 0.100000
 		volume = -31.000000
 		vsnd_files = "sounds/weapons/haze/zoom/out_2.vsnd"
-		vsnd_duration = 0.883146
 	}
 	Haze.Reload.ClipOut = 
 	{
@@ -110,7 +104,6 @@
 		pitch_rand_max = 0.100000
 		pitch = 1.000000
 		vsnd_files = "sounds/weapons/haze/reload/clipout.vsnd"
-		vsnd_duration = 0.362517
 	}
 	Haze.Reload.ClipIn = 
 	{
@@ -119,7 +112,6 @@
 		pitch_rand_min = -0.150000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/haze/reload/clipin.vsnd"
-		vsnd_duration = 0.730136
 	}
 	Haze.Finesse.Dagger.Cast = 
 	{
@@ -131,14 +123,12 @@
 			"sounds/abilities/haze/a1_finesse_dagger/throw_3.vsnd",
 			"sounds/abilities/haze/a1_finesse_dagger/throw_4.vsnd",
 		]
-		vsnd_duration = 1.011417
 	}
 	Haze.Finesse.Dagger.Projectile.Lp = 
 	{
 		base = "Base.Ability"
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/haze/a1_finesse_dagger/proj_lp.vsnd"
-		vsnd_duration = 2.013696
 	}
 	Haze.Finesse.Dagger.Projectile.Hit = 
 	{
@@ -157,7 +147,6 @@
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
 		vsnd_files = "sounds/abilities/haze/a1_finesse_dagger/impact_lyr1.vsnd"
-		vsnd_duration = 1.121479
 	}
 	Haze.Finesse.Dagger.Projectile.Hit2 = 
 	{
@@ -165,7 +154,6 @@
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
 		vsnd_files = "sounds/abilities/haze/a1_finesse_dagger/impact_lyr2.vsnd"
-		vsnd_duration = 1.756104
 	}
 	Haze.Finesse.Dagger.Projectile.Hit3 = 
 	{
@@ -173,7 +161,6 @@
 		pitch_rand_min = -0.025000
 		pitch_rand_max = 0.050000
 		vsnd_files = "sounds/abilities/haze/a1_finesse_dagger/impact_lyr3.vsnd"
-		vsnd_duration = 0.894625
 	}
 	Haze.Finesse.Dagger.Detonate = 
 	{
@@ -181,7 +168,6 @@
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
 		vsnd_files = "sounds/abilities/haze/a1_finesse_dagger/tier3_explosion.vsnd"
-		vsnd_duration = 3.595419
 	}
 	Haze.Smoke.Bomb.Modifier.Start = 
 	{
@@ -199,21 +185,18 @@
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_start_lyr1.vsnd"
-		vsnd_duration = 1.910563
 	}
 	Haze.Smoke.Bomb.Modifier.Start2 = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_start_lyr2.vsnd"
-		vsnd_duration = 1.827479
 	}
 	Haze.Smoke.Bomb.Modifier.Start3 = 
 	{
 		base = "Base.Ability"
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_start_lyr3.vsnd"
-		vsnd_duration = 1.375479
 	}
 	Haze.Smoke.Bomb.Modifier.Lp = 
 	{
@@ -231,7 +214,6 @@
 		volume_fade_in = 0.500000
 		volume_fade_out = 0.200000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_dur_lp_1.vsnd"
-		vsnd_duration = 9.840208
 	}
 	Haze.Smoke.Bomb.Modifier.Lp2 = 
 	{
@@ -240,28 +222,24 @@
 		volume_fade_in = 0.500000
 		volume_fade_out = 0.200000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/mod_dur_lp_1.vsnd"
-		vsnd_duration = 9.840208
 	}
 	Haze.Foley.Invis.Holster = 
 	{
 		base = "Base.Hero.Foley.Foot.3d"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/holster.vsnd"
-		vsnd_duration = 0.339500
 	}
 	Haze.Foley.Invis.Draw = 
 	{
 		base = "Base.Hero.Foley.Foot.3d"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/haze/a2_smoke_bomb/draw.vsnd"
-		vsnd_duration = 0.415458
 	}
 	Haze.BulletFlurry.Modifier.Start = 
 	{
 		base = "Base.Ability.Ult"
 		volume = -2.000000
 		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_start.vsnd"
-		vsnd_duration = 2.921565
 	}
 	Haze.BulletFlurry.Cast.Delay = 
 	{
@@ -269,7 +247,6 @@
 		play_from_listener_player = 1.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_delay.vsnd"
-		vsnd_duration = 1.852698
 	}
 	Haze.BulletFlurry.Modifier.Lp = 
 	{
@@ -279,14 +256,12 @@
 		volume_fade_out = 0.250000
 		play_from_listener_player = 1.000000
 		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_lp.vsnd"
-		vsnd_duration = 12.049070
 	}
 	Haze.BulletFlurry.Modifier.End = 
 	{
 		base = "Base.Ability.Ult"
 		volume = -7.000000
 		vsnd_files = "sounds/abilities/haze/haze_bullet_flurry_cast_end.vsnd"
-		vsnd_duration = 1.595193
 	}
 	Haze.Footstep = 
 	{
@@ -307,7 +282,6 @@
 			"sounds/player/footsteps/haze/haze_step_10.vsnd",
 			"sounds/player/footsteps/haze/haze_step_11.vsnd",
 		]
-		vsnd_duration = 0.744331
 	}
 	Haze.MovementFoley = 
 	{
@@ -341,7 +315,6 @@
 			"sounds/player/foley/haze/haze_jump_land_08.vsnd",
 			"sounds/player/foley/haze/haze_jump_land_09.vsnd",
 		]
-		vsnd_duration = 0.729500
 	}
 	Haze.SlideGetUp = 
 	{
@@ -359,7 +332,6 @@
 			"sounds/player/foley/haze/haze_jump_land_08.vsnd",
 			"sounds/player/foley/haze/haze_jump_land_09.vsnd",
 		]
-		vsnd_duration = 0.729500
 	}
 	Haze.Melee.SwingShort = 
 	{
@@ -391,7 +363,6 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
-		vsnd_duration = 1.062200
 	}
 	Haze.Melee.SwingLong = 
 	{
@@ -424,7 +395,6 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
-		vsnd_duration = 1.399773
 	}
 	Haze.Death = 
 	{
@@ -445,7 +415,6 @@
 			"sounds/vo/haze/emote/haze_emote_pain_death_12.vsnd",
 			"sounds/vo/haze/emote/haze_emote_pain_death_13.vsnd",
 		]
-		vsnd_duration = 2.686735
 	}
 	Haze.Effort = 
 	{
@@ -459,7 +428,6 @@
 			"sounds/vo/haze/emote/haze_effort_general_05.vsnd",
 			"sounds/vo/haze/emote/haze_effort_general_06.vsnd",
 		]
-		vsnd_duration = 2.737302
 	}
 	Haze.Effort.Melee = 
 	{
@@ -481,7 +449,6 @@
 			"sounds/vo/haze/emote/haze_effort_melee_small_06.vsnd",
 			"sounds/vo/haze/emote/haze_effort_melee_small_07.vsnd",
 		]
-		vsnd_duration = 2.824082
 	}
 	Haze.Reload.Twirl = 
 	{
@@ -491,7 +458,6 @@
 		pitch_rand_max = 0.030000
 		pitch = 1.000000
 		vsnd_files = "sounds/weapons/haze/reload/twirl.vsnd"
-		vsnd_duration = 0.364490
 	}
 	Haze.Reload.End_01 = 
 	{
@@ -501,7 +467,6 @@
 		pitch_rand_max = 0.030000
 		pitch = 1.000000
 		vsnd_files = "sounds/weapons/haze/reload/end_01.vsnd"
-		vsnd_duration = 0.125147
 	}
 	Haze.Reload.End_02 = 
 	{
@@ -511,7 +476,6 @@
 		pitch_rand_max = 0.030000
 		pitch = 1.000000
 		vsnd_files = "sounds/weapons/haze/reload/end_02.vsnd"
-		vsnd_duration = 0.251315
 	}
 	Haze.Gunplay = 
 	{
@@ -530,6 +494,5 @@
 			"sounds/vo/haze/emote/haze_effort_dash_06.vsnd",
 			"sounds/vo/haze/emote/haze_effort_dash_07.vsnd",
 		]
-		vsnd_duration = 2.777732
 	}
 }

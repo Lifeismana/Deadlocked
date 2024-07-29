@@ -7,7 +7,6 @@
 		volume = 1.000000
 		volume_fade_out = 0.100000
 		vsnd_files = "sounds/weapons/bebop/bebop_primaryweapon_start.vsnd"
-		vsnd_duration = 1.862313
 	}
 	Bebop.Weapon.Impact.Lp = 
 	{
@@ -23,20 +22,18 @@
 		base = "Base.Hero.Weapon.Impact.Lp"
 		volume = -9.000000
 		vsnd_files = "sounds/weapons/bebop/impact/lp1.vsnd"
-		vsnd_duration = 11.345062
 	}
 	Bebop.Weapon.Impact.Lp2 = 
 	{
 		base = "Base.Hero.Weapon.Impact.Lp"
 		volume = -9.000000
 		vsnd_files = "sounds/weapons/bebop/impact/lp2.vsnd"
-		vsnd_duration = 11.345062
 	}
 	Bebop.Wpn.Impact = 
 	{
 		base = "Base.Bullet.Impact"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Bebop.Weapon.WindUp = 
 	{
@@ -44,21 +41,18 @@
 		preload_vsnds = true
 		volume = -3.000000
 		vsnd_files = "sounds/weapons/bebop/bebop_primaryweapon_prepare.vsnd"
-		vsnd_duration = 1.673469
 	}
 	Bebop.ZoomIn = 
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		volume = -24.000000
 		vsnd_files = "sounds/weapons/bebop/zoom/in.vsnd"
-		vsnd_duration = 1.917125
 	}
 	Bebop.ZoomOut = 
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		volume = -25.000000
 		vsnd_files = "sounds/weapons/bebop/foley/stop.vsnd"
-		vsnd_duration = 0.825782
 	}
 	Bebop.Weapon.End = 
 	{
@@ -76,14 +70,13 @@
 			"sounds/weapons/bebop/bebop_primaryweapon_jazz_g_end.vsnd",
 			"sounds/weapons/bebop/bebop_primaryweapon_jazz_h_end.vsnd",
 		]
-		vsnd_duration = 1.148345
 	}
 	Bebop.Wpn.Reload.Clip.In = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		volume = -80.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Bebop.Wpn.Reload.Clip.Out = 
 	{
@@ -94,7 +87,6 @@
 		block_match_entity = 1.000000
 		block_event_name = "Bebop.Wpn.Reload.Clip.Out"
 		vsnd_files = "sounds/weapons/bebop/bebop_primaryweapon_end.vsnd"
-		vsnd_duration = 3.786825
 	}
 	Ability.Bebop.Uppercut.Cast = 
 	{
@@ -103,7 +95,6 @@
 		volume_falloff_max = 1900.000000
 		volume = 1.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_uppercut_01.vsnd"
-		vsnd_duration = 2.442903
 	}
 	Ability.Bebop.Uppercut.Miss = 
 	{
@@ -114,7 +105,6 @@
 			"sounds/abilities/bebop/a1_exp_uppercut/fail_01.vsnd",
 			"sounds/abilities/bebop/a1_exp_uppercut/fail_02.vsnd",
 		]
-		vsnd_duration = 0.325624
 	}
 	Ability.Bebop.Uppercut.Impact = 
 	{
@@ -135,14 +125,12 @@
 			"sounds/abilities/bebop/a1_exp_uppercut/impact_02.vsnd",
 			"sounds/abilities/bebop/a1_exp_uppercut/impact_03.vsnd",
 		]
-		vsnd_duration = 1.868208
 	}
 	Ability.Bebop.Uppercut.Impact.Lyr = 
 	{
 		base = "Base.Ability"
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/bebop/a1_exp_uppercut/impact_layer.vsnd"
-		vsnd_duration = 1.797354
 	}
 	Ability.Bebop.Uppercut.Uppercutted = 
 	{
@@ -151,7 +139,6 @@
 		volume_falloff_max = 2100.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/abilities/bebop/a1_exp_uppercut/uppercutted.vsnd"
-		vsnd_duration = 3.259104
 	}
 	Ability.Bebop.StickyBomb.Cast = 
 	{
@@ -159,7 +146,6 @@
 		volume = 0.000000
 		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_attach.vsnd"
-		vsnd_duration = 0.853243
 	}
 	Ability.Bebop.StickyBomb.Loop = 
 	{
@@ -168,14 +154,12 @@
 		volume_falloff_max = 1900.000000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_alarm_loop.vsnd"
-		vsnd_duration = 1.246939
 	}
 	Ability.Bebop.StickyBomb.Detonate = 
 	{
 		base = "Base.Ability.Short"
 		volume = -11.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_alarm_urgent.vsnd"
-		vsnd_duration = 1.190499
 	}
 	Ability.Bebop.StickyBomb.Explode = 
 	{
@@ -186,7 +170,6 @@
 			"sounds/abilities/bebop/a2_sticky_bomb/explode_01.vsnd",
 			"sounds/abilities/bebop/a2_sticky_bomb/explode_02.vsnd",
 		]
-		vsnd_duration = 1.952018
 	}
 	Ability.Bebop.Hook.Proj.Lp = 
 	{
@@ -199,28 +182,24 @@
 		volume_falloff_max_player = 1000.000000
 		volume_falloff_min_player = 50.000000
 		vsnd_files = "sounds/abilities/bebop/a3_hook/proj_mono_lp.vsnd"
-		vsnd_duration = 0.865188
 	}
 	Ability.Bebop.Hook.Retract = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_hook_yank.vsnd"
-		vsnd_duration = 1.961859
 	}
 	Ability.Bebop.Hook.RetractEnd = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_hook_targetarrived.vsnd"
-		vsnd_duration = 1.384490
 	}
 	Ability.Bebop.Hook.ImpactGeo = 
 	{
 		base = "Base.Ability"
 		volume = -60.000000
 		vsnd_files = "sounds/abilities/bebop/a3_hook/impact_geo.vsnd"
-		vsnd_duration = 1.120000
 	}
 	Ability.Bebop.Hook.Success = 
 	{
@@ -228,14 +207,12 @@
 		volume = 0.000000
 		mixer_mixlayer_perspective_player = "Ability-Dramatic"
 		vsnd_files = "sounds/abilities/bebop/a3_hook/impact_success.vsnd"
-		vsnd_duration = 1.499093
 	}
 	Ability.Bebop.Hook.Ally = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/bebop/a3_hook/impact_ally.vsnd"
-		vsnd_duration = 1.429546
 	}
 	Bebop.Footstep = 
 	{
@@ -257,7 +234,7 @@
 			"sounds/player/footsteps/bebop/bebop_footstep_12.vsnd",
 		]
 		vsnd_files_override_opponent = "sounds/common/null.vsnd"
-		vsnd_duration = 0.912812
+		vsnd_duration = 0.100045
 	}
 	Bebop.MovementFoley = 
 	{
@@ -278,7 +255,6 @@
 			"sounds/player/foley/bebop/bebop_foley_11.vsnd",
 			"sounds/player/foley/bebop/bebop_foley_12.vsnd",
 		]
-		vsnd_duration = 1.561542
 	}
 	Bebop.JumpLand = 
 	{
@@ -291,7 +267,6 @@
 			"sounds/player/foley/bebop/bebop_jumpland_03.vsnd",
 			"sounds/player/foley/bebop/bebop_jumpland_04.vsnd",
 		]
-		vsnd_duration = 1.170839
 	}
 	Bebop.Mantle = 
 	{
@@ -302,7 +277,6 @@
 		base = "Base.Hero.Foley.Foot.3d"
 		volume = -60.000000
 		vsnd_files = "sounds/player/foley/bebop/bebop_jumpland_01.vsnd"
-		vsnd_duration = 1.170839
 	}
 	Bebop.SlideGetUp = 
 	{
@@ -314,7 +288,6 @@
 			"sounds/player/foley/bebop/bebop_jumpland_03.vsnd",
 			"sounds/player/foley/bebop/bebop_jumpland_04.vsnd",
 		]
-		vsnd_duration = 1.170839
 	}
 	Bebop.Melee.SwingShort = 
 	{
@@ -346,7 +319,6 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
-		vsnd_duration = 1.062200
 	}
 	Bebop.Melee.SwingLong = 
 	{
@@ -379,7 +351,6 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
-		vsnd_duration = 1.399773
 	}
 	Bebop.Death = 
 	{
@@ -394,7 +365,6 @@
 			"sounds/vo/bebop/emote/bebop_pain_death_05.vsnd",
 			"sounds/vo/bebop/emote/bebop_pain_death_06.vsnd",
 		]
-		vsnd_duration = 1.062268
 	}
 	Bebop.Effort = 
 	{
@@ -408,7 +378,6 @@
 			"sounds/vo/bebop/emote/bebop_effort_general_05.vsnd",
 			"sounds/vo/bebop/emote/bebop_effort_general_06.vsnd",
 		]
-		vsnd_duration = 1.258957
 	}
 	Bebop.Effort.Dash = 
 	{
@@ -424,7 +393,6 @@
 			"sounds/vo/bebop/emote/bebop_effort_dash_07.vsnd",
 			"sounds/vo/bebop/emote/bebop_effort_dash_08.vsnd",
 		]
-		vsnd_duration = 1.695646
 	}
 	Bebop.Effort.Melee = 
 	{
@@ -440,7 +408,6 @@
 			"sounds/vo/bebop/emote/bebop_effort_melee_small_09.vsnd",
 			"sounds/vo/bebop/emote/bebop_effort_melee_small_10.vsnd",
 		]
-		vsnd_duration = 1.243628
 	}
 	Bebop.Dirt.Footstep = 
 	{
@@ -600,14 +567,12 @@
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_prepare.vsnd"
-		vsnd_duration = 1.182472
 	}
 	Ability.Bebop.StickyBomb.Deselect = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_stickybomb_packaway.vsnd"
-		vsnd_duration = 1.341111
 	}
 	Bebop.Weapon.Close = 
 	{
@@ -615,21 +580,18 @@
 		preload_vsnds = true
 		volume = -9.000000
 		vsnd_files = "sounds/weapons/bebop/bebop_primaryweapon_packaway.vsnd"
-		vsnd_duration = 1.305510
 	}
 	Ability.Bebop.Hook.Shoot = 
 	{
 		base = "Base.Ability"
 		volume = 1.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_hook_shoot.vsnd"
-		vsnd_duration = 2.268073
 	}
 	Ability.Bebop.Hook.TargetApproaching = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_hook_targetapproaching.vsnd"
-		vsnd_duration = 1.244286
 	}
 	Ability.Bebop.HyperBeam.Windup = 
 	{
@@ -642,7 +604,6 @@
 		mono_downmix_min_distance = 400.000000
 		mono_downmix_max_distance = 500.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_hyperbeam_prepstart.vsnd"
-		vsnd_duration = 3.658911
 	}
 	Ability.Bebop.Hyperbeam.Windup.Jazz = 
 	{
@@ -659,7 +620,6 @@
 			"sounds/abilities/bebop/bebop_hyperbeam_prepare_jazz_01.vsnd",
 			"sounds/abilities/bebop/bebop_hyperbeam_prepare_jazz_02.vsnd",
 		]
-		vsnd_duration = 3.972517
 	}
 	Ability.Bebop.HyperBeam.Hit = 
 	{
@@ -673,7 +633,6 @@
 			"sounds/abilities/bebop/a4_hyper_beam/hit_04.vsnd",
 			"sounds/abilities/bebop/a4_hyper_beam/hit_05.vsnd",
 		]
-		vsnd_duration = 0.374376
 	}
 	Ability.Bebop.HyperBeam.End = 
 	{
@@ -682,7 +641,6 @@
 		mono_downmix_min_distance = 400.000000
 		mono_downmix_max_distance = 500.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_hyperbeam_end.vsnd"
-		vsnd_duration = 3.297914
 	}
 	Ability.Bebop.HyperBeam.Fire = 
 	{
@@ -691,7 +649,6 @@
 		mono_downmix_min_distance = 400.000000
 		mono_downmix_max_distance = 500.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_hyperbeam_launch.vsnd"
-		vsnd_duration = 2.420272
 	}
 	Ability.Bebop.HyperBeam.EndMulti = 
 	{
@@ -718,7 +675,6 @@
 			"sounds/weapons/bebop/bebop_primaryweapon_jazz_g_end.vsnd",
 			"sounds/weapons/bebop/bebop_primaryweapon_jazz_h_end.vsnd",
 		]
-		vsnd_duration = 1.148345
 	}
 	Ability.Bebop.HyperBeam.FireMulti = 
 	{
@@ -731,7 +687,6 @@
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_hook_latched_victim.vsnd"
-		vsnd_duration = 1.735760
 	}
 	Bebop.JumpStart = 
 	{
@@ -752,7 +707,6 @@
 			"sounds/player/foley/bebop/bebop_foley_11.vsnd",
 			"sounds/player/foley/bebop/bebop_foley_12.vsnd",
 		]
-		vsnd_duration = 1.561542
 	}
 	Bebop.JumpLand.Multi = 
 	{
@@ -782,7 +736,6 @@
 			"sounds/player/foley/bebop/bebop_foley_11.vsnd",
 			"sounds/player/foley/bebop/bebop_foley_12.vsnd",
 		]
-		vsnd_duration = 1.561542
 	}
 	Bebop.JumpLand.Foley = 
 	{
@@ -803,7 +756,6 @@
 			"sounds/player/foley/bebop/bebop_foley_11.vsnd",
 			"sounds/player/foley/bebop/bebop_foley_12.vsnd",
 		]
-		vsnd_duration = 1.561542
 	}
 	Bebop.Footstep.Multi = 
 	{
@@ -837,7 +789,6 @@
 			"sounds/weapons/bebop/bebop_primaryweapon_jazz_h_loop_01.vsnd",
 			"sounds/weapons/bebop/bebop_primaryweapon_jazz_a_loop_01.vsnd",
 		]
-		vsnd_duration = 14.313107
 	}
 	Bebop.Weapon.Loop.Multi = 
 	{
@@ -862,7 +813,6 @@
 		delay_rand_max = 0.000000
 		pitch = 1.400000
 		vsnd_files = "sounds/weapons/bebop/bebop_primaryweapon_loop.vsnd"
-		vsnd_duration = 3.615782
 	}
 	Ability.Bebop.HyperBeam.Loop.Jazz = 
 	{
@@ -881,7 +831,6 @@
 			"sounds/weapons/bebop/bebop_primaryweapon_jazz_g_loop_01.vsnd",
 			"sounds/weapons/bebop/bebop_primaryweapon_jazz_h_loop_01.vsnd",
 		]
-		vsnd_duration = 14.313107
 	}
 	Ability.Bebop.HyperBeam.Loop.Multi = 
 	{
@@ -900,7 +849,6 @@
 		mono_downmix_min_distance = 400.000000
 		pitch = 1.000000
 		vsnd_files = "sounds/abilities/bebop/bebop_hyperbeam_loop.vsnd"
-		vsnd_duration = 5.539184
 	}
 	Ability.Bebop.HyperBeam.Windup.Multi = 
 	{

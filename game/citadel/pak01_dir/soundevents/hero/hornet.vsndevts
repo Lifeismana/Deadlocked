@@ -15,14 +15,13 @@
 			"sounds/weapons/hornet/vindicta_weapon_fire_04.vsnd",
 			"sounds/weapons/hornet/vindicta_weapon_fire_05.vsnd",
 		]
-		vsnd_duration = 3.002109
 	}
 	Hornet.Wpn.Impact = 
 	{
 		base = "Base.Bullet.Impact"
 		volume = 0.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Hornet.Wpn.Whizby = 
 	{
@@ -41,7 +40,6 @@
 			"sounds/weapons/hornet/vindicta_weapon_whizby_groupA-009.vsnd",
 			"sounds/weapons/hornet/vindicta_weapon_whizby_groupA-010.vsnd",
 		]
-		vsnd_duration = 0.491429
 	}
 	Hornet.ZoomIn = 
 	{
@@ -58,14 +56,12 @@
 		base = "Base.Hero.Weapon.Zoom.2d"
 		volume = -37.000000
 		vsnd_files = "sounds/weapons/hornet/zoom/in_gauge.vsnd"
-		vsnd_duration = 0.582177
 	}
 	Hornet.Wpn.Zoom.In.Tech = 
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		volume = -30.000000
 		vsnd_files = "sounds/weapons/hornet/zoom/in_tech.vsnd"
-		vsnd_duration = 0.562857
 	}
 	Hornet.ZoomOut = 
 	{
@@ -82,14 +78,12 @@
 		base = "Base.Hero.Weapon.Zoom.2d"
 		volume = -45.000000
 		vsnd_files = "sounds/weapons/hornet/zoom/out_click.vsnd"
-		vsnd_duration = 0.650930
 	}
 	Hornet.Wpn.Zoom.Out.Ratchet = 
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		volume = -45.000000
 		vsnd_files = "sounds/weapons/hornet/zoom/out_ratchet.vsnd"
-		vsnd_duration = 0.253401
 	}
 	Hornet.Wpn.Zoom.Mech = 
 	{
@@ -101,7 +95,6 @@
 			"sounds/weapons/hornet/foley/mech_2.vsnd",
 			"sounds/weapons/hornet/foley/mech_3.vsnd",
 		]
-		vsnd_duration = 0.878639
 	}
 	Hornet.Reload.ClipOut = 
 	{
@@ -116,7 +109,6 @@
 		base = "Base.Hero.Weapon.Reload.3d"
 		volume = -21.000000
 		vsnd_files = "sounds/weapons/hornet/reload/out.vsnd"
-		vsnd_duration = 2.754694
 	}
 	Hornet.Reload.ClipIn = 
 	{
@@ -131,7 +123,6 @@
 		base = "Base.Hero.Weapon.Reload.3d"
 		volume = -18.000000
 		vsnd_files = "sounds/weapons/hornet/reload/in.vsnd"
-		vsnd_duration = 2.754694
 	}
 	Hornet.Wpn.Reload.Mech = 
 	{
@@ -143,7 +134,6 @@
 			"sounds/weapons/hornet/foley/mech_2.vsnd",
 			"sounds/weapons/hornet/foley/mech_3.vsnd",
 		]
-		vsnd_duration = 0.878639
 	}
 	Hornet.Footstep = 
 	{
@@ -160,7 +150,6 @@
 			"sounds/player/footsteps/hornet/right_03.vsnd",
 			"sounds/player/footsteps/hornet/right_04.vsnd",
 		]
-		vsnd_duration = 0.707937
 	}
 	Hornet.Chain.Grenade.Cast = 
 	{
@@ -176,14 +165,12 @@
 		base = "Base.Ability"
 		volume_falloff_max = 1600.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/cast_whoosh.vsnd"
-		vsnd_duration = 1.246771
 	}
 	Hornet.Chain.Grenade.Cast.Zap = 
 	{
 		base = "Base.Ability"
 		volume_falloff_max = 2000.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/cast_zap.vsnd"
-		vsnd_duration = 1.385417
 	}
 	Hornet.Chain.Grenade.Explode = 
 	{
@@ -202,7 +189,6 @@
 		volume_falloff_max = 1800.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/exp_pop.vsnd"
-		vsnd_duration = 1.479125
 	}
 	Hornet.Chain.Grenade.Explode.Sub = 
 	{
@@ -210,7 +196,6 @@
 		volume_falloff_max = 1100.000000
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/exp_sub.vsnd"
-		vsnd_duration = 2.493750
 	}
 	Hornet.Chain.Grenade.Explode.Zip = 
 	{
@@ -218,7 +203,6 @@
 		volume_falloff_max = 1466.000000
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/exp_zipper.vsnd"
-		vsnd_duration = 1.021000
 	}
 	Hornet.Chain.Grenade.Target = 
 	{
@@ -234,21 +218,18 @@
 		base = "Base.Ability"
 		volume_falloff_max = 1999.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/target_metal.vsnd"
-		vsnd_duration = 2.323958
 	}
 	Hornet.Chain.Grenade.Target.Snap = 
 	{
 		base = "Base.Ability"
 		volume_falloff_max = 2222.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/target_snap.vsnd"
-		vsnd_duration = 1.456083
 	}
 	Hornet.Chain.Grenade.Modifier.Start = 
 	{
 		base = "Base.Ability"
 		volume_falloff_max = 1200.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/modifier_start.vsnd"
-		vsnd_duration = 1.508125
 	}
 	Hornet.Chain.Grenade.Modifier.Dur.Lp = 
 	{
@@ -264,14 +245,12 @@
 		base = "Base.Ability"
 		delay_rand_min = 0.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/modifier_dur_lp_1.vsnd"
-		vsnd_duration = 2.477167
 	}
 	Hornet.Chain.Grenade.Modifier.Dur.Lp2 = 
 	{
 		base = "Base.Ability"
 		delay_rand_min = -1.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/modifier_dur_lp_2.vsnd"
-		vsnd_duration = 0.860333
 	}
 	Hornet.Chain.Grenade.Modifier.End = 
 	{
@@ -279,7 +258,6 @@
 		volume_falloff_max = 900.000000
 		volume = -6.000000
 		vsnd_files = "sounds/abilities/hornet/a1_chain_grenade/modifier_end.vsnd"
-		vsnd_duration = 3.989250
 	}
 	Ability.Hornet.Leap.Cast = 
 	{
@@ -288,7 +266,6 @@
 		play_from_listener_player = 1.000000
 		volume_offset_team = -3.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_flight_cast.vsnd"
-		vsnd_duration = 4.656236
 	}
 	Ability.Hornet.Leap.Lp = 
 	{
@@ -301,7 +278,6 @@
 		volume_offset_team = -5.000000
 		delay_rand_max = -20.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_flight_loop.vsnd"
-		vsnd_duration = 24.670000
 	}
 	Ability.Hornet.Leap.Expire = 
 	{
@@ -310,7 +286,6 @@
 		play_from_listener_player = 1.000000
 		volume_offset_team = -3.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_flight_expire.vsnd"
-		vsnd_duration = 2.372494
 	}
 	Hornet.Hornet.Sting.Cast = 
 	{
@@ -322,14 +297,12 @@
 		[
 			"sounds/abilities/hornet/vindicta_crow_familiar_cast.vsnd",
 		]
-		vsnd_duration = 3.173447
 	}
 	Hornet.Hornet.Sting.Proj.Lp = 
 	{
 		base = "Base.Ability"
 		volume = 0.000000
 		vsnd_files = "sounds/abilities/hornet/a3_hornet_sting/proj_lp.vsnd"
-		vsnd_duration = 2.013696
 	}
 	Hornet.Hornet.Sting.Proj.Hit.Target = 
 	{
@@ -346,7 +319,6 @@
 		volume = 0.000000
 		volume_falloff_max = 3333.000000
 		vsnd_files = "sounds/abilities/hornet/a3_hornet_sting/impact_target_stab.vsnd"
-		vsnd_duration = 1.035437
 	}
 	Hornet.Hornet.Sting.Proj.Hit.Target.Tech = 
 	{
@@ -354,47 +326,40 @@
 		volume = -12.000000
 		volume_falloff_max = 3333.000000
 		vsnd_files = "sounds/abilities/hornet/a3_hornet_sting/impact_target_tech.vsnd"
-		vsnd_duration = 4.825562
 	}
 	Hornet.Hornet.Sting.Proj.Hit.World = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/hornet/a3_hornet_sting/impact_world.vsnd"
-		vsnd_duration = 3.232708
 	}
 	Hornet.Hornet.Sting.Modifier.Dur.Lp = 
 	{
 		base = "Base.Ability"
 		volume = -9.000000
 		vsnd_files = "sounds/abilities/hornet/a3_hornet_sting/mod_dur_lp.vsnd"
-		vsnd_duration = 12.485958
 	}
 	Hornet.Hornet.Sting.Modifier.End = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/hornet/a3_hornet_sting/mod_end.vsnd"
-		vsnd_duration = 1.416250
 	}
 	Hornet.Assassinate.Zoom.In = 
 	{
 		base = "Base.Ability"
 		play_from_listener_player = 1.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_in.vsnd"
-		vsnd_duration = 0.804694
 	}
 	Hornet.Assassinate.Zoom.Out = 
 	{
 		base = "Base.Ability"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_out.vsnd"
-		vsnd_duration = 0.462902
 	}
 	Hornet.Assassinate.Zoom.Lp = 
 	{
 		base = "Base.Ability.Target"
 		volume = 6.000000
 		vsnd_files = "sounds/abilities/hornet/vindicta_assassinate_scope_lp.vsnd"
-		vsnd_duration = 11.191497
 	}
 	Hornet.Assassinate.Cast = 
 	{
@@ -409,7 +374,6 @@
 			"sounds/abilities/hornet/vindicta_assassinate_fire_04.vsnd",
 			"sounds/abilities/hornet/vindicta_assassinate_fire_05.vsnd",
 		]
-		vsnd_duration = 3.002109
 	}
 	Hornet.Assassinate.Impact = 
 	{
@@ -430,7 +394,6 @@
 			"sounds/abilities/hornet/a4_assassinate/target_impact_pop_03.vsnd",
 			"sounds/abilities/hornet/a4_assassinate/target_impact_pop_04.vsnd",
 		]
-		vsnd_duration = 3.053958
 	}
 	Hornet.Assassinate.Impact.Target.Slam = 
 	{
@@ -443,7 +406,6 @@
 			"sounds/abilities/hornet/a4_assassinate/target_impact_slam_03.vsnd",
 			"sounds/abilities/hornet/a4_assassinate/target_impact_slam_04.vsnd",
 		]
-		vsnd_duration = 2.563146
 	}
 	Hornet.WingsFlap = 
 	{
@@ -477,7 +439,6 @@
 			"sounds/abilities/hornet/a2_hornet_leap/wings_mono_07.vsnd",
 			"sounds/abilities/hornet/a2_hornet_leap/wings_mono_08.vsnd",
 		]
-		vsnd_duration = 1.005000
 	}
 	Hornet.MovementFoley = 
 	{
@@ -525,7 +486,6 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
-		vsnd_duration = 1.062200
 	}
 	Hornet.Melee.SwingLong = 
 	{
@@ -558,7 +518,6 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
-		vsnd_duration = 1.399773
 	}
 	Hornet.Death = 
 	{
@@ -573,7 +532,6 @@
 			"sounds/vo/hornet/emote/vindicta_pain_death_06.vsnd",
 			"sounds/vo/hornet/emote/vindicta_pain_death_07.vsnd",
 		]
-		vsnd_duration = 1.023333
 	}
 	Hornet.Effort = 
 	{
@@ -590,7 +548,6 @@
 			"sounds/vo/hornet/emote/vindicta_effort_melee_small_08.vsnd",
 			"sounds/vo/hornet/emote/vindicta_effort_melee_small_09.vsnd",
 		]
-		vsnd_duration = 0.761973
 	}
 	Hornet.Effort.Dash = 
 	{
@@ -603,7 +560,6 @@
 			"sounds/vo/hornet/emote/vindicta_effort_dash_04.vsnd",
 			"sounds/vo/hornet/emote/vindicta_effort_dash_05.vsnd",
 		]
-		vsnd_duration = 0.719819
 	}
 	Hornet.Effort.Melee = 
 	{
@@ -628,6 +584,5 @@
 			"sounds/vo/hornet/emote/vindicta_effort_melee_small_08.vsnd",
 			"sounds/vo/hornet/emote/vindicta_effort_melee_small_09.vsnd",
 		]
-		vsnd_duration = 0.978707
 	}
 }

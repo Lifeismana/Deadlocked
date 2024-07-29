@@ -18,6 +18,7 @@
 	?	Z	$	O
 	?	Z	Z	Z	Z	?	g	
 	?	Z	t	t	t	
+	@8=0$B
 	A;~,A
 	Animation data size %d (%d per tick).
 	CDemoStop"0
@@ -41,7 +42,6 @@
 	TYPE_ENUM
 	This is necessary to run!
 	V	!#
-	V_fopenUTF8
 	V_fprintf
 	V_ftell
 	V_fwrite
@@ -274,13 +274,13 @@
  ('" 
  (08@HPX`hpx
  (08@HPX`j 
- (08@HPXb0
+ (08@HPXb
  (08@HPZ 
- (08@HR0
+ (08@HR
+ (08@J
  (08@J 
- (08@J0
  (0: 
- (0X`hpz0
+ (0X`hpz
  (IP "%s")
  (Texture)
  (You)
@@ -1334,6 +1334,7 @@ $tI(knN
 &YA1A
 &YA1H
 &final
+'	V_log10f
 '!1*&
 '#GameUI_Disconnect_BadSpectatorPassword
 '#GameUI_Disconnect_DifferentClassTables
@@ -1361,7 +1362,7 @@ $tI(knN
 'j%-A+
 'k|7O
 'u5Hc
-(	V_log10f
+(	V_log2_uint
 ( ( HTTPRequestCompleted_t * ) pvParam )->m_hRequest == m_hRequest
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
@@ -1390,6 +1391,7 @@ $tI(knN
 (#GameUI_Disconnect_LoopLevelLoadActivate
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
+(%8K	
 (%d dupes)
 (%d,%d)
 (("**,
@@ -1637,7 +1639,6 @@ $tI(knN
 (|$`u
 (|$pD
 (|$pL
-)	V_log2_uint
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
 )#GameUI_Disconnect_PureServer_ClientExtra
 )#GameUI_Disconnect_RemoteProblem_BadCrypt
@@ -1849,7 +1850,6 @@ $tI(knN
 ++CNetworkGameClientBase
 ++CNetworkGameServerBase
 +4;AFJNQUWZ]_bdfikmoqstvxz{}
-+4_NW
 +5FSgr
 +9kdt	H
 +:JYix
@@ -1889,6 +1889,7 @@ $tI(knN
 +port
 +shift
 +w?FFv?
+,	V_logf
 , "%s"
 , Position
 , from: 
@@ -1918,7 +1919,6 @@ $tI(knN
 ,d3c&
 ,j.b0^2`4^6`8^:f<
 ,p	X4
--	V_logf
 - plays a demo file
 -#GameUI_Disconnect_LocalProblem_NetworkConfig
 -%s %d
@@ -2143,11 +2143,8 @@ $tI(knN
 ..\content
 ..om?
 .00cfg
-.5\pF
-.5vP6
 .7=-l
 .9GXdx
-.=WpF
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
 .?AU?$_InitialTaskHandle@XV<lambda_60c5de84e69e46aa92419d47e2f3ad51>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -3330,14 +3327,14 @@ $tI(knN
 /%d/full?tick=%d
 /%d/start
 /%d/start?tick=%d&tps=%.1f&map=%s&keyframe_interval=%g&protocol=%d
-/-QT0
+/-Ib0
 /0v%H
 /2GG>!B
-/5Sr7
-/5ds7
-/5iu7
-/5rw7
-/5s|!
+/5"n7
+/52p7
+/57o7
+/58q7
+/5Gr7
 /=LZjw
 />58d%
 />Oas
@@ -3365,10 +3362,8 @@ $tI(knN
 00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
-08:02:28
 08@HP
 08@HR 
-08@J0
 09D*0}
 09D*0} D
 09D*0}"C
@@ -3463,6 +3458,7 @@ $tI(knN
 130801120000Z
 16777215"R
 16777215B$
+16:58:22
 18!P+*
 1;C4r
 1;C4s
@@ -3494,7 +3490,7 @@ $tI(knN
 220801000000Z
 230714000000Z
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240722225339Z0/
+240724000057Z0/
 241009235959Z0a1
 25.CSource2Metrics_MatchPerfSummary_Notification.Client
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -3531,7 +3527,6 @@ $tI(knN
 3dSkyboxSceneWorlds
 3dSkyboxWorldOffset
 3mq+<
-3~gu,
 4	KcD
 4$u.A
 456789:;<=
@@ -3572,6 +3567,7 @@ $tI(knN
 7L9uHt
 7h>?8
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8	V_powf
 8#8fD
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
 8#LT`f
@@ -3641,7 +3637,7 @@ $tI(knN
 8w>Hc
 8|u9H
 8}WW`
-9	V_powf
+9	V_qsort
 9)~3H
 9)~4H
 9)~P3
@@ -3652,8 +3648,8 @@ $tI(knN
 90~_H
 92~>3
 95	6T
-95/nF
-95;mF
+95 F!
+95#dF
 95TGP
 98t H
 98~(H
@@ -3663,6 +3659,7 @@ $tI(knN
 9;tcH
 9=*Nd
 9=aA\E
+9=b>K
 9>~ZH
 9?=d>?
 9?Gw8?Q
@@ -3734,7 +3731,7 @@ $tI(knN
 9|$P}
 9|$XuT
 9~h~=H
-:	V_qsort
+:	V_qsort_s
 :    processpacketentities: server executed through command %d
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
@@ -3751,12 +3748,12 @@ $tI(knN
 :PASSuL
 :Tu)f
 :^V=/
-;	V_qsort_s
 ;)u1D
 ;)} H
 ;)}FH
 ;.u1L
 ;</t3<\t/
+;=%> 
 ;?%L+
 ;?0123456789:;<=>?
 ;?Bh9?
@@ -3892,6 +3889,7 @@ $tI(knN
 >wcv?>
 >wcv?uj
 >~a)>
+?	V_roundf
 ?	g	2	
 ?!5WOo
 ?+>^m
@@ -4257,7 +4255,6 @@ $tI(knN
 ?ulJcL*
 ?upHcN
 ?{Q}<
-@	V_roundf
 @ 9B tDA
 @ Current  :  %s
 @ H;}
@@ -4269,6 +4266,7 @@ $tI(knN
 @.data
 @.reloc
 @08@HPX`hpx
+@08NL
 @0HcB
 @8+u_
 @8,7u
@@ -4366,7 +4364,7 @@ $tI(knN
 @C#e<\
 @HHcB$;B(u
 @HPX&I
-@HPX`hv@
+@HPX`hv
 @L9nHu$
 @PHcB(;B,u
 @SATAUAVAWH
@@ -4689,7 +4687,6 @@ A>l$/
 A>pP&
 A@D	A
 A@L;B
-AA:0 %
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -4906,6 +4903,7 @@ Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
 Ahd=<c]^7if1Rjg
+Aj[URM
 Alias a command.
 AlignedByteArray not properly aligned
 AllocConsole
@@ -5171,223 +5169,223 @@ C8A9B8v
 C8A9C8v
 C8IcC0M
 C9D7 }r@2
-C:\buildworker\citadel_staging_win64\build\_build_\engine2\_vpc_engine2\default\win64\_msvc_\Retail\engine2.pdb
-C:\buildworker\citadel_staging_win64\build\_build_\engine2\_vpc_engine2\default\win64\_schema_\release\engineevents_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entitycomponent_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityidentity_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityinstance_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityscriptframework_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\ientity2_entityio_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\networkvar_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\variant_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\src\appframework\appsystemdict.cpp
-C:\buildworker\citadel_staging_win64\build\src\appframework\gameinfo.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\colorconversion.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\imageformat.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\netmessages.h
-C:\buildworker\citadel_staging_win64\build\src\common\steamid.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\basespawngroup.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\basespawngroup.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\bitbuf_errorhandler.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\bugservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\cl_broadcast.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\cl_demo.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\cl_ents_parse.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\cl_instant_replay.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\cl_rcon.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\cl_steamauth.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\clientframe.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\connectgameclient.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\console\textconsole.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\console\textconsolewin.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\demostreamhttp.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\engine2.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\engineservicemgr.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\engsoundservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\ents_shared.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\gameeventsystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\gameresourceservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\gameuiservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\hltvbroadcast.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\hltvclient.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\hltvclientstate.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\hltvdemo.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\hltvserver.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\hltvserver_async.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\hltvserver_data.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\host.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\hoststatemgr.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\inputservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\inputservice.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\keyvaluecache.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\loopmodeaddondownload.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\loopmodeconsole.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\loopmodeingameui.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\loopmodelevelload.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\loopmodemainmenu.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\loopmoderemoteconnect.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\loopmodesourcetvrelay.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\looptypebase.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\looptypebase.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\looptypeclientserver.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\looptypeclientserver.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\looptypesimple.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\maplistservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\net_support.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkclientservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkclientservice.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkclientspawngroup.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameclient.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameclient.cpp:2632
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameclient.cpp:3125
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameclient.cpp:3801
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameclient.cpp:4090
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameclient_interface.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameclientbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameclientbase.cpp:2710
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameserver.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameserver.cpp:1174
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameserver_interface.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameserverbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameserverbase.cpp:2846
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameserverbase.cpp:5356
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameserverbase.cpp:5422
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameserverbase.cpp:5487
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkgameserverbase.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkp2pservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkserverservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkserverspawngroup.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkserverspawngroup.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkstringtable.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkstringtableitem.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\networkstringtableitem.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\packed_entity.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\packed_entity.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\panoramaenginehandler.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\pure_server.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\pvs.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\renderingworld.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\renderservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\screenshot_service.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\screenshot_service.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\serversideclient.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\serversideclient.cpp:114
-C:\buildworker\citadel_staging_win64\build\src\engine2\serversideclient.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\serversideclientbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\serversideclientbase.h
-C:\buildworker\citadel_staging_win64\build\src\engine2\soundservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\spawngroupmessagemanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\splitscreenservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\sv_alternatebaselinemgr.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\sv_ents_write.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\sv_framesnapshot.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\sv_packedentities.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\sv_rcon.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\sv_redirect.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\sv_remoteaccess.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\sv_serializer_validation.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\sv_steamauth.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\threadedjobgraph.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\toolservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\tvdirectdemorecorder.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\version.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\vprofservice.cpp
-C:\buildworker\citadel_staging_win64\build\src\engine2\worldgroupregistry.cpp
-C:\buildworker\citadel_staging_win64\build\src\entity2\entityidentity.cpp
-C:\buildworker\citadel_staging_win64\build\src\entity2\entitykeyvalues.cpp
-C:\buildworker\citadel_staging_win64\build\src\entity2\entitysystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\color_conversion.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\camera.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\expressioncalculator.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\vectorcollisionutils.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\kmeansclustering.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\appframework\appsystemdict.h
-C:\buildworker\citadel_staging_win64\build\src\public\appframework\tier1app.h
-C:\buildworker\citadel_staging_win64\build\src\public\appframework\tier2app.h
-C:\buildworker\citadel_staging_win64\build\src\public\bitmap\floatbitmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\demofile\demobuffer.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\demofile\demofile.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\engine2\inputvalue.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\engine2\inputvalueanalogderivative.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\engine2\iprerequisite.h
-C:\buildworker\citadel_staging_win64\build\src\public\engine2\isource2server.h
-C:\buildworker\citadel_staging_win64\build\src\public\engine2\packetentities_shared.h
-C:\buildworker\citadel_staging_win64\build\src\public\entity2\entityinterfaces.h
-C:\buildworker\citadel_staging_win64\build\src\public\entity2\globalvars_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\entity2\variant.h
-C:\buildworker\citadel_staging_win64\build\src\public\inputsystem\inputenums.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\math_pfns.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\percentile_generator.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\vector4d_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\networksystem\inetchannel.h
-C:\buildworker\citadel_staging_win64\build\src\public\networksystem\inetworkmessages.h
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\iscenelayer.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\scenevisibility.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\isoundopsystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\lowlevel.h
-C:\buildworker\citadel_staging_win64\build\src\public\soundsystem\soundopshared.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\assert_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\basetypes.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitbuf.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitstring.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitvec.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\byteswap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\concommand.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\enum_helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\eventdispatcher.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\ns_address.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\quantizedfloatencoder.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadtoolstypes.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tspointerlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlblockmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlbufferstrider.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utldict.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlqueue.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrange.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsignalslot.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlslice.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsortvector.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsymboltable.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsymboltablelarge.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utltshash.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\p4helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\registry.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\public\vconcomm\vconsole_shared.h
-C:\buildworker\citadel_staging_win64\build\src\public\vphysics2\handles.h
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\compressedresourcemanifest.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\bitbuf.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\kv3transfer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utlsoacontainer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\fieldpathpacker.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\threaded_logger.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\utlstreambuffer.cpp
+C:\buildworker\citadel_rel_win64\build\_build_\engine2\_vpc_engine2\default\win64\_msvc_\Retail\engine2.pdb
+C:\buildworker\citadel_rel_win64\build\_build_\engine2\_vpc_engine2\default\win64\_schema_\release\engineevents_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entitycomponent_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityidentity_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityinstance_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityscriptframework_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\ientity2_entityio_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\networkvar_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\variant_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\src\appframework\appsystemdict.cpp
+C:\buildworker\citadel_rel_win64\build\src\appframework\gameinfo.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\colorconversion.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\imageformat.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\netmessages.h
+C:\buildworker\citadel_rel_win64\build\src\common\steamid.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\basespawngroup.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\basespawngroup.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\bitbuf_errorhandler.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\bugservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\cl_broadcast.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\cl_demo.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\cl_ents_parse.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\cl_instant_replay.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\cl_rcon.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\cl_steamauth.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\clientframe.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\connectgameclient.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\console\textconsole.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\console\textconsolewin.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\demostreamhttp.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\engine2.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\engineservicemgr.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\engsoundservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\ents_shared.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\gameeventsystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\gameresourceservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\gameuiservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\hltvbroadcast.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\hltvclient.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\hltvclientstate.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\hltvdemo.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\hltvserver.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\hltvserver_async.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\hltvserver_data.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\host.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\hoststatemgr.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\inputservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\inputservice.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\keyvaluecache.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\loopmodeaddondownload.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\loopmodeconsole.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\loopmodeingameui.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\loopmodelevelload.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\loopmodemainmenu.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\loopmoderemoteconnect.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\loopmodesourcetvrelay.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\looptypebase.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\looptypebase.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\looptypeclientserver.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\looptypeclientserver.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\looptypesimple.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\maplistservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\net_support.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkclientservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkclientservice.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkclientspawngroup.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameclient.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameclient.cpp:2632
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameclient.cpp:3125
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameclient.cpp:3801
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameclient.cpp:4090
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameclient_interface.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameclientbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameclientbase.cpp:2710
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameserver.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameserver.cpp:1174
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameserver_interface.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameserverbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameserverbase.cpp:2846
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameserverbase.cpp:5356
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameserverbase.cpp:5422
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameserverbase.cpp:5487
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkgameserverbase.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkp2pservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkserverservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkserverspawngroup.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkserverspawngroup.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkstringtable.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkstringtableitem.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\networkstringtableitem.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\packed_entity.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\packed_entity.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\panoramaenginehandler.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\pure_server.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\pvs.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\renderingworld.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\renderservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\screenshot_service.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\screenshot_service.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\serversideclient.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\serversideclient.cpp:114
+C:\buildworker\citadel_rel_win64\build\src\engine2\serversideclient.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\serversideclientbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\serversideclientbase.h
+C:\buildworker\citadel_rel_win64\build\src\engine2\soundservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\spawngroupmessagemanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\splitscreenservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\sv_alternatebaselinemgr.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\sv_ents_write.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\sv_framesnapshot.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\sv_packedentities.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\sv_rcon.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\sv_redirect.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\sv_remoteaccess.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\sv_serializer_validation.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\sv_steamauth.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\threadedjobgraph.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\toolservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\tvdirectdemorecorder.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\version.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\vprofservice.cpp
+C:\buildworker\citadel_rel_win64\build\src\engine2\worldgroupregistry.cpp
+C:\buildworker\citadel_rel_win64\build\src\entity2\entityidentity.cpp
+C:\buildworker\citadel_rel_win64\build\src\entity2\entitykeyvalues.cpp
+C:\buildworker\citadel_rel_win64\build\src\entity2\entitysystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\color_conversion.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\camera.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\expressioncalculator.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\vectorcollisionutils.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\kmeansclustering.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\appframework\appsystemdict.h
+C:\buildworker\citadel_rel_win64\build\src\public\appframework\tier1app.h
+C:\buildworker\citadel_rel_win64\build\src\public\appframework\tier2app.h
+C:\buildworker\citadel_rel_win64\build\src\public\bitmap\floatbitmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\demofile\demobuffer.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\demofile\demofile.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\engine2\inputvalue.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\engine2\inputvalueanalogderivative.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\engine2\iprerequisite.h
+C:\buildworker\citadel_rel_win64\build\src\public\engine2\isource2server.h
+C:\buildworker\citadel_rel_win64\build\src\public\engine2\packetentities_shared.h
+C:\buildworker\citadel_rel_win64\build\src\public\entity2\entityinterfaces.h
+C:\buildworker\citadel_rel_win64\build\src\public\entity2\globalvars_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\entity2\variant.h
+C:\buildworker\citadel_rel_win64\build\src\public\inputsystem\inputenums.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\percentile_generator.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\vector4d_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\networksystem\inetchannel.h
+C:\buildworker\citadel_rel_win64\build\src\public\networksystem\inetworkmessages.h
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\iscenelayer.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\scenevisibility.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\isoundopsystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\lowlevel.h
+C:\buildworker\citadel_rel_win64\build\src\public\soundsystem\soundopshared.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\assert_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\basetypes.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitbuf.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitstring.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitvec.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\concommand.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\enum_helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\eventdispatcher.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.inl
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\ns_address.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\quantizedfloatencoder.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadtoolstypes.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tslist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tspointerlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlblockmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlbufferstrider.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utldict.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utllinkedlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlqueue.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrange.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsignalslot.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlslice.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsortvector.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsymboltable.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsymboltablelarge.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utltshash.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\p4helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\registry.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\public\vconcomm\vconsole_shared.h
+C:\buildworker\citadel_rel_win64\build\src\public\vphysics2\handles.h
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\compressedresourcemanifest.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schematype.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\bitbuf.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\keyvalues3.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\kv3transfer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utlsoacontainer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\fieldpathpacker.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\threaded_logger.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\utlstreambuffer.cpp
 C<:n$
 C<;C4A
 C=M)X
@@ -5962,7 +5960,7 @@ CHLTVServerAsync::AddSaveGameData_Q
 CHLTVServerAsync::CSendClientMessagesJob::CSendClientMessagesJob
 CHLTVServerAsync::ExecuteDelayedCall
 CHLTVServerAsync::ExpandDeltaFrameToFullFrame
-CHLTVServerAsync::ExpandDeltaFrameToFullFrame(), C:\buildworker\citadel_staging_win64\build\src\engine2\hltvserver_async.cpp:1092
+CHLTVServerAsync::ExpandDeltaFrameToFullFrame(), C:\buildworker\citadel_rel_win64\build\src\engine2\hltvserver_async.cpp:1092
 CHLTVServerAsync::ExpandDeltaFramesToTick_Impl
 CHLTVServerAsync::ExpandDeltaFramesToTick_Q
 CHLTVServerAsync::GetApproximateOldestTick_S
@@ -6014,7 +6012,7 @@ CInstantReplay::PlayDemo
 CInstantReplay::ReadReplayMessage
 CInstantReplay::SkipToTick
 CInstantReplay::TicksToTime::<lambda_1>::operator ()
-CKMeansClustering::AssignVectorsToClusters(), C:\buildworker\citadel_staging_win64\build\src\mathlib\kmeansclustering.cpp:155
+CKMeansClustering::AssignVectorsToClusters(), C:\buildworker\citadel_rel_win64\build\src\mathlib\kmeansclustering.cpp:155
 CKMeansClustering::FindClusters
 CKMeansClustering::PopulateEmptyClusters
 CKV3ArrayIteratorView<0>::CKV3ArrayIteratorView
@@ -7745,7 +7743,6 @@ CmdLinkA@
 CmdLinkAL
 Collect CPU usage stats
 Command
-Command '%s' is implicitly development only, normally would not execute.%s Mark it as FCVAR_RELEASE to allow customer execution in non-tools mode.
 Command Line: 
 Command line: %s
 CommandLine
@@ -7811,7 +7808,6 @@ Construction is only allowed from the resolve function
 Controls VTune's sampling.
 Convar %s is already registered but not as user info value
 Convar %s is marked as cheat and cheats are off
-Convar '%s' is implicitly development only, will not allow in rel branch.%s Mark as FCVAR_RELEASE to allow customer execution in non-tools mode.
 ConvertVProfLiteToMsg
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
@@ -7887,6 +7883,7 @@ Cypriot
 Cyrillic
 C|$pH
 C|$xL
+D	V_sincosf
 D W?{W
 D!l$xA
 D#C|D
@@ -8252,6 +8249,7 @@ D8(t>H
 D8(t?
 D8*t	H
 D8,2u
+D8-1lG
 D8.uBH
 D8/u#L
 D80t$A
@@ -8322,7 +8320,7 @@ D9	~OE
 D9	~SE
 D9 t=
 D9%%4X
-D9%zD!
+D9%RH!
 D9&t_I
 D9(t&H
 D9(tj
@@ -8635,7 +8633,6 @@ Dumped stack stats struct "%s" to file "%s"
 Duplicate engine service named "%s" registered!
 Duplicate loop named "%s" registered!
 D|$0H
-E	V_sincosf
 E @8pHtD9s|~?L
 E D8xKtgA
 E D9{(
@@ -9011,6 +9008,7 @@ Extra arguments given after name
 E|$0H
 E|$@H
 E|$PL
+F	V_sinf
 F	t,P
 F 9F tDA
 F @8pKuNH
@@ -9205,15 +9203,15 @@ FloatBitMap_t::RowPtrOrDummy
 FloatBitMap_t::WriteToBuffer
 FloatBitMap_t::WriteToBuffer(961): Unsupported color format "%s", skipping!
 FloatBitMap_t::WriteToBuffer: Received improper buffer size %s (expecting %s), skipping!
-FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1638
-FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1750
+FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1638
+FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1750
 FloatBitMap_t::WriteToBufferBGRA
 FloatBitMap_t::WriteToBufferDXT_atitc
 FloatBitMap_t::WriteToBufferDXT_atitc(1018): Error! Temp texture is %d bytes when ATI's lib requires %d bytes!
 FloatBitMap_t::WriteToBufferDXT_atitc(1103): Unsupported output color format "%s"!
 FloatBitMap_t::WriteToBufferDXT_atitc(1112): Error! Allocated %llu bytes when ATI's lib requires %d bytes!
 FloatBitMap_t::WriteToBufferDXT_atitc(1120): Error %d returned from ATI_TC_ConvertTexture()!
-FloatBitMap_t::WriteToBufferETC(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1874
+FloatBitMap_t::WriteToBufferETC(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1874
 FloatBitMap_t::WriteToBufferI
 FloatBitMap_t::WriteToBufferIA
 FloatBitMap_t::WriteToBufferR16
@@ -9292,7 +9290,6 @@ Friday
 Full Frame
 FullFrameSplit tick=%d, chunk=%d of %d
 Function: %s
-G	V_sinf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -9309,15 +9306,12 @@ G0;F0
 G0HcH
 G2*&#!
 G4Lcw`
-G5'?H
-G5QnJ
-G5gnJ
 G8$7u
 G89D$`t
 G8D8`au
 G9D7 u
 G;$.|
-G=?nJ
+G=u?H
 G@9D$`t
 G@L;D$hu
 GAMEBIN
@@ -9691,13 +9685,17 @@ H9+t	H
 H9/t	H
 H92tBA
 H93t	H
-H95&\D
-H95VkF
+H95%kF
+H952y
+H95:X:
+H95W%=
+H95h|
 H97t	H
 H97u+A
 H98t2
 H98t6H
 H9;t	H
+H9=aD 
 H9={)]
 H9>u/H
 H9A s
@@ -10164,6 +10162,7 @@ Huffman code size table overflow
 Huffman table 0x%02x was not defined
 HxHcG
 I	GHI
+I	V_snprintf
 I 	A0
 I |0E
 I#I0H
@@ -10537,7 +10536,6 @@ IsValidLocale
 IsValidLocaleName
 Issue an rcon command.
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
-J	V_snprintf
 J89H8w
 J8qH*
 J9ez)
@@ -10557,7 +10555,7 @@ Javanese
 Jc< H
 JiYMm
 Joystick
-Jul 18 2024
+Jul 23 2024
 Jumping to random tick %d (%.2f min)
 Just an assert
 JustInTime Resource Spawn Group
@@ -10864,16 +10862,17 @@ L9 t^D9%6
 L9#t	H
 L9#u/H
 L9%6|Q
-L9%Pc>
-L9%cKA
+L9%`d>
+L9%mf>
+L9%nc>
 L9&uyD
 L9't	H
 L9(tKH
 L9(tZ
+L9-P=A
 L90t-H
 L90u2
 L92tDA
-L95	]2
 L95#;O
 L95#vN
 L95$i[
@@ -10888,10 +10887,13 @@ L95cjR
 L95ctN
 L95c{N
 L95pCR
+L95y]2
 L98t7
 L9;t	H
 L9;u	H
-L9==-F
+L9==<@
+L9=M-F
+L9=[?.
 L9?t	H
 L9@ s
 L9BHA
@@ -10978,7 +10980,7 @@ L9}`t
 L9}ot
 L9}ou L
 L9}wt
-L;5y|
+L;5X}
 L;A r
 L;EPL
 L;Q s
@@ -11584,10 +11586,10 @@ Number of seconds to skip back to instant replay from live
 Number of seconds to track failed rcon authentications
 Number of times a user can fail rcon authentication in sv_rcon_minfailuretime before being banned
 Numbers starting with leading zero must be in octal.
+O	V_sscanf
 O$M9o
 O(+O<
 O(fA;
-O)U8_
 O*9y]
 O,t	H
 O-p?A6
@@ -11695,14 +11697,13 @@ Override Fog color: %f %f %f
 Overrides the SourceTV master root address.
 Overrides the max players reported to prospective clients
 Overriding minidump handler with Engine2MinidumpFunction
-P	V_sscanf
 P HcN 
 P Lc{8D;{H
 P#7)^
 P(D8e t H
 P(D8m t H
-P08@J0
-P08J@
+P08@J
+P08NL
 P8L9e
 P:S;A
 P>q_Y~
@@ -11801,7 +11802,6 @@ Paused: %s
 Pauses demo playback at server tick
 Pauses demo playback.
 Pauses instant replay.
-Pe!%3
 Peak resident memory:    %s
 Peak working set: %.2f MiB
 Peer "%s" is unknown to all handlers
@@ -12093,6 +12093,7 @@ R8G8_UINT
 R8IcB0L
 R8_UINT
 R;876.
+R;]RZh8
 RA+B(
 RCON Cmd: recv error (%s)
 RENDER_SYSTEM_DLL_DX11
@@ -12128,7 +12129,7 @@ RJO_m
 RP_PAUSE
 RP_TOGGLEPAUSE
 RP_UNPAUSE
-RSDS!
+RSDS.Ak//
 RST%d
 RTNED
 RT_p$
@@ -12839,7 +12840,6 @@ Sleeping
 Smoothing not supported with nonstandard sampling ratios
 Snapshots broadcast per second
 Snapshots broadcast per second, GOTV[1]
-SnoA	
 Socket ProcessAccept Error: %s
 Socket accept ioctl(FIONBIO) failed (%i)
 Socket bind failed (%s)
@@ -13093,6 +13093,7 @@ System/network
 SystemLoad %.3f - %.3f, retrieval cost %sns
 SystemLoad unavailable
 SystemTimeToFileTime
+T	V_stricmp_fast
 T$ )L$ D
 T$ D+l$
 T$ D8t$(
@@ -13382,7 +13383,6 @@ Turn on demo debug spew.
 Type appears to be in generated pool but wasn't 
 Type is already registered: 
 T~YRVr
-U	V_stricmp_fast
 U t	Ak
 U(HcP
 U(fff
@@ -13654,6 +13654,7 @@ UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
 U}g7x~
+V	V_strlower_fast
 V/?[w8rV
 V0H;V8t
 V6E>`"(5
@@ -13787,6 +13788,7 @@ V_fclose
 V_fflush
 V_fmodf
 V_fopen
+V_fopenUTF8
 V_stristr_fast( pAddonDirectory, "_addons" )
 V_strnicmp_fast( partial, "stackstats_dump ", 16 ) == 0
 V_~]	,
@@ -13834,9 +13836,7 @@ VoiceDataFormat_t
 Vrad3_001
 Vu?N\t?8Ws?vGr?
 VyBl=
-W	V_strlower_fast
 W(Lc0E
-W=	pM
 WARNING
 WARNING! TextConsole::Init: Could not attach console hook.
 WARNING:  FlushEntityPacket, %s
@@ -14022,9 +14022,8 @@ X-Origin-Auth header of the broadcast POSTs
 X-Origin-Auth header of the broadcast1 POSTs
 X-Origin-Delay
 X-Reason
-X5e4H
-X5jO6
-X5o=@
+X5E0H
+X5O9@
 X?/QY?s
 X?OsX?
 X@Hc@8H
@@ -14054,13 +14053,13 @@ X|$ A
 X|$8E
 Y0HcR
 Y0LcQ\M
-Y5!\0
-Y5771
-Y5YB5
-Y5cZ0
-Y5sl@
-Y5vxP
+Y5E85
+Y5Sh@
+Y5VtP
+Y5qX0
 Y9"SD
+Y=*m4
+Y=jh@
 Y>kX>M
 Y?'WY?
 YD$@f
@@ -14071,6 +14070,7 @@ You have been kicked and banned %s by the server.
 Your current chat group is "%s"
 YpU_Z
 Y}?\0 >%
+Z	V_strtod
 Z* ,	
 Z48wN39
 Z?SHX?
@@ -14086,7 +14086,6 @@ Zod(^?
 Zpm"U
 Zq",9
 [	UoA
-[	V_strtod
 [ %d ]%n
 [%d] Changing player name to Steam name '%s'
 [%s] %d - %s (refcount %d)
@@ -14331,6 +14330,7 @@ Zq",9
 \%lld.vpk
 \0 >%
 \0 >gM|
+\=<M6
 \C not allowed in lookbehind assertion
 \GHfA
 \N\O\NZOt)s(r(
@@ -14442,7 +14442,7 @@ _whitelist.txt
 `+!]?
 `-uRQg
 `.rdata
-`20 %
+`2 "%
 `3Q"X
 `;k\|
 `;s\|
@@ -14516,6 +14516,7 @@ _whitelist.txt
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a	V_tanf
 a numbered reference must not be zero
 a&M-=Z]<i*k)n-t&q&p&|
 a7hIw
@@ -14604,7 +14605,6 @@ avg_packets_in
 avg_packets_out
 avg_ping_ms
 avisound 
-b	V_tanf
 b#M**y`Bl+o(u,{ x$w!
 b0xNA;;|E)!
 b?^Cy
@@ -14742,12 +14742,11 @@ built_from_cl
 built_from_cl.txt
 button_info
 bytes
-c D9%c
+c D9%s
 c HcC8
 c [1>H'
 c(>\,
 c0&>`
-c3doz
 c8HcCP
 c?FA@s}
 cB$$"$""""SE$4"tfFDD
@@ -15333,6 +15332,7 @@ f9,pu
 f9,~u
 f9<Au
 f9<Ju
+f9=<l
 f9D$@ugE3
 f9o&ttH
 f9s t
@@ -15541,7 +15541,6 @@ fullpath
 function not supported
 future
 future already retrieved
-f{Zj#
 g)>3j.>
 g9@x!8
 g<t]Ic,$Hc_
@@ -16894,11 +16893,9 @@ o$D9+uG
 o$D9+uHA
 o$D9+uK
 o$D9+uL
-o%n2G
-o%u<G
-o-.kH
-o-.lH
-o=`B-
+o%.2G
+o%5<G
+o=pl-
 o? Bo?
 oD$ f
 oD$@H
@@ -17028,8 +17025,9 @@ p WATAUAVAWH
 p WAVAWH
 p*W4H
 p->m_nPlayerSlot == i
-p08@H^
+p08@H^L
 p0R^G'
+p0j@I%
 p2p_listpeers
 p2p_ping "%s"
 p4edit
@@ -17302,6 +17300,7 @@ public_dependency
 publiccontent
 publish_data
 publish_data.txt
+pui{O
 pulse/pulse_enabled
 pulse_system
 punct
@@ -17965,6 +17964,7 @@ t	HcB
 t	HcH0H
 t	Hcp
 t	IcH I
+t	V_tier0_strcmp
 t 9w<
 t D80t
 t H9U
@@ -17980,7 +17980,7 @@ t!L9{
 t!LcC D;
 t"$`< u
 t"D83t
-t"H95
+t"H95t
 t"H;K
 t"Hc(H
 t"fff
@@ -18079,7 +18079,7 @@ t$8u*H
 t$8~ H
 t$8~#H
 t$@-l
-t$@95
+t$@95h
 t$@A_A^A]A\_
 t$@D+
 t$@D;
@@ -18181,8 +18181,8 @@ t$xL9l$0t
 t$xfA9
 t$xt*3
 t%D8"t H
-t%D8=?
-t%D8=iia
+t%D8=<
+t%D8=fia
 t%fE9
 t%fff
 t&A88t
@@ -18288,7 +18288,7 @@ t\Hcu
 t^@8/tY3
 t^HcC
 t^~\2
-t_D85#VG
+t_D85
 t_M9>t
 taHcC
 table
@@ -18300,7 +18300,7 @@ table_t
 tables
 target_entity
 taxQ3
-tbD8%_
+tbD8%\
 tbD8?t]
 tbJ9|
 tc@8*t^3
@@ -18497,7 +18497,6 @@ u	@8-
 u	D8-
 u	HcB
 u	L9}
-u	V_tier0_strcmp
 u 9k(u
 u H9P r
 u H9T$ht
@@ -18587,10 +18586,10 @@ uWire <= UINT32_MAX
 uXL+uHL
 uZEeu
 uZH9C(H
-uZL9-
+uZL9-A
 u^Hcu
 u_L9u
-u`L9%,
+u`L9%
 uchar32
 udp/ip   : %s:%i
 udp_port

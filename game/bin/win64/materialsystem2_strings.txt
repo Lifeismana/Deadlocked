@@ -173,7 +173,6 @@
 !IsDynamicComboVariableDataCompact()
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
 !IsInternalTypeShortArray( Internal_Type() )
-!P&Q(
 !bLooksLikeABug
 !destBlock.IsReadOnly() && !destBlock.IsExternalMemory()
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
@@ -232,11 +231,12 @@ $IcD$
 &YA1E
 &YA1H
 &YA1I
+'	V_log10f
 ', type<
 ',=?k
 'exists'
 'return'
-(	V_log10f
+(	V_log2_uint
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
@@ -295,7 +295,6 @@ $IcD$
 (|$ H
 (|$0f
 (|$`H
-)	V_log2_uint
 )>6{1n
 )D$ D
 )D$03
@@ -314,6 +313,7 @@ $IcD$
 )|$ A
 )|$`L
 )|$pE3
+*	V_log2f
 *** %s "%s" in %s does not follow the 0..N format!
 *** %s "%s" in %s has max(%d) > 254!
 *** %s "%s" in %s has min(%d) < 0!
@@ -406,7 +406,6 @@ $IcD$
 *pLookForFileNameDelimiter == '>'
 *pLookForFileNameDelimiter == '\"'
 *pStartOfFileNameDelimiter == '\"'
-+	V_log2f
 +C$Hc
 +C$Lc
 +D$tHc
@@ -421,6 +420,7 @@ $IcD$
 +h->|
 +mat_clearshadercache
 +o'q)}
+,	V_logf
 , <^A
 , GetFont used
 , LoadFont used
@@ -434,7 +434,6 @@ $IcD$
 ,D$@A
 ,L$XL
 ,W5y+
--	V_logf
 -----
 ----------
 --------------------------------------------------
@@ -677,7 +676,7 @@ $IcD$
 220323000000Z
 220801000000Z
 230714000000Z
-240722225243Z0/
+240723235037Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -698,7 +697,6 @@ $IcD$
 4/E9,/~/I
 4@HcD
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
-5+6[x
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
@@ -706,10 +704,12 @@ $IcD$
 6D;g(r
 6I]Dc
 6OB,n_
+6R6o|!
 6YA1H
+7	V_powd
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powd
+8	V_powf
 8A]A\_^
 8A][H
 8A_A]
@@ -721,7 +721,7 @@ $IcD$
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8L$`t
-9	V_powf
+9	V_qsort
 9"u3H
 9)~P3
 93~sH
@@ -748,9 +748,8 @@ $IcD$
 9|$Pu
 9|$hu
 9~0~-H
-:	V_qsort
+:	V_qsort_s
 : lexer error %d :
-;	V_qsort_s
 ;B8T	dH
 ;B@|8
 ;B@|L
@@ -948,7 +947,7 @@ $IcD$
 @.reloc
 @8,7u
 @84)u
-@85TM
+@85dM
 @8;te3
 @8<(u
 @8j(t
@@ -1033,6 +1032,7 @@ $IcD$
 @USVWATH
 @USVWAWH
 @USVWH
+@USWH
 @UVAVAWH
 @UVAWH
 @UVWATAUAVAWH
@@ -1231,7 +1231,6 @@ BLOOM_BLEND_ADD
 BLOOM_BLEND_BLUR
 BLOOM_BLEND_SCREEN
 BOOLLITERAL
-B\4Zw
 Bad KV3 data for resource '%s': %s
 Bad VFX_VARIABLE type for %s in material "%s"!
 Bad VFX_VARIABLE type for VFX_VARIABLE_SOURCE_ATTRIBUTE %s Source( %s )! In material "%s"
@@ -1272,87 +1271,87 @@ C0Hc	H
 C8D9d0
 C8HcW<
 C94,~*L
-C:\buildworker\citadel_staging_win64\build\_build_\materialsystem2\_vpc_materialsystem2\default\win64\_msvc_\Retail\materialsystem2.pdb
-C:\buildworker\citadel_staging_win64\build\_build_\materialsystem2\_vpc_materialsystem2\default\win64\_schema_\release\colorcorrectionparams_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\materialsystem2\_vpc_materialsystem2\default\win64\_schema_\release\material_resource_data_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\src\bitmap\imageformat.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\vfx\vfx_common.h
-C:\buildworker\citadel_staging_win64\build\src\common\vfx\vfx_param.h
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\fontmanager\fontamalgam.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\fontmanager\fontmanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\fontmanager\fonttexturecache.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\fontmanager\win32font.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\material2.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\material2.h
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\material_command_buffer.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\material_shader_params.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\material_type_manager.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\materialsystem2.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\postprocessingsystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\postprocessingtypemanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\textlayout\textlayout.cpp
-C:\buildworker\citadel_staging_win64\build\src\materialsystem2\utils\materialsystem2utils.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\vmatrix.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\materialsystem2\materialprimitivetype.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\vector4d_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\postprocessing\colorcorrectionparams.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\indexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\vertexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\kv3typemanager.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\iresourcesystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\weakhandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\scenesystem\vertexformat.h
-C:\buildworker\citadel_staging_win64\build\src\public\schemalib\schemaenumhelpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitvec.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\byteswap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_resource.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_saveloadresource.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_schema_support.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadmutex.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlblockmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlntree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstackmachine.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsymboltable.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlsymboltablelarge.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utltshash.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\introspectedtokv3typemanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcefile.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaclassinfo.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
-C:\buildworker\citadel_staging_win64\build\src\texturedictionary\texturedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\kv3transfer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utlstackmachine.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\utlstreambuffer.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\compiletargetexpr.g
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfx_common.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfx_compile_helpers.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfx_compile_target_expr.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfx_expression_parser.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfx_render_state.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfxexpr.g
+C:\buildworker\citadel_rel_win64\build\_build_\materialsystem2\_vpc_materialsystem2\default\win64\_msvc_\Retail\materialsystem2.pdb
+C:\buildworker\citadel_rel_win64\build\_build_\materialsystem2\_vpc_materialsystem2\default\win64\_schema_\release\colorcorrectionparams_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\materialsystem2\_vpc_materialsystem2\default\win64\_schema_\release\material_resource_data_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\src\bitmap\imageformat.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\vfx\vfx_common.h
+C:\buildworker\citadel_rel_win64\build\src\common\vfx\vfx_param.h
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\fontmanager\fontamalgam.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\fontmanager\fontmanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\fontmanager\fonttexturecache.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\fontmanager\win32font.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\material2.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\material2.h
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\material_command_buffer.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\material_shader_params.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\material_type_manager.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\materialsystem2.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\postprocessingsystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\postprocessingtypemanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\textlayout\textlayout.cpp
+C:\buildworker\citadel_rel_win64\build\src\materialsystem2\utils\materialsystem2utils.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\vmatrix.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\materialsystem2\materialprimitivetype.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\vector4d_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\postprocessing\colorcorrectionparams.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\indexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3typemanager.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\iresourcesystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\weakhandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\scenesystem\vertexformat.h
+C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaenumhelpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitvec.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.inl
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_resource.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_saveloadresource.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_schema_support.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadmutex.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlblockmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utllinkedlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlntree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstackmachine.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsymboltable.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlsymboltablelarge.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utltshash.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\introspectedtokv3typemanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcefile.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schemaclassinfo.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schematype.cpp
+C:\buildworker\citadel_rel_win64\build\src\texturedictionary\texturedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\keyvalues3.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\kv3transfer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utlstackmachine.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\utlstreambuffer.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\compiletargetexpr.g
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfx_common.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfx_compile_helpers.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfx_compile_target_expr.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfx_expression_parser.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfx_render_state.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfxexpr.g
 C@LcC<H
 CBaseIntrospectedToKV3TypeManager::AsyncProcessData
 CByteswap::SwapBufferToTargetEndian
@@ -1968,7 +1967,7 @@ CommandLine
 Compile Target Expression
 Compile Targets
 CompileComboAndGetVariables_DynamicShaderCompile
-CompileComboAndGetVariables_DynamicShaderCompile(), C:\buildworker\citadel_staging_win64\build\src\materialsystem2\material2.cpp:2704
+CompileComboAndGetVariables_DynamicShaderCompile(), C:\buildworker\citadel_rel_win64\build\src\materialsystem2\material2.cpp:2704
 CompileComboAndGetVariables_DynamicShaderCompile(2685): Dynamic Combos should be assumed to be unique for dynamic shader compile! %d != %d
 CompileComboAndGetVariables_DynamicShaderCompile(2764): Dynamic shader compile failed for %s in material "%s"!
 CompileShadersForFeatureCombo
@@ -2004,6 +2003,7 @@ Currently only DXT5 GPU compression supported.
 Custom font '%s' is already registered, ignoring new registration '%s' range %d - %d
 Custom font file '%s' should be assocated with a font name, will be ignored on Linux and Mac
 Cx@u1H
+D	V_sincosf
 D!l$xA
 D$ -v
 D$ 5J
@@ -2112,16 +2112,17 @@ D3D Semantic Name: "%s"
 D4 H9C
 D7 fB
 D7*f9kBu
-D8%TH
-D8%kK
+D8%	L
+D8%dH
+D8%{K
 D8&ta3
 D8*tt
 D80uQE3
 D81uUL9r
 D840u
 D87th3
-D8= Q
-D8=-O
+D8=0Q
+D8==O
 D8g u
 D8t$Q
 D8t$ht
@@ -2215,7 +2216,6 @@ DynamicCombo
 DynamicComboFromFeature
 DynamicComboRule
 DynamicGlobalsBDA
-E	V_sincosf
 E03ED%
 E0;E@|
 E0D;E@|
@@ -2287,6 +2287,7 @@ ExtTextOutW
 ExternalDescSet
 ExternalNameForInternalType
 Extraneous token
+F	V_sinf
 F 8C 
 F ;F0|
 F A8D
@@ -2340,7 +2341,6 @@ Found existing value when inserting into tree - replacing existing value with ne
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
-G	V_sinf
 G 8C 
 G(knN
 G8L9!t
@@ -2544,8 +2544,10 @@ Hcu`M
 HelpSystem_001
 HorizJustification_e
 HostStateMgr001
+I	V_snprintf
 I could not work out what I was expecting, like so many of us these days!
 I"IcF
+I)JF/
 I+4$H
 I,;J,u/E
 I/O request overflow!
@@ -2636,7 +2638,6 @@ IsValidIndex( i )
 IsValidIndex(elem)
 IsValidIndex(elem) && IndexInRange( elem )
 IsValidIndex(i) && (i != InvalidIndex())
-J	V_snprintf
 J>@G_
 JHHc]oA
 January
@@ -2691,7 +2692,6 @@ L$ SVATAUAVAWH
 L$ SVWATAUAVH
 L$ UATAUAVAWH
 L$ UH
-L$ USWH
 L$ UVWAUAWH
 L$ UWATAUAVH
 L$ UWAVH
@@ -2756,12 +2756,12 @@ L7*fD
 L9#u/H
 L9'tJA
 L9+t	H
-L9-yn
 L93t	H
 L93tJA
-L95n"
+L95~"
 L9;t	H
-L9=@8
+L9=)9
+L9=P8
 L9=Z=
 L9?t	H
 L9c u
@@ -2993,6 +2993,7 @@ No valid vcs file found for shader %s
 NoZPrepass
 Not safe to 'new' this class due to alignment requirements
 November
+O	V_sscanf
 O8HcB
 OCTAL_ESC
 October
@@ -3006,7 +3007,6 @@ OutputDXT5Texture_2x2
 OutputDXT5Texture_4x4
 OverrideTextureParam cannot be called from outside of a CMaterialOverrideScopeGuard
 OwnedByCurrentThread()
-P	V_sscanf
 P8H=vmat
 P8H=vtex
 PA^^]
@@ -3106,7 +3106,6 @@ Programmer Error! Static combo value not in range!
 PropertyEditorSystem_001
 Pz}b!
 Q$HcA
-QkW	5D
 QueryPerformanceCounter
 R11_EAC
 R16G16_UINT
@@ -3138,6 +3137,7 @@ RGBA8888
 RGBA8888_LINEAR
 RGBA8888_UINT
 RGBX8888
+RSDSO
 RaiseException
 RandomFloat
 RayTrace
@@ -3310,6 +3310,7 @@ StatsService_001
 SteamAudio001
 Sunday
 SupportsMappingDimensions
+T	V_stricmp_fast
 T$ D9
 T$ E3
 T$ Hc
@@ -3390,7 +3391,6 @@ Tried to load resource reference '%s' from a value without a resource reference 
 Trying to cast '%s' to a different resource type!
 Tuesday
 TypeManager
-U	V_stricmp_fast
 UATAUAVAWH
 UAUAVAWH
 UAUAVH
@@ -3624,6 +3624,7 @@ WriteConsoleW
 WriteFile
 Wrong number of args left on stack (%i args, wanted %i)!
 Wrong number of args left on stack!
+X	V_strspn
 XA;ML|
 XA^A]_^][
 XA_A]_^][
@@ -3631,7 +3632,6 @@ XD$LH
 XD8(t
 XHcAxL
 Xl$8A
-Y	V_strspn
 Y9"SD
 Y>t$7?
 YL$XH
@@ -3692,11 +3692,11 @@ Yt$@Hc
 \$xA;
 \0bf;
 \error.vmat
+]	V_strtoui64
 ] ;]$t
 ](A8~8t
 ]J<0"0i3
 ]oHcB
-^	V_strtoui64
 ^^^ Attribute-based texture warning is now disabled after outputting 50 warnings.
 ^^^ Constant buffer warning is now disabled after outputting 50 warnings.
 ^hLcC
@@ -3781,6 +3781,7 @@ _psrs
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a	V_tanf
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 address family not supported
@@ -3833,7 +3834,6 @@ argument list too long
 argument out of domain
 array
 attributes[i].GetType() == VFX_VARIABLE_TYPE_TEXTURE2D
-b	V_tanf
 bAllocationCanFit
 bLegalTypeChange
 bLfff
@@ -4865,7 +4865,7 @@ u5I9u
 u6L9x u0
 u7L9c u1
 u8M;q
-uCD85B
+uCD85R
 uED8r(t
 uGf9y
 uW@8u
@@ -4924,6 +4924,7 @@ vtexL
 w8fD9w:~
 w;7}sM9|)
 wHfD9wJ~
+wcr V
 width >= INT16_MIN && width <= INT16_MAX
 win98japanese
 wrong protocol type
@@ -4938,6 +4939,8 @@ x=HcS
 xA_A\_]
 xA_A^A]A\][
 xA_A^A]A\^[
+xb2*!
+y;|OF
 y\PD>!
 y`fA;
 z(f9z*t
@@ -5043,5 +5046,6 @@ z(f9z*t
 }nf;{
 ~ L9>t	H
 ~6fff
+~VzHc>
 ~qj#k"
 ~t&LN

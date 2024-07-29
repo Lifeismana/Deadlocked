@@ -12,7 +12,6 @@
 	#jT$
 	%.*s
 	%s at offset %d, 
-	-Cxe
 	@@@@@@@@@@@@@@@@{N{N{N{N{N{N{N{N
 	A8va
 	A_A^A\]
@@ -425,9 +424,7 @@ $bucH
 %s_PerMipLevelUAVCompressedBlockView
 %suncompressed data
 %u (0x%x)
-&#eY]OuKoL
 &?PPPPPPP?
-&D8%,
 &YA1E
 &YA1H
 &YA1I
@@ -436,6 +433,7 @@ $bucH
 ',=?k
 'exists'
 'return'
+(	V_log2_uint
 ( ( m_nFlags & (TSPEC_VOLUME_TEXTURE|TSPEC_TEXTURE_ARRAY) ) != 0 ) || ( m_nDepth == 1 )
 ( ( m_nFlags & TSPEC_VOLUME_TEXTURE ) == 0 ) || ( ( m_nFlags & TSPEC_TEXTURE_ARRAY ) == 0 )
 ( ( poolType == POOLED_BACKING_STORE_VERTEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_VERTEX_FIXED_SIZE ) ) || ( ( poolType == POOLED_BACKING_STORE_INDEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_INDEX_FIXED_SIZE ) )
@@ -454,7 +452,6 @@ $bucH
 ( nDescriptorSetIndex > 0 ) || m_pRayTracePipeline
 ( nFlags & ( COPY_TEXTURE_FLAGS_FLIP_X | COPY_TEXTURE_FLAGS_FLIP_Y ) ) == 0
 ( nFlags & CONSTANT_BUFFER_FLAG_PER_FRAME_LIFETIME_POOLED ) != 0
-( nLocation + nSize ) <= ( uint32 ) m_deviceDiagnosticStringBuffer.Count()
 ( nNumMipLevels * nNumArraySlices ) > 0
 ( nOffset & ( nTexelSize - 1 ) ) == 0
 ( nOffset + m_nShaderGroupHandleSize ) <= (uint32)m_HitGroups.ByteCount()
@@ -656,9 +653,10 @@ $bucH
 (|$`H
 (|$pH
 (|$pL
-)	V_log2_uint
 )$$fD
+))'"j
 ),$fD
+)-q3q
 )4$fD
 )<$E3
 )<$fD
@@ -810,8 +808,8 @@ $bucH
 *StO9>T
 *Vc>L
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
-*pSrc == 's'
 *pView != nullptr
++	V_logd
 +++++
 +C$Hc
 +C$Lc
@@ -828,7 +826,7 @@ $bucH
 +h->|
 +o'q)}
 +v$x+v$xv$+xv+$xv$+x+$vx+$vx$v+x+$vx$+vx+v $+v $v $+v +$v $++$ v+$ v$ v++$ v$+ v+xv$+ v$v$ +v+ $v$ ++x$v+ $v$v ++ $v$ +v
-,	V_logd
+,	V_logf
 , at <EOF>
 , at offset %d
 , channels = 
@@ -844,7 +842,6 @@ $bucH
 ,Icl$
 ,W5y+
 ,X< w
--	V_logf
 -BH>t
 -I96t(I
 -Stop: 
@@ -973,7 +970,7 @@ $bucH
 ................
 ..om?
 .00cfg
-.5]^*
+.5=R*
 .;C ~
 .>PJ;I:qE>
 .?AU?$_InitialTaskHandle@XV<lambda_5a9ef80d79df7873994019ff15dceae5>@@U_TypeSelectorNoAsync@details@Concurrency@@@?$task@E@Concurrency@@
@@ -1340,6 +1337,7 @@ $bucH
 .CRT$XTA
 .CRT$XTZ
 .D8k H
+.Pr$v
 .counter
 .data
 .data$r
@@ -1378,14 +1376,10 @@ $bucH
 .xJ>Hf
 .xdata
 .xdata$x
-/%5r)
-/%Wo)
-/-'n)
+/%7c)
 /2GG>!B
-/5Gr)
-/5ko)
-/=6^*
-/=8^*
+/5'f)
+/5Kc)
 />58d%
 /TF<)VGy#WH
 /YA1H
@@ -1520,7 +1514,7 @@ $bucH
 220323000000Z
 220801000000Z
 230714000000Z
-240722225227Z0/
+240723235100Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1553,6 +1547,7 @@ $bucH
 6I]Dc
 6OB,n_
 6X multisample not supported in Vulkan, dropping to 4X.
+7	V_powd
 7&F|If
 70503
 7D8t$0t
@@ -1560,7 +1555,7 @@ $bucH
 7YA1H
 7YA1I
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powd
+8	V_powf
 8"3hrf
 8,uQH
 8-uCH
@@ -1568,7 +1563,6 @@ $bucH
 80tWD
 8A\_^[
 8A]A\^[
-8A]A\^]
 8A]A\_^
 8A]_][
 8A^A]][
@@ -1605,13 +1599,12 @@ $bucH
 8uuOH
 8vtext
 8}u+H
-9	V_powf
+9	V_qsort
 9)~4H
 9)~P3
 9/~FH
 93t=H
 93tdH
-951a:
 97tmD
 98t H
 98tkH
@@ -1619,7 +1612,6 @@ $bucH
 993u,H
 99~CE
 99~pH
-9=)T9
 9>~ZH
 9C$u/
 9Cu,fD9y
@@ -1642,6 +1634,7 @@ $bucH
 9^ t"H
 9_8~Ufff
 9_Xt	H
+9i8|AH
 9k$u H
 9k8v?L
 9k8~QH
@@ -1662,10 +1655,12 @@ $bucH
 9sx|AH
 9s|~%H
 9t$Pu	
+9z'95
 9{H~>
 9{\~9H
-:	V_qsort
+:	V_qsort_s
 : lexer error %d :
+::/%f
 :>)*	v
 :>t6k'
 :ALPHD
@@ -1679,10 +1674,11 @@ $bucH
 :VP8X
 :u(f9Q
 ;	Fzo
-;	V_qsort_s
 ;.u1L
+;5-W4
+;55W4
 ;;L$Pr
-;=As9
+;= m9
 ;?0123456789:;<=>?
 ;BIb?
 ;C v)H;K
@@ -1702,6 +1698,7 @@ $bucH
 ;L9}xt
 ;\$0|
 ;\$p|
+;b	B;tK
 ;k u	H
 ;k ~C
 ;t$0r
@@ -1734,9 +1731,9 @@ $bucH
 <DuBfff
 <EOF>
 <EOR>
+<NoDebugString>
 <St[@:
 <St[A:
-<Unknown>
 <_t	H
 <atk<r
 <free space>
@@ -1769,6 +1766,7 @@ $bucH
 >L9|$xt
 >Mp$d
 >jtm}S
+?	V_roundf
 ?!5WOo
 ?+>^m
 ?49HoKC
@@ -1935,20 +1933,20 @@ $bucH
 ?sqrtf
 ?u='@
 ?{Q}<
-@	V_roundf
 @ H9B H
 @ ~JH
 @"t$hD
 @.data
 @.reloc
 @0H9B0H
+@6Ph+
 @80u	
 @84)u
 @848~
 @88wdH
 @88wmH
 @88wuH
-@8=flZ
+@8=/]a
 @8i(u
 @8j(t
 @8k(t
@@ -2105,7 +2103,6 @@ $bucH
 @USWATH
 @USWAVH
 @USWH
-@UVATAUH
 @UVAUAVAWH
 @UVAUH
 @UVAVH
@@ -2565,140 +2562,140 @@ C8;C4s
 C8H9C0u
 C8H9C@u
 C8H9C@u	
-C:\buildworker\citadel_staging_win64\build\_build_\rendersystem\_vpc_rendersystemvulkan\default\win64\_msvc_\Retail\rendersystemvulkan.pdb
-C:\buildworker\citadel_staging_win64\build\_build_\rendersystem\_vpc_rendersystemvulkan\default\win64\_schema_\release\rendersystemtypes_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\src\bitmap\bitmap.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\colorconversion.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\imageformat.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\psd.cpp
-C:\buildworker\citadel_staging_win64\build\src\bitmap\tiffloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\common\pngloader.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\color_conversion.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\kmeansclustering.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\bitmap\floatbitmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\math_pfns.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\vector4d.h
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\indexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\renderdevicetypes.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\texturebits.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\vertexdata.h
-C:\buildworker\citadel_staging_win64\build\src\public\rendersystem\vtex_file_format.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\resourcehandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\weakhandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\byteswap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\concommand.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\memstack.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadspinrwlock_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\threadtoolstypes.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tsfastpushqueue.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tslist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\tspointerlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlarray.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlfixedmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlintrusivelist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utllinkedlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlqueue.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlslice.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utltshash.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\commandstreambuilder.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\fallbacktexturehelper.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\indexbufferbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\indexbufferbase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\inputlayoutbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\inputlayoutbase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\occlusionquerymgr.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\poolallocator.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\rendercontextbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\rendercontextbase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderdevicebase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderdevicebase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderdevicemgrbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderdocapi.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderhardwareconfig.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderresource.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderstatehelper.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderthreadbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\renderthreadbase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\sheetcache.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(2423):Error loading texture: %s
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3449):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3481):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3501):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3519):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3538):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3559):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3570):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.cpp(3581):ResourceHandleToData( %s ) failed! Falling back to error texture!
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturebase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\texturestreaminghelper.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vertexbufferbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vertexbufferbase.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\asynccompilehelpervulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\barrierhelpervulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\buffereddescriptorsetvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\colorformatvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\constantbuffervulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\debug_rendersystemvulkan_visualizer.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\descriptorsetvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\descriptorsetvulkan.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\framebuffermgrvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\fsr2upscaler.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\imagelayouttracker.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\indexbuffervulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\memorymgrvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\nvreflexvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\pipelinecachemgrvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\pipelinemgrvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\pipelinemgrvulkan.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\raytracevulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\rendercontextvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\rendercontextvulkan_software.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\renderdevicemgrvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\renderdevicevulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\rendersystemvulkanglobals.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\renderthreadvulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\renderthreadvulkan.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\shadertablevulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\texturevulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\texturevulkan.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\vertexbuffervulkan.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\vertexbuffervulkan.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\vmaimpl.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\vulkanfunctions.cpp
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\vulkanfunctions.h
-C:\buildworker\citadel_staging_win64\build\src\rendersystem\vulkan\vulkanimage.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcefile.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
-C:\buildworker\citadel_staging_win64\build\src\thirdparty\vulkan\vma\vk_mem_alloc.h
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utlsoacontainer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utlstackmachine.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\utlstreambuffer.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\compiletargetexpr.g
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfx_shader_file.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfx_spirv_reflect.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfx_vulkan_common.cpp
-C:\buildworker\citadel_staging_win64\build\src\vfx\vfxexpr.g
+C:\buildworker\citadel_rel_win64\build\_build_\rendersystem\_vpc_rendersystemvulkan\default\win64\_msvc_\Retail\rendersystemvulkan.pdb
+C:\buildworker\citadel_rel_win64\build\_build_\rendersystem\_vpc_rendersystemvulkan\default\win64\_schema_\release\rendersystemtypes_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\src\bitmap\bitmap.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\colorconversion.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\imageformat.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\psd.cpp
+C:\buildworker\citadel_rel_win64\build\src\bitmap\tiffloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\common\pngloader.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\color_conversion.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\kmeansclustering.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\bitmap\floatbitmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\vector4d.h
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\indexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\renderdevicetypes.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\texturebits.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
+C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vtex_file_format.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\resourcehandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\weakhandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\concommand.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.inl
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\memstack.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadspinrwlock_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\threadtoolstypes.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tsfastpushqueue.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tslist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\tspointerlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlarray.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlfixedmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlintrusivelist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utllinkedlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlqueue.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlslice.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utltshash.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\commandstreambuilder.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\fallbacktexturehelper.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\indexbufferbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\indexbufferbase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\inputlayoutbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\inputlayoutbase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\occlusionquerymgr.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\poolallocator.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\rendercontextbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\rendercontextbase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderdevicebase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderdevicebase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderdevicemgrbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderdocapi.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderhardwareconfig.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderresource.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderstatehelper.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderthreadbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\renderthreadbase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\sheetcache.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(2423):Error loading texture: %s
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3449):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3481):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3501):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3519):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3538):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3559):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3570):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.cpp(3581):ResourceHandleToData( %s ) failed! Falling back to error texture!
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturebase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\texturestreaminghelper.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vertexbufferbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vertexbufferbase.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\asynccompilehelpervulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\barrierhelpervulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\buffereddescriptorsetvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\colorformatvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\constantbuffervulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\debug_rendersystemvulkan_visualizer.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\descriptorsetvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\descriptorsetvulkan.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\framebuffermgrvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\fsr2upscaler.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\imagelayouttracker.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\indexbuffervulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\memorymgrvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\nvreflexvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\pipelinecachemgrvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\pipelinemgrvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\pipelinemgrvulkan.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\raytracevulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\rendercontextvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\rendercontextvulkan_software.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\renderdevicemgrvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\renderdevicevulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\rendersystemvulkanglobals.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\renderthreadvulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\renderthreadvulkan.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\shadertablevulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\texturevulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\texturevulkan.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\vertexbuffervulkan.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\vertexbuffervulkan.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\vmaimpl.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\vulkanfunctions.cpp
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\vulkanfunctions.h
+C:\buildworker\citadel_rel_win64\build\src\rendersystem\vulkan\vulkanimage.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcefile.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schematype.cpp
+C:\buildworker\citadel_rel_win64\build\src\thirdparty\vulkan\vma\vk_mem_alloc.h
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\keyvalues3.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utlsoacontainer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utlstackmachine.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\utlstreambuffer.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\compiletargetexpr.g
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfx_shader_file.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfx_spirv_reflect.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfx_vulkan_common.cpp
+C:\buildworker\citadel_rel_win64\build\src\vfx\vfxexpr.g
 C<;C4A
 C@H;CHs
 CBLASVulkan::Build
@@ -2795,7 +2792,7 @@ CIndexDataBase<unsigned short>::~CIndexDataBase
 CInputLayoutBase::Release
 CInputLayoutDict<class CInputLayoutVulkan>::ConcatentateInputLayouts
 CInputLayoutDict<class CInputLayoutVulkan>::CreateInputLayout
-CKMeansClustering::AssignVectorsToClusters(), C:\buildworker\citadel_staging_win64\build\src\mathlib\kmeansclustering.cpp:155
+CKMeansClustering::AssignVectorsToClusters(), C:\buildworker\citadel_rel_win64\build\src\mathlib\kmeansclustering.cpp:155
 CKMeansClustering::FindClusters
 CKMeansClustering::PopulateEmptyClusters
 CKV3ArrayIteratorView<0>::CKV3ArrayIteratorView
@@ -2916,7 +2913,6 @@ CRenderContextBase::SetSamplerStateVS
 CRenderContextBase::SetStateBundles
 CRenderContextBase::SetViewports
 CRenderContextBase::UnlockDynamicConstantBuffer
-CRenderContextBase::VaSetDebugString
 CRenderContextBase::~CRenderContextBase
 CRenderContextVulkan:: Trying to resolve from a rect that is outside of the src rendertarget
 CRenderContextVulkan::AddImageBarrier
@@ -2959,8 +2955,7 @@ CRenderContextVulkan::FillAndBindDynamicDescriptorSet
 CRenderContextVulkan::FillDynamicDescriptorSet
 CRenderContextVulkan::GenerateMipMaps
 CRenderContextVulkan::MarkIssuesCommands
-CRenderContextVulkan::MarkIssuesCommands(417): 
-CRenderContextVulkan::MarkIssuesCommands(428): 
+CRenderContextVulkan::MarkIssuesCommands(419): 
 CRenderContextVulkan::MultiDrawIndexed
 CRenderContextVulkan::MultiDrawIndexedInstancedIndirect
 CRenderContextVulkan::MultiDrawIndexedInstancedIndirectCount
@@ -3072,7 +3067,6 @@ CRenderDeviceVulkan::AllocateBufferInPool
 CRenderDeviceVulkan::AllocateBufferInPool - invalid memory pool handle.
 CRenderDeviceVulkan::AllocateBufferInPool(9226): failed to allocate GPU memory in custom pool for %s.
 CRenderDeviceVulkan::AllocateBufferInPool(9236): vmaBindImageMemory failed for buffer %s with error %d.
-CRenderDeviceVulkan::AllocateDeviceCheckPointString
 CRenderDeviceVulkan::AllocateTextureInPool
 CRenderDeviceVulkan::AllocateTextureInPool - invalid memory pool handle.
 CRenderDeviceVulkan::AllocateTextureInPool(9133): Unable to get Vulkan image for %s.
@@ -4291,7 +4285,8 @@ D$4E3
 D$4H9
 D$7fff?H
 D$8;C
-D$8D8=
+D$8@2
+D$8D8=lO_
 D$8D9
 D$8E3
 D$8H9D$0v
@@ -4318,7 +4313,6 @@ D$<fA
 D$@+C
 D$@A9
 D$@A;
-D$@E2
 D$@E3
 D$@H+
 D$@H;
@@ -4332,7 +4326,6 @@ D$@M;
 D$@f;
 D$@fD
 D$@fH
-D$@fff
 D$AA;
 D$BA;
 D$CA;
@@ -4472,7 +4465,9 @@ D2rf;
 D32FS8
 D4/L;
 D7 D;^
-D8%3Ia
+D8%NtT
+D8%d}T
+D8%vzT
 D8*t$Ic
 D8,>u
 D80t(H
@@ -4529,7 +4524,7 @@ D8|$ht
 D9 u2D9
 D9 ~c
 D9#~SLce
-D9%f3;
+D9%>+;
 D9(tT
 D9.~>H
 D9:t9H
@@ -4584,6 +4579,7 @@ D;STr
 D;Ulr
 D;c8|
 D;d$,
+D;d$0
 D;d$4|
 D;e4|
 D;e8|
@@ -4605,7 +4601,6 @@ D;xxr
 D;{Lr
 D;|$0
 D;|$0|
-D;|$8
 D;|$@}
 D;|>(
 DATAH
@@ -4708,7 +4703,7 @@ E D9{(
 E H;EH
 E tGH
 E'HcG H
-E(D8=I
+E(D8=
 E)n(u
 E+A@H
 E/	F(
@@ -4718,7 +4713,6 @@ E0t H
 E7	C<D
 E8,8u
 E80t"A
-E84?u
 E8A8_
 E8a(u
 E8ePt
@@ -4839,6 +4833,7 @@ ExternalNameForInternalType
 ExtraSamples
 Extraneous token
 E|I96u
+F	V_sinf
 F	tj<
 F 9F(r
 F A3@ A
@@ -4943,15 +4938,15 @@ FloatBitMap_t::RowPtrOrDummy
 FloatBitMap_t::WriteToBuffer
 FloatBitMap_t::WriteToBuffer(961): Unsupported color format "%s", skipping!
 FloatBitMap_t::WriteToBuffer: Received improper buffer size %s (expecting %s), skipping!
-FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1638
-FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1750
+FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1638
+FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1750
 FloatBitMap_t::WriteToBufferBGRA
 FloatBitMap_t::WriteToBufferDXT_atitc
 FloatBitMap_t::WriteToBufferDXT_atitc(1018): Error! Temp texture is %d bytes when ATI's lib requires %d bytes!
 FloatBitMap_t::WriteToBufferDXT_atitc(1103): Unsupported output color format "%s"!
 FloatBitMap_t::WriteToBufferDXT_atitc(1112): Error! Allocated %llu bytes when ATI's lib requires %d bytes!
 FloatBitMap_t::WriteToBufferDXT_atitc(1120): Error %d returned from ATI_TC_ConvertTexture()!
-FloatBitMap_t::WriteToBufferETC(), C:\buildworker\citadel_staging_win64\build\src\bitmap\floatbitmap.cpp:1874
+FloatBitMap_t::WriteToBufferETC(), C:\buildworker\citadel_rel_win64\build\src\bitmap\floatbitmap.cpp:1874
 FloatBitMap_t::WriteToBufferI
 FloatBitMap_t::WriteToBufferIA
 FloatBitMap_t::WriteToBufferR16
@@ -5016,7 +5011,6 @@ Freed XMS handle %u
 Friday
 Ft9nxu
 FtD9fxu8
-G	V_sinf
 G(IcO H
 G0HcH
 G0Ic8I
@@ -5180,7 +5174,6 @@ H#L$0H
 H#M0H
 H#OxH
 H#}0H
-H$%9!o
 H(H;J(H
 H)D$@A
 H)G8H
@@ -5203,23 +5196,16 @@ H4IcH8H
 H8H;J8H
 H9(t;A
 H9(tO
-H9-Y~U
 H90u'
 H93t7H
 H93teH
-H95k&>
 H97u+A
 H98t$H
 H98t2
-H9=FW>
-H9=IN:
-H9=[(<
-H9=bJ<
-H9=fX>
-H9=rK<
-H9=v'<
-H9=zL<
-H9=}eY
+H9="D<
+H9=2E<
+H9=BF<
+H9=MB:
 H9@ t
 H9@ t$A
 H9A(u
@@ -5371,13 +5357,14 @@ HalftoneHints
 HammerMapLoader001
 HasAllocatedMemory( nDestAttr )
 HasUAVHiddenCounter()
-Hc-DQ_
+Hc-7Z9
+Hc-<C_
+Hc-tD_
 Hc.;n
 Hc/;o
 Hc3;s
 Hc7;w
 Hc;;{
-Hc=rO_
 Hc>;~
 HcA H
 HcA L
@@ -5468,6 +5455,7 @@ Hcs(;s8u	H
 HcsXH
 HcsxL
 Hct$(
+Hct$0H
 Hct$8H
 Hct$X
 Hct$p+
@@ -5494,12 +5482,14 @@ HostComputer
 HostStateMgr001
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
+I	V_snprintf
 I 9)t
 I could not work out what I was expecting, like so many of us these days!
 I$HcC
 I+4$H
 I+E0I+E
 I+EXI+E
+I0cqP
 I9<$u
 I9E(t
 I9E@ueL
@@ -5712,7 +5702,6 @@ IsValidLocale
 IsValidLocaleName
 IssueTextureLoadRequest
 ItemByteStride( nDestAttr ) == src.ItemByteStride( nSrcAttr )
-J	V_snprintf
 J%f%f%f%f%f%f%f%f
 J0HcH
 J8A;[
@@ -5977,20 +5966,10 @@ L9	u)H
 L9"uz
 L9#t	H
 L9#u/H
-L9%sXN
-L9-m(Z
+L9%K	J
 L9/t9H
-L95!)<
-L95$%<
-L95B+<
-L95T$>
-L95U*<
-L95}&<
-L95~$<
 L97vH
 L9;t	H
-L9= ]U
-L9=Z	=
 L9A8v1E3
 L9BHA
 L9IHA
@@ -6115,7 +6094,6 @@ LcL$ H
 LcL$0H
 LcL$8H
 LcL$@H
-LcL$HH
 LcL$PH
 LcL$hH
 LcL$xH
@@ -6364,6 +6342,7 @@ NumCols() <= V_ARRAYSIZE( s_DummyRow )
 Number of layout binding descriptors doesn't match number of descriptors. %d != %d
 NumberOfInks
 NvLL_VK_Sleep vkLatencySleepNV error '%s'.
+O	V_sscanf
 O!t/H
 O(D8o u
 O*9y]
@@ -6402,7 +6381,6 @@ OutputDebugStringW
 Overall System GPU memory use:
 Overflow of the sheet cache texture. Releasing and starting over. This is ok in asset browser, not so ok if the game is triggering this!
 Overflow of the sheet cache texture: Try increasing SheetCacheTextureRows in gameinfo.gi (current value %d)!
-P	V_sscanf
 P D9u
 P L9e`t
 P89P@}M
@@ -6637,7 +6615,6 @@ RGBA8888_LINEAR
 RGBA8888_UINT
 RGBX8888
 RH@8t$PL
-RSDSP
 RST%d
 R_T5Y
 RaiseException
@@ -6979,6 +6956,7 @@ Swapchain extent(s) are 0, skipping swapchain creation
 SwizzlePlanarScanlineToInterleaved
 SystemTimeToFileTime
 SystemTimeToTzSpecificLocalTime
+T	V_stricmp_fast
 T$ A8W
 T$ A:W
 T$ D)s
@@ -7065,7 +7043,8 @@ T$xD;{
 T$xE3
 T$xH;
 T$xI+
-T%lT*
+T%LH*
+T%yf)
 TANGENT
 TD u"E;
 TEX read request: %d KB; %s
@@ -7205,7 +7184,6 @@ Trying to set dxlevel (%d) which is higher than the card can support (%d)!
 Trying to set dxlevel (%d) which is lower than the card can support (%d)!
 Tuesday
 Type 
-U	V_stricmp_fast
 U I;U(
 U t	Ak
 U%	>G
@@ -7393,6 +7371,7 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 Uxu9I
+V	V_strlower_fast
 V6E>`"(5
 VALIDATION
 VATAUAVAWH
@@ -7847,9 +7826,8 @@ Vulkan/Pipeline State Object Count
 Vulkan/Staging Dynamic Total Pool Count
 Vulkan/Staging Dynamic Total Pool Size (MB)
 VulkanGPUMemVisThread
-W	V_strlower_fast
 W%	s;M@
-W5EX%
+W=|oT
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
 WARNING : 
@@ -7902,14 +7880,13 @@ X ATAVAWH
 X AVH
 X D8e
 X!t5~
-X%Pq)
-X-)Y+
-X-7n+
-X-M51
-X-hq)
-X5	81
+X%0e)
+X%j]*
+X-	M+
+X-He)
+X-])1
 X5AHx
-X5g71
+X5w+1
 XA^A\][
 XA^A]A\_^[
 XA^A]^]
@@ -7934,16 +7911,20 @@ X\$@I
 X_^[]
 X|$ A
 X|$8E
-Y%#v>
-Y%.m)
-Y%W0+
-Y%k++
-Y-W++
-Y5V-+
-Y5w71
+Y%7$+
+Y%Z~*
+Y--)1
+Y5"w/
+Y5),1
+Y56!+
+Y5h$+
+Y5vx/
+Y5x +
 Y9"SD
-Y=c^*
-Y=zE0
+Y= M-
+Y=CR*
+Y=Ew/
+Y=jx/
 Y>kX>
 Y>kX>M
 YCbCrCoefficients
@@ -7972,6 +7953,7 @@ Zod(^?
 Zpm"U
 Z~$|7
 [	UoA
+[	V_strtoi64
 [*QmU
 [*ncd>0
 [-&LMb#{'
@@ -7983,7 +7965,6 @@ Z~$|7
 [fA9<
 [fE94
 [fE;A
-\	V_strtoi64
 \ u&H9
 \$ ATAVAWH
 \$ AVH
@@ -8108,9 +8089,9 @@ Z~$|7
 \$xu$I
 \$xu3M
 \$xu7H
+\-6~*
 \2rfB
-\=WZ*
-\U>Bu1H
+\=7N*
 ])6M>&
 ]0A;]8
 ]>)2X
@@ -8164,7 +8145,7 @@ _p)_tH
 _tools.txt
 `+!]?
 `.rdata
-`6R~+
+`6my+
 `;k8|
 `A]A\[
 `A]A\]
@@ -8391,7 +8372,6 @@ bufferImageGranularity
 by this version of libtiff.
 byteaddressbuffer
 c [1>H'
-c#uK<Rj2dfk
 c(>\,
 c0&>`
 c>v	k
@@ -8600,7 +8580,6 @@ dummyfilename.tif
 dxsupport
 dxsupport.cfg
 dynamicState
-dyt'Q
 e A_A^A]A\_^]
 e(A_A^A]A\_^[]
 e(fA;
@@ -8647,6 +8626,7 @@ f9<Au
 f9<Fu
 f9<H}
 f9<Ju
+f9=4I9
 f9Bt~
 f9G`u1H
 f9G`uCH
@@ -9603,50 +9583,53 @@ numWorkGroups
 n|$`fA
 o KPBf
 o$$fA
-o%!%0
-o%()8
-o%Tb0
-o%Ze0
-o%\N0
-o%^:0
-o%k!0
-o%k60
-o%zv0
+o%$@Z
+o%-&0
+o%68Z
+o%dV0
+o%g2Z
+o%h	8
+o%jY0
+o%lB0
+o%n.0
+o%{*0
+o%}^R
 o,$fD
-o-")0
-o-+h0
-o-U20
-o-_?0
-o-f*8
-o-wy0
+o-'g0
+o-+}0
+o-;\0
+o-e&0
+o-o30
+o-wx0
 o47Lc
-o5#?0
-o5%C0
-o5+01
-o5FX0
-o5Hz0
-o5UL0
-o5_-0
-o5_p4
-o5a}0
-o5g'0
-o5qA0
-o5|o0
-o=#m0
-o=6f0
-o=7>0
-o=;4R
-o=E[0
-o=HX0
-o=M%0
-o=Sb4
-o=a(.
-o=b$R
-o=c^0
-o=pAG
-o=q94
-o=x7R
-o=~o0
+o5 70
+o5%}0
+o51u0
+o5330
+o5570
+o5;$1
+o5VL0
+o5Xn0
+o5]S>
+o5e@0
+o5jq>
+o5o!0
+o5od4
+o5qq0
+o=	00
+o=)n0
+o=*T0
+o=29R
+o=3a0
+o=5AR
+o=9CR
+o=B<R
+o=FZ0
+o=G20
+o=UO0
+o=XL0
+o=cV4
+o=sR0
 oAPfD
 oD$ f
 oD$ fA
@@ -9717,6 +9700,8 @@ p WATAUAVAWH
 p*W4H
 p0R^G'
 p;Y>u
+p>>{+
+p>]{+
 p?ati_compress_wrapper.dll
 pA]][
 pA^A]A\_^][
@@ -10527,7 +10512,7 @@ t-HcA
 t-Lck
 t.fff
 t1@8l
-t2L9-wca
+t2L9-
 t2fff
 t3D82t.
 t48^ H
@@ -10543,6 +10528,7 @@ t6fff
 t7@8sXt1H
 t7HcP
 t9H95
+t9H95,
 t;@8w
 t;LcF
 t;fff
@@ -10557,17 +10543,16 @@ tAHcI
 tBMcW<IcO@Lc
 tC7Ddx
 tC@8-
-tC@8-U
-tC@85
+tC@8-5
+tC@85n
 tDD8%
-tDD8%"
-tDD85(=-
+tDD85
 tDfff
 tEHcR
 tFD9c
 tGH9[0u
 tHHcD
-tID8-
+tID8-|
 tIf9wbH
 tLfff
 tNfA;
@@ -10589,6 +10574,7 @@ tSf91tNH
 tSvQ@2
 tU;Cxr
 tU;\$0tH
+tUfff
 tVH#E
 tWD;g
 tZH9X0t
@@ -11735,6 +11721,7 @@ xChromaOffset
 xDH;{
 xEH;{
 xHcA M
+xIL=TW
 xK;t$ }EH
 xOHcC
 xPH;{
@@ -11759,7 +11746,6 @@ x}H;~
 y >= 0 && y < m_nHeight
 y899u
 y:gt	3
-y@9i8|AH
 yChromaOffset
 y\PD>!
 ycbcrModel
@@ -11851,6 +11837,7 @@ zY;>u:m
 |$0ff
 |$0tjL
 |$0u;H
+|$0|LH
 |$4D8t$1u
 |$4E3
 |$4H9]
@@ -11866,7 +11853,6 @@ zY;>u:m
 |$8M;
 |$8ff
 |$8u*
-|$8|LH
 |$8~ H
 |$8~#H
 |$<;{0

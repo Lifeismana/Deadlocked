@@ -14,7 +14,6 @@
 			"sounds/physics/bullet_impacts/default_03.vsnd",
 			"sounds/physics/bullet_impacts/default_04.vsnd",
 		]
-		vsnd_duration = 0.400000
 	}
 	Dirt.BulletImpact = 
 	{
@@ -27,7 +26,6 @@
 			"sounds/physics_new/surfaces/dirt_impact_bullet_03.vsnd",
 			"sounds/physics_new/surfaces/dirt_impact_bullet_04.vsnd",
 		]
-		vsnd_duration = 1.201497
 	}
 	MetalGrate.BulletImpact = 
 	{
@@ -60,13 +58,12 @@
 			"sounds/player/footsteps/survivor/run/slosh2.vsnd",
 			"sounds/player/footsteps/survivor/run/slosh4.vsnd",
 		]
-		vsnd_duration = 1.067937
 	}
 	Underwater.BulletImpact = 
 	{
 		base = "Base.Bullet.Impact"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Physics.WaterSplash = 
 	{
@@ -90,14 +87,12 @@
 		base = "Base.Physics.3d"
 		volume = -6.099609
 		vsnd_files = "sounds/player/footsteps/survivor/run/wade1.vsnd"
-		vsnd_duration = 0.830431
 	}
 	BaseEntity.ExitWater = 
 	{
 		base = "Base.Physics.3d"
 		volume = -6.099609
 		vsnd_files = "sounds/player/footsteps/survivor/run/wade2.vsnd"
-		vsnd_duration = 0.830431
 	}
 	Glass.BulletImpact = 
 	{
@@ -191,7 +186,6 @@
 			"sounds/physics/bullet_impacts/default_03.vsnd",
 			"sounds/physics/bullet_impacts/default_04.vsnd",
 		]
-		vsnd_duration = 0.400000
 	}
 	Carpet.BulletImpact = 
 	{
@@ -214,7 +208,6 @@
 			"sounds/physics/bullet_impacts/default_03.vsnd",
 			"sounds/physics/bullet_impacts/default_04.vsnd",
 		]
-		vsnd_duration = 0.400000
 	}
 	ArmorFlesh.BulletImpact = 
 	{
@@ -292,7 +285,7 @@
 		pitch_rand_max = 0.010000
 		pitch = 0.990000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Popcan.BulletImpact = 
 	{
@@ -356,7 +349,6 @@
 			"sounds/physics/wood/wood_crate_break_05.vsnd",
 			"sounds/physics/wood/wood_crate_break_06.vsnd",
 		]
-		vsnd_duration = 3.757347
 	}
 	Breakable.Flesh = 
 	{
@@ -374,7 +366,6 @@
 			"sounds/physics/metal/metal_solid_impact_hard4.vsnd",
 			"sounds/physics/metal/metal_solid_impact_hard5.vsnd",
 		]
-		vsnd_duration = 0.623719
 	}
 	Breakable.Glass = 
 	{
@@ -439,7 +430,6 @@
 			"sounds/physics/metal/metal_solid_impact_hard4.vsnd",
 			"sounds/physics/metal/metal_solid_impact_hard5.vsnd",
 		]
-		vsnd_duration = 0.623719
 	}
 	Breakable.MatConcrete = 
 	{
@@ -482,7 +472,6 @@
 			"sounds/physics/glass/glass_pottery_break2.vsnd",
 			"sounds/physics/glass/glass_pottery_break3.vsnd",
 		]
-		vsnd_duration = 0.248889
 	}
 	Bounce.Metal = 
 	{
@@ -496,7 +485,6 @@
 			"sounds/physics/metal/metal_solid_impact_hard4.vsnd",
 			"sounds/physics/metal/metal_solid_impact_hard5.vsnd",
 		]
-		vsnd_duration = 0.623719
 	}
 	Bounce.Flesh = 
 	{
@@ -701,7 +689,6 @@
 			"sounds/physics_new/wood/wood_box_impact_bullet3.vsnd",
 			"sounds/physics_new/wood/wood_box_impact_bullet4.vsnd",
 		]
-		vsnd_duration = 0.519320
 	}
 	Wood.Break = 
 	{
@@ -719,7 +706,6 @@
 			"sounds/physics/wood/wood_crate_break_05.vsnd",
 			"sounds/physics/wood/wood_crate_break_06.vsnd",
 		]
-		vsnd_duration = 3.757347
 	}
 	Wood_Box.BulletImpact = 
 	{
@@ -749,7 +735,6 @@
 			"sounds/physics/wood/wood_crate_break_05.vsnd",
 			"sounds/physics/wood/wood_crate_break_06.vsnd",
 		]
-		vsnd_duration = 3.757347
 	}
 	Wood_Crate.StepLeft = 
 	{
@@ -788,7 +773,6 @@
 			"sounds/physics/wood/wood_crate_break_05.vsnd",
 			"sounds/physics/wood/wood_crate_break_06.vsnd",
 		]
-		vsnd_duration = 3.757347
 	}
 	Wood_Plank.Break = 
 	{
@@ -806,7 +790,6 @@
 			"sounds/physics/wood/wood_crate_break_05.vsnd",
 			"sounds/physics/wood/wood_crate_break_06.vsnd",
 		]
-		vsnd_duration = 3.757347
 	}
 	Wood_Solid.BulletImpact = 
 	{
@@ -837,7 +820,6 @@
 			"sounds/physics/wood/wood_crate_break_05.vsnd",
 			"sounds/physics/wood/wood_crate_break_06.vsnd",
 		]
-		vsnd_duration = 3.757347
 	}
 	Wood_Furniture.Break = 
 	{
@@ -855,7 +837,6 @@
 			"sounds/physics/wood/wood_crate_break_05.vsnd",
 			"sounds/physics/wood/wood_crate_break_06.vsnd",
 		]
-		vsnd_duration = 3.757347
 	}
 	Wood_Panel.Break = 
 	{
@@ -873,7 +854,6 @@
 			"sounds/physics/wood/wood_crate_break_05.vsnd",
 			"sounds/physics/wood/wood_crate_break_06.vsnd",
 		]
-		vsnd_duration = 3.757347
 	}
 	Metal_Box.BulletImpact = 
 	{
@@ -897,7 +877,6 @@
 			"sounds/physics/metal/metal_solid_impact_hard4.vsnd",
 			"sounds/physics/metal/metal_solid_impact_hard5.vsnd",
 		]
-		vsnd_duration = 0.623719
 	}
 	Default.BulletImpact = 
 	{
@@ -925,7 +904,6 @@
 			"sounds/physics/bullet_impacts/default/default_weapon_impacts_groupA_soft-009.vsnd",
 			"sounds/physics/bullet_impacts/default/default_weapon_impacts_groupA_soft-010.vsnd",
 		]
-		vsnd_duration = 0.279070
 	}
 	MetalVehicle.BulletImpact = 
 	{
@@ -940,7 +918,6 @@
 			"sounds/physics_new/metal/bullet_metal_auto_04.vsnd",
 			"sounds/physics_new/metal/bullet_metal_auto_05.vsnd",
 		]
-		vsnd_duration = 1.562381
 	}
 	Wood_Plank.BulletImpact = 
 	{
@@ -954,7 +931,6 @@
 			"sounds/physics_new/wood/wood_solid_impact_bullet4.vsnd",
 			"sounds/physics_new/wood/wood_solid_impact_bullet5.vsnd",
 		]
-		vsnd_duration = 0.764921
 	}
 	SolidMetal.BulletImpact = 
 	{
@@ -971,7 +947,6 @@
 			"sounds/physics_new/metal/solidmetal_07.vsnd",
 			"sounds/physics_new/metal/solidmetal_08.vsnd",
 		]
-		vsnd_duration = 0.523673
 	}
 	Foliage.BulletImpact = 
 	{

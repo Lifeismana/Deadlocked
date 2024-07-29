@@ -483,12 +483,12 @@ $`<`uMM
 &vOutput != &pt3
 &vOutput != &pt4
 '	5't
+'	V_log10f
 ', type<
 ',=?k
-'?n2e
 'Play reversed' has no effect when used with time synchronization!
 'p7M}f
-(	V_log10f
+(	V_log2_uint
 ( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( NmGetMostSignificantBit( flValue ) + 1 ) <= nMaxBitsToUse
@@ -501,31 +501,30 @@ $`<`uMM
 ( ndxKeyData >= 0 ) && ( ndxKeyData < 65536 )
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
-(%'y:
-(%:pJ
-(%_iA
+(%'i:
+(%:`J
+(%_YA
 (%d,%d)
-(%ih0
-(%|	#
+(%iX0
+(%r2-
 (("**,
 ((6"8(:,<*>
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-&_=
-(-0a=
-(-3a,
-(-A@=
-(-YG=
-(-[Z=
-(-zwQ
+(-&O=
+(-0Q=
+(-A0=
+(-Y7=
+(-Z~S
+(-[J=
+(-zgQ
 (0`hpx
 (4$Mc
-(5J@=
-(5KP-
-(5PG=
-(5dN=
-(=&Y-
-(={4K
+(5J0=
+(5P7=
+(5d>=
+(=<wS
+(={$K
 (A]A\^[
 (A]A\_^
 (A^A\
@@ -784,7 +783,6 @@ $`<`uMM
 (|$pH
 (|$pI
 (|$pL
-)	V_log2_uint
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
 )<$fD
 )>6{1n
@@ -1069,11 +1067,11 @@ $`<`uMM
 )|$pH
 )|$pL
 )|B?d!
+*	V_log2f
 *HcD;LH
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *xNIL
-+	V_log2f
 +:HcS
 +Base Pose
 +Bones
@@ -1103,6 +1101,7 @@ $`<`uMM
 +f)>0'
 +h->|
 +o'q)}
+,	V_logf
 , at <EOF>
 , at offset %d
 , from: 
@@ -1119,10 +1118,8 @@ $`<`uMM
 ,YA1I
 ,d$pfE
 ,j.b0^2`4^6`8^:f<
--	V_logf
 - Scripted Sequence: 
 -1 1000
--:F!ke
 -BH>t
 -Stop: 
 -YA1f
@@ -1138,7 +1135,8 @@ $`<`uMM
 .00cfg
 .3z u
 .40t8Ic
-.=jM5
+.5PT(
+.=qv?
 .>PJ;I:qE>
 .?AU?$ArrayWrapper@V?$CUtlVector@UCWeightPreview@@HV?$CUtlMemory@UCWeightPreview@@H@@@@@Detail@Reflection@@
 .?AU?$ArrayWrapper@V?$CUtlVector@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@HV?$CUtlMemory@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@H@@@@@Detail@Reflection@@
@@ -2572,9 +2570,14 @@ $`<`uMM
 .xdata$x
 /2GG>!B
 /3HcC
-/5g,(
-/5pX#
-/5w5+
+/5-j,
+/5`H-
+/5`V]
+/5b$5
+/5jP(
+/5p87
+/5pG-
+/5s$5
 /6s^M
 />58d%
 /@$s6
@@ -2662,6 +2665,7 @@ $`<`uMM
 0iN>/
 0w0c1
 0}0i1
+1	V_modff
 1#IND
 1#INF
 1#QNAN
@@ -2671,7 +2675,6 @@ $`<`uMM
 1:1: Tokens : ( T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
 1<.	/>:
 1YA1I
-2	V_modff
 2$.CGameInfo.CDotaGameInfo.CPlayerInfo
 2).CGameInfo.CDotaGameInfo.CHeroSelectEvent
 210429000000Z
@@ -2679,13 +2682,12 @@ $`<`uMM
 220323000000Z
 220801000000Z
 230714000000Z
-240722225224Z0/
+240723235131Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2HcY0HcB
 2YA1A
-2[5Cfia
 2_BONE_IK
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
@@ -2710,16 +2712,19 @@ $`<`uMM
 5FjiT
 5YA1I
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+6)2U^
 6*f(_
 6I]Dc
 6OB,n_
 6p7MOf
+7	V_powd
 70503
 7Lck8H
 7YA1A
 7YA1I
+7]~lm
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powd
+8	V_powf
 8/t[H
 80tWD
 8@8t)0u
@@ -2758,7 +2763,7 @@ $`<`uMM
 8_^][
 8emE3
 8ke?;
-9	V_powf
+9%@q(
 9)~P3
 9)~eH
 9+fIH
@@ -2851,10 +2856,10 @@ $`<`uMM
 9|$xu
 9}@~&
 9}@~V
+:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 : lexer error %d :
-:!=Jv'
 :!D$ 0
 :!D$80
 :!D$@0
@@ -2901,10 +2906,9 @@ $`<`uMM
 :m_hSequence
 :m_resetCount
 :m_resetCycleValue
-;	V_qsort_s
 ;.u1L
-;='oR
-;=I?1
+;='_R
+;=I/1
 ;?0123456789:;<=>?
 ;CX}|H
 ;E,s<H
@@ -2964,6 +2968,7 @@ $`<`uMM
 <St[@:
 <St[A:
 <Unknown>
+<V 	qw
 <YA1H
 <\8@6
 <`tHH
@@ -3006,6 +3011,7 @@ $`<`uMM
 >f;D$4t
 >fA9~
 >jtm}S
+?	V_roundf
 ?!5WOo
 ?+>^m
 ?456789:;<=
@@ -3128,9 +3134,7 @@ $`<`uMM
 ?f`Y4
 ?kxG2)
 ?m_BindPose
-?pT}q
 ?{Q}<
-@	V_roundf
 @ 9B tDA
 @ H;}
 @ HcB
@@ -4160,517 +4164,518 @@ C4;C8}
 C4HcS8
 C4L9t$ t
 C5R?	
-C:\buildworker\citadel_staging_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_msvc_\Retail\animationsystem.pdb
-C:\buildworker\citadel_staging_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\animationgroupresource_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\animationresource_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\animenum_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\compression_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\hsequence_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\ianimationsystem_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\mood_vdata_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\sequenceresource_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\actioncomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\addupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\aimcameraoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\aimcameraupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\aimmatrixposeoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\aimmatrixupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animaction_emittagupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animaction_expressionupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animaction_setparameterupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animaction_togglecomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animactionupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animcomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animdemocapturesettings_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animgraphdebugreplay_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animgraphmodelbinding_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animinputdamping_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animmotorupdaterbase_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animnodepath_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animparameterbase_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animparameterlistupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animparamhandle_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animscriptcomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animscriptmanager_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animstatemachineupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animtagbase_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animtagmanagerupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animupdatenodebase_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animupdateshareddata_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\audioanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\binaryupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bindposeupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\blend2dupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\blendcurve_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\blendupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\blockselectionmetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bodygroupanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bonemaskupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bonepositionmetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bonevelocitymetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\boolanimparameter_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\choiceupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\choreoupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\clothsettingsanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\concreteanimparameter_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\cppscriptcomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\currentrotationvelocitymetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\currentvelocitymetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\cyclecontrolclipupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\cyclecontrolupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\dampedpathanimmotorupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\dampedvaluecomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\demosettingscomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\directionalblendupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\directplaybackupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\distanceremainingmetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\enumanimparameter_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\floatanimparameter_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followattachmentposeoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followattachmentupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followpathupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followtargetposeoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followtargetupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footadjustmentupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footcyclemetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footfallanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footlockposeoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footlockshared_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footlockupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footpinningposeoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footpinningupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footpositionmetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footsteplandedanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footsteptriggerupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\futurefacingmetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\futurevelocitymetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\handshakeanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\hitreactposeoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\hitreactupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ianimationgraphvisualizationmanager_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ianimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ikbonenameandindex_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\iksolversettings_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\iktargetsettings_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\inputstreamupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\intanimparameter_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\jiggleboneposeoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\jiggleboneupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\jumphelperupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\leafupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\leanmatrixupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\lodcomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\lookatposeoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\lookatupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\lookcomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\materialattributeanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiondataset_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiongraph_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiongraphconfig_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiongraphgroup_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiongraphpreviewupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionmatchingupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionmetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionnode_blend1d_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionnode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionnode_sequence_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionsearchdb_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\movementcomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\moverupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\networksettings_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pairedsequencecomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pairedsequenceupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\paramspanupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\particleanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pathanimmotorupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pathanimmotorupdaterbase_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pathhelperupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pathmetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\playerinputanimmotorupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\posehandle_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\quaternionanimparameter_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ragdollanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ragdollcomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ragdollupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\rootupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\selectorupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\sequencefinishedanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\sequenceupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\settingsgroup_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\settingsmanager_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\singleframeupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\slopecomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\slowdownonslopesupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\solveikchainposeoperation_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\solveikchainupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\speedscaleupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stanceoverrideupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stancescaleupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\statemachinecomponentupdater_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\statemachineupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\staticposecache_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stepsremainingmetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stopatgoalupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stringanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\subtractupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\symbolanimparameter_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\taskstatusanimtag_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\timeremainingmetricevaluator_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\turnhelperupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\twoboneikupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\unaryupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\vectoranimparameter_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\virtualanimparameter_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\waypointhelperupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\zeroposeupdatenode_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animbonemask_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animclip_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animcompressor_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_foot_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_framesnap_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_id_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_legacy_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_rootmotion_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_transition_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_warp_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animflags_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraph_dataset_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraph_definition_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraph_node_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_blend1d_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_blend2d_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_bonemasks_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_bools_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_cachedvalues_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_childgraph_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_clip_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_constvalues_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_controlparameters_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_events_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_externalgraph_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_floats_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_ids_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_layers_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_orientationwarp_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_passthrough_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_pose_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_rootmotionoverride_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_selector_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_speedscale_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_state_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_stateconditions_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_statemachine_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_targets_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_targetwarp_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_transition_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_vectors_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animrootmotion_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animskeleton_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animsynctrack_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtarget_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_blend_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_cachedpose_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_defaultpose_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_sample_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtime_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\ikrig_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animattachment_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animcapture_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animgraphids_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animskeleton_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\boneconstraints_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\footdefinition_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\footmotion_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\model_old_disk_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\modelconfig_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\modelenums_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\morphsetdata_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\rendermesh_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\surfaceproperties_resource_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\vphysx_collisionmesh_resource_h_schema.sc.cc
-C:\buildworker\citadel_staging_win64\build\src\animationsystem\activitylist.cpp
-C:\buildworker\citadel_staging_win64\build\src\animationsystem\animationblendlist.cpp
-C:\buildworker\citadel_staging_win64\build\src\animationsystem\animationgroupresource.cpp
-C:\buildworker\citadel_staging_win64\build\src\animationsystem\animationsystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\animationsystem\animationsystemutils.cpp
-C:\buildworker\citadel_staging_win64\build\src\animationsystem\animresource_imp.cpp
-C:\buildworker\citadel_staging_win64\build\src\animationsystem\eventlist.cpp
-C:\buildworker\citadel_staging_win64\build\src\animationsystem\sequence_imp.cpp
-C:\buildworker\citadel_staging_win64\build\src\animationsystem\sequenceresource.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\addposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\addupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\aimcameraupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\aimmatrixposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\aimmatrixupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animaction_expressionupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animationgraphinstance.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animationgraphvisualizationmanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animcomponentupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animgraphdebugreplay.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animgraphmodelbinding.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animgraphutils.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animmotorinstance.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animnetvarbinding.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animnetvarregistry.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animparameterlistinstance.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animparameterlistupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animpathdata.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animscriptmanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animscriptrunner.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animscriptutils.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animstatemachineupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animtagmanagerupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animupdatecontext.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\animupdatenodebase.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\binaryupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\blend2dupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\blendposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\blendupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\bonemaskposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\bonemaskupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\choiceupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\choreoposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\choreoupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\cppscriptcomponentupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\cyclecontrolclipupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\dampedpathanimmotorupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\directionalblendupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\directplaybackupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\enumanimparameter.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\footadjustmentupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\footlockposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\footlockupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\footmotionmanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\footmotionstatus.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\footmotionutils.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\footpinningupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\footsteptriggerupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\futurefacingmetricevaluator.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\futurevelocitymetricevaluator.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\hitreactupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\ik\iksolver_ccd.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\ik\iksolver_twobone.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\ik\ikutil.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\inputstreamposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\inputstreamupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\jiggleboneposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\jumphelperupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\leanmatrixupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\lookatupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\lookcomponentinstance.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\lookcomponentupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\motiondataset.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\motiongraphpreviewupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\motionmatchingupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\motionmetricevaluator.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\motionnode_sequence.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\motionsearchdb.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\movementcomponentinstance.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\movementcomponentupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\packeddata.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\pairedsequencecomponentupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\paramspanupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\pathanimmotorupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\pathanimmotorupdaterbase.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\playerinputanimmotorupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\posecache.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\poseupdatecontext.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\ragdollcomponentupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\rootupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\selectorupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\sequenceupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\singleframeposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\singleframeupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\slopecomponentinstance.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\slopecomponentupdater.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\solveikchainupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\staticposecache.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\stridestatus.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\subtractposeoperation.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\subtractupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animgraphlib\twoboneikupdatenode.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\animblender.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\animbonemask.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\animclip.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\animdebug.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\animlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\animpose.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\animserializer.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\animsynctrack.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\animtarget.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_definition.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_instance.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_node.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_recording.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_rootmotion.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\animgraph_sampledevents.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_blend1d.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_blend2d.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_bonemasks.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_bools.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_cachedvalues.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_childgraph.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_clip.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_controlparameters.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_events.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_externalgraph.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_floats.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_ids.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_layers.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_orientationwarp.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_passthrough.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_pose.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_rootmotionoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_selector.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_speedscale.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_state.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_stateconditions.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_statemachine.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_targets.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_targetwarp.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_transition.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\graph\nodes\animgraphnode_vectors.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\tasksystem\animtaskposepool.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\tasksystem\animtasksystem.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\tasksystem\tasks\animtask_blend.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\tasksystem\tasks\animtask_cachedpose.cpp
-C:\buildworker\citadel_staging_win64\build\src\animlib\tasksystem\tasks\animtask_sample.cpp
-C:\buildworker\citadel_staging_win64\build\src\bonesetup\animationresource.cpp
-C:\buildworker\citadel_staging_win64\build\src\bonesetup\bone_decode.cpp
-C:\buildworker\citadel_staging_win64\build\src\bonesetup\bone_setup.cpp
-C:\buildworker\citadel_staging_win64\build\src\bonesetup\channel_operators.cpp
-C:\buildworker\citadel_staging_win64\build\src\bonesetup\clabelleddebughelper.cpp
-C:\buildworker\citadel_staging_win64\build\src\bonesetup\spaceagnosticboneaccessor.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\colorgradient.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\fuse_expr_compiler.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\fuse_expr_executioncontext.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\generic_expr.g
-C:\buildworker\citadel_staging_win64\build\src\mathlib\extended\piecewisecurve.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_staging_win64\build\src\mathlib\quaternion.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\animationophistory.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\animevents_legacyoptions.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\animpose.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\boneconstraints.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\footmotion.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\ik\ikchaindata.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\ik\ikjointconstraintdata.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\ik\ikjointconstraintdata_hinge.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\ik\ikjointconstraintdata_plane.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\ik\iktargetsettings.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\ik\ikutil.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\model.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\modelconfig.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\rendermesh.cpp
-C:\buildworker\citadel_staging_win64\build\src\modellib\rendermesh_old_disk.cpp
-C:\buildworker\citadel_staging_win64\build\src\physicslib\femodel.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\animationsystem\animationresource.h
-C:\buildworker\citadel_staging_win64\build\src\public\animationsystem\animenum.h
-C:\buildworker\citadel_staging_win64\build\src\public\animationsystem\animnodepath.h
-C:\buildworker\citadel_staging_win64\build\src\public\animationsystem\animvariant.h
-C:\buildworker\citadel_staging_win64\build\src\public\animationsystem\compression.h
-C:\buildworker\citadel_staging_win64\build\src\public\animationsystem\eventlist.h
-C:\buildworker\citadel_staging_win64\build\src\public\animationsystem\motiongraphconfig.h
-C:\buildworker\citadel_staging_win64\build\src\public\animgraphlib\animparameterlistupdater.h
-C:\buildworker\citadel_staging_win64\build\src\public\animgraphlib\animvalue.h
-C:\buildworker\citadel_staging_win64\build\src\public\animgraphlib\blendcurve.h
-C:\buildworker\citadel_staging_win64\build\src\public\animgraphlib\directplaybackupdatenode.h
-C:\buildworker\citadel_staging_win64\build\src\public\animgraphlib\motionmatchingcommon.h
-C:\buildworker\citadel_staging_win64\build\src\public\animgraphlib\motionsearchdb.h
-C:\buildworker\citadel_staging_win64\build\src\public\animgraphlib\packeddata.h
-C:\buildworker\citadel_staging_win64\build\src\public\animgraphlib\relativeoffset.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animblender.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animbonemask.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animclip.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animcompressor.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animdebug.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animeasing.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animevent.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animpose.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animrootmotion.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animserializer.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animskeleton.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animsynctrack.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animtarget.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\animtime.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_context.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_dataset.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_definition.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_instance.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_node.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_recording.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_rootmotion.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\animgraph_sampledevents.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\nodes\animgraphnode_clip.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\nodes\animgraphnode_layers.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\graph\nodes\animgraphnode_transition.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\tasksystem\animtask.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\tasksystem\animtaskposepool.h
-C:\buildworker\citadel_staging_win64\build\src\public\animlib\tasksystem\animtasksystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\bonesetup\bone_accessor.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\fuse_expr_executioncontext.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\generic_expr_eval.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\interpolaterbf.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\rotation.h
-C:\buildworker\citadel_staging_win64\build\src\public\mathlib\vectoraligned.h
-C:\buildworker\citadel_staging_win64\build\src\public\modellib\ik\ikchaindata.h
-C:\buildworker\citadel_staging_win64\build\src\public\modellib\ik\ikjointconstraintdata_hinge.h
-C:\buildworker\citadel_staging_win64\build\src\public\modellib\ik\iktargetsettings.h
-C:\buildworker\citadel_staging_win64\build\src\public\ordered_constructor.h
-C:\buildworker\citadel_staging_win64\build\src\public\physicslib\physaggregatedata.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\kv3transfertypemanager.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\kv3typemanager.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcefile\legacy_back_compat_introspectedtokv3typemanager.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\iresourcesystem.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\stronghandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\resourcesystem\weakhandle.h
-C:\buildworker\citadel_staging_win64\build\src\public\schemalib\schemaenumhelpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\assert_base.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitstring.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\bitvec.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\byteswap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\check_cast.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\convarref.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\crtoverride.cpp
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\enum_helpers.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\fixedsizecircularbuffer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\keyvalues3.inl
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_resource.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_saveloadresource.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\kv3transfer_schema_support.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\reflection_deprecated\reflection_attributes_common.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\reflection_deprecated\reflectionutils.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\reflection_deprecated\variable.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utldict.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlhash.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlhashdict.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlmemory.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlslice.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringmap.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier0\utlstringtoken.h
-C:\buildworker\citadel_staging_win64\build\src\public\tier2\tier2.h
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\introspectedtokv3typemanager.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcedictionary.cpp
-C:\buildworker\citadel_staging_win64\build\src\resourcefile\resourcefile.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schemaclassinfo.cpp
-C:\buildworker\citadel_staging_win64\build\src\schemalib\schematype.cpp
-C:\buildworker\citadel_staging_win64\build\src\thirdparty\tnt\tnt_matrix.h
-C:\buildworker\citadel_staging_win64\build\src\thirdparty\tnt\tnt_vector.h
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\concommand.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\convarref.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\keyvalues3.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\kv3transfer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\singletons.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier0_perproject\utltokenizer.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\schemabindings.cpp
-C:\buildworker\citadel_staging_win64\build\src\tier2\tier2.cpp
+C:\buildworker\citadel_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_msvc_\Retail\animationsystem.pdb
+C:\buildworker\citadel_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\animationgroupresource_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\animationresource_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\animenum_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\compression_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\hsequence_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\ianimationsystem_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\mood_vdata_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animationsystem\_vpc_animationsystem\unity\win64\_schema_\release\sequenceresource_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\actioncomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\addupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\aimcameraoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\aimcameraupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\aimmatrixposeoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\aimmatrixupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animaction_emittagupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animaction_expressionupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animaction_setparameterupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animaction_togglecomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animactionupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animcomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animdemocapturesettings_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animgraphdebugreplay_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animgraphmodelbinding_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animinputdamping_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animmotorupdaterbase_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animnodepath_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animparameterbase_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animparameterlistupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animparamhandle_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animscriptcomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animscriptmanager_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animstatemachineupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animtagbase_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animtagmanagerupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animupdatenodebase_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\animupdateshareddata_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\audioanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\binaryupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bindposeupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\blend2dupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\blendcurve_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\blendupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\blockselectionmetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bodygroupanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bonemaskupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bonepositionmetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\bonevelocitymetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\boolanimparameter_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\choiceupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\choreoupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\clothsettingsanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\concreteanimparameter_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\cppscriptcomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\currentrotationvelocitymetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\currentvelocitymetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\cyclecontrolclipupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\cyclecontrolupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\dampedpathanimmotorupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\dampedvaluecomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\demosettingscomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\directionalblendupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\directplaybackupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\distanceremainingmetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\enumanimparameter_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\floatanimparameter_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followattachmentposeoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followattachmentupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followpathupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followtargetposeoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\followtargetupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footadjustmentupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footcyclemetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footfallanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footlockposeoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footlockshared_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footlockupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footpinningposeoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footpinningupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footpositionmetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footsteplandedanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\footsteptriggerupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\futurefacingmetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\futurevelocitymetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\handshakeanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\hitreactposeoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\hitreactupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ianimationgraphvisualizationmanager_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ianimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ikbonenameandindex_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\iksolversettings_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\iktargetsettings_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\inputstreamupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\intanimparameter_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\jiggleboneposeoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\jiggleboneupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\jumphelperupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\leafupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\leanmatrixupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\lodcomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\lookatposeoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\lookatupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\lookcomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\materialattributeanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiondataset_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiongraph_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiongraphconfig_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiongraphgroup_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motiongraphpreviewupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionmatchingupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionmetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionnode_blend1d_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionnode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionnode_sequence_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\motionsearchdb_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\movementcomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\moverupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\networksettings_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pairedsequencecomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pairedsequenceupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\paramspanupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\particleanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pathanimmotorupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pathanimmotorupdaterbase_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pathhelperupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\pathmetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\playerinputanimmotorupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\posehandle_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\quaternionanimparameter_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ragdollanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ragdollcomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\ragdollupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\rootupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\selectorupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\sequencefinishedanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\sequenceupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\settingsgroup_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\settingsmanager_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\singleframeupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\slopecomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\slowdownonslopesupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\solveikchainposeoperation_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\solveikchainupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\speedscaleupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stanceoverrideupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stancescaleupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\statemachinecomponentupdater_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\statemachineupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\staticposecache_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stepsremainingmetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stopatgoalupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\stringanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\subtractupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\symbolanimparameter_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\taskstatusanimtag_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\timeremainingmetricevaluator_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\turnhelperupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\twoboneikupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\unaryupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\vectoranimparameter_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\virtualanimparameter_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\waypointhelperupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animgraphlib\_vpc_animgraphlib\default\win64\_schema_\release\zeroposeupdatenode_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animbonemask_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animclip_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animcompressor_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_foot_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_framesnap_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_id_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_legacy_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_rootmotion_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_transition_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animevent_warp_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animflags_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraph_dataset_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraph_definition_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraph_node_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_blend1d_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_blend2d_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_bonemasks_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_bools_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_cachedvalues_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_childgraph_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_clip_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_constvalues_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_controlparameters_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_events_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_externalgraph_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_floats_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_ids_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_layers_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_orientationwarp_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_passthrough_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_pose_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_rootmotionoverride_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_selector_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_speedscale_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_state_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_stateconditions_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_statemachine_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_targets_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_targetwarp_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_transition_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animgraphnode_vectors_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animrootmotion_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animskeleton_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animsynctrack_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtarget_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_blend_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_cachedpose_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_defaultpose_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtask_sample_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\animtime_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\animlib\_vpc_animlib\default\win64\_schema_\release\ikrig_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animattachment_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animcapture_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animgraphids_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\animskeleton_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\boneconstraints_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\footdefinition_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\footmotion_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\model_old_disk_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\modelconfig_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\modelenums_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\morphsetdata_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\rendermesh_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\surfaceproperties_resource_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\_build_\modellib\_vpc_modellib\default\win64\_schema_\release\vphysx_collisionmesh_resource_h_schema.sc.cc
+C:\buildworker\citadel_rel_win64\build\src\animationsystem\activitylist.cpp
+C:\buildworker\citadel_rel_win64\build\src\animationsystem\animationblendlist.cpp
+C:\buildworker\citadel_rel_win64\build\src\animationsystem\animationgroupresource.cpp
+C:\buildworker\citadel_rel_win64\build\src\animationsystem\animationsystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\animationsystem\animationsystemutils.cpp
+C:\buildworker\citadel_rel_win64\build\src\animationsystem\animresource_imp.cpp
+C:\buildworker\citadel_rel_win64\build\src\animationsystem\eventlist.cpp
+C:\buildworker\citadel_rel_win64\build\src\animationsystem\sequence_imp.cpp
+C:\buildworker\citadel_rel_win64\build\src\animationsystem\sequenceresource.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\addposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\addupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\aimcameraupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\aimmatrixposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\aimmatrixupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animaction_expressionupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animationgraphinstance.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animationgraphvisualizationmanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animcomponentupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animgraphdebugreplay.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animgraphmodelbinding.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animgraphutils.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animmotorinstance.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animnetvarbinding.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animnetvarregistry.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animparameterlistinstance.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animparameterlistupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animpathdata.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animscriptmanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animscriptrunner.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animscriptutils.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animstatemachineupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animtagmanagerupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animupdatecontext.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\animupdatenodebase.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\binaryupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\blend2dupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\blendposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\blendupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\bonemaskposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\bonemaskupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\choiceupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\choreoposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\choreoupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\cppscriptcomponentupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\cyclecontrolclipupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\dampedpathanimmotorupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\directionalblendupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\directplaybackupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\enumanimparameter.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\footadjustmentupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\footlockposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\footlockupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\footmotionmanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\footmotionstatus.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\footmotionutils.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\footpinningupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\footsteptriggerupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\futurefacingmetricevaluator.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\futurevelocitymetricevaluator.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\hitreactupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\ik\iksolver_ccd.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\ik\iksolver_twobone.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\ik\ikutil.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\inputstreamposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\inputstreamupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\jiggleboneposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\jumphelperupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\leanmatrixupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\lookatupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\lookcomponentinstance.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\lookcomponentupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\motiondataset.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\motiongraphpreviewupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\motionmatchingupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\motionmetricevaluator.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\motionnode_sequence.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\motionsearchdb.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\movementcomponentinstance.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\movementcomponentupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\packeddata.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\pairedsequencecomponentupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\paramspanupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\pathanimmotorupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\pathanimmotorupdaterbase.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\playerinputanimmotorupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\posecache.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\poseupdatecontext.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\ragdollcomponentupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\rootupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\selectorupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\sequenceupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\singleframeposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\singleframeupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\slopecomponentinstance.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\slopecomponentupdater.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\solveikchainupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\staticposecache.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\stridestatus.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\subtractposeoperation.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\subtractupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\twoboneikupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\animblender.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\animbonemask.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\animclip.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\animdebug.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\animlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\animpose.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\animserializer.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\animsynctrack.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\animtarget.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\animgraph_definition.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\animgraph_instance.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\animgraph_node.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\animgraph_recording.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\animgraph_rootmotion.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\animgraph_sampledevents.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_blend1d.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_blend2d.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_bonemasks.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_bools.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_cachedvalues.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_childgraph.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_clip.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_controlparameters.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_events.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_externalgraph.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_floats.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_ids.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_layers.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_orientationwarp.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_passthrough.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_pose.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_rootmotionoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_selector.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_speedscale.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_state.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_stateconditions.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_statemachine.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_targets.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_targetwarp.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_transition.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\graph\nodes\animgraphnode_vectors.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\tasksystem\animtaskposepool.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\tasksystem\animtasksystem.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\tasksystem\tasks\animtask_blend.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\tasksystem\tasks\animtask_cachedpose.cpp
+C:\buildworker\citadel_rel_win64\build\src\animlib\tasksystem\tasks\animtask_sample.cpp
+C:\buildworker\citadel_rel_win64\build\src\bonesetup\animationresource.cpp
+C:\buildworker\citadel_rel_win64\build\src\bonesetup\bone_decode.cpp
+C:\buildworker\citadel_rel_win64\build\src\bonesetup\bone_setup.cpp
+C:\buildworker\citadel_rel_win64\build\src\bonesetup\channel_operators.cpp
+C:\buildworker\citadel_rel_win64\build\src\bonesetup\clabelleddebughelper.cpp
+C:\buildworker\citadel_rel_win64\build\src\bonesetup\spaceagnosticboneaccessor.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\colorgradient.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\fuse_expr_compiler.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\fuse_expr_executioncontext.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\generic_expr.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\generic_expr.g
+C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\piecewisecurve.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
+C:\buildworker\citadel_rel_win64\build\src\mathlib\quaternion.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\animationophistory.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\animevents_legacyoptions.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\animpose.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\boneconstraints.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\footmotion.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\ik\ikchaindata.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\ik\ikjointconstraintdata.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\ik\ikjointconstraintdata_hinge.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\ik\ikjointconstraintdata_plane.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\ik\iktargetsettings.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\ik\ikutil.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\model.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\modelconfig.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\rendermesh.cpp
+C:\buildworker\citadel_rel_win64\build\src\modellib\rendermesh_old_disk.cpp
+C:\buildworker\citadel_rel_win64\build\src\physicslib\femodel.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\animationsystem\animationresource.h
+C:\buildworker\citadel_rel_win64\build\src\public\animationsystem\animenum.h
+C:\buildworker\citadel_rel_win64\build\src\public\animationsystem\animnodepath.h
+C:\buildworker\citadel_rel_win64\build\src\public\animationsystem\animvariant.h
+C:\buildworker\citadel_rel_win64\build\src\public\animationsystem\compression.h
+C:\buildworker\citadel_rel_win64\build\src\public\animationsystem\eventlist.h
+C:\buildworker\citadel_rel_win64\build\src\public\animationsystem\motiongraphconfig.h
+C:\buildworker\citadel_rel_win64\build\src\public\animgraphlib\animparameterlistupdater.h
+C:\buildworker\citadel_rel_win64\build\src\public\animgraphlib\animvalue.h
+C:\buildworker\citadel_rel_win64\build\src\public\animgraphlib\blendcurve.h
+C:\buildworker\citadel_rel_win64\build\src\public\animgraphlib\directplaybackupdatenode.h
+C:\buildworker\citadel_rel_win64\build\src\public\animgraphlib\motionmatchingcommon.h
+C:\buildworker\citadel_rel_win64\build\src\public\animgraphlib\motionsearchdb.h
+C:\buildworker\citadel_rel_win64\build\src\public\animgraphlib\packeddata.h
+C:\buildworker\citadel_rel_win64\build\src\public\animgraphlib\relativeoffset.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animblender.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animbonemask.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animclip.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animcompressor.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animdebug.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animeasing.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animevent.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animpose.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animrootmotion.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animserializer.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animskeleton.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animsynctrack.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animtarget.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\animtime.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\animgraph_context.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\animgraph_dataset.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\animgraph_definition.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\animgraph_instance.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\animgraph_node.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\animgraph_recording.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\animgraph_rootmotion.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\animgraph_sampledevents.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\nodes\animgraphnode_clip.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\nodes\animgraphnode_layers.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\graph\nodes\animgraphnode_transition.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\tasksystem\animtask.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\tasksystem\animtaskposepool.h
+C:\buildworker\citadel_rel_win64\build\src\public\animlib\tasksystem\animtasksystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\bonesetup\bone_accessor.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\fuse_expr_executioncontext.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\generic_expr.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\generic_expr_eval.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\interpolaterbf.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\range.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
+C:\buildworker\citadel_rel_win64\build\src\public\mathlib\vectoraligned.h
+C:\buildworker\citadel_rel_win64\build\src\public\modellib\ik\ikchaindata.h
+C:\buildworker\citadel_rel_win64\build\src\public\modellib\ik\ikjointconstraintdata_hinge.h
+C:\buildworker\citadel_rel_win64\build\src\public\modellib\ik\iktargetsettings.h
+C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
+C:\buildworker\citadel_rel_win64\build\src\public\physicslib\physaggregatedata.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3transfertypemanager.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3typemanager.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\legacy_back_compat_introspectedtokv3typemanager.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\iresourcesystem.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\weakhandle.h
+C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaenumhelpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\assert_base.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitstring.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitvec.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\enum_helpers.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\fixedsizecircularbuffer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.inl
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_resource.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_saveloadresource.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\kv3transfer_schema_support.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\reflection_deprecated\reflection_attributes_common.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\reflection_deprecated\reflectionutils.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\reflection_deprecated\variable.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utldict.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlhash.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlhashdict.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlslice.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringmap.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlstringtoken.h
+C:\buildworker\citadel_rel_win64\build\src\public\tier2\tier2.h
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\introspectedtokv3typemanager.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
+C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcefile.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schemaclassinfo.cpp
+C:\buildworker\citadel_rel_win64\build\src\schemalib\schematype.cpp
+C:\buildworker\citadel_rel_win64\build\src\thirdparty\tnt\tnt_matrix.h
+C:\buildworker\citadel_rel_win64\build\src\thirdparty\tnt\tnt_vector.h
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\keyvalues3.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\kv3transfer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utltokenizer.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
+C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
 C;4,|
 C@:D$ t"
 C@H9,
@@ -8387,7 +8392,6 @@ ChoiceMethod
 ChoiceNode
 Choreo AnimNode attempted to use more layers than are available
 ChoreoNode
-ClU=V
 ClampDuration
 ClampTo180
 ClampTo360
@@ -8403,6 +8407,7 @@ CloseEnough( blendWeights.m_weights[ 0 ], 1.f - blendWeights.m_weights[ 1 ] )
 CloseEnough( vToToeDirWS.Length(), 1.f, 0.01f )
 CloseHandle
 Cloth Settings Tag
+Cnnv4
 Color
 Command
 CommandLine
@@ -8458,6 +8463,7 @@ CycleControlClipNode
 C|$pH
 C|$xL
 C|;Cxu	
+D	V_sincosf
 D W?{W
 D!l$xA
 D$ 	!O3
@@ -9092,7 +9098,7 @@ DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
 D|$0H
 E	44H
-E	V_sincosf
+E	V_sind
 E 8C 
 E @8pHtD9s|~?L
 E D8xKtgA
@@ -9689,7 +9695,7 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 ExternalNameForInternalType
 ExtraSeqFlags
 Extraneous token
-F	V_sind
+F	V_sinf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -10033,7 +10039,6 @@ Func( %s )
 Function "%s" takes %i parameters, but %i were given
 Future Facing
 Future Velocity
-G	V_sinf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -10047,7 +10052,6 @@ G8D8`au
 G@HcO8
 G@L;D$hu
 G@LcG8
-GC:\buildworker\citadel_staging_win64\build\src\public\mathlib\range.h
 GD$(H
 GD$83
 GD$8A
@@ -10227,6 +10231,7 @@ G|$(L
 G|$8B
 G|$HA
 G|$HL
+H	V_sinhf
 H	p0H
 H 8YKt
 H 8YKt	
@@ -10274,13 +10279,15 @@ H0H9)t
 H0HcGh
 H9(tO
 H9+t	H
+H9- zU
+H9-<yU
 H9/t	H
 H92tBA
-H953A>
+H9531>
 H97u+A
 H98t2
 H9;t	H
-H9=y}d
+H9=ymd
 H9A s
 H9A u)M
 H9A(u
@@ -10628,7 +10635,7 @@ HitReactFixedSettings_t::KV3Transfer_DefaultKeys_Impl
 HitReactFixedSettings_t::Schema_VerifyBindingIsRegistered
 HostStateMgr001
 HxH9Jxt
-I	V_sinhf
+I	V_snprintf
 I could not work out what I was expecting, like so many of us these days!
 I#I0H
 I#J0H
@@ -11417,7 +11424,6 @@ IsWriting()
 Iterate
 IterateRandom
 Iw:Hc
-J	V_snprintf
 J'6E3
 J<L4,&
 J>@G_
@@ -11670,13 +11676,16 @@ L+A0L
 L+H0H
 L+i0I
 L9#u/H
-L9-YP7
-L9-tP7
+L9-Y@7
+L9-t@7
 L92tDA
 L94:H
-L95)jy
-L95Giy
-L95nG8
+L95%p9
+L95)Zy
+L957tc
+L95GYy
+L95Go9
+L95n78
 L9;u	H
 L9?t	H
 L9@ s
@@ -11763,6 +11772,8 @@ Lc3Nc|
 Lc6Hc+A
 Lc;A+
 Lc;D;{
+Lc=1x.
+Lc=by.
 Lc?A+
 Lc?D;
 LcA,L
@@ -12253,6 +12264,7 @@ Num Iterations
 NumOps: %i
 Number of bones in input stream does not match skeleton
 Numbers starting with leading zero must be in octal.
+O	V_sscanf
 O$M9o
 O0+W8
 O8HcB
@@ -12316,7 +12328,6 @@ Overlay Blend (Masked): %.2f%%
 Overlay Blend: %.2f%%
 OverlayProjectionDirection
 Override Sound
-P	V_sscanf
 P08@J
 P6 <Q
 P60	Q
@@ -13415,6 +13426,7 @@ SyncChildren
 Synchronize Children
 Synchronized
 Synthetic oneofs must be after all other oneofs
+T	V_stricmp_fast
 T$ D8t$(
 T$ E3
 T$ H;
@@ -13533,8 +13545,7 @@ T${9C
 T${9G
 T${A9F
 T+(I;
-T-[&@
-T5a	;
+T5ON5
 TILT_TWIST
 TNT::Matrix<float>::initialize
 TNT::Vector<float>::initialize
@@ -13632,7 +13643,6 @@ Type appears to be in generated pool but wasn't
 Type is already registered: 
 Type of mood
 TypeManager
-U	V_stricmp_fast
 U;A9F
 U;D$hu
 UA>N0Wl
@@ -13949,14 +13959,11 @@ Virtual Parameter
 VisBuilder_001
 Volume
 Vrad3_001
-W%rp$
-W5O`'
-W5c*9
+W%=l)
+W-=7)
+W-iH"
 W8IcG(M
 W9QHI
-W=4r$
-W=sq$
-W=wW=
 WARNING
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
@@ -14013,15 +14020,11 @@ X SUWATAUH
 X UVWATAUAVH
 X!t5~
 X(Hc@ H
-X-!6!
-X-)( 
-X-O( 
-X-V$ 
-X-f	!
-X-|$ 
-X5F& 
-X5l& 
-X5q5+
+X-&	!
+X-<$ 
+X-N	!
+X5,& 
+X5:P(
 XA]A\
 XA^A]A\[
 XA^A]_^][
@@ -14050,25 +14053,24 @@ XT.0D
 XT> A
 X_^][
 Xd$ D
-Xp(fw
 Xt/@A
 Xt7HH
 X|	@A
 Y (Green / Left)
-Y%@d0
-Y%io0
+Y%@T0
+Y%F	4
+Y%i_0
 Y(HcA H
-Y-=_>
+Y-=O>
 Y0HcR
-Y5-X'
-Y58OE
-Y5;H3
-Y5<K)
-Y5>F3
-Y5oG)
-Y5wQ3
-Y5z5+
-Y5{TD
+Y58?E
+Y5;83
+Y5<G)
+Y5>63
+Y5oC)
+Y5u0?
+Y5wA3
+Y5{DD
 Y9"SD
 Y>kX>M
 YD$0A
@@ -14108,6 +14110,7 @@ Zod(^?
 [lazy = true] can only be specified for submessage fields.
 [packed = true] can only be specified for repeated primitive fields.
 [unknown]
+\	V_strtok
 \$ 9\$0|LH
 \$ @8t$(
 \$ A;
@@ -14235,12 +14238,11 @@ Zod(^?
 \$p9]
 \$pH;
 \$pw;
-\-$\<
-\-%J-
-\-56!
-\-c( 
-\5+[)
-\5YK)
+\-#( 
+\-P$ 
+\-b	!
+\5@& 
+\5YG)
 \9\D;
 \A fA
 \D	 fA
@@ -14255,12 +14257,15 @@ Zod(^?
 \y@fE
 \|	@fE
 \|'(H
-]	V_strtok
 ] HcE
+]%Gi5
 ](IcE L
 ])6M>&
 ]0HcE(H
 ]0tOH
+]5)d'
+]5nd'
+]=T@"
 ]>)2X
 ]@tKH
 ]J<0"0i3
@@ -14385,6 +14390,7 @@ _xHc[
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a	V_tanf
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a7hIw
 abcdefghijklmnopqrstuvwxyz
@@ -14490,7 +14496,6 @@ audioreflectivity
 audioroughnessfactor
 audiosounds
 auto_unragdoll_duration
-b	V_tanf
 b >= 0 && b < MODEL_CONFIG_LOCK_COUNT
 b+GnH
 b?^Cy
@@ -14535,6 +14540,7 @@ break
 broken pipe
 bulletimpact
 bytes
+c	V_tanhf
 c HcC8
 c [1>H'
 c(>\,
@@ -14892,7 +14898,6 @@ curvature
 curve_tangent_mode_t
 cycle
 cycleDelta.IsNormalized()
-d	V_tanhf
 d$ D!
 d$ E3
 d$ L9c
@@ -15073,6 +15078,7 @@ f;\$L
 f;\$Lr
 f;\$T
 f;\$\
+f@`?g
 fA9	t	I
 fA9,Au
 fA99}
@@ -15098,7 +15104,7 @@ fD9 t
 fD9!H
 fD9!u
 fD9$Hu
-fD9%MoR
+fD9%M_R
 fD9'u
 fD9,Au
 fD9,pu
@@ -15268,7 +15274,6 @@ group
 group.m_motionGraphConfigs.IsValidIndex( nIndex.m_nConfig )
 group.m_motionGraphConfigs.IsValidIndex( selection.m_nConfigIndex.GetConfig() )
 group.m_motionGraphs.IsValidIndex( nIndex.m_nMotion )
-gwJZf
 h A9}h~ED
 h(A;vh|
 h>1my
@@ -15420,6 +15425,7 @@ kHH9k0H
 kL@8o(u
 keyvalues
 ksmCH
+ky]m~tP
 l$ 9jX
 l$ AVH
 l$ E3
@@ -15580,7 +15586,6 @@ m Hc](
 m.num_cols() == 1
 m.num_rows() == nSampleCount
 m0k0$
-m4C)\[
 mHcD7LH
 mL+7H
 m_AnimCaptures
@@ -17562,6 +17567,7 @@ mwtMH
 n < m_Vector.Count()
 n HcF$
 n I9.t	I
+n-K[9
 n03>Pu
 n<	fE
 n<	fG
@@ -17745,31 +17751,29 @@ number
 numframes
 o H9o
 o L9s t
-o%'^Y
-o%}@Y
-o-	mY
-o-"`Y
-o-^@Y
-o-oeY
-o-voY
-o-~AY
+o%#YY
+o%&]Y
+o%(fY
+o%WWY
+o-9fY
+o-OWY
+o-RYY
 o0Lcg(I
-o5?@Y
-o5?AY
-o5G^Y
-o5PeY
-o5T`Y
-o5WoY
-o5WpY
-o=!@Y
-o=#AY
-o=&KY
-o=2eY
-o=5mY
-o=9oY
-o=;pY
-o=AFY
-o=BhY
+o5NfY
+o5o9Y
+o5o:Y
+o5wWY
+o=29Y
+o=HLY
+o=Q9Y
+o=S:Y
+o=VDY
+o=b^Y
+o=efY
+o=ihY
+o=kiY
+o=q?Y
+o=raY
 o@u H
 oI>O7
 objc_class_prefix
@@ -18650,6 +18654,7 @@ vInputVecWS.Length() >= 0.f
 vJOnPlane2
 vJOnPlane3
 vJOnPlane4
+vK$=-8
 vKfffff
 vLookTarget
 vMoveDir.IsValid() && VectorIsNormalized( vMoveDir )
@@ -18817,7 +18822,6 @@ yxxxxxxxH
 z :"U
 zDconst char *__cdecl Reflection::Internal::GetFuncName<class CFootPinningPoseOperation>(void)
 zY;>u:m	
-z_~XI
 zero dir
 { AUAVAWH
 { AVH
@@ -18839,6 +18843,7 @@ zero dir
 {hH9{PH
 {pH9{PH
 {pHcKhH
+{phbN&
 {un'%
 {xH9{PH
 |#tAM
@@ -19041,7 +19046,7 @@ zero dir
 }&fff
 }'HcC
 }'fff
-}(;=)}i
+}(;=)mi
 }(H;{(t-H
 }(IcE H
 });C$

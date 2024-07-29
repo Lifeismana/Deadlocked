@@ -77,7 +77,6 @@
 			"sounds/npc/trooper/weapons/fire/ally_41.vsnd",
 			"sounds/npc/trooper/weapons/fire/ally_42.vsnd",
 		]
-		vsnd_duration = 1.354150
 	}
 	TrooperRifle.BulletWhizby = 
 	{
@@ -116,19 +115,16 @@
 			"sounds/npc/trooper/weapons/impact/default_18.vsnd",
 			"sounds/npc/trooper/weapons/impact/default_19.vsnd",
 		]
-		vsnd_duration = 0.948163
 	}
 	Trooper.Ability.Grenade.Impact = 
 	{
 		base = "Base.Trooper.Grenade.3d"
 		vsnd_files = "sounds/npc/trooper/grenade_impact.vsnd"
-		vsnd_duration = 5.250476
 	}
 	Trooper.Ability.Grenade.Explode = 
 	{
 		base = "Base.Trooper.Grenade.3d"
 		vsnd_files = "sounds/npc/trooper/grenade_explode.vsnd"
-		vsnd_duration = 4.227529
 	}
 	Trooper.SelfDestruct_Start = 
 	{
@@ -156,7 +152,6 @@
 			"sounds/npc/trooper/self_destruct/voice_09.vsnd",
 			"sounds/npc/trooper/self_destruct/voice_10.vsnd",
 		]
-		vsnd_duration = 1.606508
 	}
 	Trooper.SelfDestruct.Mech = 
 	{
@@ -175,7 +170,6 @@
 			"sounds/npc/trooper/self_destruct/mech_06.vsnd",
 			"sounds/npc/trooper/self_destruct/mech_07.vsnd",
 		]
-		vsnd_duration = 1.514739
 	}
 	Trooper.SelfDestruct.Electric = 
 	{
@@ -190,7 +184,6 @@
 			"sounds/npc/trooper/self_destruct/electric_4.vsnd",
 			"sounds/npc/trooper/self_destruct/electric_5.vsnd",
 		]
-		vsnd_duration = 1.862721
 	}
 	Trooper.Death = 
 	{
@@ -211,7 +204,6 @@
 			"sounds/npc/trooper/death/trooper_death_11.vsnd",
 			"sounds/npc/trooper/death/trooper_death_12.vsnd",
 		]
-		vsnd_duration = 1.883810
 	}
 	Trooper.Death.Exp = 
 	{
@@ -237,7 +229,6 @@
 			"sounds/npc/trooper/death/exp_17.vsnd",
 			"sounds/npc/trooper/death/exp_18.vsnd",
 		]
-		vsnd_duration = 2.189819
 	}
 	Trooper.Death.Noise = 
 	{
@@ -257,7 +248,6 @@
 			"sounds/npc/trooper/death/noise_11.vsnd",
 			"sounds/npc/trooper/death/noise_12.vsnd",
 		]
-		vsnd_duration = 2.308685
 	}
 	Trooper.Death.Wobble = 
 	{
@@ -274,7 +264,6 @@
 			"sounds/npc/trooper/death/wobble_08.vsnd",
 			"sounds/npc/trooper/death/wobble_09.vsnd",
 		]
-		vsnd_duration = 3.247755
 	}
 	Trooper.Melee.Damage.Hit = 
 	{
@@ -286,43 +275,42 @@
 			"sounds/physics/bullet_impacts/hit_shield_02.vsnd",
 			"sounds/physics/bullet_impacts/hit_shield_03.vsnd",
 		]
-		vsnd_duration = 0.489070
 	}
 	Trooper.FootstepLeft = 
 	{
 		base = "Base.Trooper.Footsteps.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Trooper.FootstepRight = 
 	{
 		base = "Base.Trooper.Footsteps.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Trooper.ShoutAtPlayer = 
 	{
 		base = "Base.Trooper.Footsteps.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Trooper.SelfDestruct_Exp = 
 	{
 		base = "Base.Trooper.Footsteps.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Trooper.ShoutAtTrooper = 
 	{
 		base = "Base.Trooper.Footsteps.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	NPC.Trooper.Jump.Land = 
 	{
 		base = "Base.Trooper.Footsteps.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Ability.Sentry.Beep = 
 	{
@@ -332,7 +320,6 @@
 		volume_falloff_min = 1.000000
 		volume_falloff_max = 800.000000
 		vsnd_files = "sounds/world/turret_scan.vsnd"
-		vsnd_duration = 0.763375
 	}
 	Trooper.Objective.Win.Cheer = 
 	{
@@ -341,7 +328,7 @@
 		volume_falloff_max = 2000.000000
 		block_distance_max = 2500.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.050023
+		vsnd_duration = 0.100045
 	}
 	Trooper.Footstep.Humanoid = 
 	{
@@ -358,7 +345,6 @@
 			"sounds/npc/trooper/foley/step_04.vsnd",
 			"sounds/npc/trooper/foley/step_05.vsnd",
 		]
-		vsnd_duration = 0.610544
 	}
 	Trooper.Footstep.Melee = 
 	{
@@ -375,7 +361,6 @@
 			"sounds/npc/trooper/foley/step_melee_04.vsnd",
 			"sounds/npc/trooper/foley/step_melee_05.vsnd",
 		]
-		vsnd_duration = 0.244172
 	}
 	Trooper.Footstep.Humanoid_Super = 
 	{
@@ -392,7 +377,6 @@
 			"sounds/npc/trooper/foley/step_04.vsnd",
 			"sounds/npc/trooper/foley/step_05.vsnd",
 		]
-		vsnd_duration = 0.610544
 	}
 	Trooper.Deploy.Impact = 
 	{
@@ -412,6 +396,5 @@
 			"sounds/npc/trooper/foley/drop_04.vsnd",
 			"sounds/npc/trooper/foley/drop_05.vsnd",
 		]
-		vsnd_duration = 1.231746
 	}
 }
