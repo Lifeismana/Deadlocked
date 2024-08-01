@@ -39,8 +39,8 @@
 	</snippets>
 	<CitadelHud class="WindowRoot" hittest="false">
 		<Panel id="GameOverButtonContainer">
-			<TextButton id="LeaveMatchButton" class="ButtonBevel gameOverButtons Green" text="LEAVE MATCH" onactivate="CitadelDisconnectFromGame(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelPlayUISound( EMainMenuHover )" />
-			<TextButton id="ReturnToGameButton" class="ButtonBevel gameOverButtons Green" text="RETURN TO GAME" onactivate="CitadelHidePostGameButtons(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelPlayUISound( EMainMenuHover )" />
+			<TextButton id="LeaveMatchButton" class="ButtonBevel gameOverButtons Green" text="#Citadel_Hud_LeaveMatch" onactivate="CitadelDisconnectFromGame(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelPlayUISound( EMainMenuHover )" />
+			<TextButton id="ReturnToGameButton" class="ButtonBevel gameOverButtons Green" text="#Citadel_Hud_ReturnToMatch" onactivate="CitadelHidePostGameButtons(); CitadelPlayUISound( EMainMenuActivate )" onmouseover="CitadelPlayUISound( EMainMenuHover )" />
 		</Panel>
 		<CitadelHudEventIndicatorsPanel id="HudEventIndicatorsPanel" />
 		<CitadelModifierMessage id="ModifierMessages" />
@@ -49,7 +49,6 @@
 		<CitadelPlayerLevelRewards id="LevelRewards" />
 		<CitadelHudReportCard id="hud_reportcard" />
 		<CitadelHudPlayerIntents id="hud_playerintents" />
-		<CitadelHudGuidedBot id="guidedBotMessage" />
 		<PopupManager id="PopupManager" hittest="false" />
 		<CitadelHudChat id="HudChat" />
 		<CitadelHudQuickResponse id="CitadelQuickResponse" />
@@ -63,6 +62,7 @@
 			<Label text="#SafeToAbandon_Text" />
 		</Panel>
 		<Panel id="gameplay_hud" class="gameplay_hud" hittest="false">
+			<GlobalClassListener classes="gShopOpen" />
 			<Panel id="hudBacker" />
 			<TeamObjectiveHealthPanel id="objectives_health_friendly" team="2" />
 			<Panel class="spectatorList">
@@ -71,10 +71,10 @@
 			<Panel id="voice_active_box">
 				<Panel style="flow-children:right;">
 					<Panel class="micIcon" />
-					<Label text="Microphone Active" />
+					<Label text="#Citadel_Hud_MicActive" />
 				</Panel>
 				<Panel id="voice_active_not_in_chat">
-					<Label text="Chat currently disabled" />
+					<Label text="#Citadel_Hud_VoiceChatNotAvailable" />
 				</Panel>
 			</Panel>
 			<TeamChatStatus id="teamChatStatus" />
@@ -90,9 +90,9 @@
 				<Panel id="status_bars" acceptinput="false">
 					<CitadelHudModifiers id="hud_modifiers" class="center_modifiers" display_location="center" />
 				</Panel>
-				<Label id="out_of_ammo_label" text="OUT OF AMMO" />
-				<Label id="low_ammo_label" text="LOW AMMO" />
-				<Label id="out_of_mana_label" text="NOT ENOUGH ENERGY" />
+				<Label id="out_of_ammo_label" text="#Citadel_Hud_OutOfAmmo" />
+				<Label id="low_ammo_label" text="#Citadel_Hud_LowAmmo" />
+				<Label id="out_of_mana_label" text="#Citadel_Hud_NotEnoughEnergy" />
 				<Panel id="cast_failed_box">
 					<Label id="invalid_cast_ability" text="{s:failed_ability_name}" />
 					<Panel class="invalid_cast_line">
@@ -102,10 +102,10 @@
 				</Panel>
 				<Citadel_AbilityHUDPanels id="crosshair" />
 				<Panel id="LowHealthWarning">
-					<Label text="Health Critical" />
+					<Label text="#Citadel_Hud_HealthCritical" />
 				</Panel>
 				<Panel id="MidHealthWarning">
-					<Label text="Health Warning" />
+					<Label text="#Citadel_Hud_HealthWarning" />
 				</Panel>
 				<Panel id="disabled_container">
 					<CircularProgressBar id="disabled_progress" />
@@ -136,7 +136,7 @@
 			</Panel>
 			<Panel id="death_penalty_gold_flash" />
 			<Panel class="hero_panel" />
-			<Label id="damage_meter" text="DPS {i:dps}" />
+			<Label id="damage_meter" text="#Citadel_Hud_DPS" />
 			<Panel class="clamp_width">
 				<HudDataFeed id="DataFeed" />
 				<Panel id="minimap_persp" hittest="false">
@@ -152,7 +152,7 @@
 		</Panel>
 		<CitadelHudTopBar id="TopBar" hittest="false" />
 		<Panel id="AbilitiesContainer" class="abilitiesContainer" hittest="false">
-			<GlobalClassListener classes="gDetailView" />
+			<GlobalClassListener classes="gDetailView gShopOpen" />
 			<Panel class="unlockMessage upgradeReminderUI">
 				<Label html="true" text="#Citadel_HUD_AbilityUnlockAvailable" />
 			</Panel>
@@ -168,10 +168,11 @@
 			</Panel>
 		</Panel>
 		<Panel id="gameplay_hud_dead" hittest="false" hittestchildren="false">
+			<GlobalClassListener classes="gShopOpen" />
 			<Panel id="respawn_timer">
 				<Panel class="respawn_timer_container">
 					<Panel class="respawn_timer_col_left">
-						<Label class="respawn_text" text="Respawn in:" />
+						<Label class="respawn_text" text="#Citadel_Hud_RespawnIn" />
 					</Panel>
 					<Panel class="respawn_timer_col_right">
 						<Label class="respawn_number" text="{s:respawn_timer}" />
@@ -195,11 +196,11 @@
 			</Panel>
 			<Panel id="citadel_ability_zip_line" class="action_zip_line context_action">
 				<Panel id="zipline_sign" />
-				<Label class="action_binding" text="HOLD [ {s:jump_key} ] to Ride" html="true" />
+				<Label class="action_binding" text="#Citadel_Hud_RideZipLine" html="true" />
 			</Panel>
 			<Panel class="action_capture_zip_line context_action">
 				<Image class="context_action_icon" scaling="stretch-to-fit-preserve-aspect" src="s2r://panorama/images/hud/capture_zipline_icon_psd.vtex" />
-				<Label class="action_binding" text="HOLD {s:use_key}" html="true" />
+				<Label class="action_binding" text="#Citadel_Hud_CaptureZipLine" html="true" />
 			</Panel>
 			<Panel class="action_teleport context_action">
 				<Image class="context_action_icon" scaling="stretch-to-fit-preserve-aspect" src="s2r://panorama/images/hud/teleport_icon_psd.vtex" />
@@ -211,16 +212,16 @@
 			</Panel>
 			<Panel class="action_upgrade context_action">
 				<Image id="shop_sign" scaling="stretch-to-fit-preserve-aspect" src="s2r://panorama/images/shop/shop_logo_ui_psd.vtex" />
-				<Label class="action_binding" text="Press [ {s:upgrade_key} ] to Shop" html="true" />
+				<Label class="action_binding" text="#Citadel_Hud_OpenShop" html="true" />
 			</Panel>
 		</Panel>
 		<CitadelHudPersonalBest />
 		<CitadelHudHeroTesting id="hud_hero_testing" />
 		<CitadelHudSandboxTutorial id="hud_sandbox_tutorial" hittest="false" />
 		<Panel id="death_replay_loading">
-			<Label text="Loading death replay" />
+			<Label text="#Citadel_Hud_LoadingDeathReplay" />
 		</Panel>
-		<Label id="clientserver_stats" text="MATCH: {i:match_id}\nCLIENT FPS:{i:client_framerate}   PING: {i:ping}ms\nSERVER CPU: {i:server_frametime_avg_pct}% (peak: {i:server_frametime_max_pct}%)" />
+		<Label id="clientserver_stats" text="#Citadel_Hud_DebugStats" />
 		<Panel id="mispredict_indicator" />
 		<CitadelHudAbilityResource id="ability_resource" />
 		<Panel id="AbilityPanelsContainer" onactivate="" hittest="false" hittestchildren="false">
@@ -230,25 +231,26 @@
 			<CitadelAbilityDetailsPanel id="AbilityDetailsPanel4" class="abilityDetailsPanels" ability_slot="4" />
 		</Panel>
 		<CitadelHudHeroShop id="CitadelHudHeroShop" />
+		<CitadelHudHeroBuilds id="CitadelHudHeroBuilds" hittest="false" />
 		<CitadelHudDamageReport id="CitadelHudDamageReport" />
 		<Panel id="StatsAndModsContainer" hittest="false">
-			<Panel id="LowerLeft">
+			<GlobalClassListener id="DamageReportGlobalClassListener" classes="gBrowsingBuilds gEditingBuilds gShopOpen" />
+			<Panel id="LowerLeft" hittest="false">
 				<CitadelHudSoulAPContainer id="gold_and_ap_container" />
-				<CitadelHeroStats id="HeroStats" />
-				<Panel class="ModsContainer">
-					<Panel class="ModSection WeaponMods">
+				<Panel class="ModsContainer" hittest="false">
+					<Panel class="ModSection WeaponMods" hittest="false">
 						<Label class="ModTypeLabel" text="#CitadelCategoryWeapon" />
 						<CitadelModsPurchasedPanel id="ModPurchasedPanelWeapon" class="mod_weapon modsButton" mod_category="Weapon" show_cooldowns="true" show_spectating_player_items="true" />
 					</Panel>
-					<Panel class="ModSection ArmorMods">
+					<Panel class="ModSection ArmorMods" hittest="false">
 						<Label class="ModTypeLabel" text="#CitadelCategoryArmor" />
 						<CitadelModsPurchasedPanel id="ModPurchasedPanelArmor" class="mod_armor modsButton" mod_category="Armor" show_cooldowns="true" show_spectating_player_items="true" />
 					</Panel>
-					<Panel class="ModSection TechMods">
+					<Panel class="ModSection TechMods" hittest="false">
 						<Label class="ModTypeLabel" text="#CitadelCategoryTech" />
 						<CitadelModsPurchasedPanel id="ModPurchasedPanelTech" class="mod_tech modsButton" mod_category="Tech" show_cooldowns="true" show_spectating_player_items="true" />
 					</Panel>
-					<Panel class="ModSection FlexMods">
+					<Panel class="ModSection FlexMods" hittest="false">
 						<Label class="ModTypeLabel" text="#CitadelCategoryFlex" />
 						<CitadelModsPurchasedPanel id="ModPurchasedPanelUniversal" class="mod_universal modsButton" mod_category="Locked Universal" show_cooldowns="true" show_spectating_player_items="true" />
 					</Panel>
@@ -259,7 +261,7 @@
 		<CitadelPaused id="PausedInfo" class="VisGroup_Top" />
 		<Panel id="deathReplayNoticeLower" class="deathReplayBar" />
 		<Panel id="deathReplayNoticeUpper" class="deathReplayBar">
-			<Label text="DEATH CAM" />
+			<Label text="#Citadel_Hud_DeathCam" />
 		</Panel>
 		<CitadelHudModifierHistory id="hud_modifier_history" />
 		<Panel id="hero_pos_debug" hittest="false">

@@ -4,7 +4,6 @@
 	Module 2 - %s
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
@@ -53,7 +52,6 @@
 !IsInternalTypeShortArray( Internal_Type() )
 !IsSingleFieldRestricted()
 !bExists
-!bLooksLikeABug
 !bSelfIsGlobal || !bSelfIsLocal
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
@@ -73,6 +71,8 @@
 %s #%d: '%s'/'%s': %d != %d
 %s #%d: '%s'/'%s': '%s' != '%s'
 %s %s bindings with metadata (out of %s); %s total metadata items; %s unique metadata names
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s Schema Type: %s
 %s bytes in static binding info
 %s registrations; %s were redundant; %s were ignored (%s bytes of ignored data)
@@ -104,8 +104,6 @@
 &YA1E
 &YA1H
 ',=?k
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
 (%d,%d)
@@ -121,9 +119,6 @@
 (intp)this % 8 == 0
 (layout)
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$0H
 (t$PH
 (uint32)SCHEMA_GET_PROJECT_TYPE_INDEX( pField->m_pTypePtr ) < (uint32)nProjectTypeTableSize
@@ -145,6 +140,7 @@
 ,YA1A
 ----------------------------------------------------------------------------------------------------------
 -DANGER_MODE_ignore_schema_mismatches
+-SEu_xR8
 -schema_check_local_cross_depend
 -sse2
 -sse3
@@ -240,6 +236,7 @@
 .xJ>Hf
 .xdata
 .xdata$x
+.}F~B?~Y
 />58d%
 0A]A\^
 0A^^[
@@ -263,12 +260,13 @@
 0}0i1
 130801120000Z
 1<.	/>:
+1T`\A
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240723235013Z0/
+240801161802Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -298,7 +296,6 @@
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8Y#v-H
-9	V_qsort
 9)~P3
 93t1H
 93tdH
@@ -306,9 +303,9 @@
 9>~ZH
 9t$8u
 9t$@u
-:	V_qsort_s
 ;H9>&X
 ;I9}(tiH
+<	V_qsort
 < %d >
 < t=<	t9
 <%s : %u>
@@ -316,12 +313,12 @@
 <0:08
 <No schema binary for binding>
 <No schemasystem>
-<VRi,
 <empty member name>
 <invalid>
 <no failure reason set>
 <unknown: %d>
 <unknown>
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
@@ -507,7 +504,6 @@ C:\buildworker\citadel_rel_win64\build\_build_\resourcefile\_vpc_resourcefile\de
 C:\buildworker\citadel_rel_win64\build\_build_\schemasystem\_vpc_schemasystem\default\win64\_msvc_\Retail\schemasystem.pdb
 C:\buildworker\citadel_rel_win64\build\_build_\schemasystem\_vpc_schemasystem\default\win64\_schema_\release\internalregistration_h_schema.sc.cc
 C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaclassinfo.h
 C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schematype.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\concommand.h
@@ -592,11 +588,6 @@ CKeyValues3Table::Free
 CKeyValues3Table::MemberData
 CMemAllocSystemInitialize
 CMotionTransform
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPanoramaImageName
 CPlayerSlot
 CResourceArray
@@ -854,7 +845,6 @@ CmdLinkA
 CmdLinkAH
 Color
 CommandLine
-Construction is only allowed from the resolve function
 ConvertOldIntrospectedResourceDataToKV3 - Bad arguments!
 ConvertOldIntrospectedResourceDataToKV3 - No introspection dictionary!
 ConvertOldIntrospectedResourceDataToKV3 - No root struct
@@ -893,7 +883,6 @@ December
 DegreeEuler
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DialogBoxParamA
 DigiCert Assured ID Root CA0
 DigiCert Inc1
@@ -934,6 +923,7 @@ ERROR: Schema registration error - class '%s' is not marked as MModuleLocalTypeS
 ERROR: Schema registration error - class '%s' is not marked as MModuleLocalTypeScope but derives from locally-scoped class '%s'
 ERROR: Schema registration error - subclass '%s' registered before base class '%s'
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 Encountered struct '%s' without expected field '%s' during conversion process!
@@ -1097,7 +1087,6 @@ GameResourceServiceServerV001
 GameUIService_001
 GetACP
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -1136,7 +1125,6 @@ H!D$ I
 H!T$0D
 H-^Eu
 H9(tO
-H95$U
 H97u+A
 H98t2
 H9D$H
@@ -1187,7 +1175,6 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CExampl
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CExampleSchemaVData_PolymorphicDerivedB)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CSchemaSystemInternalRegistration)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be ResourceId_t)
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Invalid
@@ -1210,8 +1197,6 @@ KV3TransferSchema_ClassName::<lambda_1>::operator ()
 KeyValueCache001
 KeyValues
 KeyValues3
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::FindOrCreateMember
 KeyValues3::GetArrayElement
 KeyValues3::GetArrayElementCount
@@ -1329,9 +1314,7 @@ October
 Offset
 Opaque Indirection
 OpaqueType
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
+Oqw[f
 OuterOffset
 PA^_^
 PA_A^A]A\_^]
@@ -1344,10 +1327,10 @@ PanoramaUIEngine001
 ParticleSystemMgr003
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_GetModuleProcAddress
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_IsInTestMode
 Plat_LoadModule
@@ -1462,7 +1445,6 @@ SteamAudio001
 Struct
 Structure name collision: '%s' and '%s' (%d)
 Sunday
-T	V_stricmp_fast
 T$0fD
 T$8Hc
 T$PE3
@@ -1570,6 +1552,7 @@ Vector4D
 VectorAligned
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: SchemaSystem tried to load schema data for module '%s' but InstallSchemaBindings returned false.
 WARNING: SchemaSystem tried to load schema data for module '%s' but failed to load the module.
@@ -1588,6 +1571,7 @@ WorldGroupId_t
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
+X]i#t4 Wx
 Y9"SD
 [K]taM?
 [fA9<
@@ -1648,6 +1632,7 @@ _not_pickable
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
+`hE%bC
 `local static guard'
 `local static thread guard'
 `local vftable constructor closure'
@@ -1685,7 +1670,6 @@ argument list too long
 argument out of domain
 array
 bAllocationCanFit
-bLegalTypeChange
 bad address
 bad exception
 bad file descriptor
@@ -1773,6 +1757,7 @@ invalid_parameter
 io error
 is a directory
 it.GetFieldMemoryOffset() >= (uint32)nSizeofPtr || ( it.GetTypeAs<CSchemaType_Bitfield>() != nullptr )
+jZF'W
 jj@0HK4
 k0i0$
 l$ HcA
@@ -1796,6 +1781,7 @@ l$hE3
 l$pu3M
 l$xE3
 l2|X/gGe
+lC1;F
 loadedModules.Count() == nNumModules
 log10
 m0k0$
@@ -1935,7 +1921,6 @@ pInfo
 pIntrospection->GetAlignOf() != 0
 pIntrospection->GetSizeOf() != 0
 pLoadFromMember
-pMemory[i] == 0
 pMeta
 pParam1->m_pTypeScope == m_pParentScope
 pParam1->m_pTypeScope == this || pParam1->m_pTypeScope == m_pParentScope

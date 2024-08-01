@@ -40,6 +40,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -612,6 +613,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 	}
 	hero_inferno = 
 	{
@@ -651,6 +699,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -1227,6 +1276,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
@@ -1248,6 +1344,8 @@
 		[
 			"upgrade_clip_size",
 			"upgrade_endurance",
+			"upgrade_rapid_rounds",
+			"upgrade_improved_spirit",
 			"upgrade_resilience",
 			"upgrade_magic_vulnerability",
 			"upgrade_quick_silver",
@@ -1255,9 +1353,9 @@
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
 			"upgrade_tech_defense_shredders",
-			"upgrade_chonky",
+			"upgrade_soaring_spirit",
 			"upgrade_toxic_bullets",
-			"upgrade_escalating_exposure",
+			"upgrade_damage_recycler",
 			"upgrade_ricochet",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/inferno.vmap"
@@ -1301,6 +1399,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 0.750000
 			EBulletArmorDamageReduction = 8.000000
 		}
 		m_flCollisionRadius = 20
@@ -1883,6 +1982,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 1.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
@@ -1961,21 +2107,21 @@
 		[
 			"upgrade_non_player_bonus",
 			"upgrade_resilience",
-			"upgrade_magic_reach",
 			"upgrade_improved_spirit",
-			"upgrade_magic_vulnerability",
-			"upgrade_tech_armor",
-			"upgrade_health_stealing_magic",
+			"upgrade_magic_reach",
 			"upgrade_tech_defense_shredders",
+			"upgrade_health_stealing_magic",
+			"upgrade_tech_armor",
 			"upgrade_bullet_armor",
+			"upgrade_magic_vulnerability",
 			"upgrade_suppressor",
 			"upgrade_rocket_booster",
+			"upgrade_chain_lightning",
 			"upgrade_magic_slow",
 			"upgrade_soaring_spirit",
 			"upgrade_tech_purge",
-			"upgrade_chain_lightning",
-			"upgrade_escalating_exposure",
 			"upgrade_damage_recycler",
+			"upgrade_escalating_exposure",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/gigawatt_vertical.psd"
 	}
@@ -2017,6 +2163,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 			EBulletArmorDamageReduction = -10.000000
 		}
 		m_flCollisionRadius = 20
@@ -2592,13 +2739,60 @@
 		}
 		m_mapStandardLevelUpUpgrades = 
 		{
-			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.850000
+			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 1.000000
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 20.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
@@ -2621,17 +2815,17 @@
 			"upgrade_endurance",
 			"upgrade_hollow_point_rounds",
 			"upgrade_headshot_booster",
+			"upgrade_improved_spirit",
 			"upgrade_extra_charge",
 			"upgrade_long_range",
 			"upgrade_slowing_bullets",
-			"upgrade_improved_spirit",
 			"upgrade_magic_shield",
 			"upgrade_regenerating_bullet_shield",
 			"upgrade_quick_silver",
-			"upgrade_soaring_spirit",
+			"upgrade_sharpshooter",
 			"upgrade_rapid_recharge",
 			"upgrade_chonky",
-			"upgrade_sharpshooter",
+			"upgrade_soaring_spirit",
 			"upgrade_critshot",
 			"upgrade_mega_spirit",
 			"upgrade_silencer",
@@ -2661,7 +2855,7 @@
 		m_mapStartingStats = 
 		{
 			EMaxMoveSpeed = 6
-			ESprintSpeed = 2
+			ESprintSpeed = 1
 			ECrouchSpeed = 4.750000
 			EMoveAcceleration = 4
 			ELightMeleeDamage = 63
@@ -2676,6 +2870,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -3252,6 +3447,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/spectre.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/spectre_sm.psd"
@@ -3268,13 +3510,13 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/geist.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_resilience",
-			"upgrade_magic_burst",
-			"upgrade_magic_reach",
-			"upgrade_headshot_booster",
 			"upgrade_medic_bullets",
-			"upgrade_tech_defense_shredders",
+			"upgrade_headshot_booster",
+			"upgrade_magic_burst",
+			"upgrade_resilience",
+			"upgrade_magic_reach",
 			"upgrade_crackshot",
+			"upgrade_tech_defense_shredders",
 			"upgrade_bullet_armor",
 			"upgrade_healbane",
 			"upgrade_tech_armor",
@@ -3325,6 +3567,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -3845,6 +4088,7 @@
 				},
 			]
 			m_eWeaponStatDisplay = "EMeleeDamage_DEPRECATED"
+			m_eWeaponType = "ECitadelWeapon_Invalid"
 		}
 		m_mapScalingStats = 
 		{
@@ -3901,6 +4145,54 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+				m_eWeaponAttributes = "EWeaponAttribute_ShortRange"
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/bull.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/bull_sm.psd"
@@ -3919,15 +4211,15 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/bull_hud.psd"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_health",
 			"upgrade_close_range",
 			"upgrade_lifestrike_gauntlets",
+			"upgrade_health",
 			"upgrade_berserker",
-			"upgrade_close_quarter_combat",
 			"upgrade_cold_front",
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
 			"upgrade_chonky",
+			"upgrade_close_quarter_combat",
 			"upgrade_improved_bullet_armor",
 			"upgrade_tech_purge",
 			"upgrade_bullet_armor_reduction_aura",
@@ -3975,6 +4267,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -4556,13 +4849,60 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
 		m_strSelectionImage = panorama:"file://{images}/heroes/wraith.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/wraith_sm.psd"
 		m_strMinimapImage = panorama:"file://{images}/heroes/wraith_mm.psd"
-		m_strWIPModelName = resource_name:"models/heroes_staging/wraith_gen_man/wraith_gen_man.vmdl"
+		m_strWIPModelName = resource_name:"models/heroes_staging/wraith/wraith.vmdl"
 		m_strUIAnimGraph = resource_name:"models/heroes_staging/wraith_gen_man/ui_wraith_gen_man.vanmgrph"
 		m_strDeathSound = soundevent:"Player.DeathFemale"
 		m_hGameSoundEventScript = resource_name:"soundevents/hero/wraith.vsndevts"
@@ -4575,18 +4915,18 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/wraith.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_non_player_bonus",
-			"upgrade_clip_size",
 			"upgrade_endurance",
+			"upgrade_clip_size",
+			"upgrade_non_player_bonus",
 			"upgrade_vampire",
 			"upgrade_slowing_bullets",
-			"upgrade_bullet_resist_shredder",
-			"upgrade_quick_silver",
 			"upgrade_magic_shield",
 			"upgrade_regenerating_bullet_shield",
+			"upgrade_bullet_resist_shredder",
+			"upgrade_quick_silver",
 			"upgrade_chain_lightning",
-			"upgrade_chonky",
 			"upgrade_bullet_armor_reduction_aura",
+			"upgrade_chonky",
 			"upgrade_critshot",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/wraith_vertical.psd"
@@ -4621,8 +4961,8 @@
 			ESprintSpeed = 0
 			ECrouchSpeed = 4.750000
 			EMoveAcceleration = 4
-			ELightMeleeDamage = 50
-			EHeavyMeleeDamage = 93
+			ELightMeleeDamage = 63
+			EHeavyMeleeDamage = 116
 			EMaxHealth = 550
 			EWeaponPower = 0
 			EReloadSpeed = 1
@@ -4633,6 +4973,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 			ETechArmorDamageReduction = 25.000000
 		}
 		m_flCollisionRadius = 20
@@ -5210,6 +5551,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
@@ -5228,23 +5616,24 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/engineer_hud.psd"
 		m_RecommendedUpgrades = 
 		[
+			"upgrade_extra_charge",
+			"upgrade_rapid_rounds",
+			"upgrade_resilience",
+			"upgrade_improved_stamina",
 			"upgrade_sprint_booster",
 			"upgrade_magic_reach",
-			"upgrade_extra_charge",
-			"upgrade_resilience",
-			"upgrade_magic_vulnerability",
-			"upgrade_improved_stamina",
-			"upgrade_magic_tempo",
 			"upgrade_fleetfoot_boots",
-			"upgrade_tech_armor",
-			"upgrade_chain_lightning",
+			"upgrade_magic_tempo",
+			"upgrade_bullet_armor",
 			"upgrade_magic_shield",
+			"upgrade_magic_vulnerability",
+			"upgrade_chain_lightning",
 			"upgrade_rapid_recharge",
-			"upgrade_cooldown_reduction",
-			"upgrade_escalating_exposure",
-			"upgrade_magic_slow",
 			"upgrade_dps_aura",
+			"upgrade_magic_slow",
+			"upgrade_cooldown_reduction",
 			"upgrade_ability_power_shard",
+			"upgrade_escalating_exposure",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/forge.vmap"
 		m_strTopBarVertical = panorama:"file://{images}/heroes/engineer_vertical.psd"
@@ -5287,6 +5676,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -5863,6 +6253,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/chrono.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/chrono_sm.psd"
@@ -5930,6 +6367,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -6511,6 +6949,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
@@ -6529,9 +7014,9 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/sumo_hud.psd"
 		m_RecommendedUpgrades = 
 		[
+			"upgrade_hollow_point_rounds",
 			"upgrade_clip_size",
 			"upgrade_magic_reach",
-			"upgrade_hollow_point_rounds",
 			"upgrade_healing_booster",
 			"upgrade_arcane_extension",
 			"upgrade_magic_tempo",
@@ -6583,6 +7068,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 			ETechArmorDamageReduction = 10.000000
 		}
 		m_flCollisionRadius = 20
@@ -7160,6 +7646,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
@@ -7181,8 +7714,8 @@
 			"upgrade_medic_bullets",
 			"upgrade_close_range",
 			"upgrade_magic_burst",
-			"upgrade_resilience",
 			"upgrade_extra_charge",
+			"upgrade_resilience",
 			"upgrade_berserker",
 			"upgrade_crackshot",
 			"upgrade_healing_booster",
@@ -7234,6 +7767,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -7815,6 +8349,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
@@ -7833,18 +8414,18 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/haze_hud.psd"
 		m_RecommendedUpgrades = 
 		[
+			"upgrade_endurance",
 			"upgrade_clip_size",
 			"upgrade_improved_spirit",
-			"upgrade_endurance",
 			"upgrade_vampire",
 			"upgrade_slowing_bullets",
 			"upgrade_blitz_bullets",
 			"upgrade_regenerating_bullet_shield",
 			"upgrade_magic_shield",
+			"upgrade_burst_fire",
 			"upgrade_bullet_armor_reduction_aura",
 			"upgrade_chonky",
 			"upgrade_inhibitor",
-			"upgrade_armor_reduction_debuff",
 			"upgrade_silencer",
 			"upgrade_critshot",
 		]
@@ -7890,6 +8471,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -8466,6 +9048,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/astro.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/astro_sm.psd"
@@ -8521,6 +9150,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -9094,9 +9724,56 @@
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 41.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
-			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 2.000000
+			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 2.500000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
@@ -9116,19 +9793,19 @@
 		m_RecommendedUpgrades = 
 		[
 			"upgrade_clip_size",
-			"upgrade_improved_spirit",
-			"upgrade_non_player_bonus",
-			"upgrade_sprint_booster",
-			"upgrade_acolytes_glove",
 			"upgrade_endurance",
 			"upgrade_magic_burst",
+			"upgrade_non_player_bonus",
+			"upgrade_acolytes_glove",
+			"upgrade_improved_spirit",
+			"upgrade_sprint_booster",
 			"upgrade_soaring_spirit",
-			"upgrade_tech_armor",
 			"upgrade_tech_defense_shredders",
 			"upgrade_blitz_bullets",
+			"upgrade_tech_armor",
+			"upgrade_magic_shock",
 			"upgrade_intensifying_clip",
 			"upgrade_chonky",
-			"upgrade_magic_shock",
 			"upgrade_mega_spirit",
 		]
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/bebop.vmap"
@@ -9173,6 +9850,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -9749,6 +10427,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/nano.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/nano_sm.psd"
@@ -9825,6 +10550,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -10406,6 +11132,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = true
 		m_bLaneTestingRecommended = true
@@ -10426,18 +11199,18 @@
 		[
 			"upgrade_hollow_point_rounds",
 			"upgrade_endurance",
-			"upgrade_improved_spirit",
-			"upgrade_extra_charge",
 			"upgrade_magic_burst",
+			"upgrade_extra_charge",
+			"upgrade_improved_spirit",
 			"upgrade_sprint_booster",
 			"upgrade_crackshot",
 			"upgrade_long_range",
 			"upgrade_regenerating_bullet_shield",
-			"upgrade_tech_defense_shredders",
-			"upgrade_soaring_spirit",
 			"upgrade_magic_shield",
-			"upgrade_rapid_recharge",
+			"upgrade_tech_defense_shredders",
 			"upgrade_magic_shock",
+			"upgrade_rapid_recharge",
+			"upgrade_soaring_spirit",
 			"upgrade_magic_storm",
 			"upgrade_sharpshooter",
 			"upgrade_mega_spirit",
@@ -10483,6 +11256,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 28
 		m_flCollisionHeight = 80
@@ -11059,6 +11833,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_bNewPlayerRecommended = false
 		m_bLaneTestingRecommended = false
@@ -11076,19 +11897,19 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/digger_hud.psd"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_sprint_booster",
 			"upgrade_medic_bullets",
 			"upgrade_magic_burst",
 			"upgrade_close_range",
-			"upgrade_magic_vulnerability",
+			"upgrade_sprint_booster",
+			"upgrade_fleetfoot_boots",
 			"upgrade_berserker",
 			"upgrade_cardio_calibrator",
 			"upgrade_healing_booster",
 			"upgrade_tech_armor",
 			"upgrade_bullet_armor",
-			"upgrade_fleetfoot_boots",
-			"upgrade_improved_bullet_armor",
+			"upgrade_magic_vulnerability",
 			"upgrade_tech_damage_pulse",
+			"upgrade_improved_bullet_armor",
 			"upgrade_tech_purge",
 			"upgrade_phantom_strike",
 		]
@@ -11133,6 +11954,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 			ETechArmorDamageReduction = 10.000000
 		}
 		m_flCollisionRadius = 20
@@ -11711,6 +12533,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_Blood"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/shiv.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/shiv_sm.psd"
@@ -11793,6 +12662,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -12369,6 +13239,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/tengu.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/tengu_sm.psd"
@@ -12386,14 +13303,16 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/tengu.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_non_player_bonus",
 			"upgrade_health_stimpak",
+			"upgrade_clip_size",
+			"upgrade_non_player_bonus",
+			"upgrade_health_nova",
+			"upgrade_healing_booster",
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
-			"upgrade_healing_booster",
-			"upgrade_health_nova",
 			"upgrade_magic_tempo",
 			"upgrade_chain_lightning",
+			"upgrade_titan_round",
 			"upgrade_chonky",
 			"upgrade_banshee_slugs",
 			"upgrade_inhibitor",
@@ -12443,6 +13362,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -13019,6 +13939,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/kali.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/kali_sm.psd"
@@ -13070,6 +14037,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -13656,6 +14624,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/warden.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/warden_sm.psd"
@@ -13672,12 +14687,12 @@
 		m_strTopBarImage = panorama:"file://{images}/hud/hero_portraits/warden_hud.psd"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_non_player_bonus",
-			"upgrade_close_range",
-			"upgrade_magic_reach",
 			"upgrade_endurance",
-			"upgrade_berserker",
+			"upgrade_close_range",
+			"upgrade_non_player_bonus",
+			"upgrade_magic_reach",
 			"upgrade_fleetfoot_boots",
+			"upgrade_berserker",
 			"upgrade_cardio_calibrator",
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
@@ -13730,6 +14745,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -14300,13 +15316,60 @@
 		}
 		m_mapStandardLevelUpUpgrades = 
 		{
-			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.400000
+			MODIFIER_VALUE_BASE_BULLET_DAMAGE_FROM_LEVEL = 0.500000
 			MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 3.400000
 			MODIFIER_VALUE_BASE_HEALTH_FROM_LEVEL = 31.000000
 			MODIFIER_VALUE_TECH_DAMAGE_PERCENT = 0.000000
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/yamato.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/yamato_sm.psd"
@@ -14323,23 +15386,25 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/yamato.vmap"
 		m_RecommendedUpgrades = 
 		[
+			"upgrade_endurance",
 			"upgrade_close_range",
 			"upgrade_headshot_booster",
-			"upgrade_endurance",
-			"upgrade_resilience",
 			"upgrade_magic_burst",
 			"upgrade_improved_spirit",
+			"upgrade_resilience",
 			"upgrade_cold_front",
 			"upgrade_crackshot",
+			"upgrade_tech_defense_shredders",
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
-			"upgrade_tech_defense_shredders",
-			"upgrade_tech_damage_pulse",
+			"upgrade_healbane",
 			"upgrade_magic_shock",
+			"upgrade_tech_damage_pulse",
 			"upgrade_soaring_spirit",
 			"upgrade_close_quarter_combat",
 			"upgrade_fervor",
 			"upgrade_mega_spirit",
+			"upgrade_ability_refresher",
 		]
 		m_strTopBarVertical = panorama:"file://{images}/heroes/yamato_vertical.psd"
 	}
@@ -14366,7 +15431,7 @@
 		m_mapStartingStats = 
 		{
 			EMaxMoveSpeed = 7
-			ESprintSpeed = 3
+			ESprintSpeed = 1
 			ECrouchSpeed = 4.750000
 			EMoveAcceleration = 4
 			ELightMeleeDamage = 63
@@ -14381,6 +15446,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 			ETechArmorDamageReduction = 8.000000
 		}
 		m_flCollisionRadius = 20
@@ -14958,6 +16024,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/lash_sm.psd"
 		m_strMinimapImage = panorama:"file://{images}/heroes/lash_mm.psd"
@@ -14972,15 +16085,16 @@
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/lash.vmap"
 		m_RecommendedUpgrades = 
 		[
-			"upgrade_sprint_booster",
 			"upgrade_magic_burst",
-			"upgrade_magic_reach",
 			"upgrade_non_player_bonus",
 			"upgrade_close_range",
 			"upgrade_extra_charge",
+			"upgrade_sprint_booster",
+			"upgrade_magic_reach",
 			"upgrade_cold_front",
 			"upgrade_bullet_armor",
 			"upgrade_tech_armor",
+			"upgrade_superior_stamina",
 			"upgrade_rapid_recharge",
 			"upgrade_tech_range",
 			"upgrade_magic_shock",
@@ -14994,8 +16108,8 @@
 		_class = "CitadelHeroData_t"
 		m_bPlayerSelectable = true
 		m_bDisabled = false
-		m_bInDevelopment = true
-		m_bNeedsTesting = true
+		m_bInDevelopment = false
+		m_bNeedsTesting = false
 		m_bAssignedPlayersOnly = false
 		m_bBotSelectable = false
 		m_bLimitedTesting = false
@@ -15027,6 +16141,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -15043,11 +16158,10 @@
 			ESlot_Ability_Innate_1 = "citadel_ability_dash"
 			ESlot_Ability_Innate_2 = "citadel_ability_sprint"
 			ESlot_Ability_Innate_3 = "citadel_ability_melee_parry"
-			ESlot_Weapon_Secondary = "citadel_weapon_viscous_alt"
 			ESlot_Signature_1 = "viscous_goo_grenade"
 			ESlot_Signature_2 = "viscous_restorative_goo"
 			ESlot_Signature_3 = "viscous_telepunch"
-			ESlot_Signature_4 = "viscous_goo_puddle"
+			ESlot_Signature_4 = "viscous_goo_bowling_ball"
 		}
 		m_mapItemSlotInfo = 
 		{
@@ -15604,6 +16718,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/viscous.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/viscous_sm.psd"
@@ -15611,6 +16772,9 @@
 		m_strUIAnimGraph = resource_name:"models/heroes_staging/viscous/ui_viscous.vanmgrph"
 		m_strDeathSound = soundevent:"Viscous.Death"
 		m_strWIPModelName = resource_name:"models/heroes_staging/viscous_v2/viscous.vmdl"
+		m_mapWIPAbilities = 
+		{
+		}
 		m_hGameSoundEventScript = resource_name:"soundevents/hero/viscous.vsndevts"
 		m_hVOEventScript = resource_name:"soundevents/vo/vo_hero_viscous.vsndevts"
 		m_strRosterSelectedSound = soundevent:"Viscous.VO.HeroPick"
@@ -15620,6 +16784,25 @@
 		m_strTopBarVertical = panorama:"file://{images}/heroes/viscous_vertical.psd"
 		m_strUIPortraitMap = "maps/ui/hero_prefabs/viscous.vmap"
 		m_hGeneratedVOEventScript = resource_name:"soundevents/vo/generated_vo_hero_viscous.vsndevts"
+		m_RecommendedUpgrades = 
+		[
+			"upgrade_non_player_bonus",
+			"upgrade_magic_burst",
+			"upgrade_resilience",
+			"upgrade_extra_charge",
+			"upgrade_improved_spirit",
+			"upgrade_berserker",
+			"upgrade_healing_booster",
+			"upgrade_bullet_armor",
+			"upgrade_tech_armor",
+			"upgrade_magic_shock",
+			"upgrade_rapid_recharge",
+			"upgrade_tech_damage_pulse",
+			"upgrade_magic_reach",
+			"upgrade_soaring_spirit",
+			"upgrade_tech_purge",
+			"upgrade_critshot",
+		]
 	}
 	hero_gunslinger = 
 	{
@@ -15659,6 +16842,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -16235,6 +17419,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/gunslinger.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/gunslinger_sm.psd"
@@ -16283,6 +17514,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -16859,6 +18091,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/yakuza.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/yakuza_sm.psd"
@@ -16907,6 +18186,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -17483,6 +18763,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/genericperson.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/genericperson_sm.psd"
@@ -17530,6 +18857,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -18106,6 +19434,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/tokamak.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/tokamak_sm.psd"
@@ -18155,6 +19530,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -18731,6 +20107,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/wrecker.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/wrecker_sm.psd"
@@ -18810,6 +20233,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -19386,6 +20810,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strIconHeroCard = panorama:"file://{images}/heroes/rutger_card.psd"
 		m_strMinimapImage = panorama:"file://{images}/heroes/rutger_mm.psd"
@@ -19435,6 +20906,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 			EBulletArmorDamageReduction = -15.000000
 		}
 		m_flCollisionRadius = 20
@@ -20012,6 +21484,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strIconHeroCard = panorama:"file://{images}/heroes/synth_card.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/synth_sm.psd"
@@ -20030,22 +21549,22 @@
 		m_RecommendedUpgrades = 
 		[
 			"upgrade_health_stimpak",
-			"upgrade_resilience",
 			"upgrade_magic_burst",
 			"upgrade_close_range",
-			"upgrade_crackshot",
+			"upgrade_resilience",
 			"upgrade_improved_spirit",
+			"upgrade_crackshot",
 			"upgrade_tech_defense_shredders",
 			"upgrade_magic_shield",
 			"upgrade_regenerating_bullet_shield",
 			"upgrade_suppressor",
 			"upgrade_magic_vulnerability",
-			"upgrade_soaring_spirit",
 			"upgrade_rocket_booster",
-			"upgrade_magic_slow",
 			"upgrade_magic_shock",
-			"upgrade_escalating_exposure",
+			"upgrade_soaring_spirit",
+			"upgrade_magic_slow",
 			"upgrade_mega_spirit",
+			"upgrade_escalating_exposure",
 		]
 	}
 	hero_thumper = 
@@ -20086,6 +21605,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -20662,6 +22182,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/thumper.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/thumper_sm.psd"
@@ -20710,6 +22277,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -21286,6 +22854,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/mirage.psd"
 		m_strIconHeroCard = panorama:"file://{images}/heroes/mirage_card.psd"
@@ -21365,6 +22980,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -21942,6 +23558,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/slork.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/slork_sm.psd"
@@ -21993,6 +23656,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -22569,6 +24233,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/cadence.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/cadence_sm.psd"
@@ -22618,6 +24329,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -23194,6 +24906,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strSelectionImage = panorama:"file://{images}/heroes/targetdummy.psd"
 		m_strIconImageSmall = panorama:"file://{images}/heroes/targetdummy_sm.psd"
@@ -23242,6 +25001,7 @@
 			EStaminaRegenPerSecond = 0.200000
 			EAbilityResourceMax = 0
 			EAbilityResourceRegenPerSecond = 0
+			ECritDamageReceivedScale = 1.000000
 		}
 		m_flCollisionRadius = 20
 		m_flCollisionHeight = 80
@@ -23818,6 +25578,53 @@
 			MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST = 0.000000
 		}
 		m_eAbilityResourceType = "EResourceType_None"
+		m_ShopStatDisplay = 
+		{
+			m_eWeaponStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EBulletDamage",
+					"EReloadSpeed",
+					"EClipSize",
+					"EFireRate",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"ELightMeleeDamage",
+					"EHeavyMeleeDamage",
+					"EBulletLifesteal",
+				]
+			}
+			m_eVitalityStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"EMaxHealth",
+					"EBaseHealthRegen",
+					"EBulletArmorDamageReduction",
+					"ETechArmorDamageReduction",
+					"EBulletShieldHealth",
+					"ETechShieldHealth",
+				]
+				m_vecOtherDisplayStats = 
+				[
+					"EMaxMoveSpeed",
+					"ESprintSpeed",
+					"EStamina",
+				]
+			}
+			m_eSpiritStatsDisplay = 
+			{
+				m_vecDisplayStats = 
+				[
+					"ETechCooldown",
+					"ETechDuration",
+					"ETechRange",
+					"ETechLifesteal",
+				]
+			}
+		}
 		_base = "hero_base"
 		m_strDeathSound = soundevent:"Nano.Death"
 	}

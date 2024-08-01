@@ -31,6 +31,7 @@
 			"sounds/ui/ui_get_gold_10.vsnd",
 			"sounds/ui/ui_get_gold_11.vsnd",
 		]
+		vsnd_duration = 1.505782
 	}
 	CurrencyChanged.Large = 
 	{
@@ -52,6 +53,7 @@
 			"sounds/ui/ui_get_gold_large_03.vsnd",
 			"sounds/ui/ui_get_gold_large_04.vsnd",
 		]
+		vsnd_duration = 2.286485
 	}
 	Player.GetGold = 
 	{
@@ -77,6 +79,7 @@
 			"sounds/ui/ui_get_gold_10.vsnd",
 			"sounds/ui/ui_get_gold_11.vsnd",
 		]
+		vsnd_duration = 1.505782
 	}
 	Player.ClaimOrb = 
 	{
@@ -94,6 +97,7 @@
 			"sounds/gameplay/orbs/xp_orbs_acquire_06.vsnd",
 			"sounds/gameplay/orbs/xp_orbs_acquire_07.vsnd",
 		]
+		vsnd_duration = 1.867302
 	}
 	Player.Deny = 
 	{
@@ -109,6 +113,7 @@
 			"sounds/gameplay/orbs/xp_orbs_acquire_06.vsnd",
 			"sounds/gameplay/orbs/xp_orbs_acquire_07.vsnd",
 		]
+		vsnd_duration = 1.867302
 	}
 	Player.Denied = 
 	{
@@ -117,6 +122,8 @@
 		pitch_modulation_namespace = "deny"
 		volume = 2.000000
 		limiter_on = 1.000000
+		limiter_max = 1.000000
+		volume_fade_out = 0.100000
 		vsnd_files = 
 		[
 			"sounds/gameplay/orbs/xp_orbs_deny_01.vsnd",
@@ -126,6 +133,7 @@
 			"sounds/gameplay/orbs/xp_orbs_deny_05.vsnd",
 			"sounds/gameplay/orbs/xp_orbs_deny_06.vsnd",
 		]
+		vsnd_duration = 1.844399
 	}
 	Player.AcquireAp = 
 	{
@@ -142,6 +150,7 @@
 			"sounds/ui/ui_hud_acquire_ap_03.vsnd",
 			"sounds/ui/ui_hud_acquire_ap_04.vsnd",
 		]
+		vsnd_duration = 6.149116
 	}
 	LastHit.Default = 
 	{
@@ -160,6 +169,7 @@
 			"sounds/hit_indicators/damage_send_lethal_05.vsnd",
 			"sounds/hit_indicators/damage_send_lethal_06.vsnd",
 		]
+		vsnd_duration = 1.550499
 	}
 	Teammate.ClaimOrb = 
 	{
@@ -167,7 +177,7 @@
 		limiter_event_name = "Teammate.ClaimOrb"
 		volume = -15.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.100045
+		vsnd_duration = 0.050023
 	}
 	Neutral.Bounty.Pickup = 
 	{
@@ -177,14 +187,14 @@
 		limiter_max = 0.000000
 		limiter_on = 1.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.100045
+		vsnd_duration = 0.050023
 	}
 	Player.XPGained = 
 	{
 		base = "Base.Gameplay.2d"
 		volume = 0.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.100045
+		vsnd_duration = 0.050023
 	}
 	Player.NotEnoughMana = 
 	{
@@ -216,6 +226,7 @@
 		limiter_event_name = "Player.Negative.Interact"
 		limiter_stop_oldest = true
 		vsnd_files = "sounds/gameplay/not_ready_yet.vsnd"
+		vsnd_duration = 0.547166
 	}
 	Player.Negative.Interact.Silenced = 
 	{
@@ -233,32 +244,35 @@
 		limiter_event_name = "Player.Negative.Interact.Silenced"
 		limiter_stop_oldest = true
 		vsnd_files = "sounds/gameplay/silence_emp.vsnd"
+		vsnd_duration = 1.086644
 	}
 	Ability.Cooldown.Finished = 
 	{
 		base = "Base.Gameplay.Ability.Up.2d"
 		volume = -9.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.100045
+		vsnd_duration = 0.050023
 	}
 	Ability.Charge.Ready = 
 	{
 		base = "Base.Gameplay.Ability.Up.2d"
 		volume = -12.000000
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.100045
+		vsnd_duration = 0.050023
 	}
 	Ability.UltimatePause.Friendly.Start = 
 	{
 		base = "Base.Gameplay.2d"
 		volume = 0.000000
 		vsnd_files = "sounds/gameplay/ultimate_pause_start_friendly.vsnd"
+		vsnd_duration = 3.359478
 	}
 	Ability.UltimatePause.Enemy.Start = 
 	{
 		base = "Base.Gameplay.2d"
 		volume = 0.000000
 		vsnd_files = "sounds/gameplay/ultimate_pause_start_enemy.vsnd"
+		vsnd_duration = 1.765918
 	}
 	Gameplay.Slide.Enter = 
 	{
@@ -277,6 +291,7 @@
 			"sounds/gameplay/slide/enter_09.vsnd",
 			"sounds/gameplay/slide/enter_10.vsnd",
 		]
+		vsnd_duration = 1.289252
 	}
 	Gameplay.Slide.Exit = 
 	{
@@ -293,6 +308,7 @@
 			"sounds/gameplay/slide/exit_07.vsnd",
 			"sounds/gameplay/slide/exit_08.vsnd",
 		]
+		vsnd_duration = 1.239274
 	}
 	Gameplay.Slide.Lp = 
 	{
@@ -309,6 +325,7 @@
 		volume = -9.000000
 		delay_rand_max = 0.000000
 		vsnd_files = "sounds/gameplay/slide/lp1_synth.vsnd"
+		vsnd_duration = 17.330000
 	}
 	Gameplay.Slide.Texture.Lp = 
 	{
@@ -316,6 +333,7 @@
 		volume = 0.000000
 		pitch = 1.100000
 		vsnd_files = "sounds/gameplay/slide/lp2_texture.vsnd"
+		vsnd_duration = 10.925555
 	}
 	Gameplay.Obstructed.Shot.Impact = 
 	{
@@ -327,16 +345,19 @@
 			"sounds/gameplay/obstructed_shot/03.vsnd",
 			"sounds/gameplay/obstructed_shot/04.vsnd",
 		]
+		vsnd_duration = 0.768005
 	}
 	Player.WpnReload.Shared.Clip.Out = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		vsnd_files = "sounds/gameplay/shared_reloads/shared_reload_clip_out.vsnd"
+		vsnd_duration = 0.710113
 	}
 	Player.WpnReload.Shared.Clip.In = 
 	{
 		base = "Base.Hero.Weapon.Reload.3d"
 		vsnd_files = "sounds/gameplay/shared_reloads/shared_reload_clip_in.vsnd"
+		vsnd_duration = 1.292426
 	}
 	Gameplay.World.Zipline.Speed.Boost.Start = 
 	{
@@ -344,29 +365,34 @@
 		volume = 0.000000
 		volume_falloff_min = 10.000000
 		vsnd_files = "sounds/gameplay/zipline/speed_boost.vsnd"
+		vsnd_duration = 4.361905
 	}
 	Rejuv.Pickup = 
 	{
 		base = "Base.MapObjective"
 		volume = -3.000000
 		vsnd_files = "sounds/gameplay/rejuv_shatter.vsnd"
+		vsnd_duration = 9.389569
 	}
 	MidBoss.Arrive = 
 	{
 		base = "Base.MapObjective"
 		volume = -6.000000
 		vsnd_files = "sounds/gameplay/midboss_arrive.vsnd"
+		vsnd_duration = 9.289388
 	}
 	MidBoss.LowHealth = 
 	{
 		base = "Base.MapObjective"
 		volume = -3.000000
 		vsnd_files = "sounds/gameplay/midboss_lowhealth.vsnd"
+		vsnd_duration = 9.419047
 	}
 	MidBoss.Death = 
 	{
 		base = "Base.MapObjective"
 		volume = -9.000000
 		vsnd_files = "sounds/gameplay/midboss_death.vsnd"
+		vsnd_duration = 16.387800
 	}
 }

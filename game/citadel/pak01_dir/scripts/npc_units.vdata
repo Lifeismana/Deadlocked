@@ -4187,7 +4187,7 @@
 		m_flHealthBarOffset = 600
 		m_flSightRangePlayers = 1500.000000
 		m_flSightRangeNPCs = 1500.000000
-		m_iHealthGainPerMinute = 350
+		m_iHealthGainPerMinute = 425
 		m_iStartingHealth = 6000
 		m_flPhysicsImpulseMultiplier = 0.000000
 		m_flBeamWeaponWidth = 24
@@ -6181,8 +6181,6 @@
 			_my_subclass_name = "modifier_tier3boss_electric_beam"
 			_class = "modifier_tier3boss_electric_beam"
 		}
-		m_flLaserTrackingSpeed = 1000.000000
-		m_flLaserCastingTrackSpeed = 10000.000000
 		m_flHealthBarOffset = 0.000000
 		m_LaserChargingParticle = resource_name:"particles/npc/tier3boss/tier3_boss_beam_charge.vpcf"
 		m_DeathLargeExplosionParticle = resource_name:"particles/npc/tier3boss/tier3_boss_death_finale.vpcf"
@@ -6193,10 +6191,21 @@
 		m_flPhysicsImpulseMultiplier = 0
 		m_LaserPreviewEffect = resource_name:"particles/npc/tier3boss/tier3_boss_beam_preview.vpcf"
 		m_flLaserTargetingZOffset = 75.000000
+		m_flDefaultMoveSpeed = 200.000000
 		m_flLaserDPSToPlayers = 440.000000
 		m_flLaserDPSToNPCs = 80.000000
-		m_flLaserCastingTrackMaxSpeed = 10000.000000
+		m_flLaserTrackingSpeed = 1000.000000
 		m_flLaserTrackingMaxSpeed = 1000.000000
+		m_flLaserCastingTrackSpeed = 10000.000000
+		m_flLaserCastingTrackMaxSpeed = 10000.000000
+		m_flNoShieldMoveSpeed = 500.000000
+		m_flNoShieldLaserDPSToPlayers = 600
+		m_flNoShieldLaserDPSToNPCs = 160
+		m_flNoShieldLaserTrackingSpeed = 2000.000000
+		m_flNoShieldLaserTrackingMaxSpeed = 2000.000000
+		m_flNoShieldLaserCastingTrackSpeed = 20000.000000
+		m_flNoShieldLaserCastingTrackMaxSpeed = 20000.000000
+		m_LaserSound = soundevent:"Ability.Tier2Boss.LaserBeam.Fire"
 		m_DyingModifier = subclass:
 		{
 			_class = "modifier_base"
@@ -6239,8 +6248,8 @@
 		{
 			_class = "modifier_citadel_objective_regen"
 			_my_subclass_name = "tier3_regen"
-			m_flOutOfCombatHealthRegen = 80.000000
-			m_flOutOfCombatRegenDelay = 30.000000
+			m_flOutOfCombatHealthRegen = 120.000000
+			m_flOutOfCombatRegenDelay = 20.000000
 		}
 	}
 	alt_npc_boss_tier3 = 
@@ -6262,8 +6271,6 @@
 			_my_subclass_name = "modifier_tier3boss_electric_beam"
 			_class = "modifier_tier3boss_electric_beam"
 		}
-		m_flLaserTrackingSpeed = 1000.000000
-		m_flLaserCastingTrackSpeed = 10000.000000
 		m_flHealthBarOffset = 0.000000
 		m_LaserChargingParticle = resource_name:"particles/npc/tier3boss/tier3_boss_beam_charge.vpcf"
 		m_DeathLargeExplosionParticle = resource_name:"particles/npc/tier3boss/tier3_boss_death_finale.vpcf"
@@ -6274,10 +6281,21 @@
 		m_flPhysicsImpulseMultiplier = 0
 		m_LaserPreviewEffect = resource_name:"particles/npc/tier3boss/tier3_boss_beam_preview.vpcf"
 		m_flLaserTargetingZOffset = 75.000000
+		m_flDefaultMoveSpeed = 200.000000
 		m_flLaserDPSToPlayers = 440.000000
 		m_flLaserDPSToNPCs = 80.000000
-		m_flLaserCastingTrackMaxSpeed = 10000.000000
+		m_flLaserTrackingSpeed = 1000.000000
 		m_flLaserTrackingMaxSpeed = 1000.000000
+		m_flLaserCastingTrackSpeed = 10000.000000
+		m_flLaserCastingTrackMaxSpeed = 10000.000000
+		m_flNoShieldMoveSpeed = 500.000000
+		m_flNoShieldLaserDPSToPlayers = 600
+		m_flNoShieldLaserDPSToNPCs = 160
+		m_flNoShieldLaserTrackingSpeed = 2000.000000
+		m_flNoShieldLaserTrackingMaxSpeed = 2000.000000
+		m_flNoShieldLaserCastingTrackSpeed = 20000.000000
+		m_flNoShieldLaserCastingTrackMaxSpeed = 20000.000000
+		m_LaserSound = soundevent:"Ability.Tier2Boss.LaserBeam.Fire"
 		m_DyingModifier = subclass:
 		{
 			_class = "modifier_base"
@@ -6320,8 +6338,8 @@
 		{
 			_class = "modifier_citadel_objective_regen"
 			_my_subclass_name = "tier3_regen"
-			m_flOutOfCombatHealthRegen = 80.000000
-			m_flOutOfCombatRegenDelay = 30.000000
+			m_flOutOfCombatHealthRegen = 120.000000
+			m_flOutOfCombatRegenDelay = 20.000000
 		}
 		_base = "npc_boss_tier3"
 	}

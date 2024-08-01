@@ -43,12 +43,12 @@
 	D$0H
 	Default
 	NAN encountered in element '%s' guid %s attribute '%s'!
+	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_isnand
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_StringAfterPrefix
 	_V_StringAfterPrefixCaseSensitive
 	_V_strEndsWith
@@ -220,7 +220,6 @@
  Hc)H
  Hc)L
  Hc*L
- Hc+;k
  Hc1H
  Hc1L
  Hc2H
@@ -308,7 +307,6 @@
 !V_stricmp_fast( pCommand->m_pName, pNameStr )
 !V_stricmp_fast( pEncodingName, "keyvalues" )
 !V_stricmp_fast( pEncodingName, GetName() )
-!bLooksLikeABug
 !bSerializingPrefixElement
 !con.m_pObject.isNull()
 !fakeEnt.m_bDestroyed
@@ -525,6 +523,8 @@ $prefix_element$
 %s (%s) = remove( pos %i, count %i )
 %s - %s
 %s - Blackboard reference %s: %u (%s) type mismatches
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s - Could not find blackboard instance for %s
 %s - Could not find blackboard reference %s: %u (%s)
 %s AllViewsDirectLight
@@ -614,6 +614,8 @@ $prefix_element$
 %suncompressed data
 %u (0x%x)
 & ?timerEvent@QMenuBar@@MEAAXPEAVQTimerEvent@@@Z
+&%~?;
+&2z34
 &?PPPPPPP?
 &Add...
 &Allow Wrapping
@@ -663,7 +665,6 @@ $prefix_element$
 &YA1H
 &xr(*
 '	5't
-'	V_log10f
 ' ?timerEvent@QPlainTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 ', type<
 ',=?k
@@ -671,8 +672,6 @@ $prefix_element$
 ( !pUpAxisAttr && !pszUpAxis ) || ( pszUpAxis && StringHasPrefix( pszUpAxis, "Z" ) )
 ( %1, %2 )
 ( %1, %2, %3, %4% )
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( QApplication::activeModalWidget() == nullptr ) || ( QApplication::activeModalWidget()->windowModality() == Qt::WindowModal )
 ( bHideCursor == false ) || ( m_bCaptureHideCursor == bHideCursor )
 ( buttonCode >= 0 ) && ( buttonCode < V_ARRAYSIZE( s_nBindCodesToVirtualKeys ) )
@@ -717,27 +716,23 @@ $prefix_element$
 ( z >= 0 ) && ( z < NumSlices() )
 (#%d)
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
-(%	+*
-(%-n=
 (%1,%2)
-(%?#*
-(%D#*
-(%^!*
-(%b!*
 (%d,%d
 (%d,%d)
 (%d,%d,%d
 (%d,%d,%d,%d
-(%j&*
+(%h&*
+(%mR=
+(%o&*
 ((width & 1) == 0) && ((height & 1) == 0)
 (*%s*), 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(5G1*
-(5i&*
-(5w?>
-(=A *
-(=B&*
+(-/&*
+(-HvH
+(5:p)
+(="	.
+(=,p)
 (A]A\_[
 (A]^][
 (A^A\^[
@@ -882,9 +877,6 @@ $prefix_element$
 (l$pfA
 (m_Handle == DMATTRIBUTE_HANDLE_INVALID) || g_pDataModel->IsAttributeHandleValid( m_Handle )
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (nLumaStride > 0) && (nLumaStride < INT_MAX) && (nChromaStride > 0) && (nChromaStride < INT_MAX)
 (nVertexCount & 0x3) == 0
 (null)
@@ -938,6 +930,7 @@ $prefix_element$
 (t$pf
 (t$pu
 (unsigned int)nCount <= nPixelsRemaining
+(|$ @
 (|$ D
 (|$ H
 (|$ I
@@ -1086,7 +1079,6 @@ $prefix_element$
 )t$ ;
 )t$ A
 )t$ D
-)t$ E
 )t$ E3
 )t$ H
 )t$ H+
@@ -1176,7 +1168,7 @@ $prefix_element$
 )|$pD
 )|$pH
 )|B?d!
-*	V_log2f
+*	V_log10f
 * ?timerEvent@QTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 * ForceRescanOfActiveKeys
 * Rehandling active codes
@@ -1205,7 +1197,6 @@ $prefix_element$
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *pScan == '['
 +	?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
-+	V_logd
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
 +"?updateGeometries@QListView@@MEAAXXZ
 +A$Lc
@@ -1242,7 +1233,6 @@ $prefix_element$
 +h->|
 +o'q)}
 +~0+^4
-,	V_logf
 , %1 KB
 , %1 MB
 , %1 mip levels, %2
@@ -1268,6 +1258,7 @@ $prefix_element$
 ,X< w
 ,YA1A
 ,YA1H
+-	V_log2f
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
@@ -1294,6 +1285,7 @@ $prefix_element$
 -unknown source-
 -unknown source-(
 -vsync
+.	V_logd
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 ..om?
 .00cfg
@@ -2539,6 +2531,8 @@ $prefix_element$
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
+/%p,'
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
 // 						"BA_INT_DANGER"		break out of this anim only if threatened
@@ -2555,7 +2549,7 @@ $prefix_element$
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5oY*
+/5/N*
 /<9w-
 />58d%
 /D$4r
@@ -2568,7 +2562,6 @@ $prefix_element$
 /TF<)VGy#WH
 /YA1H
 /]?size@QImage@@QEBA?AVQSize@@XZ
-0	V_modfd
 0 0 -1
 0 0 0
 0 0 0 0
@@ -2577,7 +2570,6 @@ $prefix_element$
 0.0 to 1.0 value indicating the probability of this element being evaluated. Where a value of 0 means the element will never be evaluated and 1.0 means it will always be evaluated
 0123456789abcdefghijklmnopqrstuvwxyz
 0><[cZUg^>
-0>BW=
 0A;n@|
 0A\^]
 0A\_[
@@ -2868,7 +2860,7 @@ $prefix_element$
 220323000000Z
 220801000000Z
 230714000000Z
-240724000021Z0/
+240801201109Z0/
 241009235959Z0a1
 255 255 255
 2AnimationLoopingChanged( bool )
@@ -2938,6 +2930,7 @@ $prefix_element$
 2valueChanged(double)
 2valueChanged(int)
 2valueEdited()
+3	V_modfd
 311109235959Z0b1
 33333333H
 33333333H+
@@ -2975,13 +2968,11 @@ $prefix_element$
 6YA1H
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6p7MOf
-7	V_powd
 7&F|If
 70503
 7YA1A
 7YA1H
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8"3hrf
 8-byte data pool
 8/t[H
@@ -3032,6 +3023,7 @@ $prefix_element$
 8H9A H
 8O8u'H
 8Q\tr
+8VSa 
 8YA1H
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
 8_^][
@@ -3043,7 +3035,6 @@ $prefix_element$
 8ke?;
 8text
 8vmatt
-9	V_qsort
 9)~P3
 97tmD
 98t H
@@ -3126,7 +3117,7 @@ $prefix_element$
 9~P~7
 9~P~;
 9~h~t3
-:	V_qsort_s
+:	V_powd
 : Add
 : lexer error %d :
 :!e00A
@@ -3140,10 +3131,12 @@ $prefix_element$
 :VP8 tP
 :VP8LtHD
 :VP8X
+;	V_powf
 ;(}{H
 ;.u1L
 ;.|@H
-;=$T:
+;=1.:
+;=9;:
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;CP}$Hc
@@ -3178,6 +3171,7 @@ $prefix_element$
 ;|$0|
 ;|$8|
 ;|$@~
+<	V_qsort
 <	u2H
 <	u8H
 <	u\L
@@ -3204,6 +3198,7 @@ $prefix_element$
 <Error reading texture description>
 <ILcd
 <ILcl
+<IxB*
 <NONE>
 <St[@:
 <St[A:
@@ -3227,6 +3222,7 @@ $prefix_element$
 <unknown>
 <unset>
 <utK@:
+=	V_qsort_s
 =%H5<mN
 =33s?
 == PulseGraphDef ==
@@ -3244,7 +3240,6 @@ $prefix_element$
 >c;j1
 >ff&?
 >jtm}S
-?	V_roundf
 ?!5WOo
 ?#\$ 
 ?+>^m
@@ -4968,7 +4963,6 @@ $prefix_element$
 ?split@QString@@QEBA?AVQStringList@@VQChar@@V?$QFlags@W4SplitBehaviorFlags@Qt@@@@W4CaseSensitivity@Qt@@@Z
 ?splitDockWidget@QMainWindow@@QEAAXPEAVQDockWidget@@0W4Orientation@Qt@@@Z
 ?splitPath@QCompleter@@UEBA?AVQStringList@@AEBVQString@@@Z
-?sqrtf
 ?start@QElapsedTimer@@QEAAXXZ
 ?start@QTimer@@QEAAXH@Z
 ?start@QTimer@@QEAAXXZ
@@ -5296,6 +5290,7 @@ $prefix_element$
 @USWATAWH
 @USWAUAVAWH
 @USWAUAVH
+@USWAUAWH
 @USWAVH
 @USWAWH
 @USWH
@@ -5558,6 +5553,7 @@ A_A]]
 A_A]][
 A_A]^
 A_A]^H
+A_A]_[]
 A_A]_^[
 A_A]_^[]
 A_A]_^]
@@ -5745,6 +5741,7 @@ AuQIc
 August
 Axis around which the rotation will occur
 AxisScale
+B	V_roundf
 B @8{(u
 B A+B
 B D;B0|
@@ -6033,11 +6030,11 @@ C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\vector4d_base.h
 C:\buildworker\citadel_rel_win64\build\src\public\modellib\modelconfig.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\gap_variant.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_cell.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_graph_instance.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_interface.h
+C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_runtime_lib.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_test_domain.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_type.h
 C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\inputbindsystem.h
@@ -6906,11 +6903,6 @@ CONTROL_POINTS
 CONVERT_VALUE
 CORNER
 COUNT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CP4AutoEditAddFile::CP4AutoEditAddFile
 CParticleMgr::AddEffect
 CParticleMgr::BuildParticleSimList
@@ -7236,10 +7228,6 @@ CPulseRuntimeMethodArg
 CPulseRuntimeMethodArg::KV3TransferLoad_Impl
 CPulseRuntimeMethodArg::KV3Transfer_DefaultKeys_Impl
 CPulseRuntimeMethodArg::Schema_VerifyBindingIsRegistered
-CPulseTestFuncs_DerivedDomain
-CPulseTestFuncs_DerivedDomain!GetCursorValueA
-CPulseTestFuncs_DerivedDomain!SetCursorValueA
-CPulseTestFuncs_DerivedDomain::Schema_VerifyBindingIsRegistered
 CPulseTestGapTypeQueryRegistration
 CPulseTestGapTypeQueryRegistration::Schema_VerifyBindingIsRegistered
 CPulseTestScriptLib
@@ -7952,7 +7940,9 @@ CTSQueue<struct ParticleSoundQueueEntry_t *,0>::Push
 CTSQueue<struct ParticleSoundQueueEntry_t *,0>::~CTSQueue
 CTerrainSelection
 CTestDomainDerived_Cursor
+CTestDomainDerived_Cursor!GetCursorValueA
 CTestDomainDerived_Cursor!GetCursorValueB
+CTestDomainDerived_Cursor!SetCursorValueA
 CTestDomainDerived_Cursor!SetCursorValueB
 CThreadSpinRWLock::CThreadSpinRWLock
 CTier2ShutdownCallback::RunAllCallbacks
@@ -9242,6 +9232,7 @@ Choice Name
 Choice Weight
 Choices
 ChromaBlurRadius
+ChyR}a
 Circle
 Clamp Float
 Clamp Int
@@ -9338,7 +9329,6 @@ Configuration
 ConfigurationHandleShape_t
 ConsecutiveBadFaxLines
 Constraints
-Construction is only allowed from the resolve function
 Context
 Controls whether or not the configuration of the locator can include scale. If enabled scale can be applied to the editable locator in Hammer. If disabled the scale will not be editable and the current scale will be used.
 Controls whether or not the locator can be edited in a smart prop configuration. If enabled an editable locator will appear when the smart prop is placed in Hammer. Any changes to that locator will modify the current transform.
@@ -9386,9 +9376,9 @@ CreateFakeEntity( "%s", "%s" ) -> idx %d (handle %d)
 CreateFileW
 CreateInterface
 CreatePassThruColorChannel
-CreateTesselatedCube(262): 
-CreateTesselatedPlane(371): 
-CreateTesselatedSphere(137): 
+CreateTesselatedCube(264): 
+CreateTesselatedPlane(373): 
+CreateTesselatedSphere(139): 
 CreateThreadpoolWork
 CreateUniqueId
 Creates a bend deformer that is applied to child elements. The deformation bends the local space x-axis around the local space z-axis. The Angles property can be used to rotate the local axis to change the direction of deformation.
@@ -9402,7 +9392,6 @@ Cursor[ ptr:%p | id:%d | graph:%p ]: Register observer:%d
 Custom Color
 Custom Colors
 Cx~!H
-D	V_sincosf
 D W?{W
 D!l$xA
 D#C|D
@@ -9607,6 +9596,7 @@ D$LH+uxL
 D$P;L$H
 D$P;L$L
 D$PA9F
+D$PA;
 D$PA;F
 D$PD;
 D$PE3
@@ -9621,7 +9611,6 @@ D$PHcX
 D$PHcx
 D$PI;
 D$PL;
-D$PLc
 D$PLcP
 D$Pf;
 D$Pt;H
@@ -9763,10 +9752,11 @@ D8|$`t
 D8}wu@H
 D8~Iu
 D9 u2D9
-D9&t_I
 D9&u?H
 D9'u@
 D9(tT
+D9.tdI
+D9/tdI
 D97uFA
 D9AHH
 D9H$t
@@ -9804,7 +9794,6 @@ D9}hu
 D9~(D
 D;$(t
 D;$7|
-D;%c*f
 D;D$(|
 D;D$(}CJ
 D;D$p|
@@ -9921,7 +9910,6 @@ Delete Widget
 Delete all cached thumbnails?
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 Derived
 Derived Func A
 Derived Func B
@@ -10096,7 +10084,6 @@ Dump all new particles, optional name substring.
 Dump all simulating particles, optional name substring.
 DumpModeDecode: Not enough data for scanline %d
 Dynamic Configs
-E	V_sind
 E A84$u
 E D9{(
 E(HcH
@@ -10111,7 +10098,6 @@ E8a(u
 E8f8t
 E8q(u
 E9&~|I
-E9.taI
 E9.~&A
 E9f@}yH
 E9f@~hH
@@ -10156,6 +10142,7 @@ EQ_FLOAT
 EQ_INT
 EQ_OPAQUE_HANDLE
 EQ_PANEL_HANDLE
+EQ_SCHEMA_ENUM
 EQ_STRING
 EQ_TEST_HANDLE
 ERROR! LoadFromJPG( %s ) failed!
@@ -10191,6 +10178,7 @@ EXz	u
 E`t=H
 Each element will be scaled to is maximum allowable size that will still fit on the line.
 Early exit
+EarlyInit_Tier0
 EarlyRetireParticleSystems
 EatEscapeKeyPress
 EconItemToolModel_001
@@ -10479,7 +10467,6 @@ ExternalNameForInternalType
 ExtraSamples
 Extraneous token
 E|$xH
-F	V_sinf
 F	tj<
 F 9F(r
 F A;F
@@ -10690,12 +10677,12 @@ FreeOffsets
 Freed EMS handle %u
 Freed XMS handle %u
 Friday
-Fsfm_v3
 Func( %s )
 Function "%s" takes %i parameters, but %i were given
 Functions not supported in this evaluator (%s)
 FxD9x
 FxH9<
+G	V_sincosf
 G 9G(
 G H9,
 G channel not found!
@@ -10706,7 +10693,7 @@ G4L9sXu
 G8,7u
 G89G@
 G89G@}8
-G8@8-F
+G8@8-
 G8uaA
 G:B8D
 G@I+?I
@@ -10780,7 +10767,6 @@ GameStartup
 GameTime_t
 GameUIService_001
 GapArgumentListSignature_t::GetArg
-GatherInparams
 Generate a random integer between min and max (inclusive)
 Generate the grid by placing N x N children.
 GenerateInt
@@ -10813,7 +10799,6 @@ GetAssetPreviewType returned THUMBNAIL but no code to handle it in CreateAssetPr
 GetAsyncKeyState
 GetBasicType() == KV3_BTYPE_TABLE
 GetBlackboardReference R%d <- BR%d (%s)
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCStringCharConversion
@@ -10934,7 +10919,7 @@ G|$HH
 G|$XA
 H	CxH
 H	GHI
-H	V_sinhf
+H	V_sind
 H A+H
 H ATAUH
 H D+H
@@ -10959,20 +10944,26 @@ H9(t?A
 H9(tO
 H9+t	H
 H9+u]H
+H9-:rA
+H9-Fi$
+H9-UrA
+H9-ai$
+H9-jqA
+H9-xh$
 H9/t	H
 H9/u+9
 H90t7
 H93t	H
 H94(t
-H957D>
-H95RD>
-H95W(H
-H95gM?
-H95nC>
+H95'd?
+H953d9
+H95w(>
+H95w3H
 H97u+A
 H98t$H
 H98t2
 H9;t	H
+H9=/J=
 H9A(u
 H9APuuH
 H9CPt
@@ -11097,7 +11088,6 @@ HandleIntDerived
 HardCancel
 HasAllocatedMemory( nDestAttr )
 Hc+;k
-Hc-H?Z
 Hc.;n
 Hc/;o
 Hc/E3
@@ -11198,7 +11188,6 @@ Hc\$(I
 Hc\$(M
 Hc\$0A
 Hc\$0L+
-Hc\$0M
 Hc\$@D
 Hc\$XI
 Hc\$pI
@@ -11268,7 +11257,7 @@ How much should the surface normal up direction influence the final orientation.
 Hr>wL
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-I	V_snprintf
+I	V_sinf
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
 I I;4
 I could not work out what I was expecting, like so many of us these days!
@@ -11353,6 +11342,8 @@ IcV\LcU
 IcW,L
 IcW0H
 Ic] A
+Ic]8A;]Hu
+Ic]8H
 Ic^(A
 Ic^(H
 Ic^,A
@@ -11673,7 +11664,6 @@ Insufficient header/data size.
 Insufficient memory (case %d)
 Int( %d )
 Integer
-Intentionally vague touch behavior for %p
 InteractiveEditFinished
 InteractiveEditStarted
 InterlockedFlushSList
@@ -11791,6 +11781,7 @@ Joint Rotations
 Js`@2
 Jump to Instr I%d
 JumpOrLeap( C%d:I%d )
+K	V_sinhf
 K ?toggled@QAbstractButton@@QEAAX_N@Z
 K H9H
 K H9K0u
@@ -11811,6 +11802,7 @@ KV3TransferSchema_AllocateClassInstance
 KV3TransferSchema_ClassName::<lambda_1>::operator ()
 KV3Transfer_SaveMapAsFlatTable
 KXHcS8
+K^uFV3
 Keep a history of all instructions run on a per graph basis.
 Keep running normally.
 Key Bindings
@@ -11822,8 +11814,6 @@ KeyValues2
 KeyValues2 (flat)
 KeyValues2 (no ids)
 KeyValues3
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::ArrayAddToTail
 KeyValues3::ArrayInsertMultipleBefore
 KeyValues3::CopyFrom
@@ -11869,6 +11859,7 @@ Kill immediately.
 K}*n:	
 K~Je#>!
 L	?canDropMimeData@QAbstractItemModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ ;H8
@@ -11995,6 +11986,7 @@ L$HD;
 L$HE3
 L$HHc
 L$HI;
+L$HL+
 L$HLc
 L$Hf;
 L$LfA
@@ -12060,8 +12052,10 @@ L$xA+
 L$xf;
 L$xff
 L+d$PI+
+L6|LZ
 L9#t	H
 L9#u/H
+L9%SO_
 L9&t	H
 L9+t	H
 L93t	H
@@ -12070,7 +12064,6 @@ L97u	L9
 L97vH
 L9;t	H
 L9;tHA
-L9=!`Q
 L9AHA
 L9aHA
 L9d$ u
@@ -12084,7 +12077,6 @@ L9d$Xt
 L9e t
 L9e(t
 L9e0t
-L9e@t
 L9l$8
 L9m@t
 L9mPt
@@ -12430,6 +12422,7 @@ MPulseDomainHookInfo
 MPulseDomainOptInFeatureTag
 MPulseEditorHeaderIcon
 MPulseEditorHeaderText
+MPulseEditorIsControlFlowNode
 MPulseExpressionAlias
 MPulseGraphHook
 MPulseInstanceDomainInfo
@@ -12517,6 +12510,7 @@ MaterialPreviewUseLayerViewportExtents
 MaterialThumbnail
 MaterialUtils_001
 MathLib_Init
+MatrixInverseGeneral( mProj, barnLight_mFromClipSpace )
 MatrixWorldToCamera
 MatrixWorldToScreen
 Matteing
@@ -12695,6 +12689,7 @@ NE_FLOAT
 NE_INT
 NE_OPAQUE_HANDLE
 NE_PANEL_HANDLE
+NE_SCHEMA_ENUM
 NE_STRING
 NE_TEST_HANDLE
 NH;}k
@@ -12800,7 +12795,6 @@ NumSub
 NumToggle
 Number of instances of this object and its children to be placed.
 NumberOfInks
-O	V_sscanf
 O!t/H
 O*9y]
 O0HcW 
@@ -12958,9 +12952,6 @@ Option Value Name
 Optional text that will appear in the outliner to help organize Smart Prop elements and communicate their purpose to other users.
 OptionallyCompressedTangentFram
 Or R%d <- R%d || R%d
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orient Rotation to 2D Direction
 Orientation
 Origin
@@ -12984,7 +12975,6 @@ Overall grid dimension along Y axis.
 OverlayProjectionDirection
 Override
 Overwrite With Current
-P	V_sscanf_s
 P 9_p
 P D+P
 P HcE
@@ -13008,7 +12998,6 @@ PARTICLE_EHANDLE__
 PA\_^
 PA]A\[
 PA]A\^
-PA]_^
 PA^A\_^]
 PA^A]A\
 PA^A]A\_[
@@ -13178,7 +13167,6 @@ PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Plane
 Plat_CPUTickFrequency
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
@@ -13233,7 +13221,6 @@ Premature end of JPEG file
 Premature end of input file
 Premature end-of-file encountered.
 Premature end-of-partition0 encountered.
-PrepareOutstores_Fastpath
 Preset File
 PressTimerStop
 PressTimerUpShift
@@ -13408,6 +13395,7 @@ QueryPerformanceCounter
 QueryPerformanceFrequency
 Qxfff
 R	?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
+R	V_sscanf
 R A;F
 R channel not found!
 R%d->%s
@@ -13601,6 +13589,7 @@ RtlUnwindEx
 RtlVirtualUnwind
 RunFrame
 RunPulseInstruction
+S	V_sscanf_s
 S,;S(~9D
 S0Q0O
 S93uFH
@@ -14378,7 +14367,6 @@ SwizzlePlanarScanlineToInterleaved
 Symbol table:  %d entries %llu bytes
 Synchronous - wait for the method to fully complete before returning
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T	V_stricmp_fast
 T$ E3
 T$ Ei
 T$ H;
@@ -14468,10 +14456,10 @@ T$pfD
 T$pfff
 T$xD;{
 T$xE3
-T%*w*
-T%:x*
-T%oe*
-T5}e*
+T%/\*
+T%zq*
+T5=\*
+T=s^*
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
@@ -14526,7 +14514,6 @@ TernaryConditional
 Test Domain
 Test Handle
 Test Mode Assert True
-Test functions for the derived test domain.
 Test node that just generates the integer 50. Nothing to see here!
 Test node that picks between two outflows as specified in the test domain.
 Test node that randomly picks between two outflows.
@@ -14721,7 +14708,6 @@ USVWATAUAWH
 USVWATAUI
 USVWATAVAWH
 USVWATAVH
-USVWATAWH
 USVWATH
 USVWATI
 USVWAUAVAWH
@@ -14926,7 +14912,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
-V	V_strlower_fast
 V ?toolTip@QAction@@QEBA?AVQString@@XZ
 V6'?C
 V6E>`"(5
@@ -14959,6 +14944,9 @@ VFileSystem017
 VMapVersion22To23
 VMapVersion30To31
 VMapVersion36To37
+VMapVersion37To38::<lambda_1>::operator ()
+VMapVersion37To38::<lambda_2>::operator ()
+VMapVersion37To38::<lambda_3>::operator ()
 VMaterialSystem2_001
 VMediaFoundation001
 VNOTIFY_DISABLE
@@ -15064,7 +15052,6 @@ V_fabsf( flCheckDecompositionOrthogonality ) < 0.001f
 V_fabsf( flFarZ ) < FLT_MAX
 V_fabsf( flNearZ ) < FLT_MAX
 V_fmodd
-V_fmodf
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -15130,9 +15117,10 @@ VisBuilder_001
 Visit Developer Help URL
 VisitAndModifyElement_R
 Vrad3_001
+W	V_stricmp_fast
 W%	s;M@
-W5C$%
-W5oz&
+W5.L,
+W5/p&
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?save@QPixmap@@QEBA_NPEAVQIODevice@@PEBDH@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -15203,7 +15191,6 @@ Write to EMS failed
 Write to XMS failed
 WriteConsoleW
 WriteFile
-WriteOutstores_Slowpath
 Writing Asset Dependency or Thumbnail Database
 Wrong JPEG library version: library is %d, caller expects %d
 Wrote symbol stats to file: %s
@@ -15213,12 +15200,13 @@ X UAVAWH
 X UVWH
 X to the Y power
 X!t5~
+X%%1,
+X-0^0
 X-Axis Size
-X-m7,
-X5):,
-X5BY*
-X5E0,
-X5GGP
+X5IT7
+X5oQP
+X5rT7
+X5y4,
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrush@QPalette@@QEAAXW4ColorGroup@1@W4ColorRole@1@AEBVQBrush@@@Z
@@ -15249,6 +15237,7 @@ XA__^[
 XClipPathUnits
 XD$PD
 XD$Xf
+XHc-I
 XL$TD
 XL$tL
 XMLPacket
@@ -15263,18 +15252,18 @@ Xd$ D
 Xd$HD
 X|$ A
 X|$8E
-Y%hw*
-Y%sQ,
-Y-=7,
+Y	V_strlower_fast
+Y%M1,
 Y-Axis Size
-Y-`4*
-Y51^&
-Y59:,
-Y5f^*
-Y5r[*
-Y5yY*
+Y5"R*
+Y59N*
+Y5JN*
+Y5_3,
+Y5vS*
+Y5}>'
 Y9"SD
-Y="\*
+Y=ER*
+Y=pV/
 Y>kX>M
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -15292,8 +15281,8 @@ YCbCrCoefficients
 YCbCrPositioning
 YCbCrSubsampling
 YClipPathUnits
-YD$4A
 YD$@f
+YD$DA
 YD$PA
 YL$(H
 YO?insertColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
@@ -15303,13 +15292,12 @@ YT$4H
 YY?setDropAction@QDropEvent@@QEAAXW4DropAction@Qt@@@Z
 YawCameraLeft
 YawCameraRight
-Yd$8A
+Yd$HA
 Yd$HH
 Yield, Resume=%s
 YpU_Z
 Y|$8H
 Y|$@I
-Z	V_strtod
 Z* ,	
 Z-Axis Size
 Z?setItalic@QFont@@QEAAX_N@Z
@@ -15516,13 +15504,13 @@ Zpm"U
 \$xu3M
 \$xu7H
 \$|E2
-\5t8<
 \?setWidth@QPen@@QEAAXH@Z
 \D$0A
 \D$DH
 \L$HH
 \T$HE
 \t3D8T$(t
+]	V_strtod
 ](tKH
 ])6M>&
 ]0tOH
@@ -15685,7 +15673,6 @@ _volumeatlas_
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a"X&i
 a0IcN
@@ -15725,6 +15712,8 @@ ambientOcclusionMode
 ambientcolor2
 ambientcolor3
 angle
+angles
+angulardiameter
 animSetList
 anim_duration
 anim_frameRate
@@ -15800,6 +15789,9 @@ at4<rt!<wt,M
 atan2
 att.IsValid()
 attached_prop_physics
+attenuation0
+attenuation1
+attenuation2
 attrib
 audioTarget
 autoTime
@@ -15820,7 +15812,6 @@ bE;'t
 bEnable
 bFailOnCancel
 bFound
-bLegalTypeChange
 bLoop
 bLooping
 bR?metaObject@QDoubleValidator@@UEBAPEBUQMetaObject@@XZ
@@ -15855,6 +15846,7 @@ bad function call
 bad locale name
 bad message
 bad partition length
+baked_light_indexing
 balance
 balance$0
 balance$0Indices
@@ -15900,6 +15892,7 @@ bool8
 bool_array
 boolean
 bottom
+bouncelight
 bouncescale
 boxMin[ 0 ] <= boxMax[ 0 ]
 boxMin[ 1 ] <= boxMax[ 1 ]
@@ -15910,6 +15903,8 @@ boxproject_maxs
 boxproject_mins
 bp(=>?g
 brightness
+brightness_units
+brightnessscale
 broken pipe
 broken promise
 buf.IsText()
@@ -15918,7 +15913,6 @@ busy_anim
 busy_sequence
 buttons
 by this version of libtiff.
-c	V_tanhf
 c [1>H'
 c(>\,
 c0&>`
@@ -15931,6 +15925,9 @@ cached_handle == ((HANDLE)(LONG_PTR)-1)
 cached_handle == new_handle
 canModifyOutputs
 can_override_npc_state
+candle_1
+candle_2
+candle_3
 cannot parse filter header
 cannot parse partitions
 cannot parse picture header
@@ -16045,6 +16042,7 @@ curve info
 curvetypes
 custom
 custom_colors
+d	V_tanf
 d"?validate@QDoubleSpinBox@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 d$ D!
 d$ D9d$0|LH
@@ -16145,6 +16143,7 @@ destination address required
 device or resource busy
 directLighting
 direction
+directlight
 directory not empty
 disableShadows
 disableShadows2
@@ -16262,6 +16261,7 @@ eyeball_bone_l_index
 eyeball_bone_r_index
 eyeball_l
 eyeball_r
+f	V_tanhf
 f+Gpf
 f3EZf
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -16361,9 +16361,11 @@ fakeEnt.m_nHandle.WeakHandle() == GAP_WEAK_HANDLE_INVALID
 fake_derived_a
 fake_derived_b
 fallbacks
+falloff
 falloff_left
 falloff_right
 false
+fast_strobe
 fbx2dmx
 fes || !m_openFiles.IsHandleValid( fileid )
 fes || fileid == DMFILEID_INVALID
@@ -16413,6 +16415,8 @@ flc_count
 flc_file_ids
 flc_file_list
 flc_lines
+flicker_1
+flicker_2
 flipVCoordinates
 float
 float log
@@ -16422,8 +16426,12 @@ float_array
 floating point predictor 
 floor
 flowing
+fluorescent_flicker
 fmt >= IMAGE_FORMAT_UNKNOWN && fmt < NUM_IMAGE_FORMATS
 fog_lighting
+fogcontributionstrength
+fogshadows
+fogstrength
 fontfamily
 fontstyle
 for "ReferenceBlackWhite" array
@@ -16521,6 +16529,7 @@ generic_exprLexerNew
 generic_exprLexerNewSSD
 generic_exprParserNew
 generic_exprParserNewSSD
+gentle_pulse
 gfffA
 gfffD
 gfffffffH
@@ -16564,6 +16573,7 @@ hEntity
 hEnum
 hEnumerator
 hExistingElement != DMELEMENT_HANDLE_INVALID
+hH.|t
 hResource
 hT$0fA
 hT$@fA
@@ -16630,11 +16640,13 @@ incorrect data check
 incorrect header check
 incorrect length check
 indirectLighting
+indirectlight
 ineID
 ineIt
 info_particle_system
 initialMass
 initial_mass
+innerconeangle
 insert
 instance_file
 instance_parm
@@ -16897,14 +16909,19 @@ lifespan
 lifespan_decay
 lifetime_random
 light
+light_barn
 light_directional
 light_environment
 light_omni
+light_omni2
 light_ortho
 light_sky
 light_spot
+light_style
 light_sun
+lightgroup
 lights
+lightsourceradius
 lineOrder
 live_preview
 local_point
@@ -17807,6 +17824,7 @@ nan(ind)
 nan(snan)
 near '%c' :
 near char(%#02X) :
+nearclipplane
 need dictionary
 network down
 network reset
@@ -17880,53 +17898,55 @@ n|$`fA
 o H9o
 o KPBf
 o$$fA
-o%/B,
-o%3vD
-o%81+
-o%M4+
-o%Q'+
+o%(	+
+o%:l+
+o%<?+
+o%[3+
+o%bc+
+o%dp+
+o%h +
 o,$fD
-o- v+
-o-*y,
+o-%_+
+o-0B/
+o-5U+
 o-77+
-o-=P+
-o-Gu+
-o-NlG
-o-NmG
-o-R++
-o-V'+
-o-[j+
+o-<5,
+o-Ei+
+o-Ks+
+o-Pz+
+o-X3+
+o-[G+
+o-ka+
+o-kl+
+o-pp+
+o-zs,
 o47Lc
-o5 A+
-o5"y,
-o5,y+
-o5/lG
-o55-+
-o581+
-o5>P+
-o5@E+
-o5K2,
-o5SA+
-o5UE+
-o5_r/
-o5vZ+
-o5x|+
-o="u+
-o=#S+
-o=)>+
-o=*X+
-o=>y+
-o=I|+
-o=Jb+
-o=M++
-o=Sd/
-o=So+
-o=fh+
-o=g@+
-o=q;/
-o=u]+
-o=xZ+
-o=}'+
+o5&C/
+o5,|+
+o589+
+o5H%+
+o5Q5,
+o5V_+
+o5\e+
+o5c++
+o5la+
+o5p;+
+o5rs,
+o5|s+
+o= S+
+o=0J+
+o=2++
+o=>,,
+o=CG+
+o=R/+
+o=X5,
+o=b1+
+o=cm+
+o=h_+
+o=ro+
+o=sM+
+o=y8+
+o=zR+
 oAPfD
 oD$ f
 oD$ fA
@@ -17975,7 +17995,10 @@ opqMU
 optionallycompressedtangentframe
 orientation
 orientationChannel
+origin
 original.Width() == 4 && original.Height() == 4 && original.Depth() == 1
+ortholightheight
+ortholightwidth
 oscillate_scalar
 oscillate_vector
 ot$ H
@@ -17986,6 +18009,7 @@ other.NumCols() == NumCols()
 other.NumRows() == NumRows()
 other.NumSlices() == NumSlices()
 outQuantized.Width() == 4 && outQuantized.Height() == 4 && outQuantized.Depth() == 1
+outerconeangle
 outputBuffer
 outputcolor
 owner dead
@@ -18005,7 +18029,7 @@ p*W4H
 p0R^G'
 p7M}f
 p;Y>u
-p>nV=
+p>-r=
 p?ati_compress_wrapper.dll
 pA]][
 pA]_^][
@@ -18127,7 +18151,6 @@ pLogLayer
 pManager != nullptr
 pMatchedBinding->m_pCmd
 pMaterialGroupCombo
-pMemory[i] == 0
 pMeshInstance
 pMeshInstance->GetNumDrawCalls() == pFilteredIB->m_IBOverrides.Count()
 pMessage
@@ -18258,6 +18281,7 @@ path_node_particle_rope
 path_node_trajectory
 path_particle_rope
 path_trajectory
+pattern
 permission denied
 pet_preview_gravity
 pet_preview_underwater
@@ -18354,6 +18378,7 @@ radius_scale
 random position along path
 random position on model
 random yaw
+range
 range check failure
 rawControlNames
 rbf;\$l
@@ -18419,7 +18444,7 @@ s AWH
 s WATAUAVAWH
 s f9s"~
 s%D;k
-s(H95x<S
+s(H95
 s(H9s
 s(HcO
 s0@8~(t
@@ -18494,6 +18519,7 @@ sfm_v
 sfm_v1
 sfm_v10
 sfm_v2
+sfm_v3
 sfm_v4
 sfm_v5
 sfm_v6
@@ -18504,6 +18530,9 @@ shadow_color_day
 shadow_color_night
 shadow_secondary_color_day
 shadow_secondary_color_night
+shadowtextureheight
+shadowtexturewidth
+shape
 shared
 sheetimages
 short
@@ -18523,6 +18552,7 @@ simulating
 simulationTime
 simulationTimeScale
 singleStep
+size_params
 size_t( s_Elements[ s ].m_nEnumerator ) == s
 skeleton
 skeletonPose.NumBones() == nNumBones
@@ -18534,6 +18564,9 @@ skyname
 sliderMoved
 sliderPressed
 sliderReleased
+slow_pulse_nofade
+slow_strobe
+slow_strong_pulse
 sm_bFocusFrameAntsMarchEnabled
 sm_bFocusFramePulseEnabled
 sm_bHoverSpinnerTakesFocus
@@ -18556,6 +18589,8 @@ snapToDefault
 snappable
 snapshotOverride
 snapshot_file
+soft_x
+soft_y
 sound
 soundevent
 source_column
@@ -18577,6 +18612,7 @@ speedIndices
 sphere_indices
 sphere_verts
 split
+sqrtf
 src.HasAllocatedMemory( nSrcAttr )
 srcCropXEnd
 srcCropXStart
@@ -18619,6 +18655,7 @@ string_token
 strip
 strips
 struct 
+style
 su"E;e
 subTypes.Count() == nNumTypes
 subclass
@@ -18926,7 +18963,6 @@ tVJcD
 tWH9X
 tX~V2
 tY@85
-tYfff
 t\HcL$`H
 t]H9X
 t^D;@
@@ -19384,7 +19420,6 @@ xcoord
 xlH;{
 xoH;~
 xs == 0
-xtFV>D 
 xtHcC
 xzHcC
 y0tXH
@@ -19406,6 +19441,7 @@ zXHcBPL
 zY;>u:m	
 { AUAVAWH
 { AVH
+{!Sm15x
 {(H9{
 {(LcC0I
 {,D+{HD+

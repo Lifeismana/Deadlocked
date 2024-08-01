@@ -51,7 +51,7 @@ CitadelShopModsList
 
 .showingFavorites CitadelShopModsList VerticalScrollBar .ScrollThumb
 {
-	background-color: #664A00;
+	background-color: buildsLightColor;
 	wash-color: none;
 }
 
@@ -87,11 +87,11 @@ CitadelShopModsList
 	wash-color: none;
 }
 
-.showingFavorites CitadelShopModsList:hover VerticalScrollBar .ScrollThumb
+.showingFavorites CitadelShopModsBuild:hover VerticalScrollBar .ScrollThumb
 {
 	transform-origin: 0% 50%;
 	transform: scale3D(1, 1, 1);
-	background-color: #FFDB4C;
+	background-color: buildsLightColor;
 	wash-color: none;
 }
 
@@ -128,7 +128,7 @@ CitadelShopModsList
 	border-top: 7px solid fortitudeBrightColor;
 }
 
-.showingFavorites #ShopModsListFavorites
+.showingFavorites #ShopModsBuild
 {
 	visibility: visible;
 	animation-iteration-count: 1;

@@ -1,6 +1,5 @@
 	!s99
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	g_pMemAlloc
 	kE>fvw
@@ -28,9 +27,6 @@
 !hn7!
 ',=?k
 (f*^[0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$0H
 (t$PH
 )>6{1n
@@ -43,7 +39,6 @@
 +o'q)}
 ,/<-w
 ,W5y+
-,wNgs 
 .00cfg
 .?AV?$CBaseAppSystem@VIAvi@@@@
 .?AV?$CTier0AppSystem@VIAvi@@$0A@@@
@@ -118,7 +113,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240723234908Z0/
+240801162337Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -132,6 +127,7 @@
 3>N;kU
 3>fvw
 3mq+<
+4- 0!
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
@@ -146,15 +142,16 @@
 9)~P3
 98t H
 9>~ZH
-:	V_qsort_s
 ;H9>&X
 ;I9}(tiH
 < t=<	t9
 <0:08
 <no failure reason set>
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
+>:1/x7
 >Mp$d
 >jtm}S
 ?7zQ6$
@@ -288,7 +285,6 @@ C:\buildworker\citadel_rel_win64\build\_build_\avi\_vpc_valve_avi\default\win64\
 C:\buildworker\citadel_rel_win64\build\src\avi\avi.cpp
 C:\buildworker\citadel_rel_win64\build\src\bitmap\imageformat.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\bitmap\pixelwriter.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\resourcehandle.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
@@ -303,11 +299,6 @@ C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
 CAVIMaterial::UpdateTextureBits
 CD$8D
 CGlobalConVarRegistry::HookUpConVar
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPixelWriter::SetPixelMemory
 CPixelWriter::SetPixelMemory:  Unsupported image format %i
 CPixelWriter::WritePixelNoAdvance
@@ -334,7 +325,6 @@ CUtlMemory<struct UtlLinkedListElem_t<class CAviFile,unsigned short>,unsigned sh
 CallPostConnect
 ClientToolsInfo_001
 CloseHandle
-Construction is only allowed from the resolve function
 CorExitProcess
 CreateCompatibleDC
 CreateDIBSection
@@ -373,7 +363,6 @@ DeleteCriticalSection
 DeleteDC
 DeleteObject
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -388,6 +377,7 @@ E0Lc`
 E8q(u
 EH*?H
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 Encountered too many releases for resource "%s"
@@ -420,7 +410,6 @@ GameResourceServiceServerV001
 GameStartup
 GameUIService_001
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCommandLineA
 GetCommandLineW
@@ -452,11 +441,11 @@ H!D$ I
 H!T$0D
 H-^Eu
 H9(tO
-H95'$
 H97u+A
 H;XXs
 H;xXu5
 HH:mm:ss
+HMToj
 HammerMapLoader001
 HcE_H
 HcG H
@@ -472,6 +461,7 @@ IMAGE_FORMAT_NV12
 IMAGE_FORMAT_R11G11B10_FLOAT
 IPulseSystem_001
 IResourceHandleUtils::FindOrRegisterResourceByName::<lambda_1>::operator ()
+IT>}-
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 ImageLoader::ImageFormatInfo
 InitializeCriticalSectionAndSpinCount
@@ -481,7 +471,6 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 InvokeMiniDumpHandler
 IsDebuggerPresent
@@ -519,7 +508,6 @@ LCMapStringW
 LINEAR_D24S8
 LcA<E3
 LeaveCriticalSection
-LhRcj
 Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
 Lj[;>
 LoadLibraryExW
@@ -552,9 +540,6 @@ NetworkService_001
 NetworkSystemVersion001
 November
 October
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 PA_A^A]A\_^]
 PAq=?Mp#
 PanoramaTextServices001
@@ -563,9 +548,9 @@ PanoramaUIEngine001
 ParticleSystemMgr003
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_NonFatalErrorFunc
 Plat_RegisterModule
@@ -627,7 +612,6 @@ RtlVirtualUnwind
 S0Q0O
 SA|X=G
 SVWATAUAVAWH
-S[FoC
 Saturday
 SceneSystem_002
 SceneUtils_001
@@ -643,7 +627,6 @@ SetLastError
 SetRect
 SetStdHandle
 SetUnhandledExceptionFilter
-SfzR.
 SleepConditionVariableCS
 SoundOpSystem001
 SoundOpSystemEdit001
@@ -835,7 +818,6 @@ http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
-iXRS2
 ineID
 invalid_parameter
 jj@0HK4
@@ -846,6 +828,7 @@ l$0Hc
 l$HH;
 l2|X/gGe
 log10
+l}\.Q
 m0k0$
 mL+7H
 m_ElementCount == 0
@@ -871,7 +854,6 @@ p;Y>u
 pA_A^A]A\_^[
 pCallback == nullptr
 pExtensionWithDot[ 0 ] == '.'
-pMemory[i] == 0
 pSchemaSystem != nullptr
 purecall
 r	Vr.>T
@@ -895,7 +877,6 @@ t,HcA
 t-Lck
 t6HcA
 t7HcP
-tEOoR
 tRLcY
 tier0.dll
 try_get_function
@@ -922,7 +903,6 @@ www.digicert.com1$0"
 x ATAVAWH
 x AVH
 xCHcK
-x|NIvc
 y\PD>!
 {un'%
 |$ ATAVAWH

@@ -2,7 +2,6 @@
 	!s99
 	HcC8N
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_StringAfterPrefix
 	_V_strncpy
 	g_bUpdateStringTokenDatabase
@@ -48,6 +47,7 @@
  delete[]
  new[]
  tDE3
+ zt/a
 !( hResource->m_nFlags & RESOURCE_BINDING_HAS_MOUNTED_VPK )
 !>6'Y
 !IsForInMemoryData()
@@ -55,7 +55,6 @@
 !IsResourceCurrentlyLoading( hResource )
 !V_stricmp_fast( pResourceName, CResourceNameGetter( hResource ).Get() )
 !V_stricmp_fast( updatedResourceName.GetName(), CResourceNameGetter( hResource ).Get() )
-!bLooksLikeABug
 !fnGetResourceManifestCount == !fnGetResourceManifests
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
@@ -77,12 +76,14 @@
 !pRequest->m_bCanceled
 !pToFinalize->BHasExternalWorkPending()
 !value.IsValid()
-$?D85%e	
+$?D85
 %d %d %d
 %d %d %d %d
 %f %f
 %f %f %f
 %f %f %f %f
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s$Fence%d
 %s.%s
 %s: %s
@@ -93,8 +94,6 @@ $?D85%e
 &YA1E
 &YA1H
 ',=?k
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( hResource->m_nFlags & RESOURCE_BINDING_LOADED ) || !( hResource->m_nFlags & RESOURCE_BINDING_HAS_EVER_BEEN_LOADED )
 ( m_pActiveBlockingManifest == nullptr ) || ( m_pActiveBlockingManifest == pManifest )
@@ -111,9 +110,6 @@ $?D85%e
 (f*^[0
 (intp)this % 8 == 0
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (pRequest->Release()) == (0)
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (sm_finishedRequests.FindAndFastRemove( this )) == (false)
@@ -124,6 +120,7 @@ $?D85%e
 ** Forcing all resource loads to fail: "%s"
 *** Bad deletion request: Refcount for %s resource "%s" (%016llX) is greater than zero. (%d)!
 *StO9>T
+*`MNBo
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 +C$Lc
 +M<7>
@@ -284,6 +281,7 @@ $?D85%e
 0}0i1
 130801120000Z
 1<.	/>:
+1t7T"y
 1t}fff
 2	0!&
 210429000000Z
@@ -291,12 +289,13 @@ $?D85%e
 220323000000Z
 220801000000Z
 230714000000Z
-240723234929Z0/
+240801161844Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+3)3cS
 311109235959Z0b1
 33333333H+
 341013235959Z0H1
@@ -333,7 +332,6 @@ $?D85%e
 9|$@u
 9|$Hu
 9|$xu
-:	V_qsort_s
 ;H9>&X
 ;I9}(tiH
 ;Q|uG
@@ -345,7 +343,6 @@ $?D85%e
 <0:08
 <Anonymous>
 <INVALID>
-<U$KI#
 <array: %u elements>
 <binary blob: %u bytes>
 <empty member name>
@@ -356,6 +353,7 @@ $?D85%e
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
@@ -458,6 +456,7 @@ $?D85%e
 @.data
 @.reloc
 @84)u
+@85}^
 @8j(t
 @8k(t
 @8o4t
@@ -621,7 +620,6 @@ C:\buildworker\citadel_rel_win64\build\_build_\resourcefile\_vpc_resourcefile\de
 C:\buildworker\citadel_rel_win64\build\_build_\resourcesystem\_vpc_resourcesystem\default\win64\_msvc_\Retail\resourcesystem.pdb
 C:\buildworker\citadel_rel_win64\build\_build_\resourcesystem\_vpc_resourcesystem\default\win64\_schema_\release\resourcehandletypes_h_schema.sc.cc
 C:\buildworker\citadel_rel_win64\build\_build_\resourcesystem\_vpc_resourcesystem\default\win64\_schema_\release\resourcesystemtest_h_schema.sc.cc
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3transfertypemanager.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3typemanager.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\iresourcesystem.h
@@ -792,19 +790,13 @@ CLoadingResource::~CLoadingResource
 CMemAllocSystemInitialize
 CNullTypeManager::AllocateResource
 CONTENT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPH9CP}
 CPI9BP}
 CPI9CP}
 CPanoramaImageName
 CPiecewiseCurve
 CReliableTimer::BLimitReached
-CReliableTimer::GetMilliseconds
-CReliableTimer::GetSeconds
+CReliableTimer::GetTicks
 CResourceArray
 CResourceDeallocatorUtils::ReleaseControl
 CResourceManifest::CResourceManifest
@@ -1107,7 +1099,6 @@ ConstantInfo_t
 ConstantInfo_t::KV3Transfer_DefaultKeys_Impl
 ConstantInfo_t::Schema_VerifyBindingIsRegistered
 Construct
-Construction is only allowed from the resolve function
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
 CorExitProcess
@@ -1154,8 +1145,8 @@ D$pL;
 D$xH;
 D+G@Hc
 D81uUL9r
-D85}f	
 D8t$ht
+D95oG	
 D9a|u
 D9q|u
 D9r|u
@@ -1170,7 +1161,6 @@ DeleteResource for: %016llX ("%s") (Reference count = %d)
 Deleting Streaming Resource Data for resource %016llX (file "%s")
 Deleting empty loading resource
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -1200,6 +1190,7 @@ ERROR: Reentrant call to CResourceSystem::BlockUntilManifestLoaded() while alrea
 ERROR: Reentrant call to CResourceSystem::FrameUpdate()!
 ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 Encountered nonexistent %s: %016llX (file "%s")
@@ -1412,7 +1403,6 @@ Generic data '%s' missing type key
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCommandLineA
 GetCommandLineW
@@ -1466,10 +1456,13 @@ H!T$0D
 H-^Eu
 H9(tO
 H93t7H
+H95GL
 H97u+A
 H98t!A
 H98t-A
 H98t2
+H9=i.
+H9=ju
 H9>u/H
 H9BP}
 H9D$0u
@@ -1479,6 +1472,7 @@ H9\$H
 H9k u
 H9|$ t
 H9|$(t
+H;=XH
 H;XXs
 H;xXu5
 HH:mm:ss
@@ -1501,6 +1495,7 @@ Hcw4HcC(;
 Hc|$0I
 Hc}HH
 HelpSystem_001
+Hm<<R 
 HostStateMgr001
 I+4$H
 I9CP}
@@ -1639,7 +1634,6 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be PackedA
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be ResourceId_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be TestResource_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be VariableInfo_t)
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Invalid access of CConVarRef for '%s'
@@ -1675,8 +1669,6 @@ KV3TransferSchema_AllocateClassInstance
 KV3TransferSchema_ClassName::<lambda_1>::operator ()
 KV3Transfer_SaveMapAsFlatTable
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::CopyFrom
 KeyValues3::CopyFrom::<lambda_1>::operator ()
 KeyValues3::FindOrCreateMember
@@ -1730,6 +1722,7 @@ L$@H3
 L$HA;T$
 L$XH;
 L9#u/H
+L9-N4
 L9;tRH
 L9mht
 L9mhu
@@ -1743,7 +1736,6 @@ L?n(Zy&
 LCMapStringEx
 LCMapStringW
 LOG_GENERAL
-LSNN<
 Lc&D;f
 Lc3D;s
 Lc7D;w
@@ -1827,9 +1819,6 @@ OnTimestampedEvent - bad part: %d
 Only wrote %d (of %d) values when saving map!
 Only wrote %d (of %d) values when saving map! (Likely string-incompatible or case-sensitive keys.)
 OpenProcess
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 P@HcG
 P@L9n
 PA^A\]
@@ -1837,7 +1826,6 @@ PA^_]
 PA^_^
 PA_A^A]A\_^]
 PAq=?Mp#
-P\ Zv
 PackedAABB_t
 PackedAABB_t::Schema_VerifyBindingIsRegistered
 PanoramaTextServices001
@@ -1847,7 +1835,6 @@ ParticleSystemMgr003
 Pending external work change [%d] for resource %016llX (file "%s")
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_EventActivityIdControl
 Plat_EventRegister
 Plat_EventUnregister
@@ -1856,6 +1843,7 @@ Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
 Plat_GetModuleProcAddress
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_LoadModule
 Plat_MicroSecTickDiff
@@ -2002,7 +1990,6 @@ Static field count mismatch (codegen %d vs. meta %d) for %s (should be ResourceI
 StatsService_001
 SteamAudio001
 Sunday
-T	V_stricmp_fast
 T$ E3
 T$ H;
 T$0D;
@@ -2150,6 +2137,7 @@ VariableInfo_t::Schema_VerifyBindingIsRegistered
 Vector
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 W(fff
 WARNING: %s resource '%s' (%016llX) requested but is not in the system. (Missing from from a manifest?)
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
@@ -2297,7 +2285,6 @@ bAllocationCanFit
 bDidInsert
 bFoundManifestInDeletionQueue
 bHasWork != m_bHasExternalWorkPending
-bLegalTypeChange
 bRemoved
 bStartLoading
 bad address
@@ -2348,7 +2335,6 @@ entity_name
 executable format error
 f9)u4H9j
 fB9<A}1L
-fD9-xm
 fD91uTL9r
 fD94H}aD
 fD9t$b
@@ -2432,7 +2418,7 @@ l$@E3
 l$HA_A^A]A\_^
 l$HHcn
 l$H}`f;=
-l$H}`f;=\(
+l$H}`f;=\
 l$PE3
 l$PHc/L
 l$Pff
@@ -2442,6 +2428,7 @@ l$hff
 l2|X/gGe
 log10
 m0k0$
+mC ,)t
 mL+7H
 m_Count == 0
 m_ElementCount == 0
@@ -2620,6 +2607,7 @@ ownership == KV3_COPY_EXTERNAL
 p UATAUAVAWH
 p WATAUAVAWH
 p WAVAWH
+p&86{
 p*W4H
 p0R^G'
 p;Y>u
@@ -2649,7 +2637,6 @@ pLoadingResource->GetExtRefDepth() > GetExtRefDepth()
 pManifest
 pManifest != nullptr || FindLoadingResource( hReferringResource )
 pManifest->IsMarkedForDeletion()
-pMemory[i] == 0
 pMeta
 pOutHandle
 pParent
@@ -2721,6 +2708,7 @@ s_nConnectionCount > 0
 s_nRegistrationCount < V_ARRAYSIZE(s_pConnectionRegistration)
 s_nResourceFCRegisteredCount > 0
 saveCtx.GetResult() == KV3TRANSFER_SUCCESS
+sbwiwyRt
 schemasystem
 set_profile_mode
 sm_pConfigRegistry->m_nCount >= 0 && sm_pConfigRegistry->m_nCount < V_ARRAYSIZE( sm_pConfigRegistry->m_pInfo )
@@ -2777,7 +2765,8 @@ t4L9:t/H
 t7HcP
 tHI9]
 tRLcY
-t[D9-Em
+tV9-b
+t[D9-
 t_M9>t
 ta91}
 table
@@ -2905,7 +2894,6 @@ y\PD>!
 |$hHc
 |)L9c
 |Lu?c
-|`S,k^
 |b=})>
 }2fff
 }8A8|$Dt

@@ -10,7 +10,6 @@
 	JR>8o
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	[builtin#%d]:
 	_V_StringAfterPrefix
 	_V_StringAfterPrefixCaseSensitive
@@ -108,7 +107,6 @@
 !IsInternalTypeShortArray( Internal_Type() )
 !V_isempty( pId )
 !bAnyLeftToDecommit
-!bLooksLikeABug
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
 !lua_isnil( pState, -1 )
@@ -143,6 +141,7 @@ $`<`t
 %g %g %g %g
 %s %p [%f %f %f]
 %s - %s(%d)
+%s - Calling an array API on '%s'%s
 %s <null>
 %s called with %d arguments - expected %d
 %s called with %d arguments - expected %d-%d
@@ -161,6 +160,7 @@ $`<`t
 %u nesting levels not completed
 %u-%s
 &?PPPPPPP?
+&L9%U
 &YA1H
 '%s' expected
 '%s' expected (to close '%s' at line %d)
@@ -176,7 +176,6 @@ $`<`t
 'package.preload' must be a table
 'setfenv' cannot change environment of given object
 'tostring' must return a string to 'print'
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( error_value != SOCKET_ERROR ) && ( error_value != WSAENOTCONN )
 (%d,%d)
 (%s) %s:%d
@@ -214,9 +213,6 @@ $`<`t
 (for step)
 (int)m_ReceiveStream.total_out + 1 < m_UncompressedData.NumAllocated()
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (nOffset & (k_LowMemPageSize - 1)) == 0
 (null)
 (pWordEnd - pWordStart) == 2
@@ -247,7 +243,6 @@ $`<`t
 )D$@H#
 )D$PH
 )\ZEo^m/
-)sf<j
 )t$ H
 )t$ H#
 )t$0A
@@ -264,7 +259,6 @@ $`<`t
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *pAfter == '_'
-*rztH
 +C$Hc
 +D$ D
 +D;QD
@@ -445,13 +439,14 @@ $`<`t
 220323000000Z
 220801000000Z
 230714000000Z
-240723235009Z0/
+240801161809Z0/
 241009235959Z0a1
 258EAFA5-E914-47DA-95CA-C5AB0DC85B11
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2L9qhu
 2]fQ	?5!
+2hM|(
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 311109235959Z0b1
@@ -462,6 +457,7 @@ $`<`t
 380115120000Z0b1
 3>N;kU
 3>fvw
+3RT`J6
 3mq+<
 3u:D#
 4$u.A
@@ -499,9 +495,7 @@ $`<`t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8Et8A
 8Ht;I
-8Ma_O
 8Q<u}H
-8[>"/
 8[tWfA
 8\$Pt
 8\$Pt>
@@ -536,7 +530,6 @@ $`<`t
 9t$Pu	
 9t$|umI;
 9|$PtHHc
-:	V_qsort_s
 :%t H
 :;<=>?>>@
 :>)*	v
@@ -583,7 +576,6 @@ $`<`t
 </%s>
 <0:08
 <0u2H
-<8PTN
 <:taH
 <:u2H
 <=u!H
@@ -632,6 +624,7 @@ $`<`t
 <{uVA
 <}t$<-t
 <}tSH
+=	V_qsort_s
 = {[8V
 =(debug command)
 =(load)
@@ -642,6 +635,7 @@ $`<`t
 >+>ZQ"v
 >0<0:
 ><![CDATA[%s]]>
+>@8=m
 >H;A uCH
 >Mp$d
 >ffffff
@@ -1020,7 +1014,6 @@ C:\buildworker\citadel_rel_win64\build\_build_\vscript\_vpc_vscript\default\win6
 C:\buildworker\citadel_rel_win64\build\src\common\pcre_matches_regex.cpp
 C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\entity2\variant.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\assert_base.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitstring.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
@@ -1130,11 +1123,6 @@ CNopVM::ReadState
 CNopVM::WriteState
 COMMIT
 COMSPEC
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CP+C(
 CPCRE_CompiledRegEx::Optimize
 CRC64_ProcessBuffer
@@ -1242,7 +1230,6 @@ Conditional breakpoints are not supported
 Connection
 Connection: Upgrade
 Connection:Close
-Construction is only allowed from the resolve function
 Constructor called without a class constructor - internal error?
 Content-Length:%u
 Content-Type:application/json; charset=UTF-8
@@ -1260,7 +1247,6 @@ Cuneiform
 Cy2@K>
 Cypriot
 Cyrillic
-D	V_sincosf
 D W?{W
 D!l$xA
 D#C|D
@@ -1408,6 +1394,10 @@ D8|$pu
 D8|$xu
 D8}/t
 D8}?t	H
+D9%<8
+D9%V0
+D9%d6
+D9%v4
 D9A(t
 D9A,u
 D9T$xt7
@@ -1425,7 +1415,6 @@ D9v(D
 D9|$L
 D9|$Xu
 D9~(D
-D;%Fl
 D;C8r
 D;F8r
 D;G,|
@@ -1461,7 +1450,6 @@ Deflate data does not end with required tail
 DeflateInit2 failed
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 Deseret
 Devanagari
 DigiCert Assured ID Root CA0
@@ -1501,6 +1489,7 @@ ERCPE3
 ERROR: Debugger.getScriptSource: invalid scriptId '%s' requested
 ERROR: Debugger.getScriptSource: no scriptId given
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 Eatan2
 EconItemToolModel_001
 Egyptian_Hieroglyphs
@@ -1532,6 +1521,7 @@ FDesc
 FFFFFFFFFFFFFFFF
 FHfff
 FILE*
+FV4 =E
 Failed to accept an incoming %s connection
 Failed to find %s
 Failed to read %s
@@ -1559,6 +1549,7 @@ FreeLibrary
 Friday
 FromFileUri
 Function not implemented
+G	V_sincosf
 G H;G(s
 G(H;G0r
 G(I;G0r
@@ -1593,7 +1584,6 @@ Georgian
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBreakpointHitCondition
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -1639,7 +1629,6 @@ Gt$XA
 Gt$XD
 Gujarati
 Gurmukhi
-GzT6iI3k
 H!D$ I
 H!T$0D
 H*0"ZOW
@@ -1656,6 +1645,7 @@ H+Y E
 H+Y H
 H+^ A
 H+^(H
+H+doZ
 H+s H
 H+} H
 H-^Eu
@@ -1752,7 +1742,6 @@ HandleAsStringFailure
 Hangul
 Hanunoo
 Hc);i
-Hc-?o
 Hc@\D
 HcAPH
 HcC H
@@ -1798,7 +1787,6 @@ HostStateMgr001
 HvfA9	
 HvfA9	rj
 HvfD;
-I	V_snprintf
 I H;K(
 I+4$H
 I;M0r>H
@@ -1842,7 +1830,6 @@ Inspector message result is not a table
 Inspector.
 InstallSchemaBindings
 Int64
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Interrupted function call
 Invalid WS leader 0x%02x
@@ -1896,6 +1883,7 @@ K2K2K2
 K4H9B t
 K8uFL
 KERNEL32.dll
+KGp`z
 KV3Helper_CheckValueNumericCast
 K`L9 u9
 K`L98
@@ -1904,7 +1892,6 @@ Kannada
 Katakana
 Kayah_Li
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
 KeyValues3::FormatValueAsString
 KeyValues3::GetArrayElementCount
 KeyValues3::GetBasicTypeString
@@ -1920,6 +1907,7 @@ Kharoshthi
 Khmer
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ E3
@@ -2184,14 +2172,12 @@ Old_South_Arabian
 Old_Turkic
 Only TCP sockets are implemented at the moment.
 Operation not permitted
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Oriya
 Osmanya
 Overlay.
 P(fff
 P>q_Y~
+P?7eg<
 PANIC: unprotected error in call to Lua API (
 PA]][
 PA^^]
@@ -2221,6 +2207,7 @@ Plat_DebugPrint
 Plat_DebugString
 Plat_ExitProcess
 Plat_FatalErrorFunc
+Plat_GetTime
 Plat_IsFile
 Plat_IsInDebugSession
 Plat_MSTime
@@ -2398,7 +2385,6 @@ Sunday
 Syloti_Nagri
 Syriac
 SystemFunction036
-T	V_stricmp_fast
 T$ D)s
 T$ E3
 T$ Lc
@@ -2609,6 +2595,7 @@ VirtualQuery
 VisBuilder_001
 Visual C++ CRT: Not enough memory to complete call to strerror.
 Vrad3_001
+W	V_stricmp_fast
 WAITING FOR VSCRIPT DEBUGGER CONNECTION for script '%s' -- '-vscriptdebug_script' was provided on the command line.
 WARNING: Lua allocation of %llu failed
 WARNING: Lua breakpoint regex '%s' did not compile
@@ -3479,7 +3466,6 @@ lua_shipping_assert_on_error
 luaopen_%s
 l|%d|%s
 m(L+m8fD
-m,Evh
 m0k0$
 mL+7H
 m_ConnectionType == CT_INDETERMINATE && m_SocketProtocol == SP_INDETERMINATE
@@ -3539,6 +3525,7 @@ modfClog
 module
 module '%s' not found:%s
 mwtMH
+mxAV?
 n(;n,v#H
 n03>Pu
 nArguments == 1
@@ -3647,7 +3634,6 @@ pContext
 pEntry >= m_Values
 pFnBinding->m_desc.GetNumParameters() <= LUA_GLUE_MAX_PARAM_COUNT
 pInstance
-pMemory[i] == 0
 pMeta
 pParent
 pPath
@@ -3700,6 +3686,7 @@ rNm>)
 rQf;\$|
 rTf;\$|
 rUf;\$lrD
+r^D|g1*M
 r_f;\$l
 random
 randomseed
@@ -3994,7 +3981,7 @@ tB@80t=
 tEHcR
 tLH)s
 tRLcY
-tUH959
+tUH95
 tZH9\$ uSH9\$(uL
 t_M9>t
 table
@@ -4230,7 +4217,6 @@ x=`sTH
 x>fff
 xOHcC
 xWI96tRI
-xZ%ZK
 xdigit
 xmlns
 xpcall
@@ -4245,6 +4231,7 @@ z"u f
 z7u5D;B0s
 z8u6A;Q0s
 z>@G'h
+zC{^D
 zRuPL
 zY;>u:m	
 { "Browser" : " INSPECTOR_BROWSER_NAME ", "Protocol-Version" : " INSPECTOR_PROTOCOL_VERSION ", "User-Agent" : " INSPECTOR_USER_AGENT ", "webSocketDebuggerUrl" : "ws://localhost:41000/process/%u" }

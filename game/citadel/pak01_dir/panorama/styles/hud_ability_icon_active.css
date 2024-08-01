@@ -22,7 +22,7 @@ DraggableAbilityIcon.NoAbility
 	opacity: 0;
 }
 
-.in_item_shop DraggableAbilityIcon.NoAbility,.gDetailView DraggableAbilityIcon.NoAbility,.wants_scoreboard DraggableAbilityIcon.NoAbility
+.gShopOpen DraggableAbilityIcon.NoAbility,.gDetailView DraggableAbilityIcon.NoAbility,.wants_scoreboard DraggableAbilityIcon.NoAbility
 {
 	opacity: 0.1;
 }
@@ -568,7 +568,7 @@ Label.ability_key
 	visibility: collapse;
 	text-overflow: shrink;
 	font-weight: semi-bold;
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 	text-shadow: 0px 0px 5px 2.0 #000000;
 }
 

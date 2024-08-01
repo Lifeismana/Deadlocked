@@ -5,11 +5,11 @@
 	!s99
 	%.*s
 	%s at offset %d, 
+	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_isnand
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_StringAfterPrefixCaseSensitive
 	_V_strEndsWith
 	_V_strncmp
@@ -57,7 +57,6 @@
  : unexpected input...
  <-- Arg '%s'
  <-- Retval '%s'
- ?InternalFieldCount@Object@v8@@QEBAHXZ
  A\_[
  A]A\_^[
  A]^]
@@ -112,7 +111,6 @@
 !CheckForWaitComplete( pCursor, pTagName, tagValue, true )
 !IsInternalTypeShortArray( Internal_Type() )
 !IsWaitingOnAutoWake( pCursor )
-!bLooksLikeABug
 !fakeEnt.m_bDestroyed
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
@@ -130,9 +128,8 @@
 !pDestClass->m_LibrariesIncludingAncestors.HasElementMatching( [ pLibrary ] ( const SchemaClassInfoHandle_t &pCandidate ) { return SchemaClassInfosAreExactlyEqual( pLibrary, pCandidate ); } )
 !pInstance->GetInit()
 !pOutStr->IsEmpty()
-"?IsExternal@Value@v8@@QEBA_NXZ
-"?IsFunction@Value@v8@@QEBA_NXZ
-%?IsObject@Value@v8@@QEBA_NXZ
+$?InstantiateModule@Module@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@P6A?AV?$MaybeLocal@VModule@v8@@@2@0V?$Local@VString@v8@@@2@V?$Local@VFixedArray@v8@@@2@V?$Local@VModule@v8@@@2@@Z@Z
+%?InternalFieldCount@Object@v8@@QEBAHXZ
 %d %d %d
 %d %d %d %d
 %d CallInfos:
@@ -150,6 +147,8 @@
 %f %f %f %f
 %s '%s' (%s)
 %s - Blackboard reference %s: %u (%s) type mismatches
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s - Could not find blackboard instance for %s
 %s - Could not find blackboard reference %s: %u (%s)
 %s [%u] - %s
@@ -167,13 +166,14 @@
 %s: value %s must be marked with a resource_name: prefix
 %s: value %s must be marked with a soundevent: prefix
 %s::%s (%u)
+&%?Int32Value@Value@v8@@QEBA?AV?$Maybe@H@2@V?$Local@VContext@v8@@@2@@Z
 &YA1E
 &YA1H
 ', type<
 ',=?k
 ': [%d %s]
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
+'?IsExternal@Value@v8@@QEBA_NXZ
+'?IsFunction@Value@v8@@QEBA_NXZ
 ( fakeEnt.m_nHandle.WeakHandle() == nHandle )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( nFlags & KEYVALUES3_AS_STRING_APPEND ) == 0
@@ -183,6 +183,7 @@
 (%d,%d)
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
+(=?Resolve@Resolver@Promise@v8@@QEAA?AV?$Maybe@_N@3@V?$Local@VContext@v8@@@3@V?$Local@VValue@v8@@@3@@Z
 (A\[H
 (A^A\_[
 (A^A]_^
@@ -198,6 +199,7 @@
 (D$pL
 (Expecting %s)
 (Expecting EOF)
+(I?Value@External@v8@@QEBAPEAXXZ
 (Lc)H
 (None)
 (Visit( pPart->GetCondition(), pOutResult, pOutError )) == (GenericExprResult_t::OK)
@@ -212,9 +214,6 @@
 (end of input).
 (f*^[0
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (null)
 (t$ 3
 (t$ H
@@ -226,6 +225,7 @@
 (|$0f9{
 (|$@H
 (|$@I
+)4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )>6{1n
 )D$`H;
 )t$ H
@@ -239,7 +239,8 @@
 )|$0H
 )|$@H
 )|$`H
-*:?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VValue@v8@@@2@H@Z
+*4?NewFromUtf8Literal@String@v8@@CA?AV?$Local@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
+*?IsObject@Value@v8@@QEBA_NXZ
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 +M<7>
@@ -251,13 +252,10 @@
 , at offset %d
 , near %s
 ,/<-w
-,?MakeWeak@api_internal@v8@@YAXPEA_KPEAXP6AXAEBV?$WeakCallbackInfo@X@2@@ZW4WeakCallbackType@2@@Z
-,?Message@TryCatch@v8@@QEBA?AV?$Local@VMessage@v8@@@2@XZ
 ,W5y+
 - Graph Def '
--?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
--?NewFromUtf8Literal@String@v8@@CA?AV?$Local@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
--?NewInstance@ObjectTemplate@v8@@QEAA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
+-?IsolateFromNeverReadOnlySpaceObject@internal@v8@@YAPEAVIsolate@12@_K@Z
+-?Length@Array@v8@@QEBAIXZ
 -Stop: 
 -end of input-(
 -memory-
@@ -449,7 +447,6 @@
 .xJ>Hf
 .xdata
 .xdata$x
-/-?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 />58d%
 0 0 0
 0 0 0 0
@@ -475,6 +472,7 @@
 0A_A^_
 0A_A^_^]
 0A__]
+0A__^][
 0HcB(L
 0IcG(L
 0iN>/
@@ -488,8 +486,10 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240723235023Z0/
+240801161818Z0/
 241009235959Z0a1
+2?MakeWeak@api_internal@v8@@YAXPEA_KPEAXP6AXAEBV?$WeakCallbackInfo@X@2@@ZW4WeakCallbackType@2@@Z
+2?Message@TryCatch@v8@@QEBA?AV?$Local@VMessage@v8@@@2@XZ
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2YA1I
@@ -506,26 +506,28 @@
 380115120000Z0b1
 3>N;kU
 3>fvw
+3?New@Integer@v8@@SA?AV?$Local@VInteger@v8@@@2@PEAVIsolate@2@H@Z
+3?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
+3?New@ObjectTemplate@v8@@SA?AV?$Local@VObjectTemplate@v8@@@2@PEAVIsolate@2@V?$Local@VFunctionTemplate@v8@@@2@@Z
+3?New@Resolver@Promise@v8@@SA?AV?$MaybeLocal@VResolver@Promise@v8@@@3@V?$Local@VContext@v8@@@3@@Z
+3?New@Symbol@v8@@SA?AV?$Local@VSymbol@v8@@@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@@Z
 3mq+<
 4/tNC
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
 4Iu+H
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
-5E?WriteUtf8@String@v8@@QEBAHPEAVIsolate@2@PEADHPEAHH@Z
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
-6?Resolve@Resolver@Promise@v8@@QEAA?AV?$Maybe@_N@3@V?$Local@VContext@v8@@@3@V?$Local@VValue@v8@@@3@@Z
+6?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
 6I]Dc
 6OB,n_
 70503
-7?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@IV?$Local@VValue@v8@@@2@@Z
-7?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
+7??SetInternalField@Object@v8@@QEAAXHV?$Local@VData@v8@@@2@@Z
+7QhsI
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8/t[H
-8?SetInternalField@Object@v8@@QEAAXHV?$Local@VValue@v8@@@2@@Z
-8?SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
+8??SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z
 8A\_[]
 8A]A\
 8A]A\_^
@@ -554,9 +556,10 @@
 9|$`u
 9|$hu
 9~0~@H
-:	V_qsort_s
 : lexer error %d :
+;	V_powf
 ;.|@H
+;4?NewInstance@ObjectTemplate@v8@@QEAA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 ;G(uSL
 ;H9>&X
 ;I9}(tiH
@@ -569,7 +572,6 @@
 <	u\L
 < t=<	t9
 <&r"D
-<(?Length@Array@v8@@QEBAIXZ
 <0:08
 <DOWN>
 <EOF>
@@ -589,13 +591,11 @@
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=-?New@Context@v8@@SA?AV?$Local@VContext@v8@@@2@PEAVIsolate@2@PEAVExtensionConfiguration@2@V?$MaybeLocal@VObjectTemplate@v8@@@2@V?$MaybeLocal@VValue@v8@@@2@UDeserializeInternalFieldsCallback@2@PEAVMicrotaskQueue@2@@Z
-=9?SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
+=	V_qsort_s
 == PulseGraphDef ==
 =imb;D
 =rIQU
 >0<0:
->?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z
 >Mp$d
 >jtm}S
 ?7zQ6$
@@ -613,6 +613,7 @@
 ??1ConsumeCodeCacheTask@ScriptCompiler@v8@@QEAA@XZ
 ??1HandleScope@v8@@QEAA@XZ
 ??1TryCatch@v8@@QEAA@XZ
+??SetSyntheticModuleExport@Module@v8@@QEAA?AV?$Maybe@_N@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@V?$Local@VValue@v8@@@2@@Z
 ??YCUtlString@@QEAAAEAV0@PEBD@Z
 ?Acquire@CUtlString@@QEAAXPEAVCBufferString@@_N@Z
 ?AddString@CUtlSymbolTable@@QEAA?AVCUtlSymbol@@PEBDPEA_N@Z
@@ -628,7 +629,7 @@
 ?Call@Function@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@HQEAV52@@Z
 ?CompileModule@ScriptCompiler@v8@@SA?AV?$MaybeLocal@VModule@v8@@@2@PEAVIsolate@2@PEAVSource@12@W4CompileOptions@12@W4NoCacheReason@12@@Z
 ?CreateHandle@HandleScope@v8@@KAPEA_KPEAVIsolate@internal@2@_K@Z
-?CreateSyntheticModule@Module@v8@@SA?AV?$Local@VModule@v8@@@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@AEBV?$vector@V?$Local@VString@v8@@@v8@@V?$allocator@V?$Local@VString@v8@@@v8@@@std@@@std@@P6A?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V32@@Z@Z
+?CreateSyntheticModule@Module@v8@@SA?AV?$Local@VModule@v8@@@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@AEBV?$MemorySpan@$$CBV?$Local@VString@v8@@@v8@@@2@P6A?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V32@@Z@Z
 ?DebugPrintKV3@@YAXPEBVKeyValues3@@@Z
 ?DisposeGlobal@api_internal@v8@@YAXPEA_K@Z
 ?EndsWith_FastCaseInsensitive@CBufferString@@QEBA_NPEBD@Z
@@ -649,10 +650,9 @@
 ?GetCurrent@Isolate@v8@@SAPEAV12@XZ
 ?GetIsolate@Context@v8@@QEAAPEAVIsolate@2@XZ
 ?GetPromise@Resolver@Promise@v8@@QEAA?AV?$Local@VPromise@v8@@@3@XZ
-?GlobalizeReference@api_internal@v8@@YAPEA_KPEAVIsolate@internal@2@PEA_K@Z
+?GlobalizeReference@api_internal@v8@@YAPEA_KPEAVIsolate@internal@2@_K@Z
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
-?InstantiateModule@Module@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@P6A?AV?$MaybeLocal@VModule@v8@@@2@0V?$Local@VString@v8@@@2@V?$Local@VFixedArray@v8@@@2@V?$Local@VModule@v8@@@2@@Z@Z
 ?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
 ?LoadKV3@@YA_NPEAVCKeyValues3Context@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBD@Z
 ?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBD@Z
@@ -691,7 +691,7 @@
 @8z%u
 @8{(u
 @>%>b
-@?Uint32Value@Value@v8@@QEBA?AV?$Maybe@I@2@V?$Local@VContext@v8@@@2@@Z
+@?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @A\][
 @A\^[
 @A]_[
@@ -737,6 +737,7 @@
 @SUVWAUAWH
 @SUVWAVAWH
 @SUVWAVH
+@SUVWAWH
 @SUVWH
 @SUWH
 @SVATAWH
@@ -800,10 +801,6 @@ A9u ~DH
 A:8ucI
 A;} |
 A>pP&
-A??ToLocalEmpty@api_internal@v8@@YAXXZ
-A?Utf8Length@String@v8@@QEBAHPEAVIsolate@2@@Z
-A?Value@External@v8@@QEBAPEAXXZ
-A?VerifyHostDefinedOptions@ScriptOrigin@v8@@AEBAXXZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ADD_FLOAT
 ADD_INT
@@ -837,7 +834,6 @@ A^^[]
 A^_^[]
 A^_^]
 A_A\][
-A_A\_^[]
 A_A\_^]
 A_A]A\_]
 A_A]^
@@ -857,6 +853,7 @@ A_A^[
 A_A^]
 A_A^_
 A_A^_^]
+A__^[]
 Abort
 Abs Float
 Abs Int
@@ -900,7 +897,6 @@ Attempting to re-define a callback for public method %s.
 Attempting to re-init an instance in domain %s with script %s.
 Attempting to re-register a callback for hook %s.
 August
-B ?Int32Value@Value@v8@@QEBA?AV?$Maybe@H@2@V?$Local@VContext@v8@@@2@@Z
 B(I9A(
 BACKSLASH_CHAR
 BC?>6t9^	c:>
@@ -959,7 +955,6 @@ Bool( %s )
 Boolean
 C ;C$t
 C I!.H
-C-?New@External@v8@@SA?AV?$Local@VExternal@v8@@@2@PEAVIsolate@2@PEAX@Z
 C0Hc	H
 C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_firecursors_h_schema.sc.cc
 C:\buildworker\citadel_rel_win64\build\_build_\pulse_runtime_lib\_vpc_pulse_runtime_lib\default\win64\_schema_\release\pulse_cell_h_schema.sc.cc
@@ -981,12 +976,12 @@ C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\generic_expr.g
 C:\buildworker\citadel_rel_win64\build\src\mathlib\extended\generic_expr_eval_kv3.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\generic_expr.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\generic_expr_eval.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\gap_variant.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\gap_variant_function_library_support.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_cell.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_graph_instance.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_interface.h
+C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_runtime_lib.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_test_domain.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\pulse_type.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3typemanager.h
@@ -1187,11 +1182,6 @@ CMemAllocSystemInitialize
 COMMA
 CONVERT_VALUE
 COUNT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPulseCell_Base
 CPulseCell_Base::ConstructCellInstanceStorageInPlace
 CPulseCell_Base::DestructCellInstanceStorageInPlace
@@ -1565,10 +1555,6 @@ CPulseSystem::StartReloadingInstances
 CPulseSystem::Test_InstallProceduralGraphDef
 CPulseSystem::Test_ReloadProceduralGraphDef
 CPulseSystem::UnregisterListener::<lambda_1>::operator ()
-CPulseTestFuncs_DerivedDomain
-CPulseTestFuncs_DerivedDomain!GetCursorValueA
-CPulseTestFuncs_DerivedDomain!SetCursorValueA
-CPulseTestFuncs_DerivedDomain::Schema_VerifyBindingIsRegistered
 CPulseTestFuncs_LibraryA
 CPulseTestFuncs_LibraryA!Event_AGreaterThan5
 CPulseTestFuncs_LibraryA!Event_AValueChanged
@@ -1692,7 +1678,9 @@ CSchemaType mismatch: meta '
 CSchemaType::AssertEqual
 CStrongHandle<struct ResourceBindingVoid_t>::Shutdown
 CTestDomainDerived_Cursor
+CTestDomainDerived_Cursor!GetCursorValueA
 CTestDomainDerived_Cursor!GetCursorValueB
+CTestDomainDerived_Cursor!SetCursorValueA
 CTestDomainDerived_Cursor!SetCursorValueB
 CTier2ShutdownCallback::RunAllCallbacks
 CURSOR_ADD_TAG
@@ -1949,7 +1937,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 Convert %s R%d <- %s R%d
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
@@ -1969,7 +1956,6 @@ Cursor [%s] @ %.2f. Cell: %u => %s: %s
 Cursor[ ptr:%p | id:%d | graph:%p ]: Observer notifying cell ptr:%p id:%d of result:%d from Subject:%d
 Cursor[ ptr:%p | id:%d | graph:%p ]: Register observer:%d
 Cursor[ ptr:%p | id:%d | graph:%p ]: Resumed from cell ptr:%p id:%d
-D	V_sincosf
 D!l$xA
 D$ -#
 D$ 2Q
@@ -2039,10 +2025,10 @@ D$HA#
 D$HE3
 D$L;y
 D$P@G
+D$PA;
 D$PE3
 D$PH+
 D$PI;
-D$PLc
 D$`E3
 D$`H;
 D$hH;
@@ -2050,7 +2036,6 @@ D$hHc
 D$pL;
 D$xBE
 D+|$0fD;g
-D0?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
 D81uUL9r
 D8<>u
 D8e@u
@@ -2080,7 +2065,6 @@ Default echo string.
 DefaultTime
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 Deprecated use of 'serverpointentity'. Prefer 'cspointscript'.
 Derived
 Derived Func A
@@ -2109,10 +2093,10 @@ Do not stop the current yielding node, but do not continue to the next node afte
 Domain: %s
 Double add of KV3Transfer interface '%s'
 Double-save to Member '%s'
-E	V_sind
 E0HcH
 E0Lc`
 E8q(u
+E?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z
 E@f;X
 EH*?H
 EHHcI
@@ -2125,6 +2109,7 @@ EQ_FLOAT
 EQ_INT
 EQ_OPAQUE_HANDLE
 EQ_PANEL_HANDLE
+EQ_SCHEMA_ENUM
 EQ_STRING
 EQ_TEST_HANDLE
 ERROR: CUtlSymbolTableLarge element limit of %u exceeded
@@ -2134,6 +2119,7 @@ ESCAPE_CODE
 EXPONENT
 EXPORTSYSTEM_INTERFACE_VERSION_001
 Early exit
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 Encountered too many releases for resource "%s"
@@ -2233,6 +2219,7 @@ ExternalNameForInternalType
 Extraneous token
 F.3gL
 F.3gM
+F?ToString@Value@v8@@QEBA?AV?$MaybeLocal@VString@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to register all schema data: %s
 FATAL: %s called on a pool context (no root available)
@@ -2307,7 +2294,9 @@ Func( %s )
 Function signature which has been replaced after compilation.
 Function signature which will be replaced after compilation.
 Functions not supported in this evaluator (%s)
+G	V_sincosf
 G fA;
+G?Uint32Value@Value@v8@@QEBA?AV?$Maybe@I@2@V?$Local@VContext@v8@@@2@@Z
 GD$(H
 GD$8H
 GD$HA
@@ -2349,7 +2338,6 @@ GameResourceServiceServerV001
 GameTime_t
 GameUIService_001
 GapArgumentListSignature_t::GetArg
-GatherInparams
 Generate a random integer between min and max (inclusive)
 GenerateInt
 GenerateIntWithResult
@@ -2380,7 +2368,6 @@ GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
 GetBlackboardReference R%d <- BR%d (%s)
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetClassNameFromBindableName( pQualifiedName, &className )
 GetCommandLineA
@@ -2433,6 +2420,7 @@ G|$8H
 G|$8M
 G|$HH
 G|$XA
+H	V_sind
 H!D$ I
 H!T$0D
 H#D$HH+
@@ -2441,6 +2429,7 @@ H-^Eu
 H9(tO
 H9+t	H
 H9/t	H
+H95Wr
 H97u+A
 H98t2
 H9>t	H
@@ -2520,9 +2509,9 @@ HelpSystem_001
 Hook register '%s' invoked with invalid function as first paramter.
 Hook register '%s' invoked with unrecognized 'this' value.
 HostStateMgr001
-I	V_snprintf
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
+I?Utf8Length@String@v8@@QEBAHPEAVIsolate@2@@Z
 ID_CHAR
 IGapHost_Cursor
 IGapHost_ExecLog
@@ -2541,6 +2530,7 @@ IPulseSystem_001
 IResourceTypeManager::GetNonStreamingDataLoadSize
 IResourceTypeManager::IsStreamingDataAlreadyLoaded
 IResourceTypeManager::LoadStreamingData
+IS1oCQ
 IS_TYPESAFE_INTEGER
 Ic/Hc
 IcG8E3
@@ -2661,7 +2651,6 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be PulseRu
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be PulseRuntimeVarIndex_t)
 Int( %d )
 Integer
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal error: handle mismatch '%s' (%d != %d)
 Internal_ExpandCompactArray: unhandled compact array type %d%s
@@ -2697,15 +2686,14 @@ IsValid()
 IsValidCodePage
 IsValidIndex( i )
 IsWaitingOnAutoWake( pCursor )
-J5(ig
 J>@G_
+JO?WriteUtf8@String@v8@@QEBAHPEAVIsolate@2@PEADHPEAHH@Z
 JUMP_COND
 January
 Jump to Instr I%d
 JumpOrLeap( C%d:I%d )
 K USAUAVI
 K&>.yC
-K-?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z
 K0HcQ
 KERNEL32.dll
 KLLcCH
@@ -2718,8 +2706,6 @@ Keep a history of all instructions run on a per graph basis.
 Keep running normally.
 KeyValueCache001
 KeyValues3
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::ArrayAddToTail
 KeyValues3::ArrayInsertMultipleBefore
 KeyValues3::CopyFrom
@@ -2767,6 +2753,7 @@ Kill elegantly.
 Kill immediately.
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!|$(L!
 L$ E3
 L$ H;
@@ -2919,6 +2906,7 @@ MPulseDomainHookInfo
 MPulseDomainOptInFeatureTag
 MPulseEditorHeaderIcon
 MPulseEditorHeaderText
+MPulseEditorIsControlFlowNode
 MPulseExpressionAlias
 MPulseGraphHook
 MPulseInstanceDomainInfo
@@ -2999,6 +2987,7 @@ NE_FLOAT
 NE_INT
 NE_OPAQUE_HANDLE
 NE_PANEL_HANDLE
+NE_SCHEMA_ENUM
 NE_STRING
 NE_TEST_HANDLE
 NO_FLAGS
@@ -3048,9 +3037,6 @@ Open a specific graph instance by id
 Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
 Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success.
 Or R%d <- R%d || R%d
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 P 9_p
 P;l$h
 PANEL_ID
@@ -3100,7 +3086,7 @@ PInstruction_t<34>::Run::<lambda_1>::operator ()
 PInstruction_t<37>::ResolveAndCheck
 PInstruction_t<38>::ResolveAndCheck
 PInstruction_t<6>::ResolveAndCheck::<lambda_1>::operator ()
-PInstruction_t<72>::ResolveAndCheck
+PInstruction_t<74>::ResolveAndCheck
 PInstruction_t<8>::ResolveAndCheck::<lambda_1>::operator ()
 POS_FLOATLITERAL
 POS_INTLITERAL
@@ -3121,11 +3107,13 @@ PSpecificComparisonInstruction_t<26,1>::ResolveAndCheck
 PSpecificComparisonInstruction_t<26,2>::ResolveAndCheck
 PSpecificEqualityInstruction_t<27,0>::ResolveAndCheck
 PSpecificEqualityInstruction_t<27,11>::ResolveAndCheck
+PSpecificEqualityInstruction_t<27,16>::ResolveAndCheck
 PSpecificEqualityInstruction_t<27,1>::ResolveAndCheck
 PSpecificEqualityInstruction_t<27,2>::ResolveAndCheck
 PSpecificEqualityInstruction_t<27,3>::ResolveAndCheck
 PSpecificEqualityInstruction_t<28,0>::ResolveAndCheck
 PSpecificEqualityInstruction_t<28,11>::ResolveAndCheck
+PSpecificEqualityInstruction_t<28,16>::ResolveAndCheck
 PSpecificEqualityInstruction_t<28,1>::ResolveAndCheck
 PSpecificEqualityInstruction_t<28,2>::ResolveAndCheck
 PSpecificEqualityInstruction_t<28,3>::ResolveAndCheck
@@ -3179,17 +3167,16 @@ Pen Down
 Pen Up
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_IsInTestMode
 Plat_NonFatalErrorFunc
 Plat_RegisterModule
 Pointers cannot be used as numeric values
 PostProcessingSystem_001
-PrepareOutstores_Fastpath
 Print String With Editor Suggestions
 Print String With Leaf Suggestions
 Print string with suggestions from editor code.
@@ -3607,7 +3594,6 @@ Sub R%d <- R%d - R%d
 Succeeded
 Sunday
 Synchronous - wait for the method to fully complete before returning
-T	V_stricmp_fast
 T$ E3
 T$ H;
 T$ Hc
@@ -3643,7 +3629,6 @@ Test Optional Parameters  After Defaults Added
 Test Optional Parameters  After Reorder Sparse Defaults
 Test Optional Parameters  Before Defaults Added
 Test Optional Parameters  Before Reorder Sparse Defaults
-Test functions for the derived test domain.
 Test node that just generates the integer 50. Nothing to see here!
 Test node that picks between two outflows as specified in the test domain.
 Test node that randomly picks between two outflows.
@@ -3676,7 +3661,6 @@ Tuesday
 Turtle Graphics Domain
 TurtleGraphics
 Typesafe Int
-U-?New@Integer@v8@@SA?AV?$Local@VInteger@v8@@@2@PEAVIsolate@2@H@Z
 UATAUAVAWH
 UATAVH
 UAVAWH
@@ -3687,10 +3671,10 @@ USAVH
 USVAVH
 USVWATAUAVAWH
 USVWATAUAVH
-USVWATAWH
 USVWAUAVAWH
 USVWAUH
 USVWAVH
+USVWAWH
 USWAUAVH
 USWAUH
 UUUUUU
@@ -3816,7 +3800,6 @@ V_atofloat32
 V_atoi
 V_cosd
 V_fmodd
-V_fmodf
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -3831,6 +3814,7 @@ Vector2D
 Vector3
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WATAUAVAWH
 WAUAVH
@@ -3849,7 +3833,6 @@ WideCharToMultiByte
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
-WriteOutstores_Slowpath
 X to the Y power
 XA_A^_^][
 XHcGPM
@@ -3857,7 +3840,6 @@ Xt$xH
 Y9"SD
 Yield, Resume=%s
 YpHcAhHk
-Z!?IsArray@Value@v8@@QEBA_NXZ
 [ Chunk%d ]
 [ written by I%d last-read I%d ]
 [***INVALID INSTRUCTION %d***]
@@ -3913,7 +3895,6 @@ Z!?IsArray@Value@v8@@QEBA_NXZ
 \$`E3
 \$hHc
 \$xu3M
-\??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 \T$,t
 \T$<t
 \T$Dt
@@ -3921,7 +3902,6 @@ Z!?IsArray@Value@v8@@QEBA_NXZ
 \t3D8T$(t
 ]J<0"0i3
 _ ;_$t
-_-?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
 _RDATA
 _Target
 __CursorQueue__
@@ -3947,6 +3927,7 @@ __vectorcall
 _class
 _gUT^
 `.rdata
+`3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `A^A\_^]
 `A^_^
 `A^_^][
@@ -3955,6 +3936,7 @@ _gUT^
 `A_A^A]A\_^]
 `A_A^_^]
 `A_][
+`F?ToLocalEmpty@api_internal@v8@@YAXXZ
 `RTTI
 `anonymous namespace'
 `copy constructor closure'
@@ -3992,6 +3974,7 @@ _gUT^
 `vftable'
 `virtual displacement map'
 a7hIw
+a['viE<g
 abcdefghijklmnopqrstuvwxyz
 actualType.IsValid()
 address family not supported
@@ -4050,7 +4033,6 @@ bDidInsert
 bFailOnCancel
 bInAutoWakeList
 bInherit
-bLegalTypeChange
 bValue
 bValue == false
 bValue == true
@@ -4061,12 +4043,14 @@ bad function call
 bad message
 binary_blob
 bindingType.IsValid()
+bk{4#
 bool8
 boolean
 bp(=>?g
 broken pipe
 c [1>H'
 c(>\,
+c.0%&
 cached_fp == invalid_function_sentinel()
 cached_fp == new_fp
 cached_handle == ((HANDLE)(LONG_PTR)-1)
@@ -4093,7 +4077,6 @@ d$PI9
 d$XIc
 d$`tLA
 d$hL;
-d-?New@ObjectTemplate@v8@@SA?AV?$Local@VObjectTemplate@v8@@@2@PEAVIsolate@2@V?$Local@VFunctionTemplate@v8@@@2@@Z
 dddd, MMMM dd, yyyy
 destination address required
 device or resource busy
@@ -4182,11 +4165,10 @@ http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
-hyQ@8YJu%
 i < ( 1 << HandleBits )
 i u!H
-i-?New@Resolver@Promise@v8@@SA?AV?$MaybeLocal@VResolver@Promise@v8@@@3@V?$Local@VContext@v8@@@3@@Z
 identifier removed
+igb2E
 illegal byte sequence
 inappropriate io control operation
 ineID
@@ -4206,6 +4188,7 @@ invalid_parameter
 io error
 is a directory
 is also the end of the line, so you must check your lexer rules
+j>?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@IV?$Local@VValue@v8@@@2@@Z
 j@87te3
 jj@0HK4
 k0i0$
@@ -4574,7 +4557,9 @@ ntelA
 num > 0
 number
 o Hc3;s
-o??ToString@Value@v8@@QEBA?AV?$MaybeLocal@VString@v8@@@2@V?$Local@VContext@v8@@@2@@Z
+o&?IsArray@Value@v8@@QEBA_NXZ
+o3?New@Context@v8@@SA?AV?$Local@VContext@v8@@@2@PEAVIsolate@2@PEAVExtensionConfiguration@2@V?$MaybeLocal@VObjectTemplate@v8@@@2@V?$MaybeLocal@VValue@v8@@@2@UDeserializeInternalFieldsCallback@2@PEAVMicrotaskQueue@2@@Z
+oI?VerifyHostDefinedOptions@ScriptOrigin@v8@@AEBAXXZ
 open_asset %s
 operation canceled
 operation in progress
@@ -4591,9 +4576,9 @@ ownership == KV3_COPY_EXTERNAL
 p WATAUAVAWH
 p WAVAWH
 p*W4H
-p-?New@Symbol@v8@@SA?AV?$Local@VSymbol@v8@@@2@PEAVIsolate@2@V?$Local@VString@v8@@@2@@Z
 p0R^G'
 p;Y>u
+p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 pA^A]^][
 pA_A^A\_^[]
 pA_A^A]A\_^[
@@ -4648,7 +4633,6 @@ pLoadContext
 pLoadFromMember
 pLoadFromValue != nullptr
 pLoadFromValue->IsNull()
-pMemory[i] == 0
 pMessage
 pMeta
 pMethod->m_bArg0IsTarget
@@ -4720,7 +4704,6 @@ q0VuH
 qangle
 quaternion
 r	Vr.>T
-r'?IsolateFromNeverReadOnlySpaceObject@internal@v8@@YAPEAVIsolate@12@_K@Z
 r0t.EqualTo( r1t )
 r0t.EqualTo( r1t ) && r0t.EqualTo( r2t )
 r0t.IsSimple( PVAL_BOOL ) && r1t.EqualTo( r2t )
@@ -4873,6 +4856,7 @@ u L9u
 u$D8r(t
 u%@8j(t
 u,!T$(H!T$ 
+u3?New@External@v8@@SA?AV?$Local@VExternal@v8@@@2@PEAVIsolate@2@PEAX@Z
 u3HcH<H
 u4I9}(
 uED8r(t
@@ -4922,8 +4906,8 @@ x';Qh}"Hc
 xA^_[]
 xA^_^]
 xSE;H
-yYWQ(~Bg
 y\PD>!
+yo;pI
 { AVH
 {0x%x}
 {@9s8|AH
@@ -4985,12 +4969,14 @@ y\PD>!
 |$pt0
 |$xHc
 |)L9c
+|F?ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 |Lu?c
 |aA;N
 |b=})>
 }(fff
 });C$
 }0Lc}(D;}8
+}3?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z
 }>;_$
 }LuHO
 }afff

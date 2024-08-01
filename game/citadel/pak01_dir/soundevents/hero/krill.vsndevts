@@ -14,6 +14,7 @@
 			"sounds/weapons/krill/fire/digger_weapon_fire_05.vsnd",
 			"sounds/weapons/krill/fire/digger_weapon_fire_06.vsnd",
 		]
+		vsnd_duration = 2.377823
 	}
 	MoKrill.Wpn.Impact = 
 	{
@@ -25,6 +26,7 @@
 			"sounds/physics/bullet_impacts/default/default_impact_bullet_03.vsnd",
 			"sounds/physics/bullet_impacts/default/default_impact_bullet_04.vsnd",
 		]
+		vsnd_duration = 0.464921
 	}
 	MoKrill.Scorn.Cast = 
 	{
@@ -32,6 +34,7 @@
 		volume = 0.000000
 		play_from_listener_player = 1.000000
 		vsnd_files = "sounds/abilities/mokrill/digger_scorn_cast.vsnd"
+		vsnd_duration = 4.229909
 	}
 	MoKrill.Scorn.Cast.Dive = 
 	{
@@ -42,6 +45,7 @@
 		volume_rand_min = -0.030000
 		volume_rand_max = 0.020000
 		vsnd_files = "sounds/abilities/mokrill/a1_scorn/cast_dive.vsnd"
+		vsnd_duration = 2.682125
 	}
 	MoKrill.Scorn.Cast.Flutter = 
 	{
@@ -53,6 +57,7 @@
 		volume_rand_min = -0.030000
 		volume_rand_max = 0.020000
 		vsnd_files = "sounds/abilities/mokrill/a1_scorn/cast_flutter.vsnd"
+		vsnd_duration = 2.717417
 	}
 	MoKrill.Scorn.Cast.Liquid = 
 	{
@@ -64,6 +69,7 @@
 		volume_rand_min = -0.300000
 		volume_rand_max = 0.020000
 		vsnd_files = "sounds/abilities/mokrill/a1_scorn/cast_liquid.vsnd"
+		vsnd_duration = 3.151687
 	}
 	MoKrill.Scorn.Heal.Modifier.End = 
 	{
@@ -75,6 +81,7 @@
 		volume_rand_max = 0.020000
 		volume_falloff_min = 400.000000
 		vsnd_files = "sounds/abilities/mokrill/a1_scorn/mod_heal_end.vsnd"
+		vsnd_duration = 1.913000
 	}
 	MoKrill.Scorn.Enemy.Modifier.End = 
 	{
@@ -85,154 +92,17 @@
 		volume_rand_min = -0.030000
 		volume_rand_max = 0.020000
 		vsnd_files = "sounds/abilities/mokrill/a1_scorn/mod_victim_end.vsnd"
+		vsnd_duration = 3.139313
 	}
 	MoKrill.Burrow.Cast.Delay = 
 	{
 		base = "Base.Ability"
-		volume = -9.000000
+		volume = 8.000000
 		volume_falloff_min = 300.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/cast_delay.vsnd"
-	}
-	MoKrill.Burrow.Modifier.Start = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "MoKrill.Burrow.Modifier.Start.Main"
-		soundevent_02 = "MoKrill.Burrow.Modifier.Start.Swt"
-		soundevent_03 = "MoKrill.Burrow.Modifier.Start.Stab"
-		volume = 0.600000
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-	}
-	MoKrill.Burrow.Modifier.Start.Main = 
-	{
-		base = "Base.Ability"
-		volume = -9.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/modifier_start.vsnd"
-	}
-	MoKrill.Burrow.Modifier.Start.Swt = 
-	{
-		base = "Base.Ability"
-		volume = -9.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/modifier_start_swt.vsnd"
-	}
-	MoKrill.Burrow.Modifier.Start.Stab = 
-	{
-		base = "Base.Ability"
-		volume = -9.000000
-		volume_falloff_min = 2.000000
-		pitch = 1.100000
-		vsnd_files = 
-		[
-			"sounds/abilities/mokrill/a2_burrow/cast_stab_1.vsnd",
-			"sounds/abilities/mokrill/a2_burrow/cast_stab_2.vsnd",
-			"sounds/abilities/mokrill/a2_burrow/cast_stab_3.vsnd",
-			"sounds/abilities/mokrill/a2_burrow/cast_stab_4.vsnd",
-		]
-	}
-	MoKrill.Burrow.Travel.Lp = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "MoKrill.Burrow.Travel.Lp1"
-		soundevent_02 = "MoKrill.Burrow.Travel.Lp2"
-		volume = 1.000000
-		use_01 = 1.000000
-		use_02 = 1.000000
-	}
-	MoKrill.Burrow.Travel.Lp1 = 
-	{
-		base = "Base.Ability"
-		delay = 0.000000
-		delay_rand_min = -6.000000
-		delay_rand_max = 0.000000
-		volume_fade_out = 0.300000
-		volume = -6.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/travel_earthy_lp.vsnd"
-	}
-	MoKrill.Burrow.Travel.Lp2 = 
-	{
-		base = "Base.Ability"
-		delay = 0.000000
-		delay_rand_min = -14.000000
-		delay_rand_max = 0.000000
-		volume_fade_out = 0.300000
-		volume = -9.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/travel_tech_lp.vsnd"
-	}
-	MoKrill.Burrow.Cast = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "MoKrill.Burrow.Cast.Flutter"
-		soundevent_02 = "MoKrill.Burrow.Cast.Sharp"
-		soundevent_03 = "MoKrill.Burrow.Cast.Stab"
-		volume = 0.700000
-		use_01 = 1.000000
-		use_02 = 0.000000
-		use_03 = 1.000000
-	}
-	MoKrill.Burrow.Cast.Flutter = 
-	{
-		base = "Base.Ability"
-		volume = -12.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/cast_flutter.vsnd"
-	}
-	MoKrill.Burrow.Cast.Sharp = 
-	{
-		base = "Base.Ability"
-		volume = -3.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/cast_sharp.vsnd"
-	}
-	MoKrill.Burrow.Cast.Stab = 
-	{
-		base = "Base.Ability"
-		volume = -1.000000
-		volume_falloff_min = 0.000000
-		vsnd_files = 
-		[
-			"sounds/abilities/mokrill/a2_burrow/cast_stab_1.vsnd",
-			"sounds/abilities/mokrill/a2_burrow/cast_stab_2.vsnd",
-			"sounds/abilities/mokrill/a2_burrow/cast_stab_3.vsnd",
-			"sounds/abilities/mokrill/a2_burrow/cast_stab_4.vsnd",
-		]
-	}
-	MoKrill.Burrow.Spin.Lp = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "MoKrill.Burrow.Spin.Buzz.Lp"
-		soundevent_02 = "MoKrill.Burrow.Spin.Mech.Lp"
-		soundevent_03 = "MoKrill.Burrow.Spin.Woosh.Lp"
-		volume = 0.700000
-		use_01 = 1.000000
-		use_02 = 1.000000
-		use_03 = 1.000000
-	}
-	MoKrill.Burrow.Spin.Buzz.Lp = 
-	{
-		base = "Base.Ability"
-		volume = -18.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/spin_buzz_lp.vsnd"
-	}
-	MoKrill.Burrow.Spin.Mech.Lp = 
-	{
-		base = "Base.Ability"
-		volume = -12.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/spin_mech_lp.vsnd"
-	}
-	MoKrill.Burrow.Spin.Woosh.Lp = 
-	{
-		base = "Base.Ability"
-		volume = -6.000000
-		delay = 0.000000
-		delay_rand_min = -14.000000
-		delay_rand_max = 0.000000
-		volume_falloff_min = 100.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/spin_whoosh_lp.vsnd"
-	}
-	MoKrill.Burrow.Spin.End = 
-	{
-		base = "Base.Ability"
-		volume = -12.000000
-		vsnd_files = "sounds/abilities/mokrill/a2_burrow/spin_end.vsnd"
+		pitch = 0.900000
+		pitch_rand_max = 0.150000
+		pitch_rand_min = -0.100000
+		vsnd_files = "sounds/abilities/mokrill/a2_burrow/mokrill_a2_burrow_delay.vsnd"
 	}
 	MoKrill.Sandblast.Cast = 
 	{
@@ -248,12 +118,13 @@
 	MoKrill.Sandblast.Cast.Liquid = 
 	{
 		base = "Base.Ability"
-		volume = -6.000000
+		volume = 6.000000
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		volume_rand_min = -0.120000
 		volume_rand_max = 0.100000
 		vsnd_files = "sounds/abilities/mokrill/a3_sandblast/cast_liquid.vsnd"
+		vsnd_duration = 1.876312
 	}
 	MoKrill.Sandblast.Cast.Snake = 
 	{
@@ -264,12 +135,14 @@
 		volume_rand_min = -0.120000
 		volume_rand_max = 0.100000
 		vsnd_files = "sounds/abilities/mokrill/a3_sandblast/cast_snake.vsnd"
+		vsnd_duration = 2.333333
 	}
 	MoKrill.Sandblast.Cast.Tail = 
 	{
 		base = "Base.Ability"
 		volume = -12.000000
 		vsnd_files = "sounds/abilities/mokrill/a3_sandblast/cast_tail.vsnd"
+		vsnd_duration = 2.642625
 	}
 	MoKrill.Combo.Channel.Start = 
 	{
@@ -288,6 +161,7 @@
 		volume = 0.000000
 		volume_falloff_min = 1.000000
 		vsnd_files = "sounds/abilities/mokrill/a4_combo/channel_capture.vsnd"
+		vsnd_duration = 1.380000
 	}
 	MoKrill.Combo.Channel.Start.Swt = 
 	{
@@ -295,6 +169,7 @@
 		volume = 0.000000
 		volume_falloff_min = 10.000000
 		vsnd_files = "sounds/abilities/mokrill/a4_combo/channel_swt.vsnd"
+		vsnd_duration = 1.633333
 	}
 	MoKrill.Combo.Channel.Start.Zap = 
 	{
@@ -302,43 +177,7 @@
 		volume = 0.000000
 		volume_falloff_min = 20.000000
 		vsnd_files = "sounds/abilities/mokrill/a4_combo/channel_zap.vsnd"
-	}
-	MoKrill.Combo.Whoosh = 
-	{
-		type = "citadel_start_multi"
-		soundevent_01 = "MoKrill.Combo.Whoosh.Flutter"
-		soundevent_02 = "MoKrill.Combo.Whoosh.Stab"
-		volume = 0.440000
-		use_01 = 1.000000
-		use_02 = 1.000000
-	}
-	MoKrill.Combo.Whoosh.Flutter = 
-	{
-		base = "Base.Ability.Ult"
-		volume = -15.000000
-		vsnd_files = 
-		[
-			"sounds/abilities/mokrill/a4_combo/whoosh_flutter_01.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_flutter_02.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_flutter_03.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_flutter_04.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_flutter_05.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_flutter_06.vsnd",
-		]
-	}
-	MoKrill.Combo.Whoosh.Stab = 
-	{
-		base = "Base.Ability.Ult"
-		volume = -6.000000
-		vsnd_files = 
-		[
-			"sounds/abilities/mokrill/a4_combo/whoosh_stab_01.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_stab_02.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_stab_03.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_stab_04.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_stab_05.vsnd",
-			"sounds/abilities/mokrill/a4_combo/whoosh_stab_06.vsnd",
-		]
+		vsnd_duration = 2.198375
 	}
 	MoKrill.Combo.Impacts = 
 	{
@@ -359,35 +198,41 @@
 			"sounds/abilities/mokrill/a4_combo/impacts_11.vsnd",
 			"sounds/abilities/mokrill/a4_combo/impacts_12.vsnd",
 		]
+		vsnd_duration = 0.500000
 	}
 	MoKrill.Combo.Duration.Lp = 
 	{
 		type = "citadel_start_multi"
-		soundevent_01 = "MoKrill.Combo.Duration.Laser.Lp"
-		soundevent_02 = "MoKrill.Combo.Duration.Static.Lp"
-		soundevent_03 = "MoKrill.Combo.Duration.Tech.Lp"
+		soundevent_01 = ""
+		soundevent_02 = "MoKrill.Combo.Duration.Tech.Lp"
+		soundevent_03 = "MoKrill.Combo.Duration.Foley.Lp"
 		volume = 0.660000
 		use_01 = 1.000000
 		use_02 = 1.000000
 		use_03 = 1.000000
+		soundevent_04 = ""
+		pitch_adjust = 0.950000
 	}
 	MoKrill.Combo.Duration.Laser.Lp = 
 	{
 		base = "Base.Ability.Ult"
 		delay_rand_min = -9.000000
 		vsnd_files = "sounds/abilities/mokrill/a4_combo/laser_lp.vsnd"
+		vsnd_duration = 14.117188
 	}
 	MoKrill.Combo.Duration.Static.Lp = 
 	{
 		base = "Base.Ability.Ult"
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/mokrill/a4_combo/static_lp.vsnd"
+		vsnd_duration = 3.133333
 	}
 	MoKrill.Combo.Duration.Tech.Lp = 
 	{
 		base = "Base.Ability.Ult"
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/mokrill/a4_combo/tech_lp.vsnd"
+		vsnd_duration = 0.672312
 	}
 	MoKrill.Combo.Cast = 
 	{
@@ -403,12 +248,14 @@
 		base = "Base.Ability.Ult"
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/mokrill/a4_combo/end.vsnd"
+		vsnd_duration = 1.054125
 	}
 	MoKrill.Combo.Cast.Swt = 
 	{
 		base = "Base.Ability.Ult"
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/mokrill/a4_combo/end_swt.vsnd"
+		vsnd_duration = 1.800000
 	}
 	Digger.MovementFoley = 
 	{
@@ -458,6 +305,7 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
+		vsnd_duration = 1.062200
 	}
 	Digger.Melee.SwingLong = 
 	{
@@ -490,12 +338,14 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
+		vsnd_duration = 1.399773
 	}
 	Digger.SlideLandSweetener = 
 	{
 		base = "Base.Hero.Foley.Foot.3d"
 		volume = 2.000000
 		vsnd_files = "sounds/player/foley/krill/krill_slide_land_sweetener.vsnd"
+		vsnd_duration = 2.726813
 	}
 	Digger.SlideLandSweetenerGear = 
 	{
@@ -513,6 +363,7 @@
 			"sounds/player/foley/krill/krill_jump_land_08.vsnd",
 			"sounds/player/foley/krill/krill_jump_land_09.vsnd",
 		]
+		vsnd_duration = 1.190208
 	}
 	Digger.SlideGetUp = 
 	{
@@ -530,6 +381,7 @@
 			"sounds/player/foley/krill/krill_jump_land_08.vsnd",
 			"sounds/player/foley/krill/krill_jump_land_09.vsnd",
 		]
+		vsnd_duration = 1.190208
 	}
 	Digger.Footstep = 
 	{
@@ -554,12 +406,13 @@
 			"sounds/player/footsteps/krill/mokrill_footstep_14.vsnd",
 			"sounds/player/footsteps/krill/mokrill_footstep_15.vsnd",
 		]
+		vsnd_duration = 0.305714
 	}
 	Mo.GruntExert = 
 	{
 		base = "Base.Hero.Foley.Foot.3d"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.100045
+		vsnd_duration = 0.050023
 	}
 	MoKrill.Death = 
 	{
@@ -576,6 +429,7 @@
 			"sounds/vo/krill/emote/krill_pain_death_08.vsnd",
 			"sounds/vo/krill/emote/krill_pain_death_09.vsnd",
 		]
+		vsnd_duration = 0.933923
 	}
 	MoKrill.Effort = 
 	{
@@ -591,6 +445,7 @@
 			"sounds/vo/krill/emote/krill_efforts_07.vsnd",
 			"sounds/vo/krill/emote/krill_efforts_08.vsnd",
 		]
+		vsnd_duration = 0.416122
 	}
 	MoKrill.Effort.Melee = 
 	{
@@ -606,6 +461,7 @@
 			"sounds/vo/krill/emote/krill_efforts_07.vsnd",
 			"sounds/vo/krill/emote/krill_efforts_08.vsnd",
 		]
+		vsnd_duration = 0.416122
 	}
 	Krill.Reload.Start = 
 	{
@@ -614,6 +470,7 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/start.vsnd"
+		vsnd_duration = 0.661973
 	}
 	Krill.Reload.ClipIn = 
 	{
@@ -622,6 +479,7 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/clipin.vsnd"
+		vsnd_duration = 0.700386
 	}
 	Krill.Reload.End = 
 	{
@@ -630,6 +488,7 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/end.vsnd"
+		vsnd_duration = 0.780000
 	}
 	Krill.Reload.Middle = 
 	{
@@ -638,5 +497,56 @@
 		pitch_rand_min = 0.000000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/middle.vsnd"
+		vsnd_duration = 0.390000
+	}
+	MoKrill.Burrow.Cast = 
+	{
+		base = "Base.Ability"
+		volume = 3.000000
+		volume_falloff_min = 300.000000
+		vsnd_files = "sounds/abilities/mokrill/a2_burrow/mokrill_a2_burrow_impact.vsnd"
+	}
+	MoKrill.Burrow.Modifier.Start = 
+	{
+		base = "Base.Ability"
+		volume = 7.000000
+		volume_falloff_min = 300.000000
+		vsnd_files = "sounds/abilities/mokrill/a2_burrow/mokrill_a2_burrow_impact.vsnd"
+	}
+	MoKrill.Burrow.Travel.Lp = 
+	{
+		base = "Base.Ability"
+		delay = 0.000000
+		volume_fade_out = 0.300000
+		volume = 0.000000
+		volume_offset_team = 0.000000
+		volume_offset_opponent = 2.000000
+		vsnd_files = "sounds/abilities/mokrill/a2_burrow/travel_earthy_lp.vsnd"
+		vsnd_duration = 8.900000
+	}
+	MoKrill.Burrow.Spin.Lp = 
+	{
+		base = "Base.Ability"
+		volume = 2.000000
+		volume_falloff_min = 300.000000
+		volume_fade_out = 0.700000
+		volume_fade_in = 0.600000
+		pitch = 1.100000
+		vsnd_files = "sounds/abilities/mokrill/a2_burrow/mokrill_a2_burrow_spin.vsnd"
+	}
+	MoKrill.Burrow.Spin = 
+	{
+		base = "Base.Ability"
+		volume = 4.000000
+		volume_falloff_min = 300.000000
+		volume_fade_out = 0.200000
+		volume_fade_in = 0.100000
+		vsnd_files = "sounds/abilities/mokrill/a2_burrow/mokrill_a2_burrow_emerge.vsnd"
+	}
+	MoKrill.Combo.Duration.Foley.Lp = 
+	{
+		base = "Base.Ability.Ult"
+		volume = 3.000000
+		vsnd_files = "sounds/abilities/mokrill/a4_combo/mokrill_a4_combo_foley.vsnd"
 	}
 }

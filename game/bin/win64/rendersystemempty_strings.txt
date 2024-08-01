@@ -9,7 +9,6 @@
 	V_fprintf
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncmp
 	_V_strncpy
 	_V_strnicmp_fast
@@ -97,10 +96,12 @@
  Lc\$P3
  Lcl$p
  Type Descriptor'
+ [Pool: %.1fmb of %.1fmb]
  bn0s}Q_@r~aoPq
  clean
  delete
  delete[]
+ k|w]p
  new[]
  receiver regenerated
  s%Mcf
@@ -222,7 +223,6 @@ $^fE;
 &?PPPPPPP?
 &xr(*
 ',=?k
-(	V_log2_uint
 ( ( m_nFlags & (TSPEC_VOLUME_TEXTURE|TSPEC_TEXTURE_ARRAY) ) != 0 ) || ( m_nDepth == 1 )
 ( ( m_nFlags & TSPEC_VOLUME_TEXTURE ) == 0 ) || ( ( m_nFlags & TSPEC_TEXTURE_ARRAY ) == 0 )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
@@ -289,6 +289,7 @@ $^fE;
 (d$PD
 (d$`D
 (f*^[0
+(ftP2h
 (int)nType >= 0 && (int)nType <= INT8_MAX
 (intp)this % 8 == 0
 (l$ D
@@ -298,9 +299,6 @@ $^fE;
 (l$PD
 (l$`fA
 (l$pfA
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (null)
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (size_t)texData.m_nTextureDataSize == nGpuTexSize
@@ -453,11 +451,10 @@ $^fE;
 )|$PK
 )|$`E
 )|B?d!
-*6gxc
 *;Eot	;Ew
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
-+	V_logd
++	V_log2_uint
 +C$Hc
 +D$8A
 +G$Hc
@@ -467,7 +464,6 @@ $^fE;
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 , channels = 
 , height = 
 ,*/vu
@@ -506,6 +502,7 @@ $^fE;
 -threads
 -tools
 -vulkan
+.	V_logd
 ..om?
 .00cfg
 .>PJ;I:qE>
@@ -553,6 +550,7 @@ $^fE;
 .?AVCDeviceFenceBase@@
 .?AVCEmptyShaderBuffer@@
 .?AVCPooledIndexBuffer@@
+.?AVCPooledVertexBuffer@@
 .?AVCPostConnectCallback@@
 .?AVCRasterizerStateCreator@@
 .?AVCReadGPUBuffer@@
@@ -636,7 +634,6 @@ $^fE;
 .CRT$XPZ
 .CRT$XTA
 .CRT$XTZ
-.V*JZ	
 .data
 .data$r
 .data$rs
@@ -669,13 +666,16 @@ $^fE;
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
 /2GG>!B
 />58d%
 /TF<)VGy#WH
+/^-xO
 0 0 0
 0 0 0 0
 0 0 0 255
 0123456789abcdefghijklmnopqrstuvwxyz
+06nY3
 0: Bilinear, 1: Trilinear, 2: Aniso 2x, 3: Aniso 4x, 4: Aniso 8x, 5: Aniso 16x
 0><[cZUg^>
 0A\_[
@@ -714,14 +714,14 @@ $^fE;
 1<.	/>:
 1A26b
 1wsHp
-2	&"0
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240723234926Z0/
+240801162250Z0/
 241009235959Z0a1
+2?/lj
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2LcJ L
@@ -742,13 +742,12 @@ $^fE;
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
 6:%+H
+6A"c 
 6I]Dc
 6OB,n_
-7	V_powd
 7&F|If
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8"3hrf
 80tWD
 8A\_^[
@@ -765,7 +764,6 @@ $^fE;
 8b  16-May-2010
 8ke?;
 8vtext
-9	V_qsort
 9)~P3
 97tmD
 98t H
@@ -795,7 +793,7 @@ $^fE;
 9s|~%H
 9t$Pu	
 9{\~9H
-:	V_qsort_s
+:	V_powd
 :>)*	v
 :>t6k'
 :ALPHD
@@ -803,6 +801,7 @@ $^fE;
 :VP8 tP
 :VP8LtHD
 :VP8X
+;	V_powf
 ;.u1L
 ;?0123456789:;<=>?
 ;Cxr*H
@@ -813,6 +812,7 @@ $^fE;
 ;L$<|
 ;\$p|
 ;|$8|
+<	V_qsort
 <	w	@
 < t=<	t9
 <0:08
@@ -831,6 +831,7 @@ $^fE;
 <unknown multisample type
 <unknown>
 <utK@:
+=	V_qsort_s
 =SPB8u*
 =SPB8ue
 =imb;D
@@ -1011,7 +1012,6 @@ $^fE;
 @SAVAWH
 @SAWH
 @SUATAUAVH
-@SUATAVAWH
 @SUATH
 @SUAVH
 @SUVAUAWH
@@ -1122,12 +1122,12 @@ A]_^][
 A^A\_^[
 A^A]A\
 A^A]A\][
-A^A]A\^
 A^A]A\_]H
 A^A]A\_^
 A^A]A\_^[]
 A^A]A\_^][
 A^A]^[]
+A^A]^]
 A^_][
 A^_^[
 A^_^[]
@@ -1139,6 +1139,7 @@ A_A]]
 A_A]_^[]
 A_A^A\
 A_A^A\]
+A_A^A\^
 A_A^A\^[]
 A_A^A\_]
 A_A^A\_^
@@ -1287,7 +1288,6 @@ C:\buildworker\citadel_rel_win64\build\src\bitmap\tiffloader.cpp
 C:\buildworker\citadel_rel_win64\build\src\common\pngloader.cpp
 C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\bitmap\floatbitmap.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\texturebits.h
 C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vtex_file_format.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\resourcehandle.h
@@ -1369,11 +1369,6 @@ COcclusionQueryMgr::DestroyOcclusionQueryObject
 COcclusionQueryMgr::EndOcclusionQueryDrawing
 COcclusionQueryMgr::OcclusionQuery_IssueNumPixelsRenderedQuery
 COcclusionQueryMgr::ResetOcclusionQueryObject
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPipelineFence::AddRef
 CPoolAllocator::Allocate
 CPoolAllocator::Free
@@ -1385,23 +1380,26 @@ CRenderContextEmpty::SetViewports
 CRenderDeviceBase
 CRenderDeviceBase::AcquirePooledDynamicConstantBuffer
 CRenderDeviceBase::AllocatePooledIndexBuffer
-CRenderDeviceBase::AllocatePooledIndexBuffer(3631): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3667): 
-CRenderDeviceBase::AsyncSetTextureData(3286): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3535): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3642): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3678): 
+CRenderDeviceBase::AllocatePooledVertexBuffer
+CRenderDeviceBase::AllocatePooledVertexBuffer(3781): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3812): 
+CRenderDeviceBase::AsyncSetTextureData(3297): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3546): 
 CRenderDeviceBase::CreateConstantBuffer
-CRenderDeviceBase::CreateConstantBuffer(1586): 
+CRenderDeviceBase::CreateConstantBuffer(1587): 
 CRenderDeviceBase::CreateConstantBufferInternal
 CRenderDeviceBase::DestroyConstantBuffer
 CRenderDeviceBase::EnableAsyncPresent
-CRenderDeviceBase::EndRenderDocCapture(3521): 
+CRenderDeviceBase::EndRenderDocCapture(3532): 
 CRenderDeviceBase::FindOrCreateTexture
-CRenderDeviceBase::FindOrCreateTexture(1766): 
+CRenderDeviceBase::FindOrCreateTexture(1767): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
-CRenderDeviceBase::Flush(915): 
-CRenderDeviceBase::ForceFlushGPU(932): 
-CRenderDeviceBase::FreeTextureGPUResources(2078): 
-CRenderDeviceBase::FreeTextureGPUResources(2082): 
+CRenderDeviceBase::Flush(916): 
+CRenderDeviceBase::ForceFlushGPU(933): 
+CRenderDeviceBase::FreeTextureGPUResources(2079): 
+CRenderDeviceBase::FreeTextureGPUResources(2083): 
 CRenderDeviceBase::GetCubemapRadianceSHConstants
 CRenderDeviceBase::GetCubemapRadianceSHConstants::<lambda_1>::operator ()
 CRenderDeviceBase::GetDeviceSpecificBuffer
@@ -1411,11 +1409,11 @@ CRenderDeviceBase::GetDeviceSpecificRayTracePipeline
 CRenderDeviceBase::GetDeviceSpecificTexture
 CRenderDeviceBase::GetSwapChainFromTexture
 CRenderDeviceBase::GetTextureViewIndex
-CRenderDeviceBase::Present(633): 
+CRenderDeviceBase::Present(634): 
 CRenderDeviceBase::ResizeEngineWindow
 CRenderDeviceBase::SetCubemapRadianceSHConstants
 CRenderDeviceBase::SetCubemapRadianceSHConstants::<lambda_1>::operator ()
-CRenderDeviceBase::StartRenderDocCapture(3508): 
+CRenderDeviceBase::StartRenderDocCapture(3519): 
 CRenderDeviceEmpty::DestroyConstantBuffer
 CRenderDeviceEmpty::InitDevice
 CRenderDeviceMgrBase::AddDeviceEventListener
@@ -1657,7 +1655,6 @@ ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
 ConsecutiveBadFaxLines
-Construction is only allowed from the resolve function
 ConvertPNGToRGBA
 Copyright
 Copyright (C) 2010, Thomas G. Lane, Guido Vollbeding
@@ -1872,7 +1869,6 @@ DeleteCriticalSection
 Deleting texture with outstanding streaming request (%s)
 DemoUpconverterVersion001
 DepalettizeImage
-DependencyClass::m_pDependencyLL == nullptr
 Desktop-friendly Fullscreen
 Destroying PoolAllocator with outstanding allocations
 Detected RenderDoc %i.%i.%i
@@ -1927,6 +1923,7 @@ EXRReadFile() - B channel not found!
 EXRReadFile() - G channel not found!
 EXRReadFile() - R channel not found!
 EXRReadFile() - cannot read image data!
+EarlyInit_Tier0
 EconItemToolModel_001
 EgLcmwH
 EhHcK8H
@@ -2052,7 +2049,6 @@ GameResourceServiceServerV001
 GameUIService_001
 Genuu
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -2111,7 +2107,6 @@ H9(tO
 H90u'
 H97u+A
 H98t$H
-H9=Dc
 H9G(t
 H9L$8
 H9L$Ht?H
@@ -2150,7 +2145,6 @@ HA^A]A\]
 HA_A^A]A\_^][
 HA__H
 HH:mm:ss
-HX	{O
 H[><y5
 H_^][
 HalftoneHints
@@ -2211,7 +2205,6 @@ HostComputer
 HostStateMgr001
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-I	V_snprintf
 I+4$H
 I9Jhs
 I;wxu
@@ -2286,7 +2279,6 @@ Insufficient data size in offset table.
 Insufficient data size.
 Insufficient header/data size.
 Insufficient memory (case %d)
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal error, unknown tag 0x%x
 InteroperabilityIFDOffset
@@ -2320,10 +2312,12 @@ Invalid texture spec (%s): %ix%ix%i %i mips fmt %i
 Invalid tile size x : 
 Invalid tile size y : 
 InvokeMiniDumpHandler
+Ir6th
 IsDebuggerPresent
 IsGrowable()
 IsIdxValid(i)
 IsInList(before)
+IsPowerOfTwo( nAlignment )
 IsProcessorFeaturePresent
 IsValid()
 IsValidCodePage
@@ -2334,6 +2328,7 @@ IsValidIterator( it )
 IsValidLocale
 IsValidLocaleName
 J%f%f%f%f%f%f%f%f
+J9@g5
 J>@G_
 JFIF APP0 marker: version %d.%02d, density %dx%d  %d
 JFIF extension marker: JPEG-compressed thumbnail image, length %u
@@ -2359,6 +2354,7 @@ K}*n:
 K~Je#>!
 L	B I
 L	G H;
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ H9
@@ -2468,7 +2464,6 @@ L$pf;
 L$pff
 L$xA+
 L$xf;
-L9%{e
 L97vH
 L9AHA
 L9aHA
@@ -2656,7 +2651,6 @@ Not implemented yet
 November
 NumCols() <= V_ARRAYSIZE( s_DummyRow )
 NumberOfInks
-O	V_sscanf
 O!t/H
 O*9y]
 OF>;^
@@ -2670,9 +2664,6 @@ Old-style LZW codes, convert file
 OldSubfileType
 One of the client procedures is NULL pointer.
 Opened temporary file %s
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orientation
 OriginalRawFileData
 OriginalRawFileName
@@ -2690,7 +2681,7 @@ PA^A]A\
 PA^A]A\_[
 PA^A]A\_^][
 PA^A]^
-PA_A^A\][
+PA_A^A\^]
 PA_A^A\_^][
 PA_A^A]A\_^]
 PA_A^A]][
@@ -2725,7 +2716,6 @@ PixarLog
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Plat_CPUTickFrequency
-Plat_DebugPrint
 Plat_EventRegister
 Plat_EventUnregister
 Plat_ExitProcess
@@ -2739,6 +2729,7 @@ Plat_GetMonitorCount
 Plat_GetMonitorResolution
 Plat_GetOSType
 Plat_GetProcAddress
+Plat_GetTime
 Plat_GetWindowMonitorIndex
 Plat_GlobalMemoryStatus
 Plat_IsInDebugSession
@@ -2771,6 +2762,7 @@ Quantization table 0x%02x was not defined
 Quantizing to %d = %d*%d*%d colors
 Quantizing to %d colors
 QueryPerformanceCounter
+R	V_sscanf
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -2881,6 +2873,7 @@ RenderSystem/MaxPreloadTextureResolution
 RenderSystem/MinDXLevel
 RenderSystem/MinStreamingPoolSizeMB
 RenderSystem/MinStreamingPoolSizeMBTools
+RenderSystem/VertexBufferPoolSizeMB
 RenderUtils_001
 Rendersystem/SheetCacheTextureCols
 Rendersystem/SheetCacheTextureRows
@@ -3013,15 +3006,14 @@ Success
 Sunday
 Suspension not allowed here
 SwizzlePlanarScanlineToInterleaved
-T	V_stricmp_fast
 T$ Ei
 T$ H9
 T$ H;
 T$ fA
+T$ fI
 T$ fff
 T$$A;
 T$$E;
-T$(E3
 T$(L;T$H
 T$(iU
 T$0D;
@@ -3201,12 +3193,13 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 V6E>`"(5
-VATAUAVH
+VATAVAWH
 VAUAVH
 VAVAWH
 VApplication001
 VAsyncFileSystem2_001
 VAvi001
+VBPool
 VBik001
 VConComm001
 VD$Pf
@@ -3285,6 +3278,7 @@ VsInputSignatureElement_t::Schema_VerifyBindingIsRegistered
 VsInputSignature_t
 VsInputSignature_t::Schema_VerifyBindingIsRegistered
 Vulkan
+W	V_stricmp_fast
 W%	s;M@
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
@@ -3358,7 +3352,6 @@ Z\>z8
 Zod(^?
 Zpm"U
 [	UoA
-[	V_strtoi64
 [*ncd>0
 [-&LMb#{'
 [D9`luUD9
@@ -3422,11 +3415,12 @@ Zpm"U
 \$pE3
 \$pHc
 \$xu3M
-\~3f8n		4
+\jDY0
 ])6M>&
 ]>)2X
 ]J<0"0i3
 ]Lu*E;|$
+^	V_strtoi64
 ^<V7w
 ^RfN>
 ^oEZ_
@@ -3549,8 +3543,6 @@ c [1>H'
 c(>\,
 c0&>`
 c?FA@s}
-cN&:d
-cW:$4`
 cached_fp == invalid_function_sentinel()
 cached_fp == new_fp
 cached_handle == ((HANDLE)(LONG_PTR)-1)
@@ -3750,7 +3742,6 @@ http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
-i;Ctt`
 iG(1'
 identifier removed
 illegal byte sequence
@@ -3798,7 +3789,6 @@ j'Vlk
 j>>A?1
 j?V()
 j?{$*
-jH#fBe
 jj@0HK4
 k0i0$
 k;J;J;J;J;J;J;J;J;J;J;J;J;J;J;J;Jx
@@ -3899,6 +3889,7 @@ m_pName
 m_pOwner && m_CompletionFunc
 m_pOwner && m_Func
 m_pPooledIndexBufferAllocator->IsValidHandle( hHandle )
+m_pPooledVertexBufferAllocator->IsValidHandle( hHandle )
 m_pSemantic
 m_pSemanticName
 m_textureInfoDeletionQueue.IsEmpty()
@@ -4061,7 +4052,6 @@ pDstData == ( pDecodedTextureData + nGpuTexSize )
 pExtensionWithDot[ 0 ] == '.'
 pField == pFieldBase + nFields
 pHeader->m_nHeaderVersion == RESOURCE_FILE_HEADER_VERSION
-pMemory[i] == 0
 pNode != nullptr
 pNode->m_handle.m_Size >= nAllocSize
 pObject && m_DeviceEventListeners.Find( pObject ) == m_DeviceEventListeners.InvalidIndex()
@@ -4301,7 +4291,7 @@ t;@8w
 t;LcF
 t?HcS
 t@9+u,9s
-t@H95C@
+t@H95
 t@McO4
 tBMcW<IcO@Lc
 tEHcR

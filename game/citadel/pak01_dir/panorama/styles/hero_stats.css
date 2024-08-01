@@ -3,7 +3,7 @@
 Label
 {
 	color: colorCommonOffWhite;
-	font-family: "Retail Demo";
+	font-family: sans;
 }
 
 .hero_stats
@@ -15,8 +15,9 @@ Label
 
 #CitadelHudHeroShop .hero_stats
 {
-	horizontal-align: left;
+	horizontal-align: center;
 	width: 480px;
+	margin-top: 30px;
 }
 
 .TopStatsContainer
@@ -391,7 +392,7 @@ CitadelHeroStats CitadelModifiedAttributeLabel
 	font-weight: bold;
 	color: offWhite;
 	vertical-align: middle;
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 }
 
 .DamageType
@@ -400,7 +401,7 @@ CitadelHeroStats CitadelModifiedAttributeLabel
 	font-weight: semi-bold;
 	color: #AA997F;
 	vertical-align: middle;
-	font-family: "Retail Demo";
+	font-family: sans;
 }
 
 CitadelStatScalingLabel

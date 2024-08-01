@@ -22,7 +22,6 @@
 	TYPE_BOOL
 	TYPE_ENUM
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strEndsWith
 	_V_strncmp
 	`'>W
@@ -85,14 +84,17 @@
  (%ld unused bits)
  (%s)
  (08@HPX`hpx
- (08@HPX`j
- (08@HPXb
- (08@HPZ
- (08@HR
- (08@J
- (0X`hpz
+ (08@HPX`j`
+ (08@HPXb R
+ (08@HPZ`
+ (08@HR R
+ (08@J R
+ (08@J`
+ (0:`
+ (0X`hpz R
  (INVALID PSS PARAMETERS)
  (Negative)
+ -h#B3
  .!p*
  ... }
  //!"#$%&'()/*///+,-/.
@@ -367,7 +369,6 @@
 #Valve_SelectLanguage_Turkish
 #Valve_SelectLanguage_Ukrainian
 #Valve_SelectLanguage_Vietnamese
-#[xbV
 #`cC# #
 #ep~(
 #k+ka\T
@@ -639,9 +640,6 @@ $hRh
 (jvg;
 (l$0fD
 (l$pD
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (merge 
 (null)
 (t$ A
@@ -1232,7 +1230,8 @@ $hRh
 0123456789abcdefghijklmnopqrstuvwxyz
 02V8[
 08@HP
-08@HR
+08@HR`
+08@J R
 0;Q5[
 0><[cZUg^>
 0A]_^][
@@ -1320,7 +1319,7 @@ $hRh
 220323000000Z
 220801000000Z
 230714000000Z
-240723234907Z0/
+240801161943Z0/
 241009235959Z0a1
 2:3maJ
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1570,7 +1569,6 @@ $hRh
 9{t~:3
 9{|~<3
 9|$0u.H
-:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :':+:1:K:Q:[:c:g:m:y:
@@ -1691,6 +1689,7 @@ $hRh
 <unsupported>
 <utK@:
 <~{Su;u
+=	V_qsort_s
 =!=-=3=7=?=C=o=s=u=y={=
 =#N"u#
 =&sf9
@@ -1757,6 +1756,7 @@ $hRh
 ?E=$% B
 ?EnsureCapacity@CUtlBuffer@@QEAAXH@Z
 ?EnterScopeInternalBudgetFlags@?$VProfScopeHelper@$0A@$0A@@@SAP6AXXZPEBDAEAUVProfBudgetGroupCallSite@@@Z
+?FixSlashes@CUtlString@@QEAAXD@Z
 ?Free@CUtlMemoryPoolBase@@QEAAXPEAX@Z
 ?FreeInts@CVariableBitStringBase@@AEAAXXZ
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
@@ -1882,7 +1882,7 @@ $hRh
 @BH]f
 @HHcB$;B(u
 @HPX&I
-@HPX`hv
+@HPX`hvP
 @HcC(H
 @L;D$
 @MfKZ
@@ -2018,7 +2018,6 @@ $hRh
 @UVWATAUAW
 @UVWATAUH
 @UVWATAW
-@UVWATAWH
 @UVWAV
 @UVWAVAW
 @UVWAVH
@@ -2086,6 +2085,7 @@ A08HcQ
 A2VPD
 A4Wn>
 A4x{%`
+A8&{G
 A8m(u
 A8}(u
 A9,A$
@@ -2331,6 +2331,7 @@ A]A\_
 A]A\_[
 A]A\_^
 A]A\_^[
+A]A\_^]
 A]A\_^][
 A]_][
 A^A\^[
@@ -2619,6 +2620,7 @@ BUF_strndup
 BVD.Bz
 BY_FILE_CTRL
 BY_Lq)
+B^3IcA
 BackUp() can only be called after a successful Next().
 Bad boolean
 Bad time value
@@ -2674,7 +2676,6 @@ C:\buildworker\citadel_rel_win64\build\src\panorama\text\texttexturecache.cpp
 C:\buildworker\citadel_rel_win64\build\src\panorama\text\uifontfileloaderlinux.cpp
 C:\buildworker\citadel_rel_win64\build\src\panorama\text\uitextlayoutpango.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\filesystem\ifilesystem.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitstring.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlatlas2d.h
@@ -2942,11 +2943,6 @@ CONN_CTRL
 CONN_STATE
 COPY_EMAIL
 COPY_ISSUER
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPHcSdH
 CPPTYPE_BOOL
 CPPTYPE_DOUBLE
@@ -3072,7 +3068,6 @@ Code=
 Cofactor: 
 CompareStringEx
 CompareStringW
-Construction is only allowed from the resolve function
 Content-Disposition: attachment;
 Content-Length: %d
 Content-Transfer-Encoding: base64%s
@@ -3298,7 +3293,6 @@ D$xH1D9
 D$xLc
 D$xM+
 D$xf;
-D&;*Q
 D(n%6
 D)l$0
 D+3L9c0u	
@@ -3447,7 +3441,6 @@ D:N6t
 D:N7t
 D:N8t+I
 D:N9t
-D;%N[
 D;3~3A
 D;Gx}
 D;I }
@@ -3681,7 +3674,6 @@ DecorationStyle
 Default value for an enum field must be an identifier.
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DeregisterEventSource
 DescriptorProto
 DescriptorProtosH
@@ -3999,6 +3991,7 @@ EXPORTSYSTEM_INTERFACE_VERSION_001
 EXTENDED_KEY_USAGE
 EXTERNAL
 E_HcC
+EarlyInit_Tier0
 EconItemToolModel_001
 EdiPartyName
 EdiPartyName:<unsupported>
@@ -4276,7 +4269,6 @@ Generator (uncompressed):
 German
 GetACP
 GetBool
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCommandLineA
 GetCommandLineW
@@ -4420,6 +4412,7 @@ H9+uEA
 H9/u&L
 H92tBA
 H97u+A
+H9=!{!
 H9A s
 H9A u
 H9A u'
@@ -4512,6 +4505,7 @@ HA_A\
 HA_A\_[
 HA_A\_]
 HA_A\_^][
+HA_A]A\_
 HA_A]A\_^[
 HA_A]_^][
 HA_A^A]A\_^[]
@@ -4772,7 +4766,6 @@ InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
 Integer out of range (
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 International Organizations
 Interpreting non ascii codepoint %d.
@@ -5054,7 +5047,7 @@ L9cHu
 L9cPu
 L9d$@t
 L9d$H
-L9d$Pt
+L9d$P
 L9d$xt
 L9g`u
 L9j8u
@@ -5487,9 +5480,6 @@ Option field "
 Option must have a name.
 Option must not use reserved name "uninterpreted_option".
 Order: 
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 O~`L{
 P A@~t
 P!bxo
@@ -5500,8 +5490,8 @@ P-224
 P-256
 P-384
 P-521
-P08@J
-P08J |
+P08@J R
+P08J@x
 P0@8~9t
 P1	98"
 P:   
@@ -5742,10 +5732,10 @@ Permanent Identifier
 Permitted
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_GetModuleProcAddress
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_LoadModule
 Plat_LoadSDL
@@ -5798,7 +5788,6 @@ R)){R)){
 R2I_CERTPOL
 R2I_PCI
 R=1C&b
-RA>W1
 RAND lib
 RAND part of OpenSSL 1.0.2j  26 Sep 2016
 RAND_get_rand_method
@@ -6191,7 +6180,6 @@ SUWAUAV
 SUWAUAW
 SUWAW
 SVATAU
-SVATAUAWH
 SVAUH
 SVWATAUAVAW
 SVWATAUAVAWH
@@ -6301,7 +6289,6 @@ Symbol name "
 Synthetic oneofs must be after all other oneofs
 SystemTimeToFileTime
 SystemTimeToTzSpecificLocalTime
-T	V_stricmp_fast
 T"UdW
 T$ D#
 T$ D)s
@@ -6724,6 +6711,7 @@ Vietnamese
 VisBuilder_001
 Vrad3_001
 V~~Vq
+W	V_stricmp_fast
 W"Fe~
 W'6S`
 W3i+,
@@ -6735,6 +6723,7 @@ WARNING
 WATAUAVAW
 WATAUAVAWH
 WATAUAW
+WATAUAWH
 WATAVH
 WAUAVH
 WAVAW
@@ -6947,6 +6936,7 @@ XMM{*
 XNU`{3
 XW=?'
 X_^][
+X`hr`
 XqgA+
 X~ '.
 Y0HcR
@@ -6974,6 +6964,7 @@ ZLONG
 ZXF,`i
 Z\>z8
 Ze2Zh@
+Zf%=j
 Zod(^?
 ZwKiZwKi
 [!		|87
@@ -7099,7 +7090,6 @@ ZwKiZwKi
 \$pH;
 \$pt5D9s8H
 \%02X
-\(LRk
 \1kYL
 \43n7
 \SO7tsG
@@ -7132,7 +7122,6 @@ ZwKiZwKi
 ^J_spY
 ^RB!r
 ^RfN>
-^S($<h
 ^W,|*
 ^fD;]
 _$D,!
@@ -7168,6 +7157,7 @@ _logb
 _nextafter
 _oD>Kg
 _xU`u
+_ypQ[:
 _{j!g>
 _}eOk
 `	).0n
@@ -7577,7 +7567,6 @@ c8HcCP
 c?FA@s}
 cACertificate
 cC#`#
-cH.t(cqX;8
 cNAMERecord
 cNUGK
 cPHcChL
@@ -8328,7 +8317,6 @@ f9,~u
 f9<Fu
 f9<H}
 f9<Ju
-f9=T+
 f9t$bu
 f9|$ tyf
 f9|$8
@@ -8391,6 +8379,7 @@ fE;T$
 fE;\$
 fG9$Ou
 fJBGo
+fLtu-
 fUnh\
 facsimileTelephoneNumber
 failed loading private key
@@ -8514,7 +8503,6 @@ group=
 g{syW*
 g|FeW
 h A9}h~ED
-h)T(C
 h2n_\
 h>1my
 hA^A\_^][
@@ -8557,6 +8545,7 @@ homePostalAddress
 homeTelephoneNumber
 host unreachable
 houseIdentifier
+hpz R
 http request
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
@@ -9882,6 +9871,7 @@ p.prime
 p.tpBasis
 p08@H^
 p0R^G'
+p0j0F
 p88Hp88H
 p;Y>u
 p@0pqE5tsO?|1
@@ -9909,7 +9899,6 @@ pG_*h
 pHhXpHhX
 pHl\tHl\t
 pLeft->pRight == pEntry
-pMemory[i] == 0
 pRight->pLeft == pEntry
 pSchemaSystem != nullptr
 pShapeAttr
@@ -11088,7 +11077,7 @@ tTL9q t-H
 tU;\$0tH
 tU;_Xr
 tUE8n u
-tUH959
+tUH95y
 tUH99uPL
 tWH+\$
 tXH99uSH
@@ -11200,7 +11189,7 @@ tsa name mismatch
 tsa untrusted
 tsfff
 tst info setup error
-tuL9=q
+tuL9=Q	
 turkish
 tvLcs
 tw8\$4
@@ -11243,7 +11232,6 @@ u,!T$(H!T$
 u-D9~
 u-H9x
 u-H;A
-u.E0{
 u.H;A
 u.H;P
 u1!D$0H

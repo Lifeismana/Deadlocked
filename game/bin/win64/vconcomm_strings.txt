@@ -2,7 +2,6 @@
 	%s@%d.%d.%d.%d, connected: %s
 	B9|1
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_StringAfterPrefix
 	_V_StringAfterPrefixCaseSensitive
 	_V_strEndsWith
@@ -39,7 +38,6 @@
 !>6'Y
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
-#H!'H
 %2.2d:%2.2d:%2.2d.%3.3d
 %d %d %d
 %d %d %d %d
@@ -54,14 +52,10 @@
 (D$0I
 (D$0L
 (f*^[0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (t$@I
 (t$PH
 (|$ H
-)!7:An
 )>6{1n
 )t$0H
 )t$@H
@@ -136,7 +130,6 @@
 .data$r
 .data$rs
 .edata
-.frFws a
 .idata$2
 .idata$3
 .idata$4
@@ -160,7 +153,6 @@
 .text$yd
 .tls$
 .tls$ZZZ
-.vTcf8
 .xJ>Hf
 .xdata
 .xdata$x
@@ -187,7 +179,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240723234900Z0/
+240801161819Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -201,7 +193,6 @@
 3>N;kU
 3>fvw
 3mq+<
-3{~@}~
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
@@ -216,7 +207,6 @@
 9)~P3
 98t H
 9>~ZH
-:	V_qsort_s
 ;GHtA
 ;H9>&X
 ;I9}(tiH
@@ -227,6 +217,7 @@
 <no failure reason set>
 <undefined>
 <unknown>
+=	V_qsort_s
 =============== End VConsole Buffered Messages ===============
 =============== Prior Messages Discarded at %d bytes ===============
 =============== VConsole Buffered Messages ===============
@@ -390,7 +381,6 @@ BinaryProperties_GetValue
 C ;C$t
 C0Hc	H
 C:\buildworker\citadel_rel_win64\build\_build_\vconcomm\_vpc_vconcomm\default\win64\_msvc_\Retail\vconcomm.pdb
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\concommand.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
@@ -417,11 +407,6 @@ CD$XD
 CGlobalConCommandRegistry::AddToList
 CGlobalConVarRegistry::HookUpConVar
 CHANI
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CRC32_ProcessBuffer
 CSocketConnection object must be cleaned up before it can be re-initialized. (endpoint %d is in state %d, handle is %llu)
 CSocketConnection object must be cleaned up before it can be re-initialized. (in state %d)
@@ -509,7 +494,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetTypeInfo
 Connection in progress...
 Connection will timeout in %d seconds...
-Construction is only allowed from the resolve function
 CorExitProcess
 CreateEventW
 CreateFileW
@@ -534,14 +518,12 @@ D81uUL9r
 D8<8u
 D8kHu
 D8t$ht
-D9=q$
 D9A(t
 D9A,u
 DNMCH
 December
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -556,11 +538,13 @@ E0Lc`
 E8q(u
 EH*?H
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 EngineServiceMgr001
 EnterCriticalSection
 EnumWindows
+EptxJ
 Existing Process:
 ExitProcess
 FATAL ERROR: unable to register all schema data: %s
@@ -588,9 +572,7 @@ G\$(H
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
-GbKp6
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetClassNameA
 GetCommandLineA
@@ -650,7 +632,6 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Invalid access of CConVarRef for '%s'
 Invalid access of ConCommandRef prior to registration!
@@ -668,7 +649,6 @@ IsValidIndex(i) && (i != InvalidIndex())
 IsWindowVisible
 J>@G_
 January
-Jr\xq
 K&>.yC
 K0HcQ
 K32GetModuleFileNameExA
@@ -756,9 +736,6 @@ November
 October
 Only TCP sockets are implemented at the moment.
 OpenProcess
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 PA\^[
 PA_A^A]A\_^]
 PA_A^A]A\_^]H
@@ -772,12 +749,12 @@ PanoramaUIEngine001
 ParticleSystemMgr003
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
 Plat_GetEnv
 Plat_GetModuleFilename
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_IsRunningOnCustomerMachine
 Plat_LoadModule
@@ -870,7 +847,6 @@ StackTools_VerifyLoadedModuleMappings
 StatsService_001
 SteamAudio001
 Sunday
-T	V_stricmp_fast
 T$PE3
 TCP Local Port %d, Remote Port %d (State %d)
 TUUUU
@@ -967,6 +943,7 @@ Valve Corp.0
 Valve Corp.1
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 WATAUAVAWH
 WATAVAWH
 WAVAWH
@@ -983,7 +960,6 @@ WriteFile
 XA_A^^]
 Xbox VDP is not supported on this platform.
 Y9"SD
-ZIl)a6[l
 [K]taM?
 \$ UVWAVAWH
 \$ VH
@@ -995,7 +971,6 @@ ZIl)a6[l
 \$@H;
 \$PLc
 ]J<0"0i3
-^)Bp	mX
 _ ;_$t
 _RDATA
 __based(
@@ -1054,7 +1029,6 @@ _gUT^
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-`zbID
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 arg%d
@@ -1074,6 +1048,7 @@ commandline
 d$@@8
 d$XE3
 dddd, MMMM dd, yyyy
+e!~nn1
 e0A_A^A]A\]
 error == 0
 f9)u4H9j
@@ -1162,7 +1137,6 @@ p;Y>u
 pA_A^A]A\_^[
 pA_A^A]_]
 pCallback == nullptr
-pMemory[i] == 0
 pModuleInfo->m_nCurrentSize <= UINT32_MAX
 pSchemaSystem != nullptr
 pSocketConnection

@@ -9,13 +9,15 @@
 	margin-bottom: 105px;
 	z-index: 9999;
 	ui-scale: 100%;
-	transition-property: ui-scale, transform, margin-bottom, margin-left;
+	transition-property: ui-scale, transform, margin-bottom, margin-left, opacity;
 	transition-duration: 0.05s;
 	transition-timing-function: ease-out;
 }
 
-#gold_and_ap_container.in_item_shop
+#gold_and_ap_container.gShopOpen
 {
+	margin-left: 40px;
+	margin-bottom: 120px;
 	transform: translateX(0px) translateY(-8px);
 	ui-scale: 85%;
 }
@@ -32,7 +34,7 @@
 	vertical-align: middle;
 	color: blueAPTextColor;
 	font-weight: bold;
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 }
 
 #HudCurrentAPContainer .CurrencyLabel
@@ -153,7 +155,7 @@
 	font-size: 14px;
 	color: #ffffff;
 	font-weight: semi-bold;
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 	text-align: center;
 	horizontal-align: center;
 	text-transform: uppercase;

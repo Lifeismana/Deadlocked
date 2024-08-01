@@ -1,12 +1,14 @@
 /* Prettified by Source 2 Viewer 10.1.0.0 - https://valveresourceformat.github.io */
 
 @import url("s2r://panorama/styles/citadel_shared_colors.vcss_c");
+@define sans: Retail Demo, sans-serif;
+@define sansMono: Retail Text Demo;
+@define serif: Forevs Demo;
 @define baseText: #FFEFD7;
 @define baseBorder: #444444ff;
 @define selectedTextBackgroundColor: #66666633;
 @define goldColor: #FFED79;
 @define blueAPTextColor: #80EEFF;
-@define retailFont: "Retail Demo", sans-serif;
 @define offWhite: #FFEFD7;
 @define offBlack: #10130D;
 @define silvered: #C6C6C6;
@@ -17,6 +19,9 @@
 @define ritualGreenLight: #7CBC1D;
 @define geistBookColor: #33A357;
 @define geistBookDarkColor: #0E381B;
+@define buildsColor: #4D7EC8;
+@define buildsDarkColor: #365B92;
+@define buildsLightColor: #85B5FF;
 @define team1Color: #BF9A53;
 @define team1ColorBright: #FBDCA0;
 @define team1ColorDark: #937600;
@@ -73,7 +78,7 @@ Label
 
 .display
 {
-	font-family: "Forevs Demo";
+	font-family: serif;
 }
 
 .silvered
@@ -150,7 +155,7 @@ Label
 {
 	font-size: 34px;
 	color: offBlack;
-	font-family: "Forevs Demo";
+	font-family: serif;
 	font-weight: bold;
 	horizontal-align: center;
 	vertical-align: middle;
@@ -585,7 +590,7 @@ Label
 .PageTitle Label
 {
 	font-size: 70px;
-	font-family: "Forevs Demo";
+	font-family: serif;
 	font-weight: bold;
 	color: offWhite;
 	horizontal-align: center;
@@ -919,7 +924,7 @@ DropDownMenu Label
 	margin-right: 0px;
 	margin-left: 0px;
 	padding-left: 16px;
-	font-family: "Retail Demo";
+	font-family: sans;
 	background-color: #3d4448;
 	font-size: 18px;
 	font-weight: medium;
@@ -1406,7 +1411,7 @@ Slider.HorizontalSlider #SliderThumb:disabled,SlottedSlider.HorizontalSlider #Sl
 
 VerticalScrollBar,HTMLVerticalScrollBar
 {
-	width: 24px;
+	width: 10px;
 	margin: 0px, 8px, 0px 8px;
 	border-radius: 0px;
 	height: 100%;
@@ -1420,7 +1425,7 @@ VerticalScrollBar,HTMLVerticalScrollBar
 VerticalScrollBar .ScrollThumb,HTMLVerticalScrollBar .ScrollThumb
 {
 	transform-origin: 0% 50%;
-	transform: scale3D(0.3, 1, 1);
+	transform: scale3D(1, 1, 1);
 	min-height: 32px;
 	background-color: #ffffff33;
 	border-radius: 4px;

@@ -945,7 +945,7 @@
 		[
 			{
 				mixgroup = "VO-Hero-Pla"
-				vol = 0.5
+				vol = 1.0
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1369,7 +1369,7 @@
 			},
 			{
 				mixgroup = "VO-Hero-Pick"
-				vol = 1.0
+				vol = 1.1
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1441,7 +1441,7 @@
 			},
 			{
 				mixgroup = "VO-Hero-Ult-Pla"
-				vol = 1.0
+				vol = 1.1
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1457,7 +1457,7 @@
 			},
 			{
 				mixgroup = "VO-Hero-Ult-Opp"
-				vol = 1.0
+				vol = 1.1
 				solo = 0.0
 				mute = 0.0
 				lvl = 1.0
@@ -1607,38 +1607,6 @@
 			Mixers = 
 			[
 				{
-					mixgroup = "VO-Hero-Pla"
-					vol = 1.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 0.0
-					lvl = 0.0
-				},
-				{
-					mixgroup = "VO-Hero-Tea"
-					dsp = 1.0
-					solo = 0.0
-					vol = 0.0
-					mute = 0.0
-					lvl = 0.0
-				},
-				{
-					mixgroup = "VO-Hero-Opp"
-					dsp = 1.0
-					solo = 0.0
-					vol = 0.5
-					mute = 0.0
-					lvl = 0.0
-				},
-				{
-					mixgroup = "VO-Hero-Neu"
-					dsp = 1.0
-					solo = 0.0
-					vol = 0.0
-					mute = 0.0
-					lvl = 0.0
-				},
-				{
 					mixgroup = "Music"
 					dsp = 1.0
 					solo = 0.0
@@ -1677,38 +1645,6 @@
 					dsp = 1.0
 					mute = 0.0
 					solo = 0.6
-				},
-				{
-					mixgroup = "VO-Hero-Pla"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 1.0
-				},
-				{
-					mixgroup = "VO-Hero-Tea"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 1.0
-				},
-				{
-					mixgroup = "VO-Hero-Opp"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 1.0
-				},
-				{
-					mixgroup = "VO-Hero-Neu"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 1.0
 				},
 			]
 			Triggers = 
@@ -1947,93 +1883,6 @@
 			[
 				{
 					trigger = "Ult-Pla"
-					threshold = 0.0
-					mixamount = 1.0
-					attack = 0.1
-					release = 0.1
-				},
-			]
-		}
-		"VO-Ducker-Pings" = 
-		{
-			Mixers = 
-			[
-				{
-					mixgroup = "VO-Hero-Tea"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 1.0
-				},
-				{
-					mixgroup = "VO-Hero-Pla"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 1.0
-				},
-				{
-					mixgroup = "VO-Hero-Opp"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 1.0
-				},
-				{
-					mixgroup = "VO-Hero-Neu"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 1.0
-				},
-				{
-					mixgroup = "Announcer"
-					vol = 1.0
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 0.75
-				},
-			]
-			Triggers = 
-			[
-				{
-					trigger = "VO-Hero-Ping"
-					threshold = 0.0
-					mixamount = 1.0
-					attack = 0.1
-					release = 0.25
-				},
-			]
-		}
-		"VO-Ducker-World" = 
-		{
-			Mixers = 
-			[
-				{
-					mixgroup = "VO-Hero-Tea"
-					lvl = 0.0
-					dsp = 1.0
-					solo = 0.0
-					mute = 0.0
-					vol = 0.7
-				},
-			]
-			Triggers = 
-			[
-				{
-					trigger = "VO-Hero-Pla"
-					threshold = 0.0
-					mixamount = 1.0
-					attack = 0.1
-					release = 0.25
-				},
-				{
-					trigger = "VO-Hero-Opp"
 					threshold = 0.0
 					mixamount = 1.0
 					attack = 0.1

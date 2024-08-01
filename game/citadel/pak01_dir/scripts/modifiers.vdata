@@ -176,6 +176,18 @@
 		m_nEnabledStateMask = "MODIFIER_STATE_RETURN_IDOL_AREA"
 		m_bIsHidden = true
 	}
+	modifier_citadel_in_shoptunnel_amber = 
+	{
+		_class = "modifier_citadel_in_shoptunnel"
+		m_nEnabledStateMask = "MODIFIER_STATE_IN_SHOPTUNNEL_AMBER"
+		m_bIsHidden = true
+	}
+	modifier_citadel_in_shoptunnel_sapphire = 
+	{
+		_class = "modifier_citadel_in_shoptunnel"
+		m_nEnabledStateMask = "MODIFIER_STATE_IN_SHOPTUNNEL_SAPPHIRE"
+		m_bIsHidden = true
+	}
 	modifier_rejuv_pickup_aura = 
 	{
 		_class = "modifier_item_pickup_aura"
@@ -480,5 +492,12 @@
 		_class = "modifier_low_health_glow"
 		m_bIsHidden = true
 		m_GlowParticle = resource_name:"particles/status_fx/status_fx_last_hit.vpcf"
+	}
+	modifier_trigger_push = 
+	{
+		_class = "modifier_trigger_push"
+		m_bIsHidden = true
+		m_nAttributes = "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
+		m_eDebuffType = "MODIFIER_DEBUFF_NO"
 	}
 }

@@ -30,7 +30,7 @@
 						<Label class="NumSoulsRequired" text="{i:num_souls_required}" />
 						<Panel class="SoulsImage" />
 					</Panel>
-					<Label class="ToNextLabel" text="TO NEXT" />
+					<Label class="ToNextLabel" text="#Citadel_Hud_ToNext" />
 				</Panel>
 			</Panel>
 			<Label class="BottomRange RangeLabel" text="{i:bottom_range}" />
@@ -41,7 +41,7 @@
 				<Panel class="LevelUpBackground" />
 				<Panel class="ObjectiveContent TopBottomFlow">
 					<Label class="soulsTotal" text="{i:level_up_souls}" html="true" />
-					<Label class="soulsLabel" text="Souls Gathered" />
+					<Label class="soulsLabel" text="#Citadel_Hud_SoulsGathered" />
 				</Panel>
 			</Panel>
 		</Panel>

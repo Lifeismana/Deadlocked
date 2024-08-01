@@ -41,17 +41,17 @@
 	wash-color: spiritBrightColor;
 }
 
-#StatsAndModsContainer.in_item_shop .mod_weapon #mod_icon,#StatsAndModsContainer.in_item_shop .isWeapon #mod_icon
+#StatsAndModsContainer.gShopOpen .mod_weapon #mod_icon,#StatsAndModsContainer.gShopOpen .isWeapon #mod_icon
 {
 	wash-color: courageDarkerColor;
 }
 
-#StatsAndModsContainer.in_item_shop .mod_armor #mod_icon,#StatsAndModsContainer.in_item_shop .isArmor #mod_icon
+#StatsAndModsContainer.gShopOpen .mod_armor #mod_icon,#StatsAndModsContainer.gShopOpen .isArmor #mod_icon
 {
 	wash-color: fortitudeDarkerColor;
 }
 
-#StatsAndModsContainer.in_item_shop .mod_tech #mod_icon,#StatsAndModsContainer.in_item_shop .isTech #mod_icon
+#StatsAndModsContainer.gShopOpen .mod_tech #mod_icon,#StatsAndModsContainer.gShopOpen .isTech #mod_icon
 {
 	wash-color: spiritDarkerColor;
 }
@@ -397,6 +397,11 @@
 .hollowPoint .mod_icon,.hollowPoint .ability_icon
 {
 	background-image: url("s2r://panorama/images/upgrades/mods_weapon/hollow_point_psd.vtex");
+}
+
+.pristineEmblem .mod_icon,.pristineEmblem .ability_icon
+{
+	background-image: url("s2r://panorama/images/upgrades/mods_weapon/pristine_emblem_psd.vtex");
 }
 
 .longshot .mod_icon,.longshot .ability_icon

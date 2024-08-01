@@ -17,9 +17,9 @@
 					<Label id="QuestionLabel" text="{s:question_label}" />
 				</Panel>
 				<Panel id="RatingsContainer">
-					<Label id="NotFunLabel" class="ratingsLabel" text="Not Fun" />
-					<Label id="KindOfFun" class="ratingsLabel" text="Kind of Fun" />
-					<Label id="FunLabel" class="ratingsLabel" text="Super Fun" />
+					<Label id="NotFunLabel" class="ratingsLabel" text="#Citadel_MatchSurvey_NotFun" />
+					<Label id="KindOfFun" class="ratingsLabel" text="#Citadel_MatchSurvey_KindOfFun" />
+					<Label id="FunLabel" class="ratingsLabel" text="#Citadel_MatchSurvey_SuperFun" />
 				</Panel>
 				<Panel id="StarsRow">
 					<Panel id="Star1" class="Star">
@@ -44,15 +44,15 @@
 	</snippets>
 	<PostMatchSurvey class="PopupPanel Hidden" popupbackground="dim" oncancel="UIPopupButtonClicked()">
 		<Panel id="TitleContainer">
-			<Label class="surveyTitle" text="Match Survey" />
+			<Label class="surveyTitle" text="#Citadel_MatchSurvey_Title" />
 		</Panel>
 		<Panel id="SurveyQuestionsContainer" />
 		<Panel class="PopupButtonRow">
 			<Button id="SubmitButton" disabled="true" class="alignCenter" onactivate="CitadelCommitSurvey( )">
-				<Label class="submitButtonLabel" text="SUBMIT" />
+				<Label class="submitButtonLabel" text="#Citadel_MatchSurvey_Submit" />
 			</Button>
 			<Button id="CancelButton" class="ButtonDark" onactivate="UIPopupButtonClicked()">
-				<Label text="SKIP" />
+				<Label text="#Citadel_MatchSurvey_Skip" />
 			</Button>
 		</Panel>
 	</PostMatchSurvey>

@@ -29,13 +29,13 @@
 	JS_STRING
 	TYPE_BOOL
 	TYPE_ENUM
+	V_fmodf
 	V_fprintf
 	V_frexpf
 	V_isalpha_str_fast
 	V_isdigit_str
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncat
 	_V_strncmp
 	_V_strncpy
@@ -108,17 +108,17 @@
  (%s%s)
  (08@HPX`hpx
  (08@HPX`j
- (08@HPXb
+ (08@HPXb 
  (08@HPZ
- (08@HR
+ (08@HR 
  (08@J
- (0X`hpz
+ (08@J 
+ (0X`hpz 
  (Start: 
  * %d WeightLists
  * ScaleSet[%d] :: %s
  * WeightList[%d] :: %s
  ... }
- .@=Q
  0"r$4&
  : Extraneous input - expected %s ...
  : Extraneous input - expected <EOF>
@@ -217,7 +217,6 @@
  Hc1H
  Hc1L
  Hc2H
- Hc5o
  Hc9E3
  Hc9H
  Hc9L
@@ -278,7 +277,6 @@
 !IsValid()
 !a.IsZero() && ( !b.IsZero() )
 !bFoundRecordForChildGraph
-!bLooksLikeABug
 !bReRunFrame
 !destBlock.IsReadOnly() && !destBlock.IsExternalMemory()
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
@@ -455,6 +453,8 @@ $`<`uMM
 %s (%s)
 %s (Color)
 %s (Material)
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s : param %s %s : %f
 %s :: %s
 %s Target
@@ -483,14 +483,10 @@ $`<`uMM
 &vOutput != &pt3
 &vOutput != &pt4
 '	5't
-'	V_log10f
 ', type<
 ',=?k
 'Play reversed' has no effect when used with time synchronization!
 'p7M}f
-(	V_log2_uint
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( NmGetMostSignificantBit( flValue ) + 1 ) <= nMaxBitsToUse
 ( const void * ) &other != ( const void * ) this
 ( const void * ) out != ( const void * ) this
@@ -501,30 +497,22 @@ $`<`uMM
 ( ndxKeyData >= 0 ) && ( ndxKeyData < 65536 )
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
-(%'i:
-(%:`J
-(%_YA
+(%*mJ
 (%d,%d)
-(%iX0
-(%r2-
 (("**,
 ((6"8(:,<*>
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-&O=
-(-0Q=
-(-A0=
-(-Y7=
-(-Z~S
-(-[J=
-(-zgQ
+(->pG
 (0`hpx
 (4$Mc
-(5J0=
-(5P7=
-(5d>=
-(=<wS
-(={$K
+(5lXh
+(5oR=
+(5}U=
+(=PR=
+(=[0K
+(=j/K
+(=l.K
 (A]A\^[
 (A]A\_^
 (A^A\
@@ -706,9 +694,6 @@ $`<`uMM
 (l$pA
 (l$pD
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (merge 
 (null)
 (t$ 2
@@ -905,7 +890,6 @@ $`<`uMM
 )T$@E
 )T$@H
 )T$@I
-)T$@f
 )T$PM
 )T$`D
 )T$`E
@@ -916,8 +900,8 @@ $`<`uMM
 )\$ D
 )\$ L
 )\$0H
+)\$0I
 )\$0L
-)\$0M
 )\$@A
 )\$@D
 )\$@E
@@ -971,7 +955,6 @@ $`<`uMM
 )t$ ;
 )t$ A
 )t$ D
-)t$ E
 )t$ H
 )t$ I
 )t$ M
@@ -1067,17 +1050,19 @@ $`<`uMM
 )|$pH
 )|$pL
 )|B?d!
-*	V_log2f
+*	V_log10f
 *HcD;LH
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *xNIL
++	V_log2_uint
++:8S Fk
 +:HcS
 +Base Pose
 +Bones
 +C$Hc
 +C$Lc
-+D$T;
++D$`A;
 +D$pI
 +D$xI
 +G$Hc
@@ -1101,7 +1086,6 @@ $`<`uMM
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 , at <EOF>
 , at offset %d
 , from: 
@@ -1118,6 +1102,7 @@ $`<`uMM
 ,YA1I
 ,d$pfE
 ,j.b0^2`4^6`8^:f<
+-	V_log2f
 - Scripted Sequence: 
 -1 1000
 -BH>t
@@ -1135,8 +1120,7 @@ $`<`uMM
 .00cfg
 .3z u
 .40t8Ic
-.5PT(
-.=qv?
+.=JF5
 .>PJ;I:qE>
 .?AU?$ArrayWrapper@V?$CUtlVector@UCWeightPreview@@HV?$CUtlMemory@UCWeightPreview@@H@@@@@Detail@Reflection@@
 .?AU?$ArrayWrapper@V?$CUtlVector@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@HV?$CUtlMemory@V?$CSmartPtr@VCAnimComponentInstance@@VCRefCountAccessor@@@@H@@@@@Detail@Reflection@@
@@ -1377,6 +1361,7 @@ $`<`uMM
 .?AV?$CAnimNetVarDataOps@V?$CAnimNetVar@M@@$0P@@@
 .?AV?$CAnimNetVarDataOps@V?$CAnimNetVar@V?$Vec3D@M@@@@$02@@
 .?AV?$CAnimNetVarDataOps@V?$CAnimNetVar@V?$Vec3D@M@@@@$0CN@@@
+.?AV?$CAnimNetVarDataOps@V?$CAnimNetVar@V?$Vec3D@M@@@@$0O@@@
 .?AV?$CAnimNetVarDataOps@V?$CAnimNetVar@_K@@$0CB@@@
 .?AV?$CAnimNetVarDataOps@V?$CAnimNetVar@_N@@$05@@
 .?AV?$CBaseAppSystem@VIAnimationSystem@@@@
@@ -2568,17 +2553,17 @@ $`<`uMM
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
 /2GG>!B
 /3HcC
-/5-j,
-/5`H-
-/5`V]
-/5b$5
-/5jP(
-/5p87
-/5pG-
-/5s$5
+/5/@+
+/5M|,
+/5P^]
+/5g&(
+/5pR#
+/5}G.
 /6s^M
+/=Ul;
 />58d%
 /@$s6
 /A8s"
@@ -2604,6 +2589,7 @@ $`<`uMM
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
 08@HR
+08@J 
 0;O0|
 0><[cZUg^>
 0A\^]
@@ -2663,9 +2649,9 @@ $`<`uMM
 0X8b?~
 0_^[H
 0iN>/
+0v0!N
 0w0c1
 0}0i1
-1	V_modff
 1#IND
 1#INF
 1#QNAN
@@ -2675,6 +2661,7 @@ $`<`uMM
 1:1: Tokens : ( T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
 1<.	/>:
 1YA1I
+1hTV'e)
 2$.CGameInfo.CDotaGameInfo.CPlayerInfo
 2).CGameInfo.CDotaGameInfo.CHeroSelectEvent
 210429000000Z
@@ -2682,11 +2669,12 @@ $`<`uMM
 220323000000Z
 220801000000Z
 230714000000Z
-240723235131Z0/
+240801162020Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2HcY0HcB
+2X>V^
 2YA1A
 2_BONE_IK
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
@@ -2704,27 +2692,26 @@ $`<`uMM
 3HcD$xH
 3mq+<
 3qGZL
+4	V_modff
 456789:;<=
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
 4>H;7tIH
 4@A;m@
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
+5PG'S
 5YA1I
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
-6)2U^
 6*f(_
 6I]Dc
 6OB,n_
+6aPJP
 6p7MOf
-7	V_powd
 70503
 7Lck8H
 7YA1A
 7YA1I
-7]~lm
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8/t[H
 80tWD
 8@8t)0u
@@ -2749,12 +2736,12 @@ $`<`uMM
 8A_A^_^][
 8A__][
 8A__^[
+8CBlendNodeInstanceData
 8Csinf
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8E8~lthH
-8F 3Q
 8H;{8t'H
 8HcA H
 8HcGh
@@ -2763,11 +2750,12 @@ $`<`uMM
 8_^][
 8emE3
 8ke?;
-9%@q(
 9)~P3
 9)~eH
 9+fIH
+9-Sy>
 90u(H
+958P2
 98t H
 98~(H
 98~+H
@@ -2856,10 +2844,11 @@ $`<`uMM
 9|$xu
 9}@~&
 9}@~V
-:	V_qsort_s
+:	V_powd
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 : lexer error %d :
+:!=Jp'
 :!D$ 0
 :!D$80
 :!D$@0
@@ -2877,10 +2866,10 @@ $`<`uMM
 :!l$@0
 :!t$$0
 :!t$(0
-:!t$l0
 :!|$ 0E
 :!|$`0
 :!|$d0
+:!|$l0
 :!}`0
 ::embedded_animation
 :>)*	v
@@ -2906,9 +2895,10 @@ $`<`uMM
 :m_hSequence
 :m_resetCount
 :m_resetCycleValue
+;	V_powf
+;-]9j
 ;.u1L
-;='_R
-;=I/1
+;=4k1
 ;?0123456789:;<=>?
 ;CX}|H
 ;E,s<H
@@ -2968,7 +2958,6 @@ $`<`uMM
 <St[@:
 <St[A:
 <Unknown>
-<V 	qw
 <YA1H
 <\8@6
 <`tHH
@@ -2991,6 +2980,7 @@ $`<`uMM
 <unknown>
 <utK@:
 <x~fH
+=	V_qsort_s
 =%H5<mN
 ========================================
 ==MQ?
@@ -3011,7 +3001,6 @@ $`<`uMM
 >f;D$4t
 >fA9~
 >jtm}S
-?	V_roundf
 ?!5WOo
 ?+>^m
 ?456789:;<=
@@ -3109,7 +3098,6 @@ $`<`uMM
 ?SaveKV3@@YA_NAEBUKV3ID_t@@0PEBVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@I@Z
 ?SeekGet@CUtlBuffer@@QEAAXW4SeekType_t@1@H@Z
 ?SeekPut@CUtlBuffer@@QEAAXW4SeekType_t@1@H@Z
-?ServerAuthoritative
 ?Set@CUtlBinaryBlock@@QEAAXPEBXH@Z
 ?Set@CUtlString@@QEAAXPEBD@Z
 ?SetDirect@CUtlString@@QEAAXPEBDH@Z
@@ -3119,7 +3107,6 @@ $`<`uMM
 ?SetLength@CUtlString@@QEAAXH@Z
 ?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?SetSeed@?$CUniformRandomStreamImpl@VCThreadSpinMutex@@@@QEAAXH@Z
-?SlopeData
 ?Split@CSplitString@@AEAAXPEBDHPEAPEBDH_N@Z
 ?TY,>5
 ?ToLowerFast@CBufferString@@QEAAXH@Z
@@ -3146,8 +3133,8 @@ $`<`uMM
 @.data
 @.reloc
 @08@HPX`hpx
+@08N0!N
 @0HcB
-@6 -Q
 @8/te3
 @84)u
 @8HcB
@@ -3205,6 +3192,7 @@ $`<`uMM
 @A_A^]
 @A_A^^
 @A_A^_
+@A_A^_^[
 @A_A^_^]
 @A_][
 @A_^]
@@ -3213,6 +3201,7 @@ $`<`uMM
 @HHcB$;B(u
 @HPX&I
 @HPX`hv
+@HVP5Q
 @HcAp3
 @L9?t	H
 @PHcB(;B,u
@@ -3288,7 +3277,6 @@ $`<`uMM
 @SWAVH
 @SWAWH
 @SequenceData
-@SiA 
 @UATAUAVAWH
 @UATAUAVH
 @UATAVAWH
@@ -3305,7 +3293,6 @@ $`<`uMM
 @USVATAUAVH
 @USVATAUH
 @USVATAWH
-@USVAUAVAWH
 @USVH
 @USVWATAUAVAWH
 @USVWATAUAVH
@@ -3313,6 +3300,7 @@ $`<`uMM
 @USVWATAVAWH
 @USVWAUAVAWH
 @USVWAUAVH
+@USVWAUAWH
 @USVWAVAWH
 @USVWAVH
 @USVWH
@@ -3346,7 +3334,6 @@ $`<`uMM
 @UWATAWH
 @UWATH
 @UWAUAWH
-@UWAUH
 @UWAVAWH
 @UWAVH
 @UWAWH
@@ -3384,6 +3371,7 @@ $`<`uMM
 @h;D$ u*
 @hD;Ghu
 @m_vCenter
+@n0!N
 @t#H;
 @t^H;
 @tfH;
@@ -3445,8 +3433,8 @@ A;,$|
 A;4$|
 A;<$|
 A;B(}
-A;D$ }
 A;D$(
+A;E }
 A;F |
 A;F8|
 A;Fp~DA
@@ -3460,8 +3448,8 @@ A;I }
 A;O |
 A;Oh~DA
 A;P0}
-A;T$ }
 A;T$0}
+A;U }
 A;U }.D
 A;V }
 A;W(~
@@ -4005,6 +3993,7 @@ Audio Tag
 August
 Auto Reset
 Axis isn't normalized!
+B	V_roundf
 B 9A tDA
 B D	B
 B H+P(
@@ -4490,6 +4479,7 @@ C:\buildworker\citadel_rel_win64\build\src\animgraphlib\singleframeupdatenode.cp
 C:\buildworker\citadel_rel_win64\build\src\animgraphlib\slopecomponentinstance.cpp
 C:\buildworker\citadel_rel_win64\build\src\animgraphlib\slopecomponentupdater.cpp
 C:\buildworker\citadel_rel_win64\build\src\animgraphlib\solveikchainupdatenode.cpp
+C:\buildworker\citadel_rel_win64\build\src\animgraphlib\statemachineupdatenode.cpp
 C:\buildworker\citadel_rel_win64\build\src\animgraphlib\staticposecache.cpp
 C:\buildworker\citadel_rel_win64\build\src\animgraphlib\stridestatus.cpp
 C:\buildworker\citadel_rel_win64\build\src\animgraphlib\subtractposeoperation.cpp
@@ -4625,7 +4615,6 @@ C:\buildworker\citadel_rel_win64\build\src\public\mathlib\vectoraligned.h
 C:\buildworker\citadel_rel_win64\build\src\public\modellib\ik\ikchaindata.h
 C:\buildworker\citadel_rel_win64\build\src\public\modellib\ik\ikjointconstraintdata_hinge.h
 C:\buildworker\citadel_rel_win64\build\src\public\modellib\ik\iktargetsettings.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\physicslib\physaggregatedata.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3transfertypemanager.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3typemanager.h
@@ -4943,6 +4932,7 @@ CAnimUpdateContext::CAnimUpdateContext
 CAnimUpdateContext::GetHandshakeTagHash
 CAnimUpdateContext::GetNodeWeightRecurs
 CAnimUpdateContext::GetValue
+CAnimUpdateContext::GetValue::<lambda_1>::operator ()
 CAnimUpdateContext::GetVectorValue
 CAnimUpdateContext::SetCurrentLOD
 CAnimUpdateContext::SetParam
@@ -5103,7 +5093,6 @@ CBlendCurve::EvaluateInverse
 CBlendCurve::KV3TransferLoad_Impl
 CBlendCurve::KV3Transfer_DefaultKeys_Impl
 CBlendCurve::Schema_VerifyBindingIsRegistered
-CBlendNodeInstanceData
 CBlendPoseOperation::BlendPoses
 CBlendPoseOperation::CBlendPoseOperation
 CBlendUpdateNode
@@ -5900,6 +5889,7 @@ CMotionSearchNode
 CMotionSearchNode::KV3TransferLoad_Impl
 CMotionSearchNode::KV3Transfer_DefaultKeys_Impl
 CMotionSearchNode::Schema_VerifyBindingIsRegistered
+CMovementComponentInstance::GetMotorChoices::<lambda_1>::operator ()
 CMovementComponentInstance::SetBoundaryRadius::<lambda_1>::operator ()
 CMovementComponentInstance::SetManualFacingDirection::<lambda_1>::operator ()
 CMovementComponentInstance::SetManualFacingTarget::<lambda_1>::operator ()
@@ -6789,11 +6779,6 @@ CNmZeroPoseNode::Update
 CNmZeroPoseTask
 CNmZeroPoseTask::Schema_VerifyBindingIsRegistered
 COMMA
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 COrientConstraint
 COrientConstraint::KV3TransferLoad_Impl
 COrientConstraint::KV3Transfer_DefaultKeys_Impl
@@ -7158,6 +7143,7 @@ CStateMachineComponentUpdater::KV3Transfer_DefaultKeys_Impl
 CStateMachineComponentUpdater::Schema_VerifyBindingIsRegistered
 CStateMachineInstanceData
 CStateMachineUpdateNode
+CStateMachineUpdateNode::EnqueueChildren::<lambda_1>::operator ()
 CStateMachineUpdateNode::KV3TransferLoad_Impl
 CStateMachineUpdateNode::KV3Transfer_DefaultKeys_Impl
 CStateMachineUpdateNode::Schema_VerifyBindingIsRegistered
@@ -8407,7 +8393,6 @@ CloseEnough( blendWeights.m_weights[ 0 ], 1.f - blendWeights.m_weights[ 1 ] )
 CloseEnough( vToToeDirWS.Length(), 1.f, 0.01f )
 CloseHandle
 Cloth Settings Tag
-Cnnv4
 Color
 Command
 CommandLine
@@ -8432,7 +8417,6 @@ ConfigIndex::Schema_VerifyBindingIsRegistered
 ConfigIndex::Set
 Configuration
 Constant
-Construction is only allowed from the resolve function
 Convar for toggling foot lock ground tracking.
 ConvertV1MeshFlags
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
@@ -8463,7 +8447,6 @@ CycleControlClipNode
 C|$pH
 C|$xL
 C|;Cxu	
-D	V_sincosf
 D W?{W
 D!l$xA
 D$ 	!O3
@@ -8767,6 +8750,7 @@ D$<8A
 D$<A;
 D$@+C
 D$@BR
+D$@D;D$H
 D$@D;m@
 D$@E3
 D$@H+
@@ -8904,6 +8888,7 @@ D8t$0
 D8t$ht
 D8{8u+H
 D8|$`t
+D9%jR2
 D9&|6
 D9/~%H
 D9/~4fff
@@ -9047,7 +9032,6 @@ DeltaOrientationY
 DeltaOrientationZ
 Demo Settings Component
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DescriptorProto
 DescriptorProtosH
 Destroy
@@ -9098,7 +9082,6 @@ DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
 D|$0H
 E	44H
-E	V_sind
 E 8C 
 E @8pHtD9s|~?L
 E D8xKtgA
@@ -9114,10 +9097,10 @@ E8&tM3
 E80t"A
 E8>t\3
 E8a(u
+E8fhu
+E8fit
 E8q(u
 E8uptt
-E8}hu
-E8}it
 E9`x~
 E9f ~3A
 E9f(t
@@ -9127,7 +9110,7 @@ E9g ~
 E9g(~kM
 E9t$h
 E;A(|
-E;D$ }
+E;E }
 E;Mx|
 E;N }2Mc
 E;S0}
@@ -9157,6 +9140,7 @@ ESCAPE_CODE
 EXPONENT
 EXPORTSYSTEM_INTERFACE_VERSION_001
 Early exit
+EarlyInit_Tier0
 EaseIn
 EaseOut
 EconItemToolModel_001
@@ -9663,7 +9647,6 @@ ExitProcess
 Expanded map entry type 
 Expect a decimal number, got: 
 Expected "
-Expected %f but got %f!
 Expected an array with two elements when loading a CUtlPair.
 Expected double, got: 
 Expected eight hex digits up to 10ffff for \U escape sequence
@@ -9695,7 +9678,6 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 ExternalNameForInternalType
 ExtraSeqFlags
 Extraneous token
-F	V_sinf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -9846,10 +9828,9 @@ F`HcUg+
 F`Lco(A
 Face Down Path
 Face Look Target
-Facing Direction
 Facing Heading
 Facing Mode
-FacingDirection
+Facing Position
 FacingHeading
 FacingMode
 FacingMode_Invalid
@@ -9857,6 +9838,7 @@ FacingMode_LookTarget
 FacingMode_Manual
 FacingMode_ManualPosition
 FacingMode_Path
+FacingPosition
 Fade in time of the animation
 Fade out time of the animation
 Failed to allocate a class instance for type named '%s'
@@ -10039,6 +10021,7 @@ Func( %s )
 Function "%s" takes %i parameters, but %i were given
 Future Facing
 Future Velocity
+G	V_sincosf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -10123,7 +10106,6 @@ GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
 GetBool
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -10231,7 +10213,7 @@ G|$(L
 G|$8B
 G|$HA
 G|$HL
-H	V_sinhf
+H	V_sind
 H	p0H
 H 8YKt
 H 8YKt	
@@ -10279,15 +10261,12 @@ H0H9)t
 H0HcGh
 H9(tO
 H9+t	H
-H9- zU
-H9-<yU
 H9/t	H
 H92tBA
-H9531>
 H97u+A
 H98t2
 H9;t	H
-H9=ymd
+H9=Q:v
 H9A s
 H9A u)M
 H9A(u
@@ -10305,7 +10284,6 @@ H9P s
 H9X s
 H9\$@
 H9\$X
-H9_(u
 H9i s
 H9k H
 H9k(H
@@ -10408,6 +10386,7 @@ HA__^[
 HD;N8|
 HD;Ot|
 HELPER_BONE
+HFBb?cL
 HH:mm:ss
 HHcA H
 HSequence
@@ -10457,7 +10436,8 @@ HcD$03
 HcD$0A
 HcD$0D
 HcD$0H
-HcD$D
+HcD$<H
+HcD$H
 HcD$\H
 HcD$xH
 HcD7L
@@ -10553,7 +10533,7 @@ HcT$0
 HcT$0H
 HcT$8H
 HcT$@H
-HcT$P
+HcT$\A
 HcT$`H
 HcT$`L
 HcT$hH
@@ -10635,7 +10615,7 @@ HitReactFixedSettings_t::KV3Transfer_DefaultKeys_Impl
 HitReactFixedSettings_t::Schema_VerifyBindingIsRegistered
 HostStateMgr001
 HxH9Jxt
-I	V_snprintf
+I	V_sinf
 I could not work out what I was expecting, like so many of us these days!
 I#I0H
 I#J0H
@@ -11319,7 +11299,6 @@ Int Parameter
 Int( %d )
 Integer out of range (
 Intensity of the animation
-Intentionally vague touch behavior for %p
 Intercept point.
 InterlockedFlushSList
 Internal Tag
@@ -11447,6 +11426,7 @@ JiggleBoneSettings_t::KV3Transfer_DefaultKeys_Impl
 JiggleBoneSettings_t::Schema_VerifyBindingIsRegistered
 JiggleBoneSimSpace
 JumpCorrectionMethod
+K	V_sinhf
 K HcC$Hc
 K$HcC(;
 K&>.yC
@@ -11473,8 +11453,6 @@ Key in map fields cannot be enum types.
 Key in map fields cannot be float/double, bytes or message types.
 KeyValueCache001
 KeyValues3
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::ArrayAddToTail
 KeyValues3::ArrayInsertMultipleBefore
 KeyValues3::CopyFrom
@@ -11511,6 +11489,7 @@ KeyValues3::Metadata_SetFileLineColumn::<lambda_1>::operator ()
 KeyValues3::TransferOwnershipOfBinaryBlob
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#^0I
@@ -11676,16 +11655,19 @@ L+A0L
 L+H0H
 L+i0I
 L9#u/H
-L9-Y@7
-L9-t@7
+L9-IM7
+L9-dM7
+L9-wL7
 L92tDA
 L94:H
-L95%p9
-L95)Zy
-L957tc
-L95GYy
-L95Go9
-L95n78
+L955}9
+L959my
+L95IVd
+L95Wly
+L95W|9
+L95^D8
+L95n#=
+L95yD8
 L9;u	H
 L9?t	H
 L9@ s
@@ -11708,6 +11690,7 @@ L9j8u
 L9l$(t
 L9l$ht
 L9m@t
+L9o(u
 L9p tkI
 L9s u#
 L9s u$H
@@ -11772,8 +11755,6 @@ Lc3Nc|
 Lc6Hc+A
 Lc;A+
 Lc;D;{
-Lc=1x.
-Lc=by.
 Lc?A+
 Lc?D;
 LcA,L
@@ -12141,6 +12122,7 @@ Move:m_flFacingHeading
 Move:m_flGoalDistance
 Move:m_flTargetMoveSpeed
 Move:m_vAcceleration
+Move:m_vFacingPosition
 Move:m_vMoveDir
 MoveData
 MoveDirection
@@ -12249,6 +12231,7 @@ No default value
 No expression!
 No field named "uninterpreted_option" in the Options proto.
 No input data for '%s'. (Empty buffer.)
+No look component to look up look heading.
 No schema binding info for enum '%s'
 No value found when unserializing key/value pairs for utldict
 NoDamping
@@ -12260,14 +12243,15 @@ Not safe to 'new' this class due to alignment requirements
 Not supported.
 Note that enum values use C++ scoping rules, meaning that enum values are siblings of their type, not children of it.  Therefore, "
 November
+Null motor found in list
 Num Iterations 
 NumOps: %i
 Number of bones in input stream does not match skeleton
 Numbers starting with leading zero must be in octal.
-O	V_sscanf
 O$M9o
 O0+W8
 O8HcB
+O=-k1
 O@IcZ
 OF>;^
 OH+WP
@@ -12305,9 +12289,6 @@ Option field "
 Option must have a name.
 Option must not use reserved name "uninterpreted_option".
 OrLockType
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orientation Warp failed since there is not enough time left to warp or we're past the warp event!
 Orientation warp failed since there wasnt a valid target direction set!
 Original
@@ -12328,9 +12309,9 @@ Overlay Blend (Masked): %.2f%%
 Overlay Blend: %.2f%%
 OverlayProjectionDirection
 Override Sound
-P08@J
-P6 <Q
-P60	Q
+P08@J 
+P08J0:
+P08N0!N
 P>q_Y~
 P@@8|$Pu
 P@HPX`hpx
@@ -12392,6 +12373,7 @@ POSE_SPACE_BONE
 POSE_SPACE_MORPH
 POS_FLOATLITERAL
 POS_INTLITERAL
+PW$9Q:
 PX`hpx
 P`9(tLH
 Package name is too long
@@ -12461,10 +12443,10 @@ PhysicsBuilderMgr001
 Plane normal
 Plane normal is not unit length!
 Plat_CreateUUIDImpl
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_NonFatalErrorFunc
 Plat_RegisterModule
@@ -12515,6 +12497,7 @@ QuaternionParameter
 QuaternionStorage
 QueryPerformanceCounter
 Quint
+R	V_sscanf
 R A;F
 R.num_cols() == nSampleCount
 R.num_rows() == nSampleCount
@@ -13260,6 +13243,7 @@ Sequence out of range: %d
 Sequence( %s, %.3f ) : %.3f
 SerializedEntitiesVersion001
 Server Authoritative
+ServerAuthoritative
 ServerToolsInfo_001
 ServiceDescriptorProto
 ServiceOptions
@@ -13328,6 +13312,7 @@ Slope Normal World Space
 Slope Pitch
 Slope Yaw
 SlopeAngle
+SlopeData
 SlopeHeading
 SlopeNormal
 SlopeNormal_WorldSpace
@@ -13426,7 +13411,6 @@ SyncChildren
 Synchronize Children
 Synchronized
 Synthetic oneofs must be after all other oneofs
-T	V_stricmp_fast
 T$ D8t$(
 T$ E3
 T$ H;
@@ -13449,7 +13433,6 @@ T$(H;T$0t
 T$(Hc
 T$(fD
 T$,Hc
-T$08\
 T$09W|
 T$0:P
 T$0D9bh
@@ -13460,7 +13443,6 @@ T$0H;
 T$0H;K
 T$0H;T$8t)
 T$0Hc
-T$0HcD
 T$0I+
 T$0I;
 T$0L;
@@ -13484,11 +13466,11 @@ T$Bf;
 T$C9C
 T$C9F
 T$C9G
+T$G9G
 T$H@2
 T$HA;vh
 T$HH+
 T$HH;
-T$I9G
 T$Jfff
 T$K9C
 T$LE2
@@ -13524,6 +13506,7 @@ T$hHc
 T$hI;
 T$hL;MPt
 T$hM;
+T$i9G
 T$k9C
 T$k9G
 T$pH+
@@ -13545,7 +13528,7 @@ T${9C
 T${9G
 T${A9F
 T+(I;
-T5ON5
+T-\6A
 TILT_TWIST
 TNT::Matrix<float>::initialize
 TNT::Vector<float>::initialize
@@ -13741,6 +13724,7 @@ Unhandled FIELD type
 Unhandled IK case %d
 Unhandled case for target acquisition: '%d'.  Defaulting to bone.
 Unhandled name stack entry
+Unhandled parameter source %s (%d)
 Unhandled type for converting to string (%s (%d))
 UnhandledExceptionFilter
 Unimplemented type: 
@@ -13907,8 +13891,6 @@ V_fabsf( flCheckDecompositionOrthogonality ) < 0.001f
 V_fabsf( flNewTargetValue - flDampedValue ) <= 180.f
 V_fabsf( vStartDirection.Normalized().Dot( vNormal ) ) < DEG2RAD( 1 )
 V_fabsf( vWsStartDirection.Normalized().Dot( vWsHingeAxis ) ) < DEG2RAD( 1 )
-V_fabsf((vMsJointAxis.LengthSqr()) - (1.0f)) <= (1e-2f)
-V_fmodf
 V_uuid_t
 V_~]	,
 Validates the animation group channel list against the animations on load for every animation
@@ -13959,11 +13941,15 @@ Virtual Parameter
 VisBuilder_001
 Volume
 Vrad3_001
-W%=l)
-W-=7)
-W-iH"
+W	V_stricmp_fast
+W%rj$
+W-]9)
+W5OZ'
+W5gE;
 W8IcG(M
 W9QHI
+W=4l$
+W=sk$
 WARNING
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
@@ -14020,11 +14006,16 @@ X SUWATAUH
 X UVWATAUAVH
 X!t5~
 X(Hc@ H
-X-&	!
-X-<$ 
-X-N	!
-X5,& 
-X5:P(
+X-9q<
+X-:^-
+X-E* 
+X-`( 
+X-`q<
+X-a^-
+X-v(!
+X5-@+
+X5M+)
+X5t+)
 XA]A\
 XA^A]A\[
 XA^A]_^][
@@ -14057,21 +14048,22 @@ Xt/@A
 Xt7HH
 X|	@A
 Y (Green / Left)
-Y%@T0
-Y%F	4
-Y%i_0
+Y%Jr?
+Y%n3>
 Y(HcA H
-Y-=O>
+Y-,nF
+Y-]\0
+Y-xW=
 Y0HcR
-Y58?E
-Y5;83
-Y5<G)
-Y5>63
-Y5oC)
-Y5u0?
-Y5wA3
-Y5{DD
+Y52@+
+Y53]-
+Y5K:)
+Y5U9?
+Y5]@3
+Y5l|3
+Y5mD3
 Y9"SD
+Y=b7I
 Y>kX>M
 YD$0A
 YD$4D
@@ -14110,7 +14102,6 @@ Zod(^?
 [lazy = true] can only be specified for submessage fields.
 [packed = true] can only be specified for repeated primitive fields.
 [unknown]
-\	V_strtok
 \$ 9\$0|LH
 \$ @8t$(
 \$ A;
@@ -14179,7 +14170,6 @@ Zod(^?
 \$0Hi
 \$0Hk
 \$0I+
-\$0I9\$H
 \$0L+@0H
 \$0L;
 \$0M+
@@ -14238,18 +14228,18 @@ Zod(^?
 \$p9]
 \$pH;
 \$pw;
-\-#( 
-\-P$ 
-\-b	!
-\5@& 
-\5YG)
+\-Y* 
+\-tq<
+\-u^-
+\57]<
+\5j:)
+\5{U)
 \9\D;
 \A fA
 \D	 fA
 \D$@A
 \L$Df
 \U%08x
-\d$8A
 \l$DD
 \q`fA
 \t	`fA
@@ -14258,14 +14248,11 @@ Zod(^?
 \|	@fE
 \|'(H
 ] HcE
-]%Gi5
 ](IcE L
 ])6M>&
 ]0HcE(H
 ]0tOH
-]5)d'
-]5nd'
-]=T@"
+]=h	5
 ]>)2X
 ]@tKH
 ]J<0"0i3
@@ -14286,6 +14273,7 @@ Zod(^?
 ^XH;]Xt*H
 ^fD;]
 ^hH9^PH
+_	V_strtok
 _ ;_$t
 _0HcG(H
 _0HcG(L
@@ -14327,8 +14315,7 @@ _xHc[
 ` UAVAWH
 `+!]?
 `.rdata
-`6`9Q
-`6`:Q
+`6@!Q
 `A]A\^[]H
 `A]A\_^]
 `A]][
@@ -14365,6 +14352,7 @@ _xHc[
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
+`f0!N
 `local static guard'
 `local static thread guard'
 `local vftable constructor closure'
@@ -14372,6 +14360,7 @@ _xHc[
 `managed vector constructor iterator'
 `managed vector copy constructor iterator'
 `managed vector destructor iterator'
+`n0!N
 `omni callsig'
 `placement delete closure'
 `placement delete[] closure'
@@ -14390,9 +14379,9 @@ _xHc[
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a7hIw
+aBv0!N
 abcdefghijklmnopqrstuvwxyz
 activity
 additional_includes
@@ -14503,7 +14492,6 @@ bAllocationCanFit
 bIsGraphWritable
 bIsPublic
 bKY\L
-bLegalTypeChange
 bLoop || ( 0 <= flCycle && flCycle <= 1.f )
 b_action_restart
 b_movement_type_restart
@@ -14540,7 +14528,6 @@ break
 broken pipe
 bulletimpact
 bytes
-c	V_tanhf
 c HcC8
 c [1>H'
 c(>\,
@@ -14650,7 +14637,6 @@ const char *__cdecl Reflection::Internal::GetFuncName<class CAnimGraphNetworkSet
 const char *__cdecl Reflection::Internal::GetFuncName<class CAnimGraphSettingsGroup>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CAnimInputDamping>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CAnimMotorInstance*>(void)
-const char *__cdecl Reflection::Internal::GetFuncName<class CAnimMotorInstance>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CAnimNodeInstanceBase>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CAnimParameterBase>(void)
 const char *__cdecl Reflection::Internal::GetFuncName<class CAnimParameterInstance*>(void)
@@ -14898,6 +14884,7 @@ curvature
 curve_tangent_mode_t
 cycle
 cycleDelta.IsNormalized()
+d	V_tanf
 d$ D!
 d$ E3
 d$ L9c
@@ -15033,6 +15020,7 @@ expression
 extend .$0 {
 extendee
 extension_range
+f	V_tanhf
 f4MaxDist
 f4MinDist
 f4RelaxationFactor
@@ -15078,7 +15066,7 @@ f;\$L
 f;\$Lr
 f;\$T
 f;\$\
-f@`?g
+f@const char *__cdecl Reflection::Internal::GetFuncName<class CAnimMotorInstance>(void)
 fA9	t	I
 fA9,Au
 fA99}
@@ -15104,8 +15092,9 @@ fD9 t
 fD9!H
 fD9!u
 fD9$Hu
-fD9%M_R
+fD9%-sR
 fD9'u
+fD9+u
 fD9,Au
 fD9,pu
 fD91uTL9r
@@ -15233,6 +15222,7 @@ fromTime >= 0.0f && fromTime <= 1.0f
 fullpackets_version
 function not supported
 g0D8} t"H
+gBc)n>
 g_pAnimationSystem
 g_pResourceHandleUtils
 g_pResourceHandleUtils->GetResourceHandleType( *pHandle ) == T::GetResourceType()
@@ -15313,6 +15303,7 @@ hurt_them
 i < ( uint32 ) m_weights.Count()
 i >= 0 && i < m_sampledEvents.Count()
 i u!H
+i8YgZ)
 iActivityIndex > g_FirstPrivateActivity
 iBone >= 0 && iBone < CBoneAccessor< T >::m_nBones
 iBone >= 0 && iBone < GetNumBones()
@@ -15397,6 +15388,7 @@ items_t
 iu+-,
 iv_debugbone
 j*$E3
+j7E2Bx>
 j<	u#H
 j>>A?1
 j?V()
@@ -15425,7 +15417,6 @@ kHH9k0H
 kL@8o(u
 keyvalues
 ksmCH
-ky]m~tP
 l$ 9jX
 l$ AVH
 l$ E3
@@ -16479,7 +16470,6 @@ m_flPredictionScale
 m_flPrevAnimTime
 m_flPrevCycle
 m_flPrevCycleUnclamped
-m_flPrevFacingHeading
 m_flProgression
 m_flPropagationScale
 m_flQuadVelocitySmoothRate
@@ -17287,6 +17277,7 @@ m_samplingMode
 m_scale
 m_scaleRange
 m_sceneObjects
+m_scheduledTransitionIndex
 m_scrapeRough
 m_scrapeSmooth
 m_scriptInfo
@@ -17446,6 +17437,7 @@ m_vDebugOffset
 m_vDomainMaxs
 m_vDomainMins
 m_vEyePosition
+m_vFacingPosition
 m_vFootBaseBindPosePositionMS
 m_vGuideBary_vBaseBary
 m_vHeelOffset
@@ -17474,6 +17466,7 @@ m_vPoint0
 m_vPoint1
 m_vPos
 m_vPosition
+m_vPrevFacingPosition
 m_vRootOffset
 m_vRootOffset_flLengthScale
 m_vRotation
@@ -17567,7 +17560,6 @@ mwtMH
 n < m_Vector.Count()
 n HcF$
 n I9.t	I
-n-K[9
 n03>Pu
 n<	fE
 n<	fG
@@ -17751,29 +17743,24 @@ number
 numframes
 o H9o
 o L9s t
-o%#YY
-o%&]Y
-o%(fY
-o%WWY
-o-9fY
-o-OWY
-o-RYY
+o%#OY
+o%3~Y
+o%TyY
+o%cmY
+o%fqY
+o%hzY
+o-.qY
+o-4zY
+o-yzY
 o0Lcg(I
-o5NfY
-o5o9Y
-o5o:Y
-o5wWY
-o=29Y
-o=HLY
-o=Q9Y
-o=S:Y
-o=VDY
-o=b^Y
-o=efY
-o=ihY
-o=kiY
-o=q?Y
-o=raY
+o5&qY
+o5<zY
+o=%lY
+o=*xY
+o=-eY
+o=DzY
+o=K]Y
+o=rMY
 o@u H
 oI>O7
 objc_class_prefix
@@ -17815,11 +17802,12 @@ p UWATAVAWH
 p WATAUAVAWH
 p WAVAWH
 p*W4H
-p08@H^
+p08@H^0!N
 p0R^G'
-p6`-Q
+p0j0k
 p7M}f
 p;Y>u
+p>0!N
 p@HPX`h
 pA]A\_][
 pA]][
@@ -17902,8 +17890,8 @@ pLayerIndices[ layer.m_nOrder ] == INVALID_LAYER_ORDER
 pLayerIndices[ m_transitioningLayers[ i ].m_nOrder ] == INVALID_LAYER_ORDER
 pLoadFromMember
 pLoadFromValue != nullptr
+pLookComponent
 pMaskToScale != nullptr
-pMemory[i] == 0
 pMeta
 pModel
 pModel->GetAnimationStateOffset( ANIMATION_STATE_TYPE_BONE_TRANSFORMS ) == 0
@@ -17981,6 +17969,7 @@ playback_ticks
 playback_time
 player_info
 player_name
+pn0!N
 pointer
 pos.IsValid()
 poseCount <= V_ARRAYSIZE( tmpWeights )
@@ -18443,6 +18432,7 @@ t@HcT
 tAfff
 tBD9E0~<I
 tBD9G0~<I
+tBHcT7
 tCHcFp3
 tDfff
 tEHcR
@@ -18589,6 +18579,7 @@ u.@8}`tcI
 u.H;A
 u.H;P
 u0H9t$pt
+u0H9u
 u1!D$0H
 u1D:Y
 u1fff
@@ -18654,7 +18645,6 @@ vInputVecWS.Length() >= 0.f
 vJOnPlane2
 vJOnPlane3
 vJOnPlane4
-vK$=-8
 vKfffff
 vLookTarget
 vMoveDir.IsValid() && VectorIsNormalized( vMoveDir )
@@ -18722,6 +18712,7 @@ wXHcGPH
 weak_dependency
 weaponType
 weight
+weights.Count() > nCurrentStateIndex
 wheeldrag
 whileCurrent
 worldrelative
@@ -18757,6 +18748,7 @@ x,A;Fp}&I
 x/;F(}*H
 x0H+x
 x3A;Y
+x5A;U }/I
 x5D;AX}/H
 x5D;IX}/H
 x7;AX}2H
@@ -18773,11 +18765,11 @@ xA^A]_^][
 xA^_[]
 xA^_^]
 xA_A]^]
+xA_A]_^[]
 xA_A^A\_
 xA_A^A]A\_^[]
 xA_A^A]A\_^][
 xA_A^A]]
-xA_A^A]^[]
 xA_A^_^][
 xD;Oh}?
 xD;_h}?
@@ -18786,13 +18778,13 @@ xJ;Kh}E
 xLocalToWorld.IsValid()
 xM;8}IH
 xMA;F
-xNA;|$
 xQD;AH}KH
 xSD;*}NIc
 xVA;Hh}PA
 xY;Ch}TH
 x_;Qh}Z
 x_^][
+x`E;u
 xdA;I
 xform.IsValid()
 xgHcGHH
@@ -18843,7 +18835,6 @@ zero dir
 {hH9{PH
 {pH9{PH
 {pHcKhH
-{phbN&
 {un'%
 {xH9{PH
 |#tAM
@@ -19046,7 +19037,6 @@ zero dir
 }&fff
 }'HcC
 }'fff
-}(;=)mi
 }(H;{(t-H
 }(IcE H
 });C$

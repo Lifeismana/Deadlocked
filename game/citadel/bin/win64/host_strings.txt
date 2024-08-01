@@ -5,7 +5,6 @@
 	6p7M
 	6p7MOf
 	CODE_SIZE
-	ECOPt
 	I9H t
 	JS_NORMAL
 	JS_NUMBER
@@ -13,7 +12,6 @@
 	TYPE_BOOL
 	TYPE_ENUM
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	enum_type
 	extension
 	g_bUpdateStringTokenDatabase
@@ -47,7 +45,7 @@
   Problem     : Enum value did not match field type:
   Problem     : Field is not the right type for this message:
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$xM
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -67,11 +65,12 @@
  (%s%s)
  (08@HPX`hpx
  (08@HPX`j
- (08@HPXb
+ (08@HPXb0
  (08@HPZ
- (08@HR
+ (08@HR0
  (08@J
- (0X`hpz
+ (08@J0
+ (0X`hpz0
  ... }
  0"r$4&
  = { <proto text format> }". To set fields within it, use syntax like "
@@ -182,7 +181,6 @@
 !NETWORK_DISCONNECT_LOOPDEACTIVATE
 !NETWORK_DISCONNECT_REJECT_NOLOBBY
 !NETWORK_DISCONNECT_REMOTE_TIMEOUT
-!bLooksLikeABug
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
 !host_framestarttime_std_deviation
@@ -401,6 +399,7 @@ $schemasystem/schema_enable_defines.h
 %f %f
 %f %f %f
 %f %f %f %f
+%s - Calling an array API on '%s'%s
 %s:  IGameSystem::LoopActivateAllSystems {
 %s:  IGameSystem::LoopDeactivateAllSystems {
 %s:  IGameSystem::LoopInitAllSystems(finish)
@@ -442,7 +441,6 @@ $schemasystem/schema_enable_defines.h
 'NETWORK_DISCONNECT_REJECT_SINGLE_PLAYER
 'SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES
 'p7M}f
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
 (#GameUI_Disconnect_LoopLevelLoadActivate
 (#GameUI_Disconnect_RemoteProblem_BadCert
@@ -495,9 +493,6 @@ $schemasystem/schema_enable_defines.h
 (l$@D
 (m_Size == 0) || (m_Size == iSize)
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (merge 
 (missing)
 (null)
@@ -594,7 +589,6 @@ $schemasystem/schema_enable_defines.h
 ,W5y+
 ,X< w
 ,j.b0^2`4^6`8^:f<
-,ovp@1
 -#GameUI_Disconnect_LocalProblem_NetworkConfig
 -----
 -BH>t
@@ -834,6 +828,7 @@ $schemasystem/schema_enable_defines.h
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
 08@HR
+08@J0
 0><[cZUg^>
 0A]A\]
 0A^A\_
@@ -880,11 +875,12 @@ $schemasystem/schema_enable_defines.h
 220323000000Z
 220801000000Z
 230714000000Z
-240723235121Z0/
+240801161758Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2YA1A
+2[WUU
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
 2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 311109235959Z0b1
@@ -963,7 +959,6 @@ $schemasystem/schema_enable_defines.h
 9{p~83
 9{t~:3
 9{|~<3
-:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :>)*	v
@@ -1006,8 +1001,10 @@ $schemasystem/schema_enable_defines.h
 <undefined>
 <unknown>
 <utK@:
+=	V_qsort_s
 =%H5<mN
 ==MQ?
+=@lz"
 =SHX?
 =imb;D
 =rIQU
@@ -1355,7 +1352,6 @@ C:\buildworker\citadel_rel_win64\build\src\game\host\singleplayersharedmemory.cp
 C:\buildworker\citadel_rel_win64\build\src\game\shared\igamesystem.cpp
 C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
@@ -1489,11 +1485,6 @@ CNETMsg_SplitScreenUser
 CNETMsg_StringCmd
 CNETMsg_Tick
 COM_TimestampedLog
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPPTYPE_BOOL
 CPPTYPE_DOUBLE
 CPPTYPE_ENUM
@@ -1598,7 +1589,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 CorExitProcess
 Could not create an instance of 
 Could not find type "
@@ -1777,7 +1767,6 @@ DecodePointer
 Default value for an enum field must be an identifier.
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DescriptorProto
 DescriptorProtosH
 DigiCert Assured ID Root CA0
@@ -1816,6 +1805,7 @@ EPD	w
 EPD	~
 ERROR
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 End-of-file inside block comment.
@@ -1972,7 +1962,6 @@ Gc	_(
 GeneratedCodeInfo
 GetACP
 GetBool
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -2073,8 +2062,6 @@ H9(tO
 H92tBA
 H97u+A
 H98t2
-H9=1?
-H9=u=
 H9A s
 H9A u)M
 H9C H
@@ -2129,6 +2116,7 @@ HHcA H
 H[><y5
 HammerMapLoader001
 HasField
+Hc-J%
 HcAxE3
 HcB(H;
 HcC ;
@@ -2285,7 +2273,6 @@ InputSystemVersion001
 InstallSchemaBindings
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be CAnimScriptBase)
 Integer out of range (
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Interpreting non ascii codepoint %d.
@@ -2333,7 +2320,6 @@ KERNEL32.dll
 Key in map fields cannot be enum types.
 Key in map fields cannot be float/double, bytes or message types.
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
 KeyValues3::GetArrayElement
 KeyValues3::GetArrayElementCount
 KeyValues3::GetElement - Bad index %d (count = %d)
@@ -2439,6 +2425,7 @@ L+@0H
 L+A0L
 L+H0H
 L+i0I
+L1?r@x
 L9#u/H
 L92tDA
 L9;u	H
@@ -2639,12 +2626,8 @@ Option "
 Option field "
 Option must have a name.
 Option must not use reserved name "uninterpreted_option".
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 OverlayProjectionDirection
-P08@J
-P08J0
+P08@J0
 P>q_Y~
 P@HPX`hpx
 PA^A]A\^[
@@ -2669,9 +2652,9 @@ PerVertexLighting
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 Physics
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_NeedsLowFragmentation
 Plat_NonFatalErrorFunc
@@ -2829,7 +2812,6 @@ Sw[Hc
 Symbol name "
 Synthetic oneofs must be after all other oneofs
 System %s failed to init
-T	V_stricmp_fast
 T$ D8t$(
 T$ E3
 T$ H;
@@ -3036,7 +3018,7 @@ VertexPaintBlendParams1
 VertexPaintTintColor
 VisBuilder_001
 Vrad3_001
-W=nM+
+W	V_stricmp_fast
 WARNING
 WATAUAVAWH
 WATAVH
@@ -3214,7 +3196,6 @@ _oD>Kg
 `vftable'
 `virtual displacement map'
 a7hIw
-aL~v`g.
 abcdefghijklmnopqrstuvwxyz
 additional_includes
 addons
@@ -3409,6 +3390,7 @@ floor
 forcing demo version '%s' : %s
 frexp
 function not supported
+f})&1
 gamemode
 generic
 gfffA
@@ -3596,7 +3578,6 @@ n<	fG
 nIndex != -1
 nIndex < V_ARRAYSIZE(m_Values)
 nIndex >= 0 && nIndex < nMemberCount
-nKZLH
 nLastPriority >= nPriority
 nSlot == INVALID_SPLITSCREENSLOT || nSlot.GetRaw() == 0
 nType != CONVAR_TYPE_INVALID
@@ -3686,7 +3667,6 @@ p UATAUAVAWH
 p*W4H
 p08@H^
 p0R^G'
-p0j0X
 p7M}f
 p;Y>u
 p@HPX`h
@@ -3706,7 +3686,6 @@ pContext
 pEntry >= m_Values
 pExtensionWithDot[ 0 ] == '.'
 pField == pFieldBase + nFields
-pMemory[i] == 0
 pMeta
 pParent
 pPrevClusterInFreeList != nullptr
@@ -3850,7 +3829,7 @@ t$(D9c|~c
 t$(E3
 t$(Hc
 t$(I;
-t$(Lc5d4
+t$(Lc5
 t$0E3
 t$0H+
 t$0Ic

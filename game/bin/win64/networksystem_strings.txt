@@ -25,7 +25,6 @@
 	TYPE_ENUM
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	_V_strnicmp_fast
 	bit_count
@@ -124,11 +123,13 @@
  (%s%s)
  (%s)
  (08@HPX`hpx
- (08@HPX`j
+ (08@HPX`jp
  (08@HPXb
- (08@HPZ
+ (08@HPZp
  (08@HR
  (08@J
+ (08@Jp
+ (0:p
  (0X`hpz
  - keeping around as cacheable shared connection
  ... }
@@ -195,7 +196,9 @@
  Hc)L
  Hc*H
  Hc1L
- Hc5E
+ Hc5e
+ Hc5t
+ Hc5u
  Hc9L
  HcD$PI
  HcD$`I
@@ -294,7 +297,6 @@
 !NETWORK_DISCONNECT_REJECT_NOLOBBY
 !NETWORK_DISCONNECT_REMOTE_TIMEOUT
 !SchemaClassInfosAreExactlyEqual( pCurrentPtrBinding, pDataClassBinding )
-!bLooksLikeABug
 !bMissingSizeFunc || ( i == NET_SERIALIZATION_MODE_CLIENT && g_pNetworkMessagesImp->IsForServer() ) || ( i == NET_SERIALIZATION_MODE_SERVER && !g_pNetworkMessagesImp->IsForServer() )
 !bStructSerializer
 !eQueryCvarValueStatus_ValueIntact
@@ -603,6 +605,8 @@ $schemasystem/schema_enable_defines.h
 %s '%s':  encoding mismatched %d vs. %d bits
 %s + % 4d classes
 %s - Argument expected (message ID or name).
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s - Invalid net message index: %d
 %s - Unrecognized net message name: '%s'
 %s -> %s
@@ -727,8 +731,6 @@ $schemasystem/schema_enable_defines.h
 'NETWORK_DISCONNECT_REJECT_SINGLE_PLAYER
 'SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES
 ( ( const byte * ) buffer.Base() ) + nSize == buf.Get()
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( NetworkFieldChangedDelegateType_t ) pCallback->m_nChangeCallbackType == NETWORK_FIELD_CHANGED_REPLAY_COMPAT
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( lhs.m_unFlattenedOffset != rhs.m_unFlattenedOffset ) || ( &lhs == &rhs )
@@ -813,9 +815,6 @@ $schemasystem/schema_enable_defines.h
 (l$ D
 (l$PL
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (merge 
 (nBytes % 4) == 0
 (nLastDelta - 1) <= 63
@@ -849,6 +848,7 @@ $schemasystem/schema_enable_defines.h
 )#GameUI_Disconnect_SteamDeny_BadAntiCheat
 )#Player_DisconnectReason_ConvictedAccount
 )#Player_DisconnectReason_UntrustedAccount
+)8xk$
 )>6{1n
 )D$ D
 )D$ H
@@ -1367,7 +1367,7 @@ $schemasystem/schema_enable_defines.h
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
-08@HR
+08@HRp
 0><[cZUg^>
 0A\^[
 0A\_^
@@ -1438,7 +1438,7 @@ $schemasystem/schema_enable_defines.h
 220801000000Z
 230714000000Z
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240723234949Z0/
+240801161844Z0/
 241009235959Z0a1
 25.CSource2Metrics_MatchPerfSummary_Notification.Client
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1545,9 +1545,9 @@ $schemasystem/schema_enable_defines.h
 9{t~:3
 9{|~<3
 9}(~C
-:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
+:12w9<
 :>)*	v
 :>t6k'
 :F<N:V>
@@ -1603,6 +1603,7 @@ $schemasystem/schema_enable_defines.h
 <unknown>
 <utK@:
 <|HcL$pA
+=	V_qsort_s
 =YA1H
 =imb;D
 =rIQU
@@ -1774,23 +1775,20 @@ $schemasystem/schema_enable_defines.h
 @.data
 @.reloc
 @08@HPX`hpx
-@08N 
 @0;B0
 @0HcB
 @4A;A4upI
 @4HcG 
 @8(tX
 @8(u	
-@8-'u
 @82uH
 @84)u
 @848u
-@85O/!
 @8;te3
 @8<(u
 @8<0u
 @8<2u
-@8=m!
+@8=mg 
 @8HcB
 @8L9!t
 @8i(u
@@ -1851,7 +1849,8 @@ $schemasystem/schema_enable_defines.h
 @A__[
 @HHcB$;B(u
 @HPX&I
-@HPX`hv
+@HPX`hv`+
+@HV09
 @HcC8Hk
 @L9nHu$
 @L;d$p
@@ -1941,7 +1940,7 @@ $schemasystem/schema_enable_defines.h
 @UVWATAUH
 @UVWAVH
 @UVWH
-@UWAUAVAWH
+@UWATAUAVH
 @UWAUAVH
 @UWAVAWH
 @UWAVH
@@ -1969,7 +1968,7 @@ $schemasystem/schema_enable_defines.h
 @fD9d
 @fE9d
 @fE9l
-@htpJ
+@htPJ
 @t!H;
 @t#H;
 @tZH;
@@ -2069,11 +2068,9 @@ A;~`|
 A>l$/
 A>pP&
 A@L;B
-AA:`N
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
-AE5G"
 AK>(v
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 AQD	A
@@ -2209,7 +2206,6 @@ Average Number of Field Paths     :  %8.3f
 Ax<au
 Ax<fu
 B 9A tDA
-B 9NZf}1
 B H+P(
 B H+X(
 B H9_pt
@@ -2305,7 +2301,6 @@ C:\buildworker\citadel_rel_win64\build\src\public\networksystem\networksystemtyp
 C:\buildworker\citadel_rel_win64\build\src\public\networksystem\sendproxyrecipients.h
 C:\buildworker\citadel_rel_win64\build\src\public\networksystem\serializedentity.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\networksystem\serializedentity.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
 C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaclassinfo.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\assert_base.h
@@ -2729,11 +2724,6 @@ CNetworkSystem::~CNetworkSystem
 CNetworkUtlVectorBase
 CNetworkVarChangeList::GetArrayStorage
 CNetworkedQuantizedFloat
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CP8CPu
 CPPTYPE_BOOL
 CPPTYPE_DOUBLE
@@ -3346,7 +3336,6 @@ ConnectToHostedDedicatedServer(%s) failed
 Connected loopback %s=%x@%s <-> %s=%x@%s
 ConnectionStats_t::Populate
 Constructing fake local field from metadata %s::%s in %s
-Construction is only allowed from the resolve function
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
 CorExitProcess
@@ -3369,7 +3358,6 @@ Cx<au
 Cx<fu
 C|$pH
 C|$xL
-D	V_sincosf
 D	d$@
 D W?{W
 D!l$xA
@@ -3477,7 +3465,6 @@ D$HL9gXt
 D$HM;
 D$HMk
 D$Hf;
-D$LE3
 D$P%A
 D$P90|
 D$P@2
@@ -3520,6 +3507,7 @@ D$hH;
 D$hHcC(Hk
 D$hf;
 D$hfD
+D$lE3
 D$mH;
 D$pA+
 D$pA9D$
@@ -3538,6 +3526,7 @@ D$xLc
 D$xM+
 D$xf;
 D$xt+I
+D$|E3
 D+3L9c0u	
 D+A@H
 D1hA;
@@ -3588,11 +3577,8 @@ D8{!t
 D8{"uG
 D8{8u+H
 D8|$`t
-D9%J1
 D9&~4I
 D9(~x
-D9=,D
-D9=Wx
 D9@(|
 D9AHu
 D9G@t
@@ -3664,7 +3650,6 @@ Default value for an enum field must be an identifier.
 DegreeEuler
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DescriptorProto
 DescriptorProtosH
 DigiCert Assured ID Root CA0
@@ -3707,7 +3692,6 @@ E8o<u
 E8q(u
 E8w!t
 E8{"u\
-E9QLF
 E9`x~
 E9f ~3A
 E9f(~]
@@ -3744,6 +3728,7 @@ ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 ERROR: Field %s::%s unable to deduce unserializer for type (%s)!
 ESplitScreenMessageType
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EdHcEHD
 EgA8x
@@ -4010,6 +3995,7 @@ FreeEnvironmentStringsW
 FreeLibrary
 Friday
 F|Hc~`H
+G	V_sincosf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -4085,7 +4071,6 @@ GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
 GetBitRange( %d -> %d ) end is before or same as start
 GetBool
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -4155,7 +4140,7 @@ Groups are not supported in proto3 syntax.
 Gt$hH
 G|$8L
 G|9o`t
-G|L95$
+G|L95
 H 8YKt
 H 8YKt	
 H @8iKt
@@ -4206,6 +4191,7 @@ H98t2
 H98tcA
 H9;t	H
 H9;tkH
+H9=m~
 H9A s
 H9A u)M
 H9C H
@@ -4476,7 +4462,6 @@ HelpSystem_001
 Hex and octal numbers must be integers.
 Host game server ip
 HostStateMgr001
-I	V_snprintf
 I#I0H
 I#J0H
 I#M0H
@@ -4609,7 +4594,6 @@ InputSystemVersion001
 InstallSchemaBindings
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be ChangeAccessorFieldPathIndex_t)
 Integer out of range (
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Interpreting non ascii codepoint %d.
@@ -4662,7 +4646,6 @@ J>@G_
 JSType
 January
 Jitter:  Average . . . : %9s%9s%9s   net_fakejitter
-K	e%!
 K HcC$Hc
 K$HcC
 K$HcC(;
@@ -4682,8 +4665,6 @@ KdLcC`
 Key in map fields cannot be enum types.
 Key in map fields cannot be float/double, bytes or message types.
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::FindOrCreateMember
 KeyValues3::GetArrayElementCount
 KeyValues3::GetBasicTypeString
@@ -4704,6 +4685,7 @@ KeyValues3::Metadata_GetLineColumn::<lambda_1>::operator ()
 KtLcCp
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#^0I
@@ -4843,10 +4825,9 @@ L+H0H
 L+i0I
 L9#t	H
 L9#u/H
-L9%vF
 L9(tZ
 L92tDA
-L95hY
+L95+1
 L9;t	H
 L9;u	H
 L9>u%H
@@ -4911,7 +4892,6 @@ LOG_GENERAL
 Label
 Latency. . . . . . . . : %7dms%7dms%7dms   net_fakelag
 Lc#E+
-Lc%"x
 Lc3A+
 Lc7D;w
 Lc;A+
@@ -5223,7 +5203,6 @@ Number of CFieldPath::Path_t      :  %d
 Number of CFieldPaths(Reconstruct):  %d
 Number of CSerializedEntities     :  %d
 Numbers starting with leading zero must be in octal.
-O	V_sscanf
 O JcD/
 O$M9o
 O0+W8
@@ -5231,6 +5210,7 @@ OF>;^
 OH+WP
 O`+Wh
 Obtained direct RTT measurements to relays in %d POPs.  Closest %d are:
+Obx\5
 October
 Oneof must have at least one field.
 OneofDescriptorProto
@@ -5243,9 +5223,6 @@ Option field "
 Option must have a name.
 Option must not use reserved name "uninterpreted_option".
 Order,'From','To',Bits
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 OutSeqNum
 OutSeqNumAck
 Overflow.
@@ -5254,7 +5231,7 @@ OxHcGpM
 OxL94
 P(L90t,H
 P08@J
-P08N 
+P08J@
 P>q_Y~
 P@HPX`hpx
 PACKET_STATUS_DROPPED
@@ -5301,7 +5278,6 @@ Peer To Peer
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
 Plat_CPUTickFrequency
-Plat_DebugPrint
 Plat_EventRegister
 Plat_EventUnregister
 Plat_EventWriteTransfer
@@ -5310,6 +5286,7 @@ Plat_FatalErrorFunc
 Plat_FloatTime
 Plat_GetLocalTime
 Plat_GetThreadIndex
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_IsInTestMode
 Plat_NonFatalErrorFunc
@@ -5385,6 +5362,7 @@ QueueCallback( %s ) '%s' using value type (%s) on struct field, ignoring!
 QueueChange
 QueueReplayCompatFieldChange( %s ): can't place MNetworkReplayCompatField callback on a fully fake struct (e.g., a pointed to component or object), game code should move callback on entity %d to a C_BaseEntity derived class!
 QueueTimeMS
+R	V_sscanf
 REPLAY_EVENT_CANCEL
 REPLAY_EVENT_DEATH
 REPLAY_EVENT_GENERIC
@@ -5648,7 +5626,6 @@ Sw[Hc
 Symbol name "
 Synthetic oneofs must be after all other oneofs
 System
-T	V_stricmp_fast
 T$ D8t$(
 T$ E3
 T$ H;
@@ -5980,6 +5957,7 @@ Vector4D
 VisBuilder_001
 VoiceDataFormat_t
 Vrad3_001
+W	V_stricmp_fast
 WARNING
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WATAUAVAWH
@@ -6020,11 +5998,11 @@ XA_A^A]A\_^][
 XA_A^A]^][
 XA_^[]
 XL;l$p
+X`hrp
 Y0HcR
 Y9"SD
 Y>kX>M
 YD$@f
-Yd$G0
 YxHcApH
 YxHcApL
 Z\>z8
@@ -6179,7 +6157,6 @@ Zod(^?
 \$xu3M
 \$|A+
 \U%08x
-] Sa4
 ](A;](
 ])6M>&
 ]0H+](H
@@ -6257,7 +6234,7 @@ _xHcGpL
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
-`htpJ
+`htPJ
 `local static guard'
 `local static thread guard'
 `local vftable constructor closure'
@@ -6343,7 +6320,6 @@ b.m_cbitsCheckpoint >= 0
 b?^Cy
 bAllocationCanFit
 bInitOK
-bLegalTypeChange
 bSerialized
 bStrictlyAbove
 bValid
@@ -6604,6 +6580,7 @@ f9,Ju
 f9,~u
 f9<Ju
 f9t$bu
+f;=Zo
 f;D$0t
 f;E`t
 f;Eht
@@ -7346,9 +7323,8 @@ p UATAUAVAWH
 p WATAUAVAWH
 p WAVAWH
 p*W4H
-p08@H^ 
+p08@H^
 p0R^G'
-p0j`D
 p9L;@t
 p;Y>u
 p@HPX`h
@@ -7407,7 +7383,6 @@ pL;l$h
 pLast
 pLast->m_pNext == nullptr
 pList
-pMemory[i] == 0
 pMergedState->GetMetaDataCount() == 0
 pMeta
 pMsg->GetTypeHandle() == hMessage
@@ -7595,7 +7570,7 @@ s7fff
 s8HcCP
 sHH9oHt
 sHfff
-sPHc5
+sPHc5J
 sPHcCh
 sYfff
 s_listSteamNetConnections[ idxList ].m_hSteamNetConn == hSteamNetConn
@@ -7916,14 +7891,14 @@ tAHcD$PD
 tAIcOL
 tAL9-
 tBD;l$4};A
-tCH95
+tCH95Y
 tDM9w u
 tEHcR
 tIHcA
 tIHcC
 tLLcx|M
 tMI92uHM
-tOL95_
+tOL95
 tQfD9 tK
 tRLcY
 tSf91tNH
@@ -8023,7 +7998,7 @@ t}Mcp0E;q0uzA
 u 9k(u
 u E;GXu
 u H9P r
-u"L95gY
+u"L95
 u"L;B r
 u#H9{
 u$D8r(t
@@ -8375,6 +8350,7 @@ zY;>u:m
 |)L9c
 |6@8k!t
 |Lu?c
+|_::u
 |b=})>
 |c;K(t^A
 }!fD;A
@@ -8396,11 +8372,10 @@ zY;>u:m
 }>;_$
 }AfA9X
 }If;=
-}If;=G
+}If;=lp
 }LuHO
 }RfE;
 }T;_$
-}Z;=&
 }hu<H
 }m;n$
 }nf;{

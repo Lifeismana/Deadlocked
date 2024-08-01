@@ -10,11 +10,9 @@
 	%02i%% (%i/%i)
 	%s at offset %d, 
 	V_fprintf
-	V_iswcntrl
 	V_towupper32
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_StringAfterPrefix
 	_V_strEndsWith
 	_V_strcspn
@@ -26,6 +24,7 @@
 	g_pThreadPool
 	kE>fvw
 	wOIc
+ 	V_iswcntrl
      
                           
                      Cost
@@ -173,7 +172,6 @@
 !IsDynamicComboVariableDataCompact()
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
 !IsInternalTypeShortArray( Internal_Type() )
-!bLooksLikeABug
 !destBlock.IsReadOnly() && !destBlock.IsExternalMemory()
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
@@ -191,17 +189,21 @@
 "w3Hc
 #include
 #line
+$3e&E6
 $A;\$
 $IcD$
 %15.15s 
 %6d %-50s
 %6s %-50s %5s %5s %5s %5s %5s %5s %5s %10s
+%cq1z
 %d %d %d
 %d %d %d %d
 %d..%d
 %f %f
 %f %f %f
 %f %f %f %f
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s --------------------------------
 %s File
 %s Shader: %s attribute '%s' set in mode '%s' does not match VMatrix value set in another mode.
@@ -231,14 +233,10 @@ $IcD$
 &YA1E
 &YA1H
 &YA1I
-'	V_log10f
 ', type<
 ',=?k
 'exists'
 'return'
-(	V_log2_uint
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( m_nIndexIncrement == 0 ) || ( m_nIndexCount + nNumIndices <= m_nMaxIndexCount )
 ( m_nIndexIncrement == 0 ) || ( m_nIndexCount < m_nMaxIndexCount )
@@ -276,9 +274,6 @@ $IcD$
 (knNH
 (l$PH
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (sigElement.m_pName[0] != '\0') && (sigElement.m_pD3DSemanticName[0] != '\0') && (sigElement.m_pSemantic[0] != '\0')
 (t$ E
 (t$ H
@@ -313,7 +308,7 @@ $IcD$
 )|$ A
 )|$`L
 )|$pE3
-*	V_log2f
+*	V_log10f
 *** %s "%s" in %s does not follow the 0..N format!
 *** %s "%s" in %s has max(%d) > 254!
 *** %s "%s" in %s has min(%d) < 0!
@@ -406,6 +401,7 @@ $IcD$
 *pLookForFileNameDelimiter == '>'
 *pLookForFileNameDelimiter == '\"'
 *pStartOfFileNameDelimiter == '\"'
++	V_log2_uint
 +C$Hc
 +C$Lc
 +D$tHc
@@ -420,7 +416,6 @@ $IcD$
 +h->|
 +mat_clearshadercache
 +o'q)}
-,	V_logf
 , <^A
 , GetFont used
 , LoadFont used
@@ -434,6 +429,7 @@ $IcD$
 ,D$@A
 ,L$XL
 ,W5y+
+-	V_log2f
 -----
 ----------
 --------------------------------------------------
@@ -626,6 +622,7 @@ $IcD$
 .xdata
 .xdata$x
 .|08z
+/	V_logf
 // %s - %s
 // Dynamic Shader Compile Enabled
 // Reloading all shaders -----------------------------------------------------
@@ -676,7 +673,7 @@ $IcD$
 220323000000Z
 220801000000Z
 230714000000Z
-240723235037Z0/
+240801162304Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -704,12 +701,9 @@ $IcD$
 6D;g(r
 6I]Dc
 6OB,n_
-6R6o|!
 6YA1H
-7	V_powd
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8A]A\_^
 8A][H
 8A_A]
@@ -721,7 +715,6 @@ $IcD$
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8L$`t
-9	V_qsort
 9"u3H
 9)~P3
 93~sH
@@ -729,7 +722,6 @@ $IcD$
 9;t	I
 9;~oH
 9>~ZH
-9A;|28ta
 9B(u7
 9M4tcH
 9T$TtdH
@@ -748,8 +740,9 @@ $IcD$
 9|$Pu
 9|$hu
 9~0~-H
-:	V_qsort_s
+:	V_powd
 : lexer error %d :
+;	V_powf
 ;B8T	dH
 ;B@|8
 ;B@|L
@@ -761,6 +754,7 @@ $IcD$
 ;T$p}1H
 ;\$hu
 ;t$hu
+<	V_qsort
 <	u2H
 <	u8H
 < t=<	t9
@@ -796,6 +790,7 @@ $IcD$
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 =	 ();,
+=	V_qsort_s
 =SBMSugH
 =imb;D
 =rIQU
@@ -946,10 +941,13 @@ $IcD$
 @.data
 @.reloc
 @8,7u
+@8-/A
 @84)u
-@85dM
+@85>D
+@85^E
 @8;te3
 @8<(u
+@8=iC
 @8j(t
 @8k(t
 @8l$H
@@ -1295,7 +1293,6 @@ C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_rel_win64\build\src\mathlib\vmatrix.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\materialsystem2\materialprimitivetype.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\vector4d_base.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\postprocessing\colorcorrectionparams.h
 C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\indexdata.h
 C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
@@ -1538,11 +1535,6 @@ CMemAllocSystemInitialize
 COLOR
 COMMENT
 COMMON
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CP;BP|$
 CP;BP|0
 CPlatformFont::GetCharABCWidths
@@ -1985,7 +1977,6 @@ ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
 Constant %s is marked dynamic in the .vmat file.
 Constant %s.
-Construction is only allowed from the resolve function
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
 CorExitProcess
@@ -2003,7 +1994,6 @@ Currently only DXT5 GPU compression supported.
 Custom font '%s' is already registered, ignoring new registration '%s' range %d - %d
 Custom font file '%s' should be assocated with a font name, will be ignored on Linux and Mac
 Cx@u1H
-D	V_sincosf
 D!l$xA
 D$ -v
 D$ 5J
@@ -2112,24 +2102,25 @@ D3D Semantic Name: "%s"
 D4 H9C
 D7 fB
 D7*f9kBu
-D8%	L
-D8%dH
-D8%{K
+D8%D?
+D8%YB
+D8%]A
 D8&ta3
 D8*tt
 D80uQE3
 D81uUL9r
 D840u
 D87th3
-D8=0Q
-D8==O
+D8=:I
+D8=XG
 D8g u
 D8t$Q
 D8t$ht
 D9 ~BI
 D9#t 
-D9&t_I
 D9&tz
+D9.tdI
+D9/tdI
 D9/u8
 D9?~ML
 D9H$t
@@ -2190,7 +2181,6 @@ DeleteCriticalSection
 DeleteDC
 DeleteObject
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 Description
 Dev Shader
 DevShader
@@ -2223,7 +2213,6 @@ E0HcH
 E0Lc`
 E8(t5Ic
 E8q(u
-E9.taI
 E;!u>M;y
 E;t$(
 E;t$@
@@ -2240,6 +2229,7 @@ EXPONENT
 EXPORTSYSTEM_INTERFACE_VERSION_001
 E\$@H
 Early exit
+EarlyInit_Tier0
 EconItemToolModel_001
 EhHcL
 Eht	E
@@ -2287,7 +2277,6 @@ ExtTextOutW
 ExternalDescSet
 ExternalNameForInternalType
 Extraneous token
-F	V_sinf
 F 8C 
 F ;F0|
 F A8D
@@ -2341,6 +2330,7 @@ Found existing value when inserting into tree - replacing existing value with ne
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+G	V_sincosf
 G 8C 
 G(knN
 G8L9!t
@@ -2386,7 +2376,6 @@ Geometry Shader
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCharABCWidthsW
@@ -2458,12 +2447,12 @@ H#D$`H
 H-^Eu
 H9(tO
 H9+t	H
-H9-]c
 H93t7H
 H93tkH
+H95?x
 H97u+A
 H98t2
-H9=Tx
+H9=UA
 H9A(u
 H9M(u)
 H9T$Hu+
@@ -2544,10 +2533,9 @@ Hcu`M
 HelpSystem_001
 HorizJustification_e
 HostStateMgr001
-I	V_snprintf
+I	V_sinf
 I could not work out what I was expecting, like so many of us these days!
 I"IcF
-I)JF/
 I+4$H
 I,;J,u/E
 I/O request overflow!
@@ -2582,7 +2570,6 @@ IcF@M
 IcFPI
 IcFpI
 IcN0L
-IcT20
 Ic^pIc
 Ic} I
 If intended, call ClearSpecificType first to discard the old value.%s
@@ -2613,7 +2600,6 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be PostPro
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be PostProcessingResource_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be PostProcessingTonemapParameters_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be PostProcessingVignetteParameters_t)
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 InvTextureDim
@@ -2651,8 +2637,6 @@ KV3TransferSchema_AllocateClassInstance
 K`u4H
 Kc4'I
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::FindOrCreateMember
 KeyValues3::FormatValueAsString
 KeyValues3::GetArrayElement
@@ -2681,6 +2665,7 @@ KeyValues3::TransferOwnershipOfBinaryBlob
 KeyValuesSystem
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!|$(L!
 L$ E3
 L$ I;
@@ -2758,17 +2743,15 @@ L9'tJA
 L9+t	H
 L93t	H
 L93tJA
-L95~"
 L9;t	H
-L9=)9
-L9=P8
-L9=Z=
+L9=./
+L9=I/
+L9=p.
 L9?t	H
 L9c u
 L9d$(t
 L9d$Ht
 L9d$Hu,
-L9e@t
 L9g t(H
 L9l$Ht
 L9l$Hu,
@@ -2993,13 +2976,9 @@ No valid vcs file found for shader %s
 NoZPrepass
 Not safe to 'new' this class due to alignment requirements
 November
-O	V_sscanf
 O8HcB
 OCTAL_ESC
 October
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Ot$DD
 Out of range dynamic combo id %d in material "%s"
 OutputDXT5Texture_1x1
@@ -3048,11 +3027,11 @@ Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.cr
 PhysicsBuilderMgr001
 Pixel Shader
 Pixel Shader Render State
-Plat_DebugPrint
 Plat_DebugString
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_LoadInterface
 Plat_NonFatalErrorFunc
@@ -3106,7 +3085,9 @@ Programmer Error! Static combo value not in range!
 PropertyEditorSystem_001
 Pz}b!
 Q$HcA
+QQZrp
 QueryPerformanceCounter
+R	V_sscanf
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -3310,7 +3291,6 @@ StatsService_001
 SteamAudio001
 Sunday
 SupportsMappingDimensions
-T	V_stricmp_fast
 T$ D9
 T$ E3
 T$ Hc
@@ -3604,6 +3584,7 @@ VisBuilder_001
 Visualize overdraw
 Visualize shading complexity
 Vrad3_001
+W	V_stricmp_fast
 W0]7L
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
@@ -3624,7 +3605,6 @@ WriteConsoleW
 WriteFile
 Wrong number of args left on stack (%i args, wanted %i)!
 Wrong number of args left on stack!
-X	V_strspn
 XA;ML|
 XA^A]_^][
 XA_A]_^][
@@ -3638,6 +3618,7 @@ YL$XH
 YT$XH
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 Yt$@Hc
+[	V_strspn
 [ VAVAWH
 [ mat_print_material_info ] Error! Cannot find material '%s'!
 [Dynamic shader compile] Reloading %d material(s)
@@ -3692,7 +3673,6 @@ Yt$@Hc
 \$xA;
 \0bf;
 \error.vmat
-]	V_strtoui64
 ] ;]$t
 ](A8~8t
 ]J<0"0i3
@@ -3738,6 +3718,7 @@ _copy%u
 _feature
 _gUT^
 _psrs
+`	V_strtoui64
 `.rdata
 `A]A\_
 `A^_^
@@ -3781,7 +3762,6 @@ _psrs
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 address family not supported
@@ -3835,7 +3815,6 @@ argument out of domain
 array
 attributes[i].GetType() == VFX_VARIABLE_TYPE_TEXTURE2D
 bAllocationCanFit
-bLegalTypeChange
 bLfff
 bOkIfNotFound
 bSuccess
@@ -3879,6 +3858,7 @@ cs_5_0
 cs_6_0
 ctx.m_pVariableIndexToParamIndex[nVarIndex] < ctx.m_nNumAllParams
 curPos.IsValid()
+d	V_tanf
 d$ L9c
 d$ UAVAWH
 d$(Hc
@@ -4241,6 +4221,7 @@ loop != 99
 lr.type != VFX_STATIC_COMBO_LOAD_REQUEST_FAILED
 m0k0$
 mL+7H
+mX[a;
 m_CharCache.IsValidIndex( cacheHandle )
 m_DebugFont != INVALID_FONT_HANDLE
 m_DebugFontOutline != INVALID_FONT_HANDLE
@@ -4526,6 +4507,7 @@ outputBuffer
 owner dead
 p WATAUAVAWH
 p*W4H
+p-_(4;
 p0R^G'
 p;Y>u
 pA_A^A\^]
@@ -4561,7 +4543,6 @@ pMaterial
 pMaterial->m_staticComboLoadRequests.IsEmpty()
 pMaterialsList && pMaterialsList->IsArray()
 pMember
-pMemory[i] == 0
 pMeta
 pModes && pModes->IsArray()
 pParam
@@ -4635,6 +4616,7 @@ rwtexture3d
 s HcB 
 s Lc7
 s(L94
+s+qy[J
 sHf9sJ~
 sLcG$E
 sVfA;
@@ -4805,7 +4787,6 @@ tDfff
 tLD9x
 tPHcBhH
 tRLcY
-tYfff
 tZvX2
 t\@8:tW
 t^@8/tY3
@@ -4865,7 +4846,7 @@ u5I9u
 u6L9x u0
 u7L9c u1
 u8M;q
-uCD85R
+uCD85r
 uED8r(t
 uGf9y
 uW@8u
@@ -4875,7 +4856,7 @@ ubf9P
 uchar32
 ufD:B
 ufiD$@
-uhH9=;*
+uhH9=
 uint16
 uint32
 uint64
@@ -4924,7 +4905,6 @@ vtexL
 w8fD9w:~
 w;7}sM9|)
 wHfD9wJ~
-wcr V
 width >= INT16_MIN && width <= INT16_MAX
 win98japanese
 wrong protocol type
@@ -4939,8 +4919,6 @@ x=HcS
 xA_A\_]
 xA_A^A]A\][
 xA_A^A]A\^[
-xb2*!
-y;|OF
 y\PD>!
 y`fA;
 z(f9z*t
@@ -5046,6 +5024,5 @@ z(f9z*t
 }nf;{
 ~ L9>t	H
 ~6fff
-~VzHc>
 ~qj#k"
 ~t&LN

@@ -11,8 +11,8 @@
 	JS_STRING
 	TYPE_BOOL
 	TYPE_ENUM
+	V_fmodf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	enum_type
 	extension
@@ -49,7 +49,7 @@
   Problem     : Enum value did not match field type:
   Problem     : Field is not the right type for this message:
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$8/
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -68,11 +68,13 @@
  'L>[
  (%s%s)
  (08@HPX`hpx
- (08@HPX`j
+ (08@HPX`j@p
  (08@HPXb
- (08@HPZ
+ (08@HPZ@p
  (08@HR
  (08@J
+ (08@J@p
+ (0:@p
  (0X`hpz
  ... }
  0"r$4&
@@ -144,7 +146,6 @@
  [$0]
  [default = $0
  _^[H
- `7=u
  a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
  args were given.  Full format string was: "
  bytes
@@ -194,7 +195,6 @@
 !NETWORK_DISCONNECT_LOOPDEACTIVATE
 !NETWORK_DISCONNECT_REJECT_NOLOBBY
 !NETWORK_DISCONNECT_REMOTE_TIMEOUT
-!bLooksLikeABug
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
 !host_framestarttime_std_deviation
@@ -427,6 +427,8 @@ $schemasystem/schema_enable_defines.h
 %f %f
 %f %f %f
 %f %f %f %f
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s bytes tree size
 %s rays complete.
 %s.los
@@ -473,8 +475,6 @@ $schemasystem/schema_enable_defines.h
 'SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES
 'iw7M
 'p7M}f
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( nNodesToVisit + 2 ) <= V_ARRAYSIZE( pNodesToVisit )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
@@ -484,7 +484,12 @@ $schemasystem/schema_enable_defines.h
 (%d,%d)
 (("**,
 ((6"8(:,<*>
+(-Ou	
 (0`hpx
+(5!z	
+(5Hs	
+(5`q	
+(5cu	
 (A^A\^[
 (A^A]^[
 (A^A]_^
@@ -549,9 +554,6 @@ $schemasystem/schema_enable_defines.h
 (l$ D
 (l$`L
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (merge 
 (null)
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
@@ -568,7 +570,6 @@ $schemasystem/schema_enable_defines.h
 (t$PL
 (t$`H
 (t$`L
-(t$pD
 (t$pH
 (t$pL
 (uint)i == refRegion.m_nLeafIndex
@@ -585,6 +586,7 @@ $schemasystem/schema_enable_defines.h
 (|$@H
 (|$@I
 (|$PH
+(|$`H
 (|$`I
 (|$pD
 (|$pH
@@ -623,7 +625,6 @@ $schemasystem/schema_enable_defines.h
 )L$0A
 )L$0C
 )L$0f
-)L$PD
 )NETWORK_DISCONNECT_NO_PEER_GROUP_HANDLERS
 )NETWORK_DISCONNECT_PURESERVER_CLIENTEXTRA
 )NETWORK_DISCONNECT_REQUEST_HOSTSTATE_IDLE
@@ -665,9 +666,11 @@ $schemasystem/schema_enable_defines.h
 )|$@H
 )|$@I
 )|$`A
+)|$`D
 )|$pD
 )|B?d!
 *#GameUI_Disconnect_LocalProblem_ManyRelays
+*0vv8
 *NETWORK_DISCONNECT_CLIENT_CONSISTENCY_FAIL
 *NETWORK_DISCONNECT_KICKED_CONVICTEDACCOUNT
 *NETWORK_DISCONNECT_KICKED_UNTRUSTEDACCOUNT
@@ -936,7 +939,8 @@ $schemasystem/schema_enable_defines.h
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
-08@HR
+08@HR@p
+08B@p
 0><[cZUg^>
 0A^A\_
 0A^^[
@@ -986,7 +990,7 @@ $schemasystem/schema_enable_defines.h
 220323000000Z
 220801000000Z
 230714000000Z
-240723235126Z0/
+240801161846Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1012,7 +1016,6 @@ $schemasystem/schema_enable_defines.h
 456789:;<=
 4;tMA
 4@Mc<
-4[9,R
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 4xG;<,
 5FjiT
@@ -1026,6 +1029,7 @@ $schemasystem/schema_enable_defines.h
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
 80tWD
 8@HP:
+8@J@p
 8A*t5H
 8A]A\
 8A]_^[
@@ -1085,9 +1089,9 @@ $schemasystem/schema_enable_defines.h
 9|$@u
 9|$Hu
 9|$Pu
+9|$Xu
 9|$`u
 9|$xu
-:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :>)*	v
@@ -1121,7 +1125,6 @@ $schemasystem/schema_enable_defines.h
 <@Mc<
 <Ct-<D
 <Eu/H
-<I)$]}"
 <St[@:
 <St[A:
 <\8@6
@@ -1132,6 +1135,8 @@ $schemasystem/schema_enable_defines.h
 <undefined>
 <unknown>
 <utK@:
+<}881
+=	V_qsort_s
 =%H5<mN
 ==MQ?
 =SHX?
@@ -1141,6 +1146,7 @@ $schemasystem/schema_enable_defines.h
 >-ufH
 >0<0:
 >A9>D
+>FsX!
 >HkL$0hH
 >Mp$d
 >c;j1
@@ -1148,7 +1154,6 @@ $schemasystem/schema_enable_defines.h
 >f;D$4t
 >jtm}S
 ?!5WOo
-?*y&%=e
 ?+>^m
 ?333?
 ?456789:;<=
@@ -1240,7 +1245,9 @@ $schemasystem/schema_enable_defines.h
 @.data
 @.reloc
 @08@HPX`hpx
+@08ND
 @0HcB
+@3u9=
 @84)u
 @8HcB
 @8i(u
@@ -1281,8 +1288,7 @@ $schemasystem/schema_enable_defines.h
 @HD9$(u#Lc3H
 @HHcB$;B(u
 @HPX&I
-@HPX`hv0;
-@HV@I
+@HPX`hv
 @Hc93
 @PHcB(;B,u
 @SATAUAVAWH
@@ -1358,6 +1364,7 @@ $schemasystem/schema_enable_defines.h
 @_RDATA
 @b;zO]
 @ffffff
+@ht@s
 @t#H;
 @tZH;
 @tfH;
@@ -1574,7 +1581,6 @@ C:\buildworker\citadel_rel_win64\build\_build_\utils\visbuilder\_vpc_visbuilder\
 C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_rel_win64\build\src\meshutils\glview_buffer.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\resourcestream.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
 C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaenumhelpers.h
@@ -1739,11 +1745,6 @@ CNETMsg_SpawnGroup_Unload
 CNETMsg_SplitScreenUser
 CNETMsg_StringCmd
 CNETMsg_Tick
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPPTYPE_BOOL
 CPPTYPE_DOUBLE
 CPPTYPE_ENUM
@@ -1754,7 +1755,7 @@ CPPTYPE_MESSAGE
 CPPTYPE_STRING
 CPPTYPE_UINT32
 CPPTYPE_UINT64
-CReliableTimer::GetSeconds
+CReliableTimer::GetTicks
 CRenderBufferBinding
 CResourceStreamBase::EnsureAvailable
 CRotation::CRotation
@@ -2050,7 +2051,7 @@ CVisibilityMesh::LoadRTEFromFile
 CVoxCluster::MergeCandidateMinIndex
 CVoxCluster::SetEntry
 CVoxelSampler3::AdaptivelySampleBorders
-CVoxelSampler3::AdaptivelySampleBorders(), C:\buildworker\citadel_rel_win64\build\src\utils\visbuilder\vis3.cpp:3981
+CVoxelSampler3::AdaptivelySampleBorders(), C:\buildworker\citadel_rel_win64\build\src\utils\visbuilder\vis3.cpp:3988
 CVoxelSampler3::AddChildNode
 CVoxelSampler3::AddInsideRegionsToFlatClusterBounds
 CVoxelSampler3::ClusterHintID
@@ -2060,10 +2061,10 @@ CVoxelSampler3::CollapseRegions
 CVoxelSampler3::FinalizeRegions
 CVoxelSampler3::FlattenRegionsByStatus
 CVoxelSampler3::LeafStatusAlongLine
-CVoxelSampler3::MergeClusterSet(), C:\buildworker\citadel_rel_win64\build\src\utils\visbuilder\vis3.cpp:3054
-CVoxelSampler3::MergeClusterSet(), C:\buildworker\citadel_rel_win64\build\src\utils\visbuilder\vis3.cpp:3071
+CVoxelSampler3::MergeClusterSet(), C:\buildworker\citadel_rel_win64\build\src\utils\visbuilder\vis3.cpp:3061
+CVoxelSampler3::MergeClusterSet(), C:\buildworker\citadel_rel_win64\build\src\utils\visbuilder\vis3.cpp:3078
 CVoxelSampler3::MergeInsideRegions
-CVoxelSampler3::MergeInsideRegions(), C:\buildworker\citadel_rel_win64\build\src\utils\visbuilder\vis3.cpp:3148
+CVoxelSampler3::MergeInsideRegions(), C:\buildworker\citadel_rel_win64\build\src\utils\visbuilder\vis3.cpp:3155
 CVoxelSampler3::PreMergeClusters
 CVoxelSampler3::RasterizeSegments
 CVoxelSampler3::ValidateLeaves
@@ -2119,7 +2120,6 @@ ConVarRefAbstract::ConVarRefAbstract
 ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 Convert RTE with %d triangles in %.2fs
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
@@ -2137,7 +2137,6 @@ Ct$HH
 Ct3Gt%
 C|$pH
 C|$xL
-D	V_sincosf
 D W?{W
 D!l$xA
 D$  L
@@ -2209,7 +2208,6 @@ D$8f;
 D$8fff
 D$8inf
 D$8nan
-D$8sBA
 D$<8A
 D$@9F(
 D$@E3
@@ -2290,7 +2288,6 @@ D$hH;
 D$hIc\$@
 D$hf;
 D$hff
-D$hfff
 D$htqL
 D$pA+
 D$pH;
@@ -2356,7 +2353,6 @@ D9ft~8I
 D9f|~:I
 D9l$P
 D9l$`u1
-D9m |EH
 D9q }
 D9sX|JA
 D9t$$
@@ -2393,7 +2389,6 @@ DecodePointer
 Default value for an enum field must be an identifier.
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DescriptorProto
 DescriptorProtosH
 DestroyThreadPool
@@ -2420,7 +2415,7 @@ E0Lc`
 E80t"A
 E8a(u
 E8q(u
-E9>~6Hc
+E9&~<f
 E9`x~
 E9f ~3A
 E9f(~]
@@ -2433,6 +2428,7 @@ E;|$(
 E>nEA
 EH*?H
 EHH;EPt
+ELc#H
 ENetworkDisconnectionReason
 EPA	v
 EPD	v
@@ -2442,6 +2438,7 @@ ERROR
 ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 EXD;D
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 Encountered too many releases for resource "%s"
@@ -2521,7 +2518,6 @@ ExtraVertexStreamOverride_t
 ExtraVertexStreamOverride_t::KV3Transfer_DefaultKeys_Impl
 ExtraVertexStreamOverride_t::Schema_VerifyBindingIsRegistered
 E|$(D
-F	V_sinf
 F 9F tDA
 F @8pKuNH
 F @8xHt_H
@@ -2609,6 +2605,7 @@ Found invalid proto option data for:
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+G	V_sincosf
 G @8pKu
 G D8`Kt~A
 G H+H(
@@ -2647,7 +2644,6 @@ GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
 GetBool
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -2748,11 +2744,15 @@ H+x(H
 H+x8H
 H+x@H
 H-^Eu
-H8Lc$
+H8Lc4
 H9(tO
 H92tBA
+H95Wo
 H97u+A
 H98t2
+H9=/m
+H9=pc
+H9=qn
 H9A s
 H9A u)M
 H9C H
@@ -2804,6 +2804,7 @@ HD;N8|
 HD;Ot|
 HH:mm:ss
 HHcA H
+HWxj=L
 H[><y5
 HammerMapLoader001
 HasField
@@ -2826,8 +2827,8 @@ HcD$ H
 HcD$0L
 HcD$@H
 HcD$\H
-HcE ;
 HcE H
+HcE0;
 HcE0D
 HcE8D
 HcE8H
@@ -2908,7 +2909,7 @@ HelpSystem_001
 Hex and octal numbers must be integers.
 Hint %.2f (%.2f regions)
 HostStateMgr001
-I	V_snprintf
+I	V_sinf
 I#I0H
 I#J0H
 I#M0H
@@ -3030,7 +3031,6 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be WorldNo
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be WorldNode_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be World_t)
 Integer out of range (
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Interpreting non ascii codepoint %d.
@@ -3075,17 +3075,15 @@ K,+3A;
 K,HcC0;
 K0HcQ
 KERNEL32.dll
-KJ'U.
 KPf;O
 KV3 instances cannot be set to an unspecified specific type
 KV3 save text failed: %s
 KV3 save transfer failed: %s
 KV3Helper_CheckValueNumericCast
+Kc< H
 Key in map fields cannot be enum types.
 Key in map fields cannot be float/double, bytes or message types.
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::FindOrCreateMember
 KeyValues3::GetArrayElement
 KeyValues3::GetArrayElementCount
@@ -3109,6 +3107,7 @@ KeyValues3::Metadata_GetLineColumn::<lambda_1>::operator ()
 KeyValues3::SetMemberIntArray
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#^0I
@@ -3166,7 +3165,7 @@ L$4E3
 L$8D;
 L$8E3
 L$8H3
-L$8Lc+L
+L$8Lc;H
 L$8f;
 L$<;L$P
 L$@;|
@@ -3243,7 +3242,11 @@ L+H0H
 L+i0I
 L9#u/H
 L92tDA
+L95-Z
+L95HZ
+L95WY
 L9;u	H
+L9=g}
 L9@ s
 L9BHA
 L9P s
@@ -3257,7 +3260,7 @@ L9p tkI
 L9s u$H
 L9{0u	
 L9|$pt
-L;5qg
+L;5pJ
 L;A r
 L;EPL
 L;Q s
@@ -3510,13 +3513,12 @@ Option "
 Option field "
 Option must have a name.
 Option must not use reserved name "uninterpreted_option".
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Outside detection took %.2f seconds
 OverlayProjectionDirection
 P08@J
+P08ND
 P>q_Y~
+P?HYO:
 P@HPX`hpx
 PA^A]A\^[
 PA^A]_^]
@@ -3542,10 +3544,10 @@ PerVertexLighting
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 Physics
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_MSTime
 Plat_NonFatalErrorFunc
@@ -3750,6 +3752,7 @@ Synthetic oneofs must be after all other oneofs
 T$ D8t$(
 T$ E3
 T$ H;
+T$ Hc
 T$ I9I t
 T$ L+
 T$ M;
@@ -3853,6 +3856,7 @@ Tried to access bit %d, out of range %d
 Tried to merge messages of different types 
 Truncating debug lines of sight!, this will affect debug tools.
 TryAcquireSRWLockExclusive
+TtoFqu-
 Tuesday
 Type appears to be in generated pool but wasn't 
 Type is already registered: 
@@ -3976,7 +3980,6 @@ V_StringToVector4D
 V_UInt16ToString_Unsafe
 V_UInt32ToString_Unsafe
 V_cosf
-V_fmodf
 V_~]	,
 Value must be "true" or "false" for boolean option "
 Value must be identifier for boolean option "
@@ -4063,8 +4066,9 @@ XA_A]A\]
 XA_A^A]A\_^[]
 XA_A^A]A\_^][
 XE;F |
+X`hr@p
 Xd$(;k
-X|$TD
+X|$dD
 Y0HcR
 Y9"SD
 Y>kX>M
@@ -4162,7 +4166,6 @@ Zod(^?
 ^<V7w
 ^HIcn@H
 ^RfN>
-^[eW1v0
 ^fD;]
 _ ;_$t
 _8I;_@tj
@@ -4193,7 +4196,6 @@ _nextafter
 _oD>Kg
 `+!]?
 `.rdata
-`: e	
 `A]_[
 `A^_^
 `A^_^][
@@ -4206,7 +4208,6 @@ _oD>Kg
 `A_A^_^]
 `RTTI
 `anonymous namespace'
-`c*4h
 `copy constructor closure'
 `default constructor closure'
 `dynamic atexit destructor for '
@@ -4216,6 +4217,7 @@ _oD>Kg
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
+`ht@s
 `local static guard'
 `local static thread guard'
 `local vftable constructor closure'
@@ -4226,7 +4228,6 @@ _oD>Kg
 `omni callsig'
 `placement delete closure'
 `placement delete[] closure'
-`ruIeg
 `scalar deleting destructor'
 `string'
 `typeof'
@@ -4245,6 +4246,7 @@ _oD>Kg
 a.uEL
 a.ucL
 a7hIw
+a>M2'>
 aabb.m_vMaxBounds.IsValid()
 aabb.m_vMinBounds.IsValid()
 abcdefghijklmnopqrstuvwxyz
@@ -4263,10 +4265,10 @@ argument list too long
 argument out of domain
 array
 atan2
+b?3=[D
 b?^Cy
 bAllocationCanFit
 bHasGrids == bHasNeighbors
-bLegalTypeChange
 bad address
 bad allocation
 bad array new length
@@ -4599,7 +4601,6 @@ l$\fD
 l$`I;
 l$`t&
 l$pD9c
-l$pE3
 l$pM+
 l$pM;
 l$xM+
@@ -4620,6 +4621,7 @@ log10
 los_errors
 lowprecisionuv
 lowprecisionuv1
+m D9m0|EH
 m0k0$
 mL+7H
 m_Bounds
@@ -4915,7 +4917,7 @@ p WATAUAVAWH
 p WATAWH
 p WAVAWH
 p*W4H
-p08@H^
+p08@H^D
 p0R^G'
 p7M}f
 p;Y>u
@@ -4942,7 +4944,6 @@ pExtensionWithDot[ 0 ] == '.'
 pField == pFieldBase + nFields
 pFlatVisClusterVector->IsValidIndex( nCluster )
 pMember
-pMemory[i] == 0
 pMeta
 pOut->m_nCluster < nClusterCount
 pParent
@@ -4988,7 +4989,6 @@ r!fff
 r"fff
 r7f;\$|
 r:f;\$|
-r?JZ$
 rKf;\$t
 rNf;\$t
 r_f;\$l
@@ -5187,7 +5187,7 @@ tQfD9 tK
 tRLcY
 tSf91tNH
 tU;\$0tH
-tUH95
+tUH95)J
 tUH99uPL
 tXH99uSH
 t]LcE
@@ -5215,13 +5215,13 @@ too many files open
 too many files open in system
 too many links
 too many symbolic link levels
-trIcO(
 trailing_comments
 transform
 trfff
 try_get_function
 try_get_module
 tsfff
+ttIcO(
 twIcF
 tyHcT$0)STH
 tyfD9 tsH
@@ -5346,7 +5346,6 @@ y\PD>!
 yxxxxxxxH
 z :"U
 zY;>u:m	
-z^eTp
 { AUAVAWH
 { AVH
 {,D+{HD+

@@ -166,7 +166,6 @@
  Hc)H
  Hc1H
  Hc1L
- Hc=jq"
  HcA8H
  Hcqx
  Lc)H
@@ -209,13 +208,10 @@
 !IsInitialized()
 !IsInternalTypeShortArray( Internal_Type() )
 !IsText()
-!V_stricmp_fast( pString, "-0" )
-!V_stricmp_fast( pString, CNumStr( nValue ) )
 !\>G[
 !bAllAccess
 !bChildIsPlaceholder
 !bErrorDecoding
-!bLooksLikeABug
 !bNeedToKeepBookmark
 !convarData.m_pDefaultValue
 !g_bEnforceLoggingSystemSingleton
@@ -263,7 +259,7 @@
 "f^n[
 "name" of the file referenced by the symbolic link named /etc/malloc.conf
 "pA3Q
-"pA3Qp)4
+"pA3QP74
 #%llu
 #4o>w
 #D$8H
@@ -360,6 +356,8 @@ $~DE3
 %s (%d) : %s
 %s (before "%s")
 %s * %f
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s -contextstart %d -codefile "%s" -codeline %d
 %s allocation count overflow
 %s allocation count overflow( add %llu + current %llu > max %llu )
@@ -384,12 +382,10 @@ $~DE3
 %s total bytes in user-space regions (%s bytes in kernel-space regions)
 %s unable to allocate %u bytes
 %s%s#%d
-%s%s%s_%d_%02d%02d_%02d%02d%02d_%d%s%s.mdmp
-%s%s_%d_%02d%02d_%02d%02d%02d_%d.mdmp
 %s(%3
 %s():
 %s.exe
-%s/%d
+%s/%s%d
 %s: -nominidumps in command line, not generating minidump.
 %s: Attempting to mail.
 %s: CDwarfVector count overflow
@@ -454,7 +450,7 @@ $~DE3
 %u outstanding allocations (%d delta).
 %u(%f):  
 %u_%u_%u
-%vmdlkeys0
+%vmdlkeys1
 &	$@06p
 &#%u;
 &?PPPPPPP?
@@ -575,7 +571,7 @@ $~DE3
 &yacute;
 &yen;
 &yuml;
-' 8b4
+'  r4
 '":|;
 ',=?k
 ':' not expected inside an array.  ('[]' used when '{}' was intended?)
@@ -592,8 +588,6 @@ $~DE3
 ( %u: group %u, mask 0x%llx )
 ( %u: max procs %u, active proc %u, active mask 0x%llx )
 ( (m_alignment-1) & (uintp)m_pBase ) == 0
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( alignment >= 4 ) && ( m_alignment == alignment )
 ( cubGap & 15 ) == 0
 ( kv != nullptr ) || ( bOptional && !bDelete )
@@ -603,12 +597,12 @@ $~DE3
 ( m_nBufferChars > 0 && (uint32)nStringChars < m_nBufferChars ) || ( m_nBufferChars == 0 && m_nStringChars == 0 )
 ( m_nCurrDataOffset & 0x7 ) == 0
 ( n - 1 ) * nBlockSize < num
+( nFileFlags & VSymbolDebugFileFlag_ForPrefixMatch ) == 0
+( nFileFlags & VSymbolDebugFileFlag_TrySubpaths ) == 0
 ( nMatchDist - 1 ) < ( 1 << BLOCK_COMPRESS_DIST_BITS )
 ( nMatchLen - BLOCK_COMPRESS_MIN_MATCH_LEN ) < ( 1 << BLOCK_COMPRESS_MATCH_BITS )
 ( nNameSymbol == -1 ) == V_isempty( pName )
 ( nOffset % m_BlockSize ) == 0
-( nOpenFlags & k_EDwarfOpen_PrefixMatch ) == 0
-( nOpenFlags & k_EDwarfOpen_TrySubpaths ) == 0
 ( ndxBucket >= 0 ) && ( ndxBucket < 65536 )
 ( ndxKeyData >= 0 ) && ( ndxKeyData < 65536 )
 ( pDestBuffer->TellPut() % 8 ) == 0
@@ -623,7 +617,6 @@ $~DE3
 ( uintptr_t( m_p8ByteValues ) % sizeof( double ) ) == 0
 ( uintptr_t( m_p8ByteValues ) % sizeof( float64 ) ) == 0
 ( uintptr_t( pSrcData ) % 8 ) == 0
-(%d,%d)
 (%f) 
 (((uintp)pNew & 0x3) == 0)
 ((IAssertionFailureListener_Tier0Manipulator *)pListener)->GetRegisteredVar()
@@ -669,9 +662,9 @@ $~DE3
 (D$PL
 (D$Pf
 (D$`H
-(D85v
 (GetChar()) == (0)
-(H95_
+(H955@2
+(H95M
 (H;D$Xr
 (Ic~ L
 (L$ H
@@ -771,7 +764,6 @@ $~DE3
 )	%)t
 ) %%-%d.%ds 
 )/o>	
-)05	8
 )147:;=IJ]
 )14:;EFIJ^de
 )14:EFIJNOde\
@@ -793,7 +785,7 @@ $~DE3
 )D$@@
 )D$@D
 )D$@H#
-)D$@fD
+)D$@f
 )D$P%
 )D$PH
 )D$`H;
@@ -942,6 +934,7 @@ $~DE3
 ,HR><y5
 ,HR>O
 ,I<%w
+,V(#y
 ,W5y+
 ,X< w
 ,YA1H
@@ -1020,6 +1013,7 @@ $~DE3
 -memstackstats_disable_pools
 -memstacktraceframes
 -memstd_force_passthrough
+-minidump_file_prefix
 -minidump_full
 -minidump_log_path
 -no_assert_dialog
@@ -1273,6 +1267,7 @@ $~DE3
 .idata$4
 .idata$5
 .idata$6
+.mdmp
 .pdata
 .rdata
 .rdata$T
@@ -1311,6 +1306,7 @@ $~DE3
 .xdata
 .xdata$x
 /2GG>!B
+/4$w0s
 /8R:5
 />58d%
 /B9A~_
@@ -1354,7 +1350,6 @@ $~DE3
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 0;t$HvBA
-0<Lu*
 0><[cZUg^>
 0A\^[
 0A\_^
@@ -1459,15 +1454,16 @@ $~DE3
 220323000000Z
 220801000000Z
 230714000000Z
-240723234700Z0/
+240801161453Z0/
 241009235959Z0a1
 29C }
 2;L$Hr"
+2<Lu,
 2<iu	H
 2B$$@2
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
-2Hc=J
+2Hc=j
 2YA1H
 2YA1I
 2]fQ	?5!
@@ -1523,7 +1519,7 @@ $~DE3
 5nsfZ
 6*f(_
 64-bit DWARF format is not supported
-6>@(4
+6>@84
 6C2:A
 6D8eg
 6D9l$Lt
@@ -1580,6 +1576,7 @@ $~DE3
 8D$@t
 8D$Xt
 8D$xt
+8D8%O!.
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8HcK$H
@@ -1613,10 +1610,10 @@ $~DE3
 9#ueH
 9)~P3
 9+}|I9.tw
-9-9 &
-9-9&&
-9-K92
-9-o#&
+9-A"&
+9-A(&
+9-fH2
+9-w%&
 91~33
 93t>H
 96ID3
@@ -1630,6 +1627,7 @@ $~DE3
 9;tSH
 9;tTD
 9;tkH
+9=G~'
 9>powf
 9>~YH
 9A~_]
@@ -1700,15 +1698,20 @@ $~DE3
 :LZSSu
 :R;uD
 :[ugH
+:t2s+
 :u A8N
 :u(f9Q
 :~dm1	
+;-C	7
 ;.t A
 ;.u1L
-;=.3#
-;=42'
-;=C{(
-;=g"'
+;5J9$
+;=&$&
+;=44'
+;=7!'
+;=C}(
+;=Lq!
+;=n4#
 ;A rg
 ;A8t^
 ;A8u	H
@@ -1751,6 +1754,7 @@ $~DE3
 ;l$Xr
 ;l$dr
 ;srv*http://symbols/windows
+;t$X}
 ;t$h}
 ;w(u	H
 ;{(u	H
@@ -1760,7 +1764,6 @@ $~DE3
 ;|$@u
 ;|$HvLA
 ;|$H}
-;|$X}
 <	tf3
 <	u"H
 <	u%H
@@ -1916,14 +1919,12 @@ $~DE3
 = {[8V
 =%H5<mN
 =->!Q
-=3h$4
 =9tau
 =========================================================================================
 ==MQ?
 =CSP1t
 =JRJD
 =JRJH
-=K/i0
 =SHX?
 =USY1t
 =YA1H
@@ -1938,6 +1939,7 @@ $~DE3
 >5PJ>
 >::operator ()
 >;D$P
+>L)=Ah,
 >Mp$d
 >YA1H
 >YA1I
@@ -2273,7 +2275,7 @@ $~DE3
 ?AddString@KeyValues@@QEAAXPEBD0@Z
 ?AddSubKey@KeyValues@@QEAAXPEAV1@@Z
 ?AddSubkeyUsingKnownLastChild@KeyValues@@QEAAXPEAV1@0@Z
-?AddText@CCommandBuffer@@QEAA_NPEBDHHN@Z
+?AddText@CCommandBuffer@@QEAA_NPEBDHHN_N@Z
 ?AddUint64@KeyValues@@QEAAXPEBD_K@Z
 ?AddWatch@CDirTreeWatchManager@@QEAA_NPEBDPEAVVisitor@1@_K@Z
 ?Advance@CCircularBuffer@@QEAAHH@Z
@@ -2332,7 +2334,6 @@ $~DE3
 ?BuildMidpoint@CVertexKDTree@@QEAAXPEBMHH@Z
 ?BuildMidpointFromVertexSubSet@CVertexKDTree@@QEAAXPEBMHPEBHH@Z
 ?BuildNode@CVertexKDTree@@AEAAHHH@Z
-?C(c4
 ?C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\bitbuf.cpp
 ?CalcBudgetGroupTimes_Recursive@CVProfile@@QEAAXPEAVCVProfNode@@PEAIHM@Z
 ?CalcStackDepth@CThread@@QEAA_KPEAX@Z
@@ -2748,7 +2749,7 @@ $~DE3
 ?GetVSibling@CVProfNode@@QEBAPEBV1@XZ
 ?GetWinLevelRevision@CPUInformation@@SA_NPEAG0@Z
 ?GrowByChunks@CBufferString@@QEAAHHH@Z
-?HEAP WARNING: memory block at %p appears to be corrupt
+?HEAP WARNING: memory pointer %p is invalid
 ?HandleFirstWriteLockTransition@CEventRWLock@@IEAAXAEAVCEventListNode@@@Z
 ?HandleToString@CCountedStringPool_CI@@QEBAPEBDG@Z
 ?HandlerQueueHeartBeat@MiniDumpStandardData_t@@QEBAXXZ
@@ -2937,6 +2938,8 @@ $~DE3
 ?MoveFrom@CBufferString@@QEAAXAEAV1@@Z
 ?N]TUUU
 ?Nearest@CVertexKDTree@@QEBAPEBMAEBV?$Vec3D@M@@@Z
+?Nearest@CVertexKDTree@@QEBAXAEBV?$Vec3D@M@@AEAV?$CUtlVectorFixedGrowable@PEBM$0EA@H@@@Z
+?NearestInternal@CVertexKDTree@@AEBAXAEBV?$Vec3D@M@@AEAMAEAV?$CUtlVectorFixedGrowable@PEBM$0EA@H@@H@Z
 ?NearestInternal@CVertexKDTree@@AEBAXAEBV?$Vec3D@M@@AEAMPEAPEBMH@Z
 ?NewLineAndIndent@IFormatOutputStream@@QEAAXXZ
 ?NewPathStringBuffer@CPathString@@SAPEAUBuffer_t@1@XZ
@@ -3497,6 +3500,7 @@ $~DE3
 @8,3u
 @8,7u
 @8,>u
+@8-%C(
 @8/t|D
 @8/uJ
 @83tSD
@@ -3506,10 +3510,13 @@ $~DE3
 @84+u
 @84/u
 @848u
-@85dO&
+@852(3
+@85:i(
 @8:tyD
 @8;t7I
 @8<(u
+@8=Ql
+@8=ad9
 @8i(u
 @8i(u:
 @8j(t
@@ -3517,12 +3524,13 @@ $~DE3
 @8kIt
 @8l$H
 @8l$Pu<
-@8oIumH9-^o(
+@8oIumH9-~q(
 @8q un
 @8q2u}H
 @8q<uuH
 @8s t
 @8sIt
+@8sQw
 @8t$@t
 @8t$X
 @8u't
@@ -3551,6 +3559,7 @@ $~DE3
 @A\_[H
 @A]A\[
 @A]][
+@A]_^][
 @A^A\_
 @A^A\_^]
 @A^A]A\_[
@@ -3594,7 +3603,7 @@ $~DE3
 @C#e<X
 @C#e<\
 @D9g8|>H
-@H95[
+@H95+
 @H;C s
 @HcC(H
 @OQ]=
@@ -3610,7 +3619,6 @@ $~DE3
 @SUATAVH
 @SUATAWH
 @SUATH
-@SUAUH
 @SUAVAWH
 @SUAVH
 @SUAWH
@@ -3857,6 +3865,7 @@ A;v(|
 A>l$/
 A>pP&
 A>}?E>
+A@HcI8L
 AA40J6
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
@@ -3921,7 +3930,6 @@ A\_[]
 A\_^[
 A\_^[]
 A\_^][
-A]A\[
 A]A\[]
 A]A\]
 A]A\_]
@@ -3958,13 +3966,13 @@ A^A]_^
 A^A]_^[]
 A^A]_^]
 A^^[]
-A^^][
 A^_[]
 A^_^[
 A^_^[]
 A^_^[]H
 A^_^]
 A^_^][
+A_A\[
 A_A\[]
 A_A\]
 A_A\][
@@ -3990,9 +3998,7 @@ A_A^A\H
 A_A^A\[]
 A_A^A\]
 A_A^A\^
-A_A^A\^]
 A_A^A\^][
-A_A^A\_
 A_A^A\_]
 A_A^A\_][
 A_A^A\_^
@@ -4030,6 +4036,7 @@ A_A^[
 A_A^[]
 A_A^]
 A_A^^
+A_A^^]
 A_A^_
 A_A^_[]
 A_A^_]
@@ -4272,12 +4279,11 @@ C I!.H
 C$KcD,
 C(+{HI
 C,9sXu
-C,u	E3
 C0@8kH
 C0Hc	H
-C5KQ<
-C5MQ<
 C5R?	
+C5[a<
+C5]a<
 C8,4u
 C847u
 C8;C(u3
@@ -4373,7 +4379,6 @@ C:\buildworker\citadel_rel_win64\build\src\tier0\kv3formats_smartprop.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier0\kv3formats_vcd.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier0\kv3formats_vpcf.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier0\kv3formats_vpulse.cpp
-C:\buildworker\citadel_rel_win64\build\src\tier0\kv3loadsave.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier0\logging.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier0\loggingsystem.h
 C:\buildworker\citadel_rel_win64\build\src\tier0\lzmadecoder.cpp
@@ -5071,8 +5076,6 @@ COrderedConstructor_Create<class CLoggingSystem,class CResolveOrderedFunc<class 
 COrderedConstructor_Create<class CLoggingSystem,class CResolveOrderedFunc<class CLoggingSystem,&void __cdecl ResolveGlobalLoggingSystem(class COrderedConstructor_DependencyManagement<class CLoggingSystem> &)>,0>::AddRef::<lambda_1>::operator ()
 COrderedConstructor_Create<class CMaximumWaitQueue,class COrderedResolve_NoResolve,1>::AddRef
 COrderedConstructor_Create<class CMaximumWaitQueue,class COrderedResolve_NoResolve,1>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
 COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
 COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
 COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_Platform_First(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_Platform_First(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl OrderedInit_Platform_First(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_Platform_First(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
@@ -5126,9 +5129,6 @@ COrderedConstructor_DependencyManagement<class CLoggingSystem>::InternalLock
 COrderedConstructor_DependencyManagement<class CLoggingSystem>::Release
 COrderedConstructor_DependencyManagement<class CMaximumWaitQueue>::InternalLock
 COrderedConstructor_DependencyManagement<class CMaximumWaitQueue>::Release
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
 COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
 COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl OrderedInit_FileIO(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
@@ -5369,6 +5369,7 @@ CThreadMutex::AssertOwnedByCurrentThread::<lambda_1>::operator ()
 CThreadNullVerificationMutex: Thread %llu acquiring null-mutex while thread %llu is still holding it, indicates unexpected thread-safety issue
 CThreadNullVerificationMutex::Lock
 CThreadNullVerificationMutex::Unlock
+CThreadPool::GetJobFromQueue
 CThreadPool::QueueMultipleAndWait
 CThreadPool::ResumeExecution
 CThreadPool::Start
@@ -5677,6 +5678,8 @@ CUtlMemory<struct Elf64_Phdr,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct Elf64_Phdr,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct KVJSONParserStackEntry_t,int>::Grow
 CUtlMemory<struct KVJSONParserStackEntry_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct ThreadPoolThreadSet_t,int>::Grow
+CUtlMemory<struct ThreadPoolThreadSet_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct TokenWarning_t,int>::Grow
 CUtlMemory<struct TokenWarning_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlLinkedListElem_t<class CCoroutine,int>,int>::Grow
@@ -6069,6 +6072,7 @@ CatchAndWriteMiniDumpExForVoidPtrFn
 CatchAndWriteMiniDumpExReturnsInt
 CatchAndWriteMiniDumpForVoidPtrFn
 Ccoshf
+CfN~:
 ChH)B
 ChI;7r
 Changes were missed. We need to bring back missed change handling
@@ -6245,6 +6249,7 @@ Cy2@K>
 Cycle or diamond double-reference to '%s'
 CycleOverride
 D	$$D
+D	$$H
 D	$$M
 D	,$H
 D	0A;
@@ -6321,7 +6326,7 @@ D$09D$p}
 D$0@8{
 D$0A+
 D$0D+
-D$0D8%
+D$0D8%A
 D$0D;
 D$0E+
 D$0E2
@@ -6410,6 +6415,7 @@ D$@L;L$PvcA
 D$@L;u@s
 D$@M;
 D$@Sl
+D$@\L
 D$@f9
 D$@f;
 D$@fA
@@ -6428,7 +6434,7 @@ D$DE3
 D$DHcT$@A
 D$Dt5
 D$Dwb
-D$H9=1O
+D$H9=qM
 D$H;\$
 D$H;|$
 D$HA+
@@ -6453,9 +6459,9 @@ D$HfH
 D$Hs+A
 D$IeH
 D$LHc
+D$P@8h
 D$PA+
 D$PA;
-D$PD8p
 D$PD;
 D$PE3
 D$PH+
@@ -6468,7 +6474,6 @@ D$PI;
 D$PL+
 D$PL;
 D$PVBKV
-D$P\L
 D$Pf;
 D$PfA9D
 D$PfD
@@ -6519,7 +6524,6 @@ D$h9t$P
 D$h;|$PvaA
 D$h</u
 D$hA+
-D$hA;
 D$hD;
 D$hE2
 D$hE3
@@ -6531,6 +6535,7 @@ D$hI+
 D$hI;
 D$hIc
 D$hL;
+D$h\L
 D$h`i|
 D$hf;
 D$lA;
@@ -6611,6 +6616,7 @@ D8$1u
 D8$8u
 D8$:u
 D8$>u
+D8%_	/
 D8&tfD8
 D8'uZ
 D8,(u
@@ -6619,12 +6625,14 @@ D8,.u
 D8,8u
 D8,:u
 D8,;u
-D8-$d-
-D8-9h-
-D8-L}2
-D8-]c-
-D8-ci-
-D8-gk-
+D8-	l-
+D8-'h-
+D8-+r-
+D8--i-
+D8-1p-
+D8-7q-
+D8-Pj-
+D8-en-
 D8.ui;
 D80fH
 D80t0@2
@@ -6632,13 +6640,15 @@ D81uUL9r
 D84/u
 D840u
 D84:u
-D85l	2
+D85AC2
 D8;tlL
 D8<.u
 D8<0u
 D8<1u
 D8<2u
 D8<>u
+D8=P\
+D8=`	)
 D8?tp
 D8?t|E
 D8L$0u`
@@ -6666,16 +6676,15 @@ D8{Hu
 D8|$`t
 D8}/t
 D8}?t	H
-D9%"x'
-D9%FN
+D9%fK
 D9+u>H
 D93tjH
 D93}mL
 D941L
 D942H
 D949L
+D95@|'
 D9<1H
-D9=~`
 D9D$Pw
 D9Gd~/A
 D9L$Pv
@@ -6695,15 +6704,15 @@ D9u(A
 D9vX~DH
 D9w }
 D9w8}
+D9wpuFHct$0
 D9y }
 D9{|u
 D9|$0r
+D9|$@
 D9|$`t
 D9|$`u(fff
 D9~0vFf
-D;%ji
 D;1|^
-D;=2x"
 D;C ~
 D;D$T
 D;D$t
@@ -6940,6 +6949,7 @@ End of input was reached and '[' was not matched by ']'
 End of input was reached and '{' was not matched by '}'
 EndDialog
 EndPaint
+Engine2/MapMaxCoord
 EngineServiceMgr001
 EnterCriticalSection
 Entry '%s' already has a name (ignoring update to '%s')
@@ -7013,8 +7023,10 @@ F8$8u
 F8+F(;
 F8+F(D;
 F8,0u
+F8,6u
 F8,8u
 F8,;u
+F8,>u
 F84 u
 F84.u
 F8;F(u3
@@ -7178,10 +7190,10 @@ GERMAN
 GETLOCAL( s_nSDLMainThreadBlocks ) > 0
 GH;C s
 GL$(3
-GL$(E3
 GL$83
 GL$8@
 GL$8A
+GL$8E3
 GL$8H
 GL$8L
 GL$8O
@@ -7196,10 +7208,9 @@ GL$hE
 GL$hM
 GL$x3
 GL7LH
-GT$(A
-GT$(D
 GT$(H
 GT$8A
+GT$8D
 GT$8E3
 GT$8H
 GT$8L
@@ -7212,6 +7223,7 @@ GXH9W8u@H
 G\$(E3
 G\$(H
 G\$8D
+G\$8E3
 G\$8H
 G\$8L
 G\$8M
@@ -7243,7 +7255,6 @@ GetBaseFileInfo
 GetBasicType() == KV3_BTYPE_TABLE
 GetBasicTypeForBinaryType
 GetBinaryTypeForKV3
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUFrequencyResults
 GetCPUInformation
@@ -7303,6 +7314,7 @@ GetLogicalProcessorInformation: %u items
 GetLogicalProcessorInformationEx
 GetLogicalProcessorInformationEx: %u data bytes
 GetMessageA
+GetMiniDumpDirectory
 GetModuleFileNameA
 GetModuleFileNameW
 GetModuleHandleA
@@ -7313,6 +7325,7 @@ GetModuleInformation
 GetModuleNTHeaders
 GetModuleNameFromAddress
 GetNameFromOSType
+GetNewMiniDumpFileName
 GetOEMCP
 GetObjectA
 GetPerfSortedLogicalProcessors
@@ -7368,7 +7381,6 @@ Gh@8s0
 Gi:%5
 Gl$0I
 Gl$8A
-Gl$8L
 GlIc_x
 GlobPool
 GlobalMemoryStatusEx
@@ -7392,6 +7404,7 @@ G|$8H
 G|$8L
 G|$H3
 G|$HH
+G|$XL
 G|$h3
 G|$xH
 H D)x 
@@ -7399,13 +7412,13 @@ H SUVWH
 H SWH
 H UATH
 H USH
+H UVAVAWH
 H UVWATAUAVAWH
 H!D$ I
 H!T$0D
 H#D$0H
 H#D$PH
 H#T$ 
-H'8c4
 H(VVH
 H)C`D
 H*0"ZOW
@@ -7434,8 +7447,10 @@ H3L$H
 H3L$HH3
 H3l$hH3
 H9(tO
-H9-(6'
-H9-k62
+H9-!))
+H9-(8'
+H9-Dw9
+H9-Uv9
 H9.ub
 H9/uMH
 H90t]
@@ -7445,11 +7460,13 @@ H98tCH
 H98t^
 H98ta
 H99tKH
-H9=!9(
-H9=C,*
-H9=D6=
-H9=Yc(
-H9=cx)
+H9=!;(
+H9=#-*
+H9=$F=
+H9=3y)
+H9=Zd9
+H9=c$5
+H9=ye(
 H9>u+H
 H9A u
 H9BHtW
@@ -7477,9 +7494,10 @@ H9T$XtcA
 H9T$XtwH;
 H9T$Xt{H;
 H9X s
-H9X tg
-H9X u
+H9X(tg
+H9X(u
 H9Z(ta3
+H9[ uuH
 H9\$X
 H9](u
 H9_ v%H
@@ -7487,7 +7505,7 @@ H9k td
 H9l$H
 H9l$Hu9H
 H9l$puhL
-H9p u
+H9p(u
 H9p@t.
 H9q(taH
 H9sHu
@@ -7499,9 +7517,13 @@ H9{ptd
 H9|$ u
 H9}xs	
 H;.t^
+H;5OU"
+H;5tX"
 H;8teH
 H;9tgH
 H;9vb
+H;=)a,
+H;=6a,
 H;A s
 H;A s"
 H;A v`
@@ -7537,7 +7559,7 @@ H;U(v
 H;W A
 H;XXs
 H;Y sLH9G
-H;Y sjH
+H;Y siH
 H;Z s
 H;[(v
 H;[(w
@@ -7587,12 +7609,11 @@ HA_A^_]
 HA_A^_^][
 HA_^][
 HA__^]
-HD;=+
 HDUUUU
+HEAP WARNING: memory block at %p appears to be corrupt
 HEAP WARNING: memory block at %p is unexpectedly allocated
 HEAP WARNING: memory block at %p is unexpectedly free
 HEAP WARNING: memory block at %p is unexpectedly unrecognized
-HEAP WARNING: memory pointer %p is invalid
 HFfA9	rX
 HFfD;
 HH:MM:SS.z
@@ -7605,10 +7626,11 @@ HandleAsStringFailure
 HasExpandedResources
 Hc+;k
 Hc3;s
-Hc5x~5
 Hc7;w
 Hc;9E0t
 Hc<8H
+Hc=G	6
+Hc=ui'
 Hc>;~
 Hc?A;
 HcAdL
@@ -7687,7 +7709,7 @@ HcWdL
 HcYhL
 HcZH+
 Hc\$0H
-Hc\$h
+Hc\$`
 Hc\$hA
 Hc_x;
 Hck H
@@ -7913,7 +7935,6 @@ ISubGraphAnimNode
 ISubGraphManager
 ITALIAN
 I\zH6
-I\zH6H
 Ic6A;v
 Ic<$A;|$
 Ic<$I
@@ -8180,8 +8201,6 @@ KV3Helper_CheckValueNumericCast
 Kernel32.dll
 KeyValueCache001
 KeyValues Error: %s in file %s
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::ArrayAddToTail
 KeyValues3::ArrayInsertMultipleBefore
 KeyValues3::ArrayRemoveMultiple
@@ -8298,6 +8317,7 @@ L$ UATAUAVAWH
 L$ UATAUAWH
 L$ UATH
 L$ UAUAVAWH
+L$ USATH
 L$ UVAUH
 L$ UVAVH
 L$ UVWATAUAVAWH
@@ -8361,6 +8381,7 @@ L$4+L$H
 L$4A;
 L$4E#
 L$4H+
+L$4I;
 L$88_
 L$89<
 L$8A+
@@ -8395,6 +8416,7 @@ L$@H3
 L$@H;
 L$@H;P
 L$@I;
+L$@L;
 L$@Lc
 L$@f;
 L$@fI
@@ -8486,7 +8508,6 @@ L$xI+
 L$xf;
 L$xfD
 L$|E3
-L+5)1&
 L+CpA
 L+p(E
 L+t$pH;T$pL
@@ -8496,17 +8517,16 @@ L9	t(
 L9	t5
 L9#t!H
 L9#u+H
-L9->a+
+L9-C.5
+L9-N>+
 L940u)H
-L954C)
-L95C+7
-L95Tf9
-L95Y8(
-L95gE(
-L95qf5
+L95'G(
+L95Y:(
+L95t!)
+L95xs+
 L9<*u
-L9=S5'
-L9=s3'
+L9=S7'
+L9=s5'
 L9@ s
 L9B8u
 L9Cpu7H
@@ -8535,6 +8555,8 @@ L9wxt
 L9|$xD
 L9~(u^
 L:TLcD:XI
+L;5I#"
+L;5fe"
 L;@ A
 L;@ v
 L;B r
@@ -9021,7 +9043,6 @@ P I;Q I
 P I;S I
 P Lcs
 P(H9t$@u
-P(YX@
 P(tOL
 P0HcK
 P0L9sh
@@ -9077,6 +9098,7 @@ PA^A\_
 PA^A\_][
 PA^A]A\
 PA^A]A\_[
+PA^A]]
 PA^^]
 PA^_[
 PA^_^
@@ -9125,7 +9147,7 @@ PF_TYPE_PARTICLE_SPEED
 PF_TYPE_RANDOM_BIASED
 PF_TYPE_RANDOM_UNIFORM
 PH;|$H
-PHc=~
+PHc=:
 PM_TYPE_CONTROL_POINT
 POLISH
 PORTUGUESE
@@ -9261,6 +9283,7 @@ Plat_GetDesktopBounds
 Plat_GetDesktopResolution
 Plat_GetDocumentDirectory
 Plat_GetEnv
+Plat_GetExeModule
 Plat_GetExecutablePathUTF8
 Plat_GetFileType
 Plat_GetFullscreenDisplayModes
@@ -9369,7 +9392,6 @@ Plat_MinimizeWindow
 Plat_NeedsLowFragmentation
 Plat_NonFatalErrorFunc
 Plat_OnExecutableExitingMain
-Plat_OpenPath
 Plat_OsSpecificHandleToPlatWindow
 Plat_Printf
 Plat_QueueSteamLoginWithAccessCode
@@ -9667,7 +9689,7 @@ S89SD|
 S8H;S@
 S>$hkDh$h>[2
 S>T7W>
-SATAUH
+SATAWH
 SAUAVAWH
 SAVAWH
 SA|X=G
@@ -9821,7 +9843,6 @@ SDL_WarpMouseGlobal
 SDL_WarpMouseInWindow
 SDL_WasInit
 SDL_free
-SDL_getenv
 SDL_iconv_string
 SDL_modff
 SDL_roundf
@@ -9873,6 +9894,7 @@ SUATH
 SUAUAWH
 SUAUH
 SUAVAWH
+SUAVH
 SUBMODEL_AS_BODYGROUP_SUBMODEL
 SUBMODEL_AS_MESHGROUP_MASK
 SUBPROCESS CRASH: exception 0x%08X at 0x%llx
@@ -9882,7 +9904,6 @@ SUVATAUAVAWH
 SUVATH
 SUVAUAVH
 SUVAUAWH
-SUVAVH
 SUVWATAUAVAW
 SUVWATAUAVAWH
 SUVWATAUAWH
@@ -10016,7 +10037,6 @@ Setting channel '%s' color to %s.
 Setting channel '%s' verbosity to '%s'.
 SetupWin32ConsoleIO
 Severity
-ShellExecuteA
 ShellExecuteExW
 ShouldAllowRestart
 Show all convars which are not at their default values (optional restricted to specific flags).
@@ -10294,7 +10314,6 @@ T$pH+
 T$pH;U
 T$pI+
 T$pI;
-T$pL;
 T$tA;
 T$tE;
 T$x@2
@@ -10568,7 +10587,6 @@ UUUUUUU
 UUUUUUUUH
 UUUUUUUUL
 UVATAUAVH
-UVATAVAWH
 UVATAWH
 UVATH
 UVAUAVAWH
@@ -10601,6 +10619,7 @@ UWATAWH
 UWATH
 UWAUAVAWH
 UWAUAVH
+UWAUI
 UWAVAWH
 UWAVH
 UWAWH
@@ -10654,7 +10673,6 @@ Unable to seek to module section at file offset 0x%x
 Unable to write file '%s'
 Unaccounted
 Unexpected EOF while parsing number
-Unexpected Mach-O UUID length
 Unexpected augmentation string byte 0x%x
 Unexpected augmentation string byte 0x%x (shouldn't have augmentation data)
 Unexpected character 0x%02x
@@ -11259,13 +11277,12 @@ Vtube
 W(D8|
 W(H9o
 W(fA;
-W)lQ b4
 W*fA;
 W,+L$
 W,CiT(
 W/q#IX
 W0H;W8
-W5vP4
+W5ZQ4
 WARNING: %s Denied a request to load '%s'
 WARNING: Command buffer full... ignoring!
 WARNING: Command too long... ignoring!
@@ -11360,6 +11377,7 @@ Windows gave the error message:
 Windows may be augmenting the command line
 Working set: %s
 WorldRendererMgr001
+Worldsize_Init
 WriteConsoleW
 WriteFile
 WriteSBitLong: 0x%08x does not fit in %d bits
@@ -11401,6 +11419,7 @@ XXXXXX: found leading plus sign while parsing string '%s' as float64, ignoring i
 X_^][
 Xi#/H
 Y	rH5
+Y52?#
 Y8+Y(
 Y9"SD
 Y>kX>
@@ -11417,7 +11436,7 @@ Z\>z8
 ZdN=Y
 Zf?FO
 Zod(^?
-Zvpcf3
+Zvpcf1
 ZwSetTimerResolution
 [   func+child         func ]
 [   func+child       func ]
@@ -11492,10 +11511,9 @@ ZwSetTimerResolution
 \$,E3
 \$,E;
 \$,I;
-\$095k
+\$095
 \$09=
-\$09="
-\$09=$%'
+\$09=k"'
 \$0@2
 \$0A#
 \$0A+
@@ -11524,7 +11542,7 @@ ZwSetTimerResolution
 \$8fD
 \$8tYA;
 \$8u3L
-\$@9=2
+\$@9=
 \$@9A
 \$@A+
 \$@E+
@@ -11566,7 +11584,7 @@ ZwSetTimerResolution
 \$`H+
 \$`I;
 \$`L;
-\$`v	f95r
+\$`v	f95
 \$dA+
 \$dE;
 \$gm?
@@ -11626,7 +11644,8 @@ ZwSetTimerResolution
 ]g+N$L
 ^(H9k
 ^,tyI
-^5Q+*
+^5#@*
+^5q-*
 ^8U)zj
 ^<V7w
 ^>&qN
@@ -11635,6 +11654,7 @@ ZwSetTimerResolution
 ^oEZ_
 _ ;_$t
 _ A;_0u
+_%d_%02d%02d_%02d%02d%02d_%d
 _%llx_%x
 _-report-_
 _0IcG(L
@@ -11733,7 +11753,6 @@ _wWT+
 `.rdata
 `>n>w%
 `A\^[
-`A]A\[
 `A]_^][
 `A^A]_^[
 `A^A]_^]
@@ -11921,7 +11940,6 @@ bContainsCRLF
 bForceLookAtPath
 bFound
 bKill
-bLegalTypeChange
 bNonDegenerate
 bReacquireAfterBreak
 bUpdate
@@ -12111,6 +12129,7 @@ d$XH;S
 d$XIc
 d$XL;M
 d$XM;
+d$XMc L
 d$XwFD
 d$\E3
 d$`A;
@@ -12129,6 +12148,7 @@ d$hH;
 d$pE3
 d$xM;
 d-&_I
+d/0`d
 d?000000`?
 damage
 darwin
@@ -12192,6 +12212,7 @@ dioxXu
 directory not empty
 dirty_bytes
 dirty_decay_ms
+dirty_decay_ms:30000,muzzy_decay_ms:30000
 dirty_nmadvise
 dirty_npurge
 dirty_purged
@@ -12257,12 +12278,12 @@ events
 ewh/?y
 executable format error
 execute_per_tick
+exhq4
 exists
 exitprocess_%d
 experimental
 experimental_
 experimental_infallible_new
-explore
 explosion_behavior
 explosion_buildup
 explosion_delay
@@ -12357,6 +12378,8 @@ fC94wu
 fC;DA
 fC;DB
 fC;DH
+fD)%GV9
+fD)%\P9
 fD9	t(L
 fD9 t
 fD9!H
@@ -12463,6 +12486,7 @@ g&yR?V
 g(D9g8|>H
 g,+L$
 g,CiT(
+g/l@K
 g9@x!8
 gFiiN
 g_BitBuf_BitWriteMasks
@@ -12480,6 +12504,7 @@ g_arVProfLiteGroupStack[ 0 ] == VPROF_BUDGETGROUPID_FRAMETOTAL
 g_arVProfLiteGroupStack[ 1 ] == VPROF_BUDGETGROUPID_OTHER_UNACCOUNTED
 g_bPlatCPUTicksAreReliable
 g_bUpdateStringTokenDatabase
+g_flConfigMaxCoord
 g_nVprofLiteStackDepth == 2
 g_nVprofLiteStackDepth > 1 && g_nVprofLiteStackDepth <= k_nMaxVprofLiteStackDepth
 g_pCVar
@@ -12556,7 +12581,6 @@ help:  no cvar or command named %s
 hex color: RRGGBBAA                         // A hexadecimal color value in the order RGBA.
 hj>>d
 hljztL
-hm$fy
 hm~iD
 holdevent
 hooks
@@ -12708,6 +12732,7 @@ l$0E3
 l$0H+
 l$0H;
 l$0Hc
+l$0Ic
 l$0L#
 l$0L9o(ua
 l$0Lc)
@@ -12788,7 +12813,6 @@ l$xH+
 l2|X/gGe
 l6qnk
 l<}2l
-l=!`b4
 lR(g 
 large
 last_sniff
@@ -13588,6 +13612,7 @@ nBytesDecompressed == m_binaryBlobs[ i ].second
 nBytesGotten == nToRead
 nBytesReserved == 0
 nBytesWritten <= nDstBufSize
+nC:\buildworker\citadel_rel_win64\build\src\tier0\kv3loadsave.cpp
 nCallbackIndex != 0
 nCallbackIndex == 0
 nChars <= 0
@@ -13974,6 +13999,7 @@ pIter->AbortJob()
 pIterData < m_pGlpiExData + m_nGlpiExDataBytes
 pIterData == m_pGlpiExData + m_nGlpiExDataBytes
 pJob->GetRefCount() == 2
+pJobSemaphore != nullptr
 pKV3->IsTable()
 pKeyValues3->RemoveMember( i )
 pLastChild == nullptr || pLastChild->m_pPeer == dat
@@ -14088,6 +14114,7 @@ preferred_carryangles
 prefix
 primary
 privinstruction
+processutils
 prof.active
 prof.lg_sample
 prof.thread_active_init
@@ -14212,13 +14239,13 @@ r}L9%
 r}L95
 r}L95?
 r}L9=
-r~H9-
+r~H9-7
 s @8~
 s AWH
 s WATAUAVAWH
 s WAVAWH
 s$fff
-s(uq@85[
+s(uq@85
 s)HcC
 s,fff
 s0HcL$tH
@@ -14417,6 +14444,7 @@ t$0~~
 t$4fD
 t$8,+
 t$8;;
+t$8;D$@
 t$8A;
 t$8A_A^_
 t$8Di
@@ -14433,7 +14461,6 @@ t$8t)H
 t$<E;
 t$@9w
 t$@Ak
-t$@D;l$P
 t$@E3
 t$@E;
 t$@H;
@@ -14477,7 +14504,7 @@ t$PHc
 t$PL;
 t$PLc
 t$Pfff
-t$TL;=7G'
+t$TL;=
 t$XA;
 t$XD+
 t$XD9t$T
@@ -14496,7 +14523,6 @@ t$X}Gf;
 t$`D9t$p|IH
 t$`E3
 t$`E;
-t$`H9
 t$`H;
 t$`Hc
 t$`Hcq
@@ -14518,8 +14544,10 @@ t$pE3
 t$pI;@
 t$pM;
 t$pu]Hc
+t$xA#
 t$xA8*
 t$xE3
+t$xE;
 t$xt*3
 t$|E3
 t%</t!<\t
@@ -14558,19 +14586,18 @@ t-H9nPu
 t-H;C
 t-HcA
 t-Lck
-t.0&Z
-t.L95(p+
-t.L95+q+
+t.L95
 t0Hc3;s
 t2Hc|$0;
 t3H9-
+t3H9-&
 t3H95
-t3H95=
+t3H95AB2
 t3fff
 t4=UUU
 t4L;C
 t5H9-
-t5H9-j
+t5H9-4E2
 t6fff
 t7HcP
 t98_2t
@@ -14587,9 +14614,10 @@ t;H9-
 t;H;w@t5L
 t;LcF
 t<A8(t7H
-t<L9-
+t<L9-e
 t<fff
 t=D82t8H
+t=E8(t8I
 t?8_:t
 t?HcS
 t@@82t;H
@@ -14618,7 +14646,7 @@ tSE9<$t
 tSHcT$pI
 tSf91tNH
 tU;\$0tH
-tUA80tPI
+tUE8(tPHc
 tUH95
 tUfff
 tXfff
@@ -14627,9 +14655,10 @@ t\;4$vWC
 t\@8/tWE3
 t^@8/tYE3
 t_H9-
-t_H9-W52
+t_H9-M
 t_H95
-t_H95E32
+t_H95	
+t_H95o@2
 t_Hc]
 t_IcD
 t`@87t[E3
@@ -14664,7 +14693,7 @@ test_angles_relative
 testscript_debug
 text file busy
 texturescale
-tfL95
+tfH9-
 tfL9;u
 tfL9f
 tgfff
@@ -14716,12 +14745,9 @@ u	8V(
 u	D8&
 u D85
 u!@8-
-u!@8-2
-u!@8-b
+u!@8-V
 u!H9=
-u!H9= 
-u!H9=>
-u!H9=z
+u!H9=S
 u!H;C(w
 u!L9L$Pu
 u"HcM@H
@@ -14729,11 +14755,13 @@ u"HcMHH
 u#fA;
 u$D8r(t
 u$H9[
+u$H9[ u
 u$H9v
 u$HcK ;K
 u%@8j(t
 u%L9I
 u&</u
+u&H9v u
 u&HcA<H
 u&L;c
 u&L;o
@@ -14742,7 +14770,6 @@ u(L9k
 u)9k`tLH9kHu
 u)9nxtLH9n`u
 u)HcA<H
-u*;5C
 u*IcM A;
 u,!T$(H!T$ 
 u,AiT
@@ -14750,9 +14777,8 @@ u0HcE(H
 u1!D$0H
 u1@8;
 u1L9L$Pu*H
-u29-x52
-u2958
-u295f32
+u29-n
+u295*
 u2fA;
 u3HcH<H
 u3fff
@@ -14778,15 +14804,14 @@ u<Hc
 u<Hc5
 u<P/Y
 u<g~l<it[<ntP<ot,<pt
+u=9-]E2
 u>L9L$Pu7L9L$Xu0L9L$`u)H
 u@Icu
-uC9-C82
-uC9-F
 uCH;=
 uCL;5
 uED8r(t
 uED9-
-uEH;5/
+uEH;5o
 uHA9P
 uHIc<$I
 uID8e
@@ -14797,13 +14822,13 @@ uRDZZ
 uSD8#
 uSD8;
 uUHcl$@A;
-uVHc=
+uVHc=O^'
 uWE8eIuQ9
-uWHc=
+uWHc=1u'
 uWL9L$PuPL9L$XuIL9L$`uBD8	t
 uZEeu
 u[L9L$PuTL9L$XuML9L$`uFH
-uc@8-!
+uc@8-
 uchar32
 ugfD9A
 uint16
@@ -14833,7 +14858,7 @@ unsigned long long
 unsigned short
 unspecified
 unwind_info
-uo@85R
+uo@85
 update
 uptime
 use_additional_offset
@@ -14890,12 +14915,11 @@ virtual-table number doesn't end with '_'
 visualstudioautomation.exe -appverifier_setup %d
 visualstudioautomation.exe -attachtoprocessid %d
 vmdl;vmdl_prefab
-vmdlkeys1
+vmdlkeys0
 vmdlkeys2
 vmdlkeys3
 vmdlkeys4
 volatile
-vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -14917,6 +14941,7 @@ vpcf26
 vpcf27
 vpcf28
 vpcf29
+vpcf3
 vpcf30
 vpcf31
 vpcf32
@@ -14979,7 +15004,7 @@ vtest
 vtune
 vtuneapi.dll
 vulkan
-vwL95Jn5
+vwL95
 v}`[>
 w!fff
 w"@85
@@ -15059,9 +15084,9 @@ xA_A^A]A\_^[]
 xA_A^A]A\_^][
 xA_A^_^[]
 xOHcC
-xPH=w
 xRH;{
 xSvf$
+xTH;{
 xWI96tRI
 xXI96tSI
 x_^][
@@ -15082,7 +15107,7 @@ y\PD>!
 yaw_end
 yaw_start
 z,u<u
-z:K(%d)
+z:K(%d,%d)
 z<uZEeu
 z=u;H
 z>@G'h
@@ -15173,6 +15198,7 @@ zzzzzzzzI
 |$0H;
 |$0Hc
 |$0HcF$Hc^
+|$0Ic
 |$0L;
 |$0Lc
 |$0LcG8H
@@ -15205,6 +15231,7 @@ zzzzzzzzI
 |$@9QD|
 |$@9_
 |$@A_A^A]A\
+|$@D9|$P
 |$@E2
 |$@E3
 |$@H+
@@ -15214,6 +15241,7 @@ zzzzzzzzI
 |$@L+
 |$@L;
 |$@M;
+|$@|KH
 |$AEtD
 |$BLt=
 |$CFt6=
@@ -15257,6 +15285,7 @@ zzzzzzzzI
 |$`A;
 |$`CI
 |$`H+
+|$`H9
 |$`H9D$`r
 |$`Hc
 |$`L+
@@ -15349,8 +15378,7 @@ zzzzzzzzI
 ~,*u<I
 ~,AiT
 ~0@8-
-~0@8-o=(
-~0D85OG(
+~0D85sI(
 ~0Ic6D
 ~4fff
 ~<uZEeu

@@ -21,10 +21,10 @@
 	?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 	?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
 	E;FtE
+	V_fmodf
 	V_fpclassifyd
 	V_isnand
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_StringAfterPrefix
 	_V_strncmp
 	_V_strncpy
@@ -92,7 +92,6 @@
  Hc)H
  Hc)L
  Hc)M
- Hc+;k
  Hc2H
  HcAXE3
  Hci L
@@ -124,7 +123,6 @@
 !IsInternalTypeShortArray( Internal_Type() )
 !V_isempty( pPathID )
 !V_stricmp_fast( pCommand->m_pName, pNameStr )
-!bLooksLikeABug
 !con.m_pObject.isNull()
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
@@ -229,6 +227,8 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 %f %f %f
 %f %f %f %f
 %g %g
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s allocation count overflow
 %s allocation count overflow( %llu > %llu )
 %s%s: DynamicWidget: %s
@@ -284,12 +284,9 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 &YA1E
 &YA1H
 &YA1L
-'	V_log10f
 ',=?k
 ( %1, %2 )
 ( %1, %2, %3, %4% )
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( QApplication::activeModalWidget() == nullptr ) || ( QApplication::activeModalWidget()->windowModality() == Qt::WindowModal )
 ( bHideCursor == false ) || ( m_bCaptureHideCursor == bHideCursor )
 ( buttonCode >= 0 ) && ( buttonCode < V_ARRAYSIZE( s_nBindCodesToVirtualKeys ) )
@@ -328,7 +325,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 (D$pD
 (D$pH
 (D$pf
-(D;mP
 (D;t$0
 (Edit w/ Spinbox)
 (Filter)
@@ -363,9 +359,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 (intp)this % 8 == 0
 (l$ D
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$ 9p
 (t$ A
 (t$ H
@@ -395,9 +388,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 )<$fD
 )>6{1n
 )D$ E
-)D$0A
 )D$@D9
-)D$@H
 )D$PD
 )D$PIc
 )D$`E
@@ -451,6 +442,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 )|$`H
 )|$pA
 )|B?d!
+*	V_log10f
 * ?timerEvent@QTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 * ForceRescanOfActiveKeys
 * Rehandling active codes
@@ -499,7 +491,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 -> Success (%d attempts)
 -BH>t
 -YA1H
--]6=	
 -sse2
 -sse3
 -sse4
@@ -921,6 +912,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 .R?matches@QKeyEvent@@QEBA_NW4StandardKey@QKeySequence@@@Z
 .YA1H
 .[?setRed@QColor@@QEAAXH@Z
+.^[7`
 .data
 .data$r
 .data$rs
@@ -956,7 +948,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 />58d%
 /YA1H
 /]?size@QImage@@QEBA?AVQSize@@XZ
-0	V_modfd
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -996,11 +987,14 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 0;_0|
 0><[cZUg^>
 0A;u0|
+0A^A\_
+0A^A]A\][
 0A^A]_^[
 0A^][
 0A^^]
 0A^_^
 0A^_^][
+0A_A\_
 0A_A\_][
 0A_A^A\
 0A_A^A\_^
@@ -1010,7 +1004,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 0A_A^A]A\_^]
 0A_A^_
 0A_A^_^]
-0L9}gt
+0A__^
 0X8b?~
 0^][H
 0_^[H
@@ -1230,7 +1224,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 220801000000Z
 2222<<
 230714000000Z
-240724000044Z0/
+240801201033Z0/
 241009235959Z0a1
 2AttributeFilterChanged()
 2CalcValueAdded(double)
@@ -1291,6 +1285,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 2triggered()
 2valueChanged(double)
 2valueChanged(int)
+3	V_modfd
 3 == TestToken_t( &testTable, "grandparent.parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child.grandchild" ), WILDCARD )
 3 == TestToken_t( &testTable, "parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "*.parent.child.grandchild" ), WILDCARD )
 3 == TestToken_t( &testTable, "parent.child.grandchild" ).MatchAgainstPattern( TestToken_t( &testTable, "parent.child.grandchild" ), WILDCARD )
@@ -1312,11 +1307,9 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 6I]Dc
 6OB,n_
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
-7	V_powd
 70503
 7<.uf
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8/t[H
 80uWfff
 8A^A\
@@ -1336,9 +1329,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 8O8u'H
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
 8ke?;
-9	V_qsort
 9)~P3
-9/~cH
 98t H
 99~CE
 99~tH
@@ -1349,8 +1340,8 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 9Q8u	D9AHu
 9T$<~
 9W0|<
+9Y ~/H
 9Y0~KH
-9\$ ~Zf
 9] ~bH
 9_P~.
 9oX~7L
@@ -1363,32 +1354,32 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 9t$Pu	
 9u t1
 9u t8
-9y ~VH
 9y(~IH
 9{8t&H
 9|$0~v
 9|$@~4H
 9|$hu
 9~h~t3
-:	V_qsort_s
+:	V_powd
 : Add
 :>)*	v
 :>t6k'
+;	V_powf
 ;?0123456789:;<=>?
 ;A8u	;YH
 ;H9>&X
 ;I9}(tiH
 ;I;>ta
 ;J;J;J;J;J;J;J;J;J;J;J;J;J;J;J;Jx
-;L9}ot
+;L9} t
 ;YHt6H
 ;\$0t
 ;\$H~
 ;\$`u
-;|$ |
 ;|$0|
 ;|$@|
 ;|$@~
+<	V_qsort
 <	u2H
 <	u8H
 <	u\L
@@ -1416,13 +1407,13 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
 >Icn 
 >Mp$d
 >jtm}S
-?	V_roundf
 ?!5WOo
 ?+>^m
 ?333333
@@ -3192,7 +3183,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 @84)u
 @8;t`3
 @8;tb3
-@8=h	
 @8j(t
 @8k(t
 @8kpt
@@ -3248,6 +3238,7 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 @SAVAWH
 @SAVH
 @SAWH
+@SUATAUAVH
 @SUATAWH
 @SUAUAWH
 @SUAVH
@@ -3302,7 +3293,6 @@ $[?setRange@QDoubleValidator@@UEAAXNNH@Z
 @USWAVH
 @USWAWH
 @USWH
-@UVATAUAVH
 @UVATAWH
 @UVAUAVH
 @UVAVH
@@ -3336,6 +3326,7 @@ A96~Q3
 A9>~Z3
 A9wH~g
 A;FH~
+A;Wx|
 A;n0u
 A;wH|
 A>l$/
@@ -3382,11 +3373,11 @@ A_A\[
 A_A\[]
 A_A\][
 A_A\^]
-A_A\_
 A_A\_^]
 A_A]A\]
 A_A]A\_^[
 A_A]A\_^]
+A_A^A\
 A_A^A\[]
 A_A^A\]
 A_A^A\_[]
@@ -3394,7 +3385,6 @@ A_A^A\_]
 A_A^A\_]H
 A_A^A\_^
 A_A^A\_^[]
-A_A^A]A\[]
 A_A^A]A\]
 A_A^A]A\]H
 A_A^A]A\^[]
@@ -3451,6 +3441,7 @@ AssetSystemTest001
 Attempting to register the command %s for context %s multiple times
 AttributeFilterChanged
 August
+B	V_roundf
 B(I9A(
 BC?>6t9^	c:>
 BF>^G
@@ -3505,7 +3496,6 @@ C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qpropertyattributelabe
 C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qpropertyeditor.cpp
 C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qproprow.cpp
 C:\buildworker\citadel_rel_win64\build\src\propertyeditor\qproprowlist.cpp
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\propertyeditor\symboltokenstring.h
 C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\inputbindsystem.h
 C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qcontrols.h
@@ -3644,11 +3634,6 @@ COMMAND_TEXT_MODE_ICON
 COMMAND_TEXT_MODE_MENU
 COMMAND_TEXT_MODE_NONE
 CONTENTROOT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CP4AutoEditAddFile::CP4AutoEditAddFile
 CPHcKHH
 CPiecewiseCurve::InitAsUnitCurve
@@ -4148,7 +4133,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 Context
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
@@ -4191,6 +4175,7 @@ D$ v8
 D$(E3
 D$(H;
 D$(Hc
+D$(Ic
 D$(fI
 D$0@2
 D$0@8:t
@@ -4248,7 +4233,6 @@ D$pE3
 D$pHc
 D$pHcH
 D$pv8
-D$xE3
 D$xHcH
 D+A H
 D+D$\A
@@ -4260,6 +4244,7 @@ D8 ulH
 D8 uzH
 D8,8u
 D81uUL9r
+D85<F
 D8<>u
 D8AHH
 D8L$0u`
@@ -4278,6 +4263,9 @@ D8wTuweH
 D8}wu@H
 D8}~u
 D8~Iu
+D9&~_L
+D9&~`L
+D9&~cL
 D9c@u
 D9d$0
 D9d$8u
@@ -4309,7 +4297,6 @@ Delete Selected Stop
 Delete Widget
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 Description
 Designable
 DigiCert Assured ID Root CA0
@@ -4346,6 +4333,7 @@ DragStarted
 DragUpdated
 DummyNoOp
 E(HcH
+E(`\$
 E0HcH
 E0HcX
 E0Lc`
@@ -4359,7 +4347,6 @@ E9g tI
 E;t$(|
 E>nEA
 E@HcX
-EEVFn
 EH*?H
 EHHcI
 ELEMENT
@@ -4380,6 +4367,7 @@ EXEC-REMOVE-END: %s
 EXHcH
 EXPORTSYSTEM_INTERFACE_VERSION_001
 E\$xH
+EarlyInit_Tier0
 EatEscapeKeyPress
 EconItemToolModel_001
 Edit Point ...
@@ -4398,7 +4386,7 @@ EditingFinished
 EditingStarted
 EditorClosed
 EgD9`
-EgD;u
+EgD;}
 EgHcX
 EgHcx
 EmitEditingFinishedOnDrop
@@ -4425,7 +4413,6 @@ Error pasting clipboard data: %1
 EscapePressed
 EscapeWithNoSelection
 Et$`H
-Et9Ept
 EwD;m
 EwHcH
 EwHcX
@@ -4441,7 +4428,7 @@ ExternalNameForInternalType
 E|$xH
 F HcD$hD+
 F>qUxv
-F@Hcn
+F@Hci
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to register all schema data: %s
 FATAL: %s called on a pool context (no root available)
@@ -4524,7 +4511,6 @@ GetArrayCount() != -1
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetAsyncKeyState
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -4577,6 +4563,7 @@ H SVATH
 H!D$ I
 H!T$0D
 H-^Eu
+H6lu 
 H8MHt
 H9(tO
 H9+t	H
@@ -4584,6 +4571,7 @@ H9+u]H
 H9/t	H
 H97u+A
 H98t2
+H9=M:
 H9A@t
 H9C@t
 H9C@u:HcCHA;F
@@ -4597,9 +4585,8 @@ H9k@H
 H9l$ht
 H9o H
 H9t$x
-H9ugt
-H9uot
-H9uwt
+H9u t
+H9u0t
 H9y0t
 H9|$@t
 H9|$Ht
@@ -4621,11 +4608,13 @@ HH:mm:ss
 HSLA	
 HSVA	
 H[><y5
+H_^][
 HammerMapLoader001
 HandleAsStringFailure
 HandleFilterChanged
 HandleViewportResize
 Hc+;k
+Hc-mP
 Hc/;o
 Hc7;w
 Hc:LcyHD
@@ -4661,10 +4650,8 @@ HcO H
 HcOHH
 HcQ<H
 HcT$ L
-Hc\$0M
 Hcu`M
 HcwHH
-Hc~@;~Pu
 Hc~HH
 HelpSystem_001
 Hide unless error/warning occurs
@@ -4686,6 +4673,8 @@ IToolFrameListener
 I[?setRgbF@QColor@@QEAAXNNNN@Z
 Ic>A;~
 IcFx2
+Ic]8A;]Hu
+Ic]8H
 Ic~ A;~0u
 Ic~HI
 If intended, call ClearSpecificType first to discard the old value.%s
@@ -4718,7 +4707,6 @@ InputSystemVersion001
 Insert After
 Insert Before
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InteractiveEditFinished
 InteractiveEditStarted
 InterlockedFlushSList
@@ -4746,6 +4734,7 @@ IsParentOfWritableMap()
 IsProcessorFeaturePresent
 IsValid()
 IsValidCodePage
+J,6}S
 J>@G_
 January
 K ?toggled@QAbstractButton@@QEAAX_N@Z
@@ -4760,8 +4749,6 @@ Key Bindings
 KeyState
 KeyState[%1]
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::FindOrCreateMember
 KeyValues3::FormatValueAsString
 KeyValues3::GetArrayElement
@@ -4819,7 +4806,6 @@ L$&8\$&t,8Y
 L$(D;
 L$(E3
 L$(Hc
-L$(Ic
 L$(IcA
 L$(Lc
 L$(Mc
@@ -4827,6 +4813,7 @@ L$0E3
 L$0E;
 L$0H3
 L$0H;
+L$0Ic
 L$0fH
 L$0fI
 L$8E3
@@ -4844,9 +4831,10 @@ L$@H3
 L$@Hc
 L$@fA
 L$@uU
-L$HE3
+L$HL+
 L$PD;
 L$PE;
+L$PHi
 L$PIc
 L$PL;
 L$T+N<
@@ -4859,6 +4847,7 @@ L$`Hc
 L$h;M
 L$hfI
 L$pH3
+L$pHi
 L$xff
 L9#t	H
 L9#u/H
@@ -4874,6 +4863,7 @@ L9d$xt
 L9e t
 L9e(t
 L9k H
+L9l$`t
 L9mPt
 L9m`t
 L9mwt
@@ -4887,6 +4877,7 @@ L9|$pt
 L9|$xt
 L9}(t
 L9}Ht
+L;&UL
 L;d$h
 L;l$ 
 L;t$h
@@ -4915,7 +4906,6 @@ Layout Side To Side
 Layout Top To Bottom
 Lc'D;g
 Lc2A+
-Lc5:z
 Lc7D;w
 LcA<E3
 LcD$PH
@@ -4927,16 +4917,18 @@ LcNhH
 LcO8H
 LcT$HN
 LcT$XN
+Lcd;@H
 LcfPD;f`
+LcgHH
 LcihL
 LcnXD;nh
 Lcq D;q0
 Lct$@
-LcwH3
+LcwHH
 Lc{hE3
 Lc|$0D;
-Lc|;@H
 Lc}(D;}8
+Lc~HD
 LeaveCriticalSection
 Left Mouse (Point)
 Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
@@ -4985,11 +4977,10 @@ MaterialUtils_001
 MathLib_Init
 Max: 
 Maximum
-Mc/E+
+Mc&E+
 McM`I
 McN0I
 Mcf E;f0
-McfHD
 McuPE;u`
 MemAlloc_StrDupFunc
 MeshSystem001
@@ -5083,7 +5074,6 @@ NumEnter
 NumMul
 NumSub
 NumToggle
-O	V_sscanf
 O JcD/
 O8HcB
 O?initPainter@QPaintDevice@@MEBAXPEAVQPainter@@@Z
@@ -5178,9 +5168,6 @@ OnWhitespaceWarningClicked
 OnWhitespaceWarningClickedDelayed
 OpenFileMappingA
 OpenMutexA
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orientation
 Outgoing
 Output
@@ -5192,7 +5179,6 @@ P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
-PA]_^
 PA^_]
 PA^_^[]
 PA_A^A\_^
@@ -5223,11 +5209,11 @@ PhysicsBuilderMgr001
 PickCancelled
 PickColor
 Plat_CPUTickFrequency
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
 Plat_GetEnv
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_IsInHeadlessMode
 Plat_IsInTestMode
@@ -5315,7 +5301,9 @@ Qt5Widgets.dll
 QtMetaTypePrivate::QSequentialIterableImpl
 QueryPerformanceCounter
 R	?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
+R	V_sscanf
 R IcB
+R>py3
 R?metaObject@QStandardItemModel@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QTextDocument@@UEBAPEBUQMetaObject@@XZ
 R?metric@QImage@@MEBAHW4PaintDeviceMetric@QPaintDevice@@@Z
@@ -5324,7 +5312,6 @@ R?mimeData@QClipboard@@QEBAPEBVQMimeData@@W4Mode@1@@Z
 R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
-RA+%N
 RGBA	
 RGBA	%1	%2	%3	%4
 RMouse
@@ -5611,7 +5598,6 @@ SwitchToEngineWindow
 SyncToScrollBar
 SyncToScrollBar %.0f us
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T	V_stricmp_fast
 T$ E3
 T$ H;
 T$(E3
@@ -5807,7 +5793,6 @@ VWATAUAVH
 VWATAVAW
 VWATAVAWH
 VWAUAWH
-VWAUH
 VWAVH
 VWAWH
 VWebm001
@@ -5835,7 +5820,6 @@ V_UInt64ToString_Unsafe
 V_UnqualifiedFileName
 V_atof
 V_atoi
-V_fmodf
 V_~]	,
 Va?width@QPixmap@@QEBAHXZ
 Value
@@ -5856,6 +5840,7 @@ Vis:1
 VisBuilder_001
 Visit Developer Help URL
 Vrad3_001
+W	V_stricmp_fast
 W?resetTransform@QPainter@@QEAAXXZ
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
@@ -5887,7 +5872,6 @@ WorldRendererMgr001
 Writable
 WriteConsoleW
 WriteFile
-X	V_strspn
 X UVWATAWH
 X!t5~
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
@@ -5954,6 +5938,7 @@ Z[?setRowCount@QStandardItemModel@@QEAAXH@Z
 Z\>z8
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 Zod(^?
+[	V_strspn
 [%1] %2
 [*ncd>0
 [?setPointSizeF@QFont@@QEAAXN@Z
@@ -6011,6 +5996,7 @@ Zod(^?
 \$XfA
 \$Xu<
 \$`E3
+\$`t&H
 \$gm?
 \$hE3
 \$hu:M
@@ -6020,11 +6006,12 @@ Zod(^?
 \$x9Yh
 \$xH;
 \$xu3M
-\=$K	
+\$xu;H
 \?setWidth@QPen@@QEAAXH@Z
 \?setWidthF@QPen@@QEAAXN@Z
 \t3D8T$(t
 ])6M>&
+]-gK	
 ]>)2X
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
@@ -6037,7 +6024,6 @@ Zod(^?
 ^?text@QPalette@@QEBAAEBVQBrush@@XZ
 ^Q?lighter@QColor@@QEBA?AV1@H@Z
 ^RfN>
-^W_;}
 ^_?toPlainText@QTextDocumentFragment@@QEBA?AVQString@@XZ
 ^`HcFXH
 _ ;_$t
@@ -6148,7 +6134,6 @@ bDuringInteractiveEdit
 bFinal
 bFound
 bIncoming
-bLegalTypeChange
 bOperationFinished
 bOutgoing
 bR?metaObject@QDoubleValidator@@UEBAPEBUQMetaObject@@XZ
@@ -6225,6 +6210,8 @@ d$@L9d$`t
 d$@Lc&L
 d$PA;
 d$PI#
+d$XE2
+d$XH9u(t
 d$XHc
 d$Xx%Hc
 d$`E3
@@ -6307,7 +6294,6 @@ fontstyle
 foreground
 forever
 function not supported
-fxu3H
 g	?cap@QRegExp@@QEAA?AVQString@@H@Z
 g_pFullFileSystem
 g_pProcessUtils
@@ -6377,6 +6363,7 @@ group_title
 h>1my
 hA_A]A\^[]
 hA_A]_^][
+hA_A^A]A\[]
 hA_A^A]A\_^[]
 hA_A^A]^][
 hA_A^^]
@@ -6443,9 +6430,11 @@ l$ WH
 l$(HcD$ H
 l$(Lc(M
 l$0D9l$@|LH
+l$0E3
 l$0Hc
 l$0Hc)H
 l$0Lc)
+l$@9;~/f
 l$@E3
 l$@~ H
 l$DE3
@@ -6657,7 +6646,6 @@ p*W4H
 p0R^G'
 p;Y>u
 pA\[]
-pA^A]A\^]
 pA^A]]
 pA^^]
 pA^^]H
@@ -6697,7 +6685,6 @@ pLiveBinding->m_pCmd
 pManager != nullptr
 pMap->AttrMap_Add( hTarget, newKey )
 pMatchedBinding->m_pCmd
-pMemory[i] == 0
 pMeta
 pNewItem->GetCurrentlyVisibleRow()
 pObj != nullptr
@@ -6893,6 +6880,7 @@ t$PD9
 t$PHc1L
 t$PLk
 t$PM+
+t$Pfff
 t$X9+t
 t$XI;
 t$`E3
@@ -6917,12 +6905,11 @@ t7HcP
 t?HcS
 tCL9m
 tDL9s`t>H
-tDfff
 tEHcR
 tFL;w0u@H
 tRLcY
 tXHc:
-tY@85*N
+tY@85J=
 t\Ic.
 t]IcU
 t_M9>t
@@ -6939,7 +6926,6 @@ text file busy
 text/uri-list
 textValue
 tgH9;u
-thHc\$0H
 tiHc*Lc1
 tier0.dll
 timed out
@@ -6955,6 +6941,7 @@ tools/keybindings/propertyeditor_key_bindings.txt
 transform
 try_get_function
 try_get_module
+ttHc\$0H
 twIcF
 u$D8r(t
 u%@8j(t
@@ -6977,6 +6964,7 @@ uLHcw
 uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
 uXHc~
 uXI97tkH
+u`Hc~@;~Pu
 u`IcEXM
 uchar32
 ugHc~
@@ -7060,6 +7048,7 @@ xi;C`}dH
 xj;C`}eH
 xk;C`}fH
 y8Myt
+y9CJ@
 yPt0H
 yU?qt_metacall@QDoubleValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 y\PD>!
@@ -7073,10 +7062,8 @@ zY;>u:m
 {@+{8
 {@9s8|AH
 {un'%
-|	/{6}!
 |"?verticalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 |#tAM
-|$ 9Cpt
 |$ ATAUAVAW
 |$ ATAVAWH
 |$ AUAVAWH
@@ -7118,7 +7105,7 @@ zY;>u:m
 |$8u)H
 |$8uFH
 |$8~ H
-|$<;=y
+|$<;=
 |$@A3X$A
 |$@A_A^A]A\
 |$@H9|$ht
@@ -7134,6 +7121,7 @@ zY;>u:m
 |$Hu'I
 |$H~ H
 |$PLi
+|$Pt	
 |$P}[H
 |$P~ H
 |$P~#H

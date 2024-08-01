@@ -2,7 +2,6 @@
 																																																																																																																														
 	!s99
 	V_wcsicmp
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	g_pMemAlloc
 	kE>fvw
@@ -47,11 +46,11 @@
  delete
  delete[]
  new[]
- p729
  tDE3
 !>6'Y
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
+#cZ12
 %d Supported IME.
 %s: hWnd:0x%8.8llx, uMsg:0x%8.8x, wParam:0x%8.8x, lParam:0x%8.8x
 ',=?k
@@ -63,9 +62,6 @@
 (D$0I
 (D$0L
 (f*^[0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$@f
 (t$PH
 (|$0f
@@ -181,7 +177,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240723234901Z0/
+240801161817Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -211,7 +207,6 @@
 9)~P3
 98t H
 9>~ZH
-:	V_qsort_s
 ;H9>&X
 ;I9}(tiH
 ;w8uOH
@@ -220,6 +215,7 @@
 <0:08
 <G%t\H
 <no failure reason set>
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
@@ -230,7 +226,6 @@
 ??HCUtlString@@QEBA?AV0@PEBD@Z
 ??YCUtlString@@QEAAAEAV0@AEBV0@@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?Clear@CStrAutoEncode@@QEAAXXZ
 ?Format@CUtlString@@QEAAHPEBDZZ
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
@@ -335,7 +330,6 @@ BinaryProperties_GetValue
 C0Hc	H
 C:\buildworker\citadel_rel_win64\build\_build_\imemanager\_vpc_imemanager\default\win64\_msvc_\Retail\imemanager.pdb
 C:\buildworker\citadel_rel_win64\build\src\imemanager\gfx_imetsf.cpp
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\concommand.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
@@ -355,11 +349,6 @@ CGlobalConVarRegistry::HookUpConVar
 CHEWING.IME
 CHINESE
 CINTLGNT.IME
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CTSF::Shutdown
 CTier2ShutdownCallback::RunAllCallbacks
 CUtlMemory<class CUtlWString,int>::Grow
@@ -416,7 +405,6 @@ CloseHandle
 CommandLine
 Considering LANGID: 0x%8.8x, Profile Description: '%s'
 Considering Language: LANGID: 0x%8.8x, Name: '%s'
-Construction is only allowed from the resolve function
 CorExitProcess
 Could not find requested IME in supported IME list!
 CreateEventW
@@ -444,7 +432,6 @@ December
 DefWindowProcW
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -462,6 +449,7 @@ E0Lc`
 E8q(u
 EH*?H
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 EngineServiceMgr001
@@ -500,7 +488,6 @@ GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCommandLineA
 GetCommandLineW
@@ -621,7 +608,6 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 InvokeMiniDumpHandler
 IsDebuggerPresent
@@ -743,15 +729,10 @@ New Quick
 New Quick 2010
 NianQing
 November
-O	V_sscanf
 October
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 PA_A^A]A\_^]
 PA_A^_
 PAq=?Mp#
-PJAyk
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
@@ -759,9 +740,9 @@ ParticleSystemMgr003
 Phonetic
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_LoadCOM
 Plat_LoadOleAut
@@ -777,6 +758,7 @@ Quan Pin
 Quan Pin 6.0
 QueryPerformanceCounter
 Quick
+R	V_sscanf
 RaiseException
 ReconnectInterface
 RegCloseKey
@@ -859,7 +841,6 @@ StatusWindow_OnShape
 StatusWindow_OnSymbol
 SteamAudio001
 Sunday
-T	V_stricmp_fast
 T$@A+
 T$@H=
 T$HE3
@@ -941,6 +922,7 @@ VerifyVersionInfoW
 Version
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 WATAUAVAWH
 WAVAWH
 WINWB86.IME
@@ -985,7 +967,6 @@ Y9"SD
 Zheng Ma
 Zheng Ma 6.0
 ZhengMa
-[&@yE
 [K]taM?
 \$ AVH
 \$ UVAVH
@@ -1057,6 +1038,7 @@ _gUT^
 `virtual displacement map'
 a7hIw
 abcdefghijklmnopqrstuvwxyz
+b+{e\
 bAllocationCanFit
 bad exception
 bp(=>?g
@@ -1074,7 +1056,6 @@ d$Hf#
 d$pD9d$`
 dayi.ime
 dddd, MMMM dd, yyyy
-d|oRD
 e0A_A^A]A\]
 f9)u4H9j
 f9,Vu
@@ -1128,6 +1109,7 @@ ineID
 invalid_parameter
 itABC IME v5.30
 jj@0HK4
+j{xLt
 k0i0$
 l$ VWATAVAWH
 l$ WH
@@ -1146,6 +1128,7 @@ n03>Pu
 nRef == 0
 ntelA
 num > 0
+n}Sjc
 operator
 operator "" 
 operator co_await
@@ -1157,7 +1140,6 @@ p;Y>u
 pA]A\^][H
 pA_A^A]A\_^[
 pCallback == nullptr
-pMemory[i] == 0
 pSchemaSystem != nullptr
 phon.ime
 pintlgnt.ime

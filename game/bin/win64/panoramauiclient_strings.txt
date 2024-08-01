@@ -10,14 +10,12 @@
 	JS_STRING
 	TYPE_BOOL
 	TYPE_ENUM
+	V_fmodf
 	V_isbreakablewspace32
 	V_isnand
 	V_isvalidhex
-	V_iswcntrl
-	V_iswdigit
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_AppendSlash
 	_V_ExtractFileExtension
 	_V_ExtractFilePath
@@ -40,6 +38,7 @@
 	type_name
 	uVeH
 	w|Hc
+ 	V_iswcntrl
  	uIH
                           
     Actual    : 
@@ -55,7 +54,7 @@
   Problem     : Field is not the right type for this message:
  !""#$%&'((()*+,-./0123456789:;<=>?@AABCDEFGHIJKLLAMAAN
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$h
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$$$$$$%%&'()*++++++,,-./01MMMMMMMM22345678889:9:;<=>?=>?MMMMM@ABCDEFGHIJ
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
@@ -66,14 +65,14 @@
  %s %s
  'L>[
  (08@HPX`hpx
- (08@HPX`jp"
- (08@HPXbp
- (08@HPZp"
- (08@HRp
- (08@Jp
- (08@Jp"
- (0:p"
- (0X`hpzp
+ (08@HPX`jP 
+ (08@HPXb
+ (08@HPZP 
+ (08@HR
+ (08@J
+ (08@JP 
+ (0:P 
+ (0X`hpz
  ,)(;
  ... }
  /&gt;
@@ -81,8 +80,6 @@
  ;{}:
  <b>@import</b> 
  = { <proto text format> }". To set fields within it, use syntax like "
- ?InternalFieldCount@Object@v8@@QEBAHXZ
- @WindowOffScreen
  A\][H
  A^A\^][
  A^A\^][H
@@ -185,7 +182,7 @@
  volatile
  { ... };
  } from:
-!	V_iswspace
+!	V_iswdigit
 !! No context to execute within.
 !"Needs impl"
 !"Unknown movetype"
@@ -198,7 +195,6 @@
 !"You can't interpolate a text-transform"
 !"curve parameters are not defined"
 !>6'Y
-!?IsBoolean@Value@v8@@QEBA_NXZ
 !BDialogVariablesInString( pszString )
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
 !bAssert || pPanel == nullptr || pResult != nullptr
@@ -283,6 +279,7 @@
 "GetMapData"
 "GetRawRepeatedField"
 "HcV$H+
+"K)'e
 "LookupMapValue"
 "MapBegin"
 "MapEnd"
@@ -325,6 +322,7 @@
 #UI_TextEntry_CopyToClipboard
 #UI_TextEntry_CutToClipboard
 #UI_TextEntry_PasteClipboard
+$	V_iswspace
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $0  extend .$1 {
 $0  extensions $1 to $2;
@@ -369,8 +367,7 @@ $`<`uIM
 $`<`uMM
 $u"8K
 %.2f|%.2f|%.2f|%.2f
-%?IsNumber@Value@v8@@QEBA_NXZ
-%?IsObject@Value@v8@@QEBA_NXZ
+%?InternalFieldCount@Object@v8@@QEBAHXZ
 %GoU?*
 %d %d %d
 %d %d %d %d
@@ -418,8 +415,8 @@ $u"8K
 %s_Notch_%d
 %s_Right
 %sdeg
+&?IsBoolean@Value@v8@@QEBA_NXZ
 &?PPPPPPP?
-&II}Mr
 &lt;Needs a description&gt;
 &nbsp
 ',=?k
@@ -467,7 +464,6 @@ $u"8K
 (D$0D
 (D$0H
 (D$0f
-(D$@A
 (D$@D
 (D$@H
 (D$@I
@@ -485,6 +481,7 @@ $u"8K
 (D;Jh
 (E;Mh|
 (HcA H
+(I?Value@External@v8@@QEBAPEAXXZ
 (L$ H
 (L$0D
 (L$0H
@@ -492,7 +489,6 @@ $u"8K
 (L$@H
 (L$PD
 (L$PH
-(L$`D
 (L$`H
 (L$pH
 (None)
@@ -527,9 +523,6 @@ $u"8K
 (knNL
 (l$ D
 (l$@D
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (memory)
 (merge 
 (null)
@@ -582,7 +575,6 @@ $u"8K
 (|$PD
 (|$PH
 (|$PI
-(|$PL
 (|$`D
 (|$`H
 (|$`I
@@ -592,6 +584,7 @@ $u"8K
 (|$pH
 (|$pL
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
+)4?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
 )>6{1n
 )D$ A
 )D$ D
@@ -640,7 +633,6 @@ $u"8K
 )L$PD
 )L$PH
 )L$`D
-)L$`ff
 )L$pD
 )T$ D
 )T$0D
@@ -668,7 +660,7 @@ $u"8K
 )t$ I
 )t$ J
 )t$ f
-)t$ f95#N
+)t$ f95
 )t$0H
 )t$0H;
 )t$0I
@@ -694,7 +686,6 @@ $u"8K
 )t$pM
 )u"D8)t
 )|$ H
-)|$ f
 )|$0D
 )|$0H
 )|$0I
@@ -713,7 +704,8 @@ $u"8K
 )|$pN
 )|B?d!
 *.log
-*:?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VValue@v8@@@2@H@Z
+*?IsNumber@Value@v8@@QEBA_NXZ
+*?IsObject@Value@v8@@QEBA_NXZ
 *HcV$H+
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
@@ -733,10 +725,12 @@ $u"8K
 ,<ellipsis>
 ,HR>O
 ,I<%w
+,I?Value@Number@v8@@QEBANXZ
 ,W5y+
 ,X< w
 ,j.b0^2`4^6`8^:f<
--?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z
+-?IsolateFromNeverReadOnlySpaceObject@internal@v8@@YAPEAVIsolate@12@_K@Z
+-?Length@Array@v8@@QEBAIXZ
 -BH>t
 -HcS@H
 -all_languages
@@ -1205,7 +1199,6 @@ $u"8K
 .xJ>Hf
 .xdata
 .xdata$x
-/-?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 // All corners fully specified 
 // Perfect circular or elliptical panel (circular if box was square)
@@ -1226,9 +1219,8 @@ $u"8K
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 08@HP
-08@HRp"
-08@Jp
-08Bp"
+08@HRP 
+08BP 
 0;O@~
 0><[cZUg^>
 0A\_^][
@@ -1290,7 +1282,7 @@ $u"8K
 220323000000Z
 220801000000Z
 230714000000Z
-240723235933Z0/
+240801162528Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1305,27 +1297,26 @@ $u"8K
 3<$u?A
 3>N;kU
 3>fvw
+3?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
+3?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z
 3H9uot
 3mq+<
 4$u.A
 456789:;<=
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
-4u2fD9=Nj
+4u2fD9=
 5FjiT
 5butt
 5fD9%
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+6	uZ1
 6*f(_
+6?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
 6I]Dc
 6OB,n_
 70503
-7?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@IV?$Local@VValue@v8@@@2@@Z
-7?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@1@Z
-7?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
-7?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
 7H9uHt
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8 tCA
 8$u*E
 8$uFH
@@ -1334,7 +1325,7 @@ $u"8K
 80tWD
 8?u$H
 8@HP:
-8@Jp"
+8@JP 
 8@t?E3
 8@tTH
 8@tvD
@@ -1372,7 +1363,6 @@ $u"8K
 8ke?;
 8w>Hc
 8|u9H
-9	V_qsort
 9	tYH
 9)~P3
 90u(H
@@ -1456,7 +1446,7 @@ $u"8K
 9GLtdH
 9K,tIH
 9K,tVH
-9M4t;L9=#1
+9M4t;L9=C
 9M4t~H
 9M<t4H
 9M<tO;
@@ -1490,7 +1480,6 @@ $u"8K
 9{t~:3
 9{|~<3
 9|$PtHHc
-:	V_qsort_s
 : Tried to copy from a message with a different type. to: 
 : failed to parse contents
 :$t>H
@@ -1501,6 +1490,7 @@ $u"8K
 :Tu)f
 :context->%p->%s:
 :context->null->UIEngine Global:
+;	V_powf
 ;	t/H
 ;"u	@
 ;)u1D
@@ -1525,12 +1515,12 @@ $u"8K
 ;\$Pu
 ;\$p|
 ;]tHL
-;f95P
 ;q }kH
 ;t$ }yH
 ;t$\H
 ;{,}"H
 ;{ht"
+<	V_qsort
 <	u#L
 <	w	@
 <	wHH
@@ -1540,7 +1530,6 @@ $u"8K
 <$L;|$hu
 <$Ru^3
 <&t@H
-<(?Length@Array@v8@@QEBAIXZ
 <,wrH
 </%s>
 </pre>
@@ -1567,7 +1556,7 @@ $u"8K
 <`tHH
 <a href="\1\3">\1\3</a>
 <ellipsis>
-<f95)
+<f95Y
 <htl<jt\<lt4<tt$<wt
 <invalid>
 <no failure reason set>
@@ -1585,6 +1574,7 @@ $u"8K
 <{uVA
 <}t$<-t
 <}tSH
+=	V_qsort_s
 =ERCPt
 =imb;D
 =rIQU
@@ -1592,14 +1582,12 @@ $u"8K
 >-ufH
 >0<0:
 >9CDt7K
->?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z
 >HkL$0hH
 >Mp$d
 >f;D$0t
 >f;D$4t
 >fD9%
 >jtm}S
-?	V_roundf
 ?!5WOo
 ?"u	@
 ?"u	E
@@ -1658,6 +1646,7 @@ $u"8K
 ?DetachMemory@CUtlBuffer@@QEAAPEAXXZ
 ?DevMsg@@YAXPEBDZZ
 ?DisposeGlobal@api_internal@v8@@YAXPEA_K@Z
+?DragZoom
 ?E=$% B
 ?ERCPtcL
 ?EatWhiteSpace@CUtlBuffer@@QEAAXXZ
@@ -1668,7 +1657,7 @@ $u"8K
 ?EnterScopeInternalBudgetFlags@?$VProfScopeHelper@$0A@$0A@@@SAP6AXXZPEBDAEAUVProfBudgetGroupCallSite@@@Z
 ?Exit@Context@v8@@QEAAXXZ
 ?Exit@Isolate@v8@@QEAAXXZ
-?FileOpenDialogOpen
+?FileOpenDialogEntry
 ?FindKey@KeyValues@@QEAAPEAV1@PEBD_N@Z
 ?FindKey@KeyValues@@QEBAPEBV1@PEBD@Z
 ?FixSlashes@CUtlString@@QEAAXD@Z
@@ -1686,7 +1675,7 @@ $u"8K
 ?GetName@Function@v8@@QEBA?AV?$Local@VValue@v8@@@2@XZ
 ?GetName@KeyValues@@QEBAPEBDXZ
 ?GetNextKey@KeyValues@@QEAAPEAV1@XZ
-?GlobalizeReference@api_internal@v8@@YAPEA_KPEAVIsolate@internal@2@PEA_K@Z
+?GlobalizeReference@api_internal@v8@@YAPEA_KPEAVIsolate@internal@2@_K@Z
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 ?InitEmpty@CStrAutoEncode@@AEAAXXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
@@ -1750,6 +1739,7 @@ $u"8K
 @.data
 @.reloc
 @08@HPX`hpx
+@08ND
 @0HcB
 @8+t?
 @84)u
@@ -1775,6 +1765,7 @@ $u"8K
 @8}ou%E
 @8}ou/E
 @>%>b
+@?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z
 @@HcB ;B$u
 @A]A\]
 @A]A\^][
@@ -1807,7 +1798,7 @@ $u"8K
 @H9AH
 @HHcB$;B(u
 @HPX&I
-@HPX`hv
+@HPX`hv 
 @Hcq(M
 @PHcB(;B,u
 @SATAUAVAWH
@@ -1966,8 +1957,8 @@ A9E,t<H
 A9E0u
 A9E4t4H
 A9E4t7H
-A9E4t8H9-Q
-A9E4t;H9-!
+A9E4t8H9-
+A9E4t;H9-
 A9E8u
 A9E<t4H
 A9E<tYH
@@ -1992,14 +1983,14 @@ A9F8u
 A9F<tYH
 A9G0u
 A9G4t4H
-A9G4t8H95
+A9G4t8H95a
 A9G4tBH
 A9M8u
 A9M<t4H
 A9MTt<H
 A9N0u
 A9N4t4H
-A9O4t;H95
+A9O4t;H95c
 A9]8~;3
 A9]8~n3
 A9]P~B3
@@ -2035,11 +2026,8 @@ A;~ u
 A;~ |
 A>l$/
 A>pP&
-A??ToLocalEmpty@api_internal@v8@@YAXXZ
-A?Value@External@v8@@QEBAPEAXXZ
-A?Value@Number@v8@@QEBANXZ
 A@L;B
-AA: d
+AA:`^
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -2202,6 +2190,7 @@ August
 Autosuggest_Prefix_txt
 Autosuggest_Suffix_txt
 Avestan
+B	V_roundf
 B 9A tDA
 B H+P(
 B H+X(
@@ -2283,7 +2272,6 @@ C(HcK,;
 C(Lc{0
 C,9G,uP
 C,Hcs0Hc
-C-?New@External@v8@@SA?AV?$Local@VExternal@v8@@@2@PEAVIsolate@2@PEAX@Z
 C0B+L
 C0Hc	H
 C49G4u+
@@ -2343,7 +2331,6 @@ C:\buildworker\citadel_rel_win64\build\src\panorama\uiengineclient.cpp
 C:\buildworker\citadel_rel_win64\build\src\panorama\uievent.cpp
 C:\buildworker\citadel_rel_win64\build\src\panorama\uifileresource.cpp
 C:\buildworker\citadel_rel_win64\build\src\panoramauiclient\panoramauiclient.cpp
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\panorama\controls\panel2d.h
 C:\buildworker\citadel_rel_win64\build\src\public\panorama\controls\textentry.h
 C:\buildworker\citadel_rel_win64\build\src\public\panorama\layout\uilength.h
@@ -2499,11 +2486,6 @@ CMoviePanel::Clear
 CMoviePanel::Paint
 CMoviePlayer::UpdateTimeline: percent=%f, remaining=%f
 COMMIT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPH+GPy
 CPPTYPE_BOOL
 CPPTYPE_DOUBLE
@@ -2820,7 +2802,6 @@ ConsoleTextCopySelected
 ConsoleTextRightClickMenu
 ConsoleTextSaveToLog
 ConsoleTextSelectAll
-Construction is only allowed from the resolve function
 Content Height
 Content Panel Scroll X
 Content Panel Scroll Y
@@ -2877,7 +2858,6 @@ Cypriot
 Cyrillic
 C|$pH
 C|$xL
-D	V_sincosf
 D W?{W
 D!l$xA
 D$ 	I
@@ -3042,14 +3022,11 @@ D$xH+
 D$xLc
 D$xM+
 D$xf;
-D&+TP
 D+3L9c0u	
 D+A@H
-D0?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
 D8 uhL
 D8(tLH
 D8)u#L
-D8-G"
 D8.uBH
 D80t@
 D81uUL9r
@@ -3213,7 +3190,6 @@ DeletePanel
 DeleteRowButton
 DeleteVideoPlayer
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DescriptorProto
 DescriptorProtosH
 Deseret
@@ -3259,7 +3235,6 @@ DragScrollZoneHorizontal
 DragScrollZoneVertical
 DragScrolling
 DragStart
-DragZoom
 DragZoom attempted to layout panel more than 10 times. Probably caused by panel content no height or width.
 DragZoomContentPanel
 DragZoomFastTransition
@@ -3300,6 +3275,7 @@ E;N }2Mc
 E;u u
 E;~ u
 E>nEA
+E?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z
 EAnimationTimingFunction
 EBackgroundRepeat
 ED8FD
@@ -3325,6 +3301,7 @@ ETextTransform
 ETextTransformToEStringTransformStyle
 EXPERIMENTAL: Sets a more-complex brush for the entire border paint area (ignores normal border color).<br><br><b>Examples:</b><pre>border-brush: gradient( linear, 0% 0%, 0% 100%, from( #fbfbfbff ), to( #c0c0c0c0 ) );
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EdgeScrollBar
 EdgeScrollButton
@@ -3408,6 +3385,7 @@ F(Hck
 F4A;G4u
 F89HXtRA
 F>qUxv
+F?ToString@Value@v8@@QEBA?AV?$MaybeLocal@VString@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 FATAL
 FATAL ERROR: unable to register all schema data: %s
 FDA+F<;
@@ -3471,11 +3449,11 @@ FileOpenDialog
 FileOpenDialogCancel
 FileOpenDialogClose
 FileOpenDialogDoubleClickFile
-FileOpenDialogEntry
 FileOpenDialogFilesSelected
 FileOpenDialogFilterChanged
 FileOpenDialogFolderUp
 FileOpenDialogFullPathChanged
+FileOpenDialogOpen
 FileOpenDialogSelectFile
 FileOpenDialogSortByColumn
 FileOptions
@@ -3526,6 +3504,7 @@ FreeLibrary
 Friday
 FuHcu
 Fullscreen
+G	V_sincosf
 G 8C u
 G 9C 
 G 9C u
@@ -3544,7 +3523,7 @@ G$9C$u7H
 G(9C(u 
 G(9C(u2
 G(9C(uC
-G(f95<
+G(f95
 G,9C,u
 G,9C,u]
 G09C0u
@@ -3556,7 +3535,6 @@ G98C9u&
 G<9C<u~H
 G@9GLH
 G@L;D$hu
-GD!a=
 GD$(H
 GD$hH
 GHL9d
@@ -3590,7 +3568,6 @@ GetAttributeInt
 GetAttributeString
 GetAttributeUInt32
 GetBool
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCStringCharConversion
@@ -3824,7 +3801,6 @@ H;{Pt,H
 H;{X~
 H;}0t
 H;~ r
-H??ToNumber@Value@v8@@QEBA?AV?$MaybeLocal@VNumber@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 HA\^][
 HA\_^[
 HA^A]A\_^]
@@ -4019,7 +3995,6 @@ HorizontalScrollThumb
 HorizontalSplitter
 HostStateMgr001
 HtmlUserAgent
-I	V_snprintf
 I#I0H
 I#J0H
 I#M0H
@@ -4134,7 +4109,6 @@ InsertRowButton
 InspectButton
 InstallSchemaBindings
 Integer out of range (
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 InterlockedPushEntrySList
 Internal failure creating panel in panorama
@@ -4210,7 +4184,6 @@ K&>.yC
 K(HcC,Hc
 K,+3A;
 K,HcC0;
-K-?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z
 K0HcQ
 K89q4u'
 K8D9q4u
@@ -4232,6 +4205,7 @@ Khmer
 Kwvt,
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!l$pH
 L!|$(L!
@@ -4402,7 +4376,6 @@ LITE_RUNTIME
 LOG_CONSOLE
 LOG_GENERAL
 LT_txt
-L[	P^
 Label
 Label '%s': Assigning non-localization string "%s" via SetLocalizationString
 LabelHREF
@@ -4681,10 +4654,8 @@ NumberEntryChanged
 NumberEntryDecrementValue
 NumberEntryIncrementValue
 Numbers starting with leading zero must be in octal.
-O	V_sscanf
 O$M9o
 O0+W8
-O8)]S
 OF>;^
 OH+WP
 OPQRSTUVWXYZ[\]F^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^_^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^`abbbbbbbbcddefghijklmn
@@ -4711,15 +4682,14 @@ Option field "
 Option must have a name.
 Option must not use reserved name "uninterpreted_option".
 Option_%d
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Oriya
 Osmanya
 OverMaxPips
 P(9G<H
 P(A9F<I
-P08@Jp
+P08@J
+P08JP
+P08ND
 P09G@
 P0A9F@A
 P8D:8
@@ -4804,7 +4774,6 @@ Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.cr
 PhysicsBuilderMgr001
 Picked
 PlaceholderText
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
@@ -4856,6 +4825,8 @@ Q@9QL}
 QD9QL~
 Qu.fff
 QueryPerformanceCounter
+R	V_sscanf
+R@8=ZR
 RA+B(
 RBLegend
 RHH;C(t
@@ -5295,7 +5266,6 @@ Symbol name "
 Synthetic oneofs must be after all other oneofs
 Syriac
 SystemInputLanguageChanged
-T	V_stricmp_fast
 T$ E3
 T$ H+
 T$ H;
@@ -5495,7 +5465,6 @@ UATAUAVAWH
 UATAVH
 UAUAVH
 UAVAWH
-UD8%n
 UHH;UPt
 UIEngine()
 UIEngine()->GetCurrentFrameTime() >= m_flLastMotion - 1.0f
@@ -5587,7 +5556,6 @@ UsingCompositionLayer
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_strlower_fast
 V0H;V8t
 V6E>`"(5
 V8ParamToPanoramaType expected IUIPanel object to convert, but got some other invalid object
@@ -5668,7 +5636,6 @@ V_atofloat32
 V_atoi
 V_atoi64
 V_atoui64
-V_fmodf
 V_strcmp( pRow->GetID(), "PropRow" ) == 0
 V_stristr_fast( m_strSource.String(), "://" ) != nullptr
 V_~]	,
@@ -5711,6 +5678,7 @@ VolumeControl
 VolumeSliderPopup
 VolumeSliderValueChanged
 Vrad3_001
+W	V_stricmp_fast
 WARNING
 WATAUAVAWH
 WATAVH
@@ -5732,6 +5700,7 @@ WindowCursorShown
 WindowGotFocus
 WindowHidden
 WindowLostFocus
+WindowOffScreen
 WindowOnScreen
 WindowShown
 WorldRendererMgr001
@@ -5740,6 +5709,7 @@ WriteConsoleW
 WriteFile
 X @8u
 X D8e
+X UATAUAVAWH
 X UVWATAUAVAWH
 XA^A]^]
 XA^A]_^][
@@ -5756,7 +5726,7 @@ XL$LH
 XL6$I
 XT$P@8
 X_^[]
-X`hrp"
+X`hrP 
 XfD;\
 XfD;|
 Xl$hH
@@ -5765,15 +5735,13 @@ Xt$hH
 Xt$xA;
 X|$|A;
 X}tA;
+Y	V_strlower_fast
 Y0HcR
-Y5Y;	
 Y9"SD
-Y=:1	
 Y>kX>M
 YD$@f
 Y_txt
 You can't interpolate a layout-position
-Z	V_strtod
 ZP~IIc
 Z\>z8
 Zod(^?
@@ -5782,6 +5750,7 @@ Zod(^?
 [K]taM?
 [`fff
 [aOni*{
+[f95*
 [lazy = true] can only be specified for submessage fields.
 [object@%p]
 [packed = true] can only be specified for repeated primitive fields.
@@ -5880,7 +5849,6 @@ Zod(^?
 \$pI+
 \$|;qX
 \$|E3
-\??ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 \C not allowed in lookbehind assertion
 \K4v-A
 \L$<H
@@ -5910,7 +5878,6 @@ Zod(^?
 \p{Xsp}
 \p{Xwd}
 \t$Pf
-\t$TL
 \t$XH
 \t$XI
 \t$`H
@@ -5922,13 +5889,13 @@ Zod(^?
 \|$HH
 \|$TH
 \|$XA
+]	V_strtod
 ] is an invalid data character in JavaScript compatibility mode
 ])6M>&
 ]0H;w0t!H
 ]>)2X
 ]J<0"0i3
 ]XD;]
-^	V_strupper_fast
 ^,tyI
 ^<V7w
 ^RfN>
@@ -5937,9 +5904,7 @@ Zod(^?
 ^fD;]
 ^u+fff
 _ ;_$t
-_"5#8
 _(H;u0t!H
-_-?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z
 _0HcC
 _8I;_@tj
 _8M9g(u\
@@ -5974,6 +5939,7 @@ _oD>Kg
 ` UAVAWH
 `+!]?
 `.rdata
+`3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
 `A]_[
 `A^_[
 `A^_^
@@ -5987,6 +5953,7 @@ _oD>Kg
 `A_A^_^[
 `A_A^_^]
 `A__^][H
+`F?ToLocalEmpty@api_internal@v8@@YAXXZ
 `RTTI
 `_^[H
 `adjustor{
@@ -6038,9 +6005,8 @@ _oD>Kg
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
-a	V_tanf
+a	V_strupper_fast
 a numbered reference must not be zero
-a-?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 about:blank
@@ -6311,6 +6277,7 @@ curFilter[0] == '*' && curFilter[1] == '.'
 current_item
 cycle_class
 cycle_classes
+d	V_tanf
 d$ ;3}&M
 d$ A81
 d$ D!
@@ -6408,7 +6375,6 @@ dragclickzone
 dropdownbodyposition
 dwgIc
 e A_A^]
-e*9s=
 e+000
 e0A_A^A]A\]
 eFlowDirection == k_EFlowNone
@@ -6451,10 +6417,15 @@ f9)u4H9j
 f9)u:H
 f9,Ju
 f9,~u
-f9-9{
-f9-O>
-f95Su
-f95ng
+f9-)_
+f9-6"
+f9-Wg
+f9-o"
+f95!2
+f95!J
+f959L
+f95YJ
+f95bZ
 f9<Ju
 f9Exu#H
 f9Q(u
@@ -6490,24 +6461,25 @@ fD9!H
 fD9!u
 fD9$Hu
 fD9%1
+fD9%H]
 fD9%U
 fD9%^
-fD9%ti
 fD9'u
 fD9,Au
 fD9,pu
-fD9- 
-fD9-p
+fD9-Y
 fD91uTL9r
 fD94Au
 fD94H}aD
 fD94Q}
 fD94iu
-fD95(
-fD95y
+fD95Mz
+fD95]w
 fD98@
 fD98u
 fD9;u
+fD9=7G
+fD9=cF
 fD9t$b
 fE9,Fu
 fE98t'
@@ -6592,6 +6564,7 @@ framewidth
 frexp
 fuchsia
 function not supported
+gF?ToNumber@Value@v8@@QEBA?AV?$MaybeLocal@VNumber@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 g_iStylePropertyIndexNextFree < 255
 g_pCVar
 g_pPanoramaUIEngine
@@ -6666,7 +6639,6 @@ http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
 https://
 hue-rotation
-h{xcJ
 iChildIndex <= m_pPanel->GetChildCount()
 iChildIndex >= 0
 iL97u
@@ -6730,8 +6702,8 @@ itemstoscroll
 itemwidth
 iu+-,
 ivory
-j&N?Q
 j>>A?1
+j>?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@IV?$Local@VValue@v8@@@2@@Z
 j?V()
 j?{$*
 java_generate_equals_and_hash
@@ -6748,6 +6720,7 @@ jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 justify
 justify-letter-spacing
 k0i0$
+k>?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@1@Z
 kL@8o(u
 keyboard
 khaki
@@ -6819,7 +6792,7 @@ l$pE3
 l$pM+
 l$pM;
 l$pu5M
-l$pu9H
+l$pu?H
 l$x@2
 l$xM+
 l$xtV
@@ -7055,7 +7028,6 @@ numeric
 numericpassword
 nv<fA
 o"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""pqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr^^stuvwwxyz{|}~
-o??ToString@Value@v8@@QEBA?AV?$MaybeLocal@VString@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 o@A;?
 oI>O7
 objc_class_prefix
@@ -7126,11 +7098,11 @@ overflow: squish scroll; // scrolls contents in the Y direction</pre>
 owner dead
 o|$0f
 p WATAUAVAWH
-p WAVAWH
 p*W4H
-p08@H^
+p08@H^D
 p0R^G'
 p;Y>u
+p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
 p@HPX`h
 pA;>|
 pA\_^[]
@@ -7157,7 +7129,6 @@ pInfo
 pInputFocus->GetPanelType() == CLabel::GetPanelSymbol() && pInputFocus->GetParent() == this
 pItem
 pLeftMargin
-pMemory[i] == 0
 pName
 pName && pValue
 pNewRow
@@ -7545,7 +7516,6 @@ r	Vr.>T
 r!fff
 r"fff
 r$;3|
-r'?IsolateFromNeverReadOnlySpaceObject@internal@v8@@YAPEAVIsolate@12@_K@Z
 r7f;\$|
 r:f;\$|
 rKf;\$t
@@ -7606,12 +7576,14 @@ s AWH
 s WATAUAVAWH
 s WAVAWH
 s"fff
+s0D8k0u
 s2r://
 s7fff
 s8HcCP
 s>fff
 sPHcCh
 sXA96t
+s_LJ~
 s_nConnectionCount > 0
 s_nRegistrationCount < V_ARRAYSIZE(s_pConnectionRegistration)
 s_nResourceFCRegisteredCount > 0
@@ -7770,7 +7742,6 @@ t	D8't
 t	D9&t
 t	Hcp
 t	f95
-t	f95U
 t D8h
 t D9A
 t H;}
@@ -7879,7 +7850,7 @@ t$`td
 t$d@2
 t$dL9b u
 t$f95
-t$f95We
+t$f957
 t$hA8
 t$huY
 t$pE3
@@ -7908,22 +7879,21 @@ t1<.up
 t4I92u/M
 t5A9>t
 t6H95
-t6H957!
-t6H95Y 
-t6f95
+t6H95	
+t6f955Z
 t7HcP
-t7L9%
+t7L9% 
 t8IcD$
-t8f95
+t8f95Y2
 t9D8 t4L
-t:L9%T
+t:L9%
 t;<,uKH
 t;HcB
 t;LcF
 t<HcE
 t=f95
 t?HcS
-t@f9=|*
+t@f9=<
 tEHcR
 tIHcA
 tIHcC
@@ -7935,7 +7905,7 @@ tRLcY
 tSf91tNH
 tTA8~TtNA
 tU;\$0tH
-tUH95
+tUH95i
 tUH99uPL
 tUvS@2
 tV@8/tQ@8
@@ -8086,7 +8056,8 @@ u.H;P
 u/f9-
 u1!D$0H
 u1fff
-u2fD9%
+u2fD9%_[
+u3?New@External@v8@@SA?AV?$Local@VExternal@v8@@@2@PEAVIsolate@2@PEAX@Z
 u3HcH<H
 u4D9v
 u4I9}(
@@ -8246,17 +8217,18 @@ x_^][
 xdigit
 x~HcC
 y-offset
+y>?SetAccessor@ObjectTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@ZP6AX0V?$Local@VValue@v8@@@2@AEBV?$PropertyCallbackInfo@X@2@@Z3W4AccessControl@2@W4PropertyAttribute@2@W4SideEffectType@2@8@Z
 y\PD>!
 yellow
 yellowgreen
 yxxxxxxxH
-y|=T,
 z :"U
 z-index
 z-offset
 zDDebugPanelParents
 zY;>u:m	
 zoomwithuiscale
+zuL2\
 { AUAVAWH
 { AVH
 {,D+{HD+
@@ -8393,6 +8365,7 @@ zoomwithuiscale
 |$xL;
 |$xcH
 |)L9c
+|F?ToObject@Value@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z
 |Lu?c
 |b=})>
 |c;K(t^A
@@ -8402,6 +8375,7 @@ zoomwithuiscale
 }0HcC
 }1;C$
 }3;_$
+}3?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z
 }:;_$
 }LuHO
 }fMcU,M

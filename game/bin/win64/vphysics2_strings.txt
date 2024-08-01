@@ -1,5 +1,4 @@
 																
-		V_fseek
 		cfFF                      - collision function mask
 		client                    - draw client world(s)
 		debugName substring       - filter by substring in debug name
@@ -23,14 +22,15 @@
 	6p7M
 	6p7MOf
 	<SuuA
-	E;<$
+	V_fmodf
+	V_fopenUTF8
 	V_fread
 	V_frexpf
+	V_fseek
 	V_fseeki64
 	V_ftell
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_StringAfterPrefix
 	_V_StringAfterPrefixCaseSensitive
 	_V_strncat
@@ -74,7 +74,6 @@
  <font color="red">Query</font>(
  = %d
  @:Fq@L
- ACovMatrix3
  A\_[
  A]A\_^[
  A]_^][
@@ -118,6 +117,7 @@
  A_^[
  A__]
  A__^
+ AnVertexNode
  Base Class Array'
  Base Class Descriptor at (
  Bodies/Shapes - Static(%i/%i) Dynamic(%i/%i) Keyframed(%i/%i)
@@ -170,7 +170,6 @@
 !"Contact lost without ever having been found"
 !"Deprecated, please use CollisionProp()->(Disable|Enable)AllCollisions()\n"
 !"Invalid Rbf Function Specified"
-!"Invalid joint type"
 !"Not found"
 !"Not implemented"
 !"Open edge found - probably a topology bug"
@@ -195,7 +194,6 @@
 !IsInternalTypeShortArray( Internal_Type() )
 !IsValid()
 !bHasTriangleMaterials || pMesh->GetTriangleCount() == pMesh->GetMaterialCount()
-!bLooksLikeABug
 !bNeedNewMappingMarker
 !bOverlap || Distance( vPoint1, vPoint2 ) < FLT_EPSILON
 !bOverlap || out.m_flDistance < LINEAR_SLOP
@@ -225,6 +223,7 @@
 !m_pShadowController
 !m_pVehicle2
 !m_pWorld->GetDebugRecordFlags()
+!m_pWorld->IsInAsyncPostTickPhase()
 !m_pWorld->m_SoftbodyEffects.Has( this )
 !manifold.Empty()
 !multilist || ML
@@ -276,6 +275,7 @@ $ILcp
 $tIFeetSettings
 $tIs1
 %.3f behind, %d nodes, FeModel %s bytes, %s
+%.kyFI
 %02X%02X\
 %14s %-30s[%u]%s
 %;}hr
@@ -300,6 +300,8 @@ $tIs1
 %s (%d)
 %s (Color)
 %s (Material)
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s 0x%llX
 %s 0x%llX - 0x%llX, except %s
 %s F=%d V=%d hE=%d
@@ -333,8 +335,6 @@ $tIs1
 'wMHc
 ( + %d more)
 ( Face( pEdge->m_Face ) != NULL ) || ( bAssert == false )
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetNumVertices() + nNumVertices ) <= m_Vertices.MaxCount()
 ( bFoundOpposite ) || ( bAssert == false )
 ( const void * ) &other != ( const void * ) this
@@ -351,9 +351,9 @@ $tIs1
 ( m_nFreeListHead == s_InvalidReferenceIndex ) || ( m_nFreeListHead < (ReferenceIndex_t)m_ReferenceTable.Count() )
 ( m_nIndexIncrement == 0 ) || ( m_nIndexCount < m_nMaxIndexCount )
 ( m_nVertexIncrement == 0 ) || ( m_nVertexCount + nNumVertices <= m_nMaxVertexCount )
+( nFileFlags & VSymbolDebugFileFlag_ForPrefixMatch ) == 0
+( nFileFlags & VSymbolDebugFileFlag_TrySubpaths ) == 0
 ( nFlags & KEYVALUES3_AS_STRING_APPEND ) == 0
-( nOpenFlags & k_EDwarfOpen_PrefixMatch ) == 0
-( nOpenFlags & k_EDwarfOpen_TrySubpaths ) == 0
 ( nParticle + 1 ) * s_nDebugParticleTrail <= m_DebugFlowParticles.Count()
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
 ( pEdge->m_Face != INVALID_MESH_COMPONENT ) || ( pOppositeEdge->m_Face != INVALID_MESH_COMPONENT ) || ( bAssert == false )
@@ -372,25 +372,24 @@ $tIs1
 ( pVertex->m_Edge == hEdge ) || ( pVertex->m_Edge == INVALID_MESH_COMPONENT )
 ( vChildAnchor - vParentAnchor ).Length() < 0.001f
 ( vNormal - vNormalOnHull * flDistance ).Length() < 0.001f
+(%&D$
 (%.4g,%.4g)
+(%9w;
+(%SV1
 (%d,%d)
-(%jz/
-(%s];
-(%v_;
-(-B{/
-(-F<1
-(-RN1
-(-i(;
-(-iE1
-(50p"
-(5Yz/
-(5hq/
+(-"W1
+(-(}2
+(-9N1
+(-_)#
+(-bb1
+(-|=1
+(5:+#
+(5SC;
+(5g*#
+(5oy&
 (;^ |
-(=2z/
-(=Ir/
-(=R/1
-(=fp/
-(=|N1
+(="81
+(=LW1
 (A;)A
 (A\^][
 (A]A\^[
@@ -409,11 +408,12 @@ $tIs1
 (A_A]A\^
 (A_A]A\_
 (A_A^
+(A_A^A\[
 (A_A^A\]
 (A_A^A]A\_^][
 (A_A^A]]
 (A_A^_[
-(B;\'
+(B;|&
 (D$ A
 (D$ E
 (D$ H
@@ -439,6 +439,7 @@ $tIs1
 (D$PL
 (D$`D
 (D$pA
+(D$pD
 (D$pF
 (D$pH
 (D$pL
@@ -461,6 +462,7 @@ $tIs1
 (L$PA
 (L$PD
 (L$PH
+(L$PL
 (L$`D
 (L$`F
 (L$`H
@@ -572,9 +574,6 @@ $tIs1
 (l$pI
 (l$pL
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (nTotalTrianglesRemaining % 3) == 0
 (nTrianglesRemoved % 3) == 0
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
@@ -660,6 +659,7 @@ $tIs1
 );}hr
 )<$E3
 )<$Hc
+)<$Mc
 )<$fD
 )>6{1n
 )D$ 3
@@ -739,7 +739,6 @@ $tIs1
 )L$PC
 )L$PD
 )L$PH
-)L$PH;n t
 )L$PL9A 
 )L$Pf
 )L$`D
@@ -985,7 +984,6 @@ $tIs1
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 , Fully Rigid
 ,/<-w
 ,0<	w&H
@@ -1169,6 +1167,8 @@ $tIs1
 .gnu_debuglink
 .gnu_debuglink doesn't have a filename
 .gnu_debuglink doesn't have string terminator
+.hDt<
+.iDt>
 .idata$2
 .idata$3
 .idata$4
@@ -1206,11 +1206,14 @@ $tIs1
 .xJ>Hf
 .xdata
 .xdata$x
-/%.$#
+/	V_logf
+/%64#
+/%QA 
 /%u.rnsave
-/5H8>
+/5H,:
 /6sRH
-/=x# 
+/= 3 
+/=tn	
 />58d%
 /@Hs?
 /@Ls{
@@ -1227,7 +1230,6 @@ $tIs1
 /D$Ds
 /D$Dv
 /D$Hs
-/E&&?
 /HcM8
 /SPrX
 /SPvB
@@ -1304,7 +1306,6 @@ $tIs1
 0w0c1
 0x%08X 
 0}0i1
-1	V_modff
 1.2.11
 130801120000Z
 1<.	/>:
@@ -1316,7 +1317,7 @@ $tIs1
 220323000000Z
 220801000000Z
 230714000000Z
-240723235156Z0/
+240801162334Z0/
 241009235959Z0a1
 2<iu	H
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1341,6 +1342,7 @@ $tIs1
 3L91t
 3YA1H
 3mq+<
+4	V_modff
 4;tJC
 4@HcG
 4@KcD
@@ -1369,7 +1371,6 @@ $tIs1
 7L#6H
 7YA1H
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8/t[H
 8A\^][
 8A\_[]
@@ -1399,7 +1400,6 @@ $tIs1
 8YA1H
 8_u	H
 8nu	H
-9	V_qsort
 9)~P3
 9*tsD
 97~2H
@@ -1451,7 +1451,7 @@ $tIs1
 9\$H~CH
 9]0~JH
 9^8~0A
-9^P~#3
+9^P~*3
 9_0~%H
 9_0~1
 9_0~aL
@@ -1517,17 +1517,19 @@ $tIs1
 9~8~NH
 9~PE3
 9~xv1
-:	V_qsort_s
+:!-k4
 :!L$ 0
 :!d$L0
 :!|$ 0E
 :!}g0
 ::string literal
 ::{ default arg#
+:TB*C
 :YA1H
+;	V_powf
 ; tris:
 ;"><b>Trigger</b> Touch
-;-FR=
+;-vY=
 ;3}%H
 ;?0123456789:;<=>?
 ;C(s(I
@@ -1555,6 +1557,7 @@ $tIs1
 ;|$0~
 ;|$H|
 ;|$P|
+<	V_qsort
 <	u%H
 <	u)Icn
 <	u4H
@@ -1643,6 +1646,7 @@ $tIs1
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
+=	V_qsort_s
 =%H5<mN
 ==MQ?
 =CFootDefinition
@@ -1760,7 +1764,6 @@ $tIs1
 ?InternalPop@CTSListBase@@AEAAPEAUTSLNodeBase_t@@XZ
 ?InternalPush@CTSListBase@@AEAAXPEAUTSLNodeBase_t@@@Z
 ?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
-?JFUJO
 ?L9Q t
 ?LoadKV3@@YA_NPEAVCKeyValues3Context@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBD@Z
 ?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBD@Z
@@ -1950,7 +1953,6 @@ $tIs1
 @SWAVAWH
 @SWAVH
 @SWAWH
-@SiA 
 @UATAUAVAWH
 @UATAUAVH
 @UATAVAWH
@@ -2111,10 +2113,13 @@ AVAWH
 AXB9L
 AXD9D
 AZ8G*
+A\_[]
 A\_^[]
 A\_^][
 A]A\[
+A]A\[]
 A]A\][
+A]A\^[
 A]A\^[]
 A]A\^]
 A]A\_
@@ -2190,6 +2195,7 @@ A_A^A\_^[]H
 A_A^A]
 A_A^A]A\[
 A_A^A]A\]
+A_A^A]A\^]
 A_A^A]A\^][
 A_A^A]A\_
 A_A^A]A\_^[
@@ -2225,7 +2231,6 @@ AddAnimationAttraction
 AddGoalAttraction
 AddPtrAssociation
 Address range refers to non-existent CU at 0x%llx
-AdoBj
 Agg data %d: %p (%d parts, crc 0x%08X)
 Aggregate Count
 AhD9T
@@ -2349,6 +2354,7 @@ BakedLODBuilderMgr001
 BaseJointSave_t
 Bellevue1
 BenchmarkService001
+Bevel Gear
 BhD9D
 BhHcBH
 BinaryProperties_GetValue
@@ -2469,7 +2475,6 @@ C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
 C:\buildworker\citadel_rel_win64\build\src\public\meshutils\halfedgecomponentlist.h
 C:\buildworker\citadel_rel_win64\build\src\public\meshutils\halfedgemesh.h
 C:\buildworker\citadel_rel_win64\build\src\public\meshutils\hullivr.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\physicslib\femodel_utils.h
 C:\buildworker\citadel_rel_win64\build\src\public\physicslib\physaggregatedata.h
 C:\buildworker\citadel_rel_win64\build\src\public\physicslib\serialize.h
@@ -2680,7 +2685,7 @@ CBoneConstraintPoseSpaceMorph::KV3TransferLoad_Impl
 CBoneConstraintPoseSpaceMorph::KV3Transfer_DefaultKeys_Impl
 CBoneConstraintPoseSpaceMorph::Schema_VerifyBindingIsRegistered
 CBoneConstraintPoseSpaceMorph::SetRbfType::<lambda_1>::operator ()
-CBroadphase::Update(), C:\buildworker\citadel_rel_win64\build\src\rubikon\broadphase.inl:157
+CBroadphase::Update(), C:\buildworker\citadel_rel_win64\build\src\rubikon\broadphase.inl:158
 CBufferStrider: new buffer placement is out of bounds!
 CBufferStrider::Validate
 CByteswap::SwapBufferToTargetEndian
@@ -3080,11 +3085,6 @@ CNameIndex::ReleaseNameByIndex
 CONICAL_JOINT
 CONTENTS_SOLID
 CONTENTS_SOLID_NO_BLOCK_LOS
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 COrientConstraint
 COrientConstraint::KV3TransferLoad_Impl
 COrientConstraint::KV3Transfer_DefaultKeys_Impl
@@ -3143,7 +3143,6 @@ CPhysicsBody::BecomeTrigger
 CPhysicsBody::CPhysicsBody
 CPhysicsBody::CalculateAngularDrag
 CPhysicsBody::CalculateLinearDrag
-CPhysicsBody::ConnectShadowController
 CPhysicsBody::CreateShadowController
 CPhysicsBody::EnableCollisions
 CPhysicsBody::GetSphereRadius
@@ -4148,6 +4147,9 @@ CUtlMemory<struct PhysicsHullDef_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct PhysicsMeshDef_t,int>::Grow
 CUtlMemory<struct PhysicsMeshDef_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct PhysicsMeshDef_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct PhysicsNullJointDef_t,int>::Grow
+CUtlMemory<struct PhysicsNullJointDef_t,int>::Grow::<lambda_1>::operator ()
+CUtlMemory<struct PhysicsNullJointDef_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct PhysicsPrismaticJointDef_t,int>::Grow
 CUtlMemory<struct PhysicsPrismaticJointDef_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct PhysicsPrismaticJointDef_t,int>::Grow::<lambda_2>::operator ()
@@ -4472,7 +4474,9 @@ CVPhys2World::CastBoxSingleBody
 CVPhys2World::CastRaySingleBody
 CVPhys2World::CastSphereSingleBody
 CVPhys2World::CreateAggregateInstance
+CVPhys2World::CreateMotionController
 CVPhys2World::CreatePrismaticConstraint
+CVPhys2World::DestroyMotionController
 CVPhys2World::GenerateIntersectionNotifications
 CVPhys2World::RecordTraces
 CVPhys2World::RemoveBody
@@ -4607,8 +4611,8 @@ ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
 ConditionallySolid
 Conflicting range base values given for compile_unit
+Conical
 ConstructMeshFromConvex
-Construction is only allowed from the resolve function
 Constructor/destructor index ('%c%c') out of range
 Constructor/destructor name extraction failed
 Contacts: %d (%d)
@@ -4624,6 +4628,7 @@ Could not create phys debug VB for %d elements
 Could not lock phys debug IB for %d elements
 Could not lock phys debug VB for %d elements
 Couldn't load KV3 for resource: %s
+CovMatrix3
 CovMatrix3::KV3Transfer_DefaultKeys_Impl
 CovMatrix3::Schema_VerifyBindingIsRegistered
 CpHcQ
@@ -4640,9 +4645,7 @@ CriticallyDampedSpring
 CriticallyDampedSpring: negative timestep supplied.
 CullVertices
 Currently allocated agg data: {
-Cx1]5
 CxH94
-D	V_sincosf
 D	`H;
 D	`M;
 D!l$xA
@@ -4664,6 +4667,7 @@ D$ 7*
 D$ 8vIML
 D$ 9:
 D$ ;E
+D$ ;F
 D$ ;G
 D$ ?*
 D$ A;
@@ -4679,6 +4683,7 @@ D$ H+
 D$ H.
 D$ H9A`u
 D$ H;
+D$ Hc
 D$ HcoH
 D$ Hi
 D$ I+
@@ -4882,7 +4887,6 @@ D$XH;
 D$XKcD
 D$XLc
 D$XM;
-D$Xts
 D$Xtv
 D$`A;
 D$`A;<$tv
@@ -4891,6 +4895,7 @@ D$`E3
 D$`H;
 D$`HcL$hI
 D$`fD
+D$`v%D
 D$`|R
 D$hE3
 D$hH;
@@ -4981,14 +4986,17 @@ D9t$Hu
 D9t$Pu
 D9t$hu
 D9t$xu
+D9w t
 D9w0u*H
 D9x`~z
 D9y t
 D9{(v 
 D9|$Pu
-D;%=9
 D;&s0I
+D;-\<
 D;/}ZH
+D;5L3
+D;=r6
 D;@0|
 D;@HcH I
 D;@H|
@@ -5073,6 +5081,7 @@ DAvfF
 DAxfF
 DAzfF
 DA|fF
+DKPV<
 DNnW'
 DOT_TO_MORPH
 DWARF
@@ -5115,7 +5124,6 @@ Decompression failed, %d
 Default
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DestroyDebugSceneObject: pSceneObject ( %p ) has already been deleted!
 Det( mLocalInertia ) > 0
 DevMsg
@@ -5150,6 +5158,7 @@ DynamicMeshDeformParams_t::KV3Transfer_DefaultKeys_Impl
 DynamicMeshDeformParams_t::Schema_VerifyBindingIsRegistered
 E 9E@u
 E H9H
+E(IcD$
 E),$H
 E,Icu
 E0D9D
@@ -5203,6 +5212,7 @@ EX;H$
 EXD9L
 EXIc8A;
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 Edge( Edge( hOpenEdgeA )->m_OppositeEdge )->m_Vertex == hVertexA
 Edge( Edge( hOpenEdgeB )->m_OppositeEdge )->m_Vertex == hVertexB
@@ -5422,7 +5432,6 @@ Ex9p
 Excluded flags: No interaction allowed because
 ExitProcess
 ExternalNameForInternalType
-F	V_sinf
 F 9F@u
 F A9F@u
 F H9H
@@ -5760,6 +5769,7 @@ FourVectors2D::Schema_VerifyBindingIsRegistered
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+G	V_sincosf
 G 9G@u
 G 9] |KH
 G D8w
@@ -5779,11 +5789,10 @@ G0Ic^HA;^Xu
 G4D9u
 G8$.u
 G<I9n v
-GD$(A
-GD$(D
 GD$(H
 GD$83
 GD$8A
+GD$8D
 GD$8H
 GD$8L
 GD$8M
@@ -5801,17 +5810,17 @@ GENERIC_JOINT
 GEOVH
 GHHcD$ I
 GHHcK
-GL$(3
+GJCW4
 GL$(A
-GL$(E3
 GL$83
+GL$8E3
 GL$8H
 GL$8L
 GL$H3
 GL$XH
 GL$XL
 GL$hE
-GP9h`tQA
+GP9hptQA
 GT$(A
 GT$8H
 GT$@A
@@ -5823,9 +5832,9 @@ GT$hH
 GT$hHi
 GT$pH
 GXD9D
-G\$(E3
 G\$(L
 G\$0L
+G\$8E3
 G\$8H
 G\$8L
 G\$8M
@@ -5840,12 +5849,12 @@ G`Mc.
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
+Generic
 GetACP
 GetAcquiredMask() & ( 1ull << nIndex )
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
 GetBody1()->m_nBodyFlags & BODY_FLAG_IS_WHEEL && GetShape2()->GetType() == SHAPE_MESH
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -5905,6 +5914,7 @@ G|$HL
 G|$h3
 G|333?H
 H	{H3
+H SVATAUH
 H SWH
 H UAVAWH
 H USVWAVAWH
@@ -5929,18 +5939,15 @@ H8Hc@0H
 H8I;I8r
 H9(tO
 H9(t^H9h
-H9-E5B
 H9.twH
-H95&/=
-H951.=
-H95w`A
+H95&8=
+H9517=
+H95gfA
 H97u+A
 H98t2
 H98t5
-H9=0AD
-H9=KAD
-H9=i@D
-H9=zJB
+H9=`MD
+H9={MD
 H9A(t
 H9A`u2I
 H9B8s
@@ -5995,6 +6002,7 @@ H;\$PsFE3
 H;]P}
 H;]Xt
 H;l$p
+H;n t
 H;t$h
 H;xXu5
 H;{Ht
@@ -6008,6 +6016,7 @@ HA^A]_^][
 HA_A^A\[
 HA_A^A]A\_^[]
 HA__[]
+HB(d?
 HELPER_BONE
 HH:mm:ss
 HHcA8L
@@ -6110,6 +6119,7 @@ HcS(H
 HcS0H
 HcT$XH
 HcT$hH
+HcT$pH
 HcUHL
 HcV0H
 HcVHH
@@ -6195,7 +6205,7 @@ HostStateMgr001
 Hull%d.obj
 HullIVRHole_t::operator new
 Hulls
-I	V_snprintf
+I	V_sinf
 I(I+I H
 I+4$H
 I+O H
@@ -6233,8 +6243,8 @@ Ic<$A;|$
 Ic>A;~
 Ic?A;
 IcA@E
+IcD$xH
 IcE0D
-IcExH
 IcF0H
 IcFHH
 IcG(I
@@ -6477,7 +6487,6 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be constra
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be constraint_breakableparams_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be constraint_hingeparams_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be vphysics_save_cphysicsbody_t)
-Intentionally vague touch behavior for %p
 Interact-as-exclude: excluded as-layers: 
 Interact-as-exclude: not excluded. All tests passed. These shapes should Collide.
 Interact-as-with test fails: there no common interaction layers found in the shapes
@@ -6530,6 +6539,7 @@ Invalid index block location (0x%x : 0x%x)
 Invalid indirect form 0x%llx
 Invalid interaction layer %s
 Invalid joint type %d on body %s
+Invalid joint type %s
 Invalid layer %s
 Invalid line header size
 Invalid low PC value 0x%llx (base 0x%llx)
@@ -6625,8 +6635,6 @@ KV3TransferSchema_ClassName::<lambda_1>::operator ()
 K`A;F
 KeyValueCache001
 KeyValues3
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::ArrayAddToTail
 KeyValues3::ArrayInsertMultipleBefore
 KeyValues3::CopyFrom
@@ -6667,6 +6675,7 @@ Keyframed vs Keyframed
 Keyframed vs Static
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ A+
@@ -6813,8 +6822,10 @@ L.IsValid()
 L9	u	I
 L9#u/H
 L9+t	H
+L9-ia:
 L93t	H
-L957|>
+L95!HD
+L95~Z;
 L99t;
 L9?t	H
 L9` u
@@ -6853,8 +6864,8 @@ LOG_SYMBOLS
 Lc	E3
 Lc#D;c
 Lc#E+
+Lc&D;f
 Lc'D;g
-Lc/D;o
 Lc1D;q
 Lc3D;s
 Lc4>M
@@ -6982,6 +6993,7 @@ LoggingSystem_RegisterLoggingChannel
 LoggingSystem_SetChannelIndent
 LookAtList
 Low PC attr without addr value
+L~xzU
 M.IsValid()
 M0A9M
 M9.t	I
@@ -7061,6 +7073,10 @@ McJpE
 McW<A
 McePE
 Mcf0E3
+Mcf0E;f@u
+McfHE;fXu
+Mcf`E;fpu
+McfxE;
 Mcn0M
 Mc~XE;~hu
 Medium
@@ -7101,6 +7117,7 @@ MorphBundleType_t
 MorphFlexControllerRemapType_t
 Motion Controllers
 MotionController Async Update
+Mouse
 MovementGait_t
 MovementSettings
 MultiByteToWideChar
@@ -7180,7 +7197,6 @@ Notify Found
 Notify Lost
 Notify Persist
 November
-O	V_sscanf
 O*9y]
 O0A9D$0u
 O8HcB
@@ -7199,9 +7215,6 @@ OldFeEdge_t::KV3Transfer_DefaultKeys_Impl
 OldFeEdge_t::Schema_VerifyBindingIsRegistered
 Operation
 OrLockType
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Out of range abbrev code %llu
 Out of range abbrev tag %llu
 Out of range compilation unit code %llu
@@ -7303,6 +7316,7 @@ PhysicsGenericJointSave_t
 PhysicsJointDesc_t::GetWorldOrigin1
 PhysicsJointDesc_t::GetWorldOrigin2
 PhysicsJointDesc_t::IsValid
+PhysicsNullJointSave_t
 PhysicsPrismaticJointSave_t
 PhysicsPulleyJointSave_t
 PhysicsRevoluteJointSave_t
@@ -7342,9 +7356,12 @@ Predict
 PrepareNotification
 Pressure
 Prevent jiggle bones from pointing directly away from their target in case of numerical instability.
+Prismatic
+Prismatic Weld Fused
 Projectile
 PropWorldOrigin
 PropertyEditorSystem_001
+Pulley
 PushBack
 Pz}b!
 Q A;U
@@ -7355,6 +7372,7 @@ QD$pH
 QPt2A
 QUAT_ORTHOTWIST_JOINT
 Qkkbal
+Quat OrthoTwist
 Quaternion
 QuaternionAverageExponential
 QuaternionIsNormalized( xformRoot.m_orientation, 100.0f * FLT_EPSILON )
@@ -7365,6 +7383,7 @@ Query and shape in hierarchy id=%d
 Query ignored this shape by owner ID. query(%08x, %08x) shape owner:%08x, shape entity:%08x).
 QueryPerformanceCounter
 Qxt2A
+R	V_sscanf
 R(;7|
 R.num_cols() == nSampleCount
 R.num_rows() == nSampleCount
@@ -7468,6 +7487,8 @@ RestorePhysicsParticleRope::<lambda_1>::operator ()
 RestoreToExistingPhysicsBody
 Result
 ReturnJobManualEventToPool
+Revolute
+Revolute Weld Fused
 RfD9|
 RnAssertFatalWrapper
 RnBlendVertex_t
@@ -7911,6 +7932,9 @@ Specification attr value (0x%llx) out of range
 Specification attr without reference value (form 0x%x)
 Speedup
 SphereBase_t
+Spherical
+Spline
+Spring
 Stack depth limit hit (%d)
 StackHelpers_Windows_GetDbgHelpWrapper
 StackHelpers_Windows_InitModLoadData
@@ -7946,10 +7970,10 @@ SweepShapeMultiple not supported for this shape type!
 Symbol name index invalid (%lld)
 Symbol name index too large
 Symbol nesting too deep
-T	V_stricmp_fast
 T$ D;
 T$ E3
 T$ H+
+T$ H;
 T$ Ic
 T$ fD
 T$ fD;
@@ -7968,6 +7992,7 @@ T$0H;T$P
 T$0I;
 T$0IcR
 T$0Li
+T$0fD
 T$0tOA
 T$0v8
 T$4I;
@@ -8016,10 +8041,10 @@ T$pLcD$xH+
 T$xA;
 T$xH;
 T$xL+
-T$x}	
-T%	J&
+T%*t/
+T%:u/
 T<Xu9H
-T=|O/
+T==g/
 TD u"E;
 TILT_TWIST
 TKc<7H
@@ -8097,6 +8122,7 @@ UPtcD
 USATAUAVH
 USATAUAVI
 USATAUAWH
+USATAUH
 USATAWI
 USAVI
 USAWI
@@ -8202,7 +8228,6 @@ Unable to seek to Mach-O load commands
 Unable to seek to Macho-O slice base
 Unable to seek to module section at file offset 0x%x
 Unexpected Keyword %s
-Unexpected Mach-O UUID length
 Unexpected augmentation string byte 0x%x
 Unexpected augmentation string byte 0x%x (shouldn't have augmentation data)
 Unexpected data at the end of .gnu_debuglink
@@ -8260,7 +8285,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UxtcD
-V	V_strlower_fast
 V6'?C
 V6E>`"(5
 VATAUAVH
@@ -8414,8 +8438,6 @@ V_fabsf( x ) < s_nCellSubdiv / 2 + 1.1f
 V_fabsf( y ) < s_nCellSubdiv / 2 + 1.1f
 V_fclose
 V_fgets
-V_fmodf
-V_fopenUTF8
 V_strchr( pNamePattern, '!' ) == nullptr
 V_strcmp( primaryFile, pDebugFile ) == 0
 V_strcmp( separateFile, pDebugFile ) == 0
@@ -8445,18 +8467,15 @@ VeryFast
 VisBuilder_001
 Vortices
 Vrad3_001
-W%6i#
-W%I|"
-W%Vd"
-W%aj#
+W	V_stricmp_fast
+W%Fy#
+W%Vt"
+W%qz#
 W(HcK
 W(I;\
-W->H$
-W-OK#
-W-c( 
+W->X$
+W-_[#
 W0HcK
-W5wr!
-W=.y$
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -8480,6 +8499,7 @@ Weld Joint: %s -> %s
 WeldVertices
 Wh9Wlt	H
 WhHcK
+Wheel
 Wheel bodies are expected to have a single convex hull shape
 Wheel contacts do not currently support TOI queries
 Wheel vs. wheel collisions are expected to create convex contacts, not wheel contacts.
@@ -8505,10 +8525,8 @@ X UWAVH
 X VWAVH
 X!t5~
 X$"fB
-X-;}&
 X8HcH0H
-X=Dv/
-X=~M$
+X=v]$
 X@Hc@8H
 XA]A\
 XA]A\][
@@ -8520,6 +8538,7 @@ XA_A^A]A\_^][
 XA_A^_^][
 XA__[]
 XD$DA
+XD$PD
 XD$pL
 XHcY83
 XL$@f
@@ -8545,20 +8564,23 @@ X|$@A
 X|$DD;
 X|$PD
 X|$xA
-Y%74&
-Y%?g$
-Y%pD$
-Y-4q/
-Y-8g$
-Y-Qo/
-Y-mi;
+Y	V_strlower_fast
+Y%&D;
+Y%1v%
+Y%?z$
+Y%@)"
+Y%hT$
+Y%mM1
+Y-8z$
+Y-f*%
 Y0tfH
-Y52*;
-Y5V4&
+Y5L/(
+Y5fJ1
+Y5p &
+Y5r3(
 Y8HcA0
 Y9"SD
-Y='w)
-Y=F" 
+Y=wy)
 Y@$fD
 YD$ A
 YD$ H
@@ -8647,6 +8669,7 @@ YT$`f
 YT$lA
 YT$pA
 YT$pE
+YT$tA
 Y\$$D
 Y\$4A
 Y\$4E
@@ -8796,6 +8819,7 @@ ZdN=Y
 \$`E3
 \$`HcD$XH
 \$`tRH
+\$`v!
 \$hHcD$`L
 \$p;OH
 \$p@8
@@ -8804,8 +8828,7 @@ ZdN=Y
 \$xH;
 \$xfE
 \$|L+
-\%U>1
-\-O}&
+\%%G1
 \<$fA
 \D$,A
 \D$,H
@@ -8832,13 +8855,12 @@ ZdN=Y
 \t$ A
 \t$0D
 \t$@H
-\t$xA
 \t3D8T$(t
 \v,Hc
 \|$0D
 \|$\H
-]	V_strtoui64
-]=>Y$
+]%!b/
+]=6i$
 ]@fff
 ]J<0"0i3
 ]Lu*E;|$
@@ -8855,13 +8877,13 @@ ZdN=Y
 ^l$ H
 ^oEZ_
 _ ;_$t
-_%":)
 _(HcG H
 _(IcG Hk
 _(tP;
 _8HcG0H
 _8Hcw
 _8IcG0H
+_=r2 
 _@HcG8H
 _@IcG8Hi
 _PHcGHH
@@ -8898,6 +8920,7 @@ _elf_
 _gUT^
 _macho_
 _u1E8^
+`	V_strtoui64
 ` UAVAWH
 `.rdata
 `A\_[
@@ -8955,7 +8978,6 @@ _u1E8^
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a7hIw
 a89q0
@@ -8989,7 +9011,6 @@ bCanTranslate
 bDidInsert
 bHandled
 bInserted
-bLegalTypeChange
 bRemoved
 bad address
 bad exception
@@ -9111,6 +9132,7 @@ covariant virtual thunk to
 cross device link
 curl --connect-timeout 5 --no-progress-meter --max-time %u -s -o "%s" %s
 curvature
+d	V_tanf
 d$ D!
 d$ E3
 d$ I9m8
@@ -9635,6 +9657,7 @@ l$`I;
 l$hHck
 l$hfD
 l$hff
+l$pE2
 l$pE3
 l$pL;
 l$x9G 
@@ -10794,7 +10817,6 @@ nVertBase + nSlices * i + j + 1 < vertices.Count()
 nVertexBase
 nVertexCount
 nVertexMapIndex
-nVertexNode
 nVerts >= 3
 nVirtElem
 nWasEffectsBeforeDisconnect == m_Effects.Count()
@@ -10842,12 +10864,6 @@ npc_scripted
 npcclip
 ntelA
 num > 0
-o%}eH
-o-Nk<
-o-^l<
-o5/k<
-o=1q<
-o={eH
 oPLc;D
 occlusionFactor
 offset
@@ -10995,7 +11011,6 @@ pLoadFromValue != nullptr
 pManifold
 pMember
 pMemberKV
-pMemory[i] == 0
 pMeshOut->m_pIndices[i] < (uint32)nNewVerts
 pMeta
 pModule->%s( 0x%llX )
@@ -11173,6 +11188,7 @@ r'w2H
 r+w2H;
 r+w6H
 rHHc7;w
+rNG"B
 rQE;S
 r_NE3
 radius
@@ -11344,11 +11360,12 @@ t$(L9o
 t$(Lc
 t$(fA
 t$(fD
-t$0;5
+t$0;5C#
 t$0D9t$@|LH
 t$0D;
 t$0E3
 t$0H9)t
+t$0H;
 t$0H;}
 t$0Hc
 t$0Hc7;w
@@ -11376,6 +11393,7 @@ t$8Hc
 t$8Hi
 t$8Hk
 t$8Ic
+t$8IcD$0
 t$8Ict
 t$8L9t$ t
 t$8fD9uBt
@@ -11414,19 +11432,20 @@ t$H|LH
 t$H~ H
 t$H~#H
 t$LF;4
-t$P;7
-t$PD;5
+t$PD;5L
 t$PE3
 t$PH9t$@t
 t$PHc
 t$PHc1L
 t$PHcD$HM
 t$PHk
+t$PIcD$HH
 t$PIcv
 t$Ptm
 t$P|?H
 t$P~ H
 t$P~#H
+t$X;7
 t$XD9u
 t$XE3
 t$XH+
@@ -11454,6 +11473,7 @@ t$`}[H
 t$`~ H
 t$hH9
 t$hH;
+t$hIcD$`H
 t$hL9@
 t$hfff
 t$h~ H
@@ -11501,6 +11521,7 @@ t.;C(s)H
 t.;G(s)H
 t/;C(s*I
 t/fff
+t0 <= t1
 t00JcD0(Lk
 t0H9}
 t1;A`s,H
@@ -11863,6 +11884,7 @@ zoumE
 {Pt*D9
 {Pt-D9w0t
 {hHcO
+{m^~3
 {pHcKhH
 {un'%
 {unnamed type
@@ -11960,6 +11982,7 @@ zoumE
 |$@I;
 |$@Ic>;
 |$@L;|$H
+|$@Lc?A+
 |$@Lk
 |$@M9
 |$@fA
@@ -11980,7 +12003,7 @@ zoumE
 |$HtG
 |$H~ H
 |$LB9<
-|$P;=U
+|$P;=
 |$P;k8
 |$PA;
 |$PD9
@@ -12037,24 +12060,20 @@ zoumE
 |Lu?c
 |b=})>
 |lHcC
-} IcE
 } Lcg D;g0u
 }!fD;A
 }&fff
 }'fff
 }8IcE0H
 }>;_$
-}HHcK
 }LuHO
 }PA9W0t
-}PIcEHH
 }PIcEHL
 }[D;u
 }`H;}
 }a;_$
 }bf;{
 }eIcF
-}hIcE`H
 }k;^$
 }oIc6A
 }qf;w
@@ -12067,6 +12086,7 @@ zoumE
 ~3fff
 ~7fff
 ~8HcF0L
+~8IcF0H
 ~=A;G
 ~CA;_
 ~D$8f

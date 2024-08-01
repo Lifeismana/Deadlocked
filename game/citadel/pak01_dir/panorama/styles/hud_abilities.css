@@ -34,14 +34,14 @@
 	visibility: collapse;
 }
 
-.in_item_shop .hud_abilities,.wants_scoreboard .hud_abilities,.gDetailView .hud_abilities
+.gShopOpen .hud_abilities,.wants_scoreboard .hud_abilities,.gDetailView .hud_abilities
 {
 	background-color: colorCommonDarkGray;
 	padding: 5px 10px 0px 10px;
 	border-top: 6px solid spiritBrightColor;
 }
 
-.in_item_shop .abilitiesHeaderColor,.wants_scoreboard .abilitiesHeaderColor,.gDetailView .abilitiesHeaderColor
+.gShopOpen .abilitiesHeaderColor,.wants_scoreboard .abilitiesHeaderColor,.gDetailView .abilitiesHeaderColor
 {
 	visibility: visible;
 }
@@ -618,12 +618,12 @@ Label.ability_key
 	ui-scale: 90%;
 }
 
-.in_item_shop #abilities
+.gShopOpen #abilities
 {
 	height: 150px;
 }
 
-.in_item_shop #abilities:hover,.wants_scoreboard #abilities,.gDetailView #abilities
+.gShopOpen #abilities:hover,.wants_scoreboard #abilities,.gDetailView #abilities
 {
 	height: 240px;
 }
@@ -997,7 +997,7 @@ Label.ability_key
 	visibility: collapse;
 	text-overflow: shrink;
 	font-weight: semi-bold;
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 	text-shadow: 0px 0px 5px 2.0 #000000;
 }
 

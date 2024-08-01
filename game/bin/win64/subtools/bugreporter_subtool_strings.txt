@@ -13,7 +13,7 @@
 	To:   %s
 	User:       %s
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+	^/z`
 	_V_ComposeFileName
 	g_pMemAlloc
 	kE>fvw
@@ -45,7 +45,6 @@
  tDE3
 !>6'Y
 !?underMouse@QWidget@@QEBA_NXZ
-!Um (0
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
 !m_bNeedsSort
@@ -99,9 +98,6 @@ $Ib?s
 (Unknown)
 (f*^[0
 (l$ D
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$ A
 (t$ H
 (t$PH
@@ -116,7 +112,6 @@ $Ib?s
 )|B?d!
 * ?timerEvent@QTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 *StO9>T
-*^G@R0
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 +M<7>
 +Xt@(
@@ -129,6 +124,7 @@ $Ib?s
 ,/<-w
 ,HR>O
 ,W5y+
+-&($n
 ----- Log Capture Snip. See attachments for entire log capture. -----
 ---------------------------------------------------------------------
 -BH>t
@@ -334,7 +330,7 @@ $Ib?s
 220323000000Z
 220801000000Z
 230714000000Z
-240723235628Z0/
+240801162240Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -388,7 +384,6 @@ $Ib?s
 9>~ZH
 9p@u+
 9t$Pu	
-:	V_qsort_s
 :>)*	v
 :>t6k'
 ;?0123456789:;<=>?
@@ -401,6 +396,7 @@ $Ib?s
 <>#n2
 <empty>
 <no failure reason set>
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
@@ -1239,7 +1235,6 @@ C0Hc	H
 C5R?	
 C:\buildworker\citadel_rel_win64\build\_build_\utils\vconsole2\subtools\bugreporter\_vpc_bugreporter_subtool\default\win64\_msvc_\Retail\bugreporter_subtool.pdb
 C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
@@ -1257,11 +1252,6 @@ CD$8D
 CGUBH
 CGlobalConVarRegistry::HookUpConVar
 CL:>8
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CQAttachFilesDialog
 CQAttachmentTableFileSizeWidgetItem
 CQAttachmentTableFilenameWidgetItem
@@ -1343,7 +1333,6 @@ Component:
 Console Log
 Console Log Limit MB (0 for none):
 Console Log: Removed %d lines (%d remaining), %llu bytes (%llu bytes remaining)
-Construction is only allowed from the resolve function
 Copy Image
 CorExitProcess
 Could not Load Module on '%s'.
@@ -1392,7 +1381,6 @@ DecodePointer
 Default
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 Description:
 DigiCert Assured ID Root CA0
 DigiCert Inc1
@@ -1409,6 +1397,7 @@ E8q(u
 E>nEA
 EH*?H
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 EngineServiceMgr001
@@ -1442,7 +1431,6 @@ GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -1505,7 +1493,6 @@ HcX8H
 Hcu`M
 HelpSystem_001
 HostStateMgr001
-I	V_snprintf
 I+4$H
 IGUBH
 IPulseSystem_001
@@ -1522,7 +1509,6 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 InvokeMiniDumpHandler
 IsDebuggerPresent
@@ -1542,6 +1528,7 @@ Keep Submitted Screenshots
 KeyValueCache001
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L#?y@QWidget@@QEBAHXZ
@@ -1671,9 +1658,6 @@ OnTakeScreenshot
 OnTextChanged
 OnTitleChanged
 OnUseComponentOwner
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orientation:
 Owner:
 P>q_Y~
@@ -1688,13 +1672,13 @@ Paste Image
 Pause
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FileExists
 Plat_GetEnv
 Plat_GetLocalTime
 Plat_GetModuleProcAddress
+Plat_GetTime
 Plat_IsFile
 Plat_IsInDebugSession
 Plat_LoadModule
@@ -1815,7 +1799,6 @@ Submit as '%2'?
 Submitter:
 Sunday
 System Report
-T	V_stricmp_fast
 T$ H;
 T$@D;(
 T$HHc
@@ -1914,6 +1897,8 @@ Valve Corp.0
 Valve Corp.1
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
+W&XcDm
 W?save@QPixmap@@QEBA_NPEAVQIODevice@@PEBDH@Z
 W?scaled@QPixmap@@QEBA?AV1@HHW4AspectRatioMode@Qt@@W4TransformationMode@3@@Z
 W?screenAt@QGuiApplication@@SAPEAVQScreen@@AEBVQPoint@@@Z
@@ -1959,6 +1944,7 @@ Zod(^?
 \$@H;
 \$gm?
 \\fileserver\bugs
+] mYm
 ])6M>&
 ]>)2X
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
@@ -2089,7 +2075,6 @@ deselected
 destination address required
 device or resource busy
 directory not empty
-e	IW4e
 e0A_A^A]A\]
 executable format error
 f5J5J5J5J5J5J5J5J5J5J5J5J5J5J5J5Jx
@@ -2108,6 +2093,7 @@ file exists
 file too large
 filename too long
 font-weight : bold
+ft=0!
 function not supported
 g_pCVar
 game:tools/images/common/add_sm.png
@@ -2221,7 +2207,6 @@ p;Y>u
 pA_A^A]A\_^[
 pA_A^A]_]
 pCallback == nullptr
-pMemory[i] == 0
 pSchemaSystem != nullptr
 permission denied
 position

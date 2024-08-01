@@ -310,6 +310,7 @@
 	border-radius: 50%;
 	clip: radial( 50% 50%, 0deg, 90deg );
 	border: 4px solid clipLiveBulletColor;
+	visibility: collapse;
 }
 
 #clip_progress_bar.low_clip
@@ -338,14 +339,19 @@
 
 #clip_bonus_progress_bar
 {
-	width: 100%;
-	height: 100%;
+	width: 96px;
+	height: 96px;
 	vertical-align: center;
 	horizontal-align: center;
 	border-radius: 50%;
 	clip: radial( 50% 50%, 0deg, 90deg );
-	border: 5px solid clipBonusBulletColor;
+	border: 4px solid clipBonusBulletColor;
 	visibility: collapse;
+}
+
+.clip_style_progress_bar #clip_progress_bar
+{
+	visibility: visible;
 }
 
 #clip_bullet
@@ -369,6 +375,11 @@
 {
 	border: 5px solid clipLiveBulletColor;
 	visibility: visible;
+}
+
+#clip_bullet.is_bonus_bullet
+{
+	border: 5px solid clipBonusBulletColor;
 }
 
 .infinite_ammo #clip_bullet.bullet_present
@@ -587,6 +598,11 @@
 .has_bonus_clip .weapon_ammo
 {
 	color: clipBonusBulletColor;
+}
+
+.has_bonus_clip.clip_style_progress_bar #clip_bonus_progress_bar
+{
+	visibility: visible;
 }
 
 .weapon_ammo_max

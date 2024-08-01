@@ -403,7 +403,7 @@
 					block_volume_min = 
 					{
 						data_type = "float"
-						value = "-1.000000"
+						value = "0.0001"
 						_system_properties = 
 						{
 							property_group = "Limiter"
@@ -1622,8 +1622,33 @@
 			},
 			
 			{
+				name = "citadel_distance_falloff"
+				operator = "sos_import_stack"
+				import_stack = "citadel_distance_falloff"
+				auto_connect_public_fields = "true"
+				operator_variables = 
+				{
+					distance = 
+					{
+						data_type = "float"
+						value = "@distance_filter.output"
+					}
+				}
+			},
+			
+			{
+				name = "occlusion_calc_enabled"
+				operator = "math_float"
+				input_execute = 1.000000
+				apply = "greater_than"
+				input1 = "@citadel_distance_falloff::output.result_vol_linear"
+				input2 = "0.001"
+			},
+			
+			{
 				name = "occlusion"
 				operator = "calc_occlusion_src2"
+				input_execute = "@occlusion_calc_enabled.output"
 				input_scalar = "@occlusion_mixer_mult.output"
 				input_radius = "@public.occlusion_radius"
 				min_output = "@public.occlusion_min"
@@ -1634,9 +1659,17 @@
 			},
 			
 			{
+				name = "occlusion_max_distance_switch"
+				operator = "ctrl_switch_float"
+				input_switch = "@occlusion_calc_enabled.output"
+				input1 = "@public.occlusion_min"
+				input2 = "@occlusion.output"
+			},
+			
+			{
 				name = "occlusion_filter"
 				operator = "math_filter_float"
-				input = "@occlusion.output"
+				input = "@occlusion_max_distance_switch.output"
 				input_max_velocity = "@public.occlusion_max_velocity"
 			},
 			
@@ -1834,21 +1867,6 @@
 				operator = "sos_import_stack"
 				import_stack = "citadel_instance_attenuator"
 				auto_connect_public_fields = "true"
-			},
-			
-			{
-				name = "citadel_distance_falloff"
-				operator = "sos_import_stack"
-				import_stack = "citadel_distance_falloff"
-				auto_connect_public_fields = "true"
-				operator_variables = 
-				{
-					distance = 
-					{
-						data_type = "float"
-						value = "@distance_filter.output"
-					}
-				}
 			},
 			
 			{
@@ -2109,9 +2127,16 @@
 			},
 			
 			{
+				name = "convar_get_debug_enabled"
+				operator = "convar_get"
+				convar = "audio_display_soundstack_debug_base_3d"
+			},
+			
+			{
 				name = "util_draw_debug_sphere"
 				operator = "util_draw_debug_sphere"
 				input_radius = "5.f"
+				input_execute = "@convar_get_debug_enabled.output"
 				input_position = "@add_position_offset.output"
 				input_rgb_color = "[52., 235., 168.]"
 				input_label = ""

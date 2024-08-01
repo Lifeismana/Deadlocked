@@ -9,7 +9,7 @@
 .dashboard
 {
 	overflow: noclip;
-	font-family: "Retail Demo";
+	font-family: sans;
 	background-color: #000000;
 }
 
@@ -816,8 +816,7 @@ PopupManager
 	text-transform: uppercase;
 	font-weight: semi-bold;
 	opacity: 0.2;
-	font-family: "Forevs Demo";
-	font-family: "Retail Demo";
+	font-family: sans;
 	font-size: 16px;
 	letter-spacing: 0.1px;
 }
@@ -933,8 +932,7 @@ PopupManager
 {
 	vertical-align: middle;
 	font-style: normal;
-	font-family: "Swear Text Demo";
-	font-family: "Forevs Demo";
+	font-family: serif;
 	font-weight: bold;
 	font-size: 44px;
 	padding: 2px 0px;
@@ -1002,7 +1000,7 @@ PopupManager
 {
 	font-size: 16px;
 	font-weight: bold;
-	font-family: "Retail Demo";
+	font-family: sans;
 	text-transform: uppercase;
 	visibility: collapse;
 	letter-spacing: 0px;
@@ -1056,7 +1054,7 @@ PopupManager
 	font-weight: semi-bold;
 	color:offWhite&40;
 	vertical-align: middle;
-	font-family: "Retail Demo";
+	font-family: sans;
 	transition-property: pre-transform-scale2d, color;
 	transition-duration: 0.1s;
 }
@@ -1660,6 +1658,16 @@ PopupManager
 	padding: 15px 20px;
 }
 
+.FriendsIcon
+{
+	background-image: url("s2r://panorama/images/icons/icon_friends.vsvg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-bottom: 1px;
+}
+
 .recommendIntro
 {
 	color: silvered;
@@ -2242,14 +2250,14 @@ PopupManager
 	color: offWhite;
 	opacity: 0.3;
 	padding-left: 89px;
-	font-family: "Forevs Demo";
+	font-family: serif;
 }
 
 .playoption Label.menuButtonLabel
 {
 	vertical-align: middle;
 	font-style: normal;
-	font-family: "Forevs Demo";
+	font-family: serif;
 	font-weight: bold;
 	font-size: 36px;
 	padding: 2px 0px;
@@ -2336,7 +2344,7 @@ PopupManager
 
 Label.playModeDesc
 {
-	font-family: "Retail Demo";
+	font-family: sans;
 	font-size: 18px;
 	color: offWhite&70;
 	font-weight: semi-bold;
@@ -2726,7 +2734,7 @@ Label.playModeDesc
 #watch .live_matches
 {
 	color: ritualGreenLight;
-	font-family: "Retail Demo";
+	font-family: sans;
 	font-size: 16px;
 	horizontal-align: right;
 	vertical-align: center;
@@ -2810,7 +2818,7 @@ Label.playModeDesc
 	vertical-align: center;
 	margin-left: 15px;
 	margin-top: 0px;
-	font-family: "Retail Demo";
+	font-family: sans;
 	flow-children: right;
 	padding: 1px 8px;
 	border-radius: 2px;
@@ -2891,7 +2899,7 @@ Label.playModeDesc
 {
 	color: offBlack;
 	font-size: 14px;
-	font-family: "Retail Demo";
+	font-family: sans;
 	text-transform: uppercase;
 	font-weight: bold;
 	horizontal-align: center;

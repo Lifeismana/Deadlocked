@@ -184,6 +184,11 @@
 	visibility: visible;
 }
 
+.HudDamageReport.gDetailView.gBrowsingBuilds:not(.Hidden)
+{
+	visibility: collapse;
+}
+
 .HudDamageReport
 {
 	vertical-align: top;
@@ -193,7 +198,7 @@
 	width: 470px;
 	border-radius: 5px 0px 0px 5px;
 	border: 1px solid #ffffff01;
-	font-family: "Retail Demo";
+	font-family: sans;
 	flow-children: right;
 	transform: translateX(0px);
 	transition-duration: 0.1s;
@@ -208,24 +213,24 @@
 	visibility: visible;
 }
 
-.HudDamageReport.in_item_shop
+.HudDamageReport.gShopOpen
 {
 	opacity: 1;
 	margin-top: 150px;
 	z-index: 201;
 }
 
-.HudDamageReport.in_item_shop #ReportContents
+.HudDamageReport.gShopOpen #ReportContents
 {
 	opacity: 1;
 }
 
-.HudDamageReport.in_item_shop.Tab #ReportContents
+.HudDamageReport.gShopOpen.Tab #ReportContents
 {
 	opacity: 1;
 }
 
-.HudDamageReport.in_item_shop.Tab .Header
+.HudDamageReport.gShopOpen.Tab .Header
 {
 	margin-left: 0px;
 	padding: 10px;
@@ -592,7 +597,7 @@
 	font-weight: bold;
 	text-align: center;
 	horizontal-align: center;
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 }
 
 .HudDamageReport .DamageSection .DamageDealtToggleButton
@@ -768,7 +773,7 @@ CitadelTooltipDamageReportHeroSummary #Contents,CitadelTooltipDamageReportAbilit
 {
 	font-size: 24px;
 	font-weight: bold;
-	font-family: "Forevs Demo";
+	font-family: serif;
 	text-transform: uppercase;
 	margin-bottom: -4px;
 }
@@ -842,7 +847,7 @@ CitadelTooltipDamageReportHeroSummary #Contents,CitadelTooltipDamageReportAbilit
 	vertical-align: center;
 	font-size: 24px;
 	font-weight: bold;
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 }
 
 #ReportToggle

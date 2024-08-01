@@ -1,6 +1,7 @@
 /* Prettified by Source 2 Viewer 10.1.0.0 - https://valveresourceformat.github.io */
 
 @define rightPanelWidth: 1160px;
+@import url("s2r://panorama/styles/citadel_hero_builds_shared.vcss_c");
 CitadelHudHeroShop
 {
 	width: 100%;
@@ -8,7 +9,16 @@ CitadelHudHeroShop
 	color: colorCommonOffWhite;
 	z-index: 201;
 	background-color: #060e00ee;
-	flow-children: right;
+}
+
+CitadelHudHeroShop.gBrowsingBuilds
+{
+	background-color: #202020f6;
+}
+
+CitadelHudHeroShop.gEditingBuilds
+{
+	background-color: #12305df6;
 }
 
 #Shop
@@ -27,10 +37,7 @@ CitadelHudHeroShop
 #NavPanel
 {
 	height: 100%;
-	width: 510px;
-	margin-right: 10px;
-	margin-left: 60px;
-	margin-right: 70px;
+	width: 640px;
 }
 
 .AspectRatio16x10 #NavPanel
@@ -57,6 +64,40 @@ CitadelHudHeroShop
 	width: 100%;
 	height: fit-children;
 	margin-top: 0px;
+	margin-left: 60px;
+	margin-right: 70px;
+}
+
+#HeroScenePanel
+{
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+}
+
+#HeroPlaceholder
+{
+	background-color: #ffffff10;
+	background-color: gradient( linear, 0% 0%, 0% 80%, from( #ffffff05 ), to( #ffffff00 ) );
+	width: 80%;
+	height: 80%;
+	horizontal-align: center;
+	vertical-align: bottom;
+	ignore-parent-flow: true;
+	z-index: 1;
+}
+
+.gBrowsingBuilds #HeroPlaceholder,.gEditingBuilds #HeroPlaceholder
+{
+	visibility: collapse;
+}
+
+#HeroPlaceholder Label
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-weight: bold;
+	margin-bottom: 200px;
 }
 
 @keyframes 'navAnimateIn'
@@ -79,17 +120,31 @@ CitadelHudHeroShop
 {
 	height: fit-children;
 	width: 100%;
+	flow-children: right;
+}
+
+.gBrowsingBuilds .ShopHeader
+{
+	visibility: collapse;
 }
 
 .ShopName
 {
-	width: 100%;
-	height: 170px;
+	width: 280px;
+	height: 100px;
 	margin: 40px 20px 0px 20px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: left;
 	background-image: url("s2r://panorama/images/shop/shop_logo_psd.vtex");
+}
+
+#GoldAPContainer
+{
+	vertical-align: bottom;
+	margin-bottom: 20px;
+	margin-left: 60px;
+	visibility: collapse;
 }
 
 .ModsPurchasedContainer
@@ -297,57 +352,6 @@ CitadelHudHeroShop
 {
 	color: spiritBrightColor;
 	font-weight: semi-bold;
-}
-
-#FiltersDropDownContainer
-{
-	ignore-parent-flow: true;
-	visibility: collapse;
-	horizontal-align: right;
-	margin-top: 80px;
-	flow-children: down;
-	z-index: 99;
-	padding: 15px 20px;
-	background-color: #CBBCA6;
-	width: 200px;
-}
-
-.ShowingFiltersDropDown #FiltersDropDownContainer
-{
-	visibility: visible;
-}
-
-.isShowingTrainingPage #FiltersDropDownContainer
-{
-	margin-left: 0px;
-}
-
-.FilterButton
-{
-	background-color: offBlack&40;
-	width: 100%;
-	padding: 8px 15px;
-	margin: 5px 0px;
-	border-radius: 50px;
-	font-size: 16px;
-}
-
-.FilterButton:hover
-{
-	background-color: offBlack&ee;
-}
-
-.FilterButtonLabel
-{
-	font-size: 16px;
-	font-weight: semi-bold;
-	color: offBlack;
-	horizontal-align: center;
-}
-
-.FilterButton:hover .FilterButtonLabel
-{
-	color: offWhite&aa;
 }
 
 #AbilitiesButton
@@ -643,8 +647,33 @@ CitadelHudHeroShop
 
 .HeroStatsContainer
 {
+	margin-left: 30px;
+	margin-right: 30px;
 	width: 100%;
-	height: 580px;
+	height: 710px;
+	z-index: 10;
+}
+
+.gBrowsingBuilds .HeroStatsContainer
+{
+	visibility: collapse;
+}
+
+.heroStatsDisplay
+{
+	visibility: collapse;
+	vertical-align: bottom;
+	margin-bottom: 1px;
+}
+
+.showingNewStats #HeroStats
+{
+	visibility: collapse;
+}
+
+.viewingWeaponStats #HeroStatsWeapon,.viewingArmorStats #HeroStatsArmor,.viewingTechStats #HeroStatsTech
+{
+	visibility: visible;
 }
 
 #SoulsContainer
@@ -742,34 +771,6 @@ CitadelHudHeroShop
 	background-color: red;
 }
 
-#BuildsPanel
-{
-	width: 100%;
-	height: 67px;
-	visibility: collapse;
-	flow-children: right;
-	background-color: goldColor&30;
-	border: 0px solid baseBorder;
-	border-top: 7px solid #C3B661;
-}
-
-.showingFavorites #BuildsPanel
-{
-	visibility: visible;
-}
-
-#CitadelHeroBuildsPage #BuildsPanel
-{
-	visibility: collapse;
-}
-
-#RefreshHeroBuildsButton
-{
-	ignore-parent-flow: true;
-	horizontal-align: right;
-	opacity: 0.7;
-}
-
 .refreshIcon
 {
 	width: 16px;
@@ -838,6 +839,7 @@ CitadelHudHeroShop
 .RecommendedTextContainer
 {
 	vertical-align: bottom;
+	horizontal-align: center;
 	flow-children: down;
 }
 
@@ -845,16 +847,12 @@ CitadelHudHeroShop
 {
 	vertical-align: bottom;
 	font-weight: semi-bold;
-	font-size: 15px;
+	font-size: 34px;
 	horizontal-align: center;
-	color: offBlack;
+	color: offWhite;
 	text-overflow: shrink;
-	max-height: 18px;
-}
-
-.showingFavorites #FavoritesNav
-{
-	background-color: goldColor;
+	text-align: center;
+	margin: 10px;
 }
 
 CitadelTrainingPage #FavoritesNav
@@ -867,11 +865,6 @@ CitadelTrainingPage #FavoritesNav
 	visibility: collapse;
 }
 
-.showingFilters #FiltersName
-{
-	background-color: #555;
-}
-
 .FilterType.NavLabel
 {
 	font-size: 14px;
@@ -880,14 +873,6 @@ CitadelTrainingPage #FavoritesNav
 #WeaponNav,#FavoritesNav,#TechNav,#ArmorNav
 {
 	margin-right: 10px;
-}
-
-#FiltersName
-{
-	flow-children: down;
-	ignore-parent-flow: true;
-	horizontal-align: right;
-	visibility: collapse;
 }
 
 #FavoritesNav
@@ -914,7 +899,7 @@ CitadelTrainingPage #FavoritesNav
 	color: offBlack;
 }
 
-.showingWeapon #ShopModsListWeapon,.showingTech #ShopModsListTech,.showingArmor #ShopModsListArmor,.showingFavorites #ShopModsListFavorites,.showingFilters #ShopModsListAll,.showingSearch #ShopModsListAll
+.showingWeapon #ShopModsListWeapon,.showingTech #ShopModsListTech,.showingArmor #ShopModsListArmor,.showingFavorites #ShopModsSelectedBuild,.showingSearch #ShopModsListAll
 {
 	visibility: visible;
 }
@@ -1222,11 +1207,6 @@ CitadelTrainingPage #BackButton,CitadelTrainingPage .APHeader,CitadelTrainingPag
 	visibility: collapse;
 }
 
-CitadelHeroBuildsPage #BackButton,CitadelHeroBuildsPage .APHeader,CitadelHeroBuildsPage .ModsPurchasedContainer,CitadelHeroBuildsPage .HeroStatsContainer,CitadelHeroBuildsPage .InnerAbilitiesRow
-{
-	visibility: collapse;
-}
-
 #BackButton .FooterCommand
 {
 	vertical-align: bottom;
@@ -1292,14 +1272,6 @@ CitadelFooterBar .isMouseButton .controlKeyBind
 	height: 34px;
 	width: 34px;
 	background-size: 100% 100%;
-}
-
-CitadelModifiedAbilities
-{
-	flow-children: down;
-	height: fit-children;
-	width: 100%;
-	padding: 10px 20px;
 }
 
 .ModifiedHeaderContainer
@@ -1461,7 +1433,7 @@ CitadelModifiedAbilities
 	text-shadow: 0px 0px 0px #00000000;
 	margin-top: 0px;
 	font-weight: semi-bold;
-	font-family: "Retail Demo";
+	font-family: sans;
 	margin-left: 10px;
 }
 
@@ -1536,39 +1508,6 @@ CitadelModifiedAbilities
 	horizontal-align: center;
 }
 
-#FiltersName .NavLabel
-{
-	font-size: 22px;
-	font-weight: bold;
-}
-
-#FiltersName .FilterType
-{
-	font-size: 16px;
-	font-weight: semi-bold;
-	margin-top: -8px;
-}
-
-.showingFilters #FiltersName .NavLabel
-{
-	color: offWhite;
-	letter-spacing: 0px;
-}
-
-.FilterNameContainer
-{
-	vertical-align: middle;
-	flow-children: right;
-	padding: 0px 30px;
-	margin-bottom: 1px;
-	horizontal-align: center;
-}
-
-.showingFilters .FilterNameContainer
-{
-	margin-bottom: 0px;
-}
-
 .DropdownIcon
 {
 	width: 13px;
@@ -1581,11 +1520,6 @@ CitadelModifiedAbilities
 	background-position: center;
 	wash-color: offBlack;
 	vertical-align: middle;
-}
-
-.showingFilters .DropdownIcon
-{
-	wash-color: offWhite;
 }
 
 #WeaponNav .NavCategoryIcon
@@ -1624,9 +1558,9 @@ CitadelModifiedAbilities
 	font-weight: semi-bold;
 }
 
-#FavoritesNav .NavCategoryIcon,#FavoritesNav .NavHeaderColor
+.showingFavorites #FavoritesNav.NavigationButton,#FavoritesNav .NavHeaderColor
 {
-	background-color: goldColor;
+	background-color: buildsLightColor;
 }
 
 .showingWeapon #WeaponNav.NavigationButton,#WeaponNav .NavHeaderColor
@@ -1635,9 +1569,10 @@ CitadelModifiedAbilities
 	font-weight: semi-bold;
 }
 
-#FiltersName .NavHeaderColor
+#FavoritesNav .NavCategoryIcon
 {
-	background-color: #555;
+	background-image: url("s2r://panorama/images/icons/icon_star.vsvg");
+	wash-color: #322309;
 }
 
 .ReadOnlyShop

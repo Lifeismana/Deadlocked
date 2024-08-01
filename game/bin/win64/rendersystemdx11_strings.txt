@@ -39,7 +39,6 @@
 	V_vsnprintf
 	Warning
 	Width = %d
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_StrSubst
 	_V_strncat
 	_V_strncmp
@@ -168,6 +167,7 @@
  Lcd$pI
  Lcl$p
  Type Descriptor'
+ [Pool: %.1fmb of %.1fmb]
  bn0s}Q_@r~aoPq
  clean
  delete
@@ -351,7 +351,6 @@ $^fE;
 &YA1H
 &xr(*
 ',=?k
-(	V_log2_uint
 ( ( m_nFlags & (TSPEC_VOLUME_TEXTURE|TSPEC_TEXTURE_ARRAY) ) != 0 ) || ( m_nDepth == 1 )
 ( ( m_nFlags & TSPEC_VOLUME_TEXTURE ) == 0 ) || ( ( m_nFlags & TSPEC_TEXTURE_ARRAY ) == 0 )
 ( ( poolType == POOLED_BACKING_STORE_VERTEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_VERTEX_FIXED_SIZE ) ) || ( ( poolType == POOLED_BACKING_STORE_INDEX_BUFFER ) && ( nSize == RENDER_BUFFER_DYNAMIC_INDEX_FIXED_SIZE ) )
@@ -469,9 +468,6 @@ $^fE;
 (l$`fA
 (l$pfA
 (m_GeometryShaderDict[ i ].m_pInfo->Release()) == (0)
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (nLumaStride > 0) && (nLumaStride < INT_MAX) && (nChromaStride > 0) && (nChromaStride < INT_MAX)
 (nResult) == (0)
 (null)
@@ -687,7 +683,7 @@ $^fE;
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *pView != nullptr
-+	V_logd
++	V_log2_uint
 +C$Hc
 +D$8A
 +D$p;
@@ -701,7 +697,6 @@ $^fE;
 +h->|
 +o'q)}
 +v$x+v$xv$+xv+$xv$+x+$vx+$vx$v+x+$vx$+vx+v $+v $v $+v +$v $++$ v+$ v$ v++$ v$+ v+xv$+ v$v$ +v+ $v$ ++x$v+ $v$v ++ $v$ +v
-,	V_logf
 , channels = 
 , height = 
 ,*/vu
@@ -770,6 +765,7 @@ $^fE;
 -threads
 -tools
 -vulkan
+.	V_logd
 ..om?
 .00cfg
 .>PJ;I:qE>
@@ -959,6 +955,7 @@ $^fE;
 .?AVCLayoutInsert@@
 .?AVCNVReflexDx11@@
 .?AVCPooledIndexBuffer@@
+.?AVCPooledVertexBuffer@@
 .?AVCPostConnectCallback@@
 .?AVCRasterizerStateCreator@@
 .?AVCReadGPUBuffer@@
@@ -1107,17 +1104,13 @@ $^fE;
 .xJ>Hf
 .xdata
 .xdata$x
-/%EZ 
-/%gW 
-/%hs-
-/-7V 
+/	V_logf
+/%5S 
+/%WP 
+/-'O 
 /2GG>!B
-/5#Y2
-/5;D%
-/5WZ 
-/5{W 
-/=&<!
-/=(<!
+/5GS 
+/5kP 
 />58d%
 /TF<)VGy#WH
 0 0 0
@@ -1175,7 +1168,6 @@ $^fE;
 1.2.11
 130801120000Z
 1<.	/>:
-1@xovGD
 1A26b
 1wsHp
 210429000000Z
@@ -1183,7 +1175,7 @@ $^fE;
 220323000000Z
 220801000000Z
 230714000000Z
-240723234943Z0/
+240801162306Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -1209,12 +1201,10 @@ $^fE;
 6:%+H
 6I]Dc
 6OB,n_
-7	V_powd
 7&F|If
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 7xicuU
-8	V_powf
 8"3hrf
 8-uCH
 8-uGH
@@ -1240,13 +1230,10 @@ $^fE;
 8b  16-May-2010
 8ke?;
 8vtext
-9	V_qsort
 9)~P3
 93t6H
 93t=H
 93tdH
-95\y,
-95uS,
 97tmD
 98t H
 98tkH
@@ -1281,7 +1268,7 @@ $^fE;
 9t$Pu	
 9{\~9H
 9|$Hu(H
-:	V_qsort_s
+:	V_powd
 :>)*	v
 :>t6k'
 :ALPHD
@@ -1292,8 +1279,10 @@ $^fE;
 :VP8 tP
 :VP8LtHD
 :VP8X
+;	V_powf
 ;.u1L
-;=!]+
+;=II+
+;=QV+
 ;?0123456789:;<=>?
 ;Cxr*H
 ;CxsB
@@ -1314,6 +1303,7 @@ $^fE;
 ;t$@|
 ;t$D|
 ;|$8|
+<	V_qsort
 <	w	@
 < t=<	t9
 <+uXH
@@ -1352,6 +1342,7 @@ $^fE;
 <vt{<x
 <xuM@
 <}wTI
+=	V_qsort_s
 =NVDAt
 =SPB8u*
 =SPB8ue
@@ -1570,7 +1561,6 @@ $^fE;
 @SAVH
 @SAWH
 @SUATAUAVH
-@SUATAVAWH
 @SUATAW
 @SUATH
 @SUAVH
@@ -1768,7 +1758,6 @@ A^A\_^[
 A^A]A\
 A^A]A\]
 A^A]A\][
-A^A]A\^
 A^A]A\^[]
 A^A]A\_]H
 A^A]A\_^
@@ -1776,6 +1765,7 @@ A^A]A\_^[]
 A^A]A\_^][
 A^A]^[
 A^A]^[]
+A^A]^]
 A^A]_
 A^A]_[]
 A^_[]
@@ -1798,6 +1788,7 @@ A_A]_^[
 A_A]_^[]
 A_A^A\
 A_A^A\]
+A_A^A\^
 A_A^A\^[]
 A_A^A\^]
 A_A^A\_]
@@ -1902,7 +1893,6 @@ B49A4u
 BC6H_HueShiftFixup_BlockHasDecodingErrors
 BC6H_HueShiftFixup_QuantizeBlock
 BC?>6t9^	c:>
-BD9%n5F
 BF>^G
 BGR565
 BGR888
@@ -1989,7 +1979,6 @@ C:\buildworker\citadel_rel_win64\build\src\mathlib\kmeansclustering.cpp
 C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\bitmap\floatbitmap.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\indexdata.h
 C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\texturebits.h
 C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
@@ -2102,7 +2091,7 @@ CD$8D
 CDependencyDescriptor::Satisfy
 CDeviceFence::AddRef
 CDeviceFence::~CDeviceFence
-CDeviceFenceDx11::CDeviceFenceDx11(4813): 
+CDeviceFenceDx11::CDeviceFenceDx11(4828): 
 CDx11Fsr2Upscaler::ActuallyRenderUpscalePasses
 CDx11Fsr2Upscaler::Init
 CE0f9
@@ -2154,11 +2143,6 @@ COcclusionQueryMgr::DestroyOcclusionQueryObject
 COcclusionQueryMgr::EndOcclusionQueryDrawing
 COcclusionQueryMgr::OcclusionQuery_IssueNumPixelsRenderedQuery
 COcclusionQueryMgr::ResetOcclusionQueryObject
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPipelineFence::AddRef
 CPoolAllocator::Allocate
 CPoolAllocator::Free
@@ -2254,23 +2238,26 @@ CRenderDeviceBase
 CRenderDeviceBase::AcquirePooledDynamicConstantBuffer
 CRenderDeviceBase::AllocatePooledBackingStore
 CRenderDeviceBase::AllocatePooledIndexBuffer
-CRenderDeviceBase::AllocatePooledIndexBuffer(3631): 
-CRenderDeviceBase::AllocatePooledIndexBuffer(3667): 
-CRenderDeviceBase::AsyncSetTextureData(3286): 
-CRenderDeviceBase::BeginRenderingToSwapChain(3535): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3642): 
+CRenderDeviceBase::AllocatePooledIndexBuffer(3678): 
+CRenderDeviceBase::AllocatePooledVertexBuffer
+CRenderDeviceBase::AllocatePooledVertexBuffer(3781): 
+CRenderDeviceBase::AllocatePooledVertexBuffer(3812): 
+CRenderDeviceBase::AsyncSetTextureData(3297): 
+CRenderDeviceBase::BeginRenderingToSwapChain(3546): 
 CRenderDeviceBase::CreateConstantBuffer
-CRenderDeviceBase::CreateConstantBuffer(1586): 
+CRenderDeviceBase::CreateConstantBuffer(1587): 
 CRenderDeviceBase::CreateConstantBufferInternal
 CRenderDeviceBase::DestroyConstantBuffer
 CRenderDeviceBase::EnableAsyncPresent
-CRenderDeviceBase::EndRenderDocCapture(3521): 
+CRenderDeviceBase::EndRenderDocCapture(3532): 
 CRenderDeviceBase::FindOrCreateTexture
-CRenderDeviceBase::FindOrCreateTexture(1766): 
+CRenderDeviceBase::FindOrCreateTexture(1767): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
-CRenderDeviceBase::Flush(915): 
-CRenderDeviceBase::ForceFlushGPU(932): 
-CRenderDeviceBase::FreeTextureGPUResources(2078): 
-CRenderDeviceBase::FreeTextureGPUResources(2082): 
+CRenderDeviceBase::Flush(916): 
+CRenderDeviceBase::ForceFlushGPU(933): 
+CRenderDeviceBase::FreeTextureGPUResources(2079): 
+CRenderDeviceBase::FreeTextureGPUResources(2083): 
 CRenderDeviceBase::GetCubemapRadianceSHConstants
 CRenderDeviceBase::GetCubemapRadianceSHConstants::<lambda_1>::operator ()
 CRenderDeviceBase::GetDeviceSpecificBuffer
@@ -2282,32 +2269,34 @@ CRenderDeviceBase::GetSwapChainFromTexture
 CRenderDeviceBase::GetTextureViewIndex
 CRenderDeviceBase::InitPerFrameMemoryStack
 CRenderDeviceBase::OnPresentCompleted::<lambda_1>::operator ()
-CRenderDeviceBase::Present(633): 
+CRenderDeviceBase::Present(634): 
 CRenderDeviceBase::QueueFallbackTextureCopy
 CRenderDeviceBase::ResizeEngineWindow
 CRenderDeviceBase::SetCubemapRadianceSHConstants
 CRenderDeviceBase::SetCubemapRadianceSHConstants::<lambda_1>::operator ()
-CRenderDeviceBase::StartRenderDocCapture(3508): 
+CRenderDeviceBase::StartRenderDocCapture(3519): 
 CRenderDeviceDx11::AcquirePooledDynamicVertexBuffer
-CRenderDeviceDx11::BeginSubmittingDisplayLists(1177): 
+CRenderDeviceDx11::BeginSubmittingDisplayLists(1178): 
 CRenderDeviceDx11::CheckFormatSupport
 CRenderDeviceDx11::CreateDefaultShaders
 CRenderDeviceDx11::CreateRasterizerStateFromDesc
 CRenderDeviceDx11::DeleteQueryObject
-CRenderDeviceDx11::DeleteQueryObject(4098): 
+CRenderDeviceDx11::DeleteQueryObject(4111): 
 CRenderDeviceDx11::DestroyGeometryShader::<lambda_1>::operator ()
 CRenderDeviceDx11::DiscardCommandBuffers
 CRenderDeviceDx11::EndQuery - Issued on an in-progress query!
 CRenderDeviceDx11::GetCopyPixelShader
 CRenderDeviceDx11::GetGPUBufferDeviceAddress
+CRenderDeviceDx11::GetIndexBufferDeviceAddress
 CRenderDeviceDx11::GetResolvePixelShader
+CRenderDeviceDx11::GetVertexBufferDeviceAddress
 CRenderDeviceDx11::InitDevice
 CRenderDeviceDx11::MultiDrawIndexedInstancedIndirect
 CRenderDeviceDx11::OnPresentCompleted::<lambda_1>::operator ()
 CRenderDeviceDx11::ProcessCompileShaderJob
-CRenderDeviceDx11::QueueReleaseShader(3091): 
+CRenderDeviceDx11::QueueReleaseShader(3092): 
 CRenderDeviceDx11::ReadTexturePixels
-CRenderDeviceDx11::ReadTexturePixels(2037): 
+CRenderDeviceDx11::ReadTexturePixels(2038): 
 CRenderDeviceDx11::SetHardwareGammaRamp: Unable to set gamma controls!
 CRenderDeviceDx11::SetMode: Previous mode has not been shut down!
 CRenderDeviceMgrBase::AddDeviceEventListener
@@ -2736,7 +2725,6 @@ ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
 ConsecutiveBadFaxLines
-Construction is only allowed from the resolve function
 ConvertPNGToRGBA
 CopyGPUBufferHiddenStructureCount failed - invalid destination buffer.
 CopyGPUBufferHiddenStructureCount failed - invalid source buffer.
@@ -3082,7 +3070,7 @@ D8|$<tJI
 D8|$Ht
 D8|$`t
 D9 u2D9
-D9%&x,
+D9%Vq,
 D9(tT
 D9L$ 
 D9aXt3E
@@ -3114,10 +3102,10 @@ D;d$,
 D;d$0r
 D;d$4|
 D;e4|
-D;eou
 D;l$`
 D;l$t
 D;l$x
+D;mou
 D;s(u
 D;sHu
 D;t$0
@@ -3205,7 +3193,6 @@ DeleteCriticalSection
 Deleting texture with outstanding streaming request (%s)
 DemoUpconverterVersion001
 DepalettizeImage
-DependencyClass::m_pDependencyLL == nullptr
 Desktop-friendly Fullscreen
 DestroyShader
 Destroying PoolAllocator with outstanding allocations
@@ -3285,6 +3272,7 @@ EXz	u
 E_FAIL
 E_INVALIDARG
 E_OUTOFMEMORY
+EarlyInit_Tier0
 EconItemToolModel_001
 EgLcmwH
 Egv5A
@@ -3502,7 +3490,6 @@ GetActiveWindow
 GetBufferSizeInBytes() % 4 == 0
 GetBufferType() != RENDER_BUFFER_TYPE_DYNAMIC
 GetBufferType() == RENDER_BUFFER_TYPE_SEMISTATIC
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -3524,6 +3511,7 @@ GetForegroundWindow
 GetFullPathNameW
 GetGPUBufferDeviceAddress not supported on DX11
 GetGPUFrameTimeMS called without setting RENDERDEBUGFLAG_ENABLE_GPU_TIMESTAMPS.
+GetIndexBufferDeviceAddress not supported on DX11
 GetLastActivePopup
 GetLastError
 GetLocaleInfoEx
@@ -3570,6 +3558,7 @@ GetTypeInfo( nType ).m_nSizeInBytes <= sizeof( s_pUndefinedValue )
 GetUserDefaultLCID
 GetUserDefaultLocaleName
 GetUserObjectInformationW
+GetVertexBufferDeviceAddress not supported on DX11
 GetWindowThreadProcessId
 Gf95)1&!
 GpL;E
@@ -3615,30 +3604,25 @@ H-^Eu
 H3N I
 H4IcH8H
 H9(tO
-H9-p&G
 H9.u4
 H90u'
-H95 +F
-H95$$F
-H95+&F
-H95@+F
-H95h+F
+H95,+F
+H95`+F
+H95d$F
+H95k&F
 H97u+A
 H98t$H
-H9="l/
-H9=*Y/
-H9=:`/
-H9=:d/
-H9=JT/
-H9=R[/
-H9=S3F
-H9=Za/
-H9=bf/
-H9=bh/
-H9=jX/
-H9=jg/
-H9=rV/
-H9=zc/
+H9=2P/
+H9=6"F
+H9=:N/
+H9=:]/
+H9=B[/
+H9=R"F
+H9=Re/
+H9=ZR/
+H9=jY/
+H9=j]/
+H9=zM/
 H9D$0
 H9D$8t%
 H9D$8t0
@@ -3780,7 +3764,6 @@ HostComputer
 HostStateMgr001
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
-I	V_snprintf
 I+4$H
 I91u9I
 I9F s
@@ -3911,7 +3894,6 @@ Insufficient memory (case %d)
 Intel D3D11 extensions initialized.  GPU info
 Intel extension library loaded.
 Intel extension library version supported.  HWFeatureLevel: %u APIVersion: %u Revision: %u.
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal error, unknown tag 0x%x
 InteroperabilityIFDOffset
@@ -3954,6 +3936,7 @@ IsDynamicBufferType( GetBufferType() )
 IsGrowable()
 IsIdxValid(i)
 IsInList(before)
+IsPowerOfTwo( nAlignment )
 IsProcessorFeaturePresent
 IsValid()
 IsValidCodePage
@@ -4001,6 +3984,7 @@ K}*n:
 K~Je#>!
 L	B I
 L	G H;
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ ;H8
@@ -4063,7 +4047,6 @@ L$89L$<
 L$89L$@
 L$8;L$0
 L$8E+L$
-L$8E3
 L$8H3
 L$8H;
 L$8H=
@@ -4155,10 +4138,12 @@ L80H;
 L80L;
 L80M;
 L9#tUH
-L9%+E;
 L93uf
 L97vH
-L9=&}.
+L9=.~.
+L9=Vv.
+L9=]{?
+L9=u}.
 L9?tR
 L9AHA
 L9aHA
@@ -4431,7 +4416,6 @@ NvAPI_D3D_SetLatencyMarker returned error '%d'.
 NvAPI_D3D_SetLatencyMarker( PC_LATENCY_PING ) returned error '%d'.
 NvAPI_D3D_SetSleepMode() return error '%d'
 NvAPI_D3D_Sleep returned error '%d'.
-O	V_sscanf
 O!t/H
 O*9y]
 O8HcY
@@ -4452,9 +4436,6 @@ OpenSCManagerW
 OpenServiceW
 OpenSharedResource failed
 Opened temporary file %s
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orientation
 OriginalRawFileData
 OriginalRawFileName
@@ -4478,7 +4459,7 @@ PA^A]^
 PA^_[
 PA^_^
 PA_A]A\_]
-PA_A^A\][
+PA_A^A\^]
 PA_A^A\_]
 PA_A^A\_^][
 PA_A^A]A\_
@@ -4524,7 +4505,6 @@ PixarLog
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Plat_CPUTickFrequency
-Plat_DebugPrint
 Plat_EventActivityIdControl
 Plat_EventRegister
 Plat_EventUnregister
@@ -4541,6 +4521,7 @@ Plat_GetMonitorBounds
 Plat_GetMonitorCount
 Plat_GetOSType
 Plat_GetProcAddress
+Plat_GetTime
 Plat_GetWindowClientSize
 Plat_GetWindowClientSizeOsSpecific
 Plat_GetWindowMonitorIndex
@@ -4591,6 +4572,7 @@ Quantizing to %d colors
 QueryPerformanceCounter
 QueryPerformanceFrequency
 QueryServiceConfigW
+R	V_sscanf
 R	p!"
 R Lck
 R Lcn
@@ -4736,6 +4718,7 @@ RenderSystem/Use32BitDepthBuffer
 RenderSystem/Use32BitDepthBufferWithoutStencil
 RenderSystem/UseHardwareGammaRamp
 RenderSystem/UseReverseDepth
+RenderSystem/VertexBufferPoolSizeMB
 RenderUtils_001
 Rendering/Total GPU Memory Budget (MB)
 Rendering/Total GPU Memory Used (MB)
@@ -4953,7 +4936,6 @@ SwapChainColor.vtex
 SwapChainDepth.vtex
 SwapChainTrueColor.vtex
 SwizzlePlanarScanlineToInterleaved
-T	V_stricmp_fast
 T$ D;
 T$ E3
 T$ Ei
@@ -4961,6 +4943,7 @@ T$ H9
 T$ H;
 T$ Mc
 T$ fA
+T$ fI
 T$ fff
 T$$A;
 T$$E;
@@ -5011,8 +4994,7 @@ T$pD+
 T$pfD
 T$xD;{
 T$xE3
-T%\2!
-T-#Y 
+T%L+!
 TD u"E;
 TEX read request: %d KB; %s
 TEXMAN: %s LoadStreamingData (%s)
@@ -5241,16 +5223,16 @@ UserSettingsPathID
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_strlower_fast
 V6E>`"(5
 VATAUAVAWH
-VATAUAVH
+VATAVAWH
 VAUAVH
 VAVAWH
 VApplication001
 VAsyncFileSystem2_001
 VAvi001
 VB "%s" : Attempted to create too big of a dynamic vertex buffer!
+VBPool
 VBik001
 VConComm001
 VD$Pf
@@ -5344,6 +5326,7 @@ VsInputSignatureElement_t::Schema_VerifyBindingIsRegistered
 VsInputSignature_t
 VsInputSignature_t::Schema_VerifyBindingIsRegistered
 Vulkan
+W	V_stricmp_fast
 W%	s;M@
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
@@ -5393,12 +5376,10 @@ X AVH
 X D8e
 X VAVAWH
 X!t5~
-X%`Y 
-X%zG!
-X-]<'
-X-xY 
-X5#D%
-X5w>'
+X%PR 
+X%U6'
+X%j@!
+X-hR 
 XA^A]^]
 XA^_^[
 XA_A\_[
@@ -5416,13 +5397,16 @@ XYZ, Luv
 X_^[]
 X|$ A
 X|$8E
-Y%>U 
-Y--<'
-Y-l$'
-Y5)?'
+Y	V_strlower_fast
+Y%.N 
+Y%<7'
+Y%}6'
+Y-(z!
+Y-]z!
+Y519'
 Y9"SD
-Y=Qt)
-Y=S<!
+Y="-&
+Y=C5!
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -5446,7 +5430,6 @@ ZeroStride Vertex buffer created!
 Zod(^?
 Zpm"U
 [	UoA
-[	V_strtoi64
 [    Discard |    NoTear]
 [*ncd>0
 [-&LMb#{'
@@ -5540,8 +5523,9 @@ Zpm"U
 \$pE3
 \$pHc
 \$xu3M
-\5=D%
-\=G8!
+\%Z|!
+\5<e&
+\=71!
 \mfpmp.exe
 ])6M>&
 ]>)2X
@@ -5550,9 +5534,9 @@ Zpm"U
 ]J<0"0i3
 ]Lu*E;|$
 ]oB;\7(
+^	V_strtoi64
 ^,tyI
 ^<V7w
-^R['i
 ^RfN>
 ^oEZ_
 _8Hcs
@@ -6077,7 +6061,6 @@ future already retrieved
 gACol[row][pix].b == 0
 gACol[row][pix].g == 0
 gACol[row][pix].r == 0
-gI1n^
 g_TSPointerListNodes.IsAllocationWithinPool( pCurrent )
 g_pApplication->GetGameMode( ) == APPLICATION_IS_GAME
 g_pEngineServiceMgr is NULL. Display mode information unavailable
@@ -6107,6 +6090,7 @@ hA_A^
 hA_A^A]A\_^[]
 hA_A^A]A\_^][
 hDst != INDEX_BUFFER_HANDLE_INVALID && hSrc != INDEX_BUFFER_HANDLE_INVALID && hDst != hSrc
+hDst != VERTEX_BUFFER_HANDLE_INVALID && hSrc != VERTEX_BUFFER_HANDLE_INVALID && hDst != hSrc
 hResource->m_nRefCount > 0
 hResource->m_pData == nullptr || hResource->m_pData == GetErrorResource()
 hT$0fA
@@ -6292,7 +6276,6 @@ lineOrder
 localize
 log10
 ltmX.
-lzss=
 m0k0$
 mL+7H
 mPu=H
@@ -6364,6 +6347,7 @@ m_pName
 m_pOwner && m_CompletionFunc
 m_pOwner && m_Func
 m_pPooledIndexBufferAllocator->IsValidHandle( hHandle )
+m_pPooledVertexBufferAllocator->IsValidHandle( hHandle )
 m_pQueryGpuTimeDisjoint->GetData() failed!
 m_pQueryGpuTime[0]->GetData() failed!
 m_pQueryGpuTime[1]->GetData() failed!
@@ -6524,48 +6508,52 @@ nvapi_QueryInterface
 n|$`fA
 o KPBf
 o$$fA
-o%-9&
-o%1,&
-o%4<>
-o%F4>
-o%di&
-o%jl&
-o%lU&
-o%nA&
-o%w.>
-o%{(&
-o%{=&
+o%$Z&
+o%*j&
+o%-n&
+o%71'
+o%8	*
+o%S<>
+o%Zq&
+o%\D&
+o%t7>
+o%{8&
 o,$fD
-o-'z&
-o-20&
-o-;o&
-o-`n*
-o-e9&
-o-oF&
+o-/'&
+o-3h&
+o-Ed&
+o-UZ&
+o-W<&
+o-en&
+o-kx&
+o-l:'
+o-x8&
+o-{L&
 o47Lc
-o5 J&
-o53F&
-o55J&
-o5;7'
-o5V_&
-o5Vo*
-o5eS&
-o5o4&
-o5w.&
-o=	C&
-o=*g&
-o=-0&
-o=3t&
-o=Fm&
-o=GE&
-o=JC:
-o=Ub&
-o=X_&
-o=],&
-o=se&
-o=uF:
-o=zR:
-o=}?:
+o51G&
+o54h&
+o5Mo0
+o5X>&
+o5h*&
+o5vd&
+o5|j&
+o="*:
+o=.f&
+o=.j&
+o=8=:
+o=@X&
+o=A*:
+o=F5:
+o=PO&
+o=R0&
+o=RO:
+o=UW:
+o=YY:
+o=a0:
+o=bR:
+o=cL&
+o=n1'
+o=r4&
 oAPfD
 oD$ f
 oD$ fA
@@ -6671,7 +6659,6 @@ pExtensionWithDot[ 0 ] == '.'
 pField == pFieldBase + nFields
 pHeader->m_nHeaderVersion == RESOURCE_FILE_HEADER_VERSION
 pInfo->m_spec.m_nNumMipLevels == texSpec.m_nNumMipLevels
-pMemory[i] == 0
 pNewTextureInfo->hRenderTexture == hTexture || pNewTextureInfo->hRenderTexture == RENDER_TEXTURE_HANDLE_INVALID
 pNode != nullptr
 pNode->m_handle.m_Size >= nAllocSize
@@ -7101,10 +7088,10 @@ t?HcS
 t@9+u,9s
 t@H95
 t@McO4
-tAH9=
+tAH9=!TA
 tBMcW<IcO@Lc
 tC@8-
-tC@85
+tC@85rm%
 tDD8%
 tDD85
 tEHcR
@@ -7116,10 +7103,10 @@ tIf9wbH
 tKJcD
 tNfE;
 tOD8-
-tOD8-f3$
+tOD8-V,$
 tOt'F
 tP@87uKH
-tQH95G&F
+tQH95
 tQfD9 tK
 tRLcY
 tSH9X t
@@ -7179,7 +7166,7 @@ trying to bind a deleted shader
 tvH9}
 twIcF
 tyfD9 tsH
-t}H9=6"F
+t}H9=v"F
 u	fD;A
 u"D;{
 u#f;N
@@ -7299,7 +7286,7 @@ wine_get_version
 wlt\D
 wn>Jj
 workGroupOffset
-wpD8-W
+wpD8-
 wpL9w`t$HcO 
 writing renderdoc capture to %s
 wrong protocol type
@@ -7492,7 +7479,6 @@ zY;>u:m
 }gE8}
 }q;{$
 ~ $s%r
-~$E>#
 ~(fE;
 ~,*u<I
 ~,*uEI

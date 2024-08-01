@@ -6,7 +6,6 @@
 	6p7MOf
 	V_frexpf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncat
 	_V_strncpy
 	_V_strnicmp_fast
@@ -63,11 +62,13 @@
  Hc2H
  Hc9E3
  Hc9H
+ Hc9I
  Hc9L
  HcA(E3
  Hci E3
  Hci H
  Hci L
+ HcyPA
  HcyPH
  Lc)H
  Lc1H
@@ -75,6 +76,7 @@
  delete
  delete[]
  new[]
+ piN%L)
  tDE3
 !!SyncExtref!!%s
 !"Invalid Rbf Function Specified"
@@ -84,7 +86,6 @@
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
 !IsInternalTypeShortArray( Internal_Type() )
 !IsValid()
-!bLooksLikeABug
 !destBlock.IsReadOnly() && !destBlock.IsExternalMemory()
 !g_pRenderMeshManager
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
@@ -108,6 +109,8 @@ $+T$xL
 %f %f %f %f
 %s (Color)
 %s (Material)
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s allocation count overflow
 %s allocation count overflow( %llu > %llu )
 %s allocation count overflow( add %llu + current %llu > max %llu )
@@ -128,8 +131,6 @@ $+T$xL
 &YA1I
 ',=?k
 'p7M}f
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( const void * ) &other != ( const void * ) this
 ( draw.IndexCount() % 3 ) == 0
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
@@ -151,6 +152,7 @@ $+T$xL
 (A_A^A\[
 (A_A^A\]
 (A_A^A]]
+(A__][
 (D$ H
 (D$0D
 (D$0H
@@ -187,9 +189,6 @@ $+T$xL
 (l$@D
 (l$`D
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (size_t)pNode % TSLIST_NODE_ALIGNMENT == 0
 (t$ A
 (t$ D
@@ -293,7 +292,6 @@ $+T$xL
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 ,/<-w
 ,HcD;LH
 ,W5y+
@@ -471,6 +469,7 @@ $+T$xL
 .xdata
 .xdata$x
 .{I_i
+/	V_logf
 />58d%
 /D$Ps
 /D$Ts
@@ -490,6 +489,7 @@ $+T$xL
 0A^A]]
 0A^^]
 0A^_^
+0A^_^][
 0A_A]]
 0A_A^A\
 0A_A^A]
@@ -514,7 +514,7 @@ $+T$xL
 220323000000Z
 220801000000Z
 230714000000Z
-240723235040Z0/
+240801161805Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -544,9 +544,7 @@ $+T$xL
 6OB,n_
 6p7MOf
 70503
-7cO^s
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8AGRPu9
 8ASEQt6
 8A_A]_^
@@ -569,7 +567,6 @@ $+T$xL
 99~CE
 9>~ZH
 9D$ t
-9GpukH
 9HcC0L
 9W4~IH
 9_H~-
@@ -586,9 +583,9 @@ $+T$xL
 9|$Pu
 9|$Xu
 9|$hu
-:	V_qsort_s
 :!L$ 0
 :!|$ 0E
+;	V_powf
 ;?0123456789:;<=>?
 ;H9>&X
 ;I9}(tiH
@@ -609,6 +606,7 @@ $+T$xL
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
+=	V_qsort_s
 =%H5<mN
 =3vmdlkeys4
 ==MQ?
@@ -711,6 +709,7 @@ $+T$xL
 ?{}()'
 @.data
 @.reloc
+@8-qv
 @8/tO3
 @84)u
 @8j(t
@@ -759,6 +758,7 @@ $+T$xL
 @SUVWAVAWH
 @SUVWAVH
 @SUVWAWH
+@SUWAWH
 @SUWH
 @SVATAUH
 @SVWATAUAVAWH
@@ -768,7 +768,6 @@ $+T$xL
 @SWATAVAWH
 @SWATH
 @SWAWH
-@SiA 
 @UATAUAVAWH
 @UATAVAWH
 @UATAWH
@@ -836,8 +835,8 @@ A]A\_^[]
 A]A\_^]
 A^A\[]
 A^A\_]
+A^A\_^[]
 A^A]A\
-A^A]A\_^[
 A^A]A\_^[]
 A^A]A\_^][
 A^A]^[]
@@ -854,7 +853,7 @@ A_A]A\_^
 A_A]A\_^[
 A_A]]
 A_A]_^[
-A_A]_^[]
+A_A]_^][
 A_A^A\
 A_A^A\_]
 A_A^A\_^
@@ -872,6 +871,7 @@ A_A^]
 A_A^^
 A_A^_
 A_A^_^]
+A__^]
 A__^][
 ActivityList_IndexForName
 ActivityList_RegisterPrivateActivity
@@ -924,13 +924,12 @@ AttachmentHandle_t
 AttachmentHandle_t::Schema_VerifyBindingIsRegistered
 August
 B(I9A(
+B1IYx
 B5G5R5A1_UNORM
 B5G6R5_UNORM
 B8,2t
 B8G8R8A8_UNORM
 B8G8R8X8_UNORM
-B;|5P|
-B;|6P|
 B<=(;|
 B<=(;|?
 B>Bh9
@@ -1032,7 +1031,6 @@ C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
 C:\buildworker\citadel_rel_win64\build\src\public\meshsystem\meshinstance.h
 C:\buildworker\citadel_rel_win64\build\src\public\meshsystem\morphset.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\physicslib\femodel_bonemap.h
 C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3typemanager.h
@@ -1084,6 +1082,7 @@ C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\utlmultijobprocessor.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier2\schemabindings.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier2\tier2.cpp
+C<RS]
 C@@8,
 C@@8,8
 C@H9,
@@ -1411,11 +1410,6 @@ CMorphSetData::KV3TransferLoad_Impl
 CMorphSetData::KV3Transfer_DefaultKeys_Impl
 CMorphSetData::Schema_VerifyBindingIsRegistered
 CONTENT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 COrientConstraint
 COrientConstraint::KV3TransferLoad_Impl
 COrientConstraint::KV3Transfer_DefaultKeys_Impl
@@ -1454,7 +1448,7 @@ CRenderMesh
 CRenderMesh::CompactBLAS::<lambda_1>::operator ()
 CRenderMesh::CompactBLAS::<lambda_2>::operator ()
 CRenderMesh::CreateBufferResources
-CRenderMesh::CreateBufferResources(821): 
+CRenderMesh::CreateBufferResources(838): 
 CRenderMesh::CreateBufferResources::<lambda_1>::operator ()
 CRenderMesh::KV3TransferLoad_Impl
 CRenderMesh::KV3Transfer_DefaultKeys_Impl
@@ -1981,7 +1975,6 @@ CVertexDataBase<struct SkeletonMeshVertex_t>::~CVertexDataBase
 CWeakHandle<struct InfoForResourceTypeCModel>::InitUntyped
 CWeakHandle<struct InfoForResourceTypeCRenderMesh>::InitUntyped
 CWeakHandle<struct InfoForResourceTypeIAnimGraphModelBinding>::InitUntyped
-CZ=xTqN<<
 C`9CHH
 C`H94
 Cables
@@ -2008,7 +2001,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 Control block error for '%s'
 ConvertKV3Format
 ConvertV1MeshFlags
@@ -2019,7 +2011,6 @@ CreateEventW
 CreateFileW
 CreateInterface
 CxH94
-D	V_sincosf
 D!l$xA
 D$ 	!O3
 D$ "K
@@ -2107,12 +2098,12 @@ D$@BR
 D$@E3
 D$@H+
 D$@H;
-D$@Hc
 D$@ff
 D$@|R
 D$HE3
 D$HE9x`t
 D$HH;
+D$HHc
 D$HL9gXt
 D$PBR
 D$PE3
@@ -2129,7 +2120,6 @@ D$hH;
 D$pH;
 D$pHc
 D$pL;
-D$xH;
 D$xHcU
 D$|E3
 D16_UNORM
@@ -2169,7 +2159,6 @@ DSTFt%
 December
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -2207,6 +2196,8 @@ ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 ERROR: CreateProjectedDecal cannot find scene world %p!
 ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!
 EXPORTSYSTEM_INTERFACE_VERSION_001
+E`Lc~
+EarlyInit_Tier0
 EconItemToolModel_001
 Empty VB array found for this draw descriptor
 EncodePointer
@@ -2314,7 +2305,6 @@ EventList_GetEventType
 EventList_IndexForName
 ExitProcess
 ExternalNameForInternalType
-F	V_sinf
 F Lcx
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to register all schema data: %s
@@ -2394,7 +2384,6 @@ FLEX_OP_SIN
 FLEX_OP_SQRT
 FLEX_OP_SUB
 FORCE_UINT
-F`Lcf
 Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
 Failed to call CBaseIntrospectedToKV3TypeManager::Init
@@ -2425,6 +2414,7 @@ Found existing value when inserting into tree - replacing existing value with ne
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+G	V_sincosf
 G$L9t$ t
 G(+G$
 G0H9C0u3
@@ -2470,7 +2460,6 @@ GameUIService_001
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -2504,6 +2493,7 @@ GetTempPath2W
 GetThreadLocalStackAllocator
 GetTypeInfo( nType ).m_nSizeInBytes <= sizeof( s_pUndefinedValue )
 GetValueShortArray
+GhF	$(I
 Gl$(L
 Gl$XE
 Gt$(H
@@ -2517,23 +2507,18 @@ H+\$H
 H-^Eu
 H9(tO
 H9+t	H
-H9-4r
-H9-:\
-H9-Or
-H9-W]
-H9-Y\
-H9-e[
-H9-fq
-H9-r]
+H9-/f
+H9-Fe
+H9-dd
 H93t	H
-H95'E
-H957v
-H95WA
-H95gB
+H95-"
+H95G6
+H95W7
+H95gh
 H97u+A
 H98t2
-H9=5<
-H9=T;
+H9=J.
+H9=e.
 H9D$pt
 H9\$`u	H
 H9k H
@@ -2624,13 +2609,13 @@ Hcp HcI
 Hcu`M
 Hcw +
 Hcw4HcC(;
-Hcw`A
+HcwpA
 HcyxE3
 Hc{PD
 Hc{p;
 HelpSystem_001
 HostStateMgr001
-I	V_snprintf
+I	V_sinf
 I+4$H
 I9.t	I
 I9|6 t
@@ -2784,7 +2769,6 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be VPhysXC
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be VPhysXJoint_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be VPhysXRange_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be VPhysics2ShapeDef_t)
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Invalid access of CConVarRef for '%s'
@@ -2822,8 +2806,6 @@ KV3TransferSchema_ClassName::<lambda_1>::operator ()
 K`A;F
 KeyValueCache001
 KeyValues3
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::ArrayAddToTail
 KeyValues3::ArrayInsertMultipleBefore
 KeyValues3::CopyFrom
@@ -2859,6 +2841,7 @@ KeyValues3::SetMemberFloatArray
 KeyValues3::TransferOwnershipOfBinaryBlob
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!|$(L!
 L$ E3
@@ -2873,6 +2856,7 @@ L$ SUVWAVH
 L$ SVWH
 L$ SWH
 L$ UVATAVAWH
+L$ UVWATAUAVAWH
 L$ UVWAVAWH
 L$ VWATAUAVAW
 L$ VWAVH
@@ -2888,7 +2872,7 @@ L$(fD
 L$0E3
 L$0H3
 L$0H;
-L$0H;M0
+L$0H;M@
 L$0HcGlH
 L$0Hct$ H
 L$0Hk
@@ -2898,6 +2882,7 @@ L$0fD
 L$8E3
 L$8H3
 L$8fA
+L$@;w
 L$@;|
 L$@H3
 L$@I;
@@ -2913,16 +2898,15 @@ L$pD+
 L$pH9
 L$pIc
 L$xE3
+L$xH+
 L9!t~
 L9#u/H
-L957C
-L95:5
-L95U5
-L95^2
-L95w4
-L95y2
-L9=9U
-L9=`T
+L9-i:
+L955&
+L95W%
+L95n#
+L9=9F
+L9=`E
 L9?t	H
 L9d$ t
 L9d$(t
@@ -2963,6 +2947,7 @@ LcKpH
 LcL$$L
 LcL$0H
 LcL$hH
+LcMPM
 LcT$dA
 Lcc0Mcn`A
 LccxE
@@ -3035,6 +3020,7 @@ MPropertyEditClassAsString
 MPropertyFriendlyName
 MPropertySuppressEnumerator
 MRPHt*
+M\$pH
 MakeStringToken
 MapListService_001
 March
@@ -3111,16 +3097,12 @@ No schema binding info for enum '%s'
 No value found when unserializing key/value pairs for utldict
 Not safe to 'new' this class due to alignment requirements
 November
-O	V_sscanf
 O8HcB
 O@IcZ
 ORIENT
 October
 Only the last override will be set!
 OrLockType
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Org(%.3f,%.3f,%.3f) Ang(%.3f,%.3f,%.3f)
 OverlayProjectionDirection
 P8H=vmdl
@@ -3177,9 +3159,9 @@ Physics
 Physics interface checksum is 0x%08X, expected 0x%08X. One of the binaries is out of date, please rebuild %s.
 PhysicsBuilderMgr001
 Plat_CPUTickFrequency
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_NonFatalErrorFunc
 Plat_RegisterModule
@@ -3197,7 +3179,7 @@ Quaternion
 QuaternionAverageExponential
 QuaternionStorage
 QueryPerformanceCounter
-Qw%*w
+R	V_sscanf
 R.num_cols() == nSampleCount
 R.num_rows() == nSampleCount
 R10G10B10A2_TYPELESS
@@ -3330,15 +3312,17 @@ SUAUH
 SUVWATAUAVAWH
 SUVWATAUAVH
 SUVWATAVAWH
+SUVWAUAWH
+SUVWAVH
+SUWAUH
 SVATAUAWH
 SVATH
 SVAUH
 SVWATAUAVAWH
-SVWATAUAVH
 SVWATAUAWH
 SVWAWH
 SWATAWH
-SWAVAWH
+SZn{G
 Saturday
 SceneSystem/ComputeShaderSkinning
 SceneSystem/DynamicDecalsUseShrinkWrap
@@ -3502,12 +3486,10 @@ StatsService_001
 SteamAudio001
 Sunday
 SurfacePropertiesList
-T	V_stricmp_fast
 T$ E3
 T$ H+
 T$ H;
 T$ Ic
-T$"D;
 T$(E3
 T$0E3
 T$0Li
@@ -3551,6 +3533,7 @@ Trying to override a material with an invalid draw call index
 Trying to override the same draw call with two different materials!
 Tuesday
 TypeManager
+U$#S{
 UATAUAVAWH
 UATAWH
 UAVAWH
@@ -3562,8 +3545,8 @@ USVAUAVH
 USVWATAUAVAWH
 USVWATAUAVH
 USVWATAUI
+USVWATAVH
 USVWAUAVAWH
-USVWAUAWH
 USVWAVH
 USWAUAVH
 USWAWH
@@ -3582,9 +3565,9 @@ UVWATAVH
 UVWATAWH
 UVWAVAWH
 UVWAVH
+UVWAWH
 UWATAUAWH
 UWATAVAWH
-UWATAWH
 UWAUAVAWH
 UWAUH
 UWAVH
@@ -3609,7 +3592,6 @@ Untested code path - Morph layers without morphset/flex rules. Will try to map m
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_strlower_fast
 V6'?C
 V6E>`"(5
 VApplication001
@@ -3725,6 +3707,7 @@ VertexPaintTintColor
 VeryFast
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -3743,7 +3726,6 @@ WideCharToMultiByte
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
-WxHcwpH
 X!t5~
 X24_TYPELESS_G8_UINT
 X32_TYPELESS_G8X24_UINT
@@ -3755,6 +3737,7 @@ XA_A^_^][
 XA__[]
 XA__^[
 Xt7HH
+Y	V_strlower_fast
 Y9"SD
 YK @8op
 YL$(A
@@ -3763,11 +3746,14 @@ Y\$,A
 Yd$$A
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 ZdN=Y
+[ B;|5P|
+[ B;|6P|
 [K]taM?
 [fA9<
 [fE94
 [fE;A
 [idx=%d] "%s"
+\  JcD 
 \$ AVH
 \$ UAVAWH
 \$ UH
@@ -3811,6 +3797,7 @@ ZdN=Y
 \8(HcM
 ]0tTH
 ]J<0"0i3
+]c(_1y
 ]xLcc
 ^ ;^$t
 ^ Lc3D;s
@@ -3914,7 +3901,6 @@ b+GnH
 bAllocationCanFit
 bDidInsert
 bInserted
-bLegalTypeChange
 bOwnVBAndIB == m_bOwnVBAndIB && m_pFixedMeshDataOverride
 bReady == IsReadyToCompactResult_t::IS_READY
 bad address
@@ -3983,6 +3969,7 @@ d$`LccPL
 d$`fD
 d$`tLA
 d$dD;d$ltY
+d$pHcn0Mcu0L
 data_block
 dddd, MMMM dd, yyyy
 debris
@@ -4008,6 +3995,7 @@ ePA_A^A]A\_^]
 eSlow
 eVeryFast
 ehandle
+ekLmG
 elasticity
 embedded_animation
 embedded_distancefield
@@ -4099,7 +4087,6 @@ gfffG
 gfffffffH
 group_data_block
 h F9d5P~.H
-hA_A\_]
 hA_A^A]A\_^[]
 hA_A^_^][
 hCompact
@@ -4133,7 +4120,6 @@ invalid_parameter
 io error
 is a directory
 jj@0HK4
-jkw$!$
 k VWAUAVAWH
 k0i0$
 k@H9k(H
@@ -4178,6 +4164,7 @@ l$8Hk
 l$@A+
 l$@E3
 l$@Hc
+l$H9w
 l$HA_A^A]A\_^
 l$HE3
 l$HHc
@@ -4192,6 +4179,7 @@ l$`E3
 l$`I;
 l$hff
 l$pE3
+l$pM+
 l2|X/gGe
 legacy_models_supported
 log10
@@ -4422,6 +4410,8 @@ m_bTeleportTick
 m_bTopLevel
 m_bTranslationOnly
 m_bUseCompressedNormalTangent
+m_bUseForCollision
+m_bUseForOcclusion
 m_bUseShadowFastPath
 m_bUserFriendlyNameLong
 m_bUserFriendlyNameSealed
@@ -5087,7 +5077,6 @@ pInstance->m_pSceneObject
 pLoadFromMember
 pLoadFromValue != nullptr
 pMember
-pMemory[i] == 0
 pMeshInstance != nullptr
 pMeta
 pObject
@@ -5118,7 +5107,6 @@ pTraceData
 pTraceData->IsValidIndex( nId )
 pUtils->GetDataRegistrationFailed()
 pairs.Count() <= Min<int>( nCtrlCount, m_nBoneCount )
-pairs.Count() == nCtrlBonePairCount
 panorama
 particles_list
 permission denied
@@ -5158,7 +5146,6 @@ rolling
 rotation_vector
 row_ != NULL
 rowm1_ != NULL
-s0Y&l
 sName
 s_nConnectionCount > 0
 s_nRegistrationCount < V_ARRAYSIZE(s_pConnectionRegistration)
@@ -5208,6 +5195,7 @@ t$ WE3
 t$ WH
 t$ fE;
 t$ fff
+t$&A;
 t$(A^
 t$(E3
 t$(L9o
@@ -5235,7 +5223,6 @@ t$8L9t$ t
 t$8fD9uBt
 t$8~ H
 t$@9i ~7H
-t$@9w
 t$@E3
 t$@Hc
 t$@Ic
@@ -5253,7 +5240,6 @@ t$HI;
 t$HcI
 t$H~ H
 t$PH9t$@t
-t$PHcn0Mc~0
 t$Pu!I
 t$XE3
 t$XH9
@@ -5282,7 +5268,6 @@ tEHcR
 tELcp
 tHfD95
 tILcu
-tLL+4
 tPLc}
 tR@8:tM3
 tRLcY
@@ -5407,11 +5392,11 @@ x*D;AH}$Ic
 x7fff
 x>V6'
 x>V6'?C
+xA]_][
 xA^A]_^][
 xA^_^]
 xA_A^A\_
 xA_A^A]A\_^[]
-xA_A^_[
 xp;Ph}kH
 xpHc@hH
 xxHc@pL
@@ -5503,12 +5488,12 @@ y\PD>!
 }'fff
 }>;_$
 }EHcG
+}HLc7L
 }LuHO
 }PIcEHL
 }a;_$
 }k;^$
 ~6fff
-~HMcvH
 ~Nfff
 ~qj#k"
 ~t&LN

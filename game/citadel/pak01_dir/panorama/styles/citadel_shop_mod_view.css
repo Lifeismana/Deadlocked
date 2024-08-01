@@ -22,6 +22,11 @@ CitadelShopMod.canAffordMod,CitadelShopMod.owned
 	brightness: 1;
 }
 
+.gEditingBuilds CitadelShopMod.recommended
+{
+	wash-color: buildsLightColor;
+}
+
 CitadelShopMod.isActiveItem
 {
 	border-radius: 5px;
@@ -112,7 +117,7 @@ CitadelShopMod.owned .mod_backer
 	width: 22px;
 	height: 22px;
 	z-index: -1;
-	wash-color: colorGold;
+	wash-color: buildsLightColor&50;
 }
 
 .recommended .recommended_icon
@@ -137,7 +142,7 @@ CitadelShopMod.owned .mod_backer
 
 .recommended .modStatusCol
 {
-	background-color: offBlack&90;
+	background-color: buildsColor;
 }
 
 .owned .modStatusCol
@@ -377,6 +382,7 @@ CitadelShopMod.owned .mod_backer
 	ignore-parent-flow: true;
 	visibility: collapse;
 	border-radius: 5px;
+	z-index: 10;
 }
 
 .owned:hover #SellOverlay
@@ -454,6 +460,7 @@ CitadelShopMod.owned .mod_backer
 	ignore-parent-flow: true;
 	visibility: collapse;
 	border-radius: 5px;
+	z-index: 10;
 }
 
 .shopClosed CitadelShopMod:hover #ReturnToShop
@@ -484,6 +491,7 @@ CitadelShopMod.owned:hover #ReturnToShop
 	ignore-parent-flow: true;
 	visibility: collapse;
 	border-radius: 5px;
+	z-index: 10;
 }
 
 CitadelShopMod:hover #CantAfford
@@ -505,6 +513,77 @@ CitadelShopMod.canAffordMod:hover #CantAfford,CitadelShopMod.owned:hover #CantAf
 {
 	width: 100%;
 	color: #dc3939;
+	font-size: 16px;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#AddToBuild
+{
+	background-color: buildsDarkColor&f1;
+	width: 100%;
+	height: 100%;
+	ignore-parent-flow: true;
+	visibility: collapse;
+	border-radius: 5px;
+	z-index: 10;
+}
+
+.gEditingBuilds CitadelShopMod:hover #AddToBuild
+{
+	visibility: visible;
+}
+
+CitadelShopMod.recommended:hover #AddToBuild,CitadelShopMod.itemDisabled:hover #AddToBuild,#ShopModsSelectedBuild CitadelShopMod:hover #AddToBuild
+{
+	visibility: collapse;
+}
+
+.AddToBuildLabel
+{
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#AlreadyInBuild
+{
+	background-color: #000000f1;
+	width: 100%;
+	height: 100%;
+	ignore-parent-flow: true;
+	visibility: collapse;
+	border-radius: 5px;
+	z-index: 10;
+}
+
+.gEditingBuilds CitadelShopMod.recommended:hover #AlreadyInBuild
+{
+	visibility: visible;
+}
+
+#RemoveFromBuild
+{
+	background-color: rgba(187, 31, 31, 0.9);
+	width: 100%;
+	height: 100%;
+	ignore-parent-flow: true;
+	visibility: collapse;
+	border-radius: 5px;
+	z-index: 10;
+}
+
+.gEditingBuilds #ShopModsSelectedBuild CitadelShopMod:hover #RemoveFromBuild
+{
+	visibility: visible;
+}
+
+.AddToBuildLabel
+{
+	width: 100%;
 	font-size: 16px;
 	font-weight: bold;
 	vertical-align: middle;
@@ -553,7 +632,7 @@ CitadelShopMod.canAffordMod:hover #CantAfford,CitadelShopMod.owned:hover #CantAf
 	max-height: 50px;
 	text-overflow: shrink;
 	background-color: none;
-	font-family: "Retail Demo";
+	font-family: sans;
 	text-align: center;
 }
 

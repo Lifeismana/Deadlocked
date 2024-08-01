@@ -15,7 +15,6 @@
 	V_towlower
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_StringAfterPrefix
 	_V_StringAfterPrefixCaseSensitive
 	_V_strcspn
@@ -104,8 +103,8 @@ $Globals
 %s: %s
 %s[line %d:%d] 
 %s\%s_%08X%08X%08X%08X.vshadercache
+%{TjU
 &YA1H
-'	V_log10f
 ', type<
 ',=?k
 'AppendStructuredBuffer'
@@ -202,9 +201,6 @@ $Globals
 (end of input).
 (f*^[0
 (knNH
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$ H
 (t$ f
 (t$0H
@@ -213,9 +209,10 @@ $Globals
 (|$0f
 )>6{1n
 )D$ D
+)R]4M#
 )l$0H
 )t$ H
-*	V_log2f
+*	V_log10f
 *** ERROR! VS input struct member "%s" is missing semantic annotation!
 *** Error compiling UI visibility expression for variable "%s": %s
 *** Error compiling expression for attribute "%s": %s
@@ -303,20 +300,20 @@ $Globals
 +G,Hc
 +G,Lc
 +M<7>
++Uppn
 +Xt@(
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 , at <EOF>
 , at offset %d
 , near %s
-,+TSD
 ,/<-w
 ,0<	v
 ,0<	w
 ,T$XH
 ,W5y+
+-	V_log2f
 -Stop: 
 -end of input-(
 -memory-
@@ -389,6 +386,7 @@ $Globals
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
 // BDA $Globals
 // BDA $Globals Pushconstant
 // End $Globals
@@ -419,7 +417,7 @@ $Globals
 220323000000Z
 220801000000Z
 230714000000Z
-240723235021Z0/
+240801162244Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -440,11 +438,9 @@ $Globals
 6I]Dc
 6OB,n_
 70503
-70=6)
 77:1: element : ( struct_decl | function_definition | variable_definition[ false ] | constant_buffer | type_def | bindless_constant_def | auto_bindless_texture2d_binding | valve_compiler_option | slang_enum | slang_interface | slang_extension | semicolon= ';' );
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 7xicuU
-8	V_powf
 8/t[H
 88888
 888888
@@ -459,7 +455,6 @@ $Globals
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8H9]@t
-8Hc5W2
 8L$`t
 8L9l$pt
 8L9|$@t
@@ -473,6 +468,7 @@ $Globals
 9sh~G3
 9sh~I3
 : lexer error %d :
+;	V_powf
 ;G(uSL
 ;H9>&X
 ;I9}(tiH
@@ -761,7 +757,6 @@ C:\buildworker\citadel_rel_win64\build\src\bitmap\imageformat.cpp
 C:\buildworker\citadel_rel_win64\build\src\common\vfx\vfx_param.h
 C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
 C:\buildworker\citadel_rel_win64\build\src\mathlib\vmatrix.cpp
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
@@ -796,11 +791,6 @@ COMPARISON_MIN_MAG_POINT_MIP_LINEAR
 COMPARISON_MIN_POINT_MAG_LINEAR_MIP_POINT
 COMPARISON_MIN_POINT_MAG_MIP_LINEAR
 CONSTANT_REGISTER
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CShaderParamBuilder::AddAnnotation
 CShaderParamBuilder::AddFunctionAttribute::<lambda_1>::operator ()
 CShaderParamBuilder::AddFunctionAttribute::<lambda_2>::operator ()
@@ -924,14 +914,12 @@ ComparisonFunc
 Compile Targets
 CompileTargets
 Compute Shader
-Construction is only allowed from the resolve function
 ConsumeStructuredBuffer
 CorExitProcess
 CreateEventW
 CreateFileW
 CreateInterface
 CullMode
-D	V_sincosf
 D!l$xA
 D$ E3
 D$ L;
@@ -1004,12 +992,12 @@ DIGIT
 DXC_DESCRIPTOR_SPACE
 DXT1_ONEBITALPHA
 DXT5_NM
+Da$Z]
 Dd$pL
 December
 DefaultSamplerState
 DeleteCriticalSection
 Deleting old shadercache file: %s
-DependencyClass::m_pDependencyLL == nullptr
 DepthBias
 DepthBiasClamp
 DepthClipEnable
@@ -1060,6 +1048,7 @@ ERROR!
 ESC_SEQ
 EXPONENT
 Early exit
+EarlyInit_Tier0
 EncodePointer
 EnterCriticalSection
 Error adding shader to cache
@@ -1077,7 +1066,6 @@ External descriptor set %s redeclared with different bind slots (%d vs %d)
 ExternalDescSet
 ExternalDescriptorSet
 Extraneous token
-F	V_sinf
 FEATURES
 FLOATLITERAL
 FLOATSUFFIX
@@ -1103,6 +1091,7 @@ FreeEnvironmentStringsW
 FreeLibrary
 Friday
 Function %s() expects %d arguments. Found %d.
+G	V_sincosf
 GD$H3
 GL$(D
 GL$8D
@@ -1118,7 +1107,6 @@ Gd$PH
 Gd$`M
 Geometry Shader
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -1183,7 +1171,6 @@ HL9NLt
 HL9NLt	
 HLSL lexer encountered %d %s
 HLSL parser encountered %d %s
-Hc5H1
 Hc;;{
 HcApD;
 HcD$@
@@ -1202,7 +1189,7 @@ Hc{h;{xu
 HeightBlend
 HeightCorrection
 HighPrecisionBlendEnable
-I	V_snprintf
+I	V_sinf
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
 I9>tO3
@@ -1232,7 +1219,6 @@ IndependentBlendEnable
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
 InitializeSListHead
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 InvTextureDim
 InvViewportSize
@@ -1256,6 +1242,7 @@ K0HcQ
 KERNEL32.dll
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!|$(L!
 L$ E3
 L$ I;
@@ -1394,12 +1381,8 @@ NV_NULL
 Newline in string literal
 No closing */ before end of file
 November
-O	V_sscanf
 OCTAL_ESC
 October
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 PACK_OFFSET
 PA_A^A]A\_^]
 PAq=?Mp#
@@ -1427,7 +1410,6 @@ Pixel Shader
 Pixel Shader Render State
 PixelFragment
 PixelShader
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
@@ -1443,7 +1425,9 @@ Preprocessed HLSL code
 ProcessUvScaleAnnotation
 Pz}b!
 QL;PLt
+QaUH7
 QueryPerformanceCounter
+R	V_sscanf
 R11_EAC
 R16G16_UINT
 R16_UINT
@@ -1578,7 +1562,6 @@ StructuredBuffer
 SubsurfaceProfile
 Sunday
 Swizzle operation only supports up to four channels.
-T	V_stricmp_fast
 T$ E3
 T$"E3
 T$@Hi
@@ -1588,6 +1571,7 @@ T$PE3
 T$PIc
 T$pE3
 T$pHk
+TQkN0
 TRILINEAR
 TUUUU
 TerminateProcess
@@ -1717,6 +1701,7 @@ VfxSetStateInDepthStencilDesc
 VfxSetStateInRasterizerDesc
 VfxStaticAnalyzeConstnessInternal
 Viewport
+W	V_stricmp_fast
 WATAUAVAWH
 WATAUAVH
 WAVAWH
@@ -1730,17 +1715,15 @@ WriteConsoleW
 WriteFile
 Wrong number of args left on stack (%i args, wanted %i)!
 Wrong number of items in value for annotation %s. Ignoring annotation.
-X	V_strspn
+Wu%n}J
 XA;ML|
 XA^A]A\[
-Xt["]
-Y%0`s
 Y9"SD
 Y>t$7?
 YL$XH
 YT$XH
-YpR/h
 Yt$@Hc
+[	V_strspn
 [AiC@
 [AiCD
 [AiCH
@@ -1815,6 +1798,7 @@ _sampler
 `A_A^A]A\_^]
 `RTTI
 `anonymous namespace'
+`cg-l
 `copy constructor closure'
 `default constructor closure'
 `dynamic atexit destructor for '
@@ -1849,7 +1833,6 @@ _sampler
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 antlr3BaseRecognizerNew
@@ -1930,6 +1913,7 @@ consumestructuredbuffer
 cs_5_0
 cs_6_0
 ctx.m_pVariableIndexToParamIndex[nVarIndex] < ctx.m_nNumAllParams
+d	V_tanf
 d$0x&H
 d$0x*H
 d$HE3
@@ -2069,7 +2053,6 @@ m_pCurrentStruct
 m_pParamForVarBeingParsed
 minPrecision
 mwtMH
-n"mPw7
 n03>Pu
 nIdx < 256
 nNumRows >= SHADER_PARAM_TYPE_VOID && nNumRows <= SHADER_PARAM_TYPE_COUNT
@@ -2084,6 +2067,7 @@ normalize
 normalize_safe
 ntelA
 num > 0
+n{N*&<
 oLu!H
 op != INVALID_OPERATOR
 operator
@@ -2098,7 +2082,6 @@ p0R^G'
 p;Y>u
 pA_A^A]A\_^[
 pBufferData != m_pCompiledExpressionBuffer
-pMemory[i] == 0
 pParamForFoundUvScaleVar
 pParamForFoundVar
 pStartOfFileNameDelimiter == nullptr
@@ -2237,6 +2220,7 @@ uioptions
 uistep
 uitype
 unorm float
+utl88
 uzKs@>
 v=Y]Bv
 v@D8s(t

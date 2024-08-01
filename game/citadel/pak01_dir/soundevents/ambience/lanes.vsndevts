@@ -3,16 +3,17 @@
 	amb.Outdoors.Smokescreen = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -19.000000
+		volume = -16.000000
 		volume_fade_in = 1.000000
 		volume_fade_out = 4.000000
-		spread_min = 109.994209
+		spread_min = 0.000000
 		spread_max_value = 0.000000
 		spread_max = 148.640823
 		spread_min_value = 0.000000
 		pitch = 0.950000
 		volume_mult = 3.000000
 		cull_at_distance = 1500.000000
+		volume_falloff_max = 800.000000
 		vsnd_files = "sounds/ambient/soundscapes/loops/smokescreen.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -35,6 +36,7 @@
 				0.000000,
 			],
 		]
+		vsnd_duration = 8.140000
 	}
 	amb.Indoors.WoodCreak = 
 	{
@@ -71,6 +73,7 @@
 				0.000000,
 			],
 		]
+		vsnd_duration = 4.665941
 	}
 	amb.Indoors.WoodCreakRandom = 
 	{
@@ -135,27 +138,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000250,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				4000.000000,
-				0.000000,
-				-0.000250,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 2.491360
 	}
 	amb.Outdoors.SongbirdRandom = 
 	{
@@ -208,6 +191,7 @@
 		spread_max = 500.000000
 		spread_min_value = 0.000000
 		mixer_mixgroup = "Ambience-Details"
+		volume_falloff_max = 2500.000000
 		vsnd_files = "sounds/ambient/soundscapes/city_oneshots/churchbell.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -230,27 +214,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				2500.000000,
-				0.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 12.691066
 	}
 	amb.Outdoors.Churchbell_Distant = 
 	{
@@ -262,6 +226,8 @@
 		pitch_rand_max = 0.000000
 		pitch = 0.990000
 		mixer_mixgroup = "Ambience-Details"
+		volume_falloff_max = 5000.000000
+		volume_falloff_floor = 0.400000
 		vsnd_files = "sounds/ambient/soundscapes/city_oneshots/churchbell_distant.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -284,27 +250,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000042,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				10000.000000,
-				0.576802,
-				-0.000042,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 12.691066
 	}
 	amb.Outdoors.Churchbell = 
 	{
@@ -333,7 +279,6 @@
 		pitch = 1.050000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/weather/wind.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -377,36 +322,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 7.148299
 	}
 	amb.Outdoors.Wind_Elevated = 
 	{
@@ -437,7 +353,6 @@
 		pitch_rand_max = 0.100000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/weather/wind_strong.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -481,36 +396,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 76.203537
 	}
 	amb.Outdoors.Factory_Hammer = 
 	{
@@ -547,27 +433,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.000125,
-				-0.000125,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				8022.856934,
-				0.000000,
-				-0.000125,
-				-0.000125,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 13.134558
 	}
 	amb.Outdoors.Factory_Machine = 
 	{
@@ -604,32 +470,12 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.000128,
-				-0.000128,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				7806.857422,
-				0.000000,
-				-0.000128,
-				-0.000128,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 56.949615
 	}
 	amb.Indoors.Pipe_Small = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -25.000000
+		volume = -27.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 2.000000
 		spread_min = 113.064499
@@ -663,32 +509,12 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.001264,
-				-0.001264,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				791.276550,
-				0.000000,
-				-0.001264,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 10.121565
 	}
 	amb.Indoors.Pipe_Large = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -22.000000
+		volume = -26.000000
 		volume_fade_in = 1.000000
 		volume_fade_out = 4.000000
 		spread_min = 113.064499
@@ -700,6 +526,8 @@
 		cull_at_distance = 1500.000000
 		occlusion_interval = 0.000000
 		mixer_mixgroup = "Ambience-Bed"
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
 		vsnd_files = "sounds/ambient/soundscapes/city_oneshots/vent_01.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -722,27 +550,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.001426,
-				-0.001426,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				701.389160,
-				0.000000,
-				-0.001426,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 8.050703
 	}
 	amb.Outdoors.Park.Lp = 
 	{
@@ -756,7 +564,6 @@
 		volume = -4.000000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/park.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -800,36 +607,7 @@
 				3.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 238.457932
 	}
 	amb.Lane.Purple.South.Lp = 
 	{
@@ -845,7 +623,6 @@
 		pitch = 0.950000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/city_03.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -889,36 +666,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 62.834831
 	}
 	amb.Lane.Orange.South.Lp = 
 	{
@@ -934,7 +682,6 @@
 		pitch = 1.000000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/city_06.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -978,36 +725,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 51.247711
 	}
 	amb.Lane.Yellow.South.Lp = 
 	{
@@ -1023,7 +741,6 @@
 		pitch = 0.900000
 		volume_fade_out = 0.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/city_01.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -1067,43 +784,14 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 36.460430
 	}
 	amb.Indoors.General.Lp = 
 	{
 		base = "Base.Ambience.3d"
 		mixer_mixgroup = "Ambience-Bed"
 		position_force_from_player = true
-		volume = 0.000000
+		volume = -3.000000
 		_builtins._voicegraph = ""
 		spread_min = 8.571428
 		spread_max_value = 0.945055
@@ -1112,7 +800,6 @@
 		pitch = 1.000000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/interior_generic.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -1156,36 +843,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 34.345306
 	}
 	amb.Indoors.Subway.Lp = 
 	{
@@ -1201,7 +859,6 @@
 		pitch = 1.050000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/interior_subway.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -1245,36 +902,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 36.111633
 	}
 	amb.Indoors.Underground.Lp = 
 	{
@@ -1290,7 +918,6 @@
 		pitch = 1.050000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/interior_subway.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -1334,36 +961,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 36.111633
 	}
 	amb.Indoors.Temple.Lp = 
 	{
@@ -1379,7 +977,6 @@
 		pitch = 1.050000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/mid_drone.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -1423,36 +1020,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 51.714310
 	}
 	amb.Outdoors.Alley.Lp = 
 	{
@@ -1468,7 +1036,6 @@
 		pitch = 0.900000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/alleyrumble.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -1512,36 +1079,7 @@
 				3.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 43.058571
 	}
 	amb.Outdoors.Alley = 
 	{
@@ -1564,15 +1102,15 @@
 		random_soundevent_timer_max = 2.000000
 		position_random = 1.000000
 		use_initial_random_offset = 1.000000
-		rand_radius_max = 9500.000000
-		rand_radius_min = 6000.000000
+		rand_radius_max = 4000.000000
+		rand_radius_min = 3000.000000
 		position = 
 		[
 			0.000000,
 			0.000000,
 			0.000000,
 		]
-		cull_at_distance = 80000.000000
+		cull_at_distance = 5000.000000
 		random_position_base = "player_position"
 	}
 	amb.Outdoors.Traffic.HonksRandom = 
@@ -1583,21 +1121,21 @@
 		random_soundevent_timer_max = 3.000000
 		position_random = 1.000000
 		use_initial_random_offset = 1.000000
-		rand_radius_max = 9900.000000
-		rand_radius_min = 7000.000000
+		rand_radius_max = 4000.000000
+		rand_radius_min = 3000.000000
 		position = 
 		[
 			0.000000,
 			0.000000,
 			0.000000,
 		]
-		cull_at_distance = 10000.000000
+		cull_at_distance = 5000.000000
 		random_position_base = "player_position"
 	}
 	amb.Outdoors.Traffic.Bys = 
 	{
 		base = "Base.Ambience.3d"
-		volume = 1.000000
+		volume = 0.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 4.000000
 		spread_min = 0.000000
@@ -1615,6 +1153,10 @@
 		mixer_mixgroup = "Ambience-Details"
 		volume_rand_min = 0.000000
 		volume_rand_max = 0.000000
+		volume_falloff_floor = 0.200000
+		volume_falloff_max = 5000.000000
+		volume_falloff_min = 1000.000000
+		volume_falloff_use_curve_editor = true
 		vsnd_files = 
 		[
 			"sounds/ambient/soundscapes/city_oneshots/car_by_01.vsnd",
@@ -1649,36 +1191,37 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
+		volume_falloff_curve_db = 
 		[
 			
 			[
 				0.000000,
-				1.000000,
+				-1.783663,
 				0.000000,
-				-0.000022,
+				-0.000003,
 				0.000000,
 				0.000000,
 			],
 			
 			[
-				6324.067383,
-				0.862069,
-				-0.000022,
-				-0.000329,
+				2691.830322,
+				-1.791653,
+				-0.000003,
+				-0.000003,
 				0.000000,
-				2.000000,
+				3.000000,
 			],
 			
 			[
-				9954.127930,
-				0.310345,
-				-0.000114,
-				-0.000114,
+				4747.531738,
+				-10.515572,
+				-0.003986,
+				-0.003986,
 				2.000000,
 				3.000000,
 			],
 		]
+		vsnd_duration = 12.614875
 	}
 	amb.Outdoors.Traffic.Lp = 
 	{
@@ -1697,7 +1240,6 @@
 		block_match_entity = 0.000000
 		block_distance = 0.000000
 		block_duration = -1.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/city_oneshots/car_bed.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -1720,36 +1262,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 40.468864
 	}
 	amb.Outdoors.Traffic.Honks = 
 	{
@@ -1771,6 +1284,8 @@
 		pitch_rand_max = 0.100000
 		block_distance = 0.000000
 		mixer_mixgroup = "Ambience-Details"
+		volume_falloff_floor = 0.200000
+		volume_falloff_max = 4000.000000
 		vsnd_files = 
 		[
 			"sounds/ambient/soundscapes/city_oneshots/car_honk_01.vsnd",
@@ -1804,36 +1319,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				6597.936523,
-				1.000000,
-				0.000000,
-				-0.000022,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				10000.000000,
-				0.924765,
-				-0.000022,
-				-0.000022,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 2.349206
 	}
 	amb.Outdoors.Traffic.SirenRandom = 
 	{
@@ -1899,27 +1385,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				600.000000,
-				0.069061,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 17.805805
 	}
 	amb.Indoors.Rat = 
 	{
@@ -1965,6 +1431,7 @@
 				0.000000,
 			],
 		]
+		vsnd_duration = 4.075759
 	}
 	amb.Indoors.RatRandom = 
 	{
@@ -1988,7 +1455,7 @@
 	amb.Indoors.Hvac = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -17.000000
+		volume = -23.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 2.000000
 		spread_min = 113.064499
@@ -2000,6 +1467,8 @@
 		cull_at_distance = 1500.000000
 		occlusion_interval = 0.000000
 		mixer_mixgroup = "Ambience-Details"
+		pitch_rand_min = -0.010000
+		pitch_rand_max = 0.010000
 		vsnd_files = "sounds/ambient/soundscapes/interiors/hvac_conduit_lp_02.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -2022,27 +1491,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				0.720745,
-				0.000000,
-				-0.001081,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				666.743103,
-				0.000000,
-				-0.001081,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 13.119184
 	}
 	amb.Outdoors.Tree_Lp = 
 	{
@@ -2086,36 +1535,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.000659,
-				-0.000659,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				1169.724731,
-				0.228840,
-				-0.000400,
-				-0.000400,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2500.000000,
-				0.000000,
-				-0.000172,
-				-0.000172,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 11.733673
 	}
 	amb.Outdoors.Tree_Rustle = 
 	{
@@ -2166,36 +1586,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.000765,
-				-0.000765,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				1004.587158,
-				0.231975,
-				-0.000667,
-				-0.000667,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				1500.000000,
-				0.000000,
-				-0.000468,
-				-0.000468,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 19.996553
 	}
 	amb.Outdoors.Tree = 
 	{
@@ -2232,7 +1623,7 @@
 	amb.Outdoors.Traffic.Brakes = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -4.000000
+		volume = -3.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 4.000000
 		spread_min = 24.631908
@@ -2249,6 +1640,9 @@
 		pitch_rand_max = 0.100000
 		block_distance = 0.000000
 		mixer_mixgroup = "Ambience-Details"
+		volume_falloff_floor = 0.200000
+		volume_falloff_max = 4000.000000
+		volume_falloff_use_curve_editor = true
 		vsnd_files = 
 		[
 			"sounds/ambient/soundscapes/city_oneshots/traffic_brake_03.vsnd",
@@ -2278,27 +1672,37 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
+		volume_falloff_curve_db = 
 		[
 			
 			[
 				0.000000,
-				0.799373,
-				-0.000001,
-				-0.000001,
-				1.000000,
-				1.000000,
+				0.040370,
+				0.000000,
+				-0.000033,
+				0.000000,
+				0.000000,
 			],
 			
 			[
-				9500.000000,
-				0.793103,
-				-0.000001,
-				-0.000001,
-				1.000000,
-				1.000000,
+				2631.565430,
+				-0.046869,
+				-0.000441,
+				-0.000441,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				4392.638672,
+				-10.515572,
+				-0.003986,
+				-0.003986,
+				2.000000,
+				3.000000,
 			],
 		]
+		vsnd_duration = 7.968118
 	}
 	amb.Outdoors.Traffic.BrakesRandom = 
 	{
@@ -2308,15 +1712,15 @@
 		random_soundevent_timer_max = 10.000000
 		position_random = 1.000000
 		use_initial_random_offset = 1.000000
-		rand_radius_max = 9500.000000
-		rand_radius_min = 9500.000000
+		rand_radius_max = 4000.000000
+		rand_radius_min = 3000.000000
 		position = 
 		[
 			0.000000,
 			0.000000,
 			0.000000,
 		]
-		cull_at_distance = 10000.000000
+		cull_at_distance = 5000.000000
 		random_position_base = "player_position"
 	}
 	amb.Outdoors.DogBarksRandom = 
@@ -2405,27 +1809,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.002000,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				500.000000,
-				0.000000,
-				-0.002000,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 4.407143
 	}
 	amb.Outdoors.Flies = 
 	{
@@ -2468,36 +1852,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.001547,
-				-0.001547,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				342.857147,
-				0.469613,
-				-0.001250,
-				-0.001250,
-				3.000000,
-				1.000000,
-			],
-			
-			[
-				800.000000,
-				0.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 1.074807
 	}
 	amb.Outdoors.FliesRandom = 
 	{
@@ -2590,6 +1945,7 @@
 				3.000000,
 			],
 		]
+		vsnd_duration = 3.280227
 	}
 	amb.Outdoors.Alley.BangsRandom = 
 	{
@@ -2646,27 +2002,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.001451,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				689.142822,
-				0.000000,
-				-0.001451,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 13.322313
 	}
 	amb.Outdoors.Alley.SwellsRandom = 
 	{
@@ -2753,6 +2089,7 @@
 				0.000000,
 			],
 		]
+		vsnd_duration = 2.497007
 	}
 	amb.Outdoors.WoodTowerRandom = 
 	{
@@ -2823,27 +2160,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000333,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				3000.000000,
-				0.000000,
-				-0.000333,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 5.210658
 	}
 	amb.Trigger.Rat = 
 	{
@@ -2882,6 +2199,7 @@
 				0.000000,
 			],
 		]
+		vsnd_duration = 1.253923
 	}
 	amb.Base.Swells = 
 	{
@@ -2957,6 +2275,7 @@
 				3.000000,
 			],
 		]
+		vsnd_duration = 7.755873
 	}
 	amb.Lane.Purple.South = 
 	{
@@ -2984,7 +2303,6 @@
 		pitch = 0.950000
 		volume_fade_out = 0.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/weather/wind_midlane_01.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -3028,36 +2346,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 30.989910
 	}
 	amb.Lane.Yellow.South.Wind_Lp = 
 	{
@@ -3073,7 +2362,6 @@
 		pitch = 0.900000
 		volume_fade_out = 0.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/weather/wind_outerlane_02.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -3117,36 +2405,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 26.991497
 	}
 	amb.Lane.Orange.South.Wind_Lp = 
 	{
@@ -3162,7 +2421,6 @@
 		pitch = 1.000000
 		volume_fade_out = 0.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/weather/wind_low.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -3206,36 +2464,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 46.717621
 	}
 	amb.Lane.Blue.South = 
 	{
@@ -3285,7 +2514,6 @@
 		volume = -18.000000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/wind_outerlane_01.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -3329,36 +2557,7 @@
 				3.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 34.987076
 	}
 	amb.Outdoors.Rooftop.Traffic = 
 	{
@@ -3488,6 +2687,7 @@
 				0.000000,
 			],
 		]
+		vsnd_duration = 1.253923
 	}
 	amb.Trigger.Factory = 
 	{
@@ -3526,6 +2726,7 @@
 				0.000000,
 			],
 		]
+		vsnd_duration = 1.253923
 	}
 	amb.Outdoors.Crow_Random = 
 	{
@@ -3599,36 +2800,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				0.752351,
-				0.000000,
-				-0.000213,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				2042.857178,
-				0.317680,
-				-0.000213,
-				-0.000150,
-				0.000000,
-				1.000000,
-			],
-			
-			[
-				5000.000000,
-				0.000000,
-				-0.000107,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 5.239025
 	}
 	amb.HomeBase.Swells = 
 	{
@@ -3681,27 +2853,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				1100.000000,
-				0.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 7.755873
 	}
 	amb.HomeBase.SwellsRandom = 
 	{
@@ -3772,27 +2924,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				0.408840,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				1000.000000,
-				0.251381,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 7.755873
 	}
 	amb.Lane.Blue.South.Lp = 
 	{
@@ -3808,7 +2940,6 @@
 		pitch = 1.000000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/city_06.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -3852,36 +2983,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 51.247711
 	}
 	amb.Lane.Blue.South.Wind_Lp = 
 	{
@@ -3895,7 +2997,6 @@
 		spread_max_value = 0.921053
 		spread_max = 500.000000
 		spread_min_value = 0.921053
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/weather/wind_low.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -3918,57 +3019,7 @@
 				1.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				600.000000,
-				1.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 46.717621
 	}
 	amb.Outdoors.Traffic = 
 	{
@@ -4012,7 +3063,6 @@
 		pitch = 0.700000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/outdoors_generic.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -4056,36 +3106,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 97.624924
 	}
 	amb.Magic.Creatures = 
 	{
@@ -4138,27 +3159,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				0.701657,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				1000.000000,
-				0.276243,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 9.391768
 	}
 	amb.Magic.CreaturesRandom = 
 	{
@@ -4191,7 +3192,6 @@
 		pitch = 0.950000
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/magic/deep_outdoors.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -4235,36 +3235,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 105.405739
 	}
 	amb.Outdoors.General.Near_Lp = 
 	{
@@ -4279,7 +3250,6 @@
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
 		pitch = 0.950000
-		use_volume_fade_out_curve = true
 		mixer_mixgroup = "Ambience-Bed"
 		vsnd_files = "sounds/ambient/soundscapes/loops/outdoors_generic.vsnd"
 		volume_fade_over_time_curve = 
@@ -4324,36 +3294,7 @@
 				3.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 97.624924
 	}
 	amb.Outdoors.General.Far_Lp = 
 	{
@@ -4368,7 +3309,6 @@
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
 		pitch = 0.850000
-		use_volume_fade_out_curve = true
 		mixer_mixgroup = "Ambience-Bed"
 		vsnd_files = "sounds/ambient/soundscapes/loops/outdoors_generic.vsnd"
 		volume_fade_over_time_curve = 
@@ -4413,36 +3353,7 @@
 				3.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 97.624924
 	}
 	amb.Outdoors.Wind_Gusts = 
 	{
@@ -4493,27 +3404,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				500.000000,
-				0.880878,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 6.447959
 	}
 	amb.Outdoors.Wind_GustsRandom = 
 	{
@@ -4547,7 +3438,6 @@
 		pitch = 1.000000
 		volume_fade_out = 0.000000
 		volume_fade_in = 0.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/weather/wind_low.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -4591,36 +3481,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 46.717621
 	}
 	amb.Outdoors.Thunder = 
 	{
@@ -4638,6 +3499,8 @@
 		spread_max_value = 0.944972
 		spread_max = 2000.000000
 		spread_min_value = 0.343978
+		volume_falloff_max = 2500.000000
+		volume_falloff_floor = 0.300000
 		vsnd_files = 
 		[
 			"sounds/ambient/soundscapes/weather/thunder_calm_01.vsnd",
@@ -4678,27 +3541,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				0.962382,
-				0.000000,
-				-0.000027,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				4000.000000,
-				0.855799,
-				-0.000027,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 25.298527
 	}
 	amb.Outdoors.ThunderRandom = 
 	{
@@ -4756,45 +3599,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.002770,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				211.428574,
-				0.414365,
-				-0.002770,
-				-0.001354,
-				0.000000,
-				1.000000,
-			],
-			
-			[
-				634.285706,
-				0.140884,
-				-0.000525,
-				-0.000525,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				1000.000000,
-				0.000000,
-				-0.000385,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 0.280000
 	}
 	amb.Outdoors.CricketRandom = 
 	{
@@ -4818,7 +3623,7 @@
 	amb.Indoors.LightHum = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -23.000000
+		volume = -25.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 2.000000
 		spread_min = 0.000000
@@ -4832,6 +3637,7 @@
 		mixer_mixgroup = "Ambience-Details"
 		pitch_rand_min = -0.020000
 		pitch_rand_max = 0.020000
+		volume_falloff_curve_amount = 0.500000
 		vsnd_files = "sounds/ambient/soundscapes/loops/light_01.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -4854,36 +3660,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.002205,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				313.142853,
-				0.309392,
-				-0.002205,
-				-0.001250,
-				0.000000,
-				1.000000,
-			],
-			
-			[
-				800.000000,
-				0.000000,
-				-0.000635,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 1.349388
 	}
 	amb.Outdoors.Fly_LightRandom = 
 	{
@@ -4907,7 +3684,7 @@
 	amb.Fly_Light = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -2.000000
+		volume = -5.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 1.000000
 		pitch_rand_min = -0.100000
@@ -4956,36 +3733,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				0.821809,
-				-0.001027,
-				-0.001027,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				342.857147,
-				0.469613,
-				-0.001027,
-				-0.001027,
-				3.000000,
-				1.000000,
-			],
-			
-			[
-				800.000000,
-				0.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 1.184308
 	}
 	amb.Outdoors.MetalCreaks = 
 	{
@@ -5052,27 +3800,7 @@
 				3.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				594.000000,
-				0.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 1.730726
 	}
 	amb.Outdoors.MetalCreaksRandom = 
 	{
@@ -5132,45 +3860,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				0.728723,
-				0.000000,
-				-0.000344,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				572.374634,
-				0.531915,
-				-0.000344,
-				-0.000106,
-				0.000000,
-				1.000000,
-			],
-			
-			[
-				3410.595947,
-				0.367021,
-				-0.000120,
-				-0.000120,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				5000.000000,
-				0.000000,
-				-0.000231,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 9.010975
 	}
 	amb.Indoors.Air_Deep = 
 	{
@@ -5186,7 +3876,6 @@
 		pitch = 0.950000
 		volume_fade_out = 1.000000
 		volume_fade_in = 1.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/deep_air.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -5230,36 +3919,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 12.909252
 	}
 	amb.Outdoors.Wind_Vegetation = 
 	{
@@ -5273,7 +3933,6 @@
 		spread_max_value = 0.921053
 		spread_max = 500.000000
 		spread_min_value = 0.921053
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/weather/wind_vegetation.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -5296,57 +3955,7 @@
 				1.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				600.000000,
-				1.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 24.914240
 	}
 	amb.Music.Waltz = 
 	{
@@ -5386,36 +3995,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000100,
-				1.000000,
-				-0.000727,
-				-0.000727,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				684.375000,
-				0.502660,
-				-0.000333,
-				-0.000333,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				3000.000000,
-				0.000000,
-				-0.000217,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 54.109455
 	}
 	amb.Outdoors.Announcement = 
 	{
@@ -5456,27 +4036,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				-0.000075,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				5000.000000,
-				0.626959,
-				-0.000075,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 15.612585
 	}
 	amb.Outdoors.AnnouncementRandom_01 = 
 	{
@@ -5557,7 +4117,7 @@
 	amb.Outdoors.Birds = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -23.000000
+		volume = -26.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 4.000000
 		spread_min = 1.704597
@@ -5600,27 +4160,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				4000.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 6.500000
 	}
 	amb.Outdoors.BirdsRandom = 
 	{
@@ -5705,27 +4245,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				4000.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 3.267211
 	}
 	amb.Outdoors.Yells = 
 	{
@@ -5771,27 +4291,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				4000.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 5.162676
 	}
 	amb.Outdoors.YellsRandom = 
 	{
@@ -5826,7 +4326,6 @@
 		pitch = 0.800000
 		volume_fade_out = 1.000000
 		volume_fade_in = 1.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/walla.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -5870,57 +4369,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				600.000000,
-				1.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 22.138979
 	}
 	amb.Tunnel.Swells = 
 	{
@@ -5956,27 +4405,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				1100.000000,
-				0.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 23.040567
 	}
 	amb.Tunnel.SwellsRandom = 
 	{
@@ -6009,7 +4438,6 @@
 		pitch = 1.000000
 		volume_fade_out = 2.000000
 		volume_fade_in = 2.000000
-		use_volume_fade_out_curve = true
 		hrtf_on = 0.000000
 		hrtf_mix = 0.000000
 		volume_rand_min = 0.000000
@@ -6057,57 +4485,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				600.000000,
-				1.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 133.536758
 	}
 	amb.Base.Binaural_15hz = 
 	{
@@ -6122,7 +4500,6 @@
 		pitch = 1.000000
 		volume_fade_out = 2.000000
 		volume_fade_in = 2.000000
-		use_volume_fade_out_curve = true
 		hrtf_on = 0.000000
 		hrtf_mix = 0.000000
 		volume_rand_min = 0.000000
@@ -6170,57 +4547,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				600.000000,
-				1.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 133.536758
 	}
 	amb.Outdoors.Walla_Quiet = 
 	{
@@ -6236,7 +4563,6 @@
 		pitch = 0.800000
 		volume_fade_out = 1.000000
 		volume_fade_in = 1.000000
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/walla.vsnd"
 		reverb_falloff_curve = 
 		[
@@ -6280,57 +4606,7 @@
 				1.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				600.000000,
-				1.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
+		vsnd_duration = 22.138979
 	}
 	amb.HomeBase.General_Lp = 
 	{
@@ -6345,7 +4621,6 @@
 		volume_fade_out = 15.000000
 		volume_fade_in = 0.000000
 		pitch = 0.900000
-		use_volume_fade_out_curve = true
 		mixer_mixgroup = "Ambience-Bed"
 		vsnd_files = "sounds/ambient/soundscapes/loops/outdoors_generic.vsnd"
 		volume_fade_over_time_curve = 
@@ -6390,36 +4665,7 @@
 				3.000000,
 			],
 		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 97.624924
 	}
 	amb.Outdoors.PlaneRandom = 
 	{
@@ -6429,21 +4675,21 @@
 		random_soundevent_timer_max = 35.000000
 		position_random = 1.000000
 		use_initial_random_offset = 1.000000
-		rand_radius_max = 600.000000
-		rand_radius_min = 600.000000
+		rand_radius_max = 1500.000000
+		rand_radius_min = 1200.000000
 		position = 
 		[
 			0.000000,
 			0.000000,
 			0.000000,
 		]
-		cull_at_distance = 7000.000000
+		cull_at_distance = 2000.000000
 		random_position_base = "player_position"
 	}
 	amb.Outdoors.Plane = 
 	{
 		base = "Base.Ambience.3d"
-		volume = -6.000000
+		volume = -5.000000
 		volume_fade_in = 0.000000
 		volume_fade_out = 1.000000
 		pitch_rand_min = -0.110000
@@ -6453,6 +4699,9 @@
 		spread_max = 500.000000
 		spread_min_value = 0.457680
 		mixer_mixgroup = "Ambience-Bed"
+		volume_falloff_floor = 0.200000
+		volume_falloff_max = 2000.000000
+		volume_falloff_min = 1500.000000
 		vsnd_files = "sounds/ambient/soundscapes/city_oneshots/plane_02.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -6475,27 +4724,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				2500.000000,
-				1.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-				0.000000,
-			],
-		]
+		vsnd_duration = 11.832971
 	}
 	amb.Outdoors.Birds_SparseRandom = 
 	{
@@ -6536,6 +4765,8 @@
 		pitch_rand_max = 0.100000
 		block_distance = 0.000000
 		mixer_mixgroup = "Ambience-Details"
+		volume_falloff_floor = 0.200000
+		volume_falloff_max = 5000.000000
 		vsnd_files = 
 		[
 			"sounds/ambient/soundscapes/city_oneshots/construction_01.vsnd",
@@ -6571,36 +4802,7 @@
 				0.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.000014,
-				-0.000014,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				6077.981445,
-				0.915361,
-				-0.000014,
-				-0.000012,
-				0.000000,
-				0.000000,
-			],
-			
-			[
-				10000.000000,
-				0.868339,
-				-0.000012,
-				-0.000012,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 8.615691
 	}
 	amb.Outdoors.ConstructionRandom = 
 	{
@@ -6610,15 +4812,15 @@
 		random_soundevent_timer_max = 25.000000
 		position_random = 1.000000
 		use_initial_random_offset = 1.000000
-		rand_radius_max = 9900.000000
-		rand_radius_min = 9500.000000
+		rand_radius_max = 4000.000000
+		rand_radius_min = 3000.000000
 		position = 
 		[
 			0.000000,
 			0.000000,
 			0.000000,
 		]
-		cull_at_distance = 10000.000000
+		cull_at_distance = 5000.000000
 		random_position_base = "player_position"
 	}
 	amb.Outdoors.Construction_Lp = 
@@ -6633,7 +4835,6 @@
 		spread_max_value = 0.921053
 		spread_max = 500.000000
 		spread_min_value = 0.921053
-		use_volume_fade_out_curve = true
 		vsnd_files = "sounds/ambient/soundscapes/loops/deep_construction.vsnd"
 		volume_fade_over_time_curve = 
 		[
@@ -6656,56 +4857,6 @@
 				1.000000,
 			],
 		]
-		volume_distance_falloff_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				0.000014,
-				0.000014,
-				2.000000,
-				3.000000,
-			],
-			
-			[
-				600.000000,
-				1.000000,
-				0.000024,
-				0.000024,
-				2.000000,
-				3.000000,
-			],
-		]
-		volume_fade_out_curve = 
-		[
-			
-			[
-				0.000000,
-				1.000000,
-				-0.501112,
-				-0.501112,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				0.868571,
-				0.564748,
-				-0.500000,
-				-0.500000,
-				1.000000,
-				1.000000,
-			],
-			
-			[
-				2.000000,
-				0.000000,
-				-0.499146,
-				-0.499146,
-				1.000000,
-				1.000000,
-			],
-		]
+		vsnd_duration = 27.802675
 	}
 }

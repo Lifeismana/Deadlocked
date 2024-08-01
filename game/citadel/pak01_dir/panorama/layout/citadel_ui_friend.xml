@@ -28,13 +28,13 @@
 				<Label class="PartyInfoLabel InvitePending" text="#Citadel_InvitePending" />
 			</Panel>
 			<Panel id="FriendAddButton" onmouseover="UIShowTextTooltip( #Citadel_Party_InviteFriendTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" hittest="false">
-				<Label class="InviteText" text="Send Invite" />
+				<Label class="InviteText" text="#Citadel_Party_InviteFriendToParty" />
 			</Panel>
-			<Panel id="FriendInviteToGameButton" onmouseover="UIShowTextTooltip( #Citadel_Party_SelectFriendTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" hittest="false">
-				<Label class="InviteText" text="Select" />
+			<Panel id="FriendInviteToGameButton" onmouseover="UIShowTextTooltip( #Citadel_Party_InviteFriendToGameTooltip ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()" hittest="false">
+				<Label class="InviteText" text="#Citadel_Party_InviteFriendToGameButton" />
 			</Panel>
 			<Panel id="AddUnvailableButton" onmouseover="UIShowTextTooltip( #Citadel_Party_UnavailableInQueueTooltip );" onmouseout="UIHideTextTooltip()" hittest="false">
-				<Label class="InviteText" text="Send Invite" />
+				<Label class="InviteText" text="#Citadel_Party_InviteFriendToParty" />
 			</Panel>
 		</Panel>
 	</CitadelFriend>

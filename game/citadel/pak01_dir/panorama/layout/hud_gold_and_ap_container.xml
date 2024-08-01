@@ -6,6 +6,7 @@
 		<include src="s2r://panorama/styles/hud_gold_and_ap_container.vcss_c" />
 	</styles>
 	<CitadelHudSoulAPContainer>
+		<GlobalClassListener classes="gShopOpen" />
 		<Panel id="hudGoldContainer">
 			<Panel id="CurrentGoldAmount" onmouseover="UIShowTextTooltip( #Citadel_Hero_Stats_Tooltip_Shards ); CitadelPlayUISound( EMainMenuHover )" onmouseout="UIHideTextTooltip()">
 				<Panel id="hudCurGoldIcon" />

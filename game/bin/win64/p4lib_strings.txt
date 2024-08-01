@@ -1,6 +1,5 @@
 	!s99
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	g_pMemAlloc
 	kE>fvw
                           
@@ -21,14 +20,12 @@
  delete[]
  new[]
  tDE3
+!%<1>
 !>6'Y
 !hn7!
-#?oKq
+&nAF[
 ',=?k
 (f*^[0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$PH
 )>6{1n
 *StO9>T
@@ -106,13 +103,12 @@
 0}0i1
 130801120000Z
 1<.	/>:
-1>%W-
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240723234752Z0/
+240801161642Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -126,6 +122,7 @@
 3>N;kU
 3>fvw
 3mq+<
+4Hk6R
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
@@ -139,12 +136,11 @@
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 9)~P3
 98t H
-:	V_qsort_s
-:sL%K
 ;H9>&X
 ;I9}(tiH
 < t=<	t9
 <0:08
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
@@ -158,7 +154,6 @@
 ?QY^&
 ?UUUUUU
 ?f`Y4
-@+"S[
 @.data
 @.reloc
 @84)u
@@ -214,14 +209,8 @@ C:\buildworker\citadel_rel_win64\build\_build_\p4lib\_vpc_p4lib\default\win64\_m
 C:\buildworker\citadel_rel_win64\build\src\p4lib\p4.cpp
 C:\buildworker\citadel_rel_win64\build\src\p4lib\p4dummy.cpp
 C:\buildworker\citadel_rel_win64\build\src\p4lib\p4mimic.cpp
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\singletons.cpp
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CP4: Cannot perform operation on file in read-only search path %s
 CP4::Init
 CP4::SetMode
@@ -233,7 +222,6 @@ CallPostConnect
 ClientToolsInfo_001
 CloseHandle
 CommandLine
-Construction is only allowed from the resolve function
 CorExitProcess
 CreateEventW
 CreateFileW
@@ -252,7 +240,6 @@ D8t$ht
 December
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -265,6 +252,7 @@ E0Lc`
 E8q(u
 EH*?H
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 EngineServiceMgr001
@@ -289,7 +277,6 @@ GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCP4ImplInterface
 GetCPInfo
 GetCommandLineA
@@ -315,10 +302,8 @@ GetStringTypeW
 GetSystemTimeAsFileTime
 H!D$ I
 H!T$0D
-H%r"~
 H-^Eu
 H97u+A
-H9=!~
 H;XXs
 H;xXu5
 HH:mm:ss
@@ -340,7 +325,6 @@ InitializeSListHead
 InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 InvokeMiniDumpHandler
 IsDebuggerPresent
@@ -372,7 +356,6 @@ L?n(Zy&
 LCMapStringEx
 LCMapStringW
 LcA<E3
-LcP[rc
 LeaveCriticalSection
 Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
 Lj[;>
@@ -404,9 +387,6 @@ NetworkService_001
 NetworkSystemVersion001
 November
 October
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 PA_A^A]A\_^]
 PAq=?Mp#
 PanoramaTextServices001
@@ -415,10 +395,9 @@ PanoramaUIEngine001
 ParticleSystemMgr003
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
-Plat_FatalErrorFunc
 Plat_GetModuleProcAddress
+Plat_GetTime
 Plat_InstallControlCHandler
 Plat_IsInDebugSession
 Plat_IsRunningOnCustomerMachine
@@ -427,6 +406,7 @@ Plat_UnloadModule
 PostProcessingSystem_001
 PropertyEditorSystem_001
 Pz}b!
+QFfxtd%
 QueryPerformanceCounter
 RSDSB
 RaiseException
@@ -484,7 +464,6 @@ Source2V8System001
 StatsService_001
 SteamAudio001
 Sunday
-T	V_stricmp_fast
 T$PE3
 TUUUU
 TerminateProcess
@@ -533,6 +512,7 @@ Valve Corp.0
 Valve Corp.1
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 WATAUAVAWH
 WAVAWH
 WaitForSingleObjectEx
@@ -661,8 +641,8 @@ p4lib_perforce.dll
 p;Y>u
 pA_A^A]A\_^[
 pCallback == nullptr
-pMemory[i] == 0
 purecall
+q55Ei
 r	Vr.>T
 range check failure
 restrict(

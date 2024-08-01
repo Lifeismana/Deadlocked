@@ -11,34 +11,13 @@
 			<Label class="DescArea body_sm align_center silvered" text="#Citadel_RecommendFriend_desc" html="true" />
 			<Panel class="formContents LeftRightFlow">
 				<Panel class="LeftSide TopBottomFlow">
-					<Label class="subheader" text="#Citadel_RecommendFriend_SelectTitle" html="true" />
 					<CitadelInviteFriendMenu id="FriendMenu" />
 				</Panel>
-				<Panel class="TopBottomFlow">
-					<Panel class="LabelRow">
-						<Label class="TypeLabel" text="#Citadel_RecommendFriend_Email" />
-						<TextEntry id="PlaytestUserEmail" placeholder="#Citadel_RecommendFriend_EmailPrompt" undohistory="enabled" maxchars="512" multiline="false" />
-						<Label class="TypeLabelDetail" text="#Citadel_RecommendFriend_EmailDesc" />
-					</Panel>
-					<Panel class="LabelRow">
-						<Label class="TypeLabel" text="#Citadel_RecommendFriend_Comments" />
-						<TextEntry id="PlaytestUserComments" placeholder="#Citadel_RecommendFriend_CommentsPrompt" undohistory="enabled" maxchars="4096" multiline="true" />
-					</Panel>
-					<Panel class="LabelRow">
-						<Label class="TypeLabel" text="#Citadel_RecommendFriend_Region" />
-						<DropDown class="SelectDropDown" id="LocationDropDown" dropdownbodyposition="100% 100%" />
-					</Panel>
-					<Label class="ErrorLabel" text="#Citadel_RecommendFriend_ErrorMsg" />
-					<Label class="LocWarning" text="#Citadel_RecommendFriend_LocWarning" />
-					<Panel class="ButtonRow LeftRightFlow">
-						<Button class="PopupButton" id="OKButton" onactivate="CitadelPopupSubmitPlaytestUser()" enabled="false">
-							<Label text="#Citadel_RecommendFriend_PopupButton" />
-						</Button>
-						<Button class="SecondaryButton align_center" onactivate="UIPopupButtonClicked()">
-							<Label text="#Cancel" />
-						</Button>
-					</Panel>
-				</Panel>
+			</Panel>
+			<Panel class="ButtonRow LeftRightFlow">
+				<Button class="SecondaryButton align_center" onactivate="UIPopupButtonClicked()">
+					<Label text="#Close" />
+				</Button>
 			</Panel>
 		</Panel>
 	</PopupPlaytestUser>

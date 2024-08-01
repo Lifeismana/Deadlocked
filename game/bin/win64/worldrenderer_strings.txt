@@ -7,7 +7,6 @@
 	D$0H
 	Warning
 	World: %s
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	_V_strnicmp_fast
 	g_Mathlib_GammaToLinearByteTable
@@ -70,12 +69,14 @@
  Lc1M
  Lcl$p
  Type Descriptor'
+ aN>I
  delete
  delete[]
  new[]
  s%Mcf
  tDE3
 !"Invalid element count in an array"
+!&<}P~
 !( height % 4 )
 !( width % 4 )
 !>6'Y
@@ -83,7 +84,6 @@
 !IsInternalTypeShortArray( Internal_Type() )
 !IsQueuedForSpawn()
 !L9d$ht
-!bLooksLikeABug
 !buf.IsText()
 !destBlock.IsReadOnly() && !destBlock.IsExternalMemory()
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
@@ -102,10 +102,10 @@
 #\$`D
 #t'fA
 $Ib?s
-$z,%&%EV
 %""""D
 %3333D
 %GoU?*
+%OjUo
 %cmaps%c
 %d %d %d
 %d %d %d %d
@@ -117,6 +117,8 @@ $z,%&%EV
 %g %g %g
 %g %g %g %g
 %s  '%s' --> '%s' : %s (%s) [delay=%.2f;times=%d;type=%d]
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s - unknown entity lump '%s'
 %s - unknown or invalid world '%s'
 %s - unknown world layer '%s'
@@ -142,8 +144,6 @@ $z,%&%EV
 ',=?k
 'iw7M
 'p7M}f
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( NumCols() == pOrig->NumCols() ) && ( NumRows() == pOrig->NumRows() ) && ( NumSlices() == pOrig->NumSlices() )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( height % 4 ) == 0
@@ -208,9 +208,6 @@ $z,%&%EV
 (l$PD
 (l$`D
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (nLumaStride > 0) && (nLumaStride < INT_MAX) && (nChromaStride > 0) && (nChromaStride < INT_MAX)
 (null)
 (show)
@@ -639,13 +636,12 @@ $z,%&%EV
 1#SNAN
 130801120000Z
 1<.	/>:
-1ID*do*w
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240723235127Z0/
+240801162250Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -677,7 +673,6 @@ $z,%&%EV
 7YA1H
 7\[OL
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 80tWD
 8A\_^[
 8A]A\
@@ -691,7 +686,6 @@ $z,%&%EV
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8_^][
 8ke?;
-9	V_qsort
 9)~P3
 98t H
 99~CE
@@ -714,10 +708,10 @@ $z,%&%EV
 9|$Xu
 9|$`u
 9|$xu
-:	V_qsort_s
 :>)*	v
 :>t6k'
 :vmatt
+;	V_powf
 ;?0123456789:;<=>?
 ;D$0|
 ;D$4|
@@ -728,6 +722,7 @@ $z,%&%EV
 ;\$0|
 ;t$@|
 ;t$D|
+<	V_qsort
 <	u2H
 <	u8H
 <	u\L
@@ -754,6 +749,7 @@ $z,%&%EV
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 <utK@:
+=	V_qsort_s
 =%H5<mN
 ==MQ?
 =SHX?
@@ -1149,7 +1145,7 @@ C(;xH|
 C(H94
 C0Hc	H
 C5R?	
-C8HcM
+C8HcN
 C8Hco L
 C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entitycomponent_h_schema.sc.cc
 C:\buildworker\citadel_rel_win64\build\_build_\entity2\_vpc_entity2\default\win64\_schema_\release\entityidentity_h_schema.sc.cc
@@ -1181,7 +1177,6 @@ C:\buildworker\citadel_rel_win64\build\src\public\entity2\entitysystem.h
 C:\buildworker\citadel_rel_win64\build\src\public\entity2\variant.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\rendersystem\vertexdata.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3transfertypemanager.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\kv3typemanager.h
@@ -1342,11 +1337,6 @@ CModelSkeletonSorter::ReorderArray
 CNetworkUtlVectorBase
 CNetworkVarChainer
 CNetworkVarChainer::Schema_VerifyBindingIsRegistered
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CReadGrassTexturePixelsCallback::OnReadTexturePixels
 CRenderBufferBinding
 CRenderBufferBinding::KV3TransferLoad_Impl
@@ -1679,11 +1669,11 @@ CWorld::UncacheNode
 CWorld::~CWorld
 CWorldNode::CreateAggregateSceneObjects
 CWorldNode::CreateClutterSceneObjects
-CWorldNode::CreateExtraVertexStreams(331): 
+CWorldNode::CreateExtraVertexStreams(332): 
 CWorldNode::CreateSceneObjects
 CWorldNode::GrassFileCreateManifest
 CWorldNode::HandleThrottledGrassTileLoading
-CWorldNode::HandleThrottledGrassTileLoading(1226): 
+CWorldNode::HandleThrottledGrassTileLoading(1227): 
 CWorldNodeManager::CWorldNodeManager
 CWorldRendererMgr::CreateWorld
 CWorldRendererMgr::CreateWorld() - Failed to mount world vpk file for world name %s.
@@ -1743,7 +1733,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
 CorExitProcess
@@ -1755,7 +1744,6 @@ CreateThreadpoolWork
 CreateWorld for non-default lump with no spawngroup specified: '%s'
 Creating %i scene objects for node %i
 Ct3Gt%
-D	V_sincosf
 D W?{W
 D!l$xA
 D$ #C
@@ -1929,7 +1917,6 @@ DecodePointer
 DeleteCriticalSection
 Deletion List:
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -1952,6 +1939,7 @@ E>nEA
 E@Jc<
 EH*?H
 EHHcI
+EJy(T
 ENTITY_DORMANT
 ENTITY_IO_TARGET_EHANDLE
 ENTITY_IO_TARGET_ENTITYNAME
@@ -1964,6 +1952,7 @@ ERROR: Resource name "%s" has the incorrect extension "%s" for the specified res
 EXPORTSYSTEM_INTERFACE_VERSION_001
 EXz	u
 E`IcZ
+EarlyInit_Tier0
 EconItemToolModel_001
 Egv5A
 EncodeBC6Blocks
@@ -2108,6 +2097,7 @@ FreeEnvironmentStringsW
 FreeLibrary
 FreeLibraryWhenCallbackReturns
 Friday
+G	V_sincosf
 G(;XH|
 G(;pH|
 G0HcH
@@ -2148,7 +2138,6 @@ GetActiveWindow
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetAttributeType( nAttrIdx ) != ATTRDATATYPE_NONE
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -2233,18 +2222,16 @@ H#L$0H
 H+\$x
 H-^Eu
 H9(tO
+H9-$F
+H9-?F
+H9-VE
 H9/u+9
 H90t:
 H93t	H
-H95:T
-H95GT
-H95UT
-H95ZS
-H95gh
+H95W+
+H95z6
 H97u+A
 H98t2
-H9=-Z
-H9=M'
 H9A0t	H
 H9D$0
 H9D$Pu>I
@@ -2277,7 +2264,6 @@ Hc.;n
 Hc/;o
 Hc3;s
 Hc;;{
-Hc=j|
 Hc>Ic\
 HcA(E3
 HcB(H
@@ -2429,7 +2415,6 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be WorldBu
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be WorldNodeOnDiskBufferData_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be WorldNode_t)
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be World_t)
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Invalid access of CConVarRef for '%s'
@@ -2461,8 +2446,6 @@ KV3 load transfer failed for resource '%s': %s
 KV3Helper_CheckValueNumericCast
 KV3TransferSchema_AllocateClassInstance
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::CopyFrom
 KeyValues3::CopyFrom::<lambda_1>::operator ()
 KeyValues3::FindOrCreateMember
@@ -2532,9 +2515,9 @@ L$0E3
 L$0E;
 L$0H3
 L$0H;
+L$0Ic
 L$0Lc
 L$0Lc@
-L$0Mc
 L$0f;
 L$0fA
 L$0fD
@@ -2584,8 +2567,11 @@ L$xf;
 L$xff
 L9#t	H
 L9#u/H
-L95^c
-L95yc
+L9-Z"
+L9-u"
+L95>I
+L95YI
+L95wH
 L9FHt
 L9d$pt
 L9gHt	H
@@ -2745,9 +2731,6 @@ OF>;^
 ObjectTypeFlags_t
 October
 Only DXT1/DXT5 online texture compression supported.
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Output unserialization of entities on map load. 0 - off, 1 - client/server, 2 - server, 3 - client
 OutputDebugStringW
 OverlayProjectionDirection
@@ -2776,10 +2759,10 @@ Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.cr
 Physics
 PhysicsBuilderMgr001
 Plat_CPUTickFrequency
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_GetModuleProcAddress
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_LoadModule
 Plat_NeedsLowFragmentation
@@ -2867,7 +2850,6 @@ RtlUnwind
 RtlUnwindEx
 RtlVirtualUnwind
 RxHcD
-S$O-A@
 S0Q0O
 S>$hkDh$h>[2
 SATAUH
@@ -2964,7 +2946,6 @@ SteamAudio001
 Stuf;
 SubmitThreadpoolWork
 Sunday
-T	V_stricmp_fast
 T$ E3
 T$ I+
 T$ Mc
@@ -3167,6 +3148,7 @@ VoxelVisBlockOffset_t::KV3TransferLoad_Impl
 VoxelVisBlockOffset_t::KV3Transfer_DefaultKeys_Impl
 VoxelVisBlockOffset_t::Schema_VerifyBindingIsRegistered
 Vrad3_001
+W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -3388,7 +3370,6 @@ b?^Cy
 bAllocationCanFit
 bCreated
 bFound
-bLegalTypeChange
 bSameOrigin || info.m_handle == SPAWN_GROUP_HANDLE_INVALID
 bSuccess
 background
@@ -3661,6 +3642,7 @@ l$`I;
 l$hA;
 l$hHc
 l$pLc
+l+VnKijOW
 l2|X/gGe
 libyuv::ABGRToI420( src, srcStride, pDestY, nLumaStride, pDestU, nLumaStride, pDestV, nLumaStride, width, height ) == 0
 libyuv::I420ToABGR( pSrcY, nLumaStride, pReadU, nLumaStride, pReadV, nLumaStride, dst, dstStride, width, height ) == 0
@@ -4056,7 +4038,6 @@ pLump
 pMapSceneObjectData->m_nObjectID == 0
 pMapSceneObjectData->m_nObjectTypeFlags & OBJECT_TYPE_MODEL
 pMember
-pMemory[i] == 0
 pMesh
 pMeta
 pModel->GetNumMeshes() == 1
@@ -4128,6 +4109,7 @@ resourcehandle
 resourcesystem
 restrict(
 result out of range
+rj%](R>
 rotation_vector
 rsf;\$d
 rvf;\$d

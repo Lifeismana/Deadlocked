@@ -16,7 +16,7 @@ CitadelHeroStatsDisplay CitadelModifiedAttributeLabel
 	width: 100%;
 }
 
-CitadelModifiedAttributeLabel.StatDesc_MaxHealth,CitadelModifiedAttributeLabel.StatDesc_DPS,CitadelModifiedAttributeLabel.StatDesc_TechPower,CitadelModifiedAttributeLabel.StatDesc_BaseHealthRegen,CitadelModifiedAttributeLabel.StatDesc_BulletDamage,CitadelModifiedAttributeLabel.StatDesc_TechDamageScale
+#HeroStats CitadelModifiedAttributeLabel.StatDesc_MaxHealth,#HeroStats CitadelModifiedAttributeLabel.StatDesc_DPS,#HeroStats CitadelModifiedAttributeLabel.StatDesc_TechPower,#HeroStats CitadelModifiedAttributeLabel.StatDesc_BaseHealthRegen,#HeroStats CitadelModifiedAttributeLabel.StatDesc_BulletDamage,#HeroStats CitadelModifiedAttributeLabel.StatDesc_TechDamageScale
 {
 	flow-children: down;
 	margin-top: 5px;
@@ -102,10 +102,11 @@ CitadelModifiedAttributeLabel.PropertySearchMatch
 
 #AdditionalText
 {
-	font-size: 18px;
+	font-size: 17px;
 	vertical-align: middle;
-	font-weight: medium;
-	opacity: 0.7;
+	font-weight: semi-bold;
+	opacity: 0.6;
+	horizontal-align: center;
 }
 
 .ShowBonusDiff.ShowBonusDiffEnd #AdditionalText
@@ -124,7 +125,7 @@ CitadelHeroStats #AdditionalText
 	horizontal-align: center;
 	text-align: center;
 	font-weight: semi-bold;
-	font-family: "Retail Demo";
+	font-family: sans;
 	color: #ffffff60;
 	width: 100%;
 }
@@ -151,7 +152,7 @@ CitadelHeroStats #AdditionalText
 {
 	text-align: center;
 	horizontal-align: center;
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 }
 
 #StatsAppliedContainer .Elevated #AdditionalText
@@ -215,7 +216,7 @@ CitadelTooltipModDetails #ImportantAttributeContainer .LabelsText
 
 #ModifiedLabel
 {
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 	text-overflow: shrink;
 	max-height: 35px;
 	font-size: 18px;
@@ -283,7 +284,7 @@ CitadelTooltipModDetails #ImportantAttributeContainer .LabelsText
 
 #BaseLabel
 {
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 	text-overflow: shrink;
 	max-height: 35px;
 }

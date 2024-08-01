@@ -19,7 +19,6 @@
 		volume_falloff_max_team = 5500.000000
 		volume_falloff_max_opponent = 5500.000000
 		volume_falloff_max_neutral = 5500.000000
-		block_volume_min = 0.001000
 		volume = 0.000000
 		volume_offset_player = 0.000000
 		volume_offset_team = -6.000000
@@ -27,6 +26,133 @@
 		volume_offset_neutral = -4.000000
 		volume_enemy_targeting_boost = 5.000000
 		recency_bias_max_scale = 0.550000
+		volume_falloff_use_curve_editor = true
+		volume_falloff_curve_db_player = 
+		[
+			0.000000,
+			0.000000,
+			0.000000,
+			0.000000,
+			0.000000,
+			0.000000,
+		]
+		volume_falloff_curve_db_team = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2999.900879,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3479.885010,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_opponent = 
+		[
+			
+			[
+				0.000000,
+				-0.864845,
+				0.000000,
+				0.004300,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.004300,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2999.900879,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3479.885010,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_neutral = 
+		[
+			
+			[
+				0.000000,
+				-0.864845,
+				0.000000,
+				0.004300,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.004300,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2999.900879,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3479.885010,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
 	}
 	Base.Weapon.Beam.ClosestPoint = 
 	{
@@ -79,6 +205,7 @@
 	{
 		base = "Base.Weapon"
 		preload_vsnds = true
+		volume_falloff_use_curve_editor = false
 		block_distance_max = 4000.000000
 		volume_falloff_max_team = 3200.000000
 		volume_falloff_max_opponent = 3200.000000
@@ -93,6 +220,7 @@
 	{
 		base = "Base.Weapon"
 		preload_vsnds = true
+		volume_falloff_use_curve_editor = false
 		mix_group_prefix = "Boss"
 		block_distance_max = 4000.000000
 		volume_falloff_max_team = 2500.000000
@@ -125,6 +253,7 @@
 	{
 		type = "citadel_perspective_default"
 		mix_group_prefix = "Ability"
+		block_volume_min = -1.000000
 		volume_fade_out = 0.100000
 		volume_falloff_min_player = 200.000000
 		volume_falloff_min_team = 200.000000
@@ -148,6 +277,133 @@
 		pitch_envelope_scale_min = 0.850000
 		pitch_envelope_scale_max = 1.500000
 		volume_offset_opponent = 0.000000
+		volume_falloff_use_curve_editor = true
+		volume_falloff_curve_db_player = 
+		[
+			0.000000,
+			0.000000,
+			0.000000,
+			0.000000,
+			0.000000,
+			0.000000,
+		]
+		volume_falloff_curve_db_team = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2999.900879,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_opponent = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2999.900879,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_neutral = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2999.900879,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
 	}
 	Base.Ability.Telegraph = 
 	{
@@ -178,6 +434,8 @@
 	Base.Ability.Projectile = 
 	{
 		base = "Base.Ability"
+		doppler_on = 1.000000
+		doppler_factor = 4.000000
 		volume_enemy_targeting_boost = 0.000000
 		volume_falloff_min_player = 200.000000
 		volume_falloff_min_team = 200.000000
@@ -187,6 +445,47 @@
 		volume_falloff_max_team = 3500.000000
 		volume_falloff_max_opponent = 3500.000000
 		volume_falloff_max_neutral = 3500.000000
+		volume_offset_team = -6.000000
+		volume_offset_player = -3.000000
+		volume_falloff_curve_db_player = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2999.900879,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
 	}
 	Base.Ability.StatusEffect = 
 	{
@@ -225,8 +524,8 @@
 		send_name_team = "main"
 		occlusion_min = 0.300000
 		occlusion_scale_non_player = 0.900000
-		occlusion_volume_blend_distance_min = 1200
-		occlusion_volume_blend_distance_max = 2200
+		occlusion_volume_blend_distance_min = 1200.000000
+		occlusion_volume_blend_distance_max = 2200.000000
 	}
 	Base.Footsteps = 
 	{
@@ -490,103 +789,6 @@
 		volume_offset_opponent = 3.000000
 		volume_offset_neutral = -6.000000
 	}
-	Base.Hero.VO = 
-	{
-		type = "citadel_perspective_default"
-		mix_group_prefix = "VO-Hero"
-		send_name_team = "main"
-		limiter_match_entity = 1.000000
-		volume_fade_out = 0.100000
-		block_distance_max = 3000.000000
-		volume_falloff_min_player = 99999.000000
-		volume_falloff_min_team = 200.000000
-		volume_falloff_min_opponent = 300.000000
-		volume_falloff_min_neutral = 200.000000
-		volume_falloff_max_player = 99999.000000
-		volume_falloff_max_team = 1200.000000
-		volume_falloff_max_opponent = 2500.000000
-		volume_falloff_max_neutral = 1200.000000
-		volume = 2.000000
-		volume_offset_player = 2.000000
-		volume_offset_team = -4.000000
-		volume_offset_opponent = 2.000000
-		volume_offset_neutral = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			50.000000,
-		]
-		spread_max_value_team = 0.000000
-		spread_max_value_opponent = 0.000000
-		spread_max_value_neutral = 0.000000
-		spread_min_value = 0.000000
-		volume_enemy_targeting_boost = 0.000000
-		apply_radio_effect_for_voice = false
-		voice_radio_effect_distance_threshold = 800.000000
-		use_pathing_distance = 0.000000
-		use_pathing_render = 0.000000
-		use_pathing_render_eq = 0.000000
-	}
-	Base.Hero.VO.Death = 
-	{
-		type = "citadel_default_3d"
-		mixer_mixgroup = "VO-Hero-Death"
-		send_name = "hero_vo_death"
-		volume_fade_out = 0.100000
-		volume = 0.000000
-		volume_falloff_floor = 1.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			50.000000,
-		]
-		spread_min_value = 0.000000
-		spread_max_value = 0.000000
-		hrtf_on = 1.000000
-		occlusion_min = 0.300000
-		occlusion_scale = 0.900000
-		occlusion_volume_blend_distance_min = 1200
-		occlusion_volume_blend_distance_max = 2500
-	}
-	Base.VO.NPC = 
-	{
-		type = "citadel_perspective_default"
-		mix_group_prefix = "VO-NPC"
-		limiter_match_entity = 1.000000
-		volume_fade_out = 0.100000
-		block_distance_max = 3000.000000
-		volume_falloff_min_player = 99999.000000
-		volume_falloff_min_team = 200.000000
-		volume_falloff_min_opponent = 300.000000
-		volume_falloff_min_neutral = 200.000000
-		volume_falloff_max_player = 99999.000000
-		volume_falloff_max_team = 1200.000000
-		volume_falloff_max_opponent = 2500.000000
-		volume_falloff_max_neutral = 1200.000000
-		volume = -6.000000
-		volume_offset_player = 0.000000
-		volume_offset_team = 0.000000
-		volume_offset_opponent = 0.000000
-		volume_offset_neutral = 0.000000
-		position_offset = 
-		[
-			0.000000,
-			0.000000,
-			50.000000,
-		]
-		spread_max_value_team = 0.000000
-		spread_max_value_opponent = 0.000000
-		spread_max_value_neutral = 0.000000
-		spread_min_value = 0.000000
-		volume_enemy_targeting_boost = 0.000000
-		apply_radio_effect_for_voice = false
-		voice_radio_effect_distance_threshold = 800.000000
-		use_pathing_distance = 0.000000
-		use_pathing_render = 0.000000
-		use_pathing_render_eq = 0.000000
-	}
 	Base.Damage.Send = 
 	{
 		type = "citadel_default_3d"
@@ -797,6 +999,163 @@
 		spread_max_value_neutral = 0.000000
 		spread_min_value = 0.000000
 		volume_falloff_floor_enemy_relevance = 0.000000
+		volume_falloff_use_curve_editor = true
+		volume_falloff_curve_db_player = 
+		[
+			
+			[
+				6.619538,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				249.392715,
+				0.000000,
+				0.000000,
+				-0.013772,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				750.412964,
+				-6.899992,
+				0.014702,
+				0.014702,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				800.000000,
+				-60.000000,
+				-1.070845,
+				-1.070845,
+				3.000000,
+				1.000000,
+			],
+		]
+		volume_falloff_curve_db_team = 
+		[
+			
+			[
+				6.619538,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				249.392715,
+				0.000000,
+				0.000000,
+				-0.013772,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				750.412964,
+				-6.899992,
+				0.014702,
+				0.014702,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				800.000000,
+				-60.000000,
+				-1.070845,
+				-1.070845,
+				3.000000,
+				1.000000,
+			],
+		]
+		volume_falloff_curve_db_opponent = 
+		[
+			
+			[
+				6.619538,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				249.392715,
+				0.000000,
+				0.000000,
+				-0.013772,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				750.412964,
+				-6.899992,
+				0.014702,
+				0.014702,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				800.000000,
+				-60.000000,
+				-1.070845,
+				-1.070845,
+				3.000000,
+				1.000000,
+			],
+		]
+		volume_falloff_curve_db_neutral = 
+		[
+			
+			[
+				6.619538,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				249.392715,
+				0.000000,
+				0.000000,
+				-0.013772,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				750.412964,
+				-6.899992,
+				0.014702,
+				0.014702,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				800.000000,
+				-60.000000,
+				-1.070845,
+				-1.070845,
+				3.000000,
+				1.000000,
+			],
+		]
 	}
 	Base.Bullet.Whizby = 
 	{
@@ -804,6 +1163,7 @@
 		mixer_mixgroup = "Proj-Whizby"
 		spread_min_value = 0.000000
 		spread_max_value = 0.000000
+		occlusion_scale = 0.000000
 		volume_fade_out = 0.250000
 		volume = 0.000000
 		volume_falloff_max = 3000.000000
@@ -834,6 +1194,7 @@
 			"sounds/weapons/shared/whizby/default_weapon_whizby_groupB-009.vsnd",
 			"sounds/weapons/shared/whizby/default_weapon_whizby_groupB-010.vsnd",
 		]
+		vsnd_duration = 0.396349
 	}
 	Base.UI.Positional = 
 	{
@@ -861,7 +1222,7 @@
 	}
 	Base.Healing = 
 	{
-		type = "citadel_perspective_default"
+		base = "Base.Ability.StatusEffect"
 		mix_group_prefix = "Ability"
 		volume_fade_out = 0.100000
 		volume_falloff_min_player = 200.000000
@@ -893,6 +1254,123 @@
 		mono_downmix_max_distance = 150.000000
 		mono_downmix_min_distance = 100.000000
 		block_volume_min = 0.001000
+		volume_falloff_curve_db_team = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				450.000000,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_opponent = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				450.000000,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_neutral = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				450.000000,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
 	}
 	Base.Ability.Short = 
 	{
@@ -906,6 +1384,123 @@
 		volume_falloff_max_opponent = 2500.000000
 		volume_falloff_max_neutral = 2500.000000
 		volume_falloff_curve_amount = 0.500000
+		volume_falloff_curve_db_team = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2000.000000,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_opponent = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.003380,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2000.000000,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_neutral = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.003380,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2000.000000,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2500.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
 	}
 	Base.Ability.Melee = 
 	{
@@ -918,11 +1513,130 @@
 		volume_falloff_max_team = 800.000000
 		volume_falloff_max_opponent = 800.000000
 		volume_falloff_max_neutral = 800.000000
+		block_volume_min = 0.001000
+		volume_falloff_curve_db_team = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.002173,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				750.000000,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				800.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_opponent = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.011078,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				750.000000,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				800.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve_db_neutral = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				201.149429,
+				0.000000,
+				0.000000,
+				-0.011078,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				750.000000,
+				-6.080357,
+				-0.004735,
+				-0.004735,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				800.000000,
+				-60.000000,
+				-0.035318,
+				-0.035318,
+				2.000000,
+				3.000000,
+			],
+		]
 	}
 	Base.Weapon.Short = 
 	{
 		base = "Base.Weapon"
 		preload_vsnds = true
+		volume_falloff_use_curve_editor = false
 		volume_falloff_min_player = 99999.000000
 		volume_falloff_min_team = 200.000000
 		volume_falloff_min_opponent = 200.000000
@@ -943,8 +1657,8 @@
 	{
 		type = "citadel_default_3d"
 		hrtf_on = 0.000000
-		spread_min = 250
-		spread_max = 1200
+		spread_min = 250.000000
+		spread_max = 1200.000000
 		spread_max_value = 0.150000
 		spread_min_value = 0.150000
 		mixer_mixgroup = "MapObjective"

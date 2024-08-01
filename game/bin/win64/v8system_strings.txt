@@ -1,6 +1,5 @@
 	!s99
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
@@ -44,28 +43,25 @@
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
 !m_pIsolate
-"?IsCurrent@Isolate@v8@@QEBA_NXZ
 %d %d %d
 %d %d %d %d
 %f %f
 %f %f %f
 %f %f %f %f
+%s - Calling an array API on '%s'%s
 %s: Invalid capacity %u
 %s: Invalid grow amount %d
 %s: unhandled basic type %u
+&'?IsCurrent@Isolate@v8@@QEBA_NXZ
 &YA1E
 &YA1H
 ',=?k
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
 (%d,%d)
 (A^A]_^
 (D$0H
 (f*^[0
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$PH
 )>6{1n
 *StO9>T
@@ -75,6 +71,7 @@
 +f)>0'
 +h->|
 +o'q)}
+,)g],A
 ,/<-w
 ,W5y+
 -tools
@@ -144,7 +141,6 @@
 .xdata
 .xdata$x
 />58d%
-/?NumberOfHeapSpaces@Isolate@v8@@QEAA_KXZ
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -153,7 +149,6 @@
 0A_A^A]A\_
 0A_A^A]A\_^[
 0A_A^_^]
-0^`W=
 0iN>/
 0w0c1
 0}0i1
@@ -164,7 +159,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240723234850Z0/
+240801161801Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -178,6 +173,7 @@
 380115120000Z0b1
 3>N;kU
 3>fvw
+3?New@Isolate@v8@@SAPEAV12@AEBUCreateParams@12@@Z
 3mq+<
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
@@ -187,8 +183,6 @@
 6OB,n_
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8?SetCaptureStackTraceForUncaughtExceptions@Isolate@v8@@QEAAX_NHW4StackTraceOptions@StackTrace@2@@Z
-8?SetOOMErrorHandler@Isolate@v8@@QEAAXP6AXPEBDAEBUOOMDetails@2@@Z@Z
 8A_A]_^
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
@@ -196,7 +190,8 @@
 9)~P3
 98t H
 9>~ZH
-:	V_qsort_s
+9?Reallocate@Allocator@ArrayBuffer@v8@@UEAAPEAXPEAX_K1@Z
+;#?Initialize@V8@v8@@CA_NH@Z
 ;H9>&X
 ;I9}(tiH
 < t=<	t9
@@ -205,9 +200,12 @@
 <no failure reason set>
 <undefined>
 <unknown>
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
+>?SetCaptureStackTraceForUncaughtExceptions@Isolate@v8@@QEAAX_NHW4StackTraceOptions@StackTrace@2@@Z
+>?SetFatalErrorHandler@Isolate@v8@@QEAAXP6AXPEBD0@Z@Z
 >Mp$d
 >jtm}S
 ?7zQ6$
@@ -220,6 +218,8 @@
 ??0HeapStatistics@v8@@QEAA@XZ
 ??1CUtlMemoryBlockAllocator@@QEAA@XZ
 ??1CreateParams@Isolate@v8@@QEAA@XZ
+??SetFlagsFromString@V8@v8@@SAXPEBD_K@Z
+??SetOOMErrorHandler@Isolate@v8@@QEAAXP6AXPEBDAEBUOOMDetails@2@@Z@Z
 ?AddNearHeapLimitCallback@Isolate@v8@@QEAAXP6A_KPEAX_K1@Z0@Z
 ?Alloc@CRawAllocator@@SAPEAXW4RawAllocatorType_t@@_KPEA_K@Z
 ?Alloc@CUtlMemoryBlockAllocator@@QEAAII@Z
@@ -242,8 +242,6 @@
 ?GetCurrent@Isolate@v8@@SAPEAV12@XZ
 ?GetHeapSpaceStatistics@Isolate@v8@@QEAA_NPEAVHeapSpaceStatistics@2@_K@Z
 ?GetHeapStatistics@Isolate@v8@@QEAAXPEAVHeapStatistics@2@@Z
-?Initialize@V8@v8@@CA_NH@Z
-?InitializePlatform@V8@v8@@SAXPEAVPlatform@2@@Z
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
 ?LoadKV3@@YA_NPEAVCKeyValues3Context@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBD@Z
@@ -297,7 +295,6 @@
 A8}(u
 A>pP&
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
-AMA_Ow
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 ATAUAVH
 AUAVAWH
@@ -334,7 +331,6 @@ BinaryProperties_GetValue
 C I!.H
 C0Hc	H
 C:\buildworker\citadel_rel_win64\build\_build_\v8system\_vpc_v8system\default\win64\_msvc_\Retail\v8system.pdb
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\iresourcesystem.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
@@ -373,11 +369,6 @@ CKeyValues3Context::Root
 CKeyValues3ContextImpl::FreeToCluster
 CKeyValues3ContextImpl::FreeToCluster::<lambda_1>::operator ()
 CKeyValues3Table::Free
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CSource2V8System::CreateIsolate
 CSource2V8System::DisposeIsolate
 CTier2ShutdownCallback::RunAllCallbacks
@@ -404,7 +395,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
 CorExitProcess
@@ -434,7 +424,6 @@ December
 Default size of stack region v8 is allowed to use (in kBytes)
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -448,10 +437,12 @@ DisconnectTier2Libraries
 Dump output of v8::Isolate::GetHeapStatistics.
 E0HcH
 E0Lc`
+E4NAX
 E8q(u
 EH*?H
 ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 EngineServiceMgr001
@@ -486,7 +477,6 @@ GameResourceServiceServerV001
 GameUIService_001
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCommandLineA
 GetCommandLineW
@@ -552,7 +542,6 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Invalid access of CConVarRef for '%s'
@@ -570,7 +559,6 @@ K0HcQ
 KERNEL32.dll
 KV3 instances cannot be set to an unspecified specific type
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
 KeyValues3::CopyFrom
 KeyValues3::CopyFrom::<lambda_1>::operator ()
 KeyValues3::GetArrayElement
@@ -657,9 +645,6 @@ NetworkSystemVersion001
 November
 O8HcB
 October
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 PA^_^
 PA_A^A]A\_^]
 PAq=?Mp#
@@ -669,9 +654,9 @@ PanoramaUIEngine001
 ParticleSystemMgr003
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_RegisterModule
 Pointers cannot be used as numeric values
@@ -784,7 +769,6 @@ V8 Near Heap Limit: cur=%llu, init=%llu, max=%llu
 V8 OOM Error: %s - %s
 V8 hiting max memory limit: %d MB
 V8 hiting memory limit: %llu
-V8?SetFatalErrorHandler@Isolate@v8@@QEAAXP6AXPEBD0@Z@Z
 V8FatalErrorHandler
 V8NearHeapLimitCallback
 V8OOMErrorCallback
@@ -836,7 +820,6 @@ Valve Corp.0
 Valve Corp.1
 VisBuilder_001
 Vrad3_001
-W-?New@Isolate@v8@@SAPEAV12@AEBUCreateParams@12@@Z
 WATAUAVAWH
 WAVAWH
 WaitForSingleObjectEx
@@ -847,7 +830,7 @@ WideCharToMultiByte
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
-Xist"
+X-s`n6A&&Y
 Y9"SD
 [K]taM?
 \$ UH
@@ -859,7 +842,7 @@ Y9"SD
 \$8I;
 \$@E3
 \$@H;
-]*,7p
+\6?NumberOfHeapSpaces@Isolate@v8@@QEAA_KXZ
 ]J<0"0i3
 _ ;_$t
 _RDATA
@@ -919,6 +902,7 @@ _gUT^
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
+a#?InitializePlatform@V8@v8@@SAXPEAVPlatform@2@@Z
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 address family not supported
@@ -930,7 +914,6 @@ argument list too long
 argument out of domain
 array
 bAllocationCanFit
-bLegalTypeChange
 bad address
 bad exception
 bad file descriptor
@@ -941,7 +924,6 @@ bp(=>?g
 broken pipe
 c [1>H'
 c(>\,
-c8?SetFlagsFromString@V8@v8@@SAXPEBD_K@Z
 cached_fp == invalid_function_sentinel()
 cached_fp == new_fp
 cached_handle == ((HANDLE)(LONG_PTR)-1)
@@ -965,7 +947,6 @@ e0A_A^A]A\]
 ehandle
 entity_name
 executable format error
-e}Qbj
 f9)u4H9j
 fB9<A}1L
 fD91uTL9r
@@ -989,7 +970,6 @@ float64
 function not supported
 generic
 hA_A^A]A\_^[]
-hmn3F
 host unreachable
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
@@ -1072,8 +1052,6 @@ not connected
 not enough memory
 not supported
 ntelA
-o3?Reallocate@Allocator@ArrayBuffer@v8@@UEAAPEAXPEAX_K1@Z
-oZPc&pfs
 operation canceled
 operation in progress
 operation not permitted
@@ -1095,7 +1073,6 @@ pContext
 pEntry >= m_Values
 pExtensionWithDot[ 0 ] == '.'
 pHeader->m_nHeaderVersion == RESOURCE_FILE_HEADER_VERSION
-pMemory[i] == 0
 pMeta
 pParent
 pPrevClusterInFreeList != nullptr
@@ -1206,8 +1183,7 @@ vector2d
 vector3
 vector4
 vector4d
-vf6U\
-wIGi*
+w!0LX
 wrong protocol type
 www.digicert.com1!0
 www.digicert.com1$0"

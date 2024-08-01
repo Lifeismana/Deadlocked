@@ -26,9 +26,9 @@
 @define ZIndexEnemyPlayer: 13;
 @define ZIndexFriendlyPlayerLow: 12;
 @define ZIndexEnemyPlayerLow: 11;
-@define ZIndexDeadPlayer: 11;
-@define ZIndexPingLocalPlayer: 0;
 @define ZIndexT1Shop: 1;
+@define ZIndexDeadPlayer: 0;
+@define ZIndexPingLocalPlayer: 0;
 .HudMinimap
 {
 	width: 100%;
@@ -50,6 +50,11 @@
 #map_render
 {
 	blur: gaussian( 0 );
+}
+
+.is_underground #map_render,.is_underground #canvas
+{
+	opacity: 0.5;
 }
 
 .button_image
@@ -154,6 +159,131 @@
 	opacity: 0.9;
 }
 
+.map_button.shop_tunnel.is_visible
+{
+	visibility: visible;
+}
+
+.map_button.shop_tunnel
+{
+	visibility:collapse;
+	width: 120px;
+	height: 80px;
+	background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/minimap/minimap_shop_tunnel_png.vtex");
+	background-size: 80% 60%;
+	background-position: center;
+	opacity: 1.0;
+	z-index: ZIndexT1Shop;
+	img-shadow: 0px 0px 80px 8.0 #000000;
+	transform: translateX(12%) translateY(2%);
+}
+
+.map_button.shop_tunnel_invert.is_visible
+{
+	visibility: visible;
+}
+
+.map_button.shop_tunnel_invert
+{
+	visibility:collapse;
+	width: 120px;
+	height: 80px;
+	background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/minimap/minimap_shop_tunnel_png.vtex");
+	background-size: 80% 60%;
+	background-position: center;
+	opacity: 1.0;
+	z-index: ZIndexT1Shop;
+	transform: scaleY(-1) scaleX(-1) translateX(-12%) translateY(-2%);
+}
+
+.map_button.shop_tunnel_exit.is_visible
+{
+	visibility: visible;
+}
+
+.map_button.shop_tunnel_exit
+{
+	visibility:collapse;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/minimap/icon_stairs_png.vtex");
+	background-size: 100% 100%;
+	background-position: center;
+	opacity: 1.0;
+	z-index: ZIndexObjective;
+}
+
+.map_button.teleporter_onRight
+{
+	transform: scaleX(-1);
+}
+
+.map_button.teleporter_off
+{
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/minimap/minimap_teleporter_go_right.vsvg");
+	background-size: contain;
+	background-position: center;
+	opacity: 0.3;
+}
+
+.map_button.teleporter_nearby
+{
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/minimap/minimap_teleporter_go_right.vsvg");
+	background-size: 100% 100%;
+	background-position: center;
+	opacity: 0.9;
+	z-index: ZIndexObjective;
+}
+
+.map_button.teleporter_active
+{
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/minimap/minimap_teleporter_go_right.vsvg");
+	background-size: contain;
+	background-position: center;
+	opacity: 1.0;
+	z-index: ZIndexObjective;
+	animation-name: teleportActive;
+	animation-iteration-count: infinite;
+	animation-duration: 1.3s;
+}
+
+@keyframes 'teleportActive'
+{
+	0%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+		wash-color: #81C8FF00;
+	}
+	
+	50%
+	{
+		brightness: 3;
+		pre-transform-scale2d: 1.5;
+		wash-color: #81C8FF;
+	}
+	
+	100%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+		wash-color: #81C8FF00;
+	}
+	
+}
+
 .map_button.idol_dropping
 {
 	background-image: url("s2r://panorama/images/minimap/soul_jar_marker_psd.vtex");
@@ -233,7 +363,7 @@
 	wash-color: grey;
 }
 
-.invert_map .map_button.idol_dropping,.invert_map .map_button.idol_return,.invert_map .map_button.idol_spawn
+.invert_map .map_button.idol_dropping,.invert_map .map_button.idol_return,.invert_map .map_button.idol_return_friendly,.invert_map .map_button.idol_return_enemy,.invert_map .map_button.idol_spawn
 {
 	transform: scaleY(-1) scaleX(-1);
 }
@@ -660,7 +790,7 @@
 	z-index: 100;
 }
 
-.invert_map .map_button.idol_dropping.enlarge_entry,.invert_map .map_button.idol_return.enlarge_entry,.invert_map .map_button.idol_spawn.enlarge_entry
+.invert_map .map_button.idol_dropping.enlarge_entry,.invert_map .map_button.idol_return.enlarge_entry,.invert_map .map_button.idol_return_friendly.enlarge_entry,.invert_map .map_button.idol_return_enemy.enlarge_entry,.invert_map .map_button.idol_spawn.enlarge_entry
 {
 	transform: scaleY(-1.2) scaleX(-1.2);
 }

@@ -14,13 +14,13 @@
 	D$0H
 	HcC8N
 	NAN encountered in element '%s' guid %s attribute '%s'!
+	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_frexpf
 	V_isnand
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_SetExtension
 	_V_StringAfterPrefix
 	_V_StringAfterPrefixCaseSensitive
@@ -245,11 +245,8 @@
 !V_stricmp_fast( attributeName, "id" )
 !V_stricmp_fast( pEncodingName, "keyvalues" )
 !V_stricmp_fast( pEncodingName, GetName() )
-!V_stricmp_fast( pString, "-0" )
-!V_stricmp_fast( pString, CNumStr( nValue ) )
 !anim.IsWorldSpace()
 !bForce
-!bLooksLikeABug
 !bSerializingPrefixElement
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
@@ -317,7 +314,6 @@
 "e?<<<<<<l?
 "id" "elementid" 
 "lineOrder" attribute not found in the header.
-"mv4O
 "pixelAspectRatio" attribute not found in the header.
 "screenWindowCenter" attribute not found in the header.
 "screenWindowWidth" attribute not found in the header.
@@ -404,6 +400,8 @@ $~NHc
 %s (Material)
 %s - %s
 %s - %s:%s
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s :: %s (%d)
 %s :: %s (%s) (%d)
 %s :: Invalid bone referenced :: %s
@@ -529,8 +527,6 @@ $~NHc
 'p7M}f
 ( !pUpAxisAttr && !pszUpAxis ) || ( pszUpAxis && StringHasPrefix( pszUpAxis, "Z" ) )
 ( Face( pEdge->m_Face ) != NULL ) || ( bAssert == false )
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( GetNumVertices() + nNumVertices ) <= m_Vertices.MaxCount()
 ( NumCols() == pOrig->NumCols() ) && ( NumRows() == pOrig->NumRows() ) && ( NumSlices() == pOrig->NumSlices() )
 ( bFoundOpposite ) || ( bAssert == false )
@@ -613,7 +609,6 @@ $~NHc
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
-(%WQu
 (%d,%d
 (%d,%d)
 (%d,%d,%d
@@ -622,17 +617,9 @@ $~NHc
 (*%s*), 
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-[Ku
-(-|Qu
-(5#4d
-(50'd
-(53+d
-(5W>d
-(5g5d
-(5y,d
 (;^ |
 (;s |
-(=?8D
+(=?+m
 (A\_][
 (A]A\^[
 (A]A\_^][
@@ -672,6 +659,7 @@ $~NHc
 (A__^[
 (Advanced Feature) Used to specify special interaction rules or exclusions. References a name in scripts/collision_properties.txt.
 (AiCH
+(D$ A
 (D$ D
 (D$ H
 (D$ L
@@ -803,9 +791,6 @@ $~NHc
 (m_StreamSet.AddToTail()) == (nComponentIndex)
 (m_ValueIndexToHandleArray.AddToTail( pComponentHandles[ iHandle ].AsInt() )) == (nValueIndex)
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (nLumaStride > 0) && (nLumaStride < INT_MAX) && (nChromaStride > 0) && (nChromaStride < INT_MAX)
 (nTotalTrianglesRemaining % 3) == 0
 (nTrianglesRemoved % 3) == 0
@@ -867,6 +852,7 @@ $~NHc
 (t$pL
 (t$pf
 (unsigned int)nCount <= nPixelsRemaining
+(|$ @
 (|$ D
 (|$ H
 (|$ I
@@ -1226,7 +1212,6 @@ $~NHc
 *pHalfEdgeHandleB != INVALID_MESH_COMPONENT
 *pScan == '['
 *xNIL
-+	V_logd
 +;uKH
 +A$Lc
 +Additive
@@ -1260,7 +1245,6 @@ $~NHc
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 , channels = 
 , height = 
 , window
@@ -1282,6 +1266,7 @@ $~NHc
 ,YA1H
 ,YA1I
 ,dF9<
+-	V_log2f
 ---- dmxconvert cmdline ----
 ---- dmxconvert output ----
 ---------------------------
@@ -1297,7 +1282,7 @@ $~NHc
 -sse3
 -sse4
 -tools
-.$Gh-
+.	V_logd
 ..om?
 .00cfg
 .40t8Ic
@@ -1736,6 +1721,8 @@ $~NHc
 .?AUCAttr_m_bUseAttributes@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUseBlockSolver@?1??GetStaticAttributes@CModelDocPhysicsJoint_Revolute@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUseFlatColor@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpBakeTextureToVertexData@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_bUseForCollision@?1??GetStaticAttributes@CModelDocDistanceField@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_bUseForOcclusion@?1??GetStaticAttributes@CModelDocDistanceField@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUseLayerSequence@?1??GetStaticAttributes@CModelDocClothEffectAnimEvent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUseLocalAttachPointOffset@?1??GetStaticAttributes@CModelDocConfigElement_AttachedModel@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_bUseMassCenterOverride@?1??GetStaticAttributes@CModelDocPhysicsBodyMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -1771,6 +1758,7 @@ $~NHc
 .?AUCAttr_m_excludeMaterials@?1??GetStaticAttributes@CModelDocDistanceField@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_expression@?1??GetStaticAttributes@CModelDocMorphRule@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_fColorAttributeWeight@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_fJointWeightAttributeWeight@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_fNormalAttributeWeight@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_fSmallComponentSizeThreshold@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_fTargetError@?1??GetStaticAttributes@CModelDocMeshModifier_Simplify@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -2053,6 +2041,10 @@ $~NHc
 .?AUCAttr_m_nApexFrame@?1??GetStaticAttributes@CModelDocAnimPosture@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_nBodyGroupCount@?1??GetStaticAttributes@CModelDocModelContentDataBudgetLimit@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_nBoneCount@?1??GetStaticAttributes@CModelDocModelContentDataBudgetLimit@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_nBoneIndex0@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_nBoneIndex1@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_nBoneIndex2@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_nBoneIndex3@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_nBoneOrientationMode@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpPointBonesAtParentOrChild@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_nBurstOffsetCP@?1??GetStaticAttributes@CModelDocBreakPieceContents@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_nBurstOffsetCP@?1??GetStaticAttributes@CModelDocBreakPieceSimpleParticles@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -2294,6 +2286,7 @@ $~NHc
 .?AUCAttr_m_sourceFilename@?1??GetStaticAttributes@CModelDocAnimClipFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_sourceFilename@?1??GetStaticAttributes@CModelDocAnimSkeletonFile@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_strAOMap@?1??GetStaticAttributes@CModelDocTextureGenerator_CavityMap@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_strBoneName@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_strBoneName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpAddBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_strBoneName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpAssignBoneParent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_strBoneName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpPrimitiveBox@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -2325,6 +2318,7 @@ $~NHc
 .?AUCAttr_m_strOutputFaceVertexStreamName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpBakeTextureToVertexData@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_strParentBoneName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpAddBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_strParentBoneName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpAssignBoneParent@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocKeychainMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_strRenderMeshName@?1??GetStaticAttributes@CModelDocStickerMarkup@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_strStackInstanceName@?1??GetStaticAttributes@CModelDocMeshModifier_MeshOpStack@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_strTargetBone@?1??GetStaticAttributes@CModelDocMeshModifier_ForceRealignBone@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -2346,6 +2340,14 @@ $~NHc
 .?AUCAttr_m_vCenter@?1??GetStaticAttributes@CModelDocClothShapeSphere@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_vCenter@?1??GetStaticAttributes@CModelDocHitboxSphere@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_vCenter@?1??GetStaticAttributes@CModelDocPhysicsShape_Sphere@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_vCorner0@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_vCorner0_toCamera@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_vCorner1@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_vCorner1_toCamera@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_vCorner2@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_vCorner2_toCamera@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_vCorner3@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
+.?AUCAttr_m_vCorner3_toCamera@?1??GetStaticAttributes@CModelDocKeychainMarkupLocator@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_vDimensions@?1??GetStaticAttributes@CModelDocClothShapeBox@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_vDimensions@?1??GetStaticAttributes@CModelDocPhysicsShape_Box@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
 .?AUCAttr_m_vDimensions@?1??GetStaticAttributes@CModelDocRenderPrimitiveBox@@MEAAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlMemory@PEAVIBaseToolAttr@@H@@@@@Z@
@@ -2542,6 +2544,7 @@ $~NHc
 .?AV?$CBaseConcreteToolAttr@HVCModelDocIKChain@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocInsertFootCycle@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocJiggleBone@@@@
+.?AV?$CBaseConcreteToolAttr@HVCModelDocKeychainMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocLocalHierarchy@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane@@@@
 .?AV?$CBaseConcreteToolAttr@HVCModelDocMeshModifier_MeshOpSelectionGrowOrShrink@@@@
@@ -2713,6 +2716,7 @@ $~NHc
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCModelDocHitboxSphere@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCModelDocIKJointConstraint_Plane@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCModelDocJiggleBone@@@@
+.?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCModelDocMeshModifier_ForceRealignBone@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCModelDocMeshModifier_ForceUnweightedBindposeBonePositions@@@@
 .?AV?$CBaseConcreteToolAttr@V?$Vec3D@M@@VCModelDocMeshModifier_MeshOpPointBonesAtParentOrChild@@@@
@@ -2845,6 +2849,8 @@ $~NHc
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocIKChainJoint@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocIKJointConstraint_Hinge@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocJiggleBone@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocKeychainMarkup@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocLocalHierarchy@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocMeshDrawOrder@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCModelDocMeshModifier_ForceRealignBone@@@@
@@ -3146,6 +3152,7 @@ $~NHc
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocIKChain@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocInsertFootCycle@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocJiggleBone@@@@
+.?AV?$CBaseConcreteToolAttrValue@HVCModelDocKeychainMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocLocalHierarchy@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCModelDocMeshModifier_MeshOpSelectionGrowOrShrink@@@@
@@ -3300,6 +3307,7 @@ $~NHc
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCModelDocHitboxSphere@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCModelDocIKJointConstraint_Plane@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCModelDocJiggleBone@@@@
+.?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCModelDocMeshModifier_ForceRealignBone@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCModelDocMeshModifier_ForceUnweightedBindposeBonePositions@@@@
 .?AV?$CBaseConcreteToolAttrValue@V?$Vec3D@M@@VCModelDocMeshModifier_MeshOpPointBonesAtParentOrChild@@@@
@@ -3429,6 +3437,8 @@ $~NHc
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocIKChainJoint@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocIKJointConstraint_Hinge@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocJiggleBone@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocKeychainMarkup@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocLocalHierarchy@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocMeshDrawOrder@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCModelDocMeshModifier_ForceRealignBone@@@@
@@ -3730,6 +3740,7 @@ $~NHc
 .?AV?$CConcreteToolAttr@HVCModelDocIKChain@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocInsertFootCycle@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocJiggleBone@@X@@
+.?AV?$CConcreteToolAttr@HVCModelDocKeychainMarkupLocator@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocLocalHierarchy@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane@@X@@
 .?AV?$CConcreteToolAttr@HVCModelDocMeshModifier_MeshOpSelectionGrowOrShrink@@X@@
@@ -3901,6 +3912,7 @@ $~NHc
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCModelDocHitboxSphere@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCModelDocIKJointConstraint_Plane@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCModelDocJiggleBone@@X@@
+.?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCModelDocKeychainMarkupLocator@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCModelDocMeshModifier_ForceRealignBone@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCModelDocMeshModifier_ForceUnweightedBindposeBonePositions@@X@@
 .?AV?$CConcreteToolAttr@V?$Vec3D@M@@VCModelDocMeshModifier_MeshOpPointBonesAtParentOrChild@@X@@
@@ -4033,6 +4045,8 @@ $~NHc
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocIKChainJoint@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocIKJointConstraint_Hinge@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocJiggleBone@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocKeychainMarkup@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocKeychainMarkupLocator@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocLocalHierarchy@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocMeshDrawOrder@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCModelDocMeshModifier_ForceRealignBone@@X@@
@@ -4545,6 +4559,7 @@ $~NHc
 .?AV?$CModelDocAttr@HVCModelDocIKChain@@@@
 .?AV?$CModelDocAttr@HVCModelDocInsertFootCycle@@@@
 .?AV?$CModelDocAttr@HVCModelDocJiggleBone@@@@
+.?AV?$CModelDocAttr@HVCModelDocKeychainMarkupLocator@@@@
 .?AV?$CModelDocAttr@HVCModelDocLocalHierarchy@@@@
 .?AV?$CModelDocAttr@HVCModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane@@@@
 .?AV?$CModelDocAttr@HVCModelDocMeshModifier_MeshOpSelectionGrowOrShrink@@@@
@@ -4709,6 +4724,7 @@ $~NHc
 .?AV?$CModelDocAttr@V?$Vec3D@M@@VCModelDocHitboxSphere@@@@
 .?AV?$CModelDocAttr@V?$Vec3D@M@@VCModelDocIKJointConstraint_Plane@@@@
 .?AV?$CModelDocAttr@V?$Vec3D@M@@VCModelDocJiggleBone@@@@
+.?AV?$CModelDocAttr@V?$Vec3D@M@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CModelDocAttr@V?$Vec3D@M@@VCModelDocMeshModifier_ForceRealignBone@@@@
 .?AV?$CModelDocAttr@V?$Vec3D@M@@VCModelDocMeshModifier_ForceUnweightedBindposeBonePositions@@@@
 .?AV?$CModelDocAttr@V?$Vec3D@M@@VCModelDocMeshModifier_MeshOpPointBonesAtParentOrChild@@@@
@@ -4836,6 +4852,8 @@ $~NHc
 .?AV?$CModelDocAttr@VCUtlString@@VCModelDocIKChainJoint@@@@
 .?AV?$CModelDocAttr@VCUtlString@@VCModelDocIKJointConstraint_Hinge@@@@
 .?AV?$CModelDocAttr@VCUtlString@@VCModelDocJiggleBone@@@@
+.?AV?$CModelDocAttr@VCUtlString@@VCModelDocKeychainMarkup@@@@
+.?AV?$CModelDocAttr@VCUtlString@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CModelDocAttr@VCUtlString@@VCModelDocLocalHierarchy@@@@
 .?AV?$CModelDocAttr@VCUtlString@@VCModelDocMeshModifier_ForceRealignBone@@@@
 .?AV?$CModelDocAttr@VCUtlString@@VCModelDocMeshModifier_MeshOpAddBone@@@@
@@ -5169,6 +5187,7 @@ $~NHc
 .?AV?$CToolAttrGetSetAccess@HVCModelDocIKChain@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocInsertFootCycle@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocJiggleBone@@@@
+.?AV?$CToolAttrGetSetAccess@HVCModelDocKeychainMarkupLocator@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocLocalHierarchy@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane@@@@
 .?AV?$CToolAttrGetSetAccess@HVCModelDocMeshModifier_MeshOpSelectionGrowOrShrink@@@@
@@ -5322,6 +5341,7 @@ $~NHc
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCModelDocHitboxSphere@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCModelDocIKJointConstraint_Plane@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCModelDocJiggleBone@@@@
+.?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCModelDocMeshModifier_ForceRealignBone@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCModelDocMeshModifier_ForceUnweightedBindposeBonePositions@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCModelDocMeshModifier_MeshOpPointBonesAtParentOrChild@@@@
@@ -5447,6 +5467,8 @@ $~NHc
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocIKChainJoint@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocIKJointConstraint_Hinge@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocJiggleBone@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocKeychainMarkup@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocLocalHierarchy@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocMeshModifier_ForceRealignBone@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCModelDocMeshModifier_MeshOpAddBone@@@@
@@ -5902,6 +5924,7 @@ $~NHc
 .?AV?$CValueAttributeWrapper@HVCModelDocIKChain@@@@
 .?AV?$CValueAttributeWrapper@HVCModelDocInsertFootCycle@@@@
 .?AV?$CValueAttributeWrapper@HVCModelDocJiggleBone@@@@
+.?AV?$CValueAttributeWrapper@HVCModelDocKeychainMarkupLocator@@@@
 .?AV?$CValueAttributeWrapper@HVCModelDocLocalHierarchy@@@@
 .?AV?$CValueAttributeWrapper@HVCModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane@@@@
 .?AV?$CValueAttributeWrapper@HVCModelDocMeshModifier_MeshOpSelectionGrowOrShrink@@@@
@@ -6052,6 +6075,7 @@ $~NHc
 .?AV?$CValueAttributeWrapper@V?$Vec3D@M@@VCModelDocHitboxSphere@@@@
 .?AV?$CValueAttributeWrapper@V?$Vec3D@M@@VCModelDocIKJointConstraint_Plane@@@@
 .?AV?$CValueAttributeWrapper@V?$Vec3D@M@@VCModelDocJiggleBone@@@@
+.?AV?$CValueAttributeWrapper@V?$Vec3D@M@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CValueAttributeWrapper@V?$Vec3D@M@@VCModelDocMeshModifier_ForceRealignBone@@@@
 .?AV?$CValueAttributeWrapper@V?$Vec3D@M@@VCModelDocMeshModifier_ForceUnweightedBindposeBonePositions@@@@
 .?AV?$CValueAttributeWrapper@V?$Vec3D@M@@VCModelDocMeshModifier_MeshOpPointBonesAtParentOrChild@@@@
@@ -6177,6 +6201,8 @@ $~NHc
 .?AV?$CValueAttributeWrapper@VCUtlString@@VCModelDocIKChainJoint@@@@
 .?AV?$CValueAttributeWrapper@VCUtlString@@VCModelDocIKJointConstraint_Hinge@@@@
 .?AV?$CValueAttributeWrapper@VCUtlString@@VCModelDocJiggleBone@@@@
+.?AV?$CValueAttributeWrapper@VCUtlString@@VCModelDocKeychainMarkup@@@@
+.?AV?$CValueAttributeWrapper@VCUtlString@@VCModelDocKeychainMarkupLocator@@@@
 .?AV?$CValueAttributeWrapper@VCUtlString@@VCModelDocLocalHierarchy@@@@
 .?AV?$CValueAttributeWrapper@VCUtlString@@VCModelDocMeshModifier_ForceRealignBone@@@@
 .?AV?$CValueAttributeWrapper@VCUtlString@@VCModelDocMeshModifier_MeshOpAddBone@@@@
@@ -6979,6 +7005,8 @@ $~NHc
 .?AVCModelDocInsertFootCycle@@
 .?AVCModelDocJiggleBone@@
 .?AVCModelDocJiggleBoneList@@
+.?AVCModelDocKeychainMarkup@@
+.?AVCModelDocKeychainMarkupLocator@@
 .?AVCModelDocLODGroup@@
 .?AVCModelDocLODGroupAll@@
 .?AVCModelDocLODGroupList@@
@@ -7338,7 +7366,7 @@ $~NHc
 .xJ>Hf
 .xdata
 .xdata$x
-/-SGg
+/	V_logf
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
 // 						"BA_INT_DANGER"		break out of this anim only if threatened
@@ -7355,9 +7383,6 @@ $~NHc
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/=NFD
-/=jUD
-/=lUD
 />58d%
 /D$pv
 /D$tv
@@ -7470,7 +7495,7 @@ $~NHc
 220323000000Z
 220801000000Z
 230714000000Z
-240723235101Z0/
+240801201036Z0/
 241009235959Z0a1
 2D Aim
 2D Blend Has No Referenced Animations
@@ -7530,13 +7555,11 @@ $~NHc
 6YA1H
 6YA1I
 6p7MOf
-7	V_powd
 7&F|If
 70503
 7YA1H
 7YA1I
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8"3hrf
 8-byte data pool
 8/t[H
@@ -7575,6 +7598,7 @@ $~NHc
 8GbthH
 8Hc)L
 8HcD3
+8JcD8
 8L9|$@t
 8M9.t	I
 8YA1H
@@ -7588,7 +7612,6 @@ $~NHc
 8fB9l
 8fD9D
 8ke?;
-9	V_qsort
 9)~ML
 9)~P3
 9)~eH
@@ -7711,12 +7734,11 @@ $~NHc
 9~P~3
 9~P~7
 9~P~;
-:	V_qsort_s
+:	V_powd
 :!L$ 0
 :!|$ 0E
 :!|$`0
 :: <NO TARGET BONE>
-:;=D$
 :>)*	v
 :>t6k'
 :A99u
@@ -7726,6 +7748,7 @@ $~NHc
 :VP8LtHD
 :VP8X
 :fA;x
+;	V_powf
 ;	uXH
 ; tris:
 ;(}{H
@@ -7759,7 +7782,6 @@ $~NHc
 ;J;J;J;J;J;J;J;J;J;J;J;J;J;J;J;Jx
 ;L$<|
 ;L$@u
-;L$`u
 ;L$h}
 ;L9|$Xt
 ;X`}"H
@@ -7797,6 +7819,7 @@ $~NHc
 ;|$P|
 ;|$`|
 ;}st-;}ot(H
+<	V_qsort
 <	tf3
 <	u"H
 <	u2H
@@ -7872,6 +7895,7 @@ $~NHc
 <unnamed>
 <unset>
 <utK@:
+=	V_qsort_s
 =%H5<mN
 ======
 ==MQ?
@@ -7890,7 +7914,6 @@ $~NHc
 >c;j1
 >jtm}S
 >m_flStartTimeSeconds
-?	V_roundf
 ?!5WOo
 ?+>^m
 ?333?
@@ -8028,6 +8051,7 @@ $~NHc
 ?MatchesPattern@CUtlString@@QEBA_NAEBV1@H@Z
 ?MoveFrom@CBufferString@@QEAAXAEAV1@@Z
 ?Nearest@CVertexKDTree@@QEBAPEBMAEBV?$Vec3D@M@@@Z
+?Nearest@CVertexKDTree@@QEBAXAEBV?$Vec3D@M@@AEAV?$CUtlVectorFixedGrowable@PEBM$0EA@H@@@Z
 ?ParallelCallQueued@CCallQueue@@QEAAXPEBDPEAVIThreadPool@@@Z
 ?ParseToken@CUtlBuffer@@QEAA_NPEBD0PEADH@Z
 ?PathJoin@CUtlString@@SA?AV1@PEBD0@Z
@@ -8134,6 +8158,7 @@ $~NHc
 @8;tb3
 @8;tc3
 @8;th3
+@8=]v
 @8j(t
 @8k(t
 @8krt_
@@ -8298,13 +8323,13 @@ $~NHc
 @SWAVAWH
 @SWAVH
 @SWAWH
-@SiA 
 @UATAUAVAWH
 @UATAUAVAWLc9L
 @UATAUAVH
 @UATAUH
 @UATAVAWD
 @UATAVAWH
+@UATAVH
 @UATAWH
 @UATH
 @UAUAVAWH
@@ -8336,6 +8361,7 @@ $~NHc
 @USVWH
 @USWATAUAVAWH
 @USWATH
+@USWAUAWH
 @USWAVH
 @USWAWH
 @USWH
@@ -8524,7 +8550,6 @@ A;v(u
 A;v<|
 A;v@|
 A;vH|
-A;|$ 
 A;}(u
 A;~$|
 A;~(u
@@ -9063,6 +9088,7 @@ Automatically export a representative FBX of this model next to the VMDL for ref
 Average
 Average face normals after resetting them.
 Axis isn't normalized!
+B	V_roundf
 B D9D
 B D9|
 B F9D
@@ -9248,6 +9274,7 @@ BoneConstraintList
 BoneListEditor
 BoneMarkup
 BoneMarkupList
+BoneName
 BoneRelativeNode
 BoneReplacements
 Bonemerged
@@ -9447,6 +9474,7 @@ C:\buildworker\citadel_rel_win64\build\src\modeldoc_lib\modeldoc_groommeshfile.c
 C:\buildworker\citadel_rel_win64\build\src\modeldoc_lib\modeldoc_hitbox.cpp
 C:\buildworker\citadel_rel_win64\build\src\modeldoc_lib\modeldoc_ikchain.cpp
 C:\buildworker\citadel_rel_win64\build\src\modeldoc_lib\modeldoc_importfilter.cpp
+C:\buildworker\citadel_rel_win64\build\src\modeldoc_lib\modeldoc_keychainmarkup.cpp
 C:\buildworker\citadel_rel_win64\build\src\modeldoc_lib\modeldoc_lookatchain.cpp
 C:\buildworker\citadel_rel_win64\build\src\modeldoc_lib\modeldoc_materialgroup.cpp
 C:\buildworker\citadel_rel_win64\build\src\modeldoc_lib\modeldoc_meshlist.cpp
@@ -9556,7 +9584,6 @@ C:\buildworker\citadel_rel_win64\build\src\public\movieobjects\dmerigconstrainto
 C:\buildworker\citadel_rel_win64\build\src\public\movieobjects\dmeselection.h
 C:\buildworker\citadel_rel_win64\build\src\public\movieobjects\dmetimeframe.h
 C:\buildworker\citadel_rel_win64\build\src\public\movieobjects\dmevertexdata.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\physicslib\serialize.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
 C:\buildworker\citadel_rel_win64\build\src\public\schemalib\schemaenumhelpers.h
@@ -10066,6 +10093,10 @@ CBaseConcreteToolAttr<class CUtlString,class CModelDocIKJointConstraint_Hinge>::
 CBaseConcreteToolAttr<class CUtlString,class CModelDocIKJointConstraint_Hinge>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<class CUtlString,class CModelDocJiggleBone>::ExecuteCustomCommand
 CBaseConcreteToolAttr<class CUtlString,class CModelDocJiggleBone>::SetOverlayState::<lambda_1>::operator ()
+CBaseConcreteToolAttr<class CUtlString,class CModelDocKeychainMarkup>::ExecuteCustomCommand
+CBaseConcreteToolAttr<class CUtlString,class CModelDocKeychainMarkup>::SetOverlayState::<lambda_1>::operator ()
+CBaseConcreteToolAttr<class CUtlString,class CModelDocKeychainMarkupLocator>::ExecuteCustomCommand
+CBaseConcreteToolAttr<class CUtlString,class CModelDocKeychainMarkupLocator>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<class CUtlString,class CModelDocLocalHierarchy>::ExecuteCustomCommand
 CBaseConcreteToolAttr<class CUtlString,class CModelDocLocalHierarchy>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<class CUtlString,class CModelDocMeshDrawOrder>::ExecuteCustomCommand
@@ -10364,6 +10395,8 @@ CBaseConcreteToolAttr<class Vec3D<float>,class CModelDocIKJointConstraint_Plane>
 CBaseConcreteToolAttr<class Vec3D<float>,class CModelDocIKJointConstraint_Plane>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<class Vec3D<float>,class CModelDocJiggleBone>::ExecuteCustomCommand
 CBaseConcreteToolAttr<class Vec3D<float>,class CModelDocJiggleBone>::SetOverlayState::<lambda_1>::operator ()
+CBaseConcreteToolAttr<class Vec3D<float>,class CModelDocKeychainMarkupLocator>::ExecuteCustomCommand
+CBaseConcreteToolAttr<class Vec3D<float>,class CModelDocKeychainMarkupLocator>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<class Vec3D<float>,class CModelDocMeshModifier_ForceRealignBone>::ExecuteCustomCommand
 CBaseConcreteToolAttr<class Vec3D<float>,class CModelDocMeshModifier_ForceRealignBone>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<class Vec3D<float>,class CModelDocMeshModifier_ForceUnweightedBindposeBonePositions>::ExecuteCustomCommand
@@ -10816,6 +10849,8 @@ CBaseConcreteToolAttr<int,class CModelDocInsertFootCycle>::ExecuteCustomCommand
 CBaseConcreteToolAttr<int,class CModelDocInsertFootCycle>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<int,class CModelDocJiggleBone>::ExecuteCustomCommand
 CBaseConcreteToolAttr<int,class CModelDocJiggleBone>::SetOverlayState::<lambda_1>::operator ()
+CBaseConcreteToolAttr<int,class CModelDocKeychainMarkupLocator>::ExecuteCustomCommand
+CBaseConcreteToolAttr<int,class CModelDocKeychainMarkupLocator>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<int,class CModelDocLocalHierarchy>::ExecuteCustomCommand
 CBaseConcreteToolAttr<int,class CModelDocLocalHierarchy>::SetOverlayState::<lambda_1>::operator ()
 CBaseConcreteToolAttr<int,class CModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane>::ExecuteCustomCommand
@@ -11269,6 +11304,10 @@ CBaseConcreteToolAttrValue<class CUtlString,class CModelDocIKJointConstraint_Hin
 CBaseConcreteToolAttrValue<class CUtlString,class CModelDocIKJointConstraint_Hinge>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class CUtlString,class CModelDocJiggleBone>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class CUtlString,class CModelDocJiggleBone>::AttrValue_GetIntRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<class CUtlString,class CModelDocKeychainMarkup>::AttrValue_GetFloatRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<class CUtlString,class CModelDocKeychainMarkup>::AttrValue_GetIntRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<class CUtlString,class CModelDocKeychainMarkupLocator>::AttrValue_GetFloatRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<class CUtlString,class CModelDocKeychainMarkupLocator>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class CUtlString,class CModelDocLocalHierarchy>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class CUtlString,class CModelDocLocalHierarchy>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class CUtlString,class CModelDocMeshDrawOrder>::AttrValue_GetFloatRange::<lambda_1>::operator ()
@@ -11533,6 +11572,8 @@ CBaseConcreteToolAttrValue<class Vec3D<float>,class CModelDocIKJointConstraint_P
 CBaseConcreteToolAttrValue<class Vec3D<float>,class CModelDocIKJointConstraint_Plane>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class Vec3D<float>,class CModelDocJiggleBone>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class Vec3D<float>,class CModelDocJiggleBone>::AttrValue_GetIntRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<class Vec3D<float>,class CModelDocKeychainMarkupLocator>::AttrValue_GetFloatRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<class Vec3D<float>,class CModelDocKeychainMarkupLocator>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class Vec3D<float>,class CModelDocMeshModifier_ForceRealignBone>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class Vec3D<float>,class CModelDocMeshModifier_ForceRealignBone>::AttrValue_GetIntRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<class Vec3D<float>,class CModelDocMeshModifier_ForceUnweightedBindposeBonePositions>::AttrValue_GetFloatRange::<lambda_1>::operator ()
@@ -11853,6 +11894,7 @@ CBaseConcreteToolAttrValue<int,class CModelDocHitboxBase>::AttrValue_GetFloatRan
 CBaseConcreteToolAttrValue<int,class CModelDocIKChain>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<int,class CModelDocInsertFootCycle>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<int,class CModelDocJiggleBone>::AttrValue_GetFloatRange::<lambda_1>::operator ()
+CBaseConcreteToolAttrValue<int,class CModelDocKeychainMarkupLocator>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<int,class CModelDocLocalHierarchy>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<int,class CModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane>::AttrValue_GetFloatRange::<lambda_1>::operator ()
 CBaseConcreteToolAttrValue<int,class CModelDocMeshModifier_MeshOpSelectionGrowOrShrink>::AttrValue_GetFloatRange::<lambda_1>::operator ()
@@ -13566,6 +13608,7 @@ CModelDocHelperFactoryAccessor::CreateHelper
 CModelDocHitboxSet_Auto::FinalResolveForCompiler
 CModelDocIKChain::CopyFrom::<lambda_1>::operator ()
 CModelDocJiggleBone::JiggleType_t
+CModelDocKeychainMarkupLocator::UpdateTraces::<lambda_1>::operator ()
 CModelDocLookAtChain::CopyFrom
 CModelDocMeshList::CopyFrom
 CModelDocMeshModifier_ComputeWrinkleMap::ComputeAndAddDeltaWrinkleStreams
@@ -13832,11 +13875,6 @@ CNmTransitionEvent::KV3TransferLoad_Impl
 CNmTransitionEvent::KV3Transfer_DefaultKeys_Impl
 CNmTransitionEvent::Schema_VerifyBindingIsRegistered
 CONTENT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 COrientConstraint
 COrientConstraint::KV3TransferLoad_Impl
 COrientConstraint::KV3Transfer_DefaultKeys_Impl
@@ -14142,6 +14180,8 @@ CToolAttrGetSetAccess<class CUtlString,class CModelDocIKChain>::Access_MaybeGetD
 CToolAttrGetSetAccess<class CUtlString,class CModelDocIKChainJoint>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class CUtlString,class CModelDocIKJointConstraint_Hinge>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class CUtlString,class CModelDocJiggleBone>::Access_MaybeGetDirectPtr
+CToolAttrGetSetAccess<class CUtlString,class CModelDocKeychainMarkup>::Access_MaybeGetDirectPtr
+CToolAttrGetSetAccess<class CUtlString,class CModelDocKeychainMarkupLocator>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class CUtlString,class CModelDocLocalHierarchy>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class CUtlString,class CModelDocMeshModifier_ForceRealignBone>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class CUtlString,class CModelDocMeshModifier_MeshOpAddBone>::Access_MaybeGetDirectPtr
@@ -14270,6 +14310,7 @@ CToolAttrGetSetAccess<class Vec3D<float>,class CModelDocHitboxCapsule>::Access_M
 CToolAttrGetSetAccess<class Vec3D<float>,class CModelDocHitboxSphere>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class Vec3D<float>,class CModelDocIKJointConstraint_Plane>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class Vec3D<float>,class CModelDocJiggleBone>::Access_MaybeGetDirectPtr
+CToolAttrGetSetAccess<class Vec3D<float>,class CModelDocKeychainMarkupLocator>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class Vec3D<float>,class CModelDocMeshModifier_ForceRealignBone>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class Vec3D<float>,class CModelDocMeshModifier_ForceUnweightedBindposeBonePositions>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<class Vec3D<float>,class CModelDocMeshModifier_MeshOpPointBonesAtParentOrChild>::Access_MaybeGetDirectPtr
@@ -14495,6 +14536,7 @@ CToolAttrGetSetAccess<int,class CModelDocHitboxBase>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<int,class CModelDocIKChain>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<int,class CModelDocInsertFootCycle>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<int,class CModelDocJiggleBone>::Access_MaybeGetDirectPtr
+CToolAttrGetSetAccess<int,class CModelDocKeychainMarkupLocator>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<int,class CModelDocLocalHierarchy>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<int,class CModelDocMeshModifier_MeshOpPrimitiveVoronoiPlane>::Access_MaybeGetDirectPtr
 CToolAttrGetSetAccess<int,class CModelDocMeshModifier_MeshOpSelectionGrowOrShrink>::Access_MaybeGetDirectPtr
@@ -14793,6 +14835,7 @@ CUtlBlockMemory overflow!
 CUtlBlockMemory<class Vec2D<float>,int>::ChangeSize
 CUtlBlockMemory<class Vec2D<float>,int>::Init
 CUtlBlockMemory<class Vec2D<float>,int>::operator []
+CUtlBlockMemory<float const *,int>::ChangeSize
 CUtlBlockMemory<float const *,int>::Init
 CUtlBlockMemory<struct CacheOptimizedTriangle_t,int>::ChangeSize
 CUtlBlockMemory<struct CacheOptimizedTriangle_t,int>::Init
@@ -15111,6 +15154,8 @@ CUtlMemory<class CModelDocIKChain *,int>::Grow
 CUtlMemory<class CModelDocIKChain *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CModelDocIKChainJoint const *,int>::Grow
 CUtlMemory<class CModelDocIKChainJoint const *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<class CModelDocKeychainMarkupLocator *,int>::Grow
+CUtlMemory<class CModelDocKeychainMarkupLocator *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CModelDocLODGroup const *,int>::Grow
 CUtlMemory<class CModelDocLODGroup const *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CModelDocMaterialRemap,int>::Grow
@@ -16130,6 +16175,8 @@ CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,int>,int>::Grow
+CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,int,class CDefLess<int>,int>::Node_t,int>,int>::Grow
 CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,int,class CDefLess<int>,int>::Node_t,int>,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct UtlRBTreeNode_t<struct LayerEvent_t<bool>,unsigned short>,unsigned short>::Grow
@@ -16389,6 +16436,9 @@ CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,
 CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbolLarge,class CDefLess<int>,int>::Node_t,int>,int> >::RemoveAll
+CUtlRBTree<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,int>,int> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,int>,int> >::NewNode
+CUtlRBTree<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,float,class CDefLess<int>,int>::Node_t,int>,int> >::RemoveAll
 CUtlRBTree<struct CUtlOrderedMapBase<int,int,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,int,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,int,class CDefLess<int>,int>::Node_t,int>,int> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<int,int,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,int,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,int,class CDefLess<int>,int>::Node_t,int>,int> >::RemoveAll
 CUtlRBTree<struct LayerEvent_t<bool>,class CLessFunc<&public: static bool __cdecl LayerEvent_t<bool>::LessFunc(struct LayerEvent_t<bool> const &,struct LayerEvent_t<bool> const &)>,unsigned short,class CUtlMemory<struct UtlRBTreeNode_t<struct LayerEvent_t<bool>,unsigned short>,unsigned short> >::Insert
@@ -16795,7 +16845,6 @@ Constrained Bone
 Constrained Joint
 Constraint missing parent bone
 ConstructMeshFromConvex
-Construction is only allowed from the resolve function
 ContentBudgetLimit
 ContentExportFBX
 ContentWorkInProgress
@@ -16832,6 +16881,7 @@ CopyVertexStreamData
 Copyright
 Copyright (C) 2010, Thomas G. Lane, Guido Vollbeding
 CorExitProcess
+Corners
 Corrupt JPEG data: %u extraneous bytes before marker 0x%02x
 Corrupt JPEG data: bad Huffman code
 Corrupt JPEG data: bad arithmetic code
@@ -16888,7 +16938,6 @@ CxH94
 Cx~!H
 Cycle Start Frame
 Cycle Type
-D	V_sincosf
 D W?{W
 D!l$xA
 D#C|D
@@ -17119,6 +17168,7 @@ D$0fI
 D$0ff
 D$0h[)
 D$0h{0
+D$0ignzH
 D$0iw4
 D$0n:,
 D$0no
@@ -17202,6 +17252,7 @@ D$@Ik
 D$@J;
 D$@L;
 D$@Lc
+D$@Lc7
 D$@N6
 D$@Vc
 D$@Xu
@@ -17262,7 +17313,6 @@ D$PH+
 D$PH9k
 D$PH;
 D$PHc
-D$PHc>
 D$PHk
 D$PI;
 D$PL9c
@@ -17367,7 +17417,6 @@ D$pB;
 D$pE3
 D$pE;
 D$pH;E
-D$pH=
 D$pHc
 D$pHcD$XB
 D$pHcK
@@ -17385,7 +17434,6 @@ D$tHc
 D$x9D$h
 D$xA+
 D$xA;
-D$xD;
 D$xE3
 D$xH+
 D$xH;
@@ -17436,8 +17484,7 @@ D8/tq3
 D81uUL9r
 D83tc3
 D84:u
-D85;D
-D85WC
+D85k(
 D8<.u
 D8GqA
 D8L$0u`
@@ -17473,21 +17520,14 @@ D8{qtfIct$xI
 D8|$`t
 D9 u2D9
 D9$(|
-D9%$-
-D9%(&
-D9%=5
-D9%D'
-D9%R7
-D9%U4
-D9%U7
-D9%V5
-D9%^8
-D9%j6
-D9%m"
-D9%m3
-D9%u6
-D9%v+
-D9%x/
+D9%+[
+D9%19
+D9%4X
+D9%CZ
+D9%Lc
+D9%Wd
+D9%^Xz
+D9%gb
 D9&u?H
 D9&~IA
 D9'u@
@@ -17498,11 +17538,8 @@ D97uFA
 D97~H3
 D99t~I
 D99~CH
-D9='W
-D9=@?
-D9=D6
-D9=Tn
-D9=X>
+D9==9
+D9=tA
 D9>|%Hc
 D9>~J
 D9A t7
@@ -17522,6 +17559,7 @@ D9d$`u
 D9d$hu
 D9d$x
 D9e(D
+D9ep~&I
 D9f@~kH
 D9hXL
 D9i t
@@ -17564,14 +17602,13 @@ D9|$`u
 D9|$d}
 D9|$pu*H
 D9~(D
-D;%uM
+D;%Ex
+D;%t]w
 D;&s0I
+D;-#b
 D;.s.I
 D;0|V
 D;0}"H
-D;5>?
-D;=mb
-D;=vO
 D;A8t
 D;C$|
 D;D$(|
@@ -17708,7 +17745,6 @@ Delta
 Delta & WorldSpace are mutually exclusive, only check one of them
 Delta Min/Max :: %8.4f, %8.4f R :: %8.4f %8.4f C :: %8.4f %8.4f :: %s
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 Deprecated
 Derived must implement
 Deselect All (
@@ -18010,6 +18046,7 @@ EXIFIFDOffset
 EXPORTSYSTEM_INTERFACE_VERSION_001
 EXRHeader variable is not initialized.
 EXz	u
+EarlyInit_Tier0
 Ease In
 Ease In/Out
 Ease Out
@@ -18308,7 +18345,6 @@ Expected matching '{' '}' (started on line %d)
 Expected string literal for include directive
 Expecting '('
 Expecting '(' <edgesize> ',' <offsetx> ',' <offsety> ',' <pickheight> ')'
-Expecting '(' <min> ',' <max> ')'
 Expecting '(' <type> ')'
 Expecting ')'
 Expecting ')' after type identifier
@@ -18374,7 +18410,6 @@ Extrude Twist
 EzLc}
 E|$HD
 E|$XD
-F	V_sinf
 F	tj<
 F 9F(r
 F A;F
@@ -18714,7 +18749,7 @@ Friction that resists motion about the spin axis. Ignored by drivable vehicles.
 Friday
 From Name
 FrondPivotPaint
-Fsfm_v3
+G	V_sincosf
 G 9F t;I
 G D9D
 G D;c 
@@ -18801,6 +18836,7 @@ GT$hHi
 GT$pH
 GT$xA
 GT$xH
+GU8E3
 GUhE3
 GVertexGenericIntegerData
 GX9CXu
@@ -18870,7 +18906,6 @@ GetAsNumeric() - unsupported type '%s' (%d)!
 GetAssociatedBoneName() override required
 GetAttributeType( nAttrIdx ) != ATTRDATATYPE_NONE
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCStringCharConversion
@@ -19049,6 +19084,10 @@ H4IcH8H
 H9(t?A
 H9+t	H
 H9/t	H
+H95	Y
+H95Ga
+H95WO
+H95aZ
 H97u+A
 H98t$H
 H98t2
@@ -19275,6 +19314,7 @@ HcD$H
 HcD$HH
 HcD$P
 HcD$PA
+HcD$PL
 HcD$PM
 HcD$T
 HcD$X
@@ -19331,7 +19371,6 @@ HcL$@Hc
 HcL$HL
 HcL$LD
 HcL$P
-HcL$PL
 HcL$X
 HcL$X3
 HcL$XA
@@ -19397,6 +19436,7 @@ Hc\$(I
 Hc\$(M
 Hc\$0
 Hc\$0A
+Hc\$0D
 Hc\$0H
 Hc\$0I
 Hc\$0L+
@@ -19504,7 +19544,6 @@ Hc|$ H
 Hc|$ M
 Hc|$(H
 Hc|$,M
-Hc|$0D
 Hc|$H
 Hc|$HH
 Hc|$HL
@@ -19590,7 +19629,7 @@ HullIVRHole_t::operator new
 HullPerElement
 HullPerMesh
 HullSimplificationAlgorithm_t
-I	V_snprintf
+I	V_sinf
 I(I+I H
 I+4$H
 I+O H
@@ -19718,6 +19757,7 @@ Ic^x3
 Ic^xD
 Ic^xH
 Ic_03
+Ic_x3
 Ic_xH
 Ic_xM
 Icn<I
@@ -19994,7 +20034,6 @@ Int Choice Array
 IntArray
 IntChoiceArray
 Integer
-Intentionally vague touch behavior for %p
 Interactive
 InterleaveSampleTimes
 InterlockedFlushSList
@@ -20138,6 +20177,7 @@ Jiggle bone. Implemented through cloth.
 JiggleBone
 JiggleBoneList
 Joint Name
+Joint Weight Attribute Simplification Weight
 Joint to Joint Simple
 K H9K0u
 K UAVAWH
@@ -20174,8 +20214,6 @@ KeyValues2
 KeyValues2 (flat)
 KeyValues2 (no ids)
 KeyValues3
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::ArrayAddToTail
 KeyValues3::ArrayInsertMultipleBefore
 KeyValues3::ArrayRemoveMultiple
@@ -20231,6 +20269,10 @@ KeyValues3::SetValueIntFromString called with string value that doesn't fit into
 KeyValues3::SetValueIntFromString called with string value that doesn't fit into a 64-bit integer: %llu vs '%s'%s
 KeyValues: Can't serialize attribute of type %s into KeyValues files!
 KeyValues: Element uses unknown element type %s
+Keychain Markup Preview
+KeychainMarkup
+KeychainMarkup [%s]
+KeychainMarkupLocator
 Keyframe animation data
 Km_Name
 Kochanek-Bartels
@@ -20239,6 +20281,7 @@ Kochanek-Bartels Late
 Kochanek_Bartels_Spline
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L Ankle
 L Hip
 L Knee
@@ -20530,13 +20573,11 @@ L9#t	H
 L9#u/H
 L9&t	H
 L9+t	H
-L9-'*
-L95N-
-L95i-
-L95n+
 L97vH
 L98t#A
 L9;t	H
+L9=9-
+L9=`,
 L9?t	H
 L9BHA
 L9IHA
@@ -20606,6 +20647,7 @@ L;|$(
 L;|$0
 L;|$8
 L;|$@
+L;|$H
 L;|$X
 L;|$x
 L?UUUUUUU?
@@ -20618,6 +20660,7 @@ LD@fD
 LINEAR_D24S8
 LOD %d (%.1f)
 LODGroup
+LODGroup references unknown mesh: '%s'
 LODGroupAll
 LODGroupEditor
 LODGroupList
@@ -20648,7 +20691,6 @@ Lc.D;n
 Lc/Hc
 Lc3A+
 Lc3D;s
-Lc5n_
 Lc6D;v
 Lc6Hc
 Lc7A+
@@ -20773,6 +20815,7 @@ Lcl$0E;
 Lcl$0H
 Lcl$0L
 Lcl$8L
+Lcl$@M
 Lcl$HD
 Lcl$HL
 Lcl$PH
@@ -21034,6 +21077,7 @@ MaterialGroup_t::Schema_VerifyBindingIsRegistered
 MaterialUtils_001
 Materials/VertexData
 MathLib_Init
+MatrixInverseGeneral( mProj, barnLight_mFromClipSpace )
 MatrixWorldToCamera
 MatrixWorldToScreen
 Matteing
@@ -21090,9 +21134,9 @@ Mc<$E;|$
 Mc<$L
 Mc<6D
 Mc>A+
-McD$$H
-McD$$L
 McE8I
+McG$H
+McG$L
 McG4E
 McH(E
 McM(I
@@ -21410,7 +21454,6 @@ Number
 Number of Points
 Number of samples per pixel.
 NumberOfInks
-O	V_sscanf
 O!t/H
 O*9y]
 O0A9D$0u
@@ -21457,9 +21500,6 @@ Optional bone to use as the root transform.
 Optional pattern for attribute names (* for wildcards.) Note that this matches against non-display (ie. raw view) attribute names.
 OrLockType
 Order of animation sequences in compiled model.  Specified entries will be ordered first, unspecified entries will be added after ordered entries in an unspecified order.
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orient
 Orient Rotation to 2D Direction
 Orient toward child bone.
@@ -21511,7 +21551,6 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P	V_sscanf_s
 P HcE
 P Icu
 P Lcm
@@ -21741,7 +21780,6 @@ Plane Primitive
 Plastic
 Plasticity
 Plat_CPUTickFrequency
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
@@ -21862,6 +21900,7 @@ QueryPerformanceCounter
 QueryPerformanceFrequency
 Quintic
 Qxt2A
+R	V_sscanf
 R Ankle
 R Hip
 R IcB
@@ -22117,6 +22156,7 @@ RtlUnwindEx
 RtlVirtualUnwind
 Run Targeted Stack
 Runtime is referencing editor-only config '%s'
+S	V_sscanf_s
 S,;S(~9D
 S0Q0O
 S93uFH
@@ -22607,7 +22647,6 @@ Start Of Scan: %d components
 Start Time
 Start frame :: %d > End frame :: %d, will result in an empty animation
 Start of Image
-Static
 Static Only
 Static Only Tolerance
 Static field count mismatch (codegen %d vs. meta %d) for %s (should be AttachmentHandle_t)
@@ -22677,7 +22716,6 @@ Switch Threshold
 SwizzlePlanarScanlineToInterleaved
 Symbol table:  %d entries %llu bytes
 Sync Track
-T	V_stricmp_fast
 T$ ;2}6H
 T$ A;
 T$ D;
@@ -22792,6 +22830,7 @@ T$pE+
 T$pE3
 T$pH;T$x
 T$pH;U
+T$pHc
 T$pHcD$0L
 T$pI;
 T$pLcD$xH+
@@ -22802,8 +22841,11 @@ T$xE3
 T$xHc
 T$xHk
 T$xL+
-T-	`{
-T-YZ{
+T%RQ7
+T%ZXm
+T%jYm
+T-r99
+T='j{
 TD u"E;
 TGALoader::LoadRGBA8888
 TGALoader::ReadFile
@@ -23262,6 +23304,7 @@ Unknown encoding %d for LogLuv compression
 Unknown exception
 Unknown interpolation type %d
 Unknown parent bone '%s'.
+Unknown vertex attribute to weight: %s
 Unknown vertex attribute type
 Unrecognizd V1 mesh flag '%s'
 Unrecognized alert_func function '%s'
@@ -23315,6 +23358,8 @@ Use Block Solver
 Use Child Offset Attachment
 Use Expensive Tangents
 Use Flat Color
+Use For Collision
+Use For Occlusion
 Use High Precision/Expensive Texcoords
 Use Layer Sequence
 Use Per-Node Local Force and Rotation
@@ -23336,7 +23381,6 @@ UtlTokenizer_UnqescapeOrUnquoteString
 UwH;U
 UwJc|*
 UxtcD
-V	V_strlower_fast
 V6'?C
 V6E>`"(5
 VATAUAVAWH
@@ -23362,6 +23406,9 @@ VHcs
 VMapVersion22To23
 VMapVersion30To31
 VMapVersion36To37
+VMapVersion37To38::<lambda_1>::operator ()
+VMapVersion37To38::<lambda_2>::operator ()
+VMapVersion37To38::<lambda_3>::operator ()
 VMaterialSystem2_001
 VMediaFoundation001
 VP4003
@@ -23488,7 +23535,6 @@ V_expd
 V_expf
 V_fabsf( 1.0f - pEdge->m_Normals[ 0 ].Length() ) < 0.001f && V_fabsf( 1.0f - pEdge->m_Normals[ 1 ].Length() ) < 0.001f
 V_fabsf( vWsStartDirection.Normalized().Dot( vWsHingeAxis ) ) < DEG2RAD( 1 )
-V_fmodf
 V_stricmp_fast( pClone->GetName(), pSourceNode->GetName() ) == 0
 V_strlen( pSerializer->GetName() ) <= DMX_MAX_FORMAT_NAME_MAX_LENGTH
 V_strlen( pUpdater->GetName() ) <= DMX_MAX_FORMAT_NAME_MAX_LENGTH
@@ -23559,11 +23605,9 @@ Volumetric Solve Strength
 Voronoi Plane Primitive
 Vortices
 Vrad3_001
-W	V_strnchr
+W	V_stricmp_fast
 W%	s;M@
-W%y/^
-W-9L^
-W-n9^
+W=	Z9
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Failed to parse class '%s'.
 WARNING: No 'models_ModelDocGameData' FGD was specified in the 'ModelDoc' section of gameinfo.gi.
@@ -23576,7 +23620,6 @@ WATAVH
 WAUAVAWH
 WAVAWH
 WDG,r3
-WIcT$
 WLcT$0I
 WLc\$0I
 WORLD
@@ -23625,6 +23668,8 @@ Wheel joint.
 When picking between random choices, determines odds this choice is picked compared to others. (eg. a weight of 2 is twice as likely to be picked as weight of 1)
 When this model is loaded preserve vertex data in CPU memory.
 Whether or not to import bone scales.  False by default (i.e. override bone scales to 1.0) for legacy compatibility.  Only applicable to fbx files.
+Whether this distance field contributes to AO.
+Whether this distance field is a collider for certain effects such as hair simulation.
 Which solver to use for positioning the IK chain.  Required.
 WhiteLevel
 WhitePoint
@@ -23665,11 +23710,19 @@ X HcYxH
 X UVWAVAWH
 X VWATH
 X!t5~
-X-.	7
-X-J^$
-X-V	7
-X-p^$
-X5AZ$
+X%89m
+X%eJ;
+X%f0;
+X%|$;
+X-"mo
+X-,2*
+X-:t$
+X-Vn7
+X-Z2*
+X-`t$
+X51p$
+X5M'.
+X5t'.
 XA\[H
 XA\_^[
 XA]A\
@@ -23709,18 +23762,27 @@ Xt7HH
 X|$ A
 X|$8E
 X|$LE
+Y	V_strlower_fast
 Y (Green / Left)
 Y - Left
-Y%.`u
-Y%?Yu
-Y%rF<
-Y%~Q7
-Y-$se
-Y5/Ph
-Y5/hm
-Y5JE8
+Y%#sc
+Y%(Pm
+Y%30;
+Y%DK;
+Y%K';
+Y-&da
+Y-.em
+Y-6Q7
+Y-Mh7
+Y5$,P
+Y55km
+Y59M;
+Y5z6m
 Y9"SD
-Y=?-f
+Y=,,P
+Y=/fm
+Y=H1n
+Y=aem
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -23728,7 +23790,6 @@ YCbCrSubsampling
 YClipPathUnits
 YD$@f
 YD$HA
-YD$XA
 YK @8op
 YPD9C0t
 YPosition
@@ -23739,7 +23800,7 @@ Yaw Friction
 Yd$ A
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 YpU_Z
-Z	V_strtod
+Z	V_strnchr
 Z (Blue  / Up)
 Z - Up
 Z* ,	
@@ -23962,23 +24023,28 @@ Zpm"U
 \$|E2
 \$|L+
 \$|Lc
-\5	w(
-\5$C(
-\51>g
-\5UZ$
-\5z&]
+\%@oo
+\%Jj7
+\-4oo
+\-n2*
+\5Ep$
+\5Hoo
+\=<oo
 \L$HIc
 \L$|D
 \T$lHc
 \t$0D
 \t3D8T$(t
+]	V_strtod
 ]$HcK
-]%bMP
 ]'HcE
 ](IcE Lk
 ])6M>&
 ],Lcu
 ]0HcM@A
+]53^C
+]5^4^
+]5o6^
 ]>)2X
 ]@D8mHt	H
 ]@IcE8Li
@@ -24002,9 +24068,11 @@ Zpm"U
 ^oEZ_
 _ ;_$t
 _0HcO@A
+_5=Oq
 _8Hcs
 _8Hcw
 _8tDH
+_=0f{
 _CustomCommand
 _CustomCommand%d
 _InFrameSpine
@@ -24151,7 +24219,6 @@ _zero
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a < m_nAttributeCount
 a >= 0 && a < MODEL_CONFIG_LOCK_COUNT
 a.ucL
@@ -24254,6 +24321,7 @@ angular_damping
 angular_damping_ratio
 angular_frequency
 angular_velocity_cp
+angulardiameter
 anim.GetStream( boneStreamInfo.m_nStream ).GetParentStream() < 0
 anim.IsWorldSpace()
 animSetList
@@ -24337,6 +24405,9 @@ attachment
 attachment_key
 attachment_name
 attachment_type
+attenuation0
+attenuation1
+attenuation2
 attr.m_nSizeFloats == GetNumComponentsForModelStreamType( nStreamType )
 attrName.m_Hash.IsValid()
 attr_name_match
@@ -24385,7 +24456,6 @@ bDidInsert
 bFirst
 bFound
 bGetAllPositions
-bLegalTypeChange
 bSerializingPrefixElement == ( pStringValueSymbols == nullptr )
 bSuccess
 bUpZSet
@@ -24408,6 +24478,7 @@ bad function call
 bad locale name
 bad message
 bad partition length
+baked_light_indexing
 bakedin
 balance
 balance$0
@@ -24498,6 +24569,10 @@ bone_3
 bone_attrs
 bone_count
 bone_cull_type
+bone_index0
+bone_index1
+bone_index2
+bone_index3
 bone_index_and_weight
 bone_key
 bone_name
@@ -24523,6 +24598,7 @@ bool log
 bool8
 bool_array
 boolean
+bouncelight
 bouncescale
 box_angles
 box_dimensions
@@ -24539,6 +24615,8 @@ break_create_particle
 break_list
 break_particles
 brightness
+brightness_units
+brightnessscale
 broken pipe
 broken promise
 bspline
@@ -24571,6 +24649,9 @@ can_collide_with_world_hulls
 can_collide_with_world_meshes
 can_override_npc_state
 can_player_pickup_piece
+candle_1
+candle_2
+candle_3
 cannot parse filter header
 cannot parse partitions
 cannot parse picture header
@@ -24766,6 +24847,16 @@ convars
 conversion_method
 coordSys
 copositional_vertices
+corner%d
+corner%d_to_camera
+corner0
+corner0_to_camera
+corner1
+corner1_to_camera
+corner2
+corner2_to_camera
+corner3
+corner3_to_camera
 corrected
 cp0_model
 cp0_snapshot
@@ -24790,6 +24881,7 @@ cut_max
 cut_min
 cycle_type
 cyclestart
+d	V_tanf
 d$ D!
 d$ E3
 d$ L9c
@@ -24830,6 +24922,7 @@ d$@E3
 d$@I;
 d$@Lc&L
 d$@u$H
+d$@uQH
 d$DA;
 d$DE;
 d$DH;
@@ -24848,10 +24941,12 @@ d$PA;
 d$PD;%
 d$PE3
 d$PE8w
+d$PHcXxD
 d$PI9
 d$PL+
 d$PMc
 d$PfE
+d$Pu"H
 d$XE3
 d$XIc
 d$XMc
@@ -24970,6 +25065,7 @@ dilation
 dimensions
 dimensions_key
 direction
+directlight
 directory not empty
 disableOverride
 disableShadows
@@ -25015,6 +25111,7 @@ double
 dqe-KO{/3
 drawGameRenderablesMask
 drawToolRenderablesMask
+draw_axis
 draw_bone_name
 draw_order
 draw_parent
@@ -25319,6 +25416,7 @@ falloff_left
 falloff_right
 false
 far_field_only
+fast_strobe
 fbx2dmx
 features
 feeder_bone
@@ -25402,6 +25500,8 @@ flc_file_ids
 flc_file_list
 flc_lines
 flex_cloth_borders
+flicker_1
+flicker_2
 flipVCoordinates
 flip_bone_forward
 flip_direction
@@ -25412,10 +25512,14 @@ float64
 float_array
 floating point predictor 
 floor
+fluorescent_flicker
 fmt >= IMAGE_FORMAT_UNKNOWN && fmt < NUM_IMAGE_FORMATS
 fnFunc
 focalDistance
 fog_lighting
+fogcontributionstrength
+fogshadows
+fogstrength
 folder_name
 foliageanimation
 follow_the_lead
@@ -25503,6 +25607,7 @@ generic_transform
 generic_vector2d
 generic_vector_3d
 generic_vector_4d
+gentle_pulse
 gesture
 gesture_arms_only
 gesture_fullbody
@@ -25711,6 +25816,7 @@ incremental_shapes
 independent_radii
 index
 indices.Count() % 3 == 0
+indirectlight
 ineID
 ineIt
 inertia_scale
@@ -25722,6 +25828,7 @@ inherit_owner_name
 initialMass
 initial_mass
 initial_value
+innerconeangle
 input
 input.m_outputTransformList.IsValidIndex( nOutput )
 input.m_outputWeightList.IsValidIndex( nOutput )
@@ -25820,11 +25927,13 @@ jointIndices
 jointIndicesIndices
 jointList
 jointTransforms
+jointWeightWeight
 jointWeights
 jointWeightsIndices
 joint_name
 joint_parent
 joints
+jz[2:u
 k ;/}@H
 k ;/}CH
 k H9+t	H
@@ -25843,11 +25952,12 @@ k@H9k(H
 kE_PL
 kHH9k0H
 kL@8o(u
-kPH9-6
+kPH9-
 keep_colliders
 keep_vertices_in_memory
 key_type
 key_value_text
+keychain_markup_preview
 keyframe
 keyframeclass
 keysInTime_0
@@ -25958,7 +26068,7 @@ l$8Mc
 l$8u&H
 l$8u1H
 l$<D;
-l$@;--
+l$@;-]
 l$@A+
 l$@A;
 l$@E3
@@ -26044,6 +26154,7 @@ l$pA+
 l$pA98
 l$pD;
 l$pE3
+l$pHcD$@L
 l$pIc
 l$pIc<$I
 l$pL;
@@ -26095,16 +26206,21 @@ lifespanPP
 lifespan_decay
 lifetime_random
 light
+light_barn
 light_directional
 light_environment
 light_omni
+light_omni2
 light_ortho
 light_sky
 light_spot
+light_style
 light_sun
+lightgroup
 lightmap
 lightmapScaleBias
 lights
+lightsourceradius
 lineOrder
 linear
 linear_damping
@@ -27032,7 +27148,6 @@ mapkeys
 mapkeys_is_suggestion
 mapname
 mapsequences
-mapsize
 marker_type
 mass_center_override
 mass_override
@@ -27262,7 +27377,6 @@ nCount >= 1
 nCtrlChild
 nCtrlParent
 nCurrentIndex <= nMaxIndices
-nD$$H
 nD$PH
 nD$`f
 nDataType == MODELSTREAM_DATA_TYPE_VECTOR_3D || nDataType == MODELSTREAM_DATA_TYPE_VECTOR_4D
@@ -27281,6 +27395,7 @@ nFaceNumEdges > 3
 nFlags
 nFloats == 1
 nFrameType >= 0 && nFrameType < MODELDOC_FRAME_REFERENCE_TYPE_COUNT
+nGrowSize <= 1 << 27
 nGrowSize >= 0
 nGuideHairMatch == m_guideHairIndices.Count()
 nHeight > 0
@@ -27306,7 +27421,7 @@ nKeys > 0
 nL$PH
 nLastDWord < STORAGE::GetNumDWords()
 nLastHandle != m_HandleToIndexTable.InvalidHandle()
-nLayerCount == 2
+nLayerCount >= 2
 nLayoffState
 nListBegin
 nListEnd
@@ -27445,6 +27560,7 @@ navclip
 navlink
 navlinkclass
 navspaceclip
+nearclipplane
 need dictionary
 neg_scale
 network down
@@ -27540,32 +27656,49 @@ n|$`fA
 o KPBf
 o!L9l$ t
 o$$fA
-o%$&:
-o%(q5
-o%Jw5
-o%jy7
-o%tV5
-o%}\5
+o%#;6
+o%+7:
+o%+L:
+o%95:
+o%?A:
+o%D+:
+o%Dn:
+o%GE;
+o%J~:
+o%h":
+o%|X:
+o%}%:
 o,$fD
-o-+":
-o-0&:
-o-:);
-o-DZ:
-o-W%:
-o-[;:
+o-  :
+o--7:
+o->5:
+o-?Y:
+o-O;:
+o-S|:
+o-c%:
+o-ex:
+o-p0:
+o-un:
+o-wP:
+o-|N;
 o47Lc
-o5#>:
-o52);
-o5<):
-o5CZ:
-o5Eg	
-o5U;:
-o5a3:
-o=##:
-o=#<:
-o=2%:
-o=N):
-o=Y,:
+o5'=:
+o51W:
+o5:%:
+o5O0:
+o5Q[:
+o5T|:
+o5xR:
+o5|.6
+o=#t:
+o=Nz:
+o=N~:
+o=^2:
+o=`l:
+o=pTw
+o=pc:
+o=rD:
+o=~E;
 oAPfD
 oD$ f
 oD$ fA
@@ -27629,6 +27762,8 @@ origin
 origin_key
 original.Width() == 4 && original.Height() == 4 && original.Depth() == 1
 original_bone_name
+ortholightheight
+ortholightwidth
 oscillate_scalar
 oscillate_vector
 ot$ H
@@ -27641,6 +27776,7 @@ other.NumSlices() == NumSlices()
 otherVec.GetNumBits() == STORAGE::GetNumBits()
 outQuantized.Width() == 4 && outQuantized.Height() == 4 && outQuantized.Depth() == 1
 out_frame
+outerconeangle
 output
 outputBuffer
 output_A
@@ -27857,7 +27993,6 @@ pLoadFromValue != nullptr
 pLog && pLog->GetFileId() != DMFILEID_INVALID
 pLogLayer
 pMember
-pMemory[i] == 0
 pMesh
 pMesh->GetNumBones() == pPoseSkeleton->Count()
 pMesh->GetVertexComponentIndex( hV ) >= 0
@@ -28055,6 +28190,7 @@ path_trajectory
 pathclass
 pathnode
 pathnodeclass
+pattern
 peak_attr
 peak_cycle
 peak_frame
@@ -28176,6 +28312,7 @@ preview_show_indices
 preview_start_index
 primary_associated_entity
 primary_root_bone
+priority
 procedural
 processors
 promise already satisfied
@@ -28201,6 +28338,7 @@ pvTarget
 pxA;~
 qAdjust
 qS>g?h3
+qVL&>F
 qangle
 qangle log
 qangle_array
@@ -28213,6 +28351,7 @@ quaternion_array
 queue2.Count() == 1
 r	Vr.>T
 r$D9L
+r2 sd	
 r7f;\$|
 r:f;\$|
 rKf;\$t
@@ -28238,6 +28377,7 @@ random yaw
 randomSeed
 random_spawn_chance
 randomizable
+range
 range check failure
 range.m_flMax >= -FLT_EPSILON && range.m_flMin <= FLT_EPSILON
 rawControlNames
@@ -28458,6 +28598,7 @@ sfm_trackgroup
 sfm_v
 sfm_v1
 sfm_v10
+sfm_v3
 sfm_v4
 sfm_v5
 sfm_v6
@@ -28471,6 +28612,8 @@ shadow_color_day
 shadow_color_night
 shadow_secondary_color_day
 shadow_secondary_color_night
+shadowtextureheight
+shadowtexturewidth
 shape
 shared
 sharpStartAngle
@@ -28494,6 +28637,7 @@ simulating
 simulationTime
 simulationTimeScale
 single_override_material
+size_params
 size_t( s_Elements[ s ].m_nEnumerator ) == s
 skeleton
 skeletonfilereference
@@ -28516,6 +28660,9 @@ slave_channel
 slaves
 slice
 slice_type
+slow_pulse_nofade
+slow_strobe
+slow_strong_pulse
 sm_pConfigRegistry->m_nCount >= 0 && sm_pConfigRegistry->m_nCount < V_ARRAYSIZE( sm_pConfigRegistry->m_pInfo )
 smallComponentSize
 small_element_threshold
@@ -28526,6 +28673,8 @@ snappable
 snapshot
 snapshotOverride
 snapshot_file
+soft_x
+soft_y
 softcontactdampingratio
 softcontactfrequency
 solid
@@ -28657,6 +28806,7 @@ strip
 strips
 struct
 studio
+style
 subClipTrackGroup
 subTypes.Count() == nNumTypes
 sub_branch_limit
@@ -28777,7 +28927,7 @@ t$(fD
 t$(fI
 t$(u4A
 t$09D$X
-t$0;5[
+t$0;5
 t$0;o8
 t$0A^_
 t$0A_A^
@@ -28897,7 +29047,7 @@ t$LF;4
 t$P9\$`~"H
 t$P9|$DI
 t$PA+
-t$PD;5d
+t$PD;5
 t$PE3
 t$PE9,$
 t$PH9GP
@@ -29313,6 +29463,7 @@ toAttribute
 toD9 }
 toElement
 toIndex
+to_camera_key
 to_name
 toebone
 toeland
@@ -29776,6 +29927,8 @@ use_block_solver
 use_default_material
 use_expensive_tangents
 use_flat_color
+use_for_collision
+use_for_occlusion
 use_global_default
 use_layer_sequence
 use_local_attach_point_offset
@@ -29949,7 +30102,6 @@ w8;o@u
 w8Hc/;
 w@H91t
 wXHcGPH
-waHc;
 warp_algorithm
 warp_rule
 water
@@ -29967,6 +30119,7 @@ weightweight$0Indices
 weld_distance
 weld_threshold
 weld_vertices
+whHc;
 wheeldrag
 width
 width_target
@@ -30016,7 +30169,7 @@ x UAVAWH
 x!;;}
 x!A;Fx}
 x$A;]
-x%;=DC
+x%;=t'
 x%fff
 x%i (
 x'A;n
@@ -30034,7 +30187,7 @@ x<fff
 x=HcS
 x>V6'
 x>V6'?C
-x@;=#
+x@;=S
 xA]A\^[
 xA]A\_^
 xA^A]
@@ -30056,6 +30209,7 @@ xA_A^[]
 xA_A^^]
 xGH;{
 xHcL$PH
+xP;=o
 xR;\$P}LH
 xSE;H
 xV;y8}QHc
@@ -30090,6 +30244,7 @@ z.u,E
 z/u-A
 z/u-E
 z8u6H
+zDStatic
 zY;>u:m	
 zero dir
 zero_unselected
@@ -30117,6 +30272,7 @@ znear
 {Pt,D9w0t
 {X@8p u	@87u
 {error}
+{h`uQ
 {pHcKhH
 {pHck0H
 {pHcs`Hc
@@ -30234,7 +30390,6 @@ znear
 |$8Hc
 |$8Hc>H
 |$8HcD$0L
-|$8Hc\$0L
 |$8Hct$0E
 |$8Hk
 |$8L+
@@ -30272,6 +30427,7 @@ znear
 |$@Ic^xH
 |$@L9}pt
 |$@L;|$H
+|$@Lc6
 |$@Lk
 |$@f;
 |$@fE;
@@ -30313,7 +30469,7 @@ znear
 |$HuKA
 |$LB9<
 |$P9)~:D
-|$P;=-
+|$P;=]
 |$PA;
 |$PD;
 |$PE3
@@ -30492,7 +30648,6 @@ znear
 ~.E9b 
 ~.fff
 ~0fff
-~3hTD1`5B
 ~6fff
 ~7fff
 ~8fff

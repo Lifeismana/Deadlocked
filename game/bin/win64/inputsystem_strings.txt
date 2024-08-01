@@ -1,7 +1,6 @@
 	!s99
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_FileBase
 	_V_strnicmp_fast
 	g_pMemAlloc
@@ -24,6 +23,7 @@
  Base Class Descriptor at (
  Class Hierarchy Descriptor'
  Complete Object Locator'
+ Hc5T
  HcA(H
  HcA03
  HcA0E3
@@ -39,7 +39,6 @@
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
 !pCursorEntry->m_surfaces.IsEmpty()
-%C*^YL
 %d %d %d
 %d %d %d %d
 %f %f
@@ -56,9 +55,6 @@
 (D$0H
 (L$PD
 (f*^[0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$ H
 (t$PH
 )>6{1n
@@ -152,7 +148,6 @@
 .xdata$x
 />58d%
 /cursor.res
-/x1E#
 0 0 0
 0 0 0 0
 0 0 0 255
@@ -173,7 +168,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240723234904Z0/
+240801161808Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -198,12 +193,12 @@
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+8e0sv
 9)~P3
 98t H
 9>~ZH
 9D$Hu
 9q(~6H
-:	V_qsort_s
 ;H9>&X
 ;I9}(tiH
 < t=<	t9
@@ -212,6 +207,7 @@
 <no failure reason set>
 <undefined>
 <unknown>
+=	V_qsort_s
 =imb;D
 =rIQU
 >0<0:
@@ -352,7 +348,6 @@ AssetSystemTest001
 August
 Automatic cursor size scaling.
 B(I9A(
-B6v7e
 BACKSPACE
 BC?>6t9^	c:>
 BF>^G
@@ -376,7 +371,6 @@ C:\buildworker\citadel_rel_win64\build\src\inputsystem\inputsystem.cpp
 C:\buildworker\citadel_rel_win64\build\src\inputsystem\joystick.cpp
 C:\buildworker\citadel_rel_win64\build\src\inputsystem\key_translation.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\inputsystem\inputenums.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\convarref.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlflags.h
@@ -425,11 +419,6 @@ CMemAllocSystemInitialize
 COLON
 COMPUTER
 COPYRIGHT_SIGN
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CRSEL
 CTier2ShutdownCallback::RunAllCallbacks
 CURRENCYSUBUNIT
@@ -478,7 +467,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 CorExitProcess
 Couldn't initialize joysticks: %s
 CreateEventW
@@ -521,7 +509,6 @@ December
 DefWindowProcA
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DestroyWindow
 DetectApplicationActive:  polling determined app should be %s
 Detected more joysticks than supported count = %d
@@ -551,6 +538,7 @@ E_WITH_ACUTE
 E_WITH_CIRCUMFLEX
 E_WITH_DIAERESIS
 E_WITH_GRAVE
+EarlyInit_Tier0
 EconItemToolModel_001
 Enable joystick input
 Enable raw keyboard input
@@ -598,7 +586,6 @@ GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCapture
 GetClipCursor
@@ -647,7 +634,6 @@ H0H9X8u
 H8H9X@u
 H9(tO
 H97u+A
-H9=!6
 H9X u
 H;XXs
 H;_hu<fA
@@ -744,7 +730,6 @@ InputSystem/ButtonCodeIsScanCode
 InputSystem/LockButtonCodeIsScanCode
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Invalid access of CConVarRef for '%s'
 InvokeMiniDumpHandler
@@ -941,7 +926,6 @@ NetworkService_001
 NetworkSystemVersion001
 No cursor image files for '%s'
 November
-O	V_sscanf
 O_WITH_ACUTE
 O_WITH_CIRCUMFLEX
 O_WITH_DIAERESIS
@@ -951,9 +935,6 @@ O_WITH_TILDE
 October
 OnAppActivationChanged
 OnEventThatMightCauseFrameRateHitch( %s )
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 PASTE
 PAUSE
 PA_A^A]A\_^]
@@ -975,7 +956,6 @@ PanoramaUIEngine001
 ParticleSystemMgr003
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_EventRegister
 Plat_EventUnregister
 Plat_EventWriteTransfer
@@ -985,6 +965,7 @@ Plat_FloatTime
 Plat_GetCurrentFrame
 Plat_GetDefaultMonitorIndex
 Plat_GetDesktopResolution
+Plat_GetTime
 Plat_GetWindowClientBounds
 Plat_GetWindowClientSize
 Plat_GetWindowMonitorIndex
@@ -1011,6 +992,7 @@ Pz}b!
 QUESTION
 QUOTEDBL
 QueryPerformanceCounter
+R	V_sscanf
 RCTRL
 REGISTERED_SIGN
 RETURN2
@@ -1025,7 +1007,6 @@ R_AXIS_NEG
 R_AXIS_POS
 R_SHOULDER
 R_TRIGGER
-R`gV[Wg2!
 RaiseException
 Raw keyboard mode: %d
 ReconnectInterface
@@ -1223,7 +1204,6 @@ Source2V8System001
 StatsService_001
 SteamAudio001
 Sunday
-T	V_stricmp_fast
 T$ E3
 T$PE3
 TEXTINPUT '%s'
@@ -1334,6 +1314,7 @@ Valve Corp.1
 Valve.Source.Input
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 WATAUAVAWH
 WAVAWH
 WaitForSingleObjectEx
@@ -1351,6 +1332,7 @@ X_AXIS
 X_AXIS_NEG
 X_AXIS_POS
 X_BUTTON
+Y/vNF
 Y9"SD
 YEN_SIGN
 Y_AXIS
@@ -1359,7 +1341,6 @@ Y_AXIS_POS
 Y_BUTTON
 Y_WITH_ACUTE
 Y_WITH_DIAERESIS
-Z%Hq3q
 Z_AXIS
 Z_AXIS_NEG
 Z_AXIS_POS
@@ -1375,7 +1356,7 @@ Z_AXIS_POS
 \$8I;
 \$@H;
 ]J<0"0i3
-_$<g/!j;
+^XbC>
 _RDATA
 __UNKNOWN__
 __based(
@@ -1483,6 +1464,7 @@ http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
+iJs~S
 imemanager
 inactive
 ineID
@@ -1549,7 +1531,6 @@ p;Y>u
 pA_A^A]A\_^[
 pCallback == nullptr
 pCopyData->dwData <= UINT32_MAX
-pMemory[i] == 0
 pSchemaSystem != nullptr
 purecall
 qangle
@@ -1557,6 +1538,7 @@ r	Vr.>T
 range check failure
 restrict(
 s(KeEU
+sN[){,$
 s_nConnectionCount > 0
 s_nRegistrationCount < V_ARRAYSIZE(s_pConnectionRegistration)
 s_nResourceFCRegisteredCount > 0
@@ -1566,7 +1548,6 @@ shown
 sm_pConfigRegistry->m_nCount >= 0 && sm_pConfigRegistry->m_nCount < V_ARRAYSIZE( sm_pConfigRegistry->m_pInfo )
 stack buffer overrun (/GS failure)
 string
-sz@?2
 t#E8g@t
 t$ E3
 t$ WATAUAVAWH
@@ -1623,7 +1604,7 @@ www.digicert.com1!0
 www.digicert.com1$0"
 x ATAVAWH
 x AVH
-x(Ady
+x=~"$
 y\PD>!
 {un'%
 |$ ATAVAWH

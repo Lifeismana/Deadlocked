@@ -104,6 +104,10 @@ enum EGCCitadelClientMessages {
 	k_EMsgClientToGCGrantForumAccessResponse = 9210;
 	k_EMsgClientToGCModeratorRequest = 9211;
 	k_EMsgClientToGCModeratorRequestResponse = 9212;
+	k_EMsgClientToGCGetFriendGameStatus = 9213;
+	k_EMsgClientToGCGetFriendGameStatusResponse = 9214;
+	k_EMsgClientToGCUpdateHeroBuildPreference = 9215;
+	k_EMsgClientToGCUpdateHeroBuildPreferenceResponse = 9216;
 }
 
 enum ECitadelAccountPermissionFlag {
@@ -1118,8 +1122,6 @@ message CMsgGCToClientBookUpdated {
 }
 
 message CMsgClientToGCSubmitPlaytestUser {
-	optional string email = 1;
-	optional string message_text = 2;
 	optional string location = 3;
 	optional uint32 target_account_id = 4;
 }
@@ -1157,18 +1159,33 @@ message CMsgClientToGCGetDevMatchInfoResponse {
 }
 
 message CMsgHeroBuild {
-	message Details_V0 {
-		repeated uint32 recommended_mod_ability_ids = 1;
+	message BuildModEntry {
+		optional uint32 ability_id = 1;
+		optional string annotation = 2;
 	}
 
-	optional int32 hero_build_id = 1 [default = -1];
+	message BuildModCategory {
+		repeated .CMsgHeroBuild.BuildModEntry mods = 1;
+		optional string name = 2;
+		optional string description = 3;
+		optional float width = 4;
+		optional float height = 5;
+	}
+
+	message Details_V0 {
+		repeated .CMsgHeroBuild.BuildModCategory mod_categories = 1;
+	}
+
+	optional uint32 hero_build_id = 1;
 	optional uint32 hero_id = 2;
 	optional uint32 author_account_id = 3;
 	optional uint32 last_updated_timestamp = 4;
 	optional string name = 5;
 	optional string description = 6;
-	optional bool is_public = 7;
-	optional .CMsgHeroBuild.Details_V0 details = 8;
+	optional uint32 language = 7;
+	optional uint32 version = 8;
+	optional uint32 origin_build_id = 9;
+	optional .CMsgHeroBuild.Details_V0 details = 10;
 }
 
 message CMsgClientToGCUpdateHeroBuild {
@@ -1182,22 +1199,53 @@ message CMsgClientToGCUpdateHeroBuildResponse {
 	}
 
 	optional .CMsgClientToGCUpdateHeroBuildResponse.EResponse response = 1 [default = k_eInternalError];
-	optional int32 hero_build_id = 2;
+	optional uint32 hero_build_id = 2;
+	optional uint32 version = 3;
 }
 
 message CMsgClientToGCFindHeroBuilds {
 	optional uint32 author_account_id = 1;
 	optional uint32 hero_id = 2;
+	repeated int32 language = 3;
+	optional string search_text = 4;
+}
+
+message CMsgHeroBuildPreference {
+	optional bool favorited = 1;
+	optional bool ignored = 2;
+	optional bool reported = 3;
 }
 
 message CMsgClientToGCFindHeroBuildsResponse {
+	message HeroBuildResult {
+		optional .CMsgHeroBuild hero_build = 1;
+		optional .CMsgHeroBuildPreference preference = 2;
+		optional uint32 num_favorites = 3;
+		optional uint32 num_ignores = 4;
+		optional uint32 num_reports = 5;
+	}
+
 	enum EResponse {
 		k_eInternalError = 0;
 		k_eSuccess = 1;
 	}
 
 	optional .CMsgClientToGCFindHeroBuildsResponse.EResponse response = 1 [default = k_eInternalError];
-	repeated .CMsgHeroBuild hero_builds = 2;
+	repeated .CMsgClientToGCFindHeroBuildsResponse.HeroBuildResult results = 2;
+}
+
+message CMsgClientToGCUpdateHeroBuildPreference {
+	optional uint32 hero_build_id = 1;
+	optional .CMsgHeroBuildPreference preference = 2;
+}
+
+message CMsgClientToGCUpdateHeroBuildPreferenceResponse {
+	enum EResponse {
+		k_eInternalError = 0;
+		k_eSuccess = 1;
+	}
+
+	optional .CMsgClientToGCUpdateHeroBuildPreferenceResponse.EResponse response = 1 [default = k_eInternalError];
 }
 
 message CMsgClientToGCReportPlayerFromMatch {
@@ -1252,7 +1300,7 @@ message CMsgClientToGCGetAccountMatchReportsResponse {
 
 message CMsgClientToGCDeleteHeroBuild {
 	optional uint32 author_account_id = 1;
-	optional int32 hero_build_id = 2;
+	optional uint32 hero_build_id = 2;
 }
 
 message CMsgClientToGCDeleteHeroBuildResponse {
@@ -1315,4 +1363,21 @@ message CMsgClientToGCModeratorRequest {
 message CMsgClientToGCModeratorRequestResponse {
 	optional bool success = 1;
 	repeated string response_text = 2;
+}
+
+message CMsgClientToGCGetFriendGameStatus {
+	optional bool include_invited = 1;
+}
+
+message CMsgClientToGCGetFriendGameStatusResponse {
+	enum EResponse {
+		k_eInternalError = 0;
+		k_eSuccess = 1;
+		k_eTooBusy = 2;
+		k_eDisabled = 3;
+	}
+
+	optional .CMsgClientToGCGetFriendGameStatusResponse.EResponse response = 1 [default = k_eInternalError];
+	repeated uint32 friends_played_game = 2 [packed = true];
+	repeated uint32 friends_invited = 3 [packed = true];
 }

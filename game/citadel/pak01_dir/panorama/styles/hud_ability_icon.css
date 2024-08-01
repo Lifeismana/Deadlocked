@@ -28,7 +28,7 @@
 	background-color: gradient( linear, 0% 0%, 100% 0%, from( spiritBrightColor&00 ), color-stop( 0.25, spiritBrightColor&10 ), color-stop( 0.5, spiritBrightColor&20 ), color-stop( 0.75, spiritBrightColor&10 ), to( spiritBrightColor&00 ) );
 }
 
-#hud_signature .ability_container,.wants_scoreboard .in_item_shop #hud_signature .ability_container,.gDetailView .in_item_shop #hud_signature .ability_container,.in_item_shop #hud_signature .ability_container
+#hud_signature .ability_container,.wants_scoreboard .gShopOpen #hud_signature .ability_container,.gDetailView .gShopOpen #hud_signature .ability_container,.gShopOpen #hud_signature .ability_container
 {
 	height: 245px;
 }
@@ -129,7 +129,7 @@ CitadelAbilityIcon:hover .button_container
 	pre-transform-scale2d: 1.2;
 }
 
-.wants_scoreboard .ability_upgrade_available .ability_bg,.gDetailView .ability_upgrade_available .ability_bg,.in_item_shop .ability_upgrade_available .ability_bg
+.wants_scoreboard .ability_upgrade_available .ability_bg,.gDetailView .ability_upgrade_available .ability_bg,.gShopOpen .ability_upgrade_available .ability_bg
 {
 	animation-name: IconClickable;
 	animation-duration: 1s;
@@ -158,7 +158,7 @@ CitadelAbilityIcon:hover .button_container
 	
 }
 
-.wants_scoreboard CitadelAbilityIcon:hover .ability_bg,.gDetailView CitadelAbilityIcon:hover .ability_bg,.in_item_shop CitadelAbilityIcon:hover .ability_bg
+.wants_scoreboard CitadelAbilityIcon:hover .ability_bg,.gDetailView CitadelAbilityIcon:hover .ability_bg,.gShopOpen CitadelAbilityIcon:hover .ability_bg
 {
 	animation-name: CancelAnim;
 	animation-iteration-count: infinite;
@@ -184,7 +184,7 @@ CitadelAbilityIcon:hover .button_container
 	
 }
 
-CitadelAbilityIcon.upgradeApplied .ability_bg,.wants_scoreboard CitadelAbilityIcon.upgradeApplied:hover .ability_bg,.gDetailView CitadelAbilityIcon.upgradeApplied:hover .ability_bg,.in_item_shop CitadelAbilityIcon.upgradeApplied:hover .ability_bg
+CitadelAbilityIcon.upgradeApplied .ability_bg,.wants_scoreboard CitadelAbilityIcon.upgradeApplied:hover .ability_bg,.gDetailView CitadelAbilityIcon.upgradeApplied:hover .ability_bg,.gShopOpen CitadelAbilityIcon.upgradeApplied:hover .ability_bg
 {
 	animation-name: testUpgrade;
 	animation-duration: 0.5s;
@@ -931,7 +931,7 @@ Label.ability_key
 	visibility: collapse;
 	text-overflow: shrink;
 	font-weight: semi-bold;
-	font-family: "Retail Text Demo";
+	font-family: sansMono;
 	text-shadow: 0px 0px 5px 2.0 #000000;
 }
 
@@ -1103,7 +1103,7 @@ CitadelHudAbilities CitadelHudAbilityUpgradePips
 	ui-scale: 60%;
 }
 
-.wants_scoreboard CitadelHudAbilities CitadelHudAbilityUpgradePips,.gDetailView CitadelHudAbilities CitadelHudAbilityUpgradePips,.in_item_shop CitadelHudAbilities:hover CitadelHudAbilityUpgradePips
+.wants_scoreboard CitadelHudAbilities CitadelHudAbilityUpgradePips,.gDetailView CitadelHudAbilities CitadelHudAbilityUpgradePips,.gShopOpen CitadelHudAbilities:hover CitadelHudAbilityUpgradePips
 {
 	visibility: visible;
 	background-color: none;

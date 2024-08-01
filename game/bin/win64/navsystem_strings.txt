@@ -7,7 +7,6 @@
 	V_frexpf
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	_V_strnicmp_fast
 	g_bUpdateStringTokenDatabase
@@ -68,10 +67,8 @@
 !IsInternalTypeShortArray( Internal_Type() )
 !V_isempty( m_pNotifyGroupID )
 !V_isempty( pPathID )
-!VectorsAreEqual( vPrev, vCenter ) || !VectorsAreEqual( vCenter, vNext )
 !a.IsZero() && ( !b.IsZero() )
 !bBackFound
-!bLooksLikeABug
 !bOnlyTris || m_nVerts == 3
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
@@ -84,7 +81,6 @@
 !pNavHullsPreset->m_vecNavHulls.IsEmpty()
 !rCon.m_bDummyConnection || !rOtherCon.m_bDummyConnection
 !rConn.m_bRemovedConnection
-!regionContour.m_outer.IsEmpty()
 !vecSeen.HasElement( v.m_nRawContourVertexIdx )
 !voxels.IsEmpty()
 $A;\$
@@ -97,6 +93,8 @@ $y"Ic
 %f %f
 %f %f %f
 %f %f %f %f
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s: %s
 %s: Invalid capacity %u
 %s: Invalid grow amount %d
@@ -107,8 +105,6 @@ $y"Ic
 &rPolys[ nThisPoly ] == this
 ',=?k
 'p7M}f
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( nErr == ERROR_FILE_NOT_FOUND )
 ( nFlags & KEYVALUES3_AS_STRING_APPEND ) == 0
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
@@ -178,7 +174,6 @@ $y"Ic
 (d$@L
 (d$PD
 (f*^[0
-(g[gw
 (intp)this % 8 == 0
 (l$ D
 (l$0D
@@ -188,9 +183,6 @@ $y"Ic
 (l$`L
 (l$pD
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (null)
 (t$ A
 (t$ D
@@ -333,7 +325,6 @@ $y"Ic
 )|$pE
 *StO9>T
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
-*obk5c
 +D$PD
 +L$DA
 +M<7>
@@ -372,6 +363,7 @@ $y"Ic
 .?AV<lambda_1>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@
 .?AV<lambda_1>@?1??TraceVoxelGrid@CNavOrientedMesh@@AEAAXAEBV?$Vec3D@M@@0AEBV?$function@$$A6A_NAEBV?$Vec3D@H@@@Z@std@@H_N@Z@
 .?AV<lambda_1>@?1??TriangulateContourWS@CNavOrientedMesh@@AEAA_NAEBUmatrix3x4_t@@AEBV?$CUtlVector@PEAUVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@PEAUVertexWS_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@UVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@UVertexWS_t@CNavOrientedMesh@@H@@@@@Z@
+.?AV<lambda_1>@?1??WeldTiles@CNavGenOrientedMesh@@AEAAXHHMAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@HHV?$CUtlMemory@HH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@Z@
 .?AV<lambda_1>@?3??FindVoxelWalkableNeighbors@CNavOrientedMesh@@AEAAXAEBUVoxelSparseIndex_t@2@AEBV?$Vec3D@M@@QEBV4@1MAEAV?$CUtlVector@UVoxelSparseIndex_t@CNavOrientedMesh@@HV?$CUtlMemory@UVoxelSparseIndex_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@HHV?$CUtlMemory@HH@@@@AEA_NAEAH@Z@
 .?AV<lambda_1>@?3??GenerateConnections@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@NNNN_NN2@Z@
 .?AV<lambda_1>@?4??CutTreeToPhysics@@YAXAEAVCNavTree@@HM_NMAEBV?$function@$$A6A_NAEBUAABB_t@@@Z@std@@@Z@
@@ -419,6 +411,7 @@ $y"Ic
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EBA_NAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@
 .?AV?$_Func_base@H$$V@std@@
 .?AV?$_Func_base@HH@std@@
+.?AV?$_Func_base@V?$Vec3D@H@@AEBV?$Vec3D@M@@@std@@
 .?AV?$_Func_base@V?$Vec3D@M@@AEBV1@@std@@
 .?AV?$_Func_base@VVecDouble3@@AEBV1@@std@@
 .?AV?$_Func_base@X$$V@std@@
@@ -447,6 +440,7 @@ $y"Ic
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@_NHPEBV?$Vec3D@M@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??TraceVoxelGrid@CNavOrientedMesh@@AEAAXAEBV?$Vec3D@M@@0AEBV?$function@$$A6A_NAEBV?$Vec3D@H@@@Z@std@@H_N@Z@H$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??TriangulateContourWS@CNavOrientedMesh@@AEAA_NAEBUmatrix3x4_t@@AEBV?$CUtlVector@PEAUVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@PEAUVertexWS_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@UVertexWS_t@CNavOrientedMesh@@HV?$CUtlMemory@UVertexWS_t@CNavOrientedMesh@@H@@@@@Z@HH@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??WeldTiles@CNavGenOrientedMesh@@AEAAXHHMAEAV?$CUtlVector@VVecDouble3@@HV?$CUtlMemory@VVecDouble3@@H@@@@AEAV?$CUtlVector@_NHV?$CUtlMemory@_NH@@@@AEAV?$CUtlVector@HHV?$CUtlMemory@HH@@@@AEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@Z@V?$Vec3D@H@@AEBV?$Vec3D@M@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??FindVoxelWalkableNeighbors@CNavOrientedMesh@@AEAAXAEBUVoxelSparseIndex_t@3@AEBV?$Vec3D@M@@QEBV5@1MAEAV?$CUtlVector@UVoxelSparseIndex_t@CNavOrientedMesh@@HV?$CUtlMemory@UVoxelSparseIndex_t@CNavOrientedMesh@@H@@@@AEAV?$CUtlVector@HHV?$CUtlMemory@HH@@@@AEA_NAEAH@Z@_NAEBV?$Vec3D@H@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??GenerateConnections@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBVCNavGenParams@@NNNN_NN2@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??CutTreeToPhysics@@YAXAEAVCNavTree@@HM_NMAEBV?$function@$$A6A_NAEBUAABB_t@@@Z@std@@@Z@_NAEBUAABB_t@@@std@@
@@ -574,14 +568,12 @@ $y"Ic
 .xJ>Hf
 .xdata
 .xdata$x
-/5!5	
+/56*	
+/5P*	
 />58d%
-/?#Zb
 /@4w)
 /@4w/
 /@4w0
-/@Xr#
-/@Xr$
 /C r2
 /C$r%
 /D$0r-
@@ -590,12 +582,11 @@ $y"Ic
 /E v#H
 /F v"H
 /G v"H
-/HTr.
-/HTr/
 /L$4r!
 /L$@w
 /T$8r
-/T$Dv^M
+/T$DvmM
+/V w"A
 /Wtv9Hc/H
 /\$DvO
 /d$0D
@@ -633,7 +624,7 @@ $y"Ic
 220323000000Z
 220801000000Z
 230714000000Z
-240723235121Z0/
+240801201033Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -656,13 +647,11 @@ $y"Ic
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
-6A97}
 6D8$.u
 6I]Dc
 6OB,n_
 6p7MOf
 70503
-7A;>}%
 7YA1A
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 80tWD
@@ -694,12 +683,11 @@ $y"Ic
 9p@u+
 9t$Pu	
 9|$(u
-:	V_qsort_s
 :D;	|
 :Mc7M
-;,iQI
 ;1#INF
 ;3}	D
+;52S.
 ;8}TH
 ;?0123456789:;<=>?
 ;D$PL
@@ -727,6 +715,7 @@ $y"Ic
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
 <utK@:
+=	V_qsort_s
 =%H5<mN
 ==MQ?
 =SHX?
@@ -738,6 +727,7 @@ $y"Ic
 >33s?
 >>>>NAVGEN Oriented - Region has invalid bounds ( region %d ) - skipping
 >>>>NAVGEN Oriented - Region was not processed ( region %d ) - skipping
+>>>>NAVGEN Oriented - Unable to find outer contour for region %d
 >>NAVGEN MOVABLE: Skipping movable mesh... no polys present
 >>NAVGEN: -- End --
 >>NAVGEN: -- Start --
@@ -769,6 +759,7 @@ $y"Ic
 ??1CUtlMemoryBlockAllocator@@QEAA@XZ
 ??HCUtlString@@QEBA?AV0@AEBV0@@Z
 ??YCUtlString@@QEAAAEAV0@AEBV0@@Z
+?A9<$}
 ?Acquire@CUtlString@@QEAAXPEAVCBufferString@@_N@Z
 ?Alloc@CRawAllocator@@SAPEAXW4RawAllocatorType_t@@_KPEA_K@Z
 ?Alloc@CUtlMemoryBlockAllocator@@QEAAII@Z
@@ -914,7 +905,6 @@ A>pP&
 A@LcI
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
-AS^@MY
 ATAUAVH
 ATAUAWH
 ATAUH
@@ -952,8 +942,8 @@ A^A]_]
 A^_][
 A^_^[]
 A^_^][
+A_A\]
 A_A\][
-A_A\_^[]
 A_A]A\
 A_A]A\]
 A_A]A\^
@@ -967,6 +957,7 @@ A_A]]
 A_A]_^[]
 A_A^A\
 A_A^A\^[
+A_A^A\_[]
 A_A^A\_]
 A_A^A\_^
 A_A^A\_^[]
@@ -1053,7 +1044,6 @@ C:\buildworker\citadel_rel_win64\build\src\public\navlib\nav_gen_poly_simple.h
 C:\buildworker\citadel_rel_win64\build\src\public\navlib\nav_gen_space.h
 C:\buildworker\citadel_rel_win64\build\src\public\navlib\nav_gen_types.h
 C:\buildworker\citadel_rel_win64\build\src\public\navlib\nav_space_tree.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcefile\vdataresource_helpers.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
 C:\buildworker\citadel_rel_win64\build\src\public\rubikon\intersection.h
@@ -1153,11 +1143,9 @@ CNavMesh::RegisterPhysicsInterface
 CNavOrientedMesh::ComputeOrientationEntryFace
 CNavOrientedMesh::SimplifiedContourToTriangulationCoord::<lambda_1>::operator ()
 CNavOrientedMesh::SimplifyRegionContour
-CNavOrientedMesh::TraceRegionContours
 CNavOrientedMesh::TraceRegionContours::<lambda_1>::operator ()
 CNavOrientedMesh::TraceRegionRawContourLocalSpace::<lambda_1>::operator ()
 CNavOrientedMesh::TraceRegionRawContourLocalSpace::<lambda_2>::operator ()
-CNavOrientedMesh::TriangulateContourWS
 CNavOrientedMesh::ValidateAdjacency
 CNavSpaceData::InitAndOwnClusters
 CNavSystem::LoadNavGenParamsFromGameInfo::<lambda_1>::operator ()
@@ -1172,11 +1160,6 @@ CNavTree::Reset
 CNavTree::TreeIter_t::InitNode
 CONTENT
 CONTENTROOT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CResourceName::AssertTypeIs
 CRotation::CRotation
 CSharedMemory::Attach
@@ -1382,16 +1365,16 @@ CUtlMemory<struct `private: bool __cdecl CNavOrientedMesh::Regions_Stage_FindSpl
 CUtlMemory<struct `private: unsigned int __cdecl CNavOrientedMesh::Regions_Iteration(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &)'::`44'::VoxelRecord_t,int>::Grow
 CUtlMemory<struct `private: unsigned int __cdecl CNavOrientedMesh::Regions_Iteration(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &)'::`44'::VoxelRecord_t,int>::Grow::<lambda_1>::operator ()
 CUtlMemory<struct `private: unsigned int __cdecl CNavOrientedMesh::Regions_Iteration(class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > const &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &)'::`44'::VoxelRecord_t,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::BoundaryPoly_t,int>::Grow
-CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::BoundaryPoly_t,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::SetNode_t *,int>::Grow
-CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::SetNode_t *,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::Set_t,int>::Grow
-CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::Set_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(int,int,float,class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::BoundaryPoly_t,int>::Grow
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(int,int,float,class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::BoundaryPoly_t,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(int,int,float,class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::SetNode_t *,int>::Grow
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(int,int,float,class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::SetNode_t *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(int,int,float,class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::Set_t,int>::Grow
+CUtlMemory<struct `private: void __cdecl CNavGenOrientedMesh::WeldTiles(int,int,float,class CUtlVector<class VecDouble3,int,class CUtlMemory<class VecDouble3,int> > &,class CUtlVector<bool,int,class CUtlMemory<bool,int> > &,class CUtlVector<int,int,class CUtlMemory<int,int> > &,class CUtlVector<class CNavGenPoly,int,class CUtlMemory<class CNavGenPoly,int> > &)'::`2'::Set_t,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::Regions_Stage_Expand(unsigned short,class CUtlVector<struct CNavOrientedMesh::RegionBucketEntry_t,int,class CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int> > &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &,class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > &,class Vec3D<float> const &)'::`2'::ModificationEntry_t,int>::Grow
 CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::Regions_Stage_Expand(unsigned short,class CUtlVector<struct CNavOrientedMesh::RegionBucketEntry_t,int,class CUtlMemory<struct CNavOrientedMesh::RegionBucketEntry_t,int> > &,class CUtlVector<unsigned int,int,class CUtlMemory<unsigned int,int> > &,class CUtlVector<unsigned short,int,class CUtlMemory<unsigned short,int> > &,class Vec3D<float> const &)'::`2'::ModificationEntry_t,int>::Grow::<lambda_2>::operator ()
-CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::TraceRegionContours(unsigned int,float,float)'[::C]::SetNode_t *,int>::Grow
-CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::TraceRegionContours(unsigned int,float,float)'[::C]::SetNode_t *,int>::Grow::<lambda_2>::operator ()
+CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::TraceRegionContours(unsigned int,float,float,float)'::`122'::SetNode_t *,int>::Grow
+CUtlMemory<struct `private: void __cdecl CNavOrientedMesh::TraceRegionContours(unsigned int,float,float,float)'::`122'::SetNode_t *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct qhFace const *,int>::Grow
 CUtlMemory<struct qhFace const *,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<struct std::pair<double,double>,int>::Grow
@@ -1452,7 +1435,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 ConvertPhysicsTraceToGameTrace
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
@@ -1472,7 +1454,6 @@ D$ I9P
 D$ I;R
 D$ L;
 D$ p9
-D$$E;
 D$(D;f
 D$(D;g
 D$(D;w
@@ -1480,19 +1461,19 @@ D$(E3
 D$(E;A
 D$(H;
 D$(Lc
-D$(Lc7Hc
-D$(Lc7Ic
-D$(Lc7L
-D$(Lk
+D$(Lc3Hc
+D$(Lc3Ic
+D$(Lc3N
 D$(fD
 D$(fI
 D$(fff
+D$,Hc
+D$,fff
 D$0@8{
 D$0A;
 D$0E3
 D$0Hc
 D$0Hc7H
-D$0HcE
 D$0HcH
 D$0HcL
 D$0Ic
@@ -1505,13 +1486,12 @@ D$4H;K
 D$4Hc
 D$8A;r,
 D$8E3
-D$8E;
 D$8H;
 D$8Hc
 D$8L9
 D$8Lc|$0
+D$8Mc.I
 D$8fff
-D$@A;
 D$@A;D
 D$@D;
 D$@D;g
@@ -1532,7 +1512,6 @@ D$HA;B
 D$HE3
 D$HIcD
 D$HL9gXt
-D$HL;
 D$Hff
 D$HtP
 D$LHc
@@ -1544,11 +1523,13 @@ D$PI;
 D$PIcD
 D$PL;
 D$PLct
+D$PfA
+D$Pff
 D$TA;
 D$THc
 D$TM;
 D$TfA
-D$XA;
+D$XA3B
 D$XE3
 D$XE;
 D$XH;
@@ -1558,8 +1539,8 @@ D$XHcC
 D$XHk
 D$XIc
 D$XIc@ 
+D$XL;
 D$XLc
-D$\Hc|$`
 D$_E3
 D$`A90~K
 D$`E3
@@ -1569,6 +1550,7 @@ D$`HcL
 D$`L;
 D$`L;D$P
 D$`ff
+D$hA;
 D$hH;
 D$hHc
 D$hIc
@@ -1578,6 +1560,7 @@ D$hfA
 D$pA;
 D$pB;
 D$pD8
+D$pD;s
 D$pE3
 D$pH;
 D$pHc
@@ -1617,7 +1600,6 @@ D8s`t^
 D8t$ht
 D8upu
 D9#~$I
-D9%vJ
 D90t>
 D99~&E
 D9B u
@@ -1626,21 +1608,20 @@ D9L$Xt2D
 D9d$@
 D9t$ t
 D9z u
+D9{P~
 D;T$X|"A+
 D;T$p|&A+
 D;l$l
 D;sHu
+D;t$T
 D;x,|
 D;{(u
-D;|$T
 DNnW'
-DUe.`
 DV6Hk
 December
 DeleteCriticalSection
 DemoUpconverterVersion001
 Dense voxels
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -1669,7 +1650,7 @@ EH*?H
 EHHcI
 EP;Ax
 EPHcE
-EPL;D$H
+EPL;D$X
 ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 ERROR: Ladders starting at index %d are lacking connectivity info during IslandRemoval.
 ERROR: Unable to compute distance to poly %d from point at ( %g, %g, %g )
@@ -1677,6 +1658,7 @@ ERROR: Unconnected ladder bottom at ( %g, %g, %g )
 ERROR: Unconnected ladder top at ( %g, %g, %g )
 EXPORTSYSTEM_INTERFACE_VERSION_001
 E\HcW
+EarlyInit_Tier0
 EconItemToolModel_001
 Enable/disable overhang detection
 EncodePointer
@@ -1749,7 +1731,6 @@ GenerateEdgeList
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -1798,7 +1779,6 @@ H9(tO
 H97u+A
 H98t2
 H9;t	H
-H9=u5
 H9s@H
 H9sHH
 H9sPH
@@ -1818,6 +1798,7 @@ H;\$`
 H;\$x
 H;]XH
 H;t$8
+H;t$p}	H
 H;xXu5
 H;|$8
 HA]A\_[
@@ -1845,7 +1826,6 @@ HcD$ Hk
 HcD$ M
 HcD$0
 HcD$<
-HcD$@H
 HcD$@I
 HcD$DH
 HcD$P
@@ -1872,16 +1852,16 @@ HcK H
 HcL$0A
 HcL$<L;
 HcL$@#
-HcL$DA
 HcL$HA
+HcL$PA
 HcL$p
 HcO H
 HcQ<H
+HcT$@3
 HcT$PHc]
 HcWPH
-Hc\$4
-Hc\$`L
-Hc\$dL
+Hc\$@
+Hc\$pL
 Hc^X;^hu
 Hct$(H
 Hct$@
@@ -1928,7 +1908,6 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Invalid access of CConVarRef for '%s'
@@ -1964,8 +1943,6 @@ KERNEL32.dll
 KV3 instances cannot be set to an unspecified specific type
 KV3TransferSchema_AllocateClassInstance
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::FindOrCreateMember
 KeyValues3::FormatValueAsString
 KeyValues3::GetArrayElementCount
@@ -1998,7 +1975,7 @@ L$ L;
 L$ Lc
 L$ SH
 L$ USATH
-L$ USVWATAWH
+L$ USWATAVAWH
 L$ UVWATAUAVAWH
 L$ VWATAUAVAW
 L$ VWAVH
@@ -2055,33 +2032,31 @@ L$HH;
 L$HHc
 L$HHcE
 L$HLc
-L$HM;
 L$PB;t
 L$PE;
 L$PIc
 L$PLcx A;
 L$PfA
 L$THc
-L$XA;
 L$XD;
 L$XE+
 L$XE;
 L$XH;L$p
-L$XIc
 L$XL9L$p
 L$XLc/
-L$XLk
+L$XM;
 L$`;M
 L$`A;^
 L$`E+
 L$`Hc
-L$`Lc
 L$`Lc'
 L$`Lk
 L$h;D$8
 L$h;M
 L$hA+
+L$hA;
 L$hE3
+L$hLc
 L$pA;>
 L$pE3
 L$pH;M
@@ -2125,9 +2100,11 @@ LcD$@M
 LcD$HL
 LcD$PH
 LcL$0
-LcL$8H
+LcL$0H
+LcL$HH
 LcL$PH
 LcL$`H
+LcL$|H
 LcMhA
 LcN(H
 LcNPH
@@ -2135,10 +2112,10 @@ LcT$`
 LcT$h3
 Lcb4E3
 Lcc8D;cH
-Lcd$tA;
+Lcd$@3
 Lcj E
-Lcl$XLcd$t
 Lcl$`
+Lcl$h
 Lcr4L
 Lct$ 
 Lct$8
@@ -2148,6 +2125,9 @@ Lct$`
 Lct$`Lc'E
 Lct$hJ
 Lcw@D;wPu
+Lc|$0
+Lc|$PH
+Lc|$|A;
 Lc~ D;~0u
 LeaveCriticalSection
 Level of validation for nav system.  Higher will be slower.
@@ -2182,8 +2162,10 @@ MaterialUtils_001
 MathLib_Init
 Max abrupt orientation difference an NPC can tolerate when moving through the mesh (degrees).
 Max orientation range allowed within a region before it gets further split.
+Mc Ik
 Mc!E;a
 Mc4$E;t$
+Mc4$I
 Mc<$E;|$
 Mc>E;~
 McMHI
@@ -2239,11 +2221,11 @@ NavEdgeMaxLen
 NavGameTest001
 NavGenGetPhysPolysoup
 NavGenPolyProcessor
-NavGenSplit::SplitWithConnections_Edge
 NavGenSplit::SplitWithConnections_Plane
 NavGenSplit::SplitWithConnections_VertPlane
 NavGenSplit::SplitWithConnections_VertToEdge
 NavGenSplit::SplitWithConnections_VertToVert
+NavGenSplit::Split_Edge
 NavGenWriteOutput
 NavGravity_t
 NavHullsPreset
@@ -2269,10 +2251,9 @@ O8HcB
 October
 OpenFileMappingA
 OpenMutexA
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
-Oriented Mesh: 
+Oriented Mesh Weld Tiles [merge sets]: %d / %d
+Oriented Mesh Weld Tiles [segments]: %d / %d
+Oriented Mesh: %d / %d
 OverlayProjectionDirection
 P HcK
 P HcM
@@ -2281,7 +2262,7 @@ P IcL$
 P IcO
 P(D8s	t
 PA;^x
-PA;px
+PA;ix
 PA^_]
 PA^_^][
 PA_A^A]A\_^]
@@ -2298,11 +2279,11 @@ Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.cr
 Physics
 Physics shape '%s'/'%s' generated invalid verts
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
 Plat_GetEnv
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_IsInHeadlessMode
 Plat_IsRunningOnCustomerMachine
@@ -2434,13 +2415,11 @@ Start PC
 StatsService_001
 SteamAudio001
 Sunday
-T	V_stricmp_fast
 T$ D8
 T$ D;
 T$ Ic
 T$ fD
 T$$A9
-T$(E;
 T$(E;Q
 T$(H;
 T$(L;
@@ -2457,13 +2436,14 @@ T$@A;A
 T$@D;N,
 T$@E3
 T$@E;S
-T$DLcD$0
+T$@H;U
 T$HA;W
 T$HLcL$0E3
 T$PE3
 T$PH;M
 T$PHc
 T$PIc
+T$XHc|
 T$XI;
 T$XM;
 T$\;W
@@ -2522,6 +2502,7 @@ U8HcL
 UATAUAVAWH
 UATAUAWH
 UATAUH
+UATAWI
 UAUAWI
 UAVAWH
 USATAUAVH
@@ -2567,7 +2548,6 @@ Unable to find '%s'. Please make sure one exists and contains agent nav hulls.
 Unable to find '%s'. Please make sure one exists and contains at least one preset for agent nav hulls.
 Unable to find nav hull definition '%s' in '%s'. Ignoring.
 Unable to find nav hull preset '%s'.
-Unable to find outer contour for region %d
 Unable to format KV3 instance as a string
 Unable to load agent preset '%s'.
 Unexpected missing default for %s
@@ -2628,7 +2608,6 @@ VScript
 VScriptDbg
 VScriptManager010
 VStringTokenSystem001
-VU10F
 VUUUA
 VUUUD
 VUUUE
@@ -2684,6 +2663,7 @@ VertexPaintTintColor
 VisBuilder_001
 Vrad3_001
 VxHcD
+W	V_stricmp_fast
 WALKABLESEED
 WARNING: Failed to load %s: %s
 WARNING: VNotify abandoned after too many attempts:
@@ -2708,7 +2688,7 @@ X D8e
 X SVWH
 X USVWAVH
 X!t5~
-X=DU	
+X=$k	
 XA^A]A\_
 XA_A^A]A\_^][
 XD$hA
@@ -2773,7 +2753,6 @@ ZdN=Y
 \$PL;
 \$PMc1A
 \$PfE
-\$XE3
 \$XHc
 \$XI;
 \$XfA;
@@ -2781,6 +2760,7 @@ ZdN=Y
 \$`I+
 \$hE3
 \$pE3
+\$pLc
 \$xE3
 \$xLc
 \$xfE
@@ -2788,6 +2768,7 @@ ZdN=Y
 \D$HA
 \t$(A
 \t$pf
+]4@as8
 ]J<0"0i3
 ]`McM
 ]pD;g
@@ -2796,6 +2777,7 @@ ZdN=Y
 ^pIcFpI
 _ ;_$t
 _ HcG
+_+!Hqs
 _RDATA
 __based(
 __cdecl
@@ -2820,6 +2802,7 @@ _gUT^
 _include
 _multibase
 _not_pickable
+_pvt+
 `.rdata
 `A^A\[
 `A^_^
@@ -2878,7 +2861,6 @@ bAllocationCanFit
 bBackAtFirstVoxel
 bBackFound
 bFound
-bLegalTypeChange
 bad address
 bad exception
 bad file descriptor
@@ -2914,7 +2896,6 @@ buildNavigation: Out of memory 'solid'.
 buildPolyDetail: Could not triangulate polygon (%d verts).
 c [1>H'
 c(>\,
-c5Tb5
 cached_fp == invalid_function_sentinel()
 cached_fp == new_fp
 cached_handle == ((HANDLE)(LONG_PTR)-1)
@@ -2934,6 +2915,7 @@ cross device link
 curvature
 d$ D!
 d$ UAVAWH
+d$(E;
 d$(Lc
 d$(fD
 d$(fff
@@ -2944,9 +2926,9 @@ d$4D;
 d$4H;S
 d$8L;d$`
 d$<D; 
-d$@Hc
 d$@I;
 d$IfD
+d$PD;
 d$PE3
 d$PI#
 d$PL+
@@ -3104,6 +3086,7 @@ l$0Lc)
 l$4A9.
 l$4D+
 l$8E;
+l$8HcE\H
 l$8Hcs H
 l$@E3
 l$@Lc7I
@@ -3134,6 +3117,7 @@ l$h@2
 l$hfD;
 l$pE3
 l$pL;
+l$ptVH
 l2|X/gGe
 lifespan
 log10
@@ -3355,7 +3339,6 @@ pExtensionWithDot[ 0 ] == '.'
 pKV3 && ( pKV3->GetBasicType() == KV3_BTYPE_TABLE || pKV3->GetBasicType() == KV3_BTYPE_NULL )
 pLoadFromMember
 pLoadFromValue != nullptr
-pMemory[i] == 0
 pMeta
 pNavHull != nullptr
 pNavHullsPreset != nullptr
@@ -3555,13 +3538,13 @@ t$@Hc
 t$@Lc
 t$@~ H
 t$DD;
-t$DL;}
 t$HE3
 t$HE;
 t$HH;
 t$HHc
 t$LD;
 t$P;s
+t$PD;
 t$PE3
 t$PH;
 t$P~ H
@@ -3577,6 +3560,7 @@ t$`}[H
 t$hE3
 t$hL9@
 t$hfff
+t$lL;}
 t$xE;
 t$xH;
 t$xL;
@@ -3595,7 +3579,7 @@ t-Lck
 t/fff
 t0L;Z
 t0M;Z
-t1D8%
+t1D8%L
 t3I9@ u-I
 t7D;K
 t7HcP
@@ -3606,7 +3590,6 @@ tCfff
 tEHcR
 tIHc_
 tIxGH
-tJLc/A
 tKHc_
 tRLcY
 tVHc7I
@@ -3699,7 +3682,7 @@ xA^A]A\_^]
 xA_A]A\[
 xA_A^A]A\_^[]
 xA_A^_^][
-xB9|&0~]3
+xB9|&0~\3
 xOD;C
 x^;Wx}Y;G|}T;
 x_;G`}ZH
@@ -3784,7 +3767,6 @@ zJuHA
 |$PfE
 |$P}[H
 |$P~ H
-|$XA;
 |$XE3
 |$XHc+Hc7
 |$XHcD$PH
@@ -3792,8 +3774,10 @@ zJuHA
 |$`E3
 |$`Hc
 |$hA+
+|$hA;
 |$hH;
 |$pA;|$
+|$pE3
 |$pE;
 |$pHc
 |$pLc&Mc7E
@@ -3815,7 +3799,6 @@ zJuHA
 });C$
 }0HcA
 }>;_$
-}Ffff
 }LuHO
 }Ufff
 }[;{$

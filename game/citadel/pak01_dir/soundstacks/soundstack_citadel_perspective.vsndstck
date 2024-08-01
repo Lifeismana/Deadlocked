@@ -208,7 +208,7 @@
 						value = "0.0"
 						_system_properties = 
 						{
-							display_group = "locked"
+							display_group = "Normal"
 							property_group = "Perspective - Volume"
 							property_help = "Base volume for sound in db."
 						}
@@ -237,7 +237,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
-							display_group = "locked"
+							display_group = "Normal"
 							property_group = "Perspective - Volume Falloff"
 							property_help = "Minimum linear scale volume for a sound."
 						}
@@ -369,7 +369,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
-							display_group = "locked"
+							display_group = "Normal"
 							property_group = "Perspective - Play From Listener"
 						}
 					}
@@ -379,7 +379,7 @@
 						value = "0.00000"
 						_system_properties = 
 						{
-							display_group = "locked"
+							display_group = "Normal"
 							property_group = "Perspective - Play From Listener"
 						}
 					}
@@ -389,7 +389,7 @@
 						value = "0.000000"
 						_system_properties = 
 						{
-							display_group = "locked"
+							display_group = "Normal"
 							property_group = "Perspective - Play From Listener"
 						}
 					}
@@ -853,6 +853,24 @@
 			},
 			
 			{
+				name = "mix_group_prefix_disabled"
+				operator = "math_string"
+				input_execute = "1"
+				input1 = "@public.mix_group_prefix"
+				input2 = ""
+				apply = "equal"
+			},
+			
+			{
+				name = "mix_group_name_switch"
+				execute_once = "true"
+				operator = "ctrl_switch_string"
+				input_switch = "@mix_group_prefix_disabled.output"
+				input1 = "@concat_mix_group_strings.output_string"
+				input2 = "@public.mixer_mixgroup"
+			},
+			
+			{
 				name = "mix_layer_string_switch"
 				operator = "logic_perspective_switch_string"
 				input_participant_perspective = "@citadel_find_perspective::game_entity_perspective.output"
@@ -1022,7 +1040,7 @@
 					mixer_mixgroup = 
 					{
 						data_type = "string"
-						value = "@concat_mix_group_strings.output_string"
+						value = "@mix_group_name_switch.output"
 					}
 					pitch_external = 
 					{

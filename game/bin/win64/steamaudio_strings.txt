@@ -17,7 +17,6 @@
 	Not suitable for ECDSA.
 	Questionable extension field!
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncmp
 	_V_strncpy
 	_V_strnicmp_fast
@@ -171,7 +170,6 @@
 !bFoundOneWay || !bFoundTwoWay
 !bFoundOneWayThis
 !bFoundTwoWay || !bFoundTwoWayThis
-!bLooksLikeABug
 !expected_len || s->s3->previous_client_finished_len
 !expected_len || s->s3->previous_server_finished_len
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
@@ -329,6 +327,8 @@ $hRh
 %s %s HTTP/1.0
 %s %s%lu (%s0x%lx)
 %s (%s)
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s Ladder Count: %d
 %s PARAMETERS
 %s PRIVATE KEY
@@ -387,8 +387,6 @@ $hRh
 'prB2
 'sp3s
 (	]zV
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( nErr == ERROR_FILE_NOT_FOUND )
 ( nFlags & KEYVALUES3_AS_STRING_APPEND ) == 0
 ( pDerivedClassName != nullptr ) == ( (KV3TransferClassBehavior_t)TClass::KV3TRANSFER_BEHAVIOR == KV3TRANSFER_CLASS_AS_POLYMORPHIC_TABLE )
@@ -453,9 +451,6 @@ $hRh
 (l$pD
 (l$pL
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (null)
 (t$ A
 (t$ H
@@ -532,6 +527,7 @@ $hRh
 )l$@D
 )l$`D
 )l$pD
+)t$ D
 )t$0D
 )t$0H
 )t$@D
@@ -700,8 +696,8 @@ $hRh
 .?AVCSource3DProcessor@@
 .?AVCSteamAudio@@
 .?AVCSteamAudioMaterialList@@
-.?AVCSteamAudioProbes@@
 .?AVCSteamAudioScene@@
+.?AVCSteamAudioSimulationData@@
 .?AVCSteamAudioSource@@
 .?AVCSurfacePropDataTableBase@@
 .?AVIAppSystem@@
@@ -715,8 +711,8 @@ $hRh
 .?AVISequence@@
 .?AVISourceProcessor@@
 .?AVISteamAudio@@
-.?AVISteamAudioProbes@@
 .?AVISteamAudioScene@@
+.?AVISteamAudioSimulationData@@
 .?AVISteamAudioSource@@
 .?AVIVDataResourceListener@@
 .?AVbad_alloc@std@@
@@ -1143,6 +1139,7 @@ $hRh
 1\`T=h
 1b4Ef
 1f	3Qg^y
+1r|c-
 1u+@A
 2	"n@
 2	0!&
@@ -1154,7 +1151,7 @@ $hRh
 220323000000Z
 220801000000Z
 230714000000Z
-240723235111Z0/
+240801161855Z0/
 241009235959Z0a1
 2:3maJ
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1313,7 +1310,6 @@ $hRh
 7sAP'
 7vQfA
 7}'&V
-8	V_powf
 8!83858A8G8K8S8W8_8e8o8q8}8
 8#u]H
 80F2<
@@ -1346,7 +1342,6 @@ $hRh
 8b&{	
 8pe7?
 8q-S*]X
-9	V_qsort
 9#9%9)9/9=9A9M9[9k9y9}9
 9)~P3
 9.u(H
@@ -1390,7 +1385,6 @@ $hRh
 9{,uBH9
 9|$(u
 9|$0u.H
-:	V_qsort_s
 :':+:1:K:Q:[:c:g:m:y:
 :'L8<
 :=2"p
@@ -1404,6 +1398,7 @@ $hRh
 :q>*C
 :u(f9Q
 :z'H>
+;	V_powf
 ;!;#;-;9;E;S;Y;_;q;{;
 ;"lY7
 ;%|>0
@@ -1452,8 +1447,8 @@ $hRh
 ;|$8~9H
 ;|$@|
 ;|$H|
-;|$P|
 ;|$p|
+<	V_qsort
 <	u2H
 <	u8H
 <	w	@
@@ -1510,6 +1505,7 @@ $hRh
 <unsupported>
 <utK@:
 <~{Su;u
+=	V_qsort_s
 =!=-=3=7=?=C=o=s=u=y={=
 =#N"u#
 =%H5<mN
@@ -1536,7 +1532,6 @@ $hRh
 >8$4,8$4,
 >8;I)
 >; xs:
->A9>}
 >B=~,
 >B`e>
 >D8$/u
@@ -1841,6 +1836,7 @@ $hRh
 @UAVH
 @UAWH
 @USATAUAVAWH
+@USATAUAVH
 @USATAUAWH
 @USAWH
 @USVATAUAVAWH
@@ -1848,7 +1844,6 @@ $hRh
 @USVATAUAWH
 @USVATAUH
 @USVAUAWH
-@USVAVH
 @USVH
 @USVWATAUAVAW
 @USVWATAUAVAWH
@@ -2163,6 +2158,7 @@ A^A\_
 A^A\_^[]
 A^A\_^][
 A^A]A\
+A^A]A\[]
 A^A]A\^[]
 A^A]A\^][
 A^A]A\_]
@@ -2172,7 +2168,6 @@ A^A]A\_^]
 A^A]]
 A^A]_^]
 A^A]_^]H
-A^^[]
 A^^][
 A^_^[
 A^_^[]
@@ -2502,7 +2497,6 @@ C:\buildworker\citadel_rel_win64\build\src\public\navlib\nav_geo.h
 C:\buildworker\citadel_rel_win64\build\src\public\navlib\nav_mesh.h
 C:\buildworker\citadel_rel_win64\build\src\public\navlib\nav_poly.h
 C:\buildworker\citadel_rel_win64\build\src\public\navlib\nav_utils.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\resourcesystem\stronghandle.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitstring.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
@@ -2528,7 +2522,6 @@ C:\buildworker\citadel_rel_win64\build\src\resourcefile\resourcedictionary.cpp
 C:\buildworker\citadel_rel_win64\build\src\resourcefile\vdataresource_helpers.cpp
 C:\buildworker\citadel_rel_win64\build\src\schemalib\schemaclassinfo.cpp
 C:\buildworker\citadel_rel_win64\build\src\soundsystem\steamaudio\steamaudio.cpp
-C:\buildworker\citadel_rel_win64\build\src\soundsystem\steamaudio\steamaudioprobes.cpp
 C:\buildworker\citadel_rel_win64\build\src\soundsystem\steamaudio\steamaudioscene.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\concommand.cpp
 C:\buildworker\citadel_rel_win64\build\src\tier0_perproject\convarref.cpp
@@ -2809,11 +2802,6 @@ CONTENT
 CONTENTROOT
 COPY_EMAIL
 COPY_ISSUER
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CPHcSdH
 CPackedStore::CPackedStore
 CPackedStore::GetDataFileName
@@ -2854,10 +2842,13 @@ CSharedMemory::TryLock::<lambda_1>::operator ()
 CSharedMemory::Unlock::<lambda_1>::operator ()
 CSharedMemoryChannel::InitSend
 CSource3DProcessor::GetPeakDelays
-CSteamAudioProbes::ImportPathingProbes
-CSteamAudioProbes::ImportReverbProbes
 CSteamAudioScene::BakePathData
 CSteamAudioScene::BakeReverb
+CSteamAudioSimulationData::GetPathingProbeData
+CSteamAudioSimulationData::GetReverbProbeData
+CSteamAudioSimulationData::ImportPathingData
+CSteamAudioSimulationData::ImportReverbData
+CSteamAudioSimulationData::NumPathingProbes
 CSteamAudioSourceManager::AddSource
 CStrongHandle<struct InfoForResourceTypeCVDataResource>::Shutdown
 CT Certificate SCTs
@@ -3068,7 +3059,6 @@ ConVarRefAbstract::GetInfo
 ConVarRefAbstract::GetRawValuePtr
 ConVarRefAbstract::GetTypeInfo
 ConVarRefAbstract::GetUndefinedInfo
-Construction is only allowed from the resolve function
 Content file %s is corrupt (Chunk: %s). Verify integrity of game files.
 Content file %s is corrupt. Hashing could not be verified. Verify integrity of game files.
 Content file %s is corrupt. Verify integrity of game files.
@@ -3101,7 +3091,6 @@ CryptGenRandom
 CryptReleaseContext
 CweHc
 D	!|H
-D	V_sincosf
 D 7D9
 D g)*
 D!l$xA
@@ -3367,22 +3356,19 @@ D8t$h
 D8t$ht
 D8uwt
 D8}?t	H
-D9%*o
-D9%~q
 D9)t[
 D9*u3H
+D95w_
 D9Bht
 D9L$`
 D9`Pu7H
 D9cDt
 D9d$<
 D9d$@
-D9d$Hu%
 D9d$l
 D9d$p
 D9ePt0H
 D9fPt6D9gPt0H
-D9l$Pu%
 D9l$p
 D9l$p~(I
 D9l$p~6I
@@ -3395,14 +3381,19 @@ D9t$8t)H
 D9|$(t\D
 D9|$8}O
 D9|$<
+D9|$Hu%
 D9|$`t
 D;3~3A
 D;T$0H
 D;T$hr A
+D;aH}
+D;a`|
 D;l$8
 D;sHu
 D;t$0
 D;|$h
+D;~H}
+D;~`|
 D@D/lcO+hcK
 DD$xH
 DEFAULT
@@ -3618,7 +3609,6 @@ Default
 Degenerate Navigation Area at ( %0.2f, %0.2f, %0.2f )
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DeregisterEventSource
 Different CRL scope
 Diffie-Hellman based MAC
@@ -3641,6 +3631,7 @@ Display baked data stats for the current mod.
 Domain
 Double-save to Member '%s'
 Dynamic Attribute Flags: 0x%08x
+E crF
 E!-<p
 E)2G\
 E*1*}.1K
@@ -3923,6 +3914,7 @@ EXTENDED_KEY_USAGE
 EXTERNAL
 EXfff
 E_HcC
+EarlyInit_Tier0
 EconItemToolModel_001
 Edge [ %d / %d ] connection count: %d
 EdiPartyName
@@ -3970,6 +3962,7 @@ F#bgn?MwN|%
 F$9~ s
 F$A9~ s
 F,mZq
+F85Z3
 F@H9<
 FALSE
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
@@ -4032,6 +4025,7 @@ Friday
 F{(3?
 F|'|,
 F|w)a]c
+G	V_sincosf
 G t9H
 G0Tv~:
 G2xVo\?
@@ -4109,6 +4103,8 @@ GT$XA
 GT$XH
 GT$XI
 GT$XL
+GT$pL
+GT$xL
 GXL9f 
 G[R{(
 G\$(L
@@ -4130,7 +4126,6 @@ Generator (uncompressed):
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -4240,8 +4235,9 @@ H5gRR-
 H9(tO
 H9+uEA
 H9/u&L
-H95 B
-H95Wl
+H95&G
+H95Wv
+H95\J
 H97u+A
 H98t2
 H9A u
@@ -4488,7 +4484,6 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 International Organizations
@@ -4557,8 +4552,6 @@ Key field (file) missing in custom hrtf properties file. Using default HRTF.
 Key field (normalization) missing in custom hrtf properties file. Setting it to no normalization.
 Key field (volume) missing in custom hrtf properties file. Setting it to 0 dB.
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::FindOrCreateMember
 KeyValues3::FormatValueAsString
 KeyValues3::GetArrayElement
@@ -4774,7 +4767,8 @@ L9{Pu*
 L9{Pu/
 L9|$(w
 L;2t#H
-L;5}B
+L;5LK
+L;5{G
 L;D$pu
 L;d$PA
 L;d$h
@@ -4789,7 +4783,6 @@ LAI)haL<|p
 LCMapStringEx
 LCMapStringW
 LD$PI+
-LE._sH
 LG.HK
 LINEBUFFER_CTRL
 LIST_ADD
@@ -4826,6 +4819,7 @@ Lcd$0J
 Lcl$0E
 Lcm4L
 LcmhA
+LcqHH
 Lct$8I
 Lct$PD;
 Lc|$ 
@@ -5041,7 +5035,6 @@ Not safe to 'new' this class due to alignment requirements
 November
 Nw!qB
 Nz3I#B
-O	V_sscanf
 O#wjk
 O%.U/
 O1NzNfj'fGv
@@ -5145,9 +5138,6 @@ OpenSSL X9.42 DH method
 OpenSSL default
 OpenSSL default user interface
 Order: 
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 OverlayProjectionDirection
 O~`L{
 P A@~t
@@ -5386,6 +5376,7 @@ ParticleSystemMgr003
 Path length of invalid path in inches. Set this to .0 to use direct distance as path length.
 Pathing: Baked data file is the wrong format version, skipping load. Consider re-baking. (%s)
 Pathing: Baked data file is the wrong format, skipping load. Consider re-baking. (%s)
+Pathing: Cannot find baked paths file: %s.
 Pathing: Cannot find baked paths file: %s. Pathing disabled.
 Pathing: Filesystem not initialized.
 Pathing: Imported %d probes from baked pathing file (%s).
@@ -5393,8 +5384,10 @@ Pathing: Loaded baked data file (%s).
 Pathing: No baked pathing found in baked data file: %s.
 Pathing: No probes found in baked data file: %s. Pathing disabled.
 Pathing: Unable to create serialized object. (%d)
+Pathing: Unable to load baked data file (%s).
 Pathing: Unable to load probe batch. (%d)
 Pathing: Unable to read from baked data file (%s). Pathing disabled.
+Pc0y+
 PeekNamedPipe
 Peer haven't sent GOST certificate, required for selected ciphersuite
 PerVertexLighting
@@ -5405,11 +5398,11 @@ Phonon_Log
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 Physics
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
 Plat_GetEnv
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_IsInHeadlessMode
 Plat_IsRunningOnCustomerMachine
@@ -5457,11 +5450,11 @@ Qjh/T
 Qj{Jd
 QueryPerformanceCounter
 Q{0^:
+R	V_sscanf
 R)){R)){
 R2I_CERTPOL
 R2I_PCI
 R=1C&b
-RA3yy
 RAND lib
 RAND part of OpenSSL 1.0.2j  26 Sep 2016
 RAND_get_rand_method
@@ -5641,6 +5634,7 @@ ResourceManifestRegistry001
 ResourceSystem013
 Reverb: Baked data file is the wrong format version, skipping load. Consider re-baking. (%s)
 Reverb: Baked data file is the wrong format, skipping load. Consider re-baking. (%s)
+Reverb: Cannot find baked reverb file: %s.
 Reverb: Cannot find baked reverb file: %s. Reverb disabled.
 Reverb: Filesystem not initialized.
 Reverb: Imported %d probes from baked reverb file (%s).
@@ -5648,6 +5642,7 @@ Reverb: Loaded baked data file (%s).
 Reverb: No baked reverb found in baked data file: %s.
 Reverb: No probes found in baked data file: %s. Reverb disabled.
 Reverb: Unable to create serialized object. (%d)
+Reverb: Unable to load baked data file (%s).
 Reverb: Unable to load baked data file (%s). Reverb disabled.
 Reverb: Unable to load probe batch. (%d)
 RrBoN
@@ -5968,7 +5963,6 @@ Superseded
 SurfacePropertiesList
 SystemTimeToFileTime
 SystemTimeToTzSpecificLocalTime
-T	V_stricmp_fast
 T"UdW
 T$ D#
 T$ D)s
@@ -6230,6 +6224,7 @@ UWAVH
 UWAWH
 UY6[E
 U_0=1
+UjX[q
 Unable to create Ambisonics decode effect [%d]
 Unable to create custom HRTF [%s]
 Unable to create direct effect [%d]
@@ -6408,6 +6403,7 @@ VggjeK uO5n
 VisBuilder_001
 Vrad3_001
 V~~Vq
+W	V_stricmp_fast
 W"Fe~
 W'6S`
 W1-x]1
@@ -6630,6 +6626,7 @@ XW=?'
 X_^][
 XqgA+
 X~ '.
+Y-|V\
 Y9"SD
 Y93a=7c@
 Y;C;8V
@@ -6891,7 +6888,6 @@ _}eOk
 `vector vbase copy constructor iterator'
 `vftable'
 `virtual displacement map'
-a	V_tanf
 a null shared library handle was used
 a2d_ASN1_OBJECT
 a2i_ASN1_ENUMERATED
@@ -6899,7 +6895,6 @@ a2i_ASN1_INTEGER
 a2i_ASN1_STRING
 a2i_GENERAL_NAME
 a7hIw
-a8mvn
 aE%d0
 aECDH
 aECDSA
@@ -7039,7 +7034,6 @@ bB"`3
 bFoundBack
 bFoundOneWay || bFoundTwoWay
 bInTU == bInUT
-bLegalTypeChange
 bPb:L7X)
 bSh&+
 bV}TS
@@ -7440,6 +7434,7 @@ curvature
 curve
 custom_hrtfs
 cz>Sp
+d	V_tanf
 d e not congruent to 1
 d$ A3
 d$ AUAVAW
@@ -8133,8 +8128,6 @@ i <= EVP_MAX_MD_SIZE
 i <= n
 i u!H
 i%|kB
-i( [3z
-i,K/&
 i2b_PVK_bio
 i2d ecpkparameters failure
 i2d_ASN1_SET
@@ -8158,7 +8151,11 @@ i4a."
 iA5StringSyntax
 iFFp}A
 iILV]
+iListenerProbe >= 0 && iListenerProbe < m_vPathingProbeCenters.Count() && iListenerProbe < m_vPathingProbeRadii.Count()
+iProbe >= 0 && iProbe < m_vPathingProbeCenters.Count() && iProbe < m_vPathingProbeRadii.Count()
+iProbe >= 0 && iProbe < m_vReverbProbeCenters.Count() && iProbe < m_vReverbProbeRadii.Count()
 iSource >= 0
+iSourceProbe >= 0 && iSourceProbe < m_vPathingProbeCenters.Count() && iSourceProbe < m_vPathingProbeRadii.Count()
 iU[&l
 iVY2L
 ia5org
@@ -8592,6 +8589,7 @@ iplImpulseResponse2AddChannel
 iplImpulseResponse2AddSample
 iplImpulseResponse2Create
 iplImpulseResponse2GetChannel
+iplImpulseResponse2GetNumSamples
 iplImpulseResponse2Release
 iplImpulseResponse2Reset
 iplImpulseResponse2SetChannel
@@ -8659,6 +8657,7 @@ iplSimulatorCreate
 iplSimulatorRelease
 iplSimulatorRemoveProbeBatch
 iplSimulatorRunDirect
+iplSimulatorRunPathingForNeighborhoods
 iplSimulatorRunPathingPerSource
 iplSimulatorRunPathingPerSourceForNeighborhood
 iplSimulatorRunReflections
@@ -8955,6 +8954,7 @@ m_pMemory[ i ]
 m_pPlaceDirectory
 m_vGravity
 m_vMovableMeshes.HasElement( nMovableMeshId )
+m_vPathingProbeCenters.Count() == m_vPathingProbeRadii.Count()
 m_vVertsRefCounts.Count() == m_vVerts.Count()
 m_vVertsRefCounts[ aVertIndices[ v ] ] >= 0
 m_vVertsRefCounts[ nVertIdx ] >= 0
@@ -9605,7 +9605,6 @@ pKV3 && ( pKV3->GetBasicType() == KV3_BTYPE_TABLE || pKV3->GetBasicType() == KV3
 pLadders
 pLoadFromMember
 pLoadFromValue != nullptr
-pMemory[i] == 0
 pMeta
 pNewArea
 pParent
@@ -9840,6 +9839,7 @@ rParams.m_Id != NAV_MOVABLE_MESH_NONE
 rRfKR
 rStruct.m_ladders[ CNavLadder::LADDER_DOWN ].IsEmpty()
 rStruct.m_ladders[ CNavLadder::LADDER_UP ].IsEmpty()
+rWF9F-
 rX&O0
 rY1D+
 rY1fA
@@ -9930,7 +9930,6 @@ revoked
 rfc822Mailbox
 ripemd160
 ripemd160WithRSA
-ro:Ng
 roleOccupant
 roomNumber
 root ca not trusted
@@ -10532,6 +10531,7 @@ t$ Hc
 t$ L+
 t$ Lc
 t$ UH
+t$ UWATAVAWH
 t$ UWAVH
 t$ WATAUAVAW
 t$ WATAUAVAWH
@@ -10581,7 +10581,7 @@ t$@u!H
 t$@uIH
 t$H;o
 t$HA_A^A]A\_
-t$HD9=
+t$HD9=#S
 t$HHc
 t$HLc
 t$HLk
@@ -10776,11 +10776,12 @@ tsa name mismatch
 tsa untrusted
 tst info setup error
 ttD90toH
-tuL9=
+tuL9=q
 tvLcs
 tw8\$4
 twIcF
 txfff
+tye,0"
 type not compressed data
 type not constructed
 type not data
@@ -10813,7 +10814,6 @@ u3HcH<H
 u4I9}(
 u5@8j
 u5H;k
-u6L\t
 u7D)w
 u8A9C8t
 u;H;P
@@ -11153,7 +11153,6 @@ x_;G`}ZH
 x_^][
 x`\`U
 xatjD
-xe;=;
 xg-9Ja
 xp$=S
 xrJ:DCG
@@ -11165,10 +11164,12 @@ y?iLa
 yH/Yy
 yHs8=
 yJ;Bf
+yPLc:E
 yRnkB	
 yWTb?
 y\PD>!
 yh9A(w
+yjbi.
 yn@<M
 ynA<M
 ynM<M
@@ -11303,6 +11304,7 @@ zxNIjo
 |$pfD
 |$xD;
 |$xL9
+|$xSABDt%
 |$xfH
 |(tFM
 |)L9c
@@ -11317,6 +11319,7 @@ zxNIjo
 |c~=;F
 |hdX)
 |}Eq1
+|~D=@
 }!D;A
 }!L9|
 }"6M:Q

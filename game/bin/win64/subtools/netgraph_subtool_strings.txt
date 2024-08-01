@@ -6,7 +6,6 @@
 	A;M<A
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
@@ -55,7 +54,6 @@
 !?triggerAction@QAbstractSlider@@QEAAXW4SliderAction@1@@Z
 !?underMouse@QWidget@@QEBA_NXZ
 !IsInternalTypeShortArray( Internal_Type() )
-!bLooksLikeABug
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
 !m_NameStack.IsEmpty()
@@ -89,14 +87,14 @@
 %^?strokePath@QPainter@@QEAAXAEBVQPainterPath@@AEBVQPen@@@Z
 %d Samples
 %d.%d
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s: Invalid capacity %u
 %s: Invalid grow amount %d
 %s: unhandled basic type %u
 &YA1E
 &YA1H
 ',=?k
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( nFlags & KEYVALUES3_AS_STRING_APPEND ) == 0
 ( pKV3->GetBasicType() == KV3_BTYPE_ARRAY && m_pArrayElements != nullptr ) || ( pKV3->GetBasicType() == KV3_BTYPE_NULL )
 (%d,%d)
@@ -115,9 +113,6 @@
 (b)its
 (f*^[0
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$ A
 (t$ H
 (t$PH
@@ -140,8 +135,8 @@
 +f)>0'
 +h->|
 +o'q)}
-,	V_logf
 ,"?updateGeometries@QTableView@@MEAAXXZ
+,(?&b
 ,/<-w
 ,W5y+
 -sse2
@@ -250,6 +245,7 @@
 .xJ>Hf
 .xdata
 .xdata$x
+/	V_logf
 />58d%
 /F<v	H
 0A^^]
@@ -280,12 +276,13 @@
 1OnSliderValueChanged( int )
 1OnUpdateStatusBar()
 1YA1H
+1sM.D
 210429000000Z
 211007000000Z
 220323000000Z
 220801000000Z
 230714000000Z
-240723234901Z0/
+240801161802Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -307,7 +304,6 @@
 3>N;kU
 3>fvw
 3mq+<
-4P!VZQ
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
@@ -333,7 +329,6 @@
 9>~ZH
 9p@u+
 9t$Pu	
-:	V_qsort_s
 :YA1H
 ;H9>&X
 ;I9}(tiH
@@ -347,6 +342,7 @@
 <table: %u members>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
+=	V_qsort_s
 =YA1H
 =imb;D
 =rIQU
@@ -928,7 +924,6 @@ C I!.H
 C0Hc	H
 C:\buildworker\citadel_rel_win64\build\_build_\utils\vconsole2\subtools\netgraph\_vpc_netgraph_subtool\default\win64\_msvc_\Retail\netgraph_subtool.pdb
 C:\buildworker\citadel_rel_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\check_cast.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\keyvalues3.h
@@ -966,11 +961,6 @@ CKeyValues3ContextImpl::FreeToCluster
 CKeyValues3ContextImpl::FreeToCluster::<lambda_1>::operator ()
 CKeyValues3Table::Free
 CKeyValues3Table::MemberData
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CQGraphLegendModel
 CQGraphLegendTableView
 CQGraphStatusModel
@@ -1052,7 +1042,6 @@ ClientToolsInfo_001
 CloseHandle
 Combine
 CommandLine
-Construction is only allowed from the resolve function
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
 CorExitProcess
@@ -1097,7 +1086,6 @@ DB(ZH
 December
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -1115,6 +1103,7 @@ EH*?H
 ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 ETENH
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 EngineServiceMgr001
@@ -1152,7 +1141,6 @@ GameUIService_001
 GetACP
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -1223,7 +1211,6 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Invalid use of KV3 specific type %s with basic type %s, must be basic type %s
@@ -1242,8 +1229,6 @@ KERNEL32.dll
 KV3 instances cannot be set to an unspecified specific type
 KV3Helper_CheckValueNumericCast
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::FindOrCreateMember
 KeyValues3::FormatValueAsString
 KeyValues3::GetArrayElementCount
@@ -1297,7 +1282,6 @@ L$`;M
 L$`E3
 L$h;M
 L9#u/H
-L:Uz_
 L;|$X
 L?n(Zy&
 LCMapStringEx
@@ -1334,6 +1318,7 @@ MultiByteToWideChar
 Must call SetMetadataEnabled on the root KV3 context to track metadata
 N?green@QColor@@QEBAHXZ
 N?height@QFontMetrics@@QEBAHXZ
+NT[kg
 NavGameTest001
 NavSystem001
 NetGraphTool
@@ -1363,9 +1348,6 @@ OnScaleToVisible
 OnSliderRangeChanged
 OnSliderValueChanged
 OnUpdateStatusBar
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 PACKET_STATUS_DROPPED
 PACKET_STATUS_INVALID
 PACKET_STATUS_NORMAL
@@ -1380,10 +1362,10 @@ ParticleSystemMgr003
 Paused
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_NonFatalErrorFunc
 Plat_RegisterModule
@@ -1469,7 +1451,6 @@ StatsService_001
 SteamAudio001
 Stopped.
 Sunday
-T	V_stricmp_fast
 T$ H;
 T$PE3
 T$XA+
@@ -1566,6 +1547,8 @@ Valve Corp.0
 Valve Corp.1
 VisBuilder_001
 Vrad3_001
+Vy3<'	
+W	V_stricmp_fast
 W?save@QPainter@@QEAAXXZ
 WATAUAVAWH
 WAVAWH
@@ -1599,7 +1582,6 @@ Z?setPen@QPainter@@QEAAXAEBVQColor@@@Z
 \$HE3
 \?setWidth@QPen@@QEAAXH@Z
 ]J<0"0i3
-^[n]y)
 _ ;_$t
 _RDATA
 __based(
@@ -1674,7 +1656,6 @@ avg_packet_out
 bAllocationCanFit
 bAutoScale
 bCombined
-bLegalTypeChange
 bShowBytes
 bad exception
 bandwidth in:
@@ -1686,7 +1667,6 @@ bp(=>?g
 bytes
 c [1>H'
 c(>\,
-c_`+F
 cached_fp == invalid_function_sentinel()
 cached_fp == new_fp
 cached_handle == ((HANDLE)(LONG_PTR)-1)
@@ -1713,6 +1693,7 @@ dropped
 dti_enabled
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 e0A_A^A]A\]
+e;Cs]
 ehandle
 enable
 encoding_stats
@@ -1788,7 +1769,6 @@ l$XI;
 l$`I;
 l$hA;
 l2|X/gGe
-lP5t*l
 last queue discard:
 last queue starve:
 latency:
@@ -1821,6 +1801,7 @@ netgraph_subtool.dll
 normal
 ntelA
 num > 0
+o3c]7
 operator
 operator "" 
 operator co_await
@@ -1836,7 +1817,6 @@ pA_A^A]A\_^[
 pCallback == nullptr
 pContext
 pEntry >= m_Values
-pMemory[i] == 0
 pMeta
 pParent
 pPolymorphicClassName && pPolymorphicClassName[0] != '\0'
@@ -1854,7 +1834,6 @@ qQ?lineTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 qangle
 quaternion
 r	Vr.>T
-r#Es.5
 range check failure
 records
 reliable

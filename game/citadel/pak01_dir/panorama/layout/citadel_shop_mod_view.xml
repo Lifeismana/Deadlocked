@@ -44,6 +44,7 @@
 					</Panel>
 				</Panel>
 			</Panel>
+			<Panel id="ComponentsContainer" />
 			<Panel id="ReturnToShop">
 				<Panel class="MessageContent">
 					<Label class="ReturnLabel" text="#item_info_no_shop" />
@@ -54,7 +55,21 @@
 					<Label class="CantAffordLabel" text="#item_info_cant_afford" />
 				</Panel>
 			</Panel>
-			<Panel id="ComponentsContainer" />
+			<Panel id="AddToBuild">
+				<Panel class="MessageContent">
+					<Label class="AddToBuildLabel" text="#Citadel_HeroBuilds_AddItem" />
+				</Panel>
+			</Panel>
+			<Panel id="AlreadyInBuild">
+				<Panel class="MessageContent">
+					<Label class="AddToBuildLabel" text="#Citadel_HeroBuilds_AlreadyInBuild" />
+				</Panel>
+			</Panel>
+			<Panel id="RemoveFromBuild">
+				<Panel class="MessageContent">
+					<Label class="AddToBuildLabel" text="#Citadel_HeroBuilds_RemoveItem" />
+				</Panel>
+			</Panel>
 		</Panel>
 	</CitadelShopMod>
 </root>

@@ -872,7 +872,7 @@
 		{
 			_class = "modifier_base"
 			_my_subclass_name = "gun_powerup_pickup"
-			m_flDuration = 150.000000
+			m_flDuration = 160.000000
 			m_vecScriptValues = 
 			[
 				
@@ -883,7 +883,7 @@
 				
 				{
 					m_eModifierValue = "MODIFIER_VALUE_AMMO_CLIP_SIZE_PERCENT"
-					m_value = 30.000000
+					m_value = 40.000000
 				},
 			]
 			m_sLocalizationName = "gun_powerup_pickup"
@@ -923,7 +923,7 @@
 		{
 			_class = "modifier_base"
 			_my_subclass_name = "survival_powerup_pickup"
-			m_flDuration = 150.000000
+			m_flDuration = 160.000000
 			m_vecScriptValues = 
 			[
 				
@@ -974,7 +974,7 @@
 		{
 			_class = "modifier_breakable_prop_cooldown_reduction"
 			_my_subclass_name = "casting_powerup_pickup"
-			m_flDuration = 150.000000
+			m_flDuration = 160.000000
 			m_vecScriptValues = 
 			[
 				
@@ -1025,7 +1025,7 @@
 		{
 			_class = "modifier_breakable_prop_extra_stamina"
 			_my_subclass_name = "movement_powerup_pickup"
-			m_flDuration = 150.000000
+			m_flDuration = 160.000000
 			m_nExtraStamina = 0
 			m_vecScriptValues = 
 			[
@@ -1037,17 +1037,17 @@
 				
 				{
 					m_eModifierValue = "MODIFIER_VALUE_SPRINT_SPEED_BONUS"
-					m_value = 78.740200
+					m_value = 118.110000
 				},
 				
 				{
 					m_eModifierValue = "MODIFIER_VALUE_ZIP_LINE_SPEED_PERCENTAGE"
-					m_value = 30
+					m_value = 50
 				},
 				
 				{
 					m_eModifierValue = "MODIFIER_VALUE_STAMINA_REGEN_PER_SECOND_PERCENTAGE"
-					m_value = 20
+					m_value = 30
 				},
 			]
 			m_vecAlwaysShowInStatModifierUI = 
@@ -1578,6 +1578,8 @@
 		m_strOrbClaimedTeammate = soundevent:"Teammate.ClaimOrb"
 		m_strOrbDenied = soundevent:"Player.Deny"
 		m_strOrbDeniedPlayer = soundevent:"Player.Denied"
+		m_bUseKillerPlaneOffsets = false
+		m_flKillerPlaneOffset = 0
 	}
 	xp_orb_trooper = 
 	{
@@ -1603,12 +1605,19 @@
 		m_flLifeTime = 2.000000
 		m_flCollisionRadius = 12.000000
 		m_flBurstSpeedMultiplier = 2
-		m_flBurstSpeedDuration = 0.120000
+		m_flBurstSpeedDuration = 0.200000
 		m_strOrbClaimed = soundevent:"Player.ClaimOrb"
 		m_strOrbClaimedTeammate = soundevent:"Teammate.ClaimOrb"
 		m_strOrbDenied = soundevent:"Player.Deny"
 		m_strOrbDeniedPlayer = soundevent:"Player.Denied"
+		m_bUseKillerPlaneOffsets = true
+		m_flKillerPlaneOffset = 20.000000
 		_base = "xp_orb"
+		m_flKillerPlaneHorizontalDecayRate = 15.000000
+		m_flLateralMoveDuration = 0.300000
+		m_flKillerPlaneHorizontalSpeed = 100.000000
+		m_flKillerPlaneVerticalSpeed = 80.000000
+		m_flKillerPlaneSpeedNoise = 15.000000
 	}
 	xp_orb_idol_dropoff = 
 	{
@@ -1639,6 +1648,8 @@
 		m_strOrbClaimedTeammate = soundevent:"Teammate.ClaimOrb"
 		m_strOrbDenied = soundevent:"Player.Deny"
 		m_strOrbDeniedPlayer = soundevent:"Player.Denied"
+		m_bUseKillerPlaneOffsets = false
+		m_flKillerPlaneOffset = 0
 		_base = "xp_orb"
 	}
 	xp_orb_player_kill = 
@@ -1670,6 +1681,8 @@
 		m_strOrbClaimedTeammate = soundevent:"Teammate.ClaimOrb"
 		m_strOrbDenied = soundevent:"Player.Deny"
 		m_strOrbDeniedPlayer = soundevent:"Player.Denied"
+		m_bUseKillerPlaneOffsets = false
+		m_flKillerPlaneOffset = 0
 		_base = "xp_orb"
 	}
 	xp_orb_objective = 
@@ -1701,6 +1714,8 @@
 		m_strOrbClaimedTeammate = soundevent:"Teammate.ClaimOrb"
 		m_strOrbDenied = soundevent:"Player.Deny"
 		m_strOrbDeniedPlayer = soundevent:"Player.Denied"
+		m_bUseKillerPlaneOffsets = false
+		m_flKillerPlaneOffset = 0
 		_base = "xp_orb"
 		m_bIsObjective = true
 	}
@@ -1733,7 +1748,16 @@
 		m_strOrbClaimedTeammate = soundevent:"Teammate.ClaimOrb"
 		m_strOrbDenied = soundevent:"Player.Deny"
 		m_strOrbDeniedPlayer = soundevent:"Player.Denied"
+		m_bUseKillerPlaneOffsets = false
+		m_flKillerPlaneOffset = 0
 		_base = "xp_orb"
+	}
+	citadel_herotest_orbspawner = 
+	{
+		m_hModel = resource_name:"models/npc/sewer_beast/sewer.vmdl"
+		m_flModelScale = 1.500000
+		m_AmbientParticle = resource_name:"particles/environment/powerup_spawner_inactive_ambient.vpcf"
+		m_SpawnParticle = resource_name:"particles/trooper/trooper_death_sn.vpcf"
 	}
 	info_neutral_trooper_camp = 
 	{

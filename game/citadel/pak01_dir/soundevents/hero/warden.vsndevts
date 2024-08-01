@@ -13,24 +13,27 @@
 			"sounds/weapons/warden/warden_weapon_fire_04.vsnd",
 			"sounds/weapons/warden/warden_weapon_fire_05.vsnd",
 		]
+		vsnd_duration = 1.899864
 	}
 	Warden.Wpn.Impact = 
 	{
 		base = "Base.Bullet.Impact"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.100045
+		vsnd_duration = 0.050023
 	}
 	Warden.Wpn.Zoom.In = 
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		volume = -22.000000
 		vsnd_files = "sounds/weapons/warden/zoom/in.vsnd"
+		vsnd_duration = 1.323604
 	}
 	Warden.Wpn.Zoom.Out = 
 	{
 		base = "Base.Hero.Weapon.Zoom.2d"
 		volume = -22.000000
 		vsnd_files = "sounds/weapons/warden/zoom/out.vsnd"
+		vsnd_duration = 1.829146
 	}
 	Warden.Wpn.Reload.Clip.Out = 
 	{
@@ -65,6 +68,7 @@
 			"sounds/weapons/warden/whizby/12.vsnd",
 			"sounds/weapons/warden/whizby/13.vsnd",
 		]
+		vsnd_duration = 0.850563
 	}
 	Warden.Impact.Default = 
 	{
@@ -86,6 +90,7 @@
 		base = "Base.Ability"
 		pitch = 1.100000
 		vsnd_files = "sounds/abilities/warden/lockdown_ui.vsnd"
+		vsnd_duration = 0.401917
 	}
 	Warden.LockDown.CastDelay = 
 	{
@@ -101,13 +106,16 @@
 		base = "Base.Ability"
 		volume = -3.000000
 		vsnd_files = "sounds/abilities/warden/lockdown_cast.vsnd"
+		vsnd_duration = 1.956000
 	}
 	Warden.LockDown.Debuff.Lp = 
 	{
 		base = "Base.Ability"
 		pitch = 1.000000
 		volume = 4.000000
+		volume_offset_opponent = 2.000000
 		vsnd_files = "sounds/abilities/warden/lockdown_foley.vsnd"
+		vsnd_duration = 3.118889
 	}
 	Warden.LockDown.Explode = 
 	{
@@ -117,7 +125,10 @@
 		spread_max_value = 0.250784
 		spread_max = 250.000000
 		spread_min_value = 0.000000
+		volume_offset_team = 2.000000
+		volume_offset_player = 0.000000
 		vsnd_files = "sounds/abilities/warden/lockdown_impact.vsnd"
+		vsnd_duration = 1.796576
 	}
 	Warden.HighAlert.Cast = 
 	{
@@ -145,31 +156,37 @@
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/warden/high_alert_cast_lyr1.vsnd"
+		vsnd_duration = 1.347875
 	}
 	Warden.HighAlert.Cast.Lyr2 = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/warden/high_alert_cast_lyr2.vsnd"
+		vsnd_duration = 1.575000
 	}
 	Warden.HighAlert.Cast.Lyr3 = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/warden/high_alert_cast_lyr3.vsnd"
+		vsnd_duration = 1.797833
 	}
 	Warden.HighAlert.Cast.Lyr4 = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/warden/high_alert_cast_lyr4.vsnd"
+		vsnd_duration = 1.571625
 	}
 	Warden.HighAlert.Lp = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/warden/high_alert_cast_lp.vsnd"
+		vsnd_duration = 0.741521
 	}
 	Warden.HighAlert.End = 
 	{
 		base = "Base.Ability"
 		vsnd_files = "sounds/abilities/warden/high_alert_end.vsnd"
+		vsnd_duration = 1.194813
 	}
 	Warden.RiotProtocol.PreCast = 
 	{
@@ -187,18 +204,21 @@
 		base = "Base.Ability.Ult"
 		volume_falloff_max = 1750.000000
 		vsnd_files = "sounds/abilities/warden/riot_protocol_precast_lyr1.vsnd"
+		vsnd_duration = 4.868729
 	}
 	Warden.RiotProtocol.PreCast.Lyr2 = 
 	{
 		base = "Base.Ability.Ult"
 		volume_falloff_max = 1750.000000
 		vsnd_files = "sounds/abilities/warden/riot_protocol_precast_lyr2.vsnd"
+		vsnd_duration = 4.375083
 	}
 	Warden.RiotProtocol.Cast = 
 	{
 		base = "Base.Ability.Ult"
 		volume = -1.000000
 		vsnd_files = "sounds/abilities/warden/riot_protocol_cast.vsnd"
+		vsnd_duration = 1.211729
 	}
 	Warden.RiotProtocol.Lp = 
 	{
@@ -206,6 +226,7 @@
 		volume = -3.000000
 		pitch = 1.100000
 		vsnd_files = "sounds/abilities/warden/riot_protocol_lp.vsnd"
+		vsnd_duration = 0.455042
 	}
 	Warden.Pain.Small = 
 	{
@@ -220,6 +241,7 @@
 			"sounds/vo/warden/emote/warden_pain_small_06.vsnd",
 			"sounds/vo/warden/emote/warden_pain_small_07.vsnd",
 		]
+		vsnd_duration = 1.224150
 	}
 	Warden.Pain.Big = 
 	{
@@ -233,6 +255,7 @@
 			"sounds/vo/warden/emote/warden_pain_big_05.vsnd",
 			"sounds/vo/warden/emote/warden_pain_big_06.vsnd",
 		]
+		vsnd_duration = 1.540522
 	}
 	Warden.Pain.All = 
 	{
@@ -253,6 +276,7 @@
 			"sounds/vo/warden/emote/warden_pain_small_06.vsnd",
 			"sounds/vo/warden/emote/warden_pain_small_07.vsnd",
 		]
+		vsnd_duration = 1.540522
 	}
 	Warden.Death = 
 	{
@@ -266,6 +290,7 @@
 			"sounds/vo/warden/emote/warden_pain_death_05.vsnd",
 			"sounds/vo/warden/emote/warden_pain_death_06.vsnd",
 		]
+		vsnd_duration = 1.709274
 	}
 	Warden.Effort = 
 	{
@@ -280,6 +305,7 @@
 			"sounds/vo/warden/emote/warden_efforts_06.vsnd",
 			"sounds/vo/warden/emote/warden_efforts_07.vsnd",
 		]
+		vsnd_duration = 2.761020
 	}
 	Warden.Effort.Melee = 
 	{
@@ -294,6 +320,7 @@
 			"sounds/vo/warden/emote/warden_melee_efforts_06.vsnd",
 			"sounds/vo/warden/emote/warden_melee_efforts_07.vsnd",
 		]
+		vsnd_duration = 1.430181
 	}
 	Warden.Melee.SwingShort = 
 	{
@@ -325,6 +352,7 @@
 			"sounds/player/melee/shared/swing_short_23.vsnd",
 			"sounds/player/melee/shared/swing_short_24.vsnd",
 		]
+		vsnd_duration = 1.062200
 	}
 	Warden.Melee.SwingLong = 
 	{
@@ -357,6 +385,7 @@
 			"sounds/player/melee/shared/swing_long_24.vsnd",
 			"sounds/player/melee/shared/swing_long_25.vsnd",
 		]
+		vsnd_duration = 1.399773
 	}
 	Warden.MovementFoley = 
 	{
@@ -390,6 +419,7 @@
 			"sounds/player/foley/warden/warden_jump_land_08.vsnd",
 			"sounds/player/foley/warden/warden_jump_land_09.vsnd",
 		]
+		vsnd_duration = 1.084771
 	}
 	Warden.Footstep = 
 	{
@@ -414,6 +444,7 @@
 			"sounds/player/footsteps/warden/warden_footstep_14.vsnd",
 			"sounds/player/footsteps/warden/warden_footstep_15.vsnd",
 		]
+		vsnd_duration = 0.305714
 	}
 	Warden.Reload.ClipIn = 
 	{
@@ -422,6 +453,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/kelvin/reload/clip_in.vsnd"
+		vsnd_duration = 0.297392
 	}
 	Warden.Reload.ClipOut = 
 	{
@@ -430,6 +462,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/kelvin/reload/clip_out.vsnd"
+		vsnd_duration = 0.250091
 	}
 	Warden.Reload.End = 
 	{
@@ -438,6 +471,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/weapons/kelvin/reload/end.vsnd"
+		vsnd_duration = 0.263039
 	}
 	Warden.Reload.Start = 
 	{
@@ -446,39 +480,48 @@
 		pitch_rand_min = -0.110000
 		pitch_rand_max = 0.150000
 		vsnd_files = "sounds/weapons/digger/reload/start.vsnd"
+		vsnd_duration = 0.661973
 	}
 	Warden.CrowdControl.Cast = 
 	{
 		base = "Base.Ability"
 		volume_falloff_min = 1.000000
-		volume = -2.000000
+		volume = 2.000000
 		spread_min = 0.000000
 		spread_max_value = 0.122257
 		spread_max = 250.000000
 		spread_min_value = 0.000000
+		volume_offset_player = -4.000000
 		vsnd_files = "sounds/abilities/warden/warden_a1_flask_cast.vsnd"
+		vsnd_duration = 1.656712
 	}
 	Warden.CrowdControl.Proj_Lp = 
 	{
-		base = "Base.Ability"
+		base = "Base.Ability.Projectile"
 		volume_falloff_min = 1.000000
 		volume_falloff_max = 1100.000000
-		volume = -1.000000
+		volume = 3.000000
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		spread_min = 0.000000
 		spread_max_value = 0.100313
 		spread_max = 250.000000
 		spread_min_value = 0.000000
+		volume_falloff_max_player = 5500.000000
+		volume_falloff_max_team = 5500.000000
+		pitch = 1.000000
 		vsnd_files = "sounds/abilities/warden/warden_a1_flask_proj_lp.vsnd"
+		vsnd_duration = 2.667959
 	}
 	Warden.CrowdControl.Proj_Impact = 
 	{
 		base = "Base.Ability"
-		volume = 5.000000
+		volume = 6.000000
 		volume_falloff_min = 10.000000
 		pitch_rand_min = -0.100000
 		pitch = 1.000000
+		volume_offset_player = -4.000000
 		vsnd_files = "sounds/abilities/warden/warden_a1_flask_impact.vsnd"
+		vsnd_duration = 2.481814
 	}
 }

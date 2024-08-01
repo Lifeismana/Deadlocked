@@ -1,7 +1,7 @@
 	!s99
+	V_fopenUTF8
 	V_fprintf
 	V_fread
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	_V_strnicmp_fast
 	g_pMemAlloc
@@ -20,8 +20,8 @@
  Class Hierarchy Descriptor'
  Complete Object Locator'
  Hci L
- S?T)
  Type Descriptor'
+ `%@,
  delete
  delete[]
  new[]
@@ -32,13 +32,9 @@
 %s%cbug.txt
 ',=?k
 (f*^[0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$PH
-)$ml(
 )>6{1n
-)}$B1
+)Dp;cR
 *StO9>T
 +M<7>
 +Xt@(
@@ -47,6 +43,7 @@
 +o'q)}
 ,/<-w
 ,W5y+
+-#H;F1
 .00cfg
 .?AVCBugReporter@@
 .?AVIBaseInterface@@
@@ -110,7 +107,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-240723234835Z0/
+240801161554Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -135,6 +132,7 @@
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+9(M	Ndj
 9)~P3
 98t H
 ;8}'H
@@ -231,7 +229,6 @@ C ;C$t
 C0Hc	H
 C847u
 C:\buildworker\citadel_rel_win64\build\_build_\utils\bugreporter_filequeue\_vpc_bugreporter_filequeue\default\win64\_msvc_\Retail\bugreporter_filequeue.pdb
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlmemory.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\utlrbtree.h
@@ -263,11 +260,6 @@ CBugReporter::SetSubmitter
 CBugReporter::SetTitle
 CBugReporter::SetVMFName
 CBugReporter::SetVersion
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CUtlMemory<class CUtlString,int>::Grow
 CUtlMemory<class CUtlString,int>::Grow::<lambda_2>::operator ()
 CUtlMemory<class CUtlSymbol,int>::Grow
@@ -283,7 +275,6 @@ CloseHandle
 CompareStringEx
 CompareStringW
 Console
-Construction is only allowed from the resolve function
 CorExitProcess
 CreateFileW
 CreateInterface
@@ -303,7 +294,6 @@ D8t$ht
 D8}?t	H
 December
 DeleteCriticalSection
-DependencyClass::m_pDependencyLL == nullptr
 Description
 DigiCert Assured ID Root CA0
 DigiCert Inc1
@@ -317,6 +307,7 @@ E0HcH
 E0Lc`
 E8q(u
 EH*?H
+EarlyInit_Tier0
 EncodePointer
 EnterCriticalSection
 ExitProcess
@@ -337,7 +328,6 @@ FreeEnvironmentStringsW
 FreeLibrary
 Friday
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCommandLineA
 GetCommandLineW
@@ -375,13 +365,11 @@ HcK H
 HcO H
 HcQ<H
 Hcu`M
-I	V_snprintf
 I+4$H
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
 InitializeSListHead
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 InvokeMiniDumpHandler
 IsDebuggerPresent
@@ -397,6 +385,7 @@ KERNEL32.dll
 KeyValuesFromJSON
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!|$(L!
 L$ I;
 L$ L;
@@ -413,7 +402,7 @@ L$@;|
 L$@E3
 L$@H3
 L$HH3
-L;5t[
+L;5uO
 L?n(Zy&
 LCMapStringEx
 LCMapStringW
@@ -441,9 +430,6 @@ Names
 November
 October
 OptionsFile
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orientation
 Owner
 PA\][
@@ -451,12 +437,12 @@ PA_A^A]A\_^]
 PAq=?Mp#
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 Plat_CreateDirectory
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FileExists
 Plat_FileSize
 Plat_GetLocalTime
+Plat_GetTime
 Plat_IsInDebugSession
 Position
 Priority
@@ -487,7 +473,6 @@ Severity
 Source2
 Submitter
 Sunday
-T	V_stricmp_fast
 T$PE3
 TUUUU
 TerminateProcess
@@ -510,7 +495,6 @@ Unknown exception
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
-V	V_strlower_fast
 V6E>`"(5
 VFileSystem017
 VWATAVAW
@@ -519,12 +503,12 @@ VWAVH
 V_AddBackSlashesToSpecialChars
 V_GetFileExtensionSafe
 V_fclose
-V_fopenUTF8
 V_~]	,
 Valve Corp.0
 Valve Corp.1
 Version
 Versions
+W	V_stricmp_fast
 WATAUAVAWH
 WAVAWH
 WSOCK32.dll
@@ -533,7 +517,9 @@ Wednesday
 WideCharToMultiByte
 WriteConsoleW
 WriteFile
+Y	V_strlower_fast
 Y9"SD
+YeYM'
 [K]taM?
 \$ VWATAUAVH
 \$(fB
@@ -587,6 +573,7 @@ _gUT^
 `placement delete[] closure'
 `scalar deleting destructor'
 `string'
+`t]^$
 `typeof'
 `udt returning'
 `vbase destructor'
@@ -669,7 +656,6 @@ p0R^G'
 p;Y>u
 pA_A^A]A\_^[
 pLevels
-pMemory[i] == 0
 pOwners
 pVersions
 purecall
@@ -694,7 +680,7 @@ t-Lck
 t7HcP
 t8IcA
 tRLcY
-tUH95-[
+tUH95
 tier0.dll
 try_get_function
 try_get_module
@@ -713,6 +699,7 @@ vAD8s(t
 vKfffff
 valveusername
 vmc.com
+vwM$}
 www.digicert.com1!0
 www.digicert.com1$0"
 x ATAVAWH

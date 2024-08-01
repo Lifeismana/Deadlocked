@@ -370,6 +370,11 @@ CitadelFriend
 	border-radius: 2px;
 }
 
+CitadelFriend.SoloFriend:hover
+{
+	background-color: rgb(46, 78, 53);
+}
+
 .FriendsHeader.Activated .FriendMenuItem
 {
 	height: 0px;
@@ -389,7 +394,7 @@ CitadelFriend
 	width: 32%;
 }
 
-#FriendsParty.Collapsed .FriendMenuItem,#FriendsPartyInvite.Collapsed .FriendMenuItem,#FriendsPlayingCitadel.Collapsed .FriendMenuItem,#FriendsOnline.Collapsed .FriendMenuItem,#FriendsOffline.Collapsed .FriendMenuItem,#FriendsPending.Collapsed .FriendMenuItem,#FriendsSentInvite.Collapsed .FriendMenuItem
+#FriendPanelFriendsList .FriendsCategory.Collapsed .FriendMenuItem
 {
 	height: 0px;
 	opacity: 0;

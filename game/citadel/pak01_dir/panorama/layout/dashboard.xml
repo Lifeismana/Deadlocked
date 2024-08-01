@@ -2,8 +2,8 @@
 <root>
 	<styles>
 		<include src="s2r://panorama/styles/base.vcss_c" />
-		<include src="s2r://panorama/styles/dashboard.vcss_c" />
 		<include src="s2r://panorama/styles/citadel_base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/dashboard.vcss_c" />
 	</styles>
 	<CitadelDB class="dashboard hasNewGettingStarted introMovieActive" oncancel="CitadelNavigateBack();">
 		<Panel id="BackgroundContainer" hittest="false" hittestchildren="false">
@@ -242,7 +242,8 @@
 					</Panel>
 					<Panel id="RecommendFriend">
 						<Label class="recommendIntro" text="#Citadel_Playtest_RecommendInfo" />
-						<Button id="RecommendButton" class="SecondaryButton fill light" onactivate="CitadelSubmitPlaytestUser(); CitadelPlayUISound( ESocialMenuHover )">
+						<Button id="RecommendButton" class="SecondaryButton fill hasIcon light" onactivate="CitadelSubmitPlaytestUser(); CitadelPlayUISound( ESocialMenuHover )">
+							<Panel class="FriendsIcon buttonIcon" />
 							<Label text="#Citadel_Playtest_RecommendButton" />
 						</Button>
 					</Panel>

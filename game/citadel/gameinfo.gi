@@ -419,6 +419,8 @@
 		"fps_max"		"400"
 		"fps_max_ui"	"120"
 
+		"in_button_double_press_window" "0.3"
+
 		// Convars that control spatialization of UI audio.
 		"snd_ui_positional"								"1"
 		"snd_ui_spatialization_spread"					"2.4"

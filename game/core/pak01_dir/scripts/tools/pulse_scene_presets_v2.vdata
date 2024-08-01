@@ -39,6 +39,7 @@
 				name = "RequirementsIconInsideHeader"
 				className = "RequirementsIconInsideHeader"
 				image = "game:tools/images/pulse_editor/requirements.png"
+				dataTooltip = "This node has additional requirements before it will execute"
 			},
 			
 			{
@@ -219,6 +220,7 @@
 				name = "AppendFlow"
 				_class = "append_flow_button"
 				className = "AppendFlow"
+				dataTooltip = "Add a new node here"
 			},
 			
 			{
@@ -259,6 +261,7 @@
 				_class = "image"
 				className = "RequirementsIconInRequirementsList"
 				image = "game:tools/images/pulse_editor/requirements.png"
+				dataTooltip = "This node has additional requirements before it will execute"
 			},
 			
 			{
@@ -404,6 +407,7 @@
 					
 					{
 						name = "PortPlug"
+						hoverBehavior = "HOVER_STOP_PROPAGATION"
 						_class = "port_plug"
 						className = "PortPlug"
 					},
@@ -503,7 +507,25 @@
 			},
 		]
 	}
-	TimelineClientPaintAreaRow = 
+	TimelineEvent = 
+	{
+		className = "TimelineEvent"
+		children = 
+		[
+			
+			{
+				name = "TimelineEventLabel"
+				_class = "text"
+				className = "TimelineEventLabel"
+				dataTooltip = "Time when the event will be triggered"
+			},
+			
+			{
+				className = "TimelineEventBar"
+			},
+		]
+	}
+	MultipleOutflowsRow = 
 	{
 		className = "NodeRow"
 		children = 
@@ -530,8 +552,44 @@
 			},
 			
 			{
-				name = "ClientPaintArea"
-				className = "ClientPaintArea"
+				name = "MultipleOutflowsSection"
+				className = "SpecialMultipleOutflowsSection"
+				children = 
+				[
+					
+					{
+						className = "MultipleOutflowsSectionBar"
+					},
+				]
+			},
+		]
+	}
+	SpecialMultipleOutflowsSectionPortChild = 
+	{
+		className = "SpecialMultipleOutflowsSectionPortChild"
+		children = 
+		[
+			
+			{
+				className = "PortEvent"
+			},
+		]
+	}
+	WaitForChildOutflows = 
+	{
+		className = "WaitForChildOutflows"
+		dataTooltip = "Cursor flow will yield until all child outflows have finished"
+	}
+	Outflow_If_Else = 
+	{
+		className = "OutflowIfElse"
+		children = 
+		[
+			
+			{
+				_class = "text"
+				className = "OutflowIfElseLabel"
+				text = "Else"
 			},
 		]
 	}

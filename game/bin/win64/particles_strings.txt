@@ -17,12 +17,12 @@
 	6p7MOf
 	D$0H
 	D;otD
+	V_fmodf
 	V_fpclassifyd
 	V_fprintf
 	V_isnand
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strEndsWith
 	_V_strncmp
 	_V_strncpy
@@ -166,7 +166,6 @@
 !IsInternalTypeShortArray( Internal_Type() )
 !IsWaitingOnAutoWake( pCursor )
 !L	#H
-!bLooksLikeABug
 !fakeEnt.m_bDestroyed
 !g_nKillBufferInUse[i]
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
@@ -221,6 +220,7 @@
 !this->m_pMemory && pIB
 "!%!H
 "!%!L
+"Lkd$
 "Position within sphere random" no longer supports the "randomly distribute to highest supplied Control Point" feature
 "Remap control point orientation to rotation" does something approaching sanity for the cases I looked at.  If we have cases where this isn't appropriate, we can split out the behavior.
 "Remap control point orientation to rotation" rewritten to make more sense.
@@ -302,6 +302,8 @@ $x?"TA?
 %f %f %f %f
 %s '%s' (%s)
 %s - Blackboard reference %s: %u (%s) type mismatches
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s - Could not find blackboard instance for %s
 %s - Could not find blackboard reference %s: %u (%s)
 %s allocation count overflow
@@ -326,16 +328,12 @@ $x?"TA?
 &YA1E
 &YA1H
 &YA1I
-'	V_log10f
 ', type<
 ',=?k
 'p7M}f
-(	V_log2_uint
 (	u#L9|
 ( 1.0f - tr.m_flFraction ) >= 0.0f
 ( FIRST_TEXTURE_DESCRIPTOR + descriptorHashValue.nDescriptorSetIdx ) < m_globalDescriptorBindings.Count()
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( fakeEnt.m_nHandle.WeakHandle() == nHandle )
 ( g_pSchemaSystem == nullptr ) || ( GetPrimaryBinding() )
 ( int ) SubFloat( fl4Hitbox, 0 ) == SHRT_MAX || ( int ) SubFloat( fl4Hitbox, 0 ) < hitboxInfo->m_nNumHitBoxes
@@ -367,58 +365,53 @@ $x?"TA?
 ( x >= 0 ) && ( x < NumCols() )
 ( y >= 0 ) && ( y < NumRows() )
 ( z >= 0 ) && ( z < NumSlices() )
-(%/]]
-(%@RX
-(%A<X
-(%SB$
-(%W-#
-(%Y@$
-(%]!/
-(%`\;
+(%#SG
+(%4b'
+(%6J'
+(%8((
+(%G{'
+(%JY;
+(%Z];
 (%d,%d)
-(%h6'
-(%lmF
-(%xrF
+(%g(#
+(%lqF
+(%nmG
+(%piX
+(%qSX
+(%s=$
+(%y;$
+(%~DF
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
-(-$'X
-(-&GF
-(--!'
-(-89'
-(-SQ'
-(-\i'
-(-_/(
-(-g2+
-(-q!'
-(-zjX
-(5-FS
-(5. #
-(5.P&
-(5:q]
-(5;H&
-(5;S]
-(5G%U
-(5GtG
-(5JLG
-(5NGS
-(5UNG
-(5YwM
-(5l]A
-(5p>]
-(5pg]
-(5rLQ
-(5uw,
-(5v J
-(5vSG
-(5x6R
-(=$	O
-(=/HX
-(=2^X
-(=3\&
-(=HOG
-(=MKW
-(=bwM
-(=tK;
+(-/L'
+(-3Y]
+(-7`G
+(-D+X
+(-M.U
+(-T>X
+(-X4'
+(-jOG
+(-sL'
+(-|d'
+(5%t,
+(5.n&
+(5/W(
+(5;-4
+(5=JS
+(5LuG
+(5NK&
+(5[C&
+(5\dA
+(5^KS
+(=$I;
+(=3w(
+(=SW&
+(=Un(
+(=VS(
+(=__X
+(=buX
+(=eSG
+(=mOW
 (A^A\_[
 (A^A]A\_^[
 (A^A]_^
@@ -512,7 +505,6 @@ $x?"TA?
 (T$`D
 (T$`I
 (T$`f
-(T$`u
 (T$pA
 (T$pD
 (T$pH
@@ -525,6 +517,7 @@ $x?"TA?
 (Visit( pPart->GetRHS(), pOutResult, pOutError )) == (GenericExprResult_t::OK)
 (Visit( pPart->GetTrueValue(), pOutResult, pOutError )) == (GenericExprResult_t::OK)
 (YA1I
+(Zhoq
 (\$ A
 (\$ D
 (\$0A
@@ -590,9 +583,6 @@ $x?"TA?
 (l$pf
 (m_ResolvedStateStorage.m_nSize == 0 ) || AlignValue( pState, m_ResolvedStateStorage.m_nAlign ) == pState
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (nVertexCount & 0x3) == 0
 (null)
 (optional) index buffer size (k)
@@ -758,6 +748,7 @@ $x?"TA?
 )L$pE
 )L$pH
 )M0fD
+)S+C9P
 )T$ D
 )T$ E
 )T$ H
@@ -932,6 +923,7 @@ $x?"TA?
 )|$pL
 )|B?d!
 )}@D8
+*	V_log10f
 *;Eot	;Ew
 *<alA?
 *StO9>T
@@ -940,6 +932,7 @@ $x?"TA?
 *info.m_pHandlePointer == CONVAR_HANDLE_INVALID
 *pMaxIndices <= 32768
 *pMaxVertices <= 32768
++	V_log2_uint
 +;D$<t
 +Base Properties
 +Collection Options
@@ -960,7 +953,6 @@ $x?"TA?
 +kt+Kt
 +o'q)}
 +|$PH
-,	V_logf
 , at <EOF>
 , at offset %d
 , near %s
@@ -972,8 +964,8 @@ $x?"TA?
 ,7L9>t	H
 ,<ellipsis>
 ,>u"u?
-,D$LH
-,D$`H
+,D$TL
+,D$XH
 ,D,@D;
 ,HR>O
 ,I<%w
@@ -982,9 +974,9 @@ $x?"TA?
 ,W5y+
 ,X< w
 ,YA1H
-,t$XH
-,|$hL
-,}@Hc
+,|$`H
+,|$pN
+,|$xH
 ----------------------------
 -1 for all asleep, 1 for all awake
 -BH>t
@@ -1000,11 +992,10 @@ $x?"TA?
 -unknown source-(
 -vulkan_disable_particle_descriptor_set
 .	z!u
-.%R[)
 ..om?
 .00cfg
 .1 .95
-.5arM
+.=&^O
 .>PJ;I:qE>
 .>l	y<\
 .?AUConcurrentQueueProducerTypelessBase@details@moodycamel@@
@@ -2064,7 +2055,14 @@ $x?"TA?
 .xJ>Hf
 .xdata
 .xdata$x
+.|$0ziug
+.|$4z`u^
+.|$8zWuU
+.|$@zNuL
+.|$DzEuC
+.|$Hz<u:L
 .~Pu	
+/	V_logf
 /2GG>!B
 />58d%
 /@DrR
@@ -2144,7 +2142,7 @@ $x?"TA?
 220323000000Z
 220801000000Z
 230714000000Z
-240723235901Z0/
+240801162441Z0/
 241009235959Z0a1
 2D Orient
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -2171,7 +2169,6 @@ $x?"TA?
 3>fvw
 3HcC0
 3L?Zb%
-3LB`8
 3YA1H
 3mq+<
 40HcN
@@ -2197,7 +2194,6 @@ $x?"TA?
 6zNuLF
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
-8	V_powf
 8$u*E
 8$uFH
 8/t[H
@@ -2235,13 +2231,15 @@ $x?"TA?
 8\$xt
 8_^][
 8ke?;
+8t@j\
 9	tYH
 9)~P3
 9-		H
+9-3K@
 92~;L
-95Jf`
 98t H
 99~CE
+9;~BH
 9>powf
 9>~&f
 9>~BH
@@ -2295,7 +2293,6 @@ $x?"TA?
 9~(~}D
 9~0~@H
 9~@~*H
-:	V_qsort_s
 : lexer error %d :
 :!E@0
 :!MP0
@@ -2308,7 +2305,9 @@ $x?"TA?
 :Exu2Ic
 :H9w u
 :YA1I
+;	V_powf
 ;	t/H
+;,7 ,
 ;.|@H
 ;/i$?t$
 ;1#INF
@@ -2343,7 +2342,6 @@ $x?"TA?
 ;uHVL
 ;|$T|
 ;|$`u 
-<	V_remainderf
 <	u2H
 <	u8H
 <	u\L
@@ -2394,6 +2392,7 @@ $x?"TA?
 <unknown>
 <utK@:
 =	8t?
+=	V_qsort_s
 = $s?(,
 =!@f>
 =%@u?
@@ -2429,7 +2428,6 @@ $x?"TA?
 >;8d?
 >??;???;??
 >Ae@?
->D%G#
 >E)u?|
 >G ~?
 >Mp$d
@@ -2445,7 +2443,7 @@ $x?"TA?
 >zQuOF
 >zp'?
 >}"W?
-?	V_roundf
+?	V_remainderf
 ?!5WOo
 ?#\$ 
 ?+>^m
@@ -2611,7 +2609,7 @@ $x?"TA?
 @8z$u
 @8z%u
 @8{(u
-@8|$Puo9|$T
+@8|$Puv9|$T
 @8}8t
 @>%>b
 @?*BL?
@@ -2749,7 +2747,6 @@ $x?"TA?
 @UVWH
 @UWATAUAWH
 @UWAVH
-@UWAWH
 @VATH
 @VAVAWH
 @VAVH
@@ -2790,16 +2787,13 @@ A+P@H
 A03>A|
 A0D3C\H
 A2Bv$
-A5~/	
 A8)t[A9
 A80t$H
 A87t:I
 A8t$eL
-A8y-tF
 A8}(u
 A9,A$
 A94$t
-A99~9H
 A9<Fu
 A9Vt~+
 A9^Ht
@@ -2897,7 +2891,6 @@ A_A\[]
 A_A\][
 A_A\_
 A_A\_[]
-A_A\_^[]
 A_A]A\
 A_A]A\[
 A_A]A\_[
@@ -3050,6 +3043,7 @@ Avg Intersection Tests
 Avg. Render (us)
 Avg. Sim (us)
 Avoid Vertical Axis Singularity
+B	V_roundf
 B'E<H
 B(I9A(
 B0;B@|
@@ -3299,7 +3293,6 @@ C:\buildworker\citadel_rel_win64\build\src\public\mathlib\math_pfns.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\rotation.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\simd_vector.h
 C:\buildworker\citadel_rel_win64\build\src\public\mathlib\voxelarray.h
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\particleslib\particle_editor_info.h
 C:\buildworker\citadel_rel_win64\build\src\public\particleslib\particlefloatinput.h
 C:\buildworker\citadel_rel_win64\build\src\public\pulse_runtime_lib\gap_variant.h
@@ -3601,11 +3594,6 @@ COMMA
 CONTENT ERROR: Unable to find %s '%s' in model '%s' referenced in particle system '%s'
 CONVERT_VALUE
 COUNT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CP Entity to Ignore for Collisions
 CP component
 CP movement tolerance
@@ -3800,12 +3788,14 @@ CParticleRemapFloatInput::KV3Transfer_DefaultKeys_Impl
 CParticleRemapFloatInput::Schema_VerifyBindingIsRegistered
 CParticleSnapshot::%s - Invalid attribute mapping specified (must be one-to-one)!
 CParticleSnapshot::AddAttributeMapping
+CParticleSnapshot::AddVertices
 CParticleSnapshot::ElementPointer
 CParticleSnapshot::ElementPointer4V
 CParticleSnapshot::ElementPointerf
 CParticleSnapshot::HasAttribute
 CParticleSnapshot::Init
 CParticleSnapshot::InitFromSnapshot
+CParticleSnapshot::InitFromVertices
 CParticleSystemDefinition
 CParticleSystemDefinition::FunctionList
 CParticleSystemDefinition::GetEditorData
@@ -4232,10 +4222,6 @@ CPulseRuntimeMethodArg
 CPulseRuntimeMethodArg::KV3TransferLoad_Impl
 CPulseRuntimeMethodArg::KV3Transfer_DefaultKeys_Impl
 CPulseRuntimeMethodArg::Schema_VerifyBindingIsRegistered
-CPulseTestFuncs_DerivedDomain
-CPulseTestFuncs_DerivedDomain!GetCursorValueA
-CPulseTestFuncs_DerivedDomain!SetCursorValueA
-CPulseTestFuncs_DerivedDomain::Schema_VerifyBindingIsRegistered
 CPulseTestGapTypeQueryRegistration
 CPulseTestGapTypeQueryRegistration::Schema_VerifyBindingIsRegistered
 CPulseTestScriptLib
@@ -4355,7 +4341,9 @@ CTSQueue<class std::function<void __cdecl(void)> *,0>::Purge
 CTSQueue<class std::function<void __cdecl(void)> *,0>::Push
 CTSQueue<class std::function<void __cdecl(void)> *,0>::~CTSQueue
 CTestDomainDerived_Cursor
+CTestDomainDerived_Cursor!GetCursorValueA
 CTestDomainDerived_Cursor!GetCursorValueB
+CTestDomainDerived_Cursor!SetCursorValueA
 CTestDomainDerived_Cursor!SetCursorValueB
 CThreadSpinRWLock::CThreadSpinRWLock
 CTier2ShutdownCallback::RunAllCallbacks
@@ -6485,7 +6473,6 @@ Constrain distance to path between two control points
 Constrain distance to user specified path
 Constrain particles to a box
 Constrain particles to initial shape
-Construction is only allowed from the resolve function
 Control Point Orientation Amount (-1..1)
 Control Point Providing Hitbox index
 Control Point Velocity Force
@@ -6537,7 +6524,6 @@ Custom Shader
 Cycle Scalar
 Cycle time
 C|9G|
-D	V_sincosf
 D W?{W
 D!l$xA
 D#C|D
@@ -6668,8 +6654,6 @@ D$02P+
 D$02Q
 D$04H
 D$04u
-D$09F
-D$0;F
 D$0=4L3H
 D$0>	$
 D$0?M
@@ -6844,6 +6828,7 @@ D$XL9
 D$XM+
 D$XfA
 D$Xt^E
+D$\v-
 D$`9t$l
 D$`;_x
 D$`;_x|
@@ -6932,6 +6917,7 @@ D+|$p
 D1 fF
 D5(F9d5
 D8$3u
+D8%`	.
 D8(tLH
 D8)u#L
 D8,:u
@@ -6942,11 +6928,10 @@ D8<3u
 D8<8u
 D8<:u
 D8<>u
-D8=49>
-D8==M,
-D8=L8>
-D8=P\@
-D8=wM,
+D8=)H,
+D8=DK,
+D8=T/>
+D8=l.>
 D8L$0u`
 D8L$`u8
 D8[(u
@@ -6962,7 +6947,9 @@ D8t$ht
 D8|$"t
 D8|$Ht
 D9#tKH
+D9%q}`
 D9+~3M
+D9-=pE
 D9E4v
 D9H$t
 D9I$t
@@ -6995,7 +6982,7 @@ D;$(t
 D;+|!H
 D;/|!H
 D;3|!H
-D;5U96
+D;5U/6
 D;7|!H
 D;;|!H
 D;A$|BH
@@ -7074,7 +7061,6 @@ DemoUpconverterVersion001
 Density value to map to max value
 Density value to map to min value
 Density-based force
-DependencyClass::m_pDependencyLL == nullptr
 Depth
 Depth buffer control and effects
 Depth feathering mode
@@ -7141,7 +7127,6 @@ Duration value for path point
 Dynamic Entities Only
 Dynamic Fog No Shadows
 Dynamic Fog with Shadows
-E	V_sind
 E A;t$x
 E D8!t
 E D9{(
@@ -7152,6 +7137,7 @@ E0Lc`
 E8$?u
 E8'u^I
 E8)tEH
+E8g-tG
 E8q(u
 E9,$L
 E9n(E
@@ -7168,6 +7154,7 @@ E;u$t>H
 E;|$t
 E;|$x
 E>nEA
+E@Icy
 E@f;X
 EH*?H
 EHANDLE support hasn't been implemented yet
@@ -7183,6 +7170,7 @@ EQ_FLOAT
 EQ_INT
 EQ_OPAQUE_HANDLE
 EQ_PANEL_HANDLE
+EQ_SCHEMA_ENUM
 EQ_STRING
 EQ_TEST_HANDLE
 ERROR: CUtlSymbolTableLarge element limit of %u exceeded
@@ -7194,8 +7182,10 @@ ETHcD
 EXD;D$|
 EXPONENT
 EXPORTSYSTEM_INTERFACE_VERSION_001
+E\$`L
 E\$|I
 Early exit
+EarlyInit_Tier0
 EconItemToolModel_001
 Elapsed time = %f
 Emit continuously
@@ -7750,7 +7740,6 @@ Extraneous token
 E|$\D
 E|$dD
 E|$tI
-F	V_sinf
 F A;n
 F Lcu
 F"5PH
@@ -7900,7 +7889,7 @@ Force based on distance from plane
 ForceMaterialOverride
 Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 Found particle target layer ID '%s' which isn't in the whitelist '%s'.
-FpD8%
+FpD8%O
 Frames Measured: %d
 FreeEnvironmentStringsW
 FreeLibrary
@@ -7919,6 +7908,7 @@ Function "%s" system "%s" is reading CP %d but didn't request it in GetControlPo
 Function %s failed to chain GetControlPointInfo call to base class!
 Function is disabled
 Functions not supported in this evaluator (%s)
+G	V_sincosf
 G tBH
 G(9C(
 G03GD%
@@ -7983,7 +7973,6 @@ Gameplay State High
 Gameplay State Low
 Gamma-correct vertex colors
 GapArgumentListSignature_t::GetArg
-GatherInparams
 Gaussian
 Gd$HI
 Generate a random integer between min and max (inclusive)
@@ -8015,7 +8004,6 @@ GetAsNumeric() - unsupported type '%s' (%d)!
 GetAttributeType( nAttrIdx ) != ATTRDATATYPE_NONE
 GetBasicType() == KV3_BTYPE_TABLE
 GetBlackboardReference R%d <- BR%d (%s)
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCPUInformation
 GetCommandLineA
@@ -8085,6 +8073,7 @@ G|$8H
 G|$8H9w8u
 G|$8M
 G|$XA
+H	V_sind
 H SUWATAUAVAWH
 H SVWAWH
 H UATAUH
@@ -8102,7 +8091,7 @@ H!T$0D
 H!|$ H
 H#D$HH+
 H#D$pH
-H#T$xH;T$x
+H#L$xH;L$x
 H(HcC
 H(HcG4H
 H*0"ZOW
@@ -8110,15 +8099,18 @@ H-^Eu
 H1FxM
 H9(tO
 H9+t	H
-H95LE2
-H95gE2
-H95j2_
-H95lD2
+H93uM
+H9527_
+H95\92
+H95w"c
+H95w92
+H95|82
 H97u+A
 H98t2
 H9A(u
 H9C`t
 H9D$Pu>I
+H9D$`H
 H9Fpt
 H9Q@t
 H9X(t
@@ -8176,6 +8168,7 @@ HandleInt
 HandleIntDerived
 HardCancel
 HasAllocatedMemory( nDestAttr )
+Hc-pye
 Hc.;n
 Hc/;o
 Hc3;s
@@ -8238,6 +8231,7 @@ HcOtL
 HcQ<H
 HcS H
 HcS03
+HcS8H
 HcS@H
 HcT$0H
 HcUPH
@@ -8286,20 +8280,17 @@ Honors the per-particle radius (multiplied by radius scale) but is more expensiv
 HostStateMgr001
 How aggressive the switch to fallbacks will be depending on how far over the cl_particle_sim_fallback_threshold_ms the sim time is.  Higher numbers are more aggressive.
 Hybrid Box/Capsule
-I	V_snprintf
+I	V_sinf
 I cannot be refracted through refracting objects like water
 I could not work out what I was expecting, like so many of us these days!
 I+4$H
 I9.t	I
-I9Xht
+I9Hht H
 I9n I
 I9n t
 I9n0I
 I9n@I
 I9v(t
-I9} t
-I9}(t
-I9}0t
 I;A s
 I;A s&
 I@H9k8u
@@ -8365,6 +8356,17 @@ Ic^PA
 Ic^TA
 Ic_0A
 Ict$ Hc
+Icy H
+Icy$H
+Icy(H
+Icy,H
+Icy0H
+Icy4H
+Icy8H
+Icy<H
+Icy@H
+IcyDH
+Ic{hH
 If (R%d) Jump to Instr I%d
 If (R%d) Leap to Chunk C%d
 If intended, call ClearSpecificType first to discard the old value.%s
@@ -8931,7 +8933,6 @@ Instance field count mismatch (codegen %d vs. meta %d) for %s (should be Texture
 Instance field count mismatch (codegen %d vs. meta %d) for %s (should be VecInputMaterialVariable_t)
 Int( %d )
 Integer
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 InterlockedPushEntrySList
 Internal error: handle mismatch '%s' (%d != %d)
@@ -9002,8 +9003,6 @@ Keep a history of all instructions run on a per graph basis.
 Keep running normally.
 KeyValueCache001
 KeyValues3
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::ArrayAddToTail
 KeyValues3::ArrayInsertMultipleBefore
 KeyValues3::CopyFrom
@@ -9052,6 +9051,7 @@ Kwvt,
 K|LcCx
 K}*n:	
 K~Je#>!
+L	V_snprintf
 L!d$(L!d$@D
 L!l$pH
 L!|$(L!
@@ -9101,7 +9101,6 @@ L$(E3
 L$(H;M
 L$(HcD$ M
 L$(fI
-L$,v-
 L$0E3
 L$0E;
 L$0H3
@@ -9143,7 +9142,6 @@ L$HfD;
 L$Ht$H
 L$Ht,E
 L$PA87uOH
-L$PD;
 L$PE3
 L$PH3
 L$PHc
@@ -9159,20 +9157,21 @@ L$XE3
 L$XH+
 L$XLc
 L$XMc
+L$\A;
+L$\D;
 L$`;M
 L$`D;
 L$`H;L$p
 L$`Hc
 L$`ff
 L$bA8
+L$dD;
 L$h H
 L$h;M
-L$hA;
 L$hD3
-L$hD;
-L$hHc
 L$hM+
 L$hMc
+L$ltMD;
 L$pA9
 L$pD!l$x
 L$pD;
@@ -9180,6 +9179,7 @@ L$pD;|$
 L$pE8
 L$pH#
 L$pH;
+L$pHc
 L$pHi
 L$pIc
 L$pff
@@ -9187,10 +9187,10 @@ L$x9D
 L$xD;
 L$xD;u
 L$xE;
+L$xHc
 L$xHi
 L$xMc
 L$xfD
-L$xtMD;
 L$|D;u
 L$|E;
 L00Hc
@@ -9199,17 +9199,19 @@ L9't	H
 L90u H
 L93t	H
 L94:H
-L95.93
-L959M3
-L95I93
-L95WL3
-L95g83
+L95.A3
+L957d<
+L95>-3
+L95IA3
+L95Y-3
+L95g@3
+L95w,3
 L97t{L
 L9:t[
 L9;t	H
-L9=O!Q
-L9=j!Q
-L9=s Q
+L9=/!Q
+L9=J!Q
+L9=S Q
 L9?t	H
 L9?tb
 L9F(u
@@ -9245,6 +9247,7 @@ LINE_CONTINUATION
 LITERAL_FALSE
 LITERAL_TRUE
 LOG_GENERAL
+LONG PARTICLE RENDER: "%s" took %fms to submit to render.
 LOS Failure Scalar
 LOS Failure Scale
 LOS collision group
@@ -9259,6 +9262,7 @@ Lc3D;s
 Lc7D;w
 Lc>D;~
 LcA<E3
+LcC E3
 LcC`E
 LcD$ H
 LcD$x
@@ -9443,6 +9447,7 @@ MPulseDomainHookInfo
 MPulseDomainOptInFeatureTag
 MPulseEditorHeaderIcon
 MPulseEditorHeaderText
+MPulseEditorIsControlFlowNode
 MPulseExpressionAlias
 MPulseGraphHook
 MPulseInstanceDomainInfo
@@ -9610,6 +9615,7 @@ NE_FLOAT
 NE_INT
 NE_OPAQUE_HANDLE
 NE_PANEL_HANDLE
+NE_SCHEMA_ENUM
 NE_STRING
 NE_TEST_HANDLE
 NJ2"v
@@ -9669,7 +9675,6 @@ November
 NumCols() && NumRows() && NumSlices()
 Number of Children to Use
 Numer of points along path
-O	V_sscanf
 O*9y]
 O8HcB
 O@33S@
@@ -9714,9 +9719,6 @@ Operator Fade Time Offset
 Operator Fade Timescale Modifiers
 Operator Name
 Or R%d <- R%d || R%d
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orientation
 Oscillate scalar
 Oscillate scalar simple
@@ -10250,7 +10252,6 @@ PhysicsBuilderMgr001
 Pin Particle to control point
 Pitch
 Place Particle at Trace End
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
@@ -10311,7 +10312,6 @@ Post Processing Strength
 PostProcessingSystem_001
 PostSimulate
 PrecalculateParticleFloatBiasInfo
-PrepareOutstores_Fastpath
 Prevent passing through a plane
 Prevent passing through static part of world
 Print debug message every time a particle collection is created
@@ -10420,6 +10420,8 @@ QuaternionVectorsFLU
 QuaternionVectorsFLU differs from QuaternionMatrix() then, MatrixToVectorsFLU() by %.10e: [ %.08f %.08f %.08f %.08f ]
 QueryPerformanceCounter
 Qx;Q||@
+R	V_sscanf
+R 9=n
 R%d->%s
 R1h58
 R?vlD>
@@ -10597,7 +10599,7 @@ RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
 RenderModelSubModelFieldType_t
-RenderOps_Init(14010): 
+RenderOps_Init(14020): 
 RenderProjectedMaterial_t
 RenderProjectedMaterial_t::KV3TransferLoad_Impl
 RenderProjectedMaterial_t::KV3Transfer_DefaultKeys_Impl
@@ -11601,9 +11603,6 @@ Synchronize particles
 Synchronous - wait for the method to fully complete before returning
 System Name
 Systems Measured: %d
-S{n.woG
-T	V_stricmp_fast
-T$ D+
 T$ E3
 T$ H;
 T$ Hc
@@ -11670,13 +11669,9 @@ T$pfA
 T$xE3
 T$xI	
 T$|fff
-T%SS$
-T-"v9
-T-%<"
-T-d;"
-T-e9"
+T%sN$
+T-eH"
 T00Ic
-T5C~8
 T>M-+?#gy?
 T>gaW?:]f?AHV>'
 T>l>~?
@@ -11701,7 +11696,6 @@ TernaryConditional
 Test Domain
 Test Handle
 Test Mode Assert True
-Test functions for the derived test domain.
 Test node that just generates the integer 50. Nothing to see here!
 Test node that picks between two outflows as specified in the test domain.
 Test node that randomly picks between two outflows.
@@ -11736,6 +11730,7 @@ Thickness
 This convar is being accessed prior to ConVar_Register being called
 ThreadInMainThread
 ThreadInMainThread()
+Threshold to warn about when rendering particles.
 Thursday
 Time scale
 Time varying force
@@ -11798,6 +11793,7 @@ UNKNOWN
 UNRECOGNIZED
 UNUSED
 USATAUH
+USATAVAWH
 USATAVH
 USATAWH
 USATH
@@ -11813,9 +11809,9 @@ USVAVH
 USVWATAUAVAWH
 USVWATAUAVH
 USVWATAUH
+USVWATAUI
 USVWATAVAWH
 USVWATAVH
-USVWATAWH
 USVWAUAVAWH
 USVWAUH
 USVWAVAWH
@@ -11866,7 +11862,6 @@ UWATAUAVH
 UWATAUAWH
 UWATAVAWH
 UWAUAVAWH
-UWAUAVAWI
 UWAUAVH
 UWAUAVI
 UWAUAWH
@@ -11947,7 +11942,6 @@ UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
 UtlTokenizer_UnqescapeOrUnquoteString
-V1OS"
 V6'?C
 V6E>`"(5
 VATAUH
@@ -12055,7 +12049,6 @@ V_fabsf((pOutBarns[ 0 ].OuterAngle()) - (flConeOuterAngleInDegrees)) <= (0.1f)
 V_floorf( DotProduct( vecFwd, vecUp ) ) < 0.1f
 V_floorf( DotProduct( vecLeft, vecUp ) ) < 0.1f
 V_fmodd
-V_fmodf
 V_isempty( pClass )
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsResourceName()
 V_isempty( pLoadFromValue->GetValueString() ) || pLoadFromValue->IsSoundeventName()
@@ -12118,6 +12111,7 @@ Visualization Ring
 Visualization Sphere Solid
 Visualization Sphere Wireframe
 Vrad3_001
+W	V_stricmp_fast
 WARNING: Accessing schema binding '%s' before it was registered - if this class is in a lib try REFERENCE_LIB_SCHEMA_INFORMATION, otherwise this code is running too early.
 WARNING: Discarding existing in-progress particle performance request.
 WARNING: Particle system '%s' was not precached correctly. Performing blocking load....
@@ -12159,7 +12153,6 @@ Write normal instead of rotation
 WriteConsoleW
 WriteFile
 WriteKV3MessageToVCon
-WriteOutstores_Slowpath
 X @8u
 X Axis
 X D8e
@@ -12176,16 +12169,14 @@ X axis scaling scalar field
 X offset of center point
 X to the Y power
 X!t5~
-X%&;+
-X%9p]
-X%j1+
-X5'~U
-X50(3
-X5;gM
-X=0U3
-X=>3]
-X=BQ]
-X=N\]
+X55B3
+X5OU3
+X5o	B
+X="v]
+X=2M]
+X=MX]
+X=V	B
+X=v	B
 X?+5[>,
 XA]A\_[
 XA^A\][
@@ -12229,45 +12220,44 @@ Y Dimension Count
 Y Dimension Spacing
 Y axis scaling scalar field
 Y offset of center point
-Y%$y'
-Y%=.R
-Y%Ze'
-Y%\M'
-Y%^+(
-Y%e/'
-Y-@H$
-Y-L(,
-Y-Yb'
-Y-YfT
-Y-\((
-Y-`{'
-Y-~7'
+Y% p$
+Y%4t'
+Y%M2R
+Y%u*'
+Y%z`'
+Y%|H'
+Y%~&(
+Y-	)(
+Y-`C$
+Y-i]'
+Y-l#(
+Y-pv'
 Y4$E3
-Y5&r$
-Y5+x(
-Y5Du?
-Y5FC3
-Y5JF(
-Y5Oi(
-Y5QV3
-Y5_Z(
+Y5#N3
+Y52sM
+Y56m$
+Y5An:
+Y5Ks(
+Y5R{"
+Y5jA(
+Y5od(
 Y9"SD
-Y=8 #
-Y=iM-
-Y=jP3
-Y=xsA
+Y= Y3
+Y=EV3
+Y=XzA
 Y>kX>M
 YD$0A
 YD$0E
 YD$0f
+YD$4H
 YD$@D
 YD$@f
-YD$DH
-YD$HH
 YD$HL
+YD$LH
+YD$PL
+YD$XL
 YD$`D
 YL$0A
-YL$8H
 YL$@A
 YL$@D
 YL$PE
@@ -12278,27 +12268,27 @@ YT$0A
 YT$0E
 YT$0H
 YT$@A
-YT$HH
 YXfff
 Y\$03
-Y\$<Hc
+Y\$DL
+Y\$HH
 Y\$`H
 Y\$pA
 Y\$pD
-Yd$4H
 Yd$PD
 Yd$`f
 Yield, Resume=%s
 Yl$ A
 Yl$ B
 Yl$0A
-Yl$HH
 Yl$pA
 You must install a IKV3TransferInterface_ResourceLoad on your context in order to unserialize a non-empty resource handle
 Yt$0I
 Yt$PD
+Yt$PH
 Y|$0A
-Y|$4H
+Y|$8Hc
+Y|$<H
 Y|$@B
 Y|$@H
 Y|$DA
@@ -12381,7 +12371,6 @@ Zod(^?
 \$4z u
 \$5L3
 \$8A_A]_^]
-\$8D;
 \$8I;
 \$8L+
 \$@E3
@@ -12402,6 +12391,7 @@ Zod(^?
 \$Hu_Kc
 \$P9s
 \$PD9
+\$PE3
 \$PI+
 \$PIcD$HHk
 \$PM;
@@ -12427,7 +12417,7 @@ Zod(^?
 \$pfD
 \$xD;T$Dt
 \$xHc
-\=A	/
+\$|E;
 \D$ A
 \D$ H
 \D$ fD
@@ -12445,24 +12435,25 @@ Zod(^?
 \L$PD
 \T$TD
 \T$xA
-\\$xE
+\\$lE
 \d$@A
 \d$HH
 \d$PA
 \l$HH
 \l$lH
 \l6DH
-\m|Hi
+\mlHi
 \t$pD
 \t3D8T$(t
 ])6M>&
-],tIH
-],tJH
-]5m~U
-]=arM
+]8tIH
+]8tJH
+]=-.4
+]=-<4
 ]>)2X
 ]J<0"0i3
 ]Lu*E;|$
+]ptJH
 ^<V7w
 ^Fdt[
 ^RfN>
@@ -12517,6 +12508,7 @@ _procedural_particle_snapshot.vsnap
 `A^_^
 `A^_^][
 `A_A\_
+`A_A^A\[]
 `A_A^A\_^[]
 `A_A^A\_^][
 `A_A^A]A\_
@@ -12575,7 +12567,6 @@ _procedural_particle_snapshot.vsnap
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
-a	V_tanf
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 absolute value
@@ -12695,7 +12686,6 @@ b?^Cy
 bAllocationCanFit
 bCanUseInput
 bFailOnCancel
-bLegalTypeChange
 bValue
 bad address
 bad array new length
@@ -12777,6 +12767,7 @@ char16_t
 char32_t
 char8
 char8_t
+check full bbox only
 child group ID
 child group ID to affect
 chkSequenceCount == m_iSequenceTuplesCount
@@ -12888,6 +12879,7 @@ cpInfo.HasChainedToBaseClass()
 creation control point number
 creation_time
 cross device link
+cube root of volume
 cube width
 cull control point
 cull cost
@@ -12918,6 +12910,7 @@ cylinder outer output
 cylinder outer radius
 cylindrical bottom transform
 cylindrical top transform
+d	V_tanf
 d$ D!
 d$ D;
 d$ UAVAWH
@@ -12942,7 +12935,9 @@ d$XA;
 d$XD;f
 d$XE3
 d$XIc
+d$Xfff
 d$`@8
+d$`E9g
 d$`fD
 d$`tLA
 d$`tU3
@@ -13341,7 +13336,6 @@ i < ( 1 << HandleBits )
 i >= 0 && i < capacity
 i >= 0 && j >= 0 && i < ysizeP1 && j < zsizeP1
 i u!H
-i-0|Y
 iH9i@~iH
 iL97u
 identifier removed
@@ -13356,6 +13350,7 @@ implicit vertices
 impulse type
 inappropriate io control operation
 include default contents trace hulls
+include particle radius
 include water
 incompatible version
 incorrect data check
@@ -13547,7 +13542,8 @@ l$HD9l$X|QH
 l$HD;>
 l$HH9
 l$HHi
-l$Hvb
+l$HLc
+l$HvZ
 l$PA;
 l$PE3
 l$PH9
@@ -13576,6 +13572,7 @@ l$lD;f
 l$pD;vt
 l$pE3
 l$ptWH
+l$xtGA
 l2|X/gGe
 l6qnk
 l?$b*?%]
@@ -13588,6 +13585,7 @@ length random exponent
 lerp time
 lerp type
 lexer->mTokens(): Error: No lexer rules were added to the lexer yet!
+lhM`uqd
 lhs.GetNumStops() == 0
 lifespan
 lifetime
@@ -13931,6 +13929,7 @@ m_bApplyMinForce
 m_bAttachment
 m_bAutoUpdateBBox
 m_bAvoidSingularity
+m_bBBoxOnly
 m_bBackwards
 m_bBakedTwoSided
 m_bBegin
@@ -13955,6 +13954,7 @@ m_bClampV
 m_bClosedLoop
 m_bCopyAlpha
 m_bCopyColor
+m_bCubeRoot
 m_bCullInside
 m_bCullOnMiss
 m_bCullOutside
@@ -14031,6 +14031,7 @@ m_bIgnoreDt
 m_bIgnoreNormal
 m_bIgnoreRadius
 m_bIncludeChildren
+m_bIncludeRadii
 m_bIncludeShotHull
 m_bIncludeWater
 m_bInfiniteBounds
@@ -14137,6 +14138,7 @@ m_bRenderDiffuse
 m_bRenderSpecular
 m_bReplaceTextureWithGradient
 m_bResetAnimOnStop
+m_bRespectExclusionVolumes
 m_bReverse
 m_bReverseOrder
 m_bReverseZBuffering
@@ -15112,6 +15114,7 @@ m_nNumChildrenToEnable
 m_nNumControlPoints
 m_nNumJobsDone == m_nNumBlocks * m_nNumPasses
 m_nNumPointsAlongPath
+m_nNumVertices == nNumVertices
 m_nOffsetCP
 m_nOpEndCapState
 m_nOpTimeOffsetSeed
@@ -15736,7 +15739,7 @@ nIndex >= 0 && nIndex < m_nNumArgs
 nIndex >= 0 && nIndex < nMemberCount
 nIndexInDependencyCountersTable < m_nNumBlocks * m_nNumPasses
 nIndexInDependencyCountersTable >= 0
-nL$0Hc
+nL$4Hc
 nL$`H
 nLastValidEntryIdx
 nMaxIndexCount > 0
@@ -15753,6 +15756,7 @@ nNumOutputs == 1
 nNumParticlesToKill <= m_nActiveParticles
 nNumPasses == 1
 nNumVectors
+nNumVertices >= 0
 nObjects <= m_nNumAllocatedObjects
 nOffset + nSizeBytes <= nSnapBlockLen
 nOffset >= 0
@@ -15878,28 +15882,30 @@ num to emit
 num_particles
 o L9s t
 o$$fD
-o%C=G
-o%]JV
-o%d8G
-o%s,G
-o%v0G
-o%x9G
+o%4YG
+o%CMG
+o%FQG
+o%HZG
+o%wKG
 o(L9d$Ht
 o(L9s(t
-o-%T$
-o->0G
-o-D9G
-o-y/#
+o-*P$
+o-EO$
+o-YZG
+o-oKG
+o-rMG
+o-{_V
 o0L9s0t
-o560G
-o5<NV
-o5L9G
-o5P3V
-o=.0G
-o=5+G
-o=:7G
-o==$G
-o=T9G
+o5nZG
+o=$ZG
+o=(!B
+o=+=G
+o=R-G
+o=h@G
+o=q-G
+o=s.G
+o=v8G
+o=w_V
 oD$ f
 oD$@A
 oD$@H
@@ -16034,6 +16040,7 @@ output starting control point field 0-2 X/Y/Z
 output starting control point number
 output value at max distance
 output value at min distance
+ovY5-
 overall size multiplier (-1 count based distribution)
 overbright factor
 override CP (X/Y/Z *= radius/density/speed)
@@ -16125,7 +16132,6 @@ pKV3 && ( pKV3->GetBasicType() == KV3_BTYPE_TABLE || pKV3->GetBasicType() == KV3
 pLoadFromMember
 pLoadFromValue != nullptr
 pLoadFromValue->IsNull()
-pMemory[i] == 0
 pMessage
 pMeta
 pModelRef
@@ -16290,6 +16296,7 @@ pp9p$t
 pre-simulation time
 prepare for rigid lock
 preserve initial Z-offset relative to cp
+prevent spawning in exclusion volumes
 previous position sacale
 previous position scale
 private: 
@@ -16355,6 +16362,7 @@ r_particle_newinput
 r_particle_render_refreshes_sleep_timer
 r_particle_render_test
 r_particle_timescale
+r_particle_warn_threshold_ms
 r_physics_particle_op_spawn_scale
 r_threaded_particles
 radius
@@ -16395,7 +16403,6 @@ rate scale
 ray trace environment cp
 ray trace environment name
 re-randomize rate (-1 for once only)
-re@S5
 read attribute from neighboring particle
 read field
 read only file system
@@ -16720,7 +16727,6 @@ t >= 0.0f && t <= m_nCPCount
 t D8h
 t fff
 t!HcA
-t#L9#t
 t$ ATAVAWH
 t$ AVH
 t$ AVL
@@ -16814,7 +16820,6 @@ t$XH9
 t$XHk
 t$XI9
 t$XI;
-t$Xff
 t$`A;
 t$`D;r
 t$`E3
@@ -16860,7 +16865,6 @@ t=E9l$
 t>vTU>
 t?HcS
 tCfff
-tD9%{CE
 tDfff
 tEHcR
 tEL9:t@
@@ -16978,23 +16982,21 @@ triangleData.pVertex[0] != nullptr && triangleData.pVertex[1] != nullptr && tria
 tris.Count()=%?
 try_get_function
 try_get_module
-ttHc}
 tuHcL$8L
 tupleOffset < element.count
-twHc}
 twIcF
 twist axis
+tx9-D
 tyHc}
 type != MATERIAL2_POINTS
 type < ( 1 << TYPE_BIT_COUNT )
 type.CanConvertTo( m_pStaticSignature->GetArg( nIndex ).m_Type, pInScope )
-t{D9-~.\
+t{D9-
 t|D8}`tvH
-t|D9%F(\
-t|D9=L
-t~95"
+t|D9%
+t|D9=<
 t~D8u
-t~D9%
+t~D9=
 u	D87
 u	D;(
 u L9u
@@ -17026,7 +17028,6 @@ uint16
 uint32
 uint64
 uint8
-uj9:L
 uj9~x
 uk9~x
 unFlags
@@ -17127,6 +17128,7 @@ visibility minimum
 visibility radius
 vmatH
 vmatL
+vmdlH
 vmdlL
 void 
 volatile
@@ -17290,9 +17292,9 @@ zeroth_moment
 |$0tjL
 |$0uE
 |$0~ H
-|$49~
-|$4;~
-|$8D9-x
+|$89~
+|$8;~
+|$8D9-
 |$8D;
 |$8E+
 |$8E2
@@ -17376,7 +17378,6 @@ zeroth_moment
 |)L9c
 |?@8l
 |Lu?c
-|RK(f
 |`A;N
 |aA;N
 |b=})>

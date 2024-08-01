@@ -39,6 +39,8 @@
 		"$TanLight" = "#D3B874"
 		"$TanLight_Hover" = "#d5bc7b"
 		"$Beige" = "#e0d7af"
+		"$YellowMid" = "#d99200"
+		"$YellowMid_Hover" = "#f6a600"
 		"$YellowBright" = "#FFB800"
 		"$YellowBright_Hover" = "#ffbc0d"
 		"$YellowLight" = "#DDB85D"
@@ -64,7 +66,6 @@
 		"$data_type_bool" = "$RedLight"
 		"$data_type_other" = "$TealBright"
 		"$data_type_flow" = "$GreyLight"
-		"$data_type_flow_yield" = "$TanLight"
 		"$text" = "#ffffff"
 		"$node_base" = "#373737"
 		"$node_base_hover" = "#474747"
@@ -91,7 +92,7 @@
 		LayoutChildren = "VBOX"
 		HAlign = "STRETCH"
 		MinSizeX = 200
-		MinSizeY = 38
+		MinSizeY = 39
 		"&::after" = 
 		{
 			PaintLayer = "SELECTION_OVERLAY"
@@ -159,10 +160,6 @@
 	}
 	".BaseFlow:hover" = 
 	{
-	}
-	.BaseFlow.IsMethod = 
-	{
-		Background_Color = "#387224"
 	}
 	.BaseFlow.Skipped = 
 	{
@@ -284,7 +281,7 @@
 			HAlign = "STRETCH"
 			LayoutChildren = "VBOX"
 			LayoutGrowFactor = 1
-			Margin = "1px 1px 1px 1px"
+			Margin = "2px 0px 1px 0px"
 			MinSizeX = 160
 			MinSizeY = 20
 			SnapSizeX = 40
@@ -297,24 +294,41 @@
 				PaintLayer = "GROUP_BACKGROUND"
 				VAlign = "TOP"
 				HAlign = "STRETCH"
-				MinSizeY = 40
-				Margin_Top = 36
+				MinSizeY = 20
+				Margin_Top = 17
 				Positioning = "ON_PARENT_BORDER"
 				BorderRadius_TopLeft = "8px"
 				BorderRadius_TopRight = "8px"
+			}
+			.HeaderText = 
+			{
+				Padding_Left = 12
+			}
+			.PortLabel = 
+			{
+				Margin_Left = 12
 			}
 		}
 		"&.Value_VarReference .BaseValueInnerContainer, &.ValueExpression .BaseValueInnerContainer" = 
 		{
 			BorderRadius_TopLeft = "19px"
 			BorderRadius_TopRight = "19px"
-			Margin = "1px"
 		}
-		"&.Value_VarReference .BaseValueInnerContainer::before, &.ValueExpression::before" = 
+		"&.HasInParamPorts .BaseValueInnerContainer" = 
+		{
+			BorderRadius_TopLeft = "7px"
+			BorderRadius_TopRight = "7px"
+		}
+		"&.Value_VarReference .BaseValueInnerContainer::before, &.ValueExpression .BaseValueInnerContainer::before" = 
 		{
 			BorderRadius = "19px"
-			MinSizeY = 38
-			Margin_Top = 34
+			MinSizeY = 36
+			Margin_Top = 33
+		}
+		"&.HasInParamPorts .BaseValueInnerContainer::before" = 
+		{
+			BorderRadius_TopLeft = "8px"
+			BorderRadius_TopRight = "8px"
 		}
 		.FlowRail = 
 		{
@@ -332,11 +346,16 @@
 			BorderRadius_TopRight = "7px"
 			BorderRadius_BottomLeft = "19px"
 			BorderRadius_BottomRight = "19px"
-			Margin = "0px 2px 2px 2px"
+			Margin_Top = "2px"
 			"&.Value_VarReference, &.ValueExpression" = 
 			{
 				BorderRadius_TopLeft = "19px"
 				BorderRadius_TopRight = "19px"
+			}
+			"&.HasInParamPorts" = 
+			{
+				BorderRadius_TopLeft = "7px"
+				BorderRadius_TopRight = "7px"
 			}
 		}
 		"&:selected" = 
@@ -455,6 +474,10 @@
 	{
 		MinSizeX = 80
 		LayoutChildren = "HBOX"
+		".BaseValueInnerContainer .HeaderText" = 
+		{
+			Padding_Left = "6px"
+		}
 	}
 	.ValueLiteral = 
 	{
@@ -543,7 +566,7 @@
 		{
 			.NodeHeader = 
 			{
-				MinSizeY = 38
+				MinSizeY = 39
 			}
 			.HeaderTextContainer = 
 			{
@@ -568,6 +591,7 @@
 	}
 	.RequirementsIconInsideHeader = 
 	{
+		InteractionPriority = "BASE"
 		FixedSizeX = 18
 		FixedSizeY = 18
 		Margin_Right = 4
@@ -591,6 +615,7 @@
 	}
 	.RequirementsIconInRequirementsList = 
 	{
+		InteractionPriority = "BASE"
 		FixedSizeX = 18
 		FixedSizeY = 18
 		Margin_Right = 0
@@ -664,6 +689,8 @@
 		VAlign = "STRETCH"
 		LayoutGrowFactor = 1
 		TextClipMode = "ELIDE_TEXT_END"
+		Padding_Left = 6
+		Padding_Right = 6
 	}
 	".InflowNode .HeaderText" = 
 	{
@@ -701,15 +728,15 @@
 	}
 	.NodeRow = 
 	{
-		MinSizeY = 39
+		MinSizeY = 40
 	}
 	".BaseValue .NodeRow:first-child" = 
 	{
-		MinSizeY = 39
+		MinSizeY = 38
 	}
 	".BaseValue .NodeRow:last-child" = 
 	{
-		MinSizeY = 39
+		MinSizeY = 40
 	}
 	".BaseValue .NodeRow:only-child" = 
 	{
@@ -719,8 +746,7 @@
 	{
 		".NodeRow:first-child" = 
 		{
-			FixedSizeY = 39
-			MinSizeY = 39
+			MinSizeY = 38
 			"& .FlowRail" = 
 			{
 				FixedSizeY = 39
@@ -728,8 +754,7 @@
 		}
 		".NodeRow:last-child" = 
 		{
-			FixedSizeY = 39
-			MinSizeY = 39
+			MinSizeY = 38
 			"& .FlowRail" = 
 			{
 				FixedSizeY = 39
@@ -737,11 +762,10 @@
 		}
 		".NodeRow:only-child" = 
 		{
-			FixedSizeY = 38
 			MinSizeY = 38
 			"& .FlowRail" = 
 			{
-				FixedSizeY = 38
+				FixedSizeY = 39
 			}
 		}
 		".NodeRow::after" = 
@@ -778,10 +802,10 @@
 	{
 		".NodeRows .NodeRow" = 
 		{
-			MinSizeY = 40
+			MinSizeY = 39
 			"& .FlowRail" = 
 			{
-				FixedSizeY = 40
+				FixedSizeY = 39
 			}
 		}
 	}
@@ -1013,7 +1037,7 @@
 		"&.InflowPort" = 
 		{
 			LayoutGrowFactor = 1
-			Margin_Right = 28
+			Margin_Right = 30
 			"&:before" = 
 			{
 				FixedSizeY = 12
@@ -1075,8 +1099,9 @@
 		}
 		"&.OutflowPort" = 
 		{
+			LayoutChildren = "DEFAULT"
 			LayoutGrowFactor = 1
-			"&:last-child" = 
+			"&:first-child" = 
 			{
 				LayoutGrowFactor = 0
 			}
@@ -1089,12 +1114,14 @@
 				Border = "10px SolidLine $group"
 				Background_Color = "$group"
 				PaintLayer = "CONNECTIONS_BACKGROUND"
+				HAlign = "RIGHT"
 			}
 			.PortPlug = 
 			{
 				FixedSizeX = 12
 				FixedSizeY = 12
 				BorderRadius = "12px"
+				Border = "3px Outside"
 				"&:hover" = 
 				{
 					Background_Color = 
@@ -1157,12 +1184,16 @@
 		}
 		"&.OutparamPort" = 
 		{
+			.PortPlugCtn = 
+			{
+				Margin_Right = 8
+			}
 			.PortPlug = 
 			{
 				FixedSizeX = 12
 				FixedSizeY = 12
 				Margin = "2px"
-				Padding = "2px"
+				Padding = "4px"
 				Background_Color = 
 				[
 					0,
@@ -1175,6 +1206,17 @@
 		"&.ParamsOnLeft .PortLabel" = 
 		{
 			TextHAlign = "LEFT"
+		}
+		"&.ParamsOnLeft" = 
+		{
+			.PortPlugCtn = 
+			{
+				Margin_Right = 0
+			}
+			.PortPlug = 
+			{
+				Padding = "2px"
+			}
 		}
 		"&.ValueType_Bool" = 
 		{
@@ -1460,19 +1502,224 @@
 			VAlign = "TOP"
 		}
 	}
-	.Step_Timeline = 
+	.HasSpecialMultipleOutflowsSection = 
 	{
 		.NodeRow = 
 		{
 			LayoutChildren = "HBOX"
 			HAlign = "STRETCH"
 			LayoutGrowFactor = 1
+			"&::after" = 
+			{
+				Visibility = "HIDDEN"
+			}
 		}
-		.ClientPaintArea = 
+		.SpecialMultipleOutflowsSection = 
 		{
 			HAlign = "STRETCH"
 			VAlign = "STRETCH"
 			LayoutGrowFactor = 1
+			BorderRadius_TopLeft = 5
+			BorderRadius_BottomRight = 5
+			LayoutChildren = "DEFAULT"
+			.MultipleOutflowsSectionBar = 
+			{
+				BorderRadius = "3px"
+				FixedSizeY = 6
+				HAlign = "STRETCH"
+				PaintLayer = "NODES"
+				Margin_Left = 10
+				Margin_Right = 10
+			}
+		}
+		"&.Outflow_PlayVCD, &.Outflow_ScriptedSequence" = 
+		{
+			.SpecialMultipleOutflowsSection = 
+			{
+				BorderRadius_BottomRight = 0
+			}
+		}
+		.SpecialMultipleOutflowsSectionPortChild = 
+		{
+			LayoutChildren = "VBOX"
+			HAlign = "STRETCH"
+			VALIGN = "TOP"
+			Positioning = "ON_PARENT_BORDER"
+			.PortEvent = 
+			{
+				FixedSizeY = 6
+				HAlign = "STRETCH"
+				"&:after" = 
+				{
+					FixedSizeX = 5
+					FixedSizeY = 5
+					Margin_Left = -7.500000
+					PaintLayer = "NODES"
+					Positioning = "OUTSIDE_PARENT"
+					HAlign = "RIGHT"
+					VAlign = "BOTTOM"
+				}
+			}
+		}
+		".OutflowPort:nth-child(n+2)" = 
+		{
+			Margin_Top = -20
+		}
+	}
+	.WaitForChildOutflows = 
+	{
+		InteractionPriority = "BASE"
+		Positioning = "INSIDE_PARENT"
+		HAlign = "RIGHT"
+		VALIGN = "BOTTOM"
+		FixedSizeX = 25
+		FixedSizeY = 25
+		Margin_Right = 10
+		Margin_Bottom = 8
+		PaintLayer = "NODES"
+		BackgroundImage = "tools/images/pulse_editor/inflow_wait.png"
+	}
+	".Outflow_PlayVCD, .Outflow_ScriptedSequence" = 
+	{
+		.SpecialMultipleOutflowsSection = 
+		{
+			BorderRadius_TopRight = 5
+			Margin_Right = 40
+		}
+		".OutflowPort:first-child, .OutflowPort:last-child" = 
+		{
+			Margin_Top = "unset"
+			".PortEvent:after" = 
+			{
+				Visibility = "COLLAPSE"
+			}
+		}
+	}
+	".Outflow_Cycle, .Outflow_Simultaneous, .Outflow_IntSwitch, .Outflow_StringSwitch" = 
+	{
+		.OutflowPort = 
+		{
+			Margin_Top = -20
+		}
+		".OutflowPort:first-child" = 
+		{
+			Margin_Left = 55
+		}
+	}
+	.Step_FireCursors = 
+	{
+		".OutflowPort:first-child" = 
+		{
+			".PortEvent:after" = 
+			{
+				Visibility = "COLLAPSE"
+			}
+		}
+		"&.WaitForCompletion" = 
+		{
+			.OutflowPortsLayout = 
+			{
+				Margin_Right = 40
+			}
+			.SpecialMultipleOutflowsSection = 
+			{
+				.MultipleOutflowsSectionBar = 
+				{
+					Margin_Right = 50
+				}
+				"&:after" = 
+				{
+					Preset = "WaitForChildOutflows"
+				}
+			}
+		}
+	}
+	.Step_Timeline = 
+	{
+		.MultipleOutflowsSectionBar = 
+		{
+			Visibility = "COLLAPSE"
+		}
+		.TimelineEvent = 
+		{
+			LayoutChildren = "VBOX"
+			HAlign = "STRETCH"
+			VALIGN = "TOP"
+			Positioning = "ON_PARENT_BORDER"
+			Margin_Bottom = 15
+			.TimelineEventLabel = 
+			{
+				InteractionPriority = "BASE"
+				MinSizeY = 15
+				Font = "$BaseFontSmall"
+				Foreground_Color = 
+				[
+					196,
+					196,
+					196,
+				]
+				TextHAlign = "CENTER"
+				PaintLayer = "NODES"
+				HAlign = "RIGHT"
+				VAlign = "TOP"
+			}
+			.TimelineEventBar = 
+			{
+				FixedSizeY = 6
+				HAlign = "STRETCH"
+				Background_Color = "$Tan"
+				PaintLayer = "NODES"
+				"&:after" = 
+				{
+					FixedSizeX = 5
+					FixedSizeY = 5
+					Margin_Left = -7.500000
+					Background_Color = "$Tan"
+					PaintLayer = "NODES"
+					Positioning = "OUTSIDE_PARENT"
+					HAlign = "RIGHT"
+					VAlign = "BOTTOM"
+				}
+			}
+		}
+		".OutflowPort:nth-child(2) .TimelineEventBar" = 
+		{
+			Margin_Left = 20
+			BorderRadius_TopLeft = 3
+			BorderRadius_BottomLeft = 3
+		}
+		".OutflowPort:last-child .TimelineEventBar" = 
+		{
+			Margin_Right = -5
+			BorderRadius_TopRight = 3
+			BorderRadius_BottomRight = 3
+			"&:after" = 
+			{
+				Margin_Left = -12.500000
+			}
+		}
+		"&.EditTimeFromPrevious .TimelineEventBar" = 
+		{
+			Margin_Left = 5
+			Margin_Right = 2.500000
+			"&:after" = 
+			{
+				Margin_Left = -5
+			}
+		}
+		"&.TimelineWaitForChildOutflows " = 
+		{
+			.OutflowPortsLayout = 
+			{
+				Margin_Right = 40
+			}
+			.SpecialMultipleOutflowsSection = 
+			{
+				"&:after" = 
+				{
+					Preset = "WaitForChildOutflows"
+				}
+			}
 		}
 	}
 	.CPulseCell_Inflow_Wait = 
@@ -1500,6 +1747,46 @@
 		".Port .PortLabel" = 
 		{
 			HAlign = "STRETCH"
+		}
+	}
+	.Outflow_If = 
+	{
+		.SpecialMultipleOutflowsSection = 
+		{
+			LayoutChildren = "HBOX"
+			"&:before" = 
+			{
+				Preset = "Outflow_If_Else"
+			}
+		}
+		.OutflowIfElse = 
+		{
+			HAlign = "LEFT"
+			Margin_Left = 8
+			.OutflowIfElseLabel = 
+			{
+				Font = "$BaseFont"
+			}
+		}
+		.MultipleOutflowsSectionBar = 
+		{
+			LayoutGrowFactor = 1
+		}
+		.OutflowPortsLayout = 
+		{
+			.OutflowPort = 
+			{
+				.SpecialMultipleOutflowsSectionPortChild = 
+				{
+					.PortEvent = 
+					{
+						"&::after" = 
+						{
+							Visibility = "HIDDEN"
+						}
+					}
+				}
+			}
 		}
 	}
 	.DebuggerLive = 
@@ -1563,6 +1850,27 @@
 					}
 				}
 			}
+			"&.BaseFlow" = 
+			{
+				"&.CPulseCell_Inflow_Wait" = 
+				{
+					".PortLabel, .HeaderText" = 
+					{
+						Foreground_Color = "$colorBase"
+					}
+					.ValueType_Number = 
+					{
+						.PortValueLabel = 
+						{
+							Foreground_Color = "$colorBase"
+						}
+					}
+				}
+				.HeaderIcon = 
+				{
+					ImageTint = "$iconColor"
+				}
+			}
 			.FlowIcon = 
 			{
 				ImageTint = "$flowColor"
@@ -1601,17 +1909,18 @@
 			}
 			.HeaderText = 
 			{
-				Padding_Left = 6
-				Padding_Right = 6
 				Font = "$typeFace"
+				Foreground_Color = "$colorBase"
 				"&.SubHeaderText" = 
 				{
 					Font = "Dinish,10,-1,5,50,0,0,0,0,0,Italic"
+					Foreground_Color = "$colorBase"
 				}
 			}
 			"&.ValueWithoutPortLabels .HeaderText" = 
 			{
 				Font = "Barlow,-1,36,18,40,0,0,0,0,0,Regular"
+				Foreground_Color = "$colorBase"
 				HAlign = "CENTER"
 				VAlign = "CENTER"
 			}
@@ -1645,16 +1954,27 @@
 					Border_Color = "$PortBorderColor"
 					Background_Color = "$PortBackgroundColor"
 				}
+				.PortlabelContainer = 
+				{
+					.PortLabel = 
+					{
+						Foreground_Color = "$colorBase"
+					}
+				}
 				"&.InflowPort" = 
 				{
 					.PortPlug = 
 					{
 						Background_Color = "$InFlowOutFlowPortBackgroundColor"
 					}
-					"&:nth-child(n+2) .PortPlug" = 
+					"&:nth-child(n+2)" = 
 					{
-						Background_Color = "$flowColor"
-						Border_Color = "$bgColorBase"
+						Foreground_Color = "$InFlowOutFlowPortBackgroundColorAlt"
+						.PortPlug = 
+						{
+							Background_Color = "$InFlowOutFlowPortBackgroundColorAlt"
+							Border_Color = "$bgColorBase"
+						}
 					}
 				}
 				"&.OutflowPort" = 
@@ -1702,6 +2022,67 @@
 					{
 						Foreground_Color = "$data_type_other"
 						ImageTint = "$data_type_other"
+					}
+				}
+			}
+			"&.IsControlFlowNode .Port" = 
+			{
+				.PortValueLabel = 
+				{
+					Foreground_Color = "$colorBase"
+				}
+			}
+			"&.HasSpecialMultipleOutflowsSection" = 
+			{
+				.SpecialMultipleOutflowsSection = 
+				{
+					Background_Color = "$bgColorDark"
+					.MultipleOutflowsSectionBar = 
+					{
+						Background_Color = "$flowColor"
+					}
+				}
+				.SpecialMultipleOutflowsSectionPortChild = 
+				{
+					".PortEvent::after" = 
+					{
+						Background_Color = "$flowColor"
+					}
+				}
+				"&.WaitForCompletion .OutflowPort.Port:nth-child(n+2), .OutflowPort.WaitForCompletion" = 
+				{
+					Foreground_Color = "$YellowBright"
+					.PortPlug = 
+					{
+						Background_Color = "$YellowBright"
+					}
+				}
+				"&.FireAndForget .OutflowPort.Port:nth-child(n+2), .OutflowPort.FireAndForget" = 
+				{
+					Foreground_Color = "$GreenBright"
+					.PortPlug = 
+					{
+						Background_Color = "$GreenBright"
+					}
+				}
+				.OutflowIfElse = 
+				{
+					.OutflowIfElseLabel = 
+					{
+						Foreground_Color = "$colorBase"
+					}
+				}
+				.OutflowPort = 
+				{
+					.PortPlug = 
+					{
+						Border_Color = "$GreyDark"
+					}
+					"&.PauseForPreviousEvents .PortPlug" = 
+					{
+						BackgroundImage = "tools/images/pulse_editor/timeline_event_wait_lg.png"
+						Background_Color = "$GreyDark"
+						ImageTint = "$YellowBright"
 					}
 				}
 			}
@@ -1800,12 +2181,15 @@
 	{
 		"$bgColorBase" = "$GreyMid"
 		"$bgColorHover" = "$GreyMid_Hover"
+		"$bgColorDark" = "$GreyDark"
+		"$bgColorDarkHover" = "$GreyDark_Hover"
 		"$paramColorBase" = "$GreyMid"
 		"$paramColorHover" = "$GreyMid_Hover"
 		"$flowColor" = "$GreyLight"
 		"$flowColorAccessory" = "$White"
 		"$dragColorBase" = "$GreyLight"
 		"$dragColorHover" = "$White"
+		"$iconColor" = "$White"
 		"$colorBase" = "$White"
 		"$colorHover" = "$White"
 		"$borderColor" = "$GreyDark"
@@ -1817,18 +2201,22 @@
 		"$PortBackgroundColor" = "$Black"
 		"$PortBorderColor" = "$GreyDark"
 		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
+		"$InFlowOutFlowPortBackgroundColorAlt" = "$GreyLight"
 		"$typeFace" = "$BaseFont"
 	}
 	"@variable-context node_theme_yielding" = 
 	{
 		"$bgColorBase" = "$Mustard"
 		"$bgColorHover" = "$Mustard_Hover"
+		"$bgColorDark" = "$BrownLeather"
+		"$bgColorDarkHover" = "$BrownLeather_Hover"
 		"$paramColorBase" = "$Mustard"
 		"$paramColorHover" = "$Mustard_Hover"
 		"$flowColor" = "$TanLight"
 		"$flowColorAccessory" = "$YellowBright"
 		"$dragColorBase" = "$TanLight"
 		"$dragColorHover" = "$White"
+		"$iconColor" = "$TanLight"
 		"$colorBase" = "$White"
 		"$colorHover" = "$White"
 		"$borderColor" = "$GreyDark"
@@ -1840,18 +2228,22 @@
 		"$PortBackgroundColor" = "$Black"
 		"$PortBorderColor" = "$GreyDark"
 		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
+		"$InFlowOutFlowPortBackgroundColorAlt" = "$YellowLight"
 		"$typeFace" = "$BaseFont"
 	}
 	"@variable-context node_theme_value" = 
 	{
 		"$bgColorBase" = "$TealMid"
 		"$bgColorHover" = "$TealMid_Hover"
+		"$bgColorDark" = "$TealDark"
+		"$bgColorDarkHover" = "$TealDark_Hover"
 		"$paramColorBase" = "$TealDark"
 		"$paramColorHover" = "$TealDark_Hover"
 		"$flowColor" = "$TealLight_Hover"
 		"$flowColorAccessory" = "$White"
 		"$dragColorBase" = "$TealLight_Hover"
 		"$dragColorHover" = "$White"
+		"$iconColor" = "$TealLight"
 		"$colorBase" = "$White"
 		"$colorHover" = "$White"
 		"$borderColor" = "$TealMid"
@@ -1863,6 +2255,7 @@
 		"$PortBackgroundColor" = "$Black"
 		"$PortBorderColor" = "$GreyDark"
 		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
+		"$InFlowOutFlowPortBackgroundColorAlt" = "$GreyLight"
 		"$portColor" = "$Black"
 		"$typeFace" = "$BaseFont"
 	}
@@ -1870,25 +2263,83 @@
 	{
 		"$bgColorBase" = "$GreenMid"
 		"$bgColorHover" = "$GreenMid_Hover"
+		"$bgColorDark" = "$BrownLeather"
+		"$bgColorDarkHover" = "$BrownLeather_Hover"
 		"$paramColorBase" = "$TealDark"
 		"$paramColorHover" = "$TealDark_Hover"
 		"$flowColor" = "$GreenLight"
 		"$flowColorAccessory" = "$GreenLight"
 		"$dragColorBase" = "$GreenLight"
 		"$dragColorHover" = "$White"
+		"$iconColor" = "$GreenBright"
 		"$colorBase" = "$White"
 		"$colorHover" = "$White"
 		"$borderColor" = "$TealMid"
-		"$DashedLineColor" = "$TealLight"
-		"$LightAccessoryColor" = "$TealLight"
-		"$LightAccessoryColorHover" = "$TealLight_Hover"
-		"$DashedLineColorHover" = "$TealLight_Hover"
+		"$DashedLineColor" = "$GreenLight"
+		"$LightAccessoryColor" = "$GreenLight"
+		"$LightAccessoryColorHover" = "$GreenLight_Hover"
+		"$DashedLineColorHover" = "$GreenLight_Hover"
+		"$borderColorSelected" = "$GreenBright"
+		"$PortBackgroundColor" = "$Black"
+		"$PortBorderColor" = "$GreyDark"
+		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
+		"$InFlowOutFlowPortBackgroundColorAlt" = "$GreenLight"
+		"$portColor" = "$Black"
+		"$typeFace" = "$BaseFontBold"
+	}
+	"@variable-context node_theme_IsControlFlowNode" = 
+	{
+		"$bgColorBase" = "$GreyBright"
+		"$bgColorHover" = "$GreyBright_Hover"
+		"$bgColorDark" = "$GreyLight"
+		"$bgColorDarkHover" = "$GreyLight_Hover"
+		"$paramColorBase" = "$GreyMid"
+		"$paramColorHover" = "$GreyMid_Hover"
+		"$flowColor" = "$Blackish"
+		"$flowColorAccessory" = "$Blackish"
+		"$dragColorBase" = "$GreyLight"
+		"$dragColorHover" = "$White"
+		"$iconColor" = "$Blackish"
+		"$colorBase" = "$Blackish"
+		"$colorHover" = "$Blackish"
+		"$borderColor" = "$GreyDark"
+		"$DashedLineColor" = "$GreyMidLight"
+		"$DashedLineColorHover" = "$GreyMidLight_Hover"
+		"$LightAccessoryColor" = "$GreyLight"
+		"$LightAccessoryColorHover" = "$GreyLight_Hover"
 		"$borderColorSelected" = "$TealBright"
 		"$PortBackgroundColor" = "$Black"
 		"$PortBorderColor" = "$GreyDark"
 		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
-		"$portColor" = "$Black"
-		"$typeFace" = "$BaseFontBold"
+		"$InFlowOutFlowPortBackgroundColorAlt" = "$GreyLight"
+		"$typeFace" = "$BaseFont"
+	}
+	"@variable-context node_theme_IsControlFlowNodeIsYielding" = 
+	{
+		"$bgColorBase" = "$YellowBright"
+		"$bgColorHover" = "$YellowBright_Hover"
+		"$bgColorDark" = "$YellowMid"
+		"$bgColorDarkHover" = "$YellowMid_Hover"
+		"$paramColorBase" = "$GreyMid"
+		"$paramColorHover" = "$GreyMid_Hover"
+		"$flowColor" = "$Blackish"
+		"$flowColorAccessory" = "$Blackish"
+		"$dragColorBase" = "$GreyLight"
+		"$dragColorHover" = "$White"
+		"$iconColor" = "$Blackish"
+		"$colorBase" = "$Blackish"
+		"$colorHover" = "$Blackish"
+		"$borderColor" = "$GreyDark"
+		"$DashedLineColor" = "$GreyMidLight"
+		"$DashedLineColorHover" = "$GreyMidLight_Hover"
+		"$LightAccessoryColor" = "$GreyLight"
+		"$LightAccessoryColorHover" = "$GreyLight_Hover"
+		"$borderColorSelected" = "$TealBright"
+		"$PortBackgroundColor" = "$Black"
+		"$PortBorderColor" = "$GreyDark"
+		"$InFlowOutFlowPortBackgroundColor" = "$GreyLight"
+		"$InFlowOutFlowPortBackgroundColorAlt" = "$GreyDark"
+		"$typeFace" = "$BaseFont"
 	}
 	"@include-mixin node_theme(default)" = 
 	{
@@ -1909,5 +2360,15 @@
 	{
 		"$className" = "IsSpontaneous"
 		"$variables" = "node_theme_IsSpontaneous"
+	}
+	"@include-mixin node_theme(IsControlFlowNode)" = 
+	{
+		"$className" = "IsControlFlowNode"
+		"$variables" = "node_theme_IsControlFlowNode"
+	}
+	"@include-mixin node_theme(IsControlFlowNodeIsYielding)" = 
+	{
+		"$className" = "IsControlFlowNode.IsYielding"
+		"$variables" = "node_theme_IsControlFlowNodeIsYielding"
 	}
 }

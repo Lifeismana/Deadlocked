@@ -16,7 +16,6 @@
 	?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 	?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncmp
 	_V_strncpy
 	g_bUpdateStringTokenDatabase
@@ -58,7 +57,6 @@
  DOUBLE_CLICK
  Hc)H
  Hc)L
- Hc+;k
  Hc2H
  Hci L
  Hcy H
@@ -83,7 +81,6 @@
 !V_isempty( pPathID )
 !V_stricmp_fast( pCommand->m_pName, pNameStr )
 !bAlreadyRegistered
-!bLooksLikeABug
 !con.m_pObject.isNull()
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
@@ -155,9 +152,10 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 %1 properties: 
 %1: %2
 %1x%2
-%Bjco
 %\?setUnderline@QFont@@QEAAX_N@Z
 %]?sibling@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
+%s - Calling a table API on '%s'%s
+%s - Calling an array API on '%s'%s
 %s allocation count overflow
 %s allocation count overflow( %llu > %llu )
 %s%s: DynamicWidget: %s
@@ -171,8 +169,6 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 ',=?k
 ( %1, %2 )
 ( %1, %2, %3, %4% )
-( GetBasicType() == KV3_BTYPE_ARRAY ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
-( GetBasicType() == KV3_BTYPE_TABLE ) || ( bAllowNull && GetBasicType() == KV3_BTYPE_NULL )
 ( bHideCursor == false ) || ( m_bCaptureHideCursor == bHideCursor )
 ( buttonCode >= 0 ) && ( buttonCode < V_ARRAYSIZE( s_nBindCodesToVirtualKeys ) )
 ( nErr == ERROR_FILE_NOT_FOUND )
@@ -182,7 +178,6 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 ( qApp != nullptr )
 (%1,%2)
 (%d,%d)
-(8KQ"N
 (A]^][
 (A^A]_^
 (A_A\_^][
@@ -203,9 +198,6 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 (f*^[0
 (intp)this % 8 == 0
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$ A
 (t$ H
 (t$PH
@@ -558,6 +550,7 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 0w0c1
 0x%p = %s '%s'
 0}0i1
+1&KpCO
 130801120000Z
 1<.	/>:
 1ClearInputHistory()
@@ -581,7 +574,7 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 220323000000Z
 220801000000Z
 230714000000Z
-240723235542Z0/
+240801161828Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -606,6 +599,7 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 3>fvw
 3mq+<
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+4{ Fb|0
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
@@ -641,7 +635,6 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 9sh~i3
 9t$Pu	
 9~h~t3
-:	V_qsort_s
 :help
 :help_ref
 :name_ref
@@ -682,6 +675,8 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 <td align='right'><font color=#%02x%02x%02x><b>[%s]</b></font></td>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
+=	V_qsort_s
+=(GC^
 =imb;D
 =rIQU
 >0<0:
@@ -2066,7 +2061,6 @@ $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 @8/tGH
 @83t*
 @84)u
-@85mE
 @8j(t
 @8k(t
 @8w$t
@@ -2238,7 +2232,6 @@ C I!.H
 C(E9,
 C0Hc	H
 C:\buildworker\citadel_rel_win64\build\_build_\tools\helpsystem\_vpc_helpsystem\default\win64\_msvc_\Retail\helpsystem.pdb
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\inputbindsystem.h
 C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qcontrols.h
 C:\buildworker\citadel_rel_win64\build\src\public\qcontrols\qdynamicwidget.h
@@ -2346,11 +2339,6 @@ COMMAND_TEXT_MODE_ICON
 COMMAND_TEXT_MODE_MENU
 COMMAND_TEXT_MODE_NONE
 CONTENTROOT
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CP4AutoEditAddFile::CP4AutoEditAddFile
 CQBindNameFilterWidget
 CQBindableCommandAction
@@ -2559,7 +2547,6 @@ CloseHandle
 Command Filter
 Command Name
 Command.%s.%s
-Construction is only allowed from the resolve function
 Context
 Converting a KV3 from one specific type (%s) to another (%s) - this is usually a bug!
 Converting a KV3 from one type (%s) to another (%s) - this is usually a bug!
@@ -2635,7 +2622,6 @@ December
 Delete Widget
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 Description
 Designable
 DigiCert Assured ID Root CA0
@@ -2676,6 +2662,7 @@ EXEC-INVALID-END: %s
 EXEC-REMOVE-END: %s
 EXHcH
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 Edit this help entry
 Element.%s
@@ -2699,7 +2686,6 @@ Expected SizePolicy to be a table or array
 Expected eg. [10,20] or 30
 ExternalNameForInternalType
 E|$xH
-F7hH.
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to register all schema data: %s
 FATAL: %s called on a pool context (no root available)
@@ -2762,7 +2748,6 @@ GetActiveWindow
 GetAsNumeric() - unsupported type '%s' (%d)!
 GetAsyncKeyState
 GetBasicType() == KV3_BTYPE_TABLE
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCommandLineA
 GetCommandLineW
@@ -2817,10 +2802,10 @@ H;Q0uqH
 H;XXs
 H;xXu5
 H;|$@
-HAIr(
 HA]A\^[
 HA]A\_[
 HH:mm:ss
+H_^][
 HammerMapLoader001
 HandleAsStringFailure
 Hc+;k
@@ -2844,7 +2829,6 @@ Hc\$
 Hc\$$
 Hc\$(
 Hc\$,
-Hc\$0M
 Hc\$@
 Hc\$P
 Hc\$`
@@ -2872,6 +2856,8 @@ IPulseSystem_001
 IToolFrameListener
 I[?setRgbF@QColor@@QEAAXNNNN@Z
 Ic>A;~
+Ic]8A;]Hu
+Ic]8H
 If intended, call ClearSpecificType first to discard the old value.%s
 If intended, call SetToNull() first to discard the old value.%s
 Ignored
@@ -2894,7 +2880,6 @@ InsertItalic
 InsertLink
 InsertUnderlined
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Internal_ExpandCompactArray: unhandled compact array type %d%s
 Invalid 'dockWidgetArea (%s)
@@ -2924,8 +2909,6 @@ Key Bindings
 KeyState
 KeyState[%1]
 KeyValueCache001
-KeyValues3::%s - Calling a array API on '%s'%s
-KeyValues3::%s - Calling a table API on '%s'%s
 KeyValues3::FindOrCreateMember
 KeyValues3::FormatValueAsString
 KeyValues3::GetArrayElement
@@ -2977,6 +2960,7 @@ L$@;|
 L$@E;EP
 L$@H3
 L$HE3
+L$HL+
 L$`;M
 L$h;M
 L9#t	H
@@ -3037,6 +3021,7 @@ Localize_001
 LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
+Lw&35
 M	?canDropMimeData@QAbstractProxyModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z
 MATCHFRAMEWORK_001
 MB(iVR
@@ -3146,15 +3131,11 @@ OnTreeMenuRequested
 OnTreeSelectionChanged
 OpenFileMappingA
 OpenMutexA
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 Orientation
 P8I9D$
 P?isValid@QColor@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
-PA]_^
 PA^_]
 PA_A^A]A\_^]
 PA_A^_^]H
@@ -3166,11 +3147,11 @@ ParticleSystemMgr003
 PerformHelpAction
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
 Plat_GetEnv
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_IsInHeadlessMode
 Plat_IsInTestMode
@@ -3267,12 +3248,14 @@ S0Q0O
 S?movePosition@QTextCursor@@QEAA_NW4MoveOperation@1@W4MoveMode@1@H@Z
 S?openUrl@QDesktopServices@@SA_NAEBVQUrl@@@Z
 SA|X=G
+SIW:J
 STANDIN: %1
 SUATH
 SUAUH
 SUVWATAUAVH
 SUVWATAVAWH
 SUVWAUAVAWH
+SUVWH
 SUWATAWH
 SUWAVAWH
 SUWAVH
@@ -3339,7 +3322,6 @@ Stylesheet
 Sunday
 SwitchToEngineWindow
 T	?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T	V_stricmp_fast
 T$ H;
 T$ Hc
 T$(H;
@@ -3476,7 +3458,6 @@ VUUUH
 VWATAVAW
 VWATAVAWH
 VWAUAWH
-VWAUH
 VWAVH
 VWebm001
 V_Int32ToString_Unsafe
@@ -3503,7 +3484,7 @@ Vis:1
 VisBuilder_001
 Visit Developer Help URL
 Vrad3_001
-W*pX|
+W	V_stricmp_fast
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?scaled@QPixmap@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
 W?selectedText@QTextCursor@@QEBA?AVQString@@XZ
@@ -3679,10 +3660,8 @@ anchorUrl
 array
 asset
 asset:dev/helper/testgrid.vmat
-a}{Aa
 bAllocationCanFit
 bFound
-bLegalTypeChange
 background
 bad exception
 bad function call
@@ -3851,6 +3830,7 @@ l$XI;
 l$XIc
 l$`I;
 l$ht8A
+l0)%N
 l2|X/gGe
 lifespan
 localize
@@ -3860,6 +3840,7 @@ long_help_preview
 long_reference_help
 m(HcE H
 m0k0$
+m8nQb
 mL+7H
 m_Bindings
 m_Command
@@ -3944,7 +3925,6 @@ pKV3 && ( pKV3->GetBasicType() == KV3_BTYPE_TABLE || pKV3->GetBasicType() == KV3
 pLiveBinding->m_pCmd
 pManager != nullptr
 pMatchedBinding->m_pCmd
-pMemory[i] == 0
 pMeta
 pObj != nullptr
 pOutBindings->Find( pInstance ) == -1
@@ -4139,7 +4119,6 @@ verticalStretch
 vertical_header
 vhfD9vj~
 vnotify_ui
-w]D?f
 waiting_group
 wwH9Q
 www.digicert.com1!0

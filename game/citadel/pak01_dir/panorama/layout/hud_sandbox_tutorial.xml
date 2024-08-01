@@ -5,6 +5,7 @@
 		<include src="s2r://panorama/styles/hud_sandbox_tutorial.vcss_c" />
 	</styles>
 	<Panel class="TutorialPanel">
+		<GlobalClassListener classes="gShopOpen" />
 		<Panel id="HeroTrainingIntro">
 			<Panel class="introHeader">
 				<Label text="#HeroTraining_Intro_Title" html="true" />

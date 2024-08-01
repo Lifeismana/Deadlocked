@@ -2,7 +2,6 @@
 	V_fpclassifyd
 	V_vsnprintf
 	Warning
-	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncmp
 	_V_strncpy
 	_V_strnicmp_fast
@@ -60,7 +59,6 @@
 !>6'Y
 !IsExternallyAllocated() && !mem.IsExternallyAllocated()
 !IsInternalTypeShortArray( Internal_Type() )
-!bLooksLikeABug
 !g_pSchemaSystem || g_pSchemaSystem == pSchemaSystem
 !hn7!
 !m_lang.m_symLanguage.IsValid()
@@ -237,9 +235,6 @@ $?A2@
 (int)eLang >= k_Lang_First && (int)eLang < k_Lang_MAX
 (intp)this % 8 == 0
 (m_nAllocatedFlags & 0x8000000000000000) == 0
-(m_nRefCount & (uint32)(INTERNAL_IS_CONSTRUCTED | INTERNAL_CONSTRUCTOR_ALLOWED)) == (uint32)INTERNAL_CONSTRUCTOR_ALLOWED
-(m_nRefCount & (uint32)INTERNAL_REFCOUNT_MASK) > 0
-(m_nRefCount & INTERNAL_LOCKED) != 0
 (t$ H
 (t$03
 (t$0E3
@@ -353,7 +348,7 @@ $?A2@
 220323000000Z
 220801000000Z
 230714000000Z
-240723234904Z0/
+240801161757Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -374,7 +369,6 @@ $?A2@
 6*f(_
 6I]Dc
 6OB,n_
-7	V_powd
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 8#u	I
@@ -388,7 +382,8 @@ $?A2@
 9)~P3
 98t H
 9>~ZH
-:	V_qsort_s
+9x=c|
+:	V_powd
 :#u	H
 :#u	L
 :help
@@ -416,6 +411,7 @@ $?A2@
 <no failure reason set>
 <none>
 <space>
+=	V_qsort_s
 =imb;D
 =rIQU
 >#u	H
@@ -481,7 +477,6 @@ $?A2@
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?f`Y4
 ?tTE3
-?xj(r
 @.data
 @.reloc
 @84)u
@@ -576,7 +571,6 @@ C0Hc	H
 C:\buildworker\citadel_rel_win64\build\_build_\localize\_vpc_localize\default\win64\_msvc_\Retail\localize.pdb
 C:\buildworker\citadel_rel_win64\build\src\common\language.cpp
 C:\buildworker\citadel_rel_win64\build\src\localize\localize_imp.cpp
-C:\buildworker\citadel_rel_win64\build\src\public\ordered_constructor.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\bitstring.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\byteswap.h
 C:\buildworker\citadel_rel_win64\build\src\public\tier0\crtoverride.cpp
@@ -661,11 +655,6 @@ CLocalize::SetCurrentSubLanguage
 CLocalize::SetCurrentSubLanguageFromSystem
 CLocalize::SetValueByIndex
 CMemAllocSystemInitialize
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
-COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalConstruct::<lambda_1>::operator ()
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::InternalLock
-COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> >::Release
 CThreadSpinRWLock::CThreadSpinRWLock
 CTier2ShutdownCallback::RunAllCallbacks
 CUtlBlockMemory overflow!
@@ -714,7 +703,6 @@ CloseHandle
 CommandLine
 Compatibility context: %s
 ConstructString_Impl
-Construction is only allowed from the resolve function
 CorExitProcess
 CreateEventW
 CreateFileW
@@ -743,7 +731,6 @@ Danish
 December
 DeleteCriticalSection
 DemoUpconverterVersion001
-DependencyClass::m_pDependencyLL == nullptr
 DigiCert Assured ID Root CA0
 DigiCert Inc1
 DigiCert Timestamp 20230
@@ -764,6 +751,7 @@ E8q(u
 EH*?H
 ERROR: Duplicate string token '%s' found in %s (original in %s)
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EarlyInit_Tier0
 EconItemToolModel_001
 EncodePointer
 EngineServiceMgr001
@@ -800,7 +788,6 @@ GameResourceServiceServerV001
 GameUIService_001
 German
 GetACP
-GetBuildbotModuleBaselineVersion
 GetCPInfo
 GetCommandLineA
 GetCommandLineW
@@ -885,7 +872,6 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 InstallSchemaBindings
-Intentionally vague touch behavior for %p
 InterlockedFlushSList
 Invalid noun context in '%s'
 Invalid usage char in '%s'
@@ -906,6 +892,7 @@ Japanese
 K&>.yC
 K0HcQ
 KERNEL32.dll
+K`3~=Qku\
 KeyValueCache001
 KeyValues3::GetValueString
 KeyValues3::Internal_FreeAllocation
@@ -1034,9 +1021,6 @@ NetworkSystemVersion001
 Norwegian
 November
 October
-Ordered constructor wrapped type has no default constructor.
-Ordered object did not begin in a zeroed state
-Ordered object's memory was modified prior to construction
 P D8*
 PA^_^
 PA_A^A]A\_^]
@@ -1049,7 +1033,6 @@ PanoramaUIEngine001
 ParticleSystemMgr003
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
-Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_GetTime
@@ -1090,7 +1073,6 @@ RtlPcToFileHeader
 RtlUnwindEx
 RtlVirtualUnwind
 Russian
-R}}O;?d
 S0Q0O
 SA|X=G
 SUVAUAVH
@@ -1137,7 +1119,6 @@ StatsService_001
 SteamAudio001
 Sunday
 Swedish
-T	V_stricmp_fast
 T$ u	H
 T$0A;
 T$0Ic
@@ -1241,6 +1222,7 @@ Valve_TestPluralsEnglishOnly:p
 Vietnamese
 VisBuilder_001
 Vrad3_001
+W	V_stricmp_fast
 WARNING: Duplicate string token '%s' found in %s (original in %s)
 WATAUAVAWH
 WAVAWH
@@ -1271,7 +1253,6 @@ Y9"SD
 \$Mu$
 \$pu:M
 \resource\valve_
-]:4{8
 ]J<0"0i3
 _ ;_$t
 _89_D
@@ -1501,7 +1482,6 @@ pContext
 pEntry >= m_Values
 pKV3 && ( pKV3->GetBasicType() == KV3_BTYPE_TABLE || pKV3->GetBasicType() == KV3_BTYPE_NULL )
 pLocStrSub->IsVariantSubString()
-pMemory[i] == 0
 pMeta
 pParent
 pPrevClusterInFreeList != nullptr
@@ -1516,7 +1496,6 @@ portuguese
 pt_BR
 pt_PT
 purecall
-q}+U#
 r	Vr.>T
 range check failure
 resource/countries_%language%.txt
@@ -1591,11 +1570,9 @@ v=Y]Bv
 v@D8s(t
 vAD8s(t
 vKfffff
-vP>y.N
 vi_VN
 vietnamese
 w/fA;
-wbR:xX
 www.digicert.com1!0
 www.digicert.com1$0"
 x ATAVAWH
@@ -1605,7 +1582,6 @@ y$D8\
 y\PD>!
 zh_CN
 zh_TW
-{+Cks
 {un'%
 |$ 9YD
 |$ ATAVAWH
