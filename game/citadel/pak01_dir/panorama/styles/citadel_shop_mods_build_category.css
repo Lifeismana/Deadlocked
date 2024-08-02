@@ -78,20 +78,32 @@ CitadelShopModsBuildCategory #BuildCategoryHeaderEdit .CategoryName
 	width: 200px;
 }
 
+CitadelShopModsBuildCategory #BuildCategoryHeaderEdit .CategoryDescription
+{
+	width: 600px;
+}
+
 CitadelShopModsBuildCategory #BuildCategoryHeaderEdit #DeleteCategoryButton
 {
 	vertical-align: top;
 	horizontal-align: right;
 	margin: 4px;
+	padding-bottom: 4px;
+	margin-right: 0px;
+	ignore-parent-flow: true;
+	background-color: #556588;
+}
+
+CitadelShopModsBuildCategory #BuildCategoryHeaderEdit #DeleteCategoryButton .TrashIcon
+{
 	width: 32px;
 	height: 32px;
 	wash-color: #e1d9db;
+	margin: 0px;
 	background-image: url("s2r://panorama/images/control_icons/icon_trash_png.vtex");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	ignore-parent-flow: true;
-	background-color: #00000033;
 }
 
 .gEditingBuilds CitadelShopModsBuildCategory.Focused

@@ -15,7 +15,9 @@
 			<Panel id="DragHandle" />
 			<TextEntry id="CategoryNameTextEntry" class="CategoryName" placeholder="#Citadel_HeroBuilds_CategoryNameLabel" />
 			<TextEntry id="CategoryDescriptionTextEntry" class="CategoryDescription" placeholder="#Citadel_HeroBuilds_CategoryDescriptionLabel" />
-			<Panel id="DeleteCategoryButton" />
+			<Panel id="DeleteCategoryButton">
+				<Panel class="TrashIcon" />
+			</Panel>
 		</Panel>
 		<Panel id="ModsContainer" />
 		<Panel id="Overlay" hittest="false">
