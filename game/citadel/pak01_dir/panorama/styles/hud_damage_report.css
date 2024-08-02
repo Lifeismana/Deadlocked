@@ -1,24 +1,8 @@
 /* Prettified by Source 2 Viewer 10.1.0.0 - https://valveresourceformat.github.io */
 
-@define weaponColor: #FFA826;
-@define techColor: #00DDFF;
-@define offWhite: #FFEFD7;
-@define offBlack: #10130D;
-@define courageLightColor: #FFD18D;
-@define courageBrightColor: #EC9719;
-@define courageColor: #9D620B;
-@define courageDarkColor: #7F540E;
-@define courageDarkerColor: #302306;
-@define fortitudeLightColor: #D3FC96;
-@define fortitudeBrightColor: #7BBA1D;
-@define fortitudeColor: #649717;
-@define fortitudeDarkColor: #4C7113;
-@define fortitudeDarkerColor: #1F3400;
-@define spiritLightColor: #E7C8FF;
-@define spiritBrightColor: #CE90FF;
-@define spiritColor: #8A55B3;
-@define spiritDarkColor: #613484;
-@define spiritDarkerColor: #362147;
+@import url("s2r://panorama/styles/citadel_shared_colors.vcss_c");
+@import url("s2r://panorama/styles/ability_icons.vcss_c");
+@import url("s2r://panorama/styles/citadel_base_styles.vcss_c");
 #TimeControlDropDownDropDownMenu,.TimeControlOption
 {
 	max-width: 150px;

@@ -20,7 +20,10 @@
 						<Label class="BuildName" html="true" text="#Citadel_HeroBuilds_BuildName" />
 						<Panel class="AuthoringInfo">
 							<CitadelAvatarImage id="AuthorAvatar" />
-							<Label class="LastUpdated" html="true" text="#Citadel_HeroBuilds_LastUpdatedTime" />
+							<Panel class="TopBottomFlow">
+								<Label class="Version" html="true" text="#Citadel_HeroBuilds_Version" />
+								<Label class="LastUpdated" html="true" text="#Citadel_HeroBuilds_LastUpdatedTime" />
+							</Panel>
 						</Panel>
 						<Label class="BuildDescription" html="true" text="#Citadel_HeroBuilds_BuildDescription" />
 						<Panel class="LeftRightFlow">

@@ -245,6 +245,11 @@ CitadelFriend.SoloFriend #AddUnvailableButton
 	visibility: visible;
 }
 
+.in_matchmaking CitadelFriend.SoloFriend.CanInvite:hover #AddUnvailableButton
+{
+	opacity: 0;
+}
+
 .InviteText
 {
 	font-size: 18px;
