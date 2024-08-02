@@ -19,12 +19,13 @@
 		mixer_mixgroup = "UI-Health"
 		volume = -3.000000
 		vsnd_files = "sounds/gameplay/low_health/default_alert.vsnd"
+		vsnd_duration = 2.978980
 	}
 	PlayerAlert.MajorDamage = 
 	{
 		base = "Base.UI"
 		mixer_mixgroup = "UI-Health"
-		volume = -4.000000
+		volume = -6.000000
 		pitch = 1.000000
 		limiter_on = 1.000000
 		limiter_match_event = 1.000000
@@ -39,6 +40,7 @@
 			"sounds/hit_indicators/damage_receive_major_04.vsnd",
 			"sounds/hit_indicators/damage_receive_major_05.vsnd",
 		]
+		vsnd_duration = 2.752948
 	}
 	Player.Bullet.Impact.Default = 
 	{
@@ -52,6 +54,7 @@
 			"sounds/hit_indicators/damage_receive_default_05.vsnd",
 			"sounds/hit_indicators/damage_receive_default_06.vsnd",
 		]
+		vsnd_duration = 0.854467
 	}
 	Player.Bullet.Impact.Trooper = 
 	{
@@ -83,7 +86,7 @@
 	{
 		base = "Player.Bullet.Impact.Default"
 		vsnd_files = "sounds/common/null.vsnd"
-		vsnd_duration = 0.100045
+		vsnd_duration = 0.050023
 	}
 	Player.Damage.Melee.Trooper.Impact = 
 	{
@@ -98,6 +101,7 @@
 		block_duration = 0.100000
 		block_event_name = "Player.Damage.Impact.Stab"
 		vsnd_files = "sounds/player/damage/stab.vsnd"
+		vsnd_duration = 0.266349
 	}
 	Player.Damage.Impact.Zap = 
 	{
@@ -105,6 +109,7 @@
 		limiter_event_name = "Player.Damage.Impact.Zap"
 		block_event_name = "Player.Damage.Impact.Zap"
 		vsnd_files = "sounds/player/damage/zap.vsnd"
+		vsnd_duration = 0.407188
 	}
 	Player.Dash = 
 	{
@@ -141,6 +146,7 @@
 			"sounds/player/dash/22.vsnd",
 			"sounds/player/dash/23.vsnd",
 		]
+		vsnd_duration = 0.683673
 	}
 	Player.RollJump.Activate = 
 	{
@@ -193,6 +199,7 @@
 			"sounds/player/rolljump/whoosh_27.vsnd",
 			"sounds/player/rolljump/whoosh_28.vsnd",
 		]
+		vsnd_duration = 1.186875
 	}
 	Player.RollJump.Activate.Effect = 
 	{
@@ -219,6 +226,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/player/rolljump/effect_body.vsnd"
+		vsnd_duration = 1.905500
 	}
 	Player.RollJump.Activate.Flutter = 
 	{
@@ -232,6 +240,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/player/rolljump/effect_flutter.vsnd"
+		vsnd_duration = 1.493958
 	}
 	Player.RollJump.Activate.Grind = 
 	{
@@ -245,6 +254,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/player/rolljump/effect_grind.vsnd"
+		vsnd_duration = 1.146083
 	}
 	Player.RollJump.Activate.Pop = 
 	{
@@ -258,6 +268,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/player/rolljump/effect_pop.vsnd"
+		vsnd_duration = 1.734583
 	}
 	Player.Ground.Roll.Execute = 
 	{
@@ -315,6 +326,7 @@
 			"sounds/player/rolljump/whoosh_27.vsnd",
 			"sounds/player/rolljump/whoosh_28.vsnd",
 		]
+		vsnd_duration = 1.186875
 	}
 	Player.AirJump.Execute.Effect = 
 	{
@@ -336,6 +348,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/player/rolljump/effect_body.vsnd"
+		vsnd_duration = 1.905500
 	}
 	Player.AirJump.Execute.Flutter = 
 	{
@@ -344,6 +357,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/player/rolljump/effect_flutter.vsnd"
+		vsnd_duration = 1.493958
 	}
 	Player.AirJump.Execute.Grind = 
 	{
@@ -352,6 +366,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/player/rolljump/effect_grind.vsnd"
+		vsnd_duration = 1.146083
 	}
 	Player.AirJump.Execute.Pop = 
 	{
@@ -361,6 +376,7 @@
 		pitch_rand_min = -0.100000
 		pitch_rand_max = 0.100000
 		vsnd_files = "sounds/player/rolljump/effect_pop.vsnd"
+		vsnd_duration = 1.734583
 	}
 	Player.LaneShop.Open = 
 	{
@@ -385,6 +401,7 @@
 		block_match_entity = 0.000000
 		block_match_this_event = true
 		vsnd_files = "sounds/ui/shop_activate.vsnd"
+		vsnd_duration = 1.597710
 	}
 	Player.SkillShot.Miss.Default = 
 	{
@@ -403,6 +420,7 @@
 		limiter_event_name = "Player.SkillShot.Miss.Default"
 		limiter_stop_oldest = true
 		vsnd_files = "sounds/gameplay/skillshots/miss_default.vsnd"
+		vsnd_duration = 1.159660
 	}
 	Player.Melee.Hit.Default = 
 	{
@@ -482,6 +500,7 @@
 			"sounds/player/melee/shared/default_impact_2.vsnd",
 			"sounds/player/melee/shared/default_impact_3.vsnd",
 		]
+		vsnd_duration = 1.269025
 	}
 	Player.Melee.Hit.Physics.Base = 
 	{
@@ -512,6 +531,7 @@
 			"sounds/player/melee/shared/punch_impact/09.vsnd",
 			"sounds/player/melee/shared/punch_impact/10.vsnd",
 		]
+		vsnd_duration = 0.601451
 	}
 	Player.Melee.Hit.Effect = 
 	{
@@ -521,6 +541,7 @@
 		pitch_rand_max = 0.000000
 		pitch_rand_min = 0.000000
 		vsnd_files = "sounds/player/melee/shared/default_impact_effect.vsnd"
+		vsnd_duration = 0.957075
 	}
 	Ability.Melee.Hit.Vault = 
 	{
@@ -533,6 +554,7 @@
 			"sounds/player/melee/shared/default_impact_2.vsnd",
 			"sounds/player/melee/shared/default_impact_3.vsnd",
 		]
+		vsnd_duration = 1.269025
 	}
 	Player.Melee.Parry.Shared = 
 	{
@@ -549,6 +571,7 @@
 	{
 		base = "Base.Hero.Weapon.Melee.Parry.3d"
 		vsnd_files = "sounds/player/melee/shared/parry_bounce.vsnd"
+		vsnd_duration = 0.989728
 	}
 	Player.Melee.Parry.Shared.Spring = 
 	{
@@ -556,18 +579,21 @@
 		volume = -12.000000
 		pitch = 1.200000
 		vsnd_files = "sounds/player/melee/shared/parry_spring.vsnd"
+		vsnd_duration = 3.070453
 	}
 	Player.Melee.Parry.Shared.Synth = 
 	{
 		base = "Base.Hero.Weapon.Melee.Parry.3d"
 		volume = -15.000000
 		vsnd_files = "sounds/player/melee/shared/parry_synth.vsnd"
+		vsnd_duration = 1.152789
 	}
 	Player.Melee.Parry.Success.Shared = 
 	{
 		base = "Base.Hero.Weapon.Melee.Parry.3d"
 		volume = 0.000000
 		vsnd_files = "sounds/player/melee/shared/parry_success.vsnd"
+		vsnd_duration = 0.968980
 	}
 	Player.Melee.Hold.Shared = 
 	{
@@ -581,6 +607,7 @@
 		spread_min_value = 0.000000
 		volume = 0.000000
 		vsnd_files = "sounds/player/melee/shared/charged_melee_full.vsnd"
+		vsnd_duration = 1.406009
 	}
 	Ability.Melee.Impact.Player = 
 	{
@@ -596,6 +623,7 @@
 			"sounds/hit_indicators/damage_receive_melee_05.vsnd",
 			"sounds/hit_indicators/damage_receive_melee_06.vsnd",
 		]
+		vsnd_duration = 1.372200
 	}
 	Ability.Melee.Impact.Heavy.Player = 
 	{
@@ -610,6 +638,7 @@
 			"sounds/hit_indicators/damage_receive_melee_05.vsnd",
 			"sounds/hit_indicators/damage_receive_melee_06.vsnd",
 		]
+		vsnd_duration = 1.372200
 	}
 	Ability.Melee.Impact.NPC = 
 	{
@@ -625,6 +654,7 @@
 			"sounds/hit_indicators/damage_receive_melee_05.vsnd",
 			"sounds/hit_indicators/damage_receive_melee_06.vsnd",
 		]
+		vsnd_duration = 1.372200
 	}
 	Player.Sprint = 
 	{
@@ -656,6 +686,7 @@
 			"sounds/player/dash/22.vsnd",
 			"sounds/player/dash/23.vsnd",
 		]
+		vsnd_duration = 0.683673
 	}
 	Player.Melee.SwingShort = 
 	{
@@ -679,6 +710,7 @@
 			"sounds/player/melee/shared/swing_short_09.vsnd",
 			"sounds/player/melee/shared/swing_short_10.vsnd",
 		]
+		vsnd_duration = 1.010612
 	}
 	Player.Melee.SwingLong = 
 	{
@@ -697,6 +729,7 @@
 			"sounds/player/melee/shared/melee_charged_kick_04.vsnd",
 			"sounds/player/melee/shared/melee_charged_kick_05.vsnd",
 		]
+		vsnd_duration = 1.478073
 	}
 	Player.Heal.ExtraSmall = 
 	{
@@ -705,6 +738,7 @@
 		volume_falloff_min = 300.000000
 		volume_falloff_max = 1000.000000
 		vsnd_files = "sounds/player/heal_small_b.vsnd"
+		vsnd_duration = 0.807891
 	}
 	Player.Heal.Small = 
 	{
@@ -712,6 +746,7 @@
 		volume_falloff_min = 300.000000
 		volume_falloff_max = 1000.000000
 		vsnd_files = "sounds/player/heal_small_a.vsnd"
+		vsnd_duration = 0.795034
 	}
 	Player.Heal.BaseTick = 
 	{
@@ -720,6 +755,7 @@
 		volume_falloff_max = 1000.000000
 		volume = -14.000000
 		vsnd_files = "sounds/player/heal_base_tick_b.vsnd"
+		vsnd_duration = 0.810385
 	}
 	Player.Heal.Medium = 
 	{
@@ -733,6 +769,7 @@
 			"trooper",
 			"",
 		]
+		vsnd_duration = 2.521361
 	}
 	Player.Heal.BaseStart = 
 	{
@@ -741,6 +778,7 @@
 		volume_falloff_min = 300.000000
 		volume_falloff_max = 1000.000000
 		vsnd_files = "sounds/player/heal_base_start.vsnd"
+		vsnd_duration = 1.995102
 	}
 	Player.Heal.BaseLoop = 
 	{
@@ -749,6 +787,7 @@
 		volume_falloff_min = 300.000000
 		volume_falloff_max = 1000.000000
 		vsnd_files = "sounds/player/heal_base_loop.vsnd"
+		vsnd_duration = 6.536440
 	}
 	Player.Heal.BaseEnd = 
 	{
@@ -757,6 +796,7 @@
 		volume_falloff_max = 1000.000000
 		volume = -17.000000
 		vsnd_files = "sounds/player/heal_base_end_a.vsnd"
+		vsnd_duration = 1.293492
 	}
 	Player.Heal.Base = 
 	{
@@ -773,6 +813,7 @@
 		base = "Base.Healing"
 		volume = 1.000000
 		vsnd_files = "sounds/abilities/dynamo/dynamo_a3_heal_cast.vsnd"
+		vsnd_duration = 2.789751
 	}
 	Player.Heal.AOE = 
 	{
@@ -788,6 +829,7 @@
 		block_match_entity = 1.000000
 		block_duration = 0.500000
 		vsnd_files = "sounds/player/heal_siphon_tick.vsnd"
+		vsnd_duration = 0.488844
 	}
 	Player.LaneShop.Close = 
 	{
@@ -806,5 +848,6 @@
 		block_match_entity = 0.000000
 		block_match_this_event = true
 		vsnd_files = "sounds/ui/shop_deactivate.vsnd"
+		vsnd_duration = 1.697982
 	}
 }

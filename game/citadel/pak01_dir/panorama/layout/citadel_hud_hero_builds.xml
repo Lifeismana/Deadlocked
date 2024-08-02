@@ -24,14 +24,14 @@
 						</Panel>
 						<Label class="BuildDescription" html="true" text="#Citadel_HeroBuilds_BuildDescription" />
 						<Panel class="LeftRightFlow">
-							<Panel id="CopyBuildButton" class="SecondaryButton light fill hasIcon" onmouseactivate="CitadelHudHeroBuildsToggleEditSelectedBuild()">
+							<Panel id="CopyBuildButton" class="SecondaryButton light fill hasIcon" onmouseactivate="CitadelHudHeroBuildsCopyAndEditSelectedBuild()">
 								<Label text="#Citadel_HeroBuilds_CopyBuildLabel" />
 							</Panel>
 						</Panel>
 					</Panel>
 					<Panel id="ManageBuildControls" class="BuildControls" hittest="false">
 						<Panel id="EditPublishButtons">
-							<Button id="EditBuildButton" class="SecondaryButton light fill hasIcon" onmouseactivate="CitadelHudHeroBuildsToggleEditSelectedBuild()">
+							<Button id="EditBuildButton" class="SecondaryButton light fill hasIcon" onmouseactivate="CitadelHudHeroBuildsEditSelectedBuild()">
 								<Label text="#Citadel_HeroBuilds_EditBuildLabel" />
 							</Button>
 							<Button id="PublishBuildButton" class="SecondaryButton outline" onmouseactivate="$.GetContextPanel().AddClass(&apos;ShowPublishPanel&apos;)">
@@ -54,10 +54,10 @@
 				<Label class="HeroBuildEditInstructions" text="#Citadel_HeroBuilds_EditInstructions" />
 			</Panel>
 			<Panel id="EditBuildControls" class="BuildControls" hittest="false">
-				<Panel id="SaveBuildButton" class="SecondaryButton light fill" onmouseactivate="CitadelHudHeroBuildsToggleEditSelectedBuild()">
+				<Panel id="SaveBuildButton" class="SecondaryButton light fill" onmouseactivate="CitadelHudHeroBuildsSaveEdits()">
 					<Label text="#Citadel_HeroBuilds_SaveBuild" />
 				</Panel>
-				<Panel id="CancelChangesButton" class="SecondaryButton fill red visibleByDefault" onmouseactivate="CitadelHudHeroBuildsExitEditMode()">
+				<Panel id="CancelChangesButton" class="SecondaryButton fill red visibleByDefault" onmouseactivate="CitadelHudHeroBuildsDiscardEdits()">
 					<Label text="#Citadel_HeroBuilds_CancelChanges" />
 				</Panel>
 			</Panel>
