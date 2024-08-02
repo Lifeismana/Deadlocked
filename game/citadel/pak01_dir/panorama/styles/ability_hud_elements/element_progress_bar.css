@@ -1,5 +1,6 @@
 /* Prettified by Source 2 Viewer 10.1.0.0 - https://valveresourceformat.github.io */
 
+@import url("s2r://panorama/styles/citadel_base_styles.vcss_c");
 .ability_element_progress
 {
 	visibility: collapse;
@@ -132,8 +133,8 @@
 	color: #ffffff90;
 	background-color: #00000080;
 	width: 80px;
-	padding-bottom: 1px;
 	margin-right: 5px;
+	font-weight: bold;
 	text-align: center;
 }
 
@@ -142,6 +143,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: semi-bold;
+	font-size: 16px;
 }
 
 .channeling .cancel_hint
