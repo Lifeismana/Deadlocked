@@ -22,7 +22,6 @@ CitadelShopModsBuildCategory .BuildCategory
 {
 	width: 100%;
 	flow-children: right;
-	height: 40px;
 }
 
 CitadelShopModsBuildCategory .BuildCategory .CategoryName
@@ -35,10 +34,16 @@ CitadelShopModsBuildCategory .BuildCategory .CategoryName
 
 CitadelShopModsBuildCategory .BuildCategory .CategoryDescription
 {
-	vertical-align: center;
+	vertical-align: bottom;
 	margin: 4px;
 	color: offWhite;
 	font-weight: semi-bold;
+	opacity: 0.7;
+}
+
+CitadelShopModsBuildCategory .NameAndDesc
+{
+	flow-children: down;
 }
 
 CitadelShopModsBuildCategory #BuildCategoryHeader
@@ -73,14 +78,11 @@ CitadelShopModsBuildCategory #BuildCategoryHeaderEdit .CategoryName
 	width: 200px;
 }
 
-CitadelShopModsBuildCategory #BuildCategoryHeaderEdit .CategoryDescription
-{
-	width: fill-parent-flow(1.0);
-}
-
 CitadelShopModsBuildCategory #BuildCategoryHeaderEdit #DeleteCategoryButton
 {
-	vertical-align: middle;
+	vertical-align: top;
+	horizontal-align: right;
+	margin: 4px;
 	width: 32px;
 	height: 32px;
 	wash-color: #e1d9db;
@@ -88,6 +90,8 @@ CitadelShopModsBuildCategory #BuildCategoryHeaderEdit #DeleteCategoryButton
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	ignore-parent-flow: true;
+	background-color: #00000033;
 }
 
 .gEditingBuilds CitadelShopModsBuildCategory.Focused
