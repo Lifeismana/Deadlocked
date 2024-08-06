@@ -173,6 +173,7 @@
 	None
 	Not suitable for ECDSA.
 	Objective
+	P +W
 	PFT_SOUND
 	Param BasePlayerWeapon returned NULL!
 	Param selecting string is out of range!
@@ -710,13 +711,15 @@
  (+%.2f)
  (08@HP
  (08@HPX`hpx
- (08@HPX`j
- (08@HPXbP
- (08@HPZ
- (08@HRP
- (08@J
- (08@JP
- (0X`hpzP
+ (08@HPX`j`
+ (08@HPXb0$
+ (08@HPZ`
+ (08@HR0$
+ (08@J0$
+ (08@J`
+ (0:`
+ (0X`hpz0$
+ (20$
  (Dirty Animation)
  (INVALID PSS PARAMETERS)
  (Negative)
@@ -735,13 +738,12 @@
  - %s (%s)
  - %s%s
  - Subscribed
+ . y]
  .!p*
  ... }
- .0^]
- .@]]
+ .0z]
  .CPlayer_GetNicknameList_Request
  .CPublishedFile_Publish_Response"2
- .P^]
  /&gt;
  //!"#$%&'()/*///+,-/.
  0"r$4&
@@ -3972,20 +3974,20 @@ $z(u&
 (#GameUI_Disconnect_LoopLevelLoadActivate
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
-(%$Fy
+(%):_
+(%)NC
 (%0.2f): %s
-(%6)L
-(%IFC
+(%DZy
+(%c'5
 (%d %d %d %d)
 (%d) Dynamic prop %s (model %s): no sequence named:%s
 (%d) Name: %s (%s)
 (%d,%d)
+(%f1L
 (%g %g %g %g)
 (%g %g %g)
 (%g %g)
 (%s,%s)
-(%y"_
-(%~h2
 (("**,
 ((6"8(:,<*>
 ((https?|ftp|file)://|www\.)([^<]*)
@@ -4000,8 +4002,7 @@ $z(u&
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (,$t6D
-(-0HC
-(-_UZ
+(-?]Z
 (.CMsgSteamLearn_GetAccessTokens_Response"r
 (.CMsgSteamLearn_SnapshotProject_Response"-
 (.CPlayer_GetCommunityPreferences_Request
@@ -4013,8 +4014,7 @@ $z(u&
 (0`hpx
 (0x%08X)'??'
 (1O\,n
-(5	@C
-(5OY~
+(5om~
 (9A@K
 (9Q0u
 (9QTu
@@ -4317,11 +4317,11 @@ $z(u&
 (default)
 (eUniverse > k_EUniverseInvalid) && (eUniverse < k_EUniverseMax)
 (end of input).
+(f i]
 (f*^[0
 (f9Q(u
 (f;Q(
 (f;Q(u
-(f@M]
 (fS{ggRcjh
 (from angle, to angle, time) - Spherical lerp of angle from->to based on time
 (h W#
@@ -4819,7 +4819,6 @@ $z(u&
 )d$pD
 )d$pE
 )d$pL
-)f9-8b?
 )fD9A
 )k_ECitadelDisconnectReason_ChangingServer
 )k_ECitadelDisconnectReason_UserLeaveMatch
@@ -4881,7 +4880,7 @@ $z(u&
 )t$ N
 )t$ f
 )t$ f9
-)t$ f95+Q
+)t$ f95
 )t$ f;
 )t$ ff
 )t$ t
@@ -5165,6 +5164,7 @@ $z(u&
 +.CMsgSteamLearn_RegisterDataSource_Response"L
 +.COAuthToken_ImplicitGrantNoPrompt_Response"y
 +.CPublishedFile_RefreshVotingQueue_Response")
++>vrG
 +A$Hc
 +A*Z<Z
 +A9uhuD
@@ -5261,7 +5261,7 @@ $z(u&
 +dev_simulate_gcdown
 +duck
 +f)>0'
-+fD9=
++fD9=j
 +forward
 +gC&s
 +h->|
@@ -5572,14 +5572,14 @@ $z(u&
 .00cfg
 .0z!u
 .0z:u8
-.5K<7
 .6<A>Y
 .7Z!L
 .8z$u"
 .97yY
 .;u%H
 .<P]A
-.=a"#
+.=B%8
+.=rk4
 .>PJ;I:qE>
 .?AU?$CameraOp_Approach_t@M@@
 .?AU?$CameraOp_Approach_t@V?$Vec3D@M@@@@
@@ -6867,6 +6867,7 @@ $z(u&
 .?AV?$CMsgIDLink@$00$0BA@$0CDPL@VCMsgClientToGCModeratorRequest@@@@
 .?AV?$CMsgIDLink@$00$0BA@$0CDPN@VCMsgClientToGCGetFriendGameStatus@@@@
 .?AV?$CMsgIDLink@$00$0BA@$0CDPP@VCMsgClientToGCUpdateHeroBuildPreference@@@@
+.?AV?$CMsgIDLink@$00$0BA@$0CEAB@VCMsgClientToGCGetOldHeroBuildData@@@@
 .?AV?$CMsgIDLink@$02$0BA@$0BLFI@VCMsgAnyToGCReportAsserts@@@@
 .?AV?$CMsgIDLink@$0BA@$00$0KCH@VCMsgGCToClientCurrencyPricePoints@@@@
 .?AV?$CMsgIDLinkGCToGenericClient@$00$0KCH@VCMsgGCToClientCurrencyPricePoints@@@@
@@ -6916,6 +6917,7 @@ $z(u&
 .?AV?$CMsgIDLinkGenericClientToGCResponse@$00$0CDPL@VCMsgClientToGCModeratorRequest@@$0CDPM@VCMsgClientToGCModeratorRequestResponse@@@@
 .?AV?$CMsgIDLinkGenericClientToGCResponse@$00$0CDPN@VCMsgClientToGCGetFriendGameStatus@@$0CDPO@VCMsgClientToGCGetFriendGameStatusResponse@@@@
 .?AV?$CMsgIDLinkGenericClientToGCResponse@$00$0CDPP@VCMsgClientToGCUpdateHeroBuildPreference@@$0CEAA@VCMsgClientToGCUpdateHeroBuildPreferenceResponse@@@@
+.?AV?$CMsgIDLinkGenericClientToGCResponse@$00$0CEAB@VCMsgClientToGCGetOldHeroBuildData@@$0CEAC@VCMsgClientToGCGetOldHeroBuildDataResponse@@@@
 .?AV?$CMsgIDLinkGenericClientToGCResponse@$02$0BLFI@VCMsgAnyToGCReportAsserts@@$0BLFJ@VCMsgAnyToGCReportAssertsResponse@@@@
 .?AV?$CMsgIDLinkResponse@$00$0BA@$0CDDC@VCMsgClientToGCStartMatchmaking@@$0CDDD@VCMsgClientToGCStartMatchmakingResponse@@@@
 .?AV?$CMsgIDLinkResponse@$00$0BA@$0CDDE@VCMsgClientToGCStopMatchmaking@@$0CDDF@VCMsgClientToGCStopMatchmakingResponse@@@@
@@ -6960,6 +6962,7 @@ $z(u&
 .?AV?$CMsgIDLinkResponse@$00$0BA@$0CDPL@VCMsgClientToGCModeratorRequest@@$0CDPM@VCMsgClientToGCModeratorRequestResponse@@@@
 .?AV?$CMsgIDLinkResponse@$00$0BA@$0CDPN@VCMsgClientToGCGetFriendGameStatus@@$0CDPO@VCMsgClientToGCGetFriendGameStatusResponse@@@@
 .?AV?$CMsgIDLinkResponse@$00$0BA@$0CDPP@VCMsgClientToGCUpdateHeroBuildPreference@@$0CEAA@VCMsgClientToGCUpdateHeroBuildPreferenceResponse@@@@
+.?AV?$CMsgIDLinkResponse@$00$0BA@$0CEAB@VCMsgClientToGCGetOldHeroBuildData@@$0CEAC@VCMsgClientToGCGetOldHeroBuildDataResponse@@@@
 .?AV?$CMsgIDLinkResponse@$02$0BA@$0BLFI@VCMsgAnyToGCReportAsserts@@$0BLFJ@VCMsgAnyToGCReportAssertsResponse@@@@
 .?AV?$CMutableRefCountBase@VCRefMT@@@@
 .?AV?$CMutableRefCounted@V?$CMutableRefCountBase@VCRefMT@@@@@@
@@ -8060,6 +8063,7 @@ $z(u&
 .?AV?$GCClientJobLambda@V<lambda_1>@?1??Update@CCitadelClientAccountEvent@@QEAAXXZ@@GCSDK@@
 .?AV?$GCClientJobLambda@V<lambda_1>@?1??UpdateMatchmakingRoster@CCitadel_PlayController@@QEAAXAEBV?$CUtlVector@URosterSlot_t@@HV?$CUtlMemory@URosterSlot_t@@H@@@@@Z@@GCSDK@@
 .?AV?$GCClientJobLambda@V<lambda_1>@?1??citadel_reset_new_player@@YAXAEBVCCommandContext@@AEBVCCommand@@@Z@@GCSDK@@
+.?AV?$GCClientJobLambda@V<lambda_1>@?1??deadlock_get_old_builds@@YAXAEBVCCommandContext@@AEBVCCommand@@@Z@@GCSDK@@
 .?AV?$GCClientJobLambda@V<lambda_1>@?1??mod_status@@YAXAEBVCCommandContext@@AEBVCCommand@@@Z@@GCSDK@@
 .?AV?$GCClientJobLambda@V<lambda_1>@?4??OnBookUnlockItemConfirm@CCitadel_UI_UnlockItem@@AEAA_NVBookID_t@@VBookUnlockID_t@@@Z@@GCSDK@@
 .?AV?$GCClientJobLambda@V<lambda_1>@?5??AcceptPartyInvite@CCitadel_PlayController@@QEAAXVPartyID_t@@@Z@@GCSDK@@
@@ -13513,6 +13517,8 @@ $z(u&
 .|$|z
 /	V_logf
 /'/)/A/E/K/M/Q/W/o/u/}/
+/-[$y
+/-w!y
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 // All corners fully specified 
 // Perfect circular or elliptical panel (circular if box was square)
@@ -13528,12 +13534,11 @@ $z(u&
 /0v}I
 /2GG>!B
 /48sU
-/5HaQ
-/5QQd
-/5c#d
-/5ol?
+/5*iE
+/5J,n
+/5OUd
 /<GE3
-/=7!#
+/=W%#
 />58d%
 /@Xv+
 /A#i!&
@@ -13639,7 +13644,7 @@ $z(u&
 /vpk.publickey.vdf
 /{4s"H
 /{\v*
-0	,`H
+0	,`L
 0 0 0
 0 0 0 0
 0 0 0 196
@@ -13668,12 +13673,11 @@ $z(u&
 0123456789abcdefghijklmnopqrstuvwxyz
 02V8[
 08@HP
-08@HR
-08@JP
+08@HR`
+08@J0$
 0;O@~
 0;Q5[
 0><[cZUg^>
-0>Py]
 0?NpH
 0@83t`3
 0A\][
@@ -13791,6 +13795,7 @@ $z(u&
 0D$4H
 0D$5H
 0D$6H
+0D;5xtb
 0D;v<|
 0D;{<
 0GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW
@@ -13838,7 +13843,7 @@ $z(u&
 0tHA+
 0tU+xc:
 0ufH9o(u`H
-0vDPW
+0v$lW
 0w"Hc
 0w0c1
 0x%4.4x 
@@ -14163,7 +14168,7 @@ $z(u&
 24.CUserMsg_ParticleManager.SetSceneObjectTintAndDesat
 24.CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240806215215Z0/
+240806225634Z0/
 241009235959Z0a1
 25.CMsgClientToGCFindHeroBuildsResponse.HeroBuildResult
 25.CMsgClientToGCModifyDevAnnouncementsResponse.EResult"_
@@ -14412,9 +14417,9 @@ $z(u&
 4STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_GENERIC
 4STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_FOUND
 4STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PROJECT_ID
-4U\nLZ
 4YA1H
 4YA1I
+4Yq42
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 4k_ECitadelDisconnectReason_GameDestroyedUnexpectedly
 4k_EGCMsgInitiateTradeResponse_Target_Already_Trading
@@ -14679,7 +14684,6 @@ $z(u&
 9)~P3
 9*t)I
 9+~)L
-9-c';
 9.u(H
 90T1@I
 90t&H
@@ -14691,9 +14695,9 @@ $z(u&
 93~-3
 93~j3
 94(t H
-95%1^
-95@&a
-95|Fa
+95,^a
+95@=a
+95H>a
 97~)H
 98Spu4L
 98t H
@@ -14711,10 +14715,11 @@ $z(u&
 9;~"3
 9;~-3
 9<(t,H
-9=M(_
-9=M._
-9=Y#^
-9=m!_
+9==6_
+9==C_
+9=RaT
+9=i4^
+9=q$`
 9>powf
 9>~AH
 9>~ZH
@@ -15035,7 +15040,6 @@ $z(u&
 : has %d Aggregate Instances:
 : lexer error %d :
 : no physics component
-:!5xz
 :!D$@0A
 :!D$P0A
 :!G@0
@@ -15096,8 +15100,8 @@ $z(u&
 ;3}*Lc
 ;3}/Hc
 ;3}8H
+;5N`'
 ;5jNf
-;=Jz	
 ;>4>se=
 ;?0123456789:;<=>?
 ;@"IL
@@ -15222,7 +15226,6 @@ $z(u&
 ;`Fzc
 ;bwP*
 ;d22Vd22Vt::Nt::N
-;f95 
 ;fffffff
 ;h)j 
 ;k<};
@@ -15408,6 +15411,7 @@ $z(u&
 <empty member name>
 <empty>
 <entindex> <fieldname>:  Track changes to entity index entindex, for field fieldname.
+<f959'
 <ffff
 <fffffff
 <function>
@@ -15540,7 +15544,7 @@ $z(u&
 >d`D$
 >f;D$0t
 >f;D$4t
->fD9%
+>fD9%u
 >fN46R^
 >jtm}S
 >o}-XH
@@ -15758,6 +15762,7 @@ $z(u&
 ?HAI	81	9dcG'
 ?HasCaught@TryCatch@v8@@QEBA_NXZ
 ?HaveWriteLock_BlockReadsNow@CThreadRWLock_FastRead@@QEAAX_N@Z
+?Hc5<
 ?Hc7;w
 ?Init@CMemoryStack@@QEAA_NPEBDIIII@Z
 ?Init@CThread@@MEAA_NXZ
@@ -15997,14 +16002,13 @@ $z(u&
 @0333?
 @0333?H
 @08@HPX`hpx
-@08NDPW
+@08N$lW
 @09B0
 @0H9Gx
 @0HcB
 @1h!L
 @2A2G"$
 @2{Z@
-@60R]
 @8(t)H
 @8(t\
 @8(t~H
@@ -16028,10 +16032,8 @@ $z(u&
 @848u
 @84:u
 @84;u
-@85&[\
-@858zm
-@85l3
-@85z3
+@85*I
+@8544d
 @88t(H
 @88tW
 @88uFH
@@ -16041,6 +16043,7 @@ $z(u&
 @8;tb3
 @8<(u
 @8<+u
+@8=qC
 @8>tO3
 @8>uAH
 @8HcB
@@ -16231,7 +16234,8 @@ $z(u&
 @H9AH
 @HHcB$;B(u
 @HPX&I
-@HPX`hv $]
+@HPX`hv
+@HVpW]
 @Hc)E3
 @Hc*I
 @Hc13
@@ -16623,13 +16627,13 @@ $z(u&
 @`H9D$0t
 @b;zO]
 @dKb]
+@f$lW
 @fA;\
 @fB9T
 @fB;T
 @fC;T
 @fD9D
 @fD9d
-@fDPW
 @fE9d
 @fff>fff>fff>fff>
 @ffffff
@@ -16637,7 +16641,7 @@ $z(u&
 @hH9D$0
 @keyframes 
 @keyframes '%s'
-@nDPW
+@n$lW
 @t!H;
 @t#H;
 @t&L;
@@ -16809,7 +16813,7 @@ A9E0u
 A9E4t4H
 A9E4t7H
 A9E4t8H9-
-A9E4t;H9-
+A9E4t;H9-i
 A9E8u
 A9E<t4H
 A9E<tYH
@@ -16843,7 +16847,7 @@ A9Ft|
 A9G t
 A9G0u
 A9G4t4H
-A9G4t8H95
+A9G4t8H95i
 A9G4tBH
 A9GHt/Mcu`E;upu
 A9HPu
@@ -16853,7 +16857,7 @@ A9MTt<H
 A9N0u
 A9N4t4H
 A9N@t#I
-A9O4t;H95
+A9O4t;H95k
 A9P t
 A9P(t
 A9]8~;3
@@ -18453,8 +18457,8 @@ BC_EMPTY
 BC_PARTICLE_SYSTEM_OVERRIDE
 BC_PROP_GROUP_OVERRIDE
 BCanSeeInParentScroll
-BCitadelReplayDownloadRequested
 BD8}tt
+BDuration after which an attack has stopped that music will end.
 BEAM_ENTPOINT
 BEAM_ENTS
 BEAM_HOSE
@@ -18785,7 +18789,6 @@ Bf8Aft
 Bfffff
 BgColor
 Bh;+j
-BhV>k/
 Bidirectional_Messages
 Bidirectional_Messages_LowFrequency
 Big Number part of OpenSSL 1.0.2j  26 Sep 2016
@@ -19069,6 +19072,8 @@ Buffer too small
 Buginese
 Buhid
 Build Cubemaps
+Build Description: %s
+Build Name: %s
 Build Sparse Shadow Tree
 Build already contains mod category named %s
 Build offsets and runs for %s 0x%p
@@ -19252,6 +19257,7 @@ C$;G$t
 C$HcK(Hc
 C$LcC
 C$fD!-
+C$fD!-f
 C%C'C3C7C9COCWCiC
 C(9G(H
 C(9pHt
@@ -19285,7 +19291,7 @@ C4;C8}
 C4D	s
 C4Hc7;w
 C4fD!-
-C4fD!-j
+C4fD!-\
 C5R?	
 C7HSY
 C83333H
@@ -20029,9 +20035,9 @@ C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_he
 C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_tengu.cpp
 C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_tengu.cpp:1564
 C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_viscous.cpp
-C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_viscous.cpp:1757
-C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_viscous.cpp:1794
-C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_viscous.cpp:2102
+C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_viscous.cpp:1827
+C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_viscous.cpp:1864
+C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_viscous.cpp:2206
 C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_yamato.cpp
 C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\heroes\citadel_hero_yamato.cpp:1362
 C:\buildworker\citadel_rel_win64\build\src\game\shared\citadel\render_portal.cpp
@@ -34205,6 +34211,7 @@ CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,class Gam
 CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,float,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,float,class CDefLess<class CHandle<class C_BaseEntity> >,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,float,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,int>,int> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,float,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,float,class CDefLess<class CHandle<class C_BaseEntity> >,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,float,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,int>,int> >::NewNode
 CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,float,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,float,class CDefLess<class CHandle<class C_BaseEntity> >,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,float,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,int>,int> >::RemoveAll
+CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,int,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,int,class CDefLess<class CHandle<class C_BaseEntity> >,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,int,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,int>,int> >::RemoveAll
 CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,struct CDebugOverlaySimulationHistory::NPCPerf_t,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,struct CDebugOverlaySimulationHistory::NPCPerf_t,class CDefLess<class CHandle<class C_BaseEntity> >,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,struct CDebugOverlaySimulationHistory::NPCPerf_t,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,int>,int> >::RemoveAll
 CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,struct SndOpEventGuid_t,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,struct SndOpEventGuid_t,class CDefLess<class CHandle<class C_BaseEntity> >,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,struct SndOpEventGuid_t,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,int>,int> >::FreeNode
 CUtlRBTree<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,struct SndOpEventGuid_t,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,class CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,struct SndOpEventGuid_t,class CDefLess<class CHandle<class C_BaseEntity> >,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CHandle<class C_BaseEntity>,struct SndOpEventGuid_t,class CDefLess<class CHandle<class C_BaseEntity> >,int>::Node_t,int>,int> >::Insert
@@ -36889,6 +36896,7 @@ CitadelReplayDownloadComplete
 CitadelReplayDownloadError
 CitadelReplayDownloadProgress
 CitadelReplayDownloadProgress( %llu, %%2.1f )
+CitadelReplayDownloadRequested
 CitadelReplayExistence
 CitadelReplayIncrementSpeedStep
 CitadelReplayManager
@@ -38851,8 +38859,9 @@ D8 tKA
 D8 uhL
 D8$8u
 D8$:u
-D8%rU\
-D8%wW\
+D8%"m\
+D8%'o\
+D8%.8
 D8&tO3
 D8(t	
 D8(t#H
@@ -38868,6 +38877,8 @@ D8,(u
 D8,0u
 D8,2u
 D8,:u
+D8-#8
+D8-{8
 D8.t[3
 D8.uBH
 D80t;
@@ -38964,7 +38975,6 @@ D8qTH
 D8s$t@H
 D8s$u
 D8sDudL95
-D8sDudL95o
 D8t$(
 D8t$0
 D8t$3t
@@ -39018,7 +39028,6 @@ D9 ~DD
 D9!~iA
 D9#uMH
 D9#~'I
-D9%n6
 D9'~3I
 D9(uHH
 D9(~fH
@@ -39026,7 +39035,8 @@ D9(~jH
 D9)t3
 D9)t[
 D9+u!H
-D9-hX
+D9-MI
+D9-x}
 D9.tdI
 D9/tdI
 D90~ H
@@ -39037,6 +39047,7 @@ D91~QA
 D93fA
 D93tq
 D943t
+D95Qub
 D97~*3
 D97~U
 D98t:H
@@ -39045,7 +39056,7 @@ D98~%H
 D98~\H
 D99~3Hc
 D9:~DH
-D9=n__
+D9=;A
 D9>~+A
 D9@(|
 D9@8t
@@ -39196,7 +39207,6 @@ D9t$@~,I
 D9t$Hu
 D9t$Pu
 D9t$Xu
-D9t$`
 D9t$du
 D9t$hu
 D9t$tu
@@ -39245,16 +39255,16 @@ D9|$P~OH
 D9|$X~6M
 D9|$`t
 D9|$`~:E
+D9|$p
 D9|$x~ H
 D9|0 }2
 D9}@uAD
 D9}H~{H
 D;!}.L
 D;$(t
-D;%^w
 D;3~3A
 D;4A8D
-D;5HX
+D;5X}
 D;6fA9D
 D;8fA
 D;@H}
@@ -39299,6 +39309,7 @@ D;d$4|
 D;d$@
 D;d$P
 D;d$X~
+D;d$p
 D;d$t
 D;e4|
 D;f`|
@@ -39331,9 +39342,9 @@ D;t$H
 D;t$Pt
 D;t$P|
 D;t$XD
-D;t$`
 D;t$du
 D;t$h|
+D;t$p
 D;t$x
 D;t7(
 D;u u
@@ -40510,7 +40521,6 @@ Duplicate spawn group entity filter name encountered "%s"!
 Durability
 DurabilityFilter
 Duration
-Duration after which an attack has stopped that music will end.
 Duration before viewing damage begins to decay.
 Duration for viewing damage to decays to 0.0.
 Duration it takes for attached caption to ideal point
@@ -44089,7 +44099,7 @@ G(9C(uC
 G(9^@}
 G(Lcs 
 G(f94(
-G(f95
+G(f954
 G(t3H
 G)2B9$
 G,9C,u
@@ -44855,6 +44865,7 @@ GetNicknameList
 GetNumChildren( nNode ) == 0
 GetNumParentIndices()
 GetOEMCP
+GetOldBuilds
 GetOrAddModifierListForModifierFunction
 GetOrCreatePrivateScriptScope
 GetOrCreatePublicScriptScope
@@ -45199,7 +45210,7 @@ H @8iKt
 H @8qKuXI
 H D8yK
 H D8yKt
-H L9t
+H H9l
 H SATAVAWH
 H SATH
 H SUVATAUAWH
@@ -45302,14 +45313,14 @@ H9(uC
 H9+t	H
 H9+tf
 H9+uEA
-H9-+}
-H9-4e
-H9-@d
-H9-](_
-H9-]._
-H9-]}p
-H9-x}p
-H9-}!_
+H9-$D
+H9--9_
+H9-?D
+H9-M6_
+H9-MC_
+H9-P#
+H9-VC
+H9-k#
 H9.t	H
 H9.u%H
 H9/t	H
@@ -45320,17 +45331,14 @@ H90tH
 H90tb
 H92tBA
 H93t	H
-H95"R
-H95.	t
-H957&
-H957Y
-H959^'
-H95=R
-H95G?/
-H95I	t
-H95Ru
-H95SQ
-H95x	
+H95#W*
+H95'p
+H95't
+H951/
+H95CzC
+H95G6
+H95Gx
+H95H.
 H97t	H
 H97u+A
 H98t)A
@@ -45342,13 +45350,8 @@ H98t}H
 H99tQA
 H9;t	H
 H9;tlH9y
-H9=	wF
-H9='wF
-H9==1^
-H9=EwF
-H9=J}
-H9=cwF
-H9=j"
+H9=!t
+H9=:	
 H9>u/H
 H9A s
 H9A u
@@ -45981,22 +45984,21 @@ Hc	D;
 Hc(A;
 Hc)E3
 Hc+;k
-Hc-".
-Hc-')
-Hc-7mo
-Hc-~}
+Hc-7JA
+Hc-:W
+Hc-w2
 Hc.;n
 Hc/;o
 Hc/Ic
 Hc3;s
 Hc3A;
-Hc5!_
-Hc51^
+Hc5!B
 Hc6;p
 Hc7;w
 Hc8a"
 Hc;;{
 Hc;A;
+Hc=6e
 Hc>;~
 Hc>HcK
 Hc>Ic\
@@ -46698,6 +46700,7 @@ Hero ID %d defined duplicately for heroes %s and %s!
 Hero Technical name dump 
 Hero definition '%s' references ability '%s', which doesn't exist!
 Hero%i
+Hero: %s
 HeroAbilityResourceDef_t
 HeroAbilityResourceDef_t::KV3TransferLoad_Impl
 HeroAbilityResourceDef_t::KV3Transfer_DefaultKeys_Impl
@@ -46804,7 +46807,7 @@ HeroesContainer
 HeroesContainerRecommended
 Hex and octal numbers must be integers.
 HfA;(
-HfD9%
+HfD9%w
 Hg>?S
 Hhr+g
 HiL$H
@@ -50440,7 +50443,13 @@ L9	u)H
 L9 t A
 L9#t	H
 L9#u/H
-L9%rZA
+L9% #
+L9%6"
+L9%;#
+L9%J=P
+L9%b!
+L9%brA
+L9%l"
 L9&t	H
 L9&us
 L9't	H
@@ -50455,15 +50464,17 @@ L9+t%L9k
 L9+te
 L9+uEH
 L9,:H
-L9-/aI
-L9-<n
+L9-&*
+L9-A*
+L9-n)
 L9.t	H
 L9/t	H
 L90t>
 L92t;H
 L92tDA
 L93t	H
-L95>S
+L95Ag3
+L95Nx
 L97t{L
 L98t?I
 L98t|H
@@ -50474,9 +50485,7 @@ L9;t	H
 L9;tHA
 L9;u	H
 L9<1uP
-L9=VIs
-L9=X9
-L9=h.m
+L9=	4
 L9>uEH
 L9?t	H
 L9?tb
@@ -50646,7 +50655,6 @@ L9uot
 L9upt
 L9uwt
 L9uxt
-L9v(u
 L9v0u
 L9w u$
 L9w0u
@@ -50895,7 +50903,7 @@ Lc0A;
 Lc0D;p
 Lc3D;s
 Lc3Hc
-Lc54Q
+Lc5Dv
 Lc6A+
 Lc6D;v
 Lc6Hc
@@ -53377,6 +53385,7 @@ No map loaded
 No map loaded!
 No model!
 No notches for the slotted slider to use
+No old builds found for %s
 No parameter specified for action: "%s"
 No prediction datamap_t for entity %d/%s
 No schema binding info for enum '%s'
@@ -53740,6 +53749,7 @@ Oh%u'
 Oh+Wp
 Oh44\h44\Q
 Ol_Chiki
+Old builds for %s:
 OldBuild
 OldDetails_V0
 Old_Italic
@@ -54083,8 +54093,8 @@ P-224
 P-256
 P-384
 P-521
-P08@JP
-P08NDPW
+P08@J0$
+P08N$lW
 P09G@
 P0A9F@A
 P0HcC(H
@@ -54093,7 +54103,7 @@ P2A2T$"
 P2A2W"
 P2P ping to "%s". Timed out after %.2fms
 P2P_Messages
-P6P[]
+P60w]
 P8D:8
 P8H9|$ht
 P8H9|$pt
@@ -55007,7 +55017,7 @@ Plots
 Plots view angles yaw at various stages of the frame/tick in Tracy.
 Pm8A?
 PmR"H?
-PnDPW
+Pn$lW
 Po<3ik)
 Point entity.
 Point under crosshair
@@ -55839,6 +55849,7 @@ Recoil
 RecoilShotIndex: %d, BaseSpread: %f, FireSpread: %f, SpreadPenalty: %f, CombinedSpread: %f
 Recommend Friend
 Recommended Distance
+Recommended Items: %s
 Recommended distance this movement traverses
 RecomputeSprings
 Reconnect info changed?  %s/%llu -> %s/%llu
@@ -56082,6 +56093,7 @@ Requested to create unknown modifier %u!
 Requesting Replay
 Requesting a world space bone that's unreadable (%d), and it's parent space is as well: no ground truth to build world space bone from!
 Requesting bone #%d which isn't flagged as requiring setup!
+Requesting old builds failed!
 Require Explicit Policy
 Required fields are not allowed in proto3.
 Required key "attributes" missing.
@@ -56811,7 +56823,6 @@ SXNET_get_id_asc
 SXNET_get_id_ulong
 SXNetID
 SYNC_WAIT_FOR_COMPLETION
-S\PLZ
 Safe To Auto-Switch Away From
 Safe To Auto-Switch To
 SafeGetViewVectors
@@ -58571,6 +58582,7 @@ Searching
 Searching for entities by class name "player" is deprecated
 Searching for entities with class/target name containing substrings: 
 Second argument to Swap() (of type "
+SecondHitDamagePercentage
 Secondary %02x%02x%02x
 Secondary Clip Size
 Secondary Initial Clip (-1 means use clip size)
@@ -60298,11 +60310,9 @@ T$xLc
 T$xMc
 T$xfD
 T%d %s
-T%rEy
 T(<A#
+T-c$y
 T14A#
-T5.w#
-T5ymD
 T61STRING
 T72[t
 TANGENT_U_WS
@@ -60390,7 +60400,6 @@ TItemSocket<class CProtoItemSocket_Spectator>::GetFieldUInt32
 TItemSocket<class CProtoItemSocket_Spectator>::GetImage
 TItemSocket<class CProtoItemSocket_Strange>::GetFieldUInt32
 TItemSocket<class CProtoItemSocket_Strange>::GetImage
-TL95@	
 TLK_CITADEL_ABILITY_SELECTED
 TLK_CITADEL_ALLY_KILLED
 TLK_CITADEL_ANN_BEGIN_REGEN
@@ -60893,6 +60902,7 @@ TheOtherTeam
 They're
 ThinkInterval
 Thinking Entities:
+ThirdHitDamagePercentage
 This ZeroCopyOutputStream doesn't support aliasing. Reaching here usually means a ZeroCopyOutputStream implementation bug.
 This ability provides these types of ability target effects.
 This can be used to force the value of cl_predict for connected clients (only while they are connected).
@@ -61390,6 +61400,7 @@ UAUAVI
 UAUAWH
 UAVAW
 UAVAWH
+UD8%rD
 UD:F<
 UF_FAIL_INVALID_ENTITY
 UF_FAIL_INVALID_FLAGS
@@ -62013,6 +62024,7 @@ Usage: camera_cut_to_datadriven_camera <path and filename>
 Usage: citadel_open_vdata_file_to_node <filename> <nodename>
 Usage: citadel_tech_power_scaling_vdata_tweak [scale]
 Usage: cl_ent_setpos index x y <optional z>
+Usage: deadlock_get_old_builds [author_account_id] - if omitted, will use your account.
 Usage: ent_spew_derived_classes <classname>
 Usage: in_forcebuttonstate <in-button-name> <0/1>
 Usage: in_forcebuttonstate: Unknown button %s
@@ -62065,6 +62077,7 @@ UtlStringMap is inconsistent: vector has %d entries but symbol table has %d
 UtlTokenizer_UnqescapeOrUnquoteString
 UwHc]
 Uz_G3=
+V Q.9c-
 V'uk:
 V++}V++}
 V07;m
@@ -62514,18 +62527,17 @@ V~~Vq
 W	V_stricmp_fast
 W"Fe~
 W'6S`
-W->w?
-W-^\k
+W-%F1
 W0t}H
 W3i+,
-W5]4C
+W5}8C
 W8IcG(M
 W8uDH
 W9QHI
 W;()f
-W=15*
-W=6T[
+W=1J*
 W=AlE3
+W=VX[
 W>peSp>9
 W@H1G@A
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.
@@ -62977,11 +62989,10 @@ X to the Y power
 X!;3; 
 X!t5~
 X!}}p|u
-X%"81
+X%B<1
 X(Optional) If true, only return the published file ids of files that satisfy this query.
 X,,tX,,t4
-X-	!z
-X-6|z
+X-)5z
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X400Name
 X400Name:<unsupported>
@@ -63097,11 +63108,12 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
-X5FCi
-X5Y_1
-X5n%5
-X5sC3
-X5}nm
+X5N-5
+X5S'5
+X5c#5
+X5vGi
+X5vl;
+X5yc1
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -63125,8 +63137,7 @@ X9_62_CHARACTERISTIC_TWO
 X9_62_CURVE
 X9_62_FIELDID
 X9_62_PENTANOMIAL
-X=Q=d
-X=iQ5
+X={q5
 X@fff
 XA\[H
 XA\_^[
@@ -63218,11 +63229,12 @@ XW=?'
 X]F2W-"P
 X_^[]
 X_^][
+X`hr`
 Xd$HD
+Xf0_]
 XfD;\
 XfD;|
-XfPC]
-XfpD]
+XfP`]
 XhHc@`H
 Xl$hH
 XqgA+
@@ -63249,50 +63261,54 @@ X|$XA
 X|$|A;
 X~ '.
 Y	V_strlower_fast
-Y%'Ey
-Y%*6z
-Y%/^B
+Y%'(+
+Y%<*0
+Y%GYy
+Y%JJz
+Y%~ y
 Y(L@L
 Y(Optional) Starting index to begin enumeration at. Defaults to the beginning of the list."Z
-Y--Fy
-Y-DN0
-Y-Df-
-Y-T9C
-Y-VEy
-Y-q7C
-Y-x3z
+Y-4AC
+Y-MZy
+Y-Q?C
+Y-dR0
+Y-vYy
 Y0HcR
 Y0LcT$H
 Y0fff
-Y5%DU
-Y5+U+
-Y5/o@
-Y562?
-Y56g	
-Y5:Er
-Y5>|?
-Y5?X-
-Y5B1;
-Y5FBi
-Y5Ga~
-Y5Z18
-Y5a;1
-Y5d(L
-Y5fgr
-Y5gh@
-Y5lEx
-Y5t`~
-Y5zm>
-Y5~<O
-Y5~gk
+Y5	)%
+Y5&Ji
+Y5'Hn
+Y5(TU
+Y5*s>
+Y5+j+
+Y5,.@
+Y54us
+Y5?!%
+Y5?m-
+Y5@?z
+Y5F ]
+Y5KM?
+Y5Lc3
+Y5ZF8
+Y5\Mx
+Y5`8M
+Y5gu~
+Y5jIr
+Y5nqk
+Y5qT2
+Y5rT2
+Y5|:6
 Y9"SD
 Y93a=7c@
 Y;C;8V
-Y=7qs
-Y=E@^
-Y=Eg	
-Y=_`1
-Y=m4j
+Y=-*%
+Y=4g%
+Y=7(+
+Y=M<j
+Y=U ]
+Y=gus
+Y=uD^
 Y>kX>M
 YAxisLabel
 YD$ A
@@ -63506,7 +63522,6 @@ ZwKiZwKi
 [dt %5.2f] velocity: %s
 [ex %5.2f] extrap  : frac %.6f%s
 [f7@7F
-[f95j
 [f<>28
 [fA9<
 [fE94
@@ -63920,10 +63935,13 @@ ZwKiZwKi
 \$|;qX
 \$|E3
 \%02X
+\%3"y
 \( JcD(
-\-,.M
+\-&Jz
 \1kYL
 \43n7
+\558C
+\5r:L
 \;{Lr
 \C not allowed in lookbehind assertion
 \D$0H
@@ -64014,18 +64032,17 @@ ZwKiZwKi
 ]0H;w0t!H
 ]0tTH
 ]1h=bfz
-]5NYE
-]5Oii
-]5g]3
-]5ul/
+]5Jo;
+]5OPU
+]5P<R
+]5Xy3
 ]8A9^
 ]8A;^
 ]8d$@
 ]8t'H
 ]:\|^
-]=QtV
-]=e>3
-]=l*$
+]=%W3
+]=qxV
 ]>)2X
 ]@A;_@A
 ]@Ic4$Lcm0
@@ -64050,8 +64067,9 @@ ZwKiZwKi
 ^ D8d
 ^ IcF
 ^ Icv
-^%-*L
-^%}AU
+^%]DL
+^%m;L
+^%}ZU
 ^(IcN@A;
 ^,tyI
 ^.om5r
@@ -64079,7 +64097,7 @@ ZwKiZwKi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^`Hc~xA
 ^`IcvXH
-^fD9%B1
+^fD9%bE
 ^fD;]
 ^pIcvhH
 ^rLcgXD
@@ -64097,13 +64115,13 @@ _(f9_*~
 _0D9sL
 _0HcC
 _0HcC 
-_5iX2
+_5[x2
 _89_D
 _8Hcs
 _8I;_@tj
 _8M9g(u\
 _=1<<@b
-_=R'0
+_=r+0
 _@HcF
 _@HcG8H
 _@HcH
@@ -64215,6 +64233,8 @@ _}eOk
 `0HcK
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
+`6 5]
+`6`r]
 `8Lcs 
 `:zQF
 `@ `QE
@@ -64309,7 +64329,7 @@ _}eOk
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
-`fDPW
+`f$lW
 `fPw.
 `generic-class-parameter-
 `generic-method-parameter-
@@ -64324,7 +64344,7 @@ _}eOk
 `managed vector copy constructor iterator'
 `managed vector destructor iterator'
 `n#%c
-`nDPW
+`n$lW
 `non-type-template-parameter
 `o_je
 `omni callsig'
@@ -64364,7 +64384,7 @@ a2i_ASN1_INTEGER
 a2i_ASN1_STRING
 a2i_GENERAL_NAME
 a7hIw
-aBvDPW
+aBv$lW
 aD87tJH
 aE%d0
 aECDH
@@ -68036,7 +68056,7 @@ d$PE3
 d$PH9/t	H
 d$PI9
 d$PL+
-d$PL9%
+d$PL9%Y
 d$PL9d$X
 d$PM3
 d$PMc'L
@@ -68309,6 +68329,7 @@ dcObject
 dcobject
 dddd, MMMM dd, yyyy
 dead_button_image
+deadlock_get_old_builds
 deadlock_retries
 dealer_player_slot
 death
@@ -69519,7 +69540,6 @@ eye_occlusion_renderer
 eyes_follow
 eyj5yR
 ezd<f
-f	-=b!
 f	rixZ
 f!D$*
 f!D$:
@@ -69552,30 +69572,23 @@ f9,Ju
 f9,^u
 f9,pu
 f9,~u
-f9-"_!
-f9-"a!
-f9-%U[
-f9-*c?
-f9-,9
-f9-YI
-f9-a(
-f9-v8
+f9-U+
+f9-q`
 f9/tR
 f93t`
-f95#G
-f95,]!
-f95rs
-f95vb!
+f95"_
+f957(
+f95;CP
+f95Yh
+f95g(
 f99tj
 f9<Au
 f9<Fu
 f9<H}
 f9<Ju
-f9=!][
-f9=1V
-f9=8D[
-f9=BE[
-f9=`G
+f9=D'
+f9=ZZ[
+f9=w\[
 f9>tq
 f9A^}
 f9B0u0
@@ -69683,15 +69696,19 @@ fC94wu
 fC9D,
 fC;D0
 fChance > 0.0f && fChance <= 1.0f
-fD	%"
-fD	%M
-fD	%U
-fD	%\
-fD	%|
-fD	->eh
-fD	-X
-fD	5!
-fD	5A
+fD	%)
+fD	%E
+fD	%L
+fD	%l
+fD	%r
+fD	-.}h
+fD	-M
+fD	5-
+fD	51
+fD	5?
+fD	5Q
+fD	5Z
+fD	5_
 fD!3L
 fD!;L
 fD!d$*
@@ -69716,25 +69733,25 @@ fD9"u
 fD9$Hu
 fD9$Ou
 fD9$wu
-fD9% 
-fD9% 8
-fD9%+y
-fD9%02
-fD9%0|
-fD9%6l
-fD9%7y
-fD9%=
-fD9%Dz
-fD9%dy
-fD9%k{
+fD9%,
+fD9%1
+fD9%8E
+fD9%<G
+fD9%@L
+fD9%B
+fD9%PF
+fD9%U
+fD9%^
+fD9%k
 fD9't
 fD9'u
 fD9(t
 fD9,Au
 fD9,pu
-fD9- 
-fD9-5
-fD9-e-O
+fD9-/
+fD9-0
+fD9-`
+fD9-y
 fD91u
 fD91uTL9r
 fD92t
@@ -69745,18 +69762,18 @@ fD94Ku
 fD94Pu
 fD94Q}
 fD94iu
-fD952
-fD955
-fD95E
-fD95I
-fD95Tv[
-fD95W
+fD95 
+fD951
+fD95q
+fD95{
 fD97t
 fD98@
 fD98u
 fD9;u
 fD9;|
-fD9=S
+fD9=0D
+fD9=<}
+fD9=c
 fD9@(u
 fD9DP
 fD9H(|
@@ -71499,6 +71516,7 @@ hovering
 how fast to run (1 to use player max run speed).
 hows joint info for this entity
 hp_stat
+hpz0$
 href="
 hscript
 hscript_lightbinding
@@ -71602,15 +71620,20 @@ iEntity >= 0
 iFFp}A
 iFH9-
 iFH9- 
+iFH9- =R
+iFH9- ~
 iFH9-0
-iFH9-0~
-iFH9-@/
+iFH9-0/U
+iFH9-01N
+iFH9-@
+iFH9-@@R
+iFH9-@f
 iFH9-P
+iFH9-P*g
 iFH9-`
-iFH9-`/r
-iFH9-`v
 iFH9-p
-iFH9-p%R
+iFH9-p-g
+iFH9-pG
 iHu H
 iILV]
 iIconIndex >= 0
@@ -72779,9 +72802,7 @@ justify_vertical
 k @8l$xt
 k VWATAVAWH
 k VWAUAVAWH
-k f9-O^!
-k f9-O`!
-k f9-{
+k f9-
 k u H
 k(D9{ |AH
 k(HcE
@@ -73892,7 +73913,6 @@ l$ D;c
 l$ E2
 l$ E3
 l$ E8
-l$ H	E
 l$ H+Q0H
 l$ H3
 l$ H;
@@ -74024,6 +74044,7 @@ l$8E2
 l$8E3
 l$8E9
 l$8H3D$0H3l$@
+l$8H9i
 l$8H;
 l$8Hc
 l$8Hc3;s
@@ -74204,7 +74225,7 @@ l$XuZH
 l$\D9n
 l$\Lcd$H
 l$\fD
-l$`;-"
+l$`;-
 l$`@8
 l$`D9l$p|LH
 l$`D9l$p|NH
@@ -74238,7 +74259,7 @@ l$hHc
 l$hHc+;k
 l$hIc?E3
 l$hL;
-l$hLc-2	-
+l$hLc-
 l$hff
 l$hfff
 l$hs^H;
@@ -74247,7 +74268,6 @@ l$p@8
 l$pA9E
 l$pA;
 l$pD9c
-l$pD9m
 l$pE3
 l$pH;
 l$pHc
@@ -74416,7 +74436,7 @@ levels
 leveltransition
 levelup_rule
 lexer->mTokens(): Error: No lexer rules were added to the lexer yet!
-lfD9%	
+lfD9%
 lfoot
 lhash part of OpenSSL 1.0.2j  26 Sep 2016
 lib(%lu)
@@ -74971,6 +74991,7 @@ m_DetonateParticle
 m_DetonateSound
 m_DetonateWarningTime
 m_DialogXMLName
+m_DirectionParticle
 m_DisarmModifier
 m_DisarmProcModifier
 m_DisconnectedModifier
@@ -75175,6 +75196,7 @@ m_GrenadeMissImpactSound
 m_GrenadeTrailModifier
 m_GroundAuraModifier
 m_GroundDashExecuteTime
+m_GroundImpactParticle
 m_GroundParticle
 m_GuidedArrowChannelParticle
 m_GuidingModifier
@@ -76397,6 +76419,7 @@ m_bIsPure
 m_bIsRenderingWithViewModels
 m_bIsRunningUnitTests
 m_bIsShadowFormCast
+m_bIsShowingBall
 m_bIsSignatureAbility == false
 m_bIsSliding
 m_bIsSpeedBursting
@@ -77626,7 +77649,10 @@ m_flJumpSpeed
 m_flJumpStrength
 m_flJumpTime
 m_flKillerPlaneHorizontalDecayRate
-m_flKillerPlaneHorizontalSpeed
+m_flKillerPlaneHorizontalSpeedX
+m_flKillerPlaneHorizontalSpeedY
+m_flKillerPlaneLaunchDelay
+m_flKillerPlaneLaunchOffset
 m_flKillerPlaneOffset
 m_flKillerPlaneSpeedNoise
 m_flKillerPlaneVerticalSpeed
@@ -79017,6 +79043,7 @@ m_nDestroyImmediateSuppressCount >= 0
 m_nDesyncOffset
 m_nDetectionRangeRing
 m_nDirectLight
+m_nDirectionParticleIndex
 m_nDisableDirtyUpdateRefCount.GetRaw() > 0
 m_nDisableGroupsMask
 m_nDisableMode
@@ -81111,6 +81138,7 @@ method_name
 metric_count
 metric_name
 metrics
+mf95C
 mgf1 with sha1 (default)
 mhMcu
 micDist
@@ -81922,7 +81950,7 @@ n:2C[
 n<	fE
 n<	fG
 n@<"u
-n@H9-
+n@H9-C
 nA fA
 nA$fA
 nA(fA
@@ -82686,6 +82714,7 @@ o!>d]
 o"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""pqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr^^stuvwwxyz{|}~
 o$$fA
 o$g31
+o%.[y
 o&1m&
 o(H9o
 o(HcE
@@ -82696,7 +82725,7 @@ o0H9o
 o0L9s0t
 o1+v3
 o2i_ECPublicKey
-o5MrX
+o5}zX
 o8HcE
 o8HcO0L
 o8IcGPL
@@ -83209,7 +83238,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^DPW
+p08@H^$lW
 p0R^G'
 p1`@H
 p2pAddr.IsType<CSteamID>()
@@ -83225,12 +83254,11 @@ p2p_ping could not convert "%s" to a CPeerToPeerAddress
 p2p_ping could not ping "%s" because they are an unknown peer
 p2p_ping requires a destination address
 p2p_ping sending to "%s"
-p608]
 p7M}f
 p88Hp88H
 p;Y>u
+p>$lW
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
-p>DPW
 p?BoneSetup
 p@0pqE5tsO?|1
 p@HPX`h
@@ -83480,7 +83508,7 @@ pHandle
 pHandler
 pHandler != this
 pHandler == &g_EntitySaveRestoreBlockHandler || (m_Handlers.Count() >= 1 && m_Handlers[0] == &g_EntitySaveRestoreBlockHandler)
-pHc-QZ
+pHc-a
 pHcD$ H
 pHeader->m_nHeaderVersion == RESOURCE_FILE_HEADER_VERSION
 pHelper
@@ -84917,7 +84945,7 @@ playtest_next_formation
 playtest_start
 playtime_2weeks
 playtime_forever
-pnDPW
+pn$lW
 pnInputBones
 pnOutputBones
 point
@@ -86088,7 +86116,7 @@ s WATAUAVAWH
 s WAUAWH
 s WAVAWH
 s f95
-s f95[\!
+s f95W
 s f9s"~
 s u H
 s u!H
@@ -86128,7 +86156,7 @@ s5fE9!
 s6!TYK
 s6C}n
 s7fff
-s8H95{
+s8H95+
 s8Hc+;
 s8HcCP
 s8f9s:~
@@ -86153,7 +86181,7 @@ sFD8sDt
 sFD95
 sGfff
 sGroupName.Length() > 0
-sHH95RKA
+sHH95
 sHHcC@M
 sHf9sJ~
 sHu H
@@ -88028,6 +88056,7 @@ t	9i t
 t	9u@
 t	@8(t
 t	@8*
+t	@8+t
 t	@80
 t	@80t
 t	@83t
@@ -88040,7 +88069,6 @@ t	D8 t
 t	D8't
 t	D8+t
 t	D80t
-t	D83t
 t	D88t
 t	D8;t
 t	D9&
@@ -88055,7 +88083,6 @@ t	H;Q u
 t	Hcp
 t	L9w
 t	f95
-t	f95%
 t	r@=
 t +~Hx
 t >= 0
@@ -88276,7 +88303,7 @@ t$0Hi
 t$0Hk
 t$0I+
 t$0Ic
-t$0L9%.@
+t$0L9%>s
 t$0Lc
 t$0Lcs8A
 t$0Mc
@@ -88334,7 +88361,6 @@ t$8Hk
 t$8I+
 t$8Ic
 t$8L+
-t$8L9q
 t$8L;
 t$8Lc
 t$8Lc6H
@@ -88392,7 +88418,7 @@ t$@I;
 t$@L;
 t$@Lc1A+
 t$@Lc1D;q
-t$@Lc5e
+t$@Lc5
 t$@Li
 t$@Lk
 t$@f9
@@ -88614,8 +88640,7 @@ t$d@2
 t$dL9b u
 t$dLc|$PD
 t$dfD
-t$f95W
-t$f95oh
+t$f95
 t$h9k 
 t$h;k0
 t$h;s
@@ -88753,6 +88778,7 @@ t*HcT
 t*Hc]
 t*fA;
 t*fD9%
+t*fD9%q
 t*fff
 t+;Q s&H
 t+@8>t&I
@@ -88805,7 +88831,7 @@ t2@80t-H
 t2@88t-D
 t2D88t-H
 t2L9s
-t2fD9->
+t2fD9-
 t39F(t.H
 t3D8 t.H
 t3D9@
@@ -88816,7 +88842,7 @@ t4D9t$0u-
 t4I92u/M
 t4L;C
 t4fA;
-t4fD9=>
+t4fD9=
 t5A9>t
 t5D8 t0H
 t5D80t0H
@@ -88835,14 +88861,14 @@ t6D88t1H
 t6D9A
 t6H91t1H
 t6H95
-t6H951R
+t6H95[j
 t6HcH
 t6L9c`
-t6f95UG
+t6f95
 t6fE94
 t79(~$H
 t7HcP
-t7L9%(
+t7L9%
 t8@80t
 t8D9c
 t8E8(t3H
@@ -88879,7 +88905,7 @@ t=A9O
 t=D9k
 t=H9w(uTI
 t=Hch H
-t=f951s
+t=f95
 t>A9[8t
 t>D8v
 t>D9y
@@ -88895,7 +88921,7 @@ t?HcS
 t?Hch H
 t@9+u,9s
 t@<Ot<<
-t@@85B
+t@@85
 t@@89t;L
 t@D8&t;H
 t@D8gCu
@@ -88955,7 +88981,7 @@ tGL9w0
 tGLcH8E3
 tH@8k
 tHLcp
-tHfD95
+tHfD95K
 tI@88tD
 tID80tDH
 tIHcA
@@ -89023,7 +89049,7 @@ tT@89tOL
 tTA8~TtNA
 tTD9H
 tTIcD$
-tTL9-#IS
+tTL9-
 tTL9q t-H
 tTfff
 tTvR2
@@ -89088,7 +89114,7 @@ t^@8.tY3
 t^D9A
 t^HcB
 t^HcC
-t^L95xm
+t^L95
 t^~\2
 t^~\D
 t_D8gpuY;_
@@ -89102,7 +89128,7 @@ t`H9X
 t`H9o@t0H
 t`Hcq
 t``4*O
-t`f95Ps
+t`f95
 t`f9Q
 t`v^2
 t`v^@2
@@ -89508,7 +89534,7 @@ tlsv1 unsupported extension
 tl~j2
 tm+CHxh;B
 tm@80thH
-tm@8=
+tm@8=Q
 tmIc/Mc&
 tn+CHxi;B
 tnD8+ti3
@@ -89698,7 +89724,7 @@ trusted
 try_get_function
 try_get_module
 ts datasign
-tsL9%
+tsL9%h/c
 tsa name mismatch
 tsa untrusted
 tsfff
@@ -89905,7 +89931,7 @@ u2D8e(u,H
 u2H98t-
 u2L9(t-
 u2M9H(H
-u2fD9%Gz
+u2fD9%
 u39L$Du-A
 u3?New@External@v8@@SA?AV?$Local@VExternal@v8@@@2@PEAVIsolate@2@PEAX@Z
 u3H9C H
@@ -89937,6 +89963,7 @@ u:B8D7
 u;8^Eu6H
 u;H;P
 u;{Gk
+u<;=k
 u<H9C(H
 u<fD;
 u<g~l<it[<ntP<ot,<pt
@@ -89946,7 +89973,7 @@ u=HcD$0L
 u>9A8u9
 u>D8s0u8
 u>Lc[
-u?8Chu:f9-T
+u?8Chu:f9-
 u?L9(u:
 u@9y4tVH
 u@@8sTuP
@@ -90045,7 +90072,7 @@ uXfE;
 uY@8w
 uYD9m
 uYHcMp
-uYL9%
+uYL9%T
 uZ9{8
 uZ@8}
 uZD8u
@@ -90058,7 +90085,7 @@ u[HcC ;G uR
 u[fA;
 u]@8k(t
 u^8D$ tX
-u^D8-o_?
+u^D8-
 u_@8w
 u_A8FquYI
 u_E;7}?L
@@ -90067,7 +90094,7 @@ u`D8s0tZH
 u`H9|$Pt5H
 u`H;D$@t
 ucD9{0u]H
-ucf9-((
+ucf9-
 uchar32
 udp_connect_ip
 udp_connect_port
@@ -90581,7 +90608,7 @@ uv y offset during copy to cascade.
 uvs are all identical
 uwuKL;
 uxE9n
-uxL9-(N
+uxL9-(s
 uxL9`
 uxMc}pI
 uz-E3
@@ -91333,6 +91360,7 @@ x_resolution
 x`\`U
 xatjD
 xdigit
+xe;=W
 xeD;Ap}_H
 xe_hilbert_lut.vtex
 xegtao_ao
@@ -91357,13 +91385,10 @@ xrD;vp}lH
 xrJ:DCG
 xs == 0
 xzHcC
-x|9='
-x|9=3
-x|9=B
-x|9=J
-x|9=m
-x|9=o
-x|9=|
+x|9=,
+x|9=;
+x|9=Q
+x|9=q
 x~HcC
 y D8<.u
 y axis
@@ -91516,7 +91541,6 @@ zxNIjo
 { H9{
 { L9/t
 { fD9=
-{ fD9=H
 { u H
 { u!H
 {$){ u
@@ -91585,7 +91609,7 @@ zxNIjo
 {s:sign}
 {s:user_rich_presence}
 {un'%
-{xH9=P]
+{xH9=
 {x`M`
 {}()':
 |	;QD
@@ -91938,7 +91962,7 @@ zxNIjo
 |$PL9'tQA
 |$PL;
 |$PLc
-|$PLc=
+|$PLc=YW
 |$PM;
 |$PMc8E;x
 |$PNc<
@@ -92253,10 +92277,10 @@ zxNIjo
 }J;_$
 }LfD;
 }LuHO
-}P;58
 }PfD;vvwIfE;
 }R;_$
 }T;_$
+}U;=i 0
 }Ufff
 }VKRZ
 }W70d
