@@ -108,6 +108,8 @@ enum EGCCitadelClientMessages {
 	k_EMsgClientToGCGetFriendGameStatusResponse = 9214;
 	k_EMsgClientToGCUpdateHeroBuildPreference = 9215;
 	k_EMsgClientToGCUpdateHeroBuildPreferenceResponse = 9216;
+	k_EMsgClientToGCGetOldHeroBuildData = 9217;
+	k_EMsgClientToGCGetOldHeroBuildDataResponse = 9218;
 }
 
 enum ECitadelAccountPermissionFlag {
@@ -750,6 +752,7 @@ message CMsgClientToGCSpectateUser {
 	optional .ECitadelRegionMode region_mode = 2 [default = k_ECitadelRegionMode_ROW];
 	optional uint32 client_version = 3;
 	optional .EGCPlatform client_platform = 4 [default = k_eGCPlatform_None];
+	optional bool allow_broadcast = 5;
 }
 
 message CMsgClientToGCSpectateUserResponse {
@@ -766,6 +769,7 @@ message CMsgClientToGCSpectateUserResponse {
 		k_eRegionInfoNotProvided = 9;
 		k_eDurationControlBlocked = 10;
 		k_eInvalidClientVersion = 11;
+		k_eInvalidRegion = 12;
 	}
 
 	optional .CMsgClientToGCSpectateUserResponse.EResponse result = 1 [default = k_eInternalError];
@@ -782,6 +786,7 @@ message CMsgClientToGCSpectateLobby {
 	optional .ECitadelRegionMode region_mode = 2 [default = k_ECitadelRegionMode_ROW];
 	optional uint32 client_version = 3;
 	optional .EGCPlatform client_platform = 4 [default = k_eGCPlatform_None];
+	optional bool allow_broadcast = 5;
 }
 
 message CMsgClientToGCSpectateLobbyResponse {
@@ -1246,6 +1251,32 @@ message CMsgClientToGCUpdateHeroBuildPreferenceResponse {
 	}
 
 	optional .CMsgClientToGCUpdateHeroBuildPreferenceResponse.EResponse response = 1 [default = k_eInternalError];
+}
+
+message CMsgClientToGCGetOldHeroBuildData {
+	optional uint32 author_account_id = 1;
+}
+
+message CMsgClientToGCGetOldHeroBuildDataResponse {
+	message OldDetails_V0 {
+		repeated uint32 recommended_mod_ability_ids = 1;
+	}
+
+	message OldBuild {
+		optional string name = 1;
+		optional uint32 hero_id = 2;
+		optional string description = 3;
+		optional .CMsgClientToGCGetOldHeroBuildDataResponse.OldDetails_V0 details = 4;
+	}
+
+	enum EResponse {
+		k_eInternalError = 0;
+		k_eSuccess = 1;
+	}
+
+	optional .CMsgClientToGCGetOldHeroBuildDataResponse.EResponse response = 1 [default = k_eInternalError];
+	optional uint32 author_account_id = 2;
+	repeated .CMsgClientToGCGetOldHeroBuildDataResponse.OldBuild results = 3;
 }
 
 message CMsgClientToGCReportPlayerFromMatch {

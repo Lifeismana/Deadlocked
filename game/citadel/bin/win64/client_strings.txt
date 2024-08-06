@@ -4,11 +4,11 @@
 								
 											
 															
+																
 																	
 																			
 																																									
 																																														
-																PV
 				"inputTexture%i"%s
 				"m_algorithm" "string" "%s"
 			"m_colorSpace" "string" "linear"
@@ -710,14 +710,13 @@
  (+%.2f)
  (08@HP
  (08@HPX`hpx
- (08@HPX`jp
- (08@HPXb@
- (08@HPZp
- (08@HR@
- (08@J@
- (08@Jp
- (0:p
- (0X`hpz@
+ (08@HPX`j
+ (08@HPXbP
+ (08@HPZ
+ (08@HRP
+ (08@J
+ (08@JP
+ (0X`hpzP
  (Dirty Animation)
  (INVALID PSS PARAMETERS)
  (Negative)
@@ -736,13 +735,13 @@
  - %s (%s)
  - %s%s
  - Subscribed
- . <]
  .!p*
  ... }
- .0;]
- .@<]
+ .0^]
+ .@]]
  .CPlayer_GetNicknameList_Request
  .CPublishedFile_Publish_Response"2
+ .P^]
  /&gt;
  //!"#$%&'()/*///+,-/.
  0"r$4&
@@ -945,7 +944,6 @@
  Hc1H
  Hc1I
  Hc1L
- Hc5o1/
  Hc7;w
  Hc7H
  Hc9E3
@@ -1264,6 +1262,7 @@
 !CITADEL_CHAT_MESSAGE_CANTPAUSEYET
 !CITADEL_CHAT_MESSAGE_NOPAUSESLEFT
 !CMsgClientToGCGetFriendGameStatus
+!CMsgClientToGCGetOldHeroBuildData
 !CMsgClientToGCPartyActionResponse
 !CMsgClientToGCPartyCreateResponse
 !CMsgClientToGCRemoveItemAttribute
@@ -2409,6 +2408,7 @@
 #Citadel_SpectateUser_ErrorTitle
 #Citadel_SpectateUser_FailedToGetResponse
 #Citadel_SpectateUser_InternalError
+#Citadel_SpectateUser_InvalidRegion
 #Citadel_SpectateUser_NotFriends
 #Citadel_SpectateUser_NotInGame
 #Citadel_SpectateUser_RateLimited
@@ -2691,6 +2691,7 @@
 #k+ka\T
 #k_EGCMsgUseItemResponse_ServerError
 #k_EMsgClientToGCGetFriendGameStatus
+#k_EMsgClientToGCGetOldHeroBuildData
 #k_EMsgClientToGCPartyActionResponse
 #k_EMsgClientToGCPartyCreateResponse
 #k_EMsgClientToGCUnlockCrateResponse
@@ -3090,7 +3091,6 @@ $z(u&
 %GAME_PARTICLE_MANAGER_EVENT_SET_VDATA
 %Gdnv
 %GoU?*
-%Hc]0;]@u
 %I64i
 %IW;"!*
 %NETWORK_DISCONNECT_CONNECTION_FAILURE
@@ -3821,6 +3821,7 @@ $z(u&
 'CPlayer_SetPerFriendPreferences_Request
 'E;n0
 'GAME_PARTICLE_MANAGER_EVENT_SHOULD_DRAW
+'Ic]0A;]@u
 'L9e8t
 'MotionDisabled' prop_data not supported on %s (%s)
 'NETWORK_DISCONNECT_BADSPECTATORPASSWORD
@@ -3971,12 +3972,10 @@ $z(u&
 (#GameUI_Disconnect_LoopLevelLoadActivate
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
-(%	KC
+(%$Fy
 (%0.2f): %s
-(%4Hy
-(%5J0
-(%8WC
-(%V[(
+(%6)L
+(%IFC
 (%d %d %d %d)
 (%d) Dynamic prop %s (model %s): no sequence named:%s
 (%d) Name: %s (%s)
@@ -3985,6 +3984,8 @@ $z(u&
 (%g %g %g)
 (%g %g)
 (%s,%s)
+(%y"_
+(%~h2
 (("**,
 ((6"8(:,<*>
 ((https?|ftp|file)://|www\.)([^<]*)
@@ -3999,9 +4000,8 @@ $z(u&
 (*pOutResult)[ pOutResult->Length() - 1 ] == '\n'
 (*pOutResult)[0] == '\n'
 (,$t6D
-(-.CC
-(-\LC
-(-pJC
+(-0HC
+(-_UZ
 (.CMsgSteamLearn_GetAccessTokens_Response"r
 (.CMsgSteamLearn_SnapshotProject_Response"-
 (.CPlayer_GetCommunityPreferences_Request
@@ -4013,8 +4013,8 @@ $z(u&
 (0`hpx
 (0x%08X)'??'
 (1O\,n
-(5IBC
-(5_[~
+(5	@C
+(5OY~
 (9A@K
 (9Q0u
 (9QTu
@@ -4024,7 +4024,6 @@ $z(u&
 (;]X|
 (;s |
 (;{ |
-(="BC
 (?R or (?[+-]digits must be followed by )
 (A;_(|
 (A;m(
@@ -4319,10 +4318,10 @@ $z(u&
 (eUniverse > k_EUniverseInvalid) && (eUniverse < k_EUniverseMax)
 (end of input).
 (f*^[0
-(f0+]
 (f9Q(u
 (f;Q(
 (f;Q(u
+(f@M]
 (fS{ggRcjh
 (from angle, to angle, time) - Spherical lerp of angle from->to based on time
 (h W#
@@ -4618,6 +4617,7 @@ $z(u&
 )A service for accessing Steam player dataB
 )App Id this file is being published FROM.
 )CMsgClientToGCGetFriendGameStatusResponse
+)CMsgClientToGCGetOldHeroBuildDataResponse
 )CMsgClientToGCRemoveItemAttributeResponse
 )CMsgGCEconSQLWorkItemEmbeddedRollbackData
 )CMsgSteamLearn_InferenceMetadata_Response
@@ -4819,7 +4819,7 @@ $z(u&
 )d$pD
 )d$pE
 )d$pL
-)f9-8S?
+)f9-8b?
 )fD9A
 )k_ECitadelDisconnectReason_ChangingServer
 )k_ECitadelDisconnectReason_UserLeaveMatch
@@ -4881,7 +4881,7 @@ $z(u&
 )t$ N
 )t$ f
 )t$ f9
-)t$ f95
+)t$ f95+Q
 )t$ f;
 )t$ ff
 )t$ t
@@ -5292,6 +5292,7 @@ $z(u&
 +jump
 +k_EGCMsgUseItemResponse_ItemUsed_Compendium
 +k_EMsgClientToGCGetFriendGameStatusResponse
++k_EMsgClientToGCGetOldHeroBuildDataResponse
 +k_EMsgClientToGCRemoveItemAttributeResponse
 +k_EMsgGCRequestCrateEscalationLevelResponse
 +k_eCitadelObjective_Team0_BarrackBoss_Lane1
@@ -5470,7 +5471,6 @@ $z(u&
 -NETWORK_DISCONNECT_LOCALPROBLEM_NETWORKCONFIG
 -NETWORK_DISCONNECT_REJECT_INVALIDSTEAMCERTLEN
 -PARTICLE_SYSTEM_MANAGER_EVENT_UPDATE_FALLBACK
--Q5sk+
 -STEAMLEARN_CACHE_DATA_ERROR_INVALID_TIMESTAMP
 -STEAMLEARN_INFERENCE_ERROR_INVALID_PROJECT_ID
 -STEAMLEARN_INFERENCE_METADATA_ERROR_FORBIDDEN
@@ -5572,13 +5572,14 @@ $z(u&
 .00cfg
 .0z!u
 .0z:u8
+.5K<7
 .6<A>Y
 .7Z!L
 .8z$u"
 .97yY
 .;u%H
 .<P]A
-.=q$#
+.=a"#
 .>PJ;I:qE>
 .?AU?$CameraOp_Approach_t@M@@
 .?AU?$CameraOp_Approach_t@V?$Vec3D@M@@@@
@@ -10821,6 +10822,10 @@ $z(u&
 .?AVCMsgClientToGCGetMatchHistoryResponse_Match@@
 .?AVCMsgClientToGCGetMatchMetaData@@
 .?AVCMsgClientToGCGetMatchMetaDataResponse@@
+.?AVCMsgClientToGCGetOldHeroBuildData@@
+.?AVCMsgClientToGCGetOldHeroBuildDataResponse@@
+.?AVCMsgClientToGCGetOldHeroBuildDataResponse_OldBuild@@
+.?AVCMsgClientToGCGetOldHeroBuildDataResponse_OldDetails_V0@@
 .?AVCMsgClientToGCGetProfileCard@@
 .?AVCMsgClientToGCGrantForumAccess@@
 .?AVCMsgClientToGCGrantForumAccessResponse@@
@@ -13050,9 +13055,7 @@ $z(u&
 .EGCMsgInitiateTradeResponse":
 .EGCMsgResponse
 .EGCPlatform
-.EGCPlatform"
 .EGCPlatform"H
-.EGCPlatform"Z
 .EGCServerSignoutData"
 .ELobbyServerState
 .ENotificationSetting
@@ -13525,15 +13528,12 @@ $z(u&
 /0v}I
 /2GG>!B
 /48sU
-/5*)n
-/5/Rd
-/5?|>
-/5I!.
-/5Y\5
-/5aRd
-/5s$d
+/5HaQ
+/5QQd
+/5c#d
+/5ol?
 /<GE3
-/=G##
+/=7!#
 />58d%
 /@Xv+
 /A#i!&
@@ -13668,12 +13668,12 @@ $z(u&
 0123456789abcdefghijklmnopqrstuvwxyz
 02V8[
 08@HP
-08@HRp
-08@J@
+08@HR
+08@JP
 0;O@~
 0;Q5[
 0><[cZUg^>
-0>@W]
+0>Py]
 0?NpH
 0@83t`3
 0A\][
@@ -13838,7 +13838,7 @@ $z(u&
 0tHA+
 0tU+xc:
 0ufH9o(u`H
-0v4.W
+0vDPW
 0w"Hc
 0w0c1
 0x%4.4x 
@@ -14141,6 +14141,7 @@ $z(u&
 220801000000Z
 23.CCitadelUserMsg_RecentDamageSummary.ModifierRecord
 23.CMsgClientToGCCreateStaticRecipeResponse.EResponse
+23.CMsgClientToGCGetOldHeroBuildDataResponse.OldBuild
 23.CMsgClientToGCPartySetReadyStateResponse.EResponse"
 23.CMsgClientToGCStartMatchmakingResponse.EResultCode
 23.CMsgClientToGCSubmitPlaytestUserResponse.EResponse"
@@ -14157,11 +14158,12 @@ $z(u&
 24.CMsgClientToGCGetAccountMatchReportsResponse.Report
 24.CMsgClientToGCGetFriendGameStatusResponse.EResponse
 24.CMsgClientToGCGetGlobalMatchHistoryResponse.EResult
+24.CMsgClientToGCGetOldHeroBuildDataResponse.EResponse
 24.CMsgGCHAppCheersGetAllowedTypesResponse.CheerRemaps
 24.CUserMsg_ParticleManager.SetSceneObjectTintAndDesat
 24.CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE
 24.ProtoFlattenedSerializerField_t.polymorphic_field_t
-240806033442Z0/
+240806215215Z0/
 241009235959Z0a1
 25.CMsgClientToGCFindHeroBuildsResponse.HeroBuildResult
 25.CMsgClientToGCModifyDevAnnouncementsResponse.EResult"_
@@ -14182,6 +14184,7 @@ $z(u&
 27.CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples
 27.CMsgSteamLearn_InferenceMetadata_Response.CompactTable
 27.CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE
+28.CMsgClientToGCGetOldHeroBuildDataResponse.OldDetails_V0"1
 28.CMsgClientToGCPurchaseChargeCostItemsResponse.EResponse
 28.CMsgGCToGCGrantAccountRolledItems.Item.DynamicAttribute
 28.CPlayer_GetFriendsGameplayInfo_Response.OwnGameplayInfo
@@ -14409,14 +14412,14 @@ $z(u&
 4STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_GENERIC
 4STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_FOUND
 4STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PROJECT_ID
-4U\>KZ
+4U\nLZ
 4YA1H
 4YA1I
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 4k_ECitadelDisconnectReason_GameDestroyedUnexpectedly
 4k_EGCMsgInitiateTradeResponse_Target_Already_Trading
 4k_EGCMsgInitiateTradeResponse_Trade_Banned_Initiator
-4u2fD9=n
+4u2fD9=
 4zj@1;IJ
 5'0v2ZP
 5(EWorkshopFileType) Type of Workshop file to publish.
@@ -14436,7 +14439,7 @@ $z(u&
 5YA1H
 5YA1I
 5c">/
-5fD9%R
+5fD9%
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 5k_EMsgClientToGCCancelUnfinalizedTransactionsResponse
 5k_RemoveItemAttribute_Failed_AttributeCannotBeRemoved
@@ -14453,8 +14456,8 @@ $z(u&
 65535"
 65535"j
 65535B$
+6666666666666666
 666666666666666666666666666666666666666666666666\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.\ssl\s3_enc.c
-6666666666666666p
 6?NumberValue@Value@v8@@QEBA?AV?$Maybe@N@2@V?$Local@VContext@v8@@@2@@Z
 6?S.>
 6GAME_PARTICLE_MANAGER_EVENT_FREEZE_TRANSITION_OVERRIDE
@@ -14676,8 +14679,7 @@ $z(u&
 9)~P3
 9*t)I
 9+~)L
-9-/*^
-9-0UU
+9-c';
 9.u(H
 90T1@I
 90t&H
@@ -14689,8 +14691,9 @@ $z(u&
 93~-3
 93~j3
 94(t H
-95-.D
-95|3a
+95%1^
+95@&a
+95|Fa
 97~)H
 98Spu4L
 98t H
@@ -14708,6 +14711,10 @@ $z(u&
 9;~"3
 9;~-3
 9<(t,H
+9=M(_
+9=M._
+9=Y#^
+9=m!_
 9>powf
 9>~AH
 9>~ZH
@@ -15028,8 +15035,7 @@ $z(u&
 : has %d Aggregate Instances:
 : lexer error %d :
 : no physics component
-:!%xf
-:!5Xz
+:!5xz
 :!D$@0A
 :!D$P0A
 :!G@0
@@ -15091,7 +15097,7 @@ $z(u&
 ;3}/Hc
 ;3}8H
 ;5jNf
-;=toG
+;=Jz	
 ;>4>se=
 ;?0123456789:;<=>?
 ;@"IL
@@ -15216,6 +15222,7 @@ $z(u&
 ;`Fzc
 ;bwP*
 ;d22Vd22Vt::Nt::N
+;f95 
 ;fffffff
 ;h)j 
 ;k<};
@@ -15338,7 +15345,7 @@ $z(u&
 <ASN1 15>
 <ASN1 29>
 <Account ID>
-<Account ID> <Comment> <Ban Invites: 0|1> Bans the specified account
+<Account ID> <Comment> <Ban Invites: 0|1> <Ban HWID: 0|1> Bans the specified account
 <Account ID> <MMR> Sets the MMR of the specified account
 <Account ID> [0/1] Grants or removes dev access to an account
 <Account ID> [MMR] Locks a user to the current MMR (optionally can set the MMR as well)
@@ -15533,7 +15540,7 @@ $z(u&
 >d`D$
 >f;D$0t
 >f;D$4t
->fD9%%
+>fD9%
 >fN46R^
 >jtm}S
 >o}-XH
@@ -15648,7 +15655,6 @@ $z(u&
 ?CheckArbitraryPeekGet@CUtlBuffer@@QEAA_NHAEAH@Z
 ?CheckGet@CUtlBuffer@@IEAA_NH@Z
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
-?CitadelFindOpponentStateChanged
 ?Clear@CGridStringPrinter@@QEAAXXZ
 ?Clear@CStrAutoEncode@@QEAAXXZ
 ?Clear@netadr_t@@QEAAXXZ
@@ -15939,6 +15945,7 @@ $z(u&
 ?YA1H
 ?_15]>
 ?butt
+?citadel_dump_keybindings
 ?d86L
 ?dt]X
 ?f`Y4
@@ -15947,7 +15954,6 @@ $z(u&
 ?kxG2)
 ?lop*
 ?r>6;
-?r_citadel_upscaling
 ?slots
 ?srJO
 ?tbE3
@@ -15991,14 +15997,14 @@ $z(u&
 @0333?
 @0333?H
 @08@HPX`hpx
-@08N4.W
+@08NDPW
 @09B0
 @0H9Gx
 @0HcB
 @1h!L
 @2A2G"$
 @2{Z@
-@6 0]
+@60R]
 @8(t)H
 @8(t\
 @8(t~H
@@ -16022,6 +16028,10 @@ $z(u&
 @848u
 @84:u
 @84;u
+@85&[\
+@858zm
+@85l3
+@85z3
 @88t(H
 @88tW
 @88uFH
@@ -16221,7 +16231,7 @@ $z(u&
 @H9AH
 @HHcB$;B(u
 @HPX&I
-@HPX`hv
+@HPX`hv $]
 @Hc)E3
 @Hc*I
 @Hc13
@@ -16613,13 +16623,13 @@ $z(u&
 @`H9D$0t
 @b;zO]
 @dKb]
-@f4.W
 @fA;\
 @fB9T
 @fB;T
 @fC;T
 @fD9D
 @fD9d
+@fDPW
 @fE9d
 @fff>fff>fff>fff>
 @ffffff
@@ -16627,7 +16637,7 @@ $z(u&
 @hH9D$0
 @keyframes 
 @keyframes '%s'
-@n4.W
+@nDPW
 @t!H;
 @t#H;
 @t&L;
@@ -16798,8 +16808,8 @@ A9E,t<H
 A9E0u
 A9E4t4H
 A9E4t7H
-A9E4t8H9-Yk
-A9E4t;H9-)l
+A9E4t8H9-
+A9E4t;H9-
 A9E8u
 A9E<t4H
 A9E<tYH
@@ -16826,13 +16836,14 @@ A9F8u
 A9F<tYH
 A9F<u&A
 A9F@H
+A9F`L
 A9F`t
 A9Fht
 A9Ft|
 A9G t
 A9G0u
 A9G4t4H
-A9G4t8H95)
+A9G4t8H95
 A9G4tBH
 A9GHt/Mcu`E;upu
 A9HPu
@@ -16842,7 +16853,7 @@ A9MTt<H
 A9N0u
 A9N4t4H
 A9N@t#I
-A9O4t;H95+
+A9O4t;H95
 A9P t
 A9P(t
 A9]8~;3
@@ -16920,6 +16931,7 @@ A;\$$
 A;\$(
 A;]8|
 A;]P|
+A;]Xu
 A;]h|
 A;^ |
 A;^(u
@@ -18441,8 +18453,8 @@ BC_EMPTY
 BC_PARTICLE_SYSTEM_OVERRIDE
 BC_PROP_GROUP_OVERRIDE
 BCanSeeInParentScroll
+BCitadelReplayDownloadRequested
 BD8}tt
-BDo we want to show the decorations for new player friendly heroes?
 BEAM_ENTPOINT
 BEAM_ENTS
 BEAM_HOSE
@@ -18773,6 +18785,7 @@ Bf8Aft
 Bfffff
 BgColor
 Bh;+j
+BhV>k/
 Bidirectional_Messages
 Bidirectional_Messages_LowFrequency
 Big Number part of OpenSSL 1.0.2j  26 Sep 2016
@@ -19239,7 +19252,6 @@ C$;G$t
 C$HcK(Hc
 C$LcC
 C$fD!-
-C$fD!-X
 C%C'C3C7C9COCWCiC
 C(9G(H
 C(9pHt
@@ -19273,6 +19285,7 @@ C4;C8}
 C4D	s
 C4Hc7;w
 C4fD!-
+C4fD!-j
 C5R?	
 C7HSY
 C83333H
@@ -36508,6 +36521,7 @@ CitadelExitHeroSheet
 CitadelExitUpgradeShop
 CitadelFadeOutAndExitGame
 CitadelFailedShopAction
+CitadelFindOpponentStateChanged
 CitadelFlexUnlockMessage
 CitadelFooterBar
 CitadelForceNavigateBackToHome
@@ -36518,6 +36532,7 @@ CitadelFriend
 CitadelFriendCategoryClicked
 CitadelFriendCodeClicked
 CitadelFriendDataChanged
+CitadelFriendElementContainer
 CitadelFriendMenu
 CitadelFriendRecommended
 CitadelFriendStatusChanged
@@ -36543,7 +36558,6 @@ CitadelGraphicsDriverWarningDontShowAgain()
 CitadelHUDReplayScrubber
 CitadelHeroBuildSelectorSetTabFilter
 CitadelHeroBuildsSelector
-CitadelHeroCard
 CitadelHeroContainer
 CitadelHeroContainerText
 CitadelHeroDataLoaded
@@ -36875,7 +36889,6 @@ CitadelReplayDownloadComplete
 CitadelReplayDownloadError
 CitadelReplayDownloadProgress
 CitadelReplayDownloadProgress( %llu, %%2.1f )
-CitadelReplayDownloadRequested
 CitadelReplayExistence
 CitadelReplayIncrementSpeedStep
 CitadelReplayManager
@@ -37088,6 +37101,7 @@ CitadelViewMatchDetails
 CitadelWatchBatchLoaded
 CitadelWatchChangePage
 CitadelWatchGotoMatch
+CitadelWatchPage
 CitadelWeaponID_t
 CitadelWeaponID_t::Schema_VerifyBindingIsRegistered
 CitadelWeaponRecoilData_t
@@ -37708,7 +37722,6 @@ CurrenciesChanged
 Currency
 CurrencyChanged
 CurrencyChanged.Large
-CurrencySound_t
 CurrencySound_t::KV3TransferLoad_Impl
 CurrencySound_t::KV3Transfer_DefaultKeys_Impl
 CurrencySound_t::Schema_VerifyBindingIsRegistered
@@ -38838,7 +38851,8 @@ D8 tKA
 D8 uhL
 D8$8u
 D8$:u
-D8%lC\
+D8%rU\
+D8%wW\
 D8&tO3
 D8(t	
 D8(t#H
@@ -38854,7 +38868,6 @@ D8,(u
 D8,0u
 D8,2u
 D8,:u
-D8-D}y
 D8.t[3
 D8.uBH
 D80t;
@@ -38950,8 +38963,8 @@ D8q(u
 D8qTH
 D8s$t@H
 D8s$u
-D8sDudL95/
-D8sDudL95/dx
+D8sDudL95
+D8sDudL95o
 D8t$(
 D8t$0
 D8t$3t
@@ -39005,8 +39018,7 @@ D9 ~DD
 D9!~iA
 D9#uMH
 D9#~'I
-D9%"|
-D9%MN
+D9%n6
 D9'~3I
 D9(uHH
 D9(~fH
@@ -39014,7 +39026,7 @@ D9(~jH
 D9)t3
 D9)t[
 D9+u!H
-D9-h'
+D9-hX
 D9.tdI
 D9/tdI
 D90~ H
@@ -39033,7 +39045,7 @@ D98~%H
 D98~\H
 D99~3Hc
 D9:~DH
-D9=9XK
+D9=n__
 D9>~+A
 D9@(|
 D9@8t
@@ -39239,10 +39251,10 @@ D9}@uAD
 D9}H~{H
 D;!}.L
 D;$(t
-D;%"L
+D;%^w
 D;3~3A
 D;4A8D
-D;5H'
+D;5HX
 D;6fA9D
 D;8fA
 D;@H}
@@ -39354,8 +39366,7 @@ D@D/lcO+hcK
 DATAH
 DATAL
 DBPlayerList
-DCitadelFriendElementContainer
-DCitadelWatchPage
+DCitadelHeroCard
 DD$xH
 DD$xIc
 DE I+
@@ -40293,6 +40304,7 @@ Do we start our hero demo with infinite resources
 Do we start withough cooldowns when launching the hero demo map
 Do we start withough death when launching the hero demo map
 Do we start withough troopers when launching the hero demo map
+Do we want to show the decorations for new player friendly heroes?
 Do we want to show title text above this block of ability properties (per stack, to enemies, to allies, etc.)? If empty, we show none
 Do we zoom on right-click?
 DoAllocateEntity failed
@@ -43880,7 +43892,7 @@ Forces a soundscape to play
 Forces color correction entities to be updated on the client
 Forge.Rocket.Barrage.Channel
 Format: %s <substring search key>
-Format: citadel_ban_account <Account ID> <Comment> <Ban Invites: 0|1>
+Format: citadel_ban_account <Account ID> <Comment> <Ban Invites: 0|1> <Ban HWID: 0|1>
 Format: ent_filter <list of flags to toggle, or all/none, parsed in order>
 Format: ent_find substring [substring...] [-exclude_substring...] 
 Format: ent_find_index <index>
@@ -44075,7 +44087,6 @@ G(9C(u
 G(9C(u2
 G(9C(uC
 G(9^@}
-G(IcW M
 G(Lcs 
 G(f94(
 G(f95
@@ -45291,10 +45302,14 @@ H9(uC
 H9+t	H
 H9+tf
 H9+uEA
-H9-	4
-H9-$4
-H9-03
-H9-tsI
+H9-+}
+H9-4e
+H9-@d
+H9-](_
+H9-]._
+H9-]}p
+H9-x}p
+H9-}!_
 H9.t	H
 H9.u%H
 H9/t	H
@@ -45305,14 +45320,17 @@ H90tH
 H90tb
 H92tBA
 H93t	H
-H95.3
-H953p
-H957~
-H95Np
-H95jN
-H95jo
-H95rD
-H95wi
+H95"R
+H95.	t
+H957&
+H957Y
+H959^'
+H95=R
+H95G?/
+H95I	t
+H95Ru
+H95SQ
+H95x	
 H97t	H
 H97u+A
 H98t)A
@@ -45324,10 +45342,13 @@ H98t}H
 H99tQA
 H9;t	H
 H9;tlH9y
-H9=#eF
-H9=5d
-H9=Qy3
-H9=j9
+H9=	wF
+H9='wF
+H9==1^
+H9=EwF
+H9=J}
+H9=cwF
+H9=j"
 H9>u/H
 H9A s
 H9A u
@@ -45960,17 +45981,17 @@ Hc	D;
 Hc(A;
 Hc)E3
 Hc+;k
-Hc-~L
+Hc-".
+Hc-')
+Hc-7mo
+Hc-~}
 Hc.;n
 Hc/;o
 Hc/Ic
 Hc3;s
 Hc3A;
-Hc5!0
-Hc51/
-Hc515
-Hc5A.
-Hc5Q-
+Hc5!_
+Hc51^
 Hc6;p
 Hc7;w
 Hc8a"
@@ -46338,7 +46359,6 @@ HcMHH;
 HcMPH
 HcMhL
 HcMoI
-HcMpE
 HcMxH
 HcN ;
 HcN H
@@ -46784,7 +46804,7 @@ HeroesContainer
 HeroesContainerRecommended
 Hex and octal numbers must be integers.
 HfA;(
-HfD9%7h
+HfD9%
 Hg>?S
 Hhr+g
 HiL$H
@@ -47436,6 +47456,7 @@ IcM8A;
 IcMLHc
 IcMP;
 IcMP;M
+IcMpE3
 IcMxA;
 IcN ;
 IcN(;
@@ -49940,7 +49961,6 @@ KtLcCp
 KuBEN
 Kuwahara CS
 Kwvt,
-Kx8Z?6
 K{"Kb,p
 K|LcCx
 K}*n:	
@@ -50420,7 +50440,7 @@ L9	u)H
 L9 t A
 L9#t	H
 L9#u/H
-L9%"HA
+L9%rZA
 L9&t	H
 L9&us
 L9't	H
@@ -50435,21 +50455,15 @@ L9+t%L9k
 L9+te
 L9+uEH
 L9,:H
-L9-=l
-L9-F~
-L9-L=
-L9-Xl
-L9-a~
-L9-v}
-L9-yk
+L9-/aI
+L9-<n
 L9.t	H
 L9/t	H
 L90t>
 L92t;H
 L92tDA
 L93t	H
-L95*fY
-L95>"
+L95>S
 L97t{L
 L98t?I
 L98t|H
@@ -50460,6 +50474,9 @@ L9;t	H
 L9;tHA
 L9;u	H
 L9<1uP
+L9=VIs
+L9=X9
+L9=h.m
 L9>uEH
 L9?t	H
 L9?tb
@@ -50878,7 +50895,7 @@ Lc0A;
 Lc0D;p
 Lc3D;s
 Lc3Hc
-Lc54 
+Lc54Q
 Lc6A+
 Lc6D;v
 Lc6Hc
@@ -51050,7 +51067,6 @@ Lcl$`A;
 Lcl8(M
 Lcm4L
 LcmhA
-LcmpH
 Lco D;o0
 Lcq0A
 Lcr,E
@@ -52369,6 +52385,7 @@ Mc]T=
 Mce83
 MceHE;eX
 MceHE;eXu
+McepH
 Mcf E;f0u
 Mcf(E;f8
 McfhA
@@ -53723,6 +53740,8 @@ Oh%u'
 Oh+Wp
 Oh44\h44\Q
 Ol_Chiki
+OldBuild
+OldDetails_V0
 Old_Italic
 Old_Persian
 Old_South_Arabian
@@ -54064,8 +54083,8 @@ P-224
 P-256
 P-384
 P-521
-P08@J@
-P08N4.W
+P08@JP
+P08NDPW
 P09G@
 P0A9F@A
 P0HcC(H
@@ -54074,7 +54093,7 @@ P2A2T$"
 P2A2W"
 P2P ping to "%s". Timed out after %.2fms
 P2P_Messages
-P6@9]
+P6P[]
 P8D:8
 P8H9|$ht
 P8H9|$pt
@@ -54988,7 +55007,7 @@ Plots
 Plots view angles yaw at various stages of the frame/tick in Tracy.
 Pm8A?
 PmR"H?
-Pn4.W
+PnDPW
 Po<3ik)
 Point entity.
 Point under crosshair
@@ -55499,7 +55518,6 @@ R8G8B8_ETC2
 R8G8_UINT
 R8_UINT
 R=1C&b
-R@8=Zr
 RA+B(
 RADIATION
 RAND lib
@@ -56387,7 +56405,6 @@ SIG_CB
 SINGLE_LINE_COMMENT
 SINGLE_QUOTED_STRING
 SINGLE_QUOTE_CHAR
-SL95)Qb
 SLASH
 SLOWBURN
 SLOWED
@@ -56794,7 +56811,7 @@ SXNET_get_id_asc
 SXNET_get_id_ulong
 SXNetID
 SYNC_WAIT_FOR_COMPLETION
-S\ KZ
+S\PLZ
 Safe To Auto-Switch Away From
 Safe To Auto-Switch To
 SafeGetViewVectors
@@ -60281,9 +60298,11 @@ T$xLc
 T$xMc
 T$xfD
 T%d %s
+T%rEy
 T(<A#
 T14A#
-T5nX#
+T5.w#
+T5ymD
 T61STRING
 T72[t
 TANGENT_U_WS
@@ -60371,7 +60390,7 @@ TItemSocket<class CProtoItemSocket_Spectator>::GetFieldUInt32
 TItemSocket<class CProtoItemSocket_Spectator>::GetImage
 TItemSocket<class CProtoItemSocket_Strange>::GetFieldUInt32
 TItemSocket<class CProtoItemSocket_Strange>::GetImage
-TL95p
+TL95@	
 TLK_CITADEL_ABILITY_SELECTED
 TLK_CITADEL_ALLY_KILLED
 TLK_CITADEL_ANN_BEGIN_REGEN
@@ -61371,7 +61390,6 @@ UAUAVI
 UAUAWH
 UAVAW
 UAVAWH
-UD8%2
 UD:F<
 UF_FAIL_INVALID_ENTITY
 UF_FAIL_INVALID_FLAGS
@@ -62496,17 +62514,18 @@ V~~Vq
 W	V_stricmp_fast
 W"Fe~
 W'6S`
-W-n]k
-W-~X?
+W->w?
+W-^\k
 W0t}H
 W3i+,
-W5m6C
+W5]4C
 W8IcG(M
 W8uDH
 W9QHI
 W;()f
+W=15*
+W=6T[
 W=AlE3
-W=FV[
 W>peSp>9
 W@H1G@A
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.
@@ -62802,12 +62821,14 @@ When true, the 'Far Crisp' and 'Far Blurry' are added on top of the gun's range.
 When true, the 'effectiveness' value for the modifier will be used to scale the duration. You most likely want 'Keep Maximum Duration On Refresh' to match this value
 When true, the averaged effectiveness of the build up modifier will be passed to the fill modifier
 When true, this attack can be parried
+When true, this lets the client connect to broadcast streams instead of direct connection
 When true, use the curve below to scale the speed of the dash across the distance.
 When true, uses the WIP models defined in the hero vdata
 When true, we add a different class to show it's a negative attribute.
 When true, we don't show this ability property anywhere in the UI.
 When true, we roll for a proc once per shot and apply that result to all bullets in the shot.  When false, we roll independently for each bullet in the shot.
 When true, we will do an extra trace with the same cone shape, but with the cone laying flat in XY
+When true, we will give a boost to spectating matches within our region
 When true, will only call OnProc if the target hit passes the unit filter.
 When trying to determine what slope we're currently only, sample this far around the player
 When using smoothing, this is the min screenspace width it lets a rope shrink to
@@ -62956,18 +62977,14 @@ X to the Y power
 X!;3; 
 X!t5~
 X!}}p|u
-X%2:1
-X%LKF
-X%QOF
+X%"81
 X(Optional) If true, only return the published file ids of files that satisfy this query.
 X,,tX,,t4
-X-F~z
-X-KKF
-X-POF
+X-	!z
+X-6|z
 X.509 part of OpenSSL 1.0.2j  26 Sep 2016
 X400Name
 X400Name:<unsupported>
-X5&.;
 X500algorithms
 X509 CERTIFICATE
 X509 CRL
@@ -63080,9 +63097,11 @@ X509v3 Subject Directory Attributes
 X509v3 Subject Key Identifier
 X509v3 extensions
 X509v3_add_ext
-X5VDi
-X5_DF
-X5ia1
+X5FCi
+X5Y_1
+X5n%5
+X5sC3
+X5}nm
 X9-57
 X9.42 DH
 X9.42 DH PARAMETERS
@@ -63106,8 +63125,8 @@ X9_62_CHARACTERISTIC_TWO
 X9_62_CURVE
 X9_62_FIELDID
 X9_62_PENTANOMIAL
-X=+35
-X=a>d
+X=Q=d
+X=iQ5
 X@fff
 XA\[H
 XA\_^[
@@ -63199,12 +63218,11 @@ XW=?'
 X]F2W-"P
 X_^[]
 X_^][
-X`hrp
 Xd$HD
-Xf@!]
 XfD;\
 XfD;|
-Xf`"]
+XfPC]
+XfpD]
 XhHc@`H
 Xl$hH
 XqgA+
@@ -63231,40 +63249,50 @@ X|$XA
 X|$|A;
 X~ '.
 Y	V_strlower_fast
-Y%,(0
-Y%3l"
-Y%7Gy
-Y%:8z
-Y%o`B
+Y%'Ey
+Y%*6z
+Y%/^B
 Y(L@L
 Y(Optional) Starting index to begin enumeration at. Defaults to the beginning of the list."Z
-Y-4G-
-Y-=Hy
-Y-TP0
-Y-fGy
+Y--Fy
+Y-DN0
+Y-Df-
+Y-T9C
+Y-VEy
+Y-q7C
+Y-x3z
 Y0HcR
 Y0LcT$H
 Y0fff
-Y5	TF
-Y5#M@
-Y5<Gx
-Y5Fgr
-Y5OP@
-Y5QDi
-Y5U3U
-Y5Wc~
-Y5^]?
-Y5^ak
-Y5k6+
-Y5q=1
+Y5%DU
+Y5+U+
+Y5/o@
+Y562?
+Y56g	
+Y5:Er
+Y5>|?
+Y5?X-
+Y5B1;
+Y5FBi
+Y5Ga~
+Y5Z18
+Y5a;1
+Y5d(L
+Y5fgr
+Y5gh@
+Y5lEx
+Y5t`~
+Y5zm>
+Y5~<O
+Y5~gk
 Y9"SD
 Y93a=7c@
 Y;C;8V
-Y=$e%
-Y=.vD
-Y=36j
-Y=UB^
-Y=ob1
+Y=7qs
+Y=E@^
+Y=Eg	
+Y=_`1
+Y=m4j
 Y>kX>M
 YAxisLabel
 YD$ A
@@ -63478,6 +63506,7 @@ ZwKiZwKi
 [dt %5.2f] velocity: %s
 [ex %5.2f] extrap  : frac %.6f%s
 [f7@7F
+[f95j
 [f<>28
 [fA9<
 [fE94
@@ -63703,7 +63732,7 @@ ZwKiZwKi
 \$@E3
 \$@H+
 \$@H9
-\$@H9--VU
+\$@H9-
 \$@H9\$HtzH
 \$@H;
 \$@Hc
@@ -63892,10 +63921,9 @@ ZwKiZwKi
 \$|E3
 \%02X
 \( JcD(
+\-,.M
 \1kYL
 \43n7
-\5%6C
-\5Z @
 \;{Lr
 \C not allowed in lookbehind assertion
 \D$0H
@@ -63986,20 +64014,18 @@ ZwKiZwKi
 ]0H;w0t!H
 ]0tTH
 ]1h=bfz
-]5B.;
-]5Hh@
-]5RV%
-]5Vk@
-]5_ji
-]5q!Z
+]5NYE
+]5Oii
+]5g]3
+]5ul/
 ]8A9^
 ]8A;^
 ]8d$@
 ]8t'H
 ]:\|^
-]=avV
-]=icB
-]=|,$
+]=QtV
+]=e>3
+]=l*$
 ]>)2X
 ]@A;_@A
 ]@Ic4$Lcm0
@@ -64024,7 +64050,8 @@ ZwKiZwKi
 ^ D8d
 ^ IcF
 ^ Icv
-^%-5U
+^%-*L
+^%}AU
 ^(IcN@A;
 ^,tyI
 ^.om5r
@@ -64052,7 +64079,7 @@ ZwKiZwKi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ^`Hc~xA
 ^`IcvXH
-^fD9%b
+^fD9%B1
 ^fD;]
 ^pIcvhH
 ^rLcgXD
@@ -64070,12 +64097,13 @@ _(f9_*~
 _0D9sL
 _0HcC
 _0HcC 
+_5iX2
 _89_D
 _8Hcs
 _8I;_@tj
 _8M9g(u\
 _=1<<@b
-_=b)0
+_=R'0
 _@HcF
 _@HcG8H
 _@HcH
@@ -64187,7 +64215,6 @@ _}eOk
 `0HcK
 `28)fk
 `3?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@H@Z
-`6p4]
 `8Lcs 
 `:zQF
 `@ `QE
@@ -64282,7 +64309,7 @@ _}eOk
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
-`f4.W
+`fDPW
 `fPw.
 `generic-class-parameter-
 `generic-method-parameter-
@@ -64297,7 +64324,7 @@ _}eOk
 `managed vector copy constructor iterator'
 `managed vector destructor iterator'
 `n#%c
-`n4.W
+`nDPW
 `non-type-template-parameter
 `o_je
 `omni callsig'
@@ -64337,7 +64364,7 @@ a2i_ASN1_INTEGER
 a2i_ASN1_STRING
 a2i_GENERAL_NAME
 a7hIw
-aBv4.W
+aBvDPW
 aD87tJH
 aE%d0
 aECDH
@@ -64708,6 +64735,7 @@ all_time_total
 allocated
 allowStretch
 allow_alias
+allow_broadcast
 allow_bundles
 allow_clientside_entities
 allow_clientside_particles
@@ -66312,6 +66340,7 @@ citadel_allow_duplicate_heroes
 citadel_allow_new_player_flow_finished_override
 citadel_allow_pausing
 citadel_allow_purchasing_anywhere
+citadel_allow_spectate_broadcast
 citadel_animating_model_entity
 citadel_announcement_display_time
 citadel_announcement_game_over_msg_display_time
@@ -66465,7 +66494,6 @@ citadel_display_new_player_recommendations
 citadel_distance_mouse_move_for_minimap_drawing
 citadel_dps_multiplier
 citadel_dump_deleted_entity_counts
-citadel_dump_keybindings
 citadel_dump_player_stats
 citadel_enable_double_ping
 citadel_enable_event_collection
@@ -66541,6 +66569,7 @@ citadel_hero_testing_ability1_state
 citadel_hero_testing_ability2_state
 citadel_hero_testing_ability3_state
 citadel_hero_testing_ability4_state
+citadel_hero_testing_ability_learn_finished
 citadel_hero_testing_ability_purchased_finished
 citadel_hero_testing_ability_upgrade_finished
 citadel_hero_testing_dash_finished
@@ -66860,6 +66889,7 @@ citadel_ui_damage_source_impact_duration_fadeindelay
 citadel_ui_damage_source_impact_duration_fadeoutdelay
 citadel_ui_fake_active_matches
 citadel_ui_fake_invite_parties
+citadel_ui_prefer_region_spectating
 citadel_ui_watch_active_game_refresh_s
 citadel_unit_status_dpi
 citadel_unit_status_draw_local
@@ -68006,7 +68036,7 @@ d$PE3
 d$PH9/t	H
 d$PI9
 d$PL+
-d$PL9%9p
+d$PL9%
 d$PL9d$X
 d$PM3
 d$PMc'L
@@ -69489,8 +69519,7 @@ eye_occlusion_renderer
 eyes_follow
 eyj5yR
 ezd<f
-f	-'+!
-f	-M1!
+f	-=b!
 f	rixZ
 f!D$*
 f!D$:
@@ -69523,24 +69552,30 @@ f9,Ju
 f9,^u
 f9,pu
 f9,~u
-f9-*T?
-f9-18
-f9-2.!
-f9-20!
+f9-"_!
+f9-"a!
+f9-%U[
+f9-*c?
+f9-,9
+f9-YI
+f9-a(
+f9-v8
 f9/tR
 f93t`
-f95$s
-f95)X
-f95<,!
-f95AZ
-f95aX
+f95#G
+f95,]!
+f95rs
+f95vb!
 f99tj
 f9<Au
 f9<Fu
 f9<H}
 f9<Ju
-f9='2[
-f9=@J[
+f9=!][
+f9=1V
+f9=8D[
+f9=BE[
+f9=`G
 f9>tq
 f9A^}
 f9B0u0
@@ -69648,16 +69683,15 @@ fC94wu
 fC9D,
 fC;D0
 fChance > 0.0f && fChance <= 1.0f
-fD	%,
-fD	%v
-fD	%y
-fD	-=
-fD	-]Sh
-fD	-}Rh
+fD	%"
+fD	%M
+fD	%U
+fD	%\
+fD	%|
+fD	->eh
+fD	-X
 fD	5!
-fD	5/
 fD	5A
-fD	5O
 fD!3L
 fD!;L
 fD!d$*
@@ -69682,21 +69716,25 @@ fD9"u
 fD9$Hu
 fD9$Ou
 fD9$wu
-fD9%8
-fD9%<
-fD9%@
-fD9%@j
-fD9%Ii
-fD9%P
-fD9%^h
-fD9%ms,
-fD9%pi
+fD9% 
+fD9% 8
+fD9%+y
+fD9%02
+fD9%0|
+fD9%6l
+fD9%7y
+fD9%=
+fD9%Dz
+fD9%dy
+fD9%k{
 fD9't
 fD9'u
 fD9(t
 fD9,Au
 fD9,pu
-fD9-)
+fD9- 
+fD9-5
+fD9-e-O
 fD91u
 fD91uTL9r
 fD92t
@@ -69707,18 +69745,18 @@ fD94Ku
 fD94Pu
 fD94Q}
 fD94iu
-fD951
-fD95;
-fD95h
+fD952
+fD955
+fD95E
+fD95I
+fD95Tv[
+fD95W
 fD97t
 fD98@
 fD98u
 fD9;u
 fD9;|
-fD9=?U
 fD9=S
-fD9=kT
-fD9=x
 fD9@(u
 fD9DP
 fD9H(|
@@ -71564,18 +71602,15 @@ iEntity >= 0
 iFFp}A
 iFH9-
 iFH9- 
-iFH9- E
-iFH9- l6
 iFH9-0
-iFH9-@
-iFH9-@H
+iFH9-0~
+iFH9-@/
 iFH9-P
 iFH9-`
-iFH9-`K
-iFH9-``
-iFH9-`g
+iFH9-`/r
+iFH9-`v
 iFH9-p
-iFH9-pX
+iFH9-p%R
 iHu H
 iILV]
 iIconIndex >= 0
@@ -72744,8 +72779,8 @@ justify_vertical
 k @8l$xt
 k VWATAVAWH
 k VWAUAVAWH
-k f9-_-!
-k f9-_/!
+k f9-O^!
+k f9-O`!
 k f9-{
 k u H
 k(D9{ |AH
@@ -73034,6 +73069,8 @@ k_EMsgClientToGCGetMatchHistory
 k_EMsgClientToGCGetMatchHistoryResponse
 k_EMsgClientToGCGetMatchMetaData
 k_EMsgClientToGCGetMatchMetaDataResponse
+k_EMsgClientToGCGetOldHeroBuildData
+k_EMsgClientToGCGetOldHeroBuildDataResponse
 k_EMsgClientToGCGetProfileCard
 k_EMsgClientToGCGetProfileCardResponse
 k_EMsgClientToGCGrantForumAccess
@@ -73546,6 +73583,7 @@ k_eInvalidPartyMode
 k_eInvalidPermission
 k_eInvalidPermissions
 k_eInvalidPrice
+k_eInvalidRegion
 k_eInvalidRoster
 k_eInvalidTarget
 k_eInvalidTeam
@@ -74166,7 +74204,7 @@ l$XuZH
 l$\D9n
 l$\Lcd$H
 l$\fD
-l$`;-R
+l$`;-"
 l$`@8
 l$`D9l$p|LH
 l$`D9l$p|NH
@@ -74195,11 +74233,12 @@ l$hA;
 l$hD9l$x
 l$hD;
 l$hE3
+l$hH;
 l$hHc
 l$hHc+;k
 l$hIc?E3
 l$hL;
-l$hLc-
+l$hLc-2	-
 l$hff
 l$hfff
 l$hs^H;
@@ -74377,7 +74416,7 @@ levels
 leveltransition
 levelup_rule
 lexer->mTokens(): Error: No lexer rules were added to the lexer yet!
-lfD9%i
+lfD9%	
 lfoot
 lhash part of OpenSSL 1.0.2j  26 Sep 2016
 lib(%lu)
@@ -81883,7 +81922,7 @@ n:2C[
 n<	fE
 n<	fG
 n@<"u
-n@H9-#
+n@H9-
 nA fA
 nA$fA
 nA(fA
@@ -82657,6 +82696,7 @@ o0H9o
 o0L9s0t
 o1+v3
 o2i_ECPublicKey
+o5MrX
 o8HcE
 o8HcO0L
 o8IcGPL
@@ -83169,7 +83209,7 @@ p.other
 p.ppBasis
 p.prime
 p.tpBasis
-p08@H^4.W
+p08@H^DPW
 p0R^G'
 p1`@H
 p2pAddr.IsType<CSteamID>()
@@ -83185,11 +83225,12 @@ p2p_ping could not convert "%s" to a CPeerToPeerAddress
 p2p_ping could not ping "%s" because they are an unknown peer
 p2p_ping requires a destination address
 p2p_ping sending to "%s"
+p608]
 p7M}f
 p88Hp88H
 p;Y>u
-p>4.W
 p>?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z
+p>DPW
 p?BoneSetup
 p@0pqE5tsO?|1
 p@HPX`h
@@ -83439,7 +83480,7 @@ pHandle
 pHandler
 pHandler != this
 pHandler == &g_EntitySaveRestoreBlockHandler || (m_Handlers.Count() >= 1 && m_Handlers[0] == &g_EntitySaveRestoreBlockHandler)
-pHc-Q)
+pHc-QZ
 pHcD$ H
 pHeader->m_nHeaderVersion == RESOURCE_FILE_HEADER_VERSION
 pHelper
@@ -84876,7 +84917,7 @@ playtest_next_formation
 playtest_start
 playtime_2weeks
 playtime_forever
-pn4.W
+pnDPW
 pnInputBones
 pnOutputBones
 point
@@ -85401,6 +85442,7 @@ r_citadel_ssao_radius
 r_citadel_ssao_thin_occluder_compensation
 r_citadel_sun_shadow_slope_scale_depth_bias
 r_citadel_tonemapper
+r_citadel_upscaling
 r_cleardecals
 r_dashboard_render_quality
 r_debug_precipitation
@@ -85636,6 +85678,7 @@ recipientInfos
 recipientinfo
 recommended
 recommended-private-length: %d bits
+recommended_mod_ability_ids
 reconnect.dat
 reconnect_available
 reconnect_delay
@@ -86045,7 +86088,7 @@ s WATAUAVAWH
 s WAUAWH
 s WAVAWH
 s f95
-s f95k+!
+s f95[\!
 s f9s"~
 s u H
 s u!H
@@ -86085,7 +86128,7 @@ s5fE9!
 s6!TYK
 s6C}n
 s7fff
-s8H95
+s8H95{
 s8Hc+;
 s8HcCP
 s8f9s:~
@@ -86110,7 +86153,7 @@ sFD8sDt
 sFD95
 sGfff
 sGroupName.Length() > 0
-sHH95
+sHH95RKA
 sHHcC@M
 sHf9sJ~
 sHu H
@@ -88012,7 +88055,7 @@ t	H;Q u
 t	Hcp
 t	L9w
 t	f95
-t	f95O6
+t	f95%
 t	r@=
 t +~Hx
 t >= 0
@@ -88233,7 +88276,7 @@ t$0Hi
 t$0Hk
 t$0I+
 t$0Ic
-t$0L9%
+t$0L9%.@
 t$0Lc
 t$0Lcs8A
 t$0Mc
@@ -88349,7 +88392,7 @@ t$@I;
 t$@L;
 t$@Lc1A+
 t$@Lc1D;q
-t$@Lc5
+t$@Lc5e
 t$@Li
 t$@Lk
 t$@f9
@@ -88571,13 +88614,14 @@ t$d@2
 t$dL9b u
 t$dLc|$PD
 t$dfD
-t$f95
+t$f95W
+t$f95oh
 t$h9k 
 t$h;k0
 t$h;s
 t$h;w`
 t$h@2
-t$h@8-8
+t$h@8-
 t$hA8
 t$hD;s0
 t$hE3
@@ -88709,7 +88753,6 @@ t*HcT
 t*Hc]
 t*fA;
 t*fD9%
-t*fD9%Q
 t*fff
 t+;Q s&H
 t+@8>t&I
@@ -88726,7 +88769,7 @@ t,9uPu"
 t,<tt
 t,@8w
 t,HcA
-t,f95L
+t,f95
 t,fff
 t-A9}`u'Hc>H
 t-H91t(H
@@ -88762,7 +88805,7 @@ t2@80t-H
 t2@88t-D
 t2D88t-H
 t2L9s
-t2fD9-
+t2fD9->
 t39F(t.H
 t3D8 t.H
 t3D9@
@@ -88773,7 +88816,7 @@ t4D9t$0u-
 t4I92u/M
 t4L;C
 t4fA;
-t4fD9=
+t4fD9=>
 t5A9>t
 t5D8 t0H
 t5D80t0H
@@ -88792,21 +88835,21 @@ t6D88t1H
 t6D9A
 t6H91t1H
 t6H95
-t6H95oB
+t6H951R
 t6HcH
 t6L9c`
-t6f95
+t6f95UG
 t6fE94
 t79(~$H
 t7HcP
-t7L9%
+t7L9%(
 t8@80t
 t8D9c
 t8E8(t3H
 t8H9)t3H
 t8HcE
 t8IcD$
-t8f95Q@
+t8f95
 t9@88t4H
 t9A+GHx3;B
 t9D8 t4L
@@ -88815,7 +88858,7 @@ t9E8i
 t9~$H
 t:9O0~5I
 t:JcT)
-t:L9%\|
+t:L9%
 t:fff
 t;<,uKH
 t;@80t6H
@@ -88836,7 +88879,7 @@ t=A9O
 t=D9k
 t=H9w(uTI
 t=Hch H
-t=f95
+t=f951s
 t>A9[8t
 t>D8v
 t>D9y
@@ -88852,7 +88895,7 @@ t?HcS
 t?Hch H
 t@9+u,9s
 t@<Ot<<
-t@@85
+t@@85B
 t@@89t;L
 t@D8&t;H
 t@D8gCu
@@ -88861,7 +88904,7 @@ t@H9w0uWH
 t@H9~0uWH
 t@Hcm
 t@Ic6A
-t@f9=dE
+t@f9=
 t@fff
 tA8_:t
 tAA9P
@@ -88887,7 +88930,7 @@ tBLcu
 tBfff
 tCB94"t=H
 tCHc;;{
-tCfD95x
+tCfD95
 tCs%@
 tD@8-
 tDD8d$r
@@ -88912,7 +88955,7 @@ tGL9w0
 tGLcH8E3
 tH@8k
 tHLcp
-tHfD95+
+tHfD95
 tI@88tD
 tID80tDH
 tIHcA
@@ -88980,14 +89023,14 @@ tT@89tOL
 tTA8~TtNA
 tTD9H
 tTIcD$
-tTL9-
+tTL9-#IS
 tTL9q t-H
 tTfff
 tTvR2
 tU;\$0tH
 tUD88t6H
 tUD8e
-tUH95y
+tUH95
 tUH99uPL
 tUHch H
 tUIcE
@@ -89045,7 +89088,7 @@ t^@8.tY3
 t^D9A
 t^HcB
 t^HcC
-t^L95x<
+t^L95xm
 t^~\2
 t^~\D
 t_D8gpuY;_
@@ -89059,7 +89102,7 @@ t`H9X
 t`H9o@t0H
 t`Hcq
 t``4*O
-t`f95
+t`f95Ps
 t`f9Q
 t`v^2
 t`v^@2
@@ -89143,7 +89186,7 @@ te@8w$t<H
 teA80t`3
 teD9O
 teH9X
-teHc=&
+teHc=
 teHcC
 teHcsHL
 team is
@@ -89755,7 +89798,7 @@ t{fB9<
 t|@8}(uvE3
 t|D8}`tvH
 t|H9;uwD
-t|H9=,)
+t|H9=
 t|McP83
 t|fff
 t}Lc(A
@@ -89775,7 +89818,7 @@ u	D;Q
 u	D;W
 u	E9&~
 u	H9(
-u	H9-w
+u	H9-
 u	H90
 u	H98
 u	f9/
@@ -89848,7 +89891,7 @@ u.H;A
 u.H;P
 u/A8F
 u/H;A
-u/f9-T
+u/f9-
 u/fA;
 u/fD9pju
 u0;t$x
@@ -89862,7 +89905,7 @@ u2D8e(u,H
 u2H98t-
 u2L9(t-
 u2M9H(H
-u2fD9%
+u2fD9%Gz
 u39L$Du-A
 u3?New@External@v8@@SA?AV?$Local@VExternal@v8@@@2@PEAVIsolate@2@PEAX@Z
 u3H9C H
@@ -89903,14 +89946,14 @@ u=HcD$0L
 u>9A8u9
 u>D8s0u8
 u>Lc[
-u?8Chu:f9-
+u?8Chu:f9-T
 u?L9(u:
 u@9y4tVH
 u@@8sTuP
 u@H9C H
 u@H9C(H
-u@f9=e0[
-uA8Ghu<f95X
+u@f9=
+uA8Ghu<f95
 uAH9x
 uAL9(t<I
 uB!!cB!!c 
@@ -90015,7 +90058,7 @@ u[HcC ;G uR
 u[fA;
 u]@8k(t
 u^8D$ tX
-u^D8-
+u^D8-o_?
 u_@8w
 u_A8FquYI
 u_E;7}?L
@@ -90024,7 +90067,7 @@ u`D8s0tZH
 u`H9|$Pt5H
 u`H;D$@t
 ucD9{0u]H
-ucf9-
+ucf9-((
 uchar32
 udp_connect_ip
 udp_connect_port
@@ -90536,10 +90579,9 @@ uuHcK
 uv x offset during copy to cascade.
 uv y offset during copy to cascade.
 uvs are all identical
-uwn6#
 uwuKL;
 uxE9n
-uxL9-h
+uxL9-(N
 uxL9`
 uxMc}pI
 uz-E3
@@ -91050,7 +91092,6 @@ weekend_start
 weekends
 weight
 welcome_messages
-wf9-[
 wfA'@7
 wfrZH
 wgrZH
@@ -91316,16 +91357,13 @@ xrD;vp}lH
 xrJ:DCG
 xs == 0
 xzHcC
-x|9=!
-x|9=%
-x|9=(
-x|9=>
-x|9=K
-x|9=N
-x|9=W
-x|9=c
-x|9=r
-x|9=z
+x|9='
+x|9=3
+x|9=B
+x|9=J
+x|9=m
+x|9=o
+x|9=|
 x~HcC
 y D8<.u
 y axis
@@ -91426,7 +91464,7 @@ z==Gz==G
 z>u<H
 z@HcB8Li
 zCCITADEL_PING_CONCEPT_NONE
-zDcitadel_hero_testing_ability_learn_finished
+zDCurrencySound_t
 zF):O4
 zG2m8
 zH@u5A
@@ -91478,6 +91516,7 @@ zxNIjo
 { H9{
 { L9/t
 { fD9=
+{ fD9=H
 { u H
 { u!H
 {$){ u
@@ -91546,7 +91585,7 @@ zxNIjo
 {s:sign}
 {s:user_rich_presence}
 {un'%
-{xH9=
+{xH9=P]
 {x`M`
 {}()':
 |	;QD
@@ -91929,7 +91968,6 @@ zxNIjo
 |$X r
 |$X r9H
 |$X@2
-|$XA;
 |$XD9t7
 |$XD;t7
 |$XD;w
@@ -92084,7 +92122,7 @@ zxNIjo
 |(tFM
 |)@8~!t
 |)L9c
-|)f9544<
+|)f95
 |+Hc;;{
 |,I9,
 |11Jv
@@ -92215,9 +92253,8 @@ zxNIjo
 }J;_$
 }LfD;
 }LuHO
-}P;5h
+}P;58
 }PfD;vvwIfE;
-}Q;=I
 }R;_$
 }T;_$
 }Ufff
@@ -92333,7 +92370,6 @@ zxNIjo
 ~If D
 ~I|fA
 ~LHcC
-~Nvm:
 ~Offf
 ~PHcw
 ~PLcMpM
